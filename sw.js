@@ -1,4 +1,4 @@
-const CACHE='ifsi-abc-v6-test-10';
+const CACHE='ifsi-abc-v6-test-11';
 const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./infographics.json','./qextra-01.txt','./qextra-02.txt','./qextra-03.txt','./qextra-04.txt','./qextra-05.txt','./qextra-06.txt','./qextra-07.txt','./avatar-quentin.b64','./banner-quentin.b64','./features-v9.js','./schema-v10.js','./diagram-resp003.b64','./diagram-resp013.b64','./diagram-resp015.b64'];
 let extraPromise=null;
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
