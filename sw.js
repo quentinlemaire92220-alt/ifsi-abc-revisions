@@ -1,5 +1,5 @@
-const CACHE='ifsi-abc-v6-test-5';
-const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./qextra-01.txt'];
+const CACHE='ifsi-abc-v6-test-6';
+const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./qextra-01.txt','./qextra-02.txt','./qextra-03.txt','./qextra-04.txt','./qextra-05.txt','./qextra-06.txt','./qextra-07.txt'];
 let extraPromise=null;
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 function keepQuestion(q){const t=(q&&q.question)||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true;}
