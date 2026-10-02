@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Schéma simplifié alvéolo-capillaire avec repères A à E">
+<defs><style>.t{font-family:Arial,sans-serif;fill:#242332}.lab{fill:#6941c6}.L{font-size:34px;font-weight:700}.alv{fill:#e9f8f7;stroke:#0fa7a0;stroke-width:10}.cap{fill:none;stroke:#e35b5b;stroke-width:34;stroke-linecap:round}.cell1{fill:#bdebe8;stroke:#0fa7a0;stroke-width:5}.cell2{fill:#ffe7a6;stroke:#e2a400;stroke-width:5}.mac{fill:#d9cdf7;stroke:#6941c6;stroke-width:5}</style></defs>
+<rect width="1200" height="720" rx="28" fill="#fff"/>
+<text x="50" y="62" class="t L">Alvéole et membrane alvéolo-capillaire — repères A à E</text>
+<path class="alv" d="M180 175c-95 35-137 150-109 264 25 101 106 173 205 158 100-15 169-112 153-221-17-116-126-239-249-201z"/>
+<path class="cap" d="M120 550c120 45 250 48 385 7 62-19 113-45 163-83"/>
+<path d="M215 500c80 26 162 25 239-4" fill="none" stroke="#7acdc7" stroke-width="18" stroke-linecap="round"/>
+<ellipse class="cell2" cx="185" cy="405" rx="44" ry="34"/><circle cx="185" cy="405" r="12" fill="#b47700"/>
+<path class="cell1" d="M280 500c45-10 89-9 135 0l-8 31c-41-8-80-8-119 0z"/>
+<path class="mac" d="M285 275c36-25 79-13 94 20 16 37-11 80-53 84-35 3-65-25-63-59 1-18 8-34 22-45z"/>
+<ellipse cx="395" cy="565" rx="40" ry="18" fill="#f7b3b3" stroke="#a93636" stroke-width="5"/>
+<g class="t L"><circle class="lab" cx="650" cy="170" r="34"/><text fill="#fff" x="638" y="182">A</text><line x1="616" y1="170" x2="220" y2="385" stroke="#6941c6" stroke-width="7"/>
+<circle class="lab" cx="650" cy="285" r="34"/><text fill="#fff" x="638" y="297">B</text><line x1="616" y1="285" x2="360" y2="505" stroke="#6941c6" stroke-width="7"/>
+<circle class="lab" cx="650" cy="400" r="34"/><text fill="#fff" x="638" y="412">C</text><line x1="616" y1="400" x2="490" y2="545" stroke="#6941c6" stroke-width="7"/>
+<circle class="lab" cx="650" cy="515" r="34"/><text fill="#fff" x="638" y="527">D</text><line x1="616" y1="515" x2="350" y2="510" stroke="#6941c6" stroke-width="7"/>
+<circle class="lab" cx="650" cy="630" r="34"/><text fill="#fff" x="638" y="642">E</text><line x1="616" y1="630" x2="330" y2="335" stroke="#6941c6" stroke-width="7"/></g>
+<g class="t" font-size="26"><text x="760" y="180">Identifier les cellules</text><text x="760" y="218">et la zone d’échanges.</text><text x="760" y="300" fill="#6c6878">Schéma simplifié :</text><text x="760" y="338" fill="#6c6878">alvéole + capillaire.</text></g>
+</svg>
