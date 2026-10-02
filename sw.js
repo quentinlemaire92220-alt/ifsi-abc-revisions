@@ -1,5 +1,5 @@
-const CACHE='ifsi-abc-v6-test-8';
-const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./infographics.json','./qextra-01.txt','./qextra-02.txt','./qextra-03.txt','./qextra-04.txt','./qextra-05.txt','./qextra-06.txt','./qextra-07.txt','./avatar-quentin.b64','./banner-quentin.b64'];
+const CACHE='ifsi-abc-v6-test-9';
+const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./infographics.json','./qextra-01.txt','./qextra-02.txt','./qextra-03.txt','./qextra-04.txt','./qextra-05.txt','./qextra-06.txt','./qextra-07.txt','./avatar-quentin.b64','./banner-quentin.b64','./features-v9.js'];
 let extraPromise=null;
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 function keepQuestion(q){const t=(q&&q.question)||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true;}
@@ -18,6 +18,7 @@ async function brandedIndex(req){
     html=html.replace('<div class="head"><div class="logo">Q</div>','<div class="head"><div class="logo headAvatar"><img src="'+av+'" alt="Illustration Quentin"></div>');
     html=html.replace('<button class="btn outline" onclick="startQuick()">▶ Série rapide</button></div>','<button class="btn outline" onclick="startQuick()">▶ Série rapide</button><img class="heroBrand" src="'+bn+'" alt="Illustration révisions IFSI"></div>');
   }catch(e){console.warn('Branding non chargé',e)}
+  if(!html.includes('features-v9.js'))html=html.replace('</body>','<script src="./features-v9.js"></script></body>');
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'}});
 }
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(BASE_ASSETS)))});
