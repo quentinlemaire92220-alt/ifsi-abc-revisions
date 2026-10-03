@@ -71,8 +71,9 @@ assert(sw.includes("./vocals-v73.js"),'vocals-v73.js absent du service worker');
 assert(sw.includes("./v74-pack.js"),'v74-pack.js absent du service worker');
 assert(sw.includes("./course-registry-v741.json"),'registre V7.4.1 absent du cache PWA');
 assert(sw.includes("./course-registry-v741.js"),'module registre V7.4.1 absent du service worker');
+assert(sw.includes("./changelog-v742.js"),'changelog V7.4.2 absent du service worker');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
-assert(sw.includes("ifsi-abc-v7-4-1-local-22"),'cache V7.4.1 absent');
+assert(sw.includes("ifsi-abc-v7-4-2-local-23"),'cache V7.4.2 absent');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 
 const pack=read('v72-pack.js');
@@ -86,9 +87,11 @@ for(const marker of ["const VERSION='7.4'","ifsiabc_v74_resource_favorites_v1",'
 assert(v74.includes('QCM, cours, fiches, infographies et vocaux'),'Recherche V7.4 incomplète');
 const v741=read('course-registry-v741.js');
 for(const marker of ["const VERSION='7.4.1'",'course-registry-v741.json','resolveResource','resolveLabel','resourcesForCourse','diagnosticUI','IFSI_V741'])assert(v741.includes(marker),`Fonction V7.4.1 absente: ${marker}`);
+const v742=read('changelog-v742.js');
+for(const marker of ["const VERSION='7.4.2'",'v742Changelog','v72Changelog','v73News','v74News','Nouveautés de l’application','IFSI_V742'])assert(v742.includes(marker),`Fonction V7.4.2 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
 console.log(`✅ ${vocals.length} vocaux Drive contrôlés avec courseId explicite`);
 console.log(`✅ ${registry.courses.length} courseId stables contrôlés`);
-console.log('✅ V7.4.1 contrôlée : registre de cours, diagnostic et compatibilité V7.4');
+console.log('✅ V7.4.2 contrôlée : registre de cours, diagnostic et bloc nouveautés unifié');
