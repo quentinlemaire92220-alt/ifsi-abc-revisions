@@ -29,7 +29,6 @@ for(const id of schemaIds){assert(schemaSource.includes(`"id":"${id}"`)||schemaS
 assert(runtime.length+schemaIds.length>=700,`Banque trop petite: ${runtime.length+schemaIds.length}`);
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs dupliqués dans la banque runtime');
 assert(new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size>=10,'Nombre de matières anormalement faible');
-
 for(const q of runtime){
   assert(q&&typeof q.id==='string'&&q.id.length>0,'Question sans ID');
   assert(typeof q.question==='string'&&q.question.trim().length>0,`Énoncé absent: ${q.id}`);
@@ -64,6 +63,8 @@ for(const v of vocals){
 
 for(const f of ['schema-resp003.svg','schema-resp013.svg','schema-resp015.svg'])assert(fs.existsSync(f),`Asset manquant: ${f}`);
 const sw=read('sw.js');
+assert(sw.includes("./app-version-v742.js"),'module de version dédié absent du service worker');
+assert(sw.indexOf("app-version-v742.js")<sw.indexOf("features-v9.js"),'le module de version doit être chargé avant les modules historiques');
 assert(sw.includes("./v72-pack.js"),'v72-pack.js absent du service worker');
 assert(sw.includes("./progressive-v72.js"),'progressive-v72.js absent du service worker');
 assert(sw.includes("./vocals.json"),'vocals.json absent du cache PWA');
@@ -73,9 +74,11 @@ assert(sw.includes("./course-registry-v741.json"),'registre V7.4.1 absent du cac
 assert(sw.includes("./course-registry-v741.js"),'module registre V7.4.1 absent du service worker');
 assert(sw.includes("./changelog-v742.js"),'changelog V7.4.2 absent du service worker');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
-assert(sw.includes("ifsi-abc-v7-4-2-local-23"),'cache V7.4.2 absent');
+assert(sw.includes("ifsi-abc-v7-4-2-local-24"),'cache V7.4.2 local-24 absent');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 
+const versionModule=read('app-version-v742.js');
+for(const marker of ["const VERSION='7.4.2'",'legacyVersionSink','appVersion742','appVersionTitle742','appVersionStatus742','IFSI_APP_VERSION','IFSI_VERSION_UI'])assert(versionModule.includes(marker),`Module version incomplet: ${marker}`);
 const pack=read('v72-pack.js');
 for(const marker of ["const VERSION='7.2'",'v72Difficulty','v72Progressive','v72SuggestBtn','finishExamV72','pedagogicDifficulty','v72History'])assert(pack.includes(marker),`Fonction V7.2 absente: ${marker}`);
 const progressive=read('progressive-v72.js');
@@ -89,9 +92,10 @@ const v741=read('course-registry-v741.js');
 for(const marker of ["const VERSION='7.4.1'",'course-registry-v741.json','resolveResource','resolveLabel','resourcesForCourse','diagnosticUI','IFSI_V741'])assert(v741.includes(marker),`Fonction V7.4.1 absente: ${marker}`);
 const v742=read('changelog-v742.js');
 for(const marker of ["const VERSION='7.4.2'",'v742Changelog','v72Changelog','v73News','v74News','Nouveautés de l’application','IFSI_V742'])assert(v742.includes(marker),`Fonction V7.4.2 absente: ${marker}`);
+assert(!v742.includes('claimVersionUI'),'Le changelog ne doit plus gérer la version visible');
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
 console.log(`✅ ${vocals.length} vocaux Drive contrôlés avec courseId explicite`);
 console.log(`✅ ${registry.courses.length} courseId stables contrôlés`);
-console.log('✅ V7.4.2 contrôlée : registre de cours, diagnostic et bloc nouveautés unifié');
+console.log('✅ V7.4.2 contrôlée : version visible isolée, registre de cours, diagnostic et nouveautés unifiées');
