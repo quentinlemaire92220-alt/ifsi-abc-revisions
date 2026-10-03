@@ -1,3 +1,4 @@
+// V7.4.2 hotfix: stable single-source version display
 const CACHE='ifsi-abc-v7-4-2-local-23';
 const BASE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./questions-1.json','./questions-2.json','./questions-3.json','./questions-4.json','./questions-5.json','./sheets-1.json','./sheets-2.json','./sheets-3.json','./infographics.json','./vocals.json','./course-registry-v741.json','./qextra-01.txt','./qextra-02.txt','./qextra-03.txt','./qextra-04.txt','./qextra-05.txt','./qextra-06.txt','./qextra-07.txt','./avatar-quentin.b64','./banner-quentin.b64','./features-v9.js','./schema-v10.js','./choice-toggle-v13.js','./v7-local.js','./v71-local.js','./v72-pack.js','./progressive-v72.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./tnr-v72.js','./schema-resp003.svg','./schema-resp013.svg','./schema-resp015.svg'];
 let extraPromise=null;
