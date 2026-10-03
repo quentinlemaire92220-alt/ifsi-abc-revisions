@@ -50,7 +50,8 @@ assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
 assert(sw.indexOf('v79-themes.js')<sw.indexOf('calculs-parcours-v1.js'),'Calculs doit être chargé après V7.9');
 assert(sw.indexOf('calculs-parcours-v1.js')<sw.indexOf('v81-suite.js'),'V8.1 doit être chargée après le parcours calculs');
-assert(sw.indexOf('v81-suite.js')<sw.indexOf('v82-nav-anatomy.js'),'V8.2 doit être chargée après V8.1');\nassert(sw.indexOf('v82-nav-anatomy.js')<sw.indexOf('tnr-v72.js'),'V8.2 doit être chargée avant le TNR navigateur');
+assert(sw.indexOf('v81-suite.js')<sw.indexOf('v82-nav-anatomy.js'),'V8.2 doit être chargée après V8.1');
+assert(sw.indexOf('v82-nav-anatomy.js')<sw.indexOf('tnr-v72.js'),'V8.2 doit être chargée avant le TNR navigateur');
 const versionModule=read('app-version-v742.js');
 for(const marker of ["const VERSION='8.2'",'IFSI_APP_VERSION','navigation hiérarchisée','Anatomie & Physiologie'])assert(versionModule.includes(marker),`Version V8.2 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
@@ -61,11 +62,13 @@ assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente'
 for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip_address:'])assert(!analytics.includes(forbidden),`Champ personnel interdit dans analytics: ${forbidden}`);
 const v79=read('v79-themes.js');for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
 const calc=read('calculs-parcours-v1.js');for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
-const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);\nconst v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.2'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction V8.2 absente: ${marker}`);
+const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
+const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.2'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction V8.2 absente: ${marker}`);
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
-console.log('✅ V8.2 contrôlée : navigation hiérarchisée, espace Anatomie & Physiologie, QCM multi-systèmes et partage');\nconsole.log('✅ V8.1 conservée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
+console.log('✅ V8.2 contrôlée : navigation hiérarchisée, espace Anatomie & Physiologie, QCM multi-systèmes et partage');
+console.log('✅ V8.1 conservée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
 console.log('✅ V8.0 calculs conservée avec progression par difficulté');
 console.log('✅ Analytics anonymes contrôlées sans clé secrète');
