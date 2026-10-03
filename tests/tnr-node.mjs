@@ -6,12 +6,14 @@ const json=p=>JSON.parse(read(p));
 const assert=(v,msg)=>{if(!v)throw new Error(msg)};
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
+function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
 function decodePackFile(p){
   const source=read(p).trim();
   if(source.startsWith('[')||source.startsWith('{'))return JSON.parse(source);
   const raw=Buffer.from(source,'base64');
-  const isGzip=raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b;
-  const txt=(isGzip?zlib.gunzipSync(raw):raw).toString('utf8');
+  let txt;
+  if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}
+  else txt=raw.toString('utf8');
   return JSON.parse(txt);
 }
 
@@ -55,7 +57,8 @@ for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-1-local-35"),'Cache V8.1 local-35 absent');
+assert(sw.includes("ifsi-abc-v8-1-local-36"),'Cache V8.1 local-36 absent');
+assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
 assert(sw.indexOf('v79-themes.js')<sw.indexOf('calculs-parcours-v1.js'),'Calculs doit être chargé après V7.9');
 assert(sw.indexOf('calculs-parcours-v1.js')<sw.indexOf('v81-suite.js'),'V8.1 doit être chargée après le parcours calculs');
