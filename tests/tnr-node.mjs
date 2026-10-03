@@ -74,13 +74,15 @@ assert(sw.includes("./course-registry-v741.json"),'registre V7.4.1 absent du cac
 assert(sw.includes("./course-registry-v741.js"),'module registre V7.4.1 absent du service worker');
 assert(sw.includes("./changelog-v742.js"),'changelog unifié absent du service worker');
 assert(sw.includes("./v75-smart.js"),'module V7.5 absent du service worker');
-assert(sw.indexOf("v75-smart.js")<sw.indexOf("tnr-v72.js"),'V7.5 doit être chargée avant le TNR navigateur');
+assert(sw.includes("./v76-home.js"),'module V7.6 absent du service worker');
+assert(sw.indexOf("v75-smart.js")<sw.indexOf("v76-home.js"),'V7.5 doit être chargée avant la home V7.6');
+assert(sw.indexOf("v76-home.js")<sw.indexOf("tnr-v72.js"),'V7.6 doit être chargée avant le TNR navigateur');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
-assert(sw.includes("ifsi-abc-v7-5-local-26"),'cache V7.5 local-26 absent');
+assert(sw.includes("ifsi-abc-v7-6-local-27"),'cache V7.6 local-27 absent');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='7.5'",'legacyVersionSink','appVersion742','appVersionTitle742','appVersionStatus742','IFSI_APP_VERSION','IFSI_VERSION_UI'])assert(versionModule.includes(marker),`Module version incomplet: ${marker}`);
+for(const marker of ["const VERSION='7.6'",'legacyVersionSink','appVersion742','appVersionTitle742','appVersionStatus742','IFSI_APP_VERSION','IFSI_VERSION_UI'])assert(versionModule.includes(marker),`Module version incomplet: ${marker}`);
 const pack=read('v72-pack.js');
 for(const marker of ["const VERSION='7.2'",'v72Difficulty','v72Progressive','v72SuggestBtn','finishExamV72','pedagogicDifficulty','v72History'])assert(pack.includes(marker),`Fonction V7.2 absente: ${marker}`);
 const progressive=read('progressive-v72.js');
@@ -93,13 +95,15 @@ assert(v74.includes('QCM, cours, fiches, infographies et vocaux'),'Recherche V7.
 const v741=read('course-registry-v741.js');
 for(const marker of ["const VERSION='7.4.1'",'course-registry-v741.json','resolveResource','resolveLabel','resourcesForCourse','diagnosticUI','IFSI_V741'])assert(v741.includes(marker),`Fonction V7.4.1 absente: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='7.5'",'v742Changelog','v72Changelog','v73News','v74News','Nouveautés de l’application','V7.5 — Révision intelligente','IFSI_CHANGELOG','IFSI_V742'])assert(changelog.includes(marker),`Changelog V7.5 incomplet: ${marker}`);
+for(const marker of ["const VERSION='7.6'",'v742Changelog','v72Changelog','v73News','v74News','Nouveautés de l’application','V7.6 — Nouvel accueil','V7.5 — Révision intelligente','IFSI_CHANGELOG','IFSI_V742'])assert(changelog.includes(marker),`Changelog V7.6 incomplet: ${marker}`);
 assert(!changelog.includes('claimVersionUI'),'Le changelog ne doit plus gérer la version visible');
 const v75=read('v75-smart.js');
 for(const marker of ["const VERSION='7.5'","ifsiabc_v75_review_v1",'v75TodayCard','v75Confidence','buildTodaySession','recordReview','startTodayV75','IFSI_V75',"guess:[1,1,3,7,14]","hesitant:[1,3,7,14,30]","sure:[3,7,14,30,60]"])assert(v75.includes(marker),`Fonction V7.5 absente: ${marker}`);
+const v76=read('v76-home.js');
+for(const marker of ["const VERSION='7.6'",'v76Home','v76-hero','v76-portrait','v76Revise','v76Resources','v76Resume','v76ErrTask','v76VocTask','v76DayTask','v76More','object-position:50% 22%','IFSI_V76'])assert(v76.includes(marker),`Fonction V7.6 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
 console.log(`✅ ${vocals.length} vocaux Drive contrôlés avec courseId explicite`);
 console.log(`✅ ${registry.courses.length} courseId stables contrôlés`);
-console.log('✅ V7.5 contrôlée : confiance, répétition espacée, session du jour et nouveautés unifiées');
+console.log('✅ V7.6 contrôlée : nouvel accueil, portrait recentré, raccourcis et priorités du jour');
