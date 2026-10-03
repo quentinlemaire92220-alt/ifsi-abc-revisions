@@ -1,0 +1,32 @@
+name: TNR IFSI ABC
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  tnr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Vérifier la syntaxe JavaScript
+        run: |
+          node --check sw.js
+          node --check features-v9.js
+          node --check schema-v10.js
+          node --check choice-toggle-v13.js
+          node --check v7-local.js
+          node --check v71-local.js
+          node --check v72-pack.js
+          node --check tnr-v72.js
+
+      - name: Tests de non-régression données et runtime
+        run: node tests/tnr-node.mjs
