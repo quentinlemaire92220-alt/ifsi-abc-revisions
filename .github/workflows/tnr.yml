@@ -30,6 +30,7 @@ jobs:
           node --check vocals-v73.js
           node --check v74-pack.js
           node --check course-registry-v741.js
+          node --check changelog-v742.js
           node --check tnr-v72.js
           node --check tests/course-audit.mjs
 
