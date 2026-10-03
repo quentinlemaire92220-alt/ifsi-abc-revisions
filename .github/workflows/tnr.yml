@@ -39,6 +39,7 @@ jobs:
           node --check calculs-parcours-v1.js
           node --check v81-suite.js
           node --check v82-nav-anatomy.js
+          node --check v83-anatomy-interactive.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
