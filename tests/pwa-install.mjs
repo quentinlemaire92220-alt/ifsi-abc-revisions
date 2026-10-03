@@ -23,8 +23,9 @@ for(const i of m.icons){
 }
 
 const sw=fs.readFileSync('sw.js','utf8');
-assert(sw.includes("ifsi-abc-v7-8-local-30"),'Cache V7.8 local-30 absent');
+assert(sw.includes("ifsi-abc-v7-9-local-31"),'Cache V7.9 local-31 absent');
 assert(sw.includes("./analytics-v77.js"),'Module analytics V7.7 absent du cache PWA');
+assert(sw.includes("./v79-themes.js"),'Module V7.9 absent du cache PWA');
 assert(sw.includes("./manifest.webmanifest"),'Manifest absent du cache PWA');
 
-console.log('✅ Manifest PWA Android et cache V7.8 contrôlés');
+console.log('✅ Manifest PWA Android et cache V7.9 contrôlés');
