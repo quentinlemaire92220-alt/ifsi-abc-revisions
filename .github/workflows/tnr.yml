@@ -34,9 +34,13 @@ jobs:
           node --check changelog-v742.js
           node --check tnr-v72.js
           node --check tests/course-audit.mjs
+          node --check tests/pwa-install.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 
       - name: Audit des rattachements de cours
         run: node tests/course-audit.mjs
+
+      - name: Vérifier l'installation PWA Android
+        run: node tests/pwa-install.mjs
