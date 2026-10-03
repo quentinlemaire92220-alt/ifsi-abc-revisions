@@ -37,8 +37,8 @@ function buildHome(){
     <section class="v76-hero">
       <span class="v76-spark v76-s1">💡</span><span class="v76-spark v76-s2">🎓</span><span class="v76-spark v76-s3">📚</span>
       <div class="v76-hero-top">
-        <div class="v76-portrait">${src?`<img src="${src}" alt="Quentin">`:'👨‍⚕️'}</div>
-        <div class="v76-welcome"><h2>Salut <span>Quentin</span>,<br>bienvenue dans ton espace de révision 👋</h2><p>QCM, fiches, infographies et vocaux pour réviser efficacement.</p></div>
+        <div class="v76-portrait">${src?`<img src="${src}" alt="Illustration de profil">`:'👨‍⚕️'}</div>
+        <div class="v76-welcome"><h2>Bienvenue dans ton espace de révision 👋</h2><p>QCM, fiches, infographies et vocaux pour réviser efficacement.</p></div>
       </div>
     </section>
     <section class="v76-actions" aria-label="Raccourcis">
