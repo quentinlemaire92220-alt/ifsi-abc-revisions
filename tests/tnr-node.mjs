@@ -67,9 +67,9 @@ for(const marker of ["const VERSION='7.2'",'v72Difficulty','v72Progressive','v72
 const progressive=read('progressive-v72.js');
 for(const marker of ['orderedProgressive',"['easy','medium','hard']",'session=[...out]'])assert(progressive.includes(marker),`Ordre progressif incomplet: ${marker}`);
 const vocalScript=read('vocals-v73.js');
-for(const marker of ["const VERSION='7.3'",'showVocals','vocalList','vocalPlayer','drive.google.com/file/d/','/preview','IFSI_V73'])assert(vocalScript.includes(marker),`Fonction vocaux V7.3 absente: ${marker}`);
+for(const marker of ["const VERSION='7.3.1'","const STORAGE='ifsiabc_vocals_v1'",'showVocals','vocalList','vocalPlayer','vocalResume','vocalStateFilter','toggleListened','toggleFavorite','drive.google.com/file/d/','/preview','IFSI_V73'])assert(vocalScript.includes(marker),`Fonction vocaux V7.3.1 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
 console.log(`✅ ${vocals.length} vocaux Drive contrôlés sur ${new Set(vocals.map(v=>v.course)).size} matières`);
-console.log('✅ IDs, choix, réponses, schémas, progression ordonnée, vocaux V7.3 et service worker validés');
+console.log('✅ IDs, choix, réponses, schémas, progression ordonnée, vocaux V7.3.1, favoris/écoutés/reprise et service worker validés');
