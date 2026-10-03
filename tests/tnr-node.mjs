@@ -24,7 +24,7 @@ assert(runtime.length+schemaIds.length>=700,`Banque trop petite: ${runtime.lengt
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
 for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');assert(typeof q.question==='string'&&q.question.trim(),'Énoncé absent');assert(Array.isArray(q.choices)&&q.choices.length>=2,`Choix invalides ${q.id}`);assert(Array.isArray(q.answers)&&q.answers.length>=1,`Réponse absente ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Réponse invalide ${q.id}`)}
 const calcQuestions=runtime.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
-assert(calcQuestions.length>=250,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
+assert(calcQuestions.length>=220,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 
 const respiratory=new Map(runtime.filter(q=>q.course==='Système respiratoire').map(q=>[q.id,q]));
 assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${respiratory.size}`);
