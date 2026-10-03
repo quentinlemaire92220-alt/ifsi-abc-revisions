@@ -6,16 +6,23 @@ const json=p=>JSON.parse(read(p));
 const assert=(v,msg)=>{if(!v)throw new Error(msg)};
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
+function decodePackFile(p){
+  const source=read(p).trim();
+  if(source.startsWith('[')||source.startsWith('{'))return JSON.parse(source);
+  const raw=Buffer.from(source,'base64');
+  const isGzip=raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b;
+  const txt=(isGzip?zlib.gunzipSync(raw):raw).toString('utf8');
+  return JSON.parse(txt);
+}
 
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
-let extras=[];
+let extras=[],skipped=[];
 for(const i of [1,2,3,4,5,6,7,9,10]){
   const p=`qextra-${String(i).padStart(2,'0')}.txt`;
   if(!fs.existsSync(p))continue;
-  const raw=Buffer.from(read(p).trim(),'base64');
-  const parsed=JSON.parse(zlib.gunzipSync(raw).toString('utf8'));
-  extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])));
+  try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
+  catch(e){skipped.push(`${p}: ${e.message}`)}
 }
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
@@ -23,9 +30,11 @@ for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 const schemaIds=['resp_003','resp_013','resp_015'];
 const schemaSource=read('schema-v10.js');
 for(const id of schemaIds){assert(schemaSource.includes(id),`Schéma ${id} absent`);assert(!seen.has(id),`Doublon schéma ${id}`)}
-assert(runtime.length+schemaIds.length>=700,`Banque trop petite: ${runtime.length+schemaIds.length}`);
+assert(runtime.length+schemaIds.length>=700,`Banque trop petite: ${runtime.length+schemaIds.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
 for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');assert(typeof q.question==='string'&&q.question.trim(),'Énoncé absent');assert(Array.isArray(q.choices)&&q.choices.length>=2,`Choix invalides ${q.id}`);assert(Array.isArray(q.answers)&&q.answers.length>=1,`Réponse absente ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Réponse invalide ${q.id}`)}
+const calcQuestions=runtime.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
+assert(calcQuestions.length>=250,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 
 const respiratory=new Map(runtime.filter(q=>q.course==='Système respiratoire').map(q=>[q.id,q]));
 assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${respiratory.size}`);
@@ -71,7 +80,9 @@ const v81=read('v81-suite.js');
 for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);
 for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
 
+if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
+console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
 console.log('✅ V8.1 contrôlée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
 console.log('✅ V8.0 calculs conservée avec progression par difficulté');
