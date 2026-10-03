@@ -30,6 +30,7 @@ assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${
 assert(JSON.stringify(respiratory.get('resp_049')?.answers)==='[0,3]','Réponses resp_049 non synchronisées');
 assert(JSON.stringify(respiratory.get('resp_050')?.answers)==='[0,1,3]','Réponses resp_050 non synchronisées');
 assert(respiratory.get('resp_050')?.theme==='Acido-base, circulation et contrôle respiratoire','Thème resp_050 non synchronisé');
+assert(new Set([...respiratory.values()].map(q=>q.theme)).size>=5,'Thématiques respiratoires insuffisantes pour V7.9');
 
 const registry=json('course-registry-v741.json');
 assert(registry.version==='7.4.1','Registre version incorrecte');
@@ -46,15 +47,16 @@ const respiratorySheet=sheets.find(s=>s.title==='UE_S1_B1_Systeme_Respiratoire_P
 assert(respiratorySheet?.url?.includes('1Xmqfaw-c4TIn_T8KbMa95iH9-srbuHJ8'),'Lien fiche respiratoire non synchronisé');
 
 const sw=read('sw.js');
-for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v7-8-local-30"),'Cache V7.8 local-30 absent');
+for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
+assert(sw.includes("ifsi-abc-v7-9-local-31"),'Cache V7.9 local-31 absent');
 assert(sw.indexOf('v76-home.js')<sw.indexOf('analytics-v77.js'),'Analytics doit être chargé après la home V7.6');
-assert(sw.indexOf('analytics-v77.js')<sw.indexOf('tnr-v72.js'),'Analytics doit être chargé avant le TNR navigateur');
+assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
+assert(sw.indexOf('v79-themes.js')<sw.indexOf('tnr-v72.js'),'V7.9 doit être chargée avant le TNR navigateur');
 
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='7.8'",'IFSI_APP_VERSION','IFSI_VERSION_UI'])assert(versionModule.includes(marker),`Version V7.8 incomplète: ${marker}`);
+for(const marker of ["const VERSION='7.9'",'IFSI_APP_VERSION','IFSI_VERSION_UI','révision par thèmes et séries personnalisées'])assert(versionModule.includes(marker),`Version V7.9 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='7.8'",'v78Change','V7.8 — Système respiratoire synchronisé','v77Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V7.8 incomplet: ${marker}`);
+for(const marker of ["const VERSION='7.9'",'v79Change','V7.9 — Révision par thèmes','v78Change','v77Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V7.9 incomplet: ${marker}`);
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');
@@ -63,8 +65,12 @@ for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip
 
 const v76=read('v76-home.js');
 for(const marker of ["const VERSION='7.6'",'v76Home','v76Revise','v76Resources','v76Resume','IFSI_V76'])assert(v76.includes(marker),`Home V7.6 absente: ${marker}`);
+const v79=read('v79-themes.js');
+for(const marker of ["const VERSION='7.9'",'v79Builder','v79ThemesCard','themeOf','difficultyOf','selectedThemes','selectedDifficulty','selectedCount','selectedMode','startCustom','data-v79quick','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
+for(const marker of ['10','20','30','50','easy','medium','hard','train','exam'])assert(v79.includes(marker),`Option V7.9 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
-console.log('✅ V7.8 contrôlée : système respiratoire synchronisé, fiche Drive actualisée et schémas cohérents');
+console.log('✅ V7.9 contrôlée : thèmes, difficultés, séries personnalisées et accès rapide par thème');
+console.log('✅ V7.8 conservée : système respiratoire synchronisé, fiche Drive actualisée et schémas cohérents');
 console.log('✅ V7.7 analytics contrôlée : statistiques anonymes, opt-out local et aucune clé secrète exposée');
