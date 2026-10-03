@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.6';
+const VERSION='7.7';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 
@@ -20,6 +20,10 @@ function injectUnified(){
     <details style="margin-top:7px">
       <summary class="small" style="cursor:pointer">Voir les changements</summary>
       <div class="small" style="margin-top:10px;line-height:1.6">
+        <span id="v77Change"><b>V7.7 — Statistiques anonymes</b><br>
+        • Comptage anonyme des ouvertures de l’application, QCM, fiches, infographies et vocaux.<br>
+        • Aucun nom, email ou score individuel n’est envoyé dans la base de statistiques.<br>
+        • Un bouton permet de désactiver le suivi statistique sur l’appareil.<br><br></span>
         <span id="v76Change"><b>V7.6 — Nouvel accueil</b><br>
         • Accueil plus chaleureux avec portrait recentré et message de bienvenue.<br>
         • Trois raccourcis : réviser maintenant, ressources et reprise de l’activité.<br>
