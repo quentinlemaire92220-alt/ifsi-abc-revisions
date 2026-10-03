@@ -35,6 +35,7 @@ jobs:
           node --check v75-smart.js
           node --check v76-home.js
           node --check analytics-v77.js
+          node --check v79-themes.js
           node --check tnr-v72.js
           node --check tests/course-audit.mjs
           node --check tests/pwa-install.mjs
