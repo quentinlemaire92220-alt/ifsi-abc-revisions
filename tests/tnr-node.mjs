@@ -78,7 +78,7 @@ assert(sw.includes("./v76-home.js"),'module V7.6 absent du service worker');
 assert(sw.indexOf("v75-smart.js")<sw.indexOf("v76-home.js"),'V7.5 doit être chargée avant la home V7.6');
 assert(sw.indexOf("v76-home.js")<sw.indexOf("tnr-v72.js"),'V7.6 doit être chargée avant le TNR navigateur');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
-assert(sw.includes("ifsi-abc-v7-6-local-27"),'cache V7.6 local-27 absent');
+assert(sw.includes("ifsi-abc-v7-6-local-28"),'cache V7.6 local-28 absent');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 
 const versionModule=read('app-version-v742.js');
