@@ -28,6 +28,7 @@ jobs:
           node --check v72-pack.js
           node --check progressive-v72.js
           node --check vocals-v73.js
+          node --check v74-pack.js
           node --check tnr-v72.js
 
       - name: Tests de non-régression données et runtime
