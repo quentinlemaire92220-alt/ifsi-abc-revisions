@@ -168,8 +168,9 @@ function patchRuntime(){
 
 function enhanceChangelog(){
   const card=$75('v742Changelog');if(!card)return false;
+  if(card.querySelector('#v81Change')||card.querySelector('#v75Change'))return true;
   const badge=card.querySelector('.badge');if(badge)badge.textContent='V7.5';
-  const content=card.querySelector('details .small');if(content&&!content.querySelector?.('#v75Change')){
+  const content=card.querySelector('details .small');if(content){
     const marker='<span id="v75Change"><b>V7.5 — Révision intelligente</b><br>• Niveau de confiance : sûr, hésitant ou au hasard.<br>• Répétition espacée avec prochaine révision calculée automatiquement.<br>• Session « À faire aujourd’hui » mêlant révisions dues, erreurs, points faibles et questions jamais vues.<br><br></span>';
     content.insertAdjacentHTML('afterbegin',marker);
   }
