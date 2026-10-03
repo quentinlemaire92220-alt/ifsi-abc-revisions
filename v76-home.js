@@ -30,7 +30,7 @@ function startNow(){const p=window.IFSI_V75?.buildTodaySession?.();if(p?.questio
 function openResources(){if(typeof window.showCourses74==='function')return window.showCourses74();window.showSheets?.()}
 
 function buildHome(){
-  const home=$76('home');if(!home||$76('v76Home'))return false;
+  const home=$76('home');if(!home)return false;if($76('v76Home'))return true;
   const src=avatarSrc();
   const wrap=document.createElement('div');wrap.id='v76Home';wrap.className='v76-home';
   wrap.innerHTML=`
@@ -62,8 +62,9 @@ function organizeLegacy(){
   const stats=direct.find(x=>x.classList?.contains('grid'));
   const create=direct.find(x=>x.classList?.contains('section')&&x.textContent.includes('Créer une série'));
   const createCard=create?.nextElementSibling?.classList?.contains('stack')?create.nextElementSibling:null;
-  [hero,install,stats,$76('v74Dashboard'),$76('v75TodayCard'),$76('v7LocalNotice')].forEach(x=>x?.classList.add('v76-hidden'));
-  [$76('v74SearchCard'),create,createCard].forEach(x=>{if(x&&x.parentElement!==more)more.appendChild(x)});
+  const feedback=home.querySelector('.v72-feedback');
+  [hero,install,stats,$76('v74Dashboard'),$76('v75TodayCard'),$76('v7LocalNotice'),$76('resumeCard')].forEach(x=>x?.classList.add('v76-hidden'));
+  [$76('v74SearchCard'),create,createCard,feedback].forEach(x=>{if(x&&x.parentElement!==more)more.appendChild(x)});
   const changelog=$76('v742Changelog');if(changelog&&changelog.parentElement!==$76('v76Home'))$76('v76Home').insertBefore(changelog,$76('v76More'));
 }
 
