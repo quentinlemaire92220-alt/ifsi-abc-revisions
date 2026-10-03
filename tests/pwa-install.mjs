@@ -2,7 +2,6 @@ import fs from 'node:fs';
 
 const m=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const assert=(v,msg)=>{if(!v)throw new Error(msg)};
-
 assert(m.id,'Manifest PWA sans id stable');
 assert(m.name||m.short_name,'Manifest PWA sans nom');
 assert(m.start_url,'Manifest PWA sans start_url');
@@ -16,8 +15,7 @@ assert(sizes.includes('512x512'),'Icône 512x512 absente');
 assert(!sizes.includes('any'),'sizes:any interdit ici à cause des échecs WebAPK observés sur Android/Chromium');
 assert(m.icons.some(i=>String(i.purpose||'').includes('maskable')),'Icône maskable absente');
 for(const i of m.icons){assert(i.src,'src icône absent');const p=i.src.replace(/^\.\//,'');assert(fs.existsSync(p),`Fichier icône absent: ${p}`)}
-
 const sw=fs.readFileSync('sw.js','utf8');
-assert(sw.includes("ifsi-abc-v8-1-local-35"),'Cache V8.1 local-35 absent');
+assert(sw.includes("ifsi-abc-v8-1-local-36"),'Cache V8.1 local-36 absent');
 for(const asset of ['./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./manifest.webmanifest'])assert(sw.includes(asset),`Asset PWA absent: ${asset}`);
 console.log('✅ Manifest PWA Android et cache V8.1 contrôlés');
