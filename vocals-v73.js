@@ -106,10 +106,11 @@ function showVocals(){window.show?.('vocals')}
 window.showVocals=showVocals;
 
 async function loadVocals(){
-  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');V=await r.json();V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);populateCourses();renderVocals();setVersion();return true}
+  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');V=await r.json();V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);populateCourses();renderVocals();setVersion();lockVersion();return true}
   catch(e){console.error('Vocaux',e);const list=$v('vocalList');if(list)list.innerHTML='<div class="card v73-empty">Impossible de charger le catalogue des vocaux.</div>';return false}
 }
 function setVersion(){const u=$v('update');if(u&&V.length)u.textContent=`Application prête • V${VERSION} locale : ${V.length} vocaux Drive avec lecteur intégré.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}
+function lockVersion(){let ticks=0;const t=setInterval(()=>{setVersion();if(++ticks>=40)clearInterval(t)},250)}
 
 addStyles();injectUI();loadVocals();
 window.IFSI_V73={version:VERSION,getVocals:()=>V,play:playVocal,render:renderVocals};
