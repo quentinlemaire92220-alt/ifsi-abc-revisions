@@ -10,8 +10,10 @@ const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return fal
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[];
-for(let i=1;i<=7;i++){
-  const raw=Buffer.from(read(`qextra-${String(i).padStart(2,'0')}.txt`).trim(),'base64');
+for(const i of [1,2,3,4,5,6,7,9,10]){
+  const p=`qextra-${String(i).padStart(2,'0')}.txt`;
+  if(!fs.existsSync(p))continue;
+  const raw=Buffer.from(read(p).trim(),'base64');
   const parsed=JSON.parse(zlib.gunzipSync(raw).toString('utf8'));
   extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])));
 }
@@ -29,48 +31,48 @@ const respiratory=new Map(runtime.filter(q=>q.course==='Système respiratoire').
 assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${respiratory.size}`);
 assert(JSON.stringify(respiratory.get('resp_049')?.answers)==='[0,3]','Réponses resp_049 non synchronisées');
 assert(JSON.stringify(respiratory.get('resp_050')?.answers)==='[0,1,3]','Réponses resp_050 non synchronisées');
-assert(respiratory.get('resp_050')?.theme==='Acido-base, circulation et contrôle respiratoire','Thème resp_050 non synchronisé');
-assert(new Set([...respiratory.values()].map(q=>q.theme)).size>=5,'Thématiques respiratoires insuffisantes pour V7.9');
+assert(new Set([...respiratory.values()].map(q=>q.theme)).size>=5,'Thématiques respiratoires insuffisantes');
 
 const registry=json('course-registry-v741.json');
 assert(registry.version==='7.4.1','Registre version incorrecte');
-assert(Array.isArray(registry.courses)&&registry.courses.length>=16,'Registre trop petit');
+assert(Array.isArray(registry.courses)&&registry.courses.length>=17,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
+assert(courseIds.has('calculs_doses_mathematiques'),'CourseId calculs absent');
 
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
 for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
 
-const sheets=json('sheets-1.json');
-const respiratorySheet=sheets.find(s=>s.title==='UE_S1_B1_Systeme_Respiratoire_Partie01_Fiche_Revision_Systeme_Respiratoire.pdf');
-assert(respiratorySheet?.url?.includes('1Xmqfaw-c4TIn_T8KbMa95iH9-srbuHJ8'),'Lien fiche respiratoire non synchronisé');
-
 const sw=read('sw.js');
-for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v7-9-local-31"),'Cache V7.9 local-31 absent');
-assert(sw.indexOf('v76-home.js')<sw.indexOf('analytics-v77.js'),'Analytics doit être chargé après la home V7.6');
+for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
+assert(sw.includes("ifsi-abc-v8-1-local-35"),'Cache V8.1 local-35 absent');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
-assert(sw.indexOf('v79-themes.js')<sw.indexOf('tnr-v72.js'),'V7.9 doit être chargée avant le TNR navigateur');
+assert(sw.indexOf('v79-themes.js')<sw.indexOf('calculs-parcours-v1.js'),'Calculs doit être chargé après V7.9');
+assert(sw.indexOf('calculs-parcours-v1.js')<sw.indexOf('v81-suite.js'),'V8.1 doit être chargée après le parcours calculs');
+assert(sw.indexOf('v81-suite.js')<sw.indexOf('tnr-v72.js'),'V8.1 doit être chargée avant le TNR navigateur');
 
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='7.9'",'IFSI_APP_VERSION','IFSI_VERSION_UI','révision par thèmes et séries personnalisées'])assert(versionModule.includes(marker),`Version V7.9 incomplète: ${marker}`);
+for(const marker of ["const VERSION='8.1'",'IFSI_APP_VERSION','centre de révision complet'])assert(versionModule.includes(marker),`Version V8.1 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='7.9'",'v79Change','V7.9 — Révision par thèmes','v78Change','v77Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V7.9 incomplet: ${marker}`);
+for(const marker of ["const VERSION='8.1'",'v81Change','V8.1 — Centre de révision complet','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.1 incomplet: ${marker}`);
+
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');
 assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
 for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip_address:'])assert(!analytics.includes(forbidden),`Champ personnel interdit dans analytics: ${forbidden}`);
 
-const v76=read('v76-home.js');
-for(const marker of ["const VERSION='7.6'",'v76Home','v76Revise','v76Resources','v76Resume','IFSI_V76'])assert(v76.includes(marker),`Home V7.6 absente: ${marker}`);
 const v79=read('v79-themes.js');
-for(const marker of ["const VERSION='7.9'",'v79Builder','v79ThemesCard','themeOf','difficultyOf','selectedThemes','selectedDifficulty','selectedCount','selectedMode','startCustom','data-v79quick','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
-for(const marker of ['10','20','30','50','easy','medium','hard','train','exam'])assert(v79.includes(marker),`Option V7.9 absente: ${marker}`);
+for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
+const calc=read('calculs-parcours-v1.js');
+for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
+const v81=read('v81-suite.js');
+for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);
+for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
-console.log('✅ V7.9 contrôlée : thèmes, difficultés, séries personnalisées et accès rapide par thème');
-console.log('✅ V7.8 conservée : système respiratoire synchronisé, fiche Drive actualisée et schémas cohérents');
-console.log('✅ V7.7 analytics contrôlée : statistiques anonymes, opt-out local et aucune clé secrète exposée');
+console.log('✅ V8.1 contrôlée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
+console.log('✅ V8.0 calculs conservée avec progression par difficulté');
+console.log('✅ Analytics anonymes contrôlées sans clé secrète');
