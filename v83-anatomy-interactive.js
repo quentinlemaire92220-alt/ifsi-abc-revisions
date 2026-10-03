@@ -62,7 +62,7 @@ function bind(){
  document.querySelectorAll('[data-v83vocal]').forEach(x=>x.onclick=()=>{window.showVocals?.();setTimeout(()=>window.IFSI_V73?.play?.(x.dataset.v83vocal),80)})
 }
 function init(){css();ensure();patchShow();injectLauncher();return !!window.IFSI_V82&&!!window.IFSI_V741?.getRegistry?.()}
-let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>260)clearInterval(t)},100);const obs=new MutationObserver(()=>injectLauncher());setTimeout(()=>{const b=$('v82AnatomyBody');if(b)obs.observe(b,{childList:true,subtree:true})},900);
+let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>260)clearInterval(t)},100);const obs=new MutationObserver(()=>injectLauncher());setTimeout(()=>{const b=$('v82AnatomyBody');if(b)obs.observe(b,{childList:true,subtree:false})},900);
 window.addEventListener('storage',()=>{injectLauncher();if(!$(SECTION)?.classList.contains('hidden'))render()});
 window.IFSI_V83={version:V,show,mastery:allMastery,startTest:startFullTest};
 })();
