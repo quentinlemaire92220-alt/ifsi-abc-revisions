@@ -20,6 +20,7 @@ jobs:
       - name: Vérifier la syntaxe JavaScript
         run: |
           node --check sw.js
+          node --check app-version-v742.js
           node --check features-v9.js
           node --check schema-v10.js
           node --check choice-toggle-v13.js
