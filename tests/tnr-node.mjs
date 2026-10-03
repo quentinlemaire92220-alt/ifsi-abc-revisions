@@ -7,25 +7,13 @@ const assert=(v,msg)=>{if(!v)throw new Error(msg)};
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
 function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
-function decodePackFile(p){
-  const source=read(p).trim();
-  if(source.startsWith('[')||source.startsWith('{'))return JSON.parse(source);
-  const raw=Buffer.from(source,'base64');
-  let txt;
-  if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}
-  else txt=raw.toString('utf8');
-  return JSON.parse(txt);
-}
+function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
+function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
 
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,9,10]){
-  const p=`qextra-${String(i).padStart(2,'0')}.txt`;
-  if(!fs.existsSync(p))continue;
-  try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
-  catch(e){skipped.push(`${p}: ${e.message}`)}
-}
+for(const i of [1,2,3,4,5,6,7,9,10]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
@@ -50,39 +38,30 @@ assert(Array.isArray(registry.courses)&&registry.courses.length>=17,'Registre tr
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
 assert(courseIds.has('calculs_doses_mathematiques'),'CourseId calculs absent');
-
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
 for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-1-local-36"),'Cache V8.1 local-36 absent');
+assert(sw.includes("ifsi-abc-v8-1-local-37"),'Cache V8.1 local-37 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
+assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
 assert(sw.indexOf('v79-themes.js')<sw.indexOf('calculs-parcours-v1.js'),'Calculs doit être chargé après V7.9');
 assert(sw.indexOf('calculs-parcours-v1.js')<sw.indexOf('v81-suite.js'),'V8.1 doit être chargée après le parcours calculs');
 assert(sw.indexOf('v81-suite.js')<sw.indexOf('tnr-v72.js'),'V8.1 doit être chargée avant le TNR navigateur');
-
 const versionModule=read('app-version-v742.js');
 for(const marker of ["const VERSION='8.1'",'IFSI_APP_VERSION','centre de révision complet'])assert(versionModule.includes(marker),`Version V8.1 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
 for(const marker of ["const VERSION='8.1'",'v81Change','V8.1 — Centre de révision complet','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.1 incomplet: ${marker}`);
-
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
-assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');
-assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
+assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
 for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip_address:'])assert(!analytics.includes(forbidden),`Champ personnel interdit dans analytics: ${forbidden}`);
-
-const v79=read('v79-themes.js');
-for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
-const calc=read('calculs-parcours-v1.js');
-for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
-const v81=read('v81-suite.js');
-for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);
-for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
-
+const v79=read('v79-themes.js');for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
+const calc=read('calculs-parcours-v1.js');for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
+const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
