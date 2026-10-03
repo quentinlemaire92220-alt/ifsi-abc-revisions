@@ -43,11 +43,14 @@ for(const q of runtime){
 for(const f of ['schema-resp003.svg','schema-resp013.svg','schema-resp015.svg'])assert(fs.existsSync(f),`Asset manquant: ${f}`);
 const sw=read('sw.js');
 assert(sw.includes("./v72-pack.js"),'v72-pack.js absent du service worker');
+assert(sw.includes("./progressive-v72.js"),'progressive-v72.js absent du service worker');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 const pack=read('v72-pack.js');
 for(const marker of ["const VERSION='7.2'",'v72Difficulty','v72Progressive','v72SuggestBtn','finishExamV72','pedagogicDifficulty','v72History'])assert(pack.includes(marker),`Fonction V7.2 absente: ${marker}`);
+const progressive=read('progressive-v72.js');
+for(const marker of ['orderedProgressive',"['easy','medium','hard']",'session=[...out]'])assert(progressive.includes(marker),`Ordre progressif incomplet: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières détectées`);
-console.log('✅ IDs, choix, réponses, schémas, service worker et marqueurs V7.2 validés');
+console.log('✅ IDs, choix, réponses, schémas, progression ordonnée, service worker et marqueurs V7.2 validés');
