@@ -23,7 +23,8 @@ for(const i of m.icons){
 }
 
 const sw=fs.readFileSync('sw.js','utf8');
-assert(sw.includes("ifsi-abc-v7-6-local-28"),'Cache V7.6 local-28 absent');
+assert(sw.includes("ifsi-abc-v7-7-local-29"),'Cache V7.7 local-29 absent');
+assert(sw.includes("./analytics-v77.js"),'Module analytics V7.7 absent du cache PWA');
 assert(sw.includes("./manifest.webmanifest"),'Manifest absent du cache PWA');
 
-console.log('✅ Manifest PWA Android: id stable, 192x192, 512x512, maskable, sans sizes:any');
+console.log('✅ Manifest PWA Android et cache V7.7 contrôlés');
