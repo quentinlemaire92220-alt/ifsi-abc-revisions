@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.4.2';
+const VERSION='7.5';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 
@@ -20,6 +20,10 @@ function injectUnified(){
     <details style="margin-top:7px">
       <summary class="small" style="cursor:pointer">Voir les changements</summary>
       <div class="small" style="margin-top:10px;line-height:1.6">
+        <span id="v75Change"><b>V7.5 — Révision intelligente</b><br>
+        • Niveau de confiance : sûr, hésitant ou au hasard.<br>
+        • Répétition espacée avec prochaine révision calculée automatiquement.<br>
+        • Session « À faire aujourd’hui » mêlant révisions dues, erreurs, points faibles et questions jamais vues.<br><br></span>
         <b>V7.4.2 — Accueil allégé et version stabilisée</b><br>
         • Toutes les nouveautés sont regroupées dans ce seul bloc repliable.<br>
         • Le numéro de version visible est maintenant géré par un module unique, indépendant des anciens modules.<br><br>
@@ -43,5 +47,6 @@ function keepClean(){removeLegacy();injectUnified()}
 keepClean();
 const home=$('home');
 if(home)new MutationObserver(()=>keepClean()).observe(home,{childList:true,subtree:false});
-window.IFSI_V742={version:VERSION,refresh:keepClean};
+window.IFSI_CHANGELOG={version:VERSION,refresh:keepClean};
+window.IFSI_V742=window.IFSI_CHANGELOG;
 })();
