@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.7';
+const VERSION='7.8';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 
@@ -20,6 +20,11 @@ function injectUnified(){
     <details style="margin-top:7px">
       <summary class="small" style="cursor:pointer">Voir les changements</summary>
       <div class="small" style="margin-top:10px;line-height:1.6">
+        <span id="v78Change"><b>V7.8 — Système respiratoire synchronisé</b><br>
+        • Banque des 50 QCM respiratoires réalignée sur le support officiel du Dr Sandrine Dulong.<br>
+        • Fin de cours ajoutée : hémodynamique pulmonaire, contrôle du rythme respiratoire et intégration des récepteurs.<br>
+        • Schémas des questions 3, 13 et 15 mis à jour, dont l’épithélium de conduction.<br>
+        • La fiche « Système respiratoire » ouvre désormais la version Drive mise à jour.<br><br></span>
         <span id="v77Change"><b>V7.7 — Statistiques anonymes</b><br>
         • Comptage anonyme des ouvertures de l’application, QCM, fiches, infographies et vocaux.<br>
         • Aucun nom, email ou score individuel n’est envoyé dans la base de statistiques.<br>

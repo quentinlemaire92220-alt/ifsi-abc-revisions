@@ -1,18 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Schéma simplifié de l’arbre bronchique avec repères A à E">
 <defs><style>.t{font-family:Arial,sans-serif;fill:#242332}.lab{fill:#6941c6}.L{font-size:34px;font-weight:700}.tube{stroke:#0fa7a0;fill:none;stroke-linecap:round;stroke-linejoin:round}.lung{fill:#edf9f8;stroke:#9bded9;stroke-width:8}</style></defs>
-<rect width="1200" height="720" rx="28" fill="#fff"/>
-<text x="50" y="62" class="t L">Arbre bronchique — repères A à E</text>
+<rect width="1200" height="720" rx="28" fill="#fff"/><text x="50" y="62" class="t L">Arbre bronchique — repères A à E</text>
 <path class="lung" d="M250 190c-120 35-185 150-170 298 9 92 66 154 155 147 78-6 142-58 176-125l-19-275c-48-43-94-59-142-45z"/>
 <path class="lung" d="M490 190c120 35 185 150 170 298-9 92-66 154-155 147-78-6-142-58-176-125l19-275c48-43 94-59 142-45z"/>
-<path class="tube" stroke-width="34" d="M370 100v190"/>
-<path class="tube" stroke-width="28" d="M370 285c-35 20-72 48-105 82M370 285c35 20 72 48 105 82"/>
+<path class="tube" stroke-width="34" d="M370 100v190"/><path class="tube" stroke-width="28" d="M370 285c-35 20-72 48-105 82M370 285c35 20 72 48 105 82"/>
 <path class="tube" stroke-width="20" d="M270 365c-45 30-72 61-100 104M270 365c-8 45-5 83-3 123M470 365c45 30 72 61 100 104M470 365c8 45 5 83 3 123"/>
 <path class="tube" stroke-width="12" d="M170 466c-32 24-48 42-68 76M170 466c18 30 32 50 37 86M267 486c-30 23-48 45-60 82M267 486c25 25 39 49 46 85M570 466c32 24 48 42 68 76M570 466c-18 30-32 50-37 86M473 486c30 23 48 45 60 82M473 486c-25 25-39 49-46 85"/>
 <g fill="#7cd6cf" stroke="#0fa7a0" stroke-width="5"><circle cx="90" cy="560" r="25"/><circle cx="120" cy="575" r="21"/><circle cx="145" cy="550" r="18"/><circle cx="650" cy="560" r="25"/><circle cx="620" cy="575" r="21"/><circle cx="595" cy="550" r="18"/></g>
 <g class="t L"><circle class="lab" cx="770" cy="135" r="34"/><text fill="#fff" x="758" y="147">A</text><line x1="736" y1="135" x2="392" y2="150" stroke="#6941c6" stroke-width="7"/>
 <circle class="lab" cx="770" cy="265" r="34"/><text fill="#fff" x="758" y="277">B</text><line x1="736" y1="265" x2="450" y2="318" stroke="#6941c6" stroke-width="7"/>
 <circle class="lab" cx="770" cy="385" r="34"/><text fill="#fff" x="758" y="397">C</text><line x1="736" y1="385" x2="555" y2="445" stroke="#6941c6" stroke-width="7"/>
-<circle class="lab" cx="770" cy="500" r="34"/><text fill="#fff" x="758" y="512">D</text><line x1="736" y1="500" x2="530" y2="535" stroke="#6941c6" stroke-width="7"/>
-<circle class="lab" cx="770" cy="615" r="34"/><text fill="#fff" x="758" y="627">E</text><line x1="736" y1="615" x2="640" y2="570" stroke="#6941c6" stroke-width="7"/></g>
-<g class="t" font-size="26"><text x="845" y="150">Repérer la progression</text><text x="845" y="188">des voies aériennes.</text><text x="845" y="255" fill="#6c6878">Du gros calibre vers</text><text x="845" y="293" fill="#6c6878">les territoires alvéolaires.</text></g>
-</svg>
+<circle class="lab" cx="770" cy="500" r="34"/><text fill="#fff" x="758" y="512">D</text><line x1="736" y1="500" x2="640" y2="570" stroke="#6941c6" stroke-width="7"/>
+<circle class="lab" cx="770" cy="615" r="34"/><text fill="#fff" x="758" y="627">E</text><line x1="736" y1="615" x2="530" y2="535" stroke="#6941c6" stroke-width="7"/></g>
+<g class="t" font-size="26"><text x="845" y="150">Du gros calibre vers</text><text x="845" y="188">les petites voies aériennes.</text><text x="845" y="255" fill="#6c6878">A : proximal</text><text x="845" y="293" fill="#6c6878">E : bronchiole</text></g></svg>
