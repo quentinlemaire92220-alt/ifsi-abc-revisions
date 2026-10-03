@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.8';
+const VERSION='7.9';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 
@@ -20,6 +20,11 @@ function injectUnified(){
     <details style="margin-top:7px">
       <summary class="small" style="cursor:pointer">Voir les changements</summary>
       <div class="small" style="margin-top:10px;line-height:1.6">
+        <span id="v79Change"><b>V7.9 — Révision par thèmes</b><br>
+        • Chaque cours affiche désormais ses thématiques avec le nombre de questions, les questions vues, les erreurs et le taux de réussite local.<br>
+        • Nouveau créateur de série : thème(s), difficulté, 10/20/30/50 questions ou toutes, puis mode entraînement ou examen.<br>
+        • Accès rapide à une série de 10 QCM directement depuis une thématique.<br>
+        • Les futurs niveaux easy / medium / hard de la charte v1.31 sont utilisés directement ; les anciennes banques restent compatibles grâce à une estimation pédagogique.<br><br></span>
         <span id="v78Change"><b>V7.8 — Système respiratoire synchronisé</b><br>
         • Banque des 50 QCM respiratoires réalignée sur le support officiel du Dr Sandrine Dulong.<br>
         • Fin de cours ajoutée : hémodynamique pulmonaire, contrôle du rythme respiratoire et intégration des récepteurs.<br>
