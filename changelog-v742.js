@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.5';
+const VERSION='7.6';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 
@@ -20,6 +20,11 @@ function injectUnified(){
     <details style="margin-top:7px">
       <summary class="small" style="cursor:pointer">Voir les changements</summary>
       <div class="small" style="margin-top:10px;line-height:1.6">
+        <span id="v76Change"><b>V7.6 — Nouvel accueil</b><br>
+        • Accueil plus chaleureux avec portrait recentré et message de bienvenue.<br>
+        • Trois raccourcis : réviser maintenant, ressources et reprise de l’activité.<br>
+        • Bloc « À faire aujourd’hui » simplifié : erreurs, vocaux à écouter et questions du jour.<br>
+        • Les options avancées restent disponibles dans un bloc repliable pour garder l’accueil léger.<br><br></span>
         <span id="v75Change"><b>V7.5 — Révision intelligente</b><br>
         • Niveau de confiance : sûr, hésitant ou au hasard.<br>
         • Répétition espacée avec prochaine révision calculée automatiquement.<br>
