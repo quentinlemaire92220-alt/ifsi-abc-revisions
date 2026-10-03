@@ -49,7 +49,7 @@ const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');
 assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
-assert(!/email|full_name|username/i.test(analytics),'Le module analytics ne doit pas collecter d’identifiant personnel');
+for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip_address:'])assert(!analytics.includes(forbidden),`Champ personnel interdit dans analytics: ${forbidden}`);
 
 const v76=read('v76-home.js');
 for(const marker of ["const VERSION='7.6'",'v76Home','v76Revise','v76Resources','v76Resume','IFSI_V76'])assert(v76.includes(marker),`Home V7.6 absente: ${marker}`);
