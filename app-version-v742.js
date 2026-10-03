@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
-const VERSION='7.4.2';
+const VERSION='7.5';
 const TITLE=`V${VERSION} local`;
-const READY=`Application prête • V${VERSION} locale : parcours par cours, vocaux Drive, favoris unifiés et diagnostic des rattachements.`;
+const READY=`Application prête • V${VERSION} locale : session du jour, confiance et répétition espacée.`;
 const $=id=>document.getElementById(id);
 
 function buildStableVersionUI(){
@@ -12,8 +12,6 @@ function buildStableVersionUI(){
   const card=legacyBox?.parentElement;
   if(!legacyBox||!card)return false;
 
-  // Les anciens modules continuent éventuellement à écrire dans #update,
-  // mais ce bloc est désormais invisible et ne sert plus à l'affichage utilisateur.
   legacyBox.id='legacyVersionSink';
   legacyBox.setAttribute('aria-hidden','true');
   legacyBox.style.display='none';
