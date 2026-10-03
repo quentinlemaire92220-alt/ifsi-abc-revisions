@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
-const VERSION='7.6';
+const VERSION='7.7';
 const TITLE=`V${VERSION} local`;
-const READY=`Application prête • V${VERSION} locale : nouvel accueil chaleureux, raccourcis et priorités du jour.`;
+const READY=`Application prête • V${VERSION} locale : statistiques anonymes d’usage activées, sans compte utilisateur.`;
 const $=id=>document.getElementById(id);
 
 function buildStableVersionUI(){
