@@ -40,17 +40,36 @@ for(const q of runtime){
   assert(q.choices.every(c=>typeof c==='string'&&c.trim().length>0),`Choix vide: ${q.id}`);
 }
 
+const vocals=json('vocals.json');
+assert(Array.isArray(vocals)&&vocals.length>=29,`Catalogue vocaux trop petit: ${vocals.length}`);
+assert(new Set(vocals.map(v=>v.id)).size===vocals.length,'IDs vocaux dupliqués');
+assert(new Set(vocals.map(v=>v.driveId)).size===vocals.length,'Drive IDs vocaux dupliqués');
+assert(new Set(vocals.map(v=>v.course)).size>=6,'Nombre de matières vocales anormalement faible');
+for(const v of vocals){
+  assert(typeof v.id==='string'&&v.id, 'Vocal sans ID');
+  assert(typeof v.course==='string'&&v.course.trim(),`Matière absente: ${v.id}`);
+  assert(typeof v.title==='string'&&v.title.trim(),`Titre vocal absent: ${v.id}`);
+  assert(Number.isInteger(v.number)&&v.number>=1,`Numéro vocal invalide: ${v.id}`);
+  assert(typeof v.driveId==='string'&&v.driveId.length>10,`Drive ID vocal invalide: ${v.id}`);
+  assert(typeof v.mime==='string'&&v.mime.startsWith('audio/'),`MIME vocal invalide: ${v.id}`);
+}
+
 for(const f of ['schema-resp003.svg','schema-resp013.svg','schema-resp015.svg'])assert(fs.existsSync(f),`Asset manquant: ${f}`);
 const sw=read('sw.js');
 assert(sw.includes("./v72-pack.js"),'v72-pack.js absent du service worker');
 assert(sw.includes("./progressive-v72.js"),'progressive-v72.js absent du service worker');
+assert(sw.includes("./vocals.json"),'vocals.json absent du cache PWA');
+assert(sw.includes("./vocals-v73.js"),'vocals-v73.js absent du service worker');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 const pack=read('v72-pack.js');
 for(const marker of ["const VERSION='7.2'",'v72Difficulty','v72Progressive','v72SuggestBtn','finishExamV72','pedagogicDifficulty','v72History'])assert(pack.includes(marker),`Fonction V7.2 absente: ${marker}`);
 const progressive=read('progressive-v72.js');
 for(const marker of ['orderedProgressive',"['easy','medium','hard']",'session=[...out]'])assert(progressive.includes(marker),`Ordre progressif incomplet: ${marker}`);
+const vocalScript=read('vocals-v73.js');
+for(const marker of ["const VERSION='7.3'",'showVocals','vocalList','vocalPlayer','drive.google.com/file/d/','/preview','IFSI_V73'])assert(vocalScript.includes(marker),`Fonction vocaux V7.3 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
-console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières détectées`);
-console.log('✅ IDs, choix, réponses, schémas, progression ordonnée, service worker et marqueurs V7.2 validés');
+console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
+console.log(`✅ ${vocals.length} vocaux Drive contrôlés sur ${new Set(vocals.map(v=>v.course)).size} matières`);
+console.log('✅ IDs, choix, réponses, schémas, progression ordonnée, vocaux V7.3 et service worker validés');
