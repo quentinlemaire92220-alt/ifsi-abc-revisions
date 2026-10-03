@@ -29,7 +29,12 @@ jobs:
           node --check progressive-v72.js
           node --check vocals-v73.js
           node --check v74-pack.js
+          node --check course-registry-v741.js
           node --check tnr-v72.js
+          node --check tests/course-audit.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
+
+      - name: Audit des rattachements de cours
+        run: node tests/course-audit.mjs
