@@ -36,7 +36,10 @@ jobs:
           node --check v76-home.js
           node --check analytics-v77.js
           node --check v79-themes.js
+          node --check calculs-parcours-v1.js
+          node --check v81-suite.js
           node --check tnr-v72.js
+          node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
           node --check tests/pwa-install.mjs
 
