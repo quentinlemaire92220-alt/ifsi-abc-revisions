@@ -40,13 +40,21 @@ for(const q of runtime){
   assert(q.choices.every(c=>typeof c==='string'&&c.trim().length>0),`Choix vide: ${q.id}`);
 }
 
+const registry=json('course-registry-v741.json');
+assert(registry.version==='7.4.1','Registre cours version incorrecte');
+assert(Array.isArray(registry.courses)&&registry.courses.length>=16,`Registre cours trop petit: ${registry.courses?.length||0}`);
+assert(new Set(registry.courses.map(c=>c.id)).size===registry.courses.length,'courseId dupliqués dans le registre');
+for(const c of registry.courses){assert(/^[a-z0-9_]+$/.test(c.id),`courseId invalide: ${c.id}`);assert(typeof c.label==='string'&&c.label.trim(),`Label absent: ${c.id}`);assert(Array.isArray(c.aliases)&&c.aliases.length,`Aliases absents: ${c.id}`)}
+
 const vocals=json('vocals.json');
 assert(Array.isArray(vocals)&&vocals.length>=29,`Catalogue vocaux trop petit: ${vocals.length}`);
 assert(new Set(vocals.map(v=>v.id)).size===vocals.length,'IDs vocaux dupliqués');
 assert(new Set(vocals.map(v=>v.driveId)).size===vocals.length,'Drive IDs vocaux dupliqués');
 assert(new Set(vocals.map(v=>v.course)).size>=6,'Nombre de matières vocales anormalement faible');
+const courseIds=new Set(registry.courses.map(c=>c.id));
 for(const v of vocals){
   assert(typeof v.id==='string'&&v.id,'Vocal sans ID');
+  assert(typeof v.courseId==='string'&&courseIds.has(v.courseId),`courseId vocal invalide: ${v.id}`);
   assert(typeof v.course==='string'&&v.course.trim(),`Matière absente: ${v.id}`);
   assert(typeof v.title==='string'&&v.title.trim(),`Titre vocal absent: ${v.id}`);
   assert(Number.isInteger(v.number)&&v.number>=1,`Numéro vocal invalide: ${v.id}`);
@@ -61,8 +69,10 @@ assert(sw.includes("./progressive-v72.js"),'progressive-v72.js absent du service
 assert(sw.includes("./vocals.json"),'vocals.json absent du cache PWA');
 assert(sw.includes("./vocals-v73.js"),'vocals-v73.js absent du service worker');
 assert(sw.includes("./v74-pack.js"),'v74-pack.js absent du service worker');
+assert(sw.includes("./course-registry-v741.json"),'registre V7.4.1 absent du cache PWA');
+assert(sw.includes("./course-registry-v741.js"),'module registre V7.4.1 absent du service worker');
 assert(sw.includes("./tnr-v72.js"),'tnr-v72.js absent du service worker');
-assert(sw.includes("ifsi-abc-v7-4-local-21"),'cache V7.4 absent');
+assert(sw.includes("ifsi-abc-v7-4-1-local-22"),'cache V7.4.1 absent');
 assert(!sw.includes("<script src=\"./incident-v711.js\"></script>"),'Ancien module incident encore injecté');
 
 const pack=read('v72-pack.js');
@@ -74,8 +84,11 @@ for(const marker of ["const VERSION='7.3.1'","const STORAGE='ifsiabc_vocals_v1'"
 const v74=read('v74-pack.js');
 for(const marker of ["const VERSION='7.4'","ifsiabc_v74_resource_favorites_v1",'v74Dashboard','v74SearchCard','courses74','course74','favorites74','courseData74','resourceMatchesCourse74','showCourses74','showFavorites74','enhanceResourceCards74','IFSI_V74'])assert(v74.includes(marker),`Fonction V7.4 absente: ${marker}`);
 assert(v74.includes('QCM, cours, fiches, infographies et vocaux'),'Recherche V7.4 incomplète');
+const v741=read('course-registry-v741.js');
+for(const marker of ["const VERSION='7.4.1'",'course-registry-v741.json','resolveResource','resolveLabel','resourcesForCourse','diagnosticUI','IFSI_V741'])assert(v741.includes(marker),`Fonction V7.4.1 absente: ${marker}`);
 
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ ${new Set(runtime.map(q=>q.course||q.theme).filter(Boolean)).size} matières QCM détectées`);
-console.log(`✅ ${vocals.length} vocaux Drive contrôlés sur ${new Set(vocals.map(v=>v.course)).size} matières`);
-console.log('✅ V7.4 contrôlée : parcours par cours, accueil personnalisé, recherche globale et favoris unifiés');
+console.log(`✅ ${vocals.length} vocaux Drive contrôlés avec courseId explicite`);
+console.log(`✅ ${registry.courses.length} courseId stables contrôlés`);
+console.log('✅ V7.4.1 contrôlée : registre de cours, diagnostic et compatibilité V7.4');
