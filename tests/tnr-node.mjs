@@ -47,7 +47,7 @@ for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./v86-home-clean.js','./v87-settings.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-8-2-local-50"),'Cache V8.8.2 local-50 absent');
+assert(sw.includes("ifsi-abc-v8-8-3-local-51"),'Cache V8.8.3 local-51 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
@@ -61,9 +61,9 @@ assert(sw.indexOf('v85-home-lite.js')<sw.indexOf('v86-home-clean.js'),'V8.6 doit
 assert(sw.indexOf('v86-home-clean.js')<sw.indexOf('v87-settings.js'),'V8.7 doit être chargée après V8.6');
 assert(sw.indexOf('v87-settings.js')<sw.indexOf('tnr-v72.js'),'Paramètres doivent être chargés avant le TNR navigateur');
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='8.8.2'",'IFSI_APP_VERSION','hotfix anti-gel mobile'])assert(versionModule.includes(marker),`Version V8.8.2 incomplète: ${marker}`);
+for(const marker of ["const VERSION='8.8.3'",'IFSI_APP_VERSION','hotfix performance mobile'])assert(versionModule.includes(marker),`Version V8.8.3 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='8.8.2'",'v882Change','V8.8.2 — Hotfix anti-gel mobile','v881Change','V8.8.1 — Stabilité mobile','v88Change','V8.8 — Audit et rangement des ressources','v87Change','V8.7 — Onglet Paramètres','v86Change','V8.6 — Accueil minimal','v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.8.2 incomplet: ${marker}`);
+for(const marker of ["const VERSION='8.8.3'",'v883Change','V8.8.3 — Correctif performance mobile','v882Change','V8.8.2 — Hotfix anti-gel mobile','v881Change','V8.8.1 — Stabilité mobile','v88Change','V8.8 — Audit et rangement des ressources','v87Change','V8.7 — Onglet Paramètres','v86Change','V8.6 — Accueil minimal','v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.8.3 incomplet: ${marker}`);
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
@@ -71,17 +71,17 @@ for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip
 const v79=read('v79-themes.js');for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
 const calc=read('calculs-parcours-v1.js');for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
 const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
-const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.8'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction navigation anatomie absente: ${marker}`);
-const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.8'",'resp003','resp013','resp015','resp-official-overview-learn.jpg','resp-official-bronchial-learn.jpg','resp-official-epithelium-learn.jpg','support officiel du Dr Sandrine Dulong','Apprendre','S’entraîner','Tester','10 min anatomie','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Fonction anatomie V8.4 absente: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
+const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.8.3'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction navigation anatomie absente: ${marker}`);
+const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.8.3'",'resp003','resp013','resp015','resp-official-overview-learn.jpg','resp-official-bronchial-learn.jpg','resp-official-epithelium-learn.jpg','support officiel du Dr Sandrine Dulong','Apprendre','S’entraîner','Tester','10 min anatomie','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Fonction anatomie V8.4 absente: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
-const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.8'",'Vue d’ensemble','Vocabulaire','Trajet de l’air','v84Overview','v84Vocab'])assert(v84.includes(marker),`Interface respiratoire V8.4 incomplète: ${marker}`);
+const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.8.3'",'Vue d’ensemble','Vocabulaire','Trajet de l’air','v84Overview','v84Vocab'])assert(v84.includes(marker),`Interface respiratoire V8.4 incomplète: ${marker}`);
 const v85=read('v85-home-lite.js');for(const marker of ["const V='8.5'",'v85-home','v82Primary','v76-today','⚙️ Plus','IFSI_V85'])assert(v85.includes(marker),`Accueil V8.5 incomplet: ${marker}`);
 const v86=read('v86-home-clean.js');for(const marker of ["const V='8.6'",'v86-home','v86Tools','v86SettingsDialog','IFSI_V86'])assert(v86.includes(marker),`Accueil V8.6 incomplet: ${marker}`);
-const v87=read('v87-settings.js');for(const marker of ["const V='8.8.2'",'settings87','v87Nav','Exporter mes résultats','Sauvegarde complète','Journal des versions','IFSI_V87'])assert(v87.includes(marker),`Paramètres V8.8.2 incomplets: ${marker}`);
-console.log('✅ V8.8.2 contrôlée : hotfix anti-gel mobile et catalogue audité');
+const v87=read('v87-settings.js');for(const marker of ["const V='8.8.3'",'settings87','v87Nav','Exporter mes résultats','Sauvegarde complète','Journal des versions','IFSI_V87'])assert(v87.includes(marker),`Paramètres V8.8.3 incomplets: ${marker}`);
+console.log('✅ V8.8.3 contrôlée : indexation du registre, démarrage allégé et catalogue audité');
 console.log('✅ V8.6 conservée : accueil minimal');
 console.log('✅ V8.5 conservée comme couche de compatibilité');
 console.log('✅ V8.4 conservée : module respiratoire enrichi, anatomie interactive et ressources intégrées');
