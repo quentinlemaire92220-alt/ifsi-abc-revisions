@@ -85,7 +85,8 @@ function courseData74(course){
   return {course,qs,vs,sheets,infos,seen:seen.length,ans,cor,rate,err,listenedCount};
 }
 function weakestCourse74(){
-  const candidates=allCourses74().map(course=>courseData74(course)).filter(d=>d.qs.length&&d.ans>0);
+  const labels=[...new Set((Array.isArray(Q)?Q:[]).map(q=>q.courseId||qCourse(q)).filter(Boolean))];
+  const candidates=labels.map(x=>courseData74(registryCourse74(x)?.label||x)).filter(d=>d.qs.length&&d.ans>0);
   if(!candidates.length)return null;return candidates.sort((a,b)=>(a.rate??101)-(b.rate??101)||b.err-a.err)[0];
 }
 
