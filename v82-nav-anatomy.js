@@ -15,11 +15,12 @@ const SYSTEMS=[
   {id:'systeme_urinaire',icon:'💧',subtitle:'Fonction rénale et appareil urinaire'},
   {id:'systeme_endocrinien',icon:'🧪',subtitle:'Hormones et régulation'},
   {id:'systeme_nerveux',icon:'🧠',subtitle:'Système nerveux'},
-  {id:'systeme_immunitaire',icon:'🛡️',subtitle:'Défenses de l’organisme'}
+  {id:'systeme_immunitaire',icon:'🛡️',subtitle:'Défenses de l’organisme'},
+  {id:'systeme_digestif',icon:'🍽️',subtitle:'Anatomie, glandes annexes et physiologie digestive'},
+  {id:'appareil_locomoteur',icon:'🦴',subtitle:'Ostéologie, articulations, rachis et traumatologie'}
 ];
 const FUTURE=[
-  ['❤️','Système cardiovasculaire'],['🍽️','Système digestif'],['🦴','Appareil locomoteur'],
-  ['🧬','Reproduction'],['👁️','Organes des sens'],['🧴','Peau & téguments']
+  ['❤️','Système cardiovasculaire'],['🧬','Reproduction'],['👁️','Organes des sens'],['🧴','Peau & téguments']
 ];
 const ALL=[...FOUNDATION,...SYSTEMS];
 
