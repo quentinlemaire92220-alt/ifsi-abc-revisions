@@ -44,6 +44,8 @@ jobs:
           node --check v85-home-lite.js
           node --check v86-home-clean.js
           node --check v87-settings.js
+          node --check v813-home-discovery.js
+          node --check v814-respiratory-atlas.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
