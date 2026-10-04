@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.11.4',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.12',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -117,13 +117,20 @@ const RESP_BOARDS=[
   {id:'resp003',index:1,title:'Voies respiratoires',subtitle:'Fosses nasales, cavité buccale, pharynx, épiglotte, larynx, trachée et bronches principales',src:'https://drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ&sz=w1200',fallback:'./resp-official-overview-learn.jpg?v=14',generated:true,hd:true},
   {id:'resp013',index:2,title:'Arbre bronchique',subtitle:'Trachée, bronches principales, lobaires, segmentaires, bronchioles et zone respiratoire',src:'https://drive.google.com/thumbnail?id=1G2agsVxnMlIeksAdV0-vguUE5bRKQ65Y&sz=w1200',fallback:'./resp-official-bronchial-learn.jpg?v=14',generated:true,hd:true,testReady:false},
   {id:'resp015',index:3,title:'Alvéoles & échanges gazeux',subtitle:'Bronchiole respiratoire, alvéoles, capillaires et membrane alvéolo-capillaire',src:'https://drive.google.com/thumbnail?id=11A147V9LowK3-PnJASkqmrfU-T1nTVIJ&sz=w1200',generated:true,hd:true,testReady:false}
+
 ];
+const URINARY_BOARDS=[
+  {id:'urinary001',index:1,title:'Appareil urinaire & anatomie du rein',subtitle:'Reins, uretères, vessie, urètre et coupe du rein',src:'https://drive.google.com/thumbnail?id=1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V&sz=w1200',generated:true,hd:true,testReady:false},
+  {id:'urinary002',index:2,title:'Néphron',subtitle:'Glomérule, capsule de Bowman, tubules, anse de Henlé et tube collecteur',src:'https://drive.google.com/thumbnail?id=1GdqA-Vw5zIWBZFzLTLfOrpatl9ayJ57J&sz=w1200',generated:true,hd:true,testReady:false},
+  {id:'urinary003',index:3,title:'Formation de l’urine & miction',subtitle:'Filtration glomérulaire, réabsorption, sécrétion, vessie et miction',src:'https://drive.google.com/thumbnail?id=155CIVMe4XaPcfkcGM8SS2MFW5XdL7Hpl&sz=w1200',generated:true,hd:true,testReady:false}
+
 function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
 function boardTitle(x){
   return x.displayTitle||String(x.title||'Planche').replace(/\.pdf$/i,'').replace(/^UE_S1_[A-Z0-9]+_/i,'').replace(/_Infographie_\d+_/i,' — ').replace(/_/g,' ').replace(/\s+/g,' ').trim()
 }
 function boardsFor(def){
   if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
+  if(def.id==='systeme_urinaire')return URINARY_BOARDS.map(x=>({...x,interactive:true}));
   return (resources(def.id).infographics||[]).map(x=>({id:x.url,title:boardTitle(x),subtitle:def.subtitle,url:x.url,interactive:false}))
 }
 function respBoardRow(b){
@@ -138,7 +145,7 @@ function catalogCard(def,term){
   const c=course(def.id),boards=boardsFor(def),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
   if(term&&!filtered.length&&!normCatalog(c.label).includes(term))return '';
   const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;if(!boards.length)return '';
-  const content=isOpen?(def.id==='systeme_respiratoire'?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
+  const interactive=['systeme_respiratoire','systeme_urinaire'].includes(def.id);const content=isOpen?(interactive?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
   return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${content}</section>`
 }
 const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
