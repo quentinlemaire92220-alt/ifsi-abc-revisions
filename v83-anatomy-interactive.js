@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.9',SECTION='anatomy83',KEY='ifsiabc_v83_anatomy_mastery_v1',FAV='ifsiabc_v83_anatomy_favs_v1';
+const V='8.10',SECTION='anatomy83',KEY='ifsiabc_v83_anatomy_mastery_v1',FAV='ifsiabc_v83_anatomy_favs_v1';
 const $=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}},W=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const SH=a=>{a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -28,10 +28,9 @@ function resources(){return window.IFSI_V741?.resourcesForCourse?.('systeme_resp
 function ensure(){if($(SECTION))return;const app=document.querySelector('.app');if(!app)return;const s=document.createElement('section');s.id=SECTION;s.className='hidden';s.innerHTML='<div id="v83Body"></div>';const q=$('quiz');if(q)q.insertAdjacentElement('beforebegin',s);else app.appendChild(s)}
 let patched=false;function patchShow(){if(patched||typeof window.show!=='function')return;const old=window.show;window.show=function(id){$(SECTION)?.classList.add('hidden');if(id===SECTION){document.querySelectorAll('.app > section').forEach(x=>x.classList.add('hidden'));$(SECTION)?.classList.remove('hidden');document.querySelectorAll('nav button').forEach(b=>b.classList.remove('on'));render();return}return old(id)};patched=true}
 function show(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
+function openDiagram(id,nextMode='learn'){if(DIAGRAMS.some(d=>d.id===id))active=id;mode=['learn','train','test'].includes(nextMode)?nextMode:'learn';test=null;show()}
 function anatomyShort(){window.IFSI_V82?.startSystem?.('systeme_respiratoire',10)}
-function injectLauncher(){const b=$('v82AnatomyBody');if(!b)return;let x=$('v83Launcher');if(!x){x=document.createElement('div');x.id='v83Launcher';x.className='v83-launch';const head=b.querySelector('.v82-pagehead');head?.appendChild(x)}const m=allMastery();x.innerHTML=`<button id="v83Open" class="btn primary">🧩 Schémas interactifs <span class="badge">${m.done}/${m.total}</span></button><button id="v83Ten" class="btn outline">⏱️ 10 min anatomie</button>`;$('v83Open').onclick=show;$('v83Ten').onclick=anatomyShort;
-const rc=b.querySelector('[data-anat-card="systeme_respiratoire"] .v82-actions');if(rc&&!rc.querySelector('[data-v83resp]')){const z=document.createElement('button');z.className='btn outline';z.dataset.v83resp='1';z.textContent='🧩 Schémas';z.onclick=show;rc.insertBefore(z,rc.lastElementChild)}
-}
+function injectLauncher(){}
 function setMode(m){mode=m;test=null;render()}
 function labelsHtml(d){const m=mastery(d.id),blur=mode==='train';return Object.entries(d.labels).map(([k,v])=>`<div class="v83-label"><span class="v83-letter">${k}</span><span class="${blur?'v83-hiddenlabel':''}" data-v83label>${E(v)}</span></div>`).join('')+`<div class="v83-master"><span style="width:${m.pct}%"></span></div><div class="small" style="margin-top:5px">${m.mastered}/${m.total} structures maîtrisées</div>${blur?'<button id="v83Reveal" class="btn outline v83-reveal">👁️ Révéler les légendes</button>':''}`}
 function makeQuestion(){const d=DIAGRAMS.find(x=>x.id===active),entries=Object.entries(d.labels),[letter,answer]=entries[Math.floor(Math.random()*entries.length)],pool=SH(entries.map(x=>x[1]).filter(x=>x!==answer)).slice(0,3);test={letter,answer,choices:SH([answer,...pool]),answered:false,ok:false}}
@@ -62,7 +61,7 @@ function bind(){
  document.querySelectorAll('[data-v83vocal]').forEach(x=>x.onclick=()=>{window.showVocals?.();setTimeout(()=>window.IFSI_V73?.play?.(x.dataset.v83vocal),80)})
 }
 function init(){css();ensure();patchShow();injectLauncher();return !!window.IFSI_V82&&!!window.IFSI_V741?.getRegistry?.()}
-let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>260)clearInterval(t)},100);const obs=new MutationObserver(()=>injectLauncher());setTimeout(()=>{const b=$('v82AnatomyBody');if(b)obs.observe(b,{childList:true,subtree:false})},900);
-window.addEventListener('storage',()=>{injectLauncher();if(!$(SECTION)?.classList.contains('hidden'))render()});
-window.IFSI_V83={version:V,show,mastery:allMastery,startTest:startFullTest};
+let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>260)clearInterval(t)},150);
+window.addEventListener('storage',()=>{if(!$(SECTION)?.classList.contains('hidden'))render()});
+window.IFSI_V83={version:V,show,openDiagram,diagrams:()=>DIAGRAMS.map(d=>({id:d.id,title:d.title,src:d.learnSrc,theme:d.theme})),mastery:allMastery,startTest:startFullTest};
 })();
