@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.8';
+const VERSION='8.8.3';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
