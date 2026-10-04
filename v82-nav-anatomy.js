@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.12',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.13',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -126,6 +126,7 @@ const URINARY_BOARDS=[
 ];
 
 function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
+function showSystemBoards(id){expandedSystem=id;showAnatomy();setTimeout(()=>document.querySelector(`[data-v82system="${id}"]`)?.scrollIntoView({behavior:'smooth',block:'start'}),80)}
 function boardTitle(x){
   return x.displayTitle||String(x.title||'Planche').replace(/\.pdf$/i,'').replace(/^UE_S1_[A-Z0-9]+_/i,'').replace(/_Infographie_\d+_/i,' — ').replace(/_/g,' ').replace(/\s+/g,' ').trim()
 }
@@ -195,5 +196,5 @@ function init(){
 let tries=0,linked=false;const timer=setInterval(()=>{tries++;if(init()){if(!linked)linked=links();clearInterval(timer)}else if(tries>260)clearInterval(timer)},150);
 window.addEventListener('ifsi:v741-ready',()=>{hierarchy();if(!linked)linked=links()});
 window.addEventListener('storage',()=>{hierarchy();renderAnatomy()});
-window.IFSI_V82={version:V,showAnatomy,startSystem:startCourse,startMixed:mixed,openSystem};
+window.IFSI_V82={version:V,showAnatomy,showSystemBoards,startSystem:startCourse,startMixed:mixed,openSystem};
 })();
