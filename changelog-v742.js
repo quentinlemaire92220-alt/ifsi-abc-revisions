@@ -1,12 +1,13 @@
 (()=>{
 'use strict';
-const VERSION='8.12';
+const VERSION='8.13';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 function removeLegacy(){for(const id of LEGACY_IDS)$(id)?.remove()}
 function currentMarkup(){return `
 <div class="row"><b>🆕 Nouveautés de l’application</b><span class="badge">V${VERSION}</span></div>
 <details style="margin-top:7px"><summary class="small" style="cursor:pointer">Voir les changements</summary><div class="small" style="margin-top:10px;line-height:1.6">
+<span id="v813Change"><b>V8.13 — Accueil : recherche cours & nouveautés</b><br>• Le raccourci « Réglages » est retiré de l’accueil : les paramètres restent accessibles par l’onglet dédié de la barre du bas.<br>• La recherche de cours est désormais directement dépliée sur l’accueil avec accès rapide à une matière précise.<br>• Un petit bloc « Nouveautés » présente les derniers contenus ajoutés, notamment les nouvelles planches anatomiques.<br>• Un clic sur une nouveauté de type schéma ouvre directement les planches du système concerné.<br><br></span>
 <span id="v812Change"><b>V8.12 — Planches anatomiques multi-systèmes</b><br>• Le système urinaire rejoint le catalogue de planches anatomiques HD.<br>• Trois nouvelles planches : Appareil urinaire & anatomie du rein, Néphron, Formation de l’urine & miction.<br>• La visionneuse Anatomie devient multi-systèmes et conserve le zoom plein écran sur mobile et PC.<br>• Les nouvelles planches restent en mode Apprendre tant que les versions sans légendes destinées à l’entraînement et au test ne sont pas validées.<br>• Le rangement Drive suit désormais le standard 06 - Planches anatomiques / Masters / Versions validées / Exports application.<br><br></span>
 <span id="v8114Change"><b>V8.11.4 — Module respiratoire HD complet</b><br>• Les trois planches HD du système respiratoire sont maintenant intégrées : Voies respiratoires, Arbre bronchique, Alvéoles & échanges gazeux.<br>• Chaque planche dispose d’une source légère dans la page et d’une source HD dédiée au zoom plein écran.<br>• Les plans 2 et 3 restent en mode Apprendre uniquement tant que leurs versions sans légendes et test ne sont pas validées.<br>• Les masters et exports application sont rangés dans le Drive du cours.<br><br></span>
 <span id="v8113Change"><b>V8.11.3 — Planche HD Voies respiratoires</b><br>• La nouvelle planche HD « Voies respiratoires » remplace la miniature floue dans le mode Apprendre.<br>• Une source plus légère est utilisée dans la page et une source dédiée HD est chargée dans la visionneuse plein écran.<br>• Le zoom reste disponible par pincement, molette, glisser et double-clic.<br>• Le master HD est stocké dans le Drive et une copie dédiée à l’application est rangée dans « 03 - Exports application ».<br>• La planche reste marquée comme générée tant que la validation pédagogique finale n’est pas terminée.<br><br></span>
@@ -31,7 +32,7 @@ function injectUnified(){
     const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');
     if(app)app.insertAdjacentElement('beforebegin',card);else home.appendChild(card);
   }
-  const alreadyCurrent=card.querySelector('#v812Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v812Change';
+  const alreadyCurrent=card.querySelector('#v813Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v813Change';
   if(!alreadyCurrent){card.className='card v72-changelog';card.innerHTML=currentMarkup()}
 }
 function keepClean(){removeLegacy();injectUnified()}
