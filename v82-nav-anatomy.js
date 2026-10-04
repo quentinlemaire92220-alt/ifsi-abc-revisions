@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.7',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.8',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
