@@ -46,8 +46,8 @@ assert(vocals.length>=29,'Catalogue vocaux trop petit');
 for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
 
 const sw=read('sw.js');
-for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-4-local-44"),'Cache V8.4 local-44 absent');
+for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
+assert(sw.includes("ifsi-abc-v8-5-local-45"),'Cache V8.5 local-45 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
@@ -56,11 +56,12 @@ assert(sw.indexOf('calculs-parcours-v1.js')<sw.indexOf('v81-suite.js'),'V8.1 doi
 assert(sw.indexOf('v81-suite.js')<sw.indexOf('v82-nav-anatomy.js'),'V8.2 doit être chargée après V8.1');
 assert(sw.indexOf('v82-nav-anatomy.js')<sw.indexOf('v83-anatomy-interactive.js'),'Anatomie interactive doit être chargée après V8.2');
 assert(sw.indexOf('v83-anatomy-interactive.js')<sw.indexOf('v84-respiratory-polish.js'),'V8.4 respiratoire doit être chargée après l’anatomie interactive');
-assert(sw.indexOf('v84-respiratory-polish.js')<sw.indexOf('tnr-v72.js'),'V8.4 doit être chargée avant le TNR navigateur');
+assert(sw.indexOf('v84-respiratory-polish.js')<sw.indexOf('v85-home-lite.js'),'V8.5 accueil doit être chargé après V8.4');
+assert(sw.indexOf('v85-home-lite.js')<sw.indexOf('tnr-v72.js'),'V8.5 doit être chargée avant le TNR navigateur');
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='8.4'",'IFSI_APP_VERSION','module respiratoire enrichi','vocabulaire'])assert(versionModule.includes(marker),`Version V8.4 incomplète: ${marker}`);
+for(const marker of ["const VERSION='8.5'",'IFSI_APP_VERSION','accueil allégé','navigation mobile simplifiée'])assert(versionModule.includes(marker),`Version V8.5 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='8.4'",'v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.4 incomplet: ${marker}`);
+for(const marker of ["const VERSION='8.5'",'v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.5 incomplet: ${marker}`);
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
@@ -75,7 +76,9 @@ console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runt
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
 const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.4'",'Vue d’ensemble','Vocabulaire','Trajet de l’air','v84Overview','v84Vocab'])assert(v84.includes(marker),`Interface respiratoire V8.4 incomplète: ${marker}`);
-console.log('✅ V8.4 contrôlée : module respiratoire enrichi, anatomie interactive et ressources intégrées');
+const v85=read('v85-home-lite.js');for(const marker of ["const V='8.5'",'v85-home','v82Primary','v76-today','⚙️ Plus','IFSI_V85'])assert(v85.includes(marker),`Accueil V8.5 incomplet: ${marker}`);
+console.log('✅ V8.5 contrôlée : accueil allégé et navigation mobile simplifiée');
+console.log('✅ V8.4 conservée : module respiratoire enrichi, anatomie interactive et ressources intégrées');
 console.log('✅ V8.2 conservée : navigation hiérarchisée, espace Anatomie & Physiologie, QCM multi-systèmes et partage');
 console.log('✅ V8.1 conservée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
 console.log('✅ V8.0 calculs conservée avec progression par difficulté');
