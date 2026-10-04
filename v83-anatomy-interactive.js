@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.11',SECTION='anatomy83',KEY='ifsiabc_v83_anatomy_mastery_v1',FAV='ifsiabc_v83_anatomy_favs_v1';
+const V='8.11.1',SECTION='anatomy83',KEY='ifsiabc_v83_anatomy_mastery_v1',FAV='ifsiabc_v83_anatomy_favs_v1';
 const $=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}},W=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const SH=a=>{a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
