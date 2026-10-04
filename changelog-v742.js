@@ -1,12 +1,13 @@
 (()=>{
 'use strict';
-const VERSION='8.11.2';
+const VERSION='8.11.3';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 function removeLegacy(){for(const id of LEGACY_IDS)$(id)?.remove()}
 function currentMarkup(){return `
 <div class="row"><b>🆕 Nouveautés de l’application</b><span class="badge">V${VERSION}</span></div>
 <details style="margin-top:7px"><summary class="small" style="cursor:pointer">Voir les changements</summary><div class="small" style="margin-top:10px;line-height:1.6">
+<span id="v8113Change"><b>V8.11.3 — Planche HD Voies respiratoires</b><br>• La nouvelle planche HD « Voies respiratoires » remplace la miniature floue dans le mode Apprendre.<br>• Une source plus légère est utilisée dans la page et une source dédiée HD est chargée dans la visionneuse plein écran.<br>• Le zoom reste disponible par pincement, molette, glisser et double-clic.<br>• Le master HD est stocké dans le Drive et une copie dédiée à l’application est rangée dans « 03 - Exports application ».<br>• La planche reste marquée comme générée tant que la validation pédagogique finale n’est pas terminée.<br><br></span>
 <span id="v8112Change"><b>V8.11.2 — Zoom plein écran des planches</b><br>• Un clic sur la planche ouvre désormais une visionneuse plein écran.<br>• Mobile : pincement à deux doigts et glisser pour déplacer.<br>• PC : molette, double-clic et glisser pour naviguer dans la planche.<br>• Boutons +, −, réinitialisation du zoom et fermeture rapide.<br><br></span>
 <span id="v8111Change"><b>V8.11.1 — Test réel de la planche Voies respiratoires</b><br>• La première planche générée est branchée dans le mode Apprendre pour test visuel réel dans l’application.<br>• Le mode S’entraîner / Tester conserve le schéma officiel actuel afin de ne pas mélanger une planche encore en validation avec l’évaluation.<br>• La carte porte explicitement la mention « planche générée en test » jusqu’à validation pédagogique finale.<br>• Le master reste stocké dans le Drive du cours ; aucune version n’est encore rangée dans « Versions validées ».<br><br></span>
 <span id="v8111Change"><b>V8.11.1 — Test réel de la planche Voies respiratoires</b><br>• La première planche générée est branchée dans le mode Apprendre pour test visuel réel dans l’application.<br>• Le mode S’entraîner / Tester conserve le schéma officiel actuel afin de ne pas mélanger une planche encore en validation avec l’évaluation.<br>• La carte porte explicitement la mention « planche générée en test » jusqu’à validation pédagogique finale.<br>• Le master reste stocké dans le Drive du cours ; aucune version n’est encore rangée dans « Versions validées ».<br><br></span>
@@ -28,7 +29,7 @@ function injectUnified(){
     const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');
     if(app)app.insertAdjacentElement('beforebegin',card);else home.appendChild(card);
   }
-  const alreadyCurrent=card.querySelector('#v8112Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v8112Change';
+  const alreadyCurrent=card.querySelector('#v8113Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v8113Change';
   if(!alreadyCurrent){card.className='card v72-changelog';card.innerHTML=currentMarkup()}
 }
 function keepClean(){removeLegacy();injectUnified()}
