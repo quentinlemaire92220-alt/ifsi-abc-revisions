@@ -68,8 +68,8 @@ function watchFinish(){
     if(visible&&!resultVisible){track('qcm_finish',{resource_type:'qcm'});resultVisible=true}
     if(!visible)resultVisible=false;
   };
-  new MutationObserver(tick).observe(document.documentElement,{subtree:true,attributes:true,attributeFilter:['class','style']});
-  setInterval(tick,1200);
+  tick();
+  setInterval(tick,2000);
 }
 function privacyUI(){
   if($('v77Privacy'))return;
