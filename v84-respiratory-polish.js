@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.6',SECTION='anatomy83';
+const V='8.7',SECTION='anatomy83';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const TERMS=[
