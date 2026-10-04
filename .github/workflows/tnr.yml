@@ -40,6 +40,7 @@ jobs:
           node --check v81-suite.js
           node --check v82-nav-anatomy.js
           node --check v83-anatomy-interactive.js
+          node --check v84-respiratory-polish.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
