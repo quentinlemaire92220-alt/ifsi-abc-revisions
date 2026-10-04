@@ -47,7 +47,7 @@ for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-4-local-42"),'Cache V8.4 local-42 absent');
+assert(sw.includes("ifsi-abc-v8-4-local-43"),'Cache V8.4 local-43 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
