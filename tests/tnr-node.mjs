@@ -69,10 +69,11 @@ for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_st
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
 for(const forbidden of ['email_address:','full_name:','username:','user_id:','ip_address:'])assert(!analytics.includes(forbidden),`Champ personnel interdit dans analytics: ${forbidden}`);
 const v79=read('v79-themes.js');for(const marker of ["const VERSION='7.9'",'v79Builder','themeOf','difficultyOf','startCustom','IFSI_V79'])assert(v79.includes(marker),`Fonction V7.9 absente: ${marker}`);
+const v74=read('v74-pack.js');for(const marker of ['v74-domain-group','v74-domain-body','domainName74','Ressources rangées par domaine puis par UE.'])assert(v74.includes(marker),`Rangement Mes cours V8.10 incomplet: ${marker}`);
 const calc=read('calculs-parcours-v1.js');for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
 const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
-const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.10'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction navigation anatomie absente: ${marker}`);
-const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.10'",'resp003','resp013','resp015','resp-official-overview-learn.jpg','resp-official-bronchial-learn.jpg','resp-official-epithelium-learn.jpg','support officiel du Dr Sandrine Dulong','Apprendre','S’entraîner','Tester','10 min anatomie','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Fonction anatomie V8.4 absente: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
+const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.10'",'Anatomie & Physiologie','Des planches anatomiques classées par cours.','Voir les planches','data-v82diagram','systeme_respiratoire','systeme_digestif','appareil_locomoteur','showAnatomy','IFSI_V82'])assert(v82.includes(marker),`Catalogue Anatomie V8.10 incomplet: ${marker}`);
+const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.10'",'resp003','resp013','resp015','resp-official-overview-learn.jpg','resp-official-bronchial-learn.jpg','resp-official-epithelium-learn.jpg','support officiel du Dr Sandrine Dulong','Apprendre','S’entraîner','Tester','openDiagram','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Planche interactive V8.10 incomplète: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
@@ -84,8 +85,8 @@ const v87=read('v87-settings.js');for(const marker of ["const V='8.10'",'setting
 console.log('✅ V8.10 contrôlée : cours regroupés par domaine et Anatomie simplifiée en planches');
 console.log('✅ V8.6 conservée : accueil minimal');
 console.log('✅ V8.5 conservée comme couche de compatibilité');
-console.log('✅ V8.4 conservée : module respiratoire enrichi, anatomie interactive et ressources intégrées');
-console.log('✅ V8.2 conservée : navigation hiérarchisée, espace Anatomie & Physiologie, QCM multi-systèmes et partage');
+console.log('✅ Planche respiratoire interactive conservée : Apprendre, S’entraîner et Tester');
+console.log('✅ Anatomie V8.10 contrôlée : catalogue de planches par cours sans hub multi-systèmes');
 console.log('✅ V8.1 conservée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
 console.log('✅ V8.0 calculs conservée avec progression par difficulté');
 console.log('✅ Analytics anonymes contrôlées sans clé secrète');
