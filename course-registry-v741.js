@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.8.3';
+const VERSION='8.9';
 let registry=null,lastAudit=null,resourceIndex=new Map(),courseMap=new Map(),aliasCache=new Map(),labelIndex=new Map();
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
