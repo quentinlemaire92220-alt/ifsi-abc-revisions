@@ -19,7 +19,7 @@ const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 const schemaIds=['resp_003','resp_013','resp_015'];
 const schemaSource=read('schema-v10.js');
-const officialRespAssets=['drive.google.com/thumbnail?id=1Ita4xf7BQQH_OOcwCjS0tbM2nfnWkulofzxTd_FsLlU','resp-official-overview-test.jpg','resp-official-bronchial-learn.jpg','resp-official-bronchial-test.jpg','resp-official-epithelium-learn.jpg','resp-official-epithelium-test.jpg'];
+const officialRespAssets=['resp-official-overview-learn.jpg','resp-official-overview-test.jpg','resp-official-bronchial-learn.jpg','resp-official-bronchial-test.jpg','resp-official-epithelium-learn.jpg','resp-official-epithelium-test.jpg'];
 for(const p of officialRespAssets)assert(fs.existsSync(p),`Visuel respiratoire officiel absent: ${p}`);
 
 for(const id of schemaIds){assert(schemaSource.includes(id),`Schéma ${id} absent`);assert(!seen.has(id),`Doublon schéma ${id}`)}
