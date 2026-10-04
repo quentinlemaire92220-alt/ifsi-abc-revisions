@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.4.1';
+const VERSION='8.8';
 let registry=null,lastAudit=null;
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -55,10 +55,13 @@ function audit(){
   report.errors=report.questions.unmatched.length+report.questions.invalid.length+report.vocals.unmatched.length+report.vocals.invalid.length+report.sheets.invalid.length+report.infographics.invalid.length+report.sheets.ambiguous.length+report.infographics.ambiguous.length;
   report.warnings=report.sheets.unmatched.length+report.infographics.unmatched.length;lastAudit=report;return report;
 }
-function resourcesForCourse(courseId){return {questions:(Q||[]).filter(q=>q.courseId===courseId),vocals:(window.IFSI_V73?.getVocals?.()||[]).filter(v=>v.courseId===courseId),sheets:(S||[]).filter(x=>x.courseId===courseId),infographics:(I||[]).filter(x=>x.courseId===courseId)}}
+function resourcesForCourse(courseId){
+  const children=(registry?.courses||[]).filter(c=>c.parentId===courseId).map(c=>c.id),ids=new Set([courseId,...children]);
+  return {questions:(Q||[]).filter(q=>ids.has(q.courseId)),vocals:(window.IFSI_V73?.getVocals?.()||[]).filter(v=>ids.has(v.courseId)),sheets:(S||[]).filter(x=>ids.has(x.courseId)),infographics:(I||[]).filter(x=>ids.has(x.courseId))}
+}
 function courseIdForLabel(label){return resolveLabel(label)?.courseId||null}
 function annotateCourseCards(){document.querySelectorAll('[data-course74]').forEach(el=>{const id=courseIdForLabel(el.dataset.course74);if(id)el.dataset.courseId=id})}
-function setVersion(){const u=document.getElementById('update');if(u)u.textContent=`Application prête • V${VERSION} locale : registre de cours et diagnostic des rattachements.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}
+function setVersion(){/* Version globale gérée par app-version-v742.js */} locale : registre de cours et diagnostic des rattachements.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}
 function lockVersion(){let n=0;const t=setInterval(()=>{setVersion();annotateCourseCards();if(++n>=40)clearInterval(t)},250)}
 function diagnosticUI(){
   if(!['1','true'].includes(new URLSearchParams(location.search).get('diag')||'')&&!['1','true'].includes(new URLSearchParams(location.search).get('tnr')||''))return;
