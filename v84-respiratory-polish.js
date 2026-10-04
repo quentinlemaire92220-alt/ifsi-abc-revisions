@@ -31,6 +31,20 @@ function decorateHead(){const head=document.querySelector('#anatomy83 .v83-head'
 const tabs=head.querySelector('.v83-tabs');if(tabs){const ov=document.createElement('button');ov.className='v84-tab';ov.dataset.v84view='overview';ov.textContent='◉ Vue d’ensemble';tabs.insertBefore(ov,tabs.firstChild);const voc=[...tabs.querySelectorAll('.v83-tab')].find(x=>x.dataset.v83view==='vocals');const vb=document.createElement('button');vb.className='v84-tab';vb.dataset.v84view='vocab';vb.textContent='📚 Vocabulaire';tabs.insertBefore(vb,voc||null);ov.onclick=()=>showCustom('overview');vb.onclick=()=>showCustom('vocab');tabs.querySelectorAll('[data-v83view]').forEach(x=>x.addEventListener('click',()=>{$('v84Overview')?.classList.add('hidden');$('v84Vocab')?.classList.add('hidden');document.querySelectorAll('[data-v84view]').forEach(y=>y.classList.remove('on'))}))}}
 function decorateBody(){const page=document.querySelector('#anatomy83 .v83-page');if(!page||$('v84Overview'))return;const head=page.querySelector('.v83-head'),ov=document.createElement('div');ov.id='v84Overview';ov.className='hidden';ov.innerHTML=overviewHtml();head.insertAdjacentElement('afterend',ov);const vb=document.createElement('div');vb.id='v84Vocab';vb.className='hidden';vb.innerHTML=vocabHtml();ov.insertAdjacentElement('afterend',vb);const fig=document.querySelector('#anatomy83 .v83-figure');if(fig&&!fig.querySelector('.v84-modehint')){const h=document.createElement('div');h.className='v84-modehint';h.innerHTML='<b>Astuce :</b> commence par Apprendre, passe à S’entraîner, puis termine par Tester pour valider les repères.';fig.appendChild(h)}}
 function updateBodyClass(){const sec=$(SECTION);document.body.classList.toggle('v84-anatomy-open',!!sec&&!sec.classList.contains('hidden'))}
-function decorate(){css();decorateHead();decorateBody();updateBodyClass()}
+function decorateSchemaUI(){
+ const tab=[...document.querySelectorAll('#anatomy83 [data-v83view]')].find(x=>x.dataset.v83view==='schemas');
+ if(tab)tab.textContent='🧩 Schémas interactifs (3)';
+ const box=$('v83Schemas');
+ if(box&&!box.querySelector('.v84-schema-intro')){
+   const intro=document.createElement('div');intro.className='card v84-schema-intro';
+   intro.innerHTML='<b>🧩 3 schémas interactifs disponibles</b><div class="small" style="margin-top:4px">Choisis ci-dessous : Voies respiratoires, Arbre bronchique ou Épithélium de conduction. Ensuite utilise Apprendre, S’entraîner ou Tester.</div>';
+   box.insertBefore(intro,box.firstChild);
+ }
+ document.querySelectorAll('#anatomy83 [data-v83diagram]').forEach(x=>{
+   if(x.dataset.v84scroll)return;x.dataset.v84scroll='1';
+   x.addEventListener('click',()=>setTimeout(()=>document.querySelector('#anatomy83 .v83-figure')?.scrollIntoView({behavior:'smooth',block:'start'}),120));
+ });
+}
+function decorate(){css();decorateHead();decorateBody();decorateSchemaUI();updateBodyClass()}
 let t=0;const timer=setInterval(()=>{t++;decorate();if(t>300)clearInterval(timer)},100);new MutationObserver(()=>requestAnimationFrame(decorate)).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});window.addEventListener('storage',decorate);window.IFSI_V84={version:V,decorate};
 })();
