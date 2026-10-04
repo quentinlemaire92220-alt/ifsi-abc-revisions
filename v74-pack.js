@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.4';
+const VERSION='8.8';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
@@ -55,17 +55,28 @@ function courseAliases74(course){
   return [...new Set(out.map(norm74).filter(Boolean))];
 }
 function resourceText74(x,type){return norm74(type==='sheet'?`${x.label||''} ${x.title||''} ${x.ue||''}`:`${x.title||''}`)}
+function registryCourse74(course){
+  const list=window.IFSI_V741?.getRegistry?.()?.courses||[];
+  return list.find(c=>c.id===course)||list.find(c=>norm74(c.label)===norm74(course))||null;
+}
+function courseId74(course){return registryCourse74(course)?.id||window.IFSI_V741?.courseIdForLabel?.(course)||null}
 function resourceMatchesCourse74(x,course,type){
+  const id=courseId74(course);if(id&&x?.courseId)return x.courseId===id;
   const text=resourceText74(x,type),aliases=courseAliases74(course);if(aliases.some(a=>a.length>=4&&text.includes(a)))return true;
   const stop=new Set(['systeme','cours','partie','fondamentaux','fonctionnement','corps','humain','sciences','biomedicales']);
   const tokens=norm74(course).split(' ').filter(t=>t.length>=5&&!stop.has(t));if(!tokens.length)return false;return tokens.filter(t=>text.includes(t)).length>=Math.min(2,tokens.length);
 }
 function allCourses74(){
+  const reg=window.IFSI_V741?.getRegistry?.()?.courses||[];
+  if(reg.length){
+    return reg.filter(c=>{const d=courseData74(c.label);return d.qs.length||d.vs.length||d.sheets.length||d.infos.length}).map(c=>c.label).sort((a,b)=>a.localeCompare(b,'fr'));
+  }
   const q=[...new Set((Array.isArray(Q)?Q:[]).map(qCourse).filter(Boolean))],v=vocals74().map(x=>x.course).filter(Boolean);
   return [...new Set([...q,...v])].sort((a,b)=>a.localeCompare(b,'fr'));
 }
 function courseData74(course){
-  const qs=(Array.isArray(Q)?Q:[]).filter(q=>qCourse(q)===course),vs=vocals74().filter(v=>norm74(v.course)===norm74(course));
+  const id=courseId74(course);
+  const qs=(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
   const sheets=(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
   const infos=(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}
@@ -103,14 +114,14 @@ function injectSearch74(){
   const home=$74('home');if(!home||$74('v74SearchCard'))return;const card=document.createElement('div');card.id='v74SearchCard';card.className='card v74-search';card.innerHTML='<div><b>🔎 Recherche globale</b><div class="small">QCM, cours, fiches, infographies et vocaux.</div></div><input id="v74Search" type="text" autocomplete="off" placeholder="Ex. ADH, système respiratoire, PCR, méiose…"><div id="v74SearchResults" class="v74-search-results"></div>';
   const create=[...home.querySelectorAll('.section')].find(e=>e.textContent.includes('Créer une série'));if(create)home.insertBefore(card,create);else home.appendChild(card);$74('v74Search').oninput=renderSearch74;
 }
-function searchDocLabel74(x,type){return type==='sheet'?(x.label||x.title||'Fiche'):(typeof infoLabel==='function'?infoLabel(x.title):x.title)}
+function searchDocLabel74(x,type){return x.displayTitle||(type==='sheet'?(x.label||x.title||'Fiche'):(typeof infoLabel==='function'?infoLabel(x.title):x.title))}
 function renderSearch74(){
   const input=$74('v74Search'),box=$74('v74SearchResults');if(!input||!box)return;const raw=input.value.trim(),term=norm74(raw);if(term.length<2){box.innerHTML=raw?'<div class="small">Tape au moins 2 caractères.</div>:'.replace('>:','>'):'';return}
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
-  for(const x of (Array.isArray(I)?I:[]))if(norm74(x.title||'').includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
+  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
+  for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
   box.innerHTML=all.map((r,j)=>r.url?`<a class="v74-search-item" href="${esc74(r.url)}" target="_blank" rel="noopener"><span class="kind">${esc74(r.kind)}</span>${esc74(r.title)}<div class="sub">${esc74(r.sub)}</div></a>`:`<button class="v74-search-item" type="button" data-v74result="${j}"><span class="kind">${esc74(r.kind)}</span>${esc74(r.title)}<div class="sub">${esc74(r.sub)}</div></button>`).join('');
@@ -136,7 +147,7 @@ function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
 
 function resourceCard74(x,type){
-  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key);return `<div class="v74-resource"><div><b>${esc74(label)}</b></div>${type==='sheet'?`<div class="small">${esc74(x.ue||'')}</div>`:'<div class="small">Infographie Drive</div>'}<div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
+  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId);return `<div class="v74-resource"><div><b>${esc74(label)}</b></div><div class="small">${esc74(course?.label||x.ue||'')} • ${type==='sheet'?'Fiche de révision':'Infographie'}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;const d=courseData74(selectedCourse),qFav=qFavs74(),vf=new Set(vocalState74().favorites||[]);const mastery=d.rate??0;
