@@ -59,7 +59,7 @@ function state(){
  const home=$('home');document.body.classList.toggle('v85-home',!!home&&!home.classList.contains('hidden'));
 }
 function apply(){css();compactLabels();moveSecondary();state()}
-let tries=0;const t=setInterval(()=>{tries++;apply();if($('v82Primary')&&$('v76TodayCard')||tries>180)clearInterval(t)},100);
+let tries=0;const t=setInterval(()=>{tries++;apply();if(($('v82Primary')&&document.querySelector('.v76-today'))||tries>180)clearInterval(t)},100);
 new MutationObserver(()=>requestAnimationFrame(apply)).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
 window.addEventListener('storage',apply);
 window.IFSI_V85={version:V,apply};
