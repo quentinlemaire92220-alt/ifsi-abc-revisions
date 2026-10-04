@@ -189,11 +189,10 @@ function lockVersion74(){let n=0;const t=setInterval(()=>{setVersion74();if(++n>
 
 let fillPatched74=false;
 function patchFill74(){if(fillPatched74)return;try{const prev=window.fill;window.fill=function(){prev();setTimeout(()=>{renderDashboard74();renderCourses74();enhanceResourceCards74()},0)};fillPatched74=true}catch{}}
-function ready74(){
-  addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();patchResourceRender74();patchFill74();injectNews74();enhanceResourceCards74();renderDashboard74();renderCourses74();setVersion74();return Array.isArray(Q)&&Q.length&&Array.isArray(S)&&S.length&&Array.isArray(I)&&I.length&&vocals74().length;
-}
-addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();patchResourceRender74();patchFill74();injectNews74();
-let tries74=0;const timer74=setInterval(()=>{tries74++;if(ready74()||tries74>200){clearInterval(timer74);lockVersion74()}},125);
+function dataReady74(){return Array.isArray(Q)&&Q.length&&Array.isArray(S)&&S.length&&Array.isArray(I)&&I.length&&vocals74().length}
+function finalize74(){patchResourceRender74();patchFill74();enhanceResourceCards74();renderDashboard74();renderCourses74();setVersion74();lockVersion74()}
+addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();injectNews74();
+let tries74=0;const timer74=setInterval(()=>{tries74++;if(dataReady74()||tries74>200){clearInterval(timer74);finalize74()}},250);
 window.addEventListener('storage',()=>{renderDashboard74();renderCourses74();renderFavorites74();if(selectedCourse)renderCourse74();enhanceResourceCards74()});
 window.IFSI_V74={version:VERSION,showCourses:showCourses74,openCourse:openCourse74,showFavorites:showFavorites74,resourceFavorites:()=>[...docFavs74()],courses:allCourses74};
 })();
