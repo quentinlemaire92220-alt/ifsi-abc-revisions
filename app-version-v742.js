@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
-const VERSION='8.11.3';
+const VERSION='8.11.4';
 const TITLE=`V${VERSION} local`;
-const READY=`Application prête • V${VERSION} : Nouvelle planche HD « Voies respiratoires » intégrée avec source dédiée au zoom plein écran.`;
+const READY=`Application prête • V${VERSION} : Les 3 planches respiratoires HD sont intégrées ; les modes test restent verrouillés sur les planches non encore validées.`;
 const $=id=>document.getElementById(id);
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}
 function setStatus(text){const s=$('appVersionStatus742');if(s)s.textContent=text}
