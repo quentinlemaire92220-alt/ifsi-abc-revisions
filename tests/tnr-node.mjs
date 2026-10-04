@@ -19,6 +19,9 @@ const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 const schemaIds=['resp_003','resp_013','resp_015'];
 const schemaSource=read('schema-v10.js');
+const officialRespAssets=['resp-official-overview-learn.jpg','resp-official-overview-test.jpg','resp-official-bronchial-learn.jpg','resp-official-bronchial-test.jpg','resp-official-epithelium-learn.jpg','resp-official-epithelium-test.jpg'];
+for(const p of officialRespAssets)assert(fs.existsSync(p),`Visuel respiratoire officiel absent: ${p}`);
+
 for(const id of schemaIds){assert(schemaSource.includes(id),`Schéma ${id} absent`);assert(!seen.has(id),`Doublon schéma ${id}`)}
 assert(runtime.length+schemaIds.length>=700,`Banque trop petite: ${runtime.length+schemaIds.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
@@ -44,7 +47,7 @@ for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-3-local-39"),'Cache V8.3 local-39 absent');
+assert(sw.includes("ifsi-abc-v8-3-local-40"),'Cache V8.3 local-40 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
@@ -65,12 +68,12 @@ const v79=read('v79-themes.js');for(const marker of ["const VERSION='7.9'",'v79B
 const calc=read('calculs-parcours-v1.js');for(const marker of ["COURSE_ID='calculs_doses_mathematiques'",'stageFor','startProgressive','IFSI_CALCULS'])assert(calc.includes(marker),`Parcours calculs incomplet: ${marker}`);
 const v81=read('v81-suite.js');for(const marker of ["const V='8.1'",'v81_activity','v81_goal','Bilan détaillé','Points faibles','Examen blanc intelligent','Avant partiel','Recherche avancée','startWeak','startMock','startQuick','startPreExam','IFSI_V81'])assert(v81.includes(marker),`Fonction V8.1 absente: ${marker}`);for(const marker of ['qcm_start','selected_courses','themes','mode','count'])assert(v81.includes(marker),`Analytics V8.1 incomplète: ${marker}`);
 const v82=read('v82-nav-anatomy.js');for(const marker of ["const V='8.2'",'Anatomie & Physiologie','systeme_respiratoire','systeme_urinaire','systeme_endocrinien','systeme_nerveux','showAnatomy','startMixed','IFSI_V82'])assert(v82.includes(marker),`Fonction V8.2 absente: ${marker}`);
-const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.3'",'resp003','resp013','resp015','Apprendre','S’entraîner','Tester','10 min anatomie','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Fonction V8.3 absente: ${marker}`);
+const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.3'",'resp003','resp013','resp015','resp-official-overview-learn.jpg','resp-official-bronchial-learn.jpg','resp-official-epithelium-learn.jpg','support officiel du Dr Sandrine Dulong','Apprendre','S’entraîner','Tester','10 min anatomie','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Fonction V8.3 absente: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
 console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
-console.log('✅ V8.3 contrôlée : anatomie interactive, 3 schémas respiratoires, modes apprentissage/entraînement/test et maîtrise locale');
+console.log('✅ V8.3 contrôlée : anatomie interactive et schémas respiratoires issus du support officiel Dr Sandrine Dulong');
 console.log('✅ V8.2 conservée : navigation hiérarchisée, espace Anatomie & Physiologie, QCM multi-systèmes et partage');
 console.log('✅ V8.1 conservée : dashboard, bilan QCM, points faibles, examens, avant-partiel, objectifs, recherche et nouveautés');
 console.log('✅ V8.0 calculs conservée avec progression par difficulté');
