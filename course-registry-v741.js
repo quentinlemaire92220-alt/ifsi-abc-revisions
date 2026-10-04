@@ -1,20 +1,24 @@
 (()=>{
 'use strict';
-const VERSION='8.8';
-let registry=null,lastAudit=null,resourceIndex=new Map();
+const VERSION='8.8.2';
+let registry=null,lastAudit=null,resourceIndex=new Map(),courseMap=new Map(),aliasCache=new Map(),labelIndex=new Map();
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const byId=()=>new Map((registry?.courses||[]).map(c=>[c.id,c]));
+const byId=()=>courseMap;
 const qLabel=q=>q?.course||q?.theme||'';
 const infoLabelLocal=t=>typeof window.infoLabel==='function'?window.infoLabel(t):String(t||'').replace(/\.pdf$/i,'').replace(/_/g,' ');
 
-function aliases(c){return [...new Set([c.label,...(c.aliases||[])].map(norm).filter(Boolean))]}
+function buildCourseIndexes(){
+  courseMap=new Map((registry?.courses||[]).map(c=>[c.id,c]));aliasCache=new Map();labelIndex=new Map();
+  for(const c of (registry?.courses||[])){const list=[...new Set([c.label,...(c.aliases||[])].map(norm).filter(Boolean))];aliasCache.set(c.id,list);for(const a of list){if(!labelIndex.has(a))labelIndex.set(a,[]);labelIndex.get(a).push(c)}}
+}
+function aliases(c){return aliasCache.get(c.id)||[]}
 function resolveLabel(label){
   if(!registry)return null;const n=norm(label);if(!n)return null;
-  const exact=registry.courses.filter(c=>aliases(c).includes(n));
+  const exact=labelIndex.get(n)||[];
   if(exact.length===1)return {status:'exact',courseId:exact[0].id,course:exact[0]};
   if(exact.length>1)return {status:'ambiguous',courseIds:exact.map(c=>c.id)};
-  const contained=registry.courses.filter(c=>aliases(c).some(a=>a.length>=5&&(n.includes(a)||a.includes(n))));
+  const contained=[];for(const c of registry.courses){if(aliases(c).some(a=>a.length>=5&&(n.includes(a)||a.includes(n))))contained.push(c)}
   return contained.length===1?{status:'inferred',courseId:contained[0].id,course:contained[0]}:contained.length>1?{status:'ambiguous',courseIds:contained.map(c=>c.id)}:null;
 }
 function resourceText(x,type){return norm(type==='sheet'?`${x.label||''} ${x.title||''} ${x.ue||''}`:`${infoLabelLocal(x.title||'')} ${x.title||''}`)}
@@ -72,7 +76,7 @@ function resourcesForCourse(courseId){
 function courseIdForLabel(label){return resolveLabel(label)?.courseId||null}
 function annotateCourseCards(){document.querySelectorAll('[data-course74]').forEach(el=>{const id=courseIdForLabel(el.dataset.course74);if(id)el.dataset.courseId=id})}
 function setVersion(){/* Version globale gérée par app-version-v742.js */}
-function lockVersion(){let n=0;const t=setInterval(()=>{setVersion();annotateCourseCards();if(++n>=40)clearInterval(t)},250)}
+function lockVersion(){setVersion()}
 function diagnosticUI(){
   if(!['1','true'].includes(new URLSearchParams(location.search).get('diag')||'')&&!['1','true'].includes(new URLSearchParams(location.search).get('tnr')||''))return;
   const r=audit();if(!r)return;let box=document.getElementById('v741Diag');if(!box){box=document.createElement('div');box.id='v741Diag';box.className='card';const home=document.getElementById('home');const app=[...(home?.querySelectorAll('.section')||[])].find(x=>x.textContent.trim()==='Application');if(app)app.insertAdjacentElement('beforebegin',box);else home?.appendChild(box)}
@@ -81,7 +85,7 @@ function diagnosticUI(){
   box.innerHTML=`<div class="row"><div><b>🧪 Diagnostic V${VERSION}</b><div class="small">${status} • ${r.registryCourses} IDs de cours stables</div></div><span class="badge">${r.errors} erreur${r.errors>1?'s':''}</span></div><div class="small" style="margin-top:8px">Non rattachées (hors registre actuel) : ${r.sheets.unmatched.length} fiches • ${r.infographics.unmatched.length} infographies. Elles sont surveillées par les TNR pour détecter tout nouvel ajout non classé.</div>${issues.length?`<div class="warn" style="margin-top:10px">${issues.slice(0,12).map(esc).join('<br>')}</div>`:''}<details style="margin-top:10px"><summary><b>Voir le détail par cours</b></summary>${courseRows}</details>`;
 }
 async function boot(){
-  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();attachIds();rebuildResourceIndex();audit();diagnosticUI();annotateCourseCards();setVersion();lockVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
+  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();buildCourseIndexes();attachIds();rebuildResourceIndex();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
   catch(e){console.error('V7.4.1 registre cours',e)}
 }
 window.IFSI_V741={version:VERSION,getRegistry:()=>registry,audit,resolveLabel,resolveResource,courseIdForLabel,resourcesForCourse,rebuildResourceIndex,getLastAudit:()=>lastAudit};
