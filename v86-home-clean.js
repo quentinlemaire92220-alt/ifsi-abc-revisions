@@ -47,7 +47,6 @@ function openSettings(){const d=dialog();$('v86Dark').checked=localStorage.getIt
 function state(){const home=$('home');const on=!!home&&!home.classList.contains('hidden');document.body.classList.toggle('v86-home',on);if(on)tools()}
 function apply(){css();state()}
 let tries=0;const t=setInterval(()=>{tries++;apply();if(($('v82Primary')&&document.querySelector('.v76-today'))||tries>200)clearInterval(t)},100);
-new MutationObserver(()=>requestAnimationFrame(apply)).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
-window.addEventListener('storage',apply);
+window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.IFSI_V86={version:V,apply,openSettings};
 })();
