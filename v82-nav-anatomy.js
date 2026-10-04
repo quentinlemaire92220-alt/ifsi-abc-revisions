@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.11.2',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.11.3',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -114,7 +114,7 @@ function patchShow(){
 }
 let expandedSystem='systeme_respiratoire';
 const RESP_BOARDS=[
-  {id:'resp003',index:1,title:'Voies respiratoires',subtitle:'Fosses/cavités nasales → pharynx → larynx → trachée → bronches principales',src:'https://drive.google.com/thumbnail?id=1Ita4xf7BQQH_OOcwCjS0tbM2nfnWkulofzxTd_FsLlU&sz=w1200',generated:true},
+  {id:'resp003',index:1,title:'Voies respiratoires',subtitle:'Fosses nasales, cavité buccale, pharynx, épiglotte, larynx, trachée et bronches principales',src:'https://drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ&sz=w1200',generated:true,hd:true},
   {id:'resp013',index:2,title:'Arbre bronchique',subtitle:'Trachée, bronches, bronchioles et territoire alvéolaire',src:'./resp-official-bronchial-learn.jpg?v=14'},
   {id:'resp015',index:3,title:'Épithélium de conduction',subtitle:'Cils, cellule caliciforme et épithélium respiratoire',src:'./resp-official-epithelium-learn.jpg?v=14'}
 ];
@@ -129,7 +129,7 @@ function boardsFor(def){
 function respBoardRow(b){
   const m=window.IFSI_V83?.diagramMastery?.(b.id)||{mastered:0,total:0,pct:0};
   const fav=window.IFSI_V83?.isFavorite?.(b.id);
-  return `<article class="v82-resp-card"><div class="v82-resp-preview"><img src="${E(b.src)}" alt="${E(b.title)}"><span class="v82-resp-index">Planche ${b.index}</span></div><div class="v82-resp-content"><div class="v82-resp-top"><div><h4>${E(b.title)}</h4><div class="v82-resp-sub">${E(b.subtitle)}</div></div><button class="v82-resp-fav" type="button" data-v82fav="${E(b.id)}" title="Favori">${fav?'★':'☆'}</button></div><div class="v82-resp-progress"><span>${m.mastered}/${m.total} repères maîtrisés</span><div class="v82-resp-progressbar"><span style="width:${m.pct||0}%"></span></div></div><div class="v82-resp-actions"><button class="btn primary" data-v82diagram="${E(b.id)}" data-mode="learn">👁️ Apprendre</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="train">🧠 S’entraîner</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="test">❓ Tester</button></div><div class="v82-source-note">${b.generated?'🧪 Planche générée en test • contenu à valider avant classement final':'Source : support officiel du cours'}</div></div></article>`
+  return `<article class="v82-resp-card"><div class="v82-resp-preview"><img src="${E(b.src)}" alt="${E(b.title)}"><span class="v82-resp-index">Planche ${b.index}</span></div><div class="v82-resp-content"><div class="v82-resp-top"><div><h4>${E(b.title)}</h4><div class="v82-resp-sub">${E(b.subtitle)}</div></div><button class="v82-resp-fav" type="button" data-v82fav="${E(b.id)}" title="Favori">${fav?'★':'☆'}</button></div><div class="v82-resp-progress"><span>${m.mastered}/${m.total} repères maîtrisés</span><div class="v82-resp-progressbar"><span style="width:${m.pct||0}%"></span></div></div><div class="v82-resp-actions"><button class="btn primary" data-v82diagram="${E(b.id)}" data-mode="learn">👁️ Apprendre</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="train">🧠 S’entraîner</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="test">❓ Tester</button></div><div class="v82-source-note">${b.generated?'🧪 Planche HD intégrée • validation pédagogique finale en cours':'Source : support officiel du cours'}</div></div></article>`
 }
 function boardRow(def,b){
   return `<div class="v82-board"><div class="v82-board-icon">${def.icon}</div><div><h4>${E(b.title)}</h4><div class="small">${E(course(def.id).label)}</div></div><div class="v82-board-actions"><a class="btn primary" href="${E(b.url)}" target="_blank" rel="noopener">Voir la planche ↗</a></div></div>`
