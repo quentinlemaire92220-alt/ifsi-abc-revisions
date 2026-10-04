@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.11.1';
+const VERSION='8.11';
 const TITLE=`V${VERSION} local`;
 const READY=`Application prête • V${VERSION} : Test réel de la nouvelle planche générée « Voies respiratoires » dans le mode Apprendre.`;
 const $=id=>document.getElementById(id);
