@@ -81,7 +81,7 @@ function bind(){
 function active(){const ids=['v87Home','v87Courses','v87Anat','v87Center','v87Settings'];ids.forEach(id=>$(id)?.classList.remove('on'));if(!$('settings87')?.classList.contains('hidden'))return $('v87Settings')?.classList.add('on');if(!$('anatomy82')?.classList.contains('hidden')||!$('anatomy83')?.classList.contains('hidden'))return $('v87Anat')?.classList.add('on');if(!$('v81Hub')?.classList.contains('hidden'))return $('v87Center')?.classList.add('on');if(!$('courses74')?.classList.contains('hidden')||!$('course74')?.classList.contains('hidden'))return $('v87Courses')?.classList.add('on');$('v87Home')?.classList.add('on')}
 function init(){css();addSection();addNav();patchNavigation();if(!$('v87Dark')?.dataset.bound){bind();$('v87Dark').dataset.bound='1'}document.body.classList.add('v87-ready');render();active();return !!window.IFSI_V82&&!!window.IFSI_V81&&!!window.IFSI_V77}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-new MutationObserver(()=>requestAnimationFrame(active)).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class']});
+let activeQueued=false;new MutationObserver(()=>{if(activeQueued)return;activeQueued=true;requestAnimationFrame(()=>{activeQueued=false;active()})}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class']});
 window.addEventListener('storage',render);
 window.IFSI_V87={version:V,showSettings,render};
 })();
