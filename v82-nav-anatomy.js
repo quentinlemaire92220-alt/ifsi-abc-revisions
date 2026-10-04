@@ -123,6 +123,7 @@ const URINARY_BOARDS=[
   {id:'urinary001',index:1,title:'Appareil urinaire & anatomie du rein',subtitle:'Reins, uretères, vessie, urètre et coupe du rein',src:'https://drive.google.com/thumbnail?id=1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V&sz=w1200',generated:true,hd:true,testReady:false},
   {id:'urinary002',index:2,title:'Néphron',subtitle:'Glomérule, capsule de Bowman, tubules, anse de Henlé et tube collecteur',src:'https://drive.google.com/thumbnail?id=1GdqA-Vw5zIWBZFzLTLfOrpatl9ayJ57J&sz=w1200',generated:true,hd:true,testReady:false},
   {id:'urinary003',index:3,title:'Formation de l’urine & miction',subtitle:'Filtration glomérulaire, réabsorption, sécrétion, vessie et miction',src:'https://drive.google.com/thumbnail?id=155CIVMe4XaPcfkcGM8SS2MFW5XdL7Hpl&sz=w1200',generated:true,hd:true,testReady:false}
+];
 
 function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
 function boardTitle(x){
