@@ -1,12 +1,13 @@
 (()=>{
 'use strict';
-const VERSION='8.13';
+const VERSION='8.14';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 function removeLegacy(){for(const id of LEGACY_IDS)$(id)?.remove()}
 function currentMarkup(){return `
 <div class="row"><b>🆕 Nouveautés de l’application</b><span class="badge">V${VERSION}</span></div>
 <details style="margin-top:7px"><summary class="small" style="cursor:pointer">Voir les changements</summary><div class="small" style="margin-top:10px;line-height:1.6">
+<span id="v814Change"><b>V8.14 — Atlas respiratoire 8 planches</b><br>• Le système respiratoire passe à un atlas de 8 planches inspiré de l’arborescence anatomie/physiologie validée.<br>• Les planches couvrent vue d’ensemble, voies aériennes supérieures et inférieures, poumons/plèvre/ventilation, lobes et segments, alvéoles/échanges gazeux, vascularisation pulmonaire et muscles respiratoires.<br>• Chaque planche s’ouvre individuellement dans l’application avec favoris et zoom plein écran.<br>• La planche 1 utilise une image individuelle HD ; les planches 2 à 8 sont intégrées comme ébauches provisoires issues du storyboard commun et seront remplacées progressivement par leurs versions HD individuelles.<br><br></span>
 <span id="v813Change"><b>V8.13 — Accueil : recherche cours & nouveautés</b><br>• Le raccourci « Réglages » est retiré de l’accueil : les paramètres restent accessibles par l’onglet dédié de la barre du bas.<br>• La recherche de cours est désormais directement dépliée sur l’accueil avec accès rapide à une matière précise.<br>• Un petit bloc « Nouveautés » présente les derniers contenus ajoutés, notamment les nouvelles planches anatomiques.<br>• Un clic sur une nouveauté de type schéma ouvre directement les planches du système concerné.<br><br></span>
 <span id="v812Change"><b>V8.12 — Planches anatomiques multi-systèmes</b><br>• Le système urinaire rejoint le catalogue de planches anatomiques HD.<br>• Trois nouvelles planches : Appareil urinaire & anatomie du rein, Néphron, Formation de l’urine & miction.<br>• La visionneuse Anatomie devient multi-systèmes et conserve le zoom plein écran sur mobile et PC.<br>• Les nouvelles planches restent en mode Apprendre tant que les versions sans légendes destinées à l’entraînement et au test ne sont pas validées.<br>• Le rangement Drive suit désormais le standard 06 - Planches anatomiques / Masters / Versions validées / Exports application.<br><br></span>
 <span id="v8114Change"><b>V8.11.4 — Module respiratoire HD complet</b><br>• Les trois planches HD du système respiratoire sont maintenant intégrées : Voies respiratoires, Arbre bronchique, Alvéoles & échanges gazeux.<br>• Chaque planche dispose d’une source légère dans la page et d’une source HD dédiée au zoom plein écran.<br>• Les plans 2 et 3 restent en mode Apprendre uniquement tant que leurs versions sans légendes et test ne sont pas validées.<br>• Les masters et exports application sont rangés dans le Drive du cours.<br><br></span>
@@ -32,7 +33,7 @@ function injectUnified(){
     const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');
     if(app)app.insertAdjacentElement('beforebegin',card);else home.appendChild(card);
   }
-  const alreadyCurrent=card.querySelector('#v813Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v813Change';
+  const alreadyCurrent=card.querySelector('#v814Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v814Change';
   if(!alreadyCurrent){card.className='card v72-changelog';card.innerHTML=currentMarkup()}
 }
 function keepClean(){removeLegacy();injectUnified()}
