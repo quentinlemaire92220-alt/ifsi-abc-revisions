@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.10',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.11',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -47,10 +47,10 @@ function css(){
   .v82-actions{display:grid;grid-template-columns:1fr 1fr auto;gap:6px;margin-top:9px}.v82-actions .btn{min-width:0}.v82-share{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 10px;cursor:pointer}
   .v82-future{display:flex;gap:7px;flex-wrap:wrap}.v82-future span{border:1px dashed #d8d0e5;border-radius:999px;padding:7px 10px;color:#77707f;font-size:12px;background:#faf9fc}
   .v82-mixed{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.v82-mixed .btn{flex:1 1 160px}
-  .v82-catalog{display:grid;gap:10px;margin-top:12px}.v82-search{width:100%;margin-top:12px}.v82-system{border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}.v82-system-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px}.v82-system-main{display:flex;align-items:center;gap:11px;min-width:0}.v82-system-icon{font-size:30px}.v82-system-main h3{margin:0 0 3px;font-size:17px}.v82-system-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.v82-board-list{display:grid;gap:8px;padding:0 12px 12px}.v82-board{display:grid;grid-template-columns:74px minmax(0,1fr) auto;align-items:center;gap:11px;border:1px solid var(--line);border-radius:14px;padding:9px;background:var(--card)}.v82-board-thumb{width:74px;height:58px;border-radius:10px;object-fit:contain;background:#fff}.v82-board-icon{width:74px;height:58px;border-radius:10px;background:#f3effb;display:grid;place-items:center;font-size:27px}.v82-board h4{margin:0 0 3px;font-size:14px}.v82-board-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.v82-board-actions .btn{padding:8px 10px;font-size:12px}.v82-toggle{white-space:nowrap}.v82-empty{padding:14px;color:var(--muted);font-size:13px}
+  .v82-catalog{display:grid;gap:12px;margin-top:12px}.v82-search{width:100%;margin-top:12px}.v82-system{border:1px solid var(--line);border-radius:22px;background:var(--card);overflow:hidden}.v82-system-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px}.v82-system-main{display:flex;align-items:center;gap:11px;min-width:0}.v82-system-icon{font-size:32px}.v82-system-main h3{margin:0 0 3px;font-size:18px}.v82-system-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.v82-board-list{display:grid;gap:12px;padding:0 12px 14px}.v82-board{display:grid;grid-template-columns:92px minmax(0,1fr) auto;align-items:center;gap:12px;border:1px solid var(--line);border-radius:17px;padding:10px;background:var(--card)}.v82-board-thumb{width:92px;height:72px;border-radius:12px;object-fit:contain;background:#fff}.v82-board-icon{width:92px;height:72px;border-radius:12px;background:#f3effb;display:grid;place-items:center;font-size:29px}.v82-board h4{margin:0 0 3px;font-size:15px}.v82-board-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.v82-board-actions .btn{padding:8px 10px;font-size:12px}.v82-toggle{white-space:nowrap}.v82-empty{padding:14px;color:var(--muted);font-size:13px}.v82-resp-list{display:grid;gap:14px;padding:0 13px 15px}.v82-resp-card{display:grid;grid-template-columns:minmax(180px,1.05fr) minmax(240px,1fr);gap:14px;border:1px solid var(--line);border-radius:20px;padding:12px;background:var(--card);box-shadow:0 8px 24px rgba(58,42,97,.06)}.v82-resp-preview{position:relative;border-radius:15px;overflow:hidden;background:#fff;min-height:180px}.v82-resp-preview img{width:100%;height:100%;max-height:250px;object-fit:contain;display:block}.v82-resp-index{position:absolute;left:10px;top:10px;border-radius:999px;padding:5px 9px;background:#f2ecff;color:#6941c6;font-size:11px;font-weight:900}.v82-resp-content{display:flex;flex-direction:column;min-width:0}.v82-resp-content h4{font-size:19px;margin:6px 0 4px}.v82-resp-sub{color:var(--muted);font-size:13px;line-height:1.4}.v82-resp-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.v82-resp-fav{border:0;background:transparent;font-size:23px;cursor:pointer;color:#6e6780;padding:4px}.v82-resp-progress{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:11px;color:var(--muted)}.v82-resp-progressbar{height:6px;background:#ece8f1;border-radius:99px;overflow:hidden;flex:1}.v82-resp-progressbar span{display:block;height:100%;background:linear-gradient(90deg,#0fa7a0,#6941c6)}.v82-resp-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:auto;padding-top:12px}.v82-resp-actions .btn{padding:10px 8px;font-size:12px}.v82-source-note{font-size:10px;color:var(--muted);margin-top:8px}
   #v82Anatomy .card{margin-top:12px}
-  body.v72-dark .v82-primary,body.v72-dark .v82-nav,body.v72-dark .v82-pagehead,body.v72-dark .v82-card,body.v72-dark .v82-future span{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v82-nav small{color:#bbb3c8}
-  @media(max-width:680px){.v82-navgrid,.v82-grid{grid-template-columns:1fr}.v82-nav{min-height:0}.v82-actions{grid-template-columns:1fr 1fr auto}.v82-system-head{align-items:flex-start}.v82-board{grid-template-columns:58px minmax(0,1fr)}.v82-board-thumb,.v82-board-icon{width:58px;height:52px}.v82-board-actions{grid-column:1/-1;justify-content:stretch}.v82-board-actions .btn{flex:1}.v82-toggle{font-size:12px;padding:8px 9px}}
+  body.v72-dark .v82-primary,body.v72-dark .v82-nav,body.v72-dark .v82-pagehead,body.v72-dark .v82-card,body.v72-dark .v82-future span,body.v72-dark .v82-system,body.v72-dark .v82-board,body.v72-dark .v82-resp-card{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v82-nav small{color:#bbb3c8}
+  @media(max-width:760px){.v82-navgrid,.v82-grid{grid-template-columns:1fr}.v82-nav{min-height:0}.v82-actions{grid-template-columns:1fr 1fr auto}.v82-system-head{align-items:flex-start}.v82-board{grid-template-columns:58px minmax(0,1fr)}.v82-board-thumb,.v82-board-icon{width:58px;height:52px}.v82-board-actions{grid-column:1/-1;justify-content:stretch}.v82-board-actions .btn{flex:1}.v82-toggle{font-size:12px;padding:8px 9px}.v82-resp-card{grid-template-columns:1fr}.v82-resp-preview{min-height:190px}.v82-resp-actions{grid-template-columns:repeat(3,1fr)}}
   `;document.head.appendChild(s)
 }
 function registry(){return window.IFSI_V741?.getRegistry?.()?.courses||[]}
@@ -114,9 +114,9 @@ function patchShow(){
 }
 let expandedSystem='systeme_respiratoire';
 const RESP_BOARDS=[
-  {id:'resp003',title:'Voies respiratoires',subtitle:'Cavités nasales, pharynx, larynx et trachée',src:'./resp-official-overview-learn.jpg?v=14'},
-  {id:'resp013',title:'Arbre bronchique',subtitle:'Bronches, bronchioles et territoire alvéolaire',src:'./resp-official-bronchial-learn.jpg?v=14'},
-  {id:'resp015',title:'Épithélium de conduction',subtitle:'Cils, mucus et épithélium respiratoire',src:'./resp-official-epithelium-learn.jpg?v=14'}
+  {id:'resp003',index:1,title:'Voies respiratoires',subtitle:'Fosses nasales, pharynx, larynx, trachée et poumons',src:'./resp-official-overview-learn.jpg?v=14'},
+  {id:'resp013',index:2,title:'Arbre bronchique',subtitle:'Trachée, bronches, bronchioles et territoire alvéolaire',src:'./resp-official-bronchial-learn.jpg?v=14'},
+  {id:'resp015',index:3,title:'Épithélium de conduction',subtitle:'Cils, cellule caliciforme et épithélium respiratoire',src:'./resp-official-epithelium-learn.jpg?v=14'}
 ];
 function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
 function boardTitle(x){
@@ -126,23 +126,27 @@ function boardsFor(def){
   if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
   return (resources(def.id).infographics||[]).map(x=>({id:x.url,title:boardTitle(x),subtitle:def.subtitle,url:x.url,interactive:false}))
 }
+function respBoardRow(b){
+  const m=window.IFSI_V83?.diagramMastery?.(b.id)||{mastered:0,total:0,pct:0};
+  const fav=window.IFSI_V83?.isFavorite?.(b.id);
+  return `<article class="v82-resp-card"><div class="v82-resp-preview"><img src="${E(b.src)}" alt="${E(b.title)}"><span class="v82-resp-index">Planche ${b.index}</span></div><div class="v82-resp-content"><div class="v82-resp-top"><div><h4>${E(b.title)}</h4><div class="v82-resp-sub">${E(b.subtitle)}</div></div><button class="v82-resp-fav" type="button" data-v82fav="${E(b.id)}" title="Favori">${fav?'★':'☆'}</button></div><div class="v82-resp-progress"><span>${m.mastered}/${m.total} repères maîtrisés</span><div class="v82-resp-progressbar"><span style="width:${m.pct||0}%"></span></div></div><div class="v82-resp-actions"><button class="btn primary" data-v82diagram="${E(b.id)}" data-mode="learn">👁️ Apprendre</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="train">🧠 S’entraîner</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="test">❓ Tester</button></div><div class="v82-source-note">Source : support officiel du cours</div></div></article>`
+}
 function boardRow(def,b){
-  if(b.interactive)return `<div class="v82-board"><img class="v82-board-thumb" src="${E(b.src)}" alt="${E(b.title)}"><div><h4>${E(b.title)}</h4><div class="small">${E(b.subtitle)}</div></div><div class="v82-board-actions"><button class="btn primary" data-v82diagram="${E(b.id)}" data-mode="learn">Apprendre</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="train">S’entraîner</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="test">Tester</button></div></div>`;
   return `<div class="v82-board"><div class="v82-board-icon">${def.icon}</div><div><h4>${E(b.title)}</h4><div class="small">${E(course(def.id).label)}</div></div><div class="v82-board-actions"><a class="btn primary" href="${E(b.url)}" target="_blank" rel="noopener">Voir la planche ↗</a></div></div>`
 }
 function catalogCard(def,term){
   const c=course(def.id),boards=boardsFor(def),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
   if(term&&!filtered.length&&!normCatalog(c.label).includes(term))return '';
-  const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;
-  if(!boards.length)return '';
-  return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${isOpen?`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`:''}</section>`
+  const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;if(!boards.length)return '';
+  const content=isOpen?(def.id==='systeme_respiratoire'?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
+  return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${content}</section>`
 }
 const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function bindAnatomy(){
   $('v82Back')?.addEventListener('click',()=>window.show?.('home'));
   $('v82AnatomySearch')?.addEventListener('input',renderAnatomy);
   document.querySelectorAll('[data-v82toggle]').forEach(b=>b.onclick=()=>{expandedSystem=expandedSystem===b.dataset.v82toggle?'':b.dataset.v82toggle;renderAnatomy()});
-  document.querySelectorAll('[data-v82diagram]').forEach(b=>b.onclick=()=>{const id=b.dataset.v82diagram,mode=b.dataset.mode||'learn';if(window.IFSI_V83?.openDiagram)window.IFSI_V83.openDiagram(id,mode);else window.IFSI_V83?.show?.()})
+  document.querySelectorAll('[data-v82diagram]').forEach(b=>b.onclick=()=>{const id=b.dataset.v82diagram,mode=b.dataset.mode||'learn';if(window.IFSI_V83?.openDiagram)window.IFSI_V83.openDiagram(id,mode);else window.IFSI_V83?.show?.()});document.querySelectorAll('[data-v82fav]').forEach(b=>b.onclick=()=>{window.IFSI_V83?.toggleFavorite?.(b.dataset.v82fav);renderAnatomy()})
 }
 function renderAnatomy(){
   const b=$('v82AnatomyBody');if(!b)return;
