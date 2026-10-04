@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.9',SECTION='anatomy83';
+const V='8.10',SECTION='anatomy83';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const TERMS=[
@@ -45,6 +45,6 @@ function decorateSchemaUI(){
    x.addEventListener('click',()=>setTimeout(()=>document.querySelector('#anatomy83 .v83-figure')?.scrollIntoView({behavior:'smooth',block:'start'}),120));
  });
 }
-function decorate(){css();decorateHead();decorateBody();decorateSchemaUI();updateBodyClass()}
-let t=0;const timer=setInterval(()=>{t++;decorate();if(document.getElementById('anatomy83')&&document.getElementById('v84Overview')||t>40)clearInterval(timer)},250);window.addEventListener('storage',()=>requestAnimationFrame(decorate));window.IFSI_V84={version:V,decorate};
+function decorate(){updateBodyClass()}
+decorate();window.addEventListener('storage',()=>requestAnimationFrame(decorate));window.IFSI_V84={version:V,decorate};
 })();
