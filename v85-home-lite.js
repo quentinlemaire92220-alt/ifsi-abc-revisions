@@ -60,7 +60,6 @@ function state(){
 }
 function apply(){css();compactLabels();moveSecondary();state()}
 let tries=0;const t=setInterval(()=>{tries++;apply();if(($('v82Primary')&&document.querySelector('.v76-today'))||tries>180)clearInterval(t)},100);
-new MutationObserver(()=>requestAnimationFrame(apply)).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
-window.addEventListener('storage',apply);
+window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.IFSI_V85={version:V,apply};
 })();
