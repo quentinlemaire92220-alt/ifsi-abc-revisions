@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.9';
+const VERSION='8.9.1';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
@@ -146,9 +146,10 @@ function ueOrder74(ue){const order=['A1','A2','B1','B2','B3','C1','C2','D1','D2'
 function renderCourses74(){
   const grid=$74('v74CourseGrid');if(!grid)return;const term=norm74($74('v74CourseSearch')?.value||'');const courses=allCourses74().filter(c=>!term||norm74(c).includes(term));
   const groups=new Map();
-  for(const label of courses){const m=courseMeta74(label),key=m.ue||'Autres';if(!groups.has(key))groups.set(key,[]);groups.get(key).push({label,meta:m,data:courseData74(label)})}
-  const sorted=[...groups.entries()].sort((a,b)=>ueOrder74(a[0])-ueOrder74(b[0])||a[0].localeCompare(b[0],'fr'));
-  grid.innerHTML=sorted.map(([ue,items])=>{const domain=items[0]?.meta?.domain||ue.charAt(0)||'';const qcm=items.reduce((n,x)=>n+x.data.qs.length,0);return `<section class="v74-ue-group"><div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div><div class="v74-ue-label">Domaine ${esc74(domain||'—')}</div><div class="v74-ue-count">${items.length} cours • ${qcm} QCM</div></div></div></div><div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill">◫ ${d.infos.length} info</span><span class="v74-pill">🎧 ${d.vs.length} vocal${d.vs.length>1?'aux':''}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div></section>`}).join('')||'<div class="card small">Aucun cours trouvé.</div>';
+  for(const label of courses){const m=courseMeta74(label),domain=m.domain||'Autres',ue=m.ue||'Autres',key=`${domain}|${ue}`;if(!groups.has(key))groups.set(key,{domain,ue,items:[]});groups.get(key).items.push({label,meta:m,data:courseData74(label)})}
+  const domainOrder=['A','B','C','D','E','T'];
+  const sorted=[...groups.values()].sort((a,b)=>{const da=domainOrder.indexOf(a.domain),db=domainOrder.indexOf(b.domain),oa=da<0?999:da,ob=db<0?999:db;return oa-ob||ueOrder74(a.ue)-ueOrder74(b.ue)||a.ue.localeCompare(b.ue,'fr')});
+  grid.innerHTML=sorted.map(({domain,ue,items})=>{const qcm=items.reduce((n,x)=>n+x.data.qs.length,0);return `<section class="v74-ue-group"><div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div><div class="v74-ue-label">Domaine ${esc74(domain||'—')}</div><div class="v74-ue-count">${items.length} cours • ${qcm} QCM</div></div></div></div><div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill">◫ ${d.infos.length} info</span><span class="v74-pill">🎧 ${d.vs.length} vocal${d.vs.length>1?'aux':''}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div></section>`}).join('')||'<div class="card small">Aucun cours trouvé.</div>';
   grid.querySelectorAll('[data-course74]').forEach(b=>b.onclick=()=>openCourse74(b.dataset.course74));window.IFSI_V81?.refreshBadges?.();
 }
 function showCourses74(){window.show('courses74');renderCourses74()}
