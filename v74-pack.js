@@ -69,16 +69,16 @@ function resourceMatchesCourse74(x,course,type){
 function allCourses74(){
   const reg=window.IFSI_V741?.getRegistry?.()?.courses||[];
   if(reg.length){
-    return reg.filter(c=>{const d=courseData74(c.label);return d.qs.length||d.vs.length||d.sheets.length||d.infos.length}).map(c=>c.label).sort((a,b)=>a.localeCompare(b,'fr'));
+    return reg.filter(c=>c.showInCourses!==false).filter(c=>{const d=courseData74(c.label);return d.qs.length||d.vs.length||d.sheets.length||d.infos.length}).map(c=>c.label).sort((a,b)=>a.localeCompare(b,'fr'));
   }
   const q=[...new Set((Array.isArray(Q)?Q:[]).map(qCourse).filter(Boolean))],v=vocals74().map(x=>x.course).filter(Boolean);
   return [...new Set([...q,...v])].sort((a,b)=>a.localeCompare(b,'fr'));
 }
 function courseData74(course){
-  const id=courseId74(course);
-  const qs=(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
-  const sheets=(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
-  const infos=(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
+  const id=courseId74(course),bundle=id?window.IFSI_V741?.resourcesForCourse?.(id):null;
+  const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
+  const sheets=bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
+  const infos=bundle?.infographics||(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}
   const errors=new Set(stats.errors||[]);const err=qs.filter(q=>errors.has(q.id)).length;const rate=ans?Math.round(cor/ans*100):null;
   const vsState=vocalState74(),listened=new Set(vsState.listened||[]);const listenedCount=vs.filter(v=>listened.has(v.id)).length;
