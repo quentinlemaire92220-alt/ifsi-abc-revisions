@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.9.1';
+const VERSION='8.10';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
@@ -22,10 +22,10 @@ function addStyles74(){
   const s=document.createElement('style');s.id='v74css';s.textContent=`
   #v71SearchCard{display:none!important}.v74-search{display:grid;gap:9px}.v74-search-results{display:grid;gap:7px;max-height:460px;overflow:auto}.v74-search-item{display:block;width:100%;border:1px solid var(--line);border-radius:13px;padding:10px 11px;background:var(--card);color:var(--ink);text-align:left;text-decoration:none;cursor:pointer}.v74-search-item .kind{display:inline-block;font-size:10px;font-weight:900;border-radius:999px;padding:3px 7px;margin-right:6px;background:#eee8fb;color:#6941c6}.v74-search-item .sub{font-size:12px;color:var(--muted);margin-top:4px}
   .v74-dashboard{border:1px solid #cfc2ee;background:linear-gradient(135deg,#fff,#f7f3ff)}.v74-dashboard-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:11px}.v74-action{border:1px solid var(--line);border-radius:14px;padding:11px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer}.v74-action b{display:block;margin-bottom:3px}.v74-action .small{line-height:1.3}.v74-action:disabled{opacity:.55;cursor:not-allowed}.v74-priority{margin-top:10px;border-radius:14px;padding:11px;background:#eef9ff;border:1px solid #cae7f5}.v74-priority button{margin-top:8px}
-  .v74-course-grid{display:grid;gap:14px}.v74-ue-group{display:grid;gap:9px}.v74-ue-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 13px;border-radius:15px;border:1px solid var(--line);background:linear-gradient(135deg,#f7f3ff,#eefaf8)}.v74-ue-title{display:flex;align-items:center;gap:9px}.v74-ue-code{display:inline-flex;align-items:center;justify-content:center;min-width:52px;padding:6px 9px;border-radius:999px;background:#6941c6;color:white;font-weight:900;font-size:12px}.v74-ue-label{font-weight:900;font-size:15px}.v74-ue-count{font-size:11px;color:var(--muted);font-weight:800}.v74-ue-cards{display:grid;gap:9px}.v74-course-card{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--card);cursor:pointer;text-align:left}.v74-course-card:hover{border-color:#bbaae8}.v74-course-card h3{margin:5px 0 8px;font-size:16px}.v74-course-meta{display:flex;gap:6px;flex-wrap:wrap}.v74-pill{font-size:11px;font-weight:800;border-radius:999px;padding:4px 8px;background:#f2eff8;color:#5c3ba7}.v74-pill.ok{background:#eaf8ef;color:#216e3b}.v74-master{height:7px;background:#ede9f3;border-radius:99px;overflow:hidden;margin-top:10px}.v74-master>span{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--p))}
+  .v74-course-grid{display:grid;gap:16px}.v74-domain-group{border:1px solid var(--line);border-radius:20px;background:var(--card);overflow:hidden}.v74-domain-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:linear-gradient(135deg,#f7f3ff,#eefaf8);border-bottom:1px solid var(--line)}.v74-domain-title{display:flex;align-items:center;gap:10px}.v74-domain-badge{display:inline-flex;align-items:center;justify-content:center;padding:7px 11px;border-radius:999px;background:#6941c6;color:#fff;font-weight:900;font-size:12px}.v74-domain-name{font-weight:900;font-size:16px}.v74-domain-meta{font-size:11px;color:var(--muted);font-weight:800;margin-top:2px}.v74-domain-body{display:grid;gap:12px;padding:12px}.v74-ue-group{display:grid;gap:9px}.v74-ue-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 11px;border-radius:13px;background:#f8f6fc}.v74-ue-title{display:flex;align-items:center;gap:9px}.v74-ue-code{display:inline-flex;align-items:center;justify-content:center;min-width:52px;padding:6px 9px;border-radius:999px;background:#6941c6;color:white;font-weight:900;font-size:12px}.v74-ue-label{font-weight:900;font-size:15px}.v74-ue-count{font-size:11px;color:var(--muted);font-weight:800}.v74-ue-cards{display:grid;gap:9px}.v74-course-card{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--card);cursor:pointer;text-align:left}.v74-course-card:hover{border-color:#bbaae8}.v74-course-card h3{margin:5px 0 8px;font-size:16px}.v74-course-meta{display:flex;gap:6px;flex-wrap:wrap}.v74-pill{font-size:11px;font-weight:800;border-radius:999px;padding:4px 8px;background:#f2eff8;color:#5c3ba7}.v74-pill.ok{background:#eaf8ef;color:#216e3b}.v74-master{height:7px;background:#ede9f3;border-radius:99px;overflow:hidden;margin-top:10px}.v74-master>span{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--p))}
   .v74-back{margin-bottom:8px}.v74-course-head h2{margin:4px 0}.v74-resource-block{margin-top:12px}.v74-resource-list{display:grid;gap:8px;margin-top:8px}.v74-resource{border:1px solid var(--line);border-radius:14px;padding:11px;background:var(--card)}.v74-resource .actions{display:grid;grid-template-columns:1fr auto;gap:7px;margin-top:8px}.v74-resource .actions .btn{min-width:0}.v74-star{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 11px;font-size:17px;cursor:pointer;color:#6941c6}.v74-star.on{background:#fff7d6;border-color:#f0c952;color:#7b5a00}.v74-course-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
   .v74-fav-section{margin-top:14px}.v74-fav-list{display:grid;gap:8px}.v74-fav-empty{color:var(--muted);font-size:13px}.v74-docfav{margin-top:7px}.v74-count{font-size:12px;font-weight:850;color:var(--p)}
-  body.v72-dark .v74-dashboard{background:#211e2a;border-color:#3b3548}body.v72-dark .v74-priority{background:#232d35;border-color:#354b58}body.v72-dark .v74-search-item,body.v72-dark .v74-action,body.v72-dark .v74-course-card,body.v72-dark .v74-resource,body.v72-dark .v74-star{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-ue-head{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-star.on{background:#3a3150;color:#f4d77d}
+  body.v72-dark .v74-dashboard{background:#211e2a;border-color:#3b3548}body.v72-dark .v74-priority{background:#232d35;border-color:#354b58}body.v72-dark .v74-search-item,body.v72-dark .v74-action,body.v72-dark .v74-course-card,body.v72-dark .v74-resource,body.v72-dark .v74-star{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-domain-group,body.v72-dark .v74-domain-head,body.v72-dark .v74-ue-head{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-star.on{background:#3a3150;color:#f4d77d}
   @media(min-width:700px){.v74-ue-cards{grid-template-columns:repeat(2,1fr)}.v74-resource-list{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.v74-dashboard-grid,.v74-course-actions{grid-template-columns:1fr}.v74-resource .actions{grid-template-columns:1fr auto}}
   `;document.head.appendChild(s);
@@ -92,7 +92,7 @@ function weakestCourse74(){
 
 function injectSections74(){
   const app=document.querySelector('.app');if(!app)return;
-  if(!$74('courses74')){const s=document.createElement('section');s.id='courses74';s.className='hidden';s.innerHTML='<div class="card"><button class="btn outline v74-back" data-v74home>← Accueil</button><div class="row"><div><h2 style="margin:0">📚 Mes cours</h2><div class="small">Rangés par UE pour retrouver rapidement chaque matière.</div></div><span class="badge">Par UE</span></div><input id="v74CourseSearch" type="text" placeholder="Rechercher un cours…" style="margin-top:12px"></div><div id="v74CourseGrid" class="v74-course-grid"></div>';const quiz=$74('quiz');if(quiz)quiz.insertAdjacentElement('beforebegin',s);else app.appendChild(s)}
+  if(!$74('courses74')){const s=document.createElement('section');s.id='courses74';s.className='hidden';s.innerHTML='<div class="card"><button class="btn outline v74-back" data-v74home>← Accueil</button><div class="row"><div><h2 style="margin:0">📚 Mes cours</h2><div class="small">Ressources rangées par domaine puis par UE.</div></div><span class="badge">Par UE</span></div><input id="v74CourseSearch" type="text" placeholder="Rechercher un cours…" style="margin-top:12px"></div><div id="v74CourseGrid" class="v74-course-grid"></div>';const quiz=$74('quiz');if(quiz)quiz.insertAdjacentElement('beforebegin',s);else app.appendChild(s)}
   if(!$74('course74')){const s=document.createElement('section');s.id='course74';s.className='hidden';s.innerHTML='<div id="v74CourseDetail"></div>';const quiz=$74('quiz');if(quiz)quiz.insertAdjacentElement('beforebegin',s);else app.appendChild(s)}
   if(!$74('favorites74')){const s=document.createElement('section');s.id='favorites74';s.className='hidden';s.innerHTML='<div class="card"><button class="btn outline v74-back" data-v74home>← Accueil</button><div class="row"><div><h2 style="margin:0">⭐ Mes favoris</h2><div class="small">QCM, fiches, infographies et vocaux réunis.</div></div><span id="v74FavTotal" class="badge">0</span></div></div><div id="v74FavoritesBody"></div>';const quiz=$74('quiz');if(quiz)quiz.insertAdjacentElement('beforebegin',s);else app.appendChild(s)}
   document.querySelectorAll('[data-v74home]').forEach(b=>b.onclick=()=>window.show('home'));
@@ -143,14 +143,40 @@ function courseMeta74(label){
   const c=registryCourse74(label)||{};return {ue:c.ue||'Autres',domain:c.domain||'',id:c.id||''}
 }
 function ueOrder74(ue){const order=['A1','A2','B1','B2','B3','C1','C2','D1','D2','E1','E2','E3','T'];const i=order.indexOf(ue);return i<0?999:i}
+function domainName74(domain){
+  return ({A:'Sciences humaines, sociales et droit',B:'Sciences biologiques et médicales',C:'Sciences et techniques infirmières',D:'Communication et relation de soins',E:'Méthodes et outils pour la formation'})[domain]||'Autres enseignements'
+}
 function renderCourses74(){
-  const grid=$74('v74CourseGrid');if(!grid)return;const term=norm74($74('v74CourseSearch')?.value||'');const courses=allCourses74().filter(c=>!term||norm74(c).includes(term));
-  const groups=new Map();
-  for(const label of courses){const m=courseMeta74(label),domain=m.domain||'Autres',ue=m.ue||'Autres',key=`${domain}|${ue}`;if(!groups.has(key))groups.set(key,{domain,ue,items:[]});groups.get(key).items.push({label,meta:m,data:courseData74(label)})}
-  const domainOrder=['A','B','C','D','E','T'];
-  const sorted=[...groups.values()].sort((a,b)=>{const da=domainOrder.indexOf(a.domain),db=domainOrder.indexOf(b.domain),oa=da<0?999:da,ob=db<0?999:db;return oa-ob||ueOrder74(a.ue)-ueOrder74(b.ue)||a.ue.localeCompare(b.ue,'fr')});
-  grid.innerHTML=sorted.map(({domain,ue,items})=>{const qcm=items.reduce((n,x)=>n+x.data.qs.length,0);return `<section class="v74-ue-group"><div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div><div class="v74-ue-label">Domaine ${esc74(domain||'—')}</div><div class="v74-ue-count">${items.length} cours • ${qcm} QCM</div></div></div></div><div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill">◫ ${d.infos.length} info</span><span class="v74-pill">🎧 ${d.vs.length} vocal${d.vs.length>1?'aux':''}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div></section>`}).join('')||'<div class="card small">Aucun cours trouvé.</div>';
-  grid.querySelectorAll('[data-course74]').forEach(b=>b.onclick=()=>openCourse74(b.dataset.course74));window.IFSI_V81?.refreshBadges?.();
+  const grid=$74('v74CourseGrid');if(!grid)return;
+  const term=norm74($74('v74CourseSearch')?.value||'');
+  const courses=allCourses74().filter(label=>{
+    const m=courseMeta74(label);return !term||norm74(`${label} ${m.domain} ${m.ue}`).includes(term)
+  });
+  const domains=new Map();
+  for(const label of courses){
+    const meta=courseMeta74(label),domain=meta.domain||'Autres',ue=meta.ue||'Autres';
+    if(!domains.has(domain))domains.set(domain,new Map());
+    const ues=domains.get(domain);if(!ues.has(ue))ues.set(ue,[]);
+    ues.get(ue).push({label,meta,data:courseData74(label)})
+  }
+  const domainOrder=['A','B','C','D','E','T','Autres'];
+  const sortedDomains=[...domains.entries()].sort((a,b)=>{
+    const ia=domainOrder.indexOf(a[0]),ib=domainOrder.indexOf(b[0]);
+    return (ia<0?999:ia)-(ib<0?999:ib)||a[0].localeCompare(b[0],'fr')
+  });
+  grid.innerHTML=sortedDomains.map(([domain,ues])=>{
+    const ueEntries=[...ues.entries()].sort((a,b)=>ueOrder74(a[0])-ueOrder74(b[0])||a[0].localeCompare(b[0],'fr'));
+    const all=ueEntries.flatMap(x=>x[1]),qcm=all.reduce((n,x)=>n+x.data.qs.length,0);
+    return `<section class="v74-domain-group">
+      <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE ${esc74(domain)}</span><div><div class="v74-domain-name">${esc74(domainName74(domain))}</div><div class="v74-domain-meta">${all.length} cours • ${qcm} QCM</div></div></div></div>
+      <div class="v74-domain-body">${ueEntries.map(([ue,items])=>`<div class="v74-ue-group">
+        <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div class="v74-ue-count">${items.length} cours • ${items.reduce((n,x)=>n+x.data.qs.length,0)} QCM</div></div></div>
+        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill">◫ ${d.infos.length} info</span><span class="v74-pill">🎧 ${d.vs.length} vocal${d.vs.length>1?'aux':''}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
+      </div>`).join('')}</div>
+    </section>`
+  }).join('')||'<div class="card small">Aucun cours trouvé.</div>';
+  grid.querySelectorAll('[data-course74]').forEach(b=>b.onclick=()=>openCourse74(b.dataset.course74));
+  window.IFSI_V81?.refreshBadges?.()
 }
 function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
