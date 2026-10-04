@@ -1,0 +1,57 @@
+{
+  "version": "8.8",
+  "auditedAt": "2026-10-04",
+  "scope": "Catalogue application croisé avec le Drive IFSI - Cours",
+  "driveSourceOfTruth": {
+    "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
+    "label": "IFSI - Cours"
+  },
+  "policy": {
+    "driveModified": false,
+    "activeCatalog": "Les ressources actives utilisent des courseId explicites et des titres d'affichage propres.",
+    "archives": "Les fichiers d'archives et copies anciennes ne doivent pas être indexés comme actifs.",
+    "duplicates": "Un même Drive ID ne peut apparaître qu'une fois par catalogue."
+  },
+  "before": {
+    "courses": 19,
+    "sheets": 58,
+    "infographics": 62,
+    "resourcesWithoutExplicitCourseId": 120,
+    "knownDuplicateNameGroups": 7
+  },
+  "after": {
+    "courses": 35,
+    "sheets": 43,
+    "infographics": 90,
+    "unmatchedSheets": 0,
+    "unmatchedInfographics": 0,
+    "duplicateDriveIds": 0
+  },
+  "keyFixes": [
+    "16 références de fiches anciennes/dupliquées retirées du catalogue actif",
+    "Copies B1 historiques de Paramètres vitaux retirées au profit du rangement B3 canonique",
+    "Système digestif complété avec 9 infographies actives",
+    "Locomoteur regroupé avec sous-cours explicites dans le registre",
+    "Épistémologie complétée avec ses infographies canoniques",
+    "Calculs de doses reliés à la fiche maître et aux 6 infographies canoniques",
+    "Noms affichés séparés des noms techniques Drive via displayTitle"
+  ],
+  "excludedLegacyDriveIds": [
+    "1zzLw5yLwXdUV_msy4os2II7C3cq3_EU1",
+    "10bxvto-3uDqwm-QEQIWwZ8zvZ1pyk1fc",
+    "1VkbJqEiEGvUIGI8K43CBW6c3qdNCyCOn",
+    "1rxZT1LobeHw_0xG2yYKdXS6KrW1cRwlB",
+    "1eRBGb0ogXJKl2P1SfvSz8emuA8Db4c-7",
+    "10J-E5h7z3HgjosJOFpTbl-G3-afmixe4",
+    "15lGkcjGeZLkrreEsaS6CkxqIvIz_vyAA",
+    "1NmFADqMOHyXlx9mmuvyIZd9mb4REbLuG",
+    "1ZgpyJwMeTfjI5M5udVbXRiQlg7srV4Av",
+    "119OcTOnFiSIWzxL17lXSgocMyWGMt7h2",
+    "1OfB1qP8lt8T1uYBXmG_5UmIQx_m7dSN3",
+    "1X4UMXOyn5wvKiqsXQN7LBXA48z4gWXmk",
+    "15mfuwRe2PVp4tpDTzdMaKsvdU6Az5Zjv",
+    "1U6Bjwpb2_bv8h4kz4YMXglimmdnBSAma",
+    "1Jf_vwaXhvQiR8aI8pMba07rwoCvdpbSo",
+    "1HpID-1xn6uTNYWEmTuNxeQMJ9Lumx8an"
+  ]
+}
