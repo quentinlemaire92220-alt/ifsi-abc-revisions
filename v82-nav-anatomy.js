@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.9',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.10',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -47,9 +47,10 @@ function css(){
   .v82-actions{display:grid;grid-template-columns:1fr 1fr auto;gap:6px;margin-top:9px}.v82-actions .btn{min-width:0}.v82-share{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 10px;cursor:pointer}
   .v82-future{display:flex;gap:7px;flex-wrap:wrap}.v82-future span{border:1px dashed #d8d0e5;border-radius:999px;padding:7px 10px;color:#77707f;font-size:12px;background:#faf9fc}
   .v82-mixed{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.v82-mixed .btn{flex:1 1 160px}
+  .v82-catalog{display:grid;gap:10px;margin-top:12px}.v82-search{width:100%;margin-top:12px}.v82-system{border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}.v82-system-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px}.v82-system-main{display:flex;align-items:center;gap:11px;min-width:0}.v82-system-icon{font-size:30px}.v82-system-main h3{margin:0 0 3px;font-size:17px}.v82-system-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.v82-board-list{display:grid;gap:8px;padding:0 12px 12px}.v82-board{display:grid;grid-template-columns:74px minmax(0,1fr) auto;align-items:center;gap:11px;border:1px solid var(--line);border-radius:14px;padding:9px;background:var(--card)}.v82-board-thumb{width:74px;height:58px;border-radius:10px;object-fit:contain;background:#fff}.v82-board-icon{width:74px;height:58px;border-radius:10px;background:#f3effb;display:grid;place-items:center;font-size:27px}.v82-board h4{margin:0 0 3px;font-size:14px}.v82-board-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.v82-board-actions .btn{padding:8px 10px;font-size:12px}.v82-toggle{white-space:nowrap}.v82-empty{padding:14px;color:var(--muted);font-size:13px}
   #v82Anatomy .card{margin-top:12px}
   body.v72-dark .v82-primary,body.v72-dark .v82-nav,body.v72-dark .v82-pagehead,body.v72-dark .v82-card,body.v72-dark .v82-future span{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v82-nav small{color:#bbb3c8}
-  @media(max-width:680px){.v82-navgrid,.v82-grid{grid-template-columns:1fr}.v82-nav{min-height:0}.v82-actions{grid-template-columns:1fr 1fr auto}}
+  @media(max-width:680px){.v82-navgrid,.v82-grid{grid-template-columns:1fr}.v82-nav{min-height:0}.v82-actions{grid-template-columns:1fr 1fr auto}.v82-system-head{align-items:flex-start}.v82-board{grid-template-columns:58px minmax(0,1fr)}.v82-board-thumb,.v82-board-icon{width:58px;height:52px}.v82-board-actions{grid-column:1/-1;justify-content:stretch}.v82-board-actions .btn{flex:1}.v82-toggle{font-size:12px;padding:8px 9px}}
   `;document.head.appendChild(s)
 }
 function registry(){return window.IFSI_V741?.getRegistry?.()?.courses||[]}
@@ -111,22 +112,44 @@ function patchShow(){
     return old(id)
   };showPatched=true
 }
-function showAnatomy(){renderAnatomy();window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
+let expandedSystem='systeme_respiratoire';
+const RESP_BOARDS=[
+  {id:'resp003',title:'Voies respiratoires',subtitle:'Cavités nasales, pharynx, larynx et trachée',src:'./resp-official-overview-learn.jpg?v=14'},
+  {id:'resp013',title:'Arbre bronchique',subtitle:'Bronches, bronchioles et territoire alvéolaire',src:'./resp-official-bronchial-learn.jpg?v=14'},
+  {id:'resp015',title:'Épithélium de conduction',subtitle:'Cils, mucus et épithélium respiratoire',src:'./resp-official-epithelium-learn.jpg?v=14'}
+];
+function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
+function boardTitle(x){
+  return x.displayTitle||String(x.title||'Planche').replace(/\.pdf$/i,'').replace(/^UE_S1_[A-Z0-9]+_/i,'').replace(/_Infographie_\d+_/i,' — ').replace(/_/g,' ').replace(/\s+/g,' ').trim()
+}
+function boardsFor(def){
+  if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
+  return (resources(def.id).infographics||[]).map(x=>({id:x.url,title:boardTitle(x),subtitle:def.subtitle,url:x.url,interactive:false}))
+}
+function boardRow(def,b){
+  if(b.interactive)return `<div class="v82-board"><img class="v82-board-thumb" src="${E(b.src)}" alt="${E(b.title)}"><div><h4>${E(b.title)}</h4><div class="small">${E(b.subtitle)}</div></div><div class="v82-board-actions"><button class="btn primary" data-v82diagram="${E(b.id)}" data-mode="learn">Apprendre</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="train">S’entraîner</button><button class="btn outline" data-v82diagram="${E(b.id)}" data-mode="test">Tester</button></div></div>`;
+  return `<div class="v82-board"><div class="v82-board-icon">${def.icon}</div><div><h4>${E(b.title)}</h4><div class="small">${E(course(def.id).label)}</div></div><div class="v82-board-actions"><a class="btn primary" href="${E(b.url)}" target="_blank" rel="noopener">Voir la planche ↗</a></div></div>`
+}
+function catalogCard(def,term){
+  const c=course(def.id),boards=boardsFor(def),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
+  if(term&&!filtered.length&&!normCatalog(c.label).includes(term))return '';
+  const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;
+  if(!boards.length)return '';
+  return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${isOpen?`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`:''}</section>`
+}
+const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function bindAnatomy(){
-  document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openSystem(b.dataset.open));
-  document.querySelectorAll('[data-test]').forEach(b=>b.onclick=()=>startCourse(b.dataset.test,10));
-  document.querySelectorAll('[data-share]').forEach(b=>b.onclick=()=>shareSystem(b.dataset.share));
   $('v82Back')?.addEventListener('click',()=>window.show?.('home'));
-  $('v82Mixed20')?.addEventListener('click',()=>mixed(20));$('v82Mixed30')?.addEventListener('click',()=>mixed(30));
-  const w=weakSystem();if(w)$('v82Weak')?.addEventListener('click',()=>startCourse(w.x.id,10))
+  $('v82AnatomySearch')?.addEventListener('input',renderAnatomy);
+  document.querySelectorAll('[data-v82toggle]').forEach(b=>b.onclick=()=>{expandedSystem=expandedSystem===b.dataset.v82toggle?'':b.dataset.v82toggle;renderAnatomy()});
+  document.querySelectorAll('[data-v82diagram]').forEach(b=>b.onclick=()=>{const id=b.dataset.v82diagram,mode=b.dataset.mode||'learn';if(window.IFSI_V83?.openDiagram)window.IFSI_V83.openDiagram(id,mode);else window.IFSI_V83?.show?.()})
 }
 function renderAnatomy(){
-  const b=$('v82AnatomyBody');if(!b)return;const t=totals(),w=weakSystem();
-  b.innerHTML=`<div class="v82-pagehead"><button id="v82Back" class="btn outline">← Accueil</button><div class="row"><div><h2>🫀 Anatomie & Physiologie</h2><div class="small">Retrouve les systèmes du corps, leurs QCM et toutes les ressources déjà disponibles dans l’application.</div></div><span class="badge">V${V}</span></div><div class="v82-kpis"><span class="v82-kpi">${SYSTEMS.length} systèmes disponibles</span><span class="v82-kpi">${t.q} QCM</span><span class="v82-kpi">${t.s} fiches</span><span class="v82-kpi">${t.i} infographies</span><span class="v82-kpi">${t.v} vocaux</span></div><div class="v82-mixed"><button id="v82Mixed20" class="btn primary">▶ 20 QCM multi-systèmes</button><button id="v82Mixed30" class="btn outline">🎓 30 QCM multi-systèmes</button>${w?`<button id="v82Weak" class="btn outline">🎯 À renforcer : ${E(course(w.x.id).label)} (${w.st.rate}%)</button>`:''}</div></div>
-  <div class="card"><div class="v82-section-title"><div><h3>🧩 Fondamentaux</h3><div class="small">Les bases nécessaires pour comprendre l’organisation et le fonctionnement du corps.</div></div></div><div class="v82-grid">${FOUNDATION.map(card).join('')}</div></div>
-  <div class="card"><div class="v82-section-title"><div><h3>🫀 Systèmes du corps</h3><div class="small">Accès direct aux parcours déjà présents dans tes cours.</div></div></div><div class="v82-grid">${SYSTEMS.map(card).join('')}</div></div>
-  <div class="card"><div class="v82-section-title"><div><h3>🧭 Prochains systèmes</h3><div class="small">Ils apparaîtront ici automatiquement lorsque les cours correspondants seront ajoutés à l’application.</div></div></div><div class="v82-future">${FUTURE.map(x=>`<span>${x[0]} ${E(x[1])} • à venir</span>`).join('')}</div></div>`;
-  bindAnatomy()
+  const b=$('v82AnatomyBody');if(!b)return;
+  const value=$('v82AnatomySearch')?.value||'',term=normCatalog(value);
+  const cards=SYSTEMS.map(x=>catalogCard(x,term)).filter(Boolean);
+  b.innerHTML=`<div class="v82-pagehead"><button id="v82Back" class="btn outline">← Accueil</button><div><h2>🫀 Anatomie & Physiologie</h2><div class="small">Des planches anatomiques classées par cours.</div></div><input id="v82AnatomySearch" class="v82-search" type="search" autocomplete="off" placeholder="Rechercher un système, une planche…" value="${E(value)}"></div><div class="v82-catalog">${cards.join('')||'<div class="card v82-empty">Aucune planche trouvée.</div>'}</div>`;
+  bindAnatomy();const input=$('v82AnatomySearch');if(input&&value){input.focus();input.setSelectionRange(value.length,value.length)}
 }
 function hasResume(){const b=$('v76Resume');return !!b&&!b.disabled}
 function primaryAction(){if(hasResume())return window.IFSI_V76?.resumeAction?.();return window.IFSI_V76?.startNow?.()}
