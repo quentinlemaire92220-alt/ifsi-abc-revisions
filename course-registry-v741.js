@@ -61,7 +61,7 @@ function resourcesForCourse(courseId){
 }
 function courseIdForLabel(label){return resolveLabel(label)?.courseId||null}
 function annotateCourseCards(){document.querySelectorAll('[data-course74]').forEach(el=>{const id=courseIdForLabel(el.dataset.course74);if(id)el.dataset.courseId=id})}
-function setVersion(){/* Version globale gérée par app-version-v742.js */} locale : registre de cours et diagnostic des rattachements.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}
+function setVersion(){/* Version globale gérée par app-version-v742.js */}
 function lockVersion(){let n=0;const t=setInterval(()=>{setVersion();annotateCourseCards();if(++n>=40)clearInterval(t)},250)}
 function diagnosticUI(){
   if(!['1','true'].includes(new URLSearchParams(location.search).get('diag')||'')&&!['1','true'].includes(new URLSearchParams(location.search).get('tnr')||''))return;
