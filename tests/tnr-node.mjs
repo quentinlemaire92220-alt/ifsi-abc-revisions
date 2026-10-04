@@ -61,7 +61,7 @@ assert(sw.indexOf('v85-home-lite.js')<sw.indexOf('v86-home-clean.js'),'V8.6 doit
 assert(sw.indexOf('v86-home-clean.js')<sw.indexOf('v87-settings.js'),'V8.7 doit être chargée après V8.6');
 assert(sw.indexOf('v87-settings.js')<sw.indexOf('tnr-v72.js'),'Paramètres doivent être chargés avant le TNR navigateur');
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='8.11'",'IFSI_APP_VERSION','planches anatomiques interactives'])assert(versionModule.includes(marker),`Version V8.11 incomplète: ${marker}`);
+for(const marker of ["const VERSION='8.11.1'",'IFSI_APP_VERSION','nouvelle planche générée'])assert(versionModule.includes(marker),`Version V8.11.1 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
 for(const marker of ["const VERSION='8.11'",'v811Change','V8.11 — Planches respiratoires premium','v810Change','V8.10 — Cours par domaine & Anatomie simplifiée','v891Change','V8.9.1 — Mathématiques dans le domaine E','v89Change','V8.9 — Mes cours rangés par UE','v884Change','V8.8.4 — Hotfix gel immédiat','v883Change','V8.8.3 — Correctif performance mobile','v882Change','V8.8.2 — Hotfix anti-gel mobile','v881Change','V8.8.1 — Stabilité mobile','v88Change','V8.8 — Audit et rangement des ressources','v87Change','V8.7 — Onglet Paramètres','v86Change','V8.6 — Accueil minimal','v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.11 incomplet: ${marker}`);
 const analytics=read('analytics-v77.js');
