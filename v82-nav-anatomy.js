@@ -111,7 +111,7 @@ function patchShow(){
     return old(id)
   };showPatched=true
 }
-function showAnatomy(){window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
+function showAnatomy(){renderAnatomy();window.show?.(SECTION);scrollTo({top:0,behavior:'smooth'})}
 function bindAnatomy(){
   document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openSystem(b.dataset.open));
   document.querySelectorAll('[data-test]').forEach(b=>b.onclick=()=>startCourse(b.dataset.test,10));
@@ -155,11 +155,10 @@ function links(){
 }
 function init(){
   css();ensureSection();patchShow();const ok=hierarchy();
-  if(ok&&window.IFSI_V741?.getRegistry?.())renderAnatomy();
   return ok&&!!window.IFSI_V81&&!!window.IFSI_V74&&!!window.IFSI_V741?.getRegistry?.()
 }
-let tries=0,linked=false;const timer=setInterval(()=>{tries++;if(init()){if(!linked){linked=links();}if(tries>15||linked)clearInterval(timer)}else if(tries>260)clearInterval(timer)},100);
-window.addEventListener('ifsi:v741-ready',()=>{renderAnatomy();hierarchy();if(!linked)linked=links()});
+let tries=0,linked=false;const timer=setInterval(()=>{tries++;if(init()){if(!linked)linked=links();clearInterval(timer)}else if(tries>260)clearInterval(timer)},150);
+window.addEventListener('ifsi:v741-ready',()=>{hierarchy();if(!linked)linked=links()});
 window.addEventListener('storage',()=>{hierarchy();renderAnatomy()});
 window.IFSI_V82={version:V,showAnatomy,startSystem:startCourse,startMixed:mixed,openSystem};
 })();
