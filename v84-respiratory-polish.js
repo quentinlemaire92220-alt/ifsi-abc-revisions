@@ -46,5 +46,5 @@ function decorateSchemaUI(){
  });
 }
 function decorate(){css();decorateHead();decorateBody();decorateSchemaUI();updateBodyClass()}
-let t=0;const timer=setInterval(()=>{t++;decorate();if(t>300)clearInterval(timer)},100);new MutationObserver(()=>requestAnimationFrame(decorate)).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});window.addEventListener('storage',decorate);window.IFSI_V84={version:V,decorate};
+let t=0;const timer=setInterval(()=>{t++;decorate();if(document.getElementById('anatomy83')&&document.getElementById('v84Overview')||t>40)clearInterval(timer)},250);window.addEventListener('storage',()=>requestAnimationFrame(decorate));window.IFSI_V84={version:V,decorate};
 })();
