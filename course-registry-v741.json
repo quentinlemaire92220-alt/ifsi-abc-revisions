@@ -1,5 +1,5 @@
 {
-  "version": "7.4.1",
+  "version": "8.8",
   "courses": [
     {
       "id": "biomolecules",
@@ -9,7 +9,9 @@
         "Biomolecules",
         "Fondamentaux Partie01 Biomolécules",
         "Fondamentaux Partie01 Biomolecules"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "cellules_tissus",
@@ -18,7 +20,9 @@
         "Cellules et tissus",
         "Cellules",
         "Cellules Tissus"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "homeostasie",
@@ -27,7 +31,9 @@
         "Homéostasie",
         "Homeostasie",
         "Fondamentaux Homeostasie"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "parasites_champignons",
@@ -37,7 +43,9 @@
         "Parasites et champignons",
         "Parasites Champignons",
         "Ecologie Microbienne Parasites Champignons"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "genetique",
@@ -47,7 +55,9 @@
         "Genetique",
         "Information Génétique",
         "Information Genetique"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "niveaux_organisation",
@@ -57,7 +67,9 @@
         "Niveaux Organisation",
         "Niveaux Organisation Corps Humain",
         "Fondamentaux Partie05 Niveaux Organisation Corps Humain"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "physiopathologie_infections",
@@ -66,7 +78,9 @@
         "Physiopathologie des infections",
         "Physiopathologie Infections",
         "Physiopathologie Infection"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "diagnostic_virologie",
@@ -75,7 +89,9 @@
         "Diagnostic virologique",
         "Diagnostic Virologie",
         "Bases Diagnostic Virologie"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "virus",
@@ -83,7 +99,9 @@
       "aliases": [
         "Virus",
         "Ecologie Microbienne Virus"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "systeme_urinaire",
@@ -92,7 +110,9 @@
         "Système urinaire",
         "Systeme Urinaire",
         "Urinaire"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "systeme_endocrinien",
@@ -101,7 +121,9 @@
         "Système endocrinien",
         "Systeme Endocrinien",
         "Endocrinien"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "systeme_immunitaire",
@@ -110,7 +132,9 @@
         "Système immunitaire",
         "Systeme Immunitaire",
         "Immunitaire"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "systeme_respiratoire",
@@ -119,7 +143,9 @@
         "Système respiratoire",
         "Systeme Respiratoire",
         "Respiratoire"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "prevention_ias_asepsie",
@@ -130,7 +156,9 @@
         "IAS Asepsie Hygiene IAS",
         "Asepsie Hygiene IAS",
         "Hygiene TD Precautions Standard Complementaires"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "systeme_nerveux",
@@ -139,7 +167,9 @@
         "Système nerveux",
         "Systeme Nerveux",
         "Nerveux"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "infections_neuro_meningees",
@@ -148,7 +178,9 @@
         "Infections neuro-méningées",
         "Infections neuro meningees",
         "Neuro Meningees"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "calculs_doses_mathematiques",
@@ -160,7 +192,9 @@
         "Mathématiques et calculs simples",
         "Mathematiques et calculs simples",
         "UE B3 Mathématiques"
-      ]
+      ],
+      "domain": "T",
+      "ue": "B3"
     },
     {
       "id": "systeme_digestif",
@@ -169,22 +203,210 @@
         "Système digestif",
         "Systeme Digestif",
         "Digestif"
-      ]
+      ],
+      "domain": "B",
+      "ue": "B1"
     },
     {
       "id": "appareil_locomoteur",
-      "label": "Appareil locomoteur",
+      "label": "Système locomoteur",
       "aliases": [
         "Appareil locomoteur",
         "Appareil Locomoteur",
         "Locomoteur",
         "Anatomie Appareil Locomoteur",
         "Traumatologie Appareil Locomoteur"
+      ],
+      "domain": "B",
+      "ue": "B1"
+    },
+    {
+      "id": "histoire_profession_infirmiere",
+      "label": "Histoire et identité de la profession infirmière",
+      "domain": "A",
+      "ue": "A1",
+      "aliases": [
+        "Histoire Profession Infirmiere",
+        "Histoire Professions Sante",
+        "Histoire et identité de la profession infirmière"
+      ]
+    },
+    {
+      "id": "epistemologie_savoirs",
+      "label": "Épistémologie et savoirs infirmiers",
+      "domain": "A",
+      "ue": "A1",
+      "aliases": [
+        "Epistemologie",
+        "Épistémologie",
+        "Fondements Sciences Infirmieres",
+        "Fondements epistemologiques modeles conceptuels cliniques",
+        "Theorie Dans La Pratique"
+      ]
+    },
+    {
+      "id": "ethique_infirmiere",
+      "label": "Introduction à l’éthique infirmière",
+      "domain": "A",
+      "ue": "A2",
+      "aliases": [
+        "Ethique Introduction Ethique Infirmiere",
+        "Introduction à l’éthique infirmière",
+        "Ethique infirmiere"
+      ]
+    },
+    {
+      "id": "douleur",
+      "label": "Douleur aiguë et chronique",
+      "domain": "B",
+      "ue": "B3",
+      "aliases": [
+        "Douleur",
+        "Douleur aigue et chronique"
+      ]
+    },
+    {
+      "id": "parametres_vitaux",
+      "label": "Paramètres vitaux",
+      "domain": "B",
+      "ue": "B3",
+      "aliases": [
+        "Parametres Vitaux",
+        "Paramètres vitaux"
+      ]
+    },
+    {
+      "id": "grands_brules",
+      "label": "Grands brûlés",
+      "domain": "B",
+      "ue": "B3",
+      "aliases": [
+        "Grands Brules",
+        "Grands brûlés",
+        "Prise en charge grands brules"
+      ]
+    },
+    {
+      "id": "infections_cutanees",
+      "label": "Infections cutanées",
+      "domain": "B",
+      "ue": "B1",
+      "aliases": [
+        "Infections Cutanees",
+        "Infections cutanées"
+      ]
+    },
+    {
+      "id": "diagnostic_bacteriologie",
+      "label": "Diagnostic bactériologique",
+      "domain": "B",
+      "ue": "B1",
+      "aliases": [
+        "Diagnostic Bacteriologie",
+        "Diagnostic bactériologique"
+      ]
+    },
+    {
+      "id": "infections_urinaires",
+      "label": "Infections urinaires",
+      "domain": "B",
+      "ue": "B1",
+      "aliases": [
+        "Infections Urinaires",
+        "Infections urinaires"
+      ]
+    },
+    {
+      "id": "arthrose",
+      "label": "Arthrose",
+      "domain": "B",
+      "ue": "B1",
+      "parentId": "appareil_locomoteur",
+      "aliases": [
+        "Arthrose"
+      ]
+    },
+    {
+      "id": "chirurgie_orthopedique",
+      "label": "Chirurgie orthopédique",
+      "domain": "B",
+      "ue": "B1",
+      "parentId": "appareil_locomoteur",
+      "aliases": [
+        "Chirurgie Orthopedique",
+        "Chirurgie orthopédique"
+      ]
+    },
+    {
+      "id": "rhumatismes_inflammatoires",
+      "label": "Rhumatismes inflammatoires",
+      "domain": "B",
+      "ue": "B1",
+      "parentId": "appareil_locomoteur",
+      "aliases": [
+        "Rhumatismes Inflammatoires",
+        "Rhumatismes inflammatoires"
+      ]
+    },
+    {
+      "id": "pathologies_microcristallines_osteoporose",
+      "label": "Pathologies microcristallines et ostéoporose",
+      "domain": "B",
+      "ue": "B1",
+      "parentId": "appareil_locomoteur",
+      "aliases": [
+        "Rhumatologie Pathologies Microcristallines Osteoporose",
+        "Pathologies Microcristallines Osteoporose",
+        "Pathologies microcristallines et ostéoporose",
+        "Rhumatologie"
+      ]
+    },
+    {
+      "id": "competences_psychosociales",
+      "label": "Compétences psychosociales",
+      "domain": "D",
+      "ue": "D1",
+      "aliases": [
+        "Competences Psychosociales",
+        "Compétences psychosociales",
+        "Introduction CPS"
+      ]
+    },
+    {
+      "id": "methodes_travail_reussite",
+      "label": "Méthodes de travail et aide à la réussite",
+      "domain": "E",
+      "ue": "E3",
+      "aliases": [
+        "UE E3 S1 paysage visuels",
+        "Méthodes de travail et aide à la réussite",
+        "Methodes de travail et aide a la reussite"
+      ]
+    },
+    {
+      "id": "vaccination_prs",
+      "label": "Vaccination — travail PRS",
+      "domain": "C",
+      "ue": "C1",
+      "aliases": [
+        "Vaccination Fiche de travail PRS",
+        "Vaccination PRS",
+        "PRS TD01 Vaccination"
       ]
     }
   ],
   "auditBaseline": {
-    "unmatchedSheets": 28,
-    "unmatchedInfographics": 14
+    "unmatchedSheets": 0,
+    "unmatchedInfographics": 0
+  },
+  "sourceOfTruth": {
+    "driveRootId": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
+    "driveRootLabel": "IFSI - Cours",
+    "rule": "Les ressources actives du dossier IFSI - Cours sont prioritaires. Les archives et anciennes arborescences ne doivent pas être indexées comme ressources actives."
+  },
+  "resourcePolicy": {
+    "requireExplicitCourseId": true,
+    "requireDisplayTitle": true,
+    "deduplicateByDriveId": true
   }
 }
