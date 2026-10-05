@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.19.1', $=id=>document.getElementById(id);
+const V='8.20', $=id=>document.getElementById(id);
 const DARK='ifsiabc_v72_dark',TIMER='ifsiabc_v72_timer';
 function css(){if($('v86css'))return;const s=document.createElement('style');s.id='v86css';s.textContent=`
 body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{display:none!important}
@@ -33,7 +33,7 @@ function dialog(){
  <div class="row"><div><h3>⚙️ Réglages</h3><div class="small">Options locales de l’application</div></div><button id="v86Close" class="btn outline">Fermer</button></div>
  <label class="v86-setting"><span><b>🌙 Mode sombre</b><small>Enregistré sur cet appareil</small></span><input id="v86Dark" type="checkbox"></label>
  <label class="v86-setting"><span><b>⏱️ Chronomètre QCM</b><small>Afficher le temps pendant les séries</small></span><input id="v86Timer" type="checkbox"></label>
- <div class="v86-about"><b>IFSI ABC Révisions — V8.19.1</b><div class="small" style="margin-top:4px">Accueil simplifié. Les nouveautés techniques ne sont plus affichées sur la page d’accueil.</div></div>
+ <div class="v86-about"><b>IFSI ABC Révisions — V8.20</b><div class="small" style="margin-top:4px">Accueil simplifié. Les nouveautés techniques ne sont plus affichées sur la page d’accueil.</div></div>
  <div class="v86-sheet-actions"><button id="v86Improve" class="btn outline">💡 Amélioration</button><button id="v86Update" class="btn primary">↻ Vérifier la mise à jour</button></div>
  </div>`;document.body.appendChild(d);
  $('v86Close').onclick=()=>d.close();
