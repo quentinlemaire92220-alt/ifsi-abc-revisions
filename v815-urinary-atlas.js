@@ -1,7 +1,7 @@
 (()=>{'use strict';
-const V='8.15',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const V='8.15.1',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const SECTION='v815UrinaryAtlas',FAV='ifsiabc_v815_urinary_favs_v1';
-const SRC='https://drive.google.com/thumbnail?id=1mvlD_j5Fui1Cn5WR-0JIZlfTNAR_rNhA&sz=w2400';
+const SRC='https://drive.google.com/thumbnail?id=1xKV0-_DCk9nQbQjcCqibrQILNU9be8fG&sz=w2400';
 const ATLAS=[
  {id:'urinary_atlas_01',n:1,title:'Appareil urinaire — Vue d’ensemble',sub:'Reins, uretères, vessie et urètre',c:0,r:0,labels:['Glandes surrénales','Rein droit','Rein gauche','Aorte abdominale','Veine cave inférieure','Uretère droit','Uretère gauche','Vessie','Urètre'],plus:false},
  {id:'urinary_atlas_02',n:2,title:'Rein — Vue antérieure',sub:'Repères externes et hile rénal',c:1,r:0,labels:['Glande surrénale','Pôle supérieur','Pôle inférieur','Bord latéral','Bord médial','Hile rénal','Artère rénale','Veine rénale','Uretère'],plus:true},
