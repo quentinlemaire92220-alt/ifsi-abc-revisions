@@ -13,9 +13,9 @@ function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:26},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
-const v820RawPacks=[];for(let i=12;i<=34;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
-assert(v820RawPacks.length>=900,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:27},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
+const v820RawPacks=[];for(let i=12;i<=35;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
+assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
@@ -45,7 +45,7 @@ assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_01
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
 const registry=json('course-registry-v741.json');
-assert(registry.version==='8.11','Registre version incorrecte');
+assert(registry.version==='8.23','Registre version incorrecte');
 assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
@@ -54,7 +54,7 @@ const infographics=json('infographics.json');
 const nervousInfos=infographics.filter(x=>x.courseId==='systeme_nerveux');
 assert(nervousInfos.length===4,`Infographies système nerveux inattendues: ${nervousInfos.length}`);
 for(const title of ['Organisation générale du système nerveux','Système nerveux central','Système nerveux périphérique','Fonctions neurologiques'])assert(nervousInfos.some(x=>x.displayTitle===title),`Infographie système nerveux absente: ${title}`);
-const v820MinCounts={epistemologie_savoirs:110,histoire_profession_infirmiere:45,ethique_infirmiere:45,prevention_ias_asepsie:120,infections_cutanees:45,infections_neuro_meningees:30,appareil_locomoteur:45,traumatologie:80,arthrose:35,chirurgie_orthopedique:25,rhumatismes_inflammatoires:30,pathologies_microcristallines_osteoporose:40,systeme_digestif:65,grands_brules:30,parametres_vitaux:45,douleur:25,competences_psychosociales:25};
+const v820MinCounts={epistemologie_savoirs:110,histoire_profession_infirmiere:45,ethique_infirmiere:45,prevention_ias_asepsie:120,infections_cutanees:45,infections_neuro_meningees:30,appareil_locomoteur:45,traumatologie:80,arthrose:35,chirurgie_orthopedique:25,rhumatismes_inflammatoires:30,pathologies_microcristallines_osteoporose:40,systeme_digestif:65,grands_brules:30,parametres_vitaux:45,douleur:25,competences_psychosociales:25,systeme_cardiovasculaire:53};
 for(const [id,min] of Object.entries(v820MinCounts)){const n=runtime.filter(q=>q.courseId===id).length;assert(n>=min,`V8.20 course QCM insuffisant ${id}: ${n}/${min}`)}
 const expectedInfoCounts={cellules_tissus:9,niveaux_organisation:2,prevention_ias_asepsie:8,virus:1,infections_cutanees:3,infections_neuro_meningees:7,infections_urinaires:3,diagnostic_bacteriologie:3};
 for(const [id,min] of Object.entries(expectedInfoCounts)){const n=infographics.filter(x=>x.courseId===id).length;assert(n>=min,`Infographies V8.20 insuffisantes ${id}: ${n}/${min}`)}
