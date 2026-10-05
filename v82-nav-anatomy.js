@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.13',SECTION='anatomy82',MK='ifsiabc_v7_mode';
+const V='8.19',SECTION='anatomy82',MK='ifsiabc_v7_mode';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
@@ -133,7 +133,9 @@ function boardTitle(x){
 function boardsFor(def){
   if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
   if(def.id==='systeme_urinaire')return URINARY_BOARDS.map(x=>({...x,interactive:true}));
-  return (resources(def.id).infographics||[]).map(x=>({id:x.url,title:boardTitle(x),subtitle:def.subtitle,url:x.url,interactive:false}))
+  // V8.19 : séparation stricte. Une infographie de cours ne devient jamais une planche anatomique.
+  // Les autres atlas sont injectés uniquement par leur module anatomique dédié, alimenté depuis 06 - Planches anatomiques.
+  return []
 }
 function respBoardRow(b){
   const m=window.IFSI_V83?.diagramMastery?.(b.id)||{mastered:0,total:0,pct:0};
