@@ -1,21 +1,21 @@
 {
-  "version": "8.25",
+  "version": "8.26",
   "auditedAt": "2026-10-05",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
-  "mode": "snapshot_guard",
-  "note": "Contrôle automatique après intégration des infections pulmonaires bactériennes et des infections respiratoires virales en V8.25.",
+  "mode": "validated_snapshot",
+  "note": "V8.26 : intégration des IST hors VIH et fiabilisation de l’audit / mise à jour PWA. L’audit applicatif compare le catalogue embarqué au dernier inventaire Drive validé ; il ne scanne pas Google Drive en temps réel.",
   "expectedTotals": {
-    "courses": 39,
-    "sheets": 46,
+    "courses": 40,
+    "sheets": 47,
     "infographics": 133,
     "vocals": 29,
-    "v820QcmImported": 1118,
+    "v820QcmImported": 1174,
     "v820PackFirst": 12,
-    "v820PackLast": 37,
+    "v820PackLast": 38,
     "hdAtlasBoards": 60,
     "qcmRuntimeMin": 1553
   },
@@ -39,5 +39,18 @@
     "strictAnatomySeparation": true,
     "explicitCourseId": true,
     "duplicateDriveIdsAllowed": false
+  },
+  "validatedAdditions": {
+    "courseId": "ist_hors_vih",
+    "sheetDriveId": "1_zClzZJJ3JPa78Vmjh9dkMpJVvGPlBQg",
+    "qcmPdfDriveId": "1VqIfoj1EaxKOorlx10UCw9LXtmlnirx3",
+    "supportDriveId": "163VRiKjTJ3ZxItGopvcswTx2ufMxLhig",
+    "interactiveQuestions": 56,
+    "excludedIllustratedQuestions": [
+      24,
+      31,
+      54,
+      57
+    ]
   }
 }
