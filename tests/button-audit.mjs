@@ -25,7 +25,19 @@ const suites=[
       "window.IFSI_V81.showHub=function()",
       "ensureToggle(goal,'v828GoalToggle'",
       "ensureToggle(pre,'v828PreToggle'",
-      "ensureToggle(search,'v828SearchToggle'"
+      "ensureToggle(search,'v828SearchToggle'",
+      "function openSearch()",
+      "openSearch};"
+    ]
+  },
+  {
+    file:'v86-home-clean.js',
+    markers:[
+      "$('v86Search').onclick",
+      "window.IFSI_V828?.openSearch",
+      "$('v86Settings').onclick",
+      "$('v86Improve').onclick",
+      "$('v86Update').onclick"
     ]
   },
   {
@@ -40,7 +52,10 @@ const suites=[
       "$('v87ExportBackup').onclick",
       "$('v87Update').onclick",
       "$('v87Reload').onclick",
-      "$('v87Improve').onclick"
+      "$('v87Improve').onclick",
+      "v814RespAtlas",
+      "v824DigestiveAtlas",
+      "window.IFSI_APP_VERSION||'8.28'"
     ]
   },
   {
