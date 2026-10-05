@@ -70,9 +70,9 @@ const dup=[...seen.entries()].filter(([,v])=>v.length>1);
 assert(dup.length===0,`Drive IDs dupliqués dans les catalogues actifs: ${dup.map(([id,v])=>id+'='+v.join('/')).join(', ')}`);
 
 const contracts=snap.anatomyFolderContracts||{};
-assert(Object.keys(contracts).length===7,'Contrats de dossiers 06 incomplets');
+assert(Object.keys(contracts).length===8,'Contrats de dossiers 06 incomplets');
 assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,'Dossiers 06 dupliqués dans le snapshot');
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
 
-console.log(`✅ V8.21 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasBoardCount} planches HD`);
+console.log(`✅ V8.23 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasBoardCount} planches HD`);
 console.log('✅ Séparation stricte Infographies / Anatomie et unicité des Drive IDs contrôlées');
