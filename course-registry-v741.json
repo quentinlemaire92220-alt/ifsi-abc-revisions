@@ -1,5 +1,5 @@
 {
-  "version": "8.25",
+  "version": "8.26",
   "courses": [
     {
       "id": "biomolecules",
@@ -445,6 +445,18 @@
         "Virus respiratoires",
         "Grippe et Covid",
         "Grippe COVID-19"
+      ],
+      "domain": "B",
+      "ue": "B1"
+    },
+    {
+      "id": "ist_hors_vih",
+      "label": "IST hors VIH",
+      "aliases": [
+        "IST hors VIH",
+        "Infections sexuellement transmissibles",
+        "Infections sexuellement transmissibles hors VIH",
+        "IST Hors VIH"
       ],
       "domain": "B",
       "ue": "B1"

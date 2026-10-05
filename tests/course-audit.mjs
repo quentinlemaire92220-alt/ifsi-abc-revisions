@@ -34,10 +34,10 @@ const infos=json('infographics.json');
 const byCourse=Object.fromEntries(courses.map(c=>[c.id,{label:c.label,qcm:0,vocals:0,sheets:0,infographics:0}]));
 const errors=[];
 
-assert(registry.version==='8.24',`Version registre inattendue: ${registry.version}`);
+assert(registry.version==='8.26',`Version registre inattendue: ${registry.version}`);
 assert(registry.sourceOfTruth?.driveRootId==='1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae','Racine Drive canonique absente');
 assert(registry.resourcePolicy?.requireExplicitCourseId===true,'Politique courseId explicite absente');
-assert(courseMap.get('calculs_doses_mathematiques')?.domain==='E','Calculs de doses doit être classé dans le domaine E');
+assert(courseMap.get('calculs_doses_mathematiques')?.domain==='E','Calculs de doses doit être classé dans le domaine E');assert(courseMap.has('ist_hors_vih'),'Cours IST hors VIH absent du registre');
 
 for(const q of qs){
   const r=q.courseId?(courseMap.has(q.courseId)?{courseId:q.courseId}:{status:'invalid'}):resolveLabel(q.course||q.theme);
