@@ -13,7 +13,7 @@ function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,9,10]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
+for(const i of [1,2,3,4,5,6,7,9,10,11]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
@@ -34,6 +34,12 @@ assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${
 assert(JSON.stringify(respiratory.get('resp_049')?.answers)==='[0,3]','Réponses resp_049 non synchronisées');
 assert(JSON.stringify(respiratory.get('resp_050')?.answers)==='[0,1,3]','Réponses resp_050 non synchronisées');
 assert(new Set([...respiratory.values()].map(q=>q.theme)).size>=5,'Thématiques respiratoires insuffisantes');
+const nervous=new Map(runtime.filter(q=>q.courseId==='systeme_nerveux').map(q=>[q.id,q]));
+assert(nervous.size===49,`Questions système nerveux inattendues: ${nervous.size}`);
+assert(JSON.stringify(nervous.get('nervous_001')?.answers)==='[1,2,3]','Réponses nervous_001 non synchronisées');
+assert(JSON.stringify(nervous.get('nervous_049')?.answers)==='[0,1,2,3]','Réponses nervous_049 non synchronisées');
+assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_010 doit être autonome sans schéma externe');
+assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
 const registry=json('course-registry-v741.json');
 assert(registry.version==='8.11','Registre version incorrecte');
@@ -41,13 +47,17 @@ assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre tr
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
 assert(courseIds.has('calculs_doses_mathematiques'),'CourseId calculs absent');assert(courseIds.has('systeme_digestif'),'CourseId digestif absent');assert(courseIds.has('douleur'),'CourseId douleur absent');assert(courseIds.has('epistemologie_savoirs'),'CourseId épistémologie absent');
+const infographics=json('infographics.json');
+const nervousInfos=infographics.filter(x=>x.courseId==='systeme_nerveux');
+assert(nervousInfos.length===4,`Infographies système nerveux inattendues: ${nervousInfos.length}`);
+for(const title of ['Organisation générale du système nerveux','Système nerveux central','Système nerveux périphérique','Fonctions neurologiques'])assert(nervousInfos.some(x=>x.displayTitle===title),`Infographie système nerveux absente: ${title}`);
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
 for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
 
 const sw=read('sw.js');
-for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./v86-home-clean.js','./v87-settings.js','./v813-home-discovery.js','./v814-respiratory-atlas.js','./v815-urinary-atlas.js','./v816-endocrine-atlas.js','./v817-immune-atlas.js','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-17-local-68"),'Cache V8.15.1 local-66 absent');
+for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./v86-home-clean.js','./v87-settings.js','./v813-home-discovery.js','./v814-respiratory-atlas.js','./v815-urinary-atlas.js','./v816-endocrine-atlas.js','./v817-immune-atlas.js','./qextra-11.txt','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
+assert(sw.includes("ifsi-abc-v8-18-local-69"),'Cache V8.18 local-69 absent');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
@@ -61,9 +71,9 @@ assert(sw.indexOf('v85-home-lite.js')<sw.indexOf('v86-home-clean.js'),'V8.6 doit
 assert(sw.indexOf('v86-home-clean.js')<sw.indexOf('v87-settings.js'),'V8.7 doit être chargée après V8.6');
 assert(sw.indexOf('v87-settings.js')<sw.indexOf('v813-home-discovery.js'),'Accueil V8.13 doit être chargé après Paramètres');assert(sw.indexOf('v813-home-discovery.js')<sw.indexOf('v814-respiratory-atlas.js'),'Atlas respiratoire V8.14 doit être chargé après l’accueil V8.13');assert(sw.indexOf('v814-respiratory-atlas.js')<sw.indexOf('v815-urinary-atlas.js'),'Atlas urinaire V8.15 doit être chargé après l’atlas respiratoire');assert(sw.indexOf('v815-urinary-atlas.js')<sw.indexOf('v816-endocrine-atlas.js'),'Atlas endocrinien V8.16 doit être chargé après l’atlas urinaire');assert(sw.indexOf('v816-endocrine-atlas.js')<sw.indexOf('v817-immune-atlas.js'),'Atlas immunitaire V8.17 doit être chargé après l’atlas endocrinien');assert(sw.indexOf('v817-immune-atlas.js')<sw.indexOf('tnr-v72.js'),'Atlas immunitaire V8.17 doit être chargé avant le TNR navigateur');
 const versionModule=read('app-version-v742.js');
-for(const marker of ["const VERSION='8.17'",'IFSI_APP_VERSION','atlas immunitaire HD'])assert(versionModule.includes(marker),`Version V8.17 incomplète: ${marker}`);
+for(const marker of ["const VERSION='8.18'",'IFSI_APP_VERSION','système nerveux complété'])assert(versionModule.includes(marker),`Version V8.18 incomplète: ${marker}`);
 const changelog=read('changelog-v742.js');
-for(const marker of ["const VERSION='8.17'",'v817Change','V8.17 — Atlas immunitaire HD 8 planches','v816Change','V8.16 — Atlas endocrinien HD 8 planches','v8151Change','V8.15.1 — Correctif atlas urinaire','v815Change','V8.15 — Atlas urinaire 8 planches','v8141Change','V8.14.1 — Correctif atlas respiratoire','v814Change','V8.14 — Atlas respiratoire 8 planches','v813Change','V8.13 — Accueil : recherche cours & nouveautés','v812Change','V8.12 — Planches anatomiques multi-systèmes','v8114Change','V8.11.4 — Module respiratoire HD complet','v8113Change','V8.11.3 — Planche HD Voies respiratoires','v8112Change','V8.11.2 — Zoom plein écran des planches','v8111Change','V8.11.1 — Test réel de la planche Voies respiratoires','v811Change','V8.11 — Planches respiratoires premium','v810Change','V8.10 — Cours par domaine & Anatomie simplifiée','v891Change','V8.9.1 — Mathématiques dans le domaine E','v89Change','V8.9 — Mes cours rangés par UE','v884Change','V8.8.4 — Hotfix gel immédiat','v883Change','V8.8.3 — Correctif performance mobile','v882Change','V8.8.2 — Hotfix anti-gel mobile','v881Change','V8.8.1 — Stabilité mobile','v88Change','V8.8 — Audit et rangement des ressources','v87Change','V8.7 — Onglet Paramètres','v86Change','V8.6 — Accueil minimal','v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.17 incomplet: ${marker}`);
+for(const marker of ["const VERSION='8.18'",'v818Change','V8.18 — Système nerveux complété','v817Change','V8.17 — Atlas immunitaire HD 8 planches','v816Change','V8.16 — Atlas endocrinien HD 8 planches','v8151Change','V8.15.1 — Correctif atlas urinaire','v815Change','V8.15 — Atlas urinaire 8 planches','v8141Change','V8.14.1 — Correctif atlas respiratoire','v814Change','V8.14 — Atlas respiratoire 8 planches','v813Change','V8.13 — Accueil : recherche cours & nouveautés','v812Change','V8.12 — Planches anatomiques multi-systèmes','v8114Change','V8.11.4 — Module respiratoire HD complet','v8113Change','V8.11.3 — Planche HD Voies respiratoires','v8112Change','V8.11.2 — Zoom plein écran des planches','v8111Change','V8.11.1 — Test réel de la planche Voies respiratoires','v811Change','V8.11 — Planches respiratoires premium','v810Change','V8.10 — Cours par domaine & Anatomie simplifiée','v891Change','V8.9.1 — Mathématiques dans le domaine E','v89Change','V8.9 — Mes cours rangés par UE','v884Change','V8.8.4 — Hotfix gel immédiat','v883Change','V8.8.3 — Correctif performance mobile','v882Change','V8.8.2 — Hotfix anti-gel mobile','v881Change','V8.8.1 — Stabilité mobile','v88Change','V8.8 — Audit et rangement des ressources','v87Change','V8.7 — Onglet Paramètres','v86Change','V8.6 — Accueil minimal','v85Change','V8.5 — Accueil allégé','v84Change','V8.4 — Système respiratoire enrichi','v83Change','v82Change','v81Change','v80Change','v79Change','IFSI_CHANGELOG'])assert(changelog.includes(marker),`Changelog V8.18 incomplet: ${marker}`);
 const analytics=read('analytics-v77.js');
 for(const marker of ["const VERSION='7.7'",'analytics_events','app_open','qcm_start','qcm_finish','resource_open','vocal_start','ifsiabc_analytics_optout_v1','sessionStorage','IFSI_V77'])assert(analytics.includes(marker),`Analytics V7.7 incomplet: ${marker}`);
 assert(analytics.includes('sb_publishable_'),'Clé publishable Supabase absente');assert(!analytics.includes('sb_secret_'),'Une clé secrète ne doit jamais être exposée côté client');
@@ -81,13 +91,14 @@ console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId 
 const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.11'",'function decorate(){updateBodyClass()}'])assert(v84.includes(marker),`Couche respiratoire V8.11 incomplète: ${marker}`);
 const v85=read('v85-home-lite.js');for(const marker of ["const V='8.5'",'v85-home','v82Primary','v76-today','⚙️ Plus','IFSI_V85'])assert(v85.includes(marker),`Accueil V8.5 incomplet: ${marker}`);
 const v86=read('v86-home-clean.js');for(const marker of ["const V='8.6'",'v86-home','v86Tools','v86SettingsDialog','IFSI_V86'])assert(v86.includes(marker),`Accueil V8.6 incomplet: ${marker}`);
-const v87=read('v87-settings.js');for(const marker of ["const V='8.17'",'settings87','v87Nav','Exporter mes résultats','Sauvegarde complète','Journal des versions','IFSI_V87'])assert(v87.includes(marker),`Paramètres V8.17 incomplets: ${marker}`);
-const v813=read('v813-home-discovery.js');for(const marker of ["const V='8.17'",'Rechercher un cours','Nouveautés','v813Search','v813Results','v813-new','systeme_urinaire','systeme_respiratoire','systeme_endocrinien','systeme_immunitaire','showSystemBoards','IFSI_V813'])assert(v813.includes(marker),`Accueil V8.17 incomplet: ${marker}`);
+const v87=read('v87-settings.js');for(const marker of ["const V='8.18'",'settings87','v87Nav','Exporter mes résultats','Sauvegarde complète','Journal des versions','IFSI_V87'])assert(v87.includes(marker),`Paramètres V8.18 incomplets: ${marker}`);
+const v813=read('v813-home-discovery.js');for(const marker of ["const V='8.18'",'Rechercher un cours','Nouveautés','v813Search','v813Results','v813-new','systeme_urinaire','systeme_respiratoire','systeme_endocrinien','systeme_immunitaire','showSystemBoards','IFSI_V813'])assert(v813.includes(marker),`Accueil V8.18 incomplet: ${marker}`);
 const v814=read('v814-respiratory-atlas.js');for(const marker of ["const V='8.14.1'",'resp_atlas_01','resp_atlas_08','Planche ${d.n}/8','DIRECT','1KRBSiliS28bwxYuOVRONNyX--EIFu1Kx','1r7yE3tfybb3NwHTFL7Czc4YU66ovceh4','10MHUvCdXBMzN4NSByaqv_4s_jSa8MnQV','1WlQUhCDtZIsPr-h3atnYxybO0hkYMxlw','1SDHGvwcbP7fdsFZk_ljdeKxwIbGeeRSr','1NlKD6v4iFgbXsnwpJS1IT4fBeqoz4Sl7','1tUgY_VkNhKJcIoFIsu3ZV8jt4LASXyB-','v814Zoom','decorateCatalog','IFSI_V814'])assert(v814.includes(marker),`Atlas respiratoire V8.14.1 incomplet: ${marker}`);assert(!v814.includes("const COLLAGE="),'Le découpage du collage ne doit plus être utilisé');
 const v815=read('v815-urinary-atlas.js');for(const marker of ["const V='8.15.1'",'urinary_atlas_01','urinary_atlas_08','Complément anatomie','1xKV0-_DCk9nQbQjcCqibrQILNU9be8fG','v815Zoom','decorateCatalog','IFSI_V815'])assert(v815.includes(marker),`Atlas urinaire V8.15.1 incomplet: ${marker}`);
 const v816=read('v816-endocrine-atlas.js');for(const marker of ["const V='8.16'",'endo_atlas_01','endo_atlas_08','Système endocrinien — Vue d’ensemble','Hypothalamus & hypophyse','Thyroïde','Parathyroïdes','Glandes surrénales','Pancréas endocrine','Gonades','Glande pinéale','Complément anatomie','v816Zoom','buildCatalogSection','IFSI_V816'])assert(v816.includes(marker),`Atlas endocrinien V8.16 incomplet: ${marker}`);
 const v817=read('v817-immune-atlas.js');for(const marker of ["const V='8.17'",'immu_atlas_01','immu_atlas_08','Système immunitaire — Vue d’ensemble','Moelle osseuse','Thymus','Réseau lymphatique','Ganglion lymphatique','Rate','Amygdales','Tissus lymphoïdes des muqueuses','Complément anatomie','v817Zoom','buildCatalogSection','IFSI_V817'])assert(v817.includes(marker),`Atlas immunitaire V8.17 incomplet: ${marker}`);
-console.log('✅ V8.17 contrôlée : atlas immunitaire HD 8 planches, zoom et favoris');
+console.log('✅ V8.18 contrôlée : système nerveux, 49 QCM et 4 infographies');
+console.log('✅ V8.17 conservée : atlas immunitaire HD 8 planches, zoom et favoris');
 console.log('✅ V8.16 conservée : atlas endocrinien HD 8 planches, zoom et favoris');
 console.log('✅ V8.15.1 contrôlée : atlas urinaire corrigé, planche urètre complète et zoom');
 console.log('✅ V8.6 conservée : accueil minimal');
