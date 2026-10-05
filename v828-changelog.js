@@ -11,7 +11,7 @@ function patch828(){
  span.appendChild(document.createElement('br'));
  span.appendChild(document.createTextNode('Correction de navigation : lancer une révision, un examen blanc ou une série ciblée ouvre désormais réellement le QCM au lieu de laisser le centre affiché au-dessus.'));
  span.appendChild(document.createElement('br'));
- span.appendChild(document.createTextNode('Amélioration du mode sombre et de l’espace sous la barre de navigation.'));
+ span.appendChild(document.createTextNode('Amélioration du mode sombre et de l’espace sous la barre de navigation.'));span.appendChild(document.createElement('br'));span.appendChild(document.createTextNode('Audit boutons : recherche depuis l’accueil réparée, contrôle de mise à jour fiabilisé et navigation Anatomie corrigée dans les atlas.'));
  span.appendChild(document.createElement('br'));span.appendChild(document.createElement('br'));
  host.insertBefore(span,host.firstChild);return true;
 }
