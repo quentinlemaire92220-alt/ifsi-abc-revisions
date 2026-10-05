@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
-const VERSION='8.22';
+const VERSION='8.23';
 const TITLE=`V${VERSION} local`;
-const READY=`Application prête • V${VERSION} : atlas anatomique du système nerveux intégré.`;
+const READY=`Application prête • V${VERSION} : système cardiovasculaire synchronisé avec la nouvelle arborescence Drive.`;
 const $=id=>document.getElementById(id);
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}
 function setStatus(text){const s=$('appVersionStatus742');if(s)s.textContent=text}
