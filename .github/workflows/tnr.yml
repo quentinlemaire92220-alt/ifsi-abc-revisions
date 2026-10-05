@@ -51,6 +51,7 @@ jobs:
           node --check v817-immune-atlas.js
           node --check v822-nervous-atlas.js
           node --check v823-cardiovascular-atlas.js
+          node --check v824-digestive-atlas.js
           node --check v821-resource-audit.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
