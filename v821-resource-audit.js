@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.25',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const V='8.26',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let snapshot=null,last=null;
 const did=u=>{const m=String(u||'').match(/\/d\/([^/]+)/);return m?.[1]||null};
 const atlasItems=()=>[
@@ -54,13 +54,13 @@ function byCourseRows(c){
 function render(){
  const box=$('v821AuditCard');if(!box)return;
  if(!last){box.querySelector('#v821Status').innerHTML='<span class="v821-dot wait"></span>Audit prêt';return}
- const {c,e}=last,stamp=snapshot?.auditedAt||'—',state=e.ok?'✅ Synchronisé':'❌ Anomalies détectées';
+ const {c,e}=last,stamp=snapshot?.auditedAt||'—',state=e.ok?'✅ Catalogue cohérent':'❌ Anomalies détectées';
  box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${e.ok?'ok':'bad'}"></span><b>${state}</b>`;
- box.querySelector('#v821Meta').textContent=`Snapshot Drive : ${stamp} • contrôle local : ${new Date().toLocaleString('fr-FR')}`;
+ box.querySelector('#v821Meta').textContent=`Inventaire Drive validé : ${stamp} • contrôle local : ${new Date().toLocaleString('fr-FR')}`;
  box.querySelector('#v821Counts').innerHTML=`
   <span><b>${c.courses}</b><small>cours</small></span><span><b>${c.qcm}</b><small>QCM</small></span><span><b>${c.sheets}</b><small>fiches</small></span><span><b>${c.infographics}</b><small>infographies</small></span><span><b>${c.vocals}</b><small>vocaux</small></span><span><b>${c.atlas}</b><small>planches HD</small></span>`;
  const msgs=[...e.errors.map(x=>'❌ '+x),...e.warnings.map(x=>'⚠️ '+x)];
- box.querySelector('#v821Issues').innerHTML=msgs.length?msgs.map(x=>`<div>${E(x)}</div>`).join(''):'<div>✅ Aucun écart détecté avec le dernier inventaire Drive validé.</div><div>✅ Aucun Drive ID dupliqué.</div><div>✅ Infographies et planches anatomiques restent dissociées.</div>';
+ box.querySelector('#v821Issues').innerHTML=msgs.length?msgs.map(x=>`<div>${E(x)}</div>`).join(''):'<div>✅ Catalogue local conforme au dernier inventaire Drive validé.</div><div>✅ Aucun Drive ID dupliqué.</div><div>✅ Infographies et planches anatomiques restent dissociées.</div><div>ℹ️ Ce contrôle ne scanne pas Google Drive en temps réel.</div>';
  box.querySelector('#v821Courses').innerHTML=byCourseRows(c);
 }
 async function runAudit(){await loadSnapshot();const c=current(),e=evaluate(c);last={c,e,at:new Date().toISOString()};render();return last}
@@ -71,7 +71,7 @@ function css(){if($('v821css'))return;const s=document.createElement('style');s.
 @media(max-width:680px){.v821-counts{grid-template-columns:repeat(3,1fr)}.v821-row{grid-template-columns:1fr}.v821-row>span{text-align:left}}
 `;document.head.appendChild(s)}
 function inject(){const grid=document.querySelector('#settings87 .v87-grid');if(!grid||$('v821AuditCard'))return false;const d=document.createElement('div');d.id='v821AuditCard';d.className='v87-card';d.innerHTML=`
-<div class="v821-top"><div><h3 style="margin:0 0 4px">🔎 Audit Drive ↔ Application</h3><p style="margin:0;color:var(--muted);font-size:12px">Contrôle automatique contre le dernier inventaire Drive validé.</p></div><button id="v821Run" class="btn outline">Auditer</button></div>
+<div class="v821-top"><div><h3 style="margin:0 0 4px">🔎 Audit catalogue ↔ inventaire Drive</h3><p style="margin:0;color:var(--muted);font-size:12px">Contrôle local contre le dernier inventaire Drive validé (pas un scan Drive en direct).</p></div><button id="v821Run" class="btn outline">Auditer</button></div>
 <div id="v821Status" class="v821-status" style="margin-top:10px"></div><div id="v821Meta" class="small" style="margin-top:4px"></div>
 <div id="v821Counts" class="v821-counts"></div><div id="v821Issues" class="v821-issues">L’audit vérifie les courseId, les doublons Drive, les catalogues et la séparation Infographies / Anatomie.</div>
 <details style="margin-top:10px"><summary><b>Détail par cours</b></summary><div id="v821Courses" style="margin-top:7px"></div></details>`;
