@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.25',$=id=>document.getElementById(id);
+const V='8.26',$=id=>document.getElementById(id);
 const K={dark:'ifsiabc_v72_dark',timer:'ifsiabc_v72_timer',analytics:'ifsiabc_analytics_optout_v1'};
 function css(){if($('v87css'))return;const s=document.createElement('style');s.id='v87css';s.textContent=`
 #v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(680px,calc(100% - 20px));display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
@@ -38,7 +38,7 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
   <div class="v87-setting"><span><b>Statistiques anonymes</b><small id="v87AnalyticsText"></small></span><button id="v87Analytics" class="v87-switch" aria-label="Statistiques anonymes"></button></div>
  </div>
  <div class="v87-card"><h3>📱 Application</h3><p>Version installée, mise à jour et informations techniques.</p>
-  <div class="v87-about"><div><div class="small">Version actuelle</div><div class="v87-ver">V8.25</div></div><button id="v87Update" class="btn primary">↻ Vérifier</button></div>
+  <div class="v87-about"><div><div class="small">Version actuelle</div><div class="v87-ver">V${V}</div></div><button id="v87Update" class="btn primary">↻ Vérifier</button></div>
   <div class="v87-actions" style="margin-top:10px"><button id="v87Improve" class="btn outline">💡 Proposer une amélioration</button><button id="v87Reload" class="btn outline">⟳ Recharger l’application</button></div>
  </div>
 </div>
@@ -65,7 +65,7 @@ function patchNavigation(){if(window.__v87navpatch)return;window.__v87navpatch=1
 function showSettings(){window.show?.('home');$('home')?.classList.add('hidden');['courses74','course74','vocals','v81Hub','anatomy82','anatomy83'].forEach(id=>$(id)?.classList.add('hidden'));$('settings87')?.classList.remove('hidden');render();active();window.scrollTo({top:0,behavior:'smooth'})}
 function switchState(id,on){$(id)?.classList.toggle('on',!!on);$(id)?.setAttribute('aria-pressed',on?'true':'false')}
 function download(name,obj){const a=document.createElement('a'),b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
-function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download('IFSI_ABC_sauvegarde_V8.25.json',data)}
+function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download(`IFSI_ABC_sauvegarde_V${V}.json`,data)}
 function versionLog(){const box=$('v87Log');if(!box)return;const src=$('v742Changelog')?.querySelector('details .small');if(src){box.innerHTML=src.innerHTML;return}box.innerHTML='<details open><summary>V8.8 — Ressources auditées</summary><div class="small">Catalogue dédoublonné, rattachements explicites et noms d’affichage normalisés.</div></details>'}
 function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';versionLog()}
 function bind(){
@@ -74,7 +74,7 @@ function bind(){
  $('v87Analytics').onclick=()=>{const on=!(window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1');window.IFSI_V77?.setEnabled?.(on);if(!window.IFSI_V77?.setEnabled)localStorage.setItem(K.analytics,on?'0':'1');render()};
  $('v87ExportResults').onclick=()=>{if(typeof window.exportStats==='function')window.exportStats();else{const x=typeof window.st==='function'?window.st():{};download('IFSI_ABC_resultats.json',x)}};
  $('v87ExportBackup').onclick=backup;
- $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const r=await navigator.serviceWorker.getRegistration();if(r){await r.update();b.textContent='À jour ✓'}else b.textContent='Non installée'}catch{b.textContent='Réessayer'}setTimeout(()=>b.textContent='↻ Vérifier',1800)};
+ $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await fetch('./build-meta.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('version');return r.json()});const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();if(remote?.version&&remote.version!==V){b.textContent=`V${remote.version} disponible…`;setTimeout(()=>location.reload(),700)}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
  $('v87Reload').onclick=()=>location.reload();
  $('v87Improve').onclick=()=>{const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
 }
