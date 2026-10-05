@@ -54,14 +54,20 @@ jobs:
           node --check v824-digestive-atlas.js
           node --check v826-changelog.js
           node --check v821-resource-audit.js
+          node --check v828-revision-clean.js
+          node --check v828-changelog.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
           node --check tests/pwa-install.mjs
           node --check tests/resource-sync-v821.mjs
+          node --check tests/button-audit.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
+
+      - name: Audit du câblage des boutons
+        run: node tests/button-audit.mjs
 
       - name: Audit des rattachements de cours
         run: node tests/course-audit.mjs
