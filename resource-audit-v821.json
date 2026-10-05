@@ -1,0 +1,41 @@
+{
+  "version": "8.21",
+  "auditedAt": "2026-10-05",
+  "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
+  "driveSourceOfTruth": {
+    "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
+    "label": "IFSI - Cours"
+  },
+  "mode": "snapshot_guard",
+  "note": "Contrôle automatique de l’application par rapport au dernier inventaire Drive validé.",
+  "expectedTotals": {
+    "courses": 35,
+    "sheets": 43,
+    "infographics": 127,
+    "vocals": 29,
+    "v820QcmImported": 965,
+    "v820PackFirst": 12,
+    "v820PackLast": 34,
+    "hdAtlasBoards": 32
+  },
+  "anatomyFolderContracts": {
+    "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
+    "systeme_urinaire": "1ZgkUKDhaso4y5LOlD7bTTXzPJoCT0yUd",
+    "systeme_endocrinien": "1Upr6-m9pjEqt4ciTLnV6C-JPy-X9uZsh",
+    "systeme_immunitaire": "10nRAWXRz5OzhmJCGKEFXFPTxC1GXCdXI",
+    "systeme_nerveux": "1EFCKO8WGeGuKb4lT0gwwNhf02oiNoYWg",
+    "systeme_digestif": "1XjNFIi2pZnCn3qr0CzfMPJ82ArQbwVgz",
+    "appareil_locomoteur": "1Ujbepr-LABiIaeLRsGJQYlA8FBzrcprI"
+  },
+  "resourceRules": {
+    "anatomyFolder": "06 - Planches anatomiques",
+    "infographicsFolder": "04 - Infographies",
+    "qcmFolder": "03 - QCM",
+    "sheetsFolder": "02 - Fiches de révision",
+    "vocalsFolder": "05 - Vocaux",
+    "archivesPrefix": "99 -",
+    "strictAnatomySeparation": true,
+    "explicitCourseId": true,
+    "duplicateDriveIdsAllowed": false
+  }
+}
