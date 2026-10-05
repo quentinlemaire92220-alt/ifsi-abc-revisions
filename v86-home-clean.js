@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.26', $=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.28', $=id=>document.getElementById(id);
 const DARK='ifsiabc_v72_dark',TIMER='ifsiabc_v72_timer';
 function css(){if($('v86css'))return;const s=document.createElement('style');s.id='v86css';s.textContent=`
 body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{display:none!important}
@@ -25,7 +25,7 @@ function tools(){
  <button id="v86Search" class="v86-tool"><span class="i">🔎</span><span><b>Rechercher</b><small>Cours, QCM et ressources</small></span></button>
  <button id="v86Settings" class="v86-tool"><span class="i">⚙️</span><span><b>Réglages</b><small>Affichage et application</small></span></button>`;
  const today=host.querySelector('.v76-today');today?.insertAdjacentElement('afterend',box)}
- $('v86Search').onclick=()=>{window.IFSI_V81?.showHub?.();setTimeout(()=>{const el=$('v81S');el?.scrollIntoView({behavior:'smooth',block:'center'});el?.focus()},180)};
+ $('v86Search').onclick=()=>{window.IFSI_V81?.showHub?.();setTimeout(()=>{if(window.IFSI_V828?.openSearch)return window.IFSI_V828.openSearch();$('v828SearchToggle')?.click();const el=$('v81S');el?.scrollIntoView({behavior:'smooth',block:'center'});el?.focus()},180)};
  $('v86Settings').onclick=openSettings;
 }
 function dialog(){
@@ -33,13 +33,13 @@ function dialog(){
  <div class="row"><div><h3>⚙️ Réglages</h3><div class="small">Options locales de l’application</div></div><button id="v86Close" class="btn outline">Fermer</button></div>
  <label class="v86-setting"><span><b>🌙 Mode sombre</b><small>Enregistré sur cet appareil</small></span><input id="v86Dark" type="checkbox"></label>
  <label class="v86-setting"><span><b>⏱️ Chronomètre QCM</b><small>Afficher le temps pendant les séries</small></span><input id="v86Timer" type="checkbox"></label>
- <div class="v86-about"><b>IFSI ABC Révisions — V8.25</b><div class="small" style="margin-top:4px">Accueil simplifié. Les nouveautés techniques ne sont plus affichées sur la page d’accueil.</div></div>
+ <div class="v86-about"><b>IFSI ABC Révisions — V${V}</b><div class="small" style="margin-top:4px">Accueil simplifié. Les nouveautés techniques ne sont plus affichées sur la page d’accueil.</div></div>
  <div class="v86-sheet-actions"><button id="v86Improve" class="btn outline">💡 Amélioration</button><button id="v86Update" class="btn primary">↻ Vérifier la mise à jour</button></div>
  </div>`;document.body.appendChild(d);
  $('v86Close').onclick=()=>d.close();
  $('v86Dark').onchange=e=>{localStorage.setItem(DARK,e.target.checked?'1':'0');document.body.classList.toggle('v72-dark',e.target.checked)};
  $('v86Timer').onchange=e=>localStorage.setItem(TIMER,e.target.checked?'1':'0');
- $('v86Improve').onclick=()=>{d.close();const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
+ $('v86Improve').onclick=()=>{d.close();const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>x.id!=='v86Improve'&&x.id!=='v87Improve'&&/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
  $('v86Update').onclick=async()=>{const b=$('v86Update');b.textContent='Vérification…';try{const r=await navigator.serviceWorker.getRegistration();if(r)await r.update();b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>b.textContent='↻ Vérifier la mise à jour',1800)};
  return d;
 }
