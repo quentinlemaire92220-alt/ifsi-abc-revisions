@@ -20,6 +20,33 @@ function idsForResources(){
  return out
 }
 function duplicates(items){const m=new Map();for(const x of items){if(!m.has(x.id))m.set(x.id,[]);m.get(x.id).push(x)}return [...m.entries()].filter(([,v])=>v.length>1).map(([id,v])=>({id,items:v}))}
+function answerBalanceAudit(qs){
+ const groups=new Map(),letters='ABCDE';
+ for(const q of qs){
+  const id=q.courseId||q.course||'sans_course';
+  if(!groups.has(id))groups.set(id,{id,label:q.course||id,n:0,pos:[0,0,0,0,0],byCount:{1:[],2:[],3:[],4:[]}});
+  const g=groups.get(id),a=Array.isArray(q.answers)?q.answers.slice().sort((x,y)=>x-y):[];
+  if(!a.length||a.length>4)continue;g.n++;for(const x of a)if(x>=0&&x<5)g.pos[x]++;
+  g.byCount[a.length].push(a.map(x=>letters[x]).join(''));
+ }
+ const flagged=[];
+ for(const g of groups.values()){
+  if(g.n<10)continue;
+  const reasons=[],dominant=[];
+  for(const k of [1,2,3,4]){
+   const arr=g.byCount[k];if(arr.length<6)continue;
+   const m={};for(const x of arr)m[x]=(m[x]||0)+1;
+   const [combo,count]=Object.entries(m).sort((a,b)=>b[1]-a[1])[0]||['',0];
+   const share=count/arr.length;
+   const threshold=k===4?.55:.45;
+   if(share>=threshold){reasons.push(`${combo} = ${count}/${arr.length} des questions à ${k} bonne(s) réponse(s)`);dominant.push({k,combo,count,total:arr.length,share})}
+  }
+  const tot=g.pos.reduce((a,b)=>a+b,0),mean=tot/5,min=Math.min(...g.pos),max=Math.max(...g.pos);
+  if(g.n>=25&&(min===0||max>mean*1.65))reasons.push(`positions A-E déséquilibrées : ${g.pos.join(' / ')}`);
+  if(reasons.length)flagged.push({id:g.id,label:g.label,n:g.n,pos:g.pos,reasons,dominant,severity:reasons.some(r=>/= \d+\/\d+/.test(r)&&/ = /.test(r))?'à corriger':'à surveiller'});
+ }
+ return {courses:groups.size,flagged:flagged.sort((a,b)=>b.n-a.n)};
+}
 function current(){
  const reg=window.IFSI_V741?.getRegistry?.()?.courses||[];
  const audit=window.IFSI_V741?.audit?.()||null;
@@ -31,7 +58,7 @@ function current(){
  const infoIds=new Set(resources.filter(x=>x.type==='infographie').map(x=>x.id)),anatomyIds=new Set(resources.filter(x=>x.type==='anatomie').map(x=>x.id));
  const overlap=[...infoIds].filter(x=>anatomyIds.has(x));
  const qcmNoCourse=qs.filter(x=>!x.courseId).length;
- return {courses:reg.length,qcm:qs.length,sheets:s.length,infographics:i.length,vocals:v.length,atlas:a.length,audit,invalid,duplicates:dup,anatomyInfoOverlap:overlap,qcmNoCourse};
+ const balance=answerBalanceAudit(qs);return {courses:reg.length,qcm:qs.length,sheets:s.length,infographics:i.length,vocals:v.length,atlas:a.length,audit,invalid,duplicates:dup,anatomyInfoOverlap:overlap,qcmNoCourse,balance};
 }
 function evaluate(c){
  const errors=[],warnings=[],exp=snapshot?.expectedTotals||{};
@@ -43,7 +70,7 @@ function evaluate(c){
  if(c.duplicates.length)errors.push(`${c.duplicates.length} Drive ID dupliqué(s) entre catalogues actifs`);
  if(c.anatomyInfoOverlap.length)errors.push(`${c.anatomyInfoOverlap.length} fichier(s) partagé(s) entre Infographies et Anatomie`);
  if(c.qcmNoCourse)warnings.push(`${c.qcmNoCourse} QCM sans courseId explicite après chargement`);
- if(c.audit?.warnings)warnings.push(`${c.audit.warnings} ressource(s) non rattachée(s) signalée(s) par le registre`);
+ if(c.audit?.warnings)warnings.push(`${c.audit.warnings} ressource(s) non rattachée(s) signalée(s) par le registre`);if(c.balance?.flagged?.length)warnings.push(`${c.balance.flagged.length} cours présentent encore un biais de position des bonnes réponses`);
  return {ok:!errors.length,errors,warnings};
 }
 async function loadSnapshot(){if(snapshot)return snapshot;try{const r=await fetch('./resource-audit-v821.json',{cache:'no-store'});if(!r.ok)throw new Error('snapshot indisponible');snapshot=await r.json()}catch(e){snapshot={version:V,auditedAt:'inconnu',expectedTotals:{}}}return snapshot}
@@ -74,7 +101,7 @@ function inject(){const grid=document.querySelector('#settings87 .v87-grid');if(
 <div class="v821-top"><div><h3 style="margin:0 0 4px">🔎 Audit catalogue ↔ inventaire Drive</h3><p style="margin:0;color:var(--muted);font-size:12px">Contrôle local contre le dernier inventaire Drive validé (pas un scan Drive en direct).</p></div><button id="v821Run" class="btn outline">Auditer</button></div>
 <div id="v821Status" class="v821-status" style="margin-top:10px"></div><div id="v821Meta" class="small" style="margin-top:4px"></div>
 <div id="v821Counts" class="v821-counts"></div><div id="v821Issues" class="v821-issues">L’audit vérifie les courseId, les doublons Drive, les catalogues et la séparation Infographies / Anatomie.</div>
-<details style="margin-top:10px"><summary><b>Détail par cours</b></summary><div id="v821Courses" style="margin-top:7px"></div></details>`;
+<details style="margin-top:10px"><summary><b>Équilibre des réponses QCM</b></summary><div id="v821Balance" style="margin-top:7px"></div></details><details style="margin-top:10px"><summary><b>Détail par cours</b></summary><div id="v821Courses" style="margin-top:7px"></div></details>`;
  grid.appendChild(d);$('v821Run').onclick=async()=>{const b=$('v821Run');b.disabled=true;b.textContent='Audit…';await runAudit();b.textContent='Relancer';b.disabled=false};render();setTimeout(runAudit,150);return true}
 function init(){css();return inject()}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
