@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.26',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const V='8.27',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let snapshot=null,last=null;
 const did=u=>{const m=String(u||'').match(/\/d\/([^/]+)/);return m?.[1]||null};
 const atlasItems=()=>[
@@ -23,27 +23,28 @@ function duplicates(items){const m=new Map();for(const x of items){if(!m.has(x.i
 function answerBalanceAudit(qs){
  const groups=new Map(),letters='ABCDE';
  for(const q of qs){
-  const id=q.courseId||q.course||'sans_course';
-  if(!groups.has(id))groups.set(id,{id,label:q.course||id,n:0,pos:[0,0,0,0,0],byCount:{1:[],2:[],3:[],4:[]}});
-  const g=groups.get(id),a=Array.isArray(q.answers)?q.answers.slice().sort((x,y)=>x-y):[];
-  if(!a.length||a.length>4)continue;g.n++;for(const x of a)if(x>=0&&x<5)g.pos[x]++;
-  g.byCount[a.length].push(a.map(x=>letters[x]).join(''));
+  const id=q.courseId||q.course||'sans_course',n=Array.isArray(q.choices)?q.choices.length:0,a=Array.isArray(q.answers)?q.answers.slice().sort((x,y)=>x-y):[];
+  if(n<2||n>5||!a.length||a.length>4||a.some(x=>x<0||x>=n))continue;
+  if(!groups.has(id))groups.set(id,{id,label:q.course||id,n:0,formats:{}});
+  const g=groups.get(id);g.n++;
+  if(!g.formats[n])g.formats[n]={nq:0,pos:Array(n).fill(0),byCount:{1:[],2:[],3:[],4:[]}};
+  const f=g.formats[n];f.nq++;for(const x of a)f.pos[x]++;f.byCount[a.length].push(a.map(x=>letters[x]).join(''));
  }
  const flagged=[];
  for(const g of groups.values()){
-  if(g.n<10)continue;
-  const reasons=[],dominant=[];
-  for(const k of [1,2,3,4]){
-   const arr=g.byCount[k];if(arr.length<6)continue;
-   const m={};for(const x of arr)m[x]=(m[x]||0)+1;
-   const [combo,count]=Object.entries(m).sort((a,b)=>b[1]-a[1])[0]||['',0];
-   const share=count/arr.length;
-   const threshold=k===4?.55:.45;
-   if(share>=threshold){reasons.push(`${combo} = ${count}/${arr.length} des questions à ${k} bonne(s) réponse(s)`);dominant.push({k,combo,count,total:arr.length,share})}
+  if(g.n<10)continue;const reasons=[];
+  for(const [nKey,f] of Object.entries(g.formats)){
+   const n=Number(nKey);
+   for(const k of [1,2,3,4]){
+    const arr=f.byCount[k];if(arr.length<6||k===n)continue;
+    const m={};for(const x of arr)m[x]=(m[x]||0)+1;
+    const [combo,count]=Object.entries(m).sort((a,b)=>b[1]-a[1])[0]||['',0],share=count/arr.length,threshold=k===4?.55:.45;
+    if(share>=threshold)reasons.push(`${n} choix : ${combo} = ${count}/${arr.length} des questions à ${k} bonne(s) réponse(s)`);
+   }
+   const tot=f.pos.reduce((a,b)=>a+b,0),mean=tot/n,min=Math.min(...f.pos),max=Math.max(...f.pos);
+   if(f.nq>=20&&(min===0||max>mean*1.65))reasons.push(`${n} choix : positions ${letters.slice(0,n).split('').join('-')} déséquilibrées : ${f.pos.join(' / ')}`);
   }
-  const tot=g.pos.reduce((a,b)=>a+b,0),mean=tot/5,min=Math.min(...g.pos),max=Math.max(...g.pos);
-  if(g.n>=25&&(min===0||max>mean*1.65))reasons.push(`positions A-E déséquilibrées : ${g.pos.join(' / ')}`);
-  if(reasons.length)flagged.push({id:g.id,label:g.label,n:g.n,pos:g.pos,reasons,dominant,severity:reasons.some(r=>/= \d+\/\d+/.test(r)&&/ = /.test(r))?'à corriger':'à surveiller'});
+  if(reasons.length)flagged.push({id:g.id,label:g.label,n:g.n,reasons});
  }
  return {courses:groups.size,flagged:flagged.sort((a,b)=>b.n-a.n)};
 }
