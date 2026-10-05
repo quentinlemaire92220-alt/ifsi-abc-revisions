@@ -52,10 +52,12 @@ jobs:
           node --check v822-nervous-atlas.js
           node --check v823-cardiovascular-atlas.js
           node --check v824-digestive-atlas.js
+          node --check v829-locomotor-atlas.js
           node --check v826-changelog.js
           node --check v821-resource-audit.js
           node --check v828-revision-clean.js
           node --check v828-changelog.js
+          node --check v829-changelog.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
