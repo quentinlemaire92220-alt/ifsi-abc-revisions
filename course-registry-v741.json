@@ -221,6 +221,19 @@
       "ue": "B1"
     },
     {
+      "id": "traumatologie",
+      "label": "Traumatologie et fractures",
+      "domain": "B",
+      "ue": "B1",
+      "parentId": "appareil_locomoteur",
+      "aliases": [
+        "Traumatologie",
+        "Traumatologie et fractures",
+        "Traumatologie Appareil Locomoteur"
+      ],
+      "showInCourses": false
+    },
+    {
       "id": "histoire_profession_infirmiere",
       "label": "Histoire et identité de la profession infirmière",
       "domain": "A",
