@@ -34,7 +34,7 @@ const infos=json('infographics.json');
 const byCourse=Object.fromEntries(courses.map(c=>[c.id,{label:c.label,qcm:0,vocals:0,sheets:0,infographics:0}]));
 const errors=[];
 
-assert(registry.version==='8.11',`Version registre inattendue: ${registry.version}`);
+assert(registry.version==='8.23',`Version registre inattendue: ${registry.version}`);
 assert(registry.sourceOfTruth?.driveRootId==='1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae','Racine Drive canonique absente');
 assert(registry.resourcePolicy?.requireExplicitCourseId===true,'Politique courseId explicite absente');
 assert(courseMap.get('calculs_doses_mathematiques')?.domain==='E','Calculs de doses doit être classé dans le domaine E');
@@ -81,6 +81,7 @@ const forbiddenLegacy=new Set([
 for(const id of allIds)if(forbiddenLegacy.has(id))errors.push(`Ancienne copie réintroduite dans le catalogue: ${id}`);
 
 const count=(id,key)=>byCourse[id]?.[key]||0;
+if(count('systeme_cardiovasculaire','sheets')<1)errors.push('Système cardiovasculaire: fiche manquante');
 if(count('systeme_digestif','sheets')<2)errors.push('Système digestif incomplet: moins de 2 fiches');
 if(count('systeme_digestif','infographics')<9)errors.push('Système digestif incomplet: moins de 9 infographies');
 if(count('appareil_locomoteur','sheets')<2)errors.push('Système locomoteur: anatomie/traumatologie manquante');
