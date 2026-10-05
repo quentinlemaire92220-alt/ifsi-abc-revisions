@@ -113,7 +113,7 @@ function patchShow(){
     return old(id)
   };showPatched=true
 }
-let expandedSystem='systeme_respiratoire';
+let expandedSystem='';
 const RESP_BOARDS=[
   {id:'resp003',index:1,title:'Voies respiratoires',subtitle:'Fosses nasales, cavité buccale, pharynx, épiglotte, larynx, trachée et bronches principales',src:'https://drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ&sz=w1200',fallback:'./resp-official-overview-learn.jpg?v=14',generated:true,hd:true},
   {id:'resp013',index:2,title:'Arbre bronchique',subtitle:'Trachée, bronches principales, lobaires, segmentaires, bronchioles et zone respiratoire',src:'https://drive.google.com/thumbnail?id=1G2agsVxnMlIeksAdV0-vguUE5bRKQ65Y&sz=w1200',fallback:'./resp-official-bronchial-learn.jpg?v=14',generated:true,hd:true,testReady:false},
@@ -147,9 +147,13 @@ function boardRow(def,b){
   return `<div class="v82-board"><div class="v82-board-icon">${def.icon}</div><div><h4>${E(b.title)}</h4><div class="small">${E(course(def.id).label)}</div></div><div class="v82-board-actions"><a class="btn primary" href="${E(b.url)}" target="_blank" rel="noopener">Voir la planche ↗</a></div></div>`
 }
 function catalogCard(def,term){
-  const c=course(def.id),boards=boardsFor(def),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
-  if(term&&!filtered.length&&!normCatalog(c.label).includes(term))return '';
-  const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;if(!boards.length)return '';
+  const c=course(def.id),boards=boardsFor(def),hay=normCatalog(`${c.label} ${def.subtitle||''}`),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
+  if(term&&!filtered.length&&!hay.includes(term))return '';
+  const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;
+  if(!boards.length){
+    const dedicated=['systeme_cardiovasculaire','systeme_endocrinien','systeme_nerveux','systeme_immunitaire'].includes(def.id);
+    return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">0 planche</span><span class="small">${E(def.subtitle)}</span></div></div></div><span class="badge" style="background:${dedicated?'#eef4ff':'#fff2d9'};color:${dedicated?'#315a9b':'#805900'}">${dedicated?'Chargement…':'À compléter'}</span></div></section>`
+  }
   const interactive=['systeme_respiratoire','systeme_urinaire'].includes(def.id);const content=isOpen?(interactive?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
   return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${content}</section>`
 }
