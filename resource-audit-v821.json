@@ -1,5 +1,5 @@
 {
-  "version": "8.24",
+  "version": "8.25",
   "auditedAt": "2026-10-05",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "snapshot_guard",
-  "note": "Contrôle automatique de l’application par rapport à l’inventaire Drive validé après intégration du système digestif V8.24.",
+  "note": "Contrôle automatique après intégration des infections pulmonaires bactériennes et des infections respiratoires virales en V8.25.",
   "expectedTotals": {
-    "courses": 37,
-    "sheets": 44,
+    "courses": 39,
+    "sheets": 46,
     "infographics": 133,
     "vocals": 29,
-    "v820QcmImported": 1018,
+    "v820QcmImported": 1118,
     "v820PackFirst": 12,
-    "v820PackLast": 35,
+    "v820PackLast": 37,
     "hdAtlasBoards": 60,
-    "qcmRuntimeMin": 1453
+    "qcmRuntimeMin": 1553
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
