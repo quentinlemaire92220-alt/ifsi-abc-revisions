@@ -1,6 +1,15 @@
 (()=>{'use strict';
 function patch822(){
  const box=document.getElementById('v742Changelog');if(!box)return false;
+ if(!document.getElementById('v824Change')){
+  const host=box.querySelector('details div.small');if(!host)return false;
+  const span=document.createElement('span');span.id='v824Change';
+  const b=document.createElement('b');b.textContent='V8.24 - Atlas anatomique du système digestif';
+  span.appendChild(b);span.appendChild(document.createElement('br'));
+  span.appendChild(document.createTextNode('12 planches HD : vue générale, voies digestives supérieures, estomac, cadre hépato-bilio-pancréatique, intestins, péritoine, aorte, vascularisation, dents, segments hépatiques, régions abdominales et paroi abdominale.'));
+  span.appendChild(document.createElement('br'));span.appendChild(document.createElement('br'));
+  host.insertBefore(span,host.firstChild);
+ }
  if(!document.getElementById('v8231Change')){
   const host=box.querySelector('details div.small');if(!host)return false;
   const span=document.createElement('span');span.id='v8231Change';
