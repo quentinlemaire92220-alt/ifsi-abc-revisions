@@ -1,7 +1,7 @@
 (()=>{'use strict';
 function patch826(){
  const box=document.getElementById('v742Changelog');if(!box)return false;
- const badge=box.querySelector('.badge');if(badge)badge.textContent='V8.27';
+ const badge=box.querySelector('.badge');if(badge)badge.textContent='V8.28';
  if(document.getElementById('v826Change'))return true;
  const host=box.querySelector('details div.small');if(!host)return false;
  const span=document.createElement('span');span.id='v826Change';
