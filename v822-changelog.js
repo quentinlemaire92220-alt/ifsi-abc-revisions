@@ -7,7 +7,7 @@ function patch822(){
   const span=document.createElement('span');span.id='v822Change';
   const b=document.createElement('b');b.textContent='V8.22 - Atlas anatomique du systeme nerveux';
   span.appendChild(b);span.appendChild(document.createElement('br'));
-  span.appendChild(document.createTextNode('7 planches HD. Infographies separees. Zoom, favoris et Voir/Masquer disponibles.'));
+  span.appendChild(document.createTextNode('8 planches HD. Infographies separees. Zoom, favoris et Voir/Masquer disponibles.'));
   span.appendChild(document.createElement('br'));span.appendChild(document.createElement('br'));
   host.insertBefore(span,host.firstChild);
  }
