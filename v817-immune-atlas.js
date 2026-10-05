@@ -47,5 +47,5 @@ function buildCatalogSection(){const root=$('v82AnatomyBody');if(!root||!matches
 function refreshCatalog(){const sys=$('v82AnatomyBody')?.querySelector('[data-v82system="systeme_immunitaire"]');if(sys)sys.dataset.v817='';buildCatalogSection()}
 function init(){css();ensure();buildCatalogSection();const root=$('v82AnatomyBody');if(root&&!root.dataset.v817obs){root.dataset.v817obs='1';new MutationObserver(()=>requestAnimationFrame(buildCatalogSection)).observe(root,{childList:true,subtree:true})}}
 let tries=0;const t=setInterval(()=>{tries++;init();if($('v82AnatomyBody')||tries>240)clearInterval(t)},120);
-window.addEventListener('ifsi:v741-ready',()=>requestAnimationFrame(init));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('v817Zoom')?.classList.contains('hidden'))closeZoom()});window.IFSI_V816={version:V,atlas:()=>ATLAS.map(x=>({...x})),show,decorateCatalog:buildCatalogSection};
+window.addEventListener('ifsi:v741-ready',()=>requestAnimationFrame(init));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('v817Zoom')?.classList.contains('hidden'))closeZoom()});window.IFSI_V817={version:V,atlas:()=>ATLAS.map(x=>({...x})),show,decorateCatalog:buildCatalogSection};
 })();
