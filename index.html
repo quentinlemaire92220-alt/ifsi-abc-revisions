@@ -48,4 +48,4 @@ let reloading=false;
 navigator.serviceWorker.addEventListener('controllerchange',()=>{if(reloading)return;reloading=true;const k='ifsiabc_sw823_reload';if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,'1');location.reload()}});
 window.addEventListener('load',async()=>{try{const r=await navigator.serviceWorker.register('./sw.js?v=823',{updateViaCache:'none'});await r.update()}catch(e){console.warn('SW update',e)}});
 }boot();
-</script><script src="./v816-endocrine-atlas.js?v=816"></script><script src="./v817-immune-atlas.js?v=817"></script><script src="./v822-nervous-atlas.js?v=822"></script><script src="./v822-changelog.js?v=822"></script></body></html>
+</script><script src="./v816-endocrine-atlas.js?v=816"></script><script src="./v817-immune-atlas.js?v=817"></script><script src="./v822-nervous-atlas.js?v=822"></script><script src="./v823-cardiovascular-atlas.js?v=823"></script><script src="./v822-changelog.js?v=822"></script></body></html>
