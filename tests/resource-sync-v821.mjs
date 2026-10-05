@@ -34,24 +34,33 @@ for(let n=snap.expectedTotals.v820PackFirst;n<=snap.expectedTotals.v820PackLast;
 assert(v820.length===snap.expectedTotals.v820QcmImported,`QCM V8.20: ${v820.length}/${snap.expectedTotals.v820QcmImported}`);
 for(const q of v820)assert(q.courseId&&ids.has(q.courseId),`QCM V8.20 courseId invalide: ${q.id}`);
 
-const atlasFiles=[];
-for(const p of ['v814-respiratory-atlas.js','v815-urinary-atlas.js','v816-endocrine-atlas.js','v817-immune-atlas.js']){
+const atlasSpecs=[
+ ['v814-respiratory-atlas.js','resp_atlas_'],
+ ['v815-urinary-atlas.js','urinary_atlas_'],
+ ['v816-endocrine-atlas.js','endo_atlas_'],
+ ['v817-immune-atlas.js','immu_atlas_']
+];
+let atlasBoardCount=0;const atlasFiles=[];
+for(const [p,prefix] of atlasSpecs){
  const src=read(p);
- const found=[...src.matchAll(/\bfile:'([^']+)'/g)].map(m=>m[1]);
- assert(found.length===8,`${p}: ${found.length}/8 planches HD`);
- atlasFiles.push(...found);
+ const count=[...src.matchAll(new RegExp("id:'"+prefix,"g"))].length;
+ assert(count===8,`${p}: ${count}/8 planches HD`);
+ atlasBoardCount+=count;
+ for(const m of src.matchAll(/drive\.google\.com\/thumbnail\?id=([^&'"\\]+)/g))atlasFiles.push(m[1]);
+ for(const m of src.matchAll(/\bfile:'([^']+)'/g))atlasFiles.push(m[1]);
 }
-assert(atlasFiles.length===snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasFiles.length}/${snap.expectedTotals.hdAtlasBoards}`);
+const uniqueAtlasFiles=[...new Set(atlasFiles)];
+assert(atlasBoardCount===snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards}`);
 
 const infoIds=new Set(infos.map(x=>driveId(x.url)).filter(Boolean));
-const overlap=atlasFiles.filter(id=>infoIds.has(id));
+const overlap=uniqueAtlasFiles.filter(id=>infoIds.has(id));
 assert(overlap.length===0,`Infographies réutilisées comme planches anatomiques: ${overlap.join(', ')}`);
 
 const active=[
  ...sheets.map(x=>({type:'fiche',id:driveId(x.url)})),
  ...infos.map(x=>({type:'infographie',id:driveId(x.url)})),
  ...vocals.map(x=>({type:'vocal',id:x.driveId})),
- ...atlasFiles.map(id=>({type:'anatomie',id}))
+ ...uniqueAtlasFiles.map(id=>({type:'anatomie',id}))
 ].filter(x=>x.id);
 const seen=new Map();
 for(const x of active){if(!seen.has(x.id))seen.set(x.id,[]);seen.get(x.id).push(x.type)}
@@ -63,5 +72,5 @@ assert(Object.keys(contracts).length===7,'Contrats de dossiers 06 incomplets');
 assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,'Dossiers 06 dupliqués dans le snapshot');
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
 
-console.log(`✅ V8.21 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasFiles.length} planches HD`);
+console.log(`✅ V8.21 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasBoardCount} planches HD`);
 console.log('✅ Séparation stricte Infographies / Anatomie et unicité des Drive IDs contrôlées');
