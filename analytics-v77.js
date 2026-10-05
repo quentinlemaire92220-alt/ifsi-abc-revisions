@@ -72,18 +72,13 @@ function watchFinish(){
   setInterval(tick,2000);
 }
 function privacyUI(){
-  if($('v77Privacy'))return;
-  const host=$('v76More')||[...document.querySelectorAll('#home .card')].pop();if(!host)return;
-  const box=document.createElement('div');box.id='v77Privacy';box.className='small';box.style.cssText='margin-top:12px;padding:10px 12px;border:1px solid #e6e0ef;border-radius:12px;line-height:1.45';
-  box.innerHTML=`<b>📊 Statistiques anonymes</b><br><span id="v77PrivacyText"></span><br><button id="v77PrivacyToggle" class="btn outline" type="button" style="margin-top:8px;padding:7px 10px"></button>`;
-  host.appendChild(box);
-  const refresh=()=>{const on=enabled();$('v77PrivacyText').textContent=on?'L’application envoie uniquement des événements d’usage (ouverture, QCM, ressources, vocaux), sans nom, email ni score.':'Le suivi statistique est désactivé sur cet appareil.';$('v77PrivacyToggle').textContent=on?'Désactiver les statistiques':'Activer les statistiques'};
-  $('v77PrivacyToggle').onclick=()=>{localStorage.setItem(OPTOUT,enabled()?'1':'0');refresh()};refresh();
+  // V8.19.1 : le contrôle des statistiques vit uniquement dans Paramètres > Confidentialité.
+  $('v77Privacy')?.remove();
 }
 function init(){
   track('app_open',{resource_type:'app',resource_id:'home'});
   installClickTracking();watchFinish();
-  let n=0,t=setInterval(()=>{privacyUI();if($('v77Privacy')||++n>80)clearInterval(t)},150);
+  privacyUI();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 window.IFSI_V77={version:VERSION,track,enabled,setEnabled:v=>{localStorage.setItem(OPTOUT,v?'0':'1')}};
