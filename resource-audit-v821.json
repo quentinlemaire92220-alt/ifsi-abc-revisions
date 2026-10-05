@@ -1,5 +1,5 @@
 {
-  "version": "8.21",
+  "version": "8.23",
   "auditedAt": "2026-10-05",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,7 +9,7 @@
   "mode": "snapshot_guard",
   "note": "Contrôle automatique de l’application par rapport au dernier inventaire Drive validé.",
   "expectedTotals": {
-    "courses": 36,
+    "courses": 37,
     "sheets": 43,
     "infographics": 127,
     "vocals": 29,
@@ -21,6 +21,7 @@
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
+    "systeme_cardiovasculaire": "1Pp_0G6NTOjrN-5y2dZfQSPeY6wx4Bwzq",
     "systeme_urinaire": "1ZgkUKDhaso4y5LOlD7bTTXzPJoCT0yUd",
     "systeme_endocrinien": "1Upr6-m9pjEqt4ciTLnV6C-JPy-X9uZsh",
     "systeme_immunitaire": "10nRAWXRz5OzhmJCGKEFXFPTxC1GXCdXI",
