@@ -12,7 +12,7 @@ const infos=json('infographics.json');
 const vocals=json('vocals.json');
 const ids=new Set(registry.map(x=>x.id));
 
-assert(snap.version==='8.23','Snapshot audit ≠ V8.23');
+assert(snap.version==='8.24','Snapshot audit ≠ V8.24');
 assert(snap.driveSourceOfTruth?.id==='1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae','Racine Drive audit inattendue');
 assert(registry.length===snap.expectedTotals.courses,`Cours: ${registry.length}/${snap.expectedTotals.courses}`);
 assert(sheets.length===snap.expectedTotals.sheets,`Fiches: ${sheets.length}/${snap.expectedTotals.sheets}`);
@@ -40,7 +40,8 @@ const atlasSpecs=[
  ['v816-endocrine-atlas.js','endo_atlas_',8],
  ['v817-immune-atlas.js','immu_atlas_',8],
  ['v822-nervous-atlas.js','nerv_atlas_',8],
- ['v823-cardiovascular-atlas.js','cardio_atlas_',8]
+ ['v823-cardiovascular-atlas.js','cardio_atlas_',8],
+ ['v824-digestive-atlas.js','digest_atlas_',12]
 ];
 let atlasBoardCount=0;const atlasFiles=[];
 for(const [p,prefix,expected] of atlasSpecs){
@@ -74,5 +75,5 @@ assert(Object.keys(contracts).length===8,'Contrats de dossiers 06 incomplets');
 assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,'Dossiers 06 dupliqués dans le snapshot');
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
 
-console.log(`✅ V8.23 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasBoardCount} planches HD`);
+console.log(`✅ V8.24 audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM V8.20 • ${atlasBoardCount} planches HD`);
 console.log('✅ Séparation stricte Infographies / Anatomie et unicité des Drive IDs contrôlées');
