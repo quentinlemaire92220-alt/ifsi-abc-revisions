@@ -1,9 +1,11 @@
 (()=>{'use strict';
-const V='8.16',$=id=>document.getElementById(id);
+const V='8.17',$=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const QUICK=['systeme_urinaire','systeme_respiratoire','systeme_endocrinien','biomolecules'];
 const RECENT=[
+ {id:'immune_boards_20261005',kind:'Schémas',icon:'🛡️',title:'Système immunitaire',detail:'8 planches anatomiques HD',date:'5 oct.',courseId:'systeme_immunitaire',action:'boards'},
+
  {id:'endocrine_boards_20261005',kind:'Schémas',icon:'🧪',title:'Système endocrinien',detail:'8 planches anatomiques HD',date:'5 oct.',courseId:'systeme_endocrinien',action:'boards'},
  {id:'urinary_boards_20261004',kind:'Schémas',icon:'💧',title:'Système urinaire',detail:'8 planches anatomiques (atlas urinaire)',date:'4 oct.',courseId:'systeme_urinaire',action:'boards'},
  {id:'resp_boards_20261004',kind:'Schémas',icon:'🫁',title:'Système respiratoire',detail:'8 planches anatomiques (atlas respiratoire)',date:'4 oct.',courseId:'systeme_respiratoire',action:'boards'}
