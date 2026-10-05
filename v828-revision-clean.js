@@ -90,6 +90,10 @@ function tidy(){
   if(search){ensureToggle(search,'v828SearchToggle',()=>searchOpen?'Masquer la recherche':'Ouvrir la recherche avancée',()=>searchOpen,v=>searchOpen=v)}
   return true;
 }
+function openSearch(){
+  searchOpen=true;tidy();
+  requestAnimationFrame(()=>{const el=$('v81S');el?.scrollIntoView({behavior:'smooth',block:'center'});el?.focus()});
+}
 function patchApi(){
   if(apiPatched||!window.IFSI_V81?.showHub)return false;
   const old=window.IFSI_V81.showHub;
@@ -102,5 +106,5 @@ function installObserver(){
 }
 function init(){css();patchShow();patchApi();tidy();installObserver();return !!window.IFSI_V81&&!!$('v81Body')}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>200)clearInterval(t)},80);
-window.IFSI_V828={version:V,apply:tidy};
+window.IFSI_V828={version:V,apply:tidy,openSearch};
 })();
