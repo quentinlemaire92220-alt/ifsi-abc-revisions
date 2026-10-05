@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.23',$=id=>document.getElementById(id);
+const V='8.25',$=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const QUICK=['systeme_urinaire','systeme_respiratoire','systeme_endocrinien','biomolecules'];
