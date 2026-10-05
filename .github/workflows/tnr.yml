@@ -46,6 +46,8 @@ jobs:
           node --check v87-settings.js
           node --check v813-home-discovery.js
           node --check v814-respiratory-atlas.js
+          node --check v815-urinary-atlas.js
+          node --check v816-endocrine-atlas.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
