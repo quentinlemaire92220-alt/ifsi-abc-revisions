@@ -12,7 +12,7 @@ const infos=json('infographics.json');
 const vocals=json('vocals.json');
 const ids=new Set(registry.map(x=>x.id));
 
-assert(snap.version==='8.21','Snapshot audit ≠ V8.21');
+assert(snap.version==='8.23','Snapshot audit ≠ V8.23');
 assert(snap.driveSourceOfTruth?.id==='1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae','Racine Drive audit inattendue');
 assert(registry.length===snap.expectedTotals.courses,`Cours: ${registry.length}/${snap.expectedTotals.courses}`);
 assert(sheets.length===snap.expectedTotals.sheets,`Fiches: ${sheets.length}/${snap.expectedTotals.sheets}`);
