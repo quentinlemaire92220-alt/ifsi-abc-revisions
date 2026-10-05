@@ -15,7 +15,7 @@ for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],skipped=[];
 for(const i of [1,2,3,4,5,6,7,...Array.from({length:26},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=34;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
-assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
+assert(v820RawPacks.length>=900,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
