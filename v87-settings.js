@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.15.1',$=id=>document.getElementById(id);
+const V='8.16',$=id=>document.getElementById(id);
 const K={dark:'ifsiabc_v72_dark',timer:'ifsiabc_v72_timer',analytics:'ifsiabc_analytics_optout_v1'};
 function css(){if($('v87css'))return;const s=document.createElement('style');s.id='v87css';s.textContent=`
 #v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(680px,calc(100% - 20px));display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
