@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.24',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const V='8.25',$=id=>document.getElementById(id),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let snapshot=null,last=null;
 const did=u=>{const m=String(u||'').match(/\/d\/([^/]+)/);return m?.[1]||null};
 const atlasItems=()=>[
