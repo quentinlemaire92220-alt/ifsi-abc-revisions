@@ -6,14 +6,15 @@ const atlasItems=()=>[
  ...(window.IFSI_V814?.atlas?.()||[]),
  ...(window.IFSI_V815?.atlas?.()||[]),
  ...(window.IFSI_V816?.atlas?.()||[]),
- ...(window.IFSI_V817?.atlas?.()||[])
+ ...(window.IFSI_V817?.atlas?.()||[]),
+ ...(window.IFSI_V822?.atlas?.()||[])
 ];
 function idsForResources(){
  const out=[];
  for(const x of (Array.isArray(S)?S:[])){const id=did(x.url);if(id)out.push({id,type:'fiche',courseId:x.courseId,title:x.displayTitle||x.title})}
  for(const x of (Array.isArray(I)?I:[])){const id=did(x.url);if(id)out.push({id,type:'infographie',courseId:x.courseId,title:x.displayTitle||x.title})}
  for(const x of (window.IFSI_V73?.getVocals?.()||[])){if(x.driveId)out.push({id:x.driveId,type:'vocal',courseId:x.courseId,title:x.title})}
- for(const x of atlasItems()){if(x.file)out.push({id:x.file,type:'anatomie',courseId:x.courseId||({resp:'systeme_respiratoire',urinary:'systeme_urinaire',endocrine:'systeme_endocrinien',immu:'systeme_immunitaire'}[String(x.id||'').split('_')[0]]||''),title:x.title})}
+ for(const x of atlasItems()){if(x.file)out.push({id:x.file,type:'anatomie',courseId:x.courseId||({resp:'systeme_respiratoire',urinary:'systeme_urinaire',endocrine:'systeme_endocrinien',immu:'systeme_immunitaire',nerv:'systeme_nerveux'}[String(x.id||'').split('_')[0]]||''),title:x.title})}
  return out
 }
 function duplicates(items){const m=new Map();for(const x of items){if(!m.has(x.id))m.set(x.id,[]);m.get(x.id).push(x)}return [...m.entries()].filter(([,v])=>v.length>1).map(([id,v])=>({id,items:v}))}
