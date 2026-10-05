@@ -39,7 +39,8 @@ const atlasSpecs=[
  ['v815-urinary-atlas.js','urinary_atlas_',8],
  ['v816-endocrine-atlas.js','endo_atlas_',8],
  ['v817-immune-atlas.js','immu_atlas_',8],
- ['v822-nervous-atlas.js','nerv_atlas_',8]
+ ['v822-nervous-atlas.js','nerv_atlas_',8],
+ ['v823-cardiovascular-atlas.js','cardio_atlas_',8]
 ];
 let atlasBoardCount=0;const atlasFiles=[];
 for(const [p,prefix,expected] of atlasSpecs){
