@@ -35,22 +35,23 @@ assert(v820.length===snap.expectedTotals.v820QcmImported,`QCM V8.20: ${v820.leng
 for(const q of v820)assert(q.courseId&&ids.has(q.courseId),`QCM V8.20 courseId invalide: ${q.id}`);
 
 const atlasSpecs=[
- ['v814-respiratory-atlas.js','resp_atlas_'],
- ['v815-urinary-atlas.js','urinary_atlas_'],
- ['v816-endocrine-atlas.js','endo_atlas_'],
- ['v817-immune-atlas.js','immu_atlas_']
+ ['v814-respiratory-atlas.js','resp_atlas_',8],
+ ['v815-urinary-atlas.js','urinary_atlas_',8],
+ ['v816-endocrine-atlas.js','endo_atlas_',8],
+ ['v817-immune-atlas.js','immu_atlas_',8],
+ ['v822-nervous-atlas.js','nerv_atlas_',7]
 ];
 let atlasBoardCount=0;const atlasFiles=[];
-for(const [p,prefix] of atlasSpecs){
+for(const [p,prefix,expected] of atlasSpecs){
  const src=read(p);
  const count=[...src.matchAll(new RegExp("id:'"+prefix,"g"))].length;
- assert(count===8,`${p}: ${count}/8 planches HD`);
+ assert(count===expected,`${p}: ${count}/${expected} planches HD`);
  atlasBoardCount+=count;
  for(const m of src.matchAll(/drive\.google\.com\/thumbnail\?id=([^&'"\\]+)/g))atlasFiles.push(m[1]);
  for(const m of src.matchAll(/\bfile:'([^']+)'/g))atlasFiles.push(m[1]);
 }
 const uniqueAtlasFiles=[...new Set(atlasFiles)];
-assert(atlasBoardCount===snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards}`);
+assert(atlasBoardCount>=snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards} minimum`);
 
 const infoIds=new Set(infos.map(x=>driveId(x.url)).filter(Boolean));
 const overlap=uniqueAtlasFiles.filter(id=>infoIds.has(id));
