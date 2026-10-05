@@ -49,10 +49,12 @@ jobs:
           node --check v815-urinary-atlas.js
           node --check v816-endocrine-atlas.js
           node --check v817-immune-atlas.js
+          node --check v821-resource-audit.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs
           node --check tests/pwa-install.mjs
+          node --check tests/resource-sync-v821.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
@@ -62,3 +64,6 @@ jobs:
 
       - name: Vérifier l'installation PWA Android
         run: node tests/pwa-install.mjs
+
+      - name: Audit automatique Drive ↔ application
+        run: node tests/resource-sync-v821.mjs
