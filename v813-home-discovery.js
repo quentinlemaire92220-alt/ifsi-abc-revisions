@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.19',$=id=>document.getElementById(id);
+const V='8.19.1',$=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const QUICK=['systeme_urinaire','systeme_respiratoire','systeme_endocrinien','biomolecules'];
@@ -16,8 +16,8 @@ function css(){
  if($('v813css'))return;const s=document.createElement('style');s.id='v813css';s.textContent=`
  body.v86-home #v86Tools{display:block!important}
  body.v86-home #v86Settings{display:none!important}
- .v813-wrap{display:grid;gap:12px}
- .v813-search-card,.v813-news{border:1px solid var(--line);background:var(--card);border-radius:18px}.v813-search-card{padding:14px}.v813-news{padding:0;overflow:hidden}.v813-news>summary{list-style:none;cursor:pointer;padding:13px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:900}.v813-news>summary::-webkit-details-marker{display:none}.v813-news>summary .v813-news-meta{font-size:10px;color:var(--muted);font-weight:700}.v813-news>summary .v813-chevron{transition:transform .2s}.v813-news[open]>summary .v813-chevron{transform:rotate(180deg)}
+ .v813-wrap{display:grid;grid-template-columns:1fr!important;gap:12px;width:100%}
+ .v813-search-card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:14px;width:100%}
  .v813-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
  .v813-head h3{margin:0;font-size:17px}.v813-head .btn{padding:7px 10px;font-size:11px}
  .v813-searchbox{position:relative;margin-top:10px}
@@ -30,11 +30,8 @@ function css(){
  .v813-course{border:1px solid var(--line);background:color-mix(in srgb,var(--card) 95%,#7046d9 5%);color:var(--ink);border-radius:13px;padding:10px;text-align:left;cursor:pointer;min-width:0}
  .v813-course:hover{border-color:#7a52d8}.v813-course b{display:block;font-size:12px;line-height:1.25}.v813-course small{display:block;color:var(--muted);font-size:9px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
  .v813-empty{color:var(--muted);font-size:11px;margin-top:8px}
- .v813-news-list{display:grid;gap:7px;padding:0 14px 14px}
- .v813-new{border:1px solid var(--line);background:color-mix(in srgb,var(--card) 94%,#0fa7a0 6%);color:var(--ink);border-radius:13px;padding:10px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:9px;text-align:left;cursor:pointer}
- .v813-new:hover{border-color:#0fa7a0}.v813-new .ico{font-size:21px}.v813-new b{display:block;font-size:12px}.v813-new small{display:block;color:var(--muted);font-size:9px;margin-top:2px}.v813-new .tag{font-size:9px;font-weight:900;background:#e8fff9;color:#087a73;border-radius:999px;padding:4px 7px;white-space:nowrap}
- body.v72-dark .v813-chip,body.v72-dark .v813-course,body.v72-dark .v813-new{background:#211e2a}
- @media(max-width:620px){.v813-results{grid-template-columns:1fr}.v813-head h3{font-size:15px}.v813-search-card{padding:12px}.v813-news>summary{padding:12px}.v813-news-list{padding:0 12px 12px}.v813-new{grid-template-columns:auto 1fr}.v813-new .tag{grid-column:2;justify-self:start}}
+ body.v72-dark .v813-chip,body.v72-dark .v813-course{background:#211e2a}
+ @media(max-width:620px){.v813-results{grid-template-columns:1fr}.v813-head h3{font-size:15px}.v813-search-card{padding:12px}}
  `;document.head.appendChild(s)
 }
 function registry(){return window.IFSI_V741?.getRegistry?.()?.courses||[]}
@@ -73,10 +70,9 @@ function mount(){
  const host=$('v86Tools');if(!host||host.dataset.v813==='1')return false;
  host.dataset.v813='1';host.className='v86-tools v813-wrap';
  host.innerHTML=`<section class="v813-search-card"><div class="v813-head"><div><h3>🔎 Rechercher un cours</h3><div class="small">Accès direct à une matière et à toutes ses ressources.</div></div><button id="v813AllCourses" class="btn outline" type="button">Tous les cours →</button></div><div class="v813-searchbox"><input id="v813Search" type="search" autocomplete="off" placeholder="Ex. système urinaire, biomolécules, calculs…"></div><div id="v813Quick" class="v813-quick"></div><div id="v813Results" class="v813-results"></div></section>
- <details class="v813-news" id="v813News"><summary><span>🆕 Nouveautés</span><span class="v813-news-meta">${RECENT.length} contenus récents <span class="v813-chevron">⌄</span></span></summary><div class="v813-news-list">${RECENT.map(x=>`<button class="v813-new" type="button" data-v813new="${E(x.id)}"><span class="ico">${x.icon}</span><span><b>${E(x.title)}</b><small>${E(x.detail)} • ${E(x.date)}</small></span><span class="tag">${E(x.kind)}</span></button>`).join('')}</div></details>`;
+`;
  $('v813AllCourses').onclick=()=>window.showCourses74?.();
  $('v813Search').oninput=renderResults;
- host.querySelectorAll('[data-v813new]').forEach(b=>b.onclick=()=>{const x=RECENT.find(n=>n.id===b.dataset.v813new);if(!x)return;x.action==='boards'?openBoards(x.courseId):openCourse(x.courseId)});
  renderResults();return true
 }
 function apply(){css();mount();$('v86Settings')?.remove()}
