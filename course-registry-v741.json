@@ -1,5 +1,5 @@
 {
-  "version": "8.24",
+  "version": "8.25",
   "courses": [
     {
       "id": "biomolecules",
@@ -424,6 +424,30 @@
         "Vaccination PRS",
         "PRS TD01 Vaccination"
       ]
+    },
+    {
+      "id": "infections_pulmonaires_bacteriennes",
+      "label": "Infections pulmonaires bactériennes",
+      "aliases": [
+        "Infections pulmonaires bactériennes",
+        "Infections pulmonaires bacteriennes",
+        "Pneumonies bactériennes",
+        "Tuberculose"
+      ],
+      "domain": "B",
+      "ue": "B1"
+    },
+    {
+      "id": "infections_respiratoires_virales",
+      "label": "Infections respiratoires virales",
+      "aliases": [
+        "Infections respiratoires virales",
+        "Virus respiratoires",
+        "Grippe et Covid",
+        "Grippe COVID-19"
+      ],
+      "domain": "B",
+      "ue": "B1"
     }
   ],
   "auditBaseline": {
