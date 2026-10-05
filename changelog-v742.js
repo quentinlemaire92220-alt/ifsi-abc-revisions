@@ -1,13 +1,13 @@
 (()=>{
 'use strict';
-const VERSION='8.15.1';
+const VERSION='8.16';
 const LEGACY_IDS=['v72Changelog','v73News','v74News'];
 const $=id=>document.getElementById(id);
 function removeLegacy(){for(const id of LEGACY_IDS)$(id)?.remove()}
 function currentMarkup(){return `
 <div class="row"><b>🆕 Nouveautés de l’application</b><span class="badge">V${VERSION}</span></div>
 <details style="margin-top:7px"><summary class="small" style="cursor:pointer">Voir les changements</summary><div class="small" style="margin-top:10px;line-height:1.6">
-<span id="v8151Change"><b>V8.15.1 — Correctif atlas urinaire</b><br>• Le storyboard urinaire 8 planches est remplacé par sa version corrigée.<br>• La planche 7/8 — Urètre affiche désormais les repères anatomiques femme/homme sans zones masquées, dans un cadre strictement médical et pédagogique.<br>• L’atlas conserve le zoom plein écran, les favoris et les badges Complément anatomie.<br><br></span>
+<span id="v816Change"><b>V8.16 — Atlas endocrinien HD 8 planches</b><br>• Nouveau système endocrinien dans Anatomie & Physiologie avec 8 planches individuelles HD.<br>• L’atlas couvre la vue d’ensemble, hypothalamus/hypophyse, thyroïde, parathyroïdes, surrénales, pancréas endocrine, gonades et glande pinéale.<br>• Les planches privilégient l’anatomie de l’organe ; les éléments fonctionnels restent secondaires et les compléments sont signalés par le badge « Complément anatomie ».<br>• Zoom plein écran, favoris, navigation 8/8 et stockage Drive MASTER + APP sont disponibles.<br><br></span>\n<span id="v8151Change"><b>V8.15.1 — Correctif atlas urinaire</b><br>• Le storyboard urinaire 8 planches est remplacé par sa version corrigée.<br>• La planche 7/8 — Urètre affiche désormais les repères anatomiques femme/homme sans zones masquées, dans un cadre strictement médical et pédagogique.<br>• L’atlas conserve le zoom plein écran, les favoris et les badges Complément anatomie.<br><br></span>
 <span id="v815Change"><b>V8.15 — Atlas urinaire 8 planches</b><br>• Le système urinaire passe à un atlas de 8 planches : vue d’ensemble, rein externe, coupe interne, néphron, vascularisation, vessie, urètre, formation de l’urine & miction.<br>• Les contenus complémentaires inspirés de l’arborescence Fiches IDE sont signalés par un badge « Complément anatomie ».<br>• Chaque planche s’ouvre individuellement avec favoris et zoom plein écran.<br>• L’atlas est encore en phase d’ébauche avant création des versions individuelles HD définitives.<br><br></span>
 <span id="v8141Change"><b>V8.14.1 — Correctif atlas respiratoire</b><br>• Les planches 2/8 à 8/8 utilisent maintenant chacune leur propre image individuelle.<br>• Le découpage CSS du grand storyboard a été supprimé afin d’éviter l’affichage de deux planches superposées dans une même carte.<br>• Le plein écran et le zoom chargent désormais directement l’image individuelle correspondante.<br><br></span>
 <span id="v814Change"><b>V8.14 — Atlas respiratoire 8 planches</b><br>• Le système respiratoire passe à un atlas de 8 planches inspiré de l’arborescence anatomie/physiologie validée.<br>• Les planches couvrent vue d’ensemble, voies aériennes supérieures et inférieures, poumons/plèvre/ventilation, lobes et segments, alvéoles/échanges gazeux, vascularisation pulmonaire et muscles respiratoires.<br>• Chaque planche s’ouvre individuellement dans l’application avec favoris et zoom plein écran.<br>• La planche 1 utilise une image individuelle HD ; les planches 2 à 8 sont intégrées comme ébauches provisoires issues du storyboard commun et seront remplacées progressivement par leurs versions HD individuelles.<br><br></span>
@@ -36,7 +36,7 @@ function injectUnified(){
     const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');
     if(app)app.insertAdjacentElement('beforebegin',card);else home.appendChild(card);
   }
-  const alreadyCurrent=card.querySelector('#v8151Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v8151Change';
+  const alreadyCurrent=card.querySelector('#v816Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v816Change';
   if(!alreadyCurrent){card.className='card v72-changelog';card.innerHTML=currentMarkup()}
 }
 function keepClean(){removeLegacy();injectUnified()}
