@@ -1,5 +1,5 @@
 {
-  "version": "8.23",
+  "version": "8.24",
   "auditedAt": "2026-10-05",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,16 +7,16 @@
     "label": "IFSI - Cours"
   },
   "mode": "snapshot_guard",
-  "note": "Contrôle automatique de l’application par rapport au dernier inventaire Drive validé.",
+  "note": "Contrôle automatique de l’application par rapport à l’inventaire Drive validé après intégration du système digestif V8.24.",
   "expectedTotals": {
     "courses": 37,
     "sheets": 44,
-    "infographics": 127,
+    "infographics": 133,
     "vocals": 29,
     "v820QcmImported": 1018,
     "v820PackFirst": 12,
     "v820PackLast": 35,
-    "hdAtlasBoards": 48,
+    "hdAtlasBoards": 60,
     "qcmRuntimeMin": 1453
   },
   "anatomyFolderContracts": {
