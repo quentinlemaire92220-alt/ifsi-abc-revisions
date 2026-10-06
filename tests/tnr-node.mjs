@@ -50,7 +50,7 @@ assert(new Set([...respiratory.values()].map(q=>q.theme)).size>=5,'Thématiques 
 const nervous=new Map(runtime.filter(q=>q.courseId==='systeme_nerveux').map(q=>[q.id,q]));
 assert(nervous.size===49,`Questions système nerveux inattendues: ${nervous.size}`);
 assert(JSON.stringify(nervous.get('nervous_001')?.answers)==='[1,2,3]','Réponses nervous_001 non synchronisées');
-assert(JSON.stringify(nervous.get('nervous_049')?.answers)==='[0,1,2,3]','Réponses nervous_049 non synchronisées');
+assert(JSON.stringify(nervous.get('nervous_049')?.answers)==='[0,1,2]','Réponses nervous_049 non synchronisées');
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_010 doit être autonome sans schéma externe');
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
@@ -67,7 +67,7 @@ assert(droitIntro.every(q=>['easy','medium','hard'].includes(q.difficulty)),'Niv
 const droitDiff=droitIntro.reduce((a,q)=>(a[q.difficulty]=(a[q.difficulty]||0)+1,a),{});
 assert(droitDiff.easy===14&&droitDiff.medium===24&&droitDiff.hard===12,`Répartition difficulté droit invalide: ${JSON.stringify(droitDiff)}`);
 assert(JSON.stringify(droitIntro.find(q=>q.id==='droit_intro_013')?.answers)==='[3,4]','Correction droit_intro_013 invalide');
-assert(JSON.stringify(droitIntro.find(q=>q.id==='droit_intro_050')?.answers)==='[0,2,3,4]','Correction droit_intro_050 invalide');
+assert(JSON.stringify(droitIntro.find(q=>q.id==='droit_intro_050')?.answers)==='[0,2,3]','Correction droit_intro_050 invalide');
 assert(courseIds.has('calculs_doses_mathematiques'),'CourseId calculs absent');assert(courseIds.has('ist_hors_vih'),'CourseId IST hors VIH absent');assert(runtime.filter(q=>q.courseId==='ist_hors_vih').length===56,'Banque IST hors VIH inattendue');assert(courseIds.has('systeme_digestif'),'CourseId digestif absent');assert(courseIds.has('douleur'),'CourseId douleur absent');assert(courseIds.has('epistemologie_savoirs'),'CourseId épistémologie absent');
 const infographics=json('infographics.json');
 const nervousInfos=infographics.filter(x=>x.courseId==='systeme_nerveux');
