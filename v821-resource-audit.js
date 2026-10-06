@@ -11,7 +11,8 @@ const atlasItems=()=>[
  ...(window.IFSI_V822?.atlas?.()||[]),
  ...(window.IFSI_V823?.atlas?.()||[]),
  ...(window.IFSI_V824?.atlas?.()||[]),
- ...(window.IFSI_V829?.atlas?.()||[])
+ ...(window.IFSI_V829?.atlas?.()||[]),
+ ...(window.IFSI_V8318?.atlas?.()||[])
 ];
 const atlasCourseId=x=>x.courseId||({resp:'systeme_respiratoire',urinary:'systeme_urinaire',endo:'systeme_endocrinien',immu:'systeme_immunitaire',nerv:'systeme_nerveux',cardio:'systeme_cardiovasculaire',digest:'systeme_digestif',loco:'appareil_locomoteur'}[String(x.id||'').split('_')[0]]||'');
 const anatomyDriveId=x=>rawDriveId(x.file)||did(x.file)||did(x.src)||did(x.zoomSrc);
