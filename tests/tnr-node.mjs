@@ -19,9 +19,12 @@ for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`q
 for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);override.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
+const iasTail=decodePackFile('qextra-17.txt');
+assert(iasTail.length===42,`Pack IAS qextra-17 inattendu: ${iasTail.length}/42`);
+assert(iasTail.every(q=>String(q.explanation||'').trim().length>=80),'Corrections IAS qextra-17 insuffisamment argumentées');
 assert(rawOver3<=274,`Dette QCM brute >3 réponses en hausse: ${rawOver3}/274`);
 assert(rawThreeOfFour<=935,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/935`);
-assert(rawMissingExplanation<=42,`Dette QCM brute sans explication en hausse: ${rawMissingExplanation}/42`);
+assert(rawMissingExplanation===0,`QCM bruts sans explication: ${rawMissingExplanation}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const overrideIds=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...finalOverride)}
