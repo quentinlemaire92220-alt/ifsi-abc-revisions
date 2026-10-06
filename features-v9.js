@@ -23,11 +23,29 @@ function addStyles(){
   document.head.appendChild(s);
 }
 
+function ensureSingleFavoriteButton(){
+  const quiz=document.getElementById('quiz');
+  const topRow=quiz?.querySelector('.card > .row');
+  if(!topRow)return null;
+  const buttons=[...quiz.querySelectorAll('.favQuizBtn')];
+  let b=buttons[0]||null;
+  buttons.slice(1).forEach(x=>x.remove());
+  if(!b){
+    b=document.createElement('button');
+    b.className='favQuizBtn';
+    b.type='button';
+    b.textContent='☆ Favori';
+    topRow.appendChild(b);
+  }
+  b.id='favQBtn';
+  b.onclick=toggleCurrentFavorite;
+  return b;
+}
+
 function injectUI(){
-  if(document.getElementById('favStartBtn'))return;
   const home=document.getElementById('home');
   const stack=home?.querySelector('.card.stack');
-  if(stack){
+  if(stack&&!document.getElementById('favStartBtn')){
     const errorBtn=[...stack.querySelectorAll('button')].find(b=>b.textContent.includes('Refaire mes erreurs'));
     const fav=document.createElement('button');
     fav.id='favStartBtn'; fav.className='btn secondary full'; fav.innerHTML='⭐ Réviser mes favoris <span id="favCount">(0)</span>';
@@ -39,24 +57,23 @@ function injectUI(){
     fav.insertAdjacentElement('afterend',note);
   }
   const stats=home?.querySelector('.grid');
-  if(stats){
+  if(stats&&!document.getElementById('resumeCard')){
     const card=document.createElement('div');
     card.id='resumeCard'; card.className='card resume-card hidden';
     card.innerHTML='<div class="row"><div><div class="resume-title">▶ Série en cours</div><div id="resumeText" class="small"></div></div><button id="resumeBtn" class="btn primary">Reprendre</button></div>';
     card.querySelector('#resumeBtn').onclick=resumeSession;
     stats.insertAdjacentElement('afterend',card);
   }
-  const quiz=document.getElementById('quiz');
-  const topRow=quiz?.querySelector('.card > .row');
-  if(topRow){
-    const b=document.createElement('button');
-    b.id='favQBtn'; b.className='favQuizBtn'; b.type='button'; b.textContent='☆ Favori';
-    b.onclick=toggleCurrentFavorite;
-    topRow.appendChild(b);
-  }
+  ensureSingleFavoriteButton();
 }
 
 function currentQuestion(){try{return session?.[i]||null}catch{return null}}
+function cleanMetaText(v){return String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+function updateQuizMeta(){
+  const q=currentQuestion(),meta=document.getElementById('meta');if(!q||!meta)return;
+  const course=String(q.course||'').trim(),theme=String(q.theme||'').trim();
+  meta.textContent=!theme||cleanMetaText(theme)===cleanMetaText(course)||cleanMetaText(theme)==='general'?course:`${course} • ${theme}`;
+}
 function updateFavUI(){
   const favs=readFavs();
   const c=document.getElementById('favCount'); if(c)c.textContent=`(${favs.size})`;
@@ -105,7 +122,7 @@ const originalBegin=begin;
 begin=function(a){originalBegin(a);if(session?.length)saveResume(0);updateFavUI()};
 
 const originalDraw=draw;
-draw=function(){originalDraw();updateFavUI()};
+draw=function(){originalDraw();ensureSingleFavoriteButton();updateQuizMeta();updateFavUI()};
 
 const originalNextQ=nextQ;
 nextQ=function(){const last=i>=session.length-1;originalNextQ();if(last){setResume(null);refreshResumeUI()}else saveResume(i)};
@@ -172,6 +189,8 @@ fill=function(){originalFill();updateFavUI();refreshResumeUI()};
 
 function ready(){
   injectUI();
+  ensureSingleFavoriteButton();
+  updateQuizMeta();
   updateFavUI();
   refreshResumeUI();
   const u=document.getElementById('update');
