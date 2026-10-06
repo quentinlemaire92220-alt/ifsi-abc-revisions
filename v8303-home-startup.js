@@ -19,14 +19,14 @@ function normalizeHomeState(){
 }
 function reapplyChangelog(){
  window.IFSI_CHANGELOG?.refresh?.();
- for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG','IFSI_V8305_CHANGELOG','IFSI_V8306_CHANGELOG','IFSI_V8307_CHANGELOG','IFSI_V8308_CHANGELOG','IFSI_V8309_CHANGELOG','IFSI_V8310_CHANGELOG','IFSI_V8311_CHANGELOG'])window[k]?.patch?.();
+ for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG','IFSI_V8305_CHANGELOG','IFSI_V8306_CHANGELOG','IFSI_V8307_CHANGELOG','IFSI_V8308_CHANGELOG','IFSI_V8309_CHANGELOG','IFSI_V8310_CHANGELOG','IFSI_V8311_CHANGELOG','IFSI_V8312_CHANGELOG'])window[k]?.patch?.();
 }
 function ensureImprove(){
  let card=document.querySelector('.v72-feedback');
  if(card)return card;
  const host=$('home');if(!host)return null;
  card=document.createElement('div');card.className='card v72-feedback';card.id='v8303ImproveCard';
- card.innerHTML='<b>💡 Une idée pour améliorer l’appli ?</b><div class="small" style="margin:5px 0 10px">Propose une évolution. Le message sera préparé pour le groupe « Problème technique ».</div><button id="v8303SuggestBtn" class="btn secondary full">💡 Proposer une amélioration</button>';
+ card.innerHTML='<b>💡 Une idée pour améliorer l’appli ?</b><div class="small" style="margin:5px 0 10px">Propose une évolution. Le message sera préparé pour le groupe « Technique ».</div><button id="v8303SuggestBtn" class="btn secondary full">💡 Proposer une amélioration</button>';
  const b=card.querySelector('#v8303SuggestBtn');b.onclick=()=>{
    const old=$('v72SuggestBtn');if(old&&old!==b)return old.click();
    const modal=$('v72SuggestModal');if(modal)return modal.classList.remove('hidden');
