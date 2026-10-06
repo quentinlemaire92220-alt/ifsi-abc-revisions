@@ -34,6 +34,7 @@ for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');
 for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues? selon le corrigé du QCM\s*:\s*([^.<]+)/i);if(!m)continue;const stated=(m[1].match(/[A-E]/g)||[]).join(',');const actual=(q.answers||[]).map(i=>'ABCDE'[i]).filter(Boolean).join(',');assert(stated===actual,`Corrigé textuel désynchronisé ${q.id}: ${stated||'∅'} ≠ ${actual||'∅'}`)}
 for(const q of runtime){
   assert((q.answers||[]).length<=3,`Trop de bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
+  assert((q.answers||[]).length<(q.choices||[]).length,`Toutes les propositions sont correctes dans ${q.id}`);
   assert(String(q.explanation||'').trim().length>=45,`Explication trop courte dans ${q.id}`);
   assert(!/→\s*[A-E](?:\s*,\s*[A-E])+/i.test(String(q.question||'')),`Réponse divulguée dans l'énoncé: ${q.id}`);
   assert(!(q.choices||[]).some(x=>/^\s*(?:Vrai|Faux)\s*[.:]/i.test(String(x))),`Choix révélant vrai/faux: ${q.id}`);
