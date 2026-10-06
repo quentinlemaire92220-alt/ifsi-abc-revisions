@@ -45,6 +45,9 @@ jobs:
       - name: Audit des niveaux de difficulté QCM
         run: node tests/qcm-difficulty-audit.mjs
 
+      - name: Audit des doublons QCM
+        run: node tests/qcm-duplicates-audit.mjs
+
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
 
