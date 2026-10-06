@@ -12,12 +12,14 @@ function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')
 
 let base=[];
 for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
-let extras=[],skipped=[];
+let extras=[],override=[],skipped=[];
 for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
+for(const i of [39,40,41]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p);override.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
-base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);
+base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
+if(override.length){const overrideIds=new Set(override.map(q=>q.id).filter(Boolean));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...override)}
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 const schemaIds=['resp_003','resp_013','resp_015'];
@@ -29,6 +31,7 @@ for(const id of schemaIds){assert(schemaSource.includes(id),`Schéma ${id} absen
 assert(runtime.length+schemaIds.length>=1400,`Banque trop petite: ${runtime.length+schemaIds.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
 for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');assert(typeof q.question==='string'&&q.question.trim(),'Énoncé absent');assert(Array.isArray(q.choices)&&q.choices.length>=2,`Choix invalides ${q.id}`);assert(Array.isArray(q.answers)&&q.answers.length>=1,`Réponse absente ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Réponse invalide ${q.id}`)}
+for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues? selon le corrigé du QCM\s*:\s*([^.<]+)/i);if(!m)continue;const stated=(m[1].match(/[A-E]/g)||[]).join(',');const actual=(q.answers||[]).map(i=>'ABCDE'[i]).filter(Boolean).join(',');assert(stated===actual,`Corrigé textuel désynchronisé ${q.id}: ${stated||'∅'} ≠ ${actual||'∅'}`)}
 const calcQuestions=runtime.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
 assert(calcQuestions.length>=220,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 
@@ -64,7 +67,7 @@ for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide
 
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./v86-home-clean.js','./v87-settings.js','./v813-home-discovery.js','./v814-respiratory-atlas.js','./v815-urinary-atlas.js','./v816-endocrine-atlas.js','./v817-immune-atlas.js','./v822-nervous-atlas.js','./v823-cardiovascular-atlas.js','./v824-digestive-atlas.js','./v829-locomotor-atlas.js','./assets/locomotor/locomotor-01.webp','./assets/locomotor/locomotor-02.webp','./assets/locomotor/locomotor-03.webp','./assets/locomotor/locomotor-04.webp','./assets/locomotor/locomotor-05.webp','./assets/locomotor/locomotor-06.webp','./assets/locomotor/locomotor-07.webp','./assets/locomotor/locomotor-08.webp','./assets/locomotor/locomotor-09.webp','./assets/locomotor/locomotor-10.webp','./assets/locomotor/locomotor-11.webp','./assets/locomotor/locomotor-12.webp','./assets/locomotor/locomotor-13.webp','./assets/locomotor/locomotor-14.webp','./assets/locomotor/locomotor-15.webp','./assets/locomotor/locomotor-16.webp','./assets/locomotor/locomotor-17.webp','./assets/locomotor/locomotor-18.webp','./assets/locomotor/locomotor-19.webp','./assets/locomotor/locomotor-20.webp','./v826-changelog.js','./v821-resource-audit.js','./v828-revision-clean.js','./v828-changelog.js','./v829-changelog.js','./v830-changelog.js','./v8301-changelog.js','./v8302-changelog.js','./v8303-changelog.js','./v8304-changelog.js','./v8303-home-startup.js','./resource-audit-v821.json','./qextra-11.txt','./qextra-12.txt','./qextra-13.txt','./qextra-14.txt','./qextra-15.txt','./qextra-16.txt','./qextra-17.txt','./qextra-18.txt','./qextra-19.txt','./qextra-20.txt','./qextra-21.txt','./qextra-22.txt','./qextra-23.txt','./qextra-24.txt','./qextra-25.txt','./qextra-26.txt','./qextra-27.txt','./qextra-28.txt','./qextra-29.txt','./qextra-30.txt','./qextra-31.txt','./qextra-32.txt','./qextra-33.txt','./qextra-34.txt','./qextra-35.txt','./qextra-36.txt','./qextra-37.txt','./qextra-38.txt','./build-meta.json','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-assert(sw.includes("ifsi-abc-v8-30-4-local-97"),'Cache V8.30.4 local-97 absent');
+assert(sw.includes("ifsi-abc-v8-30-4-local-98"),'Cache V8.30.4 local-98 absent');assert(sw.includes('syncCorrectionExplanation'),'Garde-fou de synchronisation des corrigés absent du SW');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
 assert(sw.indexOf('analytics-v77.js')<sw.indexOf('v79-themes.js'),'V7.9 doit être chargée après analytics');
