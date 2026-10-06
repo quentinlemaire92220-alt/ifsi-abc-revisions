@@ -44,7 +44,7 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
   <div class="v87-actions" style="margin-top:10px"><button id="v87Improve" class="btn outline">💡 Proposer une amélioration</button><button id="v87Reload" class="btn outline">⟳ Recharger l’application</button></div>
  </div>
 </div>
-<div class="v87-card" style="margin-top:10px"><h3>🧾 Journal des versions</h3><p>Historique des principales évolutions de l’application.</p><div id="v87Log" class="v87-log"></div></div>`;
+<div class="v87-card" style="margin-top:10px"><h3>🧾 Journal des évolutions</h3><p>Historique UX/UI, technique et correctifs de l’application.</p><div id="v87Log" class="v87-log"></div></div>`;
 app.insertBefore(sec,oldNav()||null)}
 function addNav(){if($('v87Nav'))return;const app=document.querySelector('.app');if(!app)return;const n=document.createElement('nav');n.id='v87Nav';n.innerHTML=`
 <button id="v87Home"><span>⌂</span>Accueil</button>
@@ -68,7 +68,18 @@ function showSettings(){window.show?.('home');$('home')?.classList.add('hidden')
 function switchState(id,on){$(id)?.classList.toggle('on',!!on);$(id)?.setAttribute('aria-pressed',on?'true':'false')}
 function download(name,obj){const a=document.createElement('a'),b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download(`IFSI_ABC_sauvegarde_V${V}.json`,data)}
-function versionLog(){const box=$('v87Log');if(!box)return;const src=$('v742Changelog')?.querySelector('details .small');if(src){box.innerHTML=src.innerHTML;return}box.innerHTML='<details open><summary>V8.8 — Ressources auditées</summary><div class="small">Catalogue dédoublonné, rattachements explicites et noms d’affichage normalisés.</div></details>'}
+function esc87(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function versionLog(){
+ const box=$('v87Log');if(!box)return;
+ const appEntries=window.IFSI_V8312?.appEntries?.()||[];
+ if(appEntries.length){box.innerHTML=appEntries.map((x,i)=>`<details ${i===0?'open':''}><summary>${esc87(x.title)}</summary><div class="small">${esc87(x.copy||'Évolution de l’application.')}</div></details>`).join('');return}
+ const src=$('v742Changelog')?.querySelector('details .small');
+ if(src){
+   const spans=[...src.querySelectorAll(':scope > span[id$="Change"]')].filter(x=>/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|technique|synchronis|cache|paramètres|fiabilis|refonte|simplifi|réorganis/i.test(x.textContent));
+   if(spans.length){box.innerHTML=spans.map((x,i)=>{const title=x.querySelector('b')?.textContent?.trim()||'Évolution';const copy=x.textContent.replace(title,'').trim();return `<details ${i===0?'open':''}><summary>${esc87(title)}</summary><div class="small">${esc87(copy)}</div></details>`}).join('');return}
+ }
+ box.innerHTML='<div class="small">Aucune évolution technique enregistrée.</div>'
+}
 async function remoteMeta(){const r=await fetch('./build-meta.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('version');return r.json()}
 async function refreshVersionState(){try{const m=await remoteMeta();if($('v87Server'))$('v87Server').textContent='V'+(m.version||'?');if($('v87Build'))$('v87Build').textContent=m.build||'?';if($('v87Installed'))$('v87Installed').textContent='V'+(window.IFSI_APP_VERSION||V);if($('v87UpdateStatus'))$('v87UpdateStatus').textContent=(m.version===(window.IFSI_APP_VERSION||V))?'Application synchronisée avec le serveur.':'Une version plus récente est disponible.';return m}catch{if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Impossible de lire la version serveur.';return null}}
 async function updateWorker(){const reg=await navigator.serviceWorker?.getRegistration?.();if(reg)await reg.update();return reg}
