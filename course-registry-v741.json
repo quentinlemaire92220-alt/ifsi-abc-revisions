@@ -1,5 +1,5 @@
 {
-  "version": "8.30.22",
+  "version": "8.30.23",
   "courses": [
     {
       "id": "biomolecules",
@@ -484,6 +484,19 @@
       ],
       "domain": "B",
       "ue": "B2"
+    },
+    {
+      "id": "pharmacologie",
+      "label": "Introduction à la pharmacologie",
+      "aliases": [
+        "Introduction à la pharmacologie",
+        "Introduction a la pharmacologie",
+        "Pharmacologie",
+        "Pharmacologie fondamentale",
+        "Bases de pharmacologie"
+      ],
+      "domain": "B",
+      "ue": "B1"
     }
   ],
   "auditBaseline": {

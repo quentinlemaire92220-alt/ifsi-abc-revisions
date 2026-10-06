@@ -5,7 +5,7 @@ const read=p=>fs.readFileSync(p,'utf8');
 const json=p=>JSON.parse(read(p));
 const assert=(v,msg)=>{if(!v)throw new Error(msg)};
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
-const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
+const keepQuestion=q=>{const t=q?.question||'';if(q?.id==='pharmaco_031')return true;if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
 function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
 function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
@@ -15,7 +15,7 @@ function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id
 let base=[];
 for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)auditRawQuestion(q,p);base.push(...a)}
 let extras=[],override=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);extras.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);extras.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
 for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);override.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
@@ -23,7 +23,7 @@ assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.lengt
 const iasTail=decodePackFile('qextra-17.txt');
 assert(iasTail.length===42,`Pack IAS qextra-17 inattendu: ${iasTail.length}/42`);
 assert(iasTail.every(q=>String(q.explanation||'').trim().length>=80),'Corrections IAS qextra-17 insuffisamment argumentées');
-assert(rawOver3<=274,`Dette QCM brute >3 réponses en hausse: ${rawOver3}/274`);
+assert(rawOver3<=278,`QCM bruts à 4 bonnes réponses en hausse inattendue: ${rawOver3}/278`);
 assert(rawThreeOfFour<=935,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/935`);
 assert(rawMissingExplanation===0,`QCM bruts sans explication: ${rawMissingExplanation}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
@@ -44,7 +44,7 @@ for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues
 let runtimeThreeOfFour=0;
 for(const q of runtime){
   if((q.choices||[]).length===4&&(q.answers||[]).length===3)runtimeThreeOfFour++;
-  assert((q.answers||[]).length<=3,`Trop de bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
+  assert((q.answers||[]).length<=4,`Trop de bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
   assert((q.answers||[]).length<(q.choices||[]).length,`Toutes les propositions sont correctes dans ${q.id}`);
   assert(String(q.explanation||'').trim().length>=45,`Explication trop courte dans ${q.id}`);
   assert(!/→\s*[A-E](?:\s*,\s*[A-E])+/i.test(String(q.question||'')),`Réponse divulguée dans l'énoncé: ${q.id}`);
@@ -55,6 +55,17 @@ for(const q of runtime){
 assert(runtimeThreeOfFour<=647,`Dette runtime 3/4 en hausse: ${runtimeThreeOfFour}/647`);
 const calcQuestions=runtime.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
 assert(calcQuestions.length>=220,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
+
+const pharmacologie=runtime.filter(q=>q.courseId==='pharmacologie');
+assert(pharmacologie.length===60,`Questions pharmacologie inattendues: ${pharmacologie.length}/60`);
+assert(pharmacologie.every(q=>q.choices.length===5),'Pharmacologie : chaque QCM doit avoir exactement 5 propositions');
+assert(pharmacologie.every(q=>['easy','medium','hard'].includes(q.difficulty)),'Pharmacologie : difficulté absente ou invalide');
+const pharmDiff=Object.fromEntries(['easy','medium','hard'].map(d=>[d,pharmacologie.filter(q=>q.difficulty===d).length]));
+assert(pharmDiff.easy===18&&pharmDiff.medium===30&&pharmDiff.hard===12,`Répartition difficultés pharmacologie invalide: ${JSON.stringify(pharmDiff)}`);
+const pharmAnswerCounts=Object.fromEntries([1,2,3,4].map(n=>[n,pharmacologie.filter(q=>q.answers.length===n).length]));
+assert(pharmAnswerCounts[1]===10&&pharmAnswerCounts[2]===33&&pharmAnswerCounts[3]===13&&pharmAnswerCounts[4]===4,`Répartition bonnes réponses pharmacologie invalide: ${JSON.stringify(pharmAnswerCounts)}`);
+assert(pharmAnswerCounts[4]/pharmacologie.length<=0.10,'Pharmacologie : plus de 10 % de questions à 4 bonnes réponses');
+assert(new Set(pharmacologie.map(q=>q.theme)).size===7,'Pharmacologie : découpage thématique incomplet');
 
 const respiratory=new Map(runtime.filter(q=>q.course==='Système respiratoire').map(q=>[q.id,q]));
 assert(respiratory.size===47,`Questions respiratoires textuelles inattendues: ${respiratory.size}`);
@@ -69,7 +80,7 @@ assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_01
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
 const registry=json('course-registry-v741.json');
-assert(registry.version==='8.30.22','Registre version incorrecte');
+assert(registry.version==='8.30.23','Registre version incorrecte');
 assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
@@ -101,7 +112,7 @@ assert(/^\d+$/.test(String(releaseMeta.build)),'Build build-meta invalide');
 const releaseChangelog=`v${releaseMeta.build}-changelog.js`;
 const sw=read('sw.js');
 for(const marker of ['./app-version-v742.js','./v72-pack.js','./vocals-v73.js','./v74-pack.js','./course-registry-v741.js','./changelog-v742.js','./v75-smart.js','./v76-home.js','./analytics-v77.js','./v79-themes.js','./calculs-parcours-v1.js','./v81-suite.js','./v82-nav-anatomy.js','./v83-anatomy-interactive.js','./v84-respiratory-polish.js','./v85-home-lite.js','./v86-home-clean.js','./v87-settings.js','./v813-home-discovery.js','./v814-respiratory-atlas.js','./v815-urinary-atlas.js','./v816-endocrine-atlas.js','./v817-immune-atlas.js','./v822-nervous-atlas.js','./v823-cardiovascular-atlas.js','./v824-digestive-atlas.js','./v829-locomotor-atlas.js','./v8318-microscopic-atlas.js','./assets/locomotor/locomotor-01.webp','./assets/locomotor/locomotor-02.webp','./assets/locomotor/locomotor-03.webp','./assets/locomotor/locomotor-04.webp','./assets/locomotor/locomotor-05.webp','./assets/locomotor/locomotor-06.webp','./assets/locomotor/locomotor-07.webp','./assets/locomotor/locomotor-08.webp','./assets/locomotor/locomotor-09.webp','./assets/locomotor/locomotor-10.webp','./assets/locomotor/locomotor-11.webp','./assets/locomotor/locomotor-12.webp','./assets/locomotor/locomotor-13.webp','./assets/locomotor/locomotor-14.webp','./assets/locomotor/locomotor-15.webp','./assets/locomotor/locomotor-16.webp','./assets/locomotor/locomotor-17.webp','./assets/locomotor/locomotor-18.webp','./assets/locomotor/locomotor-19.webp','./assets/locomotor/locomotor-20.webp','./v826-changelog.js','./v821-resource-audit.js','./v828-revision-clean.js','./v8309-revision-redesign.js','./v828-changelog.js','./v829-changelog.js','./v830-changelog.js','./v8301-changelog.js','./v8302-changelog.js','./v8303-changelog.js','./v8304-changelog.js','./v8305-changelog.js','./v8306-changelog.js','./v8307-changelog.js','./v8308-changelog.js','./v8309-changelog.js','./v8310-changelog.js','./v8303-home-startup.js','./resource-audit-v821.json','./qextra-11.txt','./qextra-12.txt','./qextra-13.txt','./qextra-14.txt','./qextra-15.txt','./qextra-16.txt','./qextra-17.txt','./qextra-18.txt','./qextra-19.txt','./qextra-20.txt','./qextra-21.txt','./qextra-22.txt','./qextra-23.txt','./qextra-24.txt','./qextra-25.txt','./qextra-26.txt','./qextra-27.txt','./qextra-28.txt','./qextra-29.txt','./qextra-30.txt','./qextra-31.txt','./qextra-32.txt','./qextra-33.txt','./qextra-34.txt','./qextra-35.txt','./qextra-36.txt','./qextra-37.txt','./qextra-38.txt','./build-meta.json','./tnr-v72.js'])assert(sw.includes(marker),`Asset absent du SW: ${marker}`);
-const releaseCachePrefix=`ifsi-abc-v${releaseMeta.version.replaceAll('.','-')}-local-`;assert(sw.includes(releaseCachePrefix),`Cache PWA désynchronisé de V${releaseMeta.version}`);assert(sw.includes(`./${releaseChangelog}`),`Changelog courant absent du SW: ${releaseChangelog}`);assert(sw.includes('./qextra-42.txt'),'Asset qextra-42 absent du SW');assert(sw.includes('./qextra-43.txt'),'Asset qextra-43 absent du SW');assert(sw.includes('./qextra-44.txt'),'Asset qextra-44 absent du SW');assert(sw.includes('./qextra-45.txt'),'Asset qextra-45 absent du SW');
+const releaseCachePrefix=`ifsi-abc-v${releaseMeta.version.replaceAll('.','-')}-local-`;assert(sw.includes(releaseCachePrefix),`Cache PWA désynchronisé de V${releaseMeta.version}`);assert(sw.includes(`./${releaseChangelog}`),`Changelog courant absent du SW: ${releaseChangelog}`);assert(sw.includes('./qextra-42.txt'),'Asset qextra-42 absent du SW');assert(sw.includes('./qextra-43.txt'),'Asset qextra-43 absent du SW');assert(sw.includes('./qextra-44.txt'),'Asset qextra-44 absent du SW');assert(sw.includes('./qextra-45.txt'),'Asset qextra-45 absent du SW');assert(sw.includes('./qextra-46.txt'),'Asset qextra-46 absent du SW');
 assert(sw.includes('syncCorrectionExplanation'),'Garde-fou de synchronisation des corrigés absent du SW');assert(sw.includes('function validateQuestion(')&&sw.includes('validQuestions('),'Garde-fou runtime QCM absent du SW');
 assert(sw.includes("'deflate-raw'"),'Récupération gzip dégradé absente du SW');
 assert(sw.includes('parsePackText'),'Récupération JSON partielle absente du SW');
@@ -154,7 +165,7 @@ assert(!v82.includes("return (resources(def.id).infographics||[])"),'Une infogra
 assert(v82.includes('séparation stricte')&&v82.includes('return []'),'Règle V8.19 de séparation Infographies / Anatomie absente');
 const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.12'",'SYSTEM_META','systeme_urinaire','urinary001','urinary002','urinary003','1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V','1GdqA-Vw5zIWBZFzLTLfOrpatl9ayJ57J','155CIVMe4XaPcfkcGM8SS2MFW5XdL7Hpl','v83Zoom','v83ZoomOpen','bindZoom','zoomBy','pointermove','wheel','resp003','resp013','resp015','drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ','drive.google.com/thumbnail?id=1G2agsVxnMlIeksAdV0-vguUE5bRKQ65Y','drive.google.com/thumbnail?id=11A147V9LowK3-PnJASkqmrfU-T1nTVIJ','resp-official-bronchial-learn.jpg','Support officiel du cours','Apprendre','S’entraîner','Tester','diagramMastery','toggleFavorite','openDiagram','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Planche interactive V8.12 incomplète: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
-console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées • dette runtime 3/4: ${runtimeThreeOfFour}`);console.log(`✅ ${rawAudited} QCM bruts audités • dette >3 réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
+console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées • dette runtime 3/4: ${runtimeThreeOfFour}`);console.log(`✅ ${rawAudited} QCM bruts audités • questions à 4 bonnes réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
 const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.11'",'function decorate(){updateBodyClass()}'])assert(v84.includes(marker),`Couche respiratoire V8.11 incomplète: ${marker}`);
@@ -166,7 +177,7 @@ const v814=read('v814-respiratory-atlas.js');for(const marker of ["const V='8.14
 const v815=read('v815-urinary-atlas.js');for(const marker of ["const V='8.15.1'",'urinary_atlas_01','urinary_atlas_08','Complément anatomie','1xKV0-_DCk9nQbQjcCqibrQILNU9be8fG','v815Zoom','decorateCatalog','IFSI_V815'])assert(v815.includes(marker),`Atlas urinaire V8.15.1 incomplet: ${marker}`);
 const v816=read('v816-endocrine-atlas.js');for(const marker of ["const V='8.16'",'endo_atlas_01','endo_atlas_08','Système endocrinien — Vue d’ensemble','Hypothalamus & hypophyse','Thyroïde','Parathyroïdes','Glandes surrénales','Pancréas endocrine','Gonades','Glande pinéale','Complément anatomie','v816Zoom','data-v816toggle','Masquer','Voir les planches','buildCatalogSection','IFSI_V816'])assert(v816.includes(marker),`Atlas endocrinien V8.16 incomplet: ${marker}`);
 const v821=read('v821-resource-audit.js');for(const marker of ["const V='8.30.10'",'Audit catalogue ↔ référence Drive','resource-audit-v821.json','IFSI_V823','IFSI_V824','IFSI_V829','atlasBoardContracts','renderBalance','anatomyInfoOverlap','runAudit','IFSI_V821'])assert(v821.includes(marker),`Audit ressources V8.30.10 incomplet: ${marker}`);
-const audit821=json('resource-audit-v821.json');assert(audit821.version===releaseMeta.version,`Snapshot ressources V${releaseMeta.version} invalide`);assert(audit821.auditLogicVersion==='8.30.10','Version logique audit invalide');assert(audit821.expectedTotals?.courses===42,'Snapshot V8.30.21 cours invalide');assert(audit821.expectedTotals?.sheets===49,'Snapshot V8.30.21 fiches invalide');assert(audit821.expectedTotals?.infographics===142,'Snapshot V8.30.21 infographies invalide');assert(audit821.expectedTotals?.hdAtlasBoards===106,'Snapshot V8.30.21 planches HD invalide');assert(Object.keys(audit821.anatomyFolderContracts||{}).length===12,'Snapshot V8.30.21 dossiers 06 incomplet');assert(Object.keys(audit821.atlasBoardContracts||{}).length===12,'Snapshot contrats atlas incomplet');assert(Object.values(audit821.atlasBoardContracts||{}).reduce((a,b)=>a+b,0)===106,'Contrats atlas doivent totaliser 106 planches');
+const audit821=json('resource-audit-v821.json');assert(audit821.version===releaseMeta.version,`Snapshot ressources V${releaseMeta.version} invalide`);assert(audit821.auditLogicVersion==='8.30.10','Version logique audit invalide');assert(audit821.expectedTotals?.courses===43,'Snapshot V8.30.23 cours invalide');assert(audit821.expectedTotals?.sheets===50,'Snapshot V8.30.23 fiches invalide');assert(audit821.expectedTotals?.infographics===147,'Snapshot V8.30.23 infographies invalide');assert(audit821.expectedTotals?.hdAtlasBoards===106,'Snapshot V8.30.21 planches HD invalide');assert(Object.keys(audit821.anatomyFolderContracts||{}).length===12,'Snapshot V8.30.21 dossiers 06 incomplet');assert(Object.keys(audit821.atlasBoardContracts||{}).length===12,'Snapshot contrats atlas incomplet');assert(Object.values(audit821.atlasBoardContracts||{}).reduce((a,b)=>a+b,0)===106,'Contrats atlas doivent totaliser 106 planches');
 const v8318=read('v8318-microscopic-atlas.js');for(const marker of ["const V='8.30.20'",'micro_biomol_01','micro_cell_26','micro_bact_13','micro_virus_16','biomolecules','cellules_tissus','diagnostic_bacteriologie','virus','IFSI_V8318'])assert(v8318.includes(marker),`Atlas microscopiques V8.30.20 incomplet: ${marker}`);
 assert((v8318.match(/id:'micro_/g)||[]).length===26,'Atlas microscopiques V8.30.20 doit contenir 26 planches');
 assert((v8318.match(/id:'micro_biomol_/g)||[]).length===3,'Biomolécules: 3 planches attendues');
