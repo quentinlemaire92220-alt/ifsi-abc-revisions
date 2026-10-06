@@ -1,5 +1,12 @@
 name: TNR IFSI ABC
 
+permissions:
+  contents: read
+
+concurrency:
+  group: tnr-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main, 'v*']
@@ -78,9 +85,13 @@ jobs:
           node --check tests/pwa-install.mjs
           node --check tests/resource-sync-v821.mjs
           node --check tests/button-audit.mjs
+          node --check tests/ux-regression.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
+
+      - name: Régression UX et cohérence release
+        run: node tests/ux-regression.mjs
 
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
