@@ -28,65 +28,10 @@ jobs:
 
       - name: Vérifier la syntaxe JavaScript
         run: |
-          node --check sw.js
-          node --check app-version-v742.js
-          node --check features-v9.js
-          node --check schema-v10.js
-          node --check choice-toggle-v13.js
-          node --check v7-local.js
-          node --check v71-local.js
-          node --check v72-pack.js
-          node --check progressive-v72.js
-          node --check vocals-v73.js
-          node --check v74-pack.js
-          node --check course-registry-v741.js
-          node --check changelog-v742.js
-          node --check v75-smart.js
-          node --check v76-home.js
-          node --check analytics-v77.js
-          node --check v79-themes.js
-          node --check calculs-parcours-v1.js
-          node --check v81-suite.js
-          node --check v82-nav-anatomy.js
-          node --check v83-anatomy-interactive.js
-          node --check v84-respiratory-polish.js
-          node --check v85-home-lite.js
-          node --check v86-home-clean.js
-          node --check v87-settings.js
-          node --check v813-home-discovery.js
-          node --check v814-respiratory-atlas.js
-          node --check v815-urinary-atlas.js
-          node --check v816-endocrine-atlas.js
-          node --check v817-immune-atlas.js
-          node --check v822-nervous-atlas.js
-          node --check v823-cardiovascular-atlas.js
-          node --check v824-digestive-atlas.js
-          node --check v829-locomotor-atlas.js
-          node --check v826-changelog.js
-          node --check v821-resource-audit.js
-          node --check v828-revision-clean.js
-          node --check v8309-revision-redesign.js
-          node --check v828-changelog.js
-          node --check v829-changelog.js
-          node --check v830-changelog.js
-          node --check v8301-changelog.js
-          node --check v8302-changelog.js
-          node --check v8303-changelog.js
-          node --check v8304-changelog.js
-          node --check v8305-changelog.js
-          node --check v8306-changelog.js
-          node --check v8307-changelog.js
-          node --check v8308-changelog.js
-          node --check v8309-changelog.js
-          node --check v8310-changelog.js
-          node --check v8303-home-startup.js
-          node --check tnr-v72.js
-          node --check tests/tnr-node.mjs
-          node --check tests/course-audit.mjs
-          node --check tests/pwa-install.mjs
-          node --check tests/resource-sync-v821.mjs
-          node --check tests/button-audit.mjs
-          node --check tests/ux-regression.mjs
+          set -euo pipefail
+          for file in ./*.js tests/*.mjs; do
+            node --check "$file"
+          done
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs

@@ -24,6 +24,8 @@ const moduleMatch=sw.match(/const MODULES=\[(.*?)\];for/s);
 assert.ok(moduleMatch,'Liste MODULES absente du service worker');
 const swModules=[...moduleMatch[1].matchAll(/"([^"]+\.js)"/g)].map(m=>m[1]);
 const indexModules=scriptRefs.map(m=>m[1]);
+const releaseChangelog=`v${meta.build}-changelog.js`;
+assert.ok(indexModules.includes(releaseChangelog),`Changelog de release absent de l’index: ${releaseChangelog}`);
 assert.deepEqual(swModules,indexModules,'index.html et service worker ne chargent pas les mêmes modules dans le même ordre');
 
 const baseMatch=sw.match(/const BASE_ASSETS=\[(.*?)\];/s);
