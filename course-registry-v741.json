@@ -1,5 +1,5 @@
 {
-  "version": "8.30.18",
+  "version": "8.30.21",
   "courses": [
     {
       "id": "biomolecules",
@@ -472,6 +472,18 @@
         "Sources et mise en œuvre du droit",
         "Introduction au droit - sources et mise en œuvre du droit"
       ]
+    },
+    {
+      "id": "psychologie_sante",
+      "label": "Psychologie de la santé",
+      "aliases": [
+        "Psychologie de la santé",
+        "Psychologie de la sante",
+        "Psychologie Santé",
+        "Psychologie Sante"
+      ],
+      "domain": "B",
+      "ue": "B2"
     }
   ],
   "auditBaseline": {
