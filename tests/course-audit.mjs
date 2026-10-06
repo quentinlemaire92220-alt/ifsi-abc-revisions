@@ -31,8 +31,8 @@ function resolveLabel(label){
 
 let base=[];for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],override=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[]))}
-for(const i of [39,40,41,42]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);override.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[]))}
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
+for(const i of [39,40,41,42]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);override.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const overrideIds=new Set(override.map(q=>q.id).filter(Boolean));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...override)}
 const seen=new Set(base.map(q=>q.id));const qs=[...base];for(const q of extras)if(!seen.has(q.id)){qs.push(q);seen.add(q.id)}
