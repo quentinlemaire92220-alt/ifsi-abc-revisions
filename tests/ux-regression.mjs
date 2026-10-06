@@ -51,6 +51,8 @@ const revision=read('v81-suite.js');
 for(const token of ['id="vcrCourse"','id="vcrTheme"','data-cdiff','data-ccount','data-cmode','id="vcrLaunch"'])assert.ok(revision.includes(token),`Constructeur Révision incomplet: ${token}`);
 assert.ok(revision.includes('Correction après chaque question.'),'Texte mode Entraînement absent');
 assert.ok(revision.includes('Correction et résultat uniquement à la fin.'),'Texte mode Examen absent');
+assert.ok(!revision.includes('Intermédiaire'),'Libellé Intermédiaire réintroduit : utiliser Moyen');
+assert.ok(revision.includes('Moyen'),'Libellé Moyen absent des filtres de difficulté');
 
 const redesign=read('v8309-revision-redesign.js');
 for(const token of ['v8309WeakBtn','Plus de filtres','v8309-quick','v8309-exam','v8309-goal'])assert.ok(redesign.includes(token),`Révision allégée incomplète: ${token}`);
