@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.5 : ajout des quatre premiers vocaux du système cardiovasculaire au catalogue actif, avec courseId explicite et Drive IDs uniques.",
+  "note": "V8.30.6 : série cardiovasculaire complète avec cinq vocaux actifs, dont le vocal Sang, vaisseaux sanguins et pression artérielle.",
   "expectedTotals": {
     "courses": 40,
     "sheets": 47,
     "infographics": 138,
-    "vocals": 33,
+    "vocals": 34,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
