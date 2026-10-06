@@ -6,7 +6,7 @@ function css(){
   if($('v828css'))return;
   const s=document.createElement('style');s.id='v828css';s.textContent=`
   #v81Hub{padding-bottom:96px}
-  #v81Body.v828-revision{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px;align-items:start}
+  #v81Body.v828-revision{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;align-items:start}
   #v81Body.v828-revision>.card{margin:0;min-width:0}
   #v81Body .v828-head{grid-column:1/-1;order:1;padding:13px 15px}
   #v81Body .v828-head .row{margin-top:7px!important}
@@ -14,12 +14,13 @@ function css(){
   #v81Body .v828-dashboard>.v81-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px!important}
   #v81Body .v828-dashboard .v81-kpi{padding:9px 11px}
   #v81Body .v828-dashboard .v81-kpi>b{font-size:20px}
-  #v81Body .v828-quick{grid-column:span 7;order:3}
-  #v81Body .v828-weak{grid-column:span 5;order:4}
-  #v81Body .v828-goal{grid-column:span 5;order:5}
-  #v81Body .v828-exam{grid-column:span 7;order:6}
-  #v81Body .v828-pre{grid-column:1/-1;order:7}
-  #v81Body .v828-search{grid-column:1/-1;order:8}
+  #v81Body .vcr-custom{grid-column:1/-1;order:3}
+  #v81Body .v828-quick{grid-column:span 7;order:4}
+  #v81Body .v828-weak{grid-column:span 5;order:5}
+  #v81Body .v828-goal{grid-column:span 5;order:6}
+  #v81Body .v828-exam{grid-column:span 7;order:7}
+  #v81Body .v828-pre{grid-column:1/-1;order:8}
+  #v81Body .v828-search{grid-column:1/-1;order:9}
   #v81Body .v828-quick .v81-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   #v81Body .v828-quick .v81-actions .btn{width:100%;padding:12px 10px}
   #v81Body .v828-exam .v81-actions{display:grid;grid-template-columns:minmax(180px,1.7fr) repeat(3,1fr);gap:8px}
@@ -43,7 +44,7 @@ function css(){
   body.v72-dark #v81Hub .v81-chip.on{background:#6941c6;color:#fff;border-color:#805be0}
   body.v72-dark #v81Hub .v828-toggle{background:#282332;color:#f4f0fb;border-color:#4a405c}
   @media(max-width:760px){
-    #v81Body.v828-revision{grid-template-columns:1fr;gap:10px}
+    #v81Body.v828-revision{grid-template-columns:1fr;gap:14px}
     #v81Body.v828-revision>.card{grid-column:1!important}
     #v81Body .v828-dashboard>.v81-grid{grid-template-columns:repeat(2,1fr)}
     #v81Body .v828-exam .v81-actions{grid-template-columns:1fr 1fr}
