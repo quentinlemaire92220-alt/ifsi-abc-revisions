@@ -144,15 +144,6 @@
     "mime": "audio/aac"
   },
   {
-    "id": "nerv_01",
-    "courseId": "systeme_nerveux",
-    "course": "Système nerveux",
-    "number": 1,
-    "title": "Système nerveux",
-    "driveId": "1L4F47hTKNTjboY-DhYPXEi1VBKWbZ3Zl",
-    "mime": "audio/mpeg"
-  },
-  {
     "id": "neuroinf_01",
     "courseId": "infections_neuro_meningees",
     "course": "Infections neuro-méningées",
@@ -303,6 +294,51 @@
     "number": 5,
     "title": "Sang, vaisseaux sanguins et pression artérielle",
     "driveId": "1QQbK_NbRa6NfoWJ_0El1KeF87B1v80Wk",
+    "mime": "audio/mpeg"
+  },
+  {
+    "id": "nerv_2026_01",
+    "courseId": "systeme_nerveux",
+    "course": "Système nerveux",
+    "number": 1,
+    "title": "Organisation générale et système nerveux central",
+    "driveId": "19jXJGKi-jUP7aLSEeHoxFWY6u99Fk3z-",
+    "mime": "audio/mpeg"
+  },
+  {
+    "id": "nerv_2026_02",
+    "courseId": "systeme_nerveux",
+    "course": "Système nerveux",
+    "number": 2,
+    "title": "Hémisphères, lobes et aires fonctionnelles",
+    "driveId": "1bqZMM1DQztFH_CBvfQ1GWHG_p8Kf8KQh",
+    "mime": "audio/mpeg"
+  },
+  {
+    "id": "nerv_2026_03",
+    "courseId": "systeme_nerveux",
+    "course": "Système nerveux",
+    "number": 3,
+    "title": "Tronc cérébral, cervelet, moelle et protections",
+    "driveId": "10nu56ZIHWksPUZmiowWKmmnVLBBMREOX",
+    "mime": "audio/mpeg"
+  },
+  {
+    "id": "nerv_2026_04",
+    "courseId": "systeme_nerveux",
+    "course": "Système nerveux",
+    "number": 4,
+    "title": "Système nerveux périphérique, somatique et autonome",
+    "driveId": "1Bb-4r_M3kz1qehVYBi6FMMcZOMIb0WkW",
+    "mime": "audio/mpeg"
+  },
+  {
+    "id": "nerv_2026_05",
+    "courseId": "systeme_nerveux",
+    "course": "Système nerveux",
+    "number": 5,
+    "title": "Réflexes, mémoire et douleur",
+    "driveId": "1eV3nb435XpTmGXfPOSfZTXEeHL01ecbp",
     "mime": "audio/mpeg"
   }
 ]
