@@ -53,11 +53,21 @@ for(const [c,qs] of byCourse){
   }
 }
 near.sort((x,y)=>y.sim-x.sim);
+const calcRuntime=runtime.filter(q=>course(q)==='calculs_doses_mathematiques');
+const numericSeq=s=>(String(s??'').match(/\d+(?:[,.]\d+)?/g)||[]).map(x=>x.replace(',','.')).join('|');
+const calcSameData=[];
+for(let i=0;i<calcRuntime.length;i++)for(let j=i+1;j<calcRuntime.length;j++){
+  const a=calcRuntime[i],b=calcRuntime[j],na=numericSeq(a.question),nb=numericSeq(b.question);
+  if(!na||na!==nb)continue;
+  const sim=jaccard(tokens(a.question),tokens(b.question));
+  if(sim>=.55)calcSameData.push({sim,a,b,data:na});
+}
+calcSameData.sort((x,y)=>y.sim-x.sim);
 const nearCalc=near.filter(x=>x.course==='calculs_doses_mathematiques');
 const nearContent=near.filter(x=>x.course!=='calculs_doses_mathematiques');
 const exactSameCourse=exact.filter(g=>new Set(g.map(course)).size===1);
 
-console.log(`✅ Audit doublons runtime: ${runtime.length} QCM • IDs dupliqués 0 • groupes d’énoncés identiques ${exact.length} (même cours ${exactSameCourse.length}) • payloads strictement identiques ${samePayload.length} • quasi-doublons contenu ${nearContent.length} • variantes calcul ${nearCalc.length}`);
+console.log(`✅ Audit doublons runtime: ${runtime.length} QCM • IDs dupliqués 0 • groupes d’énoncés identiques ${exact.length} (même cours ${exactSameCourse.length}) • payloads strictement identiques ${samePayload.length} • quasi-doublons contenu ${nearContent.length} • variantes calcul ${nearCalc.length} • calculs mêmes données ${calcSameData.length}`);
 if(exact.length){
   console.log('🔁 Énoncés identiques avec IDs différents:');
   for(const g of exact.slice(0,30))console.log(' - '+g.map(q=>q.id+' ['+course(q)+'] {'+(sourceById.get(q.id)||'?')+'}').join(' ↔ ')+' :: '+g[0].question);
@@ -70,9 +80,11 @@ if(nearContent.length){
   console.log('🟠 Quasi-doublons de contenu hors exercices de calcul (similarité ≥ 0,86):');
   for(const x of nearContent.slice(0,40))console.log(` - ${x.sim.toFixed(2)} • ${x.a.id} {${sourceById.get(x.a.id)||'?'}} ↔ ${x.b.id} {${sourceById.get(x.b.id)||'?'}} [${x.course}] :: "${x.a.question}" / "${x.b.question}"`);
 }
-if(nearCalc.length)console.log(`ℹ️ ${nearCalc.length} paires proches sont des variantes numériques de calcul conservées comme exercices distincts.`);
+if(nearCalc.length)console.log(`ℹ️ ${nearCalc.length} paires proches sont des variantes numériques de calcul.`);
+if(calcSameData.length){console.log('🔢 Calculs avec les mêmes données numériques:');for(const x of calcSameData.slice(0,30))console.log(` - ${x.a.id} {${sourceById.get(x.a.id)||'?'}} ↔ ${x.b.id} {${sourceById.get(x.b.id)||'?'}} • données ${x.data} :: "${x.a.question}" / "${x.b.question}"`)}
 
 // Plafonds de non-régression : à réduire après nettoyage, jamais augmenter.
 assert.ok(exact.length<=9999,'Plafond temporaire exact dépassé');
 assert.ok(samePayload.length<=9999,'Plafond temporaire payload dépassé');
 assert.ok(nearContent.length<=9999,'Plafond temporaire quasi-doublons contenu dépassé');
+assert.ok(calcSameData.length<=9999,'Plafond temporaire doublons numériques dépassé');
