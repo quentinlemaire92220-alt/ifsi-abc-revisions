@@ -65,6 +65,7 @@ jobs:
           node --check v8302-changelog.js
           node --check v8303-changelog.js
           node --check v8304-changelog.js
+          node --check v8305-changelog.js
           node --check v8303-home-startup.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
@@ -72,9 +73,13 @@ jobs:
           node --check tests/pwa-install.mjs
           node --check tests/resource-sync-v821.mjs
           node --check tests/button-audit.mjs
+          node --check tests/ux-v8305.mjs
 
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
+
+      - name: Régression UX V8.30.5
+        run: node tests/ux-v8305.mjs
 
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
