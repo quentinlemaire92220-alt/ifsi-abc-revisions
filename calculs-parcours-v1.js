@@ -36,7 +36,7 @@ function statsFor(level,difficulty=null){const qs=calcQuestions().filter(q=>leve
 function passed(s,minSeen){return s.seen>=Math.min(minSeen,s.total)&&s.rate!==null&&s.rate>=80}
 function stageFor(level){const e=statsFor(level,'easy'),m=statsFor(level,'medium'),h=statsFor(level,'hard');if(!passed(e,4))return'easy';if(!passed(m,5))return'medium';if(!passed(h,2))return'hard';return'mixed'}
 function mastery(level){const all=statsFor(level);return stageFor(level)==='mixed'&&all.rate!==null&&all.rate>=80}
-function stageLabel(s){return s==='easy'?'🟢 Facile':s==='medium'?'🟠 Intermédiaire':s==='hard'?'🔴 Difficile':'🟣 Mixte'}
+function stageLabel(s){return s==='easy'?'🟢 Facile':s==='medium'?'🟠 Moyen':s==='hard'?'🔴 Difficile':'🟣 Mixte'}
 function currentCourseTitle(){return document.querySelector('#v74CourseDetail .v74-course-head h2')?.textContent?.trim()||''}
 function isCalcPage(){return /calculs? de doses|math[eé]matiques/i.test(currentCourseTitle())}
 function css(){if($('calcMasteryCss'))return;const s=document.createElement('style');s.id='calcMasteryCss';s.textContent=`
