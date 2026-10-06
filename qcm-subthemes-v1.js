@@ -155,7 +155,13 @@ const aliases={
   'systeme nerveux':'systeme_nerveux','systeme_nerveux':'systeme_nerveux','information genetique':'genetique','genetique':'genetique',
   'systeme urinaire':'systeme_urinaire','systeme_urinaire':'systeme_urinaire','systeme endocrinien':'systeme_endocrinien','systeme_endocrinien':'systeme_endocrinien',
   'systeme immunitaire':'systeme_immunitaire','systeme_immunitaire':'systeme_immunitaire','ecologie microbienne virus':'virus','virus':'virus',
-  'diagnostic virologique':'diagnostic_virologie','diagnostic_virologie':'diagnostic_virologie'
+  'diagnostic virologique':'diagnostic_virologie','diagnostic_virologie':'diagnostic_virologie',
+  'parasites et champignons':'parasites_champignons','parasites_champignons':'parasites_champignons',
+  'physiopathologie des infections':'physiopathologie_infections','physiopathologie_infections':'physiopathologie_infections',
+  'pathologies microcristallines osteoporose':'pathologies_microcristallines_osteoporose','pathologies_microcristallines_osteoporose':'pathologies_microcristallines_osteoporose',
+  'infections neuro meningees':'infections_neuro_meningees','infections_neuro_meningees':'infections_neuro_meningees',
+  'rhumatismes inflammatoires':'rhumatismes_inflammatoires','rhumatismes_inflammatoires':'rhumatismes_inflammatoires',
+  'competences psychosociales':'competences_psychosociales','competences_psychosociales':'competences_psychosociales'
 };
 function resolve(q){
   if(!q)return 'Général';
