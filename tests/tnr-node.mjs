@@ -19,6 +19,9 @@ for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`q
 for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);override.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
+assert(rawOver3<=274,`Dette QCM brute >3 réponses en hausse: ${rawOver3}/274`);
+assert(rawThreeOfFour<=935,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/935`);
+assert(rawMissingExplanation<=42,`Dette QCM brute sans explication en hausse: ${rawMissingExplanation}/42`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const overrideIds=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...finalOverride)}
@@ -34,7 +37,9 @@ assert(runtime.length+schemaIds.length>=1400,`Banque trop petite: ${runtime.leng
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
 for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');assert(typeof q.question==='string'&&q.question.trim(),'Énoncé absent');assert(Array.isArray(q.choices)&&q.choices.length>=4&&q.choices.length<=5,`Choix invalides ${q.id}: ${q?.choices?.length??'∅'}`);assert(Array.isArray(q.answers)&&q.answers.length>=1,`Réponse absente ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Réponse invalide ${q.id}`)}
 for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues? selon le corrigé du QCM\s*:\s*([^.<]+)/i);if(!m)continue;const stated=(m[1].match(/[A-E]/g)||[]).join(',');const actual=(q.answers||[]).map(i=>'ABCDE'[i]).filter(Boolean).join(',');assert(stated===actual,`Corrigé textuel désynchronisé ${q.id}: ${stated||'∅'} ≠ ${actual||'∅'}`)}
+let runtimeThreeOfFour=0;
 for(const q of runtime){
+  if((q.choices||[]).length===4&&(q.answers||[]).length===3)runtimeThreeOfFour++;
   assert((q.answers||[]).length<=3,`Trop de bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
   assert((q.answers||[]).length<(q.choices||[]).length,`Toutes les propositions sont correctes dans ${q.id}`);
   assert(String(q.explanation||'').trim().length>=45,`Explication trop courte dans ${q.id}`);
@@ -144,7 +149,7 @@ assert(!v82.includes("return (resources(def.id).infographics||[])"),'Une infogra
 assert(v82.includes('séparation stricte')&&v82.includes('return []'),'Règle V8.19 de séparation Infographies / Anatomie absente');
 const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.12'",'SYSTEM_META','systeme_urinaire','urinary001','urinary002','urinary003','1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V','1GdqA-Vw5zIWBZFzLTLfOrpatl9ayJ57J','155CIVMe4XaPcfkcGM8SS2MFW5XdL7Hpl','v83Zoom','v83ZoomOpen','bindZoom','zoomBy','pointermove','wheel','resp003','resp013','resp015','drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ','drive.google.com/thumbnail?id=1G2agsVxnMlIeksAdV0-vguUE5bRKQ65Y','drive.google.com/thumbnail?id=11A147V9LowK3-PnJASkqmrfU-T1nTVIJ','resp-official-bronchial-learn.jpg','Support officiel du cours','Apprendre','S’entraîner','Tester','diagramMastery','toggleFavorite','openDiagram','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Planche interactive V8.12 incomplète: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
-console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées`);console.log(`✅ ${rawAudited} QCM bruts audités • dette >3 réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
+console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées • dette runtime 3/4: ${runtimeThreeOfFour}`);console.log(`✅ ${rawAudited} QCM bruts audités • dette >3 réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
 const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.11'",'function decorate(){updateBodyClass()}'])assert(v84.includes(marker),`Couche respiratoire V8.11 incomplète: ${marker}`);
