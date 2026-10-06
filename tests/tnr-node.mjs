@@ -45,7 +45,7 @@ assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_01
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
 const registry=json('course-registry-v741.json');
-assert(registry.version==='8.26','Registre version incorrecte');
+assert(registry.version==='8.27','Registre version incorrecte');
 assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
