@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V='8.30.12',$=id=>document.getElementById(id);
+const V='8.30.13',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8313Change:{type:'app',badges:['UX/UI']},
   v8312Change:{type:'app',badges:['UX/UI','TECHNIQUE']},
   v8311Change:{type:'resource',badges:['RESSOURCE']},
   v8310Change:{type:'app',badges:['TECHNIQUE']},
@@ -9,9 +10,9 @@ const NEWS_META={
   v8307Change:{type:'app',badges:['UX/UI','CORRECTIF']},
   v8306Change:{type:'resource',badges:['RESSOURCE']},
   v8305Change:{type:'resource',badges:['RESSOURCE']},
-  v8304Change:{type:'resource',badges:['RESSOURCE']}
+  v8304Change:{type:'app',badges:['CORRECTIF']}
 };
-let newsFilter='all',newsExpanded=false,revisionObserver=null;
+let newsExpanded=false,revisionObserver=null;
 function css(){
   if($('v8312css'))return;
   const s=document.createElement('style');s.id='v8312css';s.textContent=`
@@ -68,7 +69,7 @@ function replaceGroupName(){
 }
 function home(){
   const h=$('v76Home');if(!h)return false;
-  h.querySelector('.v76-today')?.classList.add('v8312-home-hidden');
+  h.querySelector('.v76-today')?.remove();
   const extras=$('v8303HomeExtras'),news=$('v742Changelog'),feedback=document.querySelector('.v72-feedback');
   if(extras&&news&&news.parentElement===extras)extras.insertBefore(news,extras.firstChild);
   if(feedback){feedback.classList.add('v8312-home-feedback');if(extras&&feedback.parentElement===extras)extras.appendChild(feedback)}
@@ -81,8 +82,9 @@ function linesFromSpan(span){
 }
 function inferMeta(id,text){
   if(NEWS_META[id])return NEWS_META[id];
-  if(/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|fil d’ariane|technique/i.test(text))return {type:'app',badges:[/correct/i.test(text)?'CORRECTIF':'TECHNIQUE']};
-  return {type:'resource',badges:['RESSOURCE']};
+  if(/\b(ajout|ajouté|ajoutée|nouveau|nouvelle|série|vocaux?|atlas|planches? anatomiques?|infographies?|fiches? de révision)\b/i.test(text))return {type:'resource',badges:['RESSOURCE']};
+  if(/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|fil d’ariane|technique|synchronis|cache|paramètres|fiabilis|refonte|simplifi|réorganis/i.test(text))return {type:'app',badges:[/correct/i.test(text)?'CORRECTIF':'TECHNIQUE']};
+  return {type:'app',badges:['TECHNIQUE']};
 }
 function badgeHtml(label){
   const cls=label==='RESSOURCE'?'resource':label==='UX/UI'?'ux':label==='CORRECTIF'?'fix':'tech';
@@ -99,23 +101,23 @@ function renderNews(){
   const box=$('v742Changelog');if(!box)return false;
   box.classList.add('v8312-news');
   const top=box.querySelector(':scope > .row');if(top){
-    const title=top.querySelector('b');if(title)title.textContent='🆕 Quoi de neuf ?';
+    const title=top.querySelector('b');if(title)title.textContent='📚 Ressources ajoutées';
     const badge=top.querySelector('.badge');if(badge)badge.textContent='V'+V;
   }
   if(!$('v8312NewsUi')){
-    const ui=document.createElement('div');ui.id='v8312NewsUi';ui.innerHTML=`<div class="small v8312-news-sub">Les dernières ressources ajoutées et évolutions de l’application.</div><div class="v8312-news-tabs"><button type="button" class="v8312-news-tab on" data-newsfilter="all">Tout</button><button type="button" class="v8312-news-tab" data-newsfilter="resource">📚 Ressources ajoutées</button><button type="button" class="v8312-news-tab" data-newsfilter="app">⚙️ Évolutions de l’app</button></div><div id="v8312NewsList" class="v8312-news-list"></div><button id="v8312NewsMore" type="button" class="btn secondary v8312-news-more">Voir tout l’historique →</button>`;
+    const ui=document.createElement('div');ui.id='v8312NewsUi';ui.innerHTML=`<div class="small v8312-news-sub">Les dernières ressources pédagogiques ajoutées à l’application.</div><div id="v8312NewsList" class="v8312-news-list"></div><button id="v8312NewsMore" type="button" class="btn secondary v8312-news-more">Voir toutes les ressources →</button>`;
     const details=box.querySelector(':scope > details');details?.insertAdjacentElement('beforebegin',ui);
-    ui.querySelectorAll('[data-newsfilter]').forEach(b=>b.onclick=()=>{newsFilter=b.dataset.newsfilter;newsExpanded=false;drawNews()});
     $('v8312NewsMore').onclick=()=>{newsExpanded=!newsExpanded;drawNews()};
   }
   drawNews();return true;
 }
+function resourceEntries(){return newsEntries().filter(x=>x.type==='resource')}
+function appEntries(){return newsEntries().filter(x=>x.type==='app')}
 function drawNews(){
   const list=$('v8312NewsList'),more=$('v8312NewsMore');if(!list)return;
-  const all=newsEntries(),filtered=newsFilter==='all'?all:all.filter(x=>x.type===newsFilter),shown=newsExpanded?filtered:filtered.slice(0,4);
-  document.querySelectorAll('[data-newsfilter]').forEach(b=>b.classList.toggle('on',b.dataset.newsfilter===newsFilter));
-  list.innerHTML=shown.map(x=>`<article class="v8312-news-item"><div class="v8312-news-item-head"><span class="v8312-news-item-title">${escapeHtml(x.title)}</span>${x.badges.map(badgeHtml).join('')}</div>${x.copy?`<div class="v8312-news-copy">${escapeHtml(x.copy)}</div>`:''}</article>`).join('')||'<div class="small" style="padding:12px 0">Aucune nouveauté dans cette catégorie.</div>';
-  if(more){more.hidden=filtered.length<=4;more.textContent=newsExpanded?'Réduire l’historique ↑':'Voir tout l’historique →'}
+  const filtered=resourceEntries(),shown=newsExpanded?filtered:filtered.slice(0,4);
+  list.innerHTML=shown.map(x=>`<article class="v8312-news-item"><div class="v8312-news-item-head"><span class="v8312-news-item-title">${escapeHtml(x.title)}</span>${x.badges.map(badgeHtml).join('')}</div>${x.copy?`<div class="v8312-news-copy">${escapeHtml(x.copy)}</div>`:''}</article>`).join('')||'<div class="small" style="padding:12px 0">Aucune nouvelle ressource pour le moment.</div>';
+  if(more){more.hidden=filtered.length<=4;more.textContent=newsExpanded?'Réduire les ressources ↑':'Voir toutes les ressources →'}
 }
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function counts(){
@@ -163,5 +165,5 @@ let tries=0;const timer=setInterval(()=>{tries++;apply();if(tries>220)clearInter
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.addEventListener('ifsi:v73-ready',()=>requestAnimationFrame(apply));
 window.addEventListener('load',()=>setTimeout(apply,0));
-window.IFSI_V8312={version:V,apply,renderNews,revision};
+window.IFSI_V8312={version:V,apply,renderNews,revision,resourceEntries,appEntries};
 })();
