@@ -61,7 +61,7 @@ const homeResources=read('v8312-home-revision.js');
 for(const token of ["h.querySelector('.v76-today')?.remove()","📚 Ressources ajoutées","resourceEntries()","appEntries()","Voir toutes les ressources →","v8312MyRevision","dash=document.createElement('div')","grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))"])assert.ok(homeResources.includes(token),`Accueil/Révision V8.30.17 incomplet: ${token}`);
 assert.ok(!homeResources.includes('data-newsfilter="app"'),'Les évolutions techniques ne doivent plus être affichées dans les filtres de l’accueil');
 assert.ok(!homeResources.includes("if(!dash)return false"),'Ma révision ne doit plus dépendre de la présence de l’ancien dashboard');
-for(const token of ['VERSION_DATES','v8316Change:{type:\'resource\'','v8317Change:{type:\'app\'','v8312-news-date','decorateSettingsDates','dateForTitle','06/10/2026'])assert.ok(homeResources.includes(token),`Dates nouveautés incomplètes: ${token}`);
+for(const token of ['VERSION_DATES','v8316Change:{type:\'resource\'','v8317Change:{type:\'app\'','v8320Change:{type:\'app\'','v8321Change:{type:\'resource\'','function pedagogicalCopy(copy)','v8312-news-date','decorateSettingsDates','dateForTitle','06/10/2026'])assert.ok(homeResources.includes(token),`Dates/nature des nouveautés incomplètes: ${token}`);
 const releaseLog=read(releaseChangelog);assert.match(releaseLog,/dataset\.date='20\d{2}-\d{2}-\d{2}'/,'Le changelog courant doit embarquer sa date ISO');
 
 const baseChangelog=read('changelog-v742.js');
@@ -73,6 +73,6 @@ for(const token of ["if(!$('v742Changelog'))window.IFSI_CHANGELOG?.refresh?.()",
 assert.ok(!startup.includes('ticks>=80'),'La boucle de synchronisation accueil ne doit plus durer 8 secondes');
 
 const settings=read('v87-settings.js');
-for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()'])assert.ok(settings.includes(token),`Journal technique Paramètres incomplet: ${token}`);
+for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()','id="v87Whatsapp"','function latestResourceAnnouncement()','https://wa.me/?text='])assert.ok(settings.includes(token),`Paramètres/journal/partage WhatsApp incomplet: ${token}`);
 
 console.log(`✅ Régression UX et cohérence release contrôlées pour V${meta.version} build ${meta.build}`);
