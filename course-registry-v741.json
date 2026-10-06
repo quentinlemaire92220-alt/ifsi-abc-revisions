@@ -1,5 +1,5 @@
 {
-  "version": "8.27",
+  "version": "8.30.16",
   "courses": [
     {
       "id": "biomolecules",
@@ -460,6 +460,18 @@
       ],
       "domain": "B",
       "ue": "B1"
+    },
+    {
+      "id": "introduction_droit",
+      "label": "Introduction au droit",
+      "domain": "A",
+      "ue": "A2",
+      "aliases": [
+        "Introduction au droit",
+        "Droit Introduction Au Droit",
+        "Sources et mise en œuvre du droit",
+        "Introduction au droit - sources et mise en œuvre du droit"
+      ]
     }
   ],
   "auditBaseline": {
