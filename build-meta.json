@@ -1,6 +1,6 @@
 {
-  "version": "8.30.24",
-  "build": "8324",
+  "version": "8.30.25",
+  "build": "8325",
   "releasedAt": "2026-10-06",
-  "summary": "Ajoute un indicateur de provenance sur les fiches réalisées sans support officiel, à partir de captures, notes ou transcriptions du cours."
+  "summary": "Fiabilise les corrections QCM : maximum 3 bonnes réponses au runtime et contrôle renforcé de la cohérence réponse ↔ explication."
 }

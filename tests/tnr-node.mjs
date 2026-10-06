@@ -9,6 +9,25 @@ const keepQuestion=q=>{const t=q?.question||'';if(q?.id==='pharmaco_031')return 
 function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
 function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
+function normalizeMaxThreeAnswers(q){
+ if(!q||q.answerCountNormalized===true||!Array.isArray(q.answers)||!Array.isArray(q.choices)||q.answers.length<=3)return q;
+ if(q.answers.length!==4||q.choices.length!==5)return q;
+ const out={...q,choices:[...q.choices],answers:[...q.answers]};
+ const letters='ABCDE',good=[...new Set(out.answers)].sort((a,b)=>a-b);
+ if(good.length!==4)return out;
+ const original=[...out.choices],all=[0,1,2,3,4],key=a=>a.join(',');
+ const combos=all.map(omit=>all.filter(i=>i!==omit));
+ const shift=Array.from(String(out.id||'')).reduce((n,c)=>(n+c.charCodeAt(0))%5,0);
+ const ordered=combos.slice(shift).concat(combos.slice(0,shift)),target=key(good),answerIndex=ordered.findIndex(c=>key(c)===target);
+ assert(answerIndex>=0,`Combinaison 4 réponses introuvable: ${out.id}`);
+ const refs=original.map((choice,i)=>`${letters[i]}. ${choice}`).join(' • ');
+ out.question=`${String(out.question||'').trim()} — Repères : ${refs} — Quelle combinaison regroupe toutes les bonnes réponses ?`;
+ out.choices=ordered.map(c=>c.map(i=>letters[i]).join(' + '));
+ out.answers=[answerIndex];
+ out.explanation=`${String(out.explanation||'').trim()} Combinaison correcte : ${good.map(i=>letters[i]).join(' + ')}.`;
+ out.answerCountNormalized=true;
+ return out;
+}
 let rawOver3=0,rawThreeOfFour=0,rawMissingExplanation=0,rawAudited=0;
 function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id,`Question brute sans ID dans ${p}`);assert(typeof q?.question==='string'&&q.question.trim(),`Énoncé brut absent ${p}: ${q?.id||'sans-id'}`);assert(Array.isArray(q?.choices)&&q.choices.length>=4&&q.choices.length<=5,`Nombre de propositions brut invalide ${p}: ${q.id} (${q?.choices?.length??'∅'})`);assert(Array.isArray(q?.answers)&&q.answers.length>=1,`Réponse brute absente ${p}: ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Index brut invalide ${p}: ${q.id}`);assert(q.answers.length<q.choices.length,`Toutes les propositions sont correctes dans la source ${p}: ${q.id}`);if(typeof q.explanation!=='string'||!q.explanation.trim())rawMissingExplanation++;if(q.answers.length>3)rawOver3++;if(q.choices.length===4&&q.answers.length===3)rawThreeOfFour++}
 
@@ -31,6 +50,8 @@ base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=overr
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const overrideIds=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...finalOverride)}
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
+for(let i=0;i<runtime.length;i++)runtime[i]=normalizeMaxThreeAnswers(runtime[i]);
+const runtimeNormalizedFour=runtime.filter(q=>q.answerCountNormalized===true).length;
 const schemaIds=['resp_003','resp_013','resp_015'];
 const schemaSource=read('schema-v10.js');
 const officialRespAssets=['resp-official-overview-learn.jpg','resp-official-overview-test.jpg','resp-official-bronchial-learn.jpg','resp-official-bronchial-test.jpg','resp-official-epithelium-test.jpg'];
@@ -44,7 +65,7 @@ for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues
 let runtimeThreeOfFour=0;
 for(const q of runtime){
   if((q.choices||[]).length===4&&(q.answers||[]).length===3)runtimeThreeOfFour++;
-  assert((q.answers||[]).length<=4,`Trop de bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
+  assert((q.answers||[]).length<=3,`Plus de 3 bonnes réponses dans ${q.id}: ${(q.answers||[]).length}`);
   assert((q.answers||[]).length<(q.choices||[]).length,`Toutes les propositions sont correctes dans ${q.id}`);
   assert(String(q.explanation||'').trim().length>=45,`Explication trop courte dans ${q.id}`);
   assert(!/→\s*[A-E](?:\s*,\s*[A-E])+/i.test(String(q.question||'')),`Réponse divulguée dans l'énoncé: ${q.id}`);
@@ -63,8 +84,8 @@ assert(pharmacologie.every(q=>['easy','medium','hard'].includes(q.difficulty)),'
 const pharmDiff=Object.fromEntries(['easy','medium','hard'].map(d=>[d,pharmacologie.filter(q=>q.difficulty===d).length]));
 assert(pharmDiff.easy===18&&pharmDiff.medium===30&&pharmDiff.hard===12,`Répartition difficultés pharmacologie invalide: ${JSON.stringify(pharmDiff)}`);
 const pharmAnswerCounts=Object.fromEntries([1,2,3,4].map(n=>[n,pharmacologie.filter(q=>q.answers.length===n).length]));
-assert(pharmAnswerCounts[1]===10&&pharmAnswerCounts[2]===33&&pharmAnswerCounts[3]===13&&pharmAnswerCounts[4]===4,`Répartition bonnes réponses pharmacologie invalide: ${JSON.stringify(pharmAnswerCounts)}`);
-assert(pharmAnswerCounts[4]/pharmacologie.length<=0.10,'Pharmacologie : plus de 10 % de questions à 4 bonnes réponses');
+assert(pharmAnswerCounts[1]===14&&pharmAnswerCounts[2]===33&&pharmAnswerCounts[3]===13&&pharmAnswerCounts[4]===0,`Répartition bonnes réponses pharmacologie invalide après normalisation: ${JSON.stringify(pharmAnswerCounts)}`);
+assert(pharmAnswerCounts[4]===0,'Pharmacologie : aucune question runtime ne doit conserver 4 bonnes réponses');
 assert(new Set(pharmacologie.map(q=>q.theme)).size===7,'Pharmacologie : découpage thématique incomplet');
 
 const respiratory=new Map(runtime.filter(q=>q.course==='Système respiratoire').map(q=>[q.id,q]));
@@ -79,8 +100,24 @@ assert(JSON.stringify(nervous.get('nervous_049')?.answers)==='[0,1,2]','Réponse
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_010')?.question||''),'nervous_010 doit être autonome sans schéma externe');
 assert(!/sch[ée]ma/i.test(nervous.get('nervous_031')?.question||''),'nervous_031 doit être autonome sans schéma externe');
 
+const semanticAnswerContracts={
+  v820_a1p3_001:[0],
+  v820_a1p3_003:[0,2,4],
+  v820_a1p3_028:[0,2,4],
+  v820_a1p4_008:[2,3,4],
+  v820_a1p4_020:[0,1,4],
+  v820_a1p4_027:[1,2,3]
+};
+const semanticRuntime=new Map(runtime.map(q=>[q.id,q]));
+for(const [id,answers] of Object.entries(semanticAnswerContracts)){
+  const q=semanticRuntime.get(id);
+  assert(q,`QCM de contrat sémantique absent: ${id}`);
+  assert(JSON.stringify(q.answers)===JSON.stringify(answers),`Réponse ↔ explication désynchronisée: ${id} (${JSON.stringify(q.answers)} ≠ ${JSON.stringify(answers)})`);
+  assert(String(q.explanation||'').trim().length>=80,`Explication sémantique insuffisante: ${id}`);
+}
+assert(read('sw.js').includes('function normalizeMaxThreeAnswers(q)'),'Normalisation runtime 1–3 bonnes réponses absente');
 const registry=json('course-registry-v741.json');
-assert(registry.version==='8.30.24','Registre version incorrecte');
+assert(registry.version==='8.30.25','Registre version incorrecte');
 assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
@@ -171,7 +208,7 @@ assert(!v82.includes("return (resources(def.id).infographics||[])"),'Une infogra
 assert(v82.includes('séparation stricte')&&v82.includes('return []'),'Règle V8.19 de séparation Infographies / Anatomie absente');
 const v83=read('v83-anatomy-interactive.js');for(const marker of ["const V='8.12'",'SYSTEM_META','systeme_urinaire','urinary001','urinary002','urinary003','1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V','1GdqA-Vw5zIWBZFzLTLfOrpatl9ayJ57J','155CIVMe4XaPcfkcGM8SS2MFW5XdL7Hpl','v83Zoom','v83ZoomOpen','bindZoom','zoomBy','pointermove','wheel','resp003','resp013','resp015','drive.google.com/thumbnail?id=1_xbRk8WEGKha8Mggn0br5oAFQnxveXtJ','drive.google.com/thumbnail?id=1G2agsVxnMlIeksAdV0-vguUE5bRKQ65Y','drive.google.com/thumbnail?id=11A147V9LowK3-PnJASkqmrfU-T1nTVIJ','resp-official-bronchial-learn.jpg','Support officiel du cours','Apprendre','S’entraîner','Tester','diagramMastery','toggleFavorite','openDiagram','ifsiabc_v83_anatomy_mastery_v1','IFSI_V83'])assert(v83.includes(marker),`Planche interactive V8.12 incomplète: ${marker}`);assert(!v83.includes('schema-resp003.svg')&&!schemaSource.includes('schema-resp003.svg'),'Les SVG respiratoires simplifiés ne doivent plus être actifs');
 if(skipped.length)console.warn('⚠️ Packs optionnels ignorés:',skipped.join(' | '));
-console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées • dette runtime 3/4: ${runtimeThreeOfFour}`);console.log(`✅ ${rawAudited} QCM bruts audités • questions à 4 bonnes réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
+console.log(`✅ TNR données: ${runtime.length+schemaIds.length} questions runtime contrôlées • 4 réponses normalisées: ${runtimeNormalizedFour} • dette runtime 3/4: ${runtimeThreeOfFour}`);console.log(`✅ ${rawAudited} QCM bruts audités • questions à 4 bonnes réponses: ${rawOver3} • dette 3/4: ${rawThreeOfFour} • dette explications absentes: ${rawMissingExplanation}`);
 console.log(`✅ Banque calculs: ${calcQuestions.length} questions exploitables`);
 console.log(`✅ ${vocals.length} vocaux et ${registry.courses.length} courseId contrôlés`);
 const v84=read('v84-respiratory-polish.js');for(const marker of ["const V='8.11'",'function decorate(){updateBodyClass()}'])assert(v84.includes(marker),`Couche respiratoire V8.11 incomplète: ${marker}`);
