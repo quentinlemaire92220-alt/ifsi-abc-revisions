@@ -1,5 +1,5 @@
 {
-  "version": "8.27",
+  "version": "8.30.16",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,15 +9,15 @@
   "mode": "validated_snapshot",
   "note": "V8.30.11 : ajout de la série complète de quatre vocaux du système urinaire dans le catalogue actif.",
   "expectedTotals": {
-    "courses": 40,
-    "sheets": 47,
+    "courses": 41,
+    "sheets": 48,
     "infographics": 138,
     "vocals": 42,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 80,
-    "qcmRuntimeMin": 1553
+    "qcmRuntimeMin": 1603
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -40,19 +40,19 @@
     "explicitCourseId": true,
     "duplicateDriveIdsAllowed": false
   },
-  "validatedAdditions": {
-    "courseId": "ist_hors_vih",
-    "sheetDriveId": "1_zClzZJJ3JPa78Vmjh9dkMpJVvGPlBQg",
-    "qcmPdfDriveId": "1VqIfoj1EaxKOorlx10UCw9LXtmlnirx3",
-    "supportDriveId": "163VRiKjTJ3ZxItGopvcswTx2ufMxLhig",
-    "interactiveQuestions": 56,
-    "excludedIllustratedQuestions": [
-      24,
-      31,
-      54,
-      57
-    ]
-  },
+  "validatedAdditions": [
+    {
+      "courseId": "introduction_droit",
+      "course": "Introduction au droit",
+      "qcm": 50,
+      "difficulty": {
+        "easy": 14,
+        "medium": 24,
+        "hard": 12
+      },
+      "sheetDriveId": "18SnJSqdmDfnacGWM0hZoZvbfMxyPApq2"
+    }
+  ],
   "auditLogicVersion": "8.30.10",
   "atlasBoardContracts": {
     "systeme_respiratoire": 8,
