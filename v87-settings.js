@@ -37,6 +37,9 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
  <div class="v87-card"><h3>🔒 Confidentialité</h3><p>Les statistiques d’usage sont anonymes et ne contiennent ni nom, ni email, ni score individuel.</p>
   <div class="v87-setting"><span><b>Statistiques anonymes</b><small id="v87AnalyticsText"></small></span><button id="v87Analytics" class="v87-switch" aria-label="Statistiques anonymes"></button></div>
  </div>
+ <div class="v87-card"><h3>📣 Partage des nouveautés</h3><p>Prépare l’annonce de la dernière ressource ajoutée. Tu choisis ensuite le groupe dans WhatsApp.</p>
+  <button id="v87Whatsapp" class="btn primary full">💬 Préparer l’annonce WhatsApp</button>
+ </div>
  <div class="v87-card"><h3>📱 Application</h3><p>Version installée, version publiée et cache PWA.</p>
   <div class="v87-versiongrid"><div class="v87-versionbox"><span class="small">Installée</span><b id="v87Installed">V${V}</b></div><div class="v87-versionbox"><span class="small">Serveur</span><b id="v87Server">…</b></div><div class="v87-versionbox"><span class="small">Build</span><b id="v87Build">…</b></div></div>
   <div class="v87-actions" style="margin-top:10px"><button id="v87Update" class="btn primary">↻ Vérifier</button><button id="v87ForceUpdate" class="btn outline">⚡ Forcer la mise à jour</button></div>
@@ -84,6 +87,19 @@ async function remoteMeta(){const r=await fetch('./build-meta.json?t='+Date.now(
 async function refreshVersionState(){try{const m=await remoteMeta();if($('v87Server'))$('v87Server').textContent='V'+(m.version||'?');if($('v87Build'))$('v87Build').textContent=m.build||'?';if($('v87Installed'))$('v87Installed').textContent='V'+(window.IFSI_APP_VERSION||V);if($('v87UpdateStatus'))$('v87UpdateStatus').textContent=(m.version===(window.IFSI_APP_VERSION||V))?'Application synchronisée avec le serveur.':'Une version plus récente est disponible.';return m}catch{if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Impossible de lire la version serveur.';return null}}
 async function updateWorker(){const reg=await navigator.serviceWorker?.getRegistration?.();if(reg)await reg.update();return reg}
 async function forceUpdate(){const b=$('v87ForceUpdate');if(b){b.disabled=true;b.textContent='Nettoyage…'}try{await updateWorker();if(window.caches){const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('ifsi-abc-')).map(k=>caches.delete(k)))}const reg=await navigator.serviceWorker?.getRegistration?.();if(reg?.waiting)reg.waiting.postMessage?.({type:'SKIP_WAITING'});if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Cache applicatif nettoyé • rechargement…';setTimeout(()=>location.replace(location.pathname+'?refresh='+Date.now()),350)}catch{if(b){b.disabled=false;b.textContent='⚡ Forcer la mise à jour'}if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Mise à jour forcée impossible.'}}
+function latestResourceAnnouncement(){
+ const entries=window.IFSI_V8312?.resourceEntries?.()||[],x=entries[0];if(!x)return '';
+ const label=String(x.title||'Nouvelle ressource').replace(/^V\d+\.\d+(?:\.\d+)?\s*[—-]\s*/,'').trim();
+ const lines=['📚 *Nouvelle ressource IFSI ABC Révisions*','',`*${label}*`];
+ if(x.copy)lines.push(x.copy);if(x.date)lines.push('📅 '+x.date);
+ const appUrl=/^https?:$/.test(location.protocol)?location.origin+location.pathname:'';
+ lines.push('',appUrl?'À retrouver dans l’application : '+appUrl:'À retrouver dans l’application.');
+ return lines.join('\n');
+}
+function shareLatestResourceWhatsapp(){
+ const message=latestResourceAnnouncement();if(!message)return alert('Aucune ressource récente à partager.');
+ const a=document.createElement('a');a.href='https://wa.me/?text='+encodeURIComponent(message);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
+}
 function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';versionLog();refreshVersionState()}
 function bind(){
  $('v87Dark').onclick=()=>{const on=localStorage.getItem(K.dark)!=='1';localStorage.setItem(K.dark,on?'1':'0');document.body.classList.toggle('v72-dark',on);render()};
@@ -91,6 +107,7 @@ function bind(){
  $('v87Analytics').onclick=()=>{const on=!(window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1');window.IFSI_V77?.setEnabled?.(on);if(!window.IFSI_V77?.setEnabled)localStorage.setItem(K.analytics,on?'0':'1');render()};
  $('v87ExportResults').onclick=()=>{if(typeof window.exportStats==='function')window.exportStats();else{const x=typeof window.st==='function'?window.st():{};download('IFSI_ABC_resultats.json',x)}};
  $('v87ExportBackup').onclick=backup;
+ $('v87Whatsapp').onclick=shareLatestResourceWhatsapp;
  $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await refreshVersionState();await updateWorker();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible`;if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Nouvelle version détectée. Utilise « Forcer la mise à jour » si le rechargement ne suffit pas.'}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
  $('v87ForceUpdate').onclick=forceUpdate;
  $('v87Reload').onclick=()=>location.reload();
