@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V='8.30.13',$=id=>document.getElementById(id);
+const V='8.30.14',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8314Change:{type:'app',badges:['UX/UI','CORRECTIF']},
   v8313Change:{type:'app',badges:['UX/UI']},
   v8312Change:{type:'app',badges:['UX/UI','TECHNIQUE']},
   v8311Change:{type:'resource',badges:['RESSOURCE']},
@@ -51,6 +52,10 @@ function css(){
   #v81Body .v8312-revision-kpi.voc b{color:#0b8e81}
   #v81Body .v8312-revision-kpi:disabled{opacity:.5;cursor:not-allowed}
   #v81Body .v8312-start{width:100%;margin-top:12px;padding:13px 15px!important;font-size:15px}
+  #v81Body{min-width:0!important}
+  #v81Body .v8309-quick,#v81Body .v8309-exam,#v81Body .v8309-goal{min-width:0!important}
+  #v81Body .v8309-exam .v81-actions{grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))!important}
+  #v81Body .v8309-exam .v81-actions>*{min-width:0!important}
   body.v72-dark .v8312-news-tab{background:#211e2a}
   body.v72-dark #v81Body .v8312-revision-kpi{background:#282332;border-color:#4a405c}
   @media(max-width:620px){
@@ -136,9 +141,16 @@ function startMainRevision(){
 }
 function revision(){
   const body=$('v81Body');if(!body)return false;
-  const dash=body.querySelector('.v8309-dashboard')||[...body.children].find(c=>c.classList?.contains('card')&&/Ton activité|Dashboard local/.test(c.textContent));
-  if(!dash)return false;
-  dash.classList.add('v8312-myrevision');
+  let dash=$('v8312MyRevision')||body.querySelector('.v8309-dashboard')||[...body.children].find(c=>c.classList?.contains('card')&&/Ton activité|Dashboard local/.test(c.textContent));
+  if(!dash){
+    dash=document.createElement('div');dash.className='card v8309-dashboard';dash.id='v8312MyRevision';
+    const custom=$('vcrCustom'),head=body.querySelector('.v8309-head')||[...body.children].find(c=>c.classList?.contains('v81-card')&&/Révision/.test(c.textContent));
+    if(custom&&custom.parentElement===body)body.insertBefore(dash,custom);
+    else if(head&&head.parentElement===body)head.insertAdjacentElement('afterend',dash);
+    else body.insertBefore(dash,body.firstChild);
+  }
+  dash.id='v8312MyRevision';
+  dash.classList.add('v8309-dashboard','v8312-myrevision');
   if(dash.dataset.v8312!=='1'){
     dash.dataset.v8312='1';
     dash.innerHTML=`<div class="v8312-revision-head"><b>🎯 Ma révision</b><div class="small" style="margin-top:4px">Tes éléments à travailler et tes ressources disponibles.</div></div><div class="v8312-revision-grid"><button id="v8312Err" type="button" class="v8312-revision-kpi err"><b id="v8312ErrN">0</b><span>Erreurs à revoir</span></button><button id="v8312Questions" type="button" class="v8312-revision-kpi q"><b id="v8312QuestionsN">0</b><span>Questions recommandées</span></button><button id="v8312Vocals" type="button" class="v8312-revision-kpi voc"><b id="v8312VocalsN">0</b><span>Vocaux disponibles</span></button></div><button id="v8312Start" type="button" class="btn primary v8312-start">▶ Commencer ma révision</button>`;
