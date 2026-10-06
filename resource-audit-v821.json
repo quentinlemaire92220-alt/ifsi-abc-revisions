@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.10 : audit fiabilisé avec 8 atlas explicitement contractés, lecture des IDs Drive thumbnail?id et détail QCM rendu.",
+  "note": "V8.30.11 : ajout de la série complète de quatre vocaux du système urinaire dans le catalogue actif.",
   "expectedTotals": {
     "courses": 40,
     "sheets": 47,
     "infographics": 138,
-    "vocals": 38,
+    "vocals": 42,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -53,7 +53,7 @@
       57
     ]
   },
-  "auditLogicVersion": "8.30.10",
+  "auditLogicVersion": "8.30.11",
   "atlasBoardContracts": {
     "systeme_respiratoire": 8,
     "systeme_cardiovasculaire": 8,
