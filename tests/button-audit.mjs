@@ -57,7 +57,7 @@ const suites=[
       "v814RespAtlas",
       "v824DigestiveAtlas",
       "v829LocomotorAtlas",
-      "window.IFSI_APP_VERSION||'8.30'"
+      "window.IFSI_APP_VERSION||'8.30.1'"
     ]
   },
   {
