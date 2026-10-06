@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import zlib from 'node:zlib';
+globalThis.window=globalThis;
+await import('../qcm-subthemes-v1.js');
 
 const read=p=>fs.readFileSync(p,'utf8');
 const json=p=>JSON.parse(read(p));
@@ -18,7 +20,7 @@ const seen=new Set(base.map(q=>q.id)),runtime=[...base];for(const q of extras)if
 
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const course=q=>q.course||q.theme||'Sans cours';
-const theme=q=>{const t=String(q.theme||'').trim(),c=String(q.course||'').trim();return t&&norm(t)!==norm(c)?t:'Général'};
+const theme=q=>window.IFSI_QCM_SUBTHEMES?.resolve?.(q)||(()=>{const t=String(q.theme||'').trim(),c=String(q.course||'').trim();return t&&norm(t)!==norm(c)?t:'Général'})();
 const map=new Map();
 for(const q of runtime){const c=course(q),t=theme(q),m=map.get(c)||new Map();m.set(t,(m.get(t)||0)+1);map.set(c,m)}
 const rows=[...map.entries()].map(([course,themes])=>{
@@ -26,6 +28,9 @@ const rows=[...map.entries()].map(([course,themes])=>{
   return {course,total:arr.reduce((s,x)=>s+x[1],0),themeCount:arr.length,largest:arr[0]?.[1]||0,themes:arr};
 }).sort((a,b)=>b.total-a.total);
 console.log(`✅ Audit thèmes runtime: ${runtime.length} QCM • ${rows.length} cours`);
+const single=rows.filter(r=>r.total>=20&&r.themeCount===1);console.log(`📊 Cours ≥20 QCM avec thème unique: ${single.length}`);
 for(const r of rows){
   console.log(`COURSE|${r.course}|${r.total}|${r.themeCount}|${r.largest}|${r.themes.map(([t,n])=>t+':'+n).join(' ; ')}`);
 }
+
+if(single.length)console.log('⚠️ Thèmes uniques restants: '+single.map(r=>r.course+' ('+r.total+')').join(' ; '));
