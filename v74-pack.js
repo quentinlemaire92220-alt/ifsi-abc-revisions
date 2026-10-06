@@ -121,7 +121,7 @@ function renderSearch74(){
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
+  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
   for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
@@ -182,7 +182,7 @@ function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
 
 function resourceCard74(x,type){
-  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId);return `<div class="v74-resource"><div><b>${esc74(label)}</b></div><div class="small">${esc74(course?.label||x.ue||'')} • ${type==='sheet'?'Fiche de révision':'Infographie'}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
+  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${type==='sheet'?'Fiche de révision':'Infographie'}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
