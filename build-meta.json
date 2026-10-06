@@ -1,6 +1,6 @@
 {
-  "version": "8.30.18",
-  "build": "8318",
+  "version": "8.30.19",
+  "build": "8319",
   "releasedAt": "2026-10-06",
-  "summary": "Ajoute 26 planches HD du microscopique aux tissus dans Anatomie & Physiologie."
+  "summary": "Hotfix : désactive temporairement l’injection automatique des 26 nouvelles planches après crash."
 }
