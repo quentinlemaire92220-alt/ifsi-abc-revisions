@@ -1,3 +1,4 @@
+// Audit qualité des doublons QCM actifs.
 import fs from 'node:fs';
 import zlib from 'node:zlib';
 import assert from 'node:assert/strict';
