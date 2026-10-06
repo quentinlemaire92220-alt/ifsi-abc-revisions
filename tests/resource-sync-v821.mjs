@@ -41,7 +41,8 @@ const atlasSpecs=[
  ['v817-immune-atlas.js','immu_atlas_',8],
  ['v822-nervous-atlas.js','nerv_atlas_',8],
  ['v823-cardiovascular-atlas.js','cardio_atlas_',8],
- ['v824-digestive-atlas.js','digest_atlas_',12]
+ ['v824-digestive-atlas.js','digest_atlas_',12],
+ ['v829-locomotor-atlas.js','loco_atlas_',20]
 ];
 let atlasBoardCount=0;const atlasFiles=[];
 for(const [p,prefix,expected] of atlasSpecs){
@@ -53,6 +54,7 @@ for(const [p,prefix,expected] of atlasSpecs){
  for(const m of src.matchAll(/\bfile:'([^']+)'/g))atlasFiles.push(m[1]);
 }
 const uniqueAtlasFiles=[...new Set(atlasFiles)];
+for(let i=1;i<=20;i++){const p=`assets/locomotor/locomotor-${String(i).padStart(2,'0')}.webp`;assert(fs.existsSync(p),`Planche locomoteur locale absente: ${p}`)}
 assert(atlasBoardCount>=snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards} minimum`);
 
 const infoIds=new Set(infos.map(x=>driveId(x.url)).filter(Boolean));
