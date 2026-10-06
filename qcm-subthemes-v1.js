@@ -124,6 +124,18 @@ const R={
     [1,18,'Goutte : clinique, diagnostic et prise en charge'],[19,28,'Chondrocalcinose'],
     [29,40,'Ostéoporose : risques, fractures et diagnostic'],[41,45,'Ostéoporose : prévention et prise en soins']
   ]),
+  infections_neuro_meningees:q=>pick(q.id,'v820_neuinf_',[
+    [1,16,'Causes, physiopathologie et épidémiologie'],[17,30,'Clinique et diagnostic des infections neuro-méningées'],
+    [31,40,'Ponction lombaire, traitement et rôle soignant']
+  ]),
+  rhumatismes_inflammatoires:q=>pick(q.id,'v820_rhuminf_',[
+    [1,11,'Inflammation, douleur et diagnostic articulaire'],[12,16,'Polyarthrite rhumatoïde'],
+    [17,20,'Spondyloarthrites'],[21,24,'Lupus érythémateux systémique'],[25,36,'Traitements, suivi et rôle infirmier']
+  ]),
+  competences_psychosociales:q=>pick(q.id,'v820_cps_',[
+    [1,12,'Définition et familles des compétences psychosociales'],[13,20,'Communication et posture professionnelle'],
+    [21,27,'Situation de soin, refus et adaptation'],[28,30,'Travail en équipe et bien-être du soignant']
+  ]),
   diagnostic_virologie:q=>pick(q.id,'diagnostic_virologie_',[
     [1,9,'Principes et prélèvements virologiques'],[10,19,'Diagnostic direct et détection virale'],[20,39,'PCR, charge virale et séquençage'],
     [40,50,'Diagnostic indirect et sérologie']
