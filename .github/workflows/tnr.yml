@@ -78,6 +78,7 @@ jobs:
           node --check v8307-changelog.js
           node --check v8308-changelog.js
           node --check v8309-changelog.js
+          node --check v8310-changelog.js
           node --check v8303-home-startup.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
