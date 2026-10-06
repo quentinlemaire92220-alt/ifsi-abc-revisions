@@ -1,5 +1,5 @@
 {
-  "version": "8.30.22",
+  "version": "8.30.23",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Snapshot aligné sur les 106 planches HD et la nouvelle fiche B2 « Psychologie de la santé ».",
+  "note": "Snapshot aligné sur les 106 planches HD et le nouveau cours « Introduction à la pharmacologie » (fiche + 60 QCM).",
   "expectedTotals": {
-    "courses": 42,
-    "sheets": 49,
+    "courses": 43,
+    "sheets": 50,
     "infographics": 142,
     "vocals": 42,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1603
+    "qcmRuntimeMin": 1663
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -71,6 +71,18 @@
       "courseId": "psychologie_sante",
       "course": "Psychologie de la santé",
       "sheetDriveId": "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q"
+    },
+    {
+      "courseId": "pharmacologie",
+      "course": "Introduction à la pharmacologie",
+      "qcm": 60,
+      "difficulty": {
+        "easy": 18,
+        "medium": 30,
+        "hard": 12
+      },
+      "sheetDriveId": "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_",
+      "qcmDriveId": "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm"
     }
   ],
   "auditLogicVersion": "8.30.10",
