@@ -39,6 +39,9 @@ jobs:
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 
+      - name: Audit fonctionnel des corrections QCM
+        run: node tests/qcm-correction-audit.mjs
+
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
 
