@@ -117,7 +117,7 @@ for(const [id,answers] of Object.entries(semanticAnswerContracts)){
 }
 assert(read('sw.js').includes('function normalizeMaxThreeAnswers(q)'),'Normalisation runtime 1–3 bonnes réponses absente');
 const registry=json('course-registry-v741.json');
-assert(registry.version==='8.30.25','Registre version incorrecte');
+assert(registry.version===json('build-meta.json').version,'Registre version incorrecte');
 assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre trop petit');
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');

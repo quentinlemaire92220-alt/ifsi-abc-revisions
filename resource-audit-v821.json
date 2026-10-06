@@ -1,5 +1,5 @@
 {
-  "version": "8.30.25",
+  "version": "8.30.26",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Snapshot aligné sur le catalogue actif ; 7 fiches sans support officiel portent désormais une provenance explicite (captures, notes ou transcription).",
+  "note": "V8.30.26 : ajout de 5 vocaux actifs pour l’introduction à la pharmacologie.",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
     "infographics": 147,
-    "vocals": 42,
+    "vocals": 47,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -82,7 +82,15 @@
         "hard": 12
       },
       "sheetDriveId": "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_",
-      "qcmDriveId": "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm"
+      "qcmDriveId": "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm",
+      "vocals": 5,
+      "vocalDriveIds": [
+        "14LO1OLJdtnyVPBsMKEclb6jY6tMXHKS2",
+        "1m5OEJjaR9rfHYUTtLxXS9JLBE2P8PcpP",
+        "1cPBkdsxktiF5QUMrueQsNWO4dyWfRYbo",
+        "1UvkvREVMHXHqIHhtvsSmkw6Z-yXNyhK2",
+        "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew"
+      ]
     }
   ],
   "auditLogicVersion": "8.30.10",
