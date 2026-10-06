@@ -13,7 +13,7 @@ const $79=id=>document.getElementById(id);
 const esc79=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm79=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const qCourse79=q=>q?.course||q?.theme||'';
-const themeOf=q=>{const t=String(q?.theme||'').trim(),c=String(q?.course||'').trim();return t&&(!c||norm79(t)!==norm79(c))?t:'Général'};
+const themeOf=q=>window.IFSI_QCM_SUBTHEMES?.resolve?.(q)||(()=>{const t=String(q?.theme||'').trim(),c=String(q?.course||'').trim();return t&&(!c||norm79(t)!==norm79(c))?t:'Général'})();
 
 function difficultyOf(q){
   if(['easy','medium','hard'].includes(q?.difficulty))return q.difficulty;
