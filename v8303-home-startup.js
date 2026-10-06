@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.30.3',$=id=>document.getElementById(id);
+const V='8.30.4',$=id=>document.getElementById(id);
 function css(){
  if($('v8303css'))return;
  const s=document.createElement('style');s.id='v8303css';s.textContent=`
@@ -19,7 +19,7 @@ function normalizeHomeState(){
 }
 function reapplyChangelog(){
  window.IFSI_CHANGELOG?.refresh?.();
- for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG'])window[k]?.patch?.();
+ for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG'])window[k]?.patch?.();
 }
 function ensureImprove(){
  let card=document.querySelector('.v72-feedback');
