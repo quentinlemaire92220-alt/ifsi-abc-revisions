@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.28', $=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30', $=id=>document.getElementById(id);
 const DARK='ifsiabc_v72_dark',TIMER='ifsiabc_v72_timer';
 function css(){if($('v86css'))return;const s=document.createElement('style');s.id='v86css';s.textContent=`
 body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{display:none!important}
@@ -26,7 +26,7 @@ function tools(){
  <button id="v86Settings" class="v86-tool"><span class="i">⚙️</span><span><b>Réglages</b><small>Affichage et application</small></span></button>`;
  const today=host.querySelector('.v76-today');today?.insertAdjacentElement('afterend',box)}
  $('v86Search').onclick=()=>{window.IFSI_V81?.showHub?.();setTimeout(()=>{if(window.IFSI_V828?.openSearch)return window.IFSI_V828.openSearch();$('v828SearchToggle')?.click();const el=$('v81S');el?.scrollIntoView({behavior:'smooth',block:'center'});el?.focus()},180)};
- $('v86Settings').onclick=openSettings;
+ $('v86Settings').onclick=()=>window.IFSI_V87?.showSettings?.()||openSettings();
 }
 function dialog(){
  let d=$('v86SettingsDialog');if(d)return d;d=document.createElement('dialog');d.id='v86SettingsDialog';d.className='v86-dialog';d.innerHTML=`<div class="v86-sheet">
