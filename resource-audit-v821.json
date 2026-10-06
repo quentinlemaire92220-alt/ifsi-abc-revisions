@@ -1,5 +1,5 @@
 {
-  "version": "8.30.18",
+  "version": "8.30.21",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,10 +7,10 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Snapshot aligné sur les 26 nouvelles planches HD du microscopique aux tissus, rangées dans 06 - Planches anatomiques.",
+  "note": "Snapshot aligné sur les 106 planches HD et la nouvelle fiche B2 « Psychologie de la santé ».",
   "expectedTotals": {
-    "courses": 41,
-    "sheets": 48,
+    "courses": 42,
+    "sheets": 49,
     "infographics": 142,
     "vocals": 42,
     "v820QcmImported": 1174,
@@ -66,6 +66,11 @@
         "diagnostic_bacteriologie",
         "virus"
       ]
+    },
+    {
+      "courseId": "psychologie_sante",
+      "course": "Psychologie de la santé",
+      "sheetDriveId": "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q"
     }
   ],
   "auditLogicVersion": "8.30.10",
