@@ -86,7 +86,7 @@ function currentQuestion(){try{return session?.[i]||null}catch{return null}}
 function cleanMetaText(v){return String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
 function updateQuizMeta(){
   const q=currentQuestion(),meta=document.getElementById('meta');if(!q||!meta)return;
-  const course=String(q.course||'').trim(),theme=String(q.theme||'').trim();
+  const course=String(q.course||'').trim(),theme=String(window.IFSI_QCM_SUBTHEMES?.resolve?.(q)||q.theme||'').trim();
   meta.textContent=!theme||cleanMetaText(theme)===cleanMetaText(course)||cleanMetaText(theme)==='general'?course:`${course} • ${theme}`;
 }
 function updateFavUI(){
