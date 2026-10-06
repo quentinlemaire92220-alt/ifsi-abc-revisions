@@ -48,6 +48,9 @@ jobs:
       - name: Audit des doublons QCM
         run: node tests/qcm-duplicates-audit.mjs
 
+      - name: Audit de granularité des thèmes QCM
+        run: node tests/qcm-theme-audit.mjs
+
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
 
