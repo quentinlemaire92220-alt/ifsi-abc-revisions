@@ -12,12 +12,13 @@ function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[
 function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{')){const x=parsePackText(source);return Array.isArray(x)?x:(x.questions||[])}const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');const x=parsePackText(txt);return Array.isArray(x)?x:(x.questions||[])}
 
-const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\b(?:le|la|les|un|une|des|du|de|d|l|au|aux|et|ou|dans|sur|pour|par|avec|sans|est|sont|etre|concernant|parmi|selon|quel|quelle|quels|quelles)\b/g,' ').replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
-const tokens=s=>new Set(norm(s).split(' ').filter(x=>x.length>=3));
+const exactNorm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
+const looseNorm=s=>exactNorm(s).replace(/\b(?:le|la|les|un|une|des|du|de|d|l|au|aux|et|ou|dans|sur|pour|par|avec|sans|est|sont|etre|concernant|parmi|selon|quel|quelle|quels|quelles)\b/g,' ').replace(/\s+/g,' ').trim();
+const tokens=s=>new Set(looseNorm(s).split(' ').filter(x=>x.length>=3));
 const jaccard=(a,b)=>{let inter=0;for(const x of a)if(b.has(x))inter++;const union=new Set([...a,...b]).size;return union?inter/union:0};
 const course=q=>q.courseId||q.course||q.theme||'sans-cours';
 const answerSig=q=>(q.answers||[]).slice().sort((a,b)=>a-b).join(',');
-const choiceSig=q=>(q.choices||[]).map(norm).join('||');
+const choiceSig=q=>(q.choices||[]).map(exactNorm).join('||');
 const sourceById=new Map();
 
 let base=[];for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)sourceById.set(q.id,p);base.push(...a)}
@@ -32,19 +33,19 @@ const duplicateIds=[...idCounts].filter(([,n])=>n>1);
 assert.equal(duplicateIds.length,0,`IDs dupliqués runtime: ${duplicateIds.map(([id])=>id).join(', ')}`);
 
 const exactMap=new Map();
-for(const q of runtime){const k=norm(q.question);if(!k)continue;(exactMap.get(k)||exactMap.set(k,[]).get(k)).push(q)}
+for(const q of runtime){const k=exactNorm(q.question);if(!k)continue;(exactMap.get(k)||exactMap.set(k,[]).get(k)).push(q)}
 const exact=[...exactMap.values()].filter(g=>new Set(g.map(q=>q.id)).size>1);
 
 const samePayload=[];
 const payloadMap=new Map();
-for(const q of runtime){const k=norm(q.question)+'###'+choiceSig(q)+'###'+answerSig(q);(payloadMap.get(k)||payloadMap.set(k,[]).get(k)).push(q)}
+for(const q of runtime){const k=exactNorm(q.question)+'###'+choiceSig(q)+'###'+answerSig(q);(payloadMap.get(k)||payloadMap.set(k,[]).get(k)).push(q)}
 for(const g of payloadMap.values())if(new Set(g.map(q=>q.id)).size>1)samePayload.push(g);
 
 const byCourse=new Map();
 for(const q of runtime){const k=course(q);(byCourse.get(k)||byCourse.set(k,[]).get(k)).push(q)}
 const near=[];
 for(const [c,qs] of byCourse){
-  const prepared=qs.map(q=>({q,t:tokens(q.question),n:norm(q.question)})).filter(x=>x.t.size>=4);
+  const prepared=qs.map(q=>({q,t:tokens(q.question),n:exactNorm(q.question)})).filter(x=>x.t.size>=4);
   for(let i=0;i<prepared.length;i++)for(let j=i+1;j<prepared.length;j++){
     const a=prepared[i],b=prepared[j];if(a.n===b.n)continue;
     const ratio=Math.min(a.t.size,b.t.size)/Math.max(a.t.size,b.t.size);if(ratio<.65)continue;
