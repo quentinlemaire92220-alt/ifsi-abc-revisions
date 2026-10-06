@@ -19,7 +19,7 @@ function normalizeHomeState(){
 }
 function reapplyChangelog(){
  window.IFSI_CHANGELOG?.refresh?.();
- for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG'])window[k]?.patch?.();
+ for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG'])window[k]?.patch?.();
 }
 function ensureImprove(){
  let card=document.querySelector('.v72-feedback');
