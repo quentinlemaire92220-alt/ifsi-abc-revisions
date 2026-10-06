@@ -18,10 +18,11 @@ const jaccard=(a,b)=>{let inter=0;for(const x of a)if(b.has(x))inter++;const uni
 const course=q=>q.courseId||q.course||q.theme||'sans-cours';
 const answerSig=q=>(q.answers||[]).slice().sort((a,b)=>a-b).join(',');
 const choiceSig=q=>(q.choices||[]).map(norm).join('||');
+const sourceById=new Map();
 
-let base=[];for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
-let extras=[];for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p))extras.push(...decodePackFile(p))}
-let override=[];for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p))override.push(...decodePackFile(p))}
+let base=[];for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)sourceById.set(q.id,p);base.push(...a)}
+let extras=[];for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p)){const a=decodePackFile(p);for(const q of a)if(!sourceById.has(q.id))sourceById.set(q.id,p);extras.push(...a)}}
+let override=[];for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p)){const a=decodePackFile(p);for(const q of a)sourceById.set(q.id,p);override.push(...a)}}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const ids=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!ids.has(q.id));extras.push(...finalOverride)}
 const seen=new Set(base.map(q=>q.id)),runtime=[...base];for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
@@ -51,22 +52,26 @@ for(const [c,qs] of byCourse){
   }
 }
 near.sort((x,y)=>y.sim-x.sim);
+const nearCalc=near.filter(x=>x.course==='calculs_doses_mathematiques');
+const nearContent=near.filter(x=>x.course!=='calculs_doses_mathematiques');
+const exactSameCourse=exact.filter(g=>new Set(g.map(course)).size===1);
 
-console.log(`✅ Audit doublons runtime: ${runtime.length} QCM • IDs dupliqués 0 • groupes d’énoncés identiques ${exact.length} • payloads strictement identiques ${samePayload.length} • paires quasi identiques ${near.length}`);
+console.log(`✅ Audit doublons runtime: ${runtime.length} QCM • IDs dupliqués 0 • groupes d’énoncés identiques ${exact.length} (même cours ${exactSameCourse.length}) • payloads strictement identiques ${samePayload.length} • quasi-doublons contenu ${nearContent.length} • variantes calcul ${nearCalc.length}`);
 if(exact.length){
   console.log('🔁 Énoncés identiques avec IDs différents:');
-  for(const g of exact.slice(0,30))console.log(' - '+g.map(q=>q.id+' ['+course(q)+']').join(' ↔ ')+' :: '+g[0].question);
+  for(const g of exact.slice(0,30))console.log(' - '+g.map(q=>q.id+' ['+course(q)+'] {'+(sourceById.get(q.id)||'?')+'}').join(' ↔ ')+' :: '+g[0].question);
 }
 if(samePayload.length){
   console.log('🧬 Doublons stricts question + choix + réponses:');
   for(const g of samePayload.slice(0,30))console.log(' - '+g.map(q=>q.id+' ['+course(q)+']').join(' ↔ '));
 }
-if(near.length){
-  console.log('🟠 Quasi-doublons (même cours, similarité ≥ 0,86):');
-  for(const x of near.slice(0,40))console.log(` - ${x.sim.toFixed(2)} • ${x.a.id} ↔ ${x.b.id} [${x.course}] :: "${x.a.question}" / "${x.b.question}"`);
+if(nearContent.length){
+  console.log('🟠 Quasi-doublons de contenu hors exercices de calcul (similarité ≥ 0,86):');
+  for(const x of nearContent.slice(0,40))console.log(` - ${x.sim.toFixed(2)} • ${x.a.id} {${sourceById.get(x.a.id)||'?'}} ↔ ${x.b.id} {${sourceById.get(x.b.id)||'?'}} [${x.course}] :: "${x.a.question}" / "${x.b.question}"`);
 }
+if(nearCalc.length)console.log(`ℹ️ ${nearCalc.length} paires proches sont des variantes numériques de calcul conservées comme exercices distincts.`);
 
 // Plafonds de non-régression : à réduire après nettoyage, jamais augmenter.
 assert.ok(exact.length<=9999,'Plafond temporaire exact dépassé');
 assert.ok(samePayload.length<=9999,'Plafond temporaire payload dépassé');
-assert.ok(near.length<=9999,'Plafond temporaire quasi-doublons dépassé');
+assert.ok(nearContent.length<=9999,'Plafond temporaire quasi-doublons contenu dépassé');
