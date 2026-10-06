@@ -91,6 +91,7 @@ for(const id of allIds)if(forbiddenLegacy.has(id))errors.push(`Ancienne copie r�
 const count=(id,key)=>byCourse[id]?.[key]||0;
 if(count('introduction_droit','qcm')!==50)errors.push(`Introduction au droit: 50 QCM attendus, ${count('introduction_droit','qcm')} trouvés`);
 if(count('introduction_droit','sheets')<1)errors.push('Introduction au droit: fiche manquante');
+if(count('psychologie_sante','sheets')<1)errors.push('Psychologie de la santé: fiche manquante');
 if(count('systeme_cardiovasculaire','sheets')<1)errors.push('Système cardiovasculaire: fiche manquante');
 if(count('systeme_digestif','sheets')<2)errors.push('Système digestif incomplet: moins de 2 fiches');
 if(count('systeme_digestif','infographics')<9)errors.push('Système digestif incomplet: moins de 9 infographies');
