@@ -58,6 +58,7 @@ jobs:
           node --check v826-changelog.js
           node --check v821-resource-audit.js
           node --check v828-revision-clean.js
+          node --check v8309-revision-redesign.js
           node --check v828-changelog.js
           node --check v829-changelog.js
           node --check v830-changelog.js
@@ -69,6 +70,7 @@ jobs:
           node --check v8306-changelog.js
           node --check v8307-changelog.js
           node --check v8308-changelog.js
+          node --check v8309-changelog.js
           node --check v8303-home-startup.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
