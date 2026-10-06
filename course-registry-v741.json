@@ -484,6 +484,18 @@
       ],
       "domain": "B",
       "ue": "B2"
+    },
+    {
+      "id": "pharmacologie",
+      "label": "Pharmacologie",
+      "aliases": [
+        "Pharmacologie",
+        "Pharmacologie Partie01",
+        "Pharmacologie générale",
+        "Pharmacologie generale"
+      ],
+      "domain": "B",
+      "ue": "B1"
     }
   ],
   "auditBaseline": {
