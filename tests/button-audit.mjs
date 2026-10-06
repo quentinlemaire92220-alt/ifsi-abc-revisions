@@ -51,12 +51,13 @@ const suites=[
       "$('v87ExportResults').onclick",
       "$('v87ExportBackup').onclick",
       "$('v87Update').onclick",
+      "$('v87ForceUpdate').onclick",
       "$('v87Reload').onclick",
       "$('v87Improve').onclick",
       "v814RespAtlas",
       "v824DigestiveAtlas",
       "v829LocomotorAtlas",
-      "window.IFSI_APP_VERSION||'8.29'"
+      "window.IFSI_APP_VERSION||'8.30'"
     ]
   },
   {
@@ -136,7 +137,7 @@ for(const [file,prefix] of [
   ['v822-nervous-atlas.js','v822'],
   ['v823-cardiovascular-atlas.js','v823'],
   ['v824-digestive-atlas.js','v824'],
-  ['v829-locomotor-atlas.js','v829']
+  ['v829-locomotor-atlas.js','v830']
 ]){
   const src=read(file);
   for(const marker of [

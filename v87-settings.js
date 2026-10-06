@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.29',$=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30',$=id=>document.getElementById(id);
 const K={dark:'ifsiabc_v72_dark',timer:'ifsiabc_v72_timer',analytics:'ifsiabc_analytics_optout_v1'};
 function css(){if($('v87css'))return;const s=document.createElement('style');s.id='v87css';s.textContent=`
 #v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(680px,calc(100% - 20px));display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
@@ -20,7 +20,7 @@ body.v87-ready nav:not(#v87Nav){display:none!important}
 .v87-switch.on{background:#7046d9}.v87-switch.on:after{left:22px}
 .v87-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.v87-actions .btn{width:100%}
 .v87-about{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:10px}
-.v87-ver{font-size:24px;font-weight:900;color:#6941c6}.v87-log{margin-top:10px}.v87-log details{border-top:1px solid var(--line);padding:9px 0}.v87-log details:first-child{border-top:0}.v87-log summary{cursor:pointer;font-weight:800}.v87-log .small{line-height:1.55;margin-top:6px}
+.v87-ver{font-size:24px;font-weight:900;color:#6941c6}.v87-versiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v87-versionbox{border:1px solid var(--line);border-radius:12px;padding:9px;background:var(--card)}.v87-versionbox b{display:block;font-size:15px;margin-top:2px}.v87-log{margin-top:10px}.v87-log details{border-top:1px solid var(--line);padding:9px 0}.v87-log details:first-child{border-top:0}.v87-log summary{cursor:pointer;font-weight:800}.v87-log .small{line-height:1.55;margin-top:6px}
 @media(max-width:680px){.v87-grid{grid-template-columns:1fr}.v87-card{padding:13px}#v87Nav{width:calc(100% - 16px);bottom:7px}.v87-actions{grid-template-columns:1fr}#v87Nav button{font-size:10px}}
 `;document.head.appendChild(s)}
 function oldNav(){return document.querySelector('.app>nav:not(#v87Nav)')}
@@ -37,8 +37,10 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
  <div class="v87-card"><h3>🔒 Confidentialité</h3><p>Les statistiques d’usage sont anonymes et ne contiennent ni nom, ni email, ni score individuel.</p>
   <div class="v87-setting"><span><b>Statistiques anonymes</b><small id="v87AnalyticsText"></small></span><button id="v87Analytics" class="v87-switch" aria-label="Statistiques anonymes"></button></div>
  </div>
- <div class="v87-card"><h3>📱 Application</h3><p>Version installée, mise à jour et informations techniques.</p>
-  <div class="v87-about"><div><div class="small">Version actuelle</div><div class="v87-ver">V${V}</div></div><button id="v87Update" class="btn primary">↻ Vérifier</button></div>
+ <div class="v87-card"><h3>📱 Application</h3><p>Version installée, version publiée et cache PWA.</p>
+  <div class="v87-versiongrid"><div class="v87-versionbox"><span class="small">Installée</span><b id="v87Installed">V${V}</b></div><div class="v87-versionbox"><span class="small">Serveur</span><b id="v87Server">…</b></div><div class="v87-versionbox"><span class="small">Build</span><b id="v87Build">…</b></div></div>
+  <div class="v87-actions" style="margin-top:10px"><button id="v87Update" class="btn primary">↻ Vérifier</button><button id="v87ForceUpdate" class="btn outline">⚡ Forcer la mise à jour</button></div>
+  <div id="v87UpdateStatus" class="small" style="margin-top:8px">Vérification automatique à l’ouverture.</div>
   <div class="v87-actions" style="margin-top:10px"><button id="v87Improve" class="btn outline">💡 Proposer une amélioration</button><button id="v87Reload" class="btn outline">⟳ Recharger l’application</button></div>
  </div>
 </div>
@@ -67,14 +69,19 @@ function switchState(id,on){$(id)?.classList.toggle('on',!!on);$(id)?.setAttribu
 function download(name,obj){const a=document.createElement('a'),b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download(`IFSI_ABC_sauvegarde_V${V}.json`,data)}
 function versionLog(){const box=$('v87Log');if(!box)return;const src=$('v742Changelog')?.querySelector('details .small');if(src){box.innerHTML=src.innerHTML;return}box.innerHTML='<details open><summary>V8.8 — Ressources auditées</summary><div class="small">Catalogue dédoublonné, rattachements explicites et noms d’affichage normalisés.</div></details>'}
-function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';versionLog()}
+async function remoteMeta(){const r=await fetch('./build-meta.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('version');return r.json()}
+async function refreshVersionState(){try{const m=await remoteMeta();if($('v87Server'))$('v87Server').textContent='V'+(m.version||'?');if($('v87Build'))$('v87Build').textContent=m.build||'?';if($('v87Installed'))$('v87Installed').textContent='V'+(window.IFSI_APP_VERSION||V);if($('v87UpdateStatus'))$('v87UpdateStatus').textContent=(m.version===(window.IFSI_APP_VERSION||V))?'Application synchronisée avec le serveur.':'Une version plus récente est disponible.';return m}catch{if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Impossible de lire la version serveur.';return null}}
+async function updateWorker(){const reg=await navigator.serviceWorker?.getRegistration?.();if(reg)await reg.update();return reg}
+async function forceUpdate(){const b=$('v87ForceUpdate');if(b){b.disabled=true;b.textContent='Nettoyage…'}try{await updateWorker();if(window.caches){const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('ifsi-abc-')).map(k=>caches.delete(k)))}const reg=await navigator.serviceWorker?.getRegistration?.();if(reg?.waiting)reg.waiting.postMessage?.({type:'SKIP_WAITING'});if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Cache applicatif nettoyé • rechargement…';setTimeout(()=>location.replace(location.pathname+'?refresh='+Date.now()),350)}catch{if(b){b.disabled=false;b.textContent='⚡ Forcer la mise à jour'}if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Mise à jour forcée impossible.'}}
+function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';versionLog();refreshVersionState()}
 function bind(){
  $('v87Dark').onclick=()=>{const on=localStorage.getItem(K.dark)!=='1';localStorage.setItem(K.dark,on?'1':'0');document.body.classList.toggle('v72-dark',on);render()};
  $('v87Timer').onclick=()=>{const on=localStorage.getItem(K.timer)!=='1';localStorage.setItem(K.timer,on?'1':'0');render()};
  $('v87Analytics').onclick=()=>{const on=!(window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1');window.IFSI_V77?.setEnabled?.(on);if(!window.IFSI_V77?.setEnabled)localStorage.setItem(K.analytics,on?'0':'1');render()};
  $('v87ExportResults').onclick=()=>{if(typeof window.exportStats==='function')window.exportStats();else{const x=typeof window.st==='function'?window.st():{};download('IFSI_ABC_resultats.json',x)}};
  $('v87ExportBackup').onclick=backup;
- $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await fetch('./build-meta.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('version');return r.json()});const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible…`;setTimeout(()=>location.reload(),700)}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
+ $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await refreshVersionState();await updateWorker();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible`;if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Nouvelle version détectée. Utilise « Forcer la mise à jour » si le rechargement ne suffit pas.'}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
+ $('v87ForceUpdate').onclick=forceUpdate;
  $('v87Reload').onclick=()=>location.reload();
  $('v87Improve').onclick=()=>{const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>x.id!=='v87Improve'&&x.id!=='v86Improve'&&/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
 }
