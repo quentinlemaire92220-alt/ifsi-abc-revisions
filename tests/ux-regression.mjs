@@ -56,9 +56,17 @@ const redesign=read('v8309-revision-redesign.js');
 for(const token of ['v8309WeakBtn','Plus de filtres','v8309-quick','v8309-exam','v8309-goal'])assert.ok(redesign.includes(token),`Révision allégée incomplète: ${token}`);
 
 const homeResources=read('v8312-home-revision.js');
-for(const token of ["h.querySelector('.v76-today')?.remove()","📚 Ressources ajoutées","resourceEntries()","appEntries()","Voir toutes les ressources →","v8312MyRevision","dash=document.createElement('div')","grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))"])assert.ok(homeResources.includes(token),`Accueil/Révision V8.30.14 incomplet: ${token}`);
+for(const token of ["h.querySelector('.v76-today')?.remove()","📚 Ressources ajoutées","resourceEntries()","appEntries()","Voir toutes les ressources →","v8312MyRevision","dash=document.createElement('div')","grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))"])assert.ok(homeResources.includes(token),`Accueil/Révision V8.30.15 incomplet: ${token}`);
 assert.ok(!homeResources.includes('data-newsfilter="app"'),'Les évolutions techniques ne doivent plus être affichées dans les filtres de l’accueil');
 assert.ok(!homeResources.includes("if(!dash)return false"),'Ma révision ne doit plus dépendre de la présence de l’ancien dashboard');
+
+const baseChangelog=read('changelog-v742.js');
+for(const token of ["function seedUnified(card)","if(!$('v742Changelog'))injectUnified()","new MutationObserver(()=>{removeLegacy();if(!$('v742Changelog'))injectUnified()})"])assert.ok(baseChangelog.includes(token),`Garde-fou changelog historique absent: ${token}`);
+assert.ok(!baseChangelog.includes('alreadyCurrent'),'Le journal historique ne doit plus réinitialiser une version moderne');
+
+const startup=read('v8303-home-startup.js');
+for(const token of ["if(!$('v742Changelog'))window.IFSI_CHANGELOG?.refresh?.()","if(ready||++ticks>=20)clearInterval(timer)"])assert.ok(startup.includes(token),`Stabilisation démarrage incomplète: ${token}`);
+assert.ok(!startup.includes('ticks>=80'),'La boucle de synchronisation accueil ne doit plus durer 8 secondes');
 
 const settings=read('v87-settings.js');
 for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()'])assert.ok(settings.includes(token),`Journal technique Paramètres incomplet: ${token}`);

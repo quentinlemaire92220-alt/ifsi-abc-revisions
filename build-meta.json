@@ -1,6 +1,6 @@
 {
-  "version": "8.30.14",
-  "build": "8314",
+  "version": "8.30.15",
+  "build": "8315",
   "releasedAt": "2026-10-06",
-  "summary": "Rend le bloc Ma révision fiable dans le centre Révision et corrige le débordement horizontal de l’examen blanc."
+  "summary": "Supprime le conflit de démarrage entre l’ancien journal de versions et la vue Ressources ajoutées."
 }

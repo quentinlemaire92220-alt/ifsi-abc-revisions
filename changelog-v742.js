@@ -32,20 +32,26 @@ function currentMarkup(){return `
 <span id="v75Change"><b>V7.5 — Révision intelligente</b><br>• Confiance, répétition espacée et session du jour.<br><br></span>
 <b>V7.4.2 — Accueil allégé et version stabilisée</b><br>• Nouveautés regroupées et numéro de version unifié.<br><br><b>V7.4.1 — Registre des cours</b><br>• Identifiants stables et contrôle des rattachements.<br><br><b>V7.4 — Parcours par cours</b><br>• Pages par cours avec QCM, fiches, infographies et vocaux.<br><br><b>V7.3.1 — Vocaux améliorés</b><br>• Vocaux écoutés, favoris et reprise.<br><br><b>V7.2 — Révisions avancées</b><br>• Navigation examen, chronomètre, historique, difficultés et révision progressive.
 </div></details>`}
+function seedUnified(card){
+  if(!card.querySelector('details .small')||!card.querySelector('[id$="Change"]'))card.innerHTML=currentMarkup()
+}
 function injectUnified(){
-  const home=$('home');if(!home)return;
+  const home=$('home');if(!home)return null;
   removeLegacy();
   let card=$('v742Changelog');
   if(!card){
     card=document.createElement('div');card.id='v742Changelog';card.className='card v72-changelog';
     const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');
     if(app)app.insertAdjacentElement('beforebegin',card);else home.appendChild(card);
-  }
-  const alreadyCurrent=card.querySelector('#v823Change')&&card.querySelector('.badge')?.textContent===`V${VERSION}`&&card.querySelector('details .small')?.firstElementChild?.id==='v823Change';
-  if(!alreadyCurrent){card.className='card v72-changelog';card.innerHTML=currentMarkup()}
+    card.innerHTML=currentMarkup();
+  }else seedUnified(card);
+  return card
 }
-function keepClean(){removeLegacy();injectUnified()}
-keepClean();
-const home=$('home');if(home)new MutationObserver(()=>keepClean()).observe(home,{childList:true,subtree:false});
+function keepClean(){
+  removeLegacy();
+  if(!$('v742Changelog'))injectUnified()
+}
+injectUnified();
+const home=$('home');if(home)new MutationObserver(()=>{removeLegacy();if(!$('v742Changelog'))injectUnified()}).observe(home,{childList:true,subtree:false});
 window.IFSI_CHANGELOG={version:VERSION,refresh:keepClean};window.IFSI_V742=window.IFSI_CHANGELOG;
 })();

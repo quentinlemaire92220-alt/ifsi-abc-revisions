@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V='8.30.14',$=id=>document.getElementById(id);
+const V='8.30.15',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8315Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
   v8314Change:{type:'app',badges:['UX/UI','CORRECTIF']},
   v8313Change:{type:'app',badges:['UX/UI']},
   v8312Change:{type:'app',badges:['UX/UI','TECHNIQUE']},
@@ -173,7 +174,8 @@ function observeRevision(){
   revisionObserver.observe(body,{childList:true,subtree:false});
 }
 function apply(){css();home();renderNews();revision();observeRevision()}
-let tries=0;const timer=setInterval(()=>{tries++;apply();if(tries>220)clearInterval(timer)},100);
+function startupStable(){return !!$('v8303HomeExtras')&&!!$('v8312NewsUi')&&!!$('v8312MyRevision')}
+let tries=0;const timer=setInterval(()=>{tries++;apply();if(startupStable()||tries>30)clearInterval(timer)},100);
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.addEventListener('ifsi:v73-ready',()=>requestAnimationFrame(apply));
 window.addEventListener('load',()=>setTimeout(apply,0));

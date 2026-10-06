@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.30.14',$=id=>document.getElementById(id);
+const V='8.30.15',$=id=>document.getElementById(id);
 function css(){
  if($('v8303css'))return;
  const s=document.createElement('style');s.id='v8303css';s.textContent=`
@@ -18,8 +18,8 @@ function normalizeHomeState(){
  document.body.classList.toggle('v86-home',on);
 }
 function reapplyChangelog(){
- window.IFSI_CHANGELOG?.refresh?.();
- for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG','IFSI_V8305_CHANGELOG','IFSI_V8306_CHANGELOG','IFSI_V8307_CHANGELOG','IFSI_V8308_CHANGELOG','IFSI_V8309_CHANGELOG','IFSI_V8310_CHANGELOG','IFSI_V8311_CHANGELOG','IFSI_V8312_CHANGELOG','IFSI_V8313_CHANGELOG','IFSI_V8314_CHANGELOG'])window[k]?.patch?.();
+ if(!$('v742Changelog'))window.IFSI_CHANGELOG?.refresh?.();
+ for(const k of ['IFSI_V822_CHANGELOG','IFSI_V826_CHANGELOG','IFSI_V828_CHANGELOG','IFSI_V829_CHANGELOG','IFSI_V830_CHANGELOG','IFSI_V8301_CHANGELOG','IFSI_V8302_CHANGELOG','IFSI_V8303_CHANGELOG','IFSI_V8304_CHANGELOG','IFSI_V8305_CHANGELOG','IFSI_V8306_CHANGELOG','IFSI_V8307_CHANGELOG','IFSI_V8308_CHANGELOG','IFSI_V8309_CHANGELOG','IFSI_V8310_CHANGELOG','IFSI_V8311_CHANGELOG','IFSI_V8312_CHANGELOG','IFSI_V8313_CHANGELOG','IFSI_V8314_CHANGELOG','IFSI_V8315_CHANGELOG'])window[k]?.patch?.();
 }
 function ensureImprove(){
  let card=document.querySelector('.v72-feedback');
@@ -61,7 +61,8 @@ function settle(){
  sync();patchNavigation();
  const voc=window.IFSI_V73?.getVocals?.()?.length??0;
  if(voc!==lastVoc){lastVoc=voc;window.IFSI_V76?.refresh?.()}
- if(++ticks>=80&&voc>0&&$('v742Changelog')&&$('v8303HomeExtras'))clearInterval(timer)
+ const ready=$('v742Changelog')&&$('v8303HomeExtras')&&window.IFSI_V813;
+ if(ready||++ticks>=20)clearInterval(timer)
 }
 const timer=setInterval(settle,100);
 window.addEventListener('load',()=>setTimeout(sync,0));
