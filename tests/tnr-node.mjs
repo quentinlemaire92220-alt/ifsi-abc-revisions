@@ -19,7 +19,7 @@ const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padSta
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
-if(override.length){const overrideIds=new Set(override.map(q=>q.id).filter(Boolean));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...override)}
+if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const overrideIds=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...finalOverride)}
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 const schemaIds=['resp_003','resp_013','resp_015'];
