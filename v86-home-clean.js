@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.30.1', $=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.2', $=id=>document.getElementById(id);
 const DARK='ifsiabc_v72_dark',TIMER='ifsiabc_v72_timer';
 function css(){if($('v86css'))return;const s=document.createElement('style');s.id='v86css';s.textContent=`
 body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{display:none!important}
