@@ -1,7 +1,9 @@
 (()=>{'use strict';
-const V='8.30.15',$=id=>document.getElementById(id);
+const V='8.30.22',$=id=>document.getElementById(id);
 const NEWS_META={
-  v8320Change:{type:'resource',badges:['RESSOURCE','CORRECTIF']},
+  v8322Change:{type:'app',badges:['UX/UI']},
+  v8321Change:{type:'resource',badges:['RESSOURCE']},
+  v8320Change:{type:'app',badges:['CORRECTIF']},
   v8319Change:{type:'app',badges:['CORRECTIF']},
   v8318Change:{type:'resource',badges:['RESSOURCE']},
   v8317Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
@@ -20,7 +22,7 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
-  '8.30.20':'06/10/2026','8.30.19':'06/10/2026','8.30.18':'06/10/2026','8.30.17':'06/10/2026','8.30.16':'06/10/2026','8.30.15':'06/10/2026','8.30.14':'06/10/2026','8.30.13':'06/10/2026','8.30.12':'06/10/2026','8.30.11':'06/10/2026','8.30.10':'06/10/2026','8.30.9':'06/10/2026','8.30.8':'06/10/2026','8.30.7':'06/10/2026','8.30.6':'06/10/2026','8.30.5':'06/10/2026','8.30.4':'06/10/2026','8.30.3':'06/10/2026','8.30.2':'06/10/2026','8.30.1':'06/10/2026','8.30':'06/10/2026',
+  '8.30.22':'06/10/2026','8.30.21':'06/10/2026','8.30.20':'06/10/2026','8.30.19':'06/10/2026','8.30.18':'06/10/2026','8.30.17':'06/10/2026','8.30.16':'06/10/2026','8.30.15':'06/10/2026','8.30.14':'06/10/2026','8.30.13':'06/10/2026','8.30.12':'06/10/2026','8.30.11':'06/10/2026','8.30.10':'06/10/2026','8.30.9':'06/10/2026','8.30.8':'06/10/2026','8.30.7':'06/10/2026','8.30.6':'06/10/2026','8.30.5':'06/10/2026','8.30.4':'06/10/2026','8.30.3':'06/10/2026','8.30.2':'06/10/2026','8.30.1':'06/10/2026','8.30':'06/10/2026',
   '8.29':'05/10/2026','8.28':'05/10/2026','8.27':'05/10/2026','8.26':'05/10/2026','8.25.1':'05/10/2026','8.25':'05/10/2026','8.24':'05/10/2026','8.23.1':'05/10/2026','8.23':'05/10/2026','8.22':'05/10/2026','8.21':'05/10/2026','8.20':'05/10/2026','8.19.1':'05/10/2026','8.19':'05/10/2026','8.18':'05/10/2026','8.17':'05/10/2026','8.16':'05/10/2026','8.15.1':'05/10/2026','8.15':'05/10/2026',
   '8.14.1':'04/10/2026','8.14':'04/10/2026','8.13':'04/10/2026','8.12':'04/10/2026','8.11.4':'04/10/2026','8.11.3':'04/10/2026','8.11.2':'04/10/2026','8.11.1':'04/10/2026','8.11':'04/10/2026','8.10':'04/10/2026','8.9.1':'04/10/2026','8.9':'04/10/2026','8.8.4':'04/10/2026','8.8.3':'04/10/2026','8.8.2':'04/10/2026','8.8.1':'04/10/2026','8.8':'04/10/2026','8.7':'04/10/2026','8.6':'04/10/2026','8.5':'04/10/2026','8.4':'04/10/2026',
   '8.3':'03/10/2026','8.2':'03/10/2026','8.1':'03/10/2026','8.0':'03/10/2026','7.9':'03/10/2026','7.8':'03/10/2026','7.7':'03/10/2026','7.6':'03/10/2026','7.5':'03/10/2026'
@@ -112,11 +114,15 @@ function badgeHtml(label){
   const cls=label==='RESSOURCE'?'resource':label==='UX/UI'?'ux':label==='CORRECTIF'?'fix':'tech';
   return `<span class="v8312-news-badge ${cls}">${label}</span>`;
 }
+function pedagogicalCopy(copy){
+  const technical=/\b(?:Drive|registre|cache|PWA|TNR|audit|MutationObserver|timer|courseId|arborescence|synchronis\w*|catalogue|chargement|runtime)\b/i;
+  return String(copy||'').split(/(?<=[.!?])\s+/).map(x=>x.trim()).filter(x=>x&&!technical.test(x)).join(' ');
+}
 function newsEntries(){
   const box=$('v742Changelog');if(!box)return [];
   return [...box.querySelectorAll('details .small > span[id$="Change"]')].map(span=>{
-    const lines=linesFromSpan(span),title=lines[0]||span.querySelector('b')?.textContent?.trim()||'',copy=lines.slice(1).join(' '),meta=inferMeta(span.id,title+' '+copy);
-    return {id:span.id,title,copy,date:dateForTitle(title,span),type:meta.type,badges:meta.badges||[]};
+    const lines=linesFromSpan(span),title=lines[0]||span.querySelector('b')?.textContent?.trim()||'',copy=lines.slice(1).join(' '),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
+    return {id:span.id,title,copy:displayCopy,date:dateForTitle(title,span),type:meta.type,badges:meta.badges||[]};
   }).filter(x=>x.title);
 }
 function renderNews(){
