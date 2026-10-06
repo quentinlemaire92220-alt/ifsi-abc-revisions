@@ -28,13 +28,13 @@ function pedagogicDifficulty(q){
   if(/d[ée]finition|correspond|d[ée]signe|quel est|quelle est/.test(t))score-=1;
   return score>=4?'hard':score>=2?'medium':'easy';
 }
-function diffLabel(d){return d==='easy'?'🟢 Facile':d==='medium'?'🟠 Intermédiaire':'🔴 Difficile'}
+function diffLabel(d){return d==='easy'?'🟢 Facile':d==='medium'?'🟠 Moyen':'🔴 Difficile'}
 function personalStatus(q){const x=st(),s=x.v7QuestionStats?.[q.id];if(!s||s.answered<2)return null;const r=s.correct/s.answered;if(r<.5)return '⚠️ Difficile pour moi';if(s.answered>=3&&r>=.8)return '✅ Maîtrisée';return '🧠 En cours';}
 function filterDifficulty(a){const d=$72('v72Difficulty')?.value||'all';return d==='all'?a:a.filter(q=>pedagogicDifficulty(q)===d)}
 
 function injectControls(){
   const stack=document.querySelector('#home .card.stack');if(stack&&!$72('v72Difficulty')){
-    const theme=$72('theme');const sel=document.createElement('select');sel.id='v72Difficulty';sel.innerHTML='<option value="all">Toutes les difficultés</option><option value="easy">🟢 Facile</option><option value="medium">🟠 Intermédiaire</option><option value="hard">🔴 Difficile</option>';if(theme)theme.insertAdjacentElement('afterend',sel);else stack.appendChild(sel);
+    const theme=$72('theme');const sel=document.createElement('select');sel.id='v72Difficulty';sel.innerHTML='<option value="all">Toutes les difficultés</option><option value="easy">🟢 Facile</option><option value="medium">🟠 Moyen</option><option value="hard">🔴 Difficile</option>';if(theme)theme.insertAdjacentElement('afterend',sel);else stack.appendChild(sel);
     const smart=$72('v7Smart');const progressive=document.createElement('button');progressive.id='v72Progressive';progressive.className='btn secondary full';progressive.textContent='📈 Révision progressive';progressive.onclick=startProgressive;if(smart)smart.insertAdjacentElement('afterend',progressive);else stack.appendChild(progressive);
     const timer=document.createElement('label');timer.className='v72-toggle';timer.innerHTML='<span><b>⏱️ Chronomètre</b><div class="small">Afficher le temps de la série et l’enregistrer dans l’historique.</div></span><input id="v72TimerToggle" type="checkbox">';stack.appendChild(timer);$72('v72TimerToggle').checked=localStorage.getItem(K.timer)==='1';$72('v72TimerToggle').onchange=e=>{localStorage.setItem(K.timer,e.target.checked?'1':'0');updateTimerUI()};
     const dark=document.createElement('label');dark.className='v72-toggle';dark.innerHTML='<span><b>🌙 Mode sombre</b><div class="small">Le choix reste enregistré sur cet appareil.</div></span><input id="v72DarkToggle" type="checkbox">';stack.appendChild(dark);$72('v72DarkToggle').checked=localStorage.getItem(K.dark)==='1';$72('v72DarkToggle').onchange=e=>{localStorage.setItem(K.dark,e.target.checked?'1':'0');applyDark()};
