@@ -7,6 +7,19 @@ function readFavs(){try{return new Set(JSON.parse(localStorage.getItem(FAV_KEY)|
 function writeFavs(set){localStorage.setItem(FAV_KEY,JSON.stringify([...set]))}
 function getResume(){try{return JSON.parse(localStorage.getItem(RESUME_KEY)||'null')}catch{return null}}
 function setResume(v){if(v)localStorage.setItem(RESUME_KEY,JSON.stringify(v));else localStorage.removeItem(RESUME_KEY)}
+function answerLetters(arr){return (arr||[]).map(j=>'ABCDE'[j]).filter(Boolean).join(', ')||'Aucune'}
+function renderTrainingCorrection(q,sel,ok,reviewMsg=''){
+  const exp=$('exp');if(!exp)return;
+  exp.replaceChildren();
+  const status=document.createElement('b');status.textContent=ok?'✅ Bonne réponse':'❌ À revoir';exp.appendChild(status);
+  const summary=document.createElement('div');summary.className='qcm-answer-summary';
+  const mine=document.createElement('div'),good=document.createElement('div');
+  const mineLabel=document.createElement('b');mineLabel.textContent='Ta réponse : ';mine.append(mineLabel,document.createTextNode(answerLetters(sel)));
+  const goodLabel=document.createElement('b');goodLabel.textContent='Bonne réponse : ';good.append(goodLabel,document.createTextNode(answerLetters(q.answers)));
+  summary.append(mine,good);exp.appendChild(summary);
+  const explanation=document.createElement('div');explanation.className='qcm-explanation';explanation.textContent=q.explanation||'';exp.appendChild(explanation);
+  if(reviewMsg){const note=document.createElement('div');note.className='mastery-note';note.textContent=reviewMsg;exp.appendChild(note)}
+}
 
 function addStyles(){
   const s=document.createElement('style');
@@ -18,6 +31,8 @@ function addStyles(){
   .resume-title{font-weight:900;color:#4f319f}
   .review-note{font-size:12px;color:#6c6878;margin-top:-2px;line-height:1.35}
   .mastery-note{margin-top:10px;padding:9px 10px;border-radius:10px;background:#eef9ff;color:#245675;font-size:13px;font-weight:700}
+  .qcm-answer-summary{display:grid;gap:5px;margin:10px 0;padding:10px 11px;border:1px solid #dcd4e9;border-radius:11px;background:#fff}
+  .qcm-answer-summary div{font-size:13px;line-height:1.4}.qcm-explanation{margin-top:8px;line-height:1.5}
   @media(max-width:520px){.favQuizBtn{font-size:12px;padding:6px 8px}}
   `;
   document.head.appendChild(s);
@@ -174,7 +189,7 @@ validateQ=function(){
   if(ok)x.themes[k].correct++;
   save(x);
 
-  $('exp').innerHTML='<b>'+(ok?'✅ Bonne réponse':'❌ À revoir')+'</b><br>'+q.explanation+(reviewMsg?'<div class="mastery-note">'+reviewMsg+'</div>':'');
+  renderTrainingCorrection(q,sel,ok,reviewMsg);
   $('exp').classList.remove('hidden');
   $('valid').classList.add('hidden');
   $('next').classList.remove('hidden');
