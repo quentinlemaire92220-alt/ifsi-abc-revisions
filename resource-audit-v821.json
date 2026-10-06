@@ -1,5 +1,5 @@
 {
-  "version": "8.30.23",
+  "version": "8.30.24",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Snapshot aligné sur le catalogue actif (147 infographies, 106 planches HD) et le nouveau cours « Introduction à la pharmacologie » (fiche + 60 QCM).",
+  "note": "Snapshot aligné sur le catalogue actif ; 7 fiches sans support officiel portent désormais une provenance explicite (captures, notes ou transcription).",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
@@ -99,5 +99,10 @@
     "cellules_tissus": 15,
     "diagnostic_bacteriologie": 3,
     "virus": 5
+  },
+  "sheetProvenance": {
+    "marker": "📝",
+    "meaning": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours.",
+    "markedSheets": 7
   }
 }
