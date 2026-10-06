@@ -1,6 +1,6 @@
 {
-  "version": "8.30.19",
-  "build": "8319",
+  "version": "8.30.20",
+  "build": "8320",
   "releasedAt": "2026-10-06",
-  "summary": "Hotfix : désactive temporairement l’injection automatique des 26 nouvelles planches après crash."
+  "summary": "Réintègre les 26 planches HD avec chargement lazy sans observer DOM."
 }
