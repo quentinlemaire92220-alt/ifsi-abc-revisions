@@ -42,6 +42,9 @@ jobs:
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
+      - name: Audit des niveaux de difficulté QCM
+        run: node tests/qcm-difficulty-audit.mjs
+
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
 
