@@ -1,5 +1,5 @@
 {
-  "version": "8.30.16",
+  "version": "8.30.18",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Snapshot aligné sur les 4 infographies Introduction au droit ajoutées en V8.30.16.",
+  "note": "Snapshot aligné sur les 26 nouvelles planches HD du microscopique aux tissus, rangées dans 06 - Planches anatomiques.",
   "expectedTotals": {
     "courses": 41,
     "sheets": 48,
@@ -16,7 +16,7 @@
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
-    "hdAtlasBoards": 80,
+    "hdAtlasBoards": 106,
     "qcmRuntimeMin": 1603
   },
   "anatomyFolderContracts": {
@@ -27,7 +27,11 @@
     "systeme_immunitaire": "10nRAWXRz5OzhmJCGKEFXFPTxC1GXCdXI",
     "systeme_nerveux": "1EFCKO8WGeGuKb4lT0gwwNhf02oiNoYWg",
     "systeme_digestif": "1XjNFIi2pZnCn3qr0CzfMPJ82ArQbwVgz",
-    "appareil_locomoteur": "1Ujbepr-LABiIaeLRsGJQYlA8FBzrcprI"
+    "appareil_locomoteur": "1Ujbepr-LABiIaeLRsGJQYlA8FBzrcprI",
+    "biomolecules": "1Sk0QL3GTRNEI5_vxqYhAJ4LK4hMOQ9qp",
+    "cellules_tissus": "10kMwwkY28mTs9Ok0KHiDj1UHIxvx1XsG",
+    "diagnostic_bacteriologie": "15GKK9TbxSd2T8Zy6poE4Kkmd9oS4OUfB",
+    "virus": "1b8HHfZvEXMEMK870zzNGHeCcoATBo8xo"
   },
   "resourceRules": {
     "anatomyFolder": "06 - Planches anatomiques",
@@ -51,6 +55,17 @@
         "hard": 12
       },
       "sheetDriveId": "18SnJSqdmDfnacGWM0hZoZvbfMxyPApq2"
+    },
+    {
+      "courseId": "microscopic_atlas",
+      "course": "Microscopique → tissus",
+      "anatomyBoards": 26,
+      "courses": [
+        "biomolecules",
+        "cellules_tissus",
+        "diagnostic_bacteriologie",
+        "virus"
+      ]
     }
   ],
   "auditLogicVersion": "8.30.10",
@@ -62,6 +77,10 @@
     "systeme_immunitaire": 8,
     "systeme_nerveux": 8,
     "systeme_digestif": 12,
-    "appareil_locomoteur": 20
+    "appareil_locomoteur": 20,
+    "biomolecules": 3,
+    "cellules_tissus": 15,
+    "diagnostic_bacteriologie": 3,
+    "virus": 5
   }
 }
