@@ -142,7 +142,7 @@ function showVocals(){window.show?.('vocals')}
 window.showVocals=showVocals;
 
 async function loadVocals(){
-  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');V=await r.json();V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);validState();populateCourses();renderVocals();renderResume();setVersion();lockVersion();return true}
+  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');V=await r.json();V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);validState();populateCourses();renderVocals();renderResume();setVersion();lockVersion();window.dispatchEvent(new CustomEvent('ifsi:v73-ready',{detail:{count:V.length}}));return true}
   catch(e){console.error('Vocaux',e);const list=$v('vocalList');if(list)list.innerHTML='<div class="card v73-empty">Impossible de charger le catalogue des vocaux.</div>';return false}
 }
 function setVersion(){const u=$v('update');if(u&&V.length)u.textContent=`Application prête • V${VERSION} locale : ${V.length} vocaux Drive, favoris, écoutés et reprise locale.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}
