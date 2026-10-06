@@ -43,13 +43,11 @@ const show=(label,s)=>{
   for(const x of missing)console.log(` - ${x.course}: ${x.inferred}/${x.total} estimés${x.invalid?` • ${x.invalid} invalides`:''}`);
 };
 
+const packFiles=fs.readdirSync('.').filter(p=>/^qextra-\d+\.txt$/.test(p)).sort();
 let raw=[];
 for(let i=1;i<=5;i++){const p=`questions-${i}.json`;raw.push(...json(p))}
-for(let i=1;i<=45;i++){
-  const p=`qextra-${String(i).padStart(2,'0')}.txt`;
-  if(!fs.existsSync(p))continue;
-  try{raw.push(...decodePackFile(p))}catch(e){console.warn(`Pack ignoré ${p}: ${e.message}`)}
-}
+for(const p of packFiles){try{raw.push(...decodePackFile(p))}catch(e){console.warn(`Pack ignoré ${p}: ${e.message}`)}}
+for(const p of packFiles){const n=Number(p.match(/qextra-(\d+)\.txt/)?.[1]||0);if(n<46)continue;const qs=decodePackFile(p);assert.ok(qs.every(q=>VALID.has(q?.difficulty)),`Nouveau pack ${p}: difficulty explicite obligatoire sur chaque QCM`)}
 
 let base=[];for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[];for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p))extras.push(...decodePackFile(p))}
@@ -61,6 +59,8 @@ const seen=new Set(base.map(q=>q.id)),runtime=[...base];for(const q of extras)if
 const rawSummary=summarize(raw),runtimeSummary=summarize(runtime);
 assert.equal(rawSummary.invalid,0,'Valeur difficulty invalide dans les sources');
 assert.equal(runtimeSummary.invalid,0,'Valeur difficulty invalide dans le runtime');
+assert.ok(rawSummary.inferred<=3356,`Dette difficulty source en hausse: ${rawSummary.inferred}/3356`);
+assert.ok(runtimeSummary.inferred<=1779,`Dette difficulty runtime en hausse: ${runtimeSummary.inferred}/1779`);
 show('Sources QCM',rawSummary);
 show('Runtime QCM',runtimeSummary);
-console.log(`ℹ️ Le runtime conserve l’estimation automatique uniquement lorsque difficulty est absent.`);
+console.log(`ℹ️ Le runtime conserve l’estimation automatique uniquement lorsque difficulty est absent.`);\nconsole.log('✅ Les futurs packs qextra-46+ devront renseigner easy / medium / hard sur chaque QCM.');
