@@ -169,7 +169,7 @@ function renderAnatomy(){
   const value=$('v82AnatomySearch')?.value||'',term=normCatalog(value);
   const cards=SYSTEMS.map(x=>catalogCard(x,term)).filter(Boolean);
   b.innerHTML=`<div class="v82-pagehead"><button id="v82Back" class="btn outline">← Accueil</button><div><h2>🫀 Anatomie & Physiologie</h2><div class="small">Des planches anatomiques classées par cours.</div></div><input id="v82AnatomySearch" class="v82-search" type="search" autocomplete="off" placeholder="Rechercher un système, une planche…" value="${E(value)}"></div><div class="v82-catalog">${cards.join('')||'<div class="card v82-empty">Aucune planche trouvée.</div>'}</div>`;
-  bindAnatomy();const input=$('v82AnatomySearch');if(input&&value){input.focus();input.setSelectionRange(value.length,value.length)}
+  bindAnatomy();window.IFSI_V8318?.decorateCatalog?.();const input=$('v82AnatomySearch');if(input&&value){input.focus();input.setSelectionRange(value.length,value.length)}
 }
 function hasResume(){const b=$('v76Resume');return !!b&&!b.disabled}
 function primaryAction(){if(hasResume())return window.IFSI_V76?.resumeAction?.();return window.IFSI_V76?.startNow?.()}

@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.19';
+const VERSION='8.30.20';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : dates des mises à jour ajoutées.`;
