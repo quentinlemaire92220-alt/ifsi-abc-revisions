@@ -48,6 +48,7 @@ for(const q of runtime){
   const qc=[q.question,...(q.choices||[])].join(' ');
   assert(!/CORRIG[ÉE]\s*[-—·:]?\s*GRILLE|GRILLE\s+SYNTH[ÉE]TIQUE|Support officiel\s*\+\s*transcript/i.test(qc),`Artefact de corrigé/import dans ${q.id}`);
 }
+assert(runtimeThreeOfFour<=647,`Dette runtime 3/4 en hausse: ${runtimeThreeOfFour}/647`);
 const calcQuestions=runtime.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
 assert(calcQuestions.length>=220,`Banque calculs insuffisante: ${calcQuestions.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 
