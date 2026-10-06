@@ -89,12 +89,16 @@ function startCustom(course,opts){
   if(typeof begin==='function')begin(picked);else alert('Le moteur QCM n’est pas encore prêt.');
 }
 
-function injectIntoCourse(){
-  const course=courseFromDOM();if(!course)return false;if(course!==currentCourse){currentCourse=course;selectedThemes.clear();selectedDifficulty='all';selectedCount=10;selectedMode=localStorage.getItem(MODE_KEY)==='exam'?'exam':'train'}
-  const box=$79('v74CourseDetail');if(!box||$79('v79Builder'))return true;refreshCourse(course);return true;
+function clearCourseCustomizer(){
+  const box=$79('v74CourseDetail');if(!box)return false;
+  box.querySelector('#v79Builder')?.remove();
+  box.querySelector('#v79ThemesCard')?.remove();
+  return true;
 }
+function injectIntoCourse(){return clearCourseCustomizer()}
 function injectHomeShortcut(){
-  const host=$79('v76MoreBody');if(!host||$79('v79HomeShortcut'))return false;const d=document.createElement('div');d.id='v79HomeShortcut';d.className='v79-home-shortcut';d.innerHTML='<b>🎛️ Série personnalisée par thème</b><div class="small" style="margin-top:4px">Choisis un cours, un ou plusieurs thèmes, la difficulté et le nombre de questions.</div><button id="v79ChooseCourse" class="btn outline" type="button">Choisir un cours</button>';host.insertBefore(d,host.firstChild);$79('v79ChooseCourse').onclick=()=>window.showCourses74?.();return true;
+  $79('v79HomeShortcut')?.remove();
+  return true;
 }
 function watchCourse(){const root=$79('v74CourseDetail');if(!root)return false;new MutationObserver(()=>{if(!rendering)setTimeout(injectIntoCourse,0)}).observe(root,{childList:true,subtree:false});return true}
 function init(){addStyles79();injectHomeShortcut();injectIntoCourse();return !!window.IFSI_V74&&!!window.IFSI_V76&&!!window.IFSI_V77&&watchCourse()}
