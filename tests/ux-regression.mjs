@@ -55,4 +55,11 @@ assert.ok(revision.includes('Correction et résultat uniquement à la fin.'),'Te
 const redesign=read('v8309-revision-redesign.js');
 for(const token of ['v8309WeakBtn','Plus de filtres','v8309-quick','v8309-exam','v8309-goal'])assert.ok(redesign.includes(token),`Révision allégée incomplète: ${token}`);
 
+const homeResources=read('v8312-home-revision.js');
+for(const token of ["h.querySelector('.v76-today')?.remove()","📚 Ressources ajoutées","resourceEntries()","appEntries()","Voir toutes les ressources →"])assert.ok(homeResources.includes(token),`Accueil ressources incomplet: ${token}`);
+assert.ok(!homeResources.includes('data-newsfilter="app"'),'Les évolutions techniques ne doivent plus être affichées dans les filtres de l’accueil');
+
+const settings=read('v87-settings.js');
+for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()'])assert.ok(settings.includes(token),`Journal technique Paramètres incomplet: ${token}`);
+
 console.log(`✅ Régression UX et cohérence release contrôlées pour V${meta.version} build ${meta.build}`);
