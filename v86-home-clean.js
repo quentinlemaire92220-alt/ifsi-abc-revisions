@@ -1,12 +1,12 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.30.3', $=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.4', $=id=>document.getElementById(id);
 const DARK='ifsiabc_v72_dark',TIMER='ifsiabc_v72_timer';
 function css(){if($('v86css'))return;const s=document.createElement('style');s.id='v86css';s.textContent=`
 body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{display:none!important}
 body.v86-home #home>.section,body.v86-home #home>.card,body.v86-home #home>.grid,body.v86-home #home>.stack{display:none!important}
 body.v86-home #home>#v76Home{display:grid!important}
 body.v86-home #v76Home>#v82Primary,body.v86-home #v76Home>.v76-today,body.v86-home #v86Tools{display:block!important}
-body.v86-home #v76Home>*:not(#v82Primary):not(.v76-today):not(#v86Tools){display:none!important}
+body.v86-home #v76Home>*:not(#v82Primary):not(.v76-today):not(#v86Tools):not(#v8303HomeExtras){display:none!important}
 .v86-tools{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .v86-tool{border:1px solid var(--line);background:var(--card);border-radius:15px;padding:11px 12px;color:var(--ink);text-align:left;cursor:pointer;display:flex;align-items:center;gap:9px;min-width:0}
 .v86-tool .i{font-size:20px;flex:0 0 auto}.v86-tool b{display:block;font-size:13px}.v86-tool small{display:block;color:var(--muted);font-size:10px;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -33,7 +33,7 @@ function dialog(){
  <div class="row"><div><h3>⚙️ Réglages</h3><div class="small">Options locales de l’application</div></div><button id="v86Close" class="btn outline">Fermer</button></div>
  <label class="v86-setting"><span><b>🌙 Mode sombre</b><small>Enregistré sur cet appareil</small></span><input id="v86Dark" type="checkbox"></label>
  <label class="v86-setting"><span><b>⏱️ Chronomètre QCM</b><small>Afficher le temps pendant les séries</small></span><input id="v86Timer" type="checkbox"></label>
- <div class="v86-about"><b>IFSI ABC Révisions — V${V}</b><div class="small" style="margin-top:4px">Accueil simplifié. Les nouveautés techniques ne sont plus affichées sur la page d’accueil.</div></div>
+ <div class="v86-about"><b>IFSI ABC Révisions — V${V}</b><div class="small" style="margin-top:4px">Accueil simplifié avec nouveautés et informations utiles synchronisées.</div></div>
  <div class="v86-sheet-actions"><button id="v86Improve" class="btn outline">💡 Amélioration</button><button id="v86Update" class="btn primary">↻ Vérifier la mise à jour</button></div>
  </div>`;document.body.appendChild(d);
  $('v86Close').onclick=()=>d.close();
