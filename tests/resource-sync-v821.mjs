@@ -83,4 +83,10 @@ assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
 
 console.log(`✅ V${snap.version} audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM importés • ${atlasBoardCount} planches HD`);
+const auditRuntime=read('v821-resource-audit.js');
+assert(auditRuntime.includes('IFSI_V829'),'Audit runtime: atlas locomoteur non compté');
+assert(auditRuntime.includes('atlasBoardContracts'),'Audit runtime: contrats atlas non utilisés');
+assert(auditRuntime.includes('renderBalance'),'Audit runtime: détail équilibre QCM non rendu');
+assert(auditRuntime.includes("s.match(/[?&]id=([^&]+)/)"),'Audit runtime: URLs thumbnail?id non reconnues');
+
 console.log('✅ Séparation stricte Infographies / Anatomie et unicité des Drive IDs contrôlées');
