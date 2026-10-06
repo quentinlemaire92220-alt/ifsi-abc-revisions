@@ -35,17 +35,19 @@ assert(v820.length===snap.expectedTotals.v820QcmImported,`QCM V8.20: ${v820.leng
 for(const q of v820)assert(q.courseId&&ids.has(q.courseId),`QCM V8.20 courseId invalide: ${q.id}`);
 
 const atlasSpecs=[
- ['v814-respiratory-atlas.js','resp_atlas_',8],
- ['v815-urinary-atlas.js','urinary_atlas_',8],
- ['v816-endocrine-atlas.js','endo_atlas_',8],
- ['v817-immune-atlas.js','immu_atlas_',8],
- ['v822-nervous-atlas.js','nerv_atlas_',8],
- ['v823-cardiovascular-atlas.js','cardio_atlas_',8],
- ['v824-digestive-atlas.js','digest_atlas_',12],
- ['v829-locomotor-atlas.js','loco_atlas_',20]
+ ['systeme_respiratoire','v814-respiratory-atlas.js','resp_atlas_'],
+ ['systeme_urinaire','v815-urinary-atlas.js','urinary_atlas_'],
+ ['systeme_endocrinien','v816-endocrine-atlas.js','endo_atlas_'],
+ ['systeme_immunitaire','v817-immune-atlas.js','immu_atlas_'],
+ ['systeme_nerveux','v822-nervous-atlas.js','nerv_atlas_'],
+ ['systeme_cardiovasculaire','v823-cardiovascular-atlas.js','cardio_atlas_'],
+ ['systeme_digestif','v824-digestive-atlas.js','digest_atlas_'],
+ ['appareil_locomoteur','v829-locomotor-atlas.js','loco_atlas_']
 ];
 let atlasBoardCount=0;const atlasFiles=[];
-for(const [p,prefix,expected] of atlasSpecs){
+for(const [courseId,p,prefix] of atlasSpecs){
+ const expected=snap.atlasBoardContracts?.[courseId];
+ assert(Number.isInteger(expected)&&expected>0,`Contrat atlas absent: ${courseId}`);
  const src=read(p);
  const count=[...src.matchAll(new RegExp("id:'"+prefix,"g"))].length;
  assert(count===expected,`${p}: ${count}/${expected} planches HD`);
@@ -55,7 +57,8 @@ for(const [p,prefix,expected] of atlasSpecs){
 }
 const uniqueAtlasFiles=[...new Set(atlasFiles)];
 for(let i=1;i<=20;i++){const p=`assets/locomotor/locomotor-${String(i).padStart(2,'0')}.webp`;assert(fs.existsSync(p),`Planche locomoteur locale absente: ${p}`)}
-assert(atlasBoardCount>=snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards} minimum`);
+assert(atlasBoardCount===snap.expectedTotals.hdAtlasBoards,`Planches HD: ${atlasBoardCount}/${snap.expectedTotals.hdAtlasBoards}`);
+assert(Object.values(snap.atlasBoardContracts||{}).reduce((a,b)=>a+b,0)===snap.expectedTotals.hdAtlasBoards,'Total des contrats atlas incohérent');
 
 const infoIds=new Set(infos.map(x=>driveId(x.url)).filter(Boolean));
 const overlap=uniqueAtlasFiles.filter(id=>infoIds.has(id));
@@ -74,6 +77,8 @@ assert(dup.length===0,`Drive IDs dupliqués dans les catalogues actifs: ${dup.ma
 
 const contracts=snap.anatomyFolderContracts||{};
 assert(Object.keys(contracts).length===8,'Contrats de dossiers 06 incomplets');
+assert(Object.keys(snap.atlasBoardContracts||{}).length===8,'Contrats de planches atlas incomplets');
+assert(Object.keys(contracts).sort().join('|')===Object.keys(snap.atlasBoardContracts||{}).sort().join('|'),'Dossiers anatomie et contrats atlas désalignés');
 assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,'Dossiers 06 dupliqués dans le snapshot');
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
 
