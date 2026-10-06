@@ -63,4 +63,5 @@ assert.ok(rawSummary.inferred<=3356,`Dette difficulty source en hausse: ${rawSum
 assert.ok(runtimeSummary.inferred<=1779,`Dette difficulty runtime en hausse: ${runtimeSummary.inferred}/1779`);
 show('Sources QCM',rawSummary);
 show('Runtime QCM',runtimeSummary);
-console.log(`ℹ️ Le runtime conserve l’estimation automatique uniquement lorsque difficulty est absent.`);\nconsole.log('✅ Les futurs packs qextra-46+ devront renseigner easy / medium / hard sur chaque QCM.');
+console.log(`ℹ️ Le runtime conserve l’estimation automatique uniquement lorsque difficulty est absent.`);
+console.log('✅ Les futurs packs qextra-46+ devront renseigner easy / medium / hard sur chaque QCM.');
