@@ -42,7 +42,11 @@ const atlasSpecs=[
  ['systeme_nerveux','v822-nervous-atlas.js','nerv_atlas_'],
  ['systeme_cardiovasculaire','v823-cardiovascular-atlas.js','cardio_atlas_'],
  ['systeme_digestif','v824-digestive-atlas.js','digest_atlas_'],
- ['appareil_locomoteur','v829-locomotor-atlas.js','loco_atlas_']
+ ['appareil_locomoteur','v829-locomotor-atlas.js','loco_atlas_'],
+ ['biomolecules','v8318-microscopic-atlas.js','micro_biomol_'],
+ ['cellules_tissus','v8318-microscopic-atlas.js','micro_cell_'],
+ ['diagnostic_bacteriologie','v8318-microscopic-atlas.js','micro_bact_'],
+ ['virus','v8318-microscopic-atlas.js','micro_virus_']
 ];
 let atlasBoardCount=0;const atlasFiles=[];
 for(const [courseId,p,prefix] of atlasSpecs){
@@ -76,8 +80,8 @@ const dup=[...seen.entries()].filter(([,v])=>v.length>1);
 assert(dup.length===0,`Drive IDs dupliqués dans les catalogues actifs: ${dup.map(([id,v])=>id+'='+v.join('/')).join(', ')}`);
 
 const contracts=snap.anatomyFolderContracts||{};
-assert(Object.keys(contracts).length===8,'Contrats de dossiers 06 incomplets');
-assert(Object.keys(snap.atlasBoardContracts||{}).length===8,'Contrats de planches atlas incomplets');
+assert(Object.keys(contracts).length===12,'Contrats de dossiers 06 incomplets');
+assert(Object.keys(snap.atlasBoardContracts||{}).length===12,'Contrats de planches atlas incomplets');
 assert(Object.keys(contracts).sort().join('|')===Object.keys(snap.atlasBoardContracts||{}).sort().join('|'),'Dossiers anatomie et contrats atlas désalignés');
 assert(new Set(Object.values(contracts)).size===Object.values(contracts).length,'Dossiers 06 dupliqués dans le snapshot');
 for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId anatomie absent du registre: ${courseId}`);
@@ -85,6 +89,7 @@ for(const courseId of Object.keys(contracts))assert(ids.has(courseId),`CourseId 
 console.log(`✅ V${snap.version} audit snapshot: ${registry.length} cours • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux • ${v820.length} QCM importés • ${atlasBoardCount} planches HD`);
 const auditRuntime=read('v821-resource-audit.js');
 assert(auditRuntime.includes('IFSI_V829'),'Audit runtime: atlas locomoteur non compté');
+assert(auditRuntime.includes('IFSI_V8318'),'Audit runtime: atlas microscopiques non comptés');
 assert(auditRuntime.includes('atlasBoardContracts'),'Audit runtime: contrats atlas non utilisés');
 assert(auditRuntime.includes('renderBalance'),'Audit runtime: détail équilibre QCM non rendu');
 assert(auditRuntime.includes("s.match(/[?&]id=([^&]+)/)"),'Audit runtime: URLs thumbnail?id non reconnues');
