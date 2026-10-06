@@ -27,7 +27,7 @@ function addStyles(){
   .v75-mini{border:1px solid #dceeea;background:#fff;border-radius:12px;padding:9px;text-align:center}.v75-mini b{display:block;font-size:19px;color:#087a75}.v75-mini span{font-size:10px;color:#6c6878}
   .v75-confidence{border:1px solid #ded5ef;border-radius:14px;padding:10px 11px;margin-top:10px;background:#faf8ff}
   .v75-confidence-title{font-size:12px;font-weight:900;color:#5e4b8a;margin-bottom:7px}.v75-confidence-row{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-  .v75-conf{border:1px solid #d9cfef;background:#fff;border-radius:11px;padding:9px 6px;font-weight:800;color:#5f5670;cursor:pointer}.v75-conf.on{background:#eee8fb;border-color:#9b82d5;color:#4f319f;box-shadow:0 0 0 2px #eee8fb inset}
+  .v75-conf{border:1px solid #d9cfef;background:#fff;border-radius:11px;padding:9px 6px;font-weight:800;color:#5f5670;cursor:pointer}.v75-conf.on{background:#eee8fb;border-color:#9b82d5;color:#4f319f;box-shadow:0 0 0 2px #eee8fb inset}.v75-conf:disabled{cursor:not-allowed;opacity:.68}
   .v75-next{margin-top:10px;padding:9px 10px;border-radius:10px;background:#eef9ff;color:#245675;font-size:12px;font-weight:800}
   body.v72-dark .v75-today,body.v72-dark .v75-confidence,body.v72-dark .v75-mini{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v75-conf{background:#2b2638;color:#ddd4ea;border-color:#4a405c}body.v72-dark .v75-conf.on{background:#3a3150;color:#eee8ff}
   @media(max-width:520px){.v75-today-grid{grid-template-columns:repeat(2,1fr)}.v75-confidence-row{grid-template-columns:1fr}.v75-conf{padding:8px}}
@@ -38,6 +38,7 @@ function reviewState(){return readJSON(REVIEW_KEY,{})}
 function saveReviewState(v){writeJSON(REVIEW_KEY,v)}
 function confidenceForCurrent(){const q=currentQ();return q?(sessionConfidence[q.id]||'hesitant'):'hesitant'}
 function setConfidence(v){
+  if($75('v75Confidence')?.dataset.frozen==='1')return;
   if(!['guess','hesitant','sure'].includes(v))return;
   const q=currentQ();if(!q)return;sessionConfidence[q.id]=v;
   document.querySelectorAll('#v75Confidence .v75-conf').forEach(b=>b.classList.toggle('on',b.dataset.conf===v));
@@ -53,6 +54,11 @@ function injectConfidence(){
   choices.insertAdjacentElement('afterend',box);
   box.querySelectorAll('.v75-conf').forEach(b=>b.onclick=()=>setConfidence(b.dataset.conf));
   setConfidence(sessionConfidence[q.id]);
+}
+function freezeConfidence(){
+  const box=$75('v75Confidence');if(!box)return;
+  box.dataset.frozen='1';
+  box.querySelectorAll('.v75-conf').forEach(b=>{b.disabled=true;b.setAttribute('aria-disabled','true')});
 }
 
 function recordReview(q,ok,confidence){
@@ -161,7 +167,7 @@ function patchRuntime(){
   validateQ=function(){
     const q=currentQ(),before=Array.isArray(res)?res.length:0,wasExam=mode()==='exam',conf=confidenceForCurrent();
     const out=prevValidate();
-    if(!wasExam&&q&&Array.isArray(res)&&res.length>before){const r=recordReview(q,!!res[res.length-1],conf);showNextReview(r);refreshTodayCard()}
+    if(!wasExam&&q&&Array.isArray(res)&&res.length>before){freezeConfidence();const r=recordReview(q,!!res[res.length-1],conf);showNextReview(r);refreshTodayCard()}
     return out;
   };
 }
