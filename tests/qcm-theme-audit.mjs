@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import zlib from 'node:zlib';
+import assert from 'node:assert/strict';
 globalThis.window=globalThis;
 await import('../qcm-subthemes-v1.js');
 
@@ -35,5 +36,4 @@ for(const r of rows){
 
 if(single.length)console.log('⚠️ Thèmes uniques restants: '+single.map(r=>r.course+' ('+r.total+')').join(' ; '));
 
-import assert from 'node:assert/strict';
 assert.equal(single.length,0,'Tous les cours de 20 QCM ou plus doivent être divisés en sous-thèmes');
