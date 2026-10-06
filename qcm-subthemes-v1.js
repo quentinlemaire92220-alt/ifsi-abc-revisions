@@ -110,6 +110,20 @@ const R={
     [1,10,'Structure et classification des virus'],[11,20,'Cycle, hôte et tropisme viral'],[21,26,'Virome et diversité virale'],
     [27,30,'Contage et incubation'],[31,43,'Infections aiguës, chroniques et latentes'],[44,50,'Conséquences et prévention des infections virales']
   ]),
+  parasites_champignons:q=>pick(q.id,'parasites_champignons_',[
+    [1,13,'Modes de vie, parasites et effets pathogènes'],[14,23,'Cycles, hôtes et voies d’infestation'],
+    [24,34,'Diagnostic parasitaire et parasitoses'],[35,46,'Mycologie, morphologie et types de champignons'],
+    [47,52,'Mycoses superficielles et profondes'],[53,60,'Diagnostic mycologique et antifongigramme']
+  ]),
+  physiopathologie_infections:q=>pick(q.id,'physiopath_infections_',[
+    [1,5,'Épidémiologie et évolution des maladies infectieuses'],[6,12,'Hôte, colonisation et barrières de défense'],
+    [13,25,'Réponse inflammatoire et immunitaire'],[26,40,'Chaîne de transmission, réservoirs et voies de contamination'],
+    [41,50,'Triangle épidémiologique, hôte fragile et prévention']
+  ]),
+  pathologies_microcristallines_osteoporose:q=>pick(q.id,'v820_micro_',[
+    [1,18,'Goutte : clinique, diagnostic et prise en charge'],[19,28,'Chondrocalcinose'],
+    [29,40,'Ostéoporose : risques, fractures et diagnostic'],[41,45,'Ostéoporose : prévention et prise en soins']
+  ]),
   diagnostic_virologie:q=>pick(q.id,'diagnostic_virologie_',[
     [1,9,'Principes et prélèvements virologiques'],[10,19,'Diagnostic direct et détection virale'],[20,39,'PCR, charge virale et séquençage'],
     [40,50,'Diagnostic indirect et sérologie']
