@@ -1,18 +1,18 @@
 {
   "version": "8.27",
-  "auditedAt": "2026-10-05",
+  "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.27 : rééquilibrage de 20 banques QCM historiques. Les propositions sont permutées sans modifier leur contenu ni les réponses correctes ; audit A-E compatible avec les anciens formats à 4 choix.",
+  "note": "V8.30.5 : ajout des quatre premiers vocaux du système cardiovasculaire au catalogue actif, avec courseId explicite et Drive IDs uniques.",
   "expectedTotals": {
     "courses": 40,
     "sheets": 47,
     "infographics": 138,
-    "vocals": 29,
+    "vocals": 33,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
