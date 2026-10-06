@@ -63,6 +63,8 @@ jobs:
           node --check v830-changelog.js
           node --check v8301-changelog.js
           node --check v8302-changelog.js
+          node --check v8303-changelog.js
+          node --check v8303-home-startup.js
           node --check tnr-v72.js
           node --check tests/tnr-node.mjs
           node --check tests/course-audit.mjs

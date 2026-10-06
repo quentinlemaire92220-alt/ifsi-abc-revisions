@@ -57,7 +57,7 @@ const suites=[
       "v814RespAtlas",
       "v824DigestiveAtlas",
       "v829LocomotorAtlas",
-      "window.IFSI_APP_VERSION||'8.30.2'"
+      "window.IFSI_APP_VERSION||'8.30.3'"
     ]
   },
   {
@@ -84,6 +84,15 @@ const suites=[
       "querySelectorAll('[data-favqremove]')",
       "querySelectorAll('[data-favvopen]')",
       "querySelectorAll('[data-favvremove]')"
+    ]
+  },
+  {
+    file:'v8303-home-startup.js',
+    markers:[
+      "window.IFSI_V76?.refresh?.()",
+      "window.addEventListener('ifsi:v73-ready'",
+      "window.show=function()",
+      "v8303SuggestBtn"
     ]
   },
   {
