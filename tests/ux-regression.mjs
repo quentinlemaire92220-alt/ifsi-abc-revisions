@@ -26,7 +26,7 @@ const swModules=[...moduleMatch[1].matchAll(/"([^"]+\.js)"/g)].map(m=>m[1]);
 const indexModules=scriptRefs.map(m=>m[1]);
 assert.deepEqual(swModules,indexModules,'index.html et service worker ne chargent pas les mêmes modules dans le même ordre');
 
-const baseMatch=sw.match(/const BASE_ASSETS=\[(.*?)\];\nasync function/s);
+const baseMatch=sw.match(/const BASE_ASSETS=\[(.*?)\];/s);
 assert.ok(baseMatch,'Liste BASE_ASSETS absente du service worker');
 const baseAssets=[...baseMatch[1].matchAll(/'([^']+)'/g)].map(m=>m[1].replace(/^\.\//,'').replace(/\?.*$/,''));
 for(const name of swModules)assert.ok(baseAssets.includes(name),`Module absent du pré-cache PWA: ${name}`);
