@@ -12,7 +12,7 @@ const aliases=c=>[...new Set([c.label,...(c.aliases||[])].map(norm).filter(Boole
 const allAliases=new Map(courses.map(c=>[c.id,aliases(c)]));
 const driveId=x=>((x?.url||'').match(/\/d\/([^/]+)/)||[])[1]||x?.driveId||null;
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
-const keepQuestion=q=>{const t=q?.question||'';if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
+const keepQuestion=q=>{const t=q?.question||'';if(q?.id==='pharmaco_031')return true;if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
 function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
 function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
@@ -31,8 +31,8 @@ function resolveLabel(label){
 
 let base=[];for(let i=1;i<=5;i++)base.push(...json(`questions-${i}.json`));
 let extras=[],override=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
-for(const i of [39,40,41,42]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);override.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);extras.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
+for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;const parsed=decodePackFile(p);override.push(...(Array.isArray(parsed)?parsed:(parsed.questions||[])))}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const overrideIds=new Set(override.map(q=>q.id).filter(Boolean));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...override)}
 const seen=new Set(base.map(q=>q.id));const qs=[...base];for(const q of extras)if(!seen.has(q.id)){qs.push(q);seen.add(q.id)}
@@ -42,7 +42,7 @@ const infos=json('infographics.json');
 const byCourse=Object.fromEntries(courses.map(c=>[c.id,{label:c.label,qcm:0,vocals:0,sheets:0,infographics:0}]));
 const errors=[];
 
-assert(registry.version==='8.30.22',`Version registre inattendue: ${registry.version}`);
+assert(registry.version==='8.30.23',`Version registre inattendue: ${registry.version}`);
 assert(registry.sourceOfTruth?.driveRootId==='1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae','Racine Drive canonique absente');
 assert(registry.resourcePolicy?.requireExplicitCourseId===true,'Politique courseId explicite absente');
 assert(courseMap.get('calculs_doses_mathematiques')?.domain==='E','Calculs de doses doit être classé dans le domaine E');assert(courseMap.has('ist_hors_vih'),'Cours IST hors VIH absent du registre');
@@ -92,6 +92,8 @@ const count=(id,key)=>byCourse[id]?.[key]||0;
 if(count('introduction_droit','qcm')!==50)errors.push(`Introduction au droit: 50 QCM attendus, ${count('introduction_droit','qcm')} trouvés`);
 if(count('introduction_droit','sheets')<1)errors.push('Introduction au droit: fiche manquante');
 if(count('psychologie_sante','sheets')<1)errors.push('Psychologie de la santé: fiche manquante');
+if(count('pharmacologie','qcm')!==60)errors.push(`Introduction à la pharmacologie: 60 QCM attendus, ${count('pharmacologie','qcm')} trouvés`);
+if(count('pharmacologie','sheets')<1)errors.push('Introduction à la pharmacologie: fiche manquante');
 if(count('systeme_cardiovasculaire','sheets')<1)errors.push('Système cardiovasculaire: fiche manquante');
 if(count('systeme_digestif','sheets')<2)errors.push('Système digestif incomplet: moins de 2 fiches');
 if(count('systeme_digestif','infographics')<9)errors.push('Système digestif incomplet: moins de 9 infographies');
