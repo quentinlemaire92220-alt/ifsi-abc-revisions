@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.8 : remplacement du vocal général du système nerveux par une série complète de cinq vocaux actifs.",
+  "note": "V8.30.10 : audit fiabilisé avec 8 atlas explicitement contractés, lecture des IDs Drive thumbnail?id et détail QCM rendu.",
   "expectedTotals": {
     "courses": 40,
     "sheets": 47,
@@ -52,5 +52,16 @@
       54,
       57
     ]
+  },
+  "auditLogicVersion": "8.30.10",
+  "atlasBoardContracts": {
+    "systeme_respiratoire": 8,
+    "systeme_cardiovasculaire": 8,
+    "systeme_urinaire": 8,
+    "systeme_endocrinien": 8,
+    "systeme_immunitaire": 8,
+    "systeme_nerveux": 8,
+    "systeme_digestif": 12,
+    "appareil_locomoteur": 20
   }
 }
