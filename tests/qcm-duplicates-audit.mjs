@@ -84,7 +84,7 @@ if(nearCalc.length)console.log(`ℹ️ ${nearCalc.length} paires proches sont de
 if(calcSameData.length){console.log('🔢 Calculs avec les mêmes données numériques:');for(const x of calcSameData.slice(0,30))console.log(` - ${x.a.id} {${sourceById.get(x.a.id)||'?'}} ↔ ${x.b.id} {${sourceById.get(x.b.id)||'?'}} • données ${x.data} :: "${x.a.question}" / "${x.b.question}"`)}
 
 // Plafonds de non-régression : à réduire après nettoyage, jamais augmenter.
-assert.ok(exact.length<=9999,'Plafond temporaire exact dépassé');
-assert.ok(samePayload.length<=9999,'Plafond temporaire payload dépassé');
-assert.ok(nearContent.length<=9999,'Plafond temporaire quasi-doublons contenu dépassé');
-assert.ok(calcSameData.length<=9999,'Plafond temporaire doublons numériques dépassé');
+assert.equal(exact.length,0,'Énoncé QCM identique détecté dans le runtime');
+assert.equal(samePayload.length,0,'Doublon strict question + choix + réponses détecté');
+assert.equal(nearContent.length,0,'Quasi-doublon de contenu QCM détecté');
+assert.equal(calcSameData.length,0,'Exercices de calcul utilisant les mêmes données détectés');
