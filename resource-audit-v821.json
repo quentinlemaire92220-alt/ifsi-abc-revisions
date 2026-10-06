@@ -1,5 +1,5 @@
 {
-  "version": "8.30.26",
+  "version": "8.30.27",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.26 : ajout de 5 vocaux actifs pour l’introduction à la pharmacologie.",
+  "note": "V8.30.27 : planning officiel S5/S6 ajouté ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
