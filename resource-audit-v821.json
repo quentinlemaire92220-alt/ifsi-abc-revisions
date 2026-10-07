@@ -1,5 +1,5 @@
 {
-  "version": "8.30.32",
+  "version": "8.30.33",
   "auditedAt": "2026-10-07",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.32 : fiche Pharmacologie enrichie et 10 QCM réalignés ; identifiants Drive et volumes de catalogue inchangés.",
+  "note": "V8.30.33 : planning S7 ajouté ; catalogues pédagogiques et volumes de ressources inchangés.",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
