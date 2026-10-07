@@ -179,6 +179,9 @@ for(const [id,min] of Object.entries(expectedInfoCounts)){const n=infographics.f
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
 for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
+const vocalModule=read('vocals-v73.js');
+for(const marker of ["const VERSION='7.3.2'",'driveStream=id=>','<audio id="vocalAudio"','function useDriveFallback(id)','vocalFallbackBtn','positions:x.positions'])assert(vocalModule.includes(marker),`Lecteur vocal natif incomplet: ${marker}`);
+assert(vocalModule.indexOf('<audio id="vocalAudio"')<vocalModule.indexOf('<iframe id="vocalFrame"'),'Le lecteur audio natif doit rester le lecteur principal avant le fallback Drive');
 
 const releaseMeta=json('build-meta.json');
 assert(/^\d+\.\d+(?:\.\d+)?$/.test(releaseMeta.version),'Version build-meta invalide');
