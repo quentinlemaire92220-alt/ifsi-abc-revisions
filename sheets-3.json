@@ -217,7 +217,10 @@
     "provisional": false,
     "courseId": "infections_pulmonaires_bacteriennes",
     "displayTitle": "Infections pulmonaires bactériennes",
-    "sourceStatus": "active"
+    "sourceStatus": "active",
+    "officialSupport": true,
+    "sourceBasis": "Support officiel de l’intervenant",
+    "sourceNote": "Support officiel disponible — fiche de révision vérifiée et mise à jour à partir du support officiel."
   },
   {
     "title": "UE_S1_B1_Infections_Respiratoires_Virales_Partie01_Fiche_Revision.pdf",
@@ -227,7 +230,10 @@
     "provisional": false,
     "courseId": "infections_respiratoires_virales",
     "displayTitle": "Infections respiratoires virales",
-    "sourceStatus": "active"
+    "sourceStatus": "active",
+    "officialSupport": true,
+    "sourceBasis": "Support officiel de l’intervenant",
+    "sourceNote": "Support officiel disponible — fiche de révision vérifiée et mise à jour à partir du support officiel."
   },
   {
     "title": "UE_S1_B1_IST_Hors_VIH_Partie01_Fiche_Revision_IST.pdf",
