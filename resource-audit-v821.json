@@ -1,5 +1,5 @@
 {
-  "version": "8.30.36",
+  "version": "8.30.37",
   "auditedAt": "2026-10-07",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.36 : ajout de l’infographie 04 « Normes des paramètres vitaux » et pack Paramètres vitaux mis à jour à 4 planches.",
+  "note": "V8.30.37 : ajout de la série complète de 6 vocaux d’initiation à l’administration médicamenteuse.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
     "infographics": 155,
-    "vocals": 47,
+    "vocals": 53,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -103,6 +103,15 @@
         "1Hnx4Fw2spivK5ztUBzZGQoCL7C5y64f0",
         "1_gF4lDY13l5eclXMjYNDxc6AF1jw1Mz4",
         "1X4fw1KWr7KGl35WltTEQQHAHAG4HDIeg"
+      ],
+      "vocals": 6,
+      "vocalDriveIds": [
+        "1y7MBR6plsMXx_bMYkoTgTriF7k8ZrpOQ",
+        "1e-ErRdwt8E4l1zB8E5v7Fz7nArQ2hq9T",
+        "1eMKTZAo-tsPmEV7mVUqmfcE6qOU_YCvy",
+        "1NPAfg-2ng-mEw3wx1Cm9VCUJd8dYv5UP",
+        "11-lu1byRfbJrxnqC6muRJ82fTuVzq5Da",
+        "1msT0cM0m24CDLavku82MI8dfDA7fWl9w"
       ]
     },
     {
