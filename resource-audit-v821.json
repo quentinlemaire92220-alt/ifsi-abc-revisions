@@ -1,5 +1,5 @@
 {
-  "version": "8.30.28",
+  "version": "8.30.29",
   "auditedAt": "2026-10-06",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.27 : planning officiel S5/S6 ajouté ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.29 : badge de provenance « 📝 Notes / captures » rendu visible sur les fiches sans support officiel et les cartes de cours concernées.",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
