@@ -38,6 +38,12 @@ for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46]){const p
 for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);for(const q of a)auditRawQuestion(q,p);override.push(...a)}catch(e){skipped.push(`${p}: ${e.message}`)}}
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
+// Régression épistémologie: préserver les réponses multiples de la grille officielle.
+const epistemologyPack=decodePackFile('qextra-12.txt');
+assert(epistemologyPack.length===68,`Pack épistémologie inattendu: ${epistemologyPack.length}/68`);
+assert(epistemologyPack.filter(q=>Array.isArray(q.answers)&&q.answers.length>1).length===37,'Réponses multiples épistémologie incomplètes');
+const caringQ17=epistemologyPack.find(q=>q.id==='v820_a1p3_017');
+assert(caringQ17&&JSON.stringify(caringQ17.answers)===JSON.stringify([0,3]),'Q17 caring doit accepter A + D');
 // QCM IAS: aucune correction vide et argumentation minimale conservée.
 const iasTail=decodePackFile('qextra-17.txt');
 assert(iasTail.length===42,`Pack IAS qextra-17 inattendu: ${iasTail.length}/42`);
