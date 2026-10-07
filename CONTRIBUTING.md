@@ -39,3 +39,16 @@ Dans **Settings → Rules → Rulesets** (ou Branch protection rules), protéger
 - blocage des force-push et suppressions de `main`.
 
 Les administrateurs peuvent conserver un bypass uniquement pour les urgences.
+
+## Réglages GitHub obligatoires
+
+Le workflow versionné ne suffit pas à lui seul. Dans les paramètres GitHub du dépôt :
+
+- GitHub Actions doit être autorisé ;
+- `main` doit être couverte par un ruleset ou une branch protection ;
+- la pull request doit être obligatoire avant fusion ;
+- le check **TNR IFSI ABC / tnr** doit être requis ;
+- les force-push et la suppression de `main` doivent être bloqués ;
+- la suppression automatique des branches après fusion est recommandée.
+
+Après fusion d'un lot, supprimer sa branche courte. Les branches d'audit, de correctif ou de fonctionnalité déjà fusionnées ne doivent pas rester indéfiniment dans le dépôt.
