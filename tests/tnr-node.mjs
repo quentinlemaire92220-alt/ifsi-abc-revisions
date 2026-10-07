@@ -58,6 +58,25 @@ const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 for(let i=0;i<runtime.length;i++)runtime[i]=normalizeMaxThreeAnswers(runtime[i]);
 const runtimeNormalizedFour=runtime.filter(q=>q.answerCountNormalized===true).length;
+// Régression épistémologie après fusion des overrides : la vérité affichée doit rester cohérente avec la grille officielle.
+const semanticEpistemologyText=s=>String(s||'').replace(/CM[34]\s*•[\s\S]*$/,'').replace(/\s+(?:Cas Mme L\. avec Henderson|Théorie de gestion des symptômes \(TGS\)|Les six écoles de pensée|Métaparadigme selon les écoles|Théories infirmières|Niveaux d’abstraction et utilité)$/,'').replace(/\s+/g,' ').trim().toLowerCase();
+const epistemologyOfficial=new Map(epistemologyPack.map(q=>[q.id,q]));
+const epistemologyRuntime=new Map(runtime.filter(q=>q.courseId==='epistemologie_savoirs').map(q=>[q.id,q]));
+assert(epistemologyRuntime.size>=68,`Banque runtime épistémologie incomplète: ${epistemologyRuntime.size}/68`);
+for(const [id,source] of epistemologyOfficial){
+  const live=epistemologyRuntime.get(id);assert(live,`QCM épistémologie runtime absent: ${id}`);
+  const liveChoiceIndex=new Map((live.choices||[]).map((x,i)=>[semanticEpistemologyText(x),i]));
+  const liveAnswers=new Set(live.answers||[]);
+  for(const sourceIndex of source.answers||[]){
+    const key=semanticEpistemologyText(source.choices?.[sourceIndex]);
+    if(!liveChoiceIndex.has(key))continue; // Une réécriture volontaire peut retirer une proposition pour rester à 1–3 bonnes réponses.
+    assert(liveAnswers.has(liveChoiceIndex.get(key)),`Bonne réponse officielle perdue après override: ${id} → ${source.choices?.[sourceIndex]}`);
+  }
+}
+const caringRuntime=epistemologyRuntime.get('v820_a1p3_017');
+const caringRuntimeAnswers=(caringRuntime?.answers||[]).map(i=>semanticEpistemologyText(caringRuntime.choices?.[i])).sort();
+assert(JSON.stringify(caringRuntimeAnswers)===JSON.stringify(['champ phénoménologique','dimension culturelle / spirituelle'].sort()),'Q17 caring runtime doit accepter Champ phénoménologique + Dimension culturelle / spirituelle');
+assert((caringRuntime?.answers||[]).length===2,'Q17 caring runtime doit avoir exactement 2 bonnes réponses');
 const schemaIds=['resp_003','resp_013','resp_015'];
 const schemaSource=read('schema-v10.js');
 const officialRespAssets=['resp-official-overview-learn.jpg','resp-official-overview-test.jpg','resp-official-bronchial-learn.jpg','resp-official-bronchial-test.jpg','resp-official-epithelium-test.jpg'];
