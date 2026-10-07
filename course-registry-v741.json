@@ -1,5 +1,5 @@
 {
-  "version": "8.30.34",
+  "version": "8.30.35",
   "courses": [
     {
       "id": "biomolecules",
@@ -497,6 +497,20 @@
       ],
       "domain": "B",
       "ue": "B1"
+    },
+    {
+      "id": "administration_medicamenteuse",
+      "label": "Initiation à l’administration médicamenteuse",
+      "aliases": [
+        "Initiation à l’administration médicamenteuse",
+        "Initiation a l'administration medicamenteuse",
+        "Administration médicamenteuse",
+        "Administration medicamenteuse",
+        "UE B3 administration médicamenteuse",
+        "UE B3 administration medicamenteuse"
+      ],
+      "domain": "B",
+      "ue": "B3"
     }
   ],
   "auditBaseline": {
