@@ -62,6 +62,12 @@ Flux recommandé :
 
 Ne pas pousser directement une release incomplète sur `main`.
 
+## Hygiène du dépôt
+
+Les archives legacy et les règles de nettoyage sont documentées dans `REPO_HYGIENE.md`. Le workflow TNR exécute aussi `tests/repo-hygiene.mjs` pour empêcher le retour de fichiers obsolètes à la racine et détecter les secrets évidents.
+
+Pour que ces contrôles soient réellement bloquants, **GitHub Actions doit être activé dans les paramètres du dépôt et `main` doit être protégée par un ruleset ou une branch protection**.
+
 ## Sécurité du dépôt
 
 Ne jamais commiter de mot de passe, jeton, clé API, fichier `.env` ou autre secret.

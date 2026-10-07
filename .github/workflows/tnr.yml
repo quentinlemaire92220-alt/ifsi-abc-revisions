@@ -17,6 +17,7 @@ on:
 jobs:
   tnr:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -62,3 +63,6 @@ jobs:
 
       - name: Audit automatique Drive ↔ application
         run: node tests/resource-sync-v821.mjs
+
+      - name: Audit hygiène du dépôt
+        run: node tests/repo-hygiene.mjs
