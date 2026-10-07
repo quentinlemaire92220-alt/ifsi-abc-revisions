@@ -64,6 +64,7 @@ const epistemologyOfficial=new Map(epistemologyPack.map(q=>[q.id,q]));
 const epistemologyRuntime=new Map(runtime.filter(q=>q.courseId==='epistemologie_savoirs').map(q=>[q.id,q]));
 assert(epistemologyRuntime.size>=68,`Banque runtime épistémologie incomplète: ${epistemologyRuntime.size}/68`);
 for(const [id,source] of epistemologyOfficial){
+  if(!keepQuestion(source))continue; // Les QCM dépendants d'un schéma externe sont volontairement exclus du runtime.
   const live=epistemologyRuntime.get(id);assert(live,`QCM épistémologie runtime absent: ${id}`);
   const liveChoiceIndex=new Map((live.choices||[]).map((x,i)=>[semanticEpistemologyText(x),i]));
   const liveAnswers=new Set(live.answers||[]);
