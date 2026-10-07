@@ -4,12 +4,17 @@ const SECTION='planningPromo';
 const NAV_ID='vPlanningNav';
 const K_PROMO='ifsiabc_planning_promo_v1';
 const K_WEEK='ifsiabc_planning_week_v1';
+const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
 const UPDATED_AT='2026-10-07';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
+let subgroup=localStorage.getItem(K_SUBGROUP)||'all';
+function subgroupOptions(){return promo==='A'?['all','A1','A2']:['all','B1','B2']}
+function subgroupLabel(x){return x==='all'?'Tous':x}
+function validSubgroup(){if(!subgroupOptions().includes(subgroup)){subgroup='all';localStorage.setItem(K_SUBGROUP,subgroup)}}
 
 const WEEKS=[
  {id:'S5',label:'S5',start:'2026-09-28',end:'2026-10-02',range:'28 sept. - 2 oct.',events:[
@@ -49,6 +54,37 @@ const WEEKS=[
   {date:'2026-10-09',start:'13:30',end:'17:00',promo:'B',ue:'UE Simulation',type:'TD',title:'Simulation en santé J2',detail:'Toilette complète au lit • Chambre des erreurs • Prescriptions et calculs • Découverte des dispositifs médicaux • Prise des paramètres vitaux',room:'S1 • S4 • S5 • S6 • S2/S3/S10/S13',teacher:'W Bernabelah AS • S Soufi AS • A Laleg AS • A Benatia AS • ID/SL/AC SSO'},
   {date:'2026-10-09',start:'13:30',end:'17:00',promo:'A',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''}
  ]}
+ ,{id:'S7',label:'S7',start:'2026-10-12',end:'2026-10-16',range:'12 - 16 oct.',events:[
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B1','B2'],groupLabel:'Groupes B1 / B2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:''},
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:'PANDION Odile'},
+  {date:'2026-10-12',start:'10:30',end:'12:00',promo:'A',groups:['A1','A2'],groupLabel:'Groupes A1 / A2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:'BOURRIGAN Lucille • LEBRE Stéphanie'},
+  {date:'2026-10-12',start:'10:30',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:''},
+  {date:'2026-10-12',start:'13:15',end:'16:15',promo:'A',groups:['A1'],groupLabel:'Groupe A1',ue:'UE B3.2.1 S1',type:'TD',title:'Gestion du stress',room:'S10',teacher:'MARCEAU Patrice'},
+  {date:'2026-10-12',start:'13:15',end:'16:15',promo:'all',groups:['A2','B2'],groupLabel:'Groupes A2 / B2',ue:'UE B3.2.1 S1',type:'TD',title:'1ère intervention PSSM',room:'S11 • S3',teacher:'BOURRIGAN Lucille • SOARES Sonia • DIETRICH Anne • LEBRE Stéphanie'},
+  {date:'2026-10-12',start:'13:15',end:'16:15',promo:'B',groups:['B1'],groupLabel:'Groupe B1 (D)',ue:'',type:'TD',title:'Temps d’Appropriation des Connaissances',room:'',teacher:''},
+
+  {date:'2026-10-13',start:'09:00',end:'12:00',promo:'all',groups:['A1','B1'],groupLabel:'Groupes A1 / B1',ue:'UE B3.2.1 S1',type:'TD',title:'1ère intervention PSSM',room:'S11 • S3',teacher:'BOURRIGAN Lucille • SOARES Sonia • DIETRICH Anne • LEBRE Stéphanie'},
+  {date:'2026-10-13',start:'09:00',end:'12:00',promo:'A',groups:['A2'],groupLabel:'Groupe A2',ue:'UE A2.1 S1',type:'TD',title:'Gestion du stress',room:'S10',teacher:'MARCEAU Patrice'},
+  {date:'2026-10-13',start:'09:00',end:'12:00',promo:'B',groups:['B2'],groupLabel:'Groupe B2 (D)',ue:'',type:'TD',title:'Temps d’Appropriation des Connaissances',room:'',teacher:''},
+  {date:'2026-10-13',start:'14:00',end:'16:00',promo:'all',groupLabel:'Groupes Niveau 1 (1), (2) et (3)',ue:'UE B3.1 S1',type:'TD',title:'Atelier de soutien en calculs ESI Nv1',courseId:'calculs_doses_mathematiques',room:'S3 • S10 • S13',teacher:'BOURRIGAN Lucille • DIETRICH Anne • LEBRE Stéphanie'},
+  {date:'2026-10-13',start:'14:00',end:'17:00',promo:'all',groupLabel:'Groupes Niveau 2 (1) et (2) (D)',ue:'UE B3.1 S1',type:'Asynchrone',title:'Connexion Mischool (pour ESI Nv2)',courseId:'calculs_doses_mathematiques',room:'Distanciel',teacher:''},
+  {date:'2026-10-13',start:'14:00',end:'16:00',promo:'all',groupLabel:'Groupe Niveau 3 (D)',ue:'UE B3.1 S1',type:'Asynchrone',title:'Atelier calculs ESI Nv3',courseId:'calculs_doses_mathematiques',room:'Distanciel',teacher:''},
+
+  {date:'2026-10-14',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'TD',title:'Les plaies simples et soins courants',room:'S10',teacher:''},
+  {date:'2026-10-14',start:'09:00',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE D1.1 S1',type:'CM',title:'L’entretien infirmier',room:'S11',teacher:'GRARE Pascaline'},
+  {date:'2026-10-14',start:'13:30',end:'16:30',promo:'all',groupLabel:'Distanciel',ue:'UE D4 S1',type:'TD',title:'Temps d’Appropriation des Connaissances',room:'Distanciel',teacher:''},
+  {date:'2026-10-14',start:'16:30',end:'17:30',promo:'all',groupLabel:'Distanciel',ue:'UE 5.08 S1',type:'Asynchrone',title:'Visionnage du film sur « Les objectifs de stage »',room:'Distanciel',teacher:''},
+
+  {date:'2026-10-15',start:'09:00',end:'12:00',promo:'all',groupLabel:'Cf groupe',ue:'UE 5.08 S1',type:'TD',title:'Simulation J3 — Pansement simple avec pinces',room:'TP4 • Informatique • S12 • S2',teacher:'DIETRICH Anne'},
+  {date:'2026-10-15',start:'09:30',end:'12:00',promo:'all',groupLabel:'Cf groupe',ue:'UE 5.08 S1',type:'TD',title:'Simulation J3 — Jeu de rôle et communication / chambre d’observation',room:'S3 • S13 • S10 • S11',teacher:'BOURRIGAN Lucille • DELABARRE Isabelle • LEBRE Stéphanie • SOARES Sonia'},
+  {date:'2026-10-15',start:'13:30',end:'16:30',promo:'all',groupLabel:'Cf groupe',ue:'UE 5.08 S1',type:'TD',title:'Simulation J3 — Pansement simple avec pinces',room:'TP4 • Informatique • S12 • S2',teacher:'SERRE Manon • MANGIN Elsa'},
+  {date:'2026-10-15',start:'14:00',end:'16:30',promo:'all',groupLabel:'Cf groupe',ue:'UE 5.08 S1',type:'TD',title:'Simulation J3 — Jeu de rôle et communication / chambre d’observation',room:'S3 • S10 • S13 • S11',teacher:'BOURRIGAN Lucille • DELABARRE Isabelle • LEBRE Stéphanie • SOARES Sonia • DIETRICH Anne'},
+
+  {date:'2026-10-16',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A',ue:'UE D1.1 S1',type:'CM',title:'L’entretien IDE',room:'S11',teacher:'GRARE Pascaline'},
+  {date:'2026-10-16',start:'09:00',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'Plaies et pansements simples',room:'S10',teacher:''},
+  {date:'2026-10-16',start:'13:30',end:'16:30',promo:'all',groupLabel:'Groupes Niveau 1 et Niveau 3 (D)',ue:'UE E2.1 S1',type:'Asynchrone',title:'Connexion plateforme Mischool (ESI Nv1 et 3)',courseId:'calculs_doses_mathematiques',room:'Distanciel',teacher:''},
+  {date:'2026-10-16',start:'14:00',end:'16:00',promo:'all',groupLabel:'Groupes Niveau 2 (1) et (2)',ue:'UE B3.1 S1',type:'TD',title:'Atelier de soutien pour ESI Nv2',courseId:'calculs_doses_mathematiques',room:'S3 • S2',teacher:'DELABARRE Isabelle • DIETRICH Anne'}
+ ]}
 ];
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
@@ -67,6 +103,7 @@ function css(){
  .vp-segment{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:#eeeaf3;border-radius:16px;margin-top:12px}
  .vp-segment button{border:0;border-radius:12px;padding:11px 10px;background:transparent;color:#625c6e;font-weight:850;cursor:pointer}
  .vp-segment button.on{background:#7046d9;color:#fff;box-shadow:0 5px 14px rgba(95,57,190,.2)}
+ .vp-filter-title{font-size:11px;font-weight:900;color:var(--muted);margin:10px 2px 6px}.vp-subgroups{display:flex;gap:7px;flex-wrap:wrap}.vp-subgroup{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 11px;font-weight:800;cursor:pointer}.vp-subgroup.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
  .vp-week-tabs{display:flex;gap:7px;overflow:auto;padding:2px 0 4px;scrollbar-width:none}.vp-week-tabs::-webkit-scrollbar{display:none}
  .vp-week-tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:13px;padding:9px 11px;font-weight:800;white-space:nowrap;cursor:pointer}.vp-week-tab.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
  .vp-card{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:15px;margin:10px 0;box-shadow:0 7px 22px rgba(55,39,94,.05)}
@@ -90,7 +127,8 @@ function css(){
 function frDate(iso,opts={weekday:'long',day:'numeric',month:'long'}){const [y,m,d]=iso.split('-').map(Number);return new Intl.DateTimeFormat('fr-FR',opts).format(new Date(y,m-1,d,12))}
 function kind(type){const t=String(type||'').toUpperCase();if(t.startsWith('TD')||t==='CM 1+2'&&false)return t.startsWith('TD')?'TD':'CM';if(t.startsWith('TP'))return'TP';if(t.includes('ASYN'))return'ASYNC';if(t==='INFO')return'INFO';return'CM'}
 function typeClass(type){const k=kind(type);return k==='TD'?'td':k==='TP'?'tp':k==='ASYNC'?'async':k==='INFO'?'info':''}
-function eventsFor(w,date){return w.events.filter(e=>e.date===date&&(e.promo==='all'||e.promo===promo)).sort((a,b)=>a.start.localeCompare(b.start))}
+function eventVisible(e){if(!(e.promo==='all'||e.promo===promo))return false;if(subgroup==='all')return true;return !Array.isArray(e.groups)||!e.groups.length||e.groups.includes(subgroup)}
+function eventsFor(w,date){validSubgroup();return w.events.filter(e=>e.date===date&&eventVisible(e)).sort((a,b)=>a.start.localeCompare(b.start))}
 function registryCourse(id){return (window.IFSI_V741?.getRegistry?.()?.courses||[]).find(c=>c.id===id)||null}
 function openCourseResources(id){
  const c=registryCourse(id);
@@ -99,10 +137,10 @@ function openCourseResources(id){
  window.showCourses74?.()
 }
 function eventCard(e){
- const meta=[e.room&&'📍 '+e.room,e.teacher&&'👤 '+e.teacher].filter(Boolean).join(' • '),resource=e.courseId?`<button type="button" class="vp-resource-btn" data-vcourse="${esc(e.courseId)}">📚 Voir les ressources</button>`:'';
+ const meta=[e.groupLabel&&'👥 '+e.groupLabel,e.room&&'📍 '+e.room,e.teacher&&'👤 '+e.teacher].filter(Boolean).join(' • '),resource=e.courseId?`<button type="button" class="vp-resource-btn" data-vcourse="${esc(e.courseId)}">📚 Voir les ressources</button>`:'';
  return `<article class="vp-event" data-kind="${kind(e.type)}"><div class="vp-time">${esc(e.start)}<small>à ${esc(e.end)}</small></div><div class="vp-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}${e.detail?`<div class="vp-detail">${esc(e.detail)}</div>`:''}${resource}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
 }
-function allPromoEvents(){return WEEKS.flatMap(w=>w.events).filter(e=>e.promo==='all'||e.promo===promo).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start))}
+function allPromoEvents(){validSubgroup();return WEEKS.flatMap(w=>w.events).filter(eventVisible).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start))}
 function eventDateTime(e,field){return new Date(e.date+'T'+e[field]+':00')}
 function nextCourseCard(){
  const now=new Date(),es=allPromoEvents(),current=es.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=current||es.find(e=>eventDateTime(e,'start')>now);
@@ -112,10 +150,10 @@ function nextCourseCard(){
 }
 function snapshot(){
  const out={};
- for(const e of WEEKS.flatMap(w=>w.events)){const k=[e.date,e.promo,e.ue||'',e.title].join('|');out[k]={start:e.start,end:e.end,room:e.room||'',type:e.type||''}}
+ for(const e of WEEKS.flatMap(w=>w.events)){const k=[e.date,e.start,e.promo,(e.groups||[]).join(','),e.ue||'',e.title].join('|');out[k]={start:e.start,end:e.end,room:e.room||'',type:e.type||''}}
  return out
 }
-function changeLabel(key,obj){const [date,,ue,title]=key.split('|');return `${frDate(date,{weekday:'short',day:'numeric',month:'short'})} • ${ue?ue+' • ':''}${title}${obj?.start?' • '+obj.start:''}`}
+function changeLabel(key,obj){const [date,start,,,ue,title]=key.split('|');return `${frDate(date,{weekday:'short',day:'numeric',month:'short'})} • ${ue?ue+' • ':''}${title}${start?' • '+start:''}`}
 function reconcilePlanningChanges(){
  const cur=snapshot(),raw=localStorage.getItem(K_SNAPSHOT);
  if(raw){try{const old=JSON.parse(raw),added=[],removed=[],modified=[];for(const [k,v] of Object.entries(cur)){if(!old[k])added.push(changeLabel(k,v));else if(JSON.stringify(old[k])!==JSON.stringify(v))modified.push(changeLabel(k,v))}for(const [k,v] of Object.entries(old))if(!cur[k])removed.push(changeLabel(k,v));if(added.length||removed.length||modified.length)localStorage.setItem(K_PENDING,JSON.stringify({added,removed,modified,at:UPDATED_AT}))}catch{}}
@@ -138,13 +176,13 @@ function weekCard(w){
  return `<div class="vp-card"><div class="vp-row"><div><b>${esc(w.label)} • Promo ${promo}</b><div class="vp-date">${esc(frDate(w.start,{day:'numeric',month:'long'}))} - ${esc(frDate(w.end,{day:'numeric',month:'long',year:'numeric'}))}</div></div><span class="badge">Prévisionnel</span></div>
  ${weekDates(w).map(date=>{const es=eventsFor(w,date),today=date===t;return `<section class="vp-dayblock"><div class="vp-dayhead ${today?'today':''}"><b>${esc(frDate(date,{weekday:'long',day:'numeric',month:'long'}))}${today?' • Aujourd’hui':''}</b><span class="small">${es.length} créneau${es.length>1?'x':''}</span></div>${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour la Promo '+promo+'.</div>'}</section>`}).join('')}
  <div class="vp-actions"><button id="vpExportIcs" class="btn outline full">📅 Exporter ${esc(w.label)} vers mon calendrier (.ics)</button></div>
- <div class="vp-source">✅ Source officielle importée : ${esc(SOURCE)}.<br>Les documents S5 et S6 indiquent explicitement qu'il s'agit d'un <b>planning prévisionnel</b> : une modification communiquée par l'IFSI reste prioritaire.</div></div>`
+ <div class="vp-source">✅ Source officielle importée : ${esc(SOURCE)}.<br>Les plannings S5, S6 et S7 sont des <b>plannings prévisionnels</b> : une modification communiquée par l'IFSI reste prioritaire.</div></div>`
 }
 function icsEscape(s){return String(s??'').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;')}
 function icsStamp(date,time){return date.replaceAll('-','')+'T'+time.replace(':','')+'00'}
 function exportIcs(){
  const w=WEEKS.find(x=>x.id===selectedWeek);if(!w)return;
- const es=w.events.filter(e=>e.promo==='all'||e.promo===promo);
+ validSubgroup();const es=w.events.filter(eventVisible);
  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//IFSI ABC Révisions//Planning Promo//FR','CALSCALE:GREGORIAN','X-WR-CALNAME:IFSI Promo '+promo+' '+w.id,'X-WR-TIMEZONE:Europe/Paris'];
  es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+SOURCE].filter(Boolean).join('\n')),'END:VEVENT')});
  lines.push('END:VCALENDAR');
@@ -153,14 +191,15 @@ function exportIcs(){
 function render(){
  const sec=$(SECTION);if(!sec)return;
  const w=WEEKS.find(x=>x.id===selectedWeek)||WEEKS[WEEKS.length-1];
- sec.innerHTML=`<div class="vp-head"><div class="vp-headline"><div><div class="small">VIE DE PROMO</div><h2>📅 Planning de la promo</h2><div class="small">Planning officiel S5 et S6 • sélection personnalisée par promotion.</div><div class="vp-update">🕘 Mis à jour le <strong>${esc(frDate(UPDATED_AT,{day:'numeric',month:'long',year:'numeric'}))}</strong> • 🔔 changements suivis sur cet appareil</div></div><span class="vp-official">✓ OFFICIEL IFSI</span></div>
- <div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div>
+ sec.innerHTML=`<div class="vp-head"><div class="vp-headline"><div><div class="small">VIE DE PROMO</div><h2>📅 Planning de la promo</h2><div class="small">Planning officiel S5, S6 et S7 • sélection personnalisée par promotion et sous-groupe.</div><div class="vp-update">🕘 Mis à jour le <strong>${esc(frDate(UPDATED_AT,{day:'numeric',month:'long',year:'numeric'}))}</strong> • 🔔 changements suivis sur cet appareil</div></div><span class="vp-official">✓ OFFICIEL IFSI</span></div>
+ <div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div><div class="vp-filter-title">Sous-groupe</div><div class="vp-subgroups">${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div></div>
  ${changesCard()}
  ${nextCourseCard()}
  ${todayCard()}
- <div class="vp-card"><div class="vp-row"><div><b>Choisir la semaine</b><div class="small">2 plannings officiels importés</div></div></div><div class="vp-week-tabs">${WEEKS.map(x=>`<button type="button" class="vp-week-tab ${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label} • ${x.range}</button>`).join('')}</div></div>
+ <div class="vp-card"><div class="vp-row"><div><b>Choisir la semaine</b><div class="small">3 plannings officiels importés</div></div></div><div class="vp-week-tabs">${WEEKS.map(x=>`<button type="button" class="vp-week-tab ${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label} • ${x.range}</button>`).join('')}</div></div>
  ${weekCard(w)}`;
- sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;localStorage.setItem(K_PROMO,promo);render()});
+ sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;subgroup='all';localStorage.setItem(K_PROMO,promo);localStorage.setItem(K_SUBGROUP,subgroup);render()});
+ sec.querySelectorAll('[data-vsubgroup]').forEach(b=>b.onclick=()=>{subgroup=b.dataset.vsubgroup;localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vweek]').forEach(b=>b.onclick=()=>{selectedWeek=b.dataset.vweek;localStorage.setItem(K_WEEK,selectedWeek);render()});
  $('vpExportIcs')?.addEventListener('click',exportIcs);
  sec.querySelectorAll('[data-vcourse]').forEach(b=>b.onclick=()=>openCourseResources(b.dataset.vcourse));
@@ -172,5 +211,5 @@ function showPlanning(){if(!addSection())return;document.querySelectorAll('.app>
 function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
 function init(){css();reconcilePlanningChanges();const a=addSection(),b=addNav();return a&&b}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.2',updatedAt:UPDATED_AT};
+window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.3',updatedAt:UPDATED_AT};
 })();
