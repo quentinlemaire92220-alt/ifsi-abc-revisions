@@ -1,5 +1,5 @@
 {
-  "version": "8.30.35",
+  "version": "8.30.36",
   "auditedAt": "2026-10-07",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,11 +7,11 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.35 : ajout du cours Initiation à l’administration médicamenteuse avec 1 fiche et 5 infographies validées.",
+  "note": "V8.30.36 : ajout de l’infographie 04 « Normes des paramètres vitaux » et pack Paramètres vitaux mis à jour à 4 planches.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
-    "infographics": 154,
+    "infographics": 155,
     "vocals": 47,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
@@ -104,6 +104,18 @@
         "1_gF4lDY13l5eclXMjYNDxc6AF1jw1Mz4",
         "1X4fw1KWr7KGl35WltTEQQHAHAG4HDIeg"
       ]
+    },
+    {
+      "courseId": "parametres_vitaux",
+      "course": "Paramètres vitaux",
+      "infographics": 4,
+      "infographicDriveIds": [
+        "1IiwJkSznE94r4LbNxxClKwS5OrgE80iG",
+        "19_E0vzdhjciMBvWmuzUvNVEPSkQEgK1X",
+        "1ebxwBp7_z9fV9v3HzktU27W39CXv-uo0",
+        "1iczon2eyByLBSKNEznuyPYGwI9xw2ePe"
+      ],
+      "packDriveId": "1GuY0GMCHPmTFooGb1ffgANkHj0M5q4cT"
     }
   ],
   "auditLogicVersion": "8.30.10",
