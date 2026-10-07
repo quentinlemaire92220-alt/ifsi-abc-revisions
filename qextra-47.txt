@@ -1,0 +1,203 @@
+[
+  {
+    "id": "pharmaco_016",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant les précautions pratiques d’administration vues dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Tous les comprimés peuvent être écrasés sans conséquence.",
+      "Certains médicaments ne doivent pas être écrasés et doivent être administrés sous leur forme prévue.",
+      "Pour certains médicaments, la prise à jeun ou par rapport aux repas influence l’efficacité.",
+      "La voie d’administration ne modifie jamais l’absorption.",
+      "Il faut toujours vérifier les unités utilisées pour la prescription et l’administration."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le cours rappelle que certains médicaments ne doivent pas être écrasés, que la prise par rapport aux repas peut modifier l’absorption et qu’une vigilance constante sur les unités est indispensable. Il ne faut donc pas considérer toutes les formes comme interchangeables.",
+    "theme": "Formes & administration",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_018",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quel repère d’unité est correct selon le cours ?",
+    "choices": [
+      "1 g = 100 mg.",
+      "1 L = 100 mL.",
+      "1 mL = 10 cm³.",
+      "1 mL = 1 cm³ = 1 cc.",
+      "Les mmol et les mEq sont toujours strictement équivalents quelle que soit la substance."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le support donne le repère 1 mL = 1 cm³ = 1 cc. Les conversions usuelles doivent être maîtrisées : 1 g = 1000 mg et 1 L = 1000 mL. Les mmol et mEq ne sont pas des unités interchangeables dans toutes les situations.",
+    "theme": "Formes & administration",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pharmaco_021",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quelles associations cible–exemple correspondent aux exemples du support ?",
+    "choices": [
+      "Récepteur → inhibiteur de l’enzyme de conversion.",
+      "Canal ionique → bêta-bloquant.",
+      "Enzyme → inhibiteur de l’enzyme de conversion.",
+      "Transporteur → antagoniste dopaminergique.",
+      "Transporteur → inhibiteur de la pompe à protons."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le support associe notamment les enzymes aux inhibiteurs de l’enzyme de conversion et les transporteurs aux inhibiteurs de la pompe à protons. Il donne aussi les bêta-bloquants comme exemple de médicaments agissant sur des récepteurs et les inhibiteurs calciques comme exemple lié aux canaux.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_022",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "À propos de l’inhibition compétitive et non compétitive d’une enzyme, quelles propositions sont exactes ?",
+    "choices": [
+      "Dans l’inhibition compétitive expliquée en cours, le médicament occupe le site actif et gêne la fixation du substrat.",
+      "Une inhibition compétitive signifie que le médicament détruit définitivement l’enzyme.",
+      "Une inhibition non compétitive impose toujours une fixation sur le même site que le substrat.",
+      "Dans l’exemple non compétitif, le médicament peut se fixer ailleurs sur l’enzyme et rendre le site catalytique inactif.",
+      "Compétitive et non compétitive désignent uniquement deux voies d’administration."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’enseignant distingue l’inhibition compétitive, où le médicament concurrence le substrat au niveau du site actif, et l’inhibition non compétitive, où une fixation sur un autre site peut rendre l’enzyme inactive. Ces notions concernent le mécanisme d’action, pas la voie d’administration.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_024",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Parmi les propositions suivantes, lesquelles correspondent à des seconds messagers cités dans le cours sur les récepteurs couplés aux protéines G ?",
+    "choices": [
+      "L’albumine plasmatique.",
+      "L’AMPc.",
+      "La P-glycoprotéine.",
+      "Le calcium intracellulaire.",
+      "Le CYP2D6."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le support présente notamment l’AMPc dans les voies Gs/Gi et le calcium intracellulaire dans la voie Gq, avec DAG et IP3. Albumine, P-glycoprotéine et CYP2D6 ont d’autres rôles pharmacologiques.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pharmaco_026",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant l’affinité et la constante Kd présentées dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Une forte affinité signifie que le ligand ne peut pas se fixer au récepteur.",
+      "L’affinité décrit la tendance d’un ligand à se fixer à sa cible.",
+      "Le Kd mesure directement la demi-vie d’élimination.",
+      "Le Kd correspond à la concentration donnant 100 % d’occupation des récepteurs.",
+      "Dans le schéma du cours, le Kd est relié à la concentration correspondant à 50 % de fixation."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "L’affinité traduit la tendance du ligand à se fixer à sa cible. Le support représente le Kd comme la concentration correspondant à 50 % de fixation. Il ne s’agit ni d’un paramètre d’élimination ni d’une concentration donnant 100 % d’occupation.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_028",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "À propos des courbes concentration–effet, de la DE50 et de l’Emax, quelles propositions sont exactes ?",
+    "choices": [
+      "L’Emax correspond à la concentration qui élimine 50 % du médicament.",
+      "La DE50 et l’Emax sont deux noms de la biodisponibilité.",
+      "La DE50 correspond, dans le schéma du cours, à la dose ou concentration produisant 50 % de l’effet maximal.",
+      "Un agoniste partiel peut avoir un effet maximal inférieur à celui d’un agoniste plein.",
+      "Deux agonistes ayant des Emax différents ont nécessairement la même efficacité maximale."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le support utilise la DE50 pour repérer la concentration donnant 50 % de l’effet maximal et l’Emax pour l’effet maximal atteignable. L’agoniste partiel est justement présenté comme pouvant produire un Emax plus faible qu’un agoniste plein.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_049",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant grossesse et allaitement, quelles propositions correspondent au cours ?",
+    "choices": [
+      "La compatibilité d’un médicament avec la grossesse ou l’allaitement doit être vérifiée.",
+      "Le placenta empêche systématiquement le passage des médicaments.",
+      "Le volume de distribution est nécessairement identique à celui d’une personne non enceinte.",
+      "Le CRAT est cité comme ressource de référence pour vérifier les risques liés aux médicaments pendant la grossesse et l’allaitement.",
+      "Un médicament tératogène est sans conséquence pour le développement fœtal."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’enseignant insiste sur la vérification systématique de la compatibilité des traitements chez la femme enceinte ou allaitante et répète le CRAT comme ressource pratique de référence. La grossesse modifie aussi des paramètres pharmacocinétiques, notamment le volume de distribution.",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_050",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quelles situations peuvent modifier la pharmacocinétique et nécessiter une vigilance particulière selon le cours ?",
+    "choices": [
+      "Le nouveau-né ou l’enfant, en raison notamment de l’immaturité de certaines fonctions d’élimination et de métabolisme.",
+      "Le sujet âgé, chez qui les fonctions rénale et hépatique peuvent être diminuées.",
+      "Des variations génétiques des enzymes de métabolisation, comme le CYP2D6.",
+      "Uniquement la couleur des comprimés.",
+      "Aucune : une même dose donne toujours les mêmes concentrations chez tous les patients."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours montre que l’âge, la maturation ou le vieillissement des fonctions rénale et hépatique ainsi que des polymorphismes génétiques comme ceux du CYP2D6 peuvent modifier l’exposition au médicament. Une même posologie ne conduit donc pas toujours aux mêmes concentrations.",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pharmaco_051",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant les contraintes de prescription et de délivrance présentées dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Tous les médicaments sont soumis exactement aux mêmes règles de prescription.",
+      "La notion de médicament à prescription restreinte signifie qu’il est toujours en vente libre.",
+      "Le cours distingue notamment les médicaments des listes I et II, les stupéfiants et des médicaments à prescription restreinte.",
+      "La catégorie réglementaire n’a aucun effet sur les modalités de prescription ou de délivrance.",
+      "L’enseignant précise que certaines règles dépendent de la profession, du champ d’exercice et du type de médicament."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le support distingue plusieurs catégories et contraintes de prescription ou de délivrance. L’enseignant précise également que les droits de prescription dépendent de la profession et du champ d’exercice, et signale que certaines diapositives historiques doivent être actualisées plutôt que mémorisées comme une liste figée.",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "hard"
+  }
+]
