@@ -1,13 +1,13 @@
 {
-  "version": "8.30.29",
-  "auditedAt": "2026-10-06",
+  "version": "8.30.30",
+  "auditedAt": "2026-10-07",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.29 : badge de provenance « 📝 Notes / captures » rendu visible sur les fiches sans support officiel et les cartes de cours concernées.",
+  "note": "V8.30.30 : planning promo enrichi ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 43,
     "sheets": 50,
