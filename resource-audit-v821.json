@@ -1,5 +1,5 @@
 {
-  "version": "8.30.34",
+  "version": "8.30.35",
   "auditedAt": "2026-10-07",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,11 +7,11 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.34 : ergonomie du planning refondue ; catalogues pédagogiques et volumes de ressources inchangés.",
+  "note": "V8.30.35 : ajout du cours Initiation à l’administration médicamenteuse avec 1 fiche et 5 infographies validées.",
   "expectedTotals": {
-    "courses": 43,
-    "sheets": 50,
-    "infographics": 149,
+    "courses": 44,
+    "sheets": 51,
+    "infographics": 154,
     "vocals": 47,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
@@ -90,6 +90,19 @@
         "1cPBkdsxktiF5QUMrueQsNWO4dyWfRYbo",
         "1UvkvREVMHXHqIHhtvsSmkw6Z-yXNyhK2",
         "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew"
+      ]
+    },
+    {
+      "courseId": "administration_medicamenteuse",
+      "course": "Initiation à l’administration médicamenteuse",
+      "sheetDriveId": "126Ry5_sCbWXDRuSBKuHtmBCXmOVE9tXN",
+      "infographics": 5,
+      "infographicDriveIds": [
+        "19EcDtyzMtyrR40aca0_zo-DlHK0Zu1Ta",
+        "13FVWMJNFRCjuVcGVpkg63RGeQqmOBqQA",
+        "1Hnx4Fw2spivK5ztUBzZGQoCL7C5y64f0",
+        "1_gF4lDY13l5eclXMjYNDxc6AF1jw1Mz4",
+        "1X4fw1KWr7KGl35WltTEQQHAHAG4HDIeg"
       ]
     }
   ],
