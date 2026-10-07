@@ -1,6 +1,6 @@
 {
-  "version": "8.30.30",
-  "build": "8330",
+  "version": "8.30.31",
+  "build": "8331",
   "releasedAt": "2026-10-07",
-  "summary": "Améliore le planning de promo : cours en cours/prochain cours, accès aux ressources, date de mise à jour et suivi des changements."
+  "summary": "Corrige les QCM d’Épistémologie à réponses multiples, aligne les surcharges runtime sur les grilles officielles et ajoute un contrôle après fusion."
 }
