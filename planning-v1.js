@@ -5,6 +5,7 @@ const NAV_ID='vPlanningNav';
 const K_PROMO='ifsiabc_planning_promo_v1';
 const K_WEEK='ifsiabc_planning_week_v1';
 const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
+const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
 const UPDATED_AT='2026-10-07';
@@ -96,57 +97,73 @@ function css(){
  if($('planningPromoCss'))return;
  const s=document.createElement('style');s.id='planningPromoCss';s.textContent=`
  #v87Nav.vplanning-nav{grid-template-columns:repeat(6,1fr)}
- #planningPromo{padding-bottom:96px}
- .vp-head{border:1px solid #d9cfee;background:linear-gradient(135deg,#f7f3ff,#eefaf8);border-radius:22px;padding:16px;margin-bottom:12px}
- .vp-headline{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
- .vp-head h2{margin:3px 0 4px;font-size:24px}.vp-official{font-size:10px;font-weight:900;letter-spacing:.05em;color:#087a75;background:#e9f8f5;border:1px solid #b8e4dd;border-radius:999px;padding:5px 8px;white-space:nowrap}
- .vp-segment{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:#eeeaf3;border-radius:16px;margin-top:12px}
- .vp-segment button{border:0;border-radius:12px;padding:11px 10px;background:transparent;color:#625c6e;font-weight:850;cursor:pointer}
+ #planningPromo{padding:8px 0 132px}
+ .vp-toolbar,.vp-card{border:1px solid var(--line);background:var(--card);border-radius:19px;box-shadow:0 7px 22px rgba(55,39,94,.05)}
+ .vp-toolbar{padding:10px 12px;margin-bottom:10px;display:grid;gap:8px}
+ .vp-control-row{display:flex;align-items:center;gap:8px;min-width:0}.vp-control-icon{width:28px;text-align:center;font-size:16px;flex:0 0 auto}
+ .vp-segment{display:flex;gap:5px;flex:1;min-width:0;padding:4px;background:#eeeaf3;border-radius:14px}
+ .vp-segment button{flex:1;border:0;border-radius:11px;padding:9px 11px;background:transparent;color:#625c6e;font-weight:850;cursor:pointer;white-space:nowrap}
  .vp-segment button.on{background:#7046d9;color:#fff;box-shadow:0 5px 14px rgba(95,57,190,.2)}
- .vp-filter-title{font-size:11px;font-weight:900;color:var(--muted);margin:10px 2px 6px}.vp-subgroups{display:flex;gap:7px;flex-wrap:wrap}.vp-subgroup{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 11px;font-weight:800;cursor:pointer}.vp-subgroup.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
- .vp-week-tabs{display:flex;gap:7px;overflow:auto;padding:2px 0 4px;scrollbar-width:none}.vp-week-tabs::-webkit-scrollbar{display:none}
- .vp-week-tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:13px;padding:9px 11px;font-weight:800;white-space:nowrap;cursor:pointer}.vp-week-tab.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
- .vp-card{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:15px;margin:10px 0;box-shadow:0 7px 22px rgba(55,39,94,.05)}
- .vp-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.vp-date{font-size:13px;color:var(--muted)}
- .vp-dayblock{margin-top:12px}.vp-dayhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px 7px}.vp-dayhead b{font-size:14px}.vp-dayhead.today b{color:#6941c6}
- .vp-event{position:relative;display:grid;grid-template-columns:82px minmax(0,1fr) auto;gap:11px;align-items:start;border:1px solid var(--line);border-radius:16px;padding:11px 10px 11px 14px;margin:7px 0;background:var(--card);overflow:hidden}
- .vp-event:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:#7046d9}.vp-event[data-kind="TD"]:before{background:#0fa7a0}.vp-event[data-kind="TP"]:before{background:#3182e4}.vp-event[data-kind="ASYNC"]:before{background:#27a85e}.vp-event[data-kind="INFO"]:before{background:#d98a20}
- .vp-time{font-weight:900;font-size:13px;line-height:1.35}.vp-time small{display:block;font-weight:600;color:var(--muted);font-size:11px}
- .vp-main{min-width:0}.vp-ue{font-size:10px;font-weight:900;color:#6941c6;text-transform:uppercase;letter-spacing:.04em}.vp-title{font-size:14px;font-weight:850;line-height:1.3;margin:2px 0}.vp-meta,.vp-detail{font-size:11px;color:var(--muted);line-height:1.4}.vp-detail{margin-top:4px}
+ .vp-week-segment button{min-width:58px}.vp-subgroups{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-left:36px}
+ .vp-subgroup-label{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-right:2px}
+ .vp-subgroup{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:6px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+ .vp-subgroup.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
+ .vp-card{padding:14px;margin:10px 0}.vp-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+ .vp-today-title,.vp-week-title{display:flex;align-items:center;gap:9px;font-weight:900;font-size:17px}.vp-date{font-size:12px;color:var(--muted)}
+ .vp-agenda{display:grid;gap:7px;margin-top:10px}.vp-agenda-row{position:relative;display:grid;grid-template-columns:118px minmax(0,1fr) auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:10px 11px 10px 14px;background:var(--card);overflow:hidden}
+ .vp-agenda-row.current{border-color:#8060d6;background:linear-gradient(90deg,rgba(112,70,217,.14),transparent)}.vp-agenda-row.current:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:#7046d9}
+ .vp-agenda-time{font-weight:900;font-size:14px;line-height:1.25}.vp-agenda-time small{display:block;color:var(--muted);font-size:10px;font-weight:700;margin-bottom:3px}
+ .vp-status{display:inline-flex;align-items:center;width:max-content;border-radius:999px;padding:4px 7px;font-size:9px;font-weight:950;letter-spacing:.03em;text-transform:uppercase;background:#eee8ff;color:#6941c6;margin-bottom:4px}
+ .vp-status.live{background:#e5f7f3;color:#087a75}.vp-agenda-main{min-width:0}.vp-ue{font-size:10px;font-weight:900;color:#6941c6;text-transform:uppercase;letter-spacing:.04em}.vp-title{font-size:14px;font-weight:850;line-height:1.25;margin:2px 0}.vp-meta,.vp-detail{font-size:11px;color:var(--muted);line-height:1.35}.vp-detail{margin-top:4px}
  .vp-type{font-size:10px;font-weight:900;border-radius:999px;padding:5px 8px;background:#efe8ff;color:#6941c6;white-space:nowrap}.vp-type.td{background:#e6f7f4;color:#087a75}.vp-type.tp{background:#e8f2ff;color:#2368b7}.vp-type.async{background:#eaf8ee;color:#187a3c}.vp-type.info{background:#fff2df;color:#9a5d08}
- .vp-empty{border:1px dashed #cfc4e1;background:#faf8ff;border-radius:15px;padding:13px;text-align:center;color:var(--muted);font-size:12px}
- .vp-source{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;color:var(--muted);font-size:11px;line-height:1.4}
- .vp-actions{display:grid;grid-template-columns:1fr;gap:8px;margin-top:11px}
- .vp-next{border-color:#cdbff1;background:linear-gradient(135deg,#faf8ff,#f0fbf8)}.vp-next-title{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.vp-next-label{font-size:10px;font-weight:950;letter-spacing:.05em;text-transform:uppercase;color:#6941c6;background:#efe8ff;border-radius:999px;padding:5px 8px}.vp-next-label.live{color:#087a75;background:#e5f7f3}
- .vp-resource-btn{margin-top:7px;border:1px solid #d4c8ee;background:#f6f1ff;color:#6038bf;border-radius:10px;padding:6px 9px;font:inherit;font-size:11px;font-weight:850;cursor:pointer}.vp-resource-btn:hover{background:#eee5ff}
- .vp-update{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:11px}.vp-update strong{color:#087a75}.vp-changes{border-color:#f1cf94;background:#fffaf0}.vp-changes .vp-change-lines{margin:8px 0 0;padding-left:18px;font-size:11px;color:var(--muted);line-height:1.45}.vp-change-ack{border:0;background:transparent;color:#6941c6;font-weight:850;cursor:pointer;padding:4px 0}
- body.v72-dark .vp-head,body.v72-dark .vp-segment,body.v72-dark .vp-card,body.v72-dark .vp-week-tab,body.v72-dark .vp-event,body.v72-dark .vp-empty{background:#211e2a;color:#f4f0fb;border-color:#3b3548}
- @media(max-width:620px){#v87Nav.vplanning-nav button{font-size:9px;padding-left:1px;padding-right:1px}#v87Nav.vplanning-nav button span{font-size:16px}.vp-event{grid-template-columns:64px minmax(0,1fr);gap:9px}.vp-type{grid-column:2;justify-self:start}.vp-head h2{font-size:21px}}
+ .vp-week-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}.vp-sourcechip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:10px;color:var(--muted);background:rgba(112,70,217,.06)}
+ .vp-days{display:grid;gap:6px}.vp-day{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+ .vp-day-toggle{width:100%;border:0;background:transparent;color:var(--ink);padding:10px 12px;display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:9px;text-align:left;cursor:pointer;font:inherit}
+ .vp-day.open>.vp-day-toggle{background:rgba(112,70,217,.10)}.vp-chevron{font-size:15px;transition:transform .18s ease}.vp-day.open .vp-chevron{transform:rotate(90deg)}
+ .vp-day-name{font-weight:900;font-size:13px}.vp-day-count{font-size:11px;color:var(--muted);white-space:nowrap}.vp-today-dot{font-size:9px;color:#6941c6;font-weight:900}
+ .vp-day-body{display:none;padding:0 8px 8px}.vp-day.open .vp-day-body{display:block}
+ .vp-event{position:relative;display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:9px 9px 9px 13px;margin:6px 0 0;background:var(--card);overflow:hidden}
+ .vp-event:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:#7046d9}.vp-event[data-kind="TD"]:before{background:#0fa7a0}.vp-event[data-kind="TP"]:before{background:#3182e4}.vp-event[data-kind="ASYNC"]:before{background:#27a85e}.vp-event[data-kind="INFO"]:before{background:#d98a20}
+ .vp-time{font-weight:900;font-size:12px;line-height:1.25}.vp-time small{display:block;font-weight:600;color:var(--muted);font-size:10px}.vp-main{min-width:0}
+ .vp-resource-btn{margin-top:5px;border:1px solid #d4c8ee;background:transparent;color:#6038bf;border-radius:9px;padding:5px 8px;font:inherit;font-size:10px;font-weight:850;cursor:pointer}
+ .vp-empty{border:1px dashed #cfc4e1;background:#faf8ff;border-radius:12px;padding:11px;text-align:center;color:var(--muted);font-size:11px;margin-top:6px}
+ .vp-week-foot{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:10px;padding-top:10px}.vp-source{color:var(--muted);font-size:10px;line-height:1.35;max-width:70%}.vp-export{padding:8px 10px!important;font-size:11px!important;width:auto!important}
+ .vp-changes{border-color:#f1cf94;background:#fffaf0}.vp-changes .vp-change-lines{margin:8px 0 0;padding-left:18px;font-size:11px;color:var(--muted);line-height:1.45}.vp-change-ack{border:0;background:transparent;color:#6941c6;font-weight:850;cursor:pointer;padding:4px 0}
+ body.v72-dark .vp-toolbar,body.v72-dark .vp-card,body.v72-dark .vp-day,body.v72-dark .vp-event,body.v72-dark .vp-agenda-row,body.v72-dark .vp-empty{background:#211e2a;color:#f4f0fb;border-color:#3b3548}
+ body.v72-dark .vp-segment{background:#191720}body.v72-dark .vp-subgroup.on{background:#382c57;color:#eadfff}body.v72-dark .vp-agenda-row.current{background:linear-gradient(90deg,rgba(112,70,217,.18),#211e2a)}
+ @media(max-width:700px){#planningPromo{padding:4px 0 126px}.vp-toolbar{padding:8px}.vp-subgroups{margin-left:0}.vp-control-icon{display:none}.vp-agenda-row{grid-template-columns:88px minmax(0,1fr);gap:8px}.vp-agenda-row>.vp-type{grid-column:2;justify-self:start}.vp-event{grid-template-columns:58px minmax(0,1fr);gap:8px}.vp-event>.vp-type{grid-column:2;justify-self:start}.vp-week-head{align-items:flex-start}.vp-sourcechip{width:100%;justify-content:center}.vp-week-foot{display:grid}.vp-source{max-width:none}.vp-export{width:100%!important}.vp-day-toggle{grid-template-columns:auto 1fr auto}.vp-day-toggle .vp-today-dot{display:none}}
  `;document.head.appendChild(s)
 }
 function frDate(iso,opts={weekday:'long',day:'numeric',month:'long'}){const [y,m,d]=iso.split('-').map(Number);return new Intl.DateTimeFormat('fr-FR',opts).format(new Date(y,m-1,d,12))}
-function kind(type){const t=String(type||'').toUpperCase();if(t.startsWith('TD')||t==='CM 1+2'&&false)return t.startsWith('TD')?'TD':'CM';if(t.startsWith('TP'))return'TP';if(t.includes('ASYN'))return'ASYNC';if(t==='INFO')return'INFO';return'CM'}
+function kind(type){const t=String(type||'').toUpperCase();if(t.startsWith('TD'))return'TD';if(t.startsWith('TP'))return'TP';if(t.includes('ASYN'))return'ASYNC';if(t==='INFO')return'INFO';return'CM'}
 function typeClass(type){const k=kind(type);return k==='TD'?'td':k==='TP'?'tp':k==='ASYNC'?'async':k==='INFO'?'info':''}
 function eventVisible(e){if(!(e.promo==='all'||e.promo===promo))return false;if(subgroup==='all')return true;return !Array.isArray(e.groups)||!e.groups.length||e.groups.includes(subgroup)}
 function eventsFor(w,date){validSubgroup();return w.events.filter(e=>e.date===date&&eventVisible(e)).sort((a,b)=>a.start.localeCompare(b.start))}
 function registryCourse(id){return (window.IFSI_V741?.getRegistry?.()?.courses||[]).find(c=>c.id===id)||null}
+function resourcesFor(id){return id?window.IFSI_V741?.resourcesForCourse?.(id):null}
+function hasResources(id){const r=resourcesFor(id);return !!r&&['questions','sheets','infographics','vocals'].some(k=>Array.isArray(r[k])&&r[k].length)}
 function openCourseResources(id){
  const c=registryCourse(id);
  if(window.IFSI_V813?.openCourse){window.IFSI_V813.openCourse(id);return}
  if(c?.label&&typeof window.openCourse74==='function'){window.openCourse74(c.label);return}
  window.showCourses74?.()
 }
+function eventMeta(e){return [e.groupLabel&&'👥 '+e.groupLabel,e.room&&'📍 '+e.room,e.teacher&&'👤 '+e.teacher].filter(Boolean).join(' • ')}
 function eventCard(e){
- const meta=[e.groupLabel&&'👥 '+e.groupLabel,e.room&&'📍 '+e.room,e.teacher&&'👤 '+e.teacher].filter(Boolean).join(' • '),resource=e.courseId?`<button type="button" class="vp-resource-btn" data-vcourse="${esc(e.courseId)}">📚 Voir les ressources</button>`:'';
- return `<article class="vp-event" data-kind="${kind(e.type)}"><div class="vp-time">${esc(e.start)}<small>à ${esc(e.end)}</small></div><div class="vp-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}${e.detail?`<div class="vp-detail">${esc(e.detail)}</div>`:''}${resource}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
+ const meta=eventMeta(e),resource=hasResources(e.courseId)?`<button type="button" class="vp-resource-btn" data-vcourse="${esc(e.courseId)}">📚 Ressources</button>`:'';
+ return `<article class="vp-event" data-kind="${kind(e.type)}"><div class="vp-time">${esc(e.start)}<small>${esc(e.end)}</small></div><div class="vp-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}${e.detail?`<div class="vp-detail">${esc(e.detail)}</div>`:''}${resource}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
 }
 function allPromoEvents(){validSubgroup();return WEEKS.flatMap(w=>w.events).filter(eventVisible).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start))}
 function eventDateTime(e,field){return new Date(e.date+'T'+e[field]+':00')}
-function nextCourseCard(){
- const now=new Date(),es=allPromoEvents(),current=es.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=current||es.find(e=>eventDateTime(e,'start')>now);
- if(!next)return `<div class="vp-card vp-next"><div class="vp-next-title"><span class="vp-next-label">À venir</span><b>Plus aucun cours importé</b></div><div class="small" style="margin-top:6px">Ajoute un nouveau planning officiel pour afficher la suite.</div></div>`;
- const live=!!current,sameDay=next.date===todayISO(),when=live?`En cours jusqu’à ${next.end}`:(sameDay?`Aujourd’hui à ${next.start}`:`${frDate(next.date,{weekday:'long',day:'numeric',month:'long'})} à ${next.start}`);
- return `<div class="vp-card vp-next"><div class="vp-next-title"><span class="vp-next-label ${live?'live':''}">${live?'● En cours':'Prochain cours'}</span><b>${esc(when)}</b></div><div style="margin-top:8px">${eventCard(next)}</div></div>`
+function agendaRow(e,status){
+ const meta=eventMeta(e),live=status==='live',label=live?'● En cours':'À suivre',dateExtra=e.date!==todayISO()?frDate(e.date,{weekday:'short',day:'numeric',month:'short'}):'';
+ return `<article class="vp-agenda-row ${live?'current':''}"><div class="vp-agenda-time"><span class="vp-status ${live?'live':''}">${label}</span><div>${esc(e.start)} – ${esc(e.end)}</div>${dateExtra?`<small>${esc(dateExtra)}</small>`:''}</div><div class="vp-agenda-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
+}
+function todaySummary(){
+ const now=new Date(),all=allPromoEvents(),current=all.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=all.find(e=>eventDateTime(e,'start')>now&&(!current||e!==current));
+ const rows=[];if(current)rows.push(agendaRow(current,'live'));if(next)rows.push(agendaRow(next,'next'));
+ const label=frDate(todayISO(),{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+ return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}</div><div class="vp-agenda">${rows.length?rows.join(''):'<div class="vp-empty">Aucun autre cours importé à venir.</div>'}</div></div>`
 }
 function snapshot(){
  const out={};
@@ -165,42 +182,41 @@ function changesCard(){
  const total=(c.added?.length||0)+(c.removed?.length||0)+(c.modified?.length||0),lines=[...(c.modified||[]).map(x=>'Modifié : '+x),...(c.added||[]).map(x=>'Ajouté : '+x),...(c.removed||[]).map(x=>'Retiré : '+x)].slice(0,4);
  return `<div class="vp-card vp-changes"><div class="vp-row"><div><b>🔔 Planning modifié</b><div class="small">${total} changement${total>1?'s':''} détecté${total>1?'s':''} depuis ta dernière consultation.</div></div><button type="button" id="vpAckChanges" class="vp-change-ack">J’ai vu</button></div>${lines.length?`<ul class="vp-change-lines">${lines.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}</div>`
 }
-function todayCard(){
- const t=todayISO(),w=weekForDate(t);if(!w)return `<div class="vp-card"><div class="vp-row"><div><b>Aujourd'hui</b><div class="vp-date">${esc(frDate(t,{weekday:'long',day:'numeric',month:'long',year:'numeric'}))}</div></div></div><div class="vp-empty" style="margin-top:10px">Aucun planning importé pour cette date.</div></div>`;
- const es=eventsFor(w,t);
- return `<div class="vp-card"><div class="vp-row"><div><b>Aujourd'hui • Promo ${promo}</b><div class="vp-date">${esc(frDate(t,{weekday:'long',day:'numeric',month:'long',year:'numeric'}))}</div></div><span class="badge">${es.length} créneau${es.length>1?'x':''}</span></div><div style="margin-top:9px">${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour cette promo aujourd’hui.</div>'}</div></div>`
-}
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
+function weekSource(w){
+ if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};
+ return {chip:`Prévisionnel · ${w.id} support IFSI · MAJ 07/10/2026`,detail:`${w.id} importée depuis le support IFSI. Le planning reste prévisionnel.`,ics:SOURCE};
+}
+function defaultOpenDay(w){const dates=weekDates(w),today=todayISO();return dates.includes(today)?today:dates[0]}
+function openDayFor(w){const saved=localStorage.getItem(K_DAY);return weekDates(w).includes(saved)?saved:defaultOpenDay(w)}
 function weekCard(w){
- const t=todayISO();
- return `<div class="vp-card"><div class="vp-row"><div><b>${esc(w.label)} • Promo ${promo}</b><div class="vp-date">${esc(frDate(w.start,{day:'numeric',month:'long'}))} - ${esc(frDate(w.end,{day:'numeric',month:'long',year:'numeric'}))}</div></div><span class="badge">Prévisionnel</span></div>
- ${weekDates(w).map(date=>{const es=eventsFor(w,date),today=date===t;return `<section class="vp-dayblock"><div class="vp-dayhead ${today?'today':''}"><b>${esc(frDate(date,{weekday:'long',day:'numeric',month:'long'}))}${today?' • Aujourd’hui':''}</b><span class="small">${es.length} créneau${es.length>1?'x':''}</span></div>${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour la Promo '+promo+'.</div>'}</section>`}).join('')}
- <div class="vp-actions"><button id="vpExportIcs" class="btn outline full">📅 Exporter ${esc(w.label)} vers mon calendrier (.ics)</button></div>
- <div class="vp-source">✅ Source officielle importée : ${esc(SOURCE)}.<br>Les plannings S5, S6 et S7 sont des <b>plannings prévisionnels</b> : une modification communiquée par l'IFSI reste prioritaire.</div></div>`
+ const t=todayISO(),openDay=openDayFor(w),source=weekSource(w);
+ return `<div class="vp-card"><div class="vp-week-head"><div><div class="vp-week-title">📅 ${esc(w.label)} · ${esc(w.range)} · Promo ${promo}</div>${subgroup!=='all'?`<div class="vp-date">Sous-groupe ${esc(subgroup)}</div>`:''}</div><span class="vp-sourcechip">ⓘ ${esc(source.chip)}</span></div>
+ <div class="vp-days">${weekDates(w).map(date=>{const es=eventsFor(w,date),open=date===openDay,today=date===t;return `<section class="vp-day ${open?'open':''}" data-vday-wrap="${date}"><button type="button" class="vp-day-toggle" data-vday="${date}" aria-expanded="${open}"><span class="vp-chevron">›</span><span class="vp-day-name">${esc(frDate(date,{weekday:'short',day:'numeric',month:'long'}))}</span>${today?'<span class="vp-today-dot">AUJ.</span>':'<span></span>'}<span class="vp-day-count">${es.length} cours</span></button><div class="vp-day-body">${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour ce filtre.</div>'}</div></section>`}).join('')}</div>
+ <div class="vp-week-foot"><div class="vp-source">${esc(source.detail)}</div><button id="vpExportIcs" class="btn outline vp-export">📅 Exporter ${esc(w.label)} (.ics)</button></div></div>`
 }
 function icsEscape(s){return String(s??'').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;')}
 function icsStamp(date,time){return date.replaceAll('-','')+'T'+time.replace(':','')+'00'}
 function exportIcs(){
  const w=WEEKS.find(x=>x.id===selectedWeek);if(!w)return;
- validSubgroup();const es=w.events.filter(eventVisible);
+ validSubgroup();const es=w.events.filter(eventVisible),source=weekSource(w);
  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//IFSI ABC Révisions//Planning Promo//FR','CALSCALE:GREGORIAN','X-WR-CALNAME:IFSI Promo '+promo+' '+w.id,'X-WR-TIMEZONE:Europe/Paris'];
- es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+SOURCE].filter(Boolean).join('\n')),'END:VEVENT')});
+ es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+source.ics].filter(Boolean).join('\n')),'END:VEVENT')});
  lines.push('END:VCALENDAR');
- const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='IFSI_'+w.id+'_Promo_'+promo+'.ics';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)
+ const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='IFSI_'+w.id+'_Promo_'+promo+(subgroup!=='all'?'_'+subgroup:'')+'.ics';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)
+}
+function toolbar(){
+ validSubgroup();
+ return `<div class="vp-toolbar"><div class="vp-control-row"><span class="vp-control-icon">👥</span><div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div><div class="vp-control-row"><span class="vp-control-icon">📅</span><div class="vp-segment vp-week-segment" role="group" aria-label="Choisir la semaine">${WEEKS.map(x=>`<button type="button" class="${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label}</button>`).join('')}</div></div><div class="vp-subgroups"><span class="vp-subgroup-label">Sous-groupe</span>${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div></div>`
 }
 function render(){
  const sec=$(SECTION);if(!sec)return;
  const w=WEEKS.find(x=>x.id===selectedWeek)||WEEKS[WEEKS.length-1];
- sec.innerHTML=`<div class="vp-head"><div class="vp-headline"><div><div class="small">VIE DE PROMO</div><h2>📅 Planning de la promo</h2><div class="small">Planning officiel S5, S6 et S7 • sélection personnalisée par promotion et sous-groupe.</div><div class="vp-update">🕘 Mis à jour le <strong>${esc(frDate(UPDATED_AT,{day:'numeric',month:'long',year:'numeric'}))}</strong> • 🔔 changements suivis sur cet appareil</div></div><span class="vp-official">✓ OFFICIEL IFSI</span></div>
- <div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div><div class="vp-filter-title">Sous-groupe</div><div class="vp-subgroups">${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div></div>
- ${changesCard()}
- ${nextCourseCard()}
- ${todayCard()}
- <div class="vp-card"><div class="vp-row"><div><b>Choisir la semaine</b><div class="small">3 plannings officiels importés</div></div></div><div class="vp-week-tabs">${WEEKS.map(x=>`<button type="button" class="vp-week-tab ${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label} • ${x.range}</button>`).join('')}</div></div>
- ${weekCard(w)}`;
+ sec.innerHTML=toolbar()+changesCard()+todaySummary()+weekCard(w);
  sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;subgroup='all';localStorage.setItem(K_PROMO,promo);localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vsubgroup]').forEach(b=>b.onclick=()=>{subgroup=b.dataset.vsubgroup;localStorage.setItem(K_SUBGROUP,subgroup);render()});
- sec.querySelectorAll('[data-vweek]').forEach(b=>b.onclick=()=>{selectedWeek=b.dataset.vweek;localStorage.setItem(K_WEEK,selectedWeek);render()});
+ sec.querySelectorAll('[data-vweek]').forEach(b=>b.onclick=()=>{selectedWeek=b.dataset.vweek;localStorage.setItem(K_WEEK,selectedWeek);localStorage.setItem(K_DAY,defaultOpenDay(WEEKS.find(x=>x.id===selectedWeek)));render()});
+ sec.querySelectorAll('[data-vday]').forEach(b=>b.onclick=()=>{const d=b.dataset.vday,wrap=sec.querySelector('[data-vday-wrap="'+d+'"]'),isOpen=wrap?.classList.contains('open');localStorage.setItem(K_DAY,isOpen?'':d);render()});
  $('vpExportIcs')?.addEventListener('click',exportIcs);
  sec.querySelectorAll('[data-vcourse]').forEach(b=>b.onclick=()=>openCourseResources(b.dataset.vcourse));
  $('vpAckChanges')?.addEventListener('click',()=>{localStorage.removeItem(K_PENDING);render()})
@@ -211,5 +227,5 @@ function showPlanning(){if(!addSection())return;document.querySelectorAll('.app>
 function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
 function init(){css();reconcilePlanningChanges();const a=addSection(),b=addNav();return a&&b}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.3',updatedAt:UPDATED_AT};
+window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.4',updatedAt:UPDATED_AT};
 })();
