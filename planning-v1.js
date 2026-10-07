@@ -188,7 +188,7 @@ function weekSource(w){
  return {chip:`Prévisionnel · ${w.id} support IFSI · MAJ 07/10/2026`,detail:`${w.id} importée depuis le support IFSI. Le planning reste prévisionnel.`,ics:SOURCE};
 }
 function defaultOpenDay(w){const dates=weekDates(w),today=todayISO();return dates.includes(today)?today:dates[0]}
-function openDayFor(w){const saved=localStorage.getItem(K_DAY);return weekDates(w).includes(saved)?saved:defaultOpenDay(w)}
+function openDayFor(w){const saved=localStorage.getItem(K_DAY);if(saved===`none:${w.id}`)return '';return weekDates(w).includes(saved)?saved:defaultOpenDay(w)}
 function weekCard(w){
  const t=todayISO(),openDay=openDayFor(w),source=weekSource(w);
  return `<div class="vp-card"><div class="vp-week-head"><div><div class="vp-week-title">📅 ${esc(w.label)} · ${esc(w.range)} · Promo ${promo}</div>${subgroup!=='all'?`<div class="vp-date">Sous-groupe ${esc(subgroup)}</div>`:''}</div><span class="vp-sourcechip">ⓘ ${esc(source.chip)}</span></div>
@@ -216,7 +216,7 @@ function render(){
  sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;subgroup='all';localStorage.setItem(K_PROMO,promo);localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vsubgroup]').forEach(b=>b.onclick=()=>{subgroup=b.dataset.vsubgroup;localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vweek]').forEach(b=>b.onclick=()=>{selectedWeek=b.dataset.vweek;localStorage.setItem(K_WEEK,selectedWeek);localStorage.setItem(K_DAY,defaultOpenDay(WEEKS.find(x=>x.id===selectedWeek)));render()});
- sec.querySelectorAll('[data-vday]').forEach(b=>b.onclick=()=>{const d=b.dataset.vday,wrap=sec.querySelector('[data-vday-wrap="'+d+'"]'),isOpen=wrap?.classList.contains('open');localStorage.setItem(K_DAY,isOpen?'':d);render()});
+ sec.querySelectorAll('[data-vday]').forEach(b=>b.onclick=()=>{const d=b.dataset.vday,wrap=sec.querySelector('[data-vday-wrap="'+d+'"]'),isOpen=wrap?.classList.contains('open');localStorage.setItem(K_DAY,isOpen?`none:${selectedWeek}`:d);render()});
  $('vpExportIcs')?.addEventListener('click',exportIcs);
  sec.querySelectorAll('[data-vcourse]').forEach(b=>b.onclick=()=>openCourseResources(b.dataset.vcourse));
  $('vpAckChanges')?.addEventListener('click',()=>{localStorage.removeItem(K_PENDING);render()})
