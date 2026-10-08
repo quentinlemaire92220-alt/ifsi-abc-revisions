@@ -1,5 +1,5 @@
 {
-  "version": "8.30.52",
+  "version": "8.30.53",
   "courses": [
     {
       "id": "biomolecules",
@@ -514,6 +514,19 @@
       ],
       "domain": "B",
       "ue": "B3"
+    },
+    {
+      "id": "systeme_reproducteur",
+      "label": "Système reproducteur",
+      "aliases": [
+        "Système reproducteur",
+        "Systeme reproducteur",
+        "Appareil génital",
+        "Appareil genital",
+        "Reproduction humaine"
+      ],
+      "domain": "B",
+      "ue": "B1"
     }
   ],
   "auditBaseline": {

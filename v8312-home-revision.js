@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V='8.30.37',$=id=>document.getElementById(id);
+const V='8.30.53',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8353Change:{type:'resource',badges:['RESSOURCE']},
   v8337Change:{type:'resource',badges:['RESSOURCE']},
   v8334Change:{type:'app',badges:['UX/UI']},
   v8331Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
@@ -30,6 +31,7 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
+  '8.30.53':'08/10/2026',
   '8.30.37':'07/10/2026',
   '8.30.34':'07/10/2026','8.30.33':'07/10/2026','8.30.32':'07/10/2026',
   '8.30.31':'07/10/2026','8.30.30':'07/10/2026','8.30.29':'07/10/2026','8.30.28':'06/10/2026','8.30.27':'06/10/2026',  '8.30.26':'06/10/2026',
