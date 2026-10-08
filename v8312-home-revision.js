@@ -1,6 +1,7 @@
 (()=>{'use strict';
 const V='8.30.53',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8354Change:{type:'resource',badges:['RESSOURCE']},
   v8353Change:{type:'resource',badges:['RESSOURCE']},
   v8337Change:{type:'resource',badges:['RESSOURCE']},
   v8334Change:{type:'app',badges:['UX/UI']},
