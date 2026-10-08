@@ -5,7 +5,7 @@ const meta=JSON.parse(read('build-meta.json'));
 assert.match(meta.version,/^\d+\.\d+(?:\.\d+)?$/,'Version courante invalide');
 assert.match(String(meta.build),/^\d+$/,'Build courant invalide');
 const mod=read('v8338-flashcards.js');
-for(const token of ['directQuestion','vagueFront','À quoi correspond','À quoi peut faire appel','Quels sont','if(!p)continue'])assert.ok(mod.includes(token),`Correctif formulation absent: ${token}`);
+for(const token of ['directQuestion','vagueFront','À quoi correspond','À quoi peut faire appel','Quels sont','atomicCards','selectCards'])assert.ok(mod.includes(token),`Correctif formulation absent: ${token}`);
 assert.ok(!mod.includes("const card=trueFalseCard(q,t)||"),'Le Vrai/Faux automatique ne doit plus être prioritaire');
 assert.ok(mod.includes("/que faut-il retenir concernant/"),'Filtre formulations vagues absent');
 const bad=[
