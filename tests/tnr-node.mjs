@@ -160,11 +160,11 @@ const sourceLegendIndexHtml=read('index.html');assert(sourceLegendIndexHtml.incl
 const sourceLegendV74=read('v74-pack.js');assert(sourceLegendV74.includes("type==='sheet'&&x.officialSupport===false")&&sourceLegendV74.includes('📝 Notes / captures')&&sourceLegendV74.includes("d.sheets.some(x=>x.officialSupport===false)"),'Indicateur visible de provenance absent des cartes de cours/favoris');
 assert(courseIds.has('introduction_droit'),'CourseId Introduction au droit absent');assert(courseIds.has('psychologie_sante'),'CourseId Psychologie de la santé absent');
 const droitIntro=runtime.filter(q=>q.courseId==='introduction_droit');
-assert(droitIntro.length===50,`Banque Introduction au droit inattendue: ${droitIntro.length}/50`);
+assert(droitIntro.length===60,`Banque Introduction au droit inattendue: ${droitIntro.length}/60`);
 assert(droitIntro.every(q=>Array.isArray(q.choices)&&q.choices.length===5),'Introduction au droit doit avoir exactement 5 propositions par question');
 assert(droitIntro.every(q=>['easy','medium','hard'].includes(q.difficulty)),'Niveau de difficulté explicite absent sur Introduction au droit');
 const droitDiff=droitIntro.reduce((a,q)=>(a[q.difficulty]=(a[q.difficulty]||0)+1,a),{});
-assert(droitDiff.easy===14&&droitDiff.medium===24&&droitDiff.hard===12,`Répartition difficulté droit invalide: ${JSON.stringify(droitDiff)}`);
+assert(droitDiff.easy===18&&droitDiff.medium===29&&droitDiff.hard===13,`Répartition difficulté droit invalide: ${JSON.stringify(droitDiff)}`);
 assert(JSON.stringify(droitIntro.find(q=>q.id==='droit_intro_013')?.answers)==='[3,4]','Correction droit_intro_013 invalide');
 assert(JSON.stringify(droitIntro.find(q=>q.id==='droit_intro_050')?.answers)==='[0,2,3]','Correction droit_intro_050 invalide');
 assert(courseIds.has('calculs_doses_mathematiques'),'CourseId calculs absent');assert(courseIds.has('ist_hors_vih'),'CourseId IST hors VIH absent');assert(runtime.filter(q=>q.courseId==='ist_hors_vih').length===56,'Banque IST hors VIH inattendue');assert(courseIds.has('systeme_digestif'),'CourseId digestif absent');assert(courseIds.has('douleur'),'CourseId douleur absent');assert(courseIds.has('epistemologie_savoirs'),'CourseId épistémologie absent');
