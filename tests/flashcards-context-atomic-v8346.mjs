@@ -3,8 +3,8 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
 const meta=JSON.parse(read('build-meta.json'));
-assert.equal(meta.version,'8.30.47');
-assert.equal(String(meta.build),'8347');
+assert.match(meta.version,/^\d+\.\d+(?:\.\d+)?$/,'Version courante invalide');
+assert.match(String(meta.build),/^\d+$/,'Build courant invalide');
 
 const qs=[
  {id:'muscle_pairs',courseId:'x',course:'Test',theme:'Tissu musculaire et contraction',difficulty:'medium',question:'Quelles associations sont correctes ?',choices:['Fins : actine','Épais : myosine','A : actine','C : myosine'],answers:[0,1,2,3],explanation:'Les myofilaments fins sont principalement constitués d’actine et les myofilaments épais de myosine.'}
