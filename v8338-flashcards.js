@@ -127,18 +127,98 @@ function genericQuestion(q,t){
   if(!front||vagueFront(front))return null;
   return{kind:'Question / réponse',front:capFirst(front.replace(/\s+/g,' ').trim()),answers:correctAnswers(q).map(compactAnswer)}
 }
+function sanitizeContextFront(front){
+  let x=String(front||'').trim()
+    .replace(/\b(?:selon|conformément à) (?:le |la )?(?:support(?: officiel)?|cours)\b/gi,'')
+    .replace(/\b(?:dans|du|de la) (?:le |la )?(?:support(?: officiel)?|cours)\b/gi,'')
+    .replace(/\bde la diapo(?:sitive)?\s*\d+\b/gi,'')
+    .replace(/\b(?:sur|dans) (?:le )?(?:schéma|figure|document)\b[^?]*?(?=\?|$)/gi,'')
+    .replace(/\s+/g,' ').replace(/\s+([?;,:])/g,'$1').trim();
+  x=x.replace(/^Qu['’]est-ce que\s*,?\s*/i,'Qu’est-ce que ');
+  x=x.replace(/^Quelle fonction est attribuée à\s+(.+?)\s*\?$/i,'Quelle est la fonction de $1 ?');
+  x=x.replace(/^Quel organe est nommé comme producteur de\s+(.+?)\s*\?$/i,'Quel organe produit $1 ?');
+  x=x.replace(/^Quelle proposition définit\s+(.+?)\s*\?$/i,'Qu’est-ce que $1 ?');
+  x=x.replace(/^Quelles propriétés de\s+(.+?)\s+sont\s*\?$/i,'Quelles sont les principales propriétés de $1 ?');
+  x=x.replace(/^Quelles affirmations décrivent\s+(.+?)\s*\?$/i,'Quelles sont les principales caractéristiques de $1 ?');
+  x=x.replace(/^Quelles associations\s+(.+?)\s+correspondent\s*\?$/i,'Quelles sont les associations $1 ?');
+  return capFirst(x.replace(/\s+/g,' ').trim())
+}
+function answerPairAtom(a){
+  const s=String(a||'').trim().replace(/[.;]+$/,'');
+  let m=s.match(/^(.{2,70}?)\s*(?:→|:|=)\s*(.{2,180})$/);
+  if(!m)return null;
+  const left=subjectCase(m[1]),right=subjectCase(m[2]);
+  if(!left||!right)return null;
+  const numeric=/\b\d+(?:[.,]\d+)?\s*(?:%|mmHg|bpm|°C|g\/?L|mg\/?L|mmol\/?L|mL|L\/min|kg|cm|mm|UI|mEq)\b/i.test(right);
+  return{kind:numeric?'Valeur à connaître':'Association',front:numeric?`Quelle est la valeur de ${lcFirst(left)} ?`:`À quoi correspond ${lcFirst(left)} ?`,answers:[right]}
+}
+function answerSentenceAtom(a){
+  const s=String(a||'').trim().replace(/[.;]+$/,'');
+  let m=s.match(/^(.{2,90}?)\s+(sécrète|sécrètent|produit|produisent|contient|contiennent|favorise|favorisent|permet|permettent|assure|assurent)\s+(.{2,180})$/i);
+  if(m){const sub=subjectCase(m[1]),verb=m[2].toLowerCase(),obj=subjectCase(m[3]);let front='';
+    if(/^sécr/.test(verb))front=`Que sécrète ${lcFirst(sub)} ?`;
+    else if(/^produ/.test(verb))front=`Que produit ${lcFirst(sub)} ?`;
+    else if(/^cont/.test(verb))front=`Que contient ${lcFirst(sub)} ?`;
+    else if(/^favor/.test(verb))front=`Que favorise ${lcFirst(sub)} ?`;
+    else if(/^permet/.test(verb))front=`Que permet ${lcFirst(sub)} ?`;
+    else front=`Quel rôle assure ${lcFirst(sub)} ?`;
+    return{kind:'Question / réponse',front,answers:[obj]}
+  }
+  m=s.match(/^(.{2,90}?)\s+peut\s+(favoriser|provoquer|entraîner|permettre|donner)\s+(.{2,180})$/i);
+  if(m)return{kind:'Question / réponse',front:`Que peut ${m[2]} ${lcFirst(subjectCase(m[1]))} ?`,answers:[subjectCase(m[3])]};
+  m=s.match(/^(.{2,90}?)\s+peuvent\s+(favoriser|provoquer|entraîner|permettre|donner)\s+(.{2,180})$/i);
+  if(m)return{kind:'Question / réponse',front:`Que peuvent ${m[2]} ${lcFirst(subjectCase(m[1]))} ?`,answers:[subjectCase(m[3])]};
+  m=s.match(/^(.{2,90}?)\s+correspond(?:ent)?\s+à\s+(.{2,180})$/i);
+  if(m)return{kind:'Définition',front:`À quoi correspond ${lcFirst(subjectCase(m[1]))} ?`,answers:[subjectCase(m[2])]};
+  return null
+}
+function atomicFromAnswers(q,t){
+  const good=correctAnswers(q).map(compactAnswer),exp=String(q?.explanation||'').trim();
+  if(good.length<2)return[];
+  if(/\b(?:hiérarchie correcte|ordre correct|ordre d['’]organisation)\b/i.test(t))return[];
+  const atoms=[];
+  for(const a of good){
+    const z=answerPairAtom(a)||answerSentenceAtom(a);
+    if(z&&!vagueFront(z.front))atoms.push({...z,explanation:exp,atomic:true})
+  }
+  if(atoms.length>=2)return atoms;
+  const subjectMatch=t.match(/(?:s['’]appliquent|concernent|à propos de|concernant)\s+(?:au|à la|aux|le|la|les)?\s*([^?:,]+?)(?:\s+(?:dans|selon|du|de la)\s+(?:le )?(?:cours|support)|\s*\?|\s*:|$)/i);
+  const subject=subjectCase(subjectMatch?.[1]||'');
+  const roles=good.filter(a=>/^Participation à\s+/i.test(a)).map(a=>subjectCase(a.replace(/^Participation à\s+/i,'')));
+  const values=good.map(answerPairAtom).filter(Boolean).filter(x=>x.kind==='Valeur à connaître');
+  if(subject&&roles.length>=2)atoms.push({kind:'Rôle / fonction',front:`À quels processus ${lcFirst(subject)} participe-t-il ?`,answers:roles,explanation:exp,atomic:true});
+  for(const v of values)atoms.push({...v,explanation:exp,atomic:true});
+  return atoms.length>=2?atoms:[]
+}
 function pedagogicalCard(q){
   const t=cleanQuestion(q);
   let card=definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  if(card)card={...card,front:sanitizeContextFront(card.front)};
   if(!card||vagueFront(card.front))card=recoverContextCard(q,t);
+  if(card)card={...card,front:sanitizeContextFront(card.front)};
   if(!card||vagueFront(card.front))return null;
   const answers=(card.answers||answer(q)).filter(Boolean);
   if(!answers.length)return null;
   return{...card,answers,explanation:card.explanation??String(q.explanation||'').trim()}
 }
+function atomicCards(q){
+  const t=cleanQuestion(q),good=correctAnswers(q),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
+  const split=good.length>1&&(meta||good.some(a=>/(?:→|:|=)/.test(a)))?atomicFromAnswers(q,t):[];
+  if(split.length>=2)return split;
+  const p=pedagogicalCard(q);
+  return p?[p]:[]
+}
 function hash(s){let h=2166136261;for(const c of String(s)){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
-function selectQuestions(qs,max=40){const groups=new Map();for(const q of qs){const k=theme(q);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(q)}for(const a of groups.values())a.sort((x,y)=>hash(x.id)-hash(y.id));const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=[];let round=0;while(out.length<Math.min(max,qs.length)){let added=0;for(const k of keys){const a=groups.get(k),q=a[round];if(q&&out.length<max){out.push(q);added++}}if(!added)break;round++}return out}
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;for(const q of selectQuestions(qs,40)){const p=pedagogicalCard(q);if(!p)continue;out.push({id:'fc:'+q.id,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:p.front,answers:p.answers,explanation:p.explanation,officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)})}}deck=out;return out}
+function selectCards(cards,max=40){
+  const seen=new Set(),clean=[];
+  for(const c of cards){const k=String(c.front||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();if(!k||seen.has(k)||vagueFront(c.front))continue;seen.add(k);clean.push(c)}
+  const groups=new Map();for(const c of clean){const k=c.theme||'Général';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c)}
+  for(const a of groups.values())a.sort((x,y)=>hash(x.id)-hash(y.id));
+  const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=[];let round=0;
+  while(out.length<Math.min(max,clean.length)){let added=0;for(const k of keys){const a=groups.get(k),c=a[round];if(c&&out.length<max){out.push(c);added++}}if(!added)break;round++}
+  return out
+}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:p.front,answers:p.answers,explanation:p.explanation,officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=out;return out}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}
