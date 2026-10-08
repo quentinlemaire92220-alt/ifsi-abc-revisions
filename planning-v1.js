@@ -8,8 +8,9 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-07';
+const UPDATED_AT='2026-10-08';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
+const KB_SOURCE='Planning des CM semestre 1 DEI première année 2026/2027 • Cours FAC/KB';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
 let subgroup=localStorage.getItem(K_SUBGROUP)||'all';
@@ -19,36 +20,36 @@ function validSubgroup(){if(!subgroupOptions().includes(subgroup)){subgroup='all
 
 const WEEKS=[
  {id:'S5',label:'S5',start:'2026-09-28',end:'2026-10-02',range:'28 sept. - 2 oct.',events:[
-  {date:'2026-09-28',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil digestif',courseId:'systeme_digestif',room:'Amphi KB',teacher:'V Petit'},
-  {date:'2026-09-28',start:'13:30',end:'16:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Maladies rhumato et inflammatoires',courseId:'rhumatismes_inflammatoires',room:'Amphi KB',teacher:'S Bitoun'},
-  {date:'2026-09-29',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil urinaire',courseId:'systeme_urinaire',room:'Amphi KB',teacher:'V Petit'},
-  {date:'2026-09-29',start:'13:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Infections bactériennes et virales, IST bactériennes',room:'Amphi KB',teacher:'M Dorbet • N Bourgeois'},
+  {date:'2026-09-28',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil digestif',courseId:'systeme_digestif',room:'Amphi KB',teacher:'Vanessa PETIT'},
+  {date:'2026-09-28',start:'13:30',end:'16:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Maladies rhumatologiques inflammatoires',courseId:'rhumatismes_inflammatoires',room:'Amphi KB',teacher:'Dr Samuel BITOUN'},
+  {date:'2026-09-29',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil urinaire',courseId:'systeme_urinaire',room:'Amphi KB',teacher:'Vanessa PETIT'},
+  {date:'2026-09-29',start:'14:30',end:'17:30',promo:'all',ue:'UE B1 S1 Système Immunitaire, pathologies infectieuses et inflammatoires 3i',type:'CM',title:'Infections cutanées et méningites',detail:'Infections cutanées 14:30–16:30 • Méningites 16:30–17:30',room:'Amphi KB',teacher:'Rocco Collarino • Sophie Abgrall'},
   {date:'2026-09-30',start:'09:00',end:'12:30',promo:'A',ue:'UE B3 S1',type:'TD',title:'Introduction aux plaies et pansements',room:'S10',teacher:'Mme Ecorcheville'},
   {date:'2026-09-30',start:'09:00',end:'12:00',promo:'B',ue:'UE B3 S1',type:'TD',title:'Repérage PSSM',room:'S11',teacher:'LBN'},
   {date:'2026-09-30',start:'13:30',end:'14:00',promo:'all',ue:'',type:'Info',title:'Présentation plateforme MyK',room:'Amphi ABC',teacher:'A Fournier - secrétaire'},
   {date:'2026-09-30',start:'14:00',end:'15:30',promo:'all',ue:'',type:'Info',title:'Élections des délégués',room:'Amphi ABC',teacher:'Frs 1èreA'},
   {date:'2026-09-30',start:'15:30',end:'16:30',promo:'all',ue:'UE E3 S1',type:'TD',title:'Présentation Blason collectif de promotion',room:'Amphi ABC',teacher:'P Quach • Frs 1èreA'},
   {date:'2026-09-30',start:'16:30',end:'17:00',promo:'all',ue:'UE E3 S1',type:'Asynchrone',title:'Test de personnalité (Big Five)',room:'Distanciel',teacher:''},
-  {date:'2026-10-01',start:'09:00',end:'10:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil respiratoire',courseId:'systeme_respiratoire',room:'Amphi KB',teacher:'S Dulong'},
-  {date:'2026-10-01',start:'10:30',end:'12:30',promo:'all',ue:'UE A1 S1',type:'CM',title:'Fondamentaux, modèles conceptuelles et cliniques',room:'Amphi KB',teacher:'Mme Pierre'},
-  {date:'2026-10-01',start:'13:30',end:'15:30',promo:'all',ue:'UE A1 S1',type:'CM',title:'Théorie des soins infirmiers et pratiques cliniques',room:'Amphi KB',teacher:'Mme Pierre'},
-  {date:'2026-10-01',start:'15:30',end:'18:00',promo:'all',ue:'UE B2 S1',type:'CM',title:'Psychologie de la santé',courseId:'psychologie_sante',room:'Amphi KB',teacher:'Mme Khatir'},
+  {date:'2026-10-01',start:'08:30',end:'10:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil respiratoire',courseId:'systeme_respiratoire',room:'Amphi KB',teacher:'Sandrine Dulong'},
+  {date:'2026-10-01',start:'10:30',end:'12:30',promo:'all',ue:'UE A1 S1',type:'CM',title:'Des fondements épistémologiques aux modèles conceptuels et cliniques infirmiers',room:'Amphi KB',teacher:'Stéphanie PIERRE'},
+  {date:'2026-10-01',start:'13:30',end:'15:30',promo:'all',ue:'UE A1 S1',type:'CM',title:'La théorie dans la pratique clinique',room:'Amphi KB',teacher:'Stéphanie PIERRE'},
+  {date:'2026-10-01',start:'15:30',end:'18:00',promo:'all',ue:'UE B2 S1',type:'CM',title:'Psychologie de la santé',courseId:'psychologie_sante',room:'Amphi KB',teacher:'Nathalie KHATIR'},
   {date:'2026-10-02',start:'09:00',end:'12:30',promo:'B',ue:'UE B3 S1',type:'TP',title:'Simulation en santé J1',detail:'Tri des déchets • Hygiène des mains et FHA • Bionettoyage et environnement/chariot • EPI',room:'S13 • S3/Cafétéria • S2/S4/S5 • S10',teacher:'A. Fleurant AS • W Bernabelah AS • S Soufi AS • 2 Frs • 1 Fr'},
   {date:'2026-10-02',start:'09:00',end:'12:30',promo:'A',ue:'UE Stage',type:'Asynchrone',title:'Simulation Serious Game et Quizz',detail:'Visionnage film sur la toilette complète • fiche technique sur la toilette complète',room:'Distanciel',teacher:''},
   {date:'2026-10-02',start:'13:30',end:'17:00',promo:'A',ue:'UE B3 S1',type:'TP',title:'Simulation en santé J1',detail:'Tri des déchets • Hygiène des mains et FHA • Bionettoyage et environnement/chariot • EPI',room:'S13 • S3/Cafétéria • S2/S4/S5 • S10',teacher:'A. Fleurant AS • W Bernabelah AS • S Soufi AS • 2 Frs • 1 Fr'},
   {date:'2026-10-02',start:'13:30',end:'17:00',promo:'B',ue:'UE Stage',type:'Asynchrone',title:'Simulation Serious Game et Quizz',detail:'Visionnage film sur la toilette complète • fiche technique sur la toilette complète',room:'Distanciel',teacher:''}
  ]},
  {id:'S6',label:'S6',start:'2026-10-05',end:'2026-10-09',range:'5 - 9 oct.',events:[
-  {date:'2026-10-05',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil cardio-vasculaire',courseId:'systeme_cardiovasculaire',room:'Amphi KB',teacher:'S Dulong'},
-  {date:'2026-10-05',start:'13:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'IST bactériennes, infections pulmonaires bactériennes, infections respiratoires virales',room:'Amphi KB',teacher:'Abgrall • Collarino'},
-  {date:'2026-10-06',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Droit de la santé et droit de l’homme',room:'Amphi KB',teacher:'L Chevreau'},
-  {date:'2026-10-06',start:'13:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Introduction pharmacologie et thérapeutiques',courseId:'pharmacologie',room:'Amphi KB',teacher:'Dr Ait Taeb'},
+  {date:'2026-10-05',start:'08:30',end:'12:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil cardiovasculaire',courseId:'systeme_cardiovasculaire',room:'Amphi KB',teacher:'Sandrine Dulong'},
+  {date:'2026-10-05',start:'13:30',end:'16:30',promo:'all',ue:'UE B1 S1 Système Immunitaire, pathologies infectieuses et inflammatoires 3i',type:'CM',title:'IST bactériennes, infections pulmonaires bactériennes et infections respiratoires virales',detail:'IST bactériennes 13:30–14:30 • Infections pulmonaires bactériennes 14:30–15:30 • Infections respiratoires virales 15:30–16:30',room:'Amphi KB',teacher:'Nadège Bourgeois-Nikolaos • Marie-Liesse Etienne • Laurent Dortet • Lina Mouna'},
+  {date:'2026-10-06',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Droit de la santé et droits de l’homme',room:'Amphi KB',teacher:'Timothy JAMES'},
+  {date:'2026-10-06',start:'13:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Introduction pharmacologie et thérapeutiques',courseId:'pharmacologie',room:'Amphi KB',teacher:'Dr AIT-TAYEB'},
   {date:'2026-10-07',start:'09:00',end:'12:00',promo:'A',ue:'UE B3 S1',type:'CM 1+2',title:'Initiation à l’administration médicamenteuse et sécurisation du médicament',room:'S10',teacher:'SL • MP'},
   {date:'2026-10-07',start:'09:00',end:'12:00',promo:'B',ue:'UE B3 S1',type:'CM 1+2',title:'Initiation à l’administration médicamenteuse et sécurisation du médicament',room:'S11',teacher:'SL • MP'},
   {date:'2026-10-07',start:'13:00',end:'16:30',promo:'B',ue:'UE B3 S1',type:'CM 1+2',title:'Introduction aux plaies et pansements',room:'S10',teacher:'Mme Ecorcheville'},
   {date:'2026-10-07',start:'13:30',end:'16:30',promo:'A',ue:'UE B3 S1',type:'TD',title:'PSSM repérage',room:'S11',teacher:'SL'},
-  {date:'2026-10-08',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Droits des patients',room:'Amphi KB',teacher:'L Chevreau'},
-  {date:'2026-10-08',start:'13:30',end:'15:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil reproducteur',room:'Amphi KB',teacher:'V Petit'},
+  {date:'2026-10-08',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Les droits du patient',detail:'Des droits généraux aux droits relatifs à la santé mentale et à la psychiatrie',room:'Amphi KB',teacher:'Timothy JAMES'},
+  {date:'2026-10-08',start:'13:30',end:'15:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil reproducteur',room:'Amphi KB',teacher:'Vanessa PETIT'},
   {date:'2026-10-08',start:'15:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Pharmacologie des antalgiques (E Campus)',courseId:'pharmacologie',room:'Distanciel',teacher:''},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'A',ue:'UE Simulation',type:'TD',title:'Simulation en santé J2',detail:'Toilette complète au lit • Chambre des erreurs • Prescriptions et calculs • Découverte des dispositifs médicaux • Prise des paramètres vitaux',room:'S1 • S4 • S5 • S6 • S2/S3/S10/S13',teacher:'W Bernabelah AS • S Soufi AS • A Laleg AS • A Benatia AS • ID/SL/AC SSO'},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'B',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''},
@@ -185,7 +186,7 @@ function changesCard(){
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
 function weekSource(w){
  if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};
- return {chip:`Prévisionnel · ${w.id} support IFSI · MAJ 07/10/2026`,detail:`${w.id} importée depuis le support IFSI. Le planning reste prévisionnel.`,ics:SOURCE};
+ return {chip:`Prévisionnel · ${w.id} IFSI + CM FAC · MAJ 08/10/2026`,detail:`${w.id} : planning IFSI croisé avec le planning des CM FAC/KB pour les cours concernés. Le planning reste prévisionnel.`,ics:SOURCE+' • '+KB_SOURCE};
 }
 function defaultOpenDay(w){const dates=weekDates(w),today=todayISO();return dates.includes(today)?today:dates[0]}
 function openDayFor(w){const saved=localStorage.getItem(K_DAY);if(saved===`none:${w.id}`)return '';return weekDates(w).includes(saved)?saved:defaultOpenDay(w)}
