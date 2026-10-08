@@ -86,6 +86,11 @@ for(const p of officialRespAssets)assert(fs.existsSync(p),`Visuel respiratoire o
 for(const id of schemaIds){assert(schemaSource.includes(id),`Schéma ${id} absent`);assert(!seen.has(id),`Doublon schéma ${id}`)}
 assert(runtime.length+schemaIds.length>=1400,`Banque trop petite: ${runtime.length+schemaIds.length}${skipped.length?' • packs ignorés '+skipped.join(' | '):''}`);
 assert(new Set(runtime.map(q=>q.id)).size===runtime.length,'IDs QCM dupliqués');
+const reproductiveQcm=decodePackFile('qextra-48.txt');
+assert(reproductiveQcm.length===50,'Système reproducteur : 50 questions attendues');
+assert(reproductiveQcm.every(q=>q.courseId==='systeme_reproducteur'&&q.choices.length===5&&q.explanation?.length>=45),'Système reproducteur : format du QCM invalide');
+assert(runtime.filter(q=>q.courseId==='systeme_reproducteur').length===50,'Système reproducteur : banque interactive incomplète');
+for(const q of reproductiveQcm){const live=runtime.find(x=>x.id===q.id);assert(live,'Question reproducteur absente : '+q.id);if(q.answers.length<=3)assert(JSON.stringify(q.answers)===JSON.stringify(live.answers)&&JSON.stringify(q.choices)===JSON.stringify(live.choices),'Vérité du corrigé décalée : '+q.id);else assert(live.answerCountNormalized===true,'Question à quatre réponses non convertie : '+q.id)}
 for(const q of runtime){assert(typeof q.id==='string'&&q.id,'Question sans ID');assert(typeof q.question==='string'&&q.question.trim(),'Énoncé absent');assert(Array.isArray(q.choices)&&q.choices.length>=4&&q.choices.length<=5,`Choix invalides ${q.id}: ${q?.choices?.length??'∅'}`);assert(Array.isArray(q.answers)&&q.answers.length>=1,`Réponse absente ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Réponse invalide ${q.id}`)}
 for(const q of runtime){const m=(q.explanation||'').match(/^Réponses? attendues? selon le corrigé du QCM\s*:\s*([^.<]+)/i);if(!m)continue;const stated=(m[1].match(/[A-E]/g)||[]).join(',');const actual=(q.answers||[]).map(i=>'ABCDE'[i]).filter(Boolean).join(',');assert(stated===actual,`Corrigé textuel désynchronisé ${q.id}: ${stated||'∅'} ≠ ${actual||'∅'}`)}
 let runtimeThreeOfFour=0;
