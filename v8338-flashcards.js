@@ -13,6 +13,20 @@ function lcFirst(s){s=String(s||'');return s?s[0].toLowerCase()+s.slice(1):s}
 function capFirst(s){s=String(s||'');return s?s[0].toUpperCase()+s.slice(1):s}
 function hasVerb(s){return /\b(?:est|sont|a|ont|peut|peuvent|doit|doivent|comprend|comprennent|appartient|assure|assurent|participe|participent|permet|permettent|produit|produisent|contient|contiennent|se situe|se situent|présente|présentent)\b/i.test(s)}
 function compactAnswer(s){return String(s||'').replace(/^Il s['’]agit d['’]e?\s*/i,'').replace(/^C['’]est\s+/i,'').replace(/\s+/g,' ').trim()}
+function answerKey(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').replace(/\s+/g,' ').trim()}
+function answerTokens(s){const stop=new Set(['le','la','les','un','une','de','du','des','d','l','a','au','aux','en','vers','et','ou','par','pour','se','est','sont','il','elle','dans']);return answerKey(s).split(' ').filter(x=>x.length>1&&!stop.has(x))}
+function sameMeaning(a,b){const A=new Set(answerTokens(a)),B=new Set(answerTokens(b));if(!A.size||!B.size)return false;let hit=0;for(const x of A)if(B.has(x))hit++;return hit/Math.min(A.size,B.size)>=0.8}
+function dedupeAnswers(arr){const out=[];for(const raw of arr||[]){const a=compactAnswer(raw);if(!a)continue;if(out.some(x=>answerKey(x)===answerKey(a)||sameMeaning(x,a)))continue;out.push(a)}return out}
+function expectedCount(front){const f=String(front||'').toLowerCase(),words={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10},m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):words[m[1]]||null}
+function splitShortList(s){const x=String(s||'').replace(/[.;]+$/,'').trim();if(!x||x.length>120||/[.!?;:]/.test(x))return[x];const parts=x.split(/\s*,\s*|\s+et\s+/i).map(y=>y.trim()).filter(Boolean);return parts.length>1?parts:[x]}
+function listFromExplanation(exp,n){const e=String(exp||'').replace(/\s+/g,' ').trim();if(!e||!n)return[];const m=e.match(/:\s*([^.!?]+)/);if(!m)return[];const parts=m[1].split(/\s*,\s*|\s+et\s+/i).map(x=>x.trim().replace(/^(?:le|la|les|un|une)\s+/i,'')).filter(Boolean);return parts.length===n?parts:[]}
+function refineAnswers(front,answers,explanation){let out=dedupeAnswers(answers);const n=expectedCount(front);if(n&&out.length!==n){const split=out.flatMap(splitShortList);if(split.length===n)out=dedupeAnswers(split);if(out.length!==n){const fromExp=listFromExplanation(explanation,n);if(fromExp.length===n)out=dedupeAnswers(fromExp)}}return out}
+function answersMatchQuestion(front,answers){const n=expectedCount(front);return !n||answers.length===n}
+function subjectPrompt(t){let s=String(t||'').trim(),m=s.match(/^Concernant\s+(.+?)\s*\?$/i);if(m)return subjectCase(m[1]);m=s.match(/^((?:Le|La|Les|L['’])\s+[^?]{2,60})\s*\?$/i);return m?subjectCase(m[1]):''}
+function deSubject(s){const x=String(s||'').trim();if(/^le\s+/i.test(x))return'du '+x.replace(/^le\s+/i,'');if(/^la\s+/i.test(x))return'de la '+x.replace(/^la\s+/i,'');if(/^les\s+/i.test(x))return'des '+x.replace(/^les\s+/i,'');if(/^l['’]/i.test(x))return'de '+x;return'de '+x}
+function subjectFactAtom(subject,a,q){const s=String(a||'').trim().replace(/[.;]+$/,''),sub=lcFirst(subjectCase(subject)),exp=String(q?.explanation||'').trim();let m=s.match(/^environ\s+(.+?)\s+se trouve(?:nt)?\s+dans\s+(.+)$/i);if(m)return{kind:'Valeur à connaître',front:`Où se trouve environ ${m[1]} ${deSubject(sub)} de l’organisme ?`,answers:[capFirst(m[2])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*participe\s+à\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:`À quel processus physiologique participe ${sub} ?`,answers:[subjectCase(m[1])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*intervient\s+(?:dans|au niveau de)\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:`Dans quel processus intervient ${sub} ?`,answers:[subjectCase(m[1])],explanation:exp,atomic:true};m=s.match(/^est\s+le\s+principal\s+(.+)$/i);if(m)return{kind:'Définition',front:`Quel est le principal ${subjectCase(m[1])} ?`,answers:[capFirst(sub)],explanation:exp,atomic:true};m=s.match(/^se trouve\s+principalement\s+dans\s+(.+)$/i);if(m)return{kind:'Localisation',front:`Où se trouve principalement ${sub} ?`,answers:[capFirst(m[1])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*(?:joue un rôle|est impliqué(?:e)?)\s+dans\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:`Dans quel processus ${sub} intervient-il ?`,answers:[subjectCase(m[1])],explanation:exp,atomic:true};return null}
+function subjectAtomicCards(q,t){const subject=subjectPrompt(t);if(!subject)return[];const atoms=[];for(const a of correctAnswers(q).map(compactAnswer)){const z=subjectFactAtom(subject,a,q);if(z)atoms.push(z)}return atoms}
+function contextualizeDefinition(front,q){let f=String(front||'').trim();if(/^(?:À quoi correspond|Qu['’]est-ce que) la traduction\s*\?$/i.test(f))return'Qu’est-ce que la traduction en biologie moléculaire ?';if(/^(?:À quoi correspond|Qu['’]est-ce que) la transcription\s*\?$/i.test(f))return'Qu’est-ce que la transcription en biologie moléculaire ?';return f}
 function definitionCard(q,t){
   let m=t.match(/^(.{2,80}?)\s+(?:correspond|désigne|se définit)\s+(?:à|comme)\s*:?$/i);
   if(m)return{kind:'Définition',front:`Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
@@ -106,6 +120,8 @@ function recoverContextCard(q,t){
 function vagueFront(front){
   const f=String(front||'').toLowerCase();
   return !front||front.length<8||
+    /^concernant\s+.+\?$/i.test(String(front||'').trim())||
+    /^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i.test(String(front||'').trim())||
     /que faut-il retenir concernant/.test(f)||
     /dans l['’]exemple du cours/.test(f)||
     /\b(?:ceci|cela|ci-dessus|ci-dessous|dans ce cas|dans cet exemple|dans le cours|selon le cours)\b/.test(f)||
@@ -203,20 +219,21 @@ function atomicFromAnswers(q,t){
   return atoms.length>=2?atoms:[]
 }
 function pedagogicalCard(q){
-  const t=cleanQuestion(q);
+  const t=cleanQuestion(q),exp=String(q.explanation||'').trim();
   let card=definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
-  if(card)card={...card,front:sanitizeContextFront(card.front)};
+  if(card)card={...card,front:contextualizeDefinition(sanitizeContextFront(card.front),q)};
   if(!card||vagueFront(card.front))card=recoverContextCard(q,t);
-  if(card)card={...card,front:sanitizeContextFront(card.front)};
+  if(card)card={...card,front:contextualizeDefinition(sanitizeContextFront(card.front),q)};
   if(!card||vagueFront(card.front))return null;
-  const answers=(card.answers||answer(q)).filter(Boolean);
-  if(!answers.length)return null;
-  return{...card,answers,explanation:card.explanation??String(q.explanation||'').trim()}
+  const answers=refineAnswers(card.front,card.answers||answer(q),card.explanation??exp);
+  if(!answers.length||!answersMatchQuestion(card.front,answers))return null;
+  return{...card,answers,explanation:card.explanation??exp}
 }
 function atomicCards(q){
-  const t=cleanQuestion(q),good=correctAnswers(q),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
+  const t=cleanQuestion(q),good=correctAnswers(q),subjectParts=subjectAtomicCards(q,t),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
+  if(subjectParts.length)return subjectParts.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
   const split=good.length>1&&(meta||good.some(a=>/(?:→|:|=)/.test(a)))?atomicFromAnswers(q,t):[];
-  if(split.length>=2)return split;
+  if(split.length>=2)return split.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
   const p=pedagogicalCard(q);
   return p?[p]:[]
 }

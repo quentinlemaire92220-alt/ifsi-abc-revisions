@@ -67,6 +67,9 @@ jobs:
       - name: Vérifier les associations contextualisées V8.30.46
         run: node tests/flashcards-context-atomic-v8346.mjs
 
+      - name: Vérifier la cohérence recto/verso V8.30.48
+        run: node tests/flashcards-coherence-v8348.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
