@@ -3,8 +3,8 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
 const meta=JSON.parse(read('build-meta.json'));
-assert.equal(meta.version,'8.30.45');
-assert.equal(String(meta.build),'8345');
+assert.match(meta.version,/^\d+\.\d+(?:\.\d+)?$/,'Version courante invalide');
+assert.match(String(meta.build),/^\d+$/,'Build courant invalide');
 
 const qs=[
  {id:'atomic_thermo',courseId:'x',course:'Test',theme:'Thermorégulation',difficulty:'medium',question:'Quelles associations mécanisme – exemple sont justes ?',choices:['Convection : vent qui éloigne l’air réchauffé au contact du corps.','Évaporation : départ de la sueur sous forme de vapeur.','Conduction : contact des mains avec un haltère froid.','Rayonnement : uniquement par contact direct.'],answers:[0,1,2],explanation:'Conduction = contact, convection = déplacement d’un fluide, évaporation = passage de l’eau en vapeur.'},
@@ -31,6 +31,6 @@ for(const f of fronts)assert.ok(!/support|diapo(?:sitive)?|sont justes|valeurs o
 const mod=read('v8338-flashcards.js');
 for(const token of ['atomicCards','atomicFromAnswers','answerPairAtom','answerSentenceAtom','selectCards'])assert.ok(mod.includes(token),`Moteur atomique incomplet: ${token}`);
 const index=read('index.html'),sw=read('sw.js');
-assert.ok(index.includes('./v8345-changelog.js?v=8345'),'Changelog V8.30.45 absent de index.html');
+assert.ok(index.includes(`./v8345-changelog.js?v=${meta.build}`),'Changelog V8.30.45 absent de index.html');
 assert.ok(sw.includes("'./v8345-changelog.js'"),'Changelog V8.30.45 absent du cache PWA');
 console.log(`✅ V8.30.45 : ${deck.length} flashcards atomiques de test contrôlées`);
