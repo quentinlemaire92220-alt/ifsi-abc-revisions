@@ -1,5 +1,5 @@
 {
-  "version": "8.30.52",
+  "version": "8.30.53",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.52 : garde-fou CI Flashcards par cours et prise en charge des stems QCM sans interrogation ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.53 : ajout du système reproducteur (fiche illustrée V5, support officiel, 50 QCM interactifs et PDF corrigé) ; contrôles existants conservés.",
   "expectedTotals": {
-    "courses": 44,
-    "sheets": 51,
+    "courses": 45,
+    "sheets": 52,
     "infographics": 155,
     "vocals": 53,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1663
+    "qcmRuntimeMin": 1713
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
