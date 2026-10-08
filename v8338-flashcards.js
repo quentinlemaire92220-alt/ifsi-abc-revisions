@@ -84,28 +84,53 @@ function trueFalseCard(q,t){
   return{kind:'Vrai / Faux',front:`Vrai ou faux : ${pick.text.replace(/[.?]+$/,'')} ?`,answers:[pick.good?'Vrai.':'Faux.'],explanation:pick.good?String(q.explanation||'').trim():`Faux. ${String(q.explanation||'').trim()}`}
 }
 function directQuestion(t){
-  let front=String(t||'').trim();
+  let front=stripSourceMeta(String(t||'').trim()).replace(/\s+/g,' ').trim();
   if(/^(?:Qui|Que|Qu['’]est-ce|Quel(?:le|s|les)?|Quels?|Quelles?|Comment|Pourquoi|Où|Quand|Combien|À quoi|A quoi|De quoi|Par quoi)\b/i.test(front)){
     return capFirst(front.replace(/\s*:\s*$/,' ?').replace(/\s*\?\s*$/,' ?').replace(/\s+/g,' ').trim())
   }
-  let m=front.match(/^(.+?)\s+sont\s*:\s*$/i);
-  if(m)return `Quels sont ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+est\s*:\s*$/i);
-  if(m)return `Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+correspond(?:ent)?(?:\s+à)?\s*:\s*$/i);
+  let m=front.match(/^(.+?)\s+sont\s*:?[\s]*$/i);
+  if(m){
+    const s=subjectCase(m[1]);
+    if(/^(?:deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:voies|causes|caractéristiques|étapes|situations|mesures|classes|familles|parties)\b/i.test(s))return `Quelles sont les ${lcFirst(s)} ?`;
+    return `Quels sont ${lcFirst(s)} ?`;
+  }
+  m=front.match(/^(.+?)\s+est\s*:?[\s]*$/i);
+  if(m){
+    const s=subjectCase(m[1]);
+    if(/^le germe\b/i.test(s))return `Quel est ${lcFirst(s)} ?`;
+    return `Qu’est-ce que ${lcFirst(s)} ?`;
+  }
+  m=front.match(/^(.+?)\s+correspond(?:ent)?(?:\s+(?:principalement\s+)?à)?\s*:?[\s]*$/i);
   if(m)return /^\s*(?:les|des|ces)\b/i.test(m[1])?`À quoi correspondent ${lcFirst(subjectCase(m[1]))} ?`:`À quoi correspond ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+peut faire appel à\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+est défini(?:e|es|s)?(?:\s+comme)?\s*:?[\s]*$/i);
+  if(m)return `Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+est (?:présenté|présentée|décrit|décrite)(?:\s+comme)?\s*:?[\s]*$/i);
+  if(m){
+    const s=subjectCase(m[1]);
+    if(/^la cause\b/i.test(s))return `Quelle est ${lcFirst(s)} ?`;
+    return `Comment se caractérise ${lcFirst(s)} ?`;
+  }
+  m=front.match(/^(.+?)\s+peut faire appel à\s*:?[\s]*$/i);
   if(m)return `À quoi peut faire appel ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+peuvent faire appel à\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+peuvent faire appel à\s*:?[\s]*$/i);
   if(m)return `À quoi peuvent faire appel ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+comprend(?:ent)?\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+comprend(?:ent)?\s*:?[\s]*$/i);
   if(m)return `Que comprend ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+se compose(?:nt)? de\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+peut associer\s*:?[\s]*$/i);
+  if(m)return `Quels signes peut associer ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+associe(?:nt)?\s*:?[\s]*$/i);
+  if(m)return `Quels éléments caractérisent ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+se compose(?:nt)? de\s*:?[\s]*$/i);
   if(m)return `De quoi se compose ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+se caractérise(?:nt)? par\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+se caractérise(?:nt)? par\s*:?[\s]*$/i);
   if(m)return `Comment se caractérise ${lcFirst(subjectCase(m[1]))} ?`;
-  m=front.match(/^(.+?)\s+permet(?:tent)?\s*:\s*$/i);
+  m=front.match(/^(.+?)\s+permet(?:tent)?\s*:?[\s]*$/i);
   if(m)return `Que permet ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^Parmi les\s+(.+?)\s*$/i);
+  if(m){
+    const s=subjectCase(m[1]).replace(/\b(?:explicitement\s+)?cité(?:e|es|s)?\b/gi,'').trim();
+    return `Quels sont les ${lcFirst(s)} ?`;
+  }
   return null
 }
 function recoverContextCard(q,t){
