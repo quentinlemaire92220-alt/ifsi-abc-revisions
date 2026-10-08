@@ -242,6 +242,8 @@ function pedagogicalCard(q){
 function atomicCards(q){
   const t=cleanQuestion(q),good=correctAnswers(q),subjectParts=subjectAtomicCards(q,t),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
   if(subjectParts.length)return subjectParts.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
+  const cleanT=stripSourceMeta(t),subjectMatch=cleanT.match(/(?:concernant|à propos de)\s+(?:au|à la|aux|le|la|les)?\s*([^?:,]+?)(?:\s*\?|\s*:|$)/i),roleAnswers=correctAnswers(q).map(compactAnswer).filter(a=>/^Participation à\s+/i.test(a)).map(a=>subjectCase(a.replace(/^Participation à\s+/i,'')));
+  if(subjectMatch&&roleAnswers.length>=2){const front='À quels processus physiologiques participe '+articleSubject(subjectMatch[1])+' ?';return[{kind:'Rôle / fonction',front,answers:dedupeAnswers(roleAnswers),explanation:sanitizeExplanation(q.explanation||''),atomic:true}]}
   const split=good.length>1&&(meta||good.some(a=>/(?:→|:|=)/.test(a)))?atomicFromAnswers(q,t):[];
   if(split.length>=2)return split.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
   const p=pedagogicalCard(q);
