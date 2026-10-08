@@ -79,14 +79,17 @@ for(const [bucket,cards] of Object.entries(audit))for(const c of cards){
   x[bucket]++;x.total++;byCourse[c.courseId]=x;
 }
 const courseStats=courses.map(course=>{
-  const qcmCount=(grouped.get(course.id)||[]).length;
+  const courseQuestions=grouped.get(course.id)||[];
+  const qcmCount=courseQuestions.length;
+  const sourceFiles=[...new Set(courseQuestions.map(q=>q.__file).filter(Boolean))];
+  const sampleQuestions=courseQuestions.slice(0,3).map(q=>({id:q.id,question:q.question,theme:q.theme}));
   const cards=deck.filter(c=>c.courseId===course.id);
   const coveredQcm=new Set(cards.map(c=>c.qid)).size;
   const quality=byCourse[course.id]||{label:course.label,green:0,rewrite:0,split:0,reject:0,total:0};
   const generatedCards=cards.length;
   const issues=quality.rewrite+quality.split+quality.reject;
   return{
-    id:course.id,label:course.label,qcmCount,generatedCards,coveredQcm,
+    id:course.id,label:course.label,qcmCount,generatedCards,coveredQcm,sourceFiles,sampleQuestions,
     coverageRate:qcmCount?Math.round(coveredQcm/qcmCount*1000)/10:0,
     green:quality.green,rewrite:quality.rewrite,split:quality.split,reject:quality.reject,
     rejectRate:generatedCards?Math.round(quality.reject/generatedCards*1000)/10:0,
