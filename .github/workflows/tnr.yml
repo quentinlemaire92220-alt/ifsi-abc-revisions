@@ -52,6 +52,9 @@ jobs:
       - name: Vérifier les formulations Flashcards V8.30.42
         run: node tests/flashcards-wording-v8342.mjs
 
+      - name: Vérifier l’autonomie des Flashcards V8.30.43
+        run: node tests/flashcards-context-v8343.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
