@@ -58,6 +58,9 @@ jobs:
       - name: Vérifier la récupération des Flashcards V8.30.44
         run: node tests/flashcards-recovery-v8344.mjs
 
+      - name: Inventaire qualité Flashcards
+        run: node tests/flashcards-inventory-v8345.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
