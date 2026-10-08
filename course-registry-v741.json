@@ -1,5 +1,5 @@
 {
-  "version": "8.30.52",
+  "version": "8.30.53",
   "courses": [
     {
       "id": "biomolecules",
@@ -113,6 +113,21 @@
       ],
       "domain": "B",
       "ue": "B1"
+    },
+    {
+      "id": "systeme_reproducteur",
+      "label": "Système reproducteur",
+      "aliases": [
+        "Système reproducteur",
+        "Systeme Reproducteur",
+        "Appareil génital masculin et féminin",
+        "Systeme Repro",
+        "Système génital"
+      ],
+      "domain": "B",
+      "ue": "B1",
+      "officialSupportUrl": "https://drive.google.com/file/d/1Jw8RzgwKSob_zp8a7DLN2W_3qT5_gDaz/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1QYoX2hMuvqvMvzFq1vU0LJEFvL3Ub-SK/view"
     },
     {
       "id": "systeme_endocrinien",
