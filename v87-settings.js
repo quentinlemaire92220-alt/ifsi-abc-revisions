@@ -8,7 +8,7 @@ function css(){if($('v87css'))return;const s=document.createElement('style');s.i
 #v87Nav button.on{background:#f1ebff;color:#6941c6;font-weight:850}
 body.v72-dark #v87Nav button.on{background:#3a3150;color:#ddd0ff}
 body.v87-ready nav:not(#v87Nav){display:none!important}
-#settings87{padding-bottom:92px}
+#settings87{padding-bottom:145px}
 .v87-head{border:1px solid #d9cfee;background:linear-gradient(135deg,#f7f3ff,#eefaf8);border-radius:22px;padding:16px;margin-bottom:12px}
 .v87-head h2{margin:0 0 4px}.v87-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .v87-card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:14px}
@@ -20,7 +20,7 @@ body.v87-ready nav:not(#v87Nav){display:none!important}
 .v87-switch.on{background:#7046d9}.v87-switch.on:after{left:22px}
 .v87-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.v87-actions .btn{width:100%}
 .v87-about{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:10px}
-.v87-ver{font-size:24px;font-weight:900;color:#6941c6}.v87-versiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v87-versionbox{border:1px solid var(--line);border-radius:12px;padding:9px;background:var(--card)}.v87-versionbox b{display:block;font-size:15px;margin-top:2px}.v87-log{margin-top:10px}.v87-log details{border-top:1px solid var(--line);padding:9px 0}.v87-log details:first-child{border-top:0}.v87-log summary{cursor:pointer;font-weight:800}.v87-log .small{line-height:1.55;margin-top:6px}
+.v87-ver{font-size:24px;font-weight:900;color:#6941c6}.v87-versiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v87-versionbox{border:1px solid var(--line);border-radius:12px;padding:9px;background:var(--card)}.v87-versionbox b{display:block;font-size:15px;margin-top:2px}.v87-log{margin-top:10px}.v87-log details[hidden]{display:none!important}.v87-log details{border-top:1px solid var(--line);padding:9px 0}.v87-log details:first-child{border-top:0}.v87-log summary{cursor:pointer;font-weight:800}.v87-log .small{line-height:1.55;margin-top:6px}
 @media(max-width:680px){.v87-grid{grid-template-columns:1fr}.v87-card{padding:13px}#v87Nav{width:calc(100% - 16px);bottom:7px}.v87-actions{grid-template-columns:1fr}#v87Nav button{font-size:10px}}
 `;document.head.appendChild(s)}
 function oldNav(){return document.querySelector('.app>nav:not(#v87Nav)')}
@@ -75,7 +75,7 @@ function esc87(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'
 function versionLog(){
  const box=$('v87Log');if(!box)return;
  const appEntries=window.IFSI_V8312?.appEntries?.()||[];
- if(appEntries.length){box.innerHTML=appEntries.map((x,i)=>`<details ${i===0?'open':''}><summary>${esc87(x.title)}</summary><div class="small">${esc87(x.copy||'Évolution de l’application.')}</div></details>`).join('');return}
+ if(appEntries.length){box.innerHTML=appEntries.map((x,i)=>`<details class="v87-history-entry" ${i===0?'open':''} ${i>=5?'hidden':''}><summary>${esc87(String(x.title||'').replace(/Date non renseignée/gi,'').trim())}</summary><div class="small">${esc87(x.copy||'Évolution de l’application.')}</div></details>`).join('')+(appEntries.length>5?'<button type="button" id="v87HistoryMore" class="btn outline" style="width:100%;margin-top:10px">Voir tout l’historique ('+appEntries.length+')</button>':'');const more=$('v87HistoryMore');if(more)more.onclick=()=>{const hidden=box.querySelectorAll('.v87-history-entry[hidden]');const expand=hidden.length>0;box.querySelectorAll('.v87-history-entry').forEach((el,i)=>{if(i>=5)el.hidden=!expand});more.textContent=expand?'Réduire l’historique':'Voir tout l’historique ('+appEntries.length+')'};return}
  const src=$('v742Changelog')?.querySelector('details .small');
  if(src){
    const spans=[...src.querySelectorAll(':scope > span[id$="Change"]')].filter(x=>/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|technique|synchronis|cache|paramètres|fiabilis|refonte|simplifi|réorganis/i.test(x.textContent));

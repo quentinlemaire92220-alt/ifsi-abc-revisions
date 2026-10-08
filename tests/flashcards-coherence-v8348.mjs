@@ -3,8 +3,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
 const meta=JSON.parse(read('build-meta.json'));
-assert.equal(meta.version,'8.30.48');
-assert.equal(String(meta.build),'8348');
+assert.ok(Number(meta.build)>=8348, 'Les garanties pédagogiques V8.30.48 doivent être conservées pour les versions suivantes');
 
 const qs=[
  {id:'calcium_case',courseId:'x',course:'Test',theme:'Minéraux, oligoéléments et vitamines',difficulty:'easy',question:'Concernant le calcium ?',choices:['environ 99 % se trouve dans les os','il participe à la coagulation','il est absent du squelette'],answers:[0,1],explanation:'Environ 99 % du calcium de l’organisme est stocké dans les os et les dents. Le calcium intervient aussi dans la coagulation sanguine.'},
