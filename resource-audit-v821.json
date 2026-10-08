@@ -1,5 +1,5 @@
 {
-  "version": "8.30.52",
+  "version": "8.30.53",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.52 : garde-fou CI Flashcards par cours et prise en charge des stems QCM sans interrogation ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.53 : ajout du cours Système reproducteur, de sa fiche de révision et de 5 vocaux actifs.",
   "expectedTotals": {
-    "courses": 44,
-    "sheets": 51,
+    "courses": 45,
+    "sheets": 52,
     "infographics": 155,
-    "vocals": 53,
+    "vocals": 58,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -125,6 +125,19 @@
         "1iczon2eyByLBSKNEznuyPYGwI9xw2ePe"
       ],
       "packDriveId": "1GuY0GMCHPmTFooGb1ffgANkHj0M5q4cT"
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "course": "Système reproducteur",
+      "sheetDriveId": "1K8QRryAil5F66iaZ2p7YsmGZ6dS4326y",
+      "vocals": 5,
+      "vocalDriveIds": [
+        "1uBfKFLnZlxqZkzw5yVKNhOqWWSmPGc97",
+        "1633jrHc2S4KrJDszU8lKUK8ycwU_jWrg",
+        "1AoEhAhVr0w1jVIAEpmWCGkt2tNDvkDJa",
+        "1bywTG_gqEm-U40NJ2_dDh1Saw30cgJtw",
+        "1aT7gvrk8NbPp2tKH8GGG56TofGHXPFl6"
+      ]
     }
   ],
   "auditLogicVersion": "8.30.10",
