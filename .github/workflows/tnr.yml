@@ -61,6 +61,9 @@ jobs:
       - name: Inventaire qualité Flashcards
         run: node tests/flashcards-inventory-v8345.mjs
 
+      - name: Garde-fou Flashcards par cours
+        run: node tests/flashcards-course-gate-v8352.mjs
+
       - name: Vérifier les Flashcards atomiques V8.30.45
         run: node tests/flashcards-atomic-v8345.mjs
 
