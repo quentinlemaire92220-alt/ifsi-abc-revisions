@@ -1,5 +1,5 @@
 {
-  "version": "8.30.40",
+  "version": "8.30.41",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.40 : intervenants FAC/KB corrigés à partir du 08/10/2026 ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.41 : flashcards reformulées en rappel actif ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
