@@ -8,7 +8,7 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-07';
+const UPDATED_AT='2026-10-08';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
@@ -47,8 +47,8 @@ const WEEKS=[
   {date:'2026-10-07',start:'09:00',end:'12:00',promo:'B',ue:'UE B3 S1',type:'CM 1+2',title:'Initiation à l’administration médicamenteuse et sécurisation du médicament',room:'S11',teacher:'SL • MP'},
   {date:'2026-10-07',start:'13:00',end:'16:30',promo:'B',ue:'UE B3 S1',type:'CM 1+2',title:'Introduction aux plaies et pansements',room:'S10',teacher:'Mme Ecorcheville'},
   {date:'2026-10-07',start:'13:30',end:'16:30',promo:'A',ue:'UE B3 S1',type:'TD',title:'PSSM repérage',room:'S11',teacher:'SL'},
-  {date:'2026-10-08',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Droits des patients',room:'Amphi KB',teacher:'L Chevreau'},
-  {date:'2026-10-08',start:'13:30',end:'15:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil reproducteur',room:'Amphi KB',teacher:'V Petit'},
+  {date:'2026-10-08',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Les droits du patient',detail:'Des droits généraux aux droits relatifs à la santé mentale et à la psychiatrie',room:'Amphi KB',teacher:'Timothy JAMES'},
+  {date:'2026-10-08',start:'13:30',end:'15:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil reproducteur',room:'Amphi KB',teacher:'Vanessa PETIT'},
   {date:'2026-10-08',start:'15:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Pharmacologie des antalgiques (E Campus)',courseId:'pharmacologie',room:'Distanciel',teacher:''},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'A',ue:'UE Simulation',type:'TD',title:'Simulation en santé J2',detail:'Toilette complète au lit • Chambre des erreurs • Prescriptions et calculs • Découverte des dispositifs médicaux • Prise des paramètres vitaux',room:'S1 • S4 • S5 • S6 • S2/S3/S10/S13',teacher:'W Bernabelah AS • S Soufi AS • A Laleg AS • A Benatia AS • ID/SL/AC SSO'},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'B',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''},
