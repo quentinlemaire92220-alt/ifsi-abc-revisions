@@ -150,7 +150,7 @@ function answerPairAtom(a){
   const left=subjectCase(m[1]),right=subjectCase(m[2]);
   if(!left||!right)return null;
   const numeric=/\b\d+(?:[.,]\d+)?\s*(?:%|mmHg|bpm|°C|g\/?L|mg\/?L|mmol\/?L|mL|L\/min|kg|cm|mm|UI|mEq)\b/i.test(right);
-  return{kind:numeric?'Valeur à connaître':'Association',front:numeric?`Quelle est la valeur de ${lcFirst(left)} ?`:`À quoi correspond ${lcFirst(left)} ?`,answers:[right]}
+  return{kind:numeric?'Valeur à connaître':'Association',front:numeric?`Quelle est la valeur de ${lcFirst(left)} ?`:`À quoi correspond « ${left} » ?`,answers:[right]}
 }
 function answerSentenceAtom(a){
   const s=String(a||'').trim().replace(/[.;]+$/,'');
