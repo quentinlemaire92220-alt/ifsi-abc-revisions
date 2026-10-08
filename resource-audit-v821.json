@@ -1,5 +1,5 @@
 {
-  "version": "8.30.45",
+  "version": "8.30.46",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.45 : génération atomique des flashcards ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.46 : associations atomiques contextualisées ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
