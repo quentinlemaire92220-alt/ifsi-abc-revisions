@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.49';
+const VERSION='8.30.50';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : audit des flashcards et contrôle des ressources simplifié.`;
