@@ -52,7 +52,9 @@ const deck=api.getDeck();
 
 const reContext=/\b(?:support|diapo(?:sitive)?\s*\d*|dans le cours|selon le cours|cours\b|cité(?:e|es|s)?|mentionné(?:e|es|s)?|présenté(?:e|es|s)?|proposé(?:e|es|s)?|suivant(?:e|es|s)?|indiqué(?:e|es|s)?|exemple|figure|schéma|document|ci-dessus|ci-dessous)\b/i;
 const reMeta=/\b(?:propositions?|affirmations?)\b|\b(?:sont|est) (?:exactes?|justes?|correctes?)\b|\bassociations?\b.*\b(?:justes?|exactes?|correctes?)\b|\bcorrespondent au support\b|\bvaleurs ou définitions\b/i;
-const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i;
+const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|dans ce cours|qcm oral|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i;
+const reBareAcronym=/«\s*[A-ZÀ-Ý]{2,6}[0-9₂₃]*[+⁺\-−⁻]*\s*»/;
+const reGenericPair=/À quoi correspond\s+«\s*(?:Capteur|Convection|Conduction|Évaporation|Rayonnement)\s*»\s*\?/i;
 const rePair=/\bassociation|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;
 const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
 function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):countWords[m[1]]||null}
@@ -61,12 +63,12 @@ const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
   const answers=(c.answers||[]).filter(Boolean);
-  const contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front),pair=rePair.test(front);
+  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(front+' '+explanation),contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   const n=expected(front),countMismatch=!!n&&answers.length!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
   const tooBroad=answers.length>=3 && (pair||/quels sont|quelles sont|quelles associations|quelles valeurs|quelles fonctions/i.test(front));
   let bucket='green',reasons=[];
-  if(contextDep||vague||countMismatch){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague');if(countMismatch)reasons.push(`recto annonce ${n}, verso contient ${answers.length}`)}
+  if(contextDep||vague||sourceMeta||countMismatch){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague ou sigle non développé');if(sourceMeta)reasons.push('métadonnée de cours/support visible');if(countMismatch)reasons.push(`recto annonce ${n}, verso contient ${answers.length}`)}
   else if(meta||duplicateAnswers){bucket='rewrite';if(meta)reasons.push('formulation QCM/meta');if(duplicateAnswers)reasons.push('réponses dupliquées')}
   else if(pair||tooBroad){bucket='split';reasons.push('à scinder en cartes atomiques')}
   audit[bucket].push({...c,front,answers,reasons});
