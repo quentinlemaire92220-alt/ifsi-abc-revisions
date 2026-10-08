@@ -46,6 +46,9 @@ jobs:
       - name: Vérifier le correctif UI V8.30.39
         run: node tests/ui-v8339.mjs
 
+      - name: Vérifier les flashcards pédagogiques V8.30.41
+        run: node tests/flashcards-pedagogy-v8341.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
