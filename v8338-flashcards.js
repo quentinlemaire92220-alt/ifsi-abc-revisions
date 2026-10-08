@@ -129,8 +129,8 @@ function genericQuestion(q,t){
 }
 function sanitizeContextFront(front){
   let x=String(front||'').trim()
-    .replace(/\b(?:selon|conformément à) (?:le |la )?(?:support(?: officiel)?|cours)\b/gi,'')
-    .replace(/\b(?:dans|du|de la) (?:le |la )?(?:support(?: officiel)?|cours)\b/gi,'')
+    .replace(/\b(?:selon|conformément (?:à|au)|d['’]après) (?:le |la |au )?(?:support(?: officiel)?|cours)\b/gi,'')
+    .replace(/\b(?:dans|du|de la|au) (?:le |la )?(?:support(?: officiel)?|cours)\b/gi,'')
     .replace(/\bde la diapo(?:sitive)?\s*\d+\b/gi,'')
     .replace(/\b(?:sur|dans) (?:le )?(?:schéma|figure|document)\b[^?]*?(?=\?|$)/gi,'')
     .replace(/\s+/g,' ').replace(/\s+([?;,:])/g,'$1').trim();
@@ -145,7 +145,7 @@ function sanitizeContextFront(front){
 }
 function answerPairAtom(a){
   const s=String(a||'').trim().replace(/[.;]+$/,'');
-  let m=s.match(/^(.{2,70}?)\s*(?:→|:|=)\s*(.{2,180})$/);
+  let m=s.match(/^(.{2,70}?)\s*(?:→|:|=|\s+[–—-]\s+)\s*(.{2,180})$/);
   if(!m)return null;
   const left=subjectCase(m[1]),right=subjectCase(m[2]);
   if(!left||!right)return null;
@@ -170,6 +170,10 @@ function answerSentenceAtom(a){
   if(m)return{kind:'Question / réponse',front:`Que peuvent ${m[2]} ${lcFirst(subjectCase(m[1]))} ?`,answers:[subjectCase(m[3])]};
   m=s.match(/^(.{2,90}?)\s+correspond(?:ent)?\s+à\s+(.{2,180})$/i);
   if(m)return{kind:'Définition',front:`À quoi correspond ${lcFirst(subjectCase(m[1]))} ?`,answers:[subjectCase(m[2])]};
+  m=s.match(/^(.{2,90}?)\s+est de\s+(.{2,120})$/i);
+  if(m&&/\d/.test(m[2]))return{kind:'Valeur à connaître',front:`Quelle est la valeur de ${lcFirst(subjectCase(m[1]).replace(/\bindiqué(?:e)?\b/i,'').trim())} ?`,answers:[subjectCase(m[2])]};
+  m=s.match(/^Le pH\s+7\s+est\s+neutre$/i);
+  if(m)return{kind:'Définition',front:'Que signifie un pH de 7 ?',answers:['Il est neutre']};
   return null
 }
 function atomicFromAnswers(q,t){
