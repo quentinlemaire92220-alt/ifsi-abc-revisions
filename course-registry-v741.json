@@ -1,5 +1,5 @@
 {
-  "version": "8.30.53",
+  "version": "8.30.54",
   "courses": [
     {
       "id": "biomolecules",
@@ -526,7 +526,9 @@
         "Reproduction humaine"
       ],
       "domain": "B",
-      "ue": "B1"
+      "ue": "B1",
+      "officialSupportUrl": "https://drive.google.com/file/d/1Jw8RzgwKSob_zp8a7DLN2W_3qT5_gDaz/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1QYoX2hMuvqvMvzFq1vU0LJEFvL3Ub-SK/view"
     }
   ],
   "auditBaseline": {

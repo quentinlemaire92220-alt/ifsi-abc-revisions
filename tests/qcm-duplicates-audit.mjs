@@ -23,7 +23,7 @@ const sourceById=new Map();
 
 let base=[];for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)sourceById.set(q.id,p);base.push(...a)}
 let extras=[];for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9)]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p)){const a=decodePackFile(p);for(const q of a)if(!sourceById.has(q.id))sourceById.set(q.id,p);extras.push(...a)}}
-let override=[];for(const i of [39,40,41,42,43,44,45]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p)){const a=decodePackFile(p);for(const q of a)sourceById.set(q.id,p);override.push(...a)}}
+let override=[];for(const i of [39,40,41,42,43,44,45,48]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(fs.existsSync(p)){const a=decodePackFile(p);for(const q of a)sourceById.set(q.id,p);override.push(...a)}}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const ids=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!ids.has(q.id));extras.push(...finalOverride)}
 const seen=new Set(base.map(q=>q.id)),runtime=[...base];for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
