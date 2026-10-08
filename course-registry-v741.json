@@ -1,5 +1,5 @@
 {
-  "version": "8.30.46",
+  "version": "8.30.47",
   "courses": [
     {
       "id": "biomolecules",
@@ -463,10 +463,13 @@
     },
     {
       "id": "introduction_droit",
-      "label": "Introduction au droit",
+      "label": "Institutions judiciaires et grands principes du droit",
       "domain": "A",
       "ue": "A2",
       "aliases": [
+        "Institutions judiciaires et grands principes du droit",
+        "Institutions judiciaires",
+        "Grands principes du droit",
         "Introduction au droit",
         "Droit Introduction Au Droit",
         "Sources et mise en œuvre du droit",

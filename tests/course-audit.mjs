@@ -89,7 +89,7 @@ const forbiddenLegacy=new Set([
 for(const id of allIds)if(forbiddenLegacy.has(id))errors.push(`Ancienne copie réintroduite dans le catalogue: ${id}`);
 
 const count=(id,key)=>byCourse[id]?.[key]||0;
-if(count('introduction_droit','qcm')!==50)errors.push(`Introduction au droit: 50 QCM attendus, ${count('introduction_droit','qcm')} trouvés`);
+if(count('introduction_droit','qcm')!==60)errors.push(`Institutions judiciaires et grands principes du droit: 60 QCM attendus, ${count('introduction_droit','qcm')} trouvés`);
 if(count('introduction_droit','sheets')<1)errors.push('Introduction au droit: fiche manquante');
 if(count('psychologie_sante','sheets')<1)errors.push('Psychologie de la santé: fiche manquante');
 if(count('pharmacologie','qcm')!==60)errors.push(`Introduction à la pharmacologie: 60 QCM attendus, ${count('pharmacologie','qcm')} trouvés`);
