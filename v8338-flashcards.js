@@ -101,11 +101,6 @@ function recoverContextCard(q,t){
   x=x.replace(/\s*:\s*$/,' ?').replace(/\s*\?\s*$/,' ?');
   let front=directQuestion(x);
   if(front&&!vagueFront(front))return{kind:'Question / réponse',front,answers:good,explanation:exp,recovered:true};
-  const th=subjectCase(theme(q));
-  if(good.length&&th&&th!=='Général'){
-    const listLike=good.length>1&&good.every(a=>a.length<80);
-    if(listLike)return{kind:'Question / réponse',front:`Quels sont les éléments essentiels à connaître sur ${lcFirst(th)} ?`,answers:good,explanation:exp,recovered:true}
-  }
   return null
 }
 function vagueFront(front){
