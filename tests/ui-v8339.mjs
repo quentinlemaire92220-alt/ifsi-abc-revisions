@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const meta=JSON.parse(read('build-meta.json'));
+assert.equal(meta.version,'8.30.39');
+assert.equal(String(meta.build),'8339');
+const ui=read('v8339-ui-polish.js');
+for(const token of ["const V='8.30.39'","body.v72-dark #v81Body .fc-revision-entry","background:#fff!important","v8339VocalsCard","Vocaux disponibles","v8312Vocals","IFSI_V8339_UI"])assert.ok(ui.includes(token),`Correctif UI incomplet: ${token}`);
+const index=read('index.html'),sw=read('sw.js');
+assert.ok(index.includes('./v8339-ui-polish.js?v=8339'),'Correctif UI absent de index.html');
+assert.ok(index.includes('./v8339-changelog.js?v=8339'),'Changelog V8.30.39 absent de index.html');
+assert.ok(sw.includes("'./v8339-ui-polish.js'"),'Correctif UI absent du cache PWA');
+assert.ok(sw.includes("'./v8339-changelog.js'"),'Changelog V8.30.39 absent du cache PWA');
+console.log('✅ V8.30.39 : flashcards sombres, bouton blanc et vocaux hors objectifs contrôlés');
