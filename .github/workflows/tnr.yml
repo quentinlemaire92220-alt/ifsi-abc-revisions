@@ -70,6 +70,9 @@ jobs:
       - name: Vérifier la cohérence recto/verso V8.30.48
         run: node tests/flashcards-coherence-v8348.mjs
 
+      - name: Vérifier la contextualisation Flashcards V8.30.50
+        run: node tests/flashcards-context-v8350.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
