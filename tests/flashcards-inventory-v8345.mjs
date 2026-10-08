@@ -52,17 +52,22 @@ const deck=api.getDeck();
 
 const reContext=/\b(?:support|diapo(?:sitive)?\s*\d*|dans le cours|selon le cours|cours\b|cité(?:e|es|s)?|mentionné(?:e|es|s)?|présenté(?:e|es|s)?|proposé(?:e|es|s)?|suivant(?:e|es|s)?|indiqué(?:e|es|s)?|exemple|figure|schéma|document|ci-dessus|ci-dessous)\b/i;
 const reMeta=/\b(?:propositions?|affirmations?)\b|\b(?:sont|est) (?:exactes?|justes?|correctes?)\b|\bassociations?\b.*\b(?:justes?|exactes?|correctes?)\b|\bcorrespondent au support\b|\bvaleurs ou définitions\b/i;
-const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support/i;
+const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i;
 const rePair=/\bassociation|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;
+const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
+function expected(front){const f=front.toLowerCase(),n=f.match(/\b([2-9]|10)\b/);if(n)return Number(n[1]);for(const [w,v] of Object.entries(countWords))if(new RegExp('\\b'+w+'\\b').test(f))return v;return null}
+function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
-  const answers=c.answers||[];
+  const answers=(c.answers||[]).filter(Boolean);
   const contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front),pair=rePair.test(front);
+  const n=expected(front),countMismatch=!!n&&answers.length!==n;
+  const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
   const tooBroad=answers.length>=3 && (pair||/quels sont|quelles sont|quelles associations|quelles valeurs|quelles fonctions/i.test(front));
   let bucket='green',reasons=[];
-  if(contextDep||vague){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague')}
-  else if(meta){bucket='rewrite';reasons.push('formulation QCM/meta')}
+  if(contextDep||vague||countMismatch){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague');if(countMismatch)reasons.push(`recto annonce ${n}, verso contient ${answers.length}`)}
+  else if(meta||duplicateAnswers){bucket='rewrite';if(meta)reasons.push('formulation QCM/meta');if(duplicateAnswers)reasons.push('réponses dupliquées')}
   else if(pair||tooBroad){bucket='split';reasons.push('à scinder en cartes atomiques')}
   audit[bucket].push({...c,front,answers,reasons});
 }
