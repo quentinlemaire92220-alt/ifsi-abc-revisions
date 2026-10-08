@@ -1,6 +1,6 @@
 {
-  "version": "8.30.42",
-  "build": "8342",
+  "version": "8.30.43",
+  "build": "8343",
   "releasedAt": "2026-10-08",
-  "summary": "Corrige les formulations vagues des flashcards, conserve les vraies questions et rejette les cartes ambiguës."
+  "summary": "Filtre les flashcards dépendantes du contexte du QCM source : cités, mentionnés, proposés, hiérarchie correcte, etc."
 }
