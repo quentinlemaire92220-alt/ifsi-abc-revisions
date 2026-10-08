@@ -78,8 +78,26 @@ for(const [bucket,cards] of Object.entries(audit))for(const c of cards){
   const x=byCourse[c.courseId]??={label:c.course,green:0,rewrite:0,split:0,reject:0,total:0};
   x[bucket]++;x.total++;byCourse[c.courseId]=x;
 }
-const top=Object.entries(byCourse).map(([id,x])=>({id,...x,issues:x.rewrite+x.split+x.reject}))
-  .sort((a,b)=>b.issues-a.issues||b.total-a.total).slice(0,20);
+const courseStats=courses.map(course=>{
+  const courseQuestions=grouped.get(course.id)||[];
+  const qcmCount=courseQuestions.length;
+  const sourceFiles=[...new Set(courseQuestions.map(q=>q.__file).filter(Boolean))];
+  const sampleQuestions=courseQuestions.slice(0,3).map(q=>({id:q.id,question:q.question,theme:q.theme}));
+  const cards=deck.filter(c=>c.courseId===course.id);
+  const coveredQcm=new Set(cards.map(c=>c.qid)).size;
+  const quality=byCourse[course.id]||{label:course.label,green:0,rewrite:0,split:0,reject:0,total:0};
+  const generatedCards=cards.length;
+  const issues=quality.rewrite+quality.split+quality.reject;
+  return{
+    id:course.id,label:course.label,qcmCount,generatedCards,coveredQcm,sourceFiles,sampleQuestions,
+    coverageRate:qcmCount?Math.round(coveredQcm/qcmCount*1000)/10:0,
+    green:quality.green,rewrite:quality.rewrite,split:quality.split,reject:quality.reject,
+    rejectRate:generatedCards?Math.round(quality.reject/generatedCards*1000)/10:0,
+    issueRate:generatedCards?Math.round(issues/generatedCards*1000)/10:0
+  }
+}).filter(x=>x.qcmCount>0);
+const top=courseStats.map(x=>({...x,total:x.generatedCards,issues:x.rewrite+x.split+x.reject}))
+  .sort((a,b)=>b.issues-a.issues||b.generatedCards-a.generatedCards).slice(0,20);
 const sample=o=>o.slice(0,30).map(c=>({id:c.qid,course:c.course,theme:c.theme,front:c.front,answers:c.answers,reasons:c.reasons}));
 const report={
   sourceFiles:files.length,
@@ -89,6 +107,7 @@ const report={
   generatedCards:deck.length,
   counts:Object.fromEntries(Object.entries(audit).map(([k,v])=>[k,v.length])),
   issueRate:deck.length?Math.round((audit.rewrite.length+audit.split.length+audit.reject.length)/deck.length*1000)/10:0,
+  courseStats,
   topCourses:top,
   samples:{reject:sample(audit.reject),rewrite:sample(audit.rewrite),split:sample(audit.split)}
 };

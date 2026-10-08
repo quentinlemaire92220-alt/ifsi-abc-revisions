@@ -1,6 +1,6 @@
 {
-  "version": "8.30.51",
-  "build": "8351",
+  "version": "8.30.52",
+  "build": "8352",
   "releasedAt": "2026-10-08",
-  "summary": "Développe les sigles et contextualise les mots génériques dans les flashcards, sans métadonnées de cours."
+  "summary": "Ajoute un garde-fou CI par cours pour les flashcards et prend en charge davantage de stems QCM."
 }
