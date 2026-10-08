@@ -1,13 +1,13 @@
 {
-  "version": "8.30.39",
-  "auditedAt": "2026-10-07",
+  "version": "8.30.40",
+  "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.37 : ajout de la série complète de 6 vocaux d’initiation à l’administration médicamenteuse.",
+  "note": "V8.30.40 : intervenants FAC/KB corrigés à partir du 08/10/2026 ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
