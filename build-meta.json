@@ -1,6 +1,6 @@
 {
-  "version": "8.30.46",
-  "build": "8346",
+  "version": "8.30.47",
+  "build": "8347",
   "releasedAt": "2026-10-08",
-  "summary": "Contextualise les associations atomiques et rejette les libellés ambigus comme A/C ou Fins/Épais sans sujet."
+  "summary": "Contrôle le recto et le verso des flashcards : questions vagues éclatées, réponses dédupliquées et nombres annoncés vérifiés."
 }
