@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const meta=JSON.parse(read('build-meta.json'));
+assert.equal(meta.version,'8.30.44');
+assert.equal(String(meta.build),'8344');
+const mod=read('v8338-flashcards.js');
+for(const token of ['recoverContextCard','recovered:true','cité','mentionné','proposé','Quel est l’ordre d’organisation du muscle squelettique, du plus grand au plus petit ?'])assert.ok(mod.includes(token),`Moteur de récupération incomplet: ${token}`);
+assert.ok(mod.includes('if(!card||vagueFront(card.front))card=recoverContextCard(q,t);'),'La récupération doit intervenir avant le rejet final');
+assert.ok(!mod.includes('Quels sont les éléments essentiels à connaître sur'),'Les cartes récupérées ne doivent pas utiliser un fallback vague');
+const index=read('index.html'),sw=read('sw.js');
+assert.ok(index.includes('./v8344-changelog.js?v=8344'),'Changelog V8.30.44 absent de index.html');
+assert.ok(sw.includes("'./v8344-changelog.js'"),'Changelog V8.30.44 absent du cache PWA');
+console.log('✅ V8.30.44 : récupération intelligente des flashcards contrôlée');

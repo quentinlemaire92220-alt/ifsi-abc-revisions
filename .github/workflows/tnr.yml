@@ -55,6 +55,9 @@ jobs:
       - name: Vérifier l’autonomie des Flashcards V8.30.43
         run: node tests/flashcards-context-v8343.mjs
 
+      - name: Vérifier la récupération des Flashcards V8.30.44
+        run: node tests/flashcards-recovery-v8344.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 

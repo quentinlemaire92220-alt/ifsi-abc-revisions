@@ -83,6 +83,26 @@ function directQuestion(t){
   if(m)return `Que permet ${lcFirst(subjectCase(m[1]))} ?`;
   return null
 }
+function recoverContextCard(q,t){
+  const original=String(t||'').trim(),exp=String(q?.explanation||'').trim(),good=correctAnswers(q).map(compactAnswer);
+  const evidence=[original,exp,...good].join(' ');
+  if(/\b(?:hiérarchie correcte|ordre correct|ordre d['’]organisation)\b/i.test(original)){
+    if(/\b(?:muscle|faisceau|fibres?|myofibrilles?|sarcomères?)\b/i.test(evidence)){
+      return{kind:'Étapes',front:'Quel est l’ordre d’organisation du muscle squelettique, du plus grand au plus petit ?',answers:good,explanation:exp,recovered:true}
+    }
+    const topic=subjectCase(theme(q));
+    if(topic&&topic!=='Général')return{kind:'Étapes',front:`Quel est l’ordre d’organisation concernant ${lcFirst(topic)} ?`,answers:good,explanation:exp,recovered:true}
+  }
+  let x=original
+    .replace(/\b(?:cité(?:e|es|s)?|mentionné(?:e|es|s)?|suivant(?:e|es|s)?|proposé(?:e|es|s)?|indiqué(?:e|es|s)?|présenté(?:e|es|s)?)\b/gi,'')
+    .replace(/^Parmi (?:les|ces) (?:propositions|réponses|éléments)[^,:;?]*[,;:]?\s*/i,'')
+    .replace(/\b(?:ci-dessus|ci-dessous|dans le cours|selon le cours|dans cet exemple|dans l['’]exemple du cours)\b/gi,'')
+    .replace(/\s+/g,' ').replace(/\s+([?;,:])/g,'$1').trim();
+  x=x.replace(/\s*:\s*$/,' ?').replace(/\s*\?\s*$/,' ?');
+  let front=directQuestion(x);
+  if(front&&!vagueFront(front))return{kind:'Question / réponse',front,answers:good,explanation:exp,recovered:true};
+  return null
+}
 function vagueFront(front){
   const f=String(front||'').toLowerCase();
   return !front||front.length<8||
@@ -109,7 +129,8 @@ function genericQuestion(q,t){
 }
 function pedagogicalCard(q){
   const t=cleanQuestion(q);
-  const card=definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  let card=definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  if(!card||vagueFront(card.front))card=recoverContextCard(q,t);
   if(!card||vagueFront(card.front))return null;
   const answers=(card.answers||answer(q)).filter(Boolean);
   if(!answers.length)return null;

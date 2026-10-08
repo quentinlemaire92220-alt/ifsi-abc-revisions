@@ -1,5 +1,5 @@
 {
-  "version": "8.30.43",
+  "version": "8.30.44",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.43 : flashcards dépendantes du contexte filtrées ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.44 : récupération intelligente des flashcards contextuelles ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
