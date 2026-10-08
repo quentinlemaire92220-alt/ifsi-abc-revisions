@@ -1,5 +1,5 @@
 {
-  "version": "8.30.53",
+  "version": "8.30.54",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.53 : ajout du cours Système reproducteur, de sa fiche de révision et de 5 vocaux actifs.",
+  "note": "V8.30.54 : ajout de 50 QCM interactifs et du PDF corrigé du système reproducteur. Fiche V5 et 5 vocaux V8.30.53 conservés.",
   "expectedTotals": {
     "courses": 45,
     "sheets": 52,
@@ -17,7 +17,7 @@
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1663
+    "qcmRuntimeMin": 1713
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
