@@ -58,30 +58,63 @@ function trueFalseCard(q,t){
   if(hash(q.id)%4!==0)return null;
   return{kind:'Vrai / Faux',front:`Vrai ou faux : ${pick.text.replace(/[.?]+$/,'')} ?`,answers:[pick.good?'Vrai.':'Faux.'],explanation:pick.good?String(q.explanation||'').trim():`Faux. ${String(q.explanation||'').trim()}`}
 }
-function genericQuestion(q,t){
-  let front=t;
-  front=front.replace(/^Concernant\s+(.+?)\s*:\s*$/i,'Que faut-il retenir concernant $1 ?');
-  front=front.replace(/^À propos de\s+(.+?)\s*:\s*$/i,'Que faut-il retenir à propos de $1 ?');
-  front=front.replace(/^Parmi les fonctions attribuées à\s+(.+?)\s*:\s*$/i,'Quelles sont les fonctions de $1 ?');
-  front=front.replace(/^(.+?)\s+comprennent\s*:\s*$/i,'Que comprennent $1 ?');
-  front=front.replace(/^(.+?)\s+se caractérise(?:nt)? par\s*:\s*$/i,'Comment se caractérise $1 ?');
-  front=front.replace(/^(.+?)\s+permet(?:tent)?\s*:\s*$/i,'Que permet $1 ?');
-  if(!/\?$/.test(front)){
-    const base=subjectCase(front).replace(/^(?:Parmi|Lesquelles? de|Quels? éléments parmi).*$/i,theme(q));
-    front=`Que faut-il retenir concernant ${lcFirst(base||theme(q))} ?`
+function directQuestion(t){
+  let front=String(t||'').trim();
+  if(/^(?:Qui|Que|Qu['’]est-ce|Quel(?:le|s|les)?|Quels?|Quelles?|Comment|Pourquoi|Où|Quand|Combien|À quoi|A quoi|De quoi|Par quoi)\b/i.test(front)){
+    return capFirst(front.replace(/\s*:\s*$/,' ?').replace(/\s*\?\s*$/,' ?').replace(/\s+/g,' ').trim())
   }
-  front=capFirst(front.replace(/\s+/g,' ').trim());
-  return{kind:'Question / réponse',front,answers:correctAnswers(q).map(compactAnswer)}
+  let m=front.match(/^(.+?)\s+sont\s*:\s*$/i);
+  if(m)return `Quels sont ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+est\s*:\s*$/i);
+  if(m)return `Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+correspond(?:ent)?(?:\s+à)?\s*:\s*$/i);
+  if(m)return /^\s*(?:les|des|ces)\b/i.test(m[1])?`À quoi correspondent ${lcFirst(subjectCase(m[1]))} ?`:`À quoi correspond ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+peut faire appel à\s*:\s*$/i);
+  if(m)return `À quoi peut faire appel ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+peuvent faire appel à\s*:\s*$/i);
+  if(m)return `À quoi peuvent faire appel ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+comprend(?:ent)?\s*:\s*$/i);
+  if(m)return `Que comprend ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+se compose(?:nt)? de\s*:\s*$/i);
+  if(m)return `De quoi se compose ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+se caractérise(?:nt)? par\s*:\s*$/i);
+  if(m)return `Comment se caractérise ${lcFirst(subjectCase(m[1]))} ?`;
+  m=front.match(/^(.+?)\s+permet(?:tent)?\s*:\s*$/i);
+  if(m)return `Que permet ${lcFirst(subjectCase(m[1]))} ?`;
+  return null
+}
+function vagueFront(front){
+  const f=String(front||'').toLowerCase();
+  return !front||front.length<8||
+    /que faut-il retenir concernant/.test(f)||
+    /dans l['’]exemple du cours/.test(f)||
+    /\b(?:ceci|cela|ci-dessus|ci-dessous|dans ce cas|dans cet exemple)\b/.test(f)||
+    /concernant\s+(?:dans|lesquels?|laquelle|lequel)\b/.test(f)||
+    /\b(?:sont|correspond|peut faire appel à)\s*\?$/.test(f)
+}
+function genericQuestion(q,t){
+  let front=directQuestion(t);
+  if(!front){
+    let x=t;
+    x=x.replace(/^Parmi les fonctions attribuées à\s+(.+?)\s*:\s*$/i,'Quelles sont les fonctions de $1 ?');
+    x=x.replace(/^Concernant\s+(.+?)\s*:\s*$/i,'');
+    x=x.replace(/^À propos de\s+(.+?)\s*:\s*$/i,'');
+    if(x&&x!==t)front=directQuestion(x);
+  }
+  if(!front||vagueFront(front))return null;
+  return{kind:'Question / réponse',front:capFirst(front.replace(/\s+/g,' ').trim()),answers:correctAnswers(q).map(compactAnswer)}
 }
 function pedagogicalCard(q){
   const t=cleanQuestion(q);
-  const card=trueFalseCard(q,t)||definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  const card=definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  if(!card||vagueFront(card.front))return null;
   const answers=(card.answers||answer(q)).filter(Boolean);
-  return{...card,answers:answers.length?answers:answer(q),explanation:card.explanation??String(q.explanation||'').trim()}
+  if(!answers.length)return null;
+  return{...card,answers,explanation:card.explanation??String(q.explanation||'').trim()}
 }
 function hash(s){let h=2166136261;for(const c of String(s)){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function selectQuestions(qs,max=40){const groups=new Map();for(const q of qs){const k=theme(q);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(q)}for(const a of groups.values())a.sort((x,y)=>hash(x.id)-hash(y.id));const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=[];let round=0;while(out.length<Math.min(max,qs.length)){let added=0;for(const k of keys){const a=groups.get(k),q=a[round];if(q&&out.length<max){out.push(q);added++}}if(!added)break;round++}return out}
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;for(const q of selectQuestions(qs,40)){const p=pedagogicalCard(q);out.push({id:'fc:'+q.id,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:p.front,answers:p.answers,explanation:p.explanation,officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)})}}deck=out;return out}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;for(const q of selectQuestions(qs,40)){const p=pedagogicalCard(q);if(!p)continue;out.push({id:'fc:'+q.id,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:p.front,answers:p.answers,explanation:p.explanation,officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)})}}deck=out;return out}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}

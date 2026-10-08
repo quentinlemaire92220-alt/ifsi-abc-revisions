@@ -1,6 +1,6 @@
 {
-  "version": "8.30.41",
-  "build": "8341",
+  "version": "8.30.42",
+  "build": "8342",
   "releasedAt": "2026-10-08",
-  "summary": "Transforme les flashcards en vraies questions de rappel actif : définitions, valeurs, vrai/faux, rôles et étapes."
+  "summary": "Corrige les formulations vagues des flashcards, conserve les vraies questions et rejette les cartes ambiguës."
 }
