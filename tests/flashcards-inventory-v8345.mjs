@@ -55,7 +55,7 @@ const reMeta=/\b(?:propositions?|affirmations?)\b|\b(?:sont|est) (?:exactes?|jus
 const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i;
 const rePair=/\bassociation|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;
 const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
-function expected(front){const f=front.toLowerCase(),n=f.match(/\b([2-9]|10)\b/);if(n)return Number(n[1]);for(const [w,v] of Object.entries(countWords))if(new RegExp('\\b'+w+'\\b').test(f))return v;return null}
+function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):countWords[m[1]]||null}
 function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
