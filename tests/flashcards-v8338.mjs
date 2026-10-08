@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const meta=JSON.parse(read('build-meta.json'));
+assert.equal(meta.version,'8.30.38');
+assert.equal(String(meta.build),'8338');
+const mod=read('v8338-flashcards.js');
+for(const token of ["const V='8.30.38'","ifsiabc_flashcards_v1","selectQuestions","À revoir","En cours","Acquise","resourcesForCourse","officialSupport","IFSI_V8338_FLASHCARDS"])assert.ok(mod.includes(token),`Flashcards incomplètes: ${token}`);
+const index=read('index.html'),sw=read('sw.js');
+assert.ok(index.includes('./v8338-flashcards.js?v=8338'),'Module flashcards absent de index.html');
+assert.ok(index.includes('./v8338-changelog.js?v=8338'),'Changelog V8.30.38 absent de index.html');
+assert.ok(sw.includes("'./v8338-flashcards.js'"),'Module flashcards absent du cache PWA');
+assert.ok(sw.includes("'./v8338-changelog.js'"),'Changelog V8.30.38 absent du cache PWA');
+assert.ok(sw.includes("ifsi-abc-v8-30-38-local-"),'Cache PWA V8.30.38 désynchronisé');
+console.log('✅ V8.30.38 : flashcards, progression locale et cache PWA contrôlés');
