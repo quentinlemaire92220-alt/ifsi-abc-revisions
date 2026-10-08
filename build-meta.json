@@ -1,6 +1,6 @@
 {
-  "version": "8.30.45",
-  "build": "8345",
+  "version": "8.30.46",
+  "build": "8346",
   "releasedAt": "2026-10-08",
-  "summary": "Génère des flashcards atomiques : un QCM peut produire plusieurs cartes autonomes, ciblées et dédupliquées."
+  "summary": "Contextualise les associations atomiques et rejette les libellés ambigus comme A/C ou Fins/Épais sans sujet."
 }
