@@ -4,11 +4,84 @@ let deck=[],session=[],index=0,revealed=false,sessionMarks=[],activeCourse='all'
 const now=()=>Date.now(),day=86400000,read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{"cards":{},"sessions":0}')}catch{return{cards:{},sessions:0}}},write=s=>localStorage.setItem(KEY,JSON.stringify(s));
 const reg=()=>window.IFSI_V741?.getRegistry?.()?.courses||[],res=id=>window.IFSI_V741?.resourcesForCourse?.(id)||{questions:[],sheets:[]};
 const diff=q=>q?.difficulty||window.IFSI_V79?.difficultyOf?.(q)||'medium',theme=q=>window.IFSI_V79?.themeOf?.(q)||q?.theme||'Général';
-function cleanFront(q){let t=String(q?.question||'').trim();t=t.replace(/\s+—\s+Repères\s*:[\s\S]*?—\s*Quelle combinaison regroupe toutes les bonnes réponses\s*\?\s*$/i,'');return t.replace(/\s+/g,' ').trim()||'Question de révision';}
-function answer(q){const a=(q?.answers||[]).map(i=>q?.choices?.[i]).filter(Boolean);return a.length?a:['Voir le corrigé associé'];}
+function cleanQuestion(q){let t=String(q?.question||'').trim();t=t.replace(/\s+—\s+Repères\s*:[\s\S]*?—\s*Quelle combinaison regroupe toutes les bonnes réponses\s*\?\s*$/i,'');return t.replace(/\s+/g,' ').trim()||'Question de révision';}
+function correctAnswers(q){return (q?.answers||[]).map(i=>String(q?.choices?.[i]||'').trim()).filter(Boolean)}
+function wrongAnswers(q){const good=new Set(q?.answers||[]);return (q?.choices||[]).map((x,i)=>({text:String(x||'').trim(),i})).filter(x=>x.text&&!good.has(x.i)).map(x=>x.text)}
+function answer(q){const a=correctAnswers(q);return a.length?a:['Voir le corrigé associé'];}
+function subjectCase(s){return String(s||'').trim().replace(/[.:;]+$/,'')}
+function lcFirst(s){s=String(s||'');return s?s[0].toLowerCase()+s.slice(1):s}
+function capFirst(s){s=String(s||'');return s?s[0].toUpperCase()+s.slice(1):s}
+function hasVerb(s){return /\b(?:est|sont|a|ont|peut|peuvent|doit|doivent|comprend|comprennent|appartient|assure|assurent|participe|participent|permet|permettent|produit|produisent|contient|contiennent|se situe|se situent|présente|présentent)\b/i.test(s)}
+function compactAnswer(s){return String(s||'').replace(/^Il s['’]agit d['’]e?\s*/i,'').replace(/^C['’]est\s+/i,'').replace(/\s+/g,' ').trim()}
+function definitionCard(q,t){
+  let m=t.match(/^(.{2,80}?)\s+(?:correspond|désigne|se définit)\s+(?:à|comme)\s*:?$/i);
+  if(m)return{kind:'Définition',front:`Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
+  m=t.match(/^Quelle est la définition (?:de|du|de la|des)\s+(.+?)\s*\?$/i);
+  if(m)return{kind:'Définition',front:`Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
+  m=t.match(/^Qu['’]est-ce (?:que|qu['’])\s*(.+?)\s*\?$/i);
+  if(m)return{kind:'Définition',front:t,answers:correctAnswers(q).map(compactAnswer)};
+  m=t.match(/^(.{2,70}?)\s+est\s*:\s*$/i);
+  if(m&&m[1].split(/\s+/).length<=8)return{kind:'Définition',front:`Qu’est-ce que ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
+  return null
+}
+function roleCard(q,t){
+  let m=t.match(/^(?:Quel est |Quelle est )?(?:le |la )?rôle (?:de|du|de la|des)\s+(.+?)\s*\??$/i);
+  if(m)return{kind:'Rôle / fonction',front:`Quel est le rôle de ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
+  m=t.match(/^(.+?)\s+(?:a pour rôle|a pour fonction|sert à|permet)\s*:?$/i);
+  if(m)return{kind:'Rôle / fonction',front:`Quel est le rôle de ${lcFirst(subjectCase(m[1]))} ?`,answers:correctAnswers(q).map(compactAnswer)};
+  if(/\bfonction(?:s)?\b/i.test(t)&&/\?$/.test(t))return{kind:'Rôle / fonction',front:t,answers:correctAnswers(q).map(compactAnswer)};
+  return null
+}
+function stepsCard(q,t){
+  if(/\b(?:étapes|phases|stades|ordre|séquence)\b/i.test(t)){
+    let front=t;
+    if(!/\?$/.test(front))front=`Quelles sont les principales étapes concernant ${lcFirst(subjectCase(theme(q)))} ?`;
+    return{kind:'Étapes',front,answers:correctAnswers(q).map(compactAnswer)}
+  }
+  return null
+}
+function valueCard(q,t){
+  const good=correctAnswers(q),all=[...good,...wrongAnswers(q)],unit=/\b\d+(?:[.,]\d+)?\s*(?:%|mmHg|bpm|°C|g\/?L|mg\/?L|mmol\/?L|mL|L\/min|kg|cm|mm|UI|mEq)\b/i;
+  if(!all.some(x=>unit.test(x))&&!/\b(?:norme|valeur normale|valeurs normales|intervalle|seuil|fréquence|saturation|SpO2|température|pression artérielle)\b/i.test(t))return null;
+  let front=t.replace(/\s*:\s*$/,'?');
+  if(!/\?$/.test(front)){
+    if(/^Concernant\s+/i.test(front))front=`Quelle valeur faut-il retenir ${lcFirst(front)} ?`;
+    else front=`Quelle valeur faut-il retenir pour ${lcFirst(subjectCase(front))} ?`
+  }
+  front=front.replace(/^La valeur normale de (.+?) est\s*\?$/i,'Quelle est la valeur normale de $1 ?');
+  return{kind:'Valeur à connaître',front,answers:good.map(compactAnswer)}
+}
+function trueFalseCard(q,t){
+  const pool=(q?.choices||[]).map((x,i)=>({text:String(x||'').trim(),good:(q?.answers||[]).includes(i)})).filter(x=>x.text.length>=24&&x.text.length<=135&&hasVerb(x.text));
+  if(!pool.length)return null;
+  const pick=pool[hash(q.id)%pool.length];
+  if(hash(q.id)%4!==0)return null;
+  return{kind:'Vrai / Faux',front:`Vrai ou faux : ${pick.text.replace(/[.?]+$/,'')} ?`,answers:[pick.good?'Vrai.':'Faux.'],explanation:pick.good?String(q.explanation||'').trim():`Faux. ${String(q.explanation||'').trim()}`}
+}
+function genericQuestion(q,t){
+  let front=t;
+  front=front.replace(/^Concernant\s+(.+?)\s*:\s*$/i,'Que faut-il retenir concernant $1 ?');
+  front=front.replace(/^À propos de\s+(.+?)\s*:\s*$/i,'Que faut-il retenir à propos de $1 ?');
+  front=front.replace(/^Parmi les fonctions attribuées à\s+(.+?)\s*:\s*$/i,'Quelles sont les fonctions de $1 ?');
+  front=front.replace(/^(.+?)\s+comprennent\s*:\s*$/i,'Que comprennent $1 ?');
+  front=front.replace(/^(.+?)\s+se caractérise(?:nt)? par\s*:\s*$/i,'Comment se caractérise $1 ?');
+  front=front.replace(/^(.+?)\s+permet(?:tent)?\s*:\s*$/i,'Que permet $1 ?');
+  if(!/\?$/.test(front)){
+    const base=subjectCase(front).replace(/^(?:Parmi|Lesquelles? de|Quels? éléments parmi).*$/i,theme(q));
+    front=`Que faut-il retenir concernant ${lcFirst(base||theme(q))} ?`
+  }
+  front=capFirst(front.replace(/\s+/g,' ').trim());
+  return{kind:'Question / réponse',front,answers:correctAnswers(q).map(compactAnswer)}
+}
+function pedagogicalCard(q){
+  const t=cleanQuestion(q);
+  const card=trueFalseCard(q,t)||definitionCard(q,t)||roleCard(q,t)||stepsCard(q,t)||valueCard(q,t)||genericQuestion(q,t);
+  const answers=(card.answers||answer(q)).filter(Boolean);
+  return{...card,answers:answers.length?answers:answer(q),explanation:card.explanation??String(q.explanation||'').trim()}
+}
 function hash(s){let h=2166136261;for(const c of String(s)){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function selectQuestions(qs,max=40){const groups=new Map();for(const q of qs){const k=theme(q);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(q)}for(const a of groups.values())a.sort((x,y)=>hash(x.id)-hash(y.id));const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=[];let round=0;while(out.length<Math.min(max,qs.length)){let added=0;for(const k of keys){const a=groups.get(k),q=a[round];if(q&&out.length<max){out.push(q);added++}}if(!added)break;round++}return out}
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;for(const q of selectQuestions(qs,40)){out.push({id:'fc:'+q.id,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),front:cleanFront(q),answers:answer(q),explanation:String(q.explanation||'').trim(),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)})}}deck=out;return out}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;for(const q of selectQuestions(qs,40)){const p=pedagogicalCard(q);out.push({id:'fc:'+q.id,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:p.front,answers:p.answers,explanation:p.explanation,officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)})}}deck=out;return out}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}
@@ -33,9 +106,9 @@ function openMode(m){let cards=[];if(m==='unseen')cards=deck.filter(c=>statusOf(
 function renderEmpty(kind){hideAll();const box=$('fcApp');box.innerHTML=`<div class="fc-shell"><div class="card fc-empty"><div style="font-size:48px">✨</div><h2>Rien à réviser ici</h2><p class="small">${kind==='due'?'Aucune carte n’est due pour le moment.':kind==='favorites'?'Tu n’as pas encore ajouté de carte aux favorites.':'Toutes les cartes de ce mode ont déjà été vues.'}</p><button id="fcEmptyBack" class="btn primary">Retour aux flashcards</button></div></div>`;$('fcEmptyBack').onclick=openHome}
 function renderCourse(id){activeCourse=id;hideAll();const c=reg().find(x=>x.id===id),cards=courseCards(id),s=stats(cards),due=dueCards(cards);const box=$('fcApp');box.innerHTML=`<div class="fc-shell"><div class="fc-head"><button id="fcCourseBack" class="btn outline fc-back">←</button><div><h2 style="margin:0">${E(c?.label||'Cours')}</h2><div class="small">${cards.length} flashcards • ${s.mastered}% maîtrisées</div></div></div><div class="card"><div class="row"><div><b>Ta progression</b><div class="small">${s.known} acquises • ${s.learning} en cours • ${s.again} à revoir • ${s.unseen} jamais vues</div></div><span class="badge">${E(c?.ue||'')}</span></div><div class="fc-progress" style="height:10px;margin-top:12px"><span style="width:${s.mastered}%"></span></div></div><div class="section">Choisir une session</div><div class="fc-mode-grid"><button class="fc-mode" data-size="10"><b>⚡ Session rapide</b><span class="small">10 cartes • ~5 min</span></button><button class="fc-mode" data-size="20"><b>📚 Session classique</b><span class="small">20 cartes • ~10 min</span></button><button class="fc-mode" data-size="all"><b>🗂️ Toutes les cartes</b><span class="small">${cards.length} cartes</span></button><button class="fc-mode" data-size="due"><b>🎯 Mes erreurs uniquement</b><span class="small">${due.length} cartes à revoir</span></button></div></div>`;$('fcCourseBack').onclick=openHome;box.querySelectorAll('[data-size]').forEach(b=>b.onclick=()=>{const k=b.dataset.size;let a=k==='due'?due:shuffle(cards);if(k==='10')a=a.slice(0,10);else if(k==='20')a=a.slice(0,20);if(!a.length)return renderEmpty('due');startSession(a,c?.label||'Cours')})}
 function startSession(cards,label='Session'){session=[...cards];index=0;revealed=false;sessionMarks=[];mode='session';const s=read();s.sessions=(s.sessions||0)+1;write(s);hideAll();drawSession(label)}
-function drawSession(label){const card=session[index],box=$('fcApp');if(!card){finish();return}const st=statusOf(card.id),fav=favorite(card);box.innerHTML=`<div class="fc-shell"><div class="row" style="gap:10px"><button id="fcQuit" class="btn outline fc-back">×</button><div class="fc-session-bar"><span style="width:${Math.round(index/session.length*100)}%"></span></div><b>${index+1} / ${session.length}</b></div><div class="fc-card-wrap"><article class="fc-card"><div><div class="fc-card-top"><span class="fc-topic">${E(card.theme)}</span><button id="fcStar" class="fc-star" aria-label="Favorite">${fav?'★':'☆'}</button></div><div class="small" style="margin-top:8px">${E(card.course)} • ${card.difficulty==='easy'?'🟢 Facile':card.difficulty==='hard'?'🔴 Difficile':'🟠 Moyen'} ${st==='again'?'• 🎯 À revoir':st==='known'?'• ✅ Acquise':''}</div>${!revealed?`<div class="fc-question">${E(card.front)}</div><div class="fc-hint">Réfléchis avant de retourner la carte.</div>`:`<div class="fc-question" style="font-size:19px;text-align:left;margin-bottom:10px">${E(card.front)}</div><div class="fc-answer"><b>Réponse</b><ul>${card.answers.map(x=>`<li>${E(x)}</li>`).join('')}</ul></div>${card.explanation?`<div class="fc-explain">💡 ${E(card.explanation)}</div>`:''}`}</div></article></div>${!revealed?`<div class="fc-session-actions"><button id="fcDontKnow" class="btn outline">Je ne sais pas</button><button id="fcReveal" class="btn primary">↻ Voir la réponse</button></div>`:`<div class="fc-ratings"><button class="fc-rate fc-again" data-rate="again">✕<br>À revoir</button><button class="fc-rate fc-learning" data-rate="learning">−<br>En cours</button><button class="fc-rate fc-known" data-rate="known">✓<br>Acquise</button></div>`}</div>`;$('fcQuit').onclick=()=>activeCourse!=='all'?renderCourse(activeCourse):openHome;$('fcStar').onclick=()=>toggleFav(card);if(!revealed){$('fcReveal').onclick=()=>{revealed=true;drawSession(label)};$('fcDontKnow').onclick=()=>{revealed=true;drawSession(label)}}else box.querySelectorAll('[data-rate]').forEach(b=>b.onclick=()=>{setMark(card,b.dataset.rate);index++;revealed=false;if(index>=session.length)finish(label);else drawSession(label)})}
+function drawSession(label){const card=session[index],box=$('fcApp');if(!card){finish();return}const st=statusOf(card.id),fav=favorite(card);box.innerHTML=`<div class="fc-shell"><div class="row" style="gap:10px"><button id="fcQuit" class="btn outline fc-back">×</button><div class="fc-session-bar"><span style="width:${Math.round(index/session.length*100)}%"></span></div><b>${index+1} / ${session.length}</b></div><div class="fc-card-wrap"><article class="fc-card"><div><div class="fc-card-top"><span class="fc-topic">${E(card.theme)}</span><button id="fcStar" class="fc-star" aria-label="Favorite">${fav?'★':'☆'}</button></div><div class="small" style="margin-top:8px">${E(card.course)} • ${E(card.kind||'Question / réponse')} • ${card.difficulty==='easy'?'🟢 Facile':card.difficulty==='hard'?'🔴 Difficile':'🟠 Moyen'} ${st==='again'?'• 🎯 À revoir':st==='known'?'• ✅ Acquise':''}</div>${!revealed?`<div class="fc-question">${E(card.front)}</div><div class="fc-hint">Réfléchis avant de retourner la carte.</div>`:`<div class="fc-question" style="font-size:19px;text-align:left;margin-bottom:10px">${E(card.front)}</div><div class="fc-answer"><b>Réponse</b><ul>${card.answers.map(x=>`<li>${E(x)}</li>`).join('')}</ul></div>${card.explanation?`<div class="fc-explain">💡 ${E(card.explanation)}</div>`:''}`}</div></article></div>${!revealed?`<div class="fc-session-actions"><button id="fcDontKnow" class="btn outline">Je ne sais pas</button><button id="fcReveal" class="btn primary">↻ Voir la réponse</button></div>`:`<div class="fc-ratings"><button class="fc-rate fc-again" data-rate="again">✕<br>À revoir</button><button class="fc-rate fc-learning" data-rate="learning">−<br>En cours</button><button class="fc-rate fc-known" data-rate="known">✓<br>Acquise</button></div>`}</div>`;$('fcQuit').onclick=()=>activeCourse!=='all'?renderCourse(activeCourse):openHome;$('fcStar').onclick=()=>toggleFav(card);if(!revealed){$('fcReveal').onclick=()=>{revealed=true;drawSession(label)};$('fcDontKnow').onclick=()=>{revealed=true;drawSession(label)}}else box.querySelectorAll('[data-rate]').forEach(b=>b.onclick=()=>{setMark(card,b.dataset.rate);index++;revealed=false;if(index>=session.length)finish(label);else drawSession(label)})}
 function finish(label='Session'){const total=session.length,known=sessionMarks.filter(x=>x.mark==='known').length,again=sessionMarks.filter(x=>x.mark==='again').length,learning=total-known-again,pct=total?Math.round(known/total*100):0,box=$('fcApp');box.innerHTML=`<div class="fc-shell"><div class="card fc-result"><div class="fc-result-icon">🎉</div><h2>Série terminée !</h2><div class="small">${E(label)} • ${total} cartes</div><div class="grid" style="margin-top:16px"><div class="stat"><b style="color:#187a3c">${known}</b><span class="small">Acquises</span></div><div class="stat"><b style="color:#8a5b00">${learning}</b><span class="small">En cours</span></div><div class="stat"><b style="color:#b42318">${again}</b><span class="small">À revoir</span></div><div class="stat"><b>${pct}%</b><span class="small">Maîtrisées</span></div></div>${again?'<button id="fcRetry" class="btn primary full" style="margin-top:16px">Revoir mes erreurs</button>':''}<button id="fcDone" class="btn outline full" style="margin-top:9px">Retour aux flashcards</button></div></div>`;if($('fcRetry'))$('fcRetry').onclick=()=>{const ids=new Set(sessionMarks.filter(x=>x.mark==='again').map(x=>x.id));startSession(session.filter(c=>ids.has(c.id)),'Mes erreurs')};$('fcDone').onclick=openHome}
-function inject(){const body=$('v81Body');if(!body||body.querySelector('.fc-revision-entry'))return false;const s=stats(),due=dueCards(),card=document.createElement('div');card.className='card fc-revision-entry';card.innerHTML=`<div class="fc-entry-grid"><div><div class="row" style="justify-content:flex-start"><span class="badge">NOUVEAU</span><b>🗂️ Flashcards</b></div><h3 style="margin:8px 0 5px">Révise autrement qu’avec les QCM</h3><div class="small">Cartes synthétiques par cours, répétition ciblée et suivi À revoir / En cours / Acquise.</div><div class="fc-entry-actions"><span class="fc-pill">${deck.length} cartes</span><span class="fc-pill">${s.mastered}% maîtrisées</span><span class="fc-pill">🎯 ${due.length} à revoir</span><button id="fcOpen" class="btn primary">Ouvrir les flashcards →</button></div></div><div class="fc-entry-icon">▰</div></div>`;const custom=body.querySelector('.vcr-custom');custom?body.insertBefore(card,custom):body.appendChild(card);$('fcOpen').onclick=openHome;return true}
+function inject(){const body=$('v81Body');if(!body||body.querySelector('.fc-revision-entry'))return false;const s=stats(),due=dueCards(),card=document.createElement('div');card.className='card fc-revision-entry';card.innerHTML=`<div class="fc-entry-grid"><div><div class="row" style="justify-content:flex-start"><span class="badge">NOUVEAU</span><b>🗂️ Flashcards</b></div><h3 style="margin:8px 0 5px">Révise autrement qu’avec les QCM</h3><div class="small">Questions de rappel actif par cours : définitions, valeurs, vrai/faux, rôles et étapes.</div><div class="fc-entry-actions"><span class="fc-pill">${deck.length} cartes</span><span class="fc-pill">${s.mastered}% maîtrisées</span><span class="fc-pill">🎯 ${due.length} à revoir</span><button id="fcOpen" class="btn primary">Ouvrir les flashcards →</button></div></div><div class="fc-entry-icon">▰</div></div>`;const custom=body.querySelector('.vcr-custom');custom?body.insertBefore(card,custom):body.appendChild(card);$('fcOpen').onclick=openHome;return true}
 function init(){css();ensure();build();inject();const body=$('v81Body');if(body){const obs=new MutationObserver(()=>{clearTimeout(window.__fcInjectTimer);window.__fcInjectTimer=setTimeout(()=>{build();inject()},30)});obs.observe(body,{childList:true})}window.addEventListener('ifsi:v741-ready',()=>{build();inject()});window.addEventListener('storage',e=>{if(e.key===KEY&&mode==='home')renderHome()});return true}
 let tries=0,t=setInterval(()=>{tries++;if(window.IFSI_V741&&typeof window.IFSI_V741.resourcesForCourse==='function'){clearInterval(t);init()}else if(tries>240){clearInterval(t);init()}},100);
 window.IFSI_V8338_FLASHCARDS={version:V,open:openHome,rebuild:build,getDeck:()=>deck,getStats:()=>stats()};
