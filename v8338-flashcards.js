@@ -88,7 +88,10 @@ function vagueFront(front){
   return !front||front.length<8||
     /que faut-il retenir concernant/.test(f)||
     /dans l['’]exemple du cours/.test(f)||
-    /\b(?:ceci|cela|ci-dessus|ci-dessous|dans ce cas|dans cet exemple)\b/.test(f)||
+    /\b(?:ceci|cela|ci-dessus|ci-dessous|dans ce cas|dans cet exemple|dans le cours|selon le cours)\b/.test(f)||
+    /\b(?:cité(?:e|es|s)?|mentionné(?:e|es|s)?|suivant(?:e|es|s)?|proposé(?:e|es|s)?|indiqué(?:e|es|s)?|présenté(?:e|es|s)?)\b/.test(f)||
+    /\bparmi (?:les|ces) (?:propositions|réponses|éléments)\b/.test(f)||
+    /\bla hiérarchie correcte\b/.test(f)||
     /concernant\s+(?:dans|lesquels?|laquelle|lequel)\b/.test(f)||
     /\b(?:sont|correspond|peut faire appel à)\s*\?$/.test(f)
 }
