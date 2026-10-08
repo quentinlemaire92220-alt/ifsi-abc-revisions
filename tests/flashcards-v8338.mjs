@@ -5,7 +5,7 @@ const meta=JSON.parse(read('build-meta.json'));
 assert.match(meta.version,/^\d+\.\d+(?:\.\d+)?$/,'Version courante invalide');
 assert.match(String(meta.build),/^\d+$/,'Build courant invalide');
 const mod=read('v8338-flashcards.js');
-for(const token of ["const V='8.30.38'","ifsiabc_flashcards_v1","selectQuestions","À revoir","En cours","Acquise","resourcesForCourse","officialSupport","IFSI_V8338_FLASHCARDS"])assert.ok(mod.includes(token),`Flashcards incomplètes: ${token}`);
+for(const token of ["const V='8.30.38'","ifsiabc_flashcards_v1","selectCards","À revoir","En cours","Acquise","resourcesForCourse","officialSupport","IFSI_V8338_FLASHCARDS"])assert.ok(mod.includes(token),`Flashcards incomplètes: ${token}`);
 const index=read('index.html'),sw=read('sw.js');
 assert.ok(index.includes(`./v8338-flashcards.js?v=${meta.build}`),'Module flashcards absent de index.html');
 assert.ok(index.includes(`./v8338-changelog.js?v=${meta.build}`),'Changelog V8.30.38 absent de index.html');
