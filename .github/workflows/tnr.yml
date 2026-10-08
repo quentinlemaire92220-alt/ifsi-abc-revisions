@@ -61,6 +61,9 @@ jobs:
       - name: Inventaire qualité Flashcards
         run: node tests/flashcards-inventory-v8345.mjs
 
+      - name: Vérifier les Flashcards atomiques V8.30.45
+        run: node tests/flashcards-atomic-v8345.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 

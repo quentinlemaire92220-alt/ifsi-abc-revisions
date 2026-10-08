@@ -5,7 +5,7 @@ const meta=JSON.parse(read('build-meta.json'));
 assert.match(meta.version,/^\d+\.\d+(?:\.\d+)?$/,'Version courante invalide');
 assert.match(String(meta.build),/^\d+$/,'Build courant invalide');
 const mod=read('v8338-flashcards.js');
-for(const token of ['pedagogicalCard','definitionCard','roleCard','stepsCard','valueCard','trueFalseCard','genericQuestion',"kind:'Définition'","kind:'Vrai / Faux'","kind:'Valeur à connaître'","kind:'Rôle / fonction'","kind:'Étapes'","id:'fc:'+q.id"])assert.ok(mod.includes(token),`Moteur pédagogique incomplet: ${token}`);
+for(const token of ['pedagogicalCard','definitionCard','roleCard','stepsCard','valueCard','trueFalseCard','genericQuestion',"kind:'Définition'","kind:'Vrai / Faux'","kind:'Valeur à connaître'","kind:'Rôle / fonction'","kind:'Étapes'","qid:q.id"])assert.ok(mod.includes(token),`Moteur pédagogique incomplet: ${token}`);
 assert.ok(!mod.includes('front:cleanFront(q)'),'Les cartes ne doivent plus reprendre directement l’énoncé QCM');
 assert.ok(mod.includes('Qu’est-ce que'),'Formulation définition absente');
 assert.ok(mod.includes('Quelle valeur faut-il retenir'),'Formulation valeurs absente');
