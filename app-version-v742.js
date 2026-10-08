@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.53';
+const VERSION='8.30.54';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Système reproducteur et 5 vocaux disponibles.`;
