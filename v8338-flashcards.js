@@ -143,12 +143,20 @@ function sanitizeContextFront(front){
   x=x.replace(/^Quelles associations\s+(.+?)\s+correspondent\s*\?$/i,'Quelles sont les associations $1 ?');
   return capFirst(x.replace(/\s+/g,' ').trim())
 }
-function answerPairAtom(a){
+function answerPairAtom(a,q){
   const s=String(a||'').trim().replace(/[.;]+$/,'');
-  let m=s.match(/^(.{2,70}?)\s*(?:→|:|=|\s+[–—-]\s+)\s*(.{2,180})$/);
+  let m=s.match(/^(.{1,70}?)\s*(?:→|:|=|\s+[–—-]\s+)\s*(.{2,180})$/);
   if(!m)return null;
-  const left=subjectCase(m[1]),right=subjectCase(m[2]);
+  const left=subjectCase(m[1]),right=subjectCase(m[2]),exp=String(q?.explanation||'').trim(),evidence=[String(q?.question||''),exp,left,right].join(' ');
   if(!left||!right)return null;
+  if(/^[A-ZÀ-Ý]$/i.test(left))return null;
+  if(/^(?:fins?|épais)$/i.test(left)&&/myofilament|actine|myosine/i.test(evidence)){
+    const label=/^fins?$/i.test(left)?'fins':'épais';
+    return{kind:'Association',front:`De quoi sont principalement constitués les myofilaments ${label} ?`,answers:[right]}
+  }
+  if(left.length<=2||/^\d+$/.test(left))return null;
+  const genericOneWord=/^(?:fins?|épais|haut|bas|droite|gauche|antérieur|postérieur|supérieur|inférieur|proximal|distal)$/i.test(left);
+  if(genericOneWord)return null;
   const numeric=/\b\d+(?:[.,]\d+)?\s*(?:%|mmHg|bpm|°C|g\/?L|mg\/?L|mmol\/?L|mL|L\/min|kg|cm|mm|UI|mEq)\b/i.test(right);
   return{kind:numeric?'Valeur à connaître':'Association',front:numeric?`Quelle est la valeur de ${lcFirst(left)} ?`:`À quoi correspond « ${left} » ?`,answers:[right]}
 }
@@ -182,14 +190,14 @@ function atomicFromAnswers(q,t){
   if(/\b(?:hiérarchie correcte|ordre correct|ordre d['’]organisation)\b/i.test(t))return[];
   const atoms=[];
   for(const a of good){
-    const z=answerPairAtom(a)||answerSentenceAtom(a);
+    const z=answerPairAtom(a,q)||answerSentenceAtom(a);
     if(z&&!vagueFront(z.front))atoms.push({...z,explanation:exp,atomic:true})
   }
   if(atoms.length>=2)return atoms;
   const subjectMatch=t.match(/(?:s['’]appliquent|concernent|à propos de|concernant)\s+(?:au|à la|aux|le|la|les)?\s*([^?:,]+?)(?:\s+(?:dans|selon|du|de la)\s+(?:le )?(?:cours|support)|\s*\?|\s*:|$)/i);
   const subject=subjectCase(subjectMatch?.[1]||'');
   const roles=good.filter(a=>/^Participation à\s+/i.test(a)).map(a=>subjectCase(a.replace(/^Participation à\s+/i,'')));
-  const values=good.map(answerPairAtom).filter(Boolean).filter(x=>x.kind==='Valeur à connaître');
+  const values=good.map(a=>answerPairAtom(a,q)).filter(Boolean).filter(x=>x.kind==='Valeur à connaître');
   if(subject&&roles.length>=2)atoms.push({kind:'Rôle / fonction',front:`À quels processus ${lcFirst(subject)} participe-t-il ?`,answers:roles,explanation:exp,atomic:true});
   for(const v of values)atoms.push({...v,explanation:exp,atomic:true});
   return atoms.length>=2?atoms:[]
