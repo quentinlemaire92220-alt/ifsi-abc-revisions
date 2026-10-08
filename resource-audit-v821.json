@@ -1,5 +1,5 @@
 {
-  "version": "8.30.49",
+  "version": "8.30.50",
   "auditedAt": "2026-10-08",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.49 : audit des flashcards et ergonomie des paramètres, données pédagogiques inchangées.",
+  "note": "V8.30.50 : lecteur vocal natif, catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 44,
     "sheets": 51,
