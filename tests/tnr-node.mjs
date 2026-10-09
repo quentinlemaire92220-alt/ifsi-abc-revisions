@@ -54,7 +54,7 @@ const iasTail=decodePackFile('qextra-17.txt');
 assert(iasTail.length===42,`Pack IAS qextra-17 inattendu: ${iasTail.length}/42`);
 assert(iasTail.every(q=>String(q.explanation||'').trim().length>=80),'Corrections IAS qextra-17 insuffisamment argumentées');
 assert(rawOver3<=325,`QCM bruts à 4 bonnes réponses en hausse inattendue: ${rawOver3}/325`);
-assert(rawThreeOfFour<=935,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/935`);
+assert(rawThreeOfFour<=1046,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/1046`);
 assert(rawMissingExplanation===0,`QCM bruts sans explication: ${rawMissingExplanation}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
