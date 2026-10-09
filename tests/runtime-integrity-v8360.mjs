@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const sw=read('sw.js'),index=read('index.html'),planning=read('planning-v1.js');
+const maths=JSON.parse(read('calculs-resources-v1.json'));
+const sheets=JSON.parse(read('sheets-3.json'));
+const active=sheets.filter(x=>x.courseId==='calculs_doses_mathematiques');
+assert.equal(maths.sheets.length,0,'Les anciennes fiches ne doivent plus être injectées dans la PWA');
+assert.equal(active.length,9,'Les huit infographies et la fiche maître sont attendues');
+assert.match(sw,/validQuestions\(await decodePack\(name\),name\)/,'Un pack QCM peut contenir des questions invalides isolées');
+assert.match(sw,/v8360-changelog\.js/,'Le changelog courant doit être dans le cache PWA');
+assert.ok(!sw.includes('v76-home.js?v=761'),'Ancien cache de la page d’accueil');
+assert.ok(index.includes('v8360-changelog.js?v=8360'),'Changelog manquant dans index.html');
+assert.match(planning,/2026-10-08[^\n]*type:'Annulé'[^\n]*Pharmacologie des antalgiques/,'Séance de pharmacologie du 8 octobre non corrigée');
+assert.ok(planning.includes("e.type!=='Annulé'"),'Les séances annulées doivent être exclues du calendrier ICS');
+console.log('✅ Maths sans doublons, QCM filtrés individuellement, cache et planning contrôlés');
