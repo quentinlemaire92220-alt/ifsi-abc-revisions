@@ -1,0 +1,149 @@
+[
+  {
+    "id": "cdm2_110",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "number": 110,
+    "question": "Une étiquette indique 125 µg. Exprime cette masse en mg.",
+    "choices": [
+      "0,01 mg",
+      "12,5 mg",
+      "125 mg",
+      "1,25 mg",
+      "0,125 mg"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 mg = 1 000 µg. Conversion exacte : 125 ÷ 1 000 = 0,125 mg. Ne pas arrondir à 0,12 mg : la question demande une conversion sans consigne d'arrondi."
+  },
+  {
+    "id": "cdm2_112",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "number": 112,
+    "question": "Convertis 75 mL en litres.",
+    "choices": [
+      "7,5 L",
+      "0,75 L",
+      "0 L",
+      "0,075 L",
+      "0,01 L"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 L = 1 000 mL. Pour passer de mL à L, on divise par 1 000 : 75 ÷ 1 000 = 0,075 L. Cette valeur est exacte ; 0,07 L ne représente que 70 mL."
+  },
+  {
+    "id": "cdm2_224",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "number": 224,
+    "question": "Prescription mathématique : 0,5 g/L pour une poche de 250 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "0,25 g",
+      "0,06 g",
+      "0,5 g",
+      "0,125 g",
+      "1,25 g"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "250 mL = 0,25 L. Masse = concentration × volume = 0,5 g/L × 0,25 L = 0,125 g, soit 125 mg. Aucun arrondi n'est demandé : 0,12 g est incorrect."
+  },
+  {
+    "id": "cdm_062",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dilutions et reconstitutions",
+    "difficulty": "easy",
+    "number": 62,
+    "question": "Pour une poche de base de 500 mL, une prescription mathématique fictive indique 2 g de NaCl par litre. Les ampoules de NaCl sont dosées à 20 % (m/V). Quelle masse de NaCl et quel volume de solution faut-il calculer pour cette poche ?",
+    "choices": [
+      "1 g de NaCl ; 5 mL",
+      "0 g de NaCl ; 5 mL",
+      "0,1 g de NaCl ; 5 mL",
+      "10 g de NaCl ; 5 mL",
+      "2 g de NaCl ; 5 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "1 g de NaCl ; 5 mL Calcul : 2 g/L × 0,5 L = 1 g ; 20 % = 0,2 g/mL ; 1/0,2 = 5 mL. Autre méthode / vérification : 20 % = 2 g/10 mL : 1 g correspond à 5 mL."
+  },
+  {
+    "id": "cdm_063",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dilutions et reconstitutions",
+    "difficulty": "easy",
+    "number": 63,
+    "question": "Exercice théorique : une poche de base de 500 mL reçoit 5 mL de solution de KCl et 5 mL de solution de NaCl, sans retrait et avec des volumes supposés additifs. Quels sont le volume final et les débits sur 24 h (facteur de perfusion : 20 gouttes/mL) ?",
+    "choices": [
+      "520 mL ; 21,25 mL/h ; ≈ 7 gouttes/min",
+      "510 mL ; 21,25 mL/h ; ≈ 7 gouttes/min",
+      "51 mL ; 21,25 mL/h ; ≈ 7 gouttes/min",
+      "1 020 mL ; 21,25 mL/h ; ≈ 7 gouttes/min",
+      "5 100 mL ; 21,25 mL/h ; ≈ 7 gouttes/min"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "510 mL ; 21,25 mL/h ; ≈ 7 gouttes/min Calcul : Volume final = 500 + 5 + 5 = 510 mL ; 510/24 = 21,25 mL/h ; 510 × 20/1 440 = 7,083 ≈ 7 gouttes/min. Autre méthode / vérification : 21,25 mL/h × 20/60 = 7,083 ≈ 7 gouttes/min."
+  },
+  {
+    "id": "cdm_072",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Calculs de doses médicamenteuses",
+    "difficulty": "easy",
+    "number": 72,
+    "question": "Une solution buvable fictive est dosée à 4 % (m/V), soit 40 mg/mL, et son compte-gouttes délivre 40 gouttes/mL. Une prise de 60 gouttes représente quel volume et quelle masse active ?",
+    "choices": [
+      "15,0 mL ; 60 mg",
+      "2,5 mL ; 60 mg",
+      "0,1 mL ; 60 mg",
+      "3,0 mL ; 60 mg",
+      "1,5 mL ; 60 mg"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1,5 mL ; 60 mg Calcul : V = 60/40 = 1,5 mL ; dose = 1,5 × 40 mg/mL = 60 mg. Autre méthode / vérification : Le flacon contient 1 200 mg dans 1 200 gouttes : 1 mg/goutte ; 60 gouttes = 60 mg."
+  },
+  {
+    "id": "cdm_073",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Calculs de doses médicamenteuses",
+    "difficulty": "easy",
+    "number": 73,
+    "question": "Une solution buvable fictive est dosée à 4 % (m/V), soit 40 mg/mL. Chaque flacon de 30 mL contient 1 200 gouttes (40 gouttes/mL). À raison de 60 gouttes par prise, 3 fois par jour, quelle est la masse active quotidienne et combien de jours COMPLETS couvrent 2 flacons ?",
+    "choices": [
+      "190 mg/jour ; 13 jours complets",
+      "1 800 mg/jour ; 13 jours complets",
+      "360 mg/jour ; 13 jours complets",
+      "18 mg/jour ; 13 jours complets",
+      "180 mg/jour ; 13 jours complets"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "180 mg/jour ; 13 jours complets Calcul : Chaque prise = 60 mg ; 3 × 60 = 180 mg/jour. Deux flacons = 2 × 1 200 = 2 400 gouttes ; 180 gouttes/jour ; 2 400/180 = 13,33 : 13 jours complets. Autre méthode / vérification : Deux flacons contiennent 2 × 1 200 = 2 400 mg ; 2 400/180 = 13,33 jours. Attention : Ne pas arrondir 13,33 à 14 jours COMPLETS : il reste 60 gouttes après 13 jours."
+  }
+]

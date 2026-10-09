@@ -82,6 +82,9 @@ jobs:
       - name: Vérifier le lecteur vocal natif V8.30.50
         run: node tests/vocal-player-v8350.mjs
 
+      - name: Vérifier les 226 QCM de maths, leurs résultats exacts et les 10 niveaux
+        run: node tests/math-qcm-v8363.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.62",
+  "version": "8.30.63",
   "auditedAt": "2026-10-09",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.59 : remplacement des fiches de mathématiques historiques par 8 infographies pédagogiques dans Drive, conservation de la fiche maître et des QCM.",
+  "note": "V8.30.63 : corrections pédagogiques de sept QCM de mathématiques, harmonisation du parcours à dix niveaux ; les huit infographies, 55 fiches, 155 infographies et les QCM historiques restent présents.",
   "expectedTotals": {
     "courses": 45,
     "sheets": 55,
