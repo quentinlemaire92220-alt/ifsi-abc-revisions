@@ -264,7 +264,115 @@ function pedagogicalCard(q){
   if(!answers.length||!answersMatchQuestion(card.front,answers))return null;
   return{...card,answers,explanation:sanitizeExplanation(card.explanation??exp)}
 }
+// Révision atomique ciblée : conserver les réponses originales sans ajout scientifique.
+const CURATED_ATOMIC_FRONTS={
+  "diagnostic_virologie_022": [
+    [
+      "contaminations",
+      "Quel type d'erreur une contamination peut-elle provoquer lors d'une PCR ?"
+    ],
+    [
+      "ce que",
+      "Que faut-il connaître avant de réaliser une PCR ciblée ?"
+    ],
+    [
+      "inhibiteurs",
+      "Quel type d'erreur un inhibiteur de PCR peut-il provoquer ?"
+    ]
+  ],
+  "immunitaire_033": [
+    [
+      "CPA",
+      "Comment une cellule présentatrice d'antigène participe-t-elle à l'activation des lymphocytes ?"
+    ],
+    [
+      "cellules mémoire",
+      "Quels lymphocytes peuvent former des cellules mémoire après activation ?"
+    ]
+  ],
+  "v820_digest2_008": [
+    [
+      "métabolisme",
+      "À quel ensemble de transformations biochimiques le foie participe-t-il ?"
+    ],
+    [
+      "bile",
+      "Quelle substance digestive le foie sécrète-t-il ?"
+    ],
+    [
+      "stockage",
+      "Quel type de fonction le foie assure-t-il pour les réserves de l'organisme ?"
+    ]
+  ],
+  "v820_loco_042": [
+    [
+      "supra-épineux",
+      "À quel mouvement du bras participe le muscle supra-épineux ?"
+    ],
+    [
+      "infra-épineux",
+      "Quel mouvement est facilité par le muscle infra-épineux ?"
+    ],
+    [
+      "sous-scapulaire",
+      "Où se situe le muscle sous-scapulaire par rapport à la scapula ?"
+    ]
+  ],
+  "droit_intro_060": [
+    [
+      "juge du droit",
+      "Sur quoi porte principalement le contrôle de la Cour de cassation ?"
+    ],
+    [
+      "rejet",
+      "Quel est l'effet d'un rejet de pourvoi en cassation ?"
+    ],
+    [
+      "cassation peut",
+      "Quelle suite procédurale peut intervenir après une cassation ?"
+    ]
+  ],
+  "droit_intro_049": [
+    [
+      "unifier",
+      "À quoi contribue la Cour de cassation dans l'interprétation du droit ?"
+    ],
+    [
+      "assemblée plénière",
+      "Quelle formation de la Cour de cassation examine notamment les questions de principe ?"
+    ],
+    [
+      "chambre mixte",
+      "Quelle formation de la Cour de cassation peut intervenir si plusieurs chambres sont concernées ?"
+    ]
+  ],
+  "repro_025": [
+    [
+      "ovocyte primaire",
+      "Quel type d'ovocyte contient un follicule primordial ?"
+    ],
+    [
+      "dès la naissance",
+      "À partir de quel moment les follicules primordiaux sont-ils présents ?"
+    ],
+    [
+      "cellules folliculaires",
+      "Comment les cellules folliculaires entourent-elles l'ovocyte dans un follicule primordial ?"
+    ]
+  ]
+};
+function curatedAtomicCards(q){
+ const definitions=CURATED_ATOMIC_FRONTS[q?.id];if(!definitions)return[];
+ const originals=correctAnswers(q),out=[];
+ for(const [needle,front] of definitions){
+  const matches=originals.filter(a=>String(a).toLocaleLowerCase('fr').includes(String(needle).toLocaleLowerCase('fr')));
+  if(matches.length!==1)return[];
+  out.push({kind:'Notion précise',front,answers:matches,explanation:q.explanation||'',atomic:true});
+ }
+ return out;
+}
 function atomicCards(q){
+ const curated=curatedAtomicCards(q);if(curated.length>=2)return curated;
   const t=cleanQuestion(q),good=correctAnswers(q),subjectParts=subjectAtomicCards(q,t),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
   if(subjectParts.length)return subjectParts.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
   const cleanT=stripSourceMeta(t),subjectMatch=cleanT.match(/(?:concernant|à propos de)\s+(?:au|à la|aux|le|la|les)?\s*([^?:,]+?)(?:\s*\?|\s*:|$)/i),roleAnswers=correctAnswers(q).map(compactAnswer).filter(a=>/^Participation à\s+/i.test(a)).map(a=>subjectCase(a.replace(/^Participation à\s+/i,'')));
