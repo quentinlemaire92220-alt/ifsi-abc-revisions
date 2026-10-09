@@ -51,7 +51,7 @@ function openBoards(id){
  window.IFSI_V82?.showAnatomy?.()
 }
 function resultButton(x){
- const r=x.r||{};return `<button class="v813-course" type="button" data-v813course="${E(x.c.id)}"><b>${E(x.c.label)}</b><small>${r.questions?.length||0} QCM • ${r.sheets?.length||0} fiche${(r.sheets?.length||0)>1?'s':''} • ${r.infographics?.length||0} info • ${r.vocals?.length||0} vocal${(r.vocals?.length||0)>1?'aux':''}</small></button>`
+ const r=x.r||{};return `<button class="v813-course" type="button" data-v813course="${E(x.c.id)}"><b>${E(x.c.label)}</b><small>${r.questions?.length||0} QCM • ${r.sheets?.length||0} fiche${(r.sheets?.length||0)>1?'s':''} • ${r.infographics?.length||0} info • ${r.vocals?.length||0} ${(r.vocals?.length||0)>1?'vocaux':'vocal'}</small></button>`
 }
 function renderResults(){
  const input=$('v813Search'),box=$('v813Results'),quick=$('v813Quick');if(!box||!input)return;
@@ -75,7 +75,7 @@ function mount(){
  $('v813Search').oninput=renderResults;
  renderResults();return true
 }
-function apply(){css();mount();$('v86Settings')?.remove()}
+function apply(){css();mount();renderResults();$('v86Settings')?.remove()}
 let tries=0;const t=setInterval(()=>{tries++;apply();if($('v86Tools')?.dataset.v813==='1'||tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>requestAnimationFrame(apply));
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
