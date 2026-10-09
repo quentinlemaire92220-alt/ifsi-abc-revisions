@@ -82,6 +82,9 @@ jobs:
       - name: Vérifier le lecteur vocal natif V8.30.50
         run: node tests/vocal-player-v8350.mjs
 
+      - name: Audit pédagogique mathématiques (lecture seule)
+        run: node tests/audit-maths-coverage-20261009.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
