@@ -98,7 +98,7 @@ const courseStats=courses.map(course=>{
 }).filter(x=>x.qcmCount>0);
 const top=courseStats.map(x=>({...x,total:x.generatedCards,issues:x.rewrite+x.split+x.reject}))
   .sort((a,b)=>b.issues-a.issues||b.generatedCards-a.generatedCards).slice(0,20);
-const sample=o=>o.slice(0,30).map(c=>({id:c.qid,course:c.course,theme:c.theme,front:c.front,answers:c.answers,reasons:c.reasons}));
+const sample=o=>o.slice(0,120).map(c=>({id:c.qid,course:c.course,theme:c.theme,front:c.front,answers:c.answers,reasons:c.reasons}));
 const report={
   sourceFiles:files.length,
   rawRows:all.length,
