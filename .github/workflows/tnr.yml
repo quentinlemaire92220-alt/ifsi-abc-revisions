@@ -106,5 +106,8 @@ jobs:
       - name: Audit automatique Drive ↔ application
         run: node tests/resource-sync-v821.mjs
 
+      - name: Vérifier les 8 fiches de mathématiques infographiques
+        run: node tests/math-infographics-v8359.mjs
+
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs
