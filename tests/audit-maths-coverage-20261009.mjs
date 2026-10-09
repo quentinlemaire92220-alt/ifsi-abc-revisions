@@ -5,12 +5,22 @@ import zlib from 'node:zlib';
 const read = p=>fs.readFileSync(p,'utf8');
 const parse = p=>JSON.parse(read(p));
 function gzipBody(raw) {let p=10, flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
+function parsePackText(txt){
+ try{return JSON.parse(txt)}
+ catch(first){
+  const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');
+  const parts=body.split(/}\s*,\s*\{"id":/),recovered=[];
+  for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q?.id)recovered.push(q)}catch{}}
+  if(recovered.length)return recovered;
+  throw first;
+ }
+}
 function decode(p) {
  const src=read(p).trim();
- if(src.startsWith('[')||src.startsWith('{')){const v=JSON.parse(src);return Array.isArray(v)?v:v.questions||[]}
+ if(src.startsWith('[')||src.startsWith('{')){const v=parsePackText(src);return Array.isArray(v)?v:v.questions||[]}
  const raw=Buffer.from(src,'base64');
  const txt=(raw[0]===31&&raw[1]===139?(()=>{try{return zlib.gunzipSync(raw)}catch{return zlib.inflateRawSync(gzipBody(raw))}})():raw).toString('utf8');
- const v=JSON.parse(txt);return Array.isArray(v)?v:v.questions||[];
+ const v=parsePackText(txt);return Array.isArray(v)?v:v.questions||[];
 }
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
 const keep=q=>!((q.id!=='pharmaco_031'&&schemaRegex.test(q.question||''))||(/\brep[eè]re\b/i.test(q.question||'')&&/(association|associer|structure|lettre)/i.test(q.question||'')));
