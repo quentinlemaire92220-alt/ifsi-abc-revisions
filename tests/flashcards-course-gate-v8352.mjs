@@ -11,7 +11,12 @@ assert.ok(Array.isArray(report.courseStats),'Statistiques par cours absentes de 
 
 const MAX_REJECT_RATE=25;
 const MIN_CARDS_FOR_RATE=4;
+const MAX_TOTAL_ISSUES=140;
+const MAX_TOTAL_REJECTS=20;
+const totalIssues=report.counts.rewrite+report.counts.split+report.counts.reject;
 const failures=[];
+if(totalIssues>MAX_TOTAL_ISSUES)failures.push(`Dette Flashcards en hausse: ${totalIssues}/${MAX_TOTAL_ISSUES}`);
+if(report.counts.reject>MAX_TOTAL_REJECTS)failures.push(`Flashcards rejetées en hausse: ${report.counts.reject}/${MAX_TOTAL_REJECTS}`);
 const warnings=[];
 
 for(const c of report.courseStats){
@@ -32,6 +37,7 @@ for(const c of report.courseStats){
 console.log('FLASHCARD_COURSE_GATE');
 console.log(JSON.stringify({
   coursesChecked:report.courseStats.length,
+  totalIssues,maxTotalIssues:MAX_TOTAL_ISSUES,totalRejected:report.counts.reject,
   maxRejectRate:MAX_REJECT_RATE,
   minCardsForRate:MIN_CARDS_FOR_RATE,
   failures,
