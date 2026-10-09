@@ -336,7 +336,16 @@ const FLASHCARD_REWRITES={
 "repro_025": "Quelles sont les caractéristiques d'un follicule primordial ?",
 "repro_033": "Quelles sont les caractéristiques de la phase sécrétoire du cycle menstruel ?"
 };
-const OMIT_FROM_FLASHCARDS=new Set(["v820_epist_025","v820_a1p4_033","v820_arthrose_039","v820_histoire_018"]);
+const OMIT_FROM_FLASHCARDS=new Set(["v820_histoire_048","v820_ethique_043","v820_epist_025","v820_a1p4_033","v820_arthrose_039","v820_histoire_018"]);
+function revisionAnswers(qid,items){
+ const out=[...(items||[])];
+ if(qid==='cellules_077'){
+  const order=[/potentiel d’action présynaptique/i,/entrée de calcium/i,/exocytose du neurotransmetteur/i];
+  return [...out].sort((a,b)=>order.findIndex(r=>r.test(a))-order.findIndex(r=>r.test(b)));
+ }
+ if(qid==='diagnostic_virologie_006')return out.map(a=>a.replace(/\. Prélèvements, transport et prescription\s*$/i,'.'));
+ return out;
+}
 function revisionExplanation(qid,text){
  const grounded={
   v820_ias_083:'Deux doses sont retenues pour le schéma vaccinal mentionné chez le soignant non immunisé ; vérifier les recommandations en vigueur.',
@@ -345,6 +354,84 @@ function revisionExplanation(qid,text){
  };
  return grounded[qid]||text;
 }
+const ADDITIONAL_FRONTS={
+  "cellules_052": "Quelles sont trois fonctions principales du sang ?",
+  "cellules_077": "Quelles étapes conduisent à la libération d’un neurotransmetteur dans une synapse chimique ?",
+  "cellules_079": "Quels sont les trois types de tissu musculaire humain ?",
+  "cellules_045": "Quelles sont les principales fonctions de la peau ?",
+  "cellules_004": "Quels sont les principaux constituants de la membrane plasmique ?",
+  "cellules_035": "Quelles sont les quatre classes fondamentales de tissus humains ?",
+  "parasites_champignons_006": "Quelles caractéristiques permettent de décrire les protozoaires ?",
+  "parasites_champignons_030": "Quels protozoaires présentent un intérêt médical chez l’être humain ?",
+  "parasites_champignons_038": "Quelles sont les trois morphologies principales des champignons ?",
+  "parasites_champignons_046": "Quelles caractéristiques géographiques et microbiologiques ont les champignons dimorphiques ?",
+  "parasites_champignons_043": "Quelles levures d’intérêt médical peut-on citer ?",
+  "genetique_028": "Quels effets une insertion ou une délétion de nucléotides peut-elle avoir sur le cadre de lecture ?",
+  "genetique_038": "Quels syndromes peuvent être associés aux anomalies 47,XXX, 47,XXY et 47,XYY ?",
+  "niveaux_organisation_033": "Quelles sont les trois grandes régions anatomiques du corps humain ?",
+  "niveaux_organisation_017": "Quels organes sont des organes pleins ?",
+  "physiopath_infections_011": "Quelles barrières physico-chimiques participent à la défense contre les infections ?",
+  "physiopath_infections_002": "Quels progrès ont contribué au recul des maladies infectieuses au XXe siècle ?",
+  "physiopath_infections_009": "Quelles sont les principales défenses non spécifiques de l’organisme ?",
+  "physiopath_infections_043": "Quels facteurs environnementaux peuvent influencer le risque infectieux ?",
+  "physiopath_infections_044": "Quels facteurs liés à l’hôte influencent sa sensibilité aux infections ?",
+  "diagnostic_virologie_006": "Quelles sont les finalités principales des tests virologiques ?",
+  "diagnostic_virologie_008": "Quels prélèvements biologiques peuvent servir aux examens virologiques ?",
+  "diagnostic_virologie_035": "Dans quelles situations cliniques utilise-t-on une PCR quantitative pour le suivi de la charge virale ?",
+  "virus_025": "Quels virus peuvent illustrer la diversité des virus pathogènes ?",
+  "virus_037": "Quels virus peuvent être impliqués dans des infections latentes ?",
+  "virus_032": "Quelles infections virales aiguës sont généralement résolutives ?",
+  "virus_006": "Quelles sont les principales formes de capsides virales ?",
+  "virus_013": "Quelles ressources de la cellule hôte un virus utilise-t-il pour se multiplier ?",
+  "endocrinien_003": "Quelles fonctions de l’organisme sont régulées par le système endocrinien ?",
+  "resp_031": "Quels volumes respiratoires mobilisables constituent la capacité vitale ?",
+  "nervous_021": "Quelles sont les grandes fonctions du tronc cérébral ?",
+  "nervous_045": "Quels sont les différents niveaux de mémoire selon leur durée ?",
+  "v820_neuinf_033": "Quelles situations nécessitent une vérification avant de réaliser une ponction lombaire ?",
+  "v820_neuinf_030": "Quels signes de focalisation neurologique faut-il rechercher ?",
+  "v820_neuinf_020": "Quels symptômes peuvent accompagner un syndrome méningé ?",
+  "v820_digest2_008": "Quelles fonctions essentielles assure le foie ?",
+  "v820_digest2_024": "Quelles sont les trois phases de la déglutition ?",
+  "v820_loco_005": "Quels os illustrent les catégories d’os longs, plats et irréguliers ?",
+  "v820_loco_042": "Quels rôles et localisations peut-on associer à des muscles de la coiffe des rotateurs ?",
+  "v820_trauma_040": "Quels signes peuvent faire évoquer un choc hémorragique ?",
+  "v820_trauma_056": "Quels signes précoces peuvent faire suspecter un syndrome des loges ?",
+  "v820_trauma_005": "Quelles trois catégories de complications immédiates recherche-t-on après un traumatisme ?",
+  "v820_trauma_017": "Quels signes d’alerte faut-il signaler chez une personne porteuse d’un plâtre ?",
+  "v820_trauma_067": "Quels facteurs ou circonstances peuvent favoriser une rupture du tendon d’Achille ?",
+  "v820_trauma_073": "Quels signes cliniques peuvent évoquer une luxation de l’épaule ?",
+  "v820_trauma_022": "Quelles complications peut entraîner un décubitus prolongé ?",
+  "v820_trauma_020": "Quels signes peuvent faire suspecter une embolie pulmonaire ?",
+  "v820_histoire_028": "Quelles étapes étaient demandées pour obtenir un brevet de capacité infirmier ?",
+  "v820_histoire_047": "Quelles institutions interviennent dans l’organisation de la profession infirmière ?",
+  "v820_a1p4_029": "Quelles sont les trois dimensions du modèle clinique trifocal ?",
+  "v820_ethique_026": "Quelles démarches infirmières respectent le refus de soins d’un patient capable de décider ?",
+  "v820_ethique_033": "Quels dispositifs peuvent constituer une contention selon leur utilisation ?",
+  "v820_ethique_021": "Quels éléments permettent d’apprécier l’autonomie décisionnelle d’un patient refusant une transfusion ?",
+  "v820_ethique_010": "Quelles sont les trois dimensions de la réflexion éthique infirmière ?",
+  "v820_douleur_007": "Citez trois composantes permettant de décrire la douleur.",
+  "v820_douleur_026": "Quelles mesures non médicamenteuses peuvent être proposées pour soulager la douleur selon la situation ?",
+  "v820_brules_019": "Citez trois principes de prise en charge d’une personne brûlée.",
+  "v820_cut_042": "Quels signes peuvent évoquer un herpès oculaire ?",
+  "v820_cut_023": "Quels paramètres constituent le score qSOFA ?",
+  "v820_cut_017": "Quels facteurs favorisent la dermohypodermite bactérienne non nécrosante (DHDNN) ?",
+  "v820_arthrose_002": "Quels rôles assurent les différentes structures d’une articulation synoviale ?",
+  "v820_rhuminf_020": "Quelles atteintes extra-articulaires peuvent accompagner une spondyloarthrite ?",
+  "v820_rhuminf_014": "Quels signes peuvent évoquer une arthrite inflammatoire de plusieurs articulations des mains ?",
+  "v820_rhuminf_004": "Quelles phases décrivent l’inflammation locale et son évolution possible ?",
+  "v820_micro_021": "Quelles articulations peuvent être touchées par la chondrocalcinose ?",
+  "v820_micro_032": "Quels chiffres de fréquence et de risque liés à l’ostéoporose étaient rapportés dans les données étudiées ?",
+  "v820_cps_007": "Quelles sont les trois familles de compétences psychosociales (CPS) ?",
+  "pulm_bact_003": "Quelles molécules participent aux défenses humorales des voies respiratoires ?",
+  "ist_hors_vih_017": "Quels symptômes chez l’homme peuvent évoquer une infection sexuellement transmissible (IST) ?",
+  "ist_hors_vih_029": "Quelles complications de Chlamydia trachomatis peuvent survenir chez l’homme ?",
+  "droit_intro_020": "Quelles catégories de normes juridiques complètent les lois et règlements ?",
+  "repro_037": "Quels liens unissent l’axe hypothalamo-hypophyso-ovarien et ses effets sur le cycle ?",
+  "repro_014": "Quelles sont les trois parties anatomiques de l’utérus ?",
+  "repro_007": "Quelles sont les trois portions anatomiques de l’urètre masculin ?",
+  "v820_brules_026": "Quelles doses de Ringer lactate sont proposées selon la période de réanimation et la surface corporelle brûlée ?",
+  "physiopath_infections_048": "Quelles notions décrivent les agents, la transmission et les défenses contre les infections ?"
+};
 function revisionFront(qid,front){
  const raw=String(front||'');
  if(qid==='homeostasie_027'){
@@ -352,9 +439,9 @@ function revisionFront(qid,front){
   if(/Conduction/i.test(raw))return 'En thermorégulation, comment fonctionne le transfert de chaleur par conduction ?';
   if(/Évaporation/i.test(raw))return 'En thermorégulation, comment l’évaporation permet-elle une perte de chaleur ?';
  }
- return FLASHCARD_REWRITES[qid]||raw;
+ return ADDITIONAL_FRONTS[qid]||FLASHCARD_REWRITES[qid]||raw;
 }
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:revisionFront(q.id,contextualizeFront(p.front,q)),answers:p.answers,explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:revisionFront(q.id,contextualizeFront(p.front,q)),answers:revisionAnswers(q.id,p.answers),explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}
