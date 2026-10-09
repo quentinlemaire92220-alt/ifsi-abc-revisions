@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "title": "Vocabulaire médical IFSI",
+  "updatedAt": "2026-10-09",
+  "sourceNote": "Glossaire pédagogique transversal à valider avec les supports officiels des intervenants ; ne constitue pas une transcription de cours.",
+  "entries": [
+    {
+      "id": "hypoxie",
+      "term": "Hypoxie",
+      "theme": "Respiration et oxygénation",
+      "definition": "Diminution de l'oxygène disponible au niveau des tissus.",
+      "distinction": "Hypoxémie : baisse de l'oxygène dans le sang artériel.",
+      "etymologie": "hypo- : insuffisance ; -oxie : oxygène",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypoxemie",
+      "term": "Hypoxémie",
+      "theme": "Respiration et oxygénation",
+      "definition": "Diminution de l'oxygénation du sang artériel, évaluée notamment par la PaO₂.",
+      "distinction": "Hypoxie : insuffisance d'oxygène dans les tissus.",
+      "etymologie": "hypo- : insuffisance ; -émie : sang",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "anoxie",
+      "term": "Anoxie",
+      "theme": "Respiration et oxygénation",
+      "definition": "Absence ou quasi-absence d'oxygène disponible dans un tissu.",
+      "distinction": "Hypoxie : diminution sans absence complète.",
+      "etymologie": "an- : absence ; -oxie : oxygène",
+      "courseIds": [
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dyspnee",
+      "term": "Dyspnée",
+      "theme": "Respiration et oxygénation",
+      "definition": "Sensation subjective de gêne ou de difficulté à respirer.",
+      "distinction": "Tachypnée : respiration plus rapide, sans gêne nécessaire.",
+      "etymologie": "dys- : difficulté ; -pnée : respiration",
+      "courseIds": [
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "tachypnee",
+      "term": "Tachypnée",
+      "theme": "Respiration et oxygénation",
+      "definition": "Augmentation de la fréquence respiratoire par rapport à la normale.",
+      "distinction": "Dyspnée : sensation de gêne respiratoire.",
+      "etymologie": "tachy- : rapide ; -pnée : respiration",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bradypnee",
+      "term": "Bradypnée",
+      "theme": "Respiration et oxygénation",
+      "definition": "Diminution anormale de la fréquence respiratoire.",
+      "distinction": "Apnée : arrêt transitoire de la respiration.",
+      "etymologie": "brady- : lent ; -pnée : respiration",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "apnee",
+      "term": "Apnée",
+      "theme": "Respiration et oxygénation",
+      "definition": "Interruption temporaire de la respiration.",
+      "distinction": "Bradypnée : respiration présente, mais ralentie.",
+      "etymologie": "a- : absence ; -pnée : respiration",
+      "courseIds": [
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cyanose",
+      "term": "Cyanose",
+      "theme": "Respiration et oxygénation",
+      "definition": "Coloration bleuâtre de la peau ou des muqueuses, souvent liée à une augmentation de l'hémoglobine désoxygénée.",
+      "distinction": "L'absence de cyanose n'exclut pas une hypoxémie.",
+      "etymologie": "cyan- : bleu",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypercapnie",
+      "term": "Hypercapnie",
+      "theme": "Respiration et oxygénation",
+      "definition": "Élévation anormale de la pression partielle de dioxyde de carbone (CO₂) dans le sang artériel.",
+      "distinction": "Hypoxémie : diminution de l'oxygène artériel.",
+      "etymologie": "hyper- : excès ; -capnie : CO₂",
+      "courseIds": [
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ischemie",
+      "term": "Ischémie",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Diminution de l'apport sanguin à un tissu, provoquant un apport insuffisant en oxygène et nutriments.",
+      "distinction": "Infarctus : destruction d'un tissu par ischémie prolongée.",
+      "etymologie": "isch- : retenir ; -émie : sang",
+      "courseIds": [
+        "systeme_cardiovasculaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "infarctus",
+      "term": "Infarctus",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Nécrose d'un tissu provoquée le plus souvent par une interruption prolongée de sa vascularisation.",
+      "distinction": "Ischémie : réduction du débit sanguin, pas forcément irréversible.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_cardiovasculaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "tachycardie",
+      "term": "Tachycardie",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Fréquence cardiaque anormalement élevée pour le contexte et l'âge.",
+      "distinction": "Bradycardie : fréquence cardiaque anormalement basse.",
+      "etymologie": "tachy- : rapide ; -cardie : cœur",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bradycardie",
+      "term": "Bradycardie",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Fréquence cardiaque anormalement basse pour le contexte et l'âge.",
+      "distinction": "Tachycardie : fréquence cardiaque élevée.",
+      "etymologie": "brady- : lent ; -cardie : cœur",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypotension",
+      "term": "Hypotension",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Pression artérielle anormalement basse, selon le contexte clinique.",
+      "distinction": "Hypertension : pression artérielle trop élevée.",
+      "etymologie": "hypo- : diminution ; tension : pression",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypertension",
+      "term": "Hypertension",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Élévation persistante ou importante de la pression artérielle, selon le contexte.",
+      "distinction": "Hypotension : pression artérielle trop basse.",
+      "etymologie": "hyper- : excès ; tension : pression",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "oedeme",
+      "term": "Œdème",
+      "theme": "Circulation et système cardiovasculaire",
+      "definition": "Accumulation excessive de liquide dans les tissus interstitiels.",
+      "distinction": "Épanchement : liquide dans une cavité corporelle.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "infection",
+      "term": "Infection",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Pénétration et multiplication d'un agent infectieux dans l'organisme, pouvant provoquer des manifestations cliniques.",
+      "distinction": "Inflammation : réponse de l'organisme, y compris sans infection.",
+      "etymologie": "",
+      "courseIds": [
+        "physiopathologie_infections",
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "inflammation",
+      "term": "Inflammation",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Réponse des tissus à une agression, infectieuse ou non, impliquant des mécanismes immunitaires.",
+      "distinction": "Infection : présence et multiplication d'un agent pathogène.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "sepsis",
+      "term": "Sepsis",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Dysfonction d'organe menaçant le pronostic vital causée par une réponse dérégulée de l'organisme à une infection.",
+      "distinction": "Bactériémie : présence de bactéries dans le sang, pas synonyme de sepsis.",
+      "etymologie": "",
+      "courseIds": [
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bacteriemie",
+      "term": "Bactériémie",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Présence de bactéries vivantes dans la circulation sanguine.",
+      "distinction": "Sepsis : dysfonction d'organe liée à la réponse à une infection.",
+      "etymologie": "-émie : dans le sang",
+      "courseIds": [
+        "diagnostic_bacteriologie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "asepsie",
+      "term": "Asepsie",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Ensemble des mesures visant à empêcher l'introduction de micro-organismes dans un milieu ou lors d'un soin.",
+      "distinction": "Antisepsie : réduction ou destruction des micro-organismes sur les tissus vivants.",
+      "etymologie": "a- : absence ; -sepsie : infection",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antisepsie",
+      "term": "Antisepsie",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Utilisation de méthodes ou produits pour réduire ou détruire les micro-organismes sur les tissus vivants.",
+      "distinction": "Désinfection : traitement d'un milieu ou d'une surface inerte.",
+      "etymologie": "anti- : contre ; -sepsie : infection",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "paresthesie",
+      "term": "Paresthésie",
+      "theme": "Neurologie",
+      "definition": "Sensation anormale, telle que fourmillement ou picotement, sans stimulation adaptée.",
+      "distinction": "Hypoesthésie : diminution de la sensibilité.",
+      "etymologie": "para- : anormal ; -esthésie : sensation",
+      "courseIds": [
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "paresie",
+      "term": "Parésie",
+      "theme": "Neurologie",
+      "definition": "Diminution partielle de la force musculaire volontaire.",
+      "distinction": "Paralysie : perte complète d'un mouvement volontaire.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "paralysie",
+      "term": "Paralysie",
+      "theme": "Neurologie",
+      "definition": "Perte de la motricité volontaire d'un muscle ou d'un groupe musculaire.",
+      "distinction": "Parésie : faiblesse musculaire incomplète.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "aphasie",
+      "term": "Aphasie",
+      "theme": "Neurologie",
+      "definition": "Trouble acquis du langage dû à une atteinte cérébrale, affectant l'expression ou la compréhension.",
+      "distinction": "Dysarthrie : difficulté d'articulation sans trouble linguistique nécessaire.",
+      "etymologie": "a- : privation ; -phasie : langage",
+      "courseIds": [
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dysarthrie",
+      "term": "Dysarthrie",
+      "theme": "Neurologie",
+      "definition": "Trouble moteur de l'articulation de la parole, lié à une atteinte du contrôle musculaire.",
+      "distinction": "Aphasie : trouble de la fonction du langage.",
+      "etymologie": "dys- : difficulté ; -arthrie : articulation",
+      "courseIds": [
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "oligurie",
+      "term": "Oligurie",
+      "theme": "Système urinaire",
+      "definition": "Diminution anormale du volume des urines émises.",
+      "distinction": "Anurie : production ou émission d'urine presque nulle.",
+      "etymologie": "oligo- : peu ; -urie : urines",
+      "courseIds": [
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "anurie",
+      "term": "Anurie",
+      "theme": "Système urinaire",
+      "definition": "Absence ou quasi-absence d'émission d'urine.",
+      "distinction": "Oligurie : volume d'urine réduit, mais non nul.",
+      "etymologie": "an- : absence ; -urie : urines",
+      "courseIds": [
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "polyurie",
+      "term": "Polyurie",
+      "theme": "Système urinaire",
+      "definition": "Augmentation anormale du volume total des urines sur une période donnée.",
+      "distinction": "Pollakiurie : mictions fréquentes, sans volume total nécessairement augmenté.",
+      "etymologie": "poly- : beaucoup ; -urie : urines",
+      "courseIds": [
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dysurie",
+      "term": "Dysurie",
+      "theme": "Système urinaire",
+      "definition": "Difficulté à uriner, notamment à déclencher ou maintenir le jet urinaire.",
+      "distinction": "Brûlures mictionnelles : douleur, qui peut exister sans dysurie.",
+      "etymologie": "dys- : difficulté ; -urie : urines",
+      "courseIds": [
+        "systeme_urinaire",
+        "infections_urinaires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hematurie",
+      "term": "Hématurie",
+      "theme": "Système urinaire",
+      "definition": "Présence de globules rouges dans les urines.",
+      "distinction": "Hémoglobinurie : présence d'hémoglobine libre dans les urines.",
+      "etymologie": "hémat- : sang ; -urie : urines",
+      "courseIds": [
+        "systeme_urinaire",
+        "infections_urinaires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hyperthermie",
+      "term": "Hyperthermie",
+      "theme": "Métabolisme et constantes",
+      "definition": "Élévation de la température corporelle liée à une production ou accumulation excessive de chaleur, sans hausse du point de consigne hypothalamique.",
+      "distinction": "Fièvre : élévation du point de consigne de thermorégulation.",
+      "etymologie": "hyper- : excès ; -thermie : température",
+      "courseIds": [
+        "homeostasie",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypothermie",
+      "term": "Hypothermie",
+      "theme": "Métabolisme et constantes",
+      "definition": "Température centrale anormalement basse, généralement inférieure à 35 °C.",
+      "distinction": "Hyperthermie : température trop élevée.",
+      "etymologie": "hypo- : diminution ; -thermie : température",
+      "courseIds": [
+        "homeostasie",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypoglycemie",
+      "term": "Hypoglycémie",
+      "theme": "Métabolisme et constantes",
+      "definition": "Diminution excessive de la concentration de glucose dans le sang.",
+      "distinction": "Hyperglycémie : concentration de glucose trop élevée.",
+      "etymologie": "hypo- : diminution ; glyc- : sucre ; -émie : sang",
+      "courseIds": [
+        "homeostasie",
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hyperglycemie",
+      "term": "Hyperglycémie",
+      "theme": "Métabolisme et constantes",
+      "definition": "Augmentation anormale de la concentration de glucose dans le sang.",
+      "distinction": "Hypoglycémie : concentration de glucose trop basse.",
+      "etymologie": "hyper- : excès ; glyc- : sucre ; -émie : sang",
+      "courseIds": [
+        "homeostasie",
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "posologie",
+      "term": "Posologie",
+      "theme": "Pharmacologie",
+      "definition": "Modalités de prise d'un médicament : dose, fréquence et durée du traitement.",
+      "distinction": "Dosage : quantité de substance active présente dans une préparation.",
+      "etymologie": "",
+      "courseIds": [
+        "pharmacologie",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "iatrogenie",
+      "term": "Iatrogénie",
+      "theme": "Pharmacologie",
+      "definition": "Effets indésirables ou dommages provoqués par les soins ou les traitements.",
+      "distinction": "Effet thérapeutique : bénéfice recherché d'un traitement.",
+      "etymologie": "iatro- : médecin/soin ; -génie : produit par",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "demi-vie",
+      "term": "Demi-vie",
+      "theme": "Pharmacologie",
+      "definition": "Durée nécessaire pour que la concentration ou quantité d'une substance dans l'organisme diminue de moitié.",
+      "distinction": "Durée d'action : temps pendant lequel un effet pharmacologique persiste.",
+      "etymologie": "",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "biodisponibilite",
+      "term": "Biodisponibilité",
+      "theme": "Pharmacologie",
+      "definition": "Fraction d'une dose administrée qui atteint la circulation systémique sous forme inchangée.",
+      "distinction": "Absorption : passage du lieu d'administration vers la circulation.",
+      "etymologie": "bio- : vivant ; disponibilité : part accessible",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    }
+  ]
+}
