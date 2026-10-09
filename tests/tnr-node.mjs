@@ -11,10 +11,30 @@ function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=t
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
 function normalizeMaxThreeAnswers(q){
  if(!q||q.answerCountNormalized===true||!Array.isArray(q.answers)||!Array.isArray(q.choices)||q.answers.length<=3)return q;
- if(q.answers.length!==4||q.choices.length!==5)return q;
+ if(q.answers.length!==4||![4,5].includes(q.choices.length))return q;
  const out={...q,choices:[...q.choices],answers:[...q.answers]};
  const letters='ABCDE',good=[...new Set(out.answers)].sort((a,b)=>a-b);
  if(good.length!==4)return out;
+ if(q.choices.length===4){
+  const letters='ABCD',original=[...out.choices],all=[0,1,2,3];
+  const options=[
+   {yes:[0,1,2,3],no:[]},
+   {yes:[0,1],no:[2,3]},
+   {yes:[0,2],no:[1,3]},
+   {yes:[1,3],no:[0,2]},
+   {yes:[0,3],no:[1,2]}
+  ];
+  const shift=Array.from(String(out.id||'')).reduce((n,c)=>(n+c.charCodeAt(0))%5,0);
+  const ordered=options.slice(shift).concat(options.slice(0,shift));
+  const describe=x=>x.yes.map(i=>letters[i]).join(' et ')+' vraies'+(x.no.length?' ; '+x.no.map(i=>letters[i]).join(' et ')+' fausses':' ; aucune fausse');
+  out.question=`${String(out.question||'').trim()} — Propositions : ${original.map((s,i)=>letters[i]+'. '+s).join(' • ')} — Quelle analyse des quatre propositions est exacte ?`;
+  out.choices=ordered.map(describe);
+  out.answers=[ordered.findIndex(x=>x.yes.length===all.length)];
+  out.explanation=`${String(out.explanation||'').trim()} Les affirmations A, B, C et D sont toutes exactes ; chacune doit être retenue. Cette question a été reformatée sans changer le contenu scientifique.`;
+  out.answerCountNormalized=true;
+  return out;
+ }
+
  const original=[...out.choices],all=[0,1,2,3,4],key=a=>a.join(',');
  const combos=all.map(omit=>all.filter(i=>i!==omit));
  const shift=Array.from(String(out.id||'')).reduce((n,c)=>(n+c.charCodeAt(0))%5,0);
@@ -30,8 +50,8 @@ function normalizeMaxThreeAnswers(q){
 }
 let rawOver3=0,rawThreeOfFour=0,rawMissingExplanation=0,rawAudited=0;
 const knownQuarantine=new Set(["qextra-02.txt:cellules_004","qextra-02.txt:cellules_011","qextra-02.txt:cellules_022","qextra-02.txt:cellules_027","qextra-02.txt:cellules_034","qextra-02.txt:cellules_035","qextra-02.txt:cellules_038","qextra-02.txt:cellules_045","qextra-02.txt:cellules_046","qextra-02.txt:cellules_054","qextra-02.txt:cellules_057","qextra-02.txt:cellules_058","qextra-02.txt:cellules_059","qextra-02.txt:cellules_077","qextra-02.txt:cellules_083","qextra-02.txt:cellules_087","qextra-03.txt:virus_032","qextra-03.txt:virus_034","qextra-03.txt:virus_048","qextra-03.txt:virus_049","qextra-04.txt:parasites_champignons_008","qextra-04.txt:parasites_champignons_014","qextra-04.txt:parasites_champignons_020","qextra-04.txt:parasites_champignons_021","qextra-04.txt:parasites_champignons_023","qextra-04.txt:parasites_champignons_026","qextra-04.txt:parasites_champignons_028","qextra-04.txt:parasites_champignons_033","qextra-04.txt:parasites_champignons_036","qextra-04.txt:parasites_champignons_043","qextra-04.txt:parasites_champignons_048","qextra-04.txt:parasites_champignons_050","qextra-04.txt:parasites_champignons_053","qextra-04.txt:parasites_champignons_054","qextra-04.txt:parasites_champignons_056","qextra-04.txt:parasites_champignons_057","qextra-04.txt:parasites_champignons_060","qextra-07.txt:physiopath_infections_005","qextra-07.txt:physiopath_infections_006","qextra-07.txt:physiopath_infections_010","qextra-07.txt:physiopath_infections_013","qextra-07.txt:physiopath_infections_019","qextra-07.txt:physiopath_infections_025","qextra-07.txt:physiopath_infections_026","qextra-07.txt:physiopath_infections_031","qextra-07.txt:physiopath_infections_034","qextra-07.txt:physiopath_infections_036","qextra-07.txt:physiopath_infections_038","qextra-07.txt:physiopath_infections_042","qextra-07.txt:physiopath_infections_043","qextra-07.txt:physiopath_infections_044","qextra-07.txt:physiopath_infections_048","qextra-07.txt:physiopath_infections_050"]);
-const quarantined=[];
-function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id,`Question brute sans ID dans ${p}`);assert(typeof q?.question==='string'&&q.question.trim(),`Énoncé brut absent ${p}: ${q?.id||'sans-id'}`);assert(Array.isArray(q?.choices)&&q.choices.length>=4&&q.choices.length<=5,`Nombre de propositions brut invalide ${p}: ${q.id} (${q?.choices?.length??'∅'})`);assert(Array.isArray(q?.answers)&&q.answers.length>=1,`Réponse brute absente ${p}: ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Index brut invalide ${p}: ${q.id}`);if(q.answers.length>=q.choices.length){const key=`${p}:${q.id}`;assert(knownQuarantine.has(key),`Nouveau QCM sans distracteur hors packs historiques: ${key}`);quarantined.push(key);return false;}if(typeof q.explanation!=='string'||!q.explanation.trim())rawMissingExplanation++;if(q.answers.length>3)rawOver3++;if(q.choices.length===4&&q.answers.length===3)rawThreeOfFour++;return true}
+const reformattedSource=[];
+function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id,`Question brute sans ID dans ${p}`);assert(typeof q?.question==='string'&&q.question.trim(),`Énoncé brut absent ${p}: ${q?.id||'sans-id'}`);assert(Array.isArray(q?.choices)&&q.choices.length>=4&&q.choices.length<=5,`Nombre de propositions brut invalide ${p}: ${q.id} (${q?.choices?.length??'∅'})`);assert(Array.isArray(q?.answers)&&q.answers.length>=1,`Réponse brute absente ${p}: ${q.id}`);assert(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),`Index brut invalide ${p}: ${q.id}`);if(q.answers.length>=q.choices.length){const key=`${p}:${q.id}`;assert(knownQuarantine.has(key),`Nouveau QCM sans distracteur hors packs historiques: ${key}`);reformattedSource.push(key);}if(typeof q.explanation!=='string'||!q.explanation.trim())rawMissingExplanation++;if(q.answers.length>3)rawOver3++;if(q.choices.length===4&&q.answers.length===3)rawThreeOfFour++;return true}
 
 let base=[];
 for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)auditRawQuestion(q,p);base.push(...a)}
@@ -39,8 +59,8 @@ let extras=[],override=[],skipped=[];
 for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);extras.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 for(const i of [39,40,41,42,43,44,45,47,48]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);override.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 assert(skipped.length===0,`Packs QCM entièrement ignorés: ${skipped.join(' | ')}`);
-assert(quarantined.length===knownQuarantine.size&&quarantined.every(x=>knownQuarantine.has(x)),`Quarantaine QCM inattendue: ${quarantined.join(' | ')}`);
-console.log(`⚠️ Questions sans distracteur isolées individuellement: ${quarantined.join(' | ')}`);
+assert(reformattedSource.length===knownQuarantine.size&&reformattedSource.every(x=>knownQuarantine.has(x)),`Sources 4/4 inattendues: ${reformattedSource.join(' | ')}`);
+console.log(`✅ ${reformattedSource.length} sources historiques 4/4 identifiées pour normalisation : ${reformattedSource.join(' | ')}`);
 const v820RawPacks=[];for(let i=12;i<=38;i++){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack V8.20 absent: ${p}`);const a=decodePackFile(p);assert(Array.isArray(a)&&a.length>0,`Pack V8.20 vide: ${p}`);v820RawPacks.push(...a)}
 assert(v820RawPacks.length>=1000,`Banque V8.20 trop petite: ${v820RawPacks.length}`);
 // Régression épistémologie: préserver les réponses multiples de la grille officielle.
@@ -53,7 +73,7 @@ assert(caringQ17&&JSON.stringify(caringQ17.answers)===JSON.stringify([0,3]),'Q17
 const iasTail=decodePackFile('qextra-17.txt');
 assert(iasTail.length===42,`Pack IAS qextra-17 inattendu: ${iasTail.length}/42`);
 assert(iasTail.every(q=>String(q.explanation||'').trim().length>=80),'Corrections IAS qextra-17 insuffisamment argumentées');
-assert(rawOver3<=325,`QCM bruts à 4 bonnes réponses en hausse inattendue: ${rawOver3}/325`);
+assert(rawOver3<=378,`QCM bruts à 4 bonnes réponses en hausse inattendue: ${rawOver3}/378`);
 assert(rawThreeOfFour<=1046,`Dette QCM brute 3/4 en hausse: ${rawThreeOfFour}/1046`);
 assert(rawMissingExplanation===0,`QCM bruts sans explication: ${rawMissingExplanation}`);
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
@@ -63,6 +83,7 @@ const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 for(let i=0;i<runtime.length;i++)runtime[i]=normalizeMaxThreeAnswers(runtime[i]);
 const runtimeNormalizedFour=runtime.filter(q=>q.answerCountNormalized===true).length;
+for(const key of knownQuarantine){const id=key.split(':')[1],q=runtime.find(x=>x.id===id);assert(q&&q.answerCountNormalized===true&&q.answers.length===1&&q.choices.length===5,`Source 4/4 non réintégrée : ${key}`)}
 // Régression épistémologie après fusion des overrides : la vérité affichée doit rester cohérente avec la grille officielle.
 const semanticEpistemologyText=s=>String(s||'').replace(/CM[34]\s*•[\s\S]*$/,'').replace(/\s+(?:Cas Mme L\. avec Henderson|Théorie de gestion des symptômes \(TGS\)|Les six écoles de pensée|Métaparadigme selon les écoles|Théories infirmières|Niveaux d’abstraction et utilité)$/,'').replace(/\s+/g,' ').trim().toLowerCase();
 const epistemologyOfficial=new Map(epistemologyPack.map(q=>[q.id,q]));
