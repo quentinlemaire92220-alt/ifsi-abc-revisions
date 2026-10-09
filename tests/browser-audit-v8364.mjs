@@ -77,3 +77,9 @@ assert.equal(reportWrites,1,'Le bilan se reconstruit en boucle');assert.equal(re
 resultContext.res=[false];vm.runInContext('result()',resultContext);
 assert.equal(reportWrites,2,'Un résultat réellement modifié doit être recalculé');assert.match(report.innerHTML,/Mes erreurs \(1\)/);
 console.log('✅ Bilan stable lors des notifications DOM, boutons conservés, résultat modifié recalculé');
+
+// Error revision must not inherit a previous exam mode.
+let modeAtBegin=null,errorQuestions=null;const errorContext={localStorage:{mode:'exam',setItem(k,v){this.mode=v}},st:()=>({errors:['wrong']}),Q:[{id:'wrong'},{id:'right'}],begin:qs=>{modeAtBegin=errorContext.localStorage.mode;errorQuestions=qs}};
+vm.createContext(errorContext);vm.runInContext(between(read('index.html'),'function startErrors(){','function draw(){'),errorContext);vm.runInContext('startErrors()',errorContext);
+assert.equal(modeAtBegin,'train');assert.deepEqual(errorQuestions.map(q=>q.id),['wrong']);
+console.log('✅ Reprise des erreurs après examen en entraînement, sélection limitée aux erreurs');
