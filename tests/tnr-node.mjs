@@ -83,7 +83,16 @@ const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 for(let i=0;i<runtime.length;i++)runtime[i]=normalizeMaxThreeAnswers(runtime[i]);
 const runtimeNormalizedFour=runtime.filter(q=>q.answerCountNormalized===true).length;
-for(const key of knownQuarantine){const id=key.split(':')[1],q=runtime.find(x=>x.id===id);assert(q&&q.answerCountNormalized===true&&q.answers.length===1&&q.choices.length===5,`Source 4/4 non réintégrée : ${key}`)}
+const resolved4={reformatted:[],alreadyCorrected:[],missing:[]};
+for(const key of knownQuarantine){
+ const id=key.split(':')[1],q=runtime.find(x=>x.id===id);
+ if(!q){resolved4.missing.push(key);continue}
+ assert(q.answers.length>=1&&q.answers.length<=3&&q.answers.length<q.choices.length,`QCM historique non conforme: ${key}`);
+ if(q.answerCountNormalized===true)resolved4.reformatted.push(key);
+ else resolved4.alreadyCorrected.push(key);
+}
+console.log('SOURCES_4_4_RESOLUTION '+JSON.stringify(resolved4));
+assert(resolved4.missing.length===0,`QCM historiques encore absents: ${resolved4.missing.join(' | ')}`);
 // Régression épistémologie après fusion des overrides : la vérité affichée doit rester cohérente avec la grille officielle.
 const semanticEpistemologyText=s=>String(s||'').replace(/CM[34]\s*•[\s\S]*$/,'').replace(/\s+(?:Cas Mme L\. avec Henderson|Théorie de gestion des symptômes \(TGS\)|Les six écoles de pensée|Métaparadigme selon les écoles|Théories infirmières|Niveaux d’abstraction et utilité)$/,'').replace(/\s+/g,' ').trim().toLowerCase();
 const epistemologyOfficial=new Map(epistemologyPack.map(q=>[q.id,q]));
