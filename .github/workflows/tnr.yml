@@ -118,5 +118,8 @@ jobs:
       - name: Intégrité QCM 4 sur 4 reformattés
         run: node tests/qcm-four-of-four-v8361.mjs
 
+      - name: Vérifier les parcours corrigés par l’audit navigateur
+        run: node tests/browser-audit-v8364.mjs
+
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs

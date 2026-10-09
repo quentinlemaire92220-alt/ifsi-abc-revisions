@@ -8,7 +8,7 @@ function patch8360(){
  const title=document.createElement('b');title.textContent='V8.30.60 — Audit correctif et qualité des ressources';
  span.appendChild(title);
  span.appendChild(document.createTextNode(' Les anciennes fiches PDF de maths ne sont plus affichées en doublon. Les packs QCM sont contrôlés question par question, la séance de pharmacologie non assurée le 08/10 est signalée, et les garde-fous pédagogiques et PWA sont renforcés.'));
- box.appendChild(span);return true;
+ const host=box.querySelector('details .small');if(!host)return false;host.insertBefore(span,host.firstChild);return true;
 }
 let n=0;const t=setInterval(()=>{if(patch8360()||++n>40)clearInterval(t)},100);
 window.IFSI_V8360_CHANGELOG={patch:patch8360};
