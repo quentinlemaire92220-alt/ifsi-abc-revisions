@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.64';
+const VERSION='8.30.65';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : flashcards pédagogiques autonomes, listes utiles et notions atomiques.`;

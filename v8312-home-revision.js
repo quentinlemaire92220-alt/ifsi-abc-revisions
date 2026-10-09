@@ -1,6 +1,9 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.30.64',$=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.65',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8365Change:{type:'app',badges:['CORRECTIF']},
+  v8338Change:{type:'app',badges:['UX/UI']},
+  v8339Change:{type:'app',badges:['UX/UI']},
   v8364Change:{type:'app',badges:['CORRECTIF']},
   v8363Change:{type:'app',badges:['CORRECTIF']},
   v8362Change:{type:'app',badges:['CORRECTIF']},
@@ -42,6 +45,7 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
+  '8.30.65':'10/10/2026',
   '8.30.64':'10/10/2026',
   '8.30.63':'09/10/2026','8.30.62':'09/10/2026','8.30.61':'09/10/2026','8.30.60':'09/10/2026','8.30.59':'09/10/2026',
   '8.30.58':'09/10/2026',
@@ -151,7 +155,7 @@ function pedagogicalCopy(copy){
 function newsEntries(){
   const box=$('v742Changelog');if(!box)return [];
   return [...box.querySelectorAll('details .small > span[id$="Change"]')].map(span=>{
-    const lines=linesFromSpan(span),title=span.querySelector('b')?.textContent?.trim()||lines[0]||'',copy=span.textContent.replace(title,'').trim(),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
+    const lines=linesFromSpan(span),title=span.querySelector('b')?.textContent?.trim()||lines[0]||'',copy=lines.join(' ').replace(title,'').trim(),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
     return {id:span.id,title,copy:displayCopy,date:dateForTitle(title,span),type:meta.type,badges:meta.badges||[]};
   }).filter(x=>x.title);
 }

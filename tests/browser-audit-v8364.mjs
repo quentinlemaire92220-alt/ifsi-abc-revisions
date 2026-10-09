@@ -45,3 +45,9 @@ assert.equal(vm.runInContext("inferMeta('v8362Change','Flashcards et notions ato
 assert.equal(vm.runInContext("inferMeta('v8359Change','8 fiches de maths').type",newsctx),'resource');
 assert.equal(vm.runInContext("dateForTitle('V8.30.63 — Fiabilité des QCM')",newsctx),'09/10/2026');
 console.log('✅ Parcours : validation sans champs legacy, navigation exclusive, flashcards multi-cours uniques, dates et classement des nouveautés');
+
+// Modern search has replaced both legacy buttons; the old timer must leave it alone.
+const searchContext={document:{getElementById:id=>id==='v76Home'?{}:id==='v86Tools'?{dataset:{v813:'1'}}:null}};
+vm.createContext(searchContext);vm.runInContext("const $=id=>document.getElementById(id);"+between(read('v86-home-clean.js'),'function tools(){','function dialog(){'),searchContext);vm.runInContext('tools()',searchContext);
+assert.equal(vm.runInContext("inferMeta('v8339Change','Flashcards et objectifs mieux intégrés. Vocaux disponibles').type",newsctx),'app');
+console.log('✅ Recherche moderne conservée, ancien panneau vocaux classé dans les évolutions');
