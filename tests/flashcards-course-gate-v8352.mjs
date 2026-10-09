@@ -11,7 +11,7 @@ assert.ok(Array.isArray(report.courseStats),'Statistiques par cours absentes de 
 
 const MAX_REJECT_RATE=25;
 const MIN_CARDS_FOR_RATE=4;
-const MAX_TOTAL_ISSUES=140;
+const MAX_TOTAL_ISSUES=0;
 const MAX_TOTAL_REJECTS=20;
 const totalIssues=report.counts.rewrite+report.counts.split+report.counts.reject;
 const failures=[];

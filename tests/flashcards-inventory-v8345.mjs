@@ -66,11 +66,19 @@ for(const c of deck){
   const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(front+' '+explanation),contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   const n=expected(front),countMismatch=!!n&&answers.length!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
-  const tooBroad=answers.length>=3 && (pair||/quels sont|quelles sont|quelles associations|quelles valeurs|quelles fonctions/i.test(front));
+  const finite=/\b(?:est|sont|peut|peuvent|participe|participent|assure|assurent|contient|contiennent|favorise|favorisent|relève|correspond|correspondent|représente|représentent|sécrète|sécrètent|doit|doivent|permet|permettent|agit|agissent|influence|influencent|décrit|décrivent)\b/i;
+  const sourceNoise=/\b(?:support|cours|enseignante|oralement|diapo|photographie)\b|Prélèvements, transport et prescription/i;
+  // Une liste brève, cohérente et autonome est une compétence de rappel actif,
+  // et non une carte multifactuelle à découper arbitrairement.
+  const listRecall=answers.length>=2&&answers.length<=4&&
+    /^(?:quels?|quelles?|citez|nommez|énumérez)\b/i.test(front)&&
+    !/\b(?:étapes concernant|messages finaux|figurent|représentés)\b/i.test(front)&&
+    answers.every(a=>a.length<=85&&!finite.test(a)&&!sourceNoise.test(a)&&!/\. [A-Z]/.test(a));
+  const tooBroad=answers.length>=3&&!listRecall&&(pair||/quels sont|quelles sont|quelles associations|quelles valeurs|quelles fonctions/i.test(front));
   let bucket='green',reasons=[];
   if(contextDep||vague||sourceMeta||countMismatch){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague ou sigle non développé');if(sourceMeta)reasons.push('métadonnée de cours/support visible');if(countMismatch)reasons.push(`recto annonce ${n}, verso contient ${answers.length}`)}
   else if(meta||duplicateAnswers){bucket='rewrite';if(meta)reasons.push('formulation QCM/meta');if(duplicateAnswers)reasons.push('réponses dupliquées')}
-  else if(pair||tooBroad){bucket='split';reasons.push('à scinder en cartes atomiques')}
+  else if((pair&&answers.length>1&&!listRecall)||tooBroad){bucket='split';reasons.push('à scinder en cartes atomiques')}
   audit[bucket].push({...c,front,answers,reasons});
 }
 const byCourse={};
@@ -98,7 +106,7 @@ const courseStats=courses.map(course=>{
 }).filter(x=>x.qcmCount>0);
 const top=courseStats.map(x=>({...x,total:x.generatedCards,issues:x.rewrite+x.split+x.reject}))
   .sort((a,b)=>b.issues-a.issues||b.generatedCards-a.generatedCards).slice(0,20);
-const sample=o=>o.slice(0,30).map(c=>({id:c.qid,course:c.course,theme:c.theme,front:c.front,answers:c.answers,reasons:c.reasons}));
+const sample=o=>o.slice(0,120).map(c=>({id:c.qid,course:c.course,theme:c.theme,front:c.front,answers:c.answers,reasons:c.reasons}));
 const report={
   sourceFiles:files.length,
   rawRows:all.length,
@@ -111,5 +119,9 @@ const report={
   topCourses:top,
   samples:{reject:sample(audit.reject),rewrite:sample(audit.rewrite),split:sample(audit.split)}
 };
+const curatedExpected={"diagnostic_virologie_022":3,"immunitaire_033":2,"v820_digest2_008":3,"v820_loco_042":3,"droit_intro_060":3,"droit_intro_049":3,"repro_025":3};
+const curatedCoverage=Object.fromEntries(Object.keys(curatedExpected).map(id=>[id,deck.filter(c=>c.qid===id).length]));
+console.log('CURATED_ATOMIC_COVERAGE_JSON '+JSON.stringify(curatedCoverage));
+for(const [id,count] of Object.entries(curatedCoverage))if(count!==curatedExpected[id])throw new Error('Couverture atomique invalide pour '+id+' ('+count+'/'+curatedExpected[id]+')');
 console.log('FLASHCARD_INVENTORY_JSON');
 console.log(JSON.stringify(report,null,2));
