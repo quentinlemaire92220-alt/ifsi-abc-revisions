@@ -66,14 +66,14 @@ for(const c of deck){
   const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(front+' '+explanation),contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   const n=expected(front),countMismatch=!!n&&answers.length!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
-  const finite=/\\b(?:est|sont|peut|peuvent|participe|participent|assure|assurent|contient|contiennent|favorise|favorisent|relève|correspond|correspondent|représente|représentent|sécrète|sécrètent|doit|doivent|permet|permettent|agit|agissent|influence|influencent|décrit|décrivent)\\b/i;
-  const sourceNoise=/\\b(?:support|cours|enseignante|oralement|diapo|photographie)\\b|Prélèvements, transport et prescription/i;
+  const finite=/\b(?:est|sont|peut|peuvent|participe|participent|assure|assurent|contient|contiennent|favorise|favorisent|relève|correspond|correspondent|représente|représentent|sécrète|sécrètent|doit|doivent|permet|permettent|agit|agissent|influence|influencent|décrit|décrivent)\b/i;
+  const sourceNoise=/\b(?:support|cours|enseignante|oralement|diapo|photographie)\b|Prélèvements, transport et prescription/i;
   // Une liste brève, cohérente et autonome est une compétence de rappel actif,
   // et non une carte multifactuelle à découper arbitrairement.
   const listRecall=answers.length>=2&&answers.length<=4&&
-    /^(?:quels?|quelles?|citez|nommez|énumérez)\\b/i.test(front)&&
-    !/\\b(?:étapes concernant|messages finaux|figurent|représentés)\\b/i.test(front)&&
-    answers.every(a=>a.length<=85&&!finite.test(a)&&!sourceNoise.test(a)&&!/\\. [A-Z]/.test(a));
+    /^(?:quels?|quelles?|citez|nommez|énumérez)\b/i.test(front)&&
+    !/\b(?:étapes concernant|messages finaux|figurent|représentés)\b/i.test(front)&&
+    answers.every(a=>a.length<=85&&!finite.test(a)&&!sourceNoise.test(a)&&!/\. [A-Z]/.test(a));
   const tooBroad=answers.length>=3&&!listRecall&&(pair||/quels sont|quelles sont|quelles associations|quelles valeurs|quelles fonctions/i.test(front));
   let bucket='green',reasons=[];
   if(contextDep||vague||sourceMeta||countMismatch){bucket='reject';if(contextDep)reasons.push('dépend du support/contexte');if(vague)reasons.push('formulation vague ou sigle non développé');if(sourceMeta)reasons.push('métadonnée de cours/support visible');if(countMismatch)reasons.push(`recto annonce ${n}, verso contient ${answers.length}`)}
