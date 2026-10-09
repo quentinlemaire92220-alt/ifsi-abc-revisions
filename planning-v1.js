@@ -8,7 +8,7 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-08';
+const UPDATED_AT='2026-10-09';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
@@ -49,7 +49,7 @@ const WEEKS=[
   {date:'2026-10-07',start:'13:30',end:'16:30',promo:'A',ue:'UE B3 S1',type:'TD',title:'PSSM repérage',room:'S11',teacher:'SL'},
   {date:'2026-10-08',start:'09:00',end:'12:30',promo:'all',ue:'UE A2 S1',type:'CM',title:'Les droits du patient',detail:'Des droits généraux aux droits relatifs à la santé mentale et à la psychiatrie',room:'Amphi KB',teacher:'Timothy JAMES'},
   {date:'2026-10-08',start:'13:30',end:'15:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Appareil reproducteur',room:'Amphi KB',teacher:'Vanessa PETIT'},
-  {date:'2026-10-08',start:'15:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'CM',title:'Pharmacologie des antalgiques (E Campus)',courseId:'pharmacologie',room:'Distanciel',teacher:''},
+  {date:'2026-10-08',start:'15:30',end:'17:30',promo:'all',ue:'UE B1 S1',type:'Annulé',title:'Pharmacologie des antalgiques (E Campus) — non assuré',detail:'Cours non assuré le 8 octobre : ressource distancielle introuvable, en attente de clarification de l’université.',courseId:'pharmacologie',room:'',teacher:''},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'A',ue:'UE Simulation',type:'TD',title:'Simulation en santé J2',detail:'Toilette complète au lit • Chambre des erreurs • Prescriptions et calculs • Découverte des dispositifs médicaux • Prise des paramètres vitaux',room:'S1 • S4 • S5 • S6 • S2/S3/S10/S13',teacher:'W Bernabelah AS • S Soufi AS • A Laleg AS • A Benatia AS • ID/SL/AC SSO'},
   {date:'2026-10-09',start:'09:00',end:'12:30',promo:'B',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''},
   {date:'2026-10-09',start:'13:30',end:'17:00',promo:'B',ue:'UE Simulation',type:'TD',title:'Simulation en santé J2',detail:'Toilette complète au lit • Chambre des erreurs • Prescriptions et calculs • Découverte des dispositifs médicaux • Prise des paramètres vitaux',room:'S1 • S4 • S5 • S6 • S2/S3/S10/S13',teacher:'W Bernabelah AS • S Soufi AS • A Laleg AS • A Benatia AS • ID/SL/AC SSO'},
@@ -199,7 +199,7 @@ function icsEscape(s){return String(s??'').replace(/\\/g,'\\\\').replace(/\n/g,'
 function icsStamp(date,time){return date.replaceAll('-','')+'T'+time.replace(':','')+'00'}
 function exportIcs(){
  const w=WEEKS.find(x=>x.id===selectedWeek);if(!w)return;
- validSubgroup();const es=w.events.filter(eventVisible),source=weekSource(w);
+ validSubgroup();const es=w.events.filter(e=>eventVisible(e)&&e.type!=='Annulé'),source=weekSource(w);
  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//IFSI ABC Révisions//Planning Promo//FR','CALSCALE:GREGORIAN','X-WR-CALNAME:IFSI Promo '+promo+' '+w.id,'X-WR-TIMEZONE:Europe/Paris'];
  es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+source.ics].filter(Boolean).join('\n')),'END:VEVENT')});
  lines.push('END:VCALENDAR');
