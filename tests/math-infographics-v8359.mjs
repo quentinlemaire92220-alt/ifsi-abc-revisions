@@ -5,7 +5,7 @@ const json=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url),'utf8'
 const catalog=[...json('sheets-1.json'),...json('sheets-2.json'),...json('sheets-3.json')];
 const snap=json('resource-audit-v821.json');
 const math=catalog.filter(x=>x.courseId==='calculs_doses_mathematiques');
-const illustrated=math.filter(x=>/^maths_fiche_infographie_\\d\\d$/.test(x.resourceId||''));
+const illustrated=math.filter(x=>/^maths_fiche_infographie_[0-9]{2}$/.test(x.resourceId||''));
 const ids=[
  '1EZ5GlglSpx2YROPt9B72l6S25DUh2rSn',
  '1yAvFlugbdxqFB2MEH6Dkclfbp9wHIqQl',
