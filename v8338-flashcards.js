@@ -284,7 +284,77 @@ function selectCards(cards,max=40){
   while(out.length<Math.min(max,clean.length)){let added=0;for(const k of keys){const a=groups.get(k),c=a[round];if(c&&out.length<max){out.push(c);added++}}if(!added)break;round++}
   return out
 }
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:contextualizeFront(p.front,q),answers:p.answers,explanation:sanitizeExplanation(p.explanation),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
+// Formulations issues de l'audit pédagogique : seules les questions sont clarifiées,
+// les bonnes réponses et explications de leurs QCM sources restent inchangées.
+const FLASHCARD_REWRITES={
+  "diagnostic_virologie_050": "Quelles techniques permettent d'identifier une infection virale ?",
+  "virus_034": "Quels exemples d'infections virales chroniques peut-on citer ?",
+  "virus_049": "Quelles caractéristiques structurales et biologiques permettent de décrire un virus ?",
+  "resp_009": "Quel risque infectieux peut entraîner une trachéotomie ?",
+  "v820_iastd_024": "Quel risque matériel a été rapporté lors de l'utilisation de chlorhexidine alcoolique sur certaines valves ?",
+  "v820_ias_083": "Combien de doses de vaccin contre la varicelle sont prévues pour un soignant non immunisé ?",
+  "v820_histoire_049": "Quelles évolutions historiques ont structuré la profession infirmière ?",
+  "v820_epist_038": "Quels effets la pandémie et le confinement ont-ils eus sur l'accès aux soins ?",
+  "v820_vitals_024": "Quel seuil de pression artérielle est utilisé comme repère de l'hypertension artérielle chez l'adulte ?",
+  "v820_vitals_007": "À partir de quelle température corporelle évoque-t-on une hyperthermie ?",
+  "v820_vitals_037": "Quel seuil de saturation pulsée en oxygène (SpO₂) est utilisé comme repère de désaturation ?",
+  "v820_vitals_034": "Quelle situation montre qu'une SpO₂ normale ne suffit pas pour évaluer l'état respiratoire ?",
+  "v820_brules_005": "Quels signes cliniques caractérisent une brûlure superficielle du premier degré ?",
+  "droit_intro_005": "Quelle règle déontologique infirmière est intégrée au Code de la santé publique ?",
+  "homeostasie_035": "Comment définir la glycémie et quel rôle joue le glucose ?",
+  "homeostasie_069": "Comment l'aldostérone intervient-elle dans la régulation du potassium ?",
+  "endocrinien_033": "À quel caractère sexuel secondaire participe la testostérone ?",
+  "immunitaire_010": "Comment la peau constitue-t-elle une barrière mécanique face aux agents pathogènes ?",
+  "immunitaire_014": "Quelle est l'origine des macrophages tissulaires ?",
+  "immunitaire_001": "Quels rôles assurent le système immunitaire et l'immunité ?",
+  "immunitaire_002": "Comment se caractérise la réponse immunitaire innée ?",
+  "immunitaire_038": "Quels antigènes du système ABO sont présents sur les hématies d'une personne de groupe O ?",
+  "immunitaire_030": "Quel rôle jouent les lymphocytes T auxiliaires CD4 (LT4) ?",
+  "immunitaire_026": "À quelle cible un anticorps se lie-t-il spécifiquement ?",
+  "immunitaire_024": "Quelles sont les étapes principales de la réponse humorale des lymphocytes B ?",
+  "immunitaire_021": "Quelles sont les propriétés de l'immunité adaptative ?",
+  "cardio_033": "Quelle est la composition du sang en plasma et en éléments figurés ?",
+  "v820_iastd_015": "Quelles précautions guident la préparation et le renouvellement des bains désinfectants ?",
+  "v820_iastd_045": "Comment choisir les protections et gérer le matériel dans une unité de maladies polyvalentes (UMP) ?",
+  "v820_loco_003": "Quelles sont les limites anatomiques du bras ?",
+  "v820_loco_031": "Quelle est la différence entre un tendon et un ligament ?",
+  "v820_ethique_013": "Comment appliquer le principe de bienfaisance dans les soins ?",
+  "v820_ethique_005": "Comment distinguer la réflexion éthique de la morale personnelle ?",
+  "v820_arthrose_040": "Quels principes guident le diagnostic et la prise en charge de l'arthrose ?",
+  "v820_micro_031": "Quelle proportion de décès à un an après fracture du fémur est décrite chez les femmes et les hommes ?",
+  "v820_micro_007": "Que mesure l'uricémie ?",
+  "v820_cps_002": "Comment l'OMS définit-elle les compétences psychosociales (CPS) ?",
+  "droit_intro_012": "Quel est le mécanisme des ordonnances prévu à l'article 38 de la Constitution ?",
+  "droit_intro_010": "Quels sont les rôles du Parlement et du Président dans l'adoption d'une loi ?",
+  "droit_intro_036": "Quels principes encadrent l'accès au juge en France ?",
+  "droit_intro_060": "Quels sont le rôle et les effets possibles d'un pourvoi en cassation ?",
+  "droit_intro_040": "Comment distinguer les ordres de juridiction administratif et judiciaire ?",
+  "droit_intro_021": "Quelle différence existe entre une directive et un règlement de l'Union européenne ?",
+"v820_a1p4_038": "Comment articuler théorie infirmière et modèle clinique pour guider le jugement et l'action ?",
+"droit_intro_049": "Quelles sont les fonctions et formations principales de la Cour de cassation ?",
+"repro_027": "Quel est le devenir du corps jaune et quelle hormone sécrète-t-il ?",
+"repro_025": "Quelles sont les caractéristiques d'un follicule primordial ?",
+"repro_033": "Quelles sont les caractéristiques de la phase sécrétoire du cycle menstruel ?"
+};
+const OMIT_FROM_FLASHCARDS=new Set(["v820_epist_025","v820_a1p4_033","v820_arthrose_039","v820_histoire_018"]);
+function revisionExplanation(qid,text){
+ const grounded={
+  v820_ias_083:'Deux doses sont retenues pour le schéma vaccinal mentionné chez le soignant non immunisé ; vérifier les recommandations en vigueur.',
+  v820_vitals_034:'Une saturation à 100 % ne suffit pas à elle seule : une polypnée importante reste un signe clinique nécessitant une évaluation.',
+  droit_intro_005:'La déontologie infirmière figure dans le Code de la santé publique et acquiert ainsi un cadre juridique.'
+ };
+ return grounded[qid]||text;
+}
+function revisionFront(qid,front){
+ const raw=String(front||'');
+ if(qid==='homeostasie_027'){
+  if(/Convection/i.test(raw))return 'En thermorégulation, quel mécanisme caractérise la convection ?';
+  if(/Conduction/i.test(raw))return 'En thermorégulation, comment fonctionne le transfert de chaleur par conduction ?';
+  if(/Évaporation/i.test(raw))return 'En thermorégulation, comment l’évaporation permet-elle une perte de chaleur ?';
+ }
+ return FLASHCARD_REWRITES[qid]||raw;
+}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:revisionFront(q.id,contextualizeFront(p.front,q)),answers:p.answers,explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}

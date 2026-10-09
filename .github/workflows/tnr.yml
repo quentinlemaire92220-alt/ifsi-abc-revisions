@@ -112,5 +112,8 @@ jobs:
       - name: Contrôles correctifs du runtime V8.30.60
         run: node tests/runtime-integrity-v8360.mjs
 
+      - name: Intégrité QCM 4 sur 4 reformattés
+        run: node tests/qcm-four-of-four-v8361.mjs
+
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs

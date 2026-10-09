@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const s=execFileSync(process.execPath,['tests/tnr-node.mjs'],{encoding:'utf8'});
+const line=s.split('\n').find(x=>x.startsWith('SOURCES_4_4_RESOLUTION '));
+assert.ok(line,'Contrôle de l’origine des QCM absente');
+const result=JSON.parse(line.slice('SOURCES_4_4_RESOLUTION '.length));
+assert.equal(result.alreadyCorrected.length,53,'Les 53 versions corrigées doivent être actives');
+assert.equal(result.reformatted.length,0,'Pas de modification artificielle des questions');
+assert.equal(result.missing.length,0,'Aucun QCM historique manquant');
+console.log('✅ Les 53 QCM ont déjà des versions pédagogiques corrigées, présentes et intactes');
