@@ -1,13 +1,13 @@
 {
-  "version": "8.30.54",
-  "auditedAt": "2026-10-08",
+  "version": "8.30.55",
+  "auditedAt": "2026-10-09",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.54 : ajout de 50 QCM interactifs et du PDF corrigé du système reproducteur. Fiche V5 et 5 vocaux V8.30.53 conservés.",
+  "note": "V8.30.55 : ajout d’un glossaire pédagogique autonome, sans changement du nombre de ressources Drive ni des QCM historiques.",
   "expectedTotals": {
     "courses": 45,
     "sheets": 52,
