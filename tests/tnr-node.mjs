@@ -226,6 +226,24 @@ assert(indexHtml.includes(`v8338-flashcards.js?v=${releaseMeta.build}`),'Flashca
 assert(vocabJs.includes('body.v72-dark #v81Body .vg-entry')&&vocabJs.includes('background:linear-gradient(140deg,#292237,#211e2f)'),'Le contraste sombre de la carte vocabulaire est absent');
 assert(vocabJs.includes('<details class=')&&vocabJs.includes('d.open=true'),'Navigation repliable ou impression intégrale absente');
 console.log('✅ Vocabulaire : 195 termes / 23 thèmes, 45 cours, contraste sombre, QCM corrigés et PWA');
+// V8.30.58 — vocabulaire par cours et cartes partagées sans doublon de progression.
+const vocabCourseUi=read('v74-pack.js');
+assert(vocabulary.entries.some(x=>x.courseIds.length>1),'Glossaire multi-cours non représenté');
+assert(vocabJs.includes('const forCourse=id=>data.filter(x=>x.courseIds.includes(id))'),'Filtre par cours absent du glossaire');
+assert(vocabJs.includes('function mountCatalog()')&&vocabJs.includes('function mountCourse(courseId)'),'Dictionnaire et ressources par cours absents');
+assert(vocabJs.includes('function startCourseQuiz(courseId)')&&vocabJs.includes("startQuiz();"),'QCM vocabulaire par cours absent');
+assert(vocabJs.includes('makeQuestion(x,list)'),'Les QCM de vocabulaire doivent utiliser les termes du cours sélectionné');
+assert(vocabJs.includes("window.IFSI_V8338_FLASHCARDS?.openVocabulary?.(courseId)"),'Accès flashcards vocabulaire par cours absent');
+assert(!vocabJs.includes('function inject(){')&&!vocabJs.includes('fc-revision-entry'),'Le dictionnaire ne doit pas réapparaître dans Révision');
+assert(vocabCourseUi.includes("window.IFSI_VOCAB?.mountCatalog?.()")&&vocabCourseUi.includes("window.IFSI_VOCAB?.mountCourse?.(courseMeta.id)"),'Vocabulaire non inséré dans les écrans Cours');
+assert(vocabCourseUi.includes('countForCourse?.(c.id)'),'Cours avec vocabulaire masqués dans la liste des cours');
+assert(flashcardJs.includes('courseIds?.includes(id)'),'Flashcards vocabulaire non associées à tous leurs cours');
+assert(flashcardJs.includes("kind==='Vocabulaire'")&&flashcardJs.includes('function openVocabulary(courseId'),'Mode flashcards vocabulaire par cours absent');
+assert(flashcardJs.includes('À ne pas confondre')&&flashcardJs.includes('Comprendre le mot'),'Verso flashcard vocabulaire pédagogique incomplet');
+assert(vocabJs.includes("id:'voc:'+x.id")&&vocabJs.includes('courseIds:[...x.courseIds]'),'Identifiant unique ou appartenance multi-cours de la flashcard absent');
+assert(read('v8358-changelog.js').includes('v8358Change'),'Changelog du déplacement vers Cours absent');
+console.log('✅ V8.30.58 : dictionnaire sous Cours, QCM dédiés, flashcards multi-cours et verso complet');
+
 
 const versionModule=read('app-version-v742.js');
 for(const marker of [`const VERSION='${releaseMeta.version}'`,'IFSI_APP_VERSION','build-meta.json'])assert(versionModule.includes(marker),`Version V${releaseMeta.version} incomplète: ${marker}`);
