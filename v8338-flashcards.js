@@ -5,7 +5,16 @@ const now=()=>Date.now(),day=86400000,read=()=>{try{return JSON.parse(localStora
 const reg=()=>window.IFSI_V741?.getRegistry?.()?.courses||[],res=id=>window.IFSI_V741?.resourcesForCourse?.(id)||{questions:[],sheets:[]};
 const diff=q=>q?.difficulty||window.IFSI_V79?.difficultyOf?.(q)||'medium',theme=q=>window.IFSI_V79?.themeOf?.(q)||q?.theme||'Général';
 function cleanQuestion(q){let t=String(q?.question||'').trim();t=t.replace(/\s+—\s+Repères\s*:[\s\S]*?—\s*Quelle combinaison regroupe toutes les bonnes réponses\s*\?\s*$/i,'');return t.replace(/\s+/g,' ').trim()||'Question de révision';}
-function correctAnswers(q){return (q?.answers||[]).map(i=>String(q?.choices?.[i]||'').trim()).filter(Boolean)}
+function correctAnswers(q){
+ const selected=(q?.answers||[]).map(i=>String(q?.choices?.[i]||'').trim()).filter(Boolean);
+ if(!q?.answerCountNormalized)return selected;
+ const refs=String(q.question||'').match(/—\s*Repères\s*:\s*([\s\S]*?)\s*—\s*Quelle combinaison/i);
+ if(!refs)return [];
+ const statements=new Map(refs[1].split(/\s*•\s*/).map(s=>{const m=s.match(/^([A-Z])\s*[.:)]\s*(.+)$/);return m?[m[1],m[2].trim()]:[]}).filter(x=>x.length));
+ const letters=selected.flatMap(s=>s.split(/\s*\+\s*/));
+ if(!letters.length||letters.some(x=>!statements.has(x)))return [];
+ return [...new Set(letters)].map(x=>statements.get(x));
+}
 function wrongAnswers(q){const good=new Set(q?.answers||[]);return (q?.choices||[]).map((x,i)=>({text:String(x||'').trim(),i})).filter(x=>x.text&&!good.has(x.i)).map(x=>x.text)}
 function answer(q){const a=correctAnswers(q);return a.length?a:['Voir le corrigé associé'];}
 function subjectCase(s){return String(s||'').trim().replace(/[.:;]+$/,'')}
@@ -23,7 +32,7 @@ function listFromExplanation(exp,n){const e=String(exp||'').replace(/\s+/g,' ').
 function refineAnswers(front,answers,explanation){let out=dedupeAnswers(answers);const n=expectedCount(front);if(n&&out.length!==n){const split=out.flatMap(splitShortList);if(split.length===n)out=dedupeAnswers(split);if(out.length!==n){const fromExp=listFromExplanation(explanation,n);if(fromExp.length===n)out=dedupeAnswers(fromExp)}}return out}
 function answersMatchQuestion(front,answers){const n=expectedCount(front);return !n||answers.length===n}
 function stripSourceMeta(s){return String(s||'').replace(/\s*,?\s*(?:et\s+)?(?:son|le|la)?\s*QCM\s+oral\b/gi,'').replace(/\b(?:dans|selon|d['’]après|conformément à)\s+(?:ce|le|la)?\s*(?:cours|support(?: de cours)?)\b/gi,'').replace(/\b(?:du|de la)\s+(?:cours|support(?: de cours)?)\b/gi,'').replace(/\s+/g,' ').replace(/\s+([?;,:])/g,'$1').replace(/[,;:]\s*\?/g,' ?').trim()}
-function sanitizeExplanation(exp){const parts=String(exp||'').replace(/\s+/g,' ').trim().split(/(?<=[.!?])\s+/);return parts.filter(s=>s&&!/\b(?:support(?: de cours)?|diapo(?:sitive)?\s*\d*|QCM\s+oral)\b/i.test(s)).map(stripSourceMeta).filter(Boolean).join(' ')}
+function sanitizeExplanation(exp){const parts=String(exp||'').replace(/\s+/g,' ').trim().split(/(?<=[.!?])\s+/);return parts.filter(s=>s&&!/Combinaison correcte\s*:/i.test(s)&&!/\b(?:support(?: de cours)?|diapo(?:sitive)?\s*\d*|QCM\s+oral)\b/i.test(s)).map(stripSourceMeta).filter(Boolean).join(' ')}
 function termKey(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[₀-₉]/g,d=>({'₀':'0','₁':'1','₂':'2','₃':'3','₄':'4','₅':'5','₆':'6','₇':'7','₈':'8','₉':'9'}[d])).replace(/[⁺+]/g,'+').replace(/[⁻−-]/g,'-').replace(/[^A-Z0-9+-]/g,'')}
 function knownExpansion(term){const k=termKey(term),map={LIC:'liquide intracellulaire (LIC)',LEC:'liquide extracellulaire (LEC)',ADH:'hormone antidiurétique (ADH)',HCO3:'bicarbonates (HCO₃⁻)','HCO3-':'bicarbonates (HCO₃⁻)',PACO2:'pression artérielle en dioxyde de carbone (PaCO₂)',PAO2:'pression artérielle en oxygène (PaO₂)',SPO2:'saturation pulsée en oxygène (SpO₂)',ADN:'acide désoxyribonucléique (ADN)',ARN:'acide ribonucléique (ARN)',ARNM:'ARN messager (ARNm)',ATP:'adénosine triphosphate (ATP)',PCR:'réaction en chaîne par polymérase (PCR)',VIH:"virus de l’immunodéficience humaine (VIH)",VHB:"virus de l’hépatite B (VHB)",VHC:"virus de l’hépatite C (VHC)",CRP:'protéine C-réactive (CRP)',DFG:'débit de filtration glomérulaire (DFG)','NA+':'sodium (Na⁺)','K+':'potassium (K⁺)','CA2+':'calcium (Ca²⁺)'};return map[k]||null}
 function evidenceExpansion(term,q){return null}
@@ -31,8 +40,29 @@ function expandTerm(term,q){const raw=stripSourceMeta(subjectCase(term)),known=k
 function expandKnownInText(front){let x=String(front||'');const reps=[[/((?<!\()\bLIC\b)/gi,'liquide intracellulaire (LIC)'],[/((?<!\()\bLEC\b)/gi,'liquide extracellulaire (LEC)'],[/((?<!\()\bADH\b)/gi,'hormone antidiurétique (ADH)'],[/((?<!\()\bHCO[₃3][⁻−-]?)/gi,'bicarbonates (HCO₃⁻)'],[/((?<!\()\bPaCO[₂2]\b)/gi,'pression artérielle en dioxyde de carbone (PaCO₂)'],[/((?<!\()\bPaO[₂2]\b)/gi,'pression artérielle en oxygène (PaO₂)'],[/((?<!\()\bSpO[₂2]\b)/gi,'saturation pulsée en oxygène (SpO₂)']];for(const [re,to] of reps)x=x.replace(re,to);return x}
 function articleSubject(s){const x=stripSourceMeta(subjectCase(s));if(/^(?:le|la|les|l['’]|un|une|des)\s/i.test(x))return lcFirst(x);if(/^(?:calcium|potassium|sodium|magnésium|fer|phosphore|pancréas|rein|foie)\b/i.test(x))return'le '+lcFirst(x);return lcFirst(x)}
 function themeContext(q){const t=String(theme(q)||'').toLowerCase();if(/homéostase|rétrocontrôle/.test(t))return'dans une boucle d’homéostasie';if(/thermorégulation/.test(t))return'en thermorégulation';if(/équilibre hydrique|adh/.test(t))return'dans l’équilibre hydrique';if(/acido|\bph\b/.test(t))return'dans l’équilibre acido-basique';if(/adn|arn|génétique/.test(t))return'en biologie moléculaire';return''}
-function contextualPairFront(left,right,q,numeric){const raw=stripSourceMeta(subjectCase(left)),expanded=expandTerm(raw,q);if(!expanded)return null;const k=termKey(raw),ctx=themeContext(q);if(k==='LIC'&&numeric)return'Quelle proportion de l’eau corporelle totale se trouve dans le liquide intracellulaire (LIC) ?';if(k==='LEC'&&numeric)return'Quelle proportion de l’eau corporelle totale se trouve dans le liquide extracellulaire (LEC) ?';if(/^HCO3-?$/.test(k)&&numeric)return'Quelle est la valeur normale des bicarbonates (HCO₃⁻) dans le sang ?';if(/^capteur$/i.test(raw)&&/homéostase|rétrocontrôle/i.test(String(theme(q))))return'Quel est le rôle du capteur dans une boucle d’homéostasie ?';if(/^(?:convection|conduction|évaporation|rayonnement)$/i.test(raw)&&/thermorégulation/i.test(String(theme(q))))return'En thermorégulation, à quoi correspond la '+lcFirst(raw)+' ?';if(numeric)return'Quelle est la valeur normale de '+lcFirst(expanded)+' ?';if(ctx&&raw.split(/\s+/).length<=2)return'À quoi correspond « '+expanded+' » '+ctx+' ?';return'À quoi correspond « '+expanded+' » ?'}
-function contextualizeFront(front,q){let f=expandKnownInText(contextualizeDefinition(sanitizeContextFront(stripSourceMeta(front)),q));if(/Quel organe sécrète l['’]insuline/i.test(f))f='Quel organe sécrète l’insuline ?';return capFirst(f.replace(/\s+/g,' ').replace(/\s+\?/g,' ?').trim())}
+// Prompts specify the relationship being recalled; source answers stay unchanged.
+function understandingPairFront(raw,q){
+ const prompts={
+ cellules_014:x=>'Dans quel sens l’'+lcFirst(x)+' transporte-t-elle des éléments par rapport à la cellule ?',
+ cellules_070:x=>'Quel est le rôle de la structure neuronale « '+x+' » ?',
+ homeostasie_036:x=>'Quel est le repère de glycémie '+lcFirst(x)+' ?',
+ homeostasie_045:x=>'Quelle glande sécrète '+lcFirst(x)+' ?',
+ homeostasie_050:x=>'Quelle proportion du liquide extracellulaire correspond au '+lcFirst(x)+' ?',
+ pharmaco_042:x=>'Quelle biodisponibilité (F) obtient-on '+lcFirst(x).replace(/,?\s*F$/i,'')+' ?',
+ immunitaire_019:x=>'Quel rôle joue '+lcFirst(x)+' dans la réaction inflammatoire ?',
+ nerveux_017:x=>'Quelle fonction est associée au lobe '+lcFirst(x)+' ?',
+ repro_010:x=>'Quel rôle joue '+lcFirst(x)+' dans l’appareil reproducteur masculin ?',
+ repro_049:x=>'Combien de chromosomes contient '+lcFirst(x)+' ?',
+ repro_050:x=>'Quel événement de la reproduction a lieu dans '+lcFirst(x)+' ?',
+ v820_a1p3_015:x=>'Que représente « '+x+' » dans l’école de l’interaction en sciences infirmières ?',
+ v820_a1p3_021:x=>'Que permet une théorie infirmière '+lcFirst(x)+' ?',
+ v820_vitals_022:x=>'Que se passe-t-il pendant la '+lcFirst(x)+' cardiaque ?',
+ v820_digest1_021:x=>'Quel rôle jouent les cellules « '+x+' » dans l’intestin ?'
+ };
+ return prompts[q?.id]?.(raw)||null;
+}
+function contextualPairFront(left,right,q,numeric){const raw=stripSourceMeta(subjectCase(left)),expanded=expandTerm(raw,q);if(!expanded)return null;const k=termKey(raw),ctx=themeContext(q),specific=understandingPairFront(raw,q);if(specific)return specific;if(k==='LIC'&&numeric)return'Quelle proportion de l’eau corporelle totale se trouve dans le liquide intracellulaire (LIC) ?';if(k==='LEC'&&numeric)return'Quelle proportion de l’eau corporelle totale se trouve dans le liquide extracellulaire (LEC) ?';if(/^HCO3-?$/.test(k)&&numeric)return'Quelle est la valeur normale des bicarbonates (HCO₃⁻) dans le sang ?';if(/^capteur$/i.test(raw)&&/homéostase|rétrocontrôle/i.test(String(theme(q))))return'Quel est le rôle du capteur dans une boucle d’homéostasie ?';if(/^(?:convection|conduction|évaporation|rayonnement)$/i.test(raw)&&/thermorégulation/i.test(String(theme(q))))return'En thermorégulation, à quoi correspond la '+lcFirst(raw)+' ?';if(numeric)return (/normales?|normes?/i.test(cleanQuestion(q))?'Quelle est la valeur normale de ':'Quelle valeur est associée à ')+lcFirst(expanded)+' ?';if(ctx&&raw.split(/\s+/).length<=2)return'À quoi correspond « '+expanded+' » '+ctx+' ?';return'À quoi correspond « '+expanded+' » ?'}
+function contextualizeFront(front,q){let f=expandKnownInText(contextualizeDefinition(sanitizeContextFront(stripSourceMeta(front)),q));if(/Quel organe sécrète l['’]insuline/i.test(f))f='Quel organe sécrète l’insuline ?';f=f.replace(/Qu[’']est-ce que ([aeiouyàâéèêëîïôùûü]|un\b|une\b)/gi,"Qu’est-ce qu’$1").replace(/Que permet les\b/g,'Que permettent les').replace(/\s+figurent\s*\?+/g,' ?').replace(/\?{2,}/g,'?');return capFirst(f.replace(/\s+/g,' ').replace(/\s+\?/g,' ?').trim())}
 function subjectPrompt(t){let s=stripSourceMeta(String(t||'').trim()),m=s.match(/^Concernant\s+(.+?)\s*\?$/i);if(m)return subjectCase(m[1]);m=s.match(/^((?:Le|La|Les|L['’])\s+[^?]{2,60})\s*\?$/i);return m?subjectCase(m[1]):''}
 function deSubject(s){const x=String(s||'').trim();if(/^le\s+/i.test(x))return'du '+x.replace(/^le\s+/i,'');if(/^la\s+/i.test(x))return'de la '+x.replace(/^la\s+/i,'');if(/^les\s+/i.test(x))return'des '+x.replace(/^les\s+/i,'');if(/^l['’]/i.test(x))return'de '+x;return'de '+x}
 function subjectFactAtom(subject,a,q){const s=String(a||'').trim().replace(/[.;]+$/,''),sub=articleSubject(subject),exp=sanitizeExplanation(q?.explanation||'');let m=s.match(/^environ\s+(.+?)\s+se trouve(?:nt)?\s+dans\s+(.+)$/i);if(m)return{kind:'Valeur à connaître',front:'Où se trouve environ '+m[1]+' '+deSubject(sub)+' de l’organisme ?',answers:[capFirst(m[2])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*participe\s+à\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:'À quel processus physiologique participe '+sub+' ?',answers:[subjectCase(m[1])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*intervient\s+(?:dans|au niveau de)\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:'Dans quel processus physiologique intervient '+sub+' ?',answers:[subjectCase(m[1])],explanation:exp,atomic:true};m=s.match(/^est\s+le\s+principal\s+(.+)$/i);if(m)return{kind:'Définition',front:'Quel est le principal '+subjectCase(m[1])+' ?',answers:[capFirst(sub)],explanation:exp,atomic:true};m=s.match(/^se trouve\s+principalement\s+dans\s+(.+)$/i);if(m)return{kind:'Localisation',front:'Où se trouve principalement '+sub+' ?',answers:[capFirst(m[1])],explanation:exp,atomic:true};m=s.match(/^(?:il|elle)?\s*(?:joue un rôle|est impliqué(?:e)?)\s+dans\s+(.+)$/i);if(m)return{kind:'Rôle / fonction',front:'Dans quel processus physiologique intervient '+sub+' ?',answers:[subjectCase(m[1])],explanation:exp,atomic:true};return null}
@@ -372,6 +402,12 @@ function curatedAtomicCards(q){
  return out;
 }
 function atomicCards(q){
+ // Selected answers in a negative QCM are false statements, never facts to memorise.
+ if(/(?:propositions?|affirmations?|associations?)\s+(?:(?:sont|est)\s+)?(?:fausses?|incorrectes?|inexactes?)/i.test(cleanQuestion(q))){
+  const stem=String(q.question||'').match(/^À propos de « (.*?) »/i)?.[1]||theme(q);
+  const context=stripSourceMeta(q.id==='ist_hors_vih_030'?'Associations entre IST et caractéristiques cliniques':stem).replace(/\b(?:le support|le cours)\s+(?:indique|cite|insiste|précise)(?:\s+aussi)?\s*/gi,'').replace(/\s+(?:présentés?|cités?|indiqués?)\s+(?:sur|dans)\s+le support\b/gi,'').replace(/\s+(?:cités?|présentés?)\s*$/i,'').replace(/[?:.]+$/,'').trim();
+  return correctAnswers(q).map(a=>({kind:'Vrai ou faux',front:context+' — Vrai ou faux : « '+a.replace(/[.;]+$/,'')+' » ?',answers:['Faux.'],explanation:sanitizeExplanation(q.explanation||''),atomic:true,preserveFront:true}));
+ }
  const curated=curatedAtomicCards(q);if(curated.length>=2)return curated;
   const t=cleanQuestion(q),good=correctAnswers(q),subjectParts=subjectAtomicCards(q,t),meta=/\b(?:associations?|propositions?|affirmations?|sont exactes|sont justes|sont correctes|est exacte|est juste|est correcte|correspondent au support|valeurs ou définitions)\b/i.test(t);
   if(subjectParts.length)return subjectParts.map(p=>({...p,answers:refineAnswers(p.front,p.answers,p.explanation||q.explanation||'')})).filter(p=>p.answers.length&&answersMatchQuestion(p.front,p.answers));
@@ -466,6 +502,22 @@ function revisionExplanation(qid,text){
  return grounded[qid]||text;
 }
 const ADDITIONAL_FRONTS={
+ "pharmaco_023":"Quels sont les quatre types de récepteurs pharmacologiques ?",
+ "pharmaco_014":"Quels exemples de voies d’administration parentérales peut-on citer ?",
+ "homeostasie_016":"Comment les reins participent-ils à la régulation d’une baisse du pH sanguin ?",
+ "homeostasie_044":"Quelles hormones ont un effet hyperglycémiant ?",
+ "resp_viral_002":"Quelles structures appartiennent aux voies respiratoires supérieures ?",
+ "resp_viral_009":"Quels exemples de virus respiratoires d’intérêt médical peut-on citer ?",
+ "resp_viral_022":"Quels exemples de coronavirus classiques peut-on citer ?",
+ "resp_viral_024":"Quels symptômes fréquents peuvent accompagner la COVID-19 ?",
+ "pharmaco_052":"Quelles informations doit contenir une ordonnance ?",
+ "v820_ias_018":"Quels exemples de moments d’hygiène des mains définis par l’OMS peut-on citer ?",
+ "v820_rhuminf_007":"Quels facteurs peuvent favoriser les maladies rhumatismales inflammatoires ?",
+ "v820_micro_013":"Quelle maladie peut causer une accumulation d’acide urique par défaut d’élimination rénale ?",
+ "v820_trauma_054":"Dans quelles situations un fixateur externe peut-il être indiqué pour une fracture ?",
+ "biomolecules_011":"Comment qualifie-t-on une solution dont le pH est inférieur à 7 ?",
+ "biomolecules_012":"Comment qualifie-t-on une solution dont le pH est supérieur à 7 ?",
+
   "cellules_052": "Quelles sont trois fonctions principales du sang ?",
   "cellules_077": "Quelles étapes conduisent à la libération d’un neurotransmetteur dans une synapse chimique ?",
   "cellules_079": "Quels sont les trois types de tissu musculaire humain ?",
@@ -552,7 +604,7 @@ function revisionFront(qid,front){
  }
  return ADDITIONAL_FRONTS[qid]||FLASHCARD_REWRITES[qid]||raw;
 }
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:(p.atomic&&CURATED_ATOMIC_FRONTS[q.id]?contextualizeFront(p.front,q):revisionFront(q.id,contextualizeFront(p.front,q))),answers:revisionAnswers(q.id,p.answers),explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}const unique=new Map();for(const card of [...out,...(window.IFSI_VOCAB?.flashcards?.()||[])]){const ids=[...new Set([card.courseId,...(card.courseIds||[])].filter(Boolean))];const existing=unique.get(card.id);if(existing){existing.courseIds=[...new Set([...(existing.courseIds||[]),...ids])]}else unique.set(card.id,{...card,courseIds:ids})}deck=[...unique.values()];return deck}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:(split?`fc:${q.id}:${i+1}`:`fc:${q.id}`)+(p.kind==='Vrai ou faux'?':truth':''),qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:(p.preserveFront||(p.atomic&&CURATED_ATOMIC_FRONTS[q.id])?contextualizeFront(p.front,q):revisionFront(q.id,contextualizeFront(p.front,q))),answers:revisionAnswers(q.id,p.answers),explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}const unique=new Map();for(const card of [...out,...(window.IFSI_VOCAB?.flashcards?.()||[])]){const ids=[...new Set([card.courseId,...(card.courseIds||[])].filter(Boolean))];const existing=unique.get(card.id);if(existing){existing.courseIds=[...new Set([...(existing.courseIds||[]),...ids])]}else unique.set(card.id,{...card,courseIds:ids})}deck=[...unique.values()];return deck}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}

@@ -64,6 +64,9 @@ jobs:
       - name: Inventaire qualité Flashcards
         run: node tests/flashcards-inventory-v8345.mjs
 
+      - name: Vérifier la compréhension Flashcards sur les banques de production
+        run: node tests/flashcards-understanding-v8369.mjs
+
       - name: Garde-fou Flashcards par cours
         run: node tests/flashcards-course-gate-v8352.mjs
 
