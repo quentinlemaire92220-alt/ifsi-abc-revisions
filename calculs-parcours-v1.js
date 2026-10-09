@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const COURSE_ID='calculs_doses_mathematiques';
-const VERSION='1.1';
+const VERSION='1.2';
 const LEVELS=[
  {id:1,title:'Conversions et lecture des unités',icon:'🔢'},
  {id:2,title:'Durées et horaires',icon:'⏱️'},
@@ -14,11 +14,39 @@ const LEVELS=[
  {id:9,title:'Dilutions : exercices de mathématiques',icon:'↔️'},
  {id:10,title:'Problèmes complets type IFSI',icon:'🎓'}
 ];
+// Répartition pédagogique validée : reconstitutions, horaires et cas intégrateurs ne doivent pas être masqués par des mots-clés génériques.
+// La clé est l'identifiant QCM stable : aucune copie de question ni modification de la source des réponses.
+const REVIEW_LEVEL_BY_ID=Object.freeze({
+ 'cdm2_121':8,
+ 'cdm2_122':8,
+ 'cdm2_132':8,
+ 'cdm2_133':8,
+ 'cdm2_134':8,
+ 'cdm2_135':8,
+ 'cdm2_136':8,
+ 'cdm2_137':8,
+ 'cdm2_138':8,
+ 'cdm2_139':8,
+ 'cdm_019':8,
+ 'cdm_067':8,
+ 'cdm_068':8,
+ 'cdm_069':8,
+ 'cdm_063':10,
+ 'cdm_064':10,
+ 'cdm_065':10,
+ 'cdm_073':10,
+ 'cdm_077':10,
+ 'cdm_078':10,
+ 'cdm_079':10,
+ 'cdm_080':10,
+ 'cdm_083':10,
+ 'cdm_090':10
+});
 const $=id=>document.getElementById(id);
 const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 function isCalc(q){return q?.courseId===COURSE_ID||/calculs? de doses|math[eé]matiques/i.test(q?.course||'')}
 function calcQuestions(){return (Array.isArray(Q)?Q:[]).filter(isCalc)}
-function levelOf(q){if(Number.isInteger(q?.level)&&q.level>=1&&q.level<=10)return q.level;const s=(q?.theme||'')+' '+(q?.question||'');
+function levelOf(q){if(REVIEW_LEVEL_BY_ID[q?.id])return REVIEW_LEVEL_BY_ID[q.id];if(Number.isInteger(q?.level)&&q.level>=1&&q.level<=10)return q.level;const s=(q?.theme||'')+' '+(q?.question||'');
   if(/buvable|gouttes orales|compte-gouttes/i.test(s))return 5;
   if(/[ée]lectrolyte|kcl|nacl|par litre|par poche|volume ajout/i.test(s))return 7;
   if(/dilution|c1|v1|solution m[eè]re/i.test(s))return 9;
@@ -44,7 +72,7 @@ function css(){if($('calcMasteryCss'))return;const s=document.createElement('sty
 function startLevel(level,count=10,mode='train',difficulty=null){let pool=calcQuestions().filter(q=>levelOf(q)===level&&(!difficulty||difficultyOf(q)===difficulty));if(!pool.length&&difficulty)pool=calcQuestions().filter(q=>levelOf(q)===level);if(!pool.length)return alert('Aucune question disponible pour ce niveau.');pool=shuffle([...pool]);const picked=pool.slice(0,Math.min(count,pool.length));localStorage.setItem('ifsiabc_v7_mode',mode==='exam'?'exam':'train');window.IFSI_V77?.track?.('qcm_start',{resource_type:'qcm',resource_id:'calculs_level_'+level,course_id:COURSE_ID,metadata:{level,difficulty:difficulty||'all',count:picked.length,mode}});if(typeof begin==='function')begin(picked);else alert('Le moteur QCM n’est pas encore prêt.')}
 function startProgressive(level){const stage=stageFor(level);startLevel(level,10,'train',stage==='mixed'?null:stage)}
 function firstToWork(){for(const l of LEVELS)if(!mastery(l.id))return l.id;return 10}
-function html(){const total=calcQuestions().length;const mastered=LEVELS.filter(l=>mastery(l.id)).length;return `<div class="card calc-mastery" id="calcMastery"><div class="row"><div><b>🧮 Parcours Maîtrise des calculs infirmiers</b><div class="small">10 niveaux • ${total} QCM disponibles • progression facile → intermédiaire → difficile → mixte.</div></div><span class="badge">V${VERSION}</span></div><div class="calc-roadmap"><b>${mastered}/10 niveaux maîtrisés</b><div class="small">Pour valider un niveau : réussir les étapes facile, intermédiaire et difficile avec ≥ 80 %, puis conserver ≥ 80 % au global.</div></div><button class="btn primary calc-master-btn" id="calcContinue" type="button">▶ Continuer mon parcours</button><div class="calc-levels">${LEVELS.map(l=>{const s=statsFor(l.id),pct=s.rate??0,done=mastery(l.id),stage=stageFor(l.id);return `<div class="calc-level ${done?'done':''}"><div class="top"><div style="display:flex;gap:9px"><span class="num">${l.id}</span><div><div class="name">${l.icon} ${l.title}</div><div class="meta">${s.total} QCM • ${s.seen} vus • ${s.rate===null?'aucun score':s.rate+' %'} • étape : ${stageLabel(stage)}</div></div></div><span class="calc-badge ${done?'ok':''}">${done?'✓ maîtrisé':'à travailler'}</span></div><div class="calc-bar"><span style="width:${pct}%"></span></div><div class="calc-actions"><button class="btn primary" data-calcprog="${l.id}" type="button">▶ Étape suivante</button><button class="btn outline" data-calc20="${l.id}" type="button">20 QCM mixtes</button></div></div>`}).join('')}</div></div>`}
+function html(){const total=calcQuestions().length;const mastered=LEVELS.filter(l=>mastery(l.id)).length;return `<div class="card calc-mastery" id="calcMastery"><div class="row"><div><b>🧮 Parcours Maîtrise des calculs infirmiers</b><div class="small">10 niveaux • ${total} QCM disponibles • progression Facile → Moyen → Difficile → Mixte.</div></div><span class="badge">V${VERSION}</span></div><div class="calc-roadmap"><b>${mastered}/10 niveaux maîtrisés</b><div class="small">Pour valider un niveau : réussir les étapes facile, moyen et difficile avec ≥ 80 %, puis conserver ≥ 80 % au global.</div></div><button class="btn primary calc-master-btn" id="calcContinue" type="button">▶ Continuer mon parcours</button><div class="calc-levels">${LEVELS.map(l=>{const s=statsFor(l.id),pct=s.rate??0,done=mastery(l.id),stage=stageFor(l.id);return `<div class="calc-level ${done?'done':''}"><div class="top"><div style="display:flex;gap:9px"><span class="num">${l.id}</span><div><div class="name">${l.icon} ${l.title}</div><div class="meta">${s.total} QCM • ${s.seen} vus • ${s.rate===null?'aucun score':s.rate+' %'} • étape : ${stageLabel(stage)}</div></div></div><span class="calc-badge ${done?'ok':''}">${done?'✓ maîtrisé':'à travailler'}</span></div><div class="calc-bar"><span style="width:${pct}%"></span></div><div class="calc-actions"><button class="btn primary" data-calcprog="${l.id}" type="button">▶ Étape suivante</button><button class="btn outline" data-calc20="${l.id}" type="button">20 QCM mixtes</button></div></div>`}).join('')}</div></div>`}
 function inject(){if(!isCalcPage())return false;const box=$('v74CourseDetail'),head=box?.querySelector('.v74-course-head');if(!box||!head)return false;css();$('calcMastery')?.remove();head.insertAdjacentHTML('afterend',html());$('calcContinue').onclick=()=>startProgressive(firstToWork());box.querySelectorAll('[data-calcprog]').forEach(b=>b.onclick=()=>startProgressive(Number(b.dataset.calcprog)));box.querySelectorAll('[data-calc20]').forEach(b=>b.onclick=()=>startLevel(Number(b.dataset.calc20),20,'train'));return true}
 let timer=setInterval(()=>{if(inject())clearInterval(timer)},500);setTimeout(()=>clearInterval(timer),10000);
 window.IFSI_CALCULS_MASTERY={version:VERSION,levels:LEVELS,startLevel,startProgressive,refresh:inject,levelOf,stageFor,mastery};
