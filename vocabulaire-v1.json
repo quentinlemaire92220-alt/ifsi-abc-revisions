@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
   "updatedAt": "2026-10-09",
-  "sourceNote": "Glossaire pédagogique transversal à valider avec les supports officiels des intervenants ; ne constitue pas une transcription de cours.",
+  "sourceNote": "Glossaire pédagogique transversal fondé sur la terminologie médicale et les thèmes du registre des cours ; liens de cours indicatifs, définitions à confronter aux supports officiels, aucune transcription revendiquée.",
   "entries": [
     {
       "id": "hypoxie",
@@ -501,6 +501,1952 @@
       "etymologie": "bio- : vivant ; disponibilité : part accessible",
       "courseIds": [
         "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "glucide",
+      "term": "Glucide",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Famille de molécules comprenant les sucres et leurs polymères, notamment utilisés comme source d'énergie.",
+      "distinction": "Un lipide est une autre famille de biomolécules, aux propriétés différentes.",
+      "etymologie": "",
+      "courseIds": [
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "lipide",
+      "term": "Lipide",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Famille de molécules comprenant les triglycérides, phospholipides et stéroïdes, jouant des rôles énergétiques et structuraux.",
+      "distinction": "Un glucide n'a pas la même structure chimique qu'un lipide.",
+      "etymologie": "",
+      "courseIds": [
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "proteine",
+      "term": "Protéine",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Macromolécule formée d'une ou plusieurs chaînes d'acides aminés, impliquée notamment dans la structure et les fonctions cellulaires.",
+      "distinction": "Un peptide est une chaîne d'acides aminés, généralement plus courte.",
+      "etymologie": "",
+      "courseIds": [
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enzyme",
+      "term": "Enzyme",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Molécule, le plus souvent une protéine, qui accélère une réaction chimique sans être consommée.",
+      "distinction": "Une hormone est un messager chimique, pas forcément un catalyseur.",
+      "etymologie": "",
+      "courseIds": [
+        "biomolecules",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "membrane-plasmique",
+      "term": "Membrane plasmique",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Enveloppe cellulaire constituée principalement d'une bicouche lipidique et de protéines qui contrôle les échanges.",
+      "distinction": "La paroi cellulaire est une structure distincte présente chez de nombreux micro-organismes.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cytoplasme",
+      "term": "Cytoplasme",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Ensemble du contenu cellulaire situé entre la membrane plasmique et le noyau dans une cellule eucaryote.",
+      "distinction": "Le cytosol est la phase liquide du cytoplasme, sans les organites.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "organite",
+      "term": "Organite",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Structure spécialisée à l'intérieur d'une cellule eucaryote, assurant une fonction particulière.",
+      "distinction": "Un tissu est un ensemble de cellules et de matrice extracellulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "mitochondrie",
+      "term": "Mitochondrie",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Organite eucaryote impliqué dans la production d'une grande partie de l'ATP lors de la respiration cellulaire.",
+      "distinction": "Le ribosome assure la synthèse des protéines.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus",
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ribosome",
+      "term": "Ribosome",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Complexe constitué d'ARN et de protéines réalisant la traduction de l'ARN messager en chaîne polypeptidique.",
+      "distinction": "La mitochondrie participe à la production d'énergie.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus",
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "mitose",
+      "term": "Mitose",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Division cellulaire qui répartit des chromosomes dupliqués dans deux cellules filles génétiquement semblables.",
+      "distinction": "La méiose produit des cellules haploïdes après deux divisions.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus",
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "meiose",
+      "term": "Méiose",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Processus de division cellulaire aboutissant généralement à quatre cellules haploïdes issues d'une cellule diploïde.",
+      "distinction": "La mitose conserve habituellement le nombre de chromosomes.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique",
+        "systeme_reproducteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "epithelium",
+      "term": "Épithélium",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Tissu formé de cellules jointives recouvrant une surface ou bordant une cavité et reposant sur une lame basale.",
+      "distinction": "Le tissu conjonctif comporte généralement davantage de matrice extracellulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "tissu-conjonctif",
+      "term": "Tissu conjonctif",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Tissu de soutien constitué de cellules dispersées dans une matrice extracellulaire plus ou moins abondante.",
+      "distinction": "L'épithélium est constitué de cellules étroitement jointives.",
+      "etymologie": "",
+      "courseIds": [
+        "cellules_tissus",
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "homeostasie-cellulaire",
+      "term": "Homéostasie cellulaire",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Maintien dynamique des conditions internes permettant à une cellule de fonctionner malgré les variations de son environnement.",
+      "distinction": "L'homéostasie de l'organisme concerne la régulation de plusieurs systèmes.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "organe",
+      "term": "Organe",
+      "theme": "Biomolécules, cellules et tissus",
+      "definition": "Structure composée de plusieurs tissus organisés qui assurent ensemble une ou plusieurs fonctions.",
+      "distinction": "Un tissu regroupe des cellules ; un appareil regroupe plusieurs organes.",
+      "etymologie": "",
+      "courseIds": [
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "homeostasie",
+      "term": "Homéostasie",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Capacité de l'organisme à maintenir certaines variables internes dans des limites compatibles avec la vie.",
+      "distinction": "Un équilibre dynamique implique des ajustements constants, et non une valeur parfaitement fixe.",
+      "etymologie": "homéo- : semblable ; -stasie : stabilité",
+      "courseIds": [
+        "homeostasie",
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "retrocontrole-negatif",
+      "term": "Rétrocontrôle négatif",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Mécanisme par lequel une variation déclenche une réponse qui tend à corriger cette même variation.",
+      "distinction": "Le rétrocontrôle positif amplifie au contraire une variation.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "osmose",
+      "term": "Osmose",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Déplacement de l'eau à travers une membrane sélective selon une différence de potentiel osmotique.",
+      "distinction": "La diffusion simple décrit le déplacement de solutés selon leur gradient.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "diffusion",
+      "term": "Diffusion",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Déplacement net de particules sous l'effet de leur agitation thermique, généralement du milieu le plus concentré vers le moins concentré.",
+      "distinction": "Le transport actif utilise une source d'énergie pour déplacer des solutés contre leur gradient.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "acidose",
+      "term": "Acidose",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Trouble de l'équilibre acido-basique qui tend à abaisser le pH sanguin.",
+      "distinction": "L'acidémie décrit la présence effective d'un pH sanguin trop bas.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "systeme_respiratoire",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "alcalose",
+      "term": "Alcalose",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Trouble de l'équilibre acido-basique qui tend à élever le pH sanguin.",
+      "distinction": "L'alcalémie décrit la présence effective d'un pH sanguin trop élevé.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "systeme_respiratoire",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "tampon-chimique",
+      "term": "Tampon chimique",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Système qui limite les variations de pH en captant ou en libérant des ions hydrogène.",
+      "distinction": "Un acide libère des protons ; une base peut les capter.",
+      "etymologie": "",
+      "courseIds": [
+        "homeostasie",
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "natremie",
+      "term": "Natrémie",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Concentration de sodium mesurée dans le plasma sanguin, utilisée notamment pour évaluer l'équilibre hydrique.",
+      "distinction": "La kaliémie correspond à la concentration plasmatique de potassium.",
+      "etymologie": "-émie : sang",
+      "courseIds": [
+        "homeostasie",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "kaliemie",
+      "term": "Kaliémie",
+      "theme": "Homéostasie et équilibres biologiques",
+      "definition": "Concentration de potassium dans le plasma, importante pour le fonctionnement musculaire et cardiaque.",
+      "distinction": "La natrémie mesure la concentration plasmatique de sodium.",
+      "etymologie": "-émie : sang",
+      "courseIds": [
+        "homeostasie",
+        "systeme_cardiovasculaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "adn",
+      "term": "ADN",
+      "theme": "Génétique et reproduction",
+      "definition": "Acide désoxyribonucléique : molécule porteuse de l'information génétique de la plupart des organismes.",
+      "distinction": "L'ARN est un autre acide nucléique, souvent impliqué dans l'expression des gènes.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique",
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "arn-messager",
+      "term": "ARN messager",
+      "theme": "Génétique et reproduction",
+      "definition": "Molécule d'ARN portant la séquence utilisée par les ribosomes pour synthétiser une protéine.",
+      "distinction": "L'ADN constitue le support durable de l'information génétique.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "chromosome",
+      "term": "Chromosome",
+      "theme": "Génétique et reproduction",
+      "definition": "Structure constituée d'ADN associé à des protéines, portant de nombreux gènes.",
+      "distinction": "Un gène est une portion fonctionnelle de l'ADN ; ce n'est pas un chromosome entier.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "allele",
+      "term": "Allèle",
+      "theme": "Génétique et reproduction",
+      "definition": "Version d'un gène située à un locus donné sur un chromosome.",
+      "distinction": "Un gène désigne une unité d'information ; un allèle en est une variante.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "mutation",
+      "term": "Mutation",
+      "theme": "Génétique et reproduction",
+      "definition": "Modification durable de la séquence de l'ADN, dont les conséquences peuvent être variables ou absentes.",
+      "distinction": "Une variation génétique n'est pas nécessairement pathologique.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "genotype",
+      "term": "Génotype",
+      "theme": "Génétique et reproduction",
+      "definition": "Ensemble des caractéristiques génétiques d'un individu, ou des allèles considérés pour un caractère.",
+      "distinction": "Le phénotype correspond aux caractères observables.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "phenotype",
+      "term": "Phénotype",
+      "theme": "Génétique et reproduction",
+      "definition": "Ensemble des caractéristiques observables d'un organisme résultant des interactions entre gènes et environnement.",
+      "distinction": "Le génotype décrit son information génétique.",
+      "etymologie": "",
+      "courseIds": [
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gamete",
+      "term": "Gamète",
+      "theme": "Génétique et reproduction",
+      "definition": "Cellule reproductrice haploïde, comme le spermatozoïde ou l'ovocyte mature.",
+      "distinction": "Le zygote est la cellule diploïde formée après la fécondation.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_reproducteur",
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ovulation",
+      "term": "Ovulation",
+      "theme": "Génétique et reproduction",
+      "definition": "Libération d'un ovocyte par l'ovaire au cours du cycle ovarien.",
+      "distinction": "La menstruation correspond à l'élimination de l'endomètre en l'absence de grossesse.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_reproducteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "fecondation",
+      "term": "Fécondation",
+      "theme": "Génétique et reproduction",
+      "definition": "Fusion des gamètes masculin et féminin aboutissant à la formation d'un zygote.",
+      "distinction": "La nidation correspond à l'implantation de l'embryon dans l'endomètre.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_reproducteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "virus",
+      "term": "Virus",
+      "theme": "Virologie et bactériologie",
+      "definition": "Agent infectieux acellulaire possédant un génome et nécessitant une cellule hôte pour produire de nouvelles particules.",
+      "distinction": "Une bactérie est une cellule vivante capable de se multiplier de manière autonome dans des conditions adaptées.",
+      "etymologie": "",
+      "courseIds": [
+        "virus",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "virion",
+      "term": "Virion",
+      "theme": "Virologie et bactériologie",
+      "definition": "Particule virale complète à l'extérieur de la cellule, capable selon le cas de transmettre une infection.",
+      "distinction": "Le terme virus désigne plus largement l'agent au cours de son cycle.",
+      "etymologie": "",
+      "courseIds": [
+        "virus",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "capside",
+      "term": "Capside",
+      "theme": "Virologie et bactériologie",
+      "definition": "Coque constituée de protéines entourant et protégeant le génome d'un virus.",
+      "distinction": "L'enveloppe virale est une membrane lipidique présente seulement chez certains virus.",
+      "etymologie": "",
+      "courseIds": [
+        "virus",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enveloppe-virale",
+      "term": "Enveloppe virale",
+      "theme": "Virologie et bactériologie",
+      "definition": "Membrane lipidique acquise par certains virus, portant des protéines nécessaires notamment à l'entrée dans les cellules.",
+      "distinction": "La capside est un assemblage protéique entourant le génome viral.",
+      "etymologie": "",
+      "courseIds": [
+        "virus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bacterie",
+      "term": "Bactérie",
+      "theme": "Virologie et bactériologie",
+      "definition": "Micro-organisme cellulaire procaryote, généralement capable de se multiplier par division.",
+      "distinction": "Un virus ne possède pas de métabolisme cellulaire autonome.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "procaryote",
+      "term": "Procaryote",
+      "theme": "Virologie et bactériologie",
+      "definition": "Cellule dépourvue de noyau délimité par une membrane, comme les bactéries.",
+      "distinction": "Une cellule eucaryote possède un noyau membranaire.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cocci",
+      "term": "Cocci",
+      "theme": "Virologie et bactériologie",
+      "definition": "Bactéries de forme globalement sphérique, pouvant être isolées ou regroupées en amas ou en chaînes.",
+      "distinction": "Les bacilles ont une forme allongée en bâtonnet.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bacille",
+      "term": "Bacille",
+      "theme": "Virologie et bactériologie",
+      "definition": "Bactérie de forme allongée, ressemblant à un bâtonnet.",
+      "distinction": "Un coccus est une bactérie de forme sphérique.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "coloration-de-gram",
+      "term": "Coloration de Gram",
+      "theme": "Virologie et bactériologie",
+      "definition": "Technique de coloration différenciant les bactéries selon les propriétés de leur enveloppe cellulaire.",
+      "distinction": "Une culture bactérienne vise à faire croître les micro-organismes.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antibiogramme",
+      "term": "Antibiogramme",
+      "theme": "Virologie et bactériologie",
+      "definition": "Examen permettant d'évaluer in vitro la sensibilité d'une bactérie à différents antibiotiques.",
+      "distinction": "Une hémoculture recherche des micro-organismes dans un prélèvement sanguin.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pcr",
+      "term": "PCR",
+      "theme": "Virologie et bactériologie",
+      "definition": "Réaction de polymérisation en chaîne amplifiant une séquence d'acide nucléique pour faciliter sa détection ou son analyse.",
+      "distinction": "Une sérologie détecte notamment des anticorps plutôt que de multiplier une séquence cible.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_virologie",
+        "diagnostic_bacteriologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "serologie",
+      "term": "Sérologie",
+      "theme": "Virologie et bactériologie",
+      "definition": "Analyse du sérum visant notamment à détecter des anticorps dirigés contre un agent infectieux.",
+      "distinction": "La PCR recherche directement une séquence d'acide nucléique ciblée.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_virologie",
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hemoculture",
+      "term": "Hémoculture",
+      "theme": "Virologie et bactériologie",
+      "definition": "Mise en culture d'un prélèvement sanguin pour rechercher des micro-organismes circulants.",
+      "distinction": "Une numération formule sanguine compte des cellules sanguines ; elle ne cultive pas d'agents infectieux.",
+      "etymologie": "",
+      "courseIds": [
+        "diagnostic_bacteriologie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "parasite",
+      "term": "Parasite",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Organisme vivant aux dépens d'un hôte dont il tire des ressources, parfois à l'origine d'une maladie.",
+      "distinction": "Un champignon n'est pas nécessairement un parasite.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "protozoaire",
+      "term": "Protozoaire",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Organisme eucaryote unicellulaire dont certaines espèces peuvent être parasitaires.",
+      "distinction": "Un helminthe est un ver parasite pluricellulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "helminthe",
+      "term": "Helminthe",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Ver parasite pluricellulaire, par exemple un nématode ou un cestode.",
+      "distinction": "Un protozoaire est un organisme eucaryote unicellulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "mycose",
+      "term": "Mycose",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Infection provoquée par un champignon microscopique.",
+      "distinction": "Une parasitose peut être causée par un protozoaire ou un helminthe.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons",
+        "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "levure",
+      "term": "Levure",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Champignon microscopique généralement unicellulaire, dont certaines espèces peuvent causer des infections.",
+      "distinction": "Une moisissure se développe généralement sous forme de filaments.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dermatophytose",
+      "term": "Dermatophytose",
+      "theme": "Parasitologie et mycologie",
+      "definition": "Mycose superficielle de la peau, des cheveux ou des ongles due à un champignon dermatophyte.",
+      "distinction": "Une candidose est causée par une levure du genre Candida.",
+      "etymologie": "",
+      "courseIds": [
+        "parasites_champignons",
+        "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "immunite-innee",
+      "term": "Immunité innée",
+      "theme": "Immunologie et vaccination",
+      "definition": "Ensemble de défenses immédiates reposant sur des mécanismes non spécifiques d'un antigène donné.",
+      "distinction": "L'immunité adaptative mobilise des lymphocytes spécifiques et une mémoire immunitaire.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "immunite-adaptative",
+      "term": "Immunité adaptative",
+      "theme": "Immunologie et vaccination",
+      "definition": "Réponse immunitaire reposant sur des lymphocytes spécifiques d'un antigène, avec possibilité de mémoire.",
+      "distinction": "L'immunité innée agit rapidement sans spécificité antigénique comparable.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antigene",
+      "term": "Antigène",
+      "theme": "Immunologie et vaccination",
+      "definition": "Structure moléculaire pouvant être reconnue spécifiquement par des récepteurs du système immunitaire.",
+      "distinction": "Un anticorps est une protéine produite par des lymphocytes B différenciés.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "anticorps",
+      "term": "Anticorps",
+      "theme": "Immunologie et vaccination",
+      "definition": "Immunoglobuline capable de se lier spécifiquement à un antigène.",
+      "distinction": "Un antigène est la cible reconnue par l'anticorps.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "lymphocyte-b",
+      "term": "Lymphocyte B",
+      "theme": "Immunologie et vaccination",
+      "definition": "Cellule immunitaire participant à la réponse adaptative et pouvant se différencier en plasmocyte producteur d'anticorps.",
+      "distinction": "Le lymphocyte T reconnaît les antigènes présentés dans un contexte cellulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "lymphocyte-t",
+      "term": "Lymphocyte T",
+      "theme": "Immunologie et vaccination",
+      "definition": "Cellule de l'immunité adaptative participant notamment à la coordination de la réponse ou à la destruction de cellules cibles.",
+      "distinction": "Le lymphocyte B peut produire des anticorps après différenciation.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "phagocytose",
+      "term": "Phagocytose",
+      "theme": "Immunologie et vaccination",
+      "definition": "Mécanisme par lequel certaines cellules englobent puis dégradent des particules ou des micro-organismes.",
+      "distinction": "La pinocytose concerne surtout l'absorption de liquides et de solutés.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "vaccination",
+      "term": "Vaccination",
+      "theme": "Immunologie et vaccination",
+      "definition": "Administration d'une préparation destinée à induire une réponse immunitaire protectrice contre une maladie.",
+      "distinction": "L'immunisation passive apporte des anticorps déjà formés.",
+      "etymologie": "",
+      "courseIds": [
+        "vaccination_prs",
+        "systeme_immunitaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "rappel-vaccinal",
+      "term": "Rappel vaccinal",
+      "theme": "Immunologie et vaccination",
+      "definition": "Dose de vaccin donnée après la primovaccination pour maintenir ou renforcer la protection immunitaire.",
+      "distinction": "La primovaccination correspond aux premières doses prévues par le schéma.",
+      "etymologie": "",
+      "courseIds": [
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "immunodepression",
+      "term": "Immunodépression",
+      "theme": "Immunologie et vaccination",
+      "definition": "Diminution des capacités de défense immunitaire, d'origine constitutionnelle ou acquise.",
+      "distinction": "L'auto-immunité correspond à une réaction contre des constituants de l'organisme.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_immunitaire",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hormone",
+      "term": "Hormone",
+      "theme": "Endocrinologie",
+      "definition": "Messager chimique libéré par des cellules et agissant sur des cellules cibles qui possèdent son récepteur.",
+      "distinction": "Une enzyme catalyse une réaction chimique.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "insuline",
+      "term": "Insuline",
+      "theme": "Endocrinologie",
+      "definition": "Hormone pancréatique qui favorise notamment l'utilisation et le stockage du glucose et diminue la glycémie.",
+      "distinction": "Le glucagon favorise principalement la remontée de la glycémie.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien",
+        "homeostasie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "glucagon",
+      "term": "Glucagon",
+      "theme": "Endocrinologie",
+      "definition": "Hormone pancréatique qui augmente notamment la disponibilité du glucose dans le sang.",
+      "distinction": "L'insuline a globalement un effet hypoglycémiant.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "adrenaline",
+      "term": "Adrénaline",
+      "theme": "Endocrinologie",
+      "definition": "Hormone et neurotransmetteur impliqué dans la réponse aiguë au stress, notamment sur le cœur et les bronches.",
+      "distinction": "Le cortisol est une hormone stéroïde impliquée dans l'adaptation au stress.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien",
+        "systeme_cardiovasculaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cortisol",
+      "term": "Cortisol",
+      "theme": "Endocrinologie",
+      "definition": "Hormone glucocorticoïde produite par le cortex surrénalien, impliquée dans le métabolisme et la réponse au stress.",
+      "distinction": "L'adrénaline agit notamment lors de la réponse immédiate au stress.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypothyroidie",
+      "term": "Hypothyroïdie",
+      "theme": "Endocrinologie",
+      "definition": "Insuffisance de production ou d'action des hormones thyroïdiennes entraînant un ralentissement de plusieurs fonctions.",
+      "distinction": "L'hyperthyroïdie correspond à un excès d'activité hormonale thyroïdienne.",
+      "etymologie": "hypo- : insuffisance",
+      "courseIds": [
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hyperthyroidie",
+      "term": "Hyperthyroïdie",
+      "theme": "Endocrinologie",
+      "definition": "Excès de production ou d'action des hormones thyroïdiennes accélérant de nombreuses fonctions corporelles.",
+      "distinction": "L'hypothyroïdie correspond à une insuffisance d'hormones thyroïdiennes.",
+      "etymologie": "hyper- : excès",
+      "courseIds": [
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "diabete-sucre",
+      "term": "Diabète sucré",
+      "theme": "Endocrinologie",
+      "definition": "Groupe de maladies caractérisées par une hyperglycémie chronique liée à un défaut de sécrétion ou d'action de l'insuline.",
+      "distinction": "Le diabète insipide est un trouble de l'équilibre hydrique, distinct du diabète sucré.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_endocrinien",
+        "homeostasie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "peristaltisme",
+      "term": "Péristaltisme",
+      "theme": "Digestion et nutrition",
+      "definition": "Contractions coordonnées de la paroi digestive propulsant le contenu le long du tube digestif.",
+      "distinction": "La segmentation mélange surtout le contenu intestinal sans propulsion comparable.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bol-alimentaire",
+      "term": "Bol alimentaire",
+      "theme": "Digestion et nutrition",
+      "definition": "Masse d'aliments mastiqués et mélangés à la salive avant la déglutition.",
+      "distinction": "Le chyme est le contenu semi-liquide résultant de la digestion gastrique.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "chyme",
+      "term": "Chyme",
+      "theme": "Digestion et nutrition",
+      "definition": "Mélange semi-liquide d'aliments et de sucs digestifs produit dans l'estomac.",
+      "distinction": "Le bol alimentaire se forme dans la bouche avant la déglutition.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "absorption-intestinale",
+      "term": "Absorption intestinale",
+      "theme": "Digestion et nutrition",
+      "definition": "Passage des nutriments, de l'eau et de certains ions depuis la lumière intestinale vers l'organisme.",
+      "distinction": "La digestion dégrade d'abord les aliments en constituants absorbables.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_digestif",
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dysphagie",
+      "term": "Dysphagie",
+      "theme": "Digestion et nutrition",
+      "definition": "Difficulté à avaler des liquides, des aliments ou de la salive.",
+      "distinction": "L'odynophagie correspond à une douleur lors de la déglutition.",
+      "etymologie": "dys- : difficulté ; -phagie : manger",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hepatocyte",
+      "term": "Hépatocyte",
+      "theme": "Digestion et nutrition",
+      "definition": "Cellule principale du foie impliquée dans de nombreuses fonctions métaboliques et dans la production de bile.",
+      "distinction": "Une cellule pancréatique exerce des fonctions digestives ou endocrines.",
+      "etymologie": "hépat- : foie",
+      "courseIds": [
+        "systeme_digestif",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ictere",
+      "term": "Ictère",
+      "theme": "Digestion et nutrition",
+      "definition": "Coloration jaune de la peau et des muqueuses provoquée par une augmentation de la bilirubine dans l'organisme.",
+      "distinction": "La cyanose est une coloration bleuâtre liée à l'hémoglobine désoxygénée.",
+      "etymologie": "",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "osteoblaste",
+      "term": "Ostéoblaste",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Cellule responsable de la formation de la matrice osseuse et de sa minéralisation.",
+      "distinction": "L'ostéoclaste résorbe le tissu osseux.",
+      "etymologie": "ostéo- : os ; -blaste : cellule formatrice",
+      "courseIds": [
+        "appareil_locomoteur",
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "osteoclaste",
+      "term": "Ostéoclaste",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Cellule spécialisée dans la résorption du tissu osseux.",
+      "distinction": "L'ostéoblaste participe à la formation osseuse.",
+      "etymologie": "ostéo- : os ; -claste : qui brise",
+      "courseIds": [
+        "appareil_locomoteur",
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "osteoporose",
+      "term": "Ostéoporose",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Maladie osseuse caractérisée par une résistance osseuse diminuée et un risque accru de fracture.",
+      "distinction": "L'arthrose est une maladie articulaire touchant notamment le cartilage.",
+      "etymologie": "ostéo- : os ; -porose : porosité",
+      "courseIds": [
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "arthrose",
+      "term": "Arthrose",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Maladie articulaire associant des altérations du cartilage et de l'ensemble des tissus articulaires.",
+      "distinction": "La polyarthrite rhumatoïde est une maladie inflammatoire auto-immune.",
+      "etymologie": "arthr- : articulation",
+      "courseIds": [
+        "arthrose",
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "arthrite",
+      "term": "Arthrite",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Inflammation d'une articulation pouvant avoir une origine infectieuse, microcristalline ou auto-immune.",
+      "distinction": "L'arthrose est une affection articulaire où les phénomènes mécaniques et structuraux sont importants.",
+      "etymologie": "arthr- : articulation ; -ite : inflammation",
+      "courseIds": [
+        "rhumatismes_inflammatoires",
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "synoviale",
+      "term": "Synoviale",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Membrane qui tapisse la face interne de nombreuses capsules articulaires et produit le liquide synovial.",
+      "distinction": "Le cartilage articulaire recouvre les surfaces osseuses de l'articulation.",
+      "etymologie": "",
+      "courseIds": [
+        "appareil_locomoteur",
+        "rhumatismes_inflammatoires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "polyarthrite",
+      "term": "Polyarthrite",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Atteinte inflammatoire simultanée ou successive de plusieurs articulations.",
+      "distinction": "Une monoarthrite concerne une seule articulation.",
+      "etymologie": "poly- : plusieurs ; arthr- : articulation",
+      "courseIds": [
+        "rhumatismes_inflammatoires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "tendinite",
+      "term": "Tendinite",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Terme clinique courant désignant une douleur ou atteinte d'un tendon, sans prouver une inflammation histologique.",
+      "distinction": "La tendinopathie désigne plus largement un trouble du tendon.",
+      "etymologie": "tendin- : tendon ; -ite : inflammation",
+      "courseIds": [
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "goutte",
+      "term": "Goutte",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Arthropathie inflammatoire causée par le dépôt de cristaux d'urate monosodique dans les tissus.",
+      "distinction": "La chondrocalcinose est associée à des cristaux de pyrophosphate de calcium.",
+      "etymologie": "",
+      "courseIds": [
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "contracture",
+      "term": "Contracture",
+      "theme": "Appareil locomoteur et rhumatologie",
+      "definition": "Contraction musculaire involontaire et persistante, parfois douloureuse, limitant les mouvements.",
+      "distinction": "Une crampe est une contraction involontaire généralement brève.",
+      "etymologie": "",
+      "courseIds": [
+        "appareil_locomoteur",
+        "traumatologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "fracture",
+      "term": "Fracture",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Rupture de la continuité d'un os pouvant être partielle ou complète.",
+      "distinction": "L'entorse touche les ligaments, sans rupture osseuse nécessaire.",
+      "etymologie": "",
+      "courseIds": [
+        "traumatologie",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "entorse",
+      "term": "Entorse",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Lésion des ligaments d'une articulation lors d'un mouvement forcé.",
+      "distinction": "La luxation est une perte des rapports articulaires normaux.",
+      "etymologie": "",
+      "courseIds": [
+        "traumatologie",
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "luxation",
+      "term": "Luxation",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Perte complète des rapports anatomiques normaux entre les surfaces d'une articulation.",
+      "distinction": "La subluxation est un déplacement articulaire incomplet.",
+      "etymologie": "",
+      "courseIds": [
+        "traumatologie",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hematome",
+      "term": "Hématome",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Collection de sang dans un tissu ou une cavité après une rupture vasculaire.",
+      "distinction": "Une ecchymose est une infiltration de sang visible sous la peau, sans collection localisée.",
+      "etymologie": "hémat- : sang",
+      "courseIds": [
+        "traumatologie",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "osteosynthese",
+      "term": "Ostéosynthèse",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Fixation chirurgicale de fragments osseux à l'aide de matériel pour stabiliser une fracture ou une ostéotomie.",
+      "distinction": "Une prothèse remplace une structure articulaire ou une partie de celle-ci.",
+      "etymologie": "ostéo- : os ; -synthèse : réunir",
+      "courseIds": [
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "reduction-de-fracture",
+      "term": "Réduction de fracture",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Manœuvre visant à remettre les fragments osseux fracturés dans un alignement approprié.",
+      "distinction": "L'immobilisation maintient ensuite la position obtenue.",
+      "etymologie": "",
+      "courseIds": [
+        "traumatologie",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "brulure-du-deuxieme-degre",
+      "term": "Brûlure du deuxième degré",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Atteinte thermique cutanée touchant l'épiderme et une partie du derme, souvent accompagnée de phlyctènes.",
+      "distinction": "Une brûlure du troisième degré détruit toute l'épaisseur du derme.",
+      "etymologie": "",
+      "courseIds": [
+        "grands_brules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "phlyctene",
+      "term": "Phlyctène",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Bulle cutanée remplie de liquide, pouvant notamment se former lors d'une brûlure.",
+      "distinction": "Une pustule contient un matériel purulent.",
+      "etymologie": "",
+      "courseIds": [
+        "grands_brules",
+        "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "debridement",
+      "term": "Débridement",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Retrait de tissus nécrosés ou de débris d'une plaie afin de favoriser la prise en charge de celle-ci.",
+      "distinction": "Le pansement protège la plaie, mais n'en retire pas nécessairement les tissus nécrosés.",
+      "etymologie": "",
+      "courseIds": [
+        "grands_brules",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "greffe-cutanee",
+      "term": "Greffe cutanée",
+      "theme": "Traumatologie, orthopédie et brûlures",
+      "definition": "Transfert chirurgical d'une portion de peau vers une zone lésée nécessitant une couverture.",
+      "distinction": "Un lambeau conserve une vascularisation propre ou bénéficie d'une anastomose vasculaire.",
+      "etymologie": "",
+      "courseIds": [
+        "grands_brules",
+        "chirurgie_orthopedique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "nociception",
+      "term": "Nociception",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Processus nerveux de détection et de transmission d'un stimulus potentiellement dommageable.",
+      "distinction": "La douleur est une expérience sensorielle et émotionnelle personnelle.",
+      "etymologie": "",
+      "courseIds": [
+        "douleur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "allodynie",
+      "term": "Allodynie",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Douleur provoquée par un stimulus normalement non douloureux, comme un effleurement.",
+      "distinction": "L'hyperalgésie est une douleur exagérée à un stimulus déjà douloureux.",
+      "etymologie": "allo- : autre ; -odynie : douleur",
+      "courseIds": [
+        "douleur",
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hyperalgesie",
+      "term": "Hyperalgésie",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Réponse douloureuse excessive à une stimulation normalement douloureuse.",
+      "distinction": "L'allodynie est une douleur déclenchée par un stimulus normalement indolore.",
+      "etymologie": "hyper- : excès ; -algésie : sensibilité douloureuse",
+      "courseIds": [
+        "douleur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "douleur-neuropathique",
+      "term": "Douleur neuropathique",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Douleur causée par une lésion ou une maladie du système somatosensoriel.",
+      "distinction": "La douleur nociceptive résulte de l'activation des nocicepteurs par une atteinte tissulaire.",
+      "etymologie": "",
+      "courseIds": [
+        "douleur",
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "douleur-nociceptive",
+      "term": "Douleur nociceptive",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Douleur liée à l'activation des nocicepteurs par une lésion ou une menace de lésion de tissus non nerveux.",
+      "distinction": "La douleur neuropathique résulte d'une lésion ou maladie du système somatosensoriel.",
+      "etymologie": "",
+      "courseIds": [
+        "douleur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "echelle-numerique-de-douleur",
+      "term": "Échelle numérique de douleur",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Outil d'autoévaluation où la personne cote généralement l'intensité de sa douleur de 0 à 10.",
+      "distinction": "Une échelle comportementale sert surtout lorsque l'autoévaluation est impossible.",
+      "etymologie": "",
+      "courseIds": [
+        "douleur",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "saturation-spo",
+      "term": "Saturation SpO₂",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Estimation non invasive de la saturation pulsée en oxygène de l'hémoglobine, mesurée par oxymétrie.",
+      "distinction": "La PaO₂ est une pression partielle mesurée dans le sang artériel.",
+      "etymologie": "",
+      "courseIds": [
+        "parametres_vitaux",
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "diurese",
+      "term": "Diurèse",
+      "theme": "Douleur et surveillance clinique",
+      "definition": "Quantité d'urine émise pendant une durée donnée, souvent mesurée lors de la surveillance d'un patient.",
+      "distinction": "La fréquence des mictions ne renseigne pas à elle seule sur le volume total.",
+      "etymologie": "",
+      "courseIds": [
+        "parametres_vitaux",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "precautions-standard",
+      "term": "Précautions standard",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Mesures de prévention des infections appliquées à toute personne soignée, quel que soit son statut infectieux.",
+      "distinction": "Les précautions complémentaires s'ajoutent selon le mode de transmission suspecté ou confirmé.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie",
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "precautions-complementaires",
+      "term": "Précautions complémentaires",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Mesures ajoutées aux précautions standard pour limiter certains risques de transmission par contact, gouttelettes ou voie aérienne.",
+      "distinction": "Les précautions standard s'appliquent systématiquement à tous les soins.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hygiene-des-mains",
+      "term": "Hygiène des mains",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Ensemble des gestes de lavage ou de friction hydroalcoolique visant à réduire la transmission manuportée des micro-organismes.",
+      "distinction": "Le port de gants ne remplace pas l'hygiène des mains.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antiseptique",
+      "term": "Antiseptique",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Produit destiné à réduire ou détruire des micro-organismes sur la peau ou les muqueuses selon ses indications.",
+      "distinction": "Un désinfectant est destiné principalement aux surfaces ou dispositifs inertes.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "sterilisation",
+      "term": "Stérilisation",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Procédé validé visant à rendre un produit exempt de micro-organismes viables.",
+      "distinction": "La désinfection réduit les micro-organismes, sans garantir la stérilité.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "infection-associee-aux-soins",
+      "term": "Infection associée aux soins",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Infection survenant au cours ou au décours d'une prise en charge et qui n'était ni présente ni en incubation à son début.",
+      "distinction": "Une infection communautaire est contractée en dehors de cette prise en charge.",
+      "etymologie": "",
+      "courseIds": [
+        "prevention_ias_asepsie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "transmissions-ciblees",
+      "term": "Transmissions ciblées",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Méthode de traçabilité infirmière organisée autour d'un problème ou fait significatif, de données, d'actions et de résultats.",
+      "distinction": "Une simple liste d'actes ne restitue pas nécessairement le raisonnement clinique.",
+      "etymologie": "",
+      "courseIds": [
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "role-propre-infirmier",
+      "term": "Rôle propre infirmier",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Ensemble des soins que l'infirmier réalise de sa propre initiative dans le cadre des compétences définies par la réglementation.",
+      "distinction": "Le rôle sur prescription concerne les actes nécessitant une prescription ou un protocole prévu.",
+      "etymologie": "",
+      "courseIds": [
+        "histoire_profession_infirmiere",
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "concentration-massique",
+      "term": "Concentration massique",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Masse d'une substance dissoute par unité de volume de solution, par exemple en mg/mL.",
+      "distinction": "Une dose est une quantité à administrer, pas une concentration.",
+      "etymologie": "",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "debit-de-perfusion",
+      "term": "Débit de perfusion",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Volume de solution administré par unité de temps, exprimé par exemple en mL/h.",
+      "distinction": "Une dose totale décrit la quantité de médicament délivrée.",
+      "etymologie": "",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "dilution",
+      "term": "Dilution",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Opération visant à diminuer la concentration d'une solution en ajoutant un solvant adapté.",
+      "distinction": "La reconstitution consiste à préparer un médicament à partir d'une forme initiale, souvent une poudre.",
+      "etymologie": "",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "reconstitution",
+      "term": "Reconstitution",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Préparation d'un médicament à partir d'une forme initiale en ajoutant le diluant indiqué.",
+      "distinction": "La dilution consiste à réduire une concentration en ajoutant du liquide.",
+      "etymologie": "",
+      "courseIds": [
+        "administration_medicamenteuse",
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voie-intraveineuse",
+      "term": "Voie intraveineuse",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Administration d'une substance directement dans la circulation veineuse.",
+      "distinction": "La voie intramusculaire implique une injection dans un muscle.",
+      "etymologie": "intra- : à l'intérieur ; veineuse : veine",
+      "courseIds": [
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "effet-indesirable",
+      "term": "Effet indésirable",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Réaction nocive et non voulue survenant lors de l'utilisation d'un médicament selon les conditions considérées.",
+      "distinction": "Une contre-indication est une situation où l'usage d'un traitement est déconseillé ou interdit.",
+      "etymologie": "",
+      "courseIds": [
+        "pharmacologie",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "contre-indication",
+      "term": "Contre-indication",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Situation clinique où l'utilisation d'un médicament ou d'une procédure expose à un risque jugé inacceptable.",
+      "distinction": "Une précaution d'emploi nécessite une surveillance ou une adaptation, sans forcément interdire le traitement.",
+      "etymologie": "",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "intervalle-therapeutique",
+      "term": "Intervalle thérapeutique",
+      "theme": "Calculs de doses et médicaments",
+      "definition": "Plage de concentrations d'un médicament pour laquelle l'efficacité est recherchée avec un risque de toxicité acceptable.",
+      "distinction": "La demi-vie renseigne sur la vitesse de diminution de la concentration.",
+      "etymologie": "",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "empathie",
+      "term": "Empathie",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Capacité à comprendre le point de vue ou l'état émotionnel d'autrui tout en maintenant la distinction entre soi et l'autre.",
+      "distinction": "La sympathie implique davantage de partage affectif ou d'affinité.",
+      "etymologie": "",
+      "courseIds": [
+        "psychologie_sante",
+        "competences_psychosociales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "alliance-therapeutique",
+      "term": "Alliance thérapeutique",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Relation de collaboration entre une personne soignée et un professionnel fondée sur la confiance, les objectifs et les moyens du soin.",
+      "distinction": "La simple observance d'un traitement ne suffit pas à définir cette relation.",
+      "etymologie": "",
+      "courseIds": [
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "mecanisme-de-defense",
+      "term": "Mécanisme de défense",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Processus psychique souvent inconscient servant à réduire une tension ou un conflit interne.",
+      "distinction": "Une stratégie d'adaptation peut être consciemment choisie.",
+      "etymologie": "",
+      "courseIds": [
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "resilience",
+      "term": "Résilience",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Processus d'adaptation permettant de poursuivre son développement ou de se reconstruire après une adversité.",
+      "distinction": "La résilience n'implique pas l'absence de souffrance.",
+      "etymologie": "",
+      "courseIds": [
+        "competences_psychosociales",
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "assertivite",
+      "term": "Assertivité",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Capacité à exprimer ses besoins, limites et opinions de façon claire tout en respectant ceux d'autrui.",
+      "distinction": "L'agressivité impose son point de vue sans respecter l'autre.",
+      "etymologie": "",
+      "courseIds": [
+        "competences_psychosociales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ecoute-active",
+      "term": "Écoute active",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Attitude d'écoute utilisant l'attention, la reformulation et les questions adaptées pour vérifier la compréhension.",
+      "distinction": "Entendre les paroles sans reformuler ne garantit pas leur compréhension.",
+      "etymologie": "",
+      "courseIds": [
+        "competences_psychosociales",
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "renforcement-positif",
+      "term": "Renforcement positif",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Conséquence agréable augmentant la probabilité qu'un comportement soit reproduit.",
+      "distinction": "La punition vise à diminuer la fréquence d'un comportement.",
+      "etymologie": "",
+      "courseIds": [
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "metacognition",
+      "term": "Métacognition",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Capacité à réfléchir sur ses propres processus d'apprentissage, de mémoire et de raisonnement.",
+      "distinction": "La mémorisation désigne la conservation d'informations.",
+      "etymologie": "méta- : au-delà ; cognition : connaissance",
+      "courseIds": [
+        "methodes_travail_reussite"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "rappel-actif",
+      "term": "Rappel actif",
+      "theme": "Psychologie et sciences humaines",
+      "definition": "Méthode de révision consistant à récupérer une information de mémoire sans relire immédiatement la réponse.",
+      "distinction": "La relecture passive ne vérifie pas aussi directement la récupération en mémoire.",
+      "etymologie": "",
+      "courseIds": [
+        "methodes_travail_reussite",
+        "epistemologie_savoirs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "consentement-libre-et-eclaire",
+      "term": "Consentement libre et éclairé",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Accord donné sans contrainte après réception d'une information adaptée sur un acte ou une prise en charge.",
+      "distinction": "La signature d'un document ne suffit pas, à elle seule, à garantir un consentement valable.",
+      "etymologie": "",
+      "courseIds": [
+        "introduction_droit",
+        "ethique_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "secret-professionnel",
+      "term": "Secret professionnel",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Obligation légale de ne pas divulguer les informations confidentielles connues du fait de sa profession, sauf exceptions prévues.",
+      "distinction": "La discrétion professionnelle et le secret professionnel n'ont pas exactement le même régime.",
+      "etymologie": "",
+      "courseIds": [
+        "introduction_droit",
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "responsabilite-civile",
+      "term": "Responsabilité civile",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Obligation de réparer, lorsque les conditions légales sont réunies, un dommage causé à autrui.",
+      "distinction": "La responsabilité pénale vise la sanction d'une infraction.",
+      "etymologie": "",
+      "courseIds": [
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "responsabilite-penale",
+      "term": "Responsabilité pénale",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Responsabilité engagée lorsqu'un comportement constitue une infraction prévue par le droit pénal.",
+      "distinction": "La responsabilité civile recherche principalement la réparation d'un préjudice.",
+      "etymologie": "",
+      "courseIds": [
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "maltraitance",
+      "term": "Maltraitance",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Actes ou omissions portant atteinte aux droits, besoins, intégrité ou dignité d'une personne vulnérable.",
+      "distinction": "La bientraitance correspond à une démarche active de respect et d'accompagnement.",
+      "etymologie": "",
+      "courseIds": [
+        "ethique_infirmiere",
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance",
+      "term": "Bientraitance",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Démarche visant à respecter les droits, les besoins, les choix et la dignité de la personne accompagnée.",
+      "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
+      "etymologie": "",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "autonomie-du-patient",
+      "term": "Autonomie du patient",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Capacité et droit d'une personne à participer aux décisions concernant sa santé selon sa situation.",
+      "distinction": "La dépendance fonctionnelle ne retire pas automatiquement la capacité de décider.",
+      "etymologie": "",
+      "courseIds": [
+        "ethique_infirmiere",
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "deontologie",
+      "term": "Déontologie",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Ensemble des devoirs et règles professionnelles applicables aux membres d'une profession.",
+      "distinction": "L'éthique questionne les valeurs et les choix dans des situations complexes.",
+      "etymologie": "déon- : devoir ; -logie : étude",
+      "courseIds": [
+        "histoire_profession_infirmiere",
+        "ethique_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "preuve-scientifique",
+      "term": "Preuve scientifique",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Élément issu d'une démarche méthodique servant à étayer ou à contester une proposition.",
+      "distinction": "Une opinion d'expert peut informer sans constituer à elle seule une démonstration.",
+      "etymologie": "",
+      "courseIds": [
+        "epistemologie_savoirs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hypothese",
+      "term": "Hypothèse",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Proposition explicative pouvant être mise à l'épreuve par une observation ou une méthode de recherche.",
+      "distinction": "Un résultat est une observation obtenue après l'investigation.",
+      "etymologie": "",
+      "courseIds": [
+        "epistemologie_savoirs",
+        "methodes_travail_reussite"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "jurisprudence",
+      "term": "Jurisprudence",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Ensemble des décisions de justice dont l'interprétation éclaire l'application des règles de droit.",
+      "distinction": "Une loi est un texte normatif adopté selon la procédure législative.",
+      "etymologie": "",
+      "courseIds": [
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ordre-infirmier",
+      "term": "Ordre infirmier",
+      "theme": "Droit, éthique et profession infirmière",
+      "definition": "Institution professionnelle chargée notamment de missions déontologiques définies par la loi pour les infirmiers.",
+      "distinction": "Un syndicat défend des intérêts professionnels selon d'autres missions.",
+      "etymologie": "",
+      "courseIds": [
+        "histoire_profession_infirmiere",
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "meningite",
+      "term": "Méningite",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Inflammation des méninges entourant le système nerveux central, d'origine infectieuse ou non.",
+      "distinction": "L'encéphalite correspond à une inflammation du tissu cérébral.",
+      "etymologie": "méning- : méninges ; -ite : inflammation",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "encephalite",
+      "term": "Encéphalite",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Inflammation du parenchyme cérébral, souvent d'origine infectieuse ou immunologique.",
+      "distinction": "La méningite touche principalement les enveloppes méningées.",
+      "etymologie": "encéphal- : cerveau ; -ite : inflammation",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cystite",
+      "term": "Cystite",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Inflammation de la vessie, souvent liée à une infection bactérienne.",
+      "distinction": "La pyélonéphrite touche le rein et les voies urinaires hautes.",
+      "etymologie": "cyst- : vessie ; -ite : inflammation",
+      "courseIds": [
+        "infections_urinaires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pyelonephrite",
+      "term": "Pyélonéphrite",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection bactérienne du rein et des voies excrétrices hautes, pouvant entraîner de la fièvre et une douleur lombaire.",
+      "distinction": "La cystite atteint principalement la vessie.",
+      "etymologie": "pyélo- : bassinet rénal ; néphr- : rein",
+      "courseIds": [
+        "infections_urinaires",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pneumonie",
+      "term": "Pneumonie",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection aiguë du tissu pulmonaire, notamment alvéolaire, pouvant être causée par des bactéries ou des virus.",
+      "distinction": "La bronchite affecte principalement les bronches.",
+      "etymologie": "pneumo- : poumon",
+      "courseIds": [
+        "infections_pulmonaires_bacteriennes",
+        "infections_respiratoires_virales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bronchite",
+      "term": "Bronchite",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Inflammation de la muqueuse des bronches, très souvent infectieuse lorsqu'elle est aiguë.",
+      "distinction": "La pneumonie touche le parenchyme pulmonaire.",
+      "etymologie": "bronch- : bronche ; -ite : inflammation",
+      "courseIds": [
+        "infections_respiratoires_virales",
+        "infections_pulmonaires_bacteriennes"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "incubation",
+      "term": "Incubation",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Période comprise entre l'infection par un agent pathogène et l'apparition des premiers symptômes.",
+      "distinction": "La contagiosité décrit la capacité à transmettre l'agent infectieux.",
+      "etymologie": "",
+      "courseIds": [
+        "infections_respiratoires_virales",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ist",
+      "term": "IST",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection sexuellement transmissible, pouvant être symptomatique ou asymptomatique.",
+      "distinction": "Une maladie sexuellement transmissible désigne plus particulièrement une infection avec expression clinique.",
+      "etymologie": "",
+      "courseIds": [
+        "ist_hors_vih",
+        "systeme_reproducteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "depistage",
+      "term": "Dépistage",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Recherche d'une maladie ou d'un facteur de risque chez une personne ne présentant pas nécessairement de symptôme.",
+      "distinction": "Le diagnostic vise à identifier une affection suspectée dans un contexte clinique.",
+      "etymologie": "",
+      "courseIds": [
+        "ist_hors_vih",
+        "vaccination_prs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "cellulite-bacterienne",
+      "term": "Cellulite bactérienne",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection bactérienne des tissus cutanés et sous-cutanés, caractérisée notamment par une rougeur douloureuse.",
+      "distinction": "Une mycose cutanée est provoquée par un champignon.",
+      "etymologie": "",
+      "courseIds": [
+        "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "impetigo",
+      "term": "Impétigo",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection bactérienne superficielle de la peau, souvent caractérisée par des croûtes jaunâtres.",
+      "distinction": "L'érysipèle est une infection cutanée plus profonde.",
+      "etymologie": "",
+      "courseIds": [
+        "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "erysipele",
+      "term": "Érysipèle",
+      "theme": "Infections ciblées et dépistage",
+      "definition": "Infection bactérienne aiguë du derme et du réseau lymphatique superficiel, souvent à bordure nette.",
+      "distinction": "L'impétigo est une infection bactérienne superficielle de l'épiderme.",
+      "etymologie": "",
+      "courseIds": [
+        "infections_cutanees"
       ],
       "sourceType": "reference_pedagogique"
     }
