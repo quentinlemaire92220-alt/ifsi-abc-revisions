@@ -221,8 +221,8 @@ for(const marker of ['window.IFSI_VOCAB','flashcards=','function startQuiz()','f
 assert(vocabJs.includes("if(quiz.selected===q.answer)quiz.score++"),'Score QCM vocabulaire désynchronisé');
 assert(flashcardJs.includes("window.IFSI_VOCAB?.flashcards?.()"),'Flashcards non alimentées par le glossaire');
 for(const asset of ['./v8355-vocabulary.js','./vocabulaire-v1.json','./v8355-changelog.js']){assert(sw.includes(asset),'PWA : ressource vocabulaire absente : '+asset)}
-for(const src of ['v8355-vocabulary.js?v=8355','v8355-changelog.js?v=8355'])assert(indexHtml.includes(src),'Chargement navigateur absent : '+src);
-assert(indexHtml.includes('v8338-flashcards.js?v=8355'),'Flashcards existantes non conservées');
+for(const src of [`v8355-vocabulary.js?v=${releaseMeta.build}`,`v8355-changelog.js?v=${releaseMeta.build}`])assert(indexHtml.includes(src),'Chargement navigateur absent : '+src);
+assert(indexHtml.includes(`v8338-flashcards.js?v=${releaseMeta.build}`),'Flashcards existantes non conservées');
 assert(vocabJs.includes('body.v72-dark #v81Body .vg-entry')&&vocabJs.includes('background:linear-gradient(140deg,#292237,#211e2f)'),'Le contraste sombre de la carte vocabulaire est absent');
 assert(vocabJs.includes('<details class=')&&vocabJs.includes('d.open=true'),'Navigation repliable ou impression intégrale absente');
 console.log('✅ Vocabulaire : 195 termes / 23 thèmes, 45 cours, contraste sombre, QCM corrigés et PWA');
