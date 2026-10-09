@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const meta=JSON.parse(read('build-meta.json'));
+assert.ok(Number(meta.build)>=8357,'Build QCM non intégré');
+const app=read('v8357-qcm-access.js');
+for(const token of ['📋 QCM par cours','v8357QcmCard','v8312MyRevision','v8357Domain','v8357Course','v8357Theme','v8357Difficulty','v8357Count','v8357Mode','v8357Launch','IFSI_V8357_QCM','MutationObserver','aria-expanded'])assert.ok(app.includes(token),'Accès QCM incomplet : '+token);
+assert.match(app,/begin\(selected\)/,'Le bouton doit utiliser le moteur QCM commun');
+assert.match(app,/ifsiabc_v7_mode/,'Modes QCM existants non réutilisés');
+assert.match(app,/domain:'all',course:'all',theme:'all',difficulty:'all'/,'Filtres par défaut manquants');
+assert.match(app,/if\(state\.open\)populate\(\)/,'Filtres non restaurés après rendu du hub');
+const index=read('index.html'),sw=read('sw.js');
+assert.ok(index.includes('./v8357-qcm-access.js?v='+meta.build),'Carte QCM absente du chargement');
+assert.ok(sw.includes("'./v8357-qcm-access.js'"),'Carte QCM absente du pré-cache PWA');
+assert.ok(index.includes('./v8357-changelog.js?v='+meta.build),'Changelog QCM absent du chargement');
+assert.ok(sw.includes("'./v8357-changelog.js'"),'Changelog QCM absent du pré-cache PWA');
+console.log('✅ Accès QCM par cours, filtres, moteur et mise à jour PWA contrôlés');
