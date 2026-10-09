@@ -11,29 +11,10 @@ function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=t
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
 function normalizeMaxThreeAnswers(q){
  if(!q||q.answerCountNormalized===true||!Array.isArray(q.answers)||!Array.isArray(q.choices)||q.answers.length<=3)return q;
- if(q.answers.length!==4||![4,5].includes(q.choices.length))return q;
+ if(q.answers.length!==4||q.choices.length!==5)return q;
  const out={...q,choices:[...q.choices],answers:[...q.answers]};
  const letters='ABCDE',good=[...new Set(out.answers)].sort((a,b)=>a-b);
  if(good.length!==4)return out;
- if(q.choices.length===4){
-  const letters='ABCD',original=[...out.choices],all=[0,1,2,3];
-  const options=[
-   {yes:[0,1,2,3],no:[]},
-   {yes:[0,1],no:[2,3]},
-   {yes:[0,2],no:[1,3]},
-   {yes:[1,3],no:[0,2]},
-   {yes:[0,3],no:[1,2]}
-  ];
-  const shift=Array.from(String(out.id||'')).reduce((n,c)=>(n+c.charCodeAt(0))%5,0);
-  const ordered=options.slice(shift).concat(options.slice(0,shift));
-  const describe=x=>x.yes.map(i=>letters[i]).join(' et ')+' vraies'+(x.no.length?' ; '+x.no.map(i=>letters[i]).join(' et ')+' fausses':' ; aucune fausse');
-  out.question=`${String(out.question||'').trim()} — Propositions : ${original.map((s,i)=>letters[i]+'. '+s).join(' • ')} — Quelle analyse des quatre propositions est exacte ?`;
-  out.choices=ordered.map(describe);
-  out.answers=[ordered.findIndex(x=>x.yes.length===all.length)];
-  out.explanation=`${String(out.explanation||'').trim()} Les affirmations A, B, C et D sont toutes exactes ; chacune doit être retenue. Cette question a été reformatée sans changer le contenu scientifique.`;
-  out.answerCountNormalized=true;
-  return out;
- }
 
  const original=[...out.choices],all=[0,1,2,3,4],key=a=>a.join(',');
  const combos=all.map(omit=>all.filter(i=>i!==omit));
@@ -92,7 +73,7 @@ for(const key of knownQuarantine){
  else resolved4.alreadyCorrected.push(key);
 }
 console.log('SOURCES_4_4_RESOLUTION '+JSON.stringify(resolved4));
-assert(resolved4.missing.length===0,`QCM historiques encore absents: ${resolved4.missing.join(' | ')}`);
+assert(resolved4.missing.length===0&&resolved4.alreadyCorrected.length===53&&resolved4.reformatted.length===0,`Les 53 QCM historiques doivent provenir des correctifs pédagogiques existants et non d'une reformulation artificielle`);
 // Régression épistémologie après fusion des overrides : la vérité affichée doit rester cohérente avec la grille officielle.
 const semanticEpistemologyText=s=>String(s||'').replace(/CM[34]\s*•[\s\S]*$/,'').replace(/\s+(?:Cas Mme L\. avec Henderson|Théorie de gestion des symptômes \(TGS\)|Les six écoles de pensée|Métaparadigme selon les écoles|Théories infirmières|Niveaux d’abstraction et utilité)$/,'').replace(/\s+/g,' ').trim().toLowerCase();
 const epistemologyOfficial=new Map(epistemologyPack.map(q=>[q.id,q]));

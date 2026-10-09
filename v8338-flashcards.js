@@ -329,9 +329,22 @@ const FLASHCARD_REWRITES={
   "droit_intro_036": "Quels principes encadrent l'accès au juge en France ?",
   "droit_intro_060": "Quels sont le rôle et les effets possibles d'un pourvoi en cassation ?",
   "droit_intro_040": "Comment distinguer les ordres de juridiction administratif et judiciaire ?",
-  "droit_intro_021": "Quelle différence existe entre une directive et un règlement de l'Union européenne ?"
+  "droit_intro_021": "Quelle différence existe entre une directive et un règlement de l'Union européenne ?",
+"v820_a1p4_038": "Comment articuler théorie infirmière et modèle clinique pour guider le jugement et l'action ?",
+"droit_intro_049": "Quelles sont les fonctions et formations principales de la Cour de cassation ?",
+"repro_027": "Quel est le devenir du corps jaune et quelle hormone sécrète-t-il ?",
+"repro_025": "Quelles sont les caractéristiques d'un follicule primordial ?",
+"repro_033": "Quelles sont les caractéristiques de la phase sécrétoire du cycle menstruel ?"
 };
 const OMIT_FROM_FLASHCARDS=new Set(["v820_epist_025","v820_a1p4_033","v820_arthrose_039","v820_histoire_018"]);
+function revisionExplanation(qid,text){
+ const grounded={
+  v820_ias_083:'Deux doses sont retenues pour le schéma vaccinal mentionné chez le soignant non immunisé ; vérifier les recommandations en vigueur.',
+  v820_vitals_034:'Une saturation à 100 % ne suffit pas à elle seule : une polypnée importante reste un signe clinique nécessitant une évaluation.',
+  droit_intro_005:'La déontologie infirmière figure dans le Code de la santé publique et acquiert ainsi un cadre juridique.'
+ };
+ return grounded[qid]||text;
+}
 function revisionFront(qid,front){
  const raw=String(front||'');
  if(qid==='homeostasie_027'){
@@ -341,7 +354,7 @@ function revisionFront(qid,front){
  }
  return FLASHCARD_REWRITES[qid]||raw;
 }
-function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:revisionFront(q.id,contextualizeFront(p.front,q)),answers:p.answers,explanation:sanitizeExplanation(p.explanation),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
+function build(){const out=[];for(const c of reg()){const r=res(c.id),qs=Array.isArray(r.questions)?r.questions:[];if(!qs.length)continue;const candidates=[];for(const q of qs){if(OMIT_FROM_FLASHCARDS.has(q.id))continue;const parts=atomicCards(q),split=parts.length>1;parts.forEach((p,i)=>candidates.push({id:split?`fc:${q.id}:${i+1}`:`fc:${q.id}`,qid:q.id,courseId:c.id,course:c.label,theme:theme(q),difficulty:diff(q),kind:p.kind,front:revisionFront(q.id,contextualizeFront(p.front,q)),answers:p.answers,explanation:revisionExplanation(q.id,sanitizeExplanation(p.explanation)),officialSupport:!(r.sheets||[]).some(s=>s.officialSupport===false)}))}out.push(...selectCards(candidates,40))}deck=[...out,...(window.IFSI_VOCAB?.flashcards?.()||[])];return deck}
 function state(id){return read().cards?.[id]||null}function statusOf(id){const s=state(id);if(!s)return'unseen';if(s.status==='again'||(s.due&&s.due<=now()))return'again';return s.status||'learning'}
 function stats(cards=deck){let known=0,learning=0,again=0,unseen=0;for(const c of cards){const s=statusOf(c.id);if(s==='known')known++;else if(s==='learning')learning++;else if(s==='again')again++;else unseen++}return{known,learning,again,unseen,total:cards.length,mastered:cards.length?Math.round(known/cards.length*100):0}}
 function dueCards(cards=deck){return cards.filter(c=>{const s=state(c.id);return !!s&&(s.status==='again'||(s.due&&s.due<=now()))})}
