@@ -10,7 +10,8 @@ assert.equal(active.length,9,'Les huit infographies et la fiche maître sont att
 assert.match(sw,/validQuestions\(await decodePack\(name\),name\)/,'Un pack QCM peut contenir des questions invalides isolées');
 assert.match(sw,/v8360-changelog\.js/,'Le changelog courant doit être dans le cache PWA');
 assert.ok(!sw.includes('v76-home.js?v=761'),'Ancien cache de la page d’accueil');
-assert.ok(index.includes('v8360-changelog.js?v=8362'),'Changelog manquant dans index.html');
+const meta=JSON.parse(read('build-meta.json'));
+assert.ok(index.includes('v8360-changelog.js?v='+meta.build),'Changelog manquant dans index.html');
 assert.match(planning,/2026-10-08[^\n]*type:'Annulé'[^\n]*Pharmacologie des antalgiques/,'Séance de pharmacologie du 8 octobre non corrigée');
 assert.ok(planning.includes("e.type!=='Annulé'"),'Les séances annulées doivent être exclues du calendrier ICS');
 console.log('✅ Maths sans doublons, QCM filtrés individuellement, cache et planning contrôlés');
