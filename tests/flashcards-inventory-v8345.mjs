@@ -121,5 +121,6 @@ const report={
 };
 const curatedCoverage=Object.fromEntries(["diagnostic_virologie_022","immunitaire_033","v820_digest2_008","v820_loco_042","droit_intro_060","droit_intro_049","repro_025"].map(id=>[id,deck.filter(c=>c.qid===id).length]));
 console.log('CURATED_ATOMIC_COVERAGE_JSON '+JSON.stringify(curatedCoverage));
+for(const [id,count] of Object.entries(curatedCoverage))if(count<2)throw new Error('Cartes atomiques insuffisamment visibles dans le cours : '+id+' ('+count+')');
 console.log('FLASHCARD_INVENTORY_JSON');
 console.log(JSON.stringify(report,null,2));

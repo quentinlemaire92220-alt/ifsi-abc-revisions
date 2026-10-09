@@ -386,9 +386,12 @@ function hash(s){let h=2166136261;for(const c of String(s)){h^=c.charCodeAt(0);h
 function selectCards(cards,max=40){
   const seen=new Set(),clean=[];
   for(const c of cards){const k=String(c.front||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();if(!k||seen.has(k)||vagueFront(c.front))continue;seen.add(k);clean.push(c)}
-  const groups=new Map();for(const c of clean){const k=c.theme||'Général';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c)}
+  const priority=clean.filter(c=>Object.prototype.hasOwnProperty.call(CURATED_ATOMIC_FRONTS,c.qid));
+  const priorityIds=new Set(priority.map(c=>c.id));
+  const remaining=clean.filter(c=>!priorityIds.has(c.id));
+  const groups=new Map();for(const c of remaining){const k=c.theme||'Général';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c)}
   for(const a of groups.values())a.sort((x,y)=>hash(x.id)-hash(y.id));
-  const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=[];let round=0;
+  const keys=[...groups.keys()].sort((a,b)=>a.localeCompare(b,'fr')),out=priority.slice(0,max);let round=0;
   while(out.length<Math.min(max,clean.length)){let added=0;for(const k of keys){const a=groups.get(k),c=a[round];if(c&&out.length<max){out.push(c);added++}}if(!added)break;round++}
   return out
 }
