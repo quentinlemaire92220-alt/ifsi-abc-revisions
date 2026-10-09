@@ -65,3 +65,15 @@ assert.match(searchNodes.get('v813Results').innerHTML,/Système respiratoire/);
 assert.match(searchNodes.get('v813Results').innerHTML,/2 vocaux/);
 assert.doesNotMatch(searchNodes.get('v813Results').innerHTML,/vocalaux|Aucun cours/);
 console.log('✅ Recherche saisie avant chargement actualisée et pluriel vocaux correct');
+
+// Result observers re-enter rendering after DOM updates: the existing report must survive.
+let report=null,reportWrites=0;const bumps=[];const reportButtons={v81Errors:{},v81Low:{},v81HubBtn:{}};
+const resultCard={querySelector:()=>report,appendChild:n=>{report=n;reportWrites++}};
+const resultContext={session:[{id:'test',theme:'Respiration',difficulty:'easy'}],res:[true],last:'',bump:(...x)=>bumps.push(x),document:{querySelector:()=>resultCard,createElement:()=>({dataset:{},remove(){report=null}})},$:id=>reportButtons[id],T:q=>q.theme,D:q=>q.difficulty,E:s=>s,showHub:()=>{},start:()=>{},SH:a=>a,pick:a=>a,QQ:()=>[]};
+vm.createContext(resultContext);vm.runInContext(between(read('v81-suite.js'),'function result(){','function homeMini(){'),resultContext);
+vm.runInContext('result()',resultContext);const firstReport=report,firstHandler=reportButtons.v81HubBtn.onclick;
+for(let i=0;i<10;i++)vm.runInContext('result()',resultContext);
+assert.equal(reportWrites,1,'Le bilan se reconstruit en boucle');assert.equal(report,firstReport);assert.equal(reportButtons.v81HubBtn.onclick,firstHandler);assert.equal(bumps.length,2,'Session recomptée');
+resultContext.res=[false];vm.runInContext('result()',resultContext);
+assert.equal(reportWrites,2,'Un résultat réellement modifié doit être recalculé');assert.match(report.innerHTML,/Mes erreurs \(1\)/);
+console.log('✅ Bilan stable lors des notifications DOM, boutons conservés, résultat modifié recalculé');
