@@ -1,5 +1,5 @@
 {
-  "version": "8.30.57",
+  "version": "8.30.58",
   "auditedAt": "2026-10-09",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.56 : enrichissement du glossaire à 195 termes / 23 thèmes et correction contraste sombre, sans modification des ressources Drive ni des QCM historiques.",
+  "note": "V8.30.58 : dictionnaire déplacé dans Cours, ressources de vocabulaire et flashcards associées aux cours, sans modification des supports Drive ni des QCM historiques.",
   "expectedTotals": {
     "courses": 45,
     "sheets": 52,
