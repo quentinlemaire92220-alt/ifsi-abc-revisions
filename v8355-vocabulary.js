@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const V='8.30.55',ID='v8355Vocab',KEY='ifsiabc_vocab_scores_v1';
+const V='8.30.56',ID='v8355Vocab',KEY='ifsiabc_vocab_scores_v1';
 const $=id=>document.getElementById(id);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fold=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/œ/g,'oe');
