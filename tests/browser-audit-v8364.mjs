@@ -51,3 +51,17 @@ const searchContext={document:{getElementById:id=>id==='v76Home'?{}:id==='v86Too
 vm.createContext(searchContext);vm.runInContext("const $=id=>document.getElementById(id);"+between(read('v86-home-clean.js'),'function tools(){','function dialog(){'),searchContext);vm.runInContext('tools()',searchContext);
 assert.equal(vm.runInContext("inferMeta('v8339Change','Flashcards et objectifs mieux intégrés. Vocaux disponibles').type",newsctx),'app');
 console.log('✅ Recherche moderne conservée, ancien panneau vocaux classé dans les évolutions');
+
+// A query entered before registry readiness must refresh without another keystroke.
+const searchNodes=new Map([['v813css',{}],['v86Tools',{dataset:{v813:'1'}}],['v813Search',{value:'respiratoire'}],['v813Results',{innerHTML:''}],['v813Quick',{innerHTML:''}]]);
+let loadedCourses=[];const events={};
+const discoveryWindow={IFSI_V741:{getRegistry:()=>({courses:loadedCourses}),resourcesForCourse:()=>({questions:[{}],vocals:[{},{}]})},addEventListener:(name,fn)=>events[name]=fn};
+const discoveryContext={window:discoveryWindow,document:{getElementById:id=>searchNodes.get(id),querySelectorAll:()=>[]},setInterval:()=>0,clearInterval:()=>{},requestAnimationFrame:fn=>fn()};
+vm.createContext(discoveryContext);vm.runInContext(read('v813-home-discovery.js'),discoveryContext);
+discoveryWindow.IFSI_V813.apply();assert.match(searchNodes.get('v813Results').innerHTML,/Aucun cours/);
+loadedCourses=[{id:'resp',label:'Système respiratoire'}];events['ifsi:v741-ready']();
+assert.equal(searchNodes.get('v813Search').value,'respiratoire');
+assert.match(searchNodes.get('v813Results').innerHTML,/Système respiratoire/);
+assert.match(searchNodes.get('v813Results').innerHTML,/2 vocaux/);
+assert.doesNotMatch(searchNodes.get('v813Results').innerHTML,/vocalaux|Aucun cours/);
+console.log('✅ Recherche saisie avant chargement actualisée et pluriel vocaux correct');
