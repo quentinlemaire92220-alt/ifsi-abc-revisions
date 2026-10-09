@@ -27,8 +27,8 @@ const REVIEW_LEVEL_BY_ID=Object.freeze({
  'cdm2_137':8,
  'cdm2_138':8,
  'cdm2_139':8,
- 'cdm_019':8,
- 'cdm_067':8,
+ 'cdm_061':9,
+ 'cdm_062':9,
  'cdm_068':8,
  'cdm_069':8,
  'cdm_063':10,
@@ -62,9 +62,9 @@ function difficultyOf(q){return ['easy','medium','hard'].includes(q?.difficulty)
 function qstats(){try{return typeof st==='function'?(st().v7QuestionStats||{}):{}}catch{return {}}}
 function statsFor(level,difficulty=null){const qs=calcQuestions().filter(q=>levelOf(q)===level&&(!difficulty||difficultyOf(q)===difficulty));const s=qstats();let seen=0,answered=0,correct=0;for(const q of qs){const x=s[q.id];if(x?.answered){seen++;answered+=x.answered||0;correct+=x.correct||0}}return{total:qs.length,seen,answered,correct,rate:answered?Math.round(correct/answered*100):null}}
 function passed(s,minSeen){return s.seen>=Math.min(minSeen,s.total)&&s.rate!==null&&s.rate>=80}
-function stageFor(level){const e=statsFor(level,'easy'),m=statsFor(level,'medium'),h=statsFor(level,'hard');if(!passed(e,4))return'easy';if(!passed(m,5))return'medium';if(!passed(h,2))return'hard';return'mixed'}
-function mastery(level){const all=statsFor(level);return stageFor(level)==='mixed'&&all.rate!==null&&all.rate>=80}
-function stageLabel(s){return s==='easy'?'🟢 Facile':s==='medium'?'🟠 Moyen':s==='hard'?'🔴 Difficile':'🟣 Mixte'}
+function stageFor(level){const e=statsFor(level,'easy'),m=statsFor(level,'medium'),h=statsFor(level,'hard');if(e.total&&!passed(e,4))return'easy';if(m.total&&!passed(m,5))return'medium';if(h.total&&!passed(h,2))return'hard';return statsFor(level).total?'mixed':'empty'}
+function mastery(level){const all=statsFor(level);return all.total>0&&stageFor(level)==='mixed'&&all.rate!==null&&all.rate>=80}
+function stageLabel(s){return s==='empty'?'Aucun QCM':s==='easy'?'🟢 Facile':s==='medium'?'🟠 Moyen':s==='hard'?'🔴 Difficile':'🟣 Mixte'}
 function currentCourseTitle(){return document.querySelector('#v74CourseDetail .v74-course-head h2')?.textContent?.trim()||''}
 function isCalcPage(){return /calculs? de doses|math[eé]matiques/i.test(currentCourseTitle())}
 function css(){if($('calcMasteryCss'))return;const s=document.createElement('style');s.id='calcMasteryCss';s.textContent=`
