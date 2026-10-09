@@ -1,6 +1,12 @@
 (()=>{'use strict';
-const V='8.30.58',$=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.64',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8364Change:{type:'app',badges:['CORRECTIF']},
+  v8363Change:{type:'app',badges:['CORRECTIF']},
+  v8362Change:{type:'app',badges:['CORRECTIF']},
+  v8361Change:{type:'app',badges:['CORRECTIF']},
+  v8360Change:{type:'app',badges:['CORRECTIF']},
+  v8359Change:{type:'resource',badges:['RESSOURCE']},
   v8358Change:{type:'app',badges:['UX/UI','RESSOURCE']},
   v8357Change:{type:'app',badges:['UX/UI','CORRECTIF']},
   v8356Change:{type:'app',badges:['UX/UI','RESSOURCE']},
@@ -36,6 +42,8 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
+  '8.30.64':'10/10/2026',
+  '8.30.63':'09/10/2026','8.30.62':'09/10/2026','8.30.61':'09/10/2026','8.30.60':'09/10/2026','8.30.59':'09/10/2026',
   '8.30.58':'09/10/2026',
   '8.30.57':'09/10/2026',
   '8.30.56':'09/10/2026',
@@ -143,7 +151,7 @@ function pedagogicalCopy(copy){
 function newsEntries(){
   const box=$('v742Changelog');if(!box)return [];
   return [...box.querySelectorAll('details .small > span[id$="Change"]')].map(span=>{
-    const lines=linesFromSpan(span),title=lines[0]||span.querySelector('b')?.textContent?.trim()||'',copy=lines.slice(1).join(' '),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
+    const lines=linesFromSpan(span),title=span.querySelector('b')?.textContent?.trim()||lines[0]||'',copy=span.textContent.replace(title,'').trim(),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
     return {id:span.id,title,copy:displayCopy,date:dateForTitle(title,span),type:meta.type,badges:meta.badges||[]};
   }).filter(x=>x.title);
 }
@@ -162,7 +170,7 @@ function renderNews(){
   drawNews();return true;
 }
 function resourceEntries(){return newsEntries().filter(x=>x.type==='resource')}
-function appEntries(){return newsEntries().filter(x=>x.type==='app')}
+function appEntries(){return newsEntries().filter(x=>x.type==='app').sort((a,b)=>versionFromTitle(b.title).localeCompare(versionFromTitle(a.title),'en',{numeric:true}))}
 function drawNews(){
   const list=$('v8312NewsList'),more=$('v8312NewsMore');if(!list)return;
   const filtered=resourceEntries(),shown=newsExpanded?filtered:filtered.slice(0,4);
@@ -216,7 +224,7 @@ function decorateSettingsDates(){
   const box=$('v87Log');if(!box)return false;
   box.querySelectorAll('details summary').forEach(summary=>{
     if(summary.querySelector('.v8312-log-date'))return;
-    const date=dateForTitle(summary.textContent.trim());
+    const title=summary.textContent.trim(),entry=appEntries().find(x=>x.title===title);const date=entry?.date||dateForTitle(title);
     const tag=document.createElement('span');tag.className='v8312-log-date';tag.textContent='📅 '+date;summary.appendChild(tag);
   });
   return true;

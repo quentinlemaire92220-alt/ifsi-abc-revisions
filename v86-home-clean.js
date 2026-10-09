@@ -24,7 +24,7 @@ function tools(){
  let box=$('v86Tools');if(!box){box=document.createElement('section');box.id='v86Tools';box.className='v86-tools';box.innerHTML=`
  <button id="v86Search" class="v86-tool"><span class="i">🔎</span><span><b>Rechercher</b><small>Cours, QCM et ressources</small></span></button>
  <button id="v86Settings" class="v86-tool"><span class="i">⚙️</span><span><b>Réglages</b><small>Affichage et application</small></span></button>`;
- const today=host.querySelector('.v76-today');today?.insertAdjacentElement('afterend',box)}
+ const today=host.querySelector('.v76-today');if(today)today.insertAdjacentElement('afterend',box);else host.appendChild(box)}
  $('v86Search').onclick=()=>{window.IFSI_V81?.showHub?.();setTimeout(()=>{if(window.IFSI_V828?.openSearch)return window.IFSI_V828.openSearch();$('v828SearchToggle')?.click();const el=$('v81S');el?.scrollIntoView({behavior:'smooth',block:'center'});el?.focus()},180)};
  $('v86Settings').onclick=()=>window.IFSI_V87?.showSettings?.()||openSettings();
 }

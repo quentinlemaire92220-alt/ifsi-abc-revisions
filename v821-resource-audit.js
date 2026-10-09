@@ -87,7 +87,7 @@ function evaluate(c){
 async function loadSnapshot(){if(snapshot)return snapshot;try{const r=await fetch('./resource-audit-v821.json',{cache:'no-store'});if(!r.ok)throw new Error('snapshot indisponible');snapshot=await r.json()}catch(e){snapshot={version:V,auditedAt:'inconnu',expectedTotals:{},atlasBoardContracts:{}}}return snapshot}
 function byCourseRows(c){
  const rows=Object.entries(c.audit?.byCourse||{}).filter(([,x])=>x.qcm+x.sheets+x.infographics+x.vocals).sort((a,b)=>a[1].label.localeCompare(b[1].label,'fr'));
- return rows.map(([id,x])=>{const atlas=c.atlasByCourse[id]||0;return `<div class="v821-row"><div><b>${E(x.label)}</b><small>${E(id)}</small></div><span>${x.qcm} QCM • ${x.sheets} fiche${x.sheets>1?'s':''} • ${x.infographics} info • ${x.vocals} vocal${x.vocals>1?'aux':''}${atlas?' • '+atlas+' planche'+(atlas>1?'s':''):''}</span></div>`}).join('');
+ return rows.map(([id,x])=>{const atlas=c.atlasByCourse[id]||0;return `<div class="v821-row"><div><b>${E(x.label)}</b><small>${E(id)}</small></div><span>${x.qcm} QCM • ${x.sheets} fiche${x.sheets>1?'s':''} • ${x.infographics} info • ${x.vocals} ${x.vocals>1?'vocaux':'vocal'}${atlas?' • '+atlas+' planche'+(atlas>1?'s':''):''}</span></div>`}).join('');
 }
 function renderBalance(c){const box=$('v821Balance');if(!box)return;const f=c.balance?.flagged||[];if(!f.length){box.innerHTML='<div class="small">✅ Aucun biais fort détecté avec les seuils statistiques actuels.</div>';return}box.innerHTML=f.map(x=>`<div class="v821-row"><div><b>${E(x.label)}</b><small>${x.n} questions analysées</small></div><span>${x.reasons.map(E).join('<br>')}</span></div>`).join('')}
 function flashcardAudit(){
@@ -108,8 +108,8 @@ function renderFlashcards(fc){const el=$('v821Flashcards');if(!el)return;el.inne
 function render(){
  const box=$('v821AuditCard');if(!box)return;
  if(!last){box.querySelector('#v821Status').innerHTML='<span class="v821-dot wait"></span>Audit prêt';return}
- const {c,e}=last,fc=flashcardAudit(),stamp=snapshot?.auditedAt||'—',state=e.ok?'✅ Catalogue cohérent':'❌ Anomalies détectées';
- box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${e.ok?'ok':'bad'}"></span><b>${state}</b>`;
+ const {c,e}=last,fc=flashcardAudit(),stamp=snapshot?.auditedAt||'—',clean=e.ok&&!e.warnings.length&&!fc.bad.length,state=!e.ok||fc.bad.length?'❌ Anomalies détectées':e.warnings.length?'⚠️ Points à vérifier':'✅ Catalogue cohérent';
+ box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${clean?'ok':e.ok&&!fc.bad.length?'wait':'bad'}"></span><b>${state}</b>`;
  box.querySelector('#v821Meta').textContent=`Référence Drive validée : ${stamp} • contrôle local : ${new Date().toLocaleString('fr-FR')}`;
  box.querySelector('#v821Counts').innerHTML=`
   <span><b>${c.courses}</b><small>cours</small></span><span><b>${c.qcm}</b><small>QCM</small></span><span><b>${fc.total}</b><small>flashcards</small></span><span><b>${c.sheets}</b><small>fiches</small></span><span><b>${c.infographics}</b><small>infographies</small></span><span><b>${c.vocals}</b><small>vocaux</small></span><span><b>${c.atlas}</b><small>planches HD</small></span>`;
