@@ -124,5 +124,8 @@ jobs:
       - name: Vérifier les parcours corrigés par l’audit navigateur
         run: node tests/browser-audit-v8364.mjs
 
+      - name: Vérifier les banques réellement décodées dans le navigateur
+        run: node tests/browser-runtime-v8370.mjs
+
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs

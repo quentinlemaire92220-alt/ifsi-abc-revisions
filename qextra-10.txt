@@ -1,1 +1,2795 @@
-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
+[
+  {
+    "id": "cdm2_101",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 101,
+    "question": "Convertis 3 g en mg.",
+    "choices": [
+      "30000 mg",
+      "300000 mg",
+      "300 mg",
+      "3000 mg",
+      "3 mg"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 g = 1 000 mg. Donc 3 × 1 000 = 3000 mg."
+  },
+  {
+    "id": "cdm2_102",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 102,
+    "question": "Convertis 0,45 g en mg.",
+    "choices": [
+      "0,45 mg",
+      "45 mg",
+      "4500 mg",
+      "450 mg",
+      "45000 mg"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 g = 1 000 mg. Donc 0,45 × 1 000 = 450 mg."
+  },
+  {
+    "id": "cdm2_103",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 103,
+    "question": "Convertis 1,8 g en mg.",
+    "choices": [
+      "180000 mg",
+      "1800 mg",
+      "180 mg",
+      "18000 mg",
+      "1,8 mg"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "1 g = 1 000 mg. Donc 1,8 × 1 000 = 1800 mg."
+  },
+  {
+    "id": "cdm2_104",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 104,
+    "question": "Convertis 0,12 L en mL.",
+    "choices": [
+      "1200 mL",
+      "12 mL",
+      "0,12 mL",
+      "12000 mL",
+      "120 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 0,12 × 1 000 = 120 mL."
+  },
+  {
+    "id": "cdm2_105",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 105,
+    "question": "Convertis 1,25 L en mL.",
+    "choices": [
+      "125 mL",
+      "125000 mL",
+      "1,25 mL",
+      "12500 mL",
+      "1250 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 1,25 × 1 000 = 1250 mL."
+  },
+  {
+    "id": "cdm2_106",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "easy",
+    "level": 1,
+    "number": 106,
+    "question": "Convertis 0,6 L en mL.",
+    "choices": [
+      "6000 mL",
+      "60000 mL",
+      "60 mL",
+      "600 mL",
+      "0,6 mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 0,6 × 1 000 = 600 mL."
+  },
+  {
+    "id": "cdm2_107",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 107,
+    "question": "Une étiquette indique 2500 µg. Exprime cette masse en mg.",
+    "choices": [
+      "2,5 mg",
+      "25 mg",
+      "250 mg",
+      "0,25 mg",
+      "2500 mg"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "1 mg = 1 000 µg. Donc 2500 ÷ 1 000 = 2,5 mg."
+  },
+  {
+    "id": "cdm2_108",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 108,
+    "question": "Une étiquette indique 750 µg. Exprime cette masse en mg.",
+    "choices": [
+      "7,5 mg",
+      "750 mg",
+      "0,75 mg",
+      "0,08 mg",
+      "0,07 mg"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "1 mg = 1 000 µg. Donc 750 ÷ 1 000 = 0,75 mg."
+  },
+  {
+    "id": "cdm2_109",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 109,
+    "question": "Une étiquette indique 4800 µg. Exprime cette masse en mg.",
+    "choices": [
+      "4800 mg",
+      "4,8 mg",
+      "0,48 mg",
+      "48 mg",
+      "480 mg"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "1 mg = 1 000 µg. Donc 4800 ÷ 1 000 = 4,8 mg."
+  },
+  {
+    "id": "cdm2_110",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 110,
+    "question": "Une étiquette indique 125 µg. Exprime cette masse en mg.",
+    "choices": [
+      "0,01 mg",
+      "12,5 mg",
+      "125 mg",
+      "1,25 mg",
+      "0,12 mg"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 mg = 1 000 µg. Donc 125 ÷ 1 000 = 0,12 mg."
+  },
+  {
+    "id": "cdm2_111",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 111,
+    "question": "Convertis 350 mL en litres.",
+    "choices": [
+      "0,35 L",
+      "0,03 L",
+      "3,5 L",
+      "0 L",
+      "35 L"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 350 ÷ 1 000 = 0,35 L."
+  },
+  {
+    "id": "cdm2_112",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 112,
+    "question": "Convertis 75 mL en litres.",
+    "choices": [
+      "7,5 L",
+      "0,75 L",
+      "0 L",
+      "0,07 L",
+      "0,01 L"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 75 ÷ 1 000 = 0,07 L."
+  },
+  {
+    "id": "cdm2_113",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 113,
+    "question": "Convertis 1250 mL en litres.",
+    "choices": [
+      "125 L",
+      "12,5 L",
+      "0,01 L",
+      "0,12 L",
+      "1,25 L"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 1250 ÷ 1 000 = 1,25 L."
+  },
+  {
+    "id": "cdm2_114",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 114,
+    "question": "Convertis 0,008 kg en grammes.",
+    "choices": [
+      "800 g",
+      "0,8 g",
+      "80 g",
+      "0,08 g",
+      "8 g"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 kg = 1 000 g. Donc 0,008 × 1 000 = 8 g."
+  },
+  {
+    "id": "cdm2_115",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 115,
+    "question": "Convertis 0,025 kg en grammes.",
+    "choices": [
+      "2,5 g",
+      "0,25 g",
+      "250 g",
+      "25 g",
+      "2500 g"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 kg = 1 000 g. Donc 0,025 × 1 000 = 25 g."
+  },
+  {
+    "id": "cdm2_116",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "medium",
+    "level": 1,
+    "number": 116,
+    "question": "Convertis 1,4 kg en grammes.",
+    "choices": [
+      "140 g",
+      "14 g",
+      "1400 g",
+      "140000 g",
+      "14000 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "1 kg = 1 000 g. Donc 1,4 × 1 000 = 1400 g."
+  },
+  {
+    "id": "cdm2_117",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "hard",
+    "level": 1,
+    "number": 117,
+    "question": "Quelles équivalences sont exactes ?",
+    "choices": [
+      "0,035 g = 35 mg",
+      "35 mg = 35 000 µg",
+      "1,25 L = 1 250 mL",
+      "0,035 g = 3,5 mg",
+      "125 cL = 125 mL"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "On harmonise les unités : ×1 000 de g vers mg et de mg vers µg ; 1 L = 1 000 mL."
+  },
+  {
+    "id": "cdm2_118",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "hard",
+    "level": 1,
+    "number": 118,
+    "question": "Une quantité est de 0,006 kg. Combien cela représente-t-il en mg ?",
+    "choices": [
+      "600 mg",
+      "6 mg",
+      "60 mg",
+      "6000 mg",
+      "60000 mg"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "0,006 kg = 6 g, puis 6 g = 6 000 mg."
+  },
+  {
+    "id": "cdm2_119",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "hard",
+    "level": 1,
+    "number": 119,
+    "question": "Un volume de 0,75 L doit être exprimé en cL.",
+    "choices": [
+      "7500 cL",
+      "7,5 cL",
+      "750 cL",
+      "0,75 cL",
+      "75 cL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1 L = 100 cL. Donc 0,75 × 100 = 75 cL."
+  },
+  {
+    "id": "cdm2_120",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions et lecture des unités",
+    "difficulty": "hard",
+    "level": 1,
+    "number": 120,
+    "question": "Pour comparer 0,05 L, 75 mL et 1 dL, quelles affirmations sont exactes ?",
+    "choices": [
+      "1 dL = 100 mL",
+      "1 dL = 10 mL",
+      "0,05 L = 50 mL",
+      "75 mL est inférieur à 0,05 L",
+      "0,05 L < 75 mL < 1 dL"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "On convertit tout en mL : 50 mL, 75 mL et 100 mL."
+  },
+  {
+    "id": "cdm2_121",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 121,
+    "question": "Transforme 2 h 15 min en minutes.",
+    "choices": [
+      "120 min",
+      "195 min",
+      "215 min",
+      "135 min",
+      "75 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "2 × 60 + 15 = 135 min."
+  },
+  {
+    "id": "cdm2_122",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 122,
+    "question": "Transforme 4 h 20 min en minutes.",
+    "choices": [
+      "260 min",
+      "320 min",
+      "200 min",
+      "420 min",
+      "240 min"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "4 × 60 + 20 = 260 min."
+  },
+  {
+    "id": "cdm2_123",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 123,
+    "question": "Transforme 1 h 45 min en minutes.",
+    "choices": [
+      "60 min",
+      "165 min",
+      "45 min",
+      "105 min",
+      "145 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "1 × 60 + 45 = 105 min."
+  },
+  {
+    "id": "cdm2_124",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 124,
+    "question": "Transforme 6 h 05 min en minutes.",
+    "choices": [
+      "425 min",
+      "305 min",
+      "365 min",
+      "605 min",
+      "360 min"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "6 × 60 + 5 = 365 min."
+  },
+  {
+    "id": "cdm2_125",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 125,
+    "question": "Transforme 3 h 30 min en minutes.",
+    "choices": [
+      "330 min",
+      "210 min",
+      "270 min",
+      "150 min",
+      "180 min"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "3 × 60 + 30 = 210 min."
+  },
+  {
+    "id": "cdm2_126",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "level": 2,
+    "number": 126,
+    "question": "Transforme 5 h 50 min en minutes.",
+    "choices": [
+      "410 min",
+      "290 min",
+      "550 min",
+      "300 min",
+      "350 min"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "5 × 60 + 50 = 350 min."
+  },
+  {
+    "id": "cdm2_127",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 127,
+    "question": "185 minutes correspondent à :",
+    "choices": [
+      "2 h 05 min",
+      "3 h 05 min",
+      "3 h 15 min",
+      "1 h 85 min",
+      "4 h 05 min"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "On divise 185 par 60 : quotient 3 h, reste 5 min."
+  },
+  {
+    "id": "cdm2_128",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 128,
+    "question": "365 minutes correspondent à :",
+    "choices": [
+      "3 h 65 min",
+      "6 h 15 min",
+      "5 h 05 min",
+      "6 h 05 min",
+      "7 h 05 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "On divise 365 par 60 : quotient 6 h, reste 5 min."
+  },
+  {
+    "id": "cdm2_129",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 129,
+    "question": "510 minutes correspondent à :",
+    "choices": [
+      "8 h 30 min",
+      "5 h 10 min",
+      "9 h 30 min",
+      "8 h 40 min",
+      "7 h 30 min"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "On divise 510 par 60 : quotient 8 h, reste 30 min."
+  },
+  {
+    "id": "cdm2_130",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 130,
+    "question": "95 minutes correspondent à :",
+    "choices": [
+      "2 h 35 min",
+      "1 h 45 min",
+      "0 h 95 min",
+      "1 h 35 min",
+      "0 h 35 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "On divise 95 par 60 : quotient 1 h, reste 35 min."
+  },
+  {
+    "id": "cdm2_131",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 131,
+    "question": "745 minutes correspondent à :",
+    "choices": [
+      "12 h 35 min",
+      "13 h 25 min",
+      "12 h 25 min",
+      "11 h 25 min",
+      "7 h 45 min"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "On divise 745 par 60 : quotient 12 h, reste 25 min."
+  },
+  {
+    "id": "cdm2_132",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 132,
+    "question": "Une administration débute à 21 h 35 et dure 4 h 50. Heure de fin ?",
+    "choices": [
+      "04 h 25",
+      "02 h 35",
+      "02 h 25 le lendemain",
+      "03 h 25",
+      "21 h 35"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "On additionne la durée à l'heure de départ. Résultat : 02 h 25 le lendemain."
+  },
+  {
+    "id": "cdm2_133",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 133,
+    "question": "Une administration débute à 22 h 10 et dure 8 h 00. Heure de fin ?",
+    "choices": [
+      "07 h 10",
+      "22 h 10",
+      "06 h 10 le lendemain",
+      "06 h 20",
+      "08 h 10"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "On additionne la durée à l'heure de départ. Résultat : 06 h 10 le lendemain."
+  },
+  {
+    "id": "cdm2_134",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 134,
+    "question": "Une administration débute à 14 h 45 et dure 0 h 30. Heure de fin ?",
+    "choices": [
+      "15 h 25",
+      "15 h 15",
+      "17 h 15",
+      "16 h 15",
+      "14 h 45"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "On additionne la durée à l'heure de départ. Résultat : 15 h 15."
+  },
+  {
+    "id": "cdm2_135",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 135,
+    "question": "Une administration débute à 23 h 20 et dure 2 h 55. Heure de fin ?",
+    "choices": [
+      "04 h 15",
+      "23 h 20",
+      "02 h 25",
+      "03 h 15",
+      "02 h 15 le lendemain"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "On additionne la durée à l'heure de départ. Résultat : 02 h 15 le lendemain."
+  },
+  {
+    "id": "cdm2_136",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "level": 2,
+    "number": 136,
+    "question": "Une administration débute à 07 h 25 et dure 5 h 40. Heure de fin ?",
+    "choices": [
+      "07 h 25",
+      "14 h 05",
+      "15 h 05",
+      "13 h 15",
+      "13 h 05"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "On additionne la durée à l'heure de départ. Résultat : 13 h 05."
+  },
+  {
+    "id": "cdm2_137",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "hard",
+    "level": 2,
+    "number": 137,
+    "question": "3 prises également espacées sur 24 h débutent à 09 h. Quels sont les horaires du premier cycle ?",
+    "choices": [
+      "Intervalle 7 h",
+      "09 h ; 17 h ; 01 h",
+      "Intervalle 12 h",
+      "Intervalle 9 h",
+      "10 h ; 18 h ; 02 h"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Intervalle = 24 ÷ 3 = 8 h. On ajoute successivement 8 h."
+  },
+  {
+    "id": "cdm2_138",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "hard",
+    "level": 2,
+    "number": 138,
+    "question": "4 prises également espacées sur 24 h débutent à 22 h. Quels sont les horaires du premier cycle ?",
+    "choices": [
+      "Intervalle 5 h",
+      "Intervalle 12 h",
+      "23 h ; 05 h ; 11 h ; 17 h",
+      "Intervalle 7 h",
+      "22 h ; 04 h ; 10 h ; 16 h"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Intervalle = 24 ÷ 4 = 6 h. On ajoute successivement 6 h."
+  },
+  {
+    "id": "cdm2_139",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "hard",
+    "level": 2,
+    "number": 139,
+    "question": "2 prises également espacées sur 24 h débutent à 07 h. Quels sont les horaires du premier cycle ?",
+    "choices": [
+      "Intervalle 11 h",
+      "Intervalle 13 h",
+      "08 h ; 20 h",
+      "Intervalle 8 h",
+      "07 h ; 19 h"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Intervalle = 24 ÷ 2 = 12 h. On ajoute successivement 12 h."
+  },
+  {
+    "id": "cdm2_140",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "hard",
+    "level": 2,
+    "number": 140,
+    "question": "Concernant les durées, quelles affirmations sont exactes ?",
+    "choices": [
+      "24 h = 1 440 min",
+      "2 h 30 = 150 min",
+      "1 min = 100 s",
+      "2 h 30 = 2,30 h",
+      "2 h 30 = 2,5 h"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "30 min = 0,5 h ; 2 h 30 = 150 min. Une heure comporte 60 min, une minute 60 s."
+  },
+  {
+    "id": "cdm2_141",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 141,
+    "question": "Quelle masse contient 100 mL d'une solution à 5 % ?",
+    "choices": [
+      "5 g",
+      "0,5 g",
+      "50 g",
+      "1 g",
+      "500 g"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "5 % = 5 g/100 mL. Masse = 5 × 100 ÷ 100 = 5 g."
+  },
+  {
+    "id": "cdm2_142",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 142,
+    "question": "Quelle masse contient 50 mL d'une solution à 10 % ?",
+    "choices": [
+      "5 g",
+      "10 g",
+      "500 g",
+      "0,5 g",
+      "50 g"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "10 % = 10 g/100 mL. Masse = 10 × 50 ÷ 100 = 5 g."
+  },
+  {
+    "id": "cdm2_143",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 143,
+    "question": "Quelle masse contient 250 mL d'une solution à 2 % ?",
+    "choices": [
+      "0,5 g",
+      "2,5 g",
+      "5 g",
+      "2 g",
+      "50 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "2 % = 2 g/100 mL. Masse = 2 × 250 ÷ 100 = 5 g."
+  },
+  {
+    "id": "cdm2_144",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 144,
+    "question": "Quelle masse contient 200 mL d'une solution à 15 % ?",
+    "choices": [
+      "300 g",
+      "2 g",
+      "15 g",
+      "30 g",
+      "3 g"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "15 % = 15 g/100 mL. Masse = 15 × 200 ÷ 100 = 30 g."
+  },
+  {
+    "id": "cdm2_145",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 145,
+    "question": "Quelle masse contient 500 mL d'une solution à 4 % ?",
+    "choices": [
+      "200 g",
+      "2 g",
+      "4 g",
+      "20 g",
+      "5 g"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "4 % = 4 g/100 mL. Masse = 4 × 500 ÷ 100 = 20 g."
+  },
+  {
+    "id": "cdm2_146",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "easy",
+    "level": 3,
+    "number": 146,
+    "question": "Quelle masse contient 1000 mL d'une solution à 0,9 % ?",
+    "choices": [
+      "900 g",
+      "90 g",
+      "9 g",
+      "10 g",
+      "0,9 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "0,9 % = 0,9 g/100 mL. Masse = 0,9 × 1000 ÷ 100 = 9 g."
+  },
+  {
+    "id": "cdm2_147",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 147,
+    "question": "Quelle masse contient 500 mL d'une solution à 9 ‰ ?",
+    "choices": [
+      "0,45 g",
+      "4,5 g",
+      "450 g",
+      "45 g",
+      "9 g"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "9 ‰ = 9 g/1 000 mL. Masse = 9 × 500 ÷ 1 000 = 4,5 g."
+  },
+  {
+    "id": "cdm2_148",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 148,
+    "question": "Quelle masse contient 250 mL d'une solution à 14 ‰ ?",
+    "choices": [
+      "14 g",
+      "0,35 g",
+      "3,5 g",
+      "350 g",
+      "35 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "14 ‰ = 14 g/1 000 mL. Masse = 14 × 250 ÷ 1 000 = 3,5 g."
+  },
+  {
+    "id": "cdm2_149",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 149,
+    "question": "Quelle masse contient 1000 mL d'une solution à 20 ‰ ?",
+    "choices": [
+      "200 g",
+      "0,2 g",
+      "2000 g",
+      "2 g",
+      "20 g"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "20 ‰ = 20 g/1 000 mL. Masse = 20 × 1000 ÷ 1 000 = 20 g."
+  },
+  {
+    "id": "cdm2_150",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 150,
+    "question": "Quelle masse contient 200 mL d'une solution à 5 ‰ ?",
+    "choices": [
+      "5 g",
+      "1 g",
+      "100 g",
+      "0,1 g",
+      "10 g"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "5 ‰ = 5 g/1 000 mL. Masse = 5 × 200 ÷ 1 000 = 1 g."
+  },
+  {
+    "id": "cdm2_151",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 151,
+    "question": "Une solution à 3 % correspond à quelle concentration en mg/mL ?",
+    "choices": [
+      "300 mg/mL",
+      "0,3 mg/mL",
+      "3 mg/mL",
+      "30 mg/mL",
+      "3000 mg/mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Dans ce cahier, x % = 10 × x mg/mL. Donc 3 % = 30 mg/mL."
+  },
+  {
+    "id": "cdm2_152",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 152,
+    "question": "Une solution à 4 % correspond à quelle concentration en mg/mL ?",
+    "choices": [
+      "400 mg/mL",
+      "0,4 mg/mL",
+      "4000 mg/mL",
+      "40 mg/mL",
+      "4 mg/mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Dans ce cahier, x % = 10 × x mg/mL. Donc 4 % = 40 mg/mL."
+  },
+  {
+    "id": "cdm2_153",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 153,
+    "question": "Une solution à 7 % correspond à quelle concentration en mg/mL ?",
+    "choices": [
+      "7 mg/mL",
+      "7000 mg/mL",
+      "70 mg/mL",
+      "700 mg/mL",
+      "0,7 mg/mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Dans ce cahier, x % = 10 × x mg/mL. Donc 7 % = 70 mg/mL."
+  },
+  {
+    "id": "cdm2_154",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 154,
+    "question": "Une solution à 12 % correspond à quelle concentration en mg/mL ?",
+    "choices": [
+      "1,2 mg/mL",
+      "12000 mg/mL",
+      "120 mg/mL",
+      "12 mg/mL",
+      "1200 mg/mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Dans ce cahier, x % = 10 × x mg/mL. Donc 12 % = 120 mg/mL."
+  },
+  {
+    "id": "cdm2_155",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 155,
+    "question": "Une solution contient 6 g dans 200 mL. Quel est son pourcentage masse/volume ?",
+    "choices": [
+      "0,3 %",
+      "30 %",
+      "3 %",
+      "33,33 %",
+      "0,03 %"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "% = masse(g) × 100 ÷ volume(mL) = 6 × 100 ÷ 200 = 3 %."
+  },
+  {
+    "id": "cdm2_156",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "medium",
+    "level": 3,
+    "number": 156,
+    "question": "Une solution contient 2,25 g dans 250 mL. Quel est son pourcentage masse/volume ?",
+    "choices": [
+      "0,09 %",
+      "0,01 %",
+      "0,9 %",
+      "9 %",
+      "111,11 %"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "% = masse(g) × 100 ÷ volume(mL) = 2,25 × 100 ÷ 250 = 0,9 %."
+  },
+  {
+    "id": "cdm2_157",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "hard",
+    "level": 3,
+    "number": 157,
+    "question": "Concernant les équivalences entre %, ‰, g/L et mg/mL, quelles propositions sont exactes ?",
+    "choices": [
+      "20 % = 0,02 g/mL",
+      "9 ‰ = 0,9 %",
+      "9 ‰ = 9 g/L",
+      "0,9 % = 9 mg/mL",
+      "4 % = 40 mg/mL"
+    ],
+    "answers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Les conversions du cahier donnent 9 ‰ = 9 g/L = 0,9 % et x % = 10x mg/mL."
+  },
+  {
+    "id": "cdm2_158",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "hard",
+    "level": 3,
+    "number": 158,
+    "question": "Il faut 600 mg d'une solution à 4 %. Quel volume théorique faut-il ?",
+    "choices": [
+      "6 mL",
+      "24 mL",
+      "1,5 mL",
+      "150 mL",
+      "15 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "4 % = 40 mg/mL. Volume = 600 ÷ 40 = 15 mL."
+  },
+  {
+    "id": "cdm2_159",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "hard",
+    "level": 3,
+    "number": 159,
+    "question": "Une solution contient 1,5 g dans 10 mL. Quelle concentration en mg/mL ?",
+    "choices": [
+      "150 mg/mL",
+      "1500 mg/mL",
+      "1,5 mg/mL",
+      "0,15 mg/mL",
+      "15 mg/mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "1,5 g = 1 500 mg. Concentration = 1 500 ÷ 10 = 150 mg/mL."
+  },
+  {
+    "id": "cdm2_160",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Pourcentages, pour mille et concentrations",
+    "difficulty": "hard",
+    "level": 3,
+    "number": 160,
+    "question": "Pour calculer une concentration, quelles relations sont correctes ?",
+    "choices": [
+      "volume = C ÷ masse",
+      "masse = C × volume",
+      "C = masse ÷ volume",
+      "volume = masse ÷ C",
+      "masse = volume ÷ C"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Ce sont les trois formes algébriques de la relation C = masse/volume."
+  },
+  {
+    "id": "cdm2_161",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 161,
+    "question": "Dose prescrite fictive : 500 mg. Présentation : 250 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "1 unité(s)",
+      "4 unité(s)",
+      "2 unité(s)",
+      "20 unité(s)",
+      "3 unité(s)"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 500 ÷ 250 = 2."
+  },
+  {
+    "id": "cdm2_162",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 162,
+    "question": "Dose prescrite fictive : 1000 mg. Présentation : 250 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "4 unité(s)",
+      "5 unité(s)",
+      "8 unité(s)",
+      "2 unité(s)",
+      "3 unité(s)"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 1000 ÷ 250 = 4."
+  },
+  {
+    "id": "cdm2_163",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 163,
+    "question": "Dose prescrite fictive : 750 mg. Présentation : 500 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "1,5 unité(s)",
+      "0,75 unité(s)",
+      "2,5 unité(s)",
+      "3 unité(s)",
+      "0,5 unité(s)"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 750 ÷ 500 = 1,5."
+  },
+  {
+    "id": "cdm2_164",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 164,
+    "question": "Dose prescrite fictive : 400 mg. Présentation : 200 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "2 unité(s)",
+      "3 unité(s)",
+      "20 unité(s)",
+      "1 unité(s)",
+      "4 unité(s)"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 400 ÷ 200 = 2."
+  },
+  {
+    "id": "cdm2_165",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 165,
+    "question": "Dose prescrite fictive : 600 mg. Présentation : 300 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "1 unité(s)",
+      "4 unité(s)",
+      "2 unité(s)",
+      "20 unité(s)",
+      "3 unité(s)"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 600 ÷ 300 = 2."
+  },
+  {
+    "id": "cdm2_166",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "easy",
+    "level": 4,
+    "number": 166,
+    "question": "Dose prescrite fictive : 250 mg. Présentation : 125 mg par unité. Combien d'unités mathématiques ?",
+    "choices": [
+      "3 unité(s)",
+      "4 unité(s)",
+      "20 unité(s)",
+      "2 unité(s)",
+      "1 unité(s)"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Nombre d'unités = dose prescrite ÷ dose par unité = 250 ÷ 125 = 2."
+  },
+  {
+    "id": "cdm2_167",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 167,
+    "question": "Une ampoule contient 100 mg dans 2 mL. Quel volume correspond à 75 mg ?",
+    "choices": [
+      "15 mL",
+      "3 mL",
+      "1,5 mL",
+      "0,15 mL",
+      "2 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Concentration = 100 ÷ 2 = 50 mg/mL. Volume = 75 ÷ 50 = 1,5 mL."
+  },
+  {
+    "id": "cdm2_168",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 168,
+    "question": "Une ampoule contient 200 mg dans 4 mL. Quel volume correspond à 125 mg ?",
+    "choices": [
+      "2,5 mL",
+      "5 mL",
+      "25 mL",
+      "0,25 mL",
+      "4 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Concentration = 200 ÷ 4 = 50 mg/mL. Volume = 125 ÷ 50 = 2,5 mL."
+  },
+  {
+    "id": "cdm2_169",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 169,
+    "question": "Une ampoule contient 500 mg dans 10 mL. Quel volume correspond à 150 mg ?",
+    "choices": [
+      "30 mL",
+      "0,3 mL",
+      "10 mL",
+      "6 mL",
+      "3 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Concentration = 500 ÷ 10 = 50 mg/mL. Volume = 150 ÷ 50 = 3 mL."
+  },
+  {
+    "id": "cdm2_170",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 170,
+    "question": "Une ampoule contient 250 mg dans 5 mL. Quel volume correspond à 100 mg ?",
+    "choices": [
+      "4 mL",
+      "20 mL",
+      "0,2 mL",
+      "2 mL",
+      "5 mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Concentration = 250 ÷ 5 = 50 mg/mL. Volume = 100 ÷ 50 = 2 mL."
+  },
+  {
+    "id": "cdm2_171",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 171,
+    "question": "Une ampoule contient 500 mg dans 5 mL. Quel volume correspond à 300 mg ?",
+    "choices": [
+      "3 mL",
+      "30 mL",
+      "5 mL",
+      "6 mL",
+      "0,3 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Concentration = 500 ÷ 5 = 100 mg/mL. Volume = 300 ÷ 100 = 3 mL."
+  },
+  {
+    "id": "cdm2_172",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 172,
+    "question": "Une ampoule contient 1000 mg dans 10 mL. Quel volume correspond à 600 mg ?",
+    "choices": [
+      "0,6 mL",
+      "60 mL",
+      "10 mL",
+      "6 mL",
+      "12 mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Concentration = 1000 ÷ 10 = 100 mg/mL. Volume = 600 ÷ 100 = 6 mL."
+  },
+  {
+    "id": "cdm2_173",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 173,
+    "question": "Une ampoule contient 300 mg dans 6 mL. Quel volume correspond à 225 mg ?",
+    "choices": [
+      "6 mL",
+      "0,45 mL",
+      "45 mL",
+      "9 mL",
+      "4,5 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Concentration = 300 ÷ 6 = 50 mg/mL. Volume = 225 ÷ 50 = 4,5 mL."
+  },
+  {
+    "id": "cdm2_174",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 174,
+    "question": "Une ampoule contient 180 mg dans 3 mL. Quel volume correspond à 90 mg ?",
+    "choices": [
+      "1,5 mL",
+      "3 mL",
+      "0,15 mL",
+      "150 mL",
+      "15 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Concentration = 180 ÷ 3 = 60 mg/mL. Volume = 90 ÷ 60 = 1,5 mL."
+  },
+  {
+    "id": "cdm2_175",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 175,
+    "question": "Une ampoule contient 900 mg dans 6 mL. Quel volume correspond à 450 mg ?",
+    "choices": [
+      "3 mL",
+      "0,3 mL",
+      "300 mL",
+      "30 mL",
+      "6 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Concentration = 900 ÷ 6 = 150 mg/mL. Volume = 450 ÷ 150 = 3 mL."
+  },
+  {
+    "id": "cdm2_176",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "medium",
+    "level": 4,
+    "number": 176,
+    "question": "Une ampoule contient 1000 mg dans 20 mL. Quel volume correspond à 250 mg ?",
+    "choices": [
+      "50 mL",
+      "10 mL",
+      "20 mL",
+      "5 mL",
+      "0,5 mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Concentration = 1000 ÷ 20 = 50 mg/mL. Volume = 250 ÷ 50 = 5 mL."
+  },
+  {
+    "id": "cdm2_177",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "hard",
+    "level": 4,
+    "number": 177,
+    "question": "Pour une dose de 750 mg avec comprimés de 500 mg sécables en deux, quelles affirmations sont exactes ?",
+    "choices": [
+      "Il faut 2 comprimés entiers obligatoirement",
+      "Il faut 1,5 comprimé mathématiquement",
+      "1 comprimé + 1/2 = 750 mg",
+      "Le fractionnement est toujours autorisé",
+      "750 mg = 0,75 g"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "750 mg = 0,75 g et 750/500 = 1,5. Le fractionnement n'est envisagé que s'il est autorisé."
+  },
+  {
+    "id": "cdm2_178",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "hard",
+    "level": 4,
+    "number": 178,
+    "question": "Une préparation affiche 25 mg/mL. Quel volume contient 0,1 g ?",
+    "choices": [
+      "0,4 mL",
+      "40 mL",
+      "25 mL",
+      "2,5 mL",
+      "4 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "0,1 g = 100 mg. Volume = 100 ÷ 25 = 4 mL."
+  },
+  {
+    "id": "cdm2_179",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "hard",
+    "level": 4,
+    "number": 179,
+    "question": "Deux présentations A = 100 mg/2 mL et B = 150 mg/3 mL : quelles affirmations sont exactes ?",
+    "choices": [
+      "B = 50 mg/mL",
+      "B = 75 mg/mL",
+      "A est deux fois plus concentrée",
+      "A = 50 mg/mL",
+      "Les concentrations sont identiques"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "A : 100/2 = 50 mg/mL ; B : 150/3 = 50 mg/mL."
+  },
+  {
+    "id": "cdm2_180",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Comprimés, ampoules et doses proportionnelles",
+    "difficulty": "hard",
+    "level": 4,
+    "number": 180,
+    "question": "Une dose totale de 1,2 g est répartie en 3 parts égales. Combien de mg par part ?",
+    "choices": [
+      "600 mg",
+      "40 mg",
+      "1200 mg",
+      "300 mg",
+      "400 mg"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "1,2 g = 1 200 mg. 1 200 ÷ 3 = 400 mg par part."
+  },
+  {
+    "id": "cdm2_181",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 181,
+    "question": "Un flacon contient 30 mL pour 1200 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "80 gouttes/mL",
+      "30 gouttes/mL",
+      "120 gouttes/mL",
+      "40 gouttes/mL",
+      "20 gouttes/mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 1200 ÷ 30 = 40 gouttes/mL."
+  },
+  {
+    "id": "cdm2_182",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 182,
+    "question": "Un flacon contient 15 mL pour 600 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "80 gouttes/mL",
+      "20 gouttes/mL",
+      "15 gouttes/mL",
+      "60 gouttes/mL",
+      "40 gouttes/mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 600 ÷ 15 = 40 gouttes/mL."
+  },
+  {
+    "id": "cdm2_183",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 183,
+    "question": "Un flacon contient 20 mL pour 800 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "400 gouttes/mL",
+      "40 gouttes/mL",
+      "4 gouttes/mL",
+      "20 gouttes/mL",
+      "80 gouttes/mL"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 800 ÷ 20 = 40 gouttes/mL."
+  },
+  {
+    "id": "cdm2_184",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 184,
+    "question": "Un flacon contient 18 mL pour 900 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "100 gouttes/mL",
+      "25 gouttes/mL",
+      "18 gouttes/mL",
+      "50 gouttes/mL",
+      "90 gouttes/mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 900 ÷ 18 = 50 gouttes/mL."
+  },
+  {
+    "id": "cdm2_185",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 185,
+    "question": "Un flacon contient 10 mL pour 250 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "10 gouttes/mL",
+      "12,5 gouttes/mL",
+      "25 gouttes/mL",
+      "50 gouttes/mL",
+      "250 gouttes/mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 250 ÷ 10 = 25 gouttes/mL."
+  },
+  {
+    "id": "cdm2_186",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "easy",
+    "level": 5,
+    "number": 186,
+    "question": "Un flacon contient 25 mL pour 1000 gouttes. Quel est le facteur du compte-gouttes ?",
+    "choices": [
+      "25 gouttes/mL",
+      "20 gouttes/mL",
+      "40 gouttes/mL",
+      "100 gouttes/mL",
+      "80 gouttes/mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Facteur = gouttes totales ÷ volume = 1000 ÷ 25 = 40 gouttes/mL."
+  },
+  {
+    "id": "cdm2_187",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 187,
+    "question": "Le facteur du flacon est 40 gouttes/mL. Quel volume représentent 60 gouttes ?",
+    "choices": [
+      "1,5 mL",
+      "3 mL",
+      "0,15 mL",
+      "0,67 mL",
+      "15 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Volume = gouttes ÷ facteur = 60 ÷ 40 = 1,5 mL."
+  },
+  {
+    "id": "cdm2_188",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 188,
+    "question": "Le facteur du flacon est 25 gouttes/mL. Quel volume représentent 75 gouttes ?",
+    "choices": [
+      "0,3 mL",
+      "0,33 mL",
+      "30 mL",
+      "6 mL",
+      "3 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Volume = gouttes ÷ facteur = 75 ÷ 25 = 3 mL."
+  },
+  {
+    "id": "cdm2_189",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 189,
+    "question": "Le facteur du flacon est 50 gouttes/mL. Quel volume représentent 45 gouttes ?",
+    "choices": [
+      "0,9 mL",
+      "1,11 mL",
+      "1,8 mL",
+      "0,09 mL",
+      "9 mL"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Volume = gouttes ÷ facteur = 45 ÷ 50 = 0,9 mL."
+  },
+  {
+    "id": "cdm2_190",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 190,
+    "question": "Le facteur du flacon est 20 gouttes/mL. Quel volume représentent 30 gouttes ?",
+    "choices": [
+      "0,15 mL",
+      "0,67 mL",
+      "1,5 mL",
+      "3 mL",
+      "15 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Volume = gouttes ÷ facteur = 30 ÷ 20 = 1,5 mL."
+  },
+  {
+    "id": "cdm2_191",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 191,
+    "question": "Le facteur du flacon est 30 gouttes/mL. Quel volume représentent 90 gouttes ?",
+    "choices": [
+      "6 mL",
+      "0,3 mL",
+      "30 mL",
+      "0,33 mL",
+      "3 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Volume = gouttes ÷ facteur = 90 ÷ 30 = 3 mL."
+  },
+  {
+    "id": "cdm2_192",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 192,
+    "question": "Une solution orale contient 10 mg/mL. Quel volume correspond à 30 mg ?",
+    "choices": [
+      "0,33 mL",
+      "6 mL",
+      "3 mL",
+      "30 mL",
+      "0,3 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Volume = dose ÷ concentration = 30 ÷ 10 = 3 mL."
+  },
+  {
+    "id": "cdm2_193",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 193,
+    "question": "Une solution orale contient 20 mg/mL. Quel volume correspond à 50 mg ?",
+    "choices": [
+      "0,25 mL",
+      "25 mL",
+      "2,5 mL",
+      "5 mL",
+      "0,4 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Volume = dose ÷ concentration = 50 ÷ 20 = 2,5 mL."
+  },
+  {
+    "id": "cdm2_194",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 194,
+    "question": "Une solution orale contient 40 mg/mL. Quel volume correspond à 60 mg ?",
+    "choices": [
+      "0,67 mL",
+      "15 mL",
+      "3 mL",
+      "0,15 mL",
+      "1,5 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Volume = dose ÷ concentration = 60 ÷ 40 = 1,5 mL."
+  },
+  {
+    "id": "cdm2_195",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 195,
+    "question": "Une solution orale contient 25 mg/mL. Quel volume correspond à 75 mg ?",
+    "choices": [
+      "6 mL",
+      "0,33 mL",
+      "3 mL",
+      "0,3 mL",
+      "30 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Volume = dose ÷ concentration = 75 ÷ 25 = 3 mL."
+  },
+  {
+    "id": "cdm2_196",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "medium",
+    "level": 5,
+    "number": 196,
+    "question": "Une solution orale contient 50 mg/mL. Quel volume correspond à 100 mg ?",
+    "choices": [
+      "0,2 mL",
+      "4 mL",
+      "20 mL",
+      "0,5 mL",
+      "2 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Volume = dose ÷ concentration = 100 ÷ 50 = 2 mL."
+  },
+  {
+    "id": "cdm2_197",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "hard",
+    "level": 5,
+    "number": 197,
+    "question": "Un flacon de 30 mL contient 1 200 gouttes. Quelles affirmations sont exactes ?",
+    "choices": [
+      "Le facteur est 40 gouttes/mL",
+      "Le facteur est forcément celui d'un perfuseur",
+      "80 gouttes = 2 mL",
+      "60 gouttes = 1,5 mL",
+      "1 mL = 20 gouttes dans ce flacon"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le facteur oral se calcule à partir du flacon : 1 200/30 = 40 gouttes/mL. Il n'est pas automatiquement identique au perfuseur."
+  },
+  {
+    "id": "cdm2_198",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "hard",
+    "level": 5,
+    "number": 198,
+    "question": "Un flacon de 18 mL contient 900 gouttes. Une prise de 45 gouttes est donnée 4 fois/jour. Combien de jours complets couvre le flacon ?",
+    "choices": [
+      "4 jours complets",
+      "6 jours complets",
+      "20 jours complets",
+      "5 jours complets",
+      "10 jours complets"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Facteur = 900/18 = 50 gouttes/mL. Consommation = 45 × 4 = 180 gouttes/jour. 900/180 = 5 jours complets."
+  },
+  {
+    "id": "cdm2_199",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "hard",
+    "level": 5,
+    "number": 199,
+    "question": "Une solution à 5 % est donnée à raison de 2 mL par prise. Quelle masse active par prise ?",
+    "choices": [
+      "1000 mg",
+      "100 mg",
+      "10 mg",
+      "50 mg",
+      "250 mg"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "5 % = 50 mg/mL. Masse = 2 × 50 = 100 mg."
+  },
+  {
+    "id": "cdm2_200",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Solutions buvables et gouttes orales",
+    "difficulty": "hard",
+    "level": 5,
+    "number": 200,
+    "question": "Concernant les gouttes orales, quelles méthodes sont correctes ?",
+    "choices": [
+      "Facteur = gouttes totales ÷ mL du flacon",
+      "La durée en jours complets utilise la consommation journalière",
+      "Le facteur oral est toujours 20 gouttes/mL",
+      "Volume = gouttes de la prise ÷ facteur",
+      "On arrondit toujours les jours vers le haut"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le facteur est propre au flacon. Pour des jours complets, on conserve le nombre entier de jours couverts, sans arrondir vers le haut."
+  },
+  {
+    "id": "cdm2_201",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 201,
+    "question": "Une perfusion de 500 mL doit passer en 8 h. Quel débit en mL/h ?",
+    "choices": [
+      "125 mL/h",
+      "31,25 mL/h",
+      "62,5 mL/h",
+      "0,02 mL/h",
+      "4000 mL/h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Débit = volume ÷ durée = 500 ÷ 8 = 62,5 mL/h."
+  },
+  {
+    "id": "cdm2_202",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 202,
+    "question": "Une perfusion de 1000 mL doit passer en 16 h. Quel débit en mL/h ?",
+    "choices": [
+      "125 mL/h",
+      "16000 mL/h",
+      "0,02 mL/h",
+      "31,25 mL/h",
+      "62,5 mL/h"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Débit = volume ÷ durée = 1000 ÷ 16 = 62,5 mL/h."
+  },
+  {
+    "id": "cdm2_203",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 203,
+    "question": "Une perfusion de 250 mL doit passer en 2,5 h. Quel débit en mL/h ?",
+    "choices": [
+      "0,01 mL/h",
+      "200 mL/h",
+      "100 mL/h",
+      "625 mL/h",
+      "50 mL/h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Débit = volume ÷ durée = 250 ÷ 2,5 = 100 mL/h."
+  },
+  {
+    "id": "cdm2_204",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 204,
+    "question": "Une perfusion de 600 mL doit passer en 12 h. Quel débit en mL/h ?",
+    "choices": [
+      "0,02 mL/h",
+      "50 mL/h",
+      "100 mL/h",
+      "25 mL/h",
+      "7200 mL/h"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Débit = volume ÷ durée = 600 ÷ 12 = 50 mL/h."
+  },
+  {
+    "id": "cdm2_205",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 205,
+    "question": "Une perfusion de 1200 mL doit passer en 24 h. Quel débit en mL/h ?",
+    "choices": [
+      "50 mL/h",
+      "28800 mL/h",
+      "100 mL/h",
+      "0,02 mL/h",
+      "25 mL/h"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Débit = volume ÷ durée = 1200 ÷ 24 = 50 mL/h."
+  },
+  {
+    "id": "cdm2_206",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "easy",
+    "level": 6,
+    "number": 206,
+    "question": "Une perfusion de 150 mL doit passer en 2 h. Quel débit en mL/h ?",
+    "choices": [
+      "75 mL/h",
+      "150 mL/h",
+      "300 mL/h",
+      "0,01 mL/h",
+      "37,5 mL/h"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Débit = volume ÷ durée = 150 ÷ 2 = 75 mL/h."
+  },
+  {
+    "id": "cdm2_207",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 207,
+    "question": "500 mL sur 8 h avec 20 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "21 gouttes/min",
+      "26 gouttes/min",
+      "42 gouttes/min",
+      "10 gouttes/min",
+      "16 gouttes/min"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Débit = 500 × 20 ÷ 480 = 20,83 ; arrondi final ≈ 21 gouttes/min."
+  },
+  {
+    "id": "cdm2_208",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 208,
+    "question": "100 mL sur 0,5 h avec 20 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "33 gouttes/min",
+      "62 gouttes/min",
+      "72 gouttes/min",
+      "67 gouttes/min",
+      "133 gouttes/min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Débit = 100 × 20 ÷ 30 = 66,67 ; arrondi final ≈ 67 gouttes/min."
+  },
+  {
+    "id": "cdm2_209",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 209,
+    "question": "240 mL sur 2 h avec 15 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "30 gouttes/min",
+      "15 gouttes/min",
+      "60 gouttes/min",
+      "25 gouttes/min",
+      "35 gouttes/min"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Débit = 240 × 15 ÷ 120 = 30 ; arrondi final ≈ 30 gouttes/min."
+  },
+  {
+    "id": "cdm2_210",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 210,
+    "question": "750 mL sur 10 h avec 20 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "50 gouttes/min",
+      "30 gouttes/min",
+      "25 gouttes/min",
+      "12 gouttes/min",
+      "20 gouttes/min"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Débit = 750 × 20 ÷ 600 = 25 ; arrondi final ≈ 25 gouttes/min."
+  },
+  {
+    "id": "cdm2_211",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 211,
+    "question": "1000 mL sur 16 h avec 20 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "10 gouttes/min",
+      "21 gouttes/min",
+      "42 gouttes/min",
+      "16 gouttes/min",
+      "26 gouttes/min"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Débit = 1000 × 20 ÷ 960 = 20,83 ; arrondi final ≈ 21 gouttes/min."
+  },
+  {
+    "id": "cdm2_212",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 212,
+    "question": "250 mL sur 2,5 h avec 20 gouttes/mL. Quel débit arrondi en gouttes/min ?",
+    "choices": [
+      "17 gouttes/min",
+      "67 gouttes/min",
+      "33 gouttes/min",
+      "38 gouttes/min",
+      "28 gouttes/min"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Débit = 250 × 20 ÷ 150 = 33,33 ; arrondi final ≈ 33 gouttes/min."
+  },
+  {
+    "id": "cdm2_213",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 213,
+    "question": "Une perfusion de 500 mL est réglée à 80 mL/h. Quelle est sa durée ?",
+    "choices": [
+      "7 h",
+      "6 h 30 min",
+      "375 h",
+      "6 h 15 min",
+      "5 h 15 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Durée = volume ÷ débit = 500 ÷ 80 = 6,25 h, soit 6 h 15 min."
+  },
+  {
+    "id": "cdm2_214",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 214,
+    "question": "Une perfusion de 150 mL est réglée à 75 mL/h. Quelle est sa durée ?",
+    "choices": [
+      "3 h",
+      "120 h",
+      "2 h 15 min",
+      "2 h",
+      "1 h 00 min"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Durée = volume ÷ débit = 150 ÷ 75 = 2 h, soit 2 h."
+  },
+  {
+    "id": "cdm2_215",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 215,
+    "question": "Une perfusion de 600 mL est réglée à 90 mL/h. Quelle est sa durée ?",
+    "choices": [
+      "7 h",
+      "6 h 55 min",
+      "6 h 40 min",
+      "5 h 40 min",
+      "400 h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Durée = volume ÷ débit = 600 ÷ 90 = 6,67 h, soit 6 h 40 min."
+  },
+  {
+    "id": "cdm2_216",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "medium",
+    "level": 6,
+    "number": 216,
+    "question": "Une perfusion de 360 mL est réglée à 120 mL/h. Quelle est sa durée ?",
+    "choices": [
+      "180 h",
+      "3 h",
+      "3 h 15 min",
+      "4 h",
+      "2 h 00 min"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Durée = volume ÷ débit = 360 ÷ 120 = 3 h, soit 3 h."
+  },
+  {
+    "id": "cdm2_217",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "hard",
+    "level": 6,
+    "number": 217,
+    "question": "Une perfusion de 500 mL à 50 mL/h a commencé depuis 3 h. Quel volume reste ?",
+    "choices": [
+      "200 mL",
+      "150 mL",
+      "300 mL",
+      "350 mL",
+      "450 mL"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Volume perfusé = 50 × 3 = 150 mL. Reste = 500 - 150 = 350 mL."
+  },
+  {
+    "id": "cdm2_218",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "hard",
+    "level": 6,
+    "number": 218,
+    "question": "Pour 500 mL sur 8 h avec 20 gouttes/mL, quelles valeurs sont correctes ?",
+    "choices": [
+      "80 mL/h",
+      "≈ 42 gouttes/min",
+      "≈ 21 gouttes/min",
+      "480 min de durée",
+      "62,5 mL/h"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "500/8 = 62,5 mL/h ; 8 h = 480 min ; 500×20/480 = 20,83 ≈ 21 gouttes/min."
+  },
+  {
+    "id": "cdm2_219",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "hard",
+    "level": 6,
+    "number": 219,
+    "question": "Une seringue électrique fictive délivre 150 mL à 75 mL/h. Durée ?",
+    "choices": [
+      "1 h",
+      "1,5 h",
+      "2 h",
+      "3 h",
+      "4 h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Durée = 150 ÷ 75 = 2 h."
+  },
+  {
+    "id": "cdm2_220",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Perfusions et débits",
+    "difficulty": "hard",
+    "level": 6,
+    "number": 220,
+    "question": "Une poche de 360 mL : après 1 h, 140 mL sont passés. Il reste 2 h prévues. Quel débit mathématique pour le reste ?",
+    "choices": [
+      "140 mL/h",
+      "70 mL/h",
+      "110 mL/h",
+      "100 mL/h",
+      "120 mL/h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Reste = 360 - 140 = 220 mL. Débit = 220 ÷ 2 = 110 mL/h. Cas mathématique uniquement."
+  },
+  {
+    "id": "cdm2_221",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 221,
+    "question": "Prescription mathématique : 1 g/L pour une poche de 500 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "0,5 g",
+      "0,05 g",
+      "0,25 g",
+      "5 g",
+      "1 g"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "500 mL = 0,5 L. Masse = 1 × 0,5 = 0,5 g."
+  },
+  {
+    "id": "cdm2_222",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 222,
+    "question": "Prescription mathématique : 2 g/L pour une poche de 500 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "2 g",
+      "10 g",
+      "1 g",
+      "0,5 g",
+      "0,1 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "500 mL = 0,5 L. Masse = 2 × 0,5 = 1 g."
+  },
+  {
+    "id": "cdm2_223",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 223,
+    "question": "Prescription mathématique : 3 g/L pour une poche de 750 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "3 g",
+      "4,5 g",
+      "0,75 g",
+      "1,12 g",
+      "2,25 g"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "750 mL = 0,75 L. Masse = 3 × 0,75 = 2,25 g."
+  },
+  {
+    "id": "cdm2_224",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 224,
+    "question": "Prescription mathématique : 0,5 g/L pour une poche de 250 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "0,25 g",
+      "0,06 g",
+      "0,5 g",
+      "0,12 g",
+      "1,25 g"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "250 mL = 0,25 L. Masse = 0,5 × 0,25 = 0,12 g."
+  },
+  {
+    "id": "cdm2_225",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 225,
+    "question": "Prescription mathématique : 2 g/L pour une poche de 1000 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "20 g",
+      "0,2 g",
+      "2 g",
+      "4 g",
+      "1 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "1000 mL = 1 L. Masse = 2 × 1 = 2 g."
+  },
+  {
+    "id": "cdm2_226",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Électrolytes et volumes ajoutés",
+    "difficulty": "easy",
+    "level": 7,
+    "number": 226,
+    "question": "Prescription mathématique : 1,5 g/L pour une poche de 500 mL. Quelle masse correspond à la poche ?",
+    "choices": [
+      "7,5 g",
+      "0,5 g",
+      "0,75 g",
+      "0,38 g",
+      "1,5 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "500 mL = 0,5 L. Masse = 1,5 × 0,5 = 0,75 g."
+  }
+]
