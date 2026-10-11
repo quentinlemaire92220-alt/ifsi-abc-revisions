@@ -10,13 +10,15 @@ const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLo
 const errors=[],counts={};
 const add=(type,id,detail)=>{counts[type]=(counts[type]||0)+1;if(errors.length<55)errors.push({type,id,detail})};
 const declared=new Set(registry.courses.map(c=>String(c.id)));
-const ids=new Set(),courseCounts=new Map(),themeCounts=new Map(),levels={explicit:0,inferred:0,invalid:0},answersDistribution={1:0,2:0,3:0,4:0},choiceDistribution={4:0,5:0};
-const rawSamples={shortExplanation:[],genericExplanation:[],sourceReferences:[],threeOfFour:[],missingCourseId:[],duplicateChoices:[]};
+const ids=new Set(),byQuestionText=new Map(),courseCounts=new Map(),themeCounts=new Map(),levels={explicit:0,inferred:0,invalid:0},answersDistribution={1:0,2:0,3:0,4:0},choiceDistribution={4:0,5:0};
+const rawSamples={shortExplanation:[],genericExplanation:[],sourceReferences:[],threeOfFour:[],missingCourseId:[],duplicateChoices:[],imageWithoutFigure:[],exactQuestionDuplicates:[]};
 const pick=(type,q)=>{const a=rawSamples[type];if(a&&a.length<8)a.push({id:q.id,course:q.course,question:q.question.slice(0,130)})};
 for(const q of all){
  if(!q||typeof q.id!=='string'||!q.id) {add('id_missing','?', 'ID absent');continue}
  if(ids.has(q.id))add('id_duplicate',q.id,'ID déjà utilisé');
  ids.add(q.id);
+ const qkey=norm(q.question).replace(/[?!,;.:]+$/,'');
+ if(qkey){const previous=byQuestionText.get(qkey);if(previous){add('identical_question',q.id,'Même énoncé que '+previous);pick('exactQuestionDuplicates',q)}else byQuestionText.set(qkey,q.id)}
  if(!String(q.question||'').trim())add('question_missing',q.id,'Énoncé absent');
  if(!Array.isArray(q.choices)||![4,5].includes(q.choices.length)){add('invalid_choices',q.id,'4 ou 5 choix attendus');continue}
  choiceDistribution[q.choices.length]++;
@@ -27,13 +29,14 @@ for(const q of all){
  answersDistribution[q.answers.length]++;
  if(new Set(q.answers).size!==q.answers.length||q.answers.some(x=>!Number.isInteger(x)||x<0||x>=q.choices.length))add('invalid_answer_index',q.id,'Index dupliqué ou invalide');
  if(q.answers.length>=q.choices.length)add('no_distractor',q.id,'Aucune réponse fausse');
- if(q.choices.length===4&&q.answers.length===3)pick('threeOfFour',q);
+ if(q.choices.length===4&&q.answers.length===3){counts.three_of_four=(counts.three_of_four||0)+1;pick('threeOfFour',q)}
  const explanation=String(q.explanation||'').trim();
  if(!explanation)add('missing_explanation',q.id,'Corrigé absent');
  else {
   if(explanation.length<80){(counts.short_explanation??=0);counts.short_explanation++;pick('shortExplanation',q)}
   if(/^r[eé]ponses? attendues? selon le corrig[eé] du QCM\s*:/i.test(explanation)){(counts.generic_explanation??=0);counts.generic_explanation++;pick('genericExplanation',q)}
  }
+ if(/\b(?:radiographie|photographie|sur la radio|sur le clich[eé]|sur ce trac[eé]|sur cette image)\b/i.test(q.question)){counts.image_without_figure=(counts.image_without_figure||0)+1;pick('imageWithoutFigure',q)}
  if(/\b(?:selon la diapo|dans le cours|comme vu en cours|sur le support|illustration ci[- ]dessous)\b/i.test(q.question)){(counts.source_dependent_question??=0);counts.source_dependent_question++;pick('sourceReferences',q)}
  const course=String(q.courseId||q.course||q.theme||'Sans cours');
  courseCounts.set(course,(courseCounts.get(course)||0)+1);
