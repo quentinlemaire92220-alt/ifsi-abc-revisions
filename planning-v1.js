@@ -171,10 +171,11 @@ function eventSite(e){
  if(r.includes('distanciel'))return 'Distanciel';
  return 'IFSI ABC'
 }
-function daySite(w,date){
- const sites=[...new Set(eventsFor(w,date).map(eventSite))],physical=sites.filter(x=>x!=='Distanciel');
+function siteForEvents(es){
+ const sites=[...new Set(es.map(eventSite))],physical=sites.filter(x=>x!=='Distanciel');
  if(physical.length===1)return physical[0];if(physical.length>1)return 'Mixte';return sites.length===1?sites[0]:''
 }
+function daySite(w,date){return siteForEvents(eventsFor(w,date))}
 function sitePill(site){
  if(!site)return '';
  const cls=site==='FAC KB'?'fac':site==='IFSI ABC'?'ifsi':site==='Distanciel'?'dist':'mix';
@@ -203,8 +204,8 @@ function agendaRow(e,status){
 function todaySummary(){
  const now=new Date(),today=todayISO(),dayEvents=allPromoEvents().filter(e=>e.date===today),current=dayEvents.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=dayEvents.find(e=>eventDateTime(e,'start')>now);
  const rows=[];if(current)rows.push(agendaRow(current,'live'));if(next)rows.push(agendaRow(next,'next'));
- const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.';
- return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
+ const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.',site=siteForEvents(dayEvents);
+ return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)} ${sitePill(site)}</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
 }
 function snapshot(){
  const out={};
