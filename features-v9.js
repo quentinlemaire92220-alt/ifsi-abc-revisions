@@ -2,12 +2,42 @@
 'use strict';
 const FAV_KEY='ifsiabc_favorites_v1';
 const RESUME_KEY='ifsiabc_resume_v1';
+const QUESTION_REWRITES={
+  homeostasie_057:{
+    question:'Quelles propositions décrivent correctement le diabète insipide ?',
+    choices:[
+      'Il peut provoquer une polyurie claire.',
+      'Une insensibilité rénale à l’ADH peut en être la cause.',
+      'Il correspond à une sécrétion excessive d’insuline par le foie.',
+      'Il peut provoquer une soif importante.'
+    ],
+    answers:[0,1,3],
+    explanation:'Le diabète insipide correspond à un défaut d’action du système antidiurétique, par manque d’hormone ou résistance rénale. Il se traduit par des urines abondantes et diluées avec une soif importante.'
+  }
+};
 
 function readFavs(){try{return new Set(JSON.parse(localStorage.getItem(FAV_KEY)||'[]'))}catch{return new Set()}}
 function writeFavs(set){localStorage.setItem(FAV_KEY,JSON.stringify([...set]))}
 function getResume(){try{return JSON.parse(localStorage.getItem(RESUME_KEY)||'null')}catch{return null}}
 function setResume(v){if(v)localStorage.setItem(RESUME_KEY,JSON.stringify(v));else localStorage.removeItem(RESUME_KEY)}
 function answerLetters(arr){return (arr||[]).map(j=>'ABCDE'[j]).filter(Boolean).join(', ')||'Aucune'}
+function cleanQuestionPrompt(text){
+  const cleaned=String(text||'')
+    .replace(/\s*,?\s*(?:selon|d['’]après|conformément à)\s+(?:(?:ce|cet|cette|le|la|les|l['’])\s+)?(?:sources?\s+du\s+cours|cours(?:\s+et\s+son\s+QCM\s+oral)?|support(?:\s+officiel)?|diapositive(?:\s+(?:«[^»]+»|[^,;:?]+))?|document|affiche\s+du\s+TD|TD)\s*(?=[,;:?]|$)\s*[,;]?/gi,' ')
+    .replace(/\s+/g,' ')
+    .replace(/\s*([?;:])/g,' $1')
+    .replace(/\s+,/g,',')
+    .replace(/^[,;:]\s*/,'')
+    .trim();
+  return cleaned?cleaned.charAt(0).toLocaleUpperCase('fr')+cleaned.slice(1):cleaned;
+}
+function polishQuestion(q){
+  if(!q||typeof q!=='object')return q;
+  const rewrite=QUESTION_REWRITES[q.id];
+  if(rewrite)Object.assign(q,rewrite,{choices:[...rewrite.choices],answers:[...rewrite.answers]});
+  else q.question=cleanQuestionPrompt(q.question);
+  return q;
+}
 function renderTrainingCorrection(q,sel,ok,reviewMsg=''){
   const exp=$('exp');if(!exp)return;
   exp.replaceChildren();
@@ -31,8 +61,10 @@ function addStyles(){
   .resume-title{font-weight:900;color:#4f319f}
   .review-note{font-size:12px;color:#6c6878;margin-top:-2px;line-height:1.35}
   .mastery-note{margin-top:10px;padding:9px 10px;border-radius:10px;background:#eef9ff;color:#245675;font-size:13px;font-weight:700}
-  .qcm-answer-summary{display:grid;gap:5px;margin:10px 0;padding:10px 11px;border:1px solid #dcd4e9;border-radius:11px;background:#fff}
+  .qcm-answer-summary{display:grid;gap:5px;margin:10px 0;padding:10px 11px;border:1px solid var(--line);border-radius:11px;background:var(--card);color:var(--ink)}
   .qcm-answer-summary div{font-size:13px;line-height:1.4}.qcm-explanation{margin-top:8px;line-height:1.5}
+  body.v72-dark .qcm-answer-summary{background:#282332;color:#f4f0fb;border-color:#554b69}
+  body.v72-dark .mastery-note{background:#23313f;color:#c8eaff;border:1px solid #354b58}
   @media(max-width:520px){.favQuizBtn{font-size:12px;padding:6px 8px}}
   `;
   document.head.appendChild(s);
@@ -134,10 +166,10 @@ function resumeSession(){
 window.resumeSession=resumeSession;
 
 const originalBegin=begin;
-begin=function(a){originalBegin(a);if(session?.length)saveResume(0);updateFavUI()};
+begin=function(a){(a||[]).forEach(polishQuestion);originalBegin(a);if(session?.length)saveResume(0);updateFavUI()};
 
 const originalDraw=draw;
-draw=function(){originalDraw();ensureSingleFavoriteButton();updateQuizMeta();updateFavUI()};
+draw=function(){polishQuestion(currentQuestion());originalDraw();ensureSingleFavoriteButton();updateQuizMeta();updateFavUI()};
 
 const originalNextQ=nextQ;
 nextQ=function(){const last=i>=session.length-1;originalNextQ();if(last){setResume(null);refreshResumeUI()}else saveResume(i)};
@@ -203,6 +235,7 @@ const originalFill=fill;
 fill=function(){originalFill();updateFavUI();refreshResumeUI()};
 
 function ready(){
+  if(Array.isArray(Q))Q.forEach(polishQuestion);
   injectUI();
   ensureSingleFavoriteButton();
   updateQuizMeta();
@@ -215,4 +248,5 @@ function ready(){
 addStyles();injectUI();
 let tries=0;const timer=setInterval(()=>{tries++;if(ready()||tries>80)clearInterval(timer)},125);
 window.addEventListener('storage',()=>{updateFavUI();refreshResumeUI()});
+window.IFSI_QCM_WORDING={cleanQuestionPrompt,polishQuestion};
 })();

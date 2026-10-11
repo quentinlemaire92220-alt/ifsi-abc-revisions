@@ -1,6 +1,6 @@
 {
-  "version": "8.30.71",
-  "build": "8371",
+  "version": "8.30.72",
+  "build": "8372",
   "releasedAt": "2026-10-11",
-  "summary": "Ajoute la S8 recroisée, corrige le bloc Aujourd’hui et affiche des pastilles IFSI ABC / FAC KB."
+  "summary": "Corrige le contraste des corrections QCM en thème sombre et nettoie les formulations dépendantes du cours."
 }
