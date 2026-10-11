@@ -133,7 +133,7 @@ function letters(arr){return arr.map(j=>'ABCDE'[j]).join(', ')||'Aucune'}
 function renderExamReview(){
   const box=document.getElementById('v7ExamReview');if(!box)return;box.classList.remove('hidden');
   box.innerHTML='<h3 style="margin:12px 0 6px">Corrigé détaillé</h3><div class="small">Tes réponses ne sont corrigées qu’ici, une fois l’examen terminé.</div>'+
-    session.map((q,j)=>{const user=examAnswers[q.id]||[],ok=same(user,q.answers);return `<details><summary class="${ok?'ok':'bad'}">${ok?'✅':'❌'} Q${q.number||j+1} — ${esc(q.course||q.theme||'')}</summary><div class="v7-answer"><b>Ta réponse :</b> ${esc(letters(user))}<br><b>Bonne réponse :</b> ${esc(letters(q.answers))}</div><div class="v7-expl">${esc(q.explanation||'')}</div></details>`}).join('');
+    session.map((q,j)=>{const user=examAnswers[q.id]||[],ok=same(user,q.answers);return `<details><summary class="${ok?'ok':'bad'}">${ok?'✅':'❌'} Q${q.number||j+1} — ${esc(q.course||q.theme||'')}</summary><div class="v7-answer"><b>Ta réponse :</b> ${esc(letters(user))}<br><b>Bonne réponse :</b> ${esc(letters(q.answers))}</div><div class="v7-expl">${esc(q.explanation||'')}${window.IFSI_QCM_FEEDBACK?.html(q,user)||''}</div></details>`}).join('');
 }
 
 function restoreExamSelection(){
