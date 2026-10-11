@@ -97,6 +97,9 @@ jobs:
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
+      - name: Vérifier le contraste et la formulation des QCM V8.30.75
+        run: node tests/qcm-visual-wording-v8375.mjs
+
       - name: Audit des niveaux de difficulté QCM
         run: node tests/qcm-difficulty-audit.mjs
 
