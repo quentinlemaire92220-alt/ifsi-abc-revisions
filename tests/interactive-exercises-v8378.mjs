@@ -19,7 +19,7 @@ assert.ok(wrong[0].message.includes('filtrent le sang'),'Explication factuelle s
 assert.equal(feedback.list(q,[1]).length,0,'Une bonne réponse ne crée pas une fausse erreur');
 const multi={question:'Quels organes font partie du système urinaire ?',choices:['Reins','Vessie','Estomac','Uretères'],answers:[0,1,3],explanation:'Reins, vessie et uretères.'};
 const mistakes=feedback.list(multi,[0,2]);assert.equal(mistakes.length,3,'Choix erroné et deux bonnes réponses omises');
-assert.deepEqual(mistakes.map(x=>x.kind),['missed','incorrect','missed']);
+assert.deepEqual(Array.from(mistakes,x=>x.kind),['missed','incorrect','missed']);
 assert.ok(feedback.html({...q,choices:['<script>alert(1)</script>',...q.choices.slice(1)]},[0]).includes('&lt;script&gt;'),'Échappement HTML absent');
 const exerciseContext={window:{show(){}},document:{getElementById:id=>id==='ifsiExercises'?{}:null},console};vm.createContext(exerciseContext);vm.runInContext(exerciseSrc,exerciseContext);
 const mod=exerciseContext.window.IFSI_EXERCISES;
