@@ -38,16 +38,20 @@ function populate(){
   $('v8357Count').value=state.count;
   $('v8357Mode').value=state.mode;
   const n=pool().length,status=window.IFSI_QCM_LOAD?.status||'loading';
-  const launch=$('v8357Launch'),counter=$('v8357Available');
+  const launch=$('v8357Launch'),retry=$('v8357Retry'),counter=$('v8357Available');
   if(!n&&status==='loading'){
     counter.textContent='Chargement des QCM en cours…';
     launch.disabled=true;launch.textContent='⏳ Chargement des questions…';
+    if(retry)retry.hidden=true;
   }else if(!n&&(status==='error'||status==='partial')){
     counter.textContent='Les questions ne sont pas disponibles sur cet appareil. Vérifie la connexion puis réessaie.';
     launch.disabled=false;launch.textContent='↻ Réessayer de charger les QCM';
+    if(retry)retry.hidden=true;
   }else{
-    counter.textContent=n+' question'+(n>1?'s':'')+' disponible'+(n>1?'s':'')+(status==='partial'?' • certains packs sont encore indisponibles':'');
+    const missing=window.IFSI_QCM_LOAD?.failed?.length||0;
+    counter.textContent=n+' question'+(n>1?'s':'')+' disponible'+(n>1?'s':'')+(status==='partial'?' • banque partielle : '+missing+' pack'+(missing>1?'s':'')+' à récupérer':'');
     launch.disabled=!n;launch.textContent=n?'▶ Lancer mes QCM':'Aucun QCM pour ces filtres';
+    if(retry){retry.hidden=status!=='partial';retry.disabled=status!=='partial'}
   }
 }
 function start(){
@@ -90,7 +94,7 @@ function inject(){
    '<label for="v8357Difficulty">Difficulté<select id="v8357Difficulty"><option value="all">Toutes les difficultés</option><option value="easy">Facile</option><option value="medium">Moyen</option><option value="hard">Difficile</option></select></label>'+
    '<label for="v8357Count">Nombre de questions<select id="v8357Count"><option value="10">10 questions</option><option value="20">20 questions</option><option value="30">30 questions</option><option value="50">50 questions</option><option value="all">Toutes les questions</option></select></label>'+
    '<label for="v8357Mode">Mode<select id="v8357Mode"><option value="train">Entraînement (correction immédiate)</option><option value="exam">Examen (correction à la fin)</option></select></label>'+
-   '</div><div class="v8357-qcm-footer"><span id="v8357Available" class="small" role="status"></span><button type="button" id="v8357Launch" class="btn primary">▶ Lancer mes QCM</button></div></div>';
+   '</div><div class="v8357-qcm-footer"><span id="v8357Available" class="small" role="status"></span><button type="button" id="v8357Retry" class="btn secondary" hidden>↻ Compléter la banque QCM</button><button type="button" id="v8357Launch" class="btn primary">▶ Lancer mes QCM</button></div></div>';
   dash.insertAdjacentElement('afterend',card);
   const toggle=$('v8357Toggle'),builder=$('v8357Builder');
   toggle.onclick=()=>{state.open=!state.open;builder.hidden=!state.open;toggle.setAttribute('aria-expanded',String(state.open));toggle.textContent=state.open?'Masquer les filtres ↑':'Choisir mes QCM →';if(state.open)populate()};
@@ -100,6 +104,7 @@ function inject(){
   $('v8357Difficulty').onchange=e=>{state.difficulty=e.target.value;populate()};
   $('v8357Count').onchange=e=>{state.count=e.target.value;populate()};
   $('v8357Mode').onchange=e=>{state.mode=e.target.value;populate()};
+  $('v8357Retry').onclick=()=>window.IFSI_QCM_RELOAD?.();
   $('v8357Launch').onclick=()=>{
     if(!pool().length&&['error','partial'].includes(window.IFSI_QCM_LOAD?.status)){
       window.IFSI_QCM_RELOAD?.();return;
