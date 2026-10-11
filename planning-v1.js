@@ -111,6 +111,7 @@ const WEEKS=[
   {date:'2026-10-23',start:'13:30',end:'16:30',promo:'A',groupLabel:'Promo A',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S10',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'},
   {date:'2026-10-23',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S11',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'}
  ]}
+];
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
 function weekForDate(date){return WEEKS.find(w=>date>=w.start&&date<=w.end)||null}
