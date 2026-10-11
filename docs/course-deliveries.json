@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "folderNames": {
+    "01": "01 - Cours",
+    "02": "02 - Fiches de révision",
+    "03": "03 - QCM",
+    "04": "04 - Infographies",
+    "05": "05 - Vocaux",
+    "06": "06 - Planches anatomiques",
+    "07": "07 - Flashcards",
+    "99": "99 - Archives",
+    "08": "08 - Scripts vocaux"
+  },
+  "courses": [
+    {
+      "courseId": "plaies_pansements",
+      "part": "1/2",
+      "validated": true,
+      "status": "awaiting_mp3",
+      "driveFolderId": "1lO6A__t_XaSqwF8QbcUNAaaB7lCuDpDp",
+      "folders": {
+        "99": "1JJEAd0LyMCjLlBF_1s_W6KDaSpthfPbC",
+        "01": "1tMSMxQZfS1bBquTYpiH_4NL8OZwCI85c",
+        "02": "1Wxepo52zZsoLyR-bbUzAHsG3bLyDLlQ7",
+        "03": "1syFE9q_sLG79u7WoMiiF7DYr5jh_1Dog",
+        "04": "1-yeQZEOICA03z9gRxVluEYJPfSxocUBj",
+        "05": "11mL_5dt4AfUl2CwE5-A1mg6HeLRHKHga",
+        "06": "1G2EVgteu1h56NNpWSZ3732gppLLA1Zrp",
+        "07": "1gYHRXkRlgHo9B31InmMMJS4TI7eA5y3R",
+        "08": "1Hi_3EmTz0vRTJoLJlmD8i88WHI8k24qS"
+      },
+      "supportDriveId": "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K",
+      "sheetResourceId": "plaies_pansements_fiche_p01",
+      "qcmDriveId": "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe",
+      "qcmBank": "qextra-50.txt",
+      "qcmCount": 50,
+      "flashcardCount": 40,
+      "flashcardDriveId": "1BbZSRfGyJx4rp0aICOTqcuJElEJ5zvBW",
+      "infographicResourceIds": [
+        "plaies_pansements_info_p01_01",
+        "plaies_pansements_info_p01_02",
+        "plaies_pansements_info_p01_03",
+        "plaies_pansements_info_p01_04",
+        "plaies_pansements_info_p01_05",
+        "plaies_pansements_info_p01_06"
+      ],
+      "vocals": [],
+      "blockers": [
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3"
+        }
+      ],
+      "vocalScripts": [
+        {
+          "number": 1,
+          "title": "Peau et cicatrisation",
+          "driveId": "1VaaEpHF7J64ofKXUUxuAeuYEOA-Lw5b8",
+          "url": "https://drive.google.com/file/d/1VaaEpHF7J64ofKXUUxuAeuYEOA-Lw5b8/view?usp=drivesdk"
+        },
+        {
+          "number": 2,
+          "title": "Escarres et prévention des appuis",
+          "driveId": "17lPKFYXoGJDYGgwzpk0vIKbcUO4CeJM7",
+          "url": "https://drive.google.com/file/d/17lPKFYXoGJDYGgwzpk0vIKbcUO4CeJM7/view?usp=drivesdk"
+        },
+        {
+          "number": 3,
+          "title": "Ulcères vasculaires et brûlures",
+          "driveId": "1T7c1p81LVf2ZKz9qKvQEb-tD8UfYN-rD",
+          "url": "https://drive.google.com/file/d/1T7c1p81LVf2ZKz9qKvQEb-tD8UfYN-rD/view?usp=drivesdk"
+        },
+        {
+          "number": 4,
+          "title": "Pied diabétique et technique du soin",
+          "driveId": "1BajlaqG_5a1dVschP85E9dIHwpILXfzC",
+          "url": "https://drive.google.com/file/d/1BajlaqG_5a1dVschP85E9dIHwpILXfzC/view?usp=drivesdk"
+        },
+        {
+          "number": 5,
+          "title": "Pansements, surveillance et qualité de vie",
+          "driveId": "18jwL1RsTGycxzdiJJNBtJhL0VAlSMBpE",
+          "url": "https://drive.google.com/file/d/18jwL1RsTGycxzdiJJNBtJhL0VAlSMBpE/view?usp=drivesdk"
+        }
+      ]
+    }
+  ]
+}

@@ -30,10 +30,11 @@ for(let i=0;i<8;i++){
 assert.ok(math.some(x=>/Fiche_Maitre_Methodes_Calculs_Infirmiers/.test(x.title)),'Fiche maître supprimée');
 assert.equal(math.length,9,'Le catalogue math doit contenir 8 infographies et 1 fiche maître');
 assert.ok(!math.some(x=>/^Fiche 0[1-5] -/.test(x.title)),'Anciennes fiches historiques encore affichées');
-assert.equal(catalog.length,55,'Total de fiches incorrect');
-assert.equal(snap.expectedTotals.sheets,55,'Snapshot des fiches désynchronisé');
+assert.equal(catalog.length,snap.expectedTotals.sheets,'Total de fiches incorrect');
+assert.ok(snap.expectedTotals.sheets>=55,'Fiches historiques perdues');
 assert.equal(snap.sheetProvenance.markedSheets,15,'Provenance des nouvelles fiches non comptabilisée');
-assert.equal(json('infographics.json').length,155,'Les infographies historiques doivent être préservées');
+assert.equal(json('infographics.json').length,snap.expectedTotals.infographics,'Catalogue infographies désynchronisé');
+assert.ok(json('infographics.json').length>=155,'Les infographies historiques doivent être préservées');
 const legacy=json('calculs-resources-v1.json');
 assert.equal(legacy.sheets.length,0,'Les PDF obsolètes sont encore injectés');
 const sw=fs.readFileSync(new URL('../sw.js',import.meta.url),'utf8');
