@@ -8,7 +8,7 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-09';
+const UPDATED_AT='2026-10-11';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
@@ -85,6 +85,31 @@ const WEEKS=[
   {date:'2026-10-16',start:'09:00',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'Plaies et pansements simples',room:'S10',teacher:''},
   {date:'2026-10-16',start:'13:30',end:'16:30',promo:'all',groupLabel:'Groupes Niveau 1 et Niveau 3 (D)',ue:'UE E2.1 S1',type:'Asynchrone',title:'Connexion plateforme Mischool (ESI Nv1 et 3)',courseId:'calculs_doses_mathematiques',room:'Distanciel',teacher:''},
   {date:'2026-10-16',start:'14:00',end:'16:00',promo:'all',groupLabel:'Groupes Niveau 2 (1) et (2)',ue:'UE B3.1 S1',type:'TD',title:'Atelier de soutien pour ESI Nv2',courseId:'calculs_doses_mathematiques',room:'S3 • S2',teacher:'DELABARRE Isabelle • DIETRICH Anne'}
+ ]},
+ {id:'S8',label:'S8',start:'2026-10-19',end:'2026-10-24',range:'19 - 24 oct.',events:[
+  {date:'2026-10-19',start:'09:00',end:'12:00',promo:'B',groups:['B1'],groupLabel:'Groupe B1',ue:'UE B3.2.1 S1',type:'TD',title:'Gestion du stress',room:'Grande Salle',teacher:'MARCEAU Patrice',site:'IFSI ABC'},
+  {date:'2026-10-19',start:'09:00',end:'12:00',promo:'B',groups:['B2'],groupLabel:'Groupe B2 (D)',ue:'UE E2.1 S1',type:'Asynchrone',title:'Connexion plateforme Myschool',room:'Distanciel',teacher:'',site:'Distanciel'},
+  {date:'2026-10-19',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A (D)',ue:'',type:'Asynchrone',title:'Temps d’Appropriation des Connaissances',room:'Distanciel',teacher:'',site:'Distanciel'},
+  {date:'2026-10-19',start:'13:00',end:'16:00',promo:'all',groups:['B1','A1','A2'],groupLabel:'B1 (D) + Promo A (D)',ue:'UE E2.1 S1',type:'Asynchrone',title:'Connexion plateforme Myschool',room:'Distanciel',teacher:'',site:'Distanciel'},
+  {date:'2026-10-19',start:'13:00',end:'16:00',promo:'B',groups:['B2'],groupLabel:'Groupe B2',ue:'UE B3.2.1 S1',type:'TD',title:'Gestion du stress',room:'Grande Salle',teacher:'MARCEAU Patrice',site:'IFSI ABC'},
+
+  {date:'2026-10-20',start:'09:00',end:'12:30',promo:'all',groupLabel:'Promo entière',ue:'UE A2.1 S1',type:'CM',title:'Initiation à la philosophie éthique',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'Fabrice GZIL',site:'FAC KB'},
+  {date:'2026-10-20',start:'13:30',end:'16:30',promo:'all',groupLabel:'Promo entière',ue:'UE C1.1 S1',type:'CM',title:'Santé mondiale et santé en France',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'Sophie NOVELLI',site:'FAC KB'},
+
+  {date:'2026-10-21',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'CM',title:'La prise en charge de la douleur',room:'S10',teacher:'Catherine MACHADO',site:'IFSI ABC'},
+  {date:'2026-10-21',start:'09:00',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE A2.1 S1',type:'TD',title:'Les droits des patients',room:'S11',teacher:'LAGRAVE',site:'IFSI ABC'},
+  {date:'2026-10-21',start:'13:30',end:'16:30',promo:'A',groupLabel:'Promo A',ue:'UE A2.1 S1',type:'TD',title:'Les droits des patients',room:'S11',teacher:'LAGRAVE',site:'IFSI ABC'},
+  {date:'2026-10-21',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'CM',title:'La prise en charge de la douleur',room:'S10',teacher:'Catherine MACHADO',site:'IFSI ABC'},
+
+  {date:'2026-10-22',start:'09:00',end:'12:30',promo:'all',groupLabel:'Promo entière',ue:'UE A2.1 S1',type:'CM',title:'Responsabilité, exercice professionnel, confidentialité et secret professionnel',detail:'Référence opérationnelle : site officiel de la promo. Le planning CM FAC mentionne Timothy JAMES pour ce même créneau.',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'Laura CHEVREAU',site:'FAC KB'},
+  {date:'2026-10-22',start:'13:30',end:'17:30',promo:'all',groupLabel:'Promo entière',ue:'UE B2.1.1 S1',type:'CM',title:'Psychologie de la santé',courseId:'psychologie_sante',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'Nathalie KHATIR',site:'FAC KB'},
+
+  {date:'2026-10-23',start:'09:00',end:'10:30',promo:'A',groupLabel:'Promo A',ue:'UE A1 S1',type:'TD',title:'La théorie des symptômes',room:'S10',teacher:'BOURRIGAN Lucille',site:'IFSI ABC'},
+  {date:'2026-10-23',start:'09:00',end:'10:30',promo:'B',groupLabel:'Promo B',ue:'UE D1.1 S1',type:'TD',title:'La bientraitance, de quoi parle-t-on ?',room:'S11',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'},
+  {date:'2026-10-23',start:'10:45',end:'12:15',promo:'A',groupLabel:'Promo A',ue:'UE D1.1 S1',type:'TD',title:'La bientraitance, de quoi parle-t-on ?',room:'S11',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'},
+  {date:'2026-10-23',start:'10:45',end:'12:15',promo:'B',groupLabel:'Promo B',ue:'UE A1 S1',type:'TD',title:'La théorie des symptômes',room:'S10',teacher:'BOURRIGAN Lucille',site:'IFSI ABC'},
+  {date:'2026-10-23',start:'13:30',end:'16:30',promo:'A',groupLabel:'Promo A',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S10',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'},
+  {date:'2026-10-23',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S11',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'}
  ]}
 ];
 
@@ -118,9 +143,9 @@ function css(){
  .vp-type{font-size:10px;font-weight:900;border-radius:999px;padding:5px 8px;background:#efe8ff;color:#6941c6;white-space:nowrap}.vp-type.td{background:#e6f7f4;color:#087a75}.vp-type.tp{background:#e8f2ff;color:#2368b7}.vp-type.async{background:#eaf8ee;color:#187a3c}.vp-type.info{background:#fff2df;color:#9a5d08}
  .vp-week-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}.vp-sourcechip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:10px;color:var(--muted);background:rgba(112,70,217,.06)}
  .vp-days{display:grid;gap:6px}.vp-day{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
- .vp-day-toggle{width:100%;border:0;background:transparent;color:var(--ink);padding:10px 12px;display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:9px;text-align:left;cursor:pointer;font:inherit}
+ .vp-day-toggle{width:100%;border:0;background:transparent;color:var(--ink);padding:10px 12px;display:grid;grid-template-columns:auto 1fr auto auto auto;align-items:center;gap:9px;text-align:left;cursor:pointer;font:inherit}
  .vp-day.open>.vp-day-toggle{background:rgba(112,70,217,.10)}.vp-chevron{font-size:15px;transition:transform .18s ease}.vp-day.open .vp-chevron{transform:rotate(90deg)}
- .vp-day-name{font-weight:900;font-size:13px}.vp-day-count{font-size:11px;color:var(--muted);white-space:nowrap}.vp-today-dot{font-size:9px;color:#6941c6;font-weight:900}
+ .vp-day-name{font-weight:900;font-size:13px}.vp-day-count{font-size:11px;color:var(--muted);white-space:nowrap}.vp-today-dot{font-size:9px;color:#6941c6;font-weight:900}.vp-site-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 7px;font-size:9px;font-weight:950;letter-spacing:.03em;white-space:nowrap}.vp-site-pill.ifsi{background:#e5f7f3;color:#087a75}.vp-site-pill.fac{background:#e8efff;color:#3157a8}.vp-site-pill.dist{background:#ececf2;color:#5f6170}.vp-site-pill.mix{background:#fff0dc;color:#9a5d08}
  .vp-day-body{display:none;padding:0 8px 8px}.vp-day.open .vp-day-body{display:block}
  .vp-event{position:relative;display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:9px 9px 9px 13px;margin:6px 0 0;background:var(--card);overflow:hidden}
  .vp-event:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:#7046d9}.vp-event[data-kind="TD"]:before{background:#0fa7a0}.vp-event[data-kind="TP"]:before{background:#3182e4}.vp-event[data-kind="ASYNC"]:before{background:#27a85e}.vp-event[data-kind="INFO"]:before{background:#d98a20}
@@ -131,7 +156,7 @@ function css(){
  .vp-changes{border-color:#f1cf94;background:#fffaf0}.vp-changes .vp-change-lines{margin:8px 0 0;padding-left:18px;font-size:11px;color:var(--muted);line-height:1.45}.vp-change-ack{border:0;background:transparent;color:#6941c6;font-weight:850;cursor:pointer;padding:4px 0}
  body.v72-dark .vp-toolbar,body.v72-dark .vp-card,body.v72-dark .vp-day,body.v72-dark .vp-event,body.v72-dark .vp-agenda-row,body.v72-dark .vp-empty{background:#211e2a;color:#f4f0fb;border-color:#3b3548}
  body.v72-dark .vp-segment{background:#191720}body.v72-dark .vp-subgroup.on{background:#382c57;color:#eadfff}body.v72-dark .vp-agenda-row.current{background:linear-gradient(90deg,rgba(112,70,217,.18),#211e2a)}
- @media(max-width:700px){#planningPromo{padding:4px 0 126px}.vp-toolbar{padding:8px}.vp-subgroups{margin-left:0}.vp-control-icon{display:none}.vp-agenda-row{grid-template-columns:88px minmax(0,1fr);gap:8px}.vp-agenda-row>.vp-type{grid-column:2;justify-self:start}.vp-event{grid-template-columns:58px minmax(0,1fr);gap:8px}.vp-event>.vp-type{grid-column:2;justify-self:start}.vp-week-head{align-items:flex-start}.vp-sourcechip{width:100%;justify-content:center}.vp-week-foot{display:grid}.vp-source{max-width:none}.vp-export{width:100%!important}.vp-day-toggle{grid-template-columns:auto 1fr auto}.vp-day-toggle .vp-today-dot{display:none}}
+ @media(max-width:700px){#planningPromo{padding:4px 0 126px}.vp-toolbar{padding:8px}.vp-subgroups{margin-left:0}.vp-control-icon{display:none}.vp-agenda-row{grid-template-columns:88px minmax(0,1fr);gap:8px}.vp-agenda-row>.vp-type{grid-column:2;justify-self:start}.vp-event{grid-template-columns:58px minmax(0,1fr);gap:8px}.vp-event>.vp-type{grid-column:2;justify-self:start}.vp-week-head{align-items:flex-start}.vp-sourcechip{width:100%;justify-content:center}.vp-week-foot{display:grid}.vp-source{max-width:none}.vp-export{width:100%!important}.vp-day-toggle{grid-template-columns:auto 1fr auto auto}.vp-day-toggle .vp-today-dot{display:none}}
  `;document.head.appendChild(s)
 }
 function frDate(iso,opts={weekday:'long',day:'numeric',month:'long'}){const [y,m,d]=iso.split('-').map(Number);return new Intl.DateTimeFormat('fr-FR',opts).format(new Date(y,m-1,d,12))}
@@ -139,6 +164,23 @@ function kind(type){const t=String(type||'').toUpperCase();if(t.startsWith('TD')
 function typeClass(type){const k=kind(type);return k==='TD'?'td':k==='TP'?'tp':k==='ASYNC'?'async':k==='INFO'?'info':''}
 function eventVisible(e){if(!(e.promo==='all'||e.promo===promo))return false;if(subgroup==='all')return true;return !Array.isArray(e.groups)||!e.groups.length||e.groups.includes(subgroup)}
 function eventsFor(w,date){validSubgroup();return w.events.filter(e=>e.date===date&&eventVisible(e)).sort((a,b)=>a.start.localeCompare(b.start))}
+function eventSite(e){
+ if(e.site)return e.site;
+ const r=String(e.room||'').toLowerCase();
+ if(r.includes('kb')||r.includes('kremlin'))return 'FAC KB';
+ if(r.includes('distanciel'))return 'Distanciel';
+ return 'IFSI ABC'
+}
+function siteForEvents(es){
+ const sites=[...new Set(es.map(eventSite))],physical=sites.filter(x=>x!=='Distanciel');
+ if(physical.length===1)return physical[0];if(physical.length>1)return 'Mixte';return sites.length===1?sites[0]:''
+}
+function daySite(w,date){return siteForEvents(eventsFor(w,date))}
+function sitePill(site){
+ if(!site)return '';
+ const cls=site==='FAC KB'?'fac':site==='IFSI ABC'?'ifsi':site==='Distanciel'?'dist':'mix';
+ return `<span class="vp-site-pill ${cls}">${esc(site)}</span>`
+}
 function registryCourse(id){return (window.IFSI_V741?.getRegistry?.()?.courses||[]).find(c=>c.id===id)||null}
 function resourcesFor(id){return id?window.IFSI_V741?.resourcesForCourse?.(id):null}
 function hasResources(id){const r=resourcesFor(id);return !!r&&['questions','sheets','infographics','vocals'].some(k=>Array.isArray(r[k])&&r[k].length)}
@@ -160,10 +202,10 @@ function agendaRow(e,status){
  return `<article class="vp-agenda-row ${live?'current':''}"><div class="vp-agenda-time"><span class="vp-status ${live?'live':''}">${label}</span><div>${esc(e.start)} – ${esc(e.end)}</div>${dateExtra?`<small>${esc(dateExtra)}</small>`:''}</div><div class="vp-agenda-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
 }
 function todaySummary(){
- const now=new Date(),all=allPromoEvents(),current=all.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=all.find(e=>eventDateTime(e,'start')>now&&(!current||e!==current));
+ const now=new Date(),today=todayISO(),dayEvents=allPromoEvents().filter(e=>e.date===today),current=dayEvents.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=dayEvents.find(e=>eventDateTime(e,'start')>now);
  const rows=[];if(current)rows.push(agendaRow(current,'live'));if(next)rows.push(agendaRow(next,'next'));
- const label=frDate(todayISO(),{weekday:'short',day:'numeric',month:'short',year:'numeric'});
- return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}</div><div class="vp-agenda">${rows.length?rows.join(''):'<div class="vp-empty">Aucun autre cours importé à venir.</div>'}</div></div>`
+ const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.',site=siteForEvents(dayEvents);
+ return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)} ${sitePill(site)}</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
 }
 function snapshot(){
  const out={};
@@ -184,6 +226,7 @@ function changesCard(){
 }
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
 function weekSource(w){
+ if(w.id==='S8')return {chip:'S8 · site promo officiel + contrôle FAC · MAJ 11/10/2026',detail:'S8 recroisée avec le site officiel de la promo et le planning CM FAC. Divergence le 22/10 matin : site promo = Laura CHEVREAU, PDF FAC = Timothy JAMES ; l’app suit le site promo.',ics:'S8 site officiel promo, contrôlée avec planning CM FAC'};
  if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};
  return {chip:`Prévisionnel · ${w.id} support IFSI · MAJ 07/10/2026`,detail:`${w.id} importée depuis le support IFSI. Le planning reste prévisionnel.`,ics:SOURCE};
 }
@@ -192,7 +235,7 @@ function openDayFor(w){const saved=localStorage.getItem(K_DAY);if(saved===`none:
 function weekCard(w){
  const t=todayISO(),openDay=openDayFor(w),source=weekSource(w);
  return `<div class="vp-card"><div class="vp-week-head"><div><div class="vp-week-title">📅 ${esc(w.label)} · ${esc(w.range)} · Promo ${promo}</div>${subgroup!=='all'?`<div class="vp-date">Sous-groupe ${esc(subgroup)}</div>`:''}</div><span class="vp-sourcechip">ⓘ ${esc(source.chip)}</span></div>
- <div class="vp-days">${weekDates(w).map(date=>{const es=eventsFor(w,date),open=date===openDay,today=date===t;return `<section class="vp-day ${open?'open':''}" data-vday-wrap="${date}"><button type="button" class="vp-day-toggle" data-vday="${date}" aria-expanded="${open}"><span class="vp-chevron">›</span><span class="vp-day-name">${esc(frDate(date,{weekday:'short',day:'numeric',month:'long'}))}</span>${today?'<span class="vp-today-dot">AUJ.</span>':'<span></span>'}<span class="vp-day-count">${es.length} cours</span></button><div class="vp-day-body">${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour ce filtre.</div>'}</div></section>`}).join('')}</div>
+ <div class="vp-days">${weekDates(w).map(date=>{const es=eventsFor(w,date),open=date===openDay,today=date===t;return `<section class="vp-day ${open?'open':''}" data-vday-wrap="${date}"><button type="button" class="vp-day-toggle" data-vday="${date}" aria-expanded="${open}"><span class="vp-chevron">›</span><span class="vp-day-name">${esc(frDate(date,{weekday:'short',day:'numeric',month:'long'}))}</span>${sitePill(daySite(w,date))}${today?'<span class="vp-today-dot">AUJ.</span>':'<span></span>'}<span class="vp-day-count">${es.length} cours</span></button><div class="vp-day-body">${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour ce filtre.</div>'}</div></section>`}).join('')}</div>
  <div class="vp-week-foot"><div class="vp-source">${esc(source.detail)}</div><button id="vpExportIcs" class="btn outline vp-export">📅 Exporter ${esc(w.label)} (.ics)</button></div></div>`
 }
 function icsEscape(s){return String(s??'').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;')}
@@ -227,5 +270,5 @@ function showPlanning(){if(!addSection())return;document.querySelectorAll('.app>
 function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
 function init(){css();reconcilePlanningChanges();const a=addSection(),b=addNav();return a&&b}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.4',updatedAt:UPDATED_AT};
+window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.5',updatedAt:UPDATED_AT};
 })();

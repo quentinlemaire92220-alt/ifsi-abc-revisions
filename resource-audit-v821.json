@@ -1,13 +1,13 @@
 {
-  "version": "8.30.70",
-  "auditedAt": "2026-10-09",
+  "version": "8.30.71",
+  "auditedAt": "2026-10-11",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.63 : corrections pédagogiques de sept QCM de mathématiques, harmonisation du parcours à dix niveaux ; les huit infographies, 55 fiches, 155 infographies et les QCM historiques restent présents.",
+  "note": "V8.30.71 : S8 ajoutée et ergonomie planning améliorée ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
     "courses": 45,
     "sheets": 55,

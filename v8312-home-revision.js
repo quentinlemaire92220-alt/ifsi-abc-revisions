@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.30.70',$=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.71',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8371Change:{type:'app',badges:['UX/UI','RESSOURCE']},
   v8370Change:{type:'app',badges:['CORRECTIF']},
   v8340Change:{type:'app',badges:['CORRECTIF']},
   v8341Change:{type:'app',badges:['CORRECTIF']},
@@ -62,6 +63,7 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
+  '8.30.71':'11/10/2026','8.30.70':'10/10/2026',
   '8.30.69':'09/10/2026',
   '8.30.67':'10/10/2026',
   '8.30.68':'10/10/2026',
