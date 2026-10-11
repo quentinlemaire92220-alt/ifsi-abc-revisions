@@ -8,7 +8,7 @@ import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 const {questions:all,registry,window:registries}=await runtimeDeck();
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
 const errors=[],counts={};
-const add=(type,id,detail)=>{(counts[type]??=0)++;if(errors.length<55)errors.push({type,id,detail})};
+const add=(type,id,detail)=>{counts[type]=(counts[type]||0)+1;if(errors.length<55)errors.push({type,id,detail})};
 const declared=new Set(registry.courses.map(c=>String(c.id)));
 const ids=new Set(),courseCounts=new Map(),themeCounts=new Map(),levels={explicit:0,inferred:0,invalid:0},answersDistribution={1:0,2:0,3:0,4:0},choiceDistribution={4:0,5:0};
 const rawSamples={shortExplanation:[],genericExplanation:[],sourceReferences:[],threeOfFour:[],missingCourseId:[],duplicateChoices:[]};
