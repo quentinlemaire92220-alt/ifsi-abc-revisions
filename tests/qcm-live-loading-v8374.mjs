@@ -59,7 +59,7 @@ const ui={
  console
 };
 vm.createContext(ui);
-const beforeCss=access.slice(0,access.indexOf('function css(){'));
+const beforeCss=access.slice(0,access.indexOf('function css(){')).replace("(()=>{'use strict';","'use strict';");
 vm.runInContext(beforeCss,ui);
 vm.runInContext('populate()',ui);
 assert.match(elements.get('v8357Available').textContent,/Chargement des QCM/);
