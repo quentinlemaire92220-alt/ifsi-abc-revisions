@@ -52,6 +52,9 @@ jobs:
       - name: Tester le chargement QCM Android et l'état zéro question
         run: node tests/qcm-live-loading-v8374.mjs
 
+      - name: Tester la reprise des packs QCM partiels
+        run: node tests/qcm-partial-recovery-v8376.mjs
+
       - name: Vérifier le correctif UI V8.30.39
         run: node tests/ui-v8339.mjs
 
@@ -99,6 +102,9 @@ jobs:
 
       - name: Vérifier le contraste et la formulation des QCM V8.30.75
         run: node tests/qcm-visual-wording-v8375.mjs
+
+      - name: Vérifier les QCM autonomes sans visuel absent
+        run: node tests/qcm-autonomous-visuals-v8376.mjs
 
       - name: Audit des niveaux de difficulté QCM
         run: node tests/qcm-difficulty-audit.mjs
