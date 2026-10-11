@@ -133,5 +133,8 @@ jobs:
       - name: Vérifier les banques réellement décodées dans le navigateur
         run: node tests/browser-runtime-v8370.mjs
 
+      - name: Audit intégral des QCM actifs (Service Worker + filtres)
+        run: node tests/qcm-full-runtime-audit-v8374.mjs
+
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs
