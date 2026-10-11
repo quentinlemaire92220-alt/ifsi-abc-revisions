@@ -1,6 +1,7 @@
 (()=>{'use strict';
-const V=window.IFSI_APP_VERSION||'8.30.72',$=id=>document.getElementById(id);
+const V=window.IFSI_APP_VERSION||'8.30.73',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8373Change:{type:'resource',badges:['FICHE','QCM','CORRECTIF']},
   v8372Change:{type:'resource',badges:['NOUVEAU COURS','FLASHCARDS','INFOGRAPHIES']},
   v8371Change:{type:'app',badges:['UX/UI','RESSOURCE']},
   v8370Change:{type:'app',badges:['CORRECTIF']},
@@ -64,7 +65,7 @@ const NEWS_META={
   v8304Change:{type:'app',badges:['CORRECTIF']}
 };
 const VERSION_DATES={
-  '8.30.72':'11/10/2026','8.30.70':'10/10/2026',
+  '8.30.73':'11/10/2026','8.30.70':'10/10/2026',
   '8.30.69':'09/10/2026',
   '8.30.67':'10/10/2026',
   '8.30.68':'10/10/2026',

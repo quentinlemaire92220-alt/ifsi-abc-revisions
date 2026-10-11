@@ -1,5 +1,5 @@
 {
-  "version": "8.30.72",
+  "version": "8.30.73",
   "courses": [
     {
       "id": "biomolecules",
@@ -145,7 +145,8 @@
         "Respiratoire"
       ],
       "domain": "B",
-      "ue": "B1"
+      "ue": "B1",
+      "officialSupportUrl": "https://drive.google.com/file/d/1m-iJcpnIlsdyk7DyTghDhCOEgmxR4ys7/view"
     },
     {
       "id": "systeme_cardiovasculaire",
@@ -290,7 +291,9 @@
       "aliases": [
         "Douleur",
         "Douleur aigue et chronique"
-      ]
+      ],
+      "officialSupportUrl": "https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view"
     },
     {
       "id": "parametres_vitaux",

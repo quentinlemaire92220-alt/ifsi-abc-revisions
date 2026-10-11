@@ -8,9 +8,10 @@
     "courseId": "systeme_respiratoire",
     "displayTitle": "Système respiratoire",
     "sourceStatus": "active",
-    "officialSupport": false,
-    "sourceBasis": "Captures du cours + transcription",
-    "sourceNote": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours."
+    "officialSupport": true,
+    "sourceBasis": "Support officiel Dr Sandrine Dulong du 1 octobre 2026",
+    "sourceNote": "Support officiel utilisé pour la fiche ; notes de cours en complément.",
+    "officialSupportUrl": "https://drive.google.com/file/d/1m-iJcpnIlsdyk7DyTghDhCOEgmxR4ys7/view"
   },
   {
     "title": "UE_S1_B1_Systeme_Immunitaire_Fiche_Revision.pdf",
@@ -119,17 +120,18 @@
     "sourceStatus": "active"
   },
   {
-    "title": "UE_S1_B3_Douleur_Fiche_Revision_PROVISOIRE.pdf",
-    "label": "Douleur PROVISOIRE",
+    "title": "UE_S1_B3_Douleur_Fiche_Revision_Support_Officiel_Machado.pdf",
+    "label": "Douleur aiguë et chronique",
     "ue": "S1 B3",
-    "url": "https://drive.google.com/file/d/17lKuIZJow4Ym02brSAJ7afxbJsRSjEvd/view?usp=drivesdk",
-    "provisional": true,
+    "url": "https://drive.google.com/file/d/1bas9Sba_9pEQiiJ6ZzAOcP5dtdx0scIe/view?usp=drivesdk",
+    "provisional": false,
     "courseId": "douleur",
-    "displayTitle": "Douleur aiguë et chronique — provisoire",
+    "displayTitle": "Douleur aiguë et chronique",
     "sourceStatus": "active",
-    "officialSupport": false,
-    "sourceBasis": "Transcription du cours",
-    "sourceNote": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours."
+    "officialSupport": true,
+    "sourceBasis": "Support officiel Catherine Machado 2026",
+    "sourceNote": "Fiche réalisée à partir du support officiel Catherine Machado 2026.",
+    "officialSupportUrl": "https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view"
   },
   {
     "title": "UE_S1_B3_Parametres_Vitaux_Fiche_Revision_PROVISOIRE.pdf",

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.72",
+  "version": "8.30.73",
   "auditedAt": "2026-10-11",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.72 : S8 ajoutée et ergonomie planning améliorée ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.73 : ressources officielles Douleur synchronisées ; provenance Respiratoire corrigée.",
   "expectedTotals": {
     "courses": 46,
     "sheets": 56,

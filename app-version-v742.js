@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.72';
+const VERSION='8.30.73';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : S8 ajoutée, lieux visibles et bloc Aujourd’hui corrigé.`;

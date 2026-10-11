@@ -37,7 +37,7 @@ function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id
 let base=[];
 for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)auditRawQuestion(q,p);base.push(...a)}
 let extras=[],override=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46,50]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);extras.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46,50,51]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);extras.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 for(const i of [39,40,41,42,43,44,45,47,48,49]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);override.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 assert(skipped.length===0,`Packs QCM entièrement ignorés: ${skipped.join(' | ')}`);
 assert(reformattedSource.length===knownQuarantine.size&&reformattedSource.every(x=>knownQuarantine.has(x)),`Sources 4/4 inattendues: ${reformattedSource.join(' | ')}`);
@@ -60,6 +60,7 @@ assert(rawMissingExplanation===0,`QCM bruts sans explication: ${rawMissingExplan
 for(const q of v820RawPacks){assert(q.courseId,`courseId V8.20 absent: ${q.id}`);assert(Array.isArray(q.choices)&&q.choices.length>=4,`Choix V8.20 invalides: ${q.id}`);assert(!q.choices.some(x=>/CORRIG[ÉE]|GRILLE (?:SYNTH[ÉE]TIQUE|DES R[ÉE]PONSES)|IFSI Antoine Béclère[\s\S]*Page\s+\d+/i.test(x)),`Fragment PDF parasite dans ${q.id}`)}
 base=base.filter(keepQuestion);extras=extras.filter(keepQuestion);override=override.filter(keepQuestion);
 if(override.length){const map=new Map();for(const q of override)if(q?.id)map.set(q.id,q);const finalOverride=[...map.values()];const overrideIds=new Set(finalOverride.map(q=>q.id));extras=extras.filter(q=>!overrideIds.has(q.id));extras.push(...finalOverride)}
+extras=extras.filter(q=>q.sourceId!=="1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu");
 const seen=new Set(base.map(q=>q.id));const runtime=[...base];
 for(const q of extras)if(!seen.has(q.id)){runtime.push(q);seen.add(q.id)}
 for(let i=0;i<runtime.length;i++)runtime[i]=normalizeMaxThreeAnswers(runtime[i]);
@@ -174,8 +175,10 @@ assert(Array.isArray(registry.courses)&&registry.courses.length>=35,'Registre tr
 const courseIds=new Set(registry.courses.map(c=>c.id));
 assert(courseIds.size===registry.courses.length,'courseId dupliqués');
 const revisionSheets=[...json('sheets-1.json'),...json('sheets-2.json'),...json('sheets-3.json')];
-const noteBasedSheetTitles=["UE_S1_B1_Systeme_Respiratoire_Partie01_Fiche_Revision_Systeme_Respiratoire.pdf","UE_S1_B1_Arthrose_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Traumatologie_Fiche_Revision_Appareil_Locomoteur_et_Traumatismes.pdf","UE_S1_B3_Douleur_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B3_Parametres_Vitaux_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Chirurgie_Orthopedique_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B2_Psychologie_de_la_Sante_Partie01_Fiche_Revision_Psychologie_de_la_Sante.pdf"];
+const noteBasedSheetTitles=["UE_S1_B1_Arthrose_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Traumatologie_Fiche_Revision_Appareil_Locomoteur_et_Traumatismes.pdf","UE_S1_B3_Parametres_Vitaux_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Chirurgie_Orthopedique_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B2_Psychologie_de_la_Sante_Partie01_Fiche_Revision_Psychologie_de_la_Sante.pdf"];
 for(const title of noteBasedSheetTitles){const sheet=revisionSheets.find(x=>x.title===title);assert(sheet,'Fiche de provenance absente: '+title);assert(sheet.officialSupport===false,'Fiche sans support officiel non marquée: '+title);assert(typeof sheet.sourceBasis==='string'&&sheet.sourceBasis.trim().length>3,'Provenance de fiche absente: '+title);}
+for(const id of ['douleur','systeme_respiratoire']){const sheet=revisionSheets.find(x=>x.courseId===id);assert(sheet?.officialSupport===true&&!sheet.provisional&&sheet.officialSupportUrl,'Provenance officielle perdue: '+id);}
+assert(runtime.filter(q=>q.courseId==='douleur').length===52,'Douleur doit utiliser les 52 questions officielles');
 const officialGrandBrules=revisionSheets.find(x=>x.courseId==='grands_brules');assert(officialGrandBrules?.officialSupport!==false,'La fiche Grands brûlés actuelle est issue du support officiel et ne doit pas être marquée');
 const sourceLegendIndexHtml=read('index.html');assert(sourceLegendIndexHtml.includes('sheetSourceLegend')&&sourceLegendIndexHtml.includes('officialSupport===false')&&sourceLegendIndexHtml.includes('📝 Notes / captures'),'Indicateur visible de provenance absent de la liste des fiches');
 const sourceLegendV74=read('v74-pack.js');assert(sourceLegendV74.includes("type==='sheet'&&x.officialSupport===false")&&sourceLegendV74.includes('📝 Notes / captures')&&sourceLegendV74.includes("d.sheets.some(x=>x.officialSupport===false)"),'Indicateur visible de provenance absent des cartes de cours/favoris');
