@@ -37,9 +37,18 @@ function populate(){
   $('v8357Difficulty').value=state.difficulty;
   $('v8357Count').value=state.count;
   $('v8357Mode').value=state.mode;
-  const n=pool().length;
-  $('v8357Available').textContent=n+' question'+(n>1?'s':'')+' disponible'+(n>1?'s':'');
-  const launch=$('v8357Launch');launch.disabled=!n;launch.textContent=n?'▶ Lancer mes QCM':'Aucun QCM pour ces filtres';
+  const n=pool().length,status=window.IFSI_QCM_LOAD?.status||'loading';
+  const launch=$('v8357Launch'),counter=$('v8357Available');
+  if(!n&&status==='loading'){
+    counter.textContent='Chargement des QCM en cours…';
+    launch.disabled=true;launch.textContent='⏳ Chargement des questions…';
+  }else if(!n&&(status==='error'||status==='partial')){
+    counter.textContent='Les questions ne sont pas disponibles sur cet appareil. Vérifie la connexion puis réessaie.';
+    launch.disabled=false;launch.textContent='↻ Réessayer de charger les QCM';
+  }else{
+    counter.textContent=n+' question'+(n>1?'s':'')+' disponible'+(n>1?'s':'')+(status==='partial'?' • certains packs sont encore indisponibles':'');
+    launch.disabled=!n;launch.textContent=n?'▶ Lancer mes QCM':'Aucun QCM pour ces filtres';
+  }
 }
 function start(){
   const candidates=pool();if(!candidates.length)return;
@@ -91,7 +100,12 @@ function inject(){
   $('v8357Difficulty').onchange=e=>{state.difficulty=e.target.value;populate()};
   $('v8357Count').onchange=e=>{state.count=e.target.value;populate()};
   $('v8357Mode').onchange=e=>{state.mode=e.target.value;populate()};
-  $('v8357Launch').onclick=start;
+  $('v8357Launch').onclick=()=>{
+    if(!pool().length&&['error','partial'].includes(window.IFSI_QCM_LOAD?.status)){
+      window.IFSI_QCM_RELOAD?.();return;
+    }
+    start();
+  };
   builder.hidden=!state.open;toggle.setAttribute('aria-expanded',String(state.open));
   toggle.textContent=state.open?'Masquer les filtres ↑':'Choisir mes QCM →';
   if(state.open)populate();
@@ -104,5 +118,6 @@ function watch(){const body=$('v81Body');if(!body||observer)return;observer=new 
 function init(){apply();watch();return !!observer}
 let tries=0;const timer=setInterval(()=>{if(init()||++tries>100)clearInterval(timer)},100);
 window.addEventListener('ifsi:v741-ready',schedule);
+window.addEventListener('ifsi:qcm-load',()=>{if(state.open)populate()});
 window.IFSI_V8357_QCM={version:VERSION,apply,open:()=>{apply();if(!state.open)$('v8357Toggle')?.click()},getState:()=>({...state})};
 })();
