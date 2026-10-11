@@ -63,6 +63,7 @@ assert.equal(page.window.IFSI_QCM_LOAD.status,'ready');
 assert.deepEqual(Array.from(page.window.IFSI_QCM_LOAD.failed),[]);
 
 const access=fs.readFileSync('v8357-qcm-access.js','utf8');
+assert.match(access,/\.v8357-qcm-footer \[hidden\]\{display:none!important\}/,'Le bouton de reprise masqué ne doit pas être réaffiché par le style .btn');
 const element=()=>({innerHTML:'',value:'all',textContent:'',disabled:false,hidden:true});
 const elements=new Map();
 for(const id of ['v8357QcmCard','v8357Domain','v8357Course','v8357Theme','v8357Difficulty','v8357Count','v8357Mode','v8357Available','v8357Launch','v8357Retry'])elements.set(id,element());

@@ -75,6 +75,7 @@ function css(){
     '#v81Body .v8357-qcm-fields label{display:grid;gap:5px;font-weight:800;font-size:13px;min-width:0}'+
     '#v81Body .v8357-qcm-fields select{width:100%;min-width:0;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}'+
     '#v81Body .v8357-qcm-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:15px}'+
+    '#v81Body .v8357-qcm-footer [hidden]{display:none!important}'+
     '#v81Body .v8357-qcm-footer .btn{min-width:200px}'+
     'body.v72-dark #v81Body .v8357-qcm-card{background:#211c2b!important;border-color:#63508a!important;color:#f7f2ff!important}'+
     'body.v72-dark #v81Body .v8357-qcm-fields select{background:#292332!important;color:#f7f2ff!important;border-color:#554563!important}'+

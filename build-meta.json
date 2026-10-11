@@ -1,6 +1,6 @@
 {
-  "version": "8.30.76",
-  "build": "8376",
+  "version": "8.30.77",
+  "build": "8377",
   "releasedAt": "2026-10-11",
-  "summary": "QCM fiables en réseau instable, reprise ciblée des packs et questions autonomes sans visuel manquant."
+  "summary": "Interface QCM fiabilisée : la reprise des packs n’apparaît que lorsque la banque est réellement partielle."
 }
