@@ -37,6 +37,9 @@ jobs:
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 
+      - name: Contrôler les packs de cours validés et leurs ressources
+        run: node tests/course-delivery.mjs
+
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 

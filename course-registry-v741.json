@@ -1,5 +1,5 @@
 {
-  "version": "8.30.71",
+  "version": "8.30.72",
   "courses": [
     {
       "id": "biomolecules",
@@ -529,6 +529,18 @@
       "ue": "B1",
       "officialSupportUrl": "https://drive.google.com/file/d/1Jw8RzgwKSob_zp8a7DLN2W_3qT5_gDaz/view",
       "qcmPdfUrl": "https://drive.google.com/file/d/1QYoX2hMuvqvMvzFq1vU0LJEFvL3Ub-SK/view"
+    },
+    {
+      "id": "plaies_pansements",
+      "label": "Plaies et pansements — Partie 1/2",
+      "aliases": [
+        "Plaies et pansements",
+        "Introduction aux plaies et pansements"
+      ],
+      "domain": "B",
+      "ue": "B3",
+      "officialSupportUrl": "https://drive.google.com/file/d/11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe/view"
     }
   ],
   "auditBaseline": {

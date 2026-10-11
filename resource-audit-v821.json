@@ -1,5 +1,5 @@
 {
-  "version": "8.30.71",
+  "version": "8.30.72",
   "auditedAt": "2026-10-11",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,11 +7,11 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.71 : S8 ajoutée et ergonomie planning améliorée ; catalogues pédagogiques inchangés.",
+  "note": "V8.30.72 : S8 ajoutée et ergonomie planning améliorée ; catalogues pédagogiques inchangés.",
   "expectedTotals": {
-    "courses": 45,
-    "sheets": 55,
-    "infographics": 155,
+    "courses": 46,
+    "sheets": 56,
+    "infographics": 161,
     "vocals": 58,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
