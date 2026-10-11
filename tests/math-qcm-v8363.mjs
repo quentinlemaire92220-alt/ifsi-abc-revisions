@@ -77,6 +77,6 @@ assert.equal(api.stageFor(7),'mixed','Niveau 7 bloqué faute de QCM difficile');
 for(const row of levels)assert.equal(api.mastery(row.n),true,'Niveau '+row.n+' impossible à maîtriser à 100 %');
 const sw=read('sw.js');
 assert.ok(sw.includes("'./qextra-49.txt'"),'Pack correctif absent du PWA');
-assert.ok(sw.includes("'./qextra-48.txt','./qextra-49.txt'])"),'Pack absent de la liste des overrides SW');
+assert.match(sw,/const override=await fetchQcmPacks\(\[[^\]]*'\.\/qextra-48\.txt','\.\/qextra-49\.txt'\]/,'Les deux derniers packs doivent rester dans les overrides du Service Worker');
 console.log('✅ Maths : 226 QCM, 3 calculs exacts, 4 énoncés autonomes, 10 niveaux accessibles');
 console.log('📊 Distribution : '+levels.map(l=>l.n+':'+l.qs.length).join(' | '));
