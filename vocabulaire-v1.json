@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-09",
-  "sourceNote": "Glossaire pédagogique transversal fondé sur la terminologie médicale et les thèmes du registre des cours ; liens de cours indicatifs, définitions à confronter aux supports officiels, aucune transcription revendiquée.",
+  "updatedAt": "2026-10-12",
+  "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel.",
   "entries": [
     {
       "id": "hypoxie",
@@ -10,7 +10,7 @@
       "theme": "Respiration et oxygénation",
       "definition": "Diminution de l'oxygène disponible au niveau des tissus.",
       "distinction": "Hypoxémie : baisse de l'oxygène dans le sang artériel.",
-      "etymologie": "hypo- : insuffisance ; -oxie : oxygène",
+      "etymologie": "hypo- (insuffisance) + ox- (oxygène) + -ie (état)",
       "courseIds": [
         "systeme_respiratoire",
         "parametres_vitaux"
@@ -23,7 +23,7 @@
       "theme": "Respiration et oxygénation",
       "definition": "Diminution de l'oxygénation du sang artériel, évaluée notamment par la PaO₂.",
       "distinction": "Hypoxie : insuffisance d'oxygène dans les tissus.",
-      "etymologie": "hypo- : insuffisance ; -émie : sang",
+      "etymologie": "hypo- (diminution) + ox- (oxygène) + -émie (sang)",
       "courseIds": [
         "systeme_respiratoire",
         "parametres_vitaux"
@@ -435,7 +435,7 @@
       "theme": "Métabolisme et constantes",
       "definition": "Diminution excessive de la concentration de glucose dans le sang.",
       "distinction": "Hyperglycémie : concentration de glucose trop élevée.",
-      "etymologie": "hypo- : diminution ; glyc- : sucre ; -émie : sang",
+      "etymologie": "hypo- (diminution) + glyc- (sucre) + -émie (sang)",
       "courseIds": [
         "homeostasie",
         "systeme_endocrinien"
@@ -448,7 +448,7 @@
       "theme": "Métabolisme et constantes",
       "definition": "Augmentation anormale de la concentration de glucose dans le sang.",
       "distinction": "Hypoglycémie : concentration de glucose trop basse.",
-      "etymologie": "hyper- : excès ; glyc- : sucre ; -émie : sang",
+      "etymologie": "hyper- (excès) + glyc- (sucre) + -émie (sang)",
       "courseIds": [
         "homeostasie",
         "systeme_endocrinien"
@@ -1514,7 +1514,7 @@
       "theme": "Appareil locomoteur et rhumatologie",
       "definition": "Maladie osseuse caractérisée par une résistance osseuse diminuée et un risque accru de fracture.",
       "distinction": "L'arthrose est une maladie articulaire touchant notamment le cartilage.",
-      "etymologie": "ostéo- : os ; -porose : porosité",
+      "etymologie": "osté(o)- (os) + por(o)- (pore) + -ose (affection)",
       "courseIds": [
         "pathologies_microcristallines_osteoporose"
       ],
@@ -1526,7 +1526,7 @@
       "theme": "Appareil locomoteur et rhumatologie",
       "definition": "Maladie articulaire associant des altérations du cartilage et de l'ensemble des tissus articulaires.",
       "distinction": "La polyarthrite rhumatoïde est une maladie inflammatoire auto-immune.",
-      "etymologie": "arthr- : articulation",
+      "etymologie": "arthr(o)- (articulation) + -ose (affection chronique)",
       "courseIds": [
         "arthrose",
         "appareil_locomoteur"
@@ -2447,6 +2447,1118 @@
       "etymologie": "",
       "courseIds": [
         "infections_cutanees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_hypo",
+      "term": "Hypo-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant diminution ou insuffisance. Exemple : Hypoglycémie : taux de glucose sanguin trop bas.",
+      "distinction": "À distinguer de hyper ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : diminution ou insuffisance.",
+      "courseIds": [
+        "homeostasie",
+        "systeme_respiratoire",
+        "systeme_endocrinien",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_hyper",
+      "term": "Hyper-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant augmentation ou excès. Exemple : Hyperglycémie : taux de glucose sanguin trop élevé.",
+      "distinction": "À distinguer de hypo ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : augmentation ou excès.",
+      "courseIds": [
+        "homeostasie",
+        "systeme_endocrinien",
+        "parametres_vitaux",
+        "systeme_cardiovasculaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_brady",
+      "term": "Brady-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant lenteur ou ralentissement. Exemple : Bradycardie : fréquence cardiaque anormalement lente.",
+      "distinction": "À distinguer de tachy ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : lenteur ou ralentissement.",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_tachy",
+      "term": "Tachy-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant rapidité ou accélération. Exemple : Tachypnée : fréquence respiratoire anormalement élevée.",
+      "distinction": "À distinguer de brady ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : rapidité ou accélération.",
+      "courseIds": [
+        "systeme_respiratoire",
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_dys",
+      "term": "Dys-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant fonctionnement difficile ou perturbé. Exemple : Dysphagie : difficulté à avaler.",
+      "distinction": "À distinguer de a-/an- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : fonctionnement difficile ou perturbé.",
+      "courseIds": [
+        "systeme_digestif",
+        "systeme_nerveux",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_an",
+      "term": "A-/An-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant absence ou privation. Exemple : Anurie : absence presque complète de production d'urine.",
+      "distinction": "À distinguer de dys- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : absence ou privation.",
+      "courseIds": [
+        "systeme_urinaire",
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_poly",
+      "term": "Poly-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant nombreux ou abondant. Exemple : Polyurie : émission d'une quantité anormalement importante d'urine.",
+      "distinction": "À distinguer de oligo ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : nombreux ou abondant.",
+      "courseIds": [
+        "systeme_urinaire",
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_oligo",
+      "term": "Oligo-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant faible quantité ou peu nombreux. Exemple : Oligurie : baisse du volume d'urine produit.",
+      "distinction": "À distinguer de poly ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : faible quantité ou peu nombreux.",
+      "courseIds": [
+        "systeme_urinaire",
+        "homeostasie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_hemo",
+      "term": "Hém(o)- / Hémat(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant sang. Exemple : Hématurie : présence de sang dans les urines.",
+      "distinction": "À distinguer de -émie ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : sang.",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "systeme_urinaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_cardio",
+      "term": "Cardi(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant cœur. Exemple : Cardiologie : discipline qui étudie le cœur.",
+      "distinction": "À distinguer de angi(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : cœur.",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_neuro",
+      "term": "Neur(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant nerf ou système nerveux. Exemple : Neuropathie : affection d'un nerf ou de plusieurs nerfs.",
+      "distinction": "À distinguer de my(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : nerf ou système nerveux.",
+      "courseIds": [
+        "systeme_nerveux",
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_nephro",
+      "term": "Néphr(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant rein. Exemple : Néphrologie : spécialité médicale consacrée aux reins.",
+      "distinction": "À distinguer de cyst(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : rein.",
+      "courseIds": [
+        "systeme_urinaire",
+        "infections_urinaires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_cyto",
+      "term": "Cyt(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant cellule. Exemple : Cytologie : étude des cellules.",
+      "distinction": "À distinguer de hist(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : cellule.",
+      "courseIds": [
+        "cellules_tissus",
+        "genetique"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_histo",
+      "term": "Hist(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant tissu biologique. Exemple : Histologie : étude des tissus.",
+      "distinction": "À distinguer de cyt(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : tissu biologique.",
+      "courseIds": [
+        "cellules_tissus",
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_osteo",
+      "term": "Osté(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant os. Exemple : Ostéoporose : fragilité liée à la diminution de la résistance osseuse.",
+      "distinction": "À distinguer de arthr(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : os.",
+      "courseIds": [
+        "appareil_locomoteur",
+        "arthrose",
+        "pathologies_microcristallines_osteoporose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_arthro",
+      "term": "Arthr(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant articulation. Exemple : Arthrite : inflammation d'une articulation.",
+      "distinction": "À distinguer de osté(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : articulation.",
+      "courseIds": [
+        "arthrose",
+        "rhumatismes_inflammatoires",
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_dermato",
+      "term": "Derm(at)o-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant peau. Exemple : Dermatite : inflammation de la peau.",
+      "distinction": "À distinguer de épithélium ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : peau.",
+      "courseIds": [
+        "infections_cutanees",
+        "plaies_pansements",
+        "grands_brules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_gastro",
+      "term": "Gastr(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant estomac. Exemple : Gastrite : inflammation de la muqueuse gastrique.",
+      "distinction": "À distinguer de entér(o)- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : estomac.",
+      "courseIds": [
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_pneumo",
+      "term": "Pneum(o)-",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant poumon ou air selon le contexte. Exemple : Pneumopathie : maladie touchant le poumon.",
+      "distinction": "À distinguer de -pnée ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément préfixal ou radical : poumon ou air selon le contexte.",
+      "courseIds": [
+        "systeme_respiratoire",
+        "infections_pulmonaires_bacteriennes",
+        "infections_respiratoires_virales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_urie",
+      "term": "-urie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant présence ou quantité d'une substance dans les urines. Exemple : Glycosurie : présence de glucose dans l'urine.",
+      "distinction": "À distinguer de -émie ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : présence ou quantité d'une substance dans les urines.",
+      "courseIds": [
+        "systeme_urinaire",
+        "infections_urinaires",
+        "homeostasie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_emie",
+      "term": "-émie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant présence ou concentration dans le sang. Exemple : Glycémie : concentration de glucose dans le sang.",
+      "distinction": "À distinguer de -urie ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : présence ou concentration dans le sang.",
+      "courseIds": [
+        "homeostasie",
+        "parametres_vitaux",
+        "biomolecules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_ite",
+      "term": "-ite",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant inflammation. Exemple : Gastrite : inflammation de la paroi gastrique.",
+      "distinction": "À distinguer de -ose ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : inflammation.",
+      "courseIds": [
+        "physiopathologie_infections",
+        "infections_cutanees",
+        "arthrose",
+        "rhumatismes_inflammatoires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_algie",
+      "term": "-algie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant douleur. Exemple : Myalgie : douleur musculaire.",
+      "distinction": "À distinguer de -ite ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : douleur.",
+      "courseIds": [
+        "douleur",
+        "appareil_locomoteur",
+        "rhumatismes_inflammatoires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_ectomie",
+      "term": "-ectomie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant ablation chirurgicale. Exemple : Appendicectomie : ablation de l'appendice.",
+      "distinction": "À distinguer de -tomie ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : ablation chirurgicale.",
+      "courseIds": [
+        "chirurgie_orthopedique",
+        "traumatologie",
+        "introduction_droit"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_scopie",
+      "term": "-scopie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant observation visuelle, souvent avec un instrument. Exemple : Endoscopie : observation directe d'une cavité.",
+      "distinction": "À distinguer de -graphie ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : observation visuelle, souvent avec un instrument.",
+      "courseIds": [
+        "systeme_digestif",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_pathie",
+      "term": "-pathie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant maladie ou affection. Exemple : Neuropathie : affection du système nerveux périphérique.",
+      "distinction": "À distinguer de -ite ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : maladie ou affection.",
+      "courseIds": [
+        "systeme_nerveux",
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_penie",
+      "term": "-pénie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant diminution pathologique du nombre ou de la quantité. Exemple : Leucopénie : diminution du nombre de leucocytes.",
+      "distinction": "À distinguer de -cytose ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : diminution pathologique du nombre ou de la quantité.",
+      "courseIds": [
+        "systeme_immunitaire",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_megali",
+      "term": "-mégalie",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant augmentation du volume d'un organe. Exemple : Splénomégalie : augmentation de taille de la rate.",
+      "distinction": "À distinguer de hyper- ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : augmentation du volume d'un organe.",
+      "courseIds": [
+        "systeme_immunitaire",
+        "systeme_digestif"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_lysis",
+      "term": "-lyse",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant destruction ou dégradation. Exemple : Hémolyse : destruction des globules rouges.",
+      "distinction": "À distinguer de -synthèse ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : destruction ou dégradation.",
+      "courseIds": [
+        "biomolecules",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "morph_genese",
+      "term": "-genèse",
+      "theme": "Construction des mots médicaux",
+      "definition": "Élément de terminologie médicale indiquant formation ou production. Exemple : Hématopoïèse et organogenèse décrivent des processus de formation.",
+      "distinction": "À distinguer de -lyse ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : formation ou production.",
+      "courseIds": [
+        "genetique",
+        "cellules_tissus",
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_escarre",
+      "term": "Escarre",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Lésion localisée de la peau ou des tissus sous-jacents, généralement au-dessus d'une saillie osseuse, liée à une pression prolongée.",
+      "distinction": "Une rougeur persistante peut être un premier signe ; ce n'est pas une simple irritation.",
+      "etymologie": "Terme clinique désignant une lésion de pression ; pas de découpage simple et fiable en préfixe/racine/suffixe.",
+      "courseIds": [
+        "plaies_pansements",
+        "grands_brules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_exsudat",
+      "term": "Exsudat",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Liquide produit au niveau d'une plaie au cours de la réaction inflammatoire, dont la quantité et l'aspect orientent la surveillance.",
+      "distinction": "Ne pas confondre exsudat physiologique et écoulement purulent.",
+      "etymologie": "ex- (vers l'extérieur) + sud- (s'écouler) : liquide qui suinte.",
+      "courseIds": [
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_fibrine",
+      "term": "Fibrine",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Protéine formée à partir du fibrinogène pendant la coagulation, pouvant être visible à la surface d'une plaie.",
+      "distinction": "La fibrine n'est pas synonyme de pus ni systématiquement signe d'infection.",
+      "etymologie": "fibr- (fibre) + -ine (substance) : protéine fibreuse.",
+      "courseIds": [
+        "plaies_pansements",
+        "homeostasie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_bourgeonnement",
+      "term": "Bourgeonnement",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Formation de tissu de granulation vascularisé pendant la phase de réparation d'une plaie.",
+      "distinction": "Un tissu de granulation n'est pas une croûte ni une nécrose.",
+      "etymologie": "bourgeon (petite pousse) + -nement (processus) : formation d'un tissu nouveau.",
+      "courseIds": [
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_epithelialisation",
+      "term": "Épithélialisation",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Recouvrement progressif d'une plaie par de nouvelles cellules épithéliales à partir des berges.",
+      "distinction": "À distinguer du bourgeonnement, qui forme le tissu de réparation sous-jacent.",
+      "etymologie": "épithéli- (tissu de revêtement) + -isation (processus) : reconstitution d'un revêtement.",
+      "courseIds": [
+        "plaies_pansements",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_debridement",
+      "term": "Débridement",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Retrait de tissus non viables ou d'éléments gênant la cicatrisation, selon une indication et une méthode adaptées.",
+      "distinction": "À distinguer de la simple réfection d'un pansement ; geste soumis aux compétences et protocoles.",
+      "etymologie": "dé- (action de retirer) + bride (lien qui retient) : libération ou retrait des tissus concernés.",
+      "courseIds": [
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_maceration",
+      "term": "Macération",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Altération de la peau liée à une humidité excessive et prolongée, notamment autour d'une plaie.",
+      "distinction": "À distinguer d'une peau normalement hydratée.",
+      "etymologie": "macér- (ramollir par séjour dans un liquide) + -ation (processus).",
+      "courseIds": [
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_necrose",
+      "term": "Nécrose",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Mort irréversible de cellules ou de tissus, notamment visible dans certaines plaies complexes.",
+      "distinction": "À distinguer de l'apoptose, mort cellulaire programmée.",
+      "etymologie": "nécr(o)- (mort) + -ose (état ou affection) : mort tissulaire.",
+      "courseIds": [
+        "plaies_pansements",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_pansement_occlusif",
+      "term": "Pansement occlusif",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Dispositif de couverture qui limite fortement les échanges avec l'extérieur, choisi selon l'état de la plaie.",
+      "distinction": "Tous les pansements ne sont pas occlusifs ; le choix dépend de l'évaluation.",
+      "etymologie": "occlus- (fermeture) + -if (caractéristique) : dispositif qui ferme.",
+      "courseIds": [
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_asepsie_geste",
+      "term": "Asepsie lors d'un soin",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Ensemble de pratiques destinées à éviter l'introduction de micro-organismes dans une zone ou un dispositif pendant le soin.",
+      "distinction": "Une technique aseptique ne remplace pas l'hygiène des mains.",
+      "etymologie": "a- (absence) + sept- (infection, putréfaction) + -ie (état) : prévention de la contamination.",
+      "courseIds": [
+        "plaies_pansements",
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_arthralgie",
+      "term": "Arthralgie",
+      "theme": "Locomoteur et rhumatologie",
+      "definition": "Douleur localisée à une articulation, qui peut avoir une origine inflammatoire ou mécanique.",
+      "distinction": "L'arthralgie est un symptôme ; l'arthrite implique une inflammation articulaire.",
+      "etymologie": "arthr(o)- (articulation) + -algie (douleur).",
+      "courseIds": [
+        "arthrose",
+        "rhumatismes_inflammatoires",
+        "douleur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_gonarthrose",
+      "term": "Gonarthrose",
+      "theme": "Locomoteur et rhumatologie",
+      "definition": "Arthrose touchant le genou, associant altérations articulaires et symptômes variables.",
+      "distinction": "À distinguer de la coxarthrose, qui touche la hanche.",
+      "etymologie": "gon- (genou) + arthr(o)- (articulation) + -ose (affection).",
+      "courseIds": [
+        "arthrose",
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_coxarthrose",
+      "term": "Coxarthrose",
+      "theme": "Locomoteur et rhumatologie",
+      "definition": "Arthrose de l'articulation de la hanche, pouvant entraîner douleur et gêne fonctionnelle.",
+      "distinction": "À distinguer de la gonarthrose, qui concerne le genou.",
+      "etymologie": "cox- (hanche) + arthr(o)- (articulation) + -ose (affection).",
+      "courseIds": [
+        "arthrose",
+        "appareil_locomoteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_raideur_matinale",
+      "term": "Raideur matinale",
+      "theme": "Locomoteur et rhumatologie",
+      "definition": "Sensation de limitation articulaire au réveil dont la durée aide à orienter l'évaluation clinique.",
+      "distinction": "Une raideur prolongée peut évoquer un mécanisme inflammatoire, sans suffire au diagnostic.",
+      "etymologie": "raideur (difficulté à mobiliser) + matinale (au réveil).",
+      "courseIds": [
+        "rhumatismes_inflammatoires",
+        "arthrose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_synovite",
+      "term": "Synovite",
+      "theme": "Locomoteur et rhumatologie",
+      "definition": "Inflammation de la membrane synoviale d'une articulation, souvent associée à douleur ou gonflement.",
+      "distinction": "La synovite n'est pas synonyme d'usure du cartilage.",
+      "etymologie": "synov- (membrane synoviale) + -ite (inflammation).",
+      "courseIds": [
+        "rhumatismes_inflammatoires",
+        "arthrose"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_meningite",
+      "term": "Méningite",
+      "theme": "Neurologie et infections",
+      "definition": "Inflammation des méninges, pouvant être due à des agents infectieux ou à d'autres causes.",
+      "distinction": "À distinguer de l'encéphalite, qui touche le tissu cérébral.",
+      "etymologie": "méning- (méninges) + -ite (inflammation).",
+      "courseIds": [
+        "infections_neuro_meningees",
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_encephalite",
+      "term": "Encéphalite",
+      "theme": "Neurologie et infections",
+      "definition": "Inflammation du tissu cérébral pouvant entraîner troubles de la conscience ou signes neurologiques.",
+      "distinction": "À distinguer de la méningite qui concerne principalement les enveloppes du cerveau.",
+      "etymologie": "encéphal- (cerveau) + -ite (inflammation).",
+      "courseIds": [
+        "infections_neuro_meningees",
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_raideur_nuque",
+      "term": "Raideur de nuque",
+      "theme": "Neurologie et infections",
+      "definition": "Résistance douloureuse à la flexion du cou pouvant faire évoquer une irritation méningée.",
+      "distinction": "Signe non spécifique : son absence n'exclut pas une méningite.",
+      "etymologie": "raideur (mobilité limitée) + nuque (région cervicale postérieure).",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_pneumonie",
+      "term": "Pneumonie",
+      "theme": "Infections respiratoires",
+      "definition": "Infection du parenchyme pulmonaire responsable d'une inflammation des alvéoles et tissus voisins.",
+      "distinction": "À distinguer de la bronchite qui concerne principalement les bronches.",
+      "etymologie": "pneumon- (poumon) + -ie (état ou affection).",
+      "courseIds": [
+        "infections_pulmonaires_bacteriennes",
+        "infections_respiratoires_virales",
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_expectorations",
+      "term": "Expectoration",
+      "theme": "Infections respiratoires",
+      "definition": "Sécrétions issues des voies respiratoires inférieures éliminées lors de la toux.",
+      "distinction": "La couleur seule des expectorations ne permet pas de confirmer une infection bactérienne.",
+      "etymologie": "ex- (hors de) + pector- (poitrine) + -ation (action).",
+      "courseIds": [
+        "infections_pulmonaires_bacteriennes",
+        "systeme_respiratoire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_dyspnee_effort",
+      "term": "Dyspnée d'effort",
+      "theme": "Infections respiratoires",
+      "definition": "Sensation de difficulté à respirer apparaissant ou s'aggravant pendant l'activité physique.",
+      "distinction": "À distinguer de la tachypnée qui décrit une fréquence respiratoire élevée.",
+      "etymologie": "dys- (difficulté) + -pnée (respiration) ; « d'effort » précise le contexte.",
+      "courseIds": [
+        "infections_pulmonaires_bacteriennes",
+        "infections_respiratoires_virales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_incubation",
+      "term": "Incubation",
+      "theme": "Virologie et infections",
+      "definition": "Intervalle entre la contamination par un agent infectieux et l'apparition des premiers symptômes.",
+      "distinction": "À distinguer de la période de contagiosité qui peut débuter avant les symptômes.",
+      "etymologie": "incub- (couver) + -ation (processus) : période précédant les symptômes.",
+      "courseIds": [
+        "virus",
+        "infections_respiratoires_virales",
+        "ist_hors_vih"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_virion",
+      "term": "Virion",
+      "theme": "Virologie et infections",
+      "definition": "Particule virale complète située hors d'une cellule hôte, susceptible d'assurer une nouvelle infection.",
+      "distinction": "Le virion est une particule ; le virus ne se multiplie pas seul hors des cellules.",
+      "etymologie": "vir- (virus) + -ion (particule) : particule virale.",
+      "courseIds": [
+        "virus",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_capside",
+      "term": "Capside",
+      "theme": "Virologie et infections",
+      "definition": "Coque protéique qui entoure et protège le matériel génétique d'un virus.",
+      "distinction": "La capside n'est pas identique à l'enveloppe lipidique, absente de certains virus.",
+      "etymologie": "caps- (boîte, enveloppe protectrice) + -ide (forme ou relation).",
+      "courseIds": [
+        "virus",
+        "diagnostic_virologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_reservoir",
+      "term": "Réservoir infectieux",
+      "theme": "Virologie et infections",
+      "definition": "Milieu, organisme ou population permettant le maintien d'un agent infectieux dans la nature.",
+      "distinction": "À distinguer du vecteur qui transporte un agent entre hôtes.",
+      "etymologie": "Réservoir : milieu de maintien ; expression descriptive, sans découpage médical spécifique.",
+      "courseIds": [
+        "virus",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_chlamydiose",
+      "term": "Chlamydiose",
+      "theme": "Santé sexuelle",
+      "definition": "Infection bactérienne sexuellement transmissible provoquée par Chlamydia trachomatis.",
+      "distinction": "Peut être asymptomatique ; ne pas la confondre avec une infection virale.",
+      "etymologie": "Chlamydi- (genre bactérien Chlamydia) + -ose (affection).",
+      "courseIds": [
+        "ist_hors_vih"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_gonococcie",
+      "term": "Gonococcie",
+      "theme": "Santé sexuelle",
+      "definition": "Infection due à Neisseria gonorrhoeae, pouvant atteindre les muqueuses génitales ou extragénitales.",
+      "distinction": "À distinguer de la syphilis, causée par Treponema pallidum.",
+      "etymologie": "gono- (génital) + cocc- (bactérie arrondie) + -ie (état).",
+      "courseIds": [
+        "ist_hors_vih"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_syphilis",
+      "term": "Syphilis",
+      "theme": "Santé sexuelle",
+      "definition": "Infection bactérienne systémique due à Treponema pallidum et évoluant en plusieurs stades.",
+      "distinction": "Une lésion initiale peut être indolore ; le diagnostic repose sur des examens adaptés.",
+      "etymologie": "Terme historique : pas de décomposition clinique standard en préfixe et suffixe.",
+      "courseIds": [
+        "ist_hors_vih"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_formule_concentration",
+      "term": "Concentration massique",
+      "theme": "Calculs de doses et mathématiques",
+      "definition": "Rapport entre une masse de substance dissoute et le volume total de solution, souvent exprimé en mg/mL.",
+      "distinction": "Une concentration en mg/mL n'est pas un débit en mL/h.",
+      "etymologie": "con- (ensemble) + centr- (centre) + -ation (processus) ; emploi scientifique pour masse par volume.",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_debit_perfusion",
+      "term": "Débit de perfusion",
+      "theme": "Calculs de doses et mathématiques",
+      "definition": "Volume administré par unité de temps, généralement exprimé en mL/h pour une pompe à perfusion.",
+      "distinction": "Ne pas confondre débit volumique et dose de principe actif par heure.",
+      "etymologie": "per- (à travers) + fus- (verser) + -ion (action) : administration par perfusion.",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "administration_medicamenteuse"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_dilution",
+      "term": "Dilution",
+      "theme": "Calculs de doses et mathématiques",
+      "definition": "Opération qui diminue la concentration d'une solution en ajoutant du solvant sans changer la quantité totale de soluté.",
+      "distinction": "À distinguer d'une dissolution qui consiste à mettre une substance en solution.",
+      "etymologie": "dilu- (délayer) + -tion (action) : diminution de concentration.",
+      "courseIds": [
+        "calculs_doses_mathematiques",
+        "pharmacologie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_proportionnalite",
+      "term": "Proportionnalité",
+      "theme": "Calculs de doses et mathématiques",
+      "definition": "Relation entre deux grandeurs dans laquelle leur rapport reste constant, utile pour les conversions et calculs de doses.",
+      "distinction": "Vérifier les unités avant toute règle de trois.",
+      "etymologie": "proportion (rapport) + -alité (propriété).",
+      "courseIds": [
+        "calculs_doses_mathematiques"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_epistemologie",
+      "term": "Épistémologie",
+      "theme": "Savoirs et méthodologie",
+      "definition": "Étude critique des conditions de production, de validation et des limites des connaissances scientifiques.",
+      "distinction": "À distinguer de la méthodologie qui décrit les procédures de recherche.",
+      "etymologie": "épistém(o)- (connaissance, savoir) + -logie (étude).",
+      "courseIds": [
+        "epistemologie_savoirs",
+        "methodes_travail_reussite"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_preuve_scientifique",
+      "term": "Preuve scientifique",
+      "theme": "Savoirs et méthodologie",
+      "definition": "Résultat étayé par des observations ou études reproductibles dont la solidité dépend des méthodes utilisées.",
+      "distinction": "Une opinion professionnelle n'a pas à elle seule le même niveau de preuve.",
+      "etymologie": "preuve (élément qui étaye) + scientifique (méthode de recherche) : expression descriptive.",
+      "courseIds": [
+        "epistemologie_savoirs",
+        "methodes_travail_reussite"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_biais_selection",
+      "term": "Biais de sélection",
+      "theme": "Savoirs et méthodologie",
+      "definition": "Erreur systématique due à une sélection non représentative des personnes ou observations étudiées.",
+      "distinction": "Un biais ne se confond pas avec la variabilité due au hasard.",
+      "etymologie": "biais (erreur systématique) + sélection (choix des sujets).",
+      "courseIds": [
+        "epistemologie_savoirs"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_memoire_travail",
+      "term": "Mémoire de travail",
+      "theme": "Savoirs et méthodologie",
+      "definition": "Système cognitif permettant de maintenir et manipuler temporairement une information pour accomplir une tâche.",
+      "distinction": "À distinguer de la mémoire à long terme.",
+      "etymologie": "mémoire (stockage mental) + de travail (usage temporaire).",
+      "courseIds": [
+        "methodes_travail_reussite",
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_rappel_actif",
+      "term": "Rappel actif",
+      "theme": "Savoirs et méthodologie",
+      "definition": "Technique d'apprentissage consistant à retrouver une réponse de mémoire plutôt qu'à relire passivement.",
+      "distinction": "Le rappel actif peut utiliser QCM ou flashcards mais ne se limite pas à eux.",
+      "etymologie": "rappel (recherche en mémoire) + actif (effort volontaire).",
+      "courseIds": [
+        "methodes_travail_reussite"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_organogenese",
+      "term": "Organogenèse",
+      "theme": "Biologie cellulaire",
+      "definition": "Ensemble des étapes du développement embryonnaire au cours desquelles se mettent en place les organes.",
+      "distinction": "À distinguer de la différenciation cellulaire qui concerne la spécialisation des cellules.",
+      "etymologie": "organ(o)- (organe) + -genèse (formation).",
+      "courseIds": [
+        "niveaux_organisation",
+        "systeme_reproducteur"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_tissu_epithelial",
+      "term": "Tissu épithélial",
+      "theme": "Biologie cellulaire",
+      "definition": "Tissu composé de cellules jointives qui recouvre des surfaces ou constitue certaines glandes.",
+      "distinction": "À distinguer du tissu conjonctif qui assure davantage des fonctions de soutien.",
+      "etymologie": "épi- (sur) + thél- (revêtement) : tissu de surface ou de glande.",
+      "courseIds": [
+        "niveaux_organisation",
+        "cellules_tissus"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_organe",
+      "term": "Organe",
+      "theme": "Biologie cellulaire",
+      "definition": "Structure anatomique constituée de plusieurs tissus coopérant pour remplir une ou plusieurs fonctions.",
+      "distinction": "Un organe n'est pas identique à un appareil comprenant plusieurs organes.",
+      "etymologie": "organ- (instrument, partie fonctionnelle) : structure composée de tissus.",
+      "courseIds": [
+        "niveaux_organisation"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_burn_rule_nine",
+      "term": "Règle des neuf",
+      "theme": "Brûlures et traumatologie",
+      "definition": "Méthode approximative d'estimation de la surface corporelle brûlée chez l'adulte à partir de régions anatomiques.",
+      "distinction": "Ne se substitue pas à des méthodes plus précises adaptées à l'âge.",
+      "etymologie": "Règle des neuf : expression descriptive fondée sur des pourcentages de surface corporelle.",
+      "courseIds": [
+        "grands_brules"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_brulure_profonde",
+      "term": "Brûlure profonde",
+      "theme": "Brûlures et traumatologie",
+      "definition": "Lésion thermique atteignant les couches profondes de la peau, avec risque important de séquelles.",
+      "distinction": "La douleur seule ne permet pas d'estimer la profondeur de la brûlure.",
+      "etymologie": "brûlure (lésion thermique) + profonde (atteinte de couches internes).",
+      "courseIds": [
+        "grands_brules",
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_hypovolemie",
+      "term": "Hypovolémie",
+      "theme": "Brûlures et traumatologie",
+      "definition": "Diminution du volume sanguin circulant effectif, possible après des pertes liquidiennes importantes.",
+      "distinction": "À distinguer de l'hypotension qui est une mesure de pression artérielle.",
+      "etymologie": "hypo- (diminution) + vol- (volume) + -émie (sang).",
+      "courseIds": [
+        "grands_brules",
+        "homeostasie",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_tachypnee",
+      "term": "Tachypnée",
+      "theme": "Respiration et oxygénation",
+      "definition": "Augmentation anormale de la fréquence respiratoire par rapport aux valeurs attendues pour l'âge.",
+      "distinction": "À distinguer de l'hyperpnée, qui décrit une augmentation de l'amplitude ventilatoire.",
+      "etymologie": "tachy- (rapide) + -pnée (respiration).",
+      "courseIds": [
+        "systeme_respiratoire",
+        "parametres_vitaux",
+        "infections_respiratoires_virales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_bradycardie",
+      "term": "Bradycardie",
+      "theme": "Paramètres vitaux",
+      "definition": "Fréquence cardiaque inférieure aux valeurs attendues, à interpréter selon l'âge et le contexte clinique.",
+      "distinction": "Ne pas confondre bradycardie et hypotension artérielle.",
+      "etymologie": "brady- (lent) + cardi(o)- (cœur) + -ie (état).",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_tachycardie",
+      "term": "Tachycardie",
+      "theme": "Paramètres vitaux",
+      "definition": "Fréquence cardiaque supérieure aux valeurs attendues selon l'âge et le contexte clinique.",
+      "distinction": "Une fréquence cardiaque élevée ne suffit pas à déterminer la cause.",
+      "etymologie": "tachy- (rapide) + cardi(o)- (cœur) + -ie (état).",
+      "courseIds": [
+        "systeme_cardiovasculaire",
+        "parametres_vitaux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_dysphagie",
+      "term": "Dysphagie",
+      "theme": "Digestion et alimentation",
+      "definition": "Difficulté à avaler ou à faire progresser un aliment de la bouche vers l'estomac.",
+      "distinction": "À distinguer de l'odynophagie qui correspond à une douleur lors de la déglutition.",
+      "etymologie": "dys- (difficulté) + -phagie (action d'avaler ou de manger).",
+      "courseIds": [
+        "systeme_digestif",
+        "systeme_nerveux"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_anurie",
+      "term": "Anurie",
+      "theme": "Système urinaire",
+      "definition": "Production d'urine presque nulle, nécessitant une évaluation rapide et contextualisée.",
+      "distinction": "À distinguer de l'oligurie, qui correspond à une diminution importante de la diurèse.",
+      "etymologie": "an- (absence) + -urie (urine).",
+      "courseIds": [
+        "systeme_urinaire",
+        "infections_urinaires"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_polyurie",
+      "term": "Polyurie",
+      "theme": "Système urinaire",
+      "definition": "Augmentation anormale du volume d'urine produit sur vingt-quatre heures, à distinguer de la fréquence des mictions.",
+      "distinction": "Une pollakiurie signifie uriner souvent, pas nécessairement produire beaucoup d'urine.",
+      "etymologie": "poly- (abondance) + -urie (urine).",
+      "courseIds": [
+        "systeme_urinaire",
+        "systeme_endocrinien"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_pollakiurie",
+      "term": "Pollakiurie",
+      "theme": "Système urinaire",
+      "definition": "Augmentation de la fréquence des mictions, généralement en petites quantités à chaque fois.",
+      "distinction": "À distinguer de la polyurie, qui concerne le volume total d'urine.",
+      "etymologie": "pollaki- (fréquent) + -urie (urine).",
+      "courseIds": [
+        "infections_urinaires",
+        "systeme_urinaire"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_hemostase",
+      "term": "Hémostase",
+      "theme": "Paramètres vitaux",
+      "definition": "Ensemble des mécanismes physiologiques limitant un saignement après une lésion vasculaire.",
+      "distinction": "L'hémostase comprend plusieurs étapes, dont l'agrégation plaquettaire et la coagulation.",
+      "etymologie": "hém(o)- (sang) + -stase (arrêt, stabilisation).",
+      "courseIds": [
+        "homeostasie",
+        "plaies_pansements"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_empathie_clinique",
+      "term": "Empathie clinique",
+      "theme": "Psychologie et relation de soin",
+      "definition": "Capacité à comprendre le vécu et les émotions d'une personne tout en maintenant une juste distance professionnelle.",
+      "distinction": "L'empathie ne signifie pas ressentir exactement la même émotion que le patient.",
+      "etymologie": "em- (dans) + -pathie (ressenti) ; compréhension du vécu d'autrui.",
+      "courseIds": [
+        "competences_psychosociales",
+        "psychologie_sante"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_assertivite",
+      "term": "Assertivité",
+      "theme": "Psychologie et relation de soin",
+      "definition": "Capacité à exprimer ses besoins et positions de manière claire tout en respectant les droits d'autrui.",
+      "distinction": "À distinguer de l'agressivité et de la passivité.",
+      "etymologie": "assert- (affirmer) + -ivité (qualité) : expression affirmée.",
+      "courseIds": [
+        "competences_psychosociales"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_consentement_soin",
+      "term": "Consentement aux soins",
+      "theme": "Droit et éthique",
+      "definition": "Accord libre et éclairé d'une personne après une information adaptée sur les soins envisagés.",
+      "distinction": "L'acceptation tacite ne remplace pas les exigences de consentement selon le contexte.",
+      "etymologie": "consentement (accord) + aux soins (actes proposés).",
+      "courseIds": [
+        "introduction_droit",
+        "ethique_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_odynophagie",
+      "term": "Odynophagie",
+      "theme": "Digestion et alimentation",
+      "definition": "Douleur ressentie au moment de la déglutition, qui peut être distinguée d'une simple difficulté à avaler.",
+      "distinction": "La dysphagie est une difficulté à avaler, l'odynophagie une douleur à la déglutition.",
+      "etymologie": "odyn(o)- (douleur) + -phagie (action d'avaler).",
+      "courseIds": [
+        "systeme_digestif",
+        "systeme_nerveux"
       ],
       "sourceType": "reference_pedagogique"
     }

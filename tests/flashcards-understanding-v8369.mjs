@@ -6,7 +6,8 @@ import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 const selected=await runtimeDeck();
 const full=await runtimeDeck({allCards:true});
 assert.ok(selected.questions.length>2200,'Banques de production absentes');
-assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,195);
+const vocabulary=JSON.parse((await import('node:fs')).readFileSync(new URL('../vocabulaire-v1.json',import.meta.url),'utf8'));
+assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,vocabulary.entries.length);
 for(const {deck} of [selected,full]){
   assert.equal(new Set(deck.map(c=>c.id)).size,deck.length,'Identifiants dupliqués');
   for(const c of deck){
@@ -44,4 +45,4 @@ for(const q of selected.questions.filter(q=>['homeostasie_050','cellules_014','v
   assert.ok(cards.length,q.id);
   for(const c of cards)assert.doesNotMatch(c.front,/À quoi correspond/,q.id+': relation à rappeler non explicitée');
 }
-console.log(JSON.stringify({selectedCards:selected.deck.length,candidateCards:full.deck.length,questions:selected.questions.length,negativeQuestions:negative.length,normalizedQuestions:7,vocabularyCards:195}));
+console.log(JSON.stringify({selectedCards:selected.deck.length,candidateCards:full.deck.length,questions:selected.questions.length,negativeQuestions:negative.length,normalizedQuestions:7,vocabularyCards:vocabulary.entries.length}));
