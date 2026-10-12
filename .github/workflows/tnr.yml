@@ -103,6 +103,9 @@ jobs:
       - name: Vérifier les 226 QCM de maths, leurs résultats exacts et les 10 niveaux
         run: node tests/math-qcm-v8363.mjs
 
+      - name: Contrôler les classements QCM et leurs permutations sans substitution
+        run: node tests/qcm-ordering-audit.mjs
+
       - name: Audit fonctionnel des corrections QCM
         run: node tests/qcm-correction-audit.mjs
 
