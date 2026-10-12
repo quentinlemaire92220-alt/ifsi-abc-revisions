@@ -1,0 +1,84 @@
+import assert from 'node:assert/strict';
+import {changedResources, validatePartChanges, canonicalPart} from './course-delivery-parts-lib.mjs';
+
+const id='cours_test';
+const base={
+ registry:{courses:[{id,qcmPdfUrl:'public-test-url'}]},
+ sheets:[{courseId:id,resourceId:'cours_test_fiche_p01'}],
+ infographics:[{courseId:id,resourceId:'cours_test_info_p01_01'}],
+ vocals:[],questions:[{courseId:id,id:'cours_test_p1_001'}]
+};
+const added={
+ ...base, sheets:[...base.sheets,{courseId:id,resourceId:'cours_test_fiche_p02'}],
+ infographics:[...base.infographics,{courseId:id,resourceId:'cours_test_info_p02_01'}],
+ vocals:[{courseId:id,id:'cours_test_vocal_p02_01'}],
+ questions:[...base.questions,{courseId:id,id:'cours_test_p2_001'}]
+};
+const audit={status:'PASS',pdfSha256:'a'.repeat(64),expectedCount:1,checkedCount:1};
+const publishedVerification={
+ status:'MATCH',source:'authenticated_drive_download',
+ pdfSha256:'a'.repeat(64),expectedCount:1,checkedCount:1
+};
+const part={
+ partId:'p02',validated:true,status:'awaiting_mp3',
+ sheetResourceIds:['cours_test_fiche_p02'],
+ infographicResourceIds:['cours_test_info_p02_01'],
+ vocalIds:['cours_test_vocal_p02_01'],
+ qcmQuestionIds:['cours_test_p2_001'],
+ visualAudit:audit,publishedVerification
+};
+const before={courses:[{courseId:id,part:'1/2',validated:true}]};
+const after={courses:[{...before.courses[0],partDeliveries:[part]}]};
+let count=0;
+const pass=(name,prev=base,next=added,old=before,newer=after)=>{
+ assert.doesNotThrow(()=>validatePartChanges(prev,next,old,newer),name);
+ count++; console.log('✅ '+name);
+};
+const fail=(name,prev=base,next=added,old=before,newer=after)=>{
+ assert.throws(()=>validatePartChanges(prev,next,old,newer),name);
+ count++; console.log('✅ Refuse : '+name);
+};
+pass('Nouvelle partie p02 : fiche, schéma, questions, vocal');
+pass('Pas de modification sur un cours publié',base,base,before,before);
+pass('Entrée calendrier sans ressources',
+ {registry:{courses:[]},sheets:[],infographics:[],vocals:[],questions:[]},
+ {registry:{courses:[{id:'calendrier'}]},sheets:[],infographics:[],vocals:[],questions:[]},
+ {courses:[]},{courses:[]});
+pass('Ajout de QCM seuls sur une nouvelle partie',base,
+ {...base,questions:added.questions},before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+   partId:'p02',validated:true,status:'partial',qcmQuestionIds:['cours_test_p2_001']
+ }]}]});
+fail('Partie non déclarée',base,added,before,before);
+fail('Rapport visuel absent',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,visualAudit:undefined}]}]});
+fail('Vérification PDF publié absente',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,publishedVerification:undefined}]}]});
+fail('Empreinte PDF différente',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,publishedVerification:{
+ ...publishedVerification,pdfSha256:'b'.repeat(64)}}]}]});
+fail('Identifiant de partie incohérent',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,partId:'p03'}]}]});
+fail('Infographie ajoutée mais non déclarée',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,infographicResourceIds:[]}]}]});
+fail('Question QCM nouvelle non déclarée',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[{...part,qcmQuestionIds:[]}]}]});
+fail('Partie doublonnée',base,added,before,
+ {courses:[{...before.courses[0],partDeliveries:[part,part]}]});
+fail('Déclaration de partie non actualisée',base,added,
+ {courses:[{...before.courses[0],partDeliveries:[part]}]},after);
+fail('Absence de justification quand fiche sans infographie',base,
+ {...base,sheets:added.sheets},before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+   partId:'p02',validated:true,status:'partial',sheetResourceIds:['cours_test_fiche_p02']
+ }]}]});
+pass('Fiche sans visuel, exclusion explicite',base,
+ {...base,sheets:added.sheets},before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+   partId:'p02',validated:true,status:'partial',
+   sheetResourceIds:['cours_test_fiche_p02'],schematics:'none'
+ }]}]});
+fail('Modification d’un ancien cours sans manifeste',base,added,{courses:[]},{courses:[]});
+assert.equal(canonicalPart('cours_test_fiche_p02'),'p02');
+assert.equal(canonicalPart('cours_test_p2_001'),'p02');
+console.log('✅ '+count+' scénarios testés pour les parties de cours');
