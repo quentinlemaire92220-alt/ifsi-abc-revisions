@@ -1,0 +1,36 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const feedbackSrc=read('v8378-qcm-feedback.js');
+const exerciseSrc=read('v8378-interactive-exercises.js');
+const files=['index.html','features-v9.js','v7-local.js','v72-pack.js','sw.js'];
+for(const file of files)assert.ok(read(file).includes('IFSI_QCM_FEEDBACK')||['index.html','sw.js'].includes(file),file+' : feedback non branché');
+for(const path of ['v8378-qcm-feedback.js','v8378-interactive-exercises.js']){
+ assert.ok(read('index.html').includes('./'+path+'?v=8378'),'Module absent du HTML : '+path);
+ assert.ok(read('sw.js').includes('./'+path),'Module absent du cache hors ligne : '+path);
+}
+assert.ok(read('.github/workflows/tnr.yml').includes('node tests/interactive-exercises-v8378.mjs'),'TNR non branché dans la CI');
+const context={window:{},document:{head:null},console};vm.createContext(context);vm.runInContext(feedbackSrc,context);
+const feedback=context.window.IFSI_QCM_FEEDBACK;
+const q={question:'À quel système appartiennent les reins ?',choices:['Système digestif','Système urinaire','Système circulatoire','Système respiratoire'],answers:[1],explanation:'Les reins filtrent le sang et produisent l’urine.'};
+const wrong=feedback.list(q,[0]);assert.equal(wrong.length,2,'Erreur choisie et réponse oubliée requises');
+assert.ok(wrong[0].message.includes('filtrent le sang'),'Explication factuelle sur les reins manquante');
+assert.equal(feedback.list(q,[1]).length,0,'Une bonne réponse ne crée pas une fausse erreur');
+const multi={question:'Quels organes font partie du système urinaire ?',choices:['Reins','Vessie','Estomac','Uretères'],answers:[0,1,3],explanation:'Reins, vessie et uretères.'};
+const mistakes=feedback.list(multi,[0,2]);assert.equal(mistakes.length,3,'Choix erroné et deux bonnes réponses omises');
+assert.deepEqual(Array.from(mistakes,x=>x.kind),['missed','incorrect','missed']);
+assert.ok(feedback.html({...q,choices:['<script>alert(1)</script>',...q.choices.slice(1)]},[0]).includes('&lt;script&gt;'),'Échappement HTML absent');
+const exerciseContext={window:{show(){}},document:{getElementById:id=>id==='ifsiExercises'?{}:null},console};vm.createContext(exerciseContext);vm.runInContext(exerciseSrc,exerciseContext);
+const mod=exerciseContext.window.IFSI_EXERCISES;
+assert.equal(mod.diagrams.length,5);assert.equal(mod.associations.length,4);
+const matched=Object.fromEntries(mod.associations.map(x=>[x.id,x.id]));
+assert.equal(mod.score('match',matched).correct,4,'Associations justes évaluées incorrectement');
+const missing={...matched,bladder:'ureters'};
+const result=mod.score('match',missing);assert.equal(result.correct,3);assert.equal(result.mistakes.length,1);
+const labeled=Object.fromEntries(mod.diagrams.map(x=>[x.id,x.id]));
+assert.equal(mod.score('diagram',labeled).correct,5,'Repères exacts évalués incorrectement');
+assert.equal(mod.score('diagram',{...labeled,urethra:'bladder'}).correct,4);
+assert.ok(exerciseSrc.includes('role="img"')&&exerciseSrc.includes('aria-live="polite"'),'Accessibilité schéma / correction');
+assert.ok(!exerciseSrc.includes('drive.google.com'),'Illustration du prototype doit être originale');
+console.log('✅ TNR prototype : schéma original, associations, corrections QCM (simple et multiple), sécurité et câblage PWA');

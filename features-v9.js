@@ -48,6 +48,7 @@ function renderTrainingCorrection(q,sel,ok,reviewMsg=''){
   const goodLabel=document.createElement('b');goodLabel.textContent='Bonne réponse : ';good.append(goodLabel,document.createTextNode(answerLetters(q.answers)));
   summary.append(mine,good);exp.appendChild(summary);
   const explanation=document.createElement('div');explanation.className='qcm-explanation';explanation.textContent=q.explanation||'';exp.appendChild(explanation);
+  window.IFSI_QCM_FEEDBACK?.append(exp,q,sel);
   if(reviewMsg){const note=document.createElement('div');note.className='mastery-note';note.textContent=reviewMsg;exp.appendChild(note)}
 }
 
