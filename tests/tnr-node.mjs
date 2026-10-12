@@ -236,8 +236,8 @@ assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&v
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
 for(const required of ['hypoxie','hypoxemie','anoxie','sepsis','asepsie','antisepsie'])assert(vocabulary.entries.some(x=>x.id===required),'Terme incontournable absent : '+required);
 const vocabJs=read('v8355-vocabulary.js'),flashcardJs=read('v8338-flashcards.js'),indexHtml=read('index.html');
-for(const marker of ['window.IFSI_VOCAB','flashcards=','function startQuiz()','function makeQuestion(','function renderQuiz()','function validateAnswer()','Ta réponse :','Bonne réponse :','function showFiche()','function filtered()','window.print()','vocabulaire-v1.json'])assert(vocabJs.includes(marker),'Module vocabulaire incomplet : '+marker);
-assert(vocabJs.includes("if(quiz.selected===q.answer)quiz.score++"),'Score QCM vocabulaire désynchronisé');
+for(const marker of ['window.IFSI_VOCAB','flashcards=','function startQuiz()','function makeQuestion(','function showFiche()','function filtered()','window.print()','vocabulaire-v1.json'])assert(vocabJs.includes(marker),'Module vocabulaire incomplet : '+marker);
+assert(vocabJs.includes('begin(shuffle([...unique.values()])'),'Le vocabulaire doit utiliser le moteur QCM commun');
 assert(flashcardJs.includes("window.IFSI_VOCAB?.flashcards?.()"),'Flashcards non alimentées par le glossaire');
 for(const asset of ['./v8355-vocabulary.js','./vocabulaire-v1.json','./v8355-changelog.js']){assert(sw.includes(asset),'PWA : ressource vocabulaire absente : '+asset)}
 for(const src of [`v8355-vocabulary.js?v=${releaseMeta.build}`,`v8355-changelog.js?v=${releaseMeta.build}`])assert(indexHtml.includes(src),'Chargement navigateur absent : '+src);
@@ -251,8 +251,8 @@ assert(vocabulary.entries.some(x=>x.courseIds.length>1),'Glossaire multi-cours n
 assert(vocabJs.includes('const forCourse=id=>data.filter(x=>x.courseIds.includes(id))'),'Filtre par cours absent du glossaire');
 assert(vocabJs.includes('function mountCatalog()')&&vocabJs.includes('function mountCourse(courseId)'),'Dictionnaire et ressources par cours absents');
 assert(vocabJs.includes('function startCourseQuiz(courseId)')&&vocabJs.includes("startQuiz();"),'QCM vocabulaire par cours absent');
-assert(vocabJs.includes('makeQuestion(x,list)'),'Les QCM de vocabulaire doivent utiliser les termes du cours sélectionné');
-assert(vocabJs.includes("window.IFSI_V8338_FLASHCARDS?.openVocabulary?.(courseId)"),'Accès flashcards vocabulaire par cours absent');
+assert(vocabJs.includes('makeQuestion(term,forCourse(courseId))'),'Les QCM doivent utiliser les termes du cours');
+assert(!vocabJs.includes('vgCourseFlash')&&!vocabJs.includes('data-vg="flashcards"'),'Le vocabulaire doit proposer fiche et QCM seulement');
 assert(!vocabJs.includes('function inject(){')&&!vocabJs.includes('fc-revision-entry'),'Le dictionnaire ne doit pas réapparaître dans Révision');
 assert(vocabCourseUi.includes("window.IFSI_VOCAB?.mountCatalog?.()")&&vocabCourseUi.includes("window.IFSI_VOCAB?.mountCourse?.(courseMeta.id)"),'Vocabulaire non inséré dans les écrans Cours');
 assert(vocabCourseUi.includes('countForCourse?.(c.id)'),'Cours avec vocabulaire masqués dans la liste des cours');
