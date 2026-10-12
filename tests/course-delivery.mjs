@@ -17,7 +17,11 @@ for(const c of manifest.courses){
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  assert.equal(sheet?.officialSupport,true,'Support officiel perdu');
  assert.ok(c.supportDriveId&&c.qcmDriveId,'Documents non identifiés');
- const bank=read(c.qcmBank),live=questions.filter(q=>q.courseId===c.courseId);
+ const bankPaths=Array.isArray(c.qcmBanks) && c.qcmBanks.length ? c.qcmBanks : [c.qcmBank];
+ assert.ok(bankPaths.every(x=>typeof x==='string'&&x.length),'Chemins QCM invalides');
+ assert.equal(new Set(bankPaths).size,bankPaths.length,'Banque QCM référencée deux fois');
+ const bank=bankPaths.flatMap(read),live=questions.filter(q=>q.courseId===c.courseId);
+ assert.equal(new Set(bank.map(q=>q.id)).size,bank.length,c.courseId+': ID de question dupliqué entre parties');
  assert.equal(bank.length,c.qcmCount,'Banque QCM tronquée');
  assert.equal(live.length,bank.length,'Banque perdue dans le navigateur');
  for(const q of bank){
@@ -35,6 +39,26 @@ for(const c of manifest.courses){
   assert.ok(card.explanation,card.id+': explication absente');
   const q=bank.find(x=>x.id===card.qid);
   assert.ok(q?.flashcards?.some(x=>x.front===card.front),card.id+': question source perdue');
+ }
+ const partDeliveries=c.partDeliveries||[];
+ for(const part of partDeliveries){
+  assert.match(part.partId||'',/^p\d{2,3}$/,c.courseId+': partId incorrect');
+  for(const id of part.sheetResourceIds||[]){
+   assert.ok(sheets.some(x=>x.resourceId===id&&x.courseId===c.courseId),
+     c.courseId+': fiche de partie absente '+part.partId);
+  }
+  for(const id of part.qcmQuestionIds||[]){
+   assert.ok(bank.some(x=>x.id===id&&x.courseId===c.courseId),
+     c.courseId+': question de partie absente '+part.partId);
+  }
+  for(const id of part.infographicResourceIds||[]){
+   assert.ok(infos.some(x=>x.resourceId===id&&x.courseId===c.courseId),
+     c.courseId+': infographie de partie absente '+part.partId);
+  }
+  for(const id of part.vocalIds||[]){
+   assert.ok(vocals.some(x=>x.id===id&&x.courseId===c.courseId),
+     c.courseId+': vocal de partie absent '+part.partId);
+  }
  }
  assert.ok(c.infographicResourceIds.length,'Infographies absentes');
  for(const id of c.infographicResourceIds){

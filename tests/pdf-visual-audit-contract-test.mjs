@@ -19,4 +19,20 @@ for (const [label,change] of [
   assert.throws(()=>validateVisualAudit(course,{...good,...change}),label);
   console.log('✅ Rejet : '+label);
 }
-console.log('✅ Validation des preuves structurelles PDF : 7 cas');
+const proof={
+  status:'MATCH',source:'authenticated_drive_download',
+  pdfSha256:'a'.repeat(64),expectedCount:2,checkedCount:2
+};
+assert.doesNotThrow(()=>validateVisualAudit(course,{...good,publishedVerification:proof},
+  {requirePublishedVerification:true}), 'PDF retéléchargé identique');
+for(const [label,bad] of [
+  ['Sans vérification après publication',undefined],
+  ['Hash différent',{...proof,pdfSha256:'b'.repeat(64)}],
+  ['Source non authentifiée',{...proof,source:'manual_guess'}],
+  ['Révision incomplète',{...proof,checkedCount:1}]
+]){
+  assert.throws(()=>validateVisualAudit(course,{...good,publishedVerification:bad},
+    {requirePublishedVerification:true}),label);
+  console.log('✅ Rejet : '+label);
+}
+console.log('✅ Validation des preuves structurelles PDF : 12 cas');
