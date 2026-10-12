@@ -227,13 +227,19 @@ assert(sw.indexOf('v87-settings.js')<sw.indexOf('v813-home-discovery.js'),'Accue
 // Glossaire V8.30.55 : intégrité de la source unique et absence de régression.
 const vocabulary=json('vocabulaire-v1.json');
 assert(vocabulary.schemaVersion===1,'Schéma vocabulaire incorrect');
-assert(vocabulary.entries.length===195,'Glossaire : 195 termes attendus');
+assert(vocabulary.entries.length>=280,'Glossaire enrichi : au moins 280 termes attendus');
 assert(new Set(vocabulary.entries.map(x=>x.id)).size===vocabulary.entries.length,'Doublons de termes dans le glossaire');
-assert(new Set(vocabulary.entries.map(x=>x.theme)).size===23,'Glossaire : 23 thèmes attendus');
+assert(new Set(vocabulary.entries.map(x=>x.theme)).size>=23,'Glossaire : couverture thématique insuffisante');
 assert(vocabulary.entries.every(x=>x.term&&x.definition.length>=30&&x.theme&&x.distinction?.length>=10&&x.sourceType==='reference_pedagogique'),'Glossaire : définition, distinction ou provenance absente');
-assert(new Set(vocabulary.entries.flatMap(x=>x.courseIds)).size===45,'Glossaire : les 45 cours doivent être couverts');
+assert(new Set(vocabulary.entries.flatMap(x=>x.courseIds)).size===courseIds.size,'Glossaire : chaque cours du registre doit être couvert');
 assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&vocabulary.entries.some(x=>x.term==='Méiose')&&vocabulary.entries.some(x=>x.term==='Ostéoporose')&&vocabulary.entries.some(x=>x.term==='Empathie'),'Glossaire multicours incomplet');
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
+const morphEntries=vocabulary.entries.filter(x=>x.id.startsWith('morph_'));
+assert(morphEntries.length>=30,'Morphèmes génériques insuffisants');
+assert(vocabulary.entries.some(x=>x.courseIds.includes('plaies_pansements')),'Cours Plaies et pansements sans vocabulaire');
+assert(vocabulary.entries.every(x=>x.definition.length>=30 && x.distinction.length>=10),'Définition ou distinction trop courte');
+const expectedVocabQcm=vocabulary.entries.reduce((n,x)=>n+x.courseIds.length,0);
+assert(expectedVocabQcm>300,'Associations QCM vocabulaire insuffisantes');
 for(const required of ['hypoxie','hypoxemie','anoxie','sepsis','asepsie','antisepsie'])assert(vocabulary.entries.some(x=>x.id===required),'Terme incontournable absent : '+required);
 const vocabJs=read('v8355-vocabulary.js'),flashcardJs=read('v8338-flashcards.js'),indexHtml=read('index.html');
 for(const marker of ['window.IFSI_VOCAB','flashcards=','function startQuiz()','function makeQuestion(','function showFiche()','function filtered()','window.print()','vocabulaire-v1.json'])assert(vocabJs.includes(marker),'Module vocabulaire incomplet : '+marker);
@@ -244,7 +250,7 @@ for(const src of [`v8355-vocabulary.js?v=${releaseMeta.build}`,`v8355-changelog.
 assert(indexHtml.includes(`v8338-flashcards.js?v=${releaseMeta.build}`),'Flashcards existantes non conservées');
 assert(vocabJs.includes('body.v72-dark #v81Body .vg-entry')&&vocabJs.includes('background:linear-gradient(140deg,#292237,#211e2f)'),'Le contraste sombre de la carte vocabulaire est absent');
 assert(vocabJs.includes('<details class=')&&vocabJs.includes('d.open=true'),'Navigation repliable ou impression intégrale absente');
-console.log('✅ Vocabulaire : 195 termes / 23 thèmes, 45 cours, contraste sombre, QCM corrigés et PWA');
+console.log(`✅ Vocabulaire : ${vocabulary.entries.length} termes / ${new Set(vocabulary.entries.map(x=>x.theme)).size} thèmes, ${courseIds.size} cours, QCM et PWA`);
 // V8.30.58 — vocabulaire par cours et cartes partagées sans doublon de progression.
 const vocabCourseUi=read('v74-pack.js');
 assert(vocabulary.entries.some(x=>x.courseIds.length>1),'Glossaire multi-cours non représenté');
