@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
   "updatedAt": "2026-10-12",
-  "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel.",
+  "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
       "id": "hypoxie",
@@ -135,7 +135,7 @@
       "theme": "Circulation et système cardiovasculaire",
       "definition": "Nécrose d'un tissu provoquée le plus souvent par une interruption prolongée de sa vascularisation.",
       "distinction": "Ischémie : réduction du débit sanguin, pas forcément irréversible.",
-      "etymologie": "",
+      "etymologie": "Du latin infarctus, « rempli, obstrué » ; terme à apprendre dans son ensemble.",
       "courseIds": [
         "systeme_cardiovasculaire"
       ],
@@ -199,7 +199,7 @@
       "theme": "Circulation et système cardiovasculaire",
       "definition": "Accumulation excessive de liquide dans les tissus interstitiels.",
       "distinction": "Épanchement : liquide dans une cavité corporelle.",
-      "etymologie": "",
+      "etymologie": "Du grec oidêma, « gonflement » ; pas de découpage médical productif simple.",
       "courseIds": [
         "systeme_cardiovasculaire",
         "systeme_urinaire"
@@ -212,7 +212,7 @@
       "theme": "Infection, inflammation et hygiène",
       "definition": "Pénétration et multiplication d'un agent infectieux dans l'organisme, pouvant provoquer des manifestations cliniques.",
       "distinction": "Inflammation : réponse de l'organisme, y compris sans infection.",
-      "etymologie": "",
+      "etymologie": "in- (pénétration) + infect- (contaminer) + -ion (processus).",
       "courseIds": [
         "physiopathologie_infections",
         "prevention_ias_asepsie"
@@ -225,7 +225,7 @@
       "theme": "Infection, inflammation et hygiène",
       "definition": "Réponse des tissus à une agression, infectieuse ou non, impliquant des mécanismes immunitaires.",
       "distinction": "Infection : présence et multiplication d'un agent pathogène.",
-      "etymologie": "",
+      "etymologie": "inflamm- (enflammer) + -ation (processus) ; le terme ne signifie pas nécessairement infection.",
       "courseIds": [
         "systeme_immunitaire",
         "physiopathologie_infections"
@@ -238,7 +238,7 @@
       "theme": "Infection, inflammation et hygiène",
       "definition": "Dysfonction d'organe menaçant le pronostic vital causée par une réponse dérégulée de l'organisme à une infection.",
       "distinction": "Bactériémie : présence de bactéries dans le sang, pas synonyme de sepsis.",
-      "etymologie": "",
+      "etymologie": "Du grec sêpsis, « putréfaction » ; terme clinique à apprendre en entier.",
       "courseIds": [
         "physiopathologie_infections"
       ],
@@ -299,7 +299,7 @@
       "theme": "Neurologie",
       "definition": "Diminution partielle de la force musculaire volontaire.",
       "distinction": "Paralysie : perte complète d'un mouvement volontaire.",
-      "etymologie": "",
+      "etymologie": "Du grec paresis, « relâchement » ; faiblesse motrice partielle.",
       "courseIds": [
         "systeme_nerveux"
       ],
@@ -311,7 +311,7 @@
       "theme": "Neurologie",
       "definition": "Perte de la motricité volontaire d'un muscle ou d'un groupe musculaire.",
       "distinction": "Parésie : faiblesse musculaire incomplète.",
-      "etymologie": "",
+      "etymologie": "Du grec paralysis, « relâchement, immobilisation » ; perte motrice.",
       "courseIds": [
         "systeme_nerveux"
       ],
@@ -461,7 +461,7 @@
       "theme": "Pharmacologie",
       "definition": "Modalités de prise d'un médicament : dose, fréquence et durée du traitement.",
       "distinction": "Dosage : quantité de substance active présente dans une préparation.",
-      "etymologie": "",
+      "etymologie": "pos(o)- (quantité, dose) + -logie (étude) ; usage actuel : modalités des doses.",
       "courseIds": [
         "pharmacologie",
         "administration_medicamenteuse"
@@ -486,7 +486,7 @@
       "theme": "Pharmacologie",
       "definition": "Durée nécessaire pour que la concentration ou quantité d'une substance dans l'organisme diminue de moitié.",
       "distinction": "Durée d'action : temps pendant lequel un effet pharmacologique persiste.",
-      "etymologie": "",
+      "etymologie": "demi- (moitié) + vie (durée) ; temps nécessaire pour réduire de moitié une quantité.",
       "courseIds": [
         "pharmacologie"
       ],
@@ -510,7 +510,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Famille de molécules comprenant les sucres et leurs polymères, notamment utilisés comme source d'énergie.",
       "distinction": "Un lipide est une autre famille de biomolécules, aux propriétés différentes.",
-      "etymologie": "",
+      "etymologie": "gluc- (sucre, douceur) + -ide (classe de substance).",
       "courseIds": [
         "biomolecules"
       ],
@@ -522,7 +522,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Famille de molécules comprenant les triglycérides, phospholipides et stéroïdes, jouant des rôles énergétiques et structuraux.",
       "distinction": "Un glucide n'a pas la même structure chimique qu'un lipide.",
-      "etymologie": "",
+      "etymologie": "lip(o)- (graisse) + -ide (classe de substance).",
       "courseIds": [
         "biomolecules"
       ],
@@ -534,7 +534,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Macromolécule formée d'une ou plusieurs chaînes d'acides aminés, impliquée notamment dans la structure et les fonctions cellulaires.",
       "distinction": "Un peptide est une chaîne d'acides aminés, généralement plus courte.",
-      "etymologie": "",
+      "etymologie": "Du grec prôtos, « premier » ; appellation historique, pas une segmentation clinique régulière.",
       "courseIds": [
         "biomolecules"
       ],
@@ -546,7 +546,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Molécule, le plus souvent une protéine, qui accélère une réaction chimique sans être consommée.",
       "distinction": "Une hormone est un messager chimique, pas forcément un catalyseur.",
-      "etymologie": "",
+      "etymologie": "Du grec en (dans) + zymê (levain, fermentation).",
       "courseIds": [
         "biomolecules",
         "cellules_tissus"
@@ -559,7 +559,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Enveloppe cellulaire constituée principalement d'une bicouche lipidique et de protéines qui contrôle les échanges.",
       "distinction": "La paroi cellulaire est une structure distincte présente chez de nombreux micro-organismes.",
-      "etymologie": "",
+      "etymologie": "membran- (fine enveloppe) + plasm- (substance cellulaire) + -ique (relatif à).",
       "courseIds": [
         "cellules_tissus"
       ],
@@ -571,7 +571,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Ensemble du contenu cellulaire situé entre la membrane plasmique et le noyau dans une cellule eucaryote.",
       "distinction": "Le cytosol est la phase liquide du cytoplasme, sans les organites.",
-      "etymologie": "",
+      "etymologie": "cyt(o)- (cellule) + -plasme (matière façonnée, substance).",
       "courseIds": [
         "cellules_tissus"
       ],
@@ -583,7 +583,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Structure spécialisée à l'intérieur d'une cellule eucaryote, assurant une fonction particulière.",
       "distinction": "Un tissu est un ensemble de cellules et de matrice extracellulaire.",
-      "etymologie": "",
+      "etymologie": "organ- (élément fonctionnel) + -ite (petite structure) ; ici -ite ne signifie pas inflammation.",
       "courseIds": [
         "cellules_tissus"
       ],
@@ -595,7 +595,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Organite eucaryote impliqué dans la production d'une grande partie de l'ATP lors de la respiration cellulaire.",
       "distinction": "Le ribosome assure la synthèse des protéines.",
-      "etymologie": "",
+      "etymologie": "mit(o)- (fil) + chondr(o)- (grain) ; description historique de l'aspect.",
       "courseIds": [
         "cellules_tissus",
         "biomolecules"
@@ -608,7 +608,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Complexe constitué d'ARN et de protéines réalisant la traduction de l'ARN messager en chaîne polypeptidique.",
       "distinction": "La mitochondrie participe à la production d'énergie.",
-      "etymologie": "",
+      "etymologie": "ribo- (acide ribonucléique) + -some (corps, structure).",
       "courseIds": [
         "cellules_tissus",
         "genetique"
@@ -621,7 +621,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Division cellulaire qui répartit des chromosomes dupliqués dans deux cellules filles génétiquement semblables.",
       "distinction": "La méiose produit des cellules haploïdes après deux divisions.",
-      "etymologie": "",
+      "etymologie": "mit(o)- (fil) + -ose (processus) ; référence aux chromosomes visibles.",
       "courseIds": [
         "cellules_tissus",
         "genetique"
@@ -634,7 +634,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Processus de division cellulaire aboutissant généralement à quatre cellules haploïdes issues d'une cellule diploïde.",
       "distinction": "La mitose conserve habituellement le nombre de chromosomes.",
-      "etymologie": "",
+      "etymologie": "Du grec meiôsis, « diminution » ; réduction chromosomique.",
       "courseIds": [
         "genetique",
         "systeme_reproducteur"
@@ -647,7 +647,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Tissu formé de cellules jointives recouvrant une surface ou bordant une cavité et reposant sur une lame basale.",
       "distinction": "Le tissu conjonctif comporte généralement davantage de matrice extracellulaire.",
-      "etymologie": "",
+      "etymologie": "épi- (sur) + thél- (ancien terme de revêtement) + -ium (structure).",
       "courseIds": [
         "cellules_tissus"
       ],
@@ -659,7 +659,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Tissu de soutien constitué de cellules dispersées dans une matrice extracellulaire plus ou moins abondante.",
       "distinction": "L'épithélium est constitué de cellules étroitement jointives.",
-      "etymologie": "",
+      "etymologie": "conjonct- (qui relie) + -if (qui a la fonction de) ; tissu de liaison.",
       "courseIds": [
         "cellules_tissus",
         "niveaux_organisation"
@@ -672,7 +672,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Maintien dynamique des conditions internes permettant à une cellule de fonctionner malgré les variations de son environnement.",
       "distinction": "L'homéostasie de l'organisme concerne la régulation de plusieurs systèmes.",
-      "etymologie": "",
+      "etymologie": "homéo- (semblable, stable) + -stase (maintien) + cellulaire.",
       "courseIds": [
         "homeostasie",
         "cellules_tissus"
@@ -685,7 +685,7 @@
       "theme": "Biomolécules, cellules et tissus",
       "definition": "Structure composée de plusieurs tissus organisés qui assurent ensemble une ou plusieurs fonctions.",
       "distinction": "Un tissu regroupe des cellules ; un appareil regroupe plusieurs organes.",
-      "etymologie": "",
+      "etymologie": "Du grec organon, « instrument » ; structure qui remplit une fonction.",
       "courseIds": [
         "niveaux_organisation"
       ],
@@ -710,7 +710,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Mécanisme par lequel une variation déclenche une réponse qui tend à corriger cette même variation.",
       "distinction": "Le rétrocontrôle positif amplifie au contraire une variation.",
-      "etymologie": "",
+      "etymologie": "rétro- (en retour) + contrôle + négatif (qui réduit la variation).",
       "courseIds": [
         "homeostasie",
         "systeme_endocrinien"
@@ -723,7 +723,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Déplacement de l'eau à travers une membrane sélective selon une différence de potentiel osmotique.",
       "distinction": "La diffusion simple décrit le déplacement de solutés selon leur gradient.",
-      "etymologie": "",
+      "etymologie": "Du grec ôsmos, « poussée » ; mouvement du solvant selon le gradient osmotique.",
       "courseIds": [
         "homeostasie",
         "cellules_tissus"
@@ -736,7 +736,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Déplacement net de particules sous l'effet de leur agitation thermique, généralement du milieu le plus concentré vers le moins concentré.",
       "distinction": "Le transport actif utilise une source d'énergie pour déplacer des solutés contre leur gradient.",
-      "etymologie": "",
+      "etymologie": "dif- (dans diverses directions) + fus- (répandre) + -ion (action).",
       "courseIds": [
         "homeostasie",
         "cellules_tissus"
@@ -749,7 +749,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Trouble de l'équilibre acido-basique qui tend à abaisser le pH sanguin.",
       "distinction": "L'acidémie décrit la présence effective d'un pH sanguin trop bas.",
-      "etymologie": "",
+      "etymologie": "acid- (acide) + -ose (état pathologique).",
       "courseIds": [
         "homeostasie",
         "systeme_respiratoire",
@@ -763,7 +763,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Trouble de l'équilibre acido-basique qui tend à élever le pH sanguin.",
       "distinction": "L'alcalémie décrit la présence effective d'un pH sanguin trop élevé.",
-      "etymologie": "",
+      "etymologie": "alcal- (base, alcali) + -ose (état pathologique).",
       "courseIds": [
         "homeostasie",
         "systeme_respiratoire",
@@ -777,7 +777,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Système qui limite les variations de pH en captant ou en libérant des ions hydrogène.",
       "distinction": "Un acide libère des protons ; une base peut les capter.",
-      "etymologie": "",
+      "etymologie": "tampon (amortisseur des variations) + chimique ; expression descriptive.",
       "courseIds": [
         "homeostasie",
         "biomolecules"
@@ -816,7 +816,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Acide désoxyribonucléique : molécule porteuse de l'information génétique de la plupart des organismes.",
       "distinction": "L'ARN est un autre acide nucléique, souvent impliqué dans l'expression des gènes.",
-      "etymologie": "",
+      "etymologie": "ADN = acide désoxyribonucléique ; désoxy- (un oxygène en moins) + ribo- (ribose) + nucléique (noyau).",
       "courseIds": [
         "genetique",
         "biomolecules"
@@ -829,7 +829,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Molécule d'ARN portant la séquence utilisée par les ribosomes pour synthétiser une protéine.",
       "distinction": "L'ADN constitue le support durable de l'information génétique.",
-      "etymologie": "",
+      "etymologie": "ARN = acide ribonucléique ; ribo- (ribose) + nucléique (noyau) ; messager = porteur d'information.",
       "courseIds": [
         "genetique"
       ],
@@ -841,7 +841,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Structure constituée d'ADN associé à des protéines, portant de nombreux gènes.",
       "distinction": "Un gène est une portion fonctionnelle de l'ADN ; ce n'est pas un chromosome entier.",
-      "etymologie": "",
+      "etymologie": "chrom(o)- (couleur) + -some (corps) ; structure colorable.",
       "courseIds": [
         "genetique"
       ],
@@ -853,7 +853,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Version d'un gène située à un locus donné sur un chromosome.",
       "distinction": "Un gène désigne une unité d'information ; un allèle en est une variante.",
-      "etymologie": "",
+      "etymologie": "Du grec allêlôn, « l'un l'autre » ; version alternative d'un gène.",
       "courseIds": [
         "genetique"
       ],
@@ -865,7 +865,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Modification durable de la séquence de l'ADN, dont les conséquences peuvent être variables ou absentes.",
       "distinction": "Une variation génétique n'est pas nécessairement pathologique.",
-      "etymologie": "",
+      "etymologie": "mut- (changer) + -ation (processus).",
       "courseIds": [
         "genetique"
       ],
@@ -877,7 +877,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Ensemble des caractéristiques génétiques d'un individu, ou des allèles considérés pour un caractère.",
       "distinction": "Le phénotype correspond aux caractères observables.",
-      "etymologie": "",
+      "etymologie": "géno- (origine, gènes) + -type (forme, modèle).",
       "courseIds": [
         "genetique"
       ],
@@ -889,7 +889,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Ensemble des caractéristiques observables d'un organisme résultant des interactions entre gènes et environnement.",
       "distinction": "Le génotype décrit son information génétique.",
-      "etymologie": "",
+      "etymologie": "phéno- (ce qui apparaît) + -type (forme).",
       "courseIds": [
         "genetique"
       ],
@@ -901,7 +901,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Cellule reproductrice haploïde, comme le spermatozoïde ou l'ovocyte mature.",
       "distinction": "Le zygote est la cellule diploïde formée après la fécondation.",
-      "etymologie": "",
+      "etymologie": "Du grec gametês, « conjoint » ; cellule reproductrice.",
       "courseIds": [
         "systeme_reproducteur",
         "genetique"
@@ -914,7 +914,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Libération d'un ovocyte par l'ovaire au cours du cycle ovarien.",
       "distinction": "La menstruation correspond à l'élimination de l'endomètre en l'absence de grossesse.",
-      "etymologie": "",
+      "etymologie": "ovul- (petit œuf) + -ation (processus).",
       "courseIds": [
         "systeme_reproducteur"
       ],
@@ -926,7 +926,7 @@
       "theme": "Génétique et reproduction",
       "definition": "Fusion des gamètes masculin et féminin aboutissant à la formation d'un zygote.",
       "distinction": "La nidation correspond à l'implantation de l'embryon dans l'endomètre.",
-      "etymologie": "",
+      "etymologie": "fécond- (qui produit) + -ation (processus).",
       "courseIds": [
         "systeme_reproducteur"
       ],
@@ -938,7 +938,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Agent infectieux acellulaire possédant un génome et nécessitant une cellule hôte pour produire de nouvelles particules.",
       "distinction": "Une bactérie est une cellule vivante capable de se multiplier de manière autonome dans des conditions adaptées.",
-      "etymologie": "",
+      "etymologie": "Du latin virus, « poison » ; terme historique non décomposable en morphèmes médicaux.",
       "courseIds": [
         "virus",
         "diagnostic_virologie"
@@ -951,7 +951,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Particule virale complète à l'extérieur de la cellule, capable selon le cas de transmettre une infection.",
       "distinction": "Le terme virus désigne plus largement l'agent au cours de son cycle.",
-      "etymologie": "",
+      "etymologie": "vir- (virus) + -ion (particule).",
       "courseIds": [
         "virus",
         "diagnostic_virologie"
@@ -964,7 +964,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Coque constituée de protéines entourant et protégeant le génome d'un virus.",
       "distinction": "L'enveloppe virale est une membrane lipidique présente seulement chez certains virus.",
-      "etymologie": "",
+      "etymologie": "caps- (boîte, contenant) + -ide (forme) ; coque protéique virale.",
       "courseIds": [
         "virus",
         "diagnostic_virologie"
@@ -977,7 +977,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Membrane lipidique acquise par certains virus, portant des protéines nécessaires notamment à l'entrée dans les cellules.",
       "distinction": "La capside est un assemblage protéique entourant le génome viral.",
-      "etymologie": "",
+      "etymologie": "enveloppe (membrane extérieure) + virale (relative au virus).",
       "courseIds": [
         "virus"
       ],
@@ -989,7 +989,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Micro-organisme cellulaire procaryote, généralement capable de se multiplier par division.",
       "distinction": "Un virus ne possède pas de métabolisme cellulaire autonome.",
-      "etymologie": "",
+      "etymologie": "Du grec baktêrion, « petit bâton » ; terme historique.",
       "courseIds": [
         "diagnostic_bacteriologie",
         "physiopathologie_infections"
@@ -1002,7 +1002,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Cellule dépourvue de noyau délimité par une membrane, comme les bactéries.",
       "distinction": "Une cellule eucaryote possède un noyau membranaire.",
-      "etymologie": "",
+      "etymologie": "pro- (avant) + cary(o)- (noyau) + -ote (organisme/cellule) ; sans noyau membranaire.",
       "courseIds": [
         "diagnostic_bacteriologie",
         "cellules_tissus"
@@ -1015,7 +1015,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Bactéries de forme globalement sphérique, pouvant être isolées ou regroupées en amas ou en chaînes.",
       "distinction": "Les bacilles ont une forme allongée en bâtonnet.",
-      "etymologie": "",
+      "etymologie": "Du grec kokkos, « grain » ; bactéries sphériques.",
       "courseIds": [
         "diagnostic_bacteriologie"
       ],
@@ -1027,7 +1027,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Bactérie de forme allongée, ressemblant à un bâtonnet.",
       "distinction": "Un coccus est une bactérie de forme sphérique.",
-      "etymologie": "",
+      "etymologie": "Du latin bacillus, « petit bâton » ; description de forme.",
       "courseIds": [
         "diagnostic_bacteriologie"
       ],
@@ -1039,7 +1039,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Technique de coloration différenciant les bactéries selon les propriétés de leur enveloppe cellulaire.",
       "distinction": "Une culture bactérienne vise à faire croître les micro-organismes.",
-      "etymologie": "",
+      "etymologie": "Coloration (procédé) + Gram (nom du microbiologiste Hans Christian Gram).",
       "courseIds": [
         "diagnostic_bacteriologie"
       ],
@@ -1051,7 +1051,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Examen permettant d'évaluer in vitro la sensibilité d'une bactérie à différents antibiotiques.",
       "distinction": "Une hémoculture recherche des micro-organismes dans un prélèvement sanguin.",
-      "etymologie": "",
+      "etymologie": "anti- (contre) + bio- (vie) + -gramme (résultat enregistré) ; test de sensibilité.",
       "courseIds": [
         "diagnostic_bacteriologie",
         "physiopathologie_infections"
@@ -1064,7 +1064,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Réaction de polymérisation en chaîne amplifiant une séquence d'acide nucléique pour faciliter sa détection ou son analyse.",
       "distinction": "Une sérologie détecte notamment des anticorps plutôt que de multiplier une séquence cible.",
-      "etymologie": "",
+      "etymologie": "PCR = polymerase chain reaction, réaction en chaîne par polymérase ; sigle technique, non morphème.",
       "courseIds": [
         "diagnostic_virologie",
         "diagnostic_bacteriologie"
@@ -1077,7 +1077,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Analyse du sérum visant notamment à détecter des anticorps dirigés contre un agent infectieux.",
       "distinction": "La PCR recherche directement une séquence d'acide nucléique ciblée.",
-      "etymologie": "",
+      "etymologie": "séro- (sérum) + -logie (étude, analyse).",
       "courseIds": [
         "diagnostic_virologie",
         "vaccination_prs"
@@ -1090,7 +1090,7 @@
       "theme": "Virologie et bactériologie",
       "definition": "Mise en culture d'un prélèvement sanguin pour rechercher des micro-organismes circulants.",
       "distinction": "Une numération formule sanguine compte des cellules sanguines ; elle ne cultive pas d'agents infectieux.",
-      "etymologie": "",
+      "etymologie": "hém(o)- (sang) + culture (mise en croissance).",
       "courseIds": [
         "diagnostic_bacteriologie",
         "physiopathologie_infections"
@@ -1103,7 +1103,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Organisme vivant aux dépens d'un hôte dont il tire des ressources, parfois à l'origine d'une maladie.",
       "distinction": "Un champignon n'est pas nécessairement un parasite.",
-      "etymologie": "",
+      "etymologie": "para- (à côté) + sit(o)- (nourriture) ; organisme vivant aux dépens d'un hôte.",
       "courseIds": [
         "parasites_champignons"
       ],
@@ -1115,7 +1115,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Organisme eucaryote unicellulaire dont certaines espèces peuvent être parasitaires.",
       "distinction": "Un helminthe est un ver parasite pluricellulaire.",
-      "etymologie": "",
+      "etymologie": "proto- (premier) + zo(o)- (animal) + -aire (relatif à) ; catégorie historique.",
       "courseIds": [
         "parasites_champignons"
       ],
@@ -1127,7 +1127,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Ver parasite pluricellulaire, par exemple un nématode ou un cestode.",
       "distinction": "Un protozoaire est un organisme eucaryote unicellulaire.",
-      "etymologie": "",
+      "etymologie": "Du grec helmins, « ver » ; terme à apprendre en entier.",
       "courseIds": [
         "parasites_champignons"
       ],
@@ -1139,7 +1139,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Infection provoquée par un champignon microscopique.",
       "distinction": "Une parasitose peut être causée par un protozoaire ou un helminthe.",
-      "etymologie": "",
+      "etymologie": "myc(o)- (champignon) + -ose (affection).",
       "courseIds": [
         "parasites_champignons",
         "infections_cutanees"
@@ -1152,7 +1152,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Champignon microscopique généralement unicellulaire, dont certaines espèces peuvent causer des infections.",
       "distinction": "Une moisissure se développe généralement sous forme de filaments.",
-      "etymologie": "",
+      "etymologie": "Du verbe lever : évoque la fermentation qui fait lever la pâte ; pas de morphèmes médicaux.",
       "courseIds": [
         "parasites_champignons"
       ],
@@ -1164,7 +1164,7 @@
       "theme": "Parasitologie et mycologie",
       "definition": "Mycose superficielle de la peau, des cheveux ou des ongles due à un champignon dermatophyte.",
       "distinction": "Une candidose est causée par une levure du genre Candida.",
-      "etymologie": "",
+      "etymologie": "dermat(o)- (peau) + phyt(o)- (végétal, nom historique des dermatophytes) + -ose (affection).",
       "courseIds": [
         "parasites_champignons",
         "infections_cutanees"
@@ -1177,7 +1177,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Ensemble de défenses immédiates reposant sur des mécanismes non spécifiques d'un antigène donné.",
       "distinction": "L'immunité adaptative mobilise des lymphocytes spécifiques et une mémoire immunitaire.",
-      "etymologie": "",
+      "etymologie": "immunité (défenses) + innée (présente dès la naissance) ; expression descriptive.",
       "courseIds": [
         "systeme_immunitaire"
       ],
@@ -1189,7 +1189,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Réponse immunitaire reposant sur des lymphocytes spécifiques d'un antigène, avec possibilité de mémoire.",
       "distinction": "L'immunité innée agit rapidement sans spécificité antigénique comparable.",
-      "etymologie": "",
+      "etymologie": "immunité (défenses) + adaptative (spécifique, acquise après exposition).",
       "courseIds": [
         "systeme_immunitaire",
         "vaccination_prs"
@@ -1202,7 +1202,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Structure moléculaire pouvant être reconnue spécifiquement par des récepteurs du système immunitaire.",
       "distinction": "Un anticorps est une protéine produite par des lymphocytes B différenciés.",
-      "etymologie": "",
+      "etymologie": "anti- (contre) + -gène (qui engendre) ; historiquement substance induisant une réponse.",
       "courseIds": [
         "systeme_immunitaire",
         "vaccination_prs"
@@ -1215,7 +1215,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Immunoglobuline capable de se lier spécifiquement à un antigène.",
       "distinction": "Un antigène est la cible reconnue par l'anticorps.",
-      "etymologie": "",
+      "etymologie": "anti- (contre) + corps ; immunoglobuline se liant à un antigène.",
       "courseIds": [
         "systeme_immunitaire",
         "vaccination_prs"
@@ -1228,7 +1228,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Cellule immunitaire participant à la réponse adaptative et pouvant se différencier en plasmocyte producteur d'anticorps.",
       "distinction": "Le lymphocyte T reconnaît les antigènes présentés dans un contexte cellulaire.",
-      "etymologie": "",
+      "etymologie": "lymph(o)- (lymphe) + -cyte (cellule) + B (désignation de la lignée).",
       "courseIds": [
         "systeme_immunitaire"
       ],
@@ -1240,7 +1240,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Cellule de l'immunité adaptative participant notamment à la coordination de la réponse ou à la destruction de cellules cibles.",
       "distinction": "Le lymphocyte B peut produire des anticorps après différenciation.",
-      "etymologie": "",
+      "etymologie": "lymph(o)- (lymphe) + -cyte (cellule) + T (thymus, maturation).",
       "courseIds": [
         "systeme_immunitaire"
       ],
@@ -1252,7 +1252,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Mécanisme par lequel certaines cellules englobent puis dégradent des particules ou des micro-organismes.",
       "distinction": "La pinocytose concerne surtout l'absorption de liquides et de solutés.",
-      "etymologie": "",
+      "etymologie": "phag(o)- (manger) + cyt(o)- (cellule) + -ose (processus).",
       "courseIds": [
         "systeme_immunitaire",
         "physiopathologie_infections"
@@ -1265,7 +1265,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Administration d'une préparation destinée à induire une réponse immunitaire protectrice contre une maladie.",
       "distinction": "L'immunisation passive apporte des anticorps déjà formés.",
-      "etymologie": "",
+      "etymologie": "vaccin (du latin vacca, « vache », origine historique) + -ation (acte).",
       "courseIds": [
         "vaccination_prs",
         "systeme_immunitaire"
@@ -1278,7 +1278,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Dose de vaccin donnée après la primovaccination pour maintenir ou renforcer la protection immunitaire.",
       "distinction": "La primovaccination correspond aux premières doses prévues par le schéma.",
-      "etymologie": "",
+      "etymologie": "rappel (dose ultérieure) + vaccinal (relatif au vaccin).",
       "courseIds": [
         "vaccination_prs"
       ],
@@ -1290,7 +1290,7 @@
       "theme": "Immunologie et vaccination",
       "definition": "Diminution des capacités de défense immunitaire, d'origine constitutionnelle ou acquise.",
       "distinction": "L'auto-immunité correspond à une réaction contre des constituants de l'organisme.",
-      "etymologie": "",
+      "etymologie": "immun(o)- (défenses) + dépression (diminution d'activité).",
       "courseIds": [
         "systeme_immunitaire",
         "physiopathologie_infections"
@@ -1303,7 +1303,7 @@
       "theme": "Endocrinologie",
       "definition": "Messager chimique libéré par des cellules et agissant sur des cellules cibles qui possèdent son récepteur.",
       "distinction": "Une enzyme catalyse une réaction chimique.",
-      "etymologie": "",
+      "etymologie": "Du grec hormân, « mettre en mouvement, stimuler ».",
       "courseIds": [
         "systeme_endocrinien"
       ],
@@ -1315,7 +1315,7 @@
       "theme": "Endocrinologie",
       "definition": "Hormone pancréatique qui favorise notamment l'utilisation et le stockage du glucose et diminue la glycémie.",
       "distinction": "Le glucagon favorise principalement la remontée de la glycémie.",
-      "etymologie": "",
+      "etymologie": "Du latin insula, « île » ; référence aux îlots du pancréas.",
       "courseIds": [
         "systeme_endocrinien",
         "homeostasie"
@@ -1328,7 +1328,7 @@
       "theme": "Endocrinologie",
       "definition": "Hormone pancréatique qui augmente notamment la disponibilité du glucose dans le sang.",
       "distinction": "L'insuline a globalement un effet hypoglycémiant.",
-      "etymologie": "",
+      "etymologie": "gluc- (glucose) + -agon (nom construit historiquement) ; éviter une fausse décomposition fonctionnelle.",
       "courseIds": [
         "systeme_endocrinien"
       ],
@@ -1340,7 +1340,7 @@
       "theme": "Endocrinologie",
       "definition": "Hormone et neurotransmetteur impliqué dans la réponse aiguë au stress, notamment sur le cœur et les bronches.",
       "distinction": "Le cortisol est une hormone stéroïde impliquée dans l'adaptation au stress.",
-      "etymologie": "",
+      "etymologie": "ad- (près de) + rénal (rein) + -ine (substance) ; glandes au-dessus des reins.",
       "courseIds": [
         "systeme_endocrinien",
         "systeme_cardiovasculaire"
@@ -1353,7 +1353,7 @@
       "theme": "Endocrinologie",
       "definition": "Hormone glucocorticoïde produite par le cortex surrénalien, impliquée dans le métabolisme et la réponse au stress.",
       "distinction": "L'adrénaline agit notamment lors de la réponse immédiate au stress.",
-      "etymologie": "",
+      "etymologie": "cort- (cortex, couche externe) + -ol (suffixe chimique d'alcool).",
       "courseIds": [
         "systeme_endocrinien"
       ],
@@ -1389,7 +1389,7 @@
       "theme": "Endocrinologie",
       "definition": "Groupe de maladies caractérisées par une hyperglycémie chronique liée à un défaut de sécrétion ou d'action de l'insuline.",
       "distinction": "Le diabète insipide est un trouble de l'équilibre hydrique, distinct du diabète sucré.",
-      "etymologie": "",
+      "etymologie": "diabète (du grec « passer à travers ») + sucré (présence de glucose élevée).",
       "courseIds": [
         "systeme_endocrinien",
         "homeostasie"
@@ -1402,7 +1402,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Contractions coordonnées de la paroi digestive propulsant le contenu le long du tube digestif.",
       "distinction": "La segmentation mélange surtout le contenu intestinal sans propulsion comparable.",
-      "etymologie": "",
+      "etymologie": "péri- (autour) + stalt- (contraction) + -isme (processus).",
       "courseIds": [
         "systeme_digestif"
       ],
@@ -1414,7 +1414,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Masse d'aliments mastiqués et mélangés à la salive avant la déglutition.",
       "distinction": "Le chyme est le contenu semi-liquide résultant de la digestion gastrique.",
-      "etymologie": "",
+      "etymologie": "bol (masse arrondie) + alimentaire (aliments) ; expression descriptive.",
       "courseIds": [
         "systeme_digestif"
       ],
@@ -1426,7 +1426,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Mélange semi-liquide d'aliments et de sucs digestifs produit dans l'estomac.",
       "distinction": "Le bol alimentaire se forme dans la bouche avant la déglutition.",
-      "etymologie": "",
+      "etymologie": "Du grec khymos, « jus, liquide » ; contenu gastrique.",
       "courseIds": [
         "systeme_digestif"
       ],
@@ -1438,7 +1438,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Passage des nutriments, de l'eau et de certains ions depuis la lumière intestinale vers l'organisme.",
       "distinction": "La digestion dégrade d'abord les aliments en constituants absorbables.",
-      "etymologie": "",
+      "etymologie": "ab- (depuis) + sorb- (absorber) + -tion (action) ; intestinale = dans l'intestin.",
       "courseIds": [
         "systeme_digestif",
         "biomolecules"
@@ -1476,7 +1476,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Coloration jaune de la peau et des muqueuses provoquée par une augmentation de la bilirubine dans l'organisme.",
       "distinction": "La cyanose est une coloration bleuâtre liée à l'hémoglobine désoxygénée.",
-      "etymologie": "",
+      "etymologie": "Du grec ikteros, « jaunisse » ; terme non segmentable cliniquement.",
       "courseIds": [
         "systeme_digestif"
       ],
@@ -1552,7 +1552,7 @@
       "theme": "Appareil locomoteur et rhumatologie",
       "definition": "Membrane qui tapisse la face interne de nombreuses capsules articulaires et produit le liquide synovial.",
       "distinction": "Le cartilage articulaire recouvre les surfaces osseuses de l'articulation.",
-      "etymologie": "",
+      "etymologie": "Du latin médiéval synovia, liquide articulaire ; pas de découpage clinique simple.",
       "courseIds": [
         "appareil_locomoteur",
         "rhumatismes_inflammatoires"
@@ -1589,7 +1589,7 @@
       "theme": "Appareil locomoteur et rhumatologie",
       "definition": "Arthropathie inflammatoire causée par le dépôt de cristaux d'urate monosodique dans les tissus.",
       "distinction": "La chondrocalcinose est associée à des cristaux de pyrophosphate de calcium.",
-      "etymologie": "",
+      "etymologie": "Nom historique lié à l'idée de « gouttes » d'humeur ; pas de préfixe/suffixe médical.",
       "courseIds": [
         "pathologies_microcristallines_osteoporose"
       ],
@@ -1601,7 +1601,7 @@
       "theme": "Appareil locomoteur et rhumatologie",
       "definition": "Contraction musculaire involontaire et persistante, parfois douloureuse, limitant les mouvements.",
       "distinction": "Une crampe est une contraction involontaire généralement brève.",
-      "etymologie": "",
+      "etymologie": "con- (ensemble) + tract- (tirer) + -ure (résultat) ; contraction persistante.",
       "courseIds": [
         "appareil_locomoteur",
         "traumatologie"
@@ -1614,7 +1614,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Rupture de la continuité d'un os pouvant être partielle ou complète.",
       "distinction": "L'entorse touche les ligaments, sans rupture osseuse nécessaire.",
-      "etymologie": "",
+      "etymologie": "fract- (briser) + -ure (résultat).",
       "courseIds": [
         "traumatologie",
         "chirurgie_orthopedique"
@@ -1627,7 +1627,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Lésion des ligaments d'une articulation lors d'un mouvement forcé.",
       "distinction": "La luxation est une perte des rapports articulaires normaux.",
-      "etymologie": "",
+      "etymologie": "Terme issu de « tordre » ; lésion ligamentaire.",
       "courseIds": [
         "traumatologie",
         "appareil_locomoteur"
@@ -1640,7 +1640,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Perte complète des rapports anatomiques normaux entre les surfaces d'une articulation.",
       "distinction": "La subluxation est un déplacement articulaire incomplet.",
-      "etymologie": "",
+      "etymologie": "lux- (déplacer, déboîter) + -ation (résultat/processus).",
       "courseIds": [
         "traumatologie",
         "chirurgie_orthopedique"
@@ -1678,7 +1678,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Manœuvre visant à remettre les fragments osseux fracturés dans un alignement approprié.",
       "distinction": "L'immobilisation maintient ensuite la position obtenue.",
-      "etymologie": "",
+      "etymologie": "ré- (ramener) + duction (conduire) ; remise en place de fragments osseux.",
       "courseIds": [
         "traumatologie",
         "chirurgie_orthopedique"
@@ -1691,7 +1691,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Atteinte thermique cutanée touchant l'épiderme et une partie du derme, souvent accompagnée de phlyctènes.",
       "distinction": "Une brûlure du troisième degré détruit toute l'épaisseur du derme.",
-      "etymologie": "",
+      "etymologie": "Brûlure (lésion thermique) + deuxième degré (atteinte du derme en partie).",
       "courseIds": [
         "grands_brules"
       ],
@@ -1703,7 +1703,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Bulle cutanée remplie de liquide, pouvant notamment se former lors d'une brûlure.",
       "distinction": "Une pustule contient un matériel purulent.",
-      "etymologie": "",
+      "etymologie": "Du grec phlyktaina, « ampoule, cloque ».",
       "courseIds": [
         "grands_brules",
         "infections_cutanees"
@@ -1716,7 +1716,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Retrait de tissus nécrosés ou de débris d'une plaie afin de favoriser la prise en charge de celle-ci.",
       "distinction": "Le pansement protège la plaie, mais n'en retire pas nécessairement les tissus nécrosés.",
-      "etymologie": "",
+      "etymologie": "dé- (retirer) + bride (ce qui entrave) + -ment (action).",
       "courseIds": [
         "grands_brules",
         "chirurgie_orthopedique"
@@ -1729,7 +1729,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Transfert chirurgical d'une portion de peau vers une zone lésée nécessitant une couverture.",
       "distinction": "Un lambeau conserve une vascularisation propre ou bénéficie d'une anastomose vasculaire.",
-      "etymologie": "",
+      "etymologie": "greffe (transfert de tissu) + cutanée (relative à la peau).",
       "courseIds": [
         "grands_brules",
         "chirurgie_orthopedique"
@@ -1742,7 +1742,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Processus nerveux de détection et de transmission d'un stimulus potentiellement dommageable.",
       "distinction": "La douleur est une expérience sensorielle et émotionnelle personnelle.",
-      "etymologie": "",
+      "etymologie": "noci- (nuisible) + -ception (perception, réception).",
       "courseIds": [
         "douleur"
       ],
@@ -1779,7 +1779,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Douleur causée par une lésion ou une maladie du système somatosensoriel.",
       "distinction": "La douleur nociceptive résulte de l'activation des nocicepteurs par une atteinte tissulaire.",
-      "etymologie": "",
+      "etymologie": "neur(o)- (nerf) + -pathique (relatif à une affection) ; douleur d'origine neurologique.",
       "courseIds": [
         "douleur",
         "systeme_nerveux"
@@ -1792,7 +1792,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Douleur liée à l'activation des nocicepteurs par une lésion ou une menace de lésion de tissus non nerveux.",
       "distinction": "La douleur neuropathique résulte d'une lésion ou maladie du système somatosensoriel.",
-      "etymologie": "",
+      "etymologie": "noci- (nocif) + -cept- (recevoir) + -ive (relatif à).",
       "courseIds": [
         "douleur"
       ],
@@ -1804,7 +1804,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Outil d'autoévaluation où la personne cote généralement l'intensité de sa douleur de 0 à 10.",
       "distinction": "Une échelle comportementale sert surtout lorsque l'autoévaluation est impossible.",
-      "etymologie": "",
+      "etymologie": "échelle (graduation) + numérique (par chiffres) + douleur ; expression descriptive.",
       "courseIds": [
         "douleur",
         "parametres_vitaux"
@@ -1817,7 +1817,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Estimation non invasive de la saturation pulsée en oxygène de l'hémoglobine, mesurée par oxymétrie.",
       "distinction": "La PaO₂ est une pression partielle mesurée dans le sang artériel.",
-      "etymologie": "",
+      "etymologie": "SpO₂ = saturation pulsée en oxygène ; S = saturation, p = pulsée, O₂ = oxygène.",
       "courseIds": [
         "parametres_vitaux",
         "systeme_respiratoire"
@@ -1830,7 +1830,7 @@
       "theme": "Douleur et surveillance clinique",
       "definition": "Quantité d'urine émise pendant une durée donnée, souvent mesurée lors de la surveillance d'un patient.",
       "distinction": "La fréquence des mictions ne renseigne pas à elle seule sur le volume total.",
-      "etymologie": "",
+      "etymologie": "di- (à travers) + -urèse (production/excrétion urinaire).",
       "courseIds": [
         "parametres_vitaux",
         "systeme_urinaire"
@@ -1843,7 +1843,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Mesures de prévention des infections appliquées à toute personne soignée, quel que soit son statut infectieux.",
       "distinction": "Les précautions complémentaires s'ajoutent selon le mode de transmission suspecté ou confirmé.",
-      "etymologie": "",
+      "etymologie": "précautions (mesures préventives) + standard (appliquées à tous).",
       "courseIds": [
         "prevention_ias_asepsie",
         "histoire_profession_infirmiere"
@@ -1856,7 +1856,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Mesures ajoutées aux précautions standard pour limiter certains risques de transmission par contact, gouttelettes ou voie aérienne.",
       "distinction": "Les précautions standard s'appliquent systématiquement à tous les soins.",
-      "etymologie": "",
+      "etymologie": "précautions (mesures préventives) + complémentaires (ajoutées selon le risque).",
       "courseIds": [
         "prevention_ias_asepsie"
       ],
@@ -1868,7 +1868,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Ensemble des gestes de lavage ou de friction hydroalcoolique visant à réduire la transmission manuportée des micro-organismes.",
       "distinction": "Le port de gants ne remplace pas l'hygiène des mains.",
-      "etymologie": "",
+      "etymologie": "hygiène (prévention sanitaire) + mains (voie de transmission) ; expression descriptive.",
       "courseIds": [
         "prevention_ias_asepsie"
       ],
@@ -1880,7 +1880,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Produit destiné à réduire ou détruire des micro-organismes sur la peau ou les muqueuses selon ses indications.",
       "distinction": "Un désinfectant est destiné principalement aux surfaces ou dispositifs inertes.",
-      "etymologie": "",
+      "etymologie": "anti- (contre) + sept- (infection, putréfaction) + -ique (relatif à).",
       "courseIds": [
         "prevention_ias_asepsie"
       ],
@@ -1892,7 +1892,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Procédé validé visant à rendre un produit exempt de micro-organismes viables.",
       "distinction": "La désinfection réduit les micro-organismes, sans garantir la stérilité.",
-      "etymologie": "",
+      "etymologie": "stéril- (rendre exempt d'organismes viables) + -isation (procédé).",
       "courseIds": [
         "prevention_ias_asepsie"
       ],
@@ -1904,7 +1904,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Infection survenant au cours ou au décours d'une prise en charge et qui n'était ni présente ni en incubation à son début.",
       "distinction": "Une infection communautaire est contractée en dehors de cette prise en charge.",
-      "etymologie": "",
+      "etymologie": "infection (processus infectieux) + associée aux soins (lien temporel avec la prise en charge).",
       "courseIds": [
         "prevention_ias_asepsie",
         "physiopathologie_infections"
@@ -1917,7 +1917,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Méthode de traçabilité infirmière organisée autour d'un problème ou fait significatif, de données, d'actions et de résultats.",
       "distinction": "Une simple liste d'actes ne restitue pas nécessairement le raisonnement clinique.",
-      "etymologie": "",
+      "etymologie": "transmissions (écrits professionnels) + ciblées (organisées autour de faits significatifs).",
       "courseIds": [
         "histoire_profession_infirmiere"
       ],
@@ -1929,7 +1929,7 @@
       "theme": "Soins infirmiers et prévention des infections",
       "definition": "Ensemble des soins que l'infirmier réalise de sa propre initiative dans le cadre des compétences définies par la réglementation.",
       "distinction": "Le rôle sur prescription concerne les actes nécessitant une prescription ou un protocole prévu.",
-      "etymologie": "",
+      "etymologie": "rôle (responsabilités) + propre (relevant de l'initiative infirmière).",
       "courseIds": [
         "histoire_profession_infirmiere",
         "introduction_droit"
@@ -1942,7 +1942,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Masse d'une substance dissoute par unité de volume de solution, par exemple en mg/mL.",
       "distinction": "Une dose est une quantité à administrer, pas une concentration.",
-      "etymologie": "",
+      "etymologie": "concentration (quantité par volume) + massique (relative à la masse).",
       "courseIds": [
         "calculs_doses_mathematiques",
         "administration_medicamenteuse"
@@ -1955,7 +1955,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Volume de solution administré par unité de temps, exprimé par exemple en mL/h.",
       "distinction": "Une dose totale décrit la quantité de médicament délivrée.",
-      "etymologie": "",
+      "etymologie": "débit (volume par temps) + per- (à travers) + fus- (verser) + -ion (action).",
       "courseIds": [
         "calculs_doses_mathematiques",
         "administration_medicamenteuse"
@@ -1968,7 +1968,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Opération visant à diminuer la concentration d'une solution en ajoutant un solvant adapté.",
       "distinction": "La reconstitution consiste à préparer un médicament à partir d'une forme initiale, souvent une poudre.",
-      "etymologie": "",
+      "etymologie": "dilu- (délayer) + -tion (action).",
       "courseIds": [
         "calculs_doses_mathematiques",
         "administration_medicamenteuse"
@@ -1981,7 +1981,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Préparation d'un médicament à partir d'une forme initiale en ajoutant le diluant indiqué.",
       "distinction": "La dilution consiste à réduire une concentration en ajoutant du liquide.",
-      "etymologie": "",
+      "etymologie": "re- (à nouveau) + constitution (assemblage, préparation).",
       "courseIds": [
         "administration_medicamenteuse",
         "pharmacologie"
@@ -2006,7 +2006,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Réaction nocive et non voulue survenant lors de l'utilisation d'un médicament selon les conditions considérées.",
       "distinction": "Une contre-indication est une situation où l'usage d'un traitement est déconseillé ou interdit.",
-      "etymologie": "",
+      "etymologie": "effet (conséquence) + indésirable (non voulu) ; expression descriptive.",
       "courseIds": [
         "pharmacologie",
         "administration_medicamenteuse"
@@ -2019,7 +2019,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Situation clinique où l'utilisation d'un médicament ou d'une procédure expose à un risque jugé inacceptable.",
       "distinction": "Une précaution d'emploi nécessite une surveillance ou une adaptation, sans forcément interdire le traitement.",
-      "etymologie": "",
+      "etymologie": "contre- (s'opposant) + indication (motif de prescription).",
       "courseIds": [
         "pharmacologie"
       ],
@@ -2031,7 +2031,7 @@
       "theme": "Calculs de doses et médicaments",
       "definition": "Plage de concentrations d'un médicament pour laquelle l'efficacité est recherchée avec un risque de toxicité acceptable.",
       "distinction": "La demi-vie renseigne sur la vitesse de diminution de la concentration.",
-      "etymologie": "",
+      "etymologie": "intervalle (plage) + thérapeutique (relatif au traitement).",
       "courseIds": [
         "pharmacologie"
       ],
@@ -2043,7 +2043,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Capacité à comprendre le point de vue ou l'état émotionnel d'autrui tout en maintenant la distinction entre soi et l'autre.",
       "distinction": "La sympathie implique davantage de partage affectif ou d'affinité.",
-      "etymologie": "",
+      "etymologie": "em- (dans) + -pathie (ressenti, souffrance) ; compréhension du vécu d'autrui.",
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales"
@@ -2056,7 +2056,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Relation de collaboration entre une personne soignée et un professionnel fondée sur la confiance, les objectifs et les moyens du soin.",
       "distinction": "La simple observance d'un traitement ne suffit pas à définir cette relation.",
-      "etymologie": "",
+      "etymologie": "alliance (collaboration) + thérapeutique (relative au soin).",
       "courseIds": [
         "psychologie_sante"
       ],
@@ -2068,7 +2068,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Processus psychique souvent inconscient servant à réduire une tension ou un conflit interne.",
       "distinction": "Une stratégie d'adaptation peut être consciemment choisie.",
-      "etymologie": "",
+      "etymologie": "mécanisme (processus) + défense (protection psychique) ; expression clinique.",
       "courseIds": [
         "psychologie_sante"
       ],
@@ -2080,7 +2080,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Processus d'adaptation permettant de poursuivre son développement ou de se reconstruire après une adversité.",
       "distinction": "La résilience n'implique pas l'absence de souffrance.",
-      "etymologie": "",
+      "etymologie": "Du latin resilire, « rebondir » ; adaptation après une adversité.",
       "courseIds": [
         "competences_psychosociales",
         "psychologie_sante"
@@ -2093,7 +2093,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Capacité à exprimer ses besoins, limites et opinions de façon claire tout en respectant ceux d'autrui.",
       "distinction": "L'agressivité impose son point de vue sans respecter l'autre.",
-      "etymologie": "",
+      "etymologie": "assert- (affirmer) + -ivité (qualité).",
       "courseIds": [
         "competences_psychosociales"
       ],
@@ -2105,7 +2105,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Attitude d'écoute utilisant l'attention, la reformulation et les questions adaptées pour vérifier la compréhension.",
       "distinction": "Entendre les paroles sans reformuler ne garantit pas leur compréhension.",
-      "etymologie": "",
+      "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
         "psychologie_sante"
@@ -2118,7 +2118,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Conséquence agréable augmentant la probabilité qu'un comportement soit reproduit.",
       "distinction": "La punition vise à diminuer la fréquence d'un comportement.",
-      "etymologie": "",
+      "etymologie": "renforcement (augmentation de probabilité) + positif (ajout d'un stimulus).",
       "courseIds": [
         "psychologie_sante"
       ],
@@ -2142,7 +2142,7 @@
       "theme": "Psychologie et sciences humaines",
       "definition": "Méthode de révision consistant à récupérer une information de mémoire sans relire immédiatement la réponse.",
       "distinction": "La relecture passive ne vérifie pas aussi directement la récupération en mémoire.",
-      "etymologie": "",
+      "etymologie": "rappel (récupération en mémoire) + actif (recherche volontaire).",
       "courseIds": [
         "methodes_travail_reussite",
         "epistemologie_savoirs"
@@ -2155,7 +2155,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Accord donné sans contrainte après réception d'une information adaptée sur un acte ou une prise en charge.",
       "distinction": "La signature d'un document ne suffit pas, à elle seule, à garantir un consentement valable.",
-      "etymologie": "",
+      "etymologie": "consentement (accord) + libre (sans contrainte) + éclairé (après information).",
       "courseIds": [
         "introduction_droit",
         "ethique_infirmiere"
@@ -2168,7 +2168,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Obligation légale de ne pas divulguer les informations confidentielles connues du fait de sa profession, sauf exceptions prévues.",
       "distinction": "La discrétion professionnelle et le secret professionnel n'ont pas exactement le même régime.",
-      "etymologie": "",
+      "etymologie": "secret (confidentialité) + professionnel (lié à la fonction).",
       "courseIds": [
         "introduction_droit",
         "histoire_profession_infirmiere"
@@ -2181,7 +2181,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Obligation de réparer, lorsque les conditions légales sont réunies, un dommage causé à autrui.",
       "distinction": "La responsabilité pénale vise la sanction d'une infraction.",
-      "etymologie": "",
+      "etymologie": "responsabilité (obligation de répondre de ses actes) + civile (réparation du dommage).",
       "courseIds": [
         "introduction_droit"
       ],
@@ -2193,7 +2193,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Responsabilité engagée lorsqu'un comportement constitue une infraction prévue par le droit pénal.",
       "distinction": "La responsabilité civile recherche principalement la réparation d'un préjudice.",
-      "etymologie": "",
+      "etymologie": "responsabilité (répondre de ses actes) + pénale (liée aux infractions).",
       "courseIds": [
         "introduction_droit"
       ],
@@ -2205,7 +2205,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Actes ou omissions portant atteinte aux droits, besoins, intégrité ou dignité d'une personne vulnérable.",
       "distinction": "La bientraitance correspond à une démarche active de respect et d'accompagnement.",
-      "etymologie": "",
+      "etymologie": "mal- (de façon nuisible) + traitance (manière de traiter autrui).",
       "courseIds": [
         "ethique_infirmiere",
         "histoire_profession_infirmiere"
@@ -2218,7 +2218,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Démarche visant à respecter les droits, les besoins, les choix et la dignité de la personne accompagnée.",
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
-      "etymologie": "",
+      "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
         "ethique_infirmiere"
       ],
@@ -2230,7 +2230,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Capacité et droit d'une personne à participer aux décisions concernant sa santé selon sa situation.",
       "distinction": "La dépendance fonctionnelle ne retire pas automatiquement la capacité de décider.",
-      "etymologie": "",
+      "etymologie": "auto- (soi-même) + -nomie (règle, organisation) ; capacité de décision de la personne.",
       "courseIds": [
         "ethique_infirmiere",
         "histoire_profession_infirmiere"
@@ -2256,7 +2256,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Élément issu d'une démarche méthodique servant à étayer ou à contester une proposition.",
       "distinction": "Une opinion d'expert peut informer sans constituer à elle seule une démonstration.",
-      "etymologie": "",
+      "etymologie": "preuve (élément qui étaye) + scientifique (issu d'une méthode rigoureuse).",
       "courseIds": [
         "epistemologie_savoirs"
       ],
@@ -2268,7 +2268,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Proposition explicative pouvant être mise à l'épreuve par une observation ou une méthode de recherche.",
       "distinction": "Un résultat est une observation obtenue après l'investigation.",
-      "etymologie": "",
+      "etymologie": "hypo- (sous) + thèse (proposition) ; proposition à éprouver, sans lien direct avec l'hypo- clinique.",
       "courseIds": [
         "epistemologie_savoirs",
         "methodes_travail_reussite"
@@ -2281,7 +2281,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Ensemble des décisions de justice dont l'interprétation éclaire l'application des règles de droit.",
       "distinction": "Une loi est un texte normatif adopté selon la procédure législative.",
-      "etymologie": "",
+      "etymologie": "juris- (droit) + prudence (connaissance pratique, discernement).",
       "courseIds": [
         "introduction_droit"
       ],
@@ -2293,7 +2293,7 @@
       "theme": "Droit, éthique et profession infirmière",
       "definition": "Institution professionnelle chargée notamment de missions déontologiques définies par la loi pour les infirmiers.",
       "distinction": "Un syndicat défend des intérêts professionnels selon d'autres missions.",
-      "etymologie": "",
+      "etymologie": "ordre (institution professionnelle) + infirmier (profession) ; expression juridique.",
       "courseIds": [
         "histoire_profession_infirmiere",
         "introduction_droit"
@@ -2381,7 +2381,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Période comprise entre l'infection par un agent pathogène et l'apparition des premiers symptômes.",
       "distinction": "La contagiosité décrit la capacité à transmettre l'agent infectieux.",
-      "etymologie": "",
+      "etymologie": "Du latin incubare, « couver » ; temps avant symptômes après infection.",
       "courseIds": [
         "infections_respiratoires_virales",
         "physiopathologie_infections"
@@ -2394,7 +2394,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Infection sexuellement transmissible, pouvant être symptomatique ou asymptomatique.",
       "distinction": "Une maladie sexuellement transmissible désigne plus particulièrement une infection avec expression clinique.",
-      "etymologie": "",
+      "etymologie": "IST = infection sexuellement transmissible ; sigle à développer, pas de morphèmes.",
       "courseIds": [
         "ist_hors_vih",
         "systeme_reproducteur"
@@ -2407,7 +2407,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Recherche d'une maladie ou d'un facteur de risque chez une personne ne présentant pas nécessairement de symptôme.",
       "distinction": "Le diagnostic vise à identifier une affection suspectée dans un contexte clinique.",
-      "etymologie": "",
+      "etymologie": "dé- (faire apparaître) + piste (trace recherchée) + -age (action) ; recherche ciblée.",
       "courseIds": [
         "ist_hors_vih",
         "vaccination_prs"
@@ -2420,7 +2420,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Infection bactérienne des tissus cutanés et sous-cutanés, caractérisée notamment par une rougeur douloureuse.",
       "distinction": "Une mycose cutanée est provoquée par un champignon.",
-      "etymologie": "",
+      "etymologie": "cellul- (tissu/cellule) + -ite (inflammation) + bactérienne (due aux bactéries).",
       "courseIds": [
         "infections_cutanees"
       ],
@@ -2432,7 +2432,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Infection bactérienne superficielle de la peau, souvent caractérisée par des croûtes jaunâtres.",
       "distinction": "L'érysipèle est une infection cutanée plus profonde.",
-      "etymologie": "",
+      "etymologie": "Du latin impetigo, « affection cutanée » ; terme historique.",
       "courseIds": [
         "infections_cutanees"
       ],
@@ -2444,7 +2444,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Infection bactérienne aiguë du derme et du réseau lymphatique superficiel, souvent à bordure nette.",
       "distinction": "L'impétigo est une infection bactérienne superficielle de l'épiderme.",
-      "etymologie": "",
+      "etymologie": "Du grec erysipelas, « peau rouge » ; infection cutanée.",
       "courseIds": [
         "infections_cutanees"
       ],
