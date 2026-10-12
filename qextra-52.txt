@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cdm_039",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions d'unités",
+    "difficulty": "hard",
+    "number": 39,
+    "question": "Classe les quatre volumes suivants du plus petit au plus grand, sans modifier les valeurs : 0,05 L ; 75 mL ; 1 dL ; 250 cL. Quelle proposition respecte cet ordre ?",
+    "choices": [
+      "75 mL < 0,05 L < 1 dL < 250 cL",
+      "0,05 L < 75 mL < 1 dL < 250 cL",
+      "0,05 L < 1 dL < 75 mL < 250 cL",
+      "250 cL < 1 dL < 75 mL < 0,05 L",
+      "1 dL < 75 mL < 0,05 L < 250 cL"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "On convertit tous les volumes en millilitres : 0,05 L = 50 mL ; 75 mL = 75 mL ; 1 dL = 100 mL ; 250 cL = 2 500 mL. L'ordre croissant est donc 0,05 L < 75 mL < 1 dL < 250 cL (réponse B). Chaque proposition doit reprendre exactement les quatre volumes de l'énoncé ; seul leur ordre peut changer.",
+    "sourceExercise": 11
+  }
+]
