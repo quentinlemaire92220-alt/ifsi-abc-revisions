@@ -45,7 +45,7 @@ function validateRanking(q){
       const v=parts.map(volumeMl);
       return v.every((x,j)=>j===0||compare(v[j-1],x))?[i]:[];
     });
-    assert.deepEqual(validOptions,q.answers,q.id+' : bonne réponse et comparaison réelle des volumes incohérentes');
+    assert.deepEqual(validOptions,Array.from(q.answers),q.id+' : bonne réponse et comparaison réelle des volumes incohérentes');
   }
   return true;
 }
