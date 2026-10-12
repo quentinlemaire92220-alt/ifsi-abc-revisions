@@ -20,7 +20,7 @@ Ce document définit les obligations **techniques** du dépôt, indépendamment 
 
 - Utiliser `docs/course-deliveries.json` pour la livraison complète des cours concernés, selon `docs/COURSE_DELIVERY.md`.
 - Les **neuf dossiers** prévus sont 01 à 08 et 99, avec le dossier 07 pour les flashcards et le 08 pour les scripts vocaux.
-- Un cours nouvellement ajouté au registre et déjà pourvu de fiches, QCM PDF, infographies ou vocaux est bloqué en CI s'il n'est pas enregistré dans le manifeste.
+- Un cours nouvellement ajouté au registre **ou déjà pré-inscrit sans ressources** et désormais pourvu pour la première fois de fiches, QCM PDF, infographies ou vocaux est bloqué en CI s'il n'est pas enregistré dans le manifeste.
 - Une simple entrée de calendrier / un cours sans ressources publiées ne déclenche pas cette exigence.
 - Le statut `awaiting_mp3` est utilisé lorsque les scripts sont disponibles mais que les MP3 n'ont pas été fournis.
 
