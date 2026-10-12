@@ -98,7 +98,7 @@
       "theme": "Respiration et oxygénation",
       "definition": "Coloration bleuâtre de la peau ou des muqueuses, souvent liée à une augmentation de l'hémoglobine désoxygénée.",
       "distinction": "L'absence de cyanose n'exclut pas une hypoxémie.",
-      "etymologie": "cyan- : bleu",
+      "etymologie": "cyan(o)- (bleu) + -ose (état) : coloration bleutée.",
       "courseIds": [
         "systeme_respiratoire",
         "parametres_vitaux"
@@ -790,7 +790,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Concentration de sodium mesurée dans le plasma sanguin, utilisée notamment pour évaluer l'équilibre hydrique.",
       "distinction": "La kaliémie correspond à la concentration plasmatique de potassium.",
-      "etymologie": "-émie : sang",
+      "etymologie": "natr- (sodium) + -émie (concentration dans le sang).",
       "courseIds": [
         "homeostasie",
         "systeme_urinaire"
@@ -803,7 +803,7 @@
       "theme": "Homéostasie et équilibres biologiques",
       "definition": "Concentration de potassium dans le plasma, importante pour le fonctionnement musculaire et cardiaque.",
       "distinction": "La natrémie mesure la concentration plasmatique de sodium.",
-      "etymologie": "-émie : sang",
+      "etymologie": "kali- (potassium) + -émie (concentration dans le sang).",
       "courseIds": [
         "homeostasie",
         "systeme_cardiovasculaire"
@@ -1377,7 +1377,7 @@
       "theme": "Endocrinologie",
       "definition": "Excès de production ou d'action des hormones thyroïdiennes accélérant de nombreuses fonctions corporelles.",
       "distinction": "L'hypothyroïdie correspond à une insuffisance d'hormones thyroïdiennes.",
-      "etymologie": "hyper- : excès",
+      "etymologie": "hyper- (excessif) + thyroïd- (glande thyroïde) + -ie (état).",
       "courseIds": [
         "systeme_endocrinien"
       ],
@@ -1463,7 +1463,7 @@
       "theme": "Digestion et nutrition",
       "definition": "Cellule principale du foie impliquée dans de nombreuses fonctions métaboliques et dans la production de bile.",
       "distinction": "Une cellule pancréatique exerce des fonctions digestives ou endocrines.",
-      "etymologie": "hépat- : foie",
+      "etymologie": "hépat(o)- (foie) + -cyte (cellule).",
       "courseIds": [
         "systeme_digestif",
         "cellules_tissus"
@@ -1653,7 +1653,7 @@
       "theme": "Traumatologie, orthopédie et brûlures",
       "definition": "Collection de sang dans un tissu ou une cavité après une rupture vasculaire.",
       "distinction": "Une ecchymose est une infiltration de sang visible sous la peau, sans collection localisée.",
-      "etymologie": "hémat- : sang",
+      "etymologie": "hémat(o)- (sang) + -ome (masse, collection).",
       "courseIds": [
         "traumatologie",
         "chirurgie_orthopedique"
@@ -2355,7 +2355,7 @@
       "theme": "Infections ciblées et dépistage",
       "definition": "Infection aiguë du tissu pulmonaire, notamment alvéolaire, pouvant être causée par des bactéries ou des virus.",
       "distinction": "La bronchite affecte principalement les bronches.",
-      "etymologie": "pneumo- : poumon",
+      "etymologie": "pneumon- (poumon) + -ie (état, affection).",
       "courseIds": [
         "infections_pulmonaires_bacteriennes",
         "infections_respiratoires_virales"
