@@ -24,8 +24,15 @@ function findBase() {
   throw new Error('Historique Git introuvable pour la comparaison différentielle');
 }
 const base = findBase();
-const qextra = git(['diff','--name-only',base,'HEAD'])
+const oldManifest = showJson(base, 'docs/course-deliveries.json', {courses:[]});
+const currentManifest = read('docs/course-deliveries.json');
+const changed = git(['diff','--name-only',base,'HEAD'])
   .split(/\r?\n/).filter(path => /^qextra-[\w-]+\.txt$/.test(path));
+const manifestBanks = [oldManifest,currentManifest].flatMap(manifest =>
+  (manifest.courses||[]).flatMap(c => c.qcmBanks || (c.qcmBank ? [c.qcmBank] : [])));
+const qextra = [...new Set([...changed,...manifestBanks])]
+  .filter(path => typeof path === 'string' && /^[\w/-]+\.(txt|json)$/.test(path) &&
+    !path.includes('..'));
 function load(ref) {
   const current = ref === 'HEAD';
   const json = path => current ? read(path) : showJson(ref, path);
@@ -44,8 +51,6 @@ function load(ref) {
 }
 const previous = load(base);
 const current = load('HEAD');
-const oldManifest = showJson(base, 'docs/course-deliveries.json', {courses:[]});
-const currentManifest = read('docs/course-deliveries.json');
 const result = validatePartChanges(previous,current,oldManifest,currentManifest);
 console.log('✅ Parties de cours déjà publiés : ' + result.courses + ' cours, ' +
   result.resources + ' nouvelles ressources contrôlées (base '+base+')');
