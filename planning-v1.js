@@ -56,7 +56,8 @@ const WEEKS=[
   {date:'2026-10-09',start:'13:30',end:'17:00',promo:'A',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''}
  ]}
  ,{id:'S7',label:'S7',start:'2026-10-12',end:'2026-10-16',range:'12 - 16 oct.',events:[
-  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B1','B2'],groupLabel:'Groupes B1 / B2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:''},
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B1'],groupLabel:'Groupe B1',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11',teacher:''},
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B2'],groupLabel:'Groupe B2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S3',teacher:''},
   {date:'2026-10-12',start:'09:00',end:'10:30',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:'PANDION Odile'},
   {date:'2026-10-12',start:'10:30',end:'12:00',promo:'A',groups:['A1','A2'],groupLabel:'Groupes A1 / A2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:'BOURRIGAN Lucille • LEBRE Stéphanie'},
   {date:'2026-10-12',start:'10:30',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:''},
