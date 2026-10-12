@@ -60,7 +60,7 @@ Lorsqu'un nouveau cours est publié pour la première fois et possède des infog
 }
 ```
 
-Cette déclaration se dérive du rapport produit sur le PDF réellement livré. Les numéros, noms et liens des sources ne sont pas à publier. Le garde-fou de CI vérifie la **cohérence du résumé** ; GitHub Actions ne peut pas examiner le fichier Drive privé lui-même et ne prouve donc pas que ce résumé correspond au PDF publié.
+La clé `public_record` est générée **automatiquement** dans le rapport lorsque le PDF passe le contrôle. La copier telle quelle comme valeur de `visualAudit` dans le manifeste ; ne jamais inventer un résumé PASS. Les numéros, noms et liens des sources ne sont pas à publier. Le garde-fou de CI vérifie la **cohérence du résumé** ; GitHub Actions ne peut pas examiner le fichier Drive privé lui-même et ne prouve donc pas que ce résumé correspond au PDF publié.
 
 ## Capacités et limites
 
