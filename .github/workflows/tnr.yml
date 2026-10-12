@@ -50,8 +50,14 @@ jobs:
       - name: TNR visuels PDF absents, mal placés et illisibles
         run: python tests/pdf_visual_gate_test.py
 
+      - name: Vérifier la copie PDF retéléchargée après publication
+        run: python tests/verify_published_pdf_test.py
+
       - name: Valider le résumé de contrôle avant nouvelle publication
         run: node tests/pdf-visual-audit-contract-test.mjs
+
+      - name: TNR ajout de parties à des cours déjà publiés
+        run: node tests/course-delivery-parts-test.mjs
 
       - name: Contrôler les packs de cours validés et leurs ressources
         run: node tests/course-delivery.mjs
@@ -60,6 +66,11 @@ jobs:
         env:
           IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node tests/course-delivery-new-course.mjs
+
+      - name: Refuser les nouvelles parties non déclarées des cours déjà publiés
+        env:
+          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node tests/course-delivery-parts.mjs
 
       - name: Vérifier la séparation des séances simultanées par sous-groupe
         run: node tests/planning-group-separation.mjs
