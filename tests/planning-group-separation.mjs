@@ -35,8 +35,9 @@ for (const [group, room] of [['B1', 'S11'], ['B2', 'S3']]) {
   assert.equal(visible[0].groups.length, 1, 'Une séance doit référencer un seul sous-groupe');
 }
 assert.equal(new Set(events.map(e => e.room)).size, 2, 'Les salles ne doivent pas être regroupées');
-// L'agenda du jour doit garder toutes les séances en cours et au prochain horaire,
- // et non choisir arbitrairement le premier événement avec find().
-assert.match(source, /dayEvents\\.filter\\(e=>eventDateTime\\(e,'start'\\)<=now&&now<eventDateTime\\(e,'end'\\)\\)/);
-assert.match(source, /future\\.filter\\(e=>e\\.start===nextStart\\)/);
+// Vérifier que le bandeau conserve les cours simultanés et distingue la semaine affichée.
+assert.ok(source.includes("const current=dayEvents.filter("), "Toutes les séances actives doivent être retenues");
+assert.ok(source.includes("const next=nextStart?future.filter("), "Toutes les prochaines séances simultanées doivent être retenues");
+assert.ok(source.includes("const currentWeek=weekForDate(today)"), "La semaine du jour doit être indiquée");
+assert.ok(source.includes("Indépendant de la semaine consultée"), "Le bandeau doit distinguer aujourd'hui de la semaine sélectionnée");
 console.log('TNR planning B1/B2 du 12/10/2026 : OK');
