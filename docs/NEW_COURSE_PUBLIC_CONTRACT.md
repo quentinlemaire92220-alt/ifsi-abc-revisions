@@ -21,8 +21,12 @@ Ce document définit les obligations **techniques** du dépôt, indépendamment 
 - Utiliser `docs/course-deliveries.json` pour la livraison complète des cours concernés, selon `docs/COURSE_DELIVERY.md`.
 - Les **neuf dossiers** prévus sont 01 à 08 et 99, avec le dossier 07 pour les flashcards et le 08 pour les scripts vocaux.
 - Un cours nouvellement ajouté au registre **ou déjà pré-inscrit sans ressources** et désormais pourvu pour la première fois de fiches, QCM PDF, infographies ou vocaux est bloqué en CI s'il n'est pas enregistré dans le manifeste.
+- Si un cours **déjà publié** reçoit une nouvelle partie, les nouveaux `resourceId` de fiches, infographies, vocaux ainsi que les nouveaux ID QCM provenant des banques `qextra-*.txt` modifiées doivent être déclarés dans `partDeliveries[]` du même cours. La CI compare le commit de base aux fichiers et refuse les ajouts sans déclaration ou rattachés à un mauvais `partId`.
 - Une simple entrée de calendrier / un cours sans ressources publiées ne déclenche pas cette exigence.
 - Le statut `awaiting_mp3` est utilisé lorsque les scripts sont disponibles mais que les MP3 n'ont pas été fournis.
+- Chaque partie contient `partId` (ex. `p02`), `validated`, `status`, et les tableaux d'identifiants `sheetResourceIds`, `infographicResourceIds`, `vocalIds`, `qcmQuestionIds` correspondant aux nouvelles ressources. Une partie avec fiche sans schéma doit indiquer `schematics: "none"` après vérification de son support.
+- Pour une première publication ou une nouvelle partie comportant des infographies, le bilan `visualAudit` doit être `PASS`, suivi de `publishedVerification` à `MATCH` avec la même empreinte SHA-256, calculé à partir du PDF authentiquement retéléchargé depuis le dossier Drive final.
+- Les déclarations détaillées de schémas, les fichiers privés et les rapports médicaux complets ne doivent jamais être placés dans GitHub public. La CI ne certifie pas la provenance du fichier Drive et ne remplace pas la revue médicale.
 
 ## 4. Qualité et intégration
 
