@@ -101,6 +101,25 @@ for(const id of ['cellules_tissus','epistemologie_savoirs'])assert.equal(registe
 for(const token of ['v74-tile-support','v74-official-shortcut','v74-official-parts','v74-child-supports','v74-child-link','Support officiel non disponible','children.map(child=>','parentId===courseMeta.id'])assert.ok(course.includes(token),'Navigation support officiel manquante : '+token);
 assert.ok(course.includes('b.onclick=()=>openCourse74(b.dataset.course74)'),'Navigation de la carte cours régressée');
 assert.ok(course.includes("link.target='_blank'"),'Ouverture externe du support manquante');
+// Les sources du professeur doivent rester distinctes des fiches de révision.
+const cardio=registered.get('systeme_cardiovasculaire');
+const cardioSheet=[...JSON.parse(read('sheets-1.json')),...JSON.parse(read('sheets-2.json')),...JSON.parse(read('sheets-3.json'))].find(x=>x.courseId==='systeme_cardiovasculaire');
+assert.ok(cardioSheet?.url,'La fiche cardiovasculaire doit rester accessible dans les fiches de révision');
+assert.ok(!cardio?.officialSupportUrl&&!cardio?.captureSupportUrl,'Une fiche de révision ne doit jamais être présentée comme support source du cours');
+for(const c of registry.courses){
+ for(const field of ['captureSupportUrl']){
+   if(c[field])assert.match(c[field],drivePattern,'Lien captures provisoires invalide : '+c.label);
+ }
+ for(const p of c.captureSupportItems||[]){
+   assert.ok(p.title?.trim(),'Capture de cours sans titre : '+c.label);
+   assert.match(p.url||'',/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+\/view$/,'Capture de cours sans lien valide : '+c.label);
+ }
+}
+for(const token of ['v74-original-support','Support du cours (documents sources)','📸 Captures du cours — provisoires','Support du cours non disponible','📄 Fiches de révision','courseSourceHtml','captureSupportUrl','captureSupportItems']){
+ assert.ok(course.includes(token),'Séparation source de cours / fiche de révision absente : '+token);
+}
+console.log('✅ TNR provenance : supports officiels, captures provisoires et fiches de révision bien séparés');
+
 console.log('✅ TNR des liens officiels, sous-cours masqués et PDF multiparties validés');
 
 console.log(`✅ Régression UX et cohérence release contrôlées pour V${meta.version} build ${meta.build}`);

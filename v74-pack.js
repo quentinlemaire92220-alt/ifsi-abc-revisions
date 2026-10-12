@@ -27,6 +27,7 @@ function addStyles74(){
   .v74-course-tile{min-width:0;display:flex;flex-direction:column;gap:7px}.v74-course-tile>.v74-course-card{flex:1;width:100%;color:var(--ink)}.v74-tile-support{display:flex;align-items:center;justify-content:center;font-size:12px;padding:10px 12px!important;min-height:38px}
 .v74-official-parts{display:grid;gap:7px;margin-top:9px}.v74-official-part{display:block;text-align:left;font-size:12px}
   .v74-subcourse-actions{margin-top:8px}.v74-child-part{display:block;margin-top:7px;text-align:left;font-size:12px}.v74-child-link{display:inline-flex}
+  .v74-original-support{border-left:3px solid var(--p)}.v74-original-docs{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.v74-source-status{margin-top:8px;font-weight:800}.v74-source-archive{margin-top:12px}.v74-original-docs .btn{max-width:100%}
   .v74-official-shortcut{margin-top:14px;display:flex;align-items:center}.v74-official-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px}.v74-official-empty{display:inline-block;border:1px dashed var(--line);color:var(--muted);border-radius:12px;padding:10px 12px;font-size:13px;font-weight:750}
   .v74-fav-section{margin-top:14px}.v74-fav-list{display:grid;gap:8px}.v74-fav-empty{color:var(--muted);font-size:13px}.v74-docfav{margin-top:7px}.v74-count{font-size:12px;font-weight:850;color:var(--p)}
   body.v72-dark .v74-dashboard{background:#211e2a;border-color:#3b3548}body.v72-dark .v74-priority{background:#232d35;border-color:#354b58}body.v72-dark .v74-search-item,body.v72-dark .v74-action,body.v72-dark .v74-course-card,body.v72-dark .v74-resource,body.v72-dark .v74-star{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-domain-group,body.v72-dark .v74-domain-head,body.v72-dark .v74-ue-head{background:#211e2a;color:#f4f0fb;border-color:#3b3548}body.v72-dark .v74-star.on{background:#3a3150;color:#f4d77d}
@@ -175,20 +176,22 @@ function renderCourses74(){
       <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE ${esc74(domain)}</span><div><div class="v74-domain-name">${esc74(domainName74(domain))}</div><div class="v74-domain-meta">${all.length} cours • ${qcm} QCM</div></div></div></div>
       <div class="v74-domain-body">${ueEntries.map(([ue,items])=>`<div class="v74-ue-group">
         <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div class="v74-ue-count">${items.length} cours • ${items.reduce((n,x)=>n+x.data.qs.length,0)} QCM</div></div></div>
-        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):'📝 Support à obtenir'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
+        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
       </div>`).join('')}</div>
     </section>`
   }).join('')||'<div class="card small">Aucun cours trouvé.</div>';
   grid.querySelectorAll('[data-course74]').forEach(b=>{
     b.onclick=()=>openCourse74(b.dataset.course74);
     const course=registryCourse74(b.dataset.course74);
-    const url=course?.officialSupportUrl;
+    const official=course?.officialSupportUrl;
+    const captures=course?.captureSupportUrl;
+    const url=official||captures;
     if(!url||!/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(url))return;
     const tile=document.createElement('div');tile.className='v74-course-tile';
     b.parentNode.insertBefore(tile,b);tile.appendChild(b);
     const link=document.createElement('a');link.className='btn outline v74-tile-support';link.href=url;
     link.target='_blank';link.rel='noopener noreferrer';
-    link.textContent=course.officialSupportCoverage==='partial'?'📘 Voir le support partiel ↗':'📘 Support officiel ↗';
+    link.textContent=!official?'📸 Captures provisoires ↗':course.officialSupportCoverage==='partial'?'📘 Voir le support partiel ↗':'📘 Support officiel ↗';
     link.setAttribute('aria-label','Ouvrir le support du cours '+course.label);
     tile.appendChild(link);
   });
@@ -207,11 +210,20 @@ function renderCourse74(){
   const sheets=[...d.sheets].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
-  const officialUrl=typeof courseMeta.officialSupportUrl==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(courseMeta.officialSupportUrl)?courseMeta.officialSupportUrl:'';
-  const officialLabel=courseMeta.officialSupportCoverage==='partial'?'📘 Support partiel — ouvrir ↗':officialUrl.includes('/folders/')?'📂 Voir les supports officiels ↗':'📘 Ouvrir le support officiel ↗';
-  const officialLink=officialUrl?'<a class="btn outline v74-official-link" href="'+esc74(officialUrl)+'" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le support du cours '+esc74(d.course)+'">'+officialLabel+'</a>':'<span class="v74-official-empty" role="status">📝 Support officiel non disponible</span>';
-  const officialParts=Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(x.url||'')):[];
-  const officialPartsHtml=officialParts.map(x=>'<a class="btn outline v74-official-part" href="'+esc74(x.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(x.title||'Support officiel')+' ↗</a>').join('');
+  const driveUrl=u=>typeof u==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)?u:'';
+  const officialUrl=driveUrl(courseMeta.officialSupportUrl);
+  const captureUrl=driveUrl(courseMeta.captureSupportUrl);
+  const officialParts=Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[];
+  const captureParts=Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[];
+  const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
+  const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':'📝 Support du cours non disponible';
+  const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
+    (url?'<a class="btn outline v74-official-link" href="'+esc74(url)+'" target="_blank" rel="noopener noreferrer">'+(kind==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel ↗':'📘 Ouvrir le support officiel ↗'):'📸 Ouvrir les captures provisoires ↗')+'</a>':'')+
+    parts.map(x=>'<a class="btn outline v74-official-part" href="'+esc74(x.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(x.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
+  const courseSourceHtml='<div class="card v74-resource-block v74-original-support"><div class="row"><b>📚 Support du cours (documents sources)</b></div><div class="small v74-source-status">'+supportStatus+'</div>'+
+    (supportSource==='official'?resourceLinks(officialUrl,officialParts,'official'):supportSource==='capture'?resourceLinks(captureUrl,captureParts,'capture'):'<div class="small">Aucun PDF officiel ni capture de cours n’est encore référencé sur Drive.</div>')+
+    (supportSource==='official'&&(captureUrl||captureParts.length)?'<details class="v74-source-archive"><summary>📸 Anciennes captures provisoires</summary>'+resourceLinks(captureUrl,captureParts,'capture')+'</details>':'')+
+    '</div>';
   const children=(window.IFSI_V741?.getRegistry?.()?.courses||[]).filter(x=>x.parentId===courseMeta.id);
   const childSupportHtml=children.length?'<div class="card v74-resource-block v74-child-supports"><div class="row"><b>📚 Supports officiels par sous-cours</b><span class="badge">'+children.length+'</span></div><div class="v74-resource-list">'+children.map(child=>{
     const url=typeof child.officialSupportUrl==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(child.officialSupportUrl)?child.officialSupportUrl:'';
@@ -225,7 +237,8 @@ function renderCourse74(){
    .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
    .join('');
 
-  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div><div class="v74-official-shortcut">${officialLink}</div>${officialPartsHtml?'<div class="v74-official-parts">'+officialPartsHtml+'</div>':''}${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}</div>
+  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}</div>
+  ${courseSourceHtml}
   ${childSupportHtml}
   ${extraDocs?`<div class="card v74-resource-block"><div class="row"><b>📚 Documents du cours</b></div><div class="v74-resource-list">${extraDocs}</div></div>`:''}
   ${sheets.length?`<div class="card v74-resource-block"><div class="row"><b>📄 Fiches de révision</b><span class="badge">${sheets.length}</span></div><div class="v74-resource-list">${sheets.map(x=>resourceCard74(x,'sheet')).join('')}</div></div>`:''}
