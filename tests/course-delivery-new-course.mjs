@@ -67,7 +67,7 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
-  validateVisualAudit(course.id, delivery);
+  validateVisualAudit(course.id, delivery, {requirePublishedVerification:true});
 }
 console.log('✅ Garde-fou première publication : ' + added.length +
   ' nouveaux courseId, ' + firstPublished.length +
