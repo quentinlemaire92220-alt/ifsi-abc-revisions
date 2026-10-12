@@ -1,5 +1,5 @@
 {
-  "version": "8.30.81",
+  "version": "8.30.82",
   "courses": [
     {
       "id": "biomolecules",
@@ -24,7 +24,21 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/drive/folders/1IiBFiMfDrOuWYKGRya8aOtq-45IB31cZ"
+      "officialSupportUrl": "https://drive.google.com/drive/folders/1IiBFiMfDrOuWYKGRya8aOtq-45IB31cZ",
+      "officialSupportItems": [
+        {
+          "title": "Cellules — cours 01",
+          "url": "https://drive.google.com/file/d/19CeJm3QqrCDeTQFFzOcn49vVZC7lTi7j/view"
+        },
+        {
+          "title": "Cellules — cours 02",
+          "url": "https://drive.google.com/file/d/1gymztJe_2nLpMebXf6GqeEvuLnBVK1OX/view"
+        },
+        {
+          "title": "Cellules — cours 03",
+          "url": "https://drive.google.com/file/d/1lvGyAclFp_LjWLXcWrIlFNBX4bxaZxen/view"
+        }
+      ]
     },
     {
       "id": "homeostasie",
@@ -249,7 +263,14 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view",
+      "officialSupportCoverage": "partial",
+      "officialSupportItems": [
+        {
+          "title": "Anatomie de l’appareil locomoteur — cours 01",
+          "url": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view"
+        }
+      ]
     },
     {
       "id": "traumatologie",
@@ -264,7 +285,13 @@
       ],
       "showInCourses": false,
       "officialSupportUrl": "https://drive.google.com/file/d/1srozr4UqPEs0tzxVuVkTvVIKB3hlIqMT/view",
-      "officialSupportCoverage": "partial"
+      "officialSupportCoverage": "partial",
+      "officialSupportItems": [
+        {
+          "title": "Traumatologie — cours 03 : complications du décubitus",
+          "url": "https://drive.google.com/file/d/1srozr4UqPEs0tzxVuVkTvVIKB3hlIqMT/view"
+        }
+      ]
     },
     {
       "id": "histoire_profession_infirmiere",

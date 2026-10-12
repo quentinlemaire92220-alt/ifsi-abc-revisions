@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.81';
+const VERSION='8.30.82';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : vocabulaire intégré aux thèmes QCM.`;
