@@ -87,7 +87,7 @@ if(count('systeme_cardiovasculaire','sheets')<1)errors.push('Système cardiovasc
 if(count('systeme_digestif','sheets')<2)errors.push('Système digestif incomplet: moins de 2 fiches');
 if(count('systeme_digestif','infographics')<9)errors.push('Système digestif incomplet: moins de 9 infographies');
 if(count('appareil_locomoteur','sheets')<2)errors.push('Système locomoteur: anatomie/traumatologie manquante');
-if(count('calculs_doses_mathematiques','infographics')<6)errors.push('Calculs de doses: pack d’infographies canonique incomplet');
+if(count('calculs_doses_mathematiques','infographics')!==0)errors.push('Calculs de doses : les anciennes infographies ne doivent plus être affichées en doublon');
 if(count('epistemologie_savoirs','infographics')<8)errors.push('Épistémologie: infographies canoniques incomplètes');
 
 console.log(`\n🧭 Audit ressources V${registry.version}`);
