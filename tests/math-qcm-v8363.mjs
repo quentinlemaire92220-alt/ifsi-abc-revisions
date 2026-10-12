@@ -37,10 +37,17 @@ const base=Array.from({length:5},(_,i)=>json('questions-'+(i+1)+'.json')).flat()
 const extras=[];
 for(const n of [1,2,3,4,5,6,7,...Array.from({length:30},(_,i)=>i+9),46]){const p='qextra-'+String(n).padStart(2,'0')+'.txt';if(fs.existsSync(new URL('../'+p,import.meta.url)))extras.push(...decodePack(p))}
 const overrides=[];
-for(const n of [39,40,41,42,43,44,45,47,48,49])overrides.push(...decodePack('qextra-'+n+'.txt'));
+for(const n of [39,40,41,42,43,44,45,47,48,49,52])overrides.push(...decodePack('qextra-'+n+'.txt'));
 const byId=new Map(overrides.filter(keep).map(q=>[q.id,q]));
 const all=[...base.filter(keep)], seen=new Set(all.map(q=>q.id));
 for(const q of extras.filter(keep).filter(q=>!byId.has(q.id)).concat([...byId.values()]))if(!seen.has(q.id)){all.push(q);seen.add(q.id)}
+const sortingFix=json('qextra-52.txt');
+assert.deepEqual(sortingFix.map(q=>q.id),['cdm_039'],'Le pack de classement doit seulement remplacer cdm_039');
+const activeSorting=all.find(q=>q.id==='cdm_039');
+assert.ok(activeSorting,'QCM de classement non chargé');
+assert.deepEqual(activeSorting.choices,sortingFix[0].choices,'Choix corrigés non appliqués au runtime');
+assert.deepEqual(activeSorting.answers,sortingFix[0].answers,'Bonne réponse désynchronisée');
+assert.equal(activeSorting.explanation,sortingFix[0].explanation,'Corrigé argumenté non appliqué');
 const math=all.filter(q=>q.courseId==='calculs_doses_mathematiques'||/calculs? de doses|math[eé]matiques/i.test(q.course||''));
 assert.equal(math.length,226,'La banque de maths doit conserver exactement 226 QCM');
 assert.equal(new Set(math.map(q=>q.id)).size,226,'ID mathématique dupliqué');
@@ -77,6 +84,6 @@ assert.equal(api.stageFor(7),'mixed','Niveau 7 bloqué faute de QCM difficile');
 for(const row of levels)assert.equal(api.mastery(row.n),true,'Niveau '+row.n+' impossible à maîtriser à 100 %');
 const sw=read('sw.js');
 assert.ok(sw.includes("'./qextra-49.txt'"),'Pack correctif absent du PWA');
-assert.match(sw,/const OVERRIDE_EXTRA_NAMES=\[[^\]]*'\.\/qextra-48\.txt','\.\/qextra-49\.txt'\]/,'Les deux derniers packs doivent rester dans les overrides du Service Worker');
+assert.ok(sw.includes("'./qextra-48.txt','./qextra-49.txt','./qextra-52.txt']"),'Pack 52 absent des overrides prioritaires du Service Worker');
 console.log('✅ Maths : 226 QCM, 3 calculs exacts, 4 énoncés autonomes, 10 niveaux accessibles');
 console.log('📊 Distribution : '+levels.map(l=>l.n+':'+l.qs.length).join(' | '));
