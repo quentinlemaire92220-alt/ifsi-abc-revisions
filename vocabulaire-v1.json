@@ -2863,7 +2863,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Lésion localisée de la peau ou des tissus sous-jacents, généralement au-dessus d'une saillie osseuse, liée à une pression prolongée.",
       "distinction": "Une rougeur persistante peut être un premier signe ; ce n'est pas une simple irritation.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "Terme clinique désignant une lésion de pression ; pas de découpage simple et fiable en préfixe/racine/suffixe.",
       "courseIds": [
         "plaies_pansements",
         "grands_brules"
@@ -2876,7 +2876,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Liquide produit au niveau d'une plaie au cours de la réaction inflammatoire, dont la quantité et l'aspect orientent la surveillance.",
       "distinction": "Ne pas confondre exsudat physiologique et écoulement purulent.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "ex- (vers l'extérieur) + sud- (s'écouler) : liquide qui suinte.",
       "courseIds": [
         "plaies_pansements"
       ],
@@ -2888,7 +2888,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Protéine formée à partir du fibrinogène pendant la coagulation, pouvant être visible à la surface d'une plaie.",
       "distinction": "La fibrine n'est pas synonyme de pus ni systématiquement signe d'infection.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "fibr- (fibre) + -ine (substance) : protéine fibreuse.",
       "courseIds": [
         "plaies_pansements",
         "homeostasie"
@@ -2901,7 +2901,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Formation de tissu de granulation vascularisé pendant la phase de réparation d'une plaie.",
       "distinction": "Un tissu de granulation n'est pas une croûte ni une nécrose.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "bourgeon (petite pousse) + -nement (processus) : formation d'un tissu nouveau.",
       "courseIds": [
         "plaies_pansements"
       ],
@@ -2913,7 +2913,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Recouvrement progressif d'une plaie par de nouvelles cellules épithéliales à partir des berges.",
       "distinction": "À distinguer du bourgeonnement, qui forme le tissu de réparation sous-jacent.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "épithéli- (tissu de revêtement) + -isation (processus) : reconstitution d'un revêtement.",
       "courseIds": [
         "plaies_pansements",
         "cellules_tissus"
@@ -2926,7 +2926,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Retrait de tissus non viables ou d'éléments gênant la cicatrisation, selon une indication et une méthode adaptées.",
       "distinction": "À distinguer de la simple réfection d'un pansement ; geste soumis aux compétences et protocoles.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "dé- (action de retirer) + bride (lien qui retient) : libération ou retrait des tissus concernés.",
       "courseIds": [
         "plaies_pansements"
       ],
@@ -2938,7 +2938,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Altération de la peau liée à une humidité excessive et prolongée, notamment autour d'une plaie.",
       "distinction": "À distinguer d'une peau normalement hydratée.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "macér- (ramollir par séjour dans un liquide) + -ation (processus).",
       "courseIds": [
         "plaies_pansements"
       ],
@@ -2950,7 +2950,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Mort irréversible de cellules ou de tissus, notamment visible dans certaines plaies complexes.",
       "distinction": "À distinguer de l'apoptose, mort cellulaire programmée.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "nécr(o)- (mort) + -ose (état ou affection) : mort tissulaire.",
       "courseIds": [
         "plaies_pansements",
         "cellules_tissus"
@@ -2963,7 +2963,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Dispositif de couverture qui limite fortement les échanges avec l'extérieur, choisi selon l'état de la plaie.",
       "distinction": "Tous les pansements ne sont pas occlusifs ; le choix dépend de l'évaluation.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "occlus- (fermeture) + -if (caractéristique) : dispositif qui ferme.",
       "courseIds": [
         "plaies_pansements"
       ],
@@ -2975,7 +2975,7 @@
       "theme": "Plaies et cicatrisation",
       "definition": "Ensemble de pratiques destinées à éviter l'introduction de micro-organismes dans une zone ou un dispositif pendant le soin.",
       "distinction": "Une technique aseptique ne remplace pas l'hygiène des mains.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "a- (absence) + sept- (infection, putréfaction) + -ie (état) : prévention de la contamination.",
       "courseIds": [
         "plaies_pansements",
         "prevention_ias_asepsie"
@@ -2988,7 +2988,7 @@
       "theme": "Locomoteur et rhumatologie",
       "definition": "Douleur localisée à une articulation, qui peut avoir une origine inflammatoire ou mécanique.",
       "distinction": "L'arthralgie est un symptôme ; l'arthrite implique une inflammation articulaire.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "arthr(o)- (articulation) + -algie (douleur).",
       "courseIds": [
         "arthrose",
         "rhumatismes_inflammatoires",
@@ -3002,7 +3002,7 @@
       "theme": "Locomoteur et rhumatologie",
       "definition": "Arthrose touchant le genou, associant altérations articulaires et symptômes variables.",
       "distinction": "À distinguer de la coxarthrose, qui touche la hanche.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "gon- (genou) + arthr(o)- (articulation) + -ose (affection).",
       "courseIds": [
         "arthrose",
         "appareil_locomoteur"
@@ -3015,7 +3015,7 @@
       "theme": "Locomoteur et rhumatologie",
       "definition": "Arthrose de l'articulation de la hanche, pouvant entraîner douleur et gêne fonctionnelle.",
       "distinction": "À distinguer de la gonarthrose, qui concerne le genou.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "cox- (hanche) + arthr(o)- (articulation) + -ose (affection).",
       "courseIds": [
         "arthrose",
         "appareil_locomoteur"
@@ -3028,7 +3028,7 @@
       "theme": "Locomoteur et rhumatologie",
       "definition": "Sensation de limitation articulaire au réveil dont la durée aide à orienter l'évaluation clinique.",
       "distinction": "Une raideur prolongée peut évoquer un mécanisme inflammatoire, sans suffire au diagnostic.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "raideur (difficulté à mobiliser) + matinale (au réveil).",
       "courseIds": [
         "rhumatismes_inflammatoires",
         "arthrose"
@@ -3041,7 +3041,7 @@
       "theme": "Locomoteur et rhumatologie",
       "definition": "Inflammation de la membrane synoviale d'une articulation, souvent associée à douleur ou gonflement.",
       "distinction": "La synovite n'est pas synonyme d'usure du cartilage.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "synov- (membrane synoviale) + -ite (inflammation).",
       "courseIds": [
         "rhumatismes_inflammatoires",
         "arthrose"
@@ -3054,7 +3054,7 @@
       "theme": "Neurologie et infections",
       "definition": "Inflammation des méninges, pouvant être due à des agents infectieux ou à d'autres causes.",
       "distinction": "À distinguer de l'encéphalite, qui touche le tissu cérébral.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "méning- (méninges) + -ite (inflammation).",
       "courseIds": [
         "infections_neuro_meningees",
         "systeme_nerveux"
@@ -3067,7 +3067,7 @@
       "theme": "Neurologie et infections",
       "definition": "Inflammation du tissu cérébral pouvant entraîner troubles de la conscience ou signes neurologiques.",
       "distinction": "À distinguer de la méningite qui concerne principalement les enveloppes du cerveau.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "encéphal- (cerveau) + -ite (inflammation).",
       "courseIds": [
         "infections_neuro_meningees",
         "systeme_nerveux"
@@ -3080,7 +3080,7 @@
       "theme": "Neurologie et infections",
       "definition": "Résistance douloureuse à la flexion du cou pouvant faire évoquer une irritation méningée.",
       "distinction": "Signe non spécifique : son absence n'exclut pas une méningite.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "raideur (mobilité limitée) + nuque (région cervicale postérieure).",
       "courseIds": [
         "infections_neuro_meningees"
       ],
@@ -3092,7 +3092,7 @@
       "theme": "Infections respiratoires",
       "definition": "Infection du parenchyme pulmonaire responsable d'une inflammation des alvéoles et tissus voisins.",
       "distinction": "À distinguer de la bronchite qui concerne principalement les bronches.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "pneumon- (poumon) + -ie (état ou affection).",
       "courseIds": [
         "infections_pulmonaires_bacteriennes",
         "infections_respiratoires_virales",
@@ -3106,7 +3106,7 @@
       "theme": "Infections respiratoires",
       "definition": "Sécrétions issues des voies respiratoires inférieures éliminées lors de la toux.",
       "distinction": "La couleur seule des expectorations ne permet pas de confirmer une infection bactérienne.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "ex- (hors de) + pector- (poitrine) + -ation (action).",
       "courseIds": [
         "infections_pulmonaires_bacteriennes",
         "systeme_respiratoire"
@@ -3119,7 +3119,7 @@
       "theme": "Infections respiratoires",
       "definition": "Sensation de difficulté à respirer apparaissant ou s'aggravant pendant l'activité physique.",
       "distinction": "À distinguer de la tachypnée qui décrit une fréquence respiratoire élevée.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "dys- (difficulté) + -pnée (respiration) ; « d'effort » précise le contexte.",
       "courseIds": [
         "infections_pulmonaires_bacteriennes",
         "infections_respiratoires_virales"
@@ -3132,7 +3132,7 @@
       "theme": "Virologie et infections",
       "definition": "Intervalle entre la contamination par un agent infectieux et l'apparition des premiers symptômes.",
       "distinction": "À distinguer de la période de contagiosité qui peut débuter avant les symptômes.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "incub- (couver) + -ation (processus) : période précédant les symptômes.",
       "courseIds": [
         "virus",
         "infections_respiratoires_virales",
@@ -3146,7 +3146,7 @@
       "theme": "Virologie et infections",
       "definition": "Particule virale complète située hors d'une cellule hôte, susceptible d'assurer une nouvelle infection.",
       "distinction": "Le virion est une particule ; le virus ne se multiplie pas seul hors des cellules.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "vir- (virus) + -ion (particule) : particule virale.",
       "courseIds": [
         "virus",
         "diagnostic_virologie"
@@ -3159,7 +3159,7 @@
       "theme": "Virologie et infections",
       "definition": "Coque protéique qui entoure et protège le matériel génétique d'un virus.",
       "distinction": "La capside n'est pas identique à l'enveloppe lipidique, absente de certains virus.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "caps- (boîte, enveloppe protectrice) + -ide (forme ou relation).",
       "courseIds": [
         "virus",
         "diagnostic_virologie"
@@ -3172,7 +3172,7 @@
       "theme": "Virologie et infections",
       "definition": "Milieu, organisme ou population permettant le maintien d'un agent infectieux dans la nature.",
       "distinction": "À distinguer du vecteur qui transporte un agent entre hôtes.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "Réservoir : milieu de maintien ; expression descriptive, sans découpage médical spécifique.",
       "courseIds": [
         "virus",
         "physiopathologie_infections"
@@ -3185,7 +3185,7 @@
       "theme": "Santé sexuelle",
       "definition": "Infection bactérienne sexuellement transmissible provoquée par Chlamydia trachomatis.",
       "distinction": "Peut être asymptomatique ; ne pas la confondre avec une infection virale.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "Chlamydi- (genre bactérien Chlamydia) + -ose (affection).",
       "courseIds": [
         "ist_hors_vih"
       ],
@@ -3197,7 +3197,7 @@
       "theme": "Santé sexuelle",
       "definition": "Infection due à Neisseria gonorrhoeae, pouvant atteindre les muqueuses génitales ou extragénitales.",
       "distinction": "À distinguer de la syphilis, causée par Treponema pallidum.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "gono- (génital) + cocc- (bactérie arrondie) + -ie (état).",
       "courseIds": [
         "ist_hors_vih"
       ],
@@ -3209,7 +3209,7 @@
       "theme": "Santé sexuelle",
       "definition": "Infection bactérienne systémique due à Treponema pallidum et évoluant en plusieurs stades.",
       "distinction": "Une lésion initiale peut être indolore ; le diagnostic repose sur des examens adaptés.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "Terme historique : pas de décomposition clinique standard en préfixe et suffixe.",
       "courseIds": [
         "ist_hors_vih"
       ],
@@ -3221,7 +3221,7 @@
       "theme": "Calculs de doses et mathématiques",
       "definition": "Rapport entre une masse de substance dissoute et le volume total de solution, souvent exprimé en mg/mL.",
       "distinction": "Une concentration en mg/mL n'est pas un débit en mL/h.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "con- (ensemble) + centr- (centre) + -ation (processus) ; emploi scientifique pour masse par volume.",
       "courseIds": [
         "calculs_doses_mathematiques",
         "administration_medicamenteuse"
@@ -3234,7 +3234,7 @@
       "theme": "Calculs de doses et mathématiques",
       "definition": "Volume administré par unité de temps, généralement exprimé en mL/h pour une pompe à perfusion.",
       "distinction": "Ne pas confondre débit volumique et dose de principe actif par heure.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "per- (à travers) + fus- (verser) + -ion (action) : administration par perfusion.",
       "courseIds": [
         "calculs_doses_mathematiques",
         "administration_medicamenteuse"
@@ -3247,7 +3247,7 @@
       "theme": "Calculs de doses et mathématiques",
       "definition": "Opération qui diminue la concentration d'une solution en ajoutant du solvant sans changer la quantité totale de soluté.",
       "distinction": "À distinguer d'une dissolution qui consiste à mettre une substance en solution.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "dilu- (délayer) + -tion (action) : diminution de concentration.",
       "courseIds": [
         "calculs_doses_mathematiques",
         "pharmacologie"
@@ -3260,7 +3260,7 @@
       "theme": "Calculs de doses et mathématiques",
       "definition": "Relation entre deux grandeurs dans laquelle leur rapport reste constant, utile pour les conversions et calculs de doses.",
       "distinction": "Vérifier les unités avant toute règle de trois.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "proportion (rapport) + -alité (propriété).",
       "courseIds": [
         "calculs_doses_mathematiques"
       ],
@@ -3272,7 +3272,7 @@
       "theme": "Savoirs et méthodologie",
       "definition": "Étude critique des conditions de production, de validation et des limites des connaissances scientifiques.",
       "distinction": "À distinguer de la méthodologie qui décrit les procédures de recherche.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "épistém(o)- (connaissance, savoir) + -logie (étude).",
       "courseIds": [
         "epistemologie_savoirs",
         "methodes_travail_reussite"
@@ -3285,7 +3285,7 @@
       "theme": "Savoirs et méthodologie",
       "definition": "Résultat étayé par des observations ou études reproductibles dont la solidité dépend des méthodes utilisées.",
       "distinction": "Une opinion professionnelle n'a pas à elle seule le même niveau de preuve.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "preuve (élément qui étaye) + scientifique (méthode de recherche) : expression descriptive.",
       "courseIds": [
         "epistemologie_savoirs",
         "methodes_travail_reussite"
@@ -3298,7 +3298,7 @@
       "theme": "Savoirs et méthodologie",
       "definition": "Erreur systématique due à une sélection non représentative des personnes ou observations étudiées.",
       "distinction": "Un biais ne se confond pas avec la variabilité due au hasard.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "biais (erreur systématique) + sélection (choix des sujets).",
       "courseIds": [
         "epistemologie_savoirs"
       ],
@@ -3310,7 +3310,7 @@
       "theme": "Savoirs et méthodologie",
       "definition": "Système cognitif permettant de maintenir et manipuler temporairement une information pour accomplir une tâche.",
       "distinction": "À distinguer de la mémoire à long terme.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "mémoire (stockage mental) + de travail (usage temporaire).",
       "courseIds": [
         "methodes_travail_reussite",
         "psychologie_sante"
@@ -3323,7 +3323,7 @@
       "theme": "Savoirs et méthodologie",
       "definition": "Technique d'apprentissage consistant à retrouver une réponse de mémoire plutôt qu'à relire passivement.",
       "distinction": "Le rappel actif peut utiliser QCM ou flashcards mais ne se limite pas à eux.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "rappel (recherche en mémoire) + actif (effort volontaire).",
       "courseIds": [
         "methodes_travail_reussite"
       ],
@@ -3335,7 +3335,7 @@
       "theme": "Biologie cellulaire",
       "definition": "Ensemble des étapes du développement embryonnaire au cours desquelles se mettent en place les organes.",
       "distinction": "À distinguer de la différenciation cellulaire qui concerne la spécialisation des cellules.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "organ(o)- (organe) + -genèse (formation).",
       "courseIds": [
         "niveaux_organisation",
         "systeme_reproducteur"
@@ -3348,7 +3348,7 @@
       "theme": "Biologie cellulaire",
       "definition": "Tissu composé de cellules jointives qui recouvre des surfaces ou constitue certaines glandes.",
       "distinction": "À distinguer du tissu conjonctif qui assure davantage des fonctions de soutien.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "épi- (sur) + thél- (revêtement) : tissu de surface ou de glande.",
       "courseIds": [
         "niveaux_organisation",
         "cellules_tissus"
@@ -3361,7 +3361,7 @@
       "theme": "Biologie cellulaire",
       "definition": "Structure anatomique constituée de plusieurs tissus coopérant pour remplir une ou plusieurs fonctions.",
       "distinction": "Un organe n'est pas identique à un appareil comprenant plusieurs organes.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "organ- (instrument, partie fonctionnelle) : structure composée de tissus.",
       "courseIds": [
         "niveaux_organisation"
       ],
@@ -3373,7 +3373,7 @@
       "theme": "Brûlures et traumatologie",
       "definition": "Méthode approximative d'estimation de la surface corporelle brûlée chez l'adulte à partir de régions anatomiques.",
       "distinction": "Ne se substitue pas à des méthodes plus précises adaptées à l'âge.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "Règle des neuf : expression descriptive fondée sur des pourcentages de surface corporelle.",
       "courseIds": [
         "grands_brules"
       ],
@@ -3385,7 +3385,7 @@
       "theme": "Brûlures et traumatologie",
       "definition": "Lésion thermique atteignant les couches profondes de la peau, avec risque important de séquelles.",
       "distinction": "La douleur seule ne permet pas d'estimer la profondeur de la brûlure.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "brûlure (lésion thermique) + profonde (atteinte de couches internes).",
       "courseIds": [
         "grands_brules",
         "plaies_pansements"
@@ -3398,7 +3398,7 @@
       "theme": "Brûlures et traumatologie",
       "definition": "Diminution du volume sanguin circulant effectif, possible après des pertes liquidiennes importantes.",
       "distinction": "À distinguer de l'hypotension qui est une mesure de pression artérielle.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "hypo- (diminution) + vol- (volume) + -émie (sang).",
       "courseIds": [
         "grands_brules",
         "homeostasie",
@@ -3412,7 +3412,7 @@
       "theme": "Respiration et oxygénation",
       "definition": "Augmentation anormale de la fréquence respiratoire par rapport aux valeurs attendues pour l'âge.",
       "distinction": "À distinguer de l'hyperpnée, qui décrit une augmentation de l'amplitude ventilatoire.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "tachy- (rapide) + -pnée (respiration).",
       "courseIds": [
         "systeme_respiratoire",
         "parametres_vitaux",
@@ -3426,7 +3426,7 @@
       "theme": "Paramètres vitaux",
       "definition": "Fréquence cardiaque inférieure aux valeurs attendues, à interpréter selon l'âge et le contexte clinique.",
       "distinction": "Ne pas confondre bradycardie et hypotension artérielle.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "brady- (lent) + cardi(o)- (cœur) + -ie (état).",
       "courseIds": [
         "systeme_cardiovasculaire",
         "parametres_vitaux"
@@ -3439,7 +3439,7 @@
       "theme": "Paramètres vitaux",
       "definition": "Fréquence cardiaque supérieure aux valeurs attendues selon l'âge et le contexte clinique.",
       "distinction": "Une fréquence cardiaque élevée ne suffit pas à déterminer la cause.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "tachy- (rapide) + cardi(o)- (cœur) + -ie (état).",
       "courseIds": [
         "systeme_cardiovasculaire",
         "parametres_vitaux"
@@ -3452,7 +3452,7 @@
       "theme": "Digestion et alimentation",
       "definition": "Difficulté à avaler ou à faire progresser un aliment de la bouche vers l'estomac.",
       "distinction": "À distinguer de l'odynophagie qui correspond à une douleur lors de la déglutition.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "dys- (difficulté) + -phagie (action d'avaler ou de manger).",
       "courseIds": [
         "systeme_digestif",
         "systeme_nerveux"
@@ -3465,7 +3465,7 @@
       "theme": "Système urinaire",
       "definition": "Production d'urine presque nulle, nécessitant une évaluation rapide et contextualisée.",
       "distinction": "À distinguer de l'oligurie, qui correspond à une diminution importante de la diurèse.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "an- (absence) + -urie (urine).",
       "courseIds": [
         "systeme_urinaire",
         "infections_urinaires"
@@ -3478,7 +3478,7 @@
       "theme": "Système urinaire",
       "definition": "Augmentation anormale du volume d'urine produit sur vingt-quatre heures, à distinguer de la fréquence des mictions.",
       "distinction": "Une pollakiurie signifie uriner souvent, pas nécessairement produire beaucoup d'urine.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "poly- (abondance) + -urie (urine).",
       "courseIds": [
         "systeme_urinaire",
         "systeme_endocrinien"
@@ -3491,7 +3491,7 @@
       "theme": "Système urinaire",
       "definition": "Augmentation de la fréquence des mictions, généralement en petites quantités à chaque fois.",
       "distinction": "À distinguer de la polyurie, qui concerne le volume total d'urine.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "pollaki- (fréquent) + -urie (urine).",
       "courseIds": [
         "infections_urinaires",
         "systeme_urinaire"
@@ -3504,7 +3504,7 @@
       "theme": "Paramètres vitaux",
       "definition": "Ensemble des mécanismes physiologiques limitant un saignement après une lésion vasculaire.",
       "distinction": "L'hémostase comprend plusieurs étapes, dont l'agrégation plaquettaire et la coagulation.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "hém(o)- (sang) + -stase (arrêt, stabilisation).",
       "courseIds": [
         "homeostasie",
         "plaies_pansements"
@@ -3517,7 +3517,7 @@
       "theme": "Psychologie et relation de soin",
       "definition": "Capacité à comprendre le vécu et les émotions d'une personne tout en maintenant une juste distance professionnelle.",
       "distinction": "L'empathie ne signifie pas ressentir exactement la même émotion que le patient.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "em- (dans) + -pathie (ressenti) ; compréhension du vécu d'autrui.",
       "courseIds": [
         "competences_psychosociales",
         "psychologie_sante"
@@ -3530,7 +3530,7 @@
       "theme": "Psychologie et relation de soin",
       "definition": "Capacité à exprimer ses besoins et positions de manière claire tout en respectant les droits d'autrui.",
       "distinction": "À distinguer de l'agressivité et de la passivité.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "assert- (affirmer) + -ivité (qualité) : expression affirmée.",
       "courseIds": [
         "competences_psychosociales"
       ],
@@ -3542,10 +3542,23 @@
       "theme": "Droit et éthique",
       "definition": "Accord libre et éclairé d'une personne après une information adaptée sur les soins envisagés.",
       "distinction": "L'acceptation tacite ne remplace pas les exigences de consentement selon le contexte.",
-      "etymologie": "Décomposition : consulter les préfixes, racines et suffixes du dictionnaire transversal.",
+      "etymologie": "consentement (accord) + aux soins (actes proposés).",
       "courseIds": [
         "introduction_droit",
         "ethique_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_odynophagie",
+      "term": "Odynophagie",
+      "theme": "Digestion et alimentation",
+      "definition": "Douleur ressentie au moment de la déglutition, qui peut être distinguée d'une simple difficulté à avaler.",
+      "distinction": "La dysphagie est une difficulté à avaler, l'odynophagie une douleur à la déglutition.",
+      "etymologie": "odyn(o)- (douleur) + -phagie (action d'avaler).",
+      "courseIds": [
+        "systeme_digestif",
+        "systeme_nerveux"
       ],
       "sourceType": "reference_pedagogique"
     }
