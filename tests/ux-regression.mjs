@@ -75,4 +75,32 @@ assert.ok(!startup.includes('ticks>=80'),'La boucle de synchronisation accueil n
 const settings=read('v87-settings.js');
 for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()','id="v87Whatsapp"','function latestResourceAnnouncement()','https://wa.me/?text='])assert.ok(settings.includes(token),`Paramètres/journal/partage WhatsApp incomplet: ${token}`);
 
+// TNR supports officiels : tout lien doit rester atteignable via une carte visible ou son parent.
+const registry=JSON.parse(read('course-registry-v741.json'));
+const registered=new Map(registry.courses.map(c=>[c.id,c]));
+const drivePattern=/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?$/;
+assert.equal(registry.version,meta.version,'Registre des supports désynchronisé de la release');
+for(const c of registry.courses){
+ if(c.officialSupportUrl)assert.match(c.officialSupportUrl,drivePattern,'Lien Drive incorrect : '+c.label);
+ if(c.parentId){
+   const parent=registered.get(c.parentId);
+   assert.ok(parent,'Sous-cours sans parent : '+c.label);
+   assert.notEqual(parent.showInCourses,false,'Parent de sous-cours masqué : '+c.label);
+ }
+ if(c.showInCourses===false&&c.officialSupportUrl)assert.ok(c.parentId,'Support officiel inaccessible : '+c.label);
+ if(Array.isArray(c.officialSupportItems))for(const p of c.officialSupportItems){
+   assert.ok(p.title?.trim(),'Titre de partie vide : '+c.label);
+   assert.match(p.url||'',/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+\/view$/,'Document de cours invalide : '+c.label);
+ }
+}
+const subcourses=registry.courses.filter(c=>c.parentId==='appareil_locomoteur');
+assert.equal(subcourses.length,5,'Les cinq sous-cours locomoteur doivent être répertoriés');
+assert.equal(subcourses.filter(c=>c.officialSupportUrl).length,4,'Quatre supports de sous-cours doivent être liés');
+assert.ok(!registered.get('chirurgie_orthopedique').officialSupportUrl,'Ne pas inventer de support pour chirurgie orthopédique');
+for(const id of ['cellules_tissus','epistemologie_savoirs'])assert.equal(registered.get(id).officialSupportItems?.length,3,'Trois parties PDF distinctes requises : '+id);
+for(const token of ['v74-tile-support','v74-official-shortcut','v74-official-parts','v74-child-supports','v74-child-link','Support officiel non disponible','children.map(child=>','parentId===courseMeta.id'])assert.ok(course.includes(token),'Navigation support officiel manquante : '+token);
+assert.ok(course.includes('b.onclick=()=>openCourse74(b.dataset.course74)'),'Navigation de la carte cours régressée');
+assert.ok(course.includes("link.target='_blank'"),'Ouverture externe du support manquante');
+console.log('✅ TNR des liens officiels, sous-cours masqués et PDF multiparties validés');
+
 console.log(`✅ Régression UX et cohérence release contrôlées pour V${meta.version} build ${meta.build}`);
