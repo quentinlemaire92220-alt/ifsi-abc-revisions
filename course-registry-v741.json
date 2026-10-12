@@ -1,5 +1,5 @@
 {
-  "version": "8.30.80",
+  "version": "8.30.81",
   "courses": [
     {
       "id": "biomolecules",
@@ -290,7 +290,21 @@
         "Fondements epistemologiques modeles conceptuels cliniques",
         "Theorie Dans La Pratique"
       ],
-      "officialSupportUrl": "https://drive.google.com/drive/folders/1Uvq2IVOGWxTmmOujxv1gdqFfzqRD3R41"
+      "officialSupportUrl": "https://drive.google.com/drive/folders/1Uvq2IVOGWxTmmOujxv1gdqFfzqRD3R41",
+      "officialSupportItems": [
+        {
+          "title": "Épistémologie — cours 01",
+          "url": "https://drive.google.com/file/d/1lmo40GiC26jiGGkjtrvUqRtdLVHvv0HZ/view"
+        },
+        {
+          "title": "Fondements épistémologiques — partie 03",
+          "url": "https://drive.google.com/file/d/1lqMLxQyMu_6x4GeX36m1xY6bc_5CI-dd/view"
+        },
+        {
+          "title": "Théorie dans la pratique — partie 04",
+          "url": "https://drive.google.com/file/d/1fFSDtiXsntE-I4BTrZeVX9s6zaXkCJJi/view"
+        }
+      ]
     },
     {
       "id": "ethique_infirmiere",
