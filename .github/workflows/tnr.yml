@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -39,6 +41,11 @@ jobs:
 
       - name: Contrôler les packs de cours validés et leurs ressources
         run: node tests/course-delivery.mjs
+
+      - name: Refuser un nouveau cours publié absent du manifeste
+        env:
+          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node tests/course-delivery-new-course.mjs
 
       - name: Vérifier la séparation des séances simultanées par sous-groupe
         run: node tests/planning-group-separation.mjs
