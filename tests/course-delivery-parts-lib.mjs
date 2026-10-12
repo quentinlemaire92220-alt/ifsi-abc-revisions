@@ -24,10 +24,12 @@ export function changedResources(before, after) {
   const changes = [];
   for (const [kind, field, idField, key] of kinds) {
     const prev = unique(before[field].map(x => x.courseId + '\0' + x[idField]));
+    const previousRows = unique(before[field].map(x => JSON.stringify(x)));
     for (const resource of after[field]) {
       if (!resource.courseId || !resource[idField]) {
-        if (resource.courseId && !before[field].includes(resource))
-          throw new Error(kind + ': toute ressource ajoutée doit avoir un courseId et un identifiant stable');
+        if (resource.courseId && !previousRows.has(JSON.stringify(resource)) &&
+            published(before, resource.courseId))
+          throw new Error(kind + ': nouvelle ressource sans identifiant stable');
         continue;
       }
       if (!prev.has(resource.courseId + '\0' + resource[idField]) &&
