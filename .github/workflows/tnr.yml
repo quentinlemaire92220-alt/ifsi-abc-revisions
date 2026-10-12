@@ -39,6 +39,20 @@ jobs:
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 
+      - name: Tester le contrôle PDF sur des documents fictifs
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer le moteur de contrôle PDF
+        run: python -m pip install pymupdf==1.26.7
+
+      - name: TNR visuels PDF absents, mal placés et illisibles
+        run: python tests/pdf_visual_gate_test.py
+
+      - name: Valider le résumé de contrôle avant nouvelle publication
+        run: node tests/pdf-visual-audit-contract-test.mjs
+
       - name: Contrôler les packs de cours validés et leurs ressources
         run: node tests/course-delivery.mjs
 
