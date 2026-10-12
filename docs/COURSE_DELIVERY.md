@@ -1,6 +1,6 @@
-# Livraison complète après validation d’une fiche et de son QCM
+# Livraison d’un cours après autocontrôle des livrables
 
-La validation utilisateur de la fiche et du QCM déclenche l’exécution de ce processus pour chaque nouveau cours et chaque nouvelle partie. Le modèle de classement est le cours Système respiratoire. Cette procédure complète les chartes pédagogiques sans modifier les supports officiels.
+Le lancement d'un package complet déclenche l'exécution de ce processus pour chaque nouveau cours et chaque nouvelle partie, avec autocontrôle des livrables et sans validation graphique intermédiaire systématique. Le modèle de classement est le cours Système respiratoire. Cette procédure complète les chartes pédagogiques sans modifier les supports officiels.
 
 ## Dossiers à créer ou réutiliser
 
@@ -16,12 +16,12 @@ La validation utilisateur de la fiche et du QCM déclenche l’exécution de ce 
 | 08 - Scripts vocaux | Fichiers texte brut à convertir en MP3 par Quentin |
 | 99 - Archives | Anciennes ressources remplacées |
 
-Créer les dossiers même lorsqu’une ressource est en préparation. Ne pas dupliquer un dossier existant. Conserver les mêmes identifiants Drive lors du remplacement d’un PDF actif et déplacer les anciennes copies isolées dans les archives du cours. Ne conserver ni transcripts PLAUD ni transcriptions brutes dans Drive.
+Créer les dossiers même lorsqu’une ressource est en préparation. Ne pas dupliquer un dossier existant. Conserver les mêmes identifiants Drive lors du remplacement d’un PDF actif et déplacer les anciennes copies isolées dans les archives du cours. Ne jamais placer de transcriptions PLAUD dans les dossiers étudiants ni les indexer dans l'application. Si elles doivent être conservées sur Drive, les isoler dans un dossier strictement privé au propriétaire, sans lien dans les ressources pédagogiques.
 
 ## Production et contrôle
 
 1. Vérifier l’UE, le nom du cours, la partie et l’identité du support. Les sections internes d’un même support ne deviennent pas des cours séparés.
-2. Conserver les explications écrites. Créer ou réutiliser les infographies illustrées validées et les exporter aussi séparément.
+2. Conserver les explications écrites. Recréer les schémas pertinents en infographies originales et les intégrer DIRECTEMENT dans le PDF de la fiche ; l'export séparé est complémentaire. Avant publication, exécuter le garde-fou local décrit dans `docs/PDF_VISUAL_GATE.md` sur le PDF final et la liste des schémas attendus, corriger les anomalies détectées et inspecter les rendus. Une revue distincte de la fidélité médicale (anatomie, connexions, appareillages et légendes) reste obligatoire.
 3. Employer la même matrice pour le QCM PDF et le QCM dans l’application : réponses, thème, difficulté et explication. Chaque question annonce de une à trois bonnes réponses ; les questions dépendant d’un visuel absent sont interdites.
 4. Générer des flashcards autonomes : question précise, sigles développés, une notion ou une liste cohérente, réponse et explication compréhensibles sans diapo. Les contrôler sur la banque réellement décodée par l’application.
 5. Fournir à Quentin des scripts en fichiers texte brut séparés par thème. Reprendre son format : « Vocal N sur M », cours et UE, introduction, questions numérotées, `[pause 1500]`, temps de réflexion de 2500 à 4500 ms, « Réponse : », `[pause]`, définitions, « À retenir », fin et annonce du thème suivant. Utiliser ponctuellement `[strong]` et `[slow]`. Viser une lecture lente de cinq à sept minutes, à vérifier sur le MP3 final. Laisser le dossier `05 - Vocaux` vide. Quentin crée les MP3 et les renvoie ; les renommer `UE_S1_<UE>_<Cours>_PartieNN_Vocal_NN_<Theme>.mp3`, les déposer dans le dossier, vérifier taille/durée/accès, puis les rattacher à l’application. Ne pas envoyer le cours à un service vocal externe et ne pas publier les scripts dans la liste des audios.

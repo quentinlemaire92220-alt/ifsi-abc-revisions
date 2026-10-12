@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
+import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const git = args => execFileSync('git', args, {
@@ -66,6 +67,7 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
+  validateVisualAudit(course.id, delivery);
 }
 console.log('✅ Garde-fou première publication : ' + added.length +
   ' nouveaux courseId, ' + firstPublished.length +
