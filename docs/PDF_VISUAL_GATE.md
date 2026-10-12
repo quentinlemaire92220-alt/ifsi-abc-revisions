@@ -47,7 +47,7 @@ La `page` est numérotée dès 1, la `region` est normalisée de 0 à 1 : gauche
 
 Le manifest est **une liste d'attendus créée à partir du support** : si un schéma est oublié de cette liste, le script ne pourra pas inventer son existence. Un manifest vide est refusé ; si le cours ne contient aucun schéma pertinent, documenter cette exception séparément.
 
-## Preuve minimale à enregistrer lors d'une première publication
+## Preuve minimale à enregistrer lors d’une première publication ou d’une nouvelle partie
 
 Lorsqu'un nouveau cours est publié pour la première fois et possède des infographies, la livraison GitHub dans `docs/course-deliveries.json` doit fournir un résumé de contrôle sans donnée privée :
 
@@ -69,3 +69,31 @@ La clé `public_record` est générée **automatiquement** dans le rapport lorsq
 **Non détectable de façon fiable :** justesse anatomique ou appareillage exact, mauvaise étiquette inscrite dans l'image, exactitude des flèches et du texte dans une image, schémas oubliés du manifest, esthétique et difficulté pédagogique. Une **revue médico-graphique distincte** est donc nécessaire. `medical_validation: NOT_AUTOMATICALLY_VERIFIED` figure systématiquement dans le rapport.
 
 Les tests GitHub Actions utilisent uniquement des **PDF fictifs générés en CI** : ils vérifient que l'outil fonctionne et rejette des erreurs simulées. Pour un cours réel, Work doit lui-même exécuter l'outil sur le PDF local, inspecter les rendus et ne publier que le résultat contrôlé.
+
+## Recontrôler le PDF réellement publié après son dépôt Drive
+
+Après le contrôle initial PASS, déposer la fiche PDF dans le dossier Drive final. **Retélécharger ensuite depuis ce même emplacement** une copie binaire dans un espace de travail privé, en utilisant le compte Google Drive autorisé. Ne pas simplement recopier le fichier original local : cela ne prouve pas ce qui se trouve sur Drive.
+
+```bash
+python tools/verify_published_pdf.py \
+  --published-pdf /espace/prive/retour_drive/fiche.pdf \
+  --original-report /espace/prive/rapport-initial.json \
+  --manifest /espace/prive/attendus.json \
+  --report /espace/prive/rapport-apres-depot.json
+```
+
+Le vérificateur calcule SHA-256 sur les **octets du PDF retéléchargé**, compare l'empreinte au rapport initial et relance l'analyse structurelle sur ce fichier. Fichier absent, octets divergents ou inventaire incohérent = FAIL.
+
+Si MATCH, utiliser le champ `public_record` du rapport privé comme `publishedVerification` dans la livraison. Exemple synthétique :
+
+```json
+{
+  "status": "MATCH",
+  "source": "authenticated_drive_download",
+  "pdfSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "expectedCount": 3,
+  "checkedCount": 3
+}
+```
+
+**Limite :** le script prouve la correspondance entre les octets *fournis* et le rapport original, mais ne peut pas attester cryptographiquement que la copie provient bien du bon fichier Drive. L'opérateur privé doit garantir le téléchargement authentifié. La CI GitHub publique ne peut pas lire le PDF privé ; elle ne contrôle que la cohérence des déclarations et exécute des tests synthétiques. Ne jamais publier le PDF, le manifeste détaillé, le chemin privé ou les captures médicales sur GitHub.
