@@ -17,7 +17,7 @@ var associations=[
 ];
 var state={kind:'diagram',chosen:{},left:null,locked:false};
 var $=function(id){return document.getElementById(id);};
-function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&#39;'}[c];});}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function options(items,selected){return '<option value="">— Choisir un terme —</option>'+items.map(function(x){return '<option value="'+esc(x.id)+'"'+(selected===x.id?' selected':'')+'>'+esc(x.label||x.definition)+'</option>';}).join('');}
 function read(){try{return JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){return {};}}
 function save(kind,correct,total){try{var x=read();if(!x[kind])x[kind]={attempts:0,best:0};x[kind].attempts++;x[kind].best=Math.max(x[kind].best,correct);x[kind].total=total;localStorage.setItem(KEY,JSON.stringify(x));}catch(e){/* Exercices disponibles sans stockage. */}}
