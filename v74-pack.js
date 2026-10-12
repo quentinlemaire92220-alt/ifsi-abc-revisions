@@ -176,20 +176,22 @@ function renderCourses74(){
       <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE ${esc74(domain)}</span><div><div class="v74-domain-name">${esc74(domainName74(domain))}</div><div class="v74-domain-meta">${all.length} cours • ${qcm} QCM</div></div></div></div>
       <div class="v74-domain-body">${ueEntries.map(([ue,items])=>`<div class="v74-ue-group">
         <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div class="v74-ue-count">${items.length} cours • ${items.reduce((n,x)=>n+x.data.qs.length,0)} QCM</div></div></div>
-        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):'📝 Support à obtenir'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
+        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
       </div>`).join('')}</div>
     </section>`
   }).join('')||'<div class="card small">Aucun cours trouvé.</div>';
   grid.querySelectorAll('[data-course74]').forEach(b=>{
     b.onclick=()=>openCourse74(b.dataset.course74);
     const course=registryCourse74(b.dataset.course74);
-    const url=course?.officialSupportUrl;
+    const official=course?.officialSupportUrl;
+    const captures=course?.captureSupportUrl;
+    const url=official||captures;
     if(!url||!/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(url))return;
     const tile=document.createElement('div');tile.className='v74-course-tile';
     b.parentNode.insertBefore(tile,b);tile.appendChild(b);
     const link=document.createElement('a');link.className='btn outline v74-tile-support';link.href=url;
     link.target='_blank';link.rel='noopener noreferrer';
-    link.textContent=course.officialSupportCoverage==='partial'?'📘 Voir le support partiel ↗':'📘 Support officiel ↗';
+    link.textContent=!official?'📸 Captures provisoires ↗':course.officialSupportCoverage==='partial'?'📘 Voir le support partiel ↗':'📘 Support officiel ↗';
     link.setAttribute('aria-label','Ouvrir le support du cours '+course.label);
     tile.appendChild(link);
   });
