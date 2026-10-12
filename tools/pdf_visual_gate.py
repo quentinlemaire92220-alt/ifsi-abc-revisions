@@ -134,6 +134,14 @@ def main(argv=None):
     except Exception as exc:
         report = {"version": 1, "errors": [str(exc)], "medical_validation": "NOT_AUTOMATICALLY_VERIFIED"}
     report["status"] = "PASS" if not report["errors"] else "FAIL"
+    if report["status"] == "PASS":
+        # Copiable sans transcription ni URL privée dans docs/course-deliveries.json.
+        report["public_record"] = {
+            "status": "PASS",
+            "pdfSha256": report["pdf_sha256"],
+            "expectedCount": report["expected_count"],
+            "checkedCount": report["passed_count"],
+        }
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"PDF_VISUAL_GATE {report['status']} : {report.get('passed_count', 0)}/{report.get('expected_count', 0)} infographies, erreurs={len(report['errors'])}. Revue médicale indépendante toujours requise.")
