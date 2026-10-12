@@ -56,7 +56,8 @@ const WEEKS=[
   {date:'2026-10-09',start:'13:30',end:'17:00',promo:'A',ue:'UE Simulation',type:'Asynchrone',title:'Réalisation de cas concrets et outil de révision PV',room:'Distanciel',teacher:''}
  ]}
  ,{id:'S7',label:'S7',start:'2026-10-12',end:'2026-10-16',range:'12 - 16 oct.',events:[
-  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B1','B2'],groupLabel:'Groupes B1 / B2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:''},
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B1'],groupLabel:'Groupe B1',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11',teacher:''},
+  {date:'2026-10-12',start:'09:00',end:'10:30',promo:'B',groups:['B2'],groupLabel:'Groupe B2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S3',teacher:''},
   {date:'2026-10-12',start:'09:00',end:'10:30',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:'PANDION Odile'},
   {date:'2026-10-12',start:'10:30',end:'12:00',promo:'A',groups:['A1','A2'],groupLabel:'Groupes A1 / A2',ue:'UE A1 S1',type:'TD',title:'Rôles et missions de l’IDE',room:'S11 • S3',teacher:'BOURRIGAN Lucille • LEBRE Stéphanie'},
   {date:'2026-10-12',start:'10:30',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'Stomathérapie',room:'S10',teacher:''},
@@ -202,10 +203,16 @@ function agendaRow(e,status){
  return `<article class="vp-agenda-row ${live?'current':''}"><div class="vp-agenda-time"><span class="vp-status ${live?'live':''}">${label}</span><div>${esc(e.start)} – ${esc(e.end)}</div>${dateExtra?`<small>${esc(dateExtra)}</small>`:''}</div><div class="vp-agenda-main">${e.ue?`<div class="vp-ue">${esc(e.ue)}</div>`:''}<div class="vp-title">${esc(e.title)}</div>${meta?`<div class="vp-meta">${esc(meta)}</div>`:''}</div><span class="vp-type ${typeClass(e.type)}">${esc(e.type)}</span></article>`
 }
 function todaySummary(){
- const now=new Date(),today=todayISO(),dayEvents=allPromoEvents().filter(e=>e.date===today),current=dayEvents.find(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end')),next=dayEvents.find(e=>eventDateTime(e,'start')>now);
- const rows=[];if(current)rows.push(agendaRow(current,'live'));if(next)rows.push(agendaRow(next,'next'));
+ const now=new Date(),today=todayISO(),dayEvents=allPromoEvents().filter(e=>e.date===today);
+ const current=dayEvents.filter(e=>eventDateTime(e,'start')<=now&&now<eventDateTime(e,'end'));
+ const future=dayEvents.filter(e=>eventDateTime(e,'start')>now);
+ const nextStart=future.length?future[0].start:null;
+ const next=nextStart?future.filter(e=>e.start===nextStart):[];
+ const rows=[...current.map(e=>agendaRow(e,'live')),...next.map(e=>agendaRow(e,'next'))];
  const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.',site=siteForEvents(dayEvents);
- return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)} ${sitePill(site)}</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
+ const currentWeek=weekForDate(today),weekLabel=currentWeek?` · ${currentWeek.label}`:'';
+ const audience=`Promo ${promo}${subgroup==='all'?' · Tous groupes':` · Groupe ${subgroup}`}`;
+ return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}${esc(weekLabel)} ${sitePill(site)}</div><div class="vp-date">${esc(audience)} · Indépendant de la semaine consultée</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
 }
 function snapshot(){
  const out={};
