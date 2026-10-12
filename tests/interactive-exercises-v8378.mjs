@@ -7,7 +7,7 @@ const exerciseSrc=read('v8378-interactive-exercises.js');
 const files=['index.html','features-v9.js','v7-local.js','v72-pack.js','sw.js'];
 for(const file of files)assert.ok(read(file).includes('IFSI_QCM_FEEDBACK')||['index.html','sw.js'].includes(file),file+' : feedback non branché');
 for(const path of ['v8378-qcm-feedback.js','v8378-interactive-exercises.js']){
- assert.ok(read('index.html').includes('./'+path+'?v=8378'),'Module absent du HTML : '+path);
+ assert.ok(read('index.html').includes('./'+path+'?v='+JSON.parse(read('build-meta.json')).build),'Module absent du HTML : '+path);
  assert.ok(read('sw.js').includes('./'+path),'Module absent du cache hors ligne : '+path);
 }
 assert.ok(read('.github/workflows/tnr.yml').includes('node tests/interactive-exercises-v8378.mjs'),'TNR non branché dans la CI');

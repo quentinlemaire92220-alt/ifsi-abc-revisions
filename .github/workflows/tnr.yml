@@ -43,6 +43,9 @@ jobs:
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 
+      - name: Vérifier le vocabulaire dans les QCM
+        run: node tests/vocabulary-qcm-v8379.mjs
+
       - name: Vérifier le module Flashcards
         run: node tests/flashcards-v8338.mjs
 
