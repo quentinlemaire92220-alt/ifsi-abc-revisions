@@ -27,7 +27,7 @@ for(const c of manifest.courses){
   const actual=live.find(x=>x.id===q.id);
   assert.deepEqual(JSON.parse(JSON.stringify(actual.answers)),q.answers,q.id+': correction divergente');
  }
- const cards=deck.filter(x=>x.courseId===c.courseId);
+ const cards=deck.filter(x=>x.courseId===c.courseId && !String(x.id).startsWith('voc:')); // Les cartes de livraison sont distinctes des cartes de vocabulaire générées.
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
  assert.ok(c.flashcardDriveId,'Export Flashcards absent');
  for(const card of cards){
