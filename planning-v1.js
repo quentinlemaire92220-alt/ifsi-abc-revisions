@@ -210,7 +210,9 @@ function todaySummary(){
  const next=nextStart?future.filter(e=>e.start===nextStart):[];
  const rows=[...current.map(e=>agendaRow(e,'live')),...next.map(e=>agendaRow(e,'next'))];
  const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.',site=siteForEvents(dayEvents);
- return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)} ${sitePill(site)}</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
+ const currentWeek=weekForDate(today),weekLabel=currentWeek?` · ${currentWeek.label}`:'';
+ const audience=`Promo ${promo}${subgroup==='all'?' · Tous groupes':` · Groupe ${subgroup}`}`;
+ return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}${esc(weekLabel)} ${sitePill(site)}</div><div class="vp-date">${esc(audience)} · Indépendant de la semaine consultée</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
 }
 function snapshot(){
  const out={};
