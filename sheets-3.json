@@ -260,14 +260,20 @@
     "sourceStatus": "active"
   },
   {
-    "title": "UE_S1_B3_Mathematiques_Calculs_Doses_Fiche_Maitre_Methodes_Calculs_Infirmiers.pdf",
-    "label": "Calculs de doses — Fiche maître",
+    "title": "UE_S1_B3_Mathematiques_Calculs_Doses_Fiche_Maitre_Methodes_Calculs_Infirmiers.svg",
+    "label": "Mathématiques — Fiche maître illustrée",
     "ue": "S1 B3",
-    "url": "https://drive.google.com/file/d/17ZNsH3xgASvLhsnkn4Z37NaHpsUHoY8F/view?usp=drivesdk",
+    "url": "./assets/maths/fiche-maitre-methodes-calculs.svg",
     "provisional": false,
     "courseId": "calculs_doses_mathematiques",
-    "displayTitle": "Fiche maître — Méthodes de calculs infirmiers",
-    "sourceStatus": "active"
+    "displayTitle": "09 — Fiche maître : méthodes de calculs infirmiers",
+    "sourceStatus": "active",
+    "sourcePdfUrl": "https://drive.google.com/file/d/17ZNsH3xgASvLhsnkn4Z37NaHpsUHoY8F/view?usp=drivesdk",
+    "driveId": "17ZNsH3xgASvLhsnkn4Z37NaHpsUHoY8F",
+    "resourceId": "maths_fiche_infographie_maitre",
+    "officialSupport": false,
+    "sourceBasis": "Fiche maître PDF de calculs infirmiers existante",
+    "sourceNote": "Mémo visuel intégrant les méthodes de la fiche maître PDF. Support officiel du professeur non identifié."
   },
   {
     "title": "UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Fiche_Revision_Coeur_Vaisseaux_et_Sang.pdf",
