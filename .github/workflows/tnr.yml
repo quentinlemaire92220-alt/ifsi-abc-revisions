@@ -143,8 +143,11 @@ jobs:
       - name: Vérifier les 226 QCM de maths, leurs résultats exacts et les 10 niveaux
         run: node tests/math-qcm-v8363.mjs
 
-      - name: Tester les cas pratiques de maths à saisie libre (pilote privé)
+      - name: Tester les exercices pratiques de mathématiques
         run: node tests/math-case-engine-v1.mjs
+
+      - name: Vérifier les 10 exercices approuvés, le catalogue et leurs corrections
+        run: node tests/math-case-publication-v1.mjs
 
       - name: Contrôler les classements QCM et leurs permutations sans substitution
         run: node tests/qcm-ordering-audit.mjs
