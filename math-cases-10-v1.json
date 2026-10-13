@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": 1,
+  "courseId": "calculs_doses_mathematiques",
+  "title": "IFSI ABC — 10 exercices pratiques de calculs",
+  "status": "private-review",
+  "version": "1.0",
+  "notice": "Pack de révision pédagogique non officiel. Médicaments et posologies fictifs hors exercice 1 issu du sujet fourni. Ne constitue pas une prescription ni un protocole de soin.",
+  "cases": [
+    {
+      "id": "ue-b3-calculs-n3-ex01-private",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 1 — Perfusion de glucosé et électrolytes",
+      "source": "Atelier de calcul niveau 3, UE B3, exercice 1, page 1",
+      "situation": "Vous devez préparer une perfusion de glucosé 5 % de 1 litre, avec ajout de 4 g de NaCl et de 2 g de KCl, à administrer en 12 heures. La prescription prend effet à 14 h 30.",
+      "prescription": [
+        "Glucosé 5 % : 1 litre (1 000 mL)",
+        "NaCl : 4 g",
+        "KCl : 2 g",
+        "Durée : 12 heures, début à 14 h 30"
+      ],
+      "materials": [
+        "Poches de glucosé 5 % de 500 mL",
+        "Ampoules de NaCl à 20 % de 10 mL",
+        "Ampoules de KCl à 10 % de 10 mL"
+      ],
+      "assumptions": [
+        "Facteur de chute de 20 gouttes/mL supposé : non fourni dans le sujet original",
+        "Les volumes des électrolytes sont ajoutés au volume de glucosé pour cet exercice"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Combien d’ampoules utilisez-vous pour chaque électrolyte ?",
+          "fields": [
+            {
+              "id": "a_nacl",
+              "label": "Nombre d’ampoules de NaCl",
+              "unit": "ampoules",
+              "type": "number",
+              "correct": 2,
+              "hint": "Commence par calculer la quantité de NaCl contenue dans 10 mL à 20 %.",
+              "formula": "Quantité dans l’ampoule = concentration (mg/mL) × volume (mL). Puis nombre = dose prescrite / dose par ampoule.",
+              "method": "20 % = 200 mg/mL ; 200 × 10 = 2 000 mg = 2 g ; 4 / 2 = 2.",
+              "explanation": "20 % correspond à 20 g/100 mL, soit 200 mg/mL. Une ampoule de 10 mL contient 2 000 mg = 2 g. Pour obtenir 4 g, il faut 2 ampoules.",
+              "commonErrors": [
+                {
+                  "when": 1,
+                  "feedback": "Une ampoule de 10 mL à 20 % ne contient que 2 g de NaCl ; la prescription demande 4 g."
+                },
+                {
+                  "when": 20,
+                  "feedback": "Tu confonds le volume des ampoules (mL) et leur nombre."
+                }
+              ]
+            },
+            {
+              "id": "a_kcl",
+              "label": "Nombre d’ampoules de KCl",
+              "unit": "ampoules",
+              "type": "number",
+              "correct": 2,
+              "hint": "Convertis 10 % en mg/mL puis détermine le contenu d’une ampoule de 10 mL.",
+              "formula": "Quantité en mg = mg/mL × mL ; nombre d’ampoules = dose prescrite / dose par ampoule.",
+              "method": "10 % = 100 mg/mL ; 100 × 10 = 1 000 mg = 1 g ; 2 / 1 = 2.",
+              "explanation": "10 % signifie 10 g pour 100 mL, donc 100 mg/mL. Chaque ampoule de 10 mL contient 1 000 mg = 1 g de KCl. Il faut 2 ampoules pour 2 g.",
+              "commonErrors": [
+                {
+                  "when": 1,
+                  "feedback": "Une ampoule contient 1 g de KCl ; 2 g sont prescrits. Il faut donc deux ampoules."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quel est le volume total à perfuser à chaque fois ?",
+          "fields": [
+            {
+              "id": "b_poche",
+              "label": "Volume final d’une poche après ajout",
+              "unit": "mL",
+              "type": "number",
+              "correct": 520,
+              "hint": "Chaque poche de glucosé contient 500 mL. Répartis une ampoule de NaCl et une ampoule de KCl dans chaque poche.",
+              "formula": "Volume final = volume initial de la poche + volume de NaCl + volume de KCl.",
+              "method": "500 mL + 10 mL + 10 mL = 520 mL par poche.",
+              "explanation": "Le litre de glucosé nécessite deux poches de 500 mL. Chaque poche reçoit 10 mL de NaCl et 10 mL de KCl, soit 520 mL au total.",
+              "commonErrors": [
+                {
+                  "when": 500,
+                  "feedback": "Tu as oublié les 10 mL de NaCl et les 10 mL de KCl ajoutés à chaque poche."
+                },
+                {
+                  "when": 1040,
+                  "feedback": "1 040 mL représente les deux poches ; la question demande le volume de chaque poche."
+                }
+              ]
+            },
+            {
+              "id": "b_total",
+              "label": "Volume total des deux poches",
+              "unit": "mL",
+              "type": "number",
+              "correct": 1040,
+              "hint": "Il y a deux poches préparées, de même volume.",
+              "formula": "Volume total = volume final d’une poche × nombre de poches.",
+              "method": "520 × 2 = 1 040 mL.",
+              "explanation": "Le volume total comprend 1 000 mL de glucosé et 40 mL d’électrolytes ajoutés : 1 040 mL.",
+              "commonErrors": [
+                {
+                  "when": 1000,
+                  "feedback": "Tu n’as pas ajouté le volume des électrolytes à celui du glucosé."
+                },
+                {
+                  "when": 520,
+                  "feedback": "520 mL correspond à une seule poche, mais le traitement en utilise deux."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel sera le débit de la perfusion en gouttes par minute ?",
+          "fields": [
+            {
+              "id": "c_debit",
+              "label": "Débit arrondi avec une tubulure à 20 gouttes/mL",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 29,
+              "hint": "Convertis les 12 heures en minutes et pense aux 40 mL d’électrolytes ajoutés.",
+              "formula": "Débit = volume (mL) × facteur de chute (gouttes/mL) / temps (minutes).",
+              "method": "1 040 × 20 = 20 800 gouttes ; 12 × 60 = 720 minutes ; 20 800 / 720 = 28,89, soit 29 gouttes/min.",
+              "explanation": "Avec l’hypothèse de 20 gouttes/mL, 1 040 × 20 = 20 800 gouttes sur 720 minutes. Le débit théorique de 28,89 est arrondi à 29 gouttes/min. Le facteur de chute doit être confirmé en pratique.",
+              "commonErrors": [
+                {
+                  "when": 28,
+                  "feedback": "Le résultat théorique est 28,89 ; l’arrondi à l’entier le plus proche donne 29, pas 28."
+                },
+                {
+                  "when": 27.8,
+                  "feedback": "Tu sembles avoir oublié le volume des électrolytes ajoutés. Il faut retenir 1 040 mL."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "prompt": "D — Comment planifiez-vous l’administration sachant que la prescription prend effet à 14 h 30 ?",
+          "fields": [
+            {
+              "id": "d_first",
+              "label": "Heure de fin de la première poche",
+              "unit": "HH:MM",
+              "type": "time",
+              "correct": "20:30",
+              "hint": "Deux poches de 520 mL passent pendant 12 heures au total.",
+              "formula": "Durée par poche = durée totale / 2. Fin poche 1 = 14 h 30 + durée par poche.",
+              "method": "12 h / 2 = 6 h ; 14 h 30 + 6 h = 20 h 30.",
+              "explanation": "La première poche de 520 mL passe théoriquement sur 6 heures, de 14 h 30 à 20 h 30.",
+              "commonErrors": [
+                {
+                  "when": "02:30",
+                  "feedback": "02 h 30 correspond à la fin de la seconde poche le lendemain, pas de la première."
+                }
+              ]
+            },
+            {
+              "id": "d_second",
+              "label": "Heure de fin de la deuxième poche (le lendemain)",
+              "unit": "HH:MM (J+1)",
+              "type": "time",
+              "correct": "02:30",
+              "hint": "La deuxième poche débute à la fin de la première, à 20 h 30.",
+              "formula": "Fin poche 2 = 20 h 30 + 6 heures.",
+              "method": "20 h 30 + 3 h 30 = 00 h 00, puis 2 h 30 supplémentaires = 02 h 30 le lendemain.",
+              "explanation": "La seconde poche de 520 mL passe de 20 h 30 à 02 h 30 le lendemain. Le planning théorique couvre 12 heures.",
+              "commonErrors": [
+                {
+                  "when": "20:30",
+                  "feedback": "20 h 30 est l’heure de changement de poche, pas la fin de la seconde poche."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "level": "difficile",
+      "theme": "Perfusions et électrolytes",
+      "origin": "exercice initial fourni, réservé à une utilisation privée"
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-02",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 2 — Garde-veine et reconstitution",
+      "theme": "Perfusions et reconstitution",
+      "level": "difficile",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Dans un service fictif, un patient bénéficie d’un garde-veine de glucosé. Une autre prescription prévoit deux perfusions quotidiennes d’un médicament X, présenté en poudre à reconstituer. Calcule les débits séparément.",
+      "prescription": [
+        "Garde-veine : glucosé 5 %, 600 mL sur 24 heures",
+        "Médicament X : 300 mg par jour en deux administrations égales",
+        "Chaque administration dans 100 mL de glucosé, sur 40 minutes"
+      ],
+      "materials": [
+        "Flacon de médicament X : 150 mg de poudre",
+        "Solvant de reconstitution : 4 mL par flacon",
+        "Pochon de glucosé : 100 mL",
+        "Tubulure fictive : 20 gouttes/mL"
+      ],
+      "assumptions": [
+        "Exercice fictif : le volume du solvant (4 mL) est additionné aux 100 mL du pochon",
+        "Vérifier les volumes réels, les compatibilités et les protocoles en situation clinique"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quel débit pour le garde-veine ?",
+          "fields": [
+            {
+              "id": "e02_gv",
+              "label": "Débit du garde-veine",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 8,
+              "explanation": "600 mL × 20 gouttes/mL = 12 000 gouttes ; 24 h = 1 440 min ; 12 000 ÷ 1 440 = 8,33, soit 8 gouttes/min (arrondi pédagogique).",
+              "hint": "Convertis 24 heures en minutes.",
+              "formula": "Débit = volume × facteur de chute ÷ durée (min).",
+              "method": "600 × 20 ÷ (24 × 60) = 8,33 → 8.",
+              "commonErrors": [
+                {
+                  "when": 9,
+                  "feedback": "Un débit calculé à 8,33 se rapproche de 8, pas de 9."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quelle quantité de médicament X à chaque administration ?",
+          "fields": [
+            {
+              "id": "e02_dose",
+              "label": "Dose par administration",
+              "unit": "mg",
+              "type": "number",
+              "correct": 150,
+              "explanation": "La dose totale quotidienne de 300 mg est répartie en deux doses : 300 ÷ 2 = 150 mg.",
+              "hint": "Le fractionnement est en deux administrations identiques.",
+              "formula": "Dose par administration = dose quotidienne ÷ nombre d’administrations.",
+              "method": "300 ÷ 2 = 150 mg.",
+              "commonErrors": [
+                {
+                  "when": 300,
+                  "feedback": "300 mg correspond à la dose quotidienne, pas à chaque administration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel débit pour chaque perfusion de médicament X ?",
+          "fields": [
+            {
+              "id": "e02_vol",
+              "label": "Volume final du pochon reconstitué",
+              "unit": "mL",
+              "type": "number",
+              "correct": 104,
+              "explanation": "Le pochon contient initialement 100 mL. On ajoute 4 mL de solvant : 100 + 4 = 104 mL.",
+              "hint": "Le solvant fait partie du volume final dans l’hypothèse du cas.",
+              "formula": "Volume final = pochon + solvant.",
+              "method": "100 + 4 = 104 mL.",
+              "commonErrors": [
+                {
+                  "when": 100,
+                  "feedback": "Le volume ajouté du solvant n’a pas été pris en compte."
+                }
+              ]
+            },
+            {
+              "id": "e02_debit",
+              "label": "Débit d’une perfusion de médicament X",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 52,
+              "explanation": "104 mL × 20 gouttes/mL ÷ 40 min = 52 gouttes/min.",
+              "hint": "Utilise le volume final de 104 mL et la durée de 40 minutes.",
+              "formula": "Débit = volume × facteur de chute ÷ temps.",
+              "method": "104 × 20 ÷ 40 = 52.",
+              "commonErrors": [
+                {
+                  "when": 50,
+                  "feedback": "50 gouttes/min correspond à 100 mL sans les 4 mL de solvant."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-03",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 3 — Calculs pédiatriques fictifs",
+      "theme": "Dose et débit pédiatriques",
+      "level": "difficile",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Un enfant de 9 kg reçoit, dans un atelier de simulation, une solution fictive A. Les étudiants doivent convertir la prescription pondérale en volume et débit. Il ne s’agit pas d’une recommandation de posologie réelle.",
+      "prescription": [
+        "Solution A : 48 mg/kg/jour, en 4 perfusions identiques",
+        "Chaque perfusion dure 20 minutes"
+      ],
+      "materials": [
+        "Présentation fictive : 400 mg dans 40 mL",
+        "Poids : 9 kg"
+      ],
+      "assumptions": [
+        "Médicament et posologie entièrement fictifs ; ne pas transposer en soins",
+        "Exprimer le débit final en mL/h"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle quantité quotidienne est calculée ?",
+          "fields": [
+            {
+              "id": "e03_day",
+              "label": "Quantité quotidienne",
+              "unit": "mg/jour",
+              "type": "number",
+              "correct": 432,
+              "explanation": "48 mg/kg/jour × 9 kg = 432 mg/jour. Les kg se simplifient dans l’unité.",
+              "hint": "Multiplie la dose par kg par le poids.",
+              "formula": "mg/jour = (mg/kg/jour) × kg.",
+              "method": "48 × 9 = 432 mg/jour.",
+              "commonErrors": [
+                {
+                  "when": 48,
+                  "feedback": "Tu as oublié de multiplier par le poids de l’enfant."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quelle quantité correspond à une administration ?",
+          "fields": [
+            {
+              "id": "e03_dose",
+              "label": "Quantité par perfusion",
+              "unit": "mg",
+              "type": "number",
+              "correct": 108,
+              "explanation": "432 mg/jour ÷ 4 perfusions = 108 mg par perfusion.",
+              "hint": "La quantité journalière est divisée en quatre.",
+              "formula": "Dose par perfusion = dose/jour ÷ 4.",
+              "method": "432 ÷ 4 = 108 mg.",
+              "commonErrors": [
+                {
+                  "when": 432,
+                  "feedback": "Tu as donné la quantité journalière, pas la dose unitaire."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel volume correspond à une dose ?",
+          "fields": [
+            {
+              "id": "e03_vol",
+              "label": "Volume par perfusion",
+              "unit": "mL",
+              "type": "number",
+              "correct": 10.8,
+              "explanation": "400 mg/40 mL = 10 mg/mL, puis 108 mg ÷ 10 mg/mL = 10,8 mL.",
+              "hint": "Calcule la concentration en mg/mL.",
+              "formula": "Volume = dose (mg) ÷ concentration (mg/mL).",
+              "method": "400 ÷ 40 = 10 mg/mL ; 108 ÷ 10 = 10,8 mL.",
+              "commonErrors": [
+                {
+                  "when": 108,
+                  "feedback": "108 est la quantité en mg, non le volume en mL."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "prompt": "D — Quel débit horaire correspond à 20 minutes ?",
+          "fields": [
+            {
+              "id": "e03_rate",
+              "label": "Débit horaire",
+              "unit": "mL/h",
+              "type": "number",
+              "correct": 32.4,
+              "explanation": "20 minutes = 1/3 d’heure ; 10,8 mL ÷ (20/60 h) = 32,4 mL/h.",
+              "hint": "En débit mL/h, convertir 20 minutes en heure.",
+              "formula": "mL/h = volume × 60 ÷ minutes.",
+              "method": "10,8 × 60 ÷ 20 = 32,4 mL/h.",
+              "commonErrors": [
+                {
+                  "when": 0.54,
+                  "feedback": "Tu as divisé par le temps en minutes sans convertir en heures."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-04",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 4 — Débit variable sur deux périodes",
+      "theme": "Perfusions et débits",
+      "level": "moyen",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Une perfusion de 600 mL est prescrite sur 16 heures. Une partie du volume doit passer plus rapidement au début, puis le reste sur la période suivante.",
+      "prescription": [
+        "Volume : 600 mL de solution aqueuse fictive sur 16 heures",
+        "180 mL pendant les 3 premières heures",
+        "Volume restant pendant les 13 heures suivantes"
+      ],
+      "materials": [
+        "Tubulure : 20 gouttes/mL"
+      ],
+      "assumptions": [
+        "Arrondir les gouttes/minute à l’entier le plus proche"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Premier palier de débit",
+          "fields": [
+            {
+              "id": "e04_first",
+              "label": "Débit des trois premières heures",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 20,
+              "explanation": "180 mL × 20 gouttes/mL ÷ (3 × 60 min) = 20 gouttes/min.",
+              "hint": "Pour le premier palier, ne calcule que les 180 mL.",
+              "formula": "Débit = volume × facteur de chute ÷ temps (min).",
+              "method": "180 × 20 ÷ 180 = 20.",
+              "commonErrors": [
+                {
+                  "when": 13,
+                  "feedback": "Tu as peut-être utilisé la seconde période au lieu des trois premières heures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Volume restant et débit des heures suivantes",
+          "fields": [
+            {
+              "id": "e04_remain",
+              "label": "Volume restant",
+              "unit": "mL",
+              "type": "number",
+              "correct": 420,
+              "explanation": "600 mL au total moins 180 mL administrés au premier palier = 420 mL.",
+              "hint": "Soustrais le volume déjà administré.",
+              "formula": "Reste = volume total − volume initial.",
+              "method": "600 − 180 = 420 mL.",
+              "commonErrors": [
+                {
+                  "when": 600,
+                  "feedback": "La première tranche de 180 mL doit être retranchée."
+                }
+              ]
+            },
+            {
+              "id": "e04_after",
+              "label": "Débit pendant les 13 heures suivantes",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 11,
+              "explanation": "420 × 20 ÷ (13 × 60) = 10,77 gouttes/min ; arrondi à 11.",
+              "hint": "13 heures représentent 780 minutes.",
+              "formula": "Débit = volume restant × 20 ÷ durée restante en minutes.",
+              "method": "420 × 20 ÷ 780 = 10,77 → 11.",
+              "commonErrors": [
+                {
+                  "when": 20,
+                  "feedback": "Tu as conservé le débit du premier palier. Le débit doit être recalculé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-05",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 5 — Solution buvable pondérale",
+      "theme": "Solutions buvables",
+      "level": "moyen",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Dans un exercice entièrement fictif, une préparation buvable Z est prescrite à un enfant de 7,5 kg. Calcule une prise à partir de la dose quotidienne puis de la concentration du flacon.",
+      "prescription": [
+        "Préparation fictive Z : 30 mg/kg/jour en 3 prises identiques"
+      ],
+      "materials": [
+        "Poids : 7,5 kg",
+        "Solution buvable : 15 mg/mL"
+      ],
+      "assumptions": [
+        "Posologie et produit inventés pour l’entraînement : ne pas utiliser comme conseil clinique"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle quantité de produit par jour ?",
+          "fields": [
+            {
+              "id": "e05_day",
+              "label": "Quantité quotidienne",
+              "unit": "mg/jour",
+              "type": "number",
+              "correct": 225,
+              "explanation": "30 mg/kg/jour × 7,5 kg = 225 mg/jour.",
+              "hint": "Multiplie la dose pondérale par le poids.",
+              "formula": "Dose quotidienne = mg/kg/j × kg.",
+              "method": "30 × 7,5 = 225 mg.",
+              "commonErrors": [
+                {
+                  "when": 30,
+                  "feedback": "La donnée 30 mg/kg/jour n’est pas encore une dose quotidienne en mg."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quelle quantité par prise ?",
+          "fields": [
+            {
+              "id": "e05_dose",
+              "label": "Quantité par prise",
+              "unit": "mg",
+              "type": "number",
+              "correct": 75,
+              "explanation": "225 mg/jour ÷ 3 prises = 75 mg par prise.",
+              "hint": "Répartis la quantité totale en trois prises.",
+              "formula": "Dose par prise = dose totale ÷ nombre de prises.",
+              "method": "225 ÷ 3 = 75 mg.",
+              "commonErrors": [
+                {
+                  "when": 225,
+                  "feedback": "225 mg est le total de la journée."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel volume par prise ?",
+          "fields": [
+            {
+              "id": "e05_vol",
+              "label": "Volume par prise",
+              "unit": "mL",
+              "type": "number",
+              "correct": 5,
+              "explanation": "La solution contient 15 mg par mL. Il faut 75 mg ÷ 15 mg/mL = 5 mL.",
+              "hint": "Utilise 15 mg/mL comme concentration.",
+              "formula": "Volume = dose (mg) ÷ concentration (mg/mL).",
+              "method": "75 ÷ 15 = 5 mL.",
+              "commonErrors": [
+                {
+                  "when": 75,
+                  "feedback": "75 est une dose en mg, pas un volume en mL."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-06",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 6 — Suspension à concentration fractionnaire",
+      "theme": "Règle de trois",
+      "level": "facile",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Un cas fictif de préparation d’une dose orale demande de calculer le volume correspondant à une prescription exprimée en mg.",
+      "prescription": [
+        "Dose d’une suspension fictive B : 18 mg en une prise"
+      ],
+      "materials": [
+        "Présentation : 24 mg dans 10 mL"
+      ],
+      "assumptions": [
+        "Le volume de la seringue orale doit être exprimé en mL"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle est la concentration ?",
+          "fields": [
+            {
+              "id": "e06_conc",
+              "label": "Concentration",
+              "unit": "mg/mL",
+              "type": "number",
+              "correct": 2.4,
+              "explanation": "24 mg dans 10 mL correspondent à 24 ÷ 10 = 2,4 mg/mL.",
+              "hint": "Divise la masse par le volume de présentation.",
+              "formula": "Concentration = masse / volume.",
+              "method": "24 ÷ 10 = 2,4 mg/mL.",
+              "commonErrors": [
+                {
+                  "when": 24,
+                  "feedback": "24 mg est la quantité de produit dans 10 mL, pas dans 1 mL."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quel volume correspond à 18 mg ?",
+          "fields": [
+            {
+              "id": "e06_vol",
+              "label": "Volume à prélever",
+              "unit": "mL",
+              "type": "number",
+              "correct": 7.5,
+              "explanation": "18 mg ÷ 2,4 mg/mL = 7,5 mL.",
+              "hint": "Une fois la concentration déterminée, divise la dose par cette concentration.",
+              "formula": "Volume = dose / concentration.",
+              "method": "18 ÷ 2,4 = 7,5 mL.",
+              "commonErrors": [
+                {
+                  "when": 18,
+                  "feedback": "Tu as indiqué la dose en mg plutôt que le volume en mL."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-07",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 7 — Gouttes orales et fractionnement",
+      "theme": "Gouttes buvables",
+      "level": "moyen",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "On étudie une prescription fictive de solution buvable en gouttes pour un enfant. Le facteur en gouttes est celui du flacon oral, non celui d’une tubulure.",
+      "prescription": [
+        "Solution fictive C : 0,4 mg/kg/jour en deux prises identiques",
+        "Poids : 12 kg"
+      ],
+      "materials": [
+        "Flacon compte-gouttes : 1 mg pour 25 gouttes"
+      ],
+      "assumptions": [
+        "Produit et posologie fictifs",
+        "Ne pas confondre gouttes orales du flacon et facteur de chute d’une perfusion"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle quantité quotidienne ?",
+          "fields": [
+            {
+              "id": "e07_day",
+              "label": "Dose totale par jour",
+              "unit": "mg",
+              "type": "number",
+              "correct": 4.8,
+              "explanation": "0,4 mg/kg/jour × 12 kg = 4,8 mg/jour.",
+              "hint": "Applique la dose en mg/kg au poids de l’enfant.",
+              "formula": "Dose = mg/kg × kg.",
+              "method": "0,4 × 12 = 4,8 mg.",
+              "commonErrors": [
+                {
+                  "when": 0.4,
+                  "feedback": "0,4 mg/kg/jour doit être multiplié par les 12 kg."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Combien de gouttes chaque jour ?",
+          "fields": [
+            {
+              "id": "e07_drops",
+              "label": "Gouttes par jour",
+              "unit": "gouttes",
+              "type": "number",
+              "correct": 120,
+              "explanation": "Chaque mg correspond à 25 gouttes ; 4,8 mg × 25 = 120 gouttes par jour.",
+              "hint": "Ici le flacon contient 25 gouttes pour 1 mg.",
+              "formula": "Gouttes = dose (mg) × 25 gouttes/mg.",
+              "method": "4,8 × 25 = 120 gouttes.",
+              "commonErrors": [
+                {
+                  "when": 96,
+                  "feedback": "Vérifie la conversion : 4,8 × 25 = 120, pas 96."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Combien de gouttes par prise ?",
+          "fields": [
+            {
+              "id": "e07_each",
+              "label": "Gouttes par prise",
+              "unit": "gouttes",
+              "type": "number",
+              "correct": 60,
+              "explanation": "120 gouttes réparties en 2 prises = 60 gouttes par prise.",
+              "hint": "Répartis la quantité quotidienne entre les deux prises.",
+              "formula": "Gouttes par prise = gouttes par jour ÷ 2.",
+              "method": "120 ÷ 2 = 60.",
+              "commonErrors": [
+                {
+                  "when": 120,
+                  "feedback": "120 gouttes correspondent à la journée complète."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-08",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 8 — Pourcentages et volumes d’ampoules",
+      "theme": "Concentrations et conversions",
+      "level": "moyen",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Dans une salle de simulation, on te demande d’interpréter une concentration de 15 % et de déterminer le volume nécessaire à une quantité cible de substance fictive.",
+      "prescription": [
+        "Solution d’entraînement D à 15 %",
+        "Quantité cible : 600 mg"
+      ],
+      "materials": [
+        "Ampoules de 10 mL"
+      ],
+      "assumptions": [
+        "Une concentration de 15 % signifie 15 g de substance pour 100 mL de solution"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle concentration en mg/mL ?",
+          "fields": [
+            {
+              "id": "e08_conc",
+              "label": "Concentration",
+              "unit": "mg/mL",
+              "type": "number",
+              "correct": 150,
+              "explanation": "15 % = 15 g/100 mL = 15 000 mg/100 mL = 150 mg/mL.",
+              "hint": "Multiplie le pourcentage par 10 pour obtenir mg/mL lorsque le % est en masse/volume.",
+              "formula": "1 % (m/V) = 10 mg/mL.",
+              "method": "15 × 10 = 150 mg/mL.",
+              "commonErrors": [
+                {
+                  "when": 15,
+                  "feedback": "Tu as confondu 15 g/100 mL et 15 mg/mL."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quelle quantité dans une ampoule ?",
+          "fields": [
+            {
+              "id": "e08_amp",
+              "label": "Masse dans une ampoule",
+              "unit": "mg",
+              "type": "number",
+              "correct": 1500,
+              "explanation": "150 mg/mL × 10 mL = 1 500 mg, soit 1,5 g dans toute l’ampoule.",
+              "hint": "Une ampoule a un volume de 10 mL.",
+              "formula": "Masse = concentration × volume.",
+              "method": "150 × 10 = 1 500 mg.",
+              "commonErrors": [
+                {
+                  "when": 150,
+                  "feedback": "150 mg est le contenu d’un seul mL."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel volume fournit la masse demandée ?",
+          "fields": [
+            {
+              "id": "e08_vol",
+              "label": "Volume pour 600 mg",
+              "unit": "mL",
+              "type": "number",
+              "correct": 4,
+              "explanation": "600 mg ÷ 150 mg/mL = 4 mL.",
+              "hint": "Il faut 600 mg ; chaque mL en contient 150.",
+              "formula": "Volume = masse ÷ concentration.",
+              "method": "600 ÷ 150 = 4 mL.",
+              "commonErrors": [
+                {
+                  "when": 6,
+                  "feedback": "Divise 600 par 150, sans confondre mg et mL."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-09",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 9 — Perfusion et changement de jour",
+      "theme": "Calculs d’horaires",
+      "level": "moyen",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Une perfusion fictive commence dans la soirée. Il faut calculer le débit, l’heure théorique de fin et le moment d’une vérification intermédiaire.",
+      "prescription": [
+        "Volume : 750 mL de solution aqueuse sur 10 heures",
+        "Début : 21 h 15"
+      ],
+      "materials": [
+        "Tubulure : 20 gouttes/mL"
+      ],
+      "assumptions": [
+        "Les horaires après minuit sont à indiquer au jour suivant (J+1)"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quel débit ?",
+          "fields": [
+            {
+              "id": "e09_debit",
+              "label": "Débit",
+              "unit": "gouttes/min",
+              "type": "number",
+              "correct": 25,
+              "explanation": "750 × 20 = 15 000 gouttes ; 10 h = 600 min ; 15 000 ÷ 600 = 25 gouttes/min.",
+              "hint": "Convertis les 10 heures en 600 minutes.",
+              "formula": "Débit = volume × facteur de chute ÷ durée.",
+              "method": "750 × 20 ÷ (10 × 60) = 25.",
+              "commonErrors": [
+                {
+                  "when": 2.5,
+                  "feedback": "Tu as peut-être oublié le facteur de chute ou l’unité de durée."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — À quelle heure la perfusion se termine-t-elle ?",
+          "fields": [
+            {
+              "id": "e09_end",
+              "label": "Heure de fin (J+1)",
+              "unit": "HH:MM",
+              "type": "time",
+              "correct": "07:15",
+              "explanation": "21 h 15 + 10 heures = 07 h 15 le lendemain.",
+              "hint": "Ajoute 10 heures à 21 h 15, en tenant compte de minuit.",
+              "formula": "Heure de fin = heure de début + durée.",
+              "method": "21:15 + 2:45 = minuit, puis + 7:15 = 07:15 (J+1).",
+              "commonErrors": [
+                {
+                  "when": "17:15",
+                  "feedback": "La perfusion commence en soirée et passe pendant la nuit."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Horaire du contrôle à 4 heures après le début ?",
+          "fields": [
+            {
+              "id": "e09_check",
+              "label": "Heure de contrôle (J+1)",
+              "unit": "HH:MM",
+              "type": "time",
+              "correct": "01:15",
+              "explanation": "21 h 15 + 4 heures = 01 h 15 le lendemain.",
+              "hint": "Ajoute 4 heures au début ; la date change à minuit.",
+              "formula": "Horaire du contrôle = début + 4 h.",
+              "method": "21:15 + 4:00 = 01:15 le lendemain.",
+              "commonErrors": [
+                {
+                  "when": "23:15",
+                  "feedback": "21 h 15 + 4 h traverse minuit."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifsi-exercices-pratiques-original-10",
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Exercice 10 — Dilution par conservation de la quantité",
+      "theme": "Dilutions",
+      "level": "difficile",
+      "origin": "cas pédagogique original et fictif",
+      "situation": "Dans un exercice de laboratoire fictif, une solution mère doit être diluée avec un solvant pour obtenir un volume final et une concentration cibles.",
+      "prescription": [
+        "Préparer 120 mL d’une solution fille à 5 mg/mL"
+      ],
+      "materials": [
+        "Solution mère : 40 mg/mL",
+        "Solvant de dilution disponible",
+        "Éprouvettes graduées adaptées"
+      ],
+      "assumptions": [
+        "Hypothèse de volumes additifs pour l’exercice",
+        "Il ne s’agit pas de fabriquer une préparation médicamenteuse injectable réelle"
+      ],
+      "questions": [
+        {
+          "id": "a",
+          "prompt": "A — Quelle quantité totale de substance dans la solution finale ?",
+          "fields": [
+            {
+              "id": "e10_mass",
+              "label": "Masse cible",
+              "unit": "mg",
+              "type": "number",
+              "correct": 600,
+              "explanation": "La solution finale doit contenir 120 mL × 5 mg/mL = 600 mg.",
+              "hint": "Quantité = volume final × concentration voulue.",
+              "formula": "m = C_fille × V_fille.",
+              "method": "5 × 120 = 600 mg.",
+              "commonErrors": [
+                {
+                  "when": 120,
+                  "feedback": "120 est le volume final en mL, pas la masse en mg."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "prompt": "B — Quel volume de solution mère ?",
+          "fields": [
+            {
+              "id": "e10_stock",
+              "label": "Volume de solution mère",
+              "unit": "mL",
+              "type": "number",
+              "correct": 15,
+              "explanation": "Pour obtenir 600 mg avec une solution mère à 40 mg/mL : 600 ÷ 40 = 15 mL.",
+              "hint": "La masse totale reste la même après dilution.",
+              "formula": "C_mère × V_mère = C_fille × V_fille.",
+              "method": "(5 × 120) ÷ 40 = 15 mL.",
+              "commonErrors": [
+                {
+                  "when": 24,
+                  "feedback": "Vérifie le produit concentration × volume : 5 × 120 = 600 mg."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "prompt": "C — Quel volume de solvant ajouter ?",
+          "fields": [
+            {
+              "id": "e10_water",
+              "label": "Volume de solvant",
+              "unit": "mL",
+              "type": "number",
+              "correct": 105,
+              "explanation": "Volume final 120 mL moins 15 mL de solution mère = 105 mL de solvant.",
+              "hint": "Volume final = volume mère + volume de solvant dans l’hypothèse du cas.",
+              "formula": "Volume solvant = V_final − V_mère.",
+              "method": "120 − 15 = 105 mL.",
+              "commonErrors": [
+                {
+                  "when": 120,
+                  "feedback": "Il faut retrancher le volume de solution mère déjà présent."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
