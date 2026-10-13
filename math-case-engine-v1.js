@@ -1,10 +1,10 @@
 /* IFSI ABC — moteur générique d'exercices pratiques. Aucun cas de cours dans ce fichier. */
 (()=>{
 'use strict';
-const COURSE='calculs_doses_mathematiques',SECTION='ifsiMathCases',STORE='ifsiabc_math_cases_progress_v1',PACK_STORE='ifsiabc_math_cases_private_pack_v1';
+const COURSE='calculs_doses_mathematiques',SECTION='ifsiMathCases',STORE='ifsiabc_math_cases_progress_v1',PACK_STORE='ifsiabc_math_cases_private_pack_v1',BUNDLED_URL='./math-cases-10-v1.json';
 const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let current=null,catalog=[],observer=null;
+let current=null,catalog=[],bundled=[],bundleError='',observer=null;
 let state={mode:'guided',answers:{},hints:{},notes:'',locked:false};
 function reset(){state={mode:'guided',answers:{},hints:{},notes:'',locked:false};}
 function parseNumber(x){const s=String(x??'').replace(/\s/g,'');if(!/^[+-]?\d+(?:[.,]\d+)?$/.test(s))return null;const n=Number(s.replace(',','.'));return Number.isFinite(n)?n:null;}
@@ -36,7 +36,7 @@ function validCase(c){
  return c;
 }
 function remember(){
- try{localStorage.setItem(PACK_STORE,JSON.stringify({schemaVersion:1,courseId:COURSE,cases:catalog}));return true;}catch(_){return false;}
+ try{localStorage.setItem(PACK_STORE,JSON.stringify({schemaVersion:1,courseId:COURSE,cases:catalog.filter(c=>!bundled.some(b=>b.id===c.id))}));return true;}catch(_){return false;}
 }
 function mergeCases(cases){
  const items=cases.map(validCase);const incoming=new Set();
@@ -51,6 +51,25 @@ function loadPack(pack){
  if(!pack||typeof pack!=='object'||!Array.isArray(pack.cases)||!pack.cases.length||pack.cases.length>50)throw Error('Pack invalide : 1 à 50 exercices requis.');
  if(pack.courseId&&pack.courseId!==COURSE)throw Error('Ce pack est destiné à un autre cours.');
  const count=mergeCases(pack.cases);current=null;reset();remember();if($('ifsiMathBody'))render();return count;
+}
+async function loadBundled(){
+ try{
+  const r=await fetch(BUNDLED_URL,{cache:'no-store'});
+  if(!r.ok)throw Error('Réponse HTTP '+r.status);
+  const data=await r.json();
+  if(data.courseId!==COURSE||!Array.isArray(data.cases)||data.cases.length!==10)throw Error('Le catalogue publié ne contient pas exactement 10 exercices.');
+  const accepted=data.cases.map(validCase);
+  bundled=accepted;
+  mergeCases(accepted);
+  bundleError='';
+  if($('ifsiMathBody')&&!current)render();
+  return accepted.length;
+ }catch(err){
+  bundleError='Le catalogue n’a pas pu être chargé. Réessaie en ligne ou utilise un fichier JSON local.';
+  console.warn('Exercices pratiques : catalogue indisponible',err);
+  if($('ifsiMathBody')&&!current)render();
+  return 0;
+ }
 }
 function startCase(id){
  const entry=catalog.find(c=>c.id===id);if(!entry)throw Error('Exercice introuvable.');
@@ -86,7 +105,7 @@ function mount(){
  const head=document.querySelector('#v74CourseDetail .v74-course-head');
  if(!head||$('ifsiMathEntry'))return false;
  const card=document.createElement('div');card.className='card';card.id='ifsiMathEntry';
- card.innerHTML='<div class="row"><div><b>🧮 Exercices pratiques — pilote</b><div class="small">Saisie libre, méthode, correction détaillée. Import local d’un pack privé, sans publication des énoncés.</div></div><button class="btn primary" type="button" id="ifsiMathOpen">Tester →</button></div>';
+ card.innerHTML='<div class="row"><div><b>🧮 Exercices pratiques</b><div class="small">Saisie libre, méthode, correction détaillée. 10 exercices intégrés • saisie libre • corrections détaillées.</div></div><button class="btn primary" type="button" id="ifsiMathOpen">Tester →</button></div>';
  head.insertAdjacentElement('afterend',card);$('ifsiMathOpen').onclick=open;return true;
 }
 function open(){
@@ -122,10 +141,10 @@ function render(){
   const list=catalog.length?'<div class="case-catalog">'+catalog.map(c=>{
     const stat=history[c.id],total=c.questions.reduce((n,q)=>n+q.fields.length,0);
     return '<div class="case-box case-catalog-item"><div><b>'+esc(c.title)+'</b><div class="case-note">'+esc(c.theme||'Calculs infirmiers')+' • '+esc(c.level||'Entraînement')+' • '+total+' réponses'+(stat?' • meilleur : '+Number(stat.best||0)+'/'+Number(stat.total||total):'')+'</div></div><button type="button" class="btn primary" data-case-start="'+esc(c.id)+'">Commencer →</button></div>';
-  }).join('')+'</div>':'<p>Aucun exercice chargé. Importe un fichier JSON contenant un cas ou un pack de plusieurs exercices.</p>';
-  root.innerHTML='<div class="ifsi-case"><div class="card"><div class="row"><div><h2>🧮 Exercices pratiques — '+catalog.length+' disponibles</h2><p class="case-note">Prévisualisation privée • énoncé, saisie libre et correction expliquée.</p></div><button class="btn outline" id="ifsiMathBack" type="button">← Retour au cours</button></div>'+list+
-  '<div class="case-box"><label for="ifsiMathImport"><b>Importer un exercice ou un pack (JSON)</b></label><input id="ifsiMathImport" type="file" accept=".json,application/json"><p class="case-note">L’import est local au navigateur. Les exercices restent sur cet appareil, pas sur le dépôt public ni sur Drive.</p><p id="ifsiMathError" role="status" aria-live="polite"></p></div>'+
-  (catalog.length?'<button class="btn outline" id="ifsiMathClear" type="button">Effacer les exercices locaux</button>':'')+'</div></div>';
+  }).join('')+'</div>':'<p>'+esc(bundleError||'Chargement du catalogue des exercices…')+'</p>';
+  root.innerHTML='<div class="ifsi-case"><div class="card"><div class="row"><div><h2>🧮 Exercices pratiques — '+catalog.length+' disponibles</h2><p class="case-note">Entraînement • énoncé, saisie libre et correction expliquée.</p></div><button class="btn outline" id="ifsiMathBack" type="button">← Retour au cours</button></div>'+list+
+  '<div class="case-box"><label for="ifsiMathImport"><b>Importer un exercice complémentaire (JSON)</b></label><input id="ifsiMathImport" type="file" accept=".json,application/json"><p class="case-note">L’import facultatif reste sur cet appareil. Les 10 exercices intégrés sont disponibles automatiquement.</p><p id="ifsiMathError" role="status" aria-live="polite"></p></div>'+
+  (catalog.length?'<button class="btn outline" id="ifsiMathClear" type="button">Effacer les imports supplémentaires</button>':'')+'</div></div>';
   $('ifsiMathBack').onclick=back;
   root.querySelectorAll('[data-case-start]').forEach(button=>{button.onclick=()=>startCase(button.dataset.caseStart);});
   $('ifsiMathImport').onchange=async e=>{
@@ -134,14 +153,14 @@ function render(){
    }catch(err){const msg=$('ifsiMathError');if(msg)msg.textContent='Import impossible : '+err.message;}
   };
   if($('ifsiMathClear'))$('ifsiMathClear').onclick=()=>{
-   if(!window.confirm||window.confirm('Effacer les exercices privés importés sur cet appareil ?')){
-    catalog=[];current=null;reset();try{localStorage.removeItem(PACK_STORE);}catch(_){}render();
+   if(!window.confirm||window.confirm('Effacer les exercices supplémentaires importés sur cet appareil ? Les 10 exercices intégrés resteront disponibles.')){
+    catalog=[...bundled];current=null;reset();try{localStorage.removeItem(PACK_STORE);}catch(_){}render();
    }
   };
   return;
  }
  const score=result();
- let html='<div class="ifsi-case"><div class="card"><div class="row"><div><div class="small">UE B3 • PILOTE PRIVÉ</div><h2>'+esc(current.title)+'</h2></div><div class="case-actions"><button id="ifsiMathCatalog" class="btn outline" type="button">← Tous les exercices</button><button id="ifsiMathBack" class="btn outline" type="button">Cours</button></div></div><h3>Situation clinique</h3><p>'+esc(current.situation||'')+'</p><div class="case-grid"><div class="case-box"><b>📋 Prescription</b>'+items(current.prescription)+'</div><div class="case-box"><b>💊 Matériel disponible</b>'+items(current.materials)+'</div></div>'+(current.assumptions?.length?'<p class="case-note"><b>Hypothèses :</b> '+esc(current.assumptions.join(' • '))+'</p>':'')+'</div>';
+ let html='<div class="ifsi-case"><div class="card"><div class="row"><div><div class="small">UE B3 • EXERCICE PRATIQUE</div><h2>'+esc(current.title)+'</h2></div><div class="case-actions"><button id="ifsiMathCatalog" class="btn outline" type="button">← Tous les exercices</button><button id="ifsiMathBack" class="btn outline" type="button">Cours</button></div></div><h3>Situation clinique</h3><p>'+esc(current.situation||'')+'</p><div class="case-grid"><div class="case-box"><b>📋 Prescription</b>'+items(current.prescription)+'</div><div class="case-box"><b>💊 Matériel disponible</b>'+items(current.materials)+'</div></div>'+(current.assumptions?.length?'<p class="case-note"><b>Hypothèses :</b> '+esc(current.assumptions.join(' • '))+'</p>':'')+'</div>';
  html+='<div class="card"><h3>À toi de résoudre le problème</h3><p class="case-note">Tu peux consulter l’énoncé ci-dessus à tout moment.</p><div class="case-actions"><button type="button" class="btn '+(state.mode==='guided'?'primary':'outline')+'" data-case-mode="guided">Mode guidé</button><button type="button" class="btn '+(state.mode==='autonomous'?'primary':'outline')+'" data-case-mode="autonomous">Mode autonome</button></div>';
  current.questions.forEach(q=>{html+='<h3>'+esc(q.prompt)+'</h3>';q.fields.forEach(f=>html+=fieldHTML(f));});
  html+='<label for="ifsiMathNotes"><b>Mon brouillon (facultatif)</b></label><textarea id="ifsiMathNotes" '+(state.locked?'disabled':'')+' placeholder="Écris ici tes conversions et formules…">'+esc(state.notes)+'</textarea>';
@@ -159,6 +178,7 @@ function render(){
 }
 function init(){
  restore();if(!ensure())return;
+ loadBundled();
  const previous=window.show;
  if(typeof previous==='function'&&!previous._ifsiMathCaseWrapped){
   const wrapped=function(){if($(SECTION))$(SECTION).classList.add('hidden');return previous.apply(this,arguments);};
@@ -168,6 +188,6 @@ function init(){
  if(box&&typeof MutationObserver==='function'){observer=new MutationObserver(mount);observer.observe(box,{childList:true});}
  mount();
 }
-window.IFSI_MATH_CASES={loadCase,loadPack,startCase,catalogue,getCatalog:()=>catalog.map(c=>({id:c.id,title:c.title,theme:c.theme,level:c.level})),open,back,mount,parseNumber,parseTime,evaluate,validCase,result};
+window.IFSI_MATH_CASES={loadCase,loadPack,loadBundled,startCase,catalogue,getCatalog:()=>catalog.map(c=>({id:c.id,title:c.title,theme:c.theme,level:c.level})),open,back,mount,parseNumber,parseTime,evaluate,validCase,result};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
