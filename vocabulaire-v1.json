@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -3561,6 +3561,383 @@
         "systeme_nerveux"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "stoma_stomie",
+      "term": "Stomie",
+      "definition": "Ouverture créée par abouchement chirurgical à la peau.",
+      "etymologie": "-stomie : création d’une ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_039"
+    },
+    {
+      "id": "stoma_abouchement",
+      "term": "Abouchement",
+      "definition": "Mise en communication d’un organe ou conduit avec une ouverture, ici cutanée.",
+      "etymologie": "Expression descriptive ; pas de découpage artificiel.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_039"
+    },
+    {
+      "id": "stoma_effluents",
+      "term": "Effluents",
+      "definition": "Contenus sortant par la stomie, ici selles, gaz ou urine selon la dérivation.",
+      "etymologie": "Terme descriptif des matières évacuées.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_039"
+    },
+    {
+      "id": "stoma_muqueuse",
+      "term": "Muqueuse",
+      "definition": "Tissu qui tapisse un organe creux et forme ici le segment abouché rouge ou rosé.",
+      "etymologie": "muqueux : relatif à une muqueuse.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_040"
+    },
+    {
+      "id": "stoma_peristomial",
+      "term": "Péristomial",
+      "definition": "Situé autour de la stomie, notamment la peau autour de l’ouverture.",
+      "etymologie": "péri- : autour ; stomial : relatif à la stomie.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_040"
+    },
+    {
+      "id": "stoma_colostomie",
+      "term": "Colostomie",
+      "definition": "Abouchement du côlon à la peau pour évacuer des effluents digestifs.",
+      "etymologie": "colo- : côlon ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_041"
+    },
+    {
+      "id": "stoma_ileostomie",
+      "term": "Iléostomie",
+      "definition": "Abouchement de l’iléon, partie terminale du grêle, à la peau.",
+      "etymologie": "iléo- : iléon ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_041"
+    },
+    {
+      "id": "stoma_jejunostomie",
+      "term": "Jéjunostomie",
+      "definition": "Abouchement du jéjunum à la peau.",
+      "etymologie": "jéjuno- : jéjunum ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_042"
+    },
+    {
+      "id": "stoma_urostomie",
+      "term": "Urostomie",
+      "definition": "Dérivation urinaire vers un abouchement cutané direct ou indirect.",
+      "etymologie": "uro- : appareil urinaire ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_042"
+    },
+    {
+      "id": "stoma_uretere",
+      "term": "Uretère",
+      "definition": "Conduit qui transporte l’urine d’un rein à la vessie dans l’anatomie habituelle.",
+      "etymologie": "Terme anatomique ; à distinguer d’urètre.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_043"
+    },
+    {
+      "id": "stoma_uretre",
+      "term": "Urètre",
+      "definition": "Conduit qui permet l’écoulement de l’urine de la vessie vers l’extérieur.",
+      "etymologie": "Terme anatomique ; à distinguer d’uretère.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_043"
+    },
+    {
+      "id": "stoma_nephrostomie",
+      "term": "Néphrostomie",
+      "definition": "Drainage au niveau du rein par un accès créé à travers la peau.",
+      "etymologie": "néphro- : rein ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_044"
+    },
+    {
+      "id": "stoma_cystostomie",
+      "term": "Cystostomie",
+      "definition": "Ouverture de la vessie vers la peau.",
+      "etymologie": "cysto- : vessie dans ce contexte ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_044"
+    },
+    {
+      "id": "stoma_ureterostomie",
+      "term": "Urétérostomie",
+      "definition": "Abouchement d’un uretère vers la peau, direct ou avec dérivation selon le montage.",
+      "etymologie": "urétéro- : uretère ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_044"
+    },
+    {
+      "id": "stoma_gastrostomie",
+      "term": "Gastrostomie",
+      "definition": "Ouverture créée entre l’estomac et la peau.",
+      "etymologie": "gastro- : estomac ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_045"
+    },
+    {
+      "id": "stoma_sophagostomie",
+      "term": "Œsophagostomie",
+      "definition": "Ouverture créée au niveau de l’œsophage.",
+      "etymologie": "œsophago- : œsophage ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_045"
+    },
+    {
+      "id": "stoma_ccostomie",
+      "term": "Cæcostomie",
+      "definition": "Ouverture créée au niveau du cæcum vers la peau.",
+      "etymologie": "cæco- : cæcum ; -stomie : ouverture.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_045"
+    },
+    {
+      "id": "stoma_stenose",
+      "term": "Sténose",
+      "definition": "Réduction du calibre d’un conduit, ici notamment urinaire.",
+      "etymologie": "Terme désignant un rétrécissement.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_046"
+    },
+    {
+      "id": "stoma_anastomose",
+      "term": "Anastomose",
+      "definition": "Connexion chirurgicale entre deux segments ou conduits.",
+      "etymologie": "Terme chirurgical ; pas de morphèmes artificiels.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_046"
+    },
+    {
+      "id": "stoma_miction",
+      "term": "Miction",
+      "definition": "Émission d’urine par les voies urinaires.",
+      "etymologie": "Terme décrivant l’action d’uriner.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_047"
+    },
+    {
+      "id": "stoma_mici",
+      "term": "MICI",
+      "definition": "Maladies inflammatoires chroniques de l’intestin, dont Crohn et rectocolite hémorragique.",
+      "etymologie": "Sigle développé, sans décomposition étymologique.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_047"
+    },
+    {
+      "id": "stoma_appareillage",
+      "term": "Appareillage",
+      "definition": "Matériel adapté à la stomie pour recueillir les effluents.",
+      "etymologie": "Terme matériel : distinct de la stomie.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_048"
+    },
+    {
+      "id": "stoma_support_adhesif",
+      "term": "Support adhésif",
+      "definition": "Partie de l’appareillage fixée à la peau autour de la stomie.",
+      "etymologie": "Expression descriptive : support + adhésif.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_049"
+    },
+    {
+      "id": "stoma_manchon",
+      "term": "Manchon",
+      "definition": "Extrémité ouvrable servant à vidanger une poche digestive vidable.",
+      "etymologie": "Terme matériel, distinct d’un robinet.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_049"
+    },
+    {
+      "id": "stoma_raccord",
+      "term": "Raccord",
+      "definition": "Pièce reliant des éléments compatibles du circuit externe de recueil.",
+      "etymologie": "Expression descriptive.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_049"
+    },
+    {
+      "id": "stoma_tubulure",
+      "term": "Tubulure",
+      "definition": "Tube souple de liaison dans un circuit de recueil.",
+      "etymologie": "tubul- : tube ; terme de matériel.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_048"
+    },
+    {
+      "id": "stoma_bricker",
+      "term": "Bricker",
+      "definition": "Dérivation urinaire indirecte utilisant un segment intestinal isolé abouché à la peau.",
+      "etymologie": "Nom propre du montage ; pas de découpage morphologique.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_050"
+    },
+    {
+      "id": "stoma_prolapsus",
+      "term": "Prolapsus",
+      "definition": "Extériorisation excessive d’un segment au niveau de la stomie.",
+      "etymologie": "Terme descriptif d’une descente ou extériorisation.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_050"
+    },
+    {
+      "id": "stoma_polypose",
+      "term": "Polypose",
+      "definition": "Présence de nombreux polypes, notamment dans la polypose adénomateuse familiale.",
+      "etymologie": "polype + -ose : affection ou état ; ne pas confondre avec poly- seul.",
+      "distinction": "Dans le cours de stomatothérapie ; voir les repères et le montage exact.",
+      "theme": "Stomatothérapie",
+      "courseIds": [
+        "stomatotherapie"
+      ],
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionId": "stoma_p01_050"
     }
   ]
 }

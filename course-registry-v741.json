@@ -1,5 +1,5 @@
 {
-  "version": "8.30.84",
+  "version": "8.30.85",
   "courses": [
     {
       "id": "biomolecules",
@@ -618,6 +618,61 @@
       "officialSupportUrl": "https://drive.google.com/file/d/11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K/view",
       "qcmPdfUrl": "https://drive.google.com/file/d/1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe/view",
       "officialSupportCoverage": "partial"
+    },
+    {
+      "id": "stomatotherapie",
+      "label": "Stomatothérapie",
+      "aliases": [
+        "Stomatothérapie",
+        "Stomathérapie",
+        "Stomatherapie",
+        "Stomatotherapie",
+        "TD3 les stomies"
+      ],
+      "domain": "B",
+      "ue": "B3",
+      "teachingUnit": "B3.3",
+      "semester": "S1",
+      "part": "01",
+      "officialSupportUrl": "https://drive.google.com/file/d/144y_gyrWKuncH-BIShA4lAPvCLUMaTqP/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1srqa2GijBeHCEAO4JerGFs5tWmE31pNu/view",
+      "officialSupportItems": [
+        {
+          "title": "TD3 : les stomies - support officiel",
+          "url": "https://drive.google.com/file/d/144y_gyrWKuncH-BIShA4lAPvCLUMaTqP/view"
+        },
+        {
+          "title": "Complément : appareil digestif",
+          "url": "https://drive.google.com/file/d/17SLnvcDc6EEBJo_miSCNFHYF64S8nGBk/view"
+        }
+      ],
+      "additionalDocuments": [
+        {
+          "label": "Vocabulaire - 29 termes",
+          "url": "https://drive.google.com/file/d/1IKGaeDWh1m8zQF9XAT3QY1hlVBcua9gk/view"
+        },
+        {
+          "label": "Flashcards - 40 cartes de cours et 29 de vocabulaire",
+          "url": "https://drive.google.com/file/d/1LrIyYk_N3h_qoCe6GQIqIDkLm7hxNcyI/view"
+        },
+        {
+          "label": "Planche anatomique digestive",
+          "url": "https://drive.google.com/file/d/1lG-rVWfoUMl9xqP3P2qHCvR-I5fVjjiK/view"
+        },
+        {
+          "label": "Planche anatomique urinaire",
+          "url": "https://drive.google.com/file/d/1Xqb-kXAX0flb7hTZnXeqoajHHFu9ZJBo/view"
+        },
+        {
+          "label": "Pack des 7 infographies",
+          "url": "https://drive.google.com/file/d/1_3A1FA1043GnHgIJopjqGOF6AyPU4mC4/view"
+        },
+        {
+          "label": "Scripts vocaux - 6 textes à convertir en MP3",
+          "url": "https://drive.google.com/file/d/1e9VHaL-64BN-o7VdhGpt77K9m9YROD2v/view"
+        }
+      ],
+      "audioStatus": "awaiting_mp3"
     }
   ],
   "auditBaseline": {

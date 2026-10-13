@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "stoma_p01_001",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Quelle définition décrit une stomie ?",
+    "choices": [
+      "Une poche adhésive de recueil.",
+      "Un examen endoscopique sans ouverture.",
+      "Une maladie inflammatoire en elle-même.",
+      "Une ouverture chirurgicale abouchée à la peau.",
+      "Une suture maintenant toujours le transit naturel."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La stomie est l’ouverture créée par la chirurgie. La poche est l’appareillage ; une stomie n’est ni un examen ni la maladie causale.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’une stomie ?",
+        "answers": [
+          "Une ouverture chirurgicale abouchée à la peau."
+        ],
+        "explanation": "La stomie est l’ouverture créée par la chirurgie. La poche est l’appareillage ; une stomie n’est ni un examen ni la maladie causale.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_002",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Concernant la durée d’une stomie, quelle affirmation est correcte ?",
+    "choices": [
+      "Elle peut être temporaire ou permanente.",
+      "Elle est fixée par le choix une ou deux pièces.",
+      "Elle est toujours temporaire.",
+      "Elle est toujours définitive.",
+      "Elle dépend seulement de la couleur de la poche."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La durée dépend de la raison médicale et de l’intervention, pas de l’appareillage choisi.",
+    "flashcards": [
+      {
+        "front": "De quoi dépend le caractère temporaire ou permanent d’une stomie ?",
+        "answers": [
+          "Elle peut être temporaire ou permanente."
+        ],
+        "explanation": "La durée dépend de la raison médicale et de l’intervention, pas de l’appareillage choisi.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_003",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Quelles caractéristiques décrivent la muqueuse stomiale habituelle dans le TD ?",
+    "choices": [
+      "Elle est rouge ou rosée.",
+      "Elle doit normalement être noire.",
+      "Elle n’est pas douloureuse au toucher.",
+      "Elle peut être frottée fortement parce qu’elle est insensible.",
+      "Elle est une surface cutanée kératinisée."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La muqueuse ressemble à l’intérieur de la joue et n’est pas douloureuse au toucher. Cela n’autorise pas un geste traumatique ; elle est fragile.",
+    "flashcards": [
+      {
+        "front": "Quelles caractéristiques de la muqueuse stomiale imposent un soin doux ?",
+        "answers": [
+          "Elle n’est pas douloureuse au toucher. Elle est rouge ou rosée."
+        ],
+        "explanation": "La muqueuse ressemble à l’intérieur de la joue et n’est pas douloureuse au toucher. Cela n’autorise pas un geste traumatique ; elle est fragile.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_004",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Indications",
+    "difficulty": "medium",
+    "question": "Quelles situations font partie des indications possibles citées dans le TD ?",
+    "choices": [
+      "Toute personne avec un trouble mictionnel doit avoir un Bricker.",
+      "Toute constipation isolée impose une stomie.",
+      "Cancer du rectum.",
+      "Maladie de Crohn.",
+      "Polypose adénomateuse familiale."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Le TD cite ces trois pathologies parmi les indications possibles. Une indication dépend du contexte ; elle ne devient pas une obligation universelle.",
+    "flashcards": [
+      {
+        "front": "Quelles pathologies digestives sont citées parmi les indications possibles de stomie ?",
+        "answers": [
+          "Maladie de Crohn. Cancer du rectum. Polypose adénomateuse familiale."
+        ],
+        "explanation": "Le TD cite ces trois pathologies parmi les indications possibles. Une indication dépend du contexte ; elle ne devient pas une obligation universelle.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_005",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Indications",
+    "difficulty": "medium",
+    "question": "Quelles autres situations sont citées parmi les causes possibles de stomie ?",
+    "choices": [
+      "Toute rougeur cutanée.",
+      "Obstruction de l’uretère.",
+      "Toute demande de poche plus discrète.",
+      "Toute intolérance à un adhésif.",
+      "Plaie pénétrante de l’abdomen."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les traumatismes abdominaux et certaines obstructions urinaires sont cités. Une difficulté d’appareillage ne constitue pas à elle seule une indication chirurgicale.",
+    "flashcards": [
+      {
+        "front": "Quelles situations traumatiques ou urinaires sont citées parmi les indications possibles de stomie ?",
+        "answers": [
+          "Obstruction de l’uretère. Plaie pénétrante de l’abdomen."
+        ],
+        "explanation": "Les traumatismes abdominaux et certaines obstructions urinaires sont cités. Une difficulté d’appareillage ne constitue pas à elle seule une indication chirurgicale.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_006",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie digestive",
+    "difficulty": "easy",
+    "question": "Quel est l’ordre correct des segments du grêle ?",
+    "choices": [
+      "Jéjunum, duodénum, iléon.",
+      "Duodénum, jéjunum, iléon.",
+      "Estomac, côlon, jéjunum.",
+      "Iléon, jéjunum, duodénum.",
+      "Cæcum, transverse, rectum."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le TD p. 5 donne duodénum puis jéjunum puis iléon. La formulation p. 7 faisant du jéjunum la première portion après l’estomac est à corriger.",
+    "flashcards": [
+      {
+        "front": "Dans quel ordre se succèdent les trois segments de l’intestin grêle ?",
+        "answers": [
+          "Duodénum, jéjunum, iléon."
+        ],
+        "explanation": "Le TD p. 5 donne duodénum puis jéjunum puis iléon. La formulation p. 7 faisant du jéjunum la première portion après l’estomac est à corriger.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_007",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie digestive",
+    "difficulty": "easy",
+    "question": "Quelle longueur de l’intestin grêle est donnée dans le TD ?",
+    "choices": [
+      "15 à 20 mètres.",
+      "50 à 70 centimètres.",
+      "5 à 7 mètres.",
+      "5 à 7 centimètres.",
+      "1 à 2 mètres."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le support indique 5 à 7 mètres. L’unité fait partie du repère à retenir.",
+    "flashcards": [
+      {
+        "front": "Quelle longueur de l’intestin grêle est donnée dans le TD sur les stomies ?",
+        "answers": [
+          "5 à 7 mètres."
+        ],
+        "explanation": "Le support indique 5 à 7 mètres. L’unité fait partie du repère à retenir.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_008",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie digestive",
+    "difficulty": "medium",
+    "question": "Quelles fonctions sont attribuées au grêle dans le cours ?",
+    "choices": [
+      "Conduire l’urine depuis les reins.",
+      "Stocker l’urine.",
+      "Achever la digestion des aliments.",
+      "Produire les urines.",
+      "Absorber les nutriments vers la circulation sanguine."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le grêle participe à la fin de la digestion et à l’absorption des nutriments. Les propositions urinaires concernent d’autres organes.",
+    "flashcards": [
+      {
+        "front": "Quelles fonctions digestives sont attribuées à l’intestin grêle ?",
+        "answers": [
+          "Absorber les nutriments vers la circulation sanguine. Achever la digestion des aliments."
+        ],
+        "explanation": "Le grêle participe à la fin de la digestion et à l’absorption des nutriments. Les propositions urinaires concernent d’autres organes.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_009",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie digestive",
+    "difficulty": "medium",
+    "question": "Quelles associations anatomiques sont correctes ?",
+    "choices": [
+      "Rectum : conduit entre rein et vessie.",
+      "Côlon gauche : descendant.",
+      "Côlon transverse : première partie du grêle.",
+      "Iléon : partie terminale du côlon.",
+      "Côlon droit : ascendant."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le côlon droit monte et le côlon gauche descend. L’iléon appartient au grêle ; le rectum est digestif et non urinaire.",
+    "flashcards": [
+      {
+        "front": "À quoi correspondent les côlons droit et gauche ?",
+        "answers": [
+          "Côlon gauche : descendant. Côlon droit : ascendant."
+        ],
+        "explanation": "Le côlon droit monte et le côlon gauche descend. L’iléon appartient au grêle ; le rectum est digestif et non urinaire.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_010",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie digestive",
+    "difficulty": "easy",
+    "question": "Quel rôle du côlon explique l’épaississement des selles ?",
+    "choices": [
+      "Le stockage de l’urine.",
+      "L’absorption de l’eau des selles.",
+      "L’ajout continu d’eau dans les selles comme rôle essentiel.",
+      "La production de l’urine.",
+      "Le passage des aliments à travers le foie."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Les selles arrivent liquides depuis le grêle et s’épaississent au cours de leur progression colique grâce à l’absorption de l’eau.",
+    "flashcards": [
+      {
+        "front": "Pourquoi les selles s’épaississent-elles au cours de la progression dans le côlon ?",
+        "answers": [
+          "L’absorption de l’eau des selles."
+        ],
+        "explanation": "Les selles arrivent liquides depuis le grêle et s’épaississent au cours de leur progression colique grâce à l’absorption de l’eau.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_011",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "medium",
+    "question": "Concernant une colostomie gauche, quelles affirmations sont correctes ?",
+    "choices": [
+      "Les selles sont généralement moulées dans le complément.",
+      "Elle abouche le côlon à la peau.",
+      "Elle abouche le rein à la peau.",
+      "Elle impose un filtre urinaire.",
+      "Les selles sont toujours identiques à celles d’une jéjunostomie."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le complément précise que les selles d’une colostomie gauche sont moulées. Il ne faut pas extrapoler cette consistance à tout siège colique.",
+    "flashcards": [
+      {
+        "front": "Quel segment est abouché dans une colostomie gauche et quelle consistance de selles est décrite ?",
+        "answers": [
+          "Les selles sont généralement moulées dans le complément. Elle abouche le côlon à la peau."
+        ],
+        "explanation": "Le complément précise que les selles d’une colostomie gauche sont moulées. Il ne faut pas extrapoler cette consistance à tout siège colique.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_012",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "hard",
+    "question": "Quelles associations siège-consistance correspondent à la fiche complémentaire ?",
+    "choices": [
+      "Transverse droite : toujours selles moulées.",
+      "Colostomie gauche : urine uniquement.",
+      "Transverse gauche : selles pâteuses.",
+      "Transverse droite : semi-liquides ou pâteuses.",
+      "Iléostomie : selles liquides."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Les trois associations sont celles de la fiche complémentaire. Le siège explique la quantité d’eau encore présente dans les effluents.",
+    "flashcards": [
+      {
+        "front": "Comment la consistance des selles varie-t-elle selon les sièges de stomie du complément ?",
+        "answers": [
+          "Iléostomie : selles liquides. Transverse droite : semi-liquides ou pâteuses. Transverse gauche : selles pâteuses."
+        ],
+        "explanation": "Les trois associations sont celles de la fiche complémentaire. Le siège explique la quantité d’eau encore présente dans les effluents.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_013",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "medium",
+    "question": "Quelles caractéristiques du contenu d’une jéjunostomie sont données dans le TD ?",
+    "choices": [
+      "De volume important.",
+      "Toujours moulé.",
+      "Corrosif.",
+      "Liquide.",
+      "Exclusivement urinaire."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le TD décrit un contenu liquide, corrosif et abondant. La jéjunostomie est digestive ; elle ne recueille pas l’urine.",
+    "flashcards": [
+      {
+        "front": "Quelles caractéristiques des effluents sont décrites pour une jéjunostomie ?",
+        "answers": [
+          "De volume important. Corrosif. Liquide."
+        ],
+        "explanation": "Le TD décrit un contenu liquide, corrosif et abondant. La jéjunostomie est digestive ; elle ne recueille pas l’urine.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_014",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "easy",
+    "question": "Quel segment est abouché dans une iléostomie ?",
+    "choices": [
+      "Le rectum.",
+      "Le rein.",
+      "L’iléon, partie terminale du grêle.",
+      "Le côlon transverse.",
+      "La vessie."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Iléo- renvoie à l’iléon. La dérivation intervient avant la progression dans le côlon.",
+    "flashcards": [
+      {
+        "front": "Quel segment digestif est abouché dans une iléostomie ?",
+        "answers": [
+          "L’iléon, partie terminale du grêle."
+        ],
+        "explanation": "Iléo- renvoie à l’iléon. La dérivation intervient avant la progression dans le côlon.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_015",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "medium",
+    "question": "Quelles conséquences expliquent la nécessité d’une poche digestive de recueil ?",
+    "choices": [
+      "Le patient doit retenir les effluents jusqu’au changement quotidien.",
+      "Les selles sont émises sans contrôle par la stomie.",
+      "La stomie devient un sphincter volontaire.",
+      "La poche absorbe les nutriments.",
+      "Les gaz sont émis sans contrôle par la stomie."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "La personne ne contrôle pas les émissions par la stomie de recueil ; l’appareillage recueille les effluents au fur et à mesure.",
+    "flashcards": [
+      {
+        "front": "Pourquoi une stomie digestive de recueil nécessite-t-elle une poche ?",
+        "answers": [
+          "Les selles sont émises sans contrôle par la stomie. Les gaz sont émis sans contrôle par la stomie."
+        ],
+        "explanation": "La personne ne contrôle pas les émissions par la stomie de recueil ; l’appareillage recueille les effluents au fur et à mesure.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_016",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies digestives",
+    "difficulty": "hard",
+    "question": "Une patiente dit « ma stomie est terminale, donc elle sera forcément définitive ». Quelle réponse est juste ?",
+    "choices": [
+      "Le montage terminal ne suffit pas à conclure à la durée définitive.",
+      "Terminale signifie toujours définitive.",
+      "La taille de la poche détermine la durée.",
+      "Le système deux pièces prouve le caractère définitif.",
+      "Le nom du segment abouché suffit toujours à conclure."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Terminal décrit la construction chirurgicale. Le projet chirurgical et le compte rendu opératoire permettent de connaître le caractère temporaire ou permanent.",
+    "flashcards": [
+      {
+        "front": "Pourquoi « stomie terminale » ne signifie-t-il pas automatiquement « stomie définitive » ?",
+        "answers": [
+          "Le montage terminal ne suffit pas à conclure à la durée définitive."
+        ],
+        "explanation": "Terminal décrit la construction chirurgicale. Le projet chirurgical et le compte rendu opératoire permettent de connaître le caractère temporaire ou permanent.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_017",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie urinaire",
+    "difficulty": "easy",
+    "question": "Quels conduits relient les reins à la vessie ?",
+    "choices": [
+      "Le jéjunum.",
+      "L’urètre.",
+      "Le côlon.",
+      "Les voies biliaires.",
+      "Les uretères."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Les deux uretères conduisent l’urine des reins vers la vessie ; l’urètre conduit l’urine de la vessie vers l’extérieur.",
+    "flashcards": [
+      {
+        "front": "Quels conduits urinaires transportent l’urine des reins vers la vessie ?",
+        "answers": [
+          "Les uretères."
+        ],
+        "explanation": "Les deux uretères conduisent l’urine des reins vers la vessie ; l’urètre conduit l’urine de la vessie vers l’extérieur.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_018",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Anatomie urinaire",
+    "difficulty": "medium",
+    "question": "Quelles associations organe-fonction sont correctes ?",
+    "choices": [
+      "Urètre : transport de chaque rein vers la vessie.",
+      "Côlon : production de l’urine.",
+      "Uretère : sortie unique de la vessie.",
+      "Vessie : stockage de l’urine.",
+      "Reins : production continue de l’urine."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Les reins produisent et la vessie stocke. Les rôles des uretères et de l’urètre ne doivent pas être inversés.",
+    "flashcards": [
+      {
+        "front": "Quels sont les rôles respectifs des reins et de la vessie ?",
+        "answers": [
+          "Reins : production continue de l’urine. Vessie : stockage de l’urine."
+        ],
+        "explanation": "Les reins produisent et la vessie stocke. Les rôles des uretères et de l’urètre ne doivent pas être inversés.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_019",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies urinaires",
+    "difficulty": "medium",
+    "question": "Pour les urostomies non continentes décrites dans le TD, quelles affirmations sont correctes ?",
+    "choices": [
+      "L’urine s’écoule en permanence.",
+      "Une poche digestive fermée est toujours adaptée.",
+      "Toutes les techniques continentes citées ont exactement le même fonctionnement.",
+      "Un recueil externe est nécessaire.",
+      "Le patient commande volontairement chaque émission."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le recueil continu décrit les urostomies non continentes abordées. Il ne faut pas généraliser leur fonctionnement à une poche continente.",
+    "flashcards": [
+      {
+        "front": "Pourquoi les urostomies non continentes décrites nécessitent-elles un recueil externe ?",
+        "answers": [
+          "Un recueil externe est nécessaire. L’urine s’écoule en permanence."
+        ],
+        "explanation": "Le recueil continu décrit les urostomies non continentes abordées. Il ne faut pas généraliser leur fonctionnement à une poche continente.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_020",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies urinaires",
+    "difficulty": "easy",
+    "question": "Dans un Bricker décrit par le TD, quel élément reçoit les deux uretères avant l’abouchement cutané ?",
+    "choices": [
+      "Un petit segment intestinal isolé.",
+      "L’urètre sans dérivation.",
+      "La poche de jambe directement.",
+      "Le rectum en continuité digestive.",
+      "Le foie."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le Bricker utilise un petit segment intestinal amené à la peau. Il est isolé du trajet digestif et sert au passage de l’urine.",
+    "flashcards": [
+      {
+        "front": "Quel élément est interposé entre les uretères et la peau dans un Bricker ?",
+        "answers": [
+          "Un petit segment intestinal isolé."
+        ],
+        "explanation": "Le Bricker utilise un petit segment intestinal amené à la peau. Il est isolé du trajet digestif et sert au passage de l’urine.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_021",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies urinaires",
+    "difficulty": "medium",
+    "question": "Quelles caractéristiques du Bricker sont données dans le TD ?",
+    "choices": [
+      "Une seule stomie cutanée.",
+      "Une seule poche de recueil.",
+      "Le segment de recueil reste traversé par les aliments.",
+      "Deux stomies sont toujours nécessaires.",
+      "Dérivation définitive."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Deux uretères rejoignent un conduit intestinal isolé aboutissant à une stomie, avec une poche ; le TD présente ce montage comme définitif.",
+    "flashcards": [
+      {
+        "front": "Combien de stomies et de poches le TD décrit-il pour une dérivation de Bricker ?",
+        "answers": [
+          "Une seule poche de recueil. Dérivation définitive. Une seule stomie cutanée."
+        ],
+        "explanation": "Deux uretères rejoignent un conduit intestinal isolé aboutissant à une stomie, avec une poche ; le TD présente ce montage comme définitif.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_022",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies urinaires",
+    "difficulty": "hard",
+    "question": "Quel trajet correspond exactement à la dérivation de Bricker ?",
+    "choices": [
+      "Reins, côlon en continuité digestive, rectum, poche.",
+      "Stomie, vessie, reins, poche de nuit.",
+      "Reins, vessie, urètre, poche digestive fermée.",
+      "Reins, uretères, conduit intestinal isolé, stomie, poche.",
+      "Reins, estomac, jéjunum digestif, anus."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le flux urinaire traverse le conduit intestinal isolé et rejoint l’extérieur par la stomie. Il ne passe ni dans le trajet digestif continu ni obligatoirement dans la vessie.",
+    "flashcards": [
+      {
+        "front": "Quel trajet suit l’urine dans une dérivation de Bricker ?",
+        "answers": [
+          "Reins, uretères, conduit intestinal isolé, stomie, poche."
+        ],
+        "explanation": "Le flux urinaire traverse le conduit intestinal isolé et rejoint l’extérieur par la stomie. Il ne passe ni dans le trajet digestif continu ni obligatoirement dans la vessie.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_023",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Stomies urinaires",
+    "difficulty": "hard",
+    "question": "Quel énoncé distingue correctement une dérivation urétérale cutanée directe d’un Bricker ?",
+    "choices": [
+      "Le nombre de pièces de la poche définit le montage chirurgical.",
+      "Le Bricker n’est pas une dérivation urinaire.",
+      "La dérivation directe fait obligatoirement passer l’urine dans le rectum.",
+      "La dérivation directe est toujours une gastrostomie.",
+      "La dérivation directe n’utilise pas le conduit intestinal intermédiaire du Bricker."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Directe décrit l’abouchement des uretères à la peau. Dans le Bricker, un segment intestinal isolé est interposé ; une ou deux pièces décrit seulement l’appareillage.",
+    "flashcards": [
+      {
+        "front": "Quelle différence de montage sépare la dérivation urétérale directe du Bricker ?",
+        "answers": [
+          "La dérivation directe n’utilise pas le conduit intestinal intermédiaire du Bricker."
+        ],
+        "explanation": "Directe décrit l’abouchement des uretères à la peau. Dans le Bricker, un segment intestinal isolé est interposé ; une ou deux pièces décrit seulement l’appareillage.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_024",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Soin de stomie",
+    "difficulty": "easy",
+    "question": "Quel produit le TD recommande-t-il pour nettoyer la stomie ?",
+    "choices": [
+      "Un détergent abrasif.",
+      "Une solution alcoolisée systématique.",
+      "L’eau.",
+      "Un antiseptique systématique.",
+      "Une crème parfumée."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La page 12 porte la mention « Important » : ne pas utiliser d’autre produit que l’eau pour ce nettoyage.",
+    "flashcards": [
+      {
+        "front": "Avec quel produit nettoie-t-on la stomie selon le TD ?",
+        "answers": [
+          "L’eau."
+        ],
+        "explanation": "La page 12 porte la mention « Important » : ne pas utiliser d’autre produit que l’eau pour ce nettoyage.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_025",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Soin de stomie",
+    "difficulty": "medium",
+    "question": "Quels gestes protègent la peau au retrait et au séchage ?",
+    "choices": [
+      "Arracher rapidement le support sans soutenir la peau.",
+      "Sécher par tamponnement.",
+      "Maintenir la peau lors du retrait doux.",
+      "Utiliser systématiquement un matériau rêche.",
+      "Frotter vigoureusement la muqueuse."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le TD recommande le retrait doux avec soutien cutané, puis le tamponnement sans frottement et sans produit rêche.",
+    "flashcards": [
+      {
+        "front": "Quels gestes protègent la peau au retrait du support et au séchage ?",
+        "answers": [
+          "Maintenir la peau lors du retrait doux. Sécher par tamponnement."
+        ],
+        "explanation": "Le TD recommande le retrait doux avec soutien cutané, puis le tamponnement sans frottement et sans produit rêche.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_026",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Soin de stomie",
+    "difficulty": "medium",
+    "question": "Quelles consignes de pose correspondent au TD ?",
+    "choices": [
+      "Poser le support sans l’étirer.",
+      "Lisser seulement une seconde puis tirer la poche.",
+      "Lisser de l’intérieur vers l’extérieur quelques minutes.",
+      "Étirer fortement le support pour l’ajuster.",
+      "Laisser les bords volontairement décollés."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le support doit être appliqué sans tension ; le lissage progressif améliore l’adhérence.",
+    "flashcards": [
+      {
+        "front": "Comment applique-t-on et lisse-t-on le support adhésif de stomie ?",
+        "answers": [
+          "Lisser de l’intérieur vers l’extérieur quelques minutes. Poser le support sans l’étirer."
+        ],
+        "explanation": "Le support doit être appliqué sans tension ; le lissage progressif améliore l’adhérence.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_027",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Soin de stomie",
+    "difficulty": "hard",
+    "question": "Quelles fréquences figurent explicitement sur la page 12 du TD, à adapter aux besoins ?",
+    "choices": [
+      "Support deux pièces : trois fois par jour.",
+      "Support deux pièces : trois fois par semaine.",
+      "Poche : tous les jours.",
+      "Poche : seulement en cas de fuite.",
+      "Support deux pièces : une fois par mois."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le TD indique un changement quotidien de poche et trois changements hebdomadaires du support. Le repère oral « tous les trois jours » est distinct et ne remplace pas le TD.",
+    "flashcards": [
+      {
+        "front": "Quelles fréquences de changement de poche et de support deux pièces sont données dans le TD ?",
+        "answers": [
+          "Support deux pièces : trois fois par semaine. Poche : tous les jours."
+        ],
+        "explanation": "Le TD indique un changement quotidien de poche et trois changements hebdomadaires du support. Le repère oral « tous les trois jours » est distinct et ne remplace pas le TD.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_028",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Soin de stomie",
+    "difficulty": "easy",
+    "question": "Une fuite apparaît sous le support. Quelle conduite figure dans le TD ?",
+    "choices": [
+      "Attendre systématiquement le prochain jour prévu.",
+      "Ignorer la fuite si elle est masquée.",
+      "Changer sans attendre et ne pas colmater la fuite.",
+      "Ajouter des renforts sans retrait du dispositif.",
+      "Frotter la muqueuse pour arrêter les effluents."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La fuite expose la peau aux effluents. Le TD exige un changement sans attendre ; colmater maintient l’exposition sous le support.",
+    "flashcards": [
+      {
+        "front": "Que faire lorsqu’une fuite apparaît sous le support de stomie ?",
+        "answers": [
+          "Changer sans attendre et ne pas colmater la fuite."
+        ],
+        "explanation": "La fuite expose la peau aux effluents. Le TD exige un changement sans attendre ; colmater maintient l’exposition sous le support.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_029",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage digestif",
+    "difficulty": "medium",
+    "question": "Quelles associations selles-poche correspondent à la page 14 du TD ?",
+    "choices": [
+      "Selles moulées : sonde urétérale.",
+      "Selles pâteuses à liquides, débit normal : poche vidable à manchon.",
+      "Haut débit : poche fermée sans vidange.",
+      "Selles moulées : poche fermée.",
+      "Débit normal : poche de nuit urinaire seule sur l’urètre."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le TD associe la poche fermée aux selles moulées et la poche à manchon au débit normal de selles pâteuses à liquides.",
+    "flashcards": [
+      {
+        "front": "Quelles poches le TD associe-t-il aux selles moulées et aux selles pâteuses à liquides à débit normal ?",
+        "answers": [
+          "Selles pâteuses à liquides, débit normal : poche vidable à manchon. Selles moulées : poche fermée."
+        ],
+        "explanation": "Le TD associe la poche fermée aux selles moulées et la poche à manchon au débit normal de selles pâteuses à liquides.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_030",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage digestif",
+    "difficulty": "medium",
+    "question": "Quel dispositif est montré pour des selles pâteuses à liquides à haut débit ?",
+    "choices": [
+      "Une poche fermée sans vidange.",
+      "Une poche vidangeable à robinet.",
+      "Une compresse recouvrant la stomie.",
+      "Un support seul sans poche.",
+      "Un collecteur branché sur l’urètre."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le robinet permet la vidange d’une poche adaptée au haut débit. Aucun seuil numérique n’est donné par cette illustration du TD.",
+    "flashcards": [
+      {
+        "front": "Quel type de poche digestive le TD montre-t-il pour un haut débit ?",
+        "answers": [
+          "Une poche vidangeable à robinet."
+        ],
+        "explanation": "Le robinet permet la vidange d’une poche adaptée au haut débit. Aucun seuil numérique n’est donné par cette illustration du TD.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_031",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage digestif",
+    "difficulty": "medium",
+    "question": "Quelles descriptions des systèmes sont exactes ?",
+    "choices": [
+      "Deux pièces : support et poche séparés.",
+      "Deux pièces : absence de couplage entre support et poche.",
+      "Une pièce : support intégré à la poche.",
+      "Une pièce : absence de support cutané.",
+      "Deux pièces : deux stomies chirurgicales."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le nombre de pièces décrit l’appareillage, pas le nombre de stomies. Les systèmes deux pièces nécessitent un couplage adapté.",
+    "flashcards": [
+      {
+        "front": "Quelle différence existe entre appareillage de stomie une pièce et deux pièces ?",
+        "answers": [
+          "Une pièce : support intégré à la poche. Deux pièces : support et poche séparés."
+        ],
+        "explanation": "Le nombre de pièces décrit l’appareillage, pas le nombre de stomies. Les systèmes deux pièces nécessitent un couplage adapté.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Qu’est-ce qu’un couplage dans un appareillage de stomie deux pièces ?",
+        "answers": [
+          "La liaison adaptée entre le support adhésif séparé et la poche détachable."
+        ],
+        "explanation": "Le nombre de pièces décrit l’appareillage, pas le nombre de stomies. Les systèmes deux pièces nécessitent un couplage adapté.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_032",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage urinaire",
+    "difficulty": "easy",
+    "question": "Quelle caractéristique des poches urinaires est indiquée dans le TD ?",
+    "choices": [
+      "Toutes fermées sans robinet.",
+      "Toutes munies du filtre digestif.",
+      "Destinées aux selles moulées exclusivement.",
+      "Vidangeables et sans filtre à gaz.",
+      "Sans connexion possible à un recueil supplémentaire."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La page 17 présente des systèmes une ou deux pièces vidangeables, sans filtre à gaz, et des collecteurs complémentaires.",
+    "flashcards": [
+      {
+        "front": "Quelles caractéristiques des poches urinaires sont indiquées dans le TD ?",
+        "answers": [
+          "Vidangeables et sans filtre à gaz."
+        ],
+        "explanation": "La page 17 présente des systèmes une ou deux pièces vidangeables, sans filtre à gaz, et des collecteurs complémentaires.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_033",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage urinaire",
+    "difficulty": "hard",
+    "question": "Pour raccorder une poche d’urostomie à un collecteur nocturne, quels éléments sont nécessaires ?",
+    "choices": [
+      "Une sonde urétrale introduite pour remplacer la poche.",
+      "Un collecteur placé au-dessus de la stomie comme règle de drainage.",
+      "Une tubulure continue vers le collecteur.",
+      "Un robinet ouvert permettant le drainage.",
+      "Un raccord compatible au robinet de la poche d’urostomie."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Le circuit part de la poche d’urostomie et rejoint le collecteur par son robinet et le raccord. Le schéma ne représente pas un sondage urétral ; le collecteur est placé plus bas.",
+    "flashcards": [
+      {
+        "front": "Quels éléments relient une poche d’urostomie à un collecteur nocturne ?",
+        "answers": [
+          "Un robinet ouvert permettant le drainage. Une tubulure continue vers le collecteur. Un raccord compatible au robinet de la poche d’urostomie."
+        ],
+        "explanation": "Le circuit part de la poche d’urostomie et rejoint le collecteur par son robinet et le raccord. Le schéma ne représente pas un sondage urétral ; le collecteur est placé plus bas.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_034",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Appareillage urinaire",
+    "difficulty": "medium",
+    "question": "Quels accessoires de recueil figurent sur la page 17 du TD ?",
+    "choices": [
+      "Une poche de jambe.",
+      "Une poche de nuit et son support.",
+      "Une pompe d’alimentation gastrique.",
+      "Une poche digestive fermée comme unique recueil urinaire.",
+      "Un circuit de dialyse."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le TD montre les deux collecteurs complémentaires et une ceinture de maintien, distincte du circuit de drainage.",
+    "flashcards": [
+      {
+        "front": "Quels collecteurs supplémentaires urinaires sont montrés dans le TD ?",
+        "answers": [
+          "Une poche de jambe. Une poche de nuit et son support."
+        ],
+        "explanation": "Le TD montre les deux collecteurs complémentaires et une ceinture de maintien, distincte du circuit de drainage.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quel rôle joue une ceinture de maintien de stomie ?",
+        "answers": [
+          "Elle participe au maintien de l’appareillage ; elle est distincte de la tubulure de drainage urinaire."
+        ],
+        "explanation": "Le TD montre les deux collecteurs complémentaires et une ceinture de maintien, distincte du circuit de drainage.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_035",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Accompagnement",
+    "difficulty": "medium",
+    "question": "Quels retentissements sont explicitement cités dans le TD ?",
+    "choices": [
+      "Absence de besoin éducatif.",
+      "Image corporelle et estime de soi.",
+      "Amélioration automatique et identique de l’estime de soi.",
+      "Habitudes quotidiennes et alimentation.",
+      "Suppression définitive de toute autonomie."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le retentissement est individuel. L’apprentissage du soin et du recueil, avec les ressources professionnelles et associatives, aide l’adaptation.",
+    "flashcards": [
+      {
+        "front": "Quels retentissements d’une stomie sont décrits sur la vie quotidienne et l’image de soi ?",
+        "answers": [
+          "Habitudes quotidiennes et alimentation. Image corporelle et estime de soi."
+        ],
+        "explanation": "Le retentissement est individuel. L’apprentissage du soin et du recueil, avec les ressources professionnelles et associatives, aide l’adaptation.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_036",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Accompagnement",
+    "difficulty": "medium",
+    "question": "Quelles actions participent à l’autonomie d’une personne stomisée ?",
+    "choices": [
+      "S’appuyer sur les professionnels spécialisés et les associations.",
+      "Imposer la même routine à tous les patients.",
+      "Confondre la stomie et la poche pour simplifier.",
+      "Apprendre la gestion du sac collecteur.",
+      "Éviter toute explication du soin."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le TD souligne l’apprentissage et les ressources d’accompagnement ; la prise en charge doit être adaptée au patient.",
+    "flashcards": [
+      {
+        "front": "Quels apprentissages et ressources accompagnent l’autonomie de la personne stomisée ?",
+        "answers": [
+          "S’appuyer sur les professionnels spécialisés et les associations. Apprendre la gestion du sac collecteur."
+        ],
+        "explanation": "Le TD souligne l’apprentissage et les ressources d’accompagnement ; la prise en charge doit être adaptée au patient.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_037",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Surveillance",
+    "difficulty": "hard",
+    "question": "Une personne présente des fuites répétées malgré des renforts adhésifs. Quelles démarches sont cohérentes avec la protection cutanée ?",
+    "choices": [
+      "Retirer le dispositif fuyant et observer la peau.",
+      "Réévaluer la découpe et l’adaptation à la morphologie.",
+      "Maintenir le dispositif tant que la fuite reste cachée.",
+      "Déduire que la couleur rouge de la muqueuse prouve une irritation cutanée.",
+      "Remplacer le nettoyage à l’eau par un frottement abrasif."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La règle de non-colmatage impose de traiter la cause et de protéger la peau. La rougeur normale de la muqueuse ne décrit pas l’état de la peau péristomiale.",
+    "flashcards": [
+      {
+        "front": "Que réévaluer lorsqu’une personne stomisée présente des fuites répétées ?",
+        "answers": [
+          "Réévaluer la découpe et l’adaptation à la morphologie. Retirer le dispositif fuyant et observer la peau."
+        ],
+        "explanation": "La règle de non-colmatage impose de traiter la cause et de protéger la peau. La rougeur normale de la muqueuse ne décrit pas l’état de la peau péristomiale.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_038",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Surveillance",
+    "difficulty": "hard",
+    "question": "Quelles précautions respectent les limites des gestes sur une stomie chirurgicale ?",
+    "choices": [
+      "Ne pas retirer les fils sans décision adaptée.",
+      "Choisir un geste uniquement selon le nombre de pièces de la poche.",
+      "Irriguer n’importe quel orifice d’une stomie à deux ouvertures.",
+      "Ne pas introduire une sonde sans connaître le montage et le plan de soins.",
+      "Retirer les fils pour rendre tout soin plus simple."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le montage et la prescription guident les gestes. La construction chirurgicale n’est pas déduite de l’appareillage ; un geste invasif ne s’improvise pas.",
+    "flashcards": [
+      {
+        "front": "Quelles précautions prendre avant un geste sur des fils ou sondes d’une stomie ?",
+        "answers": [
+          "Ne pas introduire une sonde sans connaître le montage et le plan de soins. Ne pas retirer les fils sans décision adaptée."
+        ],
+        "explanation": "Le montage et la prescription guident les gestes. La construction chirurgicale n’est pas déduite de l’appareillage ; un geste invasif ne s’improvise pas.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "stoma_p01_039",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "easy",
+    "question": "Quelles définitions sont correctes ?",
+    "choices": [
+      "Abouchement : mise en communication d’un organe avec une ouverture cutanée.",
+      "Muqueuse : adhésif du support.",
+      "Péristomial : à l’intérieur du rein.",
+      "Stomie : ouverture créée par abouchement chirurgical.",
+      "Effluents : contenus sortant par la stomie."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Stomie et abouchement décrivent l’ouverture créée ; les effluents sont ce qu’elle évacue. La muqueuse est un tissu ; péristomial signifie autour de la stomie.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_stomie",
+      "stoma_abouchement",
+      "stoma_effluents"
+    ]
+  },
+  {
+    "id": "stoma_p01_040",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles associations terme-définition sont exactes ?",
+    "choices": [
+      "Stomie : nom d’une marque de poche.",
+      "Péristomial : situé autour de la stomie.",
+      "Muqueuse : tissu recouvrant ici le segment abouché.",
+      "Abouchement : absorption des nutriments.",
+      "Effluent : ceinture de maintien."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "La muqueuse abouchée est rouge ou rosée ; la peau péristomiale est la peau autour de la stomie. Le matériel est distinct des tissus.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_muqueuse",
+      "stoma_peristomial"
+    ]
+  },
+  {
+    "id": "stoma_p01_041",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "easy",
+    "question": "Quelles décompositions désignent correctement le segment concerné ?",
+    "choices": [
+      "Colostomie : colo- pour vessie.",
+      "Urostomie : uro- pour selles.",
+      "Jéjunostomie : jéjuno- pour rein.",
+      "Iléostomie : iléo- pour iléon, -stomie pour ouverture.",
+      "Colostomie : colo- pour côlon, -stomie pour ouverture."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Les racines colo- et iléo- désignent le côlon et l’iléon. Jéjuno- renvoie au jéjunum et uro- à l’appareil urinaire.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_colostomie",
+      "stoma_ileostomie"
+    ]
+  },
+  {
+    "id": "stoma_p01_042",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles définitions distinguent correctement jéjunostomie et urostomie ?",
+    "choices": [
+      "Jéjunostomie : abouchement du jéjunum.",
+      "Urostomie : dérivation urinaire vers un abouchement cutané.",
+      "Jéjunum : dernière partie du côlon.",
+      "Jéjunostomie : abouchement de l’urètre.",
+      "Urostomie : stomie de recueil des selles."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Jéjunum et appareil urinaire sont des objets différents. Le terme -stomie désigne l’ouverture créée, pas la poche.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_jejunostomie",
+      "stoma_urostomie"
+    ]
+  },
+  {
+    "id": "stoma_p01_043",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles définitions permettent de distinguer uretère et urètre ?",
+    "choices": [
+      "Ces deux termes sont synonymes.",
+      "Uretère : segment du côlon.",
+      "Urètre : conduit de la vessie vers l’extérieur.",
+      "Uretère : conduit du rein à la vessie.",
+      "Urètre : organe producteur d’urine."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La différence d’une lettre correspond à une différence anatomique essentielle : transport depuis le rein versus sortie vésicale.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_uretere",
+      "stoma_uretre"
+    ]
+  },
+  {
+    "id": "stoma_p01_044",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles définitions des niveaux de dérivation urinaire sont correctes ?",
+    "choices": [
+      "Urétérostomie : abouchement au niveau d’un uretère.",
+      "Néphrostomie : drainage par un accès au niveau rénal.",
+      "Néphrostomie : ouverture de l’estomac.",
+      "Cystostomie : abouchement du jéjunum.",
+      "Cystostomie : ouverture au niveau vésical."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Néphro- renvoie au rein ; cysto- à la vessie dans ce contexte. Urétéro- renvoie à l’uretère. Ces termes ne désignent pas les segments digestifs.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_nephrostomie",
+      "stoma_cystostomie",
+      "stoma_ureterostomie"
+    ]
+  },
+  {
+    "id": "stoma_p01_045",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles associations nom-organe sont exactes pour les repères digestifs du TD ?",
+    "choices": [
+      "Gastrostomie : estomac.",
+      "Œsophagostomie : œsophage.",
+      "Œsophagostomie : rectum.",
+      "Gastrostomie : uretère.",
+      "Cæcostomie : cæcum."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Gastro-, œsophago- et cæco- indiquent respectivement estomac, œsophage et cæcum. Aucun ne désigne une dérivation urinaire.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_gastrostomie",
+      "stoma_sophagostomie",
+      "stoma_ccostomie"
+    ]
+  },
+  {
+    "id": "stoma_p01_046",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "hard",
+    "question": "Quelles associations décrivent correctement des mots du cours ?",
+    "choices": [
+      "Polypose : filtre d’une poche.",
+      "Miction : émission des selles.",
+      "Sténose : rétrécissement d’un conduit.",
+      "Prolapsus : système deux pièces.",
+      "Anastomose : connexion chirurgicale entre segments."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Sténose et anastomose décrivent respectivement un rétrécissement et une connexion. Miction concerne l’urine ; polypose et prolapsus ne sont pas des accessoires.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_stenose",
+      "stoma_anastomose"
+    ]
+  },
+  {
+    "id": "stoma_p01_047",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles définitions sont correctes ?",
+    "choices": [
+      "Bricker : nom du robinet de toute poche.",
+      "MICI : ensemble des dérivations urinaires.",
+      "Polypose : absence de tout polype.",
+      "MICI : maladies inflammatoires chroniques de l’intestin.",
+      "Miction : émission d’urine."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Miction désigne l’émission d’urine ; le sigle MICI doit être développé. Bricker désigne un montage chirurgical indirect.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_miction",
+      "stoma_mici"
+    ]
+  },
+  {
+    "id": "stoma_p01_048",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "easy",
+    "question": "Quelles définitions décrivent le matériel de recueil d’une stomie ?",
+    "choices": [
+      "Appareillage : muqueuse de l’intestin uniquement.",
+      "Tubulure : segment du côlon.",
+      "Tubulure : tube souple de liaison du circuit de recueil.",
+      "Appareillage : matériel adapté à la stomie pour recueillir les effluents.",
+      "Appareillage : synonyme du compte rendu opératoire."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "L’appareillage est le matériel et la tubulure un tube du circuit externe. Les dispositifs sont distincts des organes et du compte rendu opératoire.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_appareillage",
+      "stoma_tubulure"
+    ]
+  },
+  {
+    "id": "stoma_p01_049",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles définitions décrivent des composants de l’appareillage ?",
+    "choices": [
+      "Support : fils chirurgicaux de la stomie.",
+      "Manchon : extrémité ouvrable de vidange d’une poche digestive.",
+      "Support adhésif : partie fixée à la peau autour de la stomie.",
+      "Tubulure : segment du côlon.",
+      "Raccord : pièce reliant des éléments compatibles du circuit."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Support, manchon et raccord sont des composants matériels. La tubulure est un tube du circuit externe, pas un organe ; le support n’est pas une suture chirurgicale.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_support_adhesif",
+      "stoma_manchon",
+      "stoma_raccord"
+    ]
+  },
+  {
+    "id": "stoma_p01_050",
+    "courseId": "stomatotherapie",
+    "course": "Stomatothérapie",
+    "ue": "S1 B3.3",
+    "theme": "Vocabulaire",
+    "difficulty": "medium",
+    "question": "Quelles associations terme-définition sont correctes ?",
+    "choices": [
+      "Tubulure : muqueuse digestive.",
+      "Raccord : rétrécissement urétéral.",
+      "Prolapsus : extériorisation excessive d’un segment au niveau de la stomie.",
+      "Polypose : présence de nombreux polypes.",
+      "Bricker : dérivation urinaire indirecte par segment intestinal isolé."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Bricker est un montage chirurgical ; le prolapsus est une modification de l’extériorisation ; la polypose désigne de nombreux polypes. La tubulure et le raccord sont des composants matériels.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "stoma_bricker",
+      "stoma_prolapsus",
+      "stoma_polypose"
+    ]
+  }
+]

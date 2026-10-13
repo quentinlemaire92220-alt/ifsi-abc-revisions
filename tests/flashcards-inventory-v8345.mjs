@@ -63,7 +63,9 @@ const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
   const answers=(c.answers||[]).filter(Boolean);
-  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(front+' '+explanation),contextDep=reContext.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
+  const authored=c.authored===true;
+  const auditText=text=>{let t=text.replace(/\bau cours de\b/gi,'pendant');if(authored)t=t.replace(/\bsupport(?!\s+(?:de cours|officiel|pédagogique)\b)/gi,'dispositif').replace(/\b(?:cité(?:e|es|s)?|indiqué(?:e|es|s)?)\b/gi,'');return t};
+  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=reContext.test(auditText(front)),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   const n=expected(front),countMismatch=!!n&&answers.length!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
   const finite=/\b(?:est|sont|peut|peuvent|participe|participent|assure|assurent|contient|contiennent|favorise|favorisent|relève|correspond|correspondent|représente|représentent|sécrète|sécrètent|doit|doivent|permet|permettent|agit|agissent|influence|influencent|décrit|décrivent)\b/i;
