@@ -1,6 +1,7 @@
 {
   "version": 1,
   "folderNames": {
+    "99": "99 - Archives",
     "01": "01 - Cours",
     "02": "02 - Fiches de révision",
     "03": "03 - QCM",
@@ -8,7 +9,6 @@
     "05": "05 - Vocaux",
     "06": "06 - Planches anatomiques",
     "07": "07 - Flashcards",
-    "99": "99 - Archives",
     "08": "08 - Scripts vocaux"
   },
   "courses": [
@@ -83,6 +83,136 @@
           "url": "https://drive.google.com/file/d/18jwL1RsTGycxzdiJJNBtJhL0VAlSMBpE/view?usp=drivesdk"
         }
       ]
+    },
+    {
+      "courseId": "stomatotherapie",
+      "part": "01",
+      "validated": true,
+      "status": "awaiting_mp3",
+      "publicationStatus": "authorized",
+      "driveFolderId": "1Y-vgNKEdVm7ORW5K-orHHa7hgXes_DNe",
+      "folders": {
+        "99": "1XAWVDNEo4bM4szcTsZDp8_i7EFu0qjtS",
+        "01": "1UKPAuDV6rc34msAPYocS8BsuieZq_xq6",
+        "02": "1Rsr8y396_LyuEFzXKMaFu0CN1Jxzg-O-",
+        "03": "1pS9MAuZYiqBWchKFGu24rr2XeG8sJdtj",
+        "04": "1h6_KyyCXmEAZ6dSPXTT6blF0TYHcunby",
+        "05": "1RvwOeGIYkK6OThxKAvpcHcfczcUAUDVw",
+        "06": "1PiKXul2jp42xJVgAoAmSJ2L9HtkjzltK",
+        "07": "1SrwD8mO3rx6LIwoL5_9BKhlY8Uqcm7S1",
+        "08": "1lJoW0TrUpnNlTHQEwW535sXVlsjxQXzz"
+      },
+      "supportDriveId": "144y_gyrWKuncH-BIShA4lAPvCLUMaTqP",
+      "sheetResourceId": "stomatotherapie_fiche_p01",
+      "qcmDriveId": "1srqa2GijBeHCEAO4JerGFs5tWmE31pNu",
+      "qcmBank": "qextra-53.txt",
+      "qcmCount": 50,
+      "flashcardCount": 40,
+      "flashcardDriveId": "1qVJhMiiM7yv8drcwnbnsmY9qtBGa57Vu",
+      "vocabularyDriveId": "1IKGaeDWh1m8zQF9XAT3QY1hlVBcua9gk",
+      "infographicPackDriveId": "1_3A1FA1043GnHgIJopjqGOF6AyPU4mC4",
+      "vocabularyCount": 29,
+      "infographicResourceIds": [
+        "stomatotherapie_info_p01_01",
+        "stomatotherapie_info_p01_02",
+        "stomatotherapie_info_p01_03",
+        "stomatotherapie_info_p01_04",
+        "stomatotherapie_info_p01_05",
+        "stomatotherapie_info_p01_06",
+        "stomatotherapie_info_p01_07"
+      ],
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "675905c3337848cd6ec2f4de5f79953233c9c90d5d6cde9d43d833264b29da34",
+        "expectedCount": 7,
+        "checkedCount": 7
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "675905c3337848cd6ec2f4de5f79953233c9c90d5d6cde9d43d833264b29da34",
+        "expectedCount": 7,
+        "checkedCount": 7
+      },
+      "artifactSha256s": {
+        "1lQen8sA0Yk6HxXQyitgDlBDKUV4IQzq-": "675905c3337848cd6ec2f4de5f79953233c9c90d5d6cde9d43d833264b29da34",
+        "1srqa2GijBeHCEAO4JerGFs5tWmE31pNu": "ee7397c2741a89fa44589f0b369596a38eaa49cb5157b088cc4d49b3db64feb0",
+        "1IKGaeDWh1m8zQF9XAT3QY1hlVBcua9gk": "7a132f27085ed7056525036f6ad8680fdfb901b2278bdb4530884774f609275d",
+        "1LrIyYk_N3h_qoCe6GQIqIDkLm7hxNcyI": "6025343860b182ecf0792b11363e489592298b3bc5d615a51efb917dc7ca4627",
+        "1qVJhMiiM7yv8drcwnbnsmY9qtBGa57Vu": "30f0048f8ad2bc51aa4868e89d89701321c1eef42252e0de70dcc09d0196d69a",
+        "1rtz0sIIsBsnOORpxv4wGy1KNeBkSt7TE": "54f9cb4a9b314271b120e0c05992d108936376aa71a54c992de89a81ddeb24f9",
+        "1_3A1FA1043GnHgIJopjqGOF6AyPU4mC4": "bfe6a0189270a434fda00fd142d1ae2710f68826629319564ab4d9a99e717ae9",
+        "1e9VHaL-64BN-o7VdhGpt77K9m9YROD2v": "2f2f110e62203f7ff10503d183e12412192368d2ad20ad450b84ceb8012ec037",
+        "144y_gyrWKuncH-BIShA4lAPvCLUMaTqP": "9b17e120b9ebfeb1a02eff4bd680ae9d712d495b0e3db71cb057d7e0be9e9a66",
+        "17SLnvcDc6EEBJo_miSCNFHYF64S8nGBk": "54e1f85b5e2e8f6a4c871a950a481c99d47639ea9e6786bee283c95921b2c02f",
+        "1D0PDxEp6eH2SHrDhCnSTqckd4kLLLI6T": "0546e46316f2ae56f5952c017b5d688cf4baf497fe5ab3982eccb403c3624a92",
+        "1trDvYZtZH7qT2xJP7SxmSMFDZ7uB4wDF": "cec7bfb5da9af6a96464893ac82cec64c44cb62f25b27fe6c72e7ed25dfb294d",
+        "16zpRgoe1Dus0JvW1pEukk8Fx01pSPIBs": "eff7e79dc046e557812baafb95a2a8d9e3ac59ca54457938fce834974d137737",
+        "1eXmiV1LIqfihKrlKC3i0X339J54Vdaxm": "cb798d9f917ece073bdad9775f1c6e6ac561a783e78c02f15a56e8be262cd56e",
+        "1VHPTB_VgtRbTTjNruifgGc6pKkIF5-Ze": "78e142967ad05c1018555272190e36b68f6f60e4f92f1aaf6f8da0f13319fcce",
+        "1Bvg2jXMQEF9EKQTyn1_-ZHqnAw0B-8c-": "6f81a40d362201a5f58db1c4484f4527de30c1f747eb83f52dd1bd0e949cfba9",
+        "1e7O8NGEa66Tb3nKosXxC7_c3aqeMmEXs": "c702255d73b180e6917424e61a7a7f15f5a9f3b73b82b726205fad5546139e81",
+        "1lG-rVWfoUMl9xqP3P2qHCvR-I5fVjjiK": "0546e46316f2ae56f5952c017b5d688cf4baf497fe5ab3982eccb403c3624a92",
+        "1Xqb-kXAX0flb7hTZnXeqoajHHFu9ZJBo": "eff7e79dc046e557812baafb95a2a8d9e3ac59ca54457938fce834974d137737",
+        "1Q_T7s0u_gc6dkQwX9vG7vsqDpNzFP7QQ": "5bb9a6de4c770d926fd744f316ac0a4bb885b4c587b4ffc6c8417223e0f70ddd",
+        "1agNSEExkzm7z5w675dnpoSg1px-LdPZa": "f03be84fef64419916929414dbaf29dbdca7c55e4a48e54986a9e10668f5b7c8",
+        "1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo": "d8a131dce2c484b534a1caef60fa14aef16f1b9d1b91d9165481a3c7c04bb422",
+        "1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U": "fa8eec2190ad4997115bd9eafd16b15ffa214b0184328fe7a9d40f1056c78668",
+        "10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm": "70fa45a28a704578f3267bda5ce2c8455845c883fd506cf18c886812c094897d",
+        "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0": "da9fffa75634c4b2579c2ec0d661112887d210022a0a5091d9cb67db47728343"
+      },
+      "vocals": [],
+      "vocalScripts": [
+        {
+          "number": 1,
+          "title": "Comprendre la stomie",
+          "driveId": "1Q_T7s0u_gc6dkQwX9vG7vsqDpNzFP7QQ",
+          "url": "https://drive.google.com/file/d/1Q_T7s0u_gc6dkQwX9vG7vsqDpNzFP7QQ/view"
+        },
+        {
+          "number": 2,
+          "title": "Anatomie et stomies digestives",
+          "driveId": "1agNSEExkzm7z5w675dnpoSg1px-LdPZa",
+          "url": "https://drive.google.com/file/d/1agNSEExkzm7z5w675dnpoSg1px-LdPZa/view"
+        },
+        {
+          "number": 3,
+          "title": "Anatomie et derivations urinaires",
+          "driveId": "1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo",
+          "url": "https://drive.google.com/file/d/1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo/view"
+        },
+        {
+          "number": 4,
+          "title": "Soin et protection cutanee",
+          "driveId": "1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U",
+          "url": "https://drive.google.com/file/d/1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U/view"
+        },
+        {
+          "number": 5,
+          "title": "Appareillage digestif",
+          "driveId": "10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm",
+          "url": "https://drive.google.com/file/d/10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm/view"
+        },
+        {
+          "number": 6,
+          "title": "Recueil urinaire et autonomie",
+          "driveId": "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0",
+          "url": "https://drive.google.com/file/d/1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0/view"
+        }
+      ],
+      "blockers": [
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3"
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-13T15:14:17Z",
+        "bundleSha256": "033190790f0d5a04cdc7cdd5a86ba1afa35f202981be39e0650c07252e981722"
+      }
     }
   ]
 }

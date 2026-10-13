@@ -5,7 +5,7 @@ const read=p=>fs.readFileSync(p,'utf8');
 const json=p=>JSON.parse(read(p));
 const assert=(v,msg)=>{if(!v)throw new Error(msg)};
 const schemaRegex=/\b(sch[ée]ma|schema|figure|illustration|diagramme|image\s+ci|ci-dessous|boucle\s+anonyme)\b/i;
-const keepQuestion=q=>{const t=q?.question||'';if(q?.id==='pharmaco_031')return true;if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
+const keepQuestion=q=>{const t=q?.question||'';if(['pharmaco_031','stoma_p01_028'].includes(q?.id))return true;if(schemaRegex.test(t))return false;if(/\brep[eè]re\b/i.test(t)&&/(association|associer|structure|lettre)/i.test(t))return false;return true};
 function gzipBody(raw){let p=10,flags=raw[3]||0;if(flags&4){const n=raw[p]|(raw[p+1]<<8);p+=2+n}if(flags&8)while(p<raw.length&&raw[p++]);if(flags&16)while(p<raw.length&&raw[p++]);if(flags&2)p+=2;return raw.subarray(p,-8)}
 function parsePackText(txt){try{return JSON.parse(txt)}catch(first){const body=txt.trim().replace(/^\s*\[/,'').replace(/\]\s*$/,'');const parts=body.split(/}\s*,\s*\{"id":/);const recovered=[];for(let i=0;i<parts.length;i++){let s=(i?'{"id":':'')+parts[i];if(!s.trim().endsWith('}'))s+='}';try{const q=JSON.parse(s);if(q&&q.id)recovered.push(q)}catch{}}if(recovered.length)return recovered;throw first}}
 function decodePackFile(p){const source=read(p).trim();if(source.startsWith('[')||source.startsWith('{'))return parsePackText(source);const raw=Buffer.from(source,'base64');let txt;if(raw.length>2&&raw[0]===0x1f&&raw[1]===0x8b){try{txt=zlib.gunzipSync(raw).toString('utf8')}catch{txt=zlib.inflateRawSync(gzipBody(raw)).toString('utf8')}}else txt=raw.toString('utf8');return parsePackText(txt)}
@@ -37,7 +37,7 @@ function auditRawQuestion(q,p){rawAudited++;assert(typeof q?.id==='string'&&q.id
 let base=[];
 for(let i=1;i<=5;i++){const p=`questions-${i}.json`,a=json(p);for(const q of a)auditRawQuestion(q,p);base.push(...a)}
 let extras=[],override=[],skipped=[];
-for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46,50,51]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);extras.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
+for(const i of [1,2,3,4,5,6,7,...Array.from({length:30},(_,j)=>j+9),46,50,51,53]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;if(!fs.existsSync(p))continue;try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);extras.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 for(const i of [39,40,41,42,43,44,45,47,48,49]){const p=`qextra-${String(i).padStart(2,'0')}.txt`;assert(fs.existsSync(p),`Pack de rééquilibrage absent: ${p}`);try{const parsed=decodePackFile(p),a=Array.isArray(parsed)?parsed:(parsed.questions||[]);override.push(...a.filter(q=>auditRawQuestion(q,p)))}catch(e){skipped.push(`${p}: ${e.message}`)}}
 assert(skipped.length===0,`Packs QCM entièrement ignorés: ${skipped.join(' | ')}`);
 assert(reformattedSource.length===knownQuarantine.size&&reformattedSource.every(x=>knownQuarantine.has(x)),`Sources 4/4 inattendues: ${reformattedSource.join(' | ')}`);
