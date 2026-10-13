@@ -4,6 +4,8 @@ Le lancement d'un package complet déclenche l'exécution de ce processus pour c
 
 ## Dossiers à créer ou réutiliser
 
+Avant la mise à disposition : préparer et autocorriger tout le package, présenter une revue privée de tous les livrables disponibles, puis obtenir la validation du propriétaire et un **GO publication** explicite. Un GO production ou une validation du QCM seul ne valide pas le reste du lot. Voir `PUBLICATION_APPROVAL.md`. Les MP3 non fournis restent explicitement en attente.
+
 | Dossier | Contenu |
 | --- | --- |
 | 01 - Cours | Support officiel unique ou ensemble explicitement identifié |

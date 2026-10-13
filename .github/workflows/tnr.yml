@@ -62,6 +62,14 @@ jobs:
       - name: Contrôler les packs de cours validés et leurs ressources
         run: node tests/course-delivery.mjs
 
+      - name: Tester le refus de publication sans validation du package
+        run: node tests/course-publication-approval-test.mjs
+
+      - name: Exiger le GO publication pour les lots nouveaux ou modifiés
+        env:
+          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node tests/course-publication-approval.mjs
+
       - name: Refuser un nouveau cours publié absent du manifeste
         env:
           IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
