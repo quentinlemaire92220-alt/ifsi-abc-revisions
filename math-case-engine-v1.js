@@ -1,10 +1,10 @@
 /* IFSI ABC — moteur générique d'exercices pratiques. Aucun cas de cours dans ce fichier. */
 (()=>{
 'use strict';
-const COURSE='calculs_doses_mathematiques',SECTION='ifsiMathCases',STORE='ifsiabc_math_cases_progress_v1';
+const COURSE='calculs_doses_mathematiques',SECTION='ifsiMathCases',STORE='ifsiabc_math_cases_progress_v1',PACK_STORE='ifsiabc_math_cases_private_pack_v1';
 const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let current=null,observer=null;
+let current=null,catalog=[],observer=null;
 let state={mode:'guided',answers:{},hints:{},notes:'',locked:false};
 function reset(){state={mode:'guided',answers:{},hints:{},notes:'',locked:false};}
 function parseNumber(x){const s=String(x??'').replace(/\s/g,'');if(!/^[+-]?\d+(?:[.,]\d+)?$/.test(s))return null;const n=Number(s.replace(',','.'));return Number.isFinite(n)?n:null;}
@@ -35,7 +35,31 @@ function validCase(c){
  }
  return c;
 }
-function loadCase(c){const validated=validCase(c);current=validated;reset();if($('ifsiMathBody'))render();return validated.id;}
+function remember(){
+ try{localStorage.setItem(PACK_STORE,JSON.stringify({schemaVersion:1,courseId:COURSE,cases:catalog}));return true;}catch(_){return false;}
+}
+function mergeCases(cases){
+ const items=cases.map(validCase);const incoming=new Set();
+ for(const c of items){if(incoming.has(c.id))throw Error('Identifiant d’exercice répété dans le pack : '+c.id);incoming.add(c.id);}
+ const merged=new Map(catalog.map(c=>[c.id,c]));
+ items.forEach(c=>merged.set(c.id,c));catalog=[...merged.values()];return items.length;
+}
+function loadCase(c){
+ const validated=validCase(c);mergeCases([validated]);current=validated;reset();remember();if($('ifsiMathBody'))render();return validated.id;
+}
+function loadPack(pack){
+ if(!pack||typeof pack!=='object'||!Array.isArray(pack.cases)||!pack.cases.length||pack.cases.length>50)throw Error('Pack invalide : 1 à 50 exercices requis.');
+ if(pack.courseId&&pack.courseId!==COURSE)throw Error('Ce pack est destiné à un autre cours.');
+ const count=mergeCases(pack.cases);current=null;reset();remember();if($('ifsiMathBody'))render();return count;
+}
+function startCase(id){
+ const entry=catalog.find(c=>c.id===id);if(!entry)throw Error('Exercice introuvable.');
+ current=entry;reset();if($('ifsiMathBody'))render();return id;
+}
+function catalogue(){current=null;reset();if($('ifsiMathBody'))render();}
+function restore(){
+ try{const raw=JSON.parse(localStorage.getItem(PACK_STORE)||'null');if(raw?.courseId===COURSE&&Array.isArray(raw.cases))mergeCases(raw.cases);}catch(_){catalog=[];}
+}
 function result(){const fields=current?.questions?.flatMap(q=>q.fields)||[];return {correct:fields.filter(f=>evaluate(f,state.answers[f.id]).ok).length,total:fields.length};}
 function save(){
  const s=result();
@@ -45,7 +69,7 @@ function save(){
 function styles(){
  if($('ifsiMathCaseStyle'))return;
  const el=document.createElement('style');el.id='ifsiMathCaseStyle';
- el.textContent='.ifsi-case{display:grid;gap:14px;max-width:960px;margin:0 auto}.ifsi-case *{box-sizing:border-box}.ifsi-case .case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ifsi-case .case-box{border:1px solid var(--line);border-radius:12px;padding:12px}.ifsi-case .case-field{display:grid;gap:7px;border-top:1px solid var(--line);padding:14px 0}.ifsi-case .case-input{display:flex;align-items:center;gap:8px}.ifsi-case .case-input input{width:100%;min-width:0;font-size:17px;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink)}.ifsi-case .case-input small{min-width:100px;color:var(--muted)}.ifsi-case textarea{width:100%;min-height:95px;padding:10px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:9px}.ifsi-case .case-hint,.ifsi-case .case-feedback{padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);line-height:1.5}.ifsi-case .case-good{border-color:#389c87}.ifsi-case .case-bad{border-color:#cc6767}.ifsi-case .case-actions{display:flex;gap:9px;flex-wrap:wrap}.ifsi-case .case-actions button{flex:1}.ifsi-case .case-note{font-size:12px;color:var(--muted)}@media(max-width:580px){.ifsi-case .case-grid{grid-template-columns:1fr}.ifsi-case .case-input small{min-width:80px}.ifsi-case .case-actions{display:grid}}';
+ el.textContent='.ifsi-case{display:grid;gap:14px;max-width:960px;margin:0 auto}.ifsi-case *{box-sizing:border-box}.ifsi-case .case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ifsi-case .case-box{border:1px solid var(--line);border-radius:12px;padding:12px}.ifsi-case .case-field{display:grid;gap:7px;border-top:1px solid var(--line);padding:14px 0}.ifsi-case .case-input{display:flex;align-items:center;gap:8px}.ifsi-case .case-input input{width:100%;min-width:0;font-size:17px;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink)}.ifsi-case .case-input small{min-width:100px;color:var(--muted)}.ifsi-case textarea{width:100%;min-height:95px;padding:10px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:9px}.ifsi-case .case-hint,.ifsi-case .case-feedback{padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);line-height:1.5}.ifsi-case .case-good{border-color:#389c87}.ifsi-case .case-bad{border-color:#cc6767}.ifsi-case .case-actions{display:flex;gap:9px;flex-wrap:wrap}.ifsi-case .case-actions button{flex:1}.ifsi-case .case-note{font-size:12px;color:var(--muted)}.ifsi-case .case-catalog{display:grid;gap:10px;margin-bottom:14px}.ifsi-case .case-catalog-item{display:flex;align-items:center;justify-content:space-between;gap:12px}.ifsi-case .case-catalog-item button{flex-shrink:0}.ifsi-case .case-box input[type=file]{display:block;width:100%;max-width:100%;margin-top:9px}@media(max-width:580px){.ifsi-case .case-grid{grid-template-columns:1fr}.ifsi-case .case-input small{min-width:80px}.ifsi-case .case-actions{display:grid}.ifsi-case .case-catalog-item{align-items:stretch;flex-direction:column}}';
  document.head.appendChild(el);
 }
 function ensure(){
@@ -62,7 +86,7 @@ function mount(){
  const head=document.querySelector('#v74CourseDetail .v74-course-head');
  if(!head||$('ifsiMathEntry'))return false;
  const card=document.createElement('div');card.className='card';card.id='ifsiMathEntry';
- card.innerHTML='<div class="row"><div><b>🧮 Exercices pratiques — pilote</b><div class="small">Saisie libre, méthode, correction détaillée. Import local d’un cas privé.</div></div><button class="btn primary" type="button" id="ifsiMathOpen">Tester →</button></div>';
+ card.innerHTML='<div class="row"><div><b>🧮 Exercices pratiques — pilote</b><div class="small">Saisie libre, méthode, correction détaillée. Import local d’un pack privé, sans publication des énoncés.</div></div><button class="btn primary" type="button" id="ifsiMathOpen">Tester →</button></div>';
  head.insertAdjacentElement('afterend',card);$('ifsiMathOpen').onclick=open;return true;
 }
 function open(){
@@ -92,14 +116,32 @@ function fieldHTML(f){
 }
 function render(){
  const root=$('ifsiMathBody');if(!root)return;
+
  if(!current){
-  root.innerHTML='<div class="ifsi-case"><div class="card"><div class="row"><h2>🧮 Exercices pratiques — test privé</h2><button class="btn outline" id="ifsiMathBack" type="button">← Retour au cours</button></div><p>Importe un cas au format JSON depuis ton appareil. Ce fichier est lu localement : il n’est pas déposé dans le dépôt public.</p><label for="ifsiMathImport"><b>Fichier d’exercice à tester</b></label><input id="ifsiMathImport" type="file" accept=".json,application/json"><p id="ifsiMathError" role="status"></p></div></div>';
+  const history=(()=>{try{return JSON.parse(localStorage.getItem(STORE)||'{}');}catch(_){return {};}})();
+  const list=catalog.length?'<div class="case-catalog">'+catalog.map(c=>{
+    const stat=history[c.id],total=c.questions.reduce((n,q)=>n+q.fields.length,0);
+    return '<div class="case-box case-catalog-item"><div><b>'+esc(c.title)+'</b><div class="case-note">'+esc(c.theme||'Calculs infirmiers')+' • '+esc(c.level||'Entraînement')+' • '+total+' réponses'+(stat?' • meilleur : '+Number(stat.best||0)+'/'+Number(stat.total||total):'')+'</div></div><button type="button" class="btn primary" data-case-start="'+esc(c.id)+'">Commencer →</button></div>';
+  }).join('')+'</div>':'<p>Aucun exercice chargé. Importe un fichier JSON contenant un cas ou un pack de plusieurs exercices.</p>';
+  root.innerHTML='<div class="ifsi-case"><div class="card"><div class="row"><div><h2>🧮 Exercices pratiques — '+catalog.length+' disponibles</h2><p class="case-note">Prévisualisation privée • énoncé, saisie libre et correction expliquée.</p></div><button class="btn outline" id="ifsiMathBack" type="button">← Retour au cours</button></div>'+list+
+  '<div class="case-box"><label for="ifsiMathImport"><b>Importer un exercice ou un pack (JSON)</b></label><input id="ifsiMathImport" type="file" accept=".json,application/json"><p class="case-note">L’import est local au navigateur. Les exercices restent sur cet appareil, pas sur le dépôt public ni sur Drive.</p><p id="ifsiMathError" role="status" aria-live="polite"></p></div>'+
+  (catalog.length?'<button class="btn outline" id="ifsiMathClear" type="button">Effacer les exercices locaux</button>':'')+'</div></div>';
   $('ifsiMathBack').onclick=back;
-  $('ifsiMathImport').onchange=async e=>{try{const f=e.target.files?.[0];if(!f)return;if(f.size>120000)throw Error('Fichier supérieur à 120 Ko.');loadCase(JSON.parse(await f.text()));}catch(err){$('ifsiMathError').textContent='Import impossible : '+err.message;}};
+  root.querySelectorAll('[data-case-start]').forEach(button=>{button.onclick=()=>startCase(button.dataset.caseStart);});
+  $('ifsiMathImport').onchange=async e=>{
+   try{const f=e.target.files?.[0];if(!f)return;if(f.size>350000)throw Error('Fichier supérieur à 350 Ko.');
+    const parsed=JSON.parse(await f.text());if(parsed&&Array.isArray(parsed.cases))loadPack(parsed);else loadCase(parsed);
+   }catch(err){const msg=$('ifsiMathError');if(msg)msg.textContent='Import impossible : '+err.message;}
+  };
+  if($('ifsiMathClear'))$('ifsiMathClear').onclick=()=>{
+   if(!window.confirm||window.confirm('Effacer les exercices privés importés sur cet appareil ?')){
+    catalog=[];current=null;reset();try{localStorage.removeItem(PACK_STORE);}catch(_){}render();
+   }
+  };
   return;
  }
  const score=result();
- let html='<div class="ifsi-case"><div class="card"><div class="row"><div><div class="small">UE B3 • PILOTE PRIVÉ</div><h2>'+esc(current.title)+'</h2></div><button id="ifsiMathBack" class="btn outline" type="button">← Retour</button></div><h3>Situation clinique</h3><p>'+esc(current.situation||'')+'</p><div class="case-grid"><div class="case-box"><b>📋 Prescription</b>'+items(current.prescription)+'</div><div class="case-box"><b>💊 Matériel disponible</b>'+items(current.materials)+'</div></div>'+(current.assumptions?.length?'<p class="case-note"><b>Hypothèses :</b> '+esc(current.assumptions.join(' • '))+'</p>':'')+'</div>';
+ let html='<div class="ifsi-case"><div class="card"><div class="row"><div><div class="small">UE B3 • PILOTE PRIVÉ</div><h2>'+esc(current.title)+'</h2></div><div class="case-actions"><button id="ifsiMathCatalog" class="btn outline" type="button">← Tous les exercices</button><button id="ifsiMathBack" class="btn outline" type="button">Cours</button></div></div><h3>Situation clinique</h3><p>'+esc(current.situation||'')+'</p><div class="case-grid"><div class="case-box"><b>📋 Prescription</b>'+items(current.prescription)+'</div><div class="case-box"><b>💊 Matériel disponible</b>'+items(current.materials)+'</div></div>'+(current.assumptions?.length?'<p class="case-note"><b>Hypothèses :</b> '+esc(current.assumptions.join(' • '))+'</p>':'')+'</div>';
  html+='<div class="card"><h3>À toi de résoudre le problème</h3><p class="case-note">Tu peux consulter l’énoncé ci-dessus à tout moment.</p><div class="case-actions"><button type="button" class="btn '+(state.mode==='guided'?'primary':'outline')+'" data-case-mode="guided">Mode guidé</button><button type="button" class="btn '+(state.mode==='autonomous'?'primary':'outline')+'" data-case-mode="autonomous">Mode autonome</button></div>';
  current.questions.forEach(q=>{html+='<h3>'+esc(q.prompt)+'</h3>';q.fields.forEach(f=>html+=fieldHTML(f));});
  html+='<label for="ifsiMathNotes"><b>Mon brouillon (facultatif)</b></label><textarea id="ifsiMathNotes" '+(state.locked?'disabled':'')+' placeholder="Écris ici tes conversions et formules…">'+esc(state.notes)+'</textarea>';
@@ -107,6 +149,7 @@ function render(){
  html+='<div class="case-actions"><button class="btn primary" type="button" id="ifsiMathSubmit" '+(state.locked?'disabled':'')+'>Corriger mes réponses</button><button class="btn outline" type="button" id="ifsiMathRestart">Recommencer</button></div><p class="case-note">Support théorique de révision : ne remplace pas les protocoles cliniques institutionnels.</p></div></div>';
  root.innerHTML=html;
  $('ifsiMathBack').onclick=back;
+ $('ifsiMathCatalog').onclick=catalogue;
  root.querySelectorAll('[data-case-input]').forEach(e=>e.oninput=()=>{state.answers[e.dataset.caseInput]=e.value;});
  root.querySelectorAll('[data-case-hint]').forEach(e=>e.onclick=()=>{state.notes=$('ifsiMathNotes')?.value??state.notes;state.hints[e.dataset.caseHint]=Math.min(3,(state.hints[e.dataset.caseHint]||0)+1);render();});
  root.querySelectorAll('[data-case-mode]').forEach(e=>e.onclick=()=>{state.notes=$('ifsiMathNotes')?.value??state.notes;state.mode=e.dataset.caseMode;render();});
@@ -115,7 +158,7 @@ function render(){
  $('ifsiMathRestart').onclick=()=>{reset();render();};
 }
 function init(){
- if(!ensure())return;
+ restore();if(!ensure())return;
  const previous=window.show;
  if(typeof previous==='function'&&!previous._ifsiMathCaseWrapped){
   const wrapped=function(){if($(SECTION))$(SECTION).classList.add('hidden');return previous.apply(this,arguments);};
@@ -125,6 +168,6 @@ function init(){
  if(box&&typeof MutationObserver==='function'){observer=new MutationObserver(mount);observer.observe(box,{childList:true});}
  mount();
 }
-window.IFSI_MATH_CASES={loadCase,open,back,mount,parseNumber,parseTime,evaluate,validCase,result};
+window.IFSI_MATH_CASES={loadCase,loadPack,startCase,catalogue,getCatalog:()=>catalog.map(c=>({id:c.id,title:c.title,theme:c.theme,level:c.level})),open,back,mount,parseNumber,parseTime,evaluate,validCase,result};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
