@@ -30,6 +30,7 @@ Ce document définit les obligations **techniques** du dépôt, indépendamment 
 
 ## 4. Qualité et intégration
 
+- Avant publication pédagogique, présenter tous les livrables en revue privée et obtenir une validation du package suivie d'un **GO publication** explicite. Un GO production n'autorise pas la mise à disposition étudiante. Voir `PUBLICATION_APPROVAL.md` et le contrôle `tests/course-publication-approval.mjs`.
 - Un lot = une branche courte + une PR.
 - Exécuter les tests existants et `node tests/course-delivery.mjs`. Le nouveau garde-fou `node tests/course-delivery-new-course.mjs` compare le registre du changement à son commit de base ; la CI réalise cette comparaison avec l'historique Git complet.
 - Vérifier la CI `TNR IFSI ABC`, puis le rendu dans l'application et les ressources réellement accessibles. Un succès de CI ne démontre pas à lui seul la validité scientifique du cours ni l'accès en temps réel à Google Drive.
