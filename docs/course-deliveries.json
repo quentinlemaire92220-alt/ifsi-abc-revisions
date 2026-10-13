@@ -214,5 +214,20 @@
         "bundleSha256": "033190790f0d5a04cdc7cdd5a86ba1afa35f202981be39e0650c07252e981722"
       }
     }
+  ],
+  "supplementalResourceApprovals": [
+    {
+      "courseId": "calculs_doses_mathematiques",
+      "resourcePath": "math-cases-10-v1.json",
+      "exerciseCount": 10,
+      "answerFieldCount": 35,
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "supplemental_exercises",
+        "approvedAt": "2026-10-13T17:23:00Z",
+        "bundleSha256": "b563b952974dd79a872d5f61e2b09887dc3f1db819932e23915dcd53523d981c"
+      }
+    }
   ]
 }
