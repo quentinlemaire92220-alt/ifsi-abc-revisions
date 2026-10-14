@@ -28,6 +28,7 @@ function decode(raw,name) {
 }
 let count=0;
 for(const name of filenames){
+  if(!fs.existsSync(name))continue; // Une banque supprimée n'ajoute pas de QCM.
   const next=decode(fs.readFileSync(name,'utf8'),name);
   let previous=[];
   let exists=true;
