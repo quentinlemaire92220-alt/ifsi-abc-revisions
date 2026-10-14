@@ -30,16 +30,10 @@ let count=0;
 for(const name of filenames){
   const next=decode(fs.readFileSync(name,'utf8'),name);
   let previous=[];
-  try {previous=decode(git(['show',base+':'+name]),name+' (base)');}
-  catch(error){
-    if(!String(error.message||'').includes('does not exist') &&
-       !String(error.message||'').includes('exists on disk')) {
-      // Newly created path: Git may show fatal: path ... does not exist;
-      // other errors should never silently skip historical comparisons.
-      try {git(['cat-file','-e',base+':'+name]);}catch{previous=[];continueCheck();}
-    }
-  }
-  function continueCheck() {}
+  let exists=true;
+  try {git(['cat-file','-e',base+':'+name]);}
+  catch {exists=false;} // Fichier ajouté sur cette branche.
+  if(exists) previous=decode(git(['show',base+':'+name]),name+' (base)');
   count+=validateChangedQcmBanks(previous,next,name);
 }
 console.log('✅ Autonomie TD/support : '+count+' item(s) QCM nouveau(x)/modifié(s) contrôlé(s) dans '+filenames.length+' banque(s). Les questions historiques inchangées restent hors de ce contrôle différentiel.');
