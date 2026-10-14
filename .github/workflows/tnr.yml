@@ -199,6 +199,9 @@ jobs:
       - name: Audit du câblage des boutons
         run: node tests/button-audit.mjs
 
+      - name: Audit read-only des ressources existantes selon workflow v1.14
+        run: node tests/workflow-resource-inventory-test.mjs
+
       - name: Audit des rattachements de cours
         run: node tests/course-audit.mjs
 
