@@ -105,7 +105,7 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
   console.log('| Cours | Fiches PDF / autres | Complète identifiée | QCM | Flashcards | Infos | Vocaux | Source référencée | Statut |');
   console.log('|---|---:|---|---:|---:|---:|---:|---|---|');
   for(const c of report.courses){
-   const clean=s=>String(s).replace(/\\|/g,'/').replace(/\|/g,'/');
+   const clean=s=>String(s).replaceAll('|','/');
    console.log('| '+clean(c.label)+' | '+c.pdfSheets+' / '+c.nonPdfSheets+
     ' | '+(c.sheetFormats.completeInfographic||'non typée')+
     ' | '+c.qcm+' | '+c.flashcards+' | '+c.infographics+' | '+c.vocals+
