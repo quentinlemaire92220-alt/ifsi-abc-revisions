@@ -9,7 +9,12 @@ const base={
  vocals:[],questions:[{courseId:id,id:'cours_test_p1_001'}]
 };
 const added={
- ...base, sheets:[...base.sheets,{courseId:id,resourceId:'cours_test_fiche_p02'}],
+ ...base, sheets:[...base.sheets,
+  {courseId:id,resourceId:'cours_test_fiche_p02',sheetFormat:'classic',officialSupport:true,
+   driveId:'TEST_CLASSIC',url:'https://drive.google.com/file/d/TEST_CLASSIC/view'},
+  {courseId:id,resourceId:'cours_test_fiche_complete_infographiee_p02',
+   sheetFormat:'complete_infographic',officialSupport:true,
+   driveId:'TEST_GRAPHIC',url:'https://drive.google.com/file/d/TEST_GRAPHIC/view'}],
  infographics:[...base.infographics,{courseId:id,resourceId:'cours_test_info_p02_01'}],
  vocals:[{courseId:id,id:'cours_test_vocal_p02_01'}],
  questions:[...base.questions,{courseId:id,id:'cours_test_p2_001'}]
@@ -21,7 +26,14 @@ const publishedVerification={
 };
 const part={
  partId:'p02',validated:true,status:'awaiting_mp3',
- sheetResourceIds:['cours_test_fiche_p02'],
+ sheetResourceIds:['cours_test_fiche_p02','cours_test_fiche_complete_infographiee_p02'],
+ sheetResourceId:'cours_test_fiche_p02',
+ infographicSheetResourceId:'cours_test_fiche_complete_infographiee_p02',
+ dualSheetCoverage:{expectedNotions:8,classicCovered:8,infographicCovered:8,medicalReview:'approved'},
+ infographicSheetVisualAudit:{status:'PASS',pdfSha256:'b'.repeat(64),expectedCount:1,checkedCount:1},
+ infographicSheetPublishedVerification:{status:'MATCH',source:'authenticated_drive_download',
+    pdfSha256:'b'.repeat(64),expectedCount:1,checkedCount:1},
+ artifactSha256s:{TEST_CLASSIC:'a'.repeat(64),TEST_GRAPHIC:'b'.repeat(64)},
  infographicResourceIds:['cours_test_info_p02_01'],
  vocalIds:['cours_test_vocal_p02_01'],
  qcmQuestionIds:['cours_test_p2_001'],
@@ -72,7 +84,7 @@ fail('Absence de justification quand fiche sans infographie',base,
  {courses:[{...before.courses[0],partDeliveries:[{
    partId:'p02',validated:true,status:'partial',sheetResourceIds:['cours_test_fiche_p02']
  }]}]});
-pass('Fiche sans visuel, exclusion explicite',base,
+fail('Fiche sans visuel : une fiche seule ne suffit plus en v1.13',base,
  {...base,sheets:added.sheets},before,
  {courses:[{...before.courses[0],partDeliveries:[{
    partId:'p02',validated:true,status:'partial',
