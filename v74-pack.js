@@ -234,7 +234,7 @@ function renderCourse74(){
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
   const extraDocs=[['📝','QCM PDF — 50 questions et corrigé argumenté',courseMeta.qcmPdfUrl],
-   ...((courseMeta.additionalDocuments||[]).map(x=>['📄',x.label,driveUrl(x.url)]))]
+   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy').map(x=>['📄',x.label,driveUrl(x.url)]))]
    .filter(x=>x[2])
    .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
    .join('');
