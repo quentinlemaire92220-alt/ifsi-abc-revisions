@@ -90,6 +90,36 @@ fail('Fiche sans visuel : une fiche seule ne suffit plus en v1.13',base,
    partId:'p02',validated:true,status:'partial',
    sheetResourceIds:['cours_test_fiche_p02'],schematics:'none'
  }]}]});
+// Nouveau chapitre psychologie : deux fiches, aucun diagramme à ajouter.
+const noFigurePart={
+ ...part,
+ infographicResourceIds:[],schematics:'none',
+ schematicsJustification:'Ce chapitre de psychologie se comprend par des cas et comparaisons conceptuelles, sans planche anatomique ni diagramme individuel.',
+ visualAudit:{...audit,expectedCount:0,checkedCount:0},
+ publishedVerification:{...publishedVerification,expectedCount:0,checkedCount:0},
+ infographicSheetVisualAudit:{...part.infographicSheetVisualAudit,expectedCount:0,checkedCount:0},
+ infographicSheetPublishedVerification:{...part.infographicSheetPublishedVerification,expectedCount:0,checkedCount:0},
+ dualSheetCoverage:{expectedNotions:8,classicCovered:8,infographicCovered:8,
+   disciplinaryReview:{type:'conceptual',status:'approved'}}
+};
+const noFigureAdded={...base,sheets:added.sheets};
+pass('Psychologie : deux PDF, 0 schéma individuel et justification',
+ base,noFigureAdded,before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+  ...noFigurePart,vocalIds:[],qcmQuestionIds:[]
+ }]}]});
+fail('Psychologie : rejet absence de justification',
+ base,noFigureAdded,before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+  ...noFigurePart,schematicsJustification:'',vocalIds:[],qcmQuestionIds:[]
+ }]}]});
+fail('Psychologie : rejet revue conceptuelle absente',
+ base,noFigureAdded,before,
+ {courses:[{...before.courses[0],partDeliveries:[{
+  ...noFigurePart,dualSheetCoverage:{...noFigurePart.dualSheetCoverage,disciplinaryReview:undefined},
+  vocalIds:[],qcmQuestionIds:[]
+ }]}]});
+
 fail('Modification d’un ancien cours sans manifeste',base,added,{courses:[]},{courses:[]});
 assert.equal(canonicalPart('cours_test_fiche_p02'),'p02');
 assert.equal(canonicalPart('cours_test_p2_001'),'p02');
