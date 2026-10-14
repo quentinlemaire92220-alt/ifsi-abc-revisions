@@ -98,6 +98,22 @@ export async function buildAudit(){
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  const report=await buildAudit();
  if(process.argv.includes('--json'))console.log(JSON.stringify(report,null,2));
+ else if(process.argv.includes('--markdown')){
+  const T=report.totals;
+  console.log('# État des ressources — audit v1.14 (catalogue GitHub, lecture seule)\n');
+  console.log('**'+T.courses+' cours ; '+T.sheets+' fiches (dont '+T.pdfSheets+' PDF) ; '+T.individuallyCataloguedInfographics+' infographies ; '+T.vocals+' vocaux.**\n');
+  console.log('| Cours | Fiches PDF / autres | Complète identifiée | QCM | Flashcards | Infos | Vocaux | Source référencée | Statut |');
+  console.log('|---|---:|---|---:|---:|---:|---:|---|---|');
+  for(const c of report.courses){
+   const clean=s=>String(s).replace(/\\|/g,'/').replace(/\|/g,'/');
+   console.log('| '+clean(c.label)+' | '+c.pdfSheets+' / '+c.nonPdfSheets+
+    ' | '+(c.sheetFormats.completeInfographic||'non typée')+
+    ' | '+c.qcm+' | '+c.flashcards+' | '+c.infographics+' | '+c.vocals+
+    ' | '+(c.officialSourceLinkInRegistry?'lien catalogué':'à vérifier')+
+    ' | '+c.v114Status+' |');
+  }
+  console.log('\n*Non typée ≠ absente. Présence de lien ≠ source authentifiée. Statut v1.14 non vérifié pour chaque ancien cours.*');
+ }
  else {
   console.log('🧭 Audit v1.14 READ-ONLY:',JSON.stringify(report.totals));
   for(const c of report.courses.filter(c=>c.flags.includes('no_catalogued_revision_sheet')||
