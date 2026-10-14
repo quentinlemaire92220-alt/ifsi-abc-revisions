@@ -9,7 +9,7 @@ Avant la mise à disposition : préparer et autocorriger tout le package, prése
 | Dossier | Contenu |
 | --- | --- |
 | 01 - Cours | Support officiel unique ou ensemble explicitement identifié |
-| 02 - Fiches de révision | Fiche validée, détails écrits et illustrations intégrées |
+| 02 - Fiches de révision | **Deux PDF distincts pour tout nouveau cours / nouvelle partie** : fiche classique (texte + illustrations intégrées) et fiche complète infographiée autonome (DA Système respiratoire) |
 | 03 - QCM | QCM avec thèmes, niveaux et corrigé argumenté |
 | 04 - Infographies | Infographies illustrées individuelles et pack |
 | 05 - Vocaux | Dossier initialement vide ; MP3 créés et renvoyés par Quentin |
@@ -23,12 +23,12 @@ Créer les dossiers même lorsqu’une ressource est en préparation. Ne pas dup
 ## Production et contrôle
 
 1. Vérifier l’UE, le nom du cours, la partie et l’identité du support. Les sections internes d’un même support ne deviennent pas des cours séparés.
-2. Conserver les explications écrites. Recréer les schémas pertinents en infographies originales et les intégrer DIRECTEMENT dans le PDF de la fiche ; l'export séparé est complémentaire. Avant publication, exécuter le garde-fou local décrit dans `docs/PDF_VISUAL_GATE.md` sur le PDF final et la liste des schémas attendus, corriger les anomalies détectées et inspecter les rendus. Une revue distincte de la fidélité médicale (anatomie, connexions, appareillages et légendes) reste obligatoire.
+2. Pour les nouveaux cours ou parties, préparer obligatoirement **les deux PDF** et les exports individuels depuis une seule matrice de couverture, avec deux contrôles PDF indépendants (voir `docs/DUAL_SHEET_WORKFLOW_V113.md`). Conserver les explications écrites. Recréer les schémas pertinents en infographies originales et les intégrer DIRECTEMENT dans le PDF de la fiche ; l'export séparé est complémentaire. Avant publication, exécuter le garde-fou local décrit dans `docs/PDF_VISUAL_GATE.md` sur le PDF final et la liste des schémas attendus, corriger les anomalies détectées et inspecter les rendus. Une revue distincte de la fidélité médicale (anatomie, connexions, appareillages et légendes) reste obligatoire.
 3. Employer la même matrice pour le QCM PDF et le QCM dans l’application : réponses, thème, difficulté et explication. Chaque question annonce de une à trois bonnes réponses ; les questions dépendant d’un visuel absent sont interdites.
 4. Générer des flashcards autonomes : question précise, sigles développés, une notion ou une liste cohérente, réponse et explication compréhensibles sans diapo. Les contrôler sur la banque réellement décodée par l’application.
 5. Fournir à Quentin des scripts en fichiers texte brut séparés par thème. Reprendre son format : « Vocal N sur M », cours et UE, introduction, questions numérotées, `[pause 1500]`, temps de réflexion de 2500 à 4500 ms, « Réponse : », `[pause]`, définitions, « À retenir », fin et annonce du thème suivant. Utiliser ponctuellement `[strong]` et `[slow]`. Viser une lecture lente de cinq à sept minutes, à vérifier sur le MP3 final. Laisser le dossier `05 - Vocaux` vide. Quentin crée les MP3 et les renvoie ; les renommer `UE_S1_<UE>_<Cours>_PartieNN_Vocal_NN_<Theme>.mp3`, les déposer dans le dossier, vérifier taille/durée/accès, puis les rattacher à l’application. Ne pas envoyer le cours à un service vocal externe et ne pas publier les scripts dans la liste des audios.
 6. Vérifier après chaque dépôt Drive le parent, le nom, la taille et l’accès. Pour chaque fiche avec infographies, relancer le contrôle sur le PDF **retéléchargé après publication** via `tools/verify_published_pdf.py` ; en cas de divergence, bloquer la livraison. Inscrire les preuves structurelles `visualAudit` et `publishedVerification` sur la livraison de la partie correspondante, sans publier le PDF ni le rapport détaillé. Renseigner `docs/course-deliveries.json` avec les ressources effectivement disponibles et les éventuels blocages.
-7. Relier le même `courseId` à la fiche, au QCM, aux infographies, aux vocaux et aux flashcards dans l’application. Les exports locaux des images sont préchargés pour l’usage hors connexion.
+7. Relier le même `courseId` aux **deux fiches distinctes**, au QCM, aux infographies, aux vocaux et aux flashcards dans l’application. Les exports locaux des images sont préchargés pour l’usage hors connexion.
 8. Exécuter le contrôle `node tests/course-delivery.mjs` et tous les contrôles de la CI. Créer une PR unique regroupant ressources, version, nouveauté étudiante et cache. Fusionner après réussite de la CI, puis vérifier le déploiement.
 
 ## Disponibilité et blocages

@@ -3,7 +3,8 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
-import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
+import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
+import {validateAnatomyRouting} from './anatomy-routing-contract.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const git = args => execFileSync('git', args, {
@@ -67,7 +68,13 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
-  validateVisualAudit(course.id, delivery, {requirePublishedVerification:true});
+  validateDualSheetDelivery(course.id, delivery, current.sheets);
+  const atlasSources = ['v83-anatomy-interactive.js','v82-nav-anatomy.js',
+    'v814-respiratory-atlas.js','v815-urinary-atlas.js','v816-endocrine-atlas.js',
+    'v817-immune-atlas.js','v822-nervous-atlas.js','v823-cardiovascular-atlas.js',
+    'v824-digestive-atlas.js','v829-locomotor-atlas.js']
+    .map(file=>fs.readFileSync(file,'utf8')).join('\n');
+  validateAnatomyRouting(course, atlasSources, current.infographics);
 }
 console.log('✅ Garde-fou première publication : ' + added.length +
   ' nouveaux courseId, ' + firstPublished.length +

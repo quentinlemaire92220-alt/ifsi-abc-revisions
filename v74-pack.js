@@ -200,8 +200,9 @@ function renderCourses74(){
 function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
 
+function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.sheetFormat==='complete_infographic')return 'Fiche complète infographiée';if(x.sheetFormat==='classic')return 'Fiche de révision classique';return 'Fiche de révision'}
 function resourceCard74(x,type){
-  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${type==='sheet'?'Fiche de révision':'Infographie'}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
+  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
@@ -233,7 +234,7 @@ function renderCourse74(){
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
   const extraDocs=[['📝','QCM PDF — 50 questions et corrigé argumenté',courseMeta.qcmPdfUrl],
-   ...((courseMeta.additionalDocuments||[]).map(x=>['📄',x.label,driveUrl(x.url)]))]
+   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy').map(x=>['📄',x.label,driveUrl(x.url)]))]
    .filter(x=>x[2])
    .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
    .join('');

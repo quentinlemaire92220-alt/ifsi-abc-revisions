@@ -39,3 +39,11 @@ Ce document définit les obligations **techniques** du dépôt, indépendamment 
 ## 5. Confidentialité
 
 Ce dépôt est public. Ne pas y commiter de fichiers privés issus du Drive, de transcriptions, de supports non autorisés, de secrets, de photographies privées ou de liens vers un référentiel privé. Conserver les chartes pédagogiques complètes et les modèles graphiques dans un emplacement à accès restreint.
+
+## Nouveau contrat v1.13 — deux PDF indépendants
+
+Les nouvelles premières publications et parties complètes requièrent un `sheetResourceId` classique et un `infographicSheetResourceId` complet infographié. Les entrées `sheets-*.json` sont identifiées par `sheetFormat: "classic"` ou `"complete_infographic"`, avec Drive ID distinct.
+
+Leurs contrôles PDF et empreintes Drive ne sont jamais mutualisés : `visualAudit`/`publishedVerification` pour la classique, `infographicSheetVisualAudit`/`infographicSheetPublishedVerification` pour l'infographiée, `artifactSha256s` pour les deux fichiers et `dualSheetCoverage` pour toutes les notions importantes. Les tests CI n'attestent pas la qualité clinique ni les octets Drive privés ; revue privée et GO publication restent obligatoires.
+
+Les nouvelles planches classées `category: "anatomy"` dans les compléments exigent un `atlasId` réel et n'apparaissent pas dans la liste générique des documents du cours. Les contenus antérieurs restent inchangés jusqu'à une migration validée. Voir `docs/DUAL_SHEET_WORKFLOW_V113.md`.
