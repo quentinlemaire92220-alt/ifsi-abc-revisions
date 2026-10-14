@@ -4,7 +4,7 @@
 import assert from 'node:assert/strict';
 
 const patterns = [
-  /\b(?:selon|d['’]après|dans|sur|du|de|indiqué(?:e|es|s)?\s+dans|présenté(?:e|es|s)?\s+dans)\s+(?:(?:le|la|les|ce|cet|cette|l['’])\s*)?(?:TD|cours|support|diapo(?:sitive)?|document)\b/iu,
+  /\b(?:selon|d['’]après|dans|sur|du|de|par|indiqué(?:e|es|s)?\s+dans|présenté(?:e|es|s)?\s+dans)\s+(?:(?:le|la|les|ce|cet|cette|l['’])\s*)?(?:TD|cours|support|diapo(?:sitive)?|document)\b/iu,
   /\b(?:le|ce|la)\s+(?:TD|cours|support|diapo(?:sitive)?|document)\s+(?:cite|citent|montre|indique|précise|décrit|donne|présente|recommande)\b/iu,
   /\b(?:page|diapositive|diapo)\s*\d+\s*(?:du|de la|d['’]un)\s*(?:TD|cours|support|document)\b/iu,
   /\b(?:TD|support|cours)\s*(?:p\.|page)\s*\d+\b/iu,
