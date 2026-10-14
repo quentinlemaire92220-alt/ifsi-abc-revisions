@@ -16,7 +16,7 @@ Le résultat fournit par `courseId` le nombre de PDF et autres fiches, les types
 
 | Élément | État |
 |---|---|
-| Registre | 47 `courseId` (dont un cours Traumatologie masqué derrière son parent) |
+| Registre | 47 `courseId` (**42 visibles et 5 sous-cours masqués** ; Traumatologie est l’un de ces sous-cours) |
 | Fiches dans le catalogue | 57 : **48 PDF, 8 PNG et 1 SVG** ; 44 cours avec au moins une fiche sous leur propre ID |
 | Format des fiches v1.14 | **57/57 non typées** `classic` ou `complete_infographic` ; cela ne prouve pas l'absence d'une fiche complète déjà produite |
 | Infographies individuelles | 162 cataloguées pour 34 cours ; zéro infographie est acceptable s'il est pédagogiquement justifié |
@@ -27,6 +27,12 @@ Le résultat fournit par `courseId` le nombre de PDF et autres fiches, les types
 | Manifeste de production | 2 entrées historiques détaillées : Plaies et pansements et Stomatothérapie |
 
 Un contrôle manuel par métadonnées Drive a retrouvé les **57 identifiants de fiches du catalogue**. Leur ouverture réelle, couverture et qualité v1.14 n'ont pas été validées. Aucun fichier historique ne doit être déclaré conforme v1.14 sur ce seul motif.
+
+### Références de source à retrouver ou justifier
+
+Le registre ne contient pas de lien de support officiel pour les 12 `courseId` suivants : **Système cardiovasculaire ; Infections neuro-méningées ; Calculs de doses & mathématiques ; Paramètres vitaux ; Diagnostic bactériologique ; Chirurgie orthopédique ; Compétences psychosociales ; Méthodes de travail ; Vaccination/PRS ; Psychologie de la santé ; Introduction à la pharmacologie ; Administration médicamenteuse**.
+
+Leur support peut déjà se trouver sur Drive. Ne pas convertir un fichier de notes ou une transcription en « support officiel » sans provenance établie. Trois fiches du catalogue sont explicitement provisoires (Arthrose, Paramètres vitaux et Chirurgie orthopédique) ; les autres marqueurs de provenance incomplets ne doivent pas être interprétés comme une validation officielle.
 
 ## P1 — corriger la traçabilité avant toute régénération
 
