@@ -56,4 +56,57 @@ with TemporaryDirectory() as t:
     try: make_pack(invalid,root,root/"rich")
     except ValueError: pass
     else: raise AssertionError("Tableau complexe perdu silencieusement")
+    # Sciences humaines : illustrer les concepts SANS fabriquer d'anatomie.
+    psychology={
+      "title":"Psychologie - étude conceptuelle fictive",
+      "schematics":"none",
+      "schematicsJustification":"Les théories du cas étudié se prêtent à une comparaison de situations, sans schéma individuel anatomique pertinent.",
+      "sections":[{
+        "heading":"Comparaison de deux approches",
+        "paragraphs":["La première notion fictive peut être étudiée avec des exemples.",
+                      "La seconde notion fictive se distingue par sa démarche."],
+        "conceptualPanel":[
+          {"label":"Approche A","detail":"Description pédagogique de la première notion."},
+          {"label":"Approche B","detail":"Description pédagogique de la seconde notion."}
+        ],
+        "takeaway":"Distinguer les deux démarches.",
+        "trap":"Ne pas attribuer la deuxième démarche à la première."
+      }]
+    }
+    psych_out=root/"psychology"
+    result=make_pack(psychology,root,psych_out)
+    assert result["schematics"]=="none"
+    assert result["reusedFigures"]==[]
+    assert result["conceptualPanels"]==1
+    assert result["medicalReview"]=="NOT_APPLICABLE"
+    assert result["disciplinaryReview"]=="REQUIRED"
+    with fitz.open(psych_out/"Fiche_Revision.pdf") as a, \
+         fitz.open(psych_out/"Fiche_Complete_Infographiee.pdf") as b:
+        assert len(a)>=1 and len(b)>=1
+        assert "première notion" in a[0].get_text()
+        rendered="\n".join(page.get_text() for page in b)
+        assert "Approche A" in rendered and "Approche B" in rendered
+        assert "PIÈGES QCM" in rendered or "QCM" in rendered
+        assert sum(len(page.get_images()) for page in b)==0
+    assert list((psych_out/"04_Infographies").iterdir())==[]
+    missing=dict(psychology,schematics=None)
+    try: make_pack(missing,root,root/"psych-unjustified")
+    except ValueError: pass
+    else: raise AssertionError("Le cours sans figure doit déclarer schematics=none")
+    not_illustrated=dict(psychology,sections=[{
+      "heading":"Une section",
+      "paragraphs":["Un texte non illustré, malgré l'obligation de fiche complète infographiée."]
+    }])
+    try: make_pack(not_illustrated,root,root/"psych-without-concepts")
+    except ValueError: pass
+    else: raise AssertionError("Une fiche complète infographiée doit réellement présenter un panneau conceptuel")
+    invalid_panel=dict(psychology,sections=[{
+      **psychology["sections"][0],
+      "conceptualPanel":[{"label":"A","detail":"Seule notion."}]
+    }])
+    try: make_pack(invalid_panel,root,root/"psych-invalid-panel")
+    except ValueError: pass
+    else: raise AssertionError("Panneau avec une seule entrée accepté")
+
 print("✅ v1.13 : deux PDF distincts, figure unique réemployée, guide authentifié, exports, couverture et refus de perte")
+print("✅ v1.14 : psychologie sans figure, deux PDF et panneaux conceptuels validés ; absences injustifiées refusées")
