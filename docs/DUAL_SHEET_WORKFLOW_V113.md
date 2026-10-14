@@ -1,6 +1,6 @@
-# Workflow v1.13 — deux PDF de révision distincts
+# Workflow v1.14 — deux PDF obligatoires, schémas adaptés à la discipline
 
-Ce document complète le référentiel privé Work v1.12 ; il décrit le CONTRAT TECHNIQUE **pour les publications futures**. Aucun cours historique n'est converti ni publié automatiquement.
+Ce document complète le référentiel privé Work v1.13 ; il décrit le CONTRAT TECHNIQUE **pour les publications futures**. Aucun cours historique n'est converti ni publié automatiquement.
 
 ## Livrables et métadonnées
 
@@ -17,6 +17,31 @@ La CI vérifie les métadonnées/empreintes DÉCLARÉES, pas les fichiers privé
 Les parties nouvellement ajoutées à un cours existant déclarent dans `partDeliveries[]` les deux `sheetResourceIds` et les mêmes sous-champs de contrôle. Les livrables historiques sans cette convention restent inchangés jusqu'à révision autorisée.
 
 Les deux types apparaissent dans la section « Fiches de révision » de l'application avec des libellés distincts, sans dupliquer le fichier dans « Infographies ». Pour les nouvelles planches anatomiques : `additionalDocuments[].category:"anatomy"` et `atlasId` correspondant à un enregistrement réel du code atlas ; l'application les exclut de la liste générique des documents du cours et les présente depuis le module Anatomie. Les anciennes planches doivent être reprises séparément : ne jamais les masquer avant de vérifier leur présence dans Anatomie.
+
+
+## Exception documentée : cours sans schémas individuels (psychologie, droit, sciences humaines)
+
+La présence de planches anatomiques **n'est jamais une condition** de publication d'un cours qui n'en nécessite pas. Le contrat de livraison n'impose plus d'infographie autonome artificielle. Si l'analyse exhaustive du support conclut que **zéro schéma individuel** est pertinent, renseigner explicitement :
+
+```json
+{
+  "infographicResourceIds": [],
+  "schematics": "none",
+  "schematicsJustification": "Justification pédagogique précise, de plus de trente caractères.",
+  "dualSheetCoverage": {
+    "expectedNotions": 12,
+    "classicCovered": 12,
+    "infographicCovered": 12,
+    "disciplinaryReview": {"type": "conceptual", "status": "approved"}
+  }
+}
+```
+
+Le mode `none` signifie **aucun visuel individuel requis par le support**, et non une autorisation de supprimer une figure nécessaire. Il est interdit si des `infographicResourceIds` sont présents. Les deux PDF demeurent distincts et obligatoires : `visualAudit` et `infographicSheetVisualAudit` contiennent dans ce cas `status:"PASS"`, `expectedCount:0`, `checkedCount:0` et un SHA-256 propre à chaque PDF ; les copies Drive disposent d'un `publishedVerification` et `infographicSheetPublishedVerification` `MATCH` vérifiés individuellement. **Le statut PASS est une déclaration de contrôle effectué ; GitHub CI ne voit pas le document privé.**
+
+La fiche complète infographiée reste un support pédagogiquement **illustré de notions** : comparaisons, processus, panneaux de concepts, situations infirmières, encadrés « À retenir » et « Pièges QCM » justifiés, sans schémas d'anatomie inventés. Le prototype `tools/revision_course_pack.py` accepte `schematics:"none"` avec une justification et exige au moins un `conceptualPanel` composé de **2 à 8 entrées sourcées** `{label,detail}`, sans créer de fichiers dans `04_Infographies`. Ces panneaux ne sont pas des images indépendantes et ne nécessitent pas de `resourceId` dans la banque des infographies.
+
+Les cours avec figures déclarées restent soumis à la validation anatomique/médicale antérieure (`medicalReview:"approved"`), aux visuels requis et à leurs vérifications. Un cours théorique sans visuel anatomique doit faire l'objet d'une **revue disciplinaire conceptuelle des deux PDF**. Ne jamais déclarer `non_applicable` automatiquement sur la seule base du titre du cours : la pertinence des schémas doit découler du support réel.
 
 ## Prototype local privé du package
 
