@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
+import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
@@ -13,6 +14,8 @@ for(const c of manifest.courses){
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
  for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
+ // Les cours anciens sont conservés ; les deux fiches sont exigées pour les nouveaux cours et parties.
+ if(c.infographicSheetResourceId)validateDualSheetDelivery(c.courseId,c,sheets);
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  assert.equal(sheet?.officialSupport,true,'Support officiel perdu');
