@@ -60,9 +60,11 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
   if(withoutFigures){
    for(const [kind,audit] of [['classique',delivery.visualAudit],
                             ['complète infographiée',delivery.infographicSheetVisualAudit]]){
-    assert.equal(audit.expectedCount,0,
+    assert.equal(audit?.status,'PASS',
+      courseId+': contrôle PDF '+kind+' PASS absent');
+    assert.equal(audit?.expectedCount,0,
       courseId+': PDF '+kind+' sans figure : expectedCount doit être 0, pas une fausse illustration');
-    assert.equal(audit.checkedCount,0,
+    assert.equal(audit?.checkedCount,0,
       courseId+': PDF '+kind+' sans figure : checkedCount doit être 0');
    }
   }
