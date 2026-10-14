@@ -31,4 +31,35 @@ error({...delivery,dualSheetCoverage:{...delivery.dualSheetCoverage,infographicC
 error({...delivery,dualSheetCoverage:{...delivery.dualSheetCoverage,medicalReview:'pending'}},/revue médicale/);
 assert.throws(()=>validateDualSheetPart('demo',{...delivery,partId:'p02',sheetResourceIds:[classic.resourceId]},[classic,visual]),/deux fiches/);
 assert.throws(()=>validateDualSheetPart('demo',{...delivery,partId:'p02',sheetResourceIds:[classic.resourceId,visual.resourceId],infographicSheetResourceId:'missing'},[classic,visual]),/déclarées/);
+// Cas synthétique Psychologie : deux PDF validés, aucun schéma individuel nécessaire.
+const psychological={
+ ...delivery,
+ infographicResourceIds:[],
+ schematics:'none',
+ schematicsJustification:'Cours théorique de psychologie : notions expliquées par situations et comparaisons, sans schéma individuel pertinent.',
+ visualAudit:audit(H,0),
+ publishedVerification:pub(H,0),
+ infographicSheetVisualAudit:audit(J,0),
+ infographicSheetPublishedVerification:pub(J,0),
+ dualSheetCoverage:{
+  expectedNotions:12,classicCovered:12,infographicCovered:12,
+  disciplinaryReview:{type:'conceptual',status:'approved'}
+ }
+};
+assert.equal(validateDualSheetDelivery('demo',psychological,[classic,visual]).classic.resourceId,classic.resourceId);
+assert.equal(validateDualSheetPart('demo',{...psychological,partId:'p02',
+  sheetResourceIds:[classic.resourceId,visual.resourceId]},[classic,visual]).illustrated.resourceId,visual.resourceId);
+const rejectsPsych=(change,re,msg='')=>assert.throws(()=>validateDualSheetDelivery(
+  'demo',{...psychological,...change},[classic,visual]),re,msg);
+rejectsPsych({schematics:undefined},/schematics=none/);
+rejectsPsych({schematicsJustification:'pas de schéma'},/justifier le choix pédagogique/);
+rejectsPsych({visualAudit:undefined},/contrôle PDF classique PASS absent/);
+rejectsPsych({publishedVerification:undefined},/non vérifié/);
+rejectsPsych({infographicSheetVisualAudit:audit(J,1)},/expectedCount doit être 0/);
+rejectsPsych({dualSheetCoverage:{...psychological.dualSheetCoverage,disciplinaryReview:{type:'medical',status:'approved'}}},/revue conceptuelle/);
+rejectsPsych({dualSheetCoverage:{...psychological.dualSheetCoverage,disciplinaryReview:{type:'conceptual',status:'pending'}}},/non approuvée/);
+rejectsPsych({dualSheetCoverage:{...psychological.dualSheetCoverage,infographicCovered:11}},/couverture pédagogique/);
+assert.throws(()=>validateDualSheetDelivery('demo',{...delivery,schematics:'none'},[classic,visual]),/contradiction/);
+console.log('✅ v1.14 : psychologie sans schéma individuel : deux PDF et revue conceptuelle, 11 cas positifs/négatifs.');
+
 console.log('✅ v1.13 : 13 scénarios positifs/négatifs sur les deux fiches, preuves PDF et couverture.');
