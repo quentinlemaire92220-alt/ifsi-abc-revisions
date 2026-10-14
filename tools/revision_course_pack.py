@@ -98,6 +98,25 @@ def render_visual(payload,output,root,guide):
             story.append(Paragraph("<i>"+caption+"</i>",style_body))
         for paragraph in section["paragraphs"]:
             story.append(Paragraph(escape(paragraph),style_body))
+        if section.get("conceptualPanel"):
+            rows=[]
+            for item in section["conceptualPanel"]:
+                rows.append([
+                  Paragraph("<b>"+escape(item["label"])+"</b>",style_body),
+                  Paragraph(escape(item["detail"]),style_body)
+                ])
+            conceptual=Table(rows,colWidths=[CONTENT*.29,CONTENT*.71],hAlign="LEFT",repeatRows=0)
+            conceptual.setStyle(TableStyle([
+              ("BACKGROUND",(0,0),(-1,-1),colors.HexColor("#edf5f7")),
+              ("ROWBACKGROUNDS",(0,0),(-1,-1),[colors.HexColor("#edf5f7"),IVORY]),
+              ("VALIGN",(0,0),(-1,-1),"TOP"),
+              ("GRID",(0,0),(-1,-1),.4,colors.HexColor("#d5e2e3")),
+              ("LEFTPADDING",(0,0),(-1,-1),9),
+              ("RIGHTPADDING",(0,0),(-1,-1),9),
+              ("TOPPADDING",(0,0),(-1,-1),8),
+              ("BOTTOMPADDING",(0,0),(-1,-1),8),
+            ]))
+            story.append(conceptual)
         if section.get("takeaway"):
             story.append(box(section["takeaway"],"À RETENIR",MINT))
         if section.get("trap"):
@@ -133,6 +152,25 @@ def make_pack(payload,root,out):
             raise ValueError("Tableaux/formules complexes: utiliser un générateur sans perte, pas ce pilote")
         if s.get("figure"):
             checked_asset(root,s["figure"]["path"])
+    count_figures=sum(bool(s.get("figure")) for s in sections)
+    if count_figures==0:
+        if payload.get("schematics")!="none":
+            raise ValueError("Absence de figures : déclarer explicitement schematics=none")
+        rationale=payload.get("schematicsJustification")
+        if not isinstance(rationale,str) or len(rationale.strip())<30:
+            raise ValueError("L'absence de figures individuelles nécessite une justification pédagogique")
+        if not any(s.get("conceptualPanel") for s in sections):
+            raise ValueError("La fiche complète infographiée sans figures doit comporter un véritable panneau conceptuel")
+    elif payload.get("schematics")=="none":
+        raise ValueError("Images présentes alors que schematics=none")
+    for section in sections:
+        if "conceptualPanel" in section:
+            panel=section["conceptualPanel"]
+            if not isinstance(panel,list) or not (2<=len(panel)<=8):
+                raise ValueError("Panneau conceptuel : fournir entre 2 et 8 notions")
+            for item in panel:
+                if not isinstance(item,dict) or not isinstance(item.get("label"),str) or not item["label"].strip() or not isinstance(item.get("detail"),str) or not item["detail"].strip():
+                    raise ValueError("Panneau conceptuel : chaque notion doit contenir label et detail")
     guide=None
     if payload.get("guideImage"):
         guide=checked_asset(root,payload["guideImage"])[0]
@@ -158,7 +196,10 @@ def make_pack(payload,root,out):
             raise ValueError("Export figure altéré")
     report={"status":"DRAFT_REVIEW_ONLY","classic":{"name":klass.name,"sha256":digest(klass)},
             "completeInfographic":{"name":graphic.name,"sha256":digest(graphic)},
-            "reusedFigures":items,"medicalReview":"REQUIRED","publisherApproval":"NOT_GRANTED"}
+            "reusedFigures":items,"schematics":payload.get("schematics","with_figures"),
+            "schematicsJustification":payload.get("schematicsJustification") if count_figures==0 else None,
+            "conceptualPanels":sum(bool(s.get("conceptualPanel")) for s in sections),
+            "disciplinaryReview":"REQUIRED","publisherApproval":"NOT_GRANTED"}
     (out/"manifest_privé.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf8")
     return report
 
