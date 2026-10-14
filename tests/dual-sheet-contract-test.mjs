@@ -18,12 +18,12 @@ const delivery={
 const checked=()=>validateDualSheetDelivery('demo',delivery,[classic,visual]);
 assert.equal(checked().illustrated.resourceId,visual.resourceId);
 assert.equal(validateDualSheetPart('demo',{...delivery,partId:'p01',sheetResourceIds:[classic.resourceId,visual.resourceId]},[classic,visual]).classic.resourceId,classic.resourceId);
-const error=(next,sheets=[classic,visual],msg)=>assert.throws(
- ()=>validateDualSheetDelivery('demo',next,sheets),msg);
+const error=(next,pattern,sheets=[classic,visual])=>assert.throws(
+ ()=>validateDualSheetDelivery('demo',next,sheets),pattern);
 error({...delivery,infographicSheetResourceId:null},/fiche complete_infographic|resourceId/);
 error({...delivery,infographicSheetResourceId:classic.resourceId},/DISTINCTS/);
-error({...delivery},[classic,{...visual,driveId:classic.driveId,url:classic.url}],/même Drive ID/);
-error({...delivery},[classic,{...visual,sheetFormat:'classic'}],/sheetFormat/);
+error({...delivery},/même Drive ID/,[classic,{...visual,driveId:classic.driveId,url:classic.url}]);
+error({...delivery},/sheetFormat/,[classic,{...visual,sheetFormat:'classic'}]);
 error({...delivery,infographicSheetVisualAudit:undefined},/contrôle PDF/);
 error({...delivery,infographicSheetPublishedVerification:undefined},/non vérifié/);
 error({...delivery,artifactSha256s:{DRIVE_CLASSIC:H,DRIVE_VISUAL:H}},/ne concorde pas/);
