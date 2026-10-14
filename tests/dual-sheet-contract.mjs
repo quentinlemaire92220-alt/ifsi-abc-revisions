@@ -43,15 +43,34 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
  const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets);
  const illustrated=sheetFor(courseId,delivery.infographicSheetResourceId,'complete_infographic',sheets);
  assert.notEqual(driveId(classic),driveId(illustrated),courseId+': les deux PDF pointent vers le même Drive ID');
- const figures=delivery.infographicResourceIds||[];
- assert.ok(Array.isArray(figures),courseId+': infographies invalides');
- assert.ok(figures.length,courseId+': liste de schémas attendus non déclarée (exclusion motivée hors périmètre)');
- validateVisualAudit(courseId,delivery,{requirePublishedVerification});
+ const figures=delivery.infographicResourceIds??[];
+ assert.ok(Array.isArray(figures),courseId+': infographicResourceIds doit être un tableau');
+ const withoutFigures=figures.length===0;
+ if(withoutFigures){
+  assert.equal(delivery.schematics,'none',
+   courseId+': aucune infographie individuelle : schematics=none obligatoire');
+  assert.ok(typeof delivery.schematicsJustification==='string'&&
+    delivery.schematicsJustification.trim().length>=30,
+   courseId+': justifier le choix pédagogique sans schéma individuel (30 caractères minimum)');
+ }else{
+  assert.notEqual(delivery.schematics,'none',
+   courseId+': contradiction : schémas déclarés mais schematics=none');
+  validateVisualAudit(courseId,delivery,{requirePublishedVerification});
+ }
  if(requirePublishedVerification){
   pdfCheck(courseId,'classique',figures.length,delivery.visualAudit,
     delivery.publishedVerification,classic,delivery.artifactSha256s);
-  pdfCheck(courseId,'complète infographiée',1,delivery.infographicSheetVisualAudit,
+  pdfCheck(courseId,'complète infographiée',withoutFigures?0:1,delivery.infographicSheetVisualAudit,
     delivery.infographicSheetPublishedVerification,illustrated,delivery.artifactSha256s);
+  if(withoutFigures){
+   for(const [kind,audit] of [['classique',delivery.visualAudit],
+                            ['complète infographiée',delivery.infographicSheetVisualAudit]]){
+    assert.equal(audit.expectedCount,0,
+      courseId+': PDF '+kind+' sans figure : expectedCount doit être 0, pas une fausse illustration');
+    assert.equal(audit.checkedCount,0,
+      courseId+': PDF '+kind+' sans figure : checkedCount doit être 0');
+   }
+  }
  } else {
   assert.equal(delivery.infographicSheetVisualAudit?.status,'PASS',
     courseId+': rapport local de fiche complète infographiée absent');
@@ -63,8 +82,15 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
   courseId+': couverture pédagogique de la fiche classique incomplète');
  assert.equal(coverage.infographicCovered,coverage.expectedNotions,
   courseId+': couverture pédagogique de la fiche complète infographiée incomplète');
- assert.equal(coverage.medicalReview,'approved',
-  courseId+': revue médicale indépendante des deux fiches non déclarée');
+ if(withoutFigures){
+  assert.equal(coverage.disciplinaryReview?.type,'conceptual',
+    courseId+': une revue conceptuelle indépendante est obligatoire sans schéma anatomique');
+  assert.equal(coverage.disciplinaryReview?.status,'approved',
+    courseId+': revue conceptuelle des deux fiches non approuvée');
+ }else{
+  assert.equal(coverage.medicalReview,'approved',
+    courseId+': revue médicale indépendante des deux fiches non déclarée');
+ }
  return {classic,illustrated};
 }
 
