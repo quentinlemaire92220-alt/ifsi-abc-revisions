@@ -57,11 +57,6 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
    courseId+': contradiction : schémas déclarés mais schematics=none');
   validateVisualAudit(courseId,delivery,{requirePublishedVerification});
  }
- if(requirePublishedVerification){
-  pdfCheck(courseId,'classique',figures.length,delivery.visualAudit,
-    delivery.publishedVerification,classic,delivery.artifactSha256s);
-  pdfCheck(courseId,'complète infographiée',withoutFigures?0:1,delivery.infographicSheetVisualAudit,
-    delivery.infographicSheetPublishedVerification,illustrated,delivery.artifactSha256s);
   if(withoutFigures){
    for(const [kind,audit] of [['classique',delivery.visualAudit],
                             ['complète infographiée',delivery.infographicSheetVisualAudit]]){
@@ -71,6 +66,11 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
       courseId+': PDF '+kind+' sans figure : checkedCount doit être 0');
    }
   }
+ if(requirePublishedVerification){
+  pdfCheck(courseId,'classique',figures.length,delivery.visualAudit,
+    delivery.publishedVerification,classic,delivery.artifactSha256s);
+  pdfCheck(courseId,'complète infographiée',withoutFigures?0:1,delivery.infographicSheetVisualAudit,
+    delivery.infographicSheetPublishedVerification,illustrated,delivery.artifactSha256s);
  } else {
   assert.equal(delivery.infographicSheetVisualAudit?.status,'PASS',
     courseId+': rapport local de fiche complète infographiée absent');
