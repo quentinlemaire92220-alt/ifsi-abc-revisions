@@ -2,6 +2,7 @@
 // Aucune lecture de Google Drive : uniquement JSON et état Git.
 import assert from 'node:assert/strict';
 import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
+import {validateDualSheetPart} from './dual-sheet-contract.mjs';
 
 const kinds = [
   ['sheet', 'sheets', 'resourceId', 'sheetResourceIds'],
@@ -80,6 +81,10 @@ export function validatePartChanges(before, after, previousManifest, currentMani
         assert.ok(Array.isArray(ids) && ids.every(id => typeof id === 'string' && id.length),
           courseId + ': ' + partId + ' ' + field + ' invalide');
         assert.equal(new Set(ids).size, ids.length, courseId + ': ' + partId + ' ' + field + ' dupliqué');
+      }
+      if ((part.sheetResourceIds||[]).length) {
+        // Pour chaque NOUVELLE partie publiée, les deux formats sont obligatoires.
+        validateDualSheetPart(courseId, part, after.sheets);
       }
       if ((part.infographicResourceIds||[]).length)
         validateVisualAudit(courseId + '/' + partId, part, {requirePublishedVerification:true});
