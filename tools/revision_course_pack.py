@@ -199,7 +199,9 @@ def make_pack(payload,root,out):
             "reusedFigures":items,"schematics":payload.get("schematics","with_figures"),
             "schematicsJustification":payload.get("schematicsJustification") if count_figures==0 else None,
             "conceptualPanels":sum(bool(s.get("conceptualPanel")) for s in sections),
-            "disciplinaryReview":"REQUIRED","publisherApproval":"NOT_GRANTED"}
+            "disciplinaryReview":"REQUIRED",
+            "medicalReview":"REQUIRED" if count_figures else "NOT_APPLICABLE",
+            "publisherApproval":"NOT_GRANTED"}
     (out/"manifest_privé.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf8")
     return report
 
