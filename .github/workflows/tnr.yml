@@ -56,6 +56,9 @@ jobs:
       - name: TNR contrat des deux fiches et preuves PDF
         run: node tests/dual-sheet-contract-test.mjs
 
+      - name: TNR registre prive des sources manquantes v1.15
+        run: node tests/source-followup-v115-test.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
