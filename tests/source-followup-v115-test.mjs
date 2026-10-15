@@ -30,4 +30,5 @@ assert.deepEqual(planResume([],[{id:'new',sha256:A,affects:['vocabulary']}]).del
 assert.deepEqual(planResume(before,[]).deltas.map(x=>x.kind),['removed','removed']);
 assert.throws(()=>planResume([{id:'dup',sha256:A,affects:[]},{id:'dup',sha256:B,affects:[]}],after),/Notions dupliquées/);
 assert.throws(()=>receiveOfficial(basic,{sha256:'bad',receivedOn:'2026-10-15'}),/Empreinte/);
+assert.throws(()=>receiveOfficial(basic,{sha256:B,receivedOn:'15/10/2026'}),/Date de réception/);
 console.log('✅ v1.15 : 15 assertions : brouillon, attente officiel, reprise incrémentale, préservation de la publication.');
