@@ -9,7 +9,7 @@ const supplements=JSON.parse(read('docs/qcm-supplements.json')).supplements;
 const sup=supplements.find(x=>x.pack==='qextra-54.txt');
 assert.ok(sup,'Déclaration de supplément annales absente');
 const raw=read('qextra-54.txt');
-const blobSha=createHash('sha1').update('blob '+Buffer.byteLength(raw)+'\\0'+raw).digest('hex');
+const blobSha=createHash('sha1').update('blob '+Buffer.byteLength(raw)+String.fromCharCode(0)+raw).digest('hex');
 assert.equal(sup.gitBlobSha,blobSha,'Le lot d’annales a changé après autorisation');
 assert.equal(sup.publicationApproval?.authorization,'explicit_go_publication','Autorisation de publication absente');
 assert.equal(sup.publicationApproval?.status,'approved');
