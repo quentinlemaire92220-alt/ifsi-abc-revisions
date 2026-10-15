@@ -26,7 +26,7 @@ export function validateFollowup(row){
 export function receiveOfficial(row,{sha256,receivedOn}){
  validateFollowup(row);
  assert.ok(hash(sha256),'Empreinte requise');
- assert.ok(/^\\d{4}-\\d{2}-\\d{2}$/.test(receivedOn),'Date de réception requise');
+ assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(receivedOn),'Date de réception requise');
  return {...row,sourceStatus:'RECONCILIATION_PENDING',sourceSha256:sha256,
   previousSha256:row.sourceSha256||null,receivedOn,reconciliationStatus:'PENDING',
   publicationStatus:row.publicationStatus==='HISTORIC_PUBLICATION'?'HISTORIC_PUBLICATION':'NOT_AUTHORIZED',
