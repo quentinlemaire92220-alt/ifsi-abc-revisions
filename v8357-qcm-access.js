@@ -36,7 +36,7 @@ function populate(){
   if(state.theme!=='all'&&!themes.includes(state.theme))state.theme='all';
   $('v8357Theme').innerHTML=options([['all','Tous les thèmes'],...themes.map(t=>[t,t])],state.theme);
   $('v8357Difficulty').value=state.difficulty;
-  $('v8357Source').value=state.source;
+  const origin=$('v8357Source');if(origin)origin.value=state.source;
   $('v8357Count').value=state.count;
   $('v8357Mode').value=state.mode;
   const n=pool().length,status=window.IFSI_QCM_LOAD?.status||'loading';
