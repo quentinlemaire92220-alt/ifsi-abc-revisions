@@ -22,6 +22,7 @@ export function validateAnnales(payload,registry,{publish=false}={}){
   else if(new Set(choices.map(norm)).size!==choices.length)err(id,'Propositions identiques');
   if(!Array.isArray(answers)||answers.length<1||answers.length>3||new Set(answers).size!==answers.length||answers.some(i=>!Number.isInteger(i)||i<0||i>=((choices||[]).length)))err(id,'Il faut 1 à 3 réponses valides distinctes');
   if(typeof q.explanation!=='string'||q.explanation.trim().length<30)err(id,'Explication insuffisante');
+  if(!q.theme||/annales.+2025/i.test(q.theme))(publish?err:warn)(id,'Renseigner un véritable thème du cours, pas la provenance des annales');
   if(!q.courseId||!courses.has(q.courseId))(publish?err:warn)(id,'Cours 2026 manquant');else mapped++;
   if(q.reviewState!=='validated'||q.distractorFeedbackVerified!==true)(publish?err:warn)(id,'Réponses et distracteurs non validés');
   if(q.releaseApproved!==true)(publish?err:warn)(id,'GO publication absent');else approved++;
