@@ -51,6 +51,7 @@ function load(ref) {
 }
 const previous = load(base);
 const current = load('HEAD');
-const result = validatePartChanges(previous,current,oldManifest,currentManifest);
+const supplements = fs.existsSync('docs/qcm-supplements.json') ? read('docs/qcm-supplements.json') : {supplements:[]};
+const result = validatePartChanges(previous,current,oldManifest,currentManifest,supplements);
 console.log('✅ Parties de cours déjà publiés : ' + result.courses + ' cours, ' +
   result.resources + ' nouvelles ressources contrôlées (base '+base+')');

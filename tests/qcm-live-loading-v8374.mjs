@@ -51,7 +51,7 @@ assert.equal(new Set(ctx.Q.map(q=>q.id)).size,5);
 console.log('✅ Chargement progressif : affichage avant la fin du pack 5, ressources indépendantes et reprise réussie');
 
 const elements=new Map(),element=()=>({innerHTML:'',value:'all',textContent:'',disabled:false});
-for(const id of ['v8357QcmCard','v8357Domain','v8357Course','v8357Theme','v8357Difficulty','v8357Count','v8357Mode','v8357Available','v8357Launch'])elements.set(id,element());
+for(const id of ['v8357QcmCard','v8357Domain','v8357Course','v8357Theme','v8357Difficulty','v8357Source','v8357Count','v8357Mode','v8357Available','v8357Launch'])elements.set(id,element());
 const ui={
  Q:[],
  window:{IFSI_QCM_LOAD:{status:'loading',count:0,failed:[]},IFSI_V741:{getRegistry:()=>({courses:[]})},IFSI_V79:{themeOf:q=>q.theme,difficultyOf:q=>q.difficulty}},

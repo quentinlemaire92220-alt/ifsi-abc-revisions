@@ -1,13 +1,14 @@
 (()=>{'use strict';
 const VERSION='8.30.57', $=id=>document.getElementById(id);
 const DOMAIN_LABELS={A:'Sciences humaines et droit',B:'Sciences biomédicales',C:'Sciences et techniques infirmières',D:'Communication et relation de soins',E:'Méthodes et outils',Autres:'Autres cours'};
-const state={open:false,domain:'all',course:'all',theme:'all',difficulty:'all',count:'10',mode:'train'};
+const state={open:false,domain:'all',course:'all',theme:'all',difficulty:'all',source:'all',count:'10',mode:'train'};
 const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const questions=()=>typeof Q!=='undefined'&&Array.isArray(Q)?Q:[];
 const registry=()=>window.IFSI_V741?.getRegistry?.()?.courses||[];
 const themeOf=q=>window.IFSI_V79?.themeOf?.(q)||q.theme||'Général';
 const difficultyOf=q=>window.IFSI_V79?.difficultyOf?.(q)||q.difficulty||'medium';
 const courseIdOf=q=>String(q.courseId||window.IFSI_V741?.courseIdForLabel?.(q.course||q.theme)||q.course||q.theme||'Autres');
+const sourceOf=q=>q?.sourceKind==='annales_privees_2025'?'annales2025':'cours';
 function catalog(){
   const byId=new Map(registry().map(c=>[String(c.id),c])),groups=new Map();
   questions().forEach(q=>{
@@ -17,7 +18,7 @@ function catalog(){
   return [...groups.values()].sort((a,b)=>a.label.localeCompare(b.label,'fr'));
 }
 const options=(rows,selected)=>rows.map(([id,label])=>'<option value="'+esc(id)+'"'+(id===selected?' selected':'')+'>'+esc(label)+'</option>').join('');
-function pool(){return questions().filter(q=>(state.course==='all'||courseIdOf(q)===state.course)&&(state.theme==='all'||themeOf(q)===state.theme)&&(state.difficulty==='all'||difficultyOf(q)===state.difficulty)&&(state.domain==='all'||domainOf(q)===state.domain))}
+function pool(){return questions().filter(q=>(state.course==='all'||courseIdOf(q)===state.course)&&(state.theme==='all'||themeOf(q)===state.theme)&&(state.difficulty==='all'||difficultyOf(q)===state.difficulty)&&(state.domain==='all'||domainOf(q)===state.domain)&&(state.source==='all'||sourceOf(q)===state.source))}
 function domainOf(q){const c=catalogCache.find(c=>c.id===courseIdOf(q));return c?.domain||'Autres'}
 let catalogCache=[];
 function populate(){
@@ -35,6 +36,7 @@ function populate(){
   if(state.theme!=='all'&&!themes.includes(state.theme))state.theme='all';
   $('v8357Theme').innerHTML=options([['all','Tous les thèmes'],...themes.map(t=>[t,t])],state.theme);
   $('v8357Difficulty').value=state.difficulty;
+  const origin=$('v8357Source');if(origin)origin.value=state.source;
   $('v8357Count').value=state.count;
   $('v8357Mode').value=state.mode;
   const n=pool().length,status=window.IFSI_QCM_LOAD?.status||'loading';
@@ -61,7 +63,7 @@ function start(){
   if(typeof shuffle!=='function')for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]]}
   const selected=shuffled.slice(0,state.count==='all'?shuffled.length:Math.min(Number(state.count)||10,shuffled.length));
   localStorage.setItem('ifsiabc_v7_mode',state.mode);
-  window.IFSI_V77?.track?.('qcm_start',{resource_type:'qcm',resource_id:'revision_qcm_par_cours',course_id:state.course==='all'?null:state.course,metadata:{domain:state.domain,theme:state.theme,difficulty:state.difficulty,mode:state.mode,count:selected.length}});
+  window.IFSI_V77?.track?.('qcm_start',{resource_type:'qcm',resource_id:'revision_qcm_par_cours',course_id:state.course==='all'?null:state.course,metadata:{domain:state.domain,theme:state.theme,difficulty:state.difficulty,source:state.source,mode:state.mode,count:selected.length}});
   begin(selected);
 }
 function css(){
@@ -86,13 +88,14 @@ function inject(){
   const body=$('v81Body'),dash=$('v8312MyRevision');if(!body||!dash||dash.parentElement!==body)return false;
   if($('v8357QcmCard'))return true;
   const card=document.createElement('div');card.id='v8357QcmCard';card.className='card v8357-qcm-card';
-  card.innerHTML='<h3>📋 QCM par cours</h3><div class="small v8357-intro">Retrouve tous les QCM classiques. Choisis ton domaine, ton cours, ton thème et ta difficulté.</div>'+
+  card.innerHTML='<h3>📋 QCM par cours</h3><div class="small v8357-intro">Retrouve tous les QCM classiques. Choisis ton domaine, ton cours, ton thème, l’origine des QCM et ta difficulté.</div>'+
    '<button id="v8357Toggle" type="button" class="btn primary v8357-qcm-toggle" aria-controls="v8357Builder" aria-expanded="false">Choisir mes QCM →</button>'+
    '<div id="v8357Builder" hidden><div class="v8357-qcm-fields">'+
    '<label for="v8357Domain">Domaine<select id="v8357Domain"></select></label>'+
    '<label for="v8357Course">Cours<select id="v8357Course"></select></label>'+
    '<label for="v8357Theme">Thème<select id="v8357Theme"></select></label>'+
    '<label for="v8357Difficulty">Difficulté<select id="v8357Difficulty"><option value="all">Toutes les difficultés</option><option value="easy">Facile</option><option value="medium">Moyen</option><option value="hard">Difficile</option></select></label>'+
+   '<label for="v8357Source">Origine<select id="v8357Source"><option value="all">Tous les QCM</option><option value="annales2025">Annales Paris-Saclay 2025</option><option value="cours">Autres QCM</option></select></label>'+ 
    '<label for="v8357Count">Nombre de questions<select id="v8357Count"><option value="10">10 questions</option><option value="20">20 questions</option><option value="30">30 questions</option><option value="50">50 questions</option><option value="all">Toutes les questions</option></select></label>'+
    '<label for="v8357Mode">Mode<select id="v8357Mode"><option value="train">Entraînement (correction immédiate)</option><option value="exam">Examen (correction à la fin)</option></select></label>'+
    '</div><div class="v8357-qcm-footer"><span id="v8357Available" class="small" role="status"></span><button type="button" id="v8357Retry" class="btn secondary" hidden>↻ Compléter la banque QCM</button><button type="button" id="v8357Launch" class="btn primary">▶ Lancer mes QCM</button></div></div>';
@@ -103,6 +106,7 @@ function inject(){
   $('v8357Course').onchange=e=>{state.course=e.target.value;state.theme='all';populate()};
   $('v8357Theme').onchange=e=>{state.theme=e.target.value;populate()};
   $('v8357Difficulty').onchange=e=>{state.difficulty=e.target.value;populate()};
+  $('v8357Source').onchange=e=>{state.source=e.target.value;populate()};
   $('v8357Count').onchange=e=>{state.count=e.target.value;populate()};
   $('v8357Mode').onchange=e=>{state.mode=e.target.value;populate()};
   $('v8357Retry').onclick=()=>window.IFSI_QCM_RELOAD?.();

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "supplements": [
+    {
+      "id": "annales-paris-saclay-2025-lot01",
+      "pack": "qextra-54.txt",
+      "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+      "courseIds": [
+        "biomolecules",
+        "homeostasie",
+        "niveaux_organisation",
+        "systeme_endocrinien",
+        "systeme_immunitaire"
+      ],
+      "questionIds": [
+        "ann25_21_001",
+        "ann25_21_002",
+        "ann25_21_003",
+        "ann25_21_005",
+        "ann25_21_008",
+        "ann25_21_014",
+        "ann25_21_015",
+        "ann25_21_019",
+        "ann25_22_003",
+        "ann25_22_006",
+        "ann25_22_007",
+        "ann25_22_008",
+        "ann25_22_009",
+        "ann25_22_011",
+        "ann25_22_012",
+        "ann25_22_013",
+        "ann25_22_015",
+        "ann25_22_021",
+        "ann25_22_022",
+        "ann25_22_023",
+        "ann25_22_024",
+        "ann25_22_025"
+      ],
+      "questionCount": 22,
+      "flashcardCount": 22,
+      "gitBlobSha": "aa7817ce5e5b76eff0cf4bef152fe1eb6b3df9e0",
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "qcm_supplement",
+        "approvedAt": "2026-10-15T17:17:00Z"
+      }
+    }
+  ]
+}

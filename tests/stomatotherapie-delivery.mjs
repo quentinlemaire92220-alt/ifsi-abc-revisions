@@ -46,7 +46,12 @@ win.IFSI_VOCAB.startCourseQuiz('stomatotherapie');
 assert.equal(started.length,1);assert.equal(started[0].length,10);
 assert.ok(started[0].every(q=>q.theme==='Vocabulaire'&&bank.some(x=>x.id===q.id)));
 const old=questions.filter(q=>q.courseId!=='stomatotherapie');
-assert.equal(old.length,2403,'Banques voisines modifiées');
+const supplements=read('docs/qcm-supplements.json').supplements;
+const authorized=supplements.flatMap(x=>read(x.pack)).filter(q=>q.courseId!=='stomatotherapie');
+const authorizedIds=new Set(authorized.map(q=>q.id));
+assert.equal(authorizedIds.size,authorized.length,'Compléments QCM dupliqués');
+assert.equal(old.filter(q=>authorizedIds.has(q.id)).length,authorized.length,'Compléments approuvés incomplets');
+assert.equal(old.length,2403+authorized.length,'Banques voisines modifiées en dehors des compléments autorisés');
 assert.equal(registry.courses.filter(c=>c.id==='stomatotherapie').length,1);
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='stomatotherapie');
 assert.equal(delivery.status,'awaiting_mp3');
@@ -66,4 +71,4 @@ for(const [path,rows] of Object.entries({
  const own=rows.filter(x=>(x.courseId||x.id)==='stomatotherapie'||bank.includes(x));
  assert.ok(!/PLAUD|transcriptions?|Sources privées/i.test(JSON.stringify(own)),'Source interne exposée : '+path);
 }
-console.log('✅ Stomatothérapie : 50 QCM identiques à la matrice, 69 cartes décodées, 29 termes reliés, vocabulaire sans doublon, 2403 anciens QCM préservés, 0 MP3 fictif.');
+console.log('✅ Stomatothérapie : 50 QCM identiques à la matrice, 69 cartes décodées, 29 termes reliés, vocabulaire sans doublon, 2403 anciens QCM préservés et compléments QCM autorisés présents, 0 MP3 fictif.');

@@ -121,6 +121,12 @@ jobs:
       - name: Vérifier le retour des QCM par cours V8.30.57
         run: node tests/qcm-access-v8357.mjs
 
+      - name: Vérifier le préparateur d'annales 2025 sans publication
+        run: node tests/annales-preparation-v1.mjs
+
+      - name: Auditer les QCM et flashcards des annales 2025 publiées
+        run: node tests/annales-publication-v1.mjs
+
       - name: Tester le chargement QCM Android et l'état zéro question
         run: node tests/qcm-live-loading-v8374.mjs
 
