@@ -191,7 +191,7 @@
     "answers": [
       1
     ],
-    "explanation": "Un pH de 7 est neutre dans les conditions de référence du cours ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité.",
+    "explanation": "Pour une solution aqueuse à 25 °C, un pH de 7 correspond à la neutralité ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité.",
     "choiceFeedback": [
       {
         "incorrect": "Une solution acide a un pH inférieur à 7 dans ce cadre."
@@ -212,11 +212,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quel pH correspond à la neutralité dans le cours ?",
+        "front": "Quel pH correspond à la neutralité d'une solution aqueuse à 25 °C ?",
         "answers": [
           "pH 7."
         ],
-        "explanation": "Un pH de 7 est neutre dans les conditions de référence du cours ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité."
+        "explanation": "Pour une solution aqueuse à 25 °C, un pH de 7 correspond à la neutralité ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité."
       }
     ],
     "sourceKind": "annales_privees_2025",
