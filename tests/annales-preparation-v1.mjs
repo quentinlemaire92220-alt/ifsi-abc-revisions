@@ -16,9 +16,9 @@ const context={questions:()=>examples,state:{course:'all',theme:'all',difficulty
 vm.runInNewContext(source+'\n'+pool+'\nthis.result=pool().map(x=>x.id)',context);
 assert.deepEqual(Array.from(context.result),['annale'],'Le filtre origine mélange des sources');
 const registry={courses:[{id:'cours'}]};
-const valid={id:'ann25_21_001',sourceKind:'annales_privees_2025',sourceOriginalId:'ANN2025_UE21_001',sourceCaption:'Inspiré des annales Paris-Saclay 2025',sourcePage:2,courseId:'cours',question:'Quelle proposition est correcte ?',choices:['A définition','B contexte','C contrôle','D erreur','E comparaison'],answers:[0],explanation:'La première proposition est correcte et les autres ne conviennent pas.',reviewState:'validated',distractorFeedbackVerified:true,releaseApproved:true};
+const valid={id:'ann25_21_001',sourceKind:'annales_privees_2025',sourceOriginalId:'ANN2025_UE21_001',sourceCaption:'Inspiré des annales Paris-Saclay 2025',sourcePage:2,courseId:'cours',theme:'Biologie cellulaire',question:'Quelle proposition est correcte ?',choices:['A définition','B contexte','C contrôle','D erreur','E comparaison'],answers:[0],explanation:'La première proposition est correcte et les autres ne conviennent pas.',reviewState:'validated',distractorFeedbackVerified:true,releaseApproved:true};
 const check=q=>validateAnnales({items:[q]},registry,{publish:true});
 assert.equal(check(valid).publishable,true,'Lot validé injustement refusé');
-for(const bad of [{...valid,releaseApproved:false},{...valid,courseId:'absent'},{...valid,answers:[0,1,2,3]},{...valid,choices:['X','X','Y','Z','W']},{...valid,reviewState:'draft'}])
+for(const bad of [{...valid,releaseApproved:false},{...valid,courseId:'absent'},{...valid,answers:[0,1,2,3]},{...valid,choices:['X','X','Y','Z','W']},{...valid,reviewState:'draft'},{...valid,theme:'Annales 2025'}])
  assert.equal(check(bad).publishable,false,'Import invalide non bloqué');
 console.log('✅ Provenance QCM, sélection des flashcards et refus de publication non validée');
