@@ -43,10 +43,38 @@ export function changedResources(before, after) {
   return changes;
 }
 
-export function validatePartChanges(before, after, previousManifest, currentManifest) {
+export function validatePartChanges(before, after, previousManifest, currentManifest, supplements = {supplements:[]}) {
   assert.ok(Array.isArray(currentManifest.courses), 'Manifest courant invalide');
   const updates = changedResources(before, after);
-  const grouped = Map.groupBy(updates, x => x.courseId); // Node >= 22
+  // QCM de complément : seule une banque explicitement autorisée et vérifiée est dispensée
+  // des dossiers complets d'un nouveau cours. Tous les autres ajouts restent bloqués.
+  const supplementsByQuestion = new Map();
+  for (const sup of supplements.supplements||[]) {
+    assert.equal(sup.publicationApproval?.authorization,'explicit_go_publication',
+      'Complément QCM sans autorisation explicite');
+    assert.equal(sup.publicationApproval?.status,'approved',
+      'Complément QCM non approuvé');
+    assert.equal(sup.publicationApproval?.scope,'qcm_supplement',
+      'Portée d’autorisation QCM non précisée');
+    for (const id of sup.questionIds||[]) {
+      assert.ok(!supplementsByQuestion.has(id),'Question référencée dans deux compléments');
+      supplementsByQuestion.set(id,sup);
+    }
+  }
+  const ordinary = updates.filter(item => {
+    if (item.kind!=='qcm')return true;
+    const sup=supplementsByQuestion.get(item.id);
+    if (!sup)return true;
+    assert.ok((sup.courseIds||[]).includes(item.courseId),
+      'Cours non autorisé pour la question annales : '+item.id);
+    const q=after.questions.find(x=>x.id===item.id&&x.courseId===item.courseId);
+    assert.ok(q && q.sourceKind==='annales_privees_2025' &&
+      q.reviewState==='validated' && q.releaseApproved===true &&
+      q.distractorFeedbackVerified===true,
+      'Complément pédagogique non vérifié : '+item.id);
+    return false;
+  });
+  const grouped = Map.groupBy(ordinary, x => x.courseId); // Node >= 22
   for (const [courseId, additions] of grouped) {
     const delivery = currentManifest.courses.find(x => x.courseId === courseId);
     assert.ok(delivery, courseId + ': nouvelles ressources non déclarées dans docs/course-deliveries.json');
