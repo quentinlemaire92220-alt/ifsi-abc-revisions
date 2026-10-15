@@ -1,0 +1,1265 @@
+[
+  {
+    "id": "ann25_21_001",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Atomes, ions et liaisons",
+    "difficulty": "medium",
+    "number": 1,
+    "question": "Que peut-on affirmer du noyau d’un atome ?",
+    "choices": [
+      "Il contient les protons et les neutrons.",
+      "Il rassemble les électrons de l’atome.",
+      "Sa charge électrique totale est négative.",
+      "Il porte une charge électrique positive.",
+      "Il correspond au nuage électronique."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le noyau regroupe les nucléons, protons et neutrons. Les protons portent des charges positives ; les électrons occupent le cortège électronique.",
+    "choiceFeedback": [
+      {
+        "missed": "Les nucléons sont les protons et les neutrons."
+      },
+      {
+        "incorrect": "Les électrons sont situés dans le cortège électronique."
+      },
+      {
+        "incorrect": "Les neutrons sont neutres ; le noyau est positif par ses protons."
+      },
+      {
+        "missed": "La présence de protons rend le noyau globalement positif."
+      },
+      {
+        "incorrect": "Le nuage électronique entoure le noyau, il ne le constitue pas."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels éléments forment les nucléons ?",
+        "answers": [
+          "Protons et neutrons."
+        ],
+        "explanation": "Le noyau regroupe les nucléons, protons et neutrons. Les protons portent des charges positives ; les électrons occupent le cortège électronique."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_001",
+    "sourcePage": 2,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_002",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Atomes, ions et liaisons",
+    "difficulty": "easy",
+    "number": 2,
+    "question": "Quel symbole du tableau périodique correspond au sodium ?",
+    "choices": [
+      "S",
+      "N",
+      "Na",
+      "Ca",
+      "Cl"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Na est l’abréviation du sodium (natrium). N désigne l’azote, S le soufre, Ca le calcium et Cl le chlore.",
+    "choiceFeedback": [
+      {
+        "incorrect": "S représente le soufre."
+      },
+      {
+        "incorrect": "N représente l’azote."
+      },
+      {
+        "missed": "Na est le symbole du sodium."
+      },
+      {
+        "incorrect": "Ca est le symbole du calcium."
+      },
+      {
+        "incorrect": "Cl est le symbole du chlore."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le symbole du sodium ?",
+        "answers": [
+          "Na."
+        ],
+        "explanation": "Na est l’abréviation du sodium (natrium). N désigne l’azote, S le soufre, Ca le calcium et Cl le chlore."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_002",
+    "sourcePage": 2,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_003",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Atomes, ions et liaisons",
+    "difficulty": "medium",
+    "number": 3,
+    "question": "À propos des liaisons entre atomes, quelles propositions sont exactes ?",
+    "choices": [
+      "Une liaison covalente résulte d’un partage d’électrons.",
+      "Les liaisons chimiques relient seulement des neutrons.",
+      "Une liaison ionique correspond à un partage d’électrons de même nature qu’une liaison covalente.",
+      "Une liaison hydrogène est une interaction relativement faible.",
+      "Les électrons ne participent jamais aux liaisons chimiques."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Une liaison covalente implique un partage d’électrons. Une interaction hydrogène est faible relativement à une liaison covalente ; les liaisons ioniques dépendent de charges électriques opposées.",
+    "choiceFeedback": [
+      {
+        "missed": "Le partage des électrons caractérise la liaison covalente."
+      },
+      {
+        "incorrect": "Les neutrons ne sont pas les particules engagées dans les liaisons ordinaires."
+      },
+      {
+        "incorrect": "La liaison ionique relève surtout d’une attraction électrostatique entre ions."
+      },
+      {
+        "missed": "La liaison hydrogène est dite faible dans cette classification."
+      },
+      {
+        "incorrect": "Les électrons de valence participent aux liaisons chimiques."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel mécanisme caractérise une liaison covalente ?",
+        "answers": [
+          "Le partage d’électrons."
+        ],
+        "explanation": "Une liaison covalente implique un partage d’électrons. Une interaction hydrogène est faible relativement à une liaison covalente ; les liaisons ioniques dépendent de charges électriques opposées."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_003",
+    "sourcePage": 2,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_005",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "pH et équilibre acido-basique",
+    "difficulty": "easy",
+    "number": 5,
+    "question": "À température de référence, que signifie un pH de 7 pour une solution aqueuse ?",
+    "choices": [
+      "Elle est très acide.",
+      "Elle est neutre.",
+      "Elle est forcément riche en sodium.",
+      "Elle est alcaline.",
+      "Elle contient nécessairement du glucose."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Un pH de 7 est neutre dans les conditions de référence du cours ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Une solution acide a un pH inférieur à 7 dans ce cadre."
+      },
+      {
+        "missed": "Le pH 7 correspond à la neutralité."
+      },
+      {
+        "incorrect": "Le pH ne mesure pas directement la teneur en sodium."
+      },
+      {
+        "incorrect": "Une solution basique a un pH supérieur à 7."
+      },
+      {
+        "incorrect": "Le glucose n’est pas défini par le pH."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel pH correspond à la neutralité dans le cours ?",
+        "answers": [
+          "pH 7."
+        ],
+        "explanation": "Un pH de 7 est neutre dans les conditions de référence du cours ; une valeur inférieure traduit une acidité et une valeur supérieure une basicité."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_005",
+    "sourcePage": 2,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_008",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Atomes, ions et liaisons",
+    "difficulty": "easy",
+    "number": 8,
+    "question": "Quelle écriture chimique désigne l’ion chlorure ?",
+    "choices": [
+      "Ca²⁺",
+      "Na⁺",
+      "Cl⁻",
+      "K⁺",
+      "H⁺"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’ion chlorure, Cl⁻, est un anion issu du chlore après gain d’un électron. Na⁺ et K⁺ sont d’autres ions, de charge positive.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Ca²⁺ est l’ion calcium."
+      },
+      {
+        "incorrect": "Na⁺ est l’ion sodium."
+      },
+      {
+        "missed": "Cl⁻ correspond bien à l’ion chlorure."
+      },
+      {
+        "incorrect": "K⁺ est l’ion potassium."
+      },
+      {
+        "incorrect": "H⁺ est un proton, pas l’ion chlorure."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle charge porte l’ion chlorure ?",
+        "answers": [
+          "Une charge négative : Cl⁻."
+        ],
+        "explanation": "L’ion chlorure, Cl⁻, est un anion issu du chlore après gain d’un électron. Na⁺ et K⁺ sont d’autres ions, de charge positive."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_008",
+    "sourcePage": 3,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_014",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Glucides et métabolisme",
+    "difficulty": "medium",
+    "number": 14,
+    "question": "Quelle description convient au glycogène ?",
+    "choices": [
+      "C’est une réserve glucidique notamment hépatique.",
+      "Il s’agit d’un assemblage d’acides aminés.",
+      "Il est constitué principalement d’unités de glucose.",
+      "Il correspond à un acide gras essentiel.",
+      "C’est un sucre simple formé d’une seule unité."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le glycogène est un polysaccharide de stockage composé d’unités de glucose, principalement présent dans le foie et les muscles.",
+    "choiceFeedback": [
+      {
+        "missed": "Le foie stocke une partie du glucose sous forme de glycogène."
+      },
+      {
+        "incorrect": "Un assemblage d’acides aminés constitue une protéine."
+      },
+      {
+        "missed": "Le glycogène est un polymère de glucose."
+      },
+      {
+        "incorrect": "Un acide gras appartient à une autre famille de biomolécules."
+      },
+      {
+        "incorrect": "Le glycogène est un polysaccharide, pas un monosaccharide."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "De quel sucre le glycogène est-il constitué ?",
+        "answers": [
+          "De glucose."
+        ],
+        "explanation": "Le glycogène est un polysaccharide de stockage composé d’unités de glucose, principalement présent dans le foie et les muscles."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_014",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_015",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Glucides et métabolisme",
+    "difficulty": "easy",
+    "number": 15,
+    "question": "Quel terme désigne la quantité de glucose mesurée dans le sang ?",
+    "choices": [
+      "La calcémie",
+      "La natrémie",
+      "L’hématocrite",
+      "La glycémie",
+      "La créatininémie"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La glycémie correspond à la concentration sanguine de glucose. Calcémie, natrémie et créatininémie concernent d’autres substances.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La calcémie mesure le calcium sanguin."
+      },
+      {
+        "incorrect": "La natrémie mesure le sodium sanguin."
+      },
+      {
+        "incorrect": "L’hématocrite est une proportion du volume des globules rouges."
+      },
+      {
+        "missed": "La glycémie est la concentration sanguine en glucose."
+      },
+      {
+        "incorrect": "La créatininémie mesure la créatinine dans le sang."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’appelle-t-on glycémie ?",
+        "answers": [
+          "La concentration sanguine en glucose."
+        ],
+        "explanation": "La glycémie correspond à la concentration sanguine de glucose. Calcémie, natrémie et créatininémie concernent d’autres substances."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_015",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_21_019",
+    "ue": "S1 B1",
+    "course": "Biomolécules",
+    "courseId": "biomolecules",
+    "theme": "Enzymes",
+    "difficulty": "medium",
+    "number": 19,
+    "question": "Quelles fonctions ou caractéristiques sont propres aux enzymes ?",
+    "choices": [
+      "Elles sont nécessairement des sucres simples.",
+      "Elles facilitent certaines réactions biologiques.",
+      "Leur activité ne varie jamais avec la température.",
+      "Certaines participent à la digestion des aliments.",
+      "Elles sont toutes des réserves énergétiques lipidiques."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Les enzymes sont des catalyseurs biologiques ; nombre d’entre elles sont des protéines. Certaines participent à la digestion et leur activité dépend des conditions, dont le pH et la température.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Les enzymes ne sont pas définies comme des monosaccharides."
+      },
+      {
+        "missed": "Elles accélèrent des réactions biochimiques."
+      },
+      {
+        "incorrect": "Leur activité dépend des conditions physicochimiques."
+      },
+      {
+        "missed": "Des enzymes digestives transforment les nutriments."
+      },
+      {
+        "incorrect": "Les enzymes ne sont pas des lipides de stockage."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert une enzyme lors d’une réaction ?",
+        "answers": [
+          "À la catalyser."
+        ],
+        "explanation": "Les enzymes sont des catalyseurs biologiques ; nombre d’entre elles sont des protéines. Certaines participent à la digestion et leur activité dépend des conditions, dont le pH et la température."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE21_019",
+    "sourcePage": 5,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_003",
+    "ue": "S1 B1",
+    "course": "Niveaux d’organisation",
+    "courseId": "niveaux_organisation",
+    "theme": "Niveaux d’organisation du corps",
+    "difficulty": "medium",
+    "number": 3,
+    "question": "À propos des niveaux d’organisation humaine, que retenir ?",
+    "choices": [
+      "Les tissus appartiennent au niveau chimique de l’organisme.",
+      "Le corps humain adulte est un organisme unicellulaire.",
+      "Chaque cellule humaine est dépourvue d’organites.",
+      "La cellule est un niveau d’organisation distinct de celui des tissus.",
+      "Les organes et systèmes contribuent aux grandes fonctions vitales."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Les cellules constituent les tissus, qui composent des organes, eux-mêmes intégrés dans des systèmes. Le niveau chimique désigne les atomes et molécules.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Les tissus relèvent d’un niveau d’organisation supérieur au niveau chimique."
+      },
+      {
+        "incorrect": "L’être humain est un organisme pluricellulaire."
+      },
+      {
+        "incorrect": "Les cellules contiennent divers organites."
+      },
+      {
+        "missed": "Le niveau cellulaire précède le niveau tissulaire."
+      },
+      {
+        "missed": "Les systèmes assurent ensemble les fonctions nécessaires à la vie."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel niveau suit immédiatement le niveau cellulaire ?",
+        "answers": [
+          "Le niveau tissulaire."
+        ],
+        "explanation": "Les cellules constituent les tissus, qui composent des organes, eux-mêmes intégrés dans des systèmes. Le niveau chimique désigne les atomes et molécules."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_003",
+    "sourcePage": 2,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_006",
+    "ue": "S1 B1",
+    "course": "Homéostasie",
+    "courseId": "homeostasie",
+    "theme": "Régulation homéostatique",
+    "difficulty": "medium",
+    "number": 6,
+    "question": "Concernant un système de régulation homéostatique, quelles affirmations sont justes ?",
+    "choices": [
+      "Il contribue au maintien des variables dans une plage compatible avec la vie.",
+      "Le centre régulateur reçoit l’information uniquement par voie efférente.",
+      "Le rétrocontrôle négatif est exceptionnel.",
+      "Les informations détectées peuvent rejoindre le centre par des voies afférentes.",
+      "Un effecteur agit toujours sans signal de régulation."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’homéostasie s’appuie sur des capteurs, un centre de régulation et des effecteurs ; le rétrocontrôle négatif est un mécanisme fréquent.",
+    "choiceFeedback": [
+      {
+        "missed": "L’objectif est de limiter les écarts des variables physiologiques."
+      },
+      {
+        "incorrect": "La voie efférente véhicule généralement la commande du centre vers l’effecteur."
+      },
+      {
+        "incorrect": "Le rétrocontrôle négatif est très courant."
+      },
+      {
+        "missed": "Les voies afférentes acheminent l’information détectée au centre."
+      },
+      {
+        "incorrect": "Les effecteurs réalisent une réponse après réception d’une commande."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre voies afférentes et efférentes ?",
+        "answers": [
+          "Afférentes vers le centre ; efférentes vers l’effecteur."
+        ],
+        "explanation": "L’homéostasie s’appuie sur des capteurs, un centre de régulation et des effecteurs ; le rétrocontrôle négatif est un mécanisme fréquent."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_006",
+    "sourcePage": 3,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_007",
+    "ue": "S1 B1",
+    "course": "Homéostasie",
+    "courseId": "homeostasie",
+    "theme": "Thermorégulation",
+    "difficulty": "easy",
+    "number": 7,
+    "question": "Quel mécanisme explique la production de chaleur lors de frissons ?",
+    "choices": [
+      "L’augmentation volontaire de la ventilation.",
+      "Des contractions musculaires involontaires.",
+      "La sécrétion accrue de sébum.",
+      "Une thermolyse cutanée.",
+      "La diminution directe de la glycémie."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Les frissons sont des contractions involontaires des muscles squelettiques qui contribuent à la thermogenèse, donc à la production de chaleur.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La ventilation ne définit pas les frissons."
+      },
+      {
+        "missed": "Le muscle produit de la chaleur pendant les contractions involontaires."
+      },
+      {
+        "incorrect": "Les glandes sébacées ne provoquent pas les frissons."
+      },
+      {
+        "incorrect": "La thermolyse correspond à une perte de chaleur."
+      },
+      {
+        "incorrect": "La glycémie n’explique pas le mécanisme des frissons."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Les frissons participent-ils à la thermogenèse ?",
+        "answers": [
+          "Oui, par contractions musculaires involontaires."
+        ],
+        "explanation": "Les frissons sont des contractions involontaires des muscles squelettiques qui contribuent à la thermogenèse, donc à la production de chaleur."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_007",
+    "sourcePage": 3,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_008",
+    "ue": "S1 B1",
+    "course": "Homéostasie",
+    "courseId": "homeostasie",
+    "theme": "Équilibre acido-basique",
+    "difficulty": "easy",
+    "number": 8,
+    "question": "Quelle valeur est la plus proche du pH sanguin artériel physiologique ?",
+    "choices": [
+      "6,1",
+      "6,8",
+      "7,4",
+      "8,1",
+      "9,0"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le pH sanguin artériel est normalement maintenu autour de 7,40, dans un intervalle approximatif de 7,35 à 7,45.",
+    "choiceFeedback": [
+      {
+        "incorrect": "6,1 correspond à une acidité incompatible avec un pH artériel normal."
+      },
+      {
+        "incorrect": "6,8 est très inférieur à la plage physiologique."
+      },
+      {
+        "missed": "7,4 est la valeur usuelle de référence."
+      },
+      {
+        "incorrect": "8,1 est trop alcalin pour un pH artériel normal."
+      },
+      {
+        "incorrect": "9,0 est largement au-dessus des valeurs physiologiques."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la plage habituelle du pH artériel ?",
+        "answers": [
+          "Environ 7,35 à 7,45."
+        ],
+        "explanation": "Le pH sanguin artériel est normalement maintenu autour de 7,40, dans un intervalle approximatif de 7,35 à 7,45."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_008",
+    "sourcePage": 3,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_009",
+    "ue": "S1 B1",
+    "course": "Système endocrinien",
+    "courseId": "systeme_endocrinien",
+    "theme": "Glandes et hormones",
+    "difficulty": "medium",
+    "number": 9,
+    "question": "Parmi les propositions sur l’insuline, lesquelles sont correctes ?",
+    "choices": [
+      "Elle est sécrétée principalement par les hépatocytes.",
+      "Elle abaisse la glycémie.",
+      "Elle est une hormone de nature peptidique.",
+      "Elle constitue une hormone hypercalcémiante.",
+      "Elle agit notamment sur le métabolisme hépatique du glucose."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "L’insuline est une hormone peptidique sécrétée par les cellules bêta des îlots pancréatiques. Elle favorise la diminution du glucose sanguin, avec des actions sur le foie et d’autres tissus.",
+    "choiceFeedback": [
+      {
+        "incorrect": "L’insuline est fabriquée par le pancréas endocrine, pas les hépatocytes."
+      },
+      {
+        "missed": "Elle contribue à faire baisser la glycémie."
+      },
+      {
+        "missed": "Elle est constituée d’une chaîne peptidique."
+      },
+      {
+        "incorrect": "L’insuline régule surtout le glucose et non la calcémie."
+      },
+      {
+        "missed": "Le foie est un tissu cible important de l’insuline."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle cellule pancréatique sécrète l’insuline ?",
+        "answers": [
+          "La cellule bêta des îlots pancréatiques."
+        ],
+        "explanation": "L’insuline est une hormone peptidique sécrétée par les cellules bêta des îlots pancréatiques. Elle favorise la diminution du glucose sanguin, avec des actions sur le foie et d’autres tissus."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_009",
+    "sourcePage": 3,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_011",
+    "ue": "S1 B1",
+    "course": "Système endocrinien",
+    "courseId": "systeme_endocrinien",
+    "theme": "Glandes et hormones",
+    "difficulty": "easy",
+    "number": 11,
+    "question": "Quel paramètre sanguin la parathormone (PTH) contribue-t-elle surtout à réguler ?",
+    "choices": [
+      "La chlorémie",
+      "La calcémie",
+      "La glycémie",
+      "La natrémie",
+      "La bilirubinémie"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La PTH est une hormone sécrétée par les glandes parathyroïdes qui participe principalement au maintien de la concentration de calcium dans le sang.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La chlorémie désigne la concentration du chlore."
+      },
+      {
+        "missed": "La PTH participe directement au contrôle de la calcémie."
+      },
+      {
+        "incorrect": "La glycémie est notamment régulée par l’insuline et le glucagon."
+      },
+      {
+        "incorrect": "La natrémie dépend principalement d’autres régulations hormonales."
+      },
+      {
+        "incorrect": "La bilirubine relève d’autres mécanismes métaboliques."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quelle variable la PTH est-elle liée ?",
+        "answers": [
+          "À la calcémie."
+        ],
+        "explanation": "La PTH est une hormone sécrétée par les glandes parathyroïdes qui participe principalement au maintien de la concentration de calcium dans le sang."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_011",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_012",
+    "ue": "S1 B1",
+    "course": "Système endocrinien",
+    "courseId": "systeme_endocrinien",
+    "theme": "Équilibre hydrique et vasopressine",
+    "difficulty": "medium",
+    "number": 12,
+    "question": "Quelle hormone favorise directement la réabsorption d’eau au niveau des reins ?",
+    "choices": [
+      "La mélatonine",
+      "Le glucagon",
+      "La vasopressine (ADH)",
+      "La calcitonine",
+      "La TSH"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La vasopressine, également nommée hormone antidiurétique ou ADH, agit au niveau rénal pour favoriser la réabsorption d’eau et limiter les pertes urinaires.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La mélatonine est surtout liée aux rythmes veille-sommeil."
+      },
+      {
+        "incorrect": "Le glucagon participe à la régulation du glucose."
+      },
+      {
+        "missed": "L’ADH favorise la conservation de l’eau par le rein."
+      },
+      {
+        "incorrect": "La calcitonine participe à la régulation du calcium."
+      },
+      {
+        "incorrect": "La TSH stimule la fonction thyroïdienne."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie ADH ?",
+        "answers": [
+          "Hormone antidiurétique."
+        ],
+        "explanation": "La vasopressine, également nommée hormone antidiurétique ou ADH, agit au niveau rénal pour favoriser la réabsorption d’eau et limiter les pertes urinaires."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_012",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_013",
+    "ue": "S1 B1",
+    "course": "Système endocrinien",
+    "courseId": "systeme_endocrinien",
+    "theme": "Glandes et hormones",
+    "difficulty": "easy",
+    "number": 13,
+    "question": "Dans quelle glande trouve-t-on les cellules qui produisent la calcitonine ?",
+    "choices": [
+      "La surrénale",
+      "La parathyroïde",
+      "La thyroïde",
+      "Le pancréas",
+      "L’hypophyse"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La calcitonine provient des cellules parafolliculaires C de la thyroïde. Les parathyroïdes produisent la PTH.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Les surrénales produisent notamment le cortisol et l’aldostérone."
+      },
+      {
+        "incorrect": "Les parathyroïdes produisent la PTH et non la calcitonine."
+      },
+      {
+        "missed": "Les cellules C thyroïdiennes produisent la calcitonine."
+      },
+      {
+        "incorrect": "Le pancréas sécrète notamment insuline et glucagon."
+      },
+      {
+        "incorrect": "L’hypophyse ne produit pas la calcitonine."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle glande produit la calcitonine ?",
+        "answers": [
+          "La thyroïde."
+        ],
+        "explanation": "La calcitonine provient des cellules parafolliculaires C de la thyroïde. Les parathyroïdes produisent la PTH."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_013",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_015",
+    "ue": "S1 B1",
+    "course": "Système endocrinien",
+    "courseId": "systeme_endocrinien",
+    "theme": "Glandes et hormones",
+    "difficulty": "medium",
+    "number": 15,
+    "question": "Quelles caractéristiques de la thyroïde sont exactes ?",
+    "choices": [
+      "Elle est localisée dans le pelvis.",
+      "Elle se trouve dans le cou en avant de la trachée.",
+      "Elle assure la sécrétion de l’aldostérone.",
+      "Elle produit notamment l’hormone T4.",
+      "Elle est une partie du foie."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La thyroïde est une glande endocrine cervicale, située en avant de la trachée ; elle produit des hormones thyroïdiennes, dont la thyroxine T4.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La thyroïde n’est pas pelvienne."
+      },
+      {
+        "missed": "Elle est située dans la région cervicale antérieure."
+      },
+      {
+        "incorrect": "L’aldostérone est sécrétée par le cortex surrénalien."
+      },
+      {
+        "missed": "T4 est une hormone thyroïdienne."
+      },
+      {
+        "incorrect": "La thyroïde est un organe distinct du foie."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle hormone thyroïdienne porte le sigle T4 ?",
+        "answers": [
+          "La thyroxine."
+        ],
+        "explanation": "La thyroïde est une glande endocrine cervicale, située en avant de la trachée ; elle produit des hormones thyroïdiennes, dont la thyroxine T4."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_015",
+    "sourcePage": 4,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_021",
+    "ue": "S1 B1",
+    "course": "Système immunitaire",
+    "courseId": "systeme_immunitaire",
+    "theme": "Immunité innée",
+    "difficulty": "easy",
+    "number": 21,
+    "question": "Quel mécanisme de défense caractérise particulièrement les macrophages ?",
+    "choices": [
+      "La sécrétion exclusive des immunoglobulines.",
+      "La fabrication des érythrocytes.",
+      "La phagocytose d’agents étrangers.",
+      "La production d’insuline.",
+      "La synthèse d’hormones thyroïdiennes."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Les macrophages sont des cellules immunitaires capables d’englober et digérer des éléments étrangers par phagocytose. Les anticorps sont sécrétés notamment par les plasmocytes.",
+    "choiceFeedback": [
+      {
+        "incorrect": "La sécrétion d’anticorps relève surtout des plasmocytes."
+      },
+      {
+        "incorrect": "Les globules rouges proviennent de la lignée érythroïde médullaire."
+      },
+      {
+        "missed": "Les macrophages participent à la phagocytose."
+      },
+      {
+        "incorrect": "L’insuline provient des cellules bêta du pancréas."
+      },
+      {
+        "incorrect": "Les hormones thyroïdiennes sont synthétisées par la thyroïde."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel processus utilisent les macrophages pour éliminer un microbe ?",
+        "answers": [
+          "La phagocytose."
+        ],
+        "explanation": "Les macrophages sont des cellules immunitaires capables d’englober et digérer des éléments étrangers par phagocytose. Les anticorps sont sécrétés notamment par les plasmocytes."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_021",
+    "sourcePage": 6,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_022",
+    "ue": "S1 B1",
+    "course": "Système immunitaire",
+    "courseId": "systeme_immunitaire",
+    "theme": "Immunité adaptative",
+    "difficulty": "easy",
+    "number": 22,
+    "question": "Quelle branche de l’immunité adaptative repose sur l’activité des lymphocytes B ?",
+    "choices": [
+      "L’immunité exclusivement innée.",
+      "L’immunité humorale.",
+      "La contraction musculaire.",
+      "La thermorégulation.",
+      "La production d’hémoglobine."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Les lymphocytes B peuvent se différencier en plasmocytes, capables de sécréter des anticorps : ils sont fondamentaux pour la réponse humorale.",
+    "choiceFeedback": [
+      {
+        "incorrect": "L’immunité innée agit sans spécificité antigénique comparable."
+      },
+      {
+        "missed": "L’immunité humorale repose notamment sur les anticorps."
+      },
+      {
+        "incorrect": "La contraction musculaire n’est pas la fonction principale des lymphocytes B."
+      },
+      {
+        "incorrect": "La thermorégulation ne définit pas leur fonction."
+      },
+      {
+        "incorrect": "L’hémoglobine se trouve dans les globules rouges."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel type de réponse est associé aux lymphocytes B ?",
+        "answers": [
+          "L’immunité humorale."
+        ],
+        "explanation": "Les lymphocytes B peuvent se différencier en plasmocytes, capables de sécréter des anticorps : ils sont fondamentaux pour la réponse humorale."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_022",
+    "sourcePage": 6,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_023",
+    "ue": "S1 B1",
+    "course": "Système immunitaire",
+    "courseId": "systeme_immunitaire",
+    "theme": "Immunité adaptative",
+    "difficulty": "easy",
+    "number": 23,
+    "question": "À quelle réponse immunitaire les lymphocytes T participent-ils principalement ?",
+    "choices": [
+      "Une réponse cellulaire.",
+      "La production directe d’hématies.",
+      "La sécrétion principale d’IgM par les plasmocytes.",
+      "La thermolyse.",
+      "La filtration glomérulaire."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Les lymphocytes T interviennent surtout dans l’immunité à médiation cellulaire ; les lymphocytes T cytotoxiques éliminent certaines cellules infectées.",
+    "choiceFeedback": [
+      {
+        "missed": "La réponse cellulaire implique les lymphocytes T."
+      },
+      {
+        "incorrect": "Les hématies appartiennent à la lignée érythroïde."
+      },
+      {
+        "incorrect": "La production d’anticorps est assurée par des plasmocytes dérivés des lymphocytes B."
+      },
+      {
+        "incorrect": "La thermolyse désigne la perte de chaleur."
+      },
+      {
+        "incorrect": "La filtration glomérulaire est une fonction rénale."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel type d’immunité implique surtout les lymphocytes T ?",
+        "answers": [
+          "L’immunité cellulaire."
+        ],
+        "explanation": "Les lymphocytes T interviennent surtout dans l’immunité à médiation cellulaire ; les lymphocytes T cytotoxiques éliminent certaines cellules infectées."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_023",
+    "sourcePage": 6,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_024",
+    "ue": "S1 B1",
+    "course": "Système immunitaire",
+    "courseId": "systeme_immunitaire",
+    "theme": "Immunité adaptative",
+    "difficulty": "easy",
+    "number": 24,
+    "question": "Quelle famille de molécules correspond aux anticorps ?",
+    "choices": [
+      "Les triglycérides.",
+      "Les antigènes.",
+      "Les immunoglobulines.",
+      "Les acides nucléiques.",
+      "Les phospholipides."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Les anticorps sont des immunoglobulines qui se lient de façon spécifique à des antigènes ; ils ne sont pas eux-mêmes des antigènes au sens de la question.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Les triglycérides sont des lipides."
+      },
+      {
+        "incorrect": "Un antigène est reconnu par une réponse immunitaire."
+      },
+      {
+        "missed": "Les anticorps appartiennent aux immunoglobulines."
+      },
+      {
+        "incorrect": "Les acides nucléiques sont l’ADN et l’ARN."
+      },
+      {
+        "incorrect": "Les phospholipides constituent notamment les membranes."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment appelle-t-on également les anticorps ?",
+        "answers": [
+          "Immunoglobulines."
+        ],
+        "explanation": "Les anticorps sont des immunoglobulines qui se lient de façon spécifique à des antigènes ; ils ne sont pas eux-mêmes des antigènes au sens de la question."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_024",
+    "sourcePage": 6,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  },
+  {
+    "id": "ann25_22_025",
+    "ue": "S1 B1",
+    "course": "Système immunitaire",
+    "courseId": "systeme_immunitaire",
+    "theme": "Immunité adaptative",
+    "difficulty": "easy",
+    "number": 25,
+    "question": "Quel élément est reconnu de façon spécifique lors de l’activation de l’immunité adaptative ?",
+    "choices": [
+      "Un nutriment quelconque.",
+      "Un antigène.",
+      "Une hormone stéroïdienne par principe.",
+      "Une cellule musculaire quelconque.",
+      "La lumière du jour."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La réponse immunitaire adaptative repose sur la reconnaissance spécifique d’un antigène par des récepteurs lymphocytaires adaptés.",
+    "choiceFeedback": [
+      {
+        "incorrect": "Un nutriment n’active pas nécessairement une réponse adaptative."
+      },
+      {
+        "missed": "La reconnaissance antigénique est centrale."
+      },
+      {
+        "incorrect": "Une hormone stéroïdienne n’est pas par définition un antigène."
+      },
+      {
+        "incorrect": "Une cellule musculaire saine n’est pas par principe l’élément déclencheur."
+      },
+      {
+        "incorrect": "La lumière n’est pas un antigène."
+      }
+    ],
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle structure est reconnue par les lymphocytes spécifiques ?",
+        "answers": [
+          "Un antigène."
+        ],
+        "explanation": "La réponse immunitaire adaptative repose sur la reconnaissance spécifique d’un antigène par des récepteurs lymphocytaires adaptés."
+      }
+    ],
+    "sourceKind": "annales_privees_2025",
+    "sourceOriginalId": "ANN2025_UE22_025",
+    "sourcePage": 6,
+    "sourceCaption": "Inspiré des annales Paris-Saclay 2025",
+    "editedFromOriginal": true,
+    "reviewState": "validated",
+    "distractorFeedbackVerified": true,
+    "releaseApproved": true,
+    "reviewBasis": "Support officiel IFSI ABC 2026 du cours associé, comparé aux annales 2024-2025"
+  }
+]
