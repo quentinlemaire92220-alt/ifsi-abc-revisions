@@ -6,7 +6,7 @@ const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const qcm=read('v8357-qcm-access.js'),flash=read('v8338-flashcards.js');
 for(const token of ["source:'all'","sourceOf(q)===state.source",'v8357Source','Annales Paris-Saclay 2025','source:state.source'])
  assert.ok(qcm.includes(token),'Filtre annales incomplet : '+token);
-for(const token of ["sourceKind:q.sourceKind||null","sourceCaption:q.sourceCaption||null","q.sourceKind==='annales_privees_2025'?false",'selectCards(normalCards,40)','selectCards(annalesCards,annalesCards.length)','card.sourceCaption'])
+for(const token of ["sourceKind:q.sourceKind||null","sourceCaption:q.sourceCaption||null","q.sourceKind==='annales_privees_2025'?false",'selectCards(normalCards,c.flashcardTarget||40)','selectCards(annalesCards,annalesCards.length)','card.sourceCaption'])
  assert.ok(flash.includes(token),'Cartes issues des annales absentes : '+token);
 const source=qcm.split('\n').find(x=>x.trim().startsWith('const sourceOf=q=>'));
 const pool=qcm.split('\n').find(x=>x.startsWith('function pool(){'));

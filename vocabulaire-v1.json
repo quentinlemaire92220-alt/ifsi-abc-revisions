@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-16",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -2158,9 +2158,13 @@
       "etymologie": "consentement (accord) + libre (sans contrainte) + éclairé (après information).",
       "courseIds": [
         "introduction_droit",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "droits_patients"
       ],
-      "sourceType": "reference_pedagogique"
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionIdsByCourse": {
+        "droits_patients": "droits_patients_p01_q040"
+      }
     },
     {
       "id": "secret-professionnel",
@@ -2171,9 +2175,13 @@
       "etymologie": "secret (confidentialité) + professionnel (lié à la fonction).",
       "courseIds": [
         "introduction_droit",
-        "histoire_profession_infirmiere"
+        "histoire_profession_infirmiere",
+        "droits_patients"
       ],
-      "sourceType": "reference_pedagogique"
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionIdsByCourse": {
+        "droits_patients": "droits_patients_p01_q023"
+      }
     },
     {
       "id": "responsabilite-civile",
@@ -2283,9 +2291,13 @@
       "distinction": "Une loi est un texte normatif adopté selon la procédure législative.",
       "etymologie": "juris- (droit) + prudence (connaissance pratique, discernement).",
       "courseIds": [
-        "introduction_droit"
+        "introduction_droit",
+        "droits_patients"
       ],
-      "sourceType": "reference_pedagogique"
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionIdsByCourse": {
+        "droits_patients": "droits_patients_p01_q079"
+      }
     },
     {
       "id": "ordre-infirmier",
@@ -3938,6 +3950,409 @@
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionId": "stoma_p01_050"
+    },
+    {
+      "id": "droits_patients_voc_01",
+      "term": "Usager du système de santé",
+      "definition": "Personne bénéficiant notamment de prévention, dépistage ou soins, même sans maladie diagnostiquée.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Plus large que la seule personne malade.",
+      "theme": "Des droits construits progressivement",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q081",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_03",
+      "term": "Obligation de moyens",
+      "definition": "Exigence de mettre en œuvre les diligences et soins appropriés, sans garantir un résultat déterminé.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "La persistance d’une maladie ne prouve pas, à elle seule, une faute.",
+      "theme": "Dignité et soins conformes aux connaissances",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q011",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_04",
+      "term": "Continuité des soins",
+      "definition": "Cohérence et relais du parcours pour éviter les ruptures de prise en charge.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Distincte de l’organisation de la permanence des soins.",
+      "theme": "Accès, continuité, permanence et handicap",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q005",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_05",
+      "term": "Permanence des soins",
+      "definition": "Organisation d’une réponse aux besoins de soins dans les conditions légales, notamment hors des horaires usuels.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "N’impose pas une disponibilité individuelle permanente de chaque professionnel.",
+      "theme": "Accès, continuité, permanence et handicap",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q082",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_06",
+      "term": "Discrimination dans l’accès aux soins",
+      "definition": "Traitement défavorable fondé sur un motif prohibé, pouvant notamment prendre la forme d’un refus ou d’un délai injustifié.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Tout refus médicalement justifié n’est pas une discrimination.",
+      "theme": "Non-discrimination et refus de prise en charge",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q007",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_07",
+      "term": "Dignité",
+      "definition": "Valeur intrinsèque de toute personne fondant son droit inconditionnel au respect.",
+      "etymologie": "Du latin dignitas : valeur, considération.",
+      "distinction": "Elle ne dépend ni de l’autonomie fonctionnelle ni du comportement.",
+      "theme": "Dignité et soins conformes aux connaissances",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q083",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_08",
+      "term": "Souffrance réfractaire",
+      "definition": "Souffrance qui ne peut être soulagée de façon satisfaisante par les traitements adaptés dans la situation considérée.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "À distinguer de la seule intensité ou d’une souffrance dite insupportable dans un autre cas légal.",
+      "theme": "Sédation profonde et continue jusqu’au décès",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q019",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_09",
+      "term": "Soins palliatifs",
+      "definition": "Soins actifs et continus, introduits selon les besoins, visant les symptômes et les dimensions psychiques, sociales et spirituelles, avec accompagnement de l’entourage.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ils ne signifient pas abandon des soins.",
+      "theme": "Soins palliatifs : une approche globale et précoce",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q015",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_10",
+      "term": "Obstination déraisonnable",
+      "definition": "Mise en œuvre ou poursuite d’actes inutiles, disproportionnés ou n’ayant d’autre effet que le maintien artificiel de la vie.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Une limitation de traitement n’est pas l’arrêt de l’accompagnement.",
+      "theme": "Refuser l’obstination déraisonnable",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q085",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_11",
+      "term": "Procédure collégiale",
+      "definition": "Concertation requise dans certaines décisions médicales, notamment de fin de vie, pour examiner les conditions et la volonté du patient.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Elle n’est pas un vote donnant la décision aux proches.",
+      "theme": "Refuser l’obstination déraisonnable",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q017",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_12",
+      "term": "Sédation profonde et continue jusqu’au décès",
+      "definition": "Altération de la conscience maintenue jusqu’au décès, associée à une analgésie dans les situations légales prévues.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Distincte d’une sédation transitoire et de l’aide à mourir.",
+      "theme": "Sédation profonde et continue jusqu’au décès",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q018",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_13",
+      "term": "Aide à mourir",
+      "definition": "Recours à une substance létale dans le cadre et aux conditions propres de la loi de 2026.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ne se confond pas avec les soins palliatifs ou la sédation profonde.",
+      "theme": "Aide à mourir : un cadre distinct",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q020",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_15",
+      "term": "Équipe de soins",
+      "definition": "Professionnels participant directement à la prise en charge d’un même patient et réunis dans les conditions légales de l’équipe.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Même établissement ne signifie pas droit d’accès à tous les dossiers.",
+      "theme": "Échanger et partager au sein du parcours",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q025",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_16",
+      "term": "Personne de confiance",
+      "definition": "Personne majeure désignée selon les formes prévues pour accompagner le patient et, si nécessaire, témoigner de sa volonté.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ni personne à prévenir ni décideur médical substitué.",
+      "theme": "Directives anticipées et personne de confiance",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q045",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_17",
+      "term": "Ayant droit",
+      "definition": "Personne qui tient un droit d’une autre personne ; l’accès après décès dépend de la qualité et des finalités légales.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Un membre de la famille n’obtient pas automatiquement le dossier intégral.",
+      "theme": "Proches, décès et information génétique",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q028",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_18",
+      "term": "Dérogation au secret",
+      "definition": "Transmission d’informations autorisée ou imposée par un texte dans un périmètre déterminé.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Une exception limitée n’est pas une permission générale de divulguer.",
+      "theme": "Dérogations au secret et signalement",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q030",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_19",
+      "term": "Information préoccupante",
+      "definition": "Information transmise pour permettre l’évaluation d’un danger ou risque de danger concernant un mineur, selon le dispositif de protection de l’enfance.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "À distinguer des voies d’urgence ou du signalement judiciaire selon la situation.",
+      "theme": "Dérogations au secret et signalement",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q084",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_21",
+      "term": "Discernement",
+      "definition": "Aptitude à comprendre une situation et à apprécier les conséquences d’un choix, à évaluer pour la décision concernée.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ne se déduit pas du seul nom d’une mesure de protection.",
+      "theme": "Information du mineur et du majeur protégé",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q038",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_22",
+      "term": "Directives anticipées",
+      "definition": "Expression personnelle écrite d’un majeur sur sa fin de vie, destinée au cas où il ne pourrait plus exprimer sa volonté.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Elles ne sont pas une autorisation pour tous les actes futurs et n’expirent plus au bout de trois ans.",
+      "theme": "Directives anticipées et personne de confiance",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q044",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_23",
+      "term": "Acte usuel de l’autorité parentale",
+      "definition": "Acte relevant de la vie courante permettant une présomption d’accord de l’autre parent à l’égard d’un tiers de bonne foi.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "La présomption ne vaut pas en cas de désaccord connu.",
+      "theme": "Mineur : actes usuels, refus et urgence",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q047",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_24",
+      "term": "Curatelle",
+      "definition": "Mesure de protection organisant une assistance dans les conditions du jugement.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Elle ne vaut pas représentation automatique pour tous les soins.",
+      "theme": "Majeur protégé : autonomie, assistance et représentation",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q074",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_25",
+      "term": "Représentation relative à la personne",
+      "definition": "Mission judiciaire permettant au protecteur d’intervenir pour certaines décisions personnelles lorsque les conditions sont réunies.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Distincte d’une mesure limitée aux biens ; l’autonomie possible demeure recherchée.",
+      "theme": "Majeur protégé : autonomie, assistance et représentation",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q051",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_26",
+      "term": "Soins psychiatriques libres",
+      "definition": "Prise en charge psychiatrique reposant sur le consentement dans le cadre ordinaire des droits du patient.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ils constituent le principe ; le diagnostic seul ne justifie pas la contrainte.",
+      "theme": "Psychiatrie : soins libres et formes de prise en charge",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q055",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_27",
+      "term": "Soins à la demande d’un tiers",
+      "definition": "Voie d’admission sur décision du directeur, fondée sur les conditions cliniques légales et une demande de tiers habilité.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "À distinguer du péril imminent sans demande de tiers.",
+      "theme": "Admission par le directeur : tiers, urgence et péril imminent",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q058",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_28",
+      "term": "Péril imminent",
+      "definition": "Situation permettant la voie spécifique d’admission sans demande de tiers obtenable, sous conditions, avec certificat médical extérieur.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ce n’est pas une simple difficulté administrative.",
+      "theme": "Admission par le directeur : tiers, urgence et péril imminent",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q058",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_29",
+      "term": "Programme de soins",
+      "definition": "Forme de prise en charge psychiatrique sans consentement organisée autrement qu’en hospitalisation complète, selon les modalités légales.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ne crée pas un pouvoir général de soin forcé à domicile.",
+      "theme": "Psychiatrie : soins libres et formes de prise en charge",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q056",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_30",
+      "term": "Isolement",
+      "definition": "Mesure de dernier recours séparant le patient dans le cadre strict des soins psychiatriques sans consentement.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ce n’est ni une sanction ni une mesure d’organisation courante.",
+      "theme": "Isolement et contention : conditions et durées",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q064",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_31",
+      "term": "Contention mécanique",
+      "definition": "Restriction mécanique des mouvements, de dernier recours, dans le cadre légal d’une mesure d’isolement.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Sa durée et ses renouvellements sont distincts de ceux de l’isolement.",
+      "theme": "Isolement et contention : conditions et durées",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q064",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_32",
+      "term": "Mainlevée",
+      "definition": "Décision mettant fin à une mesure juridique de restriction ou de protection dans le cadre concerné.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Elle ne se confond pas nécessairement avec la fin de tout soin.",
+      "theme": "Chronologie des soins sans consentement",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q078",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_33",
+      "term": "CDSP",
+      "definition": "Commission départementale des soins psychiatriques, chargée notamment du respect des droits des personnes concernées.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Distincte du juge ; elle intervient aussi dans certains conflits d’accès au dossier.",
+      "theme": "Psychiatrie : droits conservés et traçabilité",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q077",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "droits_patients_voc_34",
+      "term": "CADA",
+      "definition": "Commission d’accès aux documents administratifs, recours notamment pour l’accès à un dossier détenu par un établissement public.",
+      "etymologie": "Expression juridique française : pas de racine médicale spécifique à mémoriser.",
+      "distinction": "Ce recours ne remplace pas toutes les voies propres aux établissements privés.",
+      "theme": "Dossier médical : contenu, accès et conservation",
+      "courseIds": [
+        "droits_patients"
+      ],
+      "qcmQuestionId": "droits_patients_p01_q076",
+      "sourceType": "reference_pedagogique"
     }
   ]
 }

@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.87';
+const VERSION='8.30.88';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : 22 nouveaux QCM inspirés des annales 2025.`;

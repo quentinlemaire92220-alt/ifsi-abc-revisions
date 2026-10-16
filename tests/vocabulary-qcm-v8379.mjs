@@ -14,7 +14,7 @@ vm.createContext(context);
 vm.runInContext(read('v8355-vocabulary.js'),context);
 await window.IFSI_VOCAB.refresh();
 const qs=window.IFSI_VOCAB.questions();
-assert.equal(qs.length,glossary.entries.filter(t=>!t.qcmQuestionId).reduce((n,t)=>n+t.courseIds.length,0));
+assert.equal(qs.length,glossary.entries.filter(t=>!t.qcmQuestionId).reduce((n,t)=>n+t.courseIds.filter(id=>!t.qcmQuestionIdsByCourse?.[id]).length,0));
 assert.equal(new Set(qs.map(q=>q.id)).size,qs.length);
 for(const q of qs){
  assert.equal(q.theme,'Vocabulaire');assert.equal(q.difficulty,'easy');
@@ -37,7 +37,7 @@ assert.equal(storage.get('ifsiabc_v7_mode'),'train');
 vm.runInContext(read('qcm-subthemes-v1.js'),context);
 for(const courseId of new Set(glossary.entries.flatMap(t=>t.courseIds))){
  const pool=context.Q.filter(q=>q.courseId===courseId&&window.IFSI_QCM_SUBTHEMES.resolve(q)==='Vocabulaire');
- assert.equal(pool.length,glossary.entries.filter(t=>t.courseIds.includes(courseId)&&!t.qcmQuestionId).length);
+ assert.equal(pool.length,glossary.entries.filter(t=>t.courseIds.includes(courseId)&&!t.qcmQuestionId&&!t.qcmQuestionIdsByCourse?.[courseId]).length);
 }
 // Late glossary arrival must not discard or duplicate classic packs.
 const api=window.IFSI_VOCAB;window.IFSI_VOCAB=undefined;
