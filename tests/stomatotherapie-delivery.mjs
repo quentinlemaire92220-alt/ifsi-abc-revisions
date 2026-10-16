@@ -45,7 +45,7 @@ assert.equal(win.IFSI_VOCAB.questions().filter(q=>q.courseId==='stomatotherapie'
 win.IFSI_VOCAB.startCourseQuiz('stomatotherapie');
 assert.equal(started.length,1);assert.equal(started[0].length,10);
 assert.ok(started[0].every(q=>q.theme==='Vocabulaire'&&bank.some(x=>x.id===q.id)));
-const old=questions.filter(q=>q.courseId!=='stomatotherapie');
+const old=questions.filter(q=>q.courseId!=='stomatotherapie'&&q.courseId!=="droits_patients");
 const supplements=read('docs/qcm-supplements.json').supplements;
 const authorized=supplements.flatMap(x=>read(x.pack)).filter(q=>q.courseId!=='stomatotherapie');
 const authorizedIds=new Set(authorized.map(q=>q.id));

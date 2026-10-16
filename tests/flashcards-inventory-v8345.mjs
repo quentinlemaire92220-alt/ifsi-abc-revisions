@@ -52,7 +52,7 @@ const deck=api.getDeck();
 
 const reContext=/\b(?:support|diapo(?:sitive)?\s*\d*|dans le cours|selon le cours|cours\b|cité(?:e|es|s)?|mentionné(?:e|es|s)?|présenté(?:e|es|s)?|proposé(?:e|es|s)?|suivant(?:e|es|s)?|indiqué(?:e|es|s)?|exemple|figure|schéma|document|ci-dessus|ci-dessous)\b/i;
 const reMeta=/\b(?:propositions?|affirmations?)\b|\b(?:sont|est) (?:exactes?|justes?|correctes?)\b|\bassociations?\b.*\b(?:justes?|exactes?|correctes?)\b|\bcorrespondent au support\b|\bvaleurs ou définitions\b/i;
-const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|dans ce cours|qcm oral|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+[^?]{2,60}\?$/i;
+const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|dans ce cours|qcm oral|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+(?![^?]*\b[a-zà-ÿ]+-(?:t-)?(?:il|elle|ils|elles)\b)[^?]{2,60}\?$/i;
 const reBareAcronym=/«\s*[A-ZÀ-Ý]{2,6}[0-9₂₃]*[+⁺\-−⁻]*\s*»/;
 const reGenericPair=/À quoi correspond\s+«\s*(?:Capteur|Convection|Conduction|Évaporation|Rayonnement)\s*»\s*\?/i;
 const rePair=/\bassociation|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;

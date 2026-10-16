@@ -43,7 +43,7 @@ function questions(){
  const currentRegistry=window.IFSI_V741?.getRegistry?.();
  if(questionCache&&questionRegistry===currentRegistry&&questionData===data)return questionCache;
  questionRegistry=currentRegistry;questionData=data;
- return questionCache=data.filter(term=>!term.qcmQuestionId).flatMap(term=>term.courseIds.map(courseId=>{
+ return questionCache=data.filter(term=>!term.qcmQuestionId).flatMap(term=>term.courseIds.filter(courseId=>!term.qcmQuestionIdsByCourse?.[courseId]).map(courseId=>{
  const q=makeQuestion(term,forCourse(courseId));
  return {id:'vocab_'+courseId+'_'+term.id,courseId,course:courseName(courseId),theme:'Vocabulaire',difficulty:'easy',kind:'Vocabulaire',vocabularyTermId:term.id,
  question:'Vocabulaire — '+courseName(courseId)+' : quel terme correspond à cette définition ? '+term.definition,
@@ -51,7 +51,7 @@ function questions(){
 }))}
 function startQuiz(){
  const ids=new Set(filtered().map(x=>x.id));
- const pool=(typeof Q!=='undefined'?Q:[]).filter(q=>(selectedCourse==='all'||q.courseId===selectedCourse)&&((q.kind==='Vocabulaire'&&ids.has(q.vocabularyTermId))||(q.theme==='Vocabulaire'&&q.vocabularyTermIds?.some(id=>ids.has(id)))));
+ const pool=(typeof Q!=='undefined'?Q:[]).filter(q=>(selectedCourse==='all'||q.courseId===selectedCourse)&&((q.kind==='Vocabulaire'&&ids.has(q.vocabularyTermId))||q.vocabularyTermIds?.some(id=>ids.has(id))));
  // Shared terms have one question per associated course; a global vocabulary session uses each term once.
  const unique=new Map();for(const q of pool){const id=q.vocabularyTermId||q.id;if(!unique.has(id))unique.set(id,q)}
  if(!unique.size||typeof begin!=='function')return;
