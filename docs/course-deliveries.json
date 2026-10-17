@@ -246,16 +246,16 @@
       ],
       "visualAudit": {
         "status": "PASS",
-        "pdfSha256": "0d0cbebac9540c0188e5e931c70216fbd9122364eeb54e48ad1a6b15187ac787",
-        "expectedCount": 1,
-        "checkedCount": 1
+        "pdfSha256": "2967a1f694a7adcae8e3f50620f98bdebabc2d9817a3ed0ac00a33e4d482d3dc",
+        "expectedCount": 8,
+        "checkedCount": 8
       },
       "publishedVerification": {
         "status": "MATCH",
         "source": "authenticated_drive_download",
-        "pdfSha256": "0d0cbebac9540c0188e5e931c70216fbd9122364eeb54e48ad1a6b15187ac787",
-        "expectedCount": 1,
-        "checkedCount": 1
+        "pdfSha256": "2967a1f694a7adcae8e3f50620f98bdebabc2d9817a3ed0ac00a33e4d482d3dc",
+        "expectedCount": 8,
+        "checkedCount": 8
       },
       "vocals": [],
       "vocalScripts": [
@@ -400,24 +400,24 @@
         "1RSGlH7nnIPUv86qBQwQRiDerlU8fTMlM": "dfa58324ddef040566974355d6ca40eecf5fa1f6854a5c7e10ce118caa2d8cf8",
         "1Zu9wyfGatxodoKVQa8ACbiLKfNF7Kfc9": "19a9e3c0f65d9b0b4bef8e973232a31e06ef2366ff8ee5c17434177687ab2a05",
         "1wKAM7AhSJVOKcB7d14zq9wCTqktgzjN5": "7ff4f7961b10be1f0292bf7cadf8de5f70fe4b909ac62c26ad0fca333e619eca",
-        "15nG6-XL0JG-nE8IPrVpjmsbkeXRnPagQ": "0d0cbebac9540c0188e5e931c70216fbd9122364eeb54e48ad1a6b15187ac787",
-        "1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC": "c6c9d50355d69b2effc4e623343d527be4d62b9db0ede2f7ac078daa75121a10",
+        "15nG6-XL0JG-nE8IPrVpjmsbkeXRnPagQ": "2967a1f694a7adcae8e3f50620f98bdebabc2d9817a3ed0ac00a33e4d482d3dc",
+        "1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC": "86b52428eba45df2ee1261023420b2be904ac76fb55c7d517d48984a56200c34",
         "1L47gMYL4Ynccw-kbYjEJcUFijIeTbECU": "629a38bb01ec6240177ffb20e8eb6990f535ea2b7e47dfa8eb108afd746783fd",
         "1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08": "e1a7f728beaa354bb750b295cf946ef39e48313869cabcacb7a34610c26f058b"
       },
       "infographicSheetResourceId": "droits_patients_fiche_infographiee_p01",
       "infographicSheetVisualAudit": {
         "status": "PASS",
-        "pdfSha256": "c6c9d50355d69b2effc4e623343d527be4d62b9db0ede2f7ac078daa75121a10",
-        "expectedCount": 8,
-        "checkedCount": 8
+        "pdfSha256": "86b52428eba45df2ee1261023420b2be904ac76fb55c7d517d48984a56200c34",
+        "expectedCount": 33,
+        "checkedCount": 33
       },
       "infographicSheetPublishedVerification": {
         "status": "MATCH",
         "source": "authenticated_drive_download",
-        "pdfSha256": "c6c9d50355d69b2effc4e623343d527be4d62b9db0ede2f7ac078daa75121a10",
-        "expectedCount": 8,
-        "checkedCount": 8
+        "pdfSha256": "86b52428eba45df2ee1261023420b2be904ac76fb55c7d517d48984a56200c34",
+        "expectedCount": 33,
+        "checkedCount": 33
       },
       "dualSheetCoverage": {
         "expectedNotions": 32,
@@ -429,8 +429,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-16T13:13:42.626323+00:00",
-        "bundleSha256": "502d434c9de05023976eeb98a1a995ad08d4c2158b79c2283a3d50c5b3d0bffa"
+        "approvedAt": "2026-10-17T20:46:43.068071+00:00",
+        "bundleSha256": "2e379f6ad98c79e32ff434e581fcf4a6612095ae39e7d1854cdc83b310939d0c"
       }
     }
   ],
