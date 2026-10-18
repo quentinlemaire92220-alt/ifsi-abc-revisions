@@ -12,21 +12,46 @@ export function exactDuplicateKey(q){
 }
 export function needsExternalFigure(value){
   const text=String(value??'');
-  // "Une radiographie doit montrer ..." est une question conceptuelle :
-  // elle ne nécessite pas un cliché joint.
-  return /\b(?:image|figure|sch[eé]ma|radiographie|photographie|clich[eé])\s+(?:ci[- ]dessous|ci[- ]contre|suivant(?:e)?|joint(?:e)?)\b|\b(?:sur|dans)\s+(?:cette|l['’])\s*(?:image|figure|sch[eé]ma|radiographie|photographie|clich[eé])\b/i.test(text);
+  // Une question sur les propriétés générales d'une radiographie ne demande
+  // pas forcément d'image ; une déixis visuelle ("sur ce schéma") oui.
+  return /\b(?:image|figure|sch[eé]ma|radiographie|photographie|clich[eé])\s+(?:ci[- ]dessous|ci[- ]contre|suivant(?:e)?|joint(?:e)?)\b/i.test(text)
+    || /\b(?:sur|dans)\s+(?:(?:le|la|ce|cet|cette|l['’])\s*)?(?:image|figure|sch[eé]ma|radiographie|photographie|clich[eé])\b/i.test(text)
+    || /\b(?:voir|observer|regarder)\s+(?:(?:le|la|l['’])\s*)?(?:figure|sch[eé]ma|image)\b/i.test(text);
 }
 export function hasFigureResource(q){
-  return Boolean(q?.imageUrl||q?.image||q?.figureId||q?.visualId||q?.mediaId||q?.assetId);
+  const references=['imageUrl','figureId','visualId','mediaId','assetId','image'];
+  // Un simple booléen "image: true" ne prouve pas le rattachement d'un visuel.
+  return references.some(key=>{
+    const value=q?.[key];
+    return (typeof value==='string'&&value.trim().length>0)
+      || (value&&typeof value==='object'&&['url','src','id','path'].some(k=>typeof value[k]==='string'&&value[k].trim()));
+  });
 }
 export function pedagogicalQualityViolations(q){
   const errors=[];
   if(!q||typeof q!=='object')return ['Question absente'];
-  if(!Array.isArray(q.choices)||![4,5].includes(q.choices.length))errors.push('4 ou 5 propositions attendues');
-  if(!Array.isArray(q.answers)||q.answers.length<1||q.answers.length>3)errors.push('1 à 3 bonnes réponses attendues');
-  if(Array.isArray(q.answers)&&Array.isArray(q.choices)&&q.answers.some(i=>!Number.isInteger(i)||i<0||i>=q.choices.length))errors.push('Index de réponse incorrect');
-  if(String(q.explanation??'').trim().length<80)errors.push('Corrigé trop court : minimum 80 caractères pour tout nouveau contenu');
-  if(needsExternalFigure(q.question)&&!hasFigureResource(q))errors.push('Référence à une figure non rattachée');
+  if(typeof q.id!=='string'||!q.id.trim())errors.push('Identifiant QCM absent');
+  if(typeof q.courseId!=='string'||!q.courseId.trim())errors.push('Identifiant de cours absent');
+  if(typeof q.question!=='string'||!q.question.trim())errors.push('Énoncé absent');
+  if(typeof q.theme!=='string'||!q.theme.trim())errors.push('Thème absent');
+  if(!['easy','medium','hard'].includes(q.difficulty))errors.push('Niveau de difficulté explicite manquant ou invalide');
+  if(!Array.isArray(q.choices)||![4,5].includes(q.choices.length))
+    errors.push('4 ou 5 propositions attendues');
+  else{
+    if(q.choices.some(v=>typeof v!=='string'||!v.trim()))errors.push('Proposition vide ou incorrecte');
+    if(new Set(q.choices.map(norm)).size!==q.choices.length)errors.push('Propositions identiques');
+  }
+  if(!Array.isArray(q.answers)||q.answers.length<1||q.answers.length>3)
+    errors.push('1 à 3 bonnes réponses attendues');
+  if(Array.isArray(q.answers)){
+    if(new Set(q.answers).size!==q.answers.length)errors.push('Index de réponse dupliqué');
+    if(!Array.isArray(q.choices)||q.answers.some(i=>!Number.isInteger(i)||i<0||i>=q.choices.length))
+      errors.push('Index de réponse incorrect');
+  }
+  if(typeof q.explanation!=='string'||q.explanation.trim().length<80)
+    errors.push('Corrigé trop court : minimum 80 caractères pour tout nouveau contenu');
+  if(needsExternalFigure(q.question)&&!hasFigureResource(q))
+    errors.push('Référence à une figure non rattachée');
   return errors;
 }
 export function qualityCounts(questions){
