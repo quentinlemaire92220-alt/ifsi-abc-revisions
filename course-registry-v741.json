@@ -1,5 +1,5 @@
 {
-  "version": "8.30.92",
+  "version": "8.30.93",
   "courses": [
     {
       "id": "biomolecules",
@@ -617,7 +617,10 @@
       "ue": "B3",
       "officialSupportUrl": "https://drive.google.com/file/d/11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K/view",
       "qcmPdfUrl": "https://drive.google.com/file/d/1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe/view",
-      "officialSupportCoverage": "partial"
+      "officialSupportCoverage": "partial",
+      "audioStatus": "available",
+      "audioCount": 5,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/11mL_5dt4AfUl2CwE5-A1mg6HeLRHKHga"
     },
     {
       "id": "stomatotherapie",
@@ -668,11 +671,17 @@
           "url": "https://drive.google.com/file/d/1_3A1FA1043GnHgIJopjqGOF6AyPU4mC4/view"
         },
         {
-          "label": "Scripts vocaux - 6 textes à convertir en MP3",
-          "url": "https://drive.google.com/file/d/1e9VHaL-64BN-o7VdhGpt77K9m9YROD2v/view"
+          "label": "Scripts vocaux — 3 épisodes (TXT)",
+          "url": "https://drive.google.com/drive/folders/1lJoW0TrUpnNlTHQEwW535sXVlsjxQXzz"
+        },
+        {
+          "label": "Vocaux MP3 — 3 épisodes",
+          "url": "https://drive.google.com/drive/folders/1RvwOeGIYkK6OThxKAvpcHcfczcUAUDVw"
         }
       ],
-      "audioStatus": "awaiting_mp3"
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1RvwOeGIYkK6OThxKAvpcHcfczcUAUDVw"
     },
     {
       "id": "droits_patients",
@@ -703,18 +712,39 @@
           "url": "https://drive.google.com/file/d/1ql-jva0m-WpauVxIw3Hj4ib2F9hmIpPm/view"
         },
         {
-          "label": "Scripts vocaux regroupés - Partie 01",
-          "url": "https://drive.google.com/file/d/1wKAM7AhSJVOKcB7d14zq9wCTqktgzjN5/view"
+          "label": "Scripts vocaux — 6 épisodes (TXT)",
+          "url": "https://drive.google.com/drive/folders/1QhFuARo7MXe7uRZ3BH5ka-lUx1fbr38n"
         },
         {
-          "label": "Scripts vocaux - 16 textes (PDF)",
-          "url": "https://drive.google.com/file/d/1L47gMYL4Ynccw-kbYjEJcUFijIeTbECU/view"
+          "label": "Vocaux MP3 — 6 épisodes",
+          "url": "https://drive.google.com/drive/folders/14VSWEVk-Q4lGboFXSrBoz3nRpGW27EJH"
         }
       ],
-      "audioStatus": "awaiting_mp3",
+      "audioStatus": "available",
       "flashcardTarget": 69,
       "authoredFlashcards": true,
-      "qcmPdfQuestionCount": 85
+      "qcmPdfQuestionCount": 85,
+      "audioCount": 6,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/14VSWEVk-Q4lGboFXSrBoz3nRpGW27EJH"
+    },
+    {
+      "id": "pssm",
+      "label": "Premiers secours en santé mentale (PSSM)",
+      "aliases": [
+        "Premiers secours en santé mentale",
+        "PSSM",
+        "Repérage précoce en santé mentale"
+      ],
+      "domain": "B",
+      "ue": "B3",
+      "teachingUnit": "B3",
+      "semester": "S1",
+      "part": "01",
+      "officialSupportUrl": "https://drive.google.com/file/d/1o625QFTb3bj3FqCKZTKExHv38kzGo3vw/view",
+      "officialSupportCoverage": "partial",
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1j0WevK3SiJ38EuxrHyNfjg2OL3cYbImD"
     }
   ],
   "auditBaseline": {
