@@ -35,7 +35,7 @@ const expectedAnswers={
 for(const q of proj){
  assert.equal(q.choices.length,5,q.id+': nombre de choix modifié');
  assert.deepEqual(q.answers,expectedAnswers[q.id],q.id+': correction altérée');
- assert.ok(![q.question,...q.choices,q.explanation].some(s=>/CM3\\s*[•·]|Niveaux d.abstraction et utilit[ée]/i.test(s)),q.id+': résidu PDF');
+ assert.ok(![q.question,...q.choices,q.explanation].some(s=>/CM3\s*[•·]|Niveaux d.abstraction et utilit[ée]/i.test(s)),q.id+': résidu PDF');
 }
 assert.equal(byId.get('v820_a1p3_019').question,'Dans une théorie infirmière, quels éléments sont reliés entre eux par des propositions ?');
 assert.deepEqual(approval.reviewFingerprintSha256s,{
