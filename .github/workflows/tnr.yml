@@ -59,6 +59,9 @@ jobs:
       - name: TNR registre prive des sources manquantes v1.15
         run: node tests/source-followup-v115-test.mjs
 
+      - name: TNR suivi des cours et confidentialité
+        run: node tests/course-followup-v1.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
