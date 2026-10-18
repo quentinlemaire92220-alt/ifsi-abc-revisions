@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {exactDuplicateKey,needsExternalFigure,pedagogicalQualityViolations,qualityCounts,assertQualityCeilings} from './qcm-quality-core-v1.mjs';
+import {exactDuplicateKey,needsExternalFigure,hasPdfPageFurniture,pedagogicalQualityViolations,qualityCounts,assertQualityCeilings} from './qcm-quality-core-v1.mjs';
 const base={id:'one',courseId:'test',theme:'Anatomie',difficulty:'easy',question:'Quelles définitions sont correctes ?',choices:['A','B','C','D'],answers:[0],explanation:'Le premier énoncé explique le mécanisme et distingue les autres propositions en justifiant le choix retenu.'};
 assert.equal(exactDuplicateKey(base),exactDuplicateKey({...base,id:'two'}));
 assert.notEqual(exactDuplicateKey(base),exactDuplicateKey({...base,courseId:'autre_cours'}));
@@ -24,6 +24,9 @@ assert.equal(needsExternalFigure('Sur le schéma, identifier la structure.'),tru
 assert.equal(needsExternalFigure('Voir la figure suivante.'),true);
 assert.ok(pedagogicalQualityViolations({...base,question:'Sur le schéma, localiser le rein.',image:true}).some(x=>x.includes('figure')));
 assert.deepEqual(pedagogicalQualityViolations({...base,question:'Sur le schéma, localiser le rein.',image:{src:'./schema.png'}}),[]);
+assert.equal(hasPdfPageFurniture({...base,choices:['A','B','C','DCM3 • Enseignement']}),true);
+assert.equal(hasPdfPageFurniture({...base,question:'Quel est le rôle de la démarche clinique ?'}),false);
+assert.ok(pedagogicalQualityViolations({...base,choices:['A','B','C','D CM3 • Fondements']}).some(x=>x.includes('En-tête de page PDF')));
 const count=qualityCounts([base,{...base,id:'two'},{...base,id:'three',courseId:'autre_cours'}, {...base,id:'four',explanation:'A'}]);
 assert.equal(count.identical_question,2);
 assert.equal(count.short_explanation,1);
