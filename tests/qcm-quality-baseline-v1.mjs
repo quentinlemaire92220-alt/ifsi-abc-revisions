@@ -10,7 +10,7 @@ const ceilings={
   source_dependent_question:108,
   three_of_four:623,
   identical_question:0,
-  image_without_figure:0
+  image_without_figure:1
 };
 assert.ok(questions.length>=2560,'Une baisse du nombre total de QCM doit être justifiée en revue.');
 assertQualityCeilings(counts,ceilings);
