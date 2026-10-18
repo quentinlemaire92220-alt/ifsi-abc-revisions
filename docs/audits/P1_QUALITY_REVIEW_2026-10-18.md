@@ -24,6 +24,15 @@
 3. Audit plus exact des doublons et références visuelles, avec fixtures de tests.
 4. Vérification de la provenance : une fiche provisoire ne devient pas « support officiel » sans preuve ; les liens de fiches et sources sont distincts.
 
+## Revue technique complémentaire — 18 octobre 2026
+
+- La branche `main` a évolué depuis l'ouverture de cette PR : V8.30.90 (`334b01d3`). La PR reste en **brouillon** et peut nécessiter une synchronisation explicite avant toute fusion.
+- Les tests ajoutés refusent également les énoncés vides, les identifiants de cours et de question absents, les thèmes/niveaux manquants, les propositions vides ou dupliquées et les index de réponses incorrects/dupliqués.
+- Le détecteur de dépendance visuelle distingue les questions conceptuelles sur la radiographie des références à une image/schéma à consulter.
+- **Deux références visuelles potentielles** demeurent à revoir sans modification automatique : `pharmaco_031` et `v820_a1p3_019`. Leur présence en alerte ne prouve pas à elle seule qu'un visuel manque effectivement dans l'application.
+- Les seuils de dette contrôlent désormais `short_explanation=289`, `source_dependent_question=108`, `three_of_four=623`, `identical_question=0`, `image_without_figure=2`. Les seuils ne sont **pas** une validation médicale.
+- TNR de la branche : [GitHub Actions — passage réussi](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/39124070617) (commit `34c396fc`, 18/10/2026).
+
 ## File de revue pédagogique privée — hors de cette PR
 
 **Priorité 1.** Réviser les 289 explications courtes et les 108 formulations dépendantes du cours, puis comparer PDF et banque applicative. Revoir le ou les items qui demandent réellement une illustration absente et les 378 QCM bruts à quatre bonnes réponses. Les réponses, options et corrections nécessitent vérification sur le support officiel, validation humaine et éventuel nouveau GO publication.
