@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-18",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -4352,6 +4352,126 @@
         "droits_patients"
       ],
       "qcmQuestionId": "droits_patients_p01_q076",
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_01",
+      "term": "Continuum",
+      "definition": "Ensemble continu d'états pouvant varier au cours du temps, utilisé pour décrire la santé mentale.",
+      "etymologie": "Du latin continuus, qui se poursuit sans interruption.",
+      "distinction": "Le continuum ne suppose pas une évolution inévitable vers une maladie.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_02",
+      "term": "Détresse psychique",
+      "definition": "Souffrance émotionnelle qui affecte les pensées, les émotions ou les activités quotidiennes.",
+      "etymologie": "Psychique vient du grec psychê, esprit ou vie mentale.",
+      "distinction": "Une détresse psychique ne constitue pas automatiquement un diagnostic psychiatrique.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_03",
+      "term": "Retentissement",
+      "definition": "Conséquences d'une difficulté sur les études, le travail, les relations ou le fonctionnement quotidien.",
+      "etymologie": "Dérivé du verbe retentir, produire des effets au-delà du phénomène initial.",
+      "distinction": "Le symptôme est à distinguer de son effet sur la vie quotidienne.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_04",
+      "term": "Anhédonie",
+      "definition": "Diminution ou perte du plaisir et de l'intérêt pour des activités auparavant appréciées.",
+      "etymologie": "A- signifie absence ; hêdonê désigne le plaisir en grec.",
+      "distinction": "La fatigue peut coexister avec l'anhédonie, mais ce ne sont pas des synonymes.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_05",
+      "term": "Rumination",
+      "definition": "Retour répétitif de pensées préoccupantes, souvent difficile à interrompre volontairement.",
+      "etymologie": "Sens figuré du verbe ruminer : revenir plusieurs fois sur une pensée.",
+      "distinction": "Une préoccupation ponctuelle n'établit pas à elle seule une rumination persistante.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_06",
+      "term": "Hallucination",
+      "definition": "Perception vécue sans objet extérieur correspondant, pouvant concerner plusieurs modalités sensorielles.",
+      "etymologie": "Du latin hallucinari, se tromper ou divaguer.",
+      "distinction": "Une hallucination concerne une perception, tandis qu'une idée délirante concerne une conviction.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_07",
+      "term": "Compulsion",
+      "definition": "Acte ou comportement répétitif ressenti comme difficile à empêcher ou à contrôler.",
+      "etymologie": "Du latin compellere, pousser ou contraindre.",
+      "distinction": "Une compulsion n'est pas simplement une préférence ou une habitude.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_08",
+      "term": "Évitement",
+      "definition": "Comportement consistant à se soustraire à une situation considérée comme redoutée.",
+      "etymologie": "Dérivé du verbe éviter, se détourner d'une situation.",
+      "distinction": "Un évitement isolé ne permet pas de diagnostiquer un trouble anxieux.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_09",
+      "term": "Facteur protecteur",
+      "definition": "Ressource individuelle, relationnelle ou environnementale contribuant au maintien de la santé mentale.",
+      "etymologie": "Protecteur vient du latin protegere, couvrir ou préserver.",
+      "distinction": "Un facteur protecteur ne garantit pas l'absence de trouble.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "pssm_v8393_10",
+      "term": "Overdose",
+      "definition": "Surdosage d'une substance susceptible de provoquer une intoxication aiguë grave.",
+      "etymologie": "De l'anglais over, au-delà, et dose, quantité absorbée.",
+      "distinction": "Une overdose est un état aigu et n'est pas synonyme de dépendance.",
+      "theme": "Santé mentale — repérage et prévention",
+      "courseIds": [
+        "pssm"
+      ],
       "sourceType": "reference_pedagogique"
     }
   ]
