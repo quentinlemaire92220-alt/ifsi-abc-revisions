@@ -26,6 +26,7 @@ assert.ok(pedagogicalQualityViolations({...base,question:'Sur le schéma, locali
 assert.deepEqual(pedagogicalQualityViolations({...base,question:'Sur le schéma, localiser le rein.',image:{src:'./schema.png'}}),[]);
 assert.equal(hasPdfPageFurniture({...base,choices:['A','B','C','DCM3 • Enseignement']}),true);
 assert.equal(hasPdfPageFurniture({...base,question:'Quel est le rôle de la démarche clinique ?'}),false);
+assert.equal(hasPdfPageFurniture({...base,choices:['A','B','C','Niveaux d’abstraction et utilité']}),true);
 assert.ok(pedagogicalQualityViolations({...base,choices:['A','B','C','D CM3 • Fondements']}).some(x=>x.includes('En-tête de page PDF')));
 const count=qualityCounts([base,{...base,id:'two'},{...base,id:'three',courseId:'autre_cours'}, {...base,id:'four',explanation:'A'}]);
 assert.equal(count.identical_question,2);
