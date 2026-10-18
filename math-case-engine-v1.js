@@ -83,7 +83,7 @@ function result(){const fields=current?.questions?.flatMap(q=>q.fields)||[];retu
 function save(){
  const s=result();
  try{const all=JSON.parse(localStorage.getItem(STORE)||'{}');const prior=all[current.id]||{attempts:0,best:0};all[current.id]={attempts:prior.attempts+1,best:Math.max(prior.best,s.correct),total:s.total};localStorage.setItem(STORE,JSON.stringify(all));}catch(_){}
- try{window.IFSI_V77?.track?.('math_case_complete',{resource_type:'math_case',resource_id:current.id,course_id:COURSE,metadata:{correct:s.correct,total:s.total,mode:state.mode}});}catch(_){}
+ // Results stay on this device, including when anonymous usage statistics are enabled.
 }
 function styles(){
  if($('ifsiMathCaseStyle'))return;

@@ -10,6 +10,9 @@ body.v72-dark #v87Nav button.on{background:#3a3150;color:#ddd0ff}
 body.v87-ready nav:not(#v87Nav){display:none!important}
 #settings87{padding-bottom:145px}
 .v87-head{border:1px solid #d9cfee;background:linear-gradient(135deg,#f7f3ff,#eefaf8);border-radius:22px;padding:16px;margin-bottom:12px}
+body.v72-dark .v87-head{background:#282332;color:#f6f1ff;border-color:#554b69}
+body.v72-dark .v87-head h2{color:#f6f1ff}
+body.v72-dark .v87-head .small{color:#c8c0d5}
 .v87-head h2{margin:0 0 4px}.v87-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .v87-card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:14px}
 .v87-card h3{margin:0 0 4px;font-size:17px}.v87-card>p{margin:0 0 10px;color:var(--muted);font-size:12px;line-height:1.4}

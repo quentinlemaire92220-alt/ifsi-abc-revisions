@@ -8,6 +8,7 @@
 # Dépendances / sorties locales
 node_modules/
 coverage/
+test-results/
 dist/
 .cache/
 tmp/

@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Execute the production service worker loader, including compressed packs and overrides.
-export async function runtimeDeck({allCards=false}={}){
+export async function runtimeDeck({allCards=false,includeVocabulary=false}={}){
   const read=p=>fs.readFileSync(p,'utf8');
   const quiet={log(){},warn(){},error(){}};
   const sw=read('sw.js');
@@ -29,7 +29,9 @@ export async function runtimeDeck({allCards=false}={}){
   const vocab=read('v8355-vocabulary.js');
   const before=vocab.slice(0,vocab.indexOf('function ensure(){')).replace(/let data=\[\]/,'let data=vocabFixture');
   context.vocabFixture=JSON.parse(read('vocabulaire-v1.json')).entries;
-  vm.runInContext(before+'window.IFSI_VOCAB={flashcards};})();',context);
+  const generation=vocab.slice(vocab.indexOf('function hash('),vocab.indexOf('function startQuiz('));
+  vm.runInContext(before+generation+'window.IFSI_VOCAB={flashcards,questions};})();',context);
+  if(includeVocabulary){questions.push(...window.IFSI_VOCAB.questions());window.IFSI_V741.rebuildResourceIndex();}
   vm.runInContext(read('qcm-subthemes-v1.js'),context);
   const themeSource=read('v79-themes.js');
   vm.runInContext(themeSource.slice(0,themeSource.indexOf('function difficultyOf'))+'window.IFSI_V79.themeOf=themeOf;})();',context);

@@ -1,0 +1,281 @@
+{
+  "base": "334b01d3f372799f435cc3cf3febcbd0c00ced29",
+  "candidate": "8.30.91",
+  "date": "2026-10-18",
+  "nodeTests": 63,
+  "pythonTests": 4,
+  "syntax": {
+    "javascript": 149,
+    "mjs": 73
+  },
+  "tests": [
+    {
+      "test": "tests/tnr-node.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/revision-course-pack-test.py",
+      "exit": 0
+    },
+    {
+      "test": "tests/dual-sheet-contract-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/source-followup-v115-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-followup-v1.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/anatomy-routing-contract-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/revision-layout-test.py",
+      "exit": 0
+    },
+    {
+      "test": "tests/pdf_visual_gate_test.py",
+      "exit": 0
+    },
+    {
+      "test": "tests/verify_published_pdf_test.py",
+      "exit": 0
+    },
+    {
+      "test": "tests/pdf-visual-audit-contract-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-delivery-parts-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-delivery.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-publication-approval-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-publication-approval.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-delivery-new-course.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-delivery-parts.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/planning-group-separation.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/ux-regression.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-autonomy-contract-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-autonomy-changed.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/vocabulary-qcm-v8379.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-v8338.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-access-v8357.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/annales-preparation-v1.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/annales-publication-v1.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-live-loading-v8374.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-partial-recovery-v8376.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/ui-v8339.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-pedagogy-v8341.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-wording-v8342.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-context-v8343.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-recovery-v8344.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-inventory-v8345.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-understanding-v8369.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-course-gate-v8352.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-atomic-v8345.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-context-atomic-v8346.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-coherence-v8348.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/flashcards-context-v8351.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/vocal-player-v8350.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/math-qcm-v8363.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/analytics-privacy-contract.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/math-case-engine-v1.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/math-case-publication-v1.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-ordering-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-correction-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/interactive-exercises-v8378.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-visual-wording-v8375.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-autonomous-visuals-v8376.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-difficulty-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-duplicates-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-theme-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/button-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/workflow-resource-inventory-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/cm-course-crosswalk-test.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-audit.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/pwa-install.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/resource-sync-v821.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/math-infographics-v8359.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/runtime-integrity-v8360.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-four-of-four-v8361.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/browser-audit-v8364.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/browser-runtime-v8370.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/qcm-full-runtime-audit-v8374.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/repo-hygiene.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/stomatotherapie-delivery.mjs",
+      "exit": 0
+    },
+    {
+      "test": "tests/course-droits_patients-p01.mjs",
+      "exit": 0
+    }
+  ]
+}

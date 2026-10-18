@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='7.7';
+const VERSION=window.IFSI_APP_VERSION||'7.7';
 const ENDPOINT='https://ywicbdntavuitkcqvmqx.supabase.co/rest/v1/analytics_events';
 const API_KEY='sb_publishable_eY2KDhhPj660ASV3gxbnnQ_VrCOak3P';
 const OPTOUT='ifsiabc_analytics_optout_v1';
@@ -23,8 +23,26 @@ function courseId(){
   return window.IFSI_V741?.courseIdForLabel?.(label)||null;
 }
 function driveId(href=''){const m=String(href).match(/\/d\/([^/]+)/);return m?.[1]||null}
+const EVENTS=new Set(['app_open','qcm_start','qcm_finish','resource_open','vocal_start']);
+const RESOURCES=new Set(['app','qcm','sheet','infographic','vocal']);
+function usageMetadata(input){
+  const out={};if(!input||typeof input!=='object')return out;
+  for(const key of ['mode','difficulty','source','scope','domain','theme','course']){
+    if(typeof input[key]==='string')out[key]=safe(input[key],80);
+  }
+  for(const key of ['count','level','minutes']){
+    if(Number.isInteger(input[key])&&input[key]>=0&&input[key]<=10000)out[key]=input[key];
+  }
+  for(const key of ['courses','themes','selected_courses']){
+    if(Array.isArray(input[key]))out[key]=input[key].filter(x=>typeof x==='string').slice(0,12).map(x=>safe(x,80));
+  }
+  // Reserve space for jsonb separator whitespace in the database (1000 characters).
+  for(const key of Object.keys(out))if(JSON.stringify(out).length>800)delete out[key];
+  return out;
+}
 async function track(event_type,data={}){
-  if(!enabled()||!navigator.onLine)return false;
+  if(!enabled()||!navigator.onLine||!EVENTS.has(event_type))return false;
+  if(data.resource_type!=null&&!RESOURCES.has(data.resource_type))return false;
   const body={
     event_type,
     course_id:safe(data.course_id||courseId()||'',80)||null,
@@ -32,7 +50,7 @@ async function track(event_type,data={}){
     resource_id:safe(data.resource_id||'',180)||null,
     session_id:sessionId(),
     app_version:VERSION,
-    metadata:data.metadata&&typeof data.metadata==='object'?data.metadata:{}
+    metadata:usageMetadata(data.metadata)
   };
   try{
     const r=await fetch(ENDPOINT,{method:'POST',headers:{apikey:API_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(body),keepalive:true});
