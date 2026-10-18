@@ -225,6 +225,9 @@ jobs:
       - name: Valider le schéma de correspondance CM privé (données fictives)
         run: node tests/cm-course-crosswalk-test.mjs
 
+      - name: Préserver la provenance des fiches et supports
+        run: node tests/course-provenance-guard-v1.mjs
+
       - name: Audit des rattachements de cours
         run: node tests/course-audit.mjs
 
