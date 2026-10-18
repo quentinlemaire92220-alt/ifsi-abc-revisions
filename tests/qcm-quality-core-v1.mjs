@@ -27,6 +27,12 @@ export function hasFigureResource(q){
       || (value&&typeof value==='object'&&['url','src','id','path'].some(k=>typeof value[k]==='string'&&value[k].trim()));
   });
 }
+export function hasPdfPageFurniture(q){
+  const text=[q?.question,...(Array.isArray(q?.choices)?q.choices:[]),q?.explanation].map(v=>String(v??'')).join(' ');
+  // Marqueurs très spécifiques de pollution par extraction PDF : ne pas
+  // détecter la simple mention naturelle d'une page ou d'un CM.
+  return /\bCM\s*\d+\s*[•·]|\bNiveaux d.abstraction et utilit[ée]\b/i.test(text);
+}
 export function pedagogicalQualityViolations(q){
   const errors=[];
   if(!q||typeof q!=='object')return ['Question absente'];
@@ -52,6 +58,7 @@ export function pedagogicalQualityViolations(q){
     errors.push('Corrigé trop court : minimum 80 caractères pour tout nouveau contenu');
   if(needsExternalFigure(q.question)&&!hasFigureResource(q))
     errors.push('Référence à une figure non rattachée');
+  if(hasPdfPageFurniture(q))errors.push('En-tête de page PDF détecté dans le QCM');
   return errors;
 }
 export function qualityCounts(questions){
