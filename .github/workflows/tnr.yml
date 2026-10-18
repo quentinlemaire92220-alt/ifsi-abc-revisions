@@ -268,9 +268,13 @@ jobs:
       - uses: pnpm/action-setup@v4
       - name: Installer les dépendances verrouillées
         run: pnpm install --frozen-lockfile --ignore-scripts
-      - name: Installer Chromium
-        run: pnpm exec playwright install --with-deps chromium
+      # The Chrome package has an AppArmor profile on Ubuntu; downloaded
+      # headless-shell binaries cannot use user namespaces on the hosted runner.
+      - name: Installer Chrome avec son bac à sable système
+        run: pnpm exec playwright install --with-deps chrome
       - name: TNR navigateur avec Service Worker et réseau externe intercepté
+        env:
+          IFSI_BROWSER_CHANNEL: chrome
         run: pnpm test:browser
       - name: Conserver les preuves du navigateur
         if: always()

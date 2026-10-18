@@ -42,7 +42,7 @@ node tests/analytics-privacy-contract.mjs
 node tests/qcm-full-runtime-audit-v8374.mjs
 ```
 
-Pour la comparaison, définir `IFSI_TEST_ROOT` vers une extraction du commit de base, `IFSI_BROWSER_OUTPUT` vers un répertoire séparé et ajouter `--record-only`. Cette option enregistre les échecs attendus sans rendre la commande bloquante ; elle n’est jamais utilisée par le job CI. Les captures et rapports complets de chaque exécution CI sont conservés 14 jours dans `browser-p1-evidence`.
+Pour la comparaison, définir `IFSI_TEST_ROOT` vers une extraction du commit de base, `IFSI_BROWSER_OUTPUT` vers un répertoire séparé et ajouter `--record-only`. Cette option enregistre les échecs attendus sans rendre la commande bloquante ; elle n’est jamais utilisée par le job CI. En CI Ubuntu, le canal Chrome utilise le profil système permettant de conserver `chromiumSandbox: true` ; le binaire headless-shell téléchargé ne peut pas démarrer avec les restrictions AppArmor du runner. Les captures et rapports complets de chaque exécution CI sont conservés 14 jours dans `browser-p1-evidence`.
 
 ## Limites et point encore ouvert
 
