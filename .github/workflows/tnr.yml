@@ -178,6 +178,9 @@ jobs:
       - name: Vérifier les 226 QCM de maths, leurs résultats exacts et les 10 niveaux
         run: node tests/math-qcm-v8363.mjs
 
+      - name: Vérifier le contrat de confidentialité analytics sans réseau
+        run: node tests/analytics-privacy-contract.mjs
+
       - name: Tester les exercices pratiques de mathématiques
         run: node tests/math-case-engine-v1.mjs
 
@@ -252,3 +255,27 @@ jobs:
 
       - name: Vérifier le lot droits_patients p01
         run: node tests/course-droits_patients-p01.mjs
+
+
+  browser-p1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: pnpm/action-setup@v4
+      - name: Installer les dépendances verrouillées
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Installer Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: TNR navigateur avec Service Worker et réseau externe intercepté
+        run: pnpm test:browser
+      - name: Conserver les preuves du navigateur
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-p1-evidence
+          path: test-results/browser-p1/
+          retention-days: 14

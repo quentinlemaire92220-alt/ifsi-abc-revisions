@@ -1,0 +1,51 @@
+{
+  "source": "8.30.90",
+  "browser": "Chromium",
+  "serviceWorker": true,
+  "externalRequestsSent": 0,
+  "results": [
+    {
+      "name": "late-bank-full-index",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n686 !== 0\n"
+    },
+    {
+      "name": "partial-bank-retry",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n723 !== 0\n"
+    },
+    {
+      "name": "urinary-exercises-visible-and-return",
+      "pass": false,
+      "error": "Entrée exercices masquée\n\nfalse !== true\n"
+    },
+    {
+      "name": "settings-dark-contrast-and-widths",
+      "pass": false,
+      "error": "{\"width\":320,\"title\":1.0275564584614807,\"copy\":1.848871747445349}"
+    },
+    {
+      "name": "unavailable-drive-links-all-catalogues",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n4 !== 0\n"
+    },
+    {
+      "name": "math-results-local-only",
+      "pass": false,
+      "error": "Un résultat individuel est préparé pour le réseau\n\n1 !== 0\n"
+    },
+    {
+      "name": "offline-cached-revisions",
+      "pass": false,
+      "error": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#ifsiExerciseOpen') to be visible\u001b[22m\n\u001b[2m    23 × locator resolved to hidden <button type=\"button\" class=\"btn primary\" id=\"ifsiExerciseOpen\">S’entraîner →</button>\u001b[22m\n"
+    },
+    {
+      "name": "no-runtime-errors",
+      "pass": true,
+      "detail": {
+        "count": 0
+      }
+    }
+  ],
+  "pageErrors": []
+}

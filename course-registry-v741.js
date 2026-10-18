@@ -60,6 +60,8 @@ function audit(){
   report.warnings=report.sheets.unmatched.length+report.infographics.unmatched.length;lastAudit=report;return report;
 }
 function rebuildResourceIndex(){
+  // Hydration and retries can add questions after the registry has booted.
+  attachIds();
   resourceIndex=new Map((registry?.courses||[]).map(c=>[c.id,{questions:[],vocals:[],sheets:[],infographics:[]}]));
   const put=(id,key,item)=>{if(id&&resourceIndex.has(id))resourceIndex.get(id)[key].push(item)};
   for(const q of (Array.isArray(Q)?Q:[]))put(q.courseId,'questions',q);

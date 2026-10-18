@@ -5,7 +5,7 @@ import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 
 // Audit en lecture seule sur la banque VRAIMENT fusionnée par le Service Worker.
 // Les anciennes vérifications de doublons/thèmes/niveaux chargent des packs différents.
-const {questions:all,registry,window:registries}=await runtimeDeck();
+const {questions:all,registry,window:registries}=await runtimeDeck({includeVocabulary:true});
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
 const errors=[],counts={};
 const add=(type,id,detail)=>{counts[type]=(counts[type]||0)+1;if(errors.length<55)errors.push({type,id,detail})};
@@ -48,7 +48,9 @@ for(const q of all){
  else if(q.difficulty==null||q.difficulty==='')levels.inferred++;
  else levels.invalid++;
 }
-assert.ok(all.length>=2300,'La banque complète du Service Worker doit contenir au moins 2300 QCM');
+assert.equal(all.length,3038,'Banque active : 2560 QCM Service Worker + 478 QCM vocabulaire');
+assert.equal(all.filter(q=>q.kind==='Vocabulaire').length,478);
+assert.equal(counts.missing_courseId||0,0,'Chaque QCM actif doit être rattaché à un cours');
 assert.equal(ids.size,all.length,'Identifiants en double dans la banque active');
 for(const key of ['id_missing','id_duplicate','question_missing','invalid_choices','blank_choice','invalid_answer_count','invalid_answer_index','no_distractor','missing_explanation'])assert.equal(counts[key]||0,0,'Erreur structurelle active : '+key);
 assert.equal(levels.invalid,0,'Niveaux de difficulté invalides');
@@ -67,6 +69,7 @@ const auditedCourses=[...courseCounts.entries()].sort((a,b)=>b[1]-a[1]);
 const single=[...courseCounts].filter(([c,n])=>n>=20&&(themeCounts.get(c)?.size||0)===1).map(([id,count])=>({id,count}));
 const report={
  version:JSON.parse(fs.readFileSync('build-meta.json','utf8')).version,
+ bankScope:'Service Worker + vocabulaire généré (fixture ; ordre réel contrôlé par Playwright)',
  runtimeQuestions:all.length,uniqueIds:ids.size,registryCourses:registry.courses.length,
  coursesWithQuestions:courseCounts.size,totalAllFilter:count,
  choices:choiceDistribution,correctAnswers:answersDistribution,
