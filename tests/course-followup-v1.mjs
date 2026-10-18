@@ -44,4 +44,12 @@ assert.ok(!/plaud|transcript|sourceSha256|sourceStatus|sharedSecret/i.test(src),
 const html=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('sw.js','utf8');
 assert.ok(html.includes('course-followup-v1.js'),'Chargement du suivi navigateur absent');
 assert.ok(sw.includes('./course-followup-v1.js'),'Module absent du cache PWA');
-console.log('✅ Suivi des cours : rattachement des groupes, inventaire nuancé, confidentialité, PWA');
+const settings=fs.readFileSync('v87-settings.js','utf8');
+assert.ok(settings.includes('id="v87Followup"'),'Entrée Suivi absente des Paramètres');
+assert.ok(settings.includes("$('v87Followup').onclick=()=>window.IFSI_COURSE_FOLLOWUP?.show?.()"),'Bouton Paramètres non relié');
+assert.ok(settings.includes("'v829LocomotorAtlas','courseFollowup'].forEach"),'Retour Paramètres : la vue Suivi doit être masquée');
+assert.ok(!src.includes('vCourseFollowupNav')&&!src.includes('vfollowup-nav'),'Suivi encore présent dans la navigation du bas');
+assert.ok(src.includes('bindBottomNavigation')&&src.includes("$('v87Settings')?.classList.add('on')"),'Navigation Paramètres incomplète');
+assert.ok(src.includes('id="cfBackSettings"')&&src.includes("$('cfBackSettings').onclick"),'Bouton retour Paramètres absent');
+
+console.log('✅ Suivi sous Paramètres : navigation, groupes, confidentialité et PWA');

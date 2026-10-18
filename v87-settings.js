@@ -40,7 +40,10 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
  <div class="v87-card"><h3>📣 Partage des nouveautés</h3><p>Prépare l’annonce de la dernière ressource ajoutée. Tu choisis ensuite le groupe dans WhatsApp.</p>
   <button id="v87Whatsapp" class="btn primary full">💬 Préparer l’annonce WhatsApp</button>
  </div>
- <div class="v87-card"><h3>📱 Application</h3><p>Version installée, version publiée et cache PWA.</p>
+ <div class="v87-card"><h3>🗂️ Suivi des cours</h3><p>Outil de contrôle des ressources et du planning, principalement destiné à la gestion de l’application. Cette section n’affiche aucune source privée.</p>
+   <button id="v87Followup" class="btn outline full" type="button">Ouvrir le suivi des cours →</button>
+  </div>
+  <div class="v87-card"><h3>📱 Application</h3><p>Version installée, version publiée et cache PWA.</p>
   <div class="v87-versiongrid"><div class="v87-versionbox"><span class="small">Installée</span><b id="v87Installed">V${V}</b></div><div class="v87-versionbox"><span class="small">Serveur</span><b id="v87Server">…</b></div><div class="v87-versionbox"><span class="small">Build</span><b id="v87Build">…</b></div></div>
   <div class="v87-actions" style="margin-top:10px"><button id="v87Update" class="btn primary">↻ Vérifier</button><button id="v87ForceUpdate" class="btn outline">⚡ Forcer la mise à jour</button></div>
   <div id="v87UpdateStatus" class="small" style="margin-top:8px">Vérification automatique à l’ouverture.</div>
@@ -67,7 +70,7 @@ function patchNavigation(){if(window.__v87navpatch)return;window.__v87navpatch=1
  if(window.IFSI_V82?.showAnatomy){const f=window.IFSI_V82.showAnatomy;window.IFSI_V82.showAnatomy=function(){hideSettings();const r=f.apply(this,arguments);setTimeout(active,0);return r}}
  if(window.IFSI_V81?.showHub){const f=window.IFSI_V81.showHub;window.IFSI_V81.showHub=function(){hideSettings();const r=f.apply(this,arguments);setTimeout(active,0);return r}}
 }
-function showSettings(){window.show?.('home');$('home')?.classList.add('hidden');['courses74','course74','vocals','v81Hub','anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas'].forEach(id=>$(id)?.classList.add('hidden'));$('settings87')?.classList.remove('hidden');render();active();window.scrollTo({top:0,behavior:'smooth'})}
+function showSettings(){window.show?.('home');$('home')?.classList.add('hidden');['courses74','course74','vocals','v81Hub','anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas','courseFollowup'].forEach(id=>$(id)?.classList.add('hidden'));$('settings87')?.classList.remove('hidden');render();active();window.scrollTo({top:0,behavior:'smooth'})}
 function switchState(id,on){$(id)?.classList.toggle('on',!!on);$(id)?.setAttribute('aria-pressed',on?'true':'false')}
 function download(name,obj){const a=document.createElement('a'),b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download(`IFSI_ABC_sauvegarde_V${V}.json`,data)}
@@ -108,12 +111,13 @@ function bind(){
  $('v87ExportResults').onclick=()=>{if(typeof window.exportStats==='function')window.exportStats();else{const x=typeof window.st==='function'?window.st():{};download('IFSI_ABC_resultats.json',x)}};
  $('v87ExportBackup').onclick=backup;
  $('v87Whatsapp').onclick=shareLatestResourceWhatsapp;
+ $('v87Followup').onclick=()=>window.IFSI_COURSE_FOLLOWUP?.show?.();
  $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await refreshVersionState();await updateWorker();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible`;if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Nouvelle version détectée. Utilise « Forcer la mise à jour » si le rechargement ne suffit pas.'}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
  $('v87ForceUpdate').onclick=forceUpdate;
  $('v87Reload').onclick=()=>location.reload();
  $('v87Improve').onclick=()=>{const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>x.id!=='v87Improve'&&x.id!=='v86Improve'&&/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
 }
-function active(){const ids=['v87Home','v87Courses','v87Anat','v87Center','v87Settings'];ids.forEach(id=>$(id)?.classList.remove('on'));if(!$('settings87')?.classList.contains('hidden'))return $('v87Settings')?.classList.add('on');const anatomyIds=['anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas'];if(anatomyIds.some(id=>$(id)&&!$(id).classList.contains('hidden')))return $('v87Anat')?.classList.add('on');if(!$('v81Hub')?.classList.contains('hidden'))return $('v87Center')?.classList.add('on');if(!$('courses74')?.classList.contains('hidden')||!$('course74')?.classList.contains('hidden'))return $('v87Courses')?.classList.add('on');$('v87Home')?.classList.add('on')}
+function active(){const ids=['v87Home','v87Courses','v87Anat','v87Center','v87Settings'];ids.forEach(id=>$(id)?.classList.remove('on'));if(!$('settings87')?.classList.contains('hidden')||!$('courseFollowup')?.classList.contains('hidden'))return $('v87Settings')?.classList.add('on');const anatomyIds=['anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas'];if(anatomyIds.some(id=>$(id)&&!$(id).classList.contains('hidden')))return $('v87Anat')?.classList.add('on');if(!$('v81Hub')?.classList.contains('hidden'))return $('v87Center')?.classList.add('on');if(!$('courses74')?.classList.contains('hidden')||!$('course74')?.classList.contains('hidden'))return $('v87Courses')?.classList.add('on');$('v87Home')?.classList.add('on')}
 function init(){css();addSection();addNav();patchNavigation();if(!$('v87Dark')?.dataset.bound){bind();$('v87Dark').dataset.bound='1'}document.body.classList.add('v87-ready');render();active();return !!window.IFSI_V82&&!!window.IFSI_V81&&!!window.IFSI_V77}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
 window.addEventListener('storage',()=>requestAnimationFrame(render));

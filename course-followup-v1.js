@@ -2,7 +2,7 @@
 'use strict';
 // Suivi public : catalogue et planning déjà publiés uniquement.
 // Aucun accès réseau aux registres personnels ; pas de synchronisation de l'état local.
-const SECTION='courseFollowup',NAV='vCourseFollowupNav';
+const SECTION='courseFollowup';
 const K_GROUP='ifsiabc_followup_group_v1',K_REVIEW='ifsiabc_followup_review_v1';
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\u0027':'&#39;'}[c]));
@@ -54,7 +54,6 @@ function eventsForWeek(week,g){return (week?.events||[]).filter(e=>eventForGroup
 function css(){
  if($('followupCss'))return;
  const style=document.createElement('style');style.id='followupCss';style.textContent=
- '#v87Nav.vfollowup-nav{grid-template-columns:repeat(7,minmax(0,1fr));width:min(860px,calc(100% - 16px))}'+
  '#courseFollowup{padding:4px 0 145px}#courseFollowup .cf-head{border:1px solid var(--line);border-radius:20px;padding:16px;background:var(--card);margin-bottom:12px}'+
  '#courseFollowup .cf-head h2{margin:0 0 6px}#courseFollowup .cf-meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}'+
  '#courseFollowup .cf-pill{background:color-mix(in srgb,var(--card) 90%,var(--p) 10%);color:var(--ink);padding:6px 9px;border-radius:12px;font-size:12px;font-weight:650}'+
@@ -67,7 +66,7 @@ function css(){
  '#courseFollowup select,#courseFollowup input{min-width:0;width:100%;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px;border-radius:11px}'+
  '#courseFollowup .cf-agenda{display:grid;gap:8px}#courseFollowup .cf-session{display:grid;grid-template-columns:105px 1fr auto;gap:10px;align-items:center}'+
  '#courseFollowup .cf-session button{font-size:11px;padding:8px;white-space:nowrap}'+
- '@media(max-width:600px){#v87Nav.vfollowup-nav button{font-size:9px;padding:6px 1px}#v87Nav.vfollowup-nav button span{font-size:15px}'+
+  '@media(max-width:600px){'+
  '#courseFollowup .cf-controls{grid-template-columns:1fr 1fr}#courseFollowup .cf-controls input{grid-column:1/-1}'+
  '#courseFollowup .cf-session{grid-template-columns:1fr auto}#courseFollowup .cf-session .cf-when{grid-column:1/-1}}';
  document.head.appendChild(style);
@@ -78,15 +77,14 @@ function section(){
  const s=document.createElement('section');s.id=SECTION;s.className='hidden';
  app.insertBefore(s,$('settings87')||document.querySelector('.app>nav')||null);return true;
 }
-function addNav(){
- const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vfollowup-nav');
- if(!$(NAV)){const b=document.createElement('button');b.id=NAV;b.innerHTML='<span>✅</span>Suivi';b.type='button';
-  (document.getElementById('vPlanningNav')||document.getElementById('v87Courses'))?.insertAdjacentElement('afterend',b);
-  b.addEventListener('click',show); }
+function bindBottomNavigation(){
+ const nav=$('v87Nav');if(!nav)return false;
+ // Accès via Paramètres, pas de septième bouton au pied de page.
  if(!nav.dataset.followupBound){nav.dataset.followupBound='1';
- nav.addEventListener('click',e=>{const b=e.target.closest('button');if(b&&b.id!==NAV)hide()},true)}
- return !!$(NAV);
+  nav.addEventListener('click',e=>{if(e.target.closest('button'))hide()},true)}
+ return true;
 }
+
 let ueFilter='all',statusFilter='all',textFilter='';
 function renderResources(models){
  let selected=models.filter(m=>(ueFilter==='all'||m.ue===ueFilter)&&
@@ -143,7 +141,7 @@ function render(){
   '<option value="attention"'+(statusFilter==='attention'?' selected':'')+'>À vérifier</option>'+
   '<option value="ok"'+(statusFilter==='ok'?' selected':'')+'>Inventaire référencé</option></select>'+
   '<input id="cfSearch" type="search" placeholder="Rechercher un cours" aria-label="Rechercher un cours" value="'+esc(textFilter)+'"></div>';
- sec.innerHTML='<div class="cf-head"><h2>✅ Suivi des cours</h2>'+
+ sec.innerHTML='<div class="cf-head"><button id="cfBackSettings" class="btn outline" type="button" style="margin-bottom:10px">← Paramètres</button><h2>✅ Suivi des cours</h2>'+
  '<p class="cf-muted">État du catalogue public. Les quantités indiquent les ressources référencées, pas leur conformité pédagogique ni leur disponibilité réelle sur Drive.</p>'+
  '<div class="cf-meta"><span class="cf-pill">'+models.length+' cours visibles</span><span class="cf-pill">'+issue+' à vérifier dans le catalogue</span></div>'+
  '<p class="cf-muted">Un support sans lien catalogué peut exister sur Drive. Aucun statut de source personnelle n’est visible ici.</p>'+
@@ -152,6 +150,7 @@ function render(){
  $('cfUe').onchange=e=>{ueFilter=e.target.value;updateResults()};
  $('cfStatus').onchange=e=>{statusFilter=e.target.value;updateResults()};
  $('cfSearch').oninput=e=>{textFilter=e.target.value;updateResults()};
+  $('cfBackSettings').onclick=()=>window.IFSI_V87?.showSettings?.();
  bindAgenda();
  sec.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));
 }
@@ -163,16 +162,16 @@ function bindAgenda(){
  $('cfWeek')?.addEventListener('change',()=>updateAgendaOnly());
  document.querySelectorAll('[data-cf-review]').forEach(b=>b.onclick=()=>{const k=decodeURIComponent(b.dataset.cfReview);saveReview(k,!safeRead()[k]);updateAgendaOnly()});
 }
-function hide(){$(SECTION)?.classList.add('hidden');$(NAV)?.classList.remove('on')}
+function hide(){$(SECTION)?.classList.add('hidden')}
 function show(){
- if(!section()||!addNav())return;
+ if(!section()||!bindBottomNavigation())return;
  document.querySelectorAll('.app>section').forEach(s=>s.classList.add('hidden'));
  $(SECTION).classList.remove('hidden');render();
  document.querySelectorAll('#v87Nav button').forEach(b=>b.classList.remove('on'));
- $(NAV).classList.add('on');
+ $('v87Settings')?.classList.add('on');
  window.scrollTo?.({top:0,behavior:'smooth'});
 }
-function init(){css();return section()&&addNav()}
+function init(){css();return section()&&bindBottomNavigation()}
 let tries=0,t=setInterval(()=>{if(init()||++tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
 window.addEventListener('ifsi:vocabulary-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
