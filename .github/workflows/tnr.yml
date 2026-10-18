@@ -118,6 +118,9 @@ jobs:
       - name: Contrôler les règles QCM sur des cas fictifs
         run: node tests/qcm-quality-core-test-v1.mjs
 
+      - name: Plafonner les résidus d'en-têtes PDF dans le QCM d'épistémologie
+        run: node tests/qcm-pdf-page-furniture-v1.mjs
+
       - name: Bloquer les défauts de nouveaux QCM
         env:
           IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
