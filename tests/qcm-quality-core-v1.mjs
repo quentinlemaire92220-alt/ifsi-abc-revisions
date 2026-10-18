@@ -31,7 +31,7 @@ export function hasPdfPageFurniture(q){
   const text=[q?.question,...(Array.isArray(q?.choices)?q.choices:[]),q?.explanation].map(v=>String(v??'')).join(' ');
   // Marqueurs très spécifiques de pollution par extraction PDF : ne pas
   // détecter la simple mention naturelle d'une page ou d'un CM.
-  return /CM\s*\d+\s*[•·]|\bNiveaux d.abstraction et utilit[ée]\b/i.test(text);
+  return /CM\s*\d+\s*[•·]|\bNiveaux d.abstraction et utilit[ée]/i.test(text);
 }
 export function pedagogicalQualityViolations(q){
   const errors=[];
