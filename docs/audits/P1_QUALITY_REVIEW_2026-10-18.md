@@ -1,6 +1,6 @@
 # IFSI ABC — audit P1 et revue pédagogique séparée (18 octobre 2026)
 
-**Base auditée :** `main` au commit `7057d1e27f7a9165784876783b1bc23970b2fb2b`, version **8.30.89**.
+**Base initialement auditée :** `main` au commit `7057d1e27f7a9165784876783b1bc23970b2fb2b`, version **8.30.89**. **Base de la PR synchronisée :** `main` V8.30.90 (`334b01d3`), via commit de synchronisation `55f643ce`.
 
 **Portée de cette PR :** contrôles et traçabilité techniques uniquement. Pas de changement de contenu médical, de banque QCM, de lien Drive d'étudiant, de calendrier, de fichier MP3, de version de production, ni de publication automatique.
 
@@ -26,12 +26,28 @@
 
 ## Revue technique complémentaire — 18 octobre 2026
 
-- La branche `main` a évolué depuis l'ouverture de cette PR : V8.30.90 (`334b01d3`). La PR reste en **brouillon** et peut nécessiter une synchronisation explicite avant toute fusion.
+- La branche `main` a évolué depuis l'ouverture de cette PR : V8.30.90 (`334b01d3`). La PR a été **synchronisée** avec cette version par un commit à deux parents, tout en restant en **brouillon**.
 - Les tests ajoutés refusent également les énoncés vides, les identifiants de cours et de question absents, les thèmes/niveaux manquants, les propositions vides ou dupliquées et les index de réponses incorrects/dupliqués.
 - Le détecteur de dépendance visuelle distingue les questions conceptuelles sur la radiographie des références à une image/schéma à consulter.
 - **Deux références visuelles potentielles** demeurent à revoir sans modification automatique : `pharmaco_031` et `v820_a1p3_019`. Leur présence en alerte ne prouve pas à elle seule qu'un visuel manque effectivement dans l'application.
 - Les seuils de dette contrôlent désormais `short_explanation=289`, `source_dependent_question=108`, `three_of_four=623`, `identical_question=0`, `image_without_figure=2`. Les seuils ne sont **pas** une validation médicale.
-- TNR de la branche : [GitHub Actions — passage réussi](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/39124070617) (commit `34c396fc`, 18/10/2026).
+- TNR **après synchronisation avec V8.30.90** : [GitHub Actions — passage réussi](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/39125671831) (commit `55f643ce`, 18/10/2026). Les contrôles du nouveau suivi des cours sont conservés.
+
+## Revue pédagogique ciblée — à valider hors GitHub public
+
+### Dépendances à une illustration (P1)
+
+- `v820_a1p3_019` — cours **Épistémologie et savoirs infirmiers**, banque `qextra-12.txt`. L'énoncé actuel demande ce que représentent les « briques » dans **une image pédagogique « briques et ciment »**. Réponse déclarée en banque : **les concepts**. Le corrigé précise l'analogie entre concepts (briques) et propositions (ciment). **Constat :** l'énoncé dépend explicitement de cette image, non rattachée par métadonnée au QCM. **À vérifier avant changement :** la formulation du support officiel ; décider soit d'intégrer l'image autorisée, soit de reformuler une question autonome non triviale en conservant la notion. Ne pas considérer la clé comme validée par le seul audit.
+- `pharmaco_031` — question de pharmacologie signalée par l'audit pour référence visuelle. Elle figure aussi dans l'exception explicite de `keepQuestion` dans `sw.js`. **À vérifier :** texte/visuel réellement chargé sur téléphone, présence de la planche, et justification pédagogique de l'exception ; conserver cette entrée en attente plutôt que de la filtrer automatiquement.
+
+### Relecture de fond (P1)
+
+- **289 explications courtes** et **108 formulations dépendantes du support** : prioriser les cours concernés à l'aide du rapport QCM, confronter chaque item au support officiel, puis préparer la correction QCM / PDF / flashcard sur une branche pédagogique distincte.
+- **378 QCM bruts avec quatre bonnes réponses** : localiser les originaux, vérifier les cinq propositions avec la source officielle et approuver les remplacements avant de supprimer la normalisation de compatibilité. Aucune correction automatique des bonnes réponses.
+- **Six cours sans QCM actif** et **deux sans fiche propre** : vérifier si les cours ont été effectivement dispensés et la pertinence pédagogique de chaque livrable. La présence de documents Drive ne garantit pas leur statut officiel.
+- **Douze pointeurs de source officiels non renseignés** et **37 fiches dont le statut est non qualifié** : rapprocher les fichiers avec les métadonnées Drive et le registre de revue privé ; ne renseigner `officialSupport` qu'après preuve de provenance.
+
+**Décision de revue :** corrections médicales et modifications de ressources = **NON APPROUVÉES**. Cette PR est uniquement un garde-fou technique. Chaque lot pédagogique exige revue privée, validation du contenu et GO publication distinct.
 
 ## File de revue pédagogique privée — hors de cette PR
 
