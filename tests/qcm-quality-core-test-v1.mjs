@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {exactDuplicateKey,needsExternalFigure,pedagogicalQualityViolations,qualityCounts,assertQualityCeilings} from './qcm-quality-core-v1.mjs';
-const base={id:'one',courseId:'test',question:'Quelles définitions sont correctes ?',choices:['A','B','C','D'],answers:[0],explanation:'Le premier énoncé explique le mécanisme et distingue les autres propositions en justifiant le choix retenu.'};
+const base={id:'one',courseId:'test',theme:'Anatomie',difficulty:'easy',question:'Quelles définitions sont correctes ?',choices:['A','B','C','D'],answers:[0],explanation:'Le premier énoncé explique le mécanisme et distingue les autres propositions en justifiant le choix retenu.'};
 assert.equal(exactDuplicateKey(base),exactDuplicateKey({...base,id:'two'}));
 assert.notEqual(exactDuplicateKey(base),exactDuplicateKey({...base,courseId:'autre_cours'}));
 assert.notEqual(exactDuplicateKey(base),exactDuplicateKey({...base,choices:['Un','Deux','Trois','Quatre']}));
@@ -11,6 +11,19 @@ assert.ok(pedagogicalQualityViolations({...base,explanation:'A est vrai.'}).some
 assert.ok(pedagogicalQualityViolations({...base,answers:[0,1,2,3]}).some(x=>x.includes('1 à 3')));
 assert.ok(pedagogicalQualityViolations({...base,question:'Sur cette image, quel organe est visible ?'}).some(x=>x.includes('figure')));
 assert.deepEqual(pedagogicalQualityViolations({...base,question:'Sur cette image, quel organe est visible ?',imageUrl:'./test.jpg'}),[]);
+assert.ok(pedagogicalQualityViolations({...base,id:''}).some(x=>x.includes('Identifiant QCM')));
+assert.ok(pedagogicalQualityViolations({...base,courseId:''}).some(x=>x.includes('cours absent')));
+assert.ok(pedagogicalQualityViolations({...base,theme:''}).some(x=>x.includes('Thème absent')));
+assert.ok(pedagogicalQualityViolations({...base,difficulty:undefined}).some(x=>x.includes('difficulté explicite')));
+assert.ok(pedagogicalQualityViolations({...base,question:' '}).some(x=>x.includes('Énoncé absent')));
+assert.ok(pedagogicalQualityViolations({...base,choices:['A','B','A','D']}).some(x=>x.includes('identiques')));
+assert.ok(pedagogicalQualityViolations({...base,choices:['A','B','','D']}).some(x=>x.includes('Proposition vide')));
+assert.ok(pedagogicalQualityViolations({...base,answers:[0,0]}).some(x=>x.includes('dupliqué')));
+assert.ok(pedagogicalQualityViolations({...base,answers:[9]}).some(x=>x.includes('incorrect')));
+assert.equal(needsExternalFigure('Sur le schéma, identifier la structure.'),true);
+assert.equal(needsExternalFigure('Voir la figure suivante.'),true);
+assert.ok(pedagogicalQualityViolations({...base,question:'Sur le schéma, localiser le rein.',image:true}).some(x=>x.includes('figure')));
+assert.deepEqual(pedagogicalQualityViolations({...base,question:'Sur le schéma, localiser le rein.',image:{src:'./schema.png'}}),[]);
 const count=qualityCounts([base,{...base,id:'two'},{...base,id:'three',courseId:'autre_cours'}, {...base,id:'four',explanation:'A'}]);
 assert.equal(count.identical_question,2);
 assert.equal(count.short_explanation,1);
