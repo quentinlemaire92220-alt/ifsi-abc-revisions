@@ -11,7 +11,8 @@ const norm74=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').to
 const readJSON74=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
 const writeJSON74=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const qCourse=q=>q?.course||q?.theme||'';
-const vocals74=()=>studentResources74((window.IFSI_V73?.getVocals?.()||[]).map(v=>({...v,url:v.url||('https://drive.google.com/file/d/'+v.driveId+'/view')})));
+const studentVocals74=items=>studentResources74(items.map(v=>({...v,url:v.url||('https://drive.google.com/file/d/'+v.driveId+'/view')})));
+const vocals74=()=>studentVocals74(window.IFSI_V73?.getVocals?.()||[]);
 const vocalState74=()=>window.IFSI_V73?.getState?.()||readJSON74(VOCAL_KEY,{listened:[],favorites:[],lastId:null});
 const qFavs74=()=>new Set(readJSON74(Q_FAV_KEY,[]));
 const docFavs74=()=>new Set(readJSON74(DOC_FAV_KEY,[]));
@@ -82,7 +83,7 @@ function allCourses74(){
 }
 function courseData74(course){
   const id=courseId74(course),bundle=id?window.IFSI_V741?.resourcesForCourse?.(id):null;
-  const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
+  const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=studentVocals74(bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course)));
   const sheets=bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
   const infos=bundle?.infographics||(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}

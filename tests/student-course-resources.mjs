@@ -51,10 +51,10 @@ for(const c of manifest.courses){
 }
 
 // Exercise the real renderer with all registry courses, including hidden children.
-function renderer(reg=clone(registry),S=clone(sheets),I=clone(infos)){
+function renderer(reg=clone(registry),S=clone(sheets),I=clone(infos),V=clone(vocals)){
  const elements=new Map(['v74CourseDetail','v74BackCourses','v74Course10','v74CourseAll','v74FavoritesBody','v74Search','v74SearchResults'].map(id=>[id,{innerHTML:'',value:'',querySelectorAll:()=>[]}]));
  const storage=new Map();
- const context={window:{show(){},IFSI_COURSE_RESOURCES:policy,IFSI_V73:{getVocals:()=>vocals}},URL,console,Q:[],S,I,registryFixture:reg,
+ const context={window:{show(){},IFSI_COURSE_RESOURCES:policy,IFSI_V73:{getVocals:()=>V}},URL,console,Q:[],S,I,registryFixture:reg,
   document:{getElementById:id=>elements.get(id)||null,querySelector:()=>null,querySelectorAll:()=>[]},
   localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},setInterval:()=>0,clearInterval(){}};
  vm.createContext(context);
@@ -79,7 +79,7 @@ const dirty=clone(registry),sample=dirty.courses.find(c=>c.id==='droits_patients
 sample.officialSupportItems=[{url:variants[1].replace('official',policy.driveIdentity(sample.officialSupportUrl).slice(5)),title:'Même document'}];
 sample.additionalDocuments=[...blocked.map((x,i)=>({url:link('forbidden'+i),...x})),{label:'Copie QCM',url:sample.qcmPdfUrl}];
 const injected={courseId:sample.id,label:'Scripts vocaux (PDF)',title:'Script',url:link('hidden')};
-const dirtyView=renderer(dirty,[...sheets,injected],infos),dirtyHtml=dirtyView.render(sample.label);
+const dirtyView=renderer(dirty,[...sheets,injected],infos,[...vocals,{id:'forbidden-audio',driveId:'private-audio',private:true,courseId:sample.id,title:'Enregistrement'}]),dirtyHtml=dirtyView.render(sample.label);
 assert.ok(!dirtyHtml.includes('forbidden')&&!dirtyHtml.includes('/hidden/'));
 assert.equal([...dirtyHtml.matchAll(new RegExp(sample.qcmPdfUrl,'g'))].length,1,'QCM principal dupliqué dans les documents');
 dirtyView.elements.get('v74Search').value='script';dirtyView.context.window.testViews.renderSearch74();
