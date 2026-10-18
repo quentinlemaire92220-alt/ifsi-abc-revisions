@@ -49,6 +49,15 @@
 
 **Décision de revue :** corrections médicales et modifications de ressources = **NON APPROUVÉES**. Cette PR est uniquement un garde-fou technique. Chaque lot pédagogique exige revue privée, validation du contenu et GO publication distinct.
 
+### Relecture croisée du lot Épistémologie A1 partie 03 (18/10)
+
+- Le support de CM3 de l'enseignante a été retrouvé et le PDF de QCM complémentaire a été comparé à la banque `qextra-12.txt`. Le **QCM complémentaire** ne remplace pas à lui seul le support de cours pour la validation du fond.
+- `v820_a1p3_019` : le corrigé du QCM complémentaire confirme la réponse « concepts » pour la métaphore « briques et ciment ». Proposer une formulation **autonome, sans image indispensable** ; **ne pas changer le corrigé ni les options sans validation**.
+- La banque brute `qextra-12.txt` comporte **8 fragments de titres ou pieds de page PDF** dans l'A1 partie 03 : `v820_a1p3_005`, `012`, `014`, `018`, `022`, `024`, `028`, `030`. Il s'agit d'anomalies d'importation et non de faits médicaux ; les textes originaux et les éventuels PDF QCM doivent être synchronisés avant leur correction.
+- Cette même partie contient **trois QCM bruts avec quatre bonnes réponses** : `v820_a1p3_001`, `003`, `028`. Ne pas déduire de la normalisation du runtime qu'une correction des quatre choix d'origine a été validée.
+- Le QCM d'entraînement complémentaire de pharmacologie comporte un item 31 sur l'acronyme ADME avec quatre choix corrects déclarés. Il faut encore **rapprocher formellement cet item de l'identifiant runtime `pharmaco_031`** : le numéro seul n'est pas une preuve d'identité. Les contenus de pharmacologie en Drive comprennent aussi des matériaux issus de notes et transcriptions ; **ne pas traiter cette synthèse comme support officiel vérifié**.
+- **Action proposée pour validation séparée** : nettoyer d'abord les résidus d'extraction ; rendre les énoncés autonomes ; vérifier la grille des réponses contre le véritable support de cours ; synchroniser PDF, JSON, flashcards, score et corrigé avant tout GO publication.
+
 ## File de revue pédagogique privée — hors de cette PR
 
 **Priorité 1.** Réviser les 289 explications courtes et les 108 formulations dépendantes du cours, puis comparer PDF et banque applicative. Revoir le ou les items qui demandent réellement une illustration absente et les 378 QCM bruts à quatre bonnes réponses. Les réponses, options et corrections nécessitent vérification sur le support officiel, validation humaine et éventuel nouveau GO publication.
