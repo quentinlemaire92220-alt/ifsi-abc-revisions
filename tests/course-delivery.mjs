@@ -8,7 +8,7 @@ const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
 const infos=read('infographics.json'),vocals=read('vocals.json');
 const {deck,questions,registry}=await runtimeDeck();
-const required=['01','02','03','04','05','06','07','08','99'];
+const required=['01','02','03','04','05','06','07'];
 for(const c of manifest.courses){
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
@@ -74,8 +74,8 @@ for(const c of manifest.courses){
   assert.ok(c.vocals.length>0,'Pack complet sans vocal');
  }else if(c.status==='awaiting_mp3'){
   assert.equal(c.vocals.length,0,'Audio publié avant le retour des MP3');
-  assert.ok(c.vocalScripts.length>0,'Scripts vocaux absents');
-  assert.ok(c.vocalScripts.every(x=>x.driveId&&x.number&&x.title),'Scripts vocaux incomplets');
+  assert.ok(Number.isInteger(c.expectedVocalCount)&&c.expectedVocalCount>0,'Nombre de vocaux attendus absent');
+  assert.ok(!c.vocalScripts&&!c.folders['08']&&!c.folders['99'],'Références de travail dans le manifeste public');
   assert.ok(c.blockers.some(x=>x.resource==='vocals'&&x.reason==='awaiting_user_mp3'),'Attente des MP3 non explicitée');
  }else{
   assert.equal(c.status,'partial','Statut de livraison inconnu');

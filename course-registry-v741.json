@@ -1,5 +1,5 @@
 {
-  "version": "8.30.92",
+  "version": "8.30.93",
   "courses": [
     {
       "id": "biomolecules",
@@ -265,12 +265,7 @@
       "ue": "B1",
       "officialSupportUrl": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view",
       "officialSupportCoverage": "partial",
-      "officialSupportItems": [
-        {
-          "title": "Anatomie de l’appareil locomoteur — cours 01",
-          "url": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view"
-        }
-      ]
+      "officialSupportItems": []
     },
     {
       "id": "traumatologie",
@@ -286,12 +281,7 @@
       "showInCourses": false,
       "officialSupportUrl": "https://drive.google.com/file/d/1srozr4UqPEs0tzxVuVkTvVIKB3hlIqMT/view",
       "officialSupportCoverage": "partial",
-      "officialSupportItems": [
-        {
-          "title": "Traumatologie — cours 03 : complications du décubitus",
-          "url": "https://drive.google.com/file/d/1srozr4UqPEs0tzxVuVkTvVIKB3hlIqMT/view"
-        }
-      ]
+      "officialSupportItems": []
     },
     {
       "id": "histoire_profession_infirmiere",
@@ -638,10 +628,6 @@
       "qcmPdfUrl": "https://drive.google.com/file/d/1srqa2GijBeHCEAO4JerGFs5tWmE31pNu/view",
       "officialSupportItems": [
         {
-          "title": "TD3 : les stomies - support officiel",
-          "url": "https://drive.google.com/file/d/144y_gyrWKuncH-BIShA4lAPvCLUMaTqP/view"
-        },
-        {
           "title": "Complément : appareil digestif",
           "url": "https://drive.google.com/file/d/17SLnvcDc6EEBJo_miSCNFHYF64S8nGBk/view"
         }
@@ -666,10 +652,6 @@
         {
           "label": "Pack des 7 infographies",
           "url": "https://drive.google.com/file/d/1_3A1FA1043GnHgIJopjqGOF6AyPU4mC4/view"
-        },
-        {
-          "label": "Scripts vocaux - 6 textes à convertir en MP3",
-          "url": "https://drive.google.com/file/d/1e9VHaL-64BN-o7VdhGpt77K9m9YROD2v/view"
         }
       ],
       "audioStatus": "awaiting_mp3"
@@ -686,12 +668,7 @@
       "semester": "S1",
       "part": "01",
       "officialSupportUrl": "https://drive.google.com/file/d/1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08/view",
-      "officialSupportItems": [
-        {
-          "title": "Support officiel - Droits des patients",
-          "url": "https://drive.google.com/file/d/1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08/view"
-        }
-      ],
+      "officialSupportItems": [],
       "qcmPdfUrl": "https://drive.google.com/file/d/1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6/view",
       "additionalDocuments": [
         {
@@ -701,14 +678,6 @@
         {
           "label": "Flashcards - Partie 01",
           "url": "https://drive.google.com/file/d/1ql-jva0m-WpauVxIw3Hj4ib2F9hmIpPm/view"
-        },
-        {
-          "label": "Scripts vocaux regroupés - Partie 01",
-          "url": "https://drive.google.com/file/d/1wKAM7AhSJVOKcB7d14zq9wCTqktgzjN5/view"
-        },
-        {
-          "label": "Scripts vocaux - 16 textes (PDF)",
-          "url": "https://drive.google.com/file/d/1L47gMYL4Ynccw-kbYjEJcUFijIeTbECU/view"
         }
       ],
       "audioStatus": "awaiting_mp3",

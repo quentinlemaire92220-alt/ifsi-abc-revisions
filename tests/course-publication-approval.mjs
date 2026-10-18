@@ -30,4 +30,4 @@ function readData(ref,manifest){
  return {registry:json(ref,'course-registry-v741.json'),sheets,infographics,vocals,banks,imageHashes,vocabulary:json(ref,'vocabulaire-v1.json').entries};
 }
 const checked=validateChangedDeliveries(before,after,readData(base,before),readData(null,after));
-console.log(`✅ Validation avant publication : ${checked.length} lot(s) nouveau(x) ou modifié(s) approuvé(s) ; cours inchangés préservés.`);
+console.log(`✅ Validation avant publication : ${checked.filter(x=>x.kind!=='resource_withdrawal').length} lot(s) approuvé(s), ${checked.filter(x=>x.kind==='resource_withdrawal').length} retrait(s) de références internes uniquement ; cours inchangés préservés.`);

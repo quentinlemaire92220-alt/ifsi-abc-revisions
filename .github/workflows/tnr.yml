@@ -62,6 +62,9 @@ jobs:
       - name: TNR suivi des cours et confidentialité
         run: node tests/course-followup-v1.mjs
 
+      - name: TNR supports uniques et ressources étudiantes sans contenus internes
+        run: node tests/student-course-resources.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
