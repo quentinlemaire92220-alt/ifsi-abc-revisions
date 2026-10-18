@@ -55,7 +55,7 @@ assert.equal(validateChangedQcmBanks([legacy],[cleaned]),1,
   'Nettoyer une option sans modifier une formulation historique doit rester possible');
 assert.throws(()=>validateChangedQcmBanks([legacy],[{
   ...cleaned,question:'Selon le TD, comment fonctionne ce phénomène ?'
-}]),/dépend du TD\\/support/,
+}]),/dépend du TD\/support/,
   'Une nouvelle référence à un support doit rester interdite');
 assert.throws(()=>validateChangedQcmBanks([okay],[{...okay,explanation:'Le TD indique A.'}]),
   /dépend du TD\/support/);
