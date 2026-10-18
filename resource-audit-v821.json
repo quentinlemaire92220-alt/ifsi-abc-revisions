@@ -1,5 +1,5 @@
 {
-  "version": "8.30.92",
+  "version": "8.30.93",
   "auditedAt": "2026-10-11",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -10,7 +10,7 @@
   "note": "V8.30.73 : ressources officielles Douleur synchronisées ; provenance Respiratoire corrigée.",
   "expectedTotals": {
     "courses": 48,
-    "sheets": 59,
+    "sheets": 55,
     "infographics": 163,
     "vocals": 58,
     "v820QcmImported": 1174,

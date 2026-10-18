@@ -115,7 +115,7 @@ for(const c of registry.courses){
    assert.match(p.url||'',/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+\/view$/,'Capture de cours sans lien valide : '+c.label);
  }
 }
-for(const token of ['v74-original-support','Support du cours (documents sources)','📸 Captures du cours — provisoires','Support du cours non disponible','📄 Fiches de révision','courseSourceHtml','captureSupportUrl','captureSupportItems']){
+for(const token of ['v74-original-support','Support du cours (documents sources)','📸 Captures du cours — provisoires','Support du cours non disponible','📄 Fiches de révision','courseSourceHtml','captureSupportUrl',"supportResources(courseMeta,'capture',sourceSeen)"]){
  assert.ok(course.includes(token),'Séparation source de cours / fiche de révision absente : '+token);
 }
 console.log('✅ TNR provenance : supports officiels, captures provisoires et fiches de révision bien séparés');

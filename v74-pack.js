@@ -11,11 +11,13 @@ const norm74=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').to
 const readJSON74=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
 const writeJSON74=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const qCourse=q=>q?.course||q?.theme||'';
-const vocals74=()=>window.IFSI_V73?.getVocals?.()||[];
+const studentVocals74=items=>studentResources74(items.map(v=>({...v,url:v.url||('https://drive.google.com/file/d/'+v.driveId+'/view')})));
+const vocals74=()=>studentVocals74(window.IFSI_V73?.getVocals?.()||[]);
 const vocalState74=()=>window.IFSI_V73?.getState?.()||readJSON74(VOCAL_KEY,{listened:[],favorites:[],lastId:null});
 const qFavs74=()=>new Set(readJSON74(Q_FAV_KEY,[]));
 const docFavs74=()=>new Set(readJSON74(DOC_FAV_KEY,[]));
 const docKey74=(type,url)=>`${type}|${url}`;
+const studentResources74=items=>window.IFSI_COURSE_RESOURCES?.uniqueResources(items)||[];
 
 function addStyles74(){
   if($74('v74css'))return;
@@ -81,13 +83,13 @@ function allCourses74(){
 }
 function courseData74(course){
   const id=courseId74(course),bundle=id?window.IFSI_V741?.resourcesForCourse?.(id):null;
-  const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
+  const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=studentVocals74(bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course)));
   const sheets=bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
   const infos=bundle?.infographics||(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}
   const errors=new Set(stats.errors||[]);const err=qs.filter(q=>errors.has(q.id)).length;const rate=ans?Math.round(cor/ans*100):null;
   const vsState=vocalState74(),listened=new Set(vsState.listened||[]);const listenedCount=vs.filter(v=>listened.has(v.id)).length;
-  return {course,qs,vs,sheets,infos,seen:seen.length,ans,cor,rate,err,listenedCount};
+  return {course,qs,vs,sheets:studentResources74(sheets),infos:studentResources74(infos),seen:seen.length,ans,cor,rate,err,listenedCount};
 }
 function weakestCourse74(){
   const labels=[...new Set((Array.isArray(Q)?Q:[]).map(q=>q.courseId||qCourse(q)).filter(Boolean))];
@@ -126,8 +128,8 @@ function renderSearch74(){
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
-  for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
+  for(const x of studentResources74(Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
+  for(const x of studentResources74(Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
   box.innerHTML=all.map((r,j)=>r.url?`<a class="v74-search-item" href="${esc74(r.url)}" target="_blank" rel="noopener"><span class="kind">${esc74(r.kind)}</span>${esc74(r.title)}<div class="sub">${esc74(r.sub)}</div></a>`:`<button class="v74-search-item" type="button" data-v74result="${j}"><span class="kind">${esc74(r.kind)}</span>${esc74(r.title)}<div class="sub">${esc74(r.sub)}</div></button>`).join('');
@@ -211,11 +213,12 @@ function renderCourse74(){
   const sheets=[...d.sheets].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
-  const driveUrl=u=>typeof u==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)?u:'';
-  const officialUrl=driveUrl(courseMeta.officialSupportUrl);
-  const captureUrl=driveUrl(courseMeta.captureSupportUrl);
-  const officialParts=Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[];
-  const captureParts=Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[];
+  // One identity set for the source block, its archive and child supports.
+  const sourceSeen=new Set();
+  const official=window.IFSI_COURSE_RESOURCES.supportResources(courseMeta,'official',sourceSeen);
+  const captures=window.IFSI_COURSE_RESOURCES.supportResources(courseMeta,'capture',sourceSeen);
+  const officialUrl=official.url,captureUrl=captures.url;
+  const officialParts=official.parts,captureParts=captures.parts;
   const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
   const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':'📝 Support du cours non disponible';
   const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
@@ -227,16 +230,18 @@ function renderCourse74(){
     '</div>';
   const children=(window.IFSI_V741?.getRegistry?.()?.courses||[]).filter(x=>x.parentId===courseMeta.id);
   const childSupportHtml=children.length?'<div class="card v74-resource-block v74-child-supports"><div class="row"><b>📚 Supports officiels par sous-cours</b><span class="badge">'+children.length+'</span></div><div class="v74-resource-list">'+children.map(child=>{
-    const url=typeof child.officialSupportUrl==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(child.officialSupportUrl)?child.officialSupportUrl:'';
+    const support=window.IFSI_COURSE_RESOURCES.supportResources(child,'official',sourceSeen);
+    const url=support.url;
     const title=esc74(child.label),partial=child.officialSupportCoverage==='partial';
     const link=url?'<a class="btn outline v74-child-link" target="_blank" rel="noopener noreferrer" href="'+esc74(url)+'">'+(partial?'📘 Support partiel ↗':'📘 Support officiel ↗')+'</a>':'<span class="v74-official-empty" role="status">📝 Support officiel non disponible</span>';
-    const parts=Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[];
+    const parts=support.parts;
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
-  const extraDocs=[['📝','QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+' questions et corrigé argumenté',courseMeta.qcmPdfUrl],
-   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy').map(x=>['📄',x.label,driveUrl(x.url)]))]
-   .filter(x=>x[2])
-   .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
+  const documentSeen=new Set([...sourceSeen,...sheets.map(x=>window.IFSI_COURSE_RESOURCES.driveIdentity(x.url)),...infos.map(x=>window.IFSI_COURSE_RESOURCES.driveIdentity(x.url))]);
+  const extraDocs=window.IFSI_COURSE_RESOURCES.uniqueResources([
+   {icon:'📝',label:'QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+' questions et corrigé argumenté',url:courseMeta.qcmPdfUrl},
+   ...(courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy')],documentSeen)
+   .map(({icon='📄',label,url})=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
    .join('');
 
   box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}</div>
@@ -260,7 +265,7 @@ window.openCourse74=openCourse74;
 function toggleDocFavorite74(key){const f=docFavs74();f.has(key)?f.delete(key):f.add(key);writeJSON74(DOC_FAV_KEY,[...f]);renderDashboard74();renderFavorites74();enhanceResourceCards74()}
 function removeQFavorite74(id){const f=qFavs74();f.delete(id);writeJSON74(Q_FAV_KEY,[...f]);try{fill()}catch{}renderDashboard74();renderFavorites74()}
 function renderFavorites74(){
-  const box=$74('v74FavoritesBody');if(!box)return;const qf=qFavs74(),vf=new Set(vocalState74().favorites||[]),df=docFavs74();const qs=(Array.isArray(Q)?Q:[]).filter(q=>qf.has(q.id)),vs=vocals74().filter(v=>vf.has(v.id)),sheets=(Array.isArray(S)?S:[]).filter(x=>df.has(docKey74('sheet',x.url))),infos=(Array.isArray(I)?I:[]).filter(x=>df.has(docKey74('info',x.url)));const total=qs.length+vs.length+sheets.length+infos.length;if($74('v74FavTotal'))$74('v74FavTotal').textContent=total;
+  const box=$74('v74FavoritesBody');if(!box)return;const qf=qFavs74(),vf=new Set(vocalState74().favorites||[]),df=docFavs74();const qs=(Array.isArray(Q)?Q:[]).filter(q=>qf.has(q.id)),vs=vocals74().filter(v=>vf.has(v.id)),sheets=studentResources74(Array.isArray(S)?S:[]).filter(x=>df.has(docKey74('sheet',x.url))),infos=studentResources74(Array.isArray(I)?I:[]).filter(x=>df.has(docKey74('info',x.url)));const total=qs.length+vs.length+sheets.length+infos.length;if($74('v74FavTotal'))$74('v74FavTotal').textContent=total;
   const qhtml=qs.map(q=>`<div class="v74-resource"><b>${esc74(q.question)}</b><div class="small">${esc74(qCourse(q))}${q.number?' • Q'+q.number:''}</div><div class="actions"><button class="btn primary" type="button" data-favqopen="${esc74(q.id)}">▶ Réviser</button><button class="v74-star on" type="button" data-favqremove="${esc74(q.id)}">★</button></div></div>`).join('');
   const vhtml=vs.map(v=>`<div class="v74-resource"><b>${esc74(v.title)}</b><div class="small">${esc74(v.course)} • Vocal ${String(v.number).padStart(2,'0')}</div><div class="actions"><button class="btn primary" type="button" data-favvopen="${esc74(v.id)}">▶ Écouter</button><button class="v74-star on" type="button" data-favvremove="${esc74(v.id)}">★</button></div></div>`).join('');
   box.innerHTML=`<div class="card v74-fav-section"><div class="row"><b>QCM</b><span class="badge">${qs.length}</span></div><div class="v74-fav-list" style="margin-top:8px">${qhtml||'<div class="v74-fav-empty">Aucun QCM favori.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>🎧 Vocaux</b><span class="badge">${vs.length}</span></div><div class="v74-fav-list" style="margin-top:8px">${vhtml||'<div class="v74-fav-empty">Aucun vocal favori.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>📄 Fiches</b><span class="badge">${sheets.length}</span></div><div class="v74-resource-list">${sheets.length?sheets.map(x=>resourceCard74(x,'sheet')).join(''):'<div class="v74-fav-empty">Aucune fiche favorite.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>◫ Infographies</b><span class="badge">${infos.length}</span></div><div class="v74-resource-list">${infos.length?infos.map(x=>resourceCard74(x,'info')).join(''):'<div class="v74-fav-empty">Aucune infographie favorite.</div>'}</div></div>`;

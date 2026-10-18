@@ -60,7 +60,8 @@ assert.ok(!delivery.blockers.some(b=>b.reason==='awaiting_user_review'));
 assert.equal(delivery.publishedVerification.status,'MATCH');
 assert.equal(delivery.publicationApproval.status,'approved');
 assert.equal(delivery.vocals.length,0);
-assert.equal(delivery.vocalScripts.length,6);
+assert.equal(delivery.expectedVocalCount,6);
+assert.equal(delivery.vocalScripts,undefined,'Les scripts restent dans le suivi privé');
 for(const [path,rows] of Object.entries({
  'course-registry-v741.json':registry.courses,
  'qextra-53.txt':bank,

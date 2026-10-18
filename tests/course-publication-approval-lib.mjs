@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+import '../course-resource-policy.js';
+const resourcePolicy=globalThis.IFSI_COURSE_RESOURCES;
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -27,6 +29,19 @@ export function publicationBundle(courseId,delivery,data){
  };
 }
 export const bundleDigest=bundle=>createHash('sha256').update(JSON.stringify(canonical(bundle))).digest('hex');
+// Withdrawal publishes no new teaching content. Only this deterministic removal
+// is exempt; changes to questions, PDFs, links or approvals still require a GO.
+export function resourceWithdrawalBundle(bundle){
+ const out=JSON.parse(JSON.stringify(bundle)),removed=new Set();
+ for(const x of out.course?.additionalDocuments||[]){
+  if(!resourcePolicy.isStudentResource(x))removed.add(resourcePolicy.driveIdentity(x.url)?.slice(5));
+ }
+ for(const x of out.scripts||[])if(x.driveId)removed.add(x.driveId);
+ if(out.course)out.course=resourcePolicy.cleanCourse(out.course);
+ out.scripts=[];
+ for(const id of removed)delete out.artifactSha256s[id];
+ return out;
+}
 export function validatePublicationApproval(courseId,delivery,digest){
  const a=delivery.publicationApproval;
  assert.equal(a?.status,'approved',courseId+': validation du package absente. Empreinte attendue : '+digest);
@@ -44,6 +59,10 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const digest=bundleDigest(bundle);
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
+  if(prior&&JSON.stringify(canonical(prior.publicationApproval))===JSON.stringify(canonical(delivery.publicationApproval))&&
+    bundleDigest(resourceWithdrawalBundle(publicationBundle(id,prior,oldData)))===digest){
+   checked.push({courseId:id,kind:'resource_withdrawal'});continue;
+  }
   validatePublicationApproval(id,delivery,digest);
   const fileIds=new Set(bundle.documentIds);
   function collect(value,key){
