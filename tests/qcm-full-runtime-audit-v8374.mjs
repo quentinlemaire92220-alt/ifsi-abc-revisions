@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
+import {exactDuplicateKey,needsExternalFigure,hasFigureResource} from './qcm-quality-core-v1.mjs';
 
 // Audit en lecture seule sur la banque VRAIMENT fusionnée par le Service Worker.
 // Les anciennes vérifications de doublons/thèmes/niveaux chargent des packs différents.
@@ -17,7 +18,7 @@ for(const q of all){
  if(!q||typeof q.id!=='string'||!q.id) {add('id_missing','?', 'ID absent');continue}
  if(ids.has(q.id))add('id_duplicate',q.id,'ID déjà utilisé');
  ids.add(q.id);
- const qkey=norm(q.question).replace(/[?!,;.:]+$/,'');
+ const qkey=exactDuplicateKey(q);
  if(qkey){const previous=byQuestionText.get(qkey);if(previous){add('identical_question',q.id,'Même énoncé que '+previous);pick('exactQuestionDuplicates',q)}else byQuestionText.set(qkey,q.id)}
  if(!String(q.question||'').trim())add('question_missing',q.id,'Énoncé absent');
  if(!Array.isArray(q.choices)||![4,5].includes(q.choices.length)){add('invalid_choices',q.id,'4 ou 5 choix attendus');continue}
@@ -36,7 +37,7 @@ for(const q of all){
   if(explanation.length<80){(counts.short_explanation??=0);counts.short_explanation++;pick('shortExplanation',q)}
   if(/^r[eé]ponses? attendues? selon le corrig[eé] du QCM\s*:/i.test(explanation)){(counts.generic_explanation??=0);counts.generic_explanation++;pick('genericExplanation',q)}
  }
- if(/\b(?:radiographie|photographie|sur la radio|sur le clich[eé]|sur ce trac[eé]|sur cette image)\b/i.test(q.question)){counts.image_without_figure=(counts.image_without_figure||0)+1;pick('imageWithoutFigure',q)}
+ if(needsExternalFigure(q.question)&&!hasFigureResource(q)){counts.image_without_figure=(counts.image_without_figure||0)+1;pick('imageWithoutFigure',q)}
  if(/\b(?:selon la diapo|dans le cours|comme vu en cours|sur le support|illustration ci[- ]dessous)\b/i.test(q.question)){(counts.source_dependent_question??=0);counts.source_dependent_question++;pick('sourceReferences',q)}
  const course=String(q.courseId||q.course||q.theme||'Sans cours');
  courseCounts.set(course,(courseCounts.get(course)||0)+1);
