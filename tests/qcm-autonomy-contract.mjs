@@ -53,7 +53,12 @@ export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque') 
     const old=before.get(item.id);
     if(old && JSON.stringify(pedagogicalFields(old))===JSON.stringify(pedagogicalFields(item))) continue;
     scanned++;
-    const errors=autonomyViolations(item);
+    // La correction d'un choix/corrigé ne doit pas faire échouer le lot
+    // à cause d'une formulation historique inchangée dans un autre champ.
+    // On bloque toute NOUVELLE dépendance au support (pas les dettes inchangées).
+    const previousErrors=old?autonomyViolations(old):[];
+    const errors=autonomyViolations(item).filter(issue=>
+      !previousErrors.some(prev=>prev.field===issue.field&&prev.excerpt===issue.excerpt));
     if(errors.length){
       const details=errors.map(x=>x.field+': '+x.excerpt).join(' | ');
       throw new Error(fileName+': '+item.id+' dépend du TD/support : '+details);

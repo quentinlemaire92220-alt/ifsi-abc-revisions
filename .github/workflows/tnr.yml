@@ -110,6 +110,9 @@ jobs:
       - name: Tester les formulations QCM indépendantes du TD
         run: node tests/qcm-autonomy-contract-test.mjs
 
+      - name: Vérifier le lot QCM A1-P03 et son GO publication signé par empreinte
+        run: node tests/qcm-reviewed-publication-a1p3.mjs
+
       - name: Refuser les nouveaux QCM et flashcards dépendant du support
         env:
           IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}

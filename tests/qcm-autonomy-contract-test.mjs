@@ -47,6 +47,16 @@ for(const item of bad){
 assert.throws(()=>validateChangedQcmBanks([], [okay,okay]),/dupliqué/);
 assert.equal(validateChangedQcmBanks([okay],[{...okay,difficulty:'Moyen'}]),0,
   'Une simple métadonnée ne doit pas réouvrir les anciens contenus');
+const legacy=make('legacy','Selon le cours, comment fonctionne ce phénomène ?');
+const cleaned=make('legacy','Selon le cours, comment fonctionne ce phénomène ?',{
+  choices:[...legacy.choices.slice(0,4),'Un distracteur clarifié']
+});
+assert.equal(validateChangedQcmBanks([legacy],[cleaned]),1,
+  'Nettoyer une option sans modifier une formulation historique doit rester possible');
+assert.throws(()=>validateChangedQcmBanks([legacy],[{
+  ...cleaned,question:'Selon le TD, comment fonctionne ce phénomène ?'
+}]),/dépend du TD\/support/,
+  'Une nouvelle référence à un support doit rester interdite');
 assert.throws(()=>validateChangedQcmBanks([okay],[{...okay,explanation:'Le TD indique A.'}]),
   /dépend du TD\/support/);
 console.log('✅ QCM autonomes : nouveaux énoncés, propositions, corrigés, cartes, archivage historique et suivi différentiel contrôlés.');

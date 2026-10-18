@@ -447,6 +447,36 @@
         "approvedAt": "2026-10-13T17:23:00Z",
         "bundleSha256": "b563b952974dd79a872d5f61e2b09887dc3f1db819932e23915dcd53523d981c"
       }
+    },
+    {
+      "courseId": "epistemologie_savoirs",
+      "partId": "a1-p03",
+      "resourcePath": "qextra-12.txt",
+      "reviewedItemIds": [
+        "v820_a1p3_005",
+        "v820_a1p3_012",
+        "v820_a1p3_014",
+        "v820_a1p3_018",
+        "v820_a1p3_019",
+        "v820_a1p3_022",
+        "v820_a1p3_024",
+        "v820_a1p3_028",
+        "v820_a1p3_030"
+      ],
+      "reviewedItemCount": 9,
+      "editedFieldCount": 10,
+      "reviewFingerprintSha256s": {
+        "qcmPreview": "4cb0c41b73cd5f107a20275553fc152085e60c3fc81eeae59aba3f5f0f0ab76a",
+        "flashcardsPreview": "62ba2d7ba63f6a4579156f1d350e6386c7c243e201e0c541b6496152e57febf4",
+        "pdfReview": "d577f365c2ab8ba2351807f453008ba4e3bb0f5c918b96dcfca0ed1727435c02"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "reviewed_qcm_corrections",
+        "approvedAt": "2026-10-18T19:10:00Z",
+        "bundleSha256": "e335116210035a6d3189e0a4d90ddd4bf75472a484a5fc0fc43bcd498a09d262"
+      }
     }
   ]
 }
