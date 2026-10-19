@@ -62,6 +62,9 @@ jobs:
       - name: TNR registre prive des sources manquantes v1.15
         run: node tests/source-followup-v115-test.mjs
 
+      - name: Contrôler les 3 supports officiels et le pilote QCM/flashcards (non publié)
+        run: node tests/official-supports-pilot-20261019.mjs
+
       - name: TNR suivi des cours et confidentialité
         run: node tests/course-followup-v1.mjs
 
