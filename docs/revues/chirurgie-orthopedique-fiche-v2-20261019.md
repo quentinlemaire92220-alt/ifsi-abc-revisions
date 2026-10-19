@@ -29,6 +29,13 @@
 ## QCM / Flashcards
 La PR #136 a déjà restauré 10 cartes depuis les QCM existants et confirmé 13 correspondances. Aucun changement des bonnes réponses historiques n’est proposé ici. Les trois QCM de fin du diaporama ne comportent pas de grille de corrigé officielle ; ne pas déduire un corrigé professoral de la seule présence de ces diapositives.
 
+## Maquette déposée sur Drive (non publiée)
+- PDF V2 : https://drive.google.com/file/d/1aYl8A5aza28DPUGElT_u3CMRk9yT2ZQP/view
+- Dossier dédié à la relecture : https://drive.google.com/drive/folders/1PNrruhnJYW3l8nPEOctmwGNdR-0GaNeW
+- Le document est distinct de la fiche provisoire actuelle ; aucun catalogue étudiant n'a été modifié.
+- Copie PDF Drive vérifiée après téléchargement : **10 pages, texte identique et rendu pixel à pixel identique sur chaque page** à la version locale corrigée, dans le moteur de rendu PyMuPDF à 72 ppp.
+- La copie sur Drive présente une empreinte binaire différente de celle générée localement : empreinte de la copie Drive `f601cd51f7aa1011febbe1759fd5ef37553cd7b10aafe9dda9397e3289340245` (2 266 799 octets), contre `c0366d84f6fb43daadb9365a7386b34ef6eb6123708ec378fadac45b821b1fed` (2 233 402 octets) pour la version locale. Cette différence **n'est pas cachée** ; la validation finale doit porter sur la copie Drive identifiée ci-dessus.
+
 ## Publication bloquée en attente
 1. Validation visuelle et pédagogique du PDF V2 par l’utilisateur.
 2. Dépôt du PDF approuvé dans `02 - Fiches de révision` après archivage explicite de l'ancienne version ; conserver son historique et son URL.
