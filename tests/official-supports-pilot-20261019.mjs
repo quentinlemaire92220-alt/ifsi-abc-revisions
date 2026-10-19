@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const registry = read('course-registry-v741.json').courses;
@@ -38,4 +39,22 @@ for (const q of pilot.questions) {
   assert.ok(!disallowed.test([q.question, ...q.choices, q.explanation].join(' ')), q.id + ': QCM dépendant du support');
 }
 assert.ok(!fs.readFileSync('index.html', 'utf8').includes('qcm-flashcards-supplements-20261019.pending.json'), 'Le pilotage en attente ne doit pas charger dans le runtime');
+const {questions: activeQuestions} = await runtimeDeck();
+const norm = value => String(value || '').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const stop = new Set('la le les l de des du en et ou au aux un une d qu que qui quels quelles quel quelle concernant propos apres sont est dans entre pour sur avec associees exactes correctes suivantes affirmation affirmations propositions'.split(' '));
+const tokens = str => new Set(norm(str).split(' ').filter(v => v.length > 2 && !stop.has(v)));
+const similarity = (a, b) => {
+ const left=tokens(a),right=tokens(b);
+ if(!left.size || !right.size)return 0;
+ const intersection=[...left].filter(x=>right.has(x)).length;
+ return intersection / (left.size + right.size - intersection);
+};
+const audit=[];
+for(const q of pilot.questions){
+ const existing=activeQuestions.filter(x=>x.id!==q.id);
+ const matches=existing.map(old=>({id:old.id,courseId:old.courseId,score:similarity(q.question,old.question),question:old.question})).sort((a,b)=>b.score-a.score).slice(0,2);
+ audit.push({id:q.id,matches});
+ assert.ok(!existing.some(old=>norm(old.question)===norm(q.question)),'Question strictement dupliquée : '+q.id);
+}
+console.log('AUDIT_PILOTE_PROXIMITES_JSON '+JSON.stringify(audit));
 console.log('✅ Sources officielles liées et pilote de 10 QCM + 10 flashcards cohérent, non publié');
