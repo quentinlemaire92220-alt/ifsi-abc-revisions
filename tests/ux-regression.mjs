@@ -95,8 +95,8 @@ for(const c of registry.courses){
 }
 const subcourses=registry.courses.filter(c=>c.parentId==='appareil_locomoteur');
 assert.equal(subcourses.length,5,'Les cinq sous-cours locomoteur doivent être répertoriés');
-assert.equal(subcourses.filter(c=>c.officialSupportUrl).length,4,'Quatre supports de sous-cours doivent être liés');
-assert.ok(!registered.get('chirurgie_orthopedique').officialSupportUrl,'Ne pas inventer de support pour chirurgie orthopédique');
+assert.equal(subcourses.filter(c=>c.officialSupportUrl).length,5,'Les cinq supports de sous-cours locomoteur doivent être liés');
+assert.ok(registered.get('chirurgie_orthopedique').officialSupportUrl?.includes('1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8'),'Le support officiel de chirurgie orthopédique doit rester accessible');
 for(const id of ['cellules_tissus','epistemologie_savoirs'])assert.equal(registered.get(id).officialSupportItems?.length,3,'Trois parties PDF distinctes requises : '+id);
 for(const token of ['v74-tile-support','v74-official-shortcut','v74-official-parts','v74-child-supports','v74-child-link','Support officiel non disponible','children.map(child=>','parentId===courseMeta.id'])assert.ok(course.includes(token),'Navigation support officiel manquante : '+token);
 assert.ok(course.includes('b.onclick=()=>openCourse74(b.dataset.course74)'),'Navigation de la carte cours régressée');
