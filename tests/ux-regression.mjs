@@ -115,8 +115,8 @@ for(const c of registry.courses){
 }
 const subcourses=registry.courses.filter(c=>c.parentId==='appareil_locomoteur');
 assert.equal(subcourses.length,5,'Les cinq sous-cours locomoteur doivent être répertoriés');
-assert.equal(subcourses.filter(c=>c.officialSupportUrl).length,4,'Quatre supports de sous-cours doivent être liés');
-assert.ok(!registered.get('chirurgie_orthopedique').officialSupportUrl,'Ne pas inventer de support pour chirurgie orthopédique');
+assert.equal(subcourses.filter(c=>c.officialSupportUrl).length,5,'Les cinq supports de sous-cours locomoteur doivent être liés');
+assert.ok(registered.get('chirurgie_orthopedique').officialSupportUrl?.includes('1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8'),'Le support officiel de chirurgie orthopédique doit rester accessible');
 for(const id of ['cellules_tissus','epistemologie_savoirs'])assert.equal(registered.get(id).officialSupportItems?.length,3,'Trois parties PDF distinctes requises : '+id);
 for(const token of ['v74-tile-support','v74-official-shortcut','v74-official-parts','v74-child-supports','v74-child-link','Support officiel non disponible','children.map(child=>','parentId===courseMeta.id'])assert.ok(course.includes(token),'Navigation support officiel manquante : '+token);
 assert.ok(course.includes('b.onclick=()=>openCourse74(b.dataset.course74)'),'Navigation de la carte cours régressée');
@@ -125,7 +125,9 @@ assert.ok(course.includes("link.target='_blank'"),'Ouverture externe du support 
 const cardio=registered.get('systeme_cardiovasculaire');
 const cardioSheet=[...JSON.parse(read('sheets-1.json')),...JSON.parse(read('sheets-2.json')),...JSON.parse(read('sheets-3.json'))].find(x=>x.courseId==='systeme_cardiovasculaire');
 assert.ok(cardioSheet?.url,'La fiche cardiovasculaire doit rester accessible dans les fiches de révision');
-assert.ok(!cardio?.officialSupportUrl&&!cardio?.captureSupportUrl,'Une fiche de révision ne doit jamais être présentée comme support source du cours');
+assert.ok(cardio?.officialSupportUrl?.includes('153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS'),'Le PDF officiel cardiovasculaire nouvellement reçu doit être référencé');
+assert.notEqual(cardio.officialSupportUrl,cardioSheet.url,'Une fiche de révision ne doit jamais être présentée comme support source du cours');
+assert.ok(!cardio.captureSupportUrl,'Des captures ne doivent pas remplacer le PDF officiel reçu');
 for(const c of registry.courses){
  for(const field of ['captureSupportUrl']){
    if(c[field])assert.match(c[field],drivePattern,'Lien captures provisoires invalide : '+c.label);
