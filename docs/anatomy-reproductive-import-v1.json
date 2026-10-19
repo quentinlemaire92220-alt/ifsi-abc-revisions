@@ -44,7 +44,14 @@
       "pendingChecks": "Canva a attribué automatiquement des étiquettes fruit/pamplemousse à l'illustration principale et fruit/graine au zoom; classification non décisive, vérification visuelle impérative",
       "plannedAssetPath": "assets/anatomy/reproductive/r02.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Required albuginée label absent; inspect pointe interstitium vs tubes séminifères."
+        ],
+        "finalApproved": false
+      }
     },
     {
       "courseId": "systeme_reproducteur",
@@ -81,7 +88,14 @@
       "pendingChecks": "Vérifier toutes les flèches et distinguer l'uretère, l'urètre et le canal déférent",
       "plannedAssetPath": "assets/anatomy/reproductive/r03.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Review position of ampoule déférentielle and canal éjaculateur callouts."
+        ],
+        "finalApproved": false
+      }
     },
     {
       "courseId": "systeme_reproducteur",
@@ -120,7 +134,14 @@
       "pendingChecks": "La vue frontale seule ne prouve pas la topographie sagittale vessie / utérus / rectum",
       "plannedAssetPath": "assets/anatomy/reproductive/r04.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Frontal-only plate; vessie and rectum relations not shown."
+        ],
+        "finalApproved": false
+      }
     },
     {
       "courseId": "systeme_reproducteur",
@@ -158,7 +179,14 @@
       "pendingChecks": "Vérifier l'équivalence anatomique de chaque étiquette et la connexion trompe / ovaire",
       "plannedAssetPath": "assets/anatomy/reproductive/r05.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: Trompe / e / utérine; Médulla ovarienne arrow appears to target follicle, needs correction; intramural segment missing."
+        ],
+        "finalApproved": false
+      }
     },
     {
       "courseId": "systeme_reproducteur",
@@ -197,7 +225,14 @@
       "pendingChecks": "Vérifier que les couches sont réellement distinguées et non simplement étiquetées endomètre",
       "plannedAssetPath": "assets/anatomy/reproductive/r06.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: Périmétri / um; basal and functional endometrial layers not separated."
+        ],
+        "finalApproved": false
+      }
     },
     {
       "courseId": "systeme_reproducteur",
@@ -236,7 +271,23 @@
       "pendingChecks": "Vérifier précisément la position des orifices et la correspondance entre les labels et la figure",
       "plannedAssetPath": "assets/anatomy/reproductive/r07.webp",
       "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
-      "testReady": false
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: clitori / s; vestibule not labeled."
+        ],
+        "finalApproved": false
+      }
     }
-  ]
+  ],
+  "exportReceived": {
+    "type": "Canva A4 PDF",
+    "receivedOn": "2026-10-19",
+    "pageCount": 6,
+    "mediaHandling": "Private PDF reviewed in conversation only; no copyrighted image bytes pushed to public GitHub",
+    "renderedPagesForReview": 6,
+    "imagesAreHighResolutionMasters": false,
+    "reason": "Main embedded illustrations are raster assets around 115 effective ppi; 220 dpi PDF rendering is for proofing only."
+  }
 }
