@@ -18,10 +18,11 @@ const SYSTEMS=[
   {id:'systeme_nerveux',icon:'🧠',subtitle:'Système nerveux'},
   {id:'systeme_immunitaire',icon:'🛡️',subtitle:'Défenses de l’organisme'},
   {id:'systeme_digestif',icon:'🍽️',subtitle:'Anatomie, glandes annexes et physiologie digestive'},
-  {id:'appareil_locomoteur',icon:'🦴',subtitle:'Ostéologie, articulations, rachis et traumatologie'}
+  {id:'appareil_locomoteur',icon:'🦴',subtitle:'Ostéologie, articulations, rachis et traumatologie'},
+  {id:'systeme_reproducteur',icon:'🧬',subtitle:'Appareil reproducteur — planches en revue'}
 ];
 const FUTURE=[
-['🧬','Reproduction'],['👁️','Organes des sens'],['🧴','Peau & téguments']
+['👁️','Organes des sens'],['🧴','Peau & téguments']
 ];
 const ALL=[...FOUNDATION,...SYSTEMS];
 
@@ -146,7 +147,43 @@ function respBoardRow(b){
 function boardRow(def,b){
   return `<div class="v82-board"><div class="v82-board-icon">${def.icon}</div><div><h4>${E(b.title)}</h4><div class="small">${E(course(def.id).label)}</div></div><div class="v82-board-actions"><a class="btn primary" href="${E(b.url)}" target="_blank" rel="noopener">Voir la planche ↗</a></div></div>`
 }
+
+const REPRO_REVIEW_KEY='ifsiabc_repro_anatomy_review_url_v1';
+const REPRO_REVIEW=[
+{id:'R01',title:'Appareil génital masculin — vue d’ensemble',state:'À refaire'},
+{id:'R02',title:'Testicule et tubes séminifères',state:'Revue anatomique'},
+{id:'R03',title:'Voies spermatiques et glandes annexes',state:'Revue anatomique'},
+{id:'R04',title:'Appareil génital féminin — vue d’ensemble',state:'Revue anatomique'},
+{id:'R05',title:'Ovaire et trompe utérine',state:'Revue anatomique'},
+{id:'R06',title:'Utérus, paroi et col',state:'Revue anatomique'},
+{id:'R07',title:'Vulve et périnée',state:'Revue anatomique'}
+];
+// La revue Canva n'est jamais une ressource publique ni un master HD comptabilisé.
+// Son URL est saisie localement par le propriétaire, et n'est jamais embarquée dans GitHub.
+function validReproLink(raw){
+  try{
+    const u=new URL(raw);
+    if(u.protocol!=='https:')return '';
+    if(u.hostname==='www.canva.com'&&(u.pathname.startsWith('/d/')||u.pathname.startsWith('/design/')))return u.href;
+    if(u.hostname==='canva.link'&&u.pathname.length>1)return u.href;
+  }catch(e){}
+  return '';
+}
+function reproLink(){try{return validReproLink(localStorage.getItem(REPRO_REVIEW_KEY)||'')}catch(e){return ''}}
+function reproductiveReviewCard(def,term){
+  const c=course(def.id);
+  const hay=normCatalog(c.label+' '+def.subtitle+' '+REPRO_REVIEW.map(x=>x.id+' '+x.title).join(' '));
+  if(term&&!hay.includes(term))return '';
+  const open=expandedSystem===def.id||!!term,link=reproLink();
+  const rows=REPRO_REVIEW.filter(x=>!term||normCatalog(c.label+' '+x.id+' '+x.title+' '+def.subtitle).includes(term));
+  const list=rows.map(x=>'<div class="v82-board"><div class="v82-board-icon">🧬</div><div><h4>'+E(x.id)+' — '+E(x.title)+'</h4><div class="small">'+E(x.state)+' • Aucun test ni score</div></div><div class="v82-board-actions"><button class="btn outline" disabled>Non validée</button></div></div>').join('');
+  const controls='<div class="v82-review-note" style="padding:12px"><div class="small">🔒 Lien personnel Canva enregistré seulement sur cet appareil, non partagé avec les étudiants.</div><div class="v82-board-actions" style="justify-content:flex-start;margin-top:9px">'+(link?'<a class="btn primary" href="'+E(link)+'" target="_blank" rel="noopener noreferrer">Ouvrir ma revue Canva ↗</a>':'')+'<button type="button" class="btn outline" id="v82ReproSetLink">'+(link?'Modifier le lien':'Ajouter mon lien Canva')+'</button>'+(link?'<button class="btn outline" id="v82ReproClearLink">Effacer le lien</button>':'')+'</div></div>';
+  const content=open?'<div class="v82-board-list"><div class="small" style="margin:10px">Les six maquettes sont en cours de validation médicale et des droits. Elles ne peuvent être utilisées en QCM anatomique ni comptées comme validées.</div>'+list+controls+'</div>':'';
+  return '<section class="v82-system" data-v82system="'+E(def.id)+'"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">'+def.icon+'</span><div><h3>'+E(c.label)+'</h3><div class="v82-system-meta"><span class="badge">0 planche validée</span><span class="small">6 maquettes en revue • R01 à refaire</span></div></div></div><button class="btn '+(open?'primary':'outline')+' v82-toggle" data-v82toggle="'+E(def.id)+'">'+(open?'Masquer':'Suivi des planches')+'</button></div>'+content+'</section>';
+}
+
 function catalogCard(def,term){
+  if(def.id==='systeme_reproducteur')return reproductiveReviewCard(def,term);
   const c=course(def.id),boards=boardsFor(def),hay=normCatalog(`${c.label} ${def.subtitle||''}`),filtered=!term?boards:boards.filter(b=>normCatalog(`${c.label} ${b.title} ${b.subtitle||''}`).includes(term));
   if(term&&!filtered.length&&!hay.includes(term))return '';
   const shown=term?filtered:boards,isOpen=expandedSystem===def.id||!!term;
@@ -159,6 +196,17 @@ function catalogCard(def,term){
 }
 const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function bindAnatomy(){
+  $('v82ReproSetLink')?.addEventListener('click',()=>{
+    const input=prompt('Colle le lien Canva de revue, enregistré uniquement sur cet appareil :',reproLink());
+    if(input===null)return;
+    const url=validReproLink(input.trim());
+    if(!url){alert('Lien invalide : utiliser un lien https://www.canva.com/d/, /design/ ou https://canva.link/.');return}
+    try{localStorage.setItem(REPRO_REVIEW_KEY,url);renderAnatomy()}catch(e){alert('Enregistrement local indisponible.')}
+  });
+  $('v82ReproClearLink')?.addEventListener('click',()=>{
+    if(!confirm('Effacer le lien Canva enregistré sur cet appareil ?'))return;
+    try{localStorage.removeItem(REPRO_REVIEW_KEY);renderAnatomy()}catch(e){alert('Suppression locale impossible.')}
+  });
   $('v82Back')?.addEventListener('click',()=>window.show?.('home'));
   $('v82AnatomySearch')?.addEventListener('input',renderAnatomy);
   document.querySelectorAll('[data-v82toggle]').forEach(b=>b.onclick=()=>{expandedSystem=expandedSystem===b.dataset.v82toggle?'':b.dataset.v82toggle;renderAnatomy()});
