@@ -74,6 +74,9 @@ jobs:
       - name: TNR matrice clinique des planches anatomiques
         run: node tests/anatomy-p1-clinical-matrix.mjs
 
+      - name: TNR revue Canva reproducteur et non-publication des maquettes
+        run: node tests/anatomy-reproductive-review-v1.mjs
+
       - name: TNR mise en page adaptative des fiches
         run: python tests/revision-layout-test.py
 
