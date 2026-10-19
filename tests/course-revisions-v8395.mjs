@@ -29,6 +29,9 @@ for(const [id,path,count,cards,vocab,captures] of [
  assert.equal(d.infographicSheetVisualAudit.pdfSha256,d.infographicSheetPublishedVerification.pdfSha256);
 }
 const base=process.env.IFSI_BASE_SHA||'HEAD^';
-const before=execFileSync('git',['show',base+':vocals.json']);
-assert.deepEqual(fs.readFileSync('vocals.json'),before,'Les 80 vocaux doivent rester intacts.');
-console.log('✅ V8.30.95 : 112 QCM et 49 cartes de cours identiques aux matrices revues, 44 cartes de vocabulaire, provenance explicite et 80 vocaux conservés.');
+const before=JSON.parse(execFileSync('git',['show',base+':vocals.json']).toString('utf8'));
+const now=read('vocals.json');
+assert.equal(before.length,80,'Référence historique des 80 vocaux inattendue');
+assert.deepEqual(now.slice(0,before.length),before,'Les 80 vocaux historiques doivent rester intacts.');
+assert.equal(now.length,105,'Les 25 nouveaux vocaux doivent être ajoutés sans écraser les 80 anciens');
+console.log('✅ V8.30.95 : 112 QCM et 49 cartes de cours identiques aux matrices revues, 44 cartes de vocabulaire, 80 vocaux historiques inchangés et 25 nouveaux.');
