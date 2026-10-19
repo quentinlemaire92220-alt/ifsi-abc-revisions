@@ -20,7 +20,9 @@ assert.ok(nav.includes("if(def.id==='systeme_reproducteur')return reproductiveRe
 assert.ok(nav.includes('6 maquettes en revue'),'Nombre maquettes non explicité');
 assert.ok(nav.includes('0 planche validée'),'Compteur de planches validées trompeur');
 for(const id of ['R01','R02','R03','R04','R05','R06','R07'])assert.ok(nav.includes("id:'"+id+"'"),'Entrée '+id+' manquante');
-assert.ok(nav.includes('disabled>Non validée'),'Les maquettes ne doivent pas activer les tests');
+assert.ok(nav.includes('NON VALIDÉE • pas de test ni de score'),'Les maquettes ne doivent pas activer les tests');
+assert.ok(nav.includes('data-v82repro-preview'),'La galerie doit proposer uniquement la prévisualisation');
+assert.ok(!read('v83-anatomy-interactive.js').includes('assets/anatomy/reproductive/review/'),'Aucune des maquettes ne doit être ajoutée aux quiz');
 assert.ok(nav.includes('rel="noopener noreferrer"'),'Ouverture externe non sécurisée');
 assert.ok(nav.includes("localStorage.setItem(REPRO_REVIEW_KEY,url)"),'Lien Canva non isolé localement');
 for(const leaked of ['DAHYd62tg4w','GQ6MYI8VJqgsclS','7a2hov21rkj9e7f','0b1n29zj87pent7'])assert.ok(!nav.includes(leaked),'Lien privé dans le catalogue: '+leaked);
