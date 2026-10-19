@@ -29,3 +29,19 @@ La connexion Canva disponible permet de voir, éditer et regrouper les pages mai
 - Aucun nouveau QCM, flashcard ni schéma muet ne sera activé à partir d'un visuel non validé.
 - `tests/anatomy-reproductive-import-gate.mjs` empêche une déclaration `appPublication: approved` sans validation médicale, provenance/licence, fichier réel, empreinte, et Drive ID.
 - Cette préparation ne modifie pas la release publique V8.30.98, le total des 106 planches ni les protections anatomiques déjà intégrées.
+
+## Revue du PDF Canva effectivement reçu le 19/10/2026
+
+Le fichier Canva exporté comporte bien **6 pages A4**, une page par R02 à R07. Il a permis une revue visuelle concrète, mais **ce n'est pas une attestation de provenance des illustrations ni un ensemble de masters HD natifs**. Les figures principales de plusieurs pages ont une densité effective de l'ordre de **115 ppp** dans le PDF ; augmenter le nombre de pixels du rendu PNG est une opération de rastérisation, pas une amélioration des détails anatomiques d'origine. Les PNG de contrôle sont conservés **hors GitHub** dans la conversation ; ils ne sont pas publiés.
+
+### Écarts constatés dans l'export
+- **R02** : l'albuginée n'est pas légendée. L'étiquetage automatique « fruit » par Canva ne constitue pas un constat anatomique : l'illustration visible représente une coupe testiculaire ; vérifier néanmoins les pointages microscopiques.
+- **R03** : revoir le pointage de l'ampoule déférentielle par rapport aux vésicules séminales ainsi que le trajet du canal éjaculateur.
+- **R04** : vue frontale du tractus féminin ; aucune vue sagittale ni position relative de la vessie et du rectum.
+- **R05** : la légende « Trompe utérine » se coupe au milieu d'un mot dans le PDF. Surtout, la flèche « Médulla ovarienne » semble pointer sur un follicule ; correction médicale nécessaire. La portion intramurale n'est pas légendée.
+- **R06** : le libellé « Périmétrium » est coupé sur deux lignes ; il manque la distinction entre couches basale et fonctionnelle de l'endomètre.
+- **R07** : le libellé « clitoris » est coupé sur deux lignes ; le vestibule n'est pas légendé et les pointages externes nécessitent vérification.
+
+Une transaction **brouillon Canva** a été ouverte pour élargir les zones de texte des trois étiquettes coupées (R05, R06, R07). Ces changements **ne sont pas enregistrés**, et le PDF fourni représente toujours le rendu original. La correction de l'emplacement des flèches et des structures manquantes reste distincte ; un changement de largeur de texte ne vaut aucune validation anatomique.
+
+**Statut après réception :** sources effectivement examinées, emplacements d'assets prêts dans la PR, mais **diffusion bloquée jusqu'à correction des défauts visuels/anatomiques et contrôle de la provenance des images intégrées**.
