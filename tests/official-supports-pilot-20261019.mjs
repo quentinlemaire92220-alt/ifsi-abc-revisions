@@ -57,4 +57,10 @@ for(const q of pilot.questions){
  assert.ok(!existing.some(old=>norm(old.question)===norm(q.question)),'Question strictement dupliquée : '+q.id);
 }
 console.log('AUDIT_PILOTE_PROXIMITES_JSON '+JSON.stringify(audit));
+const domainIds=new Set(['systeme_cardiovasculaire','chirurgie_orthopedique','traumatologie','appareil_locomoteur','grands_brules','arthrose']);
+const domainQuestions=activeQuestions.filter(q=>domainIds.has(q.courseId));
+console.log('AUDIT_EXISTANT_COMPTAGE_JSON '+JSON.stringify([...domainIds].map(id=>({id,count:domainQuestions.filter(q=>q.courseId===id).length}))));
+const targeted=domainQuestions.filter(q=>/circulation|coeur|cardiaque|ecg|onde|depolarisation|arthrose|coxarthrose|prothese|pt[gh]|post.?operat|laminectomie|hematome|sciatique|cruralgie|radiculalgie|platre|cruro|courbure|cyphose|lordose|gravite|brulure/i.test(norm(q.question)));
+console.log('AUDIT_EXISTANT_DOMAIN_JSON '+JSON.stringify(targeted.map(q=>({id:q.id,courseId:q.courseId,question:q.question,correct:(q.answers||[]).map(i=>q.choices[i])}))));
+
 console.log('✅ Sources officielles liées et pilote de 10 QCM + 10 flashcards cohérent, non publié');
