@@ -16,7 +16,7 @@
       "courseId": "plaies_pansements",
       "part": "1/2",
       "validated": true,
-      "status": "awaiting_mp3",
+      "status": "complete",
       "driveFolderId": "1lO6A__t_XaSqwF8QbcUNAaaB7lCuDpDp",
       "folders": {
         "99": "1JJEAd0LyMCjLlBF_1s_W6KDaSpthfPbC",
@@ -44,43 +44,95 @@
         "plaies_pansements_info_p01_05",
         "plaies_pansements_info_p01_06"
       ],
-      "vocals": [],
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3"
-        }
+      "vocals": [
+        "plaies_2026_01",
+        "plaies_2026_02",
+        "plaies_2026_03",
+        "plaies_2026_04",
+        "plaies_2026_05"
       ],
+      "blockers": [],
       "vocalScripts": [
         {
           "number": 1,
           "title": "Peau et cicatrisation",
-          "driveId": "1VaaEpHF7J64ofKXUUxuAeuYEOA-Lw5b8",
-          "url": "https://drive.google.com/file/d/1VaaEpHF7J64ofKXUUxuAeuYEOA-Lw5b8/view?usp=drivesdk"
+          "driveId": "1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m",
+          "url": "https://drive.google.com/file/d/1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m/view",
+          "partId": "p01"
         },
         {
           "number": 2,
           "title": "Escarres et prévention des appuis",
-          "driveId": "17lPKFYXoGJDYGgwzpk0vIKbcUO4CeJM7",
-          "url": "https://drive.google.com/file/d/17lPKFYXoGJDYGgwzpk0vIKbcUO4CeJM7/view?usp=drivesdk"
+          "driveId": "1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg",
+          "url": "https://drive.google.com/file/d/1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg/view",
+          "partId": "p01"
         },
         {
           "number": 3,
           "title": "Ulcères vasculaires et brûlures",
-          "driveId": "1T7c1p81LVf2ZKz9qKvQEb-tD8UfYN-rD",
-          "url": "https://drive.google.com/file/d/1T7c1p81LVf2ZKz9qKvQEb-tD8UfYN-rD/view?usp=drivesdk"
+          "driveId": "1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat",
+          "url": "https://drive.google.com/file/d/1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat/view",
+          "partId": "p01"
         },
         {
           "number": 4,
           "title": "Pied diabétique et technique du soin",
-          "driveId": "1BajlaqG_5a1dVschP85E9dIHwpILXfzC",
-          "url": "https://drive.google.com/file/d/1BajlaqG_5a1dVschP85E9dIHwpILXfzC/view?usp=drivesdk"
+          "driveId": "1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j",
+          "url": "https://drive.google.com/file/d/1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j/view",
+          "partId": "p01"
         },
         {
           "number": 5,
           "title": "Pansements, surveillance et qualité de vie",
-          "driveId": "18jwL1RsTGycxzdiJJNBtJhL0VAlSMBpE",
-          "url": "https://drive.google.com/file/d/18jwL1RsTGycxzdiJJNBtJhL0VAlSMBpE/view?usp=drivesdk"
+          "driveId": "1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-",
+          "url": "https://drive.google.com/file/d/1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-/view",
+          "partId": "p01"
+        }
+      ],
+      "artifactSha256s": {
+        "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K": "a5f081347f2b6d4e7b0053920c27d5e9284c3160fe5f54869bfa55b5659d470b",
+        "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe": "bc496e6698bd28c980f98cf2737bb4ebd65d0d040d178beaf79e9873b7595052",
+        "1BbZSRfGyJx4rp0aICOTqcuJElEJ5zvBW": "d097948e429c4882f9d6c87f2e39759c38c420191bf4377e6a716e03ac6f1cb1",
+        "1iMjd47WV92YI4ErjfWQ8Fq_9_92TJmUA": "be07667a81d492a08a86c5c3d24d4cc21214a5afb61428215917be6bc12f4a91",
+        "1heS2LMk41OGvjP2YEhdPqKnUyjxvoT1J": "a88a6b66e2d8a592d3c030430212aef67297582a56ae114af8253415210d02e4",
+        "1XJsr8PZwzF2ntFpviPRPi0fZ6ZHZBuvK": "f056b6d9a239f3c478f4c662f46a662592b70a10e23aade88a368201065f0f49",
+        "1vvTxRPnko_ww1Tg9YupkURhAinK4yrYe": "c8e5b520b338dcb9b677ad2ab0dd0579a5a119177bc030758892c080871aef34",
+        "1JpKQllEU-SgSh2G8hnsf-2J9enzgCOVS": "c31b366be769f8b42a65e232ef69b026db2a3cf13a2ee93848914807d67c2bc0",
+        "1B940yBBtGPQ-wP2520Oyr_ZIu0D581v6": "68b8bef50dfdef0834cf8d14c07f9654fd118183a9af9e2b81b45be8bc94e668",
+        "1MsxUcVYS3ZhmmFa1re4xzvhYN-nSundg": "75a297e6364168651af84b65cfc9bdfdbe6eb084b610a52ca22be43913e7fefa",
+        "1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m": "15af56ac7cc95f85b1de0f2ee7fef7fda540d75c529a9261e1e8eeb67f1a7d1d",
+        "1BJSt-vlp9rJ5zrmpQUaRJg4Fqm_1Ch1P": "5f32ef1df1d904d5655ed60ba63e45df709814336da2d5f843e0e06aabff92ed",
+        "1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg": "cd6a2d76595941c8c56d94343fd7e5fbe2ad121c8a5b5f7e72423979bc57553d",
+        "1MehFCdvR8CQ-n6Q5Iq0idrrThgc5nmAh": "0a0ad9647f547f4aa1d3bf003f3beb48f5cb30e4c7c1bfd57cda1d7e37a9243a",
+        "1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat": "ee2c03a48228cdc2b46604a2021abeece92ba5f590a676acb77cdef92c74be93",
+        "1Bev009KaP3DkINQEKce1Ub_lW-3qRwRd": "6d3fb8fcbd620dae703a8a7a4fcd2ba8443c7f6692fe396a189ab9a993149af3",
+        "1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j": "6ee232452f116fe8f6b395a26c63ee8c10eb34e9f9402f0a86d9d7e7fd25d6b5",
+        "1AqR-kE7ihOSccS_cCpSH6uUkmO5W3DNh": "2f81f59dd9f38bba17f3ef22aceb42765c7b6214944facadc4a7d231bb360e8f",
+        "1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-": "c74c7438453a0e7a882e00172ec1916c275de477934b21d86949c98a9543f6b0",
+        "1V6difvdFXUJipPmUknNfqgb7MK8L77Ad": "57ce65fd3756824ef7118dcc62fcfb293f03ef70286af290128d11f108d8171d"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-18T20:54:13.083Z",
+        "bundleSha256": "47f4713afa11cc8c3d7d6b53d14d0e346739e95ebaf399f602473280369d7566"
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "plaies_2026_01",
+            "plaies_2026_02",
+            "plaies_2026_03",
+            "plaies_2026_04",
+            "plaies_2026_05"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
         }
       ]
     },
@@ -88,7 +140,7 @@
       "courseId": "stomatotherapie",
       "part": "01",
       "validated": true,
-      "status": "awaiting_mp3",
+      "status": "complete",
       "publicationStatus": "authorized",
       "driveFolderId": "1Y-vgNKEdVm7ORW5K-orHHa7hgXes_DNe",
       "folders": {
@@ -159,66 +211,71 @@
         "1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo": "d8a131dce2c484b534a1caef60fa14aef16f1b9d1b91d9165481a3c7c04bb422",
         "1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U": "fa8eec2190ad4997115bd9eafd16b15ffa214b0184328fe7a9d40f1056c78668",
         "10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm": "70fa45a28a704578f3267bda5ce2c8455845c883fd506cf18c886812c094897d",
-        "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0": "da9fffa75634c4b2579c2ec0d661112887d210022a0a5091d9cb67db47728343"
+        "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0": "da9fffa75634c4b2579c2ec0d661112887d210022a0a5091d9cb67db47728343",
+        "1mJaDaQCLFsPUcXGzaCRfGzn9DC5gJXUF": "f35d32aabc893ceb575836249e3e953b7b27128d1a9f0b2aae9b57cd912486cb",
+        "18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5": "fc6361cdddaf880b4c6a21ac619450e1688199fb33cf274212d90489562feb54",
+        "1TgTz-K9ALKBf9gGdnF-FXEk3cJaQL_W7": "cb37e38c7cd1652e6f8a77ad9d92c326cb181b2f798d2d36c05b614e5960a8c9",
+        "1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo": "b6c6cb45976135836556e81e0725403b316b38508b558bc643bf0e10cf7a06d4",
+        "1Z21K6xje4HQTngSZtdwsbAsgs9f08ikK": "3299077867e7f2e12e539c97237057624fda851e7daf3a21342f73a855a10310",
+        "1TfqIXLmwcQUygdHgYby2J6gIG8fDu874": "6eae65fbd90b9c2b807a510d17babedf5a9640d3896f8435e577b67abf68814d"
       },
-      "vocals": [],
+      "vocals": [
+        "stomato_2026_01",
+        "stomato_2026_02",
+        "stomato_2026_03"
+      ],
       "vocalScripts": [
         {
           "number": 1,
-          "title": "Comprendre la stomie",
-          "driveId": "1Q_T7s0u_gc6dkQwX9vG7vsqDpNzFP7QQ",
-          "url": "https://drive.google.com/file/d/1Q_T7s0u_gc6dkQwX9vG7vsqDpNzFP7QQ/view"
+          "title": "Comprendre les stomies et l’anatomie digestive",
+          "driveId": "18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5",
+          "url": "https://drive.google.com/file/d/18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5/view",
+          "partId": "p01"
         },
         {
           "number": 2,
-          "title": "Anatomie et stomies digestives",
-          "driveId": "1agNSEExkzm7z5w675dnpoSg1px-LdPZa",
-          "url": "https://drive.google.com/file/d/1agNSEExkzm7z5w675dnpoSg1px-LdPZa/view"
+          "title": "Dérivations urinaires et autonomie du patient",
+          "driveId": "1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo",
+          "url": "https://drive.google.com/file/d/1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo/view",
+          "partId": "p01"
         },
         {
           "number": 3,
-          "title": "Anatomie et derivations urinaires",
-          "driveId": "1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo",
-          "url": "https://drive.google.com/file/d/1-4XmaDdG6zYQx_Ubh_8EJ60eWddPcBSo/view"
-        },
-        {
-          "number": 4,
-          "title": "Soin et protection cutanee",
-          "driveId": "1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U",
-          "url": "https://drive.google.com/file/d/1Z1v3fWflG5NfnW8Sfjh9GuTKi1M-6x7U/view"
-        },
-        {
-          "number": 5,
-          "title": "Appareillage digestif",
-          "driveId": "10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm",
-          "url": "https://drive.google.com/file/d/10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm/view"
-        },
-        {
-          "number": 6,
-          "title": "Recueil urinaire et autonomie",
-          "driveId": "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0",
-          "url": "https://drive.google.com/file/d/1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0/view"
+          "title": "Soin cutané, appareillages digestifs et surveillance",
+          "driveId": "1TfqIXLmwcQUygdHgYby2J6gIG8fDu874",
+          "url": "https://drive.google.com/file/d/1TfqIXLmwcQUygdHgYby2J6gIG8fDu874/view",
+          "partId": "p01"
         }
       ],
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3"
-        }
-      ],
+      "blockers": [],
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-13T15:14:17Z",
-        "bundleSha256": "033190790f0d5a04cdc7cdd5a86ba1afa35f202981be39e0650c07252e981722"
-      }
+        "approvedAt": "2026-10-18T20:54:13.088Z",
+        "bundleSha256": "51879204c6dfc169b3cdfb3410522810d9e2dfaef46c2dc9e171f891174af41c"
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "stomato_2026_01",
+            "stomato_2026_02",
+            "stomato_2026_03"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
+        }
+      ]
     },
     {
       "courseId": "droits_patients",
       "part": "01",
       "validated": true,
-      "status": "awaiting_mp3",
+      "status": "complete",
       "driveFolderId": "1lInHj_FxbpAPR70sZ0g5atyYsNcuLqYC",
       "folders": {
         "99": "1FkkPK1Z1pcVY-CfAfri1AkaRkB_4FdBE",
@@ -257,127 +314,59 @@
         "expectedCount": 8,
         "checkedCount": 8
       },
-      "vocals": [],
+      "vocals": [
+        "droits_patients_2026_01",
+        "droits_patients_2026_02",
+        "droits_patients_2026_03",
+        "droits_patients_2026_04",
+        "droits_patients_2026_05",
+        "droits_patients_2026_06"
+      ],
       "vocalScripts": [
         {
           "number": 1,
-          "title": "Des droits aux responsabilités",
-          "driveId": "1KfzOss1DfmmeuUSP3FjagqCiMB5KZWhy",
-          "url": "https://drive.google.com/file/d/1KfzOss1DfmmeuUSP3FjagqCiMB5KZWhy/view",
+          "title": "Fondements des droits, accès aux soins et dignité",
+          "driveId": "1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ",
+          "url": "https://drive.google.com/file/d/1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ/view",
           "partId": "p01"
         },
         {
           "number": 2,
-          "title": "Accès et non-discrimination",
-          "driveId": "1XwDzkMGdb0OISFaFd2yl_u9WXeuGvO6t",
-          "url": "https://drive.google.com/file/d/1XwDzkMGdb0OISFaFd2yl_u9WXeuGvO6t/view",
+          "title": "Soins palliatifs, fin de vie et sédation",
+          "driveId": "1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir",
+          "url": "https://drive.google.com/file/d/1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir/view",
           "partId": "p01"
         },
         {
           "number": 3,
-          "title": "Dignité et soulagement",
-          "driveId": "1nlcu2b9A5mPXQNYYcdmYoOJQzrKbby8N",
-          "url": "https://drive.google.com/file/d/1nlcu2b9A5mPXQNYYcdmYoOJQzrKbby8N/view",
+          "title": "Libre choix, secret professionnel, partage et dossier médical",
+          "driveId": "15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ",
+          "url": "https://drive.google.com/file/d/15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ/view",
           "partId": "p01"
         },
         {
           "number": 4,
-          "title": "Accompagner la fin de vie",
-          "driveId": "1WSgPiYvZW8CwyB3VniYXoCZfdjNbI7Ow",
-          "url": "https://drive.google.com/file/d/1WSgPiYvZW8CwyB3VniYXoCZfdjNbI7Ow/view",
+          "title": "Information, consentement et volonté anticipée",
+          "driveId": "1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln",
+          "url": "https://drive.google.com/file/d/1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln/view",
           "partId": "p01"
         },
         {
           "number": 5,
-          "title": "Sédation et aide à mourir",
-          "driveId": "1J9qwlFWgtjo-z7ICszQ402XAQ-OonnVI",
-          "url": "https://drive.google.com/file/d/1J9qwlFWgtjo-z7ICszQ402XAQ-OonnVI/view",
+          "title": "Mineurs et majeurs protégés",
+          "driveId": "1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ",
+          "url": "https://drive.google.com/file/d/1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ/view",
           "partId": "p01"
         },
         {
           "number": 6,
-          "title": "Libre choix et vie privée",
-          "driveId": "10VrT7FIK-Oa9PBLSPBEWe2kRAH6gVmK7",
-          "url": "https://drive.google.com/file/d/10VrT7FIK-Oa9PBLSPBEWe2kRAH6gVmK7/view",
-          "partId": "p01"
-        },
-        {
-          "number": 7,
-          "title": "Partager sans divulguer",
-          "driveId": "1BhYq6MFfqWn9eO6skXiFz7_ZiuY4wuZp",
-          "url": "https://drive.google.com/file/d/1BhYq6MFfqWn9eO6skXiFz7_ZiuY4wuZp/view",
-          "partId": "p01"
-        },
-        {
-          "number": 8,
-          "title": "Signalements et transparence",
-          "driveId": "1U-xp1ecm8-t0oTpYqR2-bwv1wLShCaM0",
-          "url": "https://drive.google.com/file/d/1U-xp1ecm8-t0oTpYqR2-bwv1wLShCaM0/view",
-          "partId": "p01"
-        },
-        {
-          "number": 9,
-          "title": "Informer les personnes vulnérables",
-          "driveId": "1pyPEEeP2gnGQtZ9AMjTvqYIvcqW7gZmx",
-          "url": "https://drive.google.com/file/d/1pyPEEeP2gnGQtZ9AMjTvqYIvcqW7gZmx/view",
-          "partId": "p01"
-        },
-        {
-          "number": 10,
-          "title": "Consentement et refus",
-          "driveId": "1MMB0Scum5lg9nQ5-zMyAuDudQ68zLMQI",
-          "url": "https://drive.google.com/file/d/1MMB0Scum5lg9nQ5-zMyAuDudQ68zLMQI/view",
-          "partId": "p01"
-        },
-        {
-          "number": 11,
-          "title": "Volonté anticipée et mineurs",
-          "driveId": "19EjyfGZST8nfKvwcKfXqnVDIhht2YLg_",
-          "url": "https://drive.google.com/file/d/19EjyfGZST8nfKvwcKfXqnVDIhht2YLg_/view",
-          "partId": "p01"
-        },
-        {
-          "number": 12,
-          "title": "Secret du mineur et majeur protégé",
-          "driveId": "1zn85UaS0uUFFOAw9zQK0ZrXuRGrZN7oq",
-          "url": "https://drive.google.com/file/d/1zn85UaS0uUFFOAw9zQK0ZrXuRGrZN7oq/view",
-          "partId": "p01"
-        },
-        {
-          "number": 13,
-          "title": "Actes personnels et psychiatrie",
-          "driveId": "13gsPJ1QmLuwSMmOWS-XsAdymd7wBYjVh",
-          "url": "https://drive.google.com/file/d/13gsPJ1QmLuwSMmOWS-XsAdymd7wBYjVh/view",
-          "partId": "p01"
-        },
-        {
-          "number": 14,
-          "title": "Admissions et droits en psychiatrie",
-          "driveId": "16Jz59rDCOI0cIIXq9tUpQCfi35jrwwCi",
-          "url": "https://drive.google.com/file/d/16Jz59rDCOI0cIIXq9tUpQCfi35jrwwCi/view",
-          "partId": "p01"
-        },
-        {
-          "number": 15,
-          "title": "Chronologie, isolement et contention",
-          "driveId": "1RSGlH7nnIPUv86qBQwQRiDerlU8fTMlM",
-          "url": "https://drive.google.com/file/d/1RSGlH7nnIPUv86qBQwQRiDerlU8fTMlM/view",
-          "partId": "p01"
-        },
-        {
-          "number": 16,
-          "title": "Le dossier médical en pratique",
-          "driveId": "1Zu9wyfGatxodoKVQa8ACbiLKfNF7Kfc9",
-          "url": "https://drive.google.com/file/d/1Zu9wyfGatxodoKVQa8ACbiLKfNF7Kfc9/view",
+          "title": "Psychiatrie, soins sans consentement et restrictions de liberté",
+          "driveId": "1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02",
+          "url": "https://drive.google.com/file/d/1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02/view",
           "partId": "p01"
         }
       ],
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3"
-        }
-      ],
+      "blockers": [],
       "artifactSha256s": {
         "1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6": "07e37070307948fbaa049c0bb70068226c311f8ade1baddafae8abc82e7c9044",
         "1dQsw4RyX4JTMxIjRccKw64pBZGE9mRMu": "3ee1526b1cf3eb68aeb3e268be5647b8a732f2ad364792e4cf8f47df3f838f38",
@@ -403,7 +392,19 @@
         "15nG6-XL0JG-nE8IPrVpjmsbkeXRnPagQ": "2967a1f694a7adcae8e3f50620f98bdebabc2d9817a3ed0ac00a33e4d482d3dc",
         "1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC": "86b52428eba45df2ee1261023420b2be904ac76fb55c7d517d48984a56200c34",
         "1L47gMYL4Ynccw-kbYjEJcUFijIeTbECU": "629a38bb01ec6240177ffb20e8eb6990f535ea2b7e47dfa8eb108afd746783fd",
-        "1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08": "e1a7f728beaa354bb750b295cf946ef39e48313869cabcacb7a34610c26f058b"
+        "1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08": "e1a7f728beaa354bb750b295cf946ef39e48313869cabcacb7a34610c26f058b",
+        "1QOrLeI1xg5BgUXaFFNUJzEwEIXNE_nX_": "479512c51d3a98895e3f1f7b547bf3fe5a11ea9686f3c9c9a1c6fd8c1f92c398",
+        "1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ": "ebd7ec7623130b77ef6d2eb2975994678310970198392e368ef75bf3dcc03040",
+        "1JdXTKl5hbHl6yD3rs89Ek75iDG6AIAwt": "6aace32cddf9bab0824274d63881826ca2d6eb8018510180fb25c5f4318f5d45",
+        "1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir": "2e1dd9cc01869f28592810778c7a72d8b739f6b551c74e70673d02e100cf1e47",
+        "1kdToFBhQlQxEt5doA5W46LBEQDHmHMoj": "c677d0864360f0608dceb0535e428c2eff93d5d629e055e214aa09403453090c",
+        "15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ": "779fef2a77929d0698c693ad2fc31476e65bdbad22d8810ef905410c77fdb472",
+        "1CQdj5CXUvcGK7uGxDUqVALswHG0sUdxA": "4f1ff2e2f1f84c76d27d1bae30337ae5146d3b38c82588f1a25f8251905cce50",
+        "1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln": "b82ffba068a61906782e207c83bb6394ded0e0c81f672c1b25af6aa110b8eb43",
+        "1D-h2nZIIsSvUDd4OHPbTZbWfwDu3ZkqT": "cba307c99a23d2f9cb096020b6db5f8aa0ab2e0b74385acf80e72f56d3699867",
+        "1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ": "c9a725f842515cd89c96042b7e1898c0eae390754018e943cb864e73b8ed3901",
+        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e",
+        "1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02": "f5fc095922054b199a7594b1a999ef6000f23940cf9ed45b8ede2fc114fc41f4"
       },
       "infographicSheetResourceId": "droits_patients_fiche_infographiee_p01",
       "infographicSheetVisualAudit": {
@@ -429,8 +430,69 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-17T20:46:43.068071+00:00",
-        "bundleSha256": "2e379f6ad98c79e32ff434e581fcf4a6612095ae39e7d1854cdc83b310939d0c"
+        "approvedAt": "2026-10-18T20:54:13.088Z",
+        "bundleSha256": "6f3145f28c0f5c473f0ceb56983cab8d4b1b1d20973fe34c2f835df7e95674ce"
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "droits_patients_2026_01",
+            "droits_patients_2026_02",
+            "droits_patients_2026_03",
+            "droits_patients_2026_04",
+            "droits_patients_2026_05",
+            "droits_patients_2026_06"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
+        }
+      ]
+    },
+    {
+      "courseId": "pssm",
+      "part": "01",
+      "validated": true,
+      "deliveryMode": "audio_only",
+      "status": "partial",
+      "driveFolderId": "1tfM7Ve2J5a0_tP_ROOC0-_vETFESJQVE",
+      "folders": {
+        "05": "1j0WevK3SiJ38EuxrHyNfjg2OL3cYbImD"
+      },
+      "vocals": [
+        "pssm_2026_01",
+        "pssm_2026_02",
+        "pssm_2026_03"
+      ],
+      "vocalScripts": [],
+      "blockers": [
+        {
+          "resource": "official_support",
+          "reason": "private_pending"
+        },
+        {
+          "resource": "revision_sheets",
+          "reason": "not_published"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_published"
+        }
+      ],
+      "artifactSha256s": {
+        "1j2SYtuQbxyy8mJPi11_hsxG3ahnKm5ZT": "77661f6c2f91191f0a457946e0fbd1f6b81969ca231389e2c61e1ef4e81338e8",
+        "1qUHOTfeQ5A0wGlH1Rw8k1tK2gZ48H4sO": "100512b90db67d6e32292306f14530c7d0d488438b1b7782eb6de26d4d6675b8",
+        "1vKyJFOCUUGMKXjsu7IdkQky0dLApCU1m": "80f545c9b2d399adb3da1b12291ea1bc2d05bed39d3557a218b5ffebb5d1605b"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-19T08:15:00+02:00",
+        "bundleSha256": "09051cf17a201e100c2a2c1a50216879003d28ff52fa1882a7c2f8ed7a52edca"
       }
     }
   ],

@@ -355,6 +355,24 @@ const planningKb=read('planning-v1.js');
 assert(planningKb.includes("date:'2026-10-08',start:'09:00',end:'12:30'")&&planningKb.includes("teacher:'Timothy JAMES'"),'Intervenant FAC/KB du 08/10 matin incorrect');
 assert(planningKb.includes("date:'2026-10-08',start:'13:30',end:'15:30'")&&planningKb.includes("teacher:'Vanessa PETIT'"),'Intervenant FAC/KB du 08/10 après-midi incorrect');
 assert(planningKb.includes("date:'2026-10-06',start:'09:00',end:'12:30'")&&planningKb.includes("teacher:'L Chevreau'"),'Les jours antérieurs au 08/10 ne doivent pas être rétro-corrigés');
+
+/* V8.30.93 : contrat des vocaux MP3 reçus et contrôlés avant livraison */
+const vocalsRelease8393=json('vocals.json');
+const expectedAudioByCourse={droits_patients:6,stomatotherapie:3,plaies_pansements:5,pssm:3};
+assert(vocalsRelease8393.length===audit821.expectedTotals.vocals,'Inventaire des vocaux désynchronisé du référentiel');
+assert(vocalsRelease8393.length===75,'La série audio V8.30.93 doit compter 75 enregistrements');
+assert(new Set(vocalsRelease8393.map(v=>v.id)).size===vocalsRelease8393.length,'Doublon ID dans le catalogue vocal');
+assert(new Set(vocalsRelease8393.map(v=>v.driveId)).size===vocalsRelease8393.length,'Doublon Drive ID dans le catalogue vocal');
+for(const [courseId,n] of Object.entries(expectedAudioByCourse)){
+  const added=vocalsRelease8393.filter(v=>v.courseId===courseId);
+  assert(added.length===n,`Série ${courseId} incomplète : ${added.length}/${n}`);
+  assert(JSON.stringify(added.map(x=>x.number).sort((a,b)=>a-b))===JSON.stringify(Array.from({length:n},(_,i)=>i+1)),`Ordre vocal incorrect : ${courseId}`);
+  assert(added.every(v=>v.mime==='audio/mpeg'&&/^[A-Za-z0-9_-]{15,}$/.test(v.driveId)&&v.title&&v.course),'MP3 ou métadonnée invalide : '+courseId);
+  const course=registry.courses.find(c=>c.id===courseId);
+  assert(course&&course.audioStatus==='available'&&course.audioCount===n&&course.audioFolderUrl?.startsWith('https://drive.google.com/drive/folders/'),'Rattachement ou statut Drive invalide : '+courseId);
+}
+console.log('✅ V8.30.93 : 17 nouveaux MP3, catalogue 75 vocaux, IDs uniques et cours alignés');
+
 console.log(`✅ V${releaseMeta.version} contrôlée : release, cache PWA et changelog alignés dynamiquement`);
 console.log('✅ V8.30.9 conservée : centre de Révision allégé, dashboard fusionné et recherche repliée');
 console.log('✅ V8.30.8 conservée : série Système nerveux complète avec 5 vocaux');

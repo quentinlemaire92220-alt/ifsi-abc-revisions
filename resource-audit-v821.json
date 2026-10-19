@@ -1,6 +1,6 @@
 {
-  "version": "8.30.92",
-  "auditedAt": "2026-10-11",
+  "version": "8.30.93",
+  "auditedAt": "2026-10-18",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
@@ -9,10 +9,10 @@
   "mode": "validated_snapshot",
   "note": "V8.30.73 : ressources officielles Douleur synchronisées ; provenance Respiratoire corrigée.",
   "expectedTotals": {
-    "courses": 48,
+    "courses": 49,
     "sheets": 59,
     "infographics": 163,
-    "vocals": 58,
+    "vocals": 75,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -137,6 +137,51 @@
         "1AoEhAhVr0w1jVIAEpmWCGkt2tNDvkDJa",
         "1bywTG_gqEm-U40NJ2_dDh1Saw30cgJtw",
         "1aT7gvrk8NbPp2tKH8GGG56TofGHXPFl6"
+      ]
+    },
+    {
+      "courseId": "droits_patients",
+      "course": "Droits des patients",
+      "vocals": 6,
+      "vocalDriveIds": [
+        "1QOrLeI1xg5BgUXaFFNUJzEwEIXNE_nX_",
+        "1JdXTKl5hbHl6yD3rs89Ek75iDG6AIAwt",
+        "1kdToFBhQlQxEt5doA5W46LBEQDHmHMoj",
+        "1CQdj5CXUvcGK7uGxDUqVALswHG0sUdxA",
+        "1D-h2nZIIsSvUDd4OHPbTZbWfwDu3ZkqT",
+        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK"
+      ]
+    },
+    {
+      "courseId": "stomatotherapie",
+      "course": "Stomatothérapie",
+      "vocals": 3,
+      "vocalDriveIds": [
+        "1mJaDaQCLFsPUcXGzaCRfGzn9DC5gJXUF",
+        "1TgTz-K9ALKBf9gGdnF-FXEk3cJaQL_W7",
+        "1Z21K6xje4HQTngSZtdwsbAsgs9f08ikK"
+      ]
+    },
+    {
+      "courseId": "plaies_pansements",
+      "course": "Plaies et pansements",
+      "vocals": 5,
+      "vocalDriveIds": [
+        "1MsxUcVYS3ZhmmFa1re4xzvhYN-nSundg",
+        "1BJSt-vlp9rJ5zrmpQUaRJg4Fqm_1Ch1P",
+        "1MehFCdvR8CQ-n6Q5Iq0idrrThgc5nmAh",
+        "1Bev009KaP3DkINQEKce1Ub_lW-3qRwRd",
+        "1AqR-kE7ihOSccS_cCpSH6uUkmO5W3DNh"
+      ]
+    },
+    {
+      "courseId": "pssm",
+      "course": "Premiers secours en santé mentale",
+      "vocals": 3,
+      "vocalDriveIds": [
+        "1j2SYtuQbxyy8mJPi11_hsxG3ahnKm5ZT",
+        "1qUHOTfeQ5A0wGlH1Rw8k1tK2gZ48H4sO",
+        "1vKyJFOCUUGMKXjsu7IdkQky0dLApCU1m"
       ]
     }
   ],

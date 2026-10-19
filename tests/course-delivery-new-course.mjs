@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
 import {validateAnatomyRouting} from './anatomy-routing-contract.mjs';
+import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const git = args => execFileSync('git', args, {
@@ -68,6 +69,10 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
+  if (delivery.deliveryMode==='audio_only') {
+    validateAudioOnlyDelivery(course,delivery,current.vocals);
+    continue; // Seul l'audio est publié ; les deux PDF restent indispensables pour déclarer le cours complet.
+  }
   validateDualSheetDelivery(course.id, delivery, current.sheets);
   const atlasSources = ['v83-anatomy-interactive.js','v82-nav-anatomy.js',
     'v814-respiratory-atlas.js','v815-urinary-atlas.js','v816-endocrine-atlas.js',
