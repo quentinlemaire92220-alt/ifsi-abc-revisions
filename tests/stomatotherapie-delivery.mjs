@@ -54,13 +54,16 @@ assert.equal(old.filter(q=>authorizedIds.has(q.id)).length,authorized.length,'Co
 assert.equal(old.length,2403+authorized.length,'Banques voisines modifiées en dehors des compléments autorisés');
 assert.equal(registry.courses.filter(c=>c.id==='stomatotherapie').length,1);
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='stomatotherapie');
-assert.equal(delivery.status,'awaiting_mp3');
-assert.ok(delivery.blockers.some(b=>b.reason==='awaiting_user_mp3'));
-assert.ok(!delivery.blockers.some(b=>b.reason==='awaiting_user_review'));
+assert.equal(delivery.status,'complete');
+assert.equal(delivery.blockers.length,0);
 assert.equal(delivery.publishedVerification.status,'MATCH');
 assert.equal(delivery.publicationApproval.status,'approved');
-assert.equal(delivery.vocals.length,0);
-assert.equal(delivery.vocalScripts.length,6);
+assert.equal(delivery.vocals.length,3);
+assert.equal(delivery.vocalScripts.length,3);
+const mp3=read('vocals.json').filter(v=>v.courseId==='stomatotherapie');
+assert.equal(mp3.length,3);
+assert.deepEqual([...delivery.vocals].sort(),mp3.map(v=>v.id).sort());
+assert.ok(mp3.every(v=>v.mime==='audio/mpeg'&&/^[a-f0-9]{64}$/.test(delivery.artifactSha256s[v.driveId]||'')));
 for(const [path,rows] of Object.entries({
  'course-registry-v741.json':registry.courses,
  'qextra-53.txt':bank,
@@ -71,4 +74,4 @@ for(const [path,rows] of Object.entries({
  const own=rows.filter(x=>(x.courseId||x.id)==='stomatotherapie'||bank.includes(x));
  assert.ok(!/PLAUD|transcriptions?|Sources privées/i.test(JSON.stringify(own)),'Source interne exposée : '+path);
 }
-console.log('✅ Stomatothérapie : 50 QCM identiques à la matrice, 69 cartes décodées, 29 termes reliés, vocabulaire sans doublon, 2403 anciens QCM préservés et compléments QCM autorisés présents, 0 MP3 fictif.');
+console.log('✅ Stomatothérapie : 50 QCM identiques à la matrice, 69 cartes décodées, 29 termes reliés, vocabulaire sans doublon, 2403 anciens QCM préservés et compléments QCM autorisés présents, 3 MP3 publiés avec empreintes vérifiées.');
