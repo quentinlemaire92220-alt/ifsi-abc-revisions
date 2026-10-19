@@ -50,7 +50,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/18aAwIbPaqHFQUD3ai1tYXTxESAJD3ZOz/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/18aAwIbPaqHFQUD3ai1tYXTxESAJD3ZOz/view",
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1mnoHRj3pYMosNsBIzuaLfhiQZFhUXg0O"
     },
     {
       "id": "parasites_champignons",
@@ -89,7 +92,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1F7pDPQdkAMoZWSJgEFHMMbpCSmEtClhN/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1F7pDPQdkAMoZWSJgEFHMMbpCSmEtClhN/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1Ilnswj0n3QJr4N0NqzWV8-PVt4zC4h6B"
     },
     {
       "id": "physiopathologie_infections",
@@ -151,7 +157,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1X7FByYiHQ7a1_0xSmG_kOaDzr-pv1XM3/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1X7FByYiHQ7a1_0xSmG_kOaDzr-pv1XM3/view",
+      "audioStatus": "available",
+      "audioCount": 5,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1d3TE36-RCtvQjc6ALRqgqrD_kSMbEGkY"
     },
     {
       "id": "systeme_immunitaire",
@@ -163,7 +172,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1Xel1AUk6CbEZYtNl1IVT1ZDDjaXYr6px/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1Xel1AUk6CbEZYtNl1IVT1ZDDjaXYr6px/view",
+      "audioStatus": "available",
+      "audioCount": 5,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/15MzI0BrGg05ZRJ1Lx_qKFd3AkjWsxQJ1"
     },
     {
       "id": "systeme_respiratoire",
@@ -282,7 +294,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1z0bBrkhiY7XS1MGLoc3YS_UPHxoAPK6J/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1z0bBrkhiY7XS1MGLoc3YS_UPHxoAPK6J/view",
+      "audioStatus": "available",
+      "audioCount": 5,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1QdSj8evykah_j2U4irC8XjfZetPTeBHZ"
     },
     {
       "id": "appareil_locomoteur",
@@ -305,8 +320,11 @@
         }
       ],
       "audioStatus": "available",
-      "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io"
+      "audioCount": 7,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io",
+      "audioAdditionalFolderUrls": [
+        "https://drive.google.com/drive/folders/1w6_629HBF3DZn0t2nWQDH6LsKIkkbsEV"
+      ]
     },
     {
       "id": "traumatologie",

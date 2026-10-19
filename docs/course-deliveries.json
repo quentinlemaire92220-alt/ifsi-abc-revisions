@@ -1167,6 +1167,146 @@
         "approvedAt": "2026-10-19T07:04:38Z",
         "bundleSha256": "e66f42b480dec8be852dbe3d2bb0af3608f2ececce4591b6894b8dae8adf71a2"
       }
+    },
+    {
+      "courseId": "systeme_endocrinien",
+      "folderId": "1d3TE36-RCtvQjc6ALRqgqrD_kSMbEGkY",
+      "vocalIds": [
+        "endocrinien_2026_01",
+        "endocrinien_2026_02",
+        "endocrinien_2026_03",
+        "endocrinien_2026_04",
+        "endocrinien_2026_05"
+      ],
+      "artifactSha256s": {
+        "1j5_KWkC5ANmFCJZYXkKmkqccvuqFtCs9": "a01772e29af055e2ce556321d1a13a924f56fa09dd97ecd656f98480b92f6042",
+        "1Gd09kqDUK5hD4at7VKOBhYVbI45Bel3-": "5cee9cab8ca168fb2fec7c41c3f7e40007668a3b620d5fda24e31ae8134bb634",
+        "1iPw71tx73rq74q5NbCBqV91EV81A-jIv": "3d5bc976e44c1aa8101bd270e45c4333d65bf0ee90f5210b7926c041da0a65e0",
+        "17ST_5nA5IcdO-4i4Z_NsmxYqPS-TxQS-": "a0aec808d164de2adcd24355c20da29a3a6710a21b8497772835ecd7bd5e5709",
+        "1TfR1qsxZSnmNuBaNyFnxVIlXU9Y6ejdT": "b05b582355928d7cf73e802df4e8c4d8d2781a17a79e5601d27852628dd67828"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "a2cf15afe4e7b523849cf47c7e446ddf9d2cf4c8727cf433165bc9bcc13c3760"
+      }
+    },
+    {
+      "courseId": "systeme_digestif",
+      "folderId": "1QdSj8evykah_j2U4irC8XjfZetPTeBHZ",
+      "vocalIds": [
+        "digestif_2026_01",
+        "digestif_2026_02",
+        "digestif_2026_03",
+        "digestif_2026_04",
+        "digestif_2026_05"
+      ],
+      "artifactSha256s": {
+        "18vmD6Zv2GZ9hwVPcxemtt2iGY0zwyLRk": "5b269d00d29ddc5395f5f180d132eb7f158e483ab813d426a6710a87d57878c2",
+        "1ExMPFzDEaQZkQWXHSSUYAS8SIXIk8hQh": "2bb5686c6dd6062259a7f9e1408db73f013a7ded5bdbb2f9157c27e8ac457d89",
+        "1yI1lwMM7i5jKhkSV7qrC93H1X2NeeDdn": "5a17abe9914d37bafc03ed957dd70f08381e03b24063cb81763bad556f43e255",
+        "1aQ0Ru0t_qB-cLiNI3pqDCn0frRgD2Qtp": "fa06138482fbff899ed24e8145a57741b1d9b8fd4083df95a6a12d3673092dca",
+        "10vSESF0w2RUtQElYcGaR_x5aCqzCYSnv": "db0d26cc9e88bc82169c94499e482cb287717173f4cc72073ebe7f2a11d40648"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "76009fdcd39adc71f8d4006e4d3a6dba0f89448d148a1dabfe4b23c750ef3236"
+      }
+    },
+    {
+      "courseId": "systeme_immunitaire",
+      "folderId": "15MzI0BrGg05ZRJ1Lx_qKFd3AkjWsxQJ1",
+      "vocalIds": [
+        "immunitaire_2026_01",
+        "immunitaire_2026_02",
+        "immunitaire_2026_03",
+        "immunitaire_2026_04",
+        "immunitaire_2026_05"
+      ],
+      "artifactSha256s": {
+        "1Rb_9b8LqtCPGJ3WRg-MzNbg0WiY_YYjF": "7ee641d086818c39580133fe0d351d5dbd6dc95e225c165114797b8dc811c223",
+        "1FRVrIdwXpmg3BDsGKjdU2lC-ELLbPPSB": "a8c13fc40256a614355543d1ce75052114733f098b68c6e6afa0d1ee6dd51d40",
+        "1yN2NPdRNQde8pq33_ndaTVsKZNkYZGwA": "066d53ae4eddc31f37ca2fa432ae4f8f02443de94c6b66a20f4e058fe3fa3416",
+        "1QQVdI59RH9wKvuREimONph9fthiFhHiV": "07cfe1705c4391a22495c1e0dfcc7002a2f4f628c37023af1a939383bbbff832",
+        "16S3Sur-hZFtyO2Ri0_xd9WWaYsM0XljP": "96195df50d14a58e6405b80bb46d90ae02159abf0d7a335a878b8aa7948f3ac9"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "a396c969fe28b82045844ff3a882736d03a477bd98b32f62d5a2971de6871a04"
+      }
+    },
+    {
+      "courseId": "appareil_locomoteur",
+      "folderId": "1w6_629HBF3DZn0t2nWQDH6LsKIkkbsEV",
+      "vocalIds": [
+        "locomoteur_anatomie_2026_01",
+        "locomoteur_anatomie_2026_02",
+        "locomoteur_anatomie_2026_03",
+        "locomoteur_anatomie_2026_04",
+        "locomoteur_anatomie_2026_05"
+      ],
+      "artifactSha256s": {
+        "1Ret-XCUUxB4RPHGfYrCfRCPZhBdKPXuG": "283a039460f30b038b7968d13c55def9c913e107a81f7d1177c318ffc729730f",
+        "1PeD4hlCHMn2cGVmOdPeJwaNmF_u3p5zn": "8b1078e8e95827bb74e354ef9ef18ebd1eba889b829a8410028a6eb6ca12660e",
+        "1rBVnRHZgGHEGRViZaHR2MMjhG_EuO-7f": "209d9cc0d4d31acc1ee1a3f680b9c4148431f62b98d76e7757f60c855de1098e",
+        "1CpeeF9nZjG7n5J0-2p51DS_tSuxwLgiv": "5a81a60f7597d6a6731749807ac40596198346dd11b23caeec6ba7bdf918470b",
+        "1i0wbtDinj47J4ElJwoarfqtVtisc3fcQ": "2fa66dadb9993c02b3da1a843db7039b13d8167dac481ad6dda46554e4ff6557"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "3e04c2f14aafcb0334f823df0373064756d58061f15270e6a0fd608ed2b3eaed"
+      }
+    },
+    {
+      "courseId": "homeostasie",
+      "folderId": "1mnoHRj3pYMosNsBIzuaLfhiQZFhUXg0O",
+      "vocalIds": [
+        "homeostasie_2026_01",
+        "homeostasie_2026_02",
+        "homeostasie_2026_03"
+      ],
+      "artifactSha256s": {
+        "1IQ61X92qxY2ylKtZQWHcT2RNFHTJcG3j": "a06243dbbc2bedd471e474dc58acc98130155f9b024bb6bcfca43614b47809af",
+        "1Efagl6NKSxBsqsJ5R-ouFfixFtukbpl3": "1fe7a3515516245c7fad6b5ab0a4d6bdc3da7b7a4fb103a358d46a1914d395f2",
+        "1oOVX_Ho7Tnd6NkKFlaSuVz5wRJU9xjdv": "d0a4a407f18db2e6bd8fb02cb22d60ce480ed9c4d1a74138ce09522a2377c47f"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "623df78b8fc96d6f0e094cef4b266ab079023fcec409b3d50fbebec7f4d5d3bc"
+      }
+    },
+    {
+      "courseId": "niveaux_organisation",
+      "folderId": "1Ilnswj0n3QJr4N0NqzWV8-PVt4zC4h6B",
+      "vocalIds": [
+        "niveaux_organisation_2026_01",
+        "niveaux_organisation_2026_02"
+      ],
+      "artifactSha256s": {
+        "150k-RrI8EDKNv2Ixehl50Sv_hR3ldNfL": "fce5b513b07a3b7956461a096271d26770131f0843782255e9ca9b4636c9be7a",
+        "1DB-BsJNJOzoiCBa3iGot19I8RNxHGMf5": "0f1ee09a88a2ade8f79e68e35afecaa8677333204a0f1d429e71407b095f3b0d"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T13:52:46Z",
+        "bundleSha256": "4f45e45989ecfb0e13efe2e27d0250ff5604ca0fffa3fbde369560ff0a335e83"
+      }
     }
   ]
 }
