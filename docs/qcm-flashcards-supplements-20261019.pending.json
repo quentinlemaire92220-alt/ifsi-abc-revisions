@@ -1,0 +1,379 @@
+{
+  "status": "en_attente_validation_pedagogique",
+  "publication": "non",
+  "date": "2026-10-19",
+  "description": "Questions et flashcards autonomes, préparées à partir des supports officiels nouvellement retrouvés. Aucune modification de correction historique. Non chargées dans l'application tant que le rapprochement de la banque de production, la vérification des doublons et la validation pédagogique ne sont pas achevés.",
+  "sourceByCourse": {
+    "systeme_cardiovasculaire": {
+      "title": "Système cardiovasculaire : cœur, vaisseaux et sang — Dr Sandrine Dulong, 5 octobre 2026",
+      "driveId": "153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS"
+    },
+    "chirurgie_orthopedique": {
+      "title": "Traitement chirurgical de l’arthrose — Dr V. Molina",
+      "driveId": "1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8"
+    },
+    "appareil_locomoteur": {
+      "title": "QCM enseignant — Rachis et brûlures",
+      "driveId": "1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4"
+    },
+    "grands_brules": {
+      "title": "QCM enseignant — Rachis et brûlures",
+      "driveId": "1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4"
+    }
+  },
+  "questions": [
+    {
+      "id": "off26_20261019_cardio_01",
+      "courseId": "systeme_cardiovasculaire",
+      "ue": "S1 B1",
+      "course": "Système cardiovasculaire",
+      "theme": "Circulations et trajet sanguin",
+      "difficulty": "medium",
+      "question": "Concernant la circulation du sang entre le cœur, les poumons et les organes, quelles propositions sont exactes ?",
+      "choices": [
+        "La circulation pulmonaire part du cœur droit et rejoint le cœur gauche après les échanges pulmonaires.",
+        "La grande circulation commence au ventricule droit.",
+        "Les veines pulmonaires ramènent le sang oxygéné vers l’oreillette gauche.",
+        "Les artères pulmonaires ramènent le sang oxygéné vers l’oreillette droite.",
+        "La circulation systémique ne traverse aucun capillaire."
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "La petite circulation conduit le sang du cœur droit vers les poumons, puis les veines pulmonaires ramènent le sang oxygéné vers l’oreillette gauche. La grande circulation part du cœur gauche vers les tissus.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quel est le trajet général de la petite circulation ?",
+          "answers": [
+            "Cœur droit → poumons → veines pulmonaires → oreillette gauche."
+          ],
+          "explanation": "La petite circulation conduit le sang du cœur droit vers les poumons, puis les veines pulmonaires ramènent le sang oxygéné vers l’oreillette gauche. La grande circulation part du cœur gauche vers les tissus."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS",
+        "pages": "7 et 31 à 35"
+      }
+    },
+    {
+      "id": "off26_20261019_cardio_02",
+      "courseId": "systeme_cardiovasculaire",
+      "ue": "S1 B1",
+      "course": "Système cardiovasculaire",
+      "theme": "Électrocardiogramme et conduction",
+      "difficulty": "medium",
+      "question": "Quelles associations entre les ondes de l’ECG et l’activité électrique du cœur sont correctes ?",
+      "choices": [
+        "L’onde P correspond à la dépolarisation des oreillettes.",
+        "L’onde T correspond à la dépolarisation des ventricules.",
+        "Le complexe QRS correspond à la dépolarisation des ventricules.",
+        "L’onde P représente uniquement la fermeture de la valve aortique.",
+        "L’onde T correspond à la repolarisation des ventricules."
+      ],
+      "answers": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "L’onde P témoigne de la dépolarisation atriale, le complexe QRS de la dépolarisation ventriculaire et l’onde T de la repolarisation ventriculaire.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Que représentent les ondes P, QRS et T sur un électrocardiogramme ?",
+          "answers": [
+            "P : dépolarisation atriale ; QRS : dépolarisation ventriculaire ; T : repolarisation ventriculaire."
+          ],
+          "explanation": "L’onde P témoigne de la dépolarisation atriale, le complexe QRS de la dépolarisation ventriculaire et l’onde T de la repolarisation ventriculaire."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS",
+        "pages": "43 à 49"
+      }
+    },
+    {
+      "id": "off26_20261019_cardio_03",
+      "courseId": "systeme_cardiovasculaire",
+      "ue": "S1 B1",
+      "course": "Système cardiovasculaire",
+      "theme": "Débit et pression artérielle",
+      "difficulty": "hard",
+      "question": "À propos des relations entre débit cardiaque, fréquence et pression artérielle, quelles égalités sont correctes dans le modèle présenté ?",
+      "choices": [
+        "Débit cardiaque = fréquence cardiaque / volume d’éjection systolique.",
+        "Débit cardiaque = volume d’éjection systolique × fréquence cardiaque.",
+        "Pression artérielle = volume d’éjection systolique / fréquence cardiaque.",
+        "Pression artérielle ≈ débit cardiaque × résistance vasculaire systémique.",
+        "Fréquence cardiaque = pression artérielle × volémie."
+      ],
+      "answers": [
+        1,
+        3
+      ],
+      "explanation": "Le débit cardiaque est le produit du volume d’éjection systolique par la fréquence cardiaque. Dans le modèle simplifié, la pression artérielle dépend du débit et des résistances vasculaires systémiques.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Comment se calcule le débit cardiaque ?",
+          "answers": [
+            "Débit cardiaque = volume d’éjection systolique × fréquence cardiaque."
+          ],
+          "explanation": "Le débit cardiaque est le produit du volume d’éjection systolique par la fréquence cardiaque. Dans le modèle simplifié, la pression artérielle dépend du débit et des résistances vasculaires systémiques."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS",
+        "pages": "63 et 90"
+      }
+    },
+    {
+      "id": "off26_20261019_chir_01",
+      "courseId": "chirurgie_orthopedique",
+      "ue": "S1 B1",
+      "course": "Chirurgie orthopédique",
+      "theme": "Indications de chirurgie de l’arthrose",
+      "difficulty": "easy",
+      "question": "Quelles affirmations sont exactes concernant la chirurgie d’une coxarthrose ?",
+      "choices": [
+        "La coxarthrose désigne une arthrose du genou.",
+        "La coxarthrose est une arthrose de la hanche.",
+        "Une prothèse totale de hanche peut être proposée lorsque les traitements médicaux ne suffisent plus.",
+        "Une prothèse totale de genou constitue le remplacement habituel d’une hanche arthrosique.",
+        "Toute coxarthrose impose d’emblée une chirurgie."
+      ],
+      "answers": [
+        1,
+        2
+      ],
+      "explanation": "La coxarthrose atteint la hanche. La prothèse totale de hanche est une option chez un patient restant douloureux et gêné malgré le traitement médical.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Dans quelle situation une prothèse totale de hanche (PTH) peut-elle être proposée ?",
+          "answers": [
+            "Lors d’une coxarthrose symptomatique avec retentissement fonctionnel malgré les traitements médicaux."
+          ],
+          "explanation": "La coxarthrose atteint la hanche. La prothèse totale de hanche est une option chez un patient restant douloureux et gêné malgré le traitement médical."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8",
+        "pages": "2 à 4"
+      }
+    },
+    {
+      "id": "off26_20261019_chir_02",
+      "courseId": "chirurgie_orthopedique",
+      "ue": "S1 B1",
+      "course": "Chirurgie orthopédique",
+      "theme": "Surveillance postopératoire des prothèses",
+      "difficulty": "medium",
+      "question": "Après une arthroplastie de hanche ou de genou, quels éléments relèvent de la surveillance ou de la prévention postopératoire ?",
+      "choices": [
+        "Surveiller les signes de saignement ou d’hématome.",
+        "Rechercher des manifestations compatibles avec une thrombose veineuse ou une embolie pulmonaire.",
+        "Reporter systématiquement toute reprise de la marche durant dix jours.",
+        "Participer à une mobilisation et une rééducation selon les prescriptions.",
+        "Considérer la douleur intense comme toujours normale et sans intérêt clinique."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Les complications évoquées comprennent l’hématome, la thrombose veineuse profonde, l’embolie pulmonaire et, selon la prothèse, la luxation. La reprise fonctionnelle et la rééducation sont intégrées à la prise en charge.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quels risques majeurs rechercher dans la surveillance postopératoire d’une prothèse de hanche ou de genou ?",
+          "answers": [
+            "Saignement ou hématome, thrombose veineuse profonde et embolie pulmonaire ; surveiller aussi les risques spécifiques de la prothèse."
+          ],
+          "explanation": "Les complications évoquées comprennent l’hématome, la thrombose veineuse profonde, l’embolie pulmonaire et, selon la prothèse, la luxation. La reprise fonctionnelle et la rééducation sont intégrées à la prise en charge."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8",
+        "pages": "6 à 9 et 12 à 17"
+      }
+    },
+    {
+      "id": "off26_20261019_chir_03",
+      "courseId": "chirurgie_orthopedique",
+      "ue": "S1 B1",
+      "course": "Chirurgie orthopédique",
+      "theme": "Radiculalgies rachidiennes",
+      "difficulty": "medium",
+      "question": "Quelles associations entre racines nerveuses et douleurs radiculaires sont correctes ?",
+      "choices": [
+        "La cruralgie est liée aux racines L3 ou L4.",
+        "La sciatique est liée aux racines L5 ou S1.",
+        "La cruralgie provoque exclusivement des douleurs de la nuque.",
+        "La sciatique correspond toujours à une douleur isolée du pouce.",
+        "Une radiculalgie est provoquée par la contraction des valves cardiaques."
+      ],
+      "answers": [
+        0,
+        1
+      ],
+      "explanation": "La cruralgie correspond à une radiculalgie L3/L4 et touche notamment la face antérieure de la cuisse. La sciatique correspond à une atteinte L5/S1 et peut irradier vers la jambe et le pied.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quelles racines sont classiquement impliquées dans la cruralgie et la sciatique ?",
+          "answers": [
+            "Cruralgie : L3–L4 ; sciatique : L5–S1."
+          ],
+          "explanation": "La cruralgie correspond à une radiculalgie L3/L4 et touche notamment la face antérieure de la cuisse. La sciatique correspond à une atteinte L5/S1 et peut irradier vers la jambe et le pied."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8",
+        "pages": "32 à 36"
+      }
+    },
+    {
+      "id": "off26_20261019_chir_04",
+      "courseId": "chirurgie_orthopedique",
+      "ue": "S1 B1",
+      "course": "Chirurgie orthopédique",
+      "theme": "Urgence neurologique après chirurgie rachidienne",
+      "difficulty": "hard",
+      "question": "Après une laminectomie, quels signes doivent faire suspecter une complication compressive neurologique et déclencher une alerte urgente ?",
+      "choices": [
+        "Une douleur intense nouvelle associée à des paresthésies ou à un déficit neurologique.",
+        "L’arrêt inhabituel du drainage accompagné de signes neurologiques.",
+        "Une cicatrice propre sans plainte neurologique et avec un examen normal.",
+        "Une reprise progressive de la marche sans symptôme.",
+        "Une simple sensation de faim isolée."
+      ],
+      "answers": [
+        0,
+        1
+      ],
+      "explanation": "Une complication redoutée est l’hématome compressif postopératoire. Douleur majeure, arrêt du drainage, paresthésies, déficit neurologique ou rétention aiguë d’urines imposent d’alerter le chirurgien en urgence.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quels signes doivent faire évoquer un hématome compressif après laminectomie ?",
+          "answers": [
+            "Douleur majeure, drainage qui cesse, paresthésies, déficit sensitif ou moteur et parfois rétention aiguë d’urines ; alerte chirurgicale urgente."
+          ],
+          "explanation": "Une complication redoutée est l’hématome compressif postopératoire. Douleur majeure, arrêt du drainage, paresthésies, déficit neurologique ou rétention aiguë d’urines imposent d’alerter le chirurgien en urgence."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8",
+        "pages": "37 à 40"
+      }
+    },
+    {
+      "id": "off26_20261019_rachis_01",
+      "courseId": "appareil_locomoteur",
+      "ue": "S1 B1",
+      "course": "Système locomoteur",
+      "theme": "Courbures physiologiques du rachis",
+      "difficulty": "easy",
+      "question": "Quelles courbures du rachis sont physiologiques chez l’adulte vu de profil ?",
+      "choices": [
+        "Une cyphose thoracique.",
+        "Une scoliose lombaire systématique.",
+        "Une lordose cervicale et une lordose lombaire.",
+        "Un rachis strictement rectiligne.",
+        "Une lordose thoracique à la place de la cyphose thoracique."
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Le rachis présente physiologiquement une lordose cervicale, une cyphose thoracique et une lordose lombaire. Une scoliose n’est pas une courbure physiologique attendue.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quelles sont les trois courbures principales du rachis de profil ?",
+          "answers": [
+            "Lordose cervicale, cyphose thoracique et lordose lombaire."
+          ],
+          "explanation": "Le rachis présente physiologiquement une lordose cervicale, une cyphose thoracique et une lordose lombaire. Une scoliose n’est pas une courbure physiologique attendue."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4",
+        "pages": "QCM enseignant, diapositive 2"
+      }
+    },
+    {
+      "id": "off26_20261019_rachis_02",
+      "courseId": "appareil_locomoteur",
+      "ue": "S1 B1",
+      "course": "Système locomoteur",
+      "theme": "Immobilisation plâtrée",
+      "difficulty": "easy",
+      "question": "À propos d’un plâtre cruro-pédieux, quelles propositions sont correctes ?",
+      "choices": [
+        "Il immobilise le genou et la cheville.",
+        "Il immobilise exclusivement le coude.",
+        "Il s’étend de la cuisse jusqu’au pied inclus.",
+        "Il ne nécessite aucune surveillance neurovasculaire.",
+        "Il garantit l’absence de compression sous plâtre."
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Un plâtre cruro-pédieux s’étend de la cuisse jusqu’au pied et immobilise le genou ainsi que la cheville. Sa surveillance est essentielle pour dépister compression et troubles neurovasculaires.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quelle est l’étendue d’un plâtre cruro-pédieux et quelles articulations immobilise-t-il ?",
+          "answers": [
+            "De la cuisse jusqu’au pied inclus ; il immobilise le genou et la cheville."
+          ],
+          "explanation": "Un plâtre cruro-pédieux s’étend de la cuisse jusqu’au pied et immobilise le genou ainsi que la cheville. Sa surveillance est essentielle pour dépister compression et troubles neurovasculaires."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4",
+        "pages": "QCM enseignant, diapositive 10"
+      }
+    },
+    {
+      "id": "off26_20261019_brules_01",
+      "courseId": "grands_brules",
+      "ue": "S1 B3",
+      "course": "Grands brûlés",
+      "theme": "Évaluation de la gravité des brûlures",
+      "difficulty": "medium",
+      "question": "Quels sont les trois paramètres majeurs de gravité d’une brûlure ?",
+      "choices": [
+        "La profondeur de la brûlure.",
+        "La surface corporelle atteinte.",
+        "La localisation des lésions.",
+        "La couleur des vêtements portés au moment de l’accident.",
+        "La taille des phlyctènes prise isolément comme unique critère."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "La profondeur, l’étendue et la localisation des brûlures font partie des grands critères de gravité. Les phlyctènes peuvent aider à apprécier la profondeur, mais ne remplacent pas ces critères.",
+      "flashcards": [
+        {
+          "kind": "Notion précise",
+          "front": "Quels sont les trois critères majeurs pour évaluer la gravité d’une brûlure ?",
+          "answers": [
+            "La profondeur, l’étendue et la localisation de la brûlure."
+          ],
+          "explanation": "La profondeur, l’étendue et la localisation des brûlures font partie des grands critères de gravité. Les phlyctènes peuvent aider à apprécier la profondeur, mais ne remplacent pas ces critères."
+        }
+      ],
+      "reviewSource": {
+        "driveId": "1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4",
+        "pages": "QCM enseignant, diapositive 5"
+      }
+    }
+  ]
+}
