@@ -8,7 +8,7 @@ export function validateAudioOnlyDelivery(course,delivery,vocals){
   assert.equal(delivery.validated,true,id+': contrôle audio non validé');
   assert.equal(delivery.status,'partial',id+': un cours sans fiche ne peut être complet');
   assert.equal(course?.sourceStatus,'official_support_private_pending_publication',id+': statut support privé incorrect');
-  assert.ok(!course?.officialSupportUrl&&!course?.qcmPdfUrl,id+': interdiction d'exposer un support privé');
+  assert.ok(!course?.officialSupportUrl&&!course?.qcmPdfUrl,id+': interdiction d’exposer un support privé');
   assert.ok(!delivery.supportDriveId&&!delivery.sheetResourceId&&!delivery.infographicSheetResourceId,
     id+': ne pas présenter des fiches non encore publiées');
   assert.ok(!delivery.qcmDriveId&&!delivery.flashcardDriveId,id+': pas de QCM/flashcards fictifs');
