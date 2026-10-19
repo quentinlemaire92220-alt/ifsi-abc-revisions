@@ -74,6 +74,9 @@ jobs:
       - name: TNR suivi reproducteur V8.30.97 sans diffusion de maquettes
         run: node tests/anatomy-reproductive-release-v8397.mjs
 
+      - name: TNR lecteur privé de PDF R02–R07 — V8.30.100
+        run: node tests/anatomy-reproductive-private-preview-v8400.mjs
+
       - name: TNR P1 anatomie après V8.30.97 — masquage DOM et 106 planches
         run: node tests/anatomy-p1-guards-v8397.mjs
 
