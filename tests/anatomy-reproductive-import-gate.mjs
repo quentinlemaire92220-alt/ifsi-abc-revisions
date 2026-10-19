@@ -12,6 +12,8 @@ const audit=JSON.parse(read('resource-audit-v821.json'));
 assert.equal(data.schemaVersion,1);
 assert.equal(data.expectedBoards,6);
 assert.equal(data.boards.length,6);
+assert.equal(data.exportReceived.pageCount,6,'Le PDF Canva reçu doit contenir R02–R07');
+assert.equal(data.exportReceived.imagesAreHighResolutionMasters,false,'Les exports de revue ne doivent pas être promus en masters HD');
 assert.ok(registry.some(c=>c.id==='systeme_reproducteur'));
 assert.deepEqual(data.boards.map(b=>b.key),['R02','R03','R04','R05','R06','R07']);
 assert.equal(new Set(data.boards.map(b=>b.atlasId)).size,6);
@@ -32,6 +34,9 @@ for(const b of data.boards){
  assert.ok(Number.isInteger(b.mainImageSourcePixels.height)&&b.mainImageSourcePixels.height>0);
  assert.ok(b.plannedAssetPath.startsWith('assets/anatomy/reproductive/'));
  assert.equal(b.testReady,false,'Les planches non approuvées ne peuvent pas être utilisées dans les exercices');
+ assert.equal(b.pdfReview.reviewed,true,'Planche PDF non vérifiée');
+ assert.equal(b.pdfReview.finalApproved,false,'Maquette PDF déclarée approuvée trop tôt');
+ assert.ok(b.pdfReview.layoutOrAnatomyConcerns.length>=1,b.key+' : écarts non documentés');
  if(b.appPublication!=='approved'){
    assert.equal(b.imagePath,null,b.key+' : publication prématurée d\'une image');
    assert.equal(b.driveId,null,b.key+' : Drive ID non validé');
