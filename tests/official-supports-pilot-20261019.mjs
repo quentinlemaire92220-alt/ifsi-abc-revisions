@@ -63,4 +63,29 @@ console.log('AUDIT_EXISTANT_COMPTAGE_JSON '+JSON.stringify([...domainIds].map(id
 const targeted=domainQuestions.filter(q=>/circulation|coeur|cardiaque|ecg|onde|depolarisation|arthrose|coxarthrose|prothese|pt[gh]|post.?operat|laminectomie|hematome|sciatique|cruralgie|radiculalgie|platre|cruro|courbure|cyphose|lordose|gravite|brulure/i.test(norm(q.question)));
 console.log('AUDIT_EXISTANT_DOMAIN_JSON '+JSON.stringify(targeted.map(q=>({id:q.id,courseId:q.courseId,question:q.question,correct:(q.answers||[]).map(i=>q.choices[i])}))));
 
+const termsByPilot={
+ cardio_01:['circulation','pulmonaire','veine pulmonaire','oreillette','sang'],
+ cardio_02:['ecg','onde p','qrs','onde t','depolarisation','repolarisation'],
+ cardio_03:['debit cardiaque','ves','frequence cardiaque','resistance','pression arterielle'],
+ chir_01:['coxarthrose','prothese totale de hanche','pth','traitement medical'],
+ chir_02:['postoperatoire','hematome','thrombose','embolie','surveillance','pth','ptg'],
+ chir_03:['cruralgie','sciatique','radiculalgie','l3','l4','l5','s1'],
+ chir_04:['laminectomie','hematome extradural','hematome compressif','redon','paresthesie'],
+ rachis_01:['cyphose','lordose','courbures','rachis'],
+ rachis_02:['cruro','platre','cheville','genou'],
+ brules_01:['gravite','brulure','localisation','etendue','profondeur']
+};
+const diagnostic = pilot.questions.map(q=>{
+ const key=q.id.replace('off26_20261019_',''),terms=termsByPilot[key]||[];
+ const allowed=q.courseId==='appareil_locomoteur'?new Set(['traumatologie','appareil_locomoteur']):new Set([q.courseId]);
+ const likely=activeQuestions.filter(old=>allowed.has(old.courseId)).map(old=>{
+  const body=norm(old.question+' '+(old.choices||[]).join(' ')+' '+old.explanation);
+  const hit=terms.filter(k=>body.includes(norm(k)));
+  return {id:old.id,question:old.question,answers:(old.answers||[]).map(i=>old.choices[i]),hit,score:hit.length};
+ }).filter(old=>old.score>0).sort((a,b)=>b.score-a.score).slice(0,5);
+ return {id:q.id,existing:likely};
+});
+console.log('AUDIT_PILOTE_RECOUVREMENTS_JSON '+JSON.stringify(diagnostic));
+
+
 console.log('✅ Sources officielles liées et pilote de 10 QCM + 10 flashcards cohérent, non publié');
