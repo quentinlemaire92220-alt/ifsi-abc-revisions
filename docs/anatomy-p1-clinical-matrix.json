@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-19",
+  "charter": "01_STANDARD - Production d'un cours IFSI ABC - v1.17",
+  "source": {
+    "type": "official",
+    "title": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+    "driveId": "1Jw8RzgwKSob_zp8a7DLN2W_3qT5_gDaz",
+    "pages": 66
+  },
+  "reason": "Préparer une seule matrice source→légendes→figure, sans inventer de PDF final ni augmenter le compteur de l'application avant validation.",
+  "publicationStatus": "BLOCKED",
+  "imagesReady": 0,
+  "boardsExpected": 7,
+  "boards": [
+    {
+      "key": "R01",
+      "title": "Appareil génital masculin : vue d'ensemble",
+      "pages": [
+        5,
+        7,
+        15,
+        18,
+        21
+      ],
+      "landmarks": [
+        "testicule",
+        "scrotum",
+        "épididyme",
+        "canal déférent",
+        "vésicule séminale",
+        "prostate",
+        "pénis",
+        "urètre",
+        "vessie"
+      ],
+      "view": "vue sagittale pelvienne et vue d’ensemble, orientation gauche/droite vérifiée",
+      "prohibited": [
+        "Inverser urètre et canal déférent",
+        "Faire passer le canal déférent dans le corps du pénis"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        5,
+        7,
+        15,
+        18,
+        21
+      ]
+    },
+    {
+      "key": "R02",
+      "title": "Testicule et tubes séminifères",
+      "pages": [
+        7,
+        8,
+        9
+      ],
+      "landmarks": [
+        "albuginée",
+        "lobules testiculaires",
+        "tubes séminifères",
+        "cellules de Sertoli",
+        "cellules de Leydig"
+      ],
+      "view": "coupe de testicule et agrandissement histologique rattaché",
+      "prohibited": [
+        "Attribuer la production de testostérone aux cellules de Sertoli",
+        "Confondre cellules de Leydig avec la lumière des tubules"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "R03",
+      "title": "Voies spermatiques et glandes annexes",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "landmarks": [
+        "épididyme",
+        "canal déférent",
+        "ampoule déférentielle",
+        "canal éjaculateur",
+        "vésicule séminale",
+        "prostate",
+        "glandes bulbo-urétrales",
+        "urètre prostatique"
+      ],
+      "view": "trajet continu, vue pelvienne avec vue agrandie de l'abouchement",
+      "prohibited": [
+        "Raccorder directement le canal déférent à la vessie",
+        "Confondre conduit éjaculateur et uretère"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "key": "R04",
+      "title": "Appareil génital féminin : vue d'ensemble",
+      "pages": [
+        25,
+        27,
+        29,
+        30,
+        31,
+        33
+      ],
+      "landmarks": [
+        "ovaire",
+        "trompe utérine",
+        "utérus",
+        "col de l'utérus",
+        "vagin",
+        "vessie",
+        "rectum"
+      ],
+      "view": "vue frontale de l'appareil et petit rappel topographique sagittal",
+      "prohibited": [
+        "Confondre méat urinaire et orifice vaginal",
+        "Dessiner une continuité fermée trompe-ovaire erronée"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        25,
+        27,
+        29,
+        30,
+        31,
+        33
+      ]
+    },
+    {
+      "key": "R05",
+      "title": "Ovaire et trompe utérine",
+      "pages": [
+        27,
+        28,
+        29
+      ],
+      "landmarks": [
+        "cortex ovarien",
+        "médulla ovarienne",
+        "follicules ovariens",
+        "pavillon",
+        "ampoule tubaire",
+        "isthme tubaire",
+        "partie intramurale"
+      ],
+      "view": "coupe d'ovaire et trompe ; repères statiques, sans prétendre représenter les phases du cycle",
+      "prohibited": [
+        "Confondre ovocyte et follicule",
+        "Attribuer les quatre parties à l'ovaire"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "key": "R06",
+      "title": "Utérus : paroi, col et vagin",
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "landmarks": [
+        "périmètre",
+        "myomètre",
+        "endomètre",
+        "couche basale",
+        "couche fonctionnelle",
+        "col utérin",
+        "vagin"
+      ],
+      "view": "coupe sagittale et agrandissement des trois tuniques",
+      "prohibited": [
+        "Inverser l'ordre des couches",
+        "Confondre la paroi de l'utérus et celle du vagin"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "key": "R07",
+      "title": "Vulve et périnée",
+      "pages": [
+        34,
+        36,
+        37,
+        38
+      ],
+      "landmarks": [
+        "mont du pubis",
+        "grandes lèvres",
+        "petites lèvres",
+        "vestibule",
+        "clitoris",
+        "méat urinaire",
+        "orifice vaginal",
+        "périnée"
+      ],
+      "view": "vue externe anatomique didactique, repérage de la continuité vestibulaire",
+      "prohibited": [
+        "Confondre l'orifice vaginal et le méat urinaire",
+        "Représenter des appareillages sans source"
+      ],
+      "status": "a_produire",
+      "assetId": null,
+      "anatomicalReview": "pending",
+      "visualReview": "pending",
+      "approval": null,
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "sourceFile": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+      "sourcePages": [
+        34,
+        36,
+        37,
+        38
+      ]
+    }
+  ],
+  "existingIssues": [
+    {
+      "id": "resp_atlas_02",
+      "courseId": "systeme_respiratoire",
+      "status": "quarantined",
+      "reason": "Cadrage débordant et repères anatomiques à revoir",
+      "fileId": "1KRBSiliS28bwxYuOVRONNyX--EIFu1Kx"
+    },
+    {
+      "id": "urinary001",
+      "courseId": "systeme_urinaire",
+      "status": "quarantined",
+      "reason": "Hile rénal fléché de façon incertaine",
+      "fileId": "1oMT0A4FuqrVWaI8GDLIKeI1qc3qxm67V"
+    }
+  ],
+  "stomatherapy": {
+    "sourceFile": "UE_S1_B3_3_Stomatotherapie_Partie01_Cours_Officiel_TD3.pdf",
+    "sourceId": "144y_gyrWKuncH-BIShA4lAPvCLUMaTqP",
+    "digestive": {
+      "fileId": "1R7tzfQOxGjL1opgmEAnQvjwRG5xQnKg-",
+      "status": "anatomical_reuse_review"
+    },
+    "urinary": {
+      "fileId": "1HP8dXZ8Mwyi7DEKPUeQXtc3EjDpdvcqe",
+      "status": "needs_fix_before_technical_use",
+      "warning": "Vue générale exploitable comme aide-mémoire, mais nephrostomie, urétérostomie et cystostomie ne sont pas représentées comme des trajets chirurgicalement vérifiés. Ne pas l'utiliser pour enseigner l'appareillage."
+    }
+  }
+}
