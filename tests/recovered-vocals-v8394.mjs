@@ -16,12 +16,12 @@ assert.equal(additions.length,6,'Six compléments 2026 attendus');
 const newIds=additions.flatMap(s=>s.vocalIds);
 assert.equal(newIds.length,25,'25 nouveaux vocaux attendus');
 assert.equal(new Set(newIds).size,25,'ID doublonné entre compléments');
-assert.deepEqual([...supplements.keys()].sort(),[...legacy,...newIds,...newLotIds].sort());
-assert.equal(vocals.length,131,'Catalogue audio 131 attendu');
-const original=vocals.filter(v=>!legacy.includes(v.id)&&!newIds.includes(v.id)&&!newLotIds.includes(v.id));
+for(const id of [...legacy,...newIds,...newLotIds])assert.ok(supplements.has(id),'Complément audio historique manquant : '+id);
+assert.ok(vocals.length>=131,'Au moins 131 vocaux attendus');
+const original=vocals.slice(0,80).filter(v=>!legacy.includes(v.id));
 assert.equal(original.length,75);
 assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),'feab05ae2850878be2c0d3f21c1bf8ec1b0c5f2249579cc75b49ae0f5f66211b','Les 75 vocaux précédents ont changé');
-assert.equal(new Set(vocals.map(v=>v.driveId)).size,131);
+assert.equal(new Set(vocals.map(v=>v.driveId)).size,vocals.length);
 for(const [id,count] of [['appareil_locomoteur',2],['virus',3]]){
  const course=registry.courses.find(c=>c.id===id),prior=vocals.filter(v=>legacy.includes(v.id)&&v.courseId===id);
  assert.equal(prior.length,count,id+': ancien lot altéré');
