@@ -1,26 +1,26 @@
-# Contrôle des supports officiels — 19 octobre 2026
+# Supports officiels et contrôle QCM/flashcards — 19/10/2026
 
-Trois nouveaux supports sont rangés dans les dossiers Google Drive correspondants et leurs accès sont référencés par le registre IFSI ABC : système cardiovasculaire (Dr Dulong), traitement chirurgical de l’arthrose (Dr Molina), et QCM enseignant rachis/brûlures.
+## Sources rangées et référencées
+- Système cardiovasculaire : cours Dr Dulong
+- Chirurgie orthopédique et traitement chirurgical de l'arthrose : cours Dr Molina
+- Rachis/brûlures : QCM enseignant, sans grille officielle de correction
 
-## QCM et flashcards : décision pédagogique
-La comparaison avec les questions réellement actives révèle plusieurs notions déjà traitées. Le pilotage initial de dix QCM et dix flashcards n'est donc **pas ajouté en bloc** afin d'éviter les doublons et de préserver la cohérence des scores, des réponses et des cartes dérivées.
+Les raccourcis dans le catalogue renvoient aux documents dans les dossiers Drive déjà créés.
 
-Correspondances notables :
-- Petite circulation : `cardio_002`, `cardio_003` ; ECG : `cardio_026`.
-- Coxarthrose et indications chirurgicales : `v820_chirortho_001`, `v820_chirortho_005`.
-- Surveillance postopératoire PTH/PTG : `v820_chirortho_017`, `v820_chirortho_018`.
-- Cruralgie, sciatique, hématome après laminectomie : `v820_chirortho_028`, `v820_chirortho_029`, `v820_chirortho_030`.
-- Courbures du rachis : `v820_loco_048` ; plâtre cruro-pédieux : `v820_trauma_013`.
-- Gravité des brûlures (facteurs en partie couverts) : `v820_brules_004`.
+## Contrôle des questions
+Les dix QCM complémentaires initialement envisagés se recoupent avec des questions historiques. Aucun nouveau QCM n'est donc publié dans ce lot.
 
-Les notions portant sur les équations du débit cardiaque et les trois critères profondeur/étendue/localisation des brûlures peuvent faire l'objet d'un **complément ultérieur**, après vérification de leur présence dans toutes les corrections et flashcards existantes.
+Correspondances déjà vérifiées : `cardio_002`, `cardio_003`, `cardio_026`, `v820_chirortho_001`, `v820_chirortho_005`, `v820_chirortho_017`, `v820_chirortho_018`, `v820_chirortho_028`, `v820_chirortho_029`, `v820_chirortho_030`, `v820_loco_048`, `v820_trauma_013`, `v820_brules_004`.
 
-Le diaporama « QCM enseignant » contient des questions mais **aucune grille officielle de réponses**. Les corrections proposées ne doivent pas être présentées comme validées par l'enseignant.
+Les compléments sur les équations du débit cardiaque et le trio profondeur/étendue/localisation des brûlures nécessitent un contrôle pédagogique distinct avant d'ajouter d'autres QCM. Aucun corrigé d'enseignant n'a été inventé pour le QCM rachis/brûlures.
 
-## Fiche chirurgie orthopédique
-La fiche de révision existante est construite initialement sur des notes/transcriptions. Certaines précisions orales ne figurent pas dans le diaporama officiel. Son statut **provisoire** et son contenu actuel sont conservés, en attendant une réédition intégrale puis une revue médicale et graphique.
+## Dix flashcards restaurées
+La banque active a révélé dix notions traitées dans les QCM mais absentes des cartes générées. Le moteur Flashcards les inclut désormais avec un recto précis et un verso provenant directement des bonnes réponses du QCM actif correspondant. Ni les réponses QCM, ni les scores, ni les identifiants de progression ne sont modifiés.
 
-## Portée de cette PR
-- Publie uniquement les **liens vers les trois supports** et les contrôles de non-régression de la banque existante.
-- Ne remplace aucun PDF, QCM, flashcard, correction ou statistique.
-- Ne publie pas le lot de dix nouvelles questions proposé initialement. Tout nouveau contenu doit rester synchronisé dans les QCM, flashcards et PDF conformément à la charte du projet.
+Contrôle intégré : 13 questions de référence disposent chacune d'au moins une carte ; les dix récupérations font partie de cet ensemble. L'inventaire des flashcards et les 82 étapes TNR ont réussi sur la branche.
+
+## Fiche provisoire
+La fiche de chirurgie orthopédique reste provisoire. Elle provient d'une transcription et comporte des éléments oraux absents du nouveau support officiel. Elle devra être recomposée et relue avant de perdre ce statut.
+
+## Portée de la livraison
+Trois accès aux supports officiels et dix flashcards récupérées. Aucun PDF existant, aucune question QCM, aucune explication médicale historique ni aucune donnée personnelle n'est remplacé.
