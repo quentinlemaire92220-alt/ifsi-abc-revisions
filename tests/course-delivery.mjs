@@ -9,6 +9,8 @@ const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
 const infos=read('infographics.json'),vocals=read('vocals.json');
 const {deck,questions,registry}=await runtimeDeck();
+const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
+validateAudioSupplements(manifest,{registry,vocals});
 const required=['01','02','03','04','05','06','07','08','99'];
 for(const c of manifest.courses){
  assert.equal(c.validated,true,c.courseId+': validation manquante');

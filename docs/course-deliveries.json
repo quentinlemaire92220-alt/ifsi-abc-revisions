@@ -540,5 +540,47 @@
         "bundleSha256": "e335116210035a6d3189e0a4d90ddd4bf75472a484a5fc0fc43bcd498a09d262"
       }
     }
+  ],
+  "audioSupplements": [
+    {
+      "courseId": "appareil_locomoteur",
+      "folderId": "1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io",
+      "vocalIds": [
+        "locomoteur_legacy_01",
+        "locomoteur_legacy_02"
+      ],
+      "artifactSha256s": {
+        "1pS6SsCd8geacOGMRNN3p8cUD956UPDkT": "b82118ffd1a9c24400bdb483ee3ca87de2692aa5aadb3fde20f4db1b757e8ab0",
+        "1h9_hhbgSHqoYnAFRgEwdj970KtslRbty": "ebdaf06b91633b4f7725c8c3dd4cbb3502853f8e5f8e8c8aa02f79bb7c542ebb"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T07:04:38Z",
+        "bundleSha256": "964e050adbaf28e32f55343d93baaf2adebf94f67af3b708ec5d82e40a2e3b6c"
+      }
+    },
+    {
+      "courseId": "virus",
+      "folderId": "1scmRpkoaRaXVcWXzQVOdz01n37hDqQAA",
+      "vocalIds": [
+        "virus_legacy_01",
+        "virus_legacy_02",
+        "virus_legacy_03"
+      ],
+      "artifactSha256s": {
+        "1L2mnKYR1DTiQTevtoZbqlHeBzbcxZsP0": "7ec3a8ebba0eb84b0d0369302a4f483b6d323f77ef3b90dafa4a37e4f316a54c",
+        "1HZHhIaYtFGfEocaWKnXZtUDS-2xYwven": "eacbf187cfaadf3365bd444f8fb3853ba6faae558a73e8ffe3ff9468ef157b8b",
+        "1ftBfKm6oO6ctIPaf4buTWJ1xHaGbBonv": "a4e3a6fe3a30232e74834bfe63bcfe8b753c53f52a1e749109d412cdeb26948d"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T07:04:38Z",
+        "bundleSha256": "e66f42b480dec8be852dbe3d2bb0af3608f2ececce4591b6894b8dae8adf71a2"
+      }
+    }
   ]
 }

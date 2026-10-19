@@ -673,5 +673,55 @@
     "title": "Psychose, substances et situations de crise",
     "driveId": "1vKyJFOCUUGMKXjsu7IdkQky0dLApCU1m",
     "mime": "audio/mpeg"
+  },
+  {
+    "id": "locomoteur_legacy_01",
+    "courseId": "appareil_locomoteur",
+    "course": "Système locomoteur",
+    "number": 1,
+    "title": "Traumatologie : bases, plâtres et plaies",
+    "driveId": "1pS6SsCd8geacOGMRNN3p8cUD956UPDkT",
+    "mime": "audio/aac",
+    "durationSeconds": 651.165
+  },
+  {
+    "id": "locomoteur_legacy_02",
+    "courseId": "appareil_locomoteur",
+    "course": "Système locomoteur",
+    "number": 2,
+    "title": "Appareil locomoteur et traumatismes — cours complet",
+    "driveId": "1h9_hhbgSHqoYnAFRgEwdj970KtslRbty",
+    "mime": "audio/aac",
+    "durationSeconds": 1739.25
+  },
+  {
+    "id": "virus_legacy_01",
+    "courseId": "virus",
+    "course": "Virus",
+    "number": 1,
+    "title": "Structure, enveloppe et multiplication",
+    "driveId": "1L2mnKYR1DTiQTevtoZbqlHeBzbcxZsP0",
+    "mime": "audio/aac",
+    "durationSeconds": 490.171
+  },
+  {
+    "id": "virus_legacy_02",
+    "courseId": "virus",
+    "course": "Virus",
+    "number": 2,
+    "title": "Tropisme, virome, diversité et incubation",
+    "driveId": "1HZHhIaYtFGfEocaWKnXZtUDS-2xYwven",
+    "mime": "audio/aac",
+    "durationSeconds": 455.511
+  },
+  {
+    "id": "virus_legacy_03",
+    "courseId": "virus",
+    "course": "Virus",
+    "number": 3,
+    "title": "Infections virales et risque carcinogène",
+    "driveId": "1ftBfKm6oO6ctIPaf4buTWJ1xHaGbBonv",
+    "mime": "audio/aac",
+    "durationSeconds": 428.811
   }
 ]
