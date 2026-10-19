@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "release": "8.30.102",
+  "publishedAs": "PROVISIONAL_REVIEW_ONLY",
+  "source": "User-provided 6-page Canva PDF exported 2026-10-19; legibility patches and safety footer applied to review JPGs",
+  "ownerApproval": "L'utilisateur a demandé la finalisation de l'intégration et la diffusion de la galerie de revue",
+  "rightsReview": "user-authorized; independent provenance of Canva-imported base imagery not documented",
+  "clinicalReview": "PENDING",
+  "pedagogicalApproval": false,
+  "officialSupport": false,
+  "countedInHdAtlas": false,
+  "questionsEnabled": false,
+  "R01": {
+    "status": "TO_CREATE",
+    "asset": null
+  },
+  "boards": [
+    {
+      "id": "R02",
+      "courseId": "systeme_reproducteur",
+      "title": "Testicule et tubes séminifères",
+      "path": "assets/anatomy/reproductive/review/R02.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "455955d8583ae63e40ec795d6a268a1c30c409c747ada66e8e065429f71eba51",
+      "warning": "Albuginée non légendée ; pointages microscopiques à contrôler",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    },
+    {
+      "id": "R03",
+      "courseId": "systeme_reproducteur",
+      "title": "Voies spermatiques et glandes annexes",
+      "path": "assets/anatomy/reproductive/review/R03.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "ca2806994d4872ce77b062aee93966283f4eb8ff37aa0706ae578b13dbef5c79",
+      "warning": "Trajet des conduits et ampoule déférentielle à vérifier",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    },
+    {
+      "id": "R04",
+      "courseId": "systeme_reproducteur",
+      "title": "Appareil reproducteur féminin",
+      "path": "assets/anatomy/reproductive/review/R04.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "9bad01f128ecd8e542c2ed75ba89b863ab754fdbd1ffe2964729918d449785bb",
+      "warning": "Vue frontale uniquement ; vessie et rectum absents",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    },
+    {
+      "id": "R05",
+      "courseId": "systeme_reproducteur",
+      "title": "Ovaire et trompe utérine",
+      "path": "assets/anatomy/reproductive/review/R05.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "bb49d033b266f9fb31f641068b23d12ca8fa320c7b77beeacfed799b04d09f9e",
+      "warning": "Pointage médulla ovarienne neutralisé, ancien pointage possiblement faux",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    },
+    {
+      "id": "R06",
+      "courseId": "systeme_reproducteur",
+      "title": "Utérus, paroi et col",
+      "path": "assets/anatomy/reproductive/review/R06.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "c71dd3b43e3692bd738ef37b6567d0725db6fe8ca51d839bbb0efcc8302b0b05",
+      "warning": "Couches basale et fonctionnelle de l’endomètre absentes",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    },
+    {
+      "id": "R07",
+      "courseId": "systeme_reproducteur",
+      "title": "Vulve et périnée",
+      "path": "assets/anatomy/reproductive/review/R07.jpg",
+      "width": 1311,
+      "height": 1986,
+      "format": "jpeg",
+      "sha256": "4511ee1f98e0ecdcc7072583cd1eadbd60105144789e54a7a1eec0c9cc574cc6",
+      "warning": "Vestibule non légendé ; repères externes à contrôler",
+      "isApproved": false,
+      "wasUserReviewedVisually": true
+    }
+  ]
+}
