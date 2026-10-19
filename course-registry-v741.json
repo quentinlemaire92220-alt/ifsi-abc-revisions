@@ -1,5 +1,5 @@
 {
-  "version": "8.30.100",
+  "version": "8.30.101",
   "courses": [
     {
       "id": "biomolecules",
@@ -66,7 +66,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1LRMgmPnDU4yIaYbc3SJLQsWEygjHdo1g/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1LRMgmPnDU4yIaYbc3SJLQsWEygjHdo1g/view",
+      "audioCount": 4,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/16P1SkZvFBbCCizYq4dMOdA3itU3n7P0l"
     },
     {
       "id": "genetique",
@@ -107,7 +110,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1LH9jXK_bIMsuzp6j5ezhsAa9s7vUI1EE/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1LH9jXK_bIMsuzp6j5ezhsAa9s7vUI1EE/view",
+      "audioCount": 3,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/17XWEy6PapEK6jlXW7sR2lal44pNC_wcN"
     },
     {
       "id": "diagnostic_virologie",
@@ -119,7 +125,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1wwPavFCv1b9myUblTa98MFYDDqI7rpHb/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1wwPavFCv1b9myUblTa98MFYDDqI7rpHb/view",
+      "audioCount": 2,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1fOrKiQ17xtEiOieV2aBBNKjWoNyjkjOv"
     },
     {
       "id": "virus",
@@ -450,7 +459,10 @@
         "Infections Cutanees",
         "Infections cutanées"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1hz0ETbbrUnNkh1OE3iMYca633o4BrHmA/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1hz0ETbbrUnNkh1OE3iMYca633o4BrHmA/view",
+      "audioCount": 5,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1wuCSXbdPpdi9EGKYeGt7EIgctkNfTT4X"
     },
     {
       "id": "diagnostic_bacteriologie",
@@ -471,7 +483,10 @@
         "Infections Urinaires",
         "Infections urinaires"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1mbcVcVfbQxXTnp2soNM1pbsJk7HoJLPP/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1mbcVcVfbQxXTnp2soNM1pbsJk7HoJLPP/view",
+      "audioCount": 3,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1QT8205cFTkVmz5DTCUrziLUnjM2hOPgX"
     },
     {
       "id": "arthrose",
@@ -570,7 +585,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1uasiTjm3UwHL5JSbA0NMJ3H2J9dCKpob/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1uasiTjm3UwHL5JSbA0NMJ3H2J9dCKpob/view",
+      "audioCount": 4,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1SF0Zn1mgXnYtcdpmusuhD54qPYvUGukH"
     },
     {
       "id": "infections_respiratoires_virales",
@@ -583,7 +601,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1UElsjc-kywxY2elXlpmtBfyS0O4XSF2f/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1UElsjc-kywxY2elXlpmtBfyS0O4XSF2f/view",
+      "audioCount": 3,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1JIvcFfVSRVP4gg-rJ3GCRtYW33ukW0lF"
     },
     {
       "id": "ist_hors_vih",
@@ -597,7 +618,10 @@
       "domain": "B",
       "ue": "B1",
       "officialSupportUrl": "https://drive.google.com/file/d/163VRiKjTJ3ZxItGopvcswTx2ufMxLhig/view",
-      "officialSupportCoverage": "partial"
+      "officialSupportCoverage": "partial",
+      "audioCount": 2,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1GN5XWLlW53g56uuMknUdDxnno5WEm0kY"
     },
     {
       "id": "introduction_droit",

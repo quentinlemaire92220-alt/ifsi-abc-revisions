@@ -1307,6 +1307,178 @@
         "approvedAt": "2026-10-19T13:52:46Z",
         "bundleSha256": "4f45e45989ecfb0e13efe2e27d0250ff5604ca0fffa3fbde369560ff0a335e83"
       }
+    },
+    {
+      "courseId": "diagnostic_virologie",
+      "folderId": "1fOrKiQ17xtEiOieV2aBBNKjWoNyjkjOv",
+      "vocalIds": [
+        "diagnostic_virologie_2026_01",
+        "diagnostic_virologie_2026_02"
+      ],
+      "artifactSha256s": {
+        "1rvxo0KMsOI_iSwhy8lc033gCpLG-ACJJ": "e697ab615b4135b33c3e000410a1c9e6f3c913af0d0f1d221a73e0f0e5e59ae3",
+        "1UFzhQdzjzK6CXXYyZyOaQc9zqdAyezCT": "89b75a74d5d6c33a8777b2aeca0a5e29d443a440b2cf0d39f8652185ad2c8013"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "a96141520ff0e350367b9369baef96003f872c42eab3d0036536f7bb8c7b9c32"
+      }
+    },
+    {
+      "courseId": "infections_cutanees",
+      "folderId": "1wuCSXbdPpdi9EGKYeGt7EIgctkNfTT4X",
+      "vocalIds": [
+        "infections_cutanees_2026_01",
+        "infections_cutanees_2026_02",
+        "infections_cutanees_2026_03",
+        "infections_cutanees_2026_04",
+        "infections_cutanees_2026_05"
+      ],
+      "artifactSha256s": {
+        "1GDyAeDmOI5OamnbgEh6YTCWjhONwgLwE": "39c01825e200d237acd6959deb4632b0427d594356c044a116164d00c2b425c0",
+        "1N5Pe5Rqh_ZGgmdLw6oWvzhhl0hWZBLCD": "14ef8bc94d29b44330f09651b6311e4a44cfdf26ad199d8da34f25b118ed7c95",
+        "1KWHGHar7rgEMEsFnPZZbWyGBwsIa7xJn": "9261f559e6d78dc461d40c79dc9da2081ae314ac1f597670c0e534c6fb44e3e7",
+        "1fMx0BiyN1bh9zPRVei8OzIHYXRws0kvI": "4bcbeab54ab6c0a6a5891ac9fcf6abc2006b55e6e898e7af6db31ec145a2f5e4",
+        "1ezOLNW5a1QHfkg2lsMwNxiHV7JLTt5Mf": "f08b4b5be1b64fdf9b5c829220a4a7bf19053bfd44161ad752dd6e88c6e0fcd8"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "6c03a85ff0abf4403281f36ae66ea38a037c225243a4f24a1e0ed9e80ecd0fa4"
+      }
+    },
+    {
+      "courseId": "infections_pulmonaires_bacteriennes",
+      "folderId": "1SF0Zn1mgXnYtcdpmusuhD54qPYvUGukH",
+      "vocalIds": [
+        "infections_pulmonaires_bacteriennes_2026_01",
+        "infections_pulmonaires_bacteriennes_2026_02",
+        "infections_pulmonaires_bacteriennes_2026_03",
+        "infections_pulmonaires_bacteriennes_2026_04"
+      ],
+      "artifactSha256s": {
+        "16EN1FRUJinmKliISIx-DOnHzL-pJQpAe": "4f2b1ed7ace5fdded31d9465b84118f823e2feeac21d443fe9661c60ef1327b4",
+        "1voHzMLT0dSIv1ucHOwl4_SGqbcmZ9dF-": "649afce32a75df4539a63727f6711dab9965770900a708ddd8c3fce0ea83850e",
+        "1Xww5yOXVmDEfQVcYBjjmXS5mN8bGuF4k": "21bee12732bb284158c8086a78cfe700cb8804ce0cf44fa5aa80bea409e2b9db",
+        "1Vh0FZWSnauF08yxT-jFyJfk2eBDWcvq7": "b879486b289abf37ab0a57890d0daeb2264ab451a23c2334d3a5a50c0f590433"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "fec9e195bb75b53469650a672d138d8f267a5a0a0a43a63f61f1457fdf351747"
+      }
+    },
+    {
+      "courseId": "infections_respiratoires_virales",
+      "folderId": "1JIvcFfVSRVP4gg-rJ3GCRtYW33ukW0lF",
+      "vocalIds": [
+        "infections_respiratoires_virales_2026_01",
+        "infections_respiratoires_virales_2026_02",
+        "infections_respiratoires_virales_2026_03"
+      ],
+      "artifactSha256s": {
+        "1cVs7njunbNT1JOcNOHPfIx6T2P9n43Z7": "07eb78c2b83cc30f098c9371b004d77d47d54d9f2a44d1644721cd49354a34d2",
+        "1pOktKOzGcx-rMzdf4ViXpMUZZ0jJu9D0": "fc4be0a3406128a2dc393bce9a1e81ab7099c3dc4c1c7890003d35def0721d5b",
+        "1b1cLJYvwjow6kZ7QTMMyONfEhr5lM9rY": "24270289539529c949d5a2966810fefae33c4681e6b60780e77f92ea6cbe6fe1"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "e155540513decb4eb6338501876e4f52bd1b092f34258d2dc436a6b2ae6d33d1"
+      }
+    },
+    {
+      "courseId": "infections_urinaires",
+      "folderId": "1QT8205cFTkVmz5DTCUrziLUnjM2hOPgX",
+      "vocalIds": [
+        "infections_urinaires_2026_01",
+        "infections_urinaires_2026_02",
+        "infections_urinaires_2026_03"
+      ],
+      "artifactSha256s": {
+        "1FeVC3kCUcCbdAOX8HN4nMAMDWNEahpWY": "80a310bf46de63cccb54174745e9167f7395f7cc6e9a573e600bc408d79caa9c",
+        "1kehTUXvrM7EoSJGpoBpjBKrozC-F4mfL": "51dae6ad5e3ab7545f97923271ec8df687693aa3a76cfd4c59937c3aaee5a5a0",
+        "1Y0OllDPeFFuJPa7O7xI0rzLwXrvCfx8H": "3643a5e9bdfa5c4454eca3adfb690e3e5b6921a9f8184f0b2484c22551b776a1"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "54c9c5e454101288555580057b0e744bd0ce7e437bcebb0b86deaa92053a7f8e"
+      }
+    },
+    {
+      "courseId": "ist_hors_vih",
+      "folderId": "1GN5XWLlW53g56uuMknUdDxnno5WEm0kY",
+      "vocalIds": [
+        "ist_hors_vih_2026_01",
+        "ist_hors_vih_2026_02"
+      ],
+      "artifactSha256s": {
+        "1rHmGOsX6dyVCGcxnegkbd2He3-gnSEZ-": "78d7b8238a4f260f8bd92dc01f857d07186d0f606efd7419ed9c3c9823c84211",
+        "11PennCYXPJYc7XeAqACYy0lZqxA8fTpw": "3f70646ce3ed50bc4de091b1e70c7d134e381aee7c2b0c943014f1889e584b36"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "d785fc80832116244c6ec116ab79c954c8e75cb4be32b6099e40d9ceffc164f9"
+      }
+    },
+    {
+      "courseId": "parasites_champignons",
+      "folderId": "16P1SkZvFBbCCizYq4dMOdA3itU3n7P0l",
+      "vocalIds": [
+        "parasites_champignons_2026_01",
+        "parasites_champignons_2026_02",
+        "parasites_champignons_2026_03",
+        "parasites_champignons_2026_04"
+      ],
+      "artifactSha256s": {
+        "1BP8OeNlpyuZw0aA3qT9h88XhRRhLh0kr": "98c5e5558a30a023c8e6991f67eb69824674c9e0e8133d0501dfc1418d488ca1",
+        "1DwT6uIOOTIPfnpcKLKvcfozNxbucuK6N": "b341a23df1b91988aa9c0da838df7d0c51582cd405397447f72337c5170f12b5",
+        "1lthEMgKbvnyafqC9EZIKIOxXbg99sctJ": "922025a29fc6fe4fa5c4c4ecb4d9b025c833e69d238d10ab9226524ce55b5a4b",
+        "1f1g45i3lur2ac8K9OFX6v_d6LdjHBTJH": "6df2ef1616c7f3dfa281eb10c48da3ab1d852980d34566be70f7d5cf86a796f8"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "ef0611c96dc628f9e9e6ad8a9221a30d6b1d0703e88688cfce110ab22cadea8b"
+      }
+    },
+    {
+      "courseId": "physiopathologie_infections",
+      "folderId": "17XWEy6PapEK6jlXW7sR2lal44pNC_wcN",
+      "vocalIds": [
+        "physiopathologie_infections_2026_01",
+        "physiopathologie_infections_2026_02",
+        "physiopathologie_infections_2026_03"
+      ],
+      "artifactSha256s": {
+        "1JuqRCKqJ-WqlTxJnZzzW91aaounSMMpY": "1075a42070455cb7dfaac4666c94a897d63bc684a3b241655fc68b624656236c",
+        "1ECJIQczssxnuh__2DFYvhZrkBvla5oif": "7812011a98d6ad5668e2f4d6efc70b0e90d9bc99a27ee9553f3967a4fa843311",
+        "1H6Oq5TcbmheO7jgCR0jHHAGwC9hneVgE": "f251ea84528677be34bfbc69c74ca0648caab27a4d091218352cd81530a1c7c5"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-19T20:15:00Z",
+        "bundleSha256": "ad35c3f61bcb8dc39959bb30eaf080d47f079bf5932dd99f67216f35d536ca89"
+      }
     }
   ]
 }

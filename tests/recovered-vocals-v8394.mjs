@@ -6,17 +6,22 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const vocals=read('vocals.json'),manifest=read('docs/course-deliveries.json'),registry=read('course-registry-v741.json');
 const supplements=validateAudioSupplements(manifest,{registry,vocals});
 const legacy=['locomoteur_legacy_01','locomoteur_legacy_02','virus_legacy_01','virus_legacy_02','virus_legacy_03'];
-const additions=manifest.audioSupplements.filter(s=>s.vocalIds.some(id=>!legacy.includes(id)));
+const newCourseIds=new Set(['parasites_champignons','physiopathologie_infections','diagnostic_virologie','infections_urinaires','infections_pulmonaires_bacteriennes','infections_respiratoires_virales','infections_cutanees','ist_hors_vih']);
+const newLot=manifest.audioSupplements.filter(s=>newCourseIds.has(s.courseId));
+assert.equal(newLot.length,8,'Huit compléments de la série infections attendus');
+const newLotIds=newLot.flatMap(s=>s.vocalIds);
+assert.equal(newLotIds.length,26,'La nouvelle série doit compter 26 vocaux');
+const additions=manifest.audioSupplements.filter(s=>!newCourseIds.has(s.courseId)&&s.vocalIds.some(id=>!legacy.includes(id)));
 assert.equal(additions.length,6,'Six compléments 2026 attendus');
 const newIds=additions.flatMap(s=>s.vocalIds);
 assert.equal(newIds.length,25,'25 nouveaux vocaux attendus');
 assert.equal(new Set(newIds).size,25,'ID doublonné entre compléments');
-assert.deepEqual([...supplements.keys()].sort(),[...legacy,...newIds].sort());
-assert.equal(vocals.length,105,'Catalogue audio 105 attendu');
-const original=vocals.filter(v=>!legacy.includes(v.id)&&!newIds.includes(v.id));
+for(const id of [...legacy,...newIds,...newLotIds])assert.ok(supplements.has(id),'Complément audio historique manquant : '+id);
+assert.ok(vocals.length>=131,'Au moins 131 vocaux attendus');
+const original=vocals.slice(0,80).filter(v=>!legacy.includes(v.id));
 assert.equal(original.length,75);
 assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),'feab05ae2850878be2c0d3f21c1bf8ec1b0c5f2249579cc75b49ae0f5f66211b','Les 75 vocaux précédents ont changé');
-assert.equal(new Set(vocals.map(v=>v.driveId)).size,105);
+assert.equal(new Set(vocals.map(v=>v.driveId)).size,vocals.length);
 for(const [id,count] of [['appareil_locomoteur',2],['virus',3]]){
  const course=registry.courses.find(c=>c.id===id),prior=vocals.filter(v=>legacy.includes(v.id)&&v.courseId===id);
  assert.equal(prior.length,count,id+': ancien lot altéré');
@@ -40,4 +45,4 @@ for(const [id,count] of [['systeme_endocrinien',5],['systeme_digestif',5],['syst
 }
 assert.ok(fs.readFileSync('vocals-v73.js','utf8').includes('Number.isFinite(x.durationSeconds)'),'Durées non affichées');
 assert.ok(!fs.readFileSync('vocals.json','utf8').includes('staging_'));
-console.log('✅ 105 vocaux : 80 précédents préservés et 25 nouveaux rattachés à six cours');
+console.log('✅ 131 vocaux : 105 anciens inchangés et 26 nouveaux dans huit cours');

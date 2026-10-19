@@ -199,6 +199,9 @@ jobs:
       - name: Vérifier les cinq vocaux retrouvés et la préservation des anciens
         run: node tests/recovered-vocals-v8394.mjs
 
+      - name: Vérifier les 26 vocaux infectiologie et la release V8.30.101
+        run: node tests/infectiologie-vocaux-v8401.mjs
+
       - name: Vérifier le lecteur vocal natif V8.30.50
         run: node tests/vocal-player-v8350.mjs
 
