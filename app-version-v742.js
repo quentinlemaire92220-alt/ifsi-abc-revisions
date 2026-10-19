@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.101';
+const VERSION='8.30.102';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : 26 nouveaux vocaux de révision sur huit cours d’infectiologie.`;

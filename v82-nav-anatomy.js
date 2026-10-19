@@ -170,15 +170,31 @@ function validReproLink(raw){
   return '';
 }
 function reproLink(){try{return validReproLink(localStorage.getItem(REPRO_REVIEW_KEY)||'')}catch(e){return ''}}
+const REPRO_PREVIEW_ASSETS={
+ R02:{src:'./assets/anatomy/reproductive/review/R02.jpg',note:'Albuginée non légendée ; pointages microscopiques à contrôler'},
+ R03:{src:'./assets/anatomy/reproductive/review/R03.jpg',note:'Trajet des conduits et ampoule déférentielle à vérifier'},
+ R04:{src:'./assets/anatomy/reproductive/review/R04.jpg',note:'Vue frontale uniquement ; vessie et rectum non représentés'},
+ R05:{src:'./assets/anatomy/reproductive/review/R05.jpg',note:'Ancien repère « médulla ovarienne » neutralisé ; pointage à vérifier'},
+ R06:{src:'./assets/anatomy/reproductive/review/R06.jpg',note:'Couches basale et fonctionnelle de l’endomètre non distinguées'},
+ R07:{src:'./assets/anatomy/reproductive/review/R07.jpg',note:'Vestibule non légendé et repères externes à vérifier'}
+};
+// Ces six JPG sont un atlas PROVISOIRE ; ne jamais les compter comme masters approuvés.
 function reproductiveReviewCard(def,term){
   const c=course(def.id);
   const hay=normCatalog(c.label+' '+def.subtitle+' '+REPRO_REVIEW.map(x=>x.id+' '+x.title).join(' '));
   if(term&&!hay.includes(term))return '';
   const open=expandedSystem===def.id||!!term,link=reproLink();
   const rows=REPRO_REVIEW.filter(x=>!term||normCatalog(c.label+' '+x.id+' '+x.title+' '+def.subtitle).includes(term));
-  const list=rows.map(x=>'<div class="v82-board"><div class="v82-board-icon">🧬</div><div><h4>'+E(x.id)+' — '+E(x.title)+'</h4><div class="small">'+E(x.state)+' • Aucun test ni score</div></div><div class="v82-board-actions"><button class="btn outline" disabled>Non validée</button></div></div>').join('');
+  const list=rows.map(x=>{
+    const preview=REPRO_PREVIEW_ASSETS[x.id];
+    const thumb=preview?'<img src="'+E(preview.src)+'" loading="lazy" alt="Aperçu de '+E(x.id)+' (maquette non validée)" style="width:85px;height:116px;object-fit:contain;background:#fff;border:1px solid #bfc7d2;border-radius:7px">':'<div class="v82-board-icon">🧬</div>';
+    const warning=preview?'<div class="small" style="margin-top:4px;color:#ad6833">'+E(preview.note)+'</div>':'';
+    const action=preview?'<button class="btn outline" type="button" data-v82repro-preview="'+E(x.id)+'" aria-label="Agrandir la planche '+E(x.id)+' en revue">🔍 Voir / zoomer</button>':'<button class="btn outline" disabled>À produire</button>';
+    return '<div class="v82-board">'+thumb+'<div style="min-width:0;flex:1"><h4>'+E(x.id)+' — '+E(x.title)+'</h4><div class="small">⚠️ Maquette NON VALIDÉE • pas de test ni de score</div>'+warning+'</div><div class="v82-board-actions">'+action+'</div></div>';
+  }).join('');
   const controls='<div class="v82-review-note" style="padding:12px"><div class="small">🔒 Lien personnel Canva enregistré seulement sur cet appareil, non partagé avec les étudiants.</div><div class="v82-board-actions" style="justify-content:flex-start;margin-top:9px">'+(link?'<a class="btn primary" href="'+E(link)+'" target="_blank" rel="noopener noreferrer">Ouvrir ma revue Canva ↗</a>':'')+'<button type="button" class="btn outline" id="v82ReproSetLink">'+(link?'Modifier le lien':'Ajouter mon lien Canva')+'</button>'+(link?'<button class="btn outline" id="v82ReproClearLink">Effacer le lien</button>':'')+'</div></div>';
-  const content=open?'<div class="v82-board-list"><div class="small" style="margin:10px">Les six maquettes sont en cours de validation médicale et des droits. Elles ne peuvent être utilisées en QCM anatomique ni comptées comme validées.</div>'+list+controls+'</div>':'';
+  const modal='<div id="v82ReproModal" role="dialog" aria-modal="true" aria-label="Planche anatomique en revue" style="display:none;position:fixed;inset:0;z-index:11000;background:rgba(10,20,32,.95);align-items:center;justify-content:center;padding:12px"><div style="display:flex;flex-direction:column;align-items:center;gap:10px;max-width:100%;max-height:100%;color:#fff"><div style="width:min(96vw,950px);display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b id="v82ReproModalTitle">Atlas de revue</b><span style="margin-left:auto"></span><a id="v82ReproModalOpen" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline">Ouvrir en grand ↗</a><button id="v82ReproModalClose" type="button" class="btn outline">✕ Fermer</button></div><img id="v82ReproModalImage" alt="Planche en revue, non validée" style="max-width:min(96vw,950px);max-height:73vh;object-fit:contain;background:#fff;border-radius:6px"><p id="v82ReproModalNote" style="max-width:950px;font-size:13px;color:#ffdfac;margin:0">Non validée pour les révisions</p></div></div>';
+  const content=open?'<div class="v82-board-list"><div class="small" role="note" style="margin:10px;color:#9b5622"><b>⚠️ ATLAS PROVISOIRE — R02 à R07.</b> Illustrations en revue avec des repères potentiellement erronés. <b>Ne pas les utiliser comme source de vérité anatomique.</b> Aucun QCM ni score n’en dépend ; zéro planche officiellement validée.</div>'+list+controls+modal+'</div>':'';
   return '<section class="v82-system" data-v82system="'+E(def.id)+'"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">'+def.icon+'</span><div><h3>'+E(c.label)+'</h3><div class="v82-system-meta"><span class="badge">0 planche validée</span><span class="small">6 maquettes en revue • R01 à refaire</span></div></div></div><button class="btn '+(open?'primary':'outline')+' v82-toggle" data-v82toggle="'+E(def.id)+'">'+(open?'Masquer':'Suivi des planches')+'</button></div>'+content+'</section>';
 }
 
@@ -196,6 +212,26 @@ function catalogCard(def,term){
 }
 const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function bindAnatomy(){
+  const reproModal=$('v82ReproModal');
+  if(reproModal){
+    const close=()=>{reproModal.style.display='none';document.body.style.overflow='';};
+    $('v82ReproModalClose')?.addEventListener('click',close);
+    reproModal.addEventListener('click',e=>{if(e.target===reproModal)close()});
+    reproModal.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();close()}});
+    document.querySelectorAll('[data-v82repro-preview]').forEach(button=>button.addEventListener('click',()=>{
+      const id=button.dataset.v82reproPreview,p=REPRO_PREVIEW_ASSETS[id];
+      if(!p)return;
+      const title=$('v82ReproModalTitle'),img=$('v82ReproModalImage'),note=$('v82ReproModalNote'),open=$('v82ReproModalOpen');
+      if(!title||!img||!note||!open)return;
+      title.textContent=id+' • atlas provisoire / non validé';
+      img.src=p.src;img.alt='Illustration '+id+' provisoire — vérification anatomique en attente';
+      note.textContent='⚠️ '+p.note+' • Ne pas utiliser pour les QCM.';
+      open.href=p.src;
+      reproModal.style.display='flex';document.body.style.overflow='hidden';
+      $('v82ReproModalClose')?.focus();
+    }));
+  }
+
   $('v82ReproSetLink')?.addEventListener('click',()=>{
     const input=prompt('Colle le lien Canva de revue, enregistré uniquement sur cet appareil :',reproLink());
     if(input===null)return;
