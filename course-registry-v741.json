@@ -201,7 +201,8 @@
         "Cardiaque"
       ],
       "domain": "B",
-      "ue": "B1"
+      "ue": "B1",
+      "officialSupportUrl": "https://drive.google.com/file/d/153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS/view"
     },
     {
       "id": "prevention_ias_asepsie",
@@ -324,6 +325,13 @@
       "audioFolderUrl": "https://drive.google.com/drive/folders/1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io",
       "audioAdditionalFolderUrls": [
         "https://drive.google.com/drive/folders/1w6_629HBF3DZn0t2nWQDH6LsKIkkbsEV"
+      ],
+      "additionalDocuments": [
+        {
+          "category": "qcm_enseignant",
+          "label": "QCM enseignant — Rachis et brûlures (questions sources)",
+          "url": "https://drive.google.com/file/d/1zkTBket8QK-s85SW6Ybp3mC0LGgNEIC4/view"
+        }
       ]
     },
     {
@@ -487,7 +495,8 @@
         "Chirurgie Orthopedique",
         "Chirurgie orthopédique"
       ],
-      "showInCourses": false
+      "showInCourses": false,
+      "officialSupportUrl": "https://drive.google.com/file/d/1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8/view"
     },
     {
       "id": "rhumatismes_inflammatoires",
