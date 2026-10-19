@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
+import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
@@ -12,6 +13,11 @@ const required=['01','02','03','04','05','06','07','08','99'];
 for(const c of manifest.courses){
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
+ if(c.deliveryMode==='audio_only'){
+  validateAudioOnlyDelivery(registry.courses.find(x=>x.id===c.courseId),c,vocals);
+  console.log('✅ '+c.courseId+': '+c.vocals.length+' MP3 — livraison audio partielle (supports privés non publiés)');
+  continue;
+ }
  for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
  // Les cours anciens sont conservés ; les deux fiches sont exigées pour les nouveaux cours et parties.
