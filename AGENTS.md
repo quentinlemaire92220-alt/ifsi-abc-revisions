@@ -13,3 +13,7 @@ Pour chaque nouveau cours ou mise à jour pédagogique :
 Tout changement de contenu après validation invalide l'approbation du lot. Représenter les éléments modifiés avant publication. Les MP3 absents restent explicitement en attente et ne peuvent être annoncés comme produits. Les MP3 reçus ultérieurement font l'objet de leurs propres contrôles et autorisation de mise à disposition.
 
 Les instructions pédagogiques détaillées, transcriptions, pièces officielles non autorisées, captures et liens de revue privés restent hors du dépôt public. Les preuves détaillées de validation utilisateur restent privées ; seules les métadonnées techniques minimales sont versionnées.
+
+## Skill anatomie / Canva
+
+Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-canva.md`** en complément du standard Work v1.17 et de sa charte. Étape obligatoire : comparer visuellement au master Cellules, vérifier chaque organe et chaque flèche contre le cours officiel, justifier la licence de chaque figure, distinguer validation graphique et médicale. Canva ne garantit pas l'exactitude anatomique. Les maquettes privées peuvent être suivies dans l'application sans URL publique ni incrément du nombre de planches approuvées. **Aucune intégration en QCM, master HD ni diffusion étudiante avant contrôles et GO publication.**
