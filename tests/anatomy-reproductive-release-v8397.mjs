@@ -9,9 +9,9 @@ const agents=read('AGENTS.md');
 const skill=read('docs/skills/production-planches-anatomiques-canva.md');
 const snapshot=JSON.parse(read('resource-audit-v821.json'));
 
-assert.equal(meta.version,'8.30.97');
-assert.equal(meta.build,'8397');
-assert.ok(index.includes('./v8397-changelog.js?v=8397'));
+assert.ok(Number(meta.version.split('.').at(-1))>=97,'Reproducteur introduit en V8.30.97');
+assert.ok(Number(meta.build)>=8397,'Build inférieur à V8.30.97');
+assert.ok(index.includes('./v8397-changelog.js?v='+meta.build),'Changelog historique V8.30.97 absent du bundle courant');
 assert.ok(sw.includes("'./v8397-changelog.js'"));
 assert.ok(sw.includes('"v8397-changelog.js"'));
 assert.ok(nav.includes("id:'systeme_reproducteur'"),'Rubrique reproducteur absente');
