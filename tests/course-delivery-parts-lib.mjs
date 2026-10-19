@@ -3,6 +3,7 @@
 import assert from 'node:assert/strict';
 import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
 import {validateDualSheetPart} from './dual-sheet-contract.mjs';
+import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 
 const kinds = [
   ['sheet', 'sheets', 'resourceId', 'sheetResourceIds'],
@@ -61,7 +62,9 @@ export function validatePartChanges(before, after, previousManifest, currentMani
       supplementsByQuestion.set(id,sup);
     }
   }
+  const approvedAudio=validateAudioSupplements(currentManifest,after);
   const ordinary = updates.filter(item => {
+    if(item.kind==='vocal'&&approvedAudio.has(item.id))return false;
     if (item.kind!=='qcm')return true;
     const sup=supplementsByQuestion.get(item.id);
     if (!sup)return true;

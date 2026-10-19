@@ -34,4 +34,6 @@ for(const delivery of after.courses||[]){
  console.log('🔐 Empreinte package '+delivery.courseId+' : '+bundleDigest(publicationBundle(delivery.courseId,delivery,newData)));
 }
 const checked=validateChangedDeliveries(before,after,oldData,newData);
+const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
+validateAudioSupplements(after,newData);
 console.log(`✅ Validation avant publication : ${checked.length} lot(s) nouveau(x) ou modifié(s) approuvé(s) ; cours inchangés préservés.`);

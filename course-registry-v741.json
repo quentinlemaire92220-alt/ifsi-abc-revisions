@@ -1,5 +1,5 @@
 {
-  "version": "8.30.93",
+  "version": "8.30.94",
   "courses": [
     {
       "id": "biomolecules",
@@ -124,7 +124,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1hFLTWt1WoD9U1e9cDia4coJEQZgu9XQn/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1hFLTWt1WoD9U1e9cDia4coJEQZgu9XQn/view",
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1scmRpkoaRaXVcWXzQVOdz01n37hDqQAA"
     },
     {
       "id": "systeme_urinaire",
@@ -270,7 +273,10 @@
           "title": "Anatomie de l’appareil locomoteur — cours 01",
           "url": "https://drive.google.com/file/d/1bDGQTASjRs9jz1hTE78OLT_tZV4LJG7Q/view"
         }
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io"
     },
     {
       "id": "traumatologie",

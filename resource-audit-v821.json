@@ -1,6 +1,6 @@
 {
-  "version": "8.30.93",
-  "auditedAt": "2026-10-18",
+  "version": "8.30.94",
+  "auditedAt": "2026-10-19",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
@@ -12,7 +12,7 @@
     "courses": 49,
     "sheets": 59,
     "infographics": 163,
-    "vocals": 75,
+    "vocals": 80,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -183,6 +183,16 @@
         "1qUHOTfeQ5A0wGlH1Rw8k1tK2gZ48H4sO",
         "1vKyJFOCUUGMKXjsu7IdkQky0dLApCU1m"
       ]
+    },
+    {
+      "courseId": "appareil_locomoteur",
+      "vocals": 2,
+      "release": "8.30.94"
+    },
+    {
+      "courseId": "virus",
+      "vocals": 3,
+      "release": "8.30.94"
     }
   ],
   "auditLogicVersion": "8.30.10",
