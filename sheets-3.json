@@ -30,14 +30,20 @@
     "sourceStatus": "active"
   },
   {
-    "title": "UE_S1_B1_Infections_Neuro_Meningees_Partie01_Fiche_Revision_Infections_Neuro_Meningees.pdf",
-    "label": "Infections Neuro Meningees Partie01 Infections Neuro Meningees",
+    "title": "UE_S1_B1_Infections_neuro_meningees_Partie01_Fiche_Revision.pdf",
+    "label": "Infections neuro-méningées",
     "ue": "S1 B1",
     "url": "https://drive.google.com/file/d/1PBce1RW5rmbrwAyL1hZ2m2A4lMvUtsLx/view?usp=drivesdk",
-    "provisional": false,
+    "provisional": true,
     "courseId": "infections_neuro_meningees",
-    "displayTitle": "Infections neuro-méningées",
-    "sourceStatus": "active"
+    "displayTitle": "Infections neuro-méningées — fiche classique illustrée",
+    "sourceStatus": "active",
+    "resourceId": "infections_neuro_meningees_fiche_p01",
+    "driveId": "1PBce1RW5rmbrwAyL1hZ2m2A4lMvUtsLx",
+    "sheetFormat": "classic",
+    "officialSupport": false,
+    "sourceBasis": "course_captures",
+    "partId": "p01"
   },
   {
     "title": "UE_S1_B1_Infections_Cutanees_Fiche_Revision_Infections_Cutanees.pdf",
@@ -347,16 +353,20 @@
     "sourceNote": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours."
   },
   {
-    "title": "UE_S1_B1_Pharmacologie_Partie01_Fiche_Revision_Introduction_Pharmacologie.pdf",
+    "title": "UE_S1_B1_Pharmacologie_Partie01_Fiche_Revision.pdf",
     "label": "Introduction à la pharmacologie",
     "ue": "S1 B1",
     "url": "https://drive.google.com/file/d/1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_/view?usp=drivesdk",
     "driveId": "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_",
     "resourceId": "pharmacologie_fiche_p01",
-    "provisional": false,
+    "provisional": true,
     "courseId": "pharmacologie",
-    "displayTitle": "Introduction à la pharmacologie",
-    "sourceStatus": "active"
+    "displayTitle": "Introduction à la pharmacologie — fiche classique illustrée",
+    "sourceStatus": "active",
+    "sheetFormat": "classic",
+    "officialSupport": false,
+    "sourceBasis": "course_captures",
+    "partId": "p01"
   },
   {
     "title": "UE_S1_B3_Administration_Medicamenteuse_Partie01_Fiche_Revision_Initiation_Administration_Medicamenteuse.pdf",
@@ -438,5 +448,37 @@
     "sheetFormat": "complete_infographic",
     "driveId": "1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC",
     "url": "https://drive.google.com/file/d/1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC/view"
+  },
+  {
+    "title": "UE_S1_B1_Pharmacologie_Partie01_Fiche_Revision_Complete_Infographiee.pdf",
+    "label": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "url": "https://drive.google.com/file/d/1KELhpD9_1FQo-i0CzaVa6WtxlDPtka-C/view?usp=drivesdk",
+    "driveId": "1KELhpD9_1FQo-i0CzaVa6WtxlDPtka-C",
+    "resourceId": "pharmacologie_fiche_complete_infographiee_p01",
+    "provisional": true,
+    "courseId": "pharmacologie",
+    "displayTitle": "Introduction à la pharmacologie — fiche complète infographiée",
+    "sourceStatus": "active",
+    "sheetFormat": "complete_infographic",
+    "officialSupport": false,
+    "sourceBasis": "course_captures",
+    "partId": "p01"
+  },
+  {
+    "title": "UE_S1_B1_Infections_neuro_meningees_Partie01_Fiche_Revision_Complete_Infographiee.pdf",
+    "label": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "url": "https://drive.google.com/file/d/1xS7KRruiJf9c0UwFT5whwrEUU0Jhg5t7/view?usp=drivesdk",
+    "provisional": true,
+    "courseId": "infections_neuro_meningees",
+    "displayTitle": "Infections neuro-méningées — fiche complète infographiée",
+    "sourceStatus": "active",
+    "resourceId": "infections_neuro_meningees_fiche_complete_infographiee_p01",
+    "driveId": "1xS7KRruiJf9c0UwFT5whwrEUU0Jhg5t7",
+    "sheetFormat": "complete_infographic",
+    "officialSupport": false,
+    "sourceBasis": "course_captures",
+    "partId": "p01"
   }
 ]

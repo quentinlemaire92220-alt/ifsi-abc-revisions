@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
-import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
+import {validateDualSheetDelivery,validateSheetSource} from './dual-sheet-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -26,8 +26,8 @@ for(const c of manifest.courses){
  if(c.infographicSheetResourceId)validateDualSheetDelivery(c.courseId,c,sheets);
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
- assert.equal(sheet?.officialSupport,true,'Support officiel perdu');
- assert.ok(c.supportDriveId&&c.qcmDriveId,'Documents non identifiés');
+ validateSheetSource(c.courseId,c,sheet);
+ assert.ok(c.qcmDriveId&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'),'Documents non identifiés');
  const bankPaths=Array.isArray(c.qcmBanks) && c.qcmBanks.length ? c.qcmBanks : [c.qcmBank];
  assert.ok(bankPaths.every(x=>typeof x==='string'&&x.length),'Chemins QCM invalides');
  assert.equal(new Set(bankPaths).size,bankPaths.length,'Banque QCM référencée deux fois');
@@ -46,10 +46,10 @@ for(const c of manifest.courses){
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
  assert.ok(c.flashcardDriveId,'Export Flashcards absent');
  for(const card of cards){
-  assert.ok(card.front.endsWith('?')&&card.answers.length===1,card.id+': carte imprécise');
+  assert.ok(card.front.endsWith('?')&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
   assert.ok(card.explanation,card.id+': explication absente');
   const q=bank.find(x=>x.id===card.qid);
-  assert.ok(q?.flashcards?.some(x=>x.front===card.front),card.id+': question source perdue');
+  assert.ok(q?.flashcards?.some(x=>x.front===(card.sourceFront||card.front)),card.id+': question source perdue');
  }
  const partDeliveries=c.partDeliveries||[];
  for(const part of partDeliveries){

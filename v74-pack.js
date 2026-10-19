@@ -217,12 +217,12 @@ function renderCourse74(){
   const officialParts=Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[];
   const captureParts=Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[];
   const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
-  const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':'📝 Support du cours non disponible';
+  const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':courseMeta.sourceBasis==='course_captures'?'📸 Cours rapproché des captures — PDF natif à retrouver':'📝 Support du cours non disponible';
   const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
     (url?'<a class="btn outline v74-official-link" href="'+esc74(url)+'" target="_blank" rel="noopener noreferrer">'+(kind==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel ↗':'📘 Ouvrir le support officiel ↗'):'📸 Ouvrir les captures provisoires ↗')+'</a>':'')+
     parts.map(x=>'<a class="btn outline v74-official-part" href="'+esc74(x.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(x.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   const courseSourceHtml='<div class="card v74-resource-block v74-original-support"><div class="row"><b>📚 Support du cours (documents sources)</b></div><div class="small v74-source-status">'+supportStatus+'</div>'+
-    (supportSource==='official'?resourceLinks(officialUrl,officialParts,'official'):supportSource==='capture'?resourceLinks(captureUrl,captureParts,'capture'):'<div class="small">Aucun PDF officiel ni capture de cours n’est encore référencé sur Drive.</div>')+
+    (supportSource==='official'?resourceLinks(officialUrl,officialParts,'official'):supportSource==='capture'?resourceLinks(captureUrl,captureParts,'capture'):courseMeta.sourceBasis==='course_captures'?'<div class="small">Les documents de révision ci-dessous intègrent les captures retrouvées. Le PDF natif officiel reste à rapprocher.</div>':'<div class="small">Aucun PDF officiel ni capture de cours n’est encore référencé sur Drive.</div>')+
     (supportSource==='official'&&(captureUrl||captureParts.length)?'<details class="v74-source-archive"><summary>📸 Anciennes captures provisoires</summary>'+resourceLinks(captureUrl,captureParts,'capture')+'</details>':'')+
     '</div>';
   const children=(window.IFSI_V741?.getRegistry?.()?.courses||[]).filter(x=>x.parentId===courseMeta.id);

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.94",
+  "version": "8.30.95",
   "courses": [
     {
       "id": "biomolecules",
@@ -226,7 +226,37 @@
         "Neuro Meningees"
       ],
       "domain": "B",
-      "ue": "B1"
+      "ue": "B1",
+      "authoredFlashcards": true,
+      "sourceBasis": "course_captures",
+      "nativeSupportAvailable": false,
+      "qcmPdfUrl": "https://drive.google.com/file/d/1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4/view?usp=drivesdk",
+      "audioStatus": "available",
+      "audioCount": 6,
+      "additionalDocuments": [
+        {
+          "label": "Vocabulaire — 14 termes",
+          "url": "https://drive.google.com/file/d/1h9r2jNODPDLeESDuKUnnPN953ujAPspL/view?usp=drivesdk"
+        },
+        {
+          "label": "Flashcards — 41 cartes",
+          "url": "https://drive.google.com/file/d/1cD2V2ZcHLv-b8X0dtb8e90NrMLoOXL1b/view?usp=drivesdk"
+        },
+        {
+          "label": "Pack des 7 infographies",
+          "url": "https://drive.google.com/file/d/1-BeWYHbxSi7hyNXMFR5dpNJwtUQqvvm0/view?usp=drivesdk"
+        },
+        {
+          "label": "Script vocal — consolidation des notions",
+          "url": "https://drive.google.com/file/d/15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN/view?usp=drivesdk"
+        },
+        {
+          "label": "Scripts vocaux regroupés (ZIP)",
+          "url": "https://drive.google.com/file/d/1Np9Lys94ODvojXDqH4Y9Vlbljw-rIO4_/view?usp=drivesdk"
+        }
+      ],
+      "qcmPdfQuestionCount": 44,
+      "authoredFlashcardPresentation": "standalone_v1"
     },
     {
       "id": "calculs_doses_mathematiques",
@@ -581,7 +611,37 @@
         "Bases de pharmacologie"
       ],
       "domain": "B",
-      "ue": "B1"
+      "ue": "B1",
+      "authoredFlashcards": true,
+      "sourceBasis": "course_captures",
+      "nativeSupportAvailable": false,
+      "qcmPdfUrl": "https://drive.google.com/file/d/1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm/view?usp=drivesdk",
+      "audioStatus": "available",
+      "audioCount": 5,
+      "additionalDocuments": [
+        {
+          "label": "Vocabulaire — 30 termes",
+          "url": "https://drive.google.com/file/d/1E33G1Me-v6EE4tx0lIsRqdyRqyS-h5tp/view?usp=drivesdk"
+        },
+        {
+          "label": "Flashcards — 52 cartes",
+          "url": "https://drive.google.com/file/d/1QuGJakVeF2x0QQ37MYKtGqHOJEQKj7VZ/view?usp=drivesdk"
+        },
+        {
+          "label": "Pack des 11 infographies",
+          "url": "https://drive.google.com/file/d/1YyKYOMXPDQeOZlKeLQHeO0FO1E4BPBmK/view?usp=drivesdk"
+        },
+        {
+          "label": "Script vocal — consolidation des notions",
+          "url": "https://drive.google.com/file/d/1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E/view?usp=drivesdk"
+        },
+        {
+          "label": "Scripts vocaux regroupés (ZIP)",
+          "url": "https://drive.google.com/file/d/1rYvyHoHgc5rgo-hXvwPCkcbV7SGF9c-6/view?usp=drivesdk"
+        }
+      ],
+      "qcmPdfQuestionCount": 68,
+      "authoredFlashcardPresentation": "standalone_v1"
     },
     {
       "id": "administration_medicamenteuse",
