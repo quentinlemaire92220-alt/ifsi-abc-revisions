@@ -420,10 +420,13 @@ function atomicCards(q){
   return p?[p]:[]
 }
 function hash(s){let h=2166136261;for(const c of String(s)){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+// Notions recensées dans les nouveaux supports officiels, déjà présentes dans les QCM.
+// Prioriser leurs flashcards plutôt que dupliquer les questions publiées.
+const OFFICIAL_REVIEW_PRIORITY_20261019=new Set(['cardio_002','cardio_026','v820_chirortho_005','v820_chirortho_017','v820_chirortho_028','v820_chirortho_029','v820_chirortho_030','v820_loco_048','v820_trauma_013','v820_brules_004']);
 function selectCards(cards,max=40){
   const seen=new Set(),clean=[];
   for(const c of cards){const k=String(c.front||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();if(!k||seen.has(k)||(vagueFront(c.front)&&!c.authored)||/ci-dessus|ci-dessous|dans cet exemple|dans ce cas|selon le schéma|sur la figure/i.test(c.front))continue;seen.add(k);clean.push(c)}
-  const priority=clean.filter(c=>Object.prototype.hasOwnProperty.call(CURATED_ATOMIC_FRONTS,c.qid));
+  const priority=clean.filter(c=>Object.prototype.hasOwnProperty.call(CURATED_ATOMIC_FRONTS,c.qid)||OFFICIAL_REVIEW_PRIORITY_20261019.has(c.qid));
   const priorityIds=new Set(priority.map(c=>c.id));
   const remaining=clean.filter(c=>!priorityIds.has(c.id));
   const groups=new Map();for(const c of remaining){const k=c.theme||'Général';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c)}
