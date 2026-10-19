@@ -27,4 +27,7 @@ const found=existing.map(id=>{
  return {id,flashcards:deck.filter(c=>c.qid===id).length};
 });
 console.log('AUDIT_SUPPORTS_20261019 '+JSON.stringify(found));
+const required=['cardio_002','cardio_026','v820_chirortho_005','v820_chirortho_017','v820_chirortho_028','v820_chirortho_029','v820_chirortho_030','v820_loco_048','v820_trauma_013','v820_brules_004'];
+for(const id of required){assert.ok(found.find(x=>x.id===id)?.flashcards>0,'Flashcard importante absente malgré la réception du support officiel : '+id)}
+
 console.log('✅ Trois supports rattachés et QCM historiques conservés ; aucune publication pédagogique nouvelle');
