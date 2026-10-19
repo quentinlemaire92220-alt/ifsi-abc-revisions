@@ -41,3 +41,19 @@ La réutilisation de ces ressources dans une nouvelle planche devra respecter l�
 - [ ] Archiver les rapports de revue médicale et visuelle et les crédits.
 - [ ] Produire le pack « master » et « export application » approuvé.
 - [ ] Exécuter TNR et vérifications de navigation ; obtenir GO publication.
+
+## Retour qualité rejeté — comparaison avec l'atlas Cellules (19/10/2026)
+
+**Décision : les sept planches R01 à R07 extraites du cours ne répondent PAS à l'étalon graphique du module « Cellules et tissus ».** Ne pas les proposer comme figures définitives, même après upscale. Elles restent dans le pack privé de revue et doivent être remplacées.
+
+Référence d'aspect inspectée : `Planche_05_Cellule_humaine_HD.png` (1448 × 1086 px), image anatomique détaillée avec relief, forte présence du sujet central, légendes extérieures lisibles et pointages précis. Comparaison : le brouillon R01 (1800 × 2350 px) assemble des sources de 509 × 379 et 480 × 368 px ; R05 assemble notamment une illustration de 400 × 229 px. L'augmentation des dimensions de sortie n'a pas augmenté la résolution anatomique et un SVG enveloppant une image bitmap n'est pas un redessin vectoriel.
+
+**Critère d'acceptation révisé (bloquant) :**
+1. Illustration maîtresse originale ou sous licence explicitement compatible, de qualité anatomique égale à la référence Cellules : sujet majeur détaillé, volumes, coupes et tissus lisibles, style cohérent sur toute la série, pas de collage disparate de diapositives.
+2. Le corps de la planche doit être l'illustration médicale ; les encadrés, la source et les listes de repères restent secondaires. Une image principale nette, plus un zoom véritablement utile si besoin ; éviter deux figures trop petites.
+3. Légendes lisibles sur mobile, flèches dont les extrémités sont vérifiées une par une, texte médical révisé ; pas de texte tiers écrasé dans la figure finale.
+4. Inspections comparatives côte à côte contre au moins deux masters Cellules (cellule humaine et neurone). Vérifier à 100 % et dans le zoom de l'app, ne pas se fier aux seuls pixels des PNG de sortie.
+5. Vérifier licence/crédit et fidélité au support officiel **avant** de marquer `anatomicalReview=approved` ou d'ajouter un asset au catalogue. Les schémas générés automatiquement sans pointage fiable ne passent pas.
+6. Faire d'abord **un seul prototype réellement conforme** sur R01 ou R05, vérifier l'écart avec Cellules puis décliner la direction artistique commune sur les autres ; ne pas produire à nouveau sept planches pauvres d'un coup.
+
+**État au 19/10 : 7/7 brouillons privés rejetés sur critère de qualité graphique. Aucun master HD approuvé et aucune publication autorisée.**
