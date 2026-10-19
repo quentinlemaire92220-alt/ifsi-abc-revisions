@@ -105,7 +105,9 @@ assert.ok(course.includes("link.target='_blank'"),'Ouverture externe du support 
 const cardio=registered.get('systeme_cardiovasculaire');
 const cardioSheet=[...JSON.parse(read('sheets-1.json')),...JSON.parse(read('sheets-2.json')),...JSON.parse(read('sheets-3.json'))].find(x=>x.courseId==='systeme_cardiovasculaire');
 assert.ok(cardioSheet?.url,'La fiche cardiovasculaire doit rester accessible dans les fiches de révision');
-assert.ok(!cardio?.officialSupportUrl&&!cardio?.captureSupportUrl,'Une fiche de révision ne doit jamais être présentée comme support source du cours');
+assert.ok(cardio?.officialSupportUrl?.includes('153nGJAeW-Q_5fvLPK92KjYlcFz_7JDHS'),'Le PDF officiel cardiovasculaire nouvellement reçu doit être référencé');
+assert.notEqual(cardio.officialSupportUrl,cardioSheet.url,'Une fiche de révision ne doit jamais être présentée comme support source du cours');
+assert.ok(!cardio.captureSupportUrl,'Des captures ne doivent pas remplacer le PDF officiel reçu');
 for(const c of registry.courses){
  for(const field of ['captureSupportUrl']){
    if(c[field])assert.match(c[field],drivePattern,'Lien captures provisoires invalide : '+c.label);
