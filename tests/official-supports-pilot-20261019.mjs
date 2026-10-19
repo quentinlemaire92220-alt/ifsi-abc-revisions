@@ -20,7 +20,7 @@ const knownIds = new Set();
 const old = [1, 2, 3, 4, 5].flatMap(index => read('questions-' + index + '.json'));
 old.forEach(item => knownIds.add(item.id));
 const ids = new Set();
-const disallowed = /\\b(?:selon le (?:cours|support|td)|dans le (?:cours|support|td)|voir (?:la diapositive|la page)|ci-dessus|ci-dessous)\\b/i;
+const disallowed = /\b(?:selon le (?:cours|support|td)|dans le (?:cours|support|td)|voir (?:la diapositive|la page)|ci-dessus|ci-dessous)\b/i;
 for (const q of pilot.questions) {
   assert.ok(!ids.has(q.id) && !knownIds.has(q.id), 'Identifiant QCM dupliqué: ' + q.id);
   ids.add(q.id);
