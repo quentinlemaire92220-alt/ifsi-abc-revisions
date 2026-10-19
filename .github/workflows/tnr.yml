@@ -119,6 +119,9 @@ jobs:
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 
+      - name: Contrôle Paramètres P1
+        run: node tests/settings-compact-p1.mjs
+
       - name: Tester les formulations QCM indépendantes du TD
         run: node tests/qcm-autonomy-contract-test.mjs
 
