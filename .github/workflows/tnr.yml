@@ -68,6 +68,9 @@ jobs:
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
+      - name: TNR sécurité P1 des planches anatomiques
+        run: node tests/anatomy-p1-safety.mjs
+
       - name: TNR mise en page adaptative des fiches
         run: python tests/revision-layout-test.py
 
