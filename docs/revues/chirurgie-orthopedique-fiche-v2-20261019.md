@@ -59,3 +59,18 @@ La PR #136 a déjà restauré 10 cartes depuis les QCM existants et confirmé 13
 - Les compléments non corroborés par les diapositives sont isolés dans une section dédiée.
 
 **Portée :** V3 remplace V2 uniquement comme maquette proposée. La fiche historique reste accessible dans l'application. Les validations pédagogiques et graphiques restent obligatoires avant toute publication.
+
+
+## RECTIFICATIF V4 — infographies 100 % originales, modèle Système nerveux — 19/10/2026
+
+**La V3 ne respectait pas la consigne impérative : aucune photo, capture ou figure provenant du support officiel dans les fiches.** La V3 est donc **REFUSÉE / OBSOLÈTE** et ne doit jamais être promue comme fiche finale. La V2 souffrait du même défaut.
+
+- **Nouvelle maquette V4** : [Fiche de révision chirurgie orthopédique V4 — infographies originales — À VALIDER](https://drive.google.com/file/d/1G6FfiFJf9xvTgzq6FP5blJNQ8lbBInn1/view).
+- **16 pages A4** et **13 visuels pédagogiques originaux**, illustrés et intégrés dans les chapitres ; bandeaux violets, titres turquoise, tableaux, mémos, lexique final, référence d'apparence = fiche Système nerveux.
+- Les visuels ont été **créés à partir de zéro** par illustration puis composition graphique. Aucun cliché clinique, schéma, radio ou capture du PPTX de Dr Molina n'est incorporé. Les notions médicales proviennent toujours du cours écrit ; le modèle de dessin reste pédagogique et non à l'échelle.
+- Les chapitres couvrent PTH, PTG, organisation préopératoire, surveillance, racines/irradiations, laminectomie et alerte neurologique. Les informations issues exclusivement de la transcription demeurent séparées en annexe, non présentées comme officialisées.
+- **Contrôles locaux réalisés** : 16 pages lisibles, 13 pages illustrées et 3 pages de tableaux/lexique, texte PDF sélectionnable, aucun dépassement de page ni anciennes mentions « Photographie du cours » ou « Schéma du cours officiel » dans les légendes.
+- Dépôt uniquement dans le dossier privé **99 - Maquettes à valider** ; la V3 précédente, la V2 et surtout la fiche provisoire étudiante restent intactes.
+- **Publication BLOQUÉE** en attente de validation visuelle de cette V4 ; aucune modification de `sheets-2.json`, QCM, flashcards ou métriques. Pas de fusion ni publication automatique.
+
+**Règle pour toute génération future :** les diapositives sont une source scientifique, jamais une source d'images à reproduire dans la fiche. Créer des infographies illustrées originales, exactes et vérifiées, avant de proposer le document pour validation.
