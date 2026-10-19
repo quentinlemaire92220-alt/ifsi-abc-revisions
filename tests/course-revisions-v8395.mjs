@@ -31,7 +31,7 @@ for(const [id,path,count,cards,vocab,captures] of [
 const base=process.env.IFSI_BASE_SHA||'HEAD^';
 const before=JSON.parse(execFileSync('git',['show',base+':vocals.json']).toString('utf8'));
 const now=read('vocals.json');
-assert.equal(before.length,80,'Référence historique des 80 vocaux inattendue');
-assert.deepEqual(now.slice(0,before.length),before,'Les 80 vocaux historiques doivent rester intacts.');
-assert.equal(now.length,105,'Les 25 nouveaux vocaux doivent être ajoutés sans écraser les 80 anciens');
+assert.ok([80,105].includes(before.length),'La référence doit correspondre soit à la base historique de 80 vocaux, soit au catalogue déjà augmenté à 105');
+assert.deepEqual(now.slice(0,before.length),before,'Tous les vocaux présents dans la référence Git doivent rester intacts.');
+assert.equal(now.length,105,'Le catalogue doit conserver les 80 vocaux historiques et les 25 vocaux ajoutés');
 console.log('✅ V8.30.95 : 112 QCM et 49 cartes de cours identiques aux matrices revues, 44 cartes de vocabulaire, 80 vocaux historiques inchangés et 25 nouveaux.');
