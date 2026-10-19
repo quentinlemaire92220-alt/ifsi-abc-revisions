@@ -401,6 +401,49 @@
         "approvedAt": "2026-10-18T20:54:13.088Z",
         "bundleSha256": "2b2b26e9f456b1da6950876357f5bf1cd90a9f4918974ab1036a01727774ac6f"
       }
+    },
+    {
+      "courseId": "pssm",
+      "part": "01",
+      "validated": true,
+      "deliveryMode": "audio_only",
+      "status": "partial",
+      "driveFolderId": "1tfM7Ve2J5a0_tP_ROOC0-_vETFESJQVE",
+      "folders": {
+        "05": "1j0WevK3SiJ38EuxrHyNfjg2OL3cYbImD"
+      },
+      "vocals": [
+        "pssm_2026_01",
+        "pssm_2026_02",
+        "pssm_2026_03"
+      ],
+      "vocalScripts": [],
+      "blockers": [
+        {
+          "resource": "official_support",
+          "reason": "private_pending"
+        },
+        {
+          "resource": "revision_sheets",
+          "reason": "not_published"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_published"
+        }
+      ],
+      "artifactSha256s": {
+        "1j2SYtuQbxyy8mJPi11_hsxG3ahnKm5ZT": "77661f6c2f91191f0a457946e0fbd1f6b81969ca231389e2c61e1ef4e81338e8",
+        "1qUHOTfeQ5A0wGlH1Rw8k1tK2gZ48H4sO": "100512b90db67d6e32292306f14530c7d0d488438b1b7782eb6de26d4d6675b8",
+        "1vKyJFOCUUGMKXjsu7IdkQky0dLApCU1m": "80f545c9b2d399adb3da1b12291ea1bc2d05bed39d3557a218b5ffebb5d1605b"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-19T08:15:00+02:00",
+        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
     }
   ],
   "supplementalResourceApprovals": [
