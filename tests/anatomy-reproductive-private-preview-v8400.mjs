@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const metadata=JSON.parse(read('build-meta.json'));
+const registry=JSON.parse(read('course-registry-v741.json'));
+const snapshot=JSON.parse(read('resource-audit-v821.json'));
+const js=read('v8399-reproductive-private-review.js');
+const index=read('index.html'),worker=read('sw.js'),nav=read('v82-nav-anatomy.js');
+assert.equal(metadata.version,'8.30.100');
+assert.equal(metadata.build,'8400');
+assert.equal(registry.version,metadata.version);
+assert.equal(snapshot.version,metadata.version);
+assert.equal(snapshot.expectedTotals.hdAtlasBoards,106);
+assert.equal(Object.values(snapshot.atlasBoardContracts).reduce((a,b)=>a+b,0),106);
+assert.equal(snapshot.atlasBoardContracts.systeme_reproducteur,undefined);
+assert.ok(nav.includes('0 planche validée')&&nav.includes('6 maquettes en revue'));
+assert.ok(index.includes('./v8399-reproductive-private-review.js?v=8400'));
+assert.ok(index.includes('./v8400-changelog.js?v=8400'));
+assert.ok(worker.includes("'./v8399-reproductive-private-review.js'")&&worker.includes('"v8399-reproductive-private-review.js"'));
+assert.ok(worker.includes("'./v8400-changelog.js'")&&worker.includes('"v8400-changelog.js"'));
+assert.ok(js.includes("indexedDB.open(DB_NAME,1)"),'Le fichier n’est pas stocké dans IndexedDB');
+assert.ok(js.includes("file.slice(0,5)")&&js.includes("'%PDF-'"),'Contrôle de signature PDF absent');
+assert.ok(js.includes('URL.createObjectURL(activeBlob)'),'Le PDF local n’est pas consultable');
+assert.ok(js.includes('URL.revokeObjectURL(activeUrl)'),'Les objets URL doivent être nettoyés');
+assert.ok(js.includes("store('delete')"),'Suppression des données privées absente');
+assert.ok(js.includes("frame.src=activeUrl+'#page='"),'Pagination des six pages absente');
+assert.ok(js.includes('application/pdf'),'Import PDF non restreint');
+for(const k of ['R02','R03','R04','R05','R06','R07'])assert.ok(js.includes("'"+k+"'"),'Planche manquante : '+k);
+for(const disallowed of ['fetch(', 'XMLHttpRequest','sendBeacon','canva.com/design/','canva.com/d/','docs.google.com','drive.google.com','DAHYd62tg4w']){
+ assert.ok(!js.includes(disallowed),'Télétransmission ou lien privé interdit dans le lecteur : '+disallowed);
+}
+assert.ok(js.includes('Ne pas utiliser ces maquettes comme corrigé de QCM.'));
+console.log('✅ V8.30.100: lecteur PDF local pour R02–R07, aucun export public, 106 planches conservées et PWA alignée.');
