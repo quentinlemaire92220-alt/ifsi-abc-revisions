@@ -117,7 +117,24 @@
         "scope": "course_package",
         "approvedAt": "2026-10-18T20:54:13.083Z",
         "bundleSha256": "82a3bc32dab1fd97d45907952b4e780778dd18bbb4f73e6d873945fb812341fe"
-      }
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "plaies_2026_01",
+            "plaies_2026_02",
+            "plaies_2026_03",
+            "plaies_2026_04",
+            "plaies_2026_05"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
+        }
+      ]
     },
     {
       "courseId": "stomatotherapie",
@@ -237,7 +254,22 @@
         "scope": "course_package",
         "approvedAt": "2026-10-18T20:54:13.088Z",
         "bundleSha256": "8109cf106184582310a5afd2e2a94e07fa9172e4051ef4e37c4556d3df35ad1e"
-      }
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "stomato_2026_01",
+            "stomato_2026_02",
+            "stomato_2026_03"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
+        }
+      ]
     },
     {
       "courseId": "droits_patients",
@@ -400,7 +432,25 @@
         "scope": "course_package",
         "approvedAt": "2026-10-18T20:54:13.088Z",
         "bundleSha256": "2b2b26e9f456b1da6950876357f5bf1cd90a9f4918974ab1036a01727774ac6f"
-      }
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "complete",
+          "vocalIds": [
+            "droits_patients_2026_01",
+            "droits_patients_2026_02",
+            "droits_patients_2026_03",
+            "droits_patients_2026_04",
+            "droits_patients_2026_05",
+            "droits_patients_2026_06"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "qcmQuestionIds": []
+        }
+      ]
     },
     {
       "courseId": "pssm",
