@@ -44,3 +44,18 @@ La PR #136 a déjà restauré 10 cartes depuis les QCM existants et confirmé 13
 5. TNR complets, validation de package et **GO publication distinct** avant fusion/affichage dans l'application.
 
 **Ne pas confondre** l’arrivée du support officiel (déjà enregistrée dans le registre) avec la validation de la fiche construite à l’origine sur transcription : le statut de la fiche actuelle reste provisoire.
+
+## Reprise graphique V3 : modèle Système nerveux (19/10/2026)
+
+**Référence visuelle explicite :** `UE_S1_B1_Systeme_Nerveux_Fiche_Revision_Systeme_Nerveux.pdf` (Drive `1SxEsqBTny7XO83AIrX5VxTJiRbo5NYiY`, 18 pages). Le modèle graphique pertinent n'est pas la fiche Système respiratoire.
+
+**Nouvelle maquette à relire :**
+- Nom : `UE_S1_B1_Chirurgie_Orthopedique_Fiche_Revision_V3_Modele_Systeme_Nerveux_A_VALIDER.pdf`.
+- Copie Drive déposée séparément (aucun remplacement) : https://drive.google.com/file/d/1SKliZk99e8PpR31uPZPSude8DNzuwXIt/view
+- Dossier : `02 - Fiches de révision / 99 - Maquettes à valider` (ID `1PNrruhnJYW3l8nPEOctmwGNdR-0GaNeW`).
+- **16 pages A4**, texte sélectionnable, sans mot de passe ; PDF local vérifié en rendu.
+- Style suivi : bandeau violet `UE S1 B1` sur chaque page, titre violet souligné turquoise, images anatomiques dans les sections, tableaux lavande/gris, encadrés de révision, lexique et mémos finaux.
+- Anatomie provenant des planches Dr Molina (diapositives 4, 5, 17, 30, 32–34, 37) ; pas de schéma anatomique inventé. Les frises de suivi et d'alerte représentent les indications du diaporama.
+- Les compléments non corroborés par les diapositives sont isolés dans une section dédiée.
+
+**Portée :** V3 remplace V2 uniquement comme maquette proposée. La fiche historique reste accessible dans l'application. Les validations pédagogiques et graphiques restent obligatoires avant toute publication.
