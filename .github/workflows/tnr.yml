@@ -77,6 +77,9 @@ jobs:
       - name: TNR P1 anatomie après V8.30.97 — masquage DOM et 106 planches
         run: node tests/anatomy-p1-guards-v8397.mjs
 
+      - name: Contrat préparation des six exports reproducteurs Canva
+        run: node tests/anatomy-reproductive-import-gate.mjs
+
       - name: TNR mise en page adaptative des fiches
         run: python tests/revision-layout-test.py
 
