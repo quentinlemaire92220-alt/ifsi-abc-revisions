@@ -12,7 +12,7 @@ const loco=read('v829-locomotor-atlas.js');
 const nav=read('v82-nav-anatomy.js');
 const doc=read('docs/anatomy-p1-guards-post8397.md');
 
-assert.equal(meta.version,'8.30.97','Branche P1 non fondée sur V8.30.97');
+assert.equal(meta.version,'8.30.98','Release P1 anatomie non alignée sur V8.30.98');
 assert.equal(snapshot.expectedTotals.hdAtlasBoards,106);
 assert.equal(Object.values(snapshot.atlasBoardContracts).reduce((a,b)=>a+b,0),106);
 const noTrace=[['systeme_respiratoire',8],['systeme_urinaire',8],['systeme_endocrinien',8],['systeme_immunitaire',8],['appareil_locomoteur',20]];
