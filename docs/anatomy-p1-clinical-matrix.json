@@ -53,7 +53,10 @@
         15,
         18,
         21
-      ]
+      ],
+      "styleDirectionApproved": false,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R02",
@@ -75,7 +78,7 @@
         "Attribuer la production de testostérone aux cellules de Sertoli",
         "Confondre cellules de Leydig avec la lumière des tubules"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -87,7 +90,10 @@
         7,
         8,
         9
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R03",
@@ -118,7 +124,7 @@
         "Raccorder directement le canal déférent à la vessie",
         "Confondre conduit éjaculateur et uretère"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -136,7 +142,10 @@
         17,
         18,
         19
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R04",
@@ -163,7 +172,7 @@
         "Confondre méat urinaire et orifice vaginal",
         "Dessiner une continuité fermée trompe-ovaire erronée"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -178,7 +187,10 @@
         30,
         31,
         33
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R05",
@@ -202,7 +214,7 @@
         "Confondre ovocyte et follicule",
         "Attribuer les quatre parties à l'ovaire"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -214,7 +226,10 @@
         27,
         28,
         29
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R06",
@@ -240,7 +255,7 @@
         "Inverser l'ordre des couches",
         "Confondre la paroi de l'utérus et celle du vagin"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -254,7 +269,10 @@
         32,
         33,
         34
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     },
     {
       "key": "R07",
@@ -280,7 +298,7 @@
         "Confondre l'orifice vaginal et le méat urinaire",
         "Représenter des appareillages sans source"
       ],
-      "status": "a_produire",
+      "status": "maquette_canva_en_revue",
       "assetId": null,
       "anatomicalReview": "pending",
       "visualReview": "pending",
@@ -293,7 +311,10 @@
         36,
         37,
         38
-      ]
+      ],
+      "styleDirectionApproved": true,
+      "licenseReview": "pending",
+      "publicationStatus": "BLOCKED"
     }
   ],
   "existingIssues": [
@@ -324,5 +345,17 @@
       "status": "needs_fix_before_technical_use",
       "warning": "Vue générale exploitable comme aide-mémoire, mais nephrostomie, urétérostomie et cystostomie ne sont pas représentées comme des trajets chirurgicalement vérifiés. Ne pas l'utiliser pour enseigner l'appareillage."
     }
+  },
+  "reviewWorkflow": {
+    "tool": "Canva",
+    "scope": "R02-R07",
+    "expectedEditablePages": 6,
+    "confirmedEditablePages": 6,
+    "reviewLinkStorage": "local-browser-only",
+    "styleDirection": "approved_by_user",
+    "clinicalValidation": "pending",
+    "licenseValidation": "pending",
+    "publicMediaPublished": false,
+    "note": "Six maquettes réunies dans Canva ; aucun lien de revue, export ni visuel non contrôlé publié dans GitHub."
   }
 }
