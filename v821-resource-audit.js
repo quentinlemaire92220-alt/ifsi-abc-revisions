@@ -107,7 +107,7 @@ function flashcardAudit(){
 function renderFlashcards(fc){const el=$('v821Flashcards');if(!el)return;el.innerHTML='<div class="small">'+fc.total+' cartes analysées · '+fc.bad.length+' à contrôler</div>'+(fc.bad.length?fc.bad.slice(0,30).map(x=>'<div class="v821-row"><div><b>'+E(x.card.front||x.card.id)+'</b><small>'+E(x.card.course||x.card.courseId||'Sans cours')+'</small></div><span>'+E(x.errors.join(', '))+'</span></div>').join(''):'<div class="small">✅ Aucune anomalie structurelle détectée.</div>')+(fc.bad.length>30?'<div class="small">+'+(fc.bad.length-30)+' autres anomalies</div>':'');}
 function render(){
  const box=$('v821AuditCard');if(!box)return;
- if(!last){box.querySelector('#v821Status').innerHTML='<span class="v821-dot wait"></span>Audit prêt';return}
+ if(!last){box.querySelector('#v821Status').innerHTML='<span class="v821-dot wait"></span>Audit non exécuté · cliquer sur « Auditer » pour actualiser';return}
  const {c,e}=last,fc=flashcardAudit(),stamp=snapshot?.auditedAt||'—',clean=e.ok&&!e.warnings.length&&!fc.bad.length,state=!e.ok||fc.bad.length?'❌ Anomalies détectées':e.warnings.length?'⚠️ Points à vérifier':'✅ Catalogue cohérent';
  box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${clean?'ok':e.ok&&!fc.bad.length?'wait':'bad'}"></span><b>${state}</b>`;
  box.querySelector('#v821Meta').textContent=`Référence Drive validée : ${stamp} • contrôle local : ${new Date().toLocaleString('fr-FR')}`;
@@ -124,14 +124,15 @@ function css(){if($('v821css'))return;const s=document.createElement('style');s.
 .v821-issues{font-size:11px;line-height:1.6;padding:9px 10px;border-radius:12px;background:color-mix(in srgb,var(--card) 90%,#6bd1d7 10%)}.v821-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-top:1px solid var(--line);font-size:11px}.v821-row:first-child{border-top:0}.v821-row b,.v821-row small{display:block}.v821-row small{color:var(--muted);font-size:9px}.v821-row>span{text-align:right;color:var(--muted)}
 @media(max-width:680px){.v821-counts{grid-template-columns:repeat(2,minmax(0,1fr))}.v821-row{grid-template-columns:1fr}.v821-row>span{text-align:left}}
 `;document.head.appendChild(s)}
-function inject(){const grid=document.querySelector('#settings87 .v87-grid');if(!grid||$('v821AuditCard'))return false;const d=document.createElement('div');d.id='v821AuditCard';d.className='v87-card';d.innerHTML=`
+function inject(){const section=$('settings87');if(!section||$('v821AuditCard'))return false;const d=document.createElement('details');d.id='v821AuditCard';d.className='v87-card v87-audit-panel';d.innerHTML=`
+<summary>🔎 Contrôle qualité pédagogique et ressources</summary>
 <div class="v821-top"><div><h3 style="margin:0 0 4px">🔎 Contrôle des ressources</h3><p style="margin:0;color:var(--muted);font-size:12px">Vérification des ressources pédagogiques et des anomalies éventuelles.</p></div><button id="v821Run" class="btn outline">Auditer</button></div>
 <div id="v821Status" class="v821-status" style="margin-top:10px"></div><div id="v821Meta" class="small" style="margin-top:4px"></div>
 <div id="v821Counts" class="v821-counts"></div><div id="v821Issues" class="v821-issues">L’audit vérifie les courseId, les doublons Drive, les contrats des 8 atlas et la séparation Infographies / Anatomie.</div>
 <details style="margin-top:10px"><summary><b>Équilibre des réponses QCM</b></summary><div id="v821Balance" style="margin-top:7px"></div></details><details style="margin-top:10px"><summary><b>Qualité des flashcards</b></summary><div id="v821Flashcards" style="margin-top:7px"></div></details><details style="margin-top:10px"><summary><b>Détail par cours</b></summary><div id="v821Courses" style="margin-top:7px"></div></details><details style="margin-top:10px"><summary><b>Détails techniques</b></summary><div id="v821Technical" class="small" style="margin-top:7px"></div></details>`;
- grid.appendChild(d);$('v821Run').onclick=async()=>{const b=$('v821Run');b.disabled=true;b.textContent='Audit…';await runAudit();b.textContent='Relancer';b.disabled=false};render();setTimeout(runAudit,150);return true}
+ section.appendChild(d);$('v821Run').onclick=async()=>{const b=$('v821Run');b.disabled=true;b.textContent='Audit…';try{await runAudit();b.textContent='Relancer'}catch(e){$('v821Status').textContent='Audit indisponible : '+(e?.message||'erreur');b.textContent='Réessayer'}finally{b.disabled=false}};render();return true}
 function init(){css();return inject()}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-window.addEventListener('ifsi:v741-ready',()=>setTimeout(runAudit,250));
+// Le contrôle lourd ne se lance plus au démarrage : bouton « Auditer » uniquement.
 window.IFSI_V821={version:V,runAudit,getLast:()=>last,getSnapshot:()=>snapshot};
 })();

@@ -21,36 +21,73 @@ body.v87-ready nav:not(#v87Nav){display:none!important}
 .v87-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.v87-actions .btn{width:100%}
 .v87-about{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:10px}
 .v87-ver{font-size:24px;font-weight:900;color:#6941c6}.v87-versiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v87-versionbox{border:1px solid var(--line);border-radius:12px;padding:9px;background:var(--card)}.v87-versionbox b{display:block;font-size:15px;margin-top:2px}.v87-log{margin-top:10px}.v87-log details[hidden]{display:none!important}.v87-log details{border-top:1px solid var(--line);padding:9px 0}.v87-log details:first-child{border-top:0}.v87-log summary{cursor:pointer;font-weight:800}.v87-log .small{line-height:1.55;margin-top:6px}
+
+#settings87{padding-bottom:calc(170px + env(safe-area-inset-bottom,0px))}
+#settings87 .v87-head{background:var(--card);border-color:var(--line);color:var(--ink);padding:13px 15px;border-radius:16px}
+#settings87 .v87-head h2,#settings87 .v87-head .small{color:var(--ink)}
+#settings87 .v87-head .small{opacity:.75}
+#settings87 .v87-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#settings87 .v87-card{min-width:0;padding:13px;border-radius:16px}
+#settings87 .v87-card h3{font-size:16px;margin-bottom:8px}
+#settings87 .v87-card>p{margin-bottom:8px}
+#settings87 .v87-preferences{grid-column:1/-1}
+#settings87 .v87-preferences .v87-setting{padding:8px 0}
+#settings87 .v87-preferences .v87-setting:first-of-type{border:0}
+#settings87 .v87-footnote{font-size:11px;color:var(--muted);margin:7px 0 0;line-height:1.45}
+#settings87 .v87-versionline{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:7px 0}
+#settings87 .v87-versionline b{color:var(--ink)}
+#settings87 .v87-actions .btn{font-size:12px;padding:9px 8px;min-height:40px}
+#settings87 .v87-inline-actions{display:flex;gap:7px;flex-wrap:wrap}
+#settings87 .v87-inline-actions .btn{flex:1 1 150px}
+#settings87 .v87-expand{margin-top:9px}
+#settings87 .v87-expand summary,#v821AuditCard>summary{cursor:pointer;font-weight:800;padding:2px 0;line-height:1.5;color:var(--ink)}
+#settings87 .v87-expand[open]>summary,#v821AuditCard[open]>summary{margin-bottom:11px}
+#settings87 .v87-expand .v87-actions{margin-top:8px}
+#settings87 .v87-card .v87-mini-status{font-size:11px;line-height:1.45;margin:7px 0;color:var(--muted)}
+#v821AuditCard{margin-top:9px;scroll-margin-top:16px}
+#v821AuditCard .v821-counts{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:680px){
+ #settings87 .v87-grid{grid-template-columns:1fr}
+ #settings87 .v87-card{padding:12px}
+ #settings87 .v87-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #settings87 .v87-actions .btn{overflow-wrap:anywhere}
+ #v821AuditCard .v821-counts{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media(max-width:680px){.v87-grid{grid-template-columns:1fr}.v87-card{padding:13px}#v87Nav{width:calc(100% - 16px);bottom:7px}.v87-actions{grid-template-columns:1fr}#v87Nav button{font-size:10px}}
 `;document.head.appendChild(s)}
 function oldNav(){return document.querySelector('.app>nav:not(#v87Nav)')}
 function addSection(){if($('settings87'))return;const app=document.querySelector('.app');if(!app)return;const sec=document.createElement('section');sec.id='settings87';sec.className='hidden';sec.innerHTML=`
-<div class="v87-head"><div class="small">APPLICATION</div><h2>⚙️ Paramètres</h2><div class="small">Affichage, QCM, données, confidentialité et journal des versions.</div></div>
+<div class="v87-head"><h2>⚙️ Paramètres</h2><div class="small">Préférences, données et administration.</div></div>
 <div class="v87-grid">
- <div class="v87-card"><h3>🎨 Apparence & QCM</h3><p>Réglages enregistrés uniquement sur cet appareil.</p>
+ <div class="v87-card v87-preferences"><h3>🎨 Préférences</h3>
   <div class="v87-setting"><span><b>Mode sombre</b><small>Réduire la luminosité de l’interface</small></span><button id="v87Dark" class="v87-switch" aria-label="Mode sombre"></button></div>
   <div class="v87-setting"><span><b>Chronomètre QCM</b><small>Afficher le temps pendant les séries</small></span><button id="v87Timer" class="v87-switch" aria-label="Chronomètre QCM"></button></div>
- </div>
- <div class="v87-card"><h3>💾 Données & export</h3><p>Exporter tes résultats ou sauvegarder les données locales de l’application.</p>
-  <div class="v87-actions"><button id="v87ExportResults" class="btn outline">Exporter mes résultats</button><button id="v87ExportBackup" class="btn outline">Sauvegarde complète</button></div>
- </div>
- <div class="v87-card"><h3>🔒 Confidentialité</h3><p>Les statistiques d’usage sont anonymes et ne contiennent ni nom, ni email, ni score individuel.</p>
   <div class="v87-setting"><span><b>Statistiques anonymes</b><small id="v87AnalyticsText"></small></span><button id="v87Analytics" class="v87-switch" aria-label="Statistiques anonymes"></button></div>
+  <p class="v87-footnote">Réglages locaux. Les statistiques anonymes ne contiennent ni nom, ni email, ni score individuel.</p>
  </div>
- <div class="v87-card"><h3>📣 Partage des nouveautés</h3><p>Prépare l’annonce de la dernière ressource ajoutée. Tu choisis ensuite le groupe dans WhatsApp.</p>
-  <button id="v87Whatsapp" class="btn primary full">💬 Préparer l’annonce WhatsApp</button>
+ <div class="v87-card"><h3>📱 Application</h3>
+  <div class="v87-versionline"><span>Installée : <b id="v87Installed">V${V}</b></span><span>Serveur : <b id="v87Server">…</b></span><span>Build : <b id="v87Build">…</b></span></div>
+  <button id="v87Update" class="btn primary full" type="button">↻ Vérifier les mises à jour</button>
+  <div id="v87UpdateStatus" class="v87-mini-status" role="status">Vérification de version à l’ouverture.</div>
+  <details class="v87-expand"><summary>Maintenance et autres actions</summary>
+    <div class="v87-actions"><button id="v87ForceUpdate" class="btn outline" type="button">⚡ Forcer la mise à jour</button><button id="v87Reload" class="btn outline" type="button">⟳ Recharger l’application</button><button id="v87Improve" class="btn outline" type="button">💡 Proposer une amélioration</button></div>
+  </details>
  </div>
- <div class="v87-card"><h3>🗂️ Suivi des cours</h3><p>Outil de contrôle des ressources et du planning, principalement destiné à la gestion de l’application. Cette section n’affiche aucune source privée.</p>
-   <button id="v87Followup" class="btn outline full" type="button">Ouvrir le suivi des cours →</button>
-  </div>
-  <div class="v87-card"><h3>📱 Application</h3><p>Version installée, version publiée et cache PWA.</p>
-  <div class="v87-versiongrid"><div class="v87-versionbox"><span class="small">Installée</span><b id="v87Installed">V${V}</b></div><div class="v87-versionbox"><span class="small">Serveur</span><b id="v87Server">…</b></div><div class="v87-versionbox"><span class="small">Build</span><b id="v87Build">…</b></div></div>
-  <div class="v87-actions" style="margin-top:10px"><button id="v87Update" class="btn primary">↻ Vérifier</button><button id="v87ForceUpdate" class="btn outline">⚡ Forcer la mise à jour</button></div>
-  <div id="v87UpdateStatus" class="small" style="margin-top:8px">Vérification automatique à l’ouverture.</div>
-  <div class="v87-actions" style="margin-top:10px"><button id="v87Improve" class="btn outline">💡 Proposer une amélioration</button><button id="v87Reload" class="btn outline">⟳ Recharger l’application</button></div>
+ <div class="v87-card"><h3>🗂️ Gestion pédagogique</h3>
+  <div class="v87-inline-actions"><button id="v87Followup" class="btn outline" type="button">Suivi des cours →</button><button id="v87AuditOpen" class="btn outline" type="button">Contrôle qualité →</button></div>
+  <p class="v87-footnote">Le diagnostic complet se lance uniquement à ta demande, sans scan Drive en direct.</p>
+ </div>
+ <div class="v87-card"><h3>📣 Nouveautés</h3>
+  <button id="v87Whatsapp" class="btn outline full" type="button">💬 Préparer l’annonce WhatsApp</button>
  </div>
 </div>
-<div class="v87-card" style="margin-top:10px"><h3>🧾 Journal des évolutions</h3><p>Historique UX/UI, technique et correctifs de l’application.</p><div id="v87Log" class="v87-log"></div></div>`;
+<details id="v87DataPanel" class="v87-card v87-expand"><summary>💾 Données et sauvegardes</summary>
+ <p>Exporter tes résultats ou sauvegarder les données locales de l’application.</p>
+ <div class="v87-actions"><button id="v87ExportResults" class="btn outline" type="button">Exporter mes résultats</button><button id="v87ExportBackup" class="btn outline" type="button">Sauvegarde complète</button></div>
+</details>
+<details id="v87LogDisclosure" class="v87-card v87-expand"><summary>🧾 Journal des évolutions</summary>
+ <p>Historique UX/UI, technique et correctifs de l’application.</p><div id="v87Log" class="v87-log"></div>
+</details>`;
 app.insertBefore(sec,oldNav()||null)}
 function addNav(){if($('v87Nav'))return;const app=document.querySelector('.app');if(!app)return;const n=document.createElement('nav');n.id='v87Nav';n.innerHTML=`
 <button id="v87Home"><span>⌂</span>Accueil</button>
@@ -103,7 +140,7 @@ function shareLatestResourceWhatsapp(){
  const message=latestResourceAnnouncement();if(!message)return alert('Aucune ressource récente à partager.');
  const a=document.createElement('a');a.href='https://wa.me/?text='+encodeURIComponent(message);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
 }
-function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';versionLog();refreshVersionState()}
+function render(){switchState('v87Dark',localStorage.getItem(K.dark)==='1');switchState('v87Timer',localStorage.getItem(K.timer)==='1');const on=window.IFSI_V77?.enabled?.()??localStorage.getItem(K.analytics)!=='1';switchState('v87Analytics',on);if($('v87AnalyticsText'))$('v87AnalyticsText').textContent=on?'Activées sur cet appareil':'Désactivées sur cet appareil';if(!$('v87Server')?.dataset.checked){$('v87Server').dataset.checked='1';refreshVersionState()}}
 function bind(){
  $('v87Dark').onclick=()=>{const on=localStorage.getItem(K.dark)!=='1';localStorage.setItem(K.dark,on?'1':'0');document.body.classList.toggle('v72-dark',on);render()};
  $('v87Timer').onclick=()=>{const on=localStorage.getItem(K.timer)!=='1';localStorage.setItem(K.timer,on?'1':'0');render()};
@@ -112,7 +149,9 @@ function bind(){
  $('v87ExportBackup').onclick=backup;
  $('v87Whatsapp').onclick=shareLatestResourceWhatsapp;
  $('v87Followup').onclick=()=>window.IFSI_COURSE_FOLLOWUP?.show?.();
- $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await refreshVersionState();await updateWorker();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible`;if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Nouvelle version détectée. Utilise « Forcer la mise à jour » si le rechargement ne suffit pas.'}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier'},1800)};
+ $('v87AuditOpen').onclick=()=>{const panel=$('v821AuditCard');if(!panel)return alert('Le contrôle qualité est indisponible.');panel.open=true;panel.scrollIntoView({block:'start',behavior:'smooth'})};
+ $('v87LogDisclosure').addEventListener('toggle',e=>{if(e.target.open)versionLog()});
+ $('v87Update').onclick=async()=>{const b=$('v87Update');b.textContent='Vérification…';try{const remote=await refreshVersionState();await updateWorker();const installed=window.IFSI_APP_VERSION||V;if(remote?.version&&remote.version!==installed){b.textContent=`V${remote.version} disponible`;if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Nouvelle version détectée. Utilise « Forcer la mise à jour » si le rechargement ne suffit pas.'}else b.textContent='À jour ✓'}catch{b.textContent='Réessayer'}setTimeout(()=>{if(b.textContent==='À jour ✓')b.textContent='↻ Vérifier les mises à jour'},1800)};
  $('v87ForceUpdate').onclick=forceUpdate;
  $('v87Reload').onclick=()=>location.reload();
  $('v87Improve').onclick=()=>{const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>x.id!=='v87Improve'&&x.id!=='v86Improve'&&/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
