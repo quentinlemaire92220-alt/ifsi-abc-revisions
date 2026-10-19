@@ -64,6 +64,26 @@ assert.ok(!homeResources.includes("if(!dash)return false"),'Ma révision ne doit
 for(const token of ['VERSION_DATES','v8316Change:{type:\'resource\'','v8317Change:{type:\'app\'','v8320Change:{type:\'app\'','v8321Change:{type:\'resource\'','function pedagogicalCopy(copy)','v8312-news-date','decorateSettingsDates','dateForTitle','06/10/2026'])assert.ok(homeResources.includes(token),`Dates/nature des nouveautés incomplètes: ${token}`);
 const releaseLog=read(releaseChangelog);assert.match(releaseLog,/dataset\.date='20\d{2}-\d{2}-\d{2}'/,'Le changelog courant doit embarquer sa date ISO');
 
+// V8.30.96 : garde-fou sur l'annonce effectivement visible, les MP3 et la PWA.
+if(meta.build==='8396'){
+ const latest=read(releaseChangelog),startup=read('v8303-home-startup.js'),home=read('v8312-home-revision.js');
+ assert.ok(latest.includes("v8396Change")&&latest.includes("25 nouveaux vocaux de révision"),'Annonce des 25 vocaux absente');
+ for(const name of ['système endocrinien','système digestif','système immunitaire','anatomie locomotrice','homéostasie','niveaux d’organisation'])assert.ok(latest.includes(name),'Cours manquant dans le changelog : '+name);
+ assert.ok(home.includes("v8396Change:{type:'resource'"),'Annonce non classée comme ressource');
+ assert.ok(startup.includes("'IFSI_V8395_CHANGELOG','IFSI_V8396_CHANGELOG'"),'Nouveau changelog non rejoué au démarrage');
+ assert.equal(indexModules.filter(n=>n==='v8396-changelog.js').length,1,'Changelog chargé en double');
+ assert.ok(baseAssets.includes('v8396-changelog.js'),'Changelog absent du pré-cache');
+ assert.ok(appVersion.includes('25 nouveaux vocaux de révision disponibles pour six cours'),'Version d’accueil non mise à jour');
+ const vocals=JSON.parse(read('vocals.json'));
+ assert.equal(vocals.length,105,'105 MP3 attendus (80 historiques + 25 nouveaux)');
+ assert.equal(new Set(vocals.map(v=>v.driveId)).size,105,'Identifiants Drive dupliqués');
+ for(const [id,n] of [['systeme_endocrinien',5],['systeme_digestif',5],['systeme_immunitaire',5],['appareil_locomoteur',5],['homeostasie',3],['niveaux_organisation',2]]){
+  const additions=vocals.filter(v=>v.courseId===id&&/_2026_\d{2}$/.test(v.id));
+  assert.equal(additions.length,n,id+': nombre de nouveaux vocaux incorrect');
+  assert.ok(additions.every(v=>v.mime==='audio/mpeg'&&v.durationSeconds>0&&v.durationSeconds<600),id+': MP3 invalide ou trop long');
+ }
+}
+
 const baseChangelog=read('changelog-v742.js');
 for(const token of ["function seedUnified(card)","if(!$('v742Changelog'))injectUnified()","new MutationObserver(()=>{removeLegacy();if(!$('v742Changelog'))injectUnified()})"])assert.ok(baseChangelog.includes(token),`Garde-fou changelog historique absent: ${token}`);
 assert.ok(!baseChangelog.includes('alreadyCurrent'),'Le journal historique ne doit plus réinitialiser une version moderne');
