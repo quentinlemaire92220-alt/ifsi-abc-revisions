@@ -253,7 +253,8 @@
       "etymologie": "-émie : dans le sang",
       "courseIds": [
         "diagnostic_bacteriologie",
-        "physiopathologie_infections"
+        "physiopathologie_infections",
+        "infections_neuro_meningees"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2004,7 +2005,7 @@
       "id": "effet-indesirable",
       "term": "Effet indésirable",
       "theme": "Calculs de doses et médicaments",
-      "definition": "Réaction nocive et non voulue survenant lors de l'utilisation d'un médicament selon les conditions considérées.",
+      "definition": "Réaction nocive et non voulue suspectée d’être due à un médicament, y compris dans un contexte d’erreur, de surdosage ou de mésusage.",
       "distinction": "Une contre-indication est une situation où l'usage d'un traitement est déconseillé ou interdit.",
       "etymologie": "effet (conséquence) + indésirable (non voulu) ; expression descriptive.",
       "courseIds": [
@@ -4473,6 +4474,342 @@
         "pssm"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "ligand",
+      "term": "Ligand",
+      "definition": "Molécule qui se fixe sur une cible.",
+      "etymologie": "Du latin ligare : lier.",
+      "distinction": "La fixation ne signifie pas nécessairement activation.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "affinite_kd",
+      "term": "Affinité et Kd",
+      "definition": "L’affinité décrit la liaison ; dans un modèle simple, Kd est la concentration libre donnant 50 % d’occupation.",
+      "etymologie": "Affinité : relation de liaison ; Kd : constante de dissociation.",
+      "distinction": "Kd n’est pas CE50.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "agoniste",
+      "term": "Agoniste",
+      "definition": "Ligand qui active son récepteur.",
+      "etymologie": "Du grec agôn : action, lutte.",
+      "distinction": "Un antagoniste bloque l’action d’un agoniste.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "antagoniste",
+      "term": "Antagoniste",
+      "definition": "Ligand qui réduit ou bloque l’action d’un agoniste sur une cible.",
+      "etymologie": "Anti- : contre ; agôn : action.",
+      "distinction": "Il n’est pas nécessairement agoniste inverse.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "ce50",
+      "term": "CE50",
+      "definition": "Concentration produisant la moitié de l’effet maximal dans un système défini.",
+      "etymologie": "C : concentration ; E : effet ; 50 : moitié du maximum.",
+      "distinction": "La DE50 désigne une dose ; Emax un maximum.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "emax",
+      "term": "Emax",
+      "definition": "Effet maximal observé dans un système expérimental défini.",
+      "etymologie": "E : effet ; max : maximal.",
+      "distinction": "L’efficacité maximale diffère de la puissance.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "clairance",
+      "term": "Clairance",
+      "definition": "Volume théorique de plasma épuré d’une substance par unité de temps.",
+      "etymologie": "De clearance : épuration.",
+      "distinction": "Ce n’est pas une quantité éliminée par minute.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "volume_distribution",
+      "term": "Volume de distribution",
+      "definition": "Rapport théorique entre quantité présente dans l’organisme et concentration plasmatique.",
+      "etymologie": "Distribution : répartition ; volume apparent calculé.",
+      "distinction": "Il ne correspond pas nécessairement à un volume anatomique.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "prodrogue",
+      "term": "Prodrogue",
+      "definition": "Substance inactive ou peu active transformée en une forme active dans l’organisme.",
+      "etymologie": "Pro- : précurseur ; drogue : substance active.",
+      "distinction": "À distinguer d’une forme à libération prolongée.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "second_messager",
+      "term": "Second messager",
+      "definition": "Relais intracellulaire de signalisation, par exemple AMPc, IP3, DAG ou Ca2+ selon la voie.",
+      "etymologie": "Second : après le premier signal ; messager : relais.",
+      "distinction": "Un récepteur membranaire n’est pas lui-même ce relais.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "principe_actif",
+      "term": "Principe actif",
+      "definition": "Substance à laquelle est attribuée l’activité pharmacologique du médicament.",
+      "etymologie": "Principe : élément essentiel ; actif : qui agit.",
+      "distinction": "Les excipients participent à la formulation.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "excipient",
+      "term": "Excipient",
+      "definition": "Composant autre que la substance active, participant notamment à la formulation.",
+      "etymologie": "Du latin excipere : recevoir.",
+      "distinction": "Un excipient peut avoir une importance clinique.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "dci",
+      "term": "DCI",
+      "definition": "Dénomination commune internationale d’une substance active.",
+      "etymologie": "Sigle de dénomination commune internationale.",
+      "distinction": "À distinguer du nom de marque et de la spécialité.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "bioequivalence",
+      "term": "Bioéquivalence",
+      "definition": "Comparabilité de l’exposition de formulations selon des critères et conditions définis.",
+      "etymologie": "Bio- : vivant ; équivalence : comparaison équivalente.",
+      "distinction": "Ce n’est pas une tolérance libre sur la dose.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "pharmacodynamie",
+      "term": "Pharmacodynamie",
+      "definition": "Étude des actions et effets des médicaments sur l’organisme.",
+      "etymologie": "Pharmaco- : médicament ; dynamie : action.",
+      "distinction": "Pharmacocinétique : devenir du médicament.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "pharmacocinetique",
+      "term": "Pharmacocinétique",
+      "definition": "Étude du devenir du médicament et des concentrations au cours du temps.",
+      "etymologie": "Pharmaco- : médicament ; cinétique : mouvement.",
+      "distinction": "À distinguer de l’étude des effets.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "ic50",
+      "term": "IC50",
+      "definition": "Concentration donnant 50 % d’inhibition dans des conditions expérimentales définies.",
+      "etymologie": "I : inhibition ; C : concentration ; 50 : moitié.",
+      "distinction": "Elle n’est pas automatiquement égale au Kd.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "agoniste_partiel",
+      "term": "Agoniste partiel",
+      "definition": "Agoniste dont l’effet maximal peut être inférieur à celui d’un agoniste plein dans le même système.",
+      "etymologie": "Agoniste : active ; partiel : maximum limité dans le système.",
+      "distinction": "À comparer dans des conditions identiques.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "agoniste_inverse",
+      "term": "Agoniste inverse",
+      "definition": "Ligand diminuant l’activité constitutive d’un récepteur lorsqu’elle existe.",
+      "etymologie": "Inverse : diminue l’activité de base.",
+      "distinction": "À distinguer d’un antagoniste neutre.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "forme_galenique",
+      "term": "Forme galénique",
+      "definition": "Présentation permettant l’administration du médicament, par exemple comprimé ou solution.",
+      "etymologie": "Galénique : relatif à la préparation des médicaments, d’après Galien.",
+      "distinction": "Ce n’est ni la DCI ni le nom commercial.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "pharmacovigilance",
+      "term": "Pharmacovigilance",
+      "definition": "Détection, évaluation et prévention des effets indésirables et des problèmes liés à l’utilisation des médicaments.",
+      "etymologie": "Pharmaco- : médicament ; vigilance : surveillance.",
+      "distinction": "La certitude causale n’est pas nécessaire pour signaler un soupçon.",
+      "theme": "Introduction à la pharmacologie",
+      "courseIds": [
+        "pharmacologie"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "purpura",
+      "term": "Purpura",
+      "definition": "Extravasation sanguine cutanée ne s’effaçant pas à la vitropression.",
+      "etymologie": "Du latin purpura : pourpre.",
+      "distinction": "Un purpura fébrile extensif peut signaler une urgence.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "empyeme",
+      "term": "Empyème",
+      "definition": "Collection de pus dans une cavité ou un espace ; ici notamment extra-axial sous-dural.",
+      "etymologie": "Du grec em- : dans ; pyon : pus.",
+      "distinction": "Un abcès cérébral se situe dans le parenchyme.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "abces_cerebral",
+      "term": "Abcès cérébral",
+      "definition": "Collection de pus localisée dans le parenchyme cérébral.",
+      "etymologie": "Abcès : collection ; cérébral : relatif au cerveau.",
+      "distinction": "À distinguer d’une inflammation méningée diffuse.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "glycorachie",
+      "term": "Glycorachie",
+      "definition": "Concentration de glucose dans le LCS, à interpréter avec la glycémie concomitante.",
+      "etymologie": "Glyco- : sucre ; -rachie : liquide du canal rachidien.",
+      "distinction": "Glycémie : glucose sanguin.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "hypoacousie",
+      "term": "Hypoacousie",
+      "definition": "Diminution de l’audition.",
+      "etymologie": "Hypo- : diminution ; -acousie : audition.",
+      "distinction": "Une surdité correspond à une perte auditive plus importante selon son degré.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "engagement_cerebral",
+      "term": "Engagement cérébral",
+      "definition": "Déplacement de structures cérébrales avec risque de compression, notamment dans un contexte d’hypertension intracrânienne.",
+      "etymologie": "Engagement : déplacement dans un passage anatomique.",
+      "distinction": "Ce n’est pas un simple synonyme de céphalée.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "syndrome_post_pl",
+      "term": "Syndrome post-PL",
+      "definition": "Syndrome souvent marqué par des céphalées posturales après une fuite de LCS liée à la ponction.",
+      "etymologie": "Post- : après ; PL : ponction lombaire.",
+      "distinction": "Une céphalée après le geste doit être évaluée dans son contexte.",
+      "theme": "Infections neuro-méningées",
+      "courseIds": [
+        "infections_neuro_meningees"
+      ],
+      "sourceType": "revision_captures"
     }
   ]
 }

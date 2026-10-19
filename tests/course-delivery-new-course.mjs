@@ -55,6 +55,11 @@ const published = (dataset, id) => {
     dataset.vocals.some(x => x.courseId === id);
 };
 
+for(const d of deliveries.courses.filter(x=>x.deliveryMode==='existing_course_revision')){
+ assert.ok(published(before,d.courseId),d.courseId+': la révision sur captures est réservée à un cours déjà publié');
+ assert.ok(before.registry.courses.some(x=>x.id===d.courseId),d.courseId+': identifiant existant perdu');
+}
+
 const oldIds = new Set(before.registry.courses.map(c => c.id));
 const added = current.registry.courses.filter(c => !oldIds.has(c.id));
 const firstPublished = current.registry.courses

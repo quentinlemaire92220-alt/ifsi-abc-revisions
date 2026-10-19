@@ -494,6 +494,592 @@
         "approvedAt": "2026-10-19T08:15:00+02:00",
         "bundleSha256": "09051cf17a201e100c2a2c1a50216879003d28ff52fa1882a7c2f8ed7a52edca"
       }
+    },
+    {
+      "courseId": "pharmacologie",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "existing_course_revision",
+      "sourceBasis": {
+        "kind": "course_captures",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "reviewedCaptureCount": 148
+      },
+      "driveFolderId": "1MIsuLsgAtwOPXBm8kRWHs6unm1areyRF",
+      "folders": {
+        "99": "1yJkGIsSwxErVlKqWSRxVbWUQkke7Rvfn",
+        "01": "1FO0OBRyPrDHTDTa6LrT4ULewGW-6gNmj",
+        "02": "1poBDF4IFOn7APKKvw278jm67vm_TePuR",
+        "03": "1_kjH51srmtoIFalnFl2yD1g6dSu1FzV8",
+        "04": "1Vp3Xut87sJF3LaXoB-OR3efD-Pk4UFS7",
+        "05": "1dNYp-zO3rKEzXGdLGq-TxeTPC5URpk58",
+        "06": "1mZ00q1AMNwC1pTMj5r6CVGggF_ZYOSnf",
+        "07": "1kuISPcarpXPt2BtECxFnqJ0_JryeWPfe",
+        "08": "1TZM57FI-HIcSrbs1BMWTT-PpkYmAJ7fA"
+      },
+      "sheetResourceId": "pharmacologie_fiche_p01",
+      "infographicSheetResourceId": "pharmacologie_fiche_complete_infographiee_p01",
+      "qcmDriveId": "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm",
+      "qcmBank": "qextra-56.txt",
+      "qcmCount": 68,
+      "flashcardCount": 22,
+      "flashcardDriveId": "1QuGJakVeF2x0QQ37MYKtGqHOJEQKj7VZ",
+      "vocabularyDriveId": "1E33G1Me-v6EE4tx0lIsRqdyRqyS-h5tp",
+      "vocabularyCount": 30,
+      "infographicPackDriveId": "1YyKYOMXPDQeOZlKeLQHeO0FO1E4BPBmK",
+      "infographicResourceIds": [
+        "pharmacologie_info_p01_01",
+        "pharmacologie_info_p01_02",
+        "pharmacologie_info_p01_03",
+        "pharmacologie_info_p01_04",
+        "pharmacologie_info_p01_05",
+        "pharmacologie_info_p01_06",
+        "pharmacologie_info_p01_07",
+        "pharmacologie_info_p01_08",
+        "pharmacologie_info_p01_09",
+        "pharmacologie_info_p01_10",
+        "pharmacologie_info_p01_11"
+      ],
+      "vocals": [
+        "pharmaco_vocal_01",
+        "pharmaco_vocal_02",
+        "pharmaco_vocal_03",
+        "pharmaco_vocal_04",
+        "pharmaco_vocal_05"
+      ],
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "native_support_unavailable",
+          "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
+        }
+      ],
+      "vocalScripts": [
+        {
+          "number": 1,
+          "title": "Consolidation des notions et corrections",
+          "driveId": "1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E",
+          "url": "https://drive.google.com/file/d/1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E/view?usp=drivesdk",
+          "partId": "p01"
+        }
+      ],
+      "artifactSha256s": {
+        "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm": "d00c83b6f17d393d14140d99e1fa0f6cea17fd356d5158a65c65dee0f8bb42d9",
+        "1E33G1Me-v6EE4tx0lIsRqdyRqyS-h5tp": "1a2ff71eb8370fa298740dfb28ee8e0a6040bca91d79f80d09877f03249510bb",
+        "1QuGJakVeF2x0QQ37MYKtGqHOJEQKj7VZ": "aa441bde607f8ab323415193bb4193042a020280153ed55aa06cc7ea383d5510",
+        "1NsAIkcQElB_Lqu5mNsfi9Qm-SlTIwDbM": "94b0079f2010c3b1d9a127c805d6c7e59d7999b5d7f72c61f1e698260616e9e7",
+        "1ktKdAGaaK61cFzAhhjdFoJ20taQZIdcb": "64eb1c7282e82a5539c11cd5fe628b50edea5c6a42ed2858b7aae2fbf9b32a31",
+        "1FBUnUQMgeUY5MnapReoolb6f_KO4tKRX": "8715862dac169644708c5f515fa9c4f301c90740d4a5ead386aa509aeeeae88e",
+        "1sojMCEOkR4ORF_d3F0x616vWddOyAlWL": "1bab00a81abdc1da299c780c91985193f85ea2e08871a83e4f3690019e8ccf30",
+        "1iCyPc_xYM0WxiP0yKUtVn1w1RmrPVj2b": "bb773a69fcdfab74183cbed172b7d637116a76cf4429dc2dec643eb0c556ea53",
+        "1HjVbW02vl_qKEPt-Y0UbDabGIlgz-dTq": "b04311ac6319c3b31725bce9e40050683b85bf32ac60c6e65b8b5d7881a63b6c",
+        "1Tm0viP3LrEnMDIYrWEQEGFi5_u5FADfJ": "ca4e3b85ed085fb43ddea6cabf2510ff474664b7d42f48ee43a0463da5f1b73c",
+        "1y_p-nNf5skfxeE_QNtPHcxJBDHZ6hHG-": "50775dd42b21a26bf92357de0ec6ec64f9e1bfc6d053a67b6454f72e95855a9e",
+        "1WV6z3T_QzJzINPGzzsjaUKQbqsNeA8kA": "ed8839dad3a571970f212bfb2641b6bff8c5f391c85c79634301eb622e191209",
+        "13xmk0kFSP1fb2Ou81yBdUaEcTt3zyXLM": "eb35ec765a70f2404d44cc993083fb2d5a78f5c8675d8abdcefd146e5f64317b",
+        "1MKM8nUAOvydFQqpiGt2q1qP7qFJndC0J": "2d03b48b106c4f128728994fb7c4143af75ab776530dd25ac707d43df5a8c9d2",
+        "1YyKYOMXPDQeOZlKeLQHeO0FO1E4BPBmK": "a56d2506c50036b7c66fd25a5e23db61546329fd38f30d21aff7ff49d4d79a61",
+        "1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E": "f90c71b5eda9f614c9cdab43e01556e9e66fce73ea2564d6b45a01d6e99f58e1",
+        "1rYvyHoHgc5rgo-hXvwPCkcbV7SGF9c-6": "2f59412fc47265db43d0dccc8d05deddcb62018b2de16685487ccc3b3b310a7d",
+        "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+        "1KELhpD9_1FQo-i0CzaVa6WtxlDPtka-C": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+        "14LO1OLJdtnyVPBsMKEclb6jY6tMXHKS2": "11d58ab3960df6bf7df5939d2087b17cec3499808c6b7fe52e6618cafec0bcd8",
+        "1m5OEJjaR9rfHYUTtLxXS9JLBE2P8PcpP": "38cb2dcf64768b424caa40ad3a460eb2ea344205c2ece51c0327d5413e14023d",
+        "1cPBkdsxktiF5QUMrueQsNWO4dyWfRYbo": "f5a98698959efb970c9b3b67fd979d8f741e3cd09486d8290fc2dce6f08ddd7b",
+        "1UvkvREVMHXHqIHhtvsSmkw6Z-yXNyhK2": "5ea3905fc3095e2838f411c6e858a1239a2b4afb36b1b310b0f2ac5ad28a76b4",
+        "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew": "cd978cdb5e761060cb081559f686da11334265dd14e6d13b1f2da05881a5ab5b"
+      },
+      "dualSheetCoverage": {
+        "expectedNotions": 264,
+        "classicCovered": 264,
+        "infographicCovered": 264,
+        "medicalReview": "approved"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-19T08:19:23.101130+00:00",
+        "bundleSha256": "12503be74b96751815ef21e847bd4061b6d00867d0d1c7ffb190caa0e6dd6be8"
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+        "expectedCount": 11,
+        "checkedCount": 11
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+        "expectedCount": 11,
+        "checkedCount": 11
+      },
+      "infographicSheetVisualAudit": {
+        "status": "PASS",
+        "pdfSha256": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+        "expectedCount": 30,
+        "checkedCount": 30
+      },
+      "infographicSheetPublishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+        "expectedCount": 30,
+        "checkedCount": 30
+      },
+      "partDeliveries": [
+        {
+          "validated": true,
+          "status": "partial",
+          "deliveryMode": "existing_course_revision",
+          "sourceBasis": {
+            "kind": "course_captures",
+            "nativeSupportAvailable": false,
+            "reconciled": true,
+            "reviewedCaptureCount": 148
+          },
+          "blockers": [
+            {
+              "resource": "support",
+              "reason": "native_support_unavailable",
+              "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
+            }
+          ],
+          "sheetResourceId": "pharmacologie_fiche_p01",
+          "infographicSheetResourceId": "pharmacologie_fiche_complete_infographiee_p01",
+          "infographicResourceIds": [
+            "pharmacologie_info_p01_01",
+            "pharmacologie_info_p01_02",
+            "pharmacologie_info_p01_03",
+            "pharmacologie_info_p01_04",
+            "pharmacologie_info_p01_05",
+            "pharmacologie_info_p01_06",
+            "pharmacologie_info_p01_07",
+            "pharmacologie_info_p01_08",
+            "pharmacologie_info_p01_09",
+            "pharmacologie_info_p01_10",
+            "pharmacologie_info_p01_11"
+          ],
+          "artifactSha256s": {
+            "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm": "d00c83b6f17d393d14140d99e1fa0f6cea17fd356d5158a65c65dee0f8bb42d9",
+            "1E33G1Me-v6EE4tx0lIsRqdyRqyS-h5tp": "1a2ff71eb8370fa298740dfb28ee8e0a6040bca91d79f80d09877f03249510bb",
+            "1QuGJakVeF2x0QQ37MYKtGqHOJEQKj7VZ": "aa441bde607f8ab323415193bb4193042a020280153ed55aa06cc7ea383d5510",
+            "1NsAIkcQElB_Lqu5mNsfi9Qm-SlTIwDbM": "94b0079f2010c3b1d9a127c805d6c7e59d7999b5d7f72c61f1e698260616e9e7",
+            "1ktKdAGaaK61cFzAhhjdFoJ20taQZIdcb": "64eb1c7282e82a5539c11cd5fe628b50edea5c6a42ed2858b7aae2fbf9b32a31",
+            "1FBUnUQMgeUY5MnapReoolb6f_KO4tKRX": "8715862dac169644708c5f515fa9c4f301c90740d4a5ead386aa509aeeeae88e",
+            "1sojMCEOkR4ORF_d3F0x616vWddOyAlWL": "1bab00a81abdc1da299c780c91985193f85ea2e08871a83e4f3690019e8ccf30",
+            "1iCyPc_xYM0WxiP0yKUtVn1w1RmrPVj2b": "bb773a69fcdfab74183cbed172b7d637116a76cf4429dc2dec643eb0c556ea53",
+            "1HjVbW02vl_qKEPt-Y0UbDabGIlgz-dTq": "b04311ac6319c3b31725bce9e40050683b85bf32ac60c6e65b8b5d7881a63b6c",
+            "1Tm0viP3LrEnMDIYrWEQEGFi5_u5FADfJ": "ca4e3b85ed085fb43ddea6cabf2510ff474664b7d42f48ee43a0463da5f1b73c",
+            "1y_p-nNf5skfxeE_QNtPHcxJBDHZ6hHG-": "50775dd42b21a26bf92357de0ec6ec64f9e1bfc6d053a67b6454f72e95855a9e",
+            "1WV6z3T_QzJzINPGzzsjaUKQbqsNeA8kA": "ed8839dad3a571970f212bfb2641b6bff8c5f391c85c79634301eb622e191209",
+            "13xmk0kFSP1fb2Ou81yBdUaEcTt3zyXLM": "eb35ec765a70f2404d44cc993083fb2d5a78f5c8675d8abdcefd146e5f64317b",
+            "1MKM8nUAOvydFQqpiGt2q1qP7qFJndC0J": "2d03b48b106c4f128728994fb7c4143af75ab776530dd25ac707d43df5a8c9d2",
+            "1YyKYOMXPDQeOZlKeLQHeO0FO1E4BPBmK": "a56d2506c50036b7c66fd25a5e23db61546329fd38f30d21aff7ff49d4d79a61",
+            "1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E": "f90c71b5eda9f614c9cdab43e01556e9e66fce73ea2564d6b45a01d6e99f58e1",
+            "1rYvyHoHgc5rgo-hXvwPCkcbV7SGF9c-6": "2f59412fc47265db43d0dccc8d05deddcb62018b2de16685487ccc3b3b310a7d",
+            "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+            "1KELhpD9_1FQo-i0CzaVa6WtxlDPtka-C": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+            "14LO1OLJdtnyVPBsMKEclb6jY6tMXHKS2": "11d58ab3960df6bf7df5939d2087b17cec3499808c6b7fe52e6618cafec0bcd8",
+            "1m5OEJjaR9rfHYUTtLxXS9JLBE2P8PcpP": "38cb2dcf64768b424caa40ad3a460eb2ea344205c2ece51c0327d5413e14023d",
+            "1cPBkdsxktiF5QUMrueQsNWO4dyWfRYbo": "f5a98698959efb970c9b3b67fd979d8f741e3cd09486d8290fc2dce6f08ddd7b",
+            "1UvkvREVMHXHqIHhtvsSmkw6Z-yXNyhK2": "5ea3905fc3095e2838f411c6e858a1239a2b4afb36b1b310b0f2ac5ad28a76b4",
+            "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew": "cd978cdb5e761060cb081559f686da11334265dd14e6d13b1f2da05881a5ab5b"
+          },
+          "dualSheetCoverage": {
+            "expectedNotions": 264,
+            "classicCovered": 264,
+            "infographicCovered": 264,
+            "medicalReview": "approved"
+          },
+          "visualAudit": {
+            "status": "PASS",
+            "pdfSha256": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+            "expectedCount": 11,
+            "checkedCount": 11
+          },
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
+            "expectedCount": 11,
+            "checkedCount": 11
+          },
+          "infographicSheetVisualAudit": {
+            "status": "PASS",
+            "pdfSha256": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+            "expectedCount": 30,
+            "checkedCount": 30
+          },
+          "infographicSheetPublishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
+            "expectedCount": 30,
+            "checkedCount": 30
+          },
+          "partId": "p01",
+          "sheetResourceIds": [
+            "pharmacologie_fiche_p01",
+            "pharmacologie_fiche_complete_infographiee_p01"
+          ],
+          "qcmQuestionIds": [
+            "pharmaco_001",
+            "pharmaco_002",
+            "pharmaco_003",
+            "pharmaco_004",
+            "pharmaco_005",
+            "pharmaco_006",
+            "pharmaco_007",
+            "pharmaco_008",
+            "pharmaco_009",
+            "pharmaco_010",
+            "pharmaco_011",
+            "pharmaco_012",
+            "pharmaco_013",
+            "pharmaco_014",
+            "pharmaco_015",
+            "pharmaco_017",
+            "pharmaco_019",
+            "pharmaco_020",
+            "pharmaco_023",
+            "pharmaco_025",
+            "pharmaco_027",
+            "pharmaco_029",
+            "pharmaco_030",
+            "pharmaco_031",
+            "pharmaco_032",
+            "pharmaco_033",
+            "pharmaco_034",
+            "pharmaco_035",
+            "pharmaco_036",
+            "pharmaco_037",
+            "pharmaco_038",
+            "pharmaco_039",
+            "pharmaco_040",
+            "pharmaco_041",
+            "pharmaco_042",
+            "pharmaco_043",
+            "pharmaco_044",
+            "pharmaco_045",
+            "pharmaco_046",
+            "pharmaco_047",
+            "pharmaco_048",
+            "pharmaco_052",
+            "pharmaco_053",
+            "pharmaco_054",
+            "pharmaco_055",
+            "pharmaco_056",
+            "pharmaco_057",
+            "pharmaco_058",
+            "pharmaco_059",
+            "pharmaco_060",
+            "pharmaco_016",
+            "pharmaco_018",
+            "pharmaco_021",
+            "pharmaco_022",
+            "pharmaco_024",
+            "pharmaco_026",
+            "pharmaco_028",
+            "pharmaco_049",
+            "pharmaco_050",
+            "pharmaco_051",
+            "pharmaco_zip_061",
+            "pharmaco_zip_062",
+            "pharmaco_zip_063",
+            "pharmaco_zip_064",
+            "pharmaco_zip_065",
+            "pharmaco_zip_066",
+            "pharmaco_zip_067",
+            "pharmaco_zip_068"
+          ],
+          "vocalIds": [
+            "pharmaco_vocal_01",
+            "pharmaco_vocal_02",
+            "pharmaco_vocal_03",
+            "pharmaco_vocal_04",
+            "pharmaco_vocal_05"
+          ]
+        }
+      ]
+    },
+    {
+      "courseId": "infections_neuro_meningees",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "existing_course_revision",
+      "sourceBasis": {
+        "kind": "course_captures",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "reviewedCaptureCount": 48
+      },
+      "driveFolderId": "1jb3ehesu8YJN96JIYD2sX7iZ-_92mqTH",
+      "folders": {
+        "99": "1yweeg41i35AGs4LchoIGYOiaZvTtPa-f",
+        "01": "1F68nQ3fkdGG6GrGTFixpuG4F4tEyjzGn",
+        "02": "1Ra32h-4N9ue8MDrh_ODu3w7YlZv_Rlqh",
+        "03": "1MIvqTTZaKtPJGODimSCZuAO0-Di1T1RP",
+        "04": "1c_WSKhLkeGdnoTLGV5rJEH4LgB5Pw8SM",
+        "05": "1wYJ2pJmqATjIejV87ospt9kZju6zqgyf",
+        "06": "13xRpSyDvAOVUcr34yhaEdmpn0u_kIeTI",
+        "07": "1MX43d65Coiobssyci9EGjC7b3827PEWZ",
+        "08": "1ZwSzrd8ascdLC6g3q32WW-sEqUzsV4lE"
+      },
+      "sheetResourceId": "infections_neuro_meningees_fiche_p01",
+      "infographicSheetResourceId": "infections_neuro_meningees_fiche_complete_infographiee_p01",
+      "qcmDriveId": "1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4",
+      "qcmBank": "qextra-57.txt",
+      "qcmCount": 44,
+      "flashcardCount": 27,
+      "flashcardDriveId": "1cD2V2ZcHLv-b8X0dtb8e90NrMLoOXL1b",
+      "vocabularyDriveId": "1h9r2jNODPDLeESDuKUnnPN953ujAPspL",
+      "vocabularyCount": 14,
+      "infographicPackDriveId": "1-BeWYHbxSi7hyNXMFR5dpNJwtUQqvvm0",
+      "infographicResourceIds": [
+        "infections_neuro_meningees_info_p01_01",
+        "infections_neuro_meningees_info_p01_02",
+        "infections_neuro_meningees_info_p01_03",
+        "infections_neuro_meningees_info_p01_04",
+        "infections_neuro_meningees_info_p01_05",
+        "infections_neuro_meningees_info_p01_06",
+        "infections_neuro_meningees_info_p01_07"
+      ],
+      "vocals": [
+        "neuroinf_01",
+        "neuroinf_02",
+        "neuroinf_03",
+        "neuroinf_04",
+        "neuroinf_05",
+        "neuroinf_06"
+      ],
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "native_support_unavailable",
+          "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
+        }
+      ],
+      "vocalScripts": [
+        {
+          "number": 1,
+          "title": "Consolidation des notions et corrections",
+          "driveId": "15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN",
+          "url": "https://drive.google.com/file/d/15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN/view?usp=drivesdk",
+          "partId": "p01"
+        }
+      ],
+      "artifactSha256s": {
+        "1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4": "0d87e17876b15273f8b411c4a5ad22f620053f7123c482bef851bd718b0b0ba8",
+        "1h9r2jNODPDLeESDuKUnnPN953ujAPspL": "7e3d1596d5a6ebd274f34110ea83782a181b2c7d9b0916f641e4ccdd6d7fc7e4",
+        "1cD2V2ZcHLv-b8X0dtb8e90NrMLoOXL1b": "a2f95d0dc5fb6f2564991fc6d9e53f308980cf1e36ace5678204e494fbd381ee",
+        "1QurZ_AfsisvFeQ17R7uzvTormO55Xm_B": "5cc3e15e57b76654b3e040bf455690d3954182ddf7021c5970a9841e4cb29ebc",
+        "1G_-lJ69IQir6TShBwmYUER9R0T65e_JR": "1ed05ee1505640f17a370d59645eb426edbfc6ae520adaf02d3deb761b7f5bd8",
+        "1Gk59eL_sAV6HDVGzyj8oPFB-O5Q1QUf-": "5c9908e010e47bc4a23d144ff902fbe5ae85f5616851614e143c5253685c581c",
+        "1BVMzxxMfrwvzf8g4RYfMwt5k-YcXHyzm": "33b49e09eca5334275e83e66d51b2aef16a5406cc849e29c04a2c92021a00654",
+        "1vCjIh-8430aOIuHHv2oqAw8kTbB8GTyA": "0d2961240e752dd246225b8230b99069d82dd2025d3091f9f26d310fdc4c7ee8",
+        "1VPuib1i782O5E1lbaUYf3bQQAg5WWh1r": "f0e9031037441bf9dba719d4f01e868999e49e5cee02acac55feeeea8ac711d2",
+        "1S7s8m9UQOCdIiNvLllo1Jq-FGYKvy9xV": "dcac90e324c367aaf224d6ba17027aae7d06e88e071a1168f7d6496f94b4727e",
+        "1-BeWYHbxSi7hyNXMFR5dpNJwtUQqvvm0": "f4aa497e53c85ea24ea68f895f01a2dcabc23890ec513c39eeb3d1f0b15ea120",
+        "15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN": "c529b29649a03e76aac4ba0fae92bf35000b2ce60c2af7fc5c307f4b7bc5aa04",
+        "1Np9Lys94ODvojXDqH4Y9Vlbljw-rIO4_": "052bf587b90b10035a120c607999c108e5e155ce9878c60acdb607c6ff189ec2",
+        "1PBce1RW5rmbrwAyL1hZ2m2A4lMvUtsLx": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+        "1xS7KRruiJf9c0UwFT5whwrEUU0Jhg5t7": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+        "1RK-dZlX7ha9r-tGSkuaVrol12tkTSVuV": "8e3571e04763e5bc1b4d9555657cbd170476218fb84e22448095365285fe9857",
+        "1lbjYQ17zPBJJxPQm2E-RIu-iA9L33b_-": "ac9f6138278a3b4e30e9164cad37f175daab2db04a6819cd0f93088c3814d8fa",
+        "1TfaYBbVQSEDv80Cx4rcwqxjumQiHXnQO": "898cee2142023a7962897b68a0ba047da4f4ea59463154c62a7437a4f1799bdb",
+        "1rHfG1KudvN8FxW00XwPkfSAGMbIC5Ki_": "46dc56b03d6a6215ed88895f76fa4583adec93f225a2ef11b184625373533b8b",
+        "1M7pMBnyykDYOxRNx3WK4C6h7sQf3RUUG": "3f3fb3fc948fffbe2c125b46d5199907200e56e10b01f750e0361ebada9ee934",
+        "1C-r7QoqnvEhJmyaa0sD5M6YwwYTqkMfX": "31052e3052d328115a9b0cf2a44b03ec28b2037a7d21a30471b53d53511e79e7"
+      },
+      "dualSheetCoverage": {
+        "expectedNotions": 161,
+        "classicCovered": 161,
+        "infographicCovered": 161,
+        "medicalReview": "approved"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-19T08:19:23.568476+00:00",
+        "bundleSha256": "342cc422b5b74c0c073b8f55f8e405253a531b375fbacb4afc4249dabdcb6eb1"
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+        "expectedCount": 7,
+        "checkedCount": 7
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+        "expectedCount": 7,
+        "checkedCount": 7
+      },
+      "infographicSheetVisualAudit": {
+        "status": "PASS",
+        "pdfSha256": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+        "expectedCount": 19,
+        "checkedCount": 19
+      },
+      "infographicSheetPublishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+        "expectedCount": 19,
+        "checkedCount": 19
+      },
+      "partDeliveries": [
+        {
+          "validated": true,
+          "status": "partial",
+          "deliveryMode": "existing_course_revision",
+          "sourceBasis": {
+            "kind": "course_captures",
+            "nativeSupportAvailable": false,
+            "reconciled": true,
+            "reviewedCaptureCount": 48
+          },
+          "blockers": [
+            {
+              "resource": "support",
+              "reason": "native_support_unavailable",
+              "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
+            }
+          ],
+          "sheetResourceId": "infections_neuro_meningees_fiche_p01",
+          "infographicSheetResourceId": "infections_neuro_meningees_fiche_complete_infographiee_p01",
+          "infographicResourceIds": [
+            "infections_neuro_meningees_info_p01_01",
+            "infections_neuro_meningees_info_p01_02",
+            "infections_neuro_meningees_info_p01_03",
+            "infections_neuro_meningees_info_p01_04",
+            "infections_neuro_meningees_info_p01_05",
+            "infections_neuro_meningees_info_p01_06",
+            "infections_neuro_meningees_info_p01_07"
+          ],
+          "artifactSha256s": {
+            "1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4": "0d87e17876b15273f8b411c4a5ad22f620053f7123c482bef851bd718b0b0ba8",
+            "1h9r2jNODPDLeESDuKUnnPN953ujAPspL": "7e3d1596d5a6ebd274f34110ea83782a181b2c7d9b0916f641e4ccdd6d7fc7e4",
+            "1cD2V2ZcHLv-b8X0dtb8e90NrMLoOXL1b": "a2f95d0dc5fb6f2564991fc6d9e53f308980cf1e36ace5678204e494fbd381ee",
+            "1QurZ_AfsisvFeQ17R7uzvTormO55Xm_B": "5cc3e15e57b76654b3e040bf455690d3954182ddf7021c5970a9841e4cb29ebc",
+            "1G_-lJ69IQir6TShBwmYUER9R0T65e_JR": "1ed05ee1505640f17a370d59645eb426edbfc6ae520adaf02d3deb761b7f5bd8",
+            "1Gk59eL_sAV6HDVGzyj8oPFB-O5Q1QUf-": "5c9908e010e47bc4a23d144ff902fbe5ae85f5616851614e143c5253685c581c",
+            "1BVMzxxMfrwvzf8g4RYfMwt5k-YcXHyzm": "33b49e09eca5334275e83e66d51b2aef16a5406cc849e29c04a2c92021a00654",
+            "1vCjIh-8430aOIuHHv2oqAw8kTbB8GTyA": "0d2961240e752dd246225b8230b99069d82dd2025d3091f9f26d310fdc4c7ee8",
+            "1VPuib1i782O5E1lbaUYf3bQQAg5WWh1r": "f0e9031037441bf9dba719d4f01e868999e49e5cee02acac55feeeea8ac711d2",
+            "1S7s8m9UQOCdIiNvLllo1Jq-FGYKvy9xV": "dcac90e324c367aaf224d6ba17027aae7d06e88e071a1168f7d6496f94b4727e",
+            "1-BeWYHbxSi7hyNXMFR5dpNJwtUQqvvm0": "f4aa497e53c85ea24ea68f895f01a2dcabc23890ec513c39eeb3d1f0b15ea120",
+            "15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN": "c529b29649a03e76aac4ba0fae92bf35000b2ce60c2af7fc5c307f4b7bc5aa04",
+            "1Np9Lys94ODvojXDqH4Y9Vlbljw-rIO4_": "052bf587b90b10035a120c607999c108e5e155ce9878c60acdb607c6ff189ec2",
+            "1PBce1RW5rmbrwAyL1hZ2m2A4lMvUtsLx": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+            "1xS7KRruiJf9c0UwFT5whwrEUU0Jhg5t7": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+            "1RK-dZlX7ha9r-tGSkuaVrol12tkTSVuV": "8e3571e04763e5bc1b4d9555657cbd170476218fb84e22448095365285fe9857",
+            "1lbjYQ17zPBJJxPQm2E-RIu-iA9L33b_-": "ac9f6138278a3b4e30e9164cad37f175daab2db04a6819cd0f93088c3814d8fa",
+            "1TfaYBbVQSEDv80Cx4rcwqxjumQiHXnQO": "898cee2142023a7962897b68a0ba047da4f4ea59463154c62a7437a4f1799bdb",
+            "1rHfG1KudvN8FxW00XwPkfSAGMbIC5Ki_": "46dc56b03d6a6215ed88895f76fa4583adec93f225a2ef11b184625373533b8b",
+            "1M7pMBnyykDYOxRNx3WK4C6h7sQf3RUUG": "3f3fb3fc948fffbe2c125b46d5199907200e56e10b01f750e0361ebada9ee934",
+            "1C-r7QoqnvEhJmyaa0sD5M6YwwYTqkMfX": "31052e3052d328115a9b0cf2a44b03ec28b2037a7d21a30471b53d53511e79e7"
+          },
+          "dualSheetCoverage": {
+            "expectedNotions": 161,
+            "classicCovered": 161,
+            "infographicCovered": 161,
+            "medicalReview": "approved"
+          },
+          "visualAudit": {
+            "status": "PASS",
+            "pdfSha256": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+            "expectedCount": 7,
+            "checkedCount": 7
+          },
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
+            "expectedCount": 7,
+            "checkedCount": 7
+          },
+          "infographicSheetVisualAudit": {
+            "status": "PASS",
+            "pdfSha256": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+            "expectedCount": 19,
+            "checkedCount": 19
+          },
+          "infographicSheetPublishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
+            "expectedCount": 19,
+            "checkedCount": 19
+          },
+          "partId": "p01",
+          "sheetResourceIds": [
+            "infections_neuro_meningees_fiche_p01",
+            "infections_neuro_meningees_fiche_complete_infographiee_p01"
+          ],
+          "qcmQuestionIds": [
+            "v820_neuinf_001",
+            "v820_neuinf_002",
+            "v820_neuinf_003",
+            "v820_neuinf_004",
+            "v820_neuinf_005",
+            "v820_neuinf_006",
+            "v820_neuinf_007",
+            "v820_neuinf_008",
+            "v820_neuinf_009",
+            "v820_neuinf_010",
+            "v820_neuinf_011",
+            "v820_neuinf_012",
+            "v820_neuinf_013",
+            "v820_neuinf_014",
+            "v820_neuinf_015",
+            "v820_neuinf_016",
+            "v820_neuinf_017",
+            "v820_neuinf_018",
+            "v820_neuinf_019",
+            "v820_neuinf_020",
+            "v820_neuinf_021",
+            "v820_neuinf_022",
+            "v820_neuinf_023",
+            "v820_neuinf_024",
+            "v820_neuinf_025",
+            "v820_neuinf_026",
+            "v820_neuinf_027",
+            "v820_neuinf_029",
+            "v820_neuinf_030",
+            "v820_neuinf_031",
+            "v820_neuinf_032",
+            "v820_neuinf_033",
+            "v820_neuinf_034",
+            "v820_neuinf_036",
+            "v820_neuinf_037",
+            "v820_neuinf_040",
+            "v820_neuinf_035",
+            "v820_neuinf_038",
+            "neuro_zip_041",
+            "neuro_zip_042",
+            "neuro_zip_043",
+            "neuro_zip_044",
+            "neuro_zip_045",
+            "neuro_zip_046"
+          ],
+          "vocalIds": [
+            "neuroinf_01",
+            "neuroinf_02",
+            "neuroinf_03",
+            "neuroinf_04",
+            "neuroinf_05",
+            "neuroinf_06"
+          ]
+        }
+      ]
     }
   ],
   "supplementalResourceApprovals": [

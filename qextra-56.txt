@@ -1,0 +1,1725 @@
+[
+  {
+    "id": "pharmaco_001",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "easy",
+    "question": "Concernant la composition habituelle d’un médicament :",
+    "choices": [
+      "La forme galénique est le nom commercial du médicament.",
+      "Un médicament ne contient jamais d’excipient.",
+      "Les excipients entourent le principe actif et participent notamment à la forme galénique.",
+      "Le principe actif est responsable de l’effet pharmacologique recherché.",
+      "Les excipients sont toujours dépourvus d’importance clinique."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le cours distingue le principe actif, responsable de l’effet, et les excipients, qui participent à la formulation. Les excipients peuvent avoir une importance, notamment en cas d’allergie.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_002",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "easy",
+    "question": "À propos de la DCI et de la spécialité :",
+    "choices": [
+      "La DCI varie selon chaque laboratoire.",
+      "La DCI correspond au nom de la molécule.",
+      "Doliprane est la DCI du paracétamol.",
+      "La spécialité correspond nécessairement à la DCI.",
+      "L’enseignant demande de privilégier les noms de marque à l’examen."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "L’enseignant insiste sur la DCI : paracétamol est la DCI, tandis que les noms de marque sont des spécialités.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_003",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "medium",
+    "question": "À propos d’un médicament générique, selon le cours :",
+    "choices": [
+      "Il possède le même principe actif que la spécialité d’origine.",
+      "Son efficacité doit être entièrement redémontrée par une nouvelle phase III.",
+      "Il doit obligatoirement contenir les mêmes excipients que le princeps.",
+      "Une étude pharmacocinétique peut vérifier des concentrations plasmatiques comparables.",
+      "Il porte souvent la DCI suivie du nom du laboratoire."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Le générique conserve le même principe actif et sa bioéquivalence est appréciée pharmacocinétiquement. Le nom est souvent DCI + laboratoire ; les excipients ne sont pas présentés comme devant être strictement identiques.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_004",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "medium",
+    "question": "Les origines ou natures de principes actifs citées dans le cours comprennent :",
+    "choices": [
+      "Exclusivement des molécules synthétiques de faible poids moléculaire.",
+      "Des protéines, comme certains anticorps.",
+      "Les principes actifs sont nécessairement tous des protéines.",
+      "Uniquement des molécules d’origine végétale.",
+      "De petites molécules."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le cours présente une grande diversité : petites molécules, protéines, sucres, oligonucléotides et thérapies plus complexes. Les médicaments ne sont pas tous d’origine végétale ni tous de petite taille.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_005",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "medium",
+    "question": "Concernant les médicaments d’origine naturelle :",
+    "choices": [
+      "Ils peuvent poser des difficultés d’approvisionnement.",
+      "Ils sont nécessairement plus sûrs que les produits de synthèse.",
+      "Le cours cite la morphine issue du pavot comme exemple.",
+      "Ils ne peuvent jamais être d’origine animale.",
+      "Ils peuvent exposer à des risques liés à la source biologique."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le cours cite notamment la morphine et l’héparine et souligne les risques d’approvisionnement et de contamination. « Naturel » ne signifie pas automatiquement « sans risque ».",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_006",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "easy",
+    "question": "La recherche préclinique correspond notamment :",
+    "choices": [
+      "À une phase exclusivement consacrée au remboursement.",
+      "À l’étude de sujets malades en phase III.",
+      "À la pharmacovigilance après commercialisation.",
+      "À des essais avant la première administration à l’être humain.",
+      "À des études exclusivement réalisées après la commercialisation."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La phase préclinique précède les essais chez l’être humain et comporte des études, notamment animales, sur l’efficacité, la toxicité et le devenir du candidat.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_007",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "medium",
+    "question": "La phase I du développement d’un médicament :",
+    "choices": [
+      "Est classiquement réalisée chez des sujets sains, hors exceptions citées.",
+      "A pour objectif principal de comparer le médicament au placebo sur la mortalité à long terme.",
+      "Correspond à la première exposition chez l’être humain.",
+      "Inclut d’emblée plusieurs dizaines de milliers de malades.",
+      "Cherche principalement l’efficacité thérapeutique à long terme sur de très grands effectifs."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La phase I est la première exposition humaine, souvent chez des sujets sains, avec montée progressive des doses et étude de la tolérance/pharmacocinétique.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_008",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "easy",
+    "question": "La phase II vise principalement à :",
+    "choices": [
+      "Évaluer uniquement la couleur et la forme des comprimés.",
+      "Étudier le médicament chez un petit nombre de patients malades.",
+      "Rechercher une dose offrant un bon compromis efficacité-tolérance.",
+      "Remplacer la phase I par un essai de pharmacovigilance.",
+      "Obtenir directement l’autorisation de mise sur le marché sans autre étude."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Après une phase I rassurante, la phase II cherche un signal d’efficacité et la dose adaptée chez des patients malades.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_009",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "medium",
+    "question": "Concernant la phase III :",
+    "choices": [
+      "Elle se déroule uniquement après la commercialisation.",
+      "Il s’agit de l’étude pivot.",
+      "Elle est classiquement réalisée uniquement chez des sujets sains.",
+      "Elle compare le traitement à une référence ou à un placebo selon la situation.",
+      "Elle ne contribue pas à l’évaluation du rapport bénéfice-risque."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La phase III est l’étude pivot, généralement plus large, comparative et destinée à documenter le bénéfice-risque avant l’autorisation.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_010",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Médicament & développement",
+    "difficulty": "hard",
+    "question": "À propos de la méthodologie d’un essai clinique :",
+    "choices": [
+      "Le double aveugle signifie que le patient et le médecin ignorent le traitement attribué.",
+      "Un placebo possède le même principe actif à dose plus faible.",
+      "La randomisation garantit que tous les patients reçoivent le nouveau médicament.",
+      "Un essai ouvert est, par définition, en double aveugle.",
+      "La randomisation répartit aléatoirement les participants entre les groupes."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "La randomisation organise une attribution aléatoire. Le double aveugle masque l’allocation au patient et au médecin ; le placebo n’apporte pas l’action pharmacologique spécifique du médicament étudié.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_011",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "easy",
+    "question": "La forme galénique :",
+    "choices": [
+      "Peut modifier l’absorption du principe actif.",
+      "Ne peut jamais modifier la durée d’action.",
+      "Désigne uniquement la DCI.",
+      "Correspond à la manière dont le médicament est présenté pour être administré.",
+      "Est toujours identique quelle que soit la voie d’administration."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "La galénique entoure le principe actif et peut modifier son absorption, sa diffusion et sa libération. Elle comprend par exemple comprimé, gélule ou forme retard.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_012",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "medium",
+    "question": "Une prodrogue est :",
+    "choices": [
+      "Une forme galénique dépourvue de principe actif.",
+      "Un médicament qui ne subit jamais de métabolisme.",
+      "Une molécule administrée sous une forme initialement inactive ou peu active.",
+      "Un placebo utilisé en double aveugle.",
+      "Une molécule qui doit être transformée par l’organisme pour devenir active."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le cours définit la prodrogue comme une molécule nécessitant une transformation enzymatique pour devenir active.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’une prodrogue?",
+        "answers": [
+          "Une molécule administrée sous une forme initialement inactive ou peu active. ; Une molécule qui doit être transformée par l’organisme pour devenir active."
+        ],
+        "explanation": "Le cours définit la prodrogue comme une molécule nécessitant une transformation enzymatique pour devenir active.",
+        "kind": "Définition",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_013",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "easy",
+    "question": "Concernant la voie intraveineuse :",
+    "choices": [
+      "En bolus, la quantité maximale dans le sang est présente d’emblée.",
+      "Le médicament est placé directement dans la circulation.",
+      "Elle nécessite une absorption intestinale préalable.",
+      "Sa biodisponibilité est nécessairement inférieure à 50 %.",
+      "Elle correspond à une voie orale particulière."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La voie IV met directement le médicament dans le sang. En bolus, la concentration est maximale immédiatement, sans étape d’absorption digestive.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_014",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "easy",
+    "question": "Parmi les voies suivantes, lesquelles sont parentérales ?",
+    "choices": [
+      "Rectale.",
+      "Orale.",
+      "Sublinguale.",
+      "Intraveineuse.",
+      "Intramusculaire."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Les voies IM, IV et sous-cutanée sont des voies parentérales. Les voies orale et rectale ne sont pas classées ainsi dans le tableau du cours.",
+    "flashcards": [
+      {
+        "front": "Quels exemples de voies d’administration parentérales peut-on citer ?",
+        "answers": [
+          "Intraveineuse. ; Intramusculaire."
+        ],
+        "explanation": "Les voies IM, IV et sous-cutanée sont des voies parentérales. Les voies orale et rectale ne sont pas classées ainsi dans le tableau du cours.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_015",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "medium",
+    "question": "Quelles mesures participent à l’asepsie d’une administration invasive ?",
+    "choices": [
+      "Réutiliser des gants stériles entre deux patients.",
+      "Réaliser l’hygiène des mains.",
+      "Préparer le site selon le protocole validé et préserver la stérilité du matériel.",
+      "Conserver bagues et montre sous les gants.",
+      "Réutiliser du matériel à usage unique après simple essuyage."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Hygiène des mains, préparation du site selon la procédure et absence de recontamination participent à l’asepsie. Gants et matériel ne sont pas réutilisés entre patients.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_017",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Formes & administration",
+    "difficulty": "easy",
+    "question": "Un flacon de 250 mL de glucose à 5 % contient :",
+    "choices": [
+      "12,5 g de glucose.",
+      "1,25 g de glucose.",
+      "5 g de glucose.",
+      "25 g de glucose.",
+      "125 g de glucose."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Une solution à 5 % contient 5 g pour 100 mL. Pour 250 mL : 5 × 2,5 = 12,5 g.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_019",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "easy",
+    "question": "La pharmacodynamie correspond :",
+    "choices": [
+      "À l’étude exclusive de l’élimination rénale.",
+      "À la vitesse de vidange gastrique.",
+      "À l’étude exclusive des concentrations plasmatiques dans le temps.",
+      "À la quantité de médicament absorbée dans le sang.",
+      "À l’action du médicament sur l’organisme."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "La pharmacodynamie décrit ce que le médicament fait à l’organisme : cible, mécanisme et effets.",
+    "flashcards": [
+      {
+        "front": "À quoi correspond la pharmacodynamie?",
+        "answers": [
+          "À l’action du médicament sur l’organisme."
+        ],
+        "explanation": "La pharmacodynamie décrit ce que le médicament fait à l’organisme : cible, mécanisme et effets.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_020",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "easy",
+    "question": "Les quatre grands types de cibles à retenir sont : — Repères : A. Canaux ioniques. • B. Enzymes. • C. Récepteurs. • D. Transporteurs. • E. Chromosomes comme seule cible universelle. — Quelle combinaison regroupe toutes les bonnes réponses ?",
+    "choices": [
+      "A + B + C + D",
+      "B + C + D + E",
+      "A + C + D + E",
+      "A + B + D + E",
+      "A + B + C + E"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le message oral majeur est de retenir quatre familles : récepteurs, canaux, enzymes et transporteurs. Combinaison correcte : A + B + C + D.",
+    "flashcards": [
+      {
+        "front": "Quels sont les quatre grands types de cibles à retenir?",
+        "answers": [
+          "Canaux ioniques. ; Enzymes. ; Récepteurs. ; Transporteurs."
+        ],
+        "explanation": "Le message oral majeur est de retenir quatre familles : récepteurs, canaux, enzymes et transporteurs. Combinaison correcte : A + B + C + D.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_023",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium",
+    "question": "Parmi les types de récepteurs présentés dans le support figurent : — Repères : A. Récepteurs-canaux. • B. Récepteurs couplés aux protéines G. • C. Récepteurs à activité enzymatique. • D. Uniquement des récepteurs présents dans le plasma sanguin. • E. Récepteurs cytosoliques ou nucléaires. — Quelle combinaison regroupe toutes les bonnes réponses ?",
+    "choices": [
+      "A + B + D + E",
+      "A + B + C + E",
+      "A + B + C + D",
+      "B + C + D + E",
+      "A + C + D + E"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le support présente quatre grandes familles de récepteurs : canaux, activité enzymatique, intracellulaires et couplés aux protéines G. Combinaison correcte : A + B + C + E.",
+    "flashcards": [
+      {
+        "front": "Quels sont les quatre types de récepteurs pharmacologiques ?",
+        "answers": [
+          "Récepteurs-canaux. ; Récepteurs couplés aux protéines G. ; Récepteurs à activité enzymatique. ; Récepteurs cytosoliques ou nucléaires."
+        ],
+        "explanation": "Le support présente quatre grandes familles de récepteurs : canaux, activité enzymatique, intracellulaires et couplés aux protéines G. Combinaison correcte : A + B + C + E.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_025",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "easy",
+    "question": "Un ligand est :",
+    "choices": [
+      "Toujours un principe actif administré par voie IV.",
+      "Un type de voie d’administration.",
+      "Une molécule qui se fixe à une cible.",
+      "Toujours un antagoniste.",
+      "Un excipient sans interaction avec une cible."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le ligand est défini simplement comme une molécule qui se fixe sur une cible.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un ligand?",
+        "answers": [
+          "Une molécule qui se fixe à une cible."
+        ],
+        "explanation": "Le ligand est défini simplement comme une molécule qui se fixe sur une cible.",
+        "kind": "Définition",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_027",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "easy",
+    "question": "Un agoniste :",
+    "choices": [
+      "Active sa cible.",
+      "Est défini par sa voie d’élimination rénale.",
+      "Est toujours un excipient.",
+      "Bloque nécessairement toute activité du récepteur.",
+      "Est synonyme de placebo."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’agoniste est un ligand qui entraîne une activation de la cible.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_029",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacodynamie",
+    "difficulty": "hard",
+    "question": "À propos d’un antagoniste et de l’IC50 :",
+    "choices": [
+      "Plus on ajoute d’antagoniste, plus l’effet de l’agoniste augmente obligatoirement.",
+      "Un antagoniste est défini comme un agoniste produisant un effet opposé.",
+      "L’IC50 correspond au temps nécessaire pour éliminer 50 % du médicament.",
+      "L’IC50 est, dans l’exemple du cours, la concentration d’antagoniste qui réduit de 50 % l’effet de l’agoniste.",
+      "Un antagoniste bloque ou réduit l’effet de l’agoniste."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "L’antagoniste réduit l’activation provoquée par l’agoniste. L’IC50 présentée ici quantifie la concentration d’antagoniste nécessaire pour diminuer l’effet de moitié.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_030",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "easy",
+    "question": "La pharmacocinétique correspond :",
+    "choices": [
+      "Uniquement à la fixation du médicament sur son récepteur.",
+      "À ce que l’organisme fait au médicament.",
+      "Uniquement au mécanisme du récepteur.",
+      "À la définition de l’agoniste.",
+      "Exclusivement à la prescription légale."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La pharmacocinétique décrit l’absorption, la distribution, le métabolisme et l’élimination et suit les concentrations dans le temps.",
+    "flashcards": [
+      {
+        "front": "À quoi correspond la pharmacocinétique?",
+        "answers": [
+          "À ce que l’organisme fait au médicament."
+        ],
+        "explanation": "La pharmacocinétique décrit l’absorption, la distribution, le métabolisme et l’élimination et suit les concentrations dans le temps.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_031",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "easy",
+    "question": "Dans le schéma ADME, on retrouve : — Repères : A. Distribution. • B. Randomisation. • C. Élimination. • D. Métabolisme. • E. Absorption. — Quelle combinaison regroupe toutes les bonnes réponses ?",
+    "choices": [
+      "A + C + D + E",
+      "A + B + D + E",
+      "A + B + C + E",
+      "A + B + C + D",
+      "B + C + D + E"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "ADME résume Absorption, Distribution, Métabolisme et Élimination. Combinaison correcte : A + C + D + E.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_032",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Les facteurs pouvant modifier l’absorption intestinale cités dans le cours comprennent :",
+    "choices": [
+      "Le pH gastrique.",
+      "La vidange gastrique.",
+      "Le groupe sanguin est le principal déterminant du transit intestinal dans le cours.",
+      "Le groupe sanguin comme facteur principal cité.",
+      "La couleur du comprimé comme facteur pharmacocinétique majeur."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le support cite pH, vidange gastrique, transit/temps de contact, repas et propriétés physicochimiques comme facteurs d’absorption.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_033",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Concernant la lipophilie et les repas, le cours indique :",
+    "choices": [
+      "Un repas riche en graisse peut augmenter l’absorption de médicaments très lipophiles.",
+      "La présence de lipides diminue toujours l’absorption de toutes les molécules.",
+      "Les médicaments très hydrophiles peuvent être mieux pris hors repas avec de l’eau dans l’explication donnée.",
+      "La lipophilie n’a aucun lien avec le passage des membranes.",
+      "Tous les médicaments doivent obligatoirement être pris à jeun."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "L’enseignant relie la lipophilie aux membranes lipidiques et explique que certains médicaments lipophiles sont mieux absorbés avec un repas gras, tandis que d’autres doivent être pris à distance des repas.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_034",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "hard",
+    "question": "À propos du pH et de l’ionisation :",
+    "choices": [
+      "Une molécule ionisée devient automatiquement plus lipophile.",
+      "Le caractère acide ou basique d’un médicament peut modifier son absorption.",
+      "Le pH n’a aucun effet sur l’absorption intestinale.",
+      "Tous les médicaments sont absorbés de façon identique quel que soit le pH.",
+      "Une forme ionisée traverse moins bien les membranes dans le modèle expliqué."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le cours relie l’état acide/base à l’ionisation. La forme ionisée passe moins facilement la membrane, ce qui peut modifier le site et l’importance de l’absorption.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_035",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "La P-glycoprotéine intestinale :",
+    "choices": [
+      "Facilite obligatoirement l’entrée de tous les médicaments dans le sang.",
+      "N’existe que dans le foie.",
+      "Est un récepteur nucléaire.",
+      "Est un transporteur d’efflux.",
+      "Peut renvoyer le médicament vers la lumière intestinale."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "La P-gp est présentée comme un transporteur d’efflux, notamment au pôle apical des entérocytes, limitant le passage vers le sang.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_036",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Le volume de distribution (Vd) :",
+    "choices": [
+      "Ne peut jamais dépasser le volume réel du corps.",
+      "Un Vd proche du volume sanguin suggère que le médicament reste surtout dans le secteur vasculaire.",
+      "Est un volume théorique.",
+      "Est identique à la clairance.",
+      "Indique précisément dans quel organe le médicament s’est accumulé."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le Vd est un volume mathématique : un Vd élevé traduit une forte diffusion/captation tissulaire, mais ne précise pas le tissu concerné et peut dépasser les volumes anatomiques réels.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_037",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "hard",
+    "question": "Concernant le métabolisme médicamenteux :",
+    "choices": [
+      "Il a lieu principalement dans le foie dans le modèle présenté.",
+      "Les réactions de conjugaison peuvent rendre la molécule plus hydrophile.",
+      "Son objectif est toujours de rendre la molécule plus lipophile.",
+      "Les cytochromes P450 participent à des réactions de métabolisation.",
+      "Il concerne 100 % des médicaments sans exception."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le foie est un site majeur de métabolisme. Des CYP participent à des réactions de phase I ; certaines conjugaisons augmentent l’hydrophilie. Ces voies ne concernent pas uniformément tous les médicaments et ne se succèdent pas obligatoirement.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_038",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Le premier passage présystémique intestinal et hépatique :",
+    "choices": [
+      "Peut réduire la quantité de médicament atteignant la circulation générale.",
+      "Augmente systématiquement la biodisponibilité à 100 %.",
+      "Est synonyme de clairance rénale.",
+      "Ne concerne que les médicaments administrés en IV.",
+      "Met en jeu l’intestin puis le foie avant la circulation générale."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Le premier passage associe barrières intestinales et métabolisme hépatique avant l’arrivée systémique. Il peut diminuer fortement la biodisponibilité d’une dose orale.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_039",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "hard",
+    "question": "L’élimination rénale d’un médicament peut faire intervenir :",
+    "choices": [
+      "Uniquement une transformation par les récepteurs nucléaires.",
+      "Exclusivement la voie biliaire.",
+      "Une sécrétion tubulaire active.",
+      "Une filtration glomérulaire passive.",
+      "La randomisation des patients."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le cours distingue filtration glomérulaire passive et sécrétion tubulaire active avec des transporteurs.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_040",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "À propos de la demi-vie :",
+    "choices": [
+      "Elle ne dépend jamais de la capacité d’élimination de l’organisme.",
+      "Dans un modèle de premier ordre, environ 3,1 % de la quantité initiale restent après cinq demi-vies.",
+      "Une demi-vie de 50 h signifie que le médicament est totalement éliminé en 50 h.",
+      "Elle correspond au temps nécessaire pour diminuer de moitié la quantité/concentration du médicament dans le modèle simplifié.",
+      "Elle est identique pour tous les médicaments."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La fraction restante vaut (1/2)ⁿ dans ce modèle : 3,125 % après cinq demi-vies, environ 0,78 % après sept. Une demi-vie ne correspond pas à une élimination complète ni nécessairement à la durée d’action.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_041",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "easy",
+    "question": "Sous administrations régulières d’un même médicament :",
+    "choices": [
+      "Le nombre de prises n’influence jamais les variations de Cmax et Cmin.",
+      "La concentration ne varie jamais avec la fréquence d’administration.",
+      "La demi-vie ne sert jamais à estimer l’accumulation.",
+      "L’état d’équilibre est atteint immédiatement après la première prise quel que soit le médicament.",
+      "L’état d’équilibre est atteint approximativement après 5 demi-vies dans le modèle présenté."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Le cours utilise la règle simplifiée d’environ 5 demi-vies pour atteindre l’état d’équilibre lors de prises répétées.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_042",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "hard",
+    "question": "Concernant biodisponibilité et voie IV :",
+    "choices": [
+      "La biodisponibilité absolue compare une voie donnée à la voie IV.",
+      "Biodisponibilité et demi-vie sont strictement synonymes.",
+      "La biodisponibilité IV est de 100 % par définition.",
+      "Si 10 mg sont administrés et 1 mg atteint la circulation générale, F = 10 %.",
+      "Une biodisponibilité absolue peut dépasser 100 %."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La voie IV sert de référence à 100 %. La biodisponibilité absolue est la fraction de la dose qui atteint la circulation générale : 1/10 = 10 %.",
+    "flashcards": [
+      {
+        "front": "Quelle est la valeur de la biodisponibilité IV?",
+        "answers": [
+          "100 % par définition"
+        ],
+        "explanation": "La voie IV sert de référence à 100 %. La biodisponibilité absolue est la fraction de la dose qui atteint la circulation générale : 1/10 = 10 %.",
+        "kind": "Valeur à connaître",
+        "atomic": false,
+        "preserveFront": true
+      },
+      {
+        "front": "Quelle biodisponibilité (F) obtient-on si 10 mg sont administrés et 1 mg atteint la circulation générale?",
+        "answers": [
+          "10 %"
+        ],
+        "explanation": "La voie IV sert de référence à 100 %. La biodisponibilité absolue est la fraction de la dose qui atteint la circulation générale : 1/10 = 10 %.",
+        "kind": "Valeur à connaître",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_043",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Concernant le dosage plasmatique d’un médicament :",
+    "choices": [
+      "Un prélèvement peut être réalisé au pic de concentration (Cmax) selon l’objectif.",
+      "La Cmax est toujours mesurée plusieurs jours après l’arrêt du traitement.",
+      "Un prélèvement résiduel se fait juste avant la prise suivante.",
+      "Le moment du prélèvement n’a jamais d’importance.",
+      "Un dosage résiduel se fait immédiatement après une injection IV en bolus."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le cours demande de savoir qu’un dosage peut cibler la Cmax ou la concentration résiduelle, selon le médicament et ce que l’on cherche à surveiller.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_044",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium",
+    "question": "Une interaction pharmacodynamique peut correspondre :",
+    "choices": [
+      "Toujours à une induction enzymatique.",
+      "À un antagonisme entre deux médicaments agissant sur une même voie.",
+      "À une variation de la couleur des comprimés.",
+      "Uniquement à une modification de l’absorption intestinale.",
+      "À l’addition des effets de deux médicaments."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les interactions pharmacodynamiques modifient l’effet au niveau des mécanismes d’action : addition/synergie ou antagonisme.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_045",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "hard",
+    "question": "Une interaction pharmacocinétique peut modifier :",
+    "choices": [
+      "Uniquement la forme de l’ordonnance.",
+      "Le principe de randomisation d’un essai.",
+      "Le métabolisme.",
+      "L’absorption.",
+      "L’élimination."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Une interaction pharmacocinétique modifie les concentrations en agissant sur l’absorption, la distribution, le métabolisme ou l’élimination.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_046",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "hard",
+    "question": "La rifampicine, dans l’exemple du cours :",
+    "choices": [
+      "Peut diminuer la concentration et l’efficacité de certains traitements associés.",
+      "Peut augmenter la clairance de médicaments métabolisés par cette voie.",
+      "Est présentée comme un inhibiteur enzymatique majeur.",
+      "Allonge obligatoirement la demi-vie des médicaments métabolisés par CYP3A4.",
+      "Est un inducteur du CYP3A4."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "L’induction du CYP3A4 accélère le métabolisme : clairance augmente, demi-vie et concentration diminuent, avec risque de perte d’efficacité.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_047",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "hard",
+    "question": "Concernant l’exemple tamoxifène-paroxétine :",
+    "choices": [
+      "Cet exemple illustre uniquement une interaction pharmacodynamique sans effet sur les concentrations/métabolites.",
+      "L’inhibition peut réduire la formation d’endoxifène.",
+      "Le tamoxifène est présenté comme une prodrogue devant être transformée en métabolite actif.",
+      "La paroxétine inhibe le CYP2D6 dans l’exemple.",
+      "La paroxétine induit obligatoirement la formation du métabolite actif."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le cours illustre une interaction pharmacocinétique par inhibition du CYP2D6 : moins de transformation du tamoxifène en métabolite actif.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_048",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium",
+    "question": "Un médicament à indice thérapeutique étroit :",
+    "choices": [
+      "Est particulièrement sensible aux variations pharmacocinétiques.",
+      "Ne peut jamais devenir toxique.",
+      "N’est jamais concerné par les interactions médicamenteuses.",
+      "Reste efficace quelle que soit la concentration.",
+      "Possède une faible marge entre concentrations efficaces et concentrations à risque."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Une petite variation peut faire sortir de la zone thérapeutique : sous-dosage ou toxicité. Les interactions y sont donc particulièrement importantes.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_052",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "medium",
+    "question": "Parmi les informations d’une ordonnance décrites dans le cours figurent :",
+    "choices": [
+      "La signature est inutile si le médicament est en DCI.",
+      "L’identification du patient.",
+      "Le groupe sanguin du patient est toujours obligatoire.",
+      "L’identification du prescripteur et la date.",
+      "Le médicament, sa forme, sa posologie et la quantité/durée à délivrer."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "L’ordonnance doit identifier prescripteur et patient et préciser le traitement, sa forme, la posologie, la fréquence/voie et la durée ou quantité, avec date et signature selon les règles expliquées.",
+    "flashcards": [
+      {
+        "front": "Quelles informations doit contenir une ordonnance ?",
+        "answers": [
+          "L’identification du patient. ; L’identification du prescripteur et la date. ; Le médicament, sa forme, sa posologie et la quantité/durée à délivrer."
+        ],
+        "explanation": "L’ordonnance doit identifier prescripteur et patient et préciser le traitement, sa forme, la posologie, la fréquence/voie et la durée ou quantité, avec date et signature selon les règles expliquées.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_053",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "medium",
+    "question": "Concernant l’automédication :",
+    "choices": [
+      "Un produit acheté sur Internet possède toujours une composition garantie.",
+      "Un médicament en vente libre peut interagir avec un traitement prescrit.",
+      "Le millepertuis est cité comme exemple de substance pouvant induire des interactions.",
+      "Il faut interroger le patient sur les plantes et produits pris sans ordonnance.",
+      "Les produits naturels sont exclus des interactions médicamenteuses."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le cours insiste sur l’interrogatoire de toutes les substances, y compris le millepertuis, et sur les risques de produits achetés sur Internet.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_054",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "medium",
+    "question": "Le mésusage d’un médicament correspond :",
+    "choices": [
+      "À une utilisation intentionnelle et inappropriée, non conforme aux conditions d’utilisation du médicament.",
+      "À une situation pouvant exposer à des dommages iatrogènes.",
+      "À une attribution aléatoire dans un essai.",
+      "À toute réaction nocive, indépendamment de son contexte.",
+      "À toute utilisation conforme au RCP."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le mésusage décrit une utilisation intentionnelle et inappropriée. Il se distingue de l’erreur non intentionnelle et de la réaction indésirable elle-même. Une prescription hors AMM justifiée ne doit pas être assimilée automatiquement à un mésusage.",
+    "flashcards": [
+      {
+        "front": "À quoi correspond le mésusage d’un médicament?",
+        "answers": [
+          "Une utilisation intentionnelle et inappropriée, non conforme aux conditions d’utilisation du médicament."
+        ],
+        "explanation": "Le mésusage décrit une utilisation intentionnelle et inappropriée. Il se distingue de l’erreur non intentionnelle et de la réaction indésirable elle-même. Une prescription hors AMM justifiée ne doit pas être assimilée automatiquement à un mésusage.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_055",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "medium",
+    "question": "Concernant l’iatrogénie médicamenteuse :",
+    "choices": [
+      "Aucun dommage médicamenteux n’est évitable.",
+      "Elle concerne uniquement les voies injectables.",
+      "Les interactions ne peuvent pas contribuer à un dommage.",
+      "Elle comprend les dommages liés à l’utilisation de médicaments.",
+      "Une partie peut être prévenue par vérification des interactions et surveillance adaptées."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "L’iatrogénie médicamenteuse comprend les dommages liés aux médicaments. L’identification des interactions, des terrains à risque et une surveillance adaptée peuvent prévenir une partie des événements. Aucun chiffre national non daté n’est nécessaire à cette définition.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_056",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacovigilance",
+    "difficulty": "easy",
+    "question": "La pharmacovigilance correspond :",
+    "choices": [
+      "À l’identification des effets indésirables.",
+      "Uniquement aux essais précliniques avant toute administration humaine.",
+      "À leur évaluation et leur prévention.",
+      "À la fabrication des génériques.",
+      "Uniquement au calcul des doses de morphine."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La pharmacovigilance est définie comme l’ensemble des techniques d’identification, d’évaluation et de prévention des effets indésirables des médicaments mis sur le marché.",
+    "flashcards": [
+      {
+        "front": "À quoi correspond la pharmacovigilance?",
+        "answers": [
+          "À l’identification des effets indésirables. ; À leur évaluation et leur prévention."
+        ],
+        "explanation": "La pharmacovigilance est définie comme l’ensemble des techniques d’identification, d’évaluation et de prévention des effets indésirables des médicaments mis sur le marché.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_057",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacovigilance",
+    "difficulty": "easy",
+    "question": "Quelles propositions définissent correctement un effet indésirable médicamenteux ?",
+    "choices": [
+      "Il s’agit obligatoirement d’un effet thérapeutique recherché.",
+      "Toute utilisation hors AMM constitue à elle seule une réaction indésirable.",
+      "C’est une réaction nocive et non voulue suspectée d’être due à un médicament.",
+      "La pharmacovigilance exclut les réactions après une erreur de dose.",
+      "Cette réaction est toujours bénigne."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Une réaction nocive et non voulue suspectée d’être due au médicament peut survenir dans un usage conforme ou dans un contexte de mésusage, surdosage ou erreur. Le contexte d’utilisation et la réaction ne sont pas synonymes.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un effet indésirable?",
+        "answers": [
+          "C’est une réaction nocive et non voulue suspectée d’être due à un médicament."
+        ],
+        "explanation": "Une réaction nocive et non voulue suspectée d’être due au médicament peut survenir dans un usage conforme ou dans un contexte de mésusage, surdosage ou erreur. Le contexte d’utilisation et la réaction ne sont pas synonymes.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_058",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacovigilance",
+    "difficulty": "medium",
+    "question": "Sont considérés comme effets indésirables graves dans le cours : — Repères : A. Une hospitalisation ou sa prolongation. • B. Le décès. • C. Une simple modification sans conséquence clinique, par définition toujours grave. • D. La mise en jeu du pronostic vital. • E. Une incapacité importante ou une malformation congénitale. — Quelle combinaison regroupe toutes les bonnes réponses ?",
+    "choices": [
+      "B + C + D + E",
+      "A + C + D + E",
+      "A + B + D + E",
+      "A + B + C + E",
+      "A + B + C + D"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le cours énumère plusieurs critères de gravité : décès, pronostic vital, hospitalisation/prolongation, incapacité/invalidité importante ou malformation congénitale. Combinaison correcte : A + B + D + E.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_059",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacovigilance",
+    "difficulty": "medium",
+    "question": "Concernant la déclaration de pharmacovigilance :",
+    "choices": [
+      "Une déclaration n’est possible qu’avant la mise sur le marché.",
+      "Les infirmiers peuvent réaliser une déclaration.",
+      "Seul le laboratoire pharmaceutique peut déclarer.",
+      "Les effets graves ou nouveaux/inattendus sont particulièrement importants à notifier.",
+      "Tout le monde peut déclarer un effet indésirable."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Le cours indique que tout le monde peut déclarer et encourage les professionnels, dont les infirmiers, à signaler notamment les événements graves ou nouveaux/inattendus.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_060",
+    "courseId": "pharmacologie",
+    "ue": "S1 B1",
+    "course": "Introduction à la pharmacologie",
+    "theme": "Pharmacovigilance",
+    "difficulty": "hard",
+    "question": "Pour apprécier l’imputabilité d’un médicament dans un effet indésirable :",
+    "choices": [
+      "La chronologie entre la prise et l’apparition de l’effet est examinée.",
+      "Un rechallenge doit toujours être réalisé même après un choc anaphylactique.",
+      "La cohérence clinique avec le mécanisme peut être prise en compte.",
+      "La littérature et les cas déjà rapportés sont sans intérêt.",
+      "La disparition après arrêt du médicament renforce l’argument chronologique."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’analyse combine des critères chronologiques et sémiologiques. Une réintroduction peut renforcer l’imputabilité mais ne doit pas être provoquée lorsqu’elle expose à un risque grave.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_016",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant les précautions pratiques d’administration vues dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Tous les comprimés peuvent être écrasés sans conséquence.",
+      "Certains médicaments ne doivent pas être écrasés et doivent être administrés sous leur forme prévue.",
+      "Pour certains médicaments, la prise à jeun ou par rapport aux repas influence l’efficacité.",
+      "La voie d’administration ne modifie jamais l’absorption.",
+      "Il faut toujours vérifier les unités utilisées pour la prescription et l’administration."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le cours rappelle que certains médicaments ne doivent pas être écrasés, que la prise par rapport aux repas peut modifier l’absorption et qu’une vigilance constante sur les unités est indispensable. Il ne faut donc pas considérer toutes les formes comme interchangeables.",
+    "theme": "Formes & administration",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_018",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quel repère d’unité est correct selon le cours ?",
+    "choices": [
+      "1 g = 100 mg.",
+      "1 L = 100 mL.",
+      "1 mL = 10 cm³.",
+      "1 mL = 1 cm³ = 1 cc.",
+      "Les mmol et les mEq sont toujours strictement équivalents quelle que soit la substance."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le support donne le repère 1 mL = 1 cm³ = 1 cc. Les conversions usuelles doivent être maîtrisées : 1 g = 1000 mg et 1 L = 1000 mL. Les mmol et mEq ne sont pas des unités interchangeables dans toutes les situations.",
+    "theme": "Formes & administration",
+    "difficulty": "easy",
+    "flashcards": [
+      {
+        "front": "Quel repère d’unité est correct?",
+        "answers": [
+          "1 mL = 1 cm³ = 1 cc."
+        ],
+        "explanation": "Le support donne le repère 1 mL = 1 cm³ = 1 cc. Les conversions usuelles doivent être maîtrisées : 1 g = 1000 mg et 1 L = 1000 mL. Les mmol et mEq ne sont pas des unités interchangeables dans toutes les situations.",
+        "kind": "Valeur à connaître",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_021",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quelles associations cible–exemple correspondent aux exemples du support ?",
+    "choices": [
+      "Récepteur → inhibiteur de l’enzyme de conversion.",
+      "Canal ionique → bêta-bloquant.",
+      "Enzyme → inhibiteur de l’enzyme de conversion.",
+      "Transporteur → antagoniste dopaminergique.",
+      "Transporteur → inhibiteur de la pompe à protons."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le support associe notamment les enzymes aux inhibiteurs de l’enzyme de conversion et les transporteurs aux inhibiteurs de la pompe à protons. Il donne aussi les bêta-bloquants comme exemple de médicaments agissant sur des récepteurs et les inhibiteurs calciques comme exemple lié aux canaux.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quel exemple du cours cible une enzyme ?",
+        "answers": [
+          "Les IEC inhibent l’enzyme de conversion de l’angiotensine."
+        ],
+        "explanation": "Le support associe notamment les enzymes aux inhibiteurs de l’enzyme de conversion et les transporteurs aux inhibiteurs de la pompe à protons. Il donne aussi les bêta-bloquants comme exemple de médicaments agissant sur des récepteurs et les inhibiteurs calciques comme exemple lié aux canaux.",
+        "kind": "Association",
+        "atomic": false,
+        "preserveFront": true
+      },
+      {
+        "front": "Quelle pompe est ciblée par les IPP ?",
+        "answers": [
+          "La pompe H+/K+-ATPase gastrique."
+        ],
+        "explanation": "Le support associe notamment les enzymes aux inhibiteurs de l’enzyme de conversion et les transporteurs aux inhibiteurs de la pompe à protons. Il donne aussi les bêta-bloquants comme exemple de médicaments agissant sur des récepteurs et les inhibiteurs calciques comme exemple lié aux canaux.",
+        "kind": "Association",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_022",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "À propos de l’inhibition compétitive et non compétitive d’une enzyme, quelles propositions sont exactes ?",
+    "choices": [
+      "Dans l’inhibition compétitive expliquée en cours, le médicament occupe le site actif et gêne la fixation du substrat.",
+      "Une inhibition compétitive signifie que le médicament détruit définitivement l’enzyme.",
+      "Une inhibition non compétitive impose toujours une fixation sur le même site que le substrat.",
+      "Dans l’exemple non compétitif, le médicament peut se fixer ailleurs sur l’enzyme et rendre le site catalytique inactif.",
+      "Compétitive et non compétitive désignent uniquement deux voies d’administration."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’enseignant distingue l’inhibition compétitive, où le médicament concurrence le substrat au niveau du site actif, et l’inhibition non compétitive, où une fixation sur un autre site peut rendre l’enzyme inactive. Ces notions concernent le mécanisme d’action, pas la voie d’administration.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_024",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Parmi les propositions suivantes, lesquelles correspondent à des seconds messagers cités dans le cours sur les récepteurs couplés aux protéines G ?",
+    "choices": [
+      "L’albumine plasmatique.",
+      "L’AMPc.",
+      "La P-glycoprotéine.",
+      "Le calcium intracellulaire.",
+      "Le CYP2D6."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le support présente notamment l’AMPc dans les voies Gs/Gi et le calcium intracellulaire dans la voie Gq, avec DAG et IP3. Albumine, P-glycoprotéine et CYP2D6 ont d’autres rôles pharmacologiques.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "hard",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_026",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant l’affinité et la constante Kd présentées dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Une forte affinité signifie que le ligand ne peut pas se fixer au récepteur.",
+      "L’affinité décrit la tendance d’un ligand à se fixer à sa cible.",
+      "Le Kd mesure directement la demi-vie d’élimination.",
+      "Le Kd correspond à la concentration donnant 100 % d’occupation des récepteurs.",
+      "Dans le schéma du cours, le Kd est relié à la concentration correspondant à 50 % de fixation."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "L’affinité traduit la tendance du ligand à se fixer à sa cible. Le support représente le Kd comme la concentration correspondant à 50 % de fixation. Il ne s’agit ni d’un paramètre d’élimination ni d’une concentration donnant 100 % d’occupation.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_028",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "À propos de la CE50, de la DE50 et de l’Emax, quelles propositions sont exactes ?",
+    "choices": [
+      "L’Emax est une concentration éliminant la moitié du médicament.",
+      "CE50 et DE50 désignent toujours la même grandeur physique.",
+      "La CE50 est la concentration donnant la moitié de l’effet maximal ; la DE50 désigne une dose.",
+      "Un agoniste partiel peut avoir un effet maximal inférieur à celui d’un agoniste plein dans le même système.",
+      "Une puissance plus grande implique toujours un Emax plus grand."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "CE50 se lit sur un axe de concentration ; DE50 sur un axe de dose. Emax décrit le maximum de réponse. Puissance et efficacité sont distinctes ; le maximum d’un agoniste partiel peut être inférieur.",
+    "theme": "Pharmacodynamie",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_049",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant grossesse et allaitement, quelles propositions correspondent au cours ?",
+    "choices": [
+      "La compatibilité d’un médicament avec la grossesse ou l’allaitement doit être vérifiée.",
+      "Le placenta empêche systématiquement le passage des médicaments.",
+      "Le volume de distribution est nécessairement identique à celui d’une personne non enceinte.",
+      "Le CRAT est cité comme ressource de référence pour vérifier les risques liés aux médicaments pendant la grossesse et l’allaitement.",
+      "Un médicament tératogène est sans conséquence pour le développement fœtal."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’enseignant insiste sur la vérification systématique de la compatibilité des traitements chez la femme enceinte ou allaitante et répète le CRAT comme ressource pratique de référence. La grossesse modifie aussi des paramètres pharmacocinétiques, notamment le volume de distribution.",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_050",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Quelles situations peuvent modifier la pharmacocinétique et nécessiter une vigilance particulière selon le cours ?",
+    "choices": [
+      "Le nouveau-né ou l’enfant, en raison notamment de l’immaturité de certaines fonctions d’élimination et de métabolisme.",
+      "Le sujet âgé, chez qui les fonctions rénale et hépatique peuvent être diminuées.",
+      "Des variations génétiques des enzymes de métabolisation, comme le CYP2D6.",
+      "Uniquement la couleur des comprimés.",
+      "Aucune : une même dose donne toujours les mêmes concentrations chez tous les patients."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours montre que l’âge, la maturation ou le vieillissement des fonctions rénale et hépatique ainsi que des polymorphismes génétiques comme ceux du CYP2D6 peuvent modifier l’exposition au médicament. Une même posologie ne conduit donc pas toujours aux mêmes concentrations.",
+    "theme": "Interactions & terrains à risque",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelles situations peuvent modifier la pharmacocinétique et nécessiter une vigilance particulière?",
+        "answers": [
+          "Le nouveau-né ou l’enfant, en raison notamment de l’immaturité de certaines fonctions d’élimination et de métabolisme. ; Le sujet âgé, chez qui les fonctions rénale et hépatique peuvent être diminuées. ; Des variations génétiques des enzymes de métabolisation, comme le CYP2D6."
+        ],
+        "explanation": "Le cours montre que l’âge, la maturation ou le vieillissement des fonctions rénale et hépatique ainsi que des polymorphismes génétiques comme ceux du CYP2D6 peuvent modifier l’exposition au médicament. Une même posologie ne conduit donc pas toujours aux mêmes concentrations.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_051",
+    "course": "Introduction à la pharmacologie",
+    "courseId": "pharmacologie",
+    "question": "Concernant les contraintes de prescription et de délivrance présentées dans le cours, quelles propositions sont exactes ?",
+    "choices": [
+      "Tous les médicaments sont soumis exactement aux mêmes règles de prescription.",
+      "La notion de médicament à prescription restreinte signifie qu’il est toujours en vente libre.",
+      "Le cours distingue notamment les médicaments des listes I et II, les stupéfiants et des médicaments à prescription restreinte.",
+      "La catégorie réglementaire n’a aucun effet sur les modalités de prescription ou de délivrance.",
+      "L’enseignant précise que certaines règles dépendent de la profession, du champ d’exercice et du type de médicament."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le support distingue plusieurs catégories et contraintes de prescription ou de délivrance. L’enseignant précise également que les droits de prescription dépendent de la profession et du champ d’exercice, et signale que certaines diapositives historiques doivent être actualisées plutôt que mémorisées comme une liste figée.",
+    "theme": "Prescription & iatrogénie",
+    "difficulty": "hard",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_zip_061",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Calculs et unités",
+    "difficulty": "medium",
+    "question": "Quelles conversions sont exactes ?",
+    "choices": [
+      "1 cg = 1 mg.",
+      "1 cg = 10 mg.",
+      "1 mg = 1000 µg.",
+      "1 L = 100 mL.",
+      "1 mmol = 1 mol."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le préfixe centi désigne un centième de gramme : 1 cg = 0,01 g = 10 mg. Un milligramme contient 1000 microgrammes ; 1 L contient 1000 mL.",
+    "flashcards": [
+      {
+        "front": "Combien de milligrammes contient un centigramme ?",
+        "answers": [
+          "10 mg."
+        ],
+        "explanation": "Le préfixe centi désigne un centième de gramme : 1 cg = 0,01 g = 10 mg. Un milligramme contient 1000 microgrammes ; 1 L contient 1000 mL.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_zip_062",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Calculs et unités",
+    "difficulty": "medium",
+    "question": "Pour un ion divalent, que représentent 300 mEq/L ?",
+    "choices": [
+      "300 mol/L.",
+      "600 mmol/L.",
+      "150 mmol/L.",
+      "150 mol/L.",
+      "300 mmol/L quelle que soit sa charge."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "mEq/L = mmol/L × valeur absolue de la charge. Pour une charge de 2, 300/2 = 150 mmol/L. Cette équivalence d’unités n’est pas une valeur physiologique normale.",
+    "flashcards": [
+      {
+        "front": "Comment convertir des mmol en mEq pour un ion ?",
+        "answers": [
+          "Multiplier les mmol par la valeur absolue de la charge ionique."
+        ],
+        "explanation": "mEq/L = mmol/L × valeur absolue de la charge. Pour une charge de 2, 300/2 = 150 mmol/L. Cette équivalence d’unités n’est pas une valeur physiologique normale.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_zip_063",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Calculs et unités",
+    "difficulty": "medium",
+    "question": "Une solution de NaCl à 0,9 % masse/volume contient :",
+    "choices": [
+      "9 g/L.",
+      "4,5 g dans 500 mL.",
+      "0,9 mg dans 100 mL.",
+      "450 g dans 500 mL.",
+      "Une quantité indépendante du volume."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "0,9 % masse/volume signifie 0,9 g pour 100 mL, soit 9 g/L. Dans un demi-litre, la quantité vaut 4,5 g. Ce calcul ne décrit pas une fabrication de solution injectable.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_zip_064",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Calculs et unités",
+    "difficulty": "medium",
+    "question": "Dans une dilution idéale C1V1 = C2V2 :",
+    "choices": [
+      "V2 est toujours le volume de solvant ajouté.",
+      "La quantité de soluté est conservée.",
+      "V2 est le volume final.",
+      "Diluer augmente la concentration sans ajout de soluté.",
+      "Les unités de concentration peuvent être mélangées sans conversion."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Dans une dilution sans perte ni réaction, la quantité de soluté est conservée. Les unités doivent être cohérentes ; V2 est le volume total final, distinct du seul volume de diluant ajouté.",
+    "flashcards": [
+      {
+        "front": "Que désigne V2 dans C1V1 = C2V2 ?",
+        "answers": [
+          "Le volume final de solution."
+        ],
+        "explanation": "Dans une dilution sans perte ni réaction, la quantité de soluté est conservée. Les unités doivent être cohérentes ; V2 est le volume total final, distinct du seul volume de diluant ajouté.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_zip_065",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Récepteurs et signaux",
+    "difficulty": "medium",
+    "question": "Quelles associations décrivent les voies simplifiées des protéines G ?",
+    "choices": [
+      "Gs diminue toujours l’AMPc.",
+      "Gi stimule la production d’IP3 par définition.",
+      "Gs peut augmenter l’AMPc via l’adénylate cyclase.",
+      "Gq active une voie PLC–IP3–DAG.",
+      "L’albumine est le second messager de Gq."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Dans ces voies : Gs stimule l’adénylate cyclase ; Gi l’inhibe ; Gq active la phospholipase C, produisant IP3 et DAG. L’IP3 mobilise du calcium intracellulaire.",
+    "flashcards": [
+      {
+        "front": "Que produit la voie Gq–PLC du modèle simple ?",
+        "answers": [
+          "IP3 et DAG ; IP3 mobilise du calcium intracellulaire."
+        ],
+        "explanation": "Dans ces voies : Gs stimule l’adénylate cyclase ; Gi l’inhibe ; Gq active la phospholipase C, produisant IP3 et DAG. L’IP3 mobilise du calcium intracellulaire.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_zip_066",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Bioéquivalence",
+    "difficulty": "medium",
+    "question": "Le critère habituel de bioéquivalence 80–125 % :",
+    "choices": [
+      "Autorise chaque comprimé à contenir librement ±20 % de principe actif.",
+      "Concerne un intervalle de confiance à 90 % de rapports de paramètres d’exposition dans un cadre défini.",
+      "Prouve une concentration identique chez chaque patient.",
+      "S’applique sans exception à toute formulation et tout médicament.",
+      "Ne correspond pas à une autorisation de modifier librement la dose."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Il s’agit d’une comparaison statistique d’exposition, notamment AUC et Cmax, selon la recommandation applicable. Ce n’est pas une tolérance libre sur la quantité de principe actif ni sur la dose prescrite.",
+    "flashcards": [
+      {
+        "front": "La bioéquivalence autorise-t-elle une variation libre de dose de ±20 % ?",
+        "answers": [
+          "Non : elle compare statistiquement des paramètres d’exposition dans un cadre défini."
+        ],
+        "explanation": "Il s’agit d’une comparaison statistique d’exposition, notamment AUC et Cmax, selon la recommandation applicable. Ce n’est pas une tolérance libre sur la quantité de principe actif ni sur la dose prescrite.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "pharmaco_zip_067",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Pharmacocinétique",
+    "difficulty": "medium",
+    "question": "Quelles unités correspondent au volume de distribution et à la clairance ?",
+    "choices": [
+      "Vd : volume théorique.",
+      "Clairance : volume par unité de temps.",
+      "Vd : masse par unité de temps.",
+      "Clairance : concentration par comprimé.",
+      "Vd : volume anatomique forcément mesurable."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Vd = quantité dans l’organisme / concentration plasmatique : il a la dimension d’un volume théorique. La clairance représente un volume épuré par unité de temps et n’est pas une quantité éliminée.",
+    "flashcards": []
+  },
+  {
+    "id": "pharmaco_zip_068",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "ue": "S1 B1",
+    "theme": "Terrains à risque",
+    "difficulty": "medium",
+    "question": "Quel repère concernant les AINS et la grossesse est exact ?",
+    "choices": [
+      "Ils deviennent sans risque après le début du sixième mois.",
+      "24 SA désigne le début du premier mois.",
+      "Le début du sixième mois, soit 24 SA, correspond au repère de contre-indication rappelé par l’ANSM.",
+      "Toutes les prises avant 24 SA sont sans risque.",
+      "L’automédication évite de vérifier le RCP."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Les AINS sont contre-indiqués à partir du début du sixième mois, soit 24 SA. Avant ce terme, leur utilisation exige aussi une évaluation ; des produits et situations particulières ont un cadre spécifique.",
+    "flashcards": []
+  }
+]

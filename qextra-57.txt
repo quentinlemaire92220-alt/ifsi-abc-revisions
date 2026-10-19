@@ -1,0 +1,1263 @@
+[
+  {
+    "id": "v820_neuinf_001",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Une méningite correspond dans ce cours à",
+    "choices": [
+      "Une atteinte localisée du parenchyme cérébral",
+      "Une infection diffuse du parenchyme cérébral",
+      "Une infection diffuse des méninges",
+      "Une infection du tissu cutané",
+      "Une collection de pus limitée aux méninges"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La méningite est l’infection diffuse des méninges ; l’empyème est une collection méningée localisée et l’encéphalite concerne le parenchyme.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "À quoi correspond une méningite?",
+        "answers": [
+          "Une infection diffuse des méninges"
+        ],
+        "explanation": "La méningite est l’infection diffuse des méninges ; l’empyème est une collection méningée localisée et l’encéphalite concerne le parenchyme.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_002",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Concernant les compartiments neuro-méningés",
+    "choices": [
+      "L’encéphalite est une collection méningée",
+      "L’abcès cérébral est une atteinte diffuse des méninges",
+      "L’empyème est une atteinte diffuse du parenchyme",
+      "L’encéphalite correspond à une atteinte diffuse du parenchyme cérébral",
+      "La méningite touche les méninges"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le support distingue clairement méninges et parenchyme : méningite pour les méninges, encéphalite pour l’atteinte diffuse du parenchyme.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_003",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Un empyème est défini dans le support comme",
+    "choices": [
+      "Une atteinte diffuse du cerveau",
+      "Une collection localisée au niveau des méninges",
+      "Une septicémie",
+      "Une hydrocéphalie",
+      "Une infection digestive"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Un empyème est une collection localisée au niveau des méninges.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un empyème?",
+        "answers": [
+          "Une collection de pus dans un espace extra-axial, notamment sous-dural."
+        ],
+        "explanation": "Un empyème est une collection localisée au niveau des méninges.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_004",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "L’abcès cérébral correspond principalement à",
+    "choices": [
+      "Une atteinte isolée de la peau",
+      "Une infection diffuse des méninges",
+      "Une infection du rhinopharynx",
+      "Une inflammation sans collection",
+      "Une collection localisée de pus dans le cerveau"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "L’abcès cérébral est une collection de pus localisée dans le parenchyme cérébral.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "À quoi correspond l’abcès cérébral?",
+        "answers": [
+          "Une collection localisée de pus dans le cerveau"
+        ],
+        "explanation": "L’abcès cérébral est une collection de pus localisée dans le parenchyme cérébral.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_005",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Parmi les bactéries explicitement citées comme causes de méningite",
+    "choices": [
+      "Rougeole",
+      "Herpes simplex virus",
+      "Entérovirus",
+      "Neisseria meningitidis",
+      "Streptococcus pneumoniae"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Méningocoque et pneumocoque sont des bactéries citées comme causes de méningite ; les autres éléments proposés relèvent des causes virales.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelles bactéries peuvent provoquer une méningite ?",
+        "answers": [
+          "Neisseria meningitidis ; Streptococcus pneumoniae"
+        ],
+        "explanation": "Méningocoque et pneumocoque sont des bactéries citées comme causes de méningite ; les autres éléments proposés relèvent des causes virales.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_006",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "La cause virale de méningite la plus fréquente est présentée comme",
+    "choices": [
+      "Le pneumocoque",
+      "La rougeole",
+      "Listeria",
+      "La tuberculose",
+      "L’entérovirus"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "L’entérovirus est présenté comme la cause virale la plus fréquente et généralement bénigne.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelle est la cause virale de méningite la plus fréquente?",
+        "answers": [
+          "L’entérovirus"
+        ],
+        "explanation": "L’entérovirus est présenté comme la cause virale la plus fréquente et généralement bénigne.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_007",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "À propos de l’herpès dans ce cours",
+    "choices": [
+      "Il peut provoquer une méningo-encéphalite sévère",
+      "Il appartient au groupe Herpes simplex virus",
+      "Il est la principale cause de méningite néonatale bactérienne",
+      "Il correspond à une bactérie à croissance lente",
+      "Il est présenté comme toujours bénin"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "HSV peut provoquer une méningo-encéphalite sévère ; il appartient au groupe Herpes simplex virus.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_008",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Chez le nouveau-né, la bactérie particulièrement associée au portage génital maternel est",
+    "choices": [
+      "Streptococcus pneumoniae",
+      "Neisseria meningitidis",
+      "Streptococcus agalactiae",
+      "Listeria monocytogenes",
+      "Haemophilus influenzae"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Streptococcus agalactiae (streptocoque B) est associé au portage génital maternel et aux méningites néonatales.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelle bactérie à portage génital maternel est associée aux méningites néonatales ?",
+        "answers": [
+          "Streptococcus agalactiae"
+        ],
+        "explanation": "Streptococcus agalactiae (streptocoque B) est associé au portage génital maternel et aux méningites néonatales.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_009",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Concernant Listeria monocytogenes",
+    "choices": [
+      "Elle a disparu grâce à la vaccination obligatoire",
+      "Elle est surtout transmise par gouttelettes dans les soirées étudiantes",
+      "Elle est particulièrement citée chez le sujet âgé",
+      "La contamination peut être alimentaire",
+      "Elle est une cause typique de purpura fulminans"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Listeria est liée à la transmission alimentaire et est particulièrement citée chez le sujet âgé et certains terrains fragiles.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_010",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Concernant Haemophilus influenzae",
+    "choices": [
+      "Il est le germe typique de la tuberculose",
+      "Il peut être porté dans les voies aériennes supérieures",
+      "Il est une cause virale",
+      "Sa fréquence a fortement diminué grâce à la vaccination",
+      "Il est transmis principalement par les aliments"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Haemophilus peut être porté dans les voies aériennes supérieures et sa fréquence a nettement diminué avec la vaccination.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_011",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le germe particulièrement associé au purpura fulminans est",
+    "choices": [
+      "Méningocoque",
+      "Entérovirus",
+      "Pneumocoque",
+      "Streptocoque B",
+      "Listeria"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le méningocoque est le germe emblématique du purpura fulminans et de l’urgence extrême dans ce cours.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quel est le germe particulièrement associé au purpura fulminans?",
+        "answers": [
+          "Méningocoque"
+        ],
+        "explanation": "Le méningocoque est le germe emblématique du purpura fulminans et de l’urgence extrême dans ce cours.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_012",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Deux voies de diffusion vers les méninges décrites sont",
+    "choices": [
+      "La diffusion uniquement après chirurgie",
+      "La diffusion exclusivement digestive",
+      "Le passage sanguin par bactériémie",
+      "La contiguïté depuis un foyer régional ORL",
+      "La diffusion uniquement par voie lymphatique"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La diffusion vers les méninges peut se faire par contiguïté depuis un foyer régional ou par voie sanguine lors d’une bactériémie.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelles sont les deux voies de diffusion vers les méninges décrites?",
+        "answers": [
+          "Le passage sanguin par bactériémie ; La contiguïté depuis un foyer régional ORL"
+        ],
+        "explanation": "La diffusion vers les méninges peut se faire par contiguïté depuis un foyer régional ou par voie sanguine lors d’une bactériémie.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_013",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "La conséquence physiopathologique majeure mise en avant pour expliquer les symptômes est",
+    "choices": [
+      "Un œdème cérébral avec hypertension intracrânienne",
+      "Une destruction des plaquettes",
+      "Une obstruction bronchique",
+      "Une hypoglycémie isolée",
+      "Une baisse de la volémie"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’inflammation gêne la résorption du LCS et augmente la perméabilité de la barrière hémato-encéphalique, favorisant œdème et hypertension intracrânienne.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelle conséquence intracrânienne peut compliquer l’inflammation méningée ?",
+        "answers": [
+          "Un œdème cérébral avec hypertension intracrânienne"
+        ],
+        "explanation": "L’inflammation gêne la résorption du LCS et augmente la perméabilité de la barrière hémato-encéphalique, favorisant œdème et hypertension intracrânienne.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_014",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le cours met en avant l’effet préventif de la vaccination sur",
+    "choices": [
+      "Haemophilus influenzae",
+      "Tous les abcès cérébraux",
+      "Listeria et streptocoque B uniquement",
+      "Le méningocoque",
+      "Toutes les méningites virales"
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Les courbes du support illustrent notamment l’effet préventif de la vaccination contre Haemophilus et le méningocoque.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_015",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Dans la synthèse épidémiologique, le nouveau-né est surtout associé à",
+    "choices": [
+      "Entérovirus uniquement",
+      "Pneumocoque uniquement",
+      "Listeria uniquement",
+      "Streptocoque du groupe B",
+      "Méningocoque"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Dans la synthèse épidémiologique, le nouveau-né est surtout associé au streptocoque du groupe B.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_016",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Selon la synthèse par âge du support",
+    "choices": [
+      "Le nouveau-né est surtout associé à Listeria",
+      "Le sujet âgé est associé au pneumocoque et à Listeria",
+      "Le sujet âgé est surtout associé au méningocoque seul",
+      "L’adulte jeune n’a jamais de pneumocoque",
+      "Le nourrisson / enfant / adulte jeune peut avoir pneumocoque et méningocoque"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le support associe le sujet âgé au pneumocoque et à Listeria, et les sujets jeunes surtout au pneumocoque et au méningocoque.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_017",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "La démarche initiale devant une suspicion de méningite/méningo-encéphalite comprend",
+    "choices": [
+      "Rechercher les signes de gravité",
+      "Supprimer toute surveillance neurologique",
+      "Réaliser le bilan, notamment la ponction lombaire selon la situation",
+      "Attendre systématiquement l’imagerie avant toute décision",
+      "Y penser et instaurer les précautions adaptées"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La démarche initiale est : y penser et protéger, rechercher les signes de gravité, puis réaliser le bilan dont la PL selon la situation.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Que comprend la démarche initiale devant une suspicion de méningite/méningo-encéphalite?",
+        "answers": [
+          "Rechercher les signes de gravité ; Réaliser le bilan, notamment la ponction lombaire selon la situation ; Y penser et instaurer les précautions adaptées"
+        ],
+        "explanation": "La démarche initiale est : y penser et protéger, rechercher les signes de gravité, puis réaliser le bilan dont la PL selon la situation.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_018",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Pour distinguer méningite et encéphalite :",
+    "choices": [
+      "Une encéphalite peut donner confusion, troubles de vigilance ou signes focaux, sans syndrome méningé complet.",
+      "L’encéphalite ne s’accompagne jamais de fièvre.",
+      "Un syndrome méningé fébrile fait évoquer une méningite.",
+      "Une méningite impose toujours un déficit moteur.",
+      "Un purpura définit à lui seul une encéphalite."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La méningite touche les méninges ; l’encéphalite le parenchyme cérébral avec dysfonctionnement neurologique. Les deux peuvent être associées, mais un syndrome méningé complet n’est pas indispensable à l’encéphalite.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_019",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le symptôme le plus caractéristique du syndrome méningé décrit est",
+    "choices": [
+      "Une céphalée aiguë intense",
+      "Une douleur thoracique",
+      "Une diarrhée chronique",
+      "Une toux productive",
+      "Une dysurie"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Les céphalées aiguës et intenses sont un élément central du syndrome méningé.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quel symptôme douloureux fait partie du syndrome méningé ?",
+        "answers": [
+          "Une céphalée aiguë intense"
+        ],
+        "explanation": "Les céphalées aiguës et intenses sont un élément central du syndrome méningé.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_020",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le syndrome méningé peut associer",
+    "choices": [
+      "Photophobie / phonophobie",
+      "Bradycardie isolée obligatoire",
+      "Ictère",
+      "Hématurie",
+      "Nausées et vomissements"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Photophobie/phonophobie et nausées-vomissements font partie du syndrome méningé décrit.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quels symptômes peuvent accompagner un syndrome méningé ?",
+        "answers": [
+          "Photophobie / phonophobie ; Nausées et vomissements"
+        ],
+        "explanation": "Photophobie/phonophobie et nausées-vomissements font partie du syndrome méningé décrit.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_021",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "À l’examen d’un syndrome méningé, le cours décrit",
+    "choices": [
+      "Une absence constante de fièvre",
+      "Une attitude en chien de fusil",
+      "Des manœuvres de mise en tension méningée",
+      "Une raideur de nuque surtout à la flexion",
+      "Une rotation cervicale toujours plus douloureuse que la flexion"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le cours décrit l’attitude en chien de fusil, la raideur surtout à la flexion et les manœuvres de mise en tension méningée.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_022",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Chez le nourrisson, un signe particulier cité est",
+    "choices": [
+      "Un purpura toujours absent",
+      "Une paralysie faciale constante",
+      "Un bombement de la fontanelle",
+      "Une rigidité constante de la nuque",
+      "Une diplopie obligatoire"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le bombement de la fontanelle est un signe particulier du nourrisson ; la raideur de nuque peut au contraire manquer.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quel signe de la fontanelle peut alerter chez un nourrisson ?",
+        "answers": [
+          "Un bombement de la fontanelle"
+        ],
+        "explanation": "Le bombement de la fontanelle est un signe particulier du nourrisson ; la raideur de nuque peut au contraire manquer.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_023",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Chez le nouveau-né / nourrisson de moins de 3 mois, des formes peuvent se manifester par",
+    "choices": [
+      "Bombement de la fontanelle",
+      "Absence totale de convulsions",
+      "Troubles du comportement ou du sommeil",
+      "Raideur de nuque toujours très nette",
+      "Hypotonie axiale"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Les formes du nourrisson peuvent être frustes : hypotonie, changement de comportement ou sommeil, bombement de fontanelle, parfois convulsions.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_024",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Parmi les signes de gravité",
+    "choices": [
+      "Une simple rhinite",
+      "Un hoquet isolé sans autre signe",
+      "Un purpura extensif / nécrotique",
+      "Une légère faim",
+      "Une instabilité hémodynamique / choc"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Purpura extensif/nécrotique et choc font partie des signes de gravité nécessitant une prise en charge urgente.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quels sont les signes de gravité?",
+        "answers": [
+          "Un purpura extensif / nécrotique ; Une instabilité hémodynamique / choc"
+        ],
+        "explanation": "Purpura extensif/nécrotique et choc font partie des signes de gravité nécessitant une prise en charge urgente.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_025",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Les signes de gravité neurologique cités comprennent",
+    "choices": [
+      "Trouble de conscience",
+      "État de mal convulsif",
+      "Nausées isolées",
+      "Signes de localisation neurologique",
+      "Simple photophobie isolée"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Trouble de conscience, signe neurologique focal et état de mal convulsif sont des signes de gravité neurologique.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_026",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le purpura est",
+    "choices": [
+      "Une réaction allergique respiratoire",
+      "Une extravasation de sang dans le tissu cutané",
+      "Une éruption virale s’effaçant toujours à la pression",
+      "Une pigmentation normale",
+      "Une lésion uniquement muqueuse"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le purpura est une extravasation sanguine cutanée qui ne s’efface pas à la vitropression.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que le purpura?",
+        "answers": [
+          "Une extravasation de sang dans le tissu cutané"
+        ],
+        "explanation": "Le purpura est une extravasation sanguine cutanée qui ne s’efface pas à la vitropression.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_027",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Un purpura inquiétant dans ce contexte",
+    "choices": [
+      "Peut devenir nécrotique",
+      "Exclut une infection méningococcique",
+      "Peut être extensif",
+      "Est toujours bénin s’il est peu nombreux",
+      "Ne s’efface pas à la vitropression"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le purpura inquiétant ne blanchit pas à la vitropression et peut être nécrotique ou extensif.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_029",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Concernant l’échelle de Glasgow dans ce cours",
+    "choices": [
+      "Elle ne comporte aucune réponse motrice",
+      "Un score normal est 15",
+      "Elle sert à apprécier la vigilance",
+      "Le détail de la cotation doit être appris par cœur pour ce cours",
+      "Elle évalue uniquement la température"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le Glasgow sert à apprécier la vigilance ; un score normal est 15. L’intervenante précise que la cotation détaillée n’est pas à apprendre ici.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_030",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Parmi les signes de localisation neurologique cités",
+    "choices": [
+      "Toux isolée",
+      "Hémiplégie / hémiparésie",
+      "Atteinte d’un nerf crânien / oculomoteur",
+      "Rhinorrhée",
+      "Paralysie faciale"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Les signes focaux cités comprennent notamment hémiparésie/hémiplégie, paralysie faciale et atteinte de nerfs crâniens.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quels signes de focalisation neurologique faut-il rechercher ?",
+        "answers": [
+          "Hémiplégie / hémiparésie ; Atteinte d’un nerf crânien / oculomoteur ; Paralysie faciale"
+        ],
+        "explanation": "Les signes focaux cités comprennent notamment hémiparésie/hémiplégie, paralysie faciale et atteinte de nerfs crâniens.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_031",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Parmi les signes de souffrance du tronc cérébral / engagement cités",
+    "choices": [
+      "Dermatite",
+      "Troubles ventilatoires",
+      "Hoquet isolé sans contexte",
+      "Constipation",
+      "Mydriase unilatérale"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Mydriase unilatérale et troubles ventilatoires font partie des signes de souffrance du tronc cérébral/engagement cités.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quels sont les signes de souffrance du tronc cérébral / engagement?",
+        "answers": [
+          "Troubles ventilatoires ; Mydriase unilatérale"
+        ],
+        "explanation": "Mydriase unilatérale et troubles ventilatoires font partie des signes de souffrance du tronc cérébral/engagement cités.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_032",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "La ponction lombaire est présentée comme",
+    "choices": [
+      "Un geste jamais urgent",
+      "Un examen réalisé uniquement après 48 h",
+      "Un acte infirmier autonome",
+      "Un bilan urgent, avant tout autre examen si possible",
+      "Un examen sans aucune précaution stérile"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La ponction lombaire est le bilan clé, réalisée en urgence et avant d’autres examens si la situation le permet.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Comment se caractérise la ponction lombaire?",
+        "answers": [
+          "Examen urgent si réalisable en sécurité ; ne pas retarder un traitement nécessaire pour l’obtenir."
+        ],
+        "explanation": "La ponction lombaire est le bilan clé, réalisée en urgence et avant d’autres examens si la situation le permet.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_033",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Parmi les contre-indications / situations de prudence à la PL citées",
+    "choices": [
+      "Trouble de la coagulation",
+      "Photophobie isolée",
+      "Infection cutanée locale au point de ponction",
+      "Suspicion d’engagement / abcès avec signes neurologiques",
+      "Nausées isolées"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Infection cutanée locale, trouble de coagulation et suspicion d’engagement/abcès avec signes neurologiques sont des situations de contre-indication ou de prudence.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quelles situations nécessitent une vérification avant de réaliser une ponction lombaire ?",
+        "answers": [
+          "Trouble de la coagulation ; Infection cutanée locale au point de ponction ; Suspicion d’engagement / abcès avec signes neurologiques"
+        ],
+        "explanation": "Infection cutanée locale, trouble de coagulation et suspicion d’engagement/abcès avec signes neurologiques sont des situations de contre-indication ou de prudence.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_034",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Pour la réalisation de la PL",
+    "choices": [
+      "Le support interdit le décubitus latéral",
+      "Les espaces L3-L4 ou L4-L5 sont cités",
+      "Le patient peut être assis avec le dos arrondi",
+      "Le dos doit rester en extension maximale",
+      "Le geste est présenté comme non stérile"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "La PL peut être réalisée en position assise ou latérale, avec le dos arrondi ; les espaces L3-L4 ou L4-L5 sont cités.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_036",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le syndrome post-PL évoqué correspond principalement à",
+    "choices": [
+      "Une bactériémie obligatoire",
+      "Une paralysie faciale",
+      "Une hyperglycémie",
+      "Une céphalée liée à une fuite de LCS",
+      "Un purpura nécrotique"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le syndrome post-PL est décrit par des céphalées liées à la brèche et à une fuite de LCS.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "À quoi correspond le syndrome post-PL évoqué?",
+        "answers": [
+          "Une céphalée liée à une fuite de LCS"
+        ],
+        "explanation": "Le syndrome post-PL est décrit par des céphalées liées à la brèche et à une fuite de LCS.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_037",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Quels repères sont compatibles avec un LCS normal chez l’adulte ?",
+    "choices": [
+      "Généralement moins de 5 cellules/mm³.",
+      "Une majorité de PNN est obligatoire.",
+      "Un aspect toujours purulent.",
+      "Un rapport glucose LCS/sang autour de 0,6, interprété avec les références et le contexte.",
+      "Un aspect clair."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Le LCS normal est habituellement clair avec très peu de cellules. Le glucose s’interprète avec une glycémie concomitante et les références du laboratoire ; « toujours supérieur aux deux tiers » n’est pas une limite universelle.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Comment se caractérise un LCS normal?",
+        "answers": [
+          "Habituellement clair, avec moins de 5 cellules/mm³ chez l’adulte ; glucose interprété avec une glycémie concomitante et les références du laboratoire."
+        ],
+        "explanation": "Le LCS normal est habituellement clair avec très peu de cellules. Le glucose s’interprète avec une glycémie concomitante et les références du laboratoire ; « toujours supérieur aux deux tiers » n’est pas une limite universelle.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_040",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Concernant l’abcès cérébral bactérien",
+    "choices": [
+      "Il ne peut jamais venir d’un foyer ORL ou dentaire",
+      "La fièvre peut être absente",
+      "La fièvre est toujours présente",
+      "Les céphalées et signes de localisation peuvent être présents",
+      "Le scanner n’a aucun intérêt en urgence"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’abcès peut donner céphalées et signes focaux ; la fièvre est inconstante et peut être absente. Des foyers ORL ou dentaires sont possibles.",
+    "difficulty": "medium",
+    "flashcards": []
+  },
+  {
+    "id": "v820_neuinf_035",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le rôle paramédical pendant la PL comprend",
+    "choices": [
+      "Aider à maintenir la bonne position",
+      "Rassurer le patient",
+      "Préparer / donner le matériel en respectant la stérilité",
+      "Décider seul de l’indication médicale de PL",
+      "Réutiliser des tubes non stériles après rinçage."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le rôle paramédical est essentiel pour rassurer, positionner, maintenir l’asepsie et gérer le matériel et les tubes ; l’indication reste médicale.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Que comprend le rôle paramédical pendant la PL?",
+        "answers": [
+          "Aider à maintenir la bonne position ; Rassurer le patient ; Préparer / donner le matériel en respectant la stérilité"
+        ],
+        "explanation": "Le rôle paramédical est essentiel pour rassurer, positionner, maintenir l’asepsie et gérer le matériel et les tubes ; l’indication reste médicale.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "v820_neuinf_038",
+    "ue": "S1 B1",
+    "course": "Infections neuro-méningées",
+    "courseId": "infections_neuro_meningees",
+    "theme": "Infections neuro-méningées",
+    "question": "Le profil de méningite purulente du support associe",
+    "choices": [
+      "Polynucléaires neutrophiles > 50 %",
+      "Un profil orientant vers une méningite bactérienne",
+      "Une glycorachie toujours normale",
+      "Glycorachie < 1/3 de la glycémie",
+      "Un résultat identifiant toujours avec certitude le germe causal."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le profil purulent associe hypercellularité, PNN > 50 %, hypoglycorachie marquée et orientation bactérienne.",
+    "difficulty": "medium",
+    "flashcards": [
+      {
+        "front": "Quels éléments caractérisent le profil de méningite purulente?",
+        "answers": [
+          "Polynucléaires neutrophiles > 50 % ; Un profil orientant vers une méningite bactérienne ; Glycorachie < 1/3 de la glycémie"
+        ],
+        "explanation": "Le profil purulent associe hypercellularité, PNN > 50 %, hypoglycorachie marquée et orientation bactérienne.",
+        "kind": "Question / réponse",
+        "atomic": false,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "neuro_zip_041",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Ponction lombaire",
+    "difficulty": "medium",
+    "question": "Après une ponction lombaire, quelles propositions sont exactes ?",
+    "choices": [
+      "Un repos forcé de quatre heures prévient systématiquement les céphalées.",
+      "La douleur et les céphalées posturales doivent être surveillées.",
+      "L’hyperhydratation est une prévention systématique recommandée.",
+      "Le repos forcé au lit n’est pas recommandé comme prévention du syndrome post-PL.",
+      "Le suivi neurologique devient inutile."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La HAS ne recommande pas le repos forcé ni l’hyperhydratation pour prévenir le syndrome post-PL. Surveillance clinique, information et traitement prescrit restent adaptés à la situation.",
+    "flashcards": [
+      {
+        "front": "Faut-il imposer quatre heures au lit pour prévenir le syndrome post-PL ?",
+        "answers": [
+          "Non ; ce repos forcé n’est pas une prévention recommandée."
+        ],
+        "explanation": "La HAS ne recommande pas le repos forcé ni l’hyperhydratation pour prévenir le syndrome post-PL. Surveillance clinique, information et traitement prescrit restent adaptés à la situation.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "neuro_zip_042",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Prise en charge urgente",
+    "difficulty": "medium",
+    "question": "Concernant la dexaméthasone dans une suspicion d’infection neuro-méningée :",
+    "choices": [
+      "Elle remplace l’antibiothérapie urgente.",
+      "Elle est automatique devant toute tache violacée.",
+      "Son indication dépend du contexte de méningite bactérienne et de la décision médicale.",
+      "Elle permet d’attendre une PL malgré un purpura fulminans.",
+      "Elle vise certaines conséquences inflammatoires de l’infection."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "La corticothérapie adjuvante a des indications précises. Elle ne remplace pas l’antibiotique et ne doit pas transformer un purpura isolé en indication automatique.",
+    "flashcards": []
+  },
+  {
+    "id": "neuro_zip_043",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Diagnostic clinique",
+    "difficulty": "medium",
+    "question": "Quels éléments peuvent faire évoquer une encéphalite herpétique ?",
+    "choices": [
+      "Troubles de comportement ou de mémoire dans un contexte fébrile.",
+      "Absence obligatoire de tout signe neurologique.",
+      "Nécessité d’un syndrome méningé complet pour l’évoquer.",
+      "Évolution rapidement progressive avec dysfonctionnement cérébral.",
+      "Diagnostic certain par une seule photographie cutanée."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Une encéphalite doit être évoquée devant un dysfonctionnement cérébral fébrile. HSV fait partie des causes urgentes à rechercher ; les signes méningés peuvent être incomplets ou absents.",
+    "flashcards": [
+      {
+        "front": "Une encéphalite exige-t-elle un syndrome méningé complet ?",
+        "answers": [
+          "Non ; un dysfonctionnement cérébral fébrile peut la révéler sans syndrome méningé complet."
+        ],
+        "explanation": "Une encéphalite doit être évoquée devant un dysfonctionnement cérébral fébrile. HSV fait partie des causes urgentes à rechercher ; les signes méningés peuvent être incomplets ou absents.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "neuro_zip_044",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Bilan initial",
+    "difficulty": "medium",
+    "question": "Avant une PL dans une suspicion de méningite bactérienne, quel principe est exact ?",
+    "choices": [
+      "Un scanner est toujours obligatoire.",
+      "Des troubles de conscience isolés imposent toujours de renoncer à la PL.",
+      "L’imagerie préalable est ciblée sur des indications évaluées par le médecin.",
+      "La photophobie isolée prouve un engagement.",
+      "Un purpura fulminans autorise à différer le traitement jusqu’à la PL."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’imagerie n’est pas systématique : rechercher notamment processus expansif, signes d’engagement ou crises persistantes. Les troubles de conscience isolés ne constituent pas à eux seuls une contre-indication à la PL.",
+    "flashcards": []
+  },
+  {
+    "id": "neuro_zip_045",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Abcès cérébral",
+    "difficulty": "medium",
+    "question": "Concernant une suspicion d’abcès cérébral :",
+    "choices": [
+      "L’absence de fièvre l’exclut.",
+      "Des signes focaux et des céphalées peuvent être présents.",
+      "Une image en cocarde prouve toujours le germe causal.",
+      "IRM ou scanner participent au bilan.",
+      "Une PL est toujours le premier examen malgré un effet de masse suspecté."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La fièvre peut manquer. Imagerie et contexte orientent le diagnostic et recherchent un effet de masse ; l’aspect en cocarde ne suffit pas à identifier l’agent causal.",
+    "flashcards": [
+      {
+        "front": "L’absence de fièvre élimine-t-elle un abcès cérébral ?",
+        "answers": [
+          "Non ; la fièvre est inconstante."
+        ],
+        "explanation": "La fièvre peut manquer. Imagerie et contexte orientent le diagnostic et recherchent un effet de masse ; l’aspect en cocarde ne suffit pas à identifier l’agent causal.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "neuro_zip_046",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "ue": "S1 B1",
+    "theme": "Interprétation du LCS",
+    "difficulty": "medium",
+    "question": "Quelles limites faut-il retenir pour les profils du LCS ?",
+    "choices": [
+      "Un profil lymphocytaire exclut toute bactérie.",
+      "Des PNN peuvent être présents au début d’une infection virale.",
+      "Une hypoglycorachie permet seule d’identifier le germe.",
+      "Clinique, culture et PCR complètent les profils biochimiques et cellulaires.",
+      "Une glycorachie normale exclut toute infection grave."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Les profils sont des orientations et peuvent être atypiques selon le délai, le terrain ou un traitement antérieur. Une cellule ou une valeur isolée ne constitue pas un diagnostic de certitude.",
+    "flashcards": [
+      {
+        "front": "Un profil lymphocytaire du LCS exclut-il une cause bactérienne ?",
+        "answers": [
+          "Non ; tuberculose ou Listeria peuvent notamment donner un tel profil."
+        ],
+        "explanation": "Les profils sont des orientations et peuvent être atypiques selon le délai, le terrain ou un traitement antérieur. Une cellule ou une valeur isolée ne constitue pas un diagnostic de certitude.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  }
+]

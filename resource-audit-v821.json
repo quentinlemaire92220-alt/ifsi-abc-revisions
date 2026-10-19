@@ -1,5 +1,5 @@
 {
-  "version": "8.30.94",
+  "version": "8.30.95",
   "auditedAt": "2026-10-19",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -10,8 +10,8 @@
   "note": "V8.30.73 : ressources officielles Douleur synchronisées ; provenance Respiratoire corrigée.",
   "expectedTotals": {
     "courses": 49,
-    "sheets": 59,
-    "infographics": 163,
+    "sheets": 61,
+    "infographics": 169,
     "vocals": 80,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
@@ -193,6 +193,16 @@
       "courseId": "virus",
       "vocals": 3,
       "release": "8.30.94"
+    },
+    {
+      "courseId": "pharmacologie",
+      "release": "8.30.95",
+      "revisionFrom": "course_captures"
+    },
+    {
+      "courseId": "infections_neuro_meningees",
+      "release": "8.30.95",
+      "revisionFrom": "course_captures"
     }
   ],
   "auditLogicVersion": "8.30.10",

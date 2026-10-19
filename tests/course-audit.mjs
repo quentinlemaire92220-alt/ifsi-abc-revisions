@@ -81,7 +81,7 @@ const count=(id,key)=>byCourse[id]?.[key]||0;
 if(count('introduction_droit','qcm')!==60)errors.push(`Institutions judiciaires et grands principes du droit: 60 QCM attendus, ${count('introduction_droit','qcm')} trouvés`);
 if(count('introduction_droit','sheets')<1)errors.push('Introduction au droit: fiche manquante');
 if(count('psychologie_sante','sheets')<1)errors.push('Psychologie de la santé: fiche manquante');
-if(count('pharmacologie','qcm')!==60)errors.push(`Introduction à la pharmacologie: 60 QCM attendus, ${count('pharmacologie','qcm')} trouvés`);
+if(count('pharmacologie','qcm')!==68)errors.push(`Introduction à la pharmacologie: 68 QCM attendus, ${count('pharmacologie','qcm')} trouvés`);
 if(count('pharmacologie','sheets')<1)errors.push('Introduction à la pharmacologie: fiche manquante');
 if(count('systeme_cardiovasculaire','sheets')<1)errors.push('Système cardiovasculaire: fiche manquante');
 if(count('systeme_digestif','sheets')<2)errors.push('Système digestif incomplet: moins de 2 fiches');

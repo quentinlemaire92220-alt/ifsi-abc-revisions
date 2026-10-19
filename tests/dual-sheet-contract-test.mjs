@@ -62,4 +62,14 @@ rejectsPsych({dualSheetCoverage:{...psychological.dualSheetCoverage,infographicC
 assert.throws(()=>validateDualSheetDelivery('demo',{...delivery,schematics:'none'},[classic,visual]),/contradiction/);
 console.log('✅ v1.14 : psychologie sans schéma individuel : deux PDF et revue conceptuelle, 11 cas positifs/négatifs.');
 
+const captureSheets=[classic,visual].map(x=>({...x,officialSupport:false}));
+const captureRevision={...delivery,deliveryMode:'existing_course_revision',status:'partial',sourceBasis:{kind:'course_captures',nativeSupportAvailable:false,reconciled:true},blockers:[{resource:'support',reason:'native_support_unavailable'}]};
+validateDualSheetDelivery('demo',captureRevision,captureSheets);
+for(const bad of [{status:'complete'},{sourceBasis:{kind:'course_captures',nativeSupportAvailable:true,reconciled:true}},{blockers:[]},{publishedVerification:undefined},{infographicSheetPublishedVerification:undefined}]){
+ assert.throws(()=>validateDualSheetDelivery('demo',{...captureRevision,...bad},captureSheets));
+}
+assert.throws(()=>validateDualSheetDelivery('demo',captureRevision,[classic,visual]),/PDF officiel/);
+assert.throws(()=>validateDualSheetDelivery('demo',delivery,captureSheets),/support officiel/);
+console.log('✅ Révision sur captures : réserve obligatoire, aucun faux support officiel, deux PDF et téléchargements toujours exigés.');
+
 console.log('✅ v1.13 : 13 scénarios positifs/négatifs sur les deux fiches, preuves PDF et couverture.');

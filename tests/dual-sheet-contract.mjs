@@ -7,13 +7,24 @@ import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
 const sha=v=>typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);
 const driveId=sheet=>sheet?.driveId||String(sheet?.url||'').match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1];
 
-function sheetFor(courseId,id,format,sheets){
+export function validateSheetSource(courseId,delivery,sheet){
+ if(delivery.deliveryMode==='existing_course_revision'){
+  assert.equal(delivery.sourceBasis?.kind,'course_captures',courseId+': provenance captures absente');
+  assert.equal(delivery.sourceBasis.nativeSupportAvailable,false,courseId+': support natif non vérifié');
+  assert.equal(delivery.sourceBasis.reconciled,true,courseId+': captures non rapprochées');
+  assert.equal(delivery.status,'partial',courseId+': révision sur captures déclarée complète');
+  assert.ok(delivery.blockers?.some(x=>x.resource==='support'&&x.reason==='native_support_unavailable'),courseId+': réserve support natif absente');
+  assert.equal(sheet.officialSupport,false,courseId+': captures présentées comme PDF officiel');
+ }else assert.equal(sheet.officialSupport,true,courseId+': fiche sans support officiel validé');
+}
+
+function sheetFor(courseId,id,format,sheets,delivery){
  assert.ok(typeof id==='string'&&id,courseId+': resourceId de fiche '+format+' absent');
  const matches=sheets.filter(s=>s.resourceId===id&&s.courseId===courseId);
  assert.equal(matches.length,1,courseId+': fiche '+format+' manquante ou dupliquée '+id);
  const sheet=matches[0];
  assert.equal(sheet.sheetFormat,format,courseId+': sheetFormat attendu '+format+' pour '+id);
- assert.equal(sheet.officialSupport,true,courseId+': fiche '+format+' sans support officiel validé');
+ validateSheetSource(courseId,delivery,sheet);
  assert.ok(/^https:\/\/drive\.google\.com\/file\/d\/[a-zA-Z0-9_-]+/.test(sheet.url||''),
   courseId+': lien Drive de la fiche '+format+' invalide');
  return sheet;
@@ -40,8 +51,8 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
  assert.ok(delivery&&typeof delivery==='object',courseId+': livraison absente');
  assert.notEqual(delivery.sheetResourceId,delivery.infographicSheetResourceId,
   courseId+': les deux fiches doivent être des fichiers DISTINCTS');
- const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets);
- const illustrated=sheetFor(courseId,delivery.infographicSheetResourceId,'complete_infographic',sheets);
+ const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets,delivery);
+ const illustrated=sheetFor(courseId,delivery.infographicSheetResourceId,'complete_infographic',sheets,delivery);
  assert.notEqual(driveId(classic),driveId(illustrated),courseId+': les deux PDF pointent vers le même Drive ID');
  const figures=delivery.infographicResourceIds??[];
  assert.ok(Array.isArray(figures),courseId+': infographicResourceIds doit être un tableau');
