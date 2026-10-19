@@ -17,7 +17,7 @@ assert.ok(nav.includes("id:'R01'")&&nav.includes("id:'R07'"),'Le registre de sui
 assert.ok(nav.includes('disabled>Non validée'),"Le bouton d'entraînement ne doit pas être actif");
 assert.ok(nav.includes('rel="noopener noreferrer"'),'L’ouverture externe doit être sécurisée');
 assert.ok(nav.includes("localStorage.setItem(REPRO_REVIEW_KEY,url)"),'Le lien de revue doit être uniquement local');
-assert.ok(!nav.includes('DAHYd62tg4w')&&!nav.includes('https://www.canva.com/d/'),'Ne jamais publier un lien de revue privé en dur');
+assert.ok(!nav.includes('DAHYd62tg4w')&&!nav.includes('GQ6MYI8VJqgsclS'),'Ne jamais publier un identifiant ou lien de revue privé en dur');
 assert.ok(!nav.includes('https://canva.link/'),'Ne pas embarquer le shortlink de revue');
 assert.ok(!read('index.html').includes('DAHYd62tg4w'),'Pas de lien privé dans l’accueil');
 assert.equal(matrix.publicationStatus,'BLOCKED');
