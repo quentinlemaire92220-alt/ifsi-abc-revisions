@@ -50,8 +50,8 @@ function visibleModels(){
  });
 }
 function weeks(){return window.IFSI_PLANNING?.weeks||[]}
-// Un créneau du calendrier n'est pas nécessairement un cours à réviser.
-// Préserver les CM, TD, TP et asynchrones ayant un véritable contenu pédagogique.
+// Le suivi des cours montre les CM/TD/TP pertinents, mais jamais les simulations
+// ni les créneaux asynchrones, qui restent visibles au calendrier général.
 const NON_REVISION_ACTIVITY=[
  /\bconnexion\b.*\b(?:myschool|mischool|myk|plateforme)\b/,
  /\b(?:myschool|mischool)\b.*\bconnexion\b/,
@@ -64,7 +64,11 @@ const NON_REVISION_ACTIVITY=[
 function isRevisionSession(e){
  const title=norm(e?.title).replace(/[^a-z0-9]+/g,' ').trim();
  const type=norm(e?.type).trim();
- if(!title||type==='info'||/annul/.test(type))return false;
+ const ue=norm(e?.ue).replace(/[^a-z0-9]+/g,' ').trim();
+ // Exclusions systématiques demandées : toutes les simulations et tous les asynchrones,
+ // indépendamment du contenu, du groupe ou d'un éventuel support pédagogique.
+ if(!title||type==='info'||/annul/.test(type)||/asynch/.test(type)||
+    /\bsimulation\b/.test(title)||/\bsimulation\b/.test(ue))return false;
  return !NON_REVISION_ACTIVITY.some(rule=>rule.test(title));
 }
 function eventsForWeek(week,g){return (week?.events||[]).filter(e=>eventForGroup(e,g)&&isRevisionSession(e)).sort((a,b)=>(a.date+' '+a.start).localeCompare(b.date+' '+b.start))}
@@ -141,7 +145,7 @@ function renderAgenda(){
    '<div><b>'+esc(e.title)+'</b><div class="cf-muted">'+esc(e.ue||'Séance')+' · '+esc(e.type||'Cours')+esc(note)+'</div>'+
    '<span class="cf-signal">'+esc(state)+'</span></div>'+btn+'</article>';
  }).join('');
- return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Seules les séances avec contenu pédagogique à réviser sont affichées ici. Les créneaux autonomes ou administratifs restent au planning général. « Revue » est une note personnelle, pas une validation de contenu.</p>'+
+ return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Suivi des séances pédagogiques hors simulations et asynchrones. Ces créneaux restent visibles dans le calendrier général. « Revue » est une note personnelle, pas une validation de contenu.</p>'+
   '<div class="cf-controls"><select id="cfGroup" aria-label="Groupe">'+['A1','A2','B1','B2'].map(x=>'<option'+(x===g?' selected':'')+'>'+x+'</option>').join('')+'</select>'+
   '<select id="cfWeek" aria-label="Semaine">'+options+'</select></div>'+
   '<div class="cf-agenda">'+(arr||'<p class="cf-muted">Aucune séance pédagogique à réviser pour ce groupe cette semaine.</p>')+'</div></div>';
@@ -192,5 +196,5 @@ function init(){css();return section()&&bindBottomNavigation()}
 let tries=0,t=setInterval(()=>{if(init()||++tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
 window.addEventListener('ifsi:vocabulary-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
-window.IFSI_COURSE_FOLLOWUP={version:'1.1',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey};
+window.IFSI_COURSE_FOLLOWUP={version:'1.2',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey};
 })();
