@@ -238,6 +238,9 @@ jobs:
       - name: Socle Pathologies sans publication pédagogique
         run: node tests/pathologies-module-v1.mjs
 
+      - name: Contrôler la préparation privée Pathologies P1 sans diffusion
+        run: node tests/pathologies-p1-readiness.mjs --self-test
+
       - name: Contrat de production Pathologies — forme BPCO et protection de publication
         run: node tests/pathologies-skill-contract.mjs
 
