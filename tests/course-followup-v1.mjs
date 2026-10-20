@@ -84,6 +84,17 @@ assert.ok(filteredEvents.some(e=>e.title==='Initiation à la philosophie éthiqu
 assert.equal(api.isRevisionSession({title:'Pharmacologie des antalgiques',type:'Annulé'}),false);
 assert.equal(api.isRevisionSession({title:'Présentation plateforme MyK',type:'Info'}),false);
 
+
+assert.equal(api.validSourcesUrl('https://docs.google.com/spreadsheets/d/abcDEF_123/edit#gid=123'),true,'Lien privé Google Sheets valide');
+assert.equal(api.validSourcesUrl('https://docs.google.com/spreadsheets/d/abcDEF_123/edit?usp=drivesdk'),true,'Lien avec query Google Sheets valide');
+for(const url of ['https://evil.example/spreadsheets/d/abc/edit','javascript:alert(1)','https://docs.google.com.evil.example/spreadsheets/d/abc/edit','https://docs.google.com/spreadsheets/d/abc/"onclick'])assert.equal(api.validSourcesUrl(url),false,'Lien potentiellement dangereux accepté : '+url);
+assert.ok(src.includes('data-cf-sources'),'Boutons du suivi privé absents');
+assert.ok(src.includes('id="cfConfigureSources"'),'Configuration du lien privé absente');
+assert.ok(src.includes('bindSourceActions'),'Gestion des boutons de sources absente');
+assert.ok(!src.includes('Marquer revue')&&!src.includes('data-cf-review'),'Ancien bouton Marquer revue toujours affiché');
+assert.ok(src.includes('localStorage.setItem(K_SOURCES,next)'),'Le lien n’est pas enregistré localement');
+assert.ok(!/docs\\.google\\.com\\/spreadsheets\\/d\\/[A-Za-z0-9_-]{15,}/.test(src),'Identifiant de registre privé embarqué dans le dépôt public');
+
 const canceled=weeks.flatMap(x=>x.events).find(x=>/annul/i.test(x.type||''));
 assert.ok(canceled&&api.eventForGroup(canceled,'B1'),'Séance annulée conservée comme telle au planning');
 assert.ok(!/https:\/\/docs\.google\.com\/spreadsheets\/d\//i.test(src),'Aucun registre privé dans le JavaScript public');
