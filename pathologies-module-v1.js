@@ -8,7 +8,7 @@ const REQUIRED=['definition','physiopathologie','riskFactors','clinicalSigns','d
 const P1_IDS=new Set(['bpco','hta','dt2']);
 const P1_CATALOG=Object.freeze([
  {id:'bpco',title:'Bronchopneumopathie chronique obstructive (BPCO)',shortTitle:'BPCO',system:'Système respiratoire',icon:'🫁',courseId:'systeme_respiratoire'},
- {id:'hta',title:'Hypertension artérielle (HTA)',shortTitle:'Hypertension artérielle',system:'Système cardiovasculaire',icon:'🫀',courseId:'systeme_cardiovasculaire'},
+ {id:'hta',title:'Hypertension artérielle (HTA)',shortTitle:'Hypertension artérielle (HTA)',system:'Système cardiovasculaire',icon:'🫀',courseId:'systeme_cardiovasculaire'},
  {id:'dt2',title:'Diabète de type 2',shortTitle:'Diabète de type 2',system:'Système endocrinien',icon:'🩺',courseId:'systeme_endocrinien'}
 ]);
 const LABELS={definition:'Définition',physiopathologie:'Physiopathologie',riskFactors:'Causes et facteurs de risque',clinicalSigns:'Signes cliniques',diagnosis:'Examens et diagnostic',treatments:'Prise en charge',nursingCare:'Rôle infirmier',monitoring:'Surveillances',complications:'Complications et signes d’alerte',keywords:'Définitions des mots-clés'};
