@@ -2,6 +2,14 @@
 
 **Version corrigée le 20 octobre 2026.** Un exemple d'une page par livrable sert seulement à APPROUVER LE STYLE ; ce n'est pas une restriction de longueur des PDF définitifs.
 
+## Deux références graphiques à appliquer IMPÉRATIVEMENT
+
+**Fiche de révision (maître)** : `UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Fiche_Revision_Coeur_Vaisseaux_et_Sang.pdf`, 17 pages fournies et revalidées par l'utilisateur. **Texte et tableaux dominants**, bandeau et titres violets, paragraphes explicatifs, comparaisons et encadrés à retenir. Figures facultatives, ponctuelles, au niveau des notions qu'elles éclairent ; aucun quota de figure, aucune page entière d'infographie imposée dans la fiche.
+
+**Infographie (maître)** : `UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Infographie_01_Circulation_sanguine_et_trajet_du_sang (1).pdf`, planche illustrée fournie. **Grande anatomie dominante**, repères, flèches contrôlées et zooms, légendes et notes courtes ; pas un PDF de blocs de prose agrémenté d'un pictogramme. Pour un cours complet, créer autant de planches que nécessaire.
+
+Lire **`docs/skills/standard-visuel-fiche-revision-vs-infographie.md`** avant toute génération. Le passage TNR + la présence d'images ne valent pas validation du style. Noter explicitement deux verdicts privés : `REVISION_TEXT_FIRST` et `INFOGRAPHIC_VISUAL_FIRST`, chacun `PASS / À_CORRIGER / BLOQUÉ` après examen visuel des documents, plus la revue scientifique.
+
 ## Livrables attendus
 
 1. **Fiche de révision classique complète** : toutes les notions du support officiel, explications et schémas infographiés intégrés selon la pertinence ; PDF multipage.
@@ -13,7 +21,7 @@ Les vocaux TXT/MP3, lexiques autonomes et exports de toutes les images ne sont p
 
 ## Source de vérité et production privée
 
-Créer UNE matrice privée sourcée : `title`, `notions:[{id,sourcePage}]`, `sections:[{heading,notionIds,paragraphs,figure?}]`, `infographicPanels:[{heading,body,notionIds,figure?,sourcePages?}]`, `qcmQuestions:[...]`, `flashcards:[{id,qid,front,answers,explanation}]`. Les unions de `notionIds` dans **sections et infographicPanels** doivent chacune recouvrir EXACTEMENT toutes les notions de la matrice officielle. Chaque panneau `infographicPanels` doit contenir un `figure:{path,caption}` original, validé et associé à une explication courte : le générateur refuse les panneaux sans visuel, les blocs trop textuels et les pages PDF sans image. Une image peut être réutilisée uniquement lorsqu'elle sert réellement la notion ; l'exemple de test fictif ne vaut pas charte de réutilisation. La machine vérifie l'inventaire, pas la véracité médicale du texte : inspection pédagogique, scientifique et visuelle impérative.
+Créer UNE matrice privée sourcée : `title`, `notions:[{id,sourcePage}]`, `sections:[{heading,notionIds,paragraphs,tables?:[{headers,rows}],figure?}]`, `revisionPriorities?:[...],courseMeta?:...`, `infographicPanels:[{heading,body,notionIds,figure?,sourcePages?}]`, `qcmQuestions:[...]`, `flashcards:[{id,qid,front,answers,explanation}]`. La fiche peut n'avoir **aucune illustration** si elle n'est pas utile : ne jamais créer une image pour décorer. Les unions de `notionIds` dans **sections et infographicPanels** doivent chacune recouvrir EXACTEMENT toutes les notions de la matrice officielle. Chaque panneau `infographicPanels` doit contenir un `figure:{path,caption}` original, validé et associé à une explication courte : le générateur refuse les panneaux sans visuel, les blocs trop textuels et les pages PDF sans image. Une image peut être réutilisée uniquement lorsqu'elle sert réellement la notion ; l'exemple de test fictif ne vaut pas charte de réutilisation. La machine vérifie l'inventaire, pas la véracité médicale du texte ni l'adéquation à l'exemple graphique : inspection pédagogique, scientifique et visuelle impérative. Produire les dessins sans textes inventés, ajouter légendes/flèches en couches éditables exactes.
 
 ```bash
 python -m pip install reportlab==4.4.9 Pillow pymupdf==1.26.7
