@@ -1,3 +1,11 @@
+## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
+
+Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.
+
+Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige désormais `sheetFormat:"complete_infographic"`, `dualSheetCoverage.expectedNotions===classicCovered===infographicCovered`, et audit de toutes les pages. `summaryPanels`, `summaryCoverage`, `infographic_summary` et « synthèse A4 une page » sont des consignes ERRONÉES pour les vraies livraisons et doivent être considérées comme obsolètes. La seule-page s'applique aux PILOTES de revue uniquement. Ne jamais valider des TNR qui testent une réduction de couverture.
+
+ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
+
 # Skill IFSI ABC — Fiches de révision avec infographies originales (v1.0)
 
 
@@ -5,7 +13,7 @@
 
 Pour les prochains cours, **une fiche de révision complète avec schémas infographiés seulement lorsqu'ils apportent une explication utile** est le livrable maître. Modèle de présentation : **Système cardiovasculaire ou Système respiratoire** (pilotes validés). Toutes les définitions, mécanismes, nuances, valeurs et explications de la source officielle restent dans le **texte**, même lorsqu'un visuel résume la notion. Les illustrations complètent le cours et sont créées de manière originale ; une illustration décorative ou sans justification pédagogique ne doit pas être ajoutée pour respecter un quota.
 
-En complément, produire **une page A4 infographiée de synthèse** autonome, mais **pas un second cours complet en planches** par défaut. Une page ne doit pas prétendre couvrir mot à mot tout le cours : elle sélectionne honnêtement l'essentiel tout en renvoyant à la fiche détaillée. Si le contenu ne tient pas lisiblement, demander un arbitrage avant d'allonger ou simplifier. Ces demandes ne suppriment pas les tests de lisibilité et d'exactitude clinique.
+En complément, produire **un cours complet infographié multipage** autonome, mais **un second cours complet, pédagogique et illustré, couvrant toutes les notions** par défaut. Une page ne doit pas prétendre couvrir mot à mot tout le cours : elle sélectionne honnêtement l'essentiel tout en renvoyant à la fiche détaillée. Si le contenu ne tient pas lisiblement, demander un arbitrage avant d'allonger ou simplifier. Ces demandes ne suppriment pas les tests de lisibilité et d'exactitude clinique.
 
 Le pilote est une validation **de forme** uniquement. Toute nouvelle matière nécessite une revue source et un contrôle scientifique propres. Les planches anatomiques sont conditionnelles et ne doivent pas être dupliquées.
 
