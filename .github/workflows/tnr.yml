@@ -76,6 +76,9 @@ jobs:
           node --check pilote-sources-privees.js
           node tests/pilot-private-sources-v1.mjs
 
+      - name: TNR backend privé, JWT propriétaire et CORS
+        run: node tests/private-source-cors-edge.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
