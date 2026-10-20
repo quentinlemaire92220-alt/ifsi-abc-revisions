@@ -8,7 +8,13 @@ let data=[],loadError='',search='',selectedTheme='all',selectedCourse='all',orig
 const registry=()=>window.IFSI_V741?.getRegistry?.()?.courses||[];
 const courseName=id=>registry().find(c=>c.id===id)?.label||id;
 function validate(entries){const seen=new Set();return entries.filter(x=>{if(!x||!x.id||!x.term||!x.definition||!x.theme||!Array.isArray(x.courseIds)||!x.courseIds.length||seen.has(x.id))return false;seen.add(x.id);return true})}
-const flashcards=()=>data.map(x=>({id:'voc:'+x.id,qid:null,courseId:x.courseIds[0],courseIds:[...x.courseIds],course:courseName(x.courseIds[0]),theme:x.theme,difficulty:'easy',kind:'Vocabulaire',front:'Que signifie « '+x.term+' » ?',answers:[x.definition],explanation:x.distinction||'',distinction:x.distinction||'',etymologie:x.etymologie||'',officialSupport:false,sourceType:x.sourceType}));
+// P3 : champs optionnels approuvés conjointement, sans effet sur le glossaire existant.
+const flashcardPair=x=>{
+ const question=typeof x.flashcardFront==='string'?x.flashcardFront.trim():'';
+ const answer=typeof x.flashcardAnswer==='string'?x.flashcardAnswer.trim():'';
+ return question&&answer?{question,answer}:{question:'Que signifie « '+x.term+' » ?',answer:x.definition};
+};
+const flashcards=()=>data.map(x=>{const pair=flashcardPair(x);return {id:'voc:'+x.id,qid:null,courseId:x.courseIds[0],courseIds:[...x.courseIds],course:courseName(x.courseIds[0]),theme:x.theme,difficulty:'easy',kind:'Vocabulaire',front:pair.question,answers:[pair.answer],explanation:x.distinction||'',distinction:x.distinction||'',etymologie:x.etymologie||'',officialSupport:false,sourceType:x.sourceType}});
 const forCourse=id=>data.filter(x=>x.courseIds.includes(id));
 const countForCourse=id=>forCourse(id).length;
 function ensure(){if($(ID))return;const s=document.createElement('section');s.id=ID;s.className='hidden';s.innerHTML='<div id="vgApp"></div>';const anchor=$('quiz');anchor?.parentNode?.insertBefore(s,anchor)}
