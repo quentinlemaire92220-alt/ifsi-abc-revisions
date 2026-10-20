@@ -50,7 +50,24 @@ function visibleModels(){
  });
 }
 function weeks(){return window.IFSI_PLANNING?.weeks||[]}
-function eventsForWeek(week,g){return (week?.events||[]).filter(e=>eventForGroup(e,g)).sort((a,b)=>(a.date+' '+a.start).localeCompare(b.date+' '+b.start))}
+// Un créneau du calendrier n'est pas nécessairement un cours à réviser.
+// Préserver les CM, TD, TP et asynchrones ayant un véritable contenu pédagogique.
+const NON_REVISION_ACTIVITY=[
+ /\bconnexion\b.*\b(?:myschool|mischool|myk|plateforme)\b/,
+ /\b(?:myschool|mischool)\b.*\bconnexion\b/,
+ /\b(?:temps? d appropriation(?: des connaissances)?|travail personnel|travail en autonomie|temps libre|revisions? autonomes?)\b/,
+ /\b(?:presentation plateforme|presentation blason collectif|elections? des delegues|test de personnalite)\b/,
+ /\b(?:reunion administrative|inscription administrative|test technique|test de connexion)\b/,
+ /\b(?:simulation serious game et quizz|realisation de cas concrets et outil de revision)\b/,
+ /\bvisionnage du film sur les objectifs de stage\b/
+];
+function isRevisionSession(e){
+ const title=norm(e?.title).replace(/[^a-z0-9]+/g,' ').trim();
+ const type=norm(e?.type).trim();
+ if(!title||type==='info'||/annul/.test(type))return false;
+ return !NON_REVISION_ACTIVITY.some(rule=>rule.test(title));
+}
+function eventsForWeek(week,g){return (week?.events||[]).filter(e=>eventForGroup(e,g)&&isRevisionSession(e)).sort((a,b)=>(a.date+' '+a.start).localeCompare(b.date+' '+b.start))}
 function css(){
  if($('followupCss'))return;
  const style=document.createElement('style');style.id='followupCss';style.textContent=
@@ -124,10 +141,10 @@ function renderAgenda(){
    '<div><b>'+esc(e.title)+'</b><div class="cf-muted">'+esc(e.ue||'Séance')+' · '+esc(e.type||'Cours')+esc(note)+'</div>'+
    '<span class="cf-signal">'+esc(state)+'</span></div>'+btn+'</article>';
  }).join('');
- return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Planning prévisionnel : une séance affichée ne prouve pas qu’elle a eu lieu. « Revue » est une note personnelle sur cet appareil, pas une validation de contenu.</p>'+
+ return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Seules les séances avec contenu pédagogique à réviser sont affichées ici. Les créneaux autonomes ou administratifs restent au planning général. « Revue » est une note personnelle, pas une validation de contenu.</p>'+
   '<div class="cf-controls"><select id="cfGroup" aria-label="Groupe">'+['A1','A2','B1','B2'].map(x=>'<option'+(x===g?' selected':'')+'>'+x+'</option>').join('')+'</select>'+
   '<select id="cfWeek" aria-label="Semaine">'+options+'</select></div>'+
-  '<div class="cf-agenda">'+(arr||'<p class="cf-muted">Aucune séance correspondant à ce groupe cette semaine.</p>')+'</div></div>';
+  '<div class="cf-agenda">'+(arr||'<p class="cf-muted">Aucune séance pédagogique à réviser pour ce groupe cette semaine.</p>')+'</div></div>';
 }
 function render(){
  const sec=$(SECTION);if(!sec)return;
@@ -175,5 +192,5 @@ function init(){css();return section()&&bindBottomNavigation()}
 let tries=0,t=setInterval(()=>{if(init()||++tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
 window.addEventListener('ifsi:vocabulary-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
-window.IFSI_COURSE_FOLLOWUP={version:'1.0',show,render,courseModel,eventForGroup,eventsForWeek,sessionKey};
+window.IFSI_COURSE_FOLLOWUP={version:'1.1',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey};
 })();
