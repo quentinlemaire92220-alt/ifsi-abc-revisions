@@ -1,5 +1,18 @@
 # Skill IFSI ABC — relais ChatGPT classique ↔ Work (v1.0)
 
+
+## Priorité v1.1 — consommation Work minimale et pack approuvé (20/10/2026)
+
+**Le pilote Système cardiovasculaire / Système respiratoire validé prime sur le partage des rôles v1.0 ci-dessous.** ChatGPT classique est l'outil de production par défaut, pas seulement le pilote : analyser le support officiel, inventorier les ressources existantes, rédiger la fiche et le QCM, produire les flashcards, créer les illustrations originales/infographies et préparer les PDF lorsque possible. Réaliser contrôles et classement Drive ordinaire ici.
+
+**Work n'est sollicité que ponctuellement** pour une opération non satisfaisante dans ChatGPT classique (assemblage complexe, PDF rendu insatisfaisant, script lourd, opérations Drive en masse, modification de l'application ou TNR complexes). Fournir un cahier des charges ciblé et réutiliser tous les éléments validés. Pas de traitement systématique d'un cours complet dans Work.
+
+**Livrables par défaut :** (1) fiche classique **complète** avec texte conservé et schémas infographiés **au besoin** ; (2) **une page A4 infographiée de synthèse**, distincte de la fiche, modèle cardio/respiratoire ; (3) QCM A-E, 1–3 bonnes réponses, corrigé argumenté ; (4) flashcards questions/réponses autonomes avec réponse masquée jusqu'au retournement dans l'application ; (5) planches anatomiques uniquement si besoin non couvert par la bibliothèque. Si une synthèse en une page est trop dense, proposer extension ou choix pédagogique à valider, jamais supprimer des nuances importantes en silence.
+
+Vocaux, vocabulaire séparé, exports systématiques et second cours complet en planches ne sont **plus obligatoires** pour les nouveaux cours. Leur skill conserve sa validité lorsqu'ils sont expressément demandés.
+
+Conserver les trois portes : GO audit → GO production privée → contrôle et GO publication explicite. Toute exigence technique legacy incompatible avec le nouveau format reste BLOQUANTE pour la publication tant qu'une PR de migration dédiée n'est pas passée aux TNR.
+
 **Date : 20/10/2026 · Statut : protocole d'orchestration des supports.**
 Ce document complète les contrats existants de création, de contrôle et de publication ; il n'est ni une charte graphique ni une autorisation générale de publication. Les références pédagogiques détaillées restent dans le référentiel Drive privé.
 
