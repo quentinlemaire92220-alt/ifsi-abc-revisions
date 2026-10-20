@@ -1,5 +1,14 @@
 # Contrat technique public — ajout d'un cours IFSI ABC
 
+
+## Avis de compatibilité — standard pédagogique simplifié validé le 20/10/2026
+
+Le propriétaire a retenu pour les futurs cours une fiche complète avec schémas utiles, **une page A4 infographiée de synthèse** distincte, QCM corrigés, flashcards, et planches anatomiques selon besoin. Il n'impose plus un second cours exhaustif illustré, ni vocaux/vocabulaire séparés par défaut.
+
+**Ce document et les TNR historiques peuvent encore imposer une couverture complète dans deux PDF, des champs `dualSheetCoverage` ou des comptes de ressources.** La simplification pédagogique **n'est pas** une modification automatique de schéma : ne pas injecter de fausses empreintes, `validated: true`, lien Drive fictif, `PASS` fictif ni couverture de notions fictive pour satisfaire des tests hérités. Si une livraison est incompatible avec le contrat applicatif existant, garder son statut privé et proposer une évolution du contrat/tests dans une PR spécifique avec tests et autorisation de publication séparée.
+
+Conserver les règles d'identifiants stables, de corrections cohérentes et d'approbation explicite avant diffusion.
+
 Ce document définit les obligations **techniques** du dépôt, indépendamment des chartes pédagogiques et références graphiques conservées hors du dépôt. Il ne contient aucun lien vers des documents privés.
 
 ## 1. Identification et données
