@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-20",
+  "method": "docs/skills/production-planches-anatomiques-svg.md",
+  "sourceCourse": "UE B1 — Système reproducteur, Vanessa Petit, 2026",
+  "graphicsReference": "Planche_05_Cellule_humaine_HD.png",
+  "sourceConstraint": "Nouvelle illustration originale sans aucun texte ni flèche incorporés. Ne pas extraire et recopier des planches du cours officiel.",
+  "status": "PREPARATION_REQUIRES_UNANNOTATED_SOURCE",
+  "publicationApproved": false,
+  "clinicalApproved": false,
+  "rightsApproved": false,
+  "appCurrentVersion": "8.30.104",
+  "currentPreviewStatus": "PROVISIONAL_REVIEW_ONLY",
+  "noRelease": true,
+  "boards": [
+    {
+      "id": "R03",
+      "title": "Voies spermatiques et glandes annexes",
+      "canvas": {
+        "width": 1240,
+        "height": 1754
+      },
+      "sourceImage": null,
+      "sourceArtwork": "NOT_YET_GENERATED",
+      "sourceView": "Coupe anatomique permettant de distinguer déférent, ampoule terminale, vésicules séminales, prostate, canaux éjaculateurs et urètre",
+      "blockingFacts": [
+        "Le canal déférent suit l'épididyme et conduit les spermatozoïdes vers les canaux éjaculateurs.",
+        "L'ampoule déférentielle est une dilatation du déférent, et NON la vésicule séminale.",
+        "Les conduits éjaculateurs se forment après la réunion avec le conduit de la vésicule séminale puis traversent la prostate.",
+        "Les flèches rouges d'écoulement actuelles près du canal déférent doivent être supprimées puis redessinées dans le bon sens, du testicule vers le conduit éjaculateur."
+      ],
+      "mustNeverInfer": [
+        "ampoule depuis la masse jaune lobulée",
+        "flèche rouge descendante le long du canal déférent"
+      ],
+      "landmarks": [
+        {
+          "id": "testicule",
+          "label": "Testicule",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : gamètes formés dans les tubes séminifères du testicule.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "epididyme",
+          "label": "Épididyme",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : stockage des spermatozoïdes dans l'épididyme.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "canal_deferent",
+          "label": "Canal déférent",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : prolongement de l'épididyme vers le canal éjaculateur.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "ampoule_deferentielle",
+          "label": "Ampoule déférentielle",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : renflement terminal du canal déférent, à ne pas confondre avec la vésicule séminale.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "vesicule_seminale",
+          "label": "Vésicule séminale",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : glande lobulée postérieure à la vessie, sécrétion du liquide séminal.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "canal_ejaculateur",
+          "label": "Canal éjaculateur",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : réunion des conduits et traversée de la prostate.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "prostate",
+          "label": "Prostate",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : organe glandulaire sous la vessie entourant l'urètre prostatique.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "uretre_prostatique",
+          "label": "Urètre prostatique",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : trajet de l'urètre dans la prostate.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "glandes_bulbo_uretrales",
+          "label": "Glandes bulbo-urétrales",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : glandes sous la prostate produisant un mucus.",
+          "reviewed": false,
+          "status": "unresolved"
+        }
+      ],
+      "flowMarkers": [
+        {
+          "id": "spermatozoides_de_vers",
+          "status": "UNVERIFIED_DO_NOT_DRAW",
+          "from": "epididyme",
+          "to": "canal_ejaculateur",
+          "direction": "ascending_along_deferent",
+          "evidence": "Flux anatomique connu, mais endpoints graphique non vérifiés sur un nouveau fond."
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "Ovaire et trompe utérine",
+      "canvas": {
+        "width": 1240,
+        "height": 1754
+      },
+      "sourceImage": null,
+      "sourceArtwork": "NOT_YET_GENERATED",
+      "sourceView": "Coupe d'ovaire et trompe permettant d'isoler cortex, médulla vascularisée et région intramurale de la trompe",
+      "blockingFacts": [
+        "Le cortex ovarien est la zone périphérique contenant les follicules, et ne correspond pas à un follicule isolé.",
+        "La médulla est la zone centrale riche en vaisseaux, et ne correspond pas à un follicule antral.",
+        "La trompe a quatre segments : intramural, isthme, ampoule et pavillon avec ses franges."
+      ],
+      "mustNeverInfer": [
+        "medulla_pointing_to_follicle",
+        "cortex_pointing_inside_follicle"
+      ],
+      "landmarks": [
+        {
+          "id": "cortex_ovarien",
+          "label": "Cortex ovarien",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle, partie Ovaires : région périphérique contenant les follicules.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "medulla_ovarienne",
+          "label": "Médulla ovarienne",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle, partie Ovaires : zone centrale vascularisée.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "follicules",
+          "label": "Follicules",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : follicules du cortex, distincts du stroma médullaire.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "franges",
+          "label": "Franges du pavillon",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : pavillon tubaire avec franges.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "pavillon",
+          "label": "Pavillon",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : extrémité de la trompe qui capte l'ovocyte.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "ampoule_tubaire",
+          "label": "Ampoule tubaire",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : segment de la trompe en aval du pavillon.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "isthme_tubaire",
+          "label": "Isthme tubaire",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : segment étroit proche de l'utérus.",
+          "reviewed": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "partie_intramurale",
+          "label": "Partie intramurale",
+          "tip": null,
+          "labelPosition": null,
+          "evidence": "Source officielle : segment traversant la paroi de l'utérus.",
+          "reviewed": false,
+          "status": "unresolved"
+        }
+      ]
+    }
+  ],
+  "nextAction": "Produire un fond anatomique original sans légendes pour chaque schéma. Repérer et faire relire chaque pointe sur le fond avant d'activer le composeur SVG. Aucun usage QCM avant validations des images, droits et repères.",
+  "prohibitedClaims": [
+    "R03 correction terminée",
+    "R05 validée anatomiquement",
+    "les exports Canva transféreraient automatiquement tous les droits"
+  ]
+}
