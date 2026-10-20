@@ -23,24 +23,24 @@ function validate(item){
  if(!Number.isInteger(item?.year)||item.year<1||item.year>3)errors.push('Année IFSI invalide');
  if(!nonEmpty(item?.courseIds)||!item.courseIds.every(text)||!unique(item.courseIds))errors.push('Liens vers les cours manquants ou dupliqués');
  for(const k of REQUIRED){if(!text(item?.sections?.[k]))errors.push('Section absente : '+k);}
- if(!nonEmpty(item?.sources)||!item.sources.every(s=>text(s.label)&&text(s.url)&&/^https:\/\//.test(s.url)&&['official','verified_complement'].includes(s.type)))errors.push('Sources non traçables');
- const sourceIds=new Set((item?.sources||[]).map(s=>s.id).filter(text));
- if(!nonEmpty(item?.sources)||!item.sources.every(s=>text(s.id))||!unique(item.sources.map(s=>s.id)))errors.push('Identifiants des sources manquants ou dupliqués');
+ if(!nonEmpty(item?.sources)||!item.sources.every(s=>s&&text(s.label)&&text(s.url)&&/^https:\/\//.test(s.url)&&['official','verified_complement'].includes(s.type)))errors.push('Sources non traçables');
+ const sourceIds=new Set((item?.sources||[]).map(s=>s?.id).filter(text));
+ if(!nonEmpty(item?.sources)||!item.sources.every(s=>s&&text(s.id))||!unique(item.sources.map(s=>s?.id)))errors.push('Identifiants des sources manquants ou dupliqués');
  const visuals=item?.visuals;
  if(!nonEmpty(visuals)||!unique(visuals.map(v=>v?.id)))errors.push('Infographies manquantes ou identifiants dupliqués');
  else visuals.forEach(v=>{
   if(!text(v?.id)||!REQUIRED.includes(v.sectionId)||v.kind!=='original_infographic'||!text(v.alt)||!text(v.url)||!/^https:\/\//i.test(v.url)||!/^[-a-f0-9]{64}$/i.test(v.sha256||''))errors.push('Infographie incomplète, brute ou non sécurisée : '+(v?.id||'?'));
-  if(!nonEmpty(v?.sourceIds)||v.sourceIds.some(id=>!sourceIds.has(id)))errors.push('Infographie sans source identifiable : '+(v?.id||'?'));
+  if(!nonEmpty(v?.sourceIds)||(Array.isArray(v.sourceIds)&&v.sourceIds.some(id=>!sourceIds.has(id))))errors.push('Infographie sans source identifiable : '+(v?.id||'?'));
   if(v.graphicalReview!=='approved'||v.medicalReview!=='approved')errors.push('Infographie sans double validation médicale et graphique : '+(v?.id||'?'));
  });
  const audit=item?.visualAudit;
  if(!audit||!Number.isInteger(audit.diagramCount)||audit.diagramCount<1||audit.diagramCount!==(visuals||[]).length||audit.rawDiagramCount!==0||audit.allPdfPagesChecked!==true||audit.clinicalContentReviewed!==true)errors.push('Audit schéma → infographie / PDF / validation clinique incomplet');
  if(!nonEmpty(item?.qcm))errors.push('QCM absent');else{
-  if(!unique(item.qcm.map(x=>x.id)))errors.push('IDs QCM dupliqués');
+  if(!unique(item.qcm.map(x=>x?.id)))errors.push('IDs QCM dupliqués');
   item.qcm.forEach(q=>checkOptions(q,'QCM '+(q.id||'?'),errors));
  }
- if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x.id))||!item.flashcards.every(c=>text(c.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
- if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x.id)))errors.push('Cas cliniques absents ou dupliqués');
+ if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
+ if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x?.id)))errors.push('Cas cliniques absents ou dupliqués');
  else item.cases.forEach(c=>{
   if(!text(c.id)||!text(c.title)||!text(c.context)||!nonEmpty(c.steps))errors.push('Cas incomplet : '+(c.id||'?'));
   else c.steps.forEach((s,i)=>checkOptions({...s,id:s.id||('step_'+i),correct:[s.correct]},'Cas '+c.id+' étape '+(i+1),errors));
