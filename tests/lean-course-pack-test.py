@@ -38,7 +38,7 @@ with TemporaryDirectory() as d:
             "answers":[0,2],"announcedCorrectCount":2,
             "explanation":"Les propositions A et C sont choisies parce qu'elles correspondent au contenu fictif validé."
         }],
-        "flashcards":[{"id":"fictif_f01","front":"Quel est le principe de la première notion fictive ?",
+        "flashcards":[{"id":"fictif_f01","qid":"fictif_q01","front":"Quel est le principe de la première notion fictive ?",
                        "answers":["Un principe pédagogique fictif, pour tester le moteur."],
                        "explanation":"Cette explication est issue de la matrice fictive."}]
     }
@@ -60,6 +60,9 @@ with TemporaryDirectory() as d:
         assert "Corrigé argumenté" in text and "A, C" in text
     assert report["artifactSha256s"]["QCM.json"]
     assert len(json.loads((out/"Flashcards.json").read_text(encoding="utf8")))==1
+    bank=json.loads((out/"QCM.json").read_text(encoding="utf8"))
+    assert bank[0]["flashcards"][0]["front"]==lesson["flashcards"][0]["front"], "Rattachement carte au QCM perdu"
+    assert bank[0]["flashcards"][0]["answers"]==lesson["flashcards"][0]["answers"]
     cached=make_pack(lesson,root,out)
     assert cached["reusedFromCache"] is True, "Réemploi du cache requis"
     wrong=dict(lesson,sections=[{"heading":"Première notion","notionIds":["a"],
@@ -67,6 +70,10 @@ with TemporaryDirectory() as d:
     try:make_pack(wrong,root,root/"bad")
     except ValueError as e:assert "toutes les notions" in str(e)
     else:raise AssertionError("Perte de couverture non refusée")
+    wrong=dict(lesson,flashcards=[{**lesson["flashcards"][0],"qid":"unknown"}])
+    try:make_pack(wrong,root,root/"bad-flashcards")
+    except ValueError as e:assert "qid" in str(e)
+    else:raise AssertionError("Flashcard orpheline acceptée")
     wrong=dict(lesson,qcmQuestions=[{**lesson["qcmQuestions"][0],"announcedCorrectCount":1}])
     try:make_pack(wrong,root,root/"bad-qcm")
     except ValueError as e:assert "contradictoire" in str(e)
