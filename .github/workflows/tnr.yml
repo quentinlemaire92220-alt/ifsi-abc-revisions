@@ -42,6 +42,9 @@ jobs:
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 
+      - name: Contrôler les 18 flashcards complémentaires P3 et la PWA
+        run: node tests/p3-flashcards-release.mjs
+
       - name: Tester le contrôle PDF sur des documents fictifs
         uses: actions/setup-python@v5
         with:
