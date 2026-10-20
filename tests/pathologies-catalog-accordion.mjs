@@ -14,7 +14,7 @@ const html=ctx.fakeMarkup('');
 assert.equal((html.match(/<details class=\"patho-group\"/g)||[]).length,3,'Three collapsible system panels expected');
 for(const label of ['Système respiratoire','Système cardiovasculaire','Système endocrinien'])assert.ok(html.includes(label),'System absent: '+label);
 for(const id of ['bpco','hta','dt2'])assert.ok(html.includes('data-patho-pending=\"'+id+'\"'),'Pending pathology not navigable: '+id);
-assert.ok(html.includes('En cours de validation médicale'));
+assert.ok(html.includes('Contenu en cours de validation médicale'));
 assert.ok(!html.includes('data-patho-course'),'Clicking a pathology must not open a course');
 assert.ok(!html.includes('Bonne réponse'));
 assert.ok(ctx.fakeMarkup('respiratoire').includes('data-patho-pending=\"bpco\"'));
