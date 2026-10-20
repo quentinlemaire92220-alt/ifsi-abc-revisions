@@ -44,4 +44,12 @@
 | Mise en page | Infographie au bon endroit dans la fiche ; modèle Système nerveux | Hors-sujet, collage final séparé ou reproduction graphique de diapositives |
 | Contrôle final | Toutes les pages PDF vues, lisibles, sans doublon ni débordement | Aperçu seulement, contrôle de quelques pages ou défaut restant |
 
+## 5. Application obligatoire aux fiches « Pathologies » (modèle BPCO validé le 20/10/2026)
+
+**Contrat spécialisé prioritaire : `docs/skills/production-pathologies-infographies-cliniques.md`.** Pour la fiche Pathologies uniquement, **tout schéma est remplacé par une infographie pédagogique originale**, conforme à la forme du pilote BPCO : illustration explicative dominante, texte et légendes français revus, flèches utiles, composition lisible et encadré de mémorisation. Les schémas bruts, figures isolées et captures sont interdits.
+
+**La forme validée n'est pas une validation scientifique.** Chaque infographie est liée à son thème et à sa source officielle ou complémentaire vérifiée. Les seuils, prises en charge, gestes et traitements doivent être vérifiés médicalement pour la maladie et le contexte, et non copiés du pilote. Le nombre de visuels dépend exclusivement du contenu nécessaire ; les QCM et planches anatomiques suivent leurs propres contrats.
+
+Avant revue du lot, contrôler **toutes les pages** du PDF final et tracer l'inventaire schéma→infographie ; une seule figure non conforme bloque la livraison. La publication pédagogique reste soumise à un GO publication distinct.
+
 **Règle pratique finale :** un « Go » suffit ; **ne pas redemander ces instructions**. Si une condition d'acceptation échoue, corriger avant toute proposition de validation. Aucun compteur, score de QCM, flashcard ou élément publié ne doit être modifié par la seule refonte visuelle.
