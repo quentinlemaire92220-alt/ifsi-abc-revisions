@@ -86,7 +86,7 @@ const byId=id=>doc().getElementById(id);
 function css(){
  if(byId('ifsiPathologiesStyle'))return;
  const style=doc().createElement('style');style.id='ifsiPathologiesStyle';
- style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}.patho-figure{margin:12px 0}.patho-figure img{width:100%;height:auto;object-fit:contain;border-radius:12px}.patho-figure figcaption{font-size:12px;color:var(--muted);margin:6px 0}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
+ style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}.patho-figure{margin:12px 0}.patho-figure img{width:100%;height:auto;object-fit:contain;border-radius:12px}.patho-figure figcaption{font-size:12px;color:var(--muted);margin:6px 0}nav.ifsi-pathologies-ready{grid-template-columns:repeat(6,minmax(0,1fr))}nav.ifsi-pathologies-ready button{font-size:11px;overflow-wrap:anywhere}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
  doc().head.appendChild(style);
 }
 function ensure(){
@@ -97,6 +97,7 @@ function ensure(){
  const nav=app.querySelector('nav');
  if(nav)app.insertBefore(s,nav);else app.appendChild(s);
  if(nav&&!byId('ifsiPathologiesNav')){
+  nav.classList.add('ifsi-pathologies-ready');
   const b=doc().createElement('button');b.type='button';b.id='ifsiPathologiesNav';b.innerHTML='♡<br>Pathologies';b.addEventListener('click',open);nav.appendChild(b);
  }
  if(typeof root.show==='function'&&!root.show._pathoWrapped){
@@ -104,6 +105,7 @@ function ensure(){
  }
 }
 function open(){
+ if(!entries.length)return;
  ensure();
  const host=byId(SECTION);if(!host)return;
  doc().querySelectorAll('.app > section').forEach(s=>s.classList.add('hidden'));
