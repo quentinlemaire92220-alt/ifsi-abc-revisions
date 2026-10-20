@@ -1,5 +1,5 @@
 {
-  "version": "8.30.108",
+  "version": "8.30.109",
   "auditedAt": "2026-10-20",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.73 : ressources officielles Douleur synchronisées ; provenance Respiratoire corrigée.",
+  "note": "V8.30.109 : volet care p02, fiche unique et cinq planches complémentaires ; ressources antérieures conservées.",
   "expectedTotals": {
     "courses": 49,
-    "sheets": 61,
-    "infographics": 169,
+    "sheets": 62,
+    "infographics": 174,
     "vocals": 131,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1713
+    "qcmRuntimeMin": 1773
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",

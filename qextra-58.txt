@@ -1,0 +1,2075 @@
+[
+  {
+    "id": "care_p02_001",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Care et cure : deux dimensions complémentaires",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent la distinction entre care et cure ?",
+    "choices": [
+      "Le care désigne seulement une guérison obtenue.",
+      "Le care comprend une attention aux besoins de la personne.",
+      "Le cure renvoie notamment au traitement et à la visée de guérison.",
+      "Le care exclut la compétence technique.",
+      "Chaque profession appartient exclusivement au care ou au cure."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "A : faux. Il ne se réduit ni à la guérison ni au résultat thérapeutique. B : vrai. Le souci et l’attention appartiennent au care. C : vrai. C’est le sens de cure retenu dans cette distinction. D : faux. Le prendre soin exige des compétences et peut accompagner un geste technique. E : faux. La distinction ne répartit pas les professions en catégories exclusives.",
+    "flashcards": [
+      {
+        "front": "Comment distinguer care et cure ?",
+        "answers": [
+          "Le care met l’accent sur l’attention et le prendre soin ; le cure sur le traitement et la visée de guérison."
+        ],
+        "explanation": "Une même pratique peut associer ces deux dimensions.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-01 ; oral 1, 00:00-04:29"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_002",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Care et cure : deux dimensions complémentaires",
+    "difficulty": "medium",
+    "question": "À propos du champ du care, quelles propositions sont justes ?",
+    "choices": [
+      "Entretenir des conditions de vie habitables peut relever du care.",
+      "Seuls les actes médicalement prescrits relèvent du care.",
+      "Le care est une disposition réservée aux femmes.",
+      "Un acte gratuit ne peut jamais relever du care.",
+      "Une activité parentale peut relever du care."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A : vrai. La définition élargie prend en compte le monde commun. B : faux. Son champ est plus large que la prescription médicale. C : faux. Aucune aptitude naturelle exclusive n’est affirmée. D : faux. Le care peut être rémunéré, peu rémunéré ou gratuit. E : vrai. Le prendre soin ne se limite pas aux institutions de santé.",
+    "flashcards": [
+      {
+        "front": "Pourquoi le care dépasse-t-il les soins de santé ?",
+        "answers": [
+          "Il comprend aussi les activités qui soutiennent les enfants, les proches et les conditions de la vie quotidienne."
+        ],
+        "explanation": "Le care est une préoccupation et une activité sociale concrète.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-01 ; oral 1, 00:00-04:29"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_003",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "easy",
+    "question": "Quels éléments appartiennent au dilemme de Heinz ?",
+    "choices": [
+      "Le pharmacien refuse de donner gratuitement le médicament.",
+      "Le cas établit une autorisation générale de voler.",
+      "Le récit apporte une histoire complète de tous les protagonistes.",
+      "Amy dispose déjà d’une solution de financement certaine.",
+      "La femme de Heinz risque de mourir sans médicament."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A : vrai. Ce refus explique l’impasse présentée. B : faux. Un exercice de raisonnement ne vaut pas règle générale. C : faux. Le caractère schématique du récit est précisément discuté. D : faux. Elle cherche des alternatives sans disposer d’une solution garantie. E : vrai. C’est le besoin vital à l’origine du dilemme.",
+    "flashcards": [
+      {
+        "front": "Quel problème moral le dilemme de Heinz met-il en scène ?",
+        "answers": [
+          "Un homme sans l’argent nécessaire doit décider s’il vole un médicament susceptible de sauver sa femme."
+        ],
+        "explanation": "Le cas permet de comparer plusieurs façons de raisonner, sans donner une règle générale.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_004",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "medium",
+    "question": "Dans le dilemme de Heinz, comment le raisonnement de Jake est-il présenté ?",
+    "choices": [
+      "Il considère toutes les valeurs comme sans importance.",
+      "Il refuse toute abstraction.",
+      "Il fonde sa réponse sur une relation personnelle avec le pharmacien.",
+      "Il imagine que la justice tiendra compte du motif.",
+      "Il fait primer la sauvegarde de la vie sur la propriété."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. Il raisonne au contraire en les hiérarchisant. B : faux. Son raisonnement est présenté comme abstrait et principiel. C : faux. Ce lien particulier ne fonde pas son argument. D : vrai. Il prévoit une forme de clémence du juge. E : vrai. Il établit une hiérarchie entre valeurs.",
+    "flashcards": [
+      {
+        "front": "Comment Jake raisonne-t-il dans le dilemme de Heinz ?",
+        "answers": [
+          "Il hiérarchise la vie et la propriété, puis estime qu’un juge pourra tenir compte du motif du vol."
+        ],
+        "explanation": "Cette lecture repose sur des principes généraux.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_005",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "medium",
+    "question": "Quels aspects du raisonnement d’Amy sont mis en valeur par Gilligan ?",
+    "choices": [
+      "L’incapacité de toute fille à comprendre une règle.",
+      "Le devenir de la femme si Heinz est emprisonné.",
+      "L’idée que la mort de la femme n’a aucune importance.",
+      "La possibilité de discuter et de chercher d’autres solutions.",
+      "La certitude que toutes les personnes accepteront de négocier."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "A : faux. Cette infériorité est contestée par Gilligan. B : vrai. Elle examine une conséquence relationnelle concrète. C : faux. Elle cherche précisément à éviter la mort et le vol. D : vrai. Elle ne réduit pas d’emblée la réponse à une alternative fermée. E : faux. Une alternative envisagée n’est pas un résultat garanti.",
+    "flashcards": [
+      {
+        "front": "Que prend en compte Amy au-delà d’un choix abstrait entre vie et propriété ?",
+        "answers": [
+          "Elle cherche des alternatives et considère les effets d’un emprisonnement sur les personnes et leurs relations."
+        ],
+        "explanation": "Son hésitation peut exprimer une attention au contexte.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_006",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "hard",
+    "question": "Que critique Gilligan dans l’interprétation du développement moral présentée par Kohlberg ?",
+    "choices": [
+      "La nécessité de comprendre les situations particulières.",
+      "L’existence même de toute exigence de justice.",
+      "La capacité des femmes à raisonner abstraitement.",
+      "Le fait de traiter systématiquement une réponse relationnelle comme moralement inférieure.",
+      "L’insuffisante place accordée aux sentiments comme ressource de compréhension."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. Cette compréhension est au contraire centrale pour elle. B : faux. Le regard relationnel complète plutôt qu’il n’abolit la justice. C : faux. Elle ne nie pas cette capacité. D : vrai. La cohérence du raisonnement d’Amy mérite d’être reconnue. E : vrai. Le langage de la justice peut laisser cette ressource dans l’ombre.",
+    "flashcards": [
+      {
+        "front": "Quelle ressource morale Gilligan veut-elle rendre audible ?",
+        "answers": [
+          "L’attention aux relations, aux besoins singuliers et aux sentiments, souvent minorée par une évaluation centrée sur l’abstraction."
+        ],
+        "explanation": "Elle ne conclut pas à l’inutilité du raisonnement ou de la justice.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_007",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre repères du raisonnement relationnel",
+    "difficulty": "easy",
+    "question": "Quels repères appartiennent à l’approche relationnelle de Gilligan ?",
+    "choices": [
+      "Préserver toute relation, même sous contrainte, à n’importe quel prix.",
+      "Supprimer tout récit personnel.",
+      "S’engager à répondre aux besoins concrets.",
+      "Reconnaître le rôle des émotions.",
+      "Prendre en compte les particularités de la situation."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "A : faux. La valeur des liens ne justifie pas un préjudice. B : faux. La narration est au contraire une ressource. C : vrai. La responsabilité est comprise dans un sens relationnel. D : vrai. Elles contribuent à la compréhension sans suffire à décider. E : vrai. Le contexte et l’histoire sont nécessaires au jugement.",
+    "flashcards": [
+      {
+        "front": "Quels sont les quatre repères de l’approche relationnelle de Gilligan ?",
+        "answers": [
+          "Maintenir les relations ; comprendre les particularités ; répondre aux besoins concrets ; reconnaître le rôle des émotions."
+        ],
+        "explanation": "Le récit articule ces dimensions.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-27:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_008",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre repères du raisonnement relationnel",
+    "difficulty": "medium",
+    "question": "Quel rôle le récit peut-il jouer dans une analyse du care ?",
+    "choices": [
+      "Éclairer l’histoire et les relations des protagonistes.",
+      "Rendre les principes définitivement inutiles.",
+      "Permettre d’inventer librement les éléments manquants.",
+      "Faire apparaître des besoins mal visibles dans un exemple très bref.",
+      "Garantir que le narrateur ne se trompe jamais."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "A : vrai. Le récit redonne une épaisseur à la situation. B : faux. Les approches peuvent être complémentaires. C : faux. Une lacune reste une incertitude à documenter. D : vrai. La singularité peut modifier l’interprétation. E : faux. Un récit doit être confronté aux faits et aux autres points de vue.",
+    "flashcards": [
+      {
+        "front": "Pourquoi la narration est-elle importante pour le care ?",
+        "answers": [
+          "Elle rend compréhensibles l’histoire, les relations, les ressources et les besoins singuliers des personnes."
+        ],
+        "explanation": "Des situations apparemment semblables peuvent comporter des enjeux différents.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-27:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_009",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre repères du raisonnement relationnel",
+    "difficulty": "medium",
+    "question": "Quelles propositions distinguent deux sens de la responsabilité ?",
+    "choices": [
+      "Assumer les conséquences de ses actes est un autre sens du terme.",
+      "La responsabilité relationnelle supprime toutes les limites professionnelles.",
+      "Un besoin aperçu crée automatiquement une solution disponible.",
+      "Être responsable signifie toujours être coupable.",
+      "Répondre aux besoins d’autrui est un sens relationnel de la responsabilité."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A : vrai. Il reste pertinent, sans épuiser la responsabilité. B : faux. Elle appelle une réponse ajustée, pas un dévouement sans limites. C : faux. L’organisation et les moyens restent à construire. D : faux. La responsabilité peut exister en l’absence de faute. E : vrai. Il ne se réduit pas à la réparation d’une faute.",
+    "flashcards": [
+      {
+        "front": "Quels deux sens de la responsabilité le cours distingue-t-il ?",
+        "answers": [
+          "Assumer les conséquences de ses actes et se sentir tenu de répondre aux besoins d’autrui."
+        ],
+        "explanation": "Le second sens est particulièrement travaillé par les éthiques du care.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-27:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_010",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Émotions, professionnalité et complémentarité des regards",
+    "difficulty": "medium",
+    "question": "Comment mobiliser les émotions dans une réflexion professionnelle ?",
+    "choices": [
+      "Elles peuvent aussi favoriser une lecture partielle.",
+      "Elles donnent toujours une interprétation certaine.",
+      "Elles demandent un travail de recul.",
+      "Elles peuvent attirer l’attention sur une humiliation.",
+      "Les éprouver constitue nécessairement une faute professionnelle."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "A : vrai. L’identification à un acteur peut masquer les autres. B : faux. Le vécu d’autrui n’est pas directement connu par sa propre émotion. C : vrai. Ce travail fait partie du jugement professionnel. D : vrai. La sensibilité peut révéler un enjeu discret. E : faux. Le professionnalisme n’est pas l’indifférence.",
+    "flashcards": [
+      {
+        "front": "Comment faire d’une émotion une ressource professionnelle ?",
+        "answers": [
+          "La reconnaître, interroger ce qu’elle révèle et ses biais, puis la confronter aux faits et aux autres regards."
+        ],
+        "explanation": "Ni suppression totale ni décision impulsive ne suffisent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-32:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_011",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Émotions, professionnalité et complémentarité des regards",
+    "difficulty": "easy",
+    "question": "Quelles propositions évitent une interprétation essentialiste du care ?",
+    "choices": [
+      "Les hommes peuvent exercer une attention relationnelle.",
+      "La biologie assigne nécessairement les femmes au travail domestique.",
+      "Le féminisme interdit toute analyse des rapports sociaux.",
+      "Les femmes peuvent mobiliser un raisonnement abstrait.",
+      "Une personne attentive n’a pas besoin d’apprendre à soigner."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "A : vrai. Cette ressource n’est pas réservée à un sexe. B : faux. Le cours décrit une assignation sociale et la critique. C : faux. Ces rapports constituent au contraire un objet central. D : vrai. Gilligan ne leur dénie pas cette capacité. E : faux. Le care exige des compétences.",
+    "flashcards": [
+      {
+        "front": "Pourquoi le care n’est-il pas une aptitude exclusivement féminine ?",
+        "answers": [
+          "L’origine féministe de ces travaux ne signifie pas une répartition naturelle des capacités entre femmes et hommes."
+        ],
+        "explanation": "Tous peuvent mobiliser raison, sensibilité et compétences relationnelles.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-32:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_012",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Émotions, professionnalité et complémentarité des regards",
+    "difficulty": "hard",
+    "question": "Quels énoncés décrivent la complémentarité entre care et principes ?",
+    "choices": [
+      "Préserver un lien dispense d’examiner un risque de violence.",
+      "Un raisonnement par principes peut être enrichi par l’histoire des relations.",
+      "Les principes suffisent toujours à produire une réponse automatique.",
+      "Le care oblige à renoncer à toute impartialité.",
+      "Prendre en compte les émotions peut nécessiter davantage de jugement."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "A : faux. Le lien n’annule pas la protection des personnes. B : vrai. Le care rend perceptibles des dimensions peu visibles dans l’abstraction. C : faux. Les faits, les tensions et les incertitudes demandent une délibération. D : faux. Il critique une approche exclusivement abstraite, sans abolir toute justice. E : vrai. Les émotions doivent être interrogées.",
+    "flashcards": [
+      {
+        "front": "Pourquoi associer les principes et le regard du care ?",
+        "answers": [
+          "Les principes structurent les enjeux ; le care approfondit les liens, les besoins singuliers, les responsabilités et les émotions."
+        ],
+        "explanation": "Les deux éclairages évitent de réduire la situation à une seule lecture.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-32:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_013",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Joan Tronto : soutenir la vie dans un monde vulnérable",
+    "difficulty": "easy",
+    "question": "Quels éléments relèvent de la définition élargie du care chez Tronto ?",
+    "choices": [
+      "Produire exclusivement une guérison biologique.",
+      "S’occuper seulement des personnes sans ressources.",
+      "Prendre en compte les corps et l’environnement.",
+      "Se limiter aux intentions bienveillantes sans activité.",
+      "Maintenir les conditions de la vie."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "A : faux. Cette réduction correspond mal à la définition élargie. B : faux. Le care concerne des besoins de tous. C : vrai. Le champ n’est pas limité aux actes médicaux. D : faux. Il comprend un travail concret. E : vrai. La continuité de la vie commune est au centre de la définition.",
+    "flashcards": [
+      {
+        "front": "Comment Tronto définit-elle la finalité du care ?",
+        "answers": [
+          "Maintenir, continuer et réparer notre monde pour pouvoir y vivre aussi bien que possible."
+        ],
+        "explanation": "Ce monde comprend les corps, les individualités et l’environnement.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-07 à PT01-09 ; oral 1, 32:00-46:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_014",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Joan Tronto : soutenir la vie dans un monde vulnérable",
+    "difficulty": "medium",
+    "question": "Que signifie l’interdépendance dans l’analyse de Tronto ?",
+    "choices": [
+      "La vulnérabilité concerne uniquement une petite minorité.",
+      "Toutes les personnes ont exactement les mêmes besoins.",
+      "Bénéficier d’une aide supprime nécessairement toute autonomie.",
+      "Les personnes en bonne santé peuvent bénéficier du care.",
+      "Une autonomie réelle peut s’appuyer sur l’aide d’autrui."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. Elle fait partie de la condition humaine. B : faux. La vulnérabilité et les besoins varient. C : faux. Le soutien peut aussi permettre l’autonomie. D : vrai. Le besoin de soutien n’est pas réservé à la maladie. E : vrai. Autonomie et interdépendance ne s’excluent pas absolument.",
+    "flashcards": [
+      {
+        "front": "En quoi l’interdépendance modifie-t-elle la représentation des individus ?",
+        "answers": [
+          "Elle montre que chacun dépend d’un réseau d’activités et de relations, même lorsqu’il se pense autonome."
+        ],
+        "explanation": "L’autonomie se construit aussi grâce à des appuis.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-07 à PT01-09 ; oral 1, 32:00-46:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_015",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Compétences, invisibilité et inégalités du care",
+    "difficulty": "easy",
+    "question": "Pourquoi le care peut-il être décrit comme un travail compétent ?",
+    "choices": [
+      "L’assignation aux femmes prouve une aptitude innée.",
+      "Réaliser les gestes et ajuster la relation exige des savoir-faire.",
+      "Un geste discret est nécessairement simple.",
+      "Un travail gratuit ne peut exiger aucune compétence.",
+      "Identifier un besoin demande une appréciation de la situation."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "A : faux. Le diagnostic porte sur une organisation sociale. B : vrai. La compétence ne se réduit pas à une bonne intention. C : faux. La discrétion peut reposer sur une grande maîtrise. D : faux. Le mode de rémunération ne détermine pas la qualification. E : vrai. L’attention peut être aussi une analyse précise.",
+    "flashcards": [
+      {
+        "front": "Pourquoi le care n’est-il pas un travail sans qualification ?",
+        "answers": [
+          "Comprendre les besoins, organiser la réponse et réaliser les gestes avec tact demandent des compétences."
+        ],
+        "explanation": "Sa complexité devient parfois visible surtout quand il manque.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-09 et PT01-10 ; oral 1, 46:00-59:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_016",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Compétences, invisibilité et inégalités du care",
+    "difficulty": "medium",
+    "question": "Quelles inégalités Tronto invite-t-elle à distinguer ?",
+    "choices": [
+      "Donner beaucoup garantit de recevoir suffisamment.",
+      "Certaines personnes prennent une part plus importante du travail de care.",
+      "L’accès au care et la contribution sont exactement une seule variable.",
+      "Certaines personnes accèdent plus difficilement à la réponse à leurs besoins.",
+      "Une activité centrale est toujours bien rémunérée."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "A : faux. Une forte contribution n’assure pas un accès équitable. B : vrai. La contribution peut être inégalement répartie. C : faux. Les deux dimensions doivent être distinguées. D : vrai. Le bénéfice du care est aussi inégal. E : faux. Centralité et reconnaissance peuvent être dissociées.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les deux inégalités du care mises en avant ?",
+        "answers": [
+          "L’inégalité dans la répartition du travail fourni et l’inégalité dans l’accès au care reçu."
+        ],
+        "explanation": "La contribution et le bénéfice constituent deux questions distinctes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-09 et PT01-10 ; oral 1, 46:00-59:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_017",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Compétences, invisibilité et inégalités du care",
+    "difficulty": "hard",
+    "question": "Quels éléments peuvent participer à l’invisibilisation du care ?",
+    "choices": [
+      "Traiter certaines activités domestiques comme allant de soi.",
+      "Sous-estimer les compétences nécessaires.",
+      "Le considérer à tort comme une activité subalterne.",
+      "L’invisibilité prouve son absence d’utilité.",
+      "Reconnaître sa centralité interdit toute réflexion sur les inégalités."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "A : vrai. Le travail peut alors disparaître derrière son résultat. B : vrai. Le diagnostic critique ce déni de complexité. C : vrai. Cette représentation minore son apport et sa qualification. D : faux. Un travail essentiel peut rester discret. E : faux. Cette reconnaissance nourrit au contraire la réflexion politique.",
+    "flashcards": [
+      {
+        "front": "Comment la dévalorisation du care peut-elle se manifester ?",
+        "answers": [
+          "Par une faible reconnaissance de ses compétences, une faible rémunération ou l’attente d’un travail gratuit."
+        ],
+        "explanation": "Son importance réelle peut rester masquée.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-09 et PT01-10 ; oral 1, 46:00-59:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_018",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le tact et l'irresponsabilité des privilégiés",
+    "difficulty": "medium",
+    "question": "Quelles attitudes correspondent au tact dans le care ?",
+    "choices": [
+      "Aider sans mettre en scène sa supériorité.",
+      "Conclure qu’un soin discret ne demande aucune compétence.",
+      "Tenir compte de la gêne possible liée à un soin intime.",
+      "Rendre publique l’intimité pour valoriser le travail.",
+      "Dissimuler systématiquement les gestes pour passer outre un refus."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "A : vrai. La manière de faire compte dans la relation. B : faux. La discrétion peut être un savoir-faire élaboré. C : vrai. L’aide peut toucher un endroit sensible de l’identité. D : faux. Reconnaissance du travail et exposition de la personne sont distinctes. E : faux. Le tact ne justifie pas une manipulation ou un refus ignoré.",
+    "flashcards": [
+      {
+        "front": "Que protège le tact dans une relation d’aide ?",
+        "answers": [
+          "L’intégrité et la dignité de la personne, en évitant d’accentuer inutilement sa honte ou sa dépendance."
+        ],
+        "explanation": "L’aide est apportée avec considération.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-11 à PT01-13 ; oral 1, 59:00-79:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_019",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le tact et l'irresponsabilité des privilégiés",
+    "difficulty": "hard",
+    "question": "Que désigne l’irresponsabilité des privilégiés chez Tronto ?",
+    "choices": [
+      "Être réellement dispensé de tout besoin humain.",
+      "Bénéficier du care d’autrui en le rendant peu visible.",
+      "Éviter sa part de responsabilités en la reportant sur d’autres.",
+      "Concerner nécessairement tous les hommes et aucune femme.",
+      "Démontrer que toute délégation est en soi illégitime."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "A : faux. Le privilège ne supprime pas les besoins. B : vrai. Ce mécanisme entretient une illusion d’indépendance. C : vrai. La critique porte aussi sur la répartition du travail. D : faux. Les positions de pouvoir ne se réduisent pas à cette division. E : faux. La question concerne ses conditions et la reconnaissance des responsabilités.",
+    "flashcards": [
+      {
+        "front": "Comment des privilégiés peuvent-ils se croire indépendants du care ?",
+        "answers": [
+          "Ils bénéficient d’un travail discret et en délèguent une part sans reconnaître leur dépendance et leurs responsabilités."
+        ],
+        "explanation": "Leur pouvoir peut masquer le soutien dont ils profitent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-11 à PT01-13 ; oral 1, 59:00-79:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_020",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre phases du care et leur mise en relation",
+    "difficulty": "easy",
+    "question": "À quelles opérations correspondent les deux premières phases du care ?",
+    "choices": [
+      "Les deux phases excluent toute analyse professionnelle.",
+      "Caring about : attendre obligatoirement un remerciement.",
+      "Taking care of : ignorer les ressources nécessaires.",
+      "Caring about : reconnaître un besoin.",
+      "Taking care of : organiser les moyens de répondre."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. Elles peuvent mobiliser des compétences d’évaluation et d’organisation. B : faux. La gratitude ne définit aucune phase. C : faux. Il s’agit justement de les mettre en place. D : vrai. C’est le moment de l’attention. E : vrai. C’est le moment de la responsabilité.",
+    "flashcards": [
+      {
+        "front": "Comment distinguer caring about et taking care of ?",
+        "answers": [
+          "Caring about reconnaît un besoin ; taking care of organise la réponse et les moyens."
+        ],
+        "explanation": "Les qualités associées sont attention et responsabilité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_021",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre phases du care et leur mise en relation",
+    "difficulty": "easy",
+    "question": "Quelles associations entre phase et qualité sont exactes ?",
+    "choices": [
+      "Caring about : indifférence.",
+      "Care receiving : gratitude obligatoire.",
+      "Taking care of : absence de responsabilité.",
+      "Care receiving : réactivité.",
+      "Caregiving : compétence."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. La qualité attendue est l’attention. B : faux. La réponse peut être positive, négative ou difficile à interpréter. C : faux. La responsabilité caractérise cette phase. D : vrai. La réponse de la personne soignée doit être entendue. E : vrai. Le travail concret du soin exige de la compétence.",
+    "flashcards": [
+      {
+        "front": "Quelles qualités associer aux quatre phases du care ?",
+        "answers": [
+          "Attention, responsabilité, compétence et réactivité, dans l’ordre des quatre phases."
+        ],
+        "explanation": "Elles correspondent au besoin reconnu, à la réponse organisée, au soin réalisé et à sa réception.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_022",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre phases du care et leur mise en relation",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent la fragmentation du care ?",
+    "choices": [
+      "L’expérience des personnes soignées remonte difficilement.",
+      "Une seule personne doit obligatoirement tout faire.",
+      "Toute répartition des tâches constitue nécessairement un échec.",
+      "Les métiers correspondent chacun à une phase immuable.",
+      "Les décideurs tiennent insuffisamment compte du travail réel."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A : vrai. Le retour de réception du soin est alors appauvri. B : faux. La coopération peut associer plusieurs acteurs. C : faux. Le problème est la rupture des liens, pas toute différenciation. D : faux. Un même professionnel peut intervenir dans plusieurs phases. E : vrai. La distance avec le terrain peut rendre la réponse inadaptée.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que la fragmentation du care ?",
+        "answers": [
+          "La séparation excessive entre ceux qui identifient les besoins, organisent les moyens, soignent et reçoivent les soins."
+        ],
+        "explanation": "Les informations du terrain et des bénéficiaires circulent alors mal.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_023",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Les quatre phases du care et leur mise en relation",
+    "difficulty": "hard",
+    "question": "Comment interpréter une réception difficile du soin ?",
+    "choices": [
+      "Elle peut conduire à ajuster l’organisation ou la manière de faire.",
+      "Elle peut signaler un besoin mal compris.",
+      "Elle démontre automatiquement une faute technique.",
+      "Elle justifie les violences contre les professionnels.",
+      "Elle ne doit jamais être prise en compte."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "A : vrai. La boucle de retour peut concerner différentes phases. B : vrai. Le problème peut se situer dès l’identification. C : faux. Plusieurs explications sont possibles. D : faux. Comprendre un signal ne légitime pas la violence. E : faux. La réception est une dimension constitutive du care.",
+    "flashcards": [
+      {
+        "front": "Une réaction négative prouve-t-elle qu’un soin était inutile ?",
+        "answers": [
+          "Non. Elle appelle une compréhension et une réévaluation du besoin, des moyens, du geste ou de la relation."
+        ],
+        "explanation": "Certains soins utiles peuvent être pénibles ; la réaction seule ne tranche pas.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_024",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Éthiques du care et philosophie du soin en France",
+    "difficulty": "easy",
+    "question": "Quelles autrices francophones ont contribué aux éthiques du care ?",
+    "choices": [
+      "Florence Nightingale comme coauteure de Qu’est-ce que le care ?",
+      "Sandra Laugier.",
+      "Lawrence Kohlberg comme auteur du Travail du care.",
+      "Pascale Molinier.",
+      "Patricia Paperman."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "A : faux. Cette attribution n’est pas celle de l’ouvrage présenté. B : vrai. Elle figure parmi les autrices citées. C : faux. Cet ouvrage est associé à Pascale Molinier. D : vrai. Elle figure parmi les autrices citées. E : vrai. Elle figure parmi les autrices citées.",
+    "flashcards": [
+      {
+        "front": "Quelles autrices francophones ont contribué aux éthiques du care ?",
+        "answers": [
+          "Pascale Molinier, Sandra Laugier et Patricia Paperman."
+        ],
+        "explanation": "Leurs travaux éclairent notamment le travail, l’attention et les relations de care.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-01 ; oral 2, 02:31-07:08"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_025",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le cas en EHPAD : reconstruire les faits et les incertitudes",
+    "difficulty": "easy",
+    "question": "Quelles données de la situation en EHPAD doivent être distinguées de leur interprétation ?",
+    "choices": [
+      "Le fait rapporté qu’un résident dort parfois dans un fauteuil.",
+      "L’hypothèse d’une répétition d’un schéma de domination.",
+      "Une incertitude peut être comblée par une invention plausible.",
+      "Le récit impose une même réponse pour tous les EHPAD.",
+      "Toute affirmation d’un professionnel est nécessairement une preuve complète."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "A : vrai. C’est une observation à intégrer à l’analyse. B : vrai. C’est une interprétation à examiner, pas un fait établi par le seul récit. C : faux. Elle doit être conservée comme incertitude. D : faux. Il sert à exercer un jugement contextualisé. E : faux. Les observations et interprétations peuvent diverger.",
+    "flashcards": [
+      {
+        "front": "Pourquoi séparer faits et interprétations dans une situation éthique ?",
+        "answers": [
+          "Une observation, un propos rapporté et une hypothèse n’ont pas le même statut et ne donnent pas la même certitude."
+        ],
+        "explanation": "La décision doit pouvoir être révisée quand les informations changent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-02 à PT02-08 ; oral 2, 07:08-25:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_026",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le cas en EHPAD : reconstruire les faits et les incertitudes",
+    "difficulty": "hard",
+    "question": "Quels éléments invitent à maintenir la vigilance sans conclure trop vite ?",
+    "choices": [
+      "Des cris et des comportements agressifs sont rapportés.",
+      "Les lectures de l’équipe divergent.",
+      "Aucun hématome signifie qu’aucun préjudice n’est possible.",
+      "La résidente recherche aussi la proximité du résident.",
+      "Une initiative relationnelle garantit un consentement permanent."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "A : vrai. Ce sont des éléments à comprendre et à prendre au sérieux. B : vrai. La confrontation des observations est nécessaire. C : faux. Le préjudice ne se limite pas à cette trace physique. D : vrai. Cet élément compte, sans prouver seul l’absence de toute difficulté. E : faux. Le consentement est lié à la situation et peut varier.",
+    "flashcards": [
+      {
+        "front": "L’absence d’hématome suffit-elle à exclure un préjudice ?",
+        "answers": [
+          "Non. Elle ne permet pas, à elle seule, d’écarter tout préjudice ni toute contrainte."
+        ],
+        "explanation": "Les différentes observations doivent être rapprochées et réévaluées.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-02 à PT02-08 ; oral 2, 07:08-25:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_027",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Analyser la situation avec les quatre principes",
+    "difficulty": "medium",
+    "question": "Quelles propositions relèvent du respect de l’autonomie ?",
+    "choices": [
+      "Déduire automatiquement une incapacité totale de tout trouble cognitif.",
+      "Entendre ce que chaque résident exprime.",
+      "Remplacer systématiquement les souhaits par ceux des enfants.",
+      "Prendre au sérieux un refus.",
+      "S’interroger sur les possibilités de discernement."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "A : faux. La capacité d’expression demande une appréciation contextualisée. B : vrai. L’expression de la personne reste centrale. C : faux. Les attentes des proches ne sont pas la volonté du résident. D : vrai. Respecter la volonté comprend le refus. E : vrai. Le diagnostic seul ne remplace pas l’examen de la situation.",
+    "flashcards": [
+      {
+        "front": "Qu’invite à rechercher le principe d’autonomie dans le cas en EHPAD ?",
+        "answers": [
+          "Les souhaits, les refus, les possibilités de discernement et les moyens d’expression de chaque personne."
+        ],
+        "explanation": "L’intimité et l’aide à la décision participent aussi à cette réflexion.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_028",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Analyser la situation avec les quatre principes",
+    "difficulty": "hard",
+    "question": "Comment les troubles cognitifs interviennent-ils dans l’analyse du consentement ?",
+    "choices": [
+      "Le consentement d’un proche remplace toujours celui de la personne.",
+      "Ils peuvent compliquer l’expression et la compréhension de la situation.",
+      "L’absence de refus ne démontre pas à elle seule un accord suffisamment compris.",
+      "Ils démontrent toujours une abolition de toute volonté.",
+      "Ils permettent de conclure que toute relation est nécessairement consentie."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "A : faux. Les rôles doivent être distingués et la personne entendue. B : vrai. Ils doivent donc être pris en compte. C : vrai. Un accord ne se résume pas au silence. D : faux. Cette généralisation n’est pas justifiée. E : faux. La prudence reste nécessaire.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas déduire le consentement du seul diagnostic cognitif ?",
+        "answers": [
+          "Le diagnostic signale une vigilance nécessaire mais ne décrit pas à lui seul ce que la personne comprend et exprime dans la situation."
+        ],
+        "explanation": "Ni incapacité automatique ni consentement présumé ne suffisent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_029",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Analyser la situation avec les quatre principes",
+    "difficulty": "medium",
+    "question": "Quels enjeux relèvent de la bienfaisance et de la non-malfaisance dans le cas ?",
+    "choices": [
+      "Ignorer les effets d’une séparation imposée.",
+      "Repérer un risque lié à un couchage inadapté.",
+      "S’interroger sur le sommeil de la personne dormant dans un fauteuil.",
+      "Considérer uniquement le jugement moral sur l’adultère.",
+      "Examiner les effets apaisants possibles d’une relation."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "A : faux. Une intervention peut aussi produire des préjudices. B : vrai. La sécurité fait partie de l’analyse des préjudices. C : vrai. Le récit ne doit pas faire oublier les besoins de santé. D : faux. Ce jugement ne remplace pas l’analyse soignante. E : vrai. Le bien-être est une dimension de la bienfaisance.",
+    "flashcards": [
+      {
+        "front": "Quels besoins concrets ne faut-il pas oublier derrière la question de séparer un couple en EHPAD ?",
+        "answers": [
+          "Le bien-être affectif, la sécurité, le sommeil et les risques de préjudice ou de chute."
+        ],
+        "explanation": "La réflexion doit considérer à la fois bénéfices et risques.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_030",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Analyser la situation avec les quatre principes",
+    "difficulty": "hard",
+    "question": "Quelles questions permettent de mobiliser le principe de justice ?",
+    "choices": [
+      "Les limitations envisagées reposent-elles sur des risques identifiés ?",
+      "Les personnes âgées n’ont jamais besoin d’intimité.",
+      "La même restriction serait-elle envisagée pour des personnes plus jeunes ?",
+      "La justice consiste à rendre toutes les situations matériellement identiques.",
+      "Un diagnostic autorise automatiquement toute restriction relationnelle."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "A : vrai. La vulnérabilité ne suffit pas à tout justifier. B : faux. Cette généralisation relève d’un préjugé. C : vrai. La comparaison peut révéler un biais lié à l’âge. D : faux. L’équité peut exiger des réponses adaptées. E : faux. Les raisons et les conséquences doivent être examinées.",
+    "flashcards": [
+      {
+        "front": "Comment mobiliser la justice face à la vie affective de personnes âgées ?",
+        "answers": [
+          "Rechercher un traitement équitable et interroger les restrictions fondées sur des risques précis plutôt que sur des préjugés."
+        ],
+        "explanation": "L’âge et la vulnérabilité ne doivent pas effacer la personne.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_031",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Analyser la situation avec les quatre principes",
+    "difficulty": "medium",
+    "question": "Que peut-on apprendre de la décision provisoire de ne pas intervenir dans la situation racontée ?",
+    "choices": [
+      "Elle supprime les devoirs de vigilance.",
+      "C’est un élément de l’histoire de ce cas.",
+      "Elle oblige à ne jamais intervenir en EHPAD.",
+      "Elle peut être réexaminée si de nouveaux éléments apparaissent.",
+      "Elle interdit toujours tout échange avec les proches."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "A : faux. La vigilance reste nécessaire. B : vrai. Sa place est narrative et contextuelle. C : faux. Une généralisation serait injustifiée. D : vrai. L’évolution des faits peut modifier l’analyse. E : faux. La question dépend du contexte et des rôles.",
+    "flashcards": [
+      {
+        "front": "Une décision particulière d’un cas éthique devient-elle une consigne générale ?",
+        "answers": [
+          "Non. Elle appartient au contexte du récit et doit rester ouverte à la réévaluation."
+        ],
+        "explanation": "Le cours vise le raisonnement, pas une recette applicable à tous.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_032",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "medium",
+    "question": "Quels liens le regard du care invite-t-il à considérer dans le cas ?",
+    "choices": [
+      "La relation qui s’est nouée entre les deux résidents.",
+      "Tout lien doit être préservé même en présence de violence avérée.",
+      "Les relations conjugales et familiales existantes.",
+      "La relation de confiance entre proches et professionnels.",
+      "Un seul lien doit toujours être retenu et tous les autres oubliés."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "A : vrai. Elle fait partie des enjeux présents. B : faux. La valeur relationnelle n’annule pas la protection. C : vrai. Elles ne disparaissent pas de l’histoire. D : vrai. Elle contribue aux responsabilités ressenties. E : faux. L’analyse relationnelle élargit précisément le regard.",
+    "flashcards": [
+      {
+        "front": "Quels liens faut-il cartographier dans une analyse du care ?",
+        "answers": [
+          "La relation entre résidents, leurs liens avec leurs proches et la confiance envers l’établissement."
+        ],
+        "explanation": "Les options peuvent avoir des effets différents sur chaque lien.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_033",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "hard",
+    "question": "Comment reconnaître un conflit de loyauté chez les soignants ?",
+    "choices": [
+      "Il se résout en supprimant toute émotion.",
+      "La loyauté familiale autorise toujours à décider à la place du résident.",
+      "Le sentiment de complicité peut exprimer cet embarras.",
+      "La protection de l’intimité semble entrer en tension avec une obligation ressentie envers les proches.",
+      "Ce conflit démontre nécessairement une faute."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "A : faux. Les émotions doivent être travaillées, pas seulement niées. B : faux. Un devoir ressenti n’annule pas l’autonomie de la personne. C : vrai. Il mérite d’être explicité et discuté. D : vrai. Deux fidélités morales paraissent difficiles à articuler. E : faux. Une tension morale ne prouve pas une faute.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un conflit de loyauté dans le cas en EHPAD ?",
+        "answers": [
+          "Se sentir tenu à des devoirs difficiles à concilier envers les résidents et envers les proches qui font confiance à l’équipe."
+        ],
+        "explanation": "Ce conflit explique l’embarras sans décider à lui seul de l’action.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_034",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "hard",
+    "question": "Pourquoi interroger les identifications personnelles des professionnels ?",
+    "choices": [
+      "Le professionnel doit confondre son histoire avec celle des résidents.",
+      "Les émotions sont toujours inutiles à la compréhension.",
+      "Reconnaître sa gêne permet d’en discuter avec l’équipe.",
+      "S’identifier à un acteur permet de savoir avec certitude ce qu’il ressent.",
+      "Se mettre à la place des enfants peut modifier la lecture de la situation."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "A : faux. Il doit distinguer les deux histoires. B : faux. Elles peuvent signaler des enjeux moraux. C : vrai. L’émotion peut être examinée plutôt que rester implicite. D : faux. Cette certitude n’est pas fondée. E : vrai. Ce point de vue éclaire un enjeu mais n’épuise pas l’analyse.",
+    "flashcards": [
+      {
+        "front": "Quel risque comporte l’identification à un seul acteur ?",
+        "answers": [
+          "Elle peut faire privilégier son point de vue et masquer les besoins, les liens ou les arguments des autres."
+        ],
+        "explanation": "Nommer cette identification permet de reprendre de la distance.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_035",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "medium",
+    "question": "Quelles démarches contribuent à une délibération éthique ?",
+    "choices": [
+      "Remplacer les faits par une conviction sur l’adultère.",
+      "Préciser ce qui reste incertain et prévoir une réévaluation.",
+      "Confronter les observations de plusieurs membres de l’équipe.",
+      "Examiner les effets des options sur les personnes et leurs liens.",
+      "Choisir une réponse automatique avant d’écouter les résidents."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "A : faux. Un jugement personnel ne constitue pas l’analyse entière. B : vrai. La décision reste sensible à l’évolution de la situation. C : vrai. Les lectures divergentes peuvent être éclaircies. D : vrai. Les conséquences relationnelles comptent. E : faux. La place des personnes doit rester centrale.",
+    "flashcards": [
+      {
+        "front": "Quelles étapes aident à délibérer dans une situation complexe ?",
+        "answers": [
+          "Établir les faits et incertitudes, entendre les personnes, croiser les regards, comparer les options et réévaluer."
+        ],
+        "explanation": "La réflexion associe principes, relations et conditions concrètes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_036",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Le cas en EHPAD : reconstruire les faits et les incertitudes",
+    "difficulty": "medium",
+    "question": "Comment éviter de transformer le cas en EHPAD en jugement moral immédiat ?",
+    "choices": [
+      "Traiter la gêne personnelle comme une preuve de danger.",
+      "Supposer que tous les proches veulent exactement la même chose.",
+      "Déduire que la vie affective est impossible en institution.",
+      "Entendre les personnes concernées et confronter les regards de l’équipe.",
+      "Préciser les faits avant de retenir une interprétation."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "A : faux. Une émotion ne suffit pas à établir un risque. B : faux. Leurs attentes peuvent différer et demandent à être comprises. C : faux. Cette généralisation efface les personnes et leur situation. D : vrai. Les points de vue doivent pouvoir être discutés. E : vrai. La délibération a besoin d’éléments établis.",
+    "flashcards": [
+      {
+        "front": "Pourquoi un jugement personnel sur l’adultère ne suffit-il pas à décider ?",
+        "answers": [
+          "Il ne remplace pas l’analyse des souhaits, des risques, des besoins et des relations des personnes concernées."
+        ],
+        "explanation": "Le raisonnement soignant doit dépasser la première réaction.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "sourceRefs": [
+      "PT02-02 à PT02-08 ; oral 2, 07:08-25:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_001",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Care et cure : deux dimensions complémentaires",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Care » ?",
+    "choices": [
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue.",
+      "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension.",
+      "Devoir ressenti de répondre aux besoins d’autrui dans une relation.",
+      "Traitement et visée de guérison dans la distinction avec le care."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Ne se réduit pas à une intention gentille. B : faux. Cette définition correspond à « Impartialité ». C : faux. Cette définition correspond à « Dilemme éthique ». D : faux. Cette définition correspond à « Responsabilité relationnelle ». E : faux. Cette définition correspond à « Cure ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_care"
+    ],
+    "sourceRefs": [
+      "PT01-01 ; oral 1, 00:00-04:29"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_002",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Care et cure : deux dimensions complémentaires",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Cure » ?",
+    "choices": [
+      "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue.",
+      "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension.",
+      "Devoir ressenti de répondre aux besoins d’autrui dans une relation.",
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Traitement et visée de guérison dans la distinction avec le care."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Impartialité ». B : faux. Cette définition correspond à « Dilemme éthique ». C : faux. Cette définition correspond à « Responsabilité relationnelle ». D : faux. Cette définition correspond à « Care ». E : vrai. Care et cure peuvent se combiner.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_cure"
+    ],
+    "sourceRefs": [
+      "PT01-01 ; oral 1, 00:00-04:29"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_003",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Dilemme éthique » ?",
+    "choices": [
+      "Capacité à tenter de comprendre le vécu d’autrui sans se confondre avec lui.",
+      "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière.",
+      "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue.",
+      "Traitement et visée de guérison dans la distinction avec le care.",
+      "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Empathie ». B : faux. Cette définition correspond à « Narration ». C : faux. Cette définition correspond à « Impartialité ». D : faux. Cette définition correspond à « Cure ». E : vrai. Ce n’est pas simplement un manque de connaissance technique.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_dilemme"
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_004",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Carol Gilligan et le dilemme de Heinz",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Impartialité » ?",
+    "choices": [
+      "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue.",
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière.",
+      "Capacité à tenter de comprendre le vécu d’autrui sans se confondre avec lui.",
+      "Traitement et visée de guérison dans la distinction avec le care."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. L’attention à la singularité ne signifie pas favoritisme automatique. B : faux. Cette définition correspond à « Care ». C : faux. Cette définition correspond à « Narration ». D : faux. Cette définition correspond à « Empathie ». E : faux. Cette définition correspond à « Cure ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_impartialite"
+    ],
+    "sourceRefs": [
+      "PT01-02 et PT01-03 ; oral 1, 04:29-12:57"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_005",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Les quatre repères du raisonnement relationnel",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Narration » ?",
+    "choices": [
+      "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière.",
+      "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue.",
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Capacité à tenter de comprendre le vécu d’autrui sans se confondre avec lui.",
+      "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Un récit ne dispense pas de vérifier les faits. B : faux. Cette définition correspond à « Identification ». C : faux. Cette définition correspond à « Care ». D : faux. Cette définition correspond à « Empathie ». E : faux. Cette définition correspond à « Impartialité ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_narration"
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-27:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_006",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Les quatre repères du raisonnement relationnel",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Responsabilité relationnelle » ?",
+    "choices": [
+      "Traitement et visée de guérison dans la distinction avec le care.",
+      "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue.",
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Devoir ressenti de répondre aux besoins d’autrui dans une relation.",
+      "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Cure ». B : faux. Cette définition correspond à « Identification ». C : faux. Cette définition correspond à « Care ». D : vrai. Distinct de la seule responsabilité pour les conséquences de ses actes. E : faux. Cette définition correspond à « Narration ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_responsabilite_relationnelle"
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-27:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_007",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Émotions, professionnalité et complémentarité des regards",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Empathie » ?",
+    "choices": [
+      "Capacité à tenter de comprendre le vécu d’autrui sans se confondre avec lui.",
+      "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue.",
+      "Traitement et visée de guérison dans la distinction avec le care.",
+      "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière.",
+      "Devoir ressenti de répondre aux besoins d’autrui dans une relation."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Ne donne pas une certitude sur ce que l’autre éprouve. B : faux. Cette définition correspond à « Identification ». C : faux. Cette définition correspond à « Cure ». D : faux. Cette définition correspond à « Narration ». E : faux. Cette définition correspond à « Responsabilité relationnelle ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "empathie"
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-32:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_008",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Émotions, professionnalité et complémentarité des regards",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Identification » ?",
+    "choices": [
+      "Capacité à tenter de comprendre le vécu d’autrui sans se confondre avec lui.",
+      "Devoir ressenti de répondre aux besoins d’autrui dans une relation.",
+      "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension.",
+      "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Empathie ». B : faux. Cette définition correspond à « Responsabilité relationnelle ». C : faux. Cette définition correspond à « Dilemme éthique ». D : faux. Cette définition correspond à « Care ». E : vrai. Peut éclairer ou biaiser la lecture d’une situation.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_identification"
+    ],
+    "sourceRefs": [
+      "PT01-04 à PT01-06 ; oral 1, 13:00-32:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_009",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Joan Tronto : soutenir la vie dans un monde vulnérable",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Vulnérabilité » ?",
+    "choices": [
+      "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Interdépendance ». B : faux. Cette définition correspond à « Réactivité dans le care ». C : faux. Cette définition correspond à « Tact ». D : vrai. Condition commune dont les formes et l’intensité varient. E : faux. Cette définition correspond à « Intersectionnalité ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_vulnerabilite"
+    ],
+    "sourceRefs": [
+      "PT01-07 à PT01-09 ; oral 1, 32:00-46:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_010",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Joan Tronto : soutenir la vie dans un monde vulnérable",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Interdépendance » ?",
+    "choices": [
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible.",
+      "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus.",
+      "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Vulnérabilité ». B : faux. Cette définition correspond à « Réactivité dans le care ». C : vrai. Compatible avec une autonomie soutenue par des appuis. D : faux. Cette définition correspond à « Invisibilisation du care ». E : faux. Cette définition correspond à « Intersectionnalité ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_interdependance"
+    ],
+    "sourceRefs": [
+      "PT01-07 à PT01-09 ; oral 1, 32:00-46:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_011",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Compétences, invisibilité et inégalités du care",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Invisibilisation du care » ?",
+    "choices": [
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin.",
+      "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Vulnérabilité ». B : faux. Cette définition correspond à « Fragmentation du care ». C : vrai. La faible visibilité ne prouve pas une faible valeur. D : faux. Cette définition correspond à « Réactivité dans le care ». E : faux. Cette définition correspond à « Tact ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_invisibilisation"
+    ],
+    "sourceRefs": [
+      "PT01-09 et PT01-10 ; oral 1, 46:00-59:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_012",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Compétences, invisibilité et inégalités du care",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Intersectionnalité » ?",
+    "choices": [
+      "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus.",
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Ce n’est pas l’affirmation d’une expérience identique pour tous les membres d’un groupe. B : faux. Cette définition correspond à « Réactivité dans le care ». C : faux. Cette définition correspond à « Invisibilisation du care ». D : faux. Cette définition correspond à « Vulnérabilité ». E : faux. Cette définition correspond à « Interdépendance ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_intersectionnalite"
+    ],
+    "sourceRefs": [
+      "PT01-09 et PT01-10 ; oral 1, 46:00-59:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_013",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Le tact et l'irresponsabilité des privilégiés",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Tact » ?",
+    "choices": [
+      "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible.",
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin.",
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Mécanisme par lequel certains bénéficient du care et en délèguent le travail tout en méconnaissant leur dépendance et leurs responsabilités."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Interdépendance ». B : vrai. Ne justifie ni manipulation ni refus ignoré. C : faux. Cette définition correspond à « Fragmentation du care ». D : faux. Cette définition correspond à « Vulnérabilité ». E : faux. Cette définition correspond à « Irresponsabilité des privilégiés ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_tact"
+    ],
+    "sourceRefs": [
+      "PT01-11 à PT01-13 ; oral 1, 59:00-79:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_014",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Le tact et l'irresponsabilité des privilégiés",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Irresponsabilité des privilégiés » ?",
+    "choices": [
+      "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus.",
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "Mécanisme par lequel certains bénéficient du care et en délèguent le travail tout en méconnaissant leur dépendance et leurs responsabilités.",
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Invisibilisation du care ». B : faux. Cette définition correspond à « Tact ». C : vrai. La critique ne condamne pas toute coopération ou délégation. D : faux. Cette définition correspond à « Vulnérabilité ». E : faux. Cette définition correspond à « Réactivité dans le care ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_privileges"
+    ],
+    "sourceRefs": [
+      "PT01-11 à PT01-13 ; oral 1, 59:00-79:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_015",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Les quatre phases du care et leur mise en relation",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Fragmentation du care » ?",
+    "choices": [
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation.",
+      "Mécanisme par lequel certains bénéficient du care et en délèguent le travail tout en méconnaissant leur dépendance et leurs responsabilités.",
+      "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Tact ». B : faux. Cette définition correspond à « Intersectionnalité ». C : faux. Cette définition correspond à « Irresponsabilité des privilégiés ». D : faux. Cette définition correspond à « Vulnérabilité ». E : vrai. Toute répartition des tâches n’est pas une fragmentation problématique.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_fragmentation"
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_016",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Les quatre phases du care et leur mise en relation",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Réactivité dans le care » ?",
+    "choices": [
+      "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin.",
+      "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation.",
+      "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Fragmentation du care ». B : faux. Cette définition correspond à « Intersectionnalité ». C : vrai. Ne signifie pas rapidité seule ni gratitude obligatoire. D : faux. Cette définition correspond à « Tact ». E : faux. Cette définition correspond à « Invisibilisation du care ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_reactivite"
+    ],
+    "sourceRefs": [
+      "PT01-14 ; oral 1, 79:00-99:10"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_017",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Analyser la situation avec les quatre principes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Autonomie » ?",
+    "choices": [
+      "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne.",
+      "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Ne se confond pas avec l’indépendance fonctionnelle. B : faux. Cette définition correspond à « Consentement ». C : faux. Cette définition correspond à « Conflit de loyauté ». D : faux. Cette définition correspond à « Justice ». E : faux. Cette définition correspond à « Non-malfaisance ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_autonomie"
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_018",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Analyser la situation avec les quatre principes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Bienfaisance » ?",
+    "choices": [
+      "Établissement d’hébergement pour personnes âgées dépendantes.",
+      "Recherche de l’intérêt et du bien-être de la personne accompagnée.",
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "A : faux. Cette définition correspond à « EHPAD ». B : vrai. Une bonne intention ne garantit pas à elle seule un bénéfice réel. C : faux. Cette définition correspond à « Justice ». D : faux. Cette définition correspond à « Non-malfaisance ». E : faux. Cette définition correspond à « Conflit de loyauté ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_bienfaisance"
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_019",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Analyser la situation avec les quatre principes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Non-malfaisance » ?",
+    "choices": [
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "Établissement d’hébergement pour personnes âgées dépendantes.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Justice ». B : faux. Cette définition correspond à « Consentement ». C : faux. Cette définition correspond à « EHPAD ». D : vrai. N’impose pas que toute intervention soit dépourvue de tout risque. E : faux. Cette définition correspond à « Conflit de loyauté ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_non_malfaisance"
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_020",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Analyser la situation avec les quatre principes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Justice » ?",
+    "choices": [
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Examen argumenté et partagé d’une situation, de ses incertitudes et des options possibles.",
+      "Établissement d’hébergement pour personnes âgées dépendantes."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. L’équité peut nécessiter des moyens adaptés à des besoins différents. B : faux. Cette définition correspond à « Conflit de loyauté ». C : faux. Cette définition correspond à « Non-malfaisance ». D : faux. Cette définition correspond à « Délibération éthique ». E : faux. Cette définition correspond à « EHPAD ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_justice"
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_021",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Analyser la situation avec les quatre principes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Consentement » ?",
+    "choices": [
+      "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "Établissement d’hébergement pour personnes âgées dépendantes.",
+      "Recherche de l’intérêt et du bien-être de la personne accompagnée.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : vrai. Ne se déduit pas à lui seul du silence, d’un diagnostic ou de l’accord d’un proche. B : faux. Cette définition correspond à « EHPAD ». C : faux. Cette définition correspond à « Bienfaisance ». D : faux. Cette définition correspond à « Non-malfaisance ». E : faux. Cette définition correspond à « Autonomie ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_consentement"
+    ],
+    "sourceRefs": [
+      "PT02-06 et PT02-09 ; oral 2, 25:00-52:00"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_022",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Conflit de loyauté » ?",
+    "choices": [
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Justice ». B : faux. Cette définition correspond à « Consentement ». C : vrai. Une tension de loyauté ne prouve pas automatiquement une faute. D : faux. Cette définition correspond à « Non-malfaisance ». E : faux. Cette définition correspond à « Autonomie ».",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_loyaute"
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_023",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Le regard du care : liens, responsabilités et délibération",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « Délibération éthique » ?",
+    "choices": [
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "Examen argumenté et partagé d’une situation, de ses incertitudes et des options possibles."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Conflit de loyauté ». B : faux. Cette définition correspond à « Non-malfaisance ». C : faux. Cette définition correspond à « Justice ». D : faux. Cette définition correspond à « Consentement ». E : vrai. Ce n’est ni un vote sans arguments ni l’application d’une recette.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_deliberation"
+    ],
+    "sourceRefs": [
+      "PT02-10 ; oral 2, 52:00-66:22"
+    ],
+    "officialSupport": false
+  },
+  {
+    "id": "care_p02_vocab_024",
+    "courseId": "ethique_infirmiere",
+    "course": "Éthiques du care et mise en application",
+    "ue": "A2.1",
+    "partId": "p02",
+    "theme": "Vocabulaire - Le cas en EHPAD : reconstruire les faits et les incertitudes",
+    "difficulty": "easy",
+    "question": "Quelle définition correspond à « EHPAD » ?",
+    "choices": [
+      "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "Recherche de l’intérêt et du bien-être de la personne accompagnée.",
+      "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne.",
+      "Établissement d’hébergement pour personnes âgées dépendantes."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "A : faux. Cette définition correspond à « Non-malfaisance ». B : faux. Cette définition correspond à « Conflit de loyauté ». C : faux. Cette définition correspond à « Bienfaisance ». D : faux. Cette définition correspond à « Autonomie ». E : vrai. Un lieu de vie n’efface pas les besoins d’intimité et de relations.",
+    "flashcards": [],
+    "vocabularyTermIds": [
+      "care_ehpad"
+    ],
+    "sourceRefs": [
+      "PT02-02 à PT02-08 ; oral 2, 07:08-25:00"
+    ],
+    "officialSupport": false
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.108",
+  "version": "8.30.109",
   "courses": [
     {
       "id": "biomolecules",
@@ -412,9 +412,47 @@
       "aliases": [
         "Ethique Introduction Ethique Infirmiere",
         "Introduction à l’éthique infirmière",
-        "Ethique infirmiere"
+        "Ethique infirmiere",
+        "Initiation à la philosophie éthique",
+        "Éthiques du care et mise en application"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI/view",
+      "authoredFlashcards": true,
+      "flashcardTarget": 48,
+      "qcmPdfUrl": "https://drive.google.com/file/d/19cNhArBzHk-jaJ0jn9XaINL8hUeKn430/view",
+      "qcmPdfQuestionCount": 60,
+      "audioStatus": "awaiting_mp3",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Vocabulaire du care — 24 termes",
+          "url": "https://drive.google.com/file/d/1jSrfb9-ko6BfjuWPmpOIquHXE98vT1xW/view"
+        },
+        {
+          "label": "Flashcards du care — 60 cartes",
+          "url": "https://drive.google.com/file/d/1v2xrITWT5pJmU2CNJCvYSanswuMVLzET/view"
+        },
+        {
+          "label": "Pack des cinq infographies du care",
+          "url": "https://drive.google.com/file/d/1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk/view"
+        },
+        {
+          "label": "Script vocal 1 — Gilligan : care, relations et émotions",
+          "url": "https://drive.google.com/file/d/1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK/view"
+        },
+        {
+          "label": "Script vocal 2 — Tronto : interdépendance et organisation du care",
+          "url": "https://drive.google.com/file/d/1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0/view"
+        },
+        {
+          "label": "Script vocal 3 — Cas en EHPAD : principes et délibération",
+          "url": "https://drive.google.com/file/d/10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h/view"
+        },
+        {
+          "label": "Script vocal 4 — Synthèse : relier les notions et les situations",
+          "url": "https://drive.google.com/file/d/1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf/view"
+        }
+      ]
     },
     {
       "id": "douleur",

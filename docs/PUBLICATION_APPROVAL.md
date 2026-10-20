@@ -17,6 +17,8 @@ Conserver la revue dans un espace privé dont les droits ont été vérifiés. L
 
 ## Enregistrement public minimal
 
+Le format demandé le 20/10/2026 peut être déclaré avec `revisionSheetMode:"single_with_complete_boards"` : une seule fiche de révision écrite avec ses visuels intégrés et des planches complètes séparées. Ce choix explicite conserve l'audit et la copie authentifiée de la fiche, la couverture de toutes les notions et la revue disciplinaire. Chaque planche séparée possède aussi son audit, son empreinte et sa copie Drive vérifiée dans `completeBoardAudits`. Les lots historiques à deux fiches gardent leur contrat. Ce choix et ses preuves participent à l'empreinte de publication ; il n'autorise jamais une publication sans accord du propriétaire.
+
 Pour un lot pédagogique nouveau ou modifié, `docs/course-deliveries.json` doit contenir :
 
 ```json

@@ -24,6 +24,11 @@ export function publicationBundle(courseId,delivery,data){
   artifactSha256s:delivery.artifactSha256s||{},
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
+  ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
+   mode:delivery.revisionSheetMode,questionScope:delivery.deliveryQuestionScope,coverage:delivery.sheetCoverage,completeBoardAudits:delivery.completeBoardAudits,
+   parts:(delivery.partDeliveries||[]).filter(p=>p.revisionSheetMode==='single_with_complete_boards')
+    .map(p=>({partId:p.partId,sheetResourceIds:p.sheetResourceIds,coverage:p.sheetCoverage,completeBoardAudits:p.completeBoardAudits}))
+  }}:{})
  };
 }
 export const bundleDigest=bundle=>createHash('sha256').update(JSON.stringify(canonical(bundle))).digest('hex');

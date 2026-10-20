@@ -62,6 +62,12 @@ jobs:
       - name: TNR contrat des deux fiches et preuves PDF
         run: node tests/dual-sheet-contract-test.mjs
 
+      - name: TNR fiche unique et planches complètes complémentaires
+        run: node tests/single-sheet-contract-test.mjs
+
+      - name: Vérifier le volet care p02 et les ressources antérieures
+        run: node tests/ethiques-care-p02.mjs
+
       - name: TNR registre prive des sources manquantes v1.15
         run: node tests/source-followup-v115-test.mjs
 

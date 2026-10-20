@@ -1080,6 +1080,427 @@
           ]
         }
       ]
+    },
+    {
+      "courseId": "ethique_infirmiere",
+      "part": "2/2",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "existing_course_revision",
+      "sourceBasis": {
+        "kind": "course_captures",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "reviewedCaptureCount": 24
+      },
+      "revisionSheetMode": "single_with_complete_boards",
+      "sheetResourceId": "ethique_infirmiere_fiche_p02",
+      "infographicResourceIds": [
+        "ethique_infirmiere_info_p02_care_cure",
+        "ethique_infirmiere_info_p02_gilligan",
+        "ethique_infirmiere_info_p02_tronto",
+        "ethique_infirmiere_info_p02_phases",
+        "ethique_infirmiere_info_p02_cas_ehpad"
+      ],
+      "artifactSha256s": {
+        "19cNhArBzHk-jaJ0jn9XaINL8hUeKn430": "96947ae39a4ec78657d6c80a50c313a02c717549c62d6ec920a5a8d55b50dc2f",
+        "1jSrfb9-ko6BfjuWPmpOIquHXE98vT1xW": "3b7be2cc657c11e69ac6c0facdfcc7fe6bdb57fd99e4a9a47f772f973ccf3cb6",
+        "1v2xrITWT5pJmU2CNJCvYSanswuMVLzET": "2fc8d8c2ad3531cfc60e03df509112f1172340fdabacb8509d9f76e4399c57e5",
+        "1RWujasuC8NoP97WboadKPf3H-Ih4yCS1": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+        "1favbzVYnwsuaNeT5Xd6QePBTyDlxqdUc": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+        "1x63K7TUtgC5ynzCr9zOm2LZiUfItOMei": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+        "1f9Zo1MhPnqBoJ3L9bVzz04r-qCZ-ONnQ": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+        "1Itbb6vGZvc0U_n9v91t_Wh3Xr4rZXFQh": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+        "1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk": "d465c21909b59b75e859ff0761f4fd1098f93fb44b0fdac28a2783d3f6f0aec0",
+        "1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK": "b93d02959faa2b88463da3252878c92f4412a54648239b2d6ebc9aad46a64313",
+        "1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0": "4f43ff0e2b8a43eba1be24b133c37e5318c0c887b5878d85d1519d6f759c2315",
+        "10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h": "036a24b498c595cd1008e491112270e8a3b6e6eb4a7e58c26637508c3daff2b7",
+        "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf": "ba666b7421b0113e35261ac7a4f4bff27cf2cf40e4a7e9c096276506a4dca91c",
+        "1S2FRYmuEz-BURIabkoRZSeA4vTo0Bwuw": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+        "1f3U91NKQVUAAGoHFTUc1jbbzQyBwIab1": "76c692fe1f6a4e11a8694ba1a71aff7e6b9bb81c7238426557f489f223d23ae1",
+        "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680"
+      },
+      "sheetCoverage": {
+        "expectedNotions": 204,
+        "coveredNotions": 204,
+        "disciplinaryReview": {
+          "type": "conceptual",
+          "status": "approved"
+        }
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+        "expectedCount": 5,
+        "checkedCount": 5
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+        "expectedCount": 5,
+        "checkedCount": 5
+      },
+      "completeBoardAudits": {
+        "ethique_infirmiere_info_p02_care_cure": {
+          "status": "PASS",
+          "pdfSha256": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+          "expectedCount": 1,
+          "checkedCount": 1,
+          "driveId": "1RWujasuC8NoP97WboadKPf3H-Ih4yCS1",
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+            "expectedCount": 1,
+            "checkedCount": 1
+          }
+        },
+        "ethique_infirmiere_info_p02_gilligan": {
+          "status": "PASS",
+          "pdfSha256": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+          "expectedCount": 1,
+          "checkedCount": 1,
+          "driveId": "1favbzVYnwsuaNeT5Xd6QePBTyDlxqdUc",
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+            "expectedCount": 1,
+            "checkedCount": 1
+          }
+        },
+        "ethique_infirmiere_info_p02_tronto": {
+          "status": "PASS",
+          "pdfSha256": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+          "expectedCount": 1,
+          "checkedCount": 1,
+          "driveId": "1x63K7TUtgC5ynzCr9zOm2LZiUfItOMei",
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+            "expectedCount": 1,
+            "checkedCount": 1
+          }
+        },
+        "ethique_infirmiere_info_p02_phases": {
+          "status": "PASS",
+          "pdfSha256": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+          "expectedCount": 1,
+          "checkedCount": 1,
+          "driveId": "1f9Zo1MhPnqBoJ3L9bVzz04r-qCZ-ONnQ",
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+            "expectedCount": 1,
+            "checkedCount": 1
+          }
+        },
+        "ethique_infirmiere_info_p02_cas_ehpad": {
+          "status": "PASS",
+          "pdfSha256": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+          "expectedCount": 1,
+          "checkedCount": 1,
+          "driveId": "1Itbb6vGZvc0U_n9v91t_Wh3Xr4rZXFQh",
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+            "expectedCount": 1,
+            "checkedCount": 1
+          }
+        }
+      },
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "native_support_unavailable",
+          "detail": "Support natif du volet care non disponible ; fiche provisoire établie sur les captures et compléments reçus."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3",
+          "detail": "Quatre scripts prêts ; MP3 encore attendus."
+        }
+      ],
+      "deliveryQuestionScope": "declared_parts",
+      "driveFolderId": "1tc4q7GUDkpo2nzbeXV2Fzdi8DkBxMiqt",
+      "folders": {
+        "99": "10IpSPpGiJkM9QXMwHcHzMwi8NOPr-4Ah",
+        "01": "13ych7l1ZbNuektPuo2xRC-3C02frmgkG",
+        "02": "15Qw0uDwdrdPvFyLLc1nnGCNgDIVHFx2p",
+        "03": "1b3JfaPYhzeeOZFel7Qc2C9lejTQnS6TK",
+        "04": "1yIeqdhY7cj_udIf1rQo2rVPpFvt6PEYq",
+        "05": "1TXK4vkMHC17hT6FDJeeDJ0sILTqiquOl",
+        "06": "1N1tmILmfXhtQXpHGGb2YQ4aSlwxPoScu",
+        "07": "17eifnSzOLWMTkMI5F87DrgEg41Vjfjd6",
+        "08": "11iR9ZXkGfjTrpZDu3DDg6dLzQz1YQeS_"
+      },
+      "supportDriveId": "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI",
+      "qcmDriveId": "19cNhArBzHk-jaJ0jn9XaINL8hUeKn430",
+      "qcmBank": "qextra-58.txt",
+      "qcmBanks": [
+        "data/course-banks/ethique_infirmiere-p01.json",
+        "qextra-58.txt"
+      ],
+      "qcmCount": 110,
+      "flashcardCount": 36,
+      "flashcardDriveId": "1v2xrITWT5pJmU2CNJCvYSanswuMVLzET",
+      "vocabularyDriveId": "1jSrfb9-ko6BfjuWPmpOIquHXE98vT1xW",
+      "vocabularyCount": 24,
+      "infographicPackDriveId": "1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk",
+      "vocals": [],
+      "vocalScripts": [
+        {
+          "number": 1,
+          "title": "Gilligan : care, relations et émotions",
+          "driveId": "1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK",
+          "url": "https://drive.google.com/file/d/1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK/view",
+          "partId": "p02"
+        },
+        {
+          "number": 2,
+          "title": "Tronto : interdépendance et organisation du care",
+          "driveId": "1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0",
+          "url": "https://drive.google.com/file/d/1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0/view",
+          "partId": "p02"
+        },
+        {
+          "number": 3,
+          "title": "Cas en EHPAD : principes et délibération",
+          "driveId": "10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h",
+          "url": "https://drive.google.com/file/d/10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h/view",
+          "partId": "p02"
+        },
+        {
+          "number": 4,
+          "title": "Synthèse : relier les notions et les situations",
+          "driveId": "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf",
+          "url": "https://drive.google.com/file/d/1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf/view",
+          "partId": "p02"
+        }
+      ],
+      "partDeliveries": [
+        {
+          "validated": true,
+          "status": "partial",
+          "deliveryMode": "existing_course_revision",
+          "sourceBasis": {
+            "kind": "course_captures",
+            "nativeSupportAvailable": false,
+            "reconciled": true,
+            "reviewedCaptureCount": 24
+          },
+          "revisionSheetMode": "single_with_complete_boards",
+          "sheetResourceId": "ethique_infirmiere_fiche_p02",
+          "infographicResourceIds": [
+            "ethique_infirmiere_info_p02_care_cure",
+            "ethique_infirmiere_info_p02_gilligan",
+            "ethique_infirmiere_info_p02_tronto",
+            "ethique_infirmiere_info_p02_phases",
+            "ethique_infirmiere_info_p02_cas_ehpad"
+          ],
+          "artifactSha256s": {
+            "19cNhArBzHk-jaJ0jn9XaINL8hUeKn430": "96947ae39a4ec78657d6c80a50c313a02c717549c62d6ec920a5a8d55b50dc2f",
+            "1jSrfb9-ko6BfjuWPmpOIquHXE98vT1xW": "3b7be2cc657c11e69ac6c0facdfcc7fe6bdb57fd99e4a9a47f772f973ccf3cb6",
+            "1v2xrITWT5pJmU2CNJCvYSanswuMVLzET": "2fc8d8c2ad3531cfc60e03df509112f1172340fdabacb8509d9f76e4399c57e5",
+            "1RWujasuC8NoP97WboadKPf3H-Ih4yCS1": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+            "1favbzVYnwsuaNeT5Xd6QePBTyDlxqdUc": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+            "1x63K7TUtgC5ynzCr9zOm2LZiUfItOMei": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+            "1f9Zo1MhPnqBoJ3L9bVzz04r-qCZ-ONnQ": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+            "1Itbb6vGZvc0U_n9v91t_Wh3Xr4rZXFQh": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+            "1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk": "d465c21909b59b75e859ff0761f4fd1098f93fb44b0fdac28a2783d3f6f0aec0",
+            "1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK": "b93d02959faa2b88463da3252878c92f4412a54648239b2d6ebc9aad46a64313",
+            "1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0": "4f43ff0e2b8a43eba1be24b133c37e5318c0c887b5878d85d1519d6f759c2315",
+            "10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h": "036a24b498c595cd1008e491112270e8a3b6e6eb4a7e58c26637508c3daff2b7",
+            "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf": "ba666b7421b0113e35261ac7a4f4bff27cf2cf40e4a7e9c096276506a4dca91c",
+            "1S2FRYmuEz-BURIabkoRZSeA4vTo0Bwuw": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+            "1f3U91NKQVUAAGoHFTUc1jbbzQyBwIab1": "76c692fe1f6a4e11a8694ba1a71aff7e6b9bb81c7238426557f489f223d23ae1",
+            "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680"
+          },
+          "sheetCoverage": {
+            "expectedNotions": 204,
+            "coveredNotions": 204,
+            "disciplinaryReview": {
+              "type": "conceptual",
+              "status": "approved"
+            }
+          },
+          "visualAudit": {
+            "status": "PASS",
+            "pdfSha256": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+            "expectedCount": 5,
+            "checkedCount": 5
+          },
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
+            "expectedCount": 5,
+            "checkedCount": 5
+          },
+          "completeBoardAudits": {
+            "ethique_infirmiere_info_p02_care_cure": {
+              "status": "PASS",
+              "pdfSha256": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+              "expectedCount": 1,
+              "checkedCount": 1,
+              "driveId": "1RWujasuC8NoP97WboadKPf3H-Ih4yCS1",
+              "publishedVerification": {
+                "status": "MATCH",
+                "source": "authenticated_drive_download",
+                "pdfSha256": "9f922c267740bc7d6ff7581604553cb1a75eaace12eac183f71179ab7c9c9108",
+                "expectedCount": 1,
+                "checkedCount": 1
+              }
+            },
+            "ethique_infirmiere_info_p02_gilligan": {
+              "status": "PASS",
+              "pdfSha256": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+              "expectedCount": 1,
+              "checkedCount": 1,
+              "driveId": "1favbzVYnwsuaNeT5Xd6QePBTyDlxqdUc",
+              "publishedVerification": {
+                "status": "MATCH",
+                "source": "authenticated_drive_download",
+                "pdfSha256": "c22f5401dd8ee48ef670c71aaceb0af80042a798be3677669c715a87d0e1b5ad",
+                "expectedCount": 1,
+                "checkedCount": 1
+              }
+            },
+            "ethique_infirmiere_info_p02_tronto": {
+              "status": "PASS",
+              "pdfSha256": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+              "expectedCount": 1,
+              "checkedCount": 1,
+              "driveId": "1x63K7TUtgC5ynzCr9zOm2LZiUfItOMei",
+              "publishedVerification": {
+                "status": "MATCH",
+                "source": "authenticated_drive_download",
+                "pdfSha256": "426caecab4be13a2860ccca5525eed501f6372fe8d93fb741d2651db4d8ca537",
+                "expectedCount": 1,
+                "checkedCount": 1
+              }
+            },
+            "ethique_infirmiere_info_p02_phases": {
+              "status": "PASS",
+              "pdfSha256": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+              "expectedCount": 1,
+              "checkedCount": 1,
+              "driveId": "1f9Zo1MhPnqBoJ3L9bVzz04r-qCZ-ONnQ",
+              "publishedVerification": {
+                "status": "MATCH",
+                "source": "authenticated_drive_download",
+                "pdfSha256": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
+                "expectedCount": 1,
+                "checkedCount": 1
+              }
+            },
+            "ethique_infirmiere_info_p02_cas_ehpad": {
+              "status": "PASS",
+              "pdfSha256": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+              "expectedCount": 1,
+              "checkedCount": 1,
+              "driveId": "1Itbb6vGZvc0U_n9v91t_Wh3Xr4rZXFQh",
+              "publishedVerification": {
+                "status": "MATCH",
+                "source": "authenticated_drive_download",
+                "pdfSha256": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
+                "expectedCount": 1,
+                "checkedCount": 1
+              }
+            }
+          },
+          "blockers": [
+            {
+              "resource": "support",
+              "reason": "native_support_unavailable",
+              "detail": "Support natif du volet care non disponible ; fiche provisoire établie sur les captures et compléments reçus."
+            },
+            {
+              "resource": "vocals",
+              "reason": "awaiting_user_mp3",
+              "detail": "Quatre scripts prêts ; MP3 encore attendus."
+            }
+          ],
+          "partId": "p02",
+          "sheetResourceIds": [
+            "ethique_infirmiere_fiche_p02"
+          ],
+          "qcmQuestionIds": [
+            "care_p02_001",
+            "care_p02_002",
+            "care_p02_003",
+            "care_p02_004",
+            "care_p02_005",
+            "care_p02_006",
+            "care_p02_007",
+            "care_p02_008",
+            "care_p02_009",
+            "care_p02_010",
+            "care_p02_011",
+            "care_p02_012",
+            "care_p02_013",
+            "care_p02_014",
+            "care_p02_015",
+            "care_p02_016",
+            "care_p02_017",
+            "care_p02_018",
+            "care_p02_019",
+            "care_p02_020",
+            "care_p02_021",
+            "care_p02_022",
+            "care_p02_023",
+            "care_p02_024",
+            "care_p02_025",
+            "care_p02_026",
+            "care_p02_027",
+            "care_p02_028",
+            "care_p02_029",
+            "care_p02_030",
+            "care_p02_031",
+            "care_p02_032",
+            "care_p02_033",
+            "care_p02_034",
+            "care_p02_035",
+            "care_p02_036",
+            "care_p02_vocab_001",
+            "care_p02_vocab_002",
+            "care_p02_vocab_003",
+            "care_p02_vocab_004",
+            "care_p02_vocab_005",
+            "care_p02_vocab_006",
+            "care_p02_vocab_007",
+            "care_p02_vocab_008",
+            "care_p02_vocab_009",
+            "care_p02_vocab_010",
+            "care_p02_vocab_011",
+            "care_p02_vocab_012",
+            "care_p02_vocab_013",
+            "care_p02_vocab_014",
+            "care_p02_vocab_015",
+            "care_p02_vocab_016",
+            "care_p02_vocab_017",
+            "care_p02_vocab_018",
+            "care_p02_vocab_019",
+            "care_p02_vocab_020",
+            "care_p02_vocab_021",
+            "care_p02_vocab_022",
+            "care_p02_vocab_023",
+            "care_p02_vocab_024"
+          ],
+          "vocalIds": []
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-20T14:24:42.387Z",
+        "bundleSha256": "cd8848399900f8efe353b369e550c004a52365a62fc8b3a7a6e1903c18770d68"
+      }
     }
   ],
   "supplementalResourceApprovals": [
