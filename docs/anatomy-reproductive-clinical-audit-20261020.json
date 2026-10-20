@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-20",
+  "status": "REVIEW_REQUIRED_NOT_A_MEDICAL_APPROVAL",
+  "officialCourse": {
+    "title": "UE_S1_B1_Systeme_Reproducteur_Cours_12_VPetit_2026.pdf",
+    "sourceKind": "official_course"
+  },
+  "visualEvidence": "PDF export Canva Atlas médical IFSI ABC, 6 A4 pages reçu le 19/10/2026 + galerie de JPG de revue de la V8.30.102",
+  "masterRef": "Planche_05_Cellule_humaine_HD.png",
+  "usage": "Les images sont en galerie provisoire, ne pas s'en servir pour évaluer connaissances avant corrections validées.",
+  "R01": {
+    "status": "CANVA_DRAFT_FOUND_NEEDS_VISUAL_REVIEW",
+    "referenceSlides": "5-23",
+    "required": [
+      "vessie",
+      "testicule",
+      "épididyme",
+      "scrotum",
+      "canal déférent",
+      "vésicule séminale",
+      "prostate",
+      "urètre prostatique",
+      "pénis",
+      "rectum"
+    ],
+    "notes": "Canva design found on 20 Oct. Labels present in text; exact arrows and pelvic spatial relationships not yet visually validated. Do not include in public gallery or quizzes.",
+    "designId": "DAHYhp3M2ck",
+    "pageCount": 1,
+    "source": "Canva editable A4, title: R01 — Appareil génital masculin : vue d’ensemble",
+    "textReview": {
+      "allRequiredTextPresent": true,
+      "clinicalPointerReview": false,
+      "highResolutionExportVerified": false,
+      "rightsProvenanceReviewed": false,
+      "userApproved": false
+    }
+  },
+  "boards": [
+    {
+      "id": "R02",
+      "status": "LEADER_LINE_SUSPECT",
+      "severity": "high",
+      "referenceSlides": "7-10",
+      "sourceFacts": [
+        "Le testicule est entouré d'une albuginée fibreuse.",
+        "Les lobules contiennent les tubes séminifères.",
+        "Cellules de Sertoli et de Leydig : fonctions distinctes."
+      ],
+      "defects": [
+        {
+          "type": "wrong_or_unverified_pointer",
+          "label": "Interstitium",
+          "observation": "L'extrémité du trait semble se situer à l'intérieur d'un tube séminifère du zoom au lieu de l'espace interstitiel.",
+          "action": "Repositionner précisément la pointe sur le tissu interstitiel entre deux tubes."
+        },
+        {
+          "type": "missing_label",
+          "label": "Albuginée",
+          "observation": "La tunique fibreuse requise par le cours n'est pas légendée.",
+          "action": "Ajouter une pointe vers l'enveloppe fibreuse externe sans confondre avec le scrotum."
+        }
+      ],
+      "gating": "REVIEW_ONLY"
+    },
+    {
+      "id": "R03",
+      "status": "LEADER_LINES_INCORRECT",
+      "severity": "critical",
+      "referenceSlides": "10-19",
+      "sourceFacts": [
+        "Vésicules séminales en arrière de la vessie.",
+        "Ampoule déférentielle = dilatation terminale du canal déférent.",
+        "Le canal éjaculateur résulte de leur confluence et traverse la prostate."
+      ],
+      "defects": [
+        {
+          "type": "wrong_pointer",
+          "label": "Vésicule séminale",
+          "observation": "La pointe semble située sur la conduite grise d'un uretère droit plutôt que sur la glande lobulée postéro-vésicale.",
+          "action": "Relier le texte à la glande lobulée ou refaire la coupe en vue anatomique claire."
+        },
+        {
+          "type": "wrong_pointer",
+          "label": "Ampoule déférentielle",
+          "observation": "La pointe cible la glande jaune lobulée correspondant à la vésicule séminale, pas la dilatation terminale du déférent.",
+          "action": "Repositionner au segment dilaté du canal déférent avant jonction avec le canal excréteur séminal."
+        },
+        {
+          "type": "requires_verification",
+          "label": "Canal éjaculateur",
+          "observation": "Le trajet précis à travers la prostate n'est pas démontré avec certitude.",
+          "action": "Contrôler la réunion vésicule/ampoule puis le trajet prostatique."
+        }
+      ],
+      "gating": "BLOCK_UNTIL_REPLACED",
+      "canvaCorrection": {
+        "designId": "DAHYiE0NJeQ",
+        "page": 1,
+        "saved": true,
+        "userApprovedLayout": true,
+        "verifiedCanvasElements": {
+          "seminalVesicleLabel": "Vésicule séminale",
+          "seminalVesicleArrowAsset": "MAHYeM_dN7s",
+          "seminalVesicleArrowRect": {
+            "left": 487.97,
+            "top": 406.27,
+            "width": 138.56,
+            "height": 29.34
+          },
+          "deferentialAmpullaLabel": "Ampoule déférentielle (non individualisée)",
+          "ampullaArrowPresent": false
+        },
+        "medicalReference": "Official S1 B1 reproductive system lecture pp. 13–14 and 18: vas deferens ends in ampulla, joins seminal vesicle duct, ejaculatory duct through prostate",
+        "currentPublishedAssetStillIncorrect": true,
+        "clinicalApproval": false,
+        "licenseApproval": false,
+        "highResolutionExportVerified": false,
+        "sourceImageEditStatus": "CANVA_SAVED_BUT_NOT_EXPORTED"
+      }
+    },
+    {
+      "id": "R04",
+      "status": "INCOMPLETE",
+      "severity": "medium",
+      "referenceSlides": "25-34",
+      "sourceFacts": [
+        "Ovaires, trompes, utérus et vagin sont les organes internes.",
+        "L'utérus est situé entre la vessie en avant et le rectum en arrière."
+      ],
+      "defects": [
+        {
+          "type": "missing_view",
+          "label": "Vue sagittale",
+          "observation": "Le dessin est exclusivement frontal; on ne peut pas montrer les rapports vessie–utérus–rectum.",
+          "action": "Ajouter un encart sagittal distinct, ne pas inventer ces structures sur la vue frontale."
+        }
+      ],
+      "gating": "REVIEW_ONLY"
+    },
+    {
+      "id": "R05",
+      "status": "LEADER_LINES_INCORRECT",
+      "severity": "critical",
+      "referenceSlides": "27-30",
+      "sourceFacts": [
+        "Le cortex ovarien est périphérique et contient les follicules.",
+        "La médulla ovarienne est la zone centrale vascularisée.",
+        "La trompe comprend portion intramurale, isthme, ampoule, pavillon et franges."
+      ],
+      "defects": [
+        {
+          "type": "wrong_pointer",
+          "label": "Cortex ovarien",
+          "observation": "La flèche termine dans un follicule visible plutôt que dans la région corticale périphérique.",
+          "action": "Pointer le tissu périphérique contenant les follicules, hors du follicule."
+        },
+        {
+          "type": "wrong_pointer",
+          "label": "Médulla ovarienne",
+          "observation": "La flèche termine au sein d'un gros follicule au lieu de la zone centrale vascularisée.",
+          "action": "Pointer le stroma central vascularisé avec une flèche redessinée, sinon retirer la légende."
+        },
+        {
+          "type": "missing_label",
+          "label": "Partie intramurale",
+          "observation": "Portion initiale de la trompe à la traversée de la paroi utérine non légendée.",
+          "action": "Ajouter le repère au passage intra-utérin."
+        }
+      ],
+      "gating": "BLOCK_UNTIL_REPLACED",
+      "canvaCorrection": {
+        "designId": "DAHYiE0NJeQ",
+        "page": 2,
+        "saved": true,
+        "userApprovedLayout": true,
+        "verifiedCanvasElements": {
+          "cortexLabel": "Cortex ovarien",
+          "cortexArrowAsset": "MAHYd9uXgOk",
+          "cortexArrowRect": {
+            "left": 558,
+            "top": 420,
+            "width": 75,
+            "height": 28.59
+          },
+          "medullaLabel": "Médulla ovarienne",
+          "medullaArrowAsset": "MAHYd8dLw9k",
+          "medullaArrowRect": {
+            "left": 360,
+            "top": 550,
+            "width": 268,
+            "height": 14.3
+          }
+        },
+        "medicalReference": "Official S1 B1 reproductive system lecture p. 28: cortex = peripheral zone containing follicles; medulla = central vascular region",
+        "currentPublishedAssetStillIncorrect": true,
+        "clinicalApproval": false,
+        "licenseApproval": false,
+        "highResolutionExportVerified": false,
+        "sourceImageEditStatus": "CANVA_SAVED_BUT_NOT_EXPORTED"
+      }
+    },
+    {
+      "id": "R06",
+      "status": "LEADER_LINE_SUSPECT",
+      "severity": "high",
+      "referenceSlides": "30-33",
+      "sourceFacts": [
+        "Le périmétrium est la couche externe, le myomètre la couche musculaire, l'endomètre la muqueuse interne.",
+        "L'endomètre comprend les couches fonctionnelle et basale."
+      ],
+      "defects": [
+        {
+          "type": "wrong_or_unverified_pointer",
+          "label": "Périmétrium",
+          "observation": "La pointe semble placée dans la masse musculaire rouge, alors que le périmétrium est la tunique externe.",
+          "action": "Repositionner vers la surface externe séreuse et vérifier l'orientation."
+        },
+        {
+          "type": "missing_label",
+          "label": "Couche fonctionnelle / basale",
+          "observation": "La muqueuse n'est pas séparée en deux couches.",
+          "action": "Ajouter un zoom histologique ou une coupe de muqueuse montrant explicitement les deux couches."
+        }
+      ],
+      "gating": "REVIEW_ONLY"
+    },
+    {
+      "id": "R07",
+      "status": "INCOMPLETE",
+      "severity": "medium",
+      "referenceSlides": "36-39",
+      "sourceFacts": [
+        "Les petites lèvres délimitent le vestibule.",
+        "Le vestibule comprend l'orifice vaginal et le méat urinaire."
+      ],
+      "defects": [
+        {
+          "type": "missing_label",
+          "label": "Vestibule",
+          "observation": "Le texte vestibuIe n'est pas repéré sur l'illustration alors qu'il est obligatoire dans le cours.",
+          "action": "Ajouter le label pointant l'espace entre les petites lèvres, sans confondre avec le vagin."
+        },
+        {
+          "type": "requires_verification",
+          "label": "Clitoris / petites lèvres",
+          "observation": "Le pointage précis de ces repères externes doit être vérifié à taille réelle.",
+          "action": "Comparer les flèches du schéma aux vues de référence officielles."
+        }
+      ],
+      "gating": "REVIEW_ONLY"
+    }
+  ],
+  "releasePolicy": {
+    "approvedBoards": 0,
+    "existingProvisionalImagesStayProvisional": true,
+    "legacyApprovedAtlasTotal": 106,
+    "quizzesDisabled": true,
+    "licenseValidation": "PENDING",
+    "reviewDecision": "DO_NOT_MARK_APPROVED"
+  },
+  "validationRequirements": [
+    "Corriger réellement les pointages sur les sources haute résolution.",
+    "Contrôler chaque nouveau pointeur sur cours officiel, avec comparaison visuelle humaine.",
+    "Vérifier provenance et droits de distribution des illustrations incorporées.",
+    "Vérifier export à pleine définition, légendes et absence de déformations.",
+    "Refaire les JPG publiés et mettre à jour les empreintes et le service worker.",
+    "Passer l'approbation de chaque planche individuellement, jamais l'ensemble de la série automatiquement."
+  ],
+  "nextIntegrationStep": {
+    "necessaryInput": "Two separate Canva exports of saved R03 and R05 pages in PNG or a two-page PDF at best available resolution",
+    "exportToolAvailableHere": false,
+    "sourceDocumentHasTwoPages": true,
+    "noAutomaticStudentPublication": true,
+    "afterExport": [
+      "compare exact point endpoints to course slides",
+      "verify legal provenance of embedded illustrations",
+      "export/render to app-ready optimized files",
+      "update six-board manifest and hash",
+      "replace only R03 and R05 current provisional JPEGs",
+      "run full TNR on latest main",
+      "publish only with explicit approval"
+    ]
+  }
+}

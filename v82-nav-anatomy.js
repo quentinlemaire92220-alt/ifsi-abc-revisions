@@ -171,11 +171,11 @@ function validReproLink(raw){
 }
 function reproLink(){try{return validReproLink(localStorage.getItem(REPRO_REVIEW_KEY)||'')}catch(e){return ''}}
 const REPRO_PREVIEW_ASSETS={
- R02:{src:'./assets/anatomy/reproductive/review/R02.jpg',note:'Albuginée non légendée ; pointages microscopiques à contrôler'},
- R03:{src:'./assets/anatomy/reproductive/review/R03.jpg',note:'Trajet des conduits et ampoule déférentielle à vérifier'},
+ R02:{src:'./assets/anatomy/reproductive/review/R02.jpg',note:'Le repère interstitium semble pointer vers un tube ; albuginée absente. Vérification requise'},
+ R03:{src:'./assets/anatomy/reproductive/review/R03.jpg',severity:'critical',note:'POINTAGES INCORRECTS : vésicule séminale et ampoule déférentielle ; consulter uniquement pour correction'},
  R04:{src:'./assets/anatomy/reproductive/review/R04.jpg',note:'Vue frontale uniquement ; vessie et rectum non représentés'},
- R05:{src:'./assets/anatomy/reproductive/review/R05.jpg',note:'Ancien repère « médulla ovarienne » neutralisé ; pointage à vérifier'},
- R06:{src:'./assets/anatomy/reproductive/review/R06.jpg',note:'Couches basale et fonctionnelle de l’endomètre non distinguées'},
+ R05:{src:'./assets/anatomy/reproductive/review/R05.jpg',severity:'critical',note:'POINTAGES INCORRECTS : cortex / médulla vers des follicules ; version de revue non corrigée'},
+ R06:{src:'./assets/anatomy/reproductive/review/R06.jpg',note:'Pointage du périmétrium à vérifier ; couches basale et fonctionnelle de l’endomètre absentes'},
  R07:{src:'./assets/anatomy/reproductive/review/R07.jpg',note:'Vestibule non légendé et repères externes à vérifier'}
 };
 // Ces six JPG sont un atlas PROVISOIRE ; ne jamais les compter comme masters approuvés.
@@ -189,7 +189,7 @@ function reproductiveReviewCard(def,term){
     const preview=REPRO_PREVIEW_ASSETS[x.id];
     const thumb=preview?'<img src="'+E(preview.src)+'" loading="lazy" alt="Aperçu de '+E(x.id)+' (maquette non validée)" style="width:85px;height:116px;object-fit:contain;background:#fff;border:1px solid #bfc7d2;border-radius:7px">':'<div class="v82-board-icon">🧬</div>';
     const warning=preview?'<div class="small" style="margin-top:4px;color:#ad6833">'+E(preview.note)+'</div>':'';
-    const action=preview?'<button class="btn outline" type="button" data-v82repro-preview="'+E(x.id)+'" aria-label="Agrandir la planche '+E(x.id)+' en revue">🔍 Voir / zoomer</button>':'<button class="btn outline" disabled>À produire</button>';
+    const action=preview?'<button class="btn outline" type="button" data-v82repro-preview="'+E(x.id)+'" aria-label="Agrandir la planche '+E(x.id)+' en revue">'+(preview.severity==='critical'?'⚠️ Audit seulement':'🔍 Voir / zoomer')+'</button>':'<button class="btn outline" disabled>À produire</button>';
     return '<div class="v82-board">'+thumb+'<div style="min-width:0;flex:1"><h4>'+E(x.id)+' — '+E(x.title)+'</h4><div class="small">⚠️ Maquette NON VALIDÉE • pas de test ni de score</div>'+warning+'</div><div class="v82-board-actions">'+action+'</div></div>';
   }).join('');
   const controls='<div class="v82-review-note" style="padding:12px"><div class="small">🔒 Lien personnel Canva enregistré seulement sur cet appareil, non partagé avec les étudiants.</div><div class="v82-board-actions" style="justify-content:flex-start;margin-top:9px">'+(link?'<a class="btn primary" href="'+E(link)+'" target="_blank" rel="noopener noreferrer">Ouvrir ma revue Canva ↗</a>':'')+'<button type="button" class="btn outline" id="v82ReproSetLink">'+(link?'Modifier le lien':'Ajouter mon lien Canva')+'</button>'+(link?'<button class="btn outline" id="v82ReproClearLink">Effacer le lien</button>':'')+'</div></div>';
@@ -221,9 +221,10 @@ function bindAnatomy(){
     document.querySelectorAll('[data-v82repro-preview]').forEach(button=>button.addEventListener('click',()=>{
       const id=button.dataset.v82reproPreview,p=REPRO_PREVIEW_ASSETS[id];
       if(!p)return;
+      if(p.severity==='critical'&&!confirm('ATTENTION : cette planche contient des flèches anatomiques incorrectes. Ne pas la mémoriser ni l’utiliser pour réviser. Voulez-vous l’ouvrir uniquement pour contrôler les corrections ?'))return;
       const title=$('v82ReproModalTitle'),img=$('v82ReproModalImage'),note=$('v82ReproModalNote'),open=$('v82ReproModalOpen');
       if(!title||!img||!note||!open)return;
-      title.textContent=id+' • atlas provisoire / non validé';
+      title.textContent=id+(p.severity==='critical'?' • POINTAGES INCORRECTS — AUDIT UNIQUEMENT':' • atlas provisoire / non validé');
       img.src=p.src;img.alt='Illustration '+id+' provisoire — vérification anatomique en attente';
       note.textContent='⚠️ '+p.note+' • Ne pas utiliser pour les QCM.';
       open.href=p.src;
