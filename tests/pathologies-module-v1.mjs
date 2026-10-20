@@ -76,11 +76,15 @@ assert.ok(src.includes('aria-live="polite"'),'Retour accessible manquant');
 assert.ok(src.includes('data-patho-course'),'Les cours associés ne sont pas accessibles depuis les fiches');
 assert.ok(src.includes("state.submitted?'':' disabled'"),'Le cas clinique doit imposer une validation avant de continuer');
 assert.ok(src.includes("esc(s.url)"),'URL des sources non protégée à l’affichage');
-assert.ok(!read('index.html').includes('./pathologies-module-v1.js'),'Le pilote non approuvé ne doit pas être chargé sur le site public');
-assert.ok(!read('sw.js').includes('./pathologies-module-v1.js'),'Ne pas précharger le module non approuvé hors ligne');
 assert.equal(engine.activate([]).activated,false,'Catalogue vide ne doit pas créer d’onglet');
 const result=engine.activate([{...valid,publicationApproval:{status:'draft'}}]);
 assert.equal(result.activated,false,'Activation du contenu non approuvé');
 assert.equal(result.errors.length,1);
 // Le montage DOM du catalogue approuvé sera testé en navigateur lors de son activation contrôlée.
 console.log('✅ Pathologies v1 : schéma pédagogique, sources, validation publication, correction contextualisée, non-diffusion');
+
+assert.ok(read('index.html').includes('./pathologies-module-v1.js?v=8404'),'Moteur non chargé dans la coque');
+assert.ok(read('index.html').includes('./pathologies-boot-v1.js?v=8404'),'Verrou d’activation absent de la coque');
+assert.ok(read('sw.js').includes("'./pathologies-module-v1.js'")&&read('sw.js').includes("'./pathologies-boot-v1.js'"),'Scripts inactifs non précachés hors ligne');
+assert.ok(!read('index.html').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans index.html');
+assert.ok(!read('sw.js').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans le service worker');
