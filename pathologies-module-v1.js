@@ -25,6 +25,10 @@ function checkAnswerSpread(questions, getter, label, errors){
  if(positions.size<3)errors.push(label+': bonnes réponses concentrées sur moins de trois lettres (A/B/C/D/E)');
  if(questions.length>=12&&sets.filter(s=>s.includes(0)).length>Math.ceil(questions.length*0.83))errors.push(label+': réponse A quasi systématiquement vraie');
 }
+function checkSourceRefs(record,label,sourceIds,errors){
+ const refs=record?.sourceIds;
+ if(!nonEmpty(refs)||!refs.every(id=>text(id)&&sourceIds.has(id))||!unique(refs))errors.push(label+': sourceIds individuels absents, dupliqués ou inconnus');
+}
 function validate(item){
  const errors=[];
  if(!item||!text(item.id)||!/^[a-z0-9_]+$/.test(item.id)||!text(item.title)||!text(item.system))errors.push('Identité / système invalide');
@@ -45,14 +49,15 @@ function validate(item){
  if(!audit||!Number.isInteger(audit.diagramCount)||audit.diagramCount<1||audit.diagramCount!==(visuals||[]).length||audit.rawDiagramCount!==0||audit.allPdfPagesChecked!==true||audit.clinicalContentReviewed!==true)errors.push('Audit schéma → infographie / PDF / validation clinique incomplet');
  if(!nonEmpty(item?.qcm))errors.push('QCM absent');else{
   if(!unique(item.qcm.map(x=>x?.id)))errors.push('IDs QCM dupliqués');
-  item.qcm.forEach(q=>checkOptions(q,'QCM '+(q?.id||'?'),errors));
+  item.qcm.forEach(q=>{checkOptions(q,'QCM '+(q?.id||'?'),errors);checkSourceRefs(q,'QCM '+(q?.id||'?'),sourceIds,errors);});
   checkAnswerSpread(item.qcm,q=>q?.correct,'QCM',errors);
  }
  if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c?.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
+ if(nonEmpty(item?.flashcards))item.flashcards.forEach(c=>checkSourceRefs(c,'Flashcard '+(c?.id||'?'),sourceIds,errors));
  if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x?.id)))errors.push('Cas cliniques absents ou dupliqués');
  else item.cases.forEach(c=>{
   if(!text(c?.id)||!text(c?.title)||!text(c?.context)||!nonEmpty(c?.steps))errors.push('Cas incomplet : '+(c?.id||'?'));
-  else c.steps.forEach((s,i)=>checkOptions({...s,id:s.id||('step_'+i),correct:[s.correct]},'Cas '+c.id+' étape '+(i+1),errors));
+  else c.steps.forEach((s,i)=>{const label='Cas '+c.id+' étape '+(i+1);checkOptions({...s,id:s?.id||('step_'+i),correct:[s?.correct]},label,errors);checkSourceRefs(s,label,sourceIds,errors);});
  });
  if(nonEmpty(item?.cases))checkAnswerSpread(item.cases.flatMap(c=>Array.isArray(c?.steps)?c.steps:[]),s=>[s?.correct],'Cas cliniques',errors);
  if(!approved(item?.publicationApproval))errors.push('Publication non autorisée : GO publication et empreinte requis');
