@@ -252,6 +252,9 @@ jobs:
       - name: Vérifier les six planches Pathologies et les vrais cours associés
         run: node tests/pathologies-p1-poster-pages.mjs
 
+      - name: Auditer les empreintes des images privées (fixture fictive)
+        run: node tests/pathologies-private-assets.mjs --self-test
+
       - name: Contrat de production Pathologies — forme BPCO et protection de publication
         run: node tests/pathologies-skill-contract.mjs
 
