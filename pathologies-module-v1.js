@@ -163,12 +163,13 @@ function showPending(id){
  host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Toutes les pathologies','id="pathoBack"')+'</div><h2>'+esc(record.title)+'</h2><p class="patho-muted">'+esc(record.system)+'</p><div class="patho-panel" role="status"><h3>Ressources en cours de validation médicale</h3><p>Cette pathologie dispose de son espace dédié. Sa fiche illustrée, ses QCM, ses flashcards et ses cas cliniques ne sont pas encore publiés.</p><p>Ils seront accessibles ici, après validation médicale et pédagogique.</p></div><div class="patho-panel"><h3>Cours associé — accès facultatif</h3><p>Le cours IFSI est une ressource distincte de la fiche Pathologies.</p>'+action('Ouvrir le cours IFSI ↗','data-patho-course="'+esc(record.courseId)+'"')+'</div></div>';
  byId('pathoBack').onclick=()=>list();
  host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
+ root.IFSI_PATHOLOGIES_REVIEW?.showIfImported?.(id);
 }
 function list(){
  const host=byId('ifsiPathologiesBody');if(!host)return;
  pendingId=null;state.id=null;
  const records=catalogRecords();
- host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Accueil','id="pathoHome"')+'</div><h2>🩺 Pathologies</h2><p class="patho-muted">Explore les pathologies par système. Déroule un système pour choisir une pathologie. Les ressources non validées restent indisponibles.</p><div class="patho-toolbar"><input id="pathoSearch" type="search" placeholder="Rechercher une pathologie ou un système" aria-label="Rechercher une pathologie"></div><div id="pathoResults" class="patho-results"></div></div>';
+ host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Accueil','id="pathoHome"')+'</div><h2>🩺 Pathologies</h2><p class="patho-muted">Explore les pathologies par système. Déroule un système pour choisir une pathologie. Les ressources non validées restent indisponibles.</p><div class="patho-toolbar"><input id="pathoSearch" type="search" placeholder="Rechercher une pathologie ou un système" aria-label="Rechercher une pathologie"></div><div id="pathoReviewImport"></div><div id="pathoResults" class="patho-results"></div></div>';
  byId('pathoHome').onclick=()=>root.show?.('home');
  const results=byId('pathoResults');
  function bindRows(){
@@ -177,6 +178,7 @@ function list(){
  }
  function draw(){results.innerHTML=catalogMarkup(records,byId('pathoSearch').value);bindRows();}
  byId('pathoSearch').oninput=draw;draw();
+ root.IFSI_PATHOLOGIES_REVIEW?.attachImport?.();
 }
 function linkedCourseLabel(id){
  const courses=root.IFSI_V741?.getRegistry?.()?.courses;
@@ -257,5 +259,6 @@ function activate(catalog){
  entries=Array.isArray(catalog)?catalog.slice():[];
  ensure();return {activated:true,count:entries.length};
 }
-root.IFSI_PATHOLOGIES=Object.freeze({validate,evaluate,activate,open,showShell,openLinkedCourse,getProgress:readProgress,requiredSections:REQUIRED.slice()});
+function showCatalog(){pendingId=null;state.id=null;list();}
+root.IFSI_PATHOLOGIES=Object.freeze({validate,evaluate,activate,open,showShell,showCatalog,openLinkedCourse,getProgress:readProgress,requiredSections:REQUIRED.slice()});
 })(window);
