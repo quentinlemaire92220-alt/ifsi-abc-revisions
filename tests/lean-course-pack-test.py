@@ -25,11 +25,15 @@ with TemporaryDirectory() as d:
           {"heading":"Troisième notion","notionIds":["c"],
            "paragraphs":["La troisième notion est présente dans le cours détaillé mais pas obligatoirement dans la synthèse."]}
         ],
-        "summaryPanels":[
+        "infographicPanels":[
           {"heading":"Essentiel 1","body":"La notion principale doit être compréhensible en quelques phrases.",
            "notionIds":["a"],"figure":{"path":"figure.png"}},
           {"heading":"Essentiel 2","body":"La deuxième notion permet une compréhension pédagogique plus rapide.",
-           "notionIds":["b"]}
+           "notionIds":["b"]},
+          {"heading":"Troisième notion illustrée","body":"Troisième notion expliquée dans le cours infographié complet. "*45,
+           "notionIds":["c"]},
+          {"heading":"Révision complète","body":"Comparaison et applications des trois notions essentielles. "*75,
+           "notionIds":["a","b","c"]}
         ],
         "qcmQuestions":[{
             "id":"fictif_q01","courseId":"fictif","theme":"Notions fictives","difficulty":"easy",
@@ -46,11 +50,12 @@ with TemporaryDirectory() as d:
     report=make_pack(lesson,root,out)
     assert report["status"]=="DRAFT_REVIEW_ONLY"
     assert report["publicationApproval"]=="NOT_GRANTED"
-    assert report["notions"]==3 and report["summarySelectedNotions"]==2
+    assert report["notions"]==3 and report["infographicCoveredNotions"]==3
     assert not (out/"04_Infographies").exists(), "Aucun export automatique attendu"
-    with fitz.open(out/"Synthese_Infographiee_A4.pdf") as s:
-        assert len(s)==1, "Une seule page A4 pour la synthèse"
-        assert s[0].get_text().find("Essentiel 1")!=-1
+    with fitz.open(out/"Cours_Complet_Infographie.pdf") as s:
+        assert len(s)>=2, "Le cours infographié complet doit pouvoir occuper plusieurs pages"
+        all_text="\n".join(page.get_text() for page in s)
+        assert all(x in all_text for x in ["Essentiel 1","Troisième notion illustrée","Révision complète"])
         assert s[0].get_image_info(), "L'illustration source doit être réutilisée"
     with fitz.open(out/"Fiche_Revision.pdf") as c:
         text="\n".join(page.get_text() for page in c)
@@ -78,15 +83,20 @@ with TemporaryDirectory() as d:
     try:make_pack(wrong,root,root/"bad-qcm")
     except ValueError as e:assert "contradictoire" in str(e)
     else:raise AssertionError("Cardinalité erronée du QCM acceptée")
-    wrong=dict(lesson,summaryPanels=[
-        {"heading":"Surcharge","body":"Texte excessif. "*900,
-         "notionIds":["a"],"figure":{"path":"figure.png"}}])
-    try:make_pack(wrong,root,root/"overflow")
-    except ValueError as e:assert "dépasse une page" in str(e)
-    else:raise AssertionError("Synthèse trop longue autorisée")
-    wrong=dict(lesson,summaryPanels=[{"heading":"Inexacte","body":"Notion absente",
+    # Les panneaux nombreux sont répartis sur plusieurs pages sans troncature.
+    larger=dict(lesson,infographicPanels=[{**p,"body":p["body"]+" Explication sourcée. "*65}
+                                           for p in lesson["infographicPanels"]])
+    result=make_pack(larger,root,root/"long-infographic")
+    assert result["infographicCoveredNotions"]==3
+    with fitz.open(root/"long-infographic"/"Cours_Complet_Infographie.pdf") as long_pdf:
+        assert len(long_pdf)>2, "Le moteur doit accepter un cours multipage"
+    incomplete=dict(lesson,infographicPanels=lesson["infographicPanels"][:2])
+    try:make_pack(incomplete,root,root/"missing-illustrated")
+    except ValueError as e:assert "toutes les notions" in str(e)
+    else:raise AssertionError("Cours infographié incomplet accepté")
+    wrong=dict(lesson,infographicPanels=[{"heading":"Inexacte","body":"Notion absente",
                                       "notionIds":["inconnue"]}])
     try:make_pack(wrong,root,root/"bad-id")
-    except ValueError as e:assert "absente du cours" in str(e)
+    except ValueError as e:assert "toutes les notions" in str(e)
     else:raise AssertionError("Notion non sourcée acceptée")
-print("✅ lean_v1 : chaîne unique, PDF de synthèse A4, QCM cohérent, flashcards, cache et refus de perte.")
+print("✅ lean_v1 : chaîne unique, cours infographié complet multipage, QCM, flashcards, cache et refus de perte.")
