@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prépare en local le pack IFSI ABC lean_v1 à partir d'UNE matrice privée validée.
 
-Sortie uniquement privée : fiche complète, synthèse A4 une page, QCM PDF + JSON,
+Sortie uniquement privée : fiche complète, cours infographié complet multipage, QCM PDF + JSON,
 flashcards JSON. La qualité clinique/visuelle et le GO publication restent humains.
 Ne contacte ni GitHub, ni Drive, ni Work. Aucun export d'image automatique.
 """
@@ -24,7 +24,7 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, PageBreak, Spacer
 from revision_compose import render as render_classic
 from revision_course_pack import checked_asset, digest
 
-VERSION = "lean_v1.0"
+VERSION = "lean_v1.1-complete-infographic"
 PURPLE = colors.HexColor("#5b46a3")
 TEAL = colors.HexColor("#0e93ac")
 INK = colors.HexColor("#192937")
@@ -64,9 +64,9 @@ def validate_source(data, assets):
             checked_asset(assets, s["figure"]["path"])
     if mapped != set(ids):
         raise ValueError("La fiche classique doit couvrir toutes les notions de la matrice")
-    panels = data.get("summaryPanels")
-    if not isinstance(panels, list) or not 1 <= len(panels) <= 5:
-        raise ValueError("Synthèse A4 : fournir 1 à 5 panneaux pédagogiques")
+    panels = data.get("infographicPanels")
+    if not isinstance(panels, list) or not panels:
+        raise ValueError("Cours complet infographié : panneaux pédagogiques absents")
     chosen = set()
     for p in panels:
         if not isinstance(p.get("heading"), str) or not str(p.get("body", "")).strip():
@@ -76,8 +76,8 @@ def validate_source(data, assets):
         chosen.update(p["notionIds"])
         if p.get("figure"):
             checked_asset(assets, p["figure"]["path"])
-    if not chosen or not chosen.issubset(set(ids)):
-        raise ValueError("La synthèse ne peut référencer de notion absente du cours")
+    if chosen != set(ids):
+        raise ValueError("Le cours complet infographié doit couvrir toutes les notions de la matrice")
     questions = data.get("qcmQuestions")
     cards = data.get("flashcards")
     if not isinstance(questions, list) or not questions or not isinstance(cards, list) or not cards:
@@ -110,59 +110,60 @@ def validate_source(data, assets):
     return len(ids), len(chosen)
 
 
-def render_summary(data, dest, assets):
-    c = canvas.Canvas(str(dest), pagesize=A4, pageCompression=1, invariant=1)
-    c.setTitle(data["title"] + " — Synthèse infographiée")
-    c.setFillColor(PURPLE)
-    c.roundRect(MARGIN, H - 94, W - 2*MARGIN, 60, 12, stroke=0, fill=1)
-    c.setFillColor(colors.white)
-    c.setFont("Helvetica-Bold", 18)
-    title = str(data["title"])
-    if c.stringWidth(title, "Helvetica-Bold", 18) > W-2*MARGIN-24:
-        raise ValueError("Titre trop long pour le bandeau de synthèse")
-    c.drawString(MARGIN+13, H-60, title)
-    c.setFont("Helvetica", 12)
-    c.drawString(MARGIN+13, H-79, "L'essentiel en une page — synthèse infographiée")
-    y = H-112
-    body_style = ParagraphStyle("text", fontName="Helvetica", fontSize=10.2, leading=14.4, textColor=INK)
-    for index, p in enumerate(data["summaryPanels"], 1):
-        fig = p.get("figure")
-        image_w, image_h = 0, 0
-        if fig:
-            path, iw, ih = checked_asset(assets, fig["path"])
-            image_w = 158
-            image_h = image_w * ih/iw
-            if image_h > 148:
-                image_h = 148
-                image_w = image_h*iw/ih
-        text_w = W-2*MARGIN-32-(image_w+14 if fig else 0)
-        paragraph = Paragraph(html.escape(p["body"]),body_style)
-        tw,th = paragraph.wrap(text_w, H)
-        height = max(th+45, image_h+27, 88)
-        if y-height < 69:
-            raise ValueError("La synthèse dépasse une page A4 : réduire les panneaux ou proposer un arbitrage")
-        c.setFillColor(PALE if index%2 else colors.HexColor("#eaf6f8"))
-        c.roundRect(MARGIN,y-height,W-2*MARGIN,height-7,10,stroke=0,fill=1)
-        c.setFillColor(PURPLE)
-        c.setFont("Helvetica-Bold",12.5)
-        heading=f"{index:02d}  {p['heading']}"
-        if c.stringWidth(heading,"Helvetica-Bold",12.5) > W-2*MARGIN-30:
-            raise ValueError("Titre de panneau trop long")
-        c.drawString(MARGIN+12,y-23,heading)
-        paragraph.drawOn(c,MARGIN+12,y-42-th)
-        if fig:
-            c.drawImage(str(path),W-MARGIN-12-image_w,y-31-image_h,
-                        width=image_w,height=image_h, preserveAspectRatio=True,mask="auto")
-        y -= height+9
-    c.setFillColor(TEAL)
-    c.setFont("Helvetica",9)
-    c.drawString(MARGIN,36,"IFSI ABC · Synthèse issue d'une matrice sourcée · REVUE PRIVÉE")
-    c.save()
+def render_infographic(data, dest, assets):
+    """Compose un vrai cours infographié exhaustif en pages A4, sans troncature."""
+    from reportlab.platypus import KeepTogether, Image, HRFlowable
+    heading_style = ParagraphStyle("infographic_heading", fontName="Helvetica-Bold",
+        fontSize=13.2, leading=17.3, textColor=PURPLE, spaceBefore=12, spaceAfter=7)
+    body_style = ParagraphStyle("infographic_body", fontName="Helvetica",
+        fontSize=10.3, leading=15, textColor=INK, spaceAfter=8)
+    source_style = ParagraphStyle("infographic_source", fontName="Helvetica",
+        fontSize=8.5, leading=11.8, textColor=TEAL, spaceAfter=9)
+    title_style = ParagraphStyle("infographic_title", fontName="Helvetica-Bold",
+        fontSize=19, leading=24, textColor=PURPLE, spaceAfter=13)
+    story = [
+        Paragraph(html.escape(data["title"]),title_style),
+        Paragraph("Cours complet infographié — toutes les notions de la matrice sont reprises.",body_style)
+    ]
+    for index,panel in enumerate(data["infographicPanels"],1):
+        heading=Paragraph(html.escape(f"{index:02d} — {panel['heading']}"),heading_style)
+        intro=Paragraph(html.escape(panel["body"]),body_style)
+        figure=panel.get("figure")
+        parts=[heading,intro]
+        if figure:
+            path,iw,ih=checked_asset(assets,figure["path"])
+            max_w=W-2*MARGIN-20
+            max_h=410
+            scale=min(max_w/iw,max_h/ih,1)
+            width,height=iw*scale,ih*scale
+            parts.append(Image(str(path),width=width,height=height,hAlign="CENTER"))
+            if figure.get("caption"):
+                parts.append(Paragraph(html.escape(figure["caption"]),source_style))
+        if panel.get("sourcePages"):
+            parts.append(Paragraph("Source officielle : "+html.escape(", ".join(map(str,panel["sourcePages"]))),source_style))
+        parts.append(HRFlowable(width="100%",thickness=.6,color=TEAL))
+        story += parts
+        story.append(Spacer(1,10))
+    doc=SimpleDocTemplate(str(dest),pagesize=A4,leftMargin=MARGIN,
+        rightMargin=MARGIN,topMargin=48,bottomMargin=47,
+        title=data["title"]+" — Cours complet infographié",invariant=1)
+    def decorate(canvas,document):
+        canvas.saveState()
+        canvas.setStrokeColor(TEAL)
+        canvas.line(MARGIN,H-31,W-MARGIN,H-31)
+        canvas.setFillColor(INK)
+        canvas.setFont("Helvetica",8)
+        canvas.drawString(MARGIN,23,"IFSI ABC · Cours complet infographié · REVUE PRIVÉE")
+        canvas.drawRightString(W-MARGIN,23,str(document.page))
+        canvas.restoreState()
+    doc.build(story,onFirstPage=decorate,onLaterPages=decorate)
     with fitz.open(dest) as pdf:
-        if len(pdf)!=1 or abs(pdf[0].rect.width-W)>2 or abs(pdf[0].rect.height-H)>2:
-            raise ValueError("Contrôle PDF : synthèse non conforme à une page A4")
-        if not pdf[0].get_text().strip():
-            raise ValueError("Synthèse sans texte exploitable")
+        if len(pdf)<1 or any(abs(p.rect.width-W)>2 or abs(p.rect.height-H)>2 for p in pdf):
+            raise ValueError("Cours infographié : format A4 invalide")
+        all_text="\n".join(p.get_text() for p in pdf)
+        for panel in data["infographicPanels"]:
+            if panel["heading"] not in all_text:
+                raise ValueError("Cours infographié : panneau perdu : "+panel["heading"])
 
 
 def render_qcm(data, dest):
@@ -191,13 +192,13 @@ def render_qcm(data, dest):
 def make_pack(data, assets, out):
     assets=Path(assets).resolve()
     out=Path(out).resolve()
-    notions, selected=validate_source(data,assets)
+    notions, covered=validate_source(data,assets)
     used=set()
-    for entry in data["sections"]+data["summaryPanels"]:
+    for entry in data["sections"]+data["infographicPanels"]:
         if entry.get("figure"):used.add(entry["figure"]["path"])
     figure_hashes={p:digest(checked_asset(assets,p)[0]) for p in sorted(used)}
     key=hashlib.sha256(canonical({"version":VERSION,"data":data,"figures":figure_hashes})).hexdigest()
-    files={"classic":"Fiche_Revision.pdf","summary":"Synthese_Infographiee_A4.pdf",
+    files={"classic":"Fiche_Revision.pdf","infographic":"Cours_Complet_Infographie.pdf",
            "qcmPdf":"QCM_Corrige.pdf","qcmJson":"QCM.json","flashcardsJson":"Flashcards.json"}
     old=out/"manifest_prive.json"
     if old.exists():
@@ -212,7 +213,7 @@ def make_pack(data, assets, out):
             pass
     out.mkdir(parents=True,exist_ok=True)
     render_classic(data,out/files["classic"],assets)
-    render_summary(data,out/files["summary"],assets)
+    render_infographic(data,out/files["infographic"],assets)
     render_qcm(data,out/files["qcmPdf"])
     # Le moteur des flashcards IFSI ABC lit q.flashcards dans les banques QCM.
     # Conserver également l'export cartes autonome pour audit et reprise.
@@ -231,7 +232,7 @@ def make_pack(data, assets, out):
             if s["heading"] not in text:
                 raise ValueError("Le PDF de la fiche a perdu une section : "+s["heading"])
     result={"packFormat":"lean_v1","status":"DRAFT_REVIEW_ONLY","cacheKey":key,
-            "notions":notions,"summarySelectedNotions":selected,
+            "notions":notions,"infographicCoveredNotions":covered,
             "files":files,"sourceFiguresReused":figure_hashes,
             "artifactSha256s":{name:digest(out/name) for name in files.values()},
             "medicalReview":"REQUIRED","visualReview":"REQUIRED","publicationApproval":"NOT_GRANTED"}
