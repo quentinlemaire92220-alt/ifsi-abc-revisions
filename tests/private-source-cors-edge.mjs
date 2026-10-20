@@ -6,6 +6,7 @@ const original=fs.readFileSync('supabase/functions/ifsi-private-sources/index.ts
 let js=original;
 const types=new Map([
  ['const FIELDS: Record<string, number> =','const FIELDS ='],
+ ['new Set<string>()','new Set()'],
  ['function response(requestOrigin: string | null, status: number, payload: unknown)','function response(requestOrigin, status, payload)'],
  ['function b64url(bytes: Uint8Array)','function b64url(bytes)'],
  ['function sheetRange(range: string)','function sheetRange(range)'],
