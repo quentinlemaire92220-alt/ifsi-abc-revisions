@@ -44,6 +44,14 @@ assert.ok(errors({...valid,visualAudit:{...valid.visualAudit,allPdfPagesChecked:
 assert.ok(errors({...valid,visualAudit:{...valid.visualAudit,clinicalContentReviewed:false}}).some(e=>e.includes('Audit')), 'Validation clinique incomplète autorisée');
 assert.ok(src.includes('class="patho-figure"')&&src.includes('esc(v?.url)'),'Illustrations non intégrées dans les sections');
 
+const sameAnswerQcm=Array.from({length:12},(_,i)=>({...valid.qcm[0],id:'qa'+i,correct:[0]}));
+assert.ok(errors({...valid,qcm:sameAnswerQcm}).some(e=>e.includes('concentrées')||e.includes('systématiquement')),'12 QCM toujours en A doivent être bloqués');
+const spreadQcm=Array.from({length:12},(_,i)=>({...valid.qcm[0],id:'qb'+i,correct:[i%4]}));
+assert.ok(!errors({...valid,qcm:spreadQcm}).some(e=>e.includes('concentrées')||e.includes('systématiquement')),'Distribution équilibrée ne doit pas être bloquée');
+const sameCaseSteps=Array.from({length:8},(_,i)=>({...valid.cases[0].steps[0],id:'step'+i,correct:0}));
+assert.ok(errors({...valid,cases:[{...valid.cases[0],steps:sameCaseSteps}]}).some(e=>e.includes('Cas cliniques: bonnes réponses')),'Réponse A des cas trop prévisible');
+const spreadCaseSteps=sameCaseSteps.map((s,i)=>({...s,correct:i%4}));
+assert.ok(!errors({...valid,cases:[{...valid.cases[0],steps:spreadCaseSteps}]}).some(e=>e.includes('Cas cliniques: bonnes réponses')),'Répartition correcte des cas');
 const q=valid.qcm[0];
 const correct=engine.evaluate(q,[1]);
 assert.equal(correct.correct,true);

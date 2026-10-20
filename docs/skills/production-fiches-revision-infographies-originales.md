@@ -52,4 +52,8 @@
 
 Avant revue du lot, contrôler **toutes les pages** du PDF final et tracer l'inventaire schéma→infographie ; une seule figure non conforme bloque la livraison. La publication pédagogique reste soumise à un GO publication distinct.
 
+### Extension au Lot P1 Pathologies validé pour la FORME (20/10/2026)
+
+Le témoin BPCO six panneaux et les déclinaisons HTA/diabète de type 2 sont validés comme **format visuel**. Pour cette catégorie, la conformité implique également la **fidélité à la densité graphique et à la richesse des illustrations anatomiques**, non seulement « présence d'une infographie ». Ne jamais remplacer une composition médicale illustrative par des cercles, silhouettes simplifiées ou panneaux quasi vides. Corriger la science dans l'infographie initiale autant que possible, vérifier le rendu avant/après, sans dégrader la qualité approuvée. **La validation graphique ne vaut ni validation clinique, ni publication.** Appliquer le skill spécialisé Pathologies.
+
 **Règle pratique finale :** un « Go » suffit ; **ne pas redemander ces instructions**. Si une condition d'acceptation échoue, corriger avant toute proposition de validation. Aucun compteur, score de QCM, flashcard ou élément publié ne doit être modifié par la seule refonte visuelle.

@@ -24,6 +24,10 @@ Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revisi
 
 **Contrôles bloquants** : inventaire schéma→infographie, vérification médicale du texte/des repères/flèches/chiffres/dispositifs, provenance officielle vs complément vérifié, contrôle PDF page par page à 100 % et mobile, package en revue privée. **La validation du style BPCO ne vaut pas validation médicale ni GO publication.** Les visuels de QCM et les planches anatomiques autonomes conservent leurs règles spécifiques. Ne pas diffuser de contenus non approuvés.
 
+## Validation de forme P1 Pathologies — 20/10/2026
+
+**BPCO, HTA et diabète de type 2 : forme et structure générale acceptées par le propriétaire.** Les témoins graphiques à six panneaux doivent être **préservés fidèlement** : infographies anatomiques riches, comparaisons, encadrés, bandeaux, densité et lisibilité. Une refonte simplifiée ou en géométrie abstraite n'est pas un substitut autorisé. Corriger localement les légendes et erreurs médicales en gardant la qualité visuelle ; si refonte substantielle, revue avant/après obligatoire. Cette validation **ne concerne pas** les assertions médicales, les QCM, flashcards et cas. Exiger un contrôle des choix QCM : aucune bonne réponse systématiquement en A ; répartition des lettres et synchronisation de toutes les corrections. Voir `docs/skills/production-pathologies-infographies-cliniques.md` et `docs/PATHOLOGIES_LOT_P1_VALIDATION_FORME_20261020.md`. **Pas de GO publication du lot à ce stade.**
+
 ## Skill anatomie — génération + annotations SVG (méthode principale)
 
 Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-svg.md`** (en complément du standard IFSI ABC). **Canva n'est plus l'outil de production par défaut** : son ancien skill `docs/skills/production-planches-anatomiques-canva.md` est une archive et un secours ponctuel seulement.
