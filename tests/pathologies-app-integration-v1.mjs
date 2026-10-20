@@ -18,7 +18,14 @@ assert.equal((html.match(/pathologies-boot-v1\.js\?v=8404/g)||[]).length,1,'Boot
 assert.ok(sw.includes("'./pathologies-module-v1.js'")&&sw.includes("'./pathologies-boot-v1.js'"),'PWA does not precache the shell');
 assert.ok(!html.includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Clinical content accidentally assigned in HTML');
 assert.ok(!sw.includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Clinical content accidentally assigned in service worker');
-assert.ok(!html.includes('ifsiPathologiesNav'),'Navigation must not exist before medical approval');
+const navMarkup=(html.match(/<nav>[\s\S]*?<\/nav>/)||[])[0]||'';
+assert.ok(navMarkup.includes('id="ifsiPathologiesNav"'),'Le sixième onglet doit exister directement dans le HTML');
+assert.equal((navMarkup.match(/<button\b/g)||[]).length,6,'La barre doit contenir exactement six boutons');
+assert.ok(navMarkup.includes('window.IFSI_PATHOLOGIES?.open()'),'Le bouton public doit ouvrir la coque Pathologies');
+assert.ok(html.includes('grid-template-columns:repeat(6,minmax(0,1fr))'),'La barre doit réserver six emplacements');
+const homeNav=read('v82-nav-anatomy.js');
+assert.ok(homeNav.includes('id="v82Pathologies"'),'Accès Pathologies manquant de la page d’accueil');
+assert.ok(homeNav.includes("window.IFSI_PATHOLOGIES?.open?.()"),'Accès accueil non câblé');
 assert.ok(!html.includes('bpco_pilote')&&!html.includes('dt2_pilote')&&!html.includes('hta_pilote'),'Private clinical fixtures leaked');
 
 function simulate(initial={}){
@@ -40,17 +47,19 @@ assert.ok(bootCode.includes('engine?.showShell?.()'),'No-catalog state must moun
 assert.ok(engineCode.includes('Contenu en cours de validation'),'Visible shell must disclose review status');
 assert.ok(engineCode.includes('nav.classList.add('),'Approved-only navigation CSS not activated');
 function mockedBrowser(){
- const elements={};const navButtons=[];
+ const elements={};const navButtons=[];const navClasses=new Set();
  const make=()=>({innerHTML:'',className:'',classList:{add(){},remove(){}},addEventListener(){},querySelectorAll(){return []},dataset:{}});
- const nav={classList:{add(){},remove(){}},appendChild(el){navButtons.push(el);elements[el.id]=el;}};
+ const nav={classList:{add(v){navClasses.add(v)},remove(v){navClasses.delete(v)}},appendChild(el){navButtons.push(el);elements[el.id]=el;}};
+ const existing=make();existing.id='ifsiPathologiesNav';elements[existing.id]=existing;navButtons.push(existing);
  const app={querySelector(selector){return selector==='nav'?nav:null},insertBefore(el){elements[el.id]=el;elements.ifsiPathologiesBody=make();},appendChild(el){this.insertBefore(el);}};
  const doc={head:{appendChild(){}},createElement:()=>make(),getElementById:id=>elements[id]||null,querySelector:selector=>selector==='.app'?app:null,querySelectorAll:selector=>selector==='.app > section'?[elements.ifsiPathologies].filter(Boolean):selector==='nav button'?navButtons:[]};
- return {doc,navButtons,elements};
+ return {doc,navButtons,elements,navClasses};
 }
 const browser=mockedBrowser();
 const publicShell=simulate({document:browser.doc,show(){}});
 assert.equal(browser.navButtons.length,1,'Un onglet Pathologies doit être visible dans la coque publique');
 assert.equal(browser.navButtons[0].id,'ifsiPathologiesNav');
+assert.ok(browser.navClasses.has('ifsi-pathologies-ready'),'La coque doit appliquer la grille de six colonnes sur le bouton statique');
 assert.equal(publicShell.IFSI_PATHOLOGIES_BOOT.start().mounted,false,'Aucun contenu médical approuvé ne doit être activé');
 publicShell.IFSI_PATHOLOGIES.open();
 const placeholder=browser.elements.ifsiPathologiesBody.innerHTML;
