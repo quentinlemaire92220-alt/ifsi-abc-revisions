@@ -6,18 +6,21 @@ Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige dé
 
 ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
 
+
+**CONTRÔLE GRAPHIQUE OBLIGATOIRE :** consulter `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`. Pour chaque nouveau pack, produire deux évaluations MANUELLES indépendantes : `REVISION_TEXT_FIRST` (paragraphes et tableaux majoritaires, illustrations ponctuelles et justifiées) et `INFOGRAPHIC_VISUAL_FIRST` (grand schéma anatomique, flèches exactes, zooms et légendes, pas une grille de textes). Aucune validation par simple présence d'image, nombre de pages ou succès TNR ; maquettes non conformes bloquées, sans publication.
+
 # Livraison d’un cours après autocontrôle des livrables
 
 
 ## Norme de livrables à retenir pour les futurs cours (pilote validé 20/10/2026)
 
-**Nouvelle demande propriétaire : pack minimal systématique =** fiche de révision complète avec infographies intégrées au besoin ; **un cours complet infographié multipage** (une deuxième fiche exhaustive sauf demande explicite) ; QCM A–E (1–3 réponses exactes) avec corrigés ; flashcards ; planches anatomiques seulement si nécessaires et non existantes. Les modèles graphiques sont les cours **Système cardiovasculaire / Système respiratoire**.
+**Nouvelle demande propriétaire : pack minimal systématique =** fiche de révision complète avec infographies intégrées au besoin ; **un cours complet infographié multipage** (seconde fiche exhaustive obligatoire, graphiquement différente) ; QCM A–E (1–3 réponses exactes) avec corrigés ; flashcards ; planches anatomiques seulement si nécessaires et non existantes. Les références précises sont **la fiche de révision cardiovasculaire de 17 pages** (explications, tableaux, figures ponctuelles) et **la planche circulation sanguine et trajet du sang** (grand schéma annoté, zooms, repères). Consulter `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`.
 
 Les dossiers historiques 01–08 et 99 peuvent être conservés sans forcer leur remplissage. Les vocaux MP3, scripts TXT, vocabulaire séparé, packs d'infographies et exports n'appartiennent plus au kit obligatoire ; produire uniquement si demandés. Pour 05 - Vocaux ou 08 - Scripts, la présence du dossier ne signifie pas MP3 attendu ni contenu manquant.
 
 **Processus économe** : ChatGPT classique audite, produit et contrôle les fichiers possibles, classe en Drive ; Work est un outil ponctuel de renfort pour travaux lourds et non un passage obligatoire de chaque nouveau cours. Réutiliser les images et PDF déjà validés.
 
-**Point d'intégration :** les règles techniques historiques du manifeste, du dualSheetCoverage, des hashes et de la CI peuvent toujours exiger une seconde fiche complète. Tant que ces attentes n'ont pas été mises à jour avec des tests contrôlés, ne pas publier une page-synthèse comme une fiche complète, ne pas forcer une validation de manifeste, et signaler explicitement l'adaptation technique nécessaire. Toute publication suit `docs/PUBLICATION_APPROVAL.md`, sans dérogation implicite.
+**Point d'intégration :** les contrats actuels acceptent deux fiches exhaustives, chacune avec SHA-256, preuves Drive et couverture de notions. Un test automatisé ne valide jamais le respect du modèle graphique : inspection séparée `REVISION_TEXT_FIRST` et `INFOGRAPHIC_VISUAL_FIRST` obligatoire avant livraison. Toute publication suit `docs/PUBLICATION_APPROVAL.md`, sans dérogation implicite.
 
 Le lancement d'un package complet déclenche l'exécution de ce processus pour chaque nouveau cours et chaque nouvelle partie, avec autocontrôle des livrables et sans validation graphique intermédiaire systématique. Le modèle de classement est le cours Système respiratoire. Cette procédure complète les chartes pédagogiques sans modifier les supports officiels.
 
