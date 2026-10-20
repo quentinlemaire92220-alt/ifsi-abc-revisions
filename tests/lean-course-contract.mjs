@@ -1,5 +1,5 @@
 // Contrat de livraison pour le pack allégé validé le 20/10/2026.
-// Un nouveau cours = fiche complète + UNE page de synthèse, QCM, flashcards.
+// Un nouveau cours = deux supports exhaustifs (classique + infographié multipage), QCM, flashcards.
 // Les cours historiques continuent de passer dans dual-sheet-contract.mjs.
 // Les preuves déclarées ici ne remplacent jamais la revue des PDF et des copies Drive.
 import assert from 'node:assert/strict';
@@ -22,13 +22,15 @@ function sheetFor(courseId,resourceId,format,sheets,delivery){
  return sheet;
 }
 
-function verifyPdf(courseId,kind,sheet,audit,proof,digests,{minFigures=0,summary=false,requirePublishedVerification=true}={}){
+function verifyPdf(courseId,kind,sheet,audit,proof,digests,{minFigures=0,infographic=false,requirePublishedVerification=true}={}){
  assert.equal(audit?.status,'PASS',courseId+': audit PDF '+kind+' absent');
  assert.ok(sha(audit.pdfSha256),courseId+': empreinte audit '+kind+' invalide');
  assert.ok(Number.isInteger(audit.expectedCount)&&audit.expectedCount>=minFigures,courseId+': nombre de figures '+kind+' invalide');
  assert.equal(audit.checkedCount,audit.expectedCount,courseId+': images non toutes inspectées '+kind);
- if(summary)assert.equal(audit.pageCount,1,courseId+': la synthèse doit faire exactement une page A4 contrôlée');
- if(summary)assert.equal(audit.pageSize,'A4',courseId+': le format A4 n’est pas attesté');
+ if(infographic){
+  assert.ok(Number.isInteger(audit.pageCount)&&audit.pageCount>=1,courseId+': pages du cours infographié non comptées');
+  assert.equal(audit.pageSize,'A4',courseId+': le format A4 n’est pas attesté');
+ }
  const id=driveId(sheet);
  assert.equal(digests?.[id]?.toLowerCase(),audit.pdfSha256.toLowerCase(),courseId+': empreinte artifactSha256s incohérente '+kind);
  if(!requirePublishedVerification)return;
@@ -37,15 +39,15 @@ function verifyPdf(courseId,kind,sheet,audit,proof,digests,{minFigures=0,summary
  assert.equal(proof.pdfSha256?.toLowerCase(),audit.pdfSha256.toLowerCase(),courseId+': empreintes PDF divergentes '+kind);
  assert.equal(proof.expectedCount,audit.expectedCount,courseId+': inventaire PDF Drive non conforme '+kind);
  assert.equal(proof.checkedCount,audit.checkedCount,courseId+': contrôle PDF Drive incomplet '+kind);
- if(summary)assert.equal(proof.pageCount,1,courseId+': copie Drive de synthèse non contrôlée sur une page');
+ if(infographic)assert.equal(proof.pageCount,audit.pageCount,courseId+': nombre de pages Drive différent du PDF contrôlé');
 }
 
 export function validateLeanCourseDelivery(courseId,delivery,sheets,{requirePublishedVerification=true}={}){
  assert.equal(delivery?.packFormat,'lean_v1',courseId+': packFormat lean_v1 absent');
  assert.notEqual(delivery.sheetResourceId,delivery.infographicSheetResourceId,courseId+': les deux PDF doivent être distincts');
  const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets,delivery);
- const summary=sheetFor(courseId,delivery.infographicSheetResourceId,'infographic_summary',sheets,delivery);
- assert.notEqual(driveId(classic),driveId(summary),courseId+': réutilisation du même PDF Drive');
+ const illustrated=sheetFor(courseId,delivery.infographicSheetResourceId,'complete_infographic',sheets,delivery);
+ assert.notEqual(driveId(classic),driveId(illustrated),courseId+': réutilisation du même PDF Drive');
  assert.ok(Array.isArray(delivery.infographicResourceIds||[]),courseId+': infographicResourceIds invalide');
  const exports=delivery.infographicResourceIds||[];
  assert.equal(new Set(exports).size,exports.length,courseId+': doublons d’exports infographiques');
@@ -62,25 +64,24 @@ export function validateLeanCourseDelivery(courseId,delivery,sheets,{requirePubl
  if(delivery.schematics==='embedded_only')assert.ok(included>0,courseId+': mode embedded_only sans figure');
  verifyPdf(courseId,'classique',classic,delivery.visualAudit,delivery.publishedVerification,
   delivery.artifactSha256s,{minFigures:included,requirePublishedVerification});
- verifyPdf(courseId,'synthèse A4',summary,delivery.infographicSheetVisualAudit,
+ verifyPdf(courseId,'cours infographié complet',illustrated,delivery.infographicSheetVisualAudit,
   delivery.infographicSheetPublishedVerification,delivery.artifactSha256s,
-  {summary:true,requirePublishedVerification});
- const coverage=delivery.summaryCoverage;
+  {infographic:true,requirePublishedVerification});
+ const coverage=delivery.dualSheetCoverage;
  assert.ok(coverage&&Number.isInteger(coverage.expectedNotions)&&coverage.expectedNotions>0,courseId+': inventaire des notions absent');
  assert.equal(coverage.classicCovered,coverage.expectedNotions,courseId+': fiche classique incomplète');
- assert.ok(Number.isInteger(coverage.selectedNotions)&&coverage.selectedNotions>0&&coverage.selectedNotions<=coverage.expectedNotions,
-  courseId+': sélection de notions pour synthèse non documentée');
- assert.equal(coverage.summaryCovered,coverage.selectedNotions,courseId+': synthèse lacunaire sur les notions sélectionnées');
+ assert.equal(coverage.infographicCovered,coverage.expectedNotions,
+  courseId+': cours infographié incomplet : toutes les notions doivent être couvertes');
  if(included||exports.length){
   assert.equal(coverage.medicalReview,'approved',courseId+': revue scientifique/anatomique non approuvée');
  }else{
   assert.equal(coverage.disciplinaryReview?.status,'approved',courseId+': revue disciplinaire/conceptuelle non approuvée');
  }
- assert.ok(coverage.readabilityReview==='approved',courseId+': lisibilité A4 non approuvée');
+ assert.ok(coverage.readabilityReview==='approved',courseId+': lisibilité des PDF non approuvée');
  if(delivery.requestedVocals===true){
   assert.ok((delivery.vocals||[]).length>0||(delivery.vocalScripts||[]).length>0,courseId+': vocaux demandés mais absents');
  }
- return {classic,summary};
+ return {classic,illustrated};
 }
 
 export function validateLeanPart(courseId,part,sheets){
