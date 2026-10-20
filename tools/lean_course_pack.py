@@ -105,6 +105,8 @@ def validate_source(data, assets):
         seen.add(card["id"])
         if not card.get("answers") or not all(str(x).strip() for x in card["answers"]) or not card.get("explanation"):
             raise ValueError("Flashcard : réponse/explication manquante")
+        if card.get("qid") not in qids:
+            raise ValueError("Flashcard : question QCM source (qid) introuvable")
     return len(ids), len(chosen)
 
 
@@ -212,7 +214,16 @@ def make_pack(data, assets, out):
     render_classic(data,out/files["classic"],assets)
     render_summary(data,out/files["summary"],assets)
     render_qcm(data,out/files["qcmPdf"])
-    (out/files["qcmJson"]).write_text(json.dumps(data["qcmQuestions"],ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+    # Le moteur des flashcards IFSI ABC lit q.flashcards dans les banques QCM.
+    # Conserver également l'export cartes autonome pour audit et reprise.
+    linked={q["id"]:{**q,"flashcards":list(q.get("flashcards",[]))} for q in data["qcmQuestions"]}
+    for card in data["flashcards"]:
+        linked[card["qid"]]["flashcards"].append({
+            "front":card["front"],"answers":card["answers"],
+            "explanation":card["explanation"],"kind":"Cours",
+            "atomic":True,"preserveFront":True
+        })
+    (out/files["qcmJson"]).write_text(json.dumps(list(linked.values()),ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     (out/files["flashcardsJson"]).write_text(json.dumps(data["flashcards"],ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     with fitz.open(out/files["classic"]) as pdf:
         text="\n".join(page.get_text() for page in pdf)
