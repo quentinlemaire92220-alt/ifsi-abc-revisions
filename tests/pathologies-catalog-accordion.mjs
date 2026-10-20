@@ -24,7 +24,7 @@ assert.ok(ctx.fakeMarkup('inconnu').includes('Aucune pathologie trouvée'));
 let courseOpens=0,backClicks=0,pendingMarkup='';
 const fakeHost={set innerHTML(x){pendingMarkup=x;},querySelectorAll(selector){return selector==='[data-patho-course]'?[{dataset:{pathoCourse:'systeme_respiratoire'},onclick:null}]:[]}};
 const backButton={onclick:null};
-const pageCtx={P1_CATALOG:records,pendingId:null,state:{id:'none'},byId:id=>id==='ifsiPathologiesBody'?fakeHost:id==='pathoBack'?backButton:null,esc:ctx.exportEsc,action:(label,attr)=>'<button '+attr+'>'+label+'</button>',openLinkedCourse:()=>{courseOpens++;},list(){backClicks++;}};
+const pageCtx={root:{},P1_CATALOG:records,pendingId:null,state:{id:'none'},byId:id=>id==='ifsiPathologiesBody'?fakeHost:id==='pathoBack'?backButton:null,esc:ctx.exportEsc,action:(label,attr)=>'<button '+attr+'>'+label+'</button>',openLinkedCourse:()=>{courseOpens++;},list(){backClicks++;}};
 vm.createContext(pageCtx);
 vm.runInContext(part('function showPending(','function list(){')+'\nglobalThis.openDraft=showPending;',pageCtx);
 pageCtx.openDraft('bpco');
