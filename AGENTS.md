@@ -1,3 +1,13 @@
+## CONTRAT PRIORITAIRE — PACK DE COURS ALLÉGÉ VALIDÉ LE 20/10/2026
+
+Pour chaque **nouveau cours IFSI ABC**, appliquer en priorité le pack validé par l'utilisateur, devant les anciens contrats de production systématique : **(1)** fiche de révision PDF complète, explications écrites conservées et schémas originaux infographiés *au besoin* ; **(2)** **une page A4 complète infographiée de synthèse** distincte (pas obligatoirement un deuxième cours exhaustif en planches) ; **(3)** QCM corrigé argumenté, cinq choix A–E, 1–3 bonnes réponses ; **(4)** flashcards à questions autonomes, réponse cachée avant retournement dans l'application ; **(5)** planches anatomiques uniquement si pertinentes et absentes de la bibliothèque Anatomie. **Modèles graphiques Système cardiovasculaire / Système respiratoire**, pilote du 20/10. La fidélité médicale doit être contrôlée indépendamment de l'approbation du style.
+
+**Fiche vocabulaire séparée, scripts vocaux, MP3, exports d'infographies et autres livrables** ne sont plus obligatoires pour chaque cours : création sur demande. **Ne pas effacer** les ressources déjà validées, ni perdre les définitions nécessaires dans la fiche ou dans les flashcards.
+
+**ChatGPT classique par défaut** : audit du support/Drive/application, matrice, rédaction, création des visuels et fichiers réalisables, vérifications, classement ordinaire. **Work seulement en renfort ciblé** si le rendu ou les opérations techniques volumineuses le nécessitent ; pas de seconde génération d'un fichier déjà conforme. GO audit → GO production privée → validation du lot → GO publication distinct.
+
+**Limite technique** : les manifests et tests historiques peuvent imposer deux PDF complets ou d'autres ressources. Ne pas mentir sur un TNR PASS ou publier un pack incomplet au regard du contrat actuel : documenter l'écart et préparer une migration technique dédiée, testée et validée. Ne jamais ajuster le contenu pédagogique pour tromper les tests. Les instructions historiques qui contredisent ce paragraphe sont obsolètes pour les nouvelles productions.
+
 # Production et publication des cours
 
 Un « GO production » autorise la préparation du package, ses contrôles et ses autocorrections. Il n'autorise pas sa mise à disposition aux étudiants.
