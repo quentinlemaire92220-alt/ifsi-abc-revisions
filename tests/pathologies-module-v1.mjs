@@ -30,6 +30,11 @@ assert.ok(errors({...valid,qcm:[{...valid.qcm[0],correct:[0,1,2,3]}]}).some(e=>e
 assert.ok(errors({...valid,qcm:[{...valid.qcm[0],feedback:['Un seul'] }]}).some(e=>e.includes('correction argumentée')), 'Feedback incomplet');
 assert.ok(errors({...valid,sources:[]}).some(e=>e.includes('Sources')), 'Aucune source tolérée');
 assert.ok(errors({...valid,visuals:[]}).some(e=>e.includes('Infographies')), 'Absence d’infographies autorisée');
+assert.doesNotThrow(()=>engine.validate({...valid,visuals:[null]}),'Visuel null doit être rejeté sans erreur JS');
+assert.doesNotThrow(()=>engine.validate({...valid,visuals:[{...valid.visuals[0],sourceIds:'invalid'}]}),'Liens de sources malformés doivent être rejetés');
+assert.doesNotThrow(()=>engine.validate({...valid,sources:[null]}),'Source null doit être rejetée sans erreur JS');
+assert.doesNotThrow(()=>engine.validate({...valid,cases:[null]}),'Cas clinique null doit être rejeté sans erreur JS');
+
 assert.ok(errors({...valid,visuals:[{...valid.visuals[0],medicalReview:'pending'}]}).some(e=>e.includes('double validation')), 'Revue médicale absente autorisée');
 assert.ok(errors({...valid,visuals:[{...valid.visuals[0],graphicalReview:'pending'}]}).some(e=>e.includes('double validation')), 'Revue graphique absente autorisée');
 assert.ok(errors({...valid,visuals:[{...valid.visuals[0],kind:'raw_diagram'}]}).some(e=>e.includes('brute')), 'Schéma brut autorisé');
