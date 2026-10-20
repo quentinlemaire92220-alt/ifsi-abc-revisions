@@ -26,4 +26,19 @@ for(const p of qa.boards)assert.ok(p.defects.length>=1,'Revue manquante : '+p.id
 assert.ok(qa.boards.find(x=>x.id==='R03').defects.some(x=>x.label==='Vésicule séminale'));
 assert.ok(qa.boards.find(x=>x.id==='R05').defects.some(x=>x.label==='Médulla ovarienne'));
 assert.ok(!read('docs/anatomy-reproductive-clinical-audit-20261020.json').includes('driveFileId'),'Pas de lien Drive privé en clair');
+for(const id of ['R03','R05']){
+ const board=qa.boards.find(x=>x.id===id),correction=board.canvaCorrection;
+ assert.equal(correction.designId,'DAHYiE0NJeQ',id+' : mauvais document Canva');
+ assert.equal(correction.saved,true,id+' : corrections non sauvegardées');
+ assert.equal(correction.userApprovedLayout,true,id+' : validation graphique absente');
+ assert.equal(correction.currentPublishedAssetStillIncorrect,true,id+' : ancien export incorrect encore affiché');
+ assert.equal(correction.clinicalApproval,false,id+' : approbation médicale non démontrée');
+ assert.equal(correction.licenseApproval,false,id+' : droits non démontrés');
+ assert.equal(correction.highResolutionExportVerified,false,id+' : pas de master HD validé');
+ assert.equal(correction.sourceImageEditStatus,'CANVA_SAVED_BUT_NOT_EXPORTED');
+}
+assert.equal(qa.boards.find(x=>x.id==='R03').canvaCorrection.verifiedCanvasElements.ampullaArrowPresent,false,'Ne pas inventer la flèche de l’ampoule');
+assert.equal(qa.nextIntegrationStep.exportToolAvailableHere,false,'Aucun export Canva automatisé ne doit être simulé');
+assert.equal(qa.nextIntegrationStep.noAutomaticStudentPublication,true,'Aucune publication de contenus non approuvés');
+
 console.log('✅ Revue clinique: 6 planches tracées, R03/R05 signalées et accès contrôlé, 106 atlas inchangés, QCM bloqués.');
