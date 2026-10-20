@@ -126,7 +126,7 @@ function open(){
  doc().querySelectorAll('.app > section').forEach(s=>s.classList.add('hidden'));
  host.classList.remove('hidden');
  doc().querySelectorAll('nav button').forEach(b=>b.classList.remove('on'));
- byId('ifsiPathologiesNav')?.classList.add('on');render();
+ byId('ifsiPathologiesNav')?.classList.add('on');byId('v87Pathologies')?.classList.add('on');render();
  root.scrollTo?.(0,0);
 }
 function reset(item,mode='fiche'){state={id:item.id,mode,index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};render();}

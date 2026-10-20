@@ -252,6 +252,9 @@ jobs:
       - name: Tester intégration de la coque Pathologies inactive
         run: node tests/pathologies-app-integration-v1.mjs
 
+      - name: Vérifier la vraie barre du bas avec Pathologies et Planning
+        run: node tests/pathologies-visible-v87-bottom-nav.mjs
+
       - name: Vérifier les six planches Pathologies et les vrais cours associés
         run: node tests/pathologies-p1-poster-pages.mjs
 

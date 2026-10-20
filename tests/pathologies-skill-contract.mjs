@@ -42,8 +42,8 @@ for(const [label,pattern] of [
 assert.match(workflow,/node tests\/pathologies-skill-contract\.mjs/,'Contrat absent de la CI');
 console.log('✅ Skill et chartes Pathologies : modèle BPCO, 100 % schémas infographiés, contrôles et aucune publication prématurée');
 
-assert.ok(read('index.html').includes('./pathologies-module-v1.js?v=8404'),'Moteur non chargé dans la coque');
-assert.ok(read('index.html').includes('./pathologies-boot-v1.js?v=8404'),'Verrou d’activation absent de la coque');
+assert.ok(read('index.html').includes('./pathologies-module-v1.js?v=8405'),'Moteur non chargé dans la coque');
+assert.ok(read('index.html').includes('./pathologies-boot-v1.js?v=8405'),'Verrou d’activation absent de la coque');
 assert.ok(read('sw.js').includes("'./pathologies-module-v1.js'")&&read('sw.js').includes("'./pathologies-boot-v1.js'"),'Scripts inactifs non précachés hors ligne');
 assert.ok(!read('index.html').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans index.html');
 assert.ok(!read('sw.js').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans le service worker');

@@ -83,8 +83,8 @@ assert.equal(result.errors.length,1);
 // Le montage DOM du catalogue approuvé sera testé en navigateur lors de son activation contrôlée.
 console.log('✅ Pathologies v1 : schéma pédagogique, sources, validation publication, correction contextualisée, non-diffusion');
 
-assert.ok(read('index.html').includes('./pathologies-module-v1.js?v=8404'),'Moteur non chargé dans la coque');
-assert.ok(read('index.html').includes('./pathologies-boot-v1.js?v=8404'),'Verrou d’activation absent de la coque');
+assert.ok(read('index.html').includes('./pathologies-module-v1.js?v=8405'),'Moteur non chargé dans la coque');
+assert.ok(read('index.html').includes('./pathologies-boot-v1.js?v=8405'),'Verrou d’activation absent de la coque');
 assert.ok(read('sw.js').includes("'./pathologies-module-v1.js'")&&read('sw.js').includes("'./pathologies-boot-v1.js'"),'Scripts inactifs non précachés hors ligne');
 assert.ok(!read('index.html').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans index.html');
 assert.ok(!read('sw.js').includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Catalogue médical ne doit pas être déclaré dans le service worker');

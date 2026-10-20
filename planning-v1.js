@@ -122,7 +122,7 @@ if(!WEEKS.some(w=>w.id===selectedWeek))selectedWeek=(weekForDate(todayISO())||WE
 function css(){
  if($('planningPromoCss'))return;
  const s=document.createElement('style');s.id='planningPromoCss';s.textContent=`
- #v87Nav.vplanning-nav{grid-template-columns:repeat(6,1fr)}
+ #v87Nav.vplanning-nav{grid-template-columns:repeat(7,minmax(0,1fr))}
  #planningPromo{padding:8px 0 132px}
  .vp-toolbar,.vp-card{border:1px solid var(--line);background:var(--card);border-radius:19px;box-shadow:0 7px 22px rgba(55,39,94,.05)}
  .vp-toolbar{padding:10px 12px;margin-bottom:10px;display:grid;gap:8px}
