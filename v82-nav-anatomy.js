@@ -172,9 +172,9 @@ function validReproLink(raw){
 function reproLink(){try{return validReproLink(localStorage.getItem(REPRO_REVIEW_KEY)||'')}catch(e){return ''}}
 const REPRO_PREVIEW_ASSETS={
  R02:{src:'./assets/anatomy/reproductive/review/R02.jpg',note:'Albuginée non légendée ; pointages microscopiques à contrôler'},
- R03:{src:'./assets/anatomy/reproductive/review/R03.jpg',note:'Trajet des conduits et ampoule déférentielle à vérifier'},
+ R03:{src:'./assets/anatomy/reproductive/review/R03.jpg',note:'Vésicule séminale repointée, ampoule déférentielle non individualisée. ⚠️ Sens des flèches rouges du trajet à vérifier'},
  R04:{src:'./assets/anatomy/reproductive/review/R04.jpg',note:'Vue frontale uniquement ; vessie et rectum non représentés'},
- R05:{src:'./assets/anatomy/reproductive/review/R05.jpg',note:'Ancien repère « médulla ovarienne » neutralisé ; pointage à vérifier'},
+ R05:{src:'./assets/anatomy/reproductive/review/R05.jpg',note:'Cortex et médulla repointés sur export Canva ; portion intramurale non légendée, revue médicale requise'},
  R06:{src:'./assets/anatomy/reproductive/review/R06.jpg',note:'Couches basale et fonctionnelle de l’endomètre non distinguées'},
  R07:{src:'./assets/anatomy/reproductive/review/R07.jpg',note:'Vestibule non légendé et repères externes à vérifier'}
 };

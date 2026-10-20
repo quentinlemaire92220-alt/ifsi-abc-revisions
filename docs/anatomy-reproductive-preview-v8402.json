@@ -33,13 +33,18 @@
       "courseId": "systeme_reproducteur",
       "title": "Voies spermatiques et glandes annexes",
       "path": "assets/anatomy/reproductive/review/R03.jpg",
-      "width": 1311,
-      "height": 1986,
+      "width": 1489,
+      "height": 2106,
       "format": "jpeg",
-      "sha256": "ca2806994d4872ce77b062aee93966283f4eb8ff37aa0706ae578b13dbef5c79",
-      "warning": "Trajet des conduits et ampoule déférentielle à vérifier",
+      "sha256": "c53f39594fba856f5a38d65957aacd7dc71b8a24ded5e7d5e4024332167a95e8",
+      "warning": "Vésicule séminale repointée sur la glande ; ampoule déférentielle non individualisée. Sens des flèches rouges du trajet spermatique à vérifier.",
       "isApproved": false,
-      "wasUserReviewedVisually": true
+      "wasUserReviewedVisually": true,
+      "latestSource": "Atlas médical IFSI ABC (1).pdf, page 1, export Canva du 20/10/2026",
+      "lastRenderedAt": "2026-10-20",
+      "graphicValidation": "user-approved-draft-layout",
+      "clinicalReview": "PENDING",
+      "issueNoted": "L'export PDF 20 octobre comporte toujours des flèches rouges descendant localement le long du canal déférent ; ne pas l'utiliser comme schéma validé du sens de circulation."
     },
     {
       "id": "R04",
@@ -59,13 +64,18 @@
       "courseId": "systeme_reproducteur",
       "title": "Ovaire et trompe utérine",
       "path": "assets/anatomy/reproductive/review/R05.jpg",
-      "width": 1311,
-      "height": 1986,
+      "width": 1489,
+      "height": 2106,
       "format": "jpeg",
-      "sha256": "bb49d033b266f9fb31f641068b23d12ca8fa320c7b77beeacfed799b04d09f9e",
-      "warning": "Pointage médulla ovarienne neutralisé, ancien pointage possiblement faux",
+      "sha256": "4bde13b6c977f3b8f9ca48cd539fe54c0ef8a72d1a3a264d41e7f5c4a5b087f8",
+      "warning": "Cortex et médulla ovarienne repointés en revue Canva ; portion intramurale de la trompe non légendée. Contrôle anatomique final nécessaire.",
       "isApproved": false,
-      "wasUserReviewedVisually": true
+      "wasUserReviewedVisually": true,
+      "latestSource": "Atlas médical IFSI ABC (1).pdf, page 2, export Canva du 20/10/2026",
+      "lastRenderedAt": "2026-10-20",
+      "graphicValidation": "user-approved-draft-layout",
+      "clinicalReview": "PENDING",
+      "issueNoted": "La flèche cortex pointe la périphérie de l'ovaire; la flèche médulla traverse la région centrale vascularisée. Inspection médicale et droits encore à tracer."
     },
     {
       "id": "R06",
@@ -93,5 +103,17 @@
       "isApproved": false,
       "wasUserReviewedVisually": true
     }
-  ]
+  ],
+  "lastAssetRefresh": {
+    "version": "8.30.104",
+    "boardIds": [
+      "R03",
+      "R05"
+    ],
+    "originalRelease": "8.30.102",
+    "source": "PDF Canva corrigé et fourni par l’utilisateur, deux pages",
+    "quality": "A4 rendu 180 ppp; les illustrations sources matricielles ne gagnent pas de détail",
+    "rights": "provenance/licence des images importées dans Canva à confirmer",
+    "medicalApproval": false
+  }
 }
