@@ -23,7 +23,7 @@ for(const c of manifest.courses){
  for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
  // Les cours anciens sont conservés ; les deux fiches sont exigées pour les nouveaux cours et parties.
- if(c.infographicSheetResourceId)validateDualSheetDelivery(c.courseId,c,sheets);
+ if(c.infographicSheetResourceId||c.revisionSheetMode==='single_with_complete_boards')validateDualSheetDelivery(c.courseId,c,sheets);
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  validateSheetSource(c.courseId,c,sheet);
@@ -35,14 +35,28 @@ for(const c of manifest.courses){
  assert.equal(new Set(bank.map(q=>q.id)).size,bank.length,c.courseId+': ID de question dupliqué entre parties');
  assert.equal(bank.length,c.qcmCount,'Banque QCM tronquée');
  assert.equal(live.length,bank.length,'Banque perdue dans le navigateur');
+ const deliveredQuestionIds=c.deliveryQuestionScope==='declared_parts'
+  ?new Set((c.partDeliveries||[]).flatMap(p=>p.qcmQuestionIds||[])):null;
  for(const q of bank){
+  const actual=live.find(x=>x.id===q.id);
+  assert.ok(actual,q.id+': question perdue');
+  assert.deepEqual(JSON.parse(JSON.stringify(actual.answers)),q.answers,q.id+': correction divergente');
+  assert.deepEqual(JSON.parse(JSON.stringify(actual.choices)),q.choices,q.id+': choix divergents');
+  // Le contrat actuel porte sur les nouvelles parties ; le snapshot historique
+  // est conservé à l'identique et reste soumis au contrôle des choix/corrections.
+  if(deliveredQuestionIds&&!deliveredQuestionIds.has(q.id))continue;
   assert.ok(q.answers.length>=1&&q.answers.length<=3,q.id+': réponses hors charte');
   assert.ok(['easy','medium','hard'].includes(q.difficulty),q.id+': niveau absent');
   assert.ok(q.theme&&q.explanation.length>25,q.id+': thème/corrigé absent');
-  const actual=live.find(x=>x.id===q.id);
-  assert.deepEqual(JSON.parse(JSON.stringify(actual.answers)),q.answers,q.id+': correction divergente');
  }
- const cards=deck.filter(x=>x.courseId===c.courseId && !String(x.id).startsWith('voc:')); // Les cartes de livraison sont distinctes des cartes de vocabulaire générées.
+ let cards=deck.filter(x=>x.courseId===c.courseId && !String(x.id).startsWith('voc:')); // Les cartes de livraison sont distinctes des cartes de vocabulaire générées.
+ if(c.deliveryQuestionScope==='declared_parts'){
+  assert.equal(c.revisionSheetMode,'single_with_complete_boards','Portée partielle sans format de livraison explicite');
+  assert.ok(c.partDeliveries?.length,'Parties de livraison absentes');
+  const delivered=new Set(c.partDeliveries.flatMap(p=>p.qcmQuestionIds||[]));
+  assert.ok(delivered.size,'Questions de partie non déclarées');
+  cards=cards.filter(card=>delivered.has(card.qid));
+ }
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
  assert.ok(c.flashcardDriveId,'Export Flashcards absent');
  for(const card of cards){

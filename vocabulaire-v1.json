@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-20",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -2047,9 +2047,13 @@
       "etymologie": "em- (dans) + -pathie (ressenti, souffrance) ; compréhension du vécu d'autrui.",
       "courseIds": [
         "psychologie_sante",
-        "competences_psychosociales"
+        "competences_psychosociales",
+        "ethique_infirmiere"
       ],
-      "sourceType": "reference_pedagogique"
+      "sourceType": "reference_pedagogique",
+      "qcmQuestionIdsByCourse": {
+        "ethique_infirmiere": "care_p02_vocab_007"
+      }
     },
     {
       "id": "alliance-therapeutique",
@@ -4810,6 +4814,489 @@
         "infections_neuro_meningees"
       ],
       "sourceType": "revision_captures"
+    },
+    {
+      "id": "care_care",
+      "term": "Care",
+      "definition": "Souci et activité de prendre soin, attentifs aux besoins et aux relations.",
+      "etymologie": "Terme anglais conservé pour distinguer ce champ de la seule guérison.",
+      "distinction": "Ne se réduit pas à une intention gentille.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_001",
+      "flashcard": {
+        "front": "Que signifie « Care » ?",
+        "answers": [
+          "Souci et activité de prendre soin, attentifs aux besoins et aux relations."
+        ],
+        "explanation": "Ne se réduit pas à une intention gentille.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_cure",
+      "term": "Cure",
+      "definition": "Traitement et visée de guérison dans la distinction avec le care.",
+      "etymologie": "Terme anglais lié à traiter ou guérir.",
+      "distinction": "Care et cure peuvent se combiner.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_002",
+      "flashcard": {
+        "front": "Que signifie « Cure » ?",
+        "answers": [
+          "Traitement et visée de guérison dans la distinction avec le care."
+        ],
+        "explanation": "Care et cure peuvent se combiner.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_dilemme",
+      "term": "Dilemme éthique",
+      "definition": "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension.",
+      "etymologie": "Dilemme désigne une alternative problématique.",
+      "distinction": "Ce n’est pas simplement un manque de connaissance technique.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_003",
+      "flashcard": {
+        "front": "Que signifie « Dilemme éthique » ?",
+        "answers": [
+          "Situation dans laquelle plusieurs options moralement importantes paraissent entrer en tension."
+        ],
+        "explanation": "Ce n’est pas simplement un manque de connaissance technique.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_impartialite",
+      "term": "Impartialité",
+      "definition": "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue.",
+      "etymologie": "Impartial signifie sans parti pris injustifié.",
+      "distinction": "L’attention à la singularité ne signifie pas favoritisme automatique.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_004",
+      "flashcard": {
+        "front": "Que signifie « Impartialité » ?",
+        "answers": [
+          "Exigence de ne pas favoriser arbitrairement une personne ou un point de vue."
+        ],
+        "explanation": "L’attention à la singularité ne signifie pas favoritisme automatique.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_narration",
+      "term": "Narration",
+      "definition": "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière.",
+      "etymologie": "Narration renvoie au fait de raconter.",
+      "distinction": "Un récit ne dispense pas de vérifier les faits.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_005",
+      "flashcard": {
+        "front": "Que signifie « Narration » ?",
+        "answers": [
+          "Mise en récit de l’histoire et des relations qui permet de comprendre une situation singulière."
+        ],
+        "explanation": "Un récit ne dispense pas de vérifier les faits.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_responsabilite_relationnelle",
+      "term": "Responsabilité relationnelle",
+      "definition": "Devoir ressenti de répondre aux besoins d’autrui dans une relation.",
+      "etymologie": "Répondre est au cœur du sens relationnel retenu.",
+      "distinction": "Distinct de la seule responsabilité pour les conséquences de ses actes.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_006",
+      "flashcard": {
+        "front": "Que signifie « Responsabilité relationnelle » ?",
+        "answers": [
+          "Devoir ressenti de répondre aux besoins d’autrui dans une relation."
+        ],
+        "explanation": "Distinct de la seule responsabilité pour les conséquences de ses actes.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_identification",
+      "term": "Identification",
+      "definition": "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue.",
+      "etymologie": "Identifier ici signifie se reconnaître dans la place de quelqu’un.",
+      "distinction": "Peut éclairer ou biaiser la lecture d’une situation.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_008",
+      "flashcard": {
+        "front": "Que signifie « Identification » ?",
+        "answers": [
+          "Processus par lequel on se reconnaît dans un acteur et adopte spontanément une part de son point de vue."
+        ],
+        "explanation": "Peut éclairer ou biaiser la lecture d’une situation.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_vulnerabilite",
+      "term": "Vulnérabilité",
+      "definition": "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien.",
+      "etymologie": "Du latin vulnerare, blesser.",
+      "distinction": "Condition commune dont les formes et l’intensité varient.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_009",
+      "flashcard": {
+        "front": "Que signifie « Vulnérabilité » ?",
+        "answers": [
+          "Possibilité d’être atteint, blessé ou fragilisé et d’avoir besoin d’un soutien."
+        ],
+        "explanation": "Condition commune dont les formes et l’intensité varient.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_interdependance",
+      "term": "Interdépendance",
+      "definition": "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible.",
+      "etymologie": "Inter indique la réciprocité entre personnes.",
+      "distinction": "Compatible avec une autonomie soutenue par des appuis.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_010",
+      "flashcard": {
+        "front": "Que signifie « Interdépendance » ?",
+        "answers": [
+          "Ensemble des dépendances réciproques par lesquelles les personnes rendent leur vie possible."
+        ],
+        "explanation": "Compatible avec une autonomie soutenue par des appuis.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_invisibilisation",
+      "term": "Invisibilisation du care",
+      "definition": "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus.",
+      "etymologie": "Rendre invisible ne signifie pas rendre inexistant.",
+      "distinction": "La faible visibilité ne prouve pas une faible valeur.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_011",
+      "flashcard": {
+        "front": "Que signifie « Invisibilisation du care » ?",
+        "answers": [
+          "Processus par lequel le travail et les compétences qui soutiennent la vie deviennent peu reconnus."
+        ],
+        "explanation": "La faible visibilité ne prouve pas une faible valeur.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_intersectionnalite",
+      "term": "Intersectionnalité",
+      "definition": "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation.",
+      "etymologie": "L’image de l’intersection souligne le croisement des rapports sociaux.",
+      "distinction": "Ce n’est pas l’affirmation d’une expérience identique pour tous les membres d’un groupe.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_012",
+      "flashcard": {
+        "front": "Que signifie « Intersectionnalité » ?",
+        "answers": [
+          "Analyse de l’articulation de plusieurs rapports d’inégalité dans une même situation."
+        ],
+        "explanation": "Ce n’est pas l’affirmation d’une expérience identique pour tous les membres d’un groupe.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_tact",
+      "term": "Tact",
+      "definition": "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance.",
+      "etymologie": "Employé ici au sens de délicatesse relationnelle.",
+      "distinction": "Ne justifie ni manipulation ni refus ignoré.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_013",
+      "flashcard": {
+        "front": "Que signifie « Tact » ?",
+        "answers": [
+          "Manière ajustée d’aider en évitant d’accentuer inutilement la honte, l’humiliation ou la dépendance."
+        ],
+        "explanation": "Ne justifie ni manipulation ni refus ignoré.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_privileges",
+      "term": "Irresponsabilité des privilégiés",
+      "definition": "Mécanisme par lequel certains bénéficient du care et en délèguent le travail tout en méconnaissant leur dépendance et leurs responsabilités.",
+      "etymologie": "La formule nomme une position dans l’organisation sociale du care.",
+      "distinction": "La critique ne condamne pas toute coopération ou délégation.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_014",
+      "flashcard": {
+        "front": "Que signifie « Irresponsabilité des privilégiés » ?",
+        "answers": [
+          "Mécanisme par lequel certains bénéficient du care et en délèguent le travail tout en méconnaissant leur dépendance et leurs responsabilités."
+        ],
+        "explanation": "La critique ne condamne pas toute coopération ou délégation.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_fragmentation",
+      "term": "Fragmentation du care",
+      "definition": "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin.",
+      "etymologie": "Fragmenter signifie séparer en parties.",
+      "distinction": "Toute répartition des tâches n’est pas une fragmentation problématique.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_015",
+      "flashcard": {
+        "front": "Que signifie « Fragmentation du care » ?",
+        "answers": [
+          "Rupture excessive des liens entre reconnaissance du besoin, organisation, soin concret et réception du soin."
+        ],
+        "explanation": "Toute répartition des tâches n’est pas une fragmentation problématique.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_reactivite",
+      "term": "Réactivité dans le care",
+      "definition": "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation.",
+      "etymologie": "Qualité associée au care receiving.",
+      "distinction": "Ne signifie pas rapidité seule ni gratitude obligatoire.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_016",
+      "flashcard": {
+        "front": "Que signifie « Réactivité dans le care » ?",
+        "answers": [
+          "Attention portée à la réponse de la personne qui reçoit le soin et à ce qu’elle apprend sur la situation."
+        ],
+        "explanation": "Ne signifie pas rapidité seule ni gratitude obligatoire.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_autonomie",
+      "term": "Autonomie",
+      "definition": "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne.",
+      "etymologie": "Autos, soi-même, et nomos, règle.",
+      "distinction": "Ne se confond pas avec l’indépendance fonctionnelle.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_017",
+      "flashcard": {
+        "front": "Que signifie « Autonomie » ?",
+        "answers": [
+          "Possibilité de décider pour soi, en tenant compte de l’expression, des souhaits, des refus et du discernement de la personne."
+        ],
+        "explanation": "Ne se confond pas avec l’indépendance fonctionnelle.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_bienfaisance",
+      "term": "Bienfaisance",
+      "definition": "Recherche de l’intérêt et du bien-être de la personne accompagnée.",
+      "etymologie": "Faire du bien au sens d’une intention et d’une action orientées vers le bénéfice.",
+      "distinction": "Une bonne intention ne garantit pas à elle seule un bénéfice réel.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_018",
+      "flashcard": {
+        "front": "Que signifie « Bienfaisance » ?",
+        "answers": [
+          "Recherche de l’intérêt et du bien-être de la personne accompagnée."
+        ],
+        "explanation": "Une bonne intention ne garantit pas à elle seule un bénéfice réel.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_non_malfaisance",
+      "term": "Non-malfaisance",
+      "definition": "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement.",
+      "etymologie": "Non renvoie à l’évitement de l’action nuisible.",
+      "distinction": "N’impose pas que toute intervention soit dépourvue de tout risque.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_019",
+      "flashcard": {
+        "front": "Que signifie « Non-malfaisance » ?",
+        "answers": [
+          "Exigence de ne pas nuire et de prévenir les préjudices dans l’accompagnement."
+        ],
+        "explanation": "N’impose pas que toute intervention soit dépourvue de tout risque.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_justice",
+      "term": "Justice",
+      "definition": "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources.",
+      "etymologie": "Dans l’analyse bioéthique, la justice concerne la répartition et le traitement équitable.",
+      "distinction": "L’équité peut nécessiter des moyens adaptés à des besoins différents.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_020",
+      "flashcard": {
+        "front": "Que signifie « Justice » ?",
+        "answers": [
+          "Exigence d’égalité ou d’équité dans le traitement des personnes et l’accès aux soins et ressources."
+        ],
+        "explanation": "L’équité peut nécessiter des moyens adaptés à des besoins différents.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_consentement",
+      "term": "Consentement",
+      "definition": "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension.",
+      "etymologie": "Consentir signifie être d’accord.",
+      "distinction": "Ne se déduit pas à lui seul du silence, d’un diagnostic ou de l’accord d’un proche.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_021",
+      "flashcard": {
+        "front": "Que signifie « Consentement » ?",
+        "answers": [
+          "Accord de la personne à une situation ou à un acte donné, à rechercher en tenant compte de son expression et de sa compréhension."
+        ],
+        "explanation": "Ne se déduit pas à lui seul du silence, d’un diagnostic ou de l’accord d’un proche.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_loyaute",
+      "term": "Conflit de loyauté",
+      "definition": "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes.",
+      "etymologie": "La loyauté renvoie à une fidélité dans la relation.",
+      "distinction": "Une tension de loyauté ne prouve pas automatiquement une faute.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_022",
+      "flashcard": {
+        "front": "Que signifie « Conflit de loyauté » ?",
+        "answers": [
+          "Tension entre des devoirs de fidélité ou de confiance ressentis envers plusieurs personnes."
+        ],
+        "explanation": "Une tension de loyauté ne prouve pas automatiquement une faute.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_deliberation",
+      "term": "Délibération éthique",
+      "definition": "Examen argumenté et partagé d’une situation, de ses incertitudes et des options possibles.",
+      "etymologie": "Délibérer signifie discuter et peser les raisons d’agir.",
+      "distinction": "Ce n’est ni un vote sans arguments ni l’application d’une recette.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_023",
+      "flashcard": {
+        "front": "Que signifie « Délibération éthique » ?",
+        "answers": [
+          "Examen argumenté et partagé d’une situation, de ses incertitudes et des options possibles."
+        ],
+        "explanation": "Ce n’est ni un vote sans arguments ni l’application d’une recette.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "care_ehpad",
+      "term": "EHPAD",
+      "definition": "Établissement d’hébergement pour personnes âgées dépendantes.",
+      "etymologie": "Sigle construit à partir du nom de l’établissement.",
+      "distinction": "Un lieu de vie n’efface pas les besoins d’intimité et de relations.",
+      "theme": "Éthiques du care",
+      "courseIds": [
+        "ethique_infirmiere"
+      ],
+      "qcmQuestionId": "care_p02_vocab_024",
+      "flashcard": {
+        "front": "Que signifie « EHPAD » ?",
+        "answers": [
+          "Établissement d’hébergement pour personnes âgées dépendantes."
+        ],
+        "explanation": "Un lieu de vie n’efface pas les besoins d’intimité et de relations.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "reference_pedagogique"
     }
   ]
 }
