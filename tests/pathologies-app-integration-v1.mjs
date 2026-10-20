@@ -8,13 +8,13 @@ const sw=read('sw.js');
 const engineCode=read('pathologies-module-v1.js');
 const bootCode=read('pathologies-boot-v1.js');
 
-const e='<script src="./pathologies-module-v1.js?v=8404"></script>';
-const b='<script src="./pathologies-boot-v1.js?v=8404"></script>';
+const e='<script src="./pathologies-module-v1.js?v=8405"></script>';
+const b='<script src="./pathologies-boot-v1.js?v=8405"></script>';
 assert.ok(html.includes(e),'Engine script is not loaded in app');
 assert.ok(html.includes(b),'Approved-only bootstrap not loaded');
 assert.ok(html.indexOf(e)<html.indexOf(b),'Engine must load before bootstrap');
-assert.equal((html.match(/pathologies-module-v1\.js\?v=8404/g)||[]).length,1,'Engine loaded twice');
-assert.equal((html.match(/pathologies-boot-v1\.js\?v=8404/g)||[]).length,1,'Bootstrap loaded twice');
+assert.equal((html.match(/pathologies-module-v1\.js\?v=8405/g)||[]).length,1,'Engine loaded twice');
+assert.equal((html.match(/pathologies-boot-v1\.js\?v=8405/g)||[]).length,1,'Bootstrap loaded twice');
 assert.ok(sw.includes("'./pathologies-module-v1.js'")&&sw.includes("'./pathologies-boot-v1.js'"),'PWA does not precache the shell');
 assert.ok(!html.includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Clinical content accidentally assigned in HTML');
 assert.ok(!sw.includes('IFSI_PATHOLOGIES_PUBLISHED_BUNDLE'),'Clinical content accidentally assigned in service worker');
