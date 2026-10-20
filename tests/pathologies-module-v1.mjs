@@ -42,7 +42,7 @@ assert.ok(errors({...valid,visuals:[{...valid.visuals[0],sourceIds:['inconnue']}
 assert.ok(errors({...valid,visualAudit:{...valid.visualAudit,diagramCount:2}}).some(e=>e.includes('Audit')), 'Inventaire incomplet autorisé');
 assert.ok(errors({...valid,visualAudit:{...valid.visualAudit,allPdfPagesChecked:false}}).some(e=>e.includes('Audit')), 'Contrôle PDF incomplet autorisé');
 assert.ok(errors({...valid,visualAudit:{...valid.visualAudit,clinicalContentReviewed:false}}).some(e=>e.includes('Audit')), 'Validation clinique incomplète autorisée');
-assert.ok(src.includes('class="patho-figure"')&&src.includes('esc(v.url)'),'Illustrations non intégrées dans les sections');
+assert.ok(src.includes('class="patho-figure"')&&src.includes('esc(v?.url)'),'Illustrations non intégrées dans les sections');
 
 const q=valid.qcm[0];
 const correct=engine.evaluate(q,[1]);
