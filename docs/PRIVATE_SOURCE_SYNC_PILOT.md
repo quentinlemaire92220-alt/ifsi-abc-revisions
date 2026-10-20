@@ -17,8 +17,8 @@
 1. Le compte propriétaire Supabase Auth a déjà été créé et confirmé. **Aucune configuration SMTP ni modification du modèle Magic Link n'est requise.** La Site URL et l'URL de redirection autorisée doivent pointer vers la version publique GitHub Pages. Le bouton privé demande un lien unique par e-mail avec `create_user:false` ; aucune inscription anonyme n'est possible. Vérifier la réception du lien standard et son retour sur le bon domaine avant toute mise en ligne.
 2. Le compte propriétaire existant dispose d’un UUID confirmé par Supabase ; le configurer via les **Edge Function Secrets** sous IFSI_SOURCE_OWNER_UID (jamais dans GitHub, le code HTML ou le lien de connexion).
 3. Créer un compte de service Google Cloud dédié et activer Sheets API. Partager uniquement le registre privé avec ce compte de service en Éditeur, sans changer la visibilité publique. Enregistrer le JSON du compte dans Supabase Secrets sous IFSI_GOOGLE_SERVICE_ACCOUNT_JSON. Ne jamais partager ce secret dans ChatGPT ni GitHub.
-4. Enregistrer IFSI_SOURCE_SHEET_ID dans Supabase Secrets et IFSI_SOURCES_ALLOWED_ORIGIN avec l'origine HTTP exacte du GitHub Pages, sans chemin ou barre finale. SUPABASE_URL et SUPABASE_ANON_KEY sont fournis par Supabase.
-5. Déployer explicitement la fonction ifsi-private-sources avec verify_jwt=true **seulement après configuration**. Sur une entrée de test, contrôler accès propriétaire, refus anonyme, refus autre compte, changement D/E/F, mauvais identifiant, état invalide et conflit 409.
+4. Enregistrer IFSI_SOURCE_SHEET_ID dans Supabase Secrets. L'origine autorisée est limitée dans le code serveur à https://quentinlemaire92220-alt.github.io ; le secret historique IFSI_SOURCES_ALLOWED_ORIGIN peut rester enregistré mais n'est plus utilisé pour éviter les erreurs de chemin/barre finale. SUPABASE_URL et SUPABASE_ANON_KEY sont fournis par Supabase.
+5. Déployer la fonction ifsi-private-sources avec **verify_jwt=false** pour permettre au navigateur de réaliser le préflight OPTIONS sans JWT. L'authentification de chaque GET/PATCH est **obligatoirement réalisée dans le code serveur** via Supabase Auth /auth/v1/user, puis par comparaison exacte au UUID du propriétaire. Les requêtes sans origine GitHub Pages ou sans compte autorisé sont refusées. Sur une entrée de test, contrôler accès propriétaire, refus anonyme, refus autre compte, changement D/E/F, mauvais identifiant, état invalide et conflit 409.
 6. Exécuter les TNR et revue de sécurité, vérifier fonctionnement PWA, déconnexion et gestion d'erreurs. Ne fusionner/publier qu'avec les secrets prêts et les vérifications réelles réussies.
 
 ## Confidentialité
@@ -36,3 +36,7 @@
 - **Tests réseau et droits réels à réaliser après configuration** ; des tests statiques verts ne valident pas l'intégration Google.
 
 Le connecteur Google Drive ChatGPT n'est pas un jeton d'authentification serveur réutilisable par GitHub Pages.
+
+## Incident du pilote (20 octobre 2026)
+
+Le premier Magic Link a ouvert la page, mais les logs Supabase ont montré `OPTIONS | 403` au moment du chargement (navigateur : `Failed to fetch`). Le serveur doit **répondre à OPTIONS sans authentification**, mais ne doit jamais exposer les données sans contrôle Supabase Auth sur GET/PATCH. La correction CORS utilise une origine exacte et un mode verify_jwt=false (vérification du JWT utilisateur dans la fonction). Le succès d'une CI seule ne remplace pas un test d'accès anonyme/refus d'autres comptes et une lecture effective de Sheets.
