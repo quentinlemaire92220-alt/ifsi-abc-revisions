@@ -1,5 +1,16 @@
 # Livraison d’un cours après autocontrôle des livrables
 
+
+## Norme de livrables à retenir pour les futurs cours (pilote validé 20/10/2026)
+
+**Nouvelle demande propriétaire : pack minimal systématique =** fiche de révision complète avec infographies intégrées au besoin ; **une page complète infographiée de synthèse** (pas une deuxième fiche exhaustive sauf demande explicite) ; QCM A–E (1–3 réponses exactes) avec corrigés ; flashcards ; planches anatomiques seulement si nécessaires et non existantes. Les modèles graphiques sont les cours **Système cardiovasculaire / Système respiratoire**.
+
+Les dossiers historiques 01–08 et 99 peuvent être conservés sans forcer leur remplissage. Les vocaux MP3, scripts TXT, vocabulaire séparé, packs d'infographies et exports n'appartiennent plus au kit obligatoire ; produire uniquement si demandés. Pour 05 - Vocaux ou 08 - Scripts, la présence du dossier ne signifie pas MP3 attendu ni contenu manquant.
+
+**Processus économe** : ChatGPT classique audite, produit et contrôle les fichiers possibles, classe en Drive ; Work est un outil ponctuel de renfort pour travaux lourds et non un passage obligatoire de chaque nouveau cours. Réutiliser les images et PDF déjà validés.
+
+**Point d'intégration :** les règles techniques historiques du manifeste, du dualSheetCoverage, des hashes et de la CI peuvent toujours exiger une seconde fiche complète. Tant que ces attentes n'ont pas été mises à jour avec des tests contrôlés, ne pas publier une page-synthèse comme une fiche complète, ne pas forcer une validation de manifeste, et signaler explicitement l'adaptation technique nécessaire. Toute publication suit `docs/PUBLICATION_APPROVAL.md`, sans dérogation implicite.
+
 Le lancement d'un package complet déclenche l'exécution de ce processus pour chaque nouveau cours et chaque nouvelle partie, avec autocontrôle des livrables et sans validation graphique intermédiaire systématique. Le modèle de classement est le cours Système respiratoire. Cette procédure complète les chartes pédagogiques sans modifier les supports officiels.
 
 ## Dossiers à créer ou réutiliser
