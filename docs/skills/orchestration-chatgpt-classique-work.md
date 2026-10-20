@@ -6,6 +6,9 @@ Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige dé
 
 ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
 
+
+**CONTRÔLE GRAPHIQUE OBLIGATOIRE :** consulter `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`. Pour chaque nouveau pack, produire deux évaluations MANUELLES indépendantes : `REVISION_TEXT_FIRST` (paragraphes et tableaux majoritaires, illustrations ponctuelles et justifiées) et `INFOGRAPHIC_VISUAL_FIRST` (grand schéma anatomique, flèches exactes, zooms et légendes, pas une grille de textes). Aucune validation par simple présence d'image, nombre de pages ou succès TNR ; maquettes non conformes bloquées, sans publication.
+
 # Skill IFSI ABC — relais ChatGPT classique ↔ Work (v1.0)
 
 
@@ -15,9 +18,9 @@ ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO pr
 
 **Work n'est sollicité que ponctuellement** pour une opération non satisfaisante dans ChatGPT classique (assemblage complexe, PDF rendu insatisfaisant, script lourd, opérations Drive en masse, modification de l'application ou TNR complexes). Fournir un cahier des charges ciblé et réutiliser tous les éléments validés. Pas de traitement systématique d'un cours complet dans Work.
 
-**Livrables par défaut :** (1) fiche classique **complète** avec texte conservé et schémas infographiés **au besoin** ; (2) **un cours complet infographié multipage**, distincte de la fiche, modèle cardio/respiratoire ; (3) QCM A-E, 1–3 bonnes réponses, corrigé argumenté ; (4) flashcards questions/réponses autonomes avec réponse masquée jusqu'au retournement dans l'application ; (5) planches anatomiques uniquement si besoin non couvert par la bibliothèque. Si une synthèse en une page est trop dense, proposer extension ou choix pédagogique à valider, jamais supprimer des nuances importantes en silence.
+**Livrables par défaut :** (1) fiche classique **complète** avec texte conservé et schémas infographiés **au besoin** ; (2) **un cours complet infographié multipage**, distinct de la fiche, modèle cardio/respiratoire ; (3) QCM A-E, 1–3 bonnes réponses, corrigé argumenté ; (4) flashcards questions/réponses autonomes avec réponse masquée jusqu'au retournement dans l'application ; (5) planches anatomiques uniquement si besoin non couvert par la bibliothèque. Un cours complet infographié couvre toutes les notions sur autant de planches que nécessaire ; aucune contrainte d'une page ne s'applique au document final.
 
-Vocaux, vocabulaire séparé, exports systématiques et second cours complet en planches ne sont **plus obligatoires** pour les nouveaux cours. Leur skill conserve sa validité lorsqu'ils sont expressément demandés.
+Vocaux, vocabulaire séparé et exports individuels systématiques ne sont **plus obligatoires** ; le second cours infographié exhaustif RESTE obligatoire pour les nouveaux cours. Leur skill conserve sa validité lorsqu'ils sont expressément demandés.
 
 Conserver les trois portes : GO audit → GO production privée → contrôle et GO publication explicite. Toute exigence technique legacy incompatible avec le nouveau format reste BLOQUANTE pour la publication tant qu'une PR de migration dédiée n'est pas passée aux TNR.
 
