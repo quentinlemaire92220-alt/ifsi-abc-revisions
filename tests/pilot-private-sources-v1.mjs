@@ -1,0 +1,40 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+
+const html=fs.readFileSync('pilote-sources-privees.html','utf8');
+const js=fs.readFileSync('pilote-sources-privees.js','utf8');
+const actualName='pilote-sources-privees.html';
+assert.ok(html.includes('pilote-sources-privees.js'),'Module pilote non inclus');
+assert.equal((html.match(/<script /g)||[]).length,1,'Scripts additionnels inattendus');
+assert.ok(html.includes("default-src 'none'"),'CSP insuffisante');
+assert.ok(html.includes("script-src 'self'"),'Script inline non autorisé');
+assert.ok(html.includes('<meta name="referrer" content="no-referrer">'),'Ne jamais envoyer le jeton en Referer');
+assert.ok(html.includes('noindex,nofollow'),'Page pilote non indexable');
+assert.ok(js.includes("create_user:false"),'Inscription automatique interdite');
+assert.ok(!js.includes("create_user:true"),'Inscription publique autorisée');
+assert.ok(js.includes('history.replaceState(null,"",location.pathname+location.search)'),'Fragment de connexion à purger');
+assert.ok(!/\b(localStorage|sessionStorage)\b/.test(js),'Jeton non persistant requis');
+assert.ok(js.includes('return fetch(API,')&&js.includes('Authorization:"Bearer "+accessToken'),'JWT obligatoire pour API privée');
+assert.ok(js.includes('expected,next')&&js.includes('r.status===409'),'Gestion de conflits obligatoire');
+assert.ok(!js.includes('SUPABASE_SERVICE_ROLE_KEY')&&!js.includes('IFSI_SOURCE_SHEET_ID')&&!js.includes('IFSI_GOOGLE_SERVICE_ACCOUNT_JSON'),'Fuite de configuration serveur');
+assert.ok(!/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]{15,}/.test(js),'Identifiant privé de registre embarqué');
+assert.ok(js.includes(actualName),'Retour Magic Link vers page de test');
+assert.ok(js.includes('textContent='),'Échapper les valeurs privées renvoyées');
+const fake={hash:'#access_token=aaa.bbb.ccc&refresh_token=NOT_TO_KEEP&type=magiclink',pathname:'/ifsi-abc-revisions/pilote-sources-privees.html',search:''};
+let cleared=false,requests=0;
+const elements=new Map();
+for(const id of ['send','refresh','logout','filter','login','data','loginStatus','syncStatus','tableBody','count']){
+ elements.set(id,{addEventListener(){},disabled:false,hidden:false,className:'',textContent:'',value:'',replaceChildren(){}});
+}
+const fakeDocument={getElementById(id){return elements.get(id)}};
+const fakeWindow={location:fake};
+const fakeHistory={replaceState(_state,_title,u){cleared=true;assert.equal(u,fake.pathname);fake.hash=''}};
+const sandbox={document:fakeDocument,window:fakeWindow,location:fake,history:fakeHistory,URLSearchParams,fetch(){requests++;return new Promise(()=>{})}};
+vm.runInNewContext(js,sandbox,{filename:'pilote-sources-privees.js'});
+assert.equal(cleared,true,'Fragment non effacé');
+assert.equal(fake.hash,'','Jeton toujours dans l’URL');
+assert.equal(elements.get('login').hidden,true,'La session retournée doit afficher la zone privée');
+assert.equal(elements.get('data').hidden,false,'Tableau privé inaccessible après retour');
+assert.equal(requests,1,'Seul un accès privé authentifié initial doit partir');
+console.log('✅ Pilote isolé : anti-fuite de jeton, Magic Link, inscription fermée, affichage privé');
