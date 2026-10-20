@@ -107,8 +107,8 @@ function ensure(){
  const app=doc().querySelector('.app');if(!app)return;
  const nav=app.querySelector('nav');
  if(nav)app.insertBefore(s,nav);else app.appendChild(s);
+ if(nav)nav.classList.add('ifsi-pathologies-ready');
  if(nav&&!byId('ifsiPathologiesNav')){
-  nav.classList.add('ifsi-pathologies-ready');
   const b=doc().createElement('button');b.type='button';b.id='ifsiPathologiesNav';b.innerHTML='🩺<br>Pathologies';b.addEventListener('click',open);nav.appendChild(b);
  }
  if(typeof root.show==='function'&&!root.show._pathoWrapped){
