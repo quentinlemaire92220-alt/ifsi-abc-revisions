@@ -68,7 +68,7 @@ const overview=browser.elements.pathoResults.innerHTML;
 for(const title of ['BPCO','Hypertension artérielle (HTA)','Diabète de type 2'])assert.ok(overview.includes(title),'Entrée non médicale absente : '+title);
 assert.equal((overview.match(/<details class="patho-group"/g)||[]).length,3,'Les trois volets systèmes doivent être déroulants');
 assert.ok(!overview.includes('data-patho-course'),'Aucun clic de pathologie ne doit ouvrir directement un cours');
-assert.ok(overview.includes('En cours de validation médicale'),'Le statut médical non approuvé doit être explicite');
+assert.ok(overview.includes('Contenu en cours de validation médicale'),'Le statut médical non approuvé doit être explicite');
 assert.ok(!placeholder.includes('Bonne réponse :'),'Aucun contenu QCM privé ne doit apparaître dans la coque');
 assert.ok(!placeholder.includes('https://drive.google.com/file/d/'),'Aucun lien clinique privé ne doit être inséré');
 
