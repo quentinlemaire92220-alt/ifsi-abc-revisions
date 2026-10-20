@@ -26,14 +26,14 @@ with TemporaryDirectory() as d:
            "paragraphs":["La troisième notion est présente dans le cours détaillé mais pas obligatoirement dans la synthèse."]}
         ],
         "infographicPanels":[
-          {"heading":"Essentiel 1","body":"La notion principale doit être compréhensible en quelques phrases.",
-           "notionIds":["a"],"figure":{"path":"figure.png"}},
-          {"heading":"Essentiel 2","body":"La deuxième notion permet une compréhension pédagogique plus rapide.",
-           "notionIds":["b"]},
-          {"heading":"Troisième notion illustrée","body":"Troisième notion expliquée dans le cours infographié complet. "*45,
-           "notionIds":["c"]},
-          {"heading":"Révision complète","body":"Comparaison et applications des trois notions essentielles. "*75,
-           "notionIds":["a","b","c"]}
+          {"heading":"Essentiel 1","body":"La notion principale est expliquée en quelques phrases.",
+           "notionIds":["a"],"figure":{"path":"figure.png","caption":"Figure pédagogique fictive 1"}},
+          {"heading":"Essentiel 2","body":"La deuxième notion demande un autre repère visuel.",
+           "notionIds":["b"],"figure":{"path":"figure.png","caption":"Figure pédagogique fictive 2"}},
+          {"heading":"Troisième notion illustrée","body":"La troisième notion apparaît aussi dans le support infographié.",
+           "notionIds":["c"],"figure":{"path":"figure.png","caption":"Figure pédagogique fictive 3"}},
+          {"heading":"Révision complète","body":"Les trois notions sont expliquées dans les deux PDF.",
+           "notionIds":["a","b","c"],"figure":{"path":"figure.png","caption":"Figure pédagogique fictive 4"}}
         ],
         "qcmQuestions":[{
             "id":"fictif_q01","courseId":"fictif","theme":"Notions fictives","difficulty":"easy",
@@ -83,13 +83,25 @@ with TemporaryDirectory() as d:
     try:make_pack(wrong,root,root/"bad-qcm")
     except ValueError as e:assert "contradictoire" in str(e)
     else:raise AssertionError("Cardinalité erronée du QCM acceptée")
-    # Les panneaux nombreux sont répartis sur plusieurs pages sans troncature.
-    larger=dict(lesson,infographicPanels=[{**p,"body":p["body"]+" Explication sourcée. "*65}
-                                           for p in lesson["infographicPanels"]])
+    # Les panneaux nombreux doivent s'étaler sans perdre leurs figures.
+    more_panels=[{**p,"heading":p["heading"]+" - variante "+str(i)}
+                 for i in range(3) for p in lesson["infographicPanels"]]
+    larger=dict(lesson,infographicPanels=more_panels)
     result=make_pack(larger,root,root/"long-infographic")
     assert result["infographicCoveredNotions"]==3
     with fitz.open(root/"long-infographic"/"Cours_Complet_Infographie.pdf") as long_pdf:
-        assert len(long_pdf)>2, "Le moteur doit accepter un cours multipage"
+        assert len(long_pdf)>3, "Le moteur doit accepter un cours multipage"
+        assert all(page.get_image_info() for page in long_pdf), "Page de texte seule dans le cours infographié"
+    unillustrated=dict(lesson,infographicPanels=[{**lesson["infographicPanels"][0],"figure":None}]
+                       +lesson["infographicPanels"][1:])
+    try:make_pack(unillustrated,root,root/"unillustrated")
+    except ValueError as e:assert "sans illustration" in str(e)
+    else:raise AssertionError("Panneau sans illustration accepté")
+    too_textual=dict(lesson,infographicPanels=[{**lesson["infographicPanels"][0],"body":"Un long texte. "*100}]
+                     +lesson["infographicPanels"][1:])
+    try:make_pack(too_textual,root,root/"too_textual")
+    except ValueError as e:assert "trop textuel" in str(e)
+    else:raise AssertionError("Panneau uniquement textuel accepté")
     incomplete=dict(lesson,infographicPanels=lesson["infographicPanels"][:2])
     try:make_pack(incomplete,root,root/"missing-illustrated")
     except ValueError as e:assert "toutes les notions" in str(e)
