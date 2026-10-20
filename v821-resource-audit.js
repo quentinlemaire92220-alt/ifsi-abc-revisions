@@ -104,16 +104,16 @@ function flashcardAudit(){
  }
  return{total:cards.length,bad};
 }
-function renderFlashcards(fc){const el=$('v821Flashcards');if(!el)return;el.innerHTML='<div class="small">'+fc.total+' cartes analysées · '+fc.bad.length+' à contrôler</div>'+(fc.bad.length?fc.bad.slice(0,30).map(x=>'<div class="v821-row"><div><b>'+E(x.card.front||x.card.id)+'</b><small>'+E(x.card.course||x.card.courseId||'Sans cours')+'</small></div><span>'+E(x.errors.join(', '))+'</span></div>').join(''):'<div class="small">✅ Aucune anomalie structurelle détectée.</div>')+(fc.bad.length>30?'<div class="small">+'+(fc.bad.length-30)+' autres anomalies</div>':'');}
+function renderFlashcards(fc){const el=$('v821Flashcards');if(!el)return;el.innerHTML='<div class="small">'+fc.total+' cartes analysées · '+fc.bad.length+' à contrôler</div>'+(fc.bad.length?fc.bad.slice(0,30).map(x=>'<div class="v821-row"><div><b>'+E(x.card.front||x.card.id)+'</b><small>'+E(x.card.course||x.card.courseId||'Sans cours')+'</small></div><span>'+E(x.errors.join(', '))+'</span></div>').join(''):'<div class="small">✅ Aucun signalement flashcard.</div>')+(fc.bad.length>30?'<div class="small">+'+(fc.bad.length-30)+' autres anomalies</div>':'');}
 function render(){
  const box=$('v821AuditCard');if(!box)return;
  if(!last){box.querySelector('#v821Status').innerHTML='<span class="v821-dot wait"></span>Audit non exécuté · cliquer sur « Auditer » pour actualiser';return}
- const {c,e}=last,fc=flashcardAudit(),stamp=snapshot?.auditedAt||'—',clean=e.ok&&!e.warnings.length&&!fc.bad.length,state=!e.ok||fc.bad.length?'❌ Anomalies détectées':e.warnings.length?'⚠️ Points à vérifier':'✅ Catalogue cohérent';
- box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${clean?'ok':e.ok&&!fc.bad.length?'wait':'bad'}"></span><b>${state}</b>`;
+ const {c,e}=last,fc=flashcardAudit(),stamp=snapshot?.auditedAt||'—',clean=e.ok&&!e.warnings.length&&!fc.bad.length,state=!e.ok?'❌ Anomalies structurelles':e.warnings.length||fc.bad.length?'⚠️ Points à vérifier':'✅ Catalogue cohérent';
+ box.querySelector('#v821Status').innerHTML=`<span class="v821-dot ${!e.ok?'bad':clean?'ok':'wait'}"></span><b>${state}</b>`;
  box.querySelector('#v821Meta').textContent=`Référence Drive validée : ${stamp} • contrôle local : ${new Date().toLocaleString('fr-FR')}`;
  box.querySelector('#v821Counts').innerHTML=`
   <span><b>${c.courses}</b><small>cours</small></span><span><b>${c.qcm}</b><small>QCM</small></span><span><b>${fc.total}</b><small>flashcards</small></span><span><b>${c.sheets}</b><small>fiches</small></span><span><b>${c.infographics}</b><small>infographies</small></span><span><b>${c.vocals}</b><small>vocaux</small></span><span><b>${c.atlas}</b><small>planches HD</small></span>`;
- const msgs=[...e.errors.map(x=>'❌ '+x),...e.warnings.map(x=>'⚠️ '+x),fc.bad.length?'⚠️ '+fc.bad.length+' flashcards à contrôler':'✅ Flashcards : aucun problème structurel',...e.infos.slice(0,2).map(x=>'✅ '+x)];
+ const msgs=[...e.errors.map(x=>'❌ '+x),...e.warnings.map(x=>'⚠️ '+x),fc.bad.length?'⚠️ '+fc.bad.length+' flashcards à contrôler (alerte pédagogique, non bloquante)':'✅ Flashcards : aucun problème structurel',...e.infos.slice(0,2).map(x=>'✅ '+x)];
  box.querySelector('#v821Issues').innerHTML=msgs.map(x=>`<div>${E(x)}</div>`).join('');
  box.querySelector('#v821Courses').innerHTML=byCourseRows(c);renderBalance(c);renderFlashcards(fc);$('v821Technical').innerHTML=e.infos.slice(2).map(x=>'<div>✅ '+E(x)+'</div>').join('')+'<div>Référence Drive validée ; contrôle local uniquement, sans scan Drive en direct.</div>';
 }

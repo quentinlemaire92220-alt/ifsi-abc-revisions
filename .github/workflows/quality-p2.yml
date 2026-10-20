@@ -66,6 +66,17 @@ jobs:
               --summary="$GITHUB_STEP_SUMMARY" > quality-artifacts/audit-quality.md
           fi
 
+      - name: Vérifier les règles de triage P3
+        run: |
+          node --check tools/p3-pedagogical-review.mjs
+          node tests/p3-pedagogical-review.mjs
+
+      - name: Inventorier les corrections pédagogiques à valider (P3)
+        run: |
+          node tools/p3-pedagogical-review.mjs \
+            --output=quality-artifacts/p3-pedagogical-review.json \
+            --markdown=quality-artifacts/p3-pedagogical-review.md
+
       - name: Conserver les rapports de cette exécution
         if: always()
         uses: actions/upload-artifact@v4
