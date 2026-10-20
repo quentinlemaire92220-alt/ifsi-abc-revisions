@@ -29,9 +29,9 @@ function validate(item){
  const visuals=item?.visuals;
  if(!nonEmpty(visuals)||!unique(visuals.map(v=>v?.id)))errors.push('Infographies manquantes ou identifiants dupliqués');
  else visuals.forEach(v=>{
-  if(!text(v?.id)||!REQUIRED.includes(v.sectionId)||v.kind!=='original_infographic'||!text(v.alt)||!text(v.url)||!/^https:\/\//i.test(v.url)||!/^[-a-f0-9]{64}$/i.test(v.sha256||''))errors.push('Infographie incomplète, brute ou non sécurisée : '+(v?.id||'?'));
-  if(!nonEmpty(v?.sourceIds)||(Array.isArray(v.sourceIds)&&v.sourceIds.some(id=>!sourceIds.has(id))))errors.push('Infographie sans source identifiable : '+(v?.id||'?'));
-  if(v.graphicalReview!=='approved'||v.medicalReview!=='approved')errors.push('Infographie sans double validation médicale et graphique : '+(v?.id||'?'));
+  if(!text(v?.id)||!REQUIRED.includes(v?.sectionId)||v?.kind!=='original_infographic'||!text(v?.alt)||!text(v?.url)||!/^https:\/\//i.test(v?.url)||!/^[-a-f0-9]{64}$/i.test(v?.sha256||''))errors.push('Infographie incomplète, brute ou non sécurisée : '+(v?.id||'?'));
+  if(!nonEmpty(v?.sourceIds)||(Array.isArray(v?.sourceIds)&&v?.sourceIds.some(id=>!sourceIds.has(id))))errors.push('Infographie sans source identifiable : '+(v?.id||'?'));
+  if(v?.graphicalReview!=='approved'||v?.medicalReview!=='approved')errors.push('Infographie sans double validation médicale et graphique : '+(v?.id||'?'));
  });
  const audit=item?.visualAudit;
  if(!audit||!Number.isInteger(audit.diagramCount)||audit.diagramCount<1||audit.diagramCount!==(visuals||[]).length||audit.rawDiagramCount!==0||audit.allPdfPagesChecked!==true||audit.clinicalContentReviewed!==true)errors.push('Audit schéma → infographie / PDF / validation clinique incomplet');
@@ -39,10 +39,10 @@ function validate(item){
   if(!unique(item.qcm.map(x=>x?.id)))errors.push('IDs QCM dupliqués');
   item.qcm.forEach(q=>checkOptions(q,'QCM '+(q.id||'?'),errors));
  }
- if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
+ if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c?.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
  if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x?.id)))errors.push('Cas cliniques absents ou dupliqués');
  else item.cases.forEach(c=>{
-  if(!text(c.id)||!text(c.title)||!text(c.context)||!nonEmpty(c.steps))errors.push('Cas incomplet : '+(c.id||'?'));
+  if(!text(c?.id)||!text(c?.title)||!text(c?.context)||!nonEmpty(c?.steps))errors.push('Cas incomplet : '+(c.id||'?'));
   else c.steps.forEach((s,i)=>checkOptions({...s,id:s.id||('step_'+i),correct:[s.correct]},'Cas '+c.id+' étape '+(i+1),errors));
  });
  if(!approved(item?.publicationApproval))errors.push('Publication non autorisée : GO publication et empreinte requis');
@@ -113,7 +113,7 @@ function links(item){
  return '<p class="patho-muted">Cours associés à cette pathologie :</p><div class="patho-toolbar">'+item.courseIds.map(id=>'<button type="button" class="btn outline" data-patho-course="'+esc(id)+'">'+esc(id.replaceAll('_',' '))+' ↗</button>').join('')+'</div>';
 }
 function renderSheet(item){
- return REQUIRED.map(k=>'<div class="patho-panel"><h3>'+esc(LABELS[k])+'</h3><p>'+esc(item.sections[k])+'</p>'+item.visuals.filter(v=>v.sectionId===k).map(v=>'<figure class="patho-figure"><img loading="lazy" src="'+esc(v.url)+'" alt="'+esc(v.alt)+'"><figcaption>'+esc(v.alt)+'</figcaption></figure>').join('')+'</div>').join('')+
+ return REQUIRED.map(k=>'<div class="patho-panel"><h3>'+esc(LABELS[k])+'</h3><p>'+esc(item.sections[k])+'</p>'+item.visuals.filter(v=>v?.sectionId===k).map(v=>'<figure class="patho-figure"><img loading="lazy" src="'+esc(v?.url)+'" alt="'+esc(v?.alt)+'"><figcaption>'+esc(v?.alt)+'</figcaption></figure>').join('')+'</div>').join('')+
  '<div class="patho-panel"><h3>Sources et statut</h3><ul class="patho-sources">'+item.sources.map(s=>'<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.label)+'</a> — '+(s.type==='official'?'Support officiel':'Complément vérifié')+'</li>').join('')+'</ul>'+links(item)+'</div>';
 }
 function renderQuestion(item,q,kind){
