@@ -71,6 +71,11 @@ jobs:
       - name: TNR suivi des cours et confidentialité
         run: node tests/course-followup-v1.mjs
 
+      - name: TNR pilote de connexion aux sources privées
+        run: |
+          node --check pilote-sources-privees.js
+          node tests/pilot-private-sources-v1.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
