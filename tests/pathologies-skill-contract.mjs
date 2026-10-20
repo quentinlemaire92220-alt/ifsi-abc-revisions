@@ -7,6 +7,14 @@ const general=read('docs/skills/production-fiches-revision-infographies-original
 const specialist=read('docs/skills/production-pathologies-infographies-cliniques.md');
 const moduleDoc=read('docs/PATHOLOGIES_MODULE_V1.md');
 const workflow=read('.github/workflows/tnr.yml');
+const p1Validation=read('docs/PATHOLOGIES_LOT_P1_VALIDATION_FORME_20261020.md');
+assert.match(p1Validation,/BPCO.*HTA.*(?:diabète|DT2)/is,'Trois références P1 absentes de la validation');
+assert.match(p1Validation,/FORME VALIDÉE|FORME ET STRUCTURE VALIDÉES/,'Accord de forme non précisé');
+assert.match(p1Validation,/GO publication/i,'Distinction validation graphique / publication absente');
+assert.match(specialist,/Validation du LOT P1/i,'Skill spécialisé non mis à jour');
+assert.match(specialist,/réponses A systématiquement/i,'Contrôle du biais de QCM absent');
+assert.match(agents,/Validation de forme P1 Pathologies/i,'AGENTS ne consigne pas la validation P1');
+
 
 assert.ok(agents.includes('docs/skills/production-pathologies-infographies-cliniques.md'),'AGENTS ne référence pas le skill Pathologies');
 assert.ok(general.includes('production-pathologies-infographies-cliniques.md'),'Skill fiches ne réfère pas le skill spécialisé');
