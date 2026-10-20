@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {svgFor} from '../tools/anatomy/compose-svg.mjs';
+
+const read=p=>fs.readFileSync(p,'utf8');
+const skill=read('docs/skills/production-planches-anatomiques-svg.md');
+const legacy=read('docs/skills/production-planches-anatomiques-canva.md');
+const agents=read('AGENTS.md');
+const revision=read('docs/skills/production-fiches-revision-infographies-originales.md');
+const r01=JSON.parse(read('docs/anatomy-r01-svg-pilot.json'));
+const meta=JSON.parse(read('build-meta.json'));
+const census=JSON.parse(read('resource-audit-v821.json'));
+assert.ok(agents.includes('docs/skills/production-planches-anatomiques-svg.md'),'Nouveau skill non activé');
+assert.ok(legacy.includes('ARCHIVE / MÉTHODE DE SECOURS'),'Ancien workflow Canva encore présenté comme défaut');
+assert.ok(revision.includes('production-planches-anatomiques-svg.md'),'Fiches renvoient encore au skill Canva');
+assert.ok(skill.includes('illustration-source')&&skill.includes('annotations.json'),'Séparation image / annotations non décrite');
+assert.ok(skill.includes('Chaque repère')&&skill.includes('GO publication'),'Contrôle des flèches ou approbation absent');
+assert.equal(r01.id,'R01');
+assert.equal(r01.landmarks.length,11);
+assert.equal(r01.status,'PILOT_SPEC_READY_ARTWORK_NOT_GENERATED');
+assert.equal(r01.sourceImage,null);
+assert.equal(r01.publicationApproved,false);
+assert.equal(r01.clinicalApproved,false);
+assert.ok(r01.landmarks.every(x=>x.tip===null&&x.labelPosition===null&&x.reviewed===false));
+assert.equal(meta.version,'8.30.104','La procédure ne doit pas déclencher une release');
+assert.equal(census.expectedTotals.hdAtlasBoards,106);
+assert.equal(census.atlasBoardContracts.systeme_reproducteur,undefined);
+
+const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'ifsi-anatomy-svg-'));
+try{
+ const src=path.join(tmp,'image.jpg');
+ fs.copyFileSync('assets/anatomy/reproductive/review/R03.jpg',src);
+ const spec=path.join(tmp,'spec.json');
+ const base={title:'Fiche technique de test',canvas:{width:1240,height:1754},sourceImage:'image.jpg',landmarks:[{id:'test_01',label:'Structure & <b> test',tip:null,labelPosition:null,evidence:'Fiction de test - aucune validation médicale',reviewed:false,status:'unresolved'}]};
+ fs.writeFileSync(spec,JSON.stringify(base));
+ assert.throws(()=>svgFor(base,spec),/Unverified clinical landmark/,'Aucune flèche non vérifiée en version finale');
+ const draft=svgFor(base,spec,{draft:true});
+ assert.ok(draft.includes('ANATOMIE NON VALIDÉE'));
+ assert.ok(!draft.includes('id="arrow-test_01"'));
+ const verified=structuredClone(base);
+ verified.landmarks[0].tip={x:.45,y:.35};
+ verified.landmarks[0].labelPosition={x:.1,y:.4};
+ verified.landmarks[0].reviewed=true;
+ verified.landmarks[0].status='verified';
+ const out=svgFor(verified,spec);
+ assert.ok(out.includes('id="arrow-test_01"'));
+ assert.ok(out.includes('Structure &amp; &lt;b&gt; test'),'Échappement XML manquant');
+ assert.ok(out.includes('data:image/jpeg;base64,'));
+ assert.ok(out.includes('width="210mm" height="297mm"'));
+ verified.landmarks[0].tip={x:1.1,y:.4};
+ assert.throws(()=>svgFor(verified,spec),/normalized/,'Pointe hors support acceptée');
+ verified.sourceImage='https://example.invalid/figure.png';
+ assert.throws(()=>svgFor(verified,spec),/local image path/,'Lien externe incontrôlé accepté');
+}finally{fs.rmSync(tmp,{recursive:true,force:true})}
+console.log('✅ Skill SVG : image séparée, flèches refusées sans coordonnées revues, export SVG éditable, R01 non publiable, 106 atlas conservés.');
