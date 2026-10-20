@@ -24,6 +24,20 @@ assert.equal(meta.build,'8404');
 assert.equal(manifest.lastAssetRefresh.version,meta.version);
 assert.deepEqual(manifest.lastAssetRefresh.boardIds,['R03','R05']);
 assert.equal(manifest.lastAssetRefresh.medicalApproval,false);
+const permission=manifest.provisionalPublicationApproval;
+assert.equal(permission.status,'approved_for_provisional_display_only');
+assert.equal(permission.authorization,'explicit_go_publication');
+assert.equal(permission.scope,'replace_only_R03_and_R05_preview_jpegs');
+assert.equal(permission.release,meta.version);
+assert.equal(permission.clinicalApproval,false);
+assert.equal(permission.rightsProvenanceVerified,false);
+assert.deepEqual(permission.assets.map(x=>x.id),['R03','R05']);
+for(const approvedPreview of permission.assets){
+  const board=manifest.boards.find(b=>b.id===approvedPreview.id);
+  assert.equal(approvedPreview.path,board.path);
+  assert.equal(approvedPreview.sha256,board.sha256);
+  assert.equal(approvedPreview.status,'provisional_review_only');
+}
 assert.equal(manifest.clinicalReview,'PENDING');
 assert.equal(manifest.officialSupport,false);
 assert.equal(manifest.pedagogicalApproval,false);
