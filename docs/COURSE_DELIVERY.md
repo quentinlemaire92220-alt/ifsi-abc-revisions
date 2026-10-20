@@ -64,3 +64,9 @@ Le hash d'exemple ci-dessus est **fictif** : ne le réutiliser dans aucune vraie
 En cas de plusieurs banques QCM associées au même `courseId`, renseigner `qcmBanks` (tableau de chemins locaux) dans le manifeste, conserver les identifiants stables et mettre à jour `qcmCount` comme total des banques ; les TNR vérifient désormais l'unicité de chaque ID. Les nouvelles questions des banques déclarées et les modifications des fichiers `qextra-*.txt` sont repérées par le garde-fou. Les tests d'intégration de l'application doivent aussi charger toutes les banques, sinon le TNR échoue.
 
 Le résumé public n'apporte pas de preuve cryptographique de provenance Google Drive dans la CI publique : l'opérateur vérifie les autorisations et le téléchargement effectif dans son espace privé. La validité médicale demeure un contrôle distinct.
+
+## Relais ChatGPT classique ↔ Work (20/10/2026)
+
+Consulter `docs/skills/orchestration-chatgpt-classique-work.md` et `AGENTS.md` avant toute production en lot, rangement en masse ou préparation d'une nouvelle livraison. ChatGPT classique vérifie le support officiel, le `courseId` et les ressources déjà existantes, puis fournit un plan ciblé. Work produit/contrôle les deux fiches distinctes et les ressources associées, évite les doublons, prépare les mouvements Drive et la PR technique sans publication. Le dossier de revue est privé ; le classement définitif dans Drive étudiant, l'archivage associé et toute fusion/déploiement du lot attendent un **GO publication** distinct.
+
+Le bilan de relais doit préciser : inchangés/créés/corrigés, liens de revue réellement testés, éléments bloqués, supports officiels ou provisoires, état des MP3, identifiants app, TNR/CI, état de la PR et périmètre d'approbation. Garder les références privées uniquement dans le suivi privé. La documentation dans ce dépôt définit une méthode et ne constitue pas une approbation de publication.
