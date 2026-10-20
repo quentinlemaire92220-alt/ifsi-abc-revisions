@@ -53,6 +53,14 @@ assert.ok(!/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]{15,}/.test(client)
 assert.ok(backend.includes('IFSI_SOURCE_OWNER_UID')&&backend.includes('user.id === ownerId'),'Autorisation par UUID signée requise');
 assert.ok(backend.includes('ownerAuthenticated(req)'),'Le serveur doit contrôler la session');
 assert.ok(backend.includes('reqOrigin !== origin'),'Origine HTTP à contrôler');
+assert.ok(backend.includes('https://quentinlemaire92220-alt.github.io'),'Origine GitHub Pages non strictement autorisée');
+assert.ok(backend.includes('req.method === "OPTIONS" && reqOrigin === origin'),'Le préflight doit fonctionner sans JWT');
+const preflightIndex=backend.indexOf('req.method === "OPTIONS" && reqOrigin === origin');
+const authenticationIndex=backend.indexOf('ownerAuthenticated(req)');
+assert.ok(preflightIndex>=0 && authenticationIndex>preflightIndex,'Authentification exigée avant le préflight');
+assert.ok(backend.includes('if (reqOrigin !== origin) return response(null, 403'),'Origines tierces non bloquées');
+assert.ok(backend.includes('if (!(await ownerAuthenticated(req)))'),'Les vraies opérations doivent rester authentifiées');
+
 assert.ok(backend.includes('Object.hasOwn(FIELDS, field)'),'Modification réservée aux trois colonnes sources');
 assert.ok(backend.includes('target[field] !== expected'),'Conflits de statut non contrôlés');
 assert.ok(backend.includes('valueInputOption=RAW'),'Écriture Google Sheets explicite et sans formule');
