@@ -56,13 +56,31 @@ for(const title of [
  assert.equal(api.isRevisionSession({title,type:'TD'}),false,'Activité non révisable conservée : '+title);
 }
 for(const [title,type] of [
- ['Gestion du stress','TD'],['Simulation en santé J1','TP'],
- ['Simulation J3 — Pansement simple avec pinces','TD'],
- ['Initiation à la philosophie éthique','CM'],['Atelier calculs ESI Nv3','Asynchrone'],
- ['Cours de physiologie respiratoire (support E-campus)','Asynchrone']
+ ['Gestion du stress','TD'],['Les plaies simples et soins courants','TD'],
+ ['Initiation à la philosophie éthique','CM'],['Atelier de soutien en calculs','TD']
 ]){
  assert.equal(api.isRevisionSession({title,type}),true,'Cours pédagogique exclu à tort : '+title);
 }
+// Aucune simulation ni activité asynchrone ne doit figurer dans le suivi,
+// y compris les vrais TP de simulation et les cours asynchrones documentés.
+for(const [title,type,ue] of [
+ ['Simulation en santé J1','TP','UE B3 S1'],
+ ['Simulation J3 — Pansement simple avec pinces','TD','UE 5.08 S1'],
+ ['Soin pratique en atelier','TD','UE Simulation'],
+ ['Atelier calculs ESI Nv3','Asynchrone','UE B3.1 S1'],
+ ['Cours de physiologie respiratoire (support E-campus)','Asynchrone','UE B1 S1'],
+ ['Cours de pharmacologie','Asynchro','UE B1 S1'],
+ ['Cours de droit patients','Cours asynchrone','UE A2 S1']
+]){
+ assert.equal(api.isRevisionSession({title,type,ue}),false,'Simulation/asynchrone non exclu : '+title);
+}
+const originalEvents=weeks.flatMap(w=>w.events);
+const filteredEvents=['A1','A2','B1','B2'].flatMap(g=>weeks.flatMap(w=>api.eventsForWeek(w,g)));
+assert.ok(originalEvents.some(e=>/simulation/i.test(e.title)),'Les simulations doivent rester dans le calendrier');
+assert.ok(originalEvents.some(e=>/asynch/i.test(e.type)),'Les asynchrones doivent rester dans le calendrier');
+assert.ok(!filteredEvents.some(e=>/simulation/i.test(e.title)||/simulation/i.test(e.ue||'')||/asynch/i.test(e.type)),'Une simulation ou un asynchrone est encore affiché au suivi');
+assert.ok(filteredEvents.some(e=>e.title==='Gestion du stress'),'Les TD ordinaires restent au suivi');
+assert.ok(filteredEvents.some(e=>e.title==='Initiation à la philosophie éthique'),'Les CM ordinaires restent au suivi');
 assert.equal(api.isRevisionSession({title:'Pharmacologie des antalgiques',type:'Annulé'}),false);
 assert.equal(api.isRevisionSession({title:'Présentation plateforme MyK',type:'Info'}),false);
 
