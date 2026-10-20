@@ -733,11 +733,19 @@
       "domain": "B",
       "ue": "B3",
       "officialSupportUrl": "https://drive.google.com/file/d/11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K/view",
-      "qcmPdfUrl": "https://drive.google.com/file/d/1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5/view",
       "officialSupportCoverage": "partial",
       "audioStatus": "available",
       "audioCount": 5,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/11mL_5dt4AfUl2CwE5-A1mg6HeLRHKHga"
+      "audioFolderUrl": "https://drive.google.com/drive/folders/11mL_5dt4AfUl2CwE5-A1mg6HeLRHKHga",
+      "qcmPdfQuestionCount": 50,
+      "additionalDocuments": [
+        {
+          "category": "qcm-corrige",
+          "label": "Corrigé argumenté PDF — 50 QCM (V4.2)",
+          "url": "https://drive.google.com/file/d/1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o/view"
+        }
+      ]
     },
     {
       "id": "stomatotherapie",
