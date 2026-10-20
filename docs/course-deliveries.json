@@ -31,7 +31,7 @@
       },
       "supportDriveId": "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K",
       "sheetResourceId": "plaies_pansements_fiche_p01",
-      "qcmDriveId": "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe",
+      "qcmDriveId": "1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5",
       "qcmBank": "qextra-50.txt",
       "qcmCount": 50,
       "flashcardCount": 40,
@@ -91,7 +91,6 @@
       ],
       "artifactSha256s": {
         "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K": "a5f081347f2b6d4e7b0053920c27d5e9284c3160fe5f54869bfa55b5659d470b",
-        "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe": "bc496e6698bd28c980f98cf2737bb4ebd65d0d040d178beaf79e9873b7595052",
         "1BbZSRfGyJx4rp0aICOTqcuJElEJ5zvBW": "d097948e429c4882f9d6c87f2e39759c38c420191bf4377e6a716e03ac6f1cb1",
         "1iMjd47WV92YI4ErjfWQ8Fq_9_92TJmUA": "be07667a81d492a08a86c5c3d24d4cc21214a5afb61428215917be6bc12f4a91",
         "1heS2LMk41OGvjP2YEhdPqKnUyjxvoT1J": "a88a6b66e2d8a592d3c030430212aef67297582a56ae114af8253415210d02e4",
@@ -109,14 +108,16 @@
         "1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j": "6ee232452f116fe8f6b395a26c63ee8c10eb34e9f9402f0a86d9d7e7fd25d6b5",
         "1AqR-kE7ihOSccS_cCpSH6uUkmO5W3DNh": "2f81f59dd9f38bba17f3ef22aceb42765c7b6214944facadc4a7d231bb360e8f",
         "1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-": "c74c7438453a0e7a882e00172ec1916c275de477934b21d86949c98a9543f6b0",
-        "1V6difvdFXUJipPmUknNfqgb7MK8L77Ad": "57ce65fd3756824ef7118dcc62fcfb293f03ef70286af290128d11f108d8171d"
+        "1V6difvdFXUJipPmUknNfqgb7MK8L77Ad": "57ce65fd3756824ef7118dcc62fcfb293f03ef70286af290128d11f108d8171d",
+        "1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5": "2089e3f2a7c4f5bbffa06d8624a0cc3e0d8b61b15f2f0251a31f3930aad76571",
+        "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o": "61f0407301f27e0b724e892c43f084429071fb63dd1621b85f0b1f51058fa1f1"
       },
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-18T20:54:13.083Z",
-        "bundleSha256": "47f4713afa11cc8c3d7d6b53d14d0e346739e95ebaf399f602473280369d7566"
+        "approvedAt": "2026-10-20T13:56:03Z",
+        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
       },
       "partDeliveries": [
         {
@@ -134,7 +135,8 @@
           "infographicResourceIds": [],
           "qcmQuestionIds": []
         }
-      ]
+      ],
+      "qcmCorrectionDriveId": "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o"
     },
     {
       "courseId": "stomatotherapie",
