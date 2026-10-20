@@ -2,7 +2,7 @@
 
 **Statut : CONTRAT DE PRODUCTION BLOQUANT.** Applicable dès le « Go » à toutes les créations/refontes de fiches de révision, y compris lorsqu'un support officiel arrive après une version provisoire.
 
-**Périmètre : fiche de révision PDF et ses visuels intégrés.** Ce skill ne remplace pas le skill de **planches anatomiques autonomes** (`docs/skills/production-planches-anatomiques-canva.md`), ni les règles propres aux schémas des QCM. En cas de formulation ancienne contradictoire dans la charte concernant **les images intégrées aux fiches**, le présent contrat et la référence visuelle explicitement validée par l'utilisateur prévalent. Les éventuels schémas de QCM sont traités selon leur propre contrat et les droits de reproduction applicables.
+**Périmètre : fiche de révision PDF et ses visuels intégrés.** Ce skill ne remplace pas le skill de **planches anatomiques autonomes** (`docs/skills/production-planches-anatomiques-svg.md`; ancien workflow Canva archivé), ni les règles propres aux schémas des QCM. En cas de formulation ancienne contradictoire dans la charte concernant **les images intégrées aux fiches**, le présent contrat et la référence visuelle explicitement validée par l'utilisateur prévalent. Les éventuels schémas de QCM sont traités selon leur propre contrat et les droits de reproduction applicables.
 
 ## 1. Règle absolue : transformer, jamais coller
 
