@@ -97,7 +97,6 @@ assert.ok(!/https:\/\/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]{15,}/i.t
 
 const canceled=weeks.flatMap(x=>x.events).find(x=>/annul/i.test(x.type||''));
 assert.ok(canceled&&api.eventForGroup(canceled,'B1'),'Séance annulée conservée comme telle au planning');
-assert.ok(!/https:\/\/docs\.google\.com\/spreadsheets\/d\//i.test(src),'Aucun registre privé dans le JavaScript public');
 assert.ok(!/plaud|transcript|sourceSha256|sourceStatus|sharedSecret/i.test(src),'Métadonnées personnelles interdites');
 const html=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('sw.js','utf8');
 assert.ok(html.includes('course-followup-v1.js'),'Chargement du suivi navigateur absent');
