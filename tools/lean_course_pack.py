@@ -70,12 +70,17 @@ def validate_source(data, assets):
     chosen = set()
     for p in panels:
         if not isinstance(p.get("heading"), str) or not str(p.get("body", "")).strip():
-            raise ValueError("Panneau de synthèse sans titre/explication")
+            raise ValueError("Panneau infographié sans titre ou explication")
+        if len(p["body"]) > 650:
+            raise ValueError("Panneau infographié trop textuel : découper en plusieurs panneaux illustrés sans perdre de notions")
         if not p.get("notionIds"):
-            raise ValueError("Panneau de synthèse sans notion rattachée")
+            raise ValueError("Panneau infographié sans notion rattachée")
         chosen.update(p["notionIds"])
-        if p.get("figure"):
-            checked_asset(assets, p["figure"]["path"])
+        if not isinstance(p.get("figure"), dict) or not p["figure"].get("path"):
+            raise ValueError("Panneau infographié sans illustration pédagogique")
+        if not str(p["figure"].get("caption", "")).strip():
+            raise ValueError("Illustration sans légende pédagogique traçable")
+        checked_asset(assets, p["figure"]["path"])
     if chosen != set(ids):
         raise ValueError("Le cours complet infographié doit couvrir toutes les notions de la matrice")
     questions = data.get("qcmQuestions")
@@ -133,7 +138,7 @@ def render_infographic(data, dest, assets):
         if figure:
             path,iw,ih=checked_asset(assets,figure["path"])
             max_w=W-2*MARGIN-20
-            max_h=410
+            max_h=340
             scale=min(max_w/iw,max_h/ih,1)
             width,height=iw*scale,ih*scale
             parts.append(Image(str(path),width=width,height=height,hAlign="CENTER"))
@@ -142,7 +147,7 @@ def render_infographic(data, dest, assets):
         if panel.get("sourcePages"):
             parts.append(Paragraph("Source officielle : "+html.escape(", ".join(map(str,panel["sourcePages"]))),source_style))
         parts.append(HRFlowable(width="100%",thickness=.6,color=TEAL))
-        story += parts
+        story.append(KeepTogether(parts))
         story.append(Spacer(1,10))
     doc=SimpleDocTemplate(str(dest),pagesize=A4,leftMargin=MARGIN,
         rightMargin=MARGIN,topMargin=48,bottomMargin=47,
@@ -161,6 +166,9 @@ def render_infographic(data, dest, assets):
         if len(pdf)<1 or any(abs(p.rect.width-W)>2 or abs(p.rect.height-H)>2 for p in pdf):
             raise ValueError("Cours infographié : format A4 invalide")
         all_text="\n".join(p.get_text() for p in pdf)
+        for index,page in enumerate(pdf,1):
+            if not page.get_images():
+                raise ValueError(f"Cours infographié : page {index} sans illustration pédagogique")
         for panel in data["infographicPanels"]:
             if panel["heading"] not in all_text:
                 raise ValueError("Cours infographié : panneau perdu : "+panel["heading"])
