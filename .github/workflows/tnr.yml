@@ -229,6 +229,11 @@ jobs:
       - name: Socle Pathologies sans publication pédagogique
         run: node tests/pathologies-module-v1.mjs
 
+      - name: Contrat de production Pathologies — forme BPCO et protection de publication
+        run: node tests/pathologies-skill-contract.mjs
+
+
+
       - name: Vérifier le contraste et la formulation des QCM V8.30.75
         run: node tests/qcm-visual-wording-v8375.mjs
 
