@@ -5,7 +5,7 @@ const read=path=>fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const code=read('pathologies-module-v1.js');
 function part(a,b){const start=code.indexOf(a),end=code.indexOf(b,start+1);assert.ok(start>=0&&end>start,'Missing range: '+a);return code.slice(start,end);}
 const ctx={};vm.createContext(ctx);
-const definitions=["const P1_IDS=new Set(['bpco','hta','dt2']);",part('const P1_CATALOG=','const LABELS='),"const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));","let entries=[];",part('function catalogRecords(){','function showPending('),"globalThis.fakeCatalog=()=>catalogRecords();globalThis.fakeMarkup=term=>catalogMarkup(catalogRecords(),term);"];
+const definitions=["const P1_IDS=new Set(['bpco','hta','dt2']);",part('const P1_CATALOG=','const LABELS='),"const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));","let entries=[];",part('function catalogRecords(){','function showPending('),"globalThis.exportEsc=esc;globalThis.fakeCatalog=()=>catalogRecords();globalThis.fakeMarkup=term=>catalogMarkup(catalogRecords(),term);"];
 vm.runInContext(definitions.join('\n'),ctx);
 const records=ctx.fakeCatalog();
 assert.equal(records.length,3);
@@ -24,7 +24,7 @@ assert.ok(ctx.fakeMarkup('inconnu').includes('Aucune pathologie trouvée'));
 let courseOpens=0,backClicks=0,pendingMarkup='';
 const fakeHost={set innerHTML(x){pendingMarkup=x;},querySelectorAll(selector){return selector==='[data-patho-course]'?[{dataset:{pathoCourse:'systeme_respiratoire'},onclick:null}]:[]}};
 const backButton={onclick:null};
-const pageCtx={P1_CATALOG:records,pendingId:null,state:{id:'none'},byId:id=>id==='ifsiPathologiesBody'?fakeHost:id==='pathoBack'?backButton:null,esc:ctx.esc,action:(label,attr)=>'<button '+attr+'>'+label+'</button>',openLinkedCourse:()=>{courseOpens++;},list(){backClicks++;}};
+const pageCtx={P1_CATALOG:records,pendingId:null,state:{id:'none'},byId:id=>id==='ifsiPathologiesBody'?fakeHost:id==='pathoBack'?backButton:null,esc:ctx.exportEsc,action:(label,attr)=>'<button '+attr+'>'+label+'</button>',openLinkedCourse:()=>{courseOpens++;},list(){backClicks++;}};
 vm.createContext(pageCtx);
 vm.runInContext(part('function showPending(','function list(){')+'\nglobalThis.openDraft=showPending;',pageCtx);
 pageCtx.openDraft('bpco');
