@@ -52,7 +52,7 @@ async function sendOtp(){
  try {
   const res=await fetch(ROOT+'/auth/v1/otp',{method:'POST',cache:'no-store',
    headers:{apikey:PUBLIC_KEY,'Content-Type':'application/json'},
-   body:JSON.stringify({email,create_user:true})});
+   body:JSON.stringify({email,create_user:false})});
   message=res.ok?'Code demandé. Consulte ta messagerie ; aucun accès n’est accordé avant vérification.':'Impossible d’envoyer le code. Réessaye plus tard.';
  }catch{message='Service de connexion inaccessible.'}
  finally{button.disabled=false;renderMessage()}
