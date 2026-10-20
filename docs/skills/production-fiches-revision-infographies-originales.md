@@ -6,6 +6,9 @@ Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige dé
 
 ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
 
+
+**CONTRÔLE GRAPHIQUE OBLIGATOIRE :** consulter `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`. Pour chaque nouveau pack, produire deux évaluations MANUELLES indépendantes : `REVISION_TEXT_FIRST` (paragraphes et tableaux majoritaires, illustrations ponctuelles et justifiées) et `INFOGRAPHIC_VISUAL_FIRST` (grand schéma anatomique, flèches exactes, zooms et légendes, pas une grille de textes). Aucune validation par simple présence d'image, nombre de pages ou succès TNR ; maquettes non conformes bloquées, sans publication.
+
 # Skill IFSI ABC — Fiches de révision avec infographies originales (v1.0)
 
 
@@ -13,7 +16,7 @@ ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO pr
 
 Pour les prochains cours, **une fiche de révision complète avec schémas infographiés seulement lorsqu'ils apportent une explication utile** est le livrable maître. Modèle de présentation : **Système cardiovasculaire ou Système respiratoire** (pilotes validés). Toutes les définitions, mécanismes, nuances, valeurs et explications de la source officielle restent dans le **texte**, même lorsqu'un visuel résume la notion. Les illustrations complètent le cours et sont créées de manière originale ; une illustration décorative ou sans justification pédagogique ne doit pas être ajoutée pour respecter un quota.
 
-En complément, produire **un cours complet infographié multipage** autonome, mais **un second cours complet, pédagogique et illustré, couvrant toutes les notions** par défaut. Une page ne doit pas prétendre couvrir mot à mot tout le cours : elle sélectionne honnêtement l'essentiel tout en renvoyant à la fiche détaillée. Si le contenu ne tient pas lisiblement, demander un arbitrage avant d'allonger ou simplifier. Ces demandes ne suppriment pas les tests de lisibilité et d'exactitude clinique.
+En complément, produire **un second cours complet infographié multipage** autonome, riche en illustrations anatomiques et couvrant toutes les notions, selon la planche validée « Circulation sanguine et trajet du sang ». Son nombre de pages s'adapte librement au cours. Une page pilote n'est qu'un exemple de style. La fiche classique suit au contraire le PDF de révision cardiovasculaire validé (17 pages) : paragraphes et tableaux majoritaires, figures intégrées au besoin. Ces demandes ne suppriment pas les tests de lisibilité et d'exactitude clinique.
 
 Le pilote est une validation **de forme** uniquement. Toute nouvelle matière nécessite une revue source et un contrôle scientifique propres. Les planches anatomiques sont conditionnelles et ne doivent pas être dupliquées.
 
@@ -33,7 +36,7 @@ Le pilote est une validation **de forme** uniquement. Toute nouvelle matière n�
 
 ## 2. Référence graphique obligatoire
 
-**Modèle de fiche principal : Système nerveux**, `UE_S1_B1_Systeme_Nerveux_Fiche_Revision_Systeme_Nerveux.pdf` (dans le Drive pédagogique de référence). Le Système respiratoire est un second exemple conforme, pas un prétexte pour réutiliser ses images.
+**Modèle de fiche principal désormais : `UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Fiche_Revision_Coeur_Vaisseaux_et_Sang.pdf` (17 pages)**, explicitement revalidé par l'utilisateur le 20/10/2026. Structure textuelle, encadrés de priorités, paragraphes, tableaux violets, rares illustrations utiles, sans obligation de figure par section. Le modèle Système nerveux reste une source secondaire d'inspiration compatible ; **le modèle d'infographie DISTINCT** est `UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Infographie_01_Circulation_sanguine_et_trajet_du_sang (1).pdf`.
 
 - Bandeau violet de l'UE, titres lisibles avec accent turquoise, mise en page aérée mais dense, typographie française propre, tableaux et mémos seulement s'ils facilitent la compréhension.
 - **L'illustration pédagogique est insérée dans la section de la fiche qui explique le concept**, en complément du texte : pas de pack d'images collé en fin de document, pas de page de garde détournée, pas de collage de miniatures multipanneaux.
