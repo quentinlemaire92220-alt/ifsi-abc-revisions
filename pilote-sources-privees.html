@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow,noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src https://ywicbdntavuitkcqvmqx.supabase.co; script-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>IFSI ABC — Pilote privé des sources</title>
+<style>
+:root{color-scheme:dark;background:#12101a;color:#f9f7ff;font:15px/1.5 system-ui,Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;padding:25px 14px}main{max-width:1060px;margin:auto}
+h1{font-size:1.55rem;margin:0}h2{font-size:1.12rem;margin:0 0 12px}.sub{color:#c9bfdd}.small{font-size:.87rem}
+section{background:#211b2f;padding:20px;border:1px solid #443759;border-radius:15px;margin:15px 0}
+input,button,select{font:inherit;border:1px solid #66537f;border-radius:9px;padding:10px;min-height:40px}
+input,select{background:#141020;color:#fff}input[type=email]{width:100%;max-width:395px}
+input[type=search]{width:100%;max-width:360px}
+button{cursor:pointer;background:#6546af;color:white;font-weight:700}button.alt{background:#2e2541}
+button:disabled{opacity:.55;cursor:wait}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.status{min-height:24px;margin:12px 0 0;color:#d6c7f7}.status.error{color:#ffb5b5}.status.ok{color:#a7e8c0}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;min-width:760px;width:100%;font-size:.87rem}
+td,th{text-align:left;padding:11px 8px;border-bottom:1px solid #483c5c}
+td:first-child{overflow-wrap:anywhere;max-width:280px}td select{width:100%;min-width:115px;font-size:.83rem}
+#data[hidden],#login[hidden]{display:none}footer{font-size:.82rem;color:#c9bfdd;margin:28px 0}
+@media(max-width:650px){.row>*{max-width:100%;width:100%}}
+</style><script src="./pilote-sources-privees.js?v=1" defer></script></head>
+<body><main>
+<header><h1>🔒 IFSI ABC — Pilote des sources privées</h1>
+<p class="sub">Page de test indépendante des écrans étudiants. Les données ne sont accessibles qu'au propriétaire authentifié.</p></header>
+<section id="login"><h2>Connexion propriétaire par Magic Link</h2>
+<p class="sub small">Saisis ton adresse Supabase. Le lien reçu par e-mail revient sur cette page pilote.</p>
+<div class="row"><input type="email" autocomplete="email" id="email" aria-label="Adresse du propriétaire" placeholder="Adresse du compte Supabase"><button type="button" id="send">Recevoir un lien de connexion</button></div>
+<p id="loginStatus" class="status" role="status" aria-live="polite"></p></section>
+<section id="data" hidden>
+<div class="row" style="justify-content:space-between"><div><h2>Mes sources — Google Sheets privé</h2>
+<p class="small sub">Seules les colonnes Transcript, Captures et Support officiel sont modifiables.</p></div>
+<div class="row"><button type="button" id="refresh" class="alt">Actualiser</button><button type="button" id="logout" class="alt">Déconnexion</button></div></div>
+<p id="syncStatus" class="status" role="status" aria-live="polite"></p>
+<div class="row" style="margin:10px 0"><input type="search" id="filter" aria-label="Rechercher un cours" placeholder="Rechercher par identifiant"><span id="count" class="sub small"></span></div>
+<div class="tablewrap"><table><thead><tr><th>Cours</th><th>Transcript</th><th>Captures</th><th>Support officiel</th><th>Production</th></tr></thead><tbody id="tableBody"></tbody></table></div></section>
+<footer>Cette page est publiquement accessible mais ne contient aucun document privé. Le serveur vérifie le compte propriétaire avant toute lecture ou modification. Les jetons sont gardés uniquement en mémoire et effacés de l'URL à leur réception.</footer>
+</main></body></html>
