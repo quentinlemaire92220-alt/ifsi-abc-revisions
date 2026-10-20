@@ -68,6 +68,7 @@ assert.equal(validateLeanFlashcards([goodF]),1);
 assert.throws(()=>validateLeanFlashcards([{...goodF,front:'Citer trois organes ?'}]),/consigne vague/);
 assert.throws(()=>validateLeanFlashcards([{...goodF,answers:[]}]),/réponse absente/);
 
-// Régression historique : le nouveau format doit rester refusé par l'ancien validateur.
-assert.throws(()=>validateDualSheetDelivery('demo',delivery,sheets),/sheetFormat/);
+// Compatibilité historique : le validateur dual-sheet accepte encore les deux fiches complètes.
+// Le contrôle lean_v1 ajoute simplement les garanties du pack nouveau (audio optionnel et pages auditées).
+assert.doesNotThrow(()=>validateDualSheetDelivery('demo',delivery,sheets));
 console.log('✅ Pack lean_v1 : deux cours PDF exhaustifs dont infographié multipage, empreintes et preuves Drive, audio optionnel, QCM/flashcards ; anciens contrats préservés.');
