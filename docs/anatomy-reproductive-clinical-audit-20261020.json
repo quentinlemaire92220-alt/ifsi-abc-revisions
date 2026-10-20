@@ -10,7 +10,7 @@
   "masterRef": "Planche_05_Cellule_humaine_HD.png",
   "usage": "Les images sont en galerie provisoire, ne pas s'en servir pour évaluer connaissances avant corrections validées.",
   "R01": {
-    "status": "CANVA_NEW_DRAFT_REQUESTED",
+    "status": "CANVA_DRAFT_FOUND_NEEDS_VISUAL_REVIEW",
     "referenceSlides": "5-23",
     "required": [
       "vessie",
@@ -24,7 +24,17 @@
       "pénis",
       "rectum"
     ],
-    "notes": "Nouvelle planche sagittale demandée à Canva, ne pas incorporer à l'atlas publié sans revue anatomique et de droits."
+    "notes": "Canva design found on 20 Oct. Labels present in text; exact arrows and pelvic spatial relationships not yet visually validated. Do not include in public gallery or quizzes.",
+    "designId": "DAHYhp3M2ck",
+    "pageCount": 1,
+    "source": "Canva editable A4, title: R01 — Appareil génital masculin : vue d’ensemble",
+    "textReview": {
+      "allRequiredTextPresent": true,
+      "clinicalPointerReview": false,
+      "highResolutionExportVerified": false,
+      "rightsProvenanceReviewed": false,
+      "userApproved": false
+    }
   },
   "boards": [
     {
