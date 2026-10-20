@@ -65,6 +65,9 @@ jobs:
       - name: TNR nouveau pack allégé et anciens contrats
         run: node tests/lean-course-contract-test.mjs
 
+      - name: TNR cardinalité QCM dans le Service Worker
+        run: node tests/lean-qcm-sw-guard-test.mjs
+
       - name: TNR chaîne de production locale du pack allégé
         run: python tests/lean-course-pack-test.py
 
