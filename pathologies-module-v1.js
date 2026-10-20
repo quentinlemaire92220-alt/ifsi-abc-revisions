@@ -99,8 +99,7 @@ function list(){
  byId('pathoSearch').oninput=redraw;byId('pathoSystem').onchange=redraw;redraw();
 }
 function links(item){
- const ids=item.courseIds.map(id=>esc(id)).join(' · ');
- return '<p class="patho-muted">Cours liés (identifiants) : '+ids+'. Accéder aux documents depuis la rubrique Cours.</p>';
+ return '<p class="patho-muted">Cours associés à cette pathologie :</p><div class="patho-toolbar">'+item.courseIds.map(id=>'<button type="button" class="btn outline" data-patho-course="'+esc(id)+'">'+esc(id.replaceAll('_',' '))+' ↗</button>').join('')+'</div>';
 }
 function renderSheet(item){
  return REQUIRED.map(k=>'<div class="patho-panel"><h3>'+esc(LABELS[k])+'</h3><p>'+esc(item.sections[k])+'</p></div>').join('')+
@@ -110,7 +109,7 @@ function renderQuestion(item,q,kind){
  const key='pathoAnswer',multi=q.correct.length>1;
  return '<div class="patho-panel"><p class="patho-muted">'+esc(kind)+' • '+(state.index+1)+' / '+(kind==='QCM'?item.qcm.length:1)+'</p><h3>'+esc(q.prompt)+'</h3><div class="patho-options">'+q.options.map((opt,i)=>'<label><input type="'+(multi?'checkbox':'radio')+'" name="'+key+'" value="'+i+'" '+(state.submitted?'disabled':'')+' '+(state.selected.includes(i)?'checked':'')+'><span>'+esc(opt)+'</span></label>').join('')+'</div>'+
  (state.submitted?renderCorrection(q):action('Valider ma réponse','id="pathoValidate"',true))+
- '<div class="patho-toolbar">'+action('Recommencer','id="pathoRetry"')+action('Suivant','id="pathoNext"')+'</div></div>';
+ '<div class="patho-toolbar">'+action('Recommencer','id="pathoRetry"')+action('Suivant','id="pathoNext"'+(state.submitted?'':' disabled'))+'</div></div>';
 }
 function renderCorrection(q){
  const report=evaluate(q,state.selected);
@@ -132,6 +131,11 @@ function render(){
  (state.mode==='fiche'?renderSheet(item):state.mode==='qcm'?renderQuestion(item,item.qcm[state.index%item.qcm.length],'QCM'):state.mode==='flashcards'?renderCard(item):renderCase(item))+'</div>';
  byId('pathoBack').onclick=()=>{state.id=null;list();};
  host.querySelectorAll('[data-pathomode]').forEach(b=>b.onclick=()=>reset(item,b.dataset.pathomode));
+ host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>{
+  const id=b.dataset.pathoCourse;
+  if(root.IFSI_V82?.showSystemBoards&&/^systeme_|^appareil_/.test(id))root.IFSI_V82.showSystemBoards(id);
+  else root.show?.('home');
+ });
  byId('pathoFlip')?.addEventListener('click',()=>{state.flipped=!state.flipped;render();});
  byId('pathoValidate')?.addEventListener('click',()=>{
   const checked=[...host.querySelectorAll('input[name="pathoAnswer"]:checked')].map(el=>+el.value);
