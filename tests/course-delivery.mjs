@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {validateDualSheetDelivery,validateSheetSource} from './dual-sheet-contract.mjs';
+import {validateLeanCourseDelivery,validateLeanPart} from './lean-course-contract.mjs';
+import {validateLeanQuestions,validateLeanFlashcards} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -23,7 +25,8 @@ for(const c of manifest.courses){
  for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
  // Les cours anciens sont conservés ; les deux fiches sont exigées pour les nouveaux cours et parties.
- if(c.infographicSheetResourceId||c.revisionSheetMode==='single_with_complete_boards')validateDualSheetDelivery(c.courseId,c,sheets);
+ if(c.packFormat==='lean_v1')validateLeanCourseDelivery(c.courseId,c,sheets);
+ else if(c.infographicSheetResourceId||c.revisionSheetMode==='single_with_complete_boards')validateDualSheetDelivery(c.courseId,c,sheets);
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  validateSheetSource(c.courseId,c,sheet);
@@ -49,6 +52,7 @@ for(const c of manifest.courses){
   assert.ok(['easy','medium','hard'].includes(q.difficulty),q.id+': niveau absent');
   assert.ok(q.theme&&q.explanation.length>25,q.id+': thème/corrigé absent');
  }
+ if(c.packFormat==='lean_v1')validateLeanQuestions(bank);
  let cards=deck.filter(x=>x.courseId===c.courseId && !String(x.id).startsWith('voc:')); // Les cartes de livraison sont distinctes des cartes de vocabulaire générées.
  if(c.deliveryQuestionScope==='declared_parts'){
   assert.equal(c.revisionSheetMode,'single_with_complete_boards','Portée partielle sans format de livraison explicite');
@@ -58,6 +62,7 @@ for(const c of manifest.courses){
   cards=cards.filter(card=>delivered.has(card.qid));
  }
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
+ if(c.packFormat==='lean_v1')validateLeanFlashcards(cards);
  assert.ok(c.flashcardDriveId,'Export Flashcards absent');
  for(const card of cards){
   assert.ok(card.front.endsWith('?')&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
@@ -68,6 +73,7 @@ for(const c of manifest.courses){
  const partDeliveries=c.partDeliveries||[];
  for(const part of partDeliveries){
   assert.match(part.partId||'',/^p\d{2,3}$/,c.courseId+': partId incorrect');
+  if(part.packFormat==='lean_v1')validateLeanPart(c.courseId,part,sheets);
   for(const id of part.sheetResourceIds||[]){
    assert.ok(sheets.some(x=>x.resourceId===id&&x.courseId===c.courseId),
      c.courseId+': fiche de partie absente '+part.partId);
@@ -85,7 +91,7 @@ for(const c of manifest.courses){
      c.courseId+': vocal de partie absent '+part.partId);
   }
  }
- assert.ok(c.infographicResourceIds.length,'Infographies absentes');
+ if(c.packFormat!=='lean_v1')assert.ok(c.infographicResourceIds.length,'Infographies absentes');
  for(const id of c.infographicResourceIds){
   const x=infos.find(x=>x.resourceId===id);
   assert.equal(x?.courseId,c.courseId,'Infographie mal rattachée');
@@ -93,7 +99,7 @@ for(const c of manifest.courses){
  }
  if(c.status==='complete'){
   assert.equal(c.blockers.length,0,'Un pack complet ne peut avoir de blocage');
-  assert.ok(c.vocals.length>0,'Pack complet sans vocal');
+  if(c.packFormat!=='lean_v1'||c.requestedVocals===true)assert.ok(c.vocals.length>0,'Pack complet sans vocal demandé');
  }else if(c.status==='awaiting_mp3'){
   assert.equal(c.vocals.length,0,'Audio publié avant le retour des MP3');
   assert.ok(c.vocalScripts.length>0,'Scripts vocaux absents');
@@ -102,7 +108,7 @@ for(const c of manifest.courses){
  }else{
   assert.equal(c.status,'partial','Statut de livraison inconnu');
   assert.ok(c.blockers.length,'Livraison partielle sans explication');
-  assert.ok(c.vocals.length||c.blockers.some(x=>x.resource==='vocals'),'Vocaux oubliés silencieusement');
+  if(c.packFormat!=='lean_v1'||c.requestedVocals===true)assert.ok(c.vocals.length||c.blockers.some(x=>x.resource==='vocals'),'Vocaux oubliés silencieusement');
  }
  for(const id of c.vocals)assert.ok(vocals.some(x=>x.id===id&&x.courseId===c.courseId&&x.driveId),'Vocal absent');
  console.log(`✅ ${c.courseId}: ${bank.length} QCM, ${cards.length} cartes, ${c.infographicResourceIds.length} infographies — ${c.status}`);
