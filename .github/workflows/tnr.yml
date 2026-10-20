@@ -62,6 +62,12 @@ jobs:
       - name: TNR contrat des deux fiches et preuves PDF
         run: node tests/dual-sheet-contract-test.mjs
 
+      - name: TNR nouveau pack allégé et anciens contrats
+        run: node tests/lean-course-contract-test.mjs
+
+      - name: TNR chaîne de production locale du pack allégé
+        run: python tests/lean-course-pack-test.py
+
       - name: TNR registre prive des sources manquantes v1.15
         run: node tests/source-followup-v115-test.mjs
 
