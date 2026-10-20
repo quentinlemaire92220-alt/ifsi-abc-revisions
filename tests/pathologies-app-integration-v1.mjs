@@ -48,7 +48,7 @@ assert.ok(engineCode.includes('Contenu en cours de validation'),'Visible shell m
 assert.ok(engineCode.includes('nav.classList.add('),'Approved-only navigation CSS not activated');
 function mockedBrowser(){
  const elements={};const navButtons=[];const navClasses=new Set();
- const make=()=>({innerHTML:'',className:'',classList:{add(){},remove(){}},addEventListener(){},querySelectorAll(){return []},dataset:{}});
+ const make=()=>{const el={_html:'',className:'',classList:{add(){},remove(){}},addEventListener(){},querySelectorAll(){return []},dataset:{}};Object.defineProperty(el,'innerHTML',{get(){return this._html},set(v){this._html=v;for(const m of String(v).matchAll(/id="([^"]+)"/g)){if(!elements[m[1]])elements[m[1]]=make();}}});return el;};
  const nav={classList:{add(v){navClasses.add(v)},remove(v){navClasses.delete(v)}},appendChild(el){navButtons.push(el);elements[el.id]=el;}};
  const existing=make();existing.id='ifsiPathologiesNav';elements[existing.id]=existing;navButtons.push(existing);
  const app={querySelector(selector){return selector==='nav'?nav:null},insertBefore(el){elements[el.id]=el;elements.ifsiPathologiesBody=make();},appendChild(el){this.insertBefore(el);}};
@@ -63,8 +63,12 @@ assert.ok(browser.navClasses.has('ifsi-pathologies-ready'),'La coque doit appliq
 assert.equal(publicShell.IFSI_PATHOLOGIES_BOOT.start().mounted,false,'Aucun contenu médical approuvé ne doit être activé');
 publicShell.IFSI_PATHOLOGIES.open();
 const placeholder=browser.elements.ifsiPathologiesBody.innerHTML;
-for(const title of ['BPCO','Hypertension artérielle (HTA)','Diabète de type 2'])assert.ok(placeholder.includes(title),'Entrée non médicale absente : '+title);
-assert.ok(placeholder.includes('en cours de validation médicale'),'Le statut médical non approuvé doit être explicite');
+assert.ok(placeholder.includes('id="pathoResults"'),'Catalogue Pathologies non créé');
+const overview=browser.elements.pathoResults.innerHTML;
+for(const title of ['BPCO','Hypertension artérielle (HTA)','Diabète de type 2'])assert.ok(overview.includes(title),'Entrée non médicale absente : '+title);
+assert.equal((overview.match(/<details class="patho-group"/g)||[]).length,3,'Les trois volets systèmes doivent être déroulants');
+assert.ok(!overview.includes('data-patho-course'),'Aucun clic de pathologie ne doit ouvrir directement un cours');
+assert.ok(overview.includes('En cours de validation médicale'),'Le statut médical non approuvé doit être explicite');
 assert.ok(!placeholder.includes('Bonne réponse :'),'Aucun contenu QCM privé ne doit apparaître dans la coque');
 assert.ok(!placeholder.includes('https://drive.google.com/file/d/'),'Aucun lien clinique privé ne doit être inséré');
 
