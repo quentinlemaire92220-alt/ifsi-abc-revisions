@@ -86,6 +86,9 @@ jobs:
       - name: Vérifier la nouvelle méthode de production anatomique SVG
         run: node tests/anatomy-svg-production-v1.mjs
 
+      - name: Vérifier le plan de reprise SVG R03/R05 sans flèches inventées
+        run: node tests/anatomy-r03-r05-svg-rebuild-gate.mjs
+
       - name: TNR R03 et R05 corrigés — exports Canva 20 octobre
         run: node tests/anatomy-reproductive-refresh-v8404.mjs
 
