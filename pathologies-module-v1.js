@@ -42,7 +42,7 @@ function validate(item){
  if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c?.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
  if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x?.id)))errors.push('Cas cliniques absents ou dupliqués');
  else item.cases.forEach(c=>{
-  if(!text(c?.id)||!text(c?.title)||!text(c?.context)||!nonEmpty(c?.steps))errors.push('Cas incomplet : '+(c.id||'?'));
+  if(!text(c?.id)||!text(c?.title)||!text(c?.context)||!nonEmpty(c?.steps))errors.push('Cas incomplet : '+(c?.id||'?'));
   else c.steps.forEach((s,i)=>checkOptions({...s,id:s.id||('step_'+i),correct:[s.correct]},'Cas '+c.id+' étape '+(i+1),errors));
  });
  if(!approved(item?.publicationApproval))errors.push('Publication non autorisée : GO publication et empreinte requis');
