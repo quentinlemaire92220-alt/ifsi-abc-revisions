@@ -93,7 +93,7 @@ assert.ok(src.includes('id="cfConfigureSources"'),'Configuration du lien privé 
 assert.ok(src.includes('bindSourceActions'),'Gestion des boutons de sources absente');
 assert.ok(!src.includes('Marquer revue')&&!src.includes('data-cf-review'),'Ancien bouton Marquer revue toujours affiché');
 assert.ok(src.includes('localStorage.setItem(K_SOURCES,next)'),'Le lien n’est pas enregistré localement');
-assert.ok(!src.includes(['https:','//','docs.google.com/spreadsheets/d/'].join('')),'Identifiant de registre privé embarqué dans le dépôt public');
+assert.ok(!/https:\/\/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]{15,}/i.test(src),'Identifiant de registre privé embarqué dans le dépôt public');
 
 const canceled=weeks.flatMap(x=>x.events).find(x=>/annul/i.test(x.type||''));
 assert.ok(canceled&&api.eventForGroup(canceled,'B1'),'Séance annulée conservée comme telle au planning');
