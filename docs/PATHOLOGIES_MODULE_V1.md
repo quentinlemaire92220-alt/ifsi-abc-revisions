@@ -39,6 +39,17 @@ Le JavaScript offre quatre vues : Fiche, QCM, Flashcards (réponse cachée jusqu
 - **Non couvert à ce stade :** revue médicale BPCO, export PDF, inspection infographies, tests d'accessibilité navigateur et validation du catalogue réel. Ils doivent être réalisés *avant* activation.
 - Ne pas importer des dossiers patients, transcriptions nominatives, captures officielles ou brouillons pédagogiques dans le dépôt public.
 
+## Standard visuel obligatoire des pathologies — approbation de forme BPCO (20/10/2026)
+
+Le **modèle maître de forme** pour les fiches et planches Pathologies correspond au style des infographies BPCO présentées et validées le 20 octobre 2026. Appliquer `docs/skills/production-pathologies-infographies-cliniques.md` et `docs/skills/production-fiches-revision-infographies-originales.md`.
+
+- **Toute représentation schématique dans une fiche Pathologies est obligatoirement une infographie pédagogique originale**, sourcée, lisible, avec titre, illustration dominante, flèches/repères contrôlés, légendes françaises et conclusion de révision. Aucun schéma brut, capture d'enseignant, illustration isolée ou simple grille de texte décoratif.
+- Intégrer les visuels **dans** les sections médicales correspondant à leur mécanisme, et fournir les planches séparées lorsque prévu ; pas de collage de miniatures en fin de fiche.
+- **Nombre de planches variable :** la BPCO a fixé le style et non un quota universel de 10 figures ou 6 pages.
+- **Deux validations indépendantes :** validation du style (accordée) et validation médicale/éditoriale de **chaque** pathologie (reste requise, notamment pour les images BPCO déjà générées). Aucune recommandation, seuil ou illustration ne devient automatiquement une source de vérité parce qu'elle apparaît dans un visuel validé pour sa forme.
+- Avant toute publication : cartographie source→concept→infographie, contrôles médicaux des organes/flèches/indications/mesures, rendu final PDF de toutes les pages, contrôle à 100 % et sur mobile, corrections, package privé et GO publication **explicite**. Les QCM/atlas anatomiques conservent leur contrat visuel distinct.
+- Les chartes Drive **00_CHARTE_CREATION_SUPPORTS_IFSI_CONSOLIDEE_v1.31** et **CHARTE_IFSI_FICHES_QCM_v1.45_PROMPTABLE_ILLUSTREE** contiennent l'annexe normative du 20/10/2026. Ne pas y ajouter les pièces privées du pilote.
+
 ## Suite après validation du pilote
 
 Étendre le même modèle à HTA et diabète, en conservant un seul registre et une progression par année plutôt qu'une collection parallèle de QCM.
