@@ -15,13 +15,19 @@ with TemporaryDirectory() as d:
     PILImage.new("RGB",(1100,800),(151,202,219)).save(root/"figure.png")
     lesson={
         "title":"Système fictif — UE B1",
+        "courseMeta":"UE B1 • Simulation pédagogique • Document de test",
+        "revisionPriorities":["Comprendre le circuit simulé et son fonctionnement.",
+                              "Distinguer les trois notions principales sans illustration."],
         "notions":[{"id":"a","sourcePage":"officiel p.2"},{"id":"b","sourcePage":"officiel p.3"},
                    {"id":"c","sourcePage":"officiel p.4"}],
         "sections":[
           {"heading":"Première notion","notionIds":["a","b"],
            "paragraphs":["La première notion est expliquée clairement, sans remplacer le texte par une figure.",
                          "La deuxième notion apporte une nuance utile au raisonnement."],
-           "figure":{"path":"figure.png","caption":"Illustration didactique contrôlée"}},
+           "figure":{"path":"figure.png","caption":"Illustration didactique contrôlée"},
+           "tables":[{"headers":["Élément","Rôle essentiel"],
+                      "rows":[["Notion A","Un principe explicatif entièrement textuel."],
+                              ["Notion B","Un autre mécanisme important pour la révision."]]}]},
           {"heading":"Troisième notion","notionIds":["c"],
            "paragraphs":["La troisième notion est présente dans le cours détaillé mais pas obligatoirement dans la synthèse."]}
         ],
@@ -49,6 +55,9 @@ with TemporaryDirectory() as d:
     out=root/"private"
     report=make_pack(lesson,root,out)
     assert report["status"]=="DRAFT_REVIEW_ONLY"
+    assert report["styleReview"]["REVISION_TEXT_FIRST"]=="REVIEW_REQUIRED"
+    assert report["styleReview"]["INFOGRAPHIC_VISUAL_FIRST"]=="REVIEW_REQUIRED"
+    assert report["styleReview"]["revisionReference"].endswith("Fiche_Revision_Coeur_Vaisseaux_et_Sang.pdf")
     assert report["publicationApproval"]=="NOT_GRANTED"
     assert report["notions"]==3 and report["infographicCoveredNotions"]==3
     assert not (out/"04_Infographies").exists(), "Aucun export automatique attendu"
@@ -60,6 +69,10 @@ with TemporaryDirectory() as d:
     with fitz.open(out/"Fiche_Revision.pdf") as c:
         text="\n".join(page.get_text() for page in c)
         assert "Troisième notion" in text, "La fiche doit conserver toutes les sections"
+        assert "PRIORITÉS POUR" in text and "Rôle essentiel" in text, "Texte et tableaux de la fiche absents"
+        assert "Notion A" in text, "Le tableau doit rester dans le PDF révisable"
+        # Une fiche textuelle n'a PAS besoin d'une image dans chaque section.
+        assert len(c)>=1
     with fitz.open(out/"QCM_Corrige.pdf") as q:
         text="\n".join(page.get_text() for page in q)
         assert "Corrigé argumenté" in text and "A, C" in text
