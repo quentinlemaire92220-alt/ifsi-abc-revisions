@@ -13,7 +13,7 @@ Les vocaux TXT/MP3, lexiques autonomes et exports de toutes les images ne sont p
 
 ## Source de vérité et production privée
 
-Créer UNE matrice privée sourcée : `title`, `notions:[{id,sourcePage}]`, `sections:[{heading,notionIds,paragraphs,figure?}]`, `infographicPanels:[{heading,body,notionIds,figure?,sourcePages?}]`, `qcmQuestions:[...]`, `flashcards:[{id,qid,front,answers,explanation}]`. Les unions de `notionIds` dans **sections et infographicPanels** doivent chacune recouvrir EXACTEMENT toutes les notions de la matrice officielle. La machine vérifie l'inventaire, pas la véracité médicale du texte : inspection pédagogique, scientifique et visuelle impérative.
+Créer UNE matrice privée sourcée : `title`, `notions:[{id,sourcePage}]`, `sections:[{heading,notionIds,paragraphs,figure?}]`, `infographicPanels:[{heading,body,notionIds,figure?,sourcePages?}]`, `qcmQuestions:[...]`, `flashcards:[{id,qid,front,answers,explanation}]`. Les unions de `notionIds` dans **sections et infographicPanels** doivent chacune recouvrir EXACTEMENT toutes les notions de la matrice officielle. Chaque panneau `infographicPanels` doit contenir un `figure:{path,caption}` original, validé et associé à une explication courte : le générateur refuse les panneaux sans visuel, les blocs trop textuels et les pages PDF sans image. Une image peut être réutilisée uniquement lorsqu'elle sert réellement la notion ; l'exemple de test fictif ne vaut pas charte de réutilisation. La machine vérifie l'inventaire, pas la véracité médicale du texte : inspection pédagogique, scientifique et visuelle impérative.
 
 ```bash
 python -m pip install reportlab==4.4.9 Pillow pymupdf==1.26.7
