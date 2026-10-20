@@ -3,17 +3,38 @@
 // Suivi public : catalogue et planning déjà publiés uniquement.
 // Aucun accès réseau aux registres personnels ; pas de synchronisation de l'état local.
 const SECTION='courseFollowup';
-const K_GROUP='ifsiabc_followup_group_v1',K_REVIEW='ifsiabc_followup_review_v1';
+const K_GROUP='ifsiabc_followup_group_v1',K_SOURCES='ifsiabc_followup_private_sources_v1';
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\u0027':'&#39;'}[c]));
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const resource=()=>window.IFSI_V741;
 const registry=()=>resource()?.getRegistry?.()?.courses||[];
 const emptyResources=()=>({questions:[],sheets:[],infographics:[],vocals:[]});
-function safeRead(){
- try{const v=JSON.parse(localStorage.getItem(K_REVIEW)||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{}}catch{return {}}
+function validSourcesUrl(url){
+ return /^https:\/\/docs\.google\.com\/spreadsheets\/d\/[a-z0-9_-]+(?:\/[a-z0-9_/?#=&.%-]*)?$/i.test(String(url||'').trim());
 }
-function saveReview(key,reviewed){const all=safeRead();if(reviewed)all[key]=true;else delete all[key];try{localStorage.setItem(K_REVIEW,JSON.stringify(all))}catch{}}
+function configuredSourcesUrl(){
+ try{const url=localStorage.getItem(K_SOURCES)||'';return validSourcesUrl(url)?url:''}catch{return ''}
+}
+function configureSources(){
+ const previous=configuredSourcesUrl();
+ const url=window.prompt?.('Coller le lien Google Sheets de votre registre personnel. Il restera enregistré uniquement sur cet appareil. Laisser vide pour effacer le raccourci.',previous);
+ if(url===null||url===undefined)return false;
+ const next=String(url).trim();
+ if(!next){try{localStorage.removeItem(K_SOURCES)}catch{};return false}
+ if(!validSourcesUrl(next)){window.alert?.('Lien refusé : utiliser une URL Google Sheets https://docs.google.com/spreadsheets/d/...');return false}
+ try{localStorage.setItem(K_SOURCES,next)}catch{window.alert?.('Enregistrement local impossible sur cet appareil.');return false}
+ return true;
+}
+function openSources(){
+ let url=configuredSourcesUrl();
+ if(!url){if(!configureSources())return;url=configuredSourcesUrl()}
+ if(url)window.open?.(url,'_blank','noopener,noreferrer');
+}
+function bindSourceActions(){
+ document.querySelectorAll('[data-cf-sources]').forEach(button=>button.onclick=()=>openSources());
+ if($('cfConfigureSources'))$('cfConfigureSources').onclick=()=>configureSources();
+}
 function group(){
  try{const v=localStorage.getItem(K_GROUP);return ['A1','A2','B1','B2'].includes(v)?v:'B1'}catch{return 'B1'}
 }
@@ -126,7 +147,7 @@ function renderResources(models){
   return '<article class="cf-card"><div class="row"><h3>'+esc(m.label)+'</h3><span class="cf-pill">'+esc(m.ue)+'</span></div>'+
    '<div class="cf-meta"><span class="cf-signal">'+(m.toReview?'À vérifier':'Inventaire référencé')+'</span></div>'+
    details.map(x=>'<div class="cf-row"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b></div>').join('')+
-   '<div class="cf-meta"><button class="btn secondary" data-cf-course="'+esc(m.id)+'">Ouvrir le cours</button>'+
+   '<div class="cf-meta"><button class="btn secondary" data-cf-course="'+esc(m.id)+'">Ouvrir le cours</button><button class="btn outline" type="button" data-cf-sources>Mes sources ↗</button>'+
    (url?'<a class="btn outline" target="_blank" rel="noopener noreferrer" href="'+esc(url)+'">Support officiel ↗</a>':'')+
    '</div></article>';
  }).join(''):'<p class="cf-muted">Aucun cours ne correspond aux filtres.</p>')+'</div>';
@@ -134,18 +155,18 @@ function renderResources(models){
 function renderAgenda(){
  const g=group(),w=weeks(),id=$('cfWeek')?.value||w.find(x=>today()>=x.start&&today()<=x.end)?.id||w.at(-1)?.id;
  const week=w.find(x=>x.id===id)||w.at(-1);
- const filtered=eventsForWeek(week,g),review=safeRead();
+ const filtered=eventsForWeek(week,g);
  const options=w.map(x=>'<option value="'+esc(x.id)+'"'+(x.id===id?' selected':'')+'>'+esc(x.label)+' · '+esc(x.range||'')+'</option>').join('');
  const arr=filtered.map(e=>{
-  const canceled=/annul/i.test(e.type||''),future=e.date>today(),key=sessionKey(e,g),seen=!!review[key];
-  const state=canceled?'Annulé':future?'À venir':seen?'Revue notée':'À confirmer';
+  const future=e.date>today();
+  const state=future?'À venir':'Date passée';
   const note=isAmbiguous(e)?' · Affectation à vérifier':'';
-  const btn=!canceled&&!future?'<button class="btn outline" data-cf-review="'+esc(encodeURIComponent(key))+'" aria-pressed="'+seen+'">'+(seen?'✓ Revue':'Marquer revue')+'</button>':'';
+  const btn='<button class="btn outline" data-cf-sources type="button">Mes sources ↗</button>';
   return '<article class="cf-card cf-session"><div class="cf-muted cf-when">'+esc(e.date)+'<div>'+esc(e.start)+'–'+esc(e.end)+'</div></div>'+
    '<div><b>'+esc(e.title)+'</b><div class="cf-muted">'+esc(e.ue||'Séance')+' · '+esc(e.type||'Cours')+esc(note)+'</div>'+
    '<span class="cf-signal">'+esc(state)+'</span></div>'+btn+'</article>';
  }).join('');
- return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Suivi des séances pédagogiques hors simulations et asynchrones. Ces créneaux restent visibles dans le calendrier général. « Revue » est une note personnelle, pas une validation de contenu.</p>'+
+ return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Suivi des séances pédagogiques hors simulations et asynchrones. Les états des sources personnelles sont à consulter dans votre registre Google Sheets privé ; aucune donnée privée n’est récupérée par cette page.</p>'+
   '<div class="cf-controls"><select id="cfGroup" aria-label="Groupe">'+['A1','A2','B1','B2'].map(x=>'<option'+(x===g?' selected':'')+'>'+x+'</option>').join('')+'</select>'+
   '<select id="cfWeek" aria-label="Semaine">'+options+'</select></div>'+
   '<div class="cf-agenda">'+(arr||'<p class="cf-muted">Aucune séance pédagogique à réviser pour ce groupe cette semaine.</p>')+'</div></div>';
@@ -165,23 +186,25 @@ function render(){
  sec.innerHTML='<div class="cf-head"><button id="cfBackSettings" class="btn outline" type="button" style="margin-bottom:10px">← Paramètres</button><h2>✅ Suivi des cours</h2>'+
  '<p class="cf-muted">État du catalogue public. Les quantités indiquent les ressources référencées, pas leur conformité pédagogique ni leur disponibilité réelle sur Drive.</p>'+
  '<div class="cf-meta"><span class="cf-pill">'+models.length+' cours visibles</span><span class="cf-pill">'+issue+' à vérifier dans le catalogue</span></div>'+
- '<p class="cf-muted">Un support sans lien catalogué peut exister sur Drive. Aucun statut de source personnelle n’est visible ici.</p>'+
+ '<p class="cf-muted">Un support sans lien catalogué peut exister sur Drive. Les données personnelles restent dans votre registre privé, pas dans l’application publique.</p>'+
+ '<div class="cf-meta"><button id="cfOpenSources" class="btn secondary" type="button" data-cf-sources>🔒 Ouvrir mes sources</button><button id="cfConfigureSources" class="btn outline" type="button">Configurer le lien privé</button></div>'+
+ '<p class="cf-muted">Le raccourci est enregistré uniquement sur cet appareil et Google Drive vérifie vos droits. Les états ne se synchronisent pas directement avec l’application.</p>'+
  controls+'</div><div id="cfResourceResults">'+renderResources(models)+'</div>'+renderAgenda();
  if(existingWeek&&weeks().some(w=>w.id===existingWeek)){$('cfWeek').value=existingWeek;updateAgendaOnly()}
  $('cfUe').onchange=e=>{ueFilter=e.target.value;updateResults()};
  $('cfStatus').onchange=e=>{statusFilter=e.target.value;updateResults()};
  $('cfSearch').oninput=e=>{textFilter=e.target.value;updateResults()};
   $('cfBackSettings').onclick=()=>window.IFSI_V87?.showSettings?.();
- bindAgenda();
+ bindAgenda();bindSourceActions();
  sec.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));
 }
-function updateResults(){const out=$('cfResourceResults');if(!out)return;out.innerHTML=renderResources(visibleModels());out.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse))}
+function updateResults(){const out=$('cfResourceResults');if(!out)return;out.innerHTML=renderResources(visibleModels());out.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));bindSourceActions()}
 function openCourse(id){hide();if(window.IFSI_V813?.openCourse)return window.IFSI_V813.openCourse(id);window.showCourses74?.()}
-function updateAgendaOnly(){const sec=$(SECTION);if(!sec)return;const replacement=document.createElement('div');replacement.innerHTML=renderAgenda();sec.querySelector('.cf-head:last-child')?.replaceWith(replacement.firstElementChild);bindAgenda()}
+function updateAgendaOnly(){const sec=$(SECTION);if(!sec)return;const replacement=document.createElement('div');replacement.innerHTML=renderAgenda();sec.querySelector('.cf-head:last-child')?.replaceWith(replacement.firstElementChild);bindAgenda();bindSourceActions()}
 function bindAgenda(){
  $('cfGroup')?.addEventListener('change',e=>{setGroup(e.target.value);updateAgendaOnly()});
  $('cfWeek')?.addEventListener('change',()=>updateAgendaOnly());
- document.querySelectorAll('[data-cf-review]').forEach(b=>b.onclick=()=>{const k=decodeURIComponent(b.dataset.cfReview);saveReview(k,!safeRead()[k]);updateAgendaOnly()});
+ // Les anciennes notes « revue » restent intactes dans le navigateur, mais ne sont plus proposées.
 }
 function hide(){$(SECTION)?.classList.add('hidden')}
 function show(){
@@ -196,5 +219,5 @@ function init(){css();return section()&&bindBottomNavigation()}
 let tries=0,t=setInterval(()=>{if(init()||++tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
 window.addEventListener('ifsi:vocabulary-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
-window.IFSI_COURSE_FOLLOWUP={version:'1.2',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey};
+window.IFSI_COURSE_FOLLOWUP={version:'1.3',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey,validSourcesUrl};
 })();
