@@ -71,6 +71,9 @@ jobs:
       - name: TNR suivi des cours et confidentialité
         run: node tests/course-followup-v1.mjs
 
+      - name: TNR pilote privé Google Sheets via Supabase Auth
+        run: node tests/private-source-sync-contract.mjs
+
       - name: TNR classement des nouvelles planches dans Anatomie
         run: node tests/anatomy-routing-contract-test.mjs
 
