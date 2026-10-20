@@ -26,6 +26,7 @@ export async function runtimeDeck({allCards=false}={}){
   let source=read('course-registry-v741.js').replace('let registry=null,','let registry=registryFixture,');
   source=source.replace('window.IFSI_V741={','buildCourseIndexes();attachIds();rebuildResourceIndex();window.IFSI_V741={');
   vm.runInContext(source,context);
+  if(fs.existsSync('p3-vocabulary-flashcards.js'))vm.runInContext(read('p3-vocabulary-flashcards.js'),context);
   const vocab=read('v8355-vocabulary.js');
   const before=vocab.slice(0,vocab.indexOf('function ensure(){')).replace(/let data=\[\]/,'let data=vocabFixture');
   context.vocabFixture=JSON.parse(read('vocabulaire-v1.json')).entries;
