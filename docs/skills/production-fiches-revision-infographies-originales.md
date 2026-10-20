@@ -47,9 +47,9 @@ Le pilote est une validation **de forme** uniquement. Toute nouvelle matière n�
 ## 3. Workflow automatique sans aller-retour de consignes
 
 1. **Lire les sources dans cet ordre** : support officiel de l'intervenant, puis compléments oraux / transcript lorsque disponibles, puis notes. Respecter l'ordre du cours et distinguer les apports non attestés par le support écrit ; ne jamais publier de transcript brut.
-2. **Inventorier les visuels utiles** : associer à chaque notion/diapositive une proposition d'infographie **distincte**. Établir brièvement : section de fiche, source scientifique (diapo/page), objectif d'apprentissage, repères requis, pièges médicaux à éviter.
+2. **Inventorier uniquement les visuels pédagogiquement utiles** : ne pas associer automatiquement une infographie à chaque notion/diapositive. Établir brièvement : section de fiche, source scientifique (diapo/page), objectif d'apprentissage, repères requis, pièges médicaux à éviter.
 3. **Produire les infographies originales** : une composition cohérente par sujet. Si le générateur produit une planche multipanneaux, des textes médicaux erronés ou des éléments trop petits, **ne pas l'insérer en l'état**. Privilégier la génération d'illustrations sans texte puis l'ajout de libellés éditables, contrôlés séparément. Recomposer plutôt que rogner un dessin.
-4. **Rédiger et assembler la fiche** au style Système nerveux : explications, illustrations situées au bon endroit, mémos, éventuels pièges QCM justifiés, et obligatoirement **« Définitions des mots-clés »** en fin de fiche.
+4. **Rédiger et assembler la fiche** au style cardiovasculaire textuel validé (17 pages) : paragraphes complets, tableaux, illustrations seulement où elles clarifient le mécanisme, mémos, éventuels pièges QCM justifiés, et obligatoirement **« Définitions des mots-clés »** en fin de fiche.
 5. **Contrôle bloquant avant livraison** : rendre le PDF final **page par page en images**, inspecter toutes les pages à 100 % et en format mobile ; vérifier les visuels face aux notions du cours, leurs flèches/légendes, le contraste, le texte lisible et sélectionnable, l'absence de coupure, de duplication et de captures/photos/schémas du support source. Toute erreur entraîne correction puis nouvel export/contrôle.
 6. **Revue de conformité et traçabilité** : noter le nombre **réel** d'infographies distinctes, leur place dans la fiche, leur provenance **scientifique** (cours officiel) et leur statut « illustration originale à visée pédagogique ». Les écarts et ajouts provenant seulement de l'oral restent identifiés comme tels.
 7. **Livraison privée puis publication séparée** : déposer la maquette et les preuves de contrôle en espace de relecture ; ne pas écraser l'ancienne version. Seul un **GO publication** distinct après validation déclenche l'archivage, les métadonnées courseId/Drive, les TNR GitHub, la PR/fusion et la mise à disposition aux étudiants.
@@ -61,7 +61,7 @@ Le pilote est une validation **de forme** uniquement. Toute nouvelle matière n�
 | Origine du visuel | Nouvelle illustration pédagogique conçue à partir de notions du cours | Capture, photo, radio, schéma extrait, image source modifiée ou simplement détourée |
 | Fonction pédagogique | Dessin dominant expliquant une structure, relation, geste ou mécanisme | Cartes textuelles décorées, collection de captures, vignettes minuscules |
 | Fidélité | Anatomie, flèches, légendes et données contrôlées selon le support officiel | Erreur scientifique, équipement inventé, texte généré non vérifié |
-| Mise en page | Infographie au bon endroit dans la fiche ; modèle Système nerveux | Hors-sujet, collage final séparé ou reproduction graphique de diapositives |
+| Mise en page | Texte majoritaire ; schéma seulement lorsqu'utile ; modèle de fiche cardiovasculaire validé | Hors-sujet, collage final séparé ou reproduction graphique de diapositives |
 | Contrôle final | Toutes les pages PDF vues, lisibles, sans doublon ni débordement | Aperçu seulement, contrôle de quelques pages ou défaut restant |
 
 ## 5. Application obligatoire aux fiches « Pathologies » (modèle BPCO validé le 20/10/2026)
