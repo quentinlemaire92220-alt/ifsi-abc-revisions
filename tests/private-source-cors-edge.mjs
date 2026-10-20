@@ -34,8 +34,9 @@ const fakeRows=[
  ['cellules::p01','B1','Cellules','Présent','À vérifier','Absent','Brouillon privé','NE_JAMAIS_RETOURNER_CECI'],
  ['respiratoire::p01','B1','Respiratoire','À vérifier','À vérifier','Présent','En cours']
 ];
-function createHarness(userId=ownerId){
+function createHarness(userId=ownerId,envOverrides={}){
  const calls=[];
+ const warnings=[];
  let handle;
  const secret={
   SUPABASE_URL:'https://fake-project.supabase.co',
@@ -45,7 +46,8 @@ function createHarness(userId=ownerId){
   IFSI_GOOGLE_SERVICE_ACCOUNT_JSON:JSON.stringify({
    client_email:'fake-account@fake-project.iam.gserviceaccount.com',
    private_key:'AQAB' // faux octets pour un test sans signature cryptographique réelle
-  })
+  }),
+  ...envOverrides
  };
  async function fetchMock(url,options={}){
   const address=String(url);calls.push({url:address,method:options.method||'GET',body:options.body});
@@ -59,9 +61,9 @@ function createHarness(userId=ownerId){
   Deno:{env:{get(k){return secret[k]}},serve(fn){handle=fn}},
   Response,URLSearchParams,Headers,Uint8Array,TextEncoder,atob,btoa,
   crypto:{subtle:{importKey:async()=>({}),sign:async()=>new Uint8Array([1,2,3])}},
-  fetch:fetchMock,
+  fetch:fetchMock, console:{warn(...parts){warnings.push(parts.join(' '))}},
  });
- return {calls,handler:handle};
+ return {calls,warnings,handler:handle};
 }
 const request=(method='GET',origin=approvedOrigin,bearer='',body)=>({
  method,headers:new Headers({
@@ -118,4 +120,35 @@ const request=(method='GET',origin=approvedOrigin,bearer='',body)=>({
  assert.ok(put.url.includes('D2'),'Seule la colonne transcript D est mise à jour');
  assert.deepEqual(JSON.parse(put.body).values,[['Absent']]);
 }
+{
+ // New projects might not inject the legacy SUPABASE_ANON_KEY.
+ // Use SUPABASE_PUBLISHABLE_KEYS.default, not a privileged secret.
+ const {handler,calls}=createHarness(ownerId,{
+  SUPABASE_ANON_KEY:'',
+  SUPABASE_PUBLISHABLE_KEYS:JSON.stringify({default:'sb_publishable_test_fixture'})
+ });
+ const r=await handler(request('GET',approvedOrigin,'valid.owner.jwt'));
+ assert.equal(r.status,200,'Une clé publishable doit remplacer la clé anon absente');
+ const auth=calls.find(c=>c.url.endsWith('/auth/v1/user'));
+ assert.ok(auth,'Identité revérifiée avant Google Sheets');
+}
+{
+ // A project may omit both env variables but the published client key
+ // is public and may safely act as a final fallback for Auth /user.
+ const {handler}=createHarness(ownerId,{SUPABASE_ANON_KEY:'',SUPABASE_PUBLISHABLE_KEYS:''});
+ const r=await handler(request('GET',approvedOrigin,'valid.owner.jwt'));
+ assert.equal(r.status,200,'La clé publique du pilote est un repli sûr');
+}
+{
+ const {handler,calls,warnings}=createHarness(ownerId,{
+  SUPABASE_ANON_KEY:'', IFSI_SOURCE_SHEET_ID:''
+ });
+ const r=await handler(request('GET',approvedOrigin,'valid.owner.jwt'));
+ assert.equal(r.status,503,'Une vraie source manquante doit bloquer le service');
+ assert.ok(warnings.some(w=>w.includes('IFSI_SOURCE_SHEET_ID')),'Le journal doit indiquer uniquement le nom du secret manquant');
+ assert.ok(!calls.some(c=>c.url.includes('sheets.googleapis.com')),'Aucun accès Google si configuration incomplète');
+ const responseText=JSON.stringify(await r.json());
+ assert.ok(!responseText.includes('IFSI_SOURCE_SHEET_ID'),'Ne pas exposer les détails de configuration dans le navigateur');
+}
+
 console.log('✅ Edge Function : CORS sans JWT pour OPTIONS, propriétaire obligatoire, lecture restreinte et conflits protégés');

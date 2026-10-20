@@ -9,8 +9,19 @@ const enc = new TextEncoder();
 // dependent secret. CORS is only browser isolation; ownerAuthenticated is the
 // authorization barrier and still runs on every GET/PATCH.
 const origin = "https://quentinlemaire92220-alt.github.io";
-const endpoint = Deno.env.get("SUPABASE_URL") || "";
-const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || "";
+// SUPABASE_ANON_KEY is legacy: recent Supabase projects use named publishable keys.
+// A publishable key has only browser-level privileges; it is NOT an admin credential.
+const endpoint = Deno.env.get("SUPABASE_URL") || "https://ywicbdntavuitkcqvmqx.supabase.co";
+function supabasePublicKey() {
+  const legacy = Deno.env.get("SUPABASE_ANON_KEY");
+  if (legacy) return legacy;
+  try {
+    const named = JSON.parse(Deno.env.get("SUPABASE_PUBLISHABLE_KEYS") || "{}");
+    if (typeof named.default === "string" && named.default.startsWith("sb_publishable_")) return named.default;
+  } catch { /* Fall back to the public key already shipped with the pilot UI. */ }
+  return "sb_publishable_eY2KDhhPj660ASV3gxbnnQ_VrCOak3P";
+}
+const anonKey = supabasePublicKey();
 const ownerId = Deno.env.get("IFSI_SOURCE_OWNER_UID") || "";
 const spreadsheetId = Deno.env.get("IFSI_SOURCE_SHEET_ID") || "";
 const credentialJson = Deno.env.get("IFSI_GOOGLE_SERVICE_ACCOUNT_JSON") || "";
@@ -116,8 +127,17 @@ Deno.serve(async (req: Request) => {
   if (reqOrigin !== origin) return response(null, 403, {error: "Origin forbidden"});
   if (req.method !== "GET" && req.method !== "PATCH")
     return response(reqOrigin, 405, {error: "Method not allowed"});
-  if (!endpoint || !anonKey || !ownerId || !spreadsheetId || !credentialJson)
+  // This list contains environment variable NAMES only, never their values.
+  // Logs permit precise diagnosis while browser responses reveal no private details.
+  const missing = [
+    !endpoint && "SUPABASE_URL", !anonKey && "SUPABASE_PUBLISHABLE_KEYS",
+    !ownerId && "IFSI_SOURCE_OWNER_UID", !spreadsheetId && "IFSI_SOURCE_SHEET_ID",
+    !credentialJson && "IFSI_GOOGLE_SERVICE_ACCOUNT_JSON",
+  ].filter(Boolean);
+  if (missing.length) {
+    console.warn("IFSI sources server configuration missing:", missing.join(", "));
     return response(reqOrigin, 503, {error: "Private integration not configured"});
+  }
   try {
     if (!(await ownerAuthenticated(req))) return response(reqOrigin, 403, {error: "Owner-only"});
     const token = await googleAccessToken();

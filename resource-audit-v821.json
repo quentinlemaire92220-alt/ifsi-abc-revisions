@@ -1,5 +1,5 @@
 {
-  "version": "8.30.106",
+  "version": "8.30.109",
   "auditedAt": "2026-10-20",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.106 : volet care p02, fiche unique et cinq planches complémentaires ; ressources antérieures conservées.",
+  "note": "V8.30.109 : volet care p02, fiche unique et cinq planches complémentaires ; ressources antérieures conservées.",
   "expectedTotals": {
     "courses": 49,
     "sheets": 62,
