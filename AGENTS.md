@@ -24,9 +24,13 @@ Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revisi
 
 **Contrôles bloquants** : inventaire schéma→infographie, vérification médicale du texte/des repères/flèches/chiffres/dispositifs, provenance officielle vs complément vérifié, contrôle PDF page par page à 100 % et mobile, package en revue privée. **La validation du style BPCO ne vaut pas validation médicale ni GO publication.** Les visuels de QCM et les planches anatomiques autonomes conservent leurs règles spécifiques. Ne pas diffuser de contenus non approuvés.
 
-## Skill anatomie / Canva
+## Skill anatomie — génération + annotations SVG (méthode principale)
 
-Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-canva.md`** en complément du standard Work v1.17 et de sa charte. Étape obligatoire : comparer visuellement au master Cellules, vérifier chaque organe et chaque flèche contre le cours officiel, justifier la licence de chaque figure, distinguer validation graphique et médicale. Canva ne garantit pas l'exactitude anatomique. Les maquettes privées peuvent être suivies dans l'application sans URL publique ni incrément du nombre de planches approuvées. **Aucune intégration en QCM, master HD ni diffusion étudiante avant contrôles et GO publication.**
+Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-svg.md`** (en complément du standard IFSI ABC). **Canva n'est plus l'outil de production par défaut** : son ancien skill `docs/skills/production-planches-anatomiques-canva.md` est une archive et un secours ponctuel seulement.
+
+Procédure : illustration anatomique originale **sans texte ni flèche incrustée**, contrôle de l'orientation et des organes, **légendes et flèches en SVG éditables séparément**, contrôle de chaque pointe contre le cours officiel, export HD automatique et TNR. Les positions non vérifiées demeurent `null` : **aucune flèche inventée**. Style graphique : `Planche_05_Cellule_humaine_HD.png` ; pas de collage de figures du cours.
+
+Bloquants : licence/provenance de chaque illustration, validation clinique réelle de toutes les structures et directions, contrôle A4 et mobile, validation de la forme distincte de la validation médicale. Les maquettes en revue n'incrémentent pas le total de planches approuvées et ne servent pas aux QCM. **Pas de diffusion aux étudiants ni de master HD annoncé comme validé sans revue et GO publication explicite du lot exact.** Pilote : `docs/anatomy-r01-svg-pilot.json` (R01 sagittale masculine, 11 repères à vérifier).
 
 ## Éligibilité des séances du planning
 
