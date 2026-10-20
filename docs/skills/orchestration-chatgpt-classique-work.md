@@ -1,3 +1,11 @@
+## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
+
+Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.
+
+Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige désormais `sheetFormat:"complete_infographic"`, `dualSheetCoverage.expectedNotions===classicCovered===infographicCovered`, et audit de toutes les pages. `summaryPanels`, `summaryCoverage`, `infographic_summary` et « synthèse A4 une page » sont des consignes ERRONÉES pour les vraies livraisons et doivent être considérées comme obsolètes. La seule-page s'applique aux PILOTES de revue uniquement. Ne jamais valider des TNR qui testent une réduction de couverture.
+
+ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
+
 # Skill IFSI ABC — relais ChatGPT classique ↔ Work (v1.0)
 
 
@@ -7,7 +15,7 @@
 
 **Work n'est sollicité que ponctuellement** pour une opération non satisfaisante dans ChatGPT classique (assemblage complexe, PDF rendu insatisfaisant, script lourd, opérations Drive en masse, modification de l'application ou TNR complexes). Fournir un cahier des charges ciblé et réutiliser tous les éléments validés. Pas de traitement systématique d'un cours complet dans Work.
 
-**Livrables par défaut :** (1) fiche classique **complète** avec texte conservé et schémas infographiés **au besoin** ; (2) **une page A4 infographiée de synthèse**, distincte de la fiche, modèle cardio/respiratoire ; (3) QCM A-E, 1–3 bonnes réponses, corrigé argumenté ; (4) flashcards questions/réponses autonomes avec réponse masquée jusqu'au retournement dans l'application ; (5) planches anatomiques uniquement si besoin non couvert par la bibliothèque. Si une synthèse en une page est trop dense, proposer extension ou choix pédagogique à valider, jamais supprimer des nuances importantes en silence.
+**Livrables par défaut :** (1) fiche classique **complète** avec texte conservé et schémas infographiés **au besoin** ; (2) **un cours complet infographié multipage**, distincte de la fiche, modèle cardio/respiratoire ; (3) QCM A-E, 1–3 bonnes réponses, corrigé argumenté ; (4) flashcards questions/réponses autonomes avec réponse masquée jusqu'au retournement dans l'application ; (5) planches anatomiques uniquement si besoin non couvert par la bibliothèque. Si une synthèse en une page est trop dense, proposer extension ou choix pédagogique à valider, jamais supprimer des nuances importantes en silence.
 
 Vocaux, vocabulaire séparé, exports systématiques et second cours complet en planches ne sont **plus obligatoires** pour les nouveaux cours. Leur skill conserve sa validité lorsqu'ils sont expressément demandés.
 
