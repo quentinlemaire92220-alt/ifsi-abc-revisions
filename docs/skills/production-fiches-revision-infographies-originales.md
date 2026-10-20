@@ -1,5 +1,14 @@
 # Skill IFSI ABC — Fiches de révision avec infographies originales (v1.0)
 
+
+## Précision prioritaire — pilote validé Système cardio / respiratoire (20/10/2026)
+
+Pour les prochains cours, **une fiche de révision complète avec schémas infographiés seulement lorsqu'ils apportent une explication utile** est le livrable maître. Modèle de présentation : **Système cardiovasculaire ou Système respiratoire** (pilotes validés). Toutes les définitions, mécanismes, nuances, valeurs et explications de la source officielle restent dans le **texte**, même lorsqu'un visuel résume la notion. Les illustrations complètent le cours et sont créées de manière originale ; une illustration décorative ou sans justification pédagogique ne doit pas être ajoutée pour respecter un quota.
+
+En complément, produire **une page A4 infographiée de synthèse** autonome, mais **pas un second cours complet en planches** par défaut. Une page ne doit pas prétendre couvrir mot à mot tout le cours : elle sélectionne honnêtement l'essentiel tout en renvoyant à la fiche détaillée. Si le contenu ne tient pas lisiblement, demander un arbitrage avant d'allonger ou simplifier. Ces demandes ne suppriment pas les tests de lisibilité et d'exactitude clinique.
+
+Le pilote est une validation **de forme** uniquement. Toute nouvelle matière nécessite une revue source et un contrôle scientifique propres. Les planches anatomiques sont conditionnelles et ne doivent pas être dupliquées.
+
 **Statut : CONTRAT DE PRODUCTION BLOQUANT.** Applicable dès le « Go » à toutes les créations/refontes de fiches de révision, y compris lorsqu'un support officiel arrive après une version provisoire.
 
 **Périmètre : fiche de révision PDF et ses visuels intégrés.** Ce skill ne remplace pas le skill de **planches anatomiques autonomes** (`docs/skills/production-planches-anatomiques-svg.md`; ancien workflow Canva archivé), ni les règles propres aux schémas des QCM. En cas de formulation ancienne contradictoire dans la charte concernant **les images intégrées aux fiches**, le présent contrat et la référence visuelle explicitement validée par l'utilisateur prévalent. Les éventuels schémas de QCM sont traités selon leur propre contrat et les droits de reproduction applicables.
