@@ -83,6 +83,9 @@ jobs:
       - name: TNR galerie anatomique provisoire R02-R07 V8.30.102
         run: node tests/anatomy-reproductive-preview-v8402.mjs
 
+      - name: TNR R03 et R05 corrigés — exports Canva 20 octobre
+        run: node tests/anatomy-reproductive-refresh-v8404.mjs
+
       - name: TNR P1 anatomie après V8.30.97 — masquage DOM et 106 planches
         run: node tests/anatomy-p1-guards-v8397.mjs
 
