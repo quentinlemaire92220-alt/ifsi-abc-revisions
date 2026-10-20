@@ -1,0 +1,76 @@
+name: Audit qualité P2
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-p2-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Audit QCM, flashcards, ressources
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout complet
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Tests des garde-fous P2
+        run: |
+          node --check tools/quality-report-p2.mjs
+          node tests/quality-report-p2.mjs
+
+      - name: Comparer avec le catalogue de base (PR uniquement)
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git worktree add --detach "$RUNNER_TEMP/ifsi-quality-base" "$BASE_SHA"
+          node tools/quality-report-p2.mjs \
+            --root="$RUNNER_TEMP/ifsi-quality-base" \
+            --output="$RUNNER_TEMP/ifsi-quality-base.json" \
+            --no-fail > "$RUNNER_TEMP/ifsi-quality-base.log"
+          echo "Référence de base générée pour ce commit."
+
+      - name: Auditer la version candidate et publier la synthèse
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p quality-artifacts
+          if [ -s "$RUNNER_TEMP/ifsi-quality-base.json" ]; then
+            node tools/quality-report-p2.mjs \
+              --baseline="$RUNNER_TEMP/ifsi-quality-base.json" \
+              --output="quality-artifacts/audit-quality.json" \
+              --summary="$GITHUB_STEP_SUMMARY" > quality-artifacts/audit-quality.md
+            cp "$RUNNER_TEMP/ifsi-quality-base.json" quality-artifacts/audit-base.json
+          else
+            node tools/quality-report-p2.mjs \
+              --output="quality-artifacts/audit-quality.json" \
+              --summary="$GITHUB_STEP_SUMMARY" > quality-artifacts/audit-quality.md
+          fi
+
+      - name: Conserver les rapports de cette exécution
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ifsi-quality-p2-${{ github.run_id }}
+          path: quality-artifacts/
+          if-no-files-found: warn
+          retention-days: 90
