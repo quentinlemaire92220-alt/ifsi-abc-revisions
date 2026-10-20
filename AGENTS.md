@@ -18,6 +18,12 @@ Les instructions pédagogiques détaillées, transcriptions, pièces officielles
 
 Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revision-infographies-originales.md`** avant sa génération, son contrôle et sa publication. **Aucune capture, photo ou figure extraite du support officiel ne doit être intégrée au PDF** : les notions utiles doivent être réinterprétées en infographies originales au modèle Système nerveux. Ce skill est distinct des planches anatomiques autonomes et des schémas de QCM. Une maquette non conforme est bloquée avant présentation ; pas de répétition de la consigne à demander à l'utilisateur.
 
+## Skill Pathologies — modèle maître infographies BPCO
+
+**Pour toute nouvelle pathologie et toute refonte d'une fiche Pathologies**, appliquer impérativement `docs/skills/production-pathologies-infographies-cliniques.md` **en complément** du skill fiches original. La présentation des infographies BPCO validée le 20/10/2026 est le **modèle de forme** : toute représentation schématique dans une fiche Pathologies doit être une vraie infographie pédagogique **originale, sourcée, intégrée à la section**, jamais un schéma brut, une capture, une image décorative ou une coupe non expliquée. Nombre de visuels libre selon les notions illustrables ; aucune obligation artificielle de 10 infographies.
+
+**Contrôles bloquants** : inventaire schéma→infographie, vérification médicale du texte/des repères/flèches/chiffres/dispositifs, provenance officielle vs complément vérifié, contrôle PDF page par page à 100 % et mobile, package en revue privée. **La validation du style BPCO ne vaut pas validation médicale ni GO publication.** Les visuels de QCM et les planches anatomiques autonomes conservent leurs règles spécifiques. Ne pas diffuser de contenus non approuvés.
+
 ## Skill anatomie / Canva
 
 Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-canva.md`** en complément du standard Work v1.17 et de sa charte. Étape obligatoire : comparer visuellement au master Cellules, vérifier chaque organe et chaque flèche contre le cours officiel, justifier la licence de chaque figure, distinguer validation graphique et médicale. Canva ne garantit pas l'exactitude anatomique. Les maquettes privées peuvent être suivies dans l'application sans URL publique ni incrément du nombre de planches approuvées. **Aucune intégration en QCM, master HD ni diffusion étudiante avant contrôles et GO publication.**
