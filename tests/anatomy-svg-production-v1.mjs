@@ -24,7 +24,7 @@ assert.equal(r01.sourceImage,null);
 assert.equal(r01.publicationApproved,false);
 assert.equal(r01.clinicalApproved,false);
 assert.ok(r01.landmarks.every(x=>x.tip===null&&x.labelPosition===null&&x.reviewed===false));
-assert.equal(meta.version,'8.30.104','La procédure ne doit pas déclencher une release');
+assert.equal(meta.version,census.version,'La procédure SVG ne doit pas désynchroniser la release et le snapshot');
 assert.equal(census.expectedTotals.hdAtlasBoards,106);
 assert.equal(census.atlasBoardContracts.systeme_reproducteur,undefined);
 
