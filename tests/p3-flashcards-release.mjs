@@ -53,7 +53,7 @@ assert.ok(vocabEngine.includes('window.IFSI_P3_VOCAB_FLASHCARDS?.[x.id]'),'Moteu
 assert.ok(page.indexOf('p3-vocabulary-flashcards.js')<page.indexOf('v8355-vocabulary.js'),'Le supplément doit être chargé avant le vocabulaire');
 for(const file of ['p3-vocabulary-flashcards.js','v8403-changelog.js'])assert.ok(worker.includes("'./"+file+"'"),'Cache hors-ligne absent: '+file);
 const currentVersion=JSON.parse(fs.readFileSync('build-meta.json','utf8')).version;
-assert.ok(/^8\\.30\\.\\d+$/.test(currentVersion) && Number(currentVersion.split('.')[2])>=103,'Le lot P3 doit rester accessible après V8.30.103');
+assert.ok(currentVersion.startsWith('8.30.') && Number.isInteger(Number(currentVersion.split('.')[2])) && Number(currentVersion.split('.')[2])>=103,'Le lot P3 doit rester accessible après V8.30.103');
 assert.ok(worker.includes('ifsi-abc-v8-30-'+currentVersion.split('.')[2]+'-local-'),'Cache PWA non synchronisé avec le build courant');
 console.log('P3_CONTENT_SHA256='+sha256);
 console.log('✅ P3: 18 cartes complémentaires en production, IDs et cours conservés, chargement et cache PWA présents');
