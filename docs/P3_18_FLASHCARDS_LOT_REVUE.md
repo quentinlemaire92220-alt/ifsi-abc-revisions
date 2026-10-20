@@ -1,30 +1,28 @@
-# P3 — Métadonnées minimales de revue des flashcards
+# P3 — Revue des 18 flashcards (suivi technique uniquement)
 
-> Document de suivi technique uniquement. Les formulations pédagogiques détaillées, les sources documentaires de revue et les liens privés sont conservés **hors du dépôt public**, conformément à `AGENTS.md`.
+Le dossier complet de revue, avec les 18 rectos-versos et les références, est conservé **hors de ce dépôt GitHub**, dans le Drive privé du propriétaire. La revue porte sur des cartes de vocabulaire complémentaires, non sur des extraits des supports officiels.
 
-| Champ | Valeur |
+| Contrôle | Résultat |
 |---|---|
 | Lot | `p3-vocabulary-18-20261020` |
-| Date du contrôle | 2026-10-20 |
-| Nombre de flashcards proposées | 18 |
-| Détection initiale | Questions de vocabulaire identiques avec définitions différentes |
-| État | `awaiting_pedagogical_approval` |
-| Rapprochements approfondis | 8 |
-| Concordance partielle avec un cours accessible | 6 |
-| Appui institutionnel/scientifique externe retrouvé | 2/2 notions |\n| Correspondance explicite au support IFSI encore absente | 2 notions |
-| Rectos/versos approuvés par le propriétaire | 0 |\n| Conformité IFSI explicitement attestée pour ces 2 notions | Non |
-| GO publication | **Non donné** |
-| Catalogue des étudiants modifié | **Non** |
-| Publication Drive étudiant / GitHub Pages | **Aucune** |
+| Date de revue | 2026-10-20 |
+| Flashcards analysées | 18 |
+| Questions complémentaires uniques proposées | 18 |
+| Appui direct sur un support IFSI | 6 |
+| Concordance contextuelle/partielle du cours IFSI | 7 |
+| Appui sur des références externes | 5 |
+| Source pédagogique de chaque carte | `reference_pedagogique` / non officiel |
+| État du dossier privé | `review_complete_owner_approval_pending` |
+| Approbation explicite des 18 textes pour publication | Non enregistrée |
+| GO publication explicite | **Non donné** |
+| Modifications du catalogue étudiant | **Aucune** |
 
-## Garde-fous
+## Prochaines étapes
 
-- Le dossier complet de revue est conservé dans un **document privé** du propriétaire. Aucun identifiant ou URL de celui-ci ne doit être committé dans le dépôt public.
-- Une correspondance partielle ou un appui scientifique externe ne constitue pas une certification de conformité au support IFSI.\n- Les notions de rappel actif et d’assertivité disposent désormais d’un appui externe, mais nécessitent un arbitrage pédagogique sur leur rattachement aux enseignements.
-- Une fois le lot validé, enregistrer la portée et l'empreinte approuvées conformément à `docs/PUBLICATION_APPROVAL.md`, puis demander un **GO publication explicite**.
-- Les identifiants de progression, les définitions existantes, les associations multi-cours et le sens des réponses doivent être conservés.
-- Aucun remplacement, suppression, permutation de réponses ou fusion de PR pédagogique avant validation du lot.
+1. Faire valider au propriétaire le **périmètre exact des 18 cartes complémentaires** et les réserves documentaires dans le dossier de revue privé.
+2. Obtenir ensuite le **GO publication explicite** pour ce lot (un simple « Go » de poursuite de revue ne suffit pas).
+3. Préparer l'intégration en conservant les IDs `voc:enrich_*`, les anciennes définitions, les `courseIds`, les favoris et la progression ; appliquer la distinction « support non officiel ».
+4. Avant publication, contrôler les 18 rectos/versos, les TNR, l'audit QCM/flashcards, les preuves et empreintes prévues par `docs/PUBLICATION_APPROVAL.md`.
+5. En l'absence de validation d'une carte, la laisser en attente sans supprimer les autres ressources.
 
-## Contrôles
-
-La présente PR est un **jalon de revue**, et non une publication pédagogique. La CI doit rester verte avant son éventuelle clôture ou reprise. Toute création d'une PR d'intégration étudiante nécessite une autorisation de publication distincte.
+**Attention :** une preuve scientifique externe est une référence pédagogique complémentaire, et non une certification de concordance avec le support officiel de l'IFSI. Aucune URL privée ni aucun contenu inédit n'est committé ici.
