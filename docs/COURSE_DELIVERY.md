@@ -1,9 +1,17 @@
+## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
+
+Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.
+
+Le contrat `lean_v1` garde son nom technique pour compatibilité, mais exige désormais `sheetFormat:"complete_infographic"`, `dualSheetCoverage.expectedNotions===classicCovered===infographicCovered`, et audit de toutes les pages. `summaryPanels`, `summaryCoverage`, `infographic_summary` et « synthèse A4 une page » sont des consignes ERRONÉES pour les vraies livraisons et doivent être considérées comme obsolètes. La seule-page s'applique aux PILOTES de revue uniquement. Ne jamais valider des TNR qui testent une réduction de couverture.
+
+ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO production privée → revue pédagogique → GO publication distincte ; aucun merge ni déploiement implicite.
+
 # Livraison d’un cours après autocontrôle des livrables
 
 
 ## Norme de livrables à retenir pour les futurs cours (pilote validé 20/10/2026)
 
-**Nouvelle demande propriétaire : pack minimal systématique =** fiche de révision complète avec infographies intégrées au besoin ; **une page complète infographiée de synthèse** (pas une deuxième fiche exhaustive sauf demande explicite) ; QCM A–E (1–3 réponses exactes) avec corrigés ; flashcards ; planches anatomiques seulement si nécessaires et non existantes. Les modèles graphiques sont les cours **Système cardiovasculaire / Système respiratoire**.
+**Nouvelle demande propriétaire : pack minimal systématique =** fiche de révision complète avec infographies intégrées au besoin ; **un cours complet infographié multipage** (une deuxième fiche exhaustive sauf demande explicite) ; QCM A–E (1–3 réponses exactes) avec corrigés ; flashcards ; planches anatomiques seulement si nécessaires et non existantes. Les modèles graphiques sont les cours **Système cardiovasculaire / Système respiratoire**.
 
 Les dossiers historiques 01–08 et 99 peuvent être conservés sans forcer leur remplissage. Les vocaux MP3, scripts TXT, vocabulaire séparé, packs d'infographies et exports n'appartiennent plus au kit obligatoire ; produire uniquement si demandés. Pour 05 - Vocaux ou 08 - Scripts, la présence du dossier ne signifie pas MP3 attendu ni contenu manquant.
 
