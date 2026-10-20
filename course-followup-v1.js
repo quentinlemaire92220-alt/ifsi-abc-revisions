@@ -50,6 +50,15 @@ function eventForGroup(e,g){
  return true;
 }
 function isAmbiguous(e){return /niveau|cf groupe|selon groupe/i.test(String(e?.groupLabel||''))}
+function sourceCourseId(e){
+ const all=registry();
+ if(e?.courseId&&all.some(c=>c.id===e.courseId))return e.courseId;
+ const normalized=v=>norm(v).replace(/[^a-z0-9]+/g,' ').trim();
+ const key=normalized(e?.title);
+ if(!key)return '';
+ const matches=all.filter(c=>[c.label,...(c.aliases||[])].some(v=>normalized(v)===key));
+ return matches.length===1?matches[0].id:'';
+}
 function courseModel(c,r,terms,cards){
  const res=r||emptyResources();
  const hasOfficial=Boolean(c.officialSupportUrl||(c.officialSupportItems||[]).length);
@@ -147,6 +156,7 @@ function renderResources(models){
   return '<article class="cf-card"><div class="row"><h3>'+esc(m.label)+'</h3><span class="cf-pill">'+esc(m.ue)+'</span></div>'+
    '<div class="cf-meta"><span class="cf-signal">'+(m.toReview?'À vérifier':'Inventaire référencé')+'</span></div>'+
    details.map(x=>'<div class="cf-row"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b></div>').join('')+
+   '<div class="cf-source-row" data-ifsi-source-course="'+esc(m.id)+'"></div>'+
    '<div class="cf-meta"><button class="btn secondary" data-cf-course="'+esc(m.id)+'">Ouvrir le cours</button><button class="btn outline" type="button" data-cf-sources>Mes sources ↗</button>'+
    (url?'<a class="btn outline" target="_blank" rel="noopener noreferrer" href="'+esc(url)+'">Support officiel ↗</a>':'')+
    '</div></article>';
@@ -162,11 +172,13 @@ function renderAgenda(){
   const state=future?'À venir':'Date passée';
   const note=isAmbiguous(e)?' · Affectation à vérifier':'';
   const btn='<button class="btn outline" data-cf-sources type="button">Mes sources ↗</button>';
+  const linkedCourse=sourceCourseId(e);
+  const sourceSlot=linkedCourse?'<div class="cf-source-row" data-ifsi-source-course="'+esc(linkedCourse)+'"></div>':'<div class="cf-muted">Source privée : rattachement du cours à vérifier</div>';
   return '<article class="cf-card cf-session"><div class="cf-muted cf-when">'+esc(e.date)+'<div>'+esc(e.start)+'–'+esc(e.end)+'</div></div>'+
    '<div><b>'+esc(e.title)+'</b><div class="cf-muted">'+esc(e.ue||'Séance')+' · '+esc(e.type||'Cours')+esc(note)+'</div>'+
-   '<span class="cf-signal">'+esc(state)+'</span></div>'+btn+'</article>';
+   '<span class="cf-signal">'+esc(state)+'</span>'+sourceSlot+'</div>'+btn+'</article>';
  }).join('');
- return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Suivi des séances pédagogiques hors simulations et asynchrones. Les états des sources personnelles sont à consulter dans votre registre Google Sheets privé ; aucune donnée privée n’est récupérée par cette page.</p>'+
+ return '<div class="cf-head"><h3>🗓️ Séances du planning</h3><p class="cf-muted">Suivi des séances pédagogiques hors simulations et asynchrones. Les états personnels sont chargés depuis Google Sheets seulement après authentification et autorisation du propriétaire. Les autres visiteurs ne voient aucun statut privé.</p>'+
   '<div class="cf-controls"><select id="cfGroup" aria-label="Groupe">'+['A1','A2','B1','B2'].map(x=>'<option'+(x===g?' selected':'')+'>'+x+'</option>').join('')+'</select>'+
   '<select id="cfWeek" aria-label="Semaine">'+options+'</select></div>'+
   '<div class="cf-agenda">'+(arr||'<p class="cf-muted">Aucune séance pédagogique à réviser pour ce groupe cette semaine.</p>')+'</div></div>';
@@ -188,19 +200,19 @@ function render(){
  '<div class="cf-meta"><span class="cf-pill">'+models.length+' cours visibles</span><span class="cf-pill">'+issue+' à vérifier dans le catalogue</span></div>'+
  '<p class="cf-muted">Un support sans lien catalogué peut exister sur Drive. Les données personnelles restent dans votre registre privé, pas dans l’application publique.</p>'+
  '<div class="cf-meta"><button id="cfOpenSources" class="btn secondary" type="button" data-cf-sources>🔒 Ouvrir mes sources</button><button id="cfConfigureSources" class="btn outline" type="button">Configurer le lien privé</button></div>'+
- '<p class="cf-muted">Le raccourci est enregistré uniquement sur cet appareil et Google Drive vérifie vos droits. Les états ne se synchronisent pas directement avec l’application.</p>'+
- controls+'</div><div id="cfResourceResults">'+renderResources(models)+'</div>'+renderAgenda();
+ '<p class="cf-muted">Le raccourci reste local. Le module privé n’affiche et ne modifie les états que si le propriétaire est authentifié et que le serveur autorise l’accès.</p>'+
+ controls+'</div><div id="cfPrivatePanel"></div><div id="cfResourceResults">'+renderResources(models)+'</div>'+renderAgenda();
  if(existingWeek&&weeks().some(w=>w.id===existingWeek)){$('cfWeek').value=existingWeek;updateAgendaOnly()}
  $('cfUe').onchange=e=>{ueFilter=e.target.value;updateResults()};
  $('cfStatus').onchange=e=>{statusFilter=e.target.value;updateResults()};
  $('cfSearch').oninput=e=>{textFilter=e.target.value;updateResults()};
   $('cfBackSettings').onclick=()=>window.IFSI_V87?.showSettings?.();
- bindAgenda();bindSourceActions();
+ bindAgenda();bindSourceActions();window.IFSI_PRIVATE_SOURCES?.mount?.();
  sec.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));
 }
-function updateResults(){const out=$('cfResourceResults');if(!out)return;out.innerHTML=renderResources(visibleModels());out.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));bindSourceActions()}
+function updateResults(){const out=$('cfResourceResults');if(!out)return;out.innerHTML=renderResources(visibleModels());out.querySelectorAll('[data-cf-course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.cfCourse));bindSourceActions();window.IFSI_PRIVATE_SOURCES?.refreshViews?.()}
 function openCourse(id){hide();if(window.IFSI_V813?.openCourse)return window.IFSI_V813.openCourse(id);window.showCourses74?.()}
-function updateAgendaOnly(){const sec=$(SECTION);if(!sec)return;const replacement=document.createElement('div');replacement.innerHTML=renderAgenda();sec.querySelector('.cf-head:last-child')?.replaceWith(replacement.firstElementChild);bindAgenda();bindSourceActions()}
+function updateAgendaOnly(){const sec=$(SECTION);if(!sec)return;const replacement=document.createElement('div');replacement.innerHTML=renderAgenda();sec.querySelector('.cf-head:last-child')?.replaceWith(replacement.firstElementChild);bindAgenda();bindSourceActions();window.IFSI_PRIVATE_SOURCES?.refreshViews?.()}
 function bindAgenda(){
  $('cfGroup')?.addEventListener('change',e=>{setGroup(e.target.value);updateAgendaOnly()});
  $('cfWeek')?.addEventListener('change',()=>updateAgendaOnly());
@@ -219,5 +231,5 @@ function init(){css();return section()&&bindBottomNavigation()}
 let tries=0,t=setInterval(()=>{if(init()||++tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
 window.addEventListener('ifsi:vocabulary-ready',()=>{if($(SECTION)&&!$(SECTION).classList.contains('hidden'))render()});
-window.IFSI_COURSE_FOLLOWUP={version:'1.3',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey,validSourcesUrl};
+window.IFSI_COURSE_FOLLOWUP={version:'1.4',show,render,courseModel,eventForGroup,isRevisionSession,eventsForWeek,sessionKey,validSourcesUrl};
 })();
