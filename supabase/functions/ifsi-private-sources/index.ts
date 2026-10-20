@@ -74,7 +74,10 @@ function projectRows(rows: string[][]) {
   const used = new Set<string>();
   return rows.map((row, ix) => {
     const key = String(row[0] || "").trim();
-    if (!/^[a-z0-9_-]+::p[0-9]{2}$/.test(key) || used.has(key)) return null;
+    if (!key) return null;
+    if (!/^[a-z0-9_-]+::p[0-9]{2}$/.test(key)) throw Error("Invalid source key");
+    // Ambiguous course rows must never be silently mapped to the first match.
+    if (used.has(key)) throw Error("Duplicate course key");
     used.add(key);
     return {
       key, row: ix + 2,
