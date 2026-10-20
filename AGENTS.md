@@ -14,6 +14,10 @@ Tout changement de contenu après validation invalide l'approbation du lot. Repr
 
 Les instructions pédagogiques détaillées, transcriptions, pièces officielles non autorisées, captures et liens de revue privés restent hors du dépôt public. Les preuves détaillées de validation utilisateur restent privées ; seules les métadonnées techniques minimales sont versionnées.
 
+## Skill fiches de révision / infographies originales
+
+Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revision-infographies-originales.md`** avant sa génération, son contrôle et sa publication. **Aucune capture, photo ou figure extraite du support officiel ne doit être intégrée au PDF** : les notions utiles doivent être réinterprétées en infographies originales au modèle Système nerveux. Ce skill est distinct des planches anatomiques autonomes et des schémas de QCM. Une maquette non conforme est bloquée avant présentation ; pas de répétition de la consigne à demander à l'utilisateur.
+
 ## Skill anatomie / Canva
 
 Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-canva.md`** en complément du standard Work v1.17 et de sa charte. Étape obligatoire : comparer visuellement au master Cellules, vérifier chaque organe et chaque flèche contre le cours officiel, justifier la licence de chaque figure, distinguer validation graphique et médicale. Canva ne garantit pas l'exactitude anatomique. Les maquettes privées peuvent être suivies dans l'application sans URL publique ni incrément du nombre de planches approuvées. **Aucune intégration en QCM, master HD ni diffusion étudiante avant contrôles et GO publication.**
