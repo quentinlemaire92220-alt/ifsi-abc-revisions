@@ -39,7 +39,7 @@ assert.deepEqual(Array.from(byId('enrich_anurie').courseIds),sample.courseIds);
 assert.equal(byId('fixture_incomplete').front,'Que signifie « Terme fictif » ?');
 assert.equal(byId('fixture_incomplete').answers[0],'Définition fictive conservée.');
 const qs=win.IFSI_VOCAB.questions();
-const enriched=qs.filter(q=>q.courseId===sample.courseIds[0]&&q.question.includes(sample.term));
+const enriched=qs.filter(q=>q.courseId===sample.courseIds[0]&&q.vocabularyTermId===sample.id&&q.question.includes(sample.definition));
 assert.ok(enriched.length,'Le module QCM vocabulaire demeure actif');
 assert.ok(qs.every(q=>q.choices.length===4&&q.answers.length===1),'Le QCM conserve quatre choix et sa source de vérité');
 await win.IFSI_VOCAB.refresh();
