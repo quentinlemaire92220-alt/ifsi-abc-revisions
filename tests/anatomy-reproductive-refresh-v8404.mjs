@@ -19,16 +19,16 @@ const unaffected={
  R06:'c71dd3b43e3692bd738ef37b6567d0725db6fe8ca51d839bbb0efcc8302b0b05',
  R07:'4511ee1f98e0ecdcc7072583cd1eadbd60105144789e54a7a1eec0c9cc574cc6'
 };
-assert.equal(meta.version,'8.30.104');
-assert.equal(meta.build,'8404');
-assert.equal(manifest.lastAssetRefresh.version,meta.version);
+assert.match(meta.version,/^\d+\.\d+\.\d+$/,'Current release version invalid');
+assert.match(String(meta.build),/^\d+$/,'Current build invalid');
+assert.equal(manifest.lastAssetRefresh.version,'8.30.104','R03/R05 preview must retain its original provenance release');
 assert.deepEqual(manifest.lastAssetRefresh.boardIds,['R03','R05']);
 assert.equal(manifest.lastAssetRefresh.medicalApproval,false);
 const permission=manifest.provisionalPublicationApproval;
 assert.equal(permission.status,'approved_for_provisional_display_only');
 assert.equal(permission.authorization,'explicit_go_publication');
 assert.equal(permission.scope,'replace_only_R03_and_R05_preview_jpegs');
-assert.equal(permission.release,meta.version);
+assert.equal(permission.release,manifest.lastAssetRefresh.version,'Provisional anatomy approval is scoped to its historical release only');
 assert.equal(permission.clinicalApproval,false);
 assert.equal(permission.rightsProvenanceVerified,false);
 assert.deepEqual(permission.assets.map(x=>x.id),['R03','R05']);
@@ -47,7 +47,7 @@ assert.equal(manifest.boards.length,6);
 assert.equal(inventory.expectedTotals.hdAtlasBoards,106);
 assert.equal(Object.values(inventory.atlasBoardContracts).reduce((sum,n)=>sum+n,0),106);
 assert.equal(inventory.atlasBoardContracts.systeme_reproducteur,undefined);
-assert.ok(idx.includes('./v8404-changelog.js?v=8404'));
+assert.ok(idx.includes(`./v8404-changelog.js?v=${meta.build}`),'Historical R03/R05 changelog must stay available in the current build');
 assert.ok(sw.includes("'./v8404-changelog.js'"));
 assert.ok(sw.includes('"v8404-changelog.js"'));
 assert.ok(startup.includes('IFSI_V8404_CHANGELOG'));

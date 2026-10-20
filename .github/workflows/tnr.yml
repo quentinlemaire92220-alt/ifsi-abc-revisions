@@ -71,6 +71,12 @@ jobs:
       - name: TNR chaîne de production locale du pack allégé
         run: python tests/lean-course-pack-test.py
 
+      - name: TNR fiche unique et planches complètes complémentaires
+        run: node tests/single-sheet-contract-test.mjs
+
+      - name: Vérifier le volet care p02 et les ressources antérieures
+        run: node tests/ethiques-care-p02.mjs
+
       - name: TNR registre prive des sources manquantes v1.15
         run: node tests/source-followup-v115-test.mjs
 
@@ -147,6 +153,9 @@ jobs:
 
       - name: Vérifier la séparation des séances simultanées par sous-groupe
         run: node tests/planning-group-separation.mjs
+
+      - name: Vérifier le planning S9 et la séparation des groupes A1/A2/B1/B2
+        run: node tests/planning-week-09.mjs
 
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
@@ -260,6 +269,15 @@ jobs:
 
       - name: Tester intégration de la coque Pathologies inactive
         run: node tests/pathologies-app-integration-v1.mjs
+
+      - name: Vérifier l'import privé Pathologies sans distribution de contenus médicaux
+        run: node tests/pathologies-private-review-import.mjs
+
+      - name: Vérifier la vraie barre du bas avec Pathologies et Planning
+        run: node tests/pathologies-visible-v87-bottom-nav.mjs
+
+      - name: Tester la navigation Pathologies dépliable et les pages dédiées
+        run: node tests/pathologies-catalog-accordion.mjs
 
       - name: Vérifier les six planches Pathologies et les vrais cours associés
         run: node tests/pathologies-p1-poster-pages.mjs

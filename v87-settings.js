@@ -2,8 +2,8 @@
 const V=window.IFSI_APP_VERSION||'8.30.4',$=id=>document.getElementById(id);
 const K={dark:'ifsiabc_v72_dark',timer:'ifsiabc_v72_timer',analytics:'ifsiabc_analytics_optout_v1'};
 function css(){if($('v87css'))return;const s=document.createElement('style');s.id='v87css';s.textContent=`
-#v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(680px,calc(100% - 20px));display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
-#v87Nav button{border:0;background:transparent;color:var(--muted);padding:7px 3px;border-radius:14px;font-size:11px;line-height:1.15;cursor:pointer;min-width:0}
+#v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(760px,calc(100% - 20px));display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
+#v87Nav button{border:0;background:transparent;color:var(--muted);padding:7px 2px;border-radius:14px;font-size:10px;line-height:1.15;cursor:pointer;min-width:0;overflow-wrap:anywhere}
 #v87Nav button span{display:block;font-size:18px;margin-bottom:3px}
 #v87Nav button.on{background:#f1ebff;color:#6941c6;font-weight:850}
 body.v72-dark #v87Nav button.on{background:#3a3150;color:#ddd0ff}
@@ -53,7 +53,7 @@ body.v87-ready nav:not(#v87Nav){display:none!important}
  #settings87 .v87-actions .btn{overflow-wrap:anywhere}
  #v821AuditCard .v821-counts{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-@media(max-width:680px){.v87-grid{grid-template-columns:1fr}.v87-card{padding:13px}#v87Nav{width:calc(100% - 16px);bottom:7px}.v87-actions{grid-template-columns:1fr}#v87Nav button{font-size:10px}}
+@media(max-width:680px){.v87-grid{grid-template-columns:1fr}.v87-card{padding:13px}#v87Nav{width:calc(100% - 16px);bottom:7px}.v87-actions{grid-template-columns:1fr}#v87Nav button{font-size:9px;padding:7px 1px}}
 `;document.head.appendChild(s)}
 function oldNav(){return document.querySelector('.app>nav:not(#v87Nav)')}
 function addSection(){if($('settings87'))return;const app=document.querySelector('.app');if(!app)return;const sec=document.createElement('section');sec.id='settings87';sec.className='hidden';sec.innerHTML=`
@@ -94,11 +94,13 @@ function addNav(){if($('v87Nav'))return;const app=document.querySelector('.app')
 <button id="v87Courses"><span>📚</span>Cours</button>
 <button id="v87Anat"><span>🫀</span>Anatomie</button>
 <button id="v87Center"><span>🚀</span>Révision</button>
+<button id="v87Pathologies" aria-label="Ouvrir les pathologies"><span>🩺</span>Pathologies</button>
 <button id="v87Settings"><span>⚙️</span>Paramètres</button>`;app.appendChild(n);
 $('v87Home').onclick=()=>window.show?.('home');
 $('v87Courses').onclick=()=>window.showCourses74?.();
 $('v87Anat').onclick=()=>window.IFSI_V82?.showAnatomy?.();
 $('v87Center').onclick=()=>window.IFSI_V81?.showHub?.();
+$('v87Pathologies').onclick=()=>window.IFSI_PATHOLOGIES?.open?.();
 $('v87Settings').onclick=showSettings}
 function hideSettings(){const s=$('settings87');if(s&&!s.classList.contains('hidden'))s.classList.add('hidden')}
 function patchNavigation(){if(window.__v87navpatch)return;window.__v87navpatch=1;
@@ -156,7 +158,7 @@ function bind(){
  $('v87Reload').onclick=()=>location.reload();
  $('v87Improve').onclick=()=>{const b=$('v72SuggestBtn')||[...document.querySelectorAll('button')].find(x=>x.id!=='v87Improve'&&x.id!=='v86Improve'&&/Proposer une amélioration/i.test(x.textContent));if(b)b.click();else alert('Le formulaire d’amélioration est indisponible pour le moment.')};
 }
-function active(){const ids=['v87Home','v87Courses','v87Anat','v87Center','v87Settings'];ids.forEach(id=>$(id)?.classList.remove('on'));if(!$('settings87')?.classList.contains('hidden')||!$('courseFollowup')?.classList.contains('hidden'))return $('v87Settings')?.classList.add('on');const anatomyIds=['anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas'];if(anatomyIds.some(id=>$(id)&&!$(id).classList.contains('hidden')))return $('v87Anat')?.classList.add('on');if(!$('v81Hub')?.classList.contains('hidden'))return $('v87Center')?.classList.add('on');if(!$('courses74')?.classList.contains('hidden')||!$('course74')?.classList.contains('hidden'))return $('v87Courses')?.classList.add('on');$('v87Home')?.classList.add('on')}
+function active(){const ids=['v87Home','v87Courses','v87Anat','v87Center','v87Pathologies','v87Settings'];ids.forEach(id=>$(id)?.classList.remove('on'));if(!$('settings87')?.classList.contains('hidden')||!$('courseFollowup')?.classList.contains('hidden'))return $('v87Settings')?.classList.add('on');const anatomyIds=['anatomy82','anatomy83','v814RespAtlas','v815UrinaryAtlas','v816EndocrineAtlas','v817ImmuneAtlas','v822NervousAtlas','v823CardiovascularAtlas','v824DigestiveAtlas','v829LocomotorAtlas'];if(anatomyIds.some(id=>$(id)&&!$(id).classList.contains('hidden')))return $('v87Anat')?.classList.add('on');if($('ifsiPathologies')&&!$('ifsiPathologies').classList.contains('hidden'))return $('v87Pathologies')?.classList.add('on');if(!$('v81Hub')?.classList.contains('hidden'))return $('v87Center')?.classList.add('on');if(!$('courses74')?.classList.contains('hidden')||!$('course74')?.classList.contains('hidden'))return $('v87Courses')?.classList.add('on');$('v87Home')?.classList.add('on')}
 function init(){css();addSection();addNav();patchNavigation();if(!$('v87Dark')?.dataset.bound){bind();$('v87Dark').dataset.bound='1'}document.body.classList.add('v87-ready');render();active();return !!window.IFSI_V82&&!!window.IFSI_V81&&!!window.IFSI_V77}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
 window.addEventListener('storage',()=>requestAnimationFrame(render));

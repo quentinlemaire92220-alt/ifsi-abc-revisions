@@ -8,7 +8,7 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-11';
+const UPDATED_AT='2026-10-20';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
@@ -112,6 +112,30 @@ const WEEKS=[
   {date:'2026-10-23',start:'13:30',end:'16:30',promo:'A',groupLabel:'Promo A',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S10',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'},
   {date:'2026-10-23',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE D1.1 S1',type:'CM',title:'La relation soignant/soigné et l’écoute active',room:'S11',teacher:'DELABARRE Isabelle • POULAIN Muriel',site:'IFSI ABC'}
  ]}
+ ,{id:'S9',label:'S9',start:'2026-10-26',end:'2026-10-31',range:'26 - 30 oct.',events:[
+  {date:'2026-10-26',start:'08:30',end:'12:30',promo:'all',groupLabel:'Promo entière',ue:'UE C1.1 S1',type:'CM',title:'Offre de soins et système de santé',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+  {date:'2026-10-26',start:'13:30',end:'16:30',promo:'all',groupLabel:'Promo entière',ue:'UE B2.1.1 S1',type:'CM',title:'Psychopathologie de la santé et psychologie sociale',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+  {date:'2026-10-26',start:'16:30',end:'17:30',promo:'all',groupLabel:'Promo entière',ue:'UE B2.1.1 S1',type:'CM',title:'Psychométrie',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+
+  {date:'2026-10-27',start:'08:30',end:'12:30',promo:'all',groupLabel:'Promo entière',ue:'UE B1.3 S1',type:'CM',title:'Fièvre au retour de voyage, paludisme, HIV, hépatite',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+  {date:'2026-10-27',start:'13:30',end:'17:30',promo:'all',groupLabel:'Promo entière',ue:'UE B2.1.1 S1',type:'CM',title:'Psychologie sociale',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+
+  {date:'2026-10-28',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A',ue:'UE A2.1 S1',type:'TD',title:'Exercice professionnel',room:'S10',teacher:'LEBRE Stéphanie',site:'IFSI ABC'},
+  {date:'2026-10-28',start:'09:30',end:'12:00',promo:'B',groupLabel:'Promo B',ue:'UE B3.3 S1',type:'TD',title:'TD2 : Douleurs aiguës de l’adulte',room:'S11',teacher:'SOARES Sonia',site:'IFSI ABC'},
+  {date:'2026-10-28',start:'13:30',end:'16:00',promo:'A',groupLabel:'Promo A',ue:'UE B3.3 S1',type:'TD',title:'TD2 : Douleurs aiguës chez l’adulte',room:'S11',teacher:'LEBRE Stéphanie',site:'IFSI ABC'},
+  {date:'2026-10-28',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE A2.1 S1',type:'TD',title:'Exercice professionnel',room:'S10',teacher:'DIETRICH Anne',site:'IFSI ABC'},
+
+  {date:'2026-10-29',start:'09:00',end:'10:30',promo:'all',groupLabel:'Distanciel',ue:'UE E2.1 S1',type:'Asynchrone',title:'Connexion Mischool',room:'Distanciel',teacher:'',site:'Distanciel'},
+  {date:'2026-10-29',start:'10:30',end:'12:30',promo:'all',groupLabel:'Promo entière',ue:'UE B1.1 S1',type:'CM',title:'Les organes des sens',detail:'Lieu non précisé sur le planning fourni.',room:'',teacher:'',site:'Lieu à confirmer'},
+  {date:'2026-10-29',start:'13:30',end:'17:30',promo:'all',groupLabel:'Promo entière',ue:'UE B2.1.1 S1',type:'CM',title:'Psychopathologie et psychométrie',room:'KB Faculté de médecine du Kremlin-Bicêtre',teacher:'',site:'FAC KB'},
+
+  {date:'2026-10-30',start:'09:00',end:'12:00',promo:'B',groups:['B1'],groupLabel:'Groupe B1',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S10',teacher:'DELABARRE Isabelle',site:'IFSI ABC'},
+  {date:'2026-10-30',start:'09:00',end:'12:00',promo:'B',groups:['B2'],groupLabel:'Groupe B2',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S3',teacher:'POULAIN Muriel',site:'IFSI ABC'},
+  {date:'2026-10-30',start:'09:00',end:'12:00',promo:'A',groupLabel:'Promo A',ue:'UE A2.1 S1',type:'TD',title:'Les piliers éthiques',room:'S11',teacher:'',site:'IFSI ABC'},
+  {date:'2026-10-30',start:'13:30',end:'16:30',promo:'A',groups:['A1'],groupLabel:'Groupe A1',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S10',teacher:'DELABARRE Isabelle',site:'IFSI ABC'},
+  {date:'2026-10-30',start:'13:30',end:'16:30',promo:'A',groups:['A2'],groupLabel:'Groupe A2',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S3',teacher:'POULAIN Muriel',site:'IFSI ABC'},
+  {date:'2026-10-30',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE A2.1 S1',type:'TD',title:'Les piliers éthiques',room:'S11',teacher:'',site:'IFSI ABC'}
+ ]}
 ];
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
@@ -122,7 +146,7 @@ if(!WEEKS.some(w=>w.id===selectedWeek))selectedWeek=(weekForDate(todayISO())||WE
 function css(){
  if($('planningPromoCss'))return;
  const s=document.createElement('style');s.id='planningPromoCss';s.textContent=`
- #v87Nav.vplanning-nav{grid-template-columns:repeat(6,1fr)}
+ #v87Nav.vplanning-nav{grid-template-columns:repeat(7,minmax(0,1fr))}
  #planningPromo{padding:8px 0 132px}
  .vp-toolbar,.vp-card{border:1px solid var(--line);background:var(--card);border-radius:19px;box-shadow:0 7px 22px rgba(55,39,94,.05)}
  .vp-toolbar{padding:10px 12px;margin-bottom:10px;display:grid;gap:8px}
@@ -233,6 +257,7 @@ function changesCard(){
 }
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
 function weekSource(w){
+ if(w.id==='S9')return {chip:'S9 · photo du planning IFSI · MAJ 20/10/2026',detail:'S9 saisie à partir de la photo du planning affiché à l’IFSI (datée du 19/10). Horaires, groupes et salles recopiés ; salle des organes des sens non précisée sur la source. Planning prévisionnel.',ics:'S9 photo du planning IFSI, transcrite le 20/10/2026'};
  if(w.id==='S8')return {chip:'S8 · site promo officiel + contrôle FAC · MAJ 11/10/2026',detail:'S8 recroisée avec le site officiel de la promo et le planning CM FAC. Divergence le 22/10 matin : site promo = Laura CHEVREAU, PDF FAC = Timothy JAMES ; l’app suit le site promo.',ics:'S8 site officiel promo, contrôlée avec planning CM FAC'};
  if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};
  return {chip:`Prévisionnel · ${w.id} support IFSI · MAJ 07/10/2026`,detail:`${w.id} importée depuis le support IFSI. Le planning reste prévisionnel.`,ics:SOURCE};

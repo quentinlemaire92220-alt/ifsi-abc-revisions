@@ -30,15 +30,18 @@ const changed = git(['diff','--name-only',base,'HEAD'])
   .split(/\r?\n/).filter(path => /^qextra-[\w-]+\.txt$/.test(path));
 const manifestBanks = [oldManifest,currentManifest].flatMap(manifest =>
   (manifest.courses||[]).flatMap(c => c.qcmBanks || (c.qcmBank ? [c.qcmBank] : [])));
-const qextra = [...new Set([...changed,...manifestBanks])]
+const catalogueBanks=git(["ls-tree","--name-only",base]).split(/\r?\n/).filter(p=>/^qextra-[\w-]+\.txt$/.test(p)&&git(["show",base+":"+p]).startsWith("["));
+const qextra = [...new Set([...catalogueBanks,...changed,...manifestBanks])]
   .filter(path => typeof path === 'string' && /^[\w/-]+\.(txt|json)$/.test(path) &&
     !path.includes('..'));
 function load(ref) {
   const current = ref === 'HEAD';
   const json = path => current ? read(path) : showJson(ref, path);
-  const bank = qextra.flatMap(path => current
-    ? (fs.existsSync(path) ? read(path) : [])
-    : showJson(base, path, []));
+  const bank = qextra.flatMap(path => {
+    const rows=current?(fs.existsSync(path)?read(path):[]):showJson(base,path,[]);
+    // Old packs predate stable course metadata; only unchanged historical rows may be skipped.
+    return catalogueBanks.includes(path)&&!changed.includes(path)?rows.filter(q=>q.id&&q.courseId):rows;
+  });
   for (const item of bank) if (!item.id || !item.courseId)
     throw new Error('Question ajoutée sans ID ni courseId dans une banque QCM');
   return {
@@ -46,7 +49,7 @@ function load(ref) {
     sheets:[1,2,3].flatMap(i=>json('sheets-'+i+'.json')),
     infographics:json('infographics.json'),
     vocals:json('vocals.json'),
-    questions:bank
+    questions:[...new Map(bank.map(q=>[q.courseId+"\0"+q.id,q])).values()]
   };
 }
 const previous = load(base);

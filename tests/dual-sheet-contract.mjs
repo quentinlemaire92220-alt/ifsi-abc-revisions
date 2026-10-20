@@ -49,6 +49,8 @@ function pdfCheck(courseId,kind,figures,audit,proof,sheet,artifactSha256s){
 
 export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePublishedVerification=true}={}){
  assert.ok(delivery&&typeof delivery==='object',courseId+': livraison absente');
+ if(delivery.revisionSheetMode==='single_with_complete_boards')
+  return validateSingleSheetDelivery(courseId,delivery,sheets,{requirePublishedVerification});
  assert.notEqual(delivery.sheetResourceId,delivery.infographicSheetResourceId,
   courseId+': les deux fiches doivent être des fichiers DISTINCTS');
  const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets,delivery);
@@ -109,10 +111,50 @@ export function validateDualSheetDelivery(courseId,delivery,sheets,{requirePubli
 
 export function validateDualSheetPart(courseId,part,sheets){
  const ids=part.sheetResourceIds||[];
+ if(part.revisionSheetMode==='single_with_complete_boards'){
+  assert.deepEqual(ids,[part.sheetResourceId],courseId+'/'+part.partId+': une seule fiche doit être déclarée');
+  return validateSingleSheetDelivery(courseId,part,sheets);
+ }
  assert.equal(ids.length,2,courseId+'/'+part.partId+': deux fiches distinctes obligatoires');
  assert.ok(part.sheetResourceId&&part.infographicSheetResourceId,
   courseId+'/'+part.partId+': IDs des deux formats non identifiés');
  assert.ok(ids.includes(part.sheetResourceId)&&ids.includes(part.infographicSheetResourceId),
   courseId+'/'+part.partId+': les deux fiches doivent être déclarées dans sheetResourceIds');
  return validateDualSheetDelivery(courseId,part,sheets);
+}
+
+// Choix explicite du propriétaire : une fiche écrite illustrée et des planches
+// complètes séparées. Les anciens contrats à deux fiches restent inchangés.
+export function validateSingleSheetDelivery(courseId,delivery,sheets,{requirePublishedVerification=true}={}){
+ assert.equal(delivery.revisionSheetMode,'single_with_complete_boards',courseId+': format de livraison non identifié');
+ assert.ok(!delivery.infographicSheetResourceId,courseId+': seconde fiche non demandée');
+ const classic=sheetFor(courseId,delivery.sheetResourceId,'classic',sheets,delivery);
+ const figures=delivery.infographicResourceIds;
+ assert.ok(Array.isArray(figures)&&figures.length>0,courseId+': planches complètes complémentaires absentes');
+ assert.equal(new Set(figures).size,figures.length,courseId+': planche déclarée deux fois');
+ validateVisualAudit(courseId,delivery,{requirePublishedVerification});
+ if(requirePublishedVerification)
+  pdfCheck(courseId,'révision',figures.length,delivery.visualAudit,
+   delivery.publishedVerification,classic,delivery.artifactSha256s);
+ const coverage=delivery.sheetCoverage;
+ assert.ok(Number.isInteger(coverage?.expectedNotions)&&coverage.expectedNotions>0,courseId+': inventaire pédagogique absent');
+ assert.equal(coverage.coveredNotions,coverage.expectedNotions,courseId+': fiche de révision incomplète');
+ assert.ok(['medical','conceptual'].includes(coverage.disciplinaryReview?.type),courseId+': type de revue absent');
+ assert.equal(coverage.disciplinaryReview.status,'approved',courseId+': revue disciplinaire non approuvée');
+ for(const id of figures){
+  const board=delivery.completeBoardAudits?.[id];
+  assert.equal(board?.status,'PASS',courseId+': contrôle de planche manquant '+id);
+  assert.ok(sha(board.pdfSha256)&&board.driveId,courseId+': empreinte de planche absente '+id);
+  assert.ok(board.expectedCount>0&&board.checkedCount===board.expectedCount,courseId+': planche incomplètement contrôlée '+id);
+  assert.equal(delivery.artifactSha256s?.[board.driveId],board.pdfSha256,courseId+': empreinte de planche incohérente '+id);
+  if(requirePublishedVerification){
+   const proof=board.publishedVerification;
+   assert.equal(proof?.status,'MATCH',courseId+': copie de planche non vérifiée '+id);
+   assert.equal(proof.source,'authenticated_drive_download',courseId+': origine de vérification invalide '+id);
+   assert.equal(proof.pdfSha256,board.pdfSha256,courseId+': copie de planche différente '+id);
+   assert.equal(proof.expectedCount,board.expectedCount,courseId+': inventaire publié différent '+id);
+   assert.equal(proof.checkedCount,board.expectedCount,courseId+': copie de planche incomplètement contrôlée '+id);
+  }
+ }
+ return {classic};
 }
