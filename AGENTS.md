@@ -39,3 +39,9 @@ Bloquants : licence/provenance de chaque illustration, validation clinique réel
 ## Éligibilité des séances du planning
 
 Avant de créer ou de signaler une fiche manquante à partir du planning, appliquer `docs/COURSE_REVISION_ELIGIBILITY.md` : exclure les connexions MySchool, les temps d’appropriation et les activités administratives/autonomes sans nouveau contenu. Exclure aussi **toutes les simulations** et **toutes les séances asynchrones**, même pédagogiques, de la liste de suivi ; conserver les autres CM, TD et TP pertinents. Ne pas effacer ces créneaux du planning général.
+
+## Orchestration ChatGPT classique / Work — 20/10/2026
+
+**Lire et appliquer `docs/skills/orchestration-chatgpt-classique-work.md`** pour tout nouveau cours, rapprochement d'un support officiel, reprise d'une fiche ou ajout Pathologies. ChatGPT classique pilote l'audit de présence et de qualité, le cadrage pédagogique et la revue ; Work fabrique et contrôle les fichiers lourds, prépare les opérations de classement en masse et l'intégration technique. Si un audit déjà vérifiable est fourni, le réutiliser sans refaire inutilement le même travail. L'organisation ne diminue aucune exigence des skills de fiches originales, Pathologies ou anatomie.
+
+Préserver les ressources précédemment validées, les textes explicatifs et les modèles graphiques récents. Préparer la revue privée avant toute copie étudiante. GO production et GO publication restent deux autorisations distinctes. Les documents pédagogiques détaillés, la traçabilité privée, les liens privés et les transcriptions demeurent hors du dépôt.
