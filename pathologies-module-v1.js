@@ -6,6 +6,11 @@
 const SECTION='ifsiPathologies', KEY='ifsiabc_pathologies_progress_v1';
 const REQUIRED=['definition','physiopathologie','riskFactors','clinicalSigns','diagnosis','treatments','nursingCare','monitoring','complications','keywords'];
 const P1_IDS=new Set(['bpco','hta','dt2']);
+const P1_CATALOG=Object.freeze([
+ {id:'bpco',title:'Bronchopneumopathie chronique obstructive (BPCO)',shortTitle:'BPCO',system:'Système respiratoire',icon:'🫁',courseId:'systeme_respiratoire'},
+ {id:'hta',title:'Hypertension artérielle (HTA)',shortTitle:'Hypertension artérielle',system:'Système cardiovasculaire',icon:'🫀',courseId:'systeme_cardiovasculaire'},
+ {id:'dt2',title:'Diabète de type 2',shortTitle:'Diabète de type 2',system:'Système endocrinien',icon:'🩺',courseId:'systeme_endocrinien'}
+]);
 const LABELS={definition:'Définition',physiopathologie:'Physiopathologie',riskFactors:'Causes et facteurs de risque',clinicalSigns:'Signes cliniques',diagnosis:'Examens et diagnostic',treatments:'Prise en charge',nursingCare:'Rôle infirmier',monitoring:'Surveillances',complications:'Complications et signes d’alerte',keywords:'Définitions des mots-clés'};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unique=a=>Array.isArray(a)&&a.length===new Set(a).size;
@@ -91,13 +96,13 @@ function record(id,kind,correct){
   root.localStorage.setItem(KEY,JSON.stringify(progress));
  }catch{/* Le module doit rester utilisable sans stockage local. */}
 }
-let entries=[],shellEnabled=false,state={id:null,mode:'fiche',index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};
+let entries=[],shellEnabled=false,pendingId=null,state={id:null,mode:'fiche',index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};
 const doc=()=>root.document;
 const byId=id=>doc().getElementById(id);
 function css(){
  if(byId('ifsiPathologiesStyle'))return;
  const style=doc().createElement('style');style.id='ifsiPathologiesStyle';
- style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}.patho-figure{margin:12px 0}.patho-figure img{width:100%;height:auto;object-fit:contain;border-radius:12px}.patho-figure figcaption{font-size:12px;color:var(--muted);margin:6px 0}.patho-poster{margin:0}.patho-poster img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:13px;background:#fff}.patho-poster figcaption{font-size:13px;margin:9px 2px;color:var(--muted)}.patho-poster-nav{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}.patho-details summary{font-weight:700;cursor:pointer;padding:9px 2px}.patho-poster-nav .btn{min-width:95px}nav.ifsi-pathologies-ready{grid-template-columns:repeat(6,minmax(0,1fr))}nav.ifsi-pathologies-ready button{font-size:11px;overflow-wrap:anywhere}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
+ style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-group{border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden}.patho-group>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 13px;cursor:pointer;font-weight:750}.patho-group>summary::-webkit-details-marker{display:none}.patho-group>summary:focus-visible{outline:2px solid var(--p);outline-offset:-2px}.patho-group-name{font-size:15px}.patho-group-count{color:var(--muted);font-size:12px;white-space:nowrap}.patho-group-body{display:grid;gap:8px;padding:0 12px 12px}.patho-group-body .patho-entry{border-radius:12px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}.patho-figure{margin:12px 0}.patho-figure img{width:100%;height:auto;object-fit:contain;border-radius:12px}.patho-figure figcaption{font-size:12px;color:var(--muted);margin:6px 0}.patho-poster{margin:0}.patho-poster img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:13px;background:#fff}.patho-poster figcaption{font-size:13px;margin:9px 2px;color:var(--muted)}.patho-poster-nav{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}.patho-details summary{font-weight:700;cursor:pointer;padding:9px 2px}.patho-poster-nav .btn{min-width:95px}nav.ifsi-pathologies-ready{grid-template-columns:repeat(6,minmax(0,1fr))}nav.ifsi-pathologies-ready button{font-size:11px;overflow-wrap:anywhere}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
  doc().head.appendChild(style);
 }
 function ensure(){
@@ -129,23 +134,49 @@ function open(){
  byId('ifsiPathologiesNav')?.classList.add('on');byId('v87Pathologies')?.classList.add('on');render();
  root.scrollTo?.(0,0);
 }
-function reset(item,mode='fiche'){state={id:item.id,mode,index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};render();}
+function reset(item,mode='fiche'){pendingId=null;state={id:item.id,mode,index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};render();}
 function action(label,data,primary){return '<button type="button" class="btn '+(primary?'primary':'outline')+'" '+data+'>'+esc(label)+'</button>';}
+function catalogRecords(){
+ const records=P1_CATALOG.map(p=>{
+  const published=entries.find(e=>e.id===p.id);
+  return {...p,published:published||null,title:published?.title||p.title};
+ });
+ for(const e of entries.filter(e=>!P1_IDS.has(e.id)))records.push({id:e.id,title:e.title,shortTitle:e.title,system:e.system,icon:'🩺',courseId:e.courseIds[0],published:e});
+ return records;
+}
+function catalogMarkup(records,term=''){
+ const q=term.trim().toLocaleLowerCase('fr');
+ const matches=records.filter(r=>!q||(r.title+' '+r.shortTitle+' '+r.system).toLocaleLowerCase('fr').includes(q));
+ const systems=[...new Set(matches.map(r=>r.system))];
+ if(!systems.length)return '<p class="patho-muted">Aucune pathologie trouvée.</p>';
+ return systems.map((system,i)=>{
+  const all=matches.filter(r=>r.system===system),icon=all[0]?.icon||'🩺';
+  const cards=all.map(r=>'<button type="button" class="patho-entry" data-patho-'+(r.published?'published':'pending')+'="'+esc(r.id)+'"><span><b>'+esc(r.shortTitle)+'</b><span class="patho-badge"> • '+(r.published?'Fiche et entraînements disponibles':'En cours de validation médicale')+'</span></span><span aria-hidden="true">→</span></button>').join('');
+  return '<details class="patho-group" '+(q||i===0?'open':'')+'><summary><span class="patho-group-name">'+icon+' '+esc(system)+'</span><span class="patho-group-count">'+all.length+' pathologie'+(all.length>1?'s':'')+' <span aria-hidden="true">⌄</span></span></summary><div class="patho-group-body">'+cards+'</div></details>';
+ }).join('');
+}
+function showPending(id){
+ const record=P1_CATALOG.find(p=>p.id===id);
+ if(!record)return list();
+ pendingId=id;state.id=null;
+ const host=byId('ifsiPathologiesBody');if(!host)return;
+ host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Toutes les pathologies','id="pathoBack"')+'</div><h2>'+esc(record.title)+'</h2><p class="patho-muted">'+esc(record.system)+'</p><div class="patho-panel" role="status"><h3>Ressources en cours de validation médicale</h3><p>Cette pathologie dispose de son espace dédié. Sa fiche illustrée, ses QCM, ses flashcards et ses cas cliniques ne sont pas encore publiés.</p><p>Ils seront accessibles ici, après validation médicale et pédagogique.</p></div><div class="patho-panel"><h3>Cours associé — accès facultatif</h3><p>Le cours IFSI est une ressource distincte de la fiche Pathologies.</p>'+action('Ouvrir le cours IFSI ↗','data-patho-course="'+esc(record.courseId)+'"')+'</div></div>';
+ byId('pathoBack').onclick=()=>list();
+ host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
+}
 function list(){
  const host=byId('ifsiPathologiesBody');if(!host)return;
- if(!entries.length){
-  const pending=[['BPCO','systeme_respiratoire'],['Hypertension artérielle (HTA)','systeme_cardiovasculaire'],['Diabète de type 2','systeme_endocrinien']];
-  host.innerHTML='<div class="card patho-wrap"><h2>🩺 Pathologies</h2><p class="patho-muted">L’onglet est ouvert. Les fiches, QCM, flashcards et cas cliniques sont en cours de validation médicale et ne sont pas encore publiés.</p>'+pending.map(([name,id])=>'<div class="patho-panel"><h3>'+esc(name)+'</h3><p class="patho-muted">Contenu en cours de validation</p><button type="button" class="btn outline" data-patho-course="'+esc(id)+'">Ouvrir le cours associé ↗</button></div>').join('')+'</div>';
-  host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
-  return;
+ pendingId=null;state.id=null;
+ const records=catalogRecords();
+ host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Accueil','id="pathoHome"')+'</div><h2>🩺 Pathologies</h2><p class="patho-muted">Explore les pathologies par système. Déroule un système pour choisir une pathologie. Les ressources non validées restent indisponibles.</p><div class="patho-toolbar"><input id="pathoSearch" type="search" placeholder="Rechercher une pathologie ou un système" aria-label="Rechercher une pathologie"></div><div id="pathoResults" class="patho-results"></div></div>';
+ byId('pathoHome').onclick=()=>root.show?.('home');
+ const results=byId('pathoResults');
+ function bindRows(){
+  results.querySelectorAll('[data-patho-published]').forEach(b=>b.onclick=()=>{const item=entries.find(e=>e.id===b.dataset.pathoPublished);if(item)reset(item);});
+  results.querySelectorAll('[data-patho-pending]').forEach(b=>b.onclick=()=>showPending(b.dataset.pathoPending));
  }
- host.innerHTML='<div class="card patho-wrap"><h2>🩺 Pathologies</h2><p class="patho-muted">Fiches cliniques, révisions et situations de soins. Seules les ressources validées sont affichées.</p><div class="patho-toolbar"><input id="pathoSearch" placeholder="Rechercher une pathologie" aria-label="Rechercher une pathologie"><select id="pathoSystem" aria-label="Filtrer par système"><option value="">Tous les systèmes</option>'+[...new Set(entries.map(e=>e.system))].map(s=>'<option>'+esc(s)+'</option>').join('')+'</select></div><div id="pathoResults" class="patho-results"></div></div>';
- const redraw=()=>{
-  const q=byId('pathoSearch').value.trim().toLocaleLowerCase('fr'),system=byId('pathoSystem').value,visible=entries.filter(e=>(!system||e.system===system)&&(!q||(e.title+' '+e.system).toLocaleLowerCase('fr').includes(q)));
-  byId('pathoResults').innerHTML=visible.length?visible.map(e=>'<button type="button" class="patho-entry" data-patho="'+esc(e.id)+'"><span><b>'+esc(e.title)+'</b><span class="patho-badge"> • '+esc(e.system)+' • '+e.year+'A</span></span><span>→</span></button>').join(''):'<p class="patho-muted">Aucune pathologie publiée pour ce filtre.</p>';
-  byId('pathoResults').querySelectorAll('[data-patho]').forEach(b=>b.onclick=()=>reset(entries.find(e=>e.id===b.dataset.patho)));
- };
- byId('pathoSearch').oninput=redraw;byId('pathoSystem').onchange=redraw;redraw();
+ function draw(){results.innerHTML=catalogMarkup(records,byId('pathoSearch').value);bindRows();}
+ byId('pathoSearch').oninput=draw;draw();
 }
 function linkedCourseLabel(id){
  const courses=root.IFSI_V741?.getRegistry?.()?.courses;
@@ -191,7 +222,7 @@ function renderCase(item){
 }
 function render(){
  const host=byId('ifsiPathologiesBody');if(!host)return;
- const item=entries.find(x=>x.id===state.id);if(!item){list();return;}
+ const item=entries.find(x=>x.id===state.id);if(!item){if(pendingId)showPending(pendingId);else list();return;}
  host.innerHTML='<div class="card patho-wrap"><div class="row"><div><span class="badge">'+esc(item.system)+' • '+item.year+'A</span><h2>'+esc(item.title)+'</h2></div>'+action('← Retour','id="pathoBack"')+'</div><div class="patho-tabs">'+['fiche','qcm','flashcards','cas'].map(mode=>action({fiche:'Fiche',qcm:'QCM',flashcards:'Flashcards',cas:'Cas clinique'}[mode],'data-pathomode="'+mode+'"',state.mode===mode)).join('')+'</div>'+
  (state.mode==='fiche'?renderSheet(item):state.mode==='qcm'?renderQuestion(item,item.qcm[state.index%item.qcm.length],'QCM'):state.mode==='flashcards'?renderCard(item):renderCase(item))+'</div>';
  byId('pathoBack').onclick=()=>{state.id=null;list();};
