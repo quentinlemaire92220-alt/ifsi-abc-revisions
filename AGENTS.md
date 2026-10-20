@@ -8,13 +8,16 @@ ChatGPT classique par défaut, Work seulement si nécessaire. GO audit → GO pr
 
 ## CONTRAT PRIORITAIRE — PACK DE COURS ALLÉGÉ VALIDÉ LE 20/10/2026
 
-Pour chaque **nouveau cours IFSI ABC**, appliquer en priorité le pack validé par l'utilisateur, devant les anciens contrats de production systématique : **(1)** fiche de révision PDF complète, explications écrites conservées et schémas originaux infographiés *au besoin* ; **(2)** **une page A4 complète infographiée de synthèse** distincte (ce second cours infographié DOIT être exhaustif) ; **(3)** QCM corrigé argumenté, cinq choix A–E, 1–3 bonnes réponses ; **(4)** flashcards à questions autonomes, réponse cachée avant retournement dans l'application ; **(5)** planches anatomiques uniquement si pertinentes et absentes de la bibliothèque Anatomie. **Modèles graphiques Système cardiovasculaire / Système respiratoire**, pilote du 20/10. La fidélité médicale doit être contrôlée indépendamment de l'approbation du style.
+Pour chaque **nouveau cours IFSI ABC**, appliquer en priorité le pack validé par l'utilisateur, devant les anciens contrats de production systématique : **(1)** fiche de révision PDF complète, explications écrites conservées et schémas originaux infographiés *au besoin* ; **(2)** **un cours complet infographié multipage** distinct (exhaustif, visuel, avec schémas anatomiques contrôlés) ; **(3)** QCM corrigé argumenté, cinq choix A–E, 1–3 bonnes réponses ; **(4)** flashcards à questions autonomes, réponse cachée avant retournement dans l'application ; **(5)** planches anatomiques uniquement si pertinentes et absentes de la bibliothèque Anatomie. **Deux références distinctes fournies par l'utilisateur : fiche de révision cardiovasculaire de 17 pages (priorité au texte) et planche circulation sanguine (priorité aux illustrations)**, pilote du 20/10. La fidélité médicale doit être contrôlée indépendamment de l'approbation du style.
 
 **Fiche vocabulaire séparée, scripts vocaux, MP3, exports d'infographies et autres livrables** ne sont plus obligatoires pour chaque cours : création sur demande. **Ne pas effacer** les ressources déjà validées, ni perdre les définitions nécessaires dans la fiche ou dans les flashcards.
 
 **ChatGPT classique par défaut** : audit du support/Drive/application, matrice, rédaction, création des visuels et fichiers réalisables, vérifications, classement ordinaire. **Work seulement en renfort ciblé** si le rendu ou les opérations techniques volumineuses le nécessitent ; pas de seconde génération d'un fichier déjà conforme. GO audit → GO production privée → validation du lot → GO publication distinct.
 
 **Limite technique** : les manifests et tests historiques peuvent imposer deux PDF complets ou d'autres ressources. Ne pas mentir sur un TNR PASS ou publier un pack incomplet au regard du contrat actuel : documenter l'écart et préparer une migration technique dédiée, testée et validée. Ne jamais ajuster le contenu pédagogique pour tromper les tests. Les instructions historiques qui contredisent ce paragraphe sont obsolètes pour les nouvelles productions.
+
+
+**CONTRÔLE GRAPHIQUE OBLIGATOIRE :** consulter `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`. Pour chaque nouveau pack, produire deux évaluations MANUELLES indépendantes : `REVISION_TEXT_FIRST` (paragraphes et tableaux majoritaires, illustrations ponctuelles et justifiées) et `INFOGRAPHIC_VISUAL_FIRST` (grand schéma anatomique, flèches exactes, zooms et légendes, pas une grille de textes). Aucune validation par simple présence d'image, nombre de pages ou succès TNR ; maquettes non conformes bloquées, sans publication.
 
 # Production et publication des cours
 
@@ -34,7 +37,7 @@ Les instructions pédagogiques détaillées, transcriptions, pièces officielles
 
 ## Skill fiches de révision / infographies originales
 
-Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revision-infographies-originales.md`** avant sa génération, son contrôle et sa publication. **Aucune capture, photo ou figure extraite du support officiel ne doit être intégrée au PDF** : les notions utiles doivent être réinterprétées en infographies originales au modèle Système nerveux. Ce skill est distinct des planches anatomiques autonomes et des schémas de QCM. Une maquette non conforme est bloquée avant présentation ; pas de répétition de la consigne à demander à l'utilisateur.
+Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revision-infographies-originales.md`** avant sa génération, son contrôle et sa publication. **Aucune capture, photo ou figure extraite du support officiel ne doit être intégrée au PDF** : les notions utiles doivent être réinterprétées en infographies originales au modèle validé de la fiche cardiovasculaire, texte majoritaire et figures ponctuelles. Ce skill est distinct des planches anatomiques autonomes et des schémas de QCM. Une maquette non conforme est bloquée avant présentation ; pas de répétition de la consigne à demander à l'utilisateur.
 
 ## Skill Pathologies — modèle maître infographies BPCO
 
