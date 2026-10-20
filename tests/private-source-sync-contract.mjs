@@ -20,6 +20,8 @@ assert.equal(r.production,'BROUILLON_PRIVÉ');
 assert.equal(sync.normalizeRow({key:'../../file',transcript:'Présent'}),null);
 assert.equal(sync.sourceRecord('systeme_respiratoire'),null,'Ne pas inventer une présence avant connexion');
 assert.ok(!/\b(localStorage|sessionStorage)\.setItem\b/.test(client),'Le token ne doit pas être persisté en storage');
+assert.ok(client.includes('create_user:false'),'La demande OTP publique ne doit pas créer un nouveau compte');
+assert.ok(!client.includes('create_user:true'),'Inscription libre interdite dans le pilote privé');
 assert.ok(!/service_role|sb_secret_|IFSI_SOURCE_SHEET_ID|IFSI_GOOGLE_SERVICE_ACCOUNT_JSON/.test(client),'Un secret serveur apparaît dans le client');
 assert.ok(!/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]{15,}/.test(client),'ID de registre privé présent en clair');
 assert.ok(backend.includes('IFSI_SOURCE_OWNER_UID')&&backend.includes('user.id === ownerId'),'Autorisation par UUID signée requise');
