@@ -30,4 +30,4 @@ Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/p
 
 ## Éligibilité des séances du planning
 
-Avant de créer ou de signaler une fiche manquante à partir du planning, appliquer `docs/COURSE_REVISION_ELIGIBILITY.md` : exclure les connexions MySchool, les temps d’appropriation et les activités administratives/autonomes sans nouveau contenu. Conserver les vrais CM, TD, TP et cours asynchrones documentés. Ne pas effacer ces créneaux du planning général.
+Avant de créer ou de signaler une fiche manquante à partir du planning, appliquer `docs/COURSE_REVISION_ELIGIBILITY.md` : exclure les connexions MySchool, les temps d’appropriation et les activités administratives/autonomes sans nouveau contenu. Exclure aussi **toutes les simulations** et **toutes les séances asynchrones**, même pédagogiques, de la liste de suivi ; conserver les autres CM, TD et TP pertinents. Ne pas effacer ces créneaux du planning général.
