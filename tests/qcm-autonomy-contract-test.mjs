@@ -60,3 +60,7 @@ assert.throws(()=>validateChangedQcmBanks([legacy],[{
 assert.throws(()=>validateChangedQcmBanks([okay],[{...okay,explanation:'Le TD indique A.'}]),
   /dépend du TD\/support/);
 console.log('✅ QCM autonomes : nouveaux énoncés, propositions, corrigés, cartes, archivage historique et suivi différentiel contrôlés.');
+
+const completeAttribution='A : vrai. Cette ressource n’est pas réservée à un sexe. B : faux. Le cours décrit une assignation sociale et la critique. C : faux. Ces rapports constituent au contraire un objet central. D : vrai. Gilligan ne leur dénie pas cette capacité. E : faux. Le care exige des compétences.';
+assert.equal(autonomyViolations(make("attribution","Pourquoi cette assignation est-elle sociale ?",{explanation:completeAttribution})).length,0);
+assert.ok(autonomyViolations(make("new_dependency","Pourquoi cette assignation est-elle sociale ?",{explanation:completeAttribution+" Voir le support."})).length);

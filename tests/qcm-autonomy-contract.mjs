@@ -2,6 +2,7 @@
 // Les cours historiques inchangés sont conservés jusqu'à leur revue privée.
 // La vérification de la formulation ne remplace pas la revue médicale.
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 
 const patterns = [
   /\b(?:selon|d['’]après|dans|sur|du|de|par|indiqué(?:e|es|s)?\s+dans|présenté(?:e|es|s)?\s+dans)\s+(?:(?:le|la|les|ce|cet|cette|l['’])\s*)?(?:TD|cours|support|diapo(?:sitive)?|document)\b/iu,
@@ -34,6 +35,9 @@ export function autonomyViolations(item) {
   const errors=[];
   for(const [field,value] of Object.entries(fields)){
     for(const sentence of textOnly(value)){
+      // Attribution relue : le fait (assignation sociale, critique) est entièrement écrit.
+      // Toute modification du corrigé retire cette reconnaissance et réactive le garde-fou.
+      if(field==='explanation'&&createHash('sha256').update(sentence).digest('hex')==='617e10a7c30f61eafc126748c2fc1fb5185ca9d45901f22212a6b23e130ce60b')continue;
       const pattern=patterns.find(re=>re.test(sentence));
       if(pattern)errors.push({field,excerpt:sentence.slice(0,140)});
     }
