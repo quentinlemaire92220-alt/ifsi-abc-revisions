@@ -24,7 +24,7 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, PageBreak, Spacer
 from revision_compose import render as render_classic
 from revision_course_pack import checked_asset, digest
 
-VERSION = "lean_v1.1-complete-infographic"
+VERSION = "lean_v1.2-validated-dual-style"
 PURPLE = colors.HexColor("#5b46a3")
 TEAL = colors.HexColor("#0e93ac")
 INK = colors.HexColor("#192937")
@@ -243,7 +243,15 @@ def make_pack(data, assets, out):
             "notions":notions,"infographicCoveredNotions":covered,
             "files":files,"sourceFiguresReused":figure_hashes,
             "artifactSha256s":{name:digest(out/name) for name in files.values()},
-            "medicalReview":"REQUIRED","visualReview":"REQUIRED","publicationApproval":"NOT_GRANTED"}
+            "medicalReview":"REQUIRED","visualReview":"REQUIRED",
+            "styleReview":{
+                "REVISION_TEXT_FIRST":"REVIEW_REQUIRED",
+                "INFOGRAPHIC_VISUAL_FIRST":"REVIEW_REQUIRED",
+                "revisionReference":"UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Fiche_Revision_Coeur_Vaisseaux_et_Sang.pdf",
+                "infographicReference":"UE_S1_B1_Systeme_Cardiovasculaire_Partie01_Infographie_01_Circulation_sanguine_et_trajet_du_sang (1).pdf",
+                "reviewMethod":"inspection manuelle des pages, légendes, tableaux, orientation des flèches et explications"
+            },
+            "publicationApproval":"NOT_GRANTED"}
     old.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     return result
 
