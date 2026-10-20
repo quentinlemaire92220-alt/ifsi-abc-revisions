@@ -23,15 +23,26 @@ function validate(item){
  if(!Number.isInteger(item?.year)||item.year<1||item.year>3)errors.push('Année IFSI invalide');
  if(!nonEmpty(item?.courseIds)||!item.courseIds.every(text)||!unique(item.courseIds))errors.push('Liens vers les cours manquants ou dupliqués');
  for(const k of REQUIRED){if(!text(item?.sections?.[k]))errors.push('Section absente : '+k);}
- if(!nonEmpty(item?.sources)||!item.sources.every(s=>text(s.label)&&text(s.url)&&/^https:\/\//.test(s.url)&&['official','verified_complement'].includes(s.type)))errors.push('Sources non traçables');
+ if(!nonEmpty(item?.sources)||!item.sources.every(s=>s&&text(s.label)&&text(s.url)&&/^https:\/\//.test(s.url)&&['official','verified_complement'].includes(s.type)))errors.push('Sources non traçables');
+ const sourceIds=new Set((item?.sources||[]).map(s=>s?.id).filter(text));
+ if(!nonEmpty(item?.sources)||!item.sources.every(s=>s&&text(s.id))||!unique(item.sources.map(s=>s?.id)))errors.push('Identifiants des sources manquants ou dupliqués');
+ const visuals=item?.visuals;
+ if(!nonEmpty(visuals)||!unique(visuals.map(v=>v?.id)))errors.push('Infographies manquantes ou identifiants dupliqués');
+ else visuals.forEach(v=>{
+  if(!text(v?.id)||!REQUIRED.includes(v?.sectionId)||v?.kind!=='original_infographic'||!text(v?.alt)||!text(v?.url)||!/^https:\/\//i.test(v?.url)||!/^[-a-f0-9]{64}$/i.test(v?.sha256||''))errors.push('Infographie incomplète, brute ou non sécurisée : '+(v?.id||'?'));
+  if(!nonEmpty(v?.sourceIds)||(Array.isArray(v?.sourceIds)&&v?.sourceIds.some(id=>!sourceIds.has(id))))errors.push('Infographie sans source identifiable : '+(v?.id||'?'));
+  if(v?.graphicalReview!=='approved'||v?.medicalReview!=='approved')errors.push('Infographie sans double validation médicale et graphique : '+(v?.id||'?'));
+ });
+ const audit=item?.visualAudit;
+ if(!audit||!Number.isInteger(audit.diagramCount)||audit.diagramCount<1||audit.diagramCount!==(visuals||[]).length||audit.rawDiagramCount!==0||audit.allPdfPagesChecked!==true||audit.clinicalContentReviewed!==true)errors.push('Audit schéma → infographie / PDF / validation clinique incomplet');
  if(!nonEmpty(item?.qcm))errors.push('QCM absent');else{
-  if(!unique(item.qcm.map(x=>x.id)))errors.push('IDs QCM dupliqués');
+  if(!unique(item.qcm.map(x=>x?.id)))errors.push('IDs QCM dupliqués');
   item.qcm.forEach(q=>checkOptions(q,'QCM '+(q.id||'?'),errors));
  }
- if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x.id))||!item.flashcards.every(c=>text(c.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
- if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x.id)))errors.push('Cas cliniques absents ou dupliqués');
+ if(!nonEmpty(item?.flashcards)||!unique(item.flashcards.map(x=>x?.id))||!item.flashcards.every(c=>c&&text(c?.id)&&text(c.front)&&text(c.back)))errors.push('Flashcards invalides');
+ if(!nonEmpty(item?.cases)||!unique(item.cases.map(x=>x?.id)))errors.push('Cas cliniques absents ou dupliqués');
  else item.cases.forEach(c=>{
-  if(!text(c.id)||!text(c.title)||!text(c.context)||!nonEmpty(c.steps))errors.push('Cas incomplet : '+(c.id||'?'));
+  if(!text(c?.id)||!text(c?.title)||!text(c?.context)||!nonEmpty(c?.steps))errors.push('Cas incomplet : '+(c?.id||'?'));
   else c.steps.forEach((s,i)=>checkOptions({...s,id:s.id||('step_'+i),correct:[s.correct]},'Cas '+c.id+' étape '+(i+1),errors));
  });
  if(!approved(item?.publicationApproval))errors.push('Publication non autorisée : GO publication et empreinte requis');
@@ -60,7 +71,7 @@ const byId=id=>doc().getElementById(id);
 function css(){
  if(byId('ifsiPathologiesStyle'))return;
  const style=doc().createElement('style');style.id='ifsiPathologiesStyle';
- style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
+ style.textContent='.patho-wrap{display:grid;gap:13px}.patho-toolbar{display:flex;gap:9px;flex-wrap:wrap}.patho-toolbar input{flex:1;min-width:170px}.patho-results{display:grid;gap:9px}.patho-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);text-align:left;cursor:pointer;width:100%}.patho-badge{font-size:12px;color:var(--muted)}.patho-panel{padding:14px;border:1px solid var(--line);background:var(--card);border-radius:16px}.patho-panel h3{margin:0 0 8px}.patho-panel p{line-height:1.55;white-space:pre-line}.patho-options{display:grid;gap:7px}.patho-options label{border:1px solid var(--line);padding:10px;border-radius:10px;display:flex;align-items:start;gap:9px}.patho-correction{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px;line-height:1.5}.patho-section-title{font-weight:700}.patho-tabs{display:flex;gap:6px;flex-wrap:wrap}.patho-tabs button{flex:1;min-width:80px}.patho-card{cursor:pointer;text-align:center;min-height:130px;display:grid;place-items:center}.patho-card p{font-size:17px;font-weight:600}.patho-muted{color:var(--muted);font-size:13px}.patho-sources{padding-left:20px}.patho-sources li{margin:6px 0}.patho-figure{margin:12px 0}.patho-figure img{width:100%;height:auto;object-fit:contain;border-radius:12px}.patho-figure figcaption{font-size:12px;color:var(--muted);margin:6px 0}@media(max-width:600px){.patho-tabs button{font-size:12px;padding:9px 4px}}';
  doc().head.appendChild(style);
 }
 function ensure(){
@@ -102,7 +113,7 @@ function links(item){
  return '<p class="patho-muted">Cours associés à cette pathologie :</p><div class="patho-toolbar">'+item.courseIds.map(id=>'<button type="button" class="btn outline" data-patho-course="'+esc(id)+'">'+esc(id.replaceAll('_',' '))+' ↗</button>').join('')+'</div>';
 }
 function renderSheet(item){
- return REQUIRED.map(k=>'<div class="patho-panel"><h3>'+esc(LABELS[k])+'</h3><p>'+esc(item.sections[k])+'</p></div>').join('')+
+ return REQUIRED.map(k=>'<div class="patho-panel"><h3>'+esc(LABELS[k])+'</h3><p>'+esc(item.sections[k])+'</p>'+item.visuals.filter(v=>v?.sectionId===k).map(v=>'<figure class="patho-figure"><img loading="lazy" src="'+esc(v?.url)+'" alt="'+esc(v?.alt)+'"><figcaption>'+esc(v?.alt)+'</figcaption></figure>').join('')+'</div>').join('')+
  '<div class="patho-panel"><h3>Sources et statut</h3><ul class="patho-sources">'+item.sources.map(s=>'<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.label)+'</a> — '+(s.type==='official'?'Support officiel':'Complément vérifié')+'</li>').join('')+'</ul>'+links(item)+'</div>';
 }
 function renderQuestion(item,q,kind){
@@ -157,6 +168,7 @@ function render(){
  });
 }
 function activate(catalog){
+ if(!Array.isArray(catalog)||!catalog.length)return {activated:false,errors:[{id:null,errors:['Catalogue vide ou invalide']} ]};
  const invalid=(Array.isArray(catalog)?catalog:[]).map(x=>({id:x?.id,errors:validate(x)})).filter(x=>x.errors.length);
  if(invalid.length)return {activated:false,errors:invalid};
  entries=Array.isArray(catalog)?catalog.slice():[];
