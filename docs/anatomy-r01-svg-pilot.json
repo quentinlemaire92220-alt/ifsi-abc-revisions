@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "R01",
+  "courseId": "systeme_reproducteur",
+  "title": "Appareil génital masculin : vue sagittale d'ensemble",
+  "sourceCourse": "UE B1 — Système reproducteur (Vanessa Petit, 2026)",
+  "technique": "original anatomical raster image + editable SVG layer",
+  "graphicReference": "Planche_05_Cellule_humaine_HD.png",
+  "target": {
+    "medium": "A4 portrait",
+    "canvas": {
+      "width": 1240,
+      "height": 1754
+    },
+    "originalArtwork": "NOT_YET_GENERATED",
+    "textOnArtwork": false,
+    "arrowsOnArtwork": false
+  },
+  "status": "PILOT_SPEC_READY_ARTWORK_NOT_GENERATED",
+  "graphicalApproved": false,
+  "clinicalApproved": false,
+  "rightsApproved": false,
+  "publicationApproved": false,
+  "sourceImage": null,
+  "anatomyView": "sagittale",
+  "clinicalCriticalChecks": [
+    "Vessie au-dessus de la prostate",
+    "Urètre prostatique dans la prostate et pénien continu",
+    "Vésicule séminale derrière la vessie",
+    "Épididyme et testicule connectés au déférent",
+    "Rectum postérieur",
+    "Aucune confusion urètre/uretère ni vésicule/ampoule"
+  ],
+  "landmarks": [
+    {
+      "id": "vessie",
+      "label": "Vessie",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Vessie au-dessus de la prostate",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "vesicule_seminale",
+      "label": "Vésicule séminale",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Structure postérieure à la vessie ; ne pas confondre avec l'ampoule déférentielle",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "canal_deferent",
+      "label": "Canal déférent",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Trajet de l'épididyme vers la région postérieure de la vessie",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "prostate",
+      "label": "Prostate",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Sous la vessie ; l'urètre prostatique traverse cette glande",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "uretre_prostatique",
+      "label": "Urètre prostatique",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Partie de l'urètre traversant la prostate",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "uretre_penien",
+      "label": "Urètre pénien",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Canal traversant le pénis, distinct de l'uretère",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "penis",
+      "label": "Pénis",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Anatomie externe neutre et pédagogique",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "epididyme",
+      "label": "Épididyme",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Accolé au testicule",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "testicule",
+      "label": "Testicule",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Situé dans le scrotum",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "scrotum",
+      "label": "Scrotum",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Enveloppe contenant le testicule",
+      "reviewed": false,
+      "status": "unresolved"
+    },
+    {
+      "id": "rectum",
+      "label": "Rectum",
+      "tip": null,
+      "labelPosition": null,
+      "evidence": "Postérieur à la prostate et à la vessie",
+      "reviewed": false,
+      "status": "unresolved"
+    }
+  ],
+  "exports": {
+    "svg": null,
+    "png": null,
+    "webp": null,
+    "pdf": null
+  },
+  "statusReason": "Positions à déterminer sur une illustration anatomiquement contrôlée ; ne jamais inventer les coordonnées des flèches.",
+  "acceptance": [
+    "Aucun texte ni flèche fusionnés avec le fond",
+    "Tous les repères visibles, exacts et individuels",
+    "Vérification du document officiel",
+    "Licence de réutilisation documentée",
+    "Visibilité mobile et A4",
+    "GO publication du lot exact avant diffusion"
+  ],
+  "notes": "Ce pilote remplace la création/retouche répétitive via Canva. La figure Canva existante R01 demeure un brouillon historique, non déclarée validée. Aucun ajout au catalogue ou aux QCM."
+}
