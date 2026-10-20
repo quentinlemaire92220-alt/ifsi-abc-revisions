@@ -16,9 +16,9 @@ const valid = {
  sources:[{id:'fiction',label:'Référence fictive test',url:'https://example.org/reference-test',type:'verified_complement'}],
  visuals:[{id:'faux-visuel-01',sectionId:'physiopathologie',kind:'original_infographic',alt:'Infographie fictive de test',url:'https://example.org/fiction.png',sha256:digest,sourceIds:['fiction'],graphicalReview:'approved',medicalReview:'approved'}],
  visualAudit:{diagramCount:1,rawDiagramCount:0,allPdfPagesChecked:true,clinicalContentReviewed:true},
- qcm:[{id:'q1',prompt:'Quelle proposition fictive est attendue ?',options:['Premier choix','Deuxième choix','Troisième choix','Quatrième choix'],correct:[1],explanation:'La réponse B sert uniquement aux tests du moteur.',feedback:['Choix A non attendu','Choix B attendu','Choix C non attendu','Choix D non attendu']}],
- flashcards:[{id:'f1',front:'Question purement fictive ?',back:'Réponse purement fictive.'}],
- cases:[{id:'c1',title:'Situation fictive',context:'Patient entièrement fictif, aucun détail médical.',steps:[{id:'s1',prompt:'Action fictive ?',options:['A','B','C','D'],correct:1,explanation:'Explication de démonstration.',feedback:['A non attendu','B attendu','C non attendu','D non attendu']}]}],
+ qcm:[{id:'q1',prompt:'Quelle proposition fictive est attendue ?',options:['Premier choix','Deuxième choix','Troisième choix','Quatrième choix'],correct:[1],explanation:'La réponse B sert uniquement aux tests du moteur.',feedback:['Choix A non attendu','Choix B attendu','Choix C non attendu','Choix D non attendu'],sourceIds:['fiction']}],
+ flashcards:[{id:'f1',front:'Question purement fictive ?',back:'Réponse purement fictive.',sourceIds:['fiction']}],
+ cases:[{id:'c1',title:'Situation fictive',context:'Patient entièrement fictif, aucun détail médical.',steps:[{id:'s1',prompt:'Action fictive ?',options:['A','B','C','D'],correct:1,explanation:'Explication de démonstration.',feedback:['A non attendu','B attendu','C non attendu','D non attendu'],sourceIds:['fiction']}]}],
  publicationApproval:{status:'approved',authorization:'explicit_go_publication',scope:'pathology_package',bundleSha256:digest}
 };
 
@@ -29,6 +29,12 @@ assert.ok(errors({...valid,sections:{...valid.sections,monitoring:''}}).some(e=>
 assert.ok(errors({...valid,qcm:[{...valid.qcm[0],correct:[0,1,2,3]}]}).some(e=>e.includes('réponses attendues')), '4/4 autorisé');
 assert.ok(errors({...valid,qcm:[{...valid.qcm[0],feedback:['Un seul'] }]}).some(e=>e.includes('correction argumentée')), 'Feedback incomplet');
 assert.ok(errors({...valid,sources:[]}).some(e=>e.includes('Sources')), 'Aucune source tolérée');
+assert.ok(errors({...valid,qcm:[{...valid.qcm[0],sourceIds:[]}]}).some(e=>e.includes('sourceIds individuels')),'QCM sans source individuel autorisé');
+assert.ok(errors({...valid,flashcards:[{...valid.flashcards[0],sourceIds:[]}]}).some(e=>e.includes('sourceIds individuels')),'Flashcard sans source individuel autorisée');
+assert.ok(errors({...valid,cases:[{...valid.cases[0],steps:[{...valid.cases[0].steps[0],sourceIds:[]}]}]}).some(e=>e.includes('sourceIds individuels')),'Étape de cas sans source autorisée');
+assert.ok(errors({...valid,flashcards:[{...valid.flashcards[0],sourceIds:['inconnue']}]}).some(e=>e.includes('sourceIds individuels')),'Source inconnue acceptée');
+assert.doesNotThrow(()=>engine.validate({...valid,cases:[{...valid.cases[0],steps:[null]}]}),'Étape null doit être rejetée sans erreur de runtime');
+
 assert.ok(errors({...valid,visuals:[]}).some(e=>e.includes('Infographies')), 'Absence d’infographies autorisée');
 assert.doesNotThrow(()=>engine.validate({...valid,visuals:[null]}),'Visuel null doit être rejeté sans erreur JS');
 assert.doesNotThrow(()=>engine.validate({...valid,visuals:[{...valid.visuals[0],sourceIds:'invalid'}]}),'Liens de sources malformés doivent être rejetés');
