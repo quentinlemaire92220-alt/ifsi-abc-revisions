@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {validateDualSheetDelivery,validateSheetSource} from './dual-sheet-contract.mjs';
 import {validateLeanCourseDelivery,validateLeanPart} from './lean-course-contract.mjs';
+import {validateLeanQuestions,validateLeanFlashcards} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -44,8 +45,10 @@ for(const c of manifest.courses){
   const actual=live.find(x=>x.id===q.id);
   assert.deepEqual(JSON.parse(JSON.stringify(actual.answers)),q.answers,q.id+': correction divergente');
  }
+ if(c.packFormat==='lean_v1')validateLeanQuestions(bank);
  const cards=deck.filter(x=>x.courseId===c.courseId && !String(x.id).startsWith('voc:')); // Les cartes de livraison sont distinctes des cartes de vocabulaire générées.
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
+ if(c.packFormat==='lean_v1')validateLeanFlashcards(cards);
  assert.ok(c.flashcardDriveId,'Export Flashcards absent');
  for(const card of cards){
   assert.ok(card.front.endsWith('?')&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
