@@ -1,3 +1,7 @@
+> **ARCHIVE / MÉTHODE DE SECOURS depuis le 20/10/2026.** La production anatomique IFSI ABC suit désormais en priorité **`docs/skills/production-planches-anatomiques-svg.md`** (image médicale originale sans texte + calque de flèches et légendes SVG éditables + exports contrôlés). Ne plus utiliser Canva pour les nouvelles planches par défaut. Les règles de revue médicale, de provenance/licence et de GO publication restent obligatoires.
+
+---
+
 # Skill IFSI ABC — produire des planches anatomiques par Canva et sources médicales (v1.0)
 
 **Date** 19/10/2026. **Statut** Procédure de production reproductible pour revue privée, pas approbation pédagogique automatique.
