@@ -16,7 +16,7 @@
 
 ## 2. Référence graphique obligatoire
 
-**Modèle de fiche principal : Système nerveux**, `UE_S1_B1_Systeme_Nerveux_Fiche_Revision_Systeme_Nerveux.pdf` (Drive `1SxEsqBTny7XO83AIrX5VxTJiRbo5NYiY`). Le Système respiratoire est un second exemple conforme, pas un prétexte pour réutiliser ses images.
+**Modèle de fiche principal : Système nerveux**, `UE_S1_B1_Systeme_Nerveux_Fiche_Revision_Systeme_Nerveux.pdf` (dans le Drive pédagogique de référence). Le Système respiratoire est un second exemple conforme, pas un prétexte pour réutiliser ses images.
 
 - Bandeau violet de l'UE, titres lisibles avec accent turquoise, mise en page aérée mais dense, typographie française propre, tableaux et mémos seulement s'ils facilitent la compréhension.
 - **L'illustration pédagogique est insérée dans la section de la fiche qui explique le concept**, en complément du texte : pas de pack d'images collé en fin de document, pas de page de garde détournée, pas de collage de miniatures multipanneaux.
