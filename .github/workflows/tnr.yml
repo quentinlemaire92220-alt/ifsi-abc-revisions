@@ -249,6 +249,9 @@ jobs:
       - name: Tester intégration de la coque Pathologies inactive
         run: node tests/pathologies-app-integration-v1.mjs
 
+      - name: Vérifier les six planches Pathologies et les vrais cours associés
+        run: node tests/pathologies-p1-poster-pages.mjs
+
       - name: Contrat de production Pathologies — forme BPCO et protection de publication
         run: node tests/pathologies-skill-contract.mjs
 
