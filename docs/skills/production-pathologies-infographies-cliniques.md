@@ -49,6 +49,20 @@ Pour **chaque** schéma/infographie, vérifier et tracer :
 - **PDF final :** rendre **chaque page** en image et inspecter à 100 %, à l'échelle réelle A4 et sur mobile ; conserver la preuve privée du contrôle. Refuser les visuels hors-champ, avec pointages douteux, contenu non sourcé ou tout défaut restant.
 - Tests automatiques : inventaire `visualId` unique, `sourceId` et source datée, `sectionId` existant, statut de contrôle visuel et médical, zéro schéma brut détecté **dans l'inventaire**. **Le contrôle automatisé ne remplace jamais la revue visuelle/médicale page par page.**
 
+## 6. Validation du LOT P1 BPCO / HTA / diabète de type 2 — 20/10/2026
+
+**Validation utilisateur acquise : FORME et STRUCTURE PÉDAGOGIQUE SEULEMENT.** La référence BPCO à six panneaux illustrés et les déclinaisons HTA et diabète type 2 constituent un **ensemble témoin du modèle graphique**, tel que présenté au propriétaire : six zones denses, codées en couleur, grandes illustrations anatomiques détaillées, coupes et comparatifs significatifs, bandeaux hiérarchisés, texte explicatif court et repères de soin, pictogrammes et mémos. Ne pas remplacer par des ronds simples, schémas vectoriels pauvres, cases vides ou une maquette sobre qui dégrade la densité ou la fonction pédagogique.
+
+**Fidélité des modifications :** conserver l'identité graphique et les six fonctions pédagogiques du témoin. Les corrections doivent être **locales et ciblées** sur les légendes, flèches, dessins anatomiques, valeurs et formulations erronés. Garder un comparatif avant/après ; si la correction impose une recomposition substantielle, représenter le nouveau visuel au propriétaire. Une sortie PDF plus simple mais médicalement correcte ne remplace pas automatiquement la forme approuvée.
+
+**Ne pas confondre :** la validation de la forme ne valide pas les images pixellisées, les textes incrustés, les seuils, les traitements, les exemples infirmiers, le catalogue JSON, le QCM, les cas cliniques, les flashcards ni l'ensemble du lot pour publication. Dans l'HTA, la présence d'une plaque d'athérosclérose dans une artère n'est pas constitutive de toute hypertension artérielle ; dans la BPCO, une cible SpO₂ 88–92 % ne doit pas apparaître comme universelle. Relecture médicale avant **toute utilisation comme fiche scientifique approuvée**.
+
+**Six fonctions pédagogiques du témoin :** 1 définition et généralités ; 2 causes et physiopathologie ; 3 conséquences et signes ; 4 examens, diagnostic et bilan ; 5 traitements et prise en charge ; 6 rôle infirmier, surveillances et complications. Cela guide la composition sans imposer six pages à toutes les maladies.
+
+**QCM et cas :** répartition non prévisible des bonnes réponses entre A/B/C/D(/E) ; interdiction de réponses A systématiquement vraies. Toute permutation doit synchroniser **options, indices justes, explications par proposition, corrigé PDF, score et feedback**. Test de répartition et de cohérence obligatoire sur chaque nouvelle banque et sur les étapes des cas cliniques. La validation de structure seule n'est **pas** une validation des distracteurs ou des explications médicales.
+
+**Publication :** conserver les témoins et matrices de revue en espace privé ; ne pas ajouter ces fichiers au dépôt public ni au Drive étudiant avant la validation médicale détaillée, le contrôle du PDF page par page et un **GO publication explicite** portant sur les octets du package final.
+
 ## 6. Livrables et règle de publication
 
 Le modèle maître BPCO fixe **la forme seulement**. Les visuels du pilote restent soumis à relecture médicale, correction des seuils/erreurs et approbation du *contenu final*. Approbation de la charte ≠ « GO publication ».
