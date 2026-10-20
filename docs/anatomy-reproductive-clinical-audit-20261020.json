@@ -83,7 +83,31 @@
           "action": "Contrôler la réunion vésicule/ampoule puis le trajet prostatique."
         }
       ],
-      "gating": "BLOCK_UNTIL_REPLACED"
+      "gating": "BLOCK_UNTIL_REPLACED",
+      "canvaCorrection": {
+        "designId": "DAHYiE0NJeQ",
+        "page": 1,
+        "saved": true,
+        "userApprovedLayout": true,
+        "verifiedCanvasElements": {
+          "seminalVesicleLabel": "Vésicule séminale",
+          "seminalVesicleArrowAsset": "MAHYeM_dN7s",
+          "seminalVesicleArrowRect": {
+            "left": 487.97,
+            "top": 406.27,
+            "width": 138.56,
+            "height": 29.34
+          },
+          "deferentialAmpullaLabel": "Ampoule déférentielle (non individualisée)",
+          "ampullaArrowPresent": false
+        },
+        "medicalReference": "Official S1 B1 reproductive system lecture pp. 13–14 and 18: vas deferens ends in ampulla, joins seminal vesicle duct, ejaculatory duct through prostate",
+        "currentPublishedAssetStillIncorrect": true,
+        "clinicalApproval": false,
+        "licenseApproval": false,
+        "highResolutionExportVerified": false,
+        "sourceImageEditStatus": "CANVA_SAVED_BUT_NOT_EXPORTED"
+      }
     },
     {
       "id": "R04",
@@ -134,7 +158,37 @@
           "action": "Ajouter le repère au passage intra-utérin."
         }
       ],
-      "gating": "BLOCK_UNTIL_REPLACED"
+      "gating": "BLOCK_UNTIL_REPLACED",
+      "canvaCorrection": {
+        "designId": "DAHYiE0NJeQ",
+        "page": 2,
+        "saved": true,
+        "userApprovedLayout": true,
+        "verifiedCanvasElements": {
+          "cortexLabel": "Cortex ovarien",
+          "cortexArrowAsset": "MAHYd9uXgOk",
+          "cortexArrowRect": {
+            "left": 558,
+            "top": 420,
+            "width": 75,
+            "height": 28.59
+          },
+          "medullaLabel": "Médulla ovarienne",
+          "medullaArrowAsset": "MAHYd8dLw9k",
+          "medullaArrowRect": {
+            "left": 360,
+            "top": 550,
+            "width": 268,
+            "height": 14.3
+          }
+        },
+        "medicalReference": "Official S1 B1 reproductive system lecture p. 28: cortex = peripheral zone containing follicles; medulla = central vascular region",
+        "currentPublishedAssetStillIncorrect": true,
+        "clinicalApproval": false,
+        "licenseApproval": false,
+        "highResolutionExportVerified": false,
+        "sourceImageEditStatus": "CANVA_SAVED_BUT_NOT_EXPORTED"
+      }
     },
     {
       "id": "R06",
@@ -202,5 +256,20 @@
     "Vérifier export à pleine définition, légendes et absence de déformations.",
     "Refaire les JPG publiés et mettre à jour les empreintes et le service worker.",
     "Passer l'approbation de chaque planche individuellement, jamais l'ensemble de la série automatiquement."
-  ]
+  ],
+  "nextIntegrationStep": {
+    "necessaryInput": "Two separate Canva exports of saved R03 and R05 pages in PNG or a two-page PDF at best available resolution",
+    "exportToolAvailableHere": false,
+    "sourceDocumentHasTwoPages": true,
+    "noAutomaticStudentPublication": true,
+    "afterExport": [
+      "compare exact point endpoints to course slides",
+      "verify legal provenance of embedded illustrations",
+      "export/render to app-ready optimized files",
+      "update six-board manifest and hash",
+      "replace only R03 and R05 current provisional JPEGs",
+      "run full TNR on latest main",
+      "publish only with explicit approval"
+    ]
+  }
 }
