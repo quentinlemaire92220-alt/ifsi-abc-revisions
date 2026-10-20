@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const read=p=>fs.readFileSync(p,'utf8');
+const s=JSON.parse(read('docs/anatomy-r03-r05-svg-rebuild.json'));
+const official=JSON.parse(read('docs/anatomy-reproductive-preview-v8402.json'));
+const audit=JSON.parse(read('resource-audit-v821.json'));
+const meta=JSON.parse(read('build-meta.json'));
+assert.ok(Number(meta.build)>=8404,'Ne pas revenir avant V8.30.104');
+assert.equal(s.schemaVersion,1);
+assert.equal(s.method,'docs/skills/production-planches-anatomiques-svg.md');
+assert.equal(s.status,'PREPARATION_REQUIRES_UNANNOTATED_SOURCE');
+assert.equal(s.publicationApproved,false);
+assert.equal(s.clinicalApproved,false);
+assert.equal(s.rightsApproved,false);
+assert.equal(s.noRelease,true);
+assert.deepEqual(s.boards.map(x=>x.id),['R03','R05']);
+assert.equal(official.boards.find(x=>x.id==='R03').clinicalReview,'PENDING');
+assert.equal(official.boards.find(x=>x.id==='R05').clinicalReview,'PENDING');
+assert.equal(audit.expectedTotals.hdAtlasBoards,106);
+assert.equal(audit.atlasBoardContracts.systeme_reproducteur,undefined);
+assert.ok(read('docs/skills/production-planches-anatomiques-svg.md').includes('annotations.json'));
+assert.ok(read('tools/anatomy/compose-svg.mjs').includes("if(!ready){if(!draft)throw Error"));
+for(const p of s.boards){
+ assert.equal(p.sourceImage,null,'Illustration non vérifiée déclarée présente : '+p.id);
+ assert.equal(p.sourceArtwork,'NOT_YET_GENERATED');
+ assert.ok(p.blockingFacts.length>=3);
+ assert.ok(p.landmarks.length>=8);
+ assert.ok(p.landmarks.every(x=>x.tip===null&&x.labelPosition===null&&x.reviewed===false&&x.status==='unresolved'));
+}
+assert.equal(s.boards[0].flowMarkers[0].status,'UNVERIFIED_DO_NOT_DRAW');
+assert.ok(s.boards[0].mustNeverInfer.includes('ampoule depuis la masse jaune lobulée'));
+assert.ok(s.boards[1].mustNeverInfer.includes('medulla_pointing_to_follicle'));
+console.log('✅ R03/R05 reconstruction: aucun repère inventé; méthode SVG, 106 atlas et 2 maquettes provisoires inchangés.');
