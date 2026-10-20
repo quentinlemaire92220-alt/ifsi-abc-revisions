@@ -151,7 +151,7 @@ function catalogMarkup(records,term=''){
  if(!systems.length)return '<p class="patho-muted">Aucune pathologie trouvée.</p>';
  return systems.map((system,i)=>{
   const all=matches.filter(r=>r.system===system),icon=all[0]?.icon||'🩺';
-  const cards=all.map(r=>'<button type="button" class="patho-entry" data-patho-'+(r.published?'published':'pending')+'="'+esc(r.id)+'"><span><b>'+esc(r.shortTitle)+'</b><span class="patho-badge"> • '+(r.published?'Fiche et entraînements disponibles':'En cours de validation médicale')+'</span></span><span aria-hidden="true">→</span></button>').join('');
+  const cards=all.map(r=>'<button type="button" class="patho-entry" data-patho-'+(r.published?'published':'pending')+'="'+esc(r.id)+'"><span><b>'+esc(r.shortTitle)+'</b><span class="patho-badge"> • '+(r.published?'Fiche et entraînements disponibles':'Contenu en cours de validation médicale')+'</span></span><span aria-hidden="true">→</span></button>').join('');
   return '<details class="patho-group" '+(q||i===0?'open':'')+'><summary><span class="patho-group-name">'+icon+' '+esc(system)+'</span><span class="patho-group-count">'+all.length+' pathologie'+(all.length>1?'s':'')+' <span aria-hidden="true">⌄</span></span></summary><div class="patho-group-body">'+cards+'</div></details>';
  }).join('');
 }
