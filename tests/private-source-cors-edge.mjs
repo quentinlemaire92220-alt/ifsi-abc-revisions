@@ -44,7 +44,7 @@ function createHarness(userId=ownerId){
   IFSI_SOURCE_SHEET_ID:'private-sheet-id-for-test',
   IFSI_GOOGLE_SERVICE_ACCOUNT_JSON:JSON.stringify({
    client_email:'fake-account@fake-project.iam.gserviceaccount.com',
-   private_key:'-----BEGIN PRIVATE KEY-----\nAQAB\n-----END PRIVATE KEY-----\n'
+   private_key:'AQAB' // faux octets pour un test sans signature cryptographique réelle
   })
  };
  async function fetchMock(url,options={}){
