@@ -12,6 +12,7 @@ const types=new Map([
  ['async function readRows(token: string): Promise<string[][]>','async function readRows(token)'],
  ['function normalizeState(s: unknown)','function normalizeState(s)'],
  ['STATES.has(s as string)','STATES.has(s)'],
+ ['? s as string :','? s :'],
  ['function projectRows(rows: string[][])','function projectRows(rows)'],
  ['async function ownerAuthenticated(request: Request)','async function ownerAuthenticated(request)'],
  ['Deno.serve(async (req: Request) =>','Deno.serve(async (req) =>'],
