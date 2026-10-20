@@ -27,7 +27,7 @@ const app={appendChild(el){byId.set(el.id,el)}};
 const document={querySelector:q=>q==='.app'?app:null,createElement:tag=>tag==='nav'?nav:{id:'',innerHTML:'',onclick:null},getElementById:id=>byId.get(id)||null};
 const $=id=>document.getElementById(id);
 const window={IFSI_PATHOLOGIES:{open(){opened++}},show(){},showCourses74(){},IFSI_V82:{showAnatomy(){}},IFSI_V81:{showHub(){}}};
-const context={document,window,$,showSettings(){}};
+const context={document,window,$,NAV_ID:'vPlanningNav',showSettings(){},showPlanning(){},hidePlanning(){}};
 vm.createContext(context);
 vm.runInContext(source(navSrc,'function addNav(){','function hideSettings(){')+'; addNav();',context);
 assert.deepEqual(buttons.map(b=>b.id),['v87Home','v87Courses','v87Anat','v87Center','v87Pathologies','v87Settings'],'v87 should render the real navigation');
