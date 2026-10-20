@@ -27,3 +27,7 @@ Pour toute fiche de révision, appliquer **`docs/skills/production-fiches-revisi
 ## Skill anatomie / Canva
 
 Pour toute planche anatomique nouvelle ou remplacée, appliquer **`docs/skills/production-planches-anatomiques-canva.md`** en complément du standard Work v1.17 et de sa charte. Étape obligatoire : comparer visuellement au master Cellules, vérifier chaque organe et chaque flèche contre le cours officiel, justifier la licence de chaque figure, distinguer validation graphique et médicale. Canva ne garantit pas l'exactitude anatomique. Les maquettes privées peuvent être suivies dans l'application sans URL publique ni incrément du nombre de planches approuvées. **Aucune intégration en QCM, master HD ni diffusion étudiante avant contrôles et GO publication.**
+
+## Éligibilité des séances du planning
+
+Avant de créer ou de signaler une fiche manquante à partir du planning, appliquer `docs/COURSE_REVISION_ELIGIBILITY.md` : exclure les connexions MySchool, les temps d’appropriation et les activités administratives/autonomes sans nouveau contenu. Conserver les vrais CM, TD, TP et cours asynchrones documentés. Ne pas effacer ces créneaux du planning général.
