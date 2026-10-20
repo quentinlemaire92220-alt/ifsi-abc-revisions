@@ -255,6 +255,9 @@ jobs:
       - name: Vérifier la vraie barre du bas avec Pathologies et Planning
         run: node tests/pathologies-visible-v87-bottom-nav.mjs
 
+      - name: Tester la navigation Pathologies dépliable et les pages dédiées
+        run: node tests/pathologies-catalog-accordion.mjs
+
       - name: Vérifier les six planches Pathologies et les vrais cours associés
         run: node tests/pathologies-p1-poster-pages.mjs
 
