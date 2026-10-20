@@ -107,7 +107,8 @@ with TemporaryDirectory() as d:
     except ValueError as e:assert "toutes les notions" in str(e)
     else:raise AssertionError("Cours infographié incomplet accepté")
     wrong=dict(lesson,infographicPanels=[{"heading":"Inexacte","body":"Notion absente",
-                                      "notionIds":["inconnue"]}])
+                                      "notionIds":["inconnue"],
+                                      "figure":{"path":"figure.png","caption":"Repère fictif inconnu"}}])
     try:make_pack(wrong,root,root/"bad-id")
     except ValueError as e:assert "toutes les notions" in str(e)
     else:raise AssertionError("Notion non sourcée acceptée")
