@@ -42,6 +42,8 @@ assert.equal(engine.evaluate(multi,[2,0]).correct,true,'Ordre des choix non sign
 assert.equal(engine.evaluate(multi,[0,1]).correct,false);
 assert.ok(src.includes('Ta réponse :')&&src.includes('Bonne réponse :'),'Affichage réponse vs corrigé absent');
 assert.ok(src.includes('aria-live="polite"'),'Retour accessible manquant');
+assert.ok(src.includes('data-patho-course'),'Les cours associés ne sont pas accessibles depuis les fiches');
+assert.ok(src.includes("state.submitted?'':' disabled'"),'Le cas clinique doit imposer une validation avant de continuer');
 assert.ok(src.includes("esc(s.url)"),'URL des sources non protégée à l’affichage');
 assert.ok(!read('index.html').includes('./pathologies-module-v1.js'),'Le pilote non approuvé ne doit pas être chargé sur le site public');
 assert.ok(!read('sw.js').includes('./pathologies-module-v1.js'),'Ne pas précharger le module non approuvé hors ligne');
