@@ -5,9 +5,10 @@
 const ROOT='https://ywicbdntavuitkcqvmqx.supabase.co';
 const PUBLIC_KEY='sb_publishable_eY2KDhhPj660ASV3gxbnnQ_VrCOak3P';
 const API=ROOT+'/functions/v1/ifsi-private-sources';
+const RETURN_URL='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 const STATES=['À vérifier','Présent','Absent'];
 const FIELDS=[['transcript','Transcript'],['captures','Captures'],['official','Support officiel']];
-let accessToken='',rows=new Map(),status='locked',userId='',message='';
+let accessToken='',rows=new Map(),status='locked',message='';
 const $=id=>document.getElementById(id);
 function safeKey(id){return /^[a-z0-9_-]+$/.test(String(id))?String(id):''}
 function normalizeRow(row){
@@ -17,6 +18,24 @@ function normalizeRow(row){
  return clean;
 }
 function sourceRecord(courseId){return rows.get(safeKey(courseId)+'::p01')||null}
+function acceptMagicLinkRedirect(){
+ // An implicit Magic Link returns a short-lived signed access token in the URL fragment.
+ // Consume it before loading analytics; never persist the access or refresh token.
+ const hash=window.location?.hash||'';
+ if(!hash || (!hash.includes('access_token=') && !hash.includes('error=')))return false;
+ const p=new URLSearchParams(hash.startsWith('#')?hash.slice(1):hash);
+ window.history?.replaceState?.(window.history.state||null,'',window.location.pathname+window.location.search);
+ if(p.has('error')){
+   status='locked';message='Lien expiré ou refusé. Demande un nouveau lien de connexion.';return false;
+ }
+ const token=p.get('access_token')||'';
+ if(!/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/.test(token)){
+   status='locked';message='Lien de connexion invalide. Demande un nouveau lien.';return false;
+ }
+ accessToken=token;status='loading';
+ message='Identité confirmée. Vérification des droits du propriétaire en cours…';
+ return true;
+}
 function renderState(){
  const host=$('cfPrivatePanel');if(!host)return;
  const stateLabel=status==='ready'?'Connecté — statuts privés chargés':
@@ -30,53 +49,40 @@ function renderState(){
   '<div class="cf-meta"><span id="cfOwnerState" class="cf-signal"></span></div>'+
   (accessToken?'<div class="cf-meta"><button class="btn outline" type="button" id="cfOwnerReload">Actualiser</button><button class="btn outline" type="button" id="cfOwnerLogout">Déconnexion</button></div>':
    '<div class="cf-controls"><input id="cfOwnerEmail" type="email" autocomplete="email" placeholder="Adresse du compte privé" aria-label="Adresse du compte privé">'+
-   '<button class="btn secondary" id="cfOwnerSend" type="button">Recevoir un code</button></div>'+
-   '<div class="cf-controls"><input id="cfOwnerCode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="12" placeholder="Code reçu par e-mail" aria-label="Code de connexion">'+
-   '<button class="btn secondary" id="cfOwnerVerify" type="button">Se connecter</button></div>')+
+   '<button class="btn secondary" id="cfOwnerSend" type="button">Recevoir un lien de connexion</button></div>')+
   '<p class="cf-muted" id="cfOwnerMessage" role="status"></p></div>';
  $('cfOwnerState').textContent=stateLabel;
  $('cfOwnerMessage').textContent=message;
  if(accessToken){
   $('cfOwnerReload').onclick=()=>reload();
-  $('cfOwnerLogout').onclick=()=>{accessToken='';rows=new Map();userId='';status='locked';message='Déconnecté.';renderState();refreshViews()};
+  $('cfOwnerLogout').onclick=()=>{
+    const oldToken=accessToken;
+    accessToken='';rows=new Map();status='locked';message='Déconnecté.';renderState();
+    // Revoke server-side session in addition to clearing the memory-only token.
+    fetch(ROOT+'/auth/v1/logout',{method:'POST',headers:{apikey:PUBLIC_KEY,Authorization:'Bearer '+oldToken}}).catch(()=>{});
+  };
  }else{
-  $('cfOwnerSend').onclick=()=>sendOtp();
-  $('cfOwnerVerify').onclick=()=>verifyOtp();
+  $('cfOwnerSend').onclick=()=>sendMagicLink();
  }
  refreshViews();
 }
-async function sendOtp(){
+async function sendMagicLink(){
  const email=$('cfOwnerEmail')?.value?.trim()||'';
- if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){message='Adresse e-mail invalide.';renderMessage();return}
+ if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+   message='Adresse e-mail invalide.';renderMessage();return;
+ }
  const button=$('cfOwnerSend');button.disabled=true;
- try {
-  const res=await fetch(ROOT+'/auth/v1/otp',{method:'POST',cache:'no-store',
+ try{
+  const res=await fetch(ROOT+'/auth/v1/otp?redirect_to='+encodeURIComponent(RETURN_URL),{
+   method:'POST',cache:'no-store',
    headers:{apikey:PUBLIC_KEY,'Content-Type':'application/json'},
-   body:JSON.stringify({email,create_user:false})});
-  message=res.ok?'Code demandé. Consulte ta messagerie ; aucun accès n’est accordé avant vérification.':'Impossible d’envoyer le code. Réessaye plus tard.';
+   body:JSON.stringify({email,create_user:false})
+  });
+  message=res.ok?'Si ce compte est autorisé, un lien à usage unique vient d’être envoyé. Consulte ta messagerie.':'Impossible d’envoyer le lien maintenant. Réessaye plus tard.';
  }catch{message='Service de connexion inaccessible.'}
  finally{button.disabled=false;renderMessage()}
 }
 function renderMessage(){if($('cfOwnerMessage'))$('cfOwnerMessage').textContent=message}
-async function verifyOtp(){
- const email=$('cfOwnerEmail')?.value?.trim()||'';
- const token=$('cfOwnerCode')?.value?.trim()||'';
- if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)||!/^[0-9]{6,12}$/.test(token)){
-  message='Saisis ton adresse et le code numérique reçu.';renderMessage();return;
- }
- $('cfOwnerVerify').disabled=true;
- try{
-  const r=await fetch(ROOT+'/auth/v1/verify',{method:'POST',cache:'no-store',
-   headers:{apikey:PUBLIC_KEY,'Content-Type':'application/json'},
-   body:JSON.stringify({email,token,type:'email'})});
-  const result=await r.json();
-  if(!r.ok||!result.access_token||!result.user?.id)throw Error('auth failed');
-  // Deliberately memory-only: no localStorage, sessionStorage, cookies or analytics.
-  accessToken=result.access_token;userId=result.user.id;rows=new Map();
-  status='loading';message='Compte authentifié. Vérification des autorisations privées…';renderState();
-  await reload();
- }catch{accessToken='';status='locked';message='Code refusé ou expiré.';renderState()}
-}
 async function privateFetch(method,body){
  if(!accessToken)throw Error('not authenticated');
  return fetch(API,{method,cache:'no-store',
@@ -88,7 +94,7 @@ async function reload(){
  status='loading';message='Lecture du registre en cours…';renderState();
  try{
   const res=await privateFetch('GET');
-  if(res.status===403){status='denied';rows=new Map();message='Compte connecté, mais non inscrit dans la liste des propriétaires autorisés. Identifiant à enregistrer côté serveur : '+userId;renderState();return}
+  if(res.status===403){status='denied';rows=new Map();message='Compte authentifié, mais accès propriétaire refusé.';renderState();return}
   if(!res.ok)throw Error('load failed');
   const data=await res.json();
   if(!Array.isArray(data.rows))throw Error('invalid response');
@@ -133,6 +139,7 @@ function refreshViews(){
   const t=document.createElement('small');t.textContent='Production (registre) : '+record.production;node.appendChild(t);
  });
 }
-function mount(){renderState()}
-window.IFSI_PRIVATE_SOURCES={mount,refreshViews,normalizeRow,sourceRecord,states:STATES};
+function mount(){renderState();if(accessToken)reload()}
+acceptMagicLinkRedirect();
+window.IFSI_PRIVATE_SOURCES={mount,refreshViews,normalizeRow,sourceRecord,states:STATES,acceptMagicLinkRedirect};
 })();
