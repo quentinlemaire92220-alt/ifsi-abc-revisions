@@ -1,5 +1,5 @@
-/* IFSI ABC — module Pathologies, socle technique sans contenu pédagogique publié.
- * Ne charger ce script et son catalogue approuvé dans index.html qu'après GO publication.
+/* IFSI ABC — module Pathologies : coque publique sans contenu clinique,
+ * fiches/QCM/cas accessibles seulement après validation du catalogue publié.
  */
 (function(root){
 'use strict';
@@ -91,7 +91,7 @@ function record(id,kind,correct){
   root.localStorage.setItem(KEY,JSON.stringify(progress));
  }catch{/* Le module doit rester utilisable sans stockage local. */}
 }
-let entries=[],state={id:null,mode:'fiche',index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};
+let entries=[],shellEnabled=false,state={id:null,mode:'fiche',index:0,step:0,posterIndex:0,flipped:false,submitted:false,selected:[]};
 const doc=()=>root.document;
 const byId=id=>doc().getElementById(id);
 function css(){
@@ -109,14 +109,18 @@ function ensure(){
  if(nav)app.insertBefore(s,nav);else app.appendChild(s);
  if(nav&&!byId('ifsiPathologiesNav')){
   nav.classList.add('ifsi-pathologies-ready');
-  const b=doc().createElement('button');b.type='button';b.id='ifsiPathologiesNav';b.innerHTML='♡<br>Pathologies';b.addEventListener('click',open);nav.appendChild(b);
+  const b=doc().createElement('button');b.type='button';b.id='ifsiPathologiesNav';b.innerHTML='🩺<br>Pathologies';b.addEventListener('click',open);nav.appendChild(b);
  }
  if(typeof root.show==='function'&&!root.show._pathoWrapped){
   const old=root.show;root.show=function(){s.classList.add('hidden');byId('ifsiPathologiesNav')?.classList.remove('on');return old.apply(this,arguments);};root.show._pathoWrapped=true;
  }
 }
+function showShell(){
+ if(!root.document?.querySelector('.app'))return false;
+ shellEnabled=true;ensure();return !!byId(SECTION);
+}
 function open(){
- if(!entries.length)return;
+ if(!entries.length&&!shellEnabled)return;
  ensure();
  const host=byId(SECTION);if(!host)return;
  doc().querySelectorAll('.app > section').forEach(s=>s.classList.add('hidden'));
@@ -129,6 +133,12 @@ function reset(item,mode='fiche'){state={id:item.id,mode,index:0,step:0,posterIn
 function action(label,data,primary){return '<button type="button" class="btn '+(primary?'primary':'outline')+'" '+data+'>'+esc(label)+'</button>';}
 function list(){
  const host=byId('ifsiPathologiesBody');if(!host)return;
+ if(!entries.length){
+  const pending=[['BPCO','systeme_respiratoire'],['Hypertension artérielle (HTA)','systeme_cardiovasculaire'],['Diabète de type 2','systeme_endocrinien']];
+  host.innerHTML='<div class="card patho-wrap"><h2>🩺 Pathologies</h2><p class="patho-muted">L’onglet est ouvert. Les fiches, QCM, flashcards et cas cliniques sont en cours de validation médicale et ne sont pas encore publiés.</p>'+pending.map(([name,id])=>'<div class="patho-panel"><h3>'+esc(name)+'</h3><p class="patho-muted">Contenu en cours de validation</p><button type="button" class="btn outline" data-patho-course="'+esc(id)+'">Ouvrir le cours associé ↗</button></div>').join('')+'</div>';
+  host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
+  return;
+ }
  host.innerHTML='<div class="card patho-wrap"><h2>🩺 Pathologies</h2><p class="patho-muted">Fiches cliniques, révisions et situations de soins. Seules les ressources validées sont affichées.</p><div class="patho-toolbar"><input id="pathoSearch" placeholder="Rechercher une pathologie" aria-label="Rechercher une pathologie"><select id="pathoSystem" aria-label="Filtrer par système"><option value="">Tous les systèmes</option>'+[...new Set(entries.map(e=>e.system))].map(s=>'<option>'+esc(s)+'</option>').join('')+'</select></div><div id="pathoResults" class="patho-results"></div></div>';
  const redraw=()=>{
   const q=byId('pathoSearch').value.trim().toLocaleLowerCase('fr'),system=byId('pathoSystem').value,visible=entries.filter(e=>(!system||e.system===system)&&(!q||(e.title+' '+e.system).toLocaleLowerCase('fr').includes(q)));
@@ -216,5 +226,5 @@ function activate(catalog){
  entries=Array.isArray(catalog)?catalog.slice():[];
  ensure();return {activated:true,count:entries.length};
 }
-root.IFSI_PATHOLOGIES=Object.freeze({validate,evaluate,activate,open,openLinkedCourse,getProgress:readProgress,requiredSections:REQUIRED.slice()});
+root.IFSI_PATHOLOGIES=Object.freeze({validate,evaluate,activate,open,showShell,openLinkedCourse,getProgress:readProgress,requiredSections:REQUIRED.slice()});
 })(window);

@@ -34,6 +34,29 @@ assert.equal(rejected.IFSI_PATHOLOGIES_BOOT.start().mounted,false,'Unapproved cl
 assert.equal(rejected.IFSI_PATHOLOGIES_BOOT.start().reason,'catalog_rejected','Unapproved clinical draft should be rejected by engine');
 const malformed=simulate({IFSI_PATHOLOGIES_PUBLISHED_BUNDLE:{id:'bpco'}});
 assert.equal(malformed.IFSI_PATHOLOGIES_BOOT.start().mounted,false,'Malformed bundle must not mount');
-assert.ok(engineCode.includes("if(!entries.length)return;"),'open() missing no-content guard');
+assert.ok(engineCode.includes("if(!entries.length&&!shellEnabled)return;"),'open() must block only when public shell is not enabled');
+assert.ok(engineCode.includes('function showShell()'),'Public information shell missing');
+assert.ok(bootCode.includes('engine?.showShell?.()'),'No-catalog state must mount the information shell');
+assert.ok(engineCode.includes('Contenu en cours de validation'),'Visible shell must disclose review status');
 assert.ok(engineCode.includes('nav.classList.add('),'Approved-only navigation CSS not activated');
-console.log('✅ Coque Pathologies montée sans catalogue : aucun onglet et aucune donnée clinique exposés ; brouillons rejetés');
+function mockedBrowser(){
+ const elements={};const navButtons=[];
+ const make=()=>({innerHTML:'',className:'',classList:{add(){},remove(){}},addEventListener(){},querySelectorAll(){return []},dataset:{}});
+ const nav={classList:{add(){},remove(){}},appendChild(el){navButtons.push(el);elements[el.id]=el;}};
+ const app={querySelector(selector){return selector==='nav'?nav:null},insertBefore(el){elements[el.id]=el;elements.ifsiPathologiesBody=make();},appendChild(el){this.insertBefore(el);}};
+ const doc={head:{appendChild(){}},createElement:()=>make(),getElementById:id=>elements[id]||null,querySelector:selector=>selector==='.app'?app:null,querySelectorAll:selector=>selector==='.app > section'?[elements.ifsiPathologies].filter(Boolean):selector==='nav button'?navButtons:[]};
+ return {doc,navButtons,elements};
+}
+const browser=mockedBrowser();
+const publicShell=simulate({document:browser.doc,show(){}});
+assert.equal(browser.navButtons.length,1,'Un onglet Pathologies doit être visible dans la coque publique');
+assert.equal(browser.navButtons[0].id,'ifsiPathologiesNav');
+assert.equal(publicShell.IFSI_PATHOLOGIES_BOOT.start().mounted,false,'Aucun contenu médical approuvé ne doit être activé');
+publicShell.IFSI_PATHOLOGIES.open();
+const placeholder=browser.elements.ifsiPathologiesBody.innerHTML;
+for(const title of ['BPCO','Hypertension artérielle (HTA)','Diabète de type 2'])assert.ok(placeholder.includes(title),'Entrée non médicale absente : '+title);
+assert.ok(placeholder.includes('en cours de validation médicale'),'Le statut médical non approuvé doit être explicite');
+assert.ok(!placeholder.includes('Bonne réponse :'),'Aucun contenu QCM privé ne doit apparaître dans la coque');
+assert.ok(!placeholder.includes('https://drive.google.com/file/d/'),'Aucun lien clinique privé ne doit être inséré');
+
+console.log('✅ Onglet Pathologies public informatif : navigation visible, aucun cours médical non approuvé exposé et brouillons rejetés');
