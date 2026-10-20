@@ -124,9 +124,9 @@ async function updateSource(courseKey,field,expected,next,select){
 function refreshViews(){
  document.querySelectorAll('[data-ifsi-source-course]').forEach(node=>{
   const id=safeKey(node.dataset.ifsiSourceCourse);node.replaceChildren();
-  if(status!=='ready'){
-   const t=document.createElement('small');t.textContent='🔒 Sources personnelles : connexion requise';node.appendChild(t);return;
-  }
+  // Never clutter the public catalogue with private placeholders.
+  if(status!=='ready'){node.hidden=true;return}
+  node.hidden=false;
   const record=sourceRecord(id);
   if(!record){const t=document.createElement('small');t.textContent='Sources : cours non rapproché du registre privé';node.appendChild(t);return}
   for(const [field,label]of FIELDS)node.appendChild(selectStatus(record,field,label));
