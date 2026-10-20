@@ -5,7 +5,10 @@ const FIELDS: Record<string, number> = { transcript: 3, captures: 4, official: 5
 const TAB = "'Mes sources'";
 const enc = new TextEncoder();
 
-const origin = Deno.env.get("IFSI_SOURCES_ALLOWED_ORIGIN") || "";
+// Allowlist the exact public GitHub Pages origin, not a path or a trailing-slash
+// dependent secret. CORS is only browser isolation; ownerAuthenticated is the
+// authorization barrier and still runs on every GET/PATCH.
+const origin = "https://quentinlemaire92220-alt.github.io";
 const endpoint = Deno.env.get("SUPABASE_URL") || "";
 const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || "";
 const ownerId = Deno.env.get("IFSI_SOURCE_OWNER_UID") || "";
@@ -101,14 +104,16 @@ async function ownerAuthenticated(request: Request) {
 }
 Deno.serve(async (req: Request) => {
   const reqOrigin = req.headers.get("Origin");
-  if (!origin || reqOrigin !== origin) return response(null, 403, {error: "Origin forbidden"});
-  if (req.method === "OPTIONS") {
+  // CORS preflight never contains an Authorization header. Handle it before
+  // session, credentials, or Google API access; deny foreign origins.
+  if (req.method === "OPTIONS" && reqOrigin === origin) {
     return new Response(null, {status: 204, headers: {
       "Access-Control-Allow-Origin": origin, "Access-Control-Allow-Methods": "GET, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "authorization, apikey, content-type",
       "Access-Control-Max-Age": "600", "Vary": "Origin",
     }});
   }
+  if (reqOrigin !== origin) return response(null, 403, {error: "Origin forbidden"});
   if (req.method !== "GET" && req.method !== "PATCH")
     return response(reqOrigin, 405, {error: "Method not allowed"});
   if (!endpoint || !anonKey || !ownerId || !spreadsheetId || !credentialJson)
