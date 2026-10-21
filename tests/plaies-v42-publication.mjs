@@ -42,7 +42,7 @@ assert.equal(delivery.artifactSha256s[correctionId],'61f0407301f27e0b724e892c43f
 assert.equal(delivery.publicationApproval.authorization,'explicit_go_publication');
 assert.equal(delivery.publicationApproval.scope,'course_package');
 
-const referenceKeys='D D CD DE ABD D AD C BE A ACE B AE D CDE C A C DE BCE B A BD AB B ABE CE B E E ACD C ADE E AB A AD D C AE CE AC BE E ABC BC E BD BCD AC'.split(' ');
+const referenceKeys='D D CD DE ABD D AD C BE A ACE B AE D CDE C A C DE BCE B A BD AB B ABE CE B B E ACD C ADE E AB A AD D C AE CE AC BE E ABC BC E BD BCD AC'.split(' ');
 assert.equal(referenceKeys.length,50);
 assert.equal(bank.length,50);
 assert.equal(new Set(bank.map(q=>q.id)).size,50);
