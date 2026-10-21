@@ -1,8 +1,23 @@
 import assert from 'node:assert/strict';
 import {publicationBundle,bundleDigest,validatePublicationApproval,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
 const clone=x=>JSON.parse(JSON.stringify(x));
-const data={registry:{courses:[{id:'example',label:'Exemple'}]},sheets:[{courseId:'example',resourceId:'sheet01',driveId:'public-file'}],infographics:[{courseId:'example',resourceId:'info01',localImage:'assets/example.webp'}],vocals:[],banks:{'qextra-example.txt':[{id:'q01',courseId:'example',question:'Question ?',choices:['A','B','C','D','E'],answers:[1],explanation:'Explication du cours.'}]},imageHashes:{'assets/example.webp':'image-hash'},vocabulary:[]};
+const data={registry:{courses:[{id:'example',label:'Exemple'}]},sheets:[{courseId:'example',resourceId:'sheet01',driveId:'public-file'}],infographics:[{courseId:'example',resourceId:'info01',localImage:'assets/example.webp'}],vocals:[],banks:{'qextra-example.txt':[{id:'q01',courseId:'example',question:'Question ?',choices:['A','B','C','D','E'],answers:[1],explanation:'Explication du cours.'}]},imageHashes:{'assets/example.webp':'a'.repeat(64)},vocabulary:[]};
 const delivery={courseId:'example',qcmBank:'qextra-example.txt',vocalScripts:[{number:1,driveId:'script01'}],visualAudit:{pdfSha256:'a'.repeat(64)},publishedVerification:{pdfSha256:'a'.repeat(64)},artifactSha256s:{'public-file':'a'.repeat(64),script01:'b'.repeat(64)}};
+// L'ancien test publiait une fiche avec seulement un drapeau PASS technique.
+ // Le nouveau contrat demande une revue graphique explicite, liee au PDF.
+delivery.visualOwnerReview={
+ status:'owner_accepted',
+ reference:'cardiovascular_revision_pdf_17p',
+ method:'manual_full_pdf_comparison_100_200_percent',
+ reviewedAt:'2026-10-21T20:30:00Z',
+ reviewerDecision:'explicit_graphic_acceptance',
+ criteria:Object.fromEntries([
+ 'REVISION_TEXT_FIRST','MEDICAL_ILLUSTRATION_REAL','INTEGRATED_IN_CONTEXT',
+ 'ORIGINAL_LEGENDS_VERIFIED','NO_DECORATIVE_BOX_SUBSTITUTION','ALL_PAGES_CHECKED'
+ ].map(k=>[k,'PASS'])),
+ reviewedPdfSha256s:{sheet01:'a'.repeat(64)},
+ reviewedImageSha256s:{info01:'a'.repeat(64)}
+};
 const digest=()=>bundleDigest(publicationBundle('example',delivery,data));
 const approval={status:'approved',authorization:'explicit_go_publication',scope:'course_package',approvedAt:'2026-10-13T12:00:00Z',bundleSha256:digest()};
 assert.throws(()=>validatePublicationApproval('example',delivery,digest()),/validation du package absente/);
