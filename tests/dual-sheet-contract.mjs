@@ -8,7 +8,7 @@ const sha=v=>typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);
 const driveId=sheet=>sheet?.driveId||String(sheet?.url||'').match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1];
 
 export function validateSheetSource(courseId,delivery,sheet){
- if(delivery.deliveryMode==='existing_course_revision'){
+ if(delivery.deliveryMode==='existing_course_revision'||delivery.deliveryMode==='source_limited_first_release'){
   assert.equal(delivery.sourceBasis?.kind,'course_captures',courseId+': provenance captures absente');
   assert.equal(delivery.sourceBasis.nativeSupportAvailable,false,courseId+': support natif non vérifié');
   assert.equal(delivery.sourceBasis.reconciled,true,courseId+': captures non rapprochées');

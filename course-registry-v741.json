@@ -950,7 +950,30 @@
         "UE C1.1 S1"
       ],
       "domain": "C",
-      "ue": "C1.1"
+      "ue": "C1.1",
+      "semester": "S1",
+      "part": "01",
+      "teachingUnit": "C1.1",
+      "sourceStatus": "provisional_captures",
+      "officialSupport": false,
+      "qcmPdfUrl": "https://drive.google.com/file/d/19WW-HFiGz_8FsfJuOFqSZe7ov82gG_4p/view",
+      "qcmPdfQuestionCount": 56,
+      "flashcardTarget": 56,
+      "authoredFlashcards": true,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — provisoire",
+          "url": "https://drive.google.com/file/d/1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ/view"
+        },
+        {
+          "label": "Cours infographié (9 planches) — provisoire",
+          "url": "https://drive.google.com/file/d/10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm/view"
+        },
+        {
+          "label": "Flashcards — 56 cartes",
+          "url": "https://drive.google.com/file/d/1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw/view"
+        }
+      ]
     }
   ],
   "auditBaseline": {

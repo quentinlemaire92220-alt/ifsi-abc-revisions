@@ -1511,6 +1511,212 @@
         "approvedAt": "2026-10-20T20:46:30.855Z",
         "bundleSha256": "79f52490916f6ae18524ea428c12a36be055f76193ec2d620a41b19b6ef01f15"
       }
+    },
+    {
+      "courseId": "sante_mondiale_sante_france",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "sourceBasis": {
+        "kind": "course_captures",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "reviewedCaptureCount": 101
+      },
+      "packFormat": "lean_v1",
+      "driveFolderId": "1hTI4WdjGNT25tYrK780f2bxZ4q9cDY5T",
+      "folders": {
+        "99": "11RbrMgIr0eymJgrQ-sLij2jsLr4BNwTQ",
+        "01": "1kFCX7tN7ALLHZ8jsdA3LT02nf65dOkIc",
+        "02": "1bzPobuPjxAcu2AWVeXcShgp7bquLzoi4",
+        "03": "1jmAV4vJTrMVmLbGecrW2lxCigMtT5Jlu",
+        "04": "1_Djjw4EjhW58UFdz09dbcV6hcoGA94tz",
+        "05": "14t1L6Rca-M7F0RtJY16r1HRRFNyAkL9H",
+        "06": "1jcRXtlJTsf0gzVMp5h-RMYRRivoeAV1n",
+        "07": "1ZSKdMh-mFSaZgXJs987PyTU2e2_oRsbq",
+        "08": "12F5cYKR9fiQMTRCg94ll8hntPhN3dpjZ"
+      },
+      "sheetResourceId": "sante_mondiale_sante_france_fiche_p01",
+      "infographicSheetResourceId": "sante_mondiale_sante_france_fiche_complete_infographiee_p01",
+      "qcmDriveId": "19WW-HFiGz_8FsfJuOFqSZe7ov82gG_4p",
+      "qcmBank": "qextra-59.txt",
+      "qcmCount": 56,
+      "flashcardCount": 56,
+      "flashcardDriveId": "1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw",
+      "infographicPackDriveId": "10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm",
+      "infographicResourceIds": [
+        "sante_mondiale_sante_france_info_p01_01",
+        "sante_mondiale_sante_france_info_p01_02",
+        "sante_mondiale_sante_france_info_p01_03",
+        "sante_mondiale_sante_france_info_p01_04",
+        "sante_mondiale_sante_france_info_p01_05",
+        "sante_mondiale_sante_france_info_p01_06",
+        "sante_mondiale_sante_france_info_p01_07",
+        "sante_mondiale_sante_france_info_p01_08",
+        "sante_mondiale_sante_france_info_p01_09"
+      ],
+      "schematics": "with_exports",
+      "embeddedFigureCount": 5,
+      "requestedVocals": false,
+      "vocals": [],
+      "vocalScripts": [],
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "native_support_unavailable",
+          "detail": "101 captures et transcription disponibles, support officiel intégral absent."
+        },
+        {
+          "resource": "coverage",
+          "reason": "missing_course_segment",
+          "detail": "Chapitre détaillé accès et recours aux soins non présent dans les sources fournies."
+        }
+      ],
+      "artifactSha256s": {
+        "19QDaigE_jbhYV6gnABN0X2xZNJXzM195": "1cbad197b60cf4f5e59eccb088e11318760c3efa87c69af10150c370446c792d",
+        "1O_-yCV8GHyA3g50QhE0oX1f2H-RCIIsm": "2d07fa9285a70e125e0370e25343133714c07f1f678ef2edb6c33ca590cc71c2",
+        "1XaBSQEOCR8yruSNuPlkov_qXpori0AYq": "5dcba19a1898de457c4cb92c63b56e0f006042923b61d6fa3a2ac9c5424a9507",
+        "1drGMC7ZQDp_pxM9GFJTFq9Xrh7-9ewxo": "eabcc82eb30f8db7bcd67fc164f417e8072d2852067c3463af863092aa65516a",
+        "1RBKNkBhqUj_5fkqye_iQ2kLu9oGTETug": "e79b93e7a3c6b33f4a20782f1fe34f954edd1274f0373105716ee4fd76c1ee40",
+        "1-66LucM0QFdJcVbmpGS8wYMTIghir7aE": "2f4f809e1d4ec3f01aa6defdbf049f54f9f608c847b48a97d85ff2c0c8ef8518",
+        "1yaNcdFUr2Dgtfq_2Ic_tuiFaVTut1N3t": "31045707fdd64405b6f0eeefc23d24b5bce4378759d42cff934af299ec761c2c",
+        "1awZEPHeWPK1eKrFpom1dH14ARbKeggaJ": "28c24df3d6d51f53a069a66bd2f457274b5d521ce5ef9796aebb2d1037cae04e",
+        "1ri-b8nRrl9uC9A0H-hcPYuJt3LsuxPLG": "163362c35e65a3f8c35531ec7f74f5185c07916773471e09ebc234ed6ad7f43a",
+        "1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ": "31525ab214f63001ea51ba94ba0af8ffd5b16c1ec5a121bee059e907ef74c136",
+        "10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm": "76a4e6572b40e347409d5c432037c35c13d9af8346b3bb5daa321e4d92c67dd2",
+        "19WW-HFiGz_8FsfJuOFqSZe7ov82gG_4p": "88ceb21c827d6727867415addf5c6cec4d921d3128b7b46fe8c490bdcc618e44",
+        "1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw": "1461946ac86f4215c6e11e68a1a8f7ad9ef69d274f7cc4b5b64e566b9e450bfb"
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "31525ab214f63001ea51ba94ba0af8ffd5b16c1ec5a121bee059e907ef74c136",
+        "expectedCount": 5,
+        "checkedCount": 5
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "31525ab214f63001ea51ba94ba0af8ffd5b16c1ec5a121bee059e907ef74c136",
+        "expectedCount": 5,
+        "checkedCount": 5
+      },
+      "infographicSheetVisualAudit": {
+        "status": "PASS",
+        "pdfSha256": "76a4e6572b40e347409d5c432037c35c13d9af8346b3bb5daa321e4d92c67dd2",
+        "expectedCount": 9,
+        "checkedCount": 9,
+        "pageCount": 9,
+        "pageSize": "A4"
+      },
+      "infographicSheetPublishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "76a4e6572b40e347409d5c432037c35c13d9af8346b3bb5daa321e4d92c67dd2",
+        "expectedCount": 9,
+        "checkedCount": 9,
+        "pageCount": 9
+      },
+      "dualSheetCoverage": {
+        "expectedNotions": 13,
+        "classicCovered": 13,
+        "infographicCovered": 13,
+        "medicalReview": "approved",
+        "readabilityReview": "approved"
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "partial",
+          "sheetResourceIds": [
+            "sante_mondiale_sante_france_fiche_p01",
+            "sante_mondiale_sante_france_fiche_complete_infographiee_p01"
+          ],
+          "infographicResourceIds": [
+            "sante_mondiale_sante_france_info_p01_01",
+            "sante_mondiale_sante_france_info_p01_02",
+            "sante_mondiale_sante_france_info_p01_03",
+            "sante_mondiale_sante_france_info_p01_04",
+            "sante_mondiale_sante_france_info_p01_05",
+            "sante_mondiale_sante_france_info_p01_06",
+            "sante_mondiale_sante_france_info_p01_07",
+            "sante_mondiale_sante_france_info_p01_08",
+            "sante_mondiale_sante_france_info_p01_09"
+          ],
+          "qcmQuestionIds": [
+            "c11_s1_q001",
+            "c11_s1_q002",
+            "c11_s1_q003",
+            "c11_s1_q004",
+            "c11_s1_q005",
+            "c11_s1_q006",
+            "c11_s1_q007",
+            "c11_s1_q008",
+            "c11_s1_q009",
+            "c11_s1_q010",
+            "c11_s1_q011",
+            "c11_s1_q012",
+            "c11_s1_q013",
+            "c11_s1_q014",
+            "c11_s1_q015",
+            "c11_s1_q016",
+            "c11_s1_q017",
+            "c11_s1_q018",
+            "c11_s1_q019",
+            "c11_s1_q020",
+            "c11_s1_q021",
+            "c11_s1_q022",
+            "c11_s1_q023",
+            "c11_s1_q024",
+            "c11_s1_q025",
+            "c11_s1_q026",
+            "c11_s1_q027",
+            "c11_s1_q028",
+            "c11_s1_q029",
+            "c11_s1_q030",
+            "c11_s1_q031",
+            "c11_s1_q032",
+            "c11_s1_q033",
+            "c11_s1_q034",
+            "c11_s1_q035",
+            "c11_s1_q036",
+            "c11_s1_q037",
+            "c11_s1_q038",
+            "c11_s1_q039",
+            "c11_s1_q040",
+            "c11_s1_q041",
+            "c11_s1_q042",
+            "c11_s1_q043",
+            "c11_s1_q044",
+            "c11_s1_q045",
+            "c11_s1_q046",
+            "c11_s1_q047",
+            "c11_s1_q048",
+            "c11_s1_q049",
+            "c11_s1_q050",
+            "c11_s1_q051",
+            "c11_s1_q052",
+            "c11_s1_q053",
+            "c11_s1_q054",
+            "c11_s1_q055",
+            "c11_s1_q056"
+          ],
+          "vocalIds": [],
+          "blockers": [
+            {
+              "resource": "support",
+              "reason": "native_support_unavailable",
+              "detail": "101 captures et transcription disponibles, support officiel intégral absent."
+            },
+            {
+              "resource": "coverage",
+              "reason": "missing_course_segment",
+              "detail": "Chapitre détaillé accès et recours aux soins non présent dans les sources fournies."
+            }
+          ]
+        }
+      ]
     }
   ],
   "supplementalResourceApprovals": [
