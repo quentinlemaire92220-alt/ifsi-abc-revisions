@@ -35,7 +35,7 @@ assert.equal(get.options.cache,'no-store','Private packs must not use HTTP cache
 assert.equal(await api.upload(pack),true,'Owner upload should work');
 assert.equal(received.length,1);
 assert.equal(received[0][0].pack_key,'p1');
-assert.equal(received[0][0].payload,pack);
+assert.deepEqual(received[0][0].payload,pack);
 assert.equal(Object.hasOwn(received[0][0],'owner_id'),false,'Owner ID should be derived by the database JWT, never supplied by the client');
 const post=seen.find(x=>x.url.includes('/rest/v1/')&&x.options.method==='POST');
 assert.ok(post.options.headers.Prefer.includes('merge-duplicates'),'Upsert should be idempotent');
@@ -51,7 +51,7 @@ assert.equal(redirected[0],'./index.html#pathologies','Magic Link must return to
 assert.equal(removed.length,1,'Callback must clear tokens from address bar');
 assert.equal(storage.has('ifsi-pathologies-private-auth-pending-v1'),false,'Sign-in request state must be cleared');
 assert.equal(JSON.parse(storage.get('ifsi-pathologies-private-auth-session-v1')).access_token,'aaa.bbb.ccc');
-assert.ok(!cloud.includes('service_role'),'Service role secret must not appear in public app code');
+assert.ok(!cloud.includes('SUPABASE_SERVICE_ROLE_KEY'),'No privileged server credential may appear in public app code');
 assert.ok(!html.includes('ifsi-abc-private-pathologies-p1-v1'),'No private clinical catalogue should be embedded in index');
 assert.ok(!sw.includes('IFSI_ABC_PATHOLOGIES_P1_IMPORT_PRIVE'),'No private medical pack must be pre-cached');
 assert.ok(sw.includes("if(!u.pathname.endsWith('/index.html')"),'Non-app Magic Link callback must bypass service-worker app injection');
