@@ -23,7 +23,13 @@
     "flashcards": [
       {
         "front": "Quelles dimensions composent la définition OMS de la santé ?",
-        "back": "Bien-être physique, mental et social."
+        "answers": [
+          "Bien-être physique, mental et social."
+        ],
+        "explanation": "La santé est multidimensionnelle et dépend de déterminants sociaux et environnementaux ; elle ne se limite pas à la maladie individuelle.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -53,7 +59,13 @@
     "flashcards": [
       {
         "front": "Que fait principalement l’OMS ?",
-        "back": "Coordonne la santé internationale et émet des recommandations."
+        "answers": [
+          "Coordonne la santé internationale et émet des recommandations."
+        ],
+        "explanation": "L’OMS oriente, coordonne et produit des références ; les systèmes nationaux assurent les soins et la mise en œuvre.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -83,7 +95,13 @@
     "flashcards": [
       {
         "front": "Quels sont les trois domaines de One Health ?",
-        "back": "Santé humaine, santé animale et environnement."
+        "answers": [
+          "Santé humaine, santé animale et environnement."
+        ],
+        "explanation": "One Health relie les trois domaines humain, animal et environnemental, notamment pour les zoonoses et les résistances.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -111,7 +129,13 @@
     "flashcards": [
       {
         "front": "Pourquoi associer les vétérinaires à la santé publique ?",
-        "back": "Pour surveiller et prévenir les risques aux interfaces humains–animaux."
+        "answers": [
+          "Pour surveiller et prévenir les risques aux interfaces humains–animaux."
+        ],
+        "explanation": "Une zoonose implique conjointement animal, environnement et être humain ; les autres choix ignorent ces liens.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -141,7 +165,13 @@
     "flashcards": [
       {
         "front": "Quand s’appliquent les OMD ?",
-        "back": "De 2000 à 2015 ; ils comportent 8 objectifs."
+        "answers": [
+          "De 2000 à 2015 ; ils comportent 8 objectifs."
+        ],
+        "explanation": "Les OMD comprennent huit objectifs jusqu’en 2015 ; les ODD sont au nombre de 17 jusqu’en 2030 et l’ODD 3 porte sur la santé.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -170,7 +200,13 @@
     "flashcards": [
       {
         "front": "Combien d’ODD et quelle période ?",
-        "back": "17 objectifs pour la période 2015–2030."
+        "answers": [
+          "17 objectifs pour la période 2015–2030."
+        ],
+        "explanation": "Pour comparer la pauvreté, il faut au minimum connaître le seuil monétaire, l’année et le champ étudié. La comparaison entre effectif et pourcentage nécessite aussi de vérifier le dénominateur ; l’énoncé qui prétend l’inverse est faux.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -199,7 +235,13 @@
     "flashcards": [
       {
         "front": "Quel est le sujet de l’ODD 3 ?",
-        "back": "La bonne santé et le bien-être à tout âge."
+        "answers": [
+          "La bonne santé et le bien-être à tout âge."
+        ],
+        "explanation": "Une cible ODD est un objectif à atteindre que l’on peut suivre avec des indicateurs. Elle ne prouve pas que l’objectif est atteint, ne constitue pas une projection certaine et n’établit pas à elle seule la causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -229,7 +271,13 @@
     "flashcards": [
       {
         "front": "Pourquoi un taux de pauvreté en baisse peut-il masquer des effectifs élevés ?",
-        "back": "L’effectif dépend aussi de la taille totale de la population."
+        "answers": [
+          "L’effectif dépend aussi de la taille totale de la population."
+        ],
+        "explanation": "Une baisse proportionnelle ne renseigne pas directement l’effectif sans taille de population ; il faut aussi fixer le seuil.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -259,7 +307,13 @@
     "flashcards": [
       {
         "front": "À quoi servent les indicateurs de santé ?",
-        "back": "Décrire, surveiller, comparer et évaluer la santé des populations."
+        "answers": [
+          "Décrire, surveiller, comparer et évaluer la santé des populations."
+        ],
+        "explanation": "Les indicateurs décrivent, comparent et permettent un suivi. Un indicateur isolé n’établit pas nécessairement une causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -289,7 +343,13 @@
     "flashcards": [
       {
         "front": "Que vérifier avant de comparer deux taux ?",
-        "back": "Numérateur, dénominateur, année, territoire et structure d’âge."
+        "answers": [
+          "Numérateur, dénominateur, année, territoire et structure d’âge."
+        ],
+        "explanation": "Des dénominateurs, durées et pyramides des âges différentes peuvent rendre les taux bruts trompeurs.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -319,7 +379,13 @@
     "flashcards": [
       {
         "front": "Quelle différence entre effectif et taux ?",
-        "back": "L’effectif est un nombre ; le taux le rapporte à une population."
+        "answers": [
+          "L’effectif est un nombre ; le taux le rapporte à une population."
+        ],
+        "explanation": "Prévalence, incidence et mortalité par cause sont des indicateurs de fréquence, apparition ou gravité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -349,7 +415,13 @@
     "flashcards": [
       {
         "front": "Pourquoi une estimation statistique est-elle incertaine ?",
-        "back": "Elle dépend des données disponibles et des hypothèses du modèle."
+        "answers": [
+          "Elle dépend des données disponibles et des hypothèses du modèle."
+        ],
+        "explanation": "Une estimation est fondée sur des données et hypothèses ; elle n’équivaut pas à une mesure exhaustive garantie.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -379,7 +451,13 @@
     "flashcards": [
       {
         "front": "Une population peut-elle croître avec un taux de croissance qui baisse ?",
-        "back": "Oui, tant que le taux reste positif."
+        "answers": [
+          "Oui, tant que le taux reste positif."
+        ],
+        "explanation": "Le taux exprime une vitesse relative ; un taux positif mais décroissant accompagne toujours une hausse de l’effectif.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -409,7 +487,13 @@
     "flashcards": [
       {
         "front": "Comment calcule-t-on le solde naturel ?",
-        "back": "Naissances moins décès."
+        "answers": [
+          "Naissances moins décès."
+        ],
+        "explanation": "La variation totale est la somme du solde naturel (naissances moins décès) et du solde migratoire.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -437,7 +521,13 @@
     "flashcards": [
       {
         "front": "À quoi correspondent 639 533 naissances en 2023 ?",
-        "back": "À la France métropolitaine, et non à la France entière."
+        "answers": [
+          "À la France métropolitaine, et non à la France entière."
+        ],
+        "explanation": "L’Insee donne 639 533 naissances en métropole et 677 803 en France entière pour 2023.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -466,7 +556,13 @@
     "flashcards": [
       {
         "front": "Que traduit une pyramide des âges à base étroite ?",
-        "back": "Des générations récentes moins nombreuses, souvent associées au vieillissement."
+        "answers": [
+          "Des générations récentes moins nombreuses, souvent associées au vieillissement."
+        ],
+        "explanation": "Une base étroite et des générations adultes plus larges sont compatibles avec un vieillissement et une moindre part de jeunes. La seule forme d’une pyramide ne démontre pas les causes exactes : il faut d’autres données.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -496,7 +592,13 @@
     "flashcards": [
       {
         "front": "Formule du taux brut de natalité ?",
-        "back": "Naissances vivantes / population moyenne × 1 000."
+        "answers": [
+          "Naissances vivantes / population moyenne × 1 000."
+        ],
+        "explanation": "Il s’agit du nombre annuel de naissances vivantes rapporté à la population moyenne, exprimé pour 1 000 habitants.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -525,7 +627,13 @@
     "flashcards": [
       {
         "front": "Pourquoi standardiser la mortalité par âge ?",
-        "back": "Pour comparer des populations ayant des structures d’âge différentes."
+        "answers": [
+          "Pour comparer des populations ayant des structures d’âge différentes."
+        ],
+        "explanation": "Un taux brut dépend de la structure d’âge. Une population plus âgée peut présenter un taux brut supérieur sans que la qualité des soins soit nécessairement moindre. Les comparaisons nécessitent des ajustements appropriés.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -555,7 +663,13 @@
     "flashcards": [
       {
         "front": "Comment est construite l’espérance de vie de période ?",
-        "back": "À partir des taux de mortalité par âge observés à une période donnée."
+        "answers": [
+          "À partir des taux de mortalité par âge observés à une période donnée."
+        ],
+        "explanation": "L’espérance de vie de période applique les conditions de mortalité observées à une cohorte fictive ; elle ne prédit pas l’avenir individuel.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -584,7 +698,13 @@
     "flashcards": [
       {
         "front": "Espérance de vie 2023 en France : femmes et hommes ?",
-        "back": "Environ 85,7 ans pour les femmes et 80,0 ans pour les hommes."
+        "answers": [
+          "Environ 85,7 ans pour les femmes et 80,0 ans pour les hommes."
+        ],
+        "explanation": "L’Insee indiquait 85,7 ans pour les femmes et 80,0 ans pour les hommes en 2023.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -614,7 +734,13 @@
     "flashcards": [
       {
         "front": "Jusqu’à quand un décès peut-il être qualifié de maternel ?",
-        "back": "Pendant la grossesse et jusqu’à 42 jours après sa fin, si la cause est liée."
+        "answers": [
+          "Pendant la grossesse et jusqu’à 42 jours après sa fin, si la cause est liée."
+        ],
+        "explanation": "Un décès maternel survient pendant la grossesse ou dans les 42 jours suivant sa fin, pour une cause liée ou aggravée par la grossesse ou sa prise en charge, hors causes accidentelles ou fortuites. Ce n’est pas la définition de la mortalité néonatale.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -643,7 +769,13 @@
     "flashcards": [
       {
         "front": "Quel est le dénominateur du RMM ?",
-        "back": "Les naissances vivantes ; ratio pour 100 000."
+        "answers": [
+          "Les naissances vivantes ; ratio pour 100 000."
+        ],
+        "explanation": "Le RMM rapporte les décès maternels aux naissances vivantes, multiplié par 100 000.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -671,7 +803,13 @@
     "flashcards": [
       {
         "front": "Quelle est la cible mondiale ODD 3.1 pour 2030 ?",
-        "back": "Moins de 70 décès maternels pour 100 000 naissances vivantes."
+        "answers": [
+          "Moins de 70 décès maternels pour 100 000 naissances vivantes."
+        ],
+        "explanation": "L’objectif international de 2030 est un RMM mondial inférieur à 70 décès maternels pour 100 000 naissances vivantes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -700,7 +838,13 @@
     "flashcards": [
       {
         "front": "Combien de décès maternels mondiaux estimés en 2023 ?",
-        "back": "Environ 260 000, soit près d’un décès toutes les deux minutes."
+        "answers": [
+          "Environ 260 000, soit près d’un décès toutes les deux minutes."
+        ],
+        "explanation": "L’OMS estime environ 260 000 décès maternels en 2023, soit près d’un décès toutes les deux minutes. Le rapport mondial de 197 décès pour 100 000 naissances vivantes est une estimation statistique, pas un recensement nominatif exhaustif.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -729,7 +873,13 @@
     "flashcards": [
       {
         "front": "Quels jours couvre la période néonatale ?",
-        "back": "De la naissance au 27e jour inclus (avant 28 jours)."
+        "answers": [
+          "De la naissance au 27e jour inclus (avant 28 jours)."
+        ],
+        "explanation": "La période néonatale correspond aux 28 premiers jours de vie (jours 0 à 27 révolus).",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -758,7 +908,13 @@
     "flashcards": [
       {
         "front": "Différence entre mortalité infantile et mortalité des moins de cinq ans ?",
-        "back": "Avant 1 an pour l’infantile ; avant 5 ans pour la seconde."
+        "answers": [
+          "Avant 1 an pour l’infantile ; avant 5 ans pour la seconde."
+        ],
+        "explanation": "L’anglais distingue infant mortality (< 1 an) et under-five mortality (< 5 ans).",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -787,7 +943,13 @@
     "flashcards": [
       {
         "front": "Quelles cibles ODD 3.2 pour les enfants ?",
-        "back": "Au plus 12 décès néonatals et 25 décès avant 5 ans pour 1 000 naissances vivantes."
+        "answers": [
+          "Au plus 12 décès néonatals et 25 décès avant 5 ans pour 1 000 naissances vivantes."
+        ],
+        "explanation": "Les pays visent 12 décès néonatals et 25 décès avant cinq ans, respectivement pour 1 000 naissances vivantes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -817,7 +979,13 @@
     "flashcards": [
       {
         "front": "Quelle tendance générale suit la mortalité avant cinq ans ?",
-        "back": "Une baisse mondiale, mais des écarts régionaux persistants."
+        "answers": [
+          "Une baisse mondiale, mais des écarts régionaux persistants."
+        ],
+        "explanation": "Les deux mortalités diminuent dans l’ensemble, mais les disparités régionales restent fortes et les progrès récents ralentissent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -847,7 +1015,13 @@
     "flashcards": [
       {
         "front": "Qu’est-ce que la prévalence ponctuelle ?",
-        "back": "La proportion de cas existants dans une population à un instant donné."
+        "answers": [
+          "La proportion de cas existants dans une population à un instant donné."
+        ],
+        "explanation": "Huit personnes déjà malades sur 100 à un instant représentent une prévalence de 8 %. On ignore combien de cas sont nouveaux ; il serait incorrect de parler d’incidence cumulée ou de cas par personne-année.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -877,7 +1051,13 @@
     "flashcards": [
       {
         "front": "Neuf nouveaux cas sur 100 sujets suivis deux ans : incidence cumulée ?",
-        "back": "9 % sur deux ans, si le suivi est complet."
+        "answers": [
+          "9 % sur deux ans, si le suivi est complet."
+        ],
+        "explanation": "Neuf nouveaux cas parmi 100 personnes initialement indemnes suivies intégralement deux ans donnent une incidence cumulée de 9 % sur deux ans. Cela ne suffit pas à calculer une prévalence ni une densité d’incidence.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -906,7 +1086,13 @@
     "flashcards": [
       {
         "front": "Quel dénominateur utiliser pour un taux d’incidence ?",
-        "back": "La somme des temps-personnes réellement observés à risque."
+        "answers": [
+          "La somme des temps-personnes réellement observés à risque."
+        ],
+        "explanation": "Le taux d’incidence rapporte les nouveaux cas à la somme des temps-personnes réellement passés à risque (personnes-années ou personnes-mois). Une durée non observée ne s’ajoute pas au dénominateur.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -935,7 +1121,13 @@
     "flashcards": [
       {
         "front": "Le taux d’incidence est-il une mesure de contagiosité ?",
-        "back": "Non. Il mesure la vitesse de survenue de nouveaux cas."
+        "answers": [
+          "Non. Il mesure la vitesse de survenue de nouveaux cas."
+        ],
+        "explanation": "La densité d’incidence utilise le temps d’observation ; elle n’est pas une mesure directe de contagiosité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -963,7 +1155,13 @@
     "flashcards": [
       {
         "front": "Quelle famille domine les décès dans le monde ?",
-        "back": "Les maladies non transmissibles."
+        "answers": [
+          "Les maladies non transmissibles."
+        ],
+        "explanation": "Le cours montre une majorité des décès attribuables aux maladies non transmissibles au niveau mondial.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -993,7 +1191,13 @@
     "flashcards": [
       {
         "front": "Quelles sont les quatre grandes catégories de MNT ?",
-        "back": "Maladies cardiovasculaires, cancers, diabète et maladies respiratoires chroniques."
+        "answers": [
+          "Maladies cardiovasculaires, cancers, diabète et maladies respiratoires chroniques."
+        ],
+        "explanation": "Les MNT comprennent notamment cardiovasculaires, diabète, cancers et maladies respiratoires chroniques. Paludisme et tuberculose sont infectieux.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1021,7 +1225,13 @@
     "flashcards": [
       {
         "front": "Qu’est-ce que la transition épidémiologique ?",
-        "back": "La modification du poids relatif des maladies, souvent vers les pathologies chroniques."
+        "answers": [
+          "La modification du poids relatif des maladies, souvent vers les pathologies chroniques."
+        ],
+        "explanation": "La transition épidémiologique se manifeste souvent par la diminution relative du poids de certaines infections. Elle s’accompagne généralement d’un poids important des maladies chroniques et d’une amélioration de la survie ; elle n’efface pas toutes les infections.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -1051,7 +1261,13 @@
     "flashcards": [
       {
         "front": "Pourquoi éviter un contraste Nord–Sud trop simpliste ?",
-        "back": "Les inégalités existent également au sein de chaque pays."
+        "answers": [
+          "Les inégalités existent également au sein de chaque pays."
+        ],
+        "explanation": "Les disparités sanitaires dépendent des déterminants et de l’accès, et existent aussi à l’intérieur des pays.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1080,7 +1296,13 @@
     "flashcards": [
       {
         "front": "Le VIH et le sida sont-ils deux virus différents ?",
-        "back": "Non. Le sida est un stade avancé de l’infection par le VIH."
+        "answers": [
+          "Non. Le sida est un stade avancé de l’infection par le VIH."
+        ],
+        "explanation": "Le VIH est le virus ; le sida désigne la forme avancée avec immunodéficience sévère et complications.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -1109,7 +1331,13 @@
     "flashcards": [
       {
         "front": "Les antirétroviraux restent-ils indiqués au stade sida ?",
-        "back": "Oui, à tous les stades, avec prise en charge des complications."
+        "answers": [
+          "Oui, à tous les stades, avec prise en charge des complications."
+        ],
+        "explanation": "Les antirétroviraux restent indiqués au stade sida et contribuent au contrôle de l’infection VIH. Il ne faut pas arrêter systématiquement le traitement ; les infections opportunistes éventuelles exigent une prise en charge adaptée.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -1139,7 +1367,13 @@
     "flashcards": [
       {
         "front": "PrEP et TPE : quelle différence temporelle ?",
-        "back": "PrEP avant exposition ; TPE rapidement après exposition."
+        "answers": [
+          "PrEP avant exposition ; TPE rapidement après exposition."
+        ],
+        "explanation": "La PrEP est proposée avant une exposition éventuelle au VIH ; le traitement post-exposition intervient rapidement après une exposition. L’éligibilité dépend du risque et des indications, pas du sexe : les femmes peuvent bénéficier de PrEP.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1169,7 +1403,13 @@
     "flashcards": [
       {
         "front": "Que signifie I = I pour le VIH ?",
-        "back": "Charge virale durablement indétectable : pas de transmission sexuelle du VIH."
+        "answers": [
+          "Charge virale durablement indétectable : pas de transmission sexuelle du VIH."
+        ],
+        "explanation": "Une charge virale VIH durablement indétectable sous traitement supprime le risque de transmission sexuelle du VIH (I = I), sans protéger contre les autres IST ni supprimer le suivi médical.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1199,7 +1439,13 @@
     "flashcards": [
       {
         "front": "Quel parasite et quel vecteur causent le paludisme ?",
-        "back": "Plasmodium ; transmission généralement par une femelle Anopheles infectée."
+        "answers": [
+          "Plasmodium ; transmission généralement par une femelle Anopheles infectée."
+        ],
+        "explanation": "Le paludisme est une maladie parasitaire transmise essentiellement par anophèle femelle ; P. falciparum peut être grave.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1229,7 +1475,13 @@
     "flashcards": [
       {
         "front": "Quelle prévention réduit les piqûres en zone de paludisme ?",
-        "back": "Moustiquaires imprégnées, répulsifs et lutte antivectorielle."
+        "answers": [
+          "Moustiquaires imprégnées, répulsifs et lutte antivectorielle."
+        ],
+        "explanation": "Les mesures antivectorielles et l’information sont des leviers majeurs ; elles ne remplacent pas le soin rapide des malades.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1258,7 +1510,13 @@
     "flashcards": [
       {
         "front": "Une infection tuberculeuse latente est-elle contagieuse ?",
-        "back": "Non, à la différence de certaines tuberculoses actives."
+        "answers": [
+          "Non, à la différence de certaines tuberculoses actives."
+        ],
+        "explanation": "Une infection tuberculeuse latente peut rester silencieuse et n’est pas contagieuse par elle-même. Elle peut toutefois évoluer vers une tuberculose active ; la transmission aérienne concerne certaines maladies actives, notamment pulmonaires.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -1288,7 +1546,13 @@
     "flashcards": [
       {
         "front": "Comment se transmet la tuberculose pulmonaire active ?",
-        "back": "Par l’air, via les aérosols infectieux."
+        "answers": [
+          "Par l’air, via les aérosols infectieux."
+        ],
+        "explanation": "La tuberculose pulmonaire active se transmet par l’air ; le traitement est prolongé et la prévention respiratoire est déterminante.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1316,7 +1580,13 @@
     "flashcards": [
       {
         "front": "Quel agent infectieux est en cause dans les épidémies de Zika ?",
-        "back": "Le virus Zika, principalement transmis par certains moustiques Aedes."
+        "answers": [
+          "Le virus Zika, principalement transmis par certains moustiques Aedes."
+        ],
+        "explanation": "Le cours cite Ebola parmi les risques infectieux émergents ou réémergents. Arthrose et dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -1346,7 +1616,13 @@
     "flashcards": [
       {
         "front": "Quels facteurs modifiables augmentent le risque cardiovasculaire ?",
-        "back": "HTA, tabagisme, dyslipidémie et diabète notamment."
+        "answers": [
+          "HTA, tabagisme, dyslipidémie et diabète notamment."
+        ],
+        "explanation": "HTA, dyslipidémie et tabagisme sont des facteurs majeurs ; le diabète s’ajoute souvent au risque.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1374,7 +1650,13 @@
     "flashcards": [
       {
         "front": "L’AVC et l’infarctus appartiennent à quel groupe de maladies ?",
-        "back": "Aux maladies cardiovasculaires."
+        "answers": [
+          "Aux maladies cardiovasculaires."
+        ],
+        "explanation": "L’AVC est une atteinte cardiovasculaire. Le VIH et le paludisme sont infectieux ; l’onchocercose est parasitaire. Les maladies cardiovasculaires comprennent également l’infarctus et l’insuffisance cardiaque.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -1404,7 +1686,13 @@
     "flashcards": [
       {
         "front": "Pourquoi le nombre de décès peut-il monter quand le taux standardisé baisse ?",
-        "back": "La population peut croître et vieillir en parallèle."
+        "answers": [
+          "La population peut croître et vieillir en parallèle."
+        ],
+        "explanation": "Un effectif dépend de la population exposée ; le taux standardisé vise à neutraliser l’effet des différences de structure d’âge.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1434,7 +1722,13 @@
     "flashcards": [
       {
         "front": "Quel est le rôle infirmier en prévention cardiovasculaire ?",
-        "back": "Repérage, surveillance, éducation, accompagnement et orientation."
+        "answers": [
+          "Repérage, surveillance, éducation, accompagnement et orientation."
+        ],
+        "explanation": "Le soin infirmier associe surveillance, prévention, information et collaboration, sans remplacer les compétences médicales.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1463,7 +1757,13 @@
     "flashcards": [
       {
         "front": "Que mesure l’incidence d’un cancer ?",
-        "back": "Les nouveaux diagnostics pendant une période donnée."
+        "answers": [
+          "Les nouveaux diagnostics pendant une période donnée."
+        ],
+        "explanation": "L’incidence concerne les nouveaux diagnostics pendant une période. La croissance démographique et le vieillissement peuvent augmenter leur nombre absolu ; le dépistage et la qualité des registres influencent aussi les cas observés. Ce n’est ni la létalité ni la survie à cinq ans.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -1492,7 +1792,13 @@
     "flashcards": [
       {
         "front": "Pourquoi préciser « survie nette à cinq ans » ?",
-        "back": "Le type de survie et la durée changent l’interprétation du pronostic."
+        "answers": [
+          "Le type de survie et la durée changent l’interprétation du pronostic."
+        ],
+        "explanation": "La survie nette aide à estimer le pronostic en s’affranchissant des décès attendus d’autres causes ; la standardisation permet de comparer en tenant compte des structures d’âge. Il faut préciser l’horizon, par exemple cinq ans.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 2
@@ -1522,7 +1828,13 @@
     "flashcards": [
       {
         "front": "Quels cancers font l’objet d’un dépistage organisé en France ?",
-        "back": "Sein, colorectal et col de l’utérus."
+        "answers": [
+          "Sein, colorectal et col de l’utérus."
+        ],
+        "explanation": "Les programmes de dépistage organisé en France concernent le sein, le côlon-rectum et le col de l’utérus selon des conditions d’âge ou de risque. Il n’existe pas de dépistage organisé universel de tous les cancers.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1552,7 +1864,13 @@
     "flashcards": [
       {
         "front": "Le dépistage d’un cancer confirme-t-il le diagnostic ?",
-        "back": "Non, un résultat positif nécessite des examens diagnostiques."
+        "answers": [
+          "Non, un résultat positif nécessite des examens diagnostiques."
+        ],
+        "explanation": "Le dépistage individuel suit une évaluation personnalisée ; il ne doit pas être confondu avec un programme systématique.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1582,7 +1900,13 @@
     "flashcards": [
       {
         "front": "Pourquoi deux nombres de naissances françaises peuvent-ils différer ?",
-        "back": "Ils peuvent concerner la métropole ou l’ensemble de la France."
+        "answers": [
+          "Ils peuvent concerner la métropole ou l’ensemble de la France."
+        ],
+        "explanation": "Les chiffres décrivent des périmètres distincts ; l’année et la source doivent accompagner la valeur.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
@@ -1610,7 +1934,13 @@
     "flashcards": [
       {
         "front": "Quel est le premier réflexe devant un chiffre en santé publique ?",
-        "back": "Vérifier unité, période, population, territoire et source."
+        "answers": [
+          "Vérifier unité, période, population, territoire et source."
+        ],
+        "explanation": "Les priorités soulignées dans le cours portent sur les tendances, mécanismes, définitions et dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique n’est pas une preuve de causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 1
@@ -1640,7 +1970,13 @@
     "flashcards": [
       {
         "front": "Que signifie « double charge » épidémiologique ?",
-        "back": "La coexistence d’infections et de maladies chroniques dans une population."
+        "answers": [
+          "La coexistence d’infections et de maladies chroniques dans une population."
+        ],
+        "explanation": "La double charge désigne la coexistence d’infections et de maladies non transmissibles. Le vieillissement et les progrès contre certaines infections n’en éliminent pas toutes les formes ; la situation sociale peut influencer les deux catégories.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
       }
     ],
     "announcedCorrectCount": 3
