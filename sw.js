@@ -104,7 +104,13 @@ self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.
 self.addEventListener('fetch',e=>{
  if(e.request.method!=='GET')return;
  const u=new URL(e.request.url);if(u.origin!==location.origin)return;
- if(e.request.mode==='navigate'||u.pathname.endsWith('/index.html')){e.respondWith(brandedIndex(e.request));return;}
+ if(e.request.mode==='navigate'||u.pathname.endsWith('/index.html')){
+  if(!u.pathname.endsWith('/index.html')&&!u.pathname.endsWith('/ifsi-abc-revisions/')&&!u.pathname.endsWith('/ifsi-abc-revisions')){
+   // La page de retour Magic Link ne doit JAMAIS recevoir des scripts injectés par brandedIndex.
+   e.respondWith(fetch(e.request,{cache:'no-store'}));return;
+  }
+  e.respondWith(brandedIndex(e.request));return;
+ }
  const qmatch=u.pathname.match(/questions-(\d+)\.json$/);
  if(qmatch){
   e.respondWith((async()=>{
