@@ -65,7 +65,8 @@ export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque',o
       // Exception bornée à un snapshot pédagogique V4.2 identifié par son SHA Git.
       // L'exonération s'applique seulement aux attributions explicites du corrigé,
       // avec contrôle du hash exact en amont ; les choix/énoncés restent contrôlés.
-      if(issue.field==='explanation'&&options.exactReviewedSourceAttributionIds?.has(item.id))return false;
+      if((issue.field==='explanation'&&options.exactReviewedSourceAttributionIds?.has(item.id))
+        ||(issue.field==='question'&&options.exactReviewedSourceQuestionIds?.has(item.id)))return false;
       return !previousErrors.some(prev=>prev.field===issue.field&&prev.excerpt===issue.excerpt);
     });
     if(errors.length){
