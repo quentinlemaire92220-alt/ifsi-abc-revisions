@@ -156,6 +156,9 @@ jobs:
       - name: Tester le refus de publication sans validation du package
         run: node tests/course-publication-approval-test.mjs
 
+      - name: Refuser les fiches visuellement non relues face au modèle cardiovasculaire
+        run: node tests/visual-owner-review-gate-test.mjs
+
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
         run: node tests/course-publication-approval.mjs
 
