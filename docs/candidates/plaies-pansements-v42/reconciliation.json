@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "courseId": "plaies_pansements",
+  "partId": "p01",
+  "mode": "review_only",
+  "notActive": true,
+  "candidateFile": "docs/candidates/plaies-pansements-v42/qextra-50.json",
+  "currentProductionBank": "qextra-50.txt",
+  "candidateSource": {
+    "pr174": 174,
+    "pr171": 171,
+    "sourceHeadSha": "a4f85d623c45027947619daa46e9c6bffb693ba0",
+    "verifiedGitBlobSha": "de31dc5abe8e3e5aae191c9ba6039b2b731ec9f6"
+  },
+  "productionSnapshot": {
+    "mainCommit": "757089a82f2e6c0b8e44b4e254a4f21d3fdddf44",
+    "buildVersion": "8.30.112",
+    "productionBankGitBlobSha": "ada38ebfd4d627eeb918b75193c9c17ee280d1d4"
+  },
+  "expected": {
+    "questions": 50,
+    "choices": 250,
+    "correctAnswerTexts": 86,
+    "flashcards": 40,
+    "editedEntries": 43,
+    "changedStemIds": [
+      "plaies_p1_020",
+      "plaies_p1_021",
+      "plaies_p1_047"
+    ]
+  },
+  "pdfProof": {
+    "date": "2026-10-21",
+    "verifiedAgainstActualDriveDownloads": true,
+    "canonical": {
+      "qcm": {
+        "driveId": "1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5",
+        "sha256": "2089e3f2a7c4f5bbffa06d8624a0cc3e0d8b61b15f2f0251a31f3930aad76571",
+        "bytes": 96220,
+        "pages": 12
+      },
+      "correction": {
+        "driveId": "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o",
+        "sha256": "61f0407301f27e0b724e892c43f084429071fb63dd1621b85f0b1f51058fa1f1",
+        "bytes": 96139,
+        "pages": 11
+      }
+    },
+    "verifiedIdenticalAlternateCopies": {
+      "qcmDriveId": "1kXsQcaTa2vKKYtMk4Cqms6DTQOApvAdw",
+      "correctionDriveId": "14XhFreMjuBsSpKrdjZ4KecWea8WzgNL8"
+    }
+  },
+  "releaseGate": {
+    "packageApprovalForMain112": "pending",
+    "publicationBundleSha256": null,
+    "drivePublicationAllowed": false,
+    "deployAllowed": false,
+    "sourcePrivacyReview": "not_replaced_by_ci",
+    "doNotCopyApprovalDigestFromLegacyPr": true
+  }
+}
