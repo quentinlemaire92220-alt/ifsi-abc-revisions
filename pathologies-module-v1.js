@@ -151,7 +151,7 @@ function catalogMarkup(records,term=''){
  if(!systems.length)return '<p class="patho-muted">Aucune pathologie trouvée.</p>';
  return systems.map((system,i)=>{
   const all=matches.filter(r=>r.system===system),icon=all[0]?.icon||'🩺';
-  const cards=all.map(r=>'<button type="button" class="patho-entry" data-patho-'+(r.published?'published':'pending')+'="'+esc(r.id)+'"><span><b>'+esc(r.shortTitle)+'</b><span class="patho-badge"> • '+(r.published?'Fiche et entraînements disponibles':'Contenu en cours de validation médicale')+'</span></span><span aria-hidden="true">→</span></button>').join('');
+  const cards=all.map(r=>'<button type="button" class="patho-entry" data-patho-'+(r.published?'published':'pending')+'="'+esc(r.id)+'"><span><b>'+esc(r.shortTitle)+'</b><span class="patho-badge"> • '+(r.published?'Fiche et entraînements disponibles':root.IFSI_PATHOLOGIES_REVIEW?.has?.(r.id)?'🔒 Pack personnel importé • en revue médicale':'Contenu en cours de validation médicale')+'</span></span><span aria-hidden="true">→</span></button>').join('');
   return '<details class="patho-group" '+(q||i===0?'open':'')+'><summary><span class="patho-group-name">'+icon+' '+esc(system)+'</span><span class="patho-group-count">'+all.length+' pathologie'+(all.length>1?'s':'')+' <span aria-hidden="true">⌄</span></span></summary><div class="patho-group-body">'+cards+'</div></details>';
  }).join('');
 }
@@ -159,11 +159,16 @@ function showPending(id){
  const record=P1_CATALOG.find(p=>p.id===id);
  if(!record)return list();
  pendingId=id;state.id=null;
+ // Le pack personnel a priorité sur le cours IFSI : aucune redirection automatique.
+ const review=root.IFSI_PATHOLOGIES_REVIEW;
+ if(review?.showIfImported?.(id))return;
  const host=byId('ifsiPathologiesBody');if(!host)return;
- host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Toutes les pathologies','id="pathoBack"')+'</div><h2>'+esc(record.title)+'</h2><p class="patho-muted">'+esc(record.system)+'</p><div class="patho-panel" role="status"><h3>Ressources en cours de validation médicale</h3><p>Cette pathologie dispose de son espace dédié. Sa fiche illustrée, ses QCM, ses flashcards et ses cas cliniques ne sont pas encore publiés.</p><p>Ils seront accessibles ici, après validation médicale et pédagogique.</p></div><div class="patho-panel"><h3>Cours associé — accès facultatif</h3><p>Le cours IFSI est une ressource distincte de la fiche Pathologies.</p>'+action('Ouvrir le cours IFSI ↗','data-patho-course="'+esc(record.courseId)+'"')+'</div></div>';
+ host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Toutes les pathologies','id="pathoBack"')+'</div><h2>'+esc(record.title)+'</h2><p class="patho-muted">'+esc(record.system)+'</p>'+
+ '<div class="patho-panel" role="status"><h3>🔒 Ouvrir mes supports Pathologies</h3><p>Les 6 planches, QCM, flashcards et cas cliniques de cette pathologie sont accessibles après import de ton fichier JSON personnel. Les supports sont encore en revue médicale et ne sont pas publiés aux étudiants.</p><div id="pathoReviewImport" data-patho-id="'+esc(id)+'"></div></div>'+
+ '<details class="patho-panel patho-details"><summary>Cours IFSI associé (facultatif, distinct de Pathologies)</summary><p>Ce bouton ouvre le cours existant, et non la fiche Pathologies.</p>'+action('Ouvrir le cours IFSI ↗','data-patho-course="'+esc(record.courseId)+'"')+'</details></div>';
  byId('pathoBack').onclick=()=>list();
  host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
- root.IFSI_PATHOLOGIES_REVIEW?.showIfImported?.(id);
+ review?.attachImport?.();
 }
 function list(){
  const host=byId('ifsiPathologiesBody');if(!host)return;
