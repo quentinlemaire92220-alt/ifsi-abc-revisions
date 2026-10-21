@@ -24,6 +24,9 @@ const wording=context.window.IFSI_QCM_WORDING;
 assert.ok(wording,'API de nettoyage des énoncés absente');
 assert.equal(wording.cleanQuestionPrompt('Quel est le rôle du thymus selon le cours ?'),'Quel est le rôle du thymus ?');
 assert.equal(wording.cleanQuestionPrompt('Selon le support, une acidose correspond à :'),'Une acidose correspond à :');
+assert.equal(wording.cleanQuestionPrompt('Concernant une escarre débutante, quelles propositions sont exactes selon le cours et les recommandations de prévention ?'),
+ 'Concernant une escarre débutante, quelles propositions sont exactes ?',
+ 'La V4.2 doit s’afficher sans référence préalable au TD, sans réécrire sa banque approuvée.');
 
 const q={id:'homeostasie_057',question:'Selon la diapositive « diabète insipide » :',choices:['A','B','C','D'],answers:[0,1,3],explanation:'Ancienne correction'};
 wording.polishQuestion(q);
