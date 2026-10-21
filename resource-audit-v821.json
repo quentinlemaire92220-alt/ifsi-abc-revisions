@@ -1,5 +1,5 @@
 {
-  "version": "8.30.109",
+  "version": "8.30.110",
   "auditedAt": "2026-10-20",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.109 : volet care p02, fiche unique et cinq planches complémentaires ; ressources antérieures conservées.",
+  "note": "V8.30.110 : 35 vocaux pour 14 cours ; 131 enregistrements antérieurs conservés, 25 copies identiques et 2 doublons du ZIP ignorés.",
   "expectedTotals": {
     "courses": 49,
     "sheets": 62,
     "infographics": 174,
-    "vocals": 131,
+    "vocals": 166,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,

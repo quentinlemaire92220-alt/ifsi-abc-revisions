@@ -240,6 +240,9 @@ jobs:
       - name: Vérifier les 26 vocaux infectiologie et la release V8.30.101
         run: node tests/infectiologie-vocaux-v8401.mjs
 
+      - name: Vérifier les 35 vocaux des 14 cours V8.30.110
+        run: node tests/vocals-14-courses-v8410.mjs
+
       - name: Vérifier le lecteur vocal natif V8.30.50
         run: node tests/vocal-player-v8350.mjs
 

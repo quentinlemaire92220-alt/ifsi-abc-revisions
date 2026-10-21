@@ -1118,7 +1118,12 @@
         "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf": "ba666b7421b0113e35261ac7a4f4bff27cf2cf40e4a7e9c096276506a4dca91c",
         "1S2FRYmuEz-BURIabkoRZSeA4vTo0Bwuw": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
         "1f3U91NKQVUAAGoHFTUc1jbbzQyBwIab1": "76c692fe1f6a4e11a8694ba1a71aff7e6b9bb81c7238426557f489f223d23ae1",
-        "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680"
+        "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680",
+        "1zEztriTfMDv-V7AtlzJwvwUCjfs8lvNR": "2c440dedb6b6c2771b1f82149c431b9f088f839acf8aa96d5bb441104fbb2875",
+        "1j6s25fCrlv0KpEIXBWYwQdcs25qq_9IK": "f02ecf000d23559c9ce94ac6f3cabab89254eaf9c3d0991af9c386f925a72a39",
+        "166mkiuNDIlT0FuS2WzHeHR98CGteYhRM": "c057f114feeabca3aa982b193cdc9c47b12c4b08b98da35921e91711f17efa32",
+        "1JnfXoMJEQ6cCMRdRxaxk5i6jcxvIPFwf": "3bbacc3b3b1eadd7a1fbe0b2f2ead7eb7bffa05ce2649388c7172da11fba62fa",
+        "1mjWw9pHPEBWvqeWhlrRk7Rw5xGjswHbF": "1f09a3ffa96cab06b120a10ca88102608a006fee395bee0995287ebb8de894e1"
       },
       "sheetCoverage": {
         "expectedNotions": 204,
@@ -1218,11 +1223,6 @@
           "resource": "support",
           "reason": "native_support_unavailable",
           "detail": "Support natif du volet care non disponible ; fiche provisoire établie sur les captures et compléments reçus."
-        },
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Quatre scripts prêts ; MP3 encore attendus."
         }
       ],
       "deliveryQuestionScope": "declared_parts",
@@ -1251,7 +1251,13 @@
       "vocabularyDriveId": "1jSrfb9-ko6BfjuWPmpOIquHXE98vT1xW",
       "vocabularyCount": 24,
       "infographicPackDriveId": "1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk",
-      "vocals": [],
+      "vocals": [
+        "ethique_infirmiere_p01_vocal_01",
+        "ethique_infirmiere_p02_vocal_01",
+        "ethique_infirmiere_p02_vocal_02",
+        "ethique_infirmiere_p02_vocal_03",
+        "ethique_infirmiere_p02_vocal_04"
+      ],
       "vocalScripts": [
         {
           "number": 1,
@@ -1318,7 +1324,11 @@
             "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf": "ba666b7421b0113e35261ac7a4f4bff27cf2cf40e4a7e9c096276506a4dca91c",
             "1S2FRYmuEz-BURIabkoRZSeA4vTo0Bwuw": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
             "1f3U91NKQVUAAGoHFTUc1jbbzQyBwIab1": "76c692fe1f6a4e11a8694ba1a71aff7e6b9bb81c7238426557f489f223d23ae1",
-            "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680"
+            "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680",
+            "1j6s25fCrlv0KpEIXBWYwQdcs25qq_9IK": "f02ecf000d23559c9ce94ac6f3cabab89254eaf9c3d0991af9c386f925a72a39",
+            "166mkiuNDIlT0FuS2WzHeHR98CGteYhRM": "c057f114feeabca3aa982b193cdc9c47b12c4b08b98da35921e91711f17efa32",
+            "1JnfXoMJEQ6cCMRdRxaxk5i6jcxvIPFwf": "3bbacc3b3b1eadd7a1fbe0b2f2ead7eb7bffa05ce2649388c7172da11fba62fa",
+            "1mjWw9pHPEBWvqeWhlrRk7Rw5xGjswHbF": "1f09a3ffa96cab06b120a10ca88102608a006fee395bee0995287ebb8de894e1"
           },
           "sheetCoverage": {
             "expectedNotions": 204,
@@ -1418,11 +1428,6 @@
               "resource": "support",
               "reason": "native_support_unavailable",
               "detail": "Support natif du volet care non disponible ; fiche provisoire établie sur les captures et compléments reçus."
-            },
-            {
-              "resource": "vocals",
-              "reason": "awaiting_user_mp3",
-              "detail": "Quatre scripts prêts ; MP3 encore attendus."
             }
           ],
           "partId": "p02",
@@ -1491,15 +1496,20 @@
             "care_p02_vocab_023",
             "care_p02_vocab_024"
           ],
-          "vocalIds": []
+          "vocalIds": [
+            "ethique_infirmiere_p02_vocal_01",
+            "ethique_infirmiere_p02_vocal_02",
+            "ethique_infirmiere_p02_vocal_03",
+            "ethique_infirmiere_p02_vocal_04"
+          ]
         }
       ],
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-20T14:24:42.387Z",
-        "bundleSha256": "cd8848399900f8efe353b369e550c004a52365a62fc8b3a7a6e1903c18770d68"
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "e288f2f05e1e9935c056784d84044f386c808c4b91e1f5897cc504a6b3ebdd80"
       }
     }
   ],
@@ -1899,6 +1909,286 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-19T20:15:00Z",
         "bundleSha256": "ad35c3f61bcb8dc39959bb30eaf080d47f079bf5932dd99f67216f35d536ca89"
+      }
+    },
+    {
+      "courseId": "calculs_doses_mathematiques",
+      "folderId": "1CO8lpP5MuXsKqosPfKgIWSnr-f3v6DI2",
+      "vocalIds": [
+        "calculs_doses_mathematiques_p01_vocal_01",
+        "calculs_doses_mathematiques_p01_vocal_02",
+        "calculs_doses_mathematiques_p01_vocal_03",
+        "calculs_doses_mathematiques_p01_vocal_04",
+        "calculs_doses_mathematiques_p01_vocal_05",
+        "calculs_doses_mathematiques_p01_vocal_06",
+        "calculs_doses_mathematiques_p01_vocal_07",
+        "calculs_doses_mathematiques_p01_vocal_08"
+      ],
+      "artifactSha256s": {
+        "1C0_3A9a5XvAWWzukNnapLXN4nVuVGVKO": "f684e66b56597748f1281f344ff1e25e63f4fac60d0829ff50d28afdbe6526f3",
+        "111SEAmMI1yp62oD_g-9R4SuJQOxzvi8U": "a86aad7f786e4f3c5911fa6011521fc00d0e5e8887fb67681f7360dc440ec712",
+        "17EDt23pl3n3EgkWoJY6m5lth5mUdfh4p": "aadc18f12415455815ee5755b5173fd7760aa94ca8be3c220a6a963fbb545489",
+        "1UOCZps8oXRqhEVHyctPXzMsmLk1vw2wL": "0217132951e89756565615fb12a67c88936488276e7d7c5422a6e6af2f11bc49",
+        "1wzAZ0ayvze2DIJGlnWfAHY7Z07Y8GTxV": "8c341dec696a52532feb355fb9a43f12806e781608b7f1ad0a92f84afb3b4641",
+        "17anPrI4RgqjafI9gBpo3bW1xnfvxaZ3_": "78bff443c21d478c5f9014ae2356490f6c4398e8eb01c7c1a12e95c08d6a93c0",
+        "1NdyqEB1-cE7GVSbp6DX1jJfvOkW3_gqn": "92d092b4646361666904068797e48c332d6334cf1b5849495173407d8fb1ca93",
+        "1zOOA59aRGBHvHWX7PxAKWErl4K-RDm19": "845e4af9b6e1a6a45fe69f66689e2a7194caeeb76159477d5587d834f1d5cb46"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "de83ce03b8a72350de9ca8eac0500561520e0c4878426689bc64ea329a99d6d7"
+      }
+    },
+    {
+      "courseId": "competences_psychosociales",
+      "folderId": "1l1Pfnru3REiYz9rr6oIk4O6Iw0575Rkw",
+      "vocalIds": [
+        "competences_psychosociales_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1i2rtDpJcka1qcaevE6-e703gq4jrnkzd": "2be3198b261e4844e7fe5a31b91bcb99fc70889d94e3f99de2959d3e641b5ddf"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "32bec9b914f4dab450ebd5087e16acae4802a826f91dff88d54a90f25a38f1e0"
+      }
+    },
+    {
+      "courseId": "diagnostic_bacteriologie",
+      "folderId": "1gq9VP_Z7OYwmQ_bvP9kmYQrbXLAe3Kbt",
+      "vocalIds": [
+        "diagnostic_bacteriologie_p01_vocal_01",
+        "diagnostic_bacteriologie_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1KAlVrTEXONbphM2wypgqnYBqFxoe598L": "f805a0b669f296b824f0679319732fbc0aa519f81e8fe77ae75116ca2ebda6f3",
+        "1MOWUvuafqQIq0SA2FrNt5L5KSnsPxFNR": "fa535198ac327ba6916ac98cfdc6d0d5a71c31c54def4af6f674c0c657b26482"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "91dc0ab6d3a6637ff6acf641d13769be09d302fb5810584c906b8fa310cfdd45"
+      }
+    },
+    {
+      "courseId": "douleur",
+      "folderId": "1HK6CLubwvij4-3nhwED4e6lIrFylgpO-",
+      "vocalIds": [
+        "douleur_p01_vocal_01",
+        "douleur_p01_vocal_02",
+        "douleur_p01_vocal_03"
+      ],
+      "artifactSha256s": {
+        "1xRZtw2O7TxT40tg31bfY56TjB4elzWQD": "b60b27543e9e7595b7e771aa72b3f0ec468d85256ae980a4eb6841a7d5656ea9",
+        "1R5Z-riGCWz7J1mBMiLHRiSkXd5B-W0rQ": "b52c06617ce08a55323865afd69e72eaf3ed5d66eb30be46b382ade765fb056d",
+        "14-Hc7LwKYVnc-Vr_ubwbkAai4fBNagdA": "0e45402af26ed2702cd882f4b000d283d559fc36fb9045bb7025f4df9cbb7c14"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "1c39f71fa7c809eff74707fcaace2e44573210adf2c5ff345621693924fcdf06"
+      }
+    },
+    {
+      "courseId": "epistemologie_savoirs",
+      "folderId": "1hHO621JLimNniZ1CdF-b2CFJLqYLizKm",
+      "vocalIds": [
+        "epistemologie_savoirs_p01_vocal_01",
+        "epistemologie_savoirs_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1xfxqxbhMPi1itkbLe4KZfdgMVpeIxu61": "93a2879e54c1e6a7485e81e89d12edb3ddf7f831f1a5fde845534a22fa19e361",
+        "1Bg3HFExA43bAyOeweaRBxWVvquV_zwTr": "7885d67e01debbc3e1c1e6996a643505bbc6a46eef93ed3e6cb53a7b4f82f891"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "37050a1958fcda8819b3a00d70ec947ced3539c20eb5c449c4d52196bee8a2c5"
+      }
+    },
+    {
+      "courseId": "ethique_infirmiere",
+      "folderId": "1TXK4vkMHC17hT6FDJeeDJ0sILTqiquOl",
+      "vocalIds": [
+        "ethique_infirmiere_p01_vocal_01",
+        "ethique_infirmiere_p02_vocal_01",
+        "ethique_infirmiere_p02_vocal_02",
+        "ethique_infirmiere_p02_vocal_03",
+        "ethique_infirmiere_p02_vocal_04"
+      ],
+      "artifactSha256s": {
+        "1zEztriTfMDv-V7AtlzJwvwUCjfs8lvNR": "2c440dedb6b6c2771b1f82149c431b9f088f839acf8aa96d5bb441104fbb2875",
+        "1j6s25fCrlv0KpEIXBWYwQdcs25qq_9IK": "f02ecf000d23559c9ce94ac6f3cabab89254eaf9c3d0991af9c386f925a72a39",
+        "166mkiuNDIlT0FuS2WzHeHR98CGteYhRM": "c057f114feeabca3aa982b193cdc9c47b12c4b08b98da35921e91711f17efa32",
+        "1JnfXoMJEQ6cCMRdRxaxk5i6jcxvIPFwf": "3bbacc3b3b1eadd7a1fbe0b2f2ead7eb7bffa05ce2649388c7172da11fba62fa",
+        "1mjWw9pHPEBWvqeWhlrRk7Rw5xGjswHbF": "1f09a3ffa96cab06b120a10ca88102608a006fee395bee0995287ebb8de894e1"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "d4bc8d1a0fafe448857b2863331d64cc01d3085d98b37299a48d9f43d2b19ec5"
+      }
+    },
+    {
+      "courseId": "genetique",
+      "folderId": "1z8fF8OMjsFh3CY3PYvEdGYcz7G1WHebq",
+      "vocalIds": [
+        "genetique_p01_vocal_01",
+        "genetique_p01_vocal_02",
+        "genetique_p01_vocal_03"
+      ],
+      "artifactSha256s": {
+        "1UbGV5qlAk2ksmn_I1-NZbB3ve9bCgRvO": "a2f001244836b212d0808dd4f8e68a097175dcfa9f5eada31341ed78f2111029",
+        "1hEyr2UxinpqkpqumVJiptWvtnh3DvL2x": "5b6043b07dc06452ced62855bda1311579a52738927a62b3e7aec5cd001f8a52",
+        "1pVkrZfSTHuVTwkU2hRUvrbMilCuw7QIm": "7e66189c6e22f2a45dc3311ca4c53ff26cdcaa19be99d52695a67ed58150ab6c"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "0f3482fb64434ca808d11b575b78f4af90fdd10294c5736283be3751f3b090a0"
+      }
+    },
+    {
+      "courseId": "grands_brules",
+      "folderId": "1U5yDtAVVoNFQwo5TFHbWWJXDuYnQjvgx",
+      "vocalIds": [
+        "grands_brules_p01_vocal_01",
+        "grands_brules_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1UQpomzRlAa6zIjcUGcqrqg2m0GGTkNjL": "0fc1acca2beed567d53bc180d25071a61d92df25c474829ee823fd381b9db57a",
+        "1cOBwFJGHEJAWACn1WiTb370gKCllFErT": "037608fcf86be88039408f7f77faf34db9cd1220f5c483ca24ea1f63b4ef9f73"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "3917cb267c9355be6c80984469aead182c46b49324f8f4cc7b28ed19d4b10059"
+      }
+    },
+    {
+      "courseId": "histoire_profession_infirmiere",
+      "folderId": "11a2CBHLT02TZczrvRwscgQoxZtwmvlLO",
+      "vocalIds": [
+        "histoire_profession_infirmiere_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "10GxKA52RVXJfoj-X9m2hoDEaxsBiviYE": "bd1f56db07543def63c51d297618d31e262b5a34bce5406e4850da5ee7317a98"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "a253b695d54340567566873fa108d779e9cdc603d068ca93e321d6d3cfffd6dd"
+      }
+    },
+    {
+      "courseId": "introduction_droit",
+      "folderId": "1Ns2LBS3m4OVPQO2O-2UHFd6kbZyGVznw",
+      "vocalIds": [
+        "introduction_droit_p01_vocal_01",
+        "introduction_droit_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "18WD0_PE4kJRGSwUrM5qXm2YrehpDFrF1": "ecc9fe2d83020a166aa848fd71676b8ba4e02a043642712259a8efc559cb31a3",
+        "1l3lEge2GCebbqIH9RMWH2-AYVdMJPNec": "d14c49bfd740133cf948a1cf600a7cebbfca385f29ed102235ffab9a30630b21"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "65d26d3d05dda6d69fea500b4394d0e5bb93e3ad2627d9418aa52782a5e2526d"
+      }
+    },
+    {
+      "courseId": "methodes_travail_reussite",
+      "folderId": "1MzB9dMIuNV5Ftn9LbXvGzdpzLNkdyW0N",
+      "vocalIds": [
+        "methodes_travail_reussite_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1jAwninLMTmw0DvmqyC5MNh17-EEyIyGc": "16f6c6a302031e69b1749098f7e63e194b1851380d4f248299778d9bb688cd2a"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "4fbe1c62c605df031f04b9e7595ec727512531650fc70908a657895c158ebf8e"
+      }
+    },
+    {
+      "courseId": "parametres_vitaux",
+      "folderId": "1zaaKYsHU78khyZB5olGNXW_UGEMuA7Mx",
+      "vocalIds": [
+        "parametres_vitaux_p01_vocal_01",
+        "parametres_vitaux_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1vPZyOhmN3t0rPnGekzIBGD1D310mCO7L": "e2cb6f4251f87a37ad673466b3b7a85f2b366143888e5fcd8a592feb0f341ea8",
+        "1f2f2Mf1Fisv54uSwuF3q_t04kfdHzsWB": "7bd8b375eba0a3444317dd276452e1458e6c53ab0979b26232bd2c7b179ab652"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "a76d2ed2267ca3ae2d41d4e49b797c93b3ede05723c3c87e50515cee3ca95f3b"
+      }
+    },
+    {
+      "courseId": "psychologie_sante",
+      "folderId": "1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf",
+      "vocalIds": [
+        "psychologie_sante_p01_vocal_01",
+        "psychologie_sante_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
+        "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "0f83f224579f427df958869af584002c616fe3339346345e08b23fa5f6904b08"
+      }
+    },
+    {
+      "courseId": "vaccination_prs",
+      "folderId": "1-pilg80C6Yx_hRExkxPo8o2pd3oCJqIW",
+      "vocalIds": [
+        "vaccination_prs_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1Pcbg_IQ4MdI9vU_PdW_8HzTBj0eviIYI": "bbe57cb841c0d2e9eea573df8bb16d3ee0fb980fcccc8418b573a13f704b4364"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-20T20:46:30.855Z",
+        "bundleSha256": "c58fdee8a3252f792229bbfab9528a1878d1089a9c386f6394776d04b037f036"
       }
     }
   ]
