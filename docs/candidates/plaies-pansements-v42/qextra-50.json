@@ -1,0 +1,1575 @@
+[
+  {
+    "id": "plaies_p1_001",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Quel message central guide la prise en charge d’une plaie chronique ?",
+    "choices": [
+      "Le choix du pansement détermine le pronostic de cicatrisation avant la prise en compte de l'étiologie.",
+      "L'analyse de l'aspect local dispense du bilan général lorsque le lit de la plaie bourgeonne.",
+      "Le suivi photographique permet de poser à lui seul un diagnostic sur la cause de la plaie.",
+      "La plaie est souvent le symptôme d’un trouble sous-jacent.",
+      "La recherche de la cause peut attendre plusieurs essais successifs de pansements."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le cours insiste sur le caractère symptomatique de la plaie : l’étiologie et le terrain doivent être évalués et pris en charge. Pour comprendre les distracteurs : Le soin doit intégrer la cause et le terrain. Le pansement, la photo ou une série d’essais ne remplacent pas le bilan étiologique.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Pourquoi rechercher la cause d’une plaie chronique ?",
+        "answers": [
+          "La plaie est souvent le symptôme d’un trouble sous-jacent."
+        ],
+        "explanation": "Traiter seulement la surface de la plaie ne corrige pas le trouble causal ni le terrain.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_002",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Selon le seuil pédagogique donné en cours, une plaie est dite chronique lorsqu’elle n’est pas cicatrisée au bout de :",
+    "choices": [
+      "48 heures",
+      "7 jours",
+      "14 jours",
+      "5 semaines",
+      "6 mois"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le support définit la plaie chronique par l’absence de cicatrisation à 5 semaines, tout en présentant ce seuil comme un repère.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_003",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Fondamentaux",
+    "difficulty": "hard",
+    "question": "Concernant l’évaluation infirmière initiale d’une plaie, quelles propositions sont exactes ?",
+    "choices": [
+      "Elle exclut les facteurs psychosociaux.",
+      "Elle se limite au choix d’une référence commerciale de pansement.",
+      "Elle peut inclure le statut vasculaire et vaccinal.",
+      "Elle s’intéresse aussi à l’état général et aux comorbidités.",
+      "Elle ne nécessite aucune transmission."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La démarche de soins associe bilan local et analyse globale, dont terrain vasculaire, vaccinal et facteurs de retard.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_004",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Dans les exceptions au champ autonome des plaies chroniques citées dans le support, on retrouve :",
+    "choices": [
+      "Un ulcère veineux simple.",
+      "Une escarre sans complication.",
+      "Une dermabrasion superficielle du genou.",
+      "Une plaie de radiothérapie.",
+      "Une plaie du pied diabétique."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le support cite explicitement le pied diabétique et les plaies liées aux soins oncologiques/radiothérapie parmi les exceptions.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_005",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Fondamentaux",
+    "difficulty": "hard",
+    "question": "Parmi les plaies aiguës suivantes, lesquelles figurent dans les exceptions au champ autonome citées par l’intervenante ?",
+    "choices": [
+      "Plaie post-chirurgicale.",
+      "Plaie balistique.",
+      "Dermabrasion superficielle du genou.",
+      "Plaie du visage.",
+      "Égratignure superficielle de l’avant-bras."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les plaies chirurgicales, balistiques et du visage relèvent des exceptions citées ; les égratignures superficielles simples ne sont pas dans cette liste.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_006",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "easy",
+    "question": "Quelle succession représente les trois phases cliniques enseignées ?",
+    "choices": [
+      "Bourgeonnement → détersion → épidermisation.",
+      "Détersion → épidermisation → bourgeonnement.",
+      "Épidermisation → détersion → bourgeonnement.",
+      "Détersion → bourgeonnement → épidermisation.",
+      "Épidermisation → bourgeonnement → détersion."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le support présente les trois phases dans l’ordre : détersion, bourgeonnement, épidermisation. Pour comprendre les distracteurs : Seul l’ordre détersion puis bourgeonnement puis épidermisation correspond aux trois phases cliniques enseignées.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Dans quel ordre se succèdent détersion, bourgeonnement et épidermisation ?",
+        "answers": [
+          "Détersion → bourgeonnement → épidermisation."
+        ],
+        "explanation": "Ces phases cliniques peuvent coexister dans différentes zones d’une même plaie.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_007",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "medium",
+    "question": "Au stade du bourgeonnement, quelle(s) affirmation(s) est/sont exacte(s) ?",
+    "choices": [
+      "Il s’agit principalement de reformer le derme et les vaisseaux.",
+      "Il faut systématiquement assécher au maximum.",
+      "La nécrose noire indique un bourgeonnement normal.",
+      "L’objectif est aussi de combler progressivement la perte de substance.",
+      "L’épiderme est toujours entièrement reconstitué."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le bourgeonnement correspond à la reconstitution tissulaire vascularisée et au comblement ; le pansement conserve une humidité adéquate.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quels tissus se reconstituent pendant le bourgeonnement d’une plaie ?",
+        "answers": [
+          "Il s’agit principalement de reformer le derme et les vaisseaux."
+        ],
+        "explanation": "Le bourgeonnement correspond à la reconstitution tissulaire vascularisée et au comblement ; le pansement conserve une humidité adéquate.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_008",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "easy",
+    "question": "Pour une plaie en épidermisation, quelle priorité est indiquée ?",
+    "choices": [
+      "Frotter le film cutané à chaque soin.",
+      "Déterger systématiquement au bistouri.",
+      "Préserver le film cutané fragile et les berges.",
+      "Multiplier les retraits adhésifs.",
+      "Favoriser le dessèchement complet."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’épiderme néoformé est fin et fragile : les soins visent avant tout protection et moindre traumatisme.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Que faut-il protéger lors de l’épidermisation d’une plaie ?",
+        "answers": [
+          "Préserver le film cutané fragile et les berges."
+        ],
+        "explanation": "L’épiderme néoformé est fin et fragile : les soins visent avant tout protection et moindre traumatisme.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_009",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "medium",
+    "question": "Sur les dépôts rencontrés dans une plaie, quelles associations correspondent au support ?",
+    "choices": [
+      "Squames : coagulation sèche de l'exsudat sur le pourtour d'une plaie.",
+      "Nécrose : tissu dévitalisé généralement adhérent.",
+      "Nécrose sèche : dépôt de fibrine non adhérent issu d'exsudats et de débris cellulaires.",
+      "Croûtes : lamelles cornées issues du renouvellement cutané normal.",
+      "Fibrine : dépôt provenant des exsudats et débris cellulaires."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le diaporama décrit la nécrose comme dévitalisée et adhérente, la fibrine comme dépôt d’exsudat et de débris. Pour comprendre les distracteurs : Les squames sont des lamelles cornées ; la croûte correspond à une coagulation sèche d’exsudats ; la nécrose n’est pas de la fibrine non adhérente.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que la nécrose d’une plaie ?",
+        "answers": [
+          "Nécrose : tissu dévitalisé généralement adhérent."
+        ],
+        "explanation": "Les tissus dévitalisés et les dépôts peuvent entraver la progression de la cicatrisation.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "À quoi correspond un dépôt de fibrine dans une plaie ?",
+        "answers": [
+          "Fibrine : dépôt provenant des exsudats et débris cellulaires."
+        ],
+        "explanation": "Les tissus dévitalisés et les dépôts peuvent entraver la progression de la cicatrisation.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_010",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "medium",
+    "question": "Que signifie l’apparition d’un sillon séparant une nécrose du tissu vivant selon l’explication orale ?",
+    "choices": [
+      "Un signe possible de séparation naturelle des tissus morts.",
+      "Une preuve suffisante d’infection.",
+      "Une guérison complète immédiate.",
+      "Une indication automatique à arracher toute nécrose.",
+      "L’absence totale de besoin de suivi."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’enseignante présente le sillon comme un signe clinique de séparation physiologique à observer et à tracer.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Que peut évoquer un sillon entre une nécrose et les tissus vivants ?",
+        "answers": [
+          "Un signe possible de séparation naturelle des tissus morts."
+        ],
+        "explanation": "Ce constat doit être suivi et tracé ; il ne justifie pas d’arracher la nécrose.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_011",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Cicatrisation",
+    "difficulty": "hard",
+    "question": "Concernant la détersion instrumentale, quelles propositions sont fidèles au cours ?",
+    "choices": [
+      "Elle peut utiliser une curette ou une pince.",
+      "Elle est nécessaire sur toute plaie ischémique.",
+      "Elle engage la responsabilité du professionnel et de l’étudiant.",
+      "Elle ne nécessite jamais de réévaluation du statut vasculaire.",
+      "Elle peut utiliser un bistouri dans les limites des compétences."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Pince, curette, bistouri ou ciseaux sont cités ; la responsabilité et le niveau de formation conditionnent le geste. Une artériopathie impose la prudence.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quels instruments peuvent servir à une détersion instrumentale dans les limites des compétences ?",
+        "answers": [
+          "Elle peut utiliser une curette ou une pince."
+        ],
+        "explanation": "Le geste exige des compétences adaptées et une évaluation clinique, notamment vasculaire.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_012",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Examen clinique",
+    "difficulty": "easy",
+    "question": "Les « 4 sens » utilisés pour examiner un patient et sa plaie sont :",
+    "choices": [
+      "Lire, compter, calculer, mesurer.",
+      "Voir, palper, sentir et écouter.",
+      "Mesurer uniquement la température.",
+      "Tester uniquement la douleur.",
+      "Photographier, puis choisir un pansement."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "L’intervenante cite regarder, palper, sentir et écouter ; elle rappelle l’intérêt d’interroger le patient.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_013",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Examen clinique",
+    "difficulty": "medium",
+    "question": "Quelles données sont pertinentes à tracer pour suivre l’évolution d’une plaie ?",
+    "choices": [
+      "Dimensions et profondeur.",
+      "La douleur peut être notée uniquement lors du bilan initial, avant les réfections.",
+      "Un cliché daté remplace les mesures des dimensions et de la profondeur de la plaie.",
+      "La couleur du lit de la plaie suffit à apprécier son évolution sans évaluer les berges.",
+      "Quantité d’exsudats et aspect des berges."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "La surveillance documente les dimensions, le lit, l’exsudat, les berges, les signes d’alerte et la douleur. Pour comprendre les distracteurs : La traçabilité repose sur plusieurs éléments : dimensions, profondeur, exsudat, douleur et berges. Ni photographie ni couleur seule ne suffisent.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quelles mesures de taille faut-il tracer pour suivre une plaie ?",
+        "answers": [
+          "Dimensions et profondeur."
+        ],
+        "explanation": "Comparer ces mesures dans le temps aide à objectiver l’évolution.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_014",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "easy",
+    "question": "Une escarre est avant tout :",
+    "choices": [
+      "Une plaie principalement due à une hypertension veineuse du membre inférieur.",
+      "Une plaie neuropathique du pied favorisée par l'absence de perception des traumatismes.",
+      "Une lésion liée à une hypoperfusion artérielle, sans compression prolongée.",
+      "Une plaie de pression sur les tissus.",
+      "Une désunion cutanée sur une incision opératoire."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le cours définit l’escarre par la compression des tissus entre relief osseux et surface d’appui. Pour comprendre les distracteurs : L’hypertension veineuse, l’ischémie artérielle, le traumatisme neuropathique et une désunion postopératoire désignent d’autres mécanismes.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel mécanisme provoque une escarre ?",
+        "answers": [
+          "Une plaie de pression sur les tissus."
+        ],
+        "explanation": "La pression et le cisaillement réduisent la tolérance des tissus sur les zones d’appui.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_015",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "medium",
+    "question": "Quels facteurs favorisent l’apparition d’une escarre selon le support ?",
+    "choices": [
+      "Mobilisation régulière qui supprime l’appui.",
+      "Suppression précoce des pressions.",
+      "Macération.",
+      "Pression prolongée.",
+      "Cisaillement."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "La pression, le cisaillement et l’humidité/macération sont les facteurs favorisants cités ; la décharge constitue une mesure préventive et curative.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel facteur mécanique favorise une escarre lorsque l’appui dure trop longtemps ?",
+        "answers": [
+          "Pression prolongée."
+        ],
+        "explanation": "La prévention associe évaluation, changements de position et réduction des contraintes.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quel facteur mécanique déforme les tissus lors d’un glissement sur un appui ?",
+        "answers": [
+          "Cisaillement."
+        ],
+        "explanation": "La prévention associe évaluation, changements de position et réduction des contraintes.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_016",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "easy",
+    "question": "Devant une rougeur persistante sur un point d’appui, quelle action est prioritaire ?",
+    "choices": [
+      "Masser fortement la rougeur.",
+      "Différer le repositionnement à la relève.",
+      "Supprimer immédiatement l’appui causal.",
+      "Attendre une nécrose pour agir.",
+      "Ajouter systématiquement un antibiotique."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Dès le stade 1, l’enseignante insiste sur la décharge immédiate de la zone.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quelle action est prioritaire devant une rougeur persistante sur un point d’appui ?",
+        "answers": [
+          "Supprimer immédiatement l’appui causal."
+        ],
+        "explanation": "La décharge réduit la contrainte responsable de la lésion.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_017",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "medium",
+    "question": "Quel signe caractérise une escarre de stade 1 ?",
+    "choices": [
+      "Érythème non blanchissable sur peau intacte.",
+      "Une perte cutanée partielle laissant apparaître le derme.",
+      "Une perte cutanée complète s'étendant à l'hypoderme.",
+      "Une plaie profonde impliquant le muscle ou le tendon.",
+      "Une phlyctène séreuse accompagnant une perte de l'épiderme."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Stade 1 : érythème non blanchissable sur peau intacte. Décharger rapidement la zone. La justification Q17 existe sur la page 14 du PDF historique ; elle n’était pas correctement rattachée dans l’extraction de texte. Pour comprendre les distracteurs : La peau intacte caractérise le stade 1 ; une perte cutanée avec derme exposé correspond au stade 2, l’hypoderme au stade 3, et les structures profondes au stade 4.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel signe caractérise une escarre de stade 1 ?",
+        "answers": [
+          "Érythème non blanchissable sur peau intacte."
+        ],
+        "explanation": "Le stade 1 correspond à un érythème non blanchissable sur une peau intacte. La décharge doit être immédiate pour limiter la poursuite de la lésion.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_018",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "medium",
+    "question": "Quelle proposition décrit un stade 2 de l’escarre ?",
+    "choices": [
+      "Plaie profonde pouvant impliquer un tendon ou un muscle.",
+      "Perte cutanée complète avec exposition du tissu graisseux sous-cutané.",
+      "Perte cutanée partielle avec derme exposé ; une phlyctène séreuse est possible.",
+      "Rougeur persistante non blanchissable, sur une peau demeurée intacte.",
+      "Une rougeur réversible après levée de l’appui, sur peau intacte."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Cours IFSI (diapositive 25) : le stade 2 touche l'épiderme et le derme et peut s'accompagner d'une phlyctène séreuse ou hémorragique. Complément EPUAP/NPIAP : une perte cutanée partielle avec derme exposé et une phlyctène séreuse caractérisent le stade 2 ; une phlyctène franchement sanglante ou une coloration pourpre peut évoquer une lésion tissulaire profonde et doit faire réévaluer la classification. Cela ne signifie pas que toute phlyctène hémorragique est automatiquement une lésion profonde. Le distracteur E décrit une rougeur réversible sur peau intacte, et non une perte cutanée partielle. Le distracteur D évoque plutôt une rougeur non blanchissable de stade 1. Sources : cours IFSI, diapo 25 ; EPUAP, classification des escarres ; NPIAP, révision 2016. La formulation externe n’est pas une citation du support IFSI.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quelle atteinte cutanée caractérise une escarre de stade 2 ?",
+        "answers": [
+          "Perte cutanée partielle avec derme exposé ; une phlyctène séreuse est possible."
+        ],
+        "explanation": "Le stade 2 est une perte cutanée partielle avec derme exposé. Une phlyctène séreuse est possible ; une phlyctène sanglante ou une coloration pourpre peut évoquer une lésion tissulaire profonde.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_019",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "medium",
+    "question": "Les caractéristiques correspondant aux stades profonds de l’escarre sont :",
+    "choices": [
+      "Stade 4 : rougeur seule.",
+      "Le stade est déterminé uniquement par la couleur noire.",
+      "Stade 3 : peau toujours intacte.",
+      "Stade 3 : atteinte de l’hypoderme.",
+      "Stade 4 : atteinte possible du muscle, tendon ou os."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le stade reflète la profondeur : hypoderme au stade 3, structures profondes au stade 4. Le paragraphe de justification existe sur la page 14, mais son en-tête Q19 est absent. Ajouter uniquement cet en-tête au document historique.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Jusqu’à quel tissu s’étend une escarre de stade 3 ?",
+        "answers": [
+          "Stade 3 : atteinte de l’hypoderme."
+        ],
+        "explanation": "La profondeur oriente la catégorie ; des tissus dévitalisés peuvent masquer cette profondeur.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quelles structures peuvent être atteintes dans une escarre de stade 4 ?",
+        "answers": [
+          "Stade 4 : atteinte possible du muscle, tendon ou os."
+        ],
+        "explanation": "La profondeur oriente la catégorie ; des tissus dévitalisés peuvent masquer cette profondeur.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_020",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "hard",
+    "question": "Concernant une escarre débutante, quelles propositions sont exactes selon le cours et les recommandations de prévention ?",
+    "choices": [
+      "Le pansement corrige à lui seul la compression mécanique.",
+      "Une rougeur d’appui constituée ne doit pas être massée.",
+      "La priorité est de mobiliser/repositionner le patient.",
+      "L’effleurage d’une rougeur persistante accélère la guérison.",
+      "Un pansement protecteur peut parfois se discuter en cas d’incontinence et de macération."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "C et E — Support IFSI : la décharge immédiate est enseignée (diapo 26) ; la protection cutanée peut être discutée au stade 1 dans un contexte d'appui, de cisaillement et de macération/incontinence (diapo 60), sans remplacer la décharge et sans rendre le pansement systématique. B et D — Recommandation NICE CG179, §1.1.10 : ne pas masser ni frotter la peau pour prévenir les escarres. A est faux : le pansement ne corrige pas, à lui seul, la compression mécanique. La référence aux « commentaires oraux » du QCM antérieur est supprimée car elle n'a pas été vérifiée. Sources : cours IFSI, diapos 26 et 60 ; NICE CG179, recommandation 1.1.10 (massage/frottement). Aucune transcription orale du cours n’a été trouvée.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Faut-il masser une rougeur liée à un appui prolongé ?",
+        "answers": [
+          "Une rougeur d’appui constituée ne doit pas être massée."
+        ],
+        "explanation": "Le massage peut ajouter un traumatisme aux tissus déjà lésés.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_021",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Escarres",
+    "difficulty": "medium",
+    "question": "Quel professionnel le diaporama associe-t-il explicitement aux solutions de décharge d'une escarre ?",
+    "choices": [
+      "Le diététicien, pour évaluer les apports alimentaires.",
+      "Un ergothérapeute.",
+      "Le psychologue, pour accompagner la souffrance psychique.",
+      "Le biologiste médical, pour analyser les prélèvements.",
+      "L'assistant social, pour organiser les aides à domicile."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "L’ergothérapeute, le podo-orthésiste et d’autres professionnels contribuent à la décharge et à l’autonomie. Pour comprendre les distracteurs : L’ergothérapeute est cité dans le support pour contribuer à la décharge. Les autres professionnels nommés ont des rôles utiles, mais différents de cette fonction précise.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_022",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Ulcères vasculaires",
+    "difficulty": "easy",
+    "question": "Quel mécanisme est au cœur de l’ulcère veineux ?",
+    "choices": [
+      "Défaut de retour veineux, stase et œdème.",
+      "Défaut de perfusion artérielle, hypoxie et nécrose ischémique.",
+      "Traumatismes répétés sur un pied présentant une perte de sensibilité.",
+      "Compression prolongée des tissus entre un relief osseux et un plan dur.",
+      "Lésion thermique responsable d'une destruction des couches cutanées."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le cours associe altération valvulaire/pompe du mollet, surcharge veineuse, œdème de stase et plaie. Pour comprendre les distracteurs : Ischémie artérielle, neuropathie, pression prolongée et brûlure relèvent d’autres causes. L’ulcère veineux dépend du retour veineux, de la stase et de l’œdème.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel mécanisme favorise la formation d’un ulcère veineux ?",
+        "answers": [
+          "Défaut de retour veineux, stase et œdème."
+        ],
+        "explanation": "La stase veineuse et l’œdème participent à l’atteinte cutanée.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_023",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Ulcères vasculaires",
+    "difficulty": "medium",
+    "question": "Quels signes orientent vers un ulcère veineux ?",
+    "choices": [
+      "Absence systématique d’œdème.",
+      "Plaie plutôt superficielle et exsudative.",
+      "Douleur nocturne avec abolition des pouls comme seul critère majeur.",
+      "Localisation péri-malléolaire ou au tiers inférieur de la jambe.",
+      "Fond toujours sec et noir."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Les caractéristiques décrites sont la localisation basse, l’exsudat et les signes d’insuffisance veineuse.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Où se localise habituellement un ulcère veineux de jambe ?",
+        "answers": [
+          "Localisation péri-malléolaire ou au tiers inférieur de la jambe."
+        ],
+        "explanation": "La localisation oriente mais ne remplace pas l’évaluation vasculaire.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_024",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Ulcères vasculaires",
+    "difficulty": "medium",
+    "question": "Quels éléments évoquent plutôt un ulcère artériel ?",
+    "choices": [
+      "Plaie creusante, souvent « à l’emporte-pièce ».",
+      "Douleur, antécédents vasculaires ou pouls diminués.",
+      "Dermite ocre comme signe artériel spécifique.",
+      "Plaie toujours indolore.",
+      "Écoulement abondant indispensable."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’ulcère artériel est ischémique, souvent creusant et douloureux ; interrogatoire et examen vasculaire sont essentiels.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel aspect du fond de plaie peut évoquer un ulcère artériel ?",
+        "answers": [
+          "Plaie creusante, souvent « à l’emporte-pièce »."
+        ],
+        "explanation": "L’ischémie diminue les apports nécessaires à la réparation tissulaire.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_025",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Ulcères vasculaires",
+    "difficulty": "easy",
+    "question": "L’IPS correspond au rapport :",
+    "choices": [
+      "Pression systolique humérale / pression systolique à la cheville.",
+      "Pression systolique à la cheville / pression systolique humérale.",
+      "Pression diastolique à la cheville / pression diastolique humérale.",
+      "Pression systolique à la cheville / pression diastolique humérale.",
+      "Pression systolique poplitée / pression systolique humérale."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le support définit l’indice de pression systolique par le rapport cheville / bras. Pour comprendre les distracteurs : Le rapport cheville / bras utilise les deux pressions systoliques. Inverser le rapport ou utiliser la diastolique donne une formule incorrecte.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Comment calcule-t-on l’indice de pression systolique cheville-bras ?",
+        "answers": [
+          "Pression systolique à la cheville / pression systolique humérale."
+        ],
+        "explanation": "On divise la pression systolique mesurée à la cheville par celle mesurée au bras.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_026",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Ulcères vasculaires",
+    "difficulty": "hard",
+    "question": "Pour l’IPS, quelles propositions sont indiquées dans le cours ?",
+    "choices": [
+      "Plage de référence normale de 0,9 à 1,3.",
+      "Il aide à orienter le diagnostic d’AOMI.",
+      "Il est toujours parfaitement fiable chez les personnes diabétiques.",
+      "Il suffit à imposer une compression maximale sans autre évaluation.",
+      "Une médiacalcose peut fausser sa fiabilité."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Le cours donne 0,9–1,3, l’intérêt pour AOMI/compression et la limite en cas de médiacalcose chez le sujet âgé/diabétique.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel phénomène artériel peut fausser l’indice de pression systolique cheville-bras ?",
+        "answers": [
+          "Une médiacalcose peut fausser sa fiabilité."
+        ],
+        "explanation": "Les artères calcifiées peuvent être peu compressibles et donner une mesure artificiellement élevée.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_027",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Brûlures",
+    "difficulty": "medium",
+    "question": "Quelles manifestations caractérisent une brûlure du 2e degré superficiel ?",
+    "choices": [
+      "Peau intacte simplement rouge sans cloque.",
+      "Tendon exposé obligatoirement.",
+      "Plaie rouge et douloureuse.",
+      "Destruction complète de toutes les couches avec insensibilité.",
+      "Cloques à liquide clair."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "La brûlure du 2e superficiel associe des phlyctènes claires à une surface rouge et douloureuse.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel aspect des cloques peut accompagner une brûlure du deuxième degré superficiel ?",
+        "answers": [
+          "Cloques à liquide clair."
+        ],
+        "explanation": "Le deuxième degré superficiel atteint partiellement le derme et conserve une sensibilité douloureuse.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_028",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Brûlures",
+    "difficulty": "medium",
+    "question": "Dans le champ limité de brûlures autonomes décrit dans le cours, quelle condition est requise ?",
+    "choices": [
+      "Brûlure du 2e degré superficiel de 2 % de surface corporelle, hors zone à risque.",
+      "Brûlure superficielle ≤1 % de surface corporelle hors zones à risque, sujet de plus de 3 ans.",
+      "Brûlure du 1er degré limitée au visage chez un adulte.",
+      "Brûlure du 2e degré profond de 0,5 % de surface corporelle, hors zone à risque.",
+      "Brûlure du 2e degré superficiel de 0,5 % chez un enfant de 2 ans."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le support limite ce champ aux brûlures 1er/2e superficiel ≤1 %, hors zones à risque, chez adulte/enfant de plus de 3 ans. Pour comprendre les distracteurs : Dans le champ limité décrit au cours : 1er ou 2e degré superficiel, surface ≤ 1 %, âge supérieur à trois ans et hors zones à risque.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_029",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Brûlures",
+    "difficulty": "easy",
+    "question": "Une brûlure du 3e degré est présentée comme :",
+    "choices": [
+      "Rouge et toujours très douloureuse.",
+      "Brune, blanche ou noire, souvent indolore par destruction nerveuse.",
+      "Toujours limitée à l’épiderme.",
+      "Avec disparition immédiate sans cicatrice.",
+      "Identique à un simple coup de soleil."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le 3e degré détruit épiderme et derme, peut être indolore et nécessite un suivi spécialisé.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel aspect et quelle sensibilité peut présenter une brûlure du troisième degré ?",
+        "answers": [
+          "Brune, blanche ou noire, souvent indolore par destruction nerveuse."
+        ],
+        "explanation": "La destruction nerveuse peut réduire la sensibilité ; l’absence de douleur ne signifie donc pas une brûlure bénigne.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_030",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Pied diabétique",
+    "difficulty": "easy",
+    "question": "Pourquoi la neuropathie du patient diabétique favorise-t-elle une plaie du pied ?",
+    "choices": [
+      "Elle provoque une douleur précoce qui conduit à interrompre l'appui répété.",
+      "Elle préserve la sensibilité protectrice malgré la répétition des traumatismes.",
+      "La baisse de sensibilité réduit les pressions plantaires subies lors de la marche.",
+      "Elle favorise une réaction protectrice immédiate à chaque microtraumatisme.",
+      "Elle empêche de ressentir certains traumatismes et maintient l’appui."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Une sensibilité réduite laisse persister les pressions/traumatismes ; l’artériopathie peut en outre retarder la réparation. Pour comprendre les distracteurs : La neuropathie altère la sensibilité protectrice : une pression répétée peut ne pas être ressentie et l’appui peut être poursuivi.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Comment la neuropathie diabétique favorise-t-elle une plaie du pied ?",
+        "answers": [
+          "Elle empêche de ressentir certains traumatismes et maintient l’appui."
+        ],
+        "explanation": "Une sensibilité réduite laisse persister les pressions/traumatismes ; l’artériopathie peut en outre retarder la réparation.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_031",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Pied diabétique",
+    "difficulty": "medium",
+    "question": "Dans le mémo MIDAS, quels éléments sont correctement identifiés ?",
+    "choices": [
+      "M : Métabolique, notamment équilibre glycémique.",
+      "I : Insuffisance veineuse évaluée au niveau des membres inférieurs.",
+      "A : Artériopathie associée.",
+      "D : Décharge respectée.",
+      "S : Surveillance du taux d'hémoglobine glyquée."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "MIDAS = Métabolique, Infection, Décharge, Artériopathie et Soins locaux. Pour comprendre les distracteurs : MIDAS = Métabolique, Infection, Décharge, Artériopathie, Soins locaux. « Insuffisance veineuse » et « Surveillance de l’HbA1c » ne sont pas les expansions officielles de ce moyen mnémotechnique.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Que signifie le M dans le mémo de prise en charge du pied diabétique MIDAS ?",
+        "answers": [
+          "M : Métabolique, notamment équilibre glycémique."
+        ],
+        "explanation": "MIDAS signifie Métabolique, Infection, Décharge, Artériopathie et Soins locaux.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_032",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Pied diabétique",
+    "difficulty": "hard",
+    "question": "Selon le diaporama, quel délai théorique est avancé pour obtenir un avis spécialisé sur toute plaie du pied diabétique ?",
+    "choices": [
+      "6 mois",
+      "30 jours",
+      "48 heures",
+      "14 jours",
+      "Seulement après amputation"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’intervenante indique en théorie un avis spécialisé dans les 48 h en raison des risques infectieux et fonctionnels.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_033",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Pied diabétique",
+    "difficulty": "hard",
+    "question": "Quels principes de soins sont soulignés pour le pied diabétique ?",
+    "choices": [
+      "Décharger précocement la zone atteinte.",
+      "Ignorer une hyperkératose témoin d’appui.",
+      "Déterger vigoureusement toute lésion ischémique.",
+      "Privilégier l’hygiène et le séchage minutieux.",
+      "Vérifier la présence éventuelle d’une artériopathie."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Décharge, bilan artériel, hygiène et séchage sont essentiels ; une artériopathie impose une grande prudence vis-à-vis de la détersion.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quelle mesure mécanique est prioritaire pour protéger une plaie du pied diabétique ?",
+        "answers": [
+          "Décharger précocement la zone atteinte."
+        ],
+        "explanation": "L’appui entretient le traumatisme ; il faut aussi rechercher une atteinte artérielle ou une infection.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_034",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Postopératoire",
+    "difficulty": "easy",
+    "question": "Le suivi d’une plaie post-opératoire s’inscrit dans :",
+    "choices": [
+      "Une compression imposée sur toute cicatrice.",
+      "Une automédication antiseptique systématique.",
+      "L’absence de surveillance.",
+      "La suppression de toute hygiène.",
+      "Une prescription et le protocole du service, avec responsabilité du chirurgien."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Le support rappelle le rôle sur prescription médicale et le respect des procédures institutionnelles.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_035",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Postopératoire",
+    "difficulty": "medium",
+    "question": "Quelles observations doivent faire envisager une alerte sur une cicatrice postopératoire ?",
+    "choices": [
+      "Désunion des berges.",
+      "Rougeur extensive associée à douleur, chaleur ou œdème.",
+      "Cicatrice stable sans symptôme.",
+      "Peau saine et souple.",
+      "Absence de douleur avec berges soudées."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Désunion et signes inflammatoires extensifs font partie des surveillances d’alerte de la diapositive 72.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel défaut de fermeture d’une cicatrice postopératoire doit faire alerter ?",
+        "answers": [
+          "Désunion des berges."
+        ],
+        "explanation": "L’alerte tient compte aussi de la rougeur extensive, de la douleur, de la chaleur et de l’œdème.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_036",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Technique du soin",
+    "difficulty": "easy",
+    "question": "Quelle séquence est cohérente avec le cours de pansement ?",
+    "choices": [
+      "Nettoyage → détersion si besoin → nouveau nettoyage → pansement primaire.",
+      "Fixation → nettoyage → pansement primaire.",
+      "Pansement secondaire → détersion → nouvelle photo.",
+      "Compression → retirer l’ancien pansement sans hygiène.",
+      "Détersion systématique sans observation préalable."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le support suit : nettoyage, éventuelle détersion adaptée, nouveau nettoyage, primaire, secondaire et fixation.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_037",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Technique du soin",
+    "difficulty": "medium",
+    "question": "Quels gestes d’hygiène sont présents dans le diaporama ?",
+    "choices": [
+      "Nettoyage du membre puis de la plaie à l’eau et au savon.",
+      "Absence de précautions standard.",
+      "Utilisation de la même paire de ciseaux souillés pour découper le pansement neuf sans désinfection.",
+      "Désinfection du chariot / plan de travail.",
+      "Aucun nettoyage avant réfection."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le support promeut eau et savon et précautions standard, dont désinfection de l’environnement et distinction matériel souillé/propre.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_038",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Technique du soin",
+    "difficulty": "medium",
+    "question": "Quel est le rôle recherché d’un méchage de cavité ou de trajet fistuleux ?",
+    "choices": [
+      "Maintenir les écoulements en contact prolongé avec le fond du trajet.",
+      "Créer une barrière occlusive pour retenir les exsudats au fond de la cavité.",
+      "Accélérer la fermeture cutanée superficielle avant le comblement de la cavité.",
+      "Drainer les écoulements et limiter leur stagnation.",
+      "Le méchage doit être tassé fortement pour maintenir la cavité fermée."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le cours recommande d’explorer et de mécher les cavités/trajets adaptés pour drainer les exsudats. Pour comprendre les distracteurs : Le méchage adapté favorise l’évacuation des exsudats. Retenir les liquides, fermer trop tôt la surface ou tasser fortement n’est pas l’objectif.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel est l’objectif d’un méchage adapté d’une cavité de plaie ?",
+        "answers": [
+          "Drainer les écoulements et limiter leur stagnation."
+        ],
+        "explanation": "Le dispositif et sa mise en place doivent être adaptés à la cavité et au protocole.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_039",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "easy",
+    "question": "Pour une plaie très exsudative, vers quel type général de pansement s’oriente-t-on ?",
+    "choices": [
+      "Un hydrogel destiné surtout à apporter de l'eau aux tissus secs.",
+      "Un pansement film protecteur, sans couche d'absorption adaptée à l'exsudat.",
+      "Un pansement absorbant adapté à la quantité d’exsudat.",
+      "Une interface siliconée non absorbante utilisée sans pansement secondaire.",
+      "Un tulle vaseliné utilisé comme seule couche de pansement."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le cours distingue plaie sèche à humidifier et plaie exsudative à drainer/absorber. Pour comprendre les distracteurs : Les plaies très exsudatives nécessitent une absorption adaptée, que n’assurent pas seuls un hydrogel, un film non absorbant, une interface ou un tulle gras.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel objectif guide le choix d’un pansement pour une plaie très exsudative ?",
+        "answers": [
+          "Un pansement absorbant adapté à la quantité d’exsudat."
+        ],
+        "explanation": "L’absorption doit être proportionnée, en préservant les berges de la macération.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_040",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "medium",
+    "question": "À propos des hydrogels, quelles propositions sont justes ?",
+    "choices": [
+      "Ils contiennent une forte proportion d’eau, environ 70 à 90 %.",
+      "Ils évitent toujours toute macération des berges.",
+      "Ils sont recommandés d’emblée sur toute plaie infectée.",
+      "Ils sont particulièrement adaptés aux plaies très exsudatives.",
+      "Ils favorisent le ramollissement des nécroses sèches."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Les hydrogels apportent de l’eau et aident la détersion autolytique ; le support cite plusieurs contre-indications et la protection des berges.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel effet local de l’hydrogel peut aider une détersion autolytique en situation adaptée ?",
+        "answers": [
+          "Ils favorisent le ramollissement des nécroses sèches."
+        ],
+        "explanation": "La situation vasculaire doit être évaluée avant de chercher à ramollir une nécrose sèche.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_041",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "medium",
+    "question": "Quelle(s) caractéristique(s) du tulle gras sont enseignées ?",
+    "choices": [
+      "Application obligatoire jusque sur toute la peau saine.",
+      "Absorption massive de plusieurs litres.",
+      "Compresses à larges mailles imprégnées de vaseline.",
+      "Renouvellement seulement après un mois.",
+      "Découpe aux dimensions de la plaie pour protéger les berges."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le tulle gras maintient l’humidité, doit être découpé à taille et renouvelé au plus tard à deux jours dans le support.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quelle est la structure d’un tulle gras ?",
+        "answers": [
+          "Compresses à larges mailles imprégnées de vaseline."
+        ],
+        "explanation": "Le choix tient compte du contact avec la plaie et de la protection des berges.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_042",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "medium",
+    "question": "Concernant les interfaces de pansement, quelles associations sont correctes ?",
+    "choices": [
+      "Interface siliconée : protection d’un tissu en épidermisation.",
+      "Interface siliconée : jamais de risque de macération.",
+      "Lipocolloïde : utile notamment pour les arrachements cutanés fragiles.",
+      "Lipocolloïde : toujours plus agressif qu’un adhésif fort.",
+      "Interface : hémostase obligatoire de toute plaie artérielle."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le diaporama souligne le maintien d’humidité par l’interface siliconée et le caractère moins adhérent du lipocolloïde.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel tissu fragile une interface siliconée peut-elle protéger ?",
+        "answers": [
+          "Interface siliconée : protection d’un tissu en épidermisation."
+        ],
+        "explanation": "La protection vise à limiter les traumatismes lors des soins.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_043",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "medium",
+    "question": "À propos des hydrocellulaires adhésifs « border », quelles propositions sont exactes ?",
+    "choices": [
+      "Ils sont prescrits exclusivement pour les nécroses sèches profondes.",
+      "La forme non adhésive peut être privilégiée si la peau péri-lésionnelle est irritée.",
+      "Ils sont sans risque de macération.",
+      "Ils doivent obligatoirement être associés à un alginate à chaque soin.",
+      "Ils peuvent entraîner une dermatite de contact sur peau fragile."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le support insiste sur les effets iatrogènes des adhésifs, surtout chez les personnes âgées, et la prudence dans les associations.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel effet indésirable cutané peut provoquer un hydrocellulaire adhésif ?",
+        "answers": [
+          "Ils peuvent entraîner une dermatite de contact sur peau fragile."
+        ],
+        "explanation": "La fixation et la tolérance cutanée doivent être réévaluées.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_044",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "medium",
+    "question": "Pourquoi un alginate peut-il être choisi dans une plaie exsudative et cavitaire ?",
+    "choices": [
+      "Il agit comme une compresse vaselinée destinée à maintenir le gras sur la plaie.",
+      "Il apporte principalement de l'eau pour hydrater une nécrose sèche.",
+      "Il dépose un film de silicone pour protéger un épiderme nouvellement formé.",
+      "Il constitue une barrière imperméable empêchant l'évacuation de l'exsudat.",
+      "Il draine les exsudats et peut contribuer à l’hémostase."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "L’alginate absorbe par drainage et possède une action hémostatique ; il est indiqué dans des plaies exsudatives, cavitaires ou infectées selon le support. Pour comprendre les distracteurs : Un alginate absorbe et draine l’exsudat, avec un effet hémostatique possible. Les autres descriptions correspondent à d’autres familles de pansements ou à une occlusion inadaptée.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quels effets d’un alginate peuvent être utiles dans une plaie exsudative et cavitaire ?",
+        "answers": [
+          "Il draine les exsudats et peut contribuer à l’hémostase."
+        ],
+        "explanation": "Le choix dépend de l’exsudat, de la profondeur et de l’état clinique.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_045",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "hard",
+    "question": "Quelles consignes sont cohérentes avec la famille « alginate » du cours ?",
+    "choices": [
+      "Le renouvellement est au maximum de 2 jours dans la présentation.",
+      "Une humidification peut être nécessaire, notamment au retrait.",
+      "Le calcium pur Algostéril est cité avec humidification systématique recommandée.",
+      "L’alginate n’a jamais d’indication hémostatique.",
+      "Il ne faut jamais considérer la quantité d’exsudat."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La diapositive 67 précise saturation/max 2 jours, humidification adaptée et cas particulier de l’alginate de calcium pur.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_046",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Familles de pansements",
+    "difficulty": "hard",
+    "question": "Quelles propositions distinguent hydrofibres et super-absorbants selon le cours ?",
+    "choices": [
+      "Les hydrofibres ne sont jamais absorbantes.",
+      "Les super-absorbants ne doivent pas être découpés.",
+      "Les hydrofibres se gélifient et peuvent absorber jusqu’à 30 fois leur poids selon le diaporama.",
+      "Les super-absorbants relarguent toujours leurs exsudats dès saturation.",
+      "Les deux sont obligatoirement des tulles vaselinés."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Hydrofibres = fibres gélifiantes à haute absorption ; super-absorbants = absorption verticale et structure de sachet non découpable.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Peut-on découper un pansement super-absorbant en sachet ?",
+        "answers": [
+          "Les super-absorbants ne doivent pas être découpés."
+        ],
+        "explanation": "La découpe altère la structure du sachet et peut compromettre son fonctionnement.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_047",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Suivi et complications",
+    "difficulty": "easy",
+    "question": "Parmi ces situations, laquelle est un facteur GÉNÉRAL lié au patient qui peut retarder la cicatrisation ?",
+    "choices": [
+      "Une macération prolongée de la peau périlésionnelle.",
+      "Un pansement conservant une humidité inadaptée au lit de la plaie.",
+      "Une nécrose persistante au niveau du fond de la plaie.",
+      "Un méchage insuffisant d'un trajet cavitaire.",
+      "Dénutrition ou anémie."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Dénutrition et anémie figurent parmi les facteurs de retard généraux cités dans le cours. Pour comprendre les distracteurs : L’anémie et la dénutrition sont des facteurs généraux. La macération, la nécrose, un pansement inadapté ou le méchage insuffisant sont des facteurs locaux — même s’ils retardent eux aussi la cicatrisation.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quels facteurs nutritionnels ou sanguins peuvent retarder la cicatrisation ?",
+        "answers": [
+          "Dénutrition ou anémie."
+        ],
+        "explanation": "L’évaluation du terrain accompagne les soins locaux.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_048",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Suivi et complications",
+    "difficulty": "medium",
+    "question": "Quels signes peuvent faire suspecter une infection de la plaie ?",
+    "choices": [
+      "Peau périphérique entièrement saine.",
+      "Extension de l’érythème avec chaleur / œdème.",
+      "Cicatrisation en progression sans aucun symptôme.",
+      "Augmentation récente de la douleur et des écoulements.",
+      "Absence de changement du fond."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’évaluation combine plusieurs signes d’inflammation et changements de plaie ; un signe isolé ne suffit pas.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quels changements récents de douleur et d’écoulement font rechercher une infection de plaie ?",
+        "answers": [
+          "Augmentation récente de la douleur et des écoulements."
+        ],
+        "explanation": "Un signe isolé ne suffit pas : rechercher un ensemble de signes et alerter selon l’état clinique.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "plaies_p1_049",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Suivi et complications",
+    "difficulty": "hard",
+    "question": "Parmi les signes plus discrets de possible complication cités dans le cours figurent :",
+    "choices": [
+      "Disparition du stress psychosocial comme preuve d’infection.",
+      "Fond de plaie devenu friable ou terne.",
+      "Saignement nouveau ou inattendu.",
+      "Hyperbourgeonnement.",
+      "Réduction de l’œdème comme signe infectieux constant."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’intervenante mentionne hyperbourgeonnement, bourgeon terne/mat, friabilité et saignement comme signes subtils, à interpréter avec les autres données.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": []
+  },
+  {
+    "id": "plaies_p1_050",
+    "courseId": "plaies_pansements",
+    "course": "Plaies et pansements — Partie 1/2",
+    "ue": "S1 B3",
+    "theme": "Suivi et complications",
+    "difficulty": "medium",
+    "question": "À propos des objectifs de prise en soin d’une plaie chronique, quelles propositions sont conformes au cours ?",
+    "choices": [
+      "Le projet peut être préventif, curatif ou palliatif selon le contexte.",
+      "L'objectif de fermeture cutanée doit primer sur l'évaluation de la cause de la plaie.",
+      "La qualité de vie et la douleur comptent aussi si la cicatrisation est impossible.",
+      "Les objectifs sont principalement définis à partir de l'aspect local, avant l'analyse des comorbidités.",
+      "Le choix d'une démarche palliative rend la surveillance de la douleur moins pertinente."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le cours conclut sur des objectifs ajustés au patient, éventuellement palliatifs, et une approche bio-psycho-sociale. Pour comprendre les distracteurs : Les objectifs sont personnalisés, bio-psycho-sociaux, préventifs, curatifs ou palliatifs. La douleur et la qualité de vie restent pertinentes même sans possibilité de fermeture.",
+    "source": "Support officiel N. Ecorcheville — Partie 1/2",
+    "flashcards": [
+      {
+        "front": "Quel objectif de soin reste essentiel si une plaie ne peut pas cicatriser ?",
+        "answers": [
+          "La qualité de vie et la douleur comptent aussi si la cicatrisation est impossible."
+        ],
+        "explanation": "La douleur, le sommeil, l’autonomie et les souhaits de la personne restent des objectifs de prise en soin.",
+        "kind": "Notion précise",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  }
+]
