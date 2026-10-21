@@ -30,7 +30,7 @@ vm.runInContext(part('function showPending(','function list(){')+'\nglobalThis.o
 pageCtx.openDraft('bpco');
 assert.equal(courseOpens,0,'Opening BPCO must not redirect automatically to its course');
 assert.ok(pendingMarkup.includes('Bronchopneumopathie chronique obstructive (BPCO)'));
-assert.ok(pendingMarkup.includes('Ressources en cours de validation médicale'));
+assert.ok(pendingMarkup.includes('Ouvrir mes supports Pathologies'));assert.ok(pendingMarkup.includes('id="pathoReviewImport"'));assert.ok(pendingMarkup.includes('<details'), 'Le cours associé doit rester replié, pas remplacer la fiche');
 assert.ok(pendingMarkup.includes('Ouvrir le cours IFSI'),'Course remains an optional secondary action');
 assert.equal(typeof backButton.onclick,'function');backButton.onclick();assert.equal(backClicks,1);
 assert.ok(code.includes('results.querySelectorAll(\'[data-patho-pending]\')'),'Pending entry click missing');
