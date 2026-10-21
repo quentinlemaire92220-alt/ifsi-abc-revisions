@@ -962,7 +962,7 @@
     "partId": "p01",
     "theme": "Mortalité des enfants",
     "difficulty": "easy",
-    "question": "Que montrent les courbes historiques de mortalité des enfants du cours ?",
+    "question": "Quelles tendances générales observe-t-on dans la mortalité des enfants depuis 2000 ?",
     "choices": [
       "Un ralentissement de la baisse sur une période récente",
       "L’inversion générale de toutes les courbes",
@@ -1151,14 +1151,14 @@
     "answers": [
       2
     ],
-    "explanation": "Le cours montre une majorité des décès attribuables aux maladies non transmissibles au niveau mondial.",
+    "explanation": "À l’échelle mondiale, les maladies non transmissibles sont à l’origine de la majorité des décès.",
     "flashcards": [
       {
         "front": "Quelle famille domine les décès dans le monde ?",
         "answers": [
           "Les maladies non transmissibles."
         ],
-        "explanation": "Le cours montre une majorité des décès attribuables aux maladies non transmissibles au niveau mondial.",
+        "explanation": "À l’échelle mondiale, les maladies non transmissibles sont à l’origine de la majorité des décès.",
         "kind": "Cours",
         "atomic": true,
         "preserveFront": true
@@ -1174,7 +1174,7 @@
     "partId": "p01",
     "theme": "Transition épidémiologique",
     "difficulty": "easy",
-    "question": "Parmi les maladies non transmissibles citées dans ce cours :",
+    "question": "Parmi les affections suivantes, lesquelles sont des maladies non transmissibles ?",
     "choices": [
       "Paludisme",
       "Diabète",
@@ -1244,7 +1244,7 @@
     "partId": "p01",
     "theme": "Transition épidémiologique",
     "difficulty": "hard",
-    "question": "Le gradient Nord/Sud vu dans le cours doit être compris :",
+    "question": "Pour interpréter les disparités de santé entre régions du Nord et du Sud, quelles affirmations sont pertinentes ?",
     "choices": [
       "Comme un raccourci de disparités historiques",
       "En tenant compte des déterminants sociaux et de l’accès aux soins",
@@ -1565,7 +1565,7 @@
     "partId": "p01",
     "theme": "Paludisme, tuberculose et infections",
     "difficulty": "hard",
-    "question": "Le cours présente comme exemple de risque infectieux émergent :",
+    "question": "Laquelle des affections suivantes est une maladie infectieuse émergente ou réémergente ?",
     "choices": [
       "Arthrose",
       "Dyslipidémie",
@@ -1576,14 +1576,14 @@
     "answers": [
       3
     ],
-    "explanation": "Le cours cite Ebola parmi les risques infectieux émergents ou réémergents. Arthrose et dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
+    "explanation": "Ebola est un exemple de risque infectieux émergent ou réémergent. L’arthrose et la dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
     "flashcards": [
       {
         "front": "Quel agent infectieux est en cause dans les épidémies de Zika ?",
         "answers": [
           "Le virus Zika, principalement transmis par certains moustiques Aedes."
         ],
-        "explanation": "Le cours cite Ebola parmi les risques infectieux émergents ou réémergents. Arthrose et dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
+        "explanation": "Ebola est un exemple de risque infectieux émergent ou réémergent. L’arthrose et la dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
         "kind": "Cours",
         "atomic": true,
         "preserveFront": true
@@ -1930,14 +1930,14 @@
     "answers": [
       2
     ],
-    "explanation": "Les priorités soulignées dans le cours portent sur les tendances, mécanismes, définitions et dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique n’est pas une preuve de causalité.",
+    "explanation": "Pour interpréter des indicateurs sanitaires, les priorités sont les tendances, les mécanismes, les définitions et les dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique ne prouve pas la causalité.",
     "flashcards": [
       {
         "front": "Quel est le premier réflexe devant un chiffre en santé publique ?",
         "answers": [
           "Vérifier unité, période, population, territoire et source."
         ],
-        "explanation": "Les priorités soulignées dans le cours portent sur les tendances, mécanismes, définitions et dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique n’est pas une preuve de causalité.",
+        "explanation": "Pour interpréter des indicateurs sanitaires, les priorités sont les tendances, les mécanismes, les définitions et les dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique ne prouve pas la causalité.",
         "kind": "Cours",
         "atomic": true,
         "preserveFront": true
