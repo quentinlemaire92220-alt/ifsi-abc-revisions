@@ -1,40 +1,42 @@
-# UE C1.1 S1 — Santé mondiale et santé en France — préparation technique non publiée
+# UE C1.1 S1 — Santé mondiale et santé en France — pré-intégration technique
 
-**Statut : revue privée / préparation uniquement — NE PAS FUSIONNER NI PUBLIER.**
+**Statut : brouillon non publiable — revue pédagogique et GO publication requis.**
 
-Ce changement préinscrit le cours `sante_mondiale_sante_france` sans ressources, URLs ni entrée dans une banque QCM active. L'absence de ressources est intentionnelle ; aucun faux statut `validated:true` ou `complete` n'est déclaré.
+## Périmètre de la branche courante
 
-## Livrables actuellement conservés hors GitHub public
-- Fiche de révision de 16 pages.
-- 56 QCM à 5 propositions et 1–3 bonnes réponses, à importer avec explications et identifiants stables.
-- 56 flashcards autonomes.
-- 9 infographies individuelles de style validé, rassemblées également en un PDF.
+- Référencement du cours `sante_mondiale_sante_france`, `domain:C`, `ue:C1.1` avec alias dans le registre.
+- Aucune nouvelle fiche, infographie, banque QCM, flashcard ou URL Drive ne doit être activée dans les manifestes de l'application.
+- Pas de déclaration `validated:true`, de preuve PDF inventée ni de publication automatique.
 
-Les fichiers de révision, les photos de référence, les originaux de cours, les transcriptions et les rapports de relecture détaillés restent **hors dépôt public**.
+## Livrables existants à vérifier en espace de travail Drive
 
-## Bloqueurs identifiés (21 octobre 2026)
-1. Revue scientifique des neuf infographies pas terminée ; un visuel sur les maladies transmissibles présente la prophylaxie post-exposition VIH sous la forme « 48–72 h », à corriger à partir des recommandations françaises applicables. Ne pas exposer ce visuel aux étudiants en l'état.
-2. Le chapitre annoncé sur les inégalités de santé, l'accès et le recours aux soins n'est pas documenté intégralement par les sources reçues : ne pas attester la couverture exhaustive.
-3. Vérifier la concordance de tous les chiffres, unités, cartes et graphiques démographiques avec les sources officielles et leur millésime.
-4. Les 56 QCM ne sont pas encore importés dans le schéma natif `choices[]` + `answers[]` et la cohérence flashcards/QCM n'a pas été testée dans l'application.
-5. Les PDFs n'ont pas encore de liens Drive publiés, donc aucune déclaration de manifeste ni empreinte retéléchargée ne peut être valide.
-6. Les TNR du changement et la revue du rendu mobile devront précéder toute fusion ou publication.
+- Fiche de révision (annoncée à 16 pages), à comparer au support du cours.
+- Cours infographié PDF (9 planches) et 9 planches individuelles.
+- QCM corrigés (56 questions, cinq propositions, 1 à 3 bonnes réponses).
+- Flashcards (56 cartes).
+- Les exemplaires et exports non validés restent **hors chargement par l'application** jusqu'à revue.
 
-## Sortie du statut bloqué
-- Recevoir/comparer la version intégrale du support officiel (si disponible), corriger les assertions vérifiables, achever l'audit de couverture.
-- Conserver les maquettes approuvées et corriger localement les textes/images concernés, sans changement graphique non demandé.
-- Préparer les ressources dans la structure Drive, calculer leurs empreintes réelles, adapter les QCM et flashcards au moteur, enregistrer le manifeste **uniquement lorsque les ressources sont authentifiées**.
-- Exécuter les TNR / CI / contrôle éditorial et obtenir un **GO publication** clair avant toute fusion sur `main`.
+## Points bloquants de validation
 
-## Références techniques
-`docs/NEW_COURSE_PUBLIC_CONTRACT.md`, `docs/COURSE_DELIVERY.md`, `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`, `docs/PUBLICATION_APPROVAL.md`.
+1. **Revue scientifique** : la planche 06 avait des erreurs de prévention VIH et vaccination ; la planche 03 une confusion de calcul démographique. La version corrigée et tous les exports à publier doivent être contrôlés individuellement.
+2. **Couverture** : comparer entièrement le chapitre sur les inégalités et l'accès / recours aux soins au support disponible ; ne pas déclarer l'exhaustivité sans preuve.
+3. **Chiffres et visuels** : vérifier les cartes, pyramides, unités, sources et années ; contrôler le rendu mobile et les 9 planches.
+4. **QCM et flashcards** : reprendre les 56 questions en conservant `choices[]`, `answers[]`, identifiants stables, explications, corrections et contrôle 1–3 bonnes réponses.
+5. **Drive** : des fichiers préparatoires ont été observés avec permission `anyone:reader` (toute personne ayant le lien). Les droits doivent être restreints pendant la revue ; ne jamais communiquer ces liens comme preuve de confidentialité.
+6. **Livraison** : le manifeste, les empreintes de fichiers retéléchargés, les TNR, la CI et les deux revues visuelles doivent être achevés avant publication. Un GO publication explicite du package sera exigé.
 
-**Cette PR n'est ni la livraison du cours, ni la validation de ses supports.**
+## Historique et incident du 21/10/2026
 
-## Addendum de contrôle scientifique du 21/10/2026 — version privée V3
+Une première version de cette PR contenait prématurément 9 images WebP, des enregistrements de fichiers Drive et `qextra-59.txt`, puis activait leur chargement PWA. Cela provoquait notamment un échec TNR `Snapshot V8.30.59 fiches invalide` et la PR était en conflit avec `main`.
 
-Les deux erreurs avérées sur l'infographie 06 ont été corrigées dans le pack privé, **pas dans les fichiers publics** :
-- Traitement post-exposition VIH : instaurer dès que possible, idéalement dans les 4 h, au plus tard 48 h après exposition si indiqué (HAS) : https://www.has-sante.fr/jcms/p_3536535/fr/traitement-preventif-post-exposition-au-vih
-- Vaccination : le BCG existe pour certaines formes de tuberculose et l'OMS recommande RTS,S et R21 pour certains enfants de zones palustres ; contrairement au texte original de la planche. Source OMS : https://www.who.int/fr/news-room/questions-and-answers/item/q-a-on-rts-s-malaria-vaccine/
+La présente correction **quarantaine le contenu pédagogique** : elle rétablit les manifestes et le Service Worker depuis `main`, tout en gardant le référencement de cours. Les livrables sont préservés dans Drive ou dans l'historique technique antérieur, sans activation en production.
 
-**Nouveaux points bloquants détectés** : l'infographie 03 confond formule d'accroissement absolu et taux (%) de croissance ; formule correcte = accroissement / population de départ × 100, avec éventuels ajustements statistiques (Insee : https://www.insee.fr/fr/statistiques/2381468). Une autre formulation présente à tort le vieillissement comme spécifique à la France alors qu'il est mondial, à des rythmes différents (ONU : https://desapublications.un.org/file/20847/download). Les cartes, pyramides et taux des planches demandent une revue systématique des chiffres, des sources et des millésimes. Le cours n'est toujours pas publiable.
+**Important : le retrait des fichiers du dernier commit n'efface pas les commits publics antérieurs de GitHub.** Pour retirer des données sensibles ou non autorisées de l'historique, il faut une opération séparée avec procédure de purge et vérification. Ne pas prétendre que les anciennes versions sont privées.
+
+## Étapes suivantes
+
+- Corriger et valider les supports en privé, restreindre les permissions Drive.
+- Après validation, préparer une seconde PR de livraison avec manifestes et preuves réelles, garder la séparation des deux PDF et des catégories de ressources.
+- Obtenir un GO publication explicite avant fusion / déploiement du lot.
+
+Références : `docs/NEW_COURSE_PUBLIC_CONTRACT.md`, `docs/COURSE_DELIVERY.md`, `docs/PUBLICATION_APPROVAL.md`.
