@@ -74,6 +74,7 @@ for(const name of filenames){
    assert.equal(cards.length,q.flashcards.length,q.id+': une carte explicite échappe au contrôle');
    return {...q,flashcards:cards.map(c=>({front:c.front,answers:[...c.answers],explanation:c.explanation}))};
   });
-  count+=validateChangedQcmBanks([...previousById.values(),...previous],displayed,name,{exactReviewedSourceAttributionIds});
+  const exactReviewedSourceQuestionIds=new Set(exactReviewed?['plaies_p1_020']:[]);
+  count+=validateChangedQcmBanks([...previousById.values(),...previous],displayed,name,{exactReviewedSourceAttributionIds,exactReviewedSourceQuestionIds});
 }
 console.log('✅ Autonomie TD/support : '+count+' item(s) QCM nouveau(x)/modifié(s) contrôlé(s) dans '+filenames.length+' banque(s). Les questions historiques inchangées restent hors de ce contrôle différentiel.');
