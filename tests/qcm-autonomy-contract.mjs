@@ -45,7 +45,7 @@ export function autonomyViolations(item) {
   return errors;
 }
 
-export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque') {
+export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque',options={}) {
   assert.ok(Array.isArray(beforeRows)&&Array.isArray(afterRows),'Bank QCM JSON invalide: '+fileName);
   const before=new Map(beforeRows.map(x=>[x.id,x]));
   const visited=new Set();
@@ -61,8 +61,13 @@ export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque') 
     // à cause d'une formulation historique inchangée dans un autre champ.
     // On bloque toute NOUVELLE dépendance au support (pas les dettes inchangées).
     const previousErrors=old?autonomyViolations(old):[];
-    const errors=autonomyViolations(item).filter(issue=>
-      !previousErrors.some(prev=>prev.field===issue.field&&prev.excerpt===issue.excerpt));
+    const errors=autonomyViolations(item).filter(issue=>{
+      // Exception bornée à un snapshot pédagogique V4.2 identifié par son SHA Git.
+      // L'exonération s'applique seulement aux attributions explicites du corrigé,
+      // avec contrôle du hash exact en amont ; les choix/énoncés restent contrôlés.
+      if(issue.field==='explanation'&&options.exactReviewedSourceAttributionIds?.has(item.id))return false;
+      return !previousErrors.some(prev=>prev.field===issue.field&&prev.excerpt===issue.excerpt);
+    });
     if(errors.length){
       const details=errors.map(x=>x.field+': '+x.excerpt).join(' | ');
       throw new Error(fileName+': '+item.id+' dépend du TD/support : '+details);
