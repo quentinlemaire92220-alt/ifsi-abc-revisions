@@ -365,6 +365,9 @@ jobs:
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs
 
+      - name: Vérifier la banque V4.2 Plaies en revue (aucune activation)
+        run: node tests/plaies-v42-reconciliation.mjs
+
       - name: Vérifier la livraison Stomatothérapie
         run: node tests/stomatotherapie-delivery.mjs
 
