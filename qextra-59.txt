@@ -1,0 +1,1987 @@
+[
+  {
+    "id": "c11_s1_q001",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Santé mondiale, OMS et One Health",
+    "difficulty": "easy",
+    "question": "La notion de santé utilisée en santé mondiale : quelles affirmations sont exactes ?",
+    "choices": [
+      "Exclut les facteurs environnementaux",
+      "Inclut des dimensions physiques, mentales et sociales",
+      "Ne concerne que les maladies diagnostiquées",
+      "Dépend aussi du contexte de vie",
+      "Se réduit à une consultation individuelle"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La santé est multidimensionnelle et dépend de déterminants sociaux et environnementaux ; elle ne se limite pas à la maladie individuelle.",
+    "flashcards": [
+      {
+        "front": "Quelles dimensions composent la définition OMS de la santé ?",
+        "answers": [
+          "Bien-être physique, mental et social."
+        ],
+        "explanation": "La santé est multidimensionnelle et dépend de déterminants sociaux et environnementaux ; elle ne se limite pas à la maladie individuelle.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q002",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Santé mondiale, OMS et One Health",
+    "difficulty": "medium",
+    "question": "À propos de l’OMS, quelles propositions sont justes ?",
+    "choices": [
+      "Elle remplace les ministères nationaux de la Santé",
+      "C’est une institution spécialisée des Nations unies",
+      "Elle contribue à des normes et recommandations internationales",
+      "Elle coordonne des réponses sanitaires internationales",
+      "Elle fournit tous les soins hospitaliers du monde"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’OMS oriente, coordonne et produit des références ; les systèmes nationaux assurent les soins et la mise en œuvre.",
+    "flashcards": [
+      {
+        "front": "Que fait principalement l’OMS ?",
+        "answers": [
+          "Coordonne la santé internationale et émet des recommandations."
+        ],
+        "explanation": "L’OMS oriente, coordonne et produit des références ; les systèmes nationaux assurent les soins et la mise en œuvre.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q003",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Santé mondiale, OMS et One Health",
+    "difficulty": "hard",
+    "question": "Le concept One Health met explicitement en relation :",
+    "choices": [
+      "La santé humaine",
+      "Uniquement le système hospitalier",
+      "La santé des écosystèmes",
+      "Uniquement la vaccination",
+      "La santé animale"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "One Health relie les trois domaines humain, animal et environnemental, notamment pour les zoonoses et les résistances.",
+    "flashcards": [
+      {
+        "front": "Quels sont les trois domaines de One Health ?",
+        "answers": [
+          "Santé humaine, santé animale et environnement."
+        ],
+        "explanation": "One Health relie les trois domaines humain, animal et environnemental, notamment pour les zoonoses et les résistances.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q004",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Santé mondiale, OMS et One Health",
+    "difficulty": "easy",
+    "question": "Quel exemple illustre directement l’intérêt d’une approche One Health ?",
+    "choices": [
+      "Supprimer toutes les surveillances animales",
+      "Traiter une fracture isolée sans facteur environnemental",
+      "Étudier une zoonose avec son réservoir animal et son environnement",
+      "Mesurer seulement la tension d’une personne",
+      "N’étudier que les dépenses de santé"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Une zoonose implique conjointement animal, environnement et être humain ; les autres choix ignorent ces liens.",
+    "flashcards": [
+      {
+        "front": "Pourquoi associer les vétérinaires à la santé publique ?",
+        "answers": [
+          "Pour surveiller et prévenir les risques aux interfaces humains–animaux."
+        ],
+        "explanation": "Une zoonose implique conjointement animal, environnement et être humain ; les autres choix ignorent ces liens.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q005",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "Quelles associations entre programmes et dates sont correctes ?",
+    "choices": [
+      "ODD 3 : bonne santé et bien-être",
+      "OMD : 2000–2015",
+      "OMD : dix-sept objectifs",
+      "ODD : 2015–2030",
+      "ODD : 1990–2000"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les OMD comprennent huit objectifs jusqu’en 2015 ; les ODD sont au nombre de 17 jusqu’en 2030 et l’ODD 3 porte sur la santé.",
+    "flashcards": [
+      {
+        "front": "Quand s’appliquent les OMD ?",
+        "answers": [
+          "De 2000 à 2015 ; ils comportent 8 objectifs."
+        ],
+        "explanation": "Les OMD comprennent huit objectifs jusqu’en 2015 ; les ODD sont au nombre de 17 jusqu’en 2030 et l’ODD 3 porte sur la santé.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q006",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "hard",
+    "question": "Pour suivre l’extrême pauvreté mondiale, il faut préciser :",
+    "choices": [
+      "L’année et le champ géographique",
+      "Le nombre total de personnes pauvres se compare sans préciser s’il s’agit d’un effectif ou d’un pourcentage",
+      "Seulement le nom du pays le plus pauvre",
+      "Uniquement la couleur du graphique",
+      "Le seuil monétaire retenu"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Pour comparer la pauvreté, il faut au minimum connaître le seuil monétaire, l’année et le champ étudié. La comparaison entre effectif et pourcentage nécessite aussi de vérifier le dénominateur ; l’énoncé qui prétend l’inverse est faux.",
+    "flashcards": [
+      {
+        "front": "Combien d’ODD et quelle période ?",
+        "answers": [
+          "17 objectifs pour la période 2015–2030."
+        ],
+        "explanation": "Pour comparer la pauvreté, il faut au minimum connaître le seuil monétaire, l’année et le champ étudié. La comparaison entre effectif et pourcentage nécessite aussi de vérifier le dénominateur ; l’énoncé qui prétend l’inverse est faux.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q007",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "easy",
+    "question": "À propos d’une cible ODD 2030, quelles affirmations sont exactes ?",
+    "choices": [
+      "Elle doit être confondue avec une projection",
+      "Elle garantit que la cible est déjà atteinte",
+      "Une cible internationale prouve à elle seule que sa politique est responsable de toute évolution",
+      "Elle est un objectif à atteindre",
+      "Elle peut être suivie par des indicateurs"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Une cible ODD est un objectif à atteindre que l’on peut suivre avec des indicateurs. Elle ne prouve pas que l’objectif est atteint, ne constitue pas une projection certaine et n’établit pas à elle seule la causalité.",
+    "flashcards": [
+      {
+        "front": "Quel est le sujet de l’ODD 3 ?",
+        "answers": [
+          "La bonne santé et le bien-être à tout âge."
+        ],
+        "explanation": "Une cible ODD est un objectif à atteindre que l’on peut suivre avec des indicateurs. Elle ne prouve pas que l’objectif est atteint, ne constitue pas une projection certaine et n’établit pas à elle seule la causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q008",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "Une proportion de personnes en pauvreté extrême diminue. Que peut-on conclure ?",
+    "choices": [
+      "Le nombre absolu a forcément diminué dans la même proportion",
+      "Toute pauvreté a disparu",
+      "La part relative a diminué selon le même seuil",
+      "Il faut connaître la population totale pour déduire l’effectif",
+      "Le seuil utilisé doit être précisé"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Une baisse proportionnelle ne renseigne pas directement l’effectif sans taille de population ; il faut aussi fixer le seuil.",
+    "flashcards": [
+      {
+        "front": "Pourquoi un taux de pauvreté en baisse peut-il masquer des effectifs élevés ?",
+        "answers": [
+          "L’effectif dépend aussi de la taille totale de la population."
+        ],
+        "explanation": "Une baisse proportionnelle ne renseigne pas directement l’effectif sans taille de population ; il faut aussi fixer le seuil.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q009",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Indicateurs de santé",
+    "difficulty": "hard",
+    "question": "Un indicateur de santé peut servir à :",
+    "choices": [
+      "Comparer des évolutions dans le temps",
+      "Décrire un état de santé collectif",
+      "Évaluer une politique publique",
+      "Prouver seul la cause d’une évolution",
+      "Remplacer toutes les enquêtes de terrain"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les indicateurs décrivent, comparent et permettent un suivi. Un indicateur isolé n’établit pas nécessairement une causalité.",
+    "flashcards": [
+      {
+        "front": "À quoi servent les indicateurs de santé ?",
+        "answers": [
+          "Décrire, surveiller, comparer et évaluer la santé des populations."
+        ],
+        "explanation": "Les indicateurs décrivent, comparent et permettent un suivi. Un indicateur isolé n’établit pas nécessairement une causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q010",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Indicateurs de santé",
+    "difficulty": "easy",
+    "question": "Avant de comparer deux taux de mortalité, il faut vérifier :",
+    "choices": [
+      "Seulement le nombre de pages du rapport",
+      "La période de mesure",
+      "Le dénominateur",
+      "La structure par âge ou la standardisation",
+      "Uniquement la couleur de la courbe"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Des dénominateurs, durées et pyramides des âges différentes peuvent rendre les taux bruts trompeurs.",
+    "flashcards": [
+      {
+        "front": "Que vérifier avant de comparer deux taux ?",
+        "answers": [
+          "Numérateur, dénominateur, année, territoire et structure d’âge."
+        ],
+        "explanation": "Des dénominateurs, durées et pyramides des âges différentes peuvent rendre les taux bruts trompeurs.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q011",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Indicateurs de santé",
+    "difficulty": "medium",
+    "question": "Quel énoncé décrit un indicateur épidémiologique ?",
+    "choices": [
+      "La densité d’incidence d’une infection",
+      "Le cours d’une monnaie uniquement",
+      "Un taux de décès attribués à une affection",
+      "Le nombre de chaises d’une salle",
+      "La prévalence d’une maladie"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Prévalence, incidence et mortalité par cause sont des indicateurs de fréquence, apparition ou gravité.",
+    "flashcards": [
+      {
+        "front": "Quelle différence entre effectif et taux ?",
+        "answers": [
+          "L’effectif est un nombre ; le taux le rapporte à une population."
+        ],
+        "explanation": "Prévalence, incidence et mortalité par cause sont des indicateurs de fréquence, apparition ou gravité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q012",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Indicateurs de santé",
+    "difficulty": "hard",
+    "question": "Une estimation mondiale issue d’un modèle statistique doit être présentée :",
+    "choices": [
+      "Avec l’année de référence",
+      "Comme un résultat observé dans tous les pays",
+      "Comme une mesure nécessairement exacte",
+      "Avec ses limites et son champ",
+      "Avec la source de données utilisée"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Une estimation est fondée sur des données et hypothèses ; elle n’équivaut pas à une mesure exhaustive garantie.",
+    "flashcards": [
+      {
+        "front": "Pourquoi une estimation statistique est-elle incertaine ?",
+        "answers": [
+          "Elle dépend des données disponibles et des hypothèses du modèle."
+        ],
+        "explanation": "Une estimation est fondée sur des données et hypothèses ; elle n’équivaut pas à une mesure exhaustive garantie.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q013",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Démographie et naissances",
+    "difficulty": "easy",
+    "question": "Une population mondiale augmente et son taux de croissance diminue. Quelles affirmations sont possibles ?",
+    "choices": [
+      "Toute projection devient certaine",
+      "La variation absolue et le taux sont distincts",
+      "Les deux phénomènes peuvent coexister",
+      "Le ralentissement du taux signifie une baisse immédiate du nombre d’habitants",
+      "L’effectif augmente encore"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le taux exprime une vitesse relative ; un taux positif mais décroissant accompagne toujours une hausse de l’effectif.",
+    "flashcards": [
+      {
+        "front": "Une population peut-elle croître avec un taux de croissance qui baisse ?",
+        "answers": [
+          "Oui, tant que le taux reste positif."
+        ],
+        "explanation": "Le taux exprime une vitesse relative ; un taux positif mais décroissant accompagne toujours une hausse de l’effectif.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q014",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Démographie et naissances",
+    "difficulty": "medium",
+    "question": "Concernant la variation d’une population nationale, quels facteurs entrent en jeu ?",
+    "choices": [
+      "Décès",
+      "Uniquement l’espérance de vie",
+      "La superficie du pays comme seul facteur",
+      "Naissances",
+      "Migrations"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La variation totale est la somme du solde naturel (naissances moins décès) et du solde migratoire.",
+    "flashcards": [
+      {
+        "front": "Comment calcule-t-on le solde naturel ?",
+        "answers": [
+          "Naissances moins décès."
+        ],
+        "explanation": "La variation totale est la somme du solde naturel (naissances moins décès) et du solde migratoire.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q015",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Démographie et naissances",
+    "difficulty": "hard",
+    "question": "Le chiffre de 639 533 naissances en 2023 désigne :",
+    "choices": [
+      "Une estimation de 2026",
+      "La France entière avec tous les territoires",
+      "La France métropolitaine",
+      "Le total des nouveau-nés européens",
+      "Un chiffre de décès"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’Insee donne 639 533 naissances en métropole et 677 803 en France entière pour 2023.",
+    "flashcards": [
+      {
+        "front": "À quoi correspondent 639 533 naissances en 2023 ?",
+        "answers": [
+          "À la France métropolitaine, et non à la France entière."
+        ],
+        "explanation": "L’Insee donne 639 533 naissances en métropole et 677 803 en France entière pour 2023.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q016",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Démographie et naissances",
+    "difficulty": "easy",
+    "question": "Une pyramide des âges à base étroite et aux tranches adultes élargies évoque :",
+    "choices": [
+      "Une baisse relative des jeunes classes d’âge",
+      "Un vieillissement démographique",
+      "Une forte natalité obligatoirement",
+      "La forme d’une pyramide identifie à elle seule la cause exacte du vieillissement",
+      "Un décès immédiat de tous les nouveau-nés"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Une base étroite et des générations adultes plus larges sont compatibles avec un vieillissement et une moindre part de jeunes. La seule forme d’une pyramide ne démontre pas les causes exactes : il faut d’autres données.",
+    "flashcards": [
+      {
+        "front": "Que traduit une pyramide des âges à base étroite ?",
+        "answers": [
+          "Des générations récentes moins nombreuses, souvent associées au vieillissement."
+        ],
+        "explanation": "Une base étroite et des générations adultes plus larges sont compatibles avec un vieillissement et une moindre part de jeunes. La seule forme d’une pyramide ne démontre pas les causes exactes : il faut d’autres données.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q017",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Natalité, mortalité et espérance de vie",
+    "difficulty": "medium",
+    "question": "Le taux brut de natalité annuel est calculé à partir :",
+    "choices": [
+      "D’un multiplicateur usuel de 1 000",
+      "Des naissances vivantes annuelles",
+      "De la taille des maternités",
+      "Des seuls décès hospitaliers",
+      "De la population de référence de l’année"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Il s’agit du nombre annuel de naissances vivantes rapporté à la population moyenne, exprimé pour 1 000 habitants.",
+    "flashcards": [
+      {
+        "front": "Formule du taux brut de natalité ?",
+        "answers": [
+          "Naissances vivantes / population moyenne × 1 000."
+        ],
+        "explanation": "Il s’agit du nombre annuel de naissances vivantes rapporté à la population moyenne, exprimé pour 1 000 habitants.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q018",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Natalité, mortalité et espérance de vie",
+    "difficulty": "hard",
+    "question": "Pourquoi un taux brut de mortalité français peut-il dépasser le taux mondial ?",
+    "choices": [
+      "Cela prouve que chaque Français reçoit de moins bons soins",
+      "Le taux brut mesure forcément la létalité d’une maladie",
+      "Un taux brut suffit à juger de la qualité de deux systèmes de soins malgré des âges très différents",
+      "La population française est en moyenne plus âgée",
+      "Un taux brut est sensible à la structure par âge"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Un taux brut dépend de la structure d’âge. Une population plus âgée peut présenter un taux brut supérieur sans que la qualité des soins soit nécessairement moindre. Les comparaisons nécessitent des ajustements appropriés.",
+    "flashcards": [
+      {
+        "front": "Pourquoi standardiser la mortalité par âge ?",
+        "answers": [
+          "Pour comparer des populations ayant des structures d’âge différentes."
+        ],
+        "explanation": "Un taux brut dépend de la structure d’âge. Une population plus âgée peut présenter un taux brut supérieur sans que la qualité des soins soit nécessairement moindre. Les comparaisons nécessitent des ajustements appropriés.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q019",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Natalité, mortalité et espérance de vie",
+    "difficulty": "easy",
+    "question": "L’espérance de vie à la naissance est :",
+    "choices": [
+      "Calculée pour une génération fictive",
+      "Une prédiction détaillée des progrès médicaux futurs",
+      "Une date de décès certaine pour chaque nouveau-né",
+      "Exprimée en années",
+      "Un indicateur fondé sur les mortalités par âge de la période"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "L’espérance de vie de période applique les conditions de mortalité observées à une cohorte fictive ; elle ne prédit pas l’avenir individuel.",
+    "flashcards": [
+      {
+        "front": "Comment est construite l’espérance de vie de période ?",
+        "answers": [
+          "À partir des taux de mortalité par âge observés à une période donnée."
+        ],
+        "explanation": "L’espérance de vie de période applique les conditions de mortalité observées à une cohorte fictive ; elle ne prédit pas l’avenir individuel.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q020",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Natalité, mortalité et espérance de vie",
+    "difficulty": "medium",
+    "question": "Concernant la France en 2023, les valeurs approximatives de l’espérance de vie à la naissance sont :",
+    "choices": [
+      "Supérieures chez les hommes dans les données citées",
+      "50 ans chez les deux sexes",
+      "80,0 ans chez les hommes",
+      "85,7 ans chez les femmes",
+      "Toujours égales entre sexes"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "L’Insee indiquait 85,7 ans pour les femmes et 80,0 ans pour les hommes en 2023.",
+    "flashcards": [
+      {
+        "front": "Espérance de vie 2023 en France : femmes et hommes ?",
+        "answers": [
+          "Environ 85,7 ans pour les femmes et 80,0 ans pour les hommes."
+        ],
+        "explanation": "L’Insee indiquait 85,7 ans pour les femmes et 80,0 ans pour les hommes en 2023.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q021",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité maternelle",
+    "difficulty": "hard",
+    "question": "Selon la définition internationale, le décès maternel peut survenir :",
+    "choices": [
+      "À n’importe quel âge du bébé, sans limite temporelle",
+      "Pendant la grossesse",
+      "Seulement pendant les 28 premiers jours de vie du bébé",
+      "D’une cause liée à la grossesse ou à sa prise en charge",
+      "Dans les 42 jours après la fin d’une grossesse"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Un décès maternel survient pendant la grossesse ou dans les 42 jours suivant sa fin, pour une cause liée ou aggravée par la grossesse ou sa prise en charge, hors causes accidentelles ou fortuites. Ce n’est pas la définition de la mortalité néonatale.",
+    "flashcards": [
+      {
+        "front": "Jusqu’à quand un décès peut-il être qualifié de maternel ?",
+        "answers": [
+          "Pendant la grossesse et jusqu’à 42 jours après sa fin, si la cause est liée."
+        ],
+        "explanation": "Un décès maternel survient pendant la grossesse ou dans les 42 jours suivant sa fin, pour une cause liée ou aggravée par la grossesse ou sa prise en charge, hors causes accidentelles ou fortuites. Ce n’est pas la définition de la mortalité néonatale.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q022",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité maternelle",
+    "difficulty": "easy",
+    "question": "Le rapport de mortalité maternelle (RMM) est exprimé :",
+    "choices": [
+      "Avec la population masculine au dénominateur",
+      "En pourcentage sans unité complémentaire",
+      "Pour 10 naissances vivantes",
+      "En décès maternels au numérateur",
+      "Pour 100 000 naissances vivantes"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le RMM rapporte les décès maternels aux naissances vivantes, multiplié par 100 000.",
+    "flashcards": [
+      {
+        "front": "Quel est le dénominateur du RMM ?",
+        "answers": [
+          "Les naissances vivantes ; ratio pour 100 000."
+        ],
+        "explanation": "Le RMM rapporte les décès maternels aux naissances vivantes, multiplié par 100 000.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q023",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité maternelle",
+    "difficulty": "medium",
+    "question": "L’ODD 3.1 fixe comme objectif mondial pour 2030 :",
+    "choices": [
+      "RMM inférieur à 70 pour 100 naissances",
+      "Suppression de toutes les grossesses à risque",
+      "Objectif sans date",
+      "Cible déjà atteinte en 2023",
+      "RMM inférieur à 70 pour 100 000 naissances vivantes"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "L’objectif international de 2030 est un RMM mondial inférieur à 70 décès maternels pour 100 000 naissances vivantes.",
+    "flashcards": [
+      {
+        "front": "Quelle est la cible mondiale ODD 3.1 pour 2030 ?",
+        "answers": [
+          "Moins de 70 décès maternels pour 100 000 naissances vivantes."
+        ],
+        "explanation": "L’objectif international de 2030 est un RMM mondial inférieur à 70 décès maternels pour 100 000 naissances vivantes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q024",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité maternelle",
+    "difficulty": "hard",
+    "question": "Le constat mondial 2023 publié par l’OMS correspond à :",
+    "choices": [
+      "Un décès maternel environ toutes les deux minutes",
+      "Deux décès maternels chaque minute",
+      "Une absence de disparité régionale",
+      "Environ 260 000 décès maternels",
+      "Les estimations mondiales proviennent d’un recensement nominatif exhaustif des décès dans tous les pays"
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’OMS estime environ 260 000 décès maternels en 2023, soit près d’un décès toutes les deux minutes. Le rapport mondial de 197 décès pour 100 000 naissances vivantes est une estimation statistique, pas un recensement nominatif exhaustif.",
+    "flashcards": [
+      {
+        "front": "Combien de décès maternels mondiaux estimés en 2023 ?",
+        "answers": [
+          "Environ 260 000, soit près d’un décès toutes les deux minutes."
+        ],
+        "explanation": "L’OMS estime environ 260 000 décès maternels en 2023, soit près d’un décès toutes les deux minutes. Le rapport mondial de 197 décès pour 100 000 naissances vivantes est une estimation statistique, pas un recensement nominatif exhaustif.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q025",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité des enfants",
+    "difficulty": "easy",
+    "question": "La mortalité néonatale concerne les décès :",
+    "choices": [
+      "Avant la fin du premier mois approximativement",
+      "Pendant les 28 premiers jours de vie",
+      "Liés uniquement au VIH",
+      "Exclusivement au-delà de 42 jours",
+      "Avant 5 ans sans précision"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La période néonatale correspond aux 28 premiers jours de vie (jours 0 à 27 révolus).",
+    "flashcards": [
+      {
+        "front": "Quels jours couvre la période néonatale ?",
+        "answers": [
+          "De la naissance au 27e jour inclus (avant 28 jours)."
+        ],
+        "explanation": "La période néonatale correspond aux 28 premiers jours de vie (jours 0 à 27 révolus).",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q026",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité des enfants",
+    "difficulty": "medium",
+    "question": "Quelle définition est exacte ?",
+    "choices": [
+      "Under-five mortality : décès avant 5 ans",
+      "Infant mortality : décès avant 1 an",
+      "Infant mortality : décès avant 10 ans",
+      "Toutes ces mesures ont le même dénominateur et même horizon",
+      "Néonatal : décès dans les 42 jours après grossesse de la mère"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’anglais distingue infant mortality (< 1 an) et under-five mortality (< 5 ans).",
+    "flashcards": [
+      {
+        "front": "Différence entre mortalité infantile et mortalité des moins de cinq ans ?",
+        "answers": [
+          "Avant 1 an pour l’infantile ; avant 5 ans pour la seconde."
+        ],
+        "explanation": "L’anglais distingue infant mortality (< 1 an) et under-five mortality (< 5 ans).",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q027",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité des enfants",
+    "difficulty": "hard",
+    "question": "Parmi les cibles ODD 3.2 pour 2030, lesquelles sont correctes ?",
+    "choices": [
+      "Mortalité des moins de 5 ans ≤ 25 pour 1 000",
+      "Moins de 5 ans ≤ 12 pour 100 000",
+      "Mortalité néonatale ≤ 12 pour 1 000 naissances vivantes",
+      "Absence de cible pour les enfants",
+      "Néonatale ≤ 70 pour 100 000"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Les pays visent 12 décès néonatals et 25 décès avant cinq ans, respectivement pour 1 000 naissances vivantes.",
+    "flashcards": [
+      {
+        "front": "Quelles cibles ODD 3.2 pour les enfants ?",
+        "answers": [
+          "Au plus 12 décès néonatals et 25 décès avant 5 ans pour 1 000 naissances vivantes."
+        ],
+        "explanation": "Les pays visent 12 décès néonatals et 25 décès avant cinq ans, respectivement pour 1 000 naissances vivantes.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q028",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Mortalité des enfants",
+    "difficulty": "easy",
+    "question": "Quelles tendances générales observe-t-on dans la mortalité des enfants depuis 2000 ?",
+    "choices": [
+      "Un ralentissement de la baisse sur une période récente",
+      "L’inversion générale de toutes les courbes",
+      "Des différences persistantes entre régions",
+      "Une baisse globale depuis 2000",
+      "L’égalité des indicateurs entre régions dès 2015"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Les deux mortalités diminuent dans l’ensemble, mais les disparités régionales restent fortes et les progrès récents ralentissent.",
+    "flashcards": [
+      {
+        "front": "Quelle tendance générale suit la mortalité avant cinq ans ?",
+        "answers": [
+          "Une baisse mondiale, mais des écarts régionaux persistants."
+        ],
+        "explanation": "Les deux mortalités diminuent dans l’ensemble, mais les disparités régionales restent fortes et les progrès récents ralentissent.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q029",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Prévalence, incidence et personnes-années",
+    "difficulty": "medium",
+    "question": "Huit personnes malades parmi 100 observées à un instant :",
+    "choices": [
+      "La prévalence inclut des cas anciens et récents",
+      "Prévalence ponctuelle de 8 %",
+      "Incidence cumulée de 8 % nécessairement",
+      "Il faut connaître les nouveaux cas pour calculer l’incidence",
+      "Le taux d’incidence est 8 personnes-années"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Huit personnes déjà malades sur 100 à un instant représentent une prévalence de 8 %. On ignore combien de cas sont nouveaux ; il serait incorrect de parler d’incidence cumulée ou de cas par personne-année.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que la prévalence ponctuelle ?",
+        "answers": [
+          "La proportion de cas existants dans une population à un instant donné."
+        ],
+        "explanation": "Huit personnes déjà malades sur 100 à un instant représentent une prévalence de 8 %. On ignore combien de cas sont nouveaux ; il serait incorrect de parler d’incidence cumulée ou de cas par personne-année.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q030",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Prévalence, incidence et personnes-années",
+    "difficulty": "hard",
+    "question": "Neuf cas nouveaux parmi 100 initialement indemnes suivies intégralement deux ans :",
+    "choices": [
+      "Un taux de 9 cas/personne-année",
+      "Le risque cumulé porte sur la période entière",
+      "Incidence cumulée de 9 % sur 2 ans",
+      "Prévalence ponctuelle automatiquement 9 %",
+      "Des cas apparus pendant le suivi"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Neuf nouveaux cas parmi 100 personnes initialement indemnes suivies intégralement deux ans donnent une incidence cumulée de 9 % sur deux ans. Cela ne suffit pas à calculer une prévalence ni une densité d’incidence.",
+    "flashcards": [
+      {
+        "front": "Neuf nouveaux cas sur 100 sujets suivis deux ans : incidence cumulée ?",
+        "answers": [
+          "9 % sur deux ans, si le suivi est complet."
+        ],
+        "explanation": "Neuf nouveaux cas parmi 100 personnes initialement indemnes suivies intégralement deux ans donnent une incidence cumulée de 9 % sur deux ans. Cela ne suffit pas à calculer une prévalence ni une densité d’incidence.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q031",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Prévalence, incidence et personnes-années",
+    "difficulty": "easy",
+    "question": "Le dénominateur d’un taux d’incidence comprend :",
+    "choices": [
+      "Les naissances du territoire quelle que soit la maladie",
+      "Le temps perdu de vue doit être compté comme du temps réellement observé à risque",
+      "Des personnes-années ou personnes-mois",
+      "La somme des personnes-temps à risque",
+      "Uniquement les personnes malades au dernier jour"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le taux d’incidence rapporte les nouveaux cas à la somme des temps-personnes réellement passés à risque (personnes-années ou personnes-mois). Une durée non observée ne s’ajoute pas au dénominateur.",
+    "flashcards": [
+      {
+        "front": "Quel dénominateur utiliser pour un taux d’incidence ?",
+        "answers": [
+          "La somme des temps-personnes réellement observés à risque."
+        ],
+        "explanation": "Le taux d’incidence rapporte les nouveaux cas à la somme des temps-personnes réellement passés à risque (personnes-années ou personnes-mois). Une durée non observée ne s’ajoute pas au dénominateur.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q032",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Prévalence, incidence et personnes-années",
+    "difficulty": "medium",
+    "question": "Quelle affirmation est scientifiquement exacte ?",
+    "choices": [
+      "La prévalence décrit exclusivement les nouveaux cas",
+      "Le taux d’incidence et la contagiosité sont synonymes",
+      "Le taux d’incidence renseigne la vitesse d’apparition des nouveaux cas",
+      "Une personne perdue de vue n’apporte pas nécessairement le même temps de suivi que les autres",
+      "La prévalence n’a pas de dénominateur"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La densité d’incidence utilise le temps d’observation ; elle n’est pas une mesure directe de contagiosité.",
+    "flashcards": [
+      {
+        "front": "Le taux d’incidence est-il une mesure de contagiosité ?",
+        "answers": [
+          "Non. Il mesure la vitesse de survenue de nouveaux cas."
+        ],
+        "explanation": "La densité d’incidence utilise le temps d’observation ; elle n’est pas une mesure directe de contagiosité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q033",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Transition épidémiologique",
+    "difficulty": "hard",
+    "question": "Quelle catégorie domine la mortalité globale selon les tendances présentées ?",
+    "choices": [
+      "Exclusivement tuberculose",
+      "Uniquement accidents",
+      "Maladies non transmissibles",
+      "Aucune grande catégorie",
+      "Uniquement maladies vectorielles"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "À l’échelle mondiale, les maladies non transmissibles sont à l’origine de la majorité des décès.",
+    "flashcards": [
+      {
+        "front": "Quelle famille domine les décès dans le monde ?",
+        "answers": [
+          "Les maladies non transmissibles."
+        ],
+        "explanation": "À l’échelle mondiale, les maladies non transmissibles sont à l’origine de la majorité des décès.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q034",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Transition épidémiologique",
+    "difficulty": "easy",
+    "question": "Parmi les affections suivantes, lesquelles sont des maladies non transmissibles ?",
+    "choices": [
+      "Paludisme",
+      "Diabète",
+      "Tuberculose active",
+      "Maladies cardiovasculaires",
+      "Cancers"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les MNT comprennent notamment cardiovasculaires, diabète, cancers et maladies respiratoires chroniques. Paludisme et tuberculose sont infectieux.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les quatre grandes catégories de MNT ?",
+        "answers": [
+          "Maladies cardiovasculaires",
+          "Cancers",
+          "Diabète",
+          "Maladies respiratoires chroniques"
+        ],
+        "explanation": "Les MNT comprennent notamment cardiovasculaires, diabète, cancers et maladies respiratoires chroniques. Paludisme et tuberculose sont infectieux.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q035",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Transition épidémiologique",
+    "difficulty": "medium",
+    "question": "La transition épidémiologique peut comporter :",
+    "choices": [
+      "L’élimination instantanée de tout risque infectieux",
+      "Une égalité parfaite entre pays",
+      "Une réduction relative du poids des infections",
+      "Une baisse obligatoire de l’espérance de vie pendant toute la transition",
+      "La disparition des maladies chroniques dans les pays à revenu élevé"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La transition épidémiologique se manifeste souvent par la diminution relative du poids de certaines infections. Elle s’accompagne généralement d’un poids important des maladies chroniques et d’une amélioration de la survie ; elle n’efface pas toutes les infections.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que la transition épidémiologique ?",
+        "answers": [
+          "La modification du poids relatif des maladies, souvent vers les pathologies chroniques."
+        ],
+        "explanation": "La transition épidémiologique se manifeste souvent par la diminution relative du poids de certaines infections. Elle s’accompagne généralement d’un poids important des maladies chroniques et d’une amélioration de la survie ; elle n’efface pas toutes les infections.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q036",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Transition épidémiologique",
+    "difficulty": "hard",
+    "question": "Pour interpréter les disparités de santé entre régions du Nord et du Sud, quelles affirmations sont pertinentes ?",
+    "choices": [
+      "Comme un raccourci de disparités historiques",
+      "En tenant compte des déterminants sociaux et de l’accès aux soins",
+      "Comme une description parfaite de chaque pays",
+      "Avec des inégalités possibles dans chaque pays",
+      "Comme une différence exclusivement génétique"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les disparités sanitaires dépendent des déterminants et de l’accès, et existent aussi à l’intérieur des pays.",
+    "flashcards": [
+      {
+        "front": "Pourquoi éviter un contraste Nord–Sud trop simpliste ?",
+        "answers": [
+          "Les inégalités existent également au sein de chaque pays."
+        ],
+        "explanation": "Les disparités sanitaires dépendent des déterminants et de l’accès, et existent aussi à l’intérieur des pays.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q037",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "VIH, sida et prévention",
+    "difficulty": "easy",
+    "question": "Quelle distinction VIH / sida est exacte ?",
+    "choices": [
+      "Le sida correspond à un virus complètement différent",
+      "Une infection par le VIH ne se traite jamais",
+      "Le VIH affecte les défenses immunitaires",
+      "Le sida est le stade avancé de l’infection par le VIH",
+      "Le VIH est une bactérie"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le VIH est le virus ; le sida désigne la forme avancée avec immunodéficience sévère et complications.",
+    "flashcards": [
+      {
+        "front": "Le VIH et le sida sont-ils deux virus différents ?",
+        "answers": [
+          "Non. Le sida est un stade avancé de l’infection par le VIH."
+        ],
+        "explanation": "Le VIH est le virus ; le sida désigne la forme avancée avec immunodéficience sévère et complications.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q038",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "VIH, sida et prévention",
+    "difficulty": "medium",
+    "question": "Pour une personne vivant avec le VIH au stade sida, les antirétroviraux :",
+    "choices": [
+      "Guérissent définitivement le VIH",
+      "Restent indiqués",
+      "Les infections opportunistes au stade sida ne nécessitent aucune prise en charge particulière",
+      "Participent au contrôle de l’infection",
+      "Doivent toujours être interrompus"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Les antirétroviraux restent indiqués au stade sida et contribuent au contrôle de l’infection VIH. Il ne faut pas arrêter systématiquement le traitement ; les infections opportunistes éventuelles exigent une prise en charge adaptée.",
+    "flashcards": [
+      {
+        "front": "Les antirétroviraux restent-ils indiqués au stade sida ?",
+        "answers": [
+          "Oui, à tous les stades, avec prise en charge des complications."
+        ],
+        "explanation": "Les antirétroviraux restent indiqués au stade sida et contribuent au contrôle de l’infection VIH. Il ne faut pas arrêter systématiquement le traitement ; les infections opportunistes éventuelles exigent une prise en charge adaptée.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q039",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "VIH, sida et prévention",
+    "difficulty": "hard",
+    "question": "À propos de la prévention biomédicale du VIH :",
+    "choices": [
+      "PrEP et TPE sont identiques",
+      "TPE/PEP = prise en charge après exposition",
+      "La PrEP se discute chez toute personne éligible exposée",
+      "PrEP interdite aux femmes",
+      "PrEP = prévention avant une exposition"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La PrEP est proposée avant une exposition éventuelle au VIH ; le traitement post-exposition intervient rapidement après une exposition. L’éligibilité dépend du risque et des indications, pas du sexe : les femmes peuvent bénéficier de PrEP.",
+    "flashcards": [
+      {
+        "front": "PrEP et TPE : quelle différence temporelle ?",
+        "answers": [
+          "PrEP avant exposition ; TPE rapidement après exposition."
+        ],
+        "explanation": "La PrEP est proposée avant une exposition éventuelle au VIH ; le traitement post-exposition intervient rapidement après une exposition. L’éligibilité dépend du risque et des indications, pas du sexe : les femmes peuvent bénéficier de PrEP.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q040",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "VIH, sida et prévention",
+    "difficulty": "easy",
+    "question": "La formule « indétectable = intransmissible » signifie :",
+    "choices": [
+      "Protection contre toutes les IST",
+      "Prévention efficace de la transmission sexuelle du VIH",
+      "Sous contrôle thérapeutique durable, pas de transmission sexuelle du VIH",
+      "La charge virale doit être effectivement contrôlée",
+      "Arrêt systématique de tout suivi médical"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Une charge virale VIH durablement indétectable sous traitement supprime le risque de transmission sexuelle du VIH (I = I), sans protéger contre les autres IST ni supprimer le suivi médical.",
+    "flashcards": [
+      {
+        "front": "Que signifie I = I pour le VIH ?",
+        "answers": [
+          "Charge virale durablement indétectable : pas de transmission sexuelle du VIH."
+        ],
+        "explanation": "Une charge virale VIH durablement indétectable sous traitement supprime le risque de transmission sexuelle du VIH (I = I), sans protéger contre les autres IST ni supprimer le suivi médical.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q041",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Paludisme, tuberculose et infections",
+    "difficulty": "medium",
+    "question": "À propos du paludisme, quels énoncés sont justes ?",
+    "choices": [
+      "Transmission habituelle par une femelle Anopheles",
+      "P. falciparum associé aux formes graves",
+      "Transmission ordinaire par simple poignée de main",
+      "Agent parasite du genre Plasmodium",
+      "Maladie uniquement présente en France"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le paludisme est une maladie parasitaire transmise essentiellement par anophèle femelle ; P. falciparum peut être grave.",
+    "flashcards": [
+      {
+        "front": "Quel parasite et quel vecteur causent le paludisme ?",
+        "answers": [
+          "Plasmodium ; transmission généralement par une femelle Anopheles infectée."
+        ],
+        "explanation": "Le paludisme est une maladie parasitaire transmise essentiellement par anophèle femelle ; P. falciparum peut être grave.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q042",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Paludisme, tuberculose et infections",
+    "difficulty": "hard",
+    "question": "Dans le paludisme, les mesures de prévention comportent :",
+    "choices": [
+      "Arrêt de toute prévention dès la première fièvre",
+      "Éducation et prévention territoriale",
+      "Moustiquaires adaptées",
+      "Lutte contre les piqûres et vecteurs",
+      "Uniquement vaccination rougeole"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Les mesures antivectorielles et l’information sont des leviers majeurs ; elles ne remplacent pas le soin rapide des malades.",
+    "flashcards": [
+      {
+        "front": "Quelle prévention réduit les piqûres en zone de paludisme ?",
+        "answers": [
+          "Moustiquaires imprégnées, répulsifs et lutte antivectorielle."
+        ],
+        "explanation": "Les mesures antivectorielles et l’information sont des leviers majeurs ; elles ne remplacent pas le soin rapide des malades.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q043",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Paludisme, tuberculose et infections",
+    "difficulty": "easy",
+    "question": "Concernant la tuberculose latente :",
+    "choices": [
+      "Une infection tuberculeuse latente non active est contagieuse par la toux",
+      "Elle n’est pas contagieuse en elle-même",
+      "Elle se manifeste toujours par hémoptysie",
+      "Elle peut rester asymptomatique",
+      "Elle est due à un parasite"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Une infection tuberculeuse latente peut rester silencieuse et n’est pas contagieuse par elle-même. Elle peut toutefois évoluer vers une tuberculose active ; la transmission aérienne concerne certaines maladies actives, notamment pulmonaires.",
+    "flashcards": [
+      {
+        "front": "Une infection tuberculeuse latente est-elle contagieuse ?",
+        "answers": [
+          "Non, à la différence de certaines tuberculoses actives."
+        ],
+        "explanation": "Une infection tuberculeuse latente peut rester silencieuse et n’est pas contagieuse par elle-même. Elle peut toutefois évoluer vers une tuberculose active ; la transmission aérienne concerne certaines maladies actives, notamment pulmonaires.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q044",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Paludisme, tuberculose et infections",
+    "difficulty": "medium",
+    "question": "La tuberculose pulmonaire active peut :",
+    "choices": [
+      "Nécessiter plusieurs antibiotiques sur plusieurs mois",
+      "Se transmettre par aérosols",
+      "Être reconnue uniquement par une hémoptysie obligatoire",
+      "Être causée par un moustique anophèle",
+      "Justifier des précautions respiratoires adaptées"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "La tuberculose pulmonaire active se transmet par l’air ; le traitement est prolongé et la prévention respiratoire est déterminante.",
+    "flashcards": [
+      {
+        "front": "Comment se transmet la tuberculose pulmonaire active ?",
+        "answers": [
+          "Par l’air, via les aérosols infectieux."
+        ],
+        "explanation": "La tuberculose pulmonaire active se transmet par l’air ; le traitement est prolongé et la prévention respiratoire est déterminante.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q045",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Paludisme, tuberculose et infections",
+    "difficulty": "hard",
+    "question": "Laquelle des affections suivantes est une maladie infectieuse émergente ou réémergente ?",
+    "choices": [
+      "Arthrose",
+      "Dyslipidémie",
+      "L’hypertension artérielle",
+      "Ebola",
+      "La cataracte"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Ebola est un exemple de risque infectieux émergent ou réémergent. L’arthrose et la dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
+    "flashcards": [
+      {
+        "front": "Quel agent infectieux est en cause dans les épidémies de Zika ?",
+        "answers": [
+          "Le virus Zika, principalement transmis par certains moustiques Aedes."
+        ],
+        "explanation": "Ebola est un exemple de risque infectieux émergent ou réémergent. L’arthrose et la dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q046",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Maladies cardiovasculaires et chroniques",
+    "difficulty": "easy",
+    "question": "Parmi les facteurs de risque cardiovasculaire, on peut retenir :",
+    "choices": [
+      "Le groupe sanguin comme seule cause",
+      "Tabagisme",
+      "L’absence de toute interaction avec le diabète",
+      "Dyslipidémie",
+      "Hypertension artérielle"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "HTA, dyslipidémie et tabagisme sont des facteurs majeurs ; le diabète s’ajoute souvent au risque.",
+    "flashcards": [
+      {
+        "front": "Quels facteurs modifiables augmentent le risque cardiovasculaire ?",
+        "answers": [
+          "HTA, tabagisme, dyslipidémie et diabète notamment."
+        ],
+        "explanation": "HTA, dyslipidémie et tabagisme sont des facteurs majeurs ; le diabète s’ajoute souvent au risque.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q047",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Maladies cardiovasculaires et chroniques",
+    "difficulty": "medium",
+    "question": "Quels énoncés décrivent des événements ou maladies cardiovasculaires ?",
+    "choices": [
+      "AVC",
+      "Une infection à VIH",
+      "Paludisme",
+      "Onchocercose",
+      "Une crise d’asthme"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’AVC est une atteinte cardiovasculaire. Le VIH et le paludisme sont infectieux ; l’onchocercose est parasitaire. Les maladies cardiovasculaires comprennent également l’infarctus et l’insuffisance cardiaque.",
+    "flashcards": [
+      {
+        "front": "L’AVC et l’infarctus appartiennent à quel groupe de maladies ?",
+        "answers": [
+          "Aux maladies cardiovasculaires."
+        ],
+        "explanation": "L’AVC est une atteinte cardiovasculaire. Le VIH et le paludisme sont infectieux ; l’onchocercose est parasitaire. Les maladies cardiovasculaires comprennent également l’infarctus et l’insuffisance cardiaque.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q048",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Maladies cardiovasculaires et chroniques",
+    "difficulty": "hard",
+    "question": "Pourquoi nombre absolu de décès et taux de mortalité standardisé peuvent-ils évoluer différemment ?",
+    "choices": [
+      "Parce que ce sont obligatoirement deux graphiques erronés",
+      "Vieillissement de la population",
+      "Changement de l’effectif total",
+      "Parce que standardisé signifie « inventé »",
+      "Progrès de prévention et de prise en charge"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Un effectif dépend de la population exposée ; le taux standardisé vise à neutraliser l’effet des différences de structure d’âge.",
+    "flashcards": [
+      {
+        "front": "Pourquoi le nombre de décès peut-il monter quand le taux standardisé baisse ?",
+        "answers": [
+          "La population peut croître et vieillir en parallèle."
+        ],
+        "explanation": "Un effectif dépend de la population exposée ; le taux standardisé vise à neutraliser l’effet des différences de structure d’âge.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q049",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Maladies cardiovasculaires et chroniques",
+    "difficulty": "easy",
+    "question": "Le rôle infirmier dans la prévention des maladies chroniques comprend :",
+    "choices": [
+      "Remplacement complet du médecin",
+      "Orientation devant un signe d’alerte",
+      "Éducation et repérage des facteurs de risque",
+      "Diagnostic médical autonome de tous les cancers",
+      "Accompagnement de l’observance"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le soin infirmier associe surveillance, prévention, information et collaboration, sans remplacer les compétences médicales.",
+    "flashcards": [
+      {
+        "front": "Quel est le rôle infirmier en prévention cardiovasculaire ?",
+        "answers": [
+          "Repérage, surveillance, éducation, accompagnement et orientation."
+        ],
+        "explanation": "Le soin infirmier associe surveillance, prévention, information et collaboration, sans remplacer les compétences médicales.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q050",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Cancers et dépistage",
+    "difficulty": "medium",
+    "question": "À propos du nombre de nouveaux diagnostics de cancer enregistrés sur une période :",
+    "choices": [
+      "Elle désigne uniquement la survie à cinq ans",
+      "La croissance et le vieillissement de la population peuvent augmenter le nombre absolu de cas",
+      "Le dépistage et la qualité de l’enregistrement ne changent jamais le nombre de cancers diagnostiqués",
+      "Elle décrit les nouveaux diagnostics sur une période",
+      "Elle est identique à la létalité"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’incidence concerne les nouveaux diagnostics pendant une période. La croissance démographique et le vieillissement peuvent augmenter leur nombre absolu ; le dépistage et la qualité des registres influencent aussi les cas observés. Ce n’est ni la létalité ni la survie à cinq ans.",
+    "flashcards": [
+      {
+        "front": "Que mesure l’incidence d’un cancer ?",
+        "answers": [
+          "Les nouveaux diagnostics pendant une période donnée."
+        ],
+        "explanation": "L’incidence concerne les nouveaux diagnostics pendant une période. La croissance démographique et le vieillissement peuvent augmenter leur nombre absolu ; le dépistage et la qualité des registres influencent aussi les cas observés. Ce n’est ni la létalité ni la survie à cinq ans.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q051",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Cancers et dépistage",
+    "difficulty": "hard",
+    "question": "La survie nette standardisée d’un cancer :",
+    "choices": [
+      "Est nécessairement la survie à un an",
+      "Est utilisée pour comparer des pronostics",
+      "Doit préciser l’horizon de suivi",
+      "La survie nette standardisée est indépendante de toute méthode d’ajustement liée à l’âge",
+      "Se confond toujours avec la mortalité brute"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "La survie nette aide à estimer le pronostic en s’affranchissant des décès attendus d’autres causes ; la standardisation permet de comparer en tenant compte des structures d’âge. Il faut préciser l’horizon, par exemple cinq ans.",
+    "flashcards": [
+      {
+        "front": "Pourquoi préciser « survie nette à cinq ans » ?",
+        "answers": [
+          "Le type de survie et la durée changent l’interprétation du pronostic."
+        ],
+        "explanation": "La survie nette aide à estimer le pronostic en s’affranchissant des décès attendus d’autres causes ; la standardisation permet de comparer en tenant compte des structures d’âge. Il faut préciser l’horizon, par exemple cinq ans.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "c11_s1_q052",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Cancers et dépistage",
+    "difficulty": "easy",
+    "question": "Les programmes organisés de dépistage des cancers en France comprennent :",
+    "choices": [
+      "Tous les cancers sans distinction",
+      "Col de l’utérus",
+      "Colorectal",
+      "Sein",
+      "Pancréas pour toute la population"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Les programmes de dépistage organisé en France concernent le sein, le côlon-rectum et le col de l’utérus selon des conditions d’âge ou de risque. Il n’existe pas de dépistage organisé universel de tous les cancers.",
+    "flashcards": [
+      {
+        "front": "Quels cancers font l’objet d’un dépistage organisé en France ?",
+        "answers": [
+          "Sein, colorectal et col de l’utérus."
+        ],
+        "explanation": "Les programmes de dépistage organisé en France concernent le sein, le côlon-rectum et le col de l’utérus selon des conditions d’âge ou de risque. Il n’existe pas de dépistage organisé universel de tous les cancers.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q053",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Cancers et dépistage",
+    "difficulty": "medium",
+    "question": "Le dépistage individuel est généralement :",
+    "choices": [
+      "Évaluable en fonction d’antécédents familiaux",
+      "Obligatoirement identique pour tous les âges",
+      "Adapté au risque propre à une personne",
+      "Différent d’une invitation standard de dépistage organisé",
+      "Toujours une garantie de guérison"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le dépistage individuel suit une évaluation personnalisée ; il ne doit pas être confondu avec un programme systématique.",
+    "flashcards": [
+      {
+        "front": "Le dépistage d’un cancer confirme-t-il le diagnostic ?",
+        "answers": [
+          "Non, un résultat positif nécessite des examens diagnostiques."
+        ],
+        "explanation": "Le dépistage individuel suit une évaluation personnalisée ; il ne doit pas être confondu avec un programme systématique.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q054",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Synthèse et interprétation",
+    "difficulty": "hard",
+    "question": "Une question compare « 639 000 naissances en France » à « 677 800 » en 2023. La bonne démarche :",
+    "choices": [
+      "Conclure à une fraude statistique",
+      "Vérifier le champ métropole / France entière",
+      "Vérifier l’année",
+      "Qualifier les sources",
+      "Choisir au hasard la valeur la plus haute"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Les chiffres décrivent des périmètres distincts ; l’année et la source doivent accompagner la valeur.",
+    "flashcards": [
+      {
+        "front": "Pourquoi deux nombres de naissances françaises peuvent-ils différer ?",
+        "answers": [
+          "Ils peuvent concerner la métropole ou l’ensemble de la France."
+        ],
+        "explanation": "Les chiffres décrivent des périmètres distincts ; l’année et la source doivent accompagner la valeur.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "c11_s1_q055",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Synthèse et interprétation",
+    "difficulty": "easy",
+    "question": "Quel ensemble de priorités correspond le mieux aux attentes orales pour l’évaluation ?",
+    "choices": [
+      "Apprendre chaque nombre annuel par cœur avant tout",
+      "Mémoriser des chiffres sans connaître les unités ni les dénominateurs",
+      "Comprendre les tendances",
+      "Confondre projection et observation",
+      "Interpréter toute corrélation comme une causalité prouvée"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Pour interpréter des indicateurs sanitaires, les priorités sont les tendances, les mécanismes, les définitions et les dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique ne prouve pas la causalité.",
+    "flashcards": [
+      {
+        "front": "Quel est le premier réflexe devant un chiffre en santé publique ?",
+        "answers": [
+          "Vérifier unité, période, population, territoire et source."
+        ],
+        "explanation": "Pour interpréter des indicateurs sanitaires, les priorités sont les tendances, les mécanismes, les définitions et les dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique ne prouve pas la causalité.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "c11_s1_q056",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "partId": "p01",
+    "theme": "Synthèse et interprétation",
+    "difficulty": "medium",
+    "question": "Un même territoire connaît une charge importante de tuberculose et de diabète. Quelles conclusions sont exactes ?",
+    "choices": [
+      "Le recul de certaines infections ne fait pas disparaître toutes les maladies infectieuses",
+      "Les déterminants sociaux peuvent jouer sur ces deux groupes de maladies",
+      "La présence du diabète rend la tuberculose non contagieuse",
+      "Il peut cumuler maladies transmissibles et non transmissibles",
+      "Ce cumul prouve qu’aucune transition épidémiologique n’existe"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La double charge désigne la coexistence d’infections et de maladies non transmissibles. Le vieillissement et les progrès contre certaines infections n’en éliminent pas toutes les formes ; la situation sociale peut influencer les deux catégories.",
+    "flashcards": [
+      {
+        "front": "Que signifie « double charge » épidémiologique ?",
+        "answers": [
+          "La coexistence d’infections et de maladies chroniques dans une population."
+        ],
+        "explanation": "La double charge désigne la coexistence d’infections et de maladies non transmissibles. Le vieillissement et les progrès contre certaines infections n’en éliminent pas toutes les formes ; la situation sociale peut influencer les deux catégories.",
+        "kind": "Cours",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ],
+    "announcedCorrectCount": 3
+  }
+]
