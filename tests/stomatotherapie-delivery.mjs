@@ -50,7 +50,8 @@ for(const id of ['infections_neuro_meningees','pharmacologie'])assert.ok(revisio
 for(const c of revisions)assert.equal(questions.filter(q=>q.courseId===c.courseId).length,c.qcmCount);
 const revisedIds=new Set(revisions.filter(c=>c.deliveryQuestionScope!=='declared_parts').map(c=>c.courseId));
 const newPartIds=new Set(revisions.filter(c=>c.deliveryQuestionScope==='declared_parts').flatMap(c=>c.partDeliveries.flatMap(p=>p.qcmQuestionIds))); 
-const old=questions.filter(q=>q.courseId!=='stomatotherapie'&&q.courseId!=="droits_patients"&&!revisedIds.has(q.courseId)&&!newPartIds.has(q.id));
+const firstReleaseIds=new Set(read('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='source_limited_first_release').map(c=>c.courseId));
+const old=questions.filter(q=>q.courseId!=='stomatotherapie'&&q.courseId!=="droits_patients"&&!revisedIds.has(q.courseId)&&!newPartIds.has(q.id)&&!firstReleaseIds.has(q.courseId));
 const supplements=read('docs/qcm-supplements.json').supplements;
 const authorized=supplements.flatMap(x=>read(x.pack)).filter(q=>q.courseId!=='stomatotherapie');
 const authorizedIds=new Set(authorized.map(q=>q.id));
