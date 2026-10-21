@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {createHash} from 'node:crypto';
 
 function canonical(value){
@@ -25,6 +26,7 @@ export function publicationBundle(courseId,delivery,data){
   visualAudit:delivery.visualAudit,
   publishedVerification:delivery.publishedVerification,
   artifactSha256s:delivery.artifactSha256s||{},
+  ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
   ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
@@ -53,6 +55,9 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
   validatePublicationApproval(id,delivery,digest);
+  // Les changements QCM/audio seuls ne forcent pas une revue d'illustration;
+  // un PDF/une figure nouveaux ou modifies ne passent plus sur un comptage PASS.
+  requireVisualReviewIfChanged(id,prior,delivery,oldData,newData);
   const fileIds=new Set(bundle.documentIds);
   function collect(value,key){
    if(Array.isArray(value))return value.forEach(v=>collect(v,key));
