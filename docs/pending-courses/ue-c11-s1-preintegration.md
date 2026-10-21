@@ -41,3 +41,24 @@ La présente correction **quarantaine le contenu pédagogique** : elle rétablit
 - Obtenir un GO publication explicite avant fusion / déploiement du lot.
 
 Références : `docs/NEW_COURSE_PUBLIC_CONTRACT.md`, `docs/COURSE_DELIVERY.md`, `docs/PUBLICATION_APPROVAL.md`.
+
+
+## Contrôle de fidélité aux valeurs du cours — 21/10/2026
+
+**Consigne du propriétaire : garder les valeurs du cours.** Les chiffres et ordres de grandeur de la séance restent ceux du support pédagogique, avec année/périmètre/unité conservés. Il ne faut pas les remplacer automatiquement par des statistiques plus récentes. Une explication mathématique ou une légende peut être corrigée sans changer les valeurs originales.
+
+**Échantillons de contrôle de la fiche de 16 pages, fondée sur 101 captures et une transcription (source officielle intégrale non disponible) :**
+- Population mondiale : **8,1 milliards en 2024** (planche 03 courante).
+- Monde en 2023 : **≈ 132 millions de naissances** et **≈ 61,7 millions de décès** (fiche p. 5).
+- France en 2023 : **639 533 naissances pour la métropole**, avec distinction explicite de la France entière (**677 803**) ; ne pas confondre les périmètres (fiche p. 5).
+- Espérance de vie 2023 : **85,7 ans femmes** et **80,0 ans hommes** (fiche p. 6).
+- Monde 2023 : **≈ 260 000 décès maternels** ; définition de **42 jours**, objectif ODD 3.1 **<70 pour 100 000 en 2030** (fiche p. 7).
+- France 2023 : **≈ 433 136 nouveaux cancers**, estimation datée (fiche p. 14).
+
+**Contrôle des exports Drive dans la version de préparation du 21/10 :**
+- Neuf PNG sont pixel par pixel identiques aux neuf pages du PDF courant « 9 planches ».
+- Le **PDF courant** affiche sur la planche 03 la distinction correcte entre accroissement en effectif et taux en %, et rappelle que le monde comme la France vieillissent à des rythmes distincts. L'ancienne archive « V3 » comporte une version différente et incorrecte de la planche 03 : ne pas la restaurer par erreur.
+- La planche 06 individuelle courante présente le TPE VIH « idéal <4 h, max. 48 h » et mentionne le BCG / RTS,S–R21. Ces libellés ont été constatés visuellement ; l'exactitude médicale intégrale et la concordance avec le cours restent à relire.
+- La banque privée vérifiée contient **56 QCM**, cinq propositions, une à trois bonnes réponses, explications et IDs distincts ; **56 flashcards** CSV concordent 1:1 avec le JSON des QCM.
+
+**Livraison :** un ZIP privé de préparation a été constitué à partir des fichiers Drive existants, sans modifier les originaux. Cette validation de structure n'atteste ni un support officiel complet, ni un GO publication. Les ressources restent hors du diff actif de la PR et hors chargement applicatif jusqu'à validation explicite du package.
