@@ -288,6 +288,9 @@ jobs:
       - name: Vérifier l'import privé Pathologies sans distribution de contenus médicaux
         run: node tests/pathologies-private-review-import.mjs
 
+      - name: Vérifier connexion Supabase et chargement sécurisé des supports Pathologies
+        run: node tests/pathologies-cloud-private-auth.mjs
+
       - name: Tester le clic Pathologies puis import local sans redirection vers un cours
         run: node tests/pathologies-import-navigation-interaction.mjs
 
