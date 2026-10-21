@@ -11,6 +11,7 @@ const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLo
 const driveStream=id=>`https://drive.usercontent.google.com/download?export=download&id=${encodeURIComponent(id)}&confirm=t`;
 const drivePreview=id=>`https://drive.google.com/file/d/${encodeURIComponent(id)}/preview`;
 const driveView=id=>`https://drive.google.com/file/d/${encodeURIComponent(id)}/view?usp=drivesdk`;
+const localAudioSource=x=>/^\.\/assets\/audio\/[\w/-]+\.mp3$/.test(x.localAudio||'')?x.localAudio:null;
 
 function loadState(){
   try{
@@ -143,7 +144,7 @@ function useDriveFallback(id){
   const x=V.find(v=>v.id===id);if(!x)return;const fallback=$v('vocalFallback');if(fallback&&!fallback.classList.contains('hidden'))return;rememberPosition();const a=$v('vocalAudio');if(a){a.pause();a.removeAttribute('src');a.load();a.classList.add('hidden')}const f=$v('vocalFrame');if(f)f.src=drivePreview(x.driveId);fallback?.classList.remove('hidden');
 }
 function playVocal(id){
-  const x=V.find(v=>v.id===id);if(!x)return;const previous=$v('vocalAudio');if(previous){rememberPosition();previous.pause();previous.removeAttribute('src');previous.load()}const frame=$v('vocalFrame');if(frame)frame.src='about:blank';$v('vocalFallback')?.classList.add('hidden');currentId=id;lastSavedSecond=-1;rememberLast(id);$v('vocalPlayerCourse').textContent=`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`;$v('vocalPlayerTitle').textContent=x.title;$v('vocalDrive').href=driveView(x.driveId);renderPlayerActions();$v('vocalPlayer').classList.remove('hidden');const a=$v('vocalAudio');if(a){a.classList.remove('hidden');a.src=driveStream(x.driveId);a.load();const p=a.play();if(p?.catch)p.catch(()=>{})}$v('vocalPlayer').scrollIntoView({behavior:'smooth',block:'start'});
+  const x=V.find(v=>v.id===id);if(!x)return;const previous=$v('vocalAudio');if(previous){rememberPosition();previous.pause();previous.removeAttribute('src');previous.load()}const frame=$v('vocalFrame');if(frame)frame.src='about:blank';$v('vocalFallback')?.classList.add('hidden');currentId=id;lastSavedSecond=-1;rememberLast(id);$v('vocalPlayerCourse').textContent=`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`;$v('vocalPlayerTitle').textContent=x.title;$v('vocalDrive').href=driveView(x.driveId);renderPlayerActions();$v('vocalPlayer').classList.remove('hidden');const a=$v('vocalAudio');if(a){a.classList.remove('hidden');a.src=localAudioSource(x)||driveStream(x.driveId);a.load();const p=a.play();if(p?.catch)p.catch(()=>{})}$v('vocalPlayer').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function closePlayer(){rememberPosition();const a=$v('vocalAudio');if(a){a.pause();a.removeAttribute('src');a.load();a.classList.remove('hidden')}const f=$v('vocalFrame');if(f)f.src='about:blank';$v('vocalFallback')?.classList.add('hidden');$v('vocalPlayer')?.classList.add('hidden');currentId=null;lastSavedSecond=-1}
 function showVocals(){window.show?.('vocals')}

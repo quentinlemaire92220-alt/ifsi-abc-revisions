@@ -29,6 +29,26 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Déterminer la version publiée de comparaison
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          if [[ -n "$PR_BASE_SHA" ]]; then
+            base="$PR_BASE_SHA"
+          elif [[ "$GITHUB_REF" == "refs/heads/$DEFAULT_BRANCH" && "$PUSH_BEFORE_SHA" =~ ^[a-f0-9]{40}$ && ! "$PUSH_BEFORE_SHA" =~ ^0{40}$ ]]; then
+            base="$PUSH_BEFORE_SHA"
+          else
+            base=$(git merge-base HEAD "origin/$DEFAULT_BRANCH")
+            if [[ "$base" == "$(git rev-parse HEAD)" ]]; then
+              base=$(git rev-parse HEAD^)
+            fi
+          fi
+          git cat-file -e "$base^{commit}"
+          printf 'IFSI_BASE_SHA=%s\n' "$base" >> "$GITHUB_ENV"
+
       - name: Vérifier la syntaxe JavaScript
         run: |
           set -euo pipefail
@@ -137,18 +157,12 @@ jobs:
         run: node tests/course-publication-approval-test.mjs
 
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
-        env:
-          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node tests/course-publication-approval.mjs
 
       - name: Refuser un nouveau cours publié absent du manifeste
-        env:
-          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node tests/course-delivery-new-course.mjs
 
       - name: Refuser les nouvelles parties non déclarées des cours déjà publiés
-        env:
-          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node tests/course-delivery-parts.mjs
 
       - name: Vérifier la séparation des séances simultanées par sous-groupe
@@ -170,8 +184,6 @@ jobs:
         run: node tests/qcm-reviewed-publication-a1p3.mjs
 
       - name: Refuser les nouveaux QCM et flashcards dépendant du support
-        env:
-          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node tests/qcm-autonomy-changed.mjs
 
       - name: Vérifier le vocabulaire dans les QCM
@@ -239,6 +251,9 @@ jobs:
 
       - name: Vérifier les 26 vocaux infectiologie et la release V8.30.101
         run: node tests/infectiologie-vocaux-v8401.mjs
+
+      - name: Vérifier les 35 vocaux des 14 cours V8.30.110
+        run: node tests/vocals-14-courses-v8410.mjs
 
       - name: Vérifier le lecteur vocal natif V8.30.50
         run: node tests/vocal-player-v8350.mjs

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.109",
+  "version": "8.30.110",
   "courses": [
     {
       "id": "biomolecules",
@@ -82,7 +82,10 @@
       ],
       "domain": "B",
       "ue": "B1",
-      "officialSupportUrl": "https://drive.google.com/file/d/1GS53308fmsK9Mn8NZv-Usfp_pF05qDT7/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1GS53308fmsK9Mn8NZv-Usfp_pF05qDT7/view",
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1z8fF8OMjsFh3CY3PYvEdGYcz7G1WHebq"
     },
     {
       "id": "niveaux_organisation",
@@ -292,7 +295,10 @@
         "UE B3 Mathématiques"
       ],
       "domain": "E",
-      "ue": "B3"
+      "ue": "B3",
+      "audioStatus": "available",
+      "audioCount": 8,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1CO8lpP5MuXsKqosPfKgIWSnr-f3v6DI2"
     },
     {
       "id": "systeme_digestif",
@@ -374,7 +380,10 @@
         "Histoire Professions Sante",
         "Histoire et identité de la profession infirmière"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1UPGcu5ghkIOKHarON5iuDEcpLLazFXhl/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1UPGcu5ghkIOKHarON5iuDEcpLLazFXhl/view",
+      "audioStatus": "available",
+      "audioCount": 1,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/11a2CBHLT02TZczrvRwscgQoxZtwmvlLO"
     },
     {
       "id": "epistemologie_savoirs",
@@ -402,7 +411,10 @@
           "title": "Théorie dans la pratique — partie 04",
           "url": "https://drive.google.com/file/d/1fFSDtiXsntE-I4BTrZeVX9s6zaXkCJJi/view"
         }
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1hHO621JLimNniZ1CdF-b2CFJLqYLizKm"
     },
     {
       "id": "ethique_infirmiere",
@@ -421,8 +433,8 @@
       "flashcardTarget": 48,
       "qcmPdfUrl": "https://drive.google.com/file/d/19cNhArBzHk-jaJ0jn9XaINL8hUeKn430/view",
       "qcmPdfQuestionCount": 60,
-      "audioStatus": "awaiting_mp3",
-      "audioCount": 0,
+      "audioStatus": "available",
+      "audioCount": 5,
       "additionalDocuments": [
         {
           "label": "Vocabulaire du care — 24 termes",
@@ -452,7 +464,8 @@
           "label": "Script vocal 4 — Synthèse : relier les notions et les situations",
           "url": "https://drive.google.com/file/d/1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf/view"
         }
-      ]
+      ],
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1TXK4vkMHC17hT6FDJeeDJ0sILTqiquOl"
     },
     {
       "id": "douleur",
@@ -464,7 +477,10 @@
         "Douleur aigue et chronique"
       ],
       "officialSupportUrl": "https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view",
-      "qcmPdfUrl": "https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view"
+      "qcmPdfUrl": "https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view",
+      "audioStatus": "available",
+      "audioCount": 3,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1HK6CLubwvij4-3nhwED4e6lIrFylgpO-"
     },
     {
       "id": "parametres_vitaux",
@@ -474,7 +490,10 @@
       "aliases": [
         "Parametres Vitaux",
         "Paramètres vitaux"
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1zaaKYsHU78khyZB5olGNXW_UGEMuA7Mx"
     },
     {
       "id": "grands_brules",
@@ -486,7 +505,10 @@
         "Grands brûlés",
         "Prise en charge grands brules"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1IbpQ9dm4eaYqta5E6x44qY9U4cfzg7nL/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1IbpQ9dm4eaYqta5E6x44qY9U4cfzg7nL/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1U5yDtAVVoNFQwo5TFHbWWJXDuYnQjvgx"
     },
     {
       "id": "infections_cutanees",
@@ -510,7 +532,10 @@
       "aliases": [
         "Diagnostic Bacteriologie",
         "Diagnostic bactériologique"
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1gq9VP_Z7OYwmQ_bvP9kmYQrbXLAe3Kbt"
     },
     {
       "id": "infections_urinaires",
@@ -588,7 +613,10 @@
         "Competences Psychosociales",
         "Compétences psychosociales",
         "Introduction CPS"
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 1,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1l1Pfnru3REiYz9rr6oIk4O6Iw0575Rkw"
     },
     {
       "id": "methodes_travail_reussite",
@@ -599,7 +627,10 @@
         "UE E3 S1 paysage visuels",
         "Méthodes de travail et aide à la réussite",
         "Methodes de travail et aide a la reussite"
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 1,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1MzB9dMIuNV5Ftn9LbXvGzdpzLNkdyW0N"
     },
     {
       "id": "vaccination_prs",
@@ -610,7 +641,10 @@
         "Vaccination Fiche de travail PRS",
         "Vaccination PRS",
         "PRS TD01 Vaccination"
-      ]
+      ],
+      "audioStatus": "available",
+      "audioCount": 1,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1-pilg80C6Yx_hRExkxPo8o2pd3oCJqIW"
     },
     {
       "id": "infections_pulmonaires_bacteriennes",
@@ -675,7 +709,10 @@
         "Sources et mise en œuvre du droit",
         "Introduction au droit - sources et mise en œuvre du droit"
       ],
-      "officialSupportUrl": "https://drive.google.com/file/d/1ICnXFfhMM0xLp7Yu_UDeVo5BBxD9ZZRX/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1ICnXFfhMM0xLp7Yu_UDeVo5BBxD9ZZRX/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1Ns2LBS3m4OVPQO2O-2UHFd6kbZyGVznw"
     },
     {
       "id": "psychologie_sante",
@@ -687,7 +724,10 @@
         "Psychologie Sante"
       ],
       "domain": "B",
-      "ue": "B2"
+      "ue": "B2",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf"
     },
     {
       "id": "pharmacologie",
