@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=path=>fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const code=read('pathologies-module-v1.js');
 function part(a,b){const start=code.indexOf(a),end=code.indexOf(b,start+1);assert.ok(start>=0&&end>start,'Missing range: '+a);return code.slice(start,end);}
-const ctx={};vm.createContext(ctx);
+const ctx={root:{}};vm.createContext(ctx);
 const definitions=["const P1_IDS=new Set(['bpco','hta','dt2']);",part('const P1_CATALOG=','const LABELS='),"const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));","let entries=[];",part('function catalogRecords(){','function showPending('),"globalThis.exportEsc=esc;globalThis.fakeCatalog=()=>catalogRecords();globalThis.fakeMarkup=term=>catalogMarkup(catalogRecords(),term);"];
 vm.runInContext(definitions.join('\n'),ctx);
 const records=ctx.fakeCatalog();
@@ -30,7 +30,7 @@ vm.runInContext(part('function showPending(','function list(){')+'\nglobalThis.o
 pageCtx.openDraft('bpco');
 assert.equal(courseOpens,0,'Opening BPCO must not redirect automatically to its course');
 assert.ok(pendingMarkup.includes('Bronchopneumopathie chronique obstructive (BPCO)'));
-assert.ok(pendingMarkup.includes('Ressources en cours de validation médicale'));
+assert.ok(pendingMarkup.includes('Ouvrir mes supports Pathologies'));assert.ok(pendingMarkup.includes('id="pathoReviewImport"'));assert.ok(pendingMarkup.includes('<details'), 'Le cours associé doit rester replié, pas remplacer la fiche');
 assert.ok(pendingMarkup.includes('Ouvrir le cours IFSI'),'Course remains an optional secondary action');
 assert.equal(typeof backButton.onclick,'function');backButton.onclick();assert.equal(backClicks,1);
 assert.ok(code.includes('results.querySelectorAll(\'[data-patho-pending]\')'),'Pending entry click missing');

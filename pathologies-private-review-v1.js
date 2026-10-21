@@ -9,7 +9,7 @@ const IDS=['bpco','hta','dt2'];
 const SECTIONS=[['definition','Définition'],['physiopathologie','Physiopathologie'],['riskFactors','Facteurs de risque'],['clinicalSigns','Signes cliniques'],['diagnosis','Diagnostic'],['treatments','Prise en charge'],['nursingCare','Rôle infirmier'],['monitoring','Surveillances'],['complications','Complications'],['keywords','Mots-clés']];
 const E=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const el=id=>root.document?.getElementById(id);
-let pack=null,st={id:null,tab:'fiche',page:0,index:0,reveal:false};
+let pack=null,requestedId=null,importMessage='',st={id:null,tab:'fiche',page:0,index:0,reveal:false};
 let dbP;
 function valid(data){
  if(!data||data.schema!==SCHEMA||data.reviewOnly!==true||data.publicationPermitted!==false||data.clinicalReview!=='pending')return false;
@@ -48,11 +48,15 @@ async function load(){
    const tx=db.transaction(STORE,'readonly'),req=tx.objectStore(STORE).get(KEY);
    req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);
   });
-  if(valid(data)){pack=data;attachImport();}
+  if(valid(data)){
+   pack=data;
+   if(requestedId)showIfImported(requestedId);
+   else attachImport();
+  }
  }catch{/* Fonctionne même sans IndexedDB, seulement pour la session courante. */}
 }
 async function clear(){
- pack=null;
+ pack=null;requestedId=null;importMessage='';
  try{const db=await database();await new Promise((resolve,reject)=>{
   const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).delete(KEY);
   tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);
@@ -61,25 +65,34 @@ async function clear(){
 }
 function attachImport(){
  const host=el('pathoReviewImport');if(!host)return;
+ const forId=host.dataset?.pathoId||null;
  host.innerHTML='<div class="patho-panel" style="border-style:dashed">'+
- '<h3>🔒 Mes supports en revue privée</h3>'+
- '<p class="patho-muted">Importer le fichier JSON du pack P1 sur cet appareil. Les données restent dans ce navigateur ; elles ne sont pas envoyées sur GitHub, Drive ou Supabase. Les corrections ne comptent pas dans les scores.</p>'+
- '<label class="btn outline" for="pathoPrivateFile">Importer un pack privé (JSON)</label> '+
+ '<h3>🔒 Mes supports Pathologies sur cet appareil</h3>'+
+ '<p class="patho-muted">Importe le fichier JSON du pack P1. Aucune donnée de ce pack n’est envoyée à GitHub, Drive ou Supabase. Les corrections provisoires ne comptent pas dans les scores.</p>'+
+ '<label class="btn outline" for="pathoPrivateFile">📂 Choisir mon fichier JSON Pathologies</label> '+
  '<input type="file" accept=".json,application/json" id="pathoPrivateFile" style="position:absolute;width:1px;height:1px;opacity:0" aria-label="Choisir un pack personnel">'+
- (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">Pack chargé : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
- '<p id="pathoPrivateMessage" role="status" aria-live="polite"></p></div>';
+ (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">✅ Pack chargé : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
+ '<p id="pathoPrivateMessage" role="status" aria-live="polite">'+E(importMessage)+'</p></div>';
  const input=el('pathoPrivateFile'),status=el('pathoPrivateMessage');
  if(input)input.onchange=async()=>{
   const file=input.files?.[0];if(!file)return;
-  if(file.size>10000000){status.textContent='Fichier trop volumineux (maximum 10 Mo).';return;}
+  if(file.size>10000000){importMessage='Fichier trop volumineux (maximum 10 Mo).';status.textContent=importMessage;return;}
   try{
    const data=JSON.parse(await file.text());
-   if(!valid(data))throw new Error('Format ou statut du pack non conforme');
+   if(!valid(data))throw new Error('Le JSON ne correspond pas au pack personnel P1 attendu (3 pathologies, 18 planches, 156 exercices).');
    pack=data;
-   try{await save(data);status.textContent='Pack importé et enregistré sur cet appareil.';}
-   catch{status.textContent='Pack chargé pour cette session. Le stockage permanent est indisponible.';}
-   attachImport();
-  }catch(e){status.textContent='Import refusé : '+String(e.message||e);}
+   let saved=true;
+   try{await save(data);}catch{saved=false;}
+   importMessage=saved?'✅ Pack personnel importé et enregistré sur cet appareil.':'✅ Pack personnel importé pour cette session ; stockage durable indisponible.';
+   // Si le choix du fichier vient de la page BPCO/HTA/DT2, afficher immédiatement la fiche.
+   if(forId&&showIfImported(forId))return;
+   // Depuis le catalogue, rafraîchir l'état des trois rubriques.
+   if(typeof root.IFSI_PATHOLOGIES?.showCatalog==='function')root.IFSI_PATHOLOGIES.showCatalog();
+   else attachImport();
+  }catch(e){
+   importMessage='Import refusé : '+String(e.message||e);
+   status.textContent=importMessage;
+  }
  };
  el('pathoPrivateClear')?.addEventListener('click',clear);
 }
@@ -137,7 +150,13 @@ function render(){
  el('pathoPrivateReveal')?.addEventListener('click',()=>{st.reveal=!st.reveal;render();});
  return true;
 }
-function showIfImported(id){if(!pack?.items.some(x=>x.id===id))return false;st={id,tab:'fiche',page:0,index:0,reveal:false};return render();}
-root.IFSI_PATHOLOGIES_REVIEW=Object.freeze({attachImport,showIfImported,valid,clear,loaded:()=>!!pack});
+function showIfImported(id){
+ requestedId=id;
+ if(!pack?.items.some(x=>x.id===id))return false;
+ st={id,tab:'fiche',page:0,index:0,reveal:false};
+ return render();
+}
+function has(id){return !!pack?.items.some(x=>x.id===id);}
+root.IFSI_PATHOLOGIES_REVIEW=Object.freeze({attachImport,showIfImported,has,valid,clear,loaded:()=>!!pack});
 if(root.document)load();
 })(window);
