@@ -38,7 +38,7 @@ const ctx={window,root:window,console};
 vm.createContext(ctx);
 vm.runInContext(privateJs,ctx);
 const p1="const P1_CATALOG=[{id:'bpco',title:'BPCO',system:'Respiratoire',courseId:'systeme_respiratoire'},{id:'hta',title:'HTA',system:'Cardiovasculaire',courseId:'systeme_cardiovasculaire'},{id:'dt2',title:'Diabète de type 2',system:'Endocrinien',courseId:'systeme_endocrinien'}];";
-const utility="const esc=x=>String(x);const action=(label,attr)=>'<button '+attr+'>'+label+'</button>';function byId(id){return root.document.getElementById(id);}function list(){}function openLinkedCourse(id){root.IFSI_V82.openSystem(id);}globalThis.showDraft=showPending;";
+const utility="let pendingId=null,state={id:null};const esc=x=>String(x);const action=(label,attr)=>'<button '+attr+'>'+label+'</button>';function byId(id){return root.document.getElementById(id);}function list(){}function openLinkedCourse(id){root.IFSI_V82.openSystem(id);}globalThis.showDraft=showPending;";
 vm.runInContext(p1+'\n'+between('function showPending(id){','function list(){')+'\n'+utility,ctx);
 const keys=['definition','physiopathologie','riskFactors','clinicalSigns','diagnosis','treatments','nursingCare','monitoring','complications','keywords'];
 const fictive=id=>({id,title:'Fictive '+id,sections:Object.fromEntries(keys.map(k=>[k,'Texte de test fictif'])),
