@@ -1192,7 +1192,10 @@
       {
         "front": "Quelles sont les quatre grandes catégories de MNT ?",
         "answers": [
-          "Maladies cardiovasculaires, cancers, diabète et maladies respiratoires chroniques."
+          "Maladies cardiovasculaires",
+          "Cancers",
+          "Diabète",
+          "Maladies respiratoires chroniques"
         ],
         "explanation": "Les MNT comprennent notamment cardiovasculaires, diabète, cancers et maladies respiratoires chroniques. Paludisme et tuberculose sont infectieux.",
         "kind": "Cours",
