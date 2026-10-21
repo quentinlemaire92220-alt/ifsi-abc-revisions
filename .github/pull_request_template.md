@@ -18,6 +18,14 @@ Décrire le problème résolu et le résultat attendu.
 - [ ] Un changelog de release est ajouté.
 - [ ] Les tests de cohérence release passent.
 
+### Si une fiche PDF ou des illustrations sont créées ou modifiées
+
+- [ ] Les PDF finaux ont été **inspectés intégralement** en comparaison avec la vraie fiche cardiovasculaire approuvée (100–200 %, pages initiales/médianes/finales et toutes planches).
+- [ ] Les figures sont anatomiquement/physiologiquement explicatives, intégrées au chapitre et dotées de légendes médicalement vérifiées ; **les pictogrammes et rectangles décoratifs ne sont pas comptés comme des infographies**.
+- [ ] La fiche et le cours infographié passent **deux revues graphiques indépendantes** ; aucune validation par simple présence d'image ou succès technique.
+- [ ] Le propriétaire a **explicitement accepté le rendu du lot exact**, distinctement du GO production ; `visualOwnerReview` relie l'accord aux SHA des PDF et visuels.
+- [ ] Si non validé, PR en **brouillon non publiable** : pas de `status:PASS` fictif, pas de GO publication implicite.
+
 ### Si la modification concerne l’audit ou les ressources
 
 - [ ] La référence `resource-audit-v821.json` est mise à jour seulement si le changement est volontaire.
