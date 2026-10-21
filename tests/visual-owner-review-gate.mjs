@@ -56,7 +56,7 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   ||delivery.revisionSheetMode==='single_with_complete_boards'
   ||(delivery.partDeliveries||[]).some(p=>p.infographicSheetResourceId));
  if(hasCompleteInfographic)assert.equal(review.criteria?.INFOGRAPHIC_VISUAL_FIRST,'PASS',
-  courseId+': cours/planche infographiee autonome non approuve graphiquement');
+  courseId+': INFOGRAPHIC_VISUAL_FIRST — cours/planche infographiee autonome non approuve graphiquement');
  const ids=selectedSheetIds(delivery);
  for(const id of ids){
   const sheet=(data.sheets||[]).find(s=>s.courseId===courseId&&s.resourceId===id);
