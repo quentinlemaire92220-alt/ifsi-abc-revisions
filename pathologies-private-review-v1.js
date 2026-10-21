@@ -67,13 +67,13 @@ async function clear(){
 function attachImport(){
  const host=el('pathoReviewImport');if(!host)return;
  const forId=host.dataset?.pathoId||null;
- host.innerHTML='<div class="patho-panel" style="border-style:dashed">'+
- '<h3>🔒 Mes supports Pathologies sur cet appareil</h3>'+
- '<p class="patho-muted">Importe une seule fois le fichier JSON du pack P1, puis connecte ton compte pour le sauvegarder dans ton espace Supabase privé. Rien n’est envoyé à GitHub ou à la promotion. Les corrections provisoires ne comptent pas dans les scores.</p>'+
+ host.innerHTML='<div id="pathoCloudPanel"></div>'+
+ '<details class="patho-panel patho-details" style="border-style:dashed"><summary>Importer un fichier JSON local (option de secours)</summary>'+
+ '<p class="patho-muted">Le pack P1 est déjà sauvegardé sur Supabase : connecte-toi ci-dessus pour le récupérer automatiquement. Cet import local reste facultatif, notamment pour le hors-ligne. Aucune réponse provisoire ne compte dans les scores.</p>'+
  '<label class="btn outline" for="pathoPrivateFile">📂 Choisir mon fichier JSON Pathologies</label> '+
  '<input type="file" accept=".json,application/json" id="pathoPrivateFile" style="position:absolute;width:1px;height:1px;opacity:0" aria-label="Choisir un pack personnel">'+
- (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">✅ Pack chargé : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
- '<p id="pathoPrivateMessage" role="status" aria-live="polite">'+E(importMessage)+'</p></div><div id="pathoCloudPanel"></div>';
+ (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">✅ Copie locale : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
+ '<p id="pathoPrivateMessage" role="status" aria-live="polite">'+E(importMessage)+'</p></details>';
  root.IFSI_PATHOLOGIES_CLOUD?.attach?.();
  const input=el('pathoPrivateFile'),status=el('pathoPrivateMessage');
  if(input)input.onchange=async()=>{
