@@ -164,7 +164,7 @@ function showPending(id){
  if(review?.showIfImported?.(id))return;
  const host=byId('ifsiPathologiesBody');if(!host)return;
  host.innerHTML='<div class="card patho-wrap"><div class="patho-toolbar">'+action('← Toutes les pathologies','id="pathoBack"')+'</div><h2>'+esc(record.title)+'</h2><p class="patho-muted">'+esc(record.system)+'</p>'+
- '<div class="patho-panel" role="status"><h3>🔒 Ouvrir mes supports Pathologies</h3><p>Les 6 planches, QCM, flashcards et cas cliniques de cette pathologie sont accessibles après import de ton fichier JSON personnel. Les supports sont encore en revue médicale et ne sont pas publiés aux étudiants.</p><div id="pathoReviewImport" data-patho-id="'+esc(id)+'"></div></div>'+
+ '<div class="patho-panel" role="status"><h3>🔒 Ouvrir mes supports Pathologies</h3><p>Les 6 planches, QCM, flashcards et cas cliniques sont disponibles dans ton espace Supabase privé. Connecte ton compte ci-dessous pour les charger automatiquement. Les supports restent en revue médicale et ne sont pas publiés aux étudiants.</p><div id="pathoReviewImport" data-patho-id="'+esc(id)+'"></div></div>'+
  '<details class="patho-panel patho-details"><summary>Cours IFSI associé (facultatif, distinct de Pathologies)</summary><p>Ce bouton ouvre le cours existant, et non la fiche Pathologies.</p>'+action('Ouvrir le cours IFSI ↗','data-patho-course="'+esc(record.courseId)+'"')+'</details></div>';
  byId('pathoBack').onclick=()=>list();
  host.querySelectorAll('[data-patho-course]').forEach(b=>b.onclick=()=>openLinkedCourse(b.dataset.pathoCourse));
