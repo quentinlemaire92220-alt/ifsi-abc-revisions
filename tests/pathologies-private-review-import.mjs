@@ -25,7 +25,10 @@ assert.equal(api.valid(bad),false,'URL d’image externe/interprétable interdit
 const bad2=structuredClone(good);bad2.items[1].qcm=[];
 assert.equal(api.valid(bad2),false,'Banque QCM incomplète interdite');
 assert.ok(module.includes('root.IFSI_PATHOLOGIES_REVIEW?.attachImport?.()'),'Le bouton d’import doit être présent dans le catalogue');
-assert.ok(module.includes('root.IFSI_PATHOLOGIES_REVIEW?.showIfImported?.(id)'),'Le support privé doit s’ouvrir dans la page de la pathologie');
+assert.ok(module.includes('review?.showIfImported?.(id)'),'Le support privé doit s’ouvrir en priorité dans la page de la pathologie');
+assert.ok(module.includes('review?.attachImport?.()'),'Un import du fichier doit être possible directement sur la page de la pathologie');
+assert.ok(module.includes('data-patho-id='),'L’import doit identifier la pathologie demandée');
+assert.ok(code.includes('if(forId&&showIfImported(forId))return;'),'La fiche doit apparaître immédiatement après import sur sa page');
 assert.ok(module.includes('showCatalog'),'Retour depuis la page privée impossible');
 assert.ok(code.includes("const DB='ifsi-abc-private-pathologies-v1'")||code.includes("DB='ifsi-abc-private-pathologies-v1'"),'Stockage IndexedDB indisponible');
 assert.ok(!code.includes('fetch(')&&!code.includes('XMLHttpRequest'),'Aucune communication réseau pour importer les fichiers privés');
