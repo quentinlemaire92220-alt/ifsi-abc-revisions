@@ -30,3 +30,11 @@ Les fichiers de révision, les photos de référence, les originaux de cours, le
 `docs/NEW_COURSE_PUBLIC_CONTRACT.md`, `docs/COURSE_DELIVERY.md`, `docs/skills/standard-visuel-fiche-revision-vs-infographie.md`, `docs/PUBLICATION_APPROVAL.md`.
 
 **Cette PR n'est ni la livraison du cours, ni la validation de ses supports.**
+
+## Addendum de contrôle scientifique du 21/10/2026 — version privée V3
+
+Les deux erreurs avérées sur l'infographie 06 ont été corrigées dans le pack privé, **pas dans les fichiers publics** :
+- Traitement post-exposition VIH : instaurer dès que possible, idéalement dans les 4 h, au plus tard 48 h après exposition si indiqué (HAS) : https://www.has-sante.fr/jcms/p_3536535/fr/traitement-preventif-post-exposition-au-vih
+- Vaccination : le BCG existe pour certaines formes de tuberculose et l'OMS recommande RTS,S et R21 pour certains enfants de zones palustres ; contrairement au texte original de la planche. Source OMS : https://www.who.int/fr/news-room/questions-and-answers/item/q-a-on-rts-s-malaria-vaccine/
+
+**Nouveaux points bloquants détectés** : l'infographie 03 confond formule d'accroissement absolu et taux (%) de croissance ; formule correcte = accroissement / population de départ × 100, avec éventuels ajustements statistiques (Insee : https://www.insee.fr/fr/statistiques/2381468). Une autre formulation présente à tort le vieillissement comme spécifique à la France alors qu'il est mondial, à des rythmes différents (ONU : https://desapublications.un.org/file/20847/download). Les cartes, pyramides et taux des planches demandent une revue systématique des chiffres, des sources et des millésimes. Le cours n'est toujours pas publiable.
