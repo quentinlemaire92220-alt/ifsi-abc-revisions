@@ -939,6 +939,18 @@
       "audioCount": 3,
       "audioFolderUrl": "https://drive.google.com/drive/folders/1j0WevK3SiJ38EuxrHyNfjg2OL3cYbImD",
       "sourceStatus": "official_support_private_pending_publication"
+    },
+    {
+      "id": "sante_mondiale_sante_france",
+      "label": "Santé mondiale et santé en France",
+      "aliases": [
+        "Santé mondiale et santé en France",
+        "Santé mondiale",
+        "Santé en France",
+        "UE C1.1 S1"
+      ],
+      "domain": "C",
+      "ue": "C1.1"
     }
   ],
   "auditBaseline": {
