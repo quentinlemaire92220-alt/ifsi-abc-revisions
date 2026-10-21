@@ -52,6 +52,7 @@ async function load(){
    pack=data;
    if(requestedId)showIfImported(requestedId);
    else attachImport();
+   root.IFSI_PATHOLOGIES_CLOUD?.onPage?.();
   }
  }catch{/* Fonctionne même sans IndexedDB, seulement pour la session courante. */}
 }
@@ -66,13 +67,14 @@ async function clear(){
 function attachImport(){
  const host=el('pathoReviewImport');if(!host)return;
  const forId=host.dataset?.pathoId||null;
- host.innerHTML='<div class="patho-panel" style="border-style:dashed">'+
- '<h3>🔒 Mes supports Pathologies sur cet appareil</h3>'+
- '<p class="patho-muted">Importe le fichier JSON du pack P1. Aucune donnée de ce pack n’est envoyée à GitHub, Drive ou Supabase. Les corrections provisoires ne comptent pas dans les scores.</p>'+
+ host.innerHTML='<div id="pathoCloudPanel"></div>'+
+ '<details class="patho-panel patho-details" style="border-style:dashed"><summary>Importer un fichier JSON local (option de secours)</summary>'+
+ '<p class="patho-muted">Le pack P1 est déjà sauvegardé sur Supabase : connecte-toi ci-dessus pour le récupérer automatiquement. Cet import local reste facultatif, notamment pour le hors-ligne. Aucune réponse provisoire ne compte dans les scores.</p>'+
  '<label class="btn outline" for="pathoPrivateFile">📂 Choisir mon fichier JSON Pathologies</label> '+
  '<input type="file" accept=".json,application/json" id="pathoPrivateFile" style="position:absolute;width:1px;height:1px;opacity:0" aria-label="Choisir un pack personnel">'+
- (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">✅ Pack chargé : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
- '<p id="pathoPrivateMessage" role="status" aria-live="polite">'+E(importMessage)+'</p></div>';
+ (pack?'<button type="button" class="btn outline" id="pathoPrivateClear">Effacer mon pack local</button><p class="patho-muted">✅ Copie locale : 3 pathologies · 18 planches · 156 exercices en relecture</p>':'')+
+ '<p id="pathoPrivateMessage" role="status" aria-live="polite">'+E(importMessage)+'</p></details>';
+ root.IFSI_PATHOLOGIES_CLOUD?.attach?.();
  const input=el('pathoPrivateFile'),status=el('pathoPrivateMessage');
  if(input)input.onchange=async()=>{
   const file=input.files?.[0];if(!file)return;
@@ -84,6 +86,7 @@ function attachImport(){
    let saved=true;
    try{await save(data);}catch{saved=false;}
    importMessage=saved?'✅ Pack personnel importé et enregistré sur cet appareil.':'✅ Pack personnel importé pour cette session ; stockage durable indisponible.';
+   root.IFSI_PATHOLOGIES_CLOUD?.afterLocalImport?.(data);
    // Si le choix du fichier vient de la page BPCO/HTA/DT2, afficher immédiatement la fiche.
    if(forId&&showIfImported(forId))return;
    // Depuis le catalogue, rafraîchir l'état des trois rubriques.
@@ -157,6 +160,17 @@ function showIfImported(id){
  return render();
 }
 function has(id){return !!pack?.items.some(x=>x.id===id);}
-root.IFSI_PATHOLOGIES_REVIEW=Object.freeze({attachImport,showIfImported,has,valid,clear,loaded:()=>!!pack});
+function getPack(){return pack;}
+async function acceptFromCloud(data){
+ if(!valid(data))throw Error('Pack privé distant non conforme.');
+ pack=data;
+ importMessage='✅ Pack chargé depuis ton compte Supabase privé.';
+ try{await save(data);}catch{/* Lecture en mémoire disponible, même sans IndexedDB. */}
+ if(requestedId&&showIfImported(requestedId))return true;
+ if(root.IFSI_PATHOLOGIES?.showCatalog)root.IFSI_PATHOLOGIES.showCatalog();
+ else attachImport();
+ return true;
+}
+root.IFSI_PATHOLOGIES_REVIEW=Object.freeze({attachImport,showIfImported,has,valid,clear,getPack,acceptFromCloud,loaded:()=>!!pack});
 if(root.document)load();
 })(window);
