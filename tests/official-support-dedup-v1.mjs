@@ -15,9 +15,8 @@ assert.ok(ids.includes('sante_mondiale_sante_france'), 'Le cours C1.1 S1 doit re
 
 function driveId(url) {
   if (typeof url !== 'string') return '';
-  return url.match(/\\/file\\/d\\/([A-Za-z0-9_-]+)/)?.[1]
-    || url.match(/\\/folders\\/([A-Za-z0-9_-]+)/)?.[1]
-    || '';
+  const path = url.split('?')[0].split('#')[0];
+  return (path.split('/file/d/')[1] || path.split('/folders/')[1] || '').split('/')[0];
 }
 
 for (const course of courses) {
