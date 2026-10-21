@@ -2,6 +2,14 @@
 
 Application web/PWA de révision IFSI : QCM, fiches, infographies, vocaux et atlas anatomiques.
 
+## Point d'entrée pour reprendre le projet
+
+- [Centre de pilotage IFSI ABC](docs/PROJECT_CONTROL_CENTER.md) : liens vers les règles, sources de vérité et procédure de reprise ChatGPT/GitHub/Drive.
+- [État daté au 21 octobre 2026](docs/PROJECT_STATE_2026-10-21.md) : inventaire des chantiers et décisions à vérifier en direct avant toute action.
+
+Ces documents ne remplacent pas les contrôles, les chartes ni les validations de publication.
+
+
 ## Source de vérité de la release
 
 La version courante est définie dans `build-meta.json`.
