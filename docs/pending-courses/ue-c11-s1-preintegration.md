@@ -6,6 +6,7 @@
 
 - Référencement du cours `sante_mondiale_sante_france`, `domain:C`, `ue:C1.1` avec alias dans le registre.
 - Aucune nouvelle fiche, infographie, banque QCM, flashcard ou URL Drive ne doit être activée dans les manifestes de l'application.
+- Deux termes génériques **déjà existants** du glossaire (vaccination, dépistage) sont rattachés au nouveau `courseId`, sans ajouter ni modifier leurs définitions, pour assurer la cohérence des références applicatives.
 - Pas de déclaration `validated:true`, de preuve PDF inventée ni de publication automatique.
 
 ## Livrables existants à vérifier en espace de travail Drive
