@@ -365,6 +365,9 @@ jobs:
       - name: Audit hygiène du dépôt
         run: node tests/repo-hygiene.mjs
 
+      - name: Vérifier QCM Plaies V4.2 (clés, PDF et release)
+        run: node tests/plaies-v42-publication.mjs
+
       - name: Vérifier la livraison Stomatothérapie
         run: node tests/stomatotherapie-delivery.mjs
 

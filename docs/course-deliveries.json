@@ -31,7 +31,7 @@
       },
       "supportDriveId": "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K",
       "sheetResourceId": "plaies_pansements_fiche_p01",
-      "qcmDriveId": "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe",
+      "qcmDriveId": "1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5",
       "qcmBank": "qextra-50.txt",
       "qcmCount": 50,
       "flashcardCount": 40,
@@ -92,6 +92,8 @@
       "artifactSha256s": {
         "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K": "a5f081347f2b6d4e7b0053920c27d5e9284c3160fe5f54869bfa55b5659d470b",
         "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe": "bc496e6698bd28c980f98cf2737bb4ebd65d0d040d178beaf79e9873b7595052",
+        "1Tc1Lry4cQVDXzW2-YmkXw_MW2WfekXI5": "2089e3f2a7c4f5bbffa06d8624a0cc3e0d8b61b15f2f0251a31f3930aad76571",
+        "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o": "61f0407301f27e0b724e892c43f084429071fb63dd1621b85f0b1f51058fa1f1",
         "1BbZSRfGyJx4rp0aICOTqcuJElEJ5zvBW": "d097948e429c4882f9d6c87f2e39759c38c420191bf4377e6a716e03ac6f1cb1",
         "1iMjd47WV92YI4ErjfWQ8Fq_9_92TJmUA": "be07667a81d492a08a86c5c3d24d4cc21214a5afb61428215917be6bc12f4a91",
         "1heS2LMk41OGvjP2YEhdPqKnUyjxvoT1J": "a88a6b66e2d8a592d3c030430212aef67297582a56ae114af8253415210d02e4",
@@ -115,8 +117,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-18T20:54:13.083Z",
-        "bundleSha256": "47f4713afa11cc8c3d7d6b53d14d0e346739e95ebaf399f602473280369d7566"
+        "approvedAt": "2026-10-21T13:59:54.142Z",
+        "bundleSha256": "dd7e28431e05ff49214d7993c964af97b390e9382b5e5b55fb89fe0249f20e38"
       },
       "partDeliveries": [
         {
@@ -134,7 +136,8 @@
           "infographicResourceIds": [],
           "qcmQuestionIds": []
         }
-      ]
+      ],
+      "qcmCorrectionDriveId": "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o"
     },
     {
       "courseId": "stomatotherapie",

@@ -23,6 +23,9 @@ function setResume(v){if(v)localStorage.setItem(RESUME_KEY,JSON.stringify(v));el
 function answerLetters(arr){return (arr||[]).map(j=>'ABCDE'[j]).filter(Boolean).join(', ')||'Aucune'}
 function cleanQuestionPrompt(text){
   const cleaned=String(text||'')
+    // Une précision de provenance dans Q20 V4.2 ne doit pas imposer d'avoir le TD.
+    // La banque d'origine et le PDF restent intacts, seules les questions affichées sont autonomes.
+    .replace(/\s+selon\s+le\s+cours\s+et\s+les\s+recommandations\s+de\s+prévention\s*(?=\?)/gi,'')
     .replace(/\s*,?\s*(?:selon|d['’]après|conformément à)\s+(?:(?:ce|cet|cette|le|la|les|l['’])\s+)?(?:sources?\s+du\s+cours|cours(?:\s+et\s+son\s+QCM\s+oral)?|support(?:\s+officiel)?|diapositive(?:\s+(?:«[^»]+»|[^,;:?]+))?|document|affiche\s+du\s+TD|TD)\s*(?=[,;:?]|$)\s*[,;]?/gi,' ')
     .replace(/\s+/g,' ')
     .replace(/\s*([?;:])/g,' $1')
