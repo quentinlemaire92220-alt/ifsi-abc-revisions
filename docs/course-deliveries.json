@@ -1727,6 +1727,73 @@
         "approvedAt": "2026-10-21T12:39:33Z",
         "bundleSha256": "41a0bee45df18f06966b74f0574668781a46529165bcbb02a60f921e80c2a646"
       }
+    },
+    {
+      "courseId": "douleur",
+      "part": "UE B3.3 S1",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "existing_course_revision",
+      "publicationScope": "infographics_only",
+      "driveFolderId": "1Iy_JhtzY0LUZjlKEVXAJOdwEeOTRldE6",
+      "folders": {
+        "01": "1OPDab0K68k16_dRQx_8o_ZIMoZfZPCLI",
+        "02": "1iCahpkAfHbxtW-WigPGBV1EcVtNi99kP",
+        "03": "1IBlDK3WH26yx5i8XJAJc6MFF7lEXLPKP",
+        "04": "1eOz_nMrAXy1kQyXrew7WzeIUPKfD_fr1",
+        "05": "1HK6CLubwvij4-3nhwED4e6lIrFylgpO-"
+      },
+      "infographicPackDriveId": "1BBl2PdTj8msoUsMBj6JtN6aS8DA66m9u",
+      "infographicResourceIds": [
+        "douleur_infographies_pack_16_20261022"
+      ],
+      "qcmBank": "qextra-51.txt",
+      "reviewedBoardCount": 16,
+      "sourcePdfPageCount": 124,
+      "sourceCompleteness": "partial",
+      "medicalReview": "pending_independent_review",
+      "blockers": [
+        {
+          "resource": "complete_course_infographic",
+          "reason": "16_planches_synthese_non_exhaustive_pharmacologie"
+        }
+      ],
+      "artifactSha256s": {
+        "1BBl2PdTj8msoUsMBj6JtN6aS8DA66m9u": "94663e3ef0ab6f9a2a5e3f882e4971235cd8b974df109b288e6cf82721888dce",
+        "1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S": "b2c12989b0a77dd60473c2aacdc76e134b0c7d545db2f294a8ea7177055599f5",
+        "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc": "d7389f9c828635bc685e2a8d6a581792e1083b17dc07ec384b095a87137710da",
+        "1bas9Sba_9pEQiiJ6ZzAOcP5dtdx0scIe": "1161ef4e00107b985628b1922d5379ba488875848395b685170a7c3a3112b739",
+        "1hHrf1HxLzRYOKI1ScszEgQcch0XIt7Y9": "5ebbdffddb632c37ba370a6b45f3f23987f148401f46bd6a1fda77cbd4749984",
+        "1mUNItMZco9hGBHRe-yKoClD32tCQn-el": "8f0a8f1f56f39d4fc17f7e7abb051d96996ada85dd77d5b27a98b1026d8bc25a",
+        "1jINi45ugcqstA-Nwdvb7__4topFwQcU-": "a418a6c5aa3d2651c4f56c5dbdb4af6155a7e31e9a92034a4ede1e76e2e66a68",
+        "1ghW7caJ89NhB4tT98mOOrrUs6zxXOaXb": "0582ca3bb1c3fd6a0a290b3d3442680759e24167c3c1e6851bb618563b9aca2c",
+        "1xRZtw2O7TxT40tg31bfY56TjB4elzWQD": "b60b27543e9e7595b7e771aa72b3f0ec468d85256ae980a4eb6841a7d5656ea9",
+        "1R5Z-riGCWz7J1mBMiLHRiSkXd5B-W0rQ": "b52c06617ce08a55323865afd69e72eaf3ed5d66eb30be46b382ade765fb056d",
+        "14-Hc7LwKYVnc-Vr_ubwbkAai4fBNagdA": "0e45402af26ed2702cd882f4b000d283d559fc36fb9045bb7025f4df9cbb7c14"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "cardiovascular_infographic_pdf_1p",
+        "method": "manual_full_pdf_comparison_100_200_percent",
+        "reviewedAt": "2026-10-22T08:12:35.303Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "INFOGRAPHIC_VISUAL_FIRST": "PASS",
+          "MEDICAL_ILLUSTRATION_REAL": "PASS",
+          "INTEGRATED_IN_CONTEXT": "PASS",
+          "ORIGINAL_LEGENDS_VERIFIED": "PASS",
+          "NO_DECORATIVE_BOX_SUBSTITUTION": "PASS",
+          "ALL_PAGES_CHECKED": "PASS"
+        },
+        "reviewedPackSha256": "94663e3ef0ab6f9a2a5e3f882e4971235cd8b974df109b288e6cf82721888dce"
+      },
+      "publicationApproval": {
+        "status": "pending",
+        "authorization": "explicit_go_publication",
+        "scope": "infographics_only",
+        "approvedAt": "2026-10-22T08:12:35.303Z",
+        "bundleSha256": null
+      }
     }
   ],
   "supplementalResourceApprovals": [
