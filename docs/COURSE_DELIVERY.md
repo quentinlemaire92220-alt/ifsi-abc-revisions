@@ -1,3 +1,17 @@
+# PRIORITÉ ACTUELLE — Fiche hybride unique v1.46/v1.47 (22/10/2026)
+
+**CET ENCADRÉ PRIME SUR LES ANCIENNES PROCÉDURES À DEUX PDF RESTÉES CI-DESSOUS POUR L'HISTORIQUE.**
+
+Pour les productions nouvelles et les reprises expressément désignées : **UN SEUL PDF** « Fiche de révision hybride infographiée » avec illustrations médicales riches intégrées, texte sélectionnable, tableaux et lexique final ; la référence graphique est l'annexe des **10 pages de pharmacologie de la charte v1.46**, puis les révisions approuvées v1.47. Aucun doublon en cours intégralement infographié ou pack de planches supplémentaire par défaut. Voir `docs/HYBRID_REVISION_V146.md`, tests `hybrid-sheet-contract`.
+
+**Préserver tous les anciens cours**, leurs fiches au format historique, QCM, flashcards, audios, 16 planches Douleur et archives. Aucune suppression ni migration rétroactive non explicitement autorisée.
+
+**Validation bloquante :** audit du support officiel + PLAUD, matrice des notions essentielles, contrôle médical, vérification de toutes les pages contre le modèle pharmacologie, **accord graphique explicite sur l'empreinte réelle des fichiers** et GO publication. Le test de structure n'est ni une preuve de qualité anatomique ni un permis de diffuser.
+
+**État Douleur au 22/10 :** fiche de 32 pages et 67 définitions en revue privée, intégration élève en attente de validation médicale et graphique ; ne pas substituer à l'ancienne fiche active, voir `docs/hybrid-douleur-publication-gate-20261022.md`.
+
+---
+
 ## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
 
 Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.

@@ -40,8 +40,11 @@ export function validateVisualOwnerReview(courseId,delivery,data){
  assert.equal(review?.status,'owner_accepted',
   courseId+': REVUE VISUELLE BLOQUANTE — accord graphique explicite du proprietaire absent');
  const infographicOnly=delivery.publicationScope==='infographics_only';
- assert.equal(review.reference,infographicOnly?'cardiovascular_infographic_pdf_1p':'cardiovascular_revision_pdf_17p',
-  courseId+': comparaison au vrai modèle cardiovasculaire manquante');
+ const isHybrid=delivery.packFormat==='hybrid_v1';
+ const requiredModel=isHybrid?'pharmacologie_v1.46_10_pages':
+  infographicOnly?'cardiovascular_infographic_pdf_1p':'cardiovascular_revision_pdf_17p';
+ assert.equal(review.reference,requiredModel,
+  courseId+': comparaison au vrai modèle de référence manquante ('+requiredModel+')');
  assert.equal(review.method,'manual_full_pdf_comparison_100_200_percent',
   courseId+': inspection page par page et zoom 100-200 % non attestes');
  assert.ok(typeof review.reviewedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(review.reviewedAt)&&

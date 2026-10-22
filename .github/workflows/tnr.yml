@@ -88,6 +88,9 @@ jobs:
       - name: TNR nouveau contrat hybride v1.46 (un PDF, lexique et preuves)
         run: node tests/hybrid-sheet-contract-test.mjs
 
+      - name: TNR affichage des fiches hybrides sans publication implicite de Douleur
+        run: node tests/hybrid-sheet-ui-test.mjs
+
       - name: TNR cardinalité QCM dans le Service Worker
         run: node tests/lean-qcm-sw-guard-test.mjs
 
