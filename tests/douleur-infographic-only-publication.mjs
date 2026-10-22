@@ -23,7 +23,11 @@ delivery.publicationApproval.bundleSha256=bundleDigest(publicationBundle('douleu
 const before={courses:[]},after={courses:[delivery]};
 assert.equal(validateChangedDeliveries(before,after,base,newer).length,1);
 const clone=o=>JSON.parse(JSON.stringify(o));
-const rejects=(b,a,re)=>assert.throws(()=>validateChangedDeliveries(before,{courses:[b]},base,a),re);
+const rejects=(b,a,re)=>{
+ const v=clone(b);
+ v.publicationApproval.bundleSha256=bundleDigest(publicationBundle('douleur',v,a));
+ assert.throws(()=>validateChangedDeliveries(before,{courses:[v]},base,a),re);
+};
 rejects({...delivery,publicationApproval:{...delivery.publicationApproval,scope:'course_package'}},newer,/portee du package/);
 rejects(delivery,{...newer,infographics:[...newer.infographics,{...packRow,resourceId:'extra'}]},/une seule nouvelle ressource/);
 rejects(delivery,{...newer,infographics:[{...oldRow,title:'Supprime sans accord'},packRow]},/anciennes infographies/);
