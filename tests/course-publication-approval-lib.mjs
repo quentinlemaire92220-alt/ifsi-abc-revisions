@@ -41,7 +41,8 @@ export function validatePublicationApproval(courseId,delivery,digest){
  const a=delivery.publicationApproval;
  assert.equal(a?.status,'approved',courseId+': validation du package absente. Empreinte attendue : '+digest);
  assert.equal(a.authorization,'explicit_go_publication',courseId+': GO publication explicite absent');
- assert.equal(a.scope,'course_package',courseId+': une validation de fichier seul ne valide pas le package');
+ const expectedScope=delivery.publicationScope==='infographics_only'?'infographics_only':'course_package';
+ assert.equal(a.scope,expectedScope,courseId+': portee du package incorrecte : une validation de fichier seul ne valide pas le package');
  assert.ok(typeof a.approvedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(a.approvedAt)&&Number.isFinite(Date.parse(a.approvedAt)),courseId+': date de validation absente ou invalide');
  assert.match(a.bundleSha256||'',/^[a-f0-9]{64}$/,courseId+': empreinte de validation invalide');
  assert.equal(a.bundleSha256,digest,courseId+': le lot a changé après validation. Empreinte attendue : '+digest);
@@ -55,6 +56,30 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
   validatePublicationApproval(id,delivery,digest);
+  if(delivery.publicationScope==='infographics_only'){
+   // Une autorisation sur les planches NE valide PAS une refonte du cours entier.
+   // Refuser toute mutation des supports, banques, vocaux, registre et lexique.
+   const beforeScope=publicationBundle(id,delivery,oldData);
+   for(const key of ['course','sheets','vocals','banks','vocabulary']){
+    assert.equal(JSON.stringify(canonical(bundle[key])),JSON.stringify(canonical(beforeScope[key])),
+     id+': le GO infographies ne couvre pas la modification de '+key);
+   }
+   const previousInfos=beforeScope.infographics;
+   const additions=bundle.infographics.filter(x=>!previousInfos.some(old=>JSON.stringify(canonical(old))===JSON.stringify(canonical(x))));
+   assert.equal(bundle.infographics.length,previousInfos.length+1,
+    id+': une seule nouvelle ressource infographique autorisee');
+   assert.equal(additions.length,1,id+': les anciennes infographies doivent rester identiques');
+   const row=additions[0].metadata;
+   assert.equal(row.resourceId,delivery.infographicResourceIds?.[0],
+    id+': identification de la planche publiee incoherente');
+   assert.equal(delivery.infographicResourceIds?.length,1,
+    id+': une seule nouvelle ressource de pack autorisee');
+   assert.equal(row.url,'https://drive.google.com/file/d/'+delivery.infographicPackDriveId+'/view',
+    id+': l URL Drive ne concorde pas avec le pack approuve');
+   assert.equal(row.pageCount,16,id+': le nombre de planches a change');
+   assert.equal(row.coverageStatus,'partial',id+': publication non exhaustive non signalee');
+   assert.equal(delivery.reviewedBoardCount,16,id+': 16 planches doivent etre controlees');
+  }
   // Les changements QCM/audio seuls ne forcent pas une revue d'illustration;
   // un PDF/une figure nouveaux ou modifies ne passent plus sur un comptage PASS.
   requireVisualReviewIfChanged(id,prior,delivery,oldData,newData);

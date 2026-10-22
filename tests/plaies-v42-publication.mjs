@@ -14,14 +14,14 @@ const index=read('index.html').toString('utf8');
 
 const blobHash=createHash('sha1').update('blob '+bankBytes.length+'\0').update(bankBytes).digest('hex');
 assert.equal(blobHash,'de31dc5abe8e3e5aae191c9ba6039b2b731ec9f6','La banque V4.2 doit rester exacte, aucune question régénérée');
-assert.equal(meta.version,'8.30.113');
-assert.equal(meta.build,'8413');
+assert.match(meta.version,/^8\.30\.\d+$/);
+assert.ok(Number(meta.build)>=8413,'Version future ne doit pas rétablir le build V4.2');
 assert.equal(registry.version,meta.version);
 assert.equal(registry.courses.length,50,'Les 50 cours doivent être conservés');
 assert.ok(registry.courses.some(c=>c.id==='pssm'));
 assert.ok(registry.courses.some(c=>c.id==='sante_mondiale_sante_france'));
-assert.ok(sw.includes("ifsi-abc-v8-30-113-local-221"),'PWA cache trop ancien');
-assert.ok(index.includes('v8413-changelog.js?v=8413'),'Changelog nouvelle version absent');
+assert.ok(sw.includes('ifsi-abc-v'+meta.version.replaceAll('.','-')+'-local-'),'PWA cache de version non synchronisé');
+assert.ok(index.includes('v8413-changelog.js?v='+meta.build),'Changelog V4.2 historique non maintenu');
 assert.ok(index.includes('qextra-50.txt')||sw.includes('./qextra-50.txt'),'Banque non référencée par les assets PWA');
 
 const current=registry.courses.find(c=>c.id==='plaies_pansements');

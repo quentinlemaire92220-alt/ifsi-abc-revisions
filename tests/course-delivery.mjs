@@ -17,6 +17,26 @@ const required=['01','02','03','04','05','06','07','08','99'];
 for(const c of manifest.courses){
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
+ if(c.publicationScope==='infographics_only'){
+  // Publication complémentaire : ne PAS réexiger un dossier de cours refait,
+  // un export de flashcards ou des illustrations locales pour un PDF externe.
+  assert.equal(c.status,'partial',c.courseId+': un complément non exhaustif doit rester partiel');
+  assert.ok(c.folders?.['04'],c.courseId+': dossier infographies absent');
+  assert.equal(c.infographicResourceIds?.length,1,c.courseId+': un unique PDF de 16 planches attendu');
+  assert.equal(c.reviewedBoardCount,16,c.courseId+': 16 planches déclarées attendues');
+  const id=c.infographicResourceIds[0];
+  const info=infos.find(x=>x.resourceId===id&&x.courseId===c.courseId);
+  assert.ok(info,c.courseId+': pack infographique non rattaché');
+  assert.equal(info.pageCount,16,c.courseId+': nombre de planches incohérent');
+  assert.equal(info.coverageStatus,'partial',c.courseId+': résumé complémentaire non signalé');
+  assert.equal(info.url,'https://drive.google.com/file/d/'+c.infographicPackDriveId+'/view',
+   c.courseId+': fichier Drive non concordant');
+  assert.match(c.artifactSha256s?.[c.infographicPackDriveId]||'',/^[a-f0-9]{64}$/,
+   c.courseId+': hash PDF absent');
+  assert.ok(c.blockers?.length,c.courseId+": limitations d'exhaustivité non déclarées");
+  console.log('✅ '+c.courseId+': pack complémentaire de 16 planches validé pour publication restreinte');
+  continue;
+ }
  if(c.deliveryMode==='audio_only'){
   validateAudioOnlyDelivery(registry.courses.find(x=>x.id===c.courseId),c,vocals);
   console.log('✅ '+c.courseId+': '+c.vocals.length+' MP3 — livraison audio partielle (supports privés non publiés)');
