@@ -13,11 +13,12 @@ for(const ref of (/^[a-f0-9]{7,40}$/i.test(requested)?[requested,'HEAD^']:['HEAD
 }
 if(!base)throw Error('Historique Git absent pour contrôler la validation de publication.');
 const before=json(base,'docs/course-deliveries.json'),after=json(null,'docs/course-deliveries.json');
-function readData(ref,manifest){
+function readData(ref,manifest,proposedManifest=manifest){
  const sheets=[1,2,3].flatMap(n=>json(ref,`sheets-${n}.json`));
  const infographics=json(ref,'infographics.json'),vocals=json(ref,'vocals.json');
  const banks={},imageHashes={};
- for(const c of manifest.courses||[])for(const file of c.qcmBanks?.length?c.qcmBanks:[c.qcmBank].filter(Boolean)){
+ const manifestCourses=[...(manifest.courses||[]),...(proposedManifest.courses||[])];
+ for(const c of manifestCourses)for(const file of c.qcmBanks?.length?c.qcmBanks:[c.qcmBank].filter(Boolean)){
   if(!/^[\w/-]+\.(?:txt|json)$/.test(file)||file.includes('..'))throw Error('Chemin de banque invalide');
   if(!banks[file])banks[file]=json(ref,file);
  }
@@ -29,7 +30,7 @@ function readData(ref,manifest){
  }
  return {registry:json(ref,'course-registry-v741.json'),sheets,infographics,vocals,banks,imageHashes,vocabulary:json(ref,'vocabulaire-v1.json').entries};
 }
-const oldData=readData(base,before),newData=readData(null,after);
+const oldData=readData(base,before,after),newData=readData(null,after);
 for(const delivery of after.courses||[]){
  console.log('🔐 Empreinte package '+delivery.courseId+' : '+bundleDigest(publicationBundle(delivery.courseId,delivery,newData)));
 }
