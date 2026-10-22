@@ -19,15 +19,13 @@
       "status": "complete",
       "driveFolderId": "1lO6A__t_XaSqwF8QbcUNAaaB7lCuDpDp",
       "folders": {
-        "99": "1JJEAd0LyMCjLlBF_1s_W6KDaSpthfPbC",
         "01": "1tMSMxQZfS1bBquTYpiH_4NL8OZwCI85c",
         "02": "1Wxepo52zZsoLyR-bbUzAHsG3bLyDLlQ7",
         "03": "1syFE9q_sLG79u7WoMiiF7DYr5jh_1Dog",
         "04": "1-yeQZEOICA03z9gRxVluEYJPfSxocUBj",
         "05": "11mL_5dt4AfUl2CwE5-A1mg6HeLRHKHga",
         "06": "1G2EVgteu1h56NNpWSZ3732gppLLA1Zrp",
-        "07": "1gYHRXkRlgHo9B31InmMMJS4TI7eA5y3R",
-        "08": "1Hi_3EmTz0vRTJoLJlmD8i88WHI8k24qS"
+        "07": "1gYHRXkRlgHo9B31InmMMJS4TI7eA5y3R"
       },
       "supportDriveId": "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K",
       "sheetResourceId": "plaies_pansements_fiche_p01",
@@ -52,43 +50,6 @@
         "plaies_2026_05"
       ],
       "blockers": [],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Peau et cicatrisation",
-          "driveId": "1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m",
-          "url": "https://drive.google.com/file/d/1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m/view",
-          "partId": "p01"
-        },
-        {
-          "number": 2,
-          "title": "Escarres et prévention des appuis",
-          "driveId": "1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg",
-          "url": "https://drive.google.com/file/d/1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg/view",
-          "partId": "p01"
-        },
-        {
-          "number": 3,
-          "title": "Ulcères vasculaires et brûlures",
-          "driveId": "1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat",
-          "url": "https://drive.google.com/file/d/1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat/view",
-          "partId": "p01"
-        },
-        {
-          "number": 4,
-          "title": "Pied diabétique et technique du soin",
-          "driveId": "1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j",
-          "url": "https://drive.google.com/file/d/1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j/view",
-          "partId": "p01"
-        },
-        {
-          "number": 5,
-          "title": "Pansements, surveillance et qualité de vie",
-          "driveId": "1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-",
-          "url": "https://drive.google.com/file/d/1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-/view",
-          "partId": "p01"
-        }
-      ],
       "artifactSha256s": {
         "11LsN8yy2mue-4kFh4wKDc6Mbxv1Jt90K": "a5f081347f2b6d4e7b0053920c27d5e9284c3160fe5f54869bfa55b5659d470b",
         "1HIUhN5fYLxgjz01aCMsrUBk7_-_0fIxe": "bc496e6698bd28c980f98cf2737bb4ebd65d0d040d178beaf79e9873b7595052",
@@ -102,15 +63,10 @@
         "1JpKQllEU-SgSh2G8hnsf-2J9enzgCOVS": "c31b366be769f8b42a65e232ef69b026db2a3cf13a2ee93848914807d67c2bc0",
         "1B940yBBtGPQ-wP2520Oyr_ZIu0D581v6": "68b8bef50dfdef0834cf8d14c07f9654fd118183a9af9e2b81b45be8bc94e668",
         "1MsxUcVYS3ZhmmFa1re4xzvhYN-nSundg": "75a297e6364168651af84b65cfc9bdfdbe6eb084b610a52ca22be43913e7fefa",
-        "1xEugxgjtRtJBImKKGS_mK5GRfzQqoJ2m": "15af56ac7cc95f85b1de0f2ee7fef7fda540d75c529a9261e1e8eeb67f1a7d1d",
         "1BJSt-vlp9rJ5zrmpQUaRJg4Fqm_1Ch1P": "5f32ef1df1d904d5655ed60ba63e45df709814336da2d5f843e0e06aabff92ed",
-        "1KH5r0q4RlGlwQDo-vA2JKNGc5JZbQkLg": "cd6a2d76595941c8c56d94343fd7e5fbe2ad121c8a5b5f7e72423979bc57553d",
         "1MehFCdvR8CQ-n6Q5Iq0idrrThgc5nmAh": "0a0ad9647f547f4aa1d3bf003f3beb48f5cb30e4c7c1bfd57cda1d7e37a9243a",
-        "1Lp5Mp_RfxA0Ocs_HE8OxRnDw8FKTYDat": "ee2c03a48228cdc2b46604a2021abeece92ba5f590a676acb77cdef92c74be93",
         "1Bev009KaP3DkINQEKce1Ub_lW-3qRwRd": "6d3fb8fcbd620dae703a8a7a4fcd2ba8443c7f6692fe396a189ab9a993149af3",
-        "1P2sQ4NkSEnlhQ6COrzh0w_8H56UtJN3j": "6ee232452f116fe8f6b395a26c63ee8c10eb34e9f9402f0a86d9d7e7fd25d6b5",
         "1AqR-kE7ihOSccS_cCpSH6uUkmO5W3DNh": "2f81f59dd9f38bba17f3ef22aceb42765c7b6214944facadc4a7d231bb360e8f",
-        "1XziWRAn46F_j6HVH_RAP15PuVA1SE3s-": "c74c7438453a0e7a882e00172ec1916c275de477934b21d86949c98a9543f6b0",
         "1V6difvdFXUJipPmUknNfqgb7MK8L77Ad": "57ce65fd3756824ef7118dcc62fcfb293f03ef70286af290128d11f108d8171d"
       },
       "publicationApproval": {
@@ -137,7 +93,8 @@
           "qcmQuestionIds": []
         }
       ],
-      "qcmCorrectionDriveId": "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o"
+      "qcmCorrectionDriveId": "1-RkE3yi1qEGctKc9mStTNGg-JxYcz18o",
+      "scriptsPreparedCount": 5
     },
     {
       "courseId": "stomatotherapie",
@@ -147,15 +104,13 @@
       "publicationStatus": "authorized",
       "driveFolderId": "1Y-vgNKEdVm7ORW5K-orHHa7hgXes_DNe",
       "folders": {
-        "99": "1XAWVDNEo4bM4szcTsZDp8_i7EFu0qjtS",
         "01": "1UKPAuDV6rc34msAPYocS8BsuieZq_xq6",
         "02": "1Rsr8y396_LyuEFzXKMaFu0CN1Jxzg-O-",
         "03": "1pS9MAuZYiqBWchKFGu24rr2XeG8sJdtj",
         "04": "1h6_KyyCXmEAZ6dSPXTT6blF0TYHcunby",
         "05": "1RvwOeGIYkK6OThxKAvpcHcfczcUAUDVw",
         "06": "1PiKXul2jp42xJVgAoAmSJ2L9HtkjzltK",
-        "07": "1SrwD8mO3rx6LIwoL5_9BKhlY8Uqcm7S1",
-        "08": "1lJoW0TrUpnNlTHQEwW535sXVlsjxQXzz"
+        "07": "1SrwD8mO3rx6LIwoL5_9BKhlY8Uqcm7S1"
       },
       "supportDriveId": "144y_gyrWKuncH-BIShA4lAPvCLUMaTqP",
       "sheetResourceId": "stomatotherapie_fiche_p01",
@@ -216,39 +171,13 @@
         "10NMJlqLfN6zyFFEF8tLRLSpm8wr_4GGm": "70fa45a28a704578f3267bda5ce2c8455845c883fd506cf18c886812c094897d",
         "1GPFmPa7dJQ6Au8vJt8NUafCj-xQEk3W0": "da9fffa75634c4b2579c2ec0d661112887d210022a0a5091d9cb67db47728343",
         "1mJaDaQCLFsPUcXGzaCRfGzn9DC5gJXUF": "f35d32aabc893ceb575836249e3e953b7b27128d1a9f0b2aae9b57cd912486cb",
-        "18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5": "fc6361cdddaf880b4c6a21ac619450e1688199fb33cf274212d90489562feb54",
         "1TgTz-K9ALKBf9gGdnF-FXEk3cJaQL_W7": "cb37e38c7cd1652e6f8a77ad9d92c326cb181b2f798d2d36c05b614e5960a8c9",
-        "1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo": "b6c6cb45976135836556e81e0725403b316b38508b558bc643bf0e10cf7a06d4",
-        "1Z21K6xje4HQTngSZtdwsbAsgs9f08ikK": "3299077867e7f2e12e539c97237057624fda851e7daf3a21342f73a855a10310",
-        "1TfqIXLmwcQUygdHgYby2J6gIG8fDu874": "6eae65fbd90b9c2b807a510d17babedf5a9640d3896f8435e577b67abf68814d"
+        "1Z21K6xje4HQTngSZtdwsbAsgs9f08ikK": "3299077867e7f2e12e539c97237057624fda851e7daf3a21342f73a855a10310"
       },
       "vocals": [
         "stomato_2026_01",
         "stomato_2026_02",
         "stomato_2026_03"
-      ],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Comprendre les stomies et l’anatomie digestive",
-          "driveId": "18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5",
-          "url": "https://drive.google.com/file/d/18M7B6rNGJL6rLsq0UhGpCd9isSZpwxe5/view",
-          "partId": "p01"
-        },
-        {
-          "number": 2,
-          "title": "Dérivations urinaires et autonomie du patient",
-          "driveId": "1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo",
-          "url": "https://drive.google.com/file/d/1s4pwG-4h7vONvMTbajZk3MlALrMdZyFo/view",
-          "partId": "p01"
-        },
-        {
-          "number": 3,
-          "title": "Soin cutané, appareillages digestifs et surveillance",
-          "driveId": "1TfqIXLmwcQUygdHgYby2J6gIG8fDu874",
-          "url": "https://drive.google.com/file/d/1TfqIXLmwcQUygdHgYby2J6gIG8fDu874/view",
-          "partId": "p01"
-        }
       ],
       "blockers": [],
       "publicationApproval": {
@@ -272,7 +201,8 @@
           "infographicResourceIds": [],
           "qcmQuestionIds": []
         }
-      ]
+      ],
+      "scriptsPreparedCount": 3
     },
     {
       "courseId": "droits_patients",
@@ -281,15 +211,13 @@
       "status": "complete",
       "driveFolderId": "1lInHj_FxbpAPR70sZ0g5atyYsNcuLqYC",
       "folders": {
-        "99": "1FkkPK1Z1pcVY-CfAfri1AkaRkB_4FdBE",
         "01": "1dzyAX30n8OCA25E5pbDaljpLpj6V-dt1",
         "02": "1Bg9kYKjHBXgMgzNOl1KgL5B34NT6izte",
         "03": "1oeopiM0VccGmPhaxWi_y-qayKjlBbqFI",
         "04": "1k_AibIriTGPpgeCD5aUvK5XQvBBUF68B",
         "05": "14VSWEVk-Q4lGboFXSrBoz3nRpGW27EJH",
         "06": "1qcRwryfTVtA7oktKDHXTeoSHN7YlBWYJ",
-        "07": "1KBu38jgyvnBg9Dnl59avysegv_Hen2ai",
-        "08": "1QhFuARo7MXe7uRZ3BH5ka-lUx1fbr38n"
+        "07": "1KBu38jgyvnBg9Dnl59avysegv_Hen2ai"
       },
       "supportDriveId": "1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08",
       "sheetResourceId": "droits_patients_fiche_p01",
@@ -325,50 +253,6 @@
         "droits_patients_2026_05",
         "droits_patients_2026_06"
       ],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Fondements des droits, accès aux soins et dignité",
-          "driveId": "1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ",
-          "url": "https://drive.google.com/file/d/1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ/view",
-          "partId": "p01"
-        },
-        {
-          "number": 2,
-          "title": "Soins palliatifs, fin de vie et sédation",
-          "driveId": "1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir",
-          "url": "https://drive.google.com/file/d/1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir/view",
-          "partId": "p01"
-        },
-        {
-          "number": 3,
-          "title": "Libre choix, secret professionnel, partage et dossier médical",
-          "driveId": "15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ",
-          "url": "https://drive.google.com/file/d/15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ/view",
-          "partId": "p01"
-        },
-        {
-          "number": 4,
-          "title": "Information, consentement et volonté anticipée",
-          "driveId": "1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln",
-          "url": "https://drive.google.com/file/d/1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln/view",
-          "partId": "p01"
-        },
-        {
-          "number": 5,
-          "title": "Mineurs et majeurs protégés",
-          "driveId": "1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ",
-          "url": "https://drive.google.com/file/d/1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ/view",
-          "partId": "p01"
-        },
-        {
-          "number": 6,
-          "title": "Psychiatrie, soins sans consentement et restrictions de liberté",
-          "driveId": "1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02",
-          "url": "https://drive.google.com/file/d/1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02/view",
-          "partId": "p01"
-        }
-      ],
       "blockers": [],
       "artifactSha256s": {
         "1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6": "07e37070307948fbaa049c0bb70068226c311f8ade1baddafae8abc82e7c9044",
@@ -397,17 +281,11 @@
         "1L47gMYL4Ynccw-kbYjEJcUFijIeTbECU": "629a38bb01ec6240177ffb20e8eb6990f535ea2b7e47dfa8eb108afd746783fd",
         "1ZGuJfhk0ixgtZIVWLuxB_tv_Udiz-N08": "e1a7f728beaa354bb750b295cf946ef39e48313869cabcacb7a34610c26f058b",
         "1QOrLeI1xg5BgUXaFFNUJzEwEIXNE_nX_": "479512c51d3a98895e3f1f7b547bf3fe5a11ea9686f3c9c9a1c6fd8c1f92c398",
-        "1GTwEl5bU1nm4oWZ-ZfCJAPItEt2NoQnJ": "ebd7ec7623130b77ef6d2eb2975994678310970198392e368ef75bf3dcc03040",
         "1JdXTKl5hbHl6yD3rs89Ek75iDG6AIAwt": "6aace32cddf9bab0824274d63881826ca2d6eb8018510180fb25c5f4318f5d45",
-        "1pPyNOYFnoFUVatHHbAa-uG2OFd6FZ7ir": "2e1dd9cc01869f28592810778c7a72d8b739f6b551c74e70673d02e100cf1e47",
         "1kdToFBhQlQxEt5doA5W46LBEQDHmHMoj": "c677d0864360f0608dceb0535e428c2eff93d5d629e055e214aa09403453090c",
-        "15Oo6gr-rabZtGt6Dwlay-LOfRDmn5EpQ": "779fef2a77929d0698c693ad2fc31476e65bdbad22d8810ef905410c77fdb472",
         "1CQdj5CXUvcGK7uGxDUqVALswHG0sUdxA": "4f1ff2e2f1f84c76d27d1bae30337ae5146d3b38c82588f1a25f8251905cce50",
-        "1R2RGsrPYe93oXwFFUeiDbl74G_9Dvbln": "b82ffba068a61906782e207c83bb6394ded0e0c81f672c1b25af6aa110b8eb43",
         "1D-h2nZIIsSvUDd4OHPbTZbWfwDu3ZkqT": "cba307c99a23d2f9cb096020b6db5f8aa0ab2e0b74385acf80e72f56d3699867",
-        "1mhNnGNy6XSGRZPJ7AT5Pfcdm3y1rtfSJ": "c9a725f842515cd89c96042b7e1898c0eae390754018e943cb864e73b8ed3901",
-        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e",
-        "1WrppaFsVsrgsfqSPSDXmHQFa4J5qff02": "f5fc095922054b199a7594b1a999ef6000f23940cf9ed45b8ede2fc114fc41f4"
+        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e"
       },
       "infographicSheetResourceId": "droits_patients_fiche_infographiee_p01",
       "infographicSheetVisualAudit": {
@@ -453,7 +331,8 @@
           "infographicResourceIds": [],
           "qcmQuestionIds": []
         }
-      ]
+      ],
+      "scriptsPreparedCount": 6
     },
     {
       "courseId": "pssm",
@@ -470,7 +349,6 @@
         "pssm_2026_02",
         "pssm_2026_03"
       ],
-      "vocalScripts": [],
       "blockers": [
         {
           "resource": "official_support",
@@ -512,15 +390,13 @@
       },
       "driveFolderId": "1MIsuLsgAtwOPXBm8kRWHs6unm1areyRF",
       "folders": {
-        "99": "1yJkGIsSwxErVlKqWSRxVbWUQkke7Rvfn",
         "01": "1FO0OBRyPrDHTDTa6LrT4ULewGW-6gNmj",
         "02": "1poBDF4IFOn7APKKvw278jm67vm_TePuR",
         "03": "1_kjH51srmtoIFalnFl2yD1g6dSu1FzV8",
         "04": "1Vp3Xut87sJF3LaXoB-OR3efD-Pk4UFS7",
         "05": "1dNYp-zO3rKEzXGdLGq-TxeTPC5URpk58",
         "06": "1mZ00q1AMNwC1pTMj5r6CVGggF_ZYOSnf",
-        "07": "1kuISPcarpXPt2BtECxFnqJ0_JryeWPfe",
-        "08": "1TZM57FI-HIcSrbs1BMWTT-PpkYmAJ7fA"
+        "07": "1kuISPcarpXPt2BtECxFnqJ0_JryeWPfe"
       },
       "sheetResourceId": "pharmacologie_fiche_p01",
       "infographicSheetResourceId": "pharmacologie_fiche_complete_infographiee_p01",
@@ -559,15 +435,6 @@
           "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
         }
       ],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Consolidation des notions et corrections",
-          "driveId": "1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E",
-          "url": "https://drive.google.com/file/d/1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E/view?usp=drivesdk",
-          "partId": "p01"
-        }
-      ],
       "artifactSha256s": {
         "1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm": "d00c83b6f17d393d14140d99e1fa0f6cea17fd356d5158a65c65dee0f8bb42d9",
         "1E33G1Me-v6EE4tx0lIsRqdyRqyS-h5tp": "1a2ff71eb8370fa298740dfb28ee8e0a6040bca91d79f80d09877f03249510bb",
@@ -584,8 +451,6 @@
         "13xmk0kFSP1fb2Ou81yBdUaEcTt3zyXLM": "eb35ec765a70f2404d44cc993083fb2d5a78f5c8675d8abdcefd146e5f64317b",
         "1MKM8nUAOvydFQqpiGt2q1qP7qFJndC0J": "2d03b48b106c4f128728994fb7c4143af75ab776530dd25ac707d43df5a8c9d2",
         "1YyKYOMXPDQeOZlKeLQHeO0FO1E4BPBmK": "a56d2506c50036b7c66fd25a5e23db61546329fd38f30d21aff7ff49d4d79a61",
-        "1KtuyoK5uDp3TDpACZLK-Y83Fj6G-b07E": "f90c71b5eda9f614c9cdab43e01556e9e66fce73ea2564d6b45a01d6e99f58e1",
-        "1rYvyHoHgc5rgo-hXvwPCkcbV7SGF9c-6": "2f59412fc47265db43d0dccc8d05deddcb62018b2de16685487ccc3b3b310a7d",
         "1PsNu_UhNFVXxeBuStYZrc5i0qpsv8P4_": "1735c8d4141dbc77707b621e61a9b967808145298ecf6fe278bc2ac12907584d",
         "1KELhpD9_1FQo-i0CzaVa6WtxlDPtka-C": "fea8adced6a70791c7c0ed8aa60ad63a10a1ecdb4680e13defde61426f53da49",
         "14LO1OLJdtnyVPBsMKEclb6jY6tMXHKS2": "11d58ab3960df6bf7df5939d2087b17cec3499808c6b7fe52e6618cafec0bcd8",
@@ -807,7 +672,8 @@
             "pharmaco_vocal_05"
           ]
         }
-      ]
+      ],
+      "scriptsPreparedCount": 1
     },
     {
       "courseId": "infections_neuro_meningees",
@@ -823,15 +689,13 @@
       },
       "driveFolderId": "1jb3ehesu8YJN96JIYD2sX7iZ-_92mqTH",
       "folders": {
-        "99": "1yweeg41i35AGs4LchoIGYOiaZvTtPa-f",
         "01": "1F68nQ3fkdGG6GrGTFixpuG4F4tEyjzGn",
         "02": "1Ra32h-4N9ue8MDrh_ODu3w7YlZv_Rlqh",
         "03": "1MIvqTTZaKtPJGODimSCZuAO0-Di1T1RP",
         "04": "1c_WSKhLkeGdnoTLGV5rJEH4LgB5Pw8SM",
         "05": "1wYJ2pJmqATjIejV87ospt9kZju6zqgyf",
         "06": "13xRpSyDvAOVUcr34yhaEdmpn0u_kIeTI",
-        "07": "1MX43d65Coiobssyci9EGjC7b3827PEWZ",
-        "08": "1ZwSzrd8ascdLC6g3q32WW-sEqUzsV4lE"
+        "07": "1MX43d65Coiobssyci9EGjC7b3827PEWZ"
       },
       "sheetResourceId": "infections_neuro_meningees_fiche_p01",
       "infographicSheetResourceId": "infections_neuro_meningees_fiche_complete_infographiee_p01",
@@ -867,15 +731,6 @@
           "detail": "Révision rapprochée des captures de cours ; PDF natif officiel encore à retrouver."
         }
       ],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Consolidation des notions et corrections",
-          "driveId": "15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN",
-          "url": "https://drive.google.com/file/d/15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN/view?usp=drivesdk",
-          "partId": "p01"
-        }
-      ],
       "artifactSha256s": {
         "1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4": "0d87e17876b15273f8b411c4a5ad22f620053f7123c482bef851bd718b0b0ba8",
         "1h9r2jNODPDLeESDuKUnnPN953ujAPspL": "7e3d1596d5a6ebd274f34110ea83782a181b2c7d9b0916f641e4ccdd6d7fc7e4",
@@ -888,8 +743,6 @@
         "1VPuib1i782O5E1lbaUYf3bQQAg5WWh1r": "f0e9031037441bf9dba719d4f01e868999e49e5cee02acac55feeeea8ac711d2",
         "1S7s8m9UQOCdIiNvLllo1Jq-FGYKvy9xV": "dcac90e324c367aaf224d6ba17027aae7d06e88e071a1168f7d6496f94b4727e",
         "1-BeWYHbxSi7hyNXMFR5dpNJwtUQqvvm0": "f4aa497e53c85ea24ea68f895f01a2dcabc23890ec513c39eeb3d1f0b15ea120",
-        "15AzDwcDeEmx2Nb36hexkx6H3hkmhJ-qN": "c529b29649a03e76aac4ba0fae92bf35000b2ce60c2af7fc5c307f4b7bc5aa04",
-        "1Np9Lys94ODvojXDqH4Y9Vlbljw-rIO4_": "052bf587b90b10035a120c607999c108e5e155ce9878c60acdb607c6ff189ec2",
         "1PBce1RW5rmbrwAyL1hZ2m2A4lMvUtsLx": "ab618176233a4957f5b7a5606446bb153460754e5260260f561b1a8432009605",
         "1xS7KRruiJf9c0UwFT5whwrEUU0Jhg5t7": "f65b76ea0bc77cff399e4293b14949da6a1e7abdf63813da92a6075558da8b46",
         "1RK-dZlX7ha9r-tGSkuaVrol12tkTSVuV": "8e3571e04763e5bc1b4d9555657cbd170476218fb84e22448095365285fe9857",
@@ -1082,7 +935,8 @@
             "neuroinf_06"
           ]
         }
-      ]
+      ],
+      "scriptsPreparedCount": 1
     },
     {
       "courseId": "ethique_infirmiere",
@@ -1115,10 +969,6 @@
         "1f9Zo1MhPnqBoJ3L9bVzz04r-qCZ-ONnQ": "dd47842c2bb479170434af04a67bb4fee0ab09bba385ac781b650dc1e0c93f49",
         "1Itbb6vGZvc0U_n9v91t_Wh3Xr4rZXFQh": "9d388dfea20cc3823c663f34e50ffcb68636418ddac650a242a94520184567c2",
         "1i6qi88GRKCoTmq4b743ji5XbcemoZ8Lk": "d465c21909b59b75e859ff0761f4fd1098f93fb44b0fdac28a2783d3f6f0aec0",
-        "1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK": "b93d02959faa2b88463da3252878c92f4412a54648239b2d6ebc9aad46a64313",
-        "1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0": "4f43ff0e2b8a43eba1be24b133c37e5318c0c887b5878d85d1519d6f759c2315",
-        "10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h": "036a24b498c595cd1008e491112270e8a3b6e6eb4a7e58c26637508c3daff2b7",
-        "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf": "ba666b7421b0113e35261ac7a4f4bff27cf2cf40e4a7e9c096276506a4dca91c",
         "1S2FRYmuEz-BURIabkoRZSeA4vTo0Bwuw": "03cf898b626db4186118b90ae2f5e12fc23329e9f85843669b7b5a44120ea361",
         "1f3U91NKQVUAAGoHFTUc1jbbzQyBwIab1": "76c692fe1f6a4e11a8694ba1a71aff7e6b9bb81c7238426557f489f223d23ae1",
         "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI": "9ffac5391ca74c528064aa68da9285c611eeb9e3eb098e271cfcddb2f4afb680",
@@ -1231,15 +1081,13 @@
       "deliveryQuestionScope": "declared_parts",
       "driveFolderId": "1tc4q7GUDkpo2nzbeXV2Fzdi8DkBxMiqt",
       "folders": {
-        "99": "10IpSPpGiJkM9QXMwHcHzMwi8NOPr-4Ah",
         "01": "13ych7l1ZbNuektPuo2xRC-3C02frmgkG",
         "02": "15Qw0uDwdrdPvFyLLc1nnGCNgDIVHFx2p",
         "03": "1b3JfaPYhzeeOZFel7Qc2C9lejTQnS6TK",
         "04": "1yIeqdhY7cj_udIf1rQo2rVPpFvt6PEYq",
         "05": "1TXK4vkMHC17hT6FDJeeDJ0sILTqiquOl",
         "06": "1N1tmILmfXhtQXpHGGb2YQ4aSlwxPoScu",
-        "07": "17eifnSzOLWMTkMI5F87DrgEg41Vjfjd6",
-        "08": "11iR9ZXkGfjTrpZDu3DDg6dLzQz1YQeS_"
+        "07": "17eifnSzOLWMTkMI5F87DrgEg41Vjfjd6"
       },
       "supportDriveId": "1fk5_uVC7EelsCMdm3OPuOjEOtb74o8xI",
       "qcmDriveId": "19cNhArBzHk-jaJ0jn9XaINL8hUeKn430",
@@ -1260,36 +1108,6 @@
         "ethique_infirmiere_p02_vocal_02",
         "ethique_infirmiere_p02_vocal_03",
         "ethique_infirmiere_p02_vocal_04"
-      ],
-      "vocalScripts": [
-        {
-          "number": 1,
-          "title": "Gilligan : care, relations et émotions",
-          "driveId": "1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK",
-          "url": "https://drive.google.com/file/d/1LMVVNXxx2BG3_0XL39zLrJqPzzRRPQRK/view",
-          "partId": "p02"
-        },
-        {
-          "number": 2,
-          "title": "Tronto : interdépendance et organisation du care",
-          "driveId": "1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0",
-          "url": "https://drive.google.com/file/d/1oWuKpsDmGwhi_8-8D_WtFk0GujfGSw-0/view",
-          "partId": "p02"
-        },
-        {
-          "number": 3,
-          "title": "Cas en EHPAD : principes et délibération",
-          "driveId": "10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h",
-          "url": "https://drive.google.com/file/d/10kRkn1_ZzCTufCBUMs3sFEfmZbOxkB1h/view",
-          "partId": "p02"
-        },
-        {
-          "number": 4,
-          "title": "Synthèse : relier les notions et les situations",
-          "driveId": "1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf",
-          "url": "https://drive.google.com/file/d/1Wb6kG5xGAa6GQbheE5ziFRqYr7YCStAf/view",
-          "partId": "p02"
-        }
       ],
       "partDeliveries": [
         {
@@ -1513,7 +1331,8 @@
         "scope": "course_package",
         "approvedAt": "2026-10-20T20:46:30.855Z",
         "bundleSha256": "79f52490916f6ae18524ea428c12a36be055f76193ec2d620a41b19b6ef01f15"
-      }
+      },
+      "scriptsPreparedCount": 4
     },
     {
       "courseId": "sante_mondiale_sante_france",
@@ -1530,15 +1349,13 @@
       "packFormat": "lean_v1",
       "driveFolderId": "1hTI4WdjGNT25tYrK780f2bxZ4q9cDY5T",
       "folders": {
-        "99": "11RbrMgIr0eymJgrQ-sLij2jsLr4BNwTQ",
         "01": "1kFCX7tN7ALLHZ8jsdA3LT02nf65dOkIc",
         "02": "1bzPobuPjxAcu2AWVeXcShgp7bquLzoi4",
         "03": "1jmAV4vJTrMVmLbGecrW2lxCigMtT5Jlu",
         "04": "1_Djjw4EjhW58UFdz09dbcV6hcoGA94tz",
         "05": "14t1L6Rca-M7F0RtJY16r1HRRFNyAkL9H",
         "06": "1jcRXtlJTsf0gzVMp5h-RMYRRivoeAV1n",
-        "07": "1ZSKdMh-mFSaZgXJs987PyTU2e2_oRsbq",
-        "08": "12F5cYKR9fiQMTRCg94ll8hntPhN3dpjZ"
+        "07": "1ZSKdMh-mFSaZgXJs987PyTU2e2_oRsbq"
       },
       "sheetResourceId": "sante_mondiale_sante_france_fiche_p01",
       "infographicSheetResourceId": "sante_mondiale_sante_france_fiche_complete_infographiee_p01",
@@ -1563,7 +1380,6 @@
       "embeddedFigureCount": 5,
       "requestedVocals": false,
       "vocals": [],
-      "vocalScripts": [],
       "blockers": [
         {
           "resource": "support",

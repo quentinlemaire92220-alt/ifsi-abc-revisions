@@ -1,3 +1,12 @@
+# PRIORITÉ ACTUELLE — CHARTE IFSI ABC v1.47 (22/10/2026)
+
+**Cette décision récente prime sur toutes les références v1.46, v1.45 et anciennes instructions à deux PDF ci-dessous.**
+Pour les nouvelles productions : **une seule fiche de révision hybride infographiée** multipage ; texte sélectionnable, vraies infographies médicales intégrées, tableaux utiles, « À retenir », « Pièges QCM », puis « Définitions et mots-clés » en fin de document. Modèle graphique **Pharmacologie P01 de 24 pages**, à ouvrir et à inspecter avant la production ; les dix anciennes pages v1.46 ne sont que des témoins historiques. Vérifier les notions importantes, les priorités explicitement annoncées par l'enseignant et les priorités déduites séparément, la confrontation au support officiel et à l'oral disponible, chaque page et chaque repère médical. Aucun second cours infographié/pack de planches par défaut.
+
+Le contrat technique reste `hybrid_v1`/`hybrid_infographic` et son identifiant de modèle visuel pour les nouveaux lots devient `pharmacologie_v1.47_24_pages`. Les anciens cours, les QCM, flashcards et vocaux gardent leurs contrats et ressources ; aucune migration rétroactive. Les validations scientifiques/visuelles, l'empreinte des octets approuvés, les preuves Drive et le GO publication distinct restent obligatoires. Aucune fiche médicale ne devient publiable du seul fait d'un TNR vert.
+
+---
+
 ## DÉCISION PRIORITAIRE — CHARTE v1.46, FICHE HYBRIDE UNIQUE (22/10/2026)
 
 Pour les **NOUVELLES productions pédagogiques**, un seul support PDF principal : **fiche de révision hybride infographiée**, rédigée et illustrée, avec « Définitions et mots-clés » en fin de document. Le modèle graphique normatif est la série de **10 pages pharmacologie** dans la charte privée v1.46, consultée et comparée réellement avant production et revue de chaque page. Les planches infographiques totales séparées et le cours infographié complet séparé **cessent d'être des livrables systématiques**. Les QCM, flashcards et vocaux restent intégralement **INCHANGÉS**.

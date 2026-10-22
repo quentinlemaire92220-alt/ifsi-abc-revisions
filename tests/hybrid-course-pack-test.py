@@ -1,4 +1,4 @@
-"""Tests sans données réelles ni publication du générateur hybride v1.46."""
+"""Tests sans données réelles ni publication du générateur hybride v1.47."""
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
@@ -34,6 +34,7 @@ with TemporaryDirectory() as tmp:
     dest = root / "out"
     result = make_pack(fixture, root, dest)
     assert result["packFormat"] == "hybrid_v1"
+    assert result["visualReference"] == "pharmacologie_v1.47_24_pages"
     assert result["status"] == "DRAFT_REVIEW_ONLY"
     assert result["publicationApproval"] == "NOT_GRANTED"
     assert result["notionsCovered"] == 2

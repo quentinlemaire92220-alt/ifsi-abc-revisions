@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {createHash} from 'node:crypto';
+import {isApprovedPrivateReferenceWithdrawal} from './private-resource-withdrawal-lib.mjs';
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -55,6 +56,13 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const digest=bundleDigest(bundle);
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
+  // Une révocation PURE de références privées est permise sans nouveau GO de publication.
+  // Les approbations et tous les contenus QCM, PDF, cartes, vocaux doivent rester identiques.
+  if(prior && isApprovedPrivateReferenceWithdrawal(id,prior,delivery,
+      publicationBundle(id,prior,oldData),bundle)){
+   checked.push({courseId:id,kind:'private_reference_withdrawal'});
+   continue;
+  }
   validatePublicationApproval(id,delivery,digest);
   if(delivery.publicationScope==='infographics_only'){
    // Une autorisation sur les planches NE valide PAS une refonte du cours entier.

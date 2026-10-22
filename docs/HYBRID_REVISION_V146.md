@@ -1,12 +1,12 @@
-# IFSI ABC — Migration métier v1.46 : fiche hybride infographiée unique
+# IFSI ABC — Contrat hybride unique (introduit en v1.46, maître courant v1.47)
 
-**Décision du 22 octobre 2026. Portée : nouvelles productions uniquement.**
+**Décision initiale v1.46, remplacée pour le modèle graphique par la v1.47 le 22 octobre 2026. Portée : nouvelles productions uniquement.**
 
 ## Contrat pédagogique nouveau
 
 Un seul PDF étudiant **Fiche de révision hybride infographiée** par cours/partie : textes synthétiques sur les priorités, infographies pédagogiques médicales intégrées dans les sections concernées, tableaux, « À retenir », pièges QCM et **définitions et mots-clés à la fin**. Aucune limite de pages artificielle. Un support complet infographié séparé n'est plus produit systématiquement. Aucune figure décorative ne compense une notion importante manquante.
 
-La référence graphique maître est l'annexe des **dix pages de pharmacologie** intégrée dans la charte privée Google Drive `CHARTE_IFSI_ABC_v1.46_FICHE_REVISION_HYBRIDE_INFOGRAPHIEE_2026-10-22`. Le dépôt **public** ne contient ni son URL privée, ni les images/diapositives sources. La revue visuelle doit réellement comparer toutes les pages PDF avec les dix modèles. Les images ne valent pas preuve de justesse scientifique.
+**Mise à jour prioritaire v1.47 (22/10/2026) :** la référence graphique maître est désormais la **fiche hybride Pharmacologie P01 de 24 pages** désignée par la charte privée v1.47 ; les dix pages de la charte v1.46 restent des archives de style. Le dépôt **public** ne contient ni les URL privées, ni les PDF/illustrations des sources. La revue compare chaque page du nouveau PDF à ce maître, sans copier ses faits médicaux et sans confondre forme et validation scientifique. Identifiant du modèle pour les NOUVEAUX packs : `pharmacologie_v1.47_24_pages`.
 
 **Inchangés :** les contrats, règles et rendus QCM, flashcards et vocaux ; les planches anatomiques autonomes et les schémas de QCM restent possibles comme ressources **spécifiques**, selon leurs propres contrats, non comme seconde fiche obligatoire.
 
@@ -66,7 +66,7 @@ La déclaration `docs/course-deliveries.json` reprend **une seule** fiche, avec 
   },
   "hybridVisualReview": {
     "status": "approved",
-    "reference": "pharmacologie_v1.46_10_pages",
+    "reference": "pharmacologie_v1.47_24_pages",
     "pagesChecked": 8
   },
   "lexicon": {

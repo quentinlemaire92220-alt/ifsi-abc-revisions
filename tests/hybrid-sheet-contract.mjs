@@ -1,7 +1,7 @@
-// IFSI ABC v1.46 — contrat NON rétroactif de la fiche hybride unique.
+// IFSI ABC v1.47 — contrat NON rétroactif de la fiche hybride unique.
 // Les packs lean_v1, dual-sheet et single_with_complete_boards restent inchangés.
 // Ce garde-fou contrôle les déclarations ; seule la revue humaine vérifie la science
-// et la fidélité aux 10 pages témoins de pharmacologie conservées dans la charte privée.
+// et la fidélité au modèle maître Pharmacologie P01 de 24 pages (charte privée v1.47).
 import assert from 'node:assert/strict';
 import {validateSheetSource} from './dual-sheet-contract.mjs';
 
@@ -47,7 +47,7 @@ export function validateHybridDelivery(courseId, delivery, sheets, {requirePubli
  assert.equal(coverage.readabilityReview,'approved',courseId+': lisibilité non approuvée');
  const model=delivery.hybridVisualReview;
  assert.equal(model?.status,'approved',courseId+': modèle pharmacologie non comparé');
- assert.equal(model.reference,'pharmacologie_v1.46_10_pages',courseId+': référence visuelle obsolète');
+ assert.equal(model.reference,'pharmacologie_v1.47_24_pages',courseId+': référence visuelle obsolète');
  assert.equal(model.pagesChecked,audit.pageCount,courseId+': toutes les pages doivent être comparées');
  const lex=delivery.lexicon;
  assert.ok(Number.isInteger(lex?.termCount)&&lex.termCount>0,courseId+': lexique final absent');
