@@ -395,5 +395,8 @@ jobs:
       - name: Vérifier la livraison Stomatothérapie
         run: node tests/stomatotherapie-delivery.mjs
 
+      - name: Vérifier les liens officiels sans doublons, sans altérer le registre
+        run: node tests/official-support-dedup-v1.mjs
+
       - name: Vérifier le lot droits_patients p01
         run: node tests/course-droits_patients-p01.mjs
