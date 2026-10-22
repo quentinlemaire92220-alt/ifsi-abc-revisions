@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const packId='1BBl2PdTj8msoUsMBj6JtN6aS8DA66m9u';
+const hash='94663e3ef0ab6f9a2a5e3f882e4971235cd8b974df109b288e6cf82721888dce';
+const id='douleur_infographies_pack_16_20261022';
+const course=json('course-registry-v741.json'),infographics=json('infographics.json'),
+ delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
+ meta=json('build-meta.json'),qcm=json('qextra-51.txt');
+assert.equal(course.version,'8.30.114');
+assert.equal(course.courses.length,50);
+assert.equal(meta.version,course.version);
+assert.equal(meta.build,'8414');
+const original=course.courses.find(c=>c.id==='douleur');
+assert.equal(original.officialSupportUrl,'https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view');
+assert.equal(original.qcmPdfUrl,'https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view');
+assert.equal(original.audioCount,3);
+assert.equal(infographics.length,184);
+const old=infographics.filter(x=>x.courseId==='douleur'&&x.resourceId!==id);
+assert.equal(old.length,4);
+const list=infographics.filter(x=>x.resourceId===id);
+assert.equal(list.length,1);
+assert.equal(list[0].courseId,'douleur');
+assert.equal(list[0].url,'https://drive.google.com/file/d/'+packId+'/view');
+assert.equal(list[0].pageCount,16);
+assert.equal(list[0].coverageStatus,'partial');
+assert.equal(delivery.publicationScope,'infographics_only');
+assert.equal(delivery.infographicPackDriveId,packId);
+assert.equal(delivery.reviewedBoardCount,16);
+assert.deepEqual(delivery.infographicResourceIds,[id]);
+assert.equal(delivery.artifactSha256s[packId],hash);
+assert.equal(delivery.visualOwnerReview.reviewedPackSha256,hash);
+assert.equal(delivery.visualOwnerReview.reference,'cardiovascular_infographic_pdf_1p');
+assert.equal(delivery.publicationApproval.scope,'infographics_only');
+assert.equal(qcm.filter(q=>q.courseId==='douleur').length,52);
+console.log('PASS: V8.30.114, 16 nouvelles planches en un pack PDF, 4 anciennes intactes, 52 QCM et 3 vocaux préservés.');
