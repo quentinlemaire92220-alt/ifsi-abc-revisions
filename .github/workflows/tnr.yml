@@ -85,6 +85,9 @@ jobs:
       - name: TNR nouveau pack allégé et anciens contrats
         run: node tests/lean-course-contract-test.mjs
 
+      - name: TNR nouveau contrat hybride v1.46 (un PDF, lexique et preuves)
+        run: node tests/hybrid-sheet-contract-test.mjs
+
       - name: TNR cardinalité QCM dans le Service Worker
         run: node tests/lean-qcm-sw-guard-test.mjs
 
