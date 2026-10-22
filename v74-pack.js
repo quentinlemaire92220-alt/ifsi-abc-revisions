@@ -212,10 +212,24 @@ function renderCourse74(){
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
   const driveUrl=u=>typeof u==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)?u:'';
+  // Dédupliquer seulement la présentation : les supports et leur registre approuvé restent intacts.
+  const uniqueSupportParts74=(primaryUrl,parts)=>{
+    const driveIdentity=u=>{
+      const path=String(u||'').split('?')[0].split('#')[0];
+      return (path.split('/file/d/')[1]||path.split('/folders/')[1]||path).split('/')[0];
+    };
+    const seen=new Set(primaryUrl?[driveIdentity(primaryUrl)]:[]);
+    return parts.filter(part=>{
+      const id=driveIdentity(part.url);
+      if(seen.has(id))return false;
+      seen.add(id);
+      return true;
+    });
+  };
   const officialUrl=driveUrl(courseMeta.officialSupportUrl);
   const captureUrl=driveUrl(courseMeta.captureSupportUrl);
-  const officialParts=Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[];
-  const captureParts=Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[];
+  const officialParts=uniqueSupportParts74(officialUrl,Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[]);
+  const captureParts=uniqueSupportParts74(captureUrl,Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[]);
   const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
   const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':courseMeta.sourceBasis==='course_captures'?'📸 Cours rapproché des captures — PDF natif à retrouver':'📝 Support du cours non disponible';
   const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
