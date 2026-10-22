@@ -165,6 +165,9 @@ jobs:
       - name: Vérifier les 16 planches Douleur publiées et les ressources précédentes
         run: node tests/douleur-infographics-16-release.mjs
 
+      - name: Vérifier le filtre UE et les titres des infographies Douleur
+        run: node tests/douleur-infographics-ui.mjs
+
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
         run: node tests/course-publication-approval.mjs
 
