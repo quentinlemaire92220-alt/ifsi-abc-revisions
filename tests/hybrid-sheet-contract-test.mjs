@@ -1,4 +1,4 @@
-// TNR v1.46 — nouveaux packs : un PDF hybride, zéro planche totale séparée.
+// TNR v1.47 — nouveaux packs : un PDF hybride, zéro planche totale séparée.
 // Fixturing only: no user/source content, Drive upload or fictitious publication.
 import assert from 'node:assert/strict';
 import {validateHybridDelivery,validateHybridPart} from './hybrid-sheet-contract.mjs';
@@ -17,7 +17,7 @@ const good={packFormat:'hybrid_v1',sheetResourceId:sheet.resourceId,
  hybridCoverage:{expectedEssential:12,coveredEssential:12,
  prioritySourceReference:'Matrice des priorités sourcée et vérifiée',
  medicalReview:'approved',readabilityReview:'approved'},
- hybridVisualReview:{status:'approved',reference:'pharmacologie_v1.46_10_pages',pagesChecked:8},
+ hybridVisualReview:{status:'approved',reference:'pharmacologie_v1.47_24_pages',pagesChecked:8},
  lexicon:{termCount:30,textSelectable:true,checked:true,sourceSha256:L}};
 const run=d=>validateHybridDelivery('demo',d,[sheet]);
 assert.equal(run(good).hybrid.resourceId,sheet.resourceId);
@@ -36,6 +36,7 @@ rejects({hybridCoverage:{...good.hybridCoverage,coveredEssential:11}},/essentiel
 rejects({hybridCoverage:{...good.hybridCoverage,medicalReview:'pending'}},/scientifique/);
 rejects({hybridVisualReview:{...good.hybridVisualReview,pagesChecked:7}},/toutes les pages/);
 rejects({hybridVisualReview:{...good.hybridVisualReview,reference:'cardiovasculaire'}},/référence visuelle/);
+rejects({hybridVisualReview:{...good.hybridVisualReview,reference:'pharmacologie_v1.46_10_pages'}},/référence visuelle/);
 rejects({lexicon:{...good.lexicon,textSelectable:false}},/sélectionnable/);
 rejects({lexicon:{...good.lexicon,termCount:0}},/lexique/);
 rejects({publishedVerification:{...proof,pageCount:7}},/pagination Drive/);
