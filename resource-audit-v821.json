@@ -1,6 +1,6 @@
 {
   "version": "8.30.114",
-  "auditedAt": "2026-10-20",
+  "auditedAt": "2026-10-22",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
@@ -11,7 +11,7 @@
   "expectedTotals": {
     "courses": 50,
     "sheets": 64,
-    "infographics": 183,
+    "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
@@ -203,6 +203,13 @@
       "courseId": "infections_neuro_meningees",
       "release": "8.30.95",
       "revisionFrom": "course_captures"
+    },
+    {
+      "courseId": "douleur",
+      "infographicPackPages": 16,
+      "resourceAdded": 1,
+      "release": "8.30.114",
+      "coverage": "partial"
     }
   ],
   "auditLogicVersion": "8.30.10",
