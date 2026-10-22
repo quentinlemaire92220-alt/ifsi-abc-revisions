@@ -1,3 +1,13 @@
+## DÉCISION PRIORITAIRE — CHARTE v1.46, FICHE HYBRIDE UNIQUE (22/10/2026)
+
+Pour les **NOUVELLES productions pédagogiques**, un seul support PDF principal : **fiche de révision hybride infographiée**, rédigée et illustrée, avec « Définitions et mots-clés » en fin de document. Le modèle graphique normatif est la série de **10 pages pharmacologie** dans la charte privée v1.46, consultée et comparée réellement avant production et revue de chaque page. Les planches infographiques totales séparées et le cours infographié complet séparé **cessent d'être des livrables systématiques**. Les QCM, flashcards et vocaux restent intégralement **INCHANGÉS**.
+
+Contrat GitHub NON RÉTROACTIF : nouveaux packs `packFormat:"hybrid_v1"` et `sheetFormat:"hybrid_infographic"`, un seul `sheetResourceId`, matrice des notions essentielles, audit PDF et preuve Drive, revue médicale, modèle visuel comparé sur toutes les pages et lexique final sélectionnable. Voir `docs/HYBRID_REVISION_V146.md`, `tools/hybrid_course_pack.py`, `tests/hybrid-sheet-contract.mjs`. Les packs historiques `lean_v1`, dual-sheet et single-with-complete-boards conservent **tous** leurs validateurs et ressources ; ne pas les migrer silencieusement. Le contrat actuel des QCM, flashcards et vocaux n'est pas modifié.
+
+**Cette règle prévaut sur les rectificatifs du 20/10/2026 et tous les paragraphes contradictoires ci-dessous concernant le nombre de fiches ou les planches autonomes par défaut.** Un succès de génération/TNR n'est ni une validation graphique ni scientifique. GO PRODUCTION = privé ; GO PUBLICATION étudiant, fusion et déploiement distincts et explicites.
+
+---
+
 ## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
 
 Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.

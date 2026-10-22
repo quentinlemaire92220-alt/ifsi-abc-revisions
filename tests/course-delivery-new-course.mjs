@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {validateDualSheetDelivery} from './dual-sheet-contract.mjs';
 import {validateLeanCourseDelivery} from './lean-course-contract.mjs';
+import {validateHybridDelivery} from './hybrid-sheet-contract.mjs';
 import {validateAnatomyRouting} from './anatomy-routing-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 
@@ -79,7 +80,8 @@ for (const course of firstPublished) {
     validateAudioOnlyDelivery(course,delivery,current.vocals);
     continue; // Seul l'audio est publié ; les deux PDF restent indispensables pour déclarer le cours complet.
   }
-  if(delivery.packFormat==='lean_v1')validateLeanCourseDelivery(course.id, delivery, current.sheets);
+  if(delivery.packFormat==='hybrid_v1')validateHybridDelivery(course.id, delivery, current.sheets);
+  else if(delivery.packFormat==='lean_v1')validateLeanCourseDelivery(course.id, delivery, current.sheets);
   else validateDualSheetDelivery(course.id, delivery, current.sheets);
   const atlasSources = ['v83-anatomy-interactive.js','v82-nav-anatomy.js',
     'v814-respiratory-atlas.js','v815-urinary-atlas.js','v816-endocrine-atlas.js',
