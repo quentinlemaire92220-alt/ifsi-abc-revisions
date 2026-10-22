@@ -52,7 +52,7 @@ Pour les sources : **support officiel > oral/transcription privée recoupée > c
 
 ## 5. Reprise ChatGPT sans perdre le fil
 
-**À l'ouverture d'une intervention :** (1) lire cette page et `AGENTS.md` ; (2) consulter `build-meta.json`, la CI récente et les PR ouvertes ; (3) consulter `docs/PROJECT_STATE_2026-10-21.md` comme **photographie datée**, jamais comme état actuel ; (4) vérifier l'index Drive courant et le support particulier ; (5) dire ce qui existe, les manques, les risques et l'action minimale ; (6) travailler sur une branche courte, sans republier ni régénérer ce qui est déjà validé.
+**À l'ouverture d'une intervention :** (1) lire cette page et `AGENTS.md` ; (2) consulter `build-meta.json`, la CI récente et les PR ouvertes ; (3) consulter `docs/PROJECT_STATE_2026-10-22.md` comme **photographie datée** (celle du 21/10 est historique), jamais comme état actuel ; (4) vérifier l'index Drive courant et le support particulier ; (5) dire ce qui existe, les manques, les risques et l'action minimale ; (6) travailler sur une branche courte, sans republier ni régénérer ce qui est déjà validé.
 
 **Phrase courte pour relancer :**
 
@@ -61,7 +61,7 @@ Pour les sources : **support officiel > oral/transcription privée recoupée > c
 ## 6. Suivi et mise à jour
 
 - Le présent fichier contient les **règles et les pointeurs stables**.
-- `docs/PROJECT_STATE_2026-10-21.md` est une **photographie d'inventaire**, à remplacer par un nouveau fichier daté lors d'une nouvelle revue substantielle.
+- `docs/PROJECT_STATE_2026-10-22.md` est la **nouvelle photographie d'inventaire**, à vérifier en direct avant action. Le fichier du 21/10 reste une archive datée.
 - Les travaux réellement suivis restent dans les **PR/issues GitHub**, jamais dans une simple promesse de conversation.
 - Classer tout chantier : **en production**, **en revue privée**, **bloqué**, **à comparer avec main**, **terminé**, ou **archive**. Ne pas transformer ces statuts en décisions de publication.
 
