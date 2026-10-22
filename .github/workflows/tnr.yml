@@ -189,6 +189,20 @@ jobs:
       - name: Refuser les nouveaux QCM et flashcards dépendant du support
         run: node tests/qcm-autonomy-changed.mjs
 
+      - name: Contrôler les règles QCM sur des cas fictifs
+        run: node tests/qcm-quality-core-test-v1.mjs
+
+      - name: Plafonner les résidus d'en-têtes PDF dans le QCM d'épistémologie
+        run: node tests/qcm-pdf-page-furniture-v1.mjs
+
+      - name: Bloquer les défauts de nouveaux QCM
+        env:
+          IFSI_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node tests/qcm-quality-changed-v1.mjs
+
+      - name: Empêcher l'aggravation de la dette QCM active
+        run: node tests/qcm-quality-baseline-v1.mjs
+
       - name: Vérifier le vocabulaire dans les QCM
         run: node tests/vocabulary-qcm-v8379.mjs
 
@@ -337,6 +351,9 @@ jobs:
 
       - name: Valider le schéma de correspondance CM privé (données fictives)
         run: node tests/cm-course-crosswalk-test.mjs
+
+      - name: Préserver la provenance des fiches et supports
+        run: node tests/course-provenance-guard-v1.mjs
 
       - name: Audit des rattachements de cours
         run: node tests/course-audit.mjs
