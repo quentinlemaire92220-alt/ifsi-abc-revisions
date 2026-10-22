@@ -1,3 +1,5 @@
+> **ÉVOLUTION PRIORITAIRE v1.46 — 22/10/2026.** Ce document décrit le **contrat historique** `lean_v1` (deux PDF), conservé pour les livraisons antérieures et ses TNR. Pour les **nouveaux cours**, utiliser le **format hybride unique** `hybrid_v1` décrit dans [HYBRID_REVISION_V146.md](HYBRID_REVISION_V146.md) : un PDF texte + infographies intégrées + lexique final, sans planches totales séparées. QCM, flashcards et vocaux inchangés. Toute obligation contraire ci-dessous ne concerne désormais que l'historique. La validation scientifique, la revue graphique et le GO publication distinct restent requis.
+
 # IFSI ABC — Production « lean_v1 » : cours complets, pilote d'une page uniquement
 
 **Version corrigée le 20 octobre 2026.** Un exemple d'une page par livrable sert seulement à APPROUVER LE STYLE ; ce n'est pas une restriction de longueur des PDF définitifs.
