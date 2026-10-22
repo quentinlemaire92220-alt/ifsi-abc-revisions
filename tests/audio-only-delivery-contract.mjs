@@ -15,8 +15,8 @@ export function validateAudioOnlyDelivery(course,delivery,vocals){
   assert.ok(Array.isArray(delivery.blockers)&&delivery.blockers.some(b=>
     b.resource==='official_support'&&b.reason==='private_pending'),id+': attente support non déclarée');
   assert.ok(Array.isArray(delivery.vocals)&&delivery.vocals.length>0,id+': liste MP3 absente');
-  assert.ok(Array.isArray(delivery.vocalScripts)&&delivery.vocalScripts.length===0,
-    id+': scripts privés ne doivent pas être publiés');
+  assert.equal(delivery.vocalScripts,undefined,
+    id+': même une liste de scripts vide ne doit pas devenir un contrat public');
   const expected=vocals.filter(v=>v.courseId===id);
   assert.equal(expected.length,delivery.vocals.length,id+': nombre de MP3 incohérent');
   assert.equal(course.audioCount,expected.length,id+': compteur audio incorrect');
