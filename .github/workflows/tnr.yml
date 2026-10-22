@@ -177,6 +177,9 @@ jobs:
       - name: Vérifier le filtre UE et les titres des infographies Douleur
         run: node tests/douleur-infographics-ui.mjs
 
+      - name: Contrôler le retrait strict des références privées, sans altérer les lots approuvés
+        run: node tests/private-resource-withdrawal-test.mjs
+
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
         run: node tests/course-publication-approval.mjs
 
