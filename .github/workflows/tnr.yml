@@ -398,5 +398,8 @@ jobs:
       - name: Vérifier les liens officiels sans doublons, sans altérer le registre
         run: node tests/official-support-dedup-v1.mjs
 
+      - name: Refuser les documents de travail dans la liste étudiante
+        run: node tests/student-resource-visibility-ui-v1.mjs
+
       - name: Vérifier le lot droits_patients p01
         run: node tests/course-droits_patients-p01.mjs
