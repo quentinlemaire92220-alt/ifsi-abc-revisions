@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-19",
+  "charter": "docs/skills/production-planches-anatomiques-canva.md",
+  "source": "Projet Canva de revue privée : six pages R02–R07, URL non publiée",
+  "publicationConsent": "GO utilisateur donné pour intégration; ne préjuge pas des licences tierces ni de l'exactitude médicale",
+  "publicStatus": "BLOCKED_PENDING_ASSETS_AND_REVIEWS",
+  "expectedBoards": 6,
+  "approvedBoards": 0,
+  "intendedOutput": "assets/anatomy/reproductive/ (exports par planche, sous réserve des droits et de la revue médicale)",
+  "notes": "Les PNG principaux sont des images importées dans Canva; aucune preuve de leur origine ni de leur licence de redistribution n'est fournie par les métadonnées Canva. Dimension native des sources, pas résolution du futur export.",
+  "boards": [
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R02",
+      "atlasId": "repro_atlas_r02",
+      "title": "Testicule et tubes séminifères",
+      "requiredLandmarks": [
+        "albuginée",
+        "lobules testiculaires",
+        "tubes séminifères",
+        "cellules de Sertoli",
+        "cellules de Leydig"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [
+          "albuginée"
+        ],
+        "complete": false
+      },
+      "mainImageSourcePixels": {
+        "width": 588,
+        "height": 859
+      },
+      "pendingChecks": "Canva a attribué automatiquement des étiquettes fruit/pamplemousse à l'illustration principale et fruit/graine au zoom; classification non décisive, vérification visuelle impérative",
+      "plannedAssetPath": "assets/anatomy/reproductive/r02.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Required albuginée label absent; inspect pointe interstitium vs tubes séminifères."
+        ],
+        "finalApproved": false
+      }
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R03",
+      "atlasId": "repro_atlas_r03",
+      "title": "Voies spermatiques et glandes annexes",
+      "requiredLandmarks": [
+        "épididyme",
+        "canal déférent",
+        "ampoule déférentielle",
+        "canal éjaculateur",
+        "vésicule séminale",
+        "prostate",
+        "glandes bulbo-urétrales",
+        "urètre prostatique"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [],
+        "complete": true
+      },
+      "mainImageSourcePixels": {
+        "width": 690,
+        "height": 1083
+      },
+      "pendingChecks": "Vérifier toutes les flèches et distinguer l'uretère, l'urètre et le canal déférent",
+      "plannedAssetPath": "assets/anatomy/reproductive/r03.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Review position of ampoule déférentielle and canal éjaculateur callouts."
+        ],
+        "finalApproved": false
+      }
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R04",
+      "atlasId": "repro_atlas_r04",
+      "title": "Appareil génital féminin : vue d'ensemble",
+      "requiredLandmarks": [
+        "ovaire",
+        "trompe utérine",
+        "utérus",
+        "col de l’utérus",
+        "vagin",
+        "vessie",
+        "rectum"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [
+          "vessie",
+          "rectum"
+        ],
+        "complete": false
+      },
+      "mainImageSourcePixels": {
+        "width": 954,
+        "height": 914
+      },
+      "pendingChecks": "La vue frontale seule ne prouve pas la topographie sagittale vessie / utérus / rectum",
+      "plannedAssetPath": "assets/anatomy/reproductive/r04.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "Frontal-only plate; vessie and rectum relations not shown."
+        ],
+        "finalApproved": false
+      }
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R05",
+      "atlasId": "repro_atlas_r05",
+      "title": "Ovaire et trompe utérine",
+      "requiredLandmarks": [
+        "cortex ovarien",
+        "médulla ovarienne",
+        "follicules ovariens",
+        "pavillon",
+        "ampoule tubaire",
+        "isthme tubaire",
+        "partie intramurale"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [
+          "partie intramurale"
+        ],
+        "complete": false
+      },
+      "mainImageSourcePixels": {
+        "width": 953,
+        "height": 729
+      },
+      "pendingChecks": "Vérifier l'équivalence anatomique de chaque étiquette et la connexion trompe / ovaire",
+      "plannedAssetPath": "assets/anatomy/reproductive/r05.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: Trompe / e / utérine; Médulla ovarienne arrow appears to target follicle, needs correction; intramural segment missing."
+        ],
+        "finalApproved": false
+      }
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R06",
+      "atlasId": "repro_atlas_r06",
+      "title": "Utérus : paroi, col et vagin",
+      "requiredLandmarks": [
+        "périmétrium",
+        "myomètre",
+        "endomètre",
+        "couche basale",
+        "couche fonctionnelle",
+        "col utérin",
+        "vagin"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [
+          "couche basale",
+          "couche fonctionnelle"
+        ],
+        "complete": false
+      },
+      "mainImageSourcePixels": {
+        "width": 629,
+        "height": 1027
+      },
+      "pendingChecks": "Vérifier que les couches sont réellement distinguées et non simplement étiquetées endomètre",
+      "plannedAssetPath": "assets/anatomy/reproductive/r06.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: Périmétri / um; basal and functional endometrial layers not separated."
+        ],
+        "finalApproved": false
+      }
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "category": "anatomy",
+      "styleReview": "approved_by_user",
+      "clinicalReview": "pending",
+      "rightsReview": "pending_source_provenance",
+      "exportReview": "pending",
+      "appPublication": "blocked",
+      "imagePath": null,
+      "driveId": null,
+      "approvedAssetSha256": null,
+      "key": "R07",
+      "atlasId": "repro_atlas_r07",
+      "title": "Vulve et périnée",
+      "requiredLandmarks": [
+        "mont du pubis",
+        "grandes lèvres",
+        "petites lèvres",
+        "vestibule",
+        "clitoris",
+        "méat urinaire",
+        "orifice vaginal",
+        "périnée"
+      ],
+      "labelReview": {
+        "missingOrUnverified": [
+          "vestibule"
+        ],
+        "complete": false
+      },
+      "mainImageSourcePixels": {
+        "width": 670,
+        "height": 1082
+      },
+      "pendingChecks": "Vérifier précisément la position des orifices et la correspondance entre les labels et la figure",
+      "plannedAssetPath": "assets/anatomy/reproductive/r07.webp",
+      "plannedDriveFolder": "06 - Planches anatomiques / 03 - Exports application",
+      "testReady": false,
+      "pdfReview": {
+        "reviewed": true,
+        "layoutOrAnatomyConcerns": [
+          "PDF line break: clitori / s; vestibule not labeled."
+        ],
+        "finalApproved": false
+      }
+    }
+  ],
+  "exportReceived": {
+    "type": "Canva A4 PDF",
+    "receivedOn": "2026-10-19",
+    "pageCount": 6,
+    "mediaHandling": "Private PDF reviewed in conversation only; no copyrighted image bytes pushed to public GitHub",
+    "renderedPagesForReview": 6,
+    "imagesAreHighResolutionMasters": false,
+    "reason": "Main embedded illustrations are raster assets around 115 effective ppi; 220 dpi PDF rendering is for proofing only."
+  }
+}
