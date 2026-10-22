@@ -47,7 +47,8 @@ export function isApprovedPrivateReferenceWithdrawal(
  if(prior.publicationApproval?.status!=='approved'||
     prior.publicationApproval?.authorization!=='explicit_go_publication')return false;
  if(!isDeepStrictEqual(next,expectedPublicDeliveryAfterWithdrawal(prior,oldBundle.course)))return false;
- const normalized=clone(oldBundle);
+ // Conserver les propriétés optionnelles undefined du bundle réel ; JSON clone les perdrait.
+ const normalized=structuredClone(oldBundle);
  normalized.course=expectedPublicCourseAfterWithdrawal(normalized.course);
  normalized.scripts=[];
  normalized.artifactSha256s=expectedPublicDeliveryAfterWithdrawal(prior,oldBundle.course).artifactSha256s||{};
