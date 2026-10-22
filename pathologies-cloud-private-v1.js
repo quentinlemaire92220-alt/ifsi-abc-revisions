@@ -150,7 +150,7 @@ function onReturn(){
  }
 }
 root.IFSI_PATHOLOGIES_CLOUD=Object.freeze({attach,onPage,sync,afterLocalImport,getSession,sendLink,upload});
-if(root.document){
+if(root.document&&root.IFSI_APP_FEATURES?.pathologies===true){
  Promise.resolve().then(onReturn).then(()=>{if(getSession())sync();});
 }
 })(window);

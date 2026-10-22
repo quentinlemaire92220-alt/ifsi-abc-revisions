@@ -2,7 +2,7 @@
 const V=window.IFSI_APP_VERSION||'8.30.4',$=id=>document.getElementById(id);
 const K={dark:'ifsiabc_v72_dark',timer:'ifsiabc_v72_timer',analytics:'ifsiabc_analytics_optout_v1'};
 function css(){if($('v87css'))return;const s=document.createElement('style');s.id='v87css';s.textContent=`
-#v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(760px,calc(100% - 20px));display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
+#v87Nav{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:90;width:min(760px,calc(100% - 20px));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:8px;border:1px solid var(--line);border-radius:22px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 10px 30px rgba(36,26,65,.12);backdrop-filter:blur(12px)}
 #v87Nav button{border:0;background:transparent;color:var(--muted);padding:7px 2px;border-radius:14px;font-size:10px;line-height:1.15;cursor:pointer;min-width:0;overflow-wrap:anywhere}
 #v87Nav button span{display:block;font-size:18px;margin-bottom:3px}
 #v87Nav button.on{background:#f1ebff;color:#6941c6;font-weight:850}
@@ -94,13 +94,14 @@ function addNav(){if($('v87Nav'))return;const app=document.querySelector('.app')
 <button id="v87Courses"><span>📚</span>Cours</button>
 <button id="v87Anat"><span>🫀</span>Anatomie</button>
 <button id="v87Center"><span>🚀</span>Révision</button>
-<button id="v87Pathologies" aria-label="Ouvrir les pathologies"><span>🩺</span>Pathologies</button>
+${window.IFSI_APP_FEATURES?.pathologies===true?'<button id="v87Pathologies" aria-label="Ouvrir les pathologies"><span>🩺</span>Pathologies</button>':''}
 <button id="v87Settings"><span>⚙️</span>Paramètres</button>`;app.appendChild(n);
 $('v87Home').onclick=()=>window.show?.('home');
 $('v87Courses').onclick=()=>window.showCourses74?.();
 $('v87Anat').onclick=()=>window.IFSI_V82?.showAnatomy?.();
 $('v87Center').onclick=()=>window.IFSI_V81?.showHub?.();
-$('v87Pathologies').onclick=()=>window.IFSI_PATHOLOGIES?.open?.();
+if($('v87Pathologies'))$('v87Pathologies').onclick=()=>window.IFSI_PATHOLOGIES?.open?.();
+n.style.gridTemplateColumns='repeat('+(window.IFSI_APP_FEATURES?.pathologies===true?6:5)+',minmax(0,1fr))';
 $('v87Settings').onclick=showSettings}
 function hideSettings(){const s=$('settings87');if(s&&!s.classList.contains('hidden'))s.classList.add('hidden')}
 function patchNavigation(){if(window.__v87navpatch)return;window.__v87navpatch=1;

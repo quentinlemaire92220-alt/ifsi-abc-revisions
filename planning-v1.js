@@ -146,7 +146,7 @@ if(!WEEKS.some(w=>w.id===selectedWeek))selectedWeek=(weekForDate(todayISO())||WE
 function css(){
  if($('planningPromoCss'))return;
  const s=document.createElement('style');s.id='planningPromoCss';s.textContent=`
- #v87Nav.vplanning-nav{grid-template-columns:repeat(7,minmax(0,1fr))}
+ #v87Nav.vplanning-nav{grid-template-columns:repeat(6,minmax(0,1fr))}
  #planningPromo{padding:8px 0 132px}
  .vp-toolbar,.vp-card{border:1px solid var(--line);background:var(--card);border-radius:19px;box-shadow:0 7px 22px rgba(55,39,94,.05)}
  .vp-toolbar{padding:10px 12px;margin-bottom:10px;display:grid;gap:8px}
@@ -299,7 +299,7 @@ function render(){
 function addSection(){if($(SECTION))return true;const app=document.querySelector('.app');if(!app)return false;const sec=document.createElement('section');sec.id=SECTION;sec.className='hidden';const anchor=$('settings87')||document.querySelector('.app>nav');if(anchor)app.insertBefore(sec,anchor);else app.appendChild(sec);render();return true}
 function hidePlanning(){$(SECTION)?.classList.add('hidden');$(NAV_ID)?.classList.remove('on')}
 function showPlanning(){if(!addSection())return;document.querySelectorAll('.app>section').forEach(x=>x.classList.add('hidden'));$(SECTION)?.classList.remove('hidden');render();document.querySelectorAll('#v87Nav button').forEach(b=>b.classList.remove('on'));$(NAV_ID)?.classList.add('on');window.scrollTo({top:0,behavior:'smooth'})}
-function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
+function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');nav.style.gridTemplateColumns='repeat('+(window.IFSI_APP_FEATURES?.pathologies===true?7:6)+',minmax(0,1fr))';let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
 function init(){css();reconcilePlanningChanges();const a=addSection(),b=addNav();return a&&b}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
 window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.5',updatedAt:UPDATED_AT};

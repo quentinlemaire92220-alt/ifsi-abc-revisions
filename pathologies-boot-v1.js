@@ -7,6 +7,7 @@
 'use strict';
 const BUNDLE_KEY='IFSI_PATHOLOGIES_PUBLISHED_BUNDLE';
 function start(){
+ if(root.IFSI_APP_FEATURES?.pathologies!==true)return Object.freeze({mounted:false,reason:'feature_hidden'});
  const engine=root.IFSI_PATHOLOGIES;
  const catalog=root[BUNDLE_KEY];
  if(!Array.isArray(catalog)||catalog.length===0){

@@ -106,6 +106,7 @@ function css(){
  doc().head.appendChild(style);
 }
 function ensure(){
+ if(root.IFSI_APP_FEATURES?.pathologies!==true)return;
  if(byId(SECTION))return;
  css();
  const s=doc().createElement('section');s.id=SECTION;s.className='hidden';s.innerHTML='<div id="ifsiPathologiesBody"></div>';
@@ -121,10 +122,12 @@ function ensure(){
  }
 }
 function showShell(){
+ if(root.IFSI_APP_FEATURES?.pathologies!==true)return false;
  if(!root.document?.querySelector('.app'))return false;
  shellEnabled=true;ensure();return !!byId(SECTION);
 }
 function open(){
+ if(root.IFSI_APP_FEATURES?.pathologies!==true)return false;
  if(!entries.length&&!shellEnabled)return;
  ensure();
  const host=byId(SECTION);if(!host)return;
@@ -264,6 +267,6 @@ function activate(catalog){
  entries=Array.isArray(catalog)?catalog.slice():[];
  ensure();return {activated:true,count:entries.length};
 }
-function showCatalog(){pendingId=null;state.id=null;list();}
+function showCatalog(){if(root.IFSI_APP_FEATURES?.pathologies!==true)return false;pendingId=null;state.id=null;list();}
 root.IFSI_PATHOLOGIES=Object.freeze({validate,evaluate,activate,open,showShell,showCatalog,openLinkedCourse,getProgress:readProgress,requiredSections:REQUIRED.slice()});
 })(window);

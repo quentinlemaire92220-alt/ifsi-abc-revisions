@@ -297,6 +297,9 @@ jobs:
       - name: Tester intégration de la coque Pathologies inactive
         run: node tests/pathologies-app-integration-v1.mjs
 
+      - name: Vérifier le masquage public Pathologies et sa réactivation
+        run: node tests/pathologies-hidden-public-v1.mjs
+
       - name: Vérifier l'import privé Pathologies sans distribution de contenus médicaux
         run: node tests/pathologies-private-review-import.mjs
 
