@@ -64,6 +64,27 @@ export function validatePartChanges(before, after, previousManifest, currentMani
   }
   const approvedAudio=validateAudioSupplements(currentManifest,after);
   const ordinary = updates.filter(item => {
+    if(item.kind==='infographic'){
+      const c=currentManifest.courses.find(x=>x.courseId===item.courseId);
+      if(c?.publicationScope==='infographics_only'&&c.infographicResourceIds?.includes(item.id)){
+       const row=after.infographics.find(x=>x.courseId===item.courseId&&x.resourceId===item.id);
+       assert.equal(c.publicationApproval?.status,'approved',
+        item.courseId+': pack infographies non approuve');
+       assert.equal(c.publicationApproval?.authorization,'explicit_go_publication',
+        item.courseId+': GO publication absent');
+       assert.equal(c.publicationApproval?.scope,'infographics_only',
+        item.courseId+': perimetre infographies incorrect');
+       assert.equal(row?.url,'https://drive.google.com/file/d/'+c.infographicPackDriveId+'/view',
+        item.courseId+': lien Drive ne correspond pas au pack approuve');
+       assert.equal(row?.pageCount,c.reviewedBoardCount,
+        item.courseId+': nombre de planches incoherent');
+       assert.equal(c.visualOwnerReview?.status,'owner_accepted',
+        item.courseId+': revue visuelle proprietaire absente');
+       assert.match(c.artifactSha256s?.[c.infographicPackDriveId]||'',/^[a-f0-9]{64}$/,
+        item.courseId+': empreinte PDF absente');
+       return false;
+      }
+    }
     if(item.kind==='vocal'&&approvedAudio.has(item.id))return false;
     if (item.kind!=='qcm')return true;
     const sup=supplementsByQuestion.get(item.id);
