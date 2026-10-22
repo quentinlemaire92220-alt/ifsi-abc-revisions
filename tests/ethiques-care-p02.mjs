@@ -44,7 +44,8 @@ for(const resourceId of part.infographicResourceIds){
  assert.equal(part.completeBoardAudits[resourceId].driveId,board.driveId);
 }
 assert.equal(part.infographicResourceIds.length,5);
-assert.equal(delivery.vocalScripts.filter(s=>s.partId==='p02').length,4);
+assert.equal(delivery.scriptsPreparedCount,4,'Nombre historique des scripts de care p02 conservé');
+assert.equal(delivery.vocalScripts,undefined,'Références privées interdites dans le manifeste étudiant');
 if(!part.vocalIds.length)assert.ok(part.blockers.some(b=>b.resource==='vocals'&&b.reason==='awaiting_user_mp3'));
 const course=registry.courses.find(c=>c.id===id);assert.equal(course.qcmPdfQuestionCount,60);
 assert.ok(registry.courses.find(c=>c.id===id).aliases.includes('Initiation à la philosophie éthique'));
