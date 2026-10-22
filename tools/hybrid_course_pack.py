@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Préparation PRIVÉE du support hybride IFSI ABC v1.46.
+"""Préparation PRIVÉE du support hybride IFSI ABC v1.47.
 
 Un seul PDF de révision avec textes + illustrations originales intégrées + lexique.
 Les QCM, flashcards et vocaux relèvent toujours de leurs contrats existants.
@@ -19,8 +19,8 @@ import fitz
 from revision_compose import render
 from revision_course_pack import checked_asset, digest
 
-VERSION = "hybrid_v1-charte_1.46"
-REFERENCE = "pharmacologie_v1.46_10_pages"
+VERSION = "hybrid_v1-charte_1.47"
+REFERENCE = "pharmacologie_v1.47_24_pages"
 
 
 def canonical(value):
