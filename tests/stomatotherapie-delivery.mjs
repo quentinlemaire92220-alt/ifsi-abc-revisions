@@ -45,7 +45,7 @@ assert.equal(win.IFSI_VOCAB.questions().filter(q=>q.courseId==='stomatotherapie'
 win.IFSI_VOCAB.startCourseQuiz('stomatotherapie');
 assert.equal(started.length,1);assert.equal(started[0].length,10);
 assert.ok(started[0].every(q=>q.theme==='Vocabulaire'&&bank.some(x=>x.id===q.id)));
-const revisions=read('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='existing_course_revision');
+const revisions=read('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='existing_course_revision'&&c.publicationScope!=='infographics_only');
 for(const id of ['infections_neuro_meningees','pharmacologie'])assert.ok(revisions.some(c=>c.courseId===id),'Révision antérieure perdue '+id);
 for(const c of revisions)assert.equal(questions.filter(q=>q.courseId===c.courseId).length,c.qcmCount);
 const revisedIds=new Set(revisions.filter(c=>c.deliveryQuestionScope!=='declared_parts').map(c=>c.courseId));
