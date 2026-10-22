@@ -19,6 +19,20 @@
 | Module Pathologies / HTA | `main` V8.30.116 déclare un **masquage temporaire public** du module Pathologies ; issue #194 documente encore des erreurs de représentation et de revue HTA | **Conserver le blocage** avant tout retour en ligne ; correction graphique ciblée et revue scientifique privées | Validation de chacune des six planches et du lot médical exact, contrôle des accès et GO publication ciblé |
 | Parcours et TNR | TNR IFSI ABC + audit P2 **verts sur les heads des PR #199 et #200** avant fusion ; PR #189 également verte | La nouvelle PR doit lancer la CI sur la branche consolidée ; ne pas déduire la CI `main` ni un test PWA réel de ces seuls résultats | TNR de branche verte + contrôle déploiement post-fusion (non autorisée ici) + recette mobile en conditions réelles (issue #71) |
 
+## Complément d'audit P0 — confidentialité des scripts vocaux (22/10)
+
+**Contrôles actuels, non hérités de la PR #129 :** le registre `course-registry-v741.json` de `main` contient **33 documents complémentaires** dont **10 références de scripts vocaux** : **8 liens directs** vers des fichiers TXT/ZIP et **2 liens vers des dossiers de scripts**. Les métadonnées Drive du propriétaire révèlent une permission `anyone:reader` sur les huit fichiers et une permission `anyone` sur les deux dossiers. Un second compte connecté a pu accéder aux métadonnées des fichiers contrôlés ; le référentiel Work privé témoin a refusé l'accès. Cette comparaison ne remplace pas un test anonyme ni une revue exhaustive des dossiers hérités.
+
+**Correctif sur la branche #201** : la liste étudiante « Documents du cours » masque les dix liens de scripts, préserve les **23** autres documents et déduplique également les supports de sous-cours. Test de non-régression dédié `tests/student-resource-visibility-ui-v1.mjs` branché à la CI.
+
+**Statut : CONFIDENTIALITÉ ENCORE NON RÉSOLUE.** Un filtre UI ne révoque pas les droits Drive ; les liens continuent d'exister dans le JSON public jusqu'à correction du manifeste selon les approbations existantes. La connexion Drive disponible ici ne fournit **pas de fonction de retrait de permission**, donc aucune ACL n'a été modifiée ou prétendue corrigée.
+
+**Portes P0 séparées avant clôture** :
+1. Propriétaire : revoir les permissions des huit fichiers et deux dossiers et **révoquer explicitement `anyone`** lorsque ces ressources sont des sources de travail privées ; préserver le partage des PDF officiels, fiches, QCM, MP3 destinés aux étudiants.
+2. Contrôler les éventuels héritages de dossier et ouvrir les liens en navigateur **non connecté**, puis avec compte étudiant.
+3. Préparer une **PR de nettoyage des références privées dans le manifeste public**, avec inventaire conservé dans l'espace privé et respect des garde-fous d'approbation (pas de faux hash, pas de migration des cours, pas de suppression des originaux).
+4. Vérifier les accès négatifs et positifs et les TNR ; ne pas annoncer « sécurisé » sur le seul passage de #201.
+
 ## P1 — Réconciliation des 11 PR historiques encore ouvertes
 
 | PR | Statut de la revue | Décision préparée |
