@@ -208,7 +208,7 @@ function resourceCard74(x,type){
 const studentVisibleDocument74=doc=>{
   const type=String([doc?.label,doc?.category,doc?.visibility,doc?.status].join(' '))
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-  return !/(?:^|\b)(?:scripts?\s+voc(?:al|aux)|transcription|confidentiel|interne|prive|owner.only)(?:\b|$)/.test(type);
+  return !/(?:^|\b)(?:scripts?\s+voc(?:al|aux)|transcription|confidentiel|confidential|interne|internal|prive|private|owner.only)(?:\b|$)/.test(type);
 };
 
 function renderCourse74(){
