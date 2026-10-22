@@ -172,5 +172,5 @@ async function acceptFromCloud(data){
  return true;
 }
 root.IFSI_PATHOLOGIES_REVIEW=Object.freeze({attachImport,showIfImported,has,valid,clear,getPack,acceptFromCloud,loaded:()=>!!pack});
-if(root.document)load();
+if(root.document&&root.IFSI_APP_FEATURES?.pathologies===true)load();
 })(window);
