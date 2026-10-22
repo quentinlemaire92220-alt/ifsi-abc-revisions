@@ -1,5 +1,15 @@
 # IFSI ABC — Consolidation P0/P1 au 22 octobre 2026
 
+## Suivi de l'intervention Work du 22/10/2026
+
+L'intervention Drive autorisée a été exécutée et contrôlée. Le compte rendu détaillé et les preuves d'accès sont conservés dans l'espace privé du propriétaire et ne sont pas reproduits dans ce dépôt public. Les constats de partage ci-dessous sont l'état historique de préparation, antérieur à cette intervention.
+
+Le registre de la branche conserve 50 cours et 23 documents complémentaires étudiants après retrait des seules références de travail prévues. Aucun contenu pédagogique n'a été modifié au cours de cette intervention. Aucun fichier n'a été supprimé, aucune fusion ni publication ou déploiement n'a été effectué. La PR reste en brouillon et tout GO de fusion reste distinct.
+
+Les contrôles du commit technique précédent sont réussis : [TNR](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/39847505460) et [audit P2](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/39847505754). Vérifier la CI du nouveau head après ce suivi documentaire.
+
+---
+
 > **Photographie et décisions de tri préparées uniquement.** Base d'audit : `main` V8.30.116 / build 8416, SHA `37248681f08d846298c9c8b2561f3158864ff43e`. La présente branche **n'est pas fusionnée**. Aucun GO publication étudiant, aucun déplacement Drive, aucun changement Supabase, aucune destruction d'archives.
 
 ## Sources de vérité et périmètre
