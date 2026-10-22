@@ -123,4 +123,21 @@ fail('Psychologie : rejet revue conceptuelle absente',
 fail('Modification d’un ancien cours sans manifeste',base,added,{courses:[]},{courses:[]});
 assert.equal(canonicalPart('cours_test_fiche_p02'),'p02');
 assert.equal(canonicalPart('cours_test_p2_001'),'p02');
+
+// Le GO sur 16 infographies est distinct du GO d'une NOUVELLE partie complète.
+const supplementalInfo={courseId:id,resourceId:'cours_test_pack_16',
+ url:'https://drive.google.com/file/d/PACK_16/view',pageCount:16};
+const partialManifest={courses:[{
+ courseId:id,publicationScope:'infographics_only',
+ infographicResourceIds:['cours_test_pack_16'],
+ infographicPackDriveId:'PACK_16',reviewedBoardCount:16,
+ visualOwnerReview:{status:'owner_accepted'},artifactSha256s:{PACK_16:'a'.repeat(64)},
+ publicationApproval:{status:'approved',authorization:'explicit_go_publication',scope:'infographics_only'}
+}]};
+const partialAfter={...base,infographics:[...base.infographics,supplementalInfo]};
+pass('Infographies approuvées : ajout de 16 planches sans refaire tout le cours',
+ base,partialAfter,before,partialManifest);
+fail('Pack de 16 planches sans GO : refus',
+ base,partialAfter,before,{courses:[{...partialManifest.courses[0],
+ publicationApproval:{...partialManifest.courses[0].publicationApproval,status:'pending'}}]});
 console.log('✅ '+count+' scénarios testés pour les parties de cours');
