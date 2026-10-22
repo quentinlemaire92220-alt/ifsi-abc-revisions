@@ -7,10 +7,10 @@ const id='douleur_infographies_pack_16_20261022';
 const course=json('course-registry-v741.json'),infographics=json('infographics.json'),
  delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
  meta=json('build-meta.json'),qcm=json('qextra-51.txt');
-assert.equal(course.version,'8.30.114');
+assert.equal(course.version,'8.30.115');
 assert.equal(course.courses.length,50);
 assert.equal(meta.version,course.version);
-assert.equal(meta.build,'8414');
+assert.equal(meta.build,'8415');
 const original=course.courses.find(c=>c.id==='douleur');
 assert.equal(original.officialSupportUrl,'https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view');
 assert.equal(original.qcmPdfUrl,'https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view');
