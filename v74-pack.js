@@ -204,6 +204,13 @@ function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.
 function resourceCard74(x,type){
   const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
+// Barrière d'affichage pour documents internes ; ne sécurise PAS leurs droits Drive ni le JSON public.
+const studentVisibleDocument74=doc=>{
+  const type=String([doc?.label,doc?.category,doc?.visibility,doc?.status].join(' '))
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  return !/(?:^|\b)(?:scripts?\s+voc(?:al|aux)|transcription|confidentiel|interne|prive|owner.only)(?:\b|$)/.test(type);
+};
+
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
   const d=courseData74(selectedCourse),vf=new Set(vocalState74().favorites||[]),mastery=d.rate??0;
@@ -244,11 +251,11 @@ function renderCourse74(){
     const url=typeof child.officialSupportUrl==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(child.officialSupportUrl)?child.officialSupportUrl:'';
     const title=esc74(child.label),partial=child.officialSupportCoverage==='partial';
     const link=url?'<a class="btn outline v74-child-link" target="_blank" rel="noopener noreferrer" href="'+esc74(url)+'">'+(partial?'📘 Support partiel ↗':'📘 Support officiel ↗')+'</a>':'<span class="v74-official-empty" role="status">📝 Support officiel non disponible</span>';
-    const parts=Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[];
+    const parts=uniqueSupportParts74(url,Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[]);
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
   const extraDocs=[['📝','QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+(courseMeta.id==='plaies_pansements'?' questions (corrigé dans un PDF séparé)':' questions et corrigé argumenté'),courseMeta.qcmPdfUrl],
-   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy').map(x=>['📄',x.label,driveUrl(x.url)]))]
+   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)).map(x=>['📄',x.label,driveUrl(x.url)]))]
    .filter(x=>x[2])
    .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
    .join('');
