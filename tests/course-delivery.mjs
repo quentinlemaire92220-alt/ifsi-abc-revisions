@@ -33,7 +33,7 @@ for(const c of manifest.courses){
    c.courseId+': fichier Drive non concordant');
   assert.match(c.artifactSha256s?.[c.infographicPackDriveId]||'',/^[a-f0-9]{64}$/,
    c.courseId+': hash PDF absent');
-  assert.ok(c.blockers?.length,c.courseId+': limitations d'exhaustivité non déclarées');
+  assert.ok(c.blockers?.length,c.courseId+": limitations d'exhaustivité non déclarées");
   console.log('✅ '+c.courseId+': pack complémentaire de 16 planches validé pour publication restreinte');
   continue;
  }
