@@ -162,6 +162,9 @@ jobs:
       - name: Vérifier GO restreint aux infographies Douleur — sans modifier QCM ou fiche
         run: node tests/douleur-infographic-only-publication.mjs
 
+      - name: Vérifier les 16 planches Douleur publiées et les ressources précédentes
+        run: node tests/douleur-infographics-16-release.mjs
+
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
         run: node tests/course-publication-approval.mjs
 
