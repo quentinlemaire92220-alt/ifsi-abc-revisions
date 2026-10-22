@@ -125,8 +125,9 @@ for(const c of manifest.courses){
   if(!['lean_v1','hybrid_v1'].includes(c.packFormat)||c.requestedVocals===true)assert.ok(c.vocals.length>0,'Pack complet sans vocal demandé');
  }else if(c.status==='awaiting_mp3'){
   assert.equal(c.vocals.length,0,'Audio publié avant le retour des MP3');
-  assert.ok(c.vocalScripts.length>0,'Scripts vocaux absents');
-  assert.ok(c.vocalScripts.every(x=>x.driveId&&x.number&&x.title),'Scripts vocaux incomplets');
+  assert.ok(Number.isInteger(c.scriptsPreparedCount)&&c.scriptsPreparedCount>0,
+   'Nombre de scripts préparés absent (identifiants et URL restent privés)');
+  assert.equal(c.vocalScripts,undefined,'Identifiants privés de scripts interdits dans le manifeste public');
   assert.ok(c.blockers.some(x=>x.resource==='vocals'&&x.reason==='awaiting_user_mp3'),'Attente des MP3 non explicitée');
  }else{
   assert.equal(c.status,'partial','Statut de livraison inconnu');
