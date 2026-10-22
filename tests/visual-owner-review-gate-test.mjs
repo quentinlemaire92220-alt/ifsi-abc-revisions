@@ -39,7 +39,7 @@ fails(d=>d.visualOwnerReview.criteria.NO_DECORATIVE_BOX_SUBSTITUTION='FAIL',/NO_
 fails(d=>delete d.visualOwnerReview.criteria.INFOGRAPHIC_VISUAL_FIRST,/INFOGRAPHIC_VISUAL_FIRST/);
 fails(d=>d.visualOwnerReview.criteria.ALL_PAGES_CHECKED='PENDING',/ALL_PAGES_CHECKED/);
 fails(d=>d.visualOwnerReview.method='count_images_only',/inspection page par page/);
-fails(d=>d.visualOwnerReview.reference='generic_style',/cardiovasculaire/);
+fails(d=>d.visualOwnerReview.reference='generic_style',/modèle de référence/);
 fails(d=>d.visualOwnerReview.reviewerDecision='assistant_self_approved',/GO production/);
 fails(d=>d.visualOwnerReview.reviewedPdfSha256s.douleur_fiche=j,/octets/);
 fails(d=>d.visualOwnerReview.reviewedPdfSha256s.douleur_infographie=h,/octets/);
@@ -55,4 +55,15 @@ withBoards.artifactSha256s.BOARD_1=h;
 assert.throws(()=>validateVisualOwnerReview('douleur',withBoards,data),/planche infographique non revue/);
 withBoards.visualOwnerReview.reviewedBoardSha256s={plate_01:h};
 assert.doesNotThrow(()=>validateVisualOwnerReview('douleur',withBoards,data));
-console.log('✅ 17 cas : blocage sans vraie revue déclarée, images, atlas, figures, empreintes, et compatibilité QCM-only.');
+const hybrid={...reviewed,packFormat:'hybrid_v1',infographicSheetResourceId:undefined,
+ infographicResourceIds:[],visualOwnerReview:{...review,reference:'pharmacologie_v1.46_10_pages'}};
+assert.doesNotThrow(()=>validateVisualOwnerReview('douleur',hybrid,data),
+ 'La fiche hybride comparee au modele Pharmacologie doit etre admise');
+assert.equal(requireVisualReviewIfChanged('douleur',null,hybrid,data,data),true);
+assert.throws(()=>validateVisualOwnerReview('douleur',{
+ ...hybrid,visualOwnerReview:{...hybrid.visualOwnerReview,reference:'cardiovascular_revision_pdf_17p'}
+},data),/pharmacologie_v1.46_10_pages/,'Un ancien modele ne valide pas un nouveau pack hybride');
+assert.throws(()=>validateVisualOwnerReview('douleur',{
+ ...hybrid,visualOwnerReview:{...hybrid.visualOwnerReview,reviewerDecision:'assistant_self_approved'}
+},data),/GO production/,'Le controle hybride exige toujours un accord du proprietaire');
+console.log('✅ cas historiques et nouveau modele hybride pharmacologie avec garde-fous intacts.');
