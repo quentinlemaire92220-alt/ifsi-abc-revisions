@@ -1788,11 +1788,11 @@
         "reviewedPackSha256": "94663e3ef0ab6f9a2a5e3f882e4971235cd8b974df109b288e6cf82721888dce"
       },
       "publicationApproval": {
-        "status": "pending",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "infographics_only",
         "approvedAt": "2026-10-22T08:12:35.303Z",
-        "bundleSha256": null
+        "bundleSha256": "8550c742e324bcff36771760334374d5a2679ef3be0b91985cf0af2034536260"
       }
     }
   ],
