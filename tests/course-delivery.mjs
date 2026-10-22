@@ -14,7 +14,7 @@ const infos=read('infographics.json'),vocals=read('vocals.json');
 const {deck,questions,registry}=await runtimeDeck();
 const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
 validateAudioSupplements(manifest,{registry,vocals});
-const required=['01','02','03','04','05','06','07','08','99'];
+const required=['01','02','03','04','05','06','07'];
 for(const c of manifest.courses){
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
@@ -43,6 +43,7 @@ for(const c of manifest.courses){
   console.log('✅ '+c.courseId+': '+c.vocals.length+' MP3 — livraison audio partielle (supports privés non publiés)');
   continue;
  }
+ for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,c.courseId+': pointeur de dossier privé dans le manifeste public');
  for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
  // Anciens contrats préservés ; les nouveaux packs hybrid_v1 utilisent une seule fiche.
