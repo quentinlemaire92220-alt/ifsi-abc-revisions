@@ -17,12 +17,13 @@ assert.ok(source.includes('const parts=uniqueSupportParts74(url,'),'Sous-cours n
 assert.equal(registry.courses.length,50,'Ne pas perdre de cours');
 const docs=registry.courses.flatMap(course=>(course.additionalDocuments||[]).map(doc=>({...doc,courseId:course.id})));
 const blocked=docs.filter(doc=>!visible(doc));
-assert.equal(blocked.length,10,'Les 10 entrées de scripts doivent rester invisibles à l’étudiant');
-assert.ok(blocked.every(doc=>/script/i.test(doc.label||'')),'Ne pas masquer les contenus étudiants distincts');
+assert.equal(blocked.length,0,'Aucun script de travail ne doit rester dans le registre public');
+assert.equal(docs.length,23,'Les dix références privées doivent avoir quitté le manifeste étudiant');
+for(const label of ['Scripts vocaux (TXT)','Script vocal de consolidation'])assert.equal(visible({label}),false);
 assert.ok(docs.some(doc=>doc.category==='qcm_enseignant'&&visible(doc)),'Ne pas retirer les documents QCM de l’enseignant');
 assert.equal(docs.length-blocked.length,23,'La liste des documents visibles ne doit pas perdre les ressources légitimes');
 assert.equal(visible({label:'Compte-rendu de stage',visibility:'private'}),false);
 assert.equal(visible({label:'Fiche de révision',category:'internal'}),false);
 assert.equal(visible({label:'Transcription orale',category:'cours'}),false);
 assert.equal(visible({label:'Vocal MP3 — 6 épisodes',category:'audio'}),true);
-console.log('PASS : 50 cours, 10 liens de scripts masqués dans UI, 23 documents conservés. Contrôle Drive séparé requis.');
+console.log('PASS : 50 cours, zéro lien privé dans registre, 23 documents conservés, UI refuse la réinjection. Contrôle ACL Drive séparé requis.');
