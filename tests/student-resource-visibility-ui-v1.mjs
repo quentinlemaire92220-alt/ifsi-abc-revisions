@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {dirname,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {runInNewContext} from 'node:vm';
+
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const registry=JSON.parse(readFileSync(resolve(root,'course-registry-v741.json'),'utf8'));
+const source=readFileSync(resolve(root,'v74-pack.js'),'utf8');
+const start=source.indexOf('const studentVisibleDocument74=');
+const end=source.indexOf('function renderCourse74()',start);
+assert.ok(start>=0 && end>start,'Filtre des documents internes absent');
+const visible=runInNewContext(source.slice(start,end)+'\nstudentVisibleDocument74;');
+assert.equal(typeof visible,'function');
+assert.ok(source.includes("x.category!=='anatomy'&&studentVisibleDocument74(x)"),'Filtre non branché sur Documents du cours');
+assert.ok(source.includes('const parts=uniqueSupportParts74(url,'),'Sous-cours non dédupliqués');
+assert.equal(registry.courses.length,50,'Ne pas perdre de cours');
+const docs=registry.courses.flatMap(course=>(course.additionalDocuments||[]).map(doc=>({...doc,courseId:course.id})));
+const blocked=docs.filter(doc=>!visible(doc));
+assert.equal(blocked.length,10,'Les 10 entrées de scripts doivent rester invisibles à l’étudiant');
+assert.ok(blocked.every(doc=>/script/i.test(doc.label||'')),'Ne pas masquer les contenus étudiants distincts');
+assert.ok(docs.some(doc=>doc.category==='qcm_enseignant'&&visible(doc)),'Ne pas retirer les documents QCM de l’enseignant');
+assert.equal(docs.length-blocked.length,23,'La liste des documents visibles ne doit pas perdre les ressources légitimes');
+assert.equal(visible({label:'Compte-rendu de stage',visibility:'private'}),false);
+assert.equal(visible({label:'Fiche de révision',category:'internal'}),false);
+assert.equal(visible({label:'Transcription orale',category:'cours'}),false);
+assert.equal(visible({label:'Vocal MP3 — 6 épisodes',category:'audio'}),true);
+console.log('PASS : 50 cours, 10 liens de scripts masqués dans UI, 23 documents conservés. Contrôle Drive séparé requis.');
