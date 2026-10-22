@@ -18,15 +18,6 @@ function selectedSheetIds(delivery){
 
 export function visualResourceFingerprint(courseId,delivery,data){
  if(!delivery)return null;
- if(infographicOnly){
-  assert.equal(review.criteria?.INFOGRAPHIC_VISUAL_FIRST,'PASS',
-   courseId+': INFOGRAPHIC_VISUAL_FIRST — pack infographie non valide');
-  const id=delivery.infographicPackDriveId, live=(delivery.artifactSha256s||{})[id];
-  assert.ok(digest(live),courseId+': SHA-256 pack infographies absent');
-  assert.equal(review.reviewedPackSha256,live,
-   courseId+': le pack infographies a change apres la validation visuelle');
-  assert.equal(delivery.reviewedBoardCount,16,courseId+': la revue du lot doit couvrir 16 planches');
- }
  const ids=selectedSheetIds(delivery);
  const sheets=ids.map(id=>{
   const sheet=(data.sheets||[]).find(s=>s.courseId===courseId&&s.resourceId===id);
@@ -68,6 +59,15 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   ||(delivery.partDeliveries||[]).some(p=>p.infographicSheetResourceId));
  if(hasCompleteInfographic)assert.equal(review.criteria?.INFOGRAPHIC_VISUAL_FIRST,'PASS',
   courseId+': INFOGRAPHIC_VISUAL_FIRST — cours/planche infographiee autonome non approuve graphiquement');
+ if(infographicOnly){
+  assert.equal(review.criteria?.INFOGRAPHIC_VISUAL_FIRST,'PASS',
+   courseId+': INFOGRAPHIC_VISUAL_FIRST — pack infographie non valide');
+  const id=delivery.infographicPackDriveId, live=(delivery.artifactSha256s||{})[id];
+  assert.ok(digest(live),courseId+': SHA-256 pack infographies absent');
+  assert.equal(review.reviewedPackSha256,live,
+   courseId+': le pack infographies a change apres la validation visuelle');
+  assert.equal(delivery.reviewedBoardCount,16,courseId+': la revue du lot doit couvrir 16 planches');
+ }
  const ids=selectedSheetIds(delivery);
  for(const id of ids){
   const sheet=(data.sheets||[]).find(s=>s.courseId===courseId&&s.resourceId===id);
