@@ -42,7 +42,7 @@ export function validatePublicationApproval(courseId,delivery,digest){
  assert.equal(a?.status,'approved',courseId+': validation du package absente. Empreinte attendue : '+digest);
  assert.equal(a.authorization,'explicit_go_publication',courseId+': GO publication explicite absent');
  const expectedScope=delivery.publicationScope==='infographics_only'?'infographics_only':'course_package';
- assert.equal(a.scope,expectedScope,courseId+': autorisation incorrecte pour la portee du package');
+ assert.equal(a.scope,expectedScope,courseId+': portee du package incorrecte : une validation de fichier seul ne valide pas le package');
  assert.ok(typeof a.approvedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(a.approvedAt)&&Number.isFinite(Date.parse(a.approvedAt)),courseId+': date de validation absente ou invalide');
  assert.match(a.bundleSha256||'',/^[a-f0-9]{64}$/,courseId+': empreinte de validation invalide');
  assert.equal(a.bundleSha256,digest,courseId+': le lot a changé après validation. Empreinte attendue : '+digest);
