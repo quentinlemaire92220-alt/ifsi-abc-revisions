@@ -93,13 +93,23 @@ def analyze(pdf_path, manifest, render_dir=None):
                                   72*im["height"]/max(.1, bbox.height))
                         if dpi >= 95:
                             rasters.append((coverage, dpi))
-                paths = [fitz.Rect(x["rect"]) for x in page.get_drawings()]
-                vector_hits = [r for r in paths if intersection_ratio(r, rect) >= .002]
+                # A horizontal/vertical stroke has a zero-area bounding box.
+                # Count visible primitives, including rectangle edges, rather
+                # than rejecting valid axes, curves and small bar charts.
+                vector_segments = 0
+                for drawing in page.get_drawings():
+                    bounds = fitz.Rect(drawing["rect"])
+                    pad = max(.7, float(drawing.get("width") or 0)/2)
+                    bounds = bounds + (-pad, -pad, pad, pad)
+                    if max(bounds.width, bounds.height) < 6 or intersection_ratio(rect, bounds) < .5:
+                        continue
+                    vector_segments += sum(4 if item[0] in ("re", "qu") else 1
+                                           for item in drawing["items"])
                 kind = figure.get("kind", "auto")
                 if kind not in ("auto", "raster", "vector"):
                     raise ValueError("kind doit être auto, raster ou vector")
                 raster_ok = bool(rasters)
-                vector_ok = len(vector_hits) >= 5
+                vector_ok = vector_segments >= 5
                 if (kind == "raster" and not raster_ok) or (kind == "vector" and not vector_ok) or (
                     kind == "auto" and not (raster_ok or vector_ok)
                 ):

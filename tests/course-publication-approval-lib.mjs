@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {createHash} from 'node:crypto';
 import {isApprovedPrivateReferenceWithdrawal} from './private-resource-withdrawal-lib.mjs';
+import {validateRevisionSheetChange} from './revision-sheet-supplement-contract.mjs';
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -30,6 +31,7 @@ export function publicationBundle(courseId,delivery,data){
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
+  ,...(delivery.revisionSheetSupplement?{revisionSheetSupplement:delivery.revisionSheetSupplement}:{})
   ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
    mode:delivery.revisionSheetMode,questionScope:delivery.deliveryQuestionScope,coverage:delivery.sheetCoverage,completeBoardAudits:delivery.completeBoardAudits,
    parts:(delivery.partDeliveries||[]).filter(p=>p.revisionSheetMode==='single_with_complete_boards')
@@ -56,6 +58,11 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const digest=bundleDigest(bundle);
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
+  if(delivery.revisionSheetSupplement && JSON.stringify(canonical(delivery.revisionSheetSupplement))!==JSON.stringify(canonical(prior?.revisionSheetSupplement))){
+   validateRevisionSheetChange(id,prior,delivery,oldData,newData);
+   checked.push({courseId:id,kind:'revision_sheet_only'});
+   continue;
+  }
   // Une révocation PURE de références privées est permise sans nouveau GO de publication.
   // Les approbations et tous les contenus QCM, PDF, cartes, vocaux doivent rester identiques.
   if(prior && isApprovedPrivateReferenceWithdrawal(id,prior,delivery,

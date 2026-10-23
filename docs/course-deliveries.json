@@ -673,7 +673,47 @@
           ]
         }
       ],
-      "scriptsPreparedCount": 1
+      "scriptsPreparedCount": 1,
+      "revisionSheetSupplement": {
+        "resourceId": "pharmacologie_hybride_revision_20261023",
+        "driveId": "1FARx5hXRuqsTgtVivS7jUoD5GP73J1fn",
+        "pdfSha256": "08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd",
+        "pageCount": 24,
+        "lexiconTermCount": 34,
+        "provisional": true,
+        "nativeSupportAvailable": false,
+        "visualAudit": {
+          "status": "PASS",
+          "pdfSha256": "08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd",
+          "expectedCount": 19,
+          "checkedCount": 19,
+          "pageCount": 24
+        },
+        "publishedVerification": {
+          "status": "MATCH",
+          "source": "authenticated_drive_download",
+          "pdfSha256": "08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd",
+          "expectedCount": 19,
+          "checkedCount": 19,
+          "pageCount": 24
+        },
+        "ownerReview": {
+          "status": "owner_accepted",
+          "pdfSha256": "08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd",
+          "pagesChecked": 24,
+          "visualReference": "pharmacologie_v1.47_24_pages",
+          "scientificReview": "documentary_review_completed",
+          "independentMedicalReview": "not_attested",
+          "method": "all_pages_rendered_and_inspected_120dpi"
+        },
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "revision_sheet_only",
+          "approvedAt": "2026-10-23T07:56:35.256506+00:00",
+          "bundleSha256": "19b7debb453083e797edc0ed1123a69e4062f4bb95428dafb805a0df50e365c0"
+        }
+      }
     },
     {
       "courseId": "infections_neuro_meningees",
@@ -1609,6 +1649,46 @@
         "scope": "infographics_only",
         "approvedAt": "2026-10-22T08:12:35.303Z",
         "bundleSha256": "8550c742e324bcff36771760334374d5a2679ef3be0b91985cf0af2034536260"
+      },
+      "revisionSheetSupplement": {
+        "resourceId": "douleur_hybride_revision_20261023",
+        "driveId": "1Ohu7X5maGXooZ206T3aNHxjWNQPwBbvY",
+        "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+        "pageCount": 32,
+        "lexiconTermCount": 55,
+        "provisional": false,
+        "nativeSupportAvailable": true,
+        "visualAudit": {
+          "status": "PASS",
+          "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+          "expectedCount": 19,
+          "checkedCount": 19,
+          "pageCount": 32
+        },
+        "publishedVerification": {
+          "status": "MATCH",
+          "source": "authenticated_drive_download",
+          "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+          "expectedCount": 19,
+          "checkedCount": 19,
+          "pageCount": 32
+        },
+        "ownerReview": {
+          "status": "owner_accepted",
+          "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+          "pagesChecked": 32,
+          "visualReference": "pharmacologie_v1.47_24_pages",
+          "scientificReview": "documentary_review_completed",
+          "independentMedicalReview": "not_attested",
+          "method": "all_pages_rendered_and_inspected_120dpi"
+        },
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "revision_sheet_only",
+          "approvedAt": "2026-10-23T07:56:35.231509+00:00",
+          "bundleSha256": "5488b2ad812ba573de4a138e903b46a1c8785e80a232d6a2af4146fa1fcb8725"
+        }
       }
     }
   ],

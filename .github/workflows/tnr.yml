@@ -59,6 +59,9 @@ jobs:
       - name: Vérifier les cours rapprochés des captures V8.30.95
         run: node tests/course-revisions-v8395.mjs
 
+      - name: Vérifier la publication limitée aux deux fiches validées
+        run: node tests/revision-sheet-supplement-test.mjs
+
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 

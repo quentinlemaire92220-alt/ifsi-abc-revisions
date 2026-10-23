@@ -5,6 +5,7 @@ import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
 import {validateDualSheetPart} from './dual-sheet-contract.mjs';
 import {validateHybridPart} from './hybrid-sheet-contract.mjs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
+import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 
 const kinds = [
   ['sheet', 'sheets', 'resourceId', 'sheetResourceIds'],
@@ -65,6 +66,13 @@ export function validatePartChanges(before, after, previousManifest, currentMani
   }
   const approvedAudio=validateAudioSupplements(currentManifest,after);
   const ordinary = updates.filter(item => {
+    if(item.kind==='sheet'){
+      const c=currentManifest.courses.find(x=>x.courseId===item.courseId);
+      if(c?.revisionSheetSupplement?.resourceId===item.id){
+        validateRevisionSheetSupplement(item.courseId,c,after);
+        return false;
+      }
+    }
     if(item.kind==='infographic'){
       const c=currentManifest.courses.find(x=>x.courseId===item.courseId);
       if(c?.publicationScope==='infographics_only'&&c.infographicResourceIds?.includes(item.id)){
