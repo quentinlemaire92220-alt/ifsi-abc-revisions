@@ -1,6 +1,6 @@
 # UE A2.1 S1 — Responsabilité, exercice professionnel, confidentialité et secret professionnel
 
-**Statut : intégration technique en préparation — ne pas fusionner/publier sans vérification des portes de validation.**
+**Statut : ressources placées en quarantaine technique — aucun cours activé dans le registre, aucune banque QCM chargée dans l'application, aucune fiche étudiante publiée.**
 
 ## Ressources du lot
 
