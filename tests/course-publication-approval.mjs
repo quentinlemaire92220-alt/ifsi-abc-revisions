@@ -20,7 +20,15 @@ function readData(ref,manifest,proposedManifest=manifest){
  const manifestCourses=[...(manifest.courses||[]),...(proposedManifest.courses||[])];
  for(const c of manifestCourses)for(const file of c.qcmBanks?.length?c.qcmBanks:[c.qcmBank].filter(Boolean)){
   if(!/^[\w/-]+\.(?:txt|json)$/.test(file)||file.includes('..'))throw Error('Chemin de banque invalide');
-  if(!banks[file])banks[file]=json(ref,file);
+  if(!banks[file]){
+   // Une nouvelle banque n'existait pas nécessairement dans la base publiée.
+   // Seule son absence Git est admise ; un ancien fichier absent ou malformé reste bloquant.
+   const wasDeclared=(manifest.courses||[]).some(c=>(c.qcmBanks?.length?c.qcmBanks:[c.qcmBank]).includes(file));
+   if(ref&&!wasDeclared){
+    const exists=execFileSync('git',['ls-tree','--name-only',ref,'--',file],{encoding:'utf8'}).trim();
+    banks[file]=exists?json(ref,file):[];
+   }else banks[file]=json(ref,file);
+  }
  }
  for(const x of infographics.filter(x=>(manifest.courses||[]).some(c=>c.courseId===x.courseId))){
   if(!x.localImage)continue;

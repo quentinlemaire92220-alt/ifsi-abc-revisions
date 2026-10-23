@@ -1,0 +1,760 @@
+[
+  {
+    "id": "droits_patients_p01_q086",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "CRUA, RU et CDU",
+    "difficulty": "medium",
+    "question": "Quelles missions correspondent à la CRUA dans l’organisation locale présentée ?",
+    "choices": [
+      "Prononcer un jugement pénal sur les professionnels.",
+      "Coordonner le traitement des réclamations avec les services.",
+      "Décider à la place de tout patient sous tutelle.",
+      "Transmettre les retours utiles à la démarche qualité.",
+      "Attribuer automatiquement une indemnité à chaque réclamant."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "B et D : la CRUA assure une coordination institutionnelle, notamment pour les réclamations et les retours d’expérience. Elle n’est ni un tribunal (A), ni le représentant décisionnel de tous les patients (C). Une indemnisation dépend d’un cadre et d’une analyse propres ; elle n’est pas automatique (E).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_001",
+        "front": "Quel est le rôle de la CRUA dans le circuit de réclamation présenté ?",
+        "answers": [
+          "Coordonner le recueil des faits avec les services et la préparation de la réponse institutionnelle."
+        ],
+        "explanation": "La CRUA est une professionnelle de l’établissement. Sa mission ne se confond pas avec une décision de justice.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q087",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "CRUA, RU et CDU",
+    "difficulty": "medium",
+    "question": "Comment caractériser le représentant des usagers (RU) ?",
+    "choices": [
+      "Il porte la parole des usagers en tant que représentant associatif.",
+      "Il remplace systématiquement la CRUA dans l’enquête administrative.",
+      "Il est obligatoirement le médecin responsable du service.",
+      "Il peut obtenir tous les dossiers médicaux par sa seule qualité de RU.",
+      "Il peut accompagner un usager en médiation si celui-ci le souhaite."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A et E : le RU représente les usagers, participe aux instances et peut accompagner une médiation. Sa fonction n’est pas celle de la CRUA (B), elle n’exige pas d’être médecin du service (C) et ne crée pas un droit général aux dossiers (D).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_002",
+        "front": "Quelle fonction distingue le représentant des usagers de la CRUA ?",
+        "answers": [
+          "Le RU porte la parole des usagers comme représentant associatif."
+        ],
+        "explanation": "Il peut accompagner une médiation à la demande de l’usager ; il ne dispose pas d’un accès général aux dossiers.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_005",
+        "front": "Où orienter un patient qui cherche les coordonnées des représentants des usagers ?",
+        "answers": [
+          "Vers le livret d’accueil, l’affichage et les coordonnées institutionnelles actualisées de l’établissement."
+        ],
+        "explanation": "Vérifier le contact courant plutôt que recopier une ancienne coordonnée personnelle.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q088",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "CRUA, RU et CDU",
+    "difficulty": "medium",
+    "question": "Quelles affirmations concernent la commission des usagers (CDU) ?",
+    "choices": [
+      "Elle se réunit seulement après une condamnation judiciaire.",
+      "Elle ne peut examiner une réclamation sans médiation préalable.",
+      "Elle contribue à améliorer l’accueil et la prise en charge.",
+      "Elle examine les réclamations de son ressort au moins une fois par trimestre.",
+      "Elle décide seule des sanctions pénales."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "C et D : la CDU contribue au respect des droits et à l’amélioration de la qualité, avec un examen au moins trimestriel des réclamations. Une médiation ou une condamnation ne constitue pas une condition préalable générale (A, B). Elle ne prononce pas de sanction pénale (E).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_003",
+        "front": "Quelle est la mission générale de la CDU ?",
+        "answers": [
+          "Veiller aux droits des usagers et contribuer à l’amélioration de l’accueil et de la prise en charge."
+        ],
+        "explanation": "Elle analyse notamment les réclamations et réponses de son ressort pour proposer des améliorations.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_004",
+        "front": "À quelle fréquence minimale la CDU examine-t-elle les réclamations de son ressort ?",
+        "answers": [
+          "Au moins une fois par trimestre, et chaque fois que nécessaire."
+        ],
+        "explanation": "Une réunion locale mensuelle de travail ne remplace pas cette obligation de fonctionnement de la CDU.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q089",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Réclamation et médiation",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent la médiation au sein de l’établissement ?",
+    "choices": [
+      "La saisine directe du médiateur est possible.",
+      "Elle vise des explications et le rétablissement du dialogue.",
+      "Elle garantit le versement d’une indemnité.",
+      "Elle est obligatoire avant toute autre voie de recours.",
+      "Elle équivaut à un jugement déterminant une culpabilité pénale."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "A et B : la médiation facilite l’échange et les explications ; elle peut être demandée directement. Elle ne garantit pas une indemnité (C), n’est pas un préalable universel à tous les recours (D) et ne constitue pas un jugement pénal (E).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_007",
+        "front": "Quel est l’objectif de la médiation avec un établissement de santé ?",
+        "answers": [
+          "Apporter des explications et rétablir le dialogue."
+        ],
+        "explanation": "La médiation n’est ni un jugement pénal ni une promesse d’indemnisation.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_008",
+        "front": "Faut-il toujours attendre une réponse institutionnelle avant de saisir le médiateur ?",
+        "answers": [
+          "Non : une saisine directe du médiateur est possible."
+        ],
+        "explanation": "La médiation constitue une possibilité ; elle n’est pas un préalable obligatoire à tout autre recours.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q090",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Réclamation et médiation",
+    "difficulty": "easy",
+    "question": "Quel circuit local organise le traitement des réclamations ?",
+    "choices": [
+      "Accusé de réception, indemnité automatique décidée par le RU, puis recueil des faits.",
+      "Saisine obligatoire du tribunal avant toute réponse du service.",
+      "Réponse définitive préparée avant tout recueil des faits.",
+      "Médiation obligatoire, puis clôture sans réponse si le patient refuse la médiation.",
+      "Accusé de réception, recueil des éléments du service, puis réponse validée par la direction."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "E : dans l’organisation locale décrite, la CRUA reçoit la demande, sollicite le service et prépare une réponse validée par la direction. Les autres circuits suppriment l’examen des faits ou ajoutent une obligation inexistante. Cette description locale ne remplace pas l’ensemble des voies de recours.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_006",
+        "front": "Quelles étapes composent le traitement local de réclamation décrit à l’oral ?",
+        "answers": [
+          "Accusé de réception, recueil des éléments auprès du service, puis réponse validée par la direction."
+        ],
+        "explanation": "La CRUA coordonne ce circuit local ; d’autres voies de recours ont des objets et conditions propres.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q091",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Réclamation et médiation",
+    "difficulty": "medium",
+    "question": "Un patient n’a pas demandé de médiation. Que peut néanmoins faire la CDU ?",
+    "choices": [
+      "Exclure sa réclamation du seul fait de l’absence de médiation.",
+      "Rendre une décision pénale à la place du tribunal.",
+      "Analyser la réclamation et la réponse relevant de son ressort.",
+      "Consulter sans condition tous les dossiers de l’hôpital.",
+      "Proposer des actions d’amélioration à partir des difficultés identifiées."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "C et E : l’analyse des réclamations et des réponses, puis les propositions d’amélioration, ne dépendent pas toutes d’une médiation préalable. La CDU n’a ni compétence pénale ni droit indifférencié à tous les dossiers. A confond deux démarches distinctes.",
+    "announcedCorrectCount": 2,
+    "flashcards": []
+  },
+  {
+    "id": "droits_patients_p01_q092",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Biens et aides techniques",
+    "difficulty": "medium",
+    "question": "Quelles pratiques favorisent un inventaire fiable à l’admission ?",
+    "choices": [
+      "Associer le patient lorsque son état le permet et tracer les formalités.",
+      "Décrire un bijou comme étant en or sans information ou expertise suffisante.",
+      "Omettre les lunettes et prothèses, qui ne sont pas des biens utiles au séjour.",
+      "Attendre systématiquement la sortie pour identifier les effets.",
+      "Demander explicitement les aides auditives, prothèses dentaires et aides à la marche."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "A et E : la participation du patient et la recherche explicite des aides réduisent les oublis. Décrire l’apparence d’un bijou sans affirmer sa composition évite une expertise improvisée (B). Les aides techniques participent à l’autonomie (C) ; attendre la sortie empêche une prévention efficace (D).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_009",
+        "front": "À quoi sert l’inventaire des biens à l’admission ?",
+        "answers": [
+          "Identifier et tracer les biens et aides techniques avec le patient lorsque possible."
+        ],
+        "explanation": "Il facilite la prévention des pertes et la recherche du circuit des objets ; expliquer aussi les possibilités de dépôt.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q093",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Biens et aides techniques",
+    "difficulty": "medium",
+    "question": "Un patient est admis en urgence sans pouvoir accomplir les formalités concernant ses biens. Quelles démarches sont adaptées ?",
+    "choices": [
+      "Considérer que personne n’a à s’occuper de ses effets.",
+      "Organiser les formalités et la protection des biens selon la procédure prévue.",
+      "Informer le patient dès que son état le permet.",
+      "Remettre les biens au premier visiteur sans vérification ni trace.",
+      "Reporter toutes les démarches jusqu’à ce qu’une perte soit signalée."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "B et C : l’incapacité d’accomplir les formalités appelle une protection organisée, puis une information dès que possible. Elle ne supprime pas les obligations de l’établissement. Une remise sans contrôle ni traçabilité (D), l’inaction (A) ou l’attente d’un dommage (E) ne sont pas adaptées.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_010",
+        "front": "Que faire pour les biens d’un patient incapable d’accomplir les formalités à l’admission ?",
+        "answers": [
+          "Organiser leur protection et les formalités prévues, puis informer le patient dès que possible."
+        ],
+        "explanation": "L’urgence et l’incapacité ne justifient pas de laisser les effets sans circuit protecteur.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_013",
+        "front": "Quel circuit de dépôt employer lorsque la régie est fermée ?",
+        "answers": [
+          "Le circuit de garde et de remise prévu par la procédure locale de l’établissement."
+        ],
+        "explanation": "Ne pas improviser un lieu de dépôt ; assurer la traçabilité et l’information utile au retrait.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q094",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Biens et aides techniques",
+    "difficulty": "medium",
+    "question": "Quelles mesures préviennent la perte d’une prothèse dentaire ou d’une aide auditive ?",
+    "choices": [
+      "La placer sur le plateau-repas pour que la personne la retrouve.",
+      "La dissimuler dans le linge avant le ménage.",
+      "L’éloigner durablement du patient sans tenir compte de ses besoins.",
+      "Utiliser une boîte identifiée et un rangement adapté.",
+      "Tracer les remises et tenir compte des conséquences sur l’autonomie."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "D et E : une boîte identifiée, un circuit tracé et un accès adapté protègent à la fois le bien et son usage. Plateau et linge sont des circuits de perte (A, B). Le stockage ne doit pas priver inutilement la personne d’une aide à l’alimentation, à l’audition ou à la communication (C).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_012",
+        "front": "Comment protéger une prothèse dentaire ou une aide auditive contre la perte ?",
+        "answers": [
+          "Utiliser une boîte identifiée et un rangement adapté, en évitant plateau-repas et linge."
+        ],
+        "explanation": "Préserver aussi son accès utile : la perte peut altérer alimentation, communication et autonomie.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q095",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Biens et aides techniques",
+    "difficulty": "hard",
+    "question": "Un patient a choisi de garder un objet auprès de lui après information. Quelle conclusion est correcte en cas de perte ?",
+    "choices": [
+      "La responsabilité de l’établissement est toujours exclue.",
+      "Le choix du patient équivaut automatiquement à une renonciation à tout droit.",
+      "L’analyse dépend notamment du régime du dépôt, des circonstances et d’une faute éventuelle.",
+      "Une indemnité forfaitaire est automatiquement due sans analyse.",
+      "La recherche des faits devient inutile."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "C : le non-dépôt ne supprime pas à lui seul toute responsabilité. Il faut examiner les conditions de conservation, les faits et une faute éventuelle. A et B posent une exclusion absolue injustifiée ; D promet une réparation automatique ; E écarte une enquête nécessaire.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_014",
+        "front": "Le non-dépôt d’un objet exclut-il toujours la responsabilité de l’établissement ?",
+        "answers": [
+          "Non : le régime, les circonstances et une faute éventuelle doivent être examinés."
+        ],
+        "explanation": "Un choix de conservation auprès de soi n’équivaut pas à une disparition de tout droit ; aucune réparation automatique n’est promise.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q096",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Biens et aides techniques",
+    "difficulty": "medium",
+    "question": "Lors d’un transfert ou d’une remise d’objet à un proche, quelles actions sont utiles ?",
+    "choices": [
+      "Actualiser la trace des biens et de leur destination.",
+      "Tracer la remise et l’identité du destinataire selon la procédure.",
+      "Supposer que l’inventaire initial décrit toujours la situation actuelle.",
+      "Remettre les valeurs sans vérifier qui les reçoit.",
+      "Improviser un lieu de dépôt si la régie est fermée."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "A et B : les mouvements de biens doivent pouvoir être retrouvés. C ignore les changements survenus après l’admission ; D supprime le contrôle du destinataire. Hors horaires, suivre le circuit local de garde et de remise, plutôt qu’improviser (E).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_011",
+        "front": "Que tracer lorsqu’un objet est remis à un proche ou transféré avec le patient ?",
+        "answers": [
+          "Le bien concerné, sa destination et la remise selon la procédure, avec identification du destinataire."
+        ],
+        "explanation": "Actualiser le suivi : l’inventaire initial ne décrit pas automatiquement tous les mouvements ultérieurs.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q097",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Satisfaction et expérience patient",
+    "difficulty": "medium",
+    "question": "Quelles affirmations concernant e-Satis sont exactes ?",
+    "choices": [
+      "Le même questionnaire est envoyé après toute consultation externe.",
+      "Le patient doit répondre pour continuer à bénéficier de soins.",
+      "Le soignant doit suggérer une note favorable au service.",
+      "Les programmes et critères dépendent du type de prise en charge.",
+      "La participation du patient au questionnaire est volontaire."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "D et E : les questionnaires répondent à des programmes et critères propres, et la personne reste libre de participer. Toute consultation ne relève pas automatiquement du même programme (A). Le recueil ne doit ni conditionner les soins ni orienter les réponses (B, C).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_015",
+        "front": "La réponse au questionnaire e-Satis est-elle obligatoire ?",
+        "answers": [
+          "Non, la participation du patient est volontaire."
+        ],
+        "explanation": "Expliquer l’intérêt du recueil sans orienter vers une note favorable ni conditionner les soins.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_016",
+        "front": "Quand le lien e-Satis +48h MCO est-il habituellement envoyé après la sortie ?",
+        "answers": [
+          "Environ deux semaines après la sortie, selon les conditions du programme."
+        ],
+        "explanation": "Les questionnaires et critères varient avec le type de prise en charge ; toute consultation externe n’appelle pas le même questionnaire.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q098",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Satisfaction et expérience patient",
+    "difficulty": "medium",
+    "question": "Quelques entretiens ouverts ont été réalisés auprès de patients volontaires dans un service. Que peut-on en conclure ?",
+    "choices": [
+      "Ils ne peuvent jamais conduire à une amélioration.",
+      "Ils peuvent faire émerger des difficultés concrètes et des pistes d’action.",
+      "Ils permettent à eux seuls de calculer le taux représentatif de satisfaction de tous les patients.",
+      "Les retours positifs doivent être supprimés de l’analyse.",
+      "La démarche est qualitative et doit être interprétée avec son contexte."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "B et E : les entretiens décrivent des expériences et aident à agir. Un petit groupe volontaire ne devient pas automatiquement un échantillon représentatif (C). Les réussites comme les difficultés sont utiles (D) ; la méthode peut déboucher sur des changements concrets (A).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_017",
+        "front": "Des entretiens au lit de quelques patients volontaires permettent-ils un taux représentatif de satisfaction ?",
+        "answers": [
+          "Non : ils constituent une démarche qualitative, à interpréter avec son contexte."
+        ],
+        "explanation": "Ils peuvent faire émerger des difficultés et des solutions utiles sans représenter statistiquement tous les patients.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q099",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Satisfaction et expérience patient",
+    "difficulty": "easy",
+    "question": "Un patient explique qu’il n’atteint pas la sonnette. Quelles réponses participent à une amélioration effective ?",
+    "choices": [
+      "Attendre le bilan annuel avant d’agir.",
+      "Contester son ressenti sans vérifier la situation.",
+      "Corriger l’accessibilité lorsque possible et vérifier que le patient peut appeler.",
+      "Ne conserver le témoignage que s’il contient un remerciement.",
+      "Transmettre la difficulté utile et suivre les mesures pour éviter sa répétition."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "C et E : une difficulté simple peut appeler une correction immédiate, suivie d’un partage et d’un suivi adaptés. L’écoute ne se réduit pas à un archivage. A retarde une action possible ; B écarte l’examen des faits ; D trie les avis selon leur tonalité.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_018",
+        "front": "Que faire après le signalement d’un problème simple d’accessibilité, comme une sonnette hors de portée ?",
+        "answers": [
+          "Corriger lorsque possible, vérifier l’usage, transmettre les éléments utiles et suivre les mesures."
+        ],
+        "explanation": "Recueillir un avis sans action ni suivi ne suffit pas à améliorer durablement le vécu du patient.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q100",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Compléments pratiques de l’oral",
+    "difficulty": "easy",
+    "question": "Après une explication, comment vérifier utilement la compréhension du patient ?",
+    "choices": [
+      "Lui demander de reformuler avec ses mots et reprendre les points mal compris.",
+      "Considérer son absence de questions comme une preuve suffisante.",
+      "Augmenter systématiquement le jargon pour tester son niveau.",
+      "Lui faire signer un formulaire à la place de tout échange.",
+      "Lui reprocher de ne pas comprendre."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "A : la reformulation permet au professionnel de vérifier la qualité de son explication, sans mettre le patient en défaut. Silence et signature ne suffisent pas (B, D). Jargon et reproche ne favorisent pas une information adaptée (C, E).",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_019",
+        "front": "Comment utiliser la reformulation pour vérifier une explication donnée au patient ?",
+        "answers": [
+          "Lui demander de redire avec ses mots, puis reprendre les éléments mal compris."
+        ],
+        "explanation": "La vérification porte sur la qualité de l’explication ; silence ou absence de questions ne suffisent pas.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q101",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Compléments pratiques de l’oral",
+    "difficulty": "hard",
+    "question": "Une personne appelle en se présentant comme le conjoint d’un patient. Quelles vérifications sont nécessaires avant une information sensible ?",
+    "choices": [
+      "Considérer le lien conjugal déclaré comme une preuve suffisante.",
+      "Confirmer d’emblée la présence du patient dans l’établissement.",
+      "Rappeler que toute information téléphonique est toujours interdite par la loi.",
+      "Vérifier l’identité par les moyens institutionnels et les souhaits du patient.",
+      "Limiter la transmission à ce qui est autorisé et à son champ de compétences."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "D et E : l’identité, la volonté du patient, le canal et le périmètre d’information doivent être vérifiés. La parenté déclarée ne suffit pas (A). La présence peut aussi être confidentielle (B). C transforme à tort une exigence de sécurité en interdiction légale absolue.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_020",
+        "front": "Que vérifier avant de donner une information sensible à un proche au téléphone ?",
+        "answers": [
+          "Son identité par les moyens institutionnels, les souhaits du patient et le périmètre de transmission autorisé."
+        ],
+        "explanation": "Même la présence dans l’établissement peut être confidentielle ; une parenté déclarée ne suffit pas.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q102",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Compléments pratiques de l’oral",
+    "difficulty": "hard",
+    "question": "Une personne se présente par téléphone comme policier et demande un dossier. Quelle conduite est adaptée ?",
+    "choices": [
+      "Envoyer le dossier complet dès qu’un grade est annoncé.",
+      "Vérifier la réalité et la portée de la demande par un contact officiel, puis appliquer le circuit compétent.",
+      "Considérer que le secret professionnel disparaît pour toute demande policière.",
+      "Transmettre les identifiants du dossier informatique au demandeur.",
+      "Publier les éléments pour démontrer sa coopération."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "B : une demande judiciaire ou policière doit être vérifiée et traitée dans son cadre, avec le médecin, la direction/CRUA ou le service juridique selon la procédure. Elle ne justifie ni accès général, ni partage d’identifiants, ni publication. Les autres réponses méconnaissent ces contrôles.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_021",
+        "front": "Quel premier contrôle faire face à une demande téléphonique prétendument policière ?",
+        "answers": [
+          "Vérifier la réalité et la portée de la demande par un contact officiel et suivre le circuit compétent."
+        ],
+        "explanation": "La demande ne lève pas globalement le secret ; ne pas transmettre de dossier ou d’identifiants sur la seule déclaration de l’appelant.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q103",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Vie collective : applications locales",
+    "difficulty": "medium",
+    "question": "Quelles conduites respectent les règles locales de vie collective à l’hôpital ?",
+    "choices": [
+      "Filmer un autre patient sans autorisation dès lors qu’il est dans la même chambre.",
+      "Considérer que tout aliment extérieur convient à tout régime et à tout jeûne.",
+      "Faire valider les aliments extérieurs par l’équipe selon les contraintes de soins.",
+      "Respecter les droits des autres patients et professionnels avant tout enregistrement ou diffusion de leur image.",
+      "Considérer qu’une seule règle d’horaires de visite doit s’appliquer à toute situation sans appréciation."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "C et D : alimentation et enregistrements demandent des vérifications concrètes. Régime, jeûne et conservation peuvent limiter les apports extérieurs ; l’image d’autrui doit être protégée. A et B ignorent ces conditions. E ne laisse aucune place aux adaptations possibles dans le cadre du service.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_022",
+        "front": "Quelle précaution prendre avant de filmer ou d’enregistrer un patient ?",
+        "answers": [
+          "Respecter ses droits et obtenir l’autorisation appropriée, y compris pour la diffusion."
+        ],
+        "explanation": "Le règlement présenté protège aussi les professionnels ; partager une chambre ne donne pas une autorisation de filmer autrui.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_023",
+        "front": "Pourquoi faire valider des aliments apportés de l’extérieur par l’équipe ?",
+        "answers": [
+          "Pour vérifier leur compatibilité avec les soins, notamment régime, jeûne et conservation."
+        ],
+        "explanation": "L’approbation ne dépend pas seulement du goût du patient ; suivre la procédure locale.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q104",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Cas post-AVC et autonomie",
+    "difficulty": "hard",
+    "question": "Un patient continent dit qu’une protection absorbante lui est imposée pour simplifier l’organisation du service. Que faut-il faire ?",
+    "choices": [
+      "Évaluer sa continence, ses possibilités de déplacement et l’aide nécessaire.",
+      "Expliquer les solutions et rechercher son accord.",
+      "Déduire du seul AVC qu’il est nécessairement incontinent.",
+      "Ignorer son refus puisque l’organisation prime systématiquement.",
+      "Remplacer automatiquement l’aide au déplacement par une protection."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "A et B : le besoin réel et les moyens d’aide doivent être évalués avec le patient, en respectant dignité et consentement. Un diagnostic ne suffit pas à déterminer la continence (C). La difficulté d’organisation ne permet pas une solution imposée sans évaluation ni accord (D, E).",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "id": "droits_patients_p01_fc_complement_20261021_024",
+        "front": "Une difficulté de déplacement justifie-t-elle d’imposer une protection à un patient continent ?",
+        "answers": [
+          "Non : évaluer les besoins, rechercher une aide adaptée et expliquer les solutions avec le patient."
+        ],
+        "explanation": "Ce cas associe autonomie, dignité et consentement ; l’organisation ne remplace pas l’évaluation.",
+        "kind": "Complément",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "droits_patients_p01_q105",
+    "courseId": "droits_patients",
+    "partId": "p01",
+    "course": "Droits des patients",
+    "ue": "S1 A2",
+    "theme": "Cas post-AVC et autonomie",
+    "difficulty": "hard",
+    "question": "Les cannes d’un patient ne sont pas retrouvées et l’inventaire manque. Quelles priorités sont adaptées ?",
+    "choices": [
+      "Attendre la décision d’indemnisation avant de sécuriser ses déplacements.",
+      "Promettre immédiatement une somme d’argent sans enquête.",
+      "Conclure que l’absence d’inventaire prouve que les cannes n’existaient pas.",
+      "Rechercher les faits et les traces, puis signaler et expliquer les suites.",
+      "Mettre à disposition une aide à la marche adaptée sans attendre l’issue de la réclamation."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "D et E : protéger l’autonomie et la sécurité ne doit pas attendre le règlement matériel du litige. L’absence de trace impose une recherche et une amélioration de la procédure ; elle n’établit pas à elle seule l’absence du bien. A retarde la sécurité, B promet une réparation sans analyse et C tire une conclusion injustifiée.",
+    "announcedCorrectCount": 2,
+    "flashcards": []
+  }
+]

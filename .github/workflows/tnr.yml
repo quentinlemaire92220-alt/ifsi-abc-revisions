@@ -62,6 +62,9 @@ jobs:
       - name: Vérifier la publication limitée aux deux fiches validées
         run: node tests/revision-sheet-supplement-test.mjs
 
+      - name: Vérifier les compléments sans remplacement des ressources historiques
+        run: node tests/course-complement-additive-test.mjs
+
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 

@@ -208,7 +208,7 @@
       "courseId": "droits_patients",
       "part": "01",
       "validated": true,
-      "status": "complete",
+      "status": "partial",
       "driveFolderId": "1lInHj_FxbpAPR70sZ0g5atyYsNcuLqYC",
       "folders": {
         "01": "1dzyAX30n8OCA25E5pbDaljpLpj6V-dt1",
@@ -223,8 +223,8 @@
       "sheetResourceId": "droits_patients_fiche_p01",
       "qcmDriveId": "1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6",
       "qcmBank": "qextra-55.txt",
-      "qcmCount": 85,
-      "flashcardCount": 69,
+      "qcmCount": 105,
+      "flashcardCount": 93,
       "flashcardDriveId": "1ql-jva0m-WpauVxIw3Hj4ib2F9hmIpPm",
       "vocabularyDriveId": "1dQsw4RyX4JTMxIjRccKw64pBZGE9mRMu",
       "vocabularyCount": 34,
@@ -253,7 +253,13 @@
         "droits_patients_2026_05",
         "droits_patients_2026_06"
       ],
-      "blockers": [],
+      "blockers": [
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3",
+          "detail": "Les six MP3 historiques restent disponibles ; le MP3 du complément est attendu."
+        }
+      ],
       "artifactSha256s": {
         "1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6": "07e37070307948fbaa049c0bb70068226c311f8ade1baddafae8abc82e7c9044",
         "1dQsw4RyX4JTMxIjRccKw64pBZGE9mRMu": "3ee1526b1cf3eb68aeb3e268be5647b8a732f2ad364792e4cf8f47df3f838f38",
@@ -285,7 +291,10 @@
         "1kdToFBhQlQxEt5doA5W46LBEQDHmHMoj": "c677d0864360f0608dceb0535e428c2eff93d5d629e055e214aa09403453090c",
         "1CQdj5CXUvcGK7uGxDUqVALswHG0sUdxA": "4f1ff2e2f1f84c76d27d1bae30337ae5146d3b38c82588f1a25f8251905cce50",
         "1D-h2nZIIsSvUDd4OHPbTZbWfwDu3ZkqT": "cba307c99a23d2f9cb096020b6db5f8aa0ab2e0b74385acf80e72f56d3699867",
-        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e"
+        "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e",
+        "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
+        "1CB3_Hnqlm2Tauju37E_Hq_NYtkH4mQjm": "5eb435d7f6394dc160e7e18cfea7b6acb1a023d8983a595cae66aea82b379aa7",
+        "18CSU83AQdiVWcWTsYjGaSoe4frWOkd-o": "14556865d8698dad20ecd56e6e69bc500159b9978fefef2eb0a6a95f389a7f67"
       },
       "infographicSheetResourceId": "droits_patients_fiche_infographiee_p01",
       "infographicSheetVisualAudit": {
@@ -311,14 +320,14 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-18T20:54:13.088Z",
-        "bundleSha256": "6f3145f28c0f5c473f0ceb56983cab8d4b1b1d20973fe34c2f835df7e95674ce"
+        "approvedAt": "2026-10-23T13:37:05.821791+00:00",
+        "bundleSha256": "187af855c1a5553fb7f0ae03cb22e660e0d9990fb073a453c35caa26f78b2e6e"
       },
       "partDeliveries": [
         {
           "partId": "p01",
           "validated": true,
-          "status": "complete",
+          "status": "awaiting_mp3",
           "vocalIds": [
             "droits_patients_2026_01",
             "droits_patients_2026_02",
@@ -327,12 +336,95 @@
             "droits_patients_2026_05",
             "droits_patients_2026_06"
           ],
-          "sheetResourceIds": [],
+          "sheetResourceIds": [
+            "droits_patients_fiche_complement_p01_20261021"
+          ],
           "infographicResourceIds": [],
-          "qcmQuestionIds": []
+          "qcmQuestionIds": [
+            "droits_patients_p01_q086",
+            "droits_patients_p01_q087",
+            "droits_patients_p01_q088",
+            "droits_patients_p01_q089",
+            "droits_patients_p01_q090",
+            "droits_patients_p01_q091",
+            "droits_patients_p01_q092",
+            "droits_patients_p01_q093",
+            "droits_patients_p01_q094",
+            "droits_patients_p01_q095",
+            "droits_patients_p01_q096",
+            "droits_patients_p01_q097",
+            "droits_patients_p01_q098",
+            "droits_patients_p01_q099",
+            "droits_patients_p01_q100",
+            "droits_patients_p01_q101",
+            "droits_patients_p01_q102",
+            "droits_patients_p01_q103",
+            "droits_patients_p01_q104",
+            "droits_patients_p01_q105"
+          ],
+          "deliveryMode": "existing_course_complement",
+          "packFormat": "hybrid_v1",
+          "sheetResourceId": "droits_patients_fiche_complement_p01_20261021",
+          "schematics": "embedded_only",
+          "embeddedFigureCount": 5,
+          "visualAudit": {
+            "status": "PASS",
+            "pdfSha256": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
+            "expectedCount": 5,
+            "checkedCount": 5,
+            "pageCount": 22,
+            "pageSize": "A4"
+          },
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
+            "expectedCount": 5,
+            "checkedCount": 5,
+            "pageCount": 22,
+            "verificationMethod": "full_download_bytes_sha256_in_memory"
+          },
+          "artifactSha256s": {
+            "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696"
+          },
+          "hybridCoverage": {
+            "expectedEssential": 18,
+            "coveredEssential": 18,
+            "prioritySourceReference": "Sections rapprochées du support officiel du 21 octobre 2026 et compléments oraux examinés ; complément au cours historique conservé.",
+            "medicalReview": "approved",
+            "readabilityReview": "approved"
+          },
+          "hybridVisualReview": {
+            "status": "approved",
+            "reference": "pharmacologie_v1.47_24_pages",
+            "pagesChecked": 22
+          },
+          "lexicon": {
+            "termCount": 30,
+            "textSelectable": true,
+            "checked": true,
+            "sourceSha256": "7a37506f2c36413f74d6a951e1ed3e7f98463fe82def1516e3b40f4b634867e0"
+          },
+          "ownerReview": {
+            "status": "owner_accepted",
+            "pdfSha256": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
+            "pagesChecked": 22,
+            "visualReference": "pharmacologie_v1.47_24_pages",
+            "scientificReview": "documentary_review_completed",
+            "independentMedicalReview": "not_attested",
+            "technicalDerivation": {
+              "approvedPdfSha256": "673a27ad83f9acc5e64fe41459aab44d346823b120c56f742eb4e2e2fadf25fc",
+              "change": "publication_footer_only",
+              "bodyTextAndPixelsIdentical": true
+            }
+          }
         }
       ],
-      "scriptsPreparedCount": 6
+      "scriptsPreparedCount": 7,
+      "qcmBanks": [
+        "qextra-55.txt",
+        "qextra-60.txt"
+      ]
     },
     {
       "courseId": "pssm",

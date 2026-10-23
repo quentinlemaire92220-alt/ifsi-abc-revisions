@@ -13,7 +13,8 @@ const sortById=items=>[...items].sort((a,b)=>String(a.resourceId||a.id||a.title|
 export function publicationBundle(courseId,delivery,data){
  const paths=delivery.qcmBanks?.length?delivery.qcmBanks:[delivery.qcmBank].filter(Boolean);
  const resource=x=>({metadata:x,imageSha256:x.localImage?data.imageHashes[x.localImage]:null});
- const parts=(delivery.partDeliveries||[]).map(p=>({partId:p.partId,visualAudit:p.visualAudit,publishedVerification:p.publishedVerification}));
+ const parts=(delivery.partDeliveries||[]).map(p=>({partId:p.partId,visualAudit:p.visualAudit,publishedVerification:p.publishedVerification,
+  ...(p.deliveryMode==='existing_course_complement'?{complement:p}:{})}));
  return {
   course:data.registry.courses.find(c=>c.id===courseId),
   sheets:sortById(data.sheets.filter(x=>x.courseId===courseId)),

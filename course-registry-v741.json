@@ -1,5 +1,5 @@
 {
-  "version": "8.30.117",
+  "version": "8.30.118",
   "courses": [
     {
       "id": "biomolecules",
@@ -881,10 +881,22 @@
         {
           "label": "Vocaux MP3 — 6 épisodes",
           "url": "https://drive.google.com/drive/folders/14VSWEVk-Q4lGboFXSrBoz3nRpGW27EJH"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1CB3_Hnqlm2Tauju37E_Hq_NYtkH4mQjm/view",
+          "type": "qcm",
+          "questionCount": 20,
+          "label": "Complément QCM 86 à 105 — 20 questions et corrigés"
+        },
+        {
+          "url": "https://drive.google.com/file/d/18CSU83AQdiVWcWTsYjGaSoe4frWOkd-o/view",
+          "type": "flashcards",
+          "cardCount": 24,
+          "label": "Complément flashcards 104 à 127 — 24 cartes"
         }
       ],
       "audioStatus": "available",
-      "flashcardTarget": 69,
+      "flashcardTarget": 93,
       "authoredFlashcards": true,
       "qcmPdfQuestionCount": 85,
       "audioCount": 6,
