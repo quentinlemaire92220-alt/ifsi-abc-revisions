@@ -5299,6 +5299,762 @@
         "kind": "Vocabulaire"
       },
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "a21_resp_p01_vocab_01",
+      "term": "Rôle propre",
+      "definition": "Champ dans lequel l'IDE initie, réalise et évalue des interventions autorisées, après raisonnement clinique.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne donne pas compétence pour tout acte médical.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_003",
+      "flashcard": {
+        "front": "Que signifie « Rôle propre » ?",
+        "answers": [
+          "Champ dans lequel l'IDE initie, réalise et évalue des interventions autorisées, après raisonnement clinique."
+        ],
+        "explanation": "Ne donne pas compétence pour tout acte médical.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_02",
+      "term": "Diagnostic infirmier",
+      "definition": "Identification clinique des besoins ou réponses de santé relevant des compétences infirmières.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Différent du diagnostic médical.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_004",
+      "flashcard": {
+        "front": "Que signifie « Diagnostic infirmier » ?",
+        "answers": [
+          "Identification clinique des besoins ou réponses de santé relevant des compétences infirmières."
+        ],
+        "explanation": "Différent du diagnostic médical.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_03",
+      "term": "Rôle sur prescription",
+      "definition": "Activité exécutée sur ordre conforme ou protocole médical conformément au cadre réglementaire.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne se confond pas avec le rôle propre.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_008",
+      "flashcard": {
+        "front": "Que signifie « Rôle sur prescription » ?",
+        "answers": [
+          "Activité exécutée sur ordre conforme ou protocole médical conformément au cadre réglementaire."
+        ],
+        "explanation": "Ne se confond pas avec le rôle propre.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_04",
+      "term": "Protocole de soins",
+      "definition": "Document précisant des actions et leurs conditions, selon le cadre professionnel applicable.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "N'autorise pas un acte hors compétence.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_010",
+      "flashcard": {
+        "front": "Que signifie « Protocole de soins » ?",
+        "answers": [
+          "Document précisant des actions et leurs conditions, selon le cadre professionnel applicable."
+        ],
+        "explanation": "N'autorise pas un acte hors compétence.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_05",
+      "term": "Acte conservatoire",
+      "definition": "Mesure visant à préserver la personne ou limiter l'aggravation dans l'attente de l'aide médicale.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne signifie pas se substituer au médecin.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_011",
+      "flashcard": {
+        "front": "Que signifie « Acte conservatoire » ?",
+        "answers": [
+          "Mesure visant à préserver la personne ou limiter l'aggravation dans l'attente de l'aide médicale."
+        ],
+        "explanation": "Ne signifie pas se substituer au médecin.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_06",
+      "term": "Collaboration",
+      "definition": "Travail coordonné entre professionnels avec responsabilités et compétences définies.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "N'efface pas les responsabilités de chaque professionnel.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_005",
+      "flashcard": {
+        "front": "Que signifie « Collaboration » ?",
+        "answers": [
+          "Travail coordonné entre professionnels avec responsabilités et compétences définies."
+        ],
+        "explanation": "N'efface pas les responsabilités de chaque professionnel.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_07",
+      "term": "Responsabilité civile",
+      "definition": "Mécanisme visant à réparer un dommage suivant un régime de responsabilité applicable.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Réparation, non peine pénale.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_017",
+      "flashcard": {
+        "front": "Que signifie « Responsabilité civile » ?",
+        "answers": [
+          "Mécanisme visant à réparer un dommage suivant un régime de responsabilité applicable."
+        ],
+        "explanation": "Réparation, non peine pénale.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_08",
+      "term": "Responsabilité administrative",
+      "definition": "Responsabilité étudiée selon les règles de droit public, notamment pour des services publics.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "En particulier en établissement public.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_017",
+      "flashcard": {
+        "front": "Que signifie « Responsabilité administrative » ?",
+        "answers": [
+          "Responsabilité étudiée selon les règles de droit public, notamment pour des services publics."
+        ],
+        "explanation": "En particulier en établissement public.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_09",
+      "term": "Responsabilité pénale",
+      "definition": "Mécanisme de sanction d'une infraction légalement définie.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne se confond pas avec l'indemnisation.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_037",
+      "flashcard": {
+        "front": "Que signifie « Responsabilité pénale » ?",
+        "answers": [
+          "Mécanisme de sanction d'une infraction légalement définie."
+        ],
+        "explanation": "Ne se confond pas avec l'indemnisation.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_10",
+      "term": "Responsabilité déontologique",
+      "definition": "Examen du respect des obligations professionnelles et règles ordinales.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "À distinguer de la sanction de l'employeur.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_017",
+      "flashcard": {
+        "front": "Que signifie « Responsabilité déontologique » ?",
+        "answers": [
+          "Examen du respect des obligations professionnelles et règles ordinales."
+        ],
+        "explanation": "À distinguer de la sanction de l'employeur.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_11",
+      "term": "Faute",
+      "definition": "Comportement ou manquement apprécié au regard de l'obligation et des circonstances pertinentes.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Une complication ne prouve pas à elle seule une faute.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_019",
+      "flashcard": {
+        "front": "Que signifie « Faute » ?",
+        "answers": [
+          "Comportement ou manquement apprécié au regard de l'obligation et des circonstances pertinentes."
+        ],
+        "explanation": "Une complication ne prouve pas à elle seule une faute.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_12",
+      "term": "Faute technique",
+      "definition": "Écart aux règles de l'art ou aux précautions professionnelles attendues.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Une erreur de dose peut en constituer un exemple.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_021",
+      "flashcard": {
+        "front": "Que signifie « Faute technique » ?",
+        "answers": [
+          "Écart aux règles de l'art ou aux précautions professionnelles attendues."
+        ],
+        "explanation": "Une erreur de dose peut en constituer un exemple.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_13",
+      "term": "Faute d'humanisme",
+      "definition": "Manquement au respect de la personne, à l'information, à l'intimité ou à la dignité.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "À distinguer de la faute technique.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_022",
+      "flashcard": {
+        "front": "Que signifie « Faute d'humanisme » ?",
+        "answers": [
+          "Manquement au respect de la personne, à l'information, à l'intimité ou à la dignité."
+        ],
+        "explanation": "À distinguer de la faute technique.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_14",
+      "term": "Faute de service",
+      "definition": "Faute liée au fonctionnement ou à l'exercice du service public.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "À distinguer de la faute personnelle.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_016",
+      "flashcard": {
+        "front": "Que signifie « Faute de service » ?",
+        "answers": [
+          "Faute liée au fonctionnement ou à l'exercice du service public."
+        ],
+        "explanation": "À distinguer de la faute personnelle.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_15",
+      "term": "Faute personnelle",
+      "definition": "Faute pouvant engager l'agent personnellement, selon les critères du droit applicable.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Elle n'est pas identique à la faute de service.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_016",
+      "flashcard": {
+        "front": "Que signifie « Faute personnelle » ?",
+        "answers": [
+          "Faute pouvant engager l'agent personnellement, selon les critères du droit applicable."
+        ],
+        "explanation": "Elle n'est pas identique à la faute de service.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_16",
+      "term": "Dommage",
+      "definition": "Atteinte subie par une personne ou ses biens.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "À distinguer des postes de préjudice.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_024",
+      "flashcard": {
+        "front": "Que signifie « Dommage » ?",
+        "answers": [
+          "Atteinte subie par une personne ou ses biens."
+        ],
+        "explanation": "À distinguer des postes de préjudice.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_17",
+      "term": "Préjudice",
+      "definition": "Conséquence négative juridiquement réparable d'un dommage.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Un dommage peut produire plusieurs préjudices.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_024",
+      "flashcard": {
+        "front": "Que signifie « Préjudice » ?",
+        "answers": [
+          "Conséquence négative juridiquement réparable d'un dommage."
+        ],
+        "explanation": "Un dommage peut produire plusieurs préjudices.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_18",
+      "term": "Lien de causalité",
+      "definition": "Rapport retenu entre un fait générateur et un dommage, suivant le régime concerné.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Indispensable à l'analyse du régime de responsabilité.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_019",
+      "flashcard": {
+        "front": "Que signifie « Lien de causalité » ?",
+        "answers": [
+          "Rapport retenu entre un fait générateur et un dommage, suivant le régime concerné."
+        ],
+        "explanation": "Indispensable à l'analyse du régime de responsabilité.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_19",
+      "term": "Expertise médicale",
+      "definition": "Analyse technique servant à éclairer la nature, les circonstances et les conséquences d'un dommage.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne remplace pas la décision du juge.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_019",
+      "flashcard": {
+        "front": "Que signifie « Expertise médicale » ?",
+        "answers": [
+          "Analyse technique servant à éclairer la nature, les circonstances et les conséquences d'un dommage."
+        ],
+        "explanation": "Ne remplace pas la décision du juge.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_20",
+      "term": "Perte de chance",
+      "definition": "Disparition d'une possibilité réelle et sérieuse d'obtenir une meilleure issue.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "L'indemnisation n'est pas automatiquement le dommage total.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_023",
+      "flashcard": {
+        "front": "Que signifie « Perte de chance » ?",
+        "answers": [
+          "Disparition d'une possibilité réelle et sérieuse d'obtenir une meilleure issue."
+        ],
+        "explanation": "L'indemnisation n'est pas automatiquement le dommage total.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_21",
+      "term": "Préjudice d'impréparation",
+      "definition": "Préjudice associé à l'impossibilité de se préparer à un risque faute d'information appropriée.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Différent de la seule perte de chance.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_022",
+      "flashcard": {
+        "front": "Que signifie « Préjudice d'impréparation » ?",
+        "answers": [
+          "Préjudice associé à l'impossibilité de se préparer à un risque faute d'information appropriée."
+        ],
+        "explanation": "Différent de la seule perte de chance.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_22",
+      "term": "Consolidation",
+      "definition": "Moment de stabilisation de l'état permettant d'évaluer les séquelles durables.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "N'équivaut pas nécessairement à la guérison.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_025",
+      "flashcard": {
+        "front": "Que signifie « Consolidation » ?",
+        "answers": [
+          "Moment de stabilisation de l'état permettant d'évaluer les séquelles durables."
+        ],
+        "explanation": "N'équivaut pas nécessairement à la guérison.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_23",
+      "term": "Aléa thérapeutique",
+      "definition": "Complication dommageable d'un acte de soin sans faute établie, sous réserve du régime exact.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Différent de l'échec d'un traitement.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_029",
+      "flashcard": {
+        "front": "Que signifie « Aléa thérapeutique » ?",
+        "answers": [
+          "Complication dommageable d'un acte de soin sans faute établie, sous réserve du régime exact."
+        ],
+        "explanation": "Différent de l'échec d'un traitement.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_24",
+      "term": "Caractère anormal",
+      "definition": "Qualification de conséquences au regard de l'état initial et de l'évolution prévisible du patient.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Critère du régime d'accident médical non fautif.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_027",
+      "flashcard": {
+        "front": "Que signifie « Caractère anormal » ?",
+        "answers": [
+          "Qualification de conséquences au regard de l'état initial et de l'évolution prévisible du patient."
+        ],
+        "explanation": "Critère du régime d'accident médical non fautif.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_25",
+      "term": "DFP",
+      "definition": "Déficit fonctionnel permanent : séquelles définitives évaluées après consolidation.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Différent du déficit fonctionnel temporaire.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_024",
+      "flashcard": {
+        "front": "Que signifie « DFP » ?",
+        "answers": [
+          "Déficit fonctionnel permanent : séquelles définitives évaluées après consolidation."
+        ],
+        "explanation": "Différent du déficit fonctionnel temporaire.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_26",
+      "term": "DFT",
+      "definition": "Déficit fonctionnel temporaire : limitations de la vie quotidienne pendant une période donnée.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Différent du DFP.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_024",
+      "flashcard": {
+        "front": "Que signifie « DFT » ?",
+        "answers": [
+          "Déficit fonctionnel temporaire : limitations de la vie quotidienne pendant une période donnée."
+        ],
+        "explanation": "Différent du DFP.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_27",
+      "term": "Infection nosocomiale",
+      "definition": "Infection contractée à l'occasion d'une prise en charge, selon les critères applicables.",
+      "etymologie": "Nosocomial : du grec nosokomeion, lieu de soins.",
+      "distinction": "Ne prouve pas automatiquement une faute de l'IDE.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_032",
+      "flashcard": {
+        "front": "Que signifie « Infection nosocomiale » ?",
+        "answers": [
+          "Infection contractée à l'occasion d'une prise en charge, selon les critères applicables."
+        ],
+        "explanation": "Ne prouve pas automatiquement une faute de l'IDE.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_28",
+      "term": "Cause étrangère",
+      "definition": "Événement extérieur pouvant exclure une responsabilité dans certaines conditions strictes.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Condition d'exonération à apprécier rigoureusement.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_030",
+      "flashcard": {
+        "front": "Que signifie « Cause étrangère » ?",
+        "answers": [
+          "Événement extérieur pouvant exclure une responsabilité dans certaines conditions strictes."
+        ],
+        "explanation": "Condition d'exonération à apprécier rigoureusement.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_29",
+      "term": "Solidarité nationale",
+      "definition": "Régime collectif de réparation des dommages relevant des textes spéciaux.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Ne constitue pas une peine pénale.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_027",
+      "flashcard": {
+        "front": "Que signifie « Solidarité nationale » ?",
+        "answers": [
+          "Régime collectif de réparation des dommages relevant des textes spéciaux."
+        ],
+        "explanation": "Ne constitue pas une peine pénale.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_30",
+      "term": "ONIAM",
+      "definition": "Office national d'indemnisation des accidents médicaux, affections iatrogènes et infections nosocomiales.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "À distinguer de la CCI.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_033",
+      "flashcard": {
+        "front": "Que signifie « ONIAM » ?",
+        "answers": [
+          "Office national d'indemnisation des accidents médicaux, affections iatrogènes et infections nosocomiales."
+        ],
+        "explanation": "À distinguer de la CCI.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_31",
+      "term": "CCI",
+      "definition": "Commission de conciliation et d'indemnisation ; donne notamment des avis sur les demandes amiables.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "N'est ni tribunal ni organisme d'indemnisation.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_033",
+      "flashcard": {
+        "front": "Que signifie « CCI » ?",
+        "answers": [
+          "Commission de conciliation et d'indemnisation ; donne notamment des avis sur les demandes amiables."
+        ],
+        "explanation": "N'est ni tribunal ni organisme d'indemnisation.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_32",
+      "term": "Assureur RCP",
+      "definition": "Organisme garantissant, selon le contrat et le régime, les risques de responsabilité professionnelle.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Les garanties sont limitées par le contrat et la loi.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_014",
+      "flashcard": {
+        "front": "Que signifie « Assureur RCP » ?",
+        "answers": [
+          "Organisme garantissant, selon le contrat et le régime, les risques de responsabilité professionnelle."
+        ],
+        "explanation": "Les garanties sont limitées par le contrat et la loi.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_33",
+      "term": "Faute caractérisée",
+      "definition": "En pénal, faute qualifiée exposant autrui à un risque d'une particulière gravité non ignoré.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Notion spécifique de responsabilité pénale indirecte.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_039",
+      "flashcard": {
+        "front": "Que signifie « Faute caractérisée » ?",
+        "answers": [
+          "En pénal, faute qualifiée exposant autrui à un risque d'une particulière gravité non ignoré."
+        ],
+        "explanation": "Notion spécifique de responsabilité pénale indirecte.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_34",
+      "term": "Secret professionnel",
+      "definition": "Obligation légale protégeant les informations obtenues dans le cadre professionnel.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Reste applicable après la prise en charge.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_041",
+      "flashcard": {
+        "front": "Que signifie « Secret professionnel » ?",
+        "answers": [
+          "Obligation légale protégeant les informations obtenues dans le cadre professionnel."
+        ],
+        "explanation": "Reste applicable après la prise en charge.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_35",
+      "term": "Secret partagé",
+      "definition": "Échange d'informations autorisé dans les limites légales et strictement nécessaires aux soins.",
+      "etymologie": "Terme du vocabulaire juridique ou de la pratique infirmière.",
+      "distinction": "Le dossier n'est jamais accessible sans motif.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_042",
+      "flashcard": {
+        "front": "Que signifie « Secret partagé » ?",
+        "answers": [
+          "Échange d'informations autorisé dans les limites légales et strictement nécessaires aux soins."
+        ],
+        "explanation": "Le dossier n'est jamais accessible sans motif.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
+    },
+    {
+      "id": "a21_resp_p01_vocab_36",
+      "term": "Code de déontologie",
+      "definition": "Règles professionnelles obligatoires pour l'infirmier, notamment respect, indépendance et secret.",
+      "etymologie": "Déontologie : du grec deon (devoir) et logos (étude).",
+      "distinction": "S'applique quel que soit le mode d'exercice.",
+      "theme": "Responsabilité et exercice professionnel infirmier",
+      "courseIds": [
+        "responsabilite_exercice_professionnel"
+      ],
+      "qcmQuestionId": "a21_resp_p01_041",
+      "flashcard": {
+        "front": "Que signifie « Code de déontologie » ?",
+        "answers": [
+          "Règles professionnelles obligatoires pour l'infirmier, notamment respect, indépendance et secret."
+        ],
+        "explanation": "S'applique quel que soit le mode d'exercice.",
+        "kind": "Vocabulaire"
+      },
+      "sourceType": "revision_captures"
     }
   ]
 }

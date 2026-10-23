@@ -24,6 +24,7 @@ export function publicationBundle(courseId,delivery,data){
   vocabulary:sortById((data.vocabulary||[]).filter(x=>x.courseIds?.includes(courseId))),
   scripts:delivery.vocalScripts||[],
   packFormat:delivery.packFormat||'legacy',
+  ...(delivery.packFormat==='hybrid_v1'?{hybridMetadata:{discipline:delivery.discipline,sourceBasis:delivery.sourceBasis,hybridCoverage:delivery.hybridCoverage,hybridVisualReview:delivery.hybridVisualReview,lexicon:delivery.lexicon,schematics:delivery.schematics,embeddedFigureCount:delivery.embeddedFigureCount}}:{}),
   completeInfographicAudit:delivery.packFormat==='lean_v1'?delivery.infographicSheetVisualAudit:null,
   dualSheetCoverage:delivery.packFormat==='lean_v1'?delivery.dualSheetCoverage:null,
   visualAudit:delivery.visualAudit,

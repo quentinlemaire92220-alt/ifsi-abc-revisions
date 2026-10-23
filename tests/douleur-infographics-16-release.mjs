@@ -8,7 +8,9 @@ const course=json('course-registry-v741.json'),infographics=json('infographics.j
  delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
  meta=json('build-meta.json'),qcm=json('qextra-51.txt');
 assert.equal(course.version,'8.30.118');
-assert.equal(course.courses.length,50);
+const audit=json('resource-audit-v821.json');
+assert.ok(course.courses.length>=50,'Les 50 cours historiques doivent être préservés');
+assert.equal(course.courses.length,audit.expectedTotals.courses,'Effectif actuel différent du snapshot audité');
 assert.equal(meta.version,course.version);
 assert.equal(meta.build,'8418');
 const original=course.courses.find(c=>c.id==='douleur');

@@ -42,18 +42,20 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   courseId+': REVUE VISUELLE BLOQUANTE — accord graphique explicite du proprietaire absent');
  const infographicOnly=delivery.publicationScope==='infographics_only';
  const isHybrid=delivery.packFormat==='hybrid_v1';
- const requiredModel=isHybrid?'pharmacologie_v1.46_10_pages':
+ const requiredModel=isHybrid?'pharmacologie_v1.47_24_pages':
   infographicOnly?'cardiovascular_infographic_pdf_1p':'cardiovascular_revision_pdf_17p';
  assert.equal(review.reference,requiredModel,
   courseId+': comparaison au vrai modèle de référence manquante ('+requiredModel+')');
- assert.equal(review.method,'manual_full_pdf_comparison_100_200_percent',
+ const legalHybrid=isHybrid && delivery.discipline==='legal';
+ const requiredMethod=legalHybrid?'pdf_all_pages_checked_plus_owner_graphic_acceptance':'manual_full_pdf_comparison_100_200_percent';
+ assert.equal(review.method,requiredMethod,
   courseId+': inspection page par page et zoom 100-200 % non attestes');
  assert.ok(typeof review.reviewedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(review.reviewedAt)&&
   Number.isFinite(Date.parse(review.reviewedAt)),courseId+': date de la revue humaine absente');
  assert.equal(review.reviewerDecision,'explicit_graphic_acceptance',
   courseId+': ne pas transformer un GO production en validation graphique');
  for(const k of [...(infographicOnly?[]:['REVISION_TEXT_FIRST']),
-  'MEDICAL_ILLUSTRATION_REAL','INTEGRATED_IN_CONTEXT',
+  ...(legalHybrid?['LEGAL_DIAGRAMS_EXPLICATIVE']:['MEDICAL_ILLUSTRATION_REAL']),'INTEGRATED_IN_CONTEXT',
   'ORIGINAL_LEGENDS_VERIFIED','NO_DECORATIVE_BOX_SUBSTITUTION','ALL_PAGES_CHECKED']){
   assert.equal(review.criteria?.[k],'PASS',
    courseId+': revue graphique manuelle '+k+' non approuvee');

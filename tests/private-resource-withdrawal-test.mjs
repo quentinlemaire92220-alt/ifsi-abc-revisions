@@ -69,9 +69,16 @@ if(approvedUpdates.size){
   {env:{...process.env,IFSI_BASE_SHA:base},maxBuffer:32*1024*1024,stdio:'pipe'});
 }
 
-assert.equal(oldReg.courses.length,50);
-assert.equal(currentReg.courses.length,50);
-const registryForWithdrawal=clone(currentReg.courses);
+assert.equal(oldReg.courses.length,50,'Snapshot historique P0 : 50 cours avant ajout');
+const historicIds=new Set(oldReg.courses.map(c=>c.id));
+assert.equal(new Set(currentReg.courses.map(c=>c.id)).size,currentReg.courses.length,'Cours dupliques dans le registre');
+const newCourses=currentReg.courses.filter(c=>!historicIds.has(c.id));
+assert.equal(currentReg.courses.length,oldReg.courses.length+newCourses.length,'Cours historique supprime');
+for(const course of newCourses){
+ assert.ok(approvedUpdates.has(course.id),'Nouveau cours sans validation package : '+course.id);
+ assert.ok(currentMan.courses.some(c=>c.courseId===course.id),'Nouveau cours sans manifeste : '+course.id);
+}
+const registryForWithdrawal=clone(currentReg.courses.filter(c=>historicIds.has(c.id)));
 for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  const oldCourse=oldReg.courses.find(c=>c.id===course.id);
  assert.ok(oldCourse,'Complément sans cours historique');
@@ -85,7 +92,7 @@ assert.equal(currentReg.version,disk('build-meta.json').version,'Version du regi
 assert.ok([0,10].includes(removed),'Retrait initial ou état déjà expurgé attendu');
 const preservedDocumentCount=oldReg.courses.reduce((n,c)=>n+publicDocuments(c).length,0);
 const addedDocumentCount=currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(d=>
- !publicDocuments(oldReg.courses.find(o=>o.id===c.id)).some(o=>isDeepStrictEqual(o,d))).length,0);
+ !publicDocuments(oldReg.courses.find(o=>o.id===c.id)||{}).some(o=>isDeepStrictEqual(o,d))).length,0);
 assert.equal(currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).length,0),preservedDocumentCount+addedDocumentCount);
 assert.ok(currentReg.courses.every(c=>(c.additionalDocuments||[]).every(d=>!isScriptWorkItem(d))),
  'Scripts encore dans la liste publique');
@@ -104,6 +111,12 @@ for(const delivery of expectedMan.courses){
 assert.ok([0,20].includes(removedScripts),'Retrait initial ou état déjà expurgé attendu');
 assert.ok([0,14].includes(removedFolders),'Retrait initial ou état déjà expurgé attendu');
 const actualMan=clone(currentMan);
+const newDeliveryIds=new Set(currentMan.courses.filter(c=>!oldMan.courses.some(o=>o.courseId===c.courseId)).map(c=>c.courseId));
+for(const id of newDeliveryIds){
+ assert.ok(approvedUpdates.has(id),'Lot de cours ajoute sans approbation : '+id);
+ assert.ok(newCourses.some(c=>c.id===id),'Lot nouveau orphelin : '+id);
+}
+actualMan.courses=actualMan.courses.filter(c=>!newDeliveryIds.has(c.courseId));
 const sheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json'));
 for(const c of actualMan.courses){
  const previous=expectedMan.courses.find(x=>x.courseId===c.courseId);
@@ -121,7 +134,7 @@ for(const c of actualMan.courses){
 }
 assert.deepEqual(actualMan,expectedMan,
  'Manifeste : seule la révocation des pointeurs de travail, et les comptes sourcés, sont permises');
-assert.equal(currentMan.courses.length,oldMan.courses.length,'Livraison supprimée');
+assert.equal(currentMan.courses.length,oldMan.courses.length+newDeliveryIds.size,'Livraison historique supprimée ou nouvelle livraison orpheline');
 for(const c of currentMan.courses){
  assert.equal(c.vocalScripts,undefined,'Scripts privés présents dans le manifeste');
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,'Dossier interne présent dans le manifeste');
@@ -173,7 +186,7 @@ for(const mutate of [
  assert.equal(isApprovedPrivateReferenceWithdrawal('demo',delivery,bad,oldBundle,
    publicationBundle('demo',bad,newData)),false,'Modification de manifeste non autorisée acceptée');
 }
-assert.equal(isDeepStrictEqual(oldMan.courses.map(x=>x.courseId),currentMan.courses.map(x=>x.courseId)),true);
+assert.equal(isDeepStrictEqual(oldMan.courses.map(x=>x.courseId),currentMan.courses.filter(x=>!newDeliveryIds.has(x.courseId)).map(x=>x.courseId)),true);
 
 // Cas séparé : un ajout approuvé ne devient pas une révocation pure. L'accord
 // absent, le document privé et l'altération d'une ancienne empreinte restent refusés.
@@ -197,4 +210,4 @@ for(const mutate of [
 }
 const missingApproval=clone(approvedDelivery);missingApproval.publicationApproval.status='pending';
 assert.throws(()=>validateChangedDeliveries({courses:[updatedDelivery]},{courses:[missingApproval]},newData,approvedData));
-console.log(`PASS P0: 50 cours, ${preservedDocumentCount} documents historiques conservés, ${addedDocumentCount} ajouts approuvés ; zéro pointeur privé et retrait pur toujours strict.`);
+console.log(`PASS P0: ${oldReg.courses.length} cours historiques conservés, ${newCourses.length} nouveau(x) avec approbation, ${preservedDocumentCount} documents historiques, ${addedDocumentCount} ajouts autorisés ; zéro pointeur privé et retrait pur strict.`);

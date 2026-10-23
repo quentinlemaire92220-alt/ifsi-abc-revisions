@@ -56,13 +56,13 @@ assert.throws(()=>validateVisualOwnerReview('douleur',withBoards,data),/planche 
 withBoards.visualOwnerReview.reviewedBoardSha256s={plate_01:h};
 assert.doesNotThrow(()=>validateVisualOwnerReview('douleur',withBoards,data));
 const hybrid={...reviewed,packFormat:'hybrid_v1',infographicSheetResourceId:undefined,
- infographicResourceIds:[],visualOwnerReview:{...review,reference:'pharmacologie_v1.46_10_pages'}};
+ infographicResourceIds:[],visualOwnerReview:{...review,reference:'pharmacologie_v1.47_24_pages'}};
 assert.doesNotThrow(()=>validateVisualOwnerReview('douleur',hybrid,data),
  'La fiche hybride comparee au modele Pharmacologie doit etre admise');
 assert.equal(requireVisualReviewIfChanged('douleur',null,hybrid,data,data),true);
 assert.throws(()=>validateVisualOwnerReview('douleur',{
  ...hybrid,visualOwnerReview:{...hybrid.visualOwnerReview,reference:'cardiovascular_revision_pdf_17p'}
-},data),/pharmacologie_v1.46_10_pages/,'Un ancien modele ne valide pas un nouveau pack hybride');
+},data),/pharmacologie_v1.47_24_pages/,'Un ancien modele ne valide pas un nouveau pack hybride');
 assert.throws(()=>validateVisualOwnerReview('douleur',{
  ...hybrid,visualOwnerReview:{...hybrid.visualOwnerReview,reviewerDecision:'assistant_self_approved'}
 },data),/GO production/,'Le controle hybride exige toujours un accord du proprietaire');

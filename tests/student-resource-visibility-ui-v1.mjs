@@ -17,7 +17,9 @@ const visible=runInNewContext(source.slice(start,end)+'\nstudentVisibleDocument7
 assert.equal(typeof visible,'function');
 assert.ok(source.includes("x.category!=='anatomy'&&studentVisibleDocument74(x)"),'Filtre non branché sur Documents du cours');
 assert.ok(source.includes('const parts=uniqueSupportParts74(url,'),'Sous-cours non dédupliqués');
-assert.equal(registry.courses.length,50,'Ne pas perdre de cours');
+assert.ok(registry.courses.length>=50,'Les cours historiques ne doivent pas disparaitre');
+const audited=JSON.parse(readFileSync(resolve(root,'resource-audit-v821.json'),'utf8'));
+assert.equal(registry.courses.length,audited.expectedTotals.courses,'Total des cours non conforme a l’inventaire audite');
 const docs=registry.courses.flatMap(course=>(course.additionalDocuments||[]).map(doc=>({...doc,courseId:course.id})));
 const blocked=docs.filter(doc=>!visible(doc));
 assert.equal(blocked.length,0,'Aucun script de travail ne doit rester dans le registre public');
@@ -48,4 +50,4 @@ assert.equal(visible({label:'Compte-rendu de stage',visibility:'private'}),false
 assert.equal(visible({label:'Fiche de révision',category:'internal'}),false);
 assert.equal(visible({label:'Transcription orale',category:'cours'}),false);
 assert.equal(visible({label:'Vocal MP3 — 6 épisodes',category:'audio'}),true);
-console.log(`PASS : 50 cours, zéro lien privé, ${historical.length} documents conservés et ${additions.length} ajouts approuvés ; UI refuse la réinjection. Contrôle ACL Drive séparé requis.`);
+console.log(`PASS : ${registry.courses.length} cours, zéro lien privé, ${historical.length} documents conservés et ${additions.length} ajouts approuvés ; UI refuse la réinjection. Contrôle ACL Drive séparé requis.`);
