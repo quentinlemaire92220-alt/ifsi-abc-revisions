@@ -1474,19 +1474,20 @@
     "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
     "theme": "Cas transversaux",
     "difficulty": "medium",
-    "question": "Concernant le secret, quelles précisions de source sont exactes pour ce lot ?",
+    "question": "Concernant le secret professionnel infirmier, quelles propositions sont exactes ?",
     "choices": [
-      "Les transcriptions le mentionnent mais ne développent pas un chapitre complet",
-      "Le cours comprend 40 captures consacrées au secret",
-      "Le secret peut être écarté par simple autorisation d’un collègue",
-      "La déontologie ne s’applique pas à l’IDE",
-      "Un complément réglementaire a été vérifié dans le CSP"
+      "Il protège les informations connues dans le cadre de la prise en charge.",
+      "Il autorise l'accès au dossier de n'importe quel professionnel de santé.",
+      "Le partage entre professionnels participant aux soins doit se limiter aux informations strictement nécessaires.",
+      "Il disparaît automatiquement dès la fin de la prise en charge.",
+      "Le seul statut de professionnel de santé ne donne pas accès librement au dossier d'un patient."
     ],
     "answers": [
       0,
+      2,
       4
     ],
-    "explanation": "Ce lot a 48 captures surtout consacrées à l’exercice et à la responsabilité. Le secret est développé comme complément externe et non comme priorité déclarée de l’enseignant.",
+    "explanation": "Le secret protège les informations concernant le patient. Selon l'article L.1110-4 du CSP, l'échange ou le partage entre professionnels est limité aux informations nécessaires, dans les conditions légales ; un accès sans justification est interdit.",
     "flashcards": []
   }
 ]
