@@ -12,7 +12,16 @@ assert.equal(deck.filter(c=>c.courseId==='droits_patients'&&!String(c.id).starts
 assert.equal(bank.flatMap(q=>q.flashcards||[]).length,24);
 assert.deepEqual(read('qextra-55.txt'),old('qextra-55.txt'),'85 questions et cartes historiques préservées');
 assert.deepEqual(read('vocals.json'),old('vocals.json'),'Aucun MP3 modifié');
-assert.deepEqual(read('vocabulaire-v1.json'),old('vocabulaire-v1.json'),'Lexique partagé préservé');
+const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
+const beforeCount=oldVocabulary.entries.length;
+assert.deepEqual({...newVocabulary,entries:newVocabulary.entries.slice(0,beforeCount)},oldVocabulary,
+ 'Le lexique historique doit rester inchangé, y compris dans son ordre');
+const addedVocabulary=newVocabulary.entries.slice(beforeCount);
+assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.length===1&&
+ e.courseIds[0]==='responsabilite_exercice_professionnel'),
+ 'Seuls les termes du nouveau cours juridique peuvent être ajoutés');
+assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
+ 'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
 for(const s of oldSheets)assert.deepEqual(sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url),s);
