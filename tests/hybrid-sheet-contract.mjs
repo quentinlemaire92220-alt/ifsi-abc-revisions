@@ -43,7 +43,13 @@ export function validateHybridDelivery(courseId, delivery, sheets, {requirePubli
  assert.equal(coverage.coveredEssential,coverage.expectedEssential,courseId+': notion essentielle manquante');
  assert.ok(typeof coverage.prioritySourceReference==='string' && coverage.prioritySourceReference.trim(),
   courseId+': provenance des priorités non documentée');
- assert.equal(coverage.medicalReview,'approved',courseId+': revue scientifique non approuvée');
+ if(delivery.discipline==='legal'){
+  assert.equal(coverage.legalReview,'documentary_review_completed',courseId+': revue juridique documentaire absente');
+  assert.equal(coverage.independentLegalReview,'not_attested',courseId+': indépendance de la revue juridique non documentée');
+  assert.equal(coverage.essentialTopics?.length,coverage.expectedEssential,courseId+': inventaire juridique non traçable');
+ }else{
+  assert.equal(coverage.medicalReview,'approved',courseId+': revue scientifique non approuvée');
+ }
  assert.equal(coverage.readabilityReview,'approved',courseId+': lisibilité non approuvée');
  const model=delivery.hybridVisualReview;
  assert.equal(model?.status,'approved',courseId+': modèle pharmacologie non comparé');

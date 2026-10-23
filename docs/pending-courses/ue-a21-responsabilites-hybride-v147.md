@@ -1,31 +1,15 @@
 # UE A2.1 S1 — Responsabilité, exercice professionnel, confidentialité et secret professionnel
 
-**Statut : ressources placées en quarantaine technique — aucun cours activé dans le registre, aucune banque QCM chargée dans l'application, aucune fiche étudiante publiée.**
+Statut : **publication partielle sur sources provisoires**, sous réserve du support officiel natif.
 
-## Ressources du lot
-
-- Une seule fiche hybride v1.47, **27 pages A4**, huit infographies juridiques vectorielles intégrées, 36 définitions finales sélectionnables.
-- Banque `qextra-61.txt` : **46 QCM** à cinq propositions, une à trois bonnes réponses, corrigés explicatifs, niveaux et thèmes.
-- Flashcards dans cette banque : **42 cartes autonomes** avec face, réponse et explication.
-- Un PDF d'entraînement QCM séparé (distinct de la fiche de révision).
-- Les trois fichiers ont été déposés dans l'espace de travail Drive **privé**, puis la fiche a été retéléchargée avec empreinte vérifiée ; ne pas référencer des liens de travail privés dans le registre public.
-- Empreinte PDF maître vérifiée : `791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707`.
-
-## Sources et réserves
-
-- 48 captures de cours, deux transcriptions automatiques PT01/PT02.
-- Support natif officiel intégral non disponible.
-- Le secret professionnel n'est abordé que de manière partielle par l'enseignant : le complément réglementaire doit rester étiqueté en tant que tel.
-- **Relecture juridique/pédagogique humaine et acceptation graphique par le propriétaire non attestées.**
-- `officialSupport=false`, `sourceStatus=provisional_captures` — ne pas déclarer un support officiel inexistant.
-
-## Publication encore bloquée
-
-1. Contrôler les **46 QCM un par un** ainsi que les 42 flashcards (cohérence pédagogique/juridique).
-2. Obtenir validation graphique explicite de la version PDF 27 pages ; ne pas la déduire d'un simple GO d'intégration.
-3. Livrer la copie approuvée vers l'espace Drive étudiant, vérifier permissions et empreinte par téléchargement authentifié.
-4. Ajouter la fiche publique unique aux manifestes `sheets-3.json` et `docs/course-deliveries.json` avec preuves de publication et revue réelles, conformément à `hybrid_v1`.
-5. Corriger le décalage technique du modèle de revue : `tests/visual-owner-review-gate.mjs` demande encore `pharmacologie_v1.46_10_pages`, tandis que `tests/hybrid-sheet-contract.mjs` exige `pharmacologie_v1.47_24_pages`.
-6. Exécuter les TNR, attendre la CI verte et vérifier l'application déployée.
-
-**Ne jamais inventer de preuve d'expertise, de validation humaine, de SHA Drive ou d'autorisation. Ne jamais exposer les transcriptions privées sur GitHub.**
+- Fiche hybride 27 pages, huit infographies explicatives intégrées et 36 définitions en texte sélectionnable.
+- 46 QCM corrigés dans `qextra-61.txt`; 42 flashcards adossées aux questions ; 36 termes du lexique répertoriés dans `vocabulaire-v1.json`.
+- Rendu graphique de cette fiche **accepté explicitement par le propriétaire le 23/10/2026**. Les schémas juridiques ne nécessitent pas de grandes planches médicales anatomiques.
+- Support natif absent : **48 captures et PT01/PT02**, fiche étiquetée PROVISOIRE. Le secret professionnel comprend un complément réglementaire externe.
+- Références vérifiées : CSP R.4311-6 et R.4311-7 version du 30 juin 2026 ; L.1142-1, L.1142-1-1, L.1110-4 ; droit pénal 121-1, 121-3.
+- Revue juridique documentaire réalisée par assistant ; **expertise juridique humaine indépendante NON ATTESTÉE**.
+- PDF étudiant : https://drive.google.com/file/d/1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB/view (SHA256 791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707).
+- 46 QCM : https://drive.google.com/file/d/1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN/view (SHA256 b589bf950b88069ede12174632abce4c55f7672c1fee45aae6a97d52522f6b8a).
+- 42 flashcards CSV : https://drive.google.com/file/d/15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-/view (SHA256 a46927ae40c99b7f437b6f98f02347686561ad4ca2e7327ca3899640d40fde63).
+- MP3 absents : dossier réservé, ne pas afficher comme disponible.
+- TNR et contrôle du site déployé requis après activation et fusion.

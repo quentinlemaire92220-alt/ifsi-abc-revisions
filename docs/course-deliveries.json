@@ -1782,6 +1782,150 @@
           "bundleSha256": "5488b2ad812ba573de4a138e903b46a1c8785e80a232d6a2af4146fa1fcb8725"
         }
       }
+    },
+    {
+      "courseId": "responsabilite_exercice_professionnel",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "packFormat": "hybrid_v1",
+      "discipline": "legal",
+      "sourceBasis": {
+        "kind": "course_captures",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "reviewedCaptureCount": 48,
+        "transcriptCount": 2
+      },
+      "driveFolderId": "1A8_Hvcjql3NwEyrwVqyyW6d9O5ciToXo",
+      "folders": {
+        "99": "1gm-hUTSmM1Oyesonqv3UgmW1tFSpTTM0",
+        "01": "1SAFBxnY2CsrSj4pvlgJWDmbd1LsmtvB4",
+        "02": "1n4SO-Q_BrJqHl2xQLa46KbTLJNyCTAb5",
+        "03": "1bzf3bbLnTMd7CZdmz2Hilxj8RSJceKtK",
+        "04": "12-v63UCOA7wjSssezEO3SeeKFK5_Xx9m",
+        "05": "1_gGQ6VEyU3xJ4WohSdW9PAGptjTsypTU",
+        "06": "1uCLyBmFQhrLPYSaLGcP1grRCklTSrCFg",
+        "07": "1E3200-HGG3-E-SP92xx6iK2qZhWU2bDm",
+        "08": "1AFFzvc0tmh-MaSowQNGb8P9Crrp5YfF0"
+      },
+      "sheetResourceId": "responsabilite_exercice_professionnel_hybride_p01",
+      "sheetResourceIds": [
+        "responsabilite_exercice_professionnel_hybride_p01"
+      ],
+      "schematics": "embedded_only",
+      "embeddedFigureCount": 8,
+      "qcmDriveId": "1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN",
+      "qcmBank": "qextra-61.txt",
+      "qcmCount": 46,
+      "flashcardCount": 42,
+      "flashcardDriveId": "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-",
+      "vocabularyCount": 36,
+      "vocals": [],
+      "scriptsPreparedCount": 0,
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "native_support_unavailable",
+          "detail": "Cours rapproché de 48 captures et de deux transcriptions ; PDF officiel natif absent."
+        },
+        {
+          "resource": "secret",
+          "reason": "teacher_content_partial",
+          "detail": "Volet secret traité comme complément réglementaire, et non comme priorité explicitement enseignée."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3",
+          "detail": "Dossier audio vide créé, aucun MP3 supposé existant."
+        }
+      ],
+      "artifactSha256s": {
+        "1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB": "791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707",
+        "1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN": "b589bf950b88069ede12174632abce4c55f7672c1fee45aae6a97d52522f6b8a",
+        "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-": "a46927ae40c99b7f437b6f98f02347686561ad4ca2e7327ca3899640d40fde63"
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707",
+        "expectedCount": 8,
+        "checkedCount": 8,
+        "pageCount": 27,
+        "pageSize": "A4"
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707",
+        "expectedCount": 8,
+        "checkedCount": 8,
+        "pageCount": 27
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "pharmacologie_v1.47_24_pages",
+        "method": "pdf_all_pages_checked_plus_owner_graphic_acceptance",
+        "reviewedAt": "2026-10-23T16:21:49.001Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "REVISION_TEXT_FIRST": "PASS",
+          "LEGAL_DIAGRAMS_EXPLICATIVE": "PASS",
+          "INTEGRATED_IN_CONTEXT": "PASS",
+          "ORIGINAL_LEGENDS_VERIFIED": "PASS",
+          "NO_DECORATIVE_BOX_SUBSTITUTION": "PASS",
+          "ALL_PAGES_CHECKED": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "responsabilite_exercice_professionnel_hybride_p01": "791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707"
+        },
+        "reviewedImageSha256s": {},
+        "reviewNotes": "Accord graphique explicite du propriétaire sur la fiche hybride de 27 pages, rendu juridique adapté sans grands schémas anatomiques."
+      },
+      "hybridCoverage": {
+        "expectedEssential": 16,
+        "coveredEssential": 16,
+        "essentialTopics": [
+          "Missions infirmières et réforme 2025–2026",
+          "Rôle propre et raisonnement clinique",
+          "Collaboration IDE–AS/AP/AES",
+          "Prescription et protocoles",
+          "Gestes conservatoires et urgence",
+          "Modes d'exercice libéral, privé et public",
+          "Responsabilités civile, administrative, pénale et déontologique",
+          "Faute, dommage et causalité",
+          "Faute technique, d'humanisme, perte de chance",
+          "Consolidation et postes de préjudice",
+          "Accident médical non fautif et conditions ONIAM",
+          "Seuil de gravité >24 % et conditions alternatives",
+          "Infection nosocomiale et régime >25 % ou décès",
+          "CCI, assureur et parcours amiable",
+          "Responsabilité pénale et auteur indirect",
+          "Secret professionnel et partage légal"
+        ],
+        "prioritySourceReference": "Captures 01–48 + transcriptions PT01 et PT02. Priorités orales sur rôle propre (PT01 ~00:21), prescription écrite (PT01 ~00:31), responsabilités (PT02). Secret : complément de droit en vigueur.",
+        "legalReview": "documentary_review_completed",
+        "independentLegalReview": "not_attested",
+        "readabilityReview": "approved"
+      },
+      "hybridVisualReview": {
+        "status": "approved",
+        "reference": "pharmacologie_v1.47_24_pages",
+        "pagesChecked": 27
+      },
+      "lexicon": {
+        "termCount": 36,
+        "textSelectable": true,
+        "checked": true,
+        "sourceSha256": "88a3f7a83a4f8d986c0a8217779da3317b73179ca02135645cca463c23dcc252"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-23T16:21:49.001Z",
+        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
     }
   ],
   "supplementalResourceApprovals": [

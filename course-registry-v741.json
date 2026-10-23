@@ -954,6 +954,45 @@
           "url": "https://drive.google.com/file/d/1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw/view"
         }
       ]
+    },
+    {
+      "id": "responsabilite_exercice_professionnel",
+      "label": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+      "aliases": [
+        "Responsabilité et exercice professionnel",
+        "Responsabilités infirmières",
+        "Secret professionnel et confidentialité",
+        "UE A2.1 S1 — Responsabilité"
+      ],
+      "domain": "A",
+      "ue": "A2",
+      "teachingUnit": "A2.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": false,
+      "sourceStatus": "provisional_captures",
+      "officialSupportCoverage": "absent_native",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN/view",
+      "qcmPdfQuestionCount": 46,
+      "flashcardTarget": 42,
+      "authoredFlashcards": true,
+      "audioStatus": "awaiting_mp3",
+      "audioCount": 0,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1_gGQ6VEyU3xJ4WohSdW9PAGptjTsypTU",
+      "additionalDocuments": [
+        {
+          "label": "Fiche hybride v1.47 — 27 pages (provisoire)",
+          "url": "https://drive.google.com/file/d/1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB/view",
+          "type": "revision_hybride"
+        },
+        {
+          "label": "Flashcards — 42 cartes (CSV)",
+          "url": "https://drive.google.com/file/d/15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-/view",
+          "type": "flashcards",
+          "cardCount": 42
+        }
+      ],
+      "sourceNote": "Support natif non disponible ; 48 captures et transcriptions PT01/PT02, complément réglementaire sur le secret distinct des priorités de l'enseignant."
     }
   ],
   "auditBaseline": {
