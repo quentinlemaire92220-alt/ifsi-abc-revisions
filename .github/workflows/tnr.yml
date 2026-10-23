@@ -198,6 +198,9 @@ jobs:
       - name: Vérifier le planning S9 et la séparation des groupes A1/A2/B1/B2
         run: node tests/planning-week-09.mjs
 
+      - name: TNR planning S10 du 2 au 6 novembre
+        run: node tests/planning-week-10.mjs
+
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 
