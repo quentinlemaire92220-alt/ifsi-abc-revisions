@@ -1,3 +1,11 @@
+## PRIORITÉ COURANTE v1.47 — PACK UNIQUE ET MÉDIATHÈQUE (23/10/2026)
+
+Pour tout nouveau cours, la charte privée v1.47 et `docs/HYBRID_REVISION_V146.md` **priment** sur les consignes historiques de deux PDF ci-dessous : produire **une seule fiche hybride infographiée**, sans second cours infographié systématique. QCM, flashcards et vocaux inchangés ; préserver les productions antérieures.
+
+**Avant de générer une illustration :** chercher dans la médiathèque privée par notion/organe/mécanisme/cours → réutiliser une image validée et autorisée → adapter puis revalider → créer si aucune image appropriée → indexer toute variante/création dans le registre privé avec source, version, notions et statut. Le statut `active` n'est pas une validation scientifique. Aucun fichier/lien privé dans le dépôt public. GO production privée ≠ GO publication, fusion ou déploiement.
+
+---
+
 ## RECTIFICATIF PRIORITAIRE — PILOTE ≠ LIVRABLE FINAL (20/10/2026)
 
 Le pilote « une page de chaque » sert exclusivement à valider la maquette graphique. Pour un VRAI cours, livrer **DEUX COURS COMPLETS** couvrant toutes les notions du support officiel : (1) fiche de révision textuelle complète avec schémas infographiés intégrés au besoin ; (2) **cours intégralement infographié MULTIPAGE**, sans plafond de pages et avec toutes les notions expliquées. Compléter par QCM A–E (1–3 bonnes réponses), flashcards et planches anatomiques si nécessaires. Modèles graphiques cardio/respiratoire. Aucun contenu ne doit être sacrifié pour tenir sur une page.
