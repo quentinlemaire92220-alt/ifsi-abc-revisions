@@ -42,7 +42,7 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   courseId+': REVUE VISUELLE BLOQUANTE — accord graphique explicite du proprietaire absent');
  const infographicOnly=delivery.publicationScope==='infographics_only';
  const isHybrid=delivery.packFormat==='hybrid_v1';
- const requiredModel=isHybrid?'pharmacologie_v1.46_10_pages':
+ const requiredModel=isHybrid?'pharmacologie_v1.47_24_pages':
   infographicOnly?'cardiovascular_infographic_pdf_1p':'cardiovascular_revision_pdf_17p';
  assert.equal(review.reference,requiredModel,
   courseId+': comparaison au vrai modèle de référence manquante ('+requiredModel+')');
