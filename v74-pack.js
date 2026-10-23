@@ -200,7 +200,7 @@ function renderCourses74(){
 function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
 
-function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.sheetFormat==='complete_infographic')return 'Fiche complète infographiée';if(x.sheetFormat==='classic')return 'Fiche de révision classique';return 'Fiche de révision'}
+function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.sheetFormat==='hybrid_infographic')return 'Fiche hybride infographiée'+(x.provisional?' · Provisoire':'');if(x.sheetFormat==='complete_infographic')return 'Fiche complète infographiée';if(x.sheetFormat==='classic')return 'Fiche de révision classique';return 'Fiche de révision'}
 function resourceCard74(x,type){
   const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
@@ -215,7 +215,7 @@ function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
   const d=courseData74(selectedCourse),vf=new Set(vocalState74().favorites||[]),mastery=d.rate??0;
   const labelOf=x=>String(x?.displayTitle||x?.label||x?.title||'');
-  const sheets=[...d.sheets].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
+  const sheets=[...d.sheets].sort((a,b)=>Number(!!b.primaryRevision)-Number(!!a.primaryRevision)||labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
   const driveUrl=u=>typeof u==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)?u:'';

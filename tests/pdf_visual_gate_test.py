@@ -30,7 +30,12 @@ def make_fixture(pdf, image=True):
     page = doc.new_page(width=595, height=842)
     page.insert_text((35, 80), "Le nephron - mecanisme", fontsize=20)
     page.insert_text((35, 120), "Rappel pedagogique sur le rein.", fontsize=12)
-    if image == "vector":
+    if image == "chart":
+        for y in (200, 250, 300):
+            page.draw_line((80, y), (510, y), color=(.2, .4, .7))
+        page.draw_rect(fitz.Rect(150, 240, 200, 300), fill=(.3, .7, .9))
+        page.draw_rect(fitz.Rect(350, 200, 400, 300), fill=(.6, .3, .8))
+    elif image == "vector":
         for k in range(6):
             page.draw_rect(fitz.Rect(80 + k*64, 200 + (k%2)*58,
                                     128 + k*64, 250 + (k%2)*58),
@@ -51,10 +56,12 @@ with tempfile.TemporaryDirectory() as temp:
     blank = d / "without_figure.pdf"
     vector = d / "vector.pdf"
     tiny = d / "tiny.pdf"
+    chart = d / "chart.pdf"
     make_fixture(good, True)
     make_fixture(blank, False)
     make_fixture(vector, "vector")
     make_fixture(tiny, "tiny")
+    make_fixture(chart, "chart")
     entry = {"id": "nephron_01", "source_ref": "Support officiel p. 3", "page": 1,
              "anchor": "Le nephron - mecanisme", "region": [.10, .20, .90, .55], "kind": "raster"}
     manifest = {"version": 1, "expected_pages": 1, "figures": [entry]}
@@ -63,6 +70,8 @@ with tempfile.TemporaryDirectory() as temp:
     check(vector, {**manifest, "figures": [dict(entry, kind="vector")]}, True,
           "Accepte une vraie infographie vectorielle")
     check(tiny, manifest, False, "Refuse une image étirée de trop faible résolution")
+    check(chart, {**manifest, "figures": [dict(entry, kind="vector")]}, True,
+          "Accepte les traits fins et rectangles d'un graphique vectoriel")
     check(good, {**manifest, "figures": [dict(entry, region=[.05, .72, .90, .92])]}, False,
           "Refuse une infographie située hors de sa section")
     check(good, {**manifest, "figures": [dict(entry, anchor="Terme introuvable")]}, False,

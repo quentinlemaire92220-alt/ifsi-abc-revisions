@@ -1,5 +1,7 @@
 # UE B3.3 S1 — Douleur — préparation technique de l'accès à la fiche hybride (22/10/2026)
 
+Note du 23/10 : les blocages et empreintes ci-dessous décrivent le candidat historique. Une nouvelle reprise de 32 pages a été examinée, corrigée puis validée par le propriétaire avec GO publication explicite. Sa livraison additive et ses limites sont décrites dans [la publication des deux fiches](REVISION_SHEETS_2026-10-23.md) ; aucun statut de revue médicale indépendante n'est inventé.
+
 **État : EN REVUE PRIVÉE — publication de la nouvelle fiche BLOQUÉE par le contrôle qualité, même avec GO de mise à jour de l'application.**
 
 ## Candidat privé identifié (NE PAS déposer dans GitHub public)

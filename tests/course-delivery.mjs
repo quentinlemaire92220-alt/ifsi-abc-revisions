@@ -6,6 +6,7 @@ import {validateLeanCourseDelivery,validateLeanPart} from './lean-course-contrac
 import {validateHybridDelivery,validateHybridPart} from './hybrid-sheet-contract.mjs';
 import {validateLeanQuestions,validateLeanFlashcards} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
+import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
@@ -16,6 +17,7 @@ const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs')
 validateAudioSupplements(manifest,{registry,vocals});
 const required=['01','02','03','04','05','06','07'];
 for(const c of manifest.courses){
+ validateRevisionSheetSupplement(c.courseId,c,{sheets});
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
  if(c.publicationScope==='infographics_only'){

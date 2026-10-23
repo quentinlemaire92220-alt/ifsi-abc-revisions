@@ -9,6 +9,7 @@ import {
  expectedPublicDeliveryAfterWithdrawal,isApprovedPrivateReferenceWithdrawal
 } from './private-resource-withdrawal-lib.mjs';
 import {publicationBundle,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
+import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=file=>JSON.parse(readFileSync(file,'utf8'));
@@ -25,7 +26,7 @@ assert.deepEqual(currentReg.courses,oldReg.courses.map(expectedPublicCourseAfter
 assert.deepEqual(Object.keys(currentReg),Object.keys(oldReg),'Structure du registre modifiée');
 assert.equal(currentReg.version,oldReg.version,'Version approuvée conservée');
 const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);
-assert.equal(removed,10,'Nombre connu des scripts privés modifié');
+assert.ok([0,10].includes(removed),'Retrait initial ou état déjà expurgé attendu');
 assert.equal(currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).length,0),23);
 assert.ok(currentReg.courses.every(c=>(c.additionalDocuments||[]).every(d=>!isScriptWorkItem(d))),
  'Scripts encore dans la liste publique');
@@ -41,9 +42,20 @@ for(const delivery of expectedMan.courses){
  Object.keys(delivery).forEach(k=>delete delivery[k]);
  Object.assign(delivery,updated);
 }
-assert.equal(removedScripts,20,'Nombre de scripts de travail du manifeste modifié');
-assert.equal(removedFolders,14,'Nombre de pointeurs de dossiers internes modifié');
-assert.deepEqual(currentMan,expectedMan,
+assert.ok([0,20].includes(removedScripts),'Retrait initial ou état déjà expurgé attendu');
+assert.ok([0,14].includes(removedFolders),'Retrait initial ou état déjà expurgé attendu');
+const actualMan=clone(currentMan);
+const sheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json'));
+for(const c of actualMan.courses){
+ const previous=expectedMan.courses.find(x=>x.courseId===c.courseId);
+ if(!isDeepStrictEqual(c.revisionSheetSupplement,previous.revisionSheetSupplement)){
+  validateRevisionSheetSupplement(c.courseId,c,{sheets});
+  // Autorisation additive propre à la fiche, contrôlée aussi par le garde-fou
+  // différentiel complet ; ne pas réécrire l'approbation historique.
+  delete c.revisionSheetSupplement;delete previous.revisionSheetSupplement;
+ }
+}
+assert.deepEqual(actualMan,expectedMan,
  'Manifeste : seule la révocation des pointeurs de travail, et les comptes sourcés, sont permises');
 assert.equal(currentMan.courses.length,oldMan.courses.length,'Livraison supprimée');
 for(const c of currentMan.courses){
@@ -98,4 +110,4 @@ for(const mutate of [
    publicationBundle('demo',bad,newData)),false,'Modification de manifeste non autorisée acceptée');
 }
 assert.equal(isDeepStrictEqual(oldMan.courses.map(x=>x.courseId),currentMan.courses.map(x=>x.courseId)),true);
-console.log('PASS P0: 50 cours, 23 documents élèves, 10 liens privés retirés, 20 scripts et 14 dossiers internes expurgés ; contenu/approbations intacts.');
+console.log('PASS P0: 50 cours et 23 documents élèves conservés ; retrait initial ou état déjà expurgé vérifié ; approbations historiques intactes.');
