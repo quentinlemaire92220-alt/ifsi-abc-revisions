@@ -8,7 +8,7 @@ const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-20';
+const UPDATED_AT='2026-10-23';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
@@ -136,7 +136,32 @@ const WEEKS=[
   {date:'2026-10-30',start:'13:30',end:'16:30',promo:'A',groups:['A2'],groupLabel:'Groupe A2',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S3',teacher:'POULAIN Muriel',site:'IFSI ABC'},
   {date:'2026-10-30',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE A2.1 S1',type:'TD',title:'Les piliers éthiques',room:'S11',teacher:'',site:'IFSI ABC'}
  ]}
-];
+ ,{id:'S10',label:'S10',start:'2026-11-02',end:'2026-11-07',range:'2 - 6 nov.',events:[
+  {"date":"2026-11-02","start":"08:30","end":"12:30","promo":"all","groupLabel":"Promo entière","ue":"UE B1.3 S1","type":"CM","title":"Diarrhées infectieuses, hygiène, précautions standards et complémentaires","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"","site":"FAC KB"},
+  {"date":"2026-11-02","start":"13:30","end":"17:30","promo":"all","groupLabel":"Promo entière","ue":"UE B2.1.1 S1","type":"CM","title":"Psychologie du développement","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"KHATIR Nathalie","site":"FAC KB"},
+  {"date":"2026-11-03","start":"09:00","end":"12:00","promo":"all","groupLabel":"Promo entière","ue":"UE B1.1 S1","type":"CM","title":"Les étapes de la vie","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"PETIT Vanessa","site":"FAC KB"},
+  {"date":"2026-11-03","start":"13:30","end":"17:30","promo":"all","groupLabel":"Promo entière","ue":"UE C1.1 S1","type":"CM","title":"Déterminants de santé","room":"","teacher":"NOVELLI Sophie","site":"Lieu à confirmer","detail":"La salle n'est pas renseignée pour ce créneau sur la photo."},
+  {"date":"2026-11-04","start":"09:00","end":"09:45","promo":"A","groupLabel":"Promo A","ue":"UE B2.1.1 S1","type":"TD","title":"Présentation de la validation B2.1.1 S1","room":"S10","teacher":"SOARES Sonia","site":"IFSI ABC"},
+  {"date":"2026-11-04","start":"09:00","end":"09:45","promo":"B","groupLabel":"Promo B","ue":"UE B2.1.1 S1","type":"TD","title":"Présentation de la validation B2.1.1 S1","room":"S11","teacher":"POULAIN Muriel","site":"IFSI ABC"},
+  {"date":"2026-11-04","start":"09:45","end":"12:30","promo":"all","groupLabel":"Selon affectation de groupe","ue":"UE B2.1.1 S1","type":"TD","title":"TD1 : Préparation du temps 1 / mécanismes de défenses et stratégies de coping (temps 1/2)","room":"Salle selon groupe (à confirmer)","teacher":"","site":"IFSI ABC","detail":"Salles indiquées sur la photo : informatique, S10, S11, S12, S13, S2, S3, TP1, TP4 et TP5. Correspondance groupes/salles non précisée."},
+  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 1/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S10","teacher":"DIETRICH Anne","site":"IFSI ABC"},
+  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 2/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S11","teacher":"LEBRE Stéphanie","site":"IFSI ABC"},
+  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 3/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S3","teacher":"POULAIN Muriel","site":"IFSI ABC"},
+  {"date":"2026-11-05","start":"09:00","end":"12:00","promo":"A","groupLabel":"Promo A","ue":"UE B3.1 S1","type":"TP","title":"Psychogestuelle","room":"S13 / S2 / S3 / TP4 / TP5 (selon groupe)","teacher":"DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia","site":"IFSI ABC","detail":"Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."},
+  {"date":"2026-11-05","start":"09:00","end":"10:00","promo":"B","groupLabel":"Promo B","ue":"UE 5.08 S1","type":"Asynchrone","title":"Réalisation des objectifs de stage","room":"Distanciel","teacher":"","site":"Distanciel"},
+  {"date":"2026-11-05","start":"10:00","end":"11:30","promo":"B","groupLabel":"Promo B","ue":"UE E3.1 S1","type":"TD","title":"Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)","room":"Site de Picpus (salle non indiquée)","teacher":"","site":"Lieu à confirmer"},
+  {"date":"2026-11-05","start":"13:00","end":"15:00","promo":"all","groupLabel":"Promo entière","ue":"UE B1.3 S1","type":"Asynchrone","title":"Mécanisme d’action des anti-infectieux (capsule sur E-campus)","room":"Distanciel","teacher":"","site":"Distanciel"},
+  {"date":"2026-11-05","start":"15:00","end":"17:00","promo":"all","groupLabel":"Promo entière","ue":"UE D4 S1","type":"Asynchrone","title":"Socle numérique en santé","room":"Distanciel","teacher":"","site":"Distanciel"},
+  {"date":"2026-11-06","start":"09:00","end":"10:00","promo":"A","groupLabel":"Promo A","ue":"UE 5.08 S1","type":"Asynchrone","title":"Réalisation des objectifs de stage","room":"Distanciel","teacher":"","site":"Distanciel"},
+  {"date":"2026-11-06","start":"09:00","end":"12:00","promo":"B","groupLabel":"Promo B","ue":"UE B3.1 S1","type":"TP","title":"Psychogestuelle","room":"S13 / S2 / S3 / TP4 / TP5 (selon groupe)","teacher":"DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia","site":"IFSI ABC","detail":"Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."},
+  {"date":"2026-11-06","start":"10:00","end":"11:30","promo":"A","groupLabel":"Promo A","ue":"UE E3.1 S1","type":"TD","title":"Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)","room":"Site de Picpus (salle non indiquée)","teacher":"","site":"Lieu à confirmer"},
+  {"date":"2026-11-06","start":"14:00","end":"16:00","promo":"A","groupLabel":"Promo A","ue":"UE B3.3 S1","type":"TD","title":"Douleurs chroniques chez les personnes âgées","room":"S10","teacher":"LEBRE Stéphanie","site":"IFSI ABC"},
+  {"date":"2026-11-06","start":"14:00","end":"16:00","promo":"B","groupLabel":"Promo B","ue":"UE B3.3 S1","type":"TD","title":"Douleurs chroniques chez les personnes âgées","room":"S11","teacher":"SOARES Sonia","site":"IFSI ABC"},
+  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 1/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S10","teacher":"DELABARRE Isabelle","site":"IFSI ABC"},
+  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 2/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S11","teacher":"DIETRICH Anne","site":"IFSI ABC"},
+  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 3/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S3","teacher":"POULAIN Muriel","site":"IFSI ABC"}
+ ]}
+]; 
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
 function weekForDate(date){return WEEKS.find(w=>date>=w.start&&date<=w.end)||null}
@@ -257,6 +282,7 @@ function changesCard(){
 }
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
 function weekSource(w){
+ if(w.id==='S10')return {chip:'S10 · photo du planning IFSI · saisie 23/10/2026',detail:'S10 saisie depuis la photo du planning affiché à l’IFSI, semaine civile 45. Affectations de salles à confirmer pour le TD coping, la psychogestuelle et certains cours sans salle précisée. Planning prévisionnel.',ics:'S10 photo du planning IFSI, transcrite le 23/10/2026'};
  if(w.id==='S9')return {chip:'S9 · photo du planning IFSI · MAJ 20/10/2026',detail:'S9 saisie à partir de la photo du planning affiché à l’IFSI (datée du 19/10). Horaires, groupes et salles recopiés ; salle des organes des sens non précisée sur la source. Planning prévisionnel.',ics:'S9 photo du planning IFSI, transcrite le 20/10/2026'};
  if(w.id==='S8')return {chip:'S8 · site promo officiel + contrôle FAC · MAJ 11/10/2026',detail:'S8 recroisée avec le site officiel de la promo et le planning CM FAC. Divergence le 22/10 matin : site promo = Laura CHEVREAU, PDF FAC = Timothy JAMES ; l’app suit le site promo.',ics:'S8 site officiel promo, contrôlée avec planning CM FAC'};
  if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};

@@ -24,7 +24,7 @@ assert.equal(currentReg.courses.length,50);
 assert.deepEqual(currentReg.courses,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
  'Registre : seule la suppression des scripts de travail est permise');
 assert.deepEqual(Object.keys(currentReg),Object.keys(oldReg),'Structure du registre modifiée');
-assert.equal(currentReg.version,oldReg.version,'Version approuvée conservée');
+assert.equal(currentReg.version,disk('build-meta.json').version,'Version du registre alignée sur la release courante');
 const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);
 assert.ok([0,10].includes(removed),'Retrait initial ou état déjà expurgé attendu');
 assert.equal(currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).length,0),23);
