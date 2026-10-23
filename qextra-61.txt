@@ -1,0 +1,1492 @@
+[
+  {
+    "id": "a21_resp_p01_001",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cadre et réforme infirmière 2025–2026",
+    "difficulty": "easy",
+    "question": "Selon la réforme 2025-2026, quelles activités font partie de la profession infirmière ?",
+    "choices": [
+      "Diagnostic infirmier",
+      "Organisation et évaluation des soins",
+      "Consultations infirmières dans le cadre légal",
+      "Exercice sans code de déontologie",
+      "Prescription libre de tout médicament"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La loi du 27 juin 2025 reconnaît consultation et diagnostic infirmiers et réaffirme l’organisation/évaluation. La prescription de produits et examens reste réglementairement encadrée.",
+    "flashcards": [
+      {
+        "front": "Quel texte de 2025 a rénové la définition de la profession d’infirmier ?",
+        "answers": [
+          "La loi n° 2025-581 du 27 juin 2025."
+        ],
+        "explanation": "La loi n° 2025-581 du 27 juin 2025.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quel décret de 2025 a modifié les activités et compétences des IDE ?",
+        "answers": [
+          "Décret n° 2025-1306 du 24 décembre 2025, en application en 2026."
+        ],
+        "explanation": "Décret n° 2025-1306 du 24 décembre 2025, en application en 2026.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_002",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cadre et réforme infirmière 2025–2026",
+    "difficulty": "medium",
+    "question": "Quelles sont les trois grandes logiques présentées pour intervenir auprès du patient ?",
+    "choices": [
+      "Exécution libre de tout acte médical",
+      "Mesures d’urgence adaptées",
+      "Rôle propre",
+      "Simple exécution sans jugement clinique",
+      "Actes sur prescription ou protocole"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Rôle propre, prescription et urgence sont des cadres définis par le CSP. Aucun n’exonère des obligations de compétence, de sécurité et de traçabilité.",
+    "flashcards": [
+      {
+        "front": "Quels sont les trois cadres principaux des actes infirmiers ?",
+        "answers": [
+          "Rôle propre, actes sur prescription / protocole, urgence et mesures conservatoires encadrées."
+        ],
+        "explanation": "Rôle propre, actes sur prescription / protocole, urgence et mesures conservatoires encadrées.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_003",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cadre et réforme infirmière 2025–2026",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent correctement le rôle propre ?",
+    "choices": [
+      "Il évite toute obligation de traçabilité",
+      "Il est supprimé lorsqu’un IDE travaille en établissement",
+      "Il comprend un raisonnement clinique infirmier",
+      "Il permet d’initier les actes et soins relevant de la liste autorisée",
+      "Il interdit l’évaluation de la douleur"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le rôle propre exige identification des besoins, interventions autorisées et évaluation ; il demeure en exercice salarié ou libéral.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que le rôle propre ?",
+        "answers": [
+          "La possibilité, dans le cadre légal, d’évaluer et d’initier les soins relevant des compétences infirmières."
+        ],
+        "explanation": "La possibilité, dans le cadre légal, d’évaluer et d’initier les soins relevant des compétences infirmières.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_004",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cadre et réforme infirmière 2025–2026",
+    "difficulty": "medium",
+    "question": "Dans le processus clinique infirmier, lesquelles sont des étapes cohérentes ?",
+    "choices": [
+      "Écarter les informations du patient",
+      "Évaluer les besoins",
+      "Poser obligatoirement un diagnostic médical",
+      "Réévaluer les résultats",
+      "Fixer des objectifs de soins"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "L’évaluation, l’identification des besoins, la planification et la réévaluation structurent le rôle propre. Le diagnostic infirmier ne se confond pas avec le diagnostic médical.",
+    "flashcards": [
+      {
+        "front": "Quelles étapes organisent la démarche clinique infirmière ?",
+        "answers": [
+          "Évaluer, identifier les besoins et le diagnostic infirmier, planifier, agir et réévaluer."
+        ],
+        "explanation": "Évaluer, identifier les besoins et le diagnostic infirmier, planifier, agir et réévaluer.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Qu’est-ce qu’un diagnostic infirmier ?",
+        "answers": [
+          "L’identification des besoins ou réponses de la personne qui relèvent des compétences infirmières."
+        ],
+        "explanation": "L’identification des besoins ou réponses de la personne qui relèvent des compétences infirmières.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_005",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Collaboration avec les auxiliaires",
+    "difficulty": "easy",
+    "question": "Dans quelles conditions l’IDE peut-il confier certains soins à un AS, AP ou AES ?",
+    "choices": [
+      "Pour tout acte médical prescrit sans limite",
+      "Dans son rôle propre et selon la liste autorisée",
+      "En tenant compte de la formation et de la qualification",
+      "Sans consigne ni réévaluation",
+      "Après appréciation de l’état clinique"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "R.4311-5 prévoit une collaboration encadrée : acte prévu, situation évaluée, qualification adaptée. L’IDE garde des responsabilités dans l’organisation et l’évaluation.",
+    "flashcards": [
+      {
+        "front": "L’IDE peut-il confier un soin prescrit à un AS sans autre condition ?",
+        "answers": [
+          "Non. R.4311-5 concerne des soins autorisés et les qualifications du collaborateur ; tous les actes prescrits ne sont pas confiables."
+        ],
+        "explanation": "Non. R.4311-5 concerne des soins autorisés et les qualifications du collaborateur ; tous les actes prescrits ne sont pas confiables.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_006",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Collaboration avec les auxiliaires",
+    "difficulty": "medium",
+    "question": "Quelles responsabilités restent pertinentes pour l’IDE qui confie un soin autorisé ?",
+    "choices": [
+      "Confier automatiquement les actes sur prescription",
+      "Assurer le suivi et la réévaluation",
+      "Évaluer la pertinence du soin",
+      "Ne plus s’occuper du patient",
+      "Transmettre des consignes appropriées"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Confier un acte dans les conditions prévues n’est pas abandonner la supervision clinique. Le périmètre des actes confiables n’est pas illimité.",
+    "flashcards": [
+      {
+        "front": "De quoi l’IDE reste-t-il responsable lorsqu’il confie un soin ?",
+        "answers": [
+          "De l’évaluation, du choix du soin, des consignes, du contrôle, de la réévaluation et de la traçabilité."
+        ],
+        "explanation": "De l’évaluation, du choix du soin, des consignes, du contrôle, de la réévaluation et de la traçabilité.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_007",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Collaboration avec les auxiliaires",
+    "difficulty": "medium",
+    "question": "Un AS réalise une toilette dans un cadre autorisé. Quelle interprétation est correcte ?",
+    "choices": [
+      "Le soin peut être confié lorsque les conditions sont remplies",
+      "Les actes sur prescription sont automatiquement transférables",
+      "Les qualifications du collaborateur sont sans importance",
+      "L’état du patient doit rester pris en compte",
+      "L’IDE n’a plus aucun devoir dans la chaîne de soins"
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "La toilette peut relever des soins confiables dans des conditions déterminées. Évaluation du patient et compétences de l’intervenant restent nécessaires.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_008",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Prescription et urgence",
+    "difficulty": "easy",
+    "question": "Quels éléments caractérisent une prescription nominative conforme selon R.4311-6 ?",
+    "choices": [
+      "Qualitative et quantitative",
+      "Signée",
+      "Sans identification de la personne",
+      "Écrite et datée",
+      "Toujours transmise seulement à l’oral"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le CSP mentionne la prescription écrite, nominative, qualitative, quantitative, datée et signée. L’enseignant insiste sur l’écrit.",
+    "flashcards": [
+      {
+        "front": "Quelles mentions doivent figurer sur une prescription au sens de R.4311-6 ?",
+        "answers": [
+          "Écrite, nominative, qualitative, quantitative, datée et signée par un prescripteur autorisé."
+        ],
+        "explanation": "Écrite, nominative, qualitative, quantitative, datée et signée par un prescripteur autorisé.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_009",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Prescription et urgence",
+    "difficulty": "medium",
+    "question": "Une prescription est manifestement erronée. Quel comportement est adapté ?",
+    "choices": [
+      "Déduire seul une voie manquante",
+      "Clarifier puis tracer les décisions",
+      "Ne pas l’exécuter mécaniquement",
+      "Administrer pour éviter de perdre du temps",
+      "Alerter le prescripteur"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Un ordre reçu ne supprime pas le devoir de vigilance. La prescription dangereuse doit être clarifiée avant exécution hors gestion encadrée d’une urgence.",
+    "flashcards": [
+      {
+        "front": "Que faire face à une prescription manifestement dangereuse ?",
+        "answers": [
+          "Ne pas exécuter aveuglément, alerter, clarifier et tracer les décisions."
+        ],
+        "explanation": "Ne pas exécuter aveuglément, alerter, clarifier et tracer les décisions.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_010",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Prescription et urgence",
+    "difficulty": "medium",
+    "question": "Concernant le protocole médical de soins sur prescription, quelles propositions sont exactes ?",
+    "choices": [
+      "Il est écrit",
+      "Il permet n’importe quel geste à tout professionnel",
+      "Il est établi, daté et signé par un médecin",
+      "Il est qualitatif et quantitatif",
+      "Il est nécessairement oral"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "R.4311-6 encadre les protocoles médicaux. Leur existence ne rend pas licite un acte hors compétences de l’infirmier.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_011",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Prescription et urgence",
+    "difficulty": "hard",
+    "question": "À propos de l’urgence en l’absence de médecin, quels énoncés sont corrects ?",
+    "choices": [
+      "La traçabilité devient facultative",
+      "Un compte rendu écrit doit être rédigé après application d’un protocole d’urgence",
+      "L’IDE devient prescripteur médical sans limite",
+      "Des gestes et mesures conservatoires peuvent être nécessaires",
+      "Un protocole de soins d’urgence écrit peut prévoir des actions"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "R.4311-7 prévoit protocoles d’urgence et mesures conservatoires ; les actes protocolisés donnent lieu à un compte rendu écrit, daté et signé, remis au médecin et annexé au dossier.",
+    "flashcards": [
+      {
+        "front": "Que prévoit R.4311-7 en matière d’urgence ?",
+        "answers": [
+          "Protocoles d’urgence et actes conservatoires adaptés ; compte rendu écrit après actes protocolisés."
+        ],
+        "explanation": "Protocoles d’urgence et actes conservatoires adaptés ; compte rendu écrit après actes protocolisés.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_012",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Prescription et urgence",
+    "difficulty": "medium",
+    "question": "Que faut-il considérer pour un acte sur prescription ?",
+    "choices": [
+      "La nécessité éventuelle de la présence ou disponibilité médicale",
+      "L’absence de responsabilité propre de l’IDE",
+      "La surveillance et la sécurité du patient",
+      "La volonté de déléguer l’acte à un AS sans condition",
+      "L’existence et la validité de l’ordre"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le médecin peut devoir intervenir à proximité selon les actes ; l’IDE exécute, surveille et reste responsable de sa pratique.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_013",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Modes d’exercice",
+    "difficulty": "easy",
+    "question": "Quels sont les grands modes d’exercice infirmier présentés ?",
+    "choices": [
+      "Exercice sans code de déontologie en libéral",
+      "Exercice libéral",
+      "Exercice comme agent d’un établissement public",
+      "Exercice sans diplôme ni inscription exigée",
+      "Salariat en établissement privé"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Les trois modes changent les statuts et les modalités d’indemnisation, non les obligations communes du professionnel.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les trois formes d’exercice infirmier étudiées ?",
+        "answers": [
+          "Libéral, salarié d’établissement privé, agent d’établissement public."
+        ],
+        "explanation": "Libéral, salarié d’établissement privé, agent d’établissement public.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_014",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Modes d’exercice",
+    "difficulty": "easy",
+    "question": "L’assurance de responsabilité civile professionnelle est-elle légalement obligatoire pour ?",
+    "choices": [
+      "Tout salarié IDE à titre individuel sans aucune exception",
+      "Un étudiant dans tous les cas à titre personnel",
+      "La plupart des établissements de soins soumis au texte",
+      "Tous les proches du patient",
+      "L’IDE libéral"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "L’obligation d’assurance RCP vise notamment les professionnels libéraux et les structures concernées ; l’assurance personnelle du salarié est à distinguer.",
+    "flashcards": [
+      {
+        "front": "Qui doit en principe disposer d’une assurance RCP obligatoire ?",
+        "answers": [
+          "Les professionnels libéraux et établissements visés par la loi ; distinguer la situation du salarié."
+        ],
+        "explanation": "Les professionnels libéraux et établissements visés par la loi ; distinguer la situation du salarié.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_015",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Modes d’exercice",
+    "difficulty": "medium",
+    "question": "Un salarié IDE agit dans les limites de sa mission dans un établissement privé. Quelles affirmations sont recevables ?",
+    "choices": [
+      "L’IDE est toujours seul civilement responsable",
+      "L’établissement ne peut jamais être mis en cause",
+      "La responsabilité civile du commettant peut être mobilisée",
+      "La faute personnelle pénale de l’IDE demeure possible",
+      "Une sanction déontologique n’est pas exclue par le salariat"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Les règles du fait du préposé et les protections du salarié s’apprécient selon les conditions. Le pénal et la discipline conservent leur logique propre.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_016",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Modes d’exercice",
+    "difficulty": "medium",
+    "question": "Concernant l’agent d’un établissement public, lesquelles sont exactes ?",
+    "choices": [
+      "Les deux fautes sont toujours juridiquement identiques",
+      "Une faute personnelle détachable peut engager l’agent",
+      "Le professionnel n’a pas de déontologie",
+      "La victime n’a jamais de voie d’indemnisation",
+      "Une faute de service peut engager l’administration"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les régimes de faute de service et de faute personnelle se distinguent, avec des mécanismes possibles de protection de la victime.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_017",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Régimes de responsabilité",
+    "difficulty": "easy",
+    "question": "Quels objectifs associer aux responsabilités ?",
+    "choices": [
+      "Pénale : sanctionner une infraction",
+      "Pénale : indemniser automatiquement tous les préjudices",
+      "Déontologique : sanctionner un manquement professionnel",
+      "Civile : réparer un préjudice",
+      "Civile : prononcer obligatoirement une peine de prison"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Les finalités diffèrent : réparation, sanction pénale, régulation du comportement professionnel. Elles peuvent se cumuler mais ne sont pas synonymes.",
+    "flashcards": [
+      {
+        "front": "Quel est le but premier de la responsabilité civile ?",
+        "answers": [
+          "Réparer les préjudices subis selon le régime applicable."
+        ],
+        "explanation": "Réparer les préjudices subis selon le régime applicable.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quel est le but premier de la responsabilité pénale ?",
+        "answers": [
+          "Sanctionner une infraction définie par la loi."
+        ],
+        "explanation": "Sanctionner une infraction définie par la loi.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Que vise la responsabilité déontologique ?",
+        "answers": [
+          "Le respect des obligations professionnelles et du code de déontologie."
+        ],
+        "explanation": "Le respect des obligations professionnelles et du code de déontologie.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_018",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Régimes de responsabilité",
+    "difficulty": "medium",
+    "question": "Un même événement de soins peut-il entraîner différentes procédures ?",
+    "choices": [
+      "Non, une seule procédure est légalement possible",
+      "Oui, pénale si une infraction est constituée",
+      "Oui, mais toute procédure entraîne la même sanction",
+      "Oui, civile ou administrative",
+      "Oui, déontologique si obligations professionnelles violées"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Le cours insiste sur la coexistence possible des régimes. Chacun répond à un fondement et à des conditions spécifiques.",
+    "flashcards": [
+      {
+        "front": "Les trois responsabilités peuvent-elles se cumuler pour un fait ?",
+        "answers": [
+          "Oui. Leurs fondements, conditions et sanctions ne sont pas identiques."
+        ],
+        "explanation": "Oui. Leurs fondements, conditions et sanctions ne sont pas identiques.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Faut-il une faute pénale pour obtenir une réparation civile ?",
+        "answers": [
+          "Pas nécessairement : les régimes de responsabilité et de solidarité obéissent à des conditions distinctes."
+        ],
+        "explanation": "Pas nécessairement : les régimes de responsabilité et de solidarité obéissent à des conditions distinctes.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_019",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Régimes de responsabilité",
+    "difficulty": "medium",
+    "question": "Quelles conditions caractérisent classiquement une action en responsabilité pour faute ?",
+    "choices": [
+      "Un dommage",
+      "Un lien causal",
+      "Une intention de nuire systématique",
+      "Une condamnation pénale préalable obligatoire",
+      "Une faute"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Dans la logique pour faute, un manquement, un dommage et une causalité sont analysés. Les régimes spéciaux modifient cette grille.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les trois conditions classiques d’une responsabilité pour faute ?",
+        "answers": [
+          "Faute, dommage, lien de causalité."
+        ],
+        "explanation": "Faute, dommage, lien de causalité.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_020",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Régimes de responsabilité",
+    "difficulty": "hard",
+    "question": "Une complication survient après un soin conforme aux règles. Quelles conclusions sont prudentes ?",
+    "choices": [
+      "La présence d’une complication prouve une négligence",
+      "Les conditions d’indemnisation doivent être examinées",
+      "La responsabilité pénale est automatique",
+      "Un régime sans faute peut parfois être applicable",
+      "La seule complication ne suffit pas à prouver une faute"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "L’aléa, l’échec du traitement et la faute doivent être différenciés. La solidarité nationale requiert des critères stricts.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_021",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Faute et perte de chance",
+    "difficulty": "medium",
+    "question": "Quels faits peuvent constituer une faute technique infirmière selon les circonstances ?",
+    "choices": [
+      "Simple réalisation d’un soin sans complication",
+      "Surveillance conforme au protocole",
+      "Défaut de surveillance clinique",
+      "Non-respect d’une règle d’hygiène",
+      "Erreur de dose"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "La faute s’apprécie selon les circonstances et les pratiques attendues. Dose, surveillance et hygiène sont des domaines d’exposition possibles.",
+    "flashcards": [
+      {
+        "front": "Quelles erreurs peuvent constituer des fautes techniques de soins ?",
+        "answers": [
+          "Erreur de dose, défaut de surveillance, non-respect de règles d’hygiène selon les circonstances."
+        ],
+        "explanation": "Erreur de dose, défaut de surveillance, non-respect de règles d’hygiène selon les circonstances.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_022",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Faute et perte de chance",
+    "difficulty": "medium",
+    "question": "Quelles situations illustrent la faute dite d’humanisme dans le cours ?",
+    "choices": [
+      "Atteinte au secret professionnel",
+      "Échec thérapeutique malgré un soin correct",
+      "Non-respect du refus de soin",
+      "Absence de résultat favorable à toute intervention",
+      "Défaut d’information"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Les atteintes à l’information, à l’autonomie, au secret et à la dignité sont distinctes d’une erreur technique.",
+    "flashcards": [
+      {
+        "front": "Quelles erreurs peuvent constituer des fautes d’humanisme ?",
+        "answers": [
+          "Défaut d’information, méconnaissance du consentement / du refus, atteinte au secret ou à la dignité."
+        ],
+        "explanation": "Défaut d’information, méconnaissance du consentement / du refus, atteinte au secret ou à la dignité.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_023",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Faute et perte de chance",
+    "difficulty": "hard",
+    "question": "Comment comprendre la perte de chance ?",
+    "choices": [
+      "La certitude qu’un traitement aurait toujours réussi",
+      "Une notion pouvant concerner un retard de diagnostic",
+      "Un préjudice à distinguer du dommage final entier",
+      "Une indemnisation intégrale automatique de toutes les séquelles",
+      "Une possibilité réelle et sérieuse perdue"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La perte de chance compense une chance perdue, non le dommage intégral par principe. Il faut raisonner sur le lien de causalité.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’une perte de chance ?",
+        "answers": [
+          "La disparition d’une possibilité réelle et sérieuse d’éviter le dommage ou d’obtenir une meilleure issue."
+        ],
+        "explanation": "La disparition d’une possibilité réelle et sérieuse d’éviter le dommage ou d’obtenir une meilleure issue.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "La perte de chance est-elle toujours indemnisée comme tout le dommage ?",
+        "answers": [
+          "Non, la réparation est proportionnée à la chance perdue dans le cadre applicable."
+        ],
+        "explanation": "Non, la réparation est proportionnée à la chance perdue dans le cadre applicable.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_024",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Dommage et réparation",
+    "difficulty": "easy",
+    "question": "Quelles sont des catégories de préjudices réparables possibles ?",
+    "choices": [
+      "Une sanction de prison",
+      "Pertes de revenus",
+      "Dépenses de santé",
+      "Souffrances endurées",
+      "Toute contrariété fictive sans dommage"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La nomenclature des postes de préjudices peut inclure pertes patrimoniales et conséquences extrapatrimoniales.",
+    "flashcards": [
+      {
+        "front": "Différence entre dommage et préjudice ?",
+        "answers": [
+          "Le dommage est l’atteinte subie ; le préjudice est la conséquence réparable."
+        ],
+        "explanation": "Le dommage est l’atteinte subie ; le préjudice est la conséquence réparable.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_025",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Dommage et réparation",
+    "difficulty": "medium",
+    "question": "Que désigne la consolidation du dommage ?",
+    "choices": [
+      "Un état suffisamment stabilisé pour évaluer les séquelles",
+      "Le moment de la première prescription",
+      "Une preuve que le patient est entièrement guéri",
+      "L’instant obligatoirement identique à l’accident",
+      "Un repère pour certains délais de recours"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "La consolidation n’est pas forcément la guérison ni la date du dommage initial. Elle sert à la valorisation des séquelles et à certaines prescriptions.",
+    "flashcards": [
+      {
+        "front": "Qu’appelle-t-on consolidation ?",
+        "answers": [
+          "La stabilisation permettant d’évaluer les séquelles ; elle n’équivaut pas forcément à la guérison."
+        ],
+        "explanation": "La stabilisation permettant d’évaluer les séquelles ; elle n’équivaut pas forcément à la guérison.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_026",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Dommage et réparation",
+    "difficulty": "medium",
+    "question": "Quel délai de principe s’applique aux actions relatives aux dommages de soins dans le cadre L.1142-28 CSP ?",
+    "choices": [
+      "Dix ans à compter de la consolidation",
+      "Dix ans obligatoirement depuis la date de naissance",
+      "Dix jours après sortie",
+      "Six mois après la CCI",
+      "Six mois à compter de la première ordonnance"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La prescription de principe est de dix ans depuis la consolidation, avec situations particulières à vérifier.",
+    "flashcards": [
+      {
+        "front": "Quel est le délai de principe pour agir en matière d’accident médical ?",
+        "answers": [
+          "Dix ans à compter de la consolidation, conformément à L.1142-28, sous réserves particulières."
+        ],
+        "explanation": "Dix ans à compter de la consolidation, conformément à L.1142-28, sous réserves particulières.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_027",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Accident médical non fautif",
+    "difficulty": "medium",
+    "question": "Pour un accident médical non fautif, quelles exigences peuvent être nécessaires à la solidarité nationale ?",
+    "choices": [
+      "Lien direct avec les soins",
+      "Conséquences anormales compte tenu de l’état et de l’évolution prévisible",
+      "Preuve obligatoire d’un crime volontaire",
+      "Caractère de gravité légal",
+      "Indemnisation automatique à toute complication"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L.1142-1 II combine imputabilité, anormalité et gravité. L’absence de faute ne suffit pas à elle seule.",
+    "flashcards": [
+      {
+        "front": "Quelles conditions sont nécessaires à l’indemnisation d’un accident médical non fautif ?",
+        "answers": [
+          "Imputabilité directe au soin, conséquences anormales et gravité légalement caractérisée."
+        ],
+        "explanation": "Imputabilité directe au soin, conséquences anormales et gravité légalement caractérisée.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_028",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Accident médical non fautif",
+    "difficulty": "hard",
+    "question": "À propos du seuil de gravité de 24 % dans la réparation des accidents médicaux non fautifs, quelles affirmations sont exactes ?",
+    "choices": [
+      "Il supprime la condition d’anormalité",
+      "C’est un repère applicable au régime général de solidarité nationale",
+      "Il est identique au seuil >25 % des infections nosocomiales",
+      "Il prouve une faute du professionnel",
+      "D’autres critères de gravité peuvent aussi ouvrir l’accès"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les seuils 24 % et >25 % portent sur des régimes distincts ; les critères alternatifs de gravité demeurent prévus.",
+    "flashcards": [
+      {
+        "front": "Quel est le seuil de gravité général à ne pas confondre ?",
+        "answers": [
+          "Le repère de 24 % pour l’accident médical non fautif, avec autres critères alternatifs."
+        ],
+        "explanation": "Le repère de 24 % pour l’accident médical non fautif, avec autres critères alternatifs.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_029",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Accident médical non fautif",
+    "difficulty": "medium",
+    "question": "Quelles distinctions concernant l’aléa thérapeutique sont importantes ?",
+    "choices": [
+      "Il dispense d’étudier l’état initial",
+      "Il peut exister sans faute prouvée",
+      "Il est distinct d’un échec thérapeutique",
+      "Une complication non fautive est toujours indemnisable",
+      "Il entraîne nécessairement une sanction pénale"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Une complication aléatoire non fautive se distingue d’un traitement inefficace et ne satisfait pas automatiquement les conditions d’indemnisation.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un aléa thérapeutique ?",
+        "answers": [
+          "Une complication de soin non fautive, à distinguer de l’échec thérapeutique."
+        ],
+        "explanation": "Une complication de soin non fautive, à distinguer de l’échec thérapeutique.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_030",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Infections nosocomiales",
+    "difficulty": "medium",
+    "question": "Concernant une infection nosocomiale contractée en établissement concerné, que prévoit L.1142-1 I ?",
+    "choices": [
+      "Une condamnation pénale systématique",
+      "Un régime pouvant exister sans faute technique prouvée",
+      "Une responsabilité civile individuelle automatique de l’IDE",
+      "Une exonération simple par affirmation que l’équipe était prudente",
+      "Une responsabilité de la structure sauf cause étrangère"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le régime de responsabilité de la structure est spécifique ; la cause étrangère a une portée stricte.",
+    "flashcards": [
+      {
+        "front": "Quel est le principe de responsabilité d’une structure pour infection nosocomiale ?",
+        "answers": [
+          "Responsabilité pour les dommages dus à l’infection, sauf preuve d’une cause étrangère : L.1142-1 I."
+        ],
+        "explanation": "Responsabilité pour les dommages dus à l’infection, sauf preuve d’une cause étrangère : L.1142-1 I.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_031",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Infections nosocomiales",
+    "difficulty": "hard",
+    "question": "Quel cas d’infection nosocomiale en établissement peut ouvrir réparation par solidarité nationale selon L.1142-1-1 ?",
+    "choices": [
+      "Décès imputable à l’infection",
+      "Déficit permanent strictement supérieur à 25 %",
+      "Automatiquement tout DFP de 5 %",
+      "Toute infection sans conséquence",
+      "Seuil simplement égal à 24 % dans tous les cas"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’ONIAM intervient notamment pour les infections nosocomiales graves avec DFP >25 % ou décès.",
+    "flashcards": [
+      {
+        "front": "Quel seuil spécifique concerne les infections nosocomiales graves ?",
+        "answers": [
+          "Atteinte permanente strictement supérieure à 25 % ou décès imputable à l’infection : L.1142-1-1."
+        ],
+        "explanation": "Atteinte permanente strictement supérieure à 25 % ou décès imputable à l’infection : L.1142-1-1.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_032",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Infections nosocomiales",
+    "difficulty": "medium",
+    "question": "Pour qualifier une infection nosocomiale, quelles vérifications sont pertinentes ?",
+    "choices": [
+      "Analyse du lien avec la structure ou les actes",
+      "Obligation de prouver le manque de lavage des mains pour toute infection",
+      "Absence d’infection présente ou en incubation initialement",
+      "Obligation que les symptômes apparaissent dans la chambre",
+      "Moment d’acquisition durant le parcours de prise en charge"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’infection peut se manifester après la sortie ; sa définition et les modalités de preuve doivent être analysées, sans réduire cela à une faute individuelle.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’une infection nosocomiale ?",
+        "answers": [
+          "Une infection acquise dans le contexte de la prise en charge, non présente ni en incubation au début selon l’analyse."
+        ],
+        "explanation": "Une infection acquise dans le contexte de la prise en charge, non présente ni en incubation au début selon l’analyse.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_033",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "CCI et ONIAM",
+    "difficulty": "easy",
+    "question": "Quel est le rôle de la CCI ?",
+    "choices": [
+      "Remplacer systématiquement tous les tribunaux",
+      "Facilitation d’un règlement amiable",
+      "Conciliation",
+      "Prononcer directement des peines de prison",
+      "Avis sur demandes d’indemnisation liées aux accidents médicaux"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La CCI est distincte du juge : elle examine des dossiers, peut organiser une expertise, donne un avis et facilite une voie amiable.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce que l’ONIAM ?",
+        "answers": [
+          "L’organisme de solidarité nationale qui indemnise certains dommages de soins dans les conditions légales."
+        ],
+        "explanation": "L’organisme de solidarité nationale qui indemnise certains dommages de soins dans les conditions légales.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "Quel rôle tient la CCI ?",
+        "answers": [
+          "Analyser et favoriser une solution amiable en matière d’accidents médicaux, avec avis et expertise possible."
+        ],
+        "explanation": "Analyser et favoriser une solution amiable en matière d’accidents médicaux, avec avis et expertise possible.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      },
+      {
+        "front": "L’avis de la CCI vaut-il condamnation pénale ?",
+        "answers": [
+          "Non. Il s’agit d’une procédure d’avis et de conciliation, distincte du juge pénal."
+        ],
+        "explanation": "Non. Il s’agit d’une procédure d’avis et de conciliation, distincte du juge pénal.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_034",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "CCI et ONIAM",
+    "difficulty": "medium",
+    "question": "Quels éléments caractérisent la procédure devant la CCI ?",
+    "choices": [
+      "La victime peut la saisir",
+      "Une expertise peut être organisée",
+      "La saisine suspend certains délais pendant la procédure",
+      "La CCI est un jury pénal",
+      "Une saisine exige toujours un avocat"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La démarche amiable est gratuite pour la victime, avec expertise possible, et ne supprime pas les options juridictionnelles.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_035",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "CCI et ONIAM",
+    "difficulty": "medium",
+    "question": "Une fois un dossier CCI complet, quel délai de principe est prévu pour rendre l’avis ?",
+    "choices": [
+      "Un délai décidé par l’infirmier mis en cause",
+      "Trois ans",
+      "Un mois obligatoirement pour tout recours pénal",
+      "Vingt-quatre heures",
+      "Six mois"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Le délai de principe de la CCI est de six mois à compter de la réception d’un dossier complet.",
+    "flashcards": [
+      {
+        "front": "Quel délai de principe la CCI a-t-elle pour rendre un avis ?",
+        "answers": [
+          "Six mois après réception du dossier complet."
+        ],
+        "explanation": "Six mois après réception du dossier complet.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_036",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "CCI et ONIAM",
+    "difficulty": "hard",
+    "question": "Après un avis favorable dans une procédure CCI, qui peut proposer ou prendre en charge l’indemnisation selon le régime ?",
+    "choices": [
+      "ONIAM au titre de la solidarité nationale",
+      "Automatiquement l’infirmier de sa poche dans tous les cas",
+      "Le ministère public au titre d’une peine",
+      "Le patient lui-même comme organisme indemniseur",
+      "Assureur du responsable"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Le débiteur varie selon le fondement : responsabilité assurée ou solidarité nationale, avec mécanismes de substitution éventuels.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_037",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Responsabilité pénale",
+    "difficulty": "easy",
+    "question": "À quoi sert principalement la responsabilité pénale ?",
+    "choices": [
+      "Remplacer le code de déontologie",
+      "Protéger l’ordre social",
+      "Indemniser automatiquement à elle seule la victime",
+      "Évaluer systématiquement tous les postes de préjudice",
+      "Sanctionner une infraction définie par la loi"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "La logique pénale est répressive ; la réparation peut relever d’une action civile séparée ou exercée devant le juge pénal.",
+    "flashcards": [
+      {
+        "front": "Que signifie la responsabilité pénale personnelle ?",
+        "answers": [
+          "Nul n’est responsable pénalement que de son propre fait : article 121-1 du Code pénal."
+        ],
+        "explanation": "Nul n’est responsable pénalement que de son propre fait : article 121-1 du Code pénal.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_038",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Responsabilité pénale",
+    "difficulty": "medium",
+    "question": "Quels facteurs comptent pour apprécier une faute pénale non intentionnelle selon l’article 121-3 ?",
+    "choices": [
+      "Les compétences et moyens disponibles",
+      "La distinction entre causalité directe et indirecte",
+      "La nature des fonctions et missions",
+      "La seule décision du prescripteur",
+      "L’issue défavorable seule"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les diligences normales sont appréciées in concreto. Le niveau de faute requis est renforcé pour les auteurs indirects.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_039",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Responsabilité pénale",
+    "difficulty": "hard",
+    "question": "Pour une personne physique ayant seulement contribué indirectement au dommage, quelles fautes peuvent engager sa responsabilité pénale selon les conditions de l’article 121-3 ?",
+    "choices": [
+      "Toute simple maladresse sans qualification",
+      "Violation manifestement délibérée d’une obligation particulière de prudence ou sécurité",
+      "Absence de résultat favorable",
+      "Simple satisfaction du patient",
+      "Faute caractérisée exposant autrui à un risque d’une particulière gravité"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "L’exigence de faute qualifiée pour la causalité indirecte est au cœur de la loi dite Fauchon.",
+    "flashcards": [
+      {
+        "front": "Quelle faute est requise pour une causalité pénale indirecte selon l’article 121-3 ?",
+        "answers": [
+          "Une faute caractérisée ou une violation manifestement délibérée d’une obligation particulière."
+        ],
+        "explanation": "Une faute caractérisée ou une violation manifestement délibérée d’une obligation particulière.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_040",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Responsabilité pénale",
+    "difficulty": "medium",
+    "question": "L’infirmier qui exécute une prescription dangereuse bénéficie-t-il toujours d’une immunité pénale ?",
+    "choices": [
+      "Il doit vérifier et alerter lorsqu’une erreur est manifeste",
+      "Oui, la signature du médecin exclut toute responsabilité",
+      "Oui, si l’administration a lieu en établissement",
+      "Non, le professionnel répond de ses propres actes",
+      "Oui, dès que la prescription est écrite"
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Le lien de subordination ou la prescription ne constituent pas une immunité pénale. Les éléments de l’infraction doivent néanmoins être prouvés.",
+    "flashcards": [
+      {
+        "front": "Le prescripteur protège-t-il toujours l’IDE de poursuites pénales ?",
+        "answers": [
+          "Non. L’IDE garde ses devoirs de contrôle ; une infraction doit toutefois être légalement constituée."
+        ],
+        "explanation": "Non. L’IDE garde ses devoirs de contrôle ; une infraction doit toutefois être légalement constituée.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_041",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Secret professionnel",
+    "difficulty": "easy",
+    "question": "À qui le secret professionnel s’impose-t-il dans les textes utilisés ?",
+    "choices": [
+      "À aucun professionnel lorsqu’il y a une équipe",
+      "Jamais aux personnels en établissement",
+      "À l’infirmier",
+      "Aux personnes qui l’assistent dans les conditions légales",
+      "Seulement au médecin"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le CSP R.4312-5 impose le secret à l’infirmier et prévoit qu’il instruise les personnes l’assistant de leurs obligations.",
+    "flashcards": [
+      {
+        "front": "Quel article du CSP impose le secret professionnel à l’IDE ?",
+        "answers": [
+          "R.4312-5, avec L.1110-4 pour les informations relatives au patient."
+        ],
+        "explanation": "R.4312-5, avec L.1110-4 pour les informations relatives au patient.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_042",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Secret professionnel",
+    "difficulty": "medium",
+    "question": "Un partage d’informations relatives au patient entre professionnels est-il possible ?",
+    "choices": [
+      "Oui librement sur un groupe de messagerie non sécurisé",
+      "Oui dans la stricte limite des informations nécessaires",
+      "Oui lorsque les professionnels participent à la prise en charge dans les conditions légales",
+      "Non, aucune donnée ne peut jamais circuler",
+      "Oui à tous les membres d’un établissement sans besoin de soins"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "L.1110-4 CSP autorise des échanges nécessaires selon le contexte ; le seul statut de professionnel ne donne pas libre accès à toutes les données.",
+    "flashcards": [
+      {
+        "front": "Dans quelles limites une équipe peut-elle échanger des informations médicales ?",
+        "answers": [
+          "Entre professionnels concernés, pour les informations strictement nécessaires aux soins et dans le cadre légal."
+        ],
+        "explanation": "Entre professionnels concernés, pour les informations strictement nécessaires aux soins et dans le cadre légal.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_043",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Secret professionnel",
+    "difficulty": "medium",
+    "question": "Quels comportements protègent concrètement le secret ?",
+    "choices": [
+      "Limiter les informations transmises à ce qui est nécessaire",
+      "Partager par curiosité professionnelle",
+      "Vérifier le destinataire d’un message",
+      "Consulter le dossier d’un patient sans motif de soins",
+      "Éviter une discussion de dossier dans un lieu accessible au public"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Les mesures de confidentialité s’appuient sur l’accès justifié et la limitation de diffusion, conformément aux obligations professionnelles.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_044",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cas transversaux",
+    "difficulty": "hard",
+    "question": "Dans le cas d’une infection nosocomiale ayant causé le décès après hospitalisation, quelles affirmations sont justes ?",
+    "choices": [
+      "Il faut apprécier le lien avec l’infection contractée durant les soins",
+      "La cause juridique du dommage est sans importance",
+      "Le décès implique automatiquement une condamnation pénale de l’IDE",
+      "Le seuil accident non fautif de 24 % règle nécessairement le dossier",
+      "La solidarité nationale peut relever du cadre L.1142-1-1"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "La loi prévoit le décès imputable à l’infection comme critère du régime d’indemnisation spécifique ; une infraction pénale doit être établie indépendamment.",
+    "flashcards": [
+      {
+        "front": "Quel est le piège des seuils 24 % et 25 % ?",
+        "answers": [
+          "Ils appartiennent à des régimes de réparation distincts : accident non fautif général et infection nosocomiale grave."
+        ],
+        "explanation": "Ils appartiennent à des régimes de réparation distincts : accident non fautif général et infection nosocomiale grave.",
+        "kind": "Question / réponse",
+        "atomic": true,
+        "preserveFront": true
+      }
+    ]
+  },
+  {
+    "id": "a21_resp_p01_045",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cas transversaux",
+    "difficulty": "medium",
+    "question": "Un patient subit un dommage après un geste conforme aux règles de l’art. Quel raisonnement convient ?",
+    "choices": [
+      "Conclure automatiquement à une faute",
+      "Engager systématiquement le pénal",
+      "Identifier le dommage et son lien avec le soin",
+      "Examiner un éventuel régime d’indemnisation sans faute",
+      "Conclure que personne ne peut jamais être indemnisé"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le régime de réparation ne se réduit pas à la faute technique ; la solidarité nationale existe sous conditions définies.",
+    "flashcards": []
+  },
+  {
+    "id": "a21_resp_p01_046",
+    "courseId": "responsabilite_exercice_professionnel",
+    "ue": "S1 A2",
+    "course": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+    "theme": "Cas transversaux",
+    "difficulty": "medium",
+    "question": "Concernant le secret, quelles précisions de source sont exactes pour ce lot ?",
+    "choices": [
+      "Les transcriptions le mentionnent mais ne développent pas un chapitre complet",
+      "Le cours comprend 40 captures consacrées au secret",
+      "Le secret peut être écarté par simple autorisation d’un collègue",
+      "La déontologie ne s’applique pas à l’IDE",
+      "Un complément réglementaire a été vérifié dans le CSP"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Ce lot a 48 captures surtout consacrées à l’exercice et à la responsabilité. Le secret est développé comme complément externe et non comme priorité déclarée de l’enseignant.",
+    "flashcards": []
+  }
+]
