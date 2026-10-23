@@ -17,7 +17,8 @@ assert.equal(blobHash,'de31dc5abe8e3e5aae191c9ba6039b2b731ec9f6','La banque V4.2
 assert.match(meta.version,/^8\.30\.\d+$/);
 assert.ok(Number(meta.build)>=8413,'Version future ne doit pas rétablir le build V4.2');
 assert.equal(registry.version,meta.version);
-assert.equal(registry.courses.length,50,'Les 50 cours doivent être conservés');
+assert.ok(registry.courses.length>=50,'Les 50 cours historiques doivent être conservés');
+assert.equal(registry.courses.length,json('resource-audit-v821.json').expectedTotals.courses,'Nombre de cours différent du snapshot audité');
 assert.ok(registry.courses.some(c=>c.id==='pssm'));
 assert.ok(registry.courses.some(c=>c.id==='sante_mondiale_sante_france'));
 assert.ok(sw.includes('ifsi-abc-v'+meta.version.replaceAll('.','-')+'-local-'),'PWA cache de version non synchronisé');
