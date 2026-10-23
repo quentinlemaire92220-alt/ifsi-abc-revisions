@@ -25,8 +25,8 @@ assert.equal(coping.length,1);assert.equal(coping[0].start,'09:45');
 assert.match(coping[0].room,/confirmer/);
 for(const [d,title,rooms] of [['2026-11-04','Recueil de données',['S10','S11','S3']],['2026-11-06','cartes mécanographiques',['S10','S11','S3']]]){
  const e=pick(d,'all',title);assert.equal(e.length,3);
- assert.deepEqual(e.map(x=>x.room),rooms);
- assert.deepEqual(e.map(x=>x.groupLabel),['Groupe 1/3','Groupe 2/3','Groupe 3/3']);
+ assert.deepEqual(Array.from(e,x=>x.room),rooms);
+ assert.deepEqual(Array.from(e,x=>x.groupLabel),['Groupe 1/3','Groupe 2/3','Groupe 3/3']);
 }
 for(const [day,promo] of [['2026-11-05','A'],['2026-11-06','B']]){
  assert.equal(pick(day,promo,'Psychogestuelle').length,1);
