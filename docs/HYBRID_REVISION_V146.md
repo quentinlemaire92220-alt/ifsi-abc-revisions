@@ -10,6 +10,10 @@ Un seul PDF étudiant **Fiche de révision hybride infographiée** par cours/par
 
 **Inchangés :** les contrats, règles et rendus QCM, flashcards et vocaux ; les planches anatomiques autonomes et les schémas de QCM restent possibles comme ressources **spécifiques**, selon leurs propres contrats, non comme seconde fiche obligatoire.
 
+## Médiathèque médicale — recherche obligatoire avant création (v1.47, 23/10/2026)
+
+Avant chaque illustration intégrée à une **nouvelle fiche hybride** : **chercher** dans la médiathèque privée par notion, organe, mécanisme et cours → **réutiliser** si le visuel est exact, validé et autorisé → **adapter puis revalider** si une variante convient → **créer** seulement si aucune image exploitable n'existe → **indexer** toute image nouvelle ou variante (ID, source, notions, cours, version, droits, statut). Conserver les originaux ; éviter les doublons de fichiers et les régénérations inutiles. Un `sourceStatus: active` ou un style validé ne valent ni validation médicale ni permission de diffusion. Les éléments non vérifiés restent privés en attente. **Ne pas publier de lien, ID Drive ou information de la médiathèque privée dans le dépôt.**
+
 ## Compatibilité, sans migration rétroactive
 
 - `lean_v1` : ancien pack avec deux PDF, inchangé, validé par `tests/lean-course-contract.mjs`.
