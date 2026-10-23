@@ -12,7 +12,15 @@ assert.equal(deck.filter(c=>c.courseId==='droits_patients'&&!String(c.id).starts
 assert.equal(bank.flatMap(q=>q.flashcards||[]).length,24);
 assert.deepEqual(read('qextra-55.txt'),old('qextra-55.txt'),'85 questions et cartes historiques préservées');
 assert.deepEqual(read('vocals.json'),old('vocals.json'),'Aucun MP3 modifié');
-assert.deepEqual(read('vocabulaire-v1.json'),old('vocabulaire-v1.json'),'Lexique partagé préservé');
+// Tolérer UNIQUEMENT l'ajout de termes pour un nouveau cours ; aucune entrée historique ne change.
+const previousVocabulary=old('vocabulaire-v1.json'),currentVocabulary=read('vocabulaire-v1.json');
+assert.deepEqual(currentVocabulary.entries.slice(0,previousVocabulary.entries.length),previousVocabulary.entries,'Lexique partagé historique intégralement préservé');
+for(const key of Object.keys(previousVocabulary).filter(k=>!['entries','updatedAt'].includes(k)))
+  assert.deepEqual(currentVocabulary[key],previousVocabulary[key],'Métadonnées du glossaire préservées : '+key);
+const previousCourseIds=new Set(old('course-registry-v741.json').courses.map(c=>c.id));
+const appendedVocabulary=currentVocabulary.entries.slice(previousVocabulary.entries.length);
+assert.ok(appendedVocabulary.every(x=>x.courseIds?.length===1&&!previousCourseIds.has(x.courseIds[0])),
+ 'Seuls de nouveaux cours peuvent compléter le lexique dans cette révision');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
 for(const s of oldSheets)assert.deepEqual(sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url),s);
