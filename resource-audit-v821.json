@@ -1,16 +1,16 @@
 {
-  "version": "8.30.117",
-  "auditedAt": "2026-10-22",
+  "version": "8.30.118",
+  "auditedAt": "2026-10-23",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.110 : 35 vocaux pour 14 cours ; 131 enregistrements antérieurs conservés, 25 copies identiques et 2 doublons du ZIP ignorés.",
+  "note": "V8.30.118 : complément Droits des patients, une fiche hybride, 20 QCM et 24 cartes ; supports et six MP3 historiques conservés.",
   "expectedTotals": {
     "courses": 50,
-    "sheets": 66,
+    "sheets": 67,
     "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,

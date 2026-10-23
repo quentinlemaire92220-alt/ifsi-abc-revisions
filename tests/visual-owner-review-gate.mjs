@@ -2,6 +2,7 @@
 // La CI ne voit PAS les PDF privés : ce contrat n'atteste pas l'anatomie, il empeche
 // de remplacer la revue humaine par "il y a X images" ou un drapeau PASS arbitraire.
 import assert from 'node:assert/strict';
+import {validateHybridPart} from './hybrid-sheet-contract.mjs';
 
 const digest=x=>typeof x==='string'&&/^[a-f0-9]{64}$/i.test(x);
 const driveId=x=>x?.driveId||String(x?.url||'').match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1]||null;
@@ -102,6 +103,35 @@ export function requireVisualReviewIfChanged(courseId,prior,next,oldData,newData
  const prev=visualResourceFingerprint(courseId,prior,oldData);
  const curr=visualResourceFingerprint(courseId,next,newData);
  if(curr===null||prev===curr)return false; // aucune nouvelle fiche/illustration
+ // Un complément hybride ne réouvre pas la validation des PDF historiques intacts.
+ // L'exemption est limitée à une addition : retirer le complément doit restituer
+ // exactement l'ancienne empreinte visuelle (PDF, images, audits et associations).
+ const supplements=(next.partDeliveries||[]).filter(p=>p.deliveryMode==='existing_course_complement');
+ if(prior&&supplements.length){
+  const ids=new Set(supplements.map(p=>p.sheetResourceId));
+  const historic={...next,partDeliveries:(next.partDeliveries||[]).map(p=>ids.has(p.sheetResourceId)?{
+   ...p,sheetResourceId:undefined,sheetResourceIds:[]
+  }:p)};
+  const newRows=(newData.sheets||[]).filter(s=>s.courseId===courseId&&!oldData.sheets.some(o=>o.courseId===courseId&&o.resourceId===s.resourceId));
+  assert.equal(newRows.length,ids.size,courseId+': seules les fiches de complément déclarées sont autorisées');
+  assert.equal(visualResourceFingerprint(courseId,historic,newData),prev,
+   courseId+': une fiche/illustration historique a changé pendant l’ajout du complément');
+  for(const p of supplements){
+   validateHybridPart(courseId,p,newData.sheets);
+   const row=newRows.find(s=>s.resourceId===p.sheetResourceId);
+   assert.ok(row,courseId+': le complément doit être une nouvelle fiche');
+   assert.equal(row.primaryRevision,false,courseId+': le complément ne remplace pas le cours historique');
+   const review=p.ownerReview;
+   assert.equal(review?.status,'owner_accepted',courseId+': complément non accepté');
+   assert.equal(review.pdfSha256,p.visualAudit.pdfSha256,courseId+': PDF modifié après revue');
+   assert.equal(review.pagesChecked,p.visualAudit.pageCount,courseId+': revue de pages incomplète');
+   assert.equal(review.visualReference,'pharmacologie_v1.47_24_pages');
+   assert.equal(review.scientificReview,'documentary_review_completed');
+   assert.equal(review.independentMedicalReview,'not_attested');
+   assert.equal((next.artifactSha256s||{})[driveId(row)],review.pdfSha256);
+  }
+  return true;
+ }
  validateVisualOwnerReview(courseId,next,newData);
  return true;
 }

@@ -4,11 +4,12 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {isDeepStrictEqual} from 'node:util';
+import {runInNewContext} from 'node:vm';
 import {
  isScriptWorkItem,expectedPublicCourseAfterWithdrawal,
  expectedPublicDeliveryAfterWithdrawal,isApprovedPrivateReferenceWithdrawal
 } from './private-resource-withdrawal-lib.mjs';
-import {publicationBundle,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
+import {publicationBundle,bundleDigest,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
@@ -19,15 +20,73 @@ const before=file=>JSON.parse(execFileSync('git',['show',base+':'+file],{encodin
 const oldReg=before('course-registry-v741.json'),currentReg=disk('course-registry-v741.json');
 const oldMan=before('docs/course-deliveries.json'),currentMan=disk('docs/course-deliveries.json');
 
+const visibilitySource=readFileSync('v74-pack.js','utf8');
+const visibilityStart=visibilitySource.indexOf('const studentVisibleDocument74=');
+const visibilityEnd=visibilitySource.indexOf('function renderCourse74()',visibilityStart);
+assert.ok(visibilityStart>=0&&visibilityEnd>visibilityStart);
+const visible=runInNewContext(visibilitySource.slice(visibilityStart,visibilityEnd)+'\nstudentVisibleDocument74;');
+const without=(value,keys)=>Object.fromEntries(Object.entries(value).filter(([key])=>!keys.includes(key)));
+const publicDocuments=c=>(c.additionalDocuments||[]).filter(d=>!isScriptWorkItem(d));
+function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery){
+ const id=oldCourse.id,approval=nextDelivery.publicationApproval;
+ assert.equal(approval?.status,'approved',id+': complément sans approbation');
+ assert.equal(approval.authorization,'explicit_go_publication',id+': GO explicite absent');
+ assert.equal(approval.scope,'course_package',id+': portée du complément incorrecte');
+ assert.notDeepEqual(approval,oldDelivery.publicationApproval,id+': accord historique réutilisé');
+ assert.deepEqual(without(nextCourse,['additionalDocuments','flashcardTarget']),
+  without(expectedPublicCourseAfterWithdrawal(oldCourse),['additionalDocuments','flashcardTarget']),id+': support ou identité historique modifié');
+ const historical=publicDocuments(oldCourse),current=nextCourse.additionalDocuments||[];
+ assert.deepEqual(current.filter(d=>historical.some(o=>isDeepStrictEqual(o,d))),historical,id+': document étudiant historique perdu ou modifié');
+ for(const doc of current){
+  assert.ok(visible(doc)&&!isScriptWorkItem(doc),id+': réinjection de document privé');
+  if(historical.some(o=>isDeepStrictEqual(o,doc)))continue;
+  const fileId=String(doc.url||'').match(/^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:\?|$)/)?.[1];
+  assert.ok(fileId,id+': complément sans fichier Drive identifié');
+  assert.match(nextDelivery.artifactSha256s?.[fileId]||'',/^[a-f0-9]{64}$/,id+': complément non lié au package examiné');
+ }
+ if(nextCourse.flashcardTarget!==oldCourse.flashcardTarget){
+  assert.ok(Number.isInteger(nextCourse.flashcardTarget)&&nextCourse.flashcardTarget>oldCourse.flashcardTarget,id+': cartes historiques tronquées');
+  assert.equal(nextCourse.flashcardTarget,nextDelivery.flashcardCount,id+': nombre de cartes divergent');
+ }
+ const expected=expectedPublicDeliveryAfterWithdrawal(oldDelivery,oldCourse);
+ const additiveFields=['status','blockers','qcmBanks','qcmCount','flashcardCount','scriptsPreparedCount','artifactSha256s','partDeliveries','publicationApproval'];
+ assert.deepEqual(without(nextDelivery,additiveFields),without(expected,additiveFields),id+': ressource historique modifiée hors complément');
+ for(const [fileId,sha] of Object.entries(expected.artifactSha256s||{}))
+  assert.equal(nextDelivery.artifactSha256s?.[fileId],sha,id+': empreinte historique modifiée');
+ const previousBanks=expected.qcmBanks||[expected.qcmBank].filter(Boolean);
+ assert.ok(previousBanks.every(p=>(nextDelivery.qcmBanks||[nextDelivery.qcmBank]).includes(p)),id+': ancienne banque retirée');
+ assert.ok(nextDelivery.qcmCount>=expected.qcmCount&&nextDelivery.flashcardCount>=expected.flashcardCount,id+': contenu historique tronqué');
+}
+
+const approvedUpdates=new Set(currentMan.courses.filter(c=>
+ !isDeepStrictEqual(c.publicationApproval,oldMan.courses.find(p=>p.courseId===c.courseId)?.publicationApproval)).map(c=>c.courseId));
+const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);
+if(approvedUpdates.size){
+ // Une publication ultérieure est contrôlée comme un vrai package ; elle ne
+ // bénéficie jamais de l'exemption réservée au retrait PURE de références.
+ assert.equal(removed,0,'Ne pas mélanger retrait initial et publication pédagogique');
+ execFileSync(process.execPath,['tests/course-publication-approval.mjs'],
+  {env:{...process.env,IFSI_BASE_SHA:base},maxBuffer:32*1024*1024,stdio:'pipe'});
+}
+
 assert.equal(oldReg.courses.length,50);
 assert.equal(currentReg.courses.length,50);
-assert.deepEqual(currentReg.courses,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
- 'Registre : seule la suppression des scripts de travail est permise');
+const registryForWithdrawal=clone(currentReg.courses);
+for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
+ const oldCourse=oldReg.courses.find(c=>c.id===course.id);
+ assert.ok(oldCourse,'Complément sans cours historique');
+ preserveApprovedAddition(oldCourse,course,oldMan.courses.find(c=>c.courseId===course.id),currentMan.courses.find(c=>c.courseId===course.id));
+ Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));
+}
+assert.deepEqual(registryForWithdrawal,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
+ 'Registre : changement hors retrait pur ou complément approuvé');
 assert.deepEqual(Object.keys(currentReg),Object.keys(oldReg),'Structure du registre modifiée');
 assert.equal(currentReg.version,disk('build-meta.json').version,'Version du registre alignée sur la release courante');
-const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);
 assert.ok([0,10].includes(removed),'Retrait initial ou état déjà expurgé attendu');
-assert.equal(currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).length,0),23);
+const preservedDocumentCount=oldReg.courses.reduce((n,c)=>n+publicDocuments(c).length,0);
+const addedDocumentCount=currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(d=>
+ !publicDocuments(oldReg.courses.find(o=>o.id===c.id)).some(o=>isDeepStrictEqual(o,d))).length,0);
+assert.equal(currentReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).length,0),preservedDocumentCount+addedDocumentCount);
 assert.ok(currentReg.courses.every(c=>(c.additionalDocuments||[]).every(d=>!isScriptWorkItem(d))),
  'Scripts encore dans la liste publique');
 
@@ -48,6 +107,11 @@ const actualMan=clone(currentMan);
 const sheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json'));
 for(const c of actualMan.courses){
  const previous=expectedMan.courses.find(x=>x.courseId===c.courseId);
+ if(approvedUpdates.has(c.courseId)){
+  // Les seules différences admises ont passé la préservation ci-dessus et
+  // le digest complet du package ; l'ancien manifeste reste la référence P0.
+  Object.keys(c).forEach(k=>delete c[k]);Object.assign(c,clone(previous));continue;
+ }
  if(!isDeepStrictEqual(c.revisionSheetSupplement,previous.revisionSheetSupplement)){
   validateRevisionSheetSupplement(c.courseId,c,{sheets});
   // Autorisation additive propre à la fiche, contrôlée aussi par le garde-fou
@@ -61,7 +125,7 @@ assert.equal(currentMan.courses.length,oldMan.courses.length,'Livraison supprim�
 for(const c of currentMan.courses){
  assert.equal(c.vocalScripts,undefined,'Scripts privés présents dans le manifeste');
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,'Dossier interne présent dans le manifeste');
- assert.deepEqual(c.publicationApproval,oldMan.courses.find(x=>x.courseId===c.courseId).publicationApproval,
+ if(!approvedUpdates.has(c.courseId))assert.deepEqual(c.publicationApproval,oldMan.courses.find(x=>x.courseId===c.courseId).publicationApproval,
   'Une approbation approuvée ne doit pas être réécrite');
 }
 assert.deepEqual(currentMan.audioSupplements,oldMan.audioSupplements,'MP3 publiés modifiés');
@@ -71,7 +135,7 @@ const course={id:'demo',label:'Démo',additionalDocuments:[
  {label:'Scripts vocaux',url:'https://drive.google.com/file/d/TEST_SCRIPT/view'},
  {label:'Fiche de révision',url:'https://drive.google.com/file/d/TEST_PDF/view'}
 ]};
-const delivery={courseId:'demo',qcmBank:'qdemo.json',
+const delivery={courseId:'demo',qcmBank:'qdemo.json',qcmCount:1,flashcardCount:1,
  vocalScripts:[{number:1,driveId:'TEST_SCRIPT',url:'https://drive.google.com/file/d/TEST_SCRIPT/view'}],
  folders:{'08':'TEST_WORK_FOLDER','02':'TEST_PDF_FOLDER'},
  artifactSha256s:{TEST_SCRIPT:'a'.repeat(64),TEST_PDF:'b'.repeat(64)},
@@ -110,4 +174,27 @@ for(const mutate of [
    publicationBundle('demo',bad,newData)),false,'Modification de manifeste non autorisée acceptée');
 }
 assert.equal(isDeepStrictEqual(oldMan.courses.map(x=>x.courseId),currentMan.courses.map(x=>x.courseId)),true);
-console.log('PASS P0: 50 cours et 23 documents élèves conservés ; retrait initial ou état déjà expurgé vérifié ; approbations historiques intactes.');
+
+// Cas séparé : un ajout approuvé ne devient pas une révocation pure. L'accord
+// absent, le document privé et l'altération d'une ancienne empreinte restent refusés.
+const oldCourse=clone(newData.registry.courses[0]),newCourse=clone(oldCourse);
+newCourse.additionalDocuments.push({label:'Complément QCM',url:'https://drive.google.com/file/d/NEW_PUBLIC_PDF/view'});
+const approvedData=clone(newData);approvedData.registry.courses=[newCourse];
+const approvedDelivery=clone(updatedDelivery);approvedDelivery.artifactSha256s.NEW_PUBLIC_PDF='c'.repeat(64);
+approvedDelivery.publicationApproval={...approvedDelivery.publicationApproval,approvedAt:'2026-10-23T12:00:00Z',
+ bundleSha256:bundleDigest(publicationBundle('demo',approvedDelivery,approvedData))};
+assert.equal(isApprovedPrivateReferenceWithdrawal('demo',updatedDelivery,approvedDelivery,newBundle,publicationBundle('demo',approvedDelivery,approvedData)),false);
+assert.equal(validateChangedDeliveries({courses:[updatedDelivery]},{courses:[approvedDelivery]},newData,approvedData).length,1);
+preserveApprovedAddition(oldCourse,newCourse,updatedDelivery,approvedDelivery);
+for(const mutate of [
+ (course,d)=>{d.publicationApproval.status='pending'},
+ (course,d)=>{course.additionalDocuments.push({label:'Transcription orale',visibility:'private'})},
+ (course,d)=>{course.additionalDocuments[0].url='https://drive.google.com/file/d/CHANGED/view'},
+ (course,d)=>{d.artifactSha256s.TEST_PDF='d'.repeat(64)}
+]){
+ const c=clone(newCourse),d=clone(approvedDelivery);mutate(c,d);
+ assert.throws(()=>preserveApprovedAddition(oldCourse,c,updatedDelivery,d));
+}
+const missingApproval=clone(approvedDelivery);missingApproval.publicationApproval.status='pending';
+assert.throws(()=>validateChangedDeliveries({courses:[updatedDelivery]},{courses:[missingApproval]},newData,approvedData));
+console.log(`PASS P0: 50 cours, ${preservedDocumentCount} documents historiques conservés, ${addedDocumentCount} ajouts approuvés ; zéro pointeur privé et retrait pur toujours strict.`);
