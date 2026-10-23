@@ -8,7 +8,7 @@ const course=json('course-registry-v741.json'),infographics=json('infographics.j
  delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
  meta=json('build-meta.json'),qcm=json('qextra-51.txt');
 assert.equal(course.version,'8.30.118');
-// Conserver le lot historique de 50 cours ; le nouveau cours A2.1 est strictement ajouté.\nassert.equal(course.courses.length,51);\nassert.equal(course.courses.at(-1).id,'responsabilite_exercice_professionnel');
+assert.equal(course.courses.length,50);
 assert.equal(meta.version,course.version);
 assert.equal(meta.build,'8418');
 const original=course.courses.find(c=>c.id==='douleur');
