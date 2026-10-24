@@ -2049,8 +2049,7 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2115,8 +2114,7 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante",
-        "d1_communication_td1"
+        "psychologie_sante"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2224,8 +2222,7 @@
       "etymologie": "mal- (de façon nuisible) + traitance (manière de traiter autrui).",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere",
-        "d1_communication_td1"
+        "histoire_profession_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2237,8 +2234,7 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2251,8 +2247,7 @@
       "etymologie": "auto- (soi-même) + -nomie (règle, organisation) ; capacité de décision de la personne.",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere",
-        "d1_communication_td1"
+        "histoire_profession_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3544,8 +3539,7 @@
       "etymologie": "em- (dans) + -pathie (ressenti) ; compréhension du vécu d'autrui.",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante",
-        "d1_communication_td1"
+        "psychologie_sante"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3570,8 +3564,7 @@
       "etymologie": "consentement (accord) + aux soins (actes proposés).",
       "courseIds": [
         "introduction_droit",
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -4937,8 +4930,7 @@
       "distinction": "Distinct de la seule responsabilité pour les conséquences de ses actes.",
       "theme": "Éthiques du care",
       "courseIds": [
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "qcmQuestionId": "care_p02_vocab_006",
       "flashcard": {
@@ -5232,8 +5224,7 @@
       "distinction": "Ne se déduit pas à lui seul du silence, d’un diagnostic ou de l’accord d’un proche.",
       "theme": "Éthiques du care",
       "courseIds": [
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "qcmQuestionId": "care_p02_vocab_021",
       "flashcard": {
@@ -6064,6 +6055,210 @@
         "kind": "Vocabulaire"
       },
       "sourceType": "revision_captures"
+    },
+    {
+      "id": "communication-verbale",
+      "term": "Communication verbale",
+      "theme": "Communication et relation soignante",
+      "definition": "Transmission d’informations par les mots, prononcés ou écrits.",
+      "distinction": "Ne se confond pas avec le ton de la voix ou la gestuelle.",
+      "etymologie": "Verbale renvoie au verbe et à l’usage des mots.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "communication-paraverbale",
+      "term": "Communication paraverbale",
+      "theme": "Communication et relation soignante",
+      "definition": "Manière dont la voix porte un message : intonation, débit, volume, pauses et timbre.",
+      "distinction": "Le verbal porte les mots, le paraverbal leur musicalité.",
+      "etymologie": "Para- signifie à côté ; verbal renvoie aux paroles.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "communication-non-verbale",
+      "term": "Communication non verbale",
+      "theme": "Communication et relation soignante",
+      "definition": "Échanges signifiés par les gestes, postures, regards, mimiques et distances.",
+      "distinction": "Elle peut soutenir ou contredire les paroles prononcées.",
+      "etymologie": "Non- indique l’absence de mots articulés dans ce canal.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "emetteur-communication",
+      "term": "Émetteur",
+      "theme": "Communication et relation soignante",
+      "definition": "Personne qui construit et transmet un message en choisissant une formulation et un canal.",
+      "distinction": "Le récepteur reçoit et interprète le message, sans garantie de compréhension.",
+      "etymologie": "Émettre vient du latin emittere : faire sortir, envoyer.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "recepteur-communication",
+      "term": "Récepteur",
+      "theme": "Communication et relation soignante",
+      "definition": "Interlocuteur qui reçoit et interprète un message en fonction de son contexte et de ses capacités.",
+      "distinction": "Recevoir n’implique pas automatiquement comprendre le sens voulu.",
+      "etymologie": "Recevoir vient du latin recipere : recueillir, accueillir.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "canal-communication",
+      "term": "Canal de communication",
+      "theme": "Communication et relation soignante",
+      "definition": "Voie ou moyen choisi pour transmettre une information, comme la parole, l’écrit ou un pictogramme.",
+      "distinction": "Le message est le contenu transmis ; le canal est son moyen de transmission.",
+      "etymologie": "Canal désigne par analogie une voie de passage.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "feedback-communication",
+      "term": "Feed-back (rétroaction)",
+      "theme": "Communication et relation soignante",
+      "definition": "Retour verbal ou non verbal permettant de vérifier la réception et d’ajuster la communication.",
+      "distinction": "Un simple oui ne prouve pas toujours une compréhension suffisante.",
+      "etymologie": "Feed-back est un emprunt à l’anglais, retour d’information.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "filtres-communication",
+      "term": "Filtres de communication",
+      "theme": "Communication et relation soignante",
+      "definition": "Expériences, émotions, croyances et représentations pouvant modifier le sens perçu d’un message.",
+      "distinction": "Un filtre peut déformer l’interprétation, même si les mots restent identiques.",
+      "etymologie": "Filtre est pris au sens figuré : élément modifiant ce qui passe.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "congruence-soignante",
+      "term": "Congruence",
+      "theme": "Communication et relation soignante",
+      "definition": "Cohérence entre les paroles, le ton, l’attitude et l’expression corporelle du soignant.",
+      "distinction": "La discordance entre paroles et attitudes peut fragiliser la confiance.",
+      "etymologie": "Du latin congruere : correspondre, être en accord.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "proxemie",
+      "term": "Proxémie",
+      "theme": "Communication et relation soignante",
+      "definition": "Gestion de la distance interpersonnelle et de l’espace intime dans une relation.",
+      "distinction": "La juste distance s’adapte à la culture, à la situation et au patient.",
+      "etymologie": "Du latin proximus : le plus proche ; étude des distances sociales.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "reformulation-soin",
+      "term": "Reformulation",
+      "theme": "Communication et relation soignante",
+      "definition": "Action de redire avec ses propres mots ce que l’on a compris pour vérifier et clarifier un propos.",
+      "distinction": "Répéter mécaniquement sans vérifier le sens n’est pas une reformulation utile.",
+      "etymologie": "Re- exprime la reprise ; formulation désigne la mise en mots.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "communication-adaptee",
+      "term": "Communication adaptée",
+      "theme": "Communication et relation soignante",
+      "definition": "Échange ajusté aux besoins, capacités cognitives et sensorielles, attentes et contexte d’une personne.",
+      "distinction": "Parler plus fort ou plus longuement ne garantit pas une meilleure compréhension.",
+      "etymologie": "Adapter signifie ajuster une conduite à une situation particulière.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "distance-relationnelle",
+      "term": "Juste distance relationnelle",
+      "theme": "Communication et relation soignante",
+      "definition": "Position professionnelle qui protège l’intimité et favorise une relation respectueuse sans confusion des rôles.",
+      "distinction": "La proximité humaine n’impose ni familiarité ni tutoiement.",
+      "etymologie": "Distance est prise au sens propre et figuré de l’espace relationnel.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "relation-civilite",
+      "term": "Relation de civilité",
+      "theme": "Communication et relation soignante",
+      "definition": "Relation fondée sur les codes sociaux élémentaires comme le salut, le respect et le vouvoiement adapté.",
+      "distinction": "La civilité ne suffit pas à elle seule pour conduire une relation de soins.",
+      "etymologie": "Civilité vient du latin civilitas : conduite sociale du citoyen.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "relation-soins",
+      "term": "Relation de soins",
+      "theme": "Communication et relation soignante",
+      "definition": "Lien professionnel construit lors de l’accueil, des explications et de l’accompagnement d’un soin.",
+      "distinction": "Elle n’est pas limitée à un geste technique : l’écoute en fait partie.",
+      "etymologie": "Relation vient du latin relatio : lien ; soin désigne l’attention portée.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "relation-educative",
+      "term": "Relation éducative",
+      "theme": "Communication et relation soignante",
+      "definition": "Accompagnement visant à permettre à la personne de comprendre et de participer à ses soins et traitements.",
+      "distinction": "Éduquer ne consiste pas simplement à donner des ordres.",
+      "etymologie": "Éduquer vient du latin educare : former, accompagner.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "relation-therapeutique",
+      "term": "Relation thérapeutique",
+      "theme": "Communication et relation soignante",
+      "definition": "Relation de soin mobilisant des moyens adaptés pour soutenir l’expression et un objectif thérapeutique.",
+      "distinction": "Elle est plus structurée qu’une simple relation de courtoisie.",
+      "etymologie": "Thérapeutique vient du grec therapeia : soin, service.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
     }
   ]
 }
