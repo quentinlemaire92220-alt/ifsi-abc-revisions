@@ -24,6 +24,14 @@ for(const s of [
  'body.v86-home #v76Home>#ifsiFreeNote'
 ])assert.ok(ui.includes(s),'Bandeau accueil incomplet : '+s);
 assert.ok(!ui.toLowerCase().includes('lycée'),'Le mot lycée ne doit pas figurer dans le bandeau');
+const cleanHome=read('v86-home-clean.js');
+const hiddenSelector=cleanHome.match(/body\.v86-home #v76Home>\*:not\([^\n]+?\)\{display:none!important\}/)?.[0];
+assert.ok(hiddenSelector,'Filtre de visibilité historique de l’accueil introuvable');
+for(const id of ['#ifsiBrandHero','#ifsiFreeNote']){
+ assert.ok(hiddenSelector.includes(':not('+id+')'),'Contenu pédagogique de l’accueil masqué par v86-home : '+id);
+}
+assert.ok(ui.includes('body.v86-home #v76Home>#ifsiBrandHero{display:grid!important}'),'Bannière non visible dans l’accueil');
+assert.ok(ui.includes('body.v86-home #v76Home>#ifsiFreeNote{display:flex!important}'),'Encart gratuit non visible dans l’accueil');
 const releaseMeta=JSON.parse(read('build-meta.json'));
 assert.ok(index.includes(`v8419-home-brand.js?v=${releaseMeta.build}`),'Module accueil absent du HTML');
 assert.ok(sw.includes('v8419-home-brand.js'),'Module accueil absent du SW');
