@@ -2049,8 +2049,7 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -6056,6 +6055,18 @@
         "kind": "Vocabulaire"
       },
       "sourceType": "revision_captures"
+    },
+    {
+      "id": "d1_comm_td1_congruence",
+      "term": "Congruence",
+      "theme": "Communication et relation soignante",
+      "definition": "Concordance entre la communication verbale et la communication non verbale du soignant, contribuant à la cohérence du message adressé au patient.",
+      "distinction": "Une discordance entre les paroles et l'attitude du soignant peut créer un malaise ou altérer la compréhension.",
+      "etymologie": "Du latin congruere : être en accord, correspondre ; notion d'adéquation.",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
     }
   ]
 }
