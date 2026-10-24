@@ -6,7 +6,7 @@ body.v86-home #v76More,body.v86-home #v742Changelog,body.v86-home #v72Changelog{
 body.v86-home #home>.section,body.v86-home #home>.card,body.v86-home #home>.grid,body.v86-home #home>.stack{display:none!important}
 body.v86-home #home>#v76Home{display:grid!important}
 body.v86-home #v76Home>#v82Primary,body.v86-home #v76Home>.v76-today,body.v86-home #v86Tools{display:block!important}
-body.v86-home #v76Home>*:not(#v82Primary):not(.v76-today):not(#v86Tools):not(#v8303HomeExtras){display:none!important}
+body.v86-home #v76Home>*:not(#v82Primary):not(.v76-today):not(#v86Tools):not(#v8303HomeExtras):not(#ifsiBrandHero):not(#ifsiFreeNote){display:none!important}
 .v86-tools{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .v86-tool{border:1px solid var(--line);background:var(--card);border-radius:15px;padding:11px 12px;color:var(--ink);text-align:left;cursor:pointer;display:flex;align-items:center;gap:9px;min-width:0}
 .v86-tool .i{font-size:20px;flex:0 0 auto}.v86-tool b{display:block;font-size:13px}.v86-tool small{display:block;color:var(--muted);font-size:10px;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
