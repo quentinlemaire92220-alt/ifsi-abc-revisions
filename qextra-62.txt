@@ -4,7 +4,7 @@
     "courseId": "d1_communication_td1",
     "theme": "Fondamentaux",
     "difficulty": "easy",
-    "question": "Quelles affirmations définissent correctement la communication dans ce TD ?",
+    "question": "Quelles affirmations définissent correctement la communication ?",
     "choices": [
       "Un processus cognitif, social et affectif.",
       "Une garantie que le récepteur a compris.",
@@ -77,7 +77,7 @@
     "courseId": "d1_communication_td1",
     "theme": "Fondamentaux",
     "difficulty": "easy",
-    "question": "Dans le schéma simplifié du TD, que retrouve-t-on ?",
+    "question": "Quels éléments interviennent dans le processus de communication entre plusieurs personnes ?",
     "choices": [
       "La disparition obligatoire de tous les filtres.",
       "Une prescription médicale obligatoire.",
@@ -298,19 +298,19 @@
     "courseId": "d1_communication_td1",
     "theme": "Fondamentaux",
     "difficulty": "hard",
-    "question": "Quelles affirmations sur les proportions 7/38/55 du support sont prudentes ?",
+    "question": "Quelles affirmations sur les proportions 7/38/55 attribuées à Mehrabian sont prudentes ?",
     "choices": [
       "Elles remplacent l’évaluation de la compréhension.",
       "Elles doivent être appliquées sans contexte.",
       "Il faut éviter de les généraliser à toute communication.",
       "Elles prouvent que 93 % de toute information médicale est non verbale.",
-      "Le support les attribue à Mehrabian."
+      "Ces proportions sont attribuées à Mehrabian."
     ],
     "answers": [
       2,
       4
     ],
-    "explanation": "Le support cite ces pourcentages mais leur portée ne doit pas être généralisée à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation.",
+    "explanation": "Ces pourcentages sont attribués à Mehrabian mais leur portée ne doit pas être généralisée à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation.",
     "course": "La communication — TD1",
     "ue": "S1 D1",
     "source": "TD1 — La communication, 20 octobre 2026",
@@ -320,7 +320,7 @@
       {
         "front": "Quelle prudence appliquer aux chiffres 7/38/55 ?",
         "answers": [
-          "Le TD les mentionne mais il ne faut pas les présenter comme une règle universelle de toutes les communications."
+          "Ces proportions sont mentionnées comme repères, mais elles ne constituent pas une règle universelle applicable à toutes les communications."
         ],
         "explanation": "La portée de ces pourcentages n’est pas attestée par le dossier étudié.",
         "kind": "Notion du cours",
@@ -429,7 +429,7 @@
     "sourceKind": "support_officiel",
     "flashcards": [
       {
-        "front": "Quels filtres sont cités dans le TD ?",
+        "front": "Quels filtres peuvent influencer la communication ?",
         "answers": [
           "Les expériences, émotions, croyances, cultures, normes et représentations, entre autres."
         ],
@@ -570,7 +570,7 @@
       1,
       3
     ],
-    "explanation": "Le TD indique que des émotions même extérieures à la situation peuvent déformer le sens reçu. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.",
+    "explanation": "Des émotions même extérieures à la situation peuvent déformer le sens reçu. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.",
     "course": "La communication — TD1",
     "ue": "S1 D1",
     "source": "TD1 — La communication, 20 octobre 2026",
@@ -1121,7 +1121,7 @@
     "courseId": "d1_communication_td1",
     "theme": "Attitudes et obstacles",
     "difficulty": "medium",
-    "question": "Dans le TD, l’empathie est surtout…",
+    "question": "Quelles attitudes traduisent une posture empathique en situation de soins ?",
     "choices": [
       "Une obligation d’absorber sa souffrance.",
       "Une tentative de comprendre le vécu de l’autre.",
@@ -1283,7 +1283,7 @@
       1,
       3
     ],
-    "explanation": "Le support cite bruit, interruption, odeurs, chaleur/froid, espace inadapté et confidentialité insuffisante. Le lieu doit au contraire soutenir l’échange.",
+    "explanation": "Bruit, interruptions, odeurs, chaleur ou froid, espace inadapté et confidentialité insuffisante peuvent perturber un entretien. Le lieu doit au contraire soutenir l’échange.",
     "course": "La communication — TD1",
     "ue": "S1 D1",
     "source": "TD1 — La communication, 20 octobre 2026",
@@ -1660,7 +1660,7 @@
       "Décrire les faits observables.",
       "Identifier besoins et obstacles.",
       "Porter immédiatement un jugement de valeur.",
-      "Relier la situation à une notion du TD."
+      "Mobiliser une notion professionnelle pour analyser les faits."
     ],
     "answers": [
       1,
