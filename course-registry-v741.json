@@ -993,6 +993,29 @@
         }
       ],
       "sourceNote": "Support natif non disponible ; 48 captures et transcriptions PT01/PT02, complément réglementaire sur le secret distinct des priorités de l'enseignant."
+    },
+    {
+      "id": "d1_communication_td1",
+      "label": "La communication — TD1",
+      "aliases": [
+        "Communication",
+        "TD1 La communication",
+        "D1.1 La communication",
+        "La communication, TD1 du 20 octobre 2026"
+      ],
+      "domain": "D",
+      "ue": "D1",
+      "officialSupportUrl": "https://drive.google.com/file/d/1RgUT6uxALeLWJDmiyPdFW-y6dE51qqwh/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1g6iONnLr8Cx0taOStG-ABzSldwXKgDE4/view",
+      "flashcardTarget": 40,
+      "authoredFlashcards": true,
+      "authoredFlashcardPresentation": "standalone_v1",
+      "additionalDocuments": [
+        {
+          "label": "Flashcards — 40 cartes",
+          "url": "https://drive.google.com/file/d/1owJ4bmrQ8XQxAG_squhE13lmQ3U3htUt/view"
+        }
+      ]
     }
   ],
   "auditBaseline": {
