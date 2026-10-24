@@ -640,7 +640,7 @@
     "number": 1,
     "theme": "Fondamentaux",
     "difficulty": "easy",
-    "question": "Quelles affirmations définissent correctement la communication dans ce TD ?",
+    "question": "Quelles affirmations définissent correctement la communication ?",
     "choices": [
       "Un processus cognitif, social et affectif.",
       "Une garantie que le récepteur a compris.",
@@ -703,7 +703,7 @@
     "number": 3,
     "theme": "Fondamentaux",
     "difficulty": "easy",
-    "question": "Dans le schéma simplifié du TD, que retrouve-t-on ?",
+    "question": "Dans un modèle simple du processus de communication, quels éléments interviennent ?",
     "choices": [
       "La disparition obligatoire de tous les filtres.",
       "Une prescription médicale obligatoire.",
@@ -894,19 +894,19 @@
     "number": 9,
     "theme": "Fondamentaux",
     "difficulty": "hard",
-    "question": "Quelles affirmations sur les proportions 7/38/55 du support sont prudentes ?",
+    "question": "À propos des proportions 7/38/55 associées aux travaux de Mehrabian, quelles affirmations sont justifiées ?",
     "choices": [
       "Elles remplacent l’évaluation de la compréhension.",
       "Elles doivent être appliquées sans contexte.",
       "Il faut éviter de les généraliser à toute communication.",
       "Elles prouvent que 93 % de toute information médicale est non verbale.",
-      "Le support les attribue à Mehrabian."
+      "Ces proportions sont associées aux travaux de Mehrabian."
     ],
     "answers": [
       2,
       4
     ],
-    "explanation": "Le support cite ces pourcentages mais leur portée ne doit pas être généralisée à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation."
+    "explanation": "Ces pourcentages ne doivent pas être généralisés à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation."
   },
   {
     "id": "D1_COMM_TD1_010",
@@ -994,7 +994,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quels filtres sont cités dans le TD ?",
+        "front": "Quels facteurs personnels peuvent filtrer un message dans un échange ?",
         "answers": [
           "Les expériences, émotions, croyances, cultures, normes et représentations, entre autres."
         ],
@@ -1004,7 +1004,7 @@
         "kind": "Notion précise",
         "front": "Quelle prudence appliquer aux chiffres 7/38/55 ?",
         "answers": [
-          "Le TD les mentionne mais il ne faut pas les présenter comme une règle universelle de toutes les communications."
+          "Ces proportions ne doivent pas être présentées comme une règle universelle de toutes les communications."
         ],
         "explanation": "La portée de ces pourcentages n’est pas attestée par le dossier étudié."
       }
@@ -1062,7 +1062,7 @@
       0,
       3
     ],
-    "explanation": "La proxémie étudie la distance relationnelle et l’espace intime. Le support insiste sur l’adaptation : pas de distance universelle imposable à toutes les situations.",
+    "explanation": "La proxémie étudie la distance relationnelle et l’espace intime. L’adaptation est essentielle : pas de distance universelle imposable à toutes les situations.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1127,7 +1127,7 @@
       1,
       3
     ],
-    "explanation": "Le TD indique que des émotions même extérieures à la situation peuvent déformer le sens reçu. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.",
+    "explanation": "Des émotions même extérieures à la situation peuvent modifier la réception du message. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1190,7 +1190,7 @@
     "answers": [
       0
     ],
-    "explanation": "Le support préconise un travail avant, pendant et après l’échange : préparation, choix du contexte, vérification du sens reçu. Jargon et absence de dialogue majorent le risque de perte.",
+    "explanation": "La prévention de la perte d’information exige un travail avant, pendant et après l’échange : préparation, choix du contexte, vérification du sens reçu. Jargon et absence de dialogue majorent le risque de perte.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1320,7 +1320,7 @@
       3,
       4
     ],
-    "explanation": "Le support demande de repérer les aptitudes à comprendre et mémoriser ainsi que les capacités sensorielles. Les caractéristiques du soignant ne suffisent pas à garantir la réception.",
+    "explanation": "Il faut repérer les aptitudes à comprendre et mémoriser ainsi que les capacités sensorielles. Les caractéristiques du soignant ne suffisent pas à garantir la réception.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1404,7 +1404,7 @@
     "number": 25,
     "theme": "Adaptation au patient",
     "difficulty": "hard",
-    "question": "Une personne refuse temporairement la toilette. Quelle posture rejoint le TD ?",
+    "question": "Une personne refuse temporairement la toilette. Quelles attitudes de communication privilégier ?",
     "choices": [
       "La fixation d’un horaire imposé sans possibilité de dialogue.",
       "Imposer immédiatement le soin pour gagner du temps.",
@@ -1449,7 +1449,7 @@
       2,
       3
     ],
-    "explanation": "Le cours intègre les familles dans la relation soignante tout en plaçant le patient au centre et en rappelant la confidentialité. La présence des proches ne supprime pas le respect de sa parole.",
+    "explanation": "La relation soignante peut inclure la famille tout en plaçant le patient au centre et en respectant la confidentialité. La présence des proches ne supprime pas le respect de sa parole.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1581,7 +1581,7 @@
     "answers": [
       2
     ],
-    "explanation": "Le TD liste empathie, congruence, écoute, disponibilité, objectivité et respect du silence. Jugements, ordres et banalisation sont au contraire des obstacles.",
+    "explanation": "Empathie, congruence, écoute, disponibilité, objectivité et respect du silence facilitent l’échange. Jugements, ordres et banalisation sont au contraire des obstacles.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1601,7 +1601,7 @@
     "number": 32,
     "theme": "Attitudes et obstacles",
     "difficulty": "medium",
-    "question": "Dans le TD, l’empathie est surtout…",
+    "question": "Dans la relation soignante, l’empathie consiste notamment à…",
     "choices": [
       "Une obligation d’absorber sa souffrance.",
       "Une tentative de comprendre le vécu de l’autre.",
@@ -1679,7 +1679,7 @@
       1,
       3
     ],
-    "explanation": "Le TD nomme les messages trop riches, trop complexes, incomplets ou sans retour comme obstacles. Reformulation et feed-back corrigent au contraire les difficultés.",
+    "explanation": "Les messages trop riches, trop complexes, incomplets ou sans retour sont des obstacles. Reformulation et feed-back corrigent au contraire les difficultés.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1743,7 +1743,7 @@
       1,
       3
     ],
-    "explanation": "Le support cite bruit, interruption, odeurs, chaleur/froid, espace inadapté et confidentialité insuffisante. Le lieu doit au contraire soutenir l’échange.",
+    "explanation": "Bruit, interruption, odeurs, températures inconfortables, espace inadapté et confidentialité insuffisante perturbent l’échange. Le lieu doit au contraire soutenir l’échange.",
     "flashcards": [
       {
         "kind": "Notion précise",
@@ -1875,7 +1875,7 @@
       2,
       4
     ],
-    "explanation": "Le silence peut avoir plusieurs sens. Le TD valorise le respect des silences et du rythme ainsi que la clarification au lieu d’une interprétation automatique."
+    "explanation": "Le silence peut avoir plusieurs sens. Il faut respecter les silences et le rythme de la personne, et clarifier plutôt qu’interpréter automatiquement."
   },
   {
     "id": "D1_COMM_TD1_041",
@@ -1983,7 +1983,7 @@
     "number": 44,
     "theme": "Situations et relations",
     "difficulty": "medium",
-    "question": "Dans une relation éducative, quel objectif rejoint le TD ?",
+    "question": "Dans une relation éducative, quels objectifs sont pertinents ?",
     "choices": [
       "Utiliser automatiquement du jargon.",
       "Se contenter de parler sans retour.",
@@ -2052,7 +2052,7 @@
       1,
       3
     ],
-    "explanation": "Le TD mentionne lieu, moment, espace, asymétrie des positions et entourage. Une position inconfortable ou dominante peut nuire à la relation."
+    "explanation": "Lieu, moment, espace, asymétrie des positions et entourage influent sur l’échange. Une position inconfortable ou dominante peut nuire à la relation."
   },
   {
     "id": "D1_COMM_TD1_047",
@@ -2068,7 +2068,7 @@
       "Décrire les faits observables.",
       "Identifier besoins et obstacles.",
       "Porter immédiatement un jugement de valeur.",
-      "Relier la situation à une notion du TD."
+      "Relier la situation à une notion de communication soignante."
     ],
     "answers": [
       1,
