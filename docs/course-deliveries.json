@@ -2030,7 +2030,18 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-24T08:45:00Z",
-        "bundleSha256": "b3b6cfbdc944858511d1aedc52db592328f2097f1d7385c2156fc87671a0d3ff"
+        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_text_layout_review",
+        "reviewedAt": "2026-10-24T08:45:00Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "pagesChecked": 19,
+        "reviewedPdfSha256s": {
+          "d1_communication_td1_fiche_p01": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf"
+        }
       }
     }
   ],
