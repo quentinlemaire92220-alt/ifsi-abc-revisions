@@ -12,7 +12,7 @@ const questions=[1,2,3,4,5].flatMap(n=>read('questions-'+n+'.json'));
 const vocabulary=read('vocabulaire-v1.json').entries;
 const infographics=read('infographics.json');
 const vocals=read('vocals.json');
-const banned=/IFSI ABC\\s*[•·]\\s*UE|POSTURE PROFESSIONNELLE (?:QCM|FLASHCARDS)\\s*[•·]|\\bPAGE\\s+\\d+|\\b10 questions\\b/i;
+const banned=/IFSI ABC\s*[•·]\s*UE|POSTURE PROFESSIONNELLE (?:QCM|FLASHCARDS)\s*[•·]|\bPAGE\s+\d+|\b10 questions\b/i;
 
 for(const prep of pending.courses){
  const id=prep.courseId;
@@ -59,7 +59,7 @@ for(const prep of pending.courses){
  }
  assert.equal(cards,prep.artifacts.flashcards,'Nombre de flashcards divergent');
  const publicMeta=JSON.stringify(prep);
- assert.ok(!/https?:\\/\\/drive\\.google\\.com/.test(publicMeta),'URL Drive privée exposée');
- assert.ok(!/\\b(?:script vocal private|recording_url|transcriptDriveId)\\b/i.test(publicMeta),'Source privée dans le manifeste');
+ assert.ok(!/https?:\/\/drive\.google\.com/.test(publicMeta),'URL Drive privée exposée');
+ assert.ok(!/\b(?:script vocal private|recording_url|transcriptDriveId)\b/i.test(publicMeta),'Source privée dans le manifeste');
  console.log('PASS préparation '+id+' : '+bank.length+' QCM, '+cards+' flashcards, '+lexicon.length+' termes ; catalogues étudiants intacts');
 }
