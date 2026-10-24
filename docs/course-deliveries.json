@@ -2128,8 +2128,8 @@
       },
       "artifactSha256s": {
         "1UR5GO7x6rJucv7R_YUSYOoC8PVVZVMuC": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
-        "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "fe4e6551428280e790a99eb0c4f347988e9ab0fbf0ed69b0277bb671b8398739",
-        "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "e5ae0165b8af8d4ee8cb0b8e370a44a17f02d8a9411fbea91e6fe97edb8a0923",
+        "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
+        "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718",
         "d1_posture_td2_qcm_public_candidate": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
         "d1_posture_td2_flashcards_public_candidate": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718"
       },
@@ -2168,14 +2168,14 @@
           "detail": "Un script privé est préparé ; aucun MP3 annoncé ni publié."
         },
         {
-          "resource": "qcm_drive_pdf",
-          "reason": "final_copy_sync_blocked",
-          "detail": "Copies Drive privées antérieures à la dernière formulation Q17 et au nettoyage des métadonnées QCM/cartes. Synchronisation finale refusée automatiquement ; les empreintes Drive authentiques sont conservées séparément."
+          "resource": "publication_approval_record",
+          "reason": "automatic_approval_review_refused",
+          "detail": "PDF finaux validés par le propriétaire, copies Drive privées remplacées et retéléchargées identiques. L'enregistrement de l'accord final dans le manifeste reste refusé automatiquement ; aucune fusion ni aucun déploiement."
         }
       ],
       "publicationApproval": {
         "status": "pending_reapproval",
-        "reason": "Editorial corrections changed the bundle; previous approval is retained separately and cannot authorize these bytes."
+        "reason": "Final owner GO observed; recording the approval is blocked by automatic approval review. Merge and deployment remain conditioned on all TNR passing."
       },
       "publicArtifacts": {
         "sheet": {
