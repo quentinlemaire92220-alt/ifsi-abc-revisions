@@ -34,7 +34,18 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
  assert.equal(source?.officialChecked,true,label+'support officiel non contrôlé');
- assert.equal(source?.oralStatus,'complete',label+'contrôle des transcriptions incomplet : ne pas déclarer complet');
+ if(source?.oralStatus==='incomplete_tail') {
+  // Autoriser une publication PARTIELLEMENT SOURCÉE et explicitement limitée :
+  // aucun faux « complete », aucune prétention à une revue orale exhaustive.
+  assert.equal(source.recordingTailTruncated,true,label+'troncature de PT02 non documentée');
+  assert.equal(source.oralCoverageExhaustive,false,label+'revue orale exhaustive faussement affirmée');
+  assert.equal(source.scopedReleaseAccepted,true,label+'validation expresse du périmètre incomplet absente');
+  assert.ok(typeof source.scopedReviewBasis==='string'&&source.scopedReviewBasis.length>25,
+   label+'périmètre des sources vérifiées non décrit');
+  assert.ok(delivery.blockers?.some(x=>x.resource==='transcription_pt02'&&x.reason==='incomplete_tail'),
+   label+'réserve PT02 absente du manifeste public');
+  assert.equal(delivery.status,'partial',label+'livraison oralement incomplète déclarée complète');
+ } else assert.equal(source?.oralStatus,'complete',label+'contrôle des transcriptions incomplet : ne pas déclarer complet');
  assert.equal(source?.speakerStudentSeparated,true,label+'propos étudiants non séparés');
  assert.equal(source?.teachingNotesPrivateTrace,true,label+'traçabilité orale privée absente');
  assert.equal(source?.notesWithoutTimestamps,true,label+'horodatages / traces audio visibles dans la fiche');
