@@ -23,9 +23,13 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  validateSheetSource(courseId,delivery,sheet);
  const id=driveId(sheet);
  const isPages=delivery.publicationHost==='github_pages';
- const urlOK=isPages
-  ? /^https:\\/\\/[-\\w]+\\.github\\.io\\/[-\\w]+\\/assets\\/[-\\w]+\\/[-\\w]+\\.pdf$/.test(sheet.url||'')
-  : /^https:\\/\\/drive\\.google\\.com\\/file\\/d\\/[\\w-]+/.test(sheet.url||'');
+ let urlOK=false;
+ try {
+  const u=new URL(sheet.url||'');
+  urlOK=u.protocol==='https:' && (isPages
+   ? u.hostname.endsWith('.github.io') && u.pathname.includes('/assets/') && u.pathname.endsWith('.pdf')
+   : u.hostname==='drive.google.com' && u.pathname.startsWith('/file/d/'));
+ } catch {}
  assert.ok(id&&urlOK,label+'Drive ID et lien étudiant publiable requis');
  if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
