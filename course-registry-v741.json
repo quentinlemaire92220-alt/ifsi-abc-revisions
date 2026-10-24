@@ -1,5 +1,5 @@
 {
-  "version": "8.30.119",
+  "version": "8.30.120",
   "courses": [
     {
       "id": "biomolecules",
@@ -993,6 +993,45 @@
         }
       ],
       "sourceNote": "Support natif non disponible ; 48 captures et transcriptions PT01/PT02, complément réglementaire sur le secret distinct des priorités de l'enseignant."
+    },
+    {
+      "id": "d1_communication_td1",
+      "label": "La communication — TD1",
+      "aliases": [
+        "La communication",
+        "TD1 communication",
+        "La communication TD1",
+        "UE D1.1 S1 La communication",
+        "TD du 20 octobre 2026 — Communication"
+      ],
+      "domain": "D",
+      "ue": "D1",
+      "teachingUnit": "D1.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": true,
+      "sourceStatus": "official",
+      "officialSupportUrl": "https://drive.google.com/file/d/1xD49Re68ySrslV458CQBy9Og_fI8KHXH/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1lXIAFXfw7vRiSs5zio4vJ7iUUQvrFxjk/view",
+      "qcmPdfQuestionCount": 50,
+      "flashcardTarget": 40,
+      "authoredFlashcards": true,
+      "authoredFlashcardPresentation": "standalone_v1",
+      "audioStatus": "awaiting_mp3",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — La communication",
+          "url": "https://drive.google.com/file/d/1jcUxgR8LbXj6PwG9YFV6nUnTDAhehvnY/view",
+          "type": "revision_written"
+        },
+        {
+          "label": "Flashcards — 40 cartes",
+          "url": "https://drive.google.com/file/d/1gvKayfgkpvX0IrSRue0X9RR8DnM7880z/view",
+          "type": "flashcards",
+          "cardCount": 40
+        }
+      ]
     }
   ],
   "auditBaseline": {
