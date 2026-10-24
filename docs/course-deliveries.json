@@ -2023,6 +2023,27 @@
         "scope": "course_package",
         "approvedAt": "2026-10-24T12:17:00.787Z",
         "bundleSha256": "9d7845ad8617902d73e76dacaaf0dc814360bfa430e8566bf75d9f17bd740f21"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked_plus_owner_graphic_acceptance",
+        "reviewedAt": "2026-10-24T12:00:00Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "REVISION_TEXT_FIRST": "PASS",
+          "NO_GENERATED_IMAGES": "PASS",
+          "TOP_BOTTOM_PURPLE_BANDS": "PASS",
+          "SELECTABLE_TEXT": "PASS",
+          "SINGLE_QCM_PITFALLS": "PASS",
+          "SUMMARY_BEFORE_FINAL_LEXICON": "PASS",
+          "ALL_PAGES_CHECKED": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "d1_communication_td1_written_p01": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf"
+        },
+        "reviewedImageSha256s": {},
+        "reviewNotes": "Fiche écrite V5.3 acceptée par l'utilisateur le 24/10/2026 ; refonte QCM et absence de mentions techniques confirmées ; aucun visuel médical généré."
       }
     }
   ],
