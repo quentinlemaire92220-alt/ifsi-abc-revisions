@@ -36,6 +36,28 @@ export function visualResourceFingerprint(courseId,delivery,data){
   infographicSheetVisualAudit:delivery.infographicSheetVisualAudit?.pdfSha256||null});
 }
 
+// La fiche écrite V5.3 se contrôle sans critères de dessin médical.
+export function validateWrittenOwnerReview(courseId,delivery,data){
+ const v=delivery.visualOwnerReview,a=delivery.writtenPdfAudit;
+ assert.equal(delivery.packFormat,'written_v1',courseId+': format écrit attendu');
+ assert.equal(v?.status,'owner_accepted',courseId+': validation graphique explicite absente');
+ assert.equal(v.reference,'communication_written_v5.3_2026-10-24',courseId+': modèle écrit V5.3 absent');
+ assert.equal(v.reviewerDecision,'explicit_graphic_acceptance',courseId+': accord utilisateur absent');
+ assert.ok(typeof v.reviewedAt==='string' && Number.isFinite(Date.parse(v.reviewedAt)),courseId+': date de validation absente');
+ assert.equal(v.method,'pdf_all_pages_text_layout_review',courseId+': revue écrite page par page absente');
+ assert.equal(v.pagesChecked,a.pageCount,courseId+': des pages ne sont pas revues');
+ for(const key of ['topAndBottomPurpleBandsEveryPage','noOverlaidHeaders','noImages','textSelectable',
+  'noClippedText','oneQcmPitfallSection','summaryBeforeLexicon','lexiconLast'])
+  assert.equal(a[key],true,courseId+': contrôle PDF écrit manquant '+key);
+ assert.equal(v.reviewedPdfSha256s?.[delivery.sheetResourceId],a.pdfSha256,
+  courseId+': empreinte du PDF écrit non reliée à la validation');
+ const sheet=(data.sheets||[]).find(x=>x.resourceId===delivery.sheetResourceId&&x.courseId===courseId);
+ assert.ok(sheet,courseId+': fiche écrite non inventoriée');
+ assert.equal(delivery.artifactSha256s?.[driveId(sheet)],a.pdfSha256,
+  courseId+': PDF publié différent de celui validé');
+ return {checkedSheets:1,checkedBoards:0,checkedImages:0};
+}
+
 export function validateVisualOwnerReview(courseId,delivery,data){
  const review=delivery.visualOwnerReview;
  assert.equal(review?.status,'owner_accepted',
@@ -105,6 +127,7 @@ export function requireVisualReviewIfChanged(courseId,prior,next,oldData,newData
  const prev=visualResourceFingerprint(courseId,prior,oldData);
  const curr=visualResourceFingerprint(courseId,next,newData);
  if(curr===null||prev===curr)return false; // aucune nouvelle fiche/illustration
+ if(next.packFormat==='written_v1')return !!validateWrittenOwnerReview(courseId,next,newData);
  // Un complément hybride ne réouvre pas la validation des PDF historiques intacts.
  // L'exemption est limitée à une addition : retirer le complément doit restituer
  // exactement l'ancienne empreinte visuelle (PDF, images, audits et associations).
