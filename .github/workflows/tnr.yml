@@ -50,6 +50,7 @@ jobs:
           printf 'IFSI_BASE_SHA=%s\n' "$base" >> "$GITHUB_ENV"
 
       - name: Vérifier la syntaxe JavaScript
+        if: ${{ !cancelled() }}
         run: |
           set -euo pipefail
           for file in ./*.js tests/*.mjs; do
@@ -57,376 +58,551 @@ jobs:
           done
 
       - name: Vérifier les cours rapprochés des captures V8.30.95
+        if: ${{ !cancelled() }}
         run: node tests/course-revisions-v8395.mjs
 
       - name: Vérifier la publication limitée aux deux fiches validées
+        if: ${{ !cancelled() }}
         run: node tests/revision-sheet-supplement-test.mjs
 
       - name: Vérifier les compléments sans remplacement des ressources historiques
+        if: ${{ !cancelled() }}
         run: node tests/course-complement-additive-test.mjs
 
       - name: Valider les PDF et corrections du TD2 à publier
+        if: ${{ !cancelled() }}
         run: node tests/posture-td2-publication-gate.mjs
 
       - name: Vérifier l'isolement, les réponses et la propreté des cours en préparation
+        if: ${{ !cancelled() }}
         run: node tests/posture-td2-bank-integrity.mjs
 
       - name: Tests de non-régression données et runtime
+        if: ${{ !cancelled() }}
         run: node tests/tnr-node.mjs
 
       - name: Contrôler les 18 flashcards complémentaires P3 et la PWA
+        if: ${{ !cancelled() }}
         run: node tests/p3-flashcards-release.mjs
 
       - name: Tester le contrôle PDF sur des documents fictifs
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: tools/ci-pdf-requirements.txt
 
       - name: Installer le moteur de contrôle PDF
-        run: python -m pip install pymupdf==1.26.7
+        if: ${{ !cancelled() }}
+        run: python -m pip install -r tools/ci-pdf-requirements.txt
 
       - name: TNR propreté des PDF et scripts vocaux étudiants
+        if: ${{ !cancelled() }}
         run: python tests/student_support_clean_gate_test.py
 
-      - name: Installer le moteur de composition de fiches
-        run: python -m pip install reportlab==4.4.9 Pillow
-
       - name: TNR moteur de production des deux PDF (fixtures fictives)
+        if: ${{ !cancelled() }}
         run: python tests/revision-course-pack-test.py
 
       - name: TNR contrat des deux fiches et preuves PDF
+        if: ${{ !cancelled() }}
         run: node tests/dual-sheet-contract-test.mjs
 
       - name: TNR nouveau pack allégé et anciens contrats
+        if: ${{ !cancelled() }}
         run: node tests/lean-course-contract-test.mjs
 
       - name: TNR nouveau contrat hybride v1.46 (un PDF, lexique et preuves)
+        if: ${{ !cancelled() }}
         run: node tests/hybrid-sheet-contract-test.mjs
 
       - name: TNR nouveau standard fiche écrite V5.3 (sans images, synthèse avant lexique)
+        if: ${{ !cancelled() }}
         run: node tests/written-sheet-contract-test.mjs
 
       - name: TNR affichage des fiches hybrides sans publication implicite de Douleur
+        if: ${{ !cancelled() }}
         run: node tests/hybrid-sheet-ui-test.mjs
 
       - name: TNR cardinalité QCM dans le Service Worker
+        if: ${{ !cancelled() }}
         run: node tests/lean-qcm-sw-guard-test.mjs
 
       - name: TNR chaîne de production locale du pack allégé
+        if: ${{ !cancelled() }}
         run: python tests/lean-course-pack-test.py
 
       - name: TNR générateur privé de fiche hybride v1.46
+        if: ${{ !cancelled() }}
         run: python tests/hybrid-course-pack-test.py
 
       - name: TNR fiche unique et planches complètes complémentaires
+        if: ${{ !cancelled() }}
         run: node tests/single-sheet-contract-test.mjs
 
       - name: Vérifier le volet care p02 et les ressources antérieures
+        if: ${{ !cancelled() }}
         run: node tests/ethiques-care-p02.mjs
 
       - name: TNR registre prive des sources manquantes v1.15
+        if: ${{ !cancelled() }}
         run: node tests/source-followup-v115-test.mjs
 
       - name: Contrôler les 3 supports officiels et le pilote QCM/flashcards (non publié)
+        if: ${{ !cancelled() }}
         run: node tests/official-supports-pilot-20261019.mjs
 
       - name: TNR suivi des cours et confidentialité
+        if: ${{ !cancelled() }}
         run: node tests/course-followup-v1.mjs
 
       - name: TNR pilote de connexion aux sources privées
+        if: ${{ !cancelled() }}
         run: |
           node --check pilote-sources-privees.js
           node tests/pilot-private-sources-v1.mjs
 
       - name: TNR backend privé, JWT propriétaire et CORS
+        if: ${{ !cancelled() }}
         run: node tests/private-source-cors-edge.mjs
 
       - name: TNR classement des nouvelles planches dans Anatomie
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-routing-contract-test.mjs
 
       - name: TNR suivi reproducteur V8.30.97 sans diffusion de maquettes
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-reproductive-release-v8397.mjs
 
       - name: TNR lecteur privé de PDF R02–R07 — V8.30.100
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-reproductive-private-preview-v8400.mjs
 
       - name: TNR galerie anatomique provisoire R02-R07 V8.30.102
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-reproductive-preview-v8402.mjs
 
       - name: Vérifier la nouvelle méthode de production anatomique SVG
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-svg-production-v1.mjs
 
       - name: TNR R03 et R05 corrigés — exports Canva 20 octobre
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-reproductive-refresh-v8404.mjs
 
       - name: TNR P1 anatomie après V8.30.97 — masquage DOM et 106 planches
+        if: ${{ !cancelled() }}
         run: node tests/anatomy-p1-guards-v8397.mjs
 
       - name: TNR mise en page adaptative des fiches
+        if: ${{ !cancelled() }}
         run: python tests/revision-layout-test.py
 
       - name: TNR visuels PDF absents, mal placés et illisibles
+        if: ${{ !cancelled() }}
         run: python tests/pdf_visual_gate_test.py
 
       - name: Vérifier la copie PDF retéléchargée après publication
+        if: ${{ !cancelled() }}
         run: python tests/verify_published_pdf_test.py
 
       - name: Valider le résumé de contrôle avant nouvelle publication
+        if: ${{ !cancelled() }}
         run: node tests/pdf-visual-audit-contract-test.mjs
 
       - name: TNR ajout de parties à des cours déjà publiés
+        if: ${{ !cancelled() }}
         run: node tests/course-delivery-parts-test.mjs
 
       - name: Contrôler les packs de cours validés et leurs ressources
+        if: ${{ !cancelled() }}
         run: node tests/course-delivery.mjs
 
       - name: Tester le refus de publication sans validation du package
+        if: ${{ !cancelled() }}
         run: node tests/course-publication-approval-test.mjs
 
       - name: Refuser les fiches visuellement non relues face au modèle cardiovasculaire
+        if: ${{ !cancelled() }}
         run: node tests/visual-owner-review-gate-test.mjs
 
       - name: Vérifier GO restreint aux infographies Douleur — sans modifier QCM ou fiche
+        if: ${{ !cancelled() }}
         run: node tests/douleur-infographic-only-publication.mjs
 
       - name: Vérifier les 16 planches Douleur publiées et les ressources précédentes
+        if: ${{ !cancelled() }}
         run: node tests/douleur-infographics-16-release.mjs
 
       - name: Vérifier le filtre UE et les titres des infographies Douleur
+        if: ${{ !cancelled() }}
         run: node tests/douleur-infographics-ui.mjs
 
       - name: Contrôler le retrait strict des références privées, sans altérer les lots approuvés
+        if: ${{ !cancelled() }}
         run: node tests/private-resource-withdrawal-test.mjs
 
       - name: Exiger le GO publication pour les lots nouveaux ou modifiés
+        if: ${{ !cancelled() }}
         run: node tests/course-publication-approval.mjs
 
       - name: Refuser un nouveau cours publié absent du manifeste
+        if: ${{ !cancelled() }}
         run: node tests/course-delivery-new-course.mjs
 
       - name: Refuser les nouvelles parties non déclarées des cours déjà publiés
+        if: ${{ !cancelled() }}
         run: node tests/course-delivery-parts.mjs
 
       - name: Vérifier la séparation des séances simultanées par sous-groupe
+        if: ${{ !cancelled() }}
         run: node tests/planning-group-separation.mjs
 
       - name: Vérifier le planning S9 et la séparation des groupes A1/A2/B1/B2
+        if: ${{ !cancelled() }}
         run: node tests/planning-week-09.mjs
 
       - name: TNR planning S10 du 2 au 6 novembre
+        if: ${{ !cancelled() }}
         run: node tests/planning-week-10.mjs
 
       - name: Régression UX et cohérence release
+        if: ${{ !cancelled() }}
         run: node tests/ux-regression.mjs
 
       - name: Contrôler le bandeau IFSI ABC et le portrait infirmier
+        if: ${{ !cancelled() }}
         run: node tests/home-brand-v8419.mjs
 
       - name: Contrôle Paramètres P1
+        if: ${{ !cancelled() }}
         run: node tests/settings-compact-p1.mjs
 
       - name: Tester les formulations QCM indépendantes du TD
+        if: ${{ !cancelled() }}
         run: node tests/qcm-autonomy-contract-test.mjs
 
       - name: Vérifier le lot QCM A1-P03 et son GO publication signé par empreinte
+        if: ${{ !cancelled() }}
         run: node tests/qcm-reviewed-publication-a1p3.mjs
 
       - name: Refuser les nouveaux QCM et flashcards dépendant du support
+        if: ${{ !cancelled() }}
         run: node tests/qcm-autonomy-changed.mjs
 
       - name: Vérifier le vocabulaire dans les QCM
+        if: ${{ !cancelled() }}
         run: node tests/vocabulary-qcm-v8379.mjs
 
       - name: Vérifier le module Flashcards
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-v8338.mjs
 
       - name: Vérifier le retour des QCM par cours V8.30.57
+        if: ${{ !cancelled() }}
         run: node tests/qcm-access-v8357.mjs
 
       - name: Vérifier le préparateur d'annales 2025 sans publication
+        if: ${{ !cancelled() }}
         run: node tests/annales-preparation-v1.mjs
 
       - name: Auditer les QCM et flashcards des annales 2025 publiées
+        if: ${{ !cancelled() }}
         run: node tests/annales-publication-v1.mjs
 
       - name: Tester le chargement QCM Android et l'état zéro question
+        if: ${{ !cancelled() }}
         run: node tests/qcm-live-loading-v8374.mjs
 
       - name: Tester la reprise des packs QCM partiels
+        if: ${{ !cancelled() }}
         run: node tests/qcm-partial-recovery-v8376.mjs
 
       - name: Vérifier le correctif UI V8.30.39
+        if: ${{ !cancelled() }}
         run: node tests/ui-v8339.mjs
 
       - name: Vérifier les flashcards pédagogiques V8.30.41
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-pedagogy-v8341.mjs
 
       - name: Vérifier les formulations Flashcards V8.30.42
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-wording-v8342.mjs
 
       - name: Vérifier l’autonomie des Flashcards V8.30.43
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-context-v8343.mjs
 
       - name: Vérifier la récupération des Flashcards V8.30.44
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-recovery-v8344.mjs
 
       - name: Inventaire qualité Flashcards
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-inventory-v8345.mjs
 
       - name: Vérifier la compréhension Flashcards sur les banques de production
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-understanding-v8369.mjs
 
       - name: Garde-fou Flashcards par cours
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-course-gate-v8352.mjs
 
       - name: Vérifier les Flashcards atomiques V8.30.45
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-atomic-v8345.mjs
 
       - name: Vérifier les associations contextualisées V8.30.46
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-context-atomic-v8346.mjs
 
       - name: Vérifier la cohérence recto/verso V8.30.48
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-coherence-v8348.mjs
 
       - name: Vérifier la contextualisation Flashcards V8.30.51
+        if: ${{ !cancelled() }}
         run: node tests/flashcards-context-v8351.mjs
 
       - name: Vérifier les compléments audio autorisés
+        if: ${{ !cancelled() }}
         run: node tests/audio-supplement-contract-test.mjs
 
       - name: Vérifier les cinq vocaux retrouvés et la préservation des anciens
+        if: ${{ !cancelled() }}
         run: node tests/recovered-vocals-v8394.mjs
 
       - name: Vérifier les 26 vocaux infectiologie et la release V8.30.101
+        if: ${{ !cancelled() }}
         run: node tests/infectiologie-vocaux-v8401.mjs
 
       - name: Vérifier les 35 vocaux des 14 cours V8.30.110
+        if: ${{ !cancelled() }}
         run: node tests/vocals-14-courses-v8410.mjs
 
       - name: Vérifier le lecteur vocal natif V8.30.50
+        if: ${{ !cancelled() }}
         run: node tests/vocal-player-v8350.mjs
 
       - name: Vérifier les 226 QCM de maths, leurs résultats exacts et les 10 niveaux
+        if: ${{ !cancelled() }}
         run: node tests/math-qcm-v8363.mjs
 
       - name: Tester les exercices pratiques de mathématiques
+        if: ${{ !cancelled() }}
         run: node tests/math-case-engine-v1.mjs
 
       - name: Vérifier les 10 exercices approuvés, le catalogue et leurs corrections
+        if: ${{ !cancelled() }}
         run: node tests/math-case-publication-v1.mjs
 
       - name: Contrôler les classements QCM et leurs permutations sans substitution
+        if: ${{ !cancelled() }}
         run: node tests/qcm-ordering-audit.mjs
 
       - name: Audit fonctionnel des corrections QCM
+        if: ${{ !cancelled() }}
         run: node tests/qcm-correction-audit.mjs
 
       - name: Exercices interactifs urinaires et erreurs QCM personnalisées
+        if: ${{ !cancelled() }}
         run: node tests/interactive-exercises-v8378.mjs
 
       - name: Socle Pathologies sans publication pédagogique
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-module-v1.mjs
 
       - name: Contrôler la préparation privée Pathologies P1 sans diffusion
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-p1-readiness.mjs --self-test
 
       - name: Tester intégration de la coque Pathologies inactive
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-app-integration-v1.mjs
 
       - name: Vérifier le masquage public Pathologies et sa réactivation
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-hidden-public-v1.mjs
 
       - name: Vérifier l'import privé Pathologies sans distribution de contenus médicaux
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-private-review-import.mjs
 
       - name: Vérifier connexion Supabase et chargement sécurisé des supports Pathologies
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-cloud-private-auth.mjs
 
       - name: Tester le clic Pathologies puis import local sans redirection vers un cours
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-import-navigation-interaction.mjs
 
       - name: Vérifier la vraie barre du bas avec Pathologies et Planning
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-visible-v87-bottom-nav.mjs
 
       - name: Tester la navigation Pathologies dépliable et les pages dédiées
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-catalog-accordion.mjs
 
       - name: Vérifier les six planches Pathologies et les vrais cours associés
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-p1-poster-pages.mjs
 
       - name: Auditer les empreintes des images privées (fixture fictive)
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-private-assets.mjs --self-test
 
       - name: Contrat de production Pathologies — forme BPCO et protection de publication
+        if: ${{ !cancelled() }}
         run: node tests/pathologies-skill-contract.mjs
 
 
 
       - name: Vérifier le contraste et la formulation des QCM V8.30.75
+        if: ${{ !cancelled() }}
         run: node tests/qcm-visual-wording-v8375.mjs
 
       - name: Vérifier les QCM autonomes sans visuel absent
+        if: ${{ !cancelled() }}
         run: node tests/qcm-autonomous-visuals-v8376.mjs
 
       - name: Audit des niveaux de difficulté QCM
+        if: ${{ !cancelled() }}
         run: node tests/qcm-difficulty-audit.mjs
 
       - name: Audit des doublons QCM
+        if: ${{ !cancelled() }}
         run: node tests/qcm-duplicates-audit.mjs
 
       - name: Audit de granularité des thèmes QCM
+        if: ${{ !cancelled() }}
         run: node tests/qcm-theme-audit.mjs
 
       - name: Audit du câblage des boutons
+        if: ${{ !cancelled() }}
         run: node tests/button-audit.mjs
 
       - name: Audit read-only des ressources existantes selon workflow v1.14
+        if: ${{ !cancelled() }}
         run: node tests/workflow-resource-inventory-test.mjs
 
       - name: Valider le schéma de correspondance CM privé (données fictives)
+        if: ${{ !cancelled() }}
         run: node tests/cm-course-crosswalk-test.mjs
 
       - name: Audit des rattachements de cours
+        if: ${{ !cancelled() }}
         run: node tests/course-audit.mjs
 
       - name: Vérifier l'installation PWA Android
+        if: ${{ !cancelled() }}
         run: node tests/pwa-install.mjs
 
       - name: Audit automatique Drive ↔ application
+        if: ${{ !cancelled() }}
         run: node tests/resource-sync-v821.mjs
 
       - name: Vérifier les 8 fiches de mathématiques infographiques
+        if: ${{ !cancelled() }}
         run: node tests/math-infographics-v8359.mjs
 
       - name: Contrôles correctifs du runtime V8.30.60
+        if: ${{ !cancelled() }}
         run: node tests/runtime-integrity-v8360.mjs
 
       - name: Intégrité QCM 4 sur 4 reformattés
+        if: ${{ !cancelled() }}
         run: node tests/qcm-four-of-four-v8361.mjs
 
       - name: Vérifier les parcours corrigés par l’audit navigateur
+        if: ${{ !cancelled() }}
         run: node tests/browser-audit-v8364.mjs
 
       - name: Vérifier les banques réellement décodées dans le navigateur
+        if: ${{ !cancelled() }}
         run: node tests/browser-runtime-v8370.mjs
 
       - name: Audit intégral des QCM actifs (Service Worker + filtres)
+        if: ${{ !cancelled() }}
         run: node tests/qcm-full-runtime-audit-v8374.mjs
 
       - name: Audit hygiène du dépôt
+        if: ${{ !cancelled() }}
         run: node tests/repo-hygiene.mjs
 
       - name: Vérifier QCM Plaies V4.2 (clés, PDF et release)
+        if: ${{ !cancelled() }}
         run: node tests/plaies-v42-publication.mjs
 
       - name: Vérifier la livraison Stomatothérapie
+        if: ${{ !cancelled() }}
         run: node tests/stomatotherapie-delivery.mjs
 
       - name: Vérifier les liens officiels sans doublons, sans altérer le registre
+        if: ${{ !cancelled() }}
         run: node tests/official-support-dedup-v1.mjs
 
       - name: Refuser les documents de travail dans la liste étudiante
+        if: ${{ !cancelled() }}
         run: node tests/student-resource-visibility-ui-v1.mjs
 
       - name: Vérifier le lot droits_patients p01
+        if: ${{ !cancelled() }}
         run: node tests/course-droits_patients-p01.mjs
+
+      - name: Contrats et intégrité de publication ajoutés au TNR complet
+        if: ${{ !cancelled() }}
+        run: |
+          node tests/qcm-bank-contract-test.mjs
+          node tests/public-artifact-contract-test.mjs
+          node tests/preflight-workflow-contract.mjs
+
+      - name: Cohérence PDF et banques réelles
+        if: ${{ !cancelled() }}
+        run: |
+          python tests/pdf-bank-coherence-test.py
+          python tools/pdf-bank-coherence.py
+
+  preflight:
+    name: Préflight préparation et publication
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: tools/ci-pdf-requirements.txt
+      - run: python -m pip install -r tools/ci-pdf-requirements.txt
+      - name: Déterminer la base explicite
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          base="$PR_BASE_SHA"
+          if [[ -z "$base" ]]; then base="$PUSH_BEFORE_SHA"; fi
+          if [[ -z "$base" || "$base" =~ ^0+$ ]]; then base=$(git rev-parse HEAD^); fi
+          git cat-file -e "$base^{commit}"
+          printf 'IFSI_BASE_SHA=%s\n' "$base" >> "$GITHUB_ENV"
+      - name: QA des contrats pédagogiques en préparation
+        run: node tools/course-preflight.mjs --stage preparation --report preflight-reports/preparation.json
+      - name: QA technique et autorisation de publication
+        if: ${{ !cancelled() }}
+        run: node tools/course-preflight.mjs --stage publication --report preflight-reports/publication.json
+      - name: Conserver tous les résultats ciblés
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preflight-${{ github.run_id }}
+          path: preflight-reports/
+          if-no-files-found: error
+          retention-days: 30

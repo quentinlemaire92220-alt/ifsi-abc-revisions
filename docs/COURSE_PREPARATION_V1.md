@@ -15,4 +15,7 @@
 - **Nettoyage du dossier « À traiter »** : seulement après fusion autorisée, déploiement réussi ET vérification dans l'application. Déplacer les sources vers les archives, jamais les supprimer ; ne pas les dupliquer en supports étudiants.
 
 ## Cas Posture professionnelle D1.1 — TD2
+
+Appliquer aussi [le préflight ciblé avant PR et publication](COURSE_PREFLIGHT.md) : QA pédagogique et technique distinctes, PDF/banques/empreintes, versions et assets, puis approbation authentique. Les TNR complets restent bloquants. Une correction du contenu invalide l’empreinte antérieure ; le préflight ne signe jamais le nouveau lot.
+
 Le dossier privé contient la fiche écrite de 17 pages, le QCM de 40 questions et les 40 flashcards, mais la fin de PT02 n'a pas été reçue intégralement ; la validation de l'oral n'est pas exhaustive. Les contenus peuvent être contrôlés techniquement et rapprochés du support écrit, mais ne doivent pas être présentés comme des preuves d'exhaustivité.

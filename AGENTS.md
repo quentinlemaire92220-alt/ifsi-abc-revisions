@@ -1,5 +1,7 @@
 # RÈGLE PRIORITAIRE SUPPORTS FINALS — 24/10/2026
 
+Avant PR et publication, appliquer `docs/COURSE_PREFLIGHT.md`. Exécuter les préflights de préparation et de publication, puis conserver tous les TNR complets et bloquants. Séparer la revue pédagogique, les vérifications techniques et l’autorisation du lot final ; ne jamais réécrire automatiquement une approbation après correction. Contrôler PDF/banques/empreintes, versions, cache/SW et présence des assets. Toute source tronquée reste signalée ; archivage seulement après déploiement réellement vérifié.
+
 ## PRIORITÉ TRANSVERSALE — NETTOYAGE DES SUPPORTS ÉTUDIANTS (24/10/2026)
 
 **TOUT document étudiant final** (fiche PDF, QCM, corrigé, flashcards, vocabulaire, script vocal) doit être exempt de marqueurs techniques : « brouillon », « à valider », « non publié », « privé », numéro de version de génération / édition interne (ex. V5.3), traces QA, noms de scripts, notes de workflow, provenance du générateur. Les conserver seulement dans les manifestes et rapports QA privés, hors des supports étudiants. Conserver UE, date/séance, titre, thèmes et pagination.

@@ -2053,8 +2053,8 @@
       "packFormat": "written_v1",
       "publicationHost": "github_pages",
       "publicAssetSha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
-      "qcmPublicAssetSha256": "17d88e9f2fc44c0d8cf9ddc10bc99248bd7d615e95efc2c7ccbfc8dee150bae4",
-      "flashcardPublicAssetSha256": "fe56d1960f977e3400e7969c4958f93ecc6c3824cd499aac1353a848d2efee08",
+      "qcmPublicAssetSha256": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
+      "flashcardPublicAssetSha256": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718",
       "driveFolderId": "1KPXUp4GtnHj8xC36xuAszby3DmnbGDf9",
       "folders": {
         "01": "1wpfx5OVVZ6veAtEGlK4BXOgT0WslbmnW",
@@ -2128,8 +2128,10 @@
       },
       "artifactSha256s": {
         "1UR5GO7x6rJucv7R_YUSYOoC8PVVZVMuC": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
-        "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "d8d4208c49fa1a4d9b366022d61e8ea90351d5fea7c4b021556dda3173459a88",
-        "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "fe56d1960f977e3400e7969c4958f93ecc6c3824cd499aac1353a848d2efee08"
+        "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "fe4e6551428280e790a99eb0c4f347988e9ab0fbf0ed69b0277bb671b8398739",
+        "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "e5ae0165b8af8d4ee8cb0b8e370a44a17f02d8a9411fbea91e6fe97edb8a0923",
+        "d1_posture_td2_qcm_public_candidate": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
+        "d1_posture_td2_flashcards_public_candidate": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718"
       },
       "publishedVerification": {
         "status": "MATCH",
@@ -2167,11 +2169,35 @@
         },
         {
           "resource": "qcm_drive_pdf",
-          "reason": "legacy_copy_superseded",
-          "detail": "La copie privée Drive antérieure au correctif Q03 n'est pas utilisée comme lien étudiant ; le PDF imprimable de référence est l'asset GitHub Pages d'empreinte 17d88e9f…"
+          "reason": "final_copy_sync_blocked",
+          "detail": "Copies Drive privées antérieures à la dernière formulation Q17 et au nettoyage des métadonnées QCM/cartes. Synchronisation finale refusée automatiquement ; les empreintes Drive authentiques sont conservées séparément."
         }
       ],
       "publicationApproval": {
+        "status": "pending_reapproval",
+        "reason": "Editorial corrections changed the bundle; previous approval is retained separately and cannot authorize these bytes."
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_Fiche_Revision.pdf",
+          "sha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
+          "pageCount": 17,
+          "artifactId": "1UR5GO7x6rJucv7R_YUSYOoC8PVVZVMuC"
+        },
+        "qcm": {
+          "path": "assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_QCM_40_Corrige.pdf",
+          "sha256": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
+          "pageCount": 14,
+          "artifactId": "d1_posture_td2_qcm_public_candidate"
+        },
+        "flashcards": {
+          "path": "assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_Flashcards_40.pdf",
+          "sha256": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718",
+          "pageCount": 7,
+          "artifactId": "d1_posture_td2_flashcards_public_candidate"
+        }
+      },
+      "supersededPublicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",

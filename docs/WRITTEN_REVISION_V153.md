@@ -1,5 +1,7 @@
 ## PRIORITÉ 24/10/2026 — PRÉPARATION SÉPARÉE DES SUPPORTS PUBLIÉS
 
+Complément de contrôle : [préflight avant PR et publication](COURSE_PREFLIGHT.md), avec contrats QCM autonomes, cohérence PDF/banques/empreintes, version/cache/assets, QA pédagogique distincte de la QA technique et TNR complets toujours bloquants. Aucun contrôle automatique n’inscrit une approbation humaine.
+
 Un cours en production, même avec fiche/QCM/flashcards prêts, reste HORS du catalogue actif tant que la validation pédagogique, la couverture des sources et le GO de publication/fusion n'ont pas été documentés. Le préparer dans `docs/course-preparations.json` et `data/course-preparations/`, garder les PDF et sources sur le Drive propriétaire privé ; ne pas activer de fiche, QCM, lexique ou PDF Github Pages. Contrôle : `node tests/course-preparation-stage.mjs`.
 
 Ne pas marquer une transcription tronquée « complete » ; maintenir une réserve pédagogique explicite. Le test de préparation peut être vert pendant que le contrôle de publication continue d'exiger un package complet, approuvé et vérifié. Le dossier « À traiter » n'est nettoyé qu'APRÈS contrôle du déploiement étudiant, par archivage sans suppression. Détails : `docs/COURSE_PREPARATION_V1.md`.

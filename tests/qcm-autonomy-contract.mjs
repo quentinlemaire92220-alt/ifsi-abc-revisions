@@ -5,6 +5,10 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
 const patterns = [
+  /\b(?:le|ce)\s+TD\s+(?:définit|souligne|insiste|valorise)\b/iu,
+  /\b(?:la\s+formatrice|l['’](?:intervenante?|enseignante?)|l['’]oral)\s+(?:indique|montre|précise|souligne|valorise|explicite|rappelle|privilégie)\b/iu,
+  /\b(?:selon|d['’]après|par)\s+(?:la\s+formatrice|l['’](?:intervenante?|enseignante?))\b/iu,
+  /\b(?:dans|de)\s+la\s+vignette\b/iu,
   /\b(?:selon|d['’]après|dans|sur|du|de|par|indiqué(?:e|es|s)?\s+dans|présenté(?:e|es|s)?\s+dans)\s+(?:(?:le|la|les|ce|cet|cette|l['’])\s*)?(?:TD|cours|support|diapo(?:sitive)?|document)\b/iu,
   /\b(?:le|ce|la)\s+(?:TD|cours|support|diapo(?:sitive)?|document)\s+(?:cite|citent|montre|indique|précise|décrit|donne|présente|recommande)\b/iu,
   /\b(?:page|diapositive|diapo)\s*\d+\s*(?:du|de la|d['’]un)\s*(?:TD|cours|support|document)\b/iu,

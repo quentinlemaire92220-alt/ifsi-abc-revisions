@@ -7,6 +7,7 @@ import {execFileSync} from 'node:child_process';
 import {isDeepStrictEqual} from 'node:util';
 import {createHash} from 'node:crypto';
 import {isScriptWorkItem} from './private-resource-withdrawal-lib.mjs';
+import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const registry=JSON.parse(readFileSync(resolve(root,'course-registry-v741.json'),'utf8'));
@@ -55,6 +56,9 @@ if(additions.length){
     const hash=createHash('sha256').update(readFileSync(resolve(root,'assets/communication-td1',filename))).digest('hex');
     assert.equal(hash,delivery.artifactSha256s?.[id],'Copie PDF publique différente du fichier approuvé');
    }
+  }
+  if(!id&&delivery?.publicationHost==='github_pages'&&delivery.publicArtifacts){
+   id=verifyPublicArtifact(delivery,doc.url);
   }
   assert.equal(delivery?.publicationApproval?.authorization,'explicit_go_publication','Nouveau document sans GO explicite');
   assert.equal(delivery.publicationApproval.status,'approved');

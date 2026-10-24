@@ -18,6 +18,9 @@ assert.equal(validateChangedQcmBanks([make('ex01','Selon le TD, quel est le rôl
   [make('ex01','Selon le TD, quel est le rôle ?')]),0,
   'Les anciens cours inchangés ne doivent pas bloquer la CI');
 const bad=[
+  make('teacher','La formatrice indique quel comportement ?'),
+  make('definition','Le TD définit la posture comme :'),
+  make('missing_case','Dans la vignette, quels faits sont établis ?'),
   make('ex02','Quelles fonctions sont attribuées au grêle dans le cours ?'),
   make('ex03','Selon le TD, quels organes participent ?'),
   make('ex04','Quelle longueur figure page 12 du support ?'),

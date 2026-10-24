@@ -30,6 +30,7 @@ export function publicationBundle(courseId,delivery,data){
   visualAudit:delivery.visualAudit,
   publishedVerification:delivery.publishedVerification,
   artifactSha256s:delivery.artifactSha256s||{},
+  ...(delivery.publicArtifacts?{publicArtifacts:delivery.publicArtifacts}:{}),
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
