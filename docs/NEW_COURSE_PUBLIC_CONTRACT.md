@@ -1,3 +1,13 @@
+# DIRECTIVE PRIORITAIRE 24/10/2026 — STANDARD ÉCRIT V5.3
+
+**Pour TOUS les nouveaux cours IFSI ABC, la fiche maîtresse est désormais la fiche de révision ÉCRITE V5.3, sans images, schémas ni infographies générés.** Lire `docs/WRITTEN_REVISION_V153.md` et `docs/skills/production-fiches-revision-ecrites-v153.md`. Cette règle prime sur les passages historiques ci-dessous exigeant des schémas ou le modèle Pharmacologie P01 de v1.47.
+
+Une fiche PDF écrite par cours/partie, multipage, sans quota ; bandeaux violets **en haut et en bas de chaque page**, code couleur pédagogique, notes de l'intervenant intégrées sans horodatages, matrice privée support officiel + oral, double lecture, raisonnements et tableaux pertinents ; une seule rubrique « Pièges QCM », suivie de la **synthèse générale** puis de « Définitions et mots-clés » en toute dernière section. Aucune source externe sans accord préalable. QCM, flashcards et vocaux : **règles inchangées**. Préserver toutes les ressources et les validateurs historiques. Nouveau contrat technique `written_v1` / `written_revision`; ne pas forcer d'images factices dans `hybrid_v1`. QA complet et GO séparé avant toute publication ou fusion.
+
+Les anciennes directives qui suivent sont conservées comme **historique**, pas comme instructions nouvelles.
+
+---
+
 > **PRIORITÉ 22/10/2026 — charte v1.47.** Le contrat des nouveaux cours reste `hybrid_v1` avec **une fiche hybride unique**. Le maître de contrôle graphique n'est plus l'annexe v1.46 à dix pages : il s'agit de **Pharmacologie P01, fiche hybride de 24 pages**, identifiant technique `pharmacologie_v1.47_24_pages`. Les sections imposant deux PDF ci-dessous sont historiques et n'autorisent aucune migration rétroactive. QCM, flashcards et vocaux inchangés ; contrôle médical/visuel et GO publication restent requis.
 
 > **CONTRAT PRIORITAIRE NOUVEAUX COURS — 22/10/2026 — v1.46.** Les premières livraisons futures utilisent par défaut `hybrid_v1` (un seul PDF de fiche hybride infographiée, avec lexique sélectionnable à la fin). Les anciennes obligations d'un deuxième PDF `complete_infographic` et des planches totales séparées sont archivées ci-dessous et restent uniquement valides pour les packs historiques. La nouvelle validation est `tests/hybrid-sheet-contract.mjs` et le détail dans [HYBRID_REVISION_V146.md](HYBRID_REVISION_V146.md). QCM, flashcards et vocaux restent inchangés ; preuve Drive, contrôles médicaux/visuels, revue privée et GO publication distinct demeurent obligatoires. Ne jamais publier un brouillon ou falsifier les champs d'audit.
