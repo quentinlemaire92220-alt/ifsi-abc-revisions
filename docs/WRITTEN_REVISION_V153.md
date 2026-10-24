@@ -1,3 +1,12 @@
+## PRIORITÉ TRANSVERSALE — NETTOYAGE DES SUPPORTS ÉTUDIANTS (24/10/2026)
+
+**TOUT document étudiant final** (fiche PDF, QCM, corrigé, flashcards, vocabulaire, script vocal) doit être exempt de marqueurs techniques : « brouillon », « à valider », « non publié », « privé », numéro de version de génération / édition interne (ex. V5.3), traces QA, noms de scripts, notes de workflow, provenance du générateur. Les conserver seulement dans les manifestes et rapports QA privés, hors des supports étudiants. Conserver UE, date/séance, titre, thèmes et pagination.
+Le QCM standard tient dans **UN seul PDF** : questions réparties en **blocs par thème**, chaque question dans un encadré, **case à cocher à gauche de chaque choix A à E**, puis **tous les corrigés argumentés à la fin**. Aucune réponse divulguée dans les pages de questions. Ne jamais modifier silencieusement les banques QCM/flashcards, clés ou argumentations en améliorant la forme.
+Contrôle bloquant pré-publication : inspecter texte extrait, métadonnées PDF et rendu de chaque page ; utiliser le garde-fou `tools/student_support_clean_gate.py`. Ces obligations ne modifient pas les ressources historiques déjà publiées et ne déclenchent aucune publication ou fusion automatique.
+
+
+---
+
 # IFSI ABC — STANDARD MAÎTRE FICHE ÉCRITE v5.3
 Date de décision : 24 octobre 2026. Statut : validé pour les **nouvelles productions privées** ; aucune publication implicite.
 
