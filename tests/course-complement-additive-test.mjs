@@ -23,21 +23,9 @@ const approvedCommunication=read('docs/course-deliveries.json').courses.some(c=>
  c.publicationApproval?.authorization==='explicit_go_publication');
 const allowedNewLexiconCourses=new Set(['responsabilite_exercice_professionnel']);
 if(approvedCommunication)allowedNewLexiconCourses.add('d1_communication_td1');
-// Une PR peut préparer les définitions d'un cours créé dans la même PR.
-// Cette exception ne valide PAS la publication : course-delivery-new-course et
-// course-publication-approval exigent encore la livraison validée et le GO signé.
-const previousIds=new Set(old('course-registry-v741.json').courses.map(c=>c.id));
-const currentRegistry=read('course-registry-v741.json');
-const currentDeliveries=read('docs/course-deliveries.json');
-for(const c of currentRegistry.courses.filter(c=>!previousIds.has(c.id))){
- const d=currentDeliveries.courses.find(x=>x.courseId===c.id);
- if(d?.deliveryMode==='first_release' && d?.validated===false &&
-    d?.publicationApproval==null && d?.qcmBank && c.officialSupport===true)
-  allowedNewLexiconCourses.add(c.id); // uniquement en préparation
-}
 assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.length===1&&
  allowedNewLexiconCourses.has(e.courseIds[0])),
- 'Le lexique ne peut être enrichi que pour les cours approuvés ou les nouvelles PR non publiées');
+ 'Le lexique ne peut être enrichi que pour les cours explicitement approuvés');
 assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
  'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
