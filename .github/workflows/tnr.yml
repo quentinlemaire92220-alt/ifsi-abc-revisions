@@ -94,6 +94,9 @@ jobs:
       - name: TNR nouveau contrat hybride v1.46 (un PDF, lexique et preuves)
         run: node tests/hybrid-sheet-contract-test.mjs
 
+      - name: TNR nouveau standard fiche écrite V5.3 (sans images, synthèse avant lexique)
+        run: node tests/written-sheet-contract-test.mjs
+
       - name: TNR affichage des fiches hybrides sans publication implicite de Douleur
         run: node tests/hybrid-sheet-ui-test.mjs
 
