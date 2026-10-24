@@ -1,3 +1,14 @@
+# RÈGLE PRIORITAIRE SUPPORTS FINALS — 24/10/2026
+
+## PRIORITÉ TRANSVERSALE — NETTOYAGE DES SUPPORTS ÉTUDIANTS (24/10/2026)
+
+**TOUT document étudiant final** (fiche PDF, QCM, corrigé, flashcards, vocabulaire, script vocal) doit être exempt de marqueurs techniques : « brouillon », « à valider », « non publié », « privé », numéro de version de génération / édition interne (ex. V5.3), traces QA, noms de scripts, notes de workflow, provenance du générateur. Les conserver seulement dans les manifestes et rapports QA privés, hors des supports étudiants. Conserver UE, date/séance, titre, thèmes et pagination.
+Le QCM standard tient dans **UN seul PDF** : questions réparties en **blocs par thème**, chaque question dans un encadré, **case à cocher à gauche de chaque choix A à E**, puis **tous les corrigés argumentés à la fin**. Aucune réponse divulguée dans les pages de questions. Ne jamais modifier silencieusement les banques QCM/flashcards, clés ou argumentations en améliorant la forme.
+Contrôle bloquant pré-publication : inspecter texte extrait, métadonnées PDF et rendu de chaque page ; utiliser le garde-fou `tools/student_support_clean_gate.py`. Ces obligations ne modifient pas les ressources historiques déjà publiées et ne déclenchent aucune publication ou fusion automatique.
+
+
+---
+
 # DIRECTIVE PRIORITAIRE 24/10/2026 — STANDARD ÉCRIT V5.3
 
 **Pour TOUS les nouveaux cours IFSI ABC, la fiche maîtresse est désormais la fiche de révision ÉCRITE V5.3, sans images, schémas ni infographies générés.** Lire `docs/WRITTEN_REVISION_V153.md` et `docs/skills/production-fiches-revision-ecrites-v153.md`. Cette règle prime sur les passages historiques ci-dessous exigeant des schémas ou le modèle Pharmacologie P01 de v1.47.
