@@ -2049,7 +2049,8 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2114,7 +2115,8 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante"
+        "psychologie_sante",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2165,7 +2167,8 @@
       "courseIds": [
         "introduction_droit",
         "ethique_infirmiere",
-        "droits_patients"
+        "droits_patients",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2234,7 +2237,8 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2247,7 +2251,8 @@
       "etymologie": "auto- (soi-même) + -nomie (règle, organisation) ; capacité de décision de la personne.",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere"
+        "histoire_profession_infirmiere",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3564,7 +3569,8 @@
       "etymologie": "consentement (accord) + aux soins (actes proposés).",
       "courseIds": [
         "introduction_droit",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -4031,7 +4037,8 @@
       "distinction": "Elle ne dépend ni de l’autonomie fonctionnelle ni du comportement.",
       "theme": "Dignité et soins conformes aux connaissances",
       "courseIds": [
-        "droits_patients"
+        "droits_patients",
+        "d1_posture_professionnelle_td2"
       ],
       "qcmQuestionId": "droits_patients_p01_q083",
       "sourceType": "reference_pedagogique"
@@ -6064,7 +6071,8 @@
       "distinction": "Ne se confond pas avec le ton de la voix ou la gestuelle.",
       "etymologie": "Verbale renvoie au verbe et à l’usage des mots.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6076,7 +6084,8 @@
       "distinction": "Le verbal porte les mots, le paraverbal leur musicalité.",
       "etymologie": "Para- signifie à côté ; verbal renvoie aux paroles.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6088,7 +6097,8 @@
       "distinction": "Elle peut soutenir ou contredire les paroles prononcées.",
       "etymologie": "Non- indique l’absence de mots articulés dans ce canal.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6160,7 +6170,8 @@
       "distinction": "La discordance entre paroles et attitudes peut fragiliser la confiance.",
       "etymologie": "Du latin congruere : correspondre, être en accord.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6172,7 +6183,8 @@
       "distinction": "La juste distance s’adapte à la culture, à la situation et au patient.",
       "etymologie": "Du latin proximus : le plus proche ; étude des distances sociales.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6196,7 +6208,8 @@
       "distinction": "Parler plus fort ou plus longuement ne garantit pas une meilleure compréhension.",
       "etymologie": "Adapter signifie ajuster une conduite à une situation particulière.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6232,7 +6245,8 @@
       "distinction": "Elle n’est pas limitée à un geste technique : l’écoute en fait partie.",
       "etymologie": "Relation vient du latin relatio : lien ; soin désigne l’attention portée.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     },
