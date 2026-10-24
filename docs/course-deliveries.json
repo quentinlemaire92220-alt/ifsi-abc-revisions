@@ -2049,7 +2049,7 @@
       "part": "02",
       "validated": true,
       "status": "partial",
-      "deliveryMode": "source_limited_first_release",
+      "deliveryMode": "first_release",
       "packFormat": "written_v1",
       "publicationHost": "github_pages",
       "publicAssetSha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
@@ -2092,7 +2092,8 @@
         "teachingNotesPrivateTrace": true,
         "notesWithoutTimestamps": true,
         "externalSourcesCount": 0,
-        "externalAuthorization": "not_requested"
+        "externalAuthorization": "not_requested",
+        "officialSupportPreservedPrivately": true
       },
       "writtenCoverage": {
         "expectedEssential": 6,
