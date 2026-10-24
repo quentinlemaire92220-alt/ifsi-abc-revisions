@@ -1,3 +1,9 @@
+## AJOUT AU CONTRAT ACTUEL — SÉPARATION PRÉPUBLICATION ET PUBLICATION (24/10/2026)
+
+La charte écrite V5.3 demeure maîtresse. Les cours avec revue pédagogique non acquise (notamment transcription orale tronquée), même si le PDF est prêt, ne sont **pas** ajoutés aux catalogues étudiants. Voir `docs/COURSE_PREPARATION_V1.md` et `tests/course-preparation-stage.mjs` : données de préparation isolées, anciens TNR et contrats de livraison inchangés, passage en catalogue seulement après contrôle du pack et GO distinct de diffusion/fusion. Le retrait du dossier « À traiter » suit uniquement la publication réellement vérifiée.
+
+---
+
 # DIRECTIVE PRIORITAIRE 24/10/2026 — STANDARD ÉCRIT V5.3
 
 **Pour TOUS les nouveaux cours IFSI ABC, la fiche maîtresse est désormais la fiche de révision ÉCRITE V5.3, sans images, schémas ni infographies générés.** Lire `docs/WRITTEN_REVISION_V153.md` et `docs/skills/production-fiches-revision-ecrites-v153.md`. Cette règle prime sur les passages historiques ci-dessous exigeant des schémas ou le modèle Pharmacologie P01 de v1.47.
