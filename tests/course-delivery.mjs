@@ -57,7 +57,10 @@ for(const c of manifest.courses){
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  validateSheetSource(c.courseId,c,sheet);
- assert.ok(c.qcmDriveId&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'||c.deliveryMode==='source_limited_first_release'),'Documents non identifiés');
+ assert.ok(c.qcmDriveId&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'||
+  c.deliveryMode==='source_limited_first_release'||
+  (c.deliveryMode==='first_release'&&c.sourceAudit?.officialChecked===true&&c.sourceAudit?.officialSupportPreservedPrivately===true)),
+  'Documents non identifiés ou source officielle privée non tracée');
  const bankPaths=Array.isArray(c.qcmBanks) && c.qcmBanks.length ? c.qcmBanks : [c.qcmBank];
  assert.ok(bankPaths.every(x=>typeof x==='string'&&x.length),'Chemins QCM invalides');
  assert.equal(new Set(bankPaths).size,bankPaths.length,'Banque QCM référencée deux fois');

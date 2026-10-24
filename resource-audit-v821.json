@@ -1,16 +1,16 @@
 {
-  "version": "8.30.121",
-  "auditedAt": "2026-10-23",
+  "version": "8.30.122",
+  "auditedAt": "2026-10-24",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.120 : nouveau TD1 La communication (support officiel, fiche écrite, 50 QCM, 40 flashcards), en complément de l'UE A2.1 et sans retrait des ressources historiques.",
+  "note": "Cours TD2 Posture professionnelle publié à périmètre documentaire limité et contrôlé. La transcription PT02 reste tronquée à sa fin ; aucun MP3. Totaux des catalogues : 53 cours / 70 fiches.",
   "expectedTotals": {
-    "courses": 52,
-    "sheets": 69,
+    "courses": 53,
+    "sheets": 70,
     "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,

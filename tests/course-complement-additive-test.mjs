@@ -23,6 +23,16 @@ const approvedCommunication=read('docs/course-deliveries.json').courses.some(c=>
  c.publicationApproval?.authorization==='explicit_go_publication');
 const allowedNewLexiconCourses=new Set(['responsabilite_exercice_professionnel']);
 if(approvedCommunication)allowedNewLexiconCourses.add('d1_communication_td1');
+const publicationApprovals=read('docs/course-deliveries.json').courses;
+for(const delivery of publicationApprovals){
+ // Extensions du lexique uniquement pour un lot explicitement approuvé.
+ // La vérification du digest et de la revue du cours reste obligatoire dans les TNR de publication.
+ if(delivery.validated===true &&
+    delivery.publicationApproval?.status==='approved' &&
+    delivery.publicationApproval?.authorization==='explicit_go_publication' &&
+    delivery.publicationApproval?.scope==='course_package')
+  allowedNewLexiconCourses.add(delivery.courseId);
+}
 assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.length===1&&
  allowedNewLexiconCourses.has(e.courseIds[0])),
  'Le lexique ne peut être enrichi que pour les cours explicitement approuvés');

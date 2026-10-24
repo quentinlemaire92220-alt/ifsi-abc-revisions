@@ -1,1 +1,3530 @@
-[{"id":"resp_041","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":41,"question":"Concernant la membrane alvéolo-capillaire :","choices":["Cette faible épaisseur facilite les échanges rapides.","Elle est décrite comme très fine.","Elle est constituée d’anneaux cartilagineux.","Le cours présente une seule valeur numérique parfaitement identique sur toutes les diapositives.","Elle sépare la cavité nasale du pharynx."],"answers":[0,1],"explanation":"Le support officiel comporte deux repères numériques différents : 2 µm sur la diapo 14 et environ 0,5 µm sur la diapo 41. Le point constant est la très faible épaisseur de la barrière."},{"id":"resp_042","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":42,"question":"Pour l’oxygène au niveau alvéolo-capillaire :","choices":["Le gradient d’environ 60 mmHg favorise le passage vers le sang.","L’O₂ se déplace principalement du sang vers l’alvéole.","Le sang arrivant est présenté autour de 40 mmHg de PO₂.","Le gradient est nul avant les échanges.","La PO₂ alvéolaire est présentée autour de 100 mmHg."],"answers":[0,2,4],"explanation":"Le gradient alvéole-sang d’environ 60 mmHg entraîne la diffusion de l’O₂ vers le sang."},{"id":"resp_043","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":43,"question":"Pour le CO₂ au niveau pulmonaire :","choices":["Le cours indique qu’il diffuse moins facilement que l’O₂.","Le sang arrivant est présenté autour de 46 mmHg.","Le CO₂ diffuse du sang vers l’alvéole.","L’alvéole est présentée autour de 40 mmHg.","Son gradient doit être supérieur à 60 mmHg pour diffuser."],"answers":[1,2,3],"explanation":"Le gradient n’est que d’environ 6 mmHg, mais le CO₂ diffuse très facilement car sa solubilité est élevée."},{"id":"resp_044","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":44,"question":"Le trajet de l’O₂ vers l’hémoglobine comprend :","choices":["Déplacement dans le sang jusqu’au globule rouge.","Diffusion dans l’air alvéolaire.","Passage obligatoire par une cellule caliciforme avant l’hémoglobine.","Passage de la membrane alvéolo-capillaire."],"answers":[0,1,3],"explanation":"L’O₂ diffuse depuis l’air alvéolaire, traverse la membrane alvéolo-capillaire puis gagne le sang et le globule rouge. Les cellules caliciformes n’interviennent pas dans ce trajet."},{"id":"resp_045","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":45,"question":"Concernant l’hémoglobine :","choices":["Une molécule d’Hb ne peut fixer qu’une seule molécule d’O₂.","L’hémoglobine transporte uniquement le CO₂ et jamais l’O₂.","Une molécule d’hémoglobine peut fixer quatre molécules d’O₂.","Le support indique environ 15 g d’Hb pour 100 mL de sang.","Le cours cite environ 280 millions de molécules d’Hb par globule rouge."],"answers":[2,3,4],"explanation":"Les chiffres cités sont 4 O₂ par Hb, ~280 millions d’Hb par globule rouge et ~15 g/100 mL de sang."},{"id":"resp_046","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":46,"question":"La libération d’O₂ par l’oxyhémoglobine est favorisée dans le cours par :","choices":["Une diminution de la PO₂ tissulaire.","Une diminution du pH tissulaire.","Une augmentation obligatoire du pH liée à l’acidité.","Une absence complète de métabolisme tissulaire.","Une forte PO₂ qui reste identique à celle des alvéoles."],"answers":[0,1],"explanation":"Une PO₂ plus basse et un pH plus bas dans les tissus favorisent le relargage d’O₂ par l’hémoglobine."},{"id":"resp_047","ue":"S1 B1","course":"Système respiratoire","theme":"Échanges et transport des gaz","number":47,"question":"Le quotient respiratoire est défini comme :","choices":["La somme du volume courant et du volume résiduel.","Un rapport utilisant la production de CO₂ et la consommation d’O₂.","Une mesure réservée uniquement à la spirométrie des volumes statiques.","Le rapport PaO₂ / PaCO₂ défini dans le cours comme ventilation minute.","Le rapport V̇CO₂ / V̇O₂."],"answers":[1,4],"explanation":"Le support définit le quotient respiratoire R = V̇CO₂ / V̇O₂, à partir des échanges mesurés en O₂ et CO₂."},{"id":"resp_048","ue":"S1 B1","course":"Système respiratoire","theme":"Acido-base, circulation et contrôle respiratoire","number":48,"question":"À propos des gaz du sang et de l’équilibre acido-basique :","choices":["Le prélèvement décrit est exclusivement veineux.","La respiration n’a aucun lien avec l’équilibre acido-basique.","Le cours insiste sur le lien entre ventilation, élimination du CO₂ et régulation du pH.","Le pH est relié à la concentration en bicarbonate et à la PaCO₂.","Le gaz du sang évoqué est un prélèvement artériel."],"answers":[2,3,4],"explanation":"L’intervenant insiste sur le prélèvement artériel et sur le rôle de la PaCO₂ dans l’équilibre acido-basique."},{"id":"resp_049","ue":"S1 B1","course":"Système respiratoire","theme":"Acido-base, circulation et contrôle respiratoire","number":49,"question":"Concernant l’hémodynamique pulmonaire :","choices":["La circulation pulmonaire est une circulation à basse pression.","Les parois vasculaires pulmonaires sont décrites comme épaisses.","Le ventricule droit fournit un travail plus important que le ventricule gauche.","La circulation pulmonaire reçoit 100 % du débit cardiaque.","La chute de pression pulmonaire se fait uniquement en amont des capillaires comme dans la circulation systémique."],"answers":[0,3],"explanation":"La diapo d’hémodynamique décrit une circulation pulmonaire à basse pression recevant 100 % du débit cardiaque, avec parois fines et travail du ventricule droit faible. La chute de pression se poursuit dans les capillaires pulmonaires."},{"id":"resp_050","ue":"S1 B1","course":"Système respiratoire","theme":"Acido-base, circulation et contrôle respiratoire","number":50,"question":"Le contrôle du rythme respiratoire comprend dans le support officiel :","choices":["Les centres bulbaires assurent le rythme respiratoire de base.","Les centres du pont modulent la rythmicité du centre bulbaire.","Les chémorécepteurs sont insensibles à la PCO₂ et au pH.","Des récepteurs périphériques incluent notamment des chémorécepteurs carotidiens et des mécanorécepteurs pulmonaires.","L’état de vigilance et les substances pharmacologiques n’influencent pas le centre respiratoire."],"answers":[0,1,3],"explanation":"Le support attribue le rythme de base aux centres bulbaires, une modulation au pont et cite des récepteurs périphériques (dont chémorécepteurs carotidiens et mécanorécepteurs pulmonaires). L’intégration tient aussi compte de l’état de vigilance et de substances pharmacologiques."},{"id":"cdm_001","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Conversions d'unités","difficulty":"easy","number":1,"question":"Concernant les conversions de masse, quelles équivalences sont exactes ?","choices":["1 g = 100 mg","1 g = 1 000 mg","1 mg = 1 000 µg","1 kg = 100 g","1 µg = 1 000 mg"],"answers":[1,2],"explanation":"Deux équivalences sont à retenir : 1 g = 1 000 mg et 1 mg = 1 000 µg. On change donc d'un facteur 1 000 entre g et mg, puis entre mg et µg."},{"id":"cdm_002","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Conversions d'unités","difficulty":"easy","number":2,"question":"Un volume de 0,08 L doit être exprimé en mL. Quel résultat est correct ?","choices":["8 mL","80 mL","800 mL","0,8 mL","8 000 mL"],"answers":[1],"explanation":"1 L = 1 000 mL. Donc 0,08 × 1 000 = 80 mL. Comme on passe d’une unité plus grande à une unité plus petite, on multiplie par 1 000 ; l’ordre de grandeur confirme le résultat."},{"id":"cdm_003","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Conversions d'unités","difficulty":"easy","number":3,"question":"Une étiquette indique 1 250 µg. Quelle valeur correspond en mg ?","choices":["0,125 mg","1,25 mg","12,5 mg","125 mg","1 250 mg"],"answers":[1],"explanation":"1 mg = 1 000 µg. Il faut donc diviser 1 250 par 1 000 : 1 250 µg = 1,25 mg."},{"id":"cdm_004","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Durées et horaires","difficulty":"easy","number":4,"question":"À propos de 2 h 30, quelles écritures sont équivalentes ?","choices":["2,30 h","2,5 h","150 min","230 min","180 min"],"answers":[1,2],"explanation":"30 minutes représentent une demi-heure, donc 2 h 30 = 2,5 h. En minutes : 2 × 60 + 30 = 150 min. L'écriture 2,30 h est incorrecte."},{"id":"cdm_005","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Durées et horaires","difficulty":"medium","number":5,"question":"425 minutes correspondent à :","choices":["6 h 25","7 h 05","7 h 25","8 h 05","4 h 25"],"answers":[1],"explanation":"7 h = 420 min. Il reste 5 min. Donc 425 min = 7 h 05."},{"id":"cdm_006","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dosages et concentrations","difficulty":"easy","number":6,"question":"Un flacon de 1 000 mL est dosé à 9 ‰. Quelle masse de principe actif contient-il ?","choices":["0,9 g","4,5 g","9 g","90 g","900 g"],"answers":[2],"explanation":"Dans ce cahier, 9 ‰ signifie 9 g pour 1 000 mL. Un flacon de 1 000 mL contient donc 9 g."},{"id":"cdm_007","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dosages et concentrations","difficulty":"medium","number":7,"question":"Quelle masse de principe actif contient une poche de 500 mL dosée à 0,9 % ?","choices":["0,45 g","4,5 g","9 g","45 g","450 g"],"answers":[1],"explanation":"0,9 % = 0,9 g pour 100 mL. Pour 500 mL : 0,9 × 500 ÷ 100 = 4,5 g."},{"id":"cdm_008","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dosages et concentrations","difficulty":"medium","number":8,"question":"Une solution à 20 % correspond, dans les conventions du cahier, à quelles concentrations ?","choices":["0,02 g/mL","0,2 g/mL","20 mg/mL","200 mg/mL","2 000 mg/mL"],"answers":[1,3],"explanation":"20 % = 20 g pour 100 mL, soit 0,2 g/mL. Comme 0,2 g = 200 mg, cela correspond aussi à 200 mg/mL."},{"id":"cdm_009","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dosages et concentrations","difficulty":"medium","number":9,"question":"Une solution est dosée à 15 mg/mL. Quelle masse reçoit-on avec 20 mL ?","choices":["30 mg","75 mg","150 mg","300 mg","750 mg"],"answers":[3],"explanation":"Masse = concentration × volume = 15 mg/mL × 20 mL = 300 mg."},{"id":"cdm_010","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dosages et concentrations","difficulty":"medium","number":10,"question":"Une solution contient 20 g dans 500 mL. Quel est son pourcentage masse/volume ?","choices":["0,4 %","2 %","4 %","20 %","40 %"],"answers":[2],"explanation":"% = masse en g × 100 ÷ volume en mL = 20 × 100 ÷ 500 = 4 %."},{"id":"cdm_011","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Calculs de doses","difficulty":"medium","number":11,"question":"Une dose prescrite est de 750 mg. La solution disponible contient 100 mg/mL. Quel volume faut-il calculer ?","choices":["0,75 mL","3,75 mL","7,5 mL","75 mL","750 mL"],"answers":[2],"explanation":"Volume = dose ÷ concentration = 750 mg ÷ 100 mg/mL = 7,5 mL."},{"id":"cdm_012","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Calculs de doses","difficulty":"medium","number":12,"question":"Une prescription totale de 1,5 g est répartie en 3 prises égales. Les comprimés sont dosés à 500 mg. Combien de comprimés correspondent à une prise ?","choices":["0,5 comprimé","1 comprimé","1,5 comprimé","2 comprimés","3 comprimés"],"answers":[1],"explanation":"1,5 g = 1 500 mg. Par prise : 1 500 ÷ 3 = 500 mg. Un comprimé apporte 500 mg : il faut donc 1 comprimé par prise."},{"id":"cdm_013","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Débits de perfusion","difficulty":"medium","number":13,"question":"Une poche de 500 mL passe en 8 h avec un facteur de 20 gouttes/mL. Quels résultats sont corrects ?","choices":["62,5 mL/h","80 mL/h","Environ 21 gouttes/min","Environ 42 gouttes/min","500 gouttes/min"],"answers":[0,2],"explanation":"Débit volumique : 500 ÷ 8 = 62,5 mL/h. En gouttes/min : 500 × 20 ÷ 480 = 20,83, soit environ 21 gouttes/min."},{"id":"cdm_014","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Débits de perfusion","difficulty":"hard","number":14,"question":"Une poche de 250 mL passe en 2 h 30 avec un facteur de 20 gouttes/mL. Quels résultats sont corrects ?","choices":["50 mL/h","100 mL/h","125 mL/h","Environ 33 gouttes/min","Environ 67 gouttes/min"],"answers":[1,3],"explanation":"2 h 30 = 2,5 h = 150 min. Débit = 250 ÷ 2,5 = 100 mL/h. En gouttes/min : 250 × 20 ÷ 150 = 33,33, soit environ 33 gouttes/min."},{"id":"cdm_015","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Débits de perfusion","difficulty":"easy","number":15,"question":"Une seringue électrique fictive délivre 150 mL à 75 mL/h. Quelle est la durée ?","choices":["30 min","1 h","1 h 30","2 h","3 h"],"answers":[3],"explanation":"Durée = volume ÷ débit = 150 mL ÷ 75 mL/h = 2 h."},{"id":"cdm_016","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Débits de perfusion","difficulty":"hard","number":16,"question":"Une poche de 600 mL est réglée à 30 gouttes/min avec un facteur de 20 gouttes/mL. Quelle est sa durée théorique ?","choices":["3 h 20","5 h","6 h","6 h 40","10 h"],"answers":[3],"explanation":"Nombre total de gouttes = 600 × 20 = 12 000. Durée = 12 000 ÷ 30 = 400 min, soit 6 h 40."},{"id":"cdm_017","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Durées et horaires","difficulty":"medium","number":17,"question":"Quatre prises sont prescrites à intervalles réguliers sur 24 h. Quel intervalle sépare deux prises ?","choices":["4 h","5 h","6 h","8 h","12 h"],"answers":[2],"explanation":"Pour des prises régulièrement espacées : intervalle = 24 ÷ nombre de prises. Donc 24 ÷ 4 = 6 h."},{"id":"cdm_018","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dilutions et reconstitutions","difficulty":"hard","number":18,"question":"Dans une dilution théorique sans perte de soluté et avec des unités compatibles, quelles relations sont utilisées dans le cahier ?","choices":["C₁ × V₁ = C₂ × V₂","V diluant = V final - V initial","C₁ + V₁ = C₂ + V₂","V diluant = V initial - V final","La masse de soluté est supposée disparaître pendant la dilution"],"answers":[0,1],"explanation":"Le cahier utilise la conservation de la masse de soluté : C₁ × V₁ = C₂ × V₂. Si les volumes sont supposés additifs, le volume de diluant vaut V final - V initial."},{"id":"cdm_019","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Dilutions et reconstitutions","difficulty":"medium","number":19,"question":"Une poche contient 500 mL. On ajoute 5 mL puis 10 mL, sans retrait et en supposant les volumes additifs. Quel est le volume final ?","choices":["485 mL","500 mL","505 mL","510 mL","515 mL"],"answers":[4],"explanation":"Sans retrait et avec des volumes additifs : volume final = 500 + 5 + 10 = 515 mL."},{"id":"cdm_020","courseId":"calculs_doses_mathematiques","ue":"S1 B3","course":"Calculs de doses & mathématiques","theme":"Méthode générale","difficulty":"hard","number":20,"question":"Avant de valider un calcul, quelles vérifications appartiennent à la méthode du cahier ?","choices":["Harmoniser les unités avant le calcul","Arrondir à chaque étape intermédiaire","Conserver les valeurs non arrondies pendant le raisonnement","Vérifier l'ordre de grandeur du résultat","Supprimer l'unité de la réponse finale"],"answers":[0,2,3],"explanation":"La méthode demande d'harmoniser les unités, de calculer sans arrondi intermédiaire puis d'arrondir seulement à la fin, et de vérifier l'ordre de grandeur. La réponse finale doit conserver son unité."},{"id":"D1_COMM_TD1_001","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":1,"theme":"Fondamentaux","difficulty":"easy","question":"Quelles affirmations définissent correctement la communication ?","choices":["Un processus cognitif, social et affectif.","Une garantie que le récepteur a compris.","Une transmission forcément dépourvue de signaux affectifs.","L’émission obligatoire de mots.","Une procédure limitée exclusivement aux transmissions administratives."],"answers":[0],"explanation":"La communication dépasse la parole : elle met des personnes en relation et comprend aussi gestes, attitudes et silence. Émettre un message ne garantit jamais sa compréhension.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la communication ?","answers":["Un processus cognitif, social et affectif qui permet à plusieurs personnes de partager et interpréter informations, émotions ou intentions."],"explanation":"Ne pas réduire la communication à la seule parole."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_002","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":2,"theme":"Fondamentaux","difficulty":"easy","question":"Au sujet de la différence entre parler et communiquer, quelles propositions sont exactes ?","choices":["Dès qu’une personne parle, son interlocuteur comprend forcément le sens.","Communiquer exige de parler.","Parler implique l’usage de sons articulés.","Une personne silencieuse peut transmettre un message.","Les deux verbes sont strictement synonymes."],"answers":[2,3],"explanation":"Parler est un acte verbal. Communiquer est plus large et ne suppose ni parole ni compréhension automatique. Le silence et la posture peuvent participer à l’échange.","flashcards":[{"kind":"Notion précise","front":"Quelle différence entre parler et communiquer ?","answers":["Parler mobilise les mots et les sons ; communiquer signifie entrer en relation et échanger, y compris sans mots."],"explanation":"Un discours peut être émis sans avoir été compris."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_003","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":3,"theme":"Fondamentaux","difficulty":"easy","question":"Dans un modèle simple du processus de communication, quels éléments interviennent ?","choices":["La disparition obligatoire de tous les filtres.","Une prescription médicale obligatoire.","Un émetteur.","Un canal.","L’adhésion systématique du destinataire au contenu."],"answers":[2,3],"explanation":"Émetteur, message, canal, récepteur et retour composent le modèle présenté. Une prescription médicale n’est pas une étape constitutive de toute communication.","flashcards":[{"kind":"Notion précise","front":"Quels éléments composent un processus de communication entre deux personnes ?","answers":["Émetteur → message → canal → récepteur → feed-back."],"explanation":"Le retour permet d’ajuster."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_004","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":4,"theme":"Fondamentaux","difficulty":"easy","question":"Quel est le rôle du canal ?","choices":["Servir de moyen de transmission.","Remplacer le contenu du message.","Déterminer toujours la véracité du message.","Garantir que le destinataire est attentif.","Pouvoir être auditif ou visuel."],"answers":[0,4],"explanation":"Un canal est le moyen employé (voix, téléphone, écrit, pictogramme). Le canal doit être choisi selon le contexte ; il ne garantit ni compréhension ni véracité.","flashcards":[{"kind":"Notion précise","front":"Quel est le rôle de l’émetteur ?","answers":["Produire et transmettre un message en choisissant un canal et une formulation."],"explanation":"Sa crédibilité et son implication peuvent influer sur la réception."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_005","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":5,"theme":"Fondamentaux","difficulty":"medium","question":"Le feed-back peut permettre au soignant de…","choices":["Vérifier comment le message a été reçu.","Déduire avec certitude les intentions cachées du récepteur.","Ajuster une explication mal comprise.","Se dispenser de toute observation.","Conclure systématiquement dès qu’un patient dit oui."],"answers":[0,2],"explanation":"La rétroaction renseigne sur la réception et le sens compris. Elle peut être verbale ou non verbale ; un simple oui peut être insuffisant.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que le canal ?","answers":["Le moyen auditif, visuel ou autre utilisé pour transmettre le message."],"explanation":"La voix, un écrit ou un pictogramme sont des canaux possibles."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_006","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":6,"theme":"Fondamentaux","difficulty":"medium","question":"Une personne hoche la tête après une explication. Quelle conclusion est appropriée ?","choices":["Ce signe constitue un retour possible.","Un signe qui dispense de toute vérification complémentaire.","Un geste ayant exactement le même sens pour chaque patient.","Elle a forcément compris.","Il est inutile de reformuler."],"answers":[0],"explanation":"Le hochement peut être un feed-back, mais son sens n’est pas une preuve absolue de compréhension. Il faut vérifier sans surinterpréter.","flashcards":[{"kind":"Notion précise","front":"Que désigne le récepteur ?","answers":["La personne qui reçoit et interprète un message selon ses capacités et repères."],"explanation":"Recevoir ne signifie pas comprendre comme l’émetteur."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_007","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":7,"theme":"Fondamentaux","difficulty":"medium","question":"À propos du message envoyé par l’émetteur, quelles affirmations sont justes ?","choices":["Sa formulation peut être plus ou moins complexe.","Sa forme est sans importance.","Sa compréhension peut être modifiée par des filtres.","Un message direct est toujours faux.","Un jargon technique identique pour tous les destinataires."],"answers":[0,2],"explanation":"Fond, forme, vocabulaire, contexte et filtres influencent la réception. Le choix d’un message clair et adapté ne garantit toutefois pas à lui seul la compréhension.","flashcards":[{"kind":"Notion précise","front":"À quoi sert le feed-back ?","answers":["À vérifier comment le message a été compris et à permettre un réajustement."],"explanation":"Un retour peut être verbal ou non verbal."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_008","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":8,"theme":"Fondamentaux","difficulty":"medium","question":"Pourquoi préparer le message avant un soin ?","choices":["Pour éviter le feed-back après l’explication.","Pour supprimer toutes les questions du patient.","Pour empêcher le patient de poser des questions.","Pour identifier le but de l’échange.","Pour adapter le vocabulaire et le canal."],"answers":[3,4],"explanation":"La préparation réduit les déformations liées à l’émetteur. Elle n’enlève ni le droit du patient à s’exprimer ni l’importance du retour.","flashcards":[{"kind":"Notion précise","front":"Pourquoi un « oui » ne suffit-il pas toujours ?","answers":["Parce qu’il ne prouve pas à lui seul la compréhension réelle."],"explanation":"Demander ce que la personne a retenu peut éclairer son niveau de compréhension."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_009","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":9,"theme":"Fondamentaux","difficulty":"hard","question":"À propos des proportions 7/38/55 associées aux travaux de Mehrabian, quelles affirmations sont justifiées ?","choices":["Elles remplacent l’évaluation de la compréhension.","Elles doivent être appliquées sans contexte.","Il faut éviter de les généraliser à toute communication.","Elles prouvent que 93 % de toute information médicale est non verbale.","Ces proportions sont associées aux travaux de Mehrabian."],"answers":[2,4],"explanation":"Ces pourcentages ne doivent pas être généralisés à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation.","announcedCorrectCount":2},{"id":"D1_COMM_TD1_010","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":10,"theme":"Fondamentaux","difficulty":"medium","question":"Pourquoi ne faut-il pas confondre information transmise et information comprise ?","choices":["Parce que le récepteur interprète le message.","Parce que le silence signifie toujours un refus.","Parce que la rétroaction permet de contrôler le sens reçu.","Parce que tout mot technique est interdit.","Parce que les filtres peuvent agir."],"answers":[0,2,4],"explanation":"La compréhension dépend du destinataire, du contexte, des filtres et du retour. Les signes isolés (silence, oui, regard) ne doivent pas recevoir une signification unique.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_011","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":11,"theme":"Formes et filtres","difficulty":"easy","question":"Quelles sont des composantes paraverbales ?","choices":["Le choix lexical des mots.","La couleur du vêtement.","La tonalité de la voix.","La distance entre le soignant et le patient.","Le débit de parole."],"answers":[2,4],"explanation":"Le paraverbal concerne la façon de prononcer la parole : ton, débit, volume, intonation, pauses, articulation. Vêtement = apparence non verbale ; choix des mots = verbal.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce qu’un filtre de communication ?","answers":["Un élément personnel ou contextuel influençant la réception et l’interprétation du message."],"explanation":"Les filtres peuvent entraîner une déformation du sens."},{"kind":"Notion précise","front":"Qu’est-ce que la congruence ?","answers":["La cohérence entre les paroles, le ton et l’attitude corporelle."],"explanation":"Une discordance peut entraver la confiance."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_012","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":12,"theme":"Formes et filtres","difficulty":"easy","question":"La communication non verbale peut comprendre…","choices":["L’orthographe d’un compte rendu.","La structure grammaticale d’une phrase.","Le choix des mots techniques dans le discours.","La variation du débit de parole.","Les mimiques faciales."],"answers":[4],"explanation":"La gestuelle, les mimiques, la posture et la proxémie relèvent du non verbal. Les mots écrits et leur construction relèvent du verbal.","flashcards":[{"kind":"Notion précise","front":"Quels facteurs personnels peuvent filtrer un message dans un échange ?","answers":["Les expériences, émotions, croyances, cultures, normes et représentations, entre autres."],"explanation":"Ils ne sont pas seulement linguistiques."},{"kind":"Notion précise","front":"Quelle prudence appliquer aux chiffres 7/38/55 ?","answers":["Ces proportions ne doivent pas être présentées comme une règle universelle de toutes les communications."],"explanation":"La portée de ces pourcentages n’est pas attestée par le dossier étudié."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_013","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":13,"theme":"Formes et filtres","difficulty":"medium","question":"Que désigne la prosodie ?","choices":["Le volume, le rythme et l’intonation de la parole.","La manière dont la voix contribue au sens.","Le diagnostic du patient.","L’absence systématique de mots.","La distance entre deux interlocuteurs."],"answers":[0,1],"explanation":"La prosodie est la musicalité et l’organisation vocale de la parole, donc un aspect paraverbal. La distance entre personnes est la proxémie.","flashcards":[{"kind":"Notion précise","front":"Comment réduire les filtres avant de communiquer ?","answers":["Préparer le but du message, les mots et le canal en tenant compte de la personne."],"explanation":"Une préparation ne supprime pas le besoin de vérifier."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_014","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":14,"theme":"Formes et filtres","difficulty":"medium","question":"À propos de la proxémie, que faut-il retenir ?","choices":["Elle doit être adaptée à la culture et au contexte.","Elle est identique pour tous les patients.","Elle impose de se tenir toujours à plus de deux mètres.","Elle concerne l’espace personnel et la distance.","L’obligation d’appliquer une distance physique fixe dans tous les soins."],"answers":[0,3],"explanation":"La proxémie étudie la distance relationnelle et l’espace intime. L’adaptation est essentielle : pas de distance universelle imposable à toutes les situations.","flashcards":[{"kind":"Notion précise","front":"Comment réduire les filtres pendant l’échange ?","answers":["Choisir un environnement propice, adapter le ton et vérifier l’attention."],"explanation":"Le confort et les émotions influencent l’écoute."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_015","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":15,"theme":"Formes et filtres","difficulty":"easy","question":"Quelles propositions illustrent un filtre de communication ?","choices":["Une expérience de soin antérieure.","Un câblage informatique obligatoire.","Un volume sonore systématiquement optimal.","Une croyance ou représentation.","L’état émotionnel."],"answers":[0,3,4],"explanation":"Les filtres personnels et contextuels comprennent expériences, croyances, cultures et émotions. Ils peuvent modifier l’interprétation du message.","flashcards":[{"kind":"Notion précise","front":"Comment réduire les filtres après l’explication ?","answers":["Chercher un feed-back et réajuster si nécessaire."],"explanation":"Le sens reçu doit être évalué."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_016","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":16,"theme":"Formes et filtres","difficulty":"hard","question":"Un patient paraît contrarié sans lien direct avec le soin. Quels constats sont pertinents ?","choices":["Il faut nécessairement interrompre tout dialogue.","Le soignant peut adapter le moment et les mots.","La certitude qu’aucun filtre ne peut agir après l’explication.","Son émotion peut influer sur la réception.","L’émotion ne peut pas modifier le message."],"answers":[1,3],"explanation":"Des émotions même extérieures à la situation peuvent modifier la réception du message. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la communication verbale ?","answers":["La communication qui mobilise les mots et leur signification."],"explanation":"Le vocabulaire doit être accessible."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_017","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":17,"theme":"Formes et filtres","difficulty":"medium","question":"Une soignante dit « je suis disponible » en gardant le dos tourné. Quel concept est en jeu ?","choices":["La preuve que seul le non verbal compte.","L’impact possible sur la confiance.","La certitude qu’elle ne veut pas aider.","L’impossibilité pour le patient de comprendre le discours.","La congruence des paroles et de l’attitude."],"answers":[1,4],"explanation":"Le message verbal et les signes non verbaux peuvent se contredire. La congruence vise leur cohérence, sans déduire avec certitude les intentions de la soignante.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la communication paraverbale ?","answers":["La façon dont la voix donne sens à la parole : ton, débit, volume, rythme, pauses."],"explanation":"Il faut distinguer les mots de leur réalisation vocale."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_018","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":18,"theme":"Formes et filtres","difficulty":"medium","question":"Quels moyens limitent les pertes d’information liées aux filtres ?","choices":["Préparer le message.","Se dispenser du retour du récepteur après le message.","Utiliser plus de jargon à chaque répétition.","Garder le même ton et la même organisation quel que soit le contexte.","Éviter toutes les questions du patient."],"answers":[0],"explanation":"La prévention de la perte d’information exige un travail avant, pendant et après l’échange : préparation, choix du contexte, vérification du sens reçu. Jargon et absence de dialogue majorent le risque de perte.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la prosodie ?","answers":["La musicalité de la parole, notamment les variations de rythme et d’intonation."],"explanation":"C’est une composante paraverbale."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_019","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":19,"theme":"Formes et filtres","difficulty":"hard","question":"Concernant les indices corporels, quelle attitude est correcte ?","choices":["Déduire une émotion certaine d’un geste isolé.","Les interpréter en tenant compte de la personne.","Les observer avec prudence.","Les mettre en relation avec le verbal.","Abandonner toute question de clarification."],"answers":[1,2,3],"explanation":"La posture, le regard ou un sourire apportent des indices mais ne permettent pas de lire directement les pensées. Le contexte et la clarification restent indispensables.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la communication non verbale ?","answers":["L’ensemble des signes non lexicaux, comme gestes, mimiques, posture, regard et distance."],"explanation":"Un geste isolé ne possède pas un sens universel."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_020","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":20,"theme":"Formes et filtres","difficulty":"medium","question":"Le patient ne partage pas la langue du soignant. Quelles adaptations sont mentionnées en séance ?","choices":["Utiliser des dessins ou pictogrammes.","Recourir à des supports écrits si adaptés.","L’interdiction de tout outil de traduction.","Conserver absolument le même canal oral.","Supposer que son silence signifie consentement."],"answers":[0,1],"explanation":"L’enseignante suggère de changer de canal : écriture, dessin, pictogramme ou traduction selon capacités et situation. Le silence n’a pas de valeur univoque de consentement.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que la proxémie ?","answers":["La gestion de l’espace personnel et de la distance physique dans la relation."],"explanation":"Elle dépend du contexte, de l’intimité et des préférences de chacun."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_021","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":21,"theme":"Adaptation au patient","difficulty":"easy","question":"Avant une communication adaptée, quel préalable l’intervenante souligne-t-elle explicitement ?","choices":["La décision prise pour la personne sans explorer ses attentes.","Identifier sa demande.","Éviter de connaître la situation.","Repérer les besoins de la personne.","Choisir d’abord une réponse toute faite."],"answers":[1,3],"explanation":"La recherche des besoins et des demandes est présentée oralement comme le postulat de départ de la communication. Le choix des mots ou du canal en découle.","flashcards":[{"kind":"Notion précise","front":"Quel préalable l’intervenante place-t-elle avant l’échange ?","answers":["Identifier les besoins et les demandes de la personne soignée."],"explanation":"Ce préalable a été explicitement souligné dans la séance."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_022","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":22,"theme":"Adaptation au patient","difficulty":"easy","question":"Quelles capacités peuvent conditionner la réception du message ?","choices":["Le diplôme du soignant uniquement.","La compréhension.","La décoration du service uniquement.","La mémorisation.","Les fonctions sensorielles."],"answers":[1,3,4],"explanation":"Il faut repérer les aptitudes à comprendre et mémoriser ainsi que les capacités sensorielles. Les caractéristiques du soignant ne suffisent pas à garantir la réception.","flashcards":[{"kind":"Notion précise","front":"Quelles capacités faut-il repérer avant d’expliquer ?","answers":["Les capacités de compréhension, de mémorisation et les fonctions sensorielles, ainsi que l’état émotionnel."],"explanation":"Le message doit être adapté à son destinataire."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_023","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":23,"theme":"Adaptation au patient","difficulty":"medium","question":"Parmi les démarches suivantes, laquelle est adaptée avant une explication ?","choices":["Choisir délibérément un langage inaccessible.","Identifier les besoins et les attentes de la personne.","Conclure que le patient a forcément compris parce qu’il sourit.","Chercher à obtenir un « oui » à tout prix.","Choisir un lieu sans confidentialité pour aller plus vite."],"answers":[1],"explanation":"Le but, le langage, les capacités du patient, le moment et le lieu guident l’adaptation. Le soin relationnel ne vise pas un accord mécanique.","flashcards":[{"kind":"Notion précise","front":"Comment adapter une explication difficile à comprendre ?","answers":["Changer les mots, le rythme, le canal ou le moment, puis chercher un retour."],"explanation":"Répéter exactement les mêmes mots n’est pas toujours efficace."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_024","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":24,"theme":"Adaptation au patient","difficulty":"medium","question":"Une personne semble ne pas mémoriser une explication. Quelles réponses sont adaptées ?","choices":["La reprendre calmement si nécessaire.","La qualifier de mauvaise volonté.","Accélérer le débit pour transmettre davantage d’informations.","Vérifier ce qu’elle a retenu.","Reformuler avec d’autres mots."],"answers":[0,3,4],"explanation":"La répétition patiente et la reformulation sont des adaptations, particulièrement quand compréhension ou mémorisation varient. Émettre plus vite davantage d’informations n’est pas une solution.","flashcards":[{"kind":"Notion précise","front":"Comment communiquer avec une personne qui s’exprime peu oralement ?","answers":["Évaluer l’intérêt de l’écrit, de dessins, de pictogrammes ou d’autres supports adaptés."],"explanation":"L’impossibilité de parler n’équivaut pas à l’impossibilité de communiquer."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_025","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":25,"theme":"Adaptation au patient","difficulty":"hard","question":"Une personne refuse temporairement la toilette. Quelles attitudes de communication privilégier ?","choices":["La fixation d’un horaire imposé sans possibilité de dialogue.","Imposer immédiatement le soin pour gagner du temps.","Explorer avec respect ce qui la gêne.","Tenir compte de ses choix et capacités.","Ignorer sa parole en raison de sa dépendance."],"answers":[2,3],"explanation":"L’enseignante prend l’exemple de la toilette pour distinguer relation adaptée et ordre. Écoute, respect et participation sont requis ; les questions juridiques détaillées relèvent d’un autre cours.","flashcards":[{"kind":"Notion précise","front":"Quelle posture devant un refus momentané de toilette ?","answers":["Écouter, explorer les raisons et chercher un ajustement respectueux des choix et des possibilités."],"explanation":"Ne pas réduire la communication à l’obtention d’un oui."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_026","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":26,"theme":"Adaptation au patient","difficulty":"hard","question":"Dans la relation avec l’entourage, quelles attitudes conviennent ?","choices":["Donner à toute la famille toutes les informations sans discernement.","Écouter les préoccupations des proches.","Prendre en compte l’entourage sans effacer la personne.","Respecter la confidentialité du patient.","Faire disparaître systématiquement la parole du patient."],"answers":[1,2,3],"explanation":"La relation soignante peut inclure la famille tout en plaçant le patient au centre et en respectant la confidentialité. La présence des proches ne supprime pas le respect de sa parole.","flashcards":[{"kind":"Notion précise","front":"Comment favoriser l’autonomie pendant un soin ?","answers":["Repérer les capacités préservées et laisser la personne participer dans la mesure du possible."],"explanation":"Tout faire à sa place peut limiter sa participation."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_027","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":27,"theme":"Adaptation au patient","difficulty":"medium","question":"L’enseignante insiste sur le mot « je » dans la réponse du soignant. Pourquoi ?","choices":["Il peut marquer l’engagement personnel.","Il doit correspondre à une action réellement tenue.","Il évite l’imprécision d’un « on » systématique.","Il remplace toute obligation professionnelle.","Il oblige le soignant à promettre l’impossible."],"answers":[0,1,2],"explanation":"Le « je » personnel reflète une implication réelle, mais la relation de confiance exige aussi de tenir ce qui est annoncé. On ne doit pas promettre ce qui ne peut être assuré.","flashcards":[{"kind":"Notion précise","front":"Comment prendre en compte l’entourage ?","answers":["Accueillir ses inquiétudes et ses informations sans effacer la parole du patient ni la confidentialité."],"explanation":"Les proches font partie du contexte relationnel."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_028","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":28,"theme":"Adaptation au patient","difficulty":"medium","question":"Une personne présente une difficulté d’expression orale. Quelles propositions sont adaptées ?","choices":["Évaluer d’autres canaux possibles.","Proposer selon le besoin l’écrit ou des pictogrammes.","Accepter que le temps d’échange soit plus long.","Exiger des réponses exclusivement verbales.","Considérer qu’aucune communication n’est possible."],"answers":[0,1,2],"explanation":"La difficulté de parole n’empêche pas la communication. L’adaptation du canal et du rythme est explicitement discutée dans les échanges oraux.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_029","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":29,"theme":"Adaptation au patient","difficulty":"medium","question":"Que signifie favoriser l’autonomie au cours d’un soin ?","choices":["Effectuer systématiquement à sa place tous les gestes.","Laisser une place active à la personne.","Repérer les capacités conservées.","Une aide identique pour tous, indépendamment des capacités conservées.","Exiger qu’elle réalise seule ce qu’elle ne peut pas faire."],"answers":[1,2],"explanation":"L’enseignante signale le risque de tout faire par manque de temps. L’objectif est de soutenir les capacités existantes, sans abandon ni sur-assistance.","announcedCorrectCount":2},{"id":"D1_COMM_TD1_030","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":30,"theme":"Adaptation au patient","difficulty":"medium","question":"Quel rapport établir entre communication et confiance ?","choices":["Se présenter rend son rôle identifiable.","La confiance se décrète au premier contact.","Des engagements respectés soutiennent la relation.","Une attitude authentique peut favoriser la confiance.","Il faut employer le prénom du patient sans lui demander."],"answers":[0,2,3],"explanation":"Se présenter, respecter la personne, ne pas inventer et tenir sa parole contribuent à la confiance. La familiarité imposée ou la confiance proclamée n’y suffisent pas.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_031","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":31,"theme":"Attitudes et obstacles","difficulty":"easy","question":"Quelles attitudes facilitent la communication dans le soin ?","choices":["Minimisation automatique de la peur.","Imposer à tous les patients le même canal sans adaptation.","Écoute active et disponibilité.","Promettre de façon certaine ce que l’on ne peut garantir.","Jugements et ordres systématiques."],"answers":[2],"explanation":"Empathie, congruence, écoute, disponibilité, objectivité et respect du silence facilitent l’échange. Jugements, ordres et banalisation sont au contraire des obstacles.","flashcards":[{"kind":"Notion précise","front":"Pourquoi préférer parfois « je » à « on » ?","answers":["Pour exprimer un engagement personnel identifiable, qu’il faudra réellement tenir."],"explanation":"L’enseignante insiste sur la responsabilité des paroles."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_032","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":32,"theme":"Attitudes et obstacles","difficulty":"medium","question":"Dans la relation soignante, l’empathie consiste notamment à…","choices":["Une obligation d’absorber sa souffrance.","Une tentative de comprendre le vécu de l’autre.","Compatible avec une juste distance professionnelle.","Une posture qui accueille les émotions sans fusion.","L’accord systématique avec toutes ses opinions."],"answers":[1,2,3],"explanation":"L’enseignante distingue empathie et absorption des émotions ; comprendre ne signifie pas fusionner ou approuver toutes les affirmations du patient.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que l’authenticité professionnelle ?","answers":["Reconnaître ses limites, ne pas inventer une réponse et chercher une information fiable."],"explanation":"Dire « je ne sais pas » peut être professionnel."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_033","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":33,"theme":"Attitudes et obstacles","difficulty":"medium","question":"Un patient exprime de la colère. Quelles réactions sont préférables ?","choices":["Conclure qu’il est agressif par nature.","Répondre par une insulte.","Reconnaître l’émotion exprimée.","Chercher ce qui la suscite.","L’imitation du ton agressif du patient pour montrer de la fermeté."],"answers":[2,3],"explanation":"L’enseignante recommande d’entendre la colère et de chercher son origine plutôt que répondre à l’insulte. Éviter de transformer un comportement en jugement sur la personne.","flashcards":[{"kind":"Notion précise","front":"Qu’est-ce que l’empathie ?","answers":["Chercher à comprendre le vécu de l’autre sans absorber automatiquement ses émotions."],"explanation":"Comprendre ne signifie pas approuver tout ni fusionner émotionnellement."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_034","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":34,"theme":"Attitudes et obstacles","difficulty":"easy","question":"Quels obstacles relèvent de la formulation du message ?","choices":["Un message saturé de jargon.","Une information incomplète.","Un feed-back pertinent.","Une phrase trop longue.","Une reformulation adaptée."],"answers":[0,1,3],"explanation":"Les messages trop riches, trop complexes, incomplets ou sans retour sont des obstacles. Reformulation et feed-back corrigent au contraire les difficultés.","flashcards":[{"kind":"Notion précise","front":"Que recouvre la disponibilité du soignant ?","answers":["Manifester une attention réelle et laisser la possibilité d’un nouvel échange, selon le contexte."],"explanation":"La disponibilité annoncée doit correspondre à l’attitude."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_035","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":35,"theme":"Attitudes et obstacles","difficulty":"easy","question":"Quelles attitudes soignantes peuvent faire obstacle ?","choices":["Respecter le silence.","Laisser au patient un temps de réponse.","Donner des ordres sans écouter.","Se rendre réellement disponible.","Reformuler sa demande sans jugement."],"answers":[2],"explanation":"Les attitudes d’autorité, jugement et minimisation bloquent la relation. Disponibilité et respect du rythme la facilitent.","flashcards":[{"kind":"Notion précise","front":"Pourquoi respecter le silence ?","answers":["Parce que la personne peut avoir besoin de temps pour recevoir, penser ou exprimer ce qu’elle vit."],"explanation":"Le silence ne signifie pas à lui seul refus ou accord."}],"announcedCorrectCount":1},{"id":"D1_COMM_TD1_036","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":36,"theme":"Attitudes et obstacles","difficulty":"easy","question":"Quels facteurs environnementaux peuvent perturber un entretien ?","choices":["Les interruptions téléphoniques.","Une température inconfortable.","Un lieu permettant la confidentialité.","Le bruit et la télévision.","Une installation respectueuse."],"answers":[0,1,3],"explanation":"Bruit, interruption, odeurs, températures inconfortables, espace inadapté et confidentialité insuffisante perturbent l’échange. Le lieu doit au contraire soutenir l’échange.","flashcards":[{"kind":"Notion précise","front":"Que signifie le non-jugement ?","answers":["Distinguer les faits observés des interprétations, sans enfermer la personne dans une étiquette."],"explanation":"Éviter les préjugés y compris dans les transmissions."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_037","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":37,"theme":"Attitudes et obstacles","difficulty":"hard","question":"Dans un couloir très passant, le patient évoque un sujet intime. Que faire ?","choices":["Dévoiler librement le contenu aux passants.","Envisager un lieu plus adapté.","Tenir compte de la confidentialité.","Prendre en compte le confort et les interruptions.","Poursuivre à voix forte pour se faire entendre."],"answers":[1,2,3],"explanation":"La configuration des locaux et la confidentialité sont des facteurs essentiels. Protéger le cadre relationnel peut nécessiter de déplacer ou reprogrammer l’entretien.","flashcards":[{"kind":"Notion précise","front":"Quels sont trois exemples d’obstacles liés au message ?","answers":["Jargon excessif, message incomplet, phrases trop longues ou absence de feed-back."],"explanation":"La forme peut nuire au sens."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_038","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":38,"theme":"Attitudes et obstacles","difficulty":"easy","question":"Qu’est-ce que l’authenticité professionnelle, selon les notes orales ?","choices":["Promettre une réponse inventée pour rassurer.","Éviter toute question difficile.","Chercher une information fiable.","Rester honnête sur ses limites.","Admettre que l’on ne sait pas."],"answers":[2,3,4],"explanation":"L’enseignante dit explicitement de reconnaître ses limites et de se renseigner plutôt que d’inventer. L’authenticité n’est pas une prétention à tout savoir.","flashcards":[{"kind":"Notion précise","front":"Quels sont trois exemples d’obstacles liés à l’attitude du soignant ?","answers":["Ordres, jugements, minimisation des ressentis, manque de disponibilité ou d’authenticité."],"explanation":"Ces attitudes peuvent fermer le dialogue."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_039","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":39,"theme":"Attitudes et obstacles","difficulty":"medium","question":"Quelles affirmations décrivent la juste distance ?","choices":["Elle s’adapte au contexte de soin.","Elle protège la relation professionnelle.","Elle tient compte de la proxémie et de l’intimité.","Elle autorise à imposer la familiarité.","Elle exclut toute attitude chaleureuse."],"answers":[0,1,2],"explanation":"La juste distance n’est ni froideur ni familiarité obligatoire. Elle vise une présence respectueuse et adaptée à la personne et au soin.","flashcards":[{"kind":"Notion précise","front":"Quels sont trois exemples d’obstacles environnementaux ?","answers":["Bruit, interruptions, manque de confidentialité, inconfort thermique ou installation inadaptée."],"explanation":"L’environnement fait partie de la communication."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_040","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":40,"theme":"Attitudes et obstacles","difficulty":"medium","question":"À propos du silence d’un patient, que peut faire le soignant ?","choices":["Affirmer que le silence est un accord.","Observer sans interpréter systématiquement.","Laisser une possibilité de reprise.","Remplir toute pause par un ordre.","Respecter le temps de réception."],"answers":[1,2,4],"explanation":"Le silence peut avoir plusieurs sens. Il faut respecter les silences et le rythme de la personne, et clarifier plutôt qu’interpréter automatiquement.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_041","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":41,"theme":"Situations et relations","difficulty":"medium","question":"Un soignant présente son rôle au début du soin. Quels effets recherchés ?","choices":["Rendre son identité professionnelle reconnaissable.","Prouver d’emblée que toute sa parole est correcte.","Garantir que l’information sera comprise sans difficulté.","Respecter un code de civilité.","Dispenser de toute nouvelle présentation les jours suivants."],"answers":[0,3],"explanation":"L’intervenante rappelle de se présenter et d’identifier son rôle, quitte à le refaire : le patient rencontre plusieurs intervenants. Cela ne rend personne infaillible.","flashcards":[{"kind":"Notion précise","front":"Pourquoi se présenter à un patient ?","answers":["Pour rendre son identité et son rôle reconnaissables et favoriser une relation de civilité et de confiance."],"explanation":"Le patient rencontre souvent plusieurs professionnels."}],"announcedCorrectCount":2},{"id":"D1_COMM_TD1_042","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":42,"theme":"Situations et relations","difficulty":"medium","question":"Pourquoi distinguer un fait d’une interprétation en transmission ?","choices":["Pour réduire les préjugés transmis.","Pour autoriser les jugements de valeur.","Pour rendre le constat vérifiable.","Pour écarter toute notion d’observation.","Pour éviter de qualifier la personne sur une impression."],"answers":[0,2,4],"explanation":"La note orale insiste sur le risque des qualificatifs stigmatisants transmis entre collègues. Décrire un comportement observable est différent de juger la personne.","flashcards":[{"kind":"Notion précise","front":"Quels types de relations sont distingués dans la fiche ?","answers":["Civilité, relation de soin, empathique, aide et soutien, éducative et thérapeutique."],"explanation":"Ces dimensions peuvent se chevaucher."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_043","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":43,"theme":"Situations et relations","difficulty":"hard","question":"À propos des relations soignantes, quelles affirmations sont justes ?","choices":["Les relations sont nécessairement isolées et ne peuvent jamais se chevaucher.","La relation éducative favorise la compréhension et la participation.","La relation thérapeutique peut recourir au jeu ou à des ateliers, notamment en psychiatrie.","La civilité comprend saluer et se présenter.","L’empathie consiste à remplacer tous les choix du patient."],"answers":[1,2,3],"explanation":"La civilité, la relation de soin, éducative et thérapeutique font partie des types évoqués à l’oral. La relation thérapeutique peut mobiliser jeux ou ateliers dans certains contextes. Les dimensions relationnelles peuvent se chevaucher.","flashcards":[{"kind":"Notion précise","front":"Comment structurer l’analyse d’une situation de communication soignante ?","answers":["Décrire les faits, identifier le besoin/l’obstacle, formuler une hypothèse prudente, proposer un ajustement, vérifier l’effet."],"explanation":"Une hypothèse n’est pas un fait établi."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_044","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":44,"theme":"Situations et relations","difficulty":"medium","question":"Dans une relation éducative, quels objectifs sont pertinents ?","choices":["Utiliser automatiquement du jargon.","Se contenter de parler sans retour.","Faire comprendre une information adaptée.","Vérifier ce qui a été retenu.","Favoriser la participation de la personne."],"answers":[2,3,4],"explanation":"L’aspect éducatif associe explication compréhensible, implication et vérification. Les mots techniques non adaptés et l’absence de retour sont des obstacles.","flashcards":[{"kind":"Notion précise","front":"Quelle trame courte employer pour répondre à une situation de partiel ?","answers":["« J’observe que… », « Cela peut… », « Je propose… »."],"explanation":"Décrire, expliquer sans certitude abusive, puis agir."}],"announcedCorrectCount":3},{"id":"D1_COMM_TD1_045","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":45,"theme":"Situations et relations","difficulty":"hard","question":"Une personne dit : « J’ai peur de prendre ces comprimés ». Que privilégier ?","choices":["Lui répondre « n’ayez pas peur » sans autre explication.","Explorer l’origine de sa peur.","Reformuler sa demande.","Écouter sans ridiculiser l’émotion.","Supposer qu’elle désobéit volontairement."],"answers":[1,2,3],"explanation":"L’enseignante utilise précisément la peur du médicament comme exemple de reformulation et de recherche du besoin. La banalisation peut empêcher le patient de s’exprimer.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_046","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":46,"theme":"Situations et relations","difficulty":"medium","question":"Le soignant souhaite expliquer un soin à un patient allongé. Quels éléments du contexte considérer ?","choices":["Le moment choisi.","La présence éventuelle d’autres personnes.","L’obligation de rester debout en dominant le patient.","La position respective soignant-patient.","La certitude que la disposition des lieux ne peut jamais influencer l’échange."],"answers":[0,1,3],"explanation":"Lieu, moment, espace, asymétrie des positions et entourage influent sur l’échange. Une position inconfortable ou dominante peut nuire à la relation.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_047","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":47,"theme":"Situations et relations","difficulty":"hard","question":"Dans une situation clinique de communication, quels sont les premiers gestes de raisonnement ?","choices":["Inventer ce que le patient pense.","Décrire les faits observables.","Identifier besoins et obstacles.","Porter immédiatement un jugement de valeur.","Relier la situation à une notion de communication soignante."],"answers":[1,2,4],"explanation":"La méthode de la fiche distingue faits, hypothèses prudentes, ajustements et vérification de l’effet. Il ne faut pas attribuer arbitrairement une émotion ou une intention.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_048","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":48,"theme":"Situations et relations","difficulty":"hard","question":"Une réponse de partiel propose « je vérifie que le patient a compris ». Comment la rendre plus précise ?","choices":["Répéter la même phrase mot pour mot sans attendre de retour.","Supposer que dire oui suffit.","Demander ce qu’il a retenu avec des mots accessibles.","Exiger une réponse immédiate sans tenir compte du rythme.","Répondre par une nouvelle leçon plus longue sans écoute."],"answers":[2],"explanation":"Le feedback est une action observable, pas une formule abstraite : demander une reformulation ou ce qui a été compris, puis adapter si nécessaire.","announcedCorrectCount":1},{"id":"D1_COMM_TD1_049","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":49,"theme":"Situations et relations","difficulty":"medium","question":"Que signifie respecter la parole et les représentations du patient ?","choices":["Prendre son vécu en considération.","Adhérer systématiquement à toutes ses croyances.","Imposer immédiatement ses propres opinions.","Explorer sa demande avec non-jugement.","Éviter de disqualifier ses ressentis."],"answers":[0,3,4],"explanation":"La relation exige d’accueillir ce que la personne dit, sans jugement, tout en conservant le cadre professionnel. Respecter une parole n’impose pas un accord systématique.","announcedCorrectCount":3},{"id":"D1_COMM_TD1_050","courseId":"d1_communication_td1","ue":"S1 D1","course":"La communication — TD1","number":50,"theme":"Situations et relations","difficulty":"hard","question":"Au terme d’une communication difficile, quelle conclusion de démarche est pertinente ?","choices":["Respecter la possibilité que le patient ait besoin de temps.","Rester ouvert à une nouvelle reformulation.","Vérifier l’effet du réajustement.","Considérer que toute absence de réponse vaut réussite.","Clore sur un ordre systématique."],"answers":[0,1,2],"explanation":"La démarche ne s’arrête pas à l’envoi d’une meilleure phrase. Elle évalue ce que le destinataire a réellement pu recevoir et laisse place à un échange adapté.","announcedCorrectCount":3}]
+[
+  {
+    "id": "resp_041",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 41,
+    "question": "Concernant la membrane alvéolo-capillaire :",
+    "choices": [
+      "Cette faible épaisseur facilite les échanges rapides.",
+      "Elle est décrite comme très fine.",
+      "Elle est constituée d’anneaux cartilagineux.",
+      "Le cours présente une seule valeur numérique parfaitement identique sur toutes les diapositives.",
+      "Elle sépare la cavité nasale du pharynx."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le support officiel comporte deux repères numériques différents : 2 µm sur la diapo 14 et environ 0,5 µm sur la diapo 41. Le point constant est la très faible épaisseur de la barrière."
+  },
+  {
+    "id": "resp_042",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 42,
+    "question": "Pour l’oxygène au niveau alvéolo-capillaire :",
+    "choices": [
+      "Le gradient d’environ 60 mmHg favorise le passage vers le sang.",
+      "L’O₂ se déplace principalement du sang vers l’alvéole.",
+      "Le sang arrivant est présenté autour de 40 mmHg de PO₂.",
+      "Le gradient est nul avant les échanges.",
+      "La PO₂ alvéolaire est présentée autour de 100 mmHg."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le gradient alvéole-sang d’environ 60 mmHg entraîne la diffusion de l’O₂ vers le sang."
+  },
+  {
+    "id": "resp_043",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 43,
+    "question": "Pour le CO₂ au niveau pulmonaire :",
+    "choices": [
+      "Le cours indique qu’il diffuse moins facilement que l’O₂.",
+      "Le sang arrivant est présenté autour de 46 mmHg.",
+      "Le CO₂ diffuse du sang vers l’alvéole.",
+      "L’alvéole est présentée autour de 40 mmHg.",
+      "Son gradient doit être supérieur à 60 mmHg pour diffuser."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le gradient n’est que d’environ 6 mmHg, mais le CO₂ diffuse très facilement car sa solubilité est élevée."
+  },
+  {
+    "id": "resp_044",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 44,
+    "question": "Le trajet de l’O₂ vers l’hémoglobine comprend :",
+    "choices": [
+      "Déplacement dans le sang jusqu’au globule rouge.",
+      "Diffusion dans l’air alvéolaire.",
+      "Passage obligatoire par une cellule caliciforme avant l’hémoglobine.",
+      "Passage de la membrane alvéolo-capillaire."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’O₂ diffuse depuis l’air alvéolaire, traverse la membrane alvéolo-capillaire puis gagne le sang et le globule rouge. Les cellules caliciformes n’interviennent pas dans ce trajet."
+  },
+  {
+    "id": "resp_045",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 45,
+    "question": "Concernant l’hémoglobine :",
+    "choices": [
+      "Une molécule d’Hb ne peut fixer qu’une seule molécule d’O₂.",
+      "L’hémoglobine transporte uniquement le CO₂ et jamais l’O₂.",
+      "Une molécule d’hémoglobine peut fixer quatre molécules d’O₂.",
+      "Le support indique environ 15 g d’Hb pour 100 mL de sang.",
+      "Le cours cite environ 280 millions de molécules d’Hb par globule rouge."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Les chiffres cités sont 4 O₂ par Hb, ~280 millions d’Hb par globule rouge et ~15 g/100 mL de sang."
+  },
+  {
+    "id": "resp_046",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 46,
+    "question": "La libération d’O₂ par l’oxyhémoglobine est favorisée dans le cours par :",
+    "choices": [
+      "Une diminution de la PO₂ tissulaire.",
+      "Une diminution du pH tissulaire.",
+      "Une augmentation obligatoire du pH liée à l’acidité.",
+      "Une absence complète de métabolisme tissulaire.",
+      "Une forte PO₂ qui reste identique à celle des alvéoles."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Une PO₂ plus basse et un pH plus bas dans les tissus favorisent le relargage d’O₂ par l’hémoglobine."
+  },
+  {
+    "id": "resp_047",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Échanges et transport des gaz",
+    "number": 47,
+    "question": "Le quotient respiratoire est défini comme :",
+    "choices": [
+      "La somme du volume courant et du volume résiduel.",
+      "Un rapport utilisant la production de CO₂ et la consommation d’O₂.",
+      "Une mesure réservée uniquement à la spirométrie des volumes statiques.",
+      "Le rapport PaO₂ / PaCO₂ défini dans le cours comme ventilation minute.",
+      "Le rapport V̇CO₂ / V̇O₂."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le support définit le quotient respiratoire R = V̇CO₂ / V̇O₂, à partir des échanges mesurés en O₂ et CO₂."
+  },
+  {
+    "id": "resp_048",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Acido-base, circulation et contrôle respiratoire",
+    "number": 48,
+    "question": "À propos des gaz du sang et de l’équilibre acido-basique :",
+    "choices": [
+      "Le prélèvement décrit est exclusivement veineux.",
+      "La respiration n’a aucun lien avec l’équilibre acido-basique.",
+      "Le cours insiste sur le lien entre ventilation, élimination du CO₂ et régulation du pH.",
+      "Le pH est relié à la concentration en bicarbonate et à la PaCO₂.",
+      "Le gaz du sang évoqué est un prélèvement artériel."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "L’intervenant insiste sur le prélèvement artériel et sur le rôle de la PaCO₂ dans l’équilibre acido-basique."
+  },
+  {
+    "id": "resp_049",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Acido-base, circulation et contrôle respiratoire",
+    "number": 49,
+    "question": "Concernant l’hémodynamique pulmonaire :",
+    "choices": [
+      "La circulation pulmonaire est une circulation à basse pression.",
+      "Les parois vasculaires pulmonaires sont décrites comme épaisses.",
+      "Le ventricule droit fournit un travail plus important que le ventricule gauche.",
+      "La circulation pulmonaire reçoit 100 % du débit cardiaque.",
+      "La chute de pression pulmonaire se fait uniquement en amont des capillaires comme dans la circulation systémique."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "La diapo d’hémodynamique décrit une circulation pulmonaire à basse pression recevant 100 % du débit cardiaque, avec parois fines et travail du ventricule droit faible. La chute de pression se poursuit dans les capillaires pulmonaires."
+  },
+  {
+    "id": "resp_050",
+    "ue": "S1 B1",
+    "course": "Système respiratoire",
+    "theme": "Acido-base, circulation et contrôle respiratoire",
+    "number": 50,
+    "question": "Le contrôle du rythme respiratoire comprend dans le support officiel :",
+    "choices": [
+      "Les centres bulbaires assurent le rythme respiratoire de base.",
+      "Les centres du pont modulent la rythmicité du centre bulbaire.",
+      "Les chémorécepteurs sont insensibles à la PCO₂ et au pH.",
+      "Des récepteurs périphériques incluent notamment des chémorécepteurs carotidiens et des mécanorécepteurs pulmonaires.",
+      "L’état de vigilance et les substances pharmacologiques n’influencent pas le centre respiratoire."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le support attribue le rythme de base aux centres bulbaires, une modulation au pont et cite des récepteurs périphériques (dont chémorécepteurs carotidiens et mécanorécepteurs pulmonaires). L’intégration tient aussi compte de l’état de vigilance et de substances pharmacologiques."
+  },
+  {
+    "id": "cdm_001",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions d'unités",
+    "difficulty": "easy",
+    "number": 1,
+    "question": "Concernant les conversions de masse, quelles équivalences sont exactes ?",
+    "choices": [
+      "1 g = 100 mg",
+      "1 g = 1 000 mg",
+      "1 mg = 1 000 µg",
+      "1 kg = 100 g",
+      "1 µg = 1 000 mg"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Deux équivalences sont à retenir : 1 g = 1 000 mg et 1 mg = 1 000 µg. On change donc d'un facteur 1 000 entre g et mg, puis entre mg et µg."
+  },
+  {
+    "id": "cdm_002",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions d'unités",
+    "difficulty": "easy",
+    "number": 2,
+    "question": "Un volume de 0,08 L doit être exprimé en mL. Quel résultat est correct ?",
+    "choices": [
+      "8 mL",
+      "80 mL",
+      "800 mL",
+      "0,8 mL",
+      "8 000 mL"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "1 L = 1 000 mL. Donc 0,08 × 1 000 = 80 mL. Comme on passe d’une unité plus grande à une unité plus petite, on multiplie par 1 000 ; l’ordre de grandeur confirme le résultat."
+  },
+  {
+    "id": "cdm_003",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Conversions d'unités",
+    "difficulty": "easy",
+    "number": 3,
+    "question": "Une étiquette indique 1 250 µg. Quelle valeur correspond en mg ?",
+    "choices": [
+      "0,125 mg",
+      "1,25 mg",
+      "12,5 mg",
+      "125 mg",
+      "1 250 mg"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "1 mg = 1 000 µg. Il faut donc diviser 1 250 par 1 000 : 1 250 µg = 1,25 mg."
+  },
+  {
+    "id": "cdm_004",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "easy",
+    "number": 4,
+    "question": "À propos de 2 h 30, quelles écritures sont équivalentes ?",
+    "choices": [
+      "2,30 h",
+      "2,5 h",
+      "150 min",
+      "230 min",
+      "180 min"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "30 minutes représentent une demi-heure, donc 2 h 30 = 2,5 h. En minutes : 2 × 60 + 30 = 150 min. L'écriture 2,30 h est incorrecte."
+  },
+  {
+    "id": "cdm_005",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "number": 5,
+    "question": "425 minutes correspondent à :",
+    "choices": [
+      "6 h 25",
+      "7 h 05",
+      "7 h 25",
+      "8 h 05",
+      "4 h 25"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "7 h = 420 min. Il reste 5 min. Donc 425 min = 7 h 05."
+  },
+  {
+    "id": "cdm_006",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dosages et concentrations",
+    "difficulty": "easy",
+    "number": 6,
+    "question": "Un flacon de 1 000 mL est dosé à 9 ‰. Quelle masse de principe actif contient-il ?",
+    "choices": [
+      "0,9 g",
+      "4,5 g",
+      "9 g",
+      "90 g",
+      "900 g"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Dans ce cahier, 9 ‰ signifie 9 g pour 1 000 mL. Un flacon de 1 000 mL contient donc 9 g."
+  },
+  {
+    "id": "cdm_007",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dosages et concentrations",
+    "difficulty": "medium",
+    "number": 7,
+    "question": "Quelle masse de principe actif contient une poche de 500 mL dosée à 0,9 % ?",
+    "choices": [
+      "0,45 g",
+      "4,5 g",
+      "9 g",
+      "45 g",
+      "450 g"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "0,9 % = 0,9 g pour 100 mL. Pour 500 mL : 0,9 × 500 ÷ 100 = 4,5 g."
+  },
+  {
+    "id": "cdm_008",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dosages et concentrations",
+    "difficulty": "medium",
+    "number": 8,
+    "question": "Une solution à 20 % correspond, dans les conventions du cahier, à quelles concentrations ?",
+    "choices": [
+      "0,02 g/mL",
+      "0,2 g/mL",
+      "20 mg/mL",
+      "200 mg/mL",
+      "2 000 mg/mL"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "20 % = 20 g pour 100 mL, soit 0,2 g/mL. Comme 0,2 g = 200 mg, cela correspond aussi à 200 mg/mL."
+  },
+  {
+    "id": "cdm_009",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dosages et concentrations",
+    "difficulty": "medium",
+    "number": 9,
+    "question": "Une solution est dosée à 15 mg/mL. Quelle masse reçoit-on avec 20 mL ?",
+    "choices": [
+      "30 mg",
+      "75 mg",
+      "150 mg",
+      "300 mg",
+      "750 mg"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Masse = concentration × volume = 15 mg/mL × 20 mL = 300 mg."
+  },
+  {
+    "id": "cdm_010",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dosages et concentrations",
+    "difficulty": "medium",
+    "number": 10,
+    "question": "Une solution contient 20 g dans 500 mL. Quel est son pourcentage masse/volume ?",
+    "choices": [
+      "0,4 %",
+      "2 %",
+      "4 %",
+      "20 %",
+      "40 %"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "% = masse en g × 100 ÷ volume en mL = 20 × 100 ÷ 500 = 4 %."
+  },
+  {
+    "id": "cdm_011",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Calculs de doses",
+    "difficulty": "medium",
+    "number": 11,
+    "question": "Une dose prescrite est de 750 mg. La solution disponible contient 100 mg/mL. Quel volume faut-il calculer ?",
+    "choices": [
+      "0,75 mL",
+      "3,75 mL",
+      "7,5 mL",
+      "75 mL",
+      "750 mL"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Volume = dose ÷ concentration = 750 mg ÷ 100 mg/mL = 7,5 mL."
+  },
+  {
+    "id": "cdm_012",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Calculs de doses",
+    "difficulty": "medium",
+    "number": 12,
+    "question": "Une prescription totale de 1,5 g est répartie en 3 prises égales. Les comprimés sont dosés à 500 mg. Combien de comprimés correspondent à une prise ?",
+    "choices": [
+      "0,5 comprimé",
+      "1 comprimé",
+      "1,5 comprimé",
+      "2 comprimés",
+      "3 comprimés"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "1,5 g = 1 500 mg. Par prise : 1 500 ÷ 3 = 500 mg. Un comprimé apporte 500 mg : il faut donc 1 comprimé par prise."
+  },
+  {
+    "id": "cdm_013",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Débits de perfusion",
+    "difficulty": "medium",
+    "number": 13,
+    "question": "Une poche de 500 mL passe en 8 h avec un facteur de 20 gouttes/mL. Quels résultats sont corrects ?",
+    "choices": [
+      "62,5 mL/h",
+      "80 mL/h",
+      "Environ 21 gouttes/min",
+      "Environ 42 gouttes/min",
+      "500 gouttes/min"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Débit volumique : 500 ÷ 8 = 62,5 mL/h. En gouttes/min : 500 × 20 ÷ 480 = 20,83, soit environ 21 gouttes/min."
+  },
+  {
+    "id": "cdm_014",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Débits de perfusion",
+    "difficulty": "hard",
+    "number": 14,
+    "question": "Une poche de 250 mL passe en 2 h 30 avec un facteur de 20 gouttes/mL. Quels résultats sont corrects ?",
+    "choices": [
+      "50 mL/h",
+      "100 mL/h",
+      "125 mL/h",
+      "Environ 33 gouttes/min",
+      "Environ 67 gouttes/min"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "2 h 30 = 2,5 h = 150 min. Débit = 250 ÷ 2,5 = 100 mL/h. En gouttes/min : 250 × 20 ÷ 150 = 33,33, soit environ 33 gouttes/min."
+  },
+  {
+    "id": "cdm_015",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Débits de perfusion",
+    "difficulty": "easy",
+    "number": 15,
+    "question": "Une seringue électrique fictive délivre 150 mL à 75 mL/h. Quelle est la durée ?",
+    "choices": [
+      "30 min",
+      "1 h",
+      "1 h 30",
+      "2 h",
+      "3 h"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Durée = volume ÷ débit = 150 mL ÷ 75 mL/h = 2 h."
+  },
+  {
+    "id": "cdm_016",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Débits de perfusion",
+    "difficulty": "hard",
+    "number": 16,
+    "question": "Une poche de 600 mL est réglée à 30 gouttes/min avec un facteur de 20 gouttes/mL. Quelle est sa durée théorique ?",
+    "choices": [
+      "3 h 20",
+      "5 h",
+      "6 h",
+      "6 h 40",
+      "10 h"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Nombre total de gouttes = 600 × 20 = 12 000. Durée = 12 000 ÷ 30 = 400 min, soit 6 h 40."
+  },
+  {
+    "id": "cdm_017",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Durées et horaires",
+    "difficulty": "medium",
+    "number": 17,
+    "question": "Quatre prises sont prescrites à intervalles réguliers sur 24 h. Quel intervalle sépare deux prises ?",
+    "choices": [
+      "4 h",
+      "5 h",
+      "6 h",
+      "8 h",
+      "12 h"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Pour des prises régulièrement espacées : intervalle = 24 ÷ nombre de prises. Donc 24 ÷ 4 = 6 h."
+  },
+  {
+    "id": "cdm_018",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dilutions et reconstitutions",
+    "difficulty": "hard",
+    "number": 18,
+    "question": "Dans une dilution théorique sans perte de soluté et avec des unités compatibles, quelles relations sont utilisées dans le cahier ?",
+    "choices": [
+      "C₁ × V₁ = C₂ × V₂",
+      "V diluant = V final - V initial",
+      "C₁ + V₁ = C₂ + V₂",
+      "V diluant = V initial - V final",
+      "La masse de soluté est supposée disparaître pendant la dilution"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le cahier utilise la conservation de la masse de soluté : C₁ × V₁ = C₂ × V₂. Si les volumes sont supposés additifs, le volume de diluant vaut V final - V initial."
+  },
+  {
+    "id": "cdm_019",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Dilutions et reconstitutions",
+    "difficulty": "medium",
+    "number": 19,
+    "question": "Une poche contient 500 mL. On ajoute 5 mL puis 10 mL, sans retrait et en supposant les volumes additifs. Quel est le volume final ?",
+    "choices": [
+      "485 mL",
+      "500 mL",
+      "505 mL",
+      "510 mL",
+      "515 mL"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Sans retrait et avec des volumes additifs : volume final = 500 + 5 + 10 = 515 mL."
+  },
+  {
+    "id": "cdm_020",
+    "courseId": "calculs_doses_mathematiques",
+    "ue": "S1 B3",
+    "course": "Calculs de doses & mathématiques",
+    "theme": "Méthode générale",
+    "difficulty": "hard",
+    "number": 20,
+    "question": "Avant de valider un calcul, quelles vérifications appartiennent à la méthode du cahier ?",
+    "choices": [
+      "Harmoniser les unités avant le calcul",
+      "Arrondir à chaque étape intermédiaire",
+      "Conserver les valeurs non arrondies pendant le raisonnement",
+      "Vérifier l'ordre de grandeur du résultat",
+      "Supprimer l'unité de la réponse finale"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La méthode demande d'harmoniser les unités, de calculer sans arrondi intermédiaire puis d'arrondir seulement à la fin, et de vérifier l'ordre de grandeur. La réponse finale doit conserver son unité."
+  },
+  {
+    "id": "D1_COMM_TD1_001",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 1,
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Quelles affirmations définissent correctement la communication ?",
+    "choices": [
+      "Un processus cognitif, social et affectif.",
+      "Une garantie que le récepteur a compris.",
+      "Une transmission forcément dépourvue de signaux affectifs.",
+      "L’émission obligatoire de mots.",
+      "Une procédure limitée exclusivement aux transmissions administratives."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La communication dépasse la parole : elle met des personnes en relation et comprend aussi gestes, attitudes et silence. Émettre un message ne garantit jamais sa compréhension.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la communication ?",
+        "answers": [
+          "Un processus cognitif, social et affectif qui permet à plusieurs personnes de partager et interpréter informations, émotions ou intentions."
+        ],
+        "explanation": "Ne pas réduire la communication à la seule parole."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_002",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 2,
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Au sujet de la différence entre parler et communiquer, quelles propositions sont exactes ?",
+    "choices": [
+      "Dès qu’une personne parle, son interlocuteur comprend forcément le sens.",
+      "Communiquer exige de parler.",
+      "Parler implique l’usage de sons articulés.",
+      "Une personne silencieuse peut transmettre un message.",
+      "Les deux verbes sont strictement synonymes."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Parler est un acte verbal. Communiquer est plus large et ne suppose ni parole ni compréhension automatique. Le silence et la posture peuvent participer à l’échange.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre parler et communiquer ?",
+        "answers": [
+          "Parler mobilise les mots et les sons ; communiquer signifie entrer en relation et échanger, y compris sans mots."
+        ],
+        "explanation": "Un discours peut être émis sans avoir été compris."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_003",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 3,
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Dans un modèle simple du processus de communication, quels éléments interviennent ?",
+    "choices": [
+      "La disparition obligatoire de tous les filtres.",
+      "Une prescription médicale obligatoire.",
+      "Un émetteur.",
+      "Un canal.",
+      "L’adhésion systématique du destinataire au contenu."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Émetteur, message, canal, récepteur et retour composent le modèle présenté. Une prescription médicale n’est pas une étape constitutive de toute communication.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels éléments composent un processus de communication entre deux personnes ?",
+        "answers": [
+          "Émetteur → message → canal → récepteur → feed-back."
+        ],
+        "explanation": "Le retour permet d’ajuster."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_004",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 4,
+    "theme": "Fondamentaux",
+    "difficulty": "easy",
+    "question": "Quel est le rôle du canal ?",
+    "choices": [
+      "Servir de moyen de transmission.",
+      "Remplacer le contenu du message.",
+      "Déterminer toujours la véracité du message.",
+      "Garantir que le destinataire est attentif.",
+      "Pouvoir être auditif ou visuel."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Un canal est le moyen employé (voix, téléphone, écrit, pictogramme). Le canal doit être choisi selon le contexte ; il ne garantit ni compréhension ni véracité.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de l’émetteur ?",
+        "answers": [
+          "Produire et transmettre un message en choisissant un canal et une formulation."
+        ],
+        "explanation": "Sa crédibilité et son implication peuvent influer sur la réception."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_005",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 5,
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Le feed-back peut permettre au soignant de…",
+    "choices": [
+      "Vérifier comment le message a été reçu.",
+      "Déduire avec certitude les intentions cachées du récepteur.",
+      "Ajuster une explication mal comprise.",
+      "Se dispenser de toute observation.",
+      "Conclure systématiquement dès qu’un patient dit oui."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La rétroaction renseigne sur la réception et le sens compris. Elle peut être verbale ou non verbale ; un simple oui peut être insuffisant.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que le canal ?",
+        "answers": [
+          "Le moyen auditif, visuel ou autre utilisé pour transmettre le message."
+        ],
+        "explanation": "La voix, un écrit ou un pictogramme sont des canaux possibles."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_006",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 6,
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Une personne hoche la tête après une explication. Quelle conclusion est appropriée ?",
+    "choices": [
+      "Ce signe constitue un retour possible.",
+      "Un signe qui dispense de toute vérification complémentaire.",
+      "Un geste ayant exactement le même sens pour chaque patient.",
+      "Elle a forcément compris.",
+      "Il est inutile de reformuler."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le hochement peut être un feed-back, mais son sens n’est pas une preuve absolue de compréhension. Il faut vérifier sans surinterpréter.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que désigne le récepteur ?",
+        "answers": [
+          "La personne qui reçoit et interprète un message selon ses capacités et repères."
+        ],
+        "explanation": "Recevoir ne signifie pas comprendre comme l’émetteur."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_007",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 7,
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "À propos du message envoyé par l’émetteur, quelles affirmations sont justes ?",
+    "choices": [
+      "Sa formulation peut être plus ou moins complexe.",
+      "Sa forme est sans importance.",
+      "Sa compréhension peut être modifiée par des filtres.",
+      "Un message direct est toujours faux.",
+      "Un jargon technique identique pour tous les destinataires."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Fond, forme, vocabulaire, contexte et filtres influencent la réception. Le choix d’un message clair et adapté ne garantit toutefois pas à lui seul la compréhension.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert le feed-back ?",
+        "answers": [
+          "À vérifier comment le message a été compris et à permettre un réajustement."
+        ],
+        "explanation": "Un retour peut être verbal ou non verbal."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_008",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 8,
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Pourquoi préparer le message avant un soin ?",
+    "choices": [
+      "Pour éviter le feed-back après l’explication.",
+      "Pour supprimer toutes les questions du patient.",
+      "Pour empêcher le patient de poser des questions.",
+      "Pour identifier le but de l’échange.",
+      "Pour adapter le vocabulaire et le canal."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "La préparation réduit les déformations liées à l’émetteur. Elle n’enlève ni le droit du patient à s’exprimer ni l’importance du retour.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi un « oui » ne suffit-il pas toujours ?",
+        "answers": [
+          "Parce qu’il ne prouve pas à lui seul la compréhension réelle."
+        ],
+        "explanation": "Demander ce que la personne a retenu peut éclairer son niveau de compréhension."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_009",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 9,
+    "theme": "Fondamentaux",
+    "difficulty": "hard",
+    "question": "À propos des proportions 7/38/55 associées aux travaux de Mehrabian, quelles affirmations sont justifiées ?",
+    "choices": [
+      "Elles remplacent l’évaluation de la compréhension.",
+      "Elles doivent être appliquées sans contexte.",
+      "Il faut éviter de les généraliser à toute communication.",
+      "Elles prouvent que 93 % de toute information médicale est non verbale.",
+      "Ces proportions sont associées aux travaux de Mehrabian."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Ces pourcentages ne doivent pas être généralisés à toutes les communications. Ils ne dispensent pas d’étudier mots, ton, gestes et feed-back dans chaque situation.",
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_010",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 10,
+    "theme": "Fondamentaux",
+    "difficulty": "medium",
+    "question": "Pourquoi ne faut-il pas confondre information transmise et information comprise ?",
+    "choices": [
+      "Parce que le récepteur interprète le message.",
+      "Parce que le silence signifie toujours un refus.",
+      "Parce que la rétroaction permet de contrôler le sens reçu.",
+      "Parce que tout mot technique est interdit.",
+      "Parce que les filtres peuvent agir."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La compréhension dépend du destinataire, du contexte, des filtres et du retour. Les signes isolés (silence, oui, regard) ne doivent pas recevoir une signification unique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_011",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 11,
+    "theme": "Formes et filtres",
+    "difficulty": "easy",
+    "question": "Quelles sont des composantes paraverbales ?",
+    "choices": [
+      "Le choix lexical des mots.",
+      "La couleur du vêtement.",
+      "La tonalité de la voix.",
+      "La distance entre le soignant et le patient.",
+      "Le débit de parole."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Le paraverbal concerne la façon de prononcer la parole : ton, débit, volume, intonation, pauses, articulation. Vêtement = apparence non verbale ; choix des mots = verbal.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’un filtre de communication ?",
+        "answers": [
+          "Un élément personnel ou contextuel influençant la réception et l’interprétation du message."
+        ],
+        "explanation": "Les filtres peuvent entraîner une déformation du sens."
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la congruence ?",
+        "answers": [
+          "La cohérence entre les paroles, le ton et l’attitude corporelle."
+        ],
+        "explanation": "Une discordance peut entraver la confiance."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_012",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 12,
+    "theme": "Formes et filtres",
+    "difficulty": "easy",
+    "question": "La communication non verbale peut comprendre…",
+    "choices": [
+      "L’orthographe d’un compte rendu.",
+      "La structure grammaticale d’une phrase.",
+      "Le choix des mots techniques dans le discours.",
+      "La variation du débit de parole.",
+      "Les mimiques faciales."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "La gestuelle, les mimiques, la posture et la proxémie relèvent du non verbal. Les mots écrits et leur construction relèvent du verbal.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels facteurs personnels peuvent filtrer un message dans un échange ?",
+        "answers": [
+          "Les expériences, émotions, croyances, cultures, normes et représentations, entre autres."
+        ],
+        "explanation": "Ils ne sont pas seulement linguistiques."
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Quelle prudence appliquer aux chiffres 7/38/55 ?",
+        "answers": [
+          "Ces proportions ne doivent pas être présentées comme une règle universelle de toutes les communications."
+        ],
+        "explanation": "La portée de ces pourcentages n’est pas attestée par le dossier étudié."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_013",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 13,
+    "theme": "Formes et filtres",
+    "difficulty": "medium",
+    "question": "Que désigne la prosodie ?",
+    "choices": [
+      "Le volume, le rythme et l’intonation de la parole.",
+      "La manière dont la voix contribue au sens.",
+      "Le diagnostic du patient.",
+      "L’absence systématique de mots.",
+      "La distance entre deux interlocuteurs."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La prosodie est la musicalité et l’organisation vocale de la parole, donc un aspect paraverbal. La distance entre personnes est la proxémie.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment réduire les filtres avant de communiquer ?",
+        "answers": [
+          "Préparer le but du message, les mots et le canal en tenant compte de la personne."
+        ],
+        "explanation": "Une préparation ne supprime pas le besoin de vérifier."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_014",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 14,
+    "theme": "Formes et filtres",
+    "difficulty": "medium",
+    "question": "À propos de la proxémie, que faut-il retenir ?",
+    "choices": [
+      "Elle doit être adaptée à la culture et au contexte.",
+      "Elle est identique pour tous les patients.",
+      "Elle impose de se tenir toujours à plus de deux mètres.",
+      "Elle concerne l’espace personnel et la distance.",
+      "L’obligation d’appliquer une distance physique fixe dans tous les soins."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "La proxémie étudie la distance relationnelle et l’espace intime. L’adaptation est essentielle : pas de distance universelle imposable à toutes les situations.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment réduire les filtres pendant l’échange ?",
+        "answers": [
+          "Choisir un environnement propice, adapter le ton et vérifier l’attention."
+        ],
+        "explanation": "Le confort et les émotions influencent l’écoute."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_015",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 15,
+    "theme": "Formes et filtres",
+    "difficulty": "easy",
+    "question": "Quelles propositions illustrent un filtre de communication ?",
+    "choices": [
+      "Une expérience de soin antérieure.",
+      "Un câblage informatique obligatoire.",
+      "Un volume sonore systématiquement optimal.",
+      "Une croyance ou représentation.",
+      "L’état émotionnel."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Les filtres personnels et contextuels comprennent expériences, croyances, cultures et émotions. Ils peuvent modifier l’interprétation du message.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment réduire les filtres après l’explication ?",
+        "answers": [
+          "Chercher un feed-back et réajuster si nécessaire."
+        ],
+        "explanation": "Le sens reçu doit être évalué."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_016",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 16,
+    "theme": "Formes et filtres",
+    "difficulty": "hard",
+    "question": "Un patient paraît contrarié sans lien direct avec le soin. Quels constats sont pertinents ?",
+    "choices": [
+      "Il faut nécessairement interrompre tout dialogue.",
+      "Le soignant peut adapter le moment et les mots.",
+      "La certitude qu’aucun filtre ne peut agir après l’explication.",
+      "Son émotion peut influer sur la réception.",
+      "L’émotion ne peut pas modifier le message."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Des émotions même extérieures à la situation peuvent modifier la réception du message. Adapter le contexte et vérifier la compréhension est plus utile qu’ignorer l’état émotionnel.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la communication verbale ?",
+        "answers": [
+          "La communication qui mobilise les mots et leur signification."
+        ],
+        "explanation": "Le vocabulaire doit être accessible."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_017",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 17,
+    "theme": "Formes et filtres",
+    "difficulty": "medium",
+    "question": "Une soignante dit « je suis disponible » en gardant le dos tourné. Quel concept est en jeu ?",
+    "choices": [
+      "La preuve que seul le non verbal compte.",
+      "L’impact possible sur la confiance.",
+      "La certitude qu’elle ne veut pas aider.",
+      "L’impossibilité pour le patient de comprendre le discours.",
+      "La congruence des paroles et de l’attitude."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le message verbal et les signes non verbaux peuvent se contredire. La congruence vise leur cohérence, sans déduire avec certitude les intentions de la soignante.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la communication paraverbale ?",
+        "answers": [
+          "La façon dont la voix donne sens à la parole : ton, débit, volume, rythme, pauses."
+        ],
+        "explanation": "Il faut distinguer les mots de leur réalisation vocale."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_018",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 18,
+    "theme": "Formes et filtres",
+    "difficulty": "medium",
+    "question": "Quels moyens limitent les pertes d’information liées aux filtres ?",
+    "choices": [
+      "Préparer le message.",
+      "Se dispenser du retour du récepteur après le message.",
+      "Utiliser plus de jargon à chaque répétition.",
+      "Garder le même ton et la même organisation quel que soit le contexte.",
+      "Éviter toutes les questions du patient."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La prévention de la perte d’information exige un travail avant, pendant et après l’échange : préparation, choix du contexte, vérification du sens reçu. Jargon et absence de dialogue majorent le risque de perte.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la prosodie ?",
+        "answers": [
+          "La musicalité de la parole, notamment les variations de rythme et d’intonation."
+        ],
+        "explanation": "C’est une composante paraverbale."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_019",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 19,
+    "theme": "Formes et filtres",
+    "difficulty": "hard",
+    "question": "Concernant les indices corporels, quelle attitude est correcte ?",
+    "choices": [
+      "Déduire une émotion certaine d’un geste isolé.",
+      "Les interpréter en tenant compte de la personne.",
+      "Les observer avec prudence.",
+      "Les mettre en relation avec le verbal.",
+      "Abandonner toute question de clarification."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La posture, le regard ou un sourire apportent des indices mais ne permettent pas de lire directement les pensées. Le contexte et la clarification restent indispensables.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la communication non verbale ?",
+        "answers": [
+          "L’ensemble des signes non lexicaux, comme gestes, mimiques, posture, regard et distance."
+        ],
+        "explanation": "Un geste isolé ne possède pas un sens universel."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_020",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 20,
+    "theme": "Formes et filtres",
+    "difficulty": "medium",
+    "question": "Le patient ne partage pas la langue du soignant. Quelles adaptations sont mentionnées en séance ?",
+    "choices": [
+      "Utiliser des dessins ou pictogrammes.",
+      "Recourir à des supports écrits si adaptés.",
+      "L’interdiction de tout outil de traduction.",
+      "Conserver absolument le même canal oral.",
+      "Supposer que son silence signifie consentement."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’enseignante suggère de changer de canal : écriture, dessin, pictogramme ou traduction selon capacités et situation. Le silence n’a pas de valeur univoque de consentement.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la proxémie ?",
+        "answers": [
+          "La gestion de l’espace personnel et de la distance physique dans la relation."
+        ],
+        "explanation": "Elle dépend du contexte, de l’intimité et des préférences de chacun."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_021",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 21,
+    "theme": "Adaptation au patient",
+    "difficulty": "easy",
+    "question": "Avant une communication adaptée, quel préalable l’intervenante souligne-t-elle explicitement ?",
+    "choices": [
+      "La décision prise pour la personne sans explorer ses attentes.",
+      "Identifier sa demande.",
+      "Éviter de connaître la situation.",
+      "Repérer les besoins de la personne.",
+      "Choisir d’abord une réponse toute faite."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La recherche des besoins et des demandes est présentée oralement comme le postulat de départ de la communication. Le choix des mots ou du canal en découle.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel préalable l’intervenante place-t-elle avant l’échange ?",
+        "answers": [
+          "Identifier les besoins et les demandes de la personne soignée."
+        ],
+        "explanation": "Ce préalable a été explicitement souligné dans la séance."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_022",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 22,
+    "theme": "Adaptation au patient",
+    "difficulty": "easy",
+    "question": "Quelles capacités peuvent conditionner la réception du message ?",
+    "choices": [
+      "Le diplôme du soignant uniquement.",
+      "La compréhension.",
+      "La décoration du service uniquement.",
+      "La mémorisation.",
+      "Les fonctions sensorielles."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Il faut repérer les aptitudes à comprendre et mémoriser ainsi que les capacités sensorielles. Les caractéristiques du soignant ne suffisent pas à garantir la réception.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles capacités faut-il repérer avant d’expliquer ?",
+        "answers": [
+          "Les capacités de compréhension, de mémorisation et les fonctions sensorielles, ainsi que l’état émotionnel."
+        ],
+        "explanation": "Le message doit être adapté à son destinataire."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_023",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 23,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "Parmi les démarches suivantes, laquelle est adaptée avant une explication ?",
+    "choices": [
+      "Choisir délibérément un langage inaccessible.",
+      "Identifier les besoins et les attentes de la personne.",
+      "Conclure que le patient a forcément compris parce qu’il sourit.",
+      "Chercher à obtenir un « oui » à tout prix.",
+      "Choisir un lieu sans confidentialité pour aller plus vite."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le but, le langage, les capacités du patient, le moment et le lieu guident l’adaptation. Le soin relationnel ne vise pas un accord mécanique.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment adapter une explication difficile à comprendre ?",
+        "answers": [
+          "Changer les mots, le rythme, le canal ou le moment, puis chercher un retour."
+        ],
+        "explanation": "Répéter exactement les mêmes mots n’est pas toujours efficace."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_024",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 24,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "Une personne semble ne pas mémoriser une explication. Quelles réponses sont adaptées ?",
+    "choices": [
+      "La reprendre calmement si nécessaire.",
+      "La qualifier de mauvaise volonté.",
+      "Accélérer le débit pour transmettre davantage d’informations.",
+      "Vérifier ce qu’elle a retenu.",
+      "Reformuler avec d’autres mots."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La répétition patiente et la reformulation sont des adaptations, particulièrement quand compréhension ou mémorisation varient. Émettre plus vite davantage d’informations n’est pas une solution.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment communiquer avec une personne qui s’exprime peu oralement ?",
+        "answers": [
+          "Évaluer l’intérêt de l’écrit, de dessins, de pictogrammes ou d’autres supports adaptés."
+        ],
+        "explanation": "L’impossibilité de parler n’équivaut pas à l’impossibilité de communiquer."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_025",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 25,
+    "theme": "Adaptation au patient",
+    "difficulty": "hard",
+    "question": "Une personne refuse temporairement la toilette. Quelles attitudes de communication privilégier ?",
+    "choices": [
+      "La fixation d’un horaire imposé sans possibilité de dialogue.",
+      "Imposer immédiatement le soin pour gagner du temps.",
+      "Explorer avec respect ce qui la gêne.",
+      "Tenir compte de ses choix et capacités.",
+      "Ignorer sa parole en raison de sa dépendance."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "L’enseignante prend l’exemple de la toilette pour distinguer relation adaptée et ordre. Écoute, respect et participation sont requis ; les questions juridiques détaillées relèvent d’un autre cours.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle posture devant un refus momentané de toilette ?",
+        "answers": [
+          "Écouter, explorer les raisons et chercher un ajustement respectueux des choix et des possibilités."
+        ],
+        "explanation": "Ne pas réduire la communication à l’obtention d’un oui."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_026",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 26,
+    "theme": "Adaptation au patient",
+    "difficulty": "hard",
+    "question": "Dans la relation avec l’entourage, quelles attitudes conviennent ?",
+    "choices": [
+      "Donner à toute la famille toutes les informations sans discernement.",
+      "Écouter les préoccupations des proches.",
+      "Prendre en compte l’entourage sans effacer la personne.",
+      "Respecter la confidentialité du patient.",
+      "Faire disparaître systématiquement la parole du patient."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La relation soignante peut inclure la famille tout en plaçant le patient au centre et en respectant la confidentialité. La présence des proches ne supprime pas le respect de sa parole.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment favoriser l’autonomie pendant un soin ?",
+        "answers": [
+          "Repérer les capacités préservées et laisser la personne participer dans la mesure du possible."
+        ],
+        "explanation": "Tout faire à sa place peut limiter sa participation."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_027",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 27,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "L’enseignante insiste sur le mot « je » dans la réponse du soignant. Pourquoi ?",
+    "choices": [
+      "Il peut marquer l’engagement personnel.",
+      "Il doit correspondre à une action réellement tenue.",
+      "Il évite l’imprécision d’un « on » systématique.",
+      "Il remplace toute obligation professionnelle.",
+      "Il oblige le soignant à promettre l’impossible."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le « je » personnel reflète une implication réelle, mais la relation de confiance exige aussi de tenir ce qui est annoncé. On ne doit pas promettre ce qui ne peut être assuré.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment prendre en compte l’entourage ?",
+        "answers": [
+          "Accueillir ses inquiétudes et ses informations sans effacer la parole du patient ni la confidentialité."
+        ],
+        "explanation": "Les proches font partie du contexte relationnel."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_028",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 28,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "Une personne présente une difficulté d’expression orale. Quelles propositions sont adaptées ?",
+    "choices": [
+      "Évaluer d’autres canaux possibles.",
+      "Proposer selon le besoin l’écrit ou des pictogrammes.",
+      "Accepter que le temps d’échange soit plus long.",
+      "Exiger des réponses exclusivement verbales.",
+      "Considérer qu’aucune communication n’est possible."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La difficulté de parole n’empêche pas la communication. L’adaptation du canal et du rythme est explicitement discutée dans les échanges oraux.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_029",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 29,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "Que signifie favoriser l’autonomie au cours d’un soin ?",
+    "choices": [
+      "Effectuer systématiquement à sa place tous les gestes.",
+      "Laisser une place active à la personne.",
+      "Repérer les capacités conservées.",
+      "Une aide identique pour tous, indépendamment des capacités conservées.",
+      "Exiger qu’elle réalise seule ce qu’elle ne peut pas faire."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "L’enseignante signale le risque de tout faire par manque de temps. L’objectif est de soutenir les capacités existantes, sans abandon ni sur-assistance.",
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_030",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 30,
+    "theme": "Adaptation au patient",
+    "difficulty": "medium",
+    "question": "Quel rapport établir entre communication et confiance ?",
+    "choices": [
+      "Se présenter rend son rôle identifiable.",
+      "La confiance se décrète au premier contact.",
+      "Des engagements respectés soutiennent la relation.",
+      "Une attitude authentique peut favoriser la confiance.",
+      "Il faut employer le prénom du patient sans lui demander."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Se présenter, respecter la personne, ne pas inventer et tenir sa parole contribuent à la confiance. La familiarité imposée ou la confiance proclamée n’y suffisent pas.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_031",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 31,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "easy",
+    "question": "Quelles attitudes facilitent la communication dans le soin ?",
+    "choices": [
+      "Minimisation automatique de la peur.",
+      "Imposer à tous les patients le même canal sans adaptation.",
+      "Écoute active et disponibilité.",
+      "Promettre de façon certaine ce que l’on ne peut garantir.",
+      "Jugements et ordres systématiques."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Empathie, congruence, écoute, disponibilité, objectivité et respect du silence facilitent l’échange. Jugements, ordres et banalisation sont au contraire des obstacles.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi préférer parfois « je » à « on » ?",
+        "answers": [
+          "Pour exprimer un engagement personnel identifiable, qu’il faudra réellement tenir."
+        ],
+        "explanation": "L’enseignante insiste sur la responsabilité des paroles."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_032",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 32,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "medium",
+    "question": "Dans la relation soignante, l’empathie consiste notamment à…",
+    "choices": [
+      "Une obligation d’absorber sa souffrance.",
+      "Une tentative de comprendre le vécu de l’autre.",
+      "Compatible avec une juste distance professionnelle.",
+      "Une posture qui accueille les émotions sans fusion.",
+      "L’accord systématique avec toutes ses opinions."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’enseignante distingue empathie et absorption des émotions ; comprendre ne signifie pas fusionner ou approuver toutes les affirmations du patient.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que l’authenticité professionnelle ?",
+        "answers": [
+          "Reconnaître ses limites, ne pas inventer une réponse et chercher une information fiable."
+        ],
+        "explanation": "Dire « je ne sais pas » peut être professionnel."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_033",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 33,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "medium",
+    "question": "Un patient exprime de la colère. Quelles réactions sont préférables ?",
+    "choices": [
+      "Conclure qu’il est agressif par nature.",
+      "Répondre par une insulte.",
+      "Reconnaître l’émotion exprimée.",
+      "Chercher ce qui la suscite.",
+      "L’imitation du ton agressif du patient pour montrer de la fermeté."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "L’enseignante recommande d’entendre la colère et de chercher son origine plutôt que répondre à l’insulte. Éviter de transformer un comportement en jugement sur la personne.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que l’empathie ?",
+        "answers": [
+          "Chercher à comprendre le vécu de l’autre sans absorber automatiquement ses émotions."
+        ],
+        "explanation": "Comprendre ne signifie pas approuver tout ni fusionner émotionnellement."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_034",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 34,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "easy",
+    "question": "Quels obstacles relèvent de la formulation du message ?",
+    "choices": [
+      "Un message saturé de jargon.",
+      "Une information incomplète.",
+      "Un feed-back pertinent.",
+      "Une phrase trop longue.",
+      "Une reformulation adaptée."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les messages trop riches, trop complexes, incomplets ou sans retour sont des obstacles. Reformulation et feed-back corrigent au contraire les difficultés.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recouvre la disponibilité du soignant ?",
+        "answers": [
+          "Manifester une attention réelle et laisser la possibilité d’un nouvel échange, selon le contexte."
+        ],
+        "explanation": "La disponibilité annoncée doit correspondre à l’attitude."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_035",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 35,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "easy",
+    "question": "Quelles attitudes soignantes peuvent faire obstacle ?",
+    "choices": [
+      "Respecter le silence.",
+      "Laisser au patient un temps de réponse.",
+      "Donner des ordres sans écouter.",
+      "Se rendre réellement disponible.",
+      "Reformuler sa demande sans jugement."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Les attitudes d’autorité, jugement et minimisation bloquent la relation. Disponibilité et respect du rythme la facilitent.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi respecter le silence ?",
+        "answers": [
+          "Parce que la personne peut avoir besoin de temps pour recevoir, penser ou exprimer ce qu’elle vit."
+        ],
+        "explanation": "Le silence ne signifie pas à lui seul refus ou accord."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_036",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 36,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "easy",
+    "question": "Quels facteurs environnementaux peuvent perturber un entretien ?",
+    "choices": [
+      "Les interruptions téléphoniques.",
+      "Une température inconfortable.",
+      "Un lieu permettant la confidentialité.",
+      "Le bruit et la télévision.",
+      "Une installation respectueuse."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Bruit, interruption, odeurs, températures inconfortables, espace inadapté et confidentialité insuffisante perturbent l’échange. Le lieu doit au contraire soutenir l’échange.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie le non-jugement ?",
+        "answers": [
+          "Distinguer les faits observés des interprétations, sans enfermer la personne dans une étiquette."
+        ],
+        "explanation": "Éviter les préjugés y compris dans les transmissions."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_037",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 37,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "hard",
+    "question": "Dans un couloir très passant, le patient évoque un sujet intime. Que faire ?",
+    "choices": [
+      "Dévoiler librement le contenu aux passants.",
+      "Envisager un lieu plus adapté.",
+      "Tenir compte de la confidentialité.",
+      "Prendre en compte le confort et les interruptions.",
+      "Poursuivre à voix forte pour se faire entendre."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La configuration des locaux et la confidentialité sont des facteurs essentiels. Protéger le cadre relationnel peut nécessiter de déplacer ou reprogrammer l’entretien.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont trois exemples d’obstacles liés au message ?",
+        "answers": [
+          "Jargon excessif, message incomplet, phrases trop longues ou absence de feed-back."
+        ],
+        "explanation": "La forme peut nuire au sens."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_038",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 38,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "easy",
+    "question": "Qu’est-ce que l’authenticité professionnelle, selon les notes orales ?",
+    "choices": [
+      "Promettre une réponse inventée pour rassurer.",
+      "Éviter toute question difficile.",
+      "Chercher une information fiable.",
+      "Rester honnête sur ses limites.",
+      "Admettre que l’on ne sait pas."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "L’enseignante dit explicitement de reconnaître ses limites et de se renseigner plutôt que d’inventer. L’authenticité n’est pas une prétention à tout savoir.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont trois exemples d’obstacles liés à l’attitude du soignant ?",
+        "answers": [
+          "Ordres, jugements, minimisation des ressentis, manque de disponibilité ou d’authenticité."
+        ],
+        "explanation": "Ces attitudes peuvent fermer le dialogue."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_039",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 39,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "medium",
+    "question": "Quelles affirmations décrivent la juste distance ?",
+    "choices": [
+      "Elle s’adapte au contexte de soin.",
+      "Elle protège la relation professionnelle.",
+      "Elle tient compte de la proxémie et de l’intimité.",
+      "Elle autorise à imposer la familiarité.",
+      "Elle exclut toute attitude chaleureuse."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La juste distance n’est ni froideur ni familiarité obligatoire. Elle vise une présence respectueuse et adaptée à la personne et au soin.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont trois exemples d’obstacles environnementaux ?",
+        "answers": [
+          "Bruit, interruptions, manque de confidentialité, inconfort thermique ou installation inadaptée."
+        ],
+        "explanation": "L’environnement fait partie de la communication."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_040",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 40,
+    "theme": "Attitudes et obstacles",
+    "difficulty": "medium",
+    "question": "À propos du silence d’un patient, que peut faire le soignant ?",
+    "choices": [
+      "Affirmer que le silence est un accord.",
+      "Observer sans interpréter systématiquement.",
+      "Laisser une possibilité de reprise.",
+      "Remplir toute pause par un ordre.",
+      "Respecter le temps de réception."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le silence peut avoir plusieurs sens. Il faut respecter les silences et le rythme de la personne, et clarifier plutôt qu’interpréter automatiquement.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_041",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 41,
+    "theme": "Situations et relations",
+    "difficulty": "medium",
+    "question": "Un soignant présente son rôle au début du soin. Quels effets recherchés ?",
+    "choices": [
+      "Rendre son identité professionnelle reconnaissable.",
+      "Prouver d’emblée que toute sa parole est correcte.",
+      "Garantir que l’information sera comprise sans difficulté.",
+      "Respecter un code de civilité.",
+      "Dispenser de toute nouvelle présentation les jours suivants."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "L’intervenante rappelle de se présenter et d’identifier son rôle, quitte à le refaire : le patient rencontre plusieurs intervenants. Cela ne rend personne infaillible.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi se présenter à un patient ?",
+        "answers": [
+          "Pour rendre son identité et son rôle reconnaissables et favoriser une relation de civilité et de confiance."
+        ],
+        "explanation": "Le patient rencontre souvent plusieurs professionnels."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_COMM_TD1_042",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 42,
+    "theme": "Situations et relations",
+    "difficulty": "medium",
+    "question": "Pourquoi distinguer un fait d’une interprétation en transmission ?",
+    "choices": [
+      "Pour réduire les préjugés transmis.",
+      "Pour autoriser les jugements de valeur.",
+      "Pour rendre le constat vérifiable.",
+      "Pour écarter toute notion d’observation.",
+      "Pour éviter de qualifier la personne sur une impression."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La note orale insiste sur le risque des qualificatifs stigmatisants transmis entre collègues. Décrire un comportement observable est différent de juger la personne.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels types de relations sont distingués dans la fiche ?",
+        "answers": [
+          "Civilité, relation de soin, empathique, aide et soutien, éducative et thérapeutique."
+        ],
+        "explanation": "Ces dimensions peuvent se chevaucher."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_043",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 43,
+    "theme": "Situations et relations",
+    "difficulty": "hard",
+    "question": "À propos des relations soignantes, quelles affirmations sont justes ?",
+    "choices": [
+      "Les relations sont nécessairement isolées et ne peuvent jamais se chevaucher.",
+      "La relation éducative favorise la compréhension et la participation.",
+      "La relation thérapeutique peut recourir au jeu ou à des ateliers, notamment en psychiatrie.",
+      "La civilité comprend saluer et se présenter.",
+      "L’empathie consiste à remplacer tous les choix du patient."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La civilité, la relation de soin, éducative et thérapeutique font partie des types évoqués à l’oral. La relation thérapeutique peut mobiliser jeux ou ateliers dans certains contextes. Les dimensions relationnelles peuvent se chevaucher.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment structurer l’analyse d’une situation de communication soignante ?",
+        "answers": [
+          "Décrire les faits, identifier le besoin/l’obstacle, formuler une hypothèse prudente, proposer un ajustement, vérifier l’effet."
+        ],
+        "explanation": "Une hypothèse n’est pas un fait établi."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_044",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 44,
+    "theme": "Situations et relations",
+    "difficulty": "medium",
+    "question": "Dans une relation éducative, quels objectifs sont pertinents ?",
+    "choices": [
+      "Utiliser automatiquement du jargon.",
+      "Se contenter de parler sans retour.",
+      "Faire comprendre une information adaptée.",
+      "Vérifier ce qui a été retenu.",
+      "Favoriser la participation de la personne."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "L’aspect éducatif associe explication compréhensible, implication et vérification. Les mots techniques non adaptés et l’absence de retour sont des obstacles.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle trame courte employer pour répondre à une situation de partiel ?",
+        "answers": [
+          "« J’observe que… », « Cela peut… », « Je propose… »."
+        ],
+        "explanation": "Décrire, expliquer sans certitude abusive, puis agir."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_045",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 45,
+    "theme": "Situations et relations",
+    "difficulty": "hard",
+    "question": "Une personne dit : « J’ai peur de prendre ces comprimés ». Que privilégier ?",
+    "choices": [
+      "Lui répondre « n’ayez pas peur » sans autre explication.",
+      "Explorer l’origine de sa peur.",
+      "Reformuler sa demande.",
+      "Écouter sans ridiculiser l’émotion.",
+      "Supposer qu’elle désobéit volontairement."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’enseignante utilise précisément la peur du médicament comme exemple de reformulation et de recherche du besoin. La banalisation peut empêcher le patient de s’exprimer.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_046",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 46,
+    "theme": "Situations et relations",
+    "difficulty": "medium",
+    "question": "Le soignant souhaite expliquer un soin à un patient allongé. Quels éléments du contexte considérer ?",
+    "choices": [
+      "Le moment choisi.",
+      "La présence éventuelle d’autres personnes.",
+      "L’obligation de rester debout en dominant le patient.",
+      "La position respective soignant-patient.",
+      "La certitude que la disposition des lieux ne peut jamais influencer l’échange."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Lieu, moment, espace, asymétrie des positions et entourage influent sur l’échange. Une position inconfortable ou dominante peut nuire à la relation.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_047",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 47,
+    "theme": "Situations et relations",
+    "difficulty": "hard",
+    "question": "Dans une situation clinique de communication, quels sont les premiers gestes de raisonnement ?",
+    "choices": [
+      "Inventer ce que le patient pense.",
+      "Décrire les faits observables.",
+      "Identifier besoins et obstacles.",
+      "Porter immédiatement un jugement de valeur.",
+      "Relier la situation à une notion de communication soignante."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La méthode de la fiche distingue faits, hypothèses prudentes, ajustements et vérification de l’effet. Il ne faut pas attribuer arbitrairement une émotion ou une intention.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_048",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 48,
+    "theme": "Situations et relations",
+    "difficulty": "hard",
+    "question": "Une réponse de partiel propose « je vérifie que le patient a compris ». Comment la rendre plus précise ?",
+    "choices": [
+      "Répéter la même phrase mot pour mot sans attendre de retour.",
+      "Supposer que dire oui suffit.",
+      "Demander ce qu’il a retenu avec des mots accessibles.",
+      "Exiger une réponse immédiate sans tenir compte du rythme.",
+      "Répondre par une nouvelle leçon plus longue sans écoute."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le feedback est une action observable, pas une formule abstraite : demander une reformulation ou ce qui a été compris, puis adapter si nécessaire.",
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_COMM_TD1_049",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 49,
+    "theme": "Situations et relations",
+    "difficulty": "medium",
+    "question": "Que signifie respecter la parole et les représentations du patient ?",
+    "choices": [
+      "Prendre son vécu en considération.",
+      "Adhérer systématiquement à toutes ses croyances.",
+      "Imposer immédiatement ses propres opinions.",
+      "Explorer sa demande avec non-jugement.",
+      "Éviter de disqualifier ses ressentis."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La relation exige d’accueillir ce que la personne dit, sans jugement, tout en conservant le cadre professionnel. Respecter une parole n’impose pas un accord systématique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_COMM_TD1_050",
+    "courseId": "d1_communication_td1",
+    "ue": "S1 D1",
+    "course": "La communication — TD1",
+    "number": 50,
+    "theme": "Situations et relations",
+    "difficulty": "hard",
+    "question": "Au terme d’une communication difficile, quelle conclusion de démarche est pertinente ?",
+    "choices": [
+      "Respecter la possibilité que le patient ait besoin de temps.",
+      "Rester ouvert à une nouvelle reformulation.",
+      "Vérifier l’effet du réajustement.",
+      "Considérer que toute absence de réponse vaut réussite.",
+      "Clore sur un ordre systématique."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La démarche ne s’arrête pas à l’envoi d’une meilleure phrase. Elle évalue ce que le destinataire a réellement pu recevoir et laisse place à un échange adapté.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_001",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 1,
+    "theme": "Repères fondamentaux",
+    "difficulty": "medium",
+    "question": "Le TD définit la posture professionnelle comme un ensemble qui comprend :",
+    "choices": [
+      "Uniquement les gestes techniques",
+      "Uniquement la tenue vestimentaire",
+      "La suppression de la communication avec la personne soignée",
+      "Le maintien d’une attitude identique sans réajustement",
+      "La manière d’agir"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "La posture comprend le comportement, la communication et l’ajustement au contexte, bien au-delà des actes techniques.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « posture professionnelle » ?",
+        "answers": [
+          "La manière d’être, d’agir, de communiquer et de s’ajuster au contexte de soin."
+        ],
+        "explanation": "La posture comprend le comportement, la communication et l’ajustement au contexte, bien au-delà des actes techniques."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_002",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 2,
+    "theme": "Repères fondamentaux",
+    "difficulty": "hard",
+    "question": "Parmi les objectifs explicitement annoncés, on retrouve :",
+    "choices": [
+      "Reconnaître le verbal et le non-verbal",
+      "Apprendre une posologie",
+      "Mémoriser un protocole chirurgical",
+      "La maîtrise des protocoles de chirurgie",
+      "La mémorisation de seuils biologiques sans lien avec la relation"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le repérage du verbal et du non-verbal est un objectif explicitement annoncé dans le TD.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les six objectifs du TD ?",
+        "answers": [
+          "Identifier les dimensions de la posture ; repérer verbal/non-verbal/comportement ; analyser selon le contexte ; repérer adapté/inadapté ; proposer des ajustements ; relier respect, dignité, intimité, consentement et relation."
+        ],
+        "explanation": "Le repérage du verbal et du non-verbal est un objectif explicitement annoncé dans le TD."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_003",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 3,
+    "theme": "Repères fondamentaux",
+    "difficulty": "easy",
+    "question": "Quel constat correspond à une démarche d’observation objective ?",
+    "choices": [
+      "« La patiente déteste le soignant »",
+      "« Le tuteur est forcément en colère »",
+      "« L’étudiant arrive à 7 h 12 pour une prise de poste à 7 h »",
+      "« L’étudiant est volontairement irrespectueux »",
+      "« Mme R. semble tendue »"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "On peut décrire les faits et les signes observés, sans attribuer avec certitude des intentions ou émotions.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la compétence générique du domaine D évoquée ?",
+        "answers": [
+          "Établir une relation adaptée à une personne ou un groupe pour une prise en soin de qualité, en mobilisant les compétences psychosociales."
+        ],
+        "explanation": "On peut décrire les faits et les signes observés, sans attribuer avec certitude des intentions ou émotions."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_004",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 4,
+    "theme": "Repères fondamentaux",
+    "difficulty": "medium",
+    "question": "Une analyse de vignette doit idéalement comporter :",
+    "choices": [
+      "Les effets possibles sur la personne",
+      "Une conclusion psychologique certaine",
+      "La recherche d’un coupable",
+      "Les faits observables",
+      "Un ajustement concret"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La méthode attendue lie constat, conséquences possibles et actions correctrices.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les quatre dimensions utilisées pour lire une posture ?",
+        "answers": [
+          "Éthique/relationnelle, communication, organisationnelle, réflexive."
+        ],
+        "explanation": "La méthode attendue lie constat, conséquences possibles et actions correctrices."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_005",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 5,
+    "theme": "Repères fondamentaux",
+    "difficulty": "hard",
+    "question": "L’analyse professionnelle d’une situation implique :",
+    "choices": [
+      "De supposer la cause exacte d’un silence",
+      "De tenir compte du contexte",
+      "D’éviter les jugements hâtifs",
+      "L’imposition d’une interprétation sans questionnement",
+      "D’ignorer les réactions du patient"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le contexte, la nuance et la place laissée à la personne sont centraux.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle distinction faire entre intention et effet ?",
+        "answers": [
+          "Un soignant peut ne pas vouloir mal faire et avoir malgré tout un comportement inadapté ; il doit considérer ses effets possibles."
+        ],
+        "explanation": "Le contexte, la nuance et la place laissée à la personne sont centraux."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_006",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 6,
+    "theme": "Repères fondamentaux",
+    "difficulty": "easy",
+    "question": "La bientraitance, telle qu’abordée dans le TD, concerne :",
+    "choices": [
+      "La réalisation rapide du geste à tout prix",
+      "La suppression de toute distance professionnelle",
+      "Le respect des choix et refus",
+      "La considération de la personne",
+      "La qualité relationnelle"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "La bientraitance mobilise respect, écoute, relation adaptée et juste distance.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles étapes suivre devant une vignette clinique ?",
+        "answers": [
+          "Faits observés → comportement adapté/inadapté → effets possibles → ajustement concret → évaluation."
+        ],
+        "explanation": "La bientraitance mobilise respect, écoute, relation adaptée et juste distance."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_007",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 7,
+    "theme": "Repères fondamentaux",
+    "difficulty": "medium",
+    "question": "La relation de soin est favorisée lorsque le professionnel :",
+    "choices": [
+      "Éviter de donner la moindre explication à la personne",
+      "Prend un « oui » pour une preuve absolue de compréhension",
+      "Supprime systématiquement tout dialogue",
+      "Se présente",
+      "Laisse le temps de répondre"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le contact, l’information adaptée et le temps laissé à la réponse sont favorables.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi séparer faits et interprétations ?",
+        "answers": [
+          "Les faits sont vérifiables ; une intention ou un ressenti attribué sans vérification reste une hypothèse."
+        ],
+        "explanation": "Le contact, l’information adaptée et le temps laissé à la réponse sont favorables."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_008",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 8,
+    "theme": "Repères fondamentaux",
+    "difficulty": "hard",
+    "question": "Une bonne intention du soignant :",
+    "choices": [
+      "Ne garantit pas à elle seule un effet positif",
+      "Peut conduire à se réajuster après observation",
+      "Interdit de présenter des excuses",
+      "Peut coexister avec un comportement maladroit",
+      "Dispense de s’interroger sur ses pratiques"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours dissocie intention et effet, et valorise la correction d’une maladresse.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recouvre la communication verbale ?",
+        "answers": [
+          "Les mots, formulations, questions et registre de langage."
+        ],
+        "explanation": "Le cours dissocie intention et effet, et valorise la correction d’une maladresse."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_009",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 9,
+    "theme": "Repères fondamentaux",
+    "difficulty": "easy",
+    "question": "Les compétences psychosociales sont mobilisées dans le TD pour :",
+    "choices": [
+      "Remplacer l’ensemble des compétences techniques",
+      "Adapter la relation",
+      "Se dispenser d’écouter",
+      "Ignorer les réactions verbales et non verbales",
+      "Remplacer toute compétence technique"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Leur rôle est relationnel, non une substitution aux autres compétences du soin.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recouvre la communication paraverbale ?",
+        "answers": [
+          "Ton, débit, rythme, volume et intonation."
+        ],
+        "explanation": "Leur rôle est relationnel, non une substitution aux autres compétences du soin."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_010",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 10,
+    "theme": "Repères fondamentaux",
+    "difficulty": "medium",
+    "question": "Les conséquences d’une mauvaise posture doivent être formulées :",
+    "choices": [
+      "Comme des effets possibles à examiner",
+      "En tenant compte du contexte",
+      "En jugeant le caractère du professionnel",
+      "Comme un diagnostic certain sans questionnement",
+      "En lien avec la relation de soin"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Le TD insiste sur les hypothèses nuancées plutôt que sur les certitudes psychologiques.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recouvre la communication non verbale ?",
+        "answers": [
+          "Regard, mimique, gestes, posture corporelle et orientation dans l’espace."
+        ],
+        "explanation": "Le TD insiste sur les hypothèses nuancées plutôt que sur les certitudes psychologiques."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_011",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 11,
+    "theme": "Communication et langage",
+    "difficulty": "hard",
+    "question": "Parmi les composantes de la communication verbale figurent :",
+    "choices": [
+      "Le résultat chiffré des examens",
+      "La position du corps",
+      "La distance physique",
+      "Les mots utilisés",
+      "La formulation des questions"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le verbal renvoie aux mots et aux questions ; la distance et la position relèvent du non-verbal.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que le feedback ?",
+        "answers": [
+          "Le retour d’information qui permet de vérifier comment un message a été compris."
+        ],
+        "explanation": "Le verbal renvoie aux mots et aux questions ; la distance et la position relèvent du non-verbal."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_012",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 12,
+    "theme": "Communication et langage",
+    "difficulty": "easy",
+    "question": "La communication paraverbale comprend :",
+    "choices": [
+      "Le débit",
+      "Le vocabulaire technique",
+      "La formulation grammaticale du dossier",
+      "La pression artérielle",
+      "Les règles de cotation hospitalière"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Débit, tonalité, rythme et volume sont des dimensions paraverbales.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi un « oui, oui » n’est-il pas suffisant ?",
+        "answers": [
+          "Il peut traduire la compréhension, mais aussi politesse, gêne, silence ou impossibilité de formuler une question."
+        ],
+        "explanation": "Débit, tonalité, rythme et volume sont des dimensions paraverbales."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_013",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 13,
+    "theme": "Communication et langage",
+    "difficulty": "medium",
+    "question": "Le regard et la position au pied du lit relèvent principalement :",
+    "choices": [
+      "Des signaux de disponibilité",
+      "De la proxémie ou de l’organisation spatiale",
+      "De la seule grammaire",
+      "Du dosage médicamenteux",
+      "Du non-verbal"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Position, regard et distance contribuent au message non verbal.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment vérifier la compréhension sans humilier ?",
+        "answers": [
+          "Inviter à poser des questions, proposer une reformulation et demander ce qui reste à préciser."
+        ],
+        "explanation": "Position, regard et distance contribuent au message non verbal."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_014",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 14,
+    "theme": "Communication et langage",
+    "difficulty": "hard",
+    "question": "À propos du langage familier (« gambettes »), le TD souligne :",
+    "choices": [
+      "La possibilité de créer de la proximité autrement",
+      "Son caractère obligatoire avec les personnes âgées",
+      "Un risque d’infantilisation",
+      "La nécessité de connaître la personne et le contexte",
+      "L’absence de toute conséquence possible"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Un langage respectueux et accessible peut aussi créer la confiance ; familiarité automatique et infantilisation sont à éviter.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le risque des mots « gambettes » dans un soin ?",
+        "answers": [
+          "Une familiarité inadaptée et une possible infantilisation de la personne."
+        ],
+        "explanation": "Un langage respectueux et accessible peut aussi créer la confiance ; familiarité automatique et infantilisation sont à éviter."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_015",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 15,
+    "theme": "Communication et langage",
+    "difficulty": "easy",
+    "question": "Face à un vocabulaire technique incompris, le soignant peut :",
+    "choices": [
+      "Vérifier la compréhension",
+      "Répéter le jargon plus vite",
+      "Expliquer en langage courant",
+      "Renoncer à toute explication",
+      "Demander ce que la personne connaît déjà"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’objectif est l’adaptation du vocabulaire et le feedback.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle adaptation du jargon technique est attendue ?",
+        "answers": [
+          "Conserver une précision professionnelle mais expliquer en termes courants adaptés au patient."
+        ],
+        "explanation": "L’objectif est l’adaptation du vocabulaire et le feedback."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_016",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 16,
+    "theme": "Communication et langage",
+    "difficulty": "medium",
+    "question": "Un patient dit « oui, d’accord » après une annonce de soin. On peut conclure que :",
+    "choices": [
+      "Il a forcément compris tous les termes",
+      "Il faut considérer l’échange terminé dans tous les cas",
+      "Une compréhension est possible, sans être établie",
+      "La compréhension complète est certaine",
+      "Un feedback est pertinent"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "L’accord verbal bref ne renseigne pas à lui seul sur le degré de compréhension.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi expliquer avant d’exécuter ?",
+        "answers": [
+          "La personne peut comprendre le déroulement, réfléchir, questionner et exprimer son accord."
+        ],
+        "explanation": "L’accord verbal bref ne renseigne pas à lui seul sur le degré de compréhension."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_017",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 17,
+    "theme": "Communication et langage",
+    "difficulty": "hard",
+    "question": "Le feedback correspond au fait de :",
+    "choices": [
+      "Empêcher la personne de poser ses propres questions",
+      "Parler sans laisser de réponse",
+      "Vérifier le message reçu",
+      "Ne jamais vérifier la compréhension",
+      "Imposer un interrogatoire humiliant"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Le feedback aide à valider ou ajuster la compréhension.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie proxémie ?",
+        "answers": [
+          "La distance physique entre personnes en situation d’interaction."
+        ],
+        "explanation": "Le feedback aide à valider ou ajuster la compréhension."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_018",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 18,
+    "theme": "Communication et langage",
+    "difficulty": "easy",
+    "question": "Lors d’un soin, parler très vite tout en préparant le matériel peut :",
+    "choices": [
+      "Être toujours préférable",
+      "Rendre l’accord moins éclairé",
+      "Limiter le temps d’assimilation",
+      "Éviter tout retour ou réaction de la personne",
+      "Garantir l’absence de stress"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "La simultanéité entre explication et geste peut nuire à la disponibilité de l’information.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie symétrie relationnelle dans le TD ?",
+        "answers": [
+          "Un positionnement moins surplombant, par exemple se mettre à hauteur du patient selon le contexte."
+        ],
+        "explanation": "La simultanéité entre explication et geste peut nuire à la disponibilité de l’information."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_019",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 19,
+    "theme": "Communication et langage",
+    "difficulty": "medium",
+    "question": "La symétrie relationnelle, au sens employé dans le TD, se rapporte notamment :",
+    "choices": [
+      "À un contact plus équilibré",
+      "À une obligation de s’asseoir dans tous les soins",
+      "À la hauteur et au positionnement",
+      "À la recherche d’un échange moins surplombant",
+      "Au contrôle de la saturation"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Se mettre à hauteur est un repère adaptable, pas une règle mécanique imposant de s’asseoir.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Est-il obligatoire de s’asseoir pour bien communiquer ?",
+        "answers": [
+          "Non. Il faut adapter hauteur, distance, temps et position à la situation et demander l’accord si pertinent."
+        ],
+        "explanation": "Se mettre à hauteur est un repère adaptable, pas une règle mécanique imposant de s’asseoir."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_020",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 20,
+    "theme": "Communication et langage",
+    "difficulty": "hard",
+    "question": "La proxémie est liée :",
+    "choices": [
+      "Exclusivement au dossier de soins informatisé",
+      "À la quantité de médicaments",
+      "À la distance physique",
+      "Uniquement à la vitesse de diction",
+      "Uniquement aux mots utilisés"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La proxémie décrit l’usage de la distance dans la relation.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment réagir face à un visage tendu ?",
+        "answers": [
+          "Observer, nommer prudemment, demander le ressenti et proposer un ajustement ; ne pas présumer la cause."
+        ],
+        "explanation": "La proxémie décrit l’usage de la distance dans la relation."
+      }
+    ],
+    "announcedCorrectCount": 1
+  },
+  {
+    "id": "D1_POSTURE_TD2_021",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 21,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "easy",
+    "question": "Mme R. semble se tendre pendant l’explication du soin. Une attitude appropriée peut consister à :",
+    "choices": [
+      "Observer ce signe",
+      "Ignorer la réaction",
+      "Proposer de ralentir ou de préciser",
+      "Conclure qu’elle refuse définitivement le soin",
+      "Interroger sans affirmer sa cause"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Un signe de tension invite à vérifier le ressenti et à adapter l’échange.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie congruence ?",
+        "answers": [
+          "Alignement entre paroles, intentions, attitudes et actes."
+        ],
+        "explanation": "Un signe de tension invite à vérifier le ressenti et à adapter l’échange."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_022",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 22,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "medium",
+    "question": "Le soignant consulte son ordinateur pendant l’entretien. Une réponse adaptée consiste à :",
+    "choices": [
+      "S’absenter sans prévenir au moment de l’entretien",
+      "Expliquer si nécessaire l’usage de l’écran",
+      "Considérer l’ordinateur comme interdit",
+      "Prendre d’abord un temps de contact",
+      "Ne pas regarder le patient"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’outil reste utile, mais ne doit pas effacer la présence relationnelle.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel exemple illustre la non-congruence ?",
+        "answers": [
+          "Promettre de fermer la porte puis continuer sans la fermer."
+        ],
+        "explanation": "L’outil reste utile, mais ne doit pas effacer la présence relationnelle."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_023",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 23,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "hard",
+    "question": "Avant un soin, le soignant devrait :",
+    "choices": [
+      "Supposer l’accord parce que le geste est quotidien",
+      "Expliquer ce qui est prévu",
+      "Se passer de rechercher l’accord de la personne",
+      "Commencer immédiatement pour gagner du temps",
+      "S’assurer de la possibilité de questionner"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Information, échanges et expression du choix précèdent le geste.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi protéger l’intimité pendant une toilette ?",
+        "answers": [
+          "Le corps exposé reste une question de dignité, même si le soin est fréquent pour l’équipe."
+        ],
+        "explanation": "Information, échanges et expression du choix précèdent le geste."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_024",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 24,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "easy",
+    "question": "Une toilette quotidienne :",
+    "choices": [
+      "Peut rester vécue comme une situation intime",
+      "Doit respecter la pudeur et l’exposition du corps",
+      "Dispense de chercher le consentement",
+      "Doit laisser une place au choix de la personne",
+      "Justifie de laisser la porte ouverte"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La répétition n’efface ni l’intimité ni l’autonomie.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire si une patiente demande de fermer la porte ?",
+        "answers": [
+          "Répondre immédiatement à la demande, rétablir l’intimité et vérifier si elle est prête à poursuivre."
+        ],
+        "explanation": "La répétition n’efface ni l’intimité ni l’autonomie."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_025",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 25,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "medium",
+    "question": "Une patiente demande que la porte soit fermée. Le professionnel dit oui mais ne le fait pas. Cela illustre :",
+    "choices": [
+      "Une réponse pleinement adaptée",
+      "L’obligation de terminer le soin sans répondre",
+      "Un risque de perte de confiance",
+      "Un défaut de congruence",
+      "Montrer la porte ouverte pour signaler que l’on est disponible"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La congruence suppose un alignement entre paroles et actes.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la routine n’équivaut-elle pas à consentement ?",
+        "answers": [
+          "Chaque soin concerne une personne libre de comprendre, de participer et de manifester son choix."
+        ],
+        "explanation": "La congruence suppose un alignement entre paroles et actes."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_026",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 26,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "hard",
+    "question": "Dans la vignette de la toilette porte ouverte, les réajustements incluent :",
+    "choices": [
+      "Protéger la personne découverte",
+      "Poursuivre en ignorant la demande",
+      "Expliquer et rétablir le dialogue",
+      "Traiter le souci d’intimité comme mineur",
+      "Fermer la porte selon le contexte et la demande"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Il faut agir sur l’environnement, l’information et la protection de la personne.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment rendre la personne actrice d’une toilette ?",
+        "answers": [
+          "Lui demander comment elle souhaite procéder, ce qu’elle peut ou veut faire et lui laisser répondre."
+        ],
+        "explanation": "Il faut agir sur l’environnement, l’information et la protection de la personne."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_027",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 27,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "easy",
+    "question": "La congruence est :",
+    "choices": [
+      "Une notion utile pour analyser ses écarts",
+      "Une cohérence entre dire et faire",
+      "Se limiter aux informations du dossier et ignorer la relation",
+      "Un synonyme de proximité physique",
+      "Une obligation de ne jamais se tromper"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "On cherche l’alignement, avec possibilité de reconnaître et de corriger un écart.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels problèmes pose la précipitation liée à un retard ?",
+        "answers": [
+          "Risque de moins préparer, écouter, se présenter ou recueillir les informations nécessaires."
+        ],
+        "explanation": "On cherche l’alignement, avec possibilité de reconnaître et de corriger un écart."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_028",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 28,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "medium",
+    "question": "Le refus ou l’hésitation d’une personne appelle prioritairement :",
+    "choices": [
+      "Une écoute adaptée",
+      "Le respect de la place de la personne",
+      "Un passage en force systématique",
+      "Un questionnement du besoin et du contexte",
+      "La suppression de toute explication"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le TD inscrit le respect des choix et des refus dans la posture professionnelle.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels réajustements face à un retard répété ?",
+        "answers": [
+          "Anticiper, prévenir honnêtement le tuteur et ne pas abandonner les règles relationnelles."
+        ],
+        "explanation": "Le TD inscrit le respect des choix et des refus dans la posture professionnelle."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_029",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 29,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "hard",
+    "question": "Une personne vulnérable peut nécessiter une attention accrue pour éviter :",
+    "choices": [
+      "Une communication claire",
+      "Le respect de son autonomie",
+      "Supprimer les échanges avec la personne soignée",
+      "L’infantilisation",
+      "Une absence de possibilité de choisir"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le risque évoqué est la prise de pouvoir relationnelle, pas l’explication ou le respect.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle nuance sur l’étudiant en retard et l’organisation du service ?",
+        "answers": [
+          "Une perturbation du tuteur est possible ; les conséquences pour tout le service dépendent du contexte et ont été discutées."
+        ],
+        "explanation": "Le risque évoqué est la prise de pouvoir relationnelle, pas l’explication ou le respect."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_030",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 30,
+    "theme": "Éthique et relation de soin",
+    "difficulty": "easy",
+    "question": "À propos d’un soin considéré comme routinier par l’équipe :",
+    "choices": [
+      "Il ne faut plus solliciter sa participation",
+      "Son intimité doit rester protégée",
+      "La personne peut le vivre différemment",
+      "Le patient doit tout accepter",
+      "Le soignant doit éviter d’agir machinalement"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le vécu de la personne ne s’efface pas avec la répétition du geste.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle situation illustre un défaut de disponibilité non verbale ?",
+        "answers": [
+          "Parler vite en préparant le matériel, regarder l’écran et rester debout au pied du lit."
+        ],
+        "explanation": "Le vécu de la personne ne s’efface pas avec la répétition du geste."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_031",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 31,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "medium",
+    "question": "Dans la vignette de l’étudiant en retard, les faits établis comprennent :",
+    "choices": [
+      "Un horaire prévu à 7 h",
+      "Une faute volontaire démontrée",
+      "L’absence de présentation à Mme L.",
+      "Une arrivée au service à 7 h précises",
+      "Une intention prouvée de nuire"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Ces faits sont décrits ; les intentions ne le sont pas.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle erreur se produit dans la vignette « saturation / tension » ?",
+        "answers": [
+          "Utiliser le jargon puis accepter « oui d’accord » sans vérifier la compréhension."
+        ],
+        "explanation": "Ces faits sont décrits ; les intentions ne le sont pas."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_032",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 32,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "hard",
+    "question": "Une gestion adaptée des retards comprend :",
+    "choices": [
+      "Anticiper les trajets",
+      "Préserver la qualité relationnelle",
+      "Sacrifier la présentation au patient",
+      "Informer honnêtement le tuteur d’un imprévu",
+      "Faire porter tout le problème au patient"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Anticipation, information et relation préservée sont valorisées par l’intervenante.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle précision peut remplacer le seul terme « saturation » ?",
+        "answers": [
+          "Expliquer que l’on mesure un indicateur lié à l’oxygénation, puis vérifier ce que la personne souhaite savoir."
+        ],
+        "explanation": "Anticipation, information et relation préservée sont valorisées par l’intervenante."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_033",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 33,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "easy",
+    "question": "Concernant la désorganisation causée par un retard d’étudiant, l’oral montre :",
+    "choices": [
+      "Une discussion nuancée sur la portée pour le service",
+      "Une possible perturbation du tuteur",
+      "Une certitude identique pour tous les services",
+      "L’absence totale d’effet en toutes circonstances",
+      "Un effet qui dépend du contexte"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "L’intervenante explicite une opinion nuancée, pas une vérité générale sur tous les services.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle attitude est inadaptée après l’annonce d’une mauvaise nouvelle ?",
+        "answers": [
+          "Poursuivre des plaisanteries entre collègues au chevet d’une personne affectée sans tenir compte de son état."
+        ],
+        "explanation": "L’intervenante explicite une opinion nuancée, pas une vérité générale sur tous les services."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_034",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 34,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "medium",
+    "question": "Une précipitation excessive peut affecter :",
+    "choices": [
+      "La relation avec la personne",
+      "Le temps de recueil des informations",
+      "Une certitude identique sur tous les services",
+      "L’attention au geste",
+      "Le respect automatique de toutes les étapes"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le risque relevé est une dégradation à la fois technique et relationnelle.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que proposer à la patiente après une mauvaise nouvelle ?",
+        "answers": [
+          "Une présence calme, des questions ouvertes et une possibilité d’écoute, sans lui imposer de se confier."
+        ],
+        "explanation": "Le risque relevé est une dégradation à la fois technique et relationnelle."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_035",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 35,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "hard",
+    "question": "Dans la vignette de Mme S. après une mauvaise nouvelle, on attend :",
+    "choices": [
+      "Une présence respectueuse",
+      "La prise en compte de son contexte émotionnel",
+      "Une attitude d’écoute si elle le souhaite",
+      "Une certitude sur ce qu’elle ressent",
+      "La poursuite de plaisanteries sans adaptation"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’attitude doit s’ajuster à la situation et au souhait de la patiente.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi deux soignants peuvent-ils parfois intimider lors d’un échange délicat ?",
+        "answers": [
+          "Le nombre d’interlocuteurs peut freiner la parole d’une personne vulnérable ; l’adaptation dépend du besoin."
+        ],
+        "explanation": "L’attitude doit s’ajuster à la situation et au souhait de la patiente."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_036",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 36,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "easy",
+    "question": "Rire entre collègues est présenté par la formatrice comme :",
+    "choices": [
+      "Toujours adéquat au chevet après une annonce difficile",
+      "Forcément interdit dans tout contexte",
+      "À adapter au contexte relationnel",
+      "À distinguer de l’entrée chez une patiente en détresse",
+      "Possible dans un espace approprié"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Ce n’est pas le rire en soi mais son inadéquation au contexte qui pose problème.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "En quoi consiste l’autoévaluation du soin ?",
+        "answers": [
+          "Revenir sur les actes réalisés, identifier les écarts et les points à améliorer, avec le tuteur si besoin."
+        ],
+        "explanation": "Ce n’est pas le rire en soi mais son inadéquation au contexte qui pose problème."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_037",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 37,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "medium",
+    "question": "Pour un entretien délicat après une mauvaise nouvelle, la formatrice indique :",
+    "choices": [
+      "Qu’on connaît d’avance la réaction de la personne",
+      "Qu’il faut obligatoirement interroger longuement le patient",
+      "Que la présence de plusieurs soignants peut parfois intimider",
+      "Qu’il faut proposer sans imposer l’échange",
+      "Qu’une écoute en tête à tête peut faciliter la parole"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Elle privilégie, quand adapté, une relation moins intimidante et ouverte au choix de la personne.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire lorsqu’on remarque avoir été trop directif ?",
+        "answers": [
+          "Reconnaître l’écart, éventuellement s’excuser, reprendre l’explication et laisser du temps à la personne."
+        ],
+        "explanation": "Elle privilégie, quand adapté, une relation moins intimidante et ouverte au choix de la personne."
+      }
+    ],
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_POSTURE_TD2_038",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 38,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "hard",
+    "question": "L’autoévaluation professionnelle consiste à :",
+    "choices": [
+      "Cesser tout questionnement professionnel",
+      "Se punir d’avoir été imparfait",
+      "Demander éventuellement un retour au tuteur",
+      "Refuser toute correction",
+      "Revenir sur sa pratique"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "L’objectif est l’amélioration, par observation et retours.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels effets la posture peut-elle avoir sur la relation ?",
+        "answers": [
+          "Confiance ou défiance, possibilité de questionner, sentiment de considération, participation ou retrait."
+        ],
+        "explanation": "L’objectif est l’amélioration, par observation et retours."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_039",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 39,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "easy",
+    "question": "Après avoir pris conscience d’une parole trop directive, le soignant peut :",
+    "choices": [
+      "S’excuser de manière authentique",
+      "Reprendre calmement l’explication",
+      "Refuser de modifier son comportement",
+      "Prétendre que rien ne s’est passé",
+      "Faire comme si la personne n’avait pas réagi"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’intervenante valorise les excuses, la congruence et le réajustement.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment distinguer « proximal » et « symétrique » dans ce TD ?",
+        "answers": [
+          "Proxémie = distance ; symétrie = position/hauteur relationnelle."
+        ],
+        "explanation": "L’intervenante valorise les excuses, la congruence et le réajustement."
+      }
+    ],
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "D1_POSTURE_TD2_040",
+    "courseId": "d1_posture_professionnelle_td2",
+    "ue": "S1 D1",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 40,
+    "theme": "Situations de soin et ajustements",
+    "difficulty": "medium",
+    "question": "Pour appliquer le raisonnement attendu dans les vignettes, il faut :",
+    "choices": [
+      "Évaluer l’effet sur la personne",
+      "Proposer des comportements concrets",
+      "Transformer une supposition en certitude",
+      "Séparer observation et interprétation",
+      "Se contenter de dire « être gentil »"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le raisonnement suit faits, effets possibles, action observable et évaluation.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le principe directeur de la conclusion du TD ?",
+        "answers": [
+          "Accompagner une personne, et non seulement traiter une pathologie, en respectant dignité, autonomie et besoins."
+        ],
+        "explanation": "Le raisonnement suit faits, effets possibles, action observable et évaluation."
+      }
+    ],
+    "announcedCorrectCount": 3
+  }
+]

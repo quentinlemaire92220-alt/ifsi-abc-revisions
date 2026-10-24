@@ -2043,6 +2043,141 @@
         "approvedAt": "2026-10-24T15:42:00+02:00",
         "bundleSha256": "277adb75639454b3ed0b5c74578718b40357d38b3eb235a34bbdc47205169aa1"
       }
+    },
+    {
+      "courseId": "d1_posture_professionnelle_td2",
+      "part": "02",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "publicAssetSha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
+      "qcmPublicAssetSha256": "17d88e9f2fc44c0d8cf9ddc10bc99248bd7d615e95efc2c7ccbfc8dee150bae4",
+      "flashcardPublicAssetSha256": "fe56d1960f977e3400e7969c4958f93ecc6c3824cd499aac1353a848d2efee08",
+      "driveFolderId": "1KPXUp4GtnHj8xC36xuAszby3DmnbGDf9",
+      "folders": {
+        "01": "1wpfx5OVVZ6veAtEGlK4BXOgT0WslbmnW",
+        "02": "1Bn1BrUdPsXvi0fhA6s6ByuNBBMMVBleR",
+        "03": "1Bu95unO_YmurQ3SASO3mEsDwHsX8JH3N",
+        "04": "1IHVwl6EEw0b9Ao3FjNp3hq2-4AnNhHta",
+        "05": "1vhlmUXqaGeFKL3mFyy9zyqc9Vh3_3Eys",
+        "06": "1c8_8FYAeZY47wUFdcJfL9MTgyDn-7JwN",
+        "07": "1e3NYtFwwd0IunVogCEjXuOdki1yM3Err"
+      },
+      "sheetResourceId": "d1_posture_td2_written_p02",
+      "sheetResourceIds": [
+        "d1_posture_td2_written_p02"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmDriveId": "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n",
+      "flashcardDriveId": "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV",
+      "qcmBank": "data/course-banks/posture_professionnelle_td2.json",
+      "qcmCount": 40,
+      "flashcardCount": 40,
+      "vocabularyCount": 6,
+      "vocals": [],
+      "scriptsPreparedCount": 1,
+      "requestedVocals": true,
+      "sourceAudit": {
+        "officialChecked": true,
+        "oralStatus": "incomplete_tail",
+        "recordingTailTruncated": true,
+        "oralCoverageExhaustive": false,
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "Six objectifs des 19 diapositives du TD officiel, PT01 reçu et PT02 reçu jusqu’à 01:01 ; aucun contenu prétendu au-delà",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested",
+        "officialSupportPreservedPrivately": true
+      },
+      "writtenCoverage": {
+        "expectedEssential": 6,
+        "coveredEssential": 6,
+        "prioritySourceReference": "Six objectifs explicitement écrits sur la diapositive 3 du TD du 20/10/2026 ; six situations des extraits reçus",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "disciplinaryReviewScope": "Support officiel et transcriptions effectivement reçues uniquement ; fin PT02 inconnue"
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
+        "pageSize": "A4",
+        "pageCount": 17,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 25,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "1UR5GO7x6rJucv7R_YUSYOoC8PVVZVMuC": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c",
+        "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "d8d4208c49fa1a4d9b366022d61e8ea90351d5fea7c4b021556dda3173459a88",
+        "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "fe56d1960f977e3400e7969c4958f93ecc6c3824cd499aac1353a848d2efee08"
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 17,
+        "reviewedAt": "2026-10-24T20:48:00+02:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "d1_posture_td2_written_p02": "20b81d55a4398a32eb7b518062070e5bb4ddc69ed2dd8c1143c9114c00ef010c"
+        },
+        "acceptanceBasis": "Utilisateur : GO explicite après discussion de la conformité au modèle La communication ; revue de toutes les pages par le processus QA"
+      },
+      "blockers": [
+        {
+          "resource": "transcription_pt02",
+          "reason": "incomplete_tail",
+          "detail": "Le fichier PT02 s'interrompt vers 01:01, sans prétention à une revue exhaustive de la fin."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3",
+          "detail": "Un script privé est préparé ; aucun MP3 annoncé ni publié."
+        },
+        {
+          "resource": "qcm_drive_pdf",
+          "reason": "legacy_copy_superseded",
+          "detail": "La copie privée Drive antérieure au correctif Q03 n'est pas utilisée comme lien étudiant ; le PDF imprimable de référence est l'asset GitHub Pages d'empreinte 17d88e9f…"
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-24T20:48:00+02:00",
+        "bundleSha256": "ab0f60ee7e1bb4452ac443c85adebde99cb5f115a66ef70fbc6cf85a0c2bbcff"
+      }
     }
   ],
   "supplementalResourceApprovals": [
