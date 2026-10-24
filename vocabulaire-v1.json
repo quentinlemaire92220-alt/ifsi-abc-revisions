@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-24",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -2049,7 +2049,8 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2114,7 +2115,8 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante"
+        "psychologie_sante",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2234,7 +2236,8 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
