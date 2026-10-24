@@ -7,12 +7,12 @@ const id='douleur_infographies_pack_16_20261022';
 const course=json('course-registry-v741.json'),infographics=json('infographics.json'),
  delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
  meta=json('build-meta.json'),qcm=json('qextra-51.txt');
-assert.equal(course.version,'8.30.118');
+assert.equal(course.version,meta.version,'Registre et release doivent être synchronisés');
 const audit=json('resource-audit-v821.json');
 assert.ok(course.courses.length>=50,'Les 50 cours historiques doivent être préservés');
 assert.equal(course.courses.length,audit.expectedTotals.courses,'Effectif actuel différent du snapshot audité');
 assert.equal(meta.version,course.version);
-assert.equal(meta.build,'8418');
+assert.ok(Number(meta.build)>=8418,'Le lot de 16 planches doit rester dans une release ultérieure à sa publication');
 const original=course.courses.find(c=>c.id==='douleur');
 assert.equal(original.officialSupportUrl,'https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view');
 assert.equal(original.qcmPdfUrl,'https://drive.google.com/file/d/1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc/view');
