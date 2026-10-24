@@ -17,9 +17,11 @@ const beforeCount=oldVocabulary.entries.length;
 assert.deepEqual({...newVocabulary,entries:newVocabulary.entries.slice(0,beforeCount)},oldVocabulary,
  'Le lexique historique doit rester inchangé, y compris dans son ordre');
 const addedVocabulary=newVocabulary.entries.slice(beforeCount);
+const oldRegistryIds=new Set(old('course-registry-v741.json').courses.map(c=>c.id));
+const newRegistryIds=new Set(read('course-registry-v741.json').courses.filter(c=>!oldRegistryIds.has(c.id)).map(c=>c.id));
 assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.length===1&&
- e.courseIds[0]==='responsabilite_exercice_professionnel'),
- 'Seuls les termes du nouveau cours juridique peuvent être ajoutés');
+ (e.courseIds[0]==='responsabilite_exercice_professionnel'||newRegistryIds.has(e.courseIds[0]))),
+ 'Seuls les termes du cours juridique approuvé ou des nouveaux cours déclarés peuvent être ajoutés');
 assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
  'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
