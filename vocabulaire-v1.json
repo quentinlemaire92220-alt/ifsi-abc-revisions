@@ -2049,8 +2049,7 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere",
-        "d1_posture_professionnelle_td2"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2115,8 +2114,7 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante",
-        "d1_posture_professionnelle_td2"
+        "psychologie_sante"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2167,8 +2165,7 @@
       "courseIds": [
         "introduction_droit",
         "ethique_infirmiere",
-        "droits_patients",
-        "d1_posture_professionnelle_td2"
+        "droits_patients"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2237,8 +2234,7 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere",
-        "d1_posture_professionnelle_td2"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2251,8 +2247,7 @@
       "etymologie": "auto- (soi-même) + -nomie (règle, organisation) ; capacité de décision de la personne.",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere",
-        "d1_posture_professionnelle_td2"
+        "histoire_profession_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3569,8 +3564,7 @@
       "etymologie": "consentement (accord) + aux soins (actes proposés).",
       "courseIds": [
         "introduction_droit",
-        "ethique_infirmiere",
-        "d1_posture_professionnelle_td2"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -4037,8 +4031,7 @@
       "distinction": "Elle ne dépend ni de l’autonomie fonctionnelle ni du comportement.",
       "theme": "Dignité et soins conformes aux connaissances",
       "courseIds": [
-        "droits_patients",
-        "d1_posture_professionnelle_td2"
+        "droits_patients"
       ],
       "qcmQuestionId": "droits_patients_p01_q083",
       "sourceType": "reference_pedagogique"
@@ -6071,8 +6064,7 @@
       "distinction": "Ne se confond pas avec le ton de la voix ou la gestuelle.",
       "etymologie": "Verbale renvoie au verbe et à l’usage des mots.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6084,8 +6076,7 @@
       "distinction": "Le verbal porte les mots, le paraverbal leur musicalité.",
       "etymologie": "Para- signifie à côté ; verbal renvoie aux paroles.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6097,8 +6088,7 @@
       "distinction": "Elle peut soutenir ou contredire les paroles prononcées.",
       "etymologie": "Non- indique l’absence de mots articulés dans ce canal.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6170,8 +6160,7 @@
       "distinction": "La discordance entre paroles et attitudes peut fragiliser la confiance.",
       "etymologie": "Du latin congruere : correspondre, être en accord.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6183,8 +6172,7 @@
       "distinction": "La juste distance s’adapte à la culture, à la situation et au patient.",
       "etymologie": "Du latin proximus : le plus proche ; étude des distances sociales.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6208,8 +6196,7 @@
       "distinction": "Parler plus fort ou plus longuement ne garantit pas une meilleure compréhension.",
       "etymologie": "Adapter signifie ajuster une conduite à une situation particulière.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6245,8 +6232,7 @@
       "distinction": "Elle n’est pas limitée à un geste technique : l’écoute en fait partie.",
       "etymologie": "Relation vient du latin relatio : lien ; soin désigne l’attention portée.",
       "courseIds": [
-        "d1_communication_td1",
-        "d1_posture_professionnelle_td2"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6271,6 +6257,78 @@
       "etymologie": "Thérapeutique vient du grec therapeia : soin, service.",
       "courseIds": [
         "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "posture-professionnelle-td2",
+      "term": "Posture professionnelle",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Manière d’être, d’agir et de communiquer du professionnel, ajustée à chaque situation de soin.",
+      "distinction": "Elle ne se réduit ni au geste technique ni à la tenue professionnelle.",
+      "etymologie": "Posture : position ou attitude ; professionnelle : relative à l’exercice d’un métier.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "symetrie-relationnelle-td2",
+      "term": "Symétrie relationnelle",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Recherche d’une position de dialogue moins surplombante entre soignant et personne soignée.",
+      "distinction": "La symétrie des positions n’est pas la proxémie, qui concerne la distance.",
+      "etymologie": "Symétrie : du grec sun, ensemble, et metron, mesure ; relationnelle : rapport entre personnes.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "observation-factuelle-td2",
+      "term": "Observation factuelle",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Description de paroles et comportements réellement constatés, sans prêter d’intention certaine à une personne.",
+      "distinction": "Une supposition sur la motivation ne constitue pas un fait observé.",
+      "etymologie": "Observation : action de regarder attentivement ; factuelle : qui concerne les faits.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "auto-evaluation-soin-td2",
+      "term": "Autoévaluation d’un soin",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Démarche consistant à analyser sa pratique pour identifier des améliorations après une situation de soin.",
+      "distinction": "Ne se limite pas à repérer les gestes réussis : elle inclut la relation et le contexte.",
+      "etymologie": "Auto- signifie soi-même ; évaluation désigne le fait d’apprécier une situation.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "infantilisation-soignante-td2",
+      "term": "Infantilisation dans le soin",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Attitude ou langage qui traite une personne soignée comme un enfant et risque de limiter sa dignité ou sa participation.",
+      "distinction": "Un vocabulaire simple et compréhensible n’est pas nécessairement infantilisant.",
+      "etymologie": "Infantilisation : issu d’infantile, relatif à l’enfant, avec le suffixe -isation.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "reajustement-relationnel-td2",
+      "term": "Réajustement relationnel",
+      "theme": "Posture professionnelle et contexte de soin",
+      "definition": "Adaptation d’une attitude, de mots ou de gestes après observation et retour de la personne soignée.",
+      "distinction": "Un réajustement concret dépasse la simple affirmation qu’il faut être bienveillant.",
+      "etymologie": "Ré- marque une nouvelle action ; ajustement désigne l’adaptation à une situation.",
+      "courseIds": [
+        "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
     }
