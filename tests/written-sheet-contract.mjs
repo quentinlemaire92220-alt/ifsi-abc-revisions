@@ -22,7 +22,12 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  assert.equal(sheet.sheetFormat,'written_revision',label+'format écrit attendu');
  validateSheetSource(courseId,delivery,sheet);
  const id=driveId(sheet);
- assert.ok(id&&/^https:\/\/drive\.google\.com\/file\/d\/[\w-]+/.test(sheet.url||''),label+'Drive ID et URL requis');
+ const isPages=delivery.publicationHost==='github_pages';
+ const urlOK=isPages
+  ? /^https:\\/\\/[-\\w]+\\.github\\.io\\/[-\\w]+\\/assets\\/[-\\w]+\\/[-\\w]+\\.pdf$/.test(sheet.url||'')
+  : /^https:\\/\\/drive\\.google\\.com\\/file\\/d\\/[\\w-]+/.test(sheet.url||'');
+ assert.ok(id&&urlOK,label+'Drive ID et lien étudiant publiable requis');
+ if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
  assert.equal(source?.officialChecked,true,label+'support officiel non contrôlé');
  assert.equal(source?.oralStatus,'complete',label+'contrôle des transcriptions incomplet : ne pas déclarer complet');
