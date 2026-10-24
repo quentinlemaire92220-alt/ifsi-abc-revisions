@@ -37,6 +37,27 @@ export function visualResourceFingerprint(courseId,delivery,data){
 }
 
 export function validateVisualOwnerReview(courseId,delivery,data){
+ if(delivery.packFormat==='written_v1'){
+  const review=delivery.visualOwnerReview;
+  assert.equal(review?.status,'owner_accepted',courseId+': revue du support écrit absente');
+  assert.equal(review.reference,'communication_written_v5.3_2026-10-24',courseId+': référence du modèle écrit invalide');
+  assert.equal(review.method,'pdf_all_pages_checked',courseId+': inspection complète des pages absente');
+  assert.equal(review.reviewerDecision,'explicit_graphic_acceptance',courseId+': validation explicite manquante');
+  assert.ok(Number.isInteger(review.pagesChecked)&&review.pagesChecked===delivery.writtenPdfAudit?.pageCount,
+    courseId+': toutes les pages ne sont pas examinées');
+  assert.equal(review.criteria?.NO_GENERATED_IMAGES,'PASS',courseId+': fiche écrite illustrée à tort');
+  assert.equal(review.criteria?.PURPLE_BANDS_EVERY_PAGE,'PASS',courseId+': bandeaux violets absents');
+  assert.equal(review.criteria?.TEXT_SELECTABLE,'PASS',courseId+': contenu non sélectionnable');
+  assert.equal(review.criteria?.NO_TECHNICAL_NOTES,'PASS',courseId+': marques privées visibles');
+  const ids=selectedSheetIds(delivery);
+  for(const id of ids){
+   const sheet=(data.sheets||[]).find(x=>x.courseId===courseId&&x.resourceId===id);
+   assert.ok(sheet,courseId+': fiche inconnue '+id);
+   assert.equal(review.reviewedPdfSha256s?.[id],delivery.artifactSha256s?.[driveId(sheet)],
+    courseId+': revue graphique et empreinte de la fiche divergentes');
+  }
+  return {checkedSheets:ids.length,checkedBoards:0,checkedImages:0};
+ }
  const review=delivery.visualOwnerReview;
  assert.equal(review?.status,'owner_accepted',
   courseId+': REVUE VISUELLE BLOQUANTE — accord graphique explicite du proprietaire absent');

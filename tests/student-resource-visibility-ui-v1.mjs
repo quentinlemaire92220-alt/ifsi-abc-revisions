@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {runInNewContext} from 'node:vm';
 import {execFileSync} from 'node:child_process';
 import {isDeepStrictEqual} from 'node:util';
+import {createHash} from 'node:crypto';
 import {isScriptWorkItem} from './private-resource-withdrawal-lib.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
@@ -35,7 +36,26 @@ if(additions.length){
  const manifest=JSON.parse(readFileSync(resolve(root,'docs/course-deliveries.json'),'utf8'));
  for(const doc of additions){
   const delivery=manifest.courses.find(c=>c.courseId===doc.courseId);
-  const id=String(doc.url||'').match(/^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:\?|$)/)?.[1];
+  // Ne publier une copie GitHub Pages du TD1 que si l'URL et les octets
+  // correspondent exactement au document approuvé et inventorié.
+  let id=String(doc.url||'').match(/^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:\?|$)/)?.[1];
+  if(!id&&delivery?.publicationHost==='github_pages'&&doc.courseId==='d1_communication_td1'){
+   const prefix='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/communication-td1/';
+   const sheets=[1,2,3].flatMap(n=>JSON.parse(readFileSync(resolve(root,`sheets-${n}.json`),'utf8')));
+   const sheet=sheets.find(s=>s.resourceId===delivery.sheetResourceId);
+   const files=new Map([
+    ['UE_D1_Communication_TD1_Support_officiel.pdf',delivery.supportDriveId],
+    ['UE_D1_Communication_TD1_Fiche_de_revision.pdf',sheet?.driveId],
+    ['UE_D1_Communication_TD1_QCM_50_avec_corriges.pdf',delivery.qcmDriveId],
+    ['UE_D1_Communication_TD1_Flashcards_40.pdf',delivery.flashcardDriveId]
+   ]);
+   const filename=String(doc.url||'').startsWith(prefix)?String(doc.url).slice(prefix.length):'';
+   id=files.get(filename);
+   if(id){
+    const hash=createHash('sha256').update(readFileSync(resolve(root,'assets/communication-td1',filename))).digest('hex');
+    assert.equal(hash,delivery.artifactSha256s?.[id],'Copie PDF publique différente du fichier approuvé');
+   }
+  }
   assert.equal(delivery?.publicationApproval?.authorization,'explicit_go_publication','Nouveau document sans GO explicite');
   assert.equal(delivery.publicationApproval.status,'approved');
   assert.ok(id,'Nouveau document sans fichier identifié');

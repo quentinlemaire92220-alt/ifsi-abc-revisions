@@ -17,9 +17,15 @@ const beforeCount=oldVocabulary.entries.length;
 assert.deepEqual({...newVocabulary,entries:newVocabulary.entries.slice(0,beforeCount)},oldVocabulary,
  'Le lexique historique doit rester inchangé, y compris dans son ordre');
 const addedVocabulary=newVocabulary.entries.slice(beforeCount);
+// Autoriser uniquement les nouveaux lexiques approuvés, sans remplacer les entrées historiques.
+const approvedCommunication=read('docs/course-deliveries.json').courses.some(c=>
+ c.courseId==='d1_communication_td1' && c.publicationApproval?.status==='approved' &&
+ c.publicationApproval?.authorization==='explicit_go_publication');
+const allowedNewLexiconCourses=new Set(['responsabilite_exercice_professionnel']);
+if(approvedCommunication)allowedNewLexiconCourses.add('d1_communication_td1');
 assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.length===1&&
- e.courseIds[0]==='responsabilite_exercice_professionnel'),
- 'Seuls les termes du nouveau cours juridique peuvent être ajoutés');
+ allowedNewLexiconCourses.has(e.courseIds[0])),
+ 'Le lexique ne peut être enrichi que pour les cours explicitement approuvés');
 assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
  'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
