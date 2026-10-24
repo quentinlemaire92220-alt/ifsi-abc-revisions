@@ -213,6 +213,9 @@ jobs:
       - name: Régression UX et cohérence release
         run: node tests/ux-regression.mjs
 
+      - name: Contrôler le bandeau IFSI ABC et le portrait infirmier
+        run: node tests/home-brand-v8419.mjs
+
       - name: Contrôle Paramètres P1
         run: node tests/settings-compact-p1.mjs
 
