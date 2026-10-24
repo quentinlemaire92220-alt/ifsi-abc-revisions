@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-20",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -2049,8 +2049,7 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2115,8 +2114,7 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante",
-        "d1_communication_td1"
+        "psychologie_sante"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2236,8 +2234,7 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere",
-        "d1_communication_td1"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6058,6 +6055,486 @@
         "kind": "Vocabulaire"
       },
       "sourceType": "revision_captures"
+    },
+    {
+      "id": "d1_comm_td1_vocab_01",
+      "term": "Communication",
+      "definition": "Processus cognitif, social et affectif par lequel des personnes échangent et interprètent informations, émotions ou intentions.",
+      "etymologie": "Du latin communicare : mettre en commun et partager.",
+      "distinction": "À distinguer du simple fait de parler : la compréhension n'est pas garantie.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Communication » ?",
+        "answers": [
+          "Processus cognitif, social et affectif par lequel des personnes échangent et interprètent informations, émotions ou intentions."
+        ],
+        "explanation": "À distinguer du simple fait de parler : la compréhension n'est pas garantie.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_02",
+      "term": "Communication adaptée",
+      "definition": "Communication ajustée aux besoins, capacités, attentes, émotions et circonstances de la personne qui reçoit le message.",
+      "etymologie": "Expression composée : communication + adaptée à la personne.",
+      "distinction": "L'adaptation exige une vérification de la compréhension, pas seulement des mots simples.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Communication adaptée » ?",
+        "answers": [
+          "Communication ajustée aux besoins, capacités, attentes, émotions et circonstances de la personne qui reçoit le message."
+        ],
+        "explanation": "L'adaptation exige une vérification de la compréhension, pas seulement des mots simples.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_03",
+      "term": "Communication verbale",
+      "definition": "Communication reposant sur les mots et leur signification dans un échange avec autrui.",
+      "etymologie": "Expression composée : communication + verbal, c'est-à-dire les mots.",
+      "distinction": "À distinguer du paraverbal, qui concerne les caractéristiques de la voix.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Communication verbale » ?",
+        "answers": [
+          "Communication reposant sur les mots et leur signification dans un échange avec autrui."
+        ],
+        "explanation": "À distinguer du paraverbal, qui concerne les caractéristiques de la voix.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_04",
+      "term": "Communication non verbale",
+      "definition": "Communication reposant sur des signes non lexicaux : gestes, mimiques, regard, posture et distance.",
+      "etymologie": "Non- marque ici l'absence de mots comme principal véhicule du message.",
+      "distinction": "Une posture ou un regard ne permet pas à lui seul de conclure sur une intention.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Communication non verbale » ?",
+        "answers": [
+          "Communication reposant sur des signes non lexicaux : gestes, mimiques, regard, posture et distance."
+        ],
+        "explanation": "Une posture ou un regard ne permet pas à lui seul de conclure sur une intention.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_05",
+      "term": "Communication paraverbale",
+      "definition": "Composantes vocales qui accompagnent les paroles, notamment le ton, le débit, le volume, les pauses et l'intonation.",
+      "etymologie": "Para- : éléments associés ici à l'expression verbale.",
+      "distinction": "À distinguer de la signification des mots, même lorsque la voix modifie leur portée.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Communication paraverbale » ?",
+        "answers": [
+          "Composantes vocales qui accompagnent les paroles, notamment le ton, le débit, le volume, les pauses et l'intonation."
+        ],
+        "explanation": "À distinguer de la signification des mots, même lorsque la voix modifie leur portée.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_06",
+      "term": "Filtre de communication",
+      "definition": "Facteur individuel, relationnel, social ou contextuel modifiant la perception ou l'interprétation d'un message.",
+      "etymologie": "Expression du TD : filtre désigne ce qui modifie la réception d'un message.",
+      "distinction": "Un message reçu peut différer du message envoyé sans mauvaise intention.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Filtre de communication » ?",
+        "answers": [
+          "Facteur individuel, relationnel, social ou contextuel modifiant la perception ou l'interprétation d'un message."
+        ],
+        "explanation": "Un message reçu peut différer du message envoyé sans mauvaise intention.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_07",
+      "term": "Congruence",
+      "definition": "Cohérence entre les paroles et l'attitude, notamment la voix, les gestes et l'expression du visage.",
+      "etymologie": "Terme professionnel utilisé dans le TD pour désigner la cohérence de l'expression.",
+      "distinction": "Des paroles rassurantes contredites par la posture peuvent fragiliser la relation.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Congruence » ?",
+        "answers": [
+          "Cohérence entre les paroles et l'attitude, notamment la voix, les gestes et l'expression du visage."
+        ],
+        "explanation": "Des paroles rassurantes contredites par la posture peuvent fragiliser la relation.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_08",
+      "term": "Proxémie",
+      "definition": "Gestion de la distance physique et de l'espace personnel dans une relation.",
+      "etymologie": "Dans ce TD, le terme proxémie renvoie à la proximité et à l'espace personnel.",
+      "distinction": "La juste distance dépend du contexte et des préférences de la personne.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Proxémie » ?",
+        "answers": [
+          "Gestion de la distance physique et de l'espace personnel dans une relation."
+        ],
+        "explanation": "La juste distance dépend du contexte et des préférences de la personne.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_09",
+      "term": "Prosodie",
+      "definition": "Organisation des variations de ton, de rythme et d'intonation participant au sens de la parole.",
+      "etymologie": "Terme du TD désignant la musicalité de la voix et de ses énoncés.",
+      "distinction": "La prosodie relève du paraverbal, et non du contenu lexical des mots.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Prosodie » ?",
+        "answers": [
+          "Organisation des variations de ton, de rythme et d'intonation participant au sens de la parole."
+        ],
+        "explanation": "La prosodie relève du paraverbal, et non du contenu lexical des mots.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_10",
+      "term": "Feedback / rétroaction",
+      "definition": "Réaction d'un interlocuteur informant l'autre sur la réception, voire la compréhension, d'un message.",
+      "etymologie": "Feedback : terme anglais employé ici au sens de retour ou rétroaction.",
+      "distinction": "Un acquiescement ne prouve pas toujours que le message est entièrement compris.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Feedback / rétroaction » ?",
+        "answers": [
+          "Réaction d'un interlocuteur informant l'autre sur la réception, voire la compréhension, d'un message."
+        ],
+        "explanation": "Un acquiescement ne prouve pas toujours que le message est entièrement compris.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_11",
+      "term": "Reformulation",
+      "definition": "Action de reprendre un propos avec d'autres mots pour le clarifier ou vérifier la compréhension.",
+      "etymologie": "Re- souligne l'action de reprendre ou formuler à nouveau.",
+      "distinction": "La reformulation vise à vérifier un sens, pas à répéter mécaniquement.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Reformulation » ?",
+        "answers": [
+          "Action de reprendre un propos avec d'autres mots pour le clarifier ou vérifier la compréhension."
+        ],
+        "explanation": "La reformulation vise à vérifier un sens, pas à répéter mécaniquement.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_12",
+      "term": "Authenticité",
+      "definition": "Attitude sincère qui reconnaît ses limites, évite les réponses inventées et veille à tenir ses engagements.",
+      "etymologie": "Terme du TD associé à une parole sincère et à la reconnaissance des limites.",
+      "distinction": "Dire « je ne sais pas, je vais vérifier » est préférable à une réponse inventée.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Authenticité » ?",
+        "answers": [
+          "Attitude sincère qui reconnaît ses limites, évite les réponses inventées et veille à tenir ses engagements."
+        ],
+        "explanation": "Dire « je ne sais pas, je vais vérifier » est préférable à une réponse inventée.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_13",
+      "term": "Non-jugement",
+      "definition": "Attitude consistant à accueillir une personne sans la réduire à un préjugé ou à une interprétation hâtive.",
+      "etymologie": "Non- marque ici le refus de porter un jugement préalable sur la personne.",
+      "distinction": "Ne pas juger n'empêche pas d'évaluer objectivement une situation clinique.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Non-jugement » ?",
+        "answers": [
+          "Attitude consistant à accueillir une personne sans la réduire à un préjugé ou à une interprétation hâtive."
+        ],
+        "explanation": "Ne pas juger n'empêche pas d'évaluer objectivement une situation clinique.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_14",
+      "term": "Non-stigmatisation",
+      "definition": "Attitude refusant de réduire une personne à une caractéristique considérée négativement.",
+      "etymologie": "Non- : refus ; stigmatisation : réduction par une étiquette négative.",
+      "distinction": "À distinguer d'une absence d'observation : les besoins restent à évaluer.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Non-stigmatisation » ?",
+        "answers": [
+          "Attitude refusant de réduire une personne à une caractéristique considérée négativement."
+        ],
+        "explanation": "À distinguer d'une absence d'observation : les besoins restent à évaluer.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_15",
+      "term": "Juste distance relationnelle",
+      "definition": "Positionnement adapté maintenant une présence aidante et les limites du cadre professionnel.",
+      "etymologie": "Expression du TD : distance relationnelle ajustée selon le contexte du soin.",
+      "distinction": "La proximité émotionnelle excessive peut nuire à l'autonomie de la personne.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Juste distance relationnelle » ?",
+        "answers": [
+          "Positionnement adapté maintenant une présence aidante et les limites du cadre professionnel."
+        ],
+        "explanation": "La proximité émotionnelle excessive peut nuire à l'autonomie de la personne.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_16",
+      "term": "Relation de civilité",
+      "definition": "Échange fondé sur les règles de politesse et le respect de l'interlocuteur.",
+      "etymologie": "Expression du TD : civilité désigne ici les usages de politesse.",
+      "distinction": "Elle se distingue d'un entretien de soin, tout en soutenant la relation.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Relation de civilité » ?",
+        "answers": [
+          "Échange fondé sur les règles de politesse et le respect de l'interlocuteur."
+        ],
+        "explanation": "Elle se distingue d'un entretien de soin, tout en soutenant la relation.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_17",
+      "term": "Relation de soin",
+      "definition": "Lien établi pendant la prise en charge, incluant accueil, information, actes et accompagnement.",
+      "etymologie": "Expression du TD : relation établie à l'occasion des soins.",
+      "distinction": "La relation ne se limite ni à une technique ni à la seule information.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Relation de soin » ?",
+        "answers": [
+          "Lien établi pendant la prise en charge, incluant accueil, information, actes et accompagnement."
+        ],
+        "explanation": "La relation ne se limite ni à une technique ni à la seule information.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_18",
+      "term": "Relation d'aide",
+      "definition": "Échange visant à accompagner une personne face à une difficulté, en soutenant ses ressources.",
+      "etymologie": "Expression du TD : relation au service de l'aide et du soutien.",
+      "distinction": "Aider ne signifie pas décider à la place de la personne ni imposer une solution.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Relation d'aide » ?",
+        "answers": [
+          "Échange visant à accompagner une personne face à une difficulté, en soutenant ses ressources."
+        ],
+        "explanation": "Aider ne signifie pas décider à la place de la personne ni imposer une solution.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_19",
+      "term": "Relation éducative",
+      "definition": "Relation visant à renforcer la compréhension et les capacités nécessaires à une prise en soin.",
+      "etymologie": "Expression du TD : éduquer signifie ici favoriser compréhension et autonomie.",
+      "distinction": "L'éducation n'est pas une succession d'ordres sans participation.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Relation éducative » ?",
+        "answers": [
+          "Relation visant à renforcer la compréhension et les capacités nécessaires à une prise en soin."
+        ],
+        "explanation": "L'éducation n'est pas une succession d'ordres sans participation.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_20",
+      "term": "Relation thérapeutique",
+      "definition": "Relation utilisée comme composante du soin dans un cadre et avec des objectifs définis.",
+      "etymologie": "Expression du TD : thérapeutique renvoie à une visée de soin.",
+      "distinction": "Elle peut mobiliser des médiations relationnelles avec des objectifs précis.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Relation thérapeutique » ?",
+        "answers": [
+          "Relation utilisée comme composante du soin dans un cadre et avec des objectifs définis."
+        ],
+        "explanation": "Elle peut mobiliser des médiations relationnelles avec des objectifs précis.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_21",
+      "term": "Récepteur",
+      "definition": "Personne qui reçoit et interprète un message à partir de ses capacités, de son contexte et de ses repères.",
+      "etymologie": "Terme du schéma de communication, par opposition à l'émetteur.",
+      "distinction": "Recevoir le message ne garantit pas sa compréhension telle que voulue.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Récepteur » ?",
+        "answers": [
+          "Personne qui reçoit et interprète un message à partir de ses capacités, de son contexte et de ses repères."
+        ],
+        "explanation": "Recevoir le message ne garantit pas sa compréhension telle que voulue.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_22",
+      "term": "Émetteur",
+      "definition": "Personne à l'origine d'un message transmis par un canal de communication.",
+      "etymologie": "Terme du schéma de communication, par opposition au récepteur.",
+      "distinction": "L'émetteur doit ajuster le message en fonction du retour reçu.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Émetteur » ?",
+        "answers": [
+          "Personne à l'origine d'un message transmis par un canal de communication."
+        ],
+        "explanation": "L'émetteur doit ajuster le message en fonction du retour reçu.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_23",
+      "term": "Canal",
+      "definition": "Moyen employé pour transmettre un message, par exemple la voix, l'écriture ou un support visuel.",
+      "etymologie": "Terme du schéma de communication pour désigner le mode de transmission.",
+      "distinction": "Le canal est différent du contenu du message qui y circule.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Canal » ?",
+        "answers": [
+          "Moyen employé pour transmettre un message, par exemple la voix, l'écriture ou un support visuel."
+        ],
+        "explanation": "Le canal est différent du contenu du message qui y circule.",
+        "kind": "Vocabulaire"
+      }
+    },
+    {
+      "id": "d1_comm_td1_vocab_24",
+      "term": "Parler",
+      "definition": "Utiliser des mots et des sons articulés pour exprimer une pensée ; cela ne garantit pas un échange compris.",
+      "etymologie": "Terme distingué explicitement de communiquer dans le support du TD.",
+      "distinction": "Parler sans réception ni compréhension ne suffit pas à un échange efficace.",
+      "theme": "La communication et la relation de soin",
+      "courseIds": [
+        "d1_communication_td1"
+      ],
+      "sourceType": "reference_pedagogique",
+      "flashcard": {
+        "front": "Que signifie « Parler » ?",
+        "answers": [
+          "Utiliser des mots et des sons articulés pour exprimer une pensée ; cela ne garantit pas un échange compris."
+        ],
+        "explanation": "Parler sans réception ni compréhension ne suffit pas à un échange efficace.",
+        "kind": "Vocabulaire"
+      }
     }
   ]
 }
