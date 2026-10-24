@@ -69,7 +69,8 @@ if(approvedUpdates.size){
   {env:{...process.env,IFSI_BASE_SHA:base},maxBuffer:32*1024*1024,stdio:'pipe'});
 }
 
-assert.equal(oldReg.courses.length,50,'Snapshot historique P0 : 50 cours avant ajout');
+// Le socle évolue : conserver tous les IDs du commit de base au lieu d'imposer 50 cours.
+assert.ok(oldReg.courses.length>=50,'Snapshot historique P0 : moins de 50 cours dans la base');
 const historicIds=new Set(oldReg.courses.map(c=>c.id));
 assert.equal(new Set(currentReg.courses.map(c=>c.id)).size,currentReg.courses.length,'Cours dupliques dans le registre');
 const newCourses=currentReg.courses.filter(c=>!historicIds.has(c.id));
