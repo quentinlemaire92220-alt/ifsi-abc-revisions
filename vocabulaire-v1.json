@@ -2049,7 +2049,8 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -2114,7 +2115,8 @@
       "etymologie": "écoute (attention au discours) + active (reformulation et clarification).",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante"
+        "psychologie_sante",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2222,7 +2224,8 @@
       "etymologie": "mal- (de façon nuisible) + traitance (manière de traiter autrui).",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere"
+        "histoire_profession_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2234,7 +2237,8 @@
       "distinction": "L'absence de maltraitance ne suffit pas à démontrer une démarche de bientraitance.",
       "etymologie": "bien- (de façon respectueuse) + traitance (manière de traiter autrui).",
       "courseIds": [
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2247,7 +2251,8 @@
       "etymologie": "auto- (soi-même) + -nomie (règle, organisation) ; capacité de décision de la personne.",
       "courseIds": [
         "ethique_infirmiere",
-        "histoire_profession_infirmiere"
+        "histoire_profession_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3539,7 +3544,8 @@
       "etymologie": "em- (dans) + -pathie (ressenti) ; compréhension du vécu d'autrui.",
       "courseIds": [
         "competences_psychosociales",
-        "psychologie_sante"
+        "psychologie_sante",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -3564,7 +3570,8 @@
       "etymologie": "consentement (accord) + aux soins (actes proposés).",
       "courseIds": [
         "introduction_droit",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -4930,7 +4937,8 @@
       "distinction": "Distinct de la seule responsabilité pour les conséquences de ses actes.",
       "theme": "Éthiques du care",
       "courseIds": [
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "qcmQuestionId": "care_p02_vocab_006",
       "flashcard": {
@@ -5224,7 +5232,8 @@
       "distinction": "Ne se déduit pas à lui seul du silence, d’un diagnostic ou de l’accord d’un proche.",
       "theme": "Éthiques du care",
       "courseIds": [
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "d1_communication_td1"
       ],
       "qcmQuestionId": "care_p02_vocab_021",
       "flashcard": {
