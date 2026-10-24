@@ -1,5 +1,5 @@
 {
-  "version": "8.30.121",
+  "version": "8.30.122",
   "courses": [
     {
       "id": "biomolecules",
@@ -1030,6 +1030,41 @@
         {
           "label": "Flashcards — 40 cartes",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/communication-td1/UE_D1_Communication_TD1_Flashcards_40.pdf",
+          "type": "flashcards",
+          "cardCount": 40
+        }
+      ]
+    },
+    {
+      "id": "d1_posture_professionnelle_td2",
+      "label": "Posture professionnelle et contexte de soin — TD2",
+      "aliases": [
+        "Posture professionnelle et contexte de soin",
+        "Posture professionnelle TD2",
+        "UE D1.1 S1 Posture professionnelle"
+      ],
+      "domain": "D",
+      "ue": "D1",
+      "teachingUnit": "D1.1",
+      "semester": "S1",
+      "part": "02",
+      "officialSupport": true,
+      "sourceStatus": "official_support",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_QCM_40_Corrige.pdf",
+      "qcmPdfQuestionCount": 40,
+      "flashcardTarget": 40,
+      "authoredFlashcards": true,
+      "audioStatus": "awaiting_mp3",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — Posture professionnelle",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_Fiche_Revision.pdf",
+          "type": "revision"
+        },
+        {
+          "label": "Flashcards — 40 cartes",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/posture-professionnelle-td2/UE_D1_1_Posture_Professionnelle_Flashcards_40.pdf",
           "type": "flashcards",
           "cardCount": 40
         }

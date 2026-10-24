@@ -8,6 +8,9 @@
 # Dépendances / sorties locales
 node_modules/
 coverage/
+__pycache__/
+*.py[cod]
+preflight-reports/
 dist/
 .cache/
 tmp/

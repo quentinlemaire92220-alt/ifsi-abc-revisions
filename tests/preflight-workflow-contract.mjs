@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const current=fs.readFileSync('.github/workflows/tnr.yml','utf8');
+const base=process.env.IFSI_BASE_SHA;
+assert.match(base||'',/^[a-f0-9]{40}$/i);
+const prior=execFileSync('git',['show',base+':.github/workflows/tnr.yml'],{encoding:'utf8'});
+const tests=s=>[...s.matchAll(/^\s*(?:run:\s*)?((?:node|python)\s+tests\/[^\n]+)/gm)].map(m=>m[1].trim());
+for(const command of tests(prior))assert.ok(tests(current).includes(command),'Commande TNR retirée : '+command);
+assert.ok(!/continue-on-error:\s*true/.test(current),'TNR doit rester bloquant');
+assert.ok(current.includes('if: ${{ !cancelled() }}'),'Les contrôles restants doivent tourner après échec');
+assert.ok(current.includes('--stage preparation')&&current.includes('--stage publication'));
+assert.ok(current.includes('cache-dependency-path: tools/ci-pdf-requirements.txt'));
+assert.match(current,/name: Configurer Python pour les contrôles PDF\n\s+if: \$\{\{ !cancelled\(\) \}\}\n\s+uses: actions\/setup-python@v5/,
+ 'Le runtime Python doit être configuré même après un premier échec pédagogique');
+console.log('PASS CI : tous les TNR historiques conservés, préparation/publication distinctes et aucun échec masqué');

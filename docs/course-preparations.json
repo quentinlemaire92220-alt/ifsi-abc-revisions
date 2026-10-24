@@ -1,42 +1,4 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": [
-    {
-      "courseId": "d1_posture_professionnelle_td2",
-      "title": "Posture professionnelle et contexte de soin — TD2",
-      "ue": "D1.1",
-      "part": "02",
-      "lifecycle": "preparation",
-      "validated": false,
-      "studentPublication": false,
-      "approval": null,
-      "masterModel": "communication_written_v5.3_2026-10-24",
-      "artifacts": {
-        "revisionPdfPages": 17,
-        "qcmPdfPages": 14,
-        "flashcardsPdfPages": 7,
-        "questions": 40,
-        "flashcards": 40,
-        "glossaryTerms": 6,
-        "vocalMp3": 0,
-        "privateStorage": "owner_drive"
-      },
-      "sourceAudit": {
-        "officialChecked": true,
-        "oralStatus": "incomplete_tail",
-        "recordingTailTruncated": true,
-        "oralCoverageExhaustive": false,
-        "scientificReview": "pending",
-        "lexiconReview": "pending",
-        "externalSourcesCount": 0
-      },
-      "prerequisitesToPublish": [
-        "Recouvrir ou expliciter la fin manquante de PT02 sans prétendre à l'exhaustivité",
-        "Valider le contenu, les corrigés, le lexique et le rendu de tous les PDF",
-        "Obtenir GO distinct de publication et fusion sur un package signé",
-        "Publier par PR distincte les ressources dans les catalogues actifs, faire passer les TNR et vérifier l'accès réel"
-      ],
-      "archiveRule": "Après publication et vérification dans l'application seulement, sortir du dossier À traiter par archivage sans suppression"
-    }
-  ]
+  "courses": []
 }
