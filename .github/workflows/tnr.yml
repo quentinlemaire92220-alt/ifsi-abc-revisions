@@ -65,6 +65,9 @@ jobs:
       - name: Vérifier les compléments sans remplacement des ressources historiques
         run: node tests/course-complement-additive-test.mjs
 
+      - name: Vérifier l'isolement, les réponses et la propreté des cours en préparation
+        run: node tests/posture-td2-bank-integrity.mjs
+
       - name: Tests de non-régression données et runtime
         run: node tests/tnr-node.mjs
 

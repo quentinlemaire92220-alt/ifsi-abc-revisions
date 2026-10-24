@@ -1,3 +1,9 @@
+## Contrôle obligatoire avant intégration en application
+
+Lire `docs/COURSE_PREPARATION_V1.md`. Pour un nouveau cours encore en QA, déposer le lot dans le Drive propriétaire privé, conserver la banque en `data/course-preparations/` et la fiche de suivi dans `docs/course-preparations.json`. Ne rien inscrire dans `course-registry-v741.json`, `sheets-*.json`, `questions-*.json`, `vocabulaire-v1.json`, `docs/course-deliveries.json` ou les `assets/` de GitHub Pages avant la validation complète et le GO distinct. Une transcription tronquée conserve son statut de réserve. Lancer `node tests/course-preparation-stage.mjs` ; la publication finale exige les TNR complets, les contrôles visuels, la signature du pack et une vérification du site, puis l'archivage des sources sans suppression.
+
+---
+
 ## PRIORITÉ TRANSVERSALE — NETTOYAGE DES SUPPORTS ÉTUDIANTS (24/10/2026)
 
 **TOUT document étudiant final** (fiche PDF, QCM, corrigé, flashcards, vocabulaire, script vocal) doit être exempt de marqueurs techniques : « brouillon », « à valider », « non publié », « privé », numéro de version de génération / édition interne (ex. V5.3), traces QA, noms de scripts, notes de workflow, provenance du générateur. Les conserver seulement dans les manifestes et rapports QA privés, hors des supports étudiants. Conserver UE, date/séance, titre, thèmes et pagination.
