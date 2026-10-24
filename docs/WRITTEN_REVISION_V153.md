@@ -1,3 +1,11 @@
+## PRIORITÉ 24/10/2026 — PRÉPARATION SÉPARÉE DES SUPPORTS PUBLIÉS
+
+Un cours en production, même avec fiche/QCM/flashcards prêts, reste HORS du catalogue actif tant que la validation pédagogique, la couverture des sources et le GO de publication/fusion n'ont pas été documentés. Le préparer dans `docs/course-preparations.json` et `data/course-preparations/`, garder les PDF et sources sur le Drive propriétaire privé ; ne pas activer de fiche, QCM, lexique ou PDF Github Pages. Contrôle : `node tests/course-preparation-stage.mjs`.
+
+Ne pas marquer une transcription tronquée « complete » ; maintenir une réserve pédagogique explicite. Le test de préparation peut être vert pendant que le contrôle de publication continue d'exiger un package complet, approuvé et vérifié. Le dossier « À traiter » n'est nettoyé qu'APRÈS contrôle du déploiement étudiant, par archivage sans suppression. Détails : `docs/COURSE_PREPARATION_V1.md`.
+
+---
+
 ## PRIORITÉ TRANSVERSALE — NETTOYAGE DES SUPPORTS ÉTUDIANTS (24/10/2026)
 
 **TOUT document étudiant final** (fiche PDF, QCM, corrigé, flashcards, vocabulaire, script vocal) doit être exempt de marqueurs techniques : « brouillon », « à valider », « non publié », « privé », numéro de version de génération / édition interne (ex. V5.3), traces QA, noms de scripts, notes de workflow, provenance du générateur. Les conserver seulement dans les manifestes et rapports QA privés, hors des supports étudiants. Conserver UE, date/séance, titre, thèmes et pagination.
