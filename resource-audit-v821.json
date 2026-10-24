@@ -1,16 +1,16 @@
 {
   "version": "8.30.121",
-  "auditedAt": "2026-10-24",
+  "auditedAt": "2026-10-23",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire technique candidat PR #215 : cours TD2 Posture professionnelle ajouté au registre et à la liste de fiches. Ce comptage ne vaut ni validation pédagogique, ni GO de publication, ni preuve de mise en ligne. Autres ressources préservées.",
+  "note": "V8.30.120 : nouveau TD1 La communication (support officiel, fiche écrite, 50 QCM, 40 flashcards), en complément de l'UE A2.1 et sans retrait des ressources historiques.",
   "expectedTotals": {
-    "courses": 53,
-    "sheets": 70,
+    "courses": 52,
+    "sheets": 69,
     "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,
