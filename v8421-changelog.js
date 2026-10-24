@@ -7,7 +7,7 @@ function patch(){
   const note=document.createElement('span');note.id='v8422Change';note.dataset.date='2026-10-24';
   const heading=document.createElement('b');heading.textContent='V8.30.122 — TD2 Posture professionnelle';
   note.append(heading,document.createElement('br'));
-  note.append(document.createTextNode('Fiche écrite (17 pages), QCM (40 questions) et flashcards (40 cartes) intégrés. Correction du QCM 3 ; revue orale de PT02 limitée à l’extrait reçu.'));
+  note.append(document.createTextNode('Fiche écrite (17 pages), QCM (40 questions) et flashcards (40 cartes) intégrés. Correction du QCM 3 ; vocaux en cours de préparation.'));
   note.append(document.createElement('br'));entries.insertBefore(note,entries.firstChild);
  }
  if(document.getElementById('v8421Change'))return true;
