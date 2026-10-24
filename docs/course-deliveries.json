@@ -2166,16 +2166,15 @@
           "resource": "vocals",
           "reason": "awaiting_user_mp3",
           "detail": "Un script privé est préparé ; aucun MP3 annoncé ni publié."
-        },
-        {
-          "resource": "publication_approval_record",
-          "reason": "automatic_approval_review_refused",
-          "detail": "PDF finaux validés par le propriétaire, copies Drive privées remplacées et retéléchargées identiques. L'enregistrement de l'accord final dans le manifeste reste refusé automatiquement ; aucune fusion ni aucun déploiement."
         }
       ],
       "publicationApproval": {
-        "status": "pending_reapproval",
-        "reason": "Final owner GO observed; recording the approval is blocked by automatic approval review. Merge and deployment remain conditioned on all TNR passing."
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-24T22:01:49Z",
+        "bundleSha256": "2363f12d4b6865ba42d74371127d2736a35cfde8fa4e5d7441403274a6a0be74",
+        "mergeDeploymentCondition": "all_tnr_green"
       },
       "publicArtifacts": {
         "sheet": {
