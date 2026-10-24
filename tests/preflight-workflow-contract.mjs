@@ -11,4 +11,6 @@ assert.ok(!/continue-on-error:\s*true/.test(current),'TNR doit rester bloquant')
 assert.ok(current.includes('if: ${{ !cancelled() }}'),'Les contrôles restants doivent tourner après échec');
 assert.ok(current.includes('--stage preparation')&&current.includes('--stage publication'));
 assert.ok(current.includes('cache-dependency-path: tools/ci-pdf-requirements.txt'));
+assert.match(current,/name: Configurer Python pour les contrôles PDF\n\s+if: \$\{\{ !cancelled\(\) \}\}\n\s+uses: actions\/setup-python@v5/,
+ 'Le runtime Python doit être configuré même après un premier échec pédagogique');
 console.log('PASS CI : tous les TNR historiques conservés, préparation/publication distinctes et aucun échec masqué');
