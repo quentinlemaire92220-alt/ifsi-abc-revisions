@@ -24,7 +24,7 @@ for(const s of [
  'body.v86-home #v76Home>#ifsiFreeNote'
 ])assert.ok(ui.includes(s),'Bandeau accueil incomplet : '+s);
 assert.ok(!ui.toLowerCase().includes('lycée'),'Le mot lycée ne doit pas figurer dans le bandeau');
-assert.ok(index.includes('v8419-home-brand.js?v=8419'),'Module accueil absent du HTML');
+assert.ok(/v8419-home-brand\.js\?v=\d+/.test(index),'Module accueil absent du HTML');
 assert.ok(sw.includes('v8419-home-brand.js'),'Module accueil absent du SW');
 assert.ok(sw.includes('./portrait-infirmier-quentin.b64'),'Portrait absent du cache hors ligne');
 assert.ok(!ui.includes('<a href="#'),'La bannière ne doit pas créer de faux liens');
