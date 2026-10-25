@@ -1934,7 +1934,7 @@
       "courseId": "d1_communication_td1",
       "part": "01",
       "validated": true,
-      "status": "awaiting_mp3",
+      "status": "complete",
       "deliveryMode": "first_release",
       "packFormat": "written_v1",
       "publicationHost": "github_pages",
@@ -1963,7 +1963,10 @@
       "qcmCount": 50,
       "flashcardCount": 40,
       "vocabularyCount": 35,
-      "vocals": [],
+      "vocals": [
+        "d1_communication_td1_p01_vocal_01",
+        "d1_communication_td1_p01_vocal_02"
+      ],
       "scriptsPreparedCount": 2,
       "requestedVocals": true,
       "sourceAudit": {
@@ -2009,7 +2012,9 @@
         "1s6kuU1h2PQM99vYLbm51EfE80uSXnKd4": "0b7e357dd01872dad75b07d836330afee6319bb11ed17d7032ee821e38fa9e83",
         "1mgOD_vHw2d7PLh8jH5r_9vFf3AzKkk0h": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
         "1h8u34DBJ_RJ-T-QYSMj8K0tId6SX_XSi": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-        "1zLwZ4JeMUr9BwOhZmLcqi6683jrnasgA": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e"
+        "1zLwZ4JeMUr9BwOhZmLcqi6683jrnasgA": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e",
+        "1w5o6cqq0J_kmKFzaCOVrWhe_3PQp-CtT": "c342eee7246c399066e4f6445a02bad87ed1dfa612a890d79be42cc330729c0b",
+        "1hPQfgPq_W5Jk7s0VyXJSXYeKwp7EQ6kN": "a2c9d65a8d8e04cd304175794cf37f53f72a9739aa251eb3209ff197a7b68a60"
       },
       "publishedVerification": {
         "status": "MATCH",
@@ -2033,13 +2038,7 @@
           "d1_communication_td1_written_p01": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf"
         }
       },
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Deux scripts prêts en QA privé ; aucun MP3 publié ou déclaré."
-        }
-      ],
+      "blockers": [],
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
@@ -3295,7 +3294,7 @@
         "authorization": "explicit_go_publication",
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
-        "bundleSha256": "f7ac3225444fb8782ad58149d81aebaf0c00ef47bfb0aefe8a36ce13163866dc"
+        "bundleSha256": "ce4821804f589b26231ffa15ce5f0e91e4eaef266763055f9cf635dffc037ce0"
       }
     },
     {
@@ -3314,7 +3313,7 @@
         "authorization": "explicit_go_publication",
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
-        "bundleSha256": "ba22fa8a41c755811126d26f1ca64e636aaad173068972ee121ce48389a5b7ad"
+        "bundleSha256": "5cb712453dd1a060a034e988774b41a277235a2db1549db1867512197b963d27"
       }
     },
     {
@@ -3333,7 +3332,7 @@
         "authorization": "explicit_go_publication",
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
-        "bundleSha256": "6cccb8a5c7900eb78d5ccd0d38e38811aced5f91d26fc87381e107b6fc6d3cb8"
+        "bundleSha256": "ff62c1a6733c35f5835f4089755ca736d38b7ac4136bc766ac4172253c18be86"
       }
     },
     {
@@ -3352,7 +3351,7 @@
         "authorization": "explicit_go_publication",
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
-        "bundleSha256": "b42be922c3a09cc145403538a50a9018f89b6c40abc2e005cde9a80404c3e594"
+        "bundleSha256": "55d75e46f37ef163a90a94623955b740445324110f68cb452edeb4a252d78595"
       }
     },
     {
@@ -3371,7 +3370,7 @@
         "authorization": "explicit_go_publication",
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
-        "bundleSha256": "cb8934725a6b10e0ee003f54686de5c6c26716eda25712db5058d5d4241531f6"
+        "bundleSha256": "acac0b132552bc75a2da0e18547b917fb9205dae0261410fc9cb92bc48ee7624"
       }
     }
   ]
