@@ -73,9 +73,9 @@ def inspect(pdf:Path,role:str,expected_pages:int|None=None,min_font:float=7.4,re
                         errors.append('Case QCM absente ou après le choix '+t[:14])
             if role=='qcm' and answers:
                 for i,(txt,r,_) in enumerate(lines):
-                    if not re.fullmatch(r'Q\\d{2}',txt):continue
+                    if not re.fullmatch(r'Q\d{2}',txt):continue
                     next_q=next((k for k in range(i+1,len(lines))
-                                   if re.fullmatch(r'Q\\d{2}',lines[k][0])),len(lines))
+                                   if re.fullmatch(r'Q\d{2}',lines[k][0])),len(lines))
                     ending=next((box for text,box,_ in reversed(lines[i+1:next_q])
                                  if text.startswith('E. ')),None)
                     if ending is None:
