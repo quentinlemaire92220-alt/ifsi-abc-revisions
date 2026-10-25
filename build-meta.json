@@ -1,6 +1,6 @@
 {
-  "version": "8.30.127",
-  "build": "8427",
+  "version": "8.30.128",
+  "build": "8428",
   "releasedAt": "2026-10-25",
-  "summary": "Navigation pédagogique Domaine → UE → Cours, statut Provisoire discret, ordre des supports et modes clair/sombre."
+  "summary": "Correctif P0 : retour au parcours de cours stable après blocage au lancement ; 55 cours et ressources conservés."
 }
