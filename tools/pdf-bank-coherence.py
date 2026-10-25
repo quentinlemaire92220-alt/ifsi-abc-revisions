@@ -45,7 +45,8 @@ def validate_cards(text,rows):
         f=q['flashcards'][0]
         actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
         expected=f['front']+' Réponse. '+' '.join(f['answers'])+' Explication. '+f['explanation']
-        assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
+        written_v53='RECTO • '+f['front']+' VERSO • '+' '.join(f['answers'])+' EXPLICATION • '+f['explanation']
+        assert norm(actual) in {norm(expected),norm(written_v53)},q['id']+': recto/verso/explication PDF différents'
 def check(course):
     for role,asset in course['publicArtifacts'].items():
         path=Path(asset['path'])

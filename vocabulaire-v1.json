@@ -6427,6 +6427,306 @@
         "d1_bientraitance"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "d1-relation-01",
+      "term": "Besoin relationnel",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Besoin d’entrer ou de rester en relation pour partager et comprendre ce que l’on vit.",
+      "distinction": "Exprime une recherche de lien ou d'écoute, et non un acte technique à réaliser.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-02",
+      "term": "Soin relationnel",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Accompagnement qui permet à la personne d’exprimer son vécu et d’être entendue.",
+      "distinction": "Accompagnement par la parole et l'attitude, qui peut compléter un soin technique.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-03",
+      "term": "Écoute active",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Posture disponible et attentive qui mobilise l’écoute, la reformulation et le questionnement adapté.",
+      "distinction": "Ne se réduit pas à entendre : elle associe présence, relance et reformulation.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-04",
+      "term": "Congruence",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Accord entre pensées, paroles, attitudes et actes.",
+      "distinction": "Cohérence de la posture du soignant ; distincte de la seule reformulation verbale.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-05",
+      "term": "Empathie (relation de soin)",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Compréhension du monde de l’autre sans confusion avec sa propre histoire émotionnelle.",
+      "distinction": "Comprendre le vécu d'autrui sans le confondre avec sa propre émotion ni devenir son ami.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-06",
+      "term": "Considération positive inconditionnelle",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Reconnaissance de la valeur et des ressources de la personne sans jugement conditionnel.",
+      "distinction": "Respecter les capacités et les choix sans exiger l'adhésion à une solution proposée.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-07",
+      "term": "Attitudes de Porter",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Six types de réponses : évaluation, interprétation, soutien, investigation, solution, compréhension.",
+      "distinction": "Grille de six réponses possibles à analyser selon la situation, et non interdictions absolues.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-08",
+      "term": "Évaluation / jugement",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Appréciation sur la façon dont la personne devrait réagir.",
+      "distinction": "Attribue une appréciation au vécu ; à distinguer de la compréhension sans jugement.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-09",
+      "term": "Interprétation",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Attribution d’un motif ou d’un sens non formulé par la personne.",
+      "distinction": "Attribue un motif non exprimé ; à distinguer de la reformulation qui vérifie le sens.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-10",
+      "term": "Soutien / réassurance",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Tentative de réconfort pouvant parfois minimiser l’inquiétude.",
+      "distinction": "Peut réconforter mais ne doit pas promettre une issue inconnue.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-11",
+      "term": "Investigation / enquête",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Exploration dirigée par les hypothèses du soignant.",
+      "distinction": "Questions dirigées par des hypothèses, à distinguer de la question ouverte.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-12",
+      "term": "Conseil / solution",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Proposition de conduite à tenir formulée par le soignant.",
+      "distinction": "Solution formulée par le professionnel, différente de l'accompagnement des choix du patient.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-13",
+      "term": "Compréhension",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Réponse qui reconnaît et reformule le vécu exprimé.",
+      "distinction": "Reprend le vécu exprimé, sans imposer une explication construite par le soignant.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-14",
+      "term": "Question ouverte",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Question laissant la personne développer librement son point de vue.",
+      "distinction": "Favorise un développement libre, contrairement à la réponse limitée d'une question fermée.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-15",
+      "term": "Question fermée",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Question qui appelle une réponse limitée et précise.",
+      "distinction": "Recherche une information courte, sans remplacer l'expression spontanée du vécu.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-16",
+      "term": "Reformulation",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Reprise du message pour vérifier et clarifier sa compréhension.",
+      "distinction": "Vérifie les propos entendus, sans ajouter une interprétation personnelle.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-17",
+      "term": "Clarification",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Demande de précision sur un mot ou une idée ambiguë.",
+      "distinction": "Fait préciser un terme incertain, plutôt que d'en attribuer d'emblée le sens.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-18",
+      "term": "Paraverbal",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Intensité, rythme, débit et timbre de la voix, pauses.",
+      "distinction": "Concerne la voix et le débit, et non les mimiques ou la posture corporelle.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-19",
+      "term": "Non verbal",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Regard, posture, distance, mimiques et autres signes corporels.",
+      "distinction": "Comprend gestes et posture, à distinguer du contenu des mots prononcés.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-20",
+      "term": "Proxémie",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Ajustement de la distance corporelle entre les personnes.",
+      "distinction": "Désigne la distance entre personnes, parmi les composantes non verbales de la relation.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-21",
+      "term": "Toucher empathique",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Toucher exprimant une présence ou un soutien dans une relation adaptée.",
+      "distinction": "Vise une présence de soutien, à distinguer du toucher à finalité clinique.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-22",
+      "term": "Toucher gnosique",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Toucher visant la recherche d’informations ou de signes cliniques.",
+      "distinction": "Recherche des signes cliniques, à distinguer du toucher de soutien relationnel.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-23",
+      "term": "Distance relationnelle",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Position professionnelle qui associe proximité humaine et régulation de ses propres émotions.",
+      "distinction": "Maintient une proximité professionnelle sans froideur ni familiarité imposée.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-24",
+      "term": "Altérité",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Reconnaissance de l’autre comme une personne ayant ses propres valeurs et représentations.",
+      "distinction": "Reconnaît le vécu propre de l'autre sans projeter ses propres croyances ou émotions.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "d1-relation-25",
+      "term": "Mastectomie",
+      "theme": "Relation soignant-soigné et écoute active",
+      "definition": "Ablation chirurgicale d’un sein ; élément du cas clinique étudié.",
+      "distinction": "Geste chirurgical évoqué dans le cas clinique, distinct du ressenti personnel de la patiente.",
+      "etymologie": "L'origine du terme n'est pas étudiée dans les deux transcriptions orales reçues.",
+      "courseIds": [
+        "d1_relation_soignant_soigne_ecoute_active"
+      ],
+      "sourceType": "transcription_orale"
     }
   ]
 }
