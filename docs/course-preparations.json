@@ -31,18 +31,18 @@
         "flashcards": 0,
         "glossaryTerms": 0,
         "vocalMp3": 0,
-        "writtenPdfPrivate": 0
+        "writtenPdfPrivate": 1
       },
       "qa": {
-        "graphicV2": "pending",
-        "pageReview": "pending",
+        "graphicV2": "local_pdf_mechanical_pass",
+        "pageReview": "prototype_review_pending_owner",
         "subjectMatter": "pending"
       },
       "blockers": [
         "support écrit manquant",
         "revue pédagogique et visuelle non validée"
       ],
-      "notes": "Pilote V2 privé ; reste À traiter. Aucun QCM ni PDF ni source Drive exposé dans l’application."
+      "notes": "Pilote V2 PDF de 12 pages conservé dans le Drive privé du dossier À traiter. Aucun PDF/source/URL Drive dans le GitHub public. Revue de fond et support officiel restant à compléter."
     }
   ]
 }
