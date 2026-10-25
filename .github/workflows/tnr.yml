@@ -97,6 +97,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: python -m pip install -r tools/ci-pdf-requirements.txt
 
+      - name: TNR graphique V2 — PDF fictifs conformes et défauts volontaires
+        if: ${{ !cancelled() }}
+        run: python tests/pdf_graphic_contract_v2_test.py
+
+      - name: QA graphique réelle des packs écrits publiés (page par page)
+        if: ${{ !cancelled() }}
+        run: python tools/pdf_graphic_contract_v2.py --all-published
+
       - name: TNR propreté des PDF et scripts vocaux étudiants
         if: ${{ !cancelled() }}
         run: python tests/student_support_clean_gate_test.py
