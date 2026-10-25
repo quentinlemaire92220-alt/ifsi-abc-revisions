@@ -1,7 +1,7 @@
 (()=>{'use strict';
 function patch(){
  const box=document.getElementById('v742Changelog');if(!box)return false;
- window.IFSI_V8425_CHANGELOG?.patch?.();
+ window.IFSI_V8426_CHANGELOG?.patch?.();
  const badge=box.querySelector('.badge');if(badge)badge.textContent='V8.30.127';
  const entries=box.querySelector('details .small');if(!entries)return false;
  if(!document.getElementById('v8427Change')){
