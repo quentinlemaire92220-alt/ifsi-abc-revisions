@@ -16,7 +16,7 @@ def without_theme_titles(text,rows):
         if t in themes:continue
         if t.startswith('THÈME • ') and t[len('THÈME • '):] in themes:continue
         lines.append(line)
-    return '\\n'.join(lines)
+    return '\n'.join(lines)
 
 def validate_qcm(text,rows):
     parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
