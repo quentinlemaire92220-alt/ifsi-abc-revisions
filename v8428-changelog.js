@@ -8,7 +8,7 @@ function patch(){
   const line=document.createElement('span');line.id='v8428Change';line.dataset.date='2026-10-25';
   const heading=document.createElement('b');heading.textContent='V8.30.128 — Correctif du blocage au démarrage';
   line.append(heading,document.createElement('br'));
-  line.append(document.createTextNode('Retour temporaire à la navigation stable des cours après un gel au lancement. Le nouveau module d'arborescence est désactivé dans l'application. Les 55 cours, QCM, fiches et vocaux restent conservés.'));
+  line.append(document.createTextNode("Retour temporaire à la navigation stable des cours après un gel au lancement. Le nouveau module d'arborescence est désactivé dans l'application. Les 55 cours, QCM, fiches et vocaux restent conservés."));
   line.append(document.createElement('br'));entries.insertBefore(line,entries.firstChild);
  }
  return true;
