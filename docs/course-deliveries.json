@@ -2502,11 +2502,11 @@
         }
       ],
       "publicationApproval": {
-        "status": "pending_digest",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-25T12:26:00+01:00",
-        "bundleSha256": "",
+        "bundleSha256": "519c93f82d7766e23e1d3e6731ad880fc13609a0c8e4aa83ad280131da25abdb",
         "mergeDeploymentCondition": "all_tnr_green",
         "provisionalOnly": true,
         "approvalBasis": "GO initial de publication suivi d'une validation graphique et pédagogique limitée au statut provisoire (« Je valide »)."
@@ -2536,6 +2536,15 @@
         "nativeSupportAvailable": false,
         "reconciled": false,
         "transcriptCount": 2
+      },
+      "folders": {
+        "01": "1afiCEYvTdo0MqshEPXzXKxUKnio8v5-b",
+        "02": "1r6HLdiPQ_vsZMv5ajhoRDTIUU0Yg8mIu",
+        "03": "1_YlUI_6UQt24aX3gn7KKOKBDjySsINQn",
+        "04": "1TK0tKiyV-rmDL9Er10kOW3YbYsX0goDy",
+        "05": "1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj",
+        "06": "15KixhpwmFIU3vbLqAVMXLvTwf-XitORD",
+        "07": "1MHnyURqsVfy95ozT0SAY_M6vuxl006u7"
       }
     }
   ],
