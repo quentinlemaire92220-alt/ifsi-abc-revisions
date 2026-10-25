@@ -3,6 +3,7 @@ import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {createHash} from 'node:crypto';
 import {isApprovedPrivateReferenceWithdrawal} from './private-resource-withdrawal-lib.mjs';
 import {validateRevisionSheetChange} from './revision-sheet-supplement-contract.mjs';
+import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -53,6 +54,47 @@ export function validatePublicationApproval(courseId,delivery,digest){
  assert.match(a.bundleSha256||'',/^[a-f0-9]{64}$/,courseId+': empreinte de validation invalide');
  assert.equal(a.bundleSha256,digest,courseId+': le lot a changé après validation. Empreinte attendue : '+digest);
 }
+
+// Une nouvelle ressource audio explicitement approuvée n'invalide pas le package
+// pédagogique d'origine. Le contrat refuse tout changement au-delà des trois
+// métadonnées audio et de la disparition du blocage MP3 correspondant.
+function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,previousManifest,currentManifest){
+ const accepted=validateAudioSupplements(currentManifest,newData);
+ const previousIds=new Set((previousManifest.audioSupplements||[]).flatMap(s=>s.vocalIds||[]));
+ const supplements=(currentManifest.audioSupplements||[]).filter(s=>
+  s.courseId===id && (s.vocalIds||[]).some(vid=>!previousIds.has(vid)));
+ if(supplements.length!==1)return false;
+ const supplement=supplements[0],addIds=new Set(supplement.vocalIds||[]);
+ if(!addIds.size || [...addIds].some(vid=>previousIds.has(vid)||accepted.get(vid)!==supplement))return false;
+ const oldVoice=oldData.vocals.filter(v=>v.courseId===id);
+ const newVoice=newData.vocals.filter(v=>v.courseId===id);
+ if(newVoice.length!==oldVoice.length+addIds.size)return false;
+ if(oldVoice.some(v=>!newVoice.some(n=>n.id===v.id&&JSON.stringify(canonical(n))===JSON.stringify(canonical(v)))))return false;
+ for(const vid of addIds){const v=newVoice.find(v=>v.id===vid);if(!v||!Number.isFinite(v.durationSeconds)||v.durationSeconds<=0||v.durationSeconds>=600)return false;}
+ const oldCourse=oldData.registry.courses.find(c=>c.id===id),newCourse=newData.registry.courses.find(c=>c.id===id);
+ if(!oldCourse||!newCourse)return false;
+ const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];return x;};
+ if(JSON.stringify(canonical(stripAudio(oldCourse)))!==JSON.stringify(canonical(stripAudio(newCourse))))return false;
+ if(newCourse.audioStatus!=='available'||newCourse.audioCount!==newVoice.length
+  ||newCourse.audioFolderUrl!=='https://drive.google.com/drive/folders/'+supplement.folderId)return false;
+ if(JSON.stringify(canonical(prior.publicationApproval))!==JSON.stringify(canonical(delivery.publicationApproval)))return false;
+ const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval'])delete x[k];return x;};
+ if(JSON.stringify(canonical(stripDelivery(prior)))!==JSON.stringify(canonical(stripDelivery(delivery))))return false;
+ const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&b.reason==='awaiting_user_mp3'));
+ if(JSON.stringify(canonical(expectedBlockers))!==JSON.stringify(canonical(delivery.blockers||[])))return false;
+ const expectedVocalIds=[...(prior.vocals||[]),...supplement.vocalIds];
+ if(JSON.stringify(delivery.vocals||[])!==JSON.stringify(expectedVocalIds))return false;
+ const hashes={...(prior.artifactSha256s||{})};
+ for(const vid of supplement.vocalIds){const v=newVoice.find(v=>v.id===vid);hashes[v.driveId]=supplement.artifactSha256s[v.driveId];}
+ if(JSON.stringify(canonical(hashes))!==JSON.stringify(canonical(delivery.artifactSha256s||{})))return false;
+ const oldBundle=publicationBundle(id,prior,oldData),newBundle=publicationBundle(id,delivery,newData);
+ for(const key of Object.keys(oldBundle)){
+  if(['course','vocals','artifactSha256s'].includes(key))continue;
+  if(JSON.stringify(canonical(oldBundle[key]))!==JSON.stringify(canonical(newBundle[key])))return false;
+ }
+ return true;
+}
+
 export function validateChangedDeliveries(before,after,oldData,newData){
  const old=new Map((before.courses||[]).map(c=>[c.courseId,c]));const checked=[];
  for(const delivery of after.courses||[]){
@@ -64,6 +106,10 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   if(delivery.revisionSheetSupplement && JSON.stringify(canonical(delivery.revisionSheetSupplement))!==JSON.stringify(canonical(prior?.revisionSheetSupplement))){
    validateRevisionSheetChange(id,prior,delivery,oldData,newData);
    checked.push({courseId:id,kind:'revision_sheet_only'});
+   continue;
+  }
+  if(prior && isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,before,after)){
+   checked.push({courseId:id,kind:'audio_supplement_only'});
    continue;
   }
   // Une révocation PURE de références privées est permise sans nouveau GO de publication.
