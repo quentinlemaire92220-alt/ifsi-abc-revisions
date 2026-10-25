@@ -1,5 +1,5 @@
 {
-  "version": "8.30.125",
+  "version": "8.30.126",
   "courses": [
     {
       "id": "biomolecules",
@@ -257,7 +257,7 @@
       "nativeSupportAvailable": false,
       "qcmPdfUrl": "https://drive.google.com/file/d/1sMYP1n7oSsHsWxbRh-13vtk8FXVM3HW4/view?usp=drivesdk",
       "audioStatus": "available",
-      "audioCount": 6,
+      "audioCount": 7,
       "additionalDocuments": [
         {
           "label": "Vocabulaire — 14 termes",
@@ -273,7 +273,8 @@
         }
       ],
       "qcmPdfQuestionCount": 44,
-      "authoredFlashcardPresentation": "standalone_v1"
+      "authoredFlashcardPresentation": "standalone_v1",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1wYJ2pJmqATjIejV87ospt9kZju6zqgyf"
     },
     {
       "id": "calculs_doses_mathematiques",
@@ -722,7 +723,7 @@
       "nativeSupportAvailable": false,
       "qcmPdfUrl": "https://drive.google.com/file/d/1NfixMIkErnxA9hvhZOJ9Lb4bNFUQQmxm/view?usp=drivesdk",
       "audioStatus": "available",
-      "audioCount": 5,
+      "audioCount": 6,
       "additionalDocuments": [
         {
           "label": "Vocabulaire — 30 termes",
@@ -738,7 +739,8 @@
         }
       ],
       "qcmPdfQuestionCount": 68,
-      "authoredFlashcardPresentation": "standalone_v1"
+      "authoredFlashcardPresentation": "standalone_v1",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1dNYp-zO3rKEzXGdLGq-TxeTPC5URpk58"
     },
     {
       "id": "administration_medicamenteuse",
@@ -1054,8 +1056,8 @@
       "qcmPdfQuestionCount": 40,
       "flashcardTarget": 40,
       "authoredFlashcards": true,
-      "audioStatus": "awaiting_mp3",
-      "audioCount": 0,
+      "audioStatus": "available",
+      "audioCount": 1,
       "additionalDocuments": [
         {
           "label": "Fiche de révision — Posture professionnelle",
@@ -1068,7 +1070,8 @@
           "type": "flashcards",
           "cardCount": 40
         }
-      ]
+      ],
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1wcg8W6W3L-tvcHVasmH8bTl6E9ci08Kv"
     },
     {
       "id": "d1_bientraitance",
