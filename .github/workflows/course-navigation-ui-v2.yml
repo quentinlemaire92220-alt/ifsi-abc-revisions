@@ -7,6 +7,8 @@ on:
       - 'tests/course-navigation-ui-v2-smoke.mjs'
       - 'tests/course-navigation-ui-v2-browser.mjs'
       - 'tests/fixtures/course-navigation-v2-browser.html'
+      - 'tests/fixtures/course-navigation-v2-full-app.js'
+      - 'tests/course-navigation-ui-v2-full-app.mjs'
       - '.github/workflows/course-navigation-ui-v2.yml'
   workflow_dispatch:
 
@@ -26,3 +28,5 @@ jobs:
         run: node tests/course-navigation-ui-v2-smoke.mjs
       - name: Test Chromium réel — ordre, repli, thèmes, handlers, absence de gel
         run: node tests/course-navigation-ui-v2-browser.mjs
+      - name: Lancement de toute l'application (190 modules) en test local Chromium PC/mobile
+        run: node tests/course-navigation-ui-v2-full-app.mjs
