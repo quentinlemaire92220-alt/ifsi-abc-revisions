@@ -1723,5 +1723,38 @@
     "partId": "p01",
     "partNumber": 1,
     "release": "8.30.110"
+  },
+  {
+    "id": "d1_posture_td2_vocal_01",
+    "courseId": "d1_posture_professionnelle_td2",
+    "course": "Posture professionnelle et contexte de soin — TD2",
+    "number": 1,
+    "title": "Posture relationnelle et adaptation aux situations",
+    "driveId": "1cPOdx0je5ZLLb5fqFAwT6jFvoPQj7ylH",
+    "mime": "audio/mpeg",
+    "durationSeconds": 334.56,
+    "release": "8.30.126"
+  },
+  {
+    "id": "pharmaco_consolidation_20261025",
+    "courseId": "pharmacologie",
+    "course": "Introduction à la pharmacologie",
+    "number": 6,
+    "title": "Complément autonome 1/1 — Consolidation des notions et corrections",
+    "driveId": "14wgc45ehZKBwooCX404Y2KwZFK7IRvL2",
+    "mime": "audio/mpeg",
+    "durationSeconds": 365.14,
+    "release": "8.30.126"
+  },
+  {
+    "id": "neuroinf_consolidation_20261025",
+    "courseId": "infections_neuro_meningees",
+    "course": "Infections neuro-méningées",
+    "number": 7,
+    "title": "Complément autonome 1/1 — Consolidation des notions et corrections",
+    "driveId": "1uD-Y3MX38A1Dn_V6KnLbgHmkeD-4IRZX",
+    "mime": "audio/mpeg",
+    "durationSeconds": 369.12,
+    "release": "8.30.126"
   }
 ]
