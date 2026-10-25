@@ -9,6 +9,7 @@ if(spawnSync('git',['cat-file','-e',base+'^{commit}']).status!==0)throw Error('B
 process.env.IFSI_BASE_SHA=base;
 const n=process.execPath,py=process.env.IFSI_PYTHON||'python';
 const commands=[
+ ['graphic_contract',py,['tests/pdf-graphics-v2-test.py']],
  ['pedagogical_contract',n,['tests/qcm-autonomy-contract-test.mjs']],
  ['pedagogical_contract',n,['tests/qcm-bank-contract-test.mjs']],
  ['pedagogical_contract',n,['tests/course-bank-current.mjs',stage]],
@@ -16,6 +17,7 @@ const commands=[
 ];
 if(stage==='publication')commands.push(
  ['pedagogical_contract',n,['tests/qcm-autonomy-changed.mjs']],
+ ['graphic_contract',py,['tools/pdf-graphics-v2-batch.py','--base',base]],
  ['pdf_bank_bytes',py,['tools/pdf-bank-coherence.py']],
  ['pdf_bank_bytes',n,['tests/posture-td2-publication-gate.mjs']],
  ['technical_release',n,['tests/public-artifact-contract-test.mjs']],
