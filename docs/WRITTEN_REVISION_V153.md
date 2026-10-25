@@ -1,3 +1,7 @@
+## RENFORCEMENT PILOTE V2 — CONTRÔLE GRAPHIQUE RÉEL (25/10/2026)
+
+Lire `docs/GRAPHIC_QA_V2.md`. Avant chaque nouvelle publication, inspecter les **octets PDF** et toutes leurs pages par `tools/pdf_graphic_contract_v2.py` : les bandeaux, la typographie, les débordements/chevauchements, les encadrés QCM, leurs cases placées à gauche des réponses et la structure finale du lexique. Le contrôle mécanique ne remplace ni la comparaison humaine au maître Communication V5.3, ni la relecture pédagogique, ni le GO sur le lot exact. Les TNR complets restent obligatoires ; les anciens supports demeurent intacts.
+
 ## PRIORITÉ 24/10/2026 — PRÉPARATION SÉPARÉE DES SUPPORTS PUBLIÉS
 
 Complément de contrôle : [préflight avant PR et publication](COURSE_PREFLIGHT.md), avec contrats QCM autonomes, cohérence PDF/banques/empreintes, version/cache/assets, QA pédagogique distincte de la QA technique et TNR complets toujours bloquants. Aucun contrôle automatique n’inscrit une approbation humaine.
