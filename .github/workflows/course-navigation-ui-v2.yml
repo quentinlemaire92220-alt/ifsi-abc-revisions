@@ -1,0 +1,28 @@
+name: UI Cours V2 — Test navigateur avant validation
+
+on:
+  pull_request:
+    paths:
+      - 'course-navigation-ui-v2.js'
+      - 'tests/course-navigation-ui-v2-smoke.mjs'
+      - 'tests/course-navigation-ui-v2-browser.mjs'
+      - 'tests/fixtures/course-navigation-v2-browser.html'
+      - '.github/workflows/course-navigation-ui-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-course-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test sans navigateur — mutations et arrêt sur erreur
+        run: node tests/course-navigation-ui-v2-smoke.mjs
+      - name: Test Chromium réel — ordre, repli, thèmes, handlers, absence de gel
+        run: node tests/course-navigation-ui-v2-browser.mjs
