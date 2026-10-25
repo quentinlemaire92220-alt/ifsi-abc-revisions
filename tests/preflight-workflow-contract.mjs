@@ -10,6 +10,10 @@ for(const command of tests(prior))assert.ok(tests(current).includes(command),'Co
 assert.ok(!/continue-on-error:\s*true/.test(current),'TNR doit rester bloquant');
 assert.ok(current.includes('if: ${{ !cancelled() }}'),'Les contrôles restants doivent tourner après échec');
 assert.ok(current.includes('--stage preparation')&&current.includes('--stage publication'));
+assert.ok(current.includes('python tests/pdf_graphic_contract_v2_test.py'),'Tests adversariaux de QA graphique V2 absents du TNR');
+assert.ok(current.includes('python tools/pdf_graphic_contract_v2.py --all-published'),'Inspection réelle des pages PDF manquante du TNR');
+const preflight=fs.readFileSync('tools/course-preflight.mjs','utf8');
+assert.ok(preflight.includes("'graphic_layout'")&&preflight.includes('pdf_graphic_contract_v2.py'),'Contrôle graphique absent du préflight publication');
 assert.ok(current.includes('cache-dependency-path: tools/ci-pdf-requirements.txt'));
 assert.match(current,/name: Configurer Python pour les contrôles PDF\n\s+if: \$\{\{ !cancelled\(\) \}\}\n\s+uses: actions\/setup-python@v5/,
  'Le runtime Python doit être configuré même après un premier échec pédagogique');
