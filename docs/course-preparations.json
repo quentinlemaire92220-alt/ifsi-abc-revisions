@@ -1,4 +1,48 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": []
+  "courses": [
+    {
+      "courseId": "d1_bientraitance",
+      "lifecycle": "preparation",
+      "validated": false,
+      "studentPublication": false,
+      "approval": null,
+      "label": "D1.1 S1 — La bientraitance, de quoi parle-t-on ?",
+      "pilot": "workflow_graphic_v2",
+      "addedAt": "2026-10-25",
+      "sourceBasis": "transcription orale privée, terminée par un échange de fin de séance",
+      "sourceAudit": {
+        "officialSupport": "not_supplied",
+        "oralStatus": "unverified",
+        "recordingTailTruncated": false,
+        "oralCoverageExhaustive": false,
+        "scientificReview": "not_started",
+        "lexiconReview": "pending",
+        "scope": "oral_only",
+        "externalSourcesUsed": false,
+        "uncertainties": [
+          "support officiel écrit non retrouvé",
+          "termes care/cure ambigus dans la transcription",
+          "vidéo(s) de cas non accessibles séparément"
+        ]
+      },
+      "artifacts": {
+        "questions": 0,
+        "flashcards": 0,
+        "glossaryTerms": 0,
+        "vocalMp3": 0,
+        "writtenPdfPrivate": 0
+      },
+      "qa": {
+        "graphicV2": "pending",
+        "pageReview": "pending",
+        "subjectMatter": "pending"
+      },
+      "blockers": [
+        "support écrit manquant",
+        "revue pédagogique et visuelle non validée"
+      ],
+      "notes": "Pilote V2 privé ; reste À traiter. Aucun QCM ni PDF ni source Drive exposé dans l’application."
+    }
+  ]
 }
