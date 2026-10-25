@@ -563,8 +563,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-25T17:40:00+01:00",
-        "bundleSha256": "13559f6d1bb1350ba2e1b71f10ef985e22cf072a9720b9bee89d1fb8f018c01a"
+        "approvedAt": "2026-10-19T08:19:23.101130+00:00",
+        "bundleSha256": "12503be74b96751815ef21e847bd4061b6d00867d0d1c7ffb190caa0e6dd6be8"
       },
       "visualAudit": {
         "status": "PASS",
@@ -898,8 +898,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-25T17:40:00+01:00",
-        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        "approvedAt": "2026-10-19T08:19:23.568476+00:00",
+        "bundleSha256": "342cc422b5b74c0c073b8f55f8e405253a531b375fbacb4afc4249dabdcb6eb1"
       },
       "visualAudit": {
         "status": "PASS",
@@ -2174,8 +2174,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-25T17:40:00+01:00",
-        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "approvedAt": "2026-10-24T22:01:49Z",
+        "bundleSha256": "2363f12d4b6865ba42d74371127d2736a35cfde8fa4e5d7441403274a6a0be74",
         "mergeDeploymentCondition": "all_tnr_green"
       },
       "publicArtifacts": {
