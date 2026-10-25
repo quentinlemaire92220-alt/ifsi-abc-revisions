@@ -1,3 +1,7 @@
+# NOUVELLE QA GRAPHIQUE V2 — PRÉFLIGHT RÉEL (25/10/2026)
+
+Pour tout nouveau PDF `written_v1`, appliquer aussi `docs/GRAPHIC_QA_V2.md`. Exécuter le contrôle Python sur les octets du PDF local AVANT PR (y compris prévisualisation privée de chaque page) ; le préflight de publication et les TNR inspectent ensuite chaque PDF écrit effectivement versionné sous `assets/`. Conserver la validation graphique humaine sur les octets exacts, la revue des contenus et le GO distinct. Ne jamais assimiler un PASS de métadonnées à une validation visuelle ou scientifique. Les anciens cours ne sont pas migrés ; aucun assouplissement des TNR existants.
+
 # RÈGLE PRIORITAIRE SUPPORTS FINALS — 24/10/2026
 
 Avant PR et publication, appliquer `docs/COURSE_PREFLIGHT.md`. Exécuter les préflights de préparation et de publication, puis conserver tous les TNR complets et bloquants. Séparer la revue pédagogique, les vérifications techniques et l’autorisation du lot final ; ne jamais réécrire automatiquement une approbation après correction. Contrôler PDF/banques/empreintes, versions, cache/SW et présence des assets. Toute source tronquée reste signalée ; archivage seulement après déploiement réellement vérifié.
