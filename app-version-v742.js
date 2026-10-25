@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.123';
+const VERSION='8.30.124';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : Bientraitance PROVISOIRE : fiche, 40 QCM et 40 flashcards disponibles; support officiel écrit manquant.`;
+const READY=`Application prête • V${VERSION} : PDF QCM rangés dans la rubrique QCM ; banques et cours conservés.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}

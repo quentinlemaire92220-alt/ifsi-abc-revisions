@@ -1,5 +1,5 @@
 {
-  "version": "8.30.123",
+  "version": "8.30.124",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire V8.30.123 : 54 cours / 71 fiches. Nouveau cours D1.1 Bientraitance affiché PROVISOIRE sur la seule transcription orale ; support officiel et vidéos manquants. Les anciens cours et leurs fichiers restent inchangés.",
+  "note": "Inventaire V8.30.124 : classement des fichiers PDF QCM sous la rubrique QCM, sans modification des contenus ni des cours existants.",
   "expectedTotals": {
     "courses": 54,
     "sheets": 71,
