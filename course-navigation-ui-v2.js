@@ -431,6 +431,7 @@
       applyDetail();
       applyIcons(gridRoot);
       applyIcons(detailRoot);
+      if (window.IFSI_COURSE_COMPACT) window.IFSI_COURSE_COMPACT.apply();
       refreshCount++;
     } catch (error) {
       disabled = true;
@@ -476,4 +477,170 @@
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, {once: true});
   else boot();
+})();
+
+/* Présentation compacte des cours selon la maquette validée.
+ * Les éléments d'origine sont déplacés, jamais clonés : liens et écouteurs conservés.
+ */
+(function () {
+  'use strict';
+  var sequence = 0;
+  var sheet = document.createElement('style');
+  sheet.textContent = `
+  #v74CourseDetail{max-width:760px;margin:0 auto;padding-bottom:96px}
+  #v74CourseDetail .v74-course-head{background:transparent;border:0;box-shadow:none;padding:0 4px 10px;border-radius:0}
+  #v74CourseDetail .v74-back{border:0;background:transparent;padding:4px 0;min-height:36px;box-shadow:none;font-weight:600;font-size:12px;color:var(--muted)}
+  #v74CourseDetail .v74-course-head h2{font-size:24px;line-height:1.23;letter-spacing:-.5px;margin:8px 0;color:#19143f}
+  #v74CourseDetail .v74-course-head>.row{display:block}
+  #v74CourseDetail .v74-course-head>.row>div>.small{display:none}
+  #v74CourseDetail .mku-path{margin:0 0 4px;font-size:11px;color:var(--muted)}
+  #v74CourseDetail .mku-path>summary{display:inline-flex;align-items:center;min-height:32px;cursor:pointer;list-style:none;color:#6841b7;background:#ece3ff;border-radius:5px;padding:2px 7px;font-weight:750}
+  #v74CourseDetail .mku-path>summary::-webkit-details-marker,#v74CourseDetail .mku-progress>summary::-webkit-details-marker{display:none}
+  #v74CourseDetail .mku-path .v8430-path{margin:6px 0;font-size:11px;line-height:1.4}
+  #v74CourseDetail .mku-progress{margin:3px 0 0;color:var(--muted);font-size:11px}
+  #v74CourseDetail .mku-progress>summary{cursor:pointer;list-style:none;min-height:32px;display:flex;align-items:center;gap:6px;width:max-content;max-width:100%}
+  #v74CourseDetail .mku-progress>summary::after{content:'⌄';font-size:14px}
+  #v74CourseDetail .mku-progress .v74-course-meta{margin:5px 0;gap:5px}
+  #v74CourseDetail .v8430-course-status{margin:10px 0 3px}
+  .v8430-provisional{background:#fff0d8!important;color:#99500d!important;border-color:#f4d3a3!important;border-radius:9px!important;font-weight:650!important}
+  .v8430-provisional::after{content:' ⓘ';font-size:13px;margin-left:6px}
+  #v74CourseDetail .v8430-provisional{font-size:11px;padding:3px 9px;min-height:32px}
+  #v74CourseDetail .mku-resources-title{display:flex;gap:9px;align-items:center;margin:10px 0 12px;font-size:17px;color:#19143f}
+  #v74CourseDetail .mku-resources-title .mku-stack{color:#8553dc;background:#eee5ff;border-radius:50%;width:30px;height:30px;display:inline-grid;place-items:center;font-size:22px}
+  #v74CourseDetail .mku-resources-title small{margin-left:auto;color:var(--muted);font-size:10px;font-weight:500}
+  #v74CourseDetail .v74-resource-block.mku-resource{margin:8px 0 0;padding:0!important;border:1px solid #e8e1f3;border-radius:16px;background:#fff;box-shadow:0 3px 10px #34225b03;overflow:hidden}
+  #v74CourseDetail .mku-resource>.row{display:block;gap:0;margin:0;padding:0}
+  #v74CourseDetail .mku-toggle{font:inherit;color:inherit;width:100%;border:0;background:transparent;text-align:left;display:grid;grid-template-columns:23px 46px minmax(0,1fr) 16px;align-items:center;gap:10px;padding:13px 12px;cursor:pointer;min-height:83px;border-radius:15px;box-shadow:none}
+  #v74CourseDetail .mku-toggle:hover{background:#fbf9ff}
+  #v74CourseDetail .mku-toggle:focus-visible{outline:3px solid #8c5bd5;outline-offset:-3px}
+  #v74CourseDetail .mku-number{font-size:12px;font-weight:750;color:#4d4172;background:#f1edf8;display:grid;place-items:center;width:22px;height:25px;border-radius:50%}
+  #v74CourseDetail .mku-icon{width:46px;height:52px;display:grid;place-items:center;border-radius:12px;background:var(--mku-bg);color:var(--mku-ink)}
+  #v74CourseDetail .mku-icon svg{width:31px;height:34px;filter:drop-shadow(0 3px 3px #0000000c)}
+  #v74CourseDetail .mku-copy{display:flex;flex-direction:column;min-width:0;gap:4px}
+  #v74CourseDetail .mku-copy b{font-size:14px;line-height:1.25;color:#19143f;display:block;font-weight:750}
+  #v74CourseDetail .mku-copy b .v8433-emoji{display:none}
+  #v74CourseDetail .mku-subtitle{font-size:11px;color:#74698c;line-height:1.35}
+  #v74CourseDetail .mku-chevron{font-size:23px;line-height:1;color:#8a78a7;text-align:center;transform-origin:center}
+  #v74CourseDetail .mku-toggle[aria-expanded=true] .mku-chevron{transform:rotate(90deg)}
+  #v74CourseDetail .mku-toggle:disabled{opacity:1;cursor:default}
+  #v74CourseDetail .mku-resource.mku-primary{border-color:#c7adff;background:#f7f2ff}
+  #v74CourseDetail .mku-primary .mku-toggle:hover{background:#f2ebff}
+  #v74CourseDetail .mku-primary .mku-number{background:#ae87e5;color:white}
+  #v74CourseDetail .mku-awaiting{display:inline-flex;align-items:center;gap:4px;color:#99500d;background:#fff0d8;border-radius:6px;padding:3px 6px;font-size:10px;font-weight:650;width:max-content}
+  #v74CourseDetail .mku-panel{padding:0 13px 14px;border-top:1px solid #eee7f7}
+  #v74CourseDetail .mku-panel[hidden]{display:none!important}
+  #v74CourseDetail .mku-panel .v74-resource-list{margin-top:10px}
+  #v74CourseDetail .mku-complements-title{font-size:11px;letter-spacing:.02em;color:var(--muted);font-weight:650;margin:19px 3px 8px}
+  #v74CourseDetail .mku-extra .mku-toggle{grid-template-columns:23px 38px minmax(0,1fr) 16px;min-height:72px}
+  #v74CourseDetail .mku-extra .mku-icon{width:38px;height:44px}
+  #v74CourseDetail .mku-extra .mku-icon svg{width:26px;height:28px}
+  #v74CourseDetail .mku-extra .mku-number{font-size:16px;background:transparent}
+  #v74CourseDetail .mku-extra .mku-copy b{font-size:13px}
+  #v74CourseGrid .v74-course-tile{border-color:#e8e1f3;border-radius:18px;box-shadow:0 5px 16px #36245106;background:#fff}
+  #v74CourseGrid .v74-course-tile>.v74-course-card{display:grid;grid-template-columns:62px minmax(0,1fr) 12px;grid-template-rows:auto auto auto;gap:4px 11px;padding:12px 12px 8px;align-items:center}
+  #v74CourseGrid .mku-thumbnail{grid-column:1;grid-row:1/span 3;width:62px;height:76px;border-radius:12px;background:var(--mku-thumb,#f0e6ff);display:grid;place-items:center;font-family:'Segoe UI Emoji',sans-serif;font-size:36px}
+  #v74CourseGrid .v74-course-card>.row{grid-column:2;grid-row:1;justify-content:flex-start;gap:6px;flex-wrap:wrap;font-size:10px;min-width:0}
+  #v74CourseGrid .v74-course-card>.row>.v74-count{display:none}
+  #v74CourseGrid .v74-course-card>.row>.badge{font-size:9px;padding:1px 4px;border-radius:5px;background:transparent;color:var(--muted)}
+  #v74CourseGrid .mku-code{background:#ece3ff;color:#6945b9;padding:2px 5px;font-size:10px;border-radius:4px;font-weight:750}
+  #v74CourseGrid .v74-course-card h3{grid-column:2;grid-row:2;font-size:14px;line-height:1.35;margin:0;color:#19143f}
+  #v74CourseGrid .v74-course-card>.v74-master{grid-column:2;grid-row:3;margin:3px 0 0;height:5px}
+  #v74CourseGrid .mku-card-chevron{grid-column:3;grid-row:2;font-size:24px;color:#84709f}
+  #v74CourseGrid .v8433-card-actions{padding:0 12px 9px 85px;gap:5px;border:0;position:relative}
+  #v74CourseGrid .v8433-card-actions .btn,#v74CourseGrid .v8433-card-actions .v74-tile-support{font-size:11px!important;min-height:32px!important;padding:4px 6px!important;border:0;background:transparent;box-shadow:none;color:#6d46b8;line-height:1.2}
+  #v74CourseGrid .v8433-card-actions .btn .v8433-emoji,#v74CourseGrid .v8433-card-actions .v74-tile-support .v8433-emoji{width:13px;height:13px;font-size:12px;margin-right:3px}
+  #v74CourseGrid .v8433-card-actions .v8430-provisional{font-size:10px;margin-left:0;min-height:32px;padding:3px 6px}
+  #v74CourseGrid .mku-card-info{font-size:11px;color:var(--muted);width:32px;margin-left:auto}
+  #v74CourseGrid .mku-card-info>summary{cursor:pointer;min-height:32px;display:flex;align-items:center;justify-content:center;gap:4px;list-style:none;font-size:0;border-radius:7px}
+  #v74CourseGrid .mku-card-info>summary::before{content:'ⓘ';font-size:16px}
+  #v74CourseGrid .mku-card-info>summary::-webkit-details-marker{display:none}
+  #v74CourseGrid .mku-card-info>summary:focus-visible{outline:3px solid var(--p);outline-offset:-2px}
+  #v74CourseGrid .mku-card-info[open]{width:100%;margin-left:0}
+  #v74CourseGrid .mku-card-info[open]>summary{font-size:10px;justify-content:flex-start}
+  #v74CourseGrid .mku-card-info .v74-course-meta{margin:0;padding:5px 0}
+  #v74CourseGrid .mku-card-info .v74-pill{font-size:9px}
+  body.v72-dark #v74CourseDetail .v74-course-head h2,body.v72-dark #v74CourseDetail .mku-copy b,body.v72-dark #v74CourseDetail .mku-resources-title,body.v72-dark #v74CourseGrid .v74-course-card h3{color:#f4f0fb}
+  body.v72-dark #v74CourseDetail .mku-resource,body.v72-dark #v74CourseGrid .v74-course-tile{background:#211e2a;border-color:#3b3548}
+  body.v72-dark #v74CourseDetail .mku-primary{background:#30263f;border-color:#745096}
+  body.v72-dark #v74CourseDetail .mku-toggle:hover{background:#30273f}
+  body.v72-dark #v74CourseDetail .mku-panel{border-color:#3b3548}
+  body.v72-dark #v74CourseDetail .mku-subtitle{color:#bcb1ce}
+  body.v72-dark .v8430-provisional,body.v72-dark #v74CourseDetail .mku-awaiting{background:#483120!important;color:#ffce91!important;border-color:#74543b!important}
+  body.v72-dark #v74CourseDetail .mku-path>summary,body.v72-dark #v74CourseDetail .mku-number,body.v72-dark #v74CourseGrid .mku-code{background:#3a2c50;color:#d9c3ff}
+  body.v72-dark #v74CourseDetail .mku-primary .mku-number{background:#9566ce;color:white}
+  body.v72-dark #v74CourseGrid .mku-thumbnail{background:#3a2c50}
+  body.v72-dark #v74CourseGrid .v8433-card-actions .v74-tile-support{background:transparent;border:0;color:#d9c3ff}
+  @media(min-width:800px){#v74CourseDetail{padding-top:12px}#v74CourseDetail .mku-toggle{padding:14px 20px;grid-template-columns:28px 54px minmax(0,1fr) 20px;gap:16px;min-height:90px}#v74CourseDetail .mku-copy b{font-size:16px}#v74CourseDetail .mku-subtitle{font-size:12px}#v74CourseDetail .mku-panel{padding:0 22px 18px}#v74CourseDetail .v74-course-head h2{font-size:29px}}
+  @media(max-width:690px){#v74CourseGrid .v8433-card-actions .btn,#v74CourseGrid .v8433-card-actions .v74-tile-support,#v74CourseGrid .v8433-card-actions .v8430-provisional,#v74CourseGrid .mku-card-info>summary{min-height:44px!important}#v74CourseGrid .mku-card-info:not([open]){width:44px}#v74CourseDetail .v74-back{min-height:44px}#v74CourseDetail .mku-path>summary,#v74CourseDetail .mku-progress>summary,#v74CourseDetail .v8430-provisional{min-height:36px}}
+  `;
+  function el(tag, cls, text) {var e=document.createElement(tag);e.className=cls;if(text!==undefined)e.textContent=text;return e;}
+  function fold(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
+  function icon(kind){
+    var symbol=kind==='quiz'?'<path d="M12 6h12v4H12z" fill="white" opacity=".7"/><path d="m12 22 4 4 9-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>':
+      kind==='image'?'<rect x="8" y="10" width="22" height="20" rx="2" fill="white" opacity=".85"/><circle cx="23" cy="16" r="3" fill="currentColor"/><path d="m10 28 7-10 6 8 3-4 3 6" fill="currentColor"/>':
+      kind==='vocal'?'<rect x="14" y="6" width="10" height="19" rx="5" fill="white"/><path d="M10 19v3a9 9 0 0 0 18 0v-3M19 31v5m-6 0h12" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>':
+      '<path d="M12 17h14m-14 6h14m-14 6h10" stroke="white" stroke-width="2" stroke-linecap="round" opacity=".85"/>';
+    return '<svg viewBox="0 0 38 42" aria-hidden="true"><path d="M8 3h16l8 8v26a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" fill="currentColor"/><path d="M24 3v6a2 2 0 0 0 2 2h6" fill="white" opacity=".35"/>'+symbol+'</svg>';
+  }
+  function classify(block){
+    var heading=block.querySelector(':scope > .row b');var text=fold(heading?.textContent);
+    if(block.classList.contains('v74-original-support'))return {key:'support',n:1,color:'#a17bd6',bg:'#e9dbff',sub:'Le support officiel du cours.'};
+    if(block.classList.contains('v74-child-supports'))return {key:'parts',n:1,color:'#a17bd6',bg:'#e9dbff',sub:'Les documents officiels par sous-cours.'};
+    if(text.includes('fiches de revision'))return {key:'revision',n:2,color:'#49ac94',bg:'#d9f2ea',sub:'L’essentiel à retenir.'};
+    if(block.classList.contains('v74-qcm-section'))return {key:'quiz',n:3,color:'#ee7094',bg:'#ffe0e9',sub:'Testez vos connaissances.'};
+    if(text.includes('infographie'))return {key:'image',n:4,color:'#e7ae3d',bg:'#fff0cf',sub:'Schémas et visuels synthétiques.'};
+    if(text.includes('vocaux'))return {key:'vocal',n:5,color:'#7d83e5',bg:'#e1e5ff',sub:'Écoutez le cours en version audio.'};
+    if(block.id==='vgCourseEntry')return {key:'vocab',n:'+',color:'#6b9aba',bg:'#e0f0f6',sub:'Définitions, fiche et QCM vocabulaire.'};
+    return {key:'docs',n:'+',color:'#ac84b6',bg:'#f1e4f5',sub:/flashcards/i.test(block.textContent)?'Flashcards et documents complémentaires.':'Autres documents du cours.'};
+  }
+  function detail(){
+    var root=document.getElementById('v74CourseDetail'),head=root?.querySelector('.v74-course-head');if(!head)return;
+    if(!head.querySelector('.mku-path')){
+      var crumb=head.querySelector('.v8430-path');if(crumb){var path=el('details','mku-path');var code=crumb.textContent.match(/›\s*([A-Z]\d)/)?.[1]||'UE';path.appendChild(el('summary','',code));crumb.before(path);path.appendChild(crumb);}
+      var meta=head.querySelector('.v74-course-meta');if(meta){var progress=el('details','mku-progress');var count=head.querySelector(':scope > .row > .badge');progress.appendChild(el('summary','',count?.textContent+' · Progression'));meta.before(progress);progress.appendChild(meta);var bar=head.querySelector('.v74-master');if(bar)progress.appendChild(bar);if(count)progress.appendChild(count);}
+    }
+    var blocks=Array.from(root.querySelectorAll(':scope > .v74-resource-block'));
+    var main=blocks.filter(b=>classify(b).n!=='+');
+    if(!root.querySelector('.mku-resources-title')&&main.length){var title=el('h3','mku-resources-title');title.append(el('span','mku-stack','▱'),el('span','','Ressources du cours'),el('small','',main.length+' rubriques'));blocks[0].before(title);}
+    var extra=blocks.find(b=>classify(b).n==='+');if(extra&&!root.querySelector('.mku-complements-title'))extra.before(el('h3','mku-complements-title','Pour aller plus loin'));
+    blocks.forEach(function(block){
+      if(block.classList.contains('mku-resource'))return;
+      var spec=classify(block),row=block.querySelector(':scope > .row'),heading=row?.querySelector('b');if(!heading)return;
+      var support=spec.key==='support',waiting=support&&/Support officiel en attente/.test(block.textContent);
+      var hasAccess=!!block.querySelector('a[href],button,.vg-actions');
+      var button=el('button','mku-toggle');button.type='button';button.setAttribute('aria-expanded','false');
+      var panel=el('div','mku-panel');panel.id='mku-panel-'+(++sequence);panel.hidden=true;button.setAttribute('aria-controls',panel.id);
+      var visual=el('span','mku-icon');visual.style.setProperty('--mku-bg',spec.bg);visual.style.setProperty('--mku-ink',spec.color);visual.innerHTML=icon(spec.key);
+      var copy=el('span','mku-copy'),subtitle=el('span','mku-subtitle',waiting?'Support officiel en attente.':spec.sub);
+      // Préserver le titre complet et les métadonnées originaux pour l'accessibilité.
+      heading.title=heading.textContent;copy.appendChild(heading);
+      if(support)heading.textContent='Support du cours';
+      else if(spec.key==='docs')heading.textContent=/flashcards/i.test(block.textContent)?'Documents et flashcards':'Documents du cours';
+      copy.appendChild(subtitle);
+      if(waiting){var state=el('span','mku-awaiting','En attente');copy.appendChild(state);}
+      button.append(el('span','mku-number',String(spec.n)),visual,copy,el('span','mku-chevron',hasAccess?'›':'—'));
+      var originalCount=row.querySelector('.badge');if(originalCount)panel.appendChild(originalCount);
+      Array.from(block.children).filter(e=>e!==row).forEach(e=>panel.appendChild(e));
+      row.replaceChildren(button);block.appendChild(panel);block.classList.add('mku-resource');
+      if(support)block.classList.add('mku-primary');if(spec.n==='+')block.classList.add('mku-extra');
+      if(!hasAccess)button.disabled=true;
+      button.addEventListener('click',function(){panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden));});
+    });
+  }
+  function catalog(){
+    document.querySelectorAll('#v74CourseGrid .v74-course-tile').forEach(function(tile){
+      var card=tile.querySelector('.v74-course-card'),actions=tile.querySelector('.v8433-card-actions');if(!card||!actions||card.querySelector('.mku-thumbnail'))return;
+      var title=fold(card.querySelector('h3')?.textContent),emoji=/relation|communication|bientraitance/.test(title)?'🤝':/droit|legislation|responsabilite|ethique|judiciaire/.test(title)?'⚖️':/pharmac|medicament/.test(title)?'💊':/cardio|sang|hemato/.test(title)?'🫀':/respir|infect/.test(title)?'🫁':/sante publique|environnement/.test(title)?'🌍':/psych|neuro/.test(title)?'🧠':'🩺';
+      var thumb=el('span','mku-thumbnail',emoji);thumb.setAttribute('aria-hidden','true');card.prepend(thumb);card.appendChild(el('span','mku-card-chevron','›'));
+      var code=tile.closest('.v74-ue-group')?.querySelector('.v74-ue-code')?.textContent;if(code)card.querySelector('.row')?.prepend(el('span','mku-code',code.replace(/^UE\s*/,'')));
+      var open=actions.querySelector('.v8433-course-open');if(open)Array.from(open.childNodes).filter(n=>n.nodeType===3).forEach(n=>n.nodeValue=' Ouvrir');
+      var meta=card.querySelector('.v74-course-meta');if(meta){var info=el('details','mku-card-info'),more=el('summary','','Ressources et progression');more.title='Ressources et progression';more.setAttribute('aria-label','Ressources et progression du cours');info.appendChild(more);var score=card.querySelector('.v74-count');if(score)info.appendChild(score);info.appendChild(meta);actions.appendChild(info);}
+    });
+  }
+  // Même passe que la V2, observateurs suspendus : aucun second cycle de mutations.
+  window.IFSI_COURSE_COMPACT = {apply: function () {
+    if (!sheet.isConnected) document.head.appendChild(sheet);
+    detail();
+    catalog();
+  }};
 })();
