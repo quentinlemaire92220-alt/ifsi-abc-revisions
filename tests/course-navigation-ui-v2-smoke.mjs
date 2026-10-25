@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 
-const src=fs.readFileSync('course-navigation-ui-v2.js','utf8');
+const src=fs.readFileSync('tests/fixtures/course-navigation-ui-v2.js','utf8');
 const published=fs.readFileSync('index.html','utf8');
 const serviceWorker=fs.readFileSync('sw.js','utf8');
 const registry=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8'));
@@ -78,7 +78,7 @@ function bootFixture({throwOnDetail=false,missingRoot=false}={}){
     },
     Set,Array,Object,String
   };
-  vm.runInNewContext(src,sandbox,{filename:'course-navigation-ui-v2.js',timeout:2000});
+  vm.runInNewContext(src,sandbox,{filename:'tests/fixtures/course-navigation-ui-v2.js',timeout:2000});
   const api=sandbox.window.IFSI_COURSE_NAV_UI;
   const flush=()=>{let count=0;while(frames.length){if(++count>8)throw Error('Boucle de raf détectée');frames.shift()()}return count};
   return {api,frames,listeners,observations,errors,flush,trigger:target=>observer?.trigger(target),grid,detail,observer:()=>observer};
