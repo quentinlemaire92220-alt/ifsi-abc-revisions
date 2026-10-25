@@ -538,7 +538,10 @@
         "Arthrose"
       ],
       "showInCourses": false,
-      "officialSupportUrl": "https://drive.google.com/file/d/1YrUp3E6KH_kFAMYjyQQRiLHQyrYxm-JS/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1YrUp3E6KH_kFAMYjyQQRiLHQyrYxm-JS/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1Nt6JsCqOl1klMPqbEpJSh8Fpfn1uRk3e"
     },
     {
       "id": "chirurgie_orthopedique",
@@ -551,7 +554,10 @@
         "Chirurgie orthopédique"
       ],
       "showInCourses": false,
-      "officialSupportUrl": "https://drive.google.com/file/d/1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1iHpfzotgrvRQmuM0CUKTiMnyFGfXtoF8/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1W8JSbXo5UwNyUZRe9rWvYD3cSeiTXQFI"
     },
     {
       "id": "rhumatismes_inflammatoires",
@@ -564,7 +570,10 @@
         "Rhumatismes inflammatoires"
       ],
       "showInCourses": false,
-      "officialSupportUrl": "https://drive.google.com/file/d/1ofAsnkF1LIObs2UYcELJi7VEQh-E7pHG/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1ofAsnkF1LIObs2UYcELJi7VEQh-E7pHG/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1R4WdK28oN6ljNWtQlallB0crBk46C7iS"
     },
     {
       "id": "pathologies_microcristallines_osteoporose",
@@ -579,7 +588,10 @@
         "Rhumatologie"
       ],
       "showInCourses": false,
-      "officialSupportUrl": "https://drive.google.com/file/d/1ix4o7tO3MuVvJfBiPlbq1YhkAXIw9wWC/view"
+      "officialSupportUrl": "https://drive.google.com/file/d/1ix4o7tO3MuVvJfBiPlbq1YhkAXIw9wWC/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1-suZ6V3_d7wdG7i5zoW9cQCboO8_trx3"
     },
     {
       "id": "competences_psychosociales",
@@ -1016,8 +1028,8 @@
       "qcmPdfQuestionCount": 50,
       "flashcardTarget": 40,
       "authoredFlashcards": true,
-      "audioStatus": "awaiting_mp3",
-      "audioCount": 0,
+      "audioStatus": "available",
+      "audioCount": 2,
       "additionalDocuments": [
         {
           "label": "Support officiel — TD1 du 20 octobre 2026",
@@ -1035,7 +1047,8 @@
           "type": "flashcards",
           "cardCount": 40
         }
-      ]
+      ],
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1R59F8OPjRlNvk3tMfxmOrzTWQ7LJOc9h"
     },
     {
       "id": "d1_posture_professionnelle_td2",
