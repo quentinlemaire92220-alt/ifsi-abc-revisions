@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+
+const html=fs.readFileSync('depannage/reparer-cache.html','utf8');
+const sw=fs.readFileSync('sw.js','utf8');
+assert.match(html,/<title>IFSI ABC — Réparer le cache<\/title>/);
+assert.match(html,/type="button" id="repair"/);
+assert.match(html,/startsWith\('ifsi-abc-v'\)/,'Ne supprimer que les caches IFSI ABC');
+assert.match(html,/registration\.scope===root\.href/,'Ne désactiver que le service worker du projet');
+assert.match(html,/await caches\.delete\(cacheNames\[j\]\)/);
+assert.match(html,/getRegistrations\(\)/);
+assert.match(html,/localStorage\.getItem\(key\)/,'La sauvegarde locale doit rester possible');
+assert.doesNotMatch(html,/localStorage\.clear\(|localStorage\.removeItem\(|sessionStorage\.clear\(|indexedDB\.deleteDatabase\(|caches\.keys\(\)\.then\([^)]*caches\.delete/g);
+assert.doesNotMatch(html,/<script[^>]+src=|<link[^>]+href="https?:\/\//,'Page autonome sans modules bloquants');
+const inline=html.match(/<script>([\s\S]*?)<\/script>/);
+assert.ok(inline,'Script de réparation absent');
+new vm.Script(inline[1],{filename:'depannage/reparer-cache.html'});
+assert.match(sw,/e\.request\.mode==='navigate'/);
+assert.match(sw,/e\.respondWith\(fetch\(e\.request,\{cache:'no-store'\}\)\);return;/,'Les routes de dépannage doivent passer au réseau sans brandedIndex');
+console.log('✅ Page de dépannage isolée : syntaxe OK, suppression ciblée, progression préservée');
