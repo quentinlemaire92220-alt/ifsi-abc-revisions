@@ -8,6 +8,14 @@ const driveId = s => s?.driveId || String(s?.url || '').match(/\/file\/d\/([\w-]
 const ok = (v,what) => assert.equal(v,true,what);
 export function validateWrittenDelivery(courseId, delivery, sheets, {requirePublishedVerification=true}={}) {
  const label = courseId + ': ';
+ const provisional=delivery?.provisional===true && delivery?.deliveryMode==='source_limited_first_release';
+ if(provisional){
+  assert.equal(delivery.pedagogicalValidated,false,label+'une source orale ne prouve pas une validation scientifique');
+  assert.equal(delivery.status,'partial',label+'une livraison provisoire doit rester partielle');
+  assert.equal(delivery.publicationHost,'github_pages',label+'seuls des PDF traçables sur Pages sont autorisés');
+  assert.equal(delivery.provisionalReassessmentRequired,true,label+'réévaluation obligatoire absente');
+ }
+
  assert.equal(delivery?.packFormat,'written_v1',label+'packFormat written_v1 attendu');
  assert.ok(delivery.sheetResourceId,label+'fiche écrite unique absente');
  assert.deepEqual(delivery.sheetResourceIds || [delivery.sheetResourceId],[delivery.sheetResourceId],label+'une seule fiche');
@@ -33,8 +41,18 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  assert.ok(id&&urlOK,label+'Drive ID et lien étudiant publiable requis');
  if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
- assert.equal(source?.officialChecked,true,label+'support officiel non contrôlé');
- if(source?.oralStatus==='incomplete_tail') {
+ if(provisional){
+  assert.equal(source?.officialChecked,false,label+'une transcription n’est pas un support officiel');
+  assert.equal(source?.officialSupportMissing,true,label+'absence du support officiel non déclarée');
+  assert.equal(source?.scopedReleaseAccepted,true,label+'provisional non autorisé pour ce périmètre');
+  assert.equal(source?.oralCoverageExhaustive,false,label+'exhaustivité orale supposée');
+  assert.equal(source?.recordingTailTruncated,false,label+'troncature inventée');
+  assert.ok(source?.missingSources?.includes('written_official_support'),label+'source manquante non inventoriée');
+ }else assert.equal(source?.officialChecked,true,label+'support officiel non contrôlé');
+ if(provisional){
+  assert.equal(source?.oralStatus,'unverified',label+'statut oral provisoire inexact');
+  assert.equal(delivery.status,'partial',label+'publication incomplète déclarée complète');
+ }else if(source?.oralStatus==='incomplete_tail') {
   // Autoriser une publication PARTIELLEMENT SOURCÉE et explicitement limitée :
   // aucun faux « complete », aucune prétention à une revue orale exhaustive.
   assert.equal(source.recordingTailTruncated,true,label+'troncature de PT02 non documentée');
@@ -57,7 +75,10 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  assert.equal(cov.coveredEssential,cov.expectedEssential,label+'notions essentielles manquantes');
  ok(cov.explicitVsInferredPrioritiesSeparated,label+'priorités orales explicites et déduites confondues');
  ok(cov.explanationsNotOvercompressed,label+'synthèse trop courte ou nuances sacrifiées');
- assert.equal(cov.disciplinaryReview,'approved',label+'revue disciplinaire manquante');
+ assert.equal(cov.disciplinaryReview,provisional?'provisional_oral_only':'approved',label+'revue disciplinaire annoncée à tort');
+ if(provisional){
+  assert.ok(typeof cov.disciplinaryReviewScope==='string'&&cov.disciplinaryReviewScope.length>25,label+'limite pédagogique non décrite');
+ }
  const pdf=delivery.writtenPdfAudit;
  assert.equal(pdf?.status,'PASS',label+'QA PDF non PASS');
  assert.ok(hash(pdf.pdfSha256),label+'SHA-256 PDF absent');
@@ -83,8 +104,14 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  ok(lex.checked,label+'lexique non vérifié');
  if(requirePublishedVerification){
   const proof=delivery.publishedVerification;
-  assert.equal(proof?.status,'MATCH',label+'preuve publication manquante');
-  assert.equal(proof.source,'authenticated_drive_download',label+'preuve Drive authentifiée absente');
+  if(provisional){
+   assert.equal(proof?.status,'PENDING_DEPLOYMENT',label+'preuve de déploiement à confirmer : ne pas annoncer MATCH');
+   assert.equal(proof.source,'github_pages_file_staged',label+'une copie locale ne prouve pas un fichier distant');
+   assert.equal(delivery.publicArtifacts?.sheet?.sha256,pdf.pdfSha256,label+'SHA PDF Pages absent');
+  }else{
+   assert.equal(proof?.status,'MATCH',label+'preuve publication manquante');
+   assert.equal(proof.source,'authenticated_drive_download',label+'preuve Drive authentifiée absente');
+  }
   assert.equal(proof.pdfSha256?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'SHA publié différent');
  }
  return {written:sheet};

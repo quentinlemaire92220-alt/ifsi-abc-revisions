@@ -1,3 +1,9 @@
+## CONTRÔLE GRAPHIQUE V2 — 25/10/2026
+
+Pour tout **nouveau document écrit**, appliquer aussi [GRAPHIC_QA_V2.md](GRAPHIC_QA_V2.md). Les vérifications portent sur les vrais octets PDF et leurs pages (bandeaux, police, marges, cases A–E, ordre des sections), pas uniquement sur des déclarations QA. Les pages restent à relire sur le rendu visuel, avec validation du propriétaire. Le modèle graphique obligatoire demeure la fiche écrite V5.3 sans images. Le pilote Bientraitance est **privé**, fondé pour l'instant uniquement sur une transcription ; aucun GO de diffusion n'est présumé.
+
+---
+
 ## PRIORITÉ 24/10/2026 — PRÉPARATION SÉPARÉE DES SUPPORTS PUBLIÉS
 
 Complément de contrôle : [préflight avant PR et publication](COURSE_PREFLIGHT.md), avec contrats QCM autonomes, cohérence PDF/banques/empreintes, version/cache/assets, QA pédagogique distincte de la QA technique et TNR complets toujours bloquants. Aucun contrôle automatique n’inscrit une approbation humaine.

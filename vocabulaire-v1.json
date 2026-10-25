@@ -6331,6 +6331,102 @@
         "d1_posture_professionnelle_td2"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-bientraitance-p01",
+      "term": "Bientraitance",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Démarche de soin qui cherche à respecter la personne, ses besoins, ses choix et les effets de l'accompagnement.",
+      "distinction": "Ne se réduit pas à la seule absence de maltraitance.",
+      "etymologie": "Bien + traitance : manière de traiter.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-maltraitance-p01",
+      "term": "Maltraitance",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Attitude ou pratique qui peut porter atteinte à la personne, à ses droits ou à son intégrité.",
+      "distinction": "À distinguer d'une simple maladresse sans écarter l'impact réel.",
+      "etymologie": "Mal + traitance : traiter de manière nuisible.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-vulnerabilite-p01",
+      "term": "Vulnerabilite",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Situation dans laquelle une personne peut avoir besoin d'une protection ou d'une adaptation de l'accompagnement.",
+      "distinction": "Ne signifie pas incapacité totale de décider ou d'exprimer ses préférences.",
+      "etymologie": "Du latin vulnerabilis : qui peut être blessé.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-dignite-p01",
+      "term": "Dignite",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Reconnaissance de la valeur de toute personne, indépendamment de sa dépendance ou de sa maladie.",
+      "distinction": "La dignité ne dépend ni de l'autonomie ni de la réussite d'un soin.",
+      "etymologie": "Du latin dignitas : valeur, mérite.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-intimite-p01",
+      "term": "Intimite",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Dimension personnelle à préserver pendant les soins : corps, pudeur, affaires et espace privés.",
+      "distinction": "Ne concerne pas seulement la nudité.",
+      "etymologie": "Du latin intimus : le plus intérieur.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-autonomie-p01",
+      "term": "Autonomie",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Capacité d'agir et de participer aux choix dans la mesure de ses possibilités.",
+      "distinction": "Aider ne signifie pas systématiquement faire à la place.",
+      "etymologie": "Du grec autos (soi-même) et nomos (règle).",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-consentement-p01",
+      "term": "Consentement",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Accord recherché après information adaptée concernant une intervention ou un accompagnement.",
+      "distinction": "Le silence ou une difficulté de communication ne suffisent pas à prouver l'accord.",
+      "etymologie": "Du latin consentire : sentir avec, être d'accord.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "bientraitance-securite-morale-p01",
+      "term": "Securite morale",
+      "theme": "La bientraitance — D1.1",
+      "definition": "Dimension de la sécurité liée à la considération, au respect, à l'absence de dévalorisation et d'isolement relationnel.",
+      "distinction": "Complète la sécurité physique ; ne s'y substitue pas.",
+      "etymologie": "Sécurité : du latin securitas.",
+      "courseIds": [
+        "d1_bientraitance"
+      ],
+      "sourceType": "reference_pedagogique"
     }
   ]
 }

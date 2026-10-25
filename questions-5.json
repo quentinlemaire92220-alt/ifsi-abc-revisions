@@ -3526,5 +3526,1344 @@
       }
     ],
     "announcedCorrectCount": 3
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_001",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 1,
+    "theme": "Fondements et intentions",
+    "difficulty": "easy",
+    "question": "Quels éléments caractérisent une démarche de bientraitance en soin ?",
+    "choices": [
+      "Centrer le soin sur les besoins de la personne",
+      "Satisfaire uniquement les habitudes du service",
+      "Prendre en compte les proches lorsque c’est pertinent",
+      "Assimiler la bientraitance à la seule politesse",
+      "S’interroger sur les effets de ses décisions"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La bientraitance recherche une réponse adaptée aux besoins de la personne et de son entourage et demande de réfléchir aux effets des actes.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment reconnaître une démarche de bientraitance ?",
+        "answers": [
+          "Respecter la personne dans sa singularité, tenir compte de ses besoins et évaluer l’effet des pratiques."
+        ],
+        "explanation": "La bientraitance recherche une réponse adaptée aux besoins de la personne et de son entourage et demande de réfléchir aux effets des actes."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_002",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 2,
+    "theme": "Fondements et intentions",
+    "difficulty": "easy",
+    "question": "La bientraitance consiste-t-elle uniquement à éviter les violences évidentes ?",
+    "choices": [
+      "Oui, si aucun geste brutal n’est réalisé",
+      "Non, elle demande aussi des actions positives d’accompagnement",
+      "Oui, si les soins sont prescrits",
+      "Oui, si le professionnel est rapide",
+      "Non, elle inclut une réflexion sur le vécu de la personne"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Ne pas maltraiter ne suffit pas : écouter, adapter, faire participer et considérer le vécu donnent un contenu positif à la bientraitance.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la bientraitance va-t-elle au-delà de l’absence de maltraitance ?",
+        "answers": [
+          "Parce qu’elle implique des choix concrets et positifs, centrés sur les besoins et le vécu de la personne."
+        ],
+        "explanation": "Ne pas maltraiter ne suffit pas : écouter, adapter, faire participer et considérer le vécu donnent un contenu positif à la bientraitance."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_003",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 3,
+    "theme": "Fondements et intentions",
+    "difficulty": "medium",
+    "question": "Quelle question correspond à une décision de soin pensée dans une démarche bientraitante ?",
+    "choices": [
+      "Comment terminer le plus vite possible ?",
+      "Quels bénéfices et risques cette décision comporte-t-elle pour la personne ?",
+      "Comment éviter de consulter le patient ?",
+      "Qui imposera le rythme du service ?",
+      "Comment réduire toutes les interactions ?"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La réflexion bénéfices/risques ne porte pas seulement sur la sécurité immédiate : elle inclut aussi l’autonomie, la dignité et la confiance.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle réflexion mener avant une décision de soin restrictive ?",
+        "answers": [
+          "Comparer les bénéfices attendus et les risques pour la sécurité, l’autonomie, la dignité et la confiance."
+        ],
+        "explanation": "La réflexion bénéfices/risques ne porte pas seulement sur la sécurité immédiate : elle inclut aussi l’autonomie, la dignité et la confiance."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_004",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 4,
+    "theme": "Fondements et intentions",
+    "difficulty": "medium",
+    "question": "Quels aspects du bien-être doivent être envisagés dans l’accompagnement ?",
+    "choices": [
+      "Le vécu physique",
+      "Uniquement les constantes mesurées",
+      "Le vécu psychologique",
+      "Uniquement le confort de l’équipe",
+      "Les priorités exprimées par la personne"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’approche décrite dans la séance associe bien-être physique et psychologique et accorde une place essentielle à ce qui compte pour le patient.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels niveaux de bien-être une prise en soin doit-elle considérer ?",
+        "answers": [
+          "Le bien-être physique, psychologique et les priorités propres à chaque personne."
+        ],
+        "explanation": "L’approche décrite dans la séance associe bien-être physique et psychologique et accorde une place essentielle à ce qui compte pour le patient."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_005",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 5,
+    "theme": "Fondements et intentions",
+    "difficulty": "medium",
+    "question": "Une pratique est habituelle dans le service. Quelle attitude est la plus pertinente ?",
+    "choices": [
+      "L’appliquer toujours sans se questionner",
+      "L’évaluer selon les besoins et capacités de la personne",
+      "Écarter la parole de la personne",
+      "La considérer bientraitante du seul fait de son ancienneté",
+      "Accepter de l’ajuster si elle gêne la personne"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Une habitude d’organisation ne garantit pas une pratique adaptée. La bientraitance demande de réexaminer la réponse proposée au regard du patient.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi questionner une habitude de service ?",
+        "answers": [
+          "Parce qu’une pratique habituelle peut ne pas correspondre aux besoins, au rythme ou aux choix d’une personne."
+        ],
+        "explanation": "Une habitude d’organisation ne garantit pas une pratique adaptée. La bientraitance demande de réexaminer la réponse proposée au regard du patient."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_006",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 6,
+    "theme": "Bénéfices, risques et contention",
+    "difficulty": "medium",
+    "question": "Lorsqu’une contention physique est évoquée pour un patient agité, quels éléments doivent être mis en discussion ?",
+    "choices": [
+      "Le bénéfice attendu sur une situation à risque",
+      "L’effet sur les mouvements et l’autonomie",
+      "La suppression systématique de toute réévaluation",
+      "L’effet possible sur la dignité et la confiance",
+      "La seule tranquillité de l’équipe"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le scénario pédagogique de la contention confronte le bénéfice attendu à des atteintes possibles à l’autonomie, à la dignité et à la relation de confiance.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est l’intérêt pédagogique de l’exemple de contention ?",
+        "answers": [
+          "Confronter les bénéfices attendus aux risques physiques, relationnels et éthiques, sans en faire une indication de soin."
+        ],
+        "explanation": "Le scénario pédagogique de la contention confronte le bénéfice attendu à des atteintes possibles à l’autonomie, à la dignité et à la relation de confiance."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_007",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 7,
+    "theme": "Bénéfices, risques et contention",
+    "difficulty": "easy",
+    "question": "Quel effet négatif d’une contention est évoqué pour la personne ?",
+    "choices": [
+      "Une autonomie nécessairement accrue",
+      "Une limitation des mouvements élémentaires",
+      "Une communication automatiquement améliorée",
+      "L’absence de toute atteinte à la dignité",
+      "Une disparition de tous les risques"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Immobiliser une personne peut réduire ses possibilités d’action, y compris pour des gestes simples ; l’analyse doit intégrer cette conséquence.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi une limitation des mouvements compte-t-elle dans le raisonnement éthique ?",
+        "answers": [
+          "Elle peut restreindre l’autonomie et le confort, même si un bénéfice de sécurité est recherché."
+        ],
+        "explanation": "Immobiliser une personne peut réduire ses possibilités d’action, y compris pour des gestes simples ; l’analyse doit intégrer cette conséquence."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_008",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 8,
+    "theme": "Bénéfices, risques et contention",
+    "difficulty": "hard",
+    "question": "Une équipe pense qu’une mesure restrictive la rassurerait. Quelle analyse est correcte ?",
+    "choices": [
+      "Le ressenti de l’équipe suffit à justifier la mesure",
+      "La protection recherchée doit être confrontée aux risques pour le patient",
+      "L’autonomie du patient reste un critère d’analyse",
+      "Le risque relationnel n’a jamais d’importance",
+      "Le bénéfice attendu ne doit pas être tenu pour acquis"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La sécurité de l’équipe ou sa sérénité ne remplacent pas une évaluation centrée sur la personne, ses droits et les effets possibles de la décision.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "La tranquillité de l’équipe peut-elle suffire à justifier un choix restrictif ?",
+        "answers": [
+          "Non. La réflexion est centrée sur les bénéfices et les risques pour la personne et sur la nécessité de réévaluer."
+        ],
+        "explanation": "La sécurité de l’équipe ou sa sérénité ne remplacent pas une évaluation centrée sur la personne, ses droits et les effets possibles de la décision."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_009",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 9,
+    "theme": "Bénéfices, risques et contention",
+    "difficulty": "medium",
+    "question": "Dans une réflexion bénéfices/risques, quelle information est pertinente ?",
+    "choices": [
+      "L’effet possible sur la relation de confiance",
+      "Uniquement le nombre de gestes effectués",
+      "La préférence du professionnel sans autre élément",
+      "L’impossibilité de réviser une décision",
+      "Les capacités restant à la personne"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Le lien de confiance et la préservation des capacités comptent dans l’analyse d’un soin, au même titre que ses effets physiques.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels critères non techniques sont importants pour apprécier un soin ?",
+        "answers": [
+          "La confiance, le vécu, la dignité et les capacités que la personne peut conserver."
+        ],
+        "explanation": "Le lien de confiance et la préservation des capacités comptent dans l’analyse d’un soin, au même titre que ses effets physiques."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_010",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 10,
+    "theme": "Bénéfices, risques et contention",
+    "difficulty": "medium",
+    "question": "Quel statut donner à l’exemple de contention étudié comme situation éthique ?",
+    "choices": [
+      "Un protocole à appliquer à tout patient agité",
+      "Une situation pour discuter des risques et bénéfices",
+      "Une recommandation universelle de restriction",
+      "Une façon de réfléchir à des conséquences contradictoires",
+      "Une décision indépendante des besoins du patient"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le cas sert à faire raisonner les étudiants : il n’autorise pas une conduite clinique standardisée pour les patients agités.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faut-il éviter lorsqu’un exemple clinique sert à un débat éthique ?",
+        "answers": [
+          "Le transformer en protocole ou en consigne universelle sans évaluation propre à la situation."
+        ],
+        "explanation": "Le cas sert à faire raisonner les étudiants : il n’autorise pas une conduite clinique standardisée pour les patients agités."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_011",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 11,
+    "theme": "Personne, singularité et vulnérabilité",
+    "difficulty": "easy",
+    "question": "Une personne soignée trouve essentiel de voir ses proches chaque semaine. Quelle attitude correspond à une approche centrée sur elle ?",
+    "choices": [
+      "Considérer cela comme secondaire parce que non technique",
+      "Intégrer cette priorité dans la compréhension de ses besoins",
+      "Remplacer son avis par celui de l’équipe",
+      "Présumer que tous les patients veulent la même chose",
+      "Explorer comment préserver ce lien"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "La séance souligne que ce qui paraît simple au soignant peut avoir une grande valeur pour la personne et son bien-être.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment respecter la singularité d’une personne soignée ?",
+        "answers": [
+          "Identifier ce qui compte réellement pour elle, sans projeter ses propres priorités."
+        ],
+        "explanation": "La séance souligne que ce qui paraît simple au soignant peut avoir une grande valeur pour la personne et son bien-être."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_012",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 12,
+    "theme": "Personne, singularité et vulnérabilité",
+    "difficulty": "medium",
+    "question": "Face à une personne ayant du mal à exprimer ses besoins, quelles attitudes sont adaptées ?",
+    "choices": [
+      "Rechercher d’autres moyens de communication",
+      "Supposer qu’elle n’a aucun choix",
+      "Préserver ses capacités restantes",
+      "L’exclure systématiquement des décisions",
+      "Prendre le temps d’observer et de vérifier ses réactions"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Une difficulté à communiquer accroît la vigilance nécessaire mais ne supprime ni la dignité ni la recherche des choix et capacités.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "La difficulté à communiquer supprime-t-elle les préférences ?",
+        "answers": [
+          "Non. Le professionnel adapte l’écoute, l’observation et les moyens de communication."
+        ],
+        "explanation": "Une difficulté à communiquer accroît la vigilance nécessaire mais ne supprime ni la dignité ni la recherche des choix et capacités."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_013",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 13,
+    "theme": "Personne, singularité et vulnérabilité",
+    "difficulty": "easy",
+    "question": "Que montre la vulnérabilité dans les situations analysées ?",
+    "choices": [
+      "Un besoin d’attention particulière aux droits et à la considération",
+      "Une incapacité absolue de toute personne concernée à choisir",
+      "Un motif d’infantilisation",
+      "Une raison d’ignorer l’entourage",
+      "Une nécessité d’adapter l’accompagnement"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "La vulnérabilité appelle une protection respectueuse et une adaptation du soin, sans assimiler systématiquement la personne à une incapacité totale.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment la vulnérabilité modifie-t-elle l’attitude professionnelle ?",
+        "answers": [
+          "Elle appelle une vigilance accrue, tout en respectant les capacités, les droits et la parole de la personne."
+        ],
+        "explanation": "La vulnérabilité appelle une protection respectueuse et une adaptation du soin, sans assimiler systématiquement la personne à une incapacité totale."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_014",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 14,
+    "theme": "Personne, singularité et vulnérabilité",
+    "difficulty": "medium",
+    "question": "Une personne en situation de handicap ne peut pas lire sans ses lunettes. Quelle démarche est cohérente ?",
+    "choices": [
+      "Ignorer l’activité puisqu’elle n’est pas médicale",
+      "Vérifier qu’elle dispose de ses lunettes",
+      "Considérer les lunettes comme un outil favorisant l’activité et la communication",
+      "Parler uniquement à l’accompagnant",
+      "Laisser systématiquement les objets utiles hors de portée"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "Le commentaire oral sur la vidéo met en relation les lunettes, la possibilité de lire et la participation à la vie quotidienne.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi un objet personnel comme des lunettes peut-il compter dans le soin ?",
+        "answers": [
+          "Parce qu’il peut préserver une capacité, une activité, l’autonomie ou la communication."
+        ],
+        "explanation": "Le commentaire oral sur la vidéo met en relation les lunettes, la possibilité de lire et la participation à la vie quotidienne."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_015",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 15,
+    "theme": "Personne, singularité et vulnérabilité",
+    "difficulty": "hard",
+    "question": "Une personne vulnérable exprime difficilement son accord. Quelles affirmations sont prudentes ?",
+    "choices": [
+      "Ne pas confondre difficulté d’expression et absence de préférence",
+      "Éviter toute explication puisqu’elle ne répond pas vite",
+      "Rechercher ses signes de compréhension et de confort",
+      "Déduire son consentement du seul silence",
+      "Adapter l’information et le temps laissé à la réponse"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’absence de réponse immédiate ne dispense pas de rechercher une participation adaptée ; la réflexion porte sur le respect des droits et le vécu.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment préserver la place d’une personne qui répond peu ?",
+        "answers": [
+          "Expliquer, observer, laisser du temps et rechercher une forme de participation adaptée."
+        ],
+        "explanation": "L’absence de réponse immédiate ne dispense pas de rechercher une participation adaptée ; la réflexion porte sur le respect des droits et le vécu."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_016",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 16,
+    "theme": "Respect, dignité et autonomie",
+    "difficulty": "easy",
+    "question": "Quels principes la séance présente-t-elle comme centraux pour la bientraitance ?",
+    "choices": [
+      "La dignité de la personne",
+      "L’intimité",
+      "Le respect de l’autonomie",
+      "La priorité automatique du planning",
+      "L’exclusion des proches"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La séance insiste sur la dignité, l’intimité, l’autonomie ainsi que le respect de la personne, de l’entourage et de la sécurité.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les cinq repères mis en avant dans l’enseignement ?",
+        "answers": [
+          "Personne et entourage ; dignité ; intimité ; autonomie ; sécurité physique et morale."
+        ],
+        "explanation": "La séance insiste sur la dignité, l’intimité, l’autonomie ainsi que le respect de la personne, de l’entourage et de la sécurité."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_017",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 17,
+    "theme": "Respect, dignité et autonomie",
+    "difficulty": "medium",
+    "question": "Préserver l’autonomie pendant une toilette signifie notamment :",
+    "choices": [
+      "Laisser faire à la personne ce qu’elle peut réaliser",
+      "Tout faire à sa place pour aller vite",
+      "Lui demander comment elle souhaite être aidée",
+      "Supprimer toute explication",
+      "Adapter l’aide à ses capacités"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La préservation de l’autonomie suppose de rechercher les capacités restantes et de limiter la substitution inutile.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie préserver l’autonomie dans un soin quotidien ?",
+        "answers": [
+          "Favoriser ce que la personne peut faire elle-même, lui proposer une aide proportionnée et respecter son rythme."
+        ],
+        "explanation": "La préservation de l’autonomie suppose de rechercher les capacités restantes et de limiter la substitution inutile."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_018",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 18,
+    "theme": "Respect, dignité et autonomie",
+    "difficulty": "medium",
+    "question": "Quelle situation relève d’une atteinte possible à la sécurité morale ?",
+    "choices": [
+      "Une personne tenue à l’écart de toute conversation la concernant",
+      "Une explication adaptée à la compréhension",
+      "Un temps de réponse respecté",
+      "Une participation aux choix",
+      "Une activité préférée proposée"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’isolement et la non-reconnaissance de la personne peuvent nuire à son sentiment d’exister et à son bien-être moral.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre sécurité physique et sécurité morale ?",
+        "answers": [
+          "La première concerne les dangers corporels ; la seconde inclut l’isolement, la dévalorisation et le vécu relationnel."
+        ],
+        "explanation": "L’isolement et la non-reconnaissance de la personne peuvent nuire à son sentiment d’exister et à son bien-être moral."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_019",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 19,
+    "theme": "Respect, dignité et autonomie",
+    "difficulty": "medium",
+    "question": "Quels comportements favorisent le respect de la dignité ?",
+    "choices": [
+      "Reconnaître la personne au-delà de son handicap",
+      "Employer une appellation respectueuse",
+      "Lui parler comme à un objet de soin",
+      "La mettre à l’écart quand elle ne parle pas",
+      "S’adresser à elle plutôt qu’uniquement à ses proches"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "La dignité se traduit par des gestes et paroles qui reconnaissent la personne comme sujet, même en situation de dépendance.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment se manifeste concrètement le respect de la dignité ?",
+        "answers": [
+          "Regarder, nommer, écouter et inclure la personne dans les échanges et les décisions."
+        ],
+        "explanation": "La dignité se traduit par des gestes et paroles qui reconnaissent la personne comme sujet, même en situation de dépendance."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_020",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 20,
+    "theme": "Respect, dignité et autonomie",
+    "difficulty": "hard",
+    "question": "Une personne peut être à l’abri d’une chute tout en se sentant humiliée. Quelle conclusion est correcte ?",
+    "choices": [
+      "Seule la sécurité physique détermine la qualité du soin",
+      "L’évaluation doit aussi considérer son vécu moral",
+      "La dignité peut être affectée malgré une protection physique",
+      "L’humiliation est toujours sans conséquence",
+      "La sécurité physique et la sécurité morale sont complémentaires"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le soin peut protéger le corps et néanmoins compromettre la dignité ou le sentiment de considération : plusieurs dimensions sont à analyser.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la sécurité physique n’est-elle pas le seul critère ?",
+        "answers": [
+          "Parce que l’autonomie, la dignité et la sécurité morale font également partie de la qualité du soin."
+        ],
+        "explanation": "Le soin peut protéger le corps et néanmoins compromettre la dignité ou le sentiment de considération : plusieurs dimensions sont à analyser."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_021",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 21,
+    "theme": "Communication, intimité et consentement",
+    "difficulty": "easy",
+    "question": "Avant une aide à la toilette, quelles attitudes sont adaptées ?",
+    "choices": [
+      "Se présenter",
+      "Expliquer ce qui est proposé",
+      "Entrer systématiquement sans frapper",
+      "Rechercher l’accord de la personne",
+      "Imposer un geste sans information"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Frapper, se présenter, informer et rechercher le consentement donnent à la personne la place d’actrice de son soin.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles étapes relationnelles précèdent une aide à la toilette ?",
+        "answers": [
+          "Frapper, se présenter, expliquer l’aide envisagée et rechercher l’accord de la personne."
+        ],
+        "explanation": "Frapper, se présenter, informer et rechercher le consentement donnent à la personne la place d’actrice de son soin."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_022",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 22,
+    "theme": "Communication, intimité et consentement",
+    "difficulty": "medium",
+    "question": "Quel problème pose le fait d’appeler systématiquement une personne âgée « mamie » ?",
+    "choices": [
+      "Cela peut être infantilisant",
+      "C’est toujours son appellation préférée",
+      "Cela peut manquer de respect à son identité",
+      "Cela garantit une relation de confiance",
+      "Cela dispense de connaître son nom"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Un surnom familial imposé peut réduire une personne à son âge et ne tient pas compte de l’appellation qu’elle souhaite.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi éviter les appellations familières imposées ?",
+        "answers": [
+          "Elles peuvent infantiliser ou effacer l’identité et les préférences de la personne."
+        ],
+        "explanation": "Un surnom familial imposé peut réduire une personne à son âge et ne tient pas compte de l’appellation qu’elle souhaite."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_023",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 23,
+    "theme": "Communication, intimité et consentement",
+    "difficulty": "medium",
+    "question": "Un professionnel répond à la place d’un patient qui peut s’exprimer. Quelles critiques sont pertinentes ?",
+    "choices": [
+      "La parole du patient est court-circuitée",
+      "Cela peut réduire sa participation",
+      "Cela garantit toujours un recueil fiable",
+      "Cela préserve systématiquement l’autonomie",
+      "Il faut lui laisser la possibilité de répondre"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Répondre à la place de la personne la rend moins visible dans le soin et peut empêcher de connaître son expérience propre.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi éviter de parler à la place d’un patient ?",
+        "answers": [
+          "Parce que son vécu et sa parole doivent être recherchés directement lorsque cela est possible."
+        ],
+        "explanation": "Répondre à la place de la personne la rend moins visible dans le soin et peut empêcher de connaître son expérience propre."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_024",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 24,
+    "theme": "Communication, intimité et consentement",
+    "difficulty": "easy",
+    "question": "Quels éléments relèvent du respect de l’intimité ?",
+    "choices": [
+      "Couvrir le corps lorsque c’est nécessaire",
+      "Tenir compte de la pudeur",
+      "Laisser les affaires personnelles exposées sans nécessité",
+      "Éviter une exposition corporelle injustifiée",
+      "Ignorer la température de la pièce"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le respect de l’intimité concerne le corps, la pudeur, le cadre du soin et les affaires personnelles.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "L’intimité se limite-t-elle au corps ?",
+        "answers": [
+          "Non. Elle concerne aussi la pudeur, les affaires personnelles et les conditions dans lesquelles le soin est réalisé."
+        ],
+        "explanation": "Le respect de l’intimité concerne le corps, la pudeur, le cadre du soin et les affaires personnelles."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_025",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 25,
+    "theme": "Communication, intimité et consentement",
+    "difficulty": "medium",
+    "question": "Une personne âgée demande à être rapprochée d’un être aimé. Quelle posture est adaptée ?",
+    "choices": [
+      "Juger la demande à partir de son âge",
+      "Écouter la demande et la considérer avec respect",
+      "Reconnaître la vie affective de la personne",
+      "Répondre par la moquerie",
+      "Rechercher ce qui est possible dans la situation"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La scène orale discute le droit au lien affectif et au contact, sans jugement lié à l’âge ou aux représentations du soignant.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment accueillir une demande affective d’une personne âgée ?",
+        "answers": [
+          "Sans jugement fondé sur l’âge, en écoutant ses souhaits et en recherchant une réponse respectueuse."
+        ],
+        "explanation": "La scène orale discute le droit au lien affectif et au contact, sans jugement lié à l’âge ou aux représentations du soignant."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_026",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 26,
+    "theme": "Soins techniques et prendre soin",
+    "difficulty": "easy",
+    "question": "Un geste technique réussi suffit-il à lui seul pour garantir une prise en soin adaptée ?",
+    "choices": [
+      "Oui, dès lors que le geste est rapide",
+      "Non, la relation et les besoins sont aussi importants",
+      "Oui, si le patient ne pose pas de question",
+      "Non, la réaction du patient doit être prise en compte",
+      "Oui, si l’équipe est expérimentée"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Un soin ne se limite pas à exécuter un geste : le vécu de la personne et la communication comptent également.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre exécuter un soin et prendre soin ?",
+        "answers": [
+          "Prendre soin ajoute à l’acte la prise en compte de la personne, de ses besoins et de son vécu."
+        ],
+        "explanation": "Un soin ne se limite pas à exécuter un geste : le vécu de la personne et la communication comptent également."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_027",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 27,
+    "theme": "Soins techniques et prendre soin",
+    "difficulty": "medium",
+    "question": "Pendant un prélèvement, le patient indique qu’il ne va pas bien moralement. Quelle attitude est appropriée ?",
+    "choices": [
+      "Ignorer l’information pour finir plus vite",
+      "Accueillir sa parole",
+      "Explorer, dans le cadre du soin, ce qu’il souhaite exprimer",
+      "Affirmer sans écouter qu’il ne se passe rien",
+      "Maintenir une attention relationnelle pendant le geste"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le soin technique est aussi une occasion de relation : une parole spontanée de la personne mérite une réponse attentive.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment un soin technique peut-il devenir un temps relationnel ?",
+        "answers": [
+          "Par l’écoute d’une parole ou d’un besoin exprimé pendant le geste, avec un ajustement adapté."
+        ],
+        "explanation": "Le soin technique est aussi une occasion de relation : une parole spontanée de la personne mérite une réponse attentive."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_028",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 28,
+    "theme": "Soins techniques et prendre soin",
+    "difficulty": "medium",
+    "question": "Une soignante dépose un plateau-repas et repart immédiatement. Quelle question est prioritaire ?",
+    "choices": [
+      "La personne peut-elle et souhaite-t-elle manger avec l’aide proposée ?",
+      "Le plateau a-t-il quitté le chariot ?",
+      "Le service est-il terminé pour l’équipe ?",
+      "La personne pourra-t-elle se débrouiller, quoi qu’il arrive ?",
+      "Peut-on éviter tout échange ?"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Distribuer le plateau ne remplace pas l’accompagnement du repas : autonomie, besoins d’aide et vécu doivent être vérifiés.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la distribution d’un repas n’est-elle pas seulement logistique ?",
+        "answers": [
+          "Il faut considérer la capacité et les besoins d’aide de la personne pour effectivement se nourrir."
+        ],
+        "explanation": "Distribuer le plateau ne remplace pas l’accompagnement du repas : autonomie, besoins d’aide et vécu doivent être vérifiés."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_029",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 29,
+    "theme": "Soins techniques et prendre soin",
+    "difficulty": "medium",
+    "question": "Quelles actions peuvent relever du prendre soin sans geste technique ?",
+    "choices": [
+      "Écouter une inquiétude",
+      "Expliquer une situation",
+      "Accompagner une activité adaptée",
+      "Ignorer une demande affective",
+      "Écarter la personne de toute décision"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’écoute, l’information, le lien et les activités adaptées ont une valeur relationnelle même sans acte technique.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Peut-on prendre soin sans effectuer de geste technique ?",
+        "answers": [
+          "Oui : par la présence, l’écoute, l’information, le soutien et l’accompagnement d’activités adaptées."
+        ],
+        "explanation": "L’écoute, l’information, le lien et les activités adaptées ont une valeur relationnelle même sans acte technique."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_030",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 30,
+    "theme": "Soins techniques et prendre soin",
+    "difficulty": "hard",
+    "question": "Le professionnel hésite entre faire rapidement à la place du patient ou le laisser agir avec aide. Quels critères comptent ?",
+    "choices": [
+      "Les capacités restantes",
+      "Le rythme et les souhaits du patient",
+      "Le confort exclusif du professionnel",
+      "L’effet sur l’autonomie",
+      "Une routine fixée quelle que soit la situation"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le temps nécessaire ne doit pas à lui seul effacer la participation possible de la personne et le respect de ses capacités.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que vérifier avant de se substituer à la personne dans une activité ?",
+        "answers": [
+          "Ses capacités restantes, sa préférence, l’aide utile et l’effet sur son autonomie."
+        ],
+        "explanation": "Le temps nécessaire ne doit pas à lui seul effacer la participation possible de la personne et le respect de ses capacités."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_031",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 31,
+    "theme": "Travail d’équipe et contexte institutionnel",
+    "difficulty": "medium",
+    "question": "La bientraitance concerne-t-elle uniquement la responsabilité individuelle du soignant ?",
+    "choices": [
+      "Oui, l’organisation n’a aucune influence",
+      "Non, elle comprend des actions individuelles et collectives",
+      "Oui, les transmissions sont sans effet",
+      "Non, l’organisation peut faciliter ou entraver les pratiques",
+      "Oui, les projets de vie sont hors sujet"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La séance rappelle l’importance du travail en équipe, des transmissions, des projets de vie et des conditions institutionnelles.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la bientraitance est-elle une responsabilité collective ?",
+        "answers": [
+          "Parce que les transmissions, l’organisation et les décisions d’équipe influencent la réponse aux besoins."
+        ],
+        "explanation": "La séance rappelle l’importance du travail en équipe, des transmissions, des projets de vie et des conditions institutionnelles."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_032",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 32,
+    "theme": "Travail d’équipe et contexte institutionnel",
+    "difficulty": "easy",
+    "question": "Quels moyens aident une équipe à mieux répondre aux besoins d’une personne ?",
+    "choices": [
+      "Partager les observations pertinentes",
+      "Utiliser les transmissions",
+      "Écarter toute discussion sur le projet de vie",
+      "Échanger sur les adaptations possibles",
+      "Ignorer la parole des aides-soignants"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’enseignante met en avant les transmissions, les échanges d’équipe et l’attention aux projets de vie, notamment en structure.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle des transmissions dans la bientraitance ?",
+        "answers": [
+          "Partager les observations et besoins pour construire un accompagnement cohérent entre professionnels."
+        ],
+        "explanation": "L’enseignante met en avant les transmissions, les échanges d’équipe et l’attention aux projets de vie, notamment en structure."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_033",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 33,
+    "theme": "Travail d’équipe et contexte institutionnel",
+    "difficulty": "medium",
+    "question": "Un horaire de tournée empêche souvent de respecter le rythme d’une personne. Quelle réaction est pertinente ?",
+    "choices": [
+      "Considérer l’horaire comme forcément intangible",
+      "Questionner l’organisation et rechercher une adaptation",
+      "Rejeter automatiquement la faute sur un seul soignant",
+      "Discuter en équipe de solutions réalistes",
+      "Supprimer l’attention aux préférences de la personne"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La contrainte d’organisation peut expliquer une difficulté mais n’empêche pas de chercher une réponse collective.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment agir quand l’organisation heurte les besoins d’une personne ?",
+        "answers": [
+          "Nommer la difficulté et rechercher collectivement une adaptation praticable."
+        ],
+        "explanation": "La contrainte d’organisation peut expliquer une difficulté mais n’empêche pas de chercher une réponse collective."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_034",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 34,
+    "theme": "Travail d’équipe et contexte institutionnel",
+    "difficulty": "hard",
+    "question": "Une soignante est brusque dans un contexte de sous-effectif. Quelles analyses sont nuancées ?",
+    "choices": [
+      "Les conditions de travail peuvent contribuer à comprendre la situation",
+      "Les contraintes justifient automatiquement toute attitude",
+      "La dignité du patient reste à préserver",
+      "Une amélioration organisationnelle peut être recherchée",
+      "La seule solution est de nier l’incident"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Comprendre les facteurs collectifs ne revient pas à excuser un comportement inadapté. Il faut protéger la personne et réfléchir aux conditions de travail.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comprendre une contrainte revient-il à excuser un manquement ?",
+        "answers": [
+          "Non. Les conditions peuvent éclairer la situation, mais les besoins et droits de la personne demeurent centraux."
+        ],
+        "explanation": "Comprendre les facteurs collectifs ne revient pas à excuser un comportement inadapté. Il faut protéger la personne et réfléchir aux conditions de travail."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_035",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 35,
+    "theme": "Travail d’équipe et contexte institutionnel",
+    "difficulty": "medium",
+    "question": "Dans un lieu de vie pour personnes âgées, que peut apporter le projet de vie ?",
+    "choices": [
+      "Des informations sur les activités et préférences",
+      "Un programme identique imposé à tous",
+      "Des repères pour adapter l’accompagnement",
+      "La suppression des échanges avec la personne",
+      "Une aide à la continuité entre professionnels"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le projet de vie sert à connaître les préférences et à adapter l’accompagnement au-delà de la succession d’actes.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi connaître le projet de vie d’un résident ?",
+        "answers": [
+          "Pour prendre en compte ses habitudes, activités, souhaits et priorités dans l’accompagnement."
+        ],
+        "explanation": "Le projet de vie sert à connaître les préférences et à adapter l’accompagnement au-delà de la succession d’actes."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_036",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 36,
+    "theme": "Analyser et réajuster une situation",
+    "difficulty": "medium",
+    "question": "Lorsqu’une vidéo de soin montre une interaction difficile, quelle démarche méthodologique est pertinente ?",
+    "choices": [
+      "Décrire les comportements observables",
+      "Affirmer connaître avec certitude l’intention du soignant",
+      "Évoquer prudemment un effet possible sur la personne",
+      "Proposer un ajustement concret",
+      "Réduire l’analyse à « c’est méchant »"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le raisonnement doit distinguer les faits, les effets possibles et les ajustements observables, sans réduire la situation à un jugement.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles étapes permettent d’analyser une interaction de soin ?",
+        "answers": [
+          "Observer les faits, identifier les besoins, nuancer l’impact possible et proposer un ajustement concret."
+        ],
+        "explanation": "Le raisonnement doit distinguer les faits, les effets possibles et les ajustements observables, sans réduire la situation à un jugement."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_037",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 37,
+    "theme": "Analyser et réajuster une situation",
+    "difficulty": "medium",
+    "question": "Une soignante parle dos tourné à la personne pendant un soin. Quelle modification est adaptée ?",
+    "choices": [
+      "Prendre le temps de se tourner vers elle lorsque possible",
+      "Continuer sans chercher de contact",
+      "Lui expliquer l’action et rechercher son attention",
+      "L’empêcher de poser des questions",
+      "Vérifier sa compréhension"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le regard, l’explication et la recherche de compréhension participent à la reconnaissance de la personne.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi l’orientation du corps pendant un échange compte-t-elle ?",
+        "answers": [
+          "Elle peut aider à reconnaître la personne comme interlocutrice et à rendre l’information compréhensible."
+        ],
+        "explanation": "Le regard, l’explication et la recherche de compréhension participent à la reconnaissance de la personne."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_038",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 38,
+    "theme": "Analyser et réajuster une situation",
+    "difficulty": "hard",
+    "question": "Une personne paraît triste après une interaction. Quelles formulations respectent la distinction fait/interprétation ?",
+    "choices": [
+      "« Elle paraît triste ; il faut lui demander ce qu’elle ressent. »",
+      "« Le soignant voulait nécessairement la blesser. »",
+      "« Nous avons observé qu’elle s’est tue après l’échange. »",
+      "« Nous savons exactement ce qu’elle pense. »",
+      "« Une vérification de son ressenti est nécessaire. »"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Observer une expression ou un silence ne permet pas d’affirmer un état interne ou une intention ; le ressenti doit être exploré.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre observation et interprétation ?",
+        "answers": [
+          "L’observation décrit un fait ; l’interprétation propose une hypothèse à vérifier auprès de la personne."
+        ],
+        "explanation": "Observer une expression ou un silence ne permet pas d’affirmer un état interne ou une intention ; le ressenti doit être exploré."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_039",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 39,
+    "theme": "Analyser et réajuster une situation",
+    "difficulty": "medium",
+    "question": "Après un réajustement relationnel, quelle dernière étape reste nécessaire ?",
+    "choices": [
+      "Vérifier si l’action convient à la personne",
+      "Considérer l’intention comme une preuve de réussite",
+      "Éviter toute question de suivi",
+      "Revenir uniquement aux habitudes du service",
+      "Supposer que le problème est définitivement résolu"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’évaluation de l’effet réel sur la personne fait partie du raisonnement : une bonne intention ne suffit pas.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi réévaluer après un changement de posture ?",
+        "answers": [
+          "Pour vérifier l’effet réel de l’ajustement et le corriger si nécessaire."
+        ],
+        "explanation": "L’évaluation de l’effet réel sur la personne fait partie du raisonnement : une bonne intention ne suffit pas."
+      }
+    ]
+  },
+  {
+    "id": "D1_BIENTRAITANCE_P01_040",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance, de quoi parle-t-on ?",
+    "number": 40,
+    "theme": "Analyser et réajuster une situation",
+    "difficulty": "medium",
+    "question": "Quelle synthèse décrit le mieux une posture bientraitante au quotidien ?",
+    "choices": [
+      "Respecter la personne et ses droits",
+      "Écouter ses besoins et préférences",
+      "Faire disparaître sa participation pour gagner du temps",
+      "Adapter l’aide à ses capacités",
+      "Se limiter à la réussite technique du geste"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le soin bientraitant articule dignité, autonomie, communication et réévaluation des effets des actions.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel mémo résume les gestes relationnels d’une posture bientraitante ?",
+        "answers": [
+          "Respecter, écouter, expliquer, demander, adapter et réévaluer."
+        ],
+        "explanation": "Le soin bientraitant articule dignité, autonomie, communication et réévaluation des effets des actions."
+      }
+    ]
   }
 ]

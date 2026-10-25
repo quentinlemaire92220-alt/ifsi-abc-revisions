@@ -1,16 +1,16 @@
 {
-  "version": "8.30.122",
-  "auditedAt": "2026-10-24",
+  "version": "8.30.123",
+  "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Cours TD2 Posture professionnelle publié à périmètre documentaire limité et contrôlé. La transcription PT02 reste tronquée à sa fin ; aucun MP3. Totaux des catalogues : 53 cours / 70 fiches.",
+  "note": "Inventaire V8.30.123 : 54 cours / 71 fiches. Nouveau cours D1.1 Bientraitance affiché PROVISOIRE sur la seule transcription orale ; support officiel et vidéos manquants. Les anciens cours et leurs fichiers restent inchangés.",
   "expectedTotals": {
-    "courses": 53,
-    "sheets": 70,
+    "courses": 54,
+    "sheets": 71,
     "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,

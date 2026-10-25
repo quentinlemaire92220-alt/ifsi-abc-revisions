@@ -57,7 +57,10 @@ for(const c of manifest.courses){
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  validateSheetSource(c.courseId,c,sheet);
- assert.ok(c.qcmDriveId&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'||
+ const hostedProvisional=c.provisional===true&&c.publicationHost==='github_pages'&&
+  c.publicArtifacts?.qcm?.sha256===c.qcmPublicAssetSha256&&
+  c.publicArtifacts?.flashcards?.sha256===c.flashcardPublicAssetSha256;
+ assert.ok((c.qcmDriveId||hostedProvisional)&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'||
   c.deliveryMode==='source_limited_first_release'||
   (c.deliveryMode==='first_release'&&c.sourceAudit?.officialChecked===true&&c.sourceAudit?.officialSupportPreservedPrivately===true)),
   'Documents non identifiés ou source officielle privée non tracée');
@@ -93,7 +96,7 @@ for(const c of manifest.courses){
  }
  assert.equal(cards.length,c.flashcardCount,'Flashcards absentes ou perdues');
  if(['lean_v1','hybrid_v1','written_v1'].includes(c.packFormat))validateLeanFlashcards(cards);
- assert.ok(c.flashcardDriveId,'Export Flashcards absent');
+ assert.ok(c.flashcardDriveId||hostedProvisional,'Export Flashcards absent');
  for(const card of cards){
   assert.ok(card.front.endsWith('?')&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
   assert.ok(card.explanation,card.id+': explication absente');
