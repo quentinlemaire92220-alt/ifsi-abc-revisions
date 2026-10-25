@@ -1,6 +1,6 @@
 (function(){
  'use strict';
- var report={attempts:0,jsErrors:[]};
+ var report={attempts:0,jsErrors:[],openedCourses:false};
  var result=document.createElement('output');
  result.id='ifsiRealAppTest';result.dataset.result='pending';result.textContent='Initialisation';
  document.body.appendChild(result);
@@ -22,8 +22,12 @@
      return fail('Démarrage incomplet : '+JSON.stringify({hasV74:!!v74,courses:reg&&reg.courses.length,groups:grid&&grid.querySelectorAll('.v74-domain-group').length,ui:ui&&ui.status()}));
    }
    try{
-     v74.showCourses();
-     if(!grid.querySelector('.v8430-domain-switch'))throw Error('Menus pédagogiques absents');
+     // showCourses() reconstruit la liste. Patienter une passe de l'observateur après ce rendu.
+     if(!report.openedCourses){report.openedCourses=true;v74.showCourses();return next(checkBoot)}
+     if(!grid.querySelector('.v8430-domain-switch')){
+       if(report.attempts<90)return next(checkBoot);
+       throw Error('Menus pédagogiques absents après 90 contrôles : '+JSON.stringify(ui.status()));
+     }
      if(!document.querySelector('#courses74 .v8430-note'))throw Error('NB Provisoire absent');
      var before=ui.status().passes;
      var cards=grid.querySelectorAll('.v74-course-card').length;
