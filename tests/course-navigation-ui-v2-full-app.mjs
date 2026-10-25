@@ -7,7 +7,7 @@ import {spawn,execFileSync} from 'node:child_process';
 const base=process.cwd();
 const read=(file)=>fs.readFileSync(path.join(base,file));
 const html=read('index.html').toString('utf8');
-assert.match(html,/<script src="\.\/course-navigation-ui-v2\.js\?v=8429"><\/script>/,'Le module réellement publié doit être testé');
+assert.match(html,/<script src="\.\/course-navigation-ui-v2\.js\?v=8430"><\/script>/,'Le module réellement publié doit être testé');
 const injected='<script src="./tests/fixtures/course-navigation-v2-full-app.js"></script>';
 const rafShim='<script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)};</script>';
 const testPage=html.replace('</head>',rafShim+'\n</head>').replace('</body>',injected+'\n</body>');

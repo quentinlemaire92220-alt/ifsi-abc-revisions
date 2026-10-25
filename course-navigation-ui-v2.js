@@ -108,7 +108,30 @@
       'body.v72-dark .v8430-note{background:#262230;color:#d4cde2;border-color:#464052}',
       'body.v72-dark .v8430-ue-name,body.v72-dark .v8430-path,body.v72-dark .v8430-course-why{color:#d1c8df}',
       'body.v72-dark .v8430-arrow{color:#bf9aff}',
-      '@media(max-width:600px){.v74-domain-head .v74-domain-name{font-size:13px}.v8430-ue-name{flex-basis:100%;padding-left:60px}.v8430-course-why{flex-basis:100%}}'
+      '@media(max-width:600px){.v74-domain-head .v74-domain-name{font-size:13px}.v8430-ue-name{flex-basis:100%;padding-left:60px}.v8430-course-why{flex-basis:100%}}',
+      /* Finition V8.30.130 : mise en page uniquement, sans changements de logique */,
+      '.v8430-domain-switch,.v8430-ue-switch{outline-offset:3px;min-height:42px}',,
+      '.v8430-domain-switch:focus-visible,.v8430-ue-switch:focus-visible{outline:3px solid var(--p);border-radius:10px}',,
+      '.v8430-arrow{width:30px;height:30px;display:inline-grid;place-items:center;border:1px solid #d5c5ee;border-radius:10px;background:#f0eafb;font-size:21px;line-height:1;color:#6036a7;transition:background-color .14s ease;flex:none}',,
+      '.v8430-domain-switch:hover .v8430-arrow,.v8430-ue-switch:hover .v8430-arrow{background:#e5d8fa}',,
+      '.v74-ue-head{padding:6px 2px;min-height:70px}',,
+      '.v74-ue-head .v8430-ue-switch{display:flex;gap:12px;align-items:center;min-width:0;padding:8px 4px}',,
+      '.v74-ue-head .v74-ue-title{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;row-gap:3px;align-items:center;min-width:0;flex:1}',,
+      '.v8430-ue-switch .v74-ue-code{grid-column:1;grid-row:1/span 2;align-self:center}',,
+      '.v8430-ue-switch .v8430-ue-name{grid-column:2;grid-row:1;min-width:0;max-width:100%;font-size:13px;font-weight:800;line-height:1.45;letter-spacing:0;color:var(--ink);overflow-wrap:break-word}',,
+      '.v8430-ue-switch .v74-ue-count{grid-column:2;grid-row:2;font-size:11px;line-height:1.35;color:var(--muted);font-weight:650;min-width:0}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions){display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;column-gap:12px;row-gap:3px;align-items:center;padding:12px 13px;min-height:88px}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.row{grid-column:1;grid-row:1;min-width:0;align-self:end}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.small{grid-column:1;grid-row:2;min-width:0;align-self:start;line-height:1.4;overflow-wrap:anywhere}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.actions{grid-column:2;grid-row:1/span 2;display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-top:0}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.actions .btn{width:auto;min-width:98px;max-width:152px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;font-size:13px;white-space:nowrap}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.actions .v74-star{flex:none;width:44px;height:44px;min-height:44px;display:inline-grid;place-items:center;padding:6px}',,
+      '#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.row b{line-height:1.35;overflow-wrap:anywhere}',,
+      'body.v72-dark .v8430-arrow{background:#352b48;border-color:#685081;color:#e8d0ff}',,
+      'body.v72-dark .v8430-domain-switch:hover .v8430-arrow,body.v72-dark .v8430-ue-switch:hover .v8430-arrow{background:#443459}',,
+      'body.v72-dark .v8430-ue-switch .v8430-ue-name{color:#f6f0ff}',,
+      '@media(max-width:690px){#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions){grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:5px}#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.row{grid-row:1;grid-column:1}#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.small{grid-row:2;grid-column:1}#v74CourseDetail .v74-resource-list>.v74-resource:has(>.actions)>.actions{grid-column:1;grid-row:3;margin-top:7px;justify-content:flex-end}}',
+      '@media(max-width:600px){.v74-ue-head .v8430-ue-switch{gap:9px}.v8430-arrow{width:30px;height:30px}.v74-ue-head .v74-ue-title{column-gap:9px}.v8430-ue-switch .v8430-ue-name{font-size:12.5px}.v8430-ue-switch .v74-ue-count{font-size:11px}}'
     ].join('\n');
     document.head.appendChild(node);
   }
