@@ -4865,5 +4865,1343 @@
         "explanation": "Le soin bientraitant articule dignité, autonomie, communication et réévaluation des effets des actions."
       }
     ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_001",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 1,
+    "theme": "Communication adaptée",
+    "difficulty": "easy",
+    "question": "Quels éléments rendent la communication soignante adaptée ?",
+    "choices": [
+      "La cohérence entre paroles et attitudes",
+      "La prise en compte du niveau de compréhension",
+      "L’absence totale de silence",
+      "L’adaptation à l’état psychologique",
+      "L’emploi systématique d’un langage technique"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Une communication adaptée articule cohérence verbal/non verbal, compréhension et état psychologique de la personne, plutôt que des formules automatiques.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont trois repères d’une communication soignante adaptée ?",
+        "answers": [
+          "Cohérence des paroles et des attitudes, prise en compte de la compréhension et adaptation à l’état psychologique."
+        ],
+        "explanation": "Une communication adaptée articule cohérence verbal/non verbal, compréhension et état psychologique de la personne, plutôt que des formules automatiques."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_002",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 2,
+    "theme": "Communication adaptée",
+    "difficulty": "easy",
+    "question": "La congruence dans la relation de soin signifie :",
+    "choices": [
+      "Imposer son opinion personnelle",
+      "Accorder ce que l’on pense, dit et fait",
+      "Multiplier les gestes techniques",
+      "Éviter le regard du patient",
+      "Présenter une attitude cohérente"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "La congruence est décrite comme un alignement entre pensée, expression et comportement ; elle favorise une posture authentique.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment reconnaître une posture congruente ?",
+        "answers": [
+          "Les paroles, l’attitude et les actes du soignant ne se contredisent pas."
+        ],
+        "explanation": "La congruence est décrite comme un alignement entre pensée, expression et comportement ; elle favorise une posture authentique."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_003",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 3,
+    "theme": "Communication adaptée",
+    "difficulty": "medium",
+    "question": "Un patient paraît bouleversé après une annonce difficile. Quelle adaptation relationnelle envisager ?",
+    "choices": [
+      "Parler plus vite pour terminer",
+      "Tenir compte de sa disponibilité émotionnelle",
+      "Vérifier ce qu’il est prêt à entendre",
+      "Supposer une compréhension immédiate",
+      "Adapter le rythme des informations"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La capacité à accueillir une information peut être temporairement limitée ; le rythme et la compréhension doivent être pris en compte.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi adapter son rythme après une annonce difficile ?",
+        "answers": [
+          "L’état émotionnel peut limiter la disponibilité et la compréhension du patient."
+        ],
+        "explanation": "La capacité à accueillir une information peut être temporairement limitée ; le rythme et la compréhension doivent être pris en compte."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_004",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 4,
+    "theme": "Communication adaptée",
+    "difficulty": "medium",
+    "question": "Une infirmière dit « je vous écoute » tout en regardant constamment son écran. Quelle difficulté cette scène illustre-t-elle ?",
+    "choices": [
+      "Une parfaite congruence",
+      "Une possible incohérence verbal/non verbal",
+      "La preuve que la personne ne veut pas parler",
+      "L’importance de rendre l’attitude compatible avec les paroles",
+      "L’obligation de supprimer les transmissions"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Dire que l’on écoute sans manifester une réelle disponibilité peut affaiblir la cohérence du message ; l’écran n’est pas en lui-même interdit.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel risque présente une discordance entre paroles et attitudes ?",
+        "answers": [
+          "La personne peut ne pas se sentir entendue malgré des mots rassurants."
+        ],
+        "explanation": "Dire que l’on écoute sans manifester une réelle disponibilité peut affaiblir la cohérence du message ; l’écran n’est pas en lui-même interdit."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_005",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 5,
+    "theme": "Communication adaptée",
+    "difficulty": "hard",
+    "question": "Pour mieux communiquer avec une personne allongée, le soignant peut :",
+    "choices": [
+      "Adapter sa position pour faciliter le contact",
+      "Garder systématiquement une position dominante",
+      "Veiller à son regard et à sa disponibilité",
+      "Parler de dos pour préserver la distance",
+      "Vérifier les conditions de confort de l’échange"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La posture physique, l’orientation du corps et le regard participent à la qualité relationnelle ; ils sont adaptés à la situation.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la posture physique fait-elle partie de la communication ?",
+        "answers": [
+          "Elle influe sur la possibilité de contact, d’attention et de participation de la personne."
+        ],
+        "explanation": "La posture physique, l’orientation du corps et le regard participent à la qualité relationnelle ; ils sont adaptés à la situation."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_006",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 6,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "easy",
+    "question": "Un besoin relationnel peut apparaître lorsque la personne souhaite :",
+    "choices": [
+      "Partager ce qu’elle traverse",
+      "Être écoutée dans son inquiétude",
+      "Ne recevoir aucune information",
+      "Comprendre ce qu’elle vit",
+      "Être immédiatement dirigée vers une solution choisie pour elle"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le besoin relationnel concerne l’entrée ou le maintien en relation pour exprimer, comprendre ou traverser une expérience vécue.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment définir le besoin relationnel ?",
+        "answers": [
+          "Besoin d’entrer ou de rester en relation avec un autre pour exprimer, partager, comprendre ou traverser ce que l’on vit."
+        ],
+        "explanation": "Le besoin relationnel concerne l’entrée ou le maintien en relation pour exprimer, comprendre ou traverser une expérience vécue."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_007",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 7,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "easy",
+    "question": "Quel indice peut alerter sur un besoin relationnel pendant un soin ?",
+    "choices": [
+      "La seule existence d’une prescription",
+      "Une inquiétude exprimée spontanément",
+      "La durée d’une hospitalisation, à elle seule",
+      "L’absence de dialogue obligatoire",
+      "Le silence interprété avec certitude comme un refus"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Un propos sur l’inquiétude ou la difficulté vécue peut signaler une demande relationnelle, qu’il faut ensuite explorer avec prudence.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel indice simple peut signaler un besoin relationnel ?",
+        "answers": [
+          "L’expression d’une inquiétude ou d’une difficulté, sans préjuger de sa cause."
+        ],
+        "explanation": "Un propos sur l’inquiétude ou la difficulté vécue peut signaler une demande relationnelle, qu’il faut ensuite explorer avec prudence."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_008",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 8,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "medium",
+    "question": "Une patiente opérée confie « je ne sais pas comment vivre comme cela ». Quelle première posture est pertinente ?",
+    "choices": [
+      "Reconnaître qu’elle exprime une inquiétude",
+      "Lui dire ce qu’elle doit ressentir",
+      "L’inviter à préciser ce qui l’inquiète",
+      "Conclure immédiatement qu’elle craint le regard de son conjoint",
+      "Se rendre disponible dans la mesure du possible"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’énoncé ne permet pas de connaître la cause de l’inquiétude. L’écoute, la reformulation et l’ouverture sont prioritaires.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment accueillir une inquiétude sans projeter son interprétation ?",
+        "answers": [
+          "Reconnaître les mots employés et demander ce qui inquiète plus particulièrement la personne."
+        ],
+        "explanation": "L’énoncé ne permet pas de connaître la cause de l’inquiétude. L’écoute, la reformulation et l’ouverture sont prioritaires."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_009",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 9,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "medium",
+    "question": "Quelle relation entre soin technique et soin relationnel est pertinente ?",
+    "choices": [
+      "Ils s’excluent mutuellement",
+      "Le soin technique peut devenir un moment d’écoute",
+      "Le soin relationnel suppose toujours un acte invasif",
+      "L’accompagnement relationnel peut être nécessaire pendant un geste",
+      "L’écoute n’a aucune place dans un pansement"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La dimension relationnelle s’inscrit fréquemment dans un geste technique : écouter une inquiétude ne dépend pas d’un acte spécifique.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Peut-on associer technique et relationnel ?",
+        "answers": [
+          "Oui : un soin technique peut ouvrir un temps pour écouter, comprendre et accompagner."
+        ],
+        "explanation": "La dimension relationnelle s’inscrit fréquemment dans un geste technique : écouter une inquiétude ne dépend pas d’un acte spécifique."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_010",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 10,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "medium",
+    "question": "Le soignant ne dispose pas du temps nécessaire immédiatement. Que peut-il envisager ?",
+    "choices": [
+      "Ignorer la parole pour respecter la tournée",
+      "Reconnaître la demande",
+      "Prévoir un retour ou un relais adapté",
+      "Faire croire qu’il reviendra sans pouvoir le faire",
+      "Partager l’information utile avec l’équipe selon le cadre du soin"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Accueillir une demande d’écoute, organiser un retour et solliciter un relais sont préférables à l’abandon de l’échange.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment gérer un besoin d’écoute lorsque le temps manque ?",
+        "answers": [
+          "Reconnaître la demande, convenir d’un retour réaliste et passer le relais si nécessaire."
+        ],
+        "explanation": "Accueillir une demande d’écoute, organiser un retour et solliciter un relais sont préférables à l’abandon de l’échange."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_011",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 11,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "easy",
+    "question": "Quelle réponse illustre une attitude d’évaluation ou de jugement ?",
+    "choices": [
+      "« Vous devez être forte et positive »",
+      "« Qu’est-ce qui vous inquiète ? »",
+      "« Je vous entends dire que c’est difficile »",
+      "« Pourriez-vous préciser ce mot ? »",
+      "« Vous avez raison de le vivre à votre façon »"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Porter un jugement sur ce que la personne devrait être ou ressentir risque de la culpabiliser et de fermer la conversation.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que caractérise l’attitude d’évaluation ?",
+        "answers": [
+          "Porter une appréciation ou un jugement sur la personne et sa manière de réagir."
+        ],
+        "explanation": "Porter un jugement sur ce que la personne devrait être ou ressentir risque de la culpabiliser et de fermer la conversation."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_012",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 12,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "medium",
+    "question": "Quelle proposition relève surtout de l’interprétation ?",
+    "choices": [
+      "« Vous dites être inquiète »",
+      "« Vous avez sûrement peur de ne plus plaire à votre conjoint »",
+      "« Que signifie vivre autrement pour vous ? »",
+      "« Voulez-vous en parler ? »",
+      "« Votre inquiétude mérite d’être entendue »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Attribuer une cause précise sans l’avoir entendue revient à penser à la place de la personne et à projeter son propre raisonnement.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le piège de l’interprétation ?",
+        "answers": [
+          "Proposer comme certain un sens ou un motif que la personne n’a pas elle-même exprimé."
+        ],
+        "explanation": "Attribuer une cause précise sans l’avoir entendue revient à penser à la place de la personne et à projeter son propre raisonnement."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_013",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 13,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "medium",
+    "question": "« Ne vous inquiétez pas, tout va bien se passer » illustre surtout :",
+    "choices": [
+      "Une vraie garantie sur l’avenir",
+      "Un soutien qui peut minimiser le vécu",
+      "Une question exploratoire",
+      "Une possible fausse réassurance",
+      "Une reformulation fidèle"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’intention de rassurer peut être positive, mais une promesse non fondée peut faire sentir que l’inquiétude n’est pas entendue.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi « tout va bien se passer » peut-il être maladroit ?",
+        "answers": [
+          "Cette formule rassure sans savoir et peut minimiser l’inquiétude exprimée."
+        ],
+        "explanation": "L’intention de rassurer peut être positive, mais une promesse non fondée peut faire sentir que l’inquiétude n’est pas entendue."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_014",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 14,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "medium",
+    "question": "Quelle phrase correspond à une investigation orientée par les hypothèses du soignant ?",
+    "choices": [
+      "« Qu’est-ce qui vous inquiète le plus ? »",
+      "« Est-ce votre travail, vos enfants ou votre conjoint qui vous inquiète ? »",
+      "« Je reprends vos mots »",
+      "« Je reste disponible »",
+      "« Comment vivez-vous cela ? »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Une liste de causes possibles proposées par le soignant restreint la parole et peut transformer l’entretien en enquête guidée.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment reconnaître une attitude d’investigation-enquête ?",
+        "answers": [
+          "Le soignant propose plusieurs hypothèses ou questions orientées plutôt que de laisser l’autre formuler son vécu."
+        ],
+        "explanation": "Une liste de causes possibles proposées par le soignant restreint la parole et peut transformer l’entretien en enquête guidée."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_015",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 15,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "easy",
+    "question": "Quelle formulation relève directement du conseil ou de la solution ?",
+    "choices": [
+      "« Que souhaiteriez-vous faire ? »",
+      "« Vous devriez consulter un psychologue »",
+      "« Que voulez-vous dire par là ? »",
+      "« Je vous laisse le temps »",
+      "« Cela vous inquiète, si je comprends bien »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Le conseil impose une option formulée par le professionnel ; le travail en équipe peut être proposé sans prescrire à la place de l’autre.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le risque d’un conseil trop précoce ?",
+        "answers": [
+          "Substituer la solution du soignant à l’expression des besoins et des choix du patient."
+        ],
+        "explanation": "Le conseil impose une option formulée par le professionnel ; le travail en équipe peut être proposé sans prescrire à la place de l’autre."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_016",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 16,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "easy",
+    "question": "Quelle réponse manifeste d’abord une attitude de compréhension ?",
+    "choices": [
+      "« Vous n’avez pas de raison de vous inquiéter »",
+      "« Je sais exactement ce que vous ressentez »",
+      "« Vous vous demandez comment vivre ce changement »",
+      "« Vous devriez tourner la page »",
+      "« Cela arrive à tout le monde »"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La reformulation reprend les mots et le sens apparent du propos sans attribuer une cause non exprimée.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment exprimer une attitude de compréhension ?",
+        "answers": [
+          "Reprendre et reformuler le vécu exprimé, puis ouvrir un espace pour que la personne précise."
+        ],
+        "explanation": "La reformulation reprend les mots et le sens apparent du propos sans attribuer une cause non exprimée."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_017",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 17,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "medium",
+    "question": "Quels effets peut produire un jugement prononcé au début d’un entretien ?",
+    "choices": [
+      "Une impression de ne pas être comprise",
+      "Une culpabilisation éventuelle",
+      "Une certitude de soulagement",
+      "Une fermeture possible de l’échange",
+      "Un consentement garanti"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le moment et la formulation des réponses influencent leur effet : un jugement trop précoce peut provoquer culpabilité et fermeture du dialogue.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi le moment d’une réponse importe-t-il ?",
+        "answers": [
+          "La même phrase peut produire un effet différent selon le vécu, l’instant et l’état de la relation."
+        ],
+        "explanation": "Le moment et la formulation des réponses influencent leur effet : un jugement trop précoce peut provoquer culpabilité et fermeture du dialogue."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_018",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 18,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "medium",
+    "question": "Quelles attitudes risquent de réduire l’espace de parole ?",
+    "choices": [
+      "Proposer immédiatement des solutions",
+      "Poser exclusivement des questions orientées",
+      "Reformuler pour vérifier sa compréhension",
+      "Conclure sur une interprétation non vérifiée",
+      "Respecter un silence"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Solution rapide, enquête orientée et interprétation peuvent déplacer l’attention du vécu du patient vers les idées du soignant.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles attitudes de Porter sont particulièrement directives ?",
+        "answers": [
+          "Le conseil, l’enquête orientée et l’interprétation prématurée."
+        ],
+        "explanation": "Solution rapide, enquête orientée et interprétation peuvent déplacer l’attention du vécu du patient vers les idées du soignant."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_019",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 19,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "hard",
+    "question": "Au sujet des six attitudes de Porter, quelle affirmation est juste ?",
+    "choices": [
+      "Toute attitude est toujours interdite, quel que soit le contexte",
+      "Le contexte et le moment influencent l’effet d’une réponse",
+      "La compréhension vise à laisser parler la personne",
+      "Un conseil précoce est nécessairement la meilleure réponse",
+      "Les attitudes permettent d’analyser l’effet possible de nos paroles"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La grille d’analyse aide à reconnaître une posture et ses effets probables. Une réponse n’est pas évaluée hors de son contexte relationnel.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert la grille des six attitudes ?",
+        "answers": [
+          "À analyser le type de réponse et ses effets possibles sur la parole et la relation."
+        ],
+        "explanation": "La grille d’analyse aide à reconnaître une posture et ses effets probables. Une réponse n’est pas évaluée hors de son contexte relationnel."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_020",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 20,
+    "theme": "Six attitudes de Porter",
+    "difficulty": "hard",
+    "question": "Le soignant dit « Vous devriez appeler vos proches ». Pourquoi ne pas présenter cela immédiatement comme la seule solution ?",
+    "choices": [
+      "La personne pourrait avoir d’autres ressources",
+      "Les liens familiaux sont toujours négatifs",
+      "Le soignant ne connaît pas encore ses priorités",
+      "Aucun relais n’est jamais possible",
+      "La proposition peut être explorée avec son accord"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Les ressources doivent être recherchées avec la personne ; l’entourage et les autres professionnels peuvent être mobilisés selon ses besoins.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment proposer une ressource sans imposer ?",
+        "answers": [
+          "Explorer les attentes de la personne et présenter une possibilité, sans choisir pour elle."
+        ],
+        "explanation": "Les ressources doivent être recherchées avec la personne ; l’entourage et les autres professionnels peuvent être mobilisés selon ses besoins."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_021",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 21,
+    "theme": "Écoute active et Carl Rogers",
+    "difficulty": "easy",
+    "question": "Quels trois repères structurent l’écoute active dans l’approche de Carl Rogers ?",
+    "choices": [
+      "Empathie",
+      "Considération positive inconditionnelle",
+      "Jugement rapide",
+      "Congruence",
+      "Interprétation systématique"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’empathie, la considération positive inconditionnelle et la congruence favorisent une posture d’écoute ouverte et authentique.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels trois repères sont associés à Carl Rogers ?",
+        "answers": [
+          "Empathie, considération positive inconditionnelle et congruence."
+        ],
+        "explanation": "L’empathie, la considération positive inconditionnelle et la congruence favorisent une posture d’écoute ouverte et authentique."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_022",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 22,
+    "theme": "Écoute active et Carl Rogers",
+    "difficulty": "medium",
+    "question": "Dans le soin relationnel, l’empathie consiste à :",
+    "choices": [
+      "Chercher à comprendre le vécu de l’autre",
+      "Éprouver nécessairement exactement les mêmes émotions",
+      "Mettre provisoirement de côté ses propres résonances",
+      "Affirmer connaître le vécu sans questionner",
+      "Garder la personne au centre de l’échange"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’empathie cherche à comprendre sans confondre l’expérience du patient avec la sienne ni se laisser envahir par une projection.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que l’empathie ?",
+        "answers": [
+          "Une posture de compréhension du monde de l’autre, en restant conscient de ses propres émotions."
+        ],
+        "explanation": "L’empathie cherche à comprendre sans confondre l’expérience du patient avec la sienne ni se laisser envahir par une projection."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_023",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 23,
+    "theme": "Écoute active et Carl Rogers",
+    "difficulty": "easy",
+    "question": "La considération positive inconditionnelle suppose de :",
+    "choices": [
+      "Croire en l’existence de ressources chez la personne",
+      "Exiger qu’elle suive toute proposition",
+      "Ne pas la réduire à ses difficultés",
+      "Respecter son rythme et ses choix",
+      "La juger uniquement sur ses réactions"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Cette posture reconnaît les capacités, valeurs et ressources de la personne et vise à l’accompagner sans décider à sa place.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle idée exprime la considération positive inconditionnelle ?",
+        "answers": [
+          "Reconnaître la valeur de la personne et ses ressources, sans faire dépendre le respect de son adhésion."
+        ],
+        "explanation": "Cette posture reconnaît les capacités, valeurs et ressources de la personne et vise à l’accompagner sans décider à sa place."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_024",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 24,
+    "theme": "Écoute active et Carl Rogers",
+    "difficulty": "medium",
+    "question": "Une écoute active comprend :",
+    "choices": [
+      "Une disponibilité physique",
+      "Une disponibilité intellectuelle",
+      "Des interruptions systématiques",
+      "Une posture ouverte et attentive",
+      "Un interrogatoire sans pauses"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’écoute active ne se réduit pas à entendre : elle exige une présence corporelle et mentale, des relances adaptées et une attention au discours.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi dit-on que l’écoute est « active » ?",
+        "answers": [
+          "Parce que l’on se rend disponible, questionne avec tact, reformule et facilite la parole."
+        ],
+        "explanation": "L’écoute active ne se réduit pas à entendre : elle exige une présence corporelle et mentale, des relances adaptées et une attention au discours."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_025",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 25,
+    "theme": "Écoute active et Carl Rogers",
+    "difficulty": "hard",
+    "question": "L’empathie et la sympathie sont-elles interchangeables dans une relation de soin ?",
+    "choices": [
+      "Oui, elles signifient toutes deux devenir ami",
+      "Non, la sympathie peut engager une proximité affective différente",
+      "L’empathie implique une compréhension sans se confondre avec l’autre",
+      "La distance professionnelle interdit toute émotion",
+      "Une relation d’aide peut rester chaleureuse sans devenir amicale"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Une posture de compréhension professionnelle ne se confond pas avec une relation amicale, qui peut brouiller la distance relationnelle.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle distinction retenir entre empathie et sympathie ?",
+        "answers": [
+          "L’empathie vise la compréhension professionnelle ; la sympathie évoque une proximité affective ou amicale."
+        ],
+        "explanation": "Une posture de compréhension professionnelle ne se confond pas avec une relation amicale, qui peut brouiller la distance relationnelle."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_026",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 26,
+    "theme": "Techniques d’entretien",
+    "difficulty": "easy",
+    "question": "Quelle question favorise une exploration ouverte ?",
+    "choices": [
+      "« C’est à cause de vos enfants, n’est-ce pas ? »",
+      "« Qu’est-ce qui vous inquiète plus particulièrement ? »",
+      "« Vous allez appeler votre conjoint ? »",
+      "« Est-ce uniquement le travail ? »",
+      "« Vous n’avez pas peur, quand même ? »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "Une question ouverte permet à la personne de choisir ce qu’elle souhaite aborder sans être enfermée dans les hypothèses du soignant.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Donne un exemple de question ouverte.",
+        "answers": [
+          "« Qu’est-ce qui vous inquiète plus particulièrement ? »"
+        ],
+        "explanation": "Une question ouverte permet à la personne de choisir ce qu’elle souhaite aborder sans être enfermée dans les hypothèses du soignant."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_027",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 27,
+    "theme": "Techniques d’entretien",
+    "difficulty": "medium",
+    "question": "Quand une question fermée est-elle particulièrement utile ?",
+    "choices": [
+      "Quand une information courte oui/non est nécessaire",
+      "Pour explorer seule toute une expérience complexe",
+      "Pour interdire les nuances",
+      "Pour remplacer toute reformulation",
+      "Lorsque le contexte appelle une réponse précise"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Les questions fermées sont adaptées à une demande de réponse précise ; elles ne remplacent pas l’exploration ouverte du vécu.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la place d’une question fermée ?",
+        "answers": [
+          "Obtenir une information précise lorsque c’est approprié, sans remplacer la parole libre."
+        ],
+        "explanation": "Les questions fermées sont adaptées à une demande de réponse précise ; elles ne remplacent pas l’exploration ouverte du vécu."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_028",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 28,
+    "theme": "Techniques d’entretien",
+    "difficulty": "easy",
+    "question": "La reformulation sert notamment à :",
+    "choices": [
+      "Vérifier le sens compris",
+      "Reprendre les mots significatifs de la personne",
+      "Ajouter une interprétation sans l’annoncer",
+      "Faciliter la poursuite de son discours",
+      "Décider de la bonne réponse à sa place"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La reformulation permet de vérifier une compréhension, soutenir le récit et laisser la personne corriger ce qui a été mal entendu.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert la reformulation ?",
+        "answers": [
+          "À vérifier, clarifier et accompagner le discours, sans imposer son propre sens."
+        ],
+        "explanation": "La reformulation permet de vérifier une compréhension, soutenir le récit et laisser la personne corriger ce qui a été mal entendu."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_029",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 29,
+    "theme": "Techniques d’entretien",
+    "difficulty": "medium",
+    "question": "Une patiente dit « je ne serai plus comme avant ». Quelle clarification est pertinente ?",
+    "choices": [
+      "« Je sais ce que cela veut dire »",
+      "« Qu’est-ce que vous entendez par “comme avant” ? »",
+      "« Vous parlez forcément de votre apparence »",
+      "« Vous devez tourner la page »",
+      "« Vous ne devriez pas penser cela »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La clarification reprend un mot ou une expression ambiguë pour demander à la personne ce qu’elle entend réellement.",
+    "announcedCorrectCount": 1,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment clarifier sans interpréter ?",
+        "answers": [
+          "Faire préciser un mot ou une expression employée par la personne."
+        ],
+        "explanation": "La clarification reprend un mot ou une expression ambiguë pour demander à la personne ce qu’elle entend réellement."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_030",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 30,
+    "theme": "Techniques d’entretien",
+    "difficulty": "hard",
+    "question": "À propos du silence dans un entretien de soin :",
+    "choices": [
+      "Il peut laisser le temps de réfléchir",
+      "Il faut toujours le combler immédiatement",
+      "Il peut permettre de poursuivre un récit",
+      "Il signifie nécessairement un refus de parler",
+      "Il doit être accueilli selon la situation"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le silence peut aider la personne à se recentrer et à retrouver ses mots ; son sens ne doit pas être supposé automatiquement.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi peut servir un silence ?",
+        "answers": [
+          "À donner le temps de réfléchir, de ressentir et de reprendre sa parole."
+        ],
+        "explanation": "Le silence peut aider la personne à se recentrer et à retrouver ses mots ; son sens ne doit pas être supposé automatiquement."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_031",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 31,
+    "theme": "Posture et communication non verbale",
+    "difficulty": "medium",
+    "question": "Quels éléments paraverbaux sont cités dans l’écoute ?",
+    "choices": [
+      "Le rythme de la parole",
+      "L’intensité de la voix",
+      "L’adresse de domicile",
+      "Le timbre",
+      "La durée du séjour"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le paraverbal comprend la voix, le timbre, la puissance, le rythme et le débit.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que comprend le paraverbal ?",
+        "answers": [
+          "Les caractéristiques de la voix : timbre, intensité, rythme, débit et pauses."
+        ],
+        "explanation": "Le paraverbal comprend la voix, le timbre, la puissance, le rythme et le débit."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_032",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 32,
+    "theme": "Posture et communication non verbale",
+    "difficulty": "easy",
+    "question": "Quels éléments non verbaux peuvent soutenir une présence attentive ?",
+    "choices": [
+      "Le regard adapté",
+      "Une orientation corporelle disponible",
+      "Un toucher systématique sans accord",
+      "Une distance ajustée",
+      "Un maintien imposé du regard jusqu’à la réponse"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le regard, la posture, la proxémie et les mimiques participent à la communication ; un toucher éventuel doit être adapté et autorisé.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels repères non verbaux observer ?",
+        "answers": [
+          "Regard, posture, distance, mimiques et toucher adapté si cela convient à la personne."
+        ],
+        "explanation": "Le regard, la posture, la proxémie et les mimiques participent à la communication ; un toucher éventuel doit être adapté et autorisé."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_033",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 33,
+    "theme": "Posture et communication non verbale",
+    "difficulty": "medium",
+    "question": "Comment différencier toucher empathique et toucher gnosique ?",
+    "choices": [
+      "Le toucher empathique cherche un soutien relationnel",
+      "Le toucher gnosique sert à recueillir un signe clinique",
+      "Ils sont exactement identiques",
+      "Le toucher empathique se pratique sans consentement",
+      "Le contexte et l’accord de la personne restent importants"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Le toucher empathique soutient la relation ; le toucher gnosique recherche des signes cliniques. Leur usage reste adapté à la personne.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Toucher empathique ou gnosique : quelle différence ?",
+        "answers": [
+          "Empathique : soutien relationnel. Gnosique : recueil d’informations cliniques."
+        ],
+        "explanation": "Le toucher empathique soutient la relation ; le toucher gnosique recherche des signes cliniques. Leur usage reste adapté à la personne."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_034",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 34,
+    "theme": "Posture et communication non verbale",
+    "difficulty": "medium",
+    "question": "Une personne évite le regard. Quelle attitude est la plus juste ?",
+    "choices": [
+      "En déduire sans doute qu’elle ment",
+      "Observer avec prudence et sans juger",
+      "Forcer un contact visuel prolongé",
+      "Adapter sa posture à ses réactions",
+      "Confondre ce signe isolé avec une émotion certaine"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le sens d’un comportement non verbal dépend du contexte ; il ne permet pas à lui seul d’attribuer une émotion ou une intention.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire devant un signe non verbal ambigu ?",
+        "answers": [
+          "L’observer et l’explorer avec tact plutôt que d’en déduire une signification certaine."
+        ],
+        "explanation": "Le sens d’un comportement non verbal dépend du contexte ; il ne permet pas à lui seul d’attribuer une émotion ou une intention."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_035",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 35,
+    "theme": "Émotions, distance et équipe",
+    "difficulty": "medium",
+    "question": "Quelles réactions peuvent survenir chez un soignant face à la souffrance ?",
+    "choices": [
+      "Tristesse ou malaise",
+      "Sentiment d’impuissance",
+      "Absence obligatoire de toute émotion",
+      "Peur de dire quelque chose de maladroit",
+      "Connaissance automatique de la solution"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Des émotions peuvent naître chez le soignant ; elles doivent être reconnues et régulées, sans être imposées au patient.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi reconnaître ses émotions de soignant ?",
+        "answers": [
+          "Pour éviter qu’elles dirigent l’entretien et rester disponible à la personne."
+        ],
+        "explanation": "Des émotions peuvent naître chez le soignant ; elles doivent être reconnues et régulées, sans être imposées au patient."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_036",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 36,
+    "theme": "Émotions, distance et équipe",
+    "difficulty": "hard",
+    "question": "Quand un récit réactive une expérience personnelle du soignant, quels réajustements sont possibles ?",
+    "choices": [
+      "Identifier ce que cela réveille en soi",
+      "Laisser sa propre histoire guider la réponse",
+      "Recentrer l’attention sur le patient",
+      "Solliciter un relais si l’émotion devient trop difficile à réguler",
+      "Faire du patient son confident"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La distance relationnelle consiste à reconnaître et canaliser ses propres émotions ; le relais professionnel peut être utile quand la disponibilité n’est plus suffisante.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment préserver la distance relationnelle ?",
+        "answers": [
+          "Prendre conscience de ses émotions, les réguler et solliciter un relais si nécessaire."
+        ],
+        "explanation": "La distance relationnelle consiste à reconnaître et canaliser ses propres émotions ; le relais professionnel peut être utile quand la disponibilité n’est plus suffisante."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_037",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 37,
+    "theme": "Émotions, distance et équipe",
+    "difficulty": "medium",
+    "question": "Après avoir écouté une personne en difficulté, quelle démarche d’équipe peut être utile ?",
+    "choices": [
+      "Transmettre une information pertinente dans le cadre du soin",
+      "Proposer, avec la personne, une ressource adaptée",
+      "Partager librement son histoire à l’extérieur du service",
+      "Travailler avec les professionnels concernés",
+      "Se décharger de toute relation future"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Transmissions, ressources associatives et travail interdisciplinaire complètent l’écoute ; orienter ne signifie pas abandonner la relation.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle place pour l’équipe dans la relation d’aide ?",
+        "answers": [
+          "Proposer des ressources adaptées et transmettre les éléments nécessaires, sans abandonner l’écoute."
+        ],
+        "explanation": "Transmissions, ressources associatives et travail interdisciplinaire complètent l’écoute ; orienter ne signifie pas abandonner la relation."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_038",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 38,
+    "theme": "Analyse de situation",
+    "difficulty": "hard",
+    "question": "Une patiente à J5 d’une mastectomie dit « tout cela m’inquiète ». Quels premiers gestes relationnels sont cohérents ?",
+    "choices": [
+      "Se placer dans une posture calme et disponible",
+      "Lui imposer immédiatement une explication psychologique",
+      "Accueillir ses mots et lui laisser le choix de préciser",
+      "Promettre un avenir sans difficulté",
+      "Adapter temporairement le déroulement du soin pour l’écouter"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La situation travaillée conduit à reconnaître l’émotion, ouvrir l’échange et adapter sa disponibilité avant de proposer une solution.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle réponse initiale privilégier devant une inquiétude après une mastectomie ?",
+        "answers": [
+          "Reconnaître l’inquiétude, se rendre disponible et inviter la personne à préciser ce qui la préoccupe."
+        ],
+        "explanation": "La situation travaillée conduit à reconnaître l’émotion, ouvrir l’échange et adapter sa disponibilité avant de proposer une solution."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_039",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 39,
+    "theme": "Analyse de situation",
+    "difficulty": "hard",
+    "question": "Après « comment vais-je vivre ainsi ? », quelle séquence permet de respecter la parole ?",
+    "choices": [
+      "Observer et accueillir sans jugement",
+      "Reformuler les mots employés",
+      "Attribuer immédiatement une cause",
+      "Explorer par une question ouverte",
+      "Choisir seul une orientation définitive"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’observation, la reformulation et la question ouverte précèdent les hypothèses ; la personne reste la mieux placée pour définir son vécu.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel mémo d’entretien appliquer ?",
+        "answers": [
+          "Accueillir → reformuler → explorer → accompagner selon les attentes exprimées."
+        ],
+        "explanation": "L’observation, la reformulation et la question ouverte précèdent les hypothèses ; la personne reste la mieux placée pour définir son vécu."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_040",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 40,
+    "theme": "Analyse de situation",
+    "difficulty": "medium",
+    "question": "Quel objectif décrit le mieux une écoute relationnelle de qualité ?",
+    "choices": [
+      "Obtenir la solution voulue par le soignant",
+      "Laisser la personne exprimer et clarifier son vécu",
+      "Faciliter une relation de confiance",
+      "Reconnaître ses ressources et sa capacité de décision",
+      "Supprimer tous les temps de silence"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’écoute relationnelle vise la compréhension, la confiance et la mobilisation des ressources propres au patient, non l’adhésion forcée à une réponse du soignant.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le but principal de l’écoute active ?",
+        "answers": [
+          "Faciliter l’expression du vécu, la compréhension mutuelle et une relation de confiance."
+        ],
+        "explanation": "L’écoute relationnelle vise la compréhension, la confiance et la mobilisation des ressources propres au patient, non l’adhésion forcée à une réponse du soignant."
+      }
+    ]
   }
 ]
