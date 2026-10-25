@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contrôle navigateur — Navigation pédagogique V2</title>
+  <style>
+    :root{--p:#6941c6;--ink:#242332;--muted:#6c6878;--line:#e6e0ef}
+    body{background:#f7f5fb;color:var(--ink);font-family:system-ui;padding:20px}
+    body.v72-dark{background:#17151f;color:#f4f0fb;--ink:#f4f0fb;--muted:#c5bdd2;--line:#50465c}
+    .v74-domain-group,.v74-resource-block{border:1px solid var(--line);padding:12px;margin:10px 0}
+    .v74-domain-head,.v74-ue-head,.v74-domain-title,.v74-ue-title{display:flex;gap:8px;align-items:center}
+    .v74-course-card{display:block;margin:8px;padding:10px}
+    .v74-course-card h3{margin:0}
+    .v74-ue-cards{margin:10px 0}
+  </style>
+</head>
+<body>
+  <section id="courses74">
+    <div class="card">
+      <h1>Mes cours</h1><input id="v74CourseSearch" type="text" placeholder="Rechercher…">
+    </div>
+    <div id="v74CourseGrid">
+      <section class="v74-domain-group">
+        <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE A</span><div class="v74-domain-name">Ancien titre domaine A</div></div></div>
+        <div class="v74-domain-body"><div class="v74-ue-group">
+          <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE A1</span><span class="v74-ue-count">1 cours</span></div></div>
+          <div class="v74-ue-cards">
+            <button class="v74-course-card" data-course74="Histoire et identité — PROVISOIRE"><h3>Histoire et identité — PROVISOIRE</h3></button>
+          </div>
+        </div></div>
+      </section>
+      <section class="v74-domain-group">
+        <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE B</span><div class="v74-domain-name">Ancien titre domaine B</div></div></div>
+        <div class="v74-domain-body"><div class="v74-ue-group">
+          <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE B1</span></div></div>
+          <div class="v74-ue-cards">
+            <button class="v74-course-card" data-course74="Biomolécules"><h3>Biomolécules</h3></button>
+          </div>
+        </div></div>
+      </section>
+    </div>
+  </section>
+  <section id="course74">
+    <div id="v74CourseDetail">
+      <div class="card v74-course-head"><button class="v74-back">Retour</button><h2>Histoire et identité — PROVISOIRE</h2></div>
+      <div class="v74-resource-block v74-qcm-section"><div class="row"><b>🧠 QCM</b></div><button id="qcmClick">QCM</button></div>
+      <div class="v74-resource-block v74-original-support"><div class="row"><b>📚 Support du cours</b></div></div>
+      <div class="v74-resource-block"><div class="row"><b>📄 Fiches de révision</b></div></div>
+      <div class="v74-resource-block"><div class="row"><b>◫ Infographies</b></div></div>
+      <div class="v74-resource-block"><div class="row"><b>🎧 Vocaux</b></div></div>
+      <div class="v74-resource-block"><div class="row"><b>📄 Documents du cours</b></div></div>
+    </div>
+  </section>
+  <output id="testResult" data-result="pending">Tests en cours</output>
+  <script>
+  window.IFSI_V741 = {getRegistry:function(){return {courses:[
+    {id:'histoire',label:'Histoire et identité — PROVISOIRE',domain:'A',ue:'A1',sourceBasis:'course_captures'},
+    {id:'biomolecules',label:'Biomolécules',domain:'B',ue:'B1',officialSupportUrl:'https://drive.google.com/file/d/example/view'}
+  ]}}};
+  window.__pristineDomain=document.querySelector('#v74CourseGrid').firstElementChild.outerHTML;
+  window.__qcmClicks=0;
+  document.getElementById('qcmClick').addEventListener('click',function(){window.__qcmClicks++});
+  </script>
+  <!-- Chromium --dump-dom fige souvent les RAF virtuelles : simulateur d'horloge déterministe, DOM/CSS réels. -->
+  <script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)}</script>
+  <script src="./course-navigation-ui-v2.js"></script>
+  <script>
+  (function(){
+    'use strict';
+    const fail=message=>{const out=document.getElementById('testResult');out.dataset.result='fail';out.textContent=message;console.error(message)};
+    const tick=()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+    async function check(){
+      try{
+        await tick();
+        const a=document.getElementById('courses74'),grid=document.getElementById('v74CourseGrid'),detail=document.getElementById('v74CourseDetail');
+        const ui=window.IFSI_COURSE_NAV_UI;
+        if(!ui||ui.version!=='2.0'||!ui.status().active)throw Error('Module V2 inactif');
+        if(!a.querySelector('.v8430-note'))throw Error('NB provisoire absent');
+        if(!a.querySelector('.v8430-provisional'))throw Error('Pastille provisoire absente');
+        if(a.querySelectorAll('.v8430-provisional').length!==1)throw Error('Pastille inattendue sur Biomolécules');
+        const order=[...detail.querySelectorAll(':scope > .v74-resource-block')].map(x=>x.classList.contains('v74-original-support')?'support':x.classList.contains('v74-qcm-section')?'qcm':x.querySelector('.row b')?.textContent.toLowerCase()||'');
+        if(order[0]!=='support'||!order[1].includes('fiches')||order[2]!=='qcm'||!order[3].includes('infographies')||!order[4].includes('vocaux'))throw Error('Ordre de consultation incorrect : '+order.join(' > '));
+        if(!detail.querySelector('.v8430-path')?.textContent.includes('Fondements'))throw Error('Fil d’Ariane pédagogique absent');
+        document.getElementById('qcmClick').click();
+        if(window.__qcmClicks!==1)throw Error('Perte des actions des ressources déplacées');
+        const firstPasses=ui.status().passes;
+        // Tempête de mutations internes : l'observateur restreint ne doit pas s'emballer.
+        const card=grid.querySelector('.v74-course-card');
+        for(let i=0;i<250;i++){const node=document.createElement('i');card.appendChild(node);node.remove()}
+        await tick();
+        if(ui.status().passes!==firstPasses)throw Error('L’observateur traite des mutations internes');
+        // Nouveau rendu des cours par le moteur V74.
+        const old=grid.firstElementChild;
+        old.outerHTML=window.__pristineDomain;
+        await tick();
+        if(ui.status().passes>firstPasses+3)throw Error('Boucle de rendu du catalogue');
+        const top=grid.querySelector('.v74-domain-group');
+        const toggle=top.querySelector('.v8430-domain-switch');
+        if(!toggle)throw Error('Domaine non repliable');
+        toggle.click();toggle.click();
+        if(!top.querySelector('.v74-domain-body'))throw Error('Arborescence endommagée');
+        // Contrôle des thèmes sans destruction d'état.
+        document.body.classList.add('v72-dark');await tick();
+        const dark=getComputedStyle(document.querySelector('.v8430-provisional')).backgroundColor;
+        document.body.classList.remove('v72-dark');await tick();
+        const light=getComputedStyle(document.querySelector('.v8430-provisional')).backgroundColor;
+        if(dark===light)throw Error('Pastille sombre et claire indifférenciées');
+        ui.stop();
+        document.getElementById('testResult').dataset.result='pass';
+        document.getElementById('testResult').textContent='PASS : navigation, thèmes, ordre, QCM et stabilité ; '+firstPasses+' passes initiales';
+      }catch(e){fail(e.stack||String(e))}
+    }
+    window.addEventListener('load',()=>check());
+  })();
+  </script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import './course-navigation-ui-v2-smoke.mjs';
 import './standalone-cache-repair.mjs';
 import zlib from 'node:zlib';
 
