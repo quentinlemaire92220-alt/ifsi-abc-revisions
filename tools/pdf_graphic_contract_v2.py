@@ -72,7 +72,7 @@ def inspect(pdf:Path,role:str,expected_pages:int|None=None,min_font:float=7.4,re
                     if not any(4<=r.x0-b.x1<=75 and abs((r.y0+r.y1)/2-(b.y0+b.y1)/2)<=8 for b in boxes):
                         errors.append('Case QCM absente ou après le choix '+t[:14])
             if role=='qcm' and answers:
-                for i,(txt,r) in enumerate(lines):
+                for i,(txt,r,_) in enumerate(lines):
                     if not re.fullmatch(r'Q\\d{2}',txt):continue
                     next_q=next((k for k in range(i+1,len(lines))
                                    if re.fullmatch(r'Q\\d{2}',lines[k][0])),len(lines))
