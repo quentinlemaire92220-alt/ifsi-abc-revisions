@@ -71,6 +71,22 @@ def inspect(pdf:Path,role:str,expected_pages:int|None=None,min_font:float=7.4,re
                 for t,r in answers:
                     if not any(4<=r.x0-b.x1<=75 and abs((r.y0+r.y1)/2-(b.y0+b.y1)/2)<=8 for b in boxes):
                         errors.append('Case QCM absente ou après le choix '+t[:14])
+            if role=='qcm' and answers:
+                for i,(txt,r) in enumerate(lines):
+                    if not re.fullmatch(r'Q\\d{2}',txt):continue
+                    next_q=next((k for k in range(i+1,len(lines))
+                                   if re.fullmatch(r'Q\\d{2}',lines[k][0])),len(lines))
+                    ending=next((box for text,box,_ in reversed(lines[i+1:next_q])
+                                 if text.startswith('E. ')),None)
+                    if ending is None:
+                        errors.append('Question sans cinquième choix : '+txt);continue
+                    edges=[fitz.Rect(d['rect']) for d in drawings]
+                    def side(left):
+                        return any(v.height>50 and v.width<4 and
+                                   (v.x0<r.x0-6 if left else v.x0>r.x0+350) and
+                                   v.y0<=r.y0+5 and v.y1>=ending.y1+1 for v in edges)
+                    if not (side(True) and side(False)):
+                        errors.append('Encadré vectoriel de question incomplet : '+txt)
             if role=='qcm':all_choices.extend(answers)
             all_body.extend(t for t,r,_ in lines if r.y0>=45 and r.y1<=H-40)
             if render_dir:
