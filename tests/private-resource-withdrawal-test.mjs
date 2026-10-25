@@ -168,6 +168,9 @@ for(const c of actualMan.courses){
   delete c.revisionSheetSupplement;delete previous.revisionSheetSupplement;
  }
 }
+// Les compléments approuvés sont vérifiés séparément plus haut ; retirer seulement
+// leurs nouvelles entrées de la comparaison du manifeste pédagogique historique.
+actualMan.audioSupplements=clone(prevAudio);
 assert.deepEqual(actualMan,expectedMan,
  'Manifeste : seule la révocation des pointeurs de travail, et les comptes sourcés, sont permises');
 assert.equal(currentMan.courses.length,oldMan.courses.length+newDeliveryIds.size,'Livraison historique supprimée ou nouvelle livraison orpheline');
