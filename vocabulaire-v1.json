@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Vocabulaire médical IFSI",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-20",
   "sourceNote": "Lexique pédagogique transversal et par cours ; morphèmes et définitions à confronter aux supports officiels ; QCM et flashcards générés à partir d'une source unique. Les liens pédagogiques ne constituent pas une validation du support officiel. Étymologies : décomposition pédagogique quand elle est fiable ; sinon origine historique ou expression descriptive, sans morphèmes artificiels.",
   "entries": [
     {
@@ -6342,7 +6342,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-maltraitance-p01",
@@ -6354,7 +6354,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-vulnerabilite-p01",
@@ -6366,7 +6366,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-dignite-p01",
@@ -6378,7 +6378,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-intimite-p01",
@@ -6390,7 +6390,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-autonomie-p01",
@@ -6402,7 +6402,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-consentement-p01",
@@ -6414,7 +6414,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     },
     {
       "id": "bientraitance-securite-morale-p01",
@@ -6426,7 +6426,7 @@
       "courseIds": [
         "d1_bientraitance"
       ],
-      "sourceType": "reference_pedagogique_orale_provisoire"
+      "sourceType": "reference_pedagogique"
     }
   ]
 }
