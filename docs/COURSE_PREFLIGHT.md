@@ -1,3 +1,7 @@
+## Extension V2 — QA graphique des octets PDF
+
+Le contrôle automatique `tools/pdf_graphic_contract_v2.py` vérifie le rendu géométrique de **chaque page** des PDF étudiants écrits (bandeaux violets, A4, texte, collisions, cases et encadrés des QCM, lexique en fin de fiche), sur les octets réels plutôt que sur une déclaration `PASS`. Le préflight de publication le lance pour tout lot `written_v1` présent dans `publicArtifacts`; le rapport est conservé dans `preflight-reports/graphic-v2.json`. Les nouveaux PDF Drive privés doivent être examinés localement avant PR : voir [GRAPHIC_QA_V2.md](GRAPHIC_QA_V2.md). Ce contrôle ne certifie pas l'esthétique complète ni l'exactitude médicale : la comparaison visuelle au maître V5.3 et la revue humaine restent obligatoires. Les TNR historiques restent bloquants ; aucune migration automatique des anciens cours.
+
 # Préflight de préparation et de publication
 
 Exécuter les contrôles ciblés avant l’ouverture d’une PR, chaque envoi d’un candidat corrigé et toute publication. Ils ne remplacent ni le TNR complet, ni la revue pédagogique, ni l’accord humain. Le lanceur ne modifie aucun contenu et n’écrit aucune approbation.
