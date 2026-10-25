@@ -1,5 +1,5 @@
 {
-  "version": "8.30.124",
+  "version": "8.30.125",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire V8.30.124 : classement des fichiers PDF QCM sous la rubrique QCM, sans modification des contenus ni des cours existants.",
+  "note": "Inventaire V8.30.125 : Relation soignant-soigné D1.1 ajoutée en PROVISOIRE depuis deux transcriptions ; 40 QCM et flashcards, 25 termes, 1 fiche écrite ; diaporama officiel absent.",
   "expectedTotals": {
-    "courses": 54,
-    "sheets": 71,
+    "courses": 55,
+    "sheets": 72,
     "infographics": 184,
     "vocals": 166,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1773
+    "qcmRuntimeMin": 1813
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -219,6 +219,17 @@
       "flashcards": 40,
       "sheetFormat": "written_v1",
       "newCourse": true
+    },
+    {
+      "courseId": "d1_relation_soignant_soigne_ecoute_active",
+      "course": "Relation soignant-soigné et écoute active — PROVISOIRE",
+      "release": "8.30.125",
+      "qcm": 40,
+      "flashcards": 40,
+      "lexicon": 25,
+      "sheetFormat": "written_v1",
+      "newCourse": true,
+      "sourceStatus": "provisional"
     }
   ],
   "auditLogicVersion": "8.30.10",
