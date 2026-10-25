@@ -95,7 +95,8 @@ def inspect(pdf:Path,role:str,expected_pages:int|None=None,min_font:float=7.4,re
 def published_packs(manifest:Path):
     for c in json.loads(manifest.read_text(encoding='utf-8'))['courses']:
         if c.get('packFormat')!='written_v1' or not c.get('publicArtifacts'):continue
-        for role,artifact in c['publicArtifacts'].items():
+        for artifact_role,artifact in c['publicArtifacts'].items():
+            role='fiche' if artifact_role=='sheet' else artifact_role
             if role not in ROLES:continue
             p=Path(artifact['path'])
             if not p.is_relative_to('assets') or '..' in p.parts:raise ValueError('Chemin public dangereux')
