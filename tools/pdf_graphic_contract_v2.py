@@ -83,7 +83,7 @@ def inspect(pdf:Path,role:str,expected_pages:int|None=None,min_font:float=7.4,re
                     edges=[fitz.Rect(d['rect']) for d in drawings]
                     def side(left):
                         return any(v.height>50 and v.width<4 and
-                                   (v.x0<r.x0-6 if left else v.x0>r.x0+350) and
+                                   (v.x0<r.x0-3 if left else v.x0>r.x0+350) and
                                    v.y0<=r.y0+5 and v.y1>=ending.y1+1 for v in edges)
                     if not (side(True) and side(False)):
                         errors.append('Encadré vectoriel de question incomplet : '+txt)
