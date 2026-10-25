@@ -29,6 +29,16 @@
        throw Error('Menus pédagogiques absents après 90 contrôles : '+JSON.stringify(ui.status()));
      }
      if(!document.querySelector('#courses74 .v8430-note'))throw Error('NB Provisoire absent');
+     // Contrôler une vraie UE après rendu V74 (mode sombre/clair compatible).
+     var ueHead=grid.querySelector('.v8430-ue-switch');
+     var ueTitle=ueHead&&ueHead.querySelector('.v74-ue-title');
+     var ueName=ueHead&&ueHead.querySelector('.v8430-ue-name');
+     var ueCount=ueHead&&ueHead.querySelector('.v74-ue-count');
+     var arrow=ueHead&&ueHead.querySelector('.v8430-arrow');
+     if(!ueTitle||!ueName||!ueCount||!arrow)throw Error('Structure pédagogique UE incomplète');
+     if(getComputedStyle(ueTitle).display!=='grid')throw Error('UE : titre et compteurs non séparés');
+     if(arrow.getBoundingClientRect().width<28||arrow.getBoundingClientRect().height<28)throw Error('Flèche de navigation trop petite');
+     if(ueCount.getBoundingClientRect().top<=ueName.getBoundingClientRect().top)throw Error('Compteurs UE non placés sous son titre');
      var before=ui.status().passes;
      var cards=grid.querySelectorAll('.v74-course-card').length;
      if(cards<40)throw Error('Seulement '+cards+' cours dans le catalogue');
@@ -71,6 +81,13 @@
      document.body.classList.remove('v72-dark');
      var light=getComputedStyle(badge).backgroundColor;
      if(dark===light)throw Error('Thème sombre identique au clair');
+
+     var compact=detail.querySelector('.v74-resource-list > .v74-resource > .actions .btn');
+     if(!compact)throw Error('Aucun bouton de ressource pour tester la compacité');
+     var dimensions=compact.getBoundingClientRect();
+     if(dimensions.width>190||dimensions.height<42)throw Error('Bouton de ressource trop large ou trop petit : '+dimensions.width+'×'+dimensions.height);
+     var resource=compact.closest('.v74-resource');
+     if(getComputedStyle(resource).display!=='grid')throw Error('Carte ressource pas en mise en page compacte');
      if(!ui.status().active)throw Error('Le module s’est désactivé');
      if(ui.status().passes>30)throw Error('Nombre excessif de passages '+ui.status().passes);
      ui.stop();
