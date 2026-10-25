@@ -9,8 +9,9 @@ import {
  isScriptWorkItem,expectedPublicCourseAfterWithdrawal,
  expectedPublicDeliveryAfterWithdrawal,isApprovedPrivateReferenceWithdrawal
 } from './private-resource-withdrawal-lib.mjs';
-import {publicationBundle,bundleDigest,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
+import {publicationBundle,bundleDigest,validateChangedDeliveries,isStrictAudioSupplementOnly} from './course-publication-approval-lib.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
+import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=file=>JSON.parse(readFileSync(file,'utf8'));
@@ -60,6 +61,31 @@ function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery)
 
 const approvedUpdates=new Set(currentMan.courses.filter(c=>
  !isDeepStrictEqual(c.publicationApproval,oldMan.courses.find(p=>p.courseId===c.courseId)?.publicationApproval)).map(c=>c.courseId));
+// Des MP3 nouveaux sont acceptés ici seulement si leur ajout est strictement
+// indépendant du dossier pédagogique et signé par un nouveau GO audio.
+const prevVocals=before('vocals.json'),nextVocals=disk('vocals.json');
+assert.deepEqual(nextVocals.slice(0,prevVocals.length),prevVocals,'Aucun MP3 historique ne doit changer');
+const prevAudio=oldMan.audioSupplements||[],nextAudio=currentMan.audioSupplements||[];
+assert.deepEqual(nextAudio.slice(0,prevAudio.length),prevAudio,'Compléments audio historiques altérés');
+const freshAudio=nextAudio.slice(prevAudio.length);
+const expectedAudioIds=freshAudio.flatMap(p=>p.vocalIds||[]);
+assert.deepEqual(nextVocals.slice(prevVocals.length).map(v=>v.id).sort(),expectedAudioIds.slice().sort(),
+ 'Le catalogue doit contenir exactement les MP3 nouvellement approuvés');
+const baseAudioData={registry:oldReg,vocals:prevVocals,sheets:[1,2,3].flatMap(n=>before('sheets-'+n+'.json')),
+ infographics:before('infographics.json'),vocabulary:before('vocabulaire-v1.json').entries,banks:{},imageHashes:{}};
+const nowAudioData={registry:currentReg,vocals:nextVocals,sheets:[1,2,3].flatMap(n=>disk('sheets-'+n+'.json')),
+ infographics:disk('infographics.json'),vocabulary:disk('vocabulaire-v1.json').entries,banks:{},imageHashes:{}};
+validateAudioSupplements(currentMan,nowAudioData);
+const audioOnlyUpdates=new Set();
+for(const pack of freshAudio){
+ assert.ok(!audioOnlyUpdates.has(pack.courseId),'Au plus un complément ajouté par cours dans ce lot');
+ const prior=oldMan.courses.find(c=>c.courseId===pack.courseId);
+ const updated=currentMan.courses.find(c=>c.courseId===pack.courseId);
+ assert.ok(prior&&updated,'Complément MP3 sur un cours inconnu');
+ assert.ok(isStrictAudioSupplementOnly(pack.courseId,prior,updated,baseAudioData,nowAudioData,oldMan,currentMan),
+   'Ajout audio insuffisamment isolé ou sans validation : '+pack.courseId);
+ audioOnlyUpdates.add(pack.courseId);
+}
 const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);
 if(approvedUpdates.size){
  // Une publication ultérieure est contrôlée comme un vrai package ; elle ne
@@ -80,6 +106,12 @@ for(const course of newCourses){
  assert.ok(currentMan.courses.some(c=>c.courseId===course.id),'Nouveau cours sans manifeste : '+course.id);
 }
 const registryForWithdrawal=clone(currentReg.courses.filter(c=>historicIds.has(c.id)));
+for(const course of registryForWithdrawal)if(audioOnlyUpdates.has(course.id)){
+ const beforeCourse=oldReg.courses.find(c=>c.id===course.id);
+ assert.ok(beforeCourse,'Cours sans historique pour complément MP3');
+ Object.keys(course).forEach(k=>delete course[k]);
+ Object.assign(course,expectedPublicCourseAfterWithdrawal(beforeCourse));
+}
 for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  const oldCourse=oldReg.courses.find(c=>c.id===course.id);
  assert.ok(oldCourse,'Complément sans cours historique');
@@ -121,6 +153,9 @@ actualMan.courses=actualMan.courses.filter(c=>!newDeliveryIds.has(c.courseId));
 const sheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json'));
 for(const c of actualMan.courses){
  const previous=expectedMan.courses.find(x=>x.courseId===c.courseId);
+ if(audioOnlyUpdates.has(c.courseId)){
+  Object.keys(c).forEach(k=>delete c[k]);Object.assign(c,clone(previous));continue;
+ }
  if(approvedUpdates.has(c.courseId)){
   // Les seules différences admises ont passé la préservation ci-dessus et
   // le digest complet du package ; l'ancien manifeste reste la référence P0.
@@ -133,6 +168,9 @@ for(const c of actualMan.courses){
   delete c.revisionSheetSupplement;delete previous.revisionSheetSupplement;
  }
 }
+// Les compléments approuvés sont vérifiés séparément plus haut ; retirer seulement
+// leurs nouvelles entrées de la comparaison du manifeste pédagogique historique.
+actualMan.audioSupplements=clone(prevAudio);
 assert.deepEqual(actualMan,expectedMan,
  'Manifeste : seule la révocation des pointeurs de travail, et les comptes sourcés, sont permises');
 assert.equal(currentMan.courses.length,oldMan.courses.length+newDeliveryIds.size,'Livraison historique supprimée ou nouvelle livraison orpheline');
@@ -142,7 +180,8 @@ for(const c of currentMan.courses){
  if(!approvedUpdates.has(c.courseId))assert.deepEqual(c.publicationApproval,oldMan.courses.find(x=>x.courseId===c.courseId).publicationApproval,
   'Une approbation approuvée ne doit pas être réécrite');
 }
-assert.deepEqual(currentMan.audioSupplements,oldMan.audioSupplements,'MP3 publiés modifiés');
+assert.deepEqual(currentMan.audioSupplements.slice(0,prevAudio.length),prevAudio,'MP3 historiques ou leurs validations modifiés');
+assert.equal(currentMan.audioSupplements.length,prevAudio.length+freshAudio.length,'Compléments audio non autorisés');
 
 // La même règle doit rejeter toute mutation masquée d'un cours, corrigé ou PDF.
 const course={id:'demo',label:'Démo',additionalDocuments:[

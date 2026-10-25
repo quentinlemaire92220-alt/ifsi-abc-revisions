@@ -11,7 +11,15 @@ assert.equal(questions.filter(q=>q.courseId==='droits_patients').length,105);
 assert.equal(deck.filter(c=>c.courseId==='droits_patients'&&!String(c.id).startsWith('voc:')).length,93);
 assert.equal(bank.flatMap(q=>q.flashcards||[]).length,24);
 assert.deepEqual(read('qextra-55.txt'),old('qextra-55.txt'),'85 questions et cartes historiques préservées');
-assert.deepEqual(read('vocals.json'),old('vocals.json'),'Aucun MP3 modifié');
+const oldVocals=old('vocals.json'),newVocals=read('vocals.json');
+assert.deepEqual(newVocals.slice(0,oldVocals.length),oldVocals,'Aucun MP3 historique modifié');
+const addedVocals=newVocals.slice(oldVocals.length);
+const approvedAudio=read('docs/course-deliveries.json').audioSupplements||[];
+for(const voice of addedVocals){
+ assert.ok(approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
+ 'MP3 ajouté sans complément audio explicitement approuvé : '+voice.id);
+}
+assert.equal(addedVocals.length,3,'Trois MP3 complémentaires attendus');
 const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
 const beforeCount=oldVocabulary.entries.length;
 assert.deepEqual({...newVocabulary,entries:newVocabulary.entries.slice(0,beforeCount)},oldVocabulary,

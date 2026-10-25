@@ -518,7 +518,8 @@
         "pharmaco_vocal_02",
         "pharmaco_vocal_03",
         "pharmaco_vocal_04",
-        "pharmaco_vocal_05"
+        "pharmaco_vocal_05",
+        "pharmaco_consolidation_20261025"
       ],
       "blockers": [
         {
@@ -549,7 +550,8 @@
         "1m5OEJjaR9rfHYUTtLxXS9JLBE2P8PcpP": "38cb2dcf64768b424caa40ad3a460eb2ea344205c2ece51c0327d5413e14023d",
         "1cPBkdsxktiF5QUMrueQsNWO4dyWfRYbo": "f5a98698959efb970c9b3b67fd979d8f741e3cd09486d8290fc2dce6f08ddd7b",
         "1UvkvREVMHXHqIHhtvsSmkw6Z-yXNyhK2": "5ea3905fc3095e2838f411c6e858a1239a2b4afb36b1b310b0f2ac5ad28a76b4",
-        "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew": "cd978cdb5e761060cb081559f686da11334265dd14e6d13b1f2da05881a5ab5b"
+        "1Bk9rnJ0kSIOGa0C9T418BZZFz4vO7tew": "cd978cdb5e761060cb081559f686da11334265dd14e6d13b1f2da05881a5ab5b",
+        "14wgc45ehZKBwooCX404Y2KwZFK7IRvL2": "f0ae0056103ab4cb00ac51612187484f19ecdf1d048500172d93959ff2c43b29"
       },
       "dualSheetCoverage": {
         "expectedNotions": 264,
@@ -854,7 +856,8 @@
         "neuroinf_03",
         "neuroinf_04",
         "neuroinf_05",
-        "neuroinf_06"
+        "neuroinf_06",
+        "neuroinf_consolidation_20261025"
       ],
       "blockers": [
         {
@@ -882,7 +885,8 @@
         "1TfaYBbVQSEDv80Cx4rcwqxjumQiHXnQO": "898cee2142023a7962897b68a0ba047da4f4ea59463154c62a7437a4f1799bdb",
         "1rHfG1KudvN8FxW00XwPkfSAGMbIC5Ki_": "46dc56b03d6a6215ed88895f76fa4583adec93f225a2ef11b184625373533b8b",
         "1M7pMBnyykDYOxRNx3WK4C6h7sQf3RUUG": "3f3fb3fc948fffbe2c125b46d5199907200e56e10b01f750e0361ebada9ee934",
-        "1C-r7QoqnvEhJmyaa0sD5M6YwwYTqkMfX": "31052e3052d328115a9b0cf2a44b03ec28b2037a7d21a30471b53d53511e79e7"
+        "1C-r7QoqnvEhJmyaa0sD5M6YwwYTqkMfX": "31052e3052d328115a9b0cf2a44b03ec28b2037a7d21a30471b53d53511e79e7",
+        "1uD-Y3MX38A1Dn_V6KnLbgHmkeD-4IRZX": "fb8aac6c934bac047abeba109de231da838bf94a83ffd3c2b1c7fbc3250cab06"
       },
       "dualSheetCoverage": {
         "expectedNotions": 161,
@@ -2078,7 +2082,9 @@
       "qcmCount": 40,
       "flashcardCount": 40,
       "vocabularyCount": 6,
-      "vocals": [],
+      "vocals": [
+        "d1_posture_td2_vocal_01"
+      ],
       "scriptsPreparedCount": 1,
       "requestedVocals": true,
       "sourceAudit": {
@@ -2131,7 +2137,8 @@
         "1ZiZ3nQIoadmGGL7GxzBtRBdPuGTvV85n": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
         "1QAjHRJbfO9mh8hnZlptBfcuS3Ad371uV": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718",
         "d1_posture_td2_qcm_public_candidate": "50ecb0a7a31c49d128827c0192787c61d369604e5d5a5e343f0f2c2ea079ba75",
-        "d1_posture_td2_flashcards_public_candidate": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718"
+        "d1_posture_td2_flashcards_public_candidate": "c8fa46c316d5724d99e5d275e43aac32c7149ea9e12e79140d232479732c4718",
+        "1cPOdx0je5ZLLb5fqFAwT6jFvoPQj7ylH": "906f2c85b228a09c8293fb36294d3bd8026bffbe6c39eed06161d877d9e650c0"
       },
       "publishedVerification": {
         "status": "MATCH",
@@ -2161,11 +2168,6 @@
           "resource": "transcription_pt02",
           "reason": "incomplete_tail",
           "detail": "Le fichier PT02 s'interrompt vers 01:01, sans prétention à une revue exhaustive de la fin."
-        },
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Un script privé est préparé ; aucun MP3 annoncé ni publié."
         }
       ],
       "publicationApproval": {
@@ -3224,6 +3226,57 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-20T20:46:30.855Z",
         "bundleSha256": "c58fdee8a3252f792229bbfab9528a1878d1089a9c386f6394776d04b037f036"
+      }
+    },
+    {
+      "courseId": "d1_posture_professionnelle_td2",
+      "folderId": "1wcg8W6W3L-tvcHVasmH8bTl6E9ci08Kv",
+      "vocalIds": [
+        "d1_posture_td2_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1cPOdx0je5ZLLb5fqFAwT6jFvoPQj7ylH": "906f2c85b228a09c8293fb36294d3bd8026bffbe6c39eed06161d877d9e650c0"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T17:40:00+01:00",
+        "bundleSha256": "fc374865ffc67afed527da1ebd67b68c8b9da21be2dc549376ace44e95e521f6"
+      }
+    },
+    {
+      "courseId": "pharmacologie",
+      "folderId": "1dNYp-zO3rKEzXGdLGq-TxeTPC5URpk58",
+      "vocalIds": [
+        "pharmaco_consolidation_20261025"
+      ],
+      "artifactSha256s": {
+        "14wgc45ehZKBwooCX404Y2KwZFK7IRvL2": "f0ae0056103ab4cb00ac51612187484f19ecdf1d048500172d93959ff2c43b29"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T17:40:00+01:00",
+        "bundleSha256": "6c309292ed23f048c41d25df75ce0fc612a87ec4416be7db12f3170fae0a7b37"
+      }
+    },
+    {
+      "courseId": "infections_neuro_meningees",
+      "folderId": "1wYJ2pJmqATjIejV87ospt9kZju6zqgyf",
+      "vocalIds": [
+        "neuroinf_consolidation_20261025"
+      ],
+      "artifactSha256s": {
+        "1uD-Y3MX38A1Dn_V6KnLbgHmkeD-4IRZX": "fb8aac6c934bac047abeba109de231da838bf94a83ffd3c2b1c7fbc3250cab06"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T17:40:00+01:00",
+        "bundleSha256": "72437ade30c0d8b760205bc395f7e80819709b070cb8a563c6fc50932ac32b3e"
       }
     }
   ]

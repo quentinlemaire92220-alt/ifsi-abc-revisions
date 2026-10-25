@@ -13,7 +13,11 @@ assert.equal(delivery.status,'partial','PT02 tronquée : pas de statut complet')
 assert.equal(delivery.sourceAudit?.oralStatus,'incomplete_tail');
 assert.equal(delivery.sourceAudit?.oralCoverageExhaustive,false);
 assert.equal(delivery.sourceAudit?.recordingTailTruncated,true);
-assert.equal(delivery.vocals.length,0,'Aucun MP3 ne doit être inventé');
+assert.deepEqual(delivery.vocals,['d1_posture_td2_vocal_01'],'Posture TD2 : MP3 validé absent du manifeste');
+const vocal=read('vocals.json').find(v=>v.id==='d1_posture_td2_vocal_01');
+assert.ok(vocal&&vocal.courseId===id&&vocal.durationSeconds>0&&vocal.durationSeconds<600,'MP3 Posture absent ou trop long');
+assert.equal(vocal.mime,'audio/mpeg');
+assert.equal(delivery.artifactSha256s[vocal.driveId],'906f2c85b228a09c8293fb36294d3bd8026bffbe6c39eed06161d877d9e650c0');
 const assets=[
  ['UE_D1_1_Posture_Professionnelle_Fiche_Revision.pdf',delivery.publicAssetSha256],
  ['UE_D1_1_Posture_Professionnelle_QCM_40_Corrige.pdf',delivery.qcmPublicAssetSha256],
