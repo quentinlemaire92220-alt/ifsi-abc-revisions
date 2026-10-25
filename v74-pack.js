@@ -211,6 +211,9 @@ const studentVisibleDocument74=doc=>{
   return !/(?:^|\b)(?:scripts?\s+voc(?:al|aux)|transcription|confidentiel|confidential|interne|internal|prive|private|owner.only)(?:\b|$)/.test(type);
 };
 
+// Un QCM (PDF officiel ou entraînement) appartient aux ressources QCM, jamais aux supports sources.
+const isQcmDocument74=doc=>/^(?:qcm|quiz)(?: |$)/.test(norm74([doc?.category,doc?.type].filter(Boolean).join(' ')))||/^(?:qcm|quiz)\b/i.test(String(doc?.label||'').trim());
+
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
   const d=courseData74(selectedCourse),vf=new Set(vocalState74().favorites||[]),mastery=d.rate??0;
@@ -254,13 +257,21 @@ function renderCourse74(){
     const parts=uniqueSupportParts74(url,Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[]);
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
-  const extraDocs=[['📝','QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+(courseMeta.id==='plaies_pansements'?' questions (corrigé dans un PDF séparé)':' questions et corrigé argumenté'),courseMeta.qcmPdfUrl],
-   ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)).map(x=>['📄',x.label,driveUrl(x.url)]))]
-   .filter(x=>x[2])
-   .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
-   .join('');
+  const qcmDocuments=[
+    ...(courseMeta.qcmPdfUrl?[{label:'QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+(courseMeta.id==='plaies_pansements'?' questions (corrigé dans un PDF séparé)':' questions et corrigé argumenté'),url:courseMeta.qcmPdfUrl}]:[]),
+    ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&isQcmDocument74(x)).map(x=>({label:x.label||'QCM PDF',url:driveUrl(x.url)})))
+  ].filter(x=>x.url);
+  const qcmSeen=new Set();
+  const qcmPdfCards=qcmDocuments.filter(x=>!qcmSeen.has(x.url)&&qcmSeen.add(x.url))
+    .map(x=>'<div class="v74-resource"><b>📝 '+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(x.url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>').join('');
+  const extraDocs=(courseMeta.additionalDocuments||[])
+    .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!isQcmDocument74(x))
+    .map(x=>['📄',x.label,driveUrl(x.url)]).filter(x=>x[2])
+    .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
+    .join('');
 
-  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}</div>
+  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div></div>
+  ${d.qs.length||qcmPdfCards?`<div class="card v74-resource-block v74-qcm-section"><div class="row"><b>🧠 QCM</b></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}${qcmPdfCards?`<div class="v74-resource-list">${qcmPdfCards}</div>`:''}</div>`:''}
   ${courseSourceHtml}
   ${childSupportHtml}
   ${extraDocs?`<div class="card v74-resource-block"><div class="row"><b>📚 Documents du cours</b></div><div class="v74-resource-list">${extraDocs}</div></div>`:''}
