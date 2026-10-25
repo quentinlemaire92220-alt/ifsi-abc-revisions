@@ -63,7 +63,7 @@ for(const prep of pending.courses){
   assert.ok(terms.every(t=>t.courseIds?.length===1&&t.courseIds[0]===id));
  }
  const publicMeta=JSON.stringify(prep);
- assert.ok(!/https?:\\/\\/drive\\.google\\.com|\\b(?:transcriptDriveId|recording_url|file_id)\\b/i.test(publicMeta),
+ assert.ok(!/https?:\/\/drive\.google\.com|\b(?:transcriptDriveId|recording_url|file_id)\b/i.test(publicMeta),
   id+': une source privée a fuité dans GitHub');
  console.log('PASS préparation isolée',id,'QCM',counts.questions,'cartes',counts.flashcards);
 }
