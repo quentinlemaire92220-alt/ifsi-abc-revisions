@@ -61,7 +61,9 @@
   window.__qcmClicks=0;
   document.getElementById('qcmClick').addEventListener('click',function(){window.__qcmClicks++});
   </script>
-  <script src="../../course-navigation-ui-v2.js"></script>
+  <!-- Chromium --dump-dom fige souvent les RAF virtuelles : simulateur d'horloge déterministe, DOM/CSS réels. -->
+  <script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)}</script>
+  <script src="./course-navigation-ui-v2.js"></script>
   <script>
   (function(){
     'use strict';
