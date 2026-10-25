@@ -94,6 +94,7 @@
      var light=getComputedStyle(badge).backgroundColor;
      if(dark===light)throw Error('Thème sombre identique au clair');
 
+     detail.querySelectorAll('.mku-toggle:not(:disabled)').forEach(function(button){if(button.getAttribute('aria-expanded')==='false')button.click()});
      var compact=detail.querySelector('.v74-resource-list > .v74-resource > .actions .btn');
      if(!compact)throw Error('Aucun bouton de ressource pour tester la compacité');
      var dimensions=compact.getBoundingClientRect();
@@ -112,7 +113,7 @@
        if(!button.title.includes('questions')||!button.querySelector('.v8433-emoji'))throw Error('Précisions ou icône du QCM perdues');
      });
      detail.querySelectorAll('.v74-resource-block > .row b').forEach(function(heading){
-       if(!heading.querySelector('.v8433-emoji'))throw Error('Icône de rubrique non harmonisée : '+heading.textContent);
+       if(!heading.closest('.mku-toggle')?.querySelector('.mku-icon svg'))throw Error('Icône colorée de rubrique absente : '+heading.textContent);
      });
      if(!ui.status().active)throw Error('Le module s’est désactivé');
      if(ui.status().passes>30)throw Error('Nombre excessif de passages '+ui.status().passes);
@@ -132,6 +133,18 @@
      var linksAfter=Array.from(detail.querySelectorAll('a[href]')).map(function(a){return a.href});
      if(JSON.stringify(linksBefore)!==JSON.stringify(linksAfter))throw Error('Liens modifiés par le décor graphique : '+course.id);
      var blocks=Array.from(detail.querySelectorAll(':scope > .v74-resource-block'));
+     // La présentation validée replie les documents, sans retirer leurs accès.
+     if(blocks.some(function(block){return !block.querySelector(':scope > .row .mku-toggle')}))throw Error('Rubrique compacte absente pour '+course.id);
+     detail.querySelectorAll('.mku-toggle').forEach(function(button){
+       var panel=document.getElementById(button.getAttribute('aria-controls'));
+       if(!panel||!button.querySelector('.mku-icon svg'))throw Error('Rubrique sans panneau ou icône colorée pour '+course.id);
+       if(button.disabled)return;
+       if(button.getBoundingClientRect().height<44)throw Error('Zone cliquable trop petite pour '+course.id);
+       button.click();
+       if(panel.hidden||button.getAttribute('aria-expanded')!=='true')throw Error('Ouverture de rubrique impossible pour '+course.id);
+       button.click();
+       if(!panel.hidden||button.getAttribute('aria-expanded')!=='false')throw Error('Fermeture de rubrique impossible pour '+course.id);
+     });
      var ranks=blocks.map(function(el){
        if(el.classList.contains('v74-original-support')||el.classList.contains('v74-child-supports'))return 0;
        if(el.classList.contains('v74-qcm-section'))return 2;

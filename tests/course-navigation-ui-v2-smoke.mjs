@@ -67,6 +67,7 @@ function bootFixture({throwOnDetail=false,missingRoot=false}={}){
     console:{error:(...args)=>errors.push(args.map(String).join(' ')),warn:()=>{}},
     document:{
       readyState:'complete',
+      querySelectorAll:()=>[],
       getElementById:id=>id==='v8430CourseStyles'?style:nodes[id]||null,
       createElement:()=>({id:'',textContent:'',setAttribute:()=>{}}),
       head:{appendChild:()=>{}},
