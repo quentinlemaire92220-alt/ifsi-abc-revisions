@@ -28,7 +28,7 @@
        if(report.attempts<90)return next(checkBoot);
        throw Error('Menus pédagogiques absents après 90 contrôles : '+JSON.stringify(ui.status()));
      }
-     if(!document.querySelector('#courses74 .v8430-note'))throw Error('NB Provisoire absent');
+     if(document.querySelector('#courses74 .v8430-note'))throw Error('Avertissement permanent inattendu');
      // Contrôler une vraie UE après rendu V74 (mode sombre/clair compatible).
      var ueHead=grid.querySelector('.v8430-ue-switch');
      var ueTitle=ueHead&&ueHead.querySelector('.v74-ue-title');
@@ -90,9 +90,63 @@
      if(getComputedStyle(resource).display!=='grid')throw Error('Carte ressource pas en mise en page compacte');
      if(!ui.status().active)throw Error('Le module s’est désactivé');
      if(ui.status().passes>30)throw Error('Nombre excessif de passages '+ui.status().passes);
-     ui.stop();
-     pass('APP COMPLETE OK : 55 cours, '+cards+' cartes, ordre '+blocks.join(' > ')+', anti-boucle, thèmes ; '+passes+' passes');
+     checkAllCourses(cards).catch(function(e){fail(e.stack||String(e))});
    }catch(e){fail(e.stack||String(e))}
+ }
+ async function checkAllCourses(cards){
+   var courses=window.IFSI_V741.getRegistry().courses;
+   var missing=0,official=0,qcm=0,flashcards=0,vocab=0;
+   for(var course of courses){
+     window.IFSI_V74.openCourse(course.label);
+     await new Promise(function(resolve){setTimeout(resolve,80)});
+     var detail=document.getElementById('v74CourseDetail');
+     var blocks=Array.from(detail.querySelectorAll(':scope > .v74-resource-block'));
+     var ranks=blocks.map(function(el){
+       if(el.classList.contains('v74-original-support')||el.classList.contains('v74-child-supports'))return 0;
+       if(el.classList.contains('v74-qcm-section'))return 2;
+       var text=(el.querySelector(':scope > .row b')?.textContent||'').toLowerCase();
+       return text.includes('fiches de révision')?1:text.includes('infographies')?3:text.includes('vocaux')?4:5;
+     });
+     if(ranks[0]!==0||ranks.some(function(rank,i){return i&&rank<ranks[i-1]}))throw Error('Ordre incorrect pour '+course.id+': '+ranks);
+     var support=detail.querySelector('.v74-original-support');
+     if(!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'})){
+       missing++;
+       if(!support.textContent.includes('Support officiel en attente'))throw Error('Attente officielle absente pour '+course.id);
+       if(support.querySelector('.v74-official-link')?.textContent.includes('Ouvrir le support officiel'))throw Error('Faux support officiel pour '+course.id);
+     }else official++;
+     if(course.qcmPdfUrl){
+       qcm++;
+       if(!Array.from(detail.querySelectorAll('.v74-qcm-section a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('PDF QCM mal classé : '+course.id);
+       if(Array.from(support.querySelectorAll('a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('QCM présenté comme support : '+course.id);
+     }
+     for(var doc of course.additionalDocuments||[]){
+       if(doc.type==='flashcards'||/flashcards/i.test(doc.label)){
+         flashcards++;
+         if(!Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Accès flashcards perdu : '+course.id);
+       }
+     }
+     if(window.IFSI_VOCAB.countForCourse(course.id)){
+       vocab++;
+       if(!detail.querySelector('#vgCourseSheet')||!detail.querySelector('#vgCourseQuiz'))throw Error('Lexique perdu : '+course.id);
+     }
+     if(detail.querySelector('.v8430-course-why'))throw Error('Avertissement permanent dans '+course.id);
+   }
+   window.IFSI_V74.openCourse('Relation soignant-soigné et écoute active — PROVISOIRE');
+   await new Promise(function(resolve){setTimeout(resolve,80)});
+   var badge=document.querySelector('#v74CourseDetail .v8430-provisional');
+   if(!badge)throw Error('Pastille du cours provisoire absente');
+   badge.click();
+   var dialog=document.getElementById('v8431ProvisionalDialog');
+   if(!dialog.open||!dialog.textContent.includes('PT01 et PT02'))throw Error('Sources exactes non consultables');
+   dialog.querySelector('button').click();
+   document.getElementById('vgCourseSheet').click();
+   if(!document.querySelector('#vgApp #vgTerms'))throw Error('Navigation lexique impossible');
+   window.IFSI_V74.openCourse('Relation soignant-soigné et écoute active — PROVISOIRE');
+   await new Promise(function(resolve){setTimeout(resolve,80)});
+   document.getElementById('v74Course10').click();
+   if(!document.getElementById('course74').classList.contains('hidden')||document.getElementById('quiz').classList.contains('hidden'))throw Error('Navigation QCM bloquée');
+   window.IFSI_COURSE_NAV_UI.stop();
+   pass('APP COMPLETE OK : '+courses.length+' cours, '+cards+' cartes ; '+missing+' supports en attente, '+official+' officiels, '+qcm+' PDF QCM, '+flashcards+' accès flashcards, '+vocab+' lexiques ; ordre, thèmes, navigation QCM/lexique et pastille au clic vérifiés');
  }
  setTimeout(checkBoot,300);
  setTimeout(function(){if(result.dataset.result==='pending')fail('Délai dépassé au démarrage réel')},24000);

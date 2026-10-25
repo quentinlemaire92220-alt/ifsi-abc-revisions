@@ -7,7 +7,7 @@ import {spawn,execFileSync} from 'node:child_process';
 const base=process.cwd();
 const read=(file)=>fs.readFileSync(path.join(base,file));
 const html=read('index.html').toString('utf8');
-assert.match(html,/<script src="\.\/course-navigation-ui-v2\.js\?v=8430"><\/script>/,'Le module réellement publié doit être testé');
+assert.ok(html.includes('./course-navigation-ui-v2.js?v='+JSON.parse(read('build-meta.json')).build),'Le module réellement publié doit être testé');
 const injected='<script src="./tests/fixtures/course-navigation-v2-full-app.js"></script>';
 const rafShim='<script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)};</script>';
 const testPage=html.replace('</head>',rafShim+'\n</head>').replace('</body>',injected+'\n</body>');
@@ -28,9 +28,9 @@ const server=http.createServer((req,res)=>{
    res.writeHead(200,{'Content-Type':mime,'Cache-Control':'no-store'}).end(contents);
  }catch{return res.writeHead(404).end()}
 });
-const binaries=['google-chrome','google-chrome-stable','chromium','chromium-browser'];
+const binaries=[process.env.CHROME_BIN,...(process.platform==='win32'?['C:/Program Files/Google/Chrome/Application/chrome.exe']:[]),'google-chrome','google-chrome-stable','chromium','chromium-browser'].filter(Boolean);
 let chrome;
-for(const name of binaries){try{chrome=execFileSync('which',[name],{encoding:'utf8'}).trim();if(chrome)break}catch{}}
+for(const name of binaries){try{if(fs.existsSync(name)){chrome=name;break}chrome=execFileSync('which',[name],{encoding:'utf8'}).trim();if(chrome)break}catch{}}
 assert.ok(chrome,'Le navigateur Chromium est obligatoire pour les tests de démarrage réel');
 await new Promise((resolve,reject)=>server.listen(0,'127.0.0.1',e=>e?reject(e):resolve()));
 const port=server.address().port;

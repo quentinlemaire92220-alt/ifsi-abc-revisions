@@ -221,7 +221,8 @@ function renderCourse74(){
   const sheets=[...d.sheets].sort((a,b)=>Number(!!b.primaryRevision)-Number(!!a.primaryRevision)||labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
-  const driveUrl=u=>typeof u==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)?u:'';
+  // Liens déjà référencés : Drive ou PDF du site officiel de l'application.
+  const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.pdf$/.test(u)&&!u.split('/').includes('..')))?u:'';
   // Dédupliquer seulement la présentation : les supports et leur registre approuvé restent intacts.
   const uniqueSupportParts74=(primaryUrl,parts)=>{
     const driveIdentity=u=>{
@@ -238,10 +239,11 @@ function renderCourse74(){
   };
   const officialUrl=driveUrl(courseMeta.officialSupportUrl);
   const captureUrl=driveUrl(courseMeta.captureSupportUrl);
-  const officialParts=uniqueSupportParts74(officialUrl,Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[]);
+  const officialDocuments=(courseMeta.additionalDocuments||[]).filter(x=>x.type==='official_support'&&studentVisibleDocument74(x)&&driveUrl(x.url));
+  const officialParts=uniqueSupportParts74(officialUrl,[...(Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[]),...officialDocuments.map(x=>({url:x.url,title:x.label}))]);
   const captureParts=uniqueSupportParts74(captureUrl,Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[]);
   const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
-  const supportStatus=supportSource==='official'?'✅ Support officiel du professeur':supportSource==='capture'?'📸 Captures du cours — provisoires':courseMeta.sourceBasis==='course_captures'?'📸 Cours rapproché des captures — PDF natif à retrouver':'📝 Support du cours non disponible';
+  const supportStatus=supportSource==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel':'✅ Support officiel du professeur'):supportSource==='capture'?'⏳ Support officiel en attente · 📸 Captures du cours — provisoires':courseMeta.sourceBasis==='course_captures'?'⏳ Support officiel en attente · captures intégrées aux révisions':'⏳ Support officiel en attente · Support du cours non disponible';
   const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
     (url?'<a class="btn outline v74-official-link" href="'+esc74(url)+'" target="_blank" rel="noopener noreferrer">'+(kind==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel ↗':'📘 Ouvrir le support officiel ↗'):'📸 Ouvrir les captures provisoires ↗')+'</a>':'')+
     parts.map(x=>'<a class="btn outline v74-official-part" href="'+esc74(x.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(x.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
@@ -253,7 +255,7 @@ function renderCourse74(){
   const childSupportHtml=children.length?'<div class="card v74-resource-block v74-child-supports"><div class="row"><b>📚 Supports officiels par sous-cours</b><span class="badge">'+children.length+'</span></div><div class="v74-resource-list">'+children.map(child=>{
     const url=typeof child.officialSupportUrl==='string'&&/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(child.officialSupportUrl)?child.officialSupportUrl:'';
     const title=esc74(child.label),partial=child.officialSupportCoverage==='partial';
-    const link=url?'<a class="btn outline v74-child-link" target="_blank" rel="noopener noreferrer" href="'+esc74(url)+'">'+(partial?'📘 Support partiel ↗':'📘 Support officiel ↗')+'</a>':'<span class="v74-official-empty" role="status">📝 Support officiel non disponible</span>';
+    const link=url?'<a class="btn outline v74-child-link" target="_blank" rel="noopener noreferrer" href="'+esc74(url)+'">'+(partial?'📘 Support partiel ↗':'📘 Support officiel ↗')+'</a>':'<span class="v74-official-empty" role="status">⏳ Support officiel en attente · Support officiel non disponible</span>';
     const parts=uniqueSupportParts74(url,Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[]);
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
@@ -265,7 +267,7 @@ function renderCourse74(){
   const qcmPdfCards=qcmDocuments.filter(x=>!qcmSeen.has(x.url)&&qcmSeen.add(x.url))
     .map(x=>'<div class="v74-resource"><b>📝 '+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(x.url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>').join('');
   const extraDocs=(courseMeta.additionalDocuments||[])
-    .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!isQcmDocument74(x))
+    .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!isQcmDocument74(x)&&!officialDocuments.includes(x))
     .map(x=>['📄',x.label,driveUrl(x.url)]).filter(x=>x[2])
     .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
     .join('');

@@ -1,12 +1,13 @@
+import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 const fixture=pathToFileURL(resolve('tests/fixtures/course-navigation-v2-browser.html')).href;
-const binNames=['google-chrome','google-chrome-stable','chromium','chromium-browser'];
+const binNames=[process.env.CHROME_BIN,...(process.platform==='win32'?['C:/Program Files/Google/Chrome/Application/chrome.exe']:[]),'google-chrome','google-chrome-stable','chromium','chromium-browser'].filter(Boolean);
 let browser='';
 for(const candidate of binNames){
-  try{const where=execFileSync('which',[candidate],{encoding:'utf8'}).trim();if(where){browser=where;break}}catch{}
+  try{if(fs.existsSync(candidate)){browser=candidate;break}const where=execFileSync('which',[candidate],{encoding:'utf8'}).trim();if(where){browser=where;break}}catch{}
 }
 assert.ok(browser,'Aucun Chromium/Chrome disponible sur le runner : test navigateur non exécuté');
 const opts=[

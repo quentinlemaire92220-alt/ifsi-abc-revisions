@@ -70,19 +70,48 @@
     if (!course) return 'Support officiel complet non confirmé.';
     if (course.officialSupportUrl && course.officialSupportCoverage === 'partial')
       return 'Support officiel partiel : rapprochement et compléments encore nécessaires.';
-    if (course.captureSupportUrl || course.sourceBasis === 'course_captures')
+    if (course.captureSupportUrl || course.sourceBasis === 'course_captures' || course.sourceStatus === 'provisional_captures')
       return 'Cours préparé à partir de captures ; support officiel complet à rapprocher.';
     if (course.officialSupportUrl)
       return 'Support officiel reçu, mais contrôle pédagogique encore en cours.';
     return 'Support officiel complet non reçu : ressources établies à partir des notes et transcriptions disponibles.';
   }
   function makeTag(course) {
-    var badge = document.createElement('span');
+    var badge = document.createElement('button');
+    badge.type = 'button';
     badge.className = 'v8430-provisional';
     badge.textContent = 'Provisoire';
     badge.title = statusWhy(course);
     badge.setAttribute('aria-label', 'Cours provisoire : ' + statusWhy(course));
+    badge.setAttribute('aria-haspopup', 'dialog');
+    badge.addEventListener('click', function (event) {
+      event.stopPropagation();
+      showExplanation(course, badge);
+    });
     return badge;
+  }
+  function showExplanation(course, trigger) {
+    var dialog = document.getElementById('v8431ProvisionalDialog');
+    if (!dialog) {
+      dialog = document.createElement('dialog');
+      dialog.id = 'v8431ProvisionalDialog';
+      dialog.setAttribute('aria-labelledby', 'v8431ProvisionalTitle');
+      dialog.setAttribute('aria-describedby', 'v8431ProvisionalReason v8431ProvisionalSources');
+      dialog.innerHTML = '<h2 id="v8431ProvisionalTitle">Pourquoi ce cours est provisoire ?</h2>' +
+        '<b class="v8431-dialog-course"></b><p id="v8431ProvisionalReason"></p>' +
+        '<p id="v8431ProvisionalSources"></p><button type="button" class="btn outline">Fermer</button>';
+      dialog.querySelector('button').addEventListener('click', function () { dialog.close(); });
+      dialog.addEventListener('click', function (event) { if (event.target === dialog) {
+        var rect = dialog.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+      }});
+      document.body.appendChild(dialog);
+    }
+    dialog.querySelector('.v8431-dialog-course').textContent = cleanTitle(course.label);
+    dialog.querySelector('#v8431ProvisionalReason').textContent = statusWhy(course);
+    dialog.querySelector('#v8431ProvisionalSources').textContent = course.sourceNote || EXPLANATION;
+    dialog.onclose = function () { if (trigger.isConnected) trigger.focus(); };
+    dialog.showModal();
   }
   function addStyles() {
     if (document.getElementById('v8430CourseStyles')) return;
@@ -98,6 +127,10 @@
       '.v8430-ue-name{font-size:12px;color:var(--muted);font-weight:650;line-height:1.35;min-width:160px;flex:1}',
       '.v8430-ue-switch .v74-ue-code{flex:none}',
       '.v8430-provisional{display:inline-flex;align-items:center;width:max-content;border-radius:999px;border:1px solid #b7a0ed;padding:2px 8px;font-size:11px;font-weight:750;color:#6c49b4;background:#f2ecff}',
+      '.v8430-provisional{font-family:inherit;cursor:pointer;min-height:30px;max-width:100%}.v8430-provisional:focus-visible{outline:3px solid var(--p);outline-offset:3px}',
+      '.v8431-card-wrap{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}.v8431-card-wrap>.v74-course-card{width:100%;flex:1}.v8431-card-wrap>.v8430-provisional{align-self:flex-start;margin-left:10px}',
+      '#v8431ProvisionalDialog{box-sizing:border-box;width:calc(100% - 32px);max-width:520px;max-height:calc(100dvh - 32px);overflow:auto;border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--card,#fff);color:var(--ink);box-shadow:0 20px 70px #0003;line-height:1.5;overflow-wrap:anywhere}',
+      '#v8431ProvisionalDialog::backdrop{background:#21162d66}#v8431ProvisionalDialog h2{font-size:19px;margin:0 0 14px}#v8431ProvisionalDialog p{font-size:14px}#v8431ProvisionalDialog button{min-height:44px}body.v72-dark #v8431ProvisionalDialog{background:#262230;color:#f6f0ff}',
       '.v8430-note{font-size:12px;line-height:1.5;color:var(--muted);padding:9px 11px;border-radius:12px;border:1px solid var(--line);margin-top:10px}',
       '.v8430-path{font-size:12px;color:var(--muted);font-weight:650;line-height:1.6;margin:0 0 12px;overflow-wrap:anywhere}',
       '.v8430-course-status{margin-top:7px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}',
@@ -141,14 +174,6 @@
     if (!root || !grid) return;
     var search = root.querySelector('#v74CourseSearch');
     var searching = !!(search && search.value.trim());
-    var header = root.querySelector(':scope > .card');
-    if (header && !header.querySelector('.v8430-note')) {
-      var note = document.createElement('div');
-      note.className = 'v8430-note';
-      note.setAttribute('role', 'note');
-      note.textContent = 'NB : ' + EXPLANATION;
-      header.appendChild(note);
-    }
     grid.querySelectorAll('.v74-domain-group').forEach(function (group) {
       var codeTag = group.querySelector('.v74-domain-badge');
       var head = group.querySelector('.v74-domain-head');
@@ -225,9 +250,17 @@
       if (!course) return;
       var desired = cleanTitle(course.label);
       if (h.textContent !== desired) h.textContent = desired;
-      var old = card.querySelector('.v8430-provisional');
+      // La pastille est un vrai bouton, frère de la carte cliquable : aucun bouton imbriqué.
+      var wrapper = card.parentElement.classList.contains('v8431-card-wrap') ? card.parentElement : null;
+      var old = wrapper && wrapper.querySelector('.v8430-provisional');
       if (isProvisional(course)) {
-        if (!old) h.insertAdjacentElement('afterend', makeTag(course));
+        if (!wrapper) {
+          wrapper = document.createElement('div');
+          wrapper.className = 'v8431-card-wrap';
+          card.insertAdjacentElement('beforebegin', wrapper);
+          wrapper.appendChild(card);
+        }
+        if (!old) wrapper.appendChild(makeTag(course));
       } else if (old) old.remove();
     });
   }
@@ -274,14 +307,6 @@
         h2.insertAdjacentElement('afterend', row);
       }
       if (!row.querySelector('.v8430-provisional')) row.appendChild(makeTag(course));
-      var reason = row.querySelector('.v8430-course-why');
-      if (!reason) {
-        reason = document.createElement('span');
-        reason.className = 'v8430-course-why';
-        row.appendChild(reason);
-      }
-      var why = statusWhy(course);
-      if (reason.textContent !== why) reason.textContent = why;
     } else if (row) row.remove();
 
     // Déplacer uniquement des nœuds existants : tous les liens, écouteurs, scores et favoris sont conservés.
