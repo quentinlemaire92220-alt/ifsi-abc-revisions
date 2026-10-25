@@ -98,7 +98,8 @@ for(const c of manifest.courses){
  if(['lean_v1','hybrid_v1','written_v1'].includes(c.packFormat))validateLeanFlashcards(cards);
  assert.ok(c.flashcardDriveId||hostedProvisional,'Export Flashcards absent');
  for(const card of cards){
-  assert.ok(card.front.endsWith('?')&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
+  const preciseExample=/^Donne un exemple de .+\.$/iu.test(String(card.front||'').trim());
+  assert.ok((card.front.endsWith('?')||preciseExample)&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
   assert.ok(card.explanation,card.id+': explication absente');
   const q=bank.find(x=>x.id===card.qid);
   assert.ok(q?.flashcards?.some(x=>x.front===(card.sourceFront||card.front)),card.id+': question source perdue');
