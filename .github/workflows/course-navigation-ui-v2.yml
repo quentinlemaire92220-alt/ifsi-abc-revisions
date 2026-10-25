@@ -3,7 +3,7 @@ name: UI Cours V2 — Test navigateur avant validation
 on:
   pull_request:
     paths:
-      - 'course-navigation-ui-v2.js'
+      - 'tests/fixtures/course-navigation-ui-v2.js'
       - 'tests/course-navigation-ui-v2-smoke.mjs'
       - 'tests/course-navigation-ui-v2-browser.mjs'
       - 'tests/fixtures/course-navigation-v2-browser.html'
