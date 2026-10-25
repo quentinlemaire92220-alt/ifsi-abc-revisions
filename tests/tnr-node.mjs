@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import './standalone-cache-repair.mjs';
 import zlib from 'node:zlib';
 
 const read=p=>fs.readFileSync(p,'utf8');
