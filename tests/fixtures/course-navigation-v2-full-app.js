@@ -85,9 +85,23 @@
      var compact=detail.querySelector('.v74-resource-list > .v74-resource > .actions .btn');
      if(!compact)throw Error('Aucun bouton de ressource pour tester la compacité');
      var dimensions=compact.getBoundingClientRect();
-     if(dimensions.width>190||dimensions.height<42)throw Error('Bouton de ressource trop large ou trop petit : '+dimensions.width+'×'+dimensions.height);
+     if(dimensions.width>190||dimensions.height<(innerWidth<=690?42:34))throw Error('Bouton de ressource trop large ou trop petit : '+dimensions.width+'×'+dimensions.height);
      var resource=compact.closest('.v74-resource');
      if(getComputedStyle(resource).display!=='grid')throw Error('Carte ressource pas en mise en page compacte');
+     document.querySelectorAll('#v74CourseGrid .v74-tile-support').forEach(function(link){
+       if(!link.getClientRects().length)return;
+       var width=link.getBoundingClientRect().width;
+       if(width>230||width>=link.parentElement.getBoundingClientRect().width-8)throw Error('Raccourci officiel encore en grand bandeau : '+width);
+       if(!link.querySelector('svg.v8432-icon'))throw Error('Icône vectorielle du support absente');
+     });
+     detail.querySelectorAll('.v74-course-actions .btn').forEach(function(button){
+       var rect=button.getBoundingClientRect();
+       if(rect.width>280||rect.height>54)throw Error('Bouton QCM trop grand : '+rect.width+'×'+rect.height);
+       if(!button.title.includes('questions')||!button.querySelector('.v8432-icon'))throw Error('Précisions ou icône du QCM perdues');
+     });
+     detail.querySelectorAll('.v74-resource-block > .row b').forEach(function(heading){
+       if(!heading.querySelector('.v8432-icon'))throw Error('Icône de rubrique non harmonisée : '+heading.textContent);
+     });
      if(!ui.status().active)throw Error('Le module s’est désactivé');
      if(ui.status().passes>30)throw Error('Nombre excessif de passages '+ui.status().passes);
      checkAllCourses(cards).catch(function(e){fail(e.stack||String(e))});
@@ -100,6 +114,11 @@
      window.IFSI_V74.openCourse(course.label);
      await new Promise(function(resolve){setTimeout(resolve,80)});
      var detail=document.getElementById('v74CourseDetail');
+     var linksBefore=Array.from(detail.querySelectorAll('a[href]')).map(function(a){return a.href});
+     window.IFSI_COURSE_NAV_UI.refresh();
+     await new Promise(function(resolve){setTimeout(resolve,40)});
+     var linksAfter=Array.from(detail.querySelectorAll('a[href]')).map(function(a){return a.href});
+     if(JSON.stringify(linksBefore)!==JSON.stringify(linksAfter))throw Error('Liens modifiés par le décor graphique : '+course.id);
      var blocks=Array.from(detail.querySelectorAll(':scope > .v74-resource-block'));
      var ranks=blocks.map(function(el){
        if(el.classList.contains('v74-original-support')||el.classList.contains('v74-child-supports'))return 0;
@@ -131,6 +150,18 @@
      }
      if(detail.querySelector('.v8430-course-why'))throw Error('Avertissement permanent dans '+course.id);
    }
+   window.IFSI_V74.openCourse('Biomolécules');
+   await new Promise(function(resolve){setTimeout(resolve,80)});
+   var favoritesBefore=window.IFSI_V74.resourceFavorites().slice().sort();
+   var favorite=document.querySelector('#v74CourseDetail [data-docfav]');
+   var key=favorite.dataset.docfav;
+   favorite.click();
+   await new Promise(function(resolve){setTimeout(resolve,80)});
+   var favoriteAfter=document.querySelector('#v74CourseDetail [data-docfav="'+key+'"]');
+   if(!favoriteAfter.querySelector('svg')||!favoriteAfter.getAttribute('aria-label'))throw Error('Favori sans icône ou nom accessible après clic');
+   if(window.IFSI_V74.resourceFavorites().includes(key)===favoritesBefore.includes(key))throw Error('Action favori perdue');
+   favoriteAfter.click();
+   if(JSON.stringify(window.IFSI_V74.resourceFavorites().slice().sort())!==JSON.stringify(favoritesBefore))throw Error('Favori non restauré');
    window.IFSI_V74.openCourse('Relation soignant-soigné et écoute active — PROVISOIRE');
    await new Promise(function(resolve){setTimeout(resolve,80)});
    var badge=document.querySelector('#v74CourseDetail .v8430-provisional');
