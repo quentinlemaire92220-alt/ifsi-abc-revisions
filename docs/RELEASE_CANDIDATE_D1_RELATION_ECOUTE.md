@@ -16,13 +16,15 @@ L'utilisateur a explicitement donné son GO de mise en ligne, puis confirmé « 
 
 PDF stockés sous `assets/relation-soignant-ecoute/` à partir des **mêmes blobs binaires approuvés** ; aucune régénération. Les QCM interactifs proviennent exclusivement de `data/course-banks/d1_relation_soignant_soigne_ecoute_active.json` et de son miroir `questions-5.json`. Les 40 flashcards sont intégrées à la banque, avec 25 définitions sous `vocabulaire-v1.json`.
 
+L'entrée de vocabulaire « Empathie (relation de soin) » est distinguée du terme partagé « Empathie » déjà utilisé par d'autres cours ; les origines non présentes dans l'oral sont notées comme non étudiées, sans invention externe.
+
 Les PDF sont inspectés A4, texte sélectionnable, bandeaux violets haut/bas et sans images générées. Le texte des 40 QCM, cinq choix par question, une à trois bonnes réponses et leurs arguments sont contrôlés contre la banque ; les cartes V5.3 sont strictement contrôlées avec les libellés RECTO/VERSO/EXPLICATION. Les anciennes formes de cartes restent acceptées par le même vérificateur, avec égalité exacte des contenus.
 
 Le script vocal texte reste **privé sur Drive**. Aucun MP3 n'est déclaré.
 
 ## Validation, traçabilité et garde-fous
 - Validation graphique du lot 16+20+9 pages : utilisateur, 25/10/2026, limitée à la présentation et à la diffusion provisoire.
-- Empreinte de la version du package autorisé : `519c93f82d7766e23e1d3e6731ad880fc13609a0c8e4aa83ad280131da25abdb`.
+- Empreinte de la version du package autorisé : `c03e83da4b7ba3ff95001d55c6f8c3dbad6bfd46649f3b468214899ff0d416df`.
 - Charte écrite V5.3 + contrôle graphique V2 ; pas de nouvelles illustrations générées.
 - Publication conditionnée aux **TNR complets**, à l'audit P2 et au déploiement GitHub Pages ; vérifier ensuite l'application.
 - **Aucune prétention d'exhaustivité officielle** ; requalification après réception du diaporama seulement.
