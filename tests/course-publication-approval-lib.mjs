@@ -58,7 +58,7 @@ export function validatePublicationApproval(courseId,delivery,digest){
 // Une nouvelle ressource audio explicitement approuvée n'invalide pas le package
 // pédagogique d'origine. Le contrat refuse tout changement au-delà des trois
 // métadonnées audio et de la disparition du blocage MP3 correspondant.
-function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,previousManifest,currentManifest){
+export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,previousManifest,currentManifest){
  const accepted=validateAudioSupplements(currentManifest,newData);
  const previousIds=new Set((previousManifest.audioSupplements||[]).flatMap(s=>s.vocalIds||[]));
  const supplements=(currentManifest.audioSupplements||[]).filter(s=>
