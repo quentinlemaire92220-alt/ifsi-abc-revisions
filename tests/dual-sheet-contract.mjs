@@ -8,6 +8,18 @@ const sha=v=>typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);
 const driveId=sheet=>sheet?.driveId||String(sheet?.url||'').match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1];
 
 export function validateSheetSource(courseId,delivery,sheet){
+ if(delivery.provisional===true && delivery.deliveryMode==='source_limited_first_release'){
+  assert.equal(delivery.sourceBasis?.kind,'oral_transcript',courseId+': provenance orale explicite absente');
+  assert.equal(delivery.sourceBasis?.nativeSupportAvailable,false,courseId+': support écrit manquant non déclaré');
+  assert.equal(delivery.status,'partial',courseId+': un cours oral provisoire ne doit pas être complet');
+  assert.equal(delivery.pedagogicalValidated,false,courseId+': revue pédagogique complète déclarée à tort');
+  assert.ok(delivery.blockers?.some(x=>x.resource==='support'&&x.reason==='official_support_missing'),
+    courseId+': absence du support officiel non signalée');
+  assert.equal(sheet.officialSupport,false,courseId+': cours oral présenté comme support officiel');
+  assert.equal(sheet.provisional,true,courseId+': marque PROVISOIRE obligatoire sur la fiche');
+  return;
+ }
+
  if(delivery.deliveryMode==='existing_course_revision'||delivery.deliveryMode==='source_limited_first_release'){
   assert.equal(delivery.sourceBasis?.kind,'course_captures',courseId+': provenance captures absente');
   assert.equal(delivery.sourceBasis.nativeSupportAvailable,false,courseId+': support natif non vérifié');
