@@ -42,6 +42,18 @@
      var before=ui.status().passes;
      var cards=grid.querySelectorAll('.v74-course-card').length;
      if(cards<40)throw Error('Seulement '+cards+' cours dans le catalogue');
+     grid.querySelectorAll('.v74-course-card').forEach(function(card){
+       var tile=card.closest('.v74-course-tile'),actions=tile&&tile.querySelector('.v8433-card-actions');
+       if(!actions||!actions.querySelector('.v8433-course-open'))throw Error('Accès au cours non regroupé');
+       var bounds=tile.getBoundingClientRect();
+       actions.querySelectorAll('a,button').forEach(function(action){
+         if(action.closest('button')!==action&&action.closest('button'))throw Error('Action imbriquée dans un bouton');
+         if(!tile.contains(action))throw Error('Action hors de sa carte');
+         if(!action.getClientRects().length)return;
+         var rect=action.getBoundingClientRect();
+         if(rect.top<bounds.top||rect.bottom>bounds.bottom+1||rect.left<bounds.left||rect.right>bounds.right+1)throw Error('Action débordant du cadre');
+       });
+     });
      var first=grid.querySelector('.v74-course-card');
      for(var i=0;i<300;i++){var node=document.createElement('em');first.appendChild(node);node.remove()}
      next(function(){
@@ -92,15 +104,15 @@
        if(!link.getClientRects().length)return;
        var width=link.getBoundingClientRect().width;
        if(width>230||width>=link.parentElement.getBoundingClientRect().width-8)throw Error('Raccourci officiel encore en grand bandeau : '+width);
-       if(!link.querySelector('svg.v8432-icon'))throw Error('Icône vectorielle du support absente');
+       if(!link.querySelector('.v8433-emoji'))throw Error('Pictogramme coloré du support absent');
      });
      detail.querySelectorAll('.v74-course-actions .btn').forEach(function(button){
        var rect=button.getBoundingClientRect();
        if(rect.width>280||rect.height>54)throw Error('Bouton QCM trop grand : '+rect.width+'×'+rect.height);
-       if(!button.title.includes('questions')||!button.querySelector('.v8432-icon'))throw Error('Précisions ou icône du QCM perdues');
+       if(!button.title.includes('questions')||!button.querySelector('.v8433-emoji'))throw Error('Précisions ou icône du QCM perdues');
      });
      detail.querySelectorAll('.v74-resource-block > .row b').forEach(function(heading){
-       if(!heading.querySelector('.v8432-icon'))throw Error('Icône de rubrique non harmonisée : '+heading.textContent);
+       if(!heading.querySelector('.v8433-emoji'))throw Error('Icône de rubrique non harmonisée : '+heading.textContent);
      });
      if(!ui.status().active)throw Error('Le module s’est désactivé');
      if(ui.status().passes>30)throw Error('Nombre excessif de passages '+ui.status().passes);
@@ -158,7 +170,7 @@
    favorite.click();
    await new Promise(function(resolve){setTimeout(resolve,80)});
    var favoriteAfter=document.querySelector('#v74CourseDetail [data-docfav="'+key+'"]');
-   if(!favoriteAfter.querySelector('svg')||!favoriteAfter.getAttribute('aria-label'))throw Error('Favori sans icône ou nom accessible après clic');
+   if(!favoriteAfter.querySelector('.v8433-emoji')||!favoriteAfter.getAttribute('aria-label'))throw Error('Favori sans icône ou nom accessible après clic');
    if(window.IFSI_V74.resourceFavorites().includes(key)===favoritesBefore.includes(key))throw Error('Action favori perdue');
    favoriteAfter.click();
    if(JSON.stringify(window.IFSI_V74.resourceFavorites().slice().sort())!==JSON.stringify(favoritesBefore))throw Error('Favori non restauré');

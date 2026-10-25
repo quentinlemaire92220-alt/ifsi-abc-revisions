@@ -80,6 +80,7 @@
         if(a.querySelectorAll('.v8430-provisional').length!==1)throw Error('Pastille inattendue sur Biomolécules');
         const tag=a.querySelector('.v8430-provisional');
         if(tag.tagName!=='BUTTON'||tag.closest('.v74-course-card'))throw Error('Pastille non accessible ou bouton imbriqué');
+        if(!tag.closest('.v74-course-tile .v8433-card-actions'))throw Error('Pastille hors de la carte visuelle');
         tag.focus();tag.click();
         const dialog=document.getElementById('v8431ProvisionalDialog');
         if(!dialog.open||!dialog.textContent.includes('captures'))throw Error('Explication au clic absente');
