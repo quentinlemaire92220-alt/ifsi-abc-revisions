@@ -2217,8 +2217,8 @@
       "provisionalReason": "Support écrit officiel absent. Fiche et entraînements issus de la transcription orale ; vidéos commentées indisponibles.",
       "provisionalReassessmentRequired": true,
       "publicAssetSha256": "29c0b674ce7863c3c415517a11cfabbd8faf8461fd12d7dc97480caab56a3723",
-      "qcmPublicAssetSha256": "2ce0f8508b214007876df41916af50630491bcf7535e80a9080cd390f132c299",
-      "flashcardPublicAssetSha256": "2d76e55d6c402081f7bebf1fa2cbc93e74a79f86f8f93892471bb50917fc4000",
+      "qcmPublicAssetSha256": "c5c5c63d44effad6d956678fb6206dd2227689cb3122b077a0d17e89e9dd89b5",
+      "flashcardPublicAssetSha256": "c6e6f2c7563539c8f501293ec8171c25426d46637a7e93e8486fcc6ea4619946",
       "driveFolderId": "1jCu5Tldmnqk74iXQZOw_0ePxJsixG5RB",
       "folders": {
         "01": "11TkDRVTzcPdvaV4Z_8DoAC6nurSzOitc",
@@ -2295,8 +2295,8 @@
       },
       "artifactSha256s": {
         "1Sj0Xftsj_oDTvqauedKoL31HmGrCwxZN": "29c0b674ce7863c3c415517a11cfabbd8faf8461fd12d7dc97480caab56a3723",
-        "d1_bientraitance_qcm_public_asset": "2ce0f8508b214007876df41916af50630491bcf7535e80a9080cd390f132c299",
-        "d1_bientraitance_flashcards_public_asset": "2d76e55d6c402081f7bebf1fa2cbc93e74a79f86f8f93892471bb50917fc4000"
+        "d1_bientraitance_qcm_public_asset": "c5c5c63d44effad6d956678fb6206dd2227689cb3122b077a0d17e89e9dd89b5",
+        "d1_bientraitance_flashcards_public_asset": "c6e6f2c7563539c8f501293ec8171c25426d46637a7e93e8486fcc6ea4619946"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -2356,13 +2356,13 @@
         },
         "qcm": {
           "path": "assets/bientraitance-p01/D1_Bientraitance_QCM_40_Corriges.pdf",
-          "sha256": "2ce0f8508b214007876df41916af50630491bcf7535e80a9080cd390f132c299",
+          "sha256": "c5c5c63d44effad6d956678fb6206dd2227689cb3122b077a0d17e89e9dd89b5",
           "pageCount": 19,
           "artifactId": "d1_bientraitance_qcm_public_asset"
         },
         "flashcards": {
           "path": "assets/bientraitance-p01/D1_Bientraitance_Flashcards_40.pdf",
-          "sha256": "2d76e55d6c402081f7bebf1fa2cbc93e74a79f86f8f93892471bb50917fc4000",
+          "sha256": "c6e6f2c7563539c8f501293ec8171c25426d46637a7e93e8486fcc6ea4619946",
           "pageCount": 11,
           "artifactId": "d1_bientraitance_flashcards_public_asset"
         }
