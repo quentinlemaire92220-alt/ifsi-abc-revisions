@@ -1,0 +1,25 @@
+name: Revue design V3 — non publié
+
+on:
+  pull_request:
+    paths:
+      - 'tests/fixtures/course-visual-redesign-v3.css'
+      - 'tests/course-visual-v3-review.mjs'
+      - 'docs/proposals/course-visual-redesign-v3.md'
+      - '.github/workflows/course-visual-v3-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  css-only-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Vérifier la refonte inactive et la conservation des cours
+        run: node tests/course-visual-v3-review.mjs
