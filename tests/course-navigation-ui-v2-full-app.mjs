@@ -8,7 +8,8 @@ const base=process.cwd();
 const read=(file)=>fs.readFileSync(path.join(base,file));
 const html=read('index.html').toString('utf8');
 assert.ok(!html.includes('course-navigation-ui-v2.js'),'La version publique ne doit pas activer la V2');
-const injected='<script src="./tests/fixtures/course-navigation-ui-v2.js"></script>\n'+
+const injected='<script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)};</script>\n'+
+  '<script src="./tests/fixtures/course-navigation-ui-v2.js"></script>\n'+
   '<script src="./tests/fixtures/course-navigation-v2-full-app.js"></script>';
 const testPage=html.replace('</body>',injected+'\n</body>');
 assert.notEqual(testPage,html,'Impossible de préparer le test de l’application complète');
