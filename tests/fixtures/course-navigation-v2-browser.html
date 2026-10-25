@@ -57,6 +57,7 @@
     {id:'histoire',label:'Histoire et identité — PROVISOIRE',domain:'A',ue:'A1',sourceBasis:'course_captures'},
     {id:'biomolecules',label:'Biomolécules',domain:'B',ue:'B1',officialSupportUrl:'https://drive.google.com/file/d/example/view'}
   ]}}};
+  window.__pristineDomain=document.querySelector('#v74CourseGrid').firstElementChild.outerHTML;
   window.__qcmClicks=0;
   document.getElementById('qcmClick').addEventListener('click',function(){window.__qcmClicks++});
   </script>
@@ -88,7 +89,7 @@
         if(ui.status().passes!==firstPasses)throw Error('L’observateur traite des mutations internes');
         // Nouveau rendu des cours par le moteur V74.
         const old=grid.firstElementChild;
-        grid.replaceChild(old.cloneNode(true),old);
+        old.outerHTML=window.__pristineDomain;
         await tick();
         if(ui.status().passes>firstPasses+3)throw Error('Boucle de rendu du catalogue');
         const top=grid.querySelector('.v74-domain-group');
