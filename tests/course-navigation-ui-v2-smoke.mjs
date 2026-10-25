@@ -9,7 +9,7 @@ const registry=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8'));
 
 assert.equal(registry.courses.length,55,'Les 55 cours historiques sont conservés');
 assert.equal(fs.readFileSync('course-navigation-ui-v2.js','utf8'),src,'Le code déployé doit être identique au module testé');
-assert.equal((published.match(/course-navigation-ui-v2\.js\?v=8430/g)||[]).length,1,'V2 doit être chargée une seule fois et versionnée');
+assert.equal((published.match(new RegExp('course-navigation-ui-v2\\.js\\?v='+JSON.parse(fs.readFileSync('build-meta.json','utf8')).build,'g'))||[]).length,1,'V2 doit être chargée une seule fois et versionnée');
 assert.doesNotMatch(published,/course-navigation-ui-v1\.js\?v=/,'V1 bloquante ne doit pas être rechargée');
 assert.ok(serviceWorker.includes("'./course-navigation-ui-v2.js'")&&serviceWorker.includes('"course-navigation-ui-v2.js"'),'V2 dans le cache et la reconstruction PWA');
 assert.doesNotMatch(serviceWorker,/['"]\.\/course-navigation-ui-v1\.js['"]/,'V1 bloquante ne doit pas être précachée');

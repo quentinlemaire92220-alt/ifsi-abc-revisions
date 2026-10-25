@@ -75,9 +75,16 @@
         const a=document.getElementById('courses74'),grid=document.getElementById('v74CourseGrid'),detail=document.getElementById('v74CourseDetail');
         const ui=window.IFSI_COURSE_NAV_UI;
         if(!ui||ui.version!=='2.0'||!ui.status().active)throw Error('Module V2 inactif');
-        if(!a.querySelector('.v8430-note'))throw Error('NB provisoire absent');
+        if(a.querySelector('.v8430-note')||detail.querySelector('.v8430-course-why'))throw Error('Avertissement permanent inattendu');
         if(!a.querySelector('.v8430-provisional'))throw Error('Pastille provisoire absente');
         if(a.querySelectorAll('.v8430-provisional').length!==1)throw Error('Pastille inattendue sur Biomolécules');
+        const tag=a.querySelector('.v8430-provisional');
+        if(tag.tagName!=='BUTTON'||tag.closest('.v74-course-card'))throw Error('Pastille non accessible ou bouton imbriqué');
+        tag.focus();tag.click();
+        const dialog=document.getElementById('v8431ProvisionalDialog');
+        if(!dialog.open||!dialog.textContent.includes('captures'))throw Error('Explication au clic absente');
+        dialog.querySelector('button').click();await tick();
+        if(dialog.open||document.activeElement!==tag)throw Error('Fermeture ou retour du focus incorrect');
         const order=[...detail.querySelectorAll(':scope > .v74-resource-block')].map(x=>x.classList.contains('v74-original-support')?'support':x.classList.contains('v74-qcm-section')?'qcm':x.querySelector('.row b')?.textContent.toLowerCase()||'');
         if(order[0]!=='support'||!order[1].includes('fiches')||order[2]!=='qcm'||!order[3].includes('infographies')||!order[4].includes('vocaux'))throw Error('Ordre de consultation incorrect : '+order.join(' > '));
         if(!detail.querySelector('.v8430-path')?.textContent.includes('Fondements'))throw Error('Fil d’Ariane pédagogique absent');
