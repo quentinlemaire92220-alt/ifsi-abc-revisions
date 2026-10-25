@@ -199,6 +199,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: python tests/revision-layout-test.py
 
+      - name: TNR graphique V2 sur PDF fictifs (bandeaux, police, cadres, lexique, QCM)
+        if: ${{ !cancelled() }}
+        run: python tests/pdf-graphics-v2-test.py
+
+      - name: Contrôle V2 des vrais PDF écrits nouveaux ou modifiés
+        if: ${{ !cancelled() }}
+        run: python tools/pdf-graphics-v2-batch.py --base "$IFSI_BASE_SHA"
+
       - name: TNR visuels PDF absents, mal placés et illisibles
         if: ${{ !cancelled() }}
         run: python tests/pdf_visual_gate_test.py
