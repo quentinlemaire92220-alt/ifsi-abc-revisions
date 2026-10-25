@@ -7,11 +7,10 @@ import {spawn,execFileSync} from 'node:child_process';
 const base=process.cwd();
 const read=(file)=>fs.readFileSync(path.join(base,file));
 const html=read('index.html').toString('utf8');
-assert.ok(!html.includes('course-navigation-ui-v2.js'),'La version publique ne doit pas activer la V2');
-const injected='<script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)};</script>\n'+
-  '<script src="./tests/fixtures/course-navigation-ui-v2.js"></script>\n'+
-  '<script src="./tests/fixtures/course-navigation-v2-full-app.js"></script>';
-const testPage=html.replace('</body>',injected+'\n</body>');
+assert.match(html,/<script src="\.\/course-navigation-ui-v2\.js\?v=8429"><\/script>/,'Le module réellement publié doit être testé');
+const injected='<script src="./tests/fixtures/course-navigation-v2-full-app.js"></script>';
+const rafShim='<script>window.requestAnimationFrame=function(callback){return setTimeout(function(){callback(performance.now())},16)};</script>';
+const testPage=html.replace('</head>',rafShim+'\n</head>').replace('</body>',injected+'\n</body>');
 assert.notEqual(testPage,html,'Impossible de préparer le test de l’application complète');
 const types={'.html':'text/html','.js':'text/javascript','.mjs':'text/javascript','.json':'application/json','.txt':'text/plain','.css':'text/css','.svg':'image/svg+xml','.webmanifest':'application/manifest+json','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.b64':'text/plain'};
 const server=http.createServer((req,res)=>{
