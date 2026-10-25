@@ -81,9 +81,27 @@ for(const pack of freshAudio){
  assert.ok(!audioOnlyUpdates.has(pack.courseId),'Au plus un complément ajouté par cours dans ce lot');
  const prior=oldMan.courses.find(c=>c.courseId===pack.courseId);
  const updated=currentMan.courses.find(c=>c.courseId===pack.courseId);
- assert.ok(prior&&updated,'Complément MP3 sur un cours inconnu');
- assert.ok(isStrictAudioSupplementOnly(pack.courseId,prior,updated,baseAudioData,nowAudioData,oldMan,currentMan),
+ // Certains sous-cours ont des ressources actives depuis longtemps mais pas de manifeste
+ // historique de package. Le GO audio ne doit jamais autoriser une autre mutation.
+ if(!prior&&!updated){
+  const id=pack.courseId;
+  const was=oldReg.courses.find(c=>c.id===id),now=currentReg.courses.find(c=>c.id===id);
+  assert.ok(was&&now,'Complément MP3 sur un cours inconnu');
+  assert.ok(baseAudioData.sheets.some(r=>r.courseId===id)||baseAudioData.infographics.some(r=>r.courseId===id),
+    id+': le cours doit avoir des ressources déjà publiées avant un complément audio');
+  const strip=x=>without(x,['audioStatus','audioCount','audioFolderUrl']);
+  assert.deepEqual(strip(now),strip(was),id+': modification non audio du sous-cours');
+  const oldVoices=prevVocals.filter(v=>v.courseId===id),newVoices=nextVocals.filter(v=>v.courseId===id);
+  assert.deepEqual(newVoices.slice(0,oldVoices.length),oldVoices,id+': vocaux historiques modifiés');
+  assert.deepEqual(newVoices.slice(oldVoices.length).map(v=>v.id),pack.vocalIds,id+': IDs audio non conformes');
+  assert.equal(now.audioStatus,'available',id+': statut vocal erroné');
+  assert.equal(now.audioCount,newVoices.length,id+': nombre de vocaux erroné');
+  assert.equal(now.audioFolderUrl,'https://drive.google.com/drive/folders/'+pack.folderId,id+': dossier audio erroné');
+ } else {
+  assert.ok(prior&&updated,'Livraison audio historique incomplète');
+  assert.ok(isStrictAudioSupplementOnly(pack.courseId,prior,updated,baseAudioData,nowAudioData,oldMan,currentMan),
    'Ajout audio insuffisamment isolé ou sans validation : '+pack.courseId);
+ }
  audioOnlyUpdates.add(pack.courseId);
 }
 const removed=oldReg.courses.reduce((n,c)=>n+(c.additionalDocuments||[]).filter(isScriptWorkItem).length,0);

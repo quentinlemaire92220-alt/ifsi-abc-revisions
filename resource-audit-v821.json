@@ -1,5 +1,5 @@
 {
-  "version": "8.30.134",
+  "version": "8.30.135",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire V8.30.126 : +3 MP3 approuvés (Posture TD2 et consolidations Pharmacologie / Infections neuro-méningées) ; anciens MP3 et supports conservés.",
+  "note": "Inventaire V8.30.135 : 179 MP3 dont 10 nouveaux sur cinq cours ; 169 anciens fichiers conservés. Sept MP3 supplémentaires en réserve privée non publiés.",
   "expectedTotals": {
     "courses": 55,
     "sheets": 72,
     "infographics": 184,
-    "vocals": 169,
+    "vocals": 179,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,

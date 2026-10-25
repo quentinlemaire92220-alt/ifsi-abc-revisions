@@ -1934,7 +1934,7 @@
       "courseId": "d1_communication_td1",
       "part": "01",
       "validated": true,
-      "status": "awaiting_mp3",
+      "status": "complete",
       "deliveryMode": "first_release",
       "packFormat": "written_v1",
       "publicationHost": "github_pages",
@@ -1963,7 +1963,10 @@
       "qcmCount": 50,
       "flashcardCount": 40,
       "vocabularyCount": 35,
-      "vocals": [],
+      "vocals": [
+        "d1_communication_td1_p01_vocal_01",
+        "d1_communication_td1_p01_vocal_02"
+      ],
       "scriptsPreparedCount": 2,
       "requestedVocals": true,
       "sourceAudit": {
@@ -2009,7 +2012,9 @@
         "1s6kuU1h2PQM99vYLbm51EfE80uSXnKd4": "0b7e357dd01872dad75b07d836330afee6319bb11ed17d7032ee821e38fa9e83",
         "1mgOD_vHw2d7PLh8jH5r_9vFf3AzKkk0h": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
         "1h8u34DBJ_RJ-T-QYSMj8K0tId6SX_XSi": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-        "1zLwZ4JeMUr9BwOhZmLcqi6683jrnasgA": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e"
+        "1zLwZ4JeMUr9BwOhZmLcqi6683jrnasgA": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e",
+        "1w5o6cqq0J_kmKFzaCOVrWhe_3PQp-CtT": "c342eee7246c399066e4f6445a02bad87ed1dfa612a890d79be42cc330729c0b",
+        "1hPQfgPq_W5Jk7s0VyXJSXYeKwp7EQ6kN": "a2c9d65a8d8e04cd304175794cf37f53f72a9739aa251eb3209ff197a7b68a60"
       },
       "publishedVerification": {
         "status": "MATCH",
@@ -2033,13 +2038,7 @@
           "d1_communication_td1_written_p01": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf"
         }
       },
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Deux scripts prêts en QA privé ; aucun MP3 publié ou déclaré."
-        }
-      ],
+      "blockers": [],
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
@@ -3277,6 +3276,101 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T17:40:00+01:00",
         "bundleSha256": "72437ade30c0d8b760205bc395f7e80819709b070cb8a563c6fc50932ac32b3e"
+      }
+    },
+    {
+      "courseId": "arthrose",
+      "folderId": "1Nt6JsCqOl1klMPqbEpJSh8Fpfn1uRk3e",
+      "vocalIds": [
+        "arthrose_p01_vocal_01",
+        "arthrose_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1v152i4ybOr8CE-ZpGfUzIH8a3CoI0uEQ": "64bd81bc259b199f37f42e8de1469faaf249385946f6f54274a4c2964c1f03ca",
+        "1HEf2eVmBiQvWNnSVgYmkp_9ZfVYNrw7U": "235c521b03517f7a4a8aaac384f1b229b9c9a53794a7f6205ab8321ccdf9564b"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T22:17:00+01:00",
+        "bundleSha256": "ce4821804f589b26231ffa15ce5f0e91e4eaef266763055f9cf635dffc037ce0"
+      }
+    },
+    {
+      "courseId": "chirurgie_orthopedique",
+      "folderId": "1W8JSbXo5UwNyUZRe9rWvYD3cSeiTXQFI",
+      "vocalIds": [
+        "chirurgie_orthopedique_p01_vocal_01",
+        "chirurgie_orthopedique_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1io_gF5qqCaMRvZhaReYThkrmkHkD6QIg": "b05bbf25d65816aaea845170a97e706969005c749d505153d80cc49952854e2f",
+        "138fYHeOulOaWDQCAkKmsFyZZAQhBI9hM": "100c44d44ef7752861f2b5f0a85e1412ad75b3528e8d6068409d0e8aaaaa8545"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T22:17:00+01:00",
+        "bundleSha256": "5cb712453dd1a060a034e988774b41a277235a2db1549db1867512197b963d27"
+      }
+    },
+    {
+      "courseId": "rhumatismes_inflammatoires",
+      "folderId": "1R4WdK28oN6ljNWtQlallB0crBk46C7iS",
+      "vocalIds": [
+        "rhumatismes_inflammatoires_p01_vocal_01",
+        "rhumatismes_inflammatoires_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1-G5fKY_wIHijC-_Huc2qNB_AiniSSVpt": "aed1624b60bb84444229e29ca8e538b35eb2082e0f76b616c411c910b3180382",
+        "1i0YvptY6iGuBHWNyo-SA0rWcUgAxveTK": "0fd86ae0de4fbe0cd0870cad7650f8ba838fa764ef391e01b84e8d4e6520b969"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T22:17:00+01:00",
+        "bundleSha256": "ff62c1a6733c35f5835f4089755ca736d38b7ac4136bc766ac4172253c18be86"
+      }
+    },
+    {
+      "courseId": "pathologies_microcristallines_osteoporose",
+      "folderId": "1-suZ6V3_d7wdG7i5zoW9cQCboO8_trx3",
+      "vocalIds": [
+        "pathologies_microcristallines_osteoporose_p01_vocal_01",
+        "pathologies_microcristallines_osteoporose_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "19yrnwGszb9rpFfovUnA2I4jQPahF7wXe": "c495778e644f5a01cc04743b9401ac4f01608c55a63399a5259b3091df607080",
+        "1bQOSMnPsL1OybQ_GkYQ4oTPS7umj35Wf": "3bb8a6ee6d3315679535e54bc45696abc17a8a6a30431082e72dc4f74a562bb2"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T22:17:00+01:00",
+        "bundleSha256": "55d75e46f37ef163a90a94623955b740445324110f68cb452edeb4a252d78595"
+      }
+    },
+    {
+      "courseId": "d1_communication_td1",
+      "folderId": "1R59F8OPjRlNvk3tMfxmOrzTWQ7LJOc9h",
+      "vocalIds": [
+        "d1_communication_td1_p01_vocal_01",
+        "d1_communication_td1_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1w5o6cqq0J_kmKFzaCOVrWhe_3PQp-CtT": "c342eee7246c399066e4f6445a02bad87ed1dfa612a890d79be42cc330729c0b",
+        "1hPQfgPq_W5Jk7s0VyXJSXYeKwp7EQ6kN": "a2c9d65a8d8e04cd304175794cf37f53f72a9739aa251eb3209ff197a7b68a60"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-25T22:17:00+01:00",
+        "bundleSha256": "acac0b132552bc75a2da0e18547b917fb9205dae0261410fc9cb92bc48ee7624"
       }
     }
   ]

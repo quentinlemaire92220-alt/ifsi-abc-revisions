@@ -78,7 +78,10 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  if(newCourse.audioStatus!=='available'||newCourse.audioCount!==newVoice.length
   ||newCourse.audioFolderUrl!=='https://drive.google.com/drive/folders/'+supplement.folderId)return false;
  if(JSON.stringify(canonical(prior.publicationApproval))!==JSON.stringify(canonical(delivery.publicationApproval)))return false;
- const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval'])delete x[k];return x;};
+ // Un cours en attente peut devenir complet lorsque SEUL le blocage vocal a été levé.
+ const oldStatus=prior.status,newStatus=delivery.status;
+ if(newStatus!==oldStatus && !(oldStatus==='awaiting_mp3'&&newStatus==='complete'&&(delivery.blockers||[]).length===0))return false;
+ const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval','status'])delete x[k];return x;};
  if(JSON.stringify(canonical(stripDelivery(prior)))!==JSON.stringify(canonical(stripDelivery(delivery))))return false;
  const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&b.reason==='awaiting_user_mp3'));
  if(JSON.stringify(canonical(expectedBlockers))!==JSON.stringify(canonical(delivery.blockers||[])))return false;
