@@ -140,6 +140,19 @@ for(const c of registry.courses){
 for(const token of ['v74-original-support','Support du cours (documents sources)','📸 Captures du cours — provisoires','Support du cours non disponible','📄 Fiches de révision','courseSourceHtml','captureSupportUrl','captureSupportItems']){
  assert.ok(course.includes(token),'Séparation source de cours / fiche de révision absente : '+token);
 }
+// Les PDF de QCM restent classés avec les entraînements, jamais avec les supports sources.
+const bientraitance=registered.get('d1_bientraitance');
+assert.equal(bientraitance?.qcmPdfQuestionCount,40,'La bientraitance doit conserver ses 40 questions PDF');
+assert.match(bientraitance?.qcmPdfUrl||'',/D1_Bientraitance_QCM_40_Corriges\.pdf$/,'Le PDF QCM de bientraitance doit rester lié');
+for(const token of ['v74-qcm-section','🧠 QCM','const qcmDocuments=','const qcmPdfCards=','isQcmDocument74(x)','!isQcmDocument74(x)'])
+ assert.ok(course.includes(token),'Le bloc dédié QCM est incomplet : '+token);
+const qcmDisplay=course.indexOf('v74-qcm-section');
+const sourceDisplay=course.indexOf('  ${courseSourceHtml}',qcmDisplay);
+const docsDisplay=course.indexOf('  ${extraDocs?',sourceDisplay);
+assert.ok(qcmDisplay>=0&&sourceDisplay>qcmDisplay&&docsDisplay>sourceDisplay,'Les QCM PDF doivent précéder les supports et les documents génériques');
+assert.ok(!course.includes("const extraDocs=[['📝','QCM PDF"),'Le PDF QCM ne doit plus alimenter Documents du cours');
+assert.ok(course.includes('d.qs.length||qcmPdfCards'),'Un cours avec PDF QCM mais sans banque interactive doit présenter sa section QCM');
+
 console.log('✅ TNR provenance : supports officiels, captures provisoires et fiches de révision bien séparés');
 
 console.log('✅ TNR des liens officiels, sous-cours masqués et PDF multiparties validés');
