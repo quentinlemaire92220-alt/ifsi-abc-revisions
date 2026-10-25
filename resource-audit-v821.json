@@ -1,5 +1,5 @@
 {
-  "version": "8.30.125",
+  "version": "8.30.126",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire V8.30.125 : Relation soignant-soigné D1.1 ajoutée en PROVISOIRE depuis deux transcriptions ; 40 QCM et flashcards, 25 termes, 1 fiche écrite ; diaporama officiel absent.",
+  "note": "Inventaire V8.30.126 : +3 MP3 approuvés (Posture TD2 et consolidations Pharmacologie / Infections neuro-méningées) ; anciens MP3 et supports conservés.",
   "expectedTotals": {
     "courses": 55,
     "sheets": 72,
     "infographics": 184,
-    "vocals": 166,
+    "vocals": 169,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
