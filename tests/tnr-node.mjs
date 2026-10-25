@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import './course-navigation-ui-contract.mjs';
 import zlib from 'node:zlib';
 
 const read=p=>fs.readFileSync(p,'utf8');

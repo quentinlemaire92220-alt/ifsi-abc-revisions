@@ -19,7 +19,9 @@ for(const voice of addedVocals){
  assert.ok(approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
  'MP3 ajouté sans complément audio explicitement approuvé : '+voice.id);
 }
-assert.equal(addedVocals.length,3,'Trois MP3 complémentaires attendus');
+const priorAudioIds=new Set(oldVocals.map(v=>v.id));
+const expectedApprovedAudioIds=new Set(approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id)));
+assert.deepEqual(new Set(addedVocals.map(v=>v.id)),expectedApprovedAudioIds,'Seuls les MP3 complémentaires approuvés peuvent être ajoutés depuis la version de comparaison');
 const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
 const beforeCount=oldVocabulary.entries.length;
 assert.deepEqual({...newVocabulary,entries:newVocabulary.entries.slice(0,beforeCount)},oldVocabulary,
