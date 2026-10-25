@@ -1069,6 +1069,43 @@
           "cardCount": 40
         }
       ]
+    },
+    {
+      "id": "d1_bientraitance",
+      "label": "La bientraitance — PROVISOIRE",
+      "aliases": [
+        "La bientraitance, de quoi parle-t-on ?",
+        "UE D1.1 — La bientraitance",
+        "Bientraitance"
+      ],
+      "domain": "D",
+      "ue": "D1",
+      "teachingUnit": "D1.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": false,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Fiche et entraînements élaborés d'après une transcription orale ; support écrit officiel indisponible.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/bientraitance-p01/D1_Bientraitance_QCM_40_Corriges.pdf",
+      "qcmPdfQuestionCount": 40,
+      "flashcardTarget": 40,
+      "authoredFlashcards": true,
+      "audioStatus": "script_prepared_no_mp3",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/bientraitance-p01/D1_Bientraitance_Fiche_Revision.pdf",
+          "type": "revision"
+        },
+        {
+          "label": "Flashcards — 40 cartes — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/bientraitance-p01/D1_Bientraitance_Flashcards_40.pdf",
+          "type": "flashcards",
+          "cardCount": 40
+        }
+      ]
     }
   ],
   "auditBaseline": {
