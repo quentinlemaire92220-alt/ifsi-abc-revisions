@@ -17,7 +17,7 @@ const commands=[
 if(stage==='publication')commands.push(
  ['pedagogical_contract',n,['tests/qcm-autonomy-changed.mjs']],
  ['pdf_bank_bytes',py,['tools/pdf-bank-coherence.py']],
- ['graphic_layout',py,['tools/pdf_graphic_contract_v2.py','--all-published']],
+ ['graphic_layout',py,['tools/pdf_graphic_contract_v2.py','--all-published','--report','preflight-reports/graphic-v2.json']],
  ['pdf_bank_bytes',n,['tests/posture-td2-publication-gate.mjs']],
  ['technical_release',n,['tests/public-artifact-contract-test.mjs']],
  ['technical_release',n,['tests/ux-regression.mjs']],
