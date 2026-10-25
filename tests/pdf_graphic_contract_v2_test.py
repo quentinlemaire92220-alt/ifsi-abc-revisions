@@ -20,7 +20,11 @@ def sample(path,role='fiche',fault=None):
         p.insert_text((50,355),'Synthèse générale',fontsize=12)
         if fault!='no_lexicon':p.insert_text((50,455),'Définitions et mots-clés',fontsize=12)
     elif role=='qcm':
-        p.insert_text((50,105),'Q01 - Comment observer ?',fontsize=12)
+        p.insert_text((50,105),'Q01',fontsize=12)
+        p.insert_text((95,105),'Comment observer ?',fontsize=12)
+        if fault!='no_question_panel':
+            p.draw_line((45,90),(45,285),color=PURPLE)
+            p.draw_line((550,90),(550,285),color=PURPLE)
         for i,t in enumerate(['A. Observer','B. Expliquer','C. Demander','D. Ecouter','E. Rassurer']):
             y=150+i*24
             if fault!='no_checkbox':
@@ -50,10 +54,11 @@ with TemporaryDirectory() as tmp:
            'overlap':('fiche','lignes de texte se chevauchent'),
            'no_lexicon':('fiche','lexique doit être'),
            'no_checkbox':('qcm','Case QCM absente'),
-           'right_checkbox':('qcm','Case QCM absente')}
+           'right_checkbox':('qcm','Case QCM absente'),
+           'no_question_panel':('qcm','Encadré vectoriel de question')}
     for fault,(role,needle) in cases.items():
         pdf=root/(fault+'.pdf');sample(pdf,role,fault)
         result=inspect(pdf,role,1)
         assert result['status']=='FAIL' and needle in '\n'.join(result['errors']),f'{fault}: {result["errors"]}'
     assert inspect(root/'fiche.pdf','fiche',2)['status']=='FAIL','Pagination fausse admise'
-    print('PASS V2 : 3 PDF conformes et 9 défauts rejetés (bandeaux, lisibilité, débordement, collision, lexique, cases, pagination)')
+    print('PASS V2 : 3 PDF conformes et 10 défauts rejetés (bandeaux, lisibilité, débordement, collision, lexique, cases, pagination)')
