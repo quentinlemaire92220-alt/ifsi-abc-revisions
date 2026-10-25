@@ -2373,6 +2373,170 @@
         "reconciled": false,
         "transcriptCount": 1
       }
+    },
+    {
+      "courseId": "d1_relation_soignant_soigne_ecoute_active",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReason": "Diaporama officiel annoncé en séance mais non reçu ; deux transcriptions orales disponibles. Cette publication ne prétend pas à une revue scientifique exhaustive.",
+      "provisionalReassessmentRequired": true,
+      "publicAssetSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+      "qcmPublicAssetSha256": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
+      "flashcardPublicAssetSha256": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+      "driveFolderId": "1ySajJqAnw1bmyXl393VxP1-eJ0sHo8Ul",
+      "sheetResourceId": "d1_relation_ecoute_written_p01",
+      "sheetResourceIds": [
+        "d1_relation_ecoute_written_p01"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmDriveId": "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx",
+      "flashcardDriveId": "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR",
+      "qcmBank": "data/course-banks/d1_relation_soignant_soigne_ecoute_active.json",
+      "qcmCount": 40,
+      "flashcardCount": 40,
+      "vocabularyCount": 25,
+      "vocals": [],
+      "scriptsPreparedCount": 1,
+      "requestedVocals": true,
+      "sourceAudit": {
+        "officialChecked": false,
+        "officialSupportMissing": true,
+        "oralStatus": "unverified",
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "PT01 environ 1 h 14 et PT02 environ 34 min ; clôtures de séance présentes ; diaporama de cours non reçu, contenu vidéo non inspecté. Validation limitée aux deux transcriptions.",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested",
+        "officialSupportPreservedPrivately": false,
+        "missingSources": [
+          "written_official_support",
+          "classroom_videos"
+        ]
+      },
+      "writtenCoverage": {
+        "expectedEssential": 8,
+        "coveredEssential": 8,
+        "prioritySourceReference": "Objectifs d'enseignement relevés dans l'oral, distingués de trois axes déduits pour la pratique.",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Objectifs et notions présents dans les deux transcriptions reçues ; comparaison impossible avec les diapositives officielles absentes."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+        "pageSize": "A4",
+        "pageCount": 16,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 25,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+        "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
+        "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7"
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 16,
+        "reviewedAt": "2026-10-25T12:26:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "d1_relation_ecoute_written_p01": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb"
+        },
+        "acceptanceBasis": "Utilisateur : « Je valide » après présentation du lot exact de 16+20+9 pages, 25/10/2026 ; accord sur la diffusion en statut PROVISOIRE, sans prétendre à une vérification du support officiel absent."
+      },
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "official_support_missing",
+          "detail": "Diaporama officiel non reçu ; rapprocher dès réception."
+        },
+        {
+          "resource": "videos",
+          "reason": "teacher_videos_unavailable",
+          "detail": "Séquences projetées en séance non vérifiées."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_mp3",
+          "detail": "Script privé prêt ; aucun MP3 disponible."
+        }
+      ],
+      "publicationApproval": {
+        "status": "pending_digest",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-25T12:26:00+01:00",
+        "bundleSha256": "",
+        "mergeDeploymentCondition": "all_tnr_green",
+        "provisionalOnly": true,
+        "approvalBasis": "GO initial de publication suivi d'une validation graphique et pédagogique limitée au statut provisoire (« Je valide »)."
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf",
+          "sha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+          "pageCount": 16,
+          "artifactId": "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD"
+        },
+        "qcm": {
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_40_Corriges.pdf",
+          "sha256": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
+          "pageCount": 20,
+          "artifactId": "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx"
+        },
+        "flashcards": {
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf",
+          "sha256": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+          "pageCount": 9,
+          "artifactId": "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR"
+        }
+      },
+      "sourceBasis": {
+        "kind": "oral_transcript",
+        "nativeSupportAvailable": false,
+        "reconciled": false,
+        "transcriptCount": 2
+      }
     }
   ],
   "supplementalResourceApprovals": [
