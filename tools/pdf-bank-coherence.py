@@ -6,19 +6,31 @@ from student_support_clean_gate import check_document
 def norm(s):return re.sub(r'\s+',' ',unicodedata.normalize('NFC',s)).strip()
 def body(document):
     return '\n'.join(page.get_text(clip=fitz.Rect(0,40,page.rect.width,page.rect.height-36)) for page in document)
+def without_theme_titles(text,rows):
+    # Strip only headings whose names are present in the actual canonical bank.
+    # Never ignore arbitrary text; question/answer contents remain compared exactly.
+    themes={q['theme'] for q in rows}
+    lines=[]
+    for line in text.splitlines():
+        t=line.strip()
+        if t in themes:continue
+        if t.startswith('THÈME • ') and t[len('THÈME • '):] in themes:continue
+        lines.append(line)
+    return '\\n'.join(lines)
+
 def validate_qcm(text,rows):
     parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
     assert len(parts)==2,'Corrigés absents'
     questions,corrections=parts
     # Headings are layout, never question content. Only exact theme lines are stripped.
-    questions='\n'.join(s for s in questions.splitlines() if s.strip() not in {q['theme'] for q in rows})
+    questions=without_theme_titles(questions,rows)
     blocks=list(re.finditer(r'(?m)^Q(\d{2})\s+',questions))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Questions manquantes/dupliquées'
     for i,(q,m) in enumerate(zip(rows,blocks)):
         actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
         expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
-    corrections=corrections.replace('Corrigés argumentés','')
+    corrections=without_theme_titles(corrections.replace('Corrigés argumentés',''),rows)
     blocks=list(re.finditer(r'(?m)^Q(\d{2}) - Réponses : ([A-E](?:, [A-E])*)\s*\n',corrections))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Corrigés manquants/dupliqués'
     for i,(q,m) in enumerate(zip(rows,blocks)):
@@ -26,6 +38,7 @@ def validate_qcm(text,rows):
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
 def validate_cards(text,rows):
+    text=without_theme_titles(text,rows)
     blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
     for i,(q,m) in enumerate(zip(rows,blocks)):
