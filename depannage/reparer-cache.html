@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>IFSI ABC — Réparer le cache</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#15131d;color:#f8f6ff}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;padding:32px 16px;display:grid;place-items:start center}
+    main{max-width:640px;width:100%;background:#211d2b;border:1px solid #443951;border-radius:22px;padding:clamp(20px,5vw,34px)}
+    h1{font-size:clamp(23px,4vw,30px);margin:0 0 6px}h2{font-size:16px;margin:21px 0 8px}p{color:#d3cadf;line-height:1.6}
+    .chip{display:inline-block;background:#363049;color:#d9ceff;font-size:12px;font-weight:800;border-radius:22px;padding:6px 10px;margin-bottom:16px}
+    .safe{padding:12px;border:1px solid #47665e;border-radius:12px;background:#1c3530;color:#d2faec;line-height:1.5;margin:20px 0}
+    button,a.action{display:block;width:100%;margin:12px 0 0;padding:13px 16px;font:inherit;font-weight:800;border-radius:13px;text-align:center;cursor:pointer;text-decoration:none}
+    button{color:white;background:#6941c6;border:0}button.secondary{background:#3b344e}button:disabled{opacity:.5;cursor:wait}
+    a.action{color:#352356;background:#eee8fb}
+    #status{white-space:pre-wrap;line-height:1.55;margin-top:14px;border-radius:10px;padding:12px;color:#d8d1e2;background:#171421;font-size:14px}
+    .small{font-size:13px;color:#c7bfd1}.hidden{display:none!important}
+  </style>
+</head>
+<body><main>
+  <div class="chip">IFSI ABC Révisions • Dépannage indépendant</div>
+  <h1>Réparer le blocage au lancement</h1>
+  <p>Cette page légère ne lance aucun cours, QCM ou module de l’application. Elle peut servir même si l’application est figée.</p>
+  <div class="safe"><strong>Ta progression est conservée.</strong> La réparation efface uniquement les caches de l’application IFSI ABC et désactive son Service Worker. Elle ne supprime ni les scores, ni les favoris, ni les données stockées dans le navigateur.</div>
+  <h2>1. Sauvegarde (facultative)</h2>
+  <p class="small">Tu peux conserver une copie locale de tes données avant toute opération. Rien n'est envoyé à un serveur.</p>
+  <button type="button" class="secondary" id="backup">Exporter une sauvegarde de mes données locales</button>
+  <h2>2. Réparation</h2>
+  <p class="small">Ouvre cette page depuis Chrome ou Edge dans le profil où l’application est installée, et non en navigation privée.</p>
+  <button type="button" id="repair">Réparer le cache IFSI ABC</button>
+  <div id="status" role="status" aria-live="polite">Prêt. Aucune donnée n’a été modifiée.</div>
+  <h2>3. Réouverture</h2>
+  <p class="small">Après réparation, ferme complètement la fenêtre de l’application, puis rouvre-la avec le bouton ci-dessous.</p>
+  <a class="action" id="reopen" href="../?retour-depannage=1">Rouvrir IFSI ABC</a>
+  <p class="small">Si l’application se fige encore après réparation, note la version affichée et précise si le blocage survient avant ou après l’apparition de l’accueil. Nous pourrons alors isoler le script responsable.</p>
+</main>
+<script>
+(function(){
+  'use strict';
+  var root = new URL('../',location.href);
+  var status = document.getElementById('status');
+  var repair = document.getElementById('repair');
+  var reopen = document.getElementById('reopen');
+  reopen.href = root.href+'?retour-depannage=1';
+  function message(txt){status.textContent=txt}
+  document.getElementById('backup').addEventListener('click',function(){
+    try{
+      var records={};
+      for(var i=0;i<localStorage.length;i++){
+        var key=localStorage.key(i);
+        records[key]=localStorage.getItem(key);
+      }
+      var backup={app:'IFSI ABC',createdAt:new Date().toISOString(),origin:location.origin,scope:root.pathname,localStorage:records};
+      var blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});
+      var link=document.createElement('a');
+      link.href=URL.createObjectURL(blob);
+      link.download='IFSI-ABC-sauvegarde-locale-'+new Date().toISOString().slice(0,10)+'.json';
+      document.body.appendChild(link);link.click();link.remove();
+      setTimeout(function(){URL.revokeObjectURL(link.href)},1000);
+      message('Sauvegarde préparée localement. Conserve ce fichier en lieu sûr : il contient tes données de progression.');
+    }catch(error){message('Sauvegarde non effectuée : '+String(error&&error.message||error))}
+  });
+  repair.addEventListener('click',async function(){
+    repair.disabled=true;
+    message('Vérification des anciens caches IFSI ABC…');
+    try{
+      var registrations=('serviceWorker' in navigator)?await navigator.serviceWorker.getRegistrations():[];
+      var ours=registrations.filter(function(registration){return registration.scope===root.href});
+      var removedReg=0;
+      for(var i=0;i<ours.length;i++){if(await ours[i].unregister())removedReg++}
+      var keys=('caches' in window)?await caches.keys():[];
+      // Limiter la suppression aux caches de l'application, jamais aux données locales.
+      var cacheNames=keys.filter(function(name){return name.startsWith('ifsi-abc-v')});
+      var removedCaches=0;
+      for(var j=0;j<cacheNames.length;j++){if(await caches.delete(cacheNames[j]))removedCaches++}
+      message('Réparation terminée.\nService Workers IFSI ABC désactivés : '+removedReg+
+        '\nCaches IFSI ABC supprimés : '+removedCaches+
+        '\nScores, favoris, progression et stockage local : conservés.\n\nFerme l’application, puis utilise « Rouvrir IFSI ABC ».');
+    }catch(error){
+      message('Réparation incomplète : '+String(error&&error.message||error)+
+        '\nAucune donnée de progression n’a été volontairement supprimée. Réessaie depuis Chrome ou Edge.');
+    }finally{repair.disabled=false}
+  });
+})();
+</script>
+</body></html>
