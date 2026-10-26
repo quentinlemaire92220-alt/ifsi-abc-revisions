@@ -83,7 +83,7 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  if(newStatus!==oldStatus && !(oldStatus==='awaiting_mp3'&&newStatus==='complete'&&(delivery.blockers||[]).length===0))return false;
  const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval','status'])delete x[k];return x;};
  if(JSON.stringify(canonical(stripDelivery(prior)))!==JSON.stringify(canonical(stripDelivery(delivery))))return false;
- const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&b.reason==='awaiting_user_mp3'));
+ const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&['awaiting_user_mp3','awaiting_mp3'].includes(b.reason)));
  if(JSON.stringify(canonical(expectedBlockers))!==JSON.stringify(canonical(delivery.blockers||[])))return false;
  const expectedVocalIds=[...(prior.vocals||[]),...supplement.vocalIds];
  if(JSON.stringify(delivery.vocals||[])!==JSON.stringify(expectedVocalIds))return false;

@@ -1515,7 +1515,10 @@
       "schematics": "with_exports",
       "embeddedFigureCount": 5,
       "requestedVocals": false,
-      "vocals": [],
+      "vocals": [
+        "sante_mondiale_sante_france_p01_vocal_01",
+        "sante_mondiale_sante_france_p01_vocal_02"
+      ],
       "blockers": [
         {
           "resource": "support",
@@ -1541,7 +1544,9 @@
         "1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ": "31525ab214f63001ea51ba94ba0af8ffd5b16c1ec5a121bee059e907ef74c136",
         "10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm": "76a4e6572b40e347409d5c432037c35c13d9af8346b3bb5daa321e4d92c67dd2",
         "19WW-HFiGz_8FsfJuOFqSZe7ov82gG_4p": "88ceb21c827d6727867415addf5c6cec4d921d3128b7b46fe8c490bdcc618e44",
-        "1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw": "1461946ac86f4215c6e11e68a1a8f7ad9ef69d274f7cc4b5b64e566b9e450bfb"
+        "1W3Z5WNEQAcF5uOwGIgJI6vUcIju3q0Lw": "1461946ac86f4215c6e11e68a1a8f7ad9ef69d274f7cc4b5b64e566b9e450bfb",
+        "1v3cfOTPdwpiSpp77SSp9GTT2t_kV90rU": "e18dffab826a424fda009a55f9a1c9c699bc74c30a70c18b7590d54f9d2b18ab",
+        "1xOuVF4d7F81dlZ9JOY3HtyZu8iuPNZOz": "4f181bd4ff2978d1d58337c4a6d9237a31d24b8e28a6e38def5dbf6908602433"
       },
       "visualAudit": {
         "status": "PASS",
@@ -1824,7 +1829,10 @@
       "flashcardCount": 42,
       "flashcardDriveId": "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-",
       "vocabularyCount": 36,
-      "vocals": [],
+      "vocals": [
+        "responsabilite_exercice_professionnel_p01_vocal_01",
+        "responsabilite_exercice_professionnel_p01_vocal_02"
+      ],
       "scriptsPreparedCount": 0,
       "blockers": [
         {
@@ -1836,17 +1844,14 @@
           "resource": "secret",
           "reason": "teacher_content_partial",
           "detail": "Volet secret traité comme complément réglementaire, et non comme priorité explicitement enseignée."
-        },
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Dossier audio vide créé, aucun MP3 supposé existant."
         }
       ],
       "artifactSha256s": {
         "1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB": "791ea754bb30fb2f62744a93f44f18268c3b3391506e7f9c977a84cb6fa3d707",
         "1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN": "b589bf950b88069ede12174632abce4c55f7672c1fee45aae6a97d52522f6b8a",
-        "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-": "a46927ae40c99b7f437b6f98f02347686561ad4ca2e7327ca3899640d40fde63"
+        "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-": "a46927ae40c99b7f437b6f98f02347686561ad4ca2e7327ca3899640d40fde63",
+        "1JNBZY8pglnjRqBHfJ_ARIUznEzrxhGNd": "ed06d9dd494b6c7d2c94c9b2337b8db84970092a6482605d464e647c8cb29b2f",
+        "1K_060J5TORlhxaK6w-IQOUIYamXVhvNl": "9311648babc4b01afa9029691f45ab608e59ae2134da72372ddc23f5df57ddf1"
       },
       "visualAudit": {
         "status": "PASS",
@@ -2241,7 +2246,9 @@
       "qcmCount": 40,
       "flashcardCount": 40,
       "vocabularyCount": 8,
-      "vocals": [],
+      "vocals": [
+        "d1_bientraitance_p01_vocal_01"
+      ],
       "scriptsPreparedCount": 1,
       "requestedVocals": true,
       "sourceAudit": {
@@ -2297,7 +2304,8 @@
       "artifactSha256s": {
         "1Sj0Xftsj_oDTvqauedKoL31HmGrCwxZN": "29c0b674ce7863c3c415517a11cfabbd8faf8461fd12d7dc97480caab56a3723",
         "d1_bientraitance_qcm_public_asset": "c5c5c63d44effad6d956678fb6206dd2227689cb3122b077a0d17e89e9dd89b5",
-        "d1_bientraitance_flashcards_public_asset": "c6e6f2c7563539c8f501293ec8171c25426d46637a7e93e8486fcc6ea4619946"
+        "d1_bientraitance_flashcards_public_asset": "c6e6f2c7563539c8f501293ec8171c25426d46637a7e93e8486fcc6ea4619946",
+        "1L_TnDmOKvE7PBi_d1aNxRrflCh4iYoS7": "00d3da3dd43f5c424fdb176a4841f12bc1616438436ed2173f3f6f341c3a6522"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -2332,11 +2340,6 @@
           "resource": "videos",
           "reason": "teacher_videos_unavailable",
           "detail": "Vidéos de cas commentées à l'oral non disponibles."
-        },
-        {
-          "resource": "vocals",
-          "reason": "awaiting_mp3",
-          "detail": "Script privé préparé, aucun MP3 déclaré."
         }
       ],
       "publicationApproval": {
@@ -2404,7 +2407,9 @@
       "qcmCount": 40,
       "flashcardCount": 40,
       "vocabularyCount": 25,
-      "vocals": [],
+      "vocals": [
+        "d1_relation_soignant_soigne_ecoute_active_p01_vocal_01"
+      ],
       "scriptsPreparedCount": 1,
       "requestedVocals": true,
       "sourceAudit": {
@@ -2460,7 +2465,8 @@
       "artifactSha256s": {
         "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
         "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
-        "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7"
+        "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+        "1fS_P-90FE74vjVa6CGhyysm46VYEATs_": "e49d8996c509b727949f190bf1540edac612c1710ef6d1bdd4077169dfbbc260"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -2495,11 +2501,6 @@
           "resource": "videos",
           "reason": "teacher_videos_unavailable",
           "detail": "Séquences projetées en séance non vérifiées."
-        },
-        {
-          "resource": "vocals",
-          "reason": "awaiting_mp3",
-          "detail": "Script privé prêt ; aucun MP3 disponible."
         }
       ],
       "publicationApproval": {
@@ -3371,6 +3372,95 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-25T22:17:00+01:00",
         "bundleSha256": "acac0b132552bc75a2da0e18547b917fb9205dae0261410fc9cb92bc48ee7624"
+      }
+    },
+    {
+      "courseId": "responsabilite_exercice_professionnel",
+      "folderId": "1_gGQ6VEyU3xJ4WohSdW9PAGptjTsypTU",
+      "vocalIds": [
+        "responsabilite_exercice_professionnel_p01_vocal_01",
+        "responsabilite_exercice_professionnel_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1JNBZY8pglnjRqBHfJ_ARIUznEzrxhGNd": "ed06d9dd494b6c7d2c94c9b2337b8db84970092a6482605d464e647c8cb29b2f",
+        "1K_060J5TORlhxaK6w-IQOUIYamXVhvNl": "9311648babc4b01afa9029691f45ab608e59ae2134da72372ddc23f5df57ddf1"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T08:13:00+01:00",
+        "bundleSha256": "5a295b80919cf10aa547f5926d47fbe741ca6c3669897ff4a5420c83f04d602c"
+      }
+    },
+    {
+      "courseId": "sante_mondiale_sante_france",
+      "folderId": "14t1L6Rca-M7F0RtJY16r1HRRFNyAkL9H",
+      "vocalIds": [
+        "sante_mondiale_sante_france_p01_vocal_01",
+        "sante_mondiale_sante_france_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1v3cfOTPdwpiSpp77SSp9GTT2t_kV90rU": "e18dffab826a424fda009a55f9a1c9c699bc74c30a70c18b7590d54f9d2b18ab",
+        "1xOuVF4d7F81dlZ9JOY3HtyZu8iuPNZOz": "4f181bd4ff2978d1d58337c4a6d9237a31d24b8e28a6e38def5dbf6908602433"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T08:13:00+01:00",
+        "bundleSha256": "8f385546756b9b71d20ca9b120cdf740d8fcb62753eb4a9631388c76537e3320"
+      }
+    },
+    {
+      "courseId": "d1_bientraitance",
+      "folderId": "1yqxbXdTnz-_edtWn2lZ_WhEj0PICKLwO",
+      "vocalIds": [
+        "d1_bientraitance_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1L_TnDmOKvE7PBi_d1aNxRrflCh4iYoS7": "00d3da3dd43f5c424fdb176a4841f12bc1616438436ed2173f3f6f341c3a6522"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T08:13:00+01:00",
+        "bundleSha256": "31b0316a4e8450a82fd04648f3407c6c146688eba3e2fb61e433be6c7f845488"
+      }
+    },
+    {
+      "courseId": "d1_relation_soignant_soigne_ecoute_active",
+      "folderId": "1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj",
+      "vocalIds": [
+        "d1_relation_soignant_soigne_ecoute_active_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1fS_P-90FE74vjVa6CGhyysm46VYEATs_": "e49d8996c509b727949f190bf1540edac612c1710ef6d1bdd4077169dfbbc260"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T08:13:00+01:00",
+        "bundleSha256": "1a505073e5e2a80ce68e263b16ea0ff8cb40b781e23b834b3ab729820d10de8a"
+      }
+    },
+    {
+      "courseId": "traumatologie",
+      "folderId": "1XbBXtB_SE0Wb2ZBhqd06ThjGrXi-80io",
+      "vocalIds": [
+        "traumatologie_p01_vocal_01"
+      ],
+      "artifactSha256s": {
+        "1YcAzzdahRsR9lKOWo2bwrZpcJAvGMJ6-": "ebbadb42103846306ad6f2b8c8f6eddcfc0cdf467e0febf259ad12aa66bd5050"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T08:13:00+01:00",
+        "bundleSha256": "894e292aedae55cf1a2db875aa236b4dced3925bd186cac941755651257ee96f"
       }
     }
   ]
