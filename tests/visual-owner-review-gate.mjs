@@ -53,7 +53,19 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   for(const id of ids){
    const sheet=(data.sheets||[]).find(x=>x.courseId===courseId&&x.resourceId===id);
    assert.ok(sheet,courseId+': fiche inconnue '+id);
-   assert.equal(review.reviewedPdfSha256s?.[id],delivery.artifactSha256s?.[driveId(sheet)],
+   // A PDF hosted on GitHub Pages has no Drive ID. Its immutable review proof
+   // is the local artifact ID, still tied to the exact public URL and SHA.
+   let digestId=driveId(sheet);
+   if(!digestId && delivery.publicationHost==='github_pages'){
+    const pub=delivery.publicArtifacts?.sheet;
+    const expected=pub?.path && 'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+pub.path;
+    assert.equal(sheet?.url,expected,courseId+': URL PDF Pages différente du fichier revu');
+    assert.match(pub?.sha256||'',/^[a-f0-9]{64}$/,courseId+': SHA du PDF Pages absent');
+    digestId=pub?.artifactId;
+    assert.equal(delivery.artifactSha256s?.[digestId],pub.sha256,
+      courseId+': empreinte publiée et manifeste Pages divergents');
+   }
+   assert.equal(review.reviewedPdfSha256s?.[id],delivery.artifactSha256s?.[digestId],
     courseId+': revue graphique et empreinte de la fiche divergentes');
   }
   return {checkedSheets:ids.length,checkedBoards:0,checkedImages:0};
