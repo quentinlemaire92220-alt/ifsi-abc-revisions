@@ -6727,6 +6727,306 @@
         "d1_relation_soignant_soigne_ecoute_active"
       ],
       "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_001",
+      "term": "Symptôme",
+      "definition": "Manifestation ressentie par une personne ; son expérience et sa signification peuvent être subjectives.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_002",
+      "term": "Théorie de gestion des symptômes (TGS)",
+      "definition": "Théorie intermédiaire qui relie expérience du symptôme, stratégies de gestion, effets obtenus et facteurs contextuels.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_003",
+      "term": "Théorie intermédiaire",
+      "definition": "Théorie centrée sur un phénomène infirmier précis, entre les conceptions très générales et les situations concrètes.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_004",
+      "term": "Métaparadigme infirmier",
+      "definition": "Quatre piliers de lecture de la discipline : personne, environnement, santé/maladie et soin.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_005",
+      "term": "Perception",
+      "definition": "Ce que la personne ressent ou reconnaît comme manifestation.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_006",
+      "term": "Évaluation du symptôme",
+      "definition": "Appréciation de la fréquence, intensité, durée, évolution, retentissement et signification de la manifestation.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_007",
+      "term": "Vécu / réponse au symptôme",
+      "definition": "Émotions, interprétations et réactions associées à l’expérience du symptôme.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_008",
+      "term": "Facteurs contextuels",
+      "definition": "Caractéristiques personnelles, de santé ou d’environnement qui influencent l’expérience et la gestion.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_009",
+      "term": "Facteur interne",
+      "definition": "Élément situé du côté de la personne : émotions, histoire, habitudes, ressources propres ; distinction parfois non stricte.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_010",
+      "term": "Facteur externe",
+      "definition": "Élément de contexte lié à l’environnement : travail, études, contraintes, réseau de soutien ; distinction parfois non stricte.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_011",
+      "term": "Interaction",
+      "definition": "Influence réciproque entre plusieurs facteurs, expériences ou réponses.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_012",
+      "term": "Cluster de symptômes",
+      "definition": "Groupe de symptômes coexistants, susceptibles d’interagir et de créer un retentissement commun.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_013",
+      "term": "Autogestion",
+      "definition": "Actions par lesquelles une personne participe à la gestion de sa situation de santé et de ses symptômes.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_014",
+      "term": "Auto-soins",
+      "definition": "Mesures mises en œuvre par la personne pour prendre soin d’elle dans les limites de ses connaissances et prescriptions.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_015",
+      "term": "Automédication",
+      "definition": "Prise d’un médicament de sa propre initiative, distincte de l’usage autonome d’un traitement prescrit.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_016",
+      "term": "Stratégie de gestion",
+      "definition": "Action visant à prévenir, minimiser, retarder ou mieux supporter le symptôme.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_017",
+      "term": "Résultat de la gestion",
+      "definition": "Effet évalué d’une stratégie sur les symptômes, les capacités et la qualité de vie.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_018",
+      "term": "Adhésion",
+      "definition": "Participation de la personne à un projet de soin qu’elle comprend, accepte et juge réalisable.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_019",
+      "term": "Co-construction",
+      "definition": "Élaboration du plan de soins avec la personne plutôt que sa simple imposition.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_020",
+      "term": "Négociation thérapeutique",
+      "definition": "Recherche d’un compromis acceptable entre les besoins de santé et les priorités de la personne.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_021",
+      "term": "Objectif réaliste",
+      "definition": "But atteignable dans la situation réelle de la personne, assorti de critères vérifiables.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_022",
+      "term": "Réévaluation",
+      "definition": "Nouvelle appréciation des symptômes, des résultats et de l’adéquation du plan après mise en œuvre.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_023",
+      "term": "Cahier / carnet de suivi",
+      "definition": "Support consignant épisodes, contexte, manifestations et effets des stratégies afin d’en discuter les tendances.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_024",
+      "term": "14 besoins fondamentaux",
+      "definition": "Modèle conceptuel de Virginia Henderson centré sur besoins quotidiens et autonomie.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_025",
+      "term": "Modèle clinique trifocal",
+      "definition": "Organisation des données en situation de santé / manifestations, risques potentiels et réactions humaines réelles.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_026",
+      "term": "Risque potentiel",
+      "definition": "Problème possible à anticiper ; il n’équivaut pas à une manifestation effectivement présente.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_027",
+      "term": "Réaction humaine réelle",
+      "definition": "Réponse physique, psychologique ou sociale observée ou rapportée dans la situation.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_028",
+      "term": "Raisonnement clinique",
+      "definition": "Recueil, interprétation et mise en relation de données pour orienter une décision de soin.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_029",
+      "term": "Jugement clinique",
+      "definition": "Appréciation argumentée d’une situation fondée sur les données pertinentes et les connaissances mobilisées.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
+    },
+    {
+      "id": "a1_tgs_td_term_030",
+      "term": "Retentissement fonctionnel",
+      "definition": "Conséquence des symptômes sur les activités et la vie quotidienne.",
+      "courseIds": [
+        "theorie_gestion_symptomes_td"
+      ],
+      "theme": "La théorie des symptômes — TD d’application",
+      "sourceType": "transcription_orale"
     }
   ]
 }

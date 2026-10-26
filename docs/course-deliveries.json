@@ -2545,6 +2545,146 @@
         "06": "15KixhpwmFIU3vbLqAVMXLvTwf-XitORD",
         "07": "1MHnyURqsVfy95ozT0SAY_M6vuxl006u7"
       }
+    },
+    {
+      "courseId": "theorie_gestion_symptomes_td",
+      "part": "TD",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReason": "Support écrit propre au TD non reçu ; transcription non comparée à l'audio source ; CM4 distinct préservé.",
+      "provisionalReassessmentRequired": true,
+      "publicAssetSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+      "qcmPublicAssetSha256": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
+      "flashcardPublicAssetSha256": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3",
+      "sheetResourceId": "a1_tgs_td_written_p01",
+      "sheetResourceIds": [
+        "a1_tgs_td_written_p01"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmBank": "data/course-banks/theorie_gestion_symptomes_td.json",
+      "qcmCount": 40,
+      "flashcardCount": 40,
+      "vocabularyCount": 30,
+      "vocals": [],
+      "scriptsPreparedCount": 1,
+      "requestedVocals": false,
+      "sourceAudit": {
+        "officialChecked": false,
+        "officialSupportMissing": true,
+        "oralStatus": "unverified",
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "Transcription TD reçue jusqu'à la clôture (environ 1 h 27) et CM4 La théorie dans la pratique disponible ; pas de support spécifique du TD ni vérification de l'enregistrement.",
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested",
+        "missingSources": [
+          "official_td_support",
+          "original_audio_comparison"
+        ]
+      },
+      "writtenCoverage": {
+        "prioritySourceReference": "Notions présentes dans le TD, priorités directes distinguées des inférences.",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Relecture technique du contenu fourni uniquement ; revue scientifique exhaustive non acquise."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+        "pageSize": "A4",
+        "pageCount": 12,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 30,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "tgs_td_sheet_public_candidate": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+        "tgs_td_qcm_public_candidate": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
+        "tgs_td_flash_public_candidate": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3"
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31"
+      },
+      "visualOwnerReview": {
+        "status": "provisional",
+        "method": "visible_previews_and_page_qa",
+        "pagesChecked": 12,
+        "reviewerDecision": "published_as_provisional_only",
+        "reviewedPdfSha256s": {
+          "a1_tgs_td_written_p01": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31"
+        },
+        "acceptanceBasis": "GO publication explicite le 26/10/2026, réserves scientifiques et source manquante maintenues."
+      },
+      "blockers": [
+        {
+          "resource": "td_support",
+          "reason": "official_support_missing",
+          "detail": "Support propre au TD non reçu ; relancer E-Campus/Yikiforma selon disponibilité."
+        },
+        {
+          "resource": "audio",
+          "reason": "oral_source_unverified",
+          "detail": "Transcription non confrontée à l'enregistrement original."
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "provisional_course_package",
+        "approvedAt": "2026-10-26",
+        "mergeDeploymentCondition": "all_tnr_green",
+        "provisionalOnly": true
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
+          "sha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+          "pageCount": 12,
+          "artifactId": "tgs_td_sheet_public_candidate"
+        },
+        "qcm": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
+          "sha256": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
+          "pageCount": 12,
+          "artifactId": "tgs_td_qcm_public_candidate"
+        },
+        "flashcards": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
+          "sha256": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3",
+          "pageCount": 7,
+          "artifactId": "tgs_td_flash_public_candidate"
+        }
+      },
+      "sourceBasis": {
+        "kind": "oral_transcript_with_existing_cm4_crosscheck",
+        "nativeSupportAvailable": false,
+        "reconciled": false,
+        "transcriptCount": 1
+      }
     }
   ],
   "supplementalResourceApprovals": [
