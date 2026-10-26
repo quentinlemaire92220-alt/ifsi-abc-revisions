@@ -2558,9 +2558,9 @@
       "pedagogicalValidated": false,
       "provisionalReason": "Support écrit propre au TD non reçu ; transcription non comparée à l'audio source ; CM4 distinct préservé.",
       "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
-      "qcmPublicAssetSha256": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
-      "flashcardPublicAssetSha256": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3",
+      "publicAssetSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+      "qcmPublicAssetSha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
+      "flashcardPublicAssetSha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
       "sheetResourceId": "a1_tgs_td_written_p01",
       "sheetResourceIds": [
         "a1_tgs_td_written_p01"
@@ -2608,7 +2608,7 @@
       },
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
         "pageSize": "A4",
         "pageCount": 12,
         "allPagesRendered": true,
@@ -2629,14 +2629,14 @@
         "checked": true
       },
       "artifactSha256s": {
-        "tgs_td_sheet_public_candidate": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
-        "tgs_td_qcm_public_candidate": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
-        "tgs_td_flash_public_candidate": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3"
+        "tgs_td_sheet_public_candidate": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+        "tgs_td_qcm_public_candidate": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
+        "tgs_td_flash_public_candidate": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pages_file_staged",
-        "pdfSha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31"
+        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845"
       },
       "visualOwnerReview": {
         "status": "owner_accepted",
@@ -2645,7 +2645,7 @@
         "pagesChecked": 12,
         "reviewerDecision": "explicit_graphic_acceptance",
         "reviewedPdfSha256s": {
-          "a1_tgs_td_written_p01": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31"
+          "a1_tgs_td_written_p01": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845"
         },
         "criteria": {
           "NO_GENERATED_IMAGES": "PASS",
@@ -2654,7 +2654,7 @@
           "NO_TECHNICAL_NOTES": "PASS"
         },
         "reviewedAt": "2026-10-26",
-        "acceptanceBasis": "GO explicite du propriétaire pour les trois PDF le 26/10/2026, après inspection de 31 pages des copies Drive contrôlées ; les octets identiques sont préparés dans GitHub. Validation scientifique exhaustive non déclarée. Manques du support TD et audio maintenus."
+        "acceptanceBasis": "GO explicite du propriétaire après présentation des trois PDF GitHub candidats ; revue visuelle des 31 pages de copies de travail et préflight graphique strict réussi sur les originaux GitHub. Aucune promesse de validation scientifique exhaustive ; réserves TD et audio maintenues."
       },
       "blockers": [
         {
@@ -2678,24 +2678,24 @@
         "provisionalOnly": true,
         "bundleSha256": "",
         "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante.",
-        "reviewNote": "Empreinte de lot à recalculer sur les PDF exacts inspectés, sans lever les réserves scientifiques."
+        "reviewNote": "Recalcul SHA-256 sur le lot candidat original GitHub après restauration des trois PDF passant le contrôle strict."
       },
       "publicArtifacts": {
         "sheet": {
           "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
-          "sha256": "180e0522bbc239928c5d84faaa1b136f63f252b9758ff95d67a5689e5ed63d31",
+          "sha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
           "pageCount": 12,
           "artifactId": "tgs_td_sheet_public_candidate"
         },
         "qcm": {
           "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
-          "sha256": "002c52cdc5478e06fe93c2929af6926199c5991ad3e570f30a9dc7b5ca9e3a4f",
+          "sha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
           "pageCount": 12,
           "artifactId": "tgs_td_qcm_public_candidate"
         },
         "flashcards": {
           "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
-          "sha256": "040af5ddebc371710661df483416c64ae67bf056e515b7a2b66de09ece743fd3",
+          "sha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
           "pageCount": 7,
           "artifactId": "tgs_td_flash_public_candidate"
         }
