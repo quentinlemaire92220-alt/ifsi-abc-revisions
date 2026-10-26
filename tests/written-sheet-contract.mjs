@@ -38,7 +38,15 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
    ? u.hostname.endsWith('.github.io') && u.pathname.includes('/assets/') && u.pathname.endsWith('.pdf')
    : u.hostname==='drive.google.com' && u.pathname.startsWith('/file/d/'));
  } catch {}
- assert.ok(id&&urlOK,label+'Drive ID et lien étudiant publiable requis');
+ if(isPages){
+  const published=delivery.publicArtifacts?.sheet;
+  assert.ok(urlOK&&published?.artifactId&&published?.path,
+   label+'PDF Pages identifié et publiable requis');
+  const expected='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+published.path;
+  assert.equal(sheet.url,expected,label+'lien Pages doit pointer vers les octets du lot déclaré');
+  assert.equal(delivery.artifactSha256s?.[published.artifactId],published.sha256,
+   label+'empreinte du document hébergé absente');
+ }else assert.ok(id&&urlOK,label+'Drive ID et lien étudiant publiable requis');
  if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
  if(provisional){
@@ -97,7 +105,11 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
   ['navigationChecked','sommaire non vérifié']
  ]) ok(pdf[field],label+msg);
  assert.equal(delivery.writtenModelReference,'communication_written_v5.3_2026-10-24',label+'référence V5.3 attendue');
- assert.equal(delivery.artifactSha256s?.[id]?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'empreintes divergentes');
+ if(isPages){
+  const pub=delivery.publicArtifacts.sheet;
+  assert.equal(pub.sha256?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'empreinte Pages divergente');
+  assert.equal(delivery.artifactSha256s?.[pub.artifactId]?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'SHA Pages non tracé');
+ }else assert.equal(delivery.artifactSha256s?.[id]?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'empreintes divergentes');
  const lex=delivery.lexicon;
  assert.ok(Number.isInteger(lex?.termCount)&&lex.termCount>0,label+'lexique absent');
  ok(lex.textSelectable,label+'lexique non sélectionnable');
