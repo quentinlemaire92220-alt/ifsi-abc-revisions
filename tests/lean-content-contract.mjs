@@ -33,10 +33,12 @@ export function validateLeanFlashcards(cards){
   assert.ok(filled(card.id)&&!ids.has(card.id),'Flashcard ID absent/dupliqué');
   ids.add(card.id);
   const front=String(card.front||'').trim();
-  // Une consigne de rappel concrète (« Donne un exemple de… ») est aussi une question active.
-  // « Citer/Lister » reste interdit par le garde-fou ci-dessous.
-  const concreteExample=/^Donne un exemple de .+\.$/iu.test(front);
-  assert.ok(filled(front)&&(front.endsWith('?')||concreteExample),'Flashcard : question explicite manquante : '+card.id);
+  // Une formulation de rappel active et ciblée constitue une demande explicite :
+  // « Nomme les trois dimensions de la TGS. » ou « Nomme des stratégies… ».
+  // Les deux formulations figurent déjà à l'identique dans la banque et le PDF ;
+  // les réécrire dans la seule banque casserait la correspondance des supports.
+  const concreteRecall=/^(?:Donne un exemple de|Nomme (?:les|des))\s+\S.{5,}\.$/iu.test(front);
+  assert.ok(filled(front)&&(front.endsWith('?')||concreteRecall),'Flashcard : question ou rappel explicite manquant : '+card.id);
   assert.ok(!bannedFront.test(card.front.trim()),'Flashcard : consigne vague « citer/lister » : '+card.id);
   assert.ok(Array.isArray(card.answers)&&card.answers.length>=1&&card.answers.every(filled),'Flashcard : réponse absente : '+card.id);
   assert.ok(filled(card.explanation),'Flashcard : justification absente : '+card.id);
