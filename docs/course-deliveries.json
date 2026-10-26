@@ -2589,14 +2589,22 @@
           "official_td_support",
           "original_audio_comparison",
           "written_official_support"
-        ]
+        ],
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "separationEvidence": "Transcription privée horodatée à quatre étiquettes de locuteur, rôles interprétés à partir du dialogue ; attribution non certifiée par audio original. La fiche sépare priorités annoncées et déductions.",
+        "privateTraceVerified": "Transcription consultée en Drive propriétaire, droits owner-only confirmés le 26/10 ; aucun lien source privé rendu public."
       },
       "writtenCoverage": {
         "prioritySourceReference": "Notions présentes dans le TD, priorités directes distinguées des inférences.",
         "explicitVsInferredPrioritiesSeparated": true,
         "explanationsNotOvercompressed": true,
         "disciplinaryReview": "provisional_oral_only",
-        "disciplinaryReviewScope": "Relecture technique du contenu fourni uniquement ; revue scientifique exhaustive non acquise."
+        "disciplinaryReviewScope": "Relecture technique du contenu fourni uniquement ; revue scientifique exhaustive non acquise.",
+        "expectedEssential": 5,
+        "coveredEssential": 5,
+        "coverageEvidence": "Cinq objectifs de révision de la fiche source (p.1) rapprochés des rubriques de la fiche : vécu individuel, trois dimensions et contexte, cas Émilie, comparaison Henderson/TGS/trifocal, démarche infirmière partagée. Couverture limitée à ces objectifs, sans attestation d'exhaustivité du TD."
       },
       "writtenPdfAudit": {
         "status": "PASS",
