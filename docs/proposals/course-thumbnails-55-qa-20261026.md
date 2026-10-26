@@ -1,3 +1,20 @@
+> **MISE À JOUR APRÈS FUSION — 26 octobre 2026, 10 h 37 (Europe/Paris)**  
+> La décision « BLOQUÉ » ci-dessous documente les **lots candidats précédents**, et non l'état actuel de la PR #237. La PR #237 a été fusionnée dans `main` (commit `d1cb57e40bf5b73556e47143b3ae43520a8e23b9`). Les 55 WebP sont désormais présents dans `assets/course-thumbnails/` et le module de vignettes est chargé par `index.html`. Les tests de correspondance ID/image, empreintes SHA-256, cache PWA, TNR, préflight, audit et test de navigation PC/mobile ont réussi. Le déploiement GitHub Pages [#40300859757](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/40300859757) est terminé avec succès.  
+> **Statut actuel : intégré et déployé techniquement ; après revue visuelle des 55 fichiers, conformité graphique NON VALIDÉE (anomalies à corriger : [issue #240](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/issues/240)).** Il reste à revoir les vignettes sur l'application publiée (mobile, clair/sombre, taille réelle) et les motifs sensibles : grands brûlés / infections cutanées, infections pulmonaires bactériennes / infections respiratoires virales, articulations et précision anatomique. Les tests automatisés n'établissent pas l'exactitude scientifique des illustrations. Aucun QCM, flashcard, fiche ou vocal n'a été modifié par cette fusion.  
+> Cette note rectifie le statut sans effacer les réserves ni les décisions historiques consignées plus bas.
+
+---
+
+## Revue de contrôle post-déploiement — 55 fichiers sur 55
+
+- Les 55 WebP du dépôt ont été visualisés individuellement à leur taille native de 256×256 px. **Cette revue statique a détecté plusieurs défauts**, sans préjuger de l'affichage de l'application sur PC ou mobile.
+- **P1 :** `grands_brules` ne montre pas une brûlure identifiable, `diagnostic_bacteriologie` évoque un virion, `pssm` et `responsabilite_exercice_professionnel` ne représentent pas correctement leur sujet, et plusieurs infections ainsi que `virus` souffrent de collages visibles. `niveaux_organisation` ne présente pas les niveaux attendus.
+- **P2 :** mosaïques trop proches entre deux cours, bandes blanches résiduelles, cadrages peu propres et images insuffisamment spécifiques.
+- Le relevé détaillé, avec IDs exacts et critères de correction, est consigné dans **[l'issue #240](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/issues/240)**. Pas de validation finale des 55 images avant corrections et revue en contexte réel (mobile / clair / sombre / 62 px).
+- **Aucune modification des fichiers pédagogiques ni remplacement d'images n'est intervenue dans cette revue documentaire.**
+
+---
+
 # Revue visuelle du lot 55 vignettes — 26 octobre 2026
 
 ## GO utilisateur

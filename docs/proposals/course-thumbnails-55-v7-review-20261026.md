@@ -1,3 +1,8 @@
+> **MISE À JOUR APRÈS FUSION — 26 octobre 2026**  
+> Ce rapport décrit le **stade de préparation V7** ; ses mentions « non publié » ne sont plus actuelles. La PR [#237](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/pull/237) a été fusionnée sur `main` (commit `d1cb57e40bf5b73556e47143b3ae43520a8e23b9`) avec 55 fichiers WebP, module activé et cache PWA ; les tests sur la PR, les TNR et le déploiement GitHub Pages [#40300859757](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/actions/runs/40300859757) ont réussi. **Une première revue des 55 fichiers WebP a mis en évidence des non-conformités visuelles et sémantiques ; voir [l'issue corrective #240](https://github.com/quentinlemaire92220-alt/ifsi-abc-revisions/issues/240). La validation graphique finale reste ouverte.** Voir `docs/proposals/course-thumbnails-55-qa-20261026.md` pour le suivi à jour. Les détails ci-dessous sont conservés à titre d'historique.
+
+---
+
 # Revue graphique — 55 vignettes, itération 7 (26/10/2026)
 
 ## Portée
