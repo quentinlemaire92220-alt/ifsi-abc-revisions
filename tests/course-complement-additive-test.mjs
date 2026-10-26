@@ -53,7 +53,14 @@ const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flat
 for(const s of oldSheets)assert.deepEqual(sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url),s);
 const part=delivery.partDeliveries.find(p=>p.deliveryMode==='existing_course_complement');assert.ok(part);
 assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId).primaryRevision,false);
-assert.equal(part.status,'awaiting_mp3');assert.deepEqual(delivery.vocals,prior.vocals);assert.equal(delivery.vocals.length,6);
+const rightsAdded=addedVocals.filter(v=>v.courseId==='droits_patients').map(v=>v.id);
+assert.deepEqual(delivery.vocals,[...prior.vocals,...rightsAdded],'Les six anciens MP3 sont préservés');
+if(rightsAdded.length){
+ const wasPart=prior.partDeliveries.find(p=>p.partId===part.partId);
+ assert.deepEqual(part.vocalIds,[...(wasPart.vocalIds||[]),...rightsAdded],'Seuls les vocaux approuvés sont ajoutés à la partie');
+ assert.equal(part.status,'complete');assert.equal(delivery.status,'complete');
+ assert.deepEqual(delivery.blockers,[]);
+}else assert.equal(part.status,prior.partDeliveries.find(p=>p.partId===part.partId).status);
 const graphics=read('infographics.json'),hashes={};for(const i of graphics)if(i.localImage)hashes[i.localImage]=createHash('sha256').update(fs.readFileSync(i.localImage)).digest('hex');
 const previous={sheets:oldSheets,infographics:old('infographics.json'),imageHashes:hashes},current={sheets,infographics:graphics,imageHashes:hashes};
 if(!prior.partDeliveries.some(p=>p.deliveryMode==='existing_course_complement')){
