@@ -1,3 +1,5 @@
+> Priorité 26/10/2026 : appliquer aussi [le contrat de trame V3](PDF_TEMPLATE_CONTRACT_V3.md), références figées et revue liée aux octets. Les contrôles historiques ci-dessous restent obligatoires.
+
 # Validation du package avant publication
 
 Le flux d'un cours est **production → contrôles et autocorrections → revue privée de tous les livrables → validation du propriétaire et GO publication → Drive étudiant et application**.

@@ -1,3 +1,5 @@
+> Priorité 26/10/2026 : appliquer aussi [le contrat de trame V3](PDF_TEMPLATE_CONTRACT_V3.md), références figées et revue liée aux octets. Les contrôles historiques ci-dessous restent obligatoires.
+
 # IFSI ABC — Contrôle graphique des nouvelles fiches écrites V2
 
 ## Finalité et priorité

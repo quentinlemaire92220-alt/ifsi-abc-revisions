@@ -203,6 +203,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: python tests/pdf-graphics-v2-test.py
 
+      - name: Trame V3 — références, PDF réels et preuves de revue (défauts injectés)
+        if: ${{ !cancelled() }}
+        run: python tests/pdf-template-v3-test.py
+
+      - name: Trame V3 — bloquer les nouveaux PDF sans conformité et GO graphique
+        if: ${{ !cancelled() }}
+        run: python tools/pdf-template-v3.py --base "$IFSI_BASE_SHA"
+
       - name: Contrôle V2 des vrais PDF écrits nouveaux ou modifiés
         if: ${{ !cancelled() }}
         run: python tools/pdf-graphics-v2-batch.py --base "$IFSI_BASE_SHA"

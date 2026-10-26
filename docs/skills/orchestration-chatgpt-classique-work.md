@@ -1,3 +1,9 @@
+# Verrou prioritaire de trame — 26/10/2026
+
+Pour toute fiche de révision ou QCM, ChatGPT et Work doivent lire et appliquer `docs/PDF_TEMPLATE_CONTRACT_V3.md` et `docs/pdf-template-policy-v3.json` AVANT de produire ou réparer. Ouvrir les PDF Communication référencés et vérifier leurs empreintes ; référence inaccessible = arrêt avant toute conformité déclarée. Le contrôle technique V3, la revue intégrale comparée au modèle et le GO sur les octets finaux sont distincts et bloquants. Conserver l’historique ; ne pas migrer les PDF inchangés. Le reçu `templateConformance` de chaque PDF modifié entre dans le digest du lot. Ne jamais fabriquer une revue ou réécrire automatiquement un accord après correction.
+
+---
+
 # DIRECTIVE PRIORITAIRE 24/10/2026 — STANDARD ÉCRIT V5.3
 
 **Pour TOUS les nouveaux cours IFSI ABC, la fiche maîtresse est désormais la fiche de révision ÉCRITE V5.3, sans images, schémas ni infographies générés.** Lire `docs/WRITTEN_REVISION_V153.md` et `docs/skills/production-fiches-revision-ecrites-v153.md`. Cette règle prime sur les passages historiques ci-dessous exigeant des schémas ou le modèle Pharmacologie P01 de v1.47.
