@@ -51,13 +51,13 @@ mutate_pdf(QCM,'qcm',lambda d:d[0].insert_text((45,780),'Réponses : A.',fontsiz
 ref=spec['references']['sheet'];pages=21
 review={'templateId':ref['id'],'templateSha256':ref['sha256'],'artifactSha256':gate.sha(SHEET),'pageCount':pages,'status':'owner_accepted','method':'all_pages_compared_at_100_and_200_percent','decision':'explicit_graphic_acceptance','reviewerRole':'owner','pagesChecked':list(range(1,pages+1)),'reviewedAt':'2026-10-26T16:00:00+01:00','checks':{k:'PASS' for k in spec['reviewChecks']},'privateEvidenceSha256':'a'*64}
 assert gate.validate_review(review,'sheet',gate.sha(SHEET),pages,spec)==[]
-for key,value in [('artifactSha256','b'*64),('templateSha256','c'*64),('templateId','autre'),('pageCount',20),('status','pending'),('method','automatic'),('decision','go_production'),('reviewerRole','script'),('pagesChecked',[1,21]),('reviewedAt','hier'),('checks',{}),('privateEvidenceSha256','absent')]:
+for key,value in [('artifactSha256','b'*64),('templateSha256','c'*64),('templateId','autre'),('pageCount',20),('status','pending'),('method','automatic'),('decision','go_production'),('reviewerRole','script'),('pagesChecked',[1,21]),('pagesChecked',[True]+list(range(2,pages+1))),('reviewedAt','hier'),('reviewedAt',42),('checks',{}),('checks',[]),('privateEvidenceSha256','absent')]:
     broken=copy.deepcopy(review);broken[key]=value;assert gate.validate_review(broken,'sheet',gate.sha(SHEET),pages,spec),(key,value)
 bad=copy.deepcopy(spec);bad['references']['sheet']['sha256']='d'*64;assert 'REFERENCE_SHA:sheet' in gate.reference_errors(bad)
 a={'path':str(SHEET.relative_to(ROOT)),'sha256':gate.sha(SHEET),'pageCount':21};old={'publicArtifacts':{'sheet':a}};assert gate.changed_roles(old,copy.deepcopy(old))==[]
 new=copy.deepcopy(old);new['publicArtifacts']['sheet']['sha256']='e'*64;assert gate.changed_roles(old,new)==['sheet']
 old=copy.deepcopy(new);assert gate.changed_roles(old,new)==['sheet'] # octets changés sans déclaration fidèle
-print('PASS trame V3 : vrais PDF fiche/QCM, 11 défauts graphiques, 12 faux reçus, référence altérée et modification cachée refusés ; historique inchangé exempté.')
+print('PASS trame V3 : vrais PDF fiche/QCM, 11 défauts graphiques, 15 faux reçus, référence altérée et modification cachée refusés ; historique inchangé exempté.')
 
 # Exercer aussi l'entrée de publication : lot nouveau, reçu absent, puis historique.
 import shutil, subprocess

@@ -26,15 +26,18 @@ def validate_review(review,role,artifact_sha,pages,spec):
     for k,v in expected.items():
         if review.get(k)!=v:errors.append('REVIEW_'+k.upper())
     checked=review.get('pagesChecked')
-    if checked!=list(range(1,pages+1)):errors.append('REVIEW_PAGES_INCOMPLETE')
+    if checked!=list(range(1,pages+1)) or not isinstance(checked,list) or any(type(n) is not int for n in checked):errors.append('REVIEW_PAGES_INCOMPLETE')
+    if type(review.get('pageCount')) is not int:errors.append('REVIEW_PAGECOUNT_TYPE')
     # Un résumé public seulement ; rendus, décision détaillée et identité restent privés.
     stamp=review.get('reviewedAt','')
     try:
+        if not isinstance(stamp,str):raise ValueError()
         d=datetime.fromisoformat(stamp.replace('Z','+00:00'))
         if d.tzinfo is None:raise ValueError()
     except (ValueError,TypeError):errors.append('REVIEW_DATE')
+    checks=review.get('checks') if isinstance(review.get('checks'),dict) else {}
     for k in spec['reviewChecks']:
-        if review.get('checks',{}).get(k)!='PASS':errors.append('REVIEW_CHECK:'+k)
+        if checks.get(k)!='PASS':errors.append('REVIEW_CHECK:'+k)
     if not re.fullmatch(r'[a-f0-9]{64}',str(review.get('privateEvidenceSha256',''))):errors.append('REVIEW_PRIVATE_EVIDENCE_SHA')
     return errors
 
