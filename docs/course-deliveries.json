@@ -2667,7 +2667,9 @@
         "scope": "course_package",
         "approvedAt": "2026-10-26T10:41:00Z",
         "mergeDeploymentCondition": "all_tnr_green",
-        "provisionalOnly": true
+        "provisionalOnly": true,
+        "bundleSha256": "71bdc730ef5168d49676a3fd90b5a7d26e0704027c3f225fb9c7f01b50e43fe7",
+        "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante."
       },
       "publicArtifacts": {
         "sheet": {
