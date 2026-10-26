@@ -1,5 +1,5 @@
 {
-  "version": "8.30.136",
+  "version": "8.30.137",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.136 : 186 MP3, dont 7 enregistrements provisoires publiés à partir des sources partielles (support officiel absent ou incomplet). Les 179 épisodes historiques sont conservés ; lecture étudiant des MP3 D1 à vérifier via permissions Drive.",
+  "note": "V8.30.137 : 190 audios (4 compléments au catalogue : IAS 2, Histoire de la profession 1, Droits des patients 1). Fichiers MP3 réels publiés sur Drive et permissions anyone(reader) vérifiées, écoute externe à tester.",
   "expectedTotals": {
     "courses": 55,
     "sheets": 72,
     "infographics": 184,
-    "vocals": 186,
+    "vocals": 190,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
