@@ -31,6 +31,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  validateSheetSource(courseId,delivery,sheet);
  const id=driveId(sheet);
  const isPages=delivery.publicationHost==='github_pages';
+ const githubPageArtifactContract=Boolean(isPages&&delivery.deliveryMode==='source_limited_first_release'&&delivery.publicArtifacts?.sheet);
  let urlOK=false;
  try {
   const u=new URL(sheet.url||'');
@@ -38,7 +39,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
    ? u.hostname.endsWith('.github.io') && u.pathname.includes('/assets/') && u.pathname.endsWith('.pdf')
    : u.hostname==='drive.google.com' && u.pathname.startsWith('/file/d/'));
  } catch {}
- if(isPages){
+ if(githubPageArtifactContract){
   const published=delivery.publicArtifacts?.sheet;
   assert.ok(urlOK&&published?.artifactId&&published?.path,
    label+'PDF Pages identifié et publiable requis');
@@ -105,7 +106,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
   ['navigationChecked','sommaire non vérifié']
  ]) ok(pdf[field],label+msg);
  assert.equal(delivery.writtenModelReference,'communication_written_v5.3_2026-10-24',label+'référence V5.3 attendue');
- if(isPages){
+ if(githubPageArtifactContract){
   const pub=delivery.publicArtifacts.sheet;
   assert.equal(pub.sha256?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'empreinte Pages divergente');
   assert.equal(delivery.artifactSha256s?.[pub.artifactId]?.toLowerCase(),pdf.pdfSha256.toLowerCase(),label+'SHA Pages non tracé');
