@@ -22,7 +22,7 @@ Clé cours/partie (stable), UE, intitulé, origine FAC/IFSI/à qualifier, platef
 ## Implémentation à ce stade
 - Suivi calculé dans un nouvel onglet du registre privé existant, alimenté pour les dossiers « À traiter » où l'on sait qu'une transcription ou des captures sont présentes sans support officiel confirmé.
 - Les dates déjà renseignées sont les premières dates ATTESTÉES dans l'historique consulté ; elles peuvent être plus récentes que la première capture réelle. Les dates de cours et les origines non établies restent vides/à qualifier.
-- Le tableau ne crée aucune notification autonome et ne découvre pas automatiquement chaque nouveau fichier dans Drive. Les nouveaux cours doivent être inscrits dans ce suivi jusqu'à réalisation d'un collecteur privé avec accès authentifié.
+- Le tableau n'a pas de déclencheur natif à chaque dépôt Drive : les nouvelles lignes et vérifications restent des opérations privées authentifiées. Une surveillance planifiée quotidienne a été configurée dans ChatGPT le 26/10/2026 pour rechercher les nouvelles sources et rapprocher le registre lorsqu'un connecteur est disponible. Sa première exécution et sa capacité effective à écrire dans le registre ne sont pas encore vérifiées : ne pas présenter ce suivi comme une synchronisation temps réel ni comme un webhook Drive. Toute impossibilité d'accès doit être signalée sans inventer de résultat.
 - Ne jamais exposer ces lignes, les transcriptions, leurs liens ou des métadonnées privées via GitHub, GitHub Pages, Supabase public ou le catalogue des étudiants.
 
 ## Critères de recette pour une automatisation future
