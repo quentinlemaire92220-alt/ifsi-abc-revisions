@@ -73,15 +73,41 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  for(const vid of addIds){const v=newVoice.find(v=>v.id===vid);if(!v||!Number.isFinite(v.durationSeconds)||v.durationSeconds<=0||v.durationSeconds>=600)return false;}
  const oldCourse=oldData.registry.courses.find(c=>c.id===id),newCourse=newData.registry.courses.find(c=>c.id===id);
  if(!oldCourse||!newCourse)return false;
- const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];return x;};
+ const audioFolderUrl='https://drive.google.com/drive/folders/'+supplement.folderId;
+ const priorAudioLink=(oldCourse.additionalDocuments||[]).find(d=>d.url===audioFolderUrl&&/^Vocaux MP3 — [0-9]+ épisodes$/.test(d.label||''));
+ if(priorAudioLink){
+  const currentLink=(newCourse.additionalDocuments||[]).find(d=>d.url===audioFolderUrl);
+  if(currentLink?.label!=='Vocaux MP3 — '+newVoice.length+' épisodes')return false;
+ }
+ const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];
+  if(priorAudioLink)x.additionalDocuments=(x.additionalDocuments||[]).map(d=>
+   d.url===audioFolderUrl?{...d,label:'Vocaux MP3 — [compteur] épisodes'}:d);
+  return x;};
  if(JSON.stringify(canonical(stripAudio(oldCourse)))!==JSON.stringify(canonical(stripAudio(newCourse))))return false;
  if(newCourse.audioStatus!=='available'||newCourse.audioCount!==newVoice.length
   ||newCourse.audioFolderUrl!=='https://drive.google.com/drive/folders/'+supplement.folderId)return false;
  if(JSON.stringify(canonical(prior.publicationApproval))!==JSON.stringify(canonical(delivery.publicationApproval)))return false;
  // Un cours en attente peut devenir complet lorsque SEUL le blocage vocal a été levé.
  const oldStatus=prior.status,newStatus=delivery.status;
- if(newStatus!==oldStatus && !(oldStatus==='awaiting_mp3'&&newStatus==='complete'&&(delivery.blockers||[]).length===0))return false;
- const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval','status'])delete x[k];return x;};
+ const oldAudioBlockers=(prior.blockers||[]).filter(b=>b.resource==='vocals'&&['awaiting_mp3','awaiting_user_mp3'].includes(b.reason));
+ const solelyWaitingForAudio=oldAudioBlockers.length>0&&oldAudioBlockers.length===(prior.blockers||[]).length;
+ if(newStatus!==oldStatus&&!(newStatus==='complete'&&(delivery.blockers||[]).length===0&&
+   (oldStatus==='awaiting_mp3'||(oldStatus==='partial'&&solelyWaitingForAudio))))return false;
+ const oldParts=prior.partDeliveries||[],newParts=delivery.partDeliveries||[];
+ if(oldParts.length!==newParts.length)return false;
+ for(let i=0;i<oldParts.length;i++){
+  const was=oldParts[i],now=newParts[i];
+  const newIds=supplement.vocalIds.filter(id=>newVoice.find(v=>v.id===id)?.partId===was.partId);
+  if(newIds.length===0){
+   if(JSON.stringify(canonical(was))!==JSON.stringify(canonical(now)))return false;
+   continue;
+  }
+  if(JSON.stringify(now.vocalIds||[])!==JSON.stringify([...(was.vocalIds||[]),...newIds]))return false;
+  if(now.status!==(was.status==='awaiting_mp3'&&newStatus==='complete'?'complete':was.status))return false;
+  const stripPart=p=>{const x={...p};delete x.vocalIds;delete x.status;return x;};
+  if(JSON.stringify(canonical(stripPart(was)))!==JSON.stringify(canonical(stripPart(now))))return false;
+ }
+ const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval','status','partDeliveries'])delete x[k];return x;};
  if(JSON.stringify(canonical(stripDelivery(prior)))!==JSON.stringify(canonical(stripDelivery(delivery))))return false;
  const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&['awaiting_user_mp3','awaiting_mp3'].includes(b.reason)));
  if(JSON.stringify(canonical(expectedBlockers))!==JSON.stringify(canonical(delivery.blockers||[])))return false;
@@ -92,7 +118,7 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  if(JSON.stringify(canonical(hashes))!==JSON.stringify(canonical(delivery.artifactSha256s||{})))return false;
  const oldBundle=publicationBundle(id,prior,oldData),newBundle=publicationBundle(id,delivery,newData);
  for(const key of Object.keys(oldBundle)){
-  if(['course','vocals','artifactSha256s'].includes(key))continue;
+  if(['course','vocals','artifactSha256s','parts'].includes(key))continue;
   if(JSON.stringify(canonical(oldBundle[key]))!==JSON.stringify(canonical(newBundle[key])))return false;
  }
  return true;
