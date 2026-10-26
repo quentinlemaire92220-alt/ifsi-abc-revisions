@@ -74,7 +74,34 @@ def validate_qcm(text,rows):
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
 
+def validate_cards_written_recto_verso(text,rows):
+    # The independent PDF deck is ordered pedagogically, not by QCM index.
+    # Require all 40 bank cards EXACTLY once, regardless of order.
+    text=strip_qcm_furniture(without_theme_titles(text,rows))
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2})[ \t]*—[ \t]*RECTO[ \t]*\n',text))
+    numbered=[int(m[1]) for m in blocks]
+    assert numbered==list(range(1,len(rows)+1)),'Cartes manquantes/dupliquées'
+    actual=[]
+    for i,m in enumerate(blocks):
+        page=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        pair=re.split(r'(?m)^VERSO[ \t]*\n',page,maxsplit=1)
+        assert len(pair)==2,'CARTE '+str(i+1)+': recto/verso non identifié'
+        actual.append((norm(pair[0]),norm(pair[1])))
+    expected=[]
+    for q in rows:
+        assert len(q['flashcards'])==1,q['id']+': structure de flashcards invalide'
+        card=q['flashcards'][0]
+        reply=' '.join(card['answers'])
+        # A missing 'EXPLICATION' label must not hide additional teaching content.
+        assert norm(card['explanation'])==norm(reply),q['id']+': explication de la banque non reproduite dans le PDF'
+        expected.append((norm(card['front']),norm(reply)))
+    assert len(set(actual))==len(rows),'Doublons recto/verso dans le PDF'
+    assert len(set(expected))==len(rows),'Doublons recto/verso dans la banque'
+    assert sorted(actual)==sorted(expected),'Le PDF des 40 cartes diverge de la banque'
+
 def validate_cards(text,rows):
+    if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
+        return validate_cards_written_recto_verso(text,rows)
     text=without_theme_titles(text,rows)
     blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
