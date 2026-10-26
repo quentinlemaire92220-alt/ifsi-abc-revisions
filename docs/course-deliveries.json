@@ -251,15 +251,10 @@
         "droits_patients_2026_03",
         "droits_patients_2026_04",
         "droits_patients_2026_05",
-        "droits_patients_2026_06"
+        "droits_patients_2026_06",
+        "droits_patients_2026_07"
       ],
-      "blockers": [
-        {
-          "resource": "vocals",
-          "reason": "awaiting_user_mp3",
-          "detail": "Les six MP3 historiques restent disponibles ; le MP3 du complément est attendu."
-        }
-      ],
+      "blockers": [],
       "artifactSha256s": {
         "1EUQfcqbX3eB8jZILsOgbjib6hPiRKhS6": "07e37070307948fbaa049c0bb70068226c311f8ade1baddafae8abc82e7c9044",
         "1dQsw4RyX4JTMxIjRccKw64pBZGE9mRMu": "3ee1526b1cf3eb68aeb3e268be5647b8a732f2ad364792e4cf8f47df3f838f38",
@@ -294,7 +289,8 @@
         "1frEjQ6IZ7x9giuI_NbkgsHd7nh5c__lK": "ef7afa3dbe2442b6b22b38232558b54ca7ad3c1648eb6f89a71ca6fca1f9181e",
         "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
         "1CB3_Hnqlm2Tauju37E_Hq_NYtkH4mQjm": "5eb435d7f6394dc160e7e18cfea7b6acb1a023d8983a595cae66aea82b379aa7",
-        "18CSU83AQdiVWcWTsYjGaSoe4frWOkd-o": "14556865d8698dad20ecd56e6e69bc500159b9978fefef2eb0a6a95f389a7f67"
+        "18CSU83AQdiVWcWTsYjGaSoe4frWOkd-o": "14556865d8698dad20ecd56e6e69bc500159b9978fefef2eb0a6a95f389a7f67",
+        "1T-agzUKmQJ2rZdS5b7I7j71xMrFeyhYq": "2d2a15fa70734bd11cf8fe8e87cd7d83bd9d7789ddb277ebb34246c6ac248bf5"
       },
       "infographicSheetResourceId": "droits_patients_fiche_infographiee_p01",
       "infographicSheetVisualAudit": {
@@ -3461,6 +3457,59 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-26T08:13:00+01:00",
         "bundleSha256": "894e292aedae55cf1a2db875aa236b4dced3925bd186cac941755651257ee96f"
+      }
+    },
+    {
+      "courseId": "prevention_ias_asepsie",
+      "folderId": "1t0Se9qk1D1pBtZlA6jtW7eDvBiGNJHm4",
+      "vocalIds": [
+        "prevention_ias_asepsie_p01_vocal_02",
+        "prevention_ias_asepsie_p01_vocal_03"
+      ],
+      "artifactSha256s": {
+        "106qJX0odjG9615tKMWH3sbXQtp31Gt_0": "c8ff80ece6f3c976d846b3c526578240be8942f385de588ff36263c788a389ed",
+        "1rO20pudK42zObVarH2F1K80XnNl31NiA": "6ccefcda092e72d2068664b8f93023eae6688239b5c34b15a2d09f1a2090ba90"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T09:22:00+01:00",
+        "bundleSha256": "f067efaa6ff11718e3b9dcf8fd46d59330ee28eb63c8b70a79f8e5b17b9c4220"
+      }
+    },
+    {
+      "courseId": "histoire_profession_infirmiere",
+      "folderId": "11a2CBHLT02TZczrvRwscgQoxZtwmvlLO",
+      "vocalIds": [
+        "histoire_profession_infirmiere_p01_vocal_02"
+      ],
+      "artifactSha256s": {
+        "1Qp3TYpPf8KpPJRnlLf6IYVE2EJ8XNcwA": "aa8c39d12ef668cf91a488607013f0545d779b7e26eb7669eaa78582c531bb04"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T09:22:00+01:00",
+        "bundleSha256": "72276771f2316399b7233869297ee5dae809b437fd35d253673435661d9c9a3a"
+      }
+    },
+    {
+      "courseId": "droits_patients",
+      "folderId": "14VSWEVk-Q4lGboFXSrBoz3nRpGW27EJH",
+      "vocalIds": [
+        "droits_patients_2026_07"
+      ],
+      "artifactSha256s": {
+        "1T-agzUKmQJ2rZdS5b7I7j71xMrFeyhYq": "2d2a15fa70734bd11cf8fe8e87cd7d83bd9d7789ddb277ebb34246c6ac248bf5"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-10-26T09:22:00+01:00",
+        "bundleSha256": "75d2153400ef7b813af0614addf84201ed9881760f56b3919ed96de5878a1783"
       }
     }
   ]
