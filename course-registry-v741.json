@@ -1,5 +1,5 @@
 {
-  "version": "8.30.140",
+  "version": "8.30.141",
   "courses": [
     {
       "id": "biomolecules",
@@ -1171,6 +1171,45 @@
         }
       ],
       "audioFolderUrl": "https://drive.google.com/drive/folders/1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj"
+    },
+    {
+      "id": "theorie_gestion_symptomes_td",
+      "label": "La théorie des symptômes — TD d’application — PROVISOIRE",
+      "aliases": [
+        "Théorie des symptômes",
+        "Gestion des symptômes TD",
+        "TGS TD",
+        "UE A1 S1 — La théorie des symptômes",
+        "Théorie de gestion des symptômes"
+      ],
+      "domain": "A",
+      "ue": "A1",
+      "teachingUnit": "A1",
+      "semester": "S1",
+      "part": "TD",
+      "officialSupport": false,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Support spécifique du TD absent ; fiche et entraînements issus de la transcription orale, recoupés dans les limites du CM4 déjà disponible. Vérification exhaustive de l'audio et validation scientifique finale non acquises.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
+      "qcmPdfQuestionCount": 40,
+      "flashcardTarget": 40,
+      "authoredFlashcards": true,
+      "audioStatus": "script_only",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
+          "type": "revision"
+        },
+        {
+          "label": "Flashcards — 40 cartes — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
+          "type": "flashcards",
+          "cardCount": 40
+        }
+      ]
     }
   ],
   "auditBaseline": {

@@ -4,6 +4,15 @@ import assert from 'node:assert/strict';
 const filled=v=>typeof v==='string'&&v.trim().length>0;
 const bannedFront=/^(?:cite|citer|liste|lister)\b/i;
 
+export function isExplicitRecallPrompt(value){
+ const front=String(value||'').trim();
+ if(!filled(front)||bannedFront.test(front))return false;
+ // A targeted recall instruction is equivalent to an active question.
+ // Vague listing commands remain forbidden.
+ return front.endsWith('?') ||
+  /^(?:Donne un exemple de|Nomme (?:les|des))\s+\S.{5,}\.$/iu.test(front);
+}
+
 export function validateLeanQuestions(questions){
  assert.ok(Array.isArray(questions)&&questions.length>0,'Banque QCM lean vide');
  const ids=new Set();
@@ -33,11 +42,8 @@ export function validateLeanFlashcards(cards){
   assert.ok(filled(card.id)&&!ids.has(card.id),'Flashcard ID absent/dupliqué');
   ids.add(card.id);
   const front=String(card.front||'').trim();
-  // Une consigne de rappel concrète (« Donne un exemple de… ») est aussi une question active.
-  // « Citer/Lister » reste interdit par le garde-fou ci-dessous.
-  const concreteExample=/^Donne un exemple de .+\.$/iu.test(front);
-  assert.ok(filled(front)&&(front.endsWith('?')||concreteExample),'Flashcard : question explicite manquante : '+card.id);
-  assert.ok(!bannedFront.test(card.front.trim()),'Flashcard : consigne vague « citer/lister » : '+card.id);
+  assert.ok(!bannedFront.test(front),'Flashcard : consigne vague « citer/lister » : '+card.id);
+  assert.ok(isExplicitRecallPrompt(front),'Flashcard : question ou rappel explicite manquant : '+card.id);
   assert.ok(Array.isArray(card.answers)&&card.answers.length>=1&&card.answers.every(filled),'Flashcard : réponse absente : '+card.id);
   assert.ok(filled(card.explanation),'Flashcard : justification absente : '+card.id);
  }

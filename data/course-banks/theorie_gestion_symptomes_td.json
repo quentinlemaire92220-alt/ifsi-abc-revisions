@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "a1_tgs_td_001",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Fondements et modèles",
+    "number": 1,
+    "question": "Quel est le rôle principal de la théorie de gestion des symptômes (TGS) ?",
+    "choices": [
+      "Décrire uniquement les manifestations biologiques sans explorer le vécu.",
+      "Comprendre le vécu des symptômes et leur gestion.",
+      "Remplacer le jugement clinique.",
+      "Déterminer à elle seule le diagnostic médical.",
+      "Écarter le contexte de vie."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "La TGS aide à comprendre comment la personne ressent, gère et réévalue ses symptômes, dans un contexte donné.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est l’objectif principal de la TGS ?",
+        "answers": [
+          "Comprendre comment la personne vit et gère ses symptômes, en tenant compte de son contexte."
+        ],
+        "explanation": "Comprendre comment la personne vit et gère ses symptômes, en tenant compte de son contexte."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_002",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Fondements et modèles",
+    "number": 2,
+    "question": "À quelle catégorie de théorie appartient la théorie de gestion des symptômes (TGS) ?",
+    "choices": [
+      "Une théorie intermédiaire.",
+      "Un modèle conceptuel général centré sur les besoins.",
+      "Un modèle clinique organisant le jugement en trois axes.",
+      "Une démarche de prise de décision standardisée.",
+      "Une théorie exclusivement consacrée au diagnostic médical."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "La TGS est une théorie intermédiaire centrée sur l’expérience et la gestion des symptômes.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quel niveau de théorie appartient la TGS ?",
+        "answers": [
+          "Théorie intermédiaire, centrée sur un phénomène infirmier précis."
+        ],
+        "explanation": "Théorie intermédiaire, centrée sur un phénomène infirmier précis."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_003",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Fondements et modèles",
+    "number": 3,
+    "question": "Quels éléments font partie des quatre piliers du métaparadigme infirmier ?",
+    "choices": [
+      "La personne.",
+      "L’environnement.",
+      "Le modèle clinique trifocal.",
+      "La santé / maladie.",
+      "Les 14 besoins fondamentaux."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "easy",
+    "explanation": "Les piliers enseignés sont personne, environnement, santé / maladie et soin.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les quatre piliers du métaparadigme ?",
+        "answers": [
+          "Personne ; environnement ; santé / maladie ; soin."
+        ],
+        "explanation": "Personne ; environnement ; santé / maladie ; soin."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_004",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Fondements et modèles",
+    "number": 4,
+    "question": "Quelle proposition différencie correctement trois approches étudiées ?",
+    "choices": [
+      "Henderson aide à analyser besoins et autonomie.",
+      "La TGS analyse d’abord l’autonomie dans chacun des 14 besoins.",
+      "Le trifocal organise le jugement clinique.",
+      "Les trois approches doivent être appliquées dans un ordre obligatoire.",
+      "Le trifocal ne distingue pas risques et réactions humaines réelles."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "difficulty": "hard",
+    "explanation": "Henderson cible besoins et autonomie ; la TGS le vécu des symptômes ; le trifocal structure les données.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle question pose le modèle des 14 besoins ?",
+        "answers": [
+          "Quels besoins quotidiens et quelle autonomie sont perturbés ?"
+        ],
+        "explanation": "Quels besoins quotidiens et quelle autonomie sont perturbés ?"
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_005",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Fondements et modèles",
+    "number": 5,
+    "question": "Quel usage des modèles de Henderson, de la TGS et du trifocal est pertinent pour analyser une situation clinique ?",
+    "choices": [
+      "Appliquer une seule grille à toutes les situations sans choix.",
+      "Les mobiliser comme des regards complémentaires selon la situation.",
+      "Ignorer l’expérience de la personne.",
+      "Réserver obligatoirement le trifocal aux seules maladies chroniques.",
+      "Ne jamais associer besoins et symptômes."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "Ces modèles et cette théorie apportent des regards complémentaires et non interchangeables.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle question pose la TGS ?",
+        "answers": [
+          "Comment les symptômes sont-ils vécus et gérés par la personne ?"
+        ],
+        "explanation": "Comment les symptômes sont-ils vécus et gérés par la personne ?"
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_006",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 6,
+    "question": "Quels sont les trois éléments examinés dans l’expérience d’un symptôme ?",
+    "choices": [
+      "Perception.",
+      "Évaluation.",
+      "Vécu / réponse.",
+      "Stratégie de gestion choisie par le soignant.",
+      "Résultat observé après intervention."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "easy",
+    "explanation": "L’expérience du symptôme comporte sa perception, son évaluation et son vécu ou réponse.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Nomme les trois dimensions de la TGS.",
+        "answers": [
+          "Expérience du symptôme ; stratégies de gestion ; résultats / effets obtenus."
+        ],
+        "explanation": "Expérience du symptôme ; stratégies de gestion ; résultats / effets obtenus."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_007",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 7,
+    "question": "Deux personnes attribuent la même note à une douleur. Que peut-on conclure ?",
+    "choices": [
+      "Leur vécu est obligatoirement identique.",
+      "Leur contexte peut modifier leur expérience.",
+      "Leur émotion est toujours la même.",
+      "Une note suffit à comprendre le retentissement social.",
+      "L’évaluation infirmière est inutile."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "Une intensité égale ne garantit pas un vécu ou un retentissement identiques.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « symptôme individuel » ?",
+        "answers": [
+          "Deux personnes peuvent décrire un même symptôme mais en avoir une expérience différente."
+        ],
+        "explanation": "Deux personnes peuvent décrire un même symptôme mais en avoir une expérience différente."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_008",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 8,
+    "question": "Une étudiante reconnaît les premiers signes d’une migraine. Quelle donnée décrit surtout la perception du symptôme ?",
+    "choices": [
+      "Elle ressent un début de douleur sur un côté de la tête.",
+      "Elle note habituellement 8/10.",
+      "Elle estime la crise plus fréquente.",
+      "Elle déclare qu’elle ne pourra pas finir sa journée.",
+      "Elle suit un plan proposé par l’infirmière."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "La perception concerne ce qu’elle ressent et reconnaît ; score et impact relèvent plutôt de l’évaluation.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre perception et évaluation ?",
+        "answers": [
+          "La perception est ce qui est ressenti ; l’évaluation en précise caractéristiques, importance et retentissement."
+        ],
+        "explanation": "La perception est ce qui est ressenti ; l’évaluation en précise caractéristiques, importance et retentissement."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_009",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 9,
+    "question": "Quelle donnée illustre le vécu / la réponse au symptôme ?",
+    "choices": [
+      "L’existence de contraintes universitaires.",
+      "L’inquiétude de perdre une journée de révision.",
+      "Le constat de cinq crises dans un mois.",
+      "La douleur pulsatile qui augmente.",
+      "L’exposition prolongée aux écrans."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "L’inquiétude exprime ce que la crise signifie dans sa vie.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recouvre le vécu du symptôme ?",
+        "answers": [
+          "Émotions, interprétations, réactions et sens attribué au symptôme."
+        ],
+        "explanation": "Émotions, interprétations, réactions et sens attribué au symptôme."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_010",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 10,
+    "question": "Chez une étudiante vivant avec des migraines récurrentes, quelles données peuvent influencer le vécu des symptômes ?",
+    "choices": [
+      "Ses expériences antérieures de migraines.",
+      "Ses contraintes d’examens.",
+      "Son environnement de travail.",
+      "Une valeur de laboratoire non fournie.",
+      "Un traitement inventé."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "medium",
+    "explanation": "L’histoire des crises, les examens et les obligations professionnelles peuvent modifier le vécu ; aucun diagnostic nouveau ne doit être présumé.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels facteurs personnels sont évoqués chez Émilie ?",
+        "answers": [
+          "Histoire des crises, fatigue, stress ressenti, habitudes, perceptions et contraintes propres."
+        ],
+        "explanation": "Histoire des crises, fatigue, stress ressenti, habitudes, perceptions et contraintes propres."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_011",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 11,
+    "question": "Comment faut-il interpréter le classement interne / externe d’un facteur ?",
+    "choices": [
+      "Il doit toujours être unique et incontestable.",
+      "On cherche surtout ses interactions et son intérêt clinique.",
+      "Il est interdit de noter un facteur mixte.",
+      "L’environnement n’a aucun rôle.",
+      "Le classement remplace l’entretien."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Les facteurs internes et externes interagissent : il importe surtout d’identifier leur influence.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi les facteurs internes et externes se recoupent-ils ?",
+        "answers": [
+          "Personne et environnement interagissent ; l’important est de comprendre le lien clinique."
+        ],
+        "explanation": "Personne et environnement interagissent ; l’important est de comprendre le lien clinique."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_012",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 12,
+    "question": "Une étudiante souffre de migraines récurrentes et cumule études et travail. Quels éléments sont des facteurs de contexte pertinents ?",
+    "choices": [
+      "Le sommeil et la fatigue.",
+      "Les études et les examens.",
+      "Les pauses et les repas sautés.",
+      "Une maladie cardiaque déjà diagnostiquée.",
+      "Un trouble visuel confirmé."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "hard",
+    "explanation": "Les caractéristiques personnelles et les contraintes du quotidien constituent des facteurs contextuels ; les diagnostics non établis ne peuvent être supposés.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels facteurs environnementaux sont évoqués chez Émilie ?",
+        "answers": [
+          "Examens, études, bibliothèque, travail, écrans, rythme et ressources sociales."
+        ],
+        "explanation": "Examens, études, bibliothèque, travail, écrans, rythme et ressources sociales."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_013",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Expérience et facteurs",
+    "number": 13,
+    "question": "Quelle affirmation décrit correctement les liens entre personne et environnement ?",
+    "choices": [
+      "Ils sont indépendants en toutes circonstances.",
+      "Ils interagissent et peuvent modifier le vécu.",
+      "L’environnement n’influence que les maladies infectieuses.",
+      "Seules les données médicales sont pertinentes.",
+      "Le travail ne peut jamais intervenir."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "La personne et son environnement peuvent s’influencer mutuellement.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’un facteur de contexte ?",
+        "answers": [
+          "Une caractéristique qui influence l’expérience ou la gestion d’un symptôme."
+        ],
+        "explanation": "Une caractéristique qui influence l’expérience ou la gestion d’un symptôme."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_014",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 14,
+    "question": "Qu’appelle-t-on un cluster de symptômes ?",
+    "choices": [
+      "Un seul symptôme mesuré plusieurs fois.",
+      "Un groupe de manifestations coexistantes ou interagissant.",
+      "Une complication toujours grave.",
+      "Un diagnostic médical obligatoire.",
+      "Un plan de prévention administratif."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "Un cluster regroupe plusieurs symptômes et leur retentissement possible.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’un cluster de symptômes ?",
+        "answers": [
+          "Un ensemble de symptômes coexistants pouvant interagir et produire un retentissement commun."
+        ],
+        "explanation": "Un ensemble de symptômes coexistants pouvant interagir et produire un retentissement commun."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_015",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 15,
+    "question": "Une étudiante ressent lors de ses migraines des signes physiques et émotionnels associés. Lesquels peuvent former un groupe de symptômes ?",
+    "choices": [
+      "Nausées.",
+      "Gêne à la lumière et au bruit.",
+      "Fatigue et inquiétude.",
+      "Fracture confirmée.",
+      "Insuffisance cardiaque confirmée."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "easy",
+    "explanation": "Un groupe de symptômes peut associer manifestations physiques et émotionnelles ; un diagnostic non établi ne doit pas être ajouté.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels symptômes associés figurent dans le cas ?",
+        "answers": [
+          "Nausées, gêne à la lumière et au bruit, fatigue, inquiétude, difficultés de concentration."
+        ],
+        "explanation": "Nausées, gêne à la lumière et au bruit, fatigue, inquiétude, difficultés de concentration."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_016",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 16,
+    "question": "Pourquoi ne faut-il pas se limiter à la note de douleur ?",
+    "choices": [
+      "Elle ne renseigne pas seule sur les symptômes associés et l’impact.",
+      "Toute douleur cotée est fausse.",
+      "Les autres symptômes ne doivent pas être demandés.",
+      "Une intensité élevée garantit à elle seule le diagnostic de migraine.",
+      "Elle rend la TGS inutile."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Une note d’intensité isolée ne renseigne pas sur les signes associés, les changements ni le retentissement.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi explorer un cluster ?",
+        "answers": [
+          "Pour comprendre le vécu global, au-delà d’un symptôme isolé."
+        ],
+        "explanation": "Pour comprendre le vécu global, au-delà d’un symptôme isolé."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_017",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 17,
+    "question": "Une étudiante avait habituellement une à deux migraines par mois. Quel changement récent doit attirer l’attention ?",
+    "choices": [
+      "Les crises passent d’environ 1–2 par mois à cinq sur un mois.",
+      "Sa filière universitaire change.",
+      "Elle a 22 ans.",
+      "Elle travaille en magasin.",
+      "Elle consulte l’infirmière pour la première fois dans ce récit."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "La modification récente de fréquence est une donnée importante à réévaluer.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles données caractérisent les migraines habituelles d’Émilie ?",
+        "answers": [
+          "Crises récurrentes depuis l’adolescence, environ une à deux par mois auparavant, souvent intenses."
+        ],
+        "explanation": "Crises récurrentes depuis l’adolescence, environ une à deux par mois auparavant, souvent intenses."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_018",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 18,
+    "question": "Une patiente rapporte des migraines devenues plus fréquentes. Quelle attitude est justifiée ?",
+    "choices": [
+      "Évaluer l’évolution et rechercher des éléments d’alerte.",
+      "Attribuer d’emblée toutes les crises aux examens.",
+      "Garantir l’absence de problème médical.",
+      "Conseiller sans recueillir les signes associés.",
+      "Affirmer une origine psychologique certaine."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Il faut évaluer le changement et ne pas transformer des hypothèses contextuelles en diagnostic.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel changement de fréquence des migraines Émilie rapporte-t-elle ?",
+        "answers": [
+          "Elle rapporte cinq crises sur un mois, contre environ une à deux habituellement."
+        ],
+        "explanation": "Elle rapporte cinq crises sur un mois, contre environ une à deux habituellement."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_019",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Clusters et situation Émilie",
+    "number": 19,
+    "question": "Une étudiante subit une forte charge de travail et des crises migraineuses répétées. Quelle proposition traduit une boucle d’auto-entretien possible ?",
+    "choices": [
+      "Crises, travail perturbé et stress peuvent se renforcer.",
+      "Un repas sauté suffit à prouver la cause de toutes les crises.",
+      "Le stress n’a aucune relation possible avec le vécu.",
+      "Le travail résout systématiquement les crises.",
+      "Une crise exclut toute interaction avec le contexte."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "La boucle d’auto-entretien est une interprétation des interactions, non la preuve d’une causalité isolée.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que représente la boucle d’auto-entretien d’Émilie ?",
+        "answers": [
+          "Exigences quotidiennes et crises peuvent s’influencer, avec fatigue, retard et stress accrus."
+        ],
+        "explanation": "Exigences quotidiennes et crises peuvent s’influencer, avec fatigue, retard et stress accrus."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_020",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Autogestion et stratégies",
+    "number": 20,
+    "question": "Une étudiante souffre de migraines récurrentes et connaît un traitement de crise prescrit. Quelles conduites constituent des stratégies d’autogestion ?",
+    "choices": [
+      "S’isoler dans le calme et l’obscurité.",
+      "Tenter de se reposer.",
+      "Utiliser son traitement prescrit conformément aux indications.",
+      "Changer seule la dose prescrite.",
+      "Écarter tout recours aux soins."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "hard",
+    "explanation": "La patiente utilise des auto-soins et une prescription connue ; changer seule une dose n’est pas décrit.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Nomme des stratégies d’auto-soins d’Émilie.",
+        "answers": [
+          "Repos, calme/obscurité, arrêt de l’écran, hydratation, traitement de crise prescrit."
+        ],
+        "explanation": "Repos, calme/obscurité, arrêt de l’écran, hydratation, traitement de crise prescrit."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_021",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Autogestion et stratégies",
+    "number": 21,
+    "question": "Quelle distinction est correcte ?",
+    "choices": [
+      "Autonomie avec traitement prescrit = automédication par définition.",
+      "Une personne peut gérer de façon autonome une prescription connue.",
+      "Une prescription « si besoin » ne nécessite aucune évaluation.",
+      "L’autonomie interdit le suivi médical.",
+      "Seuls les professionnels peuvent mettre en œuvre des auto-soins."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "L’utilisation autonome d’un traitement prescrit, dans les conditions définies, ne se confond pas avec l’automédication.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Autonomie avec un traitement prescrit = automédication ?",
+        "answers": [
+          "Non. L’usage autonome respecte les modalités d’une prescription connue ; l’automédication est distincte."
+        ],
+        "explanation": "Non. L’usage autonome respecte les modalités d’une prescription connue ; l’automédication est distincte."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_022",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Autogestion et stratégies",
+    "number": 22,
+    "question": "Lorsqu’une prescription mentionne « si besoin », quelle attitude infirmière est adaptée ?",
+    "choices": [
+      "Évaluer le besoin et appliquer les conditions précisées.",
+      "Administrer sans lire les conditions.",
+      "Inventer un seuil non prescrit.",
+      "Ignorer le contexte clinique.",
+      "Modifier automatiquement la posologie."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "Une prescription « si besoin » implique l’évaluation du besoin et le respect des conditions précisées.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que vérifier pour une prescription « si besoin » ?",
+        "answers": [
+          "Le besoin réel et les conditions de prescription et d’administration prévues."
+        ],
+        "explanation": "Le besoin réel et les conditions de prescription et d’administration prévues."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_023",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Autogestion et stratégies",
+    "number": 23,
+    "question": "Une étudiante souffrant de migraines récurrentes constate que ses stratégies habituelles sont devenues insuffisantes. Quel motif justifie sa consultation ?",
+    "choices": [
+      "Ses stratégies habituelles ne suffisent plus à maîtriser le retentissement.",
+      "Elle n’a jamais connu de migraine.",
+      "Un nouveau diagnostic neurologique a été confirmé.",
+      "Elle souhaite arrêter toutes ses études.",
+      "Elle n’a jamais essayé d’auto-soins."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "La demande de soin s’explique par l’insuffisance de ses stratégies habituelles dans une situation devenue plus gênante.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi Émilie demande-t-elle de l’aide ?",
+        "answers": [
+          "Ses stratégies habituelles ne suffisent plus à limiter le retentissement."
+        ],
+        "explanation": "Ses stratégies habituelles ne suffisent plus à limiter le retentissement."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_024",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Autogestion et stratégies",
+    "number": 24,
+    "question": "Quelles questions aident à apprécier une stratégie de gestion ?",
+    "choices": [
+      "Qu’est-ce qui a été tenté ?",
+      "Quand et comment ?",
+      "Avec quels effets ?",
+      "Quel est le numéro de chambre si aucun séjour hospitalier ?",
+      "Évaluer seulement l’action médicamenteuse, sans son effet sur la vie."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "medium",
+    "explanation": "La TGS explore l’action et ses modalités puis les résultats effectivement perçus.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles questions structurent l’expérience du symptôme ?",
+        "answers": [
+          "Que perçoit la personne ? Comment l’évalue-t-elle ? Comment le vit-elle / y répond-elle ?"
+        ],
+        "explanation": "Que perçoit la personne ? Comment l’évalue-t-elle ? Comment le vit-elle / y répond-elle ?"
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_025",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Entretien infirmier et sécurité",
+    "number": 25,
+    "question": "Lorsqu’une étudiante consulte pour des migraines récurrentes, quelle première posture infirmière est pertinente ?",
+    "choices": [
+      "Demander à la patiente de raconter le déroulement d’une crise.",
+      "Prescrire immédiatement une liste de changements.",
+      "Réduire l’entretien à une note de douleur.",
+      "Lui reprocher son emploi du temps.",
+      "Écarter toute inquiétude exprimée."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "L’écoute et le récit du vécu précèdent les conseils et la co-construction.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Par quoi l’entretien infirmier doit-il commencer ?",
+        "answers": [
+          "Écouter le récit de la personne et explorer son expérience, plutôt qu’imposer des conseils."
+        ],
+        "explanation": "Écouter le récit de la personne et explorer son expérience, plutôt qu’imposer des conseils."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_026",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Entretien infirmier et sécurité",
+    "number": 26,
+    "question": "Quelles informations doivent être explorées dans l’entretien ?",
+    "choices": [
+      "Fréquence, durée et intensité des épisodes.",
+      "Signes associés et retentissement.",
+      "Contexte, stratégies essayées et résultats.",
+      "Uniquement la profession de la patiente.",
+      "Uniquement sa date de naissance."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "medium",
+    "explanation": "L’entretien doit couvrir les caractéristiques des épisodes, les signes associés, le contexte et les stratégies.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faut-il recueillir sur une crise ?",
+        "answers": [
+          "Début, fréquence, durée, intensité, signes associés, retentissement, contexte et stratégies."
+        ],
+        "explanation": "Début, fréquence, durée, intensité, signes associés, retentissement, contexte et stratégies."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_027",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Entretien infirmier et sécurité",
+    "number": 27,
+    "question": "À quoi peut servir un carnet de suivi ?",
+    "choices": [
+      "Repérer des régularités à discuter avec la personne.",
+      "Établir à lui seul une causalité certaine.",
+      "Remplacer toute évaluation clinique.",
+      "Prouver qu’aucune orientation n’est nécessaire.",
+      "Prescrire un traitement nouveau."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Le carnet facilite l’observation des contextes, mais ne suffit pas à prouver une cause ni à écarter des risques.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est l’intérêt d’un carnet de suivi ?",
+        "answers": [
+          "Documenter les épisodes et identifier des régularités à discuter pour ajuster la stratégie."
+        ],
+        "explanation": "Documenter les épisodes et identifier des régularités à discuter pour ajuster la stratégie."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_028",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Entretien infirmier et sécurité",
+    "number": 28,
+    "question": "Quel élément justifie d’envisager une orientation vers un autre professionnel ?",
+    "choices": [
+      "Des signes d’alerte ou des limites du champ de compétences.",
+      "Toute demande de pause au travail.",
+      "L’existence d’un examen universitaire.",
+      "Une préférence de la patiente pour un horaire.",
+      "La seule existence d’un carnet."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "La sécurité du patient impose de repérer les signes d’alerte et de solliciter une orientation adaptée.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quand envisager une orientation ?",
+        "answers": [
+          "Lorsque des signes d’alerte ou des limites du champ de compétences le nécessitent."
+        ],
+        "explanation": "Lorsque des signes d’alerte ou des limites du champ de compétences le nécessitent."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_029",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Adhésion et co-construction",
+    "number": 29,
+    "question": "Dans un projet de gestion des symptômes, que signifie l’adhésion du patient ?",
+    "choices": [
+      "Obtenir l’obéissance à des consignes imposées.",
+      "Rechercher un projet accepté, compris et faisable avec la personne.",
+      "Imposer le même objectif à tous les patients.",
+      "Supprimer tout compromis.",
+      "Refuser le dialogue."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "L’adhésion suppose un projet compris, co-construit, accepté et réalisable.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment définir l’adhésion à un projet de soins ?",
+        "answers": [
+          "Accord actif autour d’une stratégie comprise, acceptée et faisable, sans obéissance imposée."
+        ],
+        "explanation": "Accord actif autour d’une stratégie comprise, acceptée et faisable, sans obéissance imposée."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_030",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Adhésion et co-construction",
+    "number": 30,
+    "question": "Une étudiante doit concilier gestion des migraines, études et travail. Quel exemple illustre la co-construction du projet de soins ?",
+    "choices": [
+      "L’inviter à choisir un changement compatible avec ses obligations.",
+      "Lui imposer un programme irréalisable.",
+      "Ignorer sa contrainte financière.",
+      "Définir seul ses priorités.",
+      "Menacer d’interrompre l’aide si elle refuse."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "La négociation respecte les priorités et capacités réelles de la patiente.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la co-construction du projet de soins ?",
+        "answers": [
+          "Choisir et ajuster avec la personne les objectifs et actions qu’elle accepte et peut appliquer."
+        ],
+        "explanation": "Choisir et ajuster avec la personne les objectifs et actions qu’elle accepte et peut appliquer."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_031",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Adhésion et co-construction",
+    "number": 31,
+    "question": "Pourquoi un conseil général peut-il échouer malgré sa bonne intention ?",
+    "choices": [
+      "Il peut être difficilement applicable et fragiliser la confiance.",
+      "Il est toujours sans intérêt dans tous les contextes.",
+      "Il dispense de tout objectif.",
+      "Il remplace la relation de soin.",
+      "Il impose une réussite immédiate."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "Des conseils non adaptés peuvent être perçus comme irréalistes et décourageants.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi des conseils généraux peuvent-ils échouer ?",
+        "answers": [
+          "Ils peuvent méconnaître les contraintes réelles et diminuer l’adhésion."
+        ],
+        "explanation": "Ils peuvent méconnaître les contraintes réelles et diminuer l’adhésion."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_032",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Adhésion et co-construction",
+    "number": 32,
+    "question": "Une étudiante souhaite limiter ses migraines en conservant ses études et son travail. Quels changements modestes et réalisables peuvent être négociés ?",
+    "choices": [
+      "Prévoir un déjeuner plutôt que le sauter.",
+      "Faire des pauses au cours des longues séances sur ordinateur.",
+      "Abandonner obligatoirement les études.",
+      "Augmenter librement le traitement.",
+      "Arrêter toute activité professionnelle immédiatement."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "difficulty": "medium",
+    "explanation": "Le compromis porte sur des changements modestes, concrets et négociés.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels deux changements Émilie envisage-t-elle ?",
+        "answers": [
+          "Ne plus sauter le déjeuner ; prévoir des pauses pendant de longues séances de travail."
+        ],
+        "explanation": "Ne plus sauter le déjeuner ; prévoir des pauses pendant de longues séances de travail."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_033",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Adhésion et co-construction",
+    "number": 33,
+    "question": "Si une patiente refuse une proposition de soin, quelle démarche est cohérente ?",
+    "choices": [
+      "Explorer les raisons, négocier et ajuster si possible.",
+      "Passer outre son choix sans discussion.",
+      "Considérer tout refus comme une mauvaise volonté.",
+      "Maintenir l’objectif quelles que soient ses contraintes.",
+      "Cesser systématiquement de communiquer."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Face au refus, la démarche repose sur l’écoute des raisons, la négociation et l’adaptation.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de l’infirmière dans la TGS ?",
+        "answers": [
+          "Écouter, explorer, relier les données, accompagner des solutions, sécuriser et réévaluer."
+        ],
+        "explanation": "Écouter, explorer, relier les données, accompagner des solutions, sécuriser et réévaluer."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_034",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Résultats et réévaluation",
+    "number": 34,
+    "question": "Chez une étudiante dont les migraines perturbent les études et le quotidien, quel résultat de soins serait pertinent ?",
+    "choices": [
+      "Réduire le retentissement des crises sur son quotidien.",
+      "Garantir la disparition immédiate de toute migraine.",
+      "Supprimer les examens universitaires.",
+      "Obtenir une obéissance parfaite.",
+      "Éviter tout suivi."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "Un résultat réaliste peut porter sur la fréquence, l’intensité ou le retentissement des migraines.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels résultats sont réalistes dans le cas chronique ?",
+        "answers": [
+          "Diminuer éventuellement fréquence, intensité ou retentissement ; améliorer autogestion et qualité de vie."
+        ],
+        "explanation": "Diminuer éventuellement fréquence, intensité ou retentissement ; améliorer autogestion et qualité de vie."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_035",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Résultats et réévaluation",
+    "number": 35,
+    "question": "Quels indicateurs pourraient aider à réévaluer une stratégie ?",
+    "choices": [
+      "Nombre de crises sur une période.",
+      "Intensité et durée rapportées.",
+      "Gêne dans les études et les activités.",
+      "Une valeur fictive choisie pour plaire au soignant.",
+      "Le seul nombre de conseils donnés."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "difficulty": "medium",
+    "explanation": "La réévaluation doit concerner les manifestations et leurs conséquences pour la personne.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle prudence devant une relation notée dans un carnet ?",
+        "answers": [
+          "Une association observée n’est pas une preuve de cause unique."
+        ],
+        "explanation": "Une association observée n’est pas une preuve de cause unique."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_036",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Résultats et réévaluation",
+    "number": 36,
+    "question": "Pourquoi faut-il prévoir une nouvelle évaluation après la mise en œuvre ?",
+    "choices": [
+      "Pour vérifier les effets et ajuster le projet.",
+      "Pour éviter de demander l’avis de la personne.",
+      "Parce qu’un plan ne peut jamais évoluer.",
+      "Pour prouver qu’une hypothèse initiale est toujours vraie.",
+      "Pour ignorer l’éventuelle aggravation."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "easy",
+    "explanation": "La TGS décrit un processus dynamique : résultats et objectifs sont réexaminés.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi faut-il réévaluer ?",
+        "answers": [
+          "Pour mesurer les effets, maintenir, ajuster ou modifier les stratégies."
+        ],
+        "explanation": "Pour mesurer les effets, maintenir, ajuster ou modifier les stratégies."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_037",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Résultats et réévaluation",
+    "number": 37,
+    "question": "Quel enchaînement correspond au raisonnement décrit ?",
+    "choices": [
+      "Recueil → compréhension → co-construction → mise en œuvre → évaluation.",
+      "Conseil imposé → abandon de l’entretien → absence de suivi.",
+      "Traitement inventé → conclusion → recueil.",
+      "Évaluation des résultats avant toute intervention, sans données.",
+      "Classement des symptômes sans examiner le vécu."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Le cours développe une démarche d’exploration, de plan partagé et de réévaluation.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi un score de douleur ne suffit-il pas ?",
+        "answers": [
+          "Il ne décrit pas à lui seul les signes associés, le vécu, l’évolution, les effets sur la vie et les ressources."
+        ],
+        "explanation": "Il ne décrit pas à lui seul les signes associés, le vécu, l’évolution, les effets sur la vie et les ressources."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_038",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Comparaisons et application",
+    "number": 38,
+    "question": "Quelle donnée entre surtout dans les réactions humaines réelles du modèle trifocal ?",
+    "choices": [
+      "L’inquiétude rapportée par Émilie face aux crises.",
+      "Une complication non survenue présentée comme certaine.",
+      "Une pathologie inventée.",
+      "Une prescription hypothétique.",
+      "Un risque pris pour une réaction déjà observée."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "Les réactions réelles sont des réponses effectivement présentes, comme l’inquiétude exprimée.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle question pose le trifocal ?",
+        "answers": [
+          "Comment organiser manifestations, risques et réactions humaines pour juger cliniquement ?"
+        ],
+        "explanation": "Comment organiser manifestations, risques et réactions humaines pour juger cliniquement ?"
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_039",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Comparaisons et application",
+    "number": 39,
+    "question": "Quel énoncé décrit correctement les risques dans le modèle trifocal ?",
+    "choices": [
+      "Ils sont à anticiper ; ils ne sont pas tous déjà réalisés.",
+      "Ils sont synonymes de symptômes présents.",
+      "Ils n’ont aucun lien avec les données recueillies.",
+      "Ils remplacent le diagnostic médical.",
+      "Ils ne concernent jamais la sécurité."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "hard",
+    "explanation": "Le modèle distingue les risques potentiels des problèmes et réactions effectivement présents.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois axes du trifocal ?",
+        "answers": [
+          "Situation de santé / symptômes ; risques potentiels ; réactions humaines réelles."
+        ],
+        "explanation": "Situation de santé / symptômes ; risques potentiels ; réactions humaines réelles."
+      }
+    ]
+  },
+  {
+    "id": "a1_tgs_td_040",
+    "courseId": "theorie_gestion_symptomes_td",
+    "ue": "S1 A1",
+    "course": "La théorie des symptômes — TD d’application",
+    "theme": "Comparaisons et application",
+    "number": 40,
+    "question": "Pour analyser une situation clinique avec la théorie de gestion des symptômes, quelle méthode choisir ?",
+    "choices": [
+      "Identifier faits, facteurs, vécu et stratégies puis justifier les réponses.",
+      "Mémoriser exclusivement le nom des trois modèles.",
+      "Éviter de prendre en compte l’environnement.",
+      "Confondre hypothèse et certitude.",
+      "Répondre sans relire les données du cas."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "difficulty": "medium",
+    "explanation": "L’analyse clinique mobilise les facteurs, le vécu et les stratégies de gestion pour justifier les réponses.",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faut-il maîtriser pour analyser un QCM de situation clinique ?",
+        "answers": [
+          "Repérer les facteurs, le vécu et les stratégies, puis justifier l’analyse sans inventer de faits."
+        ],
+        "explanation": "Repérer les facteurs, le vécu et les stratégies, puis justifier l’analyse sans inventer de faits."
+      }
+    ]
+  }
+]

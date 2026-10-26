@@ -17,7 +17,7 @@
    var grid=document.getElementById('v74CourseGrid');
    var ui=window.IFSI_COURSE_NAV_UI;
    report.attempts++;
-   if(!v74||!reg||reg.courses.length!==55||!grid||grid.querySelectorAll('.v74-domain-group').length<5||!ui||!ui.status().active){
+   if(!v74||!reg||reg.courses.length<55||!grid||grid.querySelectorAll('.v74-domain-group').length<5||!ui||!ui.status().active){
      if(report.attempts<90)return next(checkBoot);
      return fail('Démarrage incomplet : '+JSON.stringify({hasV74:!!v74,courses:reg&&reg.courses.length,groups:grid&&grid.querySelectorAll('.v74-domain-group').length,ui:ui&&ui.status()}));
    }

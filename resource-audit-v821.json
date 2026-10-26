@@ -1,5 +1,5 @@
 {
-  "version": "8.30.140",
+  "version": "8.30.141",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,8 +9,8 @@
   "mode": "validated_snapshot",
   "note": "V8.30.137 : 190 audios (4 compléments au catalogue : IAS 2, Histoire de la profession 1, Droits des patients 1). Fichiers MP3 réels publiés sur Drive et permissions anyone(reader) vérifiées, écoute externe à tester.",
   "expectedTotals": {
-    "courses": 55,
-    "sheets": 72,
+    "courses": 56,
+    "sheets": 73,
     "infographics": 184,
     "vocals": 190,
     "v820QcmImported": 1174,
@@ -227,6 +227,17 @@
       "qcm": 40,
       "flashcards": 40,
       "lexicon": 25,
+      "sheetFormat": "written_v1",
+      "newCourse": true,
+      "sourceStatus": "provisional"
+    },
+    {
+      "courseId": "theorie_gestion_symptomes_td",
+      "course": "La théorie des symptômes — TD — PROVISOIRE",
+      "release": "8.30.141",
+      "qcm": 40,
+      "flashcards": 40,
+      "lexicon": 30,
       "sheetFormat": "written_v1",
       "newCourse": true,
       "sourceStatus": "provisional"

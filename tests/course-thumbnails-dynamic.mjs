@@ -66,7 +66,10 @@ const approved = await scenario({
 });
 assert.equal(approved.cards[0].box.dataset.thumbnailStatus,'published','Nouvelle image reconnue sans modifier le module');
 assert.equal(approved.cards[0].box.childNodes[0].src,'./'+newPath);
-assert.equal(approved.api.status().pendingCourseIds.length,0);
+const missingHistoricalImageIds = registry.filter(c=>!manifest.some(a=>a.path==='assets/course-thumbnails/'+c.id+'.webp')).map(c=>c.id);
+assert.deepEqual([...approved.api.status().pendingCourseIds].sort(),missingHistoricalImageIds.sort(),
+  'Une vignette approuvée pour le nouveau cours ne supprime pas les repères encore en attente');
+assert.ok(!approved.api.status().pendingCourseIds.includes(newCourse.id),'Le nouveau cours approuvé doit disposer de sa vignette');
 
 const poisoned = await scenario({
   courses:[...registry,newCourse],

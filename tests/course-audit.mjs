@@ -28,6 +28,18 @@ assert(qs.filter(q=>q.courseId==='douleur').length===52,'Banque Douleur officiel
 const vocals=json('vocals.json');
 const sheets=[...json('sheets-1.json'),...json('sheets-2.json'),...json('sheets-3.json')];
 const infos=json('infographics.json');
+const publishedManifest=json('docs/course-deliveries.json');
+const siteBase='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
+function verifiedPageAssetId(item){
+ const c=publishedManifest.courses?.find(d=>d.courseId===item.courseId &&
+  d.sheetResourceId===item.resourceId && d.publicationHost==='github_pages');
+ const a=c?.publicArtifacts?.sheet;
+ if(!a||!a.path||!/^[a-f0-9]{64}$/.test(a.sha256||''))return null;
+ if(!a.path.startsWith('assets/')||a.path.includes('..')||!a.path.endsWith('.pdf'))return null;
+ if(item.url!==siteBase+a.path||!fs.existsSync(a.path))return null;
+ if(c.artifactSha256s?.[a.artifactId]!==a.sha256)return null;
+ return 'pages:'+a.path;
+}
 const byCourse=Object.fromEntries(courses.map(c=>[c.id,{label:c.label,qcm:0,vocals:0,sheets:0,infographics:0}]));
 const errors=[];
 
@@ -49,12 +61,12 @@ for(const v of vocals){
 function auditResources(items,type,key){
   const ids=new Set();
   for(const x of items){
-    const id=driveId(x);
+    const id=driveId(x)||verifiedPageAssetId(x);
     if(!x.courseId)errors.push(`${type} sans courseId explicite: ${x.title||x.label||id}`);
     else if(!courseMap.has(x.courseId))errors.push(`${type} courseId inconnu: ${x.courseId} — ${x.title||x.label||id}`);
     else byCourse[x.courseId][key]++;
     if(!x.displayTitle?.trim())errors.push(`${type} sans displayTitle: ${x.title||id}`);
-    if(!id)errors.push(`${type} sans Drive ID: ${x.title||x.displayTitle||''}`);
+    if(!id)errors.push(`${type} sans ID Drive ni artifact Pages authentifié: ${x.title||x.displayTitle||''}`);
     else if(ids.has(id))errors.push(`Drive ID dupliqué dans ${type}: ${id}`);
     else ids.add(id);
     if(/ARCHIVE/i.test(x.title||''))errors.push(`${type} archive indexée comme active: ${x.title}`);
@@ -64,7 +76,7 @@ auditResources(sheets,'Fiche','sheets');
 auditResources(infos,'Infographie','infographics');
 
 const allIds=new Set(),crossDup=[];
-for(const x of [...sheets,...infos]){const id=driveId(x);if(!id)continue;if(allIds.has(id))crossDup.push(id);allIds.add(id)}
+for(const x of [...sheets,...infos]){const id=driveId(x)||verifiedPageAssetId(x);if(!id)continue;if(allIds.has(id))crossDup.push(id);allIds.add(id)}
 if(crossDup.length)errors.push(`Drive IDs dupliqués entre catalogues: ${[...new Set(crossDup)].join(', ')}`);
 
 const forbiddenLegacy=new Set([
@@ -94,5 +106,5 @@ console.log(`\n🧭 Audit ressources V${registry.version}`);
 console.log(`Registre: ${courses.length} courseId • ${sheets.length} fiches • ${infos.length} infographies • ${vocals.length} vocaux`);
 for(const [id,x] of Object.entries(byCourse)){if(x.qcm+x.vocals+x.sheets+x.infographics)console.log(`- ${id}: ${x.qcm} QCM | ${x.sheets} fiches | ${x.infographics} infos | ${x.vocals} vocaux`)}
 if(errors.length){console.error('\n❌ Audit ressources:',errors.join('\n- '));process.exit(1)}
-console.log('✅ Toutes les fiches et infographies ont un courseId explicite, un titre d’affichage et un Drive ID unique.');
+console.log('✅ Fiches et infographies : courseId, titres et références uniques (Drive ou artifact Pages SHA vérifié).');
 console.log('✅ Les anciennes copies connues et les archives sont exclues du catalogue actif.');

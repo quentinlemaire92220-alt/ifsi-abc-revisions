@@ -18,11 +18,47 @@ def without_theme_titles(text,rows):
         lines.append(line)
     return '\n'.join(lines)
 
-def validate_qcm(text,rows):
+def strip_qcm_furniture(text):
+    # Remove only known repeating headers/page numbering, never clinical content.
+    text=re.sub(r'(?m)^[ \t]*IFSI ANTOINE BÉCLÈRE[^\n]*$', '', text)
+    text=re.sub(r'(?m)^[ \t]*THÉORIE DE GESTION DES SYMPTÔMES\s*[•·]\s*TD D[’\x27]APPLICATION[^\n]*$', '', text)
+    return text
+
+def validate_qcm_written_dot(text,rows):
     parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
     assert len(parts)==2,'Corrigés absents'
     questions,corrections=parts
-    # Headings are layout, never question content. Only exact theme lines are stripped.
+    questions=strip_qcm_furniture(without_theme_titles(questions,rows))
+    # Accept only the two real printed heading conventions, without weakening
+    # exact question/choices/answers/explanations comparison.
+    blocks=list(re.finditer(r'(?m)^Q(\d{2})(?:\.[ \t]*|[ \t]+)',questions))
+    seen=[int(m[1]) for m in blocks]
+    expected_numbers=[q['number'] for q in rows]
+    if seen!=expected_numbers:
+        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers},ensure_ascii=False))
+    assert seen==expected_numbers,'Questions manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        # Difficulty chips are furniture; their text is checked by the bank.
+        actual=re.sub(r'(?m)[ \t]*(?:FACILE|INTERMÉDIAIRE|DIFFICILE)[ \t]*$', '', actual)
+        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
+
+    corrections=strip_qcm_furniture(without_theme_titles(corrections,rows))
+    blocks=list(re.finditer(r'(?m)^Q(\d{2})[ \t]*[—-][ \t]*(?:Réponse\(s\)|Réponses)[ \t]*:[ \t]*([A-E](?:[ \t]*(?:\+|,)[ \t]*[A-E])*)[ \t]*\.?[ \t]*\n?',corrections))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+def validate_qcm(text,rows):
+    # Do not change the historical public PDF contract.
+    questions=re.split(r'Corrigés argumentés',text,maxsplit=1)[0]
+    if re.search(r'(?m)^Q\d{2}\.[ \t]*',questions):
+        return validate_qcm_written_dot(text,rows)
+    parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
     questions=without_theme_titles(questions,rows)
     blocks=list(re.finditer(r'(?m)^Q(\d{2})\s+',questions))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Questions manquantes/dupliquées'
@@ -37,7 +73,35 @@ def validate_qcm(text,rows):
         assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+
+def validate_cards_written_recto_verso(text,rows):
+    # The independent PDF deck is ordered pedagogically, not by QCM index.
+    # Require all 40 bank cards EXACTLY once, regardless of order.
+    text=strip_qcm_furniture(without_theme_titles(text,rows))
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2})[ \t]*—[ \t]*RECTO[ \t]*\n',text))
+    numbered=[int(m[1]) for m in blocks]
+    assert numbered==list(range(1,len(rows)+1)),'Cartes manquantes/dupliquées'
+    actual=[]
+    for i,m in enumerate(blocks):
+        page=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        pair=re.split(r'(?m)^VERSO[ \t]*\n',page,maxsplit=1)
+        assert len(pair)==2,'CARTE '+str(i+1)+': recto/verso non identifié'
+        actual.append((norm(pair[0]),norm(pair[1])))
+    expected=[]
+    for q in rows:
+        assert len(q['flashcards'])==1,q['id']+': structure de flashcards invalide'
+        card=q['flashcards'][0]
+        reply=' '.join(card['answers'])
+        # A missing 'EXPLICATION' label must not hide additional teaching content.
+        assert norm(card['explanation'])==norm(reply),q['id']+': explication de la banque non reproduite dans le PDF'
+        expected.append((norm(card['front']),norm(reply)))
+    assert len(set(actual))==len(rows),'Doublons recto/verso dans le PDF'
+    assert len(set(expected))==len(rows),'Doublons recto/verso dans la banque'
+    assert sorted(actual)==sorted(expected),'Le PDF des 40 cartes diverge de la banque'
+
 def validate_cards(text,rows):
+    if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
+        return validate_cards_written_recto_verso(text,rows)
     text=without_theme_titles(text,rows)
     blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
     assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
