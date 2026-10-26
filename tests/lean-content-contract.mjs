@@ -42,8 +42,8 @@ export function validateLeanFlashcards(cards){
   assert.ok(filled(card.id)&&!ids.has(card.id),'Flashcard ID absent/dupliqué');
   ids.add(card.id);
   const front=String(card.front||'').trim();
+  assert.ok(!bannedFront.test(front),'Flashcard : consigne vague « citer/lister » : '+card.id);
   assert.ok(isExplicitRecallPrompt(front),'Flashcard : question ou rappel explicite manquant : '+card.id);
-  assert.ok(!bannedFront.test(card.front.trim()),'Flashcard : consigne vague « citer/lister » : '+card.id);
   assert.ok(Array.isArray(card.answers)&&card.answers.length>=1&&card.answers.every(filled),'Flashcard : réponse absente : '+card.id);
   assert.ok(filled(card.explanation),'Flashcard : justification absente : '+card.id);
  }
