@@ -18,29 +18,37 @@ def without_theme_titles(text,rows):
         lines.append(line)
     return '\n'.join(lines)
 
+def strip_qcm_furniture(text):
+    # Remove only known repeating headers/page numbering, never clinical content.
+    text=re.sub(r'(?m)^[ \t]*IFSI ANTOINE BÉCLÈRE[^\n]*$', '', text)
+    text=re.sub(r'(?m)^[ \t]*THÉORIE DE GESTION DES SYMPTÔMES\s*[•·]\s*TD D[’\x27]APPLICATION[^\n]*$', '', text)
+    return text
+
 def validate_qcm(text,rows):
     parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
     assert len(parts)==2,'Corrigés absents'
     questions,corrections=parts
-    # Headings are layout, never question content. Only exact theme lines are stripped.
-    questions=without_theme_titles(questions,rows)
-    blocks=list(re.finditer(r'(?m)^Q(\d{2})\s+',questions))
+    questions=strip_qcm_furniture(without_theme_titles(questions,rows))
+    # Accept only the two real printed heading conventions, without weakening
+    # exact question/choices/answers/explanations comparison.
+    blocks=list(re.finditer(r'(?m)^Q(\d{2})(?:\.[ \t]*|[ \t]+)',questions))
     seen=[int(m[1]) for m in blocks]
     expected_numbers=[q['number'] for q in rows]
     if seen!=expected_numbers:
-        # Diagnostics structurels seulement : ne pas exposer les questions du brouillon.
-        patterns=[re.sub(r'[A-Za-zÀ-ÿ]','x',line.strip()[:28]) for line in questions.splitlines() if re.match(r'(?i)^\s*(?:q(?:uestion)?|n[°º]|[0-9]{1,2}[.):-])',line)][:55]
-        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers,'heading_shapes':patterns},ensure_ascii=False))
+        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers},ensure_ascii=False))
     assert seen==expected_numbers,'Questions manquantes/dupliquées'
     for i,(q,m) in enumerate(zip(rows,blocks)):
         actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        # Difficulty chips are furniture; their text is checked by the bank.
+        actual=re.sub(r'(?m)[ \t]*(?:FACILE|INTERMÉDIAIRE|DIFFICILE)[ \t]*$', '', actual)
         expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
-    corrections=without_theme_titles(corrections.replace('Corrigés argumentés',''),rows)
-    blocks=list(re.finditer(r'(?m)^Q(\d{2}) - Réponses : ([A-E](?:, [A-E])*)\s*\n',corrections))
-    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Corrigés manquants/dupliqués'
+
+    corrections=strip_qcm_furniture(without_theme_titles(corrections,rows))
+    blocks=list(re.finditer(r'(?m)^Q(\d{2})[ \t]*[—-][ \t]*(?:Réponse\(s\)|Réponses)[ \t]*:[ \t]*([A-E](?:[ \t]*(?:\+|,)[ \t]*[A-E])*)[ \t]*\.?[ \t]*\n?',corrections))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués'
     for i,(q,m) in enumerate(zip(rows,blocks)):
-        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
+        assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
 def validate_cards(text,rows):
