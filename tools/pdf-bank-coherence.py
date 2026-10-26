@@ -25,7 +25,12 @@ def validate_qcm(text,rows):
     # Headings are layout, never question content. Only exact theme lines are stripped.
     questions=without_theme_titles(questions,rows)
     blocks=list(re.finditer(r'(?m)^Q(\d{2})\s+',questions))
-    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Questions manquantes/dupliquées'
+    seen=[int(m[1]) for m in blocks]
+    expected_numbers=[q['number'] for q in rows]
+    if seen!=expected_numbers:
+        # Diagnostics structurels seulement : ne pas exposer les questions du brouillon.
+        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers},ensure_ascii=False))
+    assert seen==expected_numbers,'Questions manquantes/dupliquées'
     for i,(q,m) in enumerate(zip(rows,blocks)):
         actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
         expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
