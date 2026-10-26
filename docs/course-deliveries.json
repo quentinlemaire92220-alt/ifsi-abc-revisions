@@ -208,7 +208,7 @@
       "courseId": "droits_patients",
       "part": "01",
       "validated": true,
-      "status": "partial",
+      "status": "complete",
       "driveFolderId": "1lInHj_FxbpAPR70sZ0g5atyYsNcuLqYC",
       "folders": {
         "01": "1dzyAX30n8OCA25E5pbDaljpLpj6V-dt1",
@@ -323,14 +323,15 @@
         {
           "partId": "p01",
           "validated": true,
-          "status": "awaiting_mp3",
+          "status": "complete",
           "vocalIds": [
             "droits_patients_2026_01",
             "droits_patients_2026_02",
             "droits_patients_2026_03",
             "droits_patients_2026_04",
             "droits_patients_2026_05",
-            "droits_patients_2026_06"
+            "droits_patients_2026_06",
+            "droits_patients_2026_07"
           ],
           "sheetResourceIds": [
             "droits_patients_fiche_complement_p01_20261021"
