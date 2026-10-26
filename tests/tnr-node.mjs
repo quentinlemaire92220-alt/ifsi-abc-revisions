@@ -240,6 +240,8 @@ assert(vocabulary.entries.some(x=>x.id==='hypoxie'&&/hypo/i.test(x.etymologie)),
 assert(vocabulary.entries.some(x=>x.id==='pcr'&&/polymérase/i.test(x.etymologie)),'Développement PCR absent');
 assert(new Set(vocabulary.entries.map(x=>x.theme)).size>=23,'Glossaire : couverture thématique insuffisante');
 const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses.filter(c=>c.provisional===true&&c.pedagogicalValidated===false&&c.sourceBasis?.kind==='oral_transcript').map(c=>c.courseId));
+// Conserver la provenance orale historique après un rapprochement officiel validé.
+for(const c of json('docs/course-deliveries.json').courses)if(c.validated===true&&c.sourceBasis?.reconciled===true&&c.sourceAudit?.officialChecked===true&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')provisionalOralSources.add(c.courseId);
 const allowedLexiconSource=x=>['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
 assert(vocabulary.entries.every(x=>x.term&&(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.'))&&x.theme&&x.distinction?.length>=10&&allowedLexiconSource(x)),'Glossaire : définition, distinction ou provenance absente');
 assert(new Set(vocabulary.entries.flatMap(x=>x.courseIds)).size===courseIds.size,'Glossaire : chaque cours du registre doit être couvert');

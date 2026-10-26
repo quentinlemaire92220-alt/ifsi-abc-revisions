@@ -1336,5 +1336,272 @@
         "explanation": "L’écoute relationnelle vise la compréhension, la confiance et la mobilisation des ressources propres au patient, non l’adhésion forcée à une réponse du soignant."
       }
     ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_041",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 41,
+    "theme": "Communication adaptée",
+    "difficulty": "easy",
+    "question": "Dans le QCM d’introduction, quels éléments caractérisent une communication adaptée ?",
+    "choices": [
+      "L’adéquation entre verbal et non-verbal",
+      "L’ignorance des demandes du patient",
+      "L’adaptation aux aptitudes psychologiques",
+      "Une posture debout obligatoirement adaptée",
+      "La supériorité systématique du verbal"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le support officiel met en avant la congruence et l’adaptation au niveau psychologique ; la prise en compte des demandes reste nécessaire.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels éléments caractérisent une communication adaptée ?",
+        "answers": [
+          "Congruence verbal/non-verbal et adaptation aux aptitudes psychologiques."
+        ],
+        "explanation": "La communication adaptée repose sur la congruence et l’adaptation au niveau psychologique ; la prise en compte des demandes reste nécessaire."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_042",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 42,
+    "theme": "Posture et communication non verbale",
+    "difficulty": "medium",
+    "question": "Dans les composantes de la communication, quelles classifications sont correctes ?",
+    "choices": [
+      "Les gestes relèvent du non-verbal",
+      "L’intonation de la voix est paraverbale",
+      "Les mots employés constituent le verbal",
+      "La proxémie ne concerne jamais la communication",
+      "Les mimiques appartiennent au verbal"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours distingue mots, caractéristiques de la voix et manifestations corporelles.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois canaux de la communication ?",
+        "answers": [
+          "Verbal : mots ; paraverbal : voix ; non verbal : gestes, posture, regard."
+        ],
+        "explanation": "Le cours distingue mots, caractéristiques de la voix et manifestations corporelles."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_043",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 43,
+    "theme": "Techniques d’entretien",
+    "difficulty": "medium",
+    "question": "Quelle reformulation de type reflet / miroir respecte le mieux le message ?",
+    "choices": [
+      "« Vous voulez dire que vous vous inquiétez pour votre avenir. » si la personne a exprimé ce thème",
+      "« Votre vraie peur est forcément votre couple. »",
+      "« Ce que je comprends de vos paroles, c’est… »",
+      "« Il faut être positive. »",
+      "« Je sais exactement ce que vous ressentez. »"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le reflet restitue le sens exprimé pour vérification, sans ajouter une explication inventée.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la fonction de la reformulation reflet ?",
+        "answers": [
+          "Paraphraser fidèlement ce qui a été dit et permettre au patient de confirmer ou corriger."
+        ],
+        "explanation": "Le reflet restitue le sens exprimé pour vérification, sans ajouter une explication inventée."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_044",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 44,
+    "theme": "Techniques d’entretien",
+    "difficulty": "medium",
+    "question": "Après un long récit, quelle intention décrit la reformulation résumée ?",
+    "choices": [
+      "Reprendre les idées principales évoquées",
+      "Présenter une solution décidée d’avance",
+      "Vérifier que l’on a compris les points essentiels",
+      "Éviter toute possibilité de correction",
+      "Relancer le patient par une série d’hypothèses"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La reformulation résumée synthétise les éléments essentiels afin de favoriser leur confirmation, leur nuance ou leur correction.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert une reformulation résumée ?",
+        "answers": [
+          "À condenser les éléments importants exprimés pour vérifier le sens du discours."
+        ],
+        "explanation": "La reformulation résumée synthétise les éléments essentiels afin de favoriser leur confirmation, leur nuance ou leur correction."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_045",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 45,
+    "theme": "Techniques d’entretien",
+    "difficulty": "hard",
+    "question": "Parmi les formulations suivantes, lesquelles illustrent un recadrage prudent ?",
+    "choices": [
+      "« Malgré vos inquiétudes, vous avez déjà identifié des ressources qui vous aident. » si c’est vrai",
+      "« Vous devez cesser de penser au négatif. »",
+      "« Vous avez déjà surmonté plusieurs étapes difficiles, comment avez-vous fait ? »",
+      "« Ce n’est rien par rapport à d’autres patients. »",
+      "« Votre inquiétude n’a plus de raison d’être. »"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le recadrage peut valoriser une ressource authentique sans nier la souffrance ni culpabiliser la personne.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que vise une reformulation de recadrage ?",
+        "answers": [
+          "À mettre en lumière une ressource ou perspective utile sans invalider le vécu du patient."
+        ],
+        "explanation": "Le recadrage peut valoriser une ressource authentique sans nier la souffrance ni culpabiliser la personne."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_046",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 46,
+    "theme": "Techniques d’entretien",
+    "difficulty": "medium",
+    "question": "Quelle intervention relève de la clarification ?",
+    "choices": [
+      "« Quand vous dites vivre comme cela, qu’entendez-vous précisément ? »",
+      "« Vous avez peur de perdre votre féminité, c’est évident. »",
+      "« Pour vous, que signifie le terme difficile ? »",
+      "« Vous devriez voir le médecin immédiatement. »",
+      "« Tout ira bien. »"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La clarification demande de préciser un mot ambigu au lieu de fixer une interprétation.",
+    "announcedCorrectCount": 2,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quand utilise-t-on la reformulation clarification ?",
+        "answers": [
+          "Quand il faut préciser le sens d’un terme ou d’une phrase ambiguë."
+        ],
+        "explanation": "La clarification demande de préciser un mot ambigu au lieu de fixer une interprétation."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_047",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 47,
+    "theme": "Besoin relationnel et soin relationnel",
+    "difficulty": "hard",
+    "question": "Quelles propositions distinguent la relation de civilité du soin relationnel ?",
+    "choices": [
+      "La civilité peut être un échange de courtoisie sans intention de soin",
+      "Le soin relationnel vise à répondre à un besoin relationnel repéré",
+      "Tout échange sur la météo constitue obligatoirement un entretien relationnel",
+      "L’intention professionnelle compte dans le soin relationnel",
+      "La seule présence de mots définit un soin relationnel"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours met en évidence l’intention professionnelle et le repérage d’un besoin, au-delà de la simple conversation.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Une conversation avec un patient est-elle toujours un soin relationnel ?",
+        "answers": [
+          "Non : le soin relationnel répond à un besoin repéré avec une intention professionnelle."
+        ],
+        "explanation": "Le cours met en évidence l’intention professionnelle et le repérage d’un besoin, au-delà de la simple conversation."
+      }
+    ]
+  },
+  {
+    "id": "D1_RELATION_ECOUTE_048",
+    "courseId": "d1_relation_soignant_soigne_ecoute_active",
+    "ue": "S1 D1",
+    "course": "Relation soignant-soigné et écoute active",
+    "number": 48,
+    "theme": "Émotions, distance et équipe",
+    "difficulty": "medium",
+    "question": "Face à une situation qui réactive son propre vécu, le soignant peut :",
+    "choices": [
+      "Reconnaître son émotion sans la projeter sur le patient",
+      "Canaliser ses réactions pour rester disponible",
+      "Passer le relais si sa disponibilité est réellement compromise",
+      "Faire partager immédiatement toute son histoire personnelle",
+      "Interpréter automatiquement les besoins du patient d’après ses souvenirs"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le support insiste sur la reconnaissance des émotions et la juste présence : parfois le relais est nécessaire pour préserver la qualité du soin.",
+    "announcedCorrectCount": 3,
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire quand une situation du patient réactive le vécu personnel du soignant ?",
+        "answers": [
+          "Reconnaître et canaliser ses émotions, puis solliciter un relais si l’écoute est compromise."
+        ],
+        "explanation": "Le support insiste sur la reconnaissance des émotions et la juste présence : parfois le relais est nécessaire pour préserver la qualité du soin."
+      }
+    ]
   }
 ]
