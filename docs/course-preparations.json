@@ -1,4 +1,50 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": []
+  "courses": [
+    {
+      "courseId": "theorie_gestion_symptomes_td",
+      "label": "La théorie des symptômes — TD d’application",
+      "domain": "A",
+      "ue": "A1",
+      "semester": 1,
+      "sessionType": "TD",
+      "packFormat": "written_v1",
+      "sheetFormat": "written_revision",
+      "schematics": "none",
+      "lifecycle": "preparation",
+      "validated": false,
+      "studentPublication": false,
+      "approval": null,
+      "sourceAudit": {
+        "oralStatus": "unverified",
+        "recordingTailTruncated": false,
+        "oralCoverageExhaustive": false,
+        "officialTdSupport": "not_supplied",
+        "facultyCm4Crosscheck": "available",
+        "scientificReview": "pending"
+      },
+      "artifacts": {
+        "questions": 40,
+        "flashcards": 40,
+        "glossaryTerms": 30,
+        "vocalMp3": 0,
+        "revisionPdfPages": 12,
+        "qcmPdfPages": 11,
+        "flashcardsPdfPages": 7,
+        "vocalScriptsTxt": 1
+      },
+      "privateBankPaths": {
+        "questions": "data/course-preparations/a1-theorie-symptomes-td.questions.json",
+        "lexicon": "data/course-preparations/a1-theorie-symptomes-td.lexicon.json"
+      },
+      "publicationBlockers": [
+        "official_td_support_not_supplied",
+        "oral_transcript_not_verified_against_recording",
+        "scientific_review_pending",
+        "final_graphic_review_pending",
+        "separate_publication_authorization_missing"
+      ],
+      "notes": "TD de mise en pratique de la théorie de gestion des symptômes ; CM4 historique conservé, aucune migration ni remplacement."
+    }
+  ]
 }
