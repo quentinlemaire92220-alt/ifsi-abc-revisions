@@ -47,8 +47,22 @@ for(const c of manifest.courses){
   continue;
  }
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,c.courseId+': pointeur de dossier privé dans le manifeste public');
- for(const key of required)assert.ok(c.folders[key],c.courseId+': dossier '+key+' absent');
- assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
+ const hostedPublic = c.deliveryMode==='source_limited_first_release' &&
+   c.provisional===true && c.publicationHost==='github_pages';
+ if(hostedPublic){
+  // Public PDF assets are the publication folders. Do not invent Drive IDs.
+  assert.equal(c.folders,undefined,c.courseId+': dossier Drive non attesté ne doit pas être inventé');
+  assert.deepEqual(Object.keys(c.publicArtifacts||{}).sort(),['flashcards','qcm','sheet'],
+   c.courseId+': exactement 3 ressources publiques vérifiables attendues');
+  for(const [role,a] of Object.entries(c.publicArtifacts)){
+   assert.match(a.path||'',/^assets\/[a-z0-9_-]+\/[A-Za-z0-9_/-]+\.pdf$/,c.courseId+': chemin PDF '+role+' invalide');
+   assert.match(a.sha256||'',/^[a-f0-9]{64}$/,c.courseId+': SHA public '+role+' absent');
+   assert.ok(Number.isInteger(a.pageCount)&&a.pageCount>0,c.courseId+': pagination '+role+' invalide');
+  }
+ } else {
+  for(const key of required)assert.ok(c.folders?.[key],c.courseId+': dossier '+key+' absent');
+  assert.equal(new Set(Object.values(c.folders)).size,required.length,'Dossiers dupliqués');
+ }
  // Anciens contrats préservés ; les nouveaux packs hybrid_v1 utilisent une seule fiche.
  if(c.packFormat==='written_v1')validateWrittenDelivery(c.courseId,c,sheets);
  else if(c.packFormat==='hybrid_v1')validateHybridDelivery(c.courseId,c,sheets);
