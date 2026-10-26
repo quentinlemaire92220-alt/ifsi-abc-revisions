@@ -22,8 +22,8 @@ for(const x of entries){
 assert.match(script,/thumbFor/);assert.match(script,/picture.addEventListener/);assert.match(script,/fallback/);
 assert.doesNotMatch(script,/localStorage|Q\.push|fetch\(/);
 assert.doesNotThrow(()=>new vm.Script(script));
-assert.ok(html.includes('src="./course-thumbnails-v1.js?v=8438"'));
-assert.ok(html.indexOf('course-navigation-ui-v2.js?v=8438')<html.indexOf('course-thumbnails-v1.js?v=8438'));
+assert.ok(html.includes('src="./course-thumbnails-v1.js?v=8439"'));
+assert.ok(html.indexOf('course-navigation-ui-v2.js?v=8439')<html.indexOf('course-thumbnails-v1.js?v=8439'));
 assert.ok(sw.includes("'./course-thumbnails-v1.js'")&&sw.includes('"course-thumbnails-v1.js"'));
-assert.equal(JSON.parse(fs.readFileSync('build-meta.json','utf8')).version,'8.30.138');
+assert.equal(JSON.parse(fs.readFileSync('build-meta.json','utf8')).version,'8.30.139');
 console.log('PASS: 55 assets WebP SHA-256, mapping et cache PWA.');

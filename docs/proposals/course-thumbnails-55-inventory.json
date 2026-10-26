@@ -1,5 +1,5 @@
 {
-  "version": "v7-webp-55",
+  "version": "v8-webp-55-4-corrections",
   "status": "INTEGRATED",
   "designSource": "Planche de 18 cartes médicales validée le 26 octobre 2026",
   "referenceImageCount": 18,
@@ -60,7 +60,8 @@
       "motif": "Progression cellule, tissu, organe, organisme",
       "targetAsset": "assets/course-thumbnails/niveaux_organisation.webp",
       "referenceAvailable": true,
-      "productionStatus": "integrated_v7_20261026"
+      "productionStatus": "integrated_v7_20261026",
+      "visualUpdate": "8.30.139"
     },
     {
       "courseId": "physiopathologie_infections",
@@ -225,10 +226,11 @@
     {
       "courseId": "grands_brules",
       "title": "Grands brûlés",
-      "motif": "Couche cutanée illustrant degrés de brûlure",
+      "motif": "Flamme stylisée sur fond violet (vignette non clinique)",
       "targetAsset": "assets/course-thumbnails/grands_brules.webp",
       "referenceAvailable": false,
-      "productionStatus": "integrated_v7_20261026"
+      "productionStatus": "integrated_v7_20261026",
+      "visualUpdate": "8.30.139"
     },
     {
       "courseId": "infections_cutanees",
@@ -241,10 +243,11 @@
     {
       "courseId": "diagnostic_bacteriologie",
       "title": "Diagnostic bactériologique",
-      "motif": "Boîte de Petri et microscope",
+      "motif": "Culture sur gélose et agrandissement de bacilles",
       "targetAsset": "assets/course-thumbnails/diagnostic_bacteriologie.webp",
       "referenceAvailable": true,
-      "productionStatus": "integrated_v7_20261026"
+      "productionStatus": "integrated_v7_20261026",
+      "visualUpdate": "8.30.139"
     },
     {
       "courseId": "infections_urinaires",
@@ -401,10 +404,11 @@
     {
       "courseId": "pssm",
       "title": "Premiers secours en santé mentale (PSSM)",
-      "motif": "Premiers secours en santé mentale, dialogue et soutien",
+      "motif": "Main de soutien, tête stylisée, cœur et bulle de dialogue",
       "targetAsset": "assets/course-thumbnails/pssm.webp",
       "referenceAvailable": false,
-      "productionStatus": "integrated_v7_20261026"
+      "productionStatus": "integrated_v7_20261026",
+      "visualUpdate": "8.30.139"
     },
     {
       "courseId": "sante_mondiale_sante_france",
