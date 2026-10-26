@@ -2676,7 +2676,7 @@
         "approvedAt": "2026-10-26T10:41:00Z",
         "mergeDeploymentCondition": "all_tnr_green",
         "provisionalOnly": true,
-        "bundleSha256": "",
+        "bundleSha256": "591a1212c66949abbc54457c2e972ebf6f5c20d5b3d5858dd5d61ee1bd16ea43",
         "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante.",
         "reviewNote": "Recalcul SHA-256 sur le lot candidat original GitHub après restauration des trois PDF passant le contrôle strict."
       },
