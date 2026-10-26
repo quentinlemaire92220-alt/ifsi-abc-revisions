@@ -7,7 +7,8 @@ const published=fs.readFileSync('index.html','utf8');
 const serviceWorker=fs.readFileSync('sw.js','utf8');
 const registry=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8'));
 
-assert.equal(registry.courses.length,55,'Les 55 cours historiques sont conservés');
+assert.equal(registry.courses.length,56,'Les 55 cours historiques et le TD UE A1 ajouté sont conservés');
+assert.equal(registry.courses.filter(c=>c.id==='theorie_gestion_symptomes_td').length,1,'TD unique et identifiable');
 assert.equal(fs.readFileSync('course-navigation-ui-v2.js','utf8'),src,'Le code déployé doit être identique au module testé');
 assert.equal((published.match(new RegExp('course-navigation-ui-v2\\.js\\?v='+JSON.parse(fs.readFileSync('build-meta.json','utf8')).build,'g'))||[]).length,1,'V2 doit être chargée une seule fois et versionnée');
 assert.doesNotMatch(published,/course-navigation-ui-v1\.js\?v=/,'V1 bloquante ne doit pas être rechargée');

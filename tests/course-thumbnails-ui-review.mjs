@@ -6,10 +6,10 @@ const script=fs.readFileSync('course-thumbnails-v1.js','utf8');
 const catalog=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8')).courses;
 const entries=JSON.parse(fs.readFileSync('docs/proposals/course-thumbnails-55-assets.json','utf8'));
 const html=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('sw.js','utf8');
-assert.equal(catalog.length,55);assert.equal(entries.length,55);
+assert.equal(catalog.length,56);const historical=catalog.filter(x=>x.id!=='theorie_gestion_symptomes_td');assert.equal(historical.length,55);assert.equal(entries.length,55);
 const ids=new Set([...script.matchAll(/"([a-z0-9_]+)"/g)].map(x=>x[1]).filter(id=>catalog.some(c=>c.id===id)));
-assert.deepEqual(ids,new Set(catalog.map(c=>c.id)));
-assert.deepEqual(new Set(entries.map(x=>x.path)),new Set(catalog.map(c=>'assets/course-thumbnails/'+c.id+'.webp')));
+assert.deepEqual(ids,new Set(historical.map(c=>c.id)));
+assert.deepEqual(new Set(entries.map(x=>x.path)),new Set(historical.map(c=>'assets/course-thumbnails/'+c.id+'.webp')));
 assert.equal(new Set(entries.map(x=>x.sha256)).size,55);
 for(const x of entries){
  const data=fs.readFileSync(x.path);
@@ -22,8 +22,8 @@ for(const x of entries){
 assert.match(script,/thumbFor/);assert.match(script,/picture.addEventListener/);assert.match(script,/fallback/);
 assert.doesNotMatch(script,/localStorage|Q\.push|fetch\(/);
 assert.doesNotThrow(()=>new vm.Script(script));
-assert.ok(html.includes('src="./course-thumbnails-v1.js?v=8439"'));
-assert.ok(html.indexOf('course-navigation-ui-v2.js?v=8439')<html.indexOf('course-thumbnails-v1.js?v=8439'));
+assert.ok(html.includes('src="./course-thumbnails-v1.js?v=8440"'));
+assert.ok(html.indexOf('course-navigation-ui-v2.js?v=8440')<html.indexOf('course-thumbnails-v1.js?v=8440'));
 assert.ok(sw.includes("'./course-thumbnails-v1.js'")&&sw.includes('"course-thumbnails-v1.js"'));
-assert.equal(JSON.parse(fs.readFileSync('build-meta.json','utf8')).version,'8.30.139');
+assert.equal(JSON.parse(fs.readFileSync('build-meta.json','utf8')).version,'8.30.140');
 console.log('PASS: 55 assets WebP SHA-256, mapping et cache PWA.');
