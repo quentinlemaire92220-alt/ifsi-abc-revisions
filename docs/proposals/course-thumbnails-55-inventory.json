@@ -1,0 +1,458 @@
+{
+  "version": "v7-webp-55",
+  "status": "INTEGRATED",
+  "designSource": "Planche de 18 cartes médicales validée le 26 octobre 2026",
+  "referenceImageCount": 18,
+  "courseCount": 55,
+  "qualityGates": [
+    "Une vignette distincte par cours ; pas de stéthoscope générique répété",
+    "Illustration médicale cohérente avec le sujet et sans valeurs inventées",
+    "Seule D1.1 Relation soignant-soigné peut montrer un personnage masculin reconnaissable comme le style de l'avatar propriétaire ; pas de prétention à une vraie ressemblance sans référence",
+    "Les numéros d'UE, étiquettes Provisoire et icônes de ressources sont générés par l'interface, jamais inclus dans le bitmap",
+    "Formats 1:1 / 4:5 compatibles, WEBP optimisé, contraste vérifié en thème clair et sombre",
+    "Assets conservés localement durant revue, pas d'intégration GitHub Pages avant vérification des 55 images",
+    "Ne changer aucune banque, cours, clé de QCM, flashcard ni document étudiant"
+  ],
+  "items": [
+    {
+      "courseId": "biomolecules",
+      "title": "Biomolécules",
+      "motif": "Hélice d'ADN et modèles moléculaires",
+      "targetAsset": "assets/course-thumbnails/biomolecules.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "cellules_tissus",
+      "title": "Cellules et tissus",
+      "motif": "Coupe de cellule eucaryote et organites",
+      "targetAsset": "assets/course-thumbnails/cellules_tissus.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "homeostasie",
+      "title": "Homéostasie",
+      "motif": "Thermorégulation : peau, thermomètre et boucle de contrôle",
+      "targetAsset": "assets/course-thumbnails/homeostasie.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "parasites_champignons",
+      "title": "Parasites & champignons",
+      "motif": "Helminthe et champignon au microscope",
+      "targetAsset": "assets/course-thumbnails/parasites_champignons.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "genetique",
+      "title": "Génétique",
+      "motif": "Chromosomes et chromosomes homologues",
+      "targetAsset": "assets/course-thumbnails/genetique.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "niveaux_organisation",
+      "title": "Niveaux d’organisation",
+      "motif": "Progression cellule, tissu, organe, organisme",
+      "targetAsset": "assets/course-thumbnails/niveaux_organisation.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "physiopathologie_infections",
+      "title": "Physiopathologie des infections",
+      "motif": "Inflammation locale, leucocytes et microbe",
+      "targetAsset": "assets/course-thumbnails/physiopathologie_infections.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "diagnostic_virologie",
+      "title": "Diagnostic virologique",
+      "motif": "Tube de prélèvement et analyse virale",
+      "targetAsset": "assets/course-thumbnails/diagnostic_virologie.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "virus",
+      "title": "Virus",
+      "motif": "Particule virale isolée et détails de capside",
+      "targetAsset": "assets/course-thumbnails/virus.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_urinaire",
+      "title": "Système urinaire",
+      "motif": "Reins, uretères et vessie",
+      "targetAsset": "assets/course-thumbnails/systeme_urinaire.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_endocrinien",
+      "title": "Système endocrinien",
+      "motif": "Glandes endocrines sur silhouette anatomique",
+      "targetAsset": "assets/course-thumbnails/systeme_endocrinien.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_immunitaire",
+      "title": "Système immunitaire",
+      "motif": "Lymphocyte, anticorps et agent pathogène",
+      "targetAsset": "assets/course-thumbnails/systeme_immunitaire.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_respiratoire",
+      "title": "Système respiratoire",
+      "motif": "Trachée et deux poumons anatomiques",
+      "targetAsset": "assets/course-thumbnails/systeme_respiratoire.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_cardiovasculaire",
+      "title": "Système cardiovasculaire",
+      "motif": "Cœur et circulation sanguine",
+      "targetAsset": "assets/course-thumbnails/systeme_cardiovasculaire.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "prevention_ias_asepsie",
+      "title": "Prévention des IAS et asepsie",
+      "motif": "Mains gantées, friction hydroalcoolique et hygiène",
+      "targetAsset": "assets/course-thumbnails/prevention_ias_asepsie.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_nerveux",
+      "title": "Système nerveux",
+      "motif": "Encéphale et arborisation neurale",
+      "targetAsset": "assets/course-thumbnails/systeme_nerveux.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "infections_neuro_meningees",
+      "title": "Infections neuro-méningées",
+      "motif": "Méninges et cerveau, vue en coupe",
+      "targetAsset": "assets/course-thumbnails/infections_neuro_meningees.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "calculs_doses_mathematiques",
+      "title": "Calculs de doses & mathématiques",
+      "motif": "Seringue graduée et calcul de dose sur tablette",
+      "targetAsset": "assets/course-thumbnails/calculs_doses_mathematiques.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_digestif",
+      "title": "Système digestif",
+      "motif": "Estomac, foie et intestins",
+      "targetAsset": "assets/course-thumbnails/systeme_digestif.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "appareil_locomoteur",
+      "title": "Système locomoteur",
+      "motif": "Os, articulation et muscle en coupe",
+      "targetAsset": "assets/course-thumbnails/appareil_locomoteur.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "traumatologie",
+      "title": "Traumatologie et fractures",
+      "motif": "Fracture de l'avant-bras et immobilisation",
+      "targetAsset": "assets/course-thumbnails/traumatologie.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "histoire_profession_infirmiere",
+      "title": "Histoire et identité de la profession infirmière",
+      "motif": "Livre d'histoire du soin et coiffe infirmière ancienne",
+      "targetAsset": "assets/course-thumbnails/histoire_profession_infirmiere.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "epistemologie_savoirs",
+      "title": "Épistémologie et savoirs infirmiers",
+      "motif": "Livres, microscope et méthode scientifique",
+      "targetAsset": "assets/course-thumbnails/epistemologie_savoirs.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "ethique_infirmiere",
+      "title": "Introduction à l’éthique infirmière",
+      "motif": "Balance de décision éthique et écoute",
+      "targetAsset": "assets/course-thumbnails/ethique_infirmiere.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "douleur",
+      "title": "Douleur aiguë et chronique",
+      "motif": "Échelle de douleur et trajet d'influx nerveux",
+      "targetAsset": "assets/course-thumbnails/douleur.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "parametres_vitaux",
+      "title": "Paramètres vitaux",
+      "motif": "Moniteur ECG, tensiomètre et thermomètre",
+      "targetAsset": "assets/course-thumbnails/parametres_vitaux.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "grands_brules",
+      "title": "Grands brûlés",
+      "motif": "Couche cutanée illustrant degrés de brûlure",
+      "targetAsset": "assets/course-thumbnails/grands_brules.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "infections_cutanees",
+      "title": "Infections cutanées",
+      "motif": "Coupe de peau avec inflammation localisée",
+      "targetAsset": "assets/course-thumbnails/infections_cutanees.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "diagnostic_bacteriologie",
+      "title": "Diagnostic bactériologique",
+      "motif": "Boîte de Petri et microscope",
+      "targetAsset": "assets/course-thumbnails/diagnostic_bacteriologie.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "infections_urinaires",
+      "title": "Infections urinaires",
+      "motif": "Voies urinaires et culture microbiologique",
+      "targetAsset": "assets/course-thumbnails/infections_urinaires.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "arthrose",
+      "title": "Arthrose",
+      "motif": "Genou et cartilage usé en coupe",
+      "targetAsset": "assets/course-thumbnails/arthrose.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "chirurgie_orthopedique",
+      "title": "Chirurgie orthopédique",
+      "motif": "Implant orthopédique et articulation opérée",
+      "targetAsset": "assets/course-thumbnails/chirurgie_orthopedique.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "rhumatismes_inflammatoires",
+      "title": "Rhumatismes inflammatoires",
+      "motif": "Articulation gonflée, membrane synoviale",
+      "targetAsset": "assets/course-thumbnails/rhumatismes_inflammatoires.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "pathologies_microcristallines_osteoporose",
+      "title": "Pathologies microcristallines et ostéoporose",
+      "motif": "Cristaux intra-articulaires et os poreux",
+      "targetAsset": "assets/course-thumbnails/pathologies_microcristallines_osteoporose.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "competences_psychosociales",
+      "title": "Compétences psychosociales",
+      "motif": "Bulles de conversation, écoute et collaboration",
+      "targetAsset": "assets/course-thumbnails/competences_psychosociales.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "methodes_travail_reussite",
+      "title": "Méthodes de travail et aide à la réussite",
+      "motif": "Carnet de travail, agenda et marque-pages",
+      "targetAsset": "assets/course-thumbnails/methodes_travail_reussite.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "vaccination_prs",
+      "title": "Vaccination — travail PRS",
+      "motif": "Seringue vaccinale et bouclier immunitaire",
+      "targetAsset": "assets/course-thumbnails/vaccination_prs.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "infections_pulmonaires_bacteriennes",
+      "title": "Infections pulmonaires bactériennes",
+      "motif": "Poumon avec foyer alvéolaire bactérien",
+      "targetAsset": "assets/course-thumbnails/infections_pulmonaires_bacteriennes.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "infections_respiratoires_virales",
+      "title": "Infections respiratoires virales",
+      "motif": "Voies aériennes et particules virales",
+      "targetAsset": "assets/course-thumbnails/infections_respiratoires_virales.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "ist_hors_vih",
+      "title": "IST hors VIH",
+      "motif": "Prévention IST : symbole médical et dépistage",
+      "targetAsset": "assets/course-thumbnails/ist_hors_vih.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "introduction_droit",
+      "title": "Institutions judiciaires et grands principes du droit",
+      "motif": "Code juridique et colonnes de tribunal",
+      "targetAsset": "assets/course-thumbnails/introduction_droit.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "psychologie_sante",
+      "title": "Psychologie de la santé",
+      "motif": "Silhouette de cerveau avec pensées et émotions",
+      "targetAsset": "assets/course-thumbnails/psychologie_sante.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "pharmacologie",
+      "title": "Introduction à la pharmacologie",
+      "motif": "Médicaments, flacons et forme galénique",
+      "targetAsset": "assets/course-thumbnails/pharmacologie.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "administration_medicamenteuse",
+      "title": "Initiation à l’administration médicamenteuse",
+      "motif": "Perfusion et pompe à injection",
+      "targetAsset": "assets/course-thumbnails/administration_medicamenteuse.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "systeme_reproducteur",
+      "title": "Système reproducteur",
+      "motif": "Organes reproducteurs dans une silhouette anatomique",
+      "targetAsset": "assets/course-thumbnails/systeme_reproducteur.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "plaies_pansements",
+      "title": "Plaies et pansements — Partie 1/2",
+      "motif": "Pansement stérile appliqué sur plaie",
+      "targetAsset": "assets/course-thumbnails/plaies_pansements.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "stomatotherapie",
+      "title": "Stomatothérapie",
+      "motif": "Appareillage de stomie et peau péristomiale",
+      "targetAsset": "assets/course-thumbnails/stomatotherapie.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "droits_patients",
+      "title": "Droits des patients",
+      "motif": "Balance juridique sur livre des droits",
+      "targetAsset": "assets/course-thumbnails/droits_patients.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "pssm",
+      "title": "Premiers secours en santé mentale (PSSM)",
+      "motif": "Premiers secours en santé mentale, dialogue et soutien",
+      "targetAsset": "assets/course-thumbnails/pssm.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "sante_mondiale_sante_france",
+      "title": "Santé mondiale et santé en France",
+      "motif": "Globe, services de santé et carte de France",
+      "targetAsset": "assets/course-thumbnails/sante_mondiale_sante_france.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "responsabilite_exercice_professionnel",
+      "title": "Responsabilité, exercice professionnel, confidentialité et secret professionnel",
+      "motif": "Dossier de soin sécurisé et cadenas",
+      "targetAsset": "assets/course-thumbnails/responsabilite_exercice_professionnel.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "d1_communication_td1",
+      "title": "La communication — TD1",
+      "motif": "Échange verbal soignant-patient sans portrait identifiable",
+      "targetAsset": "assets/course-thumbnails/d1_communication_td1.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "d1_posture_professionnelle_td2",
+      "title": "Posture professionnelle et contexte de soin — TD2",
+      "motif": "Dossier clinique, blouse et stéthoscope",
+      "targetAsset": "assets/course-thumbnails/d1_posture_professionnelle_td2.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "d1_bientraitance",
+      "title": "La bientraitance — PROVISOIRE",
+      "motif": "Deux mains protectrices et symbole du respect",
+      "targetAsset": "assets/course-thumbnails/d1_bientraitance.webp",
+      "referenceAvailable": false,
+      "productionStatus": "integrated_v7_20261026"
+    },
+    {
+      "courseId": "d1_relation_soignant_soigne_ecoute_active",
+      "title": "Relation soignant-soigné et écoute active — PROVISOIRE",
+      "motif": "Personnage masculin aux cheveux de l'univers IFSI ABC échangeant avec patiente âgée",
+      "targetAsset": "assets/course-thumbnails/d1_relation_soignant_soigne_ecoute_active.webp",
+      "referenceAvailable": true,
+      "productionStatus": "integrated_v7_20261026"
+    }
+  ]
+}
