@@ -2642,9 +2642,10 @@
       },
       "blockers": [
         {
-          "resource": "td_support",
+          "resource": "support",
           "reason": "official_support_missing",
-          "detail": "Support propre au TD non reçu ; relancer E-Campus/Yikiforma selon disponibilité."
+          "detail": "Support propre au TD non reçu ; relancer E-Campus/Yikiforma selon disponibilité.",
+          "part": "TD"
         },
         {
           "resource": "audio",
