@@ -1,5 +1,5 @@
 {
-  "version": "8.30.135",
+  "version": "8.30.136",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,12 +7,12 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Inventaire V8.30.135 : 179 MP3 dont 10 nouveaux sur cinq cours ; 169 anciens fichiers conservés. Sept MP3 supplémentaires en réserve privée non publiés.",
+  "note": "V8.30.136 : 186 MP3, dont 7 enregistrements provisoires publiés à partir des sources partielles (support officiel absent ou incomplet). Les 179 épisodes historiques sont conservés ; lecture étudiant des MP3 D1 à vérifier via permissions Drive.",
   "expectedTotals": {
     "courses": 55,
     "sheets": 72,
     "infographics": 184,
-    "vocals": 179,
+    "vocals": 186,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
