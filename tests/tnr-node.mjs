@@ -367,13 +367,23 @@ assert(vocalsRelease8393.length===audit821.expectedTotals.vocals,'Inventaire des
 assert(vocalsRelease8393.length>=75,'La série audio V8.30.93 doit compter 75 enregistrements');
 assert(new Set(vocalsRelease8393.map(v=>v.id)).size===vocalsRelease8393.length,'Doublon ID dans le catalogue vocal');
 assert(new Set(vocalsRelease8393.map(v=>v.driveId)).size===vocalsRelease8393.length,'Doublon Drive ID dans le catalogue vocal');
+const authorizedAudioExtensions=json('docs/course-deliveries.json').audioSupplements||[];
 for(const [courseId,n] of Object.entries(expectedAudioByCourse)){
   const added=vocalsRelease8393.filter(v=>v.courseId===courseId);
-  assert(added.length===n,`Série ${courseId} incomplète : ${added.length}/${n}`);
-  assert(JSON.stringify(added.map(x=>x.number).sort((a,b)=>a-b))===JSON.stringify(Array.from({length:n},(_,i)=>i+1)),`Ordre vocal incorrect : ${courseId}`);
+  const extra=added.filter(v=>v.number>n);
+  const explicitIds=new Set(authorizedAudioExtensions.filter(s=>
+   s.courseId===courseId&&s.publicationApproval?.status==='approved'&&
+   s.publicationApproval?.authorization==='explicit_go_publication'&&
+   s.publicationApproval?.scope==='audio_supplement').flatMap(s=>s.vocalIds||[]));
+  assert(extra.every(v=>explicitIds.has(v.id)),`Nouvel épisode non approuvé : ${courseId}`);
+  const expected=n+extra.length;
+  assert(added.length===expected,`Série ${courseId} incomplète : ${added.length}/${expected}`);
+  assert(JSON.stringify(added.map(x=>x.number).sort((a,b)=>a-b))===
+   JSON.stringify(Array.from({length:expected},(_,i)=>i+1)),`Ordre vocal incorrect : ${courseId}`);
   assert(added.every(v=>v.mime==='audio/mpeg'&&/^[A-Za-z0-9_-]{15,}$/.test(v.driveId)&&v.title&&v.course),'MP3 ou métadonnée invalide : '+courseId);
   const course=registry.courses.find(c=>c.id===courseId);
-  assert(course&&course.audioStatus==='available'&&course.audioCount===n&&course.audioFolderUrl?.startsWith('https://drive.google.com/drive/folders/'),'Rattachement ou statut Drive invalide : '+courseId);
+  assert(course&&course.audioStatus==='available'&&course.audioCount===expected&&
+   course.audioFolderUrl?.startsWith('https://drive.google.com/drive/folders/'),'Rattachement ou statut Drive invalide : '+courseId);
 }
 console.log('✅ V8.30.93 : 17 nouveaux MP3, catalogue 75 vocaux, IDs uniques et cours alignés');
 
