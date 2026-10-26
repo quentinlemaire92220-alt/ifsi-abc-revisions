@@ -1,3 +1,9 @@
+# Verrou prioritaire de trame — 26/10/2026
+
+Pour toute fiche de révision ou QCM, ChatGPT et Work doivent lire et appliquer `docs/PDF_TEMPLATE_CONTRACT_V3.md` et `docs/pdf-template-policy-v3.json` AVANT de produire ou réparer. Ouvrir les PDF Communication référencés et vérifier leurs empreintes ; référence inaccessible = arrêt avant toute conformité déclarée. Le contrôle technique V3, la revue intégrale comparée au modèle et le GO sur les octets finaux sont distincts et bloquants. Conserver l’historique ; ne pas migrer les PDF inchangés. Le reçu `templateConformance` de chaque PDF modifié entre dans le digest du lot. Ne jamais fabriquer une revue ou réécrire automatiquement un accord après correction.
+
+---
+
 # Contrôle graphique V2 — nouveaux cours (25/10/2026)
 
 Avant toute approbation graphique, appliquer [le contrôle V2](docs/GRAPHIC_QA_V2.md) sur le PDF **réel et intégral** : positions/tailles, bandeaux violets haut/bas, cases QCM à gauche, sections finales et rendu de toutes les pages. Le rapport technique ne remplace jamais la comparaison visuelle humaine au modèle V5.3. Contrôle réservé aux nouveaux PDF, sans modifier l'historique ni les TNR bloquants. Première expérimentation privée : D1.1 Bientraitance, source orale uniquement, encore « À traiter ».

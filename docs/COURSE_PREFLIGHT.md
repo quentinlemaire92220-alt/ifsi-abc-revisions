@@ -1,3 +1,5 @@
+> Priorité 26/10/2026 : appliquer aussi [le contrat de trame V3](PDF_TEMPLATE_CONTRACT_V3.md), références figées et revue liée aux octets. Les contrôles historiques ci-dessous restent obligatoires.
+
 # Préflight de préparation et de publication
 
 Exécuter les contrôles ciblés avant l’ouverture d’une PR, chaque envoi d’un candidat corrigé et toute publication. Ils ne remplacent ni le TNR complet, ni la revue pédagogique, ni l’accord humain. Le lanceur ne modifie aucun contenu et n’écrit aucune approbation.

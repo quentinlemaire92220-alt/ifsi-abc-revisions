@@ -43,3 +43,11 @@ assert.throws(()=>validateChangedDeliveries({courses:[]},{courses:[uncovered]},d
 console.log('✅ 19 scénarios : validation complète, GO distinct, portée, empreinte, QCM, image, PDF, vocabulaire, MP3, fichiers examinés et anciens cours inchangés.');
 
 await import("./official-course-reconciliation-test.mjs");
+
+// Une preuve graphique nouvelle ou modifiée ne peut réutiliser l’ancien accord.
+const withTemplate=clone(approved);withTemplate.templateConformance={contract:'ifsi_pdf_template_v3',artifacts:{sheet:{artifactSha256:'a'.repeat(64),pagesChecked:[1,2]}}};
+assert.throws(()=>validatePublicationApproval('example',withTemplate,bundleDigest(publicationBundle('example',withTemplate,data))),/changé après validation/);
+withTemplate.publicationApproval.bundleSha256=bundleDigest(publicationBundle('example',withTemplate,data));
+withTemplate.templateConformance.artifacts.sheet.pagesChecked=[1];
+assert.throws(()=>validatePublicationApproval('example',withTemplate,bundleDigest(publicationBundle('example',withTemplate,data))),/changé après validation/);
+console.log('PASS reçu de trame inclus dans le digest : ajout et modification invalident l’ancien GO.');

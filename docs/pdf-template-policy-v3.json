@@ -1,0 +1,27 @@
+{
+  "contract": "ifsi_pdf_template_v3",
+  "references": {
+    "sheet": {
+      "id": "communication_written_v5.3_2026-10-24",
+      "path": "assets/communication-td1/UE_D1_Communication_TD1_Fiche_de_revision.pdf",
+      "sha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+      "pageCount": 19
+    },
+    "qcm": {
+      "id": "communication_qcm_2026-10-24",
+      "path": "assets/communication-td1/UE_D1_Communication_TD1_QCM_50_avec_corriges.pdf",
+      "sha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+      "pageCount": 23
+    }
+  },
+  "geometry": {
+    "topBandHeightPt": 45.35,
+    "bottomBandHeightPt": 42.52,
+    "bandTolerancePt": 3,
+    "purpleRgb": [94, 53, 135],
+    "colorTolerance": 0.025,
+    "bodyMinimumPt": 9,
+    "fontFamily": "Lato"
+  },
+  "reviewChecks": ["MODEL_COMPARISON", "BANDS_AND_TYPOGRAPHY", "MARGINS_AND_HIERARCHY", "COLOR_AND_BOXES", "NO_CLIPPING_OR_OVERLAP", "READABLE_AT_100_AND_200_PERCENT", "STRUCTURE_AND_PAGINATION"]
+}

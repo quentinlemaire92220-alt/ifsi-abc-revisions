@@ -1,3 +1,9 @@
+# Verrou prioritaire de trame — 26/10/2026
+
+Pour toute fiche de révision ou QCM, ChatGPT et Work doivent lire et appliquer `docs/PDF_TEMPLATE_CONTRACT_V3.md` et `docs/pdf-template-policy-v3.json` AVANT de produire ou réparer. Ouvrir les PDF Communication référencés et vérifier leurs empreintes ; référence inaccessible = arrêt avant toute conformité déclarée. Le contrôle technique V3, la revue intégrale comparée au modèle et le GO sur les octets finaux sont distincts et bloquants. Conserver l’historique ; ne pas migrer les PDF inchangés. Le reçu `templateConformance` de chaque PDF modifié entre dans le digest du lot. Ne jamais fabriquer une revue ou réécrire automatiquement un accord après correction.
+
+---
+
 ## Contrôle obligatoire avant intégration en application
 
 Lire `docs/COURSE_PREPARATION_V1.md`. Pour un nouveau cours encore en QA, déposer le lot dans le Drive propriétaire privé, conserver la banque en `data/course-preparations/` et la fiche de suivi dans `docs/course-preparations.json`. Ne rien inscrire dans `course-registry-v741.json`, `sheets-*.json`, `questions-*.json`, `vocabulaire-v1.json`, `docs/course-deliveries.json` ou les `assets/` de GitHub Pages avant la validation complète et le GO distinct. Une transcription tronquée conserve son statut de réserve. Lancer `node tests/course-preparation-stage.mjs` ; la publication finale exige les TNR complets, les contrôles visuels, la signature du pack et une vérification du site, puis l'archivage des sources sans suppression.
@@ -16,7 +22,7 @@ Contrôle bloquant pré-publication : inspecter texte extrait, métadonnées PDF
 # Skill de production IFSI ABC — fiche écrite V5.3
 
 **Version prioritaire à compter du 24/10/2026, pour ChatGPT et Work.**
-Lire `docs/WRITTEN_REVISION_V153.md` avant toute production. Utiliser le PDF privé V5.3 « UE D1.1 — La communication » comme **modèle de présentation** lorsqu'il est accessible, jamais comme source médicale.
+Lire `docs/WRITTEN_REVISION_V153.md` avant toute production. Utiliser le PDF privé V5.3 « UE D1.1 — La communication » comme **modèle de présentation obligatoire**, jamais comme source médicale.
 
 ## Procédure unique reproductible
 1. Identifier cours, UE/partie, support officiel, captures provisoires et toutes les transcriptions pertinentes ; relever les incohérences de classement.
