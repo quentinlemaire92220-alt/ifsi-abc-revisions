@@ -29,7 +29,8 @@ def validate_qcm(text,rows):
     expected_numbers=[q['number'] for q in rows]
     if seen!=expected_numbers:
         # Diagnostics structurels seulement : ne pas exposer les questions du brouillon.
-        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers},ensure_ascii=False))
+        patterns=[re.sub(r'[A-Za-zÀ-ÿ]','x',line.strip()[:28]) for line in questions.splitlines() if re.match(r'(?i)^\s*(?:q(?:uestion)?|n[°º]|[0-9]{1,2}[.):-])',line)][:55]
+        print('QCM_PDF_NUMBERING_DIAGNOSTIC',json.dumps({'expected_count':len(expected_numbers),'found_count':len(seen),'found_numbers':seen,'expected_numbers':expected_numbers,'heading_shapes':patterns},ensure_ascii=False))
     assert seen==expected_numbers,'Questions manquantes/dupliquées'
     for i,(q,m) in enumerate(zip(rows,blocks)):
         actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
