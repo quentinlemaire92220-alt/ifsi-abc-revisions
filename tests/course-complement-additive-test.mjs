@@ -1,3 +1,4 @@
+import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
@@ -50,7 +51,7 @@ assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entr
  'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
-for(const s of oldSheets)assert.deepEqual(sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url),s);
+for(const s of oldSheets){const next=sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url);if(!next&&read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(s.courseId,base);else assert.deepEqual(next,s);}
 const part=delivery.partDeliveries.find(p=>p.deliveryMode==='existing_course_complement');assert.ok(part);
 assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId).primaryRevision,false);
 const rightsAdded=addedVocals.filter(v=>v.courseId==='droits_patients').map(v=>v.id);

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.141",
+  "version": "8.30.142",
   "courses": [
     {
       "id": "biomolecules",
@@ -1135,7 +1135,7 @@
     },
     {
       "id": "d1_relation_soignant_soigne_ecoute_active",
-      "label": "Relation soignant-soigné et écoute active — PROVISOIRE",
+      "label": "Relation soignant-soigné et écoute active",
       "aliases": [
         "Relation soignant soigné",
         "Écoute active",
@@ -1147,13 +1147,13 @@
       "teachingUnit": "D1.1",
       "semester": "S1",
       "part": "01",
-      "officialSupport": false,
-      "sourceStatus": "provisional",
-      "provisional": true,
-      "sourceNote": "Support élaboré à partir des deux transcriptions orales PT01 et PT02 ; diaporama officiel non reçu.",
-      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_40_Corriges.pdf",
-      "qcmPdfQuestionCount": 40,
-      "flashcardTarget": 40,
+      "officialSupport": true,
+      "sourceStatus": "active",
+      "provisional": false,
+      "sourceNote": "Support officiel de 60 diapositives rapproché des deux transcriptions disponibles et du lot de révision. Les séquences vidéo montrées en classe ne sont pas reproduites ni certifiées.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_48_Corriges_20261026.pdf",
+      "qcmPdfQuestionCount": 48,
+      "flashcardTarget": 48,
       "authoredFlashcards": true,
       "audioStatus": "available",
       "audioCount": 1,
@@ -1168,6 +1168,17 @@
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf",
           "type": "flashcards",
           "cardCount": 40
+        },
+        {
+          "label": "Fiche de révision — 21 pages",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_21p_20261026.pdf",
+          "type": "revision"
+        },
+        {
+          "label": "Flashcards — 48 cartes",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_48_20261026.pdf",
+          "type": "flashcards",
+          "cardCount": 48
         }
       ],
       "audioFolderUrl": "https://drive.google.com/drive/folders/1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj"

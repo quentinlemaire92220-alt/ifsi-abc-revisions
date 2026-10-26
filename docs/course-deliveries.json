@@ -2380,16 +2380,15 @@
       "part": "01",
       "validated": true,
       "status": "partial",
-      "deliveryMode": "source_limited_first_release",
+      "deliveryMode": "first_release",
       "packFormat": "written_v1",
       "publicationHost": "github_pages",
-      "provisional": true,
-      "pedagogicalValidated": false,
-      "provisionalReason": "Diaporama officiel annoncé en séance mais non reçu ; deux transcriptions orales disponibles. Cette publication ne prétend pas à une revue scientifique exhaustive.",
-      "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
-      "qcmPublicAssetSha256": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
-      "flashcardPublicAssetSha256": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+      "provisional": false,
+      "pedagogicalValidated": true,
+      "provisionalReassessmentRequired": false,
+      "publicAssetSha256": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411",
+      "qcmPublicAssetSha256": "dbe72d0bc1dba58cdd4adb943c95d079cc624250827dad05f074730bc637102c",
+      "flashcardPublicAssetSha256": "014c8f7e2fe4093c60af4f35c6c052b4da12c21cc5680e3b4a1d6f04e87ed5b5",
       "driveFolderId": "1ySajJqAnw1bmyXl393VxP1-eJ0sHo8Ul",
       "sheetResourceId": "d1_relation_ecoute_written_p01",
       "sheetResourceIds": [
@@ -2401,47 +2400,46 @@
       "qcmDriveId": "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx",
       "flashcardDriveId": "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR",
       "qcmBank": "data/course-banks/d1_relation_soignant_soigne_ecoute_active.json",
-      "qcmCount": 40,
-      "flashcardCount": 40,
-      "vocabularyCount": 25,
+      "qcmCount": 48,
+      "flashcardCount": 48,
+      "vocabularyCount": 34,
       "vocals": [
         "d1_relation_soignant_soigne_ecoute_active_p01_vocal_01"
       ],
       "scriptsPreparedCount": 1,
       "requestedVocals": true,
       "sourceAudit": {
-        "officialChecked": false,
-        "officialSupportMissing": true,
-        "oralStatus": "unverified",
-        "oralCoverageExhaustive": false,
+        "officialChecked": true,
+        "officialSupportMissing": false,
+        "oralStatus": "complete",
+        "oralCoverageExhaustive": true,
         "recordingTailTruncated": false,
         "scopedReleaseAccepted": true,
-        "scopedReviewBasis": "PT01 environ 1 h 14 et PT02 environ 34 min ; clôtures de séance présentes ; diaporama de cours non reçu, contenu vidéo non inspecté. Validation limitée aux deux transcriptions.",
+        "scopedReviewBasis": "Rapprochement des notions essentielles du support officiel de 60 diapositives avec les deux transcriptions disponibles ; vidéos projetées non réexaminées. Aucun contrôle de l’enregistrement audio source n’est revendiqué.",
         "speakerStudentSeparated": true,
         "teachingNotesPrivateTrace": true,
         "notesWithoutTimestamps": true,
         "externalSourcesCount": 0,
         "externalAuthorization": "not_requested",
-        "officialSupportPreservedPrivately": false,
+        "officialSupportPreservedPrivately": true,
         "missingSources": [
-          "written_official_support",
           "classroom_videos"
         ]
       },
       "writtenCoverage": {
         "expectedEssential": 8,
         "coveredEssential": 8,
-        "prioritySourceReference": "Objectifs d'enseignement relevés dans l'oral, distingués de trois axes déduits pour la pratique.",
+        "prioritySourceReference": "Matrice privée des huit axes essentiels : communication, besoin et intention, Porter, Rogers, entretien, non-verbal et toucher, émotions, accompagnement et relais.",
         "explicitVsInferredPrioritiesSeparated": true,
         "explanationsNotOvercompressed": true,
-        "disciplinaryReview": "provisional_oral_only",
-        "disciplinaryReviewScope": "Objectifs et notions présents dans les deux transcriptions reçues ; comparaison impossible avec les diapositives officielles absentes."
+        "disciplinaryReview": "approved",
+        "disciplinaryReviewScope": "Notions essentielles confrontées au support officiel et aux transcriptions ; aucune prétention de validation des vidéos de séance."
       },
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+        "pdfSha256": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411",
         "pageSize": "A4",
-        "pageCount": 16,
+        "pageCount": 21,
         "allPagesRendered": true,
         "topAndBottomPurpleBandsEveryPage": true,
         "noOverlaidHeaders": true,
@@ -2455,27 +2453,29 @@
       },
       "writtenModelReference": "communication_written_v5.3_2026-10-24",
       "lexicon": {
-        "termCount": 25,
+        "termCount": 34,
         "textSelectable": true,
         "checked": true
       },
       "artifactSha256s": {
-        "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
-        "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
-        "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+        "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411",
+        "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx": "dbe72d0bc1dba58cdd4adb943c95d079cc624250827dad05f074730bc637102c",
+        "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR": "014c8f7e2fe4093c60af4f35c6c052b4da12c21cc5680e3b4a1d6f04e87ed5b5",
         "1fS_P-90FE74vjVa6CGhyysm46VYEATs_": "e49d8996c509b727949f190bf1540edac612c1710ef6d1bdd4077169dfbbc260"
       },
       "publishedVerification": {
-        "status": "PENDING_DEPLOYMENT",
-        "source": "github_pages_file_staged",
-        "pdfSha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb"
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411",
+        "pageCount": 21,
+        "verifiedAt": "2026-10-26T15:36:10+01:00"
       },
       "visualOwnerReview": {
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
         "method": "pdf_all_pages_checked",
-        "pagesChecked": 16,
-        "reviewedAt": "2026-10-25T12:26:00+01:00",
+        "pagesChecked": 21,
+        "reviewedAt": "2026-10-26T15:36:10+01:00",
         "reviewerDecision": "explicit_graphic_acceptance",
         "criteria": {
           "NO_GENERATED_IMAGES": "PASS",
@@ -2484,57 +2484,51 @@
           "NO_TECHNICAL_NOTES": "PASS"
         },
         "reviewedPdfSha256s": {
-          "d1_relation_ecoute_written_p01": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb"
-        },
-        "acceptanceBasis": "Utilisateur : « Je valide » après présentation du lot exact de 16+20+9 pages, 25/10/2026 ; accord sur la diffusion en statut PROVISOIRE, sans prétendre à une vérification du support officiel absent."
+          "d1_relation_ecoute_written_p01": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411"
+        }
       },
       "blockers": [
         {
-          "resource": "support",
-          "reason": "official_support_missing",
-          "detail": "Diaporama officiel non reçu ; rapprocher dès réception."
-        },
-        {
           "resource": "videos",
           "reason": "teacher_videos_unavailable",
-          "detail": "Séquences projetées en séance non vérifiées."
+          "detail": "Les vidéos projetées servent de situations illustratives ; elles ne sont ni reproduites ni annoncées comme contrôlées."
         }
       ],
       "publicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-25T12:26:00+01:00",
-        "bundleSha256": "c03e83da4b7ba3ff95001d55c6f8c3dbad6bfd46649f3b468214899ff0d416df",
+        "approvedAt": "2026-10-26T15:36:10+01:00",
+        "bundleSha256": "204c04714d8d67a5c8a69e1152e95a4db62dc1d62f6b60908ce2daca98c4d5af",
         "mergeDeploymentCondition": "all_tnr_green",
-        "provisionalOnly": true,
-        "approvalBasis": "GO initial de publication suivi d'une validation graphique et pédagogique limitée au statut provisoire (« Je valide »)."
+        "provisionalOnly": false
       },
       "publicArtifacts": {
         "sheet": {
-          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf",
-          "sha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
-          "pageCount": 16,
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_21p_20261026.pdf",
+          "sha256": "01d9a028869139f924a3d7ee9b68d16a29b785bdaf23c109fa9ef70a8ff89411",
+          "pageCount": 21,
           "artifactId": "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD"
         },
         "qcm": {
-          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_40_Corriges.pdf",
-          "sha256": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_48_Corriges_20261026.pdf",
+          "sha256": "dbe72d0bc1dba58cdd4adb943c95d079cc624250827dad05f074730bc637102c",
           "pageCount": 20,
           "artifactId": "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx"
         },
         "flashcards": {
-          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf",
-          "sha256": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
-          "pageCount": 9,
+          "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_48_20261026.pdf",
+          "sha256": "014c8f7e2fe4093c60af4f35c6c052b4da12c21cc5680e3b4a1d6f04e87ed5b5",
+          "pageCount": 16,
           "artifactId": "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR"
         }
       },
       "sourceBasis": {
-        "kind": "oral_transcript",
-        "nativeSupportAvailable": false,
-        "reconciled": false,
-        "transcriptCount": 2
+        "kind": "official_support",
+        "nativeSupportAvailable": true,
+        "reconciled": true,
+        "transcriptCount": 2,
+        "officialSlideCount": 60
       },
       "folders": {
         "01": "1afiCEYvTdo0MqshEPXzXKxUKnio8v5-b",
@@ -2544,6 +2538,50 @@
         "05": "1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj",
         "06": "15KixhpwmFIU3vbLqAVMXLvTwf-XitORD",
         "07": "1MHnyURqsVfy95ozT0SAY_M6vuxl006u7"
+      },
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "partial",
+          "qcmQuestionIds": [
+            "D1_RELATION_ECOUTE_041",
+            "D1_RELATION_ECOUTE_042",
+            "D1_RELATION_ECOUTE_043",
+            "D1_RELATION_ECOUTE_044",
+            "D1_RELATION_ECOUTE_045",
+            "D1_RELATION_ECOUTE_046",
+            "D1_RELATION_ECOUTE_047",
+            "D1_RELATION_ECOUTE_048"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "vocalIds": []
+        }
+      ],
+      "reconciliation": {
+        "type": "provisional_to_official_v1",
+        "previousBundleSha256": "c03e83da4b7ba3ff95001d55c6f8c3dbad6bfd46649f3b468214899ff0d416df",
+        "previousArtifacts": {
+          "sheet": {
+            "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf",
+            "sha256": "468f7ad7ebdfa26e8b53cf02b848054c0551aefd36bb8aca7ac6411a81e0a6fb",
+            "pageCount": 16,
+            "artifactId": "1CUZj_axgR1PQjO4jPS84Op9yDGEmPGUD"
+          },
+          "qcm": {
+            "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_QCM_40_Corriges.pdf",
+            "sha256": "43d1ae24ab8a3ad3abd10fbb31883ac4bd22bf73c882310fccd48093cba8faf7",
+            "pageCount": 20,
+            "artifactId": "1Viu8x1lY1tF0GXLNxgCcsHs_Dg9Rmxjx"
+          },
+          "flashcards": {
+            "path": "assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf",
+            "sha256": "d3a153611fffd268fe888c70dda89c5c45dbb8e3dabb792b993f8bc0911a43b7",
+            "pageCount": 9,
+            "artifactId": "1KXvWKMUSWu0KBRsV30HmTCQapmaYKohR"
+          }
+        }
       }
     },
     {

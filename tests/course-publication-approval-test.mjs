@@ -41,3 +41,5 @@ const uncovered=clone(approved);delete uncovered.artifactSha256s.script01;
 uncovered.publicationApproval.bundleSha256=bundleDigest(publicationBundle('example',uncovered,data));
 assert.throws(()=>validateChangedDeliveries({courses:[]},{courses:[uncovered]},data,data),/empreinte du fichier examiné absente/);
 console.log('✅ 19 scénarios : validation complète, GO distinct, portée, empreinte, QCM, image, PDF, vocabulaire, MP3, fichiers examinés et anciens cours inchangés.');
+
+await import("./official-course-reconciliation-test.mjs");

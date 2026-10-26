@@ -1,3 +1,4 @@
+import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 // Sécurisation P0 : teste la DIFF RÉELLE vs main, non un jeu de données fictif.
 // Aucun nom/ID de source de travail n'est ajouté à ce fichier public.
 import assert from 'node:assert/strict';
@@ -133,7 +134,8 @@ for(const course of registryForWithdrawal)if(audioOnlyUpdates.has(course.id)){
 for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  const oldCourse=oldReg.courses.find(c=>c.id===course.id);
  assert.ok(oldCourse,'Complément sans cours historique');
- preserveApprovedAddition(oldCourse,course,oldMan.courses.find(c=>c.courseId===course.id),currentMan.courses.find(c=>c.courseId===course.id));
+ if(currentMan.courses.find(c=>c.courseId===course.id)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(course.id,base);
+ else preserveApprovedAddition(oldCourse,course,oldMan.courses.find(c=>c.courseId===course.id),currentMan.courses.find(c=>c.courseId===course.id));
  Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));
 }
 assert.deepEqual(registryForWithdrawal,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
