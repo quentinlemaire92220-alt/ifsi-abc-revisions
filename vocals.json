@@ -1998,5 +1998,61 @@
     "provisional": true,
     "provisionalReason": "support officiel partiel ; portée limitée aux complications du décubitus",
     "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_p01_vocal_02",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 2,
+    "title": "Hygiène des mains, EPI et accidents d’exposition au sang",
+    "driveId": "106qJX0odjG9615tKMWH3sbXQtp31Gt_0",
+    "mime": "audio/mpeg",
+    "durationSeconds": 437.52,
+    "partId": "p01",
+    "partNumber": 2,
+    "release": "8.30.137",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_p01_vocal_03",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 3,
+    "title": "Excrétas, environnement et précautions complémentaires",
+    "driveId": "1rO20pudK42zObVarH2F1K80XnNl31NiA",
+    "mime": "audio/mpeg",
+    "durationSeconds": 448.2,
+    "partId": "p01",
+    "partNumber": 3,
+    "release": "8.30.137",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "histoire_profession_infirmiere_p01_vocal_02",
+    "courseId": "histoire_profession_infirmiere",
+    "course": "Histoire et identité de la profession infirmière",
+    "number": 2,
+    "title": "Professionnalisation, sciences infirmières et gouvernance",
+    "driveId": "1Qp3TYpPf8KpPJRnlLf6IYVE2EJ8XNcwA",
+    "mime": "audio/mpeg",
+    "durationSeconds": 452.904,
+    "partId": "p01",
+    "partNumber": 2,
+    "release": "8.30.137",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "droits_patients_2026_07",
+    "courseId": "droits_patients",
+    "course": "Droits des patients",
+    "number": 7,
+    "title": "Usagers, réclamations, médiation et commission des usagers",
+    "driveId": "1T-agzUKmQJ2rZdS5b7I7j71xMrFeyhYq",
+    "mime": "audio/mpeg",
+    "durationSeconds": 442.992,
+    "partId": "p01",
+    "partNumber": 7,
+    "release": "8.30.137",
+    "syntheticSpeech": true
   }
 ]
