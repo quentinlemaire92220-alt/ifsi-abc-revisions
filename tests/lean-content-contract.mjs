@@ -4,6 +4,15 @@ import assert from 'node:assert/strict';
 const filled=v=>typeof v==='string'&&v.trim().length>0;
 const bannedFront=/^(?:cite|citer|liste|lister)\b/i;
 
+export function isExplicitRecallPrompt(value){
+ const front=String(value||'').trim();
+ if(!filled(front)||bannedFront.test(front))return false;
+ // A targeted recall instruction is equivalent to an active question.
+ // Vague listing commands remain forbidden.
+ return front.endsWith('?') ||
+  /^(?:Donne un exemple de|Nomme (?:les|des))\s+\S.{5,}\.$/iu.test(front);
+}
+
 export function validateLeanQuestions(questions){
  assert.ok(Array.isArray(questions)&&questions.length>0,'Banque QCM lean vide');
  const ids=new Set();
@@ -33,12 +42,7 @@ export function validateLeanFlashcards(cards){
   assert.ok(filled(card.id)&&!ids.has(card.id),'Flashcard ID absent/dupliqué');
   ids.add(card.id);
   const front=String(card.front||'').trim();
-  // Une formulation de rappel active et ciblée constitue une demande explicite :
-  // « Nomme les trois dimensions de la TGS. » ou « Nomme des stratégies… ».
-  // Les deux formulations figurent déjà à l'identique dans la banque et le PDF ;
-  // les réécrire dans la seule banque casserait la correspondance des supports.
-  const concreteRecall=/^(?:Donne un exemple de|Nomme (?:les|des))\s+\S.{5,}\.$/iu.test(front);
-  assert.ok(filled(front)&&(front.endsWith('?')||concreteRecall),'Flashcard : question ou rappel explicite manquant : '+card.id);
+  assert.ok(isExplicitRecallPrompt(front),'Flashcard : question ou rappel explicite manquant : '+card.id);
   assert.ok(!bannedFront.test(card.front.trim()),'Flashcard : consigne vague « citer/lister » : '+card.id);
   assert.ok(Array.isArray(card.answers)&&card.answers.length>=1&&card.answers.every(filled),'Flashcard : réponse absente : '+card.id);
   assert.ok(filled(card.explanation),'Flashcard : justification absente : '+card.id);
