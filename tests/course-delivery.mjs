@@ -5,7 +5,7 @@ import {validateDualSheetDelivery,validateSheetSource} from './dual-sheet-contra
 import {validateLeanCourseDelivery,validateLeanPart} from './lean-course-contract.mjs';
 import {validateHybridDelivery,validateHybridPart} from './hybrid-sheet-contract.mjs';
 import {validateWrittenDelivery,validateWrittenPart} from './written-sheet-contract.mjs';
-import {validateLeanQuestions,validateLeanFlashcards} from './lean-content-contract.mjs';
+import {validateLeanQuestions,validateLeanFlashcards,isExplicitRecallPrompt} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 
@@ -112,8 +112,8 @@ for(const c of manifest.courses){
  if(['lean_v1','hybrid_v1','written_v1'].includes(c.packFormat))validateLeanFlashcards(cards);
  assert.ok(c.flashcardDriveId||hostedProvisional,'Export Flashcards absent');
  for(const card of cards){
-  const preciseExample=/^Donne un exemple de .+\.$/iu.test(String(card.front||'').trim());
-  assert.ok((card.front.endsWith('?')||preciseExample)&&(card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
+  assert.ok(isExplicitRecallPrompt(card.front)&&
+   (card.answers.length===1||(card.authored&&card.answers.length<=4)),card.id+': carte imprécise');
   assert.ok(card.explanation,card.id+': explication absente');
   const q=bank.find(x=>x.id===card.qid);
   assert.ok(q?.flashcards?.some(x=>x.front===(card.sourceFront||card.front)),card.id+': question source perdue');
