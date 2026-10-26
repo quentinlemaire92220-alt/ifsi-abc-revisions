@@ -1,5 +1,5 @@
 {
-  "version": "8.30.140",
+  "version": "8.30.141",
   "auditedAt": "2026-10-25",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -234,7 +234,7 @@
     {
       "courseId": "theorie_gestion_symptomes_td",
       "course": "La théorie des symptômes — TD — PROVISOIRE",
-      "release": "8.30.140",
+      "release": "8.30.141",
       "qcm": 40,
       "flashcards": 40,
       "lexicon": 30,
