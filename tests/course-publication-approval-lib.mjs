@@ -73,16 +73,7 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  for(const vid of addIds){const v=newVoice.find(v=>v.id===vid);if(!v||!Number.isFinite(v.durationSeconds)||v.durationSeconds<=0||v.durationSeconds>=600)return false;}
  const oldCourse=oldData.registry.courses.find(c=>c.id===id),newCourse=newData.registry.courses.find(c=>c.id===id);
  if(!oldCourse||!newCourse)return false;
- const audioFolderUrl='https://drive.google.com/drive/folders/'+supplement.folderId;
- const priorAudioLink=(oldCourse.additionalDocuments||[]).find(d=>d.url===audioFolderUrl&&/^Vocaux MP3 — [0-9]+ épisodes$/.test(d.label||''));
- if(priorAudioLink){
-  const currentLink=(newCourse.additionalDocuments||[]).find(d=>d.url===audioFolderUrl);
-  if(currentLink?.label!=='Vocaux MP3 — '+newVoice.length+' épisodes')return false;
- }
- const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];
-  if(priorAudioLink)x.additionalDocuments=(x.additionalDocuments||[]).map(d=>
-   d.url===audioFolderUrl?{...d,label:'Vocaux MP3 — [compteur] épisodes'}:d);
-  return x;};
+ const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];return x;};
  if(JSON.stringify(canonical(stripAudio(oldCourse)))!==JSON.stringify(canonical(stripAudio(newCourse))))return false;
  if(newCourse.audioStatus!=='available'||newCourse.audioCount!==newVoice.length
   ||newCourse.audioFolderUrl!=='https://drive.google.com/drive/folders/'+supplement.folderId)return false;
