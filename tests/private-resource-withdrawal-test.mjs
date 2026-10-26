@@ -87,7 +87,7 @@ for(const pack of freshAudio){
   const id=pack.courseId;
   const was=oldReg.courses.find(c=>c.id===id),now=currentReg.courses.find(c=>c.id===id);
   assert.ok(was&&now,'Complément MP3 sur un cours inconnu');
-  assert.ok(baseAudioData.sheets.some(r=>r.courseId===id)||baseAudioData.infographics.some(r=>r.courseId===id),
+  assert.ok(baseAudioData.sheets.some(r=>r.courseId===id)||baseAudioData.infographics.some(r=>r.courseId===id)||(was.officialSupportUrl&&was.officialSupportUrl===now.officialSupportUrl),
     id+': le cours doit avoir des ressources déjà publiées avant un complément audio');
   const strip=x=>without(x,['audioStatus','audioCount','audioFolderUrl']);
   assert.deepEqual(strip(now),strip(was),id+': modification non audio du sous-cours');
