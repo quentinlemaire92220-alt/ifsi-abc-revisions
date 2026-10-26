@@ -48,7 +48,7 @@ for(const c of manifest.courses){
  }
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,c.courseId+': pointeur de dossier privé dans le manifeste public');
  const hostedPublic = c.deliveryMode==='source_limited_first_release' &&
-   c.provisional===true && c.publicationHost==='github_pages';
+   c.provisional===true && c.publicationHost==='github_pages' && !c.folders;
  if(hostedPublic){
   // Public PDF assets are the publication folders. Do not invent Drive IDs.
   assert.equal(c.folders,undefined,c.courseId+': dossier Drive non attesté ne doit pas être inventé');
