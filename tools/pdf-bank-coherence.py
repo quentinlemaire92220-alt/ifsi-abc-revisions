@@ -24,7 +24,7 @@ def strip_qcm_furniture(text):
     text=re.sub(r'(?m)^[ \t]*THÉORIE DE GESTION DES SYMPTÔMES\s*[•·]\s*TD D[’\x27]APPLICATION[^\n]*$', '', text)
     return text
 
-def validate_qcm(text,rows):
+def validate_qcm_written_dot(text,rows):
     parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
     assert len(parts)==2,'Corrigés absents'
     questions,corrections=parts
@@ -51,6 +51,29 @@ def validate_qcm(text,rows):
         assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+def validate_qcm(text,rows):
+    # Do not change the historical public PDF contract.
+    questions=re.split(r'Corrigés argumentés',text,maxsplit=1)[0]
+    if re.search(r'(?m)^Q\d{2}\.[ \t]*',questions):
+        return validate_qcm_written_dot(text,rows)
+    parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
+    questions=without_theme_titles(questions,rows)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2})\s+',questions))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Questions manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
+    corrections=without_theme_titles(corrections.replace('Corrigés argumentés',''),rows)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) - Réponses : ([A-E](?:, [A-E])*)\s*\n',corrections))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Corrigés manquants/dupliqués'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+
 def validate_cards(text,rows):
     text=without_theme_titles(text,rows)
     blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
