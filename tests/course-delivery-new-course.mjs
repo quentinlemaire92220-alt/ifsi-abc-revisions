@@ -67,12 +67,33 @@ const oldIds = new Set(before.registry.courses.map(c => c.id));
 const added = current.registry.courses.filter(c => !oldIds.has(c.id));
 const firstPublished = current.registry.courses
   .filter(c => published(current, c.id) && !published(before, c.id));
-const missing = firstPublished.filter(c => !deliveredIds.includes(c.id));
+// Un cours déjà inscrit peut recevoir son PREMIER audio sans refaire un faux lot
+// de fiches/QCM, uniquement via un complément audio autonome approuvé et borné.
+const approvedFirstAudioOnly = course => {
+  if(!oldIds.has(course.id)||published(before,course.id))return false;
+  const matches=(deliveries.audioSupplements||[]).filter(s=>s.courseId===course.id &&
+    s.publicationApproval?.status==='approved' &&
+    s.publicationApproval?.authorization==='explicit_go_publication' &&
+    s.publicationApproval?.scope==='audio_supplement');
+  if(matches.length!==1)return false;
+  const s=matches[0],newAudio=current.vocals.filter(v=>v.courseId===course.id);
+  if(!newAudio.length||newAudio.length!==s.vocalIds.length||new Set(s.vocalIds).size!==s.vocalIds.length)return false;
+  if(!newAudio.every(v=>s.vocalIds.includes(v.id)&&v.driveId&&s.artifactSha256s?.[v.driveId]&&
+    Number.isFinite(v.durationSeconds)&&v.durationSeconds>0&&v.durationSeconds<600))return false;
+  const was=before.registry.courses.find(c=>c.id===course.id);
+  const strip=x=>{const y={...x};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete y[k];return y;};
+  if(JSON.stringify(strip(was))!==JSON.stringify(strip(course)))return false;
+  return course.audioStatus==='available'&&course.audioCount===newAudio.length&&
+    course.audioFolderUrl==='https://drive.google.com/drive/folders/'+s.folderId;
+};
+const audioOnlyFirst = new Set(firstPublished.filter(c=>!deliveredIds.includes(c.id)&&approvedFirstAudioOnly(c)).map(c=>c.id));
+const missing = firstPublished.filter(c=>!deliveredIds.includes(c.id)&&!audioOnlyFirst.has(c.id));
 assert.equal(missing.length, 0,
   'Premières publications sans livraison dans docs/course-deliveries.json : ' +
   missing.map(c => c.id).join(', '));
 
 for (const course of firstPublished) {
+  if(audioOnlyFirst.has(course.id))continue;
   const delivery = deliveries.courses.find(d => d.courseId === course.id);
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
