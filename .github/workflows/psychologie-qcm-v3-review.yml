@@ -1,0 +1,79 @@
+name: Psychologie sante - QCM V3 candidat graphique
+on:
+  pull_request:
+    paths:
+      - 'tools/build_psychologie_qcm_v3.py'
+      - '.github/workflows/psychologie-qcm-v3-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer les polices et les outils PDF
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-lato
+          python -m pip install --quiet pymupdf reportlab
+      - name: Verifier les deux modeles Communication fixes par SHA et pages
+        run: |
+          python - <<'PY'
+          import importlib.machinery
+          m=importlib.machinery.SourceFileLoader('template','tools/pdf-template-v3.py').load_module()
+          errors=m.reference_errors(m.policy())
+          print('MODELES_COMMUNICATION', 'VERIFIES' if not errors else 'BLOQUES', errors)
+          if errors: raise SystemExit(1)
+          PY
+      - name: Generer le QCM V3 en espace de revue uniquement
+        run: |
+          mkdir -p review-output
+          python tools/build_psychologie_qcm_v3.py --out review-output/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf | tee review-output/candidat-technique.json
+      - name: Audit graphique automatique V2 et trame V3 - sans revue humaine
+        run: |
+          python tools/pdf-graphics-v2.py review-output/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf --kind qcm --report review-output/audit-graphique-v2.json
+          python tools/pdf-template-v3.py review-output/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf --role qcm --technical-only --report review-output/audit-trame-v3.json
+      - name: Comparer strictement chaque question, choix et corrige a la banque canonique
+        run: |
+          python - <<'PY'
+          import sys,json,fitz,importlib.machinery
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          m=importlib.machinery.SourceFileLoader('banktest','tools/pdf-bank-coherence.py').load_module()
+          doc=fitz.open('review-output/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf')
+          bank=json.loads(Path('data/course-banks/psychologie_sante.json').read_text())
+          m.validate_qcm(m.body(doc),bank)
+          print('CONTENU_PDF_ET_BANQUE_IDENTIQUES',len(bank),'QCM')
+          PY
+      - name: Rendre toutes les pages en 100 et 200 pour verifier la lisibilite technique
+        if: always()
+        run: |
+          python - <<'PY'
+          import fitz,hashlib,json
+          from pathlib import Path
+          path=Path('review-output/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf')
+          if not path.is_file(): raise SystemExit(0)
+          doc=fitz.open(path)
+          checks=[]
+          for i,page in enumerate(doc,1):
+            for zoom in (1,2):
+              pix=page.get_pixmap(matrix=fitz.Matrix(zoom,zoom),alpha=False)
+              content=pix.tobytes('png')
+              checks.append({'page':i,'zoom':zoom,'width':pix.width,'height':pix.height,'render_sha256':hashlib.sha256(content).hexdigest()})
+          Path('review-output/rendu-technique-index.json').write_text(json.dumps(checks,indent=2)+'\n')
+          print('PAGES_RENDUES_100_ET_200',len(doc),'REVUE_HUMAINE_TOUJOURS_REQUISE')
+          PY
+      - name: Garder le PDF candidat et les rapports techniques hors du site etudiant
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: psychologie-sante-qcm-v3-relecture
+          path: review-output/
+          if-no-files-found: warn
+          retention-days: 30
