@@ -1,0 +1,17 @@
+name: Validation candidat Psychologie Sante
+on:
+  pull_request:
+    paths:
+      - 'docs/proposals/psychologie-sante-20261027/**'
+      - 'tests/psychologie-sante-candidate.mjs'
+      - '.github/workflows/psychologie-sante-candidate.yml'
+  workflow_dispatch:
+jobs:
+  check-psychologie:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controle QCM, definitions et historique
+        run: node tests/psychologie-sante-candidate.mjs
