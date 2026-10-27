@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.143';
+const VERSION='8.30.144';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Correction des liens 404 et conservation des ressources historiques.`;
