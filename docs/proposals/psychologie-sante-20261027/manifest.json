@@ -1,0 +1,29 @@
+{
+  "schema": "ifsi_psychologie_sante_prepublication_v1",
+  "courseId": "psychologie_sante",
+  "asOf": "2026-10-27",
+  "state": "draft_branch_not_student_visible",
+  "questions": 50,
+  "definitions": 59,
+  "sourceStatus": "provisional_official_support_pending",
+  "correctedDefinitionId": "psychologie_sante_p01_f034",
+  "existingResourceId": "psychologie_sante_fiche_p01",
+  "existingAudioToPreserve": 2,
+  "newSyntheticAudioApproved": false,
+  "authorizedStudentPublicationGo": true,
+  "authorizedGitHubMergeGo": false,
+  "assets": {
+    "sheet": {
+      "pages": 18,
+      "sha256": "c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486"
+    },
+    "qcm": {
+      "pages": 21,
+      "sha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89"
+    },
+    "flashcards": {
+      "pages": 13,
+      "sha256": "9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a"
+    }
+  }
+}
