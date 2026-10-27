@@ -2752,7 +2752,7 @@
       "validated": true,
       "status": "partial",
       "deliveryMode": "existing_course_revision",
-      "publicationSubset": "qcm_pdf_50_qcm_59_interactive_flashcards_only",
+      "publicationSubset": "qcm_50_flashcards_59_fiche_unique_20p",
       "publicationHost": "github_pages",
       "packFormat": "written_v1",
       "sourceBasis": {
@@ -2820,13 +2820,16 @@
             "psychologie_sante_p01_049",
             "psychologie_sante_p01_050"
           ],
-          "sheetResourceIds": [],
+          "sheetResourceIds": [
+            "psychologie_sante_fiche_p01"
+          ],
           "infographicResourceIds": [],
           "vocalIds": []
         }
       ],
       "artifactSha256s": {
-        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c"
+        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+        "psychologie_sante_fiche_unique_20p_20261027": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512"
       },
       "publicArtifacts": {
         "qcm": {
@@ -2834,6 +2837,12 @@
           "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
           "pageCount": 19,
           "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
+        },
+        "sheet": {
+          "path": "assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
+          "sha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+          "pageCount": 20,
+          "artifactId": "psychologie_sante_fiche_unique_20p_20261027"
         }
       },
       "qcmGraphicOwnerReview": {
@@ -2845,10 +2854,6 @@
         "textParity": "50_of_50_exact_bank_verified"
       },
       "deferredResources": [
-        {
-          "type": "new_revision_sheet",
-          "reason": "owner_graphic_acceptance_not_individually_attested"
-        },
         {
           "type": "new_flashcards_pdf",
           "reason": "owner_graphic_acceptance_not_individually_attested"
@@ -2914,8 +2919,55 @@
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
             "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
+          },
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+            "pageCount": 20,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "status": "technical_review_completed_owner_publication_go_pending",
+            "method": "all_pages_rendered_at_100_and_200_percent",
+            "reviewerRole": "owner",
+            "checks": {
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "e242bd1d969b77da22458878477cfcd124b51bd50e33a9b347e741b0b8556387"
           }
         }
+      },
+      "pendingSheetApproval": {
+        "status": "awaiting_explicit_publication_go",
+        "revisionSheetSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "ownerFeedback": "ok validé",
+        "courseStillPartial": true,
+        "legacySheetPreserved": true,
+        "sourceOfficialPending": true
       }
     }
   ],
