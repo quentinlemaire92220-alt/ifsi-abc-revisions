@@ -1,16 +1,16 @@
 {
-  "version": "8.30.145",
-  "auditedAt": "2026-10-27",
+  "version": "8.30.144",
+  "auditedAt": "2026-10-26",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Préparation technique de la fiche complète UE B2 Psychologie de la santé, 50 QCM et 59 cartes, sans suppression des versions historiques. Publication en attente de tous les contrôles.",
+  "note": "V8.30.137 : 190 audios (4 compléments au catalogue : IAS 2, Histoire de la profession 1, Droits des patients 1). Fichiers MP3 réels publiés sur Drive et permissions anyone(reader) vérifiées, écoute externe à tester.",
   "expectedTotals": {
     "courses": 56,
-    "sheets": 74,
+    "sheets": 73,
     "infographics": 184,
     "vocals": 190,
     "v820QcmImported": 1174,
