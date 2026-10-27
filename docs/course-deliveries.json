@@ -2916,6 +2916,100 @@
             "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
           }
         }
+      },
+      "revisionSheetSupplement": {
+        "resourceId": "psychologie_sante_fiche_unique_20261027",
+        "publicAsset": {
+          "path": "assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
+          "sha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+          "artifactId": "psychologie_sante_fiche_unique_20p_20261027"
+        },
+        "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "pageCount": 20,
+        "lexiconTermCount": 59,
+        "provisional": true,
+        "nativeSupportAvailable": false,
+        "visualAudit": {
+          "status": "PASS",
+          "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+          "expectedCount": 20,
+          "checkedCount": 20,
+          "pageCount": 20
+        },
+        "publishedVerification": {
+          "status": "MATCH",
+          "source": "authenticated_drive_download",
+          "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+          "expectedCount": 20,
+          "checkedCount": 20,
+          "pageCount": 20
+        },
+        "ownerReview": {
+          "status": "owner_accepted",
+          "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+          "pagesChecked": 20,
+          "visualReference": "communication_written_v5.3_2026-10-24",
+          "scientificReview": "documentary_review_completed",
+          "independentMedicalReview": "not_attested",
+          "method": "all_pages_rendered_and_inspected_120dpi",
+          "approvedBy": "owner",
+          "ownerApproval": "ok validé — GO Publication"
+        },
+        "templateConformance": {
+          "contract": "ifsi_pdf_template_v3",
+          "artifacts": {
+            "sheet": {
+              "templateId": "communication_written_v5.3_2026-10-24",
+              "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+              "artifactSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+              "pageCount": 20,
+              "pagesChecked": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "status": "owner_accepted",
+              "method": "all_pages_compared_at_100_and_200_percent",
+              "decision": "explicit_graphic_acceptance",
+              "reviewerRole": "owner",
+              "reviewedAt": "2026-10-27T17:38:00Z",
+              "checks": {
+                "MODEL_COMPARISON": "PASS",
+                "BANDS_AND_TYPOGRAPHY": "PASS",
+                "MARGINS_AND_HIERARCHY": "PASS",
+                "COLOR_AND_BOXES": "PASS",
+                "NO_CLIPPING_OR_OVERLAP": "PASS",
+                "READABLE_AT_100_AND_200_PERCENT": "PASS",
+                "STRUCTURE_AND_PAGINATION": "PASS"
+              },
+              "privateEvidenceSha256": "e242bd1d969b77da22458878477cfcd124b51bd50e33a9b347e741b0b8556387"
+            }
+          }
+        },
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "revision_sheet_only",
+          "approvedAt": "2026-10-27T17:38:00Z",
+          "bundleSha256": "07e6434fe13d7a8f8e212163d03af018a21aeb86bcdd21004043231708c077e7"
+        }
       }
     }
   ],

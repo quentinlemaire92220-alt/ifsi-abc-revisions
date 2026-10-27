@@ -48,7 +48,7 @@ for(const c of manifest.courses){
  }
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,c.courseId+': pointeur de dossier privé dans le manifeste public');
  if(c.courseId==='psychologie_sante' && c.deliveryMode==='existing_course_revision' &&
-    c.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only'){
+    ['qcm_pdf_50_qcm_59_interactive_flashcards_only','qcm_50_flashcards_59_fiche_unique_20p'].includes(c.publicationSubset)){
   // Existing course, limited additive release: require the dedicated exact-byte
   // and historical-preservation contract, not seven invented Drive folders.
   assert.equal(c.status,'partial',c.courseId+': statut partiel attendu');
@@ -56,11 +56,16 @@ for(const c of manifest.courses){
   assert.equal(c.folders,undefined,c.courseId+': dossiers Drive non attestés interdits');
   assert.equal(c.sourceBasis?.nativeSupportAvailable,false,c.courseId+': support officiel non tracé');
   assert.equal(c.sourceBasis?.officialSupportPending,true,c.courseId+': attente officielle non signalée');
-  assert.deepEqual(Object.keys(c.publicArtifacts||{}),['qcm'],
-    c.courseId+': un seul PDF QCM doit être ajouté');
-  assert.equal(c.publicationApproval?.scopeLimit,'qcm_pdf_50_questions_59_interactive_flashcards_only');
+  const combined=c.publicationSubset==='qcm_50_flashcards_59_fiche_unique_20p';
+  assert.deepEqual(Object.keys(c.publicArtifacts||{}),combined?['qcm','sheet']:['qcm'],
+    c.courseId+': seules les pièces approuvées peuvent être référencées');
+  if(combined){
+    assert.equal(c.publicArtifacts.sheet.pageCount,20);
+    assert.equal(c.partDeliveries?.[0]?.sheetResourceIds?.[0],'psychologie_sante_fiche_p01');
+    assert.equal(c.pendingSheetApproval?.status,'awaiting_explicit_publication_go');
+  }else assert.equal(c.publicationApproval?.scopeLimit,'qcm_pdf_50_questions_59_interactive_flashcards_only');
   await import('./psychologie-sante-live-contract.mjs');
-  console.log('✅ '+c.courseId+': complément strict QCM 50 + définitions 59 ; fiche et vocaux historiques préservés');
+  console.log('✅ '+c.courseId+': QCM 50 + définitions 59 ; '+(combined?'fiche unique 20p préparée':'fiche historique préservée')+' ; 2 vocaux conservés');
   continue;
  }
 

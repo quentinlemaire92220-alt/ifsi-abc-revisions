@@ -82,7 +82,7 @@ function allCourses74(){
 function courseData74(course){
   const id=courseId74(course),bundle=id?window.IFSI_V741?.resourcesForCourse?.(id):null;
   const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
-  const sheets=bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'));
+  const sheets=(bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'))).filter(x=>!unavailableSheet74(x));
   const infos=bundle?.infographics||(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}
   const errors=new Set(stats.errors||[]);const err=qs.filter(q=>errors.has(q.id)).length;const rate=ans?Math.round(cor/ans*100):null;
@@ -205,7 +205,7 @@ function resourceCard74(x,type){
   const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
 // Barrière d'affichage pour documents internes ; ne sécurise PAS leurs droits Drive ni le JSON public.
-const unavailableSheet74=doc=>/\/(?:1jmXbi76eucP42lg4pJLU6MpApjIf1M8e|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(String(doc?.url||''));
+const unavailableSheet74=doc=>/\/(?:1jmXbi76eucP42lg4pJLU6MpApjIf1M8e|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(String(doc?.url||'')) || (doc?.courseId==='psychologie_sante' && doc?.resourceId==='psychologie_sante_fiche_p01' && Array.isArray(S) && S.some(x=>x.courseId==='psychologie_sante' && x.resourceId==='psychologie_sante_fiche_unique_20261027' && x.primaryRevision===true));
 const studentVisibleDocument74=doc=>{
   const type=String([doc?.label,doc?.category,doc?.visibility,doc?.status].join(' '))
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();

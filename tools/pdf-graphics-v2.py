@@ -40,7 +40,29 @@ def vector_squares(page):
 def ordered_sections(pages):
     text="\n".join(p.get_text() for p in pages).lower()
     positions=[text.find(s) for s in ORDER]
-    return all(p >= 0 for p in positions) and positions == sorted(positions) and text.count(ORDER[0])==1
+    if all(p >= 0 for p in positions) and positions == sorted(positions) and text.count(ORDER[0])==1:
+        return True
+    # A sommaire and introductory navigation may legitimately repeat the words.
+    # The actual three section headings must nevertheless appear ONCE, in order.
+    # Validate their bookmark destinations AND their real large-type headings;
+    # never accept merely a table of contents that points to missing content.
+    toc=pages.get_toc() if hasattr(pages,"get_toc") else []
+    roots=[(name.lower(),pg) for level,name,pg in toc if level==1]
+    matches=[(key,pg) for name,pg in roots for key in ORDER if key in name]
+    if len(matches)!=len(ORDER) or [x[0] for x in matches]!=list(ORDER):
+        return False
+    for key,pg in matches:
+        if not 1<=pg<=len(pages):return False
+        found=0
+        page=pages[pg-1]
+        for block in page.get_text("dict").get("blocks",[]):
+            for line in block.get("lines",[]):
+                spans=line.get("spans",[])
+                title=" ".join(x.get("text","") for x in spans).lower()
+                if key in title and any(x.get("size",0)>=13 for x in spans):
+                    found+=1
+        if found!=1:return False
+    return True
 
 def validate(path, kind="revision", min_body_pt=9, expect_pages=None, check_checkbox=True):
     errors=[]; pages_out=[]
