@@ -4,6 +4,7 @@ on:
     paths:
       - 'docs/proposals/psychologie-sante-20261027/**'
       - 'tests/psychologie-sante-candidate.mjs'
+      - 'tests/psychologie-sante-live-contract.mjs'
       - '.github/workflows/psychologie-sante-candidate.yml'
   workflow_dispatch:
 jobs:
@@ -14,4 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Controle QCM, definitions et historique
-        run: node tests/psychologie-sante-candidate.mjs
+        run: |
+          node tests/psychologie-sante-candidate.mjs
+          node tests/psychologie-sante-live-contract.mjs
