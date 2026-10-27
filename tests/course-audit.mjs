@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 
 const read=p=>fs.readFileSync(p,'utf8');
@@ -31,13 +32,20 @@ const infos=json('infographics.json');
 const publishedManifest=json('docs/course-deliveries.json');
 const siteBase='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 function verifiedPageAssetId(item){
- const c=publishedManifest.courses?.find(d=>d.courseId===item.courseId &&
-  d.sheetResourceId===item.resourceId && d.publicationHost==='github_pages');
- const a=c?.publicArtifacts?.sheet;
+ const c=publishedManifest.courses?.find(d=>d.courseId===item.courseId);
+ const isPrimary=c?.sheetResourceId===item.resourceId&&c.publicationHost==='github_pages';
+ const supplement=c?.revisionSheetSupplement;
+ const isRevision=supplement?.resourceId===item.resourceId&&
+  supplement.publicationApproval?.status==='approved'&&
+  supplement.publicationApproval?.scope==='revision_sheet_only'&&
+  supplement.publicationApproval?.authorization==='explicit_go_publication';
+ const a=isPrimary?c.publicArtifacts?.sheet:isRevision?supplement.publicAsset:null;
  if(!a||!a.path||!/^[a-f0-9]{64}$/.test(a.sha256||''))return null;
  if(!a.path.startsWith('assets/')||a.path.includes('..')||!a.path.endsWith('.pdf'))return null;
  if(item.url!==siteBase+a.path||!fs.existsSync(a.path))return null;
- if(c.artifactSha256s?.[a.artifactId]!==a.sha256)return null;
+ if(isPrimary&&c.artifactSha256s?.[a.artifactId]!==a.sha256)return null;
+ if(isRevision&&supplement.pdfSha256!==a.sha256)return null;
+ if(isRevision&&createHash('sha256').update(fs.readFileSync(a.path)).digest('hex')!==a.sha256)return null;
  return 'pages:'+a.path;
 }
 const byCourse=Object.fromEntries(courses.map(c=>[c.id,{label:c.label,qcm:0,vocals:0,sheets:0,infographics:0}]));
