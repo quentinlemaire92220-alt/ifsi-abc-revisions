@@ -17,12 +17,25 @@ assert.ok(fs.existsSync(path));
 assert.equal(createHash('sha256').update(fs.readFileSync(path)).digest('hex'),expected);
 assert.equal(reg.length,1,'Cours dupliqué');
 assert.equal(manifest.length,1,'Livraison non identifiée');
-assert.equal(manifest[0].publicationSubset,'qcm_pdf_50_qcm_59_interactive_flashcards_only');
+assert.equal(manifest[0].publicationSubset,'qcm_50_flashcards_59_fiche_unique_20p');
 assert.equal(manifest[0].publicArtifacts.qcm.sha256,expected);
 assert.equal(manifest[0].qcmGraphicOwnerReview.sha256,expected);
 assert.equal(reg[0].flashcardTarget,59);
-assert.equal(sheets.length,1,'Nouvelle fiche PDF non approuvée publiée');
+assert.equal(sheets.length,1,'Une seule fiche doit être affichée au cours');
 assert.equal(sheets[0].resourceId,'psychologie_sante_fiche_p01');
+const sheetPath='assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf';
+const sheetSha='da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512';
+assert.ok(fs.existsSync(sheetPath),'Fiche unique absente du lot proposé');
+assert.equal(createHash('sha256').update(fs.readFileSync(sheetPath)).digest('hex'),sheetSha,'Fiche PDF altérée');
+assert.equal(manifest[0].publicArtifacts.sheet.sha256,sheetSha);
+assert.equal(manifest[0].publicArtifacts.sheet.pageCount,20);
+assert.equal(manifest[0].sourceBasis.officialSupportPending,true);
+assert.ok(sheets[0].url.endsWith('/'+sheetPath),'Lien de fiche unique absent');
+assert.equal(sheets[0].pageCount,20);
+assert.equal(sheets[0].lexiconTermCount,59);
+assert.equal(sheets[0].label.includes('Partie 01'),false,'Libellé historique encore visible');
+assert.equal(manifest[0].pendingSheetApproval?.status,'awaiting_explicit_publication_go');
+
 assert.equal(vocals.length,2,'Les deux vocaux anciens doivent être préservés');
 assert.equal(reg[0].audioCount,2);
 assert.equal(active.length,50);assert.equal(candidate.length,50);assert.equal(definitions.length,59);
@@ -44,4 +57,4 @@ for(const d of definitions)assert.ok(authored.some(c=>(c.sourceFront||c.front)==
  'Carte absente de l’interface '+d.term);
 for(const name of ['UE_B2_Psychologie_Sante_Fiche_Revision_Corrigee.pdf','UE_B2_Psychologie_Sante_Flashcards_59.pdf'])
  assert.ok(!fs.existsSync('assets/psychologie-sante-20261027/'+name),'PDF non approuvé rendu public : '+name);
-console.log('PASS Psychologie : QCM final SHA exact, 50 QCM, 59 cartes, 1 ancienne fiche, 2 vocaux préservés');
+console.log('PASS Psychologie : QCM inchangé, 50 QCM, 59 cartes, fiche unique 20p vérifiée, 2 vocaux préservés');
