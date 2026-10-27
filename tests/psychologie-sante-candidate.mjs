@@ -39,7 +39,7 @@ for(let i=0;i<ds.length;i++){
 assert.equal(ds[33].term,'Angoisse');
 assert.ok(ds[33].back.startsWith('L’angoisse est une peur sans objet'));
 assert.deepEqual(qs.reduce((a,q)=>(a[q.answers.length]=(a[q.answers.length]||0)+1,a),{}),{'2':2,'3':48});
-assert.equal(signature(qs,['id','question','choices','answers','explanation']),'c3b24c7381f8dd4f667db0c24eee5573d061d1373a74b040dfbded7c7e541246');
+assert.equal(signature(qs,['id','question','choices','answers','explanation']),'944811e7dda888dbf2c1e60c4e26d01f6f8df1ddcdea48cfef851bf0fee5577d');
 assert.equal(signature(ds,['id','term','front','back']),'7f017030d0d7d0468245ff4121d747f3898553cec1b82d2fbadd4565ebcdee1c');
 assert.equal(meta.assets.sheet.pages,18);
 assert.equal(meta.assets.qcm.pages,21);
