@@ -26,9 +26,9 @@ Cet espace ne contient que des données pédagogiques générées pour le candid
 
 Le propriétaire a répondu **« ok go »** à la question de validation graphique sur le QCM V2 exact de 19 pages, SHA-256 `468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd`.
 
-L'inspection a révélé ensuite la mention de travail « CANDIDAT V2 » sur les 19 pages. Une nouvelle version strictement identique pour les questions, choix, réponses, explications et pagination a été préparée en privé, avec uniquement le bandeau remplacé par « VERSION RÉVISÉE ». Son SHA-256 est `e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa`.
+L'inspection a révélé ensuite la mention de travail « CANDIDAT V2 » sur les 19 pages. Une nouvelle version strictement identique pour les questions, choix, réponses, explications et pagination a été préparée en privé, avec uniquement le bandeau remplacé par « VERSION RÉVISÉE ». Son SHA-256 est `5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761`.
 
-**Cette copie nettoyée n'est pas encore signée graphiquement pour ses nouveaux octets.** Le contrôle technique prouve une parité de texte page par page (hors bandeau), pas une nouvelle décision du propriétaire. Les PDF restent hors des assets publics et aucune livraison étudiante n'est déclarée.
+La copie canonique nettoyée est privée dans Drive (ID `1oX4lEKUS7sKigEpyipHMsjY46wGEB4Jw`, 19 pages, 127824 octets) et a été retéléchargée pour comparaison des octets. **Cette copie nettoyée n'est pas encore signée graphiquement pour ses nouveaux octets.** Le contrôle technique prouve une parité de texte page par page (hors bandeau), pas une nouvelle décision du propriétaire. Les PDF restent hors des assets publics et aucune livraison étudiante n'est déclarée.
 
 Cette branche est un brouillon de préparation technique, non une publication étudiante.
 
