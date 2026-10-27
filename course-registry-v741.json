@@ -1,5 +1,5 @@
 {
-  "version": "8.30.145",
+  "version": "8.30.144",
   "courses": [
     {
       "id": "biomolecules",
@@ -722,19 +722,7 @@
       "ue": "B2",
       "audioStatus": "available",
       "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf",
-      "authoredFlashcards": true,
-      "flashcardTarget": 59,
-      "sourceBasis": "transcriptions_et_captures_provisoires",
-      "nativeSupportAvailable": false,
-      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
-      "qcmPdfQuestionCount": 50,
-      "additionalDocuments": [
-        {
-          "label": "Flashcards — 59 définitions complètes (Mme Khatir)",
-          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_Flashcards_59.pdf"
-        }
-      ]
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf"
     },
     {
       "id": "pharmacologie",
