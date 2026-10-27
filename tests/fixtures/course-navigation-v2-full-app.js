@@ -160,13 +160,13 @@
      }else official++;
      if(course.qcmPdfUrl){
        qcm++;
-       if(!Array.from(detail.querySelectorAll('.v74-qcm-section a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('PDF QCM mal classé : '+course.id);
+       if(course.id==='responsabilite_exercice_professionnel'&&course.qcmPdfUrl.includes('1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN')){if(Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('Lien QCM 404 encore affiché : '+course.id);}else if(!Array.from(detail.querySelectorAll('.v74-qcm-section a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('PDF QCM mal classé : '+course.id);
        if(Array.from(support.querySelectorAll('a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('QCM présenté comme support : '+course.id);
      }
      for(var doc of course.additionalDocuments||[]){
        if(doc.type==='flashcards'||/flashcards/i.test(doc.label)){
          flashcards++;
-         if(!Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Accès flashcards perdu : '+course.id);
+         if(course.id==='d1_relation_soignant_soigne_ecoute_active'&&/PROVISOIRE/i.test(doc.label||'')){if(Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Flashcards provisoires encore visibles : '+course.id);}else if(!Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Accès flashcards perdu : '+course.id);
        }
      }
      if(window.IFSI_VOCAB.countForCourse(course.id)){
