@@ -99,14 +99,18 @@
     "status": "owner_accepted_original_v2"
   },
   "cleanPublicCandidate": {
-    "filename": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT.pdf",
-    "sha256": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa",
+    "filename": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT_A_VALIDER.pdf",
+    "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
     "pages": 19,
+    "bytes": 127824,
+    "driveFileId": "1oX4lEKUS7sKigEpyipHMsjY46wGEB4Jw",
+    "driveVisibility": "owner_only",
+    "verifiedDriveDownloadSha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
     "onlyTextDifferenceFromAcceptedV2": "CANDIDAT V2 -> VERSION RÉVISÉE",
     "allPagesTextEquivalentAfterLabelSubstitution": true,
     "noOutOfBoundsText": true,
     "publicationEligible": false,
     "ownerAcceptance": "pending_new_sha",
-    "bytesStored": "local_private_only"
+    "previouslyGeneratedLocalSha256Superseded": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa"
   }
 }
