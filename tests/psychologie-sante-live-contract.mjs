@@ -2,7 +2,6 @@
 // Ne pas confondre un TNR vert en préparation avec un GO graphique ou la publication étudiante.
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -32,16 +31,23 @@ assert.ok(!reg[0].authoredFlashcards,'Cartes non approuvées annoncées comme pu
 assert.ok(!reg[0].additionalDocuments?.some(d=>/psychologie-sante-20261027/.test(d.url)),
   'Lien étudiant de prépublication présent dans le registre');
 
-// Vérifie l'intégrité des trois originaux signés, sans les rendre visibles en cours.
+// Les PDF sont strictement conservés dans Drive privé tant que la revue graphique n'est pas attestée.
+// Ce contrôle verrouille les empreintes du paquet source, sans prétendre télécharger le Drive dans la CI.
 const pdfs=[
-  ['sheet','assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_Fiche_Revision_Corrigee.pdf'],
-  ['qcm','assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf'],
-  ['flashcards','assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_Flashcards_59.pdf']
+  ['sheet','UE_B2_Psychologie_Sante_Fiche_Revision_Corrigee.pdf',
+    'c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486',18],
+  ['qcm','UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf',
+    'e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89',21],
+  ['flashcards','UE_B2_Psychologie_Sante_Flashcards_59.pdf',
+    '9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a',13]
 ];
-for(const [key,path] of pdfs){
-  assert.ok(fs.existsSync(path),'PDF candidat manquant : '+path);
-  const hash=createHash('sha256').update(fs.readFileSync(path)).digest('hex');
-  assert.equal(hash,manifest.assets[key].sha256,'PDF candidat modifié : '+path);
+for(const [key,filename,digest,pages] of pdfs){
+  assert.equal(manifest.assets[key].sha256,digest,'Empreinte de référence du lot modifiée : '+key);
+  assert.equal(manifest.assets[key].pages,pages,'Pagination du lot modifiée : '+key);
+  assert.equal(manifest.driveByteVerification[key].sha256,digest,'Empreinte Drive enregistrée divergente : '+key);
+  assert.equal(manifest.driveByteVerification[key].status,'verified');
+  assert.ok(!fs.existsSync('assets/psychologie-sante-20261027/'+filename),
+    'Le PDF non relu ne doit pas figurer dans les assets publiables : '+filename);
 }
 assert.equal(candidate.length,50);
 assert.equal(definitions.length,59);
@@ -73,4 +79,4 @@ if(/^[0-9a-f]{7,40}$/i.test(base)){
     assert.ok(fs.readFileSync(path).equals(previous),'Actif modifié dans la PR staging : '+path);
   }
 }
-console.log('PASS STAGING Psychologie : 3 PDF exacts, 50 QCM et 59 définitions prêts ; 0 activation étudiante ; 2 vocaux historiques préservés.');
+console.log('PASS STAGING Psychologie : 3 empreintes PDF privées, 50 QCM et 59 définitions prêts ; 0 activation étudiante ; 2 vocaux historiques préservés.');
