@@ -135,6 +135,13 @@ export function validateVisualOwnerReview(courseId,delivery,data){
 }
 
 export function requireVisualReviewIfChanged(courseId,prior,next,oldData,newData){
+ // Une première déclaration de livraison QCM ne doit pas inventer une nouvelle fiche.
+ // L'exemption est strictement limitée à zéro nouvelle association visuelle et aux octets
+ // du catalogue historique de fiches/infographies conservés sans mutation.
+ if(!prior && selectedSheetIds(next).length===0 &&
+    JSON.stringify((oldData.sheets||[]).filter(x=>x.courseId===courseId))===JSON.stringify((newData.sheets||[]).filter(x=>x.courseId===courseId)) &&
+    JSON.stringify((oldData.infographics||[]).filter(x=>x.courseId===courseId))===JSON.stringify((newData.infographics||[]).filter(x=>x.courseId===courseId)))
+   return false;
  const prev=visualResourceFingerprint(courseId,prior,oldData);
  const curr=visualResourceFingerprint(courseId,next,newData);
  if(curr===null||prev===curr)return false; // aucune nouvelle fiche/illustration
