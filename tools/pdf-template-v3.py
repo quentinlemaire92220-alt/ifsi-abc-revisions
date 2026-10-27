@@ -146,6 +146,24 @@ def batch(base,root=ROOT):
             r=validate(p,role,spec,receipt.get('artifacts',{}).get(role));checked+=1
             if sha(p)!=a.get('sha256') or r['pageCount']!=a.get('pageCount'):r['errors'].append('ARTIFACT_BYTES_OR_PAGES')
             errors.extend(delivery['courseId']+':'+role+':'+e for e in r['errors'])
+    # A separately approved additive revision sheet is not a mutation of the
+    # historical course/QCM package. Still run the SAME exact V3 layout checker.
+    for delivery in now['courses']:
+        supplement=delivery.get('revisionSheetSupplement') or {}
+        prior=previous.get(delivery['courseId'],{})
+        if not supplement.get('publicAsset') or supplement==prior.get('revisionSheetSupplement'):
+            continue
+        artifact=supplement['publicAsset']
+        pdf=root/artifact['path']
+        if not pdf.is_file():
+            errors.append(delivery['courseId']+':revision_sheet:PDF_MISSING')
+            continue
+        review=supplement.get('templateConformance',{}).get('artifacts',{}).get('sheet')
+        result=validate(pdf,'sheet',spec,review)
+        checked+=1
+        if sha(pdf)!=supplement.get('pdfSha256') or sha(pdf)!=artifact.get('sha256') or result['pageCount']!=supplement.get('pageCount'):
+            result['errors'].append('ARTIFACT_BYTES_OR_PAGES')
+        errors.extend(delivery['courseId']+':revision_sheet:'+error for error in result['errors'])
     return {'checked':checked,'errors':errors,'status':'FAIL' if errors else 'PASS','historicalUnchangedPreserved':True}
 
 def main():
