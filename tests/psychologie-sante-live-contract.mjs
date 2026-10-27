@@ -17,7 +17,10 @@ const publishedVocals=read('vocals.json').filter(v=>v.courseId==='psychologie_sa
 assert.equal(manifest.state,'draft_branch_not_student_visible');
 assert.equal(manifest.publicationGates.activeApplicationIntegration,'draft_only');
 assert.equal(manifest.publicationGates.studentLinks,'not_enabled');
-assert.equal(manifest.publicationGates.humanGraphics,'pending_owner_visual_review');
+assert.equal(manifest.publicationGates.humanGraphics,'owner_accepted_old_qcm_v2_only_clean_pdf_pending');
+assert.equal(manifest.ownerGraphicDecision.acceptedSha256,'468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd');
+assert.equal(manifest.cleanPublicCandidate.ownerAcceptance,'pending_new_sha');
+assert.equal(manifest.cleanPublicCandidate.publicationEligible,false);
 assert.equal(manifest.interactiveQcmWording.pdfTextParity,'candidate_pdf_v2_technical_match_pending_owner_acceptance');
 assert.equal(manifest.privateReconciledQcmV2.sha256,'468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd');
 assert.equal(manifest.privateReconciledQcmV2.driveDownloadedSha256,manifest.privateReconciledQcmV2.sha256);
