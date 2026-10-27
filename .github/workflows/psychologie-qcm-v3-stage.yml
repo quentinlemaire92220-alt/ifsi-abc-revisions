@@ -36,9 +36,13 @@ jobs:
           source=/tmp/qcm-v3-verified/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf
           target=assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf
           printf '%s  %s\n' '2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c' "$source" | sha256sum -c -
-          test ! -e "$target"
           mkdir -p "$(dirname "$target")"
-          cp "$source" "$target"
+          if test -e "$target"; then
+            echo "Verifying previously staged exact PDF"
+            printf '%s  %s\n' '2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c' "$target" | sha256sum -c -
+          else
+            cp "$source" "$target"
+          fi
           sha256sum "$target"
           test -f assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges_19p_Version_Revisee.pdf
       - name: Commit only the candidate PDF to the draft branch
@@ -47,6 +51,10 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf
           git diff --cached --name-only
+          if git diff --cached --quiet; then
+            echo "Exact candidate already staged"
+            exit 0
+          fi
           test "$(git diff --cached --name-only | wc -l)" -eq 1
           git commit -m "chore(psychologie): stage exact V3 QCM PDF without changing historical artifact"
           git push origin HEAD:refs/heads/work/psychologie-sante-qcm-publication-20261027
