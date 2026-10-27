@@ -1,6 +1,6 @@
 {
-  "version": "8.30.144",
-  "build": "8444",
+  "version": "8.30.143",
+  "build": "8443",
   "releasedAt": "2026-10-27",
-  "summary": "P1 : masquer les fiches Drive indisponibles dans les cours et favoris, sans suppression historique (candidat privé, publication non autorisée)."
+  "summary": "P1 : masquage des liens 404 et des documents provisoires dans l'interface, sans suppression des ressources historiques."
 }
