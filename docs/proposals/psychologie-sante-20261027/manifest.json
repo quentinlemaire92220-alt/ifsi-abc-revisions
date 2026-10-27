@@ -109,10 +109,15 @@
     "onlyTextDifferenceFromAcceptedV2": "CANDIDAT V2 -> VERSION RÉVISÉE",
     "allPagesTextEquivalentAfterLabelSubstitution": true,
     "noOutOfBoundsText": true,
-    "publicationEligible": "qcm_graphics_only_owner_approved; full_package_gates_pending",
+    "publicationEligible": false,
     "ownerAcceptance": "owner_accepted_exact_sha_2026-10-27",
     "previouslyGeneratedLocalSha256Superseded": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa",
-    "ownerAcceptanceBasis": "GO explicite de l'utilisateur après consultation de la copie finale nettoyée SHA-256 5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761"
+    "ownerAcceptanceBasis": "GO explicite de l'utilisateur après consultation de la copie finale nettoyée SHA-256 5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "qcmGraphicEligible": true,
+    "publicationBlockers": [
+      "complete_package_approval_and_published_student_links_pending",
+      "sheet_and_flashcards_individual_graphic_reviews_not_attested"
+    ]
   },
   "ownerGraphicDecisionClean": {
     "asset": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT_A_VALIDER.pdf",
