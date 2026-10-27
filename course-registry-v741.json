@@ -277,8 +277,7 @@
       ],
       "qcmPdfQuestionCount": 44,
       "authoredFlashcardPresentation": "standalone_v1",
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1wYJ2pJmqATjIejV87ospt9kZju6zqgyf",
-      "integrationReview": "27/10/2026 : support officiel retrouvé sur Drive privé, rapprochement pédagogique et autorisation de diffusion non vérifiés ; ne pas exposer de lien privé ni déclarer le support public validé."
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1wYJ2pJmqATjIejV87ospt9kZju6zqgyf"
     },
     {
       "id": "calculs_doses_mathematiques",
@@ -519,8 +518,7 @@
       ],
       "audioStatus": "available",
       "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1gq9VP_Z7OYwmQ_bvP9kmYQrbXLAe3Kbt",
-      "integrationReview": "27/10/2026 : support officiel retrouvé sur Drive privé, rapprochement pédagogique et autorisation de diffusion non vérifiés ; ne pas exposer de lien privé ni déclarer le support public validé."
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1gq9VP_Z7OYwmQ_bvP9kmYQrbXLAe3Kbt"
     },
     {
       "id": "infections_urinaires",
@@ -997,6 +995,7 @@
       "officialSupport": false,
       "sourceStatus": "provisional_captures",
       "officialSupportCoverage": "absent_native",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN/view",
       "qcmPdfQuestionCount": 46,
       "flashcardTarget": 42,
       "authoredFlashcards": true,
@@ -1005,14 +1004,18 @@
       "audioFolderUrl": "https://drive.google.com/drive/folders/1_gGQ6VEyU3xJ4WohSdW9PAGptjTsypTU",
       "additionalDocuments": [
         {
+          "label": "Fiche hybride v1.47 — 27 pages (provisoire)",
+          "url": "https://drive.google.com/file/d/1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB/view",
+          "type": "revision_hybride"
+        },
+        {
           "label": "Flashcards — 42 cartes (CSV)",
           "url": "https://drive.google.com/file/d/15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-/view",
           "type": "flashcards",
           "cardCount": 42
         }
       ],
-      "sourceNote": "Support natif non disponible ; 48 captures et transcriptions PT01/PT02, complément réglementaire sur le secret distinct des priorités de l'enseignant.",
-      "integrationReview": "P1 — fiche et QCM publics retirés du catalogue : anciens liens Drive 404 au 27/10/2026. Copies privées préservées. Réintégration uniquement après nettoyage des références orales, QA scientifique/graphique, contrôle de confidentialité et GO explicite."
+      "sourceNote": "Support natif non disponible ; 48 captures et transcriptions PT01/PT02, complément réglementaire sur le secret distinct des priorités de l'enseignant."
     },
     {
       "id": "d1_communication_td1",
@@ -1156,6 +1159,17 @@
       "audioCount": 1,
       "additionalDocuments": [
         {
+          "label": "Fiche de révision — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf",
+          "type": "revision"
+        },
+        {
+          "label": "Flashcards — 40 cartes — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf",
+          "type": "flashcards",
+          "cardCount": 40
+        },
+        {
           "label": "Fiche de révision — 21 pages",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_21p_20261026.pdf",
           "type": "revision"
@@ -1167,8 +1181,7 @@
           "cardCount": 48
         }
       ],
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj",
-      "integrationReview": "27/10/2026 : doublons provisoires retirés des documents affichés, fichiers historiques conservés. Lot officiel 21p/48 cartes maintenu ; QA graphique, TNR et disponibilité live à vérifier."
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1uG63bqPjgtSCUztKvuHoqIN2GIHyHNxj"
     },
     {
       "id": "theorie_gestion_symptomes_td",
