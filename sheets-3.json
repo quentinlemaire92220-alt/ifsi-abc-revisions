@@ -338,21 +338,37 @@
     "sourceStatus": "active"
   },
   {
+    "title": "UE_S1_B2_Psychologie_de_la_Sante_Partie01_Fiche_Revision_Psychologie_de_la_Sante.pdf",
+    "label": "Psychologie de la santé — Partie 01",
+    "ue": "S1 B2",
+    "url": "https://drive.google.com/file/d/1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q/view?usp=drivesdk",
+    "driveId": "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q",
+    "resourceId": "psychologie_sante_fiche_p01",
+    "provisional": false,
+    "courseId": "psychologie_sante",
+    "displayTitle": "Psychologie de la santé — Partie 01",
+    "sourceStatus": "active",
+    "officialSupport": false,
+    "sourceBasis": "Transcription du cours",
+    "sourceNote": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours."
+  },
+  {
     "title": "UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
     "label": "Psychologie de la santé — Fiche unique (20 pages, 59 définitions)",
     "ue": "S1 B2",
     "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
-    "resourceId": "psychologie_sante_fiche_p01",
-    "provisional": false,
+    "resourceId": "psychologie_sante_fiche_unique_20261027",
+    "provisional": true,
     "courseId": "psychologie_sante",
     "displayTitle": "Psychologie de la santé",
     "sourceStatus": "active",
     "officialSupport": false,
-    "sourceBasis": "Transcriptions et captures provisoires du cours",
-    "sourceNote": "Support officiel non disponible : fiche fusionnée à partir des sources de cours disponibles.",
+    "sourceBasis": "Transcriptions et captures provisoires",
+    "sourceNote": "Support officiel non disponible. Fiche fusionnée à partir des séances disponibles.",
     "pageCount": 20,
     "lexiconTermCount": 59,
-    "sheetFormat": "written_revision"
+    "sheetFormat": "written_revision",
+    "primaryRevision": true
   },
   {
     "title": "UE_S1_B1_Pharmacologie_Partie01_Fiche_Revision.pdf",
