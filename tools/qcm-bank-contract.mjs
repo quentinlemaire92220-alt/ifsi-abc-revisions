@@ -1,6 +1,14 @@
 import assert from 'node:assert/strict';
 import {autonomyViolations} from '../tests/qcm-autonomy-contract.mjs';
-export function validateBank(rows,label='bank'){
+export function validateBank(rows,label='bank',options={}){
+ const glossaryCount=options.glossaryCount;
+ if(glossaryCount!==undefined){
+  assert.ok(Number.isInteger(glossaryCount)&&glossaryCount>0,label+': cardinalité de glossaire invalide');
+  const cards=rows.flatMap(q=>q.flashcards||[]);
+  assert.equal(cards.length,glossaryCount,label+': glossaire incomplet');
+  assert.equal(new Set(cards.map(c=>c.front)).size,glossaryCount,label+': définitions dupliquées');
+ }
+
  assert.ok(Array.isArray(rows)&&rows.length>0,label+': banque vide');
  assert.equal(new Set(rows.map(q=>q.id)).size,rows.length,label+': ID dupliqué');
  for(const q of rows){
@@ -12,7 +20,8 @@ export function validateBank(rows,label='bank'){
   assert.ok(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<5),q.id+': indice invalide');
   assert.equal(q.announcedCorrectCount,q.answers.length,q.id+': cardinalité divergente');
   assert.ok(q.explanation?.trim().length>20,q.id+': correction absente');
-  assert.ok(q.flashcards?.length,q.id+': cartes absentes');
+  assert.ok(Array.isArray(q.flashcards),q.id+': champ flashcards absent');
+  if(glossaryCount===undefined)assert.ok(q.flashcards.length,q.id+': cartes absentes');
   for(const f of q.flashcards){
    assert.ok(f.front?.trim()&&f.answers?.length&&f.answers.every(a=>typeof a==='string'&&a.trim())&&f.explanation?.trim(),q.id+': carte incomplète');
   }
