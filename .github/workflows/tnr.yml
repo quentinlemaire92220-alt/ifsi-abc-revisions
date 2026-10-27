@@ -564,6 +564,8 @@ jobs:
       - name: Refuser les documents de travail dans la liste étudiante
         if: ${{ !cancelled() }}
         run: node tests/student-resource-visibility-ui-v1.mjs
+      - name: Empêcher le retour du lien provisoire Drive inaccessible
+        run: node tests/p1-unavailable-provisional-link-v8443.mjs
 
       - name: Vérifier le lot droits_patients p01
         if: ${{ !cancelled() }}
