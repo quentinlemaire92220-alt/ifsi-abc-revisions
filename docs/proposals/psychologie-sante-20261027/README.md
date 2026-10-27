@@ -27,7 +27,7 @@ Cette branche est un brouillon de préparation technique, non une publication é
 ## Nouveau candidat QCM V2 — contrôle du 27/10/2026
 
 - SHA-256 PDF QCM candidat : `468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd` ; 19 pages A4.
-- Drive propriétaire privé : ID `19w1AI8MYMqdnN4-ruk1xbr4Fb-xbnqdn` ; même empreinte vérifiée sur fichier retéléchargé ; **aucun accès étudiant**.
+- Drive propriétaire privé : fichiers vérifiés après téléchargement ; identifiants et liens privés exclus du dépôt public. **Aucun accès étudiant**.
 - Parité avec la banque interactive : 350/350 champs textuels présents, 50 questions, deux à 2 bonnes réponses et 48 à 3, aucune question à 4 réponses.
 - QA machine : 19 pages rendues à 100 % et 200 %, texte sélectionnable, aucun dépassement détecté.
 - Revue graphique propriétaire : **EN ATTENTE**. Ne pas créer artificiellement d'acceptation ni de bundle final approuvé.
