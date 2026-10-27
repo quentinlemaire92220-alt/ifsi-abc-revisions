@@ -259,15 +259,24 @@ function renderCourse74(){
     const parts=uniqueSupportParts74(url,Array.isArray(child.officialSupportItems)?child.officialSupportItems.filter(p=>/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]+/.test(p.url||'')):[]);
     return '<div class="v74-resource"><b>'+title+'</b><div class="v74-subcourse-actions">'+link+'</div>'+parts.map(p=>'<a class="btn outline v74-child-part" href="'+esc74(p.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(p.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   }).join('')+'</div></div>':'';
+  // Masquage d'affichage seulement : aucune mutation des lots approuvés.
+  const p1HiddenDocument74=doc=>{
+    const url=String(doc?.url||'');
+    if(courseMeta.id==='responsabilite_exercice_professionnel')
+      return /\/(?:1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(url);
+    if(courseMeta.id==='d1_relation_soignant_soigne_ecoute_active')
+      return /^(?:Fiche de révision|Flashcards).*PROVISOIRE$/i.test(String(doc?.label||''));
+    return false;
+  };
   const qcmDocuments=[
-    ...(courseMeta.qcmPdfUrl?[{label:'QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+(courseMeta.id==='plaies_pansements'?' questions (corrigé dans un PDF séparé)':' questions et corrigé argumenté'),url:courseMeta.qcmPdfUrl}]:[]),
-    ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&isQcmDocument74(x)).map(x=>({label:x.label||'QCM PDF',url:driveUrl(x.url)})))
+    ...(courseMeta.qcmPdfUrl&&!p1HiddenDocument74({url:courseMeta.qcmPdfUrl})?[{label:'QCM PDF — '+(courseMeta.qcmPdfQuestionCount||50)+(courseMeta.id==='plaies_pansements'?' questions (corrigé dans un PDF séparé)':' questions et corrigé argumenté'),url:courseMeta.qcmPdfUrl}]:[]),
+    ...((courseMeta.additionalDocuments||[]).filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!p1HiddenDocument74(x)&&isQcmDocument74(x)).map(x=>({label:x.label||'QCM PDF',url:driveUrl(x.url)})))
   ].filter(x=>x.url);
   const qcmSeen=new Set();
   const qcmPdfCards=qcmDocuments.filter(x=>!qcmSeen.has(x.url)&&qcmSeen.add(x.url))
     .map(x=>'<div class="v74-resource"><b>📝 '+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(x.url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>').join('');
   const extraDocs=(courseMeta.additionalDocuments||[])
-    .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!isQcmDocument74(x)&&!officialDocuments.includes(x))
+    .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!p1HiddenDocument74(x)&&!isQcmDocument74(x)&&!officialDocuments.includes(x))
     .map(x=>['📄',x.label,driveUrl(x.url)]).filter(x=>x[2])
     .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
     .join('');
