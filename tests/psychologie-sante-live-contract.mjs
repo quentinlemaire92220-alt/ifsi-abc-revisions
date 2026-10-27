@@ -11,8 +11,8 @@ const reg=read('course-registry-v741.json').courses.filter(c=>c.id==='psychologi
 const sheets=read('sheets-3.json').filter(s=>s.courseId==='psychologie_sante');
 const vocals=read('vocals.json').filter(v=>v.courseId==='psychologie_sante');
 const manifest=read('docs/course-deliveries.json').courses.filter(c=>c.courseId==='psychologie_sante');
-const expected='5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761';
-const path='assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges_19p_Version_Revisee.pdf';
+const expected='2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c';
+const path='assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf';
 assert.ok(fs.existsSync(path));
 assert.equal(createHash('sha256').update(fs.readFileSync(path)).digest('hex'),expected);
 assert.equal(reg.length,1,'Cours dupliqué');
