@@ -59,6 +59,35 @@
   "interactiveQcmWording": {
     "status": "ten_autonomous_wording_adjustments",
     "answerKeysChanged": false,
-    "pdfTextParity": "needs_review_before_release"
+    "pdfTextParity": "candidate_pdf_v2_technical_match_pending_owner_acceptance",
+    "candidatePdfSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "verifiedTextFields": 350,
+    "verifiedTextFieldsExpected": 350
+  },
+  "privateReconciledQcmV2": {
+    "status": "technical_reviewed_not_authorized_for_student_release",
+    "generatedOn": "2026-10-27",
+    "fileName": "UE_B2_Psychologie_Sante_QCM_50_Aligne_Interactif_V2_CANDIDAT_RELECTURE.pdf",
+    "pageCount": 19,
+    "sha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "privateDriveFileId": "19w1AI8MYMqdnN4-ruk1xbr4Fb-xbnqdn",
+    "driveDownloadedSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "originalQcmRetainedSha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89",
+    "qcmCount": 50,
+    "choicesPerQuestion": 5,
+    "correctAnswersDistribution": {
+      "two": 2,
+      "three": 48,
+      "four": 0
+    },
+    "questionChoiceExplanationFieldsPresent": 350,
+    "questionChoiceExplanationFieldsExpected": 350,
+    "renderedPages100Percent": 19,
+    "renderedPages200Percent": 19,
+    "selectableText": true,
+    "noOutOfBoundsText": true,
+    "sourceStatus": "provisional_official_support_missing",
+    "ownerGraphicReview": "pending",
+    "authorizedForStudents": false
   }
 }
