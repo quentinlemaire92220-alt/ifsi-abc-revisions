@@ -22,6 +22,14 @@ Cet espace ne contient que des données pédagogiques générées pour le candid
 
 **Note d'architecture** : les blocages TNR du lot précédent provenaient d'une activation prématurée (`questions-5.json`, `sheets-3.json`, `course-registry-v741.json`) sans déclaration dans `docs/course-deliveries.json`. Les garde-fous n'ont pas été désactivés : les fichiers actifs, les numéros de version, le catalogue et le test d'inventaire sont rétablis à l'identique de `main`. La livraison publique fera l'objet d'une modification séparée, accompagnée de l'attestation graphique, de l'empreinte exacte et de la preuve d'accessibilité.
 
+## GO graphique et copie nettoyée du 27 octobre 2026
+
+Le propriétaire a répondu **« ok go »** à la question de validation graphique sur le QCM V2 exact de 19 pages, SHA-256 `468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd`.
+
+L'inspection a révélé ensuite la mention de travail « CANDIDAT V2 » sur les 19 pages. Une nouvelle version strictement identique pour les questions, choix, réponses, explications et pagination a été préparée en privé, avec uniquement le bandeau remplacé par « VERSION RÉVISÉE ». Son SHA-256 est `e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa`.
+
+**Cette copie nettoyée n'est pas encore signée graphiquement pour ses nouveaux octets.** Le contrôle technique prouve une parité de texte page par page (hors bandeau), pas une nouvelle décision du propriétaire. Les PDF restent hors des assets publics et aucune livraison étudiante n'est déclarée.
+
 Cette branche est un brouillon de préparation technique, non une publication étudiante.
 
 ## Nouveau candidat QCM V2 — contrôle du 27/10/2026
