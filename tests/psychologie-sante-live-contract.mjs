@@ -48,6 +48,10 @@ const cards=deck.filter(c=>c.courseId==='psychologie_sante');
 const authored=cards.filter(c=>String(c.qid||'').startsWith('psychologie_sante_p01_'));
 assert.equal(authored.length,59,'Le moteur doit rendre exactement les 59 nouvelles cartes rédigées');
 assert.ok(cards.length>=59,'Ne pas supprimer les fiches de vocabulaire historiques');
-const cardTexts=new Set(authored.map(c=>c.front));
-for(const d of definitions)assert.ok(cardTexts.has(d.front),'Carte absente du rendu : '+d.term);
+const cardsBySource=new Map(authored.map(c=>[c.sourceFront||c.front,c]));
+for(const d of definitions){
+ const card=cardsBySource.get(d.front);
+ assert.ok(card,'Carte absente du rendu : '+d.term+' ; premiers rectos reels='+JSON.stringify(authored.slice(0,3).map(c=>({front:c.front,sourceFront:c.sourceFront}))));
+ assert.ok(card.answers.some(a=>a===d.back),'Définition modifiée par le moteur : '+d.term);
+}
 console.log('PASS publication candidat : 3 PDF intègres, 50 QCM actifs dans chargeur, 59 cartes rendues et 2 vocaux préservés.');
