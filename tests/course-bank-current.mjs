@@ -15,6 +15,10 @@ for(const name of files){
  const rows=JSON.parse(fs.readFileSync(folder+'/'+name,'utf8'));
  // Only authored standalone banks use this contract. Legacy bank formats retain their gates.
  if(!Array.isArray(rows)||!rows[0]?.flashcards)continue;
- n+=validateBank(rows,name);
+ const delivery=stage==='publication' ? JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8')).courses.find(c=>c.qcmBank===folder+'/'+name) : null;
+ const glossaryOnly=delivery?.deliveryMode==='existing_course_revision' &&
+  delivery?.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only' &&
+  delivery?.qcmCount===50 && delivery?.flashcardCount===59;
+ n+=validateBank(rows,name,glossaryOnly?{glossaryCount:59}:{});
 }
 console.log('PASS contrats '+stage+' : '+n+' QCM/cartes');

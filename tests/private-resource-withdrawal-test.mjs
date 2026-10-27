@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {isDeepStrictEqual} from 'node:util';
+import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 import {runInNewContext} from 'node:vm';
 import {
  isScriptWorkItem,expectedPublicCourseAfterWithdrawal,
@@ -58,6 +59,41 @@ function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery)
  const previousBanks=expected.qcmBanks||[expected.qcmBank].filter(Boolean);
  assert.ok(previousBanks.every(p=>(nextDelivery.qcmBanks||[nextDelivery.qcmBank]).includes(p)),id+': ancienne banque retirée');
  assert.ok(nextDelivery.qcmCount>=expected.qcmCount&&nextDelivery.flashcardCount>=expected.flashcardCount,id+': contenu historique tronqué');
+}
+
+// Complément QCM d'un cours déjà visible avant l'introduction du manifeste des livraisons.
+// N'autorise ni nouvelle fiche ni MP3 ni autre mutation du cours historique.
+function preserveApprovedFirstManifestAddition(oldCourse,nextCourse,nextDelivery){
+ const id=oldCourse.id;
+ assert.equal(id,'psychologie_sante','Premier manifeste permis seulement pour la revue actuelle');
+ assert.equal(nextDelivery.courseId,id);
+ assert.equal(nextDelivery.deliveryMode,'existing_course_revision');
+ assert.equal(nextDelivery.publicationSubset,'qcm_pdf_50_qcm_59_interactive_flashcards_only');
+ assert.equal(nextDelivery.publicationApproval?.status,'approved');
+ assert.equal(nextDelivery.publicationApproval.authorization,'explicit_go_publication');
+ assert.equal(nextDelivery.publicationApproval.scope,'course_package');
+ assert.deepEqual(without(nextCourse,['additionalDocuments','flashcardTarget']),
+  without(expectedPublicCourseAfterWithdrawal(oldCourse),['additionalDocuments','flashcardTarget']),
+  id+': identité ou ressources historiques modifiées');
+ assert.equal(nextCourse.flashcardTarget,59,'Nombre de cartes divergent');
+ const historical=publicDocuments(oldCourse),current=nextCourse.additionalDocuments||[];
+ assert.deepEqual(current.filter(d=>historical.some(o=>isDeepStrictEqual(o,d))),historical,
+  id+': document étudiant historique modifié');
+ const fresh=current.filter(d=>!historical.some(o=>isDeepStrictEqual(o,d)));
+ assert.equal(fresh.length,1,id+': seul le PDF QCM a reçu un GO graphique');
+ for(const doc of fresh){
+  assert.ok(visible(doc)&&!isScriptWorkItem(doc),id+': fichier de travail interdit');
+  const assetId=verifyPublicArtifact(nextDelivery,doc.url);
+  assert.equal(assetId,'psychologie_sante_qcm_v3_19p_20261027');
+  assert.equal(nextDelivery.artifactSha256s[assetId],
+   '2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c');
+ }
+ assert.equal(nextDelivery.qcmCount,50);
+ assert.equal(nextDelivery.flashcardCount,59);
+ assert.equal(nextDelivery.partDeliveries?.length,1);
+ assert.equal(nextDelivery.partDeliveries[0].qcmQuestionIds?.length,50);
+ assert.deepEqual(nextDelivery.partDeliveries[0].sheetResourceIds,[],'Nouvelle fiche sans revue');
+ assert.deepEqual(nextDelivery.partDeliveries[0].vocalIds,[],'Nouveaux MP3 non validés');
 }
 
 const approvedUpdates=new Set(currentMan.courses.filter(c=>
@@ -135,7 +171,12 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  const oldCourse=oldReg.courses.find(c=>c.id===course.id);
  assert.ok(oldCourse,'Complément sans cours historique');
  if(currentMan.courses.find(c=>c.courseId===course.id)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(course.id,base);
- else preserveApprovedAddition(oldCourse,course,oldMan.courses.find(c=>c.courseId===course.id),currentMan.courses.find(c=>c.courseId===course.id));
+ else {
+  const previousDelivery=oldMan.courses.find(c=>c.courseId===course.id);
+  const nextDelivery=currentMan.courses.find(c=>c.courseId===course.id);
+  if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
+  else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
+ }
  Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));
 }
 assert.deepEqual(registryForWithdrawal,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
@@ -167,7 +208,13 @@ const actualMan=clone(currentMan);
 const newDeliveryIds=new Set(currentMan.courses.filter(c=>!oldMan.courses.some(o=>o.courseId===c.courseId)).map(c=>c.courseId));
 for(const id of newDeliveryIds){
  assert.ok(approvedUpdates.has(id),'Lot de cours ajoute sans approbation : '+id);
- assert.ok(newCourses.some(c=>c.id===id),'Lot nouveau orphelin : '+id);
+ const existingCourseFirstManifest=(id==='psychologie_sante' &&
+  oldReg.courses.some(c=>c.id===id) &&
+  currentMan.courses.some(c=>c.courseId===id &&
+   c.deliveryMode==='existing_course_revision' &&
+   c.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only'));
+ assert.ok(newCourses.some(c=>c.id===id)||existingCourseFirstManifest,
+  'Lot nouveau orphelin : '+id);
 }
 actualMan.courses=actualMan.courses.filter(c=>!newDeliveryIds.has(c.courseId));
 const sheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json'));

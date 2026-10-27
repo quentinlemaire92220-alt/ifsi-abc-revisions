@@ -2745,6 +2745,178 @@
         "transcriptCount": 1,
         "relatedCm4Consulted": true
       }
+    },
+    {
+      "courseId": "psychologie_sante",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "existing_course_revision",
+      "publicationSubset": "qcm_pdf_50_qcm_59_interactive_flashcards_only",
+      "publicationHost": "github_pages",
+      "packFormat": "written_v1",
+      "sourceBasis": {
+        "kind": "transcriptions_and_captures_provisional",
+        "nativeSupportAvailable": false,
+        "officialSupportPending": true
+      },
+      "qcmBank": "data/course-banks/psychologie_sante.json",
+      "qcmCount": 50,
+      "flashcardCount": 59,
+      "partDeliveries": [
+        {
+          "partId": "p01",
+          "validated": true,
+          "status": "partial",
+          "qcmQuestionIds": [
+            "psychologie_sante_p01_001",
+            "psychologie_sante_p01_002",
+            "psychologie_sante_p01_003",
+            "psychologie_sante_p01_004",
+            "psychologie_sante_p01_005",
+            "psychologie_sante_p01_006",
+            "psychologie_sante_p01_007",
+            "psychologie_sante_p01_008",
+            "psychologie_sante_p01_009",
+            "psychologie_sante_p01_010",
+            "psychologie_sante_p01_011",
+            "psychologie_sante_p01_012",
+            "psychologie_sante_p01_013",
+            "psychologie_sante_p01_014",
+            "psychologie_sante_p01_015",
+            "psychologie_sante_p01_016",
+            "psychologie_sante_p01_017",
+            "psychologie_sante_p01_018",
+            "psychologie_sante_p01_019",
+            "psychologie_sante_p01_020",
+            "psychologie_sante_p01_021",
+            "psychologie_sante_p01_022",
+            "psychologie_sante_p01_023",
+            "psychologie_sante_p01_024",
+            "psychologie_sante_p01_025",
+            "psychologie_sante_p01_026",
+            "psychologie_sante_p01_027",
+            "psychologie_sante_p01_028",
+            "psychologie_sante_p01_029",
+            "psychologie_sante_p01_030",
+            "psychologie_sante_p01_031",
+            "psychologie_sante_p01_032",
+            "psychologie_sante_p01_033",
+            "psychologie_sante_p01_034",
+            "psychologie_sante_p01_035",
+            "psychologie_sante_p01_036",
+            "psychologie_sante_p01_037",
+            "psychologie_sante_p01_038",
+            "psychologie_sante_p01_039",
+            "psychologie_sante_p01_040",
+            "psychologie_sante_p01_041",
+            "psychologie_sante_p01_042",
+            "psychologie_sante_p01_043",
+            "psychologie_sante_p01_044",
+            "psychologie_sante_p01_045",
+            "psychologie_sante_p01_046",
+            "psychologie_sante_p01_047",
+            "psychologie_sante_p01_048",
+            "psychologie_sante_p01_049",
+            "psychologie_sante_p01_050"
+          ],
+          "sheetResourceIds": [],
+          "infographicResourceIds": [],
+          "vocalIds": []
+        }
+      ],
+      "artifactSha256s": {
+        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c"
+      },
+      "publicArtifacts": {
+        "qcm": {
+          "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
+          "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+          "pageCount": 19,
+          "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
+        }
+      },
+      "qcmGraphicOwnerReview": {
+        "status": "owner_accepted",
+        "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+        "pageCount": 19,
+        "reviewBasis": "Accord de poursuite de l'utilisateur apres remise du PDF V3 precis; verification graphique systematique sur rendus de toutes pages et controle automatique 100/200%",
+        "reviewDate": "2026-10-27",
+        "textParity": "50_of_50_exact_bank_verified"
+      },
+      "deferredResources": [
+        {
+          "type": "new_revision_sheet",
+          "reason": "owner_graphic_acceptance_not_individually_attested"
+        },
+        {
+          "type": "new_flashcards_pdf",
+          "reason": "owner_graphic_acceptance_not_individually_attested"
+        },
+        {
+          "type": "new_synthetic_audio",
+          "reason": "listening_review_not_approved"
+        }
+      ],
+      "existingResourcesPreserved": {
+        "legacySheet": "psychologie_sante_fiche_p01",
+        "audioCount": 2
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-27T15:45:12.524Z",
+        "bundleSha256": "c193c54731eff1a3a2b63ab05b288103a0dfd9d9de2454bec867c9440871ee1e",
+        "scopeLimit": "qcm_pdf_50_questions_59_interactive_flashcards_only"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+            "pageCount": 19,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-27T15:45:12.520Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
+          }
+        }
+      }
     }
   ],
   "supplementalResourceApprovals": [

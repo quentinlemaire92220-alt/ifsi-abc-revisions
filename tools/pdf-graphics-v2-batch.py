@@ -22,7 +22,10 @@ def main():
         changed=not old or (arts!=old.get("publicArtifacts")) or any(
             isinstance(a,dict) and a.get("path") in modified for a in (arts or {}).values())
         if not changed:continue
-        if not arts or "sheet" not in arts:
+        qcm_only=(c.get("deliveryMode")=="existing_course_revision" and
+                  c.get("publicationSubset")=="qcm_pdf_50_qcm_59_interactive_flashcards_only" and
+                  set((arts or {}).keys())=={"qcm"})
+        if not arts or ("sheet" not in arts and not qcm_only):
             fail.append(c["courseId"]+": PDFs de publication non declares")
             continue
         for role,art in arts.items():

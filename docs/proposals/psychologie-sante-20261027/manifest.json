@@ -1,0 +1,129 @@
+{
+  "schema": "ifsi_psychologie_sante_prepublication_v1",
+  "courseId": "psychologie_sante",
+  "asOf": "2026-10-27",
+  "state": "draft_branch_not_student_visible",
+  "questions": 50,
+  "definitions": 59,
+  "sourceStatus": "provisional_official_support_pending",
+  "correctedDefinitionId": "psychologie_sante_p01_f034",
+  "existingResourceId": "psychologie_sante_fiche_p01",
+  "existingAudioToPreserve": 2,
+  "newSyntheticAudioApproved": false,
+  "authorizedStudentPublicationGo": true,
+  "authorizedGitHubMergeGo": true,
+  "assets": {
+    "sheet": {
+      "pages": 18,
+      "sha256": "c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486"
+    },
+    "qcm": {
+      "pages": 21,
+      "sha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89"
+    },
+    "flashcards": {
+      "pages": 13,
+      "sha256": "9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a"
+    }
+  },
+  "driveByteVerification": {
+    "checkedAt": "2026-10-27",
+    "method": "download_and_compare_sha256",
+    "scope": "three_final_pdfs_private_only",
+    "sheet": {
+      "status": "verified",
+      "pages": 18,
+      "sha256": "c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486"
+    },
+    "qcm": {
+      "status": "verified",
+      "pages": 21,
+      "sha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89"
+    },
+    "flashcards": {
+      "status": "verified",
+      "pages": 13,
+      "sha256": "9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a"
+    },
+    "older_mismatched_transfers": "retained_private_and_marked_DO_NOT_PUBLISH"
+  },
+  "publicationGates": {
+    "humanGraphics": "qcm_clean_final_sha_owner_accepted; sheet_and_flashcards_not_individually_attested",
+    "studentLinks": "not_enabled",
+    "activeApplicationIntegration": "draft_only",
+    "fourNewAudios": "excluded_pending_listening",
+    "officialSupport": "pending",
+    "mergeAuthorization": "conditional_go_received_2026-10-27"
+  },
+  "mergeGoScope": "conditional_after_full_tnr_and_owner_graphic_signoff",
+  "interactiveQcmWording": {
+    "status": "ten_autonomous_wording_adjustments",
+    "answerKeysChanged": false,
+    "pdfTextParity": "approved_v2_source_350_fields_clean_candidate_equivalent",
+    "candidatePdfSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "verifiedTextFields": 350,
+    "verifiedTextFieldsExpected": 350
+  },
+  "privateReconciledQcmV2": {
+    "status": "technical_reviewed_not_authorized_for_student_release",
+    "generatedOn": "2026-10-27",
+    "fileName": "UE_B2_Psychologie_Sante_QCM_50_Aligne_Interactif_V2_CANDIDAT_RELECTURE.pdf",
+    "pageCount": 19,
+    "sha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "driveDownloadedSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "originalQcmRetainedSha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89",
+    "qcmCount": 50,
+    "choicesPerQuestion": 5,
+    "correctAnswersDistribution": {
+      "two": 2,
+      "three": 48,
+      "four": 0
+    },
+    "questionChoiceExplanationFieldsPresent": 350,
+    "questionChoiceExplanationFieldsExpected": 350,
+    "renderedPages100Percent": 19,
+    "renderedPages200Percent": 19,
+    "selectableText": true,
+    "noOutOfBoundsText": true,
+    "sourceStatus": "provisional_official_support_missing",
+    "ownerGraphicReview": "owner_accepted_exact_sha",
+    "authorizedForStudents": false
+  },
+  "ownerGraphicDecision": {
+    "courseId": "psychologie_sante",
+    "acceptedAsset": "UE_B2_Psychologie_Sante_QCM_50_Aligne_Interactif_V2_CANDIDAT_RELECTURE.pdf",
+    "acceptedSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "approvalBasis": "GO explicite du propriétaire après lien vers PDF V2 de 19 pages dans la conversation du 27 octobre 2026",
+    "approvedAtDate": "2026-10-27",
+    "scope": "exact_byte_graphic_acceptance_only",
+    "status": "owner_accepted_original_v2"
+  },
+  "cleanPublicCandidate": {
+    "filename": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT_A_VALIDER.pdf",
+    "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "pages": 19,
+    "bytes": 127824,
+    "driveFileId": "1oX4lEKUS7sKigEpyipHMsjY46wGEB4Jw",
+    "driveVisibility": "owner_only",
+    "verifiedDriveDownloadSha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "onlyTextDifferenceFromAcceptedV2": "CANDIDAT V2 -> VERSION RÉVISÉE",
+    "allPagesTextEquivalentAfterLabelSubstitution": true,
+    "noOutOfBoundsText": true,
+    "publicationEligible": false,
+    "ownerAcceptance": "owner_accepted_exact_sha_2026-10-27",
+    "previouslyGeneratedLocalSha256Superseded": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa",
+    "ownerAcceptanceBasis": "GO explicite de l'utilisateur après consultation de la copie finale nettoyée SHA-256 5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "qcmGraphicEligible": true,
+    "publicationBlockers": [
+      "complete_package_approval_and_published_student_links_pending",
+      "sheet_and_flashcards_individual_graphic_reviews_not_attested"
+    ]
+  },
+  "ownerGraphicDecisionClean": {
+    "asset": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT_A_VALIDER.pdf",
+    "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "date": "2026-10-27",
+    "basis": "L'utilisateur a répondu « ok go » à la demande explicite de confirmation graphique du PDF final nettoyé dans le chat",
+    "scope": "qcm_final_exact_bytes_only"
+  }
+}

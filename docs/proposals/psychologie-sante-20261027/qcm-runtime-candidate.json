@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "psychologie_sante_p01_001",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 1,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "easy",
+    "question": "La psychologie de la santé étudie notamment…",
+    "choices": [
+      "les seuls résultats biologiques.",
+      "les déterminants biologiques, psychologiques et sociaux.",
+      "le vécu subjectif de la maladie.",
+      "uniquement la prescription médicale.",
+      "les comportements de santé."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La psychologie de la santé adopte une approche biopsychosociale : elle relie facteurs personnels, sociaux, prévention, vécu et trajectoire de soin. Elle ne se limite ni à l’organe ni au médicament.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_002",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 2,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "easy",
+    "question": "Que faut-il retenir de la définition de la santé formulée par l’OMS ?",
+    "choices": [
+      "Elle inclut le bien-être physique.",
+      "Elle se réduit à l’absence de maladie.",
+      "Elle inclut le bien-être mental et social.",
+      "Elle impose une mesure biologique unique.",
+      "Sa notion de « complet bien-être » peut être discutée."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La définition de l’OMS dépasse l’absence d’affection et prend en compte trois dimensions ; le cours en discute la dimension idéale et relativement statique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_003",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 3,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "medium",
+    "question": "À propos de la santé perçue, quelles propositions sont justes ?",
+    "choices": [
+      "Elle correspond à l’évaluation que le patient fait de sa propre santé.",
+      "Elle est toujours identique aux examens.",
+      "Elle dépend du vécu personnel.",
+      "Elle peut différer de l’évaluation des professionnels.",
+      "Elle exclut les émotions."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La santé perçue appartient au point de vue du sujet ; elle n’est pas réductible aux mesures biomédicales.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_004",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 4,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "easy",
+    "question": "Quelles dimensions font partie de la qualité de vie ?",
+    "choices": [
+      "le fonctionnement physique.",
+      "la situation sociale.",
+      "les ressources et le logement.",
+      "uniquement les constantes vitales.",
+      "exclusivement la durée du traitement."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La qualité de vie comporte des dimensions physique, psychique, sociale et environnementale ; sa mesure ne peut se résumer aux constantes ou au traitement.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_005",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 5,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "medium",
+    "question": "Une personne vit avec une maladie chronique et dit garder une bonne qualité de vie. Que peut-on conclure ?",
+    "choices": [
+      "Cette appréciation peut être authentique.",
+      "Elle prouve l’absence de maladie.",
+      "La qualité de vie est subjective et multidimensionnelle.",
+      "Les professionnels doivent nécessairement la corriger.",
+      "L’évaluation personnelle doit être entendue."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La qualité de vie ne dépend pas mécaniquement de la présence d’un diagnostic : autonomie, sens, soutien et ressources comptent.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_006",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 6,
+    "theme": "Santé et qualité de vie",
+    "difficulty": "hard",
+    "question": "Lorsqu’une infirmière et un patient évaluent différemment la santé de ce dernier…",
+    "choices": [
+      "l’hétéro-évaluation peut différer de l’auto-évaluation.",
+      "il faut exclure la parole du patient.",
+      "il faut explorer les raisons de l’écart.",
+      "la perception du patient devient forcément fausse.",
+      "les deux regards peuvent éclairer la situation."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Comparer sans hiérarchisation automatique permet de comprendre les écarts de perspectives et d’adapter l’accompagnement.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_007",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 7,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "easy",
+    "question": "Dans la distinction disease / illness / sickness, illness désigne…",
+    "choices": [
+      "l’expérience subjective de la maladie.",
+      "la seule classification diagnostique.",
+      "le sens vécu et exprimé par la personne.",
+      "exclusivement l’évolution biologique.",
+      "un concept identique au terme disease."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Illness renvoie à ce que le patient éprouve et raconte ; disease renvoie à la dimension biomédicale, sickness à la dimension sociale.",
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "psychologie_sante_p01_008",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 8,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "easy",
+    "question": "La notion de sickness se rapporte notamment…",
+    "choices": [
+      "à la reconnaissance sociale de la maladie.",
+      "à la stigmatisation éventuelle.",
+      "aux relations entre maladie et contexte culturel.",
+      "uniquement à une prise de sang.",
+      "seulement à la douleur ressentie."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Sickness décrit le statut et les conséquences sociales de la maladie ; elle diffère des processus biologiques et de l’expérience intime.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_009",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 9,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "medium",
+    "question": "Quelles affirmations correspondent à l’approche de la douleur présentée ?",
+    "choices": [
+      "Elle comporte une dimension sensorielle.",
+      "Une douleur nécessite toujours une lésion prouvée.",
+      "Elle comporte une dimension émotionnelle.",
+      "Une absence d’anomalie à l’examen permet de la nier.",
+      "Elle est personnelle et subjective."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le cours insiste sur l’expérience sensorielle et émotionnelle : la douleur existe aussi sans lésion objectivable.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_010",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 10,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "hard",
+    "question": "Un patient exprime une douleur sans anomalie identifiée. Quelle posture est adaptée ?",
+    "choices": [
+      "Accueillir la plainte sans disqualification.",
+      "Dire que le patient simule.",
+      "Évaluer et transmettre le vécu douloureux.",
+      "Déduire que la cause est exclusivement psychique.",
+      "Chercher une prise en charge adaptée."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’absence de lésion visible n’annule pas la douleur. Elle n’autorise ni accusation de simulation ni réduction psychologique automatique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_011",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 11,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "medium",
+    "question": "Les représentations personnelles de la maladie peuvent concerner…",
+    "choices": [
+      "sa cause supposée.",
+      "son avenir et sa durée.",
+      "les possibilités de la contrôler.",
+      "seulement son code diagnostique.",
+      "uniquement les paroles du soignant."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les représentations explorent cause, identité, conséquences, temporalité, contrôle et traitement ; ce sont des croyances du patient.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_012",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 12,
+    "theme": "Maladie, douleur et représentations",
+    "difficulty": "hard",
+    "question": "Une personne associe sa maladie à une épreuve familiale et refuse un soin. Que doit faire le soignant ?",
+    "choices": [
+      "Explorer le sens donné à la maladie.",
+      "Conclure à une mauvaise volonté certaine.",
+      "Distinguer croyance personnelle et cause médicalement établie.",
+      "Nier immédiatement toute inquiétude.",
+      "Rechercher les besoins de contrôle du patient."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Comprendre la représentation ne signifie pas la valider comme étiologie ; cela permet d’identifier les obstacles et de dialoguer.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_013",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 13,
+    "theme": "Déterminants et modèle intégratif",
+    "difficulty": "easy",
+    "question": "Quels niveaux sont articulés dans le modèle intégratif de la santé ?",
+    "choices": [
+      "des prédicteurs.",
+      "des modérateurs transactionnels.",
+      "des issues ou critères d’ajustement.",
+      "uniquement une cause génétique.",
+      "une certitude de maladie à partir d’un seul facteur."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Il distingue des facteurs de risque initiaux, l’évaluation et les stratégies de la personne, puis les conséquences d’ajustement.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_014",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 14,
+    "theme": "Déterminants et modèle intégratif",
+    "difficulty": "medium",
+    "question": "Un facteur de risque…",
+    "choices": [
+      "augmente une probabilité sans déterminer le destin individuel.",
+      "permet de prédire à coup sûr un diagnostic.",
+      "peut être personnel ou environnemental.",
+      "doit être distingué d’un déclencheur ou stresseur.",
+      "rend inutile l’étude des ressources protectrices."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La notion est probabiliste et contextuelle ; antécédents, vulnérabilité, déclencheurs et protection ne se confondent pas.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_015",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 15,
+    "theme": "Déterminants et modèle intégratif",
+    "difficulty": "medium",
+    "question": "Parmi les éléments suivants, lesquels sont des déterminants socio-environnementaux abordés ?",
+    "choices": [
+      "la qualité du logement.",
+      "l’accès aux soins.",
+      "les ressources économiques.",
+      "une affirmation que la culture suffit à expliquer une maladie.",
+      "l’absence de toute inégalité de santé."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les conditions matérielles, sociales, professionnelles et l’accès au soin influencent les trajectoires de santé.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_016",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 16,
+    "theme": "Déterminants et modèle intégratif",
+    "difficulty": "hard",
+    "question": "Une personne fait face à la même contrainte qu’une autre mais la vit différemment. Qu’est-ce qui l’explique dans ce modèle ?",
+    "choices": [
+      "la façon d’évaluer la situation.",
+      "les ressources perçues et mobilisées.",
+      "l’histoire personnelle.",
+      "une réaction obligatoirement identique pour tous.",
+      "l’impossibilité d’agir sur l’expérience du stress."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les processus transactionnels modulent l’effet des facteurs initiaux ; le vécu est dynamique, non mécanique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_017",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 17,
+    "theme": "Soutien social",
+    "difficulty": "easy",
+    "question": "Le réseau social d’une personne correspond…",
+    "choices": [
+      "aux personnes avec lesquelles elle entretient des relations.",
+      "à une garantie de soutien utile.",
+      "à l’ensemble de ses contacts et liens.",
+      "au sentiment d’être aidée uniquement.",
+      "exclusivement aux professionnels de santé."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Un réseau est un ensemble de liens ; la taille du réseau ne prouve pas le caractère adapté du soutien reçu ou perçu.",
+    "announcedCorrectCount": 2
+  },
+  {
+    "id": "psychologie_sante_p01_018",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 18,
+    "theme": "Soutien social",
+    "difficulty": "medium",
+    "question": "Le soutien social perçu désigne…",
+    "choices": [
+      "l’appréciation subjective de la disponibilité d’une aide.",
+      "uniquement le nombre de contacts.",
+      "le sentiment de pouvoir compter sur un soutien adapté.",
+      "une mesure obligatoirement égale au soutien reçu.",
+      "la qualité de l’aide telle que la personne l’imagine."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le soutien perçu est une évaluation subjective de la disponibilité et de l’adéquation de l’aide, distincte du soutien reçu.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_019",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 19,
+    "theme": "Soutien social",
+    "difficulty": "medium",
+    "question": "Le soutien social reçu et le soutien mobilisé se distinguent parce que…",
+    "choices": [
+      "le soutien reçu correspond à l’aide effectivement apportée.",
+      "le soutien mobilisé implique une démarche de sollicitation.",
+      "ils sont toujours identiques au soutien perçu.",
+      "ils ne concernent jamais l’aide matérielle.",
+      "une personne peut solliciter du soutien sans se sentir soutenue."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Le reçu est l’aide effective ; le mobilisé désigne des efforts pour obtenir de l’aide ; le perçu renseigne le sentiment d’être soutenu.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_020",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 20,
+    "theme": "Soutien social",
+    "difficulty": "easy",
+    "question": "Quelles situations correspondent à des formes de soutien social ?",
+    "choices": [
+      "Une aide matérielle pour le logement.",
+      "Une écoute empathique.",
+      "Une information pratique pour décider.",
+      "Une relation nécessairement contraignante.",
+      "L’obligation de n’obtenir que l’aide familiale."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le soutien peut être instrumental, émotionnel, informatif ou lié à la reconnaissance et à l’intégration sociale.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_021",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 21,
+    "theme": "Soutien social",
+    "difficulty": "hard",
+    "question": "Une personne a beaucoup de connaissances mais dit « personne ne m’aide quand ça va mal ». Quelles pistes sont pertinentes ?",
+    "choices": [
+      "Explorer la qualité du soutien perçu.",
+      "Déduire automatiquement que son soutien est suffisant.",
+      "Distinguer quantité de relations et disponibilité réelle.",
+      "Examiner la possibilité de demander une aide adaptée.",
+      "Répondre que son ressenti est faux car son carnet d’adresses est rempli."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le soutien social n’est pas une simple quantité de liens : sa disponibilité, sa pertinence et son vécu méritent une exploration.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_022",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 22,
+    "theme": "Vulnérabilité et résilience",
+    "difficulty": "easy",
+    "question": "La vulnérabilité peut dépendre…",
+    "choices": [
+      "de caractéristiques individuelles.",
+      "du contexte relationnel et socio-économique.",
+      "de ressources et carences de l’environnement.",
+      "uniquement de l’âge.",
+      "exclusivement de la volonté."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours distingue les composantes personnelles et environnementales : elles interagissent sans condamnation mécanique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_023",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 23,
+    "theme": "Vulnérabilité et résilience",
+    "difficulty": "medium",
+    "question": "La résilience présentée en cours…",
+    "choices": [
+      "suppose qu’une épreuve ou une adversité a été rencontrée.",
+      "signifie une invulnérabilité permanente.",
+      "renvoie à la capacité de poursuivre une construction.",
+      "peut mobiliser des ressources extérieures.",
+      "garantit l’absence de souffrance."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le concept concerne le développement et l’ajustement malgré l’adversité, sans nier l’épreuve ni promettre une guérison émotionnelle.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_024",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 24,
+    "theme": "Vulnérabilité et résilience",
+    "difficulty": "medium",
+    "question": "À propos des formulations de Rutter et de Cyrulnik…",
+    "choices": [
+      "elles insistent sur la poursuite du développement ou de la vie après l’adversité.",
+      "une citation partielle suffit à l’examen selon Mme Katir.",
+      "Plusieurs définitions de la résilience sont complémentaires.",
+      "leurs formulations sont à restituer en phrases complètes.",
+      "elles excluent les facteurs environnementaux."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Mme Katir demande les définitions entières, en phrases rédigées. Les différentes références décrivent la construction malgré des conditions adverses.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_025",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 25,
+    "theme": "Vulnérabilité et résilience",
+    "difficulty": "medium",
+    "question": "Les travaux longitudinaux d’Emmy Werner sont évoqués pour…",
+    "choices": [
+      "illustrer des trajectoires adaptées malgré certains facteurs de risque.",
+      "affirmer que tous les enfants exposés deviennent malades.",
+      "montrer l’importance de facteurs protecteurs.",
+      "établir que la résilience est identique pour tous.",
+      "aider à réfléchir au devenir dans le temps."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le repère historique sert à montrer des trajectoires différenciées, influencées par les ressources personnelles et protectrices.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_026",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 26,
+    "theme": "Vulnérabilité et résilience",
+    "difficulty": "hard",
+    "question": "Que peut-on affirmer au sujet des traits de personnalité et de l’hostilité ?",
+    "choices": [
+      "Un trait isolé ne permet pas d’établir qu’il cause une maladie.",
+      "L’hostilité associe des composantes cognitives, émotionnelles et comportementales.",
+      "Une attitude hostile justifie un jugement moral du soignant.",
+      "La méfiance peut modifier l’évaluation d’une situation.",
+      "Un trait rend toute intervention inutile."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours mobilise ces notions comme facteurs pouvant influer sur le stress et les relations, sans causalité individuelle simpliste.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_027",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 27,
+    "theme": "Stress et coping",
+    "difficulty": "easy",
+    "question": "Dans le modèle transactionnel du stress, l’évaluation primaire porte sur…",
+    "choices": [
+      "la signification de la situation pour la personne.",
+      "les ressources disponibles exclusivement.",
+      "une menace, une perte ou un défi.",
+      "le diagnostic biologique certain.",
+      "l’appréciation de l’événement vécu."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "L’évaluation primaire caractérise ce que représente l’événement ; les ressources sont évaluées principalement lors de l’évaluation secondaire.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_028",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 28,
+    "theme": "Stress et coping",
+    "difficulty": "medium",
+    "question": "L’évaluation secondaire concerne notamment…",
+    "choices": [
+      "les ressources personnelles estimées.",
+      "les aides sociales disponibles.",
+      "les possibilités d’agir.",
+      "la nature anatomique obligatoire de la maladie.",
+      "la certitude de maîtriser tous les événements."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Elle examine les moyens d’action et les ressources perçues, sans garantir un contrôle complet.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_029",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 29,
+    "theme": "Stress et coping",
+    "difficulty": "medium",
+    "question": "Le contrôle perçu…",
+    "choices": [
+      "renvoie à une représentation de sa capacité d’agir.",
+      "est toujours identique au contrôle objectif.",
+      "peut porter sur les conséquences de la situation.",
+      "peut porter sur ses propres réactions.",
+      "rend toujours inutile le soutien des proches."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le contrôle perçu désigne un sentiment de capacité d’action ; il peut soutenir l’ajustement sans supprimer les limites réelles.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_030",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 30,
+    "theme": "Stress et coping",
+    "difficulty": "easy",
+    "question": "Le coping centré sur le problème peut consister à…",
+    "choices": [
+      "chercher des informations fiables.",
+      "planifier une action possible.",
+      "agir concrètement sur la difficulté.",
+      "nier obligatoirement toute réalité.",
+      "considérer toute émotion comme interdite."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Ce coping vise à agir sur la situation ou à renforcer les ressources pour y faire face.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_031",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 31,
+    "theme": "Stress et coping",
+    "difficulty": "easy",
+    "question": "Le coping centré sur l’émotion peut inclure…",
+    "choices": [
+      "une réévaluation positive.",
+      "des stratégies de mise à distance.",
+      "des efforts pour gérer la réponse émotionnelle.",
+      "uniquement la réparation du problème matériel.",
+      "le refus de ressentir toute émotion comme définition unique."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le coping émotionnel cherche à modifier la manière de vivre l’émotion ; la réévaluation positive ne supprime pas les faits.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_032",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 32,
+    "theme": "Stress et coping",
+    "difficulty": "medium",
+    "question": "Le coping centré sur la recherche de soutien comprend…",
+    "choices": [
+      "demander une écoute.",
+      "chercher des conseils.",
+      "solliciter une aide matérielle.",
+      "ne jamais parler à l’entourage.",
+      "remplacer systématiquement la décision médicale par l’opinion d’un proche."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Ce registre rassemble des efforts actifs de recherche d’un soutien émotionnel, informatif ou pratique.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_033",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 33,
+    "theme": "Stress et coping",
+    "difficulty": "hard",
+    "question": "Comment distinguer les stratégies de coping et les mécanismes de défense ?",
+    "choices": [
+      "Le coping est décrit comme des efforts cognitifs et comportementaux d’ajustement.",
+      "Les mécanismes de défense sont présentés comme largement inconscients.",
+      "Ils sont exactement synonymes.",
+      "La pertinence d’une stratégie dépend du contexte.",
+      "Toute stratégie de coping est toujours efficace."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Coping et défense sont des cadres différents, et l’évaluation de leurs effets tient compte du contexte, de la durée et des conséquences.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_034",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 34,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "easy",
+    "question": "Les mécanismes de défense ont principalement pour fonction…",
+    "choices": [
+      "de protéger le psychisme face à une angoisse ou un conflit difficile.",
+      "de garantir l’absence de maladie.",
+      "de ménager parfois du temps pour intégrer l’événement.",
+      "de refléter des processus essentiellement inconscients.",
+      "de prouver une mauvaise volonté du patient."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Ils peuvent avoir une fonction protectrice dans l’épreuve ; ils ne sont pas des indices de faute ou de mauvaise volonté.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_035",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 35,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "medium",
+    "question": "Un patient paraît dans le déni après une annonce. Quelles attitudes sont cohérentes avec le cours ?",
+    "choices": [
+      "Respecter la fonction potentiellement protectrice de la défense.",
+      "Forcer immédiatement toute prise de conscience.",
+      "Évaluer l’impact du déni sur la sécurité et l’accès aux soins.",
+      "Écouter avant d’interpréter.",
+      "Qualifier le patient de manipulateur."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le déni peut amortir un choc ; il doit être observé avec discernement et pris en compte s’il compromet des soins essentiels.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_036",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 36,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "medium",
+    "question": "La projection peut être décrite comme…",
+    "choices": [
+      "l’attribution à l’extérieur de pensées ou affects refusés en soi.",
+      "une simple demande de précision.",
+      "un mécanisme dont l’expression peut prendre la forme de reproches.",
+      "une preuve que les soignants sont réellement responsables de toute difficulté.",
+      "un mécanisme de défense évoqué en cours."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La projection déplace vers autrui certains contenus psychiques ; son interprétation ne se déduit toutefois pas d’un reproche isolé.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_037",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 37,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "medium",
+    "question": "À propos de la régression et de la rationalisation…",
+    "choices": [
+      "la régression renvoie à des modes de fonctionnement antérieurs.",
+      "la rationalisation produit une justification apparemment logique masquant des motifs inconscients.",
+      "ces mécanismes s’expriment toujours consciemment et volontairement.",
+      "ils figurent dans le chapitre des défenses.",
+      "ils excluent toute angoisse."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La régression et la rationalisation sont deux mécanismes de défense différents, mobilisables face à des conflits ou à l’angoisse.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_038",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 38,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "hard",
+    "question": "Quelle distinction est correcte entre isolation, refoulement et dénégation ?",
+    "choices": [
+      "L’isolation sépare un affect d’une représentation qui reste consciente.",
+      "Le refoulement rejette certaines représentations conflictuelles dans l’inconscient.",
+      "La dénégation consiste à refuser comme siens des contenus venant d’être exprimés.",
+      "Les trois notions sont totalement identiques.",
+      "Elles constituent des diagnostics psychiques suffisants."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les trois mécanismes agissent différemment sur le rapport aux affects et représentations. On ne pose pas de diagnostic sur une seule parole.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_039",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 39,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "medium",
+    "question": "À propos de l’activisme, de la combativité et du retrait apathique…",
+    "choices": [
+      "l’activisme recourt à l’action plutôt qu’au vécu des affects.",
+      "la combativité peut être une forme d’activisme.",
+      "le retrait apathique se présente comme une protection par détachement.",
+      "ces réactions doivent être jugées négativement dans tous les cas.",
+      "la combativité garantit la guérison somatique."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Ces mécanismes peuvent protéger contre l’angoisse ; leur fonction dépend du contexte et ne constitue jamais une garantie médicale.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_040",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 40,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "hard",
+    "question": "L’affiliation présentée comme mécanisme de défense…",
+    "choices": [
+      "cherche l’aide et le soutien d’autrui en situation anxiogène.",
+      "correspond exactement à toutes les définitions d’affiliation en psychologie sociale.",
+      "est à distinguer du concept social de formation des liens.",
+      "peut être mobilisée pour faire face à une épreuve.",
+      "est synonyme d’isolement obligatoire."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Dans ce chapitre, l’affiliation concerne un mouvement de recherche de soutien protecteur face à l’angoisse, différent de la psychosociologie.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_041",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 41,
+    "theme": "Angoisse et mécanismes de défense",
+    "difficulty": "hard",
+    "question": "La sublimation et l’humour sont abordés dans les défenses. Quelles propositions sont justes ?",
+    "choices": [
+      "La sublimation peut dériver une pulsion vers des activités valorisées.",
+      "L’humour appliqué à soi-même peut avoir une fonction défensive.",
+      "La sublimation se résume à une perte de mémoire.",
+      "La notion de sublimation comporte deux acceptions distinctes.",
+      "L’humour signifie nécessairement se moquer du patient."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La sublimation peut être comprise selon deux acceptions ; l’humour appliqué à soi-même est une modalité particulière de transformation de ce qui provoque de l’angoisse.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_042",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 42,
+    "theme": "Annonce du diagnostic",
+    "difficulty": "easy",
+    "question": "La définition complète de l’annonce du diagnostic donnée par Mme Katir comporte…",
+    "choices": [
+      "l’acte médical d’informer le patient.",
+      "un choc psychologique possible et un bouleversement.",
+      "la prise en compte du patient et de ses proches.",
+      "une simple formalité administrative sans conséquence.",
+      "la certitude que tous les patients vont réagir de la même façon."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La définition inclut explicitement le choc, l’épreuve et le traumatisme psychique potentiel, en plus de l’acte d’annonce.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_043",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 43,
+    "theme": "Annonce du diagnostic",
+    "difficulty": "medium",
+    "question": "Concernant les réactions décrites après une annonce…",
+    "choices": [
+      "le cours évoque la sidération et le déni.",
+      "il évoque colère, marchandage, état dépressif et acceptation.",
+      "l’ordre des réactions est imposé pour chaque personne.",
+      "une même personne peut ne pas traverser chaque étape.",
+      "le soignant doit imposer rapidement l’acceptation."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les réactions présentées sont des repères pédagogiques, pas un calendrier universel ni un moyen d’étiqueter les patients.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_044",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 44,
+    "theme": "Annonce du diagnostic",
+    "difficulty": "medium",
+    "question": "Une patiente devient silencieuse après l’annonce. Quelles hypothèses prudentes sont recevables ?",
+    "choices": [
+      "Une sidération est possible.",
+      "Le silence prouve qu’elle a compris et accepté.",
+      "Une réaction de protection psychique peut être en jeu.",
+      "Il faut observer, écouter et proposer un soutien.",
+      "Il faut immédiatement conclure à un trouble psychiatrique."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le silence peut notamment refléter une sidération ; on ne peut pas en déduire une compréhension, une émotion certaine ou un diagnostic.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_045",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 45,
+    "theme": "Annonce du diagnostic",
+    "difficulty": "hard",
+    "question": "Dans l’accompagnement des proches lors d’une annonce…",
+    "choices": [
+      "leur bouleversement peut être reconnu.",
+      "le patient doit rester une personne sujet de la prise en charge.",
+      "la confidentialité doit être respectée.",
+      "les proches reçoivent systématiquement toute information sans accord.",
+      "la défense du patient doit toujours être éliminée."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’impact relationnel est important, mais il ne retire ni la place du patient ni les exigences de respect et de confidentialité.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_046",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 46,
+    "theme": "Corps, schéma et image",
+    "difficulty": "easy",
+    "question": "Le corps-objet et le corps-sujet diffèrent car…",
+    "choices": [
+      "le corps-objet est étudié biologiquement et médicalement.",
+      "le corps-sujet renvoie au corps vécu et à son histoire.",
+      "le corps-sujet se réduit aux organes mesurables.",
+      "les deux termes désignent deux regards sur la personne.",
+      "le corps-objet interdit toute écoute clinique."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours oppose deux perspectives complémentaires : corps observable et corps singulier vécu dans une histoire psychique et relationnelle.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_047",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 47,
+    "theme": "Corps, schéma et image",
+    "difficulty": "medium",
+    "question": "Le schéma corporel désigne…",
+    "choices": [
+      "des repères sensoriels et moteurs.",
+      "la capacité de se situer et de mobiliser son corps.",
+      "uniquement l’estime esthétique de son apparence.",
+      "des composantes posturales.",
+      "exactement le même concept que l’image du corps."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le schéma corporel est sensorimoteur et postural ; l’image du corps est une représentation subjective et affective.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_048",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 48,
+    "theme": "Corps, schéma et image",
+    "difficulty": "medium",
+    "question": "L’image du corps renvoie notamment…",
+    "choices": [
+      "à une représentation subjective du corps.",
+      "à la valeur affective et personnelle attribuée à son apparence.",
+      "uniquement à la liste des muscles.",
+      "à l’histoire et au regard d’autrui.",
+      "au même sens que le schéma corporel."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Elle associe représentation psychique, affects, identité et relations, au-delà des repères sensorimoteurs.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_049",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 49,
+    "theme": "Corps, schéma et image",
+    "difficulty": "medium",
+    "question": "À propos de l’amputation et du membre fantôme…",
+    "choices": [
+      "un membre absent peut encore être ressenti.",
+      "la douleur de membre fantôme peut exister.",
+      "le vécu corporel n’est pas réduit à l’état anatomique présent.",
+      "cette douleur permet d’accuser le patient d’inventer.",
+      "cela prouve nécessairement une atteinte mentale."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’exemple illustre un décalage possible entre l’intégrité anatomique et l’expérience corporelle vécue.",
+    "announcedCorrectCount": 3
+  },
+  {
+    "id": "psychologie_sante_p01_050",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 50,
+    "theme": "Corps, schéma et image",
+    "difficulty": "hard",
+    "question": "Que signifie une approche psychosomatique prudente ?",
+    "choices": [
+      "Considérer l’histoire et les dimensions psychiques et corporelles ensemble.",
+      "Déduire qu’une personne a créé sa maladie par la pensée.",
+      "Maintenir une recherche médicale des causes organiques.",
+      "Ne pas culpabiliser le patient.",
+      "Écarter toute dimension relationnelle."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le cours invite à une lecture globale sans causalité psychique abusive et sans renoncer aux soins somatiques.",
+    "announcedCorrectCount": 3
+  }
+]

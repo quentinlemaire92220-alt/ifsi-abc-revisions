@@ -47,6 +47,23 @@ for(const c of manifest.courses){
   continue;
  }
  for(const key of ['08','99'])assert.equal(c.folders?.[key],undefined,c.courseId+': pointeur de dossier privé dans le manifeste public');
+ if(c.courseId==='psychologie_sante' && c.deliveryMode==='existing_course_revision' &&
+    c.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only'){
+  // Existing course, limited additive release: require the dedicated exact-byte
+  // and historical-preservation contract, not seven invented Drive folders.
+  assert.equal(c.status,'partial',c.courseId+': statut partiel attendu');
+  assert.equal(c.publicationHost,'github_pages',c.courseId+': hôte de publication inattendu');
+  assert.equal(c.folders,undefined,c.courseId+': dossiers Drive non attestés interdits');
+  assert.equal(c.sourceBasis?.nativeSupportAvailable,false,c.courseId+': support officiel non tracé');
+  assert.equal(c.sourceBasis?.officialSupportPending,true,c.courseId+': attente officielle non signalée');
+  assert.deepEqual(Object.keys(c.publicArtifacts||{}),['qcm'],
+    c.courseId+': un seul PDF QCM doit être ajouté');
+  assert.equal(c.publicationApproval?.scopeLimit,'qcm_pdf_50_questions_59_interactive_flashcards_only');
+  await import('./psychologie-sante-live-contract.mjs');
+  console.log('✅ '+c.courseId+': complément strict QCM 50 + définitions 59 ; fiche et vocaux historiques préservés');
+  continue;
+ }
+
  const hostedPublic = c.deliveryMode==='source_limited_first_release' &&
    c.provisional===true && c.publicationHost==='github_pages' && !c.folders;
  if(hostedPublic){

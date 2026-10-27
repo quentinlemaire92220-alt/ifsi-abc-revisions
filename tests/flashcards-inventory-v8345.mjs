@@ -65,7 +65,7 @@ for(const c of deck){
   const answers=(c.answers||[]).filter(Boolean);
   const authored=c.authored===true;
   const auditText=text=>{let t=text.replace(/\bau cours de\b/gi,'pendant');if(authored)t=t.replace(/\ble cours distingue-t-il\b/gi,'peut-on distinguer');if(authored)t=t.replace(/\bexemple\b/gi,'cas').replace(/\bsupport(?!\s+(?:de cours|officiel|pédagogique)\b)/gi,'dispositif').replace(/\b(?:cité(?:e|es|s)?|indiqué(?:e|es|s)?)\b/gi,'');return t};
-  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=reContext.test(auditText(front)),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
+  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   // A single authored answer may display several enumerated elements separated
   // by semicolons; preserve the actual answer string while counting its items.
   const n=expected(front),listedAnswers=answers.length===1

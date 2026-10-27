@@ -130,6 +130,13 @@ def batch(base,root=ROOT):
     for delivery in now['courses']:
         if delivery.get('packFormat')!='written_v1':continue
         roles=changed_roles(previous.get(delivery['courseId'],{}),delivery,root)
+        if (delivery.get('deliveryMode')=='existing_course_revision' and
+            delivery.get('publicationSubset')=='qcm_pdf_50_qcm_59_interactive_flashcards_only' and
+            set(delivery.get('publicArtifacts',{}))=={'qcm'} and
+            delivery['courseId'] not in previous):
+            # First manifest for an existing course: no new sheet. The QCM
+            # itself remains fully subject to V3 layout and owner-review checks.
+            roles=['qcm']
         if not roles:continue
         receipt=delivery.get('templateConformance',{})
         if receipt.get('contract')!=spec['contract']:errors.append(delivery['courseId']+':TEMPLATE_CONFORMANCE_MISSING')
