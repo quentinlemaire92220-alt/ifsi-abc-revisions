@@ -9,7 +9,7 @@ Cet espace ne contient que des données pédagogiques générées pour le candid
 - PDF validés comme lots techniques (sans migration des anciens fichiers) : fiche 18 pages SHA-256 `c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486` ; QCM 21 pages `e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89` ; flashcards 13 pages `9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a`.
 - Source : support officiel encore en attente ; signalement provisoire obligatoire.
 - Les 10 reformulations dans le QCM interactif sont autonomes mais diffèrent textuellement du PDF QCM signé ; réconciliation pédagogique et documentaire encore requise avant la vraie livraison.
-- La branche conserve les trois PDF comme candidats non reliés au catalogue. Les fichiers étudiants historiques et les vocaux sont inchangés. Le TNR de cette branche vérifie explicitement qu'aucune ressource nouvelle n'a été activée.
+- Les trois PDF exacts restent **uniquement dans Drive privé**. Le dépôt contient leurs empreintes de référence et les banques candidates, mais aucun PDF sous `assets/psychologie-sante-20261027/`. Les fichiers étudiants historiques et les vocaux restent inchangés. Le TNR vérifie qu'aucune ressource nouvelle n'a été activée.
 
 ## Portes à franchir avant la fusion
 
