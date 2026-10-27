@@ -17,7 +17,7 @@ for(const name of files){
  if(!Array.isArray(rows)||!rows[0]?.flashcards)continue;
  const delivery=stage==='publication' ? JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8')).courses.find(c=>c.qcmBank===folder+'/'+name) : null;
  const glossaryOnly=delivery?.deliveryMode==='existing_course_revision' &&
-  delivery?.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only' &&
+  ['qcm_pdf_50_qcm_59_interactive_flashcards_only','qcm_50_flashcards_59_fiche_unique_20p'].includes(delivery?.publicationSubset) &&
   delivery?.qcmCount===50 && delivery?.flashcardCount===59;
  n+=validateBank(rows,name,glossaryOnly?{glossaryCount:59}:{});
 }
