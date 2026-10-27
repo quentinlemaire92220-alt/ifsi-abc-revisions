@@ -16,3 +16,16 @@ assert.equal(gate({id:'responsabilite_exercice_professionnel'},{url:old.url}),tr
 assert.equal(gate({id:'systeme_respiratoire'},{url:old.url}),false,
  'Visibility exception must remain scoped to the affected course');
 console.log('PASS: historical entry preserved and unavailable provisional PDF hidden');
+
+const e3=sheets.find(x=>x.url?.includes('1jmXbi76eucP42lg4pJLU6MpApjIf1M8e'));
+assert.ok(e3,'Historical E3 revision must remain in registry');
+const filter=ui.match(/const unavailableSheet74=doc=>([^;]+);/);
+assert.ok(filter,'Student revision availability filter missing');
+const unavailable=new Function('doc',`return (${filter[1]});`);
+assert.equal(unavailable(e3),true,'Owner-only E3 revision must be hidden');
+assert.equal(unavailable(old),true,'Unavailable provisional revision must be hidden');
+assert.equal(unavailable({url:'https://example.org/valid.pdf'}),false);
+assert.ok(ui.includes('const sheets=[...d.sheets].filter(x=>!unavailableSheet74(x))'),
+ 'Course revision list must filter inaccessible documents');
+assert.ok(ui.includes("sheets=(Array.isArray(S)?S:[]).filter(x=>!unavailableSheet74(x)&&df.has"),
+ 'Favorites must filter inaccessible documents');
