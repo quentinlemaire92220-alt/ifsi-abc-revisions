@@ -17,7 +17,7 @@ export function validateRevisionSheetSupplement(courseId,delivery,data){
   assert.equal(row.sheetFormat,'written_revision','Une fiche écrite ne doit pas se déclarer infographique');
   assert.equal(row.primaryRevision,true);
   assert.equal(asset.artifactId,'psychologie_sante_fiche_unique_20p_20261027');
-  assert.match(asset.path,/^assets\\/psychologie-sante-20261027\\/[A-Za-z0-9_]+\\.pdf$/);
+  assert.match(asset.path,/^assets\/psychologie-sante-20261027\/[A-Za-z0-9_]+\.pdf$/);
   assert.equal(row.url,'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+asset.path);
   assert.equal(row.driveId,undefined,'Les ressources Pages ne doivent pas usurper un Drive ID');
   assert.equal(asset.sha256,r.pdfSha256,'Empreinte source et ressource Pages différentes');
