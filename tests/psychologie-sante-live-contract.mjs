@@ -45,7 +45,9 @@ assert.equal(existingVocals.length,2,'Ne pas écraser les deux vocaux historique
 const {deck,questions}=await runtimeDeck();
 assert.equal(questions.filter(q=>q.courseId==='psychologie_sante').length,50,'50 QCM dans le chargeur réel');
 const cards=deck.filter(c=>c.courseId==='psychologie_sante');
-assert.equal(cards.length,59,'Le moteur doit rendre exactement 59 cartes');
-const cardTexts=new Set(cards.map(c=>c.front));
+const authored=cards.filter(c=>String(c.qid||'').startsWith('psychologie_sante_p01_'));
+assert.equal(authored.length,59,'Le moteur doit rendre exactement les 59 nouvelles cartes rédigées');
+assert.ok(cards.length>=59,'Ne pas supprimer les fiches de vocabulaire historiques');
+const cardTexts=new Set(authored.map(c=>c.front));
 for(const d of definitions)assert.ok(cardTexts.has(d.front),'Carte absente du rendu : '+d.term);
 console.log('PASS publication candidat : 3 PDF intègres, 50 QCM actifs dans chargeur, 59 cartes rendues et 2 vocaux préservés.');
