@@ -48,7 +48,7 @@
     "older_mismatched_transfers": "retained_private_and_marked_DO_NOT_PUBLISH"
   },
   "publicationGates": {
-    "humanGraphics": "owner_accepted_old_qcm_v2_only_clean_pdf_pending",
+    "humanGraphics": "qcm_clean_final_sha_owner_accepted; sheet_and_flashcards_not_individually_attested",
     "studentLinks": "not_enabled",
     "activeApplicationIntegration": "draft_only",
     "fourNewAudios": "excluded_pending_listening",
@@ -109,8 +109,16 @@
     "onlyTextDifferenceFromAcceptedV2": "CANDIDAT V2 -> VERSION RÉVISÉE",
     "allPagesTextEquivalentAfterLabelSubstitution": true,
     "noOutOfBoundsText": true,
-    "publicationEligible": false,
-    "ownerAcceptance": "pending_new_sha",
-    "previouslyGeneratedLocalSha256Superseded": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa"
+    "publicationEligible": "qcm_graphics_only_owner_approved; full_package_gates_pending",
+    "ownerAcceptance": "owner_accepted_exact_sha_2026-10-27",
+    "previouslyGeneratedLocalSha256Superseded": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa",
+    "ownerAcceptanceBasis": "GO explicite de l'utilisateur après consultation de la copie finale nettoyée SHA-256 5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761"
+  },
+  "ownerGraphicDecisionClean": {
+    "asset": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT_A_VALIDER.pdf",
+    "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+    "date": "2026-10-27",
+    "basis": "L'utilisateur a répondu « ok go » à la demande explicite de confirmation graphique du PDF final nettoyé dans le chat",
+    "scope": "qcm_final_exact_bytes_only"
   }
 }
