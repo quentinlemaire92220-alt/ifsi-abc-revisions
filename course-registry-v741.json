@@ -722,7 +722,20 @@
       "ue": "B2",
       "audioStatus": "available",
       "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf"
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf",
+      "authoredFlashcards": true,
+      "authoredFlashcardPresentation": "standalone_v1",
+      "flashcardTarget": 59,
+      "sourceBasis": "transcriptions_et_captures_provisoires",
+      "nativeSupportAvailable": false,
+      "qcmPdfUrl": "./assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
+      "qcmPdfQuestionCount": 50,
+      "additionalDocuments": [
+        {
+          "label": "Flashcards — 59 définitions complètes (Mme Khatir)",
+          "url": "./assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_Flashcards_59.pdf"
+        }
+      ]
     },
     {
       "id": "pharmacologie",
