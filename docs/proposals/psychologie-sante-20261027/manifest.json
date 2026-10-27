@@ -48,7 +48,7 @@
     "older_mismatched_transfers": "retained_private_and_marked_DO_NOT_PUBLISH"
   },
   "publicationGates": {
-    "humanGraphics": "pending_owner_visual_review",
+    "humanGraphics": "owner_accepted_old_qcm_v2_only_clean_pdf_pending",
     "studentLinks": "not_enabled",
     "activeApplicationIntegration": "draft_only",
     "fourNewAudios": "excluded_pending_listening",
@@ -59,7 +59,7 @@
   "interactiveQcmWording": {
     "status": "ten_autonomous_wording_adjustments",
     "answerKeysChanged": false,
-    "pdfTextParity": "candidate_pdf_v2_technical_match_pending_owner_acceptance",
+    "pdfTextParity": "approved_v2_source_350_fields_clean_candidate_equivalent",
     "candidatePdfSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
     "verifiedTextFields": 350,
     "verifiedTextFieldsExpected": 350
@@ -86,7 +86,27 @@
     "selectableText": true,
     "noOutOfBoundsText": true,
     "sourceStatus": "provisional_official_support_missing",
-    "ownerGraphicReview": "pending",
+    "ownerGraphicReview": "owner_accepted_exact_sha",
     "authorizedForStudents": false
+  },
+  "ownerGraphicDecision": {
+    "courseId": "psychologie_sante",
+    "acceptedAsset": "UE_B2_Psychologie_Sante_QCM_50_Aligne_Interactif_V2_CANDIDAT_RELECTURE.pdf",
+    "acceptedSha256": "468bd3a80b4ea5e88f3583d69e94d920f7466b2cb289c616d2c7df4585c667fd",
+    "approvalBasis": "GO explicite du propriétaire après lien vers PDF V2 de 19 pages dans la conversation du 27 octobre 2026",
+    "approvedAtDate": "2026-10-27",
+    "scope": "exact_byte_graphic_acceptance_only",
+    "status": "owner_accepted_original_v2"
+  },
+  "cleanPublicCandidate": {
+    "filename": "UE_B2_Psychologie_Sante_QCM_50_Corriges_FINAL_SANS_MENTION_CANDIDAT.pdf",
+    "sha256": "e5c658567d53b4f6384e0200f1272f83e06a5aec36ce2c665ef85211cec9c9aa",
+    "pages": 19,
+    "onlyTextDifferenceFromAcceptedV2": "CANDIDAT V2 -> VERSION RÉVISÉE",
+    "allPagesTextEquivalentAfterLabelSubstitution": true,
+    "noOutOfBoundsText": true,
+    "publicationEligible": false,
+    "ownerAcceptance": "pending_new_sha",
+    "bytesStored": "local_private_only"
   }
 }
