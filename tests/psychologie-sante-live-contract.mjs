@@ -26,7 +26,7 @@ assert.equal(manifest.privateReconciledQcmV2.sha256,'468bd3a80b4ea5e88f3583d69e9
 assert.equal(manifest.privateReconciledQcmV2.driveDownloadedSha256,manifest.privateReconciledQcmV2.sha256);
 assert.equal(manifest.privateReconciledQcmV2.originalQcmRetainedSha256,manifest.assets.qcm.sha256);
 assert.equal(manifest.privateReconciledQcmV2.pageCount,19);
-assert.equal(manifest.privateReconciledQcmV2.ownerGraphicReview,'pending');
+assert.equal(manifest.privateReconciledQcmV2.ownerGraphicReview,'owner_accepted_exact_sha');
 assert.equal(manifest.privateReconciledQcmV2.authorizedForStudents,false);
 assert.equal(manifest.privateReconciledQcmV2.questionChoiceExplanationFieldsPresent,350);
 assert.equal(manifest.newSyntheticAudioApproved,false);
