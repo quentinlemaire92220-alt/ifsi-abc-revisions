@@ -1,0 +1,52 @@
+name: Stage exact QCM V3 review PDF in PR branch
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/psychologie-qcm-v3-stage.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  stage-exact-reviewed-bytes:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.head.ref == 'work/psychologie-sante-qcm-publication-20261027'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+      - name: Fetch verified artifact (not a regenerated PDF)
+        uses: actions/download-artifact@v4
+        with:
+          name: psychologie-sante-qcm-v3-relecture
+          repository: quentinlemaire92220-alt/ifsi-abc-revisions
+          run-id: 40531711872
+          github-token: ${{ github.token }}
+          path: /tmp/qcm-v3-verified
+      - name: Verify exact approved candidate and prepare side-by-side asset
+        run: |
+          set -eu
+          source=/tmp/qcm-v3-verified/UE_B2_Psychologie_Sante_QCM_50_V3_RELECTURE.pdf
+          target=assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf
+          printf '%s  %s\n' '2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c' "$source" | sha256sum -c -
+          test ! -e "$target"
+          mkdir -p "$(dirname "$target")"
+          cp "$source" "$target"
+          sha256sum "$target"
+          test -f assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges_19p_Version_Revisee.pdf
+      - name: Commit only the candidate PDF to the draft branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf
+          git diff --cached --name-only
+          test "$(git diff --cached --name-only | wc -l)" -eq 1
+          git commit -m "chore(psychologie): stage exact V3 QCM PDF without changing historical artifact"
+          git push origin HEAD:refs/heads/work/psychologie-sante-qcm-publication-20261027
