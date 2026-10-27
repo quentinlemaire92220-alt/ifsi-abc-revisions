@@ -84,9 +84,9 @@ function preserveApprovedFirstManifestAddition(oldCourse,nextCourse,nextDelivery
  for(const doc of fresh){
   assert.ok(visible(doc)&&!isScriptWorkItem(doc),id+': fichier de travail interdit');
   const assetId=verifyPublicArtifact(nextDelivery,doc.url);
-  assert.equal(assetId,'psychologie_sante_qcm_v2_19p_20261027');
+  assert.equal(assetId,'psychologie_sante_qcm_v3_19p_20261027');
   assert.equal(nextDelivery.artifactSha256s[assetId],
-   '5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761');
+   '2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c');
  }
  assert.equal(nextDelivery.qcmCount,50);
  assert.equal(nextDelivery.flashcardCount,59);
