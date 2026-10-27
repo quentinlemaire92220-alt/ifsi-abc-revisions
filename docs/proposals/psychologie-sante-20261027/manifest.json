@@ -25,5 +25,34 @@
       "pages": 13,
       "sha256": "9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a"
     }
+  },
+  "driveByteVerification": {
+    "checkedAt": "2026-10-27",
+    "method": "download_and_compare_sha256",
+    "scope": "three_final_pdfs_private_only",
+    "sheet": {
+      "status": "verified",
+      "pages": 18,
+      "sha256": "c1cf1233a527e755917e11f5dd06e95d001f8ff4d5fd2da81f6463d281027486"
+    },
+    "qcm": {
+      "status": "verified",
+      "pages": 21,
+      "sha256": "e018df4efd9c5e0db34453164e112a5c40d91746f64b059b80bd562e5ff83c89"
+    },
+    "flashcards": {
+      "status": "verified",
+      "pages": 13,
+      "sha256": "9bd7e45fc6d49273552db4c66f08407af9a56b919d7cc6275e58065868cd178a"
+    },
+    "older_mismatched_transfers": "retained_private_and_marked_DO_NOT_PUBLISH"
+  },
+  "publicationGates": {
+    "humanGraphics": "pending",
+    "studentLinks": "not_enabled",
+    "activeApplicationIntegration": "not_done",
+    "fourNewAudios": "excluded_pending_listening",
+    "officialSupport": "pending",
+    "mergeAuthorization": "not_recorded"
   }
 }
