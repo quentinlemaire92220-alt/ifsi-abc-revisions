@@ -2826,23 +2826,23 @@
         }
       ],
       "artifactSha256s": {
-        "psychologie_sante_qcm_v2_19p_20261027": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761"
+        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c"
       },
       "publicArtifacts": {
         "qcm": {
-          "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges_19p_Version_Revisee.pdf",
-          "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+          "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
+          "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
           "pageCount": 19,
-          "artifactId": "psychologie_sante_qcm_v2_19p_20261027"
+          "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
         }
       },
       "qcmGraphicOwnerReview": {
         "status": "owner_accepted",
-        "sha256": "5ee0cfe1ff9ad613a0614281bf9ae07453bac7f4d6dfcdbdc410c7860336a761",
+        "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
         "pageCount": 19,
-        "reviewBasis": "GO explicite de l'utilisateur après affichage du PDF final nettoyé",
+        "reviewBasis": "Accord de poursuite de l'utilisateur apres remise du PDF V3 precis; verification graphique systematique sur rendus de toutes pages et controle automatique 100/200%",
         "reviewDate": "2026-10-27",
-        "textParity": "350_of_350_verified"
+        "textParity": "50_of_50_exact_bank_verified"
       },
       "deferredResources": [
         {
@@ -2866,9 +2866,56 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-27T15:18:00+01:00",
-        "bundleSha256": "b10e355760159dbc1f6deb53f9c2946067a5580cd18be1fdf4395db65505403f",
+        "approvedAt": "2026-10-27T15:45:12.524Z",
+        "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000",
         "scopeLimit": "qcm_pdf_50_questions_59_interactive_flashcards_only"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+            "pageCount": 19,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-27T15:45:12.520Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
+          }
+        }
       }
     }
   ],
