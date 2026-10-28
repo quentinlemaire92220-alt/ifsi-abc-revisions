@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {validateDualSheetDelivery,validateSheetSource} from './dual-sheet-contract.mjs';
 import {validateLeanCourseDelivery,validateLeanPart} from './lean-course-contract.mjs';
@@ -189,6 +190,19 @@ for(const c of manifest.courses){
   assert.ok(c.blockers.length,'Livraison partielle sans explication');
   if(!['lean_v1','hybrid_v1','written_v1'].includes(c.packFormat)||c.requestedVocals===true)assert.ok(c.vocals.length||c.blockers.some(x=>x.resource==='vocals'),'Vocaux oubliés silencieusement');
  }
- for(const id of c.vocals)assert.ok(vocals.some(x=>x.id===id&&x.courseId===c.courseId&&x.driveId),'Vocal absent');
+ for(const id of c.vocals){
+  const vocal=vocals.find(x=>x.id===id&&x.courseId===c.courseId);
+  assert.ok(vocal,c.courseId+': vocal introuvable '+id);
+  if(hostedPublic && !vocal.driveId){
+   // Nouveau package heberge sur Pages : verifier l'empreinte des vrais MP3.
+   const asset=c.publicAudioArtifacts?.find(a=>a.artifactId===id);
+   assert.ok(asset,c.courseId+': declaration MP3 publique absente '+id);
+   assert.match(vocal.localAudio||'',/^\.\/assets\/audio\/[\w/-]+\.mp3$/);
+   assert.equal(vocal.localAudio,'./'+asset.path,c.courseId+': chemin MP3 divergent '+id);
+   assert.ok(fs.existsSync(vocal.localAudio),c.courseId+': MP3 physique absent '+id);
+   const sha=createHash('sha256').update(fs.readFileSync(vocal.localAudio)).digest('hex');
+   assert.equal(sha,asset.sha256,c.courseId+': MP3 different de son empreinte '+id);
+  }else assert.ok(vocal.driveId,c.courseId+': identifiant Drive vocal absent '+id);
+ }
  console.log(`✅ ${c.courseId}: ${bank.length} QCM, ${cards.length} cartes, ${c.infographicResourceIds.length} infographies — ${c.status}`);
 }
