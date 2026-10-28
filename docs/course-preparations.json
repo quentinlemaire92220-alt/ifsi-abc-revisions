@@ -1,4 +1,39 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": []
+  "courses": [
+    {
+      "courseId": "fievre_retour_voyage_paludisme",
+      "courseLabel": "Fièvre au retour de voyage et paludisme",
+      "ue": "S1 B1.3",
+      "sessionDate": "2026-10-27",
+      "lifecycle": "preparation",
+      "validated": false,
+      "studentPublication": false,
+      "approval": null,
+      "sourceAudit": {
+        "officialSupport": "not_supplied",
+        "basis": "course_captures_and_transcription",
+        "oralStatus": "unverified",
+        "scientificReview": "pending",
+        "notes": "Des points relatifs à la prophylaxie, au diagnostic moléculaire et aux BMR nécessitent un arbitrage pédagogique ; pas de revue externe autorisée."
+      },
+      "artifacts": {
+        "questions": 40,
+        "flashcards": 50,
+        "glossaryTerms": 50,
+        "vocalMp3": 0,
+        "vocalTxt": 3,
+        "sheetPages": 14,
+        "qcmPdfPages": 17
+      },
+      "privateBankPaths": {
+        "questions": "data/course-preparations/fievre_retour_voyage_paludisme.json",
+        "lexicon": "data/course-preparations/fievre_retour_voyage_paludisme_lexique.json"
+      },
+      "packFormat": "written_v1",
+      "sheetFormat": "written_revision",
+      "schematics": "none",
+      "publicationStatus": "owner_requested_app_update_pending_preflight"
+    }
+  ]
 }
