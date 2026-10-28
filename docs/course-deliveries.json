@@ -2694,13 +2694,15 @@
         }
       ],
       "publicationApproval": {
-        "status": "pending_final_lot_approval",
-        "authorization": "go_to_continue_preflight_2026-10-28",
-        "scope": "revised_sheet_only",
-        "mergeDeploymentCondition": "successful_tnr_and_owner_approval",
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-28T18:25:00+01:00",
+        "mergeDeploymentCondition": "all_tnr_green",
         "provisionalOnly": true,
-        "bundleSha256": null,
-        "approvalBasis": "Feu vert pour poursuivre le contrôle, sans reçu final de publication des nouveaux octets."
+        "bundleSha256": "047e2229641df1d1fdc9b50656326321d644002366ee3ff5dd97860158530c78",
+        "approvalBasis": "L'utilisateur a explicitement répondu « Go publication » le 28 octobre 2026 après présentation du périmètre exact de la PR #266, V8.30.150 build 8450, fiche de 11 pages et de son statut provisoire. Autorisation de fusion/déploiement conditionnelle aux tests complets verts.",
+        "reviewNote": "L'accord graphique porte sur le PDF de SHA-256 4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d. Les 40 QCM et 40 flashcards historiques sont conservés à l'identique. La source audio d'origine n'a pas été contrôlée et le cours reste partial/provisional."
       },
       "publicArtifacts": {
         "sheet": {
