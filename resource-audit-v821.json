@@ -1,5 +1,5 @@
 {
-  "version": "8.30.149",
+  "version": "8.30.150",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Gestion du stress UE B3.2.1 : 50 QCM et 50 flashcards, +46 nouvelles notions et 4 versions contextualisées dans le vocabulaire. Aucune entrée ou fiche historique modifiée.",
+  "note": "Ajout provisoire de l'UE B1.3 S1 VIH : 39 captures et transcription ; 17p de fiche, 50 QCM, 50 cartes, 52 mots et 5 MP3. Support officiel absent, réserves conservées.",
   "expectedTotals": {
-    "courses": 58,
-    "sheets": 76,
+    "courses": 59,
+    "sheets": 77,
     "infographics": 184,
-    "vocals": 190,
+    "vocals": 195,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1903
+    "qcmRuntimeMin": 1953
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -265,6 +265,22 @@
       "vocabularyLinked": 0,
       "sheetUnchanged": true,
       "vocabularyContextualized": 4
+    },
+    {
+      "courseId": "vih_b13_20261027",
+      "course": "VIH — UE B1.3 S1",
+      "release": "8.30.150",
+      "newCourse": true,
+      "scope": "source_limited_course_package",
+      "sheetFormat": "written_v1",
+      "pageCount": 17,
+      "lexiconTermsInPdf": 52,
+      "qcmNew": 50,
+      "flashcardsNew": 50,
+      "vocabularyNew": 52,
+      "vocalsNew": 5,
+      "sourceStatus": "provisional",
+      "supportOfficielAbsent": true
     }
   ],
   "auditLogicVersion": "8.30.10",

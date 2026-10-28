@@ -13062,5 +13062,1816 @@
         "explanation": "La communication proposée décrit une situation, exprime le ressenti ou le besoin et recherche une solution sans accusation. Elle est compatible avec une limite professionnelle explicite."
       }
     ]
+  },
+  {
+    "id": "vih_b13_20261027_001",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 1,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "easy",
+    "question": "Au sujet du VIH, quelles affirmations sont exactes ?",
+    "choices": [
+      "Le VIH est un rétrovirus.",
+      "Le VIH reste toujours à l’extérieur du génome de la cellule infectée.",
+      "Une charge virale indétectable prouve que tous les réservoirs ont disparu.",
+      "Il peut se multiplier sans cellule hôte.",
+      "Un traitement efficace rend généralement l’infection contrôlable, sans guérison habituelle."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Le VIH est un rétrovirus dont l’ARN est rétrotranscrit en ADN, puis intégré ; les antirétroviraux contrôlent la réplication sans éliminer les réservoirs.\nPropositions à écarter : C est faux : indétectable ne signifie pas éradiqué. D est faux : la multiplication du virus requiert une cellule. B : Le VIH peut intégrer son ADN dans le génome cellulaire.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'est-ce que le VIH ?",
+        "answers": [
+          "Le virus de l’immunodéficience humaine est un rétrovirus. Il a besoin d’une cellule hôte pour se multiplier ; son ADN peut s’intégrer au génome de la cellule."
+        ],
+        "explanation": "Le virus de l’immunodéficience humaine est un rétrovirus. Il a besoin d’une cellule hôte pour se multiplier ; son ADN peut s’intégrer au génome de la cellule."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_002",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 2,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "easy",
+    "question": "La charge virale plasmatique VIH permet principalement de…",
+    "choices": [
+      "Quantifier l’ARN viral circulant.",
+      "Mesurer directement le nombre de lymphocytes T CD4.",
+      "Elle permet, isolément, de poser le diagnostic de stade sida.",
+      "Certifier à elle seule l’absence de réservoir d’ADN viral.",
+      "Elle mesure directement la quantité de plaquettes circulantes."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La charge virale est une mesure d’ARN viral, utilisée pour suivre la réplication et la réponse thérapeutique.\nPropositions à écarter : B : le nombre de CD4 est un autre examen. D : un réservoir proviral peut persister malgré une charge virale basse. C : La charge virale seule ne définit pas le stade sida. E : La numération plaquettaire est un autre examen.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi les antirétroviraux ne guérissent-ils pas habituellement le VIH ?",
+        "answers": [
+          "Ils bloquent la réplication, mais l’ADN viral intégré peut persister dans des réservoirs. Une charge virale indétectable n’équivaut pas à une éradication."
+        ],
+        "explanation": "Ils bloquent la réplication, mais l’ADN viral intégré peut persister dans des réservoirs. Une charge virale indétectable n’équivaut pas à une éradication."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_003",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 3,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "easy",
+    "question": "Concernant les lymphocytes T CD4, lesquelles de ces propositions sont correctes ?",
+    "choices": [
+      "Ce sont des cellules immunitaires et non des hormones.",
+      "Ils sont produits exclusivement par le foie.",
+      "Ils sécrètent directement tous les anticorps circulants.",
+      "Le VIH les cible et peut faire diminuer leur nombre.",
+      "Leur numération n’apporte aucune information au suivi."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Les T CD4 jouent un rôle majeur dans la coordination de l’immunité et sont des cibles du VIH.\nPropositions à écarter : C : la production d’anticorps relève des lymphocytes B/plasmocytes. E : la numération CD4 renseigne sur l’immunodépression. B : Les lymphocytes T CD4 sont des cellules immunitaires, non des protéines hépatiques.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'est-ce qu'un lymphocyte T CD4 ?",
+        "answers": [
+          "C’est un globule blanc qui coordonne les réponses immunitaires : un « chef d’orchestre » de l’immunité. Il n’est ni une hormone ni un anticorps."
+        ],
+        "explanation": "C’est un globule blanc qui coordonne les réponses immunitaires : un « chef d’orchestre » de l’immunité. Il n’est ni une hormone ni un anticorps."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_004",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 4,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "easy",
+    "question": "Comment différencier infection VIH et stade sida ?",
+    "choices": [
+      "Toute personne infectée par le VIH est immédiatement au stade sida.",
+      "La majorité des personnes traitées peuvent vivre avec le VIH sans être au stade sida.",
+      "Le sida est un stade avancé de l’infection à VIH défini par des critères spécifiques.",
+      "Une infection opportuniste chez un transplanté signifie automatiquement « sida ».",
+      "Le stade sida peut être révélé par certaines infections opportunistes."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "VIH désigne l’infection ; sida désigne un stade avancé, notamment lié à des affections définissant ce stade.\nPropositions à écarter : A confond infection et stade. D confond sida avec d’autres causes d’immunodépression.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi le VIH expose-t-il aux infections opportunistes ?",
+        "answers": [
+          "Il cible et détruit progressivement les lymphocytes T CD4. Les défenses immunitaires diminuent et certaines infections deviennent plus probables."
+        ],
+        "explanation": "Il cible et détruit progressivement les lymphocytes T CD4. Les défenses immunitaires diminuent et certaines infections deviennent plus probables."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_005",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 5,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "medium",
+    "question": "Quel sens donner au repère de 200 CD4/mm³ utilisé dans le cours ?",
+    "choices": [
+      "En dessous, le risque d’infections opportunistes augmente.",
+      "Il suffit, isolément et sans autre critère, pour diagnostiquer tout sida.",
+      "Il aide à reconnaître une immunodépression importante.",
+      "Au-dessus, toute infection, dont la tuberculose, devient impossible.",
+      "Il est utile pour réfléchir à certaines prophylaxies."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le cours utilise le seuil de 200 CD4/mm³ comme repère de vulnérabilité et de prévention de certaines infections.\nPropositions à écarter : B : le sida ne se résume pas au seul seuil. D : la tuberculose peut survenir malgré des CD4 conservés.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Charge virale et nombre de CD4 : quelle différence ?",
+        "answers": [
+          "La charge virale mesure l’ARN du VIH circulant ; le nombre de CD4 renseigne sur l’état immunitaire. Ce sont deux marqueurs complémentaires."
+        ],
+        "explanation": "La charge virale mesure l’ARN du VIH circulant ; le nombre de CD4 renseigne sur l’état immunitaire. Ce sont deux marqueurs complémentaires."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_006",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 6,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "hard",
+    "question": "Que permet la distinction entre ARN viral circulant et ADN proviral ?",
+    "choices": [
+      "Distinguer mesure de réplication et persistance du virus intégré.",
+      "Conclure que l’ADN proviral correspond à un anticorps.",
+      "Une charge virale supprimée exclut tout rebond après arrêt des ARV.",
+      "Considérer que les deux mesures ont exactement le même objectif.",
+      "L’ADN proviral mesure uniquement les plaquettes."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’ARN plasmatique reflète la réplication mesurée ; l’ADN proviral correspond à l’intégration du virus dans des cellules, participant à la persistance.\nPropositions à écarter : B : ADN viral ≠ anticorps. D : examens et significations distincts. C : Le VIH peut recommencer à se répliquer après l’arrêt du traitement. E : L’ADN proviral est un marqueur viral, non une mesure de l’hémogramme.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'appelle-t-on « ADN proviral » ?",
+        "answers": [
+          "L’ADN du VIH intégré dans le génome de cellules infectées. Il participe à la persistance du virus et ne se confond pas avec l’ARN viral circulant."
+        ],
+        "explanation": "L’ADN du VIH intégré dans le génome de cellules infectées. Il participe à la persistance du virus et ne se confond pas avec l’ARN viral circulant."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_007",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 7,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "medium",
+    "question": "Une personne sous traitement a une charge virale durablement supprimée. Quels messages sont adaptés ?",
+    "choices": [
+      "Son VIH a nécessairement été éliminé de toutes ses cellules.",
+      "Le traitement doit être poursuivi selon la prescription.",
+      "La suppression virale favorise la restauration des CD4.",
+      "On peut supprimer tout suivi médical.",
+      "Le contrôle durable du VIH améliore fortement les perspectives de vie."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le maintien du traitement et du suivi permet de contrôler le virus et de restaurer l’immunité ; vivre avec le VIH traité peut être proche de la normale.\nPropositions à écarter : A : réservoirs persistants. D : suivi et observance restent nécessaires.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie le repère de 200 CD4/mm³ ?",
+        "answers": [
+          "Au-dessous d’environ 200 CD4/mm³, le risque d’infections opportunistes augmente fortement. Ce seuil ne suffit pas, à lui seul, à définir automatiquement le stade sida."
+        ],
+        "explanation": "Au-dessous d’environ 200 CD4/mm³, le risque d’infections opportunistes augmente fortement. Ce seuil ne suffit pas, à lui seul, à définir automatiquement le stade sida."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_008",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 8,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "medium",
+    "question": "Quel lien entre VIH, immunité et tumeurs est évoqué dans la séance ?",
+    "choices": [
+      "Les CD4 participent aussi à des défenses immunitaires contre des tumeurs.",
+      "Le risque tumoral dépend uniquement du nombre de partenaires sexuels.",
+      "L’immunodépression peut contribuer à un sur-risque de certaines tumeurs.",
+      "Un traitement antirétroviral efficace transforme toute tumeur en infection.",
+      "Tous les cancers observés chez les PVVIH proviennent d’une transformation tumorale des CD4."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "L’enseignante relie l’affaiblissement de l’immunité et certains cancers associés notamment à des virus oncogènes.\nPropositions à écarter : B : ce n’est pas le mécanisme exposé. D : cancer et infection ne sont pas interchangeables. E : Les associations tumorales sont diverses, notamment avec HPV et HHV-8.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre être séropositif au VIH et avoir le sida ?",
+        "answers": [
+          "On peut vivre avec le VIH sans être au stade sida. Le sida correspond à un stade avancé défini par certains critères, notamment des maladies opportunistes caractéristiques."
+        ],
+        "explanation": "On peut vivre avec le VIH sans être au stade sida. Le sida correspond à un stade avancé défini par certains critères, notamment des maladies opportunistes caractéristiques."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_009",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 9,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "easy",
+    "question": "À propos du vocabulaire employé avec les patients, que retenir ?",
+    "choices": [
+      "« PVVIH » signifie « personne vivant avec le VIH ».",
+      "L’expression « patient VIH » est toujours la formulation recommandée.",
+      "Une terminologie non stigmatisante est importante pour la relation de soins.",
+      "La confidentialité n’a pas d’importance quand le patient est traité.",
+      "Le statut VIH doit être affiché publiquement pour faciliter les soins."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le cours insiste sur l’expression PVVIH et la lutte contre les stéréotypes et la stigmatisation.\nPropositions à écarter : B : étiquetage réducteur déconseillé dans la séance. D : confidentialité indispensable. E : Le secret et la confidentialité demeurent indispensables.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Une infection opportuniste signifie-t-elle toujours « sida » ?",
+        "answers": [
+          "Non. Elle peut survenir chez une personne immunodéprimée pour une autre raison, par exemple après une greffe. Le diagnostic de sida est lié à l’infection par le VIH."
+        ],
+        "explanation": "Non. Elle peut survenir chez une personne immunodéprimée pour une autre raison, par exemple après une greffe. Le diagnostic de sida est lié à l’infection par le VIH."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_010",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 10,
+    "theme": "VIH, CD4 et sida",
+    "difficulty": "hard",
+    "question": "Une personne immunodéprimée sans infection VIH présente une pneumocystose. Quels raisonnements sont justes ?",
+    "choices": [
+      "L’infection opportuniste peut aussi exister hors du VIH.",
+      "Il faut automatiquement la déclarer au stade sida.",
+      "L’histoire clinique et la cause de l’immunodépression comptent.",
+      "Toute pneumocystose est une infection virale.",
+      "La présence d’une infection opportuniste ne permet pas à elle seule de conclure à un VIH."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le cours compare le VIH à d’autres immunodépressions (dont la transplantation) : une infection opportuniste n’établit pas à elle seule le sida.\nPropositions à écarter : B : sida suppose l’infection VIH et des critères spécifiques. D : la pneumocystose est due à un champignon.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi employer le terme « PVVIH » ?",
+        "answers": [
+          "Il signifie « personne vivant avec le VIH ». Il évite de réduire la personne à son infection et soutient une relation de soin sans stigmatisation."
+        ],
+        "explanation": "Il signifie « personne vivant avec le VIH ». Il évite de réduire la personne à son infection et soutient une relation de soin sans stigmatisation."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_011",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 11,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "easy",
+    "question": "Quelles voies de transmission du VIH ont été décrites ?",
+    "choices": [
+      "La transmission sexuelle.",
+      "Le simple fait de parler avec une PVVIH.",
+      "Un contact de sang avec la peau intacte entraîne toujours une infection VIH.",
+      "La transmission parent-enfant ne nécessite jamais aucune prévention.",
+      "Le contact de la main sur une peau saine."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le cours décrit les voies sexuelle, sanguine et parent-enfant ; les contacts sociaux ordinaires ne transmettent pas le VIH.\nPropositions à écarter : B et E relèvent de contacts courants ne constituant pas une voie d’infection VIH. C : Le risque dépend du type d’exposition et d’une porte d’entrée. D : Un suivi spécialisé et des mesures préventives peuvent être nécessaires.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les principales voies de transmission du VIH ?",
+        "answers": [
+          "La transmission est surtout sexuelle en France. La transmission sanguine et la transmission parent-enfant sont aussi possibles selon les situations."
+        ],
+        "explanation": "La transmission est surtout sexuelle en France. La transmission sanguine et la transmission parent-enfant sont aussi possibles selon les situations."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_012",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 12,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "easy",
+    "question": "Concernant « indétectable = intransmissible » (I = I), que faut-il retenir ?",
+    "choices": [
+      "Le principe concerne la transmission sexuelle sous suppression virale durable.",
+      "Il dispense de toutes les précautions standard lors d’un prélèvement sanguin.",
+      "C’est un message central pour réduire la stigmatisation.",
+      "Il signifie que la personne ne possède plus d’ADN viral intégré.",
+      "Une fois indétectable, le suivi médical peut être définitivement arrêté."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "I = I signifie qu’une personne durablement indétectable sous traitement ne transmet pas sexuellement le VIH ; le cours insiste sur le bénéfice clinique et social de ce message.\nPropositions à écarter : B : précautions standard maintenues. D : réservoir viral non éliminé. E : Le suivi reste important malgré la suppression virale.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Le contact ordinaire avec une PVVIH transmet-il le VIH ?",
+        "answers": [
+          "Non. Un examen clinique courant ou le contact social n’est pas une exposition au VIH. Les soins reposent sur les précautions standard pour toutes les personnes."
+        ],
+        "explanation": "Non. Un examen clinique courant ou le contact social n’est pas une exposition au VIH. Les soins reposent sur les précautions standard pour toutes les personnes."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_013",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 13,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "easy",
+    "question": "En l’absence de traitement, comment peut évoluer l’infection VIH ?",
+    "choices": [
+      "Primo-infection avec réplication virale initiale importante.",
+      "Disparition certaine du virus après quelques jours.",
+      "Phase de latence clinique pouvant être peu symptomatique.",
+      "La diminution des CD4 s’accompagne toujours de la disparition du VIH.",
+      "Absence de réplication virale pendant toute la latence."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Sans traitement, le cours décrit une primo-infection, une latence clinique puis une immunodépression progressive.\nPropositions à écarter : B : persistance virale. E : latence clinique ≠ virus biologiquement indétectable. D : La diminution des CD4 résulte de l’activité de l’infection, pas de sa guérison.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'est-ce que le principe « I = I » ?",
+        "answers": [
+          "« Indétectable = intransmissible » : sous traitement efficace, avec suppression virale durablement contrôlée, le VIH n’est pas transmis lors des rapports sexuels."
+        ],
+        "explanation": "« Indétectable = intransmissible » : sous traitement efficace, avec suppression virale durablement contrôlée, le VIH n’est pas transmis lors des rapports sexuels."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_014",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 14,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "easy",
+    "question": "Quels symptômes peuvent évoquer une primo-infection VIH ?",
+    "choices": [
+      "Fièvre et syndrome pseudo-grippal.",
+      "Éruption cutanée et adénopathies.",
+      "Dyspnée exclusivement, sans autre signe possible.",
+      "Pharyngite ou céphalées.",
+      "Un tableau clinique toujours pathognomonique."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La séance mentionne fièvre, myalgies, pharyngite, céphalées, éruption et adénopathies, avec possibilité d’absence de symptômes.\nPropositions à écarter : C : la clinique est variable. E : ces signes ne permettent pas, seuls, le diagnostic.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "I = I dispense-t-il de prévenir les autres IST ?",
+        "answers": [
+          "Non. Le principe porte sur la transmission sexuelle du VIH sous suppression virale durable ; il ne protège pas des autres IST ni ne remplace les précautions standard."
+        ],
+        "explanation": "Non. Le principe porte sur la transmission sexuelle du VIH sous suppression virale durable ; il ne protège pas des autres IST ni ne remplace les précautions standard."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_015",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 15,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "medium",
+    "question": "À propos du caractère asymptomatique de l’infection VIH, quelles propositions sont justes ?",
+    "choices": [
+      "La primo-infection peut ne provoquer aucun signe ressenti.",
+      "Une latence clinique peut durer sans symptôme évident.",
+      "L’absence de symptôme suffit à écarter toute contamination récente.",
+      "Le virus peut rester détectable malgré une latence clinique.",
+      "La latence est synonyme de guérison définitive."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’absence de symptôme ne garantit pas l’absence de VIH ; pendant la latence, le virus n’a pas disparu.\nPropositions à écarter : C : une exposition peut nécessiter des examens. E : la persistance virale continue.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quand survient généralement la primo-infection VIH ?",
+        "answers": [
+          "La séance situe ses manifestations possibles environ 2 à 6 semaines après la contamination. Elle peut rester asymptomatique ou ressembler à une grippe."
+        ],
+        "explanation": "La séance situe ses manifestations possibles environ 2 à 6 semaines après la contamination. Elle peut rester asymptomatique ou ressembler à une grippe."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_016",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 16,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "hard",
+    "question": "Quels éléments biologiques sont évoqués pendant la primo-infection ?",
+    "choices": [
+      "Une possible cytolyse hépatique.",
+      "Une thrombopénie est systématiquement présente chez tous les patients.",
+      "Une absence obligatoire de toute anomalie sanguine.",
+      "L’hémogramme est toujours parfaitement normal pendant la primo-infection.",
+      "Une numération CD4 à elle seule toujours suffisante pour diagnostiquer le VIH."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le cours évoque notamment cytolyse, syndrome mononucléosique, lymphopénie/neutropénie et thrombopénie.\nPropositions à écarter : C : anomalies possibles. E : diagnostic VIH par examens adaptés, non par CD4 isolés. B : Une thrombopénie peut exister mais n’est pas obligatoire. D : La séance décrit des anomalies possibles des cellules sanguines.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels signes doivent faire évoquer une primo-infection ?",
+        "answers": [
+          "Fièvre, céphalées, pharyngite, éruption, ganglions ; parfois anomalies biologiques. Ces signes sont non spécifiques et ne permettent pas seuls de diagnostiquer le VIH."
+        ],
+        "explanation": "Fièvre, céphalées, pharyngite, éruption, ganglions ; parfois anomalies biologiques. Ces signes sont non spécifiques et ne permettent pas seuls de diagnostiquer le VIH."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_017",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 17,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "medium",
+    "question": "Quelle conduite face à un zona est cohérente avec le cours ?",
+    "choices": [
+      "Il faut conclure que tout zona signifie VIH.",
+      "Le zona peut faire envisager une immunodépression.",
+      "Il peut conduire à proposer une évaluation et un dépistage VIH adaptés.",
+      "Il ne survient jamais chez une personne immunocompétente.",
+      "Un zona ne peut jamais conduire à envisager un dépistage VIH."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "L’enseignante mentionne le zona comme signe pouvant inciter à rechercher une cause d’immunodépression, sans en faire une preuve de VIH.\nPropositions à écarter : A et D : un zona a d’autres causes et survient aussi sans VIH. E : L’enseignante cite le zona comme une situation pouvant mener au dépistage.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'est-ce que la latence clinique du VIH ?",
+        "answers": [
+          "Une période parfois longue avec peu ou pas de symptômes. Le virus demeure présent et peut continuer à se répliquer : « asymptomatique » ne signifie pas « indétectable »."
+        ],
+        "explanation": "Une période parfois longue avec peu ou pas de symptômes. Le virus demeure présent et peut continuer à se répliquer : « asymptomatique » ne signifie pas « indétectable »."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_018",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 18,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "hard",
+    "question": "À propos des données épidémiologiques évoquées pendant le cours, quelle lecture est prudente ?",
+    "choices": [
+      "Les chiffres doivent être rattachés à leur année de référence.",
+      "Les chiffres d’une diapositive de 2022 décrivent nécessairement la situation en 2026.",
+      "Le cours signale une épidémie mondiale persistante malgré les traitements.",
+      "En cas de contradiction, on adopte sans contrôle le chiffre le plus élevé.",
+      "Une catégorie de population suffit à présumer de la sérologie d’une personne."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La présentation cite des repères datés et comporte une divergence pour un chiffre français : le raisonnement attendu porte sur dates, dépistage et prudence.\nPropositions à écarter : B : ne pas actualiser sans données. E : aucune identité/pratique ne permet de conclure individuellement. D : Une contradiction source doit être explicitement réservée.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment évolue le VIH sans traitement ?",
+        "answers": [
+          "Après la primo-infection et une période de latence possible, les CD4 diminuent progressivement et les complications immunitaires peuvent apparaître."
+        ],
+        "explanation": "Après la primo-infection et une période de latence possible, les CD4 diminuent progressivement et les complications immunitaires peuvent apparaître."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_019",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 19,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "medium",
+    "question": "Quelle différence entre contact quotidien et soin invasif avec une PVVIH ?",
+    "choices": [
+      "Le contact social ordinaire n’exige pas de protection exceptionnelle liée au VIH.",
+      "Les précautions standard dépendent aussi du geste et du risque de sang.",
+      "Une conversation avec une PVVIH impose systématiquement un masque FFP2.",
+      "Un prélèvement sanguin justifie la prévention habituelle des expositions au sang.",
+      "Les gants sont obligatoires lors de tout contact visuel avec une PVVIH."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours insiste sur l’absence de risque social ordinaire et l’application de précautions standard lors des gestes exposant au sang.\nPropositions à écarter : C et E : protections exceptionnelles liées au seul statut non justifiées.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi une personne traitée peut-elle mener une vie proche de la normale ?",
+        "answers": [
+          "Le traitement contrôle la réplication, permet généralement la remontée des CD4 et réduit le risque de complications. L’observance et le suivi restent essentiels."
+        ],
+        "explanation": "Le traitement contrôle la réplication, permet généralement la remontée des CD4 et réduit le risque de complications. L’observance et le suivi restent essentiels."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_020",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 20,
+    "theme": "Transmission et évolution clinique",
+    "difficulty": "medium",
+    "question": "Pourquoi la prévention du VIH ne doit-elle pas reposer sur une logique de culpabilisation ?",
+    "choices": [
+      "Elle peut empêcher le dialogue et l’accès au dépistage.",
+      "L’enseignante encourage une information sans jugement.",
+      "Le nombre de partenaires suffit à poser le diagnostic.",
+      "PrEP, préservatif et dépistage doivent être discutés avec la personne.",
+      "La prévention est inutile si la personne est anxieuse."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La séance demande une communication non moralisatrice et personnalisée, notamment pour les personnes vulnérables ou anxieuses.\nPropositions à écarter : C : pas de diagnostic par comportement. E : information adaptée reste utile.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles complications autres qu'infectieuses sont évoquées ?",
+        "answers": [
+          "Un risque accru de certains cancers et de maladies cardiovasculaires, favorisé notamment par l’inflammation liée à une infection non contrôlée."
+        ],
+        "explanation": "Un risque accru de certains cancers et de maladies cardiovasculaires, favorisé notamment par l’inflammation liée à une infection non contrôlée."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_021",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 21,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "easy",
+    "question": "Devant une infection opportuniste chez une PVVIH, quels axes de prise en charge sont évoqués ?",
+    "choices": [
+      "Traiter l’infection opportuniste identifiée.",
+      "Contrôler l’infection VIH par un traitement adapté.",
+      "Arrêter nécessairement les antirétroviraux de façon définitive.",
+      "Il faut renoncer à tout suivi de la récupération immunitaire.",
+      "Ignorer les autres infections opportunistes possibles."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La double approche soulignée à l’oral vise le traitement de l’infection en cours et le contrôle du VIH pour restaurer les défenses.\nPropositions à écarter : C et E sont contraires aux objectifs ; le calendrier thérapeutique reste médical et individualisé. D : La récupération immunitaire fait partie de l’objectif du traitement.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu'appelle-t-on « infection opportuniste » ?",
+        "answers": [
+          "Une infection favorisée par un affaiblissement des défenses immunitaires. Chez une PVVIH très immunodéprimée, certaines infections peuvent révéler un stade sida."
+        ],
+        "explanation": "Une infection favorisée par un affaiblissement des défenses immunitaires. Chez une PVVIH très immunodéprimée, certaines infections peuvent révéler un stade sida."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_022",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 22,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "easy",
+    "question": "Concernant la tuberculose au cours d’une infection VIH, quelles propositions sont justes ?",
+    "choices": [
+      "Elle peut apparaître même avec des CD4 relativement conservés.",
+      "Elle est exclusivement extrapulmonaire chez les PVVIH.",
+      "Une tuberculose doit faire envisager un dépistage VIH.",
+      "Une tuberculose pulmonaire contagieuse impose uniquement des précautions gouttelettes.",
+      "Les précautions gouttelettes suffisent nécessairement dans toute tuberculose pulmonaire."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "L’enseignante insiste sur dépistage VIH devant une tuberculose et précautions Air en cas de tuberculose pulmonaire contagieuse.\nPropositions à écarter : B : atteintes pulmonaires fréquentes, mais aussi extrapulmonaires. E : le cours distingue Air de gouttelettes. D : Le cours insiste sur les précautions Air.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que provoque la pneumocystose ?",
+        "answers": [
+          "Cette infection fongique atteint surtout les poumons et peut entraîner toux, fièvre, dyspnée et détresse respiratoire. Elle peut nécessiter des soins intensifs."
+        ],
+        "explanation": "Cette infection fongique atteint surtout les poumons et peut entraîner toux, fièvre, dyspnée et détresse respiratoire. Elle peut nécessiter des soins intensifs."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_023",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 23,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "easy",
+    "question": "Quels signes évoquent une pneumocystose dans la séance ?",
+    "choices": [
+      "Toux.",
+      "Dyspnée.",
+      "La pneumocystose est causée par un virus herpétique.",
+      "Hémiplégie isolée comme manifestation pulmonaire typique.",
+      "Nodules violacés cutanés comme signe cardinal."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La pneumocystose est décrite comme une infection fongique pulmonaire pouvant entraîner toux, dyspnée et fièvre, parfois gravité respiratoire.\nPropositions à écarter : D : évoque plutôt un problème neurologique. E : fait penser à Kaposi, non à une pneumocystose. C : La pneumocystose est une infection fongique.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle prévention de la pneumocystose est citée ?",
+        "answers": [
+          "Une prophylaxie par cotrimoxazole (Bactrim) chez des personnes dont les CD4 sont très bas, notamment sous le repère des 200/mm³, selon la décision médicale."
+        ],
+        "explanation": "Une prophylaxie par cotrimoxazole (Bactrim) chez des personnes dont les CD4 sont très bas, notamment sous le repère des 200/mm³, selon la décision médicale."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_024",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 24,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "medium",
+    "question": "À propos du cotrimoxazole et de la pneumocystose, que retient-on ?",
+    "choices": [
+      "Il est cité comme traitement de la pneumocystose.",
+      "Il est évoqué à visée prophylactique lors d’une forte immunodépression.",
+      "Il remplace tous les antirétroviraux du VIH.",
+      "Le seuil de 200 CD4/mm³ est un repère de cours pour discuter une prévention.",
+      "Il est un vaccin contre le VIH."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours mentionne cotrimoxazole pour traiter et prévenir la pneumocystose chez certaines PVVIH avec CD4 bas.\nPropositions à écarter : C et E : antibactérien/antipneumocystose ≠ traitement complet du VIH ni vaccin.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels signes peuvent révéler une toxoplasmose cérébrale ?",
+        "answers": [
+          "Déficit neurologique focal, hémiplégie ou crise convulsive, parfois tableau évoquant un AVC. L’imagerie peut montrer des lésions intracérébrales."
+        ],
+        "explanation": "Déficit neurologique focal, hémiplégie ou crise convulsive, parfois tableau évoquant un AVC. L’imagerie peut montrer des lésions intracérébrales."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_025",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 25,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "medium",
+    "question": "Quels signes ou situations orientent vers une toxoplasmose cérébrale ?",
+    "choices": [
+      "Déficit neurologique focal de type hémiplégie.",
+      "Crise d’épilepsie.",
+      "Abcès ou lésions cérébrales à l’imagerie.",
+      "Rétinite comme unique signe obligatoire.",
+      "Présence obligatoire d’une tuberculose pulmonaire associée."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’atteinte cérébrale toxoplasmique peut donner déficit focal, crises et lésions à l’imagerie ; l’enseignante évoque un tableau initialement confondu avec un AVC.\nPropositions à écarter : D : atteinte oculaire non présentée comme signe cardinal ici. E : aucune tuberculose obligatoire.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle atteinte évoque une cryptococcose chez une PVVIH ?",
+        "answers": [
+          "Une méningite avec céphalées et fièvre, parfois hypertension intracrânienne. L’enseignante évoque surtout les immunodépressions profondes et des ponctions lombaires répétées."
+        ],
+        "explanation": "Une méningite avec céphalées et fièvre, parfois hypertension intracrânienne. L’enseignante évoque surtout les immunodépressions profondes et des ponctions lombaires répétées."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_026",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 26,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "medium",
+    "question": "La cryptococcose opportuniste est évoquée avec quelles caractéristiques ?",
+    "choices": [
+      "Une méningite ou des céphalées fébriles.",
+      "Le CMV n’atteint jamais le tube digestif.",
+      "Le CMV ne peut avoir aucune atteinte neurologique.",
+      "Une gastro-entérite sans atteinte neurologique possible.",
+      "Un traitement reposant uniquement sur le préservatif."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Cryptococcose : infection fongique souvent neurologique, parfois avec hypertension intracrânienne et ponctions lombaires répétées ; repère oral CD4 souvent très bas.\nPropositions à écarter : D : l’atteinte neurologique est centrale dans la présentation. E : la prise en charge est antifongique spécialisée. B : La colite à CMV est évoquée. C : Une atteinte neurologique est possible dans certaines situations.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles atteintes typiques du CMV sont citées ?",
+        "answers": [
+          "Rétinite pouvant menacer la vision et colite avec diarrhées importantes. D’autres atteintes, notamment neurologiques, sont possibles."
+        ],
+        "explanation": "Rétinite pouvant menacer la vision et colite avec diarrhées importantes. D’autres atteintes, notamment neurologiques, sont possibles."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_027",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 27,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "medium",
+    "question": "Quelles atteintes emblématiques du CMV sont décrites ?",
+    "choices": [
+      "Rétinite pouvant menacer la vision.",
+      "Colite avec diarrhées.",
+      "Un traitement efficace exclut toute inflammation cardiovasculaire.",
+      "Une pneumocystose due au même agent CMV.",
+      "Une maladie exclusivement cutanée."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le CMV peut provoquer rétinite, colite, et certaines atteintes neurologiques ou pulmonaires ; des antiviraux spécifiques sont cités.\nPropositions à écarter : D : pneumocystose = autre agent fongique. E : le CMV n’est pas limité à la peau. C : Le suivi cardiovasculaire reste pertinent.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel dépistage faut-il penser à proposer devant une tuberculose ?",
+        "answers": [
+          "Un dépistage du VIH. L’enseignante insiste explicitement : rechercher une éventuelle infection VIH chez toute personne atteinte de tuberculose."
+        ],
+        "explanation": "Un dépistage du VIH. L’enseignante insiste explicitement : rechercher une éventuelle infection VIH chez toute personne atteinte de tuberculose."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_028",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 28,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "medium",
+    "question": "Quels liens entre VIH et cancers sont présentés ?",
+    "choices": [
+      "Kaposi est associé au HHV-8.",
+      "Certains cancers liés au papillomavirus peuvent être plus fréquents.",
+      "Une infection VIH rend tous les lymphomes impossibles.",
+      "Tous les cancers des PVVIH sont causés directement par le VIH lui-même.",
+      "Un traitement antirétroviral rend tous les dépistages inutiles."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le cours cite sarcome de Kaposi/HHV-8, lymphomes et certaines tumeurs associées aux HPV.\nPropositions à écarter : D : plusieurs agents et mécanismes entrent en jeu. E : prévention et suivi restent nécessaires. C : Le cours évoque un sur-risque de certains lymphomes.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles précautions devant une tuberculose pulmonaire contagieuse ?",
+        "answers": [
+          "Des précautions « Air », et non simplement « gouttelettes », selon les protocoles de soins. La prévention du risque respiratoire est une priorité."
+        ],
+        "explanation": "Des précautions « Air », et non simplement « gouttelettes », selon les protocoles de soins. La prévention du risque respiratoire est une priorité."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_029",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 29,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "hard",
+    "question": "Pourquoi le risque cardiovasculaire apparaît-il dans le cours ?",
+    "choices": [
+      "Une réplication persistante peut entretenir une inflammation.",
+      "Cette inflammation est présentée comme l’un des facteurs de complications.",
+      "Une atteinte cardiovasculaire est impossible en dehors du stade sida.",
+      "L’évaluation globale des comorbidités reste pertinente.",
+      "Il suffit de compter les CD4 pour exclure tout facteur cardiovasculaire."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La séance relie réplication/inflammation et complications cardiovasculaires, d’où une approche globale.\nPropositions à écarter : C : les comorbidités ne sont pas limitées au sida. E : les CD4 ne remplacent pas l’évaluation clinique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "La tuberculose ne survient-elle que lorsque les CD4 sont très bas ?",
+        "answers": [
+          "Non. Elle peut apparaître à différents stades de l’infection VIH, y compris avant une immunodépression profonde."
+        ],
+        "explanation": "Non. Elle peut apparaître à différents stades de l’infection VIH, y compris avant une immunodépression profonde."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_030",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 30,
+    "theme": "Infections opportunistes et complications",
+    "difficulty": "easy",
+    "question": "Quelles associations agent–manifestation sont correctes ?",
+    "choices": [
+      "Pneumocystose — infection fongique pulmonaire.",
+      "Toxoplasmose — abcès cérébraux possibles.",
+      "Cryptococcose — méningite possible.",
+      "CMV — maladie de Kaposi.",
+      "Tuberculose — infection exclusivement virale."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les trois premières associations correspondent aux tableaux typiques explicités par l’enseignante.\nPropositions à écarter : D : Kaposi est associé au HHV-8. E : tuberculose due à une mycobactérie, non à un virus.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel cancer est associé à HHV-8 dans la séance ?",
+        "answers": [
+          "La maladie de Kaposi, illustrée par des nodules cutanés violacés. Sont aussi évoqués les lymphomes et certains cancers liés au papillomavirus."
+        ],
+        "explanation": "La maladie de Kaposi, illustrée par des nodules cutanés violacés. Sont aussi évoqués les lymphomes et certains cancers liés au papillomavirus."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_031",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 31,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "easy",
+    "question": "Quels moyens de dépistage du VIH sont cités ?",
+    "choices": [
+      "Sérologie VIH.",
+      "Le TROD ne mesure que le nombre de CD4.",
+      "Une photographie des lésions cutanées est un autotest VIH.",
+      "Simple numération des lymphocytes CD4 comme diagnostic suffisant.",
+      "Photographie des lésions cutanées comme preuve de VIH."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La séance cite sérologie, TROD et autotest ; les résultats réactifs rapides nécessitent une confirmation selon le parcours diagnostique.\nPropositions à écarter : D et E : ne remplacent pas le diagnostic biologique VIH. B : Le TROD est utilisé pour le dépistage du VIH et non la numération CD4. C : Le diagnostic passe par des tests biologiques adaptés.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels examens sont évoqués pour dépister le VIH ?",
+        "answers": [
+          "La sérologie sanguine et des tests rapides (TROD, autotests). Le choix du test et son interprétation dépendent notamment du contexte d’exposition."
+        ],
+        "explanation": "La sérologie sanguine et des tests rapides (TROD, autotests). Le choix du test et son interprétation dépendent notamment du contexte d’exposition."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_032",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 32,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "medium",
+    "question": "Un autotest VIH revient positif. Quel message est adapté ?",
+    "choices": [
+      "Un examen de confirmation doit être organisé.",
+      "Le diagnostic définitif et le stade sida sont établis immédiatement par cet autotest.",
+      "La personne doit être orientée vers un parcours de soins adapté.",
+      "La confidentialité est inutile dès qu’un autotest est réactif.",
+      "Un autotest positif permet de prescrire soi-même des antirétroviraux."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "L’enseignante rappelle de confirmer un test rapide réactif par la démarche biologique adaptée et d’accompagner la personne.\nPropositions à écarter : B : résultat rapide non suffisant pour conclure au stade. E : traitement et prescription exigent une prise en charge médicale. D : Le secret et le respect de la personne demeurent essentiels.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment interpréter un autotest VIH réactif ?",
+        "answers": [
+          "Un résultat positif ou réactif sur un test rapide doit être confirmé par un examen biologique adapté. Il ne doit pas être présenté seul comme diagnostic définitif."
+        ],
+        "explanation": "Un résultat positif ou réactif sur un test rapide doit être confirmé par un examen biologique adapté. Il ne doit pas être présenté seul comme diagnostic définitif."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_033",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 33,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "easy",
+    "question": "Lors du suivi d’une PVVIH, quels éléments sont centraux ?",
+    "choices": [
+      "Charge virale VIH.",
+      "Numération T CD4.",
+      "La charge virale indétectable élimine toute question d’observance.",
+      "Mesure isolée de la glycémie comme seul examen du VIH.",
+      "Arrêt systématique du suivi dès la suppression virale."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La charge virale, les CD4 et l’observance permettent de suivre contrôle de réplication, récupération immunitaire et continuité des soins.\nPropositions à écarter : D : glycémie non spécifique. E : suivi maintenu même sous contrôle virologique. C : L’observance doit rester accompagnée sur le long terme.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que suit-on régulièrement chez une PVVIH traitée ?",
+        "answers": [
+          "La charge virale, les CD4 et l’état clinique. La séance cite comme objectif de suppression une charge virale inférieure à 50 copies/mL."
+        ],
+        "explanation": "La charge virale, les CD4 et l’état clinique. La séance cite comme objectif de suppression une charge virale inférieure à 50 copies/mL."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_034",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 34,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "medium",
+    "question": "Pourquoi rechercher d’autres IST chez une personne ayant un VIH ?",
+    "choices": [
+      "Il peut y avoir des co-infections.",
+      "Le cours cite notamment syphilis, hépatites et infections à Chlamydia/gonocoque.",
+      "Une infection VIH protège des autres IST.",
+      "La prévention et le dépistage restent nécessaires.",
+      "Le test VIH détecte automatiquement toutes les IST."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’enseignante insiste sur la recherche d’autres IST, car des expositions communes peuvent conduire à plusieurs infections.\nPropositions à écarter : C : VIH n’immunise pas contre les IST. E : dépistages spécifiques nécessaires.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi rechercher d'autres IST chez une PVVIH ?",
+        "answers": [
+          "Les expositions peuvent concerner plusieurs infections. La séance cite notamment hépatites B et C, syphilis, chlamydia et gonocoque."
+        ],
+        "explanation": "Les expositions peuvent concerner plusieurs infections. La séance cite notamment hépatites B et C, syphilis, chlamydia et gonocoque."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_035",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 35,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "easy",
+    "question": "Que retenir du traitement antirétroviral (ARV) dans ce cours ?",
+    "choices": [
+      "Il est proposé dès que possible après le diagnostic.",
+      "Il doit généralement être poursuivi au long cours, sans arrêt autonome.",
+      "Il a pour objectif une suppression durable de la charge virale.",
+      "Il est arrêté dès la première mesure indétectable.",
+      "Il consiste toujours exclusivement en trois comprimés distincts par jour."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le traitement précoce et durable est fortement souligné ; il contrôle la réplication et vise une charge virale indétectable.\nPropositions à écarter : D : arrêter expose à une reprise de réplication. E : schémas simplifiés possibles et nombre de comprimés variable.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quand et pendant combien de temps traiter le VIH ?",
+        "answers": [
+          "Débuter les antirétroviraux dès que possible et poursuivre au long cours, en principe à vie. Une interruption peut laisser la réplication reprendre et les CD4 baisser."
+        ],
+        "explanation": "Débuter les antirétroviraux dès que possible et poursuivre au long cours, en principe à vie. Une interruption peut laisser la réplication reprendre et les CD4 baisser."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_036",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 36,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "medium",
+    "question": "À propos des schémas ARV évoqués, lesquelles des propositions sont justes ?",
+    "choices": [
+      "Le cours mentionne des bithérapies possibles dans certaines situations.",
+      "Il n’existe jamais de comprimé associant plusieurs antirétroviraux.",
+      "Le choix des ARV ne dépend jamais des comorbidités.",
+      "Tout patient reçoit obligatoirement la même association de médicaments.",
+      "Le nombre de comprimés permet à lui seul d’évaluer l’efficacité."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’enseignante cite bi-/trithérapies, comprimés combinés, et individualisation selon co-infections, grossesse, interactions et résistances.\nPropositions à écarter : D et E : pas de schéma universel ni de jugement par simple nombre de comprimés. B : Le cours décrit des combinaisons en un comprimé. C : Les interactions, co-infections et comorbidités guident le choix.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "« Trithérapie » signifie-t-il toujours trois comprimés ?",
+        "answers": [
+          "Non. Certaines associations contiennent 2 ou 3 molécules dans un seul comprimé quotidien ; des traitements injectables existent aussi dans des indications choisies."
+        ],
+        "explanation": "Non. Certaines associations contiennent 2 ou 3 molécules dans un seul comprimé quotidien ; des traitements injectables existent aussi dans des indications choisies."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_037",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 37,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "hard",
+    "question": "Quels noms de traitements combinés sont cités à titre d’exemples pendant la séance ?",
+    "choices": [
+      "Biktarvy.",
+      "Dovato.",
+      "Chaque PVVIH doit recevoir la même molécule, indépendamment des co-infections.",
+      "Cotrimoxazole comme combinaison curative du VIH.",
+      "Ganciclovir comme trithérapie antirétrovirale standard."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Biktarvy, Dovato et Delstrigo sont les exemples de comprimés combinés cités oralement ; les molécules doivent être distinguées de celles des infections opportunistes.\nPropositions à écarter : D : cotrimoxazole est évoqué pour pneumocystose. E : ganciclovir pour CMV. C : La prise en charge est individualisée.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels exemples de traitements combinés sont cités ?",
+        "answers": [
+          "Biktarvy, Dovato et Delstrigo. Leur composition et leur indication diffèrent : le schéma est individualisé par le prescripteur."
+        ],
+        "explanation": "Biktarvy, Dovato et Delstrigo. Leur composition et leur indication diffèrent : le schéma est individualisé par le prescripteur."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_038",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 38,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "medium",
+    "question": "Une PVVIH bien contrôlée souhaite une grossesse. Quels messages sont conformes à la séance ?",
+    "choices": [
+      "Un projet parental peut être envisagé avec un suivi spécialisé.",
+      "Une PMA est toujours obligatoire.",
+      "La charge virale n’a aucune importance pendant la grossesse.",
+      "L’observance et le suivi de la charge virale pendant la grossesse sont importants.",
+      "Une grossesse doit être systématiquement interdite aux PVVIH."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "La séance décrit des grossesses spontanées possibles et insiste sur l’observance, le contrôle virologique et le suivi spécialisé.\nPropositions à écarter : B et E : des obligations/interdictions générales que l’enseignante rejette. C : Le contrôle de la charge virale est une priorité de la grossesse.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Une PVVIH contrôlée peut-elle envisager une grossesse spontanée ?",
+        "answers": [
+          "Oui. Le contrôle virologique peut permettre un projet de grossesse sans recours systématique à la PMA, avec un suivi spécialisé du couple et de la grossesse."
+        ],
+        "explanation": "Oui. Le contrôle virologique peut permettre un projet de grossesse sans recours systématique à la PMA, avec un suivi spécialisé du couple et de la grossesse."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_039",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 39,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "hard",
+    "question": "Concernant l’allaitement chez une PVVIH contrôlée, quel raisonnement est approprié ?",
+    "choices": [
+      "L’allaitement est toujours interdit, sans exception.",
+      "La séance évoque une décision possible dans certaines situations sélectionnées.",
+      "Le suivi de la mère et du nourrisson reste essentiel.",
+      "L’absence de risque doit être garantie sans aucune condition.",
+      "L’équipe spécialisée doit discuter bénéfices, conditions et prévention avec la patiente."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "L’enseignante explique l’évolution de la pratique : une discussion encadrée peut être proposée, avec forte vigilance sur la suppression virale et le suivi mère–enfant.\nPropositions à écarter : A et D : les formulations absolues ne reflètent pas les nuances du cours.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le principe de prévention mère-enfant ?",
+        "answers": [
+          "Maintenir une charge virale maternelle contrôlée, assurer le suivi spécialisé et proposer les mesures adaptées au nouveau-né, dont la prophylaxie selon le contexte."
+        ],
+        "explanation": "Maintenir une charge virale maternelle contrôlée, assurer le suivi spécialisé et proposer les mesures adaptées au nouveau-né, dont la prophylaxie selon le contexte."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_040",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 40,
+    "theme": "Dépistage, traitement et maternité",
+    "difficulty": "medium",
+    "question": "Quel rôle attribuer à la prophylaxie néonatale lors d’une grossesse chez une PVVIH ?",
+    "choices": [
+      "Elle peut faire partie de la stratégie de prévention pour le nouveau-né.",
+      "Elle remplace l’ensemble du suivi virologique maternel.",
+      "Sa durée et ses modalités sont décidées selon la situation clinique.",
+      "Le cours mentionne une prophylaxie du nourrisson dans le parcours spécialisé.",
+      "Elle signifie que tous les bébés sont déjà infectés."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La séance évoque une prophylaxie néonatale et un suivi spécialisé, en complément du contrôle maternel.\nPropositions à écarter : B : le suivi maternel est essentiel. E : la prophylaxie vise à prévenir, pas à affirmer une infection.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Allaitement et VIH : quel raisonnement retenir ?",
+        "answers": [
+          "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée."
+        ],
+        "explanation": "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_041",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 41,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "easy",
+    "question": "À propos de la prophylaxie pré-exposition (PrEP), que faut-il retenir ?",
+    "choices": [
+      "Elle s’adresse à des personnes VIH négatives exposées à un risque.",
+      "Elle n’est proposée qu’après une exposition avérée.",
+      "Elle utilise exclusivement un vaccin vivant.",
+      "Elle est identique à un vaccin.",
+      "Elle permet d’abandonner automatiquement le dépistage des autres IST."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "La PrEP est une prévention antirétrovirale anticipée, présentée comme un outil majeur de réduction du VIH.\nPropositions à écarter : D : pas un vaccin. E : elle ne protège pas de toutes les autres IST. B : PrEP signifie prévention avant une exposition potentielle. C : La PrEP repose sur des antirétroviraux, non un vaccin.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « PrEP » ?",
+        "answers": [
+          "Prophylaxie pré-exposition : utilisation préventive d’antirétroviraux chez une personne sans VIH avant certaines expositions à risque."
+        ],
+        "explanation": "Prophylaxie pré-exposition : utilisation préventive d’antirétroviraux chez une personne sans VIH avant certaines expositions à risque."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_042",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 42,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quels messages sur la PrEP sont cohérents avec le cours ?",
+    "choices": [
+      "Elle peut être discutée après une IST, selon l’exposition et les besoins.",
+      "Elle remplace toutes les mesures de prévention des autres IST.",
+      "Des modalités orales sont évoquées pendant la séance.",
+      "Toutes les modalités injectables sont disponibles partout et sans condition.",
+      "Elle traite à elle seule une infection VIH diagnostiquée."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le cours insiste sur l’information PrEP, notamment pour les personnes exposées et celles ayant eu une autre IST ; il présente voies orale et injectable.\nPropositions à écarter : B : prévention des autres IST maintenue. E : traitement du VIH ≠ PrEP seule. D : Le cours indique des modalités et des disponibilités à vérifier localement.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles modalités de PrEP sont présentées ?",
+        "answers": [
+          "La séance évoque des schémas oraux continus ou à la demande, et des traitements injectables. Leur choix dépend de l’indication et du suivi spécialisé."
+        ],
+        "explanation": "La séance évoque des schémas oraux continus ou à la demande, et des traitements injectables. Leur choix dépend de l’indication et du suivi spécialisé."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_043",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 43,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Qu’est-ce qui différencie PrEP et traitement post-exposition (TPE/PEP) ?",
+    "choices": [
+      "La PrEP intervient avant une exposition potentielle.",
+      "Le TPE est discuté après une exposition à risque.",
+      "Une consultation après plusieurs mois présente la même urgence pour le TPE.",
+      "La PrEP et le TPE correspondent à une vaccination identique.",
+      "Le TPE est indiqué automatiquement après n’importe quel contact social."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La différence temporelle est essentielle : prévention en amont (PrEP) et prise en charge urgente après exposition (TPE).\nPropositions à écarter : D : médicaments antirétroviraux, pas vaccin. E : évaluation de la nature de l’exposition indispensable. C : Le TPE est une urgence évaluée au plus tôt, dans une fenêtre temporelle limitée.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "La PrEP protège-t-elle des autres IST ?",
+        "answers": [
+          "Non. Elle vise la prévention du VIH, mais ne remplace ni le préservatif, ni le dépistage et le suivi des autres IST."
+        ],
+        "explanation": "Non. Elle vise la prévention du VIH, mais ne remplace ni le préservatif, ni le dépistage et le suivi des autres IST."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_044",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 44,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quelles données d’une exposition récente doivent être recueillies en priorité ?",
+    "choices": [
+      "Le délai depuis le contact.",
+      "La nature de l’exposition et du liquide concerné.",
+      "Des éléments utiles sur le contexte et la personne source, si disponibles.",
+      "Le jugement moral porté sur la vie sexuelle.",
+      "La supposition qu’un contact courant est toujours dangereux."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La séance rappelle qu’il faut identifier le moment et la nature du contact pour apprécier l’urgence et l’éligibilité au TPE ; l’équipe évalue le contexte.\nPropositions à écarter : D : attitude non jugeante. E : une exposition pertinente doit être caractérisée.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "PrEP et TPE : quelle différence ?",
+        "answers": [
+          "PrEP : prévention organisée AVANT une exposition éventuelle. TPE/PEP : traitement urgent proposé APRÈS une exposition potentielle, selon l’évaluation médicale."
+        ],
+        "explanation": "PrEP : prévention organisée AVANT une exposition éventuelle. TPE/PEP : traitement urgent proposé APRÈS une exposition potentielle, selon l’évaluation médicale."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_045",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 45,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quels repères de TPE sont explicitement donnés pendant le cours ?",
+    "choices": [
+      "Une prise en charge dans les 72 h suivant l’exposition, idéalement très précoce.",
+      "Un traitement antirétroviral de 28 jours est évoqué.",
+      "Un avis médical urgent est nécessaire.",
+      "Il faut toujours attendre la survenue d’une fièvre avant d’agir.",
+      "Le TPE est une immunisation vaccinale à dose unique."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La séance évoque un TPE urgent, idéalement dans les premières heures, dans les 72 h et pendant 28 jours, à adapter au protocole appliqué.\nPropositions à écarter : D : ne pas différer l’évaluation. E : il s’agit d’antirétroviraux, pas d’un vaccin.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels délais de TPE sont donnés à l'oral ?",
+        "answers": [
+          "Le plus tôt possible après l’exposition : idéalement dans les 4 heures et au plus tard dans les 72 heures. La séance indique une durée de 28 jours."
+        ],
+        "explanation": "Le plus tôt possible après l’exposition : idéalement dans les 4 heures et au plus tard dans les 72 heures. La séance indique une durée de 28 jours."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_046",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 46,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Après un accident d’exposition au sang (AES), quelles étapes sont citées ?",
+    "choices": [
+      "Une évaluation rapide du risque et une orientation médicale.",
+      "Aucun examen de suivi n’est utile après un AES.",
+      "Un AES chez un IDE ne nécessite jamais une déclaration d’accident du travail.",
+      "Une décision thérapeutique autonome de l’IDE sans consultation.",
+      "L’absence de toute traçabilité si le patient source est inconnu."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’enseignante insiste sur l’urgence, les examens de suivi et la déclaration professionnelle pour l’IDE exposé.\nPropositions à écarter : D : l’indication du TPE relève de l’évaluation médicale. E : traçabilité et suivi sont indispensables. B : La séance évoque les sérologies et contrôles appropriés. C : Le cours rappelle l’importance de cette déclaration.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles analyses accompagnent un TPE ?",
+        "answers": [
+          "Un bilan initial, notamment VIH et hépatites selon la situation, puis des contrôles ultérieurs. La séance cite un contrôle à 6 semaines ; le calendrier exact suit le protocole."
+        ],
+        "explanation": "Un bilan initial, notamment VIH et hépatites selon la situation, puis des contrôles ultérieurs. La séance cite un contrôle à 6 semaines ; le calendrier exact suit le protocole."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_047",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 47,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Dans le cas de M. M., anxieux après un rapport non protégé, quelle posture infirmière est adaptée ?",
+    "choices": [
+      "Accueillir l’anxiété sans culpabiliser.",
+      "Informer que des traitements efficaces existent et organiser le dépistage.",
+      "La date du contact ne sert jamais à déterminer l’urgence.",
+      "Annoncer immédiatement qu’il va mourir du sida.",
+      "Affirmer sans test qu’il a forcément contracté le VIH."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le cas corrigé oralement insiste sur l’écoute, une information rassurante et exacte, le dépistage et le repérage d’un possible TPE.\nPropositions à écarter : D : message alarmiste explicitement écarté. E : diagnostic inconnu. C : La date est déterminante pour une éventuelle orientation TPE.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire administrativement après un AES professionnel ?",
+        "answers": [
+          "Ne pas oublier la déclaration d’accident du travail, en plus de la prise en charge urgente et du suivi médical prévus par le protocole."
+        ],
+        "explanation": "Ne pas oublier la déclaration d’accident du travail, en plus de la prise en charge urgente et du suivi médical prévus par le protocole."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_048",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 48,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "hard",
+    "question": "Un étudiant propose de résoudre les huit situations du cas final en cochant « TPE oui/non ». Que répondre à partir des sources fournies ?",
+    "choices": [
+      "La correction de ce dernier exercice n’a pas été donnée oralement.",
+      "Il faut fabriquer des réponses pour compléter la banque.",
+      "L’analyse doit distinguer type d’exposition, délai et contexte.",
+      "Les huit situations ont toutes reçu une correction orale officielle.",
+      "Tout cas cité dans une diapositive justifie automatiquement un TPE."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le cas final sur les expositions est présent dans les captures mais non corrigé dans l’enregistrement. Il doit rester en exercice de raisonnement sans clés inventées.\nPropositions à écarter : B et E : une correction non sourcée ou une règle automatique seraient dangereuses. D : La transcription se termine sans correction de ces huit situations.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles données recueillir après un rapport ou un AES à risque ?",
+        "answers": [
+          "La date et l’heure, le type d’exposition, les protections utilisées et les informations utiles sur la source. Elles servent à orienter rapidement l’évaluation du TPE."
+        ],
+        "explanation": "La date et l’heure, le type d’exposition, les protections utilisées et les informations utiles sur la source. Elles servent à orienter rapidement l’évaluation du TPE."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_049",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 49,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Que comprennent les précautions et le rôle IDE auprès d’une PVVIH ?",
+    "choices": [
+      "Appliquer les précautions standard en fonction du soin.",
+      "Utiliser les gants lors de gestes exposant au sang selon les bonnes pratiques.",
+      "Préserver la confidentialité et éviter la stigmatisation.",
+      "Imposer un isolement Air à toute PVVIH sans tuberculose.",
+      "Renoncer à tout examen clinique de peur d’une contagion par simple contact."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La séance distingue VIH et transmission aérienne : les précautions standard protègent lors des gestes à risque, sans écarter les soins ordinaires.\nPropositions à écarter : D : Air concerne notamment une tuberculose pulmonaire contagieuse. E : le contact ordinaire ne transmet pas le VIH.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles précautions infirmières chez une PVVIH ?",
+        "answers": [
+          "Appliquer les précautions standard comme pour tous : pas de protection supplémentaire pour le contact ordinaire ; gants et matériel sécurisé lors d’actes exposant au sang."
+        ],
+        "explanation": "Appliquer les précautions standard comme pour tous : pas de protection supplémentaire pour le contact ordinaire ; gants et matériel sécurisé lors d’actes exposant au sang."
+      }
+    ]
+  },
+  {
+    "id": "vih_b13_20261027_050",
+    "courseId": "vih_b13_20261027",
+    "ue": "S1 B1.3",
+    "course": "VIH — virus de l’immunodéficience humaine",
+    "number": 50,
+    "theme": "PrEP, TPE et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Quelles composantes de la prise en charge globale sont soulignées par l’enseignante ?",
+    "choices": [
+      "Éducation thérapeutique et compréhension du traitement.",
+      "Soutien psychosocial et accès aux ressources si précarité.",
+      "Coordination des professionnels et accompagnement sans jugement.",
+      "Suivi limité à une ordonnance sans dialogue.",
+      "Abandon de l’information sur les vaccinations et autres IST."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours fait de l’éducation thérapeutique, de l’observance et du soutien social/psychologique des axes prioritaires de soins.\nPropositions à écarter : D : relation et accompagnement indispensables. E : vaccination et IST restent abordées.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles dimensions composent le suivi global d'une PVVIH ?",
+        "answers": [
+          "Éducation thérapeutique, soutien psychologique, aide sociale, médiation en santé, vaccinations et suivi régulier, avec une attitude non jugeante."
+        ],
+        "explanation": "Éducation thérapeutique, soutien psychologique, aide sociale, médiation en santé, vaccinations et suivi régulier, avec une attitude non jugeante."
+      }
+    ]
   }
 ]
