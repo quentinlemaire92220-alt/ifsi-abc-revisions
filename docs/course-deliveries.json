@@ -2675,12 +2675,16 @@
         "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
       },
       "visualOwnerReview": {
-        "status": "updated_candidate_requires_new_review",
+        "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
+        "method": "all_pages_compared_at_100_and_200_percent",
+        "pagesChecked": 11,
         "reviewedPdfSha256s": {
           "a1_tgs_td_written_p01": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
         },
-        "ownerFeedback": "La maquette précédente avait été acceptée ; correction typographique et navigation PDF ajoutées après échec TNR, nouvelle empreinte soumise à relecture."
+        "reviewedAt": "2026-10-28T16:16:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "acceptanceBasis": "Utilisateur : « Validé », le 28 octobre 2026, en réponse au lien vers le PDF 11 pages corrigé. Preuves privées des 22 rendus conservées sur Google Drive."
       },
       "blockers": [
         {
@@ -2757,19 +2761,34 @@
             "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
             "artifactSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
             "pageCount": 11,
-            "pagesChecked": [],
-            "status": "updated_candidate_requires_owner_review",
-            "method": "technical_render_100_and_200_percent",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T16:16:00+01:00",
             "checks": {
-              "MODEL_COMPARISON": "PENDING",
-              "BANDS_AND_TYPOGRAPHY": "PASS_TECHNICAL",
-              "MARGINS_AND_HIERARCHY": "PENDING",
-              "COLOR_AND_BOXES": "PENDING",
-              "NO_CLIPPING_OR_OVERLAP": "PASS_TECHNICAL",
-              "READABLE_AT_100_AND_200_PERCENT": "PENDING",
-              "STRUCTURE_AND_PAGINATION": "PASS_TECHNICAL"
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "3572aeb7974e528be0e8706d42bd599f09644156e105e46e00afebeed2eb96ae"
+            "privateEvidenceSha256": "80e231b58249c31a2c1a6ad4cb1684bdb71bf30ebd602968d47eda0be5ce8cd6"
           }
         }
       },
