@@ -3011,6 +3011,129 @@
           "bundleSha256": "07e6434fe13d7a8f8e212163d03af018a21aeb86bcdd21004043231708c077e7"
         }
       }
+    },
+    {
+      "courseId": "fievre_retour_voyage_paludisme",
+      "part": "01",
+      "validated": false,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReason": "Support officiel non reçu ; transcription et captures seules ; vérifications thérapeutiques à compléter.",
+      "provisionalReassessmentRequired": true,
+      "publicAssetSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+      "qcmPublicAssetSha256": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871",
+      "sheetResourceId": "fievre_paludisme_written_p01",
+      "sheetResourceIds": [
+        "fievre_paludisme_written_p01"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmBank": "data/course-banks/fievre_retour_voyage_paludisme.json",
+      "qcmCount": 40,
+      "flashcardCount": 50,
+      "vocabularyCount": 50,
+      "vocals": [],
+      "scriptsPreparedCount": 3,
+      "requestedVocals": true,
+      "sourceAudit": {
+        "officialChecked": false,
+        "officialSupportMissing": true,
+        "oralStatus": "unverified",
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "50 captures et transcription du 27/10/2026 rapprochées des 18 notions essentielles, sans support officiel écrit ni vérification de l'enregistrement original.",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested",
+        "missingSources": [
+          "written_official_support"
+        ]
+      },
+      "writtenCoverage": {
+        "expectedEssential": 18,
+        "coveredEssential": 18,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Lecture des captures et transcription ; ni revue scientifique indépendante ni validation de recommandations actualisées."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+        "pageSize": "A4",
+        "pageCount": 14,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 50,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "fievre_paludisme_sheet_public_candidate": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+        "fievre_paludisme_qcm_public_candidate": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871"
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37"
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Fiche_Revision.pdf",
+          "sha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+          "pageCount": 14,
+          "artifactId": "fievre_paludisme_sheet_public_candidate"
+        },
+        "qcm": {
+          "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_QCM_40_Corriges.pdf",
+          "sha256": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871",
+          "pageCount": 17,
+          "artifactId": "fievre_paludisme_qcm_public_candidate"
+        }
+      },
+      "publicationApproval": {
+        "status": "pending_final_bundle_review",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": null,
+        "bundleSha256": null
+      },
+      "blockers": [
+        {
+          "resource": "official_support",
+          "reason": "official_support_missing",
+          "detail": "Support officiel toujours absent ; réévaluer à sa réception."
+        },
+        {
+          "resource": "scientific_review",
+          "reason": "pending",
+          "detail": "BMR, prophylaxie et méthodes diagnostiques : réserves documentaires."
+        },
+        {
+          "resource": "graphic_owner_review",
+          "reason": "pending",
+          "detail": "Reçu de conformité graphique V3 sur les octets publiés non encore fourni."
+        }
+      ]
     }
   ],
   "supplementalResourceApprovals": [
