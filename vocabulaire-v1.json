@@ -7807,6 +7807,630 @@
         "gestion_stress_professionnel"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_01",
+      "term": "VIH",
+      "theme": "VIH — UE B1.3",
+      "definition": "Virus de l’immunodéficience humaine ; rétrovirus responsable d’une infection chronique.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : virus de l’immunodéficience humaine, cause de l’infection VIH.",
+      "distinction": "Le VIH désigne un virus ; le sida désigne un stade clinique avancé de l’infection."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_02",
+      "term": "PVVIH",
+      "theme": "VIH — UE B1.3",
+      "definition": "Personne vivant avec le VIH ; formulation non stigmatisante.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : personne vivant avec le virus de l’immunodéficience humaine.",
+      "distinction": "Terme centré sur la personne ; il ne confond pas identité et diagnostic."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_03",
+      "term": "Rétrovirus",
+      "theme": "VIH — UE B1.3",
+      "definition": "Virus utilisant une transcriptase inverse pour produire de l’ADN à partir de son ARN.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Préfixe rétro- : en sens inverse ; désigne ici la rétrotranscription de l’ARN en ADN.",
+      "distinction": "Le rétrovirus utilise la transcription inverse, contrairement à la transcription habituelle."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_04",
+      "term": "Transcriptase inverse",
+      "theme": "VIH — UE B1.3",
+      "definition": "Enzyme permettant la rétrotranscription ARN viral → ADN.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Transcription : copie d’information génétique ; inverse signale le passage de l’ARN à l’ADN.",
+      "distinction": "Elle produit de l’ADN à partir de l’ARN ; l’ARN polymérase opère autrement."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_05",
+      "term": "Intégration",
+      "theme": "VIH — UE B1.3",
+      "definition": "Insertion de l’ADN viral dans le génome d’une cellule infectée.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Du latin integrare : faire entrer dans un tout ; insertion de l’ADN viral.",
+      "distinction": "L’intégration concerne le génome cellulaire, pas une simple présence de virus dans le sang."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_06",
+      "term": "ADN proviral",
+      "theme": "VIH — UE B1.3",
+      "definition": "Forme d’ADN du VIH intégrée dans des cellules, participant au réservoir viral.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Pro- : en avant, et viral : relatif au virus ; l’ADN proviral est intégré.",
+      "distinction": "L’ADN proviral reste dans la cellule ; la charge virale plasmatique mesure l’ARN circulant."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_07",
+      "term": "Réservoir viral",
+      "theme": "VIH — UE B1.3",
+      "definition": "Ensemble des cellules ou sites où persiste le VIH malgré le contrôle de la réplication.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Réservoir : lieu de conservation ; viral : relatif au virus et à sa persistance.",
+      "distinction": "Le réservoir peut persister malgré une charge virale indétectable dans le plasma."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_08",
+      "term": "Charge virale (CV)",
+      "theme": "VIH — UE B1.3",
+      "definition": "Quantité d’ARN du VIH mesurée dans le sang ; repère de suivi du traitement.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Charge : quantité ; viral : relatif au virus ; CV est l’abréviation de charge virale.",
+      "distinction": "Charge virale : réplication plasmatique ; CD4 : état de l’immunité."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_09",
+      "term": "Indétectable",
+      "theme": "VIH — UE B1.3",
+      "definition": "Charge virale sous le seuil de détection défini par la méthode du laboratoire.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Préfixe in- : négation ; détectable : repérable par la méthode de mesure.",
+      "distinction": "Indétectable signifie sous le seuil du test ; ce n’est pas une guérison du VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_10",
+      "term": "I = I",
+      "theme": "VIH — UE B1.3",
+      "definition": "Indétectable égale intransmissible : pas de transmission sexuelle du VIH sous suppression virale durable.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Expression mnémotechnique : « Indétectable = Intransmissible » par voie sexuelle.",
+      "distinction": "I = I concerne la transmission sexuelle sous suppression virale durable, pas les autres IST."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_11",
+      "term": "Lymphocyte T CD4",
+      "theme": "VIH — UE B1.3",
+      "definition": "Cellule immunitaire qui coordonne la défense et constitue une cible majeure du VIH.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Lympho- : lymphe ; -cyte : cellule ; CD4 est un marqueur de surface immunitaire.",
+      "distinction": "CD4 : cellule coordinatrice ; CD8 : réponse notamment cytotoxique."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_12",
+      "term": "Lymphocyte T CD8",
+      "theme": "VIH — UE B1.3",
+      "definition": "Lymphocyte T notamment impliqué dans la destruction de cellules infectées.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Lympho- : lymphe ; -cyte : cellule ; CD8 est un marqueur de surface immunitaire.",
+      "distinction": "CD8 : action cytotoxique ; CD4 : coordination des réponses immunitaires."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_13",
+      "term": "Lymphocyte B",
+      "theme": "VIH — UE B1.3",
+      "definition": "Cellule immunitaire pouvant se différencier en plasmocyte sécréteur d’anticorps.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Lympho- : lymphe ; -cyte : cellule ; B désigne une population de lymphocytes.",
+      "distinction": "Les lymphocytes B produisent des anticorps après différenciation ; les T CD4 coordonnent."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_14",
+      "term": "Immunodépression",
+      "theme": "VIH — UE B1.3",
+      "definition": "Diminution des capacités du système immunitaire à protéger l’organisme.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Immuno- : défense ; dépression : diminution de l’activité immunitaire.",
+      "distinction": "L’immunodépression est une baisse des défenses ; elle n’est pas synonyme de sida."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_15",
+      "term": "Sida",
+      "theme": "VIH — UE B1.3",
+      "definition": "Syndrome d’immunodéficience acquise ; stade avancé de l’infection VIH selon des critères définis.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : syndrome d’immunodéficience acquise, stade avancé de l’infection.",
+      "distinction": "Le sida est un stade avancé du VIH et non l’ensemble des infections VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_16",
+      "term": "Infection opportuniste",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection favorisée par une défense immunitaire insuffisante.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Opportuniste : qui profite d’une occasion ; ici la baisse des défenses.",
+      "distinction": "Une infection opportuniste peut aussi survenir dans d’autres immunodépressions."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_17",
+      "term": "Primo-infection",
+      "theme": "VIH — UE B1.3",
+      "definition": "Période initiale qui suit l’acquisition du VIH, avec forte réplication possible.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Primo- : premier, initial ; infection : pénétration et multiplication d’un agent.",
+      "distinction": "Primo-infection : phase initiale ; latence clinique : phase parfois peu symptomatique."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_18",
+      "term": "Latence clinique",
+      "theme": "VIH — UE B1.3",
+      "definition": "Phase parfois peu symptomatique, malgré la persistance du VIH.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Latence : état latent ; clinique : relatif aux manifestations observables.",
+      "distinction": "La latence clinique n’équivaut ni à guérison ni à suppression virale sous traitement."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_19",
+      "term": "Sérologie VIH",
+      "theme": "VIH — UE B1.3",
+      "definition": "Examen biologique de dépistage recherchant des marqueurs de l’infection.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Séro- : sérum ; -logie : étude ; examen des marqueurs sanguins infectieux.",
+      "distinction": "La sérologie recherche des marqueurs sanguins ; elle n’est pas la numération CD4."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_20",
+      "term": "TROD",
+      "theme": "VIH — UE B1.3",
+      "definition": "Test rapide d’orientation diagnostique ; un résultat positif appelle une confirmation.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : test rapide d’orientation diagnostique, à confirmer si réactif.",
+      "distinction": "Le TROD est un test d’orientation ; sa positivité ne constitue pas seule une confirmation."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_21",
+      "term": "Antigène p24",
+      "theme": "VIH — UE B1.3",
+      "definition": "Composant viral recherché par certains tests biologiques de dépistage du VIH.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Anti- : contre ; -gène : élément reconnu par le système immunitaire ; p24 est un antigène viral.",
+      "distinction": "L’antigène p24 est une protéine virale ; les anticorps sont produits par l’hôte."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_22",
+      "term": "Autotest",
+      "theme": "VIH — UE B1.3",
+      "definition": "Test de dépistage réalisé par la personne elle-même, avec confirmation médicale si positif.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Auto- : soi-même ; test : épreuve diagnostique réalisée par la personne.",
+      "distinction": "Un autotest réactif doit être confirmé, comme tout test rapide d’orientation positif."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_23",
+      "term": "ARN viral",
+      "theme": "VIH — UE B1.3",
+      "definition": "Matériel génétique du VIH mesuré notamment pour la charge virale.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "ARN : acide ribonucléique ; viral : relatif au matériel génétique du virus.",
+      "distinction": "L’ARN viral est le matériel génétique mesuré ; l’ADN proviral est intégré dans des cellules."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_24",
+      "term": "Antirétroviral (ARV)",
+      "theme": "VIH — UE B1.3",
+      "definition": "Médicament qui inhibe une étape de la multiplication du VIH.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Anti- : contre ; rétroviral : relatif aux rétrovirus ; ARV est le sigle usuel.",
+      "distinction": "Les ARV contrôlent la réplication du VIH sans éliminer habituellement les réservoirs."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_25",
+      "term": "Bithérapie",
+      "theme": "VIH — UE B1.3",
+      "definition": "Association de deux principes actifs antirétroviraux dans certains schémas.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Bi- : deux ; thérapie : traitement, ici association de deux principes actifs.",
+      "distinction": "Bithérapie : deux principes actifs ; le nombre de comprimés peut être différent."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_26",
+      "term": "Trithérapie",
+      "theme": "VIH — UE B1.3",
+      "definition": "Association de trois principes actifs antirétroviraux.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Tri- : trois ; thérapie : traitement, ici association de trois principes actifs.",
+      "distinction": "Trithérapie : trois principes actifs ; cela ne signifie pas nécessairement trois comprimés."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_27",
+      "term": "Observance",
+      "theme": "VIH — UE B1.3",
+      "definition": "Capacité et possibilité de suivre le traitement convenu dans la durée.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Observance : suivi du traitement convenu ; terme clinique de l’adhésion thérapeutique.",
+      "distinction": "L’observance concerne la continuité du traitement, même en l’absence de symptômes."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_28",
+      "term": "Co-infection",
+      "theme": "VIH — UE B1.3",
+      "definition": "Présence simultanée d’une autre infection, par exemple une hépatite virale.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Co- : ensemble ; infection : présence d’un agent infectieux, simultanée à un autre.",
+      "distinction": "Une co-infection associe plusieurs agents ; ce n’est pas la simple progression du VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_29",
+      "term": "PrEP",
+      "theme": "VIH — UE B1.3",
+      "definition": "Prophylaxie pré-exposition : prévention médicamenteuse avant un risque d’acquisition du VIH.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle anglais PrEP : pre-exposure prophylaxis, prophylaxie pré-exposition.",
+      "distinction": "La PrEP précède l’exposition ; le TPE suit une exposition potentiellement infectante."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_30",
+      "term": "Cabotégravir",
+      "theme": "VIH — UE B1.3",
+      "definition": "Antirétroviral cité comme option de PrEP injectable espacée sur la diapositive.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Dénomination commune du médicament ; aucune analyse étymologique précise fournie en séance.",
+      "distinction": "Le cabotégravir est un principe actif ; ne pas confondre DCI et marque commerciale."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_31",
+      "term": "Lénacapavir",
+      "theme": "VIH — UE B1.3",
+      "definition": "Antirétroviral cité comme option de PrEP injectable à intervalle de six mois dans le cours.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Dénomination commune du médicament ; aucune analyse étymologique précise fournie en séance.",
+      "distinction": "Le lénacapavir est un principe actif ; sa disponibilité n’est pas établie par le cours."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_32",
+      "term": "PEP / TPE",
+      "theme": "VIH — UE B1.3",
+      "definition": "Prophylaxie ou traitement post-exposition : stratégie urgente après exposition à risque.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "PEP : post-exposure prophylaxis ; TPE : traitement post-exposition.",
+      "distinction": "Le TPE/PEP intervient après exposition ; la PrEP est anticipée avant exposition."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_33",
+      "term": "AES",
+      "theme": "VIH — UE B1.3",
+      "definition": "Accident d’exposition au sang ou à un liquide biologique potentiellement infectant.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : accident d’exposition au sang ou à un liquide biologique à risque.",
+      "distinction": "Un AES est un événement d’exposition, pas un diagnostic d’infection VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_34",
+      "term": "Pneumocystose",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection pulmonaire opportuniste due à un champignon.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Pneumo- : poumon ; -cystose : nom de l’infection due à Pneumocystis.",
+      "distinction": "La pneumocystose touche les poumons ; la toxoplasmose peut atteindre le cerveau."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_35",
+      "term": "Cotrimoxazole",
+      "theme": "VIH — UE B1.3",
+      "definition": "Antibiotique associé à la prise en charge et à la prévention de certaines infections opportunistes citées.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Co- : association ; trimoxazole : dénomination du médicament associant deux substances.",
+      "distinction": "Le cotrimoxazole traite ou prévient certaines infections opportunistes, pas le VIH lui-même."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_36",
+      "term": "Tuberculose",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection à mycobactérie pouvant toucher les poumons et d’autres organes.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Du latin tuberculum : petite protubérance ; -ose : état ou maladie.",
+      "distinction": "La tuberculose est bactérienne ; elle peut survenir sans immunodépression profonde."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_37",
+      "term": "Précautions Air",
+      "theme": "VIH — UE B1.3",
+      "definition": "Mesures destinées à prévenir une transmission infectieuse aérienne, notamment dans certaines tuberculoses.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Air : mode de transmission aérien ; « précautions Air » désigne l’isolement respiratoire adapté.",
+      "distinction": "Les précautions Air diffèrent des précautions Gouttelettes pour la tuberculose pulmonaire contagieuse."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_38",
+      "term": "Toxoplasmose",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection parasitaire pouvant occasionner des atteintes cérébrales chez une personne immunodéprimée.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Toxo- : relatif à Toxoplasma ; -ose : maladie causée par cet agent.",
+      "distinction": "La toxoplasmose est parasitaire ; la pneumocystose est fongique."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_39",
+      "term": "Cryptococcose",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection fongique opportuniste pouvant provoquer une méningite.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Crypto- : caché ; -coccose : infection à Cryptococcus.",
+      "distinction": "La cryptococcose est fongique ; le CMV est un virus pouvant atteindre la rétine."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_40",
+      "term": "CMV",
+      "theme": "VIH — UE B1.3",
+      "definition": "Cytomégalovirus ; virus pouvant causer notamment rétinite ou colite en immunodépression.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : cytomégalovirus ; cyto- : cellule, mégalo- : grande.",
+      "distinction": "Le CMV peut causer rétinite et colite ; HHV-8 est associé à la maladie de Kaposi."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_41",
+      "term": "Rétinite",
+      "theme": "VIH — UE B1.3",
+      "definition": "Inflammation de la rétine, potentiellement grave pour la vision.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Rétin- : rétine ; -ite : inflammation de cette structure oculaire.",
+      "distinction": "La rétinite touche la rétine ; la colite concerne le côlon."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_42",
+      "term": "Maladie de Kaposi",
+      "theme": "VIH — UE B1.3",
+      "definition": "Tumeur associée à HHV-8, pouvant se manifester par des lésions violacées.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Kaposi : nom propre utilisé pour désigner cette maladie ; aucun préfixe à isoler.",
+      "distinction": "La maladie de Kaposi est une affection tumorale ; elle n’est pas une pneumocystose."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_43",
+      "term": "HPV",
+      "theme": "VIH — UE B1.3",
+      "definition": "Papillomavirus humains ; virus associés à certaines lésions et cancers.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle anglophone HPV : human papillomavirus, papillomavirus humain.",
+      "distinction": "HPV correspond aux papillomavirus ; HHV-8 est un herpèsvirus."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_44",
+      "term": "HHV-8",
+      "theme": "VIH — UE B1.3",
+      "definition": "Herpèsvirus humain de type 8, associé à la maladie de Kaposi.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle HHV : human herpesvirus ; chiffre 8 : type d’herpèsvirus.",
+      "distinction": "HHV-8 est lié au sarcome de Kaposi ; HPV est associé à d’autres cancers."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_45",
+      "term": "PMA",
+      "theme": "VIH — UE B1.3",
+      "definition": "Procréation médicalement assistée ; elle n’est pas systématiquement nécessaire pour une PVVIH contrôlée.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : procréation médicalement assistée ; intervention médicale dans la reproduction.",
+      "distinction": "La PMA n’est pas automatiquement obligatoire si le VIH est contrôlé durant le projet parental."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_46",
+      "term": "ETP",
+      "theme": "VIH — UE B1.3",
+      "definition": "Éducation thérapeutique du patient, visant compréhension et autonomie en santé.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : éducation thérapeutique du patient, soutien à l’autonomie en soins.",
+      "distinction": "L’ETP favorise compréhension et autonomie ; elle ne remplace pas le traitement prescrit."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_47",
+      "term": "HSH",
+      "theme": "VIH — UE B1.3",
+      "definition": "Hommes ayant des relations sexuelles avec des hommes ; terme de santé publique relatif à une pratique.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle de santé publique : hommes ayant des rapports sexuels avec des hommes.",
+      "distinction": "Le terme HSH décrit des pratiques et ne permet pas de déduire le statut VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_48",
+      "term": "IST",
+      "theme": "VIH — UE B1.3",
+      "definition": "Infection sexuellement transmissible ; nécessite prévention et dépistage adaptés.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle : infection sexuellement transmissible, acquise par transmission sexuelle.",
+      "distinction": "La PrEP cible la prévention du VIH ; elle ne protège pas des autres IST."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_49",
+      "term": "Polyadénopathie",
+      "theme": "VIH — UE B1.3",
+      "definition": "Augmentation de volume de plusieurs groupes ganglionnaires.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Poly- : plusieurs ; adéno- : ganglion ; -pathie : affection.",
+      "distinction": "Poly- désigne plusieurs ganglions ; une adénopathie peut concerner un seul groupe."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_50",
+      "term": "Cytolyse hépatique",
+      "theme": "VIH — UE B1.3",
+      "definition": "Souffrance ou destruction des cellules du foie visible sur certaines analyses.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Cyto- : cellule ; -lyse : destruction ; hépatique : relatif au foie.",
+      "distinction": "La cytolyse hépatique concerne les cellules du foie, pas directement la charge virale VIH."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_51",
+      "term": "Dyspnée",
+      "theme": "VIH — UE B1.3",
+      "definition": "Difficulté respiratoire ressentie par une personne.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Dys- : difficulté ; -pnée : respiration ; gêne respiratoire.",
+      "distinction": "La dyspnée décrit un ressenti respiratoire ; elle ne désigne pas une étiologie."
+    },
+    {
+      "id": "vih_b13_20261027_glossaire_52",
+      "term": "Syndrome mononucléosique",
+      "theme": "VIH — UE B1.3",
+      "definition": "Ensemble de manifestations cliniques et biologiques pouvant évoquer une mononucléose.",
+      "courseIds": [
+        "vih_b13_20261027"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Mono- : un ; nucléosique : relatif au noyau, terme issu du syndrome mononucléosique.",
+      "distinction": "Un syndrome mononucléosique regroupe des signes ; il ne constitue pas un diagnostic de VIH."
     }
   ]
 }

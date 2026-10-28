@@ -13,7 +13,7 @@ import {
 } from './private-resource-withdrawal-lib.mjs';
 import {publicationBundle,bundleDigest,validateChangedDeliveries,isStrictAudioSupplementOnly} from './course-publication-approval-lib.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
-import {validateAudioSupplements} from './audio-supplement-contract.mjs';
+import {validateAudioSupplements,validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=file=>JSON.parse(readFileSync(file,'utf8'));
@@ -233,7 +233,8 @@ assert.deepEqual(nextVocals.slice(0,prevVocals.length),prevVocals,'Aucun MP3 his
 const prevAudio=oldMan.audioSupplements||[],nextAudio=currentMan.audioSupplements||[];
 assert.deepEqual(nextAudio.slice(0,prevAudio.length),prevAudio,'Compléments audio historiques altérés');
 const freshAudio=nextAudio.slice(prevAudio.length);
-const expectedAudioIds=freshAudio.flatMap(p=>p.vocalIds||[]);
+const firstReleaseAudioIds=validateFirstReleaseAudio(oldMan,currentMan,oldReg,currentReg,prevVocals,nextVocals);
+const expectedAudioIds=[...freshAudio.flatMap(p=>p.vocalIds||[]),...firstReleaseAudioIds];
 assert.deepEqual(nextVocals.slice(prevVocals.length).map(v=>v.id).sort(),expectedAudioIds.slice().sort(),
  'Le catalogue doit contenir exactement les MP3 nouvellement approuvés');
 const baseAudioData={registry:oldReg,vocals:prevVocals,sheets:[1,2,3].flatMap(n=>before('sheets-'+n+'.json')),
