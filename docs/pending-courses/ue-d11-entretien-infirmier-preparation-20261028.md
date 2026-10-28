@@ -10,6 +10,15 @@ ID futur : `entretien_infirmier` ; partie `p01`.
 - Fichiers de revue **conservés hors GitHub**, dans la zone privée du propriétaire : une fiche de révision de 13 pages, un QCM PDF de 17 pages, les flashcards PDF de 9 pages, cinq MP3 et cinq scripts.
 - Le support officiel de 28 pages et les deux transcriptions demeurent privés. Aucun de ces fichiers, source, URL ou rapport de QA privé n’est ajouté dans le dépôt.
 
+## Corrections V3 du 28/10/2026
+
+- QCM Q47 : correction d'une clé manquante. **B + E** sont correctes : douleur et environnement bruyant (support diapos 25–26). Correction répercutée de manière identique dans le PDF et la banque.
+- Q28, Q39 et plusieurs distracteurs rendus autonomes et compréhensibles sans la transcription.
+- Fiche complétée avec audits, facteurs culturels et mentions de sympathie, mécanismes de défense, transfert et projection (diapos 9 et 25–27), sans définitions non sourcées.
+- Flashcards : suppression d'une formule laissant croire que la revue pédagogique humaine était déjà acquise.
+- QA privée V3 : 50 énoncés, 250 propositions, 50 clés et cardinalités vérifiés **sans écart** ; 39 pages rendues à 100/200 %. SHA des PDF mis à jour ; V2 conservée.
+- Ces contrôles ne créent ni accord du propriétaire, ni publication effective. La ressource privée reste hors du dépôt.
+
 ## Verrous avant publication
 
 1. Terminer la revue sémantique exhaustive support officiel ↔ deux transcriptions ↔ fiche (charte v1.49.1), ainsi que la correspondance PDF/banque et le contrôle de non-régression.
