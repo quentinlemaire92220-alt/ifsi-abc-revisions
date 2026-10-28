@@ -239,7 +239,15 @@ assert(vocabulary.entries.every(x=>!(/undefined|null|à compléter/i).test(x.ety
 assert(vocabulary.entries.some(x=>x.id==='hypoxie'&&/hypo/i.test(x.etymologie)),'Décomposition hypoxie absente');
 assert(vocabulary.entries.some(x=>x.id==='pcr'&&/polymérase/i.test(x.etymologie)),'Développement PCR absent');
 assert(new Set(vocabulary.entries.map(x=>x.theme)).size>=23,'Glossaire : couverture thématique insuffisante');
-const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses.filter(c=>c.provisional===true&&c.pedagogicalValidated===false&&c.sourceBasis?.kind==='oral_transcript').map(c=>c.courseId));
+const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses.filter(c=>
+ c.provisional===true && c.pedagogicalValidated===false &&
+ (c.sourceBasis?.kind==='oral_transcript' ||
+   (c.sourceBasis?.kind==='official_support_and_transcript' &&
+    c.sourceBasis.nativeSupportAvailable===true &&
+    c.sourceAudit?.officialChecked===true &&
+    c.sourceAudit?.oralStatus==='unverified' &&
+    c.sourceAudit?.oralCoverageExhaustive===false))
+).map(c=>c.courseId));
 // Conserver la provenance orale historique après un rapprochement officiel validé.
 for(const c of json('docs/course-deliveries.json').courses)if(c.validated===true&&c.sourceBasis?.reconciled===true&&c.sourceAudit?.officialChecked===true&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')provisionalOralSources.add(c.courseId);
 const allowedLexiconSource=x=>['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
