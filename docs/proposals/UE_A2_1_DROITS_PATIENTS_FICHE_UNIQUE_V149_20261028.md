@@ -141,3 +141,11 @@ Le PDF V4 a été finalisé **sans les anciens numéros /39 dans la couche texte
 **Contrôle comparatif effectif des 41 pages** : texte sélectionnable **identique**, pixels rendus à 80 % **identiques**, liens internes **identiques** ; métadonnées d'en-tête différentes uniquement. Contrôle technique **repris sur les octets Drive exacts**, 41 pages, 11 liens et 25 pages du corps original préservées. Le rapport d'expertise reste **privé**. L'identité finale à soumettre à approbation est donc la **SHA Drive a99f8f…**, jamais la SHA locale ni le PDF V4 intermédiaire (SHA ed42a400…/805d643… présent seulement comme historique privé).
 
 **Limite inchangée** : la V4 n'a pas reçu l'approbation explicite du propriétaire sur ces octets finaux. Pas de migration des fiches ni de merge tant que les revues graphique 100/200 % et non-régression pédagogique restent non certifiées. La V3 acceptée et les trois historiques restent inchangés.
+
+## GO explicite sur la V4 — 28 octobre 2026
+
+Le propriétaire a répondu **« Ok go »** juste après la livraison de la fiche **V4 finale de 41 pages**, sa présentation des contrôles et la mention explicite de l'attente d'une nouvelle validation. Cet accord vaut **acceptation de la V4 exacte** et **GO pour poursuivre les vérifications et son intégration**, sans autoriser un contournement des contrôles prépublication.
+
+**Identité approuvée :** fichier Google Drive propriétaire privé `1VBeKiMq94dENvNSQCy6XvwQVe_uvNE2Y`, 1 078 139 octets, SHA-256 **`a99f8f3582b97aa1cb19dd98fa978b2ea1650dfbee527576e94f8ceb5f1a9e1f`** (empreinte du téléchargement, pas celle du fichier de travail local). **Statut d'accord : `owner_accepted` pour V4 SHA a99f8f.** Ne pas redemander le GO pour ces mêmes octets.
+
+**Règle impérative :** la revue de toutes les pages à 100/200 %, la vérification de la fidélité des quatre PLAUD et cinq sources PDF, de l'exactitude juridique, des 57 entrées du lexique, de l'accès public étudiant et les tests sur les manifestes sont des étapes distinctes à exécuter avant publication. Si une erreur impose de changer le PDF, enregistrer une nouvelle SHA et solliciter une nouvelle acceptation sur cette nouvelle version. Archives/QCM/flashcards/vocaux préservés.
