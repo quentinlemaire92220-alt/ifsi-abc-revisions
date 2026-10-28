@@ -168,7 +168,7 @@ def validate_qcm_theme_cards(text,rows):
         # Cardinalité imprimée dans le pied du cadre : exacte ou rejetée,
         # puis comparaison intégrale de l'énoncé et des cinq choix A-E.
         count_tokens=list(re.finditer(r'(?m)^([1-3]) réponses? attendues?[ ]*$',actual))
-        if q['courseId']=='vih_b13_20261027':
+        if q.get('courseId')=='vih_b13_20261027':
             assert len(count_tokens)==1,q['id']+': cardinalité imprimée absente/dupliquée'
         if count_tokens:
             assert len(count_tokens)==1,q['id']+': cardinalité imprimée dupliquée'
@@ -179,7 +179,7 @@ def validate_qcm_theme_cards(text,rows):
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
     corrections=without_theme_titles(corrections,rows)
     corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
-    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\. ',corrections))
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\.[ \t]*(?:\n|$)',corrections))
     assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
     for i,(q,m) in enumerate(zip(ordered,blocks)):
         assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
