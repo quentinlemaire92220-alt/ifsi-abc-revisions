@@ -3025,7 +3025,7 @@
       "provisionalReason": "Support officiel non reçu ; transcription et captures seules ; vérifications thérapeutiques à compléter.",
       "provisionalReassessmentRequired": true,
       "publicAssetSha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
-      "qcmPublicAssetSha256": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81",
+      "qcmPublicAssetSha256": "7bf8627cbed9bf56c5284142c5c50fcacc4e0105cdc1f4f5c514b3e91bc070fc",
       "sheetResourceId": "fievre_paludisme_written_p01",
       "sheetResourceIds": [
         "fievre_paludisme_written_p01"
@@ -3089,7 +3089,7 @@
       },
       "artifactSha256s": {
         "fievre_paludisme_sheet_public_candidate": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
-        "fievre_paludisme_qcm_public_candidate": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81"
+        "fievre_paludisme_qcm_public_candidate": "7bf8627cbed9bf56c5284142c5c50fcacc4e0105cdc1f4f5c514b3e91bc070fc"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -3105,8 +3105,8 @@
         },
         "qcm": {
           "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_QCM_40_Corriges.pdf",
-          "sha256": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81",
-          "pageCount": 17,
+          "sha256": "7bf8627cbed9bf56c5284142c5c50fcacc4e0105cdc1f4f5c514b3e91bc070fc",
+          "pageCount": 13,
           "artifactId": "fievre_paludisme_qcm_public_candidate"
         }
       },
