@@ -149,3 +149,13 @@ Le propriétaire a répondu **« Ok go »** juste après la livraison de la fich
 **Identité approuvée :** fichier Google Drive propriétaire privé `1VBeKiMq94dENvNSQCy6XvwQVe_uvNE2Y`, 1 078 139 octets, SHA-256 **`a99f8f3582b97aa1cb19dd98fa978b2ea1650dfbee527576e94f8ceb5f1a9e1f`** (empreinte du téléchargement, pas celle du fichier de travail local). **Statut d'accord : `owner_accepted` pour V4 SHA a99f8f.** Ne pas redemander le GO pour ces mêmes octets.
 
 **Règle impérative :** la revue de toutes les pages à 100/200 %, la vérification de la fidélité des quatre PLAUD et cinq sources PDF, de l'exactitude juridique, des 57 entrées du lexique, de l'accès public étudiant et les tests sur les manifestes sont des étapes distinctes à exécuter avant publication. Si une erreur impose de changer le PDF, enregistrer une nouvelle SHA et solliciter une nouvelle acceptation sur cette nouvelle version. Archives/QCM/flashcards/vocaux préservés.
+
+## Correction éditoriale détectée après le GO V4 : candidat V5 privé
+
+**Contrôle de dernière lecture** : la V4 acceptée contient un segment mal ponctué sur la responsabilité liée aux biens du patient, en **page 26** : la phrase sur le refus de dépôt et celle sur l'absence d'indemnisation automatique y sont accolées sans séparateur.
+
+Une **V5 strictement éditoriale**, 41 pages, a été générée en insérant le séparateur logique entre les deux propositions, **sans supprimer ni modifier les notions**. Contrôle différentiel par fichier PDF : **40/41 pages strictement identiques en texte et pixels** à la V4 acceptée ; seule la page 26 change ; 11 liens, 25 tableaux, 7 pages finales de lexique conservés. Contrôle des 41 pages : pas de texte hors limites détecté, bandeaux présents.
+
+**Fichier final V5 privé** : Drive `1uS31PA1I1KUEbEh_s81Rj_BA0ZsmPWIb`, 1 053 174 octets, **SHA-256 `52caf6e3e56b9dfc07268ce44ec5b4736d18c01364fdda0444ca7d4a09413a2e`**. **Octets rigoureusement identiques à la lecture retour depuis Drive** (SHA/tailles vérifiées). Le rapport différentiel reste propriétaire/privé.
+
+**Autorisation :** le « Ok go » de l'utilisateur précédent valide précisément **la V4 SHA `a99f8f35…`**. Le fichier V5 diffère : **aucun GO implicite sur la V5**. Cette version requiert une acceptation explicite distincte. La V4 reste préservée ; ni le Drive étudiant, ni `sheets-3.json`, ni `docs/course-deliveries.json` ni `main` ne sont modifiés à ce stade. Revues pédagogiques et graphiques complètes toujours non certifiées. **Ne pas publier la V5 ni fusionner avant levée des contrôles et accord propriétaire.**
