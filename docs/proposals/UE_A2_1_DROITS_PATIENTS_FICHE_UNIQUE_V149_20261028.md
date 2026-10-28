@@ -159,3 +159,11 @@ Une **V5 strictement éditoriale**, 41 pages, a été générée en insérant le
 **Fichier final V5 privé** : Drive `1uS31PA1I1KUEbEh_s81Rj_BA0ZsmPWIb`, 1 053 174 octets, **SHA-256 `52caf6e3e56b9dfc07268ce44ec5b4736d18c01364fdda0444ca7d4a09413a2e`**. **Octets rigoureusement identiques à la lecture retour depuis Drive** (SHA/tailles vérifiées). Le rapport différentiel reste propriétaire/privé.
 
 **Autorisation :** le « Ok go » de l'utilisateur précédent valide précisément **la V4 SHA `a99f8f35…`**. Le fichier V5 diffère : **aucun GO implicite sur la V5**. Cette version requiert une acceptation explicite distincte. La V4 reste préservée ; ni le Drive étudiant, ni `sheets-3.json`, ni `docs/course-deliveries.json` ni `main` ne sont modifiés à ce stade. Revues pédagogiques et graphiques complètes toujours non certifiées. **Ne pas publier la V5 ni fusionner avant levée des contrôles et accord propriétaire.**
+
+## GO explicite sur V5 — 28 octobre 2026, 22 h 06 (Europe/Paris)
+
+Le propriétaire a répondu **« Go »** juste après le message qui présentait la **V5 41 pages** (correction unique de la ponctuation p. 26), le nouveau lien Drive privé et la demande d'approbation sur les octets modifiés.
+
+**Approbation V5 enregistrée** pour la SHA-256 exacte **`52caf6e3e56b9dfc07268ce44ec5b4736d18c01364fdda0444ca7d4a09413a2e`**, Drive ID `1uS31PA1I1KUEbEh_s81Rj_BA0ZsmPWIb`, 1 053 174 octets, 41 pages. Cette validation V5 remplace le statut `not_approved` pour ce SHA précis. Le GO autorise à finaliser les contrôles, publier et intégrer la fiche **si les conditions bloquantes sont satisfaites**, sans retirer les archives, QCM, flashcards ou vocaux. Ne pas demander un quatrième GO sur les mêmes octets.
+
+Le contrôle scientifique/pédagogique de toutes les sources, la revue graphique exhaustive 100/200 %, l'accès réellement étudiant au PDF publié, les manifestes et la CI demeurent **indépendants** de la validation du propriétaire. Aucune déclaration PASS sans preuve.
