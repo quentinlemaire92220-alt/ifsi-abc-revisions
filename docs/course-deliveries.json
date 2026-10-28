@@ -3024,8 +3024,8 @@
       "pedagogicalValidated": false,
       "provisionalReason": "Support officiel non reçu ; transcription et captures seules ; vérifications thérapeutiques à compléter.",
       "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
-      "qcmPublicAssetSha256": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871",
+      "publicAssetSha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
+      "qcmPublicAssetSha256": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81",
       "sheetResourceId": "fievre_paludisme_written_p01",
       "sheetResourceIds": [
         "fievre_paludisme_written_p01"
@@ -3067,7 +3067,7 @@
       },
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+        "pdfSha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
         "pageSize": "A4",
         "pageCount": 14,
         "allPagesRendered": true,
@@ -3088,24 +3088,24 @@
         "checked": true
       },
       "artifactSha256s": {
-        "fievre_paludisme_sheet_public_candidate": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
-        "fievre_paludisme_qcm_public_candidate": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871"
+        "fievre_paludisme_sheet_public_candidate": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
+        "fievre_paludisme_qcm_public_candidate": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pages_file_staged",
-        "pdfSha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37"
+        "pdfSha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2"
       },
       "publicArtifacts": {
         "sheet": {
           "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Fiche_Revision.pdf",
-          "sha256": "9116d6024f24ea1a363a69ba1e19c3617b6b964134821867ab5cfc6bbea03f37",
+          "sha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
           "pageCount": 14,
           "artifactId": "fievre_paludisme_sheet_public_candidate"
         },
         "qcm": {
           "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_QCM_40_Corriges.pdf",
-          "sha256": "1b446009bdd7b1b4e35f420369a8632023393195346dab55cd9292cc8fa01871",
+          "sha256": "c6f5411e493d85438b8656ffd8a1b11ebc264cf604ac34908831e4de50182c81",
           "pageCount": 17,
           "artifactId": "fievre_paludisme_qcm_public_candidate"
         }
@@ -3131,7 +3131,7 @@
         {
           "resource": "graphic_owner_review",
           "reason": "pending",
-          "detail": "Reçu de conformité graphique V3 sur les octets publiés non encore fourni."
+          "detail": "PDF V3 corrigé, en attente du contrôle officiel sur ces nouveaux octets et acceptation graphique du propriétaire."
         }
       ]
     }
