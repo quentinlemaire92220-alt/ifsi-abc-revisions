@@ -30,6 +30,54 @@ assert.ok(visibilityStart>=0&&visibilityEnd>visibilityStart);
 const visible=runInNewContext(visibilitySource.slice(visibilityStart,visibilityEnd)+'\nstudentVisibleDocument74;');
 const without=(value,keys)=>Object.fromEntries(Object.entries(value).filter(([key])=>!keys.includes(key)));
 const publicDocuments=c=>(c.additionalDocuments||[]).filter(d=>!isScriptWorkItem(d));
+// Publication provisoire TD3 après réception du support officiel : seules
+// la provenance et la fiche approuvée changent ; QCM/cartes restent identiques.
+function preserveApprovedTD3OfficialSupport(oldCourse,nextCourse,oldDelivery,nextDelivery){
+ const id='theorie_gestion_symptomes_td';
+ assert.equal(oldCourse.id,id);assert.equal(nextCourse.id,id);
+ assert.equal(oldCourse.officialSupport,false);assert.equal(nextCourse.officialSupport,true);
+ assert.equal(nextCourse.provisional,true);assert.equal(nextCourse.sourceStatus,'provisional');
+ assert.ok(nextCourse.sourceNote.includes('Support officiel du TD') &&
+   nextCourse.sourceNote.includes('Audio original non contrôlé'),
+   id+': arrivée du support et réserve audio insuffisamment documentées');
+ const expected=expectedPublicCourseAfterWithdrawal(oldCourse);
+ assert.deepEqual(without(nextCourse,['officialSupport','sourceNote']),
+   without(expected,['officialSupport','sourceNote']),id+': identité ou ressource historique modifiée');
+ assert.deepEqual(publicDocuments(nextCourse),publicDocuments(oldCourse),id+': document étudiant historique modifié');
+ assert.equal(nextDelivery.publicationApproval?.status,'approved');
+ assert.equal(nextDelivery.publicationApproval?.authorization,'explicit_go_publication');
+ assert.equal(nextDelivery.publicationApproval?.scope,'course_package');
+ assert.notDeepEqual(nextDelivery.publicationApproval,oldDelivery.publicationApproval);
+ assert.equal(nextDelivery.status,'partial');assert.equal(nextDelivery.provisional,true);
+ assert.equal(nextDelivery.pedagogicalValidated,false);
+ assert.equal(nextDelivery.sourceBasis?.kind,'official_support_and_transcript');
+ assert.equal(nextDelivery.sourceBasis.nativeSupportAvailable,true);
+ assert.equal(nextDelivery.sourceAudit?.officialChecked,true);
+ assert.equal(nextDelivery.sourceAudit?.officialSupportMissing,false);
+ assert.equal(nextDelivery.sourceAudit?.oralCoverageExhaustive,false);
+ assert.equal(nextDelivery.sourceAudit?.oralStatus,'unverified');
+ assert.ok(nextDelivery.blockers?.some(b=>b.reason==='oral_source_unverified'));
+ assert.equal(nextDelivery.pedagogicalNonRegression?.sourceCoverage,'limited');
+ assert.equal(nextDelivery.visualOwnerReview?.status,'owner_accepted');
+ assert.equal(nextDelivery.templateConformance?.artifacts?.sheet?.status,'owner_accepted');
+ for(const role of ['qcm','flashcards'])
+  assert.deepEqual(nextDelivery.publicArtifacts?.[role],oldDelivery.publicArtifacts?.[role],
+   id+': PDF historique '+role+' modifié');
+ const before=oldDelivery.publicArtifacts?.sheet,after=nextDelivery.publicArtifacts?.sheet;
+ assert.equal(after?.path,before?.path);
+ assert.ok(after?.sha256 && after.sha256!==before?.sha256,id+': fiche révisée absente');
+ assert.equal(after.sha256,nextDelivery.writtenPdfAudit?.pdfSha256);
+ assert.equal(after.sha256,nextDelivery.templateConformance?.artifacts?.sheet?.artifactSha256);
+ assert.equal(after.sha256,nextDelivery.pedagogicalNonRegression?.sheetSha256);
+ for(const field of ['qcmBank','qcmCount','flashcardCount','vocabularyCount','sheetResourceId'])
+  assert.deepEqual(nextDelivery[field],oldDelivery[field],id+': ressource historique modifiée '+field);
+ for(const field of ['vocals','infographicResourceIds','vocalScripts'])
+  assert.deepEqual(nextDelivery[field],oldDelivery[field],id+': contenu ajouté hors fiche '+field);
+ for(const role of ['qcm','flashcards'])
+  assert.equal(nextDelivery.artifactSha256s?.[nextDelivery.publicArtifacts[role].artifactId],
+   oldDelivery.artifactSha256s?.[oldDelivery.publicArtifacts[role].artifactId],
+   id+': empreinte historique '+role+' modifiée');
+}
 function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery){
  const id=oldCourse.id,approval=nextDelivery.publicationApproval;
  assert.equal(approval?.status,'approved',id+': complément sans approbation');
@@ -59,6 +107,82 @@ function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery)
  const previousBanks=expected.qcmBanks||[expected.qcmBank].filter(Boolean);
  assert.ok(previousBanks.every(p=>(nextDelivery.qcmBanks||[nextDelivery.qcmBank]).includes(p)),id+': ancienne banque retirée');
  assert.ok(nextDelivery.qcmCount>=expected.qcmCount&&nextDelivery.flashcardCount>=expected.flashcardCount,id+': contenu historique tronqué');
+}
+
+// Passage provisoire strict : nouveau support officiel et fiche v1.49, sans
+// prétendre à une validation clinique exhaustive ou migrer le reste du cours.
+// Cette porte ne remplace pas la revue V3, la matrice v1.49 et le digest du GO,
+// tous contrôlés séparément par course-publication-approval.mjs.
+function preserveApprovedProvisionalWrittenRevision(oldCourse,nextCourse,oldDelivery,nextDelivery){
+ const id=oldCourse.id;
+ assert.equal(id,'theorie_gestion_symptomes_td','Seul le TD3 examiné est admis par cette porte');
+ assert.equal(oldCourse.officialSupport,false,'Le support était déjà officiel : pas de transition');
+ assert.equal(nextCourse.officialSupport,true,'Support officiel du TD non enregistré');
+ assert.equal(nextCourse.sourceStatus,'provisional','Ne pas masquer la réserve pédagogique');
+ assert.equal(nextCourse.provisional,true,'TD sans audio vérifié reste provisoire');
+ assert.deepEqual(without(nextCourse,['officialSupport','sourceNote']),
+  without(oldCourse,['officialSupport','sourceNote']),'Identité, documents ou QCM historiques modifiés');
+ assert.match(nextCourse.sourceNote||'',/support officiel/i);
+ assert.match(nextCourse.sourceNote||'',/audio original non contr[oô]l[eé]/i);
+ assert.equal(nextDelivery.packFormat,'written_v1');
+ assert.equal(nextDelivery.status,'partial','Cours partiel déclaré complet sans preuve');
+ assert.equal(nextDelivery.provisional,true);
+ assert.equal(nextDelivery.pedagogicalValidated,false);
+ assert.equal(nextDelivery.sourceAudit?.oralStatus,'unverified');
+ assert.equal(nextDelivery.sourceAudit?.oralCoverageExhaustive,false);
+ assert.equal(nextDelivery.sourceAudit?.officialChecked,true);
+ assert.equal(nextDelivery.sourceBasis?.nativeSupportAvailable,true);
+ assert.equal(nextDelivery.sourceBasis?.reconciled,false,'Audio non vérifié : pas de réconciliation exhaustive');
+ assert.ok((nextDelivery.blockers||[]).some(b=>b.resource==='audio'&&b.reason==='oral_source_unverified'),
+  'Réserve audio historique effacée');
+ assert.equal(nextDelivery.publicationApproval?.status,'approved');
+ assert.equal(nextDelivery.publicationApproval?.authorization,'explicit_go_publication');
+ assert.equal(nextDelivery.publicationApproval?.scope,'course_package');
+ assert.equal(nextDelivery.publicationApproval?.provisionalOnly,true);
+ assert.notDeepEqual(nextDelivery.publicationApproval,oldDelivery.publicationApproval);
+ assert.equal(nextDelivery.pedagogicalNonRegression?.contract,'ifsi_pedagogical_non_regression_v149');
+ assert.equal(nextDelivery.pedagogicalNonRegression?.sourceCoverage,'limited');
+ assert.equal(nextDelivery.templateConformance?.contract,'ifsi_pdf_template_v3');
+ assert.equal(nextDelivery.templateConformance?.artifacts?.sheet?.status,'owner_accepted');
+ for(const field of ['courseId','sheetResourceId','qcmBank','qcmCount','flashcardCount','vocabularyCount','packFormat','publicationHost','vocals','infographics','qcmBanks','vocalScripts','partDeliveries','scriptsPreparedCount']){
+  assert.deepEqual(nextDelivery[field],oldDelivery[field],id+': ressource historique modifiée : '+field);
+ }
+ for(const role of ['qcm','flashcards']){
+  assert.deepEqual(nextDelivery.publicArtifacts?.[role],oldDelivery.publicArtifacts?.[role],
+   id+': PDF historique modifié sans revue : '+role);
+ }
+ const beforePdf=oldDelivery.publicArtifacts?.sheet,afterPdf=nextDelivery.publicArtifacts?.sheet;
+ assert.equal(afterPdf?.path,beforePdf?.path,'La fiche quitte son ancien emplacement');
+ assert.notEqual(afterPdf?.sha256,beforePdf?.sha256,'Aucune nouvelle version de fiche');
+ assert.equal(nextDelivery.publicAssetSha256,afterPdf.sha256);
+ assert.equal(nextDelivery.artifactSha256s?.[afterPdf.artifactId],afterPdf.sha256);
+ assert.equal(nextDelivery.writtenPdfAudit?.pdfSha256,afterPdf.sha256);
+ assert.equal(nextDelivery.visualOwnerReview?.reviewedPdfSha256s?.[nextDelivery.sheetResourceId],afterPdf.sha256);
+ assert.equal(nextDelivery.templateConformance?.artifacts?.sheet?.artifactSha256,afterPdf.sha256);
+ const oldSheets=[1,2,3].flatMap(n=>before('sheets-'+n+'.json')).filter(s=>s.courseId===id);
+ const newSheets=[1,2,3].flatMap(n=>disk('sheets-'+n+'.json')).filter(s=>s.courseId===id);
+ assert.equal(oldSheets.length,newSheets.length,'Nombre historique de fiches changé');
+ for(let i=0;i<oldSheets.length;i++){
+  assert.equal(newSheets[i].resourceId,oldSheets[i].resourceId);
+  if(newSheets[i].resourceId!==nextDelivery.sheetResourceId){
+   assert.deepEqual(newSheets[i],oldSheets[i],'Fiche d’une autre partie modifiée');
+   continue;
+  }
+  assert.deepEqual(without(newSheets[i],['officialSupport','sourceBasis','pageCount']),
+   without(oldSheets[i],['officialSupport','sourceBasis','pageCount']),
+   'Publication de fiche altérée au-delà du support et de sa pagination');
+  assert.equal(newSheets[i].officialSupport,true);
+  assert.equal(newSheets[i].pageCount,afterPdf.pageCount);
+  assert.match(newSheets[i].sourceBasis||'',/audio original non v[eé]rifi[eé]/i);
+ }
+ assert.deepEqual(before(oldDelivery.qcmBank),disk(oldDelivery.qcmBank),
+  'Banque QCM ou flashcards historiques modifiées');
+ const oldArtifacts=oldDelivery.artifactSha256s||{},newArtifacts=nextDelivery.artifactSha256s||{};
+ assert.deepEqual(Object.keys(newArtifacts).sort(),Object.keys(oldArtifacts).sort(),
+  'Une nouvelle ressource non prévue a été ajoutée');
+ for(const key of Object.keys(oldArtifacts))if(key!==afterPdf.artifactId)
+  assert.equal(newArtifacts[key],oldArtifacts[key],'Empreinte ancienne modifiée : '+key);
+ return true;
 }
 
 // Complément QCM d'un cours déjà visible avant l'introduction du manifeste des livraisons.
@@ -188,7 +312,10 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
    assert.equal(course.flashcardTarget,50);
    assert.equal(course.authoredFlashcards,true);
   }
-  else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
+  else if(course.id==='theorie_gestion_symptomes_td' && previousDelivery)preserveApprovedTD3OfficialSupport(oldCourse,course,previousDelivery,nextDelivery);
+  else if(course.id==='theorie_gestion_symptomes_td' && nextDelivery?.pedagogicalNonRegression?.contract==='ifsi_pedagogical_non_regression_v149')
+    preserveApprovedProvisionalWrittenRevision(oldCourse,course,previousDelivery,nextDelivery);
+   else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
  }
  Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));

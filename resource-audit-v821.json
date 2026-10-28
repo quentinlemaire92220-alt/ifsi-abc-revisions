@@ -1,5 +1,5 @@
 {
-  "version": "8.30.149",
+  "version": "8.30.150",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Gestion du stress UE B3.2.1 : 50 QCM et 50 flashcards, +46 nouvelles notions et 4 versions contextualisées dans le vocabulaire. Aucune entrée ou fiche historique modifiée.",
+  "note": "TD3 Théorie des symptômes : fiche de 11 pages revue, support officiel reçu et audio encore non vérifié ; QCM, flashcards et vocaux historiques inchangés.",
   "expectedTotals": {
     "courses": 58,
     "sheets": 76,
@@ -257,7 +257,7 @@
     },
     {
       "courseId": "gestion_stress_professionnel",
-      "release": "8.30.149",
+      "release": "8.30.150",
       "scope": "qcm_flashcards_vocabulary_only",
       "qcm": 50,
       "flashcards": 50,

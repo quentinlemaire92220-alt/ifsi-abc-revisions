@@ -1,5 +1,5 @@
 {
-  "version": "8.30.149",
+  "version": "8.30.150",
   "courses": [
     {
       "id": "biomolecules",
@@ -1205,10 +1205,10 @@
       "teachingUnit": "A1",
       "semester": "S1",
       "part": "TD",
-      "officialSupport": false,
+      "officialSupport": true,
       "sourceStatus": "provisional",
       "provisional": true,
-      "sourceNote": "Support spécifique du TD absent ; fiche et entraînements issus de la transcription orale, recoupés dans les limites du CM4 déjà disponible. Vérification exhaustive de l'audio et validation scientifique finale non acquises.",
+      "sourceNote": "Support officiel du TD du 23 octobre 2026 reçu (24 diapositives) et rapproché de la transcription. Audio original non contrôlé ; validation scientifique finale non acquise.",
       "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
       "qcmPdfQuestionCount": 40,
       "flashcardTarget": 40,
