@@ -3142,6 +3142,11 @@
           "resource": "support",
           "reason": "official_support_missing",
           "detail": "Support écrit officiel indisponible ; 50 captures et une transcription seulement."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3",
+          "detail": "Trois scripts de révision au format TXT disponibles en privé ; aucun MP3 généré, écouté ou livré."
         }
       ],
       "flashcardPublicAssetSha256": "82e9081cbc574a09dac62c6dc390008d23e18c6f4e36767a248039bebdc869fe",
