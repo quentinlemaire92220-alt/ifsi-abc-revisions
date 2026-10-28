@@ -139,7 +139,7 @@ class QuestionCard(Flowable):
         c.setFillColor(BLUE)
         c.setFont('Lato-Bold',9.1)
         count=self.q['announcedCorrectCount']
-        c.drawRightString(self.width-15,10,f'{count} réponses attendues')
+        c.drawRightString(self.width-15,10,f'{count} réponse' + ('s' if count>1 else '') + ' attendue' + ('s' if count>1 else ''))
 
 class FlashCard(Flowable):
     def __init__(self,q):
@@ -169,6 +169,36 @@ class FlashCard(Flowable):
         c.setStrokeColor(PURPLE)
         c.line(15,self.height-15-self.parts_h[0]-7,self.width-15,self.height-15-self.parts_h[0]-7)
 
+class CorrectionCard(Flowable):
+    """One argumented answer card; green key and rose distractors."""
+    def __init__(self,q):
+        Flowable.__init__(self)
+        self.q=q
+    def wrap(self,aw,ah):
+        self.width=min(aw,W-2*MARGIN)
+        bits=self.q['explanation'].split('Propositions à écarter :',1)
+        self.head=p('Q%02d — Réponses : %s.' % (self.q['number'],', '.join(chr(65+i) for i in self.q['answers'])),ST['label'])
+        self.body=p(bits[0].strip(),ST['small'])
+        self.traps=p('Propositions à écarter :'+bits[1],ST['small']) if len(bits)==2 else None
+        self.hh=self.head.wrap(self.width-36,1000)[1]
+        self.bh=self.body.wrap(self.width-36,1000)[1]
+        self.th=self.traps.wrap(self.width-36,1000)[1] if self.traps else 0
+        self.height=12+self.hh+10+self.bh+14+(self.th+16 if self.traps else 0)
+        return self.width,self.height
+    def draw(self):
+        c=self.canv
+        c.setStrokeColor(colors.HexColor('#DFDBE8'));c.setLineWidth(.7)
+        c.setFillColor(colors.white);c.rect(0,0,self.width,self.height,stroke=1,fill=1)
+        c.setFillColor(colors.HexColor('#E4F3E8'))
+        c.rect(1,self.height-5-self.hh-10,self.width-2,self.hh+16,stroke=0,fill=1)
+        self.head.drawOn(c,16,self.height-7-self.hh)
+        y=self.height-16-self.hh
+        self.body.drawOn(c,16,y-self.bh-4)
+        if self.traps:
+            c.setFillColor(colors.HexColor('#FBF0F1'))
+            c.rect(8,8,self.width-16,self.th+12,stroke=0,fill=1)
+            self.traps.drawOn(c,16,14)
+
 def qcm_pdf(rows,path):
     story=[
         p('VIH — 50 QCM de révision',ST['title']),
@@ -184,11 +214,8 @@ def qcm_pdf(rows,path):
     story.append(PageBreak())
     story.append(p('Corrigés argumentés',ST['h1']))
     for q in rows:
-        letters=', '.join(chr(65+i) for i in q['answers'])
-        # Le texte complet de la correction et les lettres viennent de la banque unique.
-        line=f"Q{q['number']:02d} — Réponses : {letters}. "+q['explanation']
-        story.append(p(line,ST['correction']))
-        story.append(Spacer(1,4))
+        story.append(CorrectionCard(q))
+        story.append(Spacer(1,9))
     document(path,story)
 
 def cards_pdf(rows,path):
@@ -200,41 +227,43 @@ def cards_pdf(rows,path):
     document(path,story)
 
 def revision_pdf(original,path):
-    story=[]
-    seen=set()
-    with fitz.open(original) as pdf:
-        for ix,page in enumerate(pdf):
-            if ix==1:continue  # ancien sommaire rétabli par signets cliquables
-            clip=fitz.Rect(MARGIN,46,W-MARGIN,H-48)
-            blocks=page.get_text('blocks',clip=clip,sort=True)
-            for block in blocks:
-                text=str(block[4]).strip()
-                if not text:continue
-                text=re.sub(r'\s+',' ',text)
-                if text.startswith('IFSI ABC') or text.startswith('Dre Laura Levi') or re.match(r'^PAGE \d+ /',text):
-                    continue
-                if re.match(r'^(?:\d{2})\s+\S',text):
-                    title=text
-                    if ' ' in text:
-                        # Seules les grandes rubriques possèdent un signet racine.
-                        prefix=text[:2]
-                        if prefix not in seen and int(prefix)<=14:
-                            seen.add(prefix)
-                            flow=p(text,ST['h1'])
-                            flow.section_title=title
-                            story.append(flow)
-                            continue
-                if ix==0 and not story:
-                    story.append(p('VIH — Fiche de révision',ST['title']))
-                cls=ST['h2'] if (len(text)<125 and re.match(r'^\d+\.\d+\.',text)) else ST['body']
-                story.append(p(text,cls))
-                story.append(Spacer(1,3))
-    if not story:raise ValueError('Fiche vide après extraction')
-    document(path,story)
+    """Preserve every original page, table, callout and clinical sentence."""
+    d=fitz.open(original)
+    assert len(d)==17,'Source sheet pagination changed; stop rather than lose content'
+    cover=d[0]
+    target=cover.search_for('OBJECTIFS DE RÉVISION')
+    assert len(target)==1,'Unique under-sized heading not found; inspect source manually'
+    r=target[0]
+    cover.add_redact_annot(fitz.Rect(r.x0-1,r.y0-1,r.x1+2,r.y1+1),fill=(1,1,1))
+    cover.apply_redactions(images=0,graphics=0,text=0)
+    lato='/usr/share/fonts/truetype/lato/Lato-Bold.ttf'
+    cover.insert_font(fontname='LocalLatoBold',fontfile=lato)
+    cover.insert_text((59,381.9),'OBJECTIFS DE RÉVISION',fontname='LocalLatoBold',
+       fontfile=lato,fontsize=9.4,color=(0.36,0.21,0.53),overlay=True)
+    toc=[]
+    for i,page in enumerate(d):
+        for block in page.get_text('dict')['blocks']:
+            for line in block.get('lines',[]):
+                txt=' '.join(span['text'] for span in line['spans']).strip()
+                if re.match(r'^\d{2}\s',txt) and any(span['size']>=14 for span in line['spans']):
+                    toc.append([1,txt,i+1])
+    assert len(toc)==14,'Missing section bookmark: possible source extraction loss'
+    assert toc[-3][1].startswith('12 Pièges QCM')
+    assert toc[-2][1].startswith('13 Synthèse générale')
+    assert toc[-1][1].startswith('14 Définitions et mots-clés')
+    d.set_toc(toc)
+    d.set_metadata({})
+    d.save(path,garbage=4,deflate=True)
+    d.close()
     with fitz.open(path) as pdf:
-        toc=[item[1] for item in pdf.get_toc()]
-        if not toc or 'Définitions et mots-clés' not in toc[-1]:
-            raise ValueError('Glossaire absent du dernier signet, ne pas considérer la fiche conforme')
+        assert len(pdf)==17 and len(pdf.get_toc())==14
+        for n,page in enumerate(pdf,1):
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines',[]):
+                    for span in line['spans']:
+                        bbox=fitz.Rect(span['bbox'])
+                        assert not (100<bbox.y0<page.rect.height-105 and span['size']<8.999),(
+                            'Small body',n,span['text'])
 
 def validate_inputs(rows):
     assert len(rows)==50 and {x['number'] for x in rows}==set(range(1,51))
