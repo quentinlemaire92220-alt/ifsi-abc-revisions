@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.147';
+const VERSION='8.30.148';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : Fièvre au retour de voyage et paludisme : 40 QCM, 50 flashcards, support provisoire.`;
+const READY=`Application prête • V${VERSION} : Gestion du stress UE B3.2.1 : fiche 17 pages et 50 définitions, QCM non demandés.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}
