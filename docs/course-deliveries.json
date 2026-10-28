@@ -3343,7 +3343,7 @@
       "artifactSha256s": {
         "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
         "gestion_stress_qcm_50_v149": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
-        "gestion_stress_flashcards_50_v149": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9"
+        "gestion_stress_flashcards_50_v149": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3361,7 +3361,7 @@
         },
         "flashcards": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
-          "sha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
+          "sha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
           "pageCount": 8,
           "artifactId": "gestion_stress_flashcards_50_v149"
         }
@@ -3527,7 +3527,7 @@
             "renderedAllPages": true
           },
           "flashcardsPdf": {
-            "sha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
+            "sha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
             "pageCount": 8,
             "renderedAllPages": true
           }
@@ -3536,7 +3536,7 @@
           "status": "PENDING_DEPLOYMENT",
           "source": "github_pages_file_staged",
           "qcmSha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
-          "flashcardsSha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9"
+          "flashcardsSha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35"
         },
         "publicationApproval": {
           "status": "approved",
@@ -3550,7 +3550,7 @@
       },
       "flashcardPdfReview": {
         "status": "owner_accepted",
-        "pdfSha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
+        "pdfSha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
         "pageCount": 8,
         "allPagesRendered": true,
         "ownerAcceptance": "GO_publication_complement_explicit",
