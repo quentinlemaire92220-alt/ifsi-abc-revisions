@@ -101,7 +101,288 @@ def validate_cards_written_recto_verso(text,rows):
     assert len(set(expected))==len(rows),'Doublons recto/verso dans la banque'
     assert sorted(actual)==sorted(expected),'Le PDF des 40 cartes diverge de la banque'
 
+def validate_cards_lexical_multi(text,rows):
+    """Contrôle exact d'un PDF de flashcards issu d'une banque QCM multi-cartes.
+
+    Les 50 couples question/réponse sont comparés à toutes les cartes de la
+    banque canonique : aucun doublon, remplacement ou oubli autorisé.
+    Le format historique à une carte par QCM reste contrôlé séparément.
+    """
+    cards=[card for q in rows for card in q.get('flashcards',[])]
+    blocks=list(re.finditer(r'(?m)^CARTE (\\d{2}) / (\\d{2})[ \\t]*
+    if re.search(r'(?m)^CARTE \d{2} · ',text):
+        return validate_cards_theme_cards(text,rows)
+    if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
+        return validate_cards_written_recto_verso(text,rows)
+    text=without_theme_titles(text,rows)
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' Réponse. '+' '.join(f['answers'])+' Explication. '+f['explanation']
+        written_v53='RECTO • '+f['front']+' VERSO • '+' '.join(f['answers'])+' EXPLICATION • '+f['explanation']
+        assert norm(actual) in {norm(expected),norm(written_v53)},q['id']+': recto/verso/explication PDF différents'
+
+def theme_order(rows):
+    themes=list(dict.fromkeys(q['theme'] for q in rows))
+    return [q for theme in themes for q in rows if q['theme']==theme]
+
+def validate_qcm_theme_cards(text,rows):
+    """Themed cards with a printed difficulty before each Qnn · heading.
+
+    Only this concrete layout is admitted. Every clinical character, key,
+    difficulty and item is compared; historical parsers remain unchanged.
+    """
+    parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
+    ordered=theme_order(rows)
+    expected_numbers=[q['number'] for q in ordered]
+    levels=list(re.finditer(r'(?m)^(FACILE|MOYEN|DIFFICILE)[ \t]*\nQ(\d{2}) · ',questions))
+    assert [int(m[2]) for m in levels]==expected_numbers,'Difficultés/questions manquantes ou dupliquées'
+    mapping={'easy':'FACILE','medium':'MOYEN','hard':'DIFFICILE'}
+    for q,m in zip(ordered,levels):
+        assert m[1]==mapping[q['difficulty']],q['id']+': difficulté PDF différente'
+    questions=without_theme_titles(questions,rows)
+    questions=re.sub(r'(?m)^(?:FACILE|MOYEN|DIFFICILE)[ \t]*\n','',questions)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) · ',questions))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Questions manquantes/dupliquées ou ordre thématique différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
+    corrections=without_theme_titles(corrections,rows)
+    corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\. ',corrections))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+
+def validate_cards_theme_cards(text,rows):
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2}) · ([^\n]+)\nRECTO — ',text))
+    ordered=sorted(rows,key=lambda q:q['number'])
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in ordered],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert norm(m[2])==norm(q['theme']),q['id']+': thème de carte différent'
+        assert len(q['flashcards'])==1,q['id']+': carte unique requise'
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' VERSO — '+' '.join(f['answers'])+' POUR COMPRENDRE — '+f['explanation']
+        assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
+def check(course):
+    for role,asset in course['publicArtifacts'].items():
+        path=Path(asset['path'])
+        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
+        assert not check_document(path),'Marque technique étudiant'
+        with fitz.open(path) as doc:
+            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
+            assert len(doc)==asset['pageCount'],'Pagination différente'
+            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
+            text=body(doc)
+        if role in ('qcm','flashcards'):
+            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
+        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
+    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
+    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
+    assert selected,'Aucun contrat PDF sélectionné'
+    for c in selected:check(c)
+if __name__=='__main__':main()
+,text))
+    assert len(cards)>0 and [int(m[1]) for m in blocks]==list(range(1,len(cards)+1)), 'Cartes manquantes/dupliquées'
+    assert all(int(m[2])==len(cards) for m in blocks), 'Total imprimé des cartes divergent'
+    observed=[]
+    for i,m in enumerate(blocks):
+        chunk=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        pair=re.search(r'(?ms)^QUESTION[ \\t]*\\n(.*?)^RÉPONSE À MÉMORISER[ \\t]*\\n(.*?)^Réviser à l’oral : répondre avant de lire la correction\\.[ \\t]*
+    if re.search(r'(?m)^CARTE \d{2} · ',text):
+        return validate_cards_theme_cards(text,rows)
+    if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
+        return validate_cards_written_recto_verso(text,rows)
+    text=without_theme_titles(text,rows)
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' Réponse. '+' '.join(f['answers'])+' Explication. '+f['explanation']
+        written_v53='RECTO • '+f['front']+' VERSO • '+' '.join(f['answers'])+' EXPLICATION • '+f['explanation']
+        assert norm(actual) in {norm(expected),norm(written_v53)},q['id']+': recto/verso/explication PDF différents'
+
+def theme_order(rows):
+    themes=list(dict.fromkeys(q['theme'] for q in rows))
+    return [q for theme in themes for q in rows if q['theme']==theme]
+
+def validate_qcm_theme_cards(text,rows):
+    """Themed cards with a printed difficulty before each Qnn · heading.
+
+    Only this concrete layout is admitted. Every clinical character, key,
+    difficulty and item is compared; historical parsers remain unchanged.
+    """
+    parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
+    ordered=theme_order(rows)
+    expected_numbers=[q['number'] for q in ordered]
+    levels=list(re.finditer(r'(?m)^(FACILE|MOYEN|DIFFICILE)[ \t]*\nQ(\d{2}) · ',questions))
+    assert [int(m[2]) for m in levels]==expected_numbers,'Difficultés/questions manquantes ou dupliquées'
+    mapping={'easy':'FACILE','medium':'MOYEN','hard':'DIFFICILE'}
+    for q,m in zip(ordered,levels):
+        assert m[1]==mapping[q['difficulty']],q['id']+': difficulté PDF différente'
+    questions=without_theme_titles(questions,rows)
+    questions=re.sub(r'(?m)^(?:FACILE|MOYEN|DIFFICILE)[ \t]*\n','',questions)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) · ',questions))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Questions manquantes/dupliquées ou ordre thématique différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
+    corrections=without_theme_titles(corrections,rows)
+    corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\. ',corrections))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+
+def validate_cards_theme_cards(text,rows):
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2}) · ([^\n]+)\nRECTO — ',text))
+    ordered=sorted(rows,key=lambda q:q['number'])
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in ordered],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert norm(m[2])==norm(q['theme']),q['id']+': thème de carte différent'
+        assert len(q['flashcards'])==1,q['id']+': carte unique requise'
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' VERSO — '+' '.join(f['answers'])+' POUR COMPRENDRE — '+f['explanation']
+        assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
+def check(course):
+    for role,asset in course['publicArtifacts'].items():
+        path=Path(asset['path'])
+        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
+        assert not check_document(path),'Marque technique étudiant'
+        with fitz.open(path) as doc:
+            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
+            assert len(doc)==asset['pageCount'],'Pagination différente'
+            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
+            text=body(doc)
+        if role in ('qcm','flashcards'):
+            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
+        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
+    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
+    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
+    assert selected,'Aucun contrat PDF sélectionné'
+    for c in selected:check(c)
+if __name__=='__main__':main()
+,chunk)
+        assert pair is not None,'CARTE '+str(i+1)+': question/réponse non reconnaissables'
+        observed.append((norm(pair.group(1)),norm(pair.group(2))))
+    expected=[(norm(c['front']),norm(' '.join(c['answers']))) for c in cards]
+    assert len(set(observed))==len(cards),'Doublons PDF'
+    assert len(set(expected))==len(cards),'Doublons banque'
+    assert sorted(observed)==sorted(expected),'PDF de flashcards divergent de la banque canonique'
+
 def validate_cards(text,rows):
+    if re.search(r'(?m)^CARTE \\d{2} / \\d{2}[ \\t]*    if re.search(r'(?m)^CARTE \d{2} · ',text):
+        return validate_cards_theme_cards(text,rows)
+    if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
+        return validate_cards_written_recto_verso(text,rows)
+    text=without_theme_titles(text,rows)
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2})\s+',text))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' Réponse. '+' '.join(f['answers'])+' Explication. '+f['explanation']
+        written_v53='RECTO • '+f['front']+' VERSO • '+' '.join(f['answers'])+' EXPLICATION • '+f['explanation']
+        assert norm(actual) in {norm(expected),norm(written_v53)},q['id']+': recto/verso/explication PDF différents'
+
+def theme_order(rows):
+    themes=list(dict.fromkeys(q['theme'] for q in rows))
+    return [q for theme in themes for q in rows if q['theme']==theme]
+
+def validate_qcm_theme_cards(text,rows):
+    """Themed cards with a printed difficulty before each Qnn · heading.
+
+    Only this concrete layout is admitted. Every clinical character, key,
+    difficulty and item is compared; historical parsers remain unchanged.
+    """
+    parts=re.split(r'Corrigés argumentés',text,maxsplit=1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
+    ordered=theme_order(rows)
+    expected_numbers=[q['number'] for q in ordered]
+    levels=list(re.finditer(r'(?m)^(FACILE|MOYEN|DIFFICILE)[ \t]*\nQ(\d{2}) · ',questions))
+    assert [int(m[2]) for m in levels]==expected_numbers,'Difficultés/questions manquantes ou dupliquées'
+    mapping={'easy':'FACILE','medium':'MOYEN','hard':'DIFFICILE'}
+    for q,m in zip(ordered,levels):
+        assert m[1]==mapping[q['difficulty']],q['id']+': difficulté PDF différente'
+    questions=without_theme_titles(questions,rows)
+    questions=re.sub(r'(?m)^(?:FACILE|MOYEN|DIFFICILE)[ \t]*\n','',questions)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) · ',questions))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Questions manquantes/dupliquées ou ordre thématique différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
+    corrections=without_theme_titles(corrections,rows)
+    corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\. ',corrections))
+    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+
+def validate_cards_theme_cards(text,rows):
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{2}) · ([^\n]+)\nRECTO — ',text))
+    ordered=sorted(rows,key=lambda q:q['number'])
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in ordered],'Cartes manquantes/dupliquées'
+    for i,(q,m) in enumerate(zip(ordered,blocks)):
+        assert norm(m[2])==norm(q['theme']),q['id']+': thème de carte différent'
+        assert len(q['flashcards'])==1,q['id']+': carte unique requise'
+        f=q['flashcards'][0]
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        expected=f['front']+' VERSO — '+' '.join(f['answers'])+' POUR COMPRENDRE — '+f['explanation']
+        assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
+def check(course):
+    for role,asset in course['publicArtifacts'].items():
+        path=Path(asset['path'])
+        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
+        assert not check_document(path),'Marque technique étudiant'
+        with fitz.open(path) as doc:
+            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
+            assert len(doc)==asset['pageCount'],'Pagination différente'
+            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
+            text=body(doc)
+        if role in ('qcm','flashcards'):
+            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
+        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
+    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
+    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
+    assert selected,'Aucun contrat PDF sélectionné'
+    for c in selected:check(c)
+if __name__=='__main__':main()
+,text):
+        return validate_cards_lexical_multi(text,rows)
     if re.search(r'(?m)^CARTE \d{2} · ',text):
         return validate_cards_theme_cards(text,rows)
     if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
