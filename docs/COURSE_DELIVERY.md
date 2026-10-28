@@ -1,3 +1,24 @@
+# PRIORITÉ NORMATIVE — v1.49 et trame écrite V5.3 (28/10/2026)
+
+**Cette section remplace les anciennes mentions « priorité actuelle » ci-dessous.**
+Pour toute **nouvelle fiche** ou régénération demandée : **un seul PDF écrit** selon
+le standard [V5.3](WRITTEN_REVISION_V153.md) et la [trame V3](PDF_TEMPLATE_CONTRACT_V3.md),
+**sans image générée**, sauf demande expresse. La charte v1.49 impose en plus une
+**matrice privée de couverture ET d'héritage**, une **revue sémantique avant/après**
+(précision, exemples, rôle IDE, nuances), un journal des décisions et deux validations
+distinctes (pédagogique/scientifique puis graphique). Voir
+[PEDAGOGICAL_NON_REGRESSION_V149.md](PEDAGOGICAL_NON_REGRESSION_V149.md).
+Une notion citée ne suffit pas si elle doit être expliquée/appliquée.
+
+Un dépôt de source ne déclenche ni génération ni publication. Les sources et preuves de
+revue restent **sur Drive privé**, jamais dans ce dépôt. Les contrôles CI ne vérifient
+que la cohérence technique d'un reçu public minimal : ils ne démontrent ni le fond ni
+l'authenticité d'un accord. Les ressources historiques restent inchangées.
+**GO distinct obligatoire** pour publication Drive/application puis fusion/déploiement.
+Le texte ancien ci-dessous est conservé exclusivement pour l'historique.
+
+---
+
 # PRIORITÉ ACTUELLE — Fiche hybride unique v1.46/v1.47 (22/10/2026)
 
 **CET ENCADRÉ PRIME SUR LES ANCIENNES PROCÉDURES À DEUX PDF RESTÉES CI-DESSOUS POUR L'HISTORIQUE.**

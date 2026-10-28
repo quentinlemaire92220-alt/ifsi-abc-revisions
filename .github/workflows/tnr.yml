@@ -77,6 +77,12 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/posture-td2-bank-integrity.mjs
 
+      - name: Charte v1.49 — reçu de revue des fiches nouvelles ou modifiées (contrat)
+        if: ${{ !cancelled() }}
+        run: |
+          node tools/pedagogical-non-regression-v149.mjs --self-test
+          node tools/pedagogical-non-regression-v149.mjs --base "$IFSI_BASE_SHA"
+
       - name: Tests de non-régression données et runtime
         if: ${{ !cancelled() }}
         run: node tests/tnr-node.mjs
