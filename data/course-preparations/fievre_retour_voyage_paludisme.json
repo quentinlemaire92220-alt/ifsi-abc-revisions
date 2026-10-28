@@ -1,0 +1,1507 @@
+[
+  {
+    "id": "fievre_palu_20261027_001",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 1,
+    "theme": "Retour de voyage",
+    "difficulty": "easy",
+    "question": "Au retour d’un pays tropical, quelles causes doivent rester envisagées ?",
+    "choices": [
+      "Une infection respiratoire courante.",
+      "Une infection urinaire.",
+      "Uniquement une parasitose tropicale.",
+      "Une maladie tropicale selon l’exposition.",
+      "Aucune infection si le séjour a été court."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les causes cosmopolites restent possibles ; les causes tropicales sont évaluées selon l’exposition.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Anamnèse ?",
+        "answers": [
+          "Recueil structuré de l’histoire et des expositions d’un patient."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Recrudescence ?",
+        "answers": [
+          "Réapparition d’une parasitémie liée à une persistance de parasites sanguins."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_002",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 2,
+    "theme": "Retour de voyage",
+    "difficulty": "easy",
+    "question": "Quelles informations sont indispensables dans l’anamnèse du voyage ?",
+    "choices": [
+      "Pays et régions traversés.",
+      "Dates de séjour et de début des signes.",
+      "Uniquement le numéro de vol.",
+      "Activités et expositions pendant le séjour.",
+      "Le nom du fournisseur de billets."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les lieux, dates et comportements aident à établir les risques et les délais d’incubation.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Arbovirose ?",
+        "answers": [
+          "Infection virale transmise par un arthropode vecteur, notamment certains moustiques."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Rechute palustre ?",
+        "answers": [
+          "Nouvel épisode pouvant provenir de formes hépatiques dormantes pour certaines espèces."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_003",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 3,
+    "theme": "Retour de voyage",
+    "difficulty": "medium",
+    "question": "Le patient est fébrile après un voyage. Quelles propositions respectent la démarche présentée ?",
+    "choices": [
+      "Chercher d’abord les signes de gravité.",
+      "Repérer les points d’appel cliniques.",
+      "Écarter automatiquement la grippe car il est allé en Afrique.",
+      "Raisonner sur les expositions.",
+      "Demander les examens sans tenir compte des signes."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La démarche est systématique et orientée : gravité, clinique et exposition.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Anophèle ?",
+        "answers": [
+          "Moustique dont certaines femelles peuvent transmettre les parasites du paludisme."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Rosetting ?",
+        "answers": [
+          "Adhésion d’hématies non parasitées autour d’une hématie parasitée."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_004",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 4,
+    "theme": "Retour de voyage",
+    "difficulty": "medium",
+    "question": "Quels événements du voyage peuvent orienter le diagnostic ?",
+    "choices": [
+      "Baignade en eau douce.",
+      "Piqûres de moustiques.",
+      "Consommation d’eau non sécurisée.",
+      "Couleur de la valise.",
+      "Marque de l’appareil photo."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les voies de transmission dépendent des comportements et des expositions réelles.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Antipaludique ?",
+        "answers": [
+          "Médicament utilisé dans la prévention ou le traitement du paludisme."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Séquestration ?",
+        "answers": [
+          "Rétention d’hématies parasitées dans les microvaisseaux des tissus."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_005",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 5,
+    "theme": "Retour de voyage",
+    "difficulty": "hard",
+    "question": "À propos des fièvres restant sans diagnostic dans certaines séries, quelles affirmations sont prudentes ?",
+    "choices": [
+      "Il existe des fièvres dont l’étiologie n’est pas identifiée.",
+      "Le chiffre de la série garantit que tout patient guérit seul.",
+      "Un résultat négatif ne dispense pas de revoir la gravité.",
+      "Il faut toujours réaliser un panel illimité.",
+      "Le taux observé n’est pas une règle individuelle."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Une proportion non élucidée est décrite dans des études ; elle ne doit jamais retarder le diagnostic urgent ni devenir une assurance clinique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Artésunate ?",
+        "answers": [
+          "Dérivé de l’artémisinine utilisé notamment par voie intraveineuse dans le paludisme grave."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Schizonte ?",
+        "answers": [
+          "Stade de multiplication du parasite donnant naissance à plusieurs formes filles."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_006",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 6,
+    "theme": "Chronologie et signes",
+    "difficulty": "easy",
+    "question": "Concernant les dates de voyage, quelles affirmations sont exactes ?",
+    "choices": [
+      "La date de retour aide à situer la dernière exposition possible.",
+      "La date de début des symptômes est utile.",
+      "L’incubation remplace l’examen clinique.",
+      "Les périodes d’incubation peuvent se chevaucher.",
+      "Tous les pathogènes ont 7 jours d’incubation."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La chronologie oriente mais ne suffit pas à exclure une étiologie.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Artéméther-luméfantrine ?",
+        "answers": [
+          "Association antipaludique orale citée pour l’accès simple."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Sporozoïte ?",
+        "answers": [
+          "Forme parasitaire inoculée à l’humain par le moustique infecté."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_007",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 7,
+    "theme": "Chronologie et signes",
+    "difficulty": "medium",
+    "question": "Quelles affections sont citées pour des incubations plutôt courtes ?",
+    "choices": [
+      "Certaines arboviroses.",
+      "Diarrhée du voyageur.",
+      "Toutes les hépatites chroniques.",
+      "Toute infection à tropisme hépatique.",
+      "Toujours une infection à P. ovale dormante."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le cours cite notamment diarrhée du voyageur et arboviroses comme exemples de présentations précoces. Les autres propositions sont trop générales ou relèvent de délais différents.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Arténimol-pipéraquine ?",
+        "answers": [
+          "Association antipaludique orale avec consignes spécifiques d’administration."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : TDR ?",
+        "answers": [
+          "Test de diagnostic rapide, généralement fondé sur la détection d’antigènes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_008",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 8,
+    "theme": "Chronologie et signes",
+    "difficulty": "medium",
+    "question": "Quels éléments suggèrent une fièvre avec foyer ?",
+    "choices": [
+      "Brûlures urinaires et douleur lombaire.",
+      "Crépitants respiratoires et toux.",
+      "Lésion cutanée inflammatoire localisée.",
+      "Absence de tout symptôme associé.",
+      "Exposition au soleil sans symptôme."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les signes localisés orientent les examens, tout en gardant à l’esprit les risques d’importation.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : BMR ?",
+        "answers": [
+          "Bactérie multirésistante à plusieurs familles d’antibiotiques."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Trophozoïte ?",
+        "answers": [
+          "Stade de développement et de nutrition du parasite."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_009",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 9,
+    "theme": "Chronologie et signes",
+    "difficulty": "hard",
+    "question": "Un patient revenu d’une zone palustre n’a plus de fièvre au moment du triage. Quelles propositions sont justes ?",
+    "choices": [
+      "Le paludisme reste possible.",
+      "Une sensation fébrile ou des frissons sont à recueillir.",
+      "La température normale exclut une parasitose sanguine.",
+      "La notion de prophylaxie n’est pas suffisante pour exclure le risque.",
+      "Le diagnostic doit attendre l’apparition d’une fièvre tierce."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La fièvre est fluctuante et la maladie peut être peu spécifique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Chimioprophylaxie ?",
+        "answers": [
+          "Administration de médicaments pour réduire le risque de maladie."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Vecteur ?",
+        "answers": [
+          "Organisme qui transporte et transmet un agent infectieux entre hôtes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_010",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 10,
+    "theme": "Chronologie et signes",
+    "difficulty": "medium",
+    "question": "Face à un ictère fébrile après un voyage, que faut-il considérer ?",
+    "choices": [
+      "Le paludisme.",
+      "Certaines hépatites.",
+      "La leptospirose selon exposition.",
+      "Une cause nécessairement unique et évidente.",
+      "L’absence de tout besoin d’examen."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’ictère est un signe d’appel partagé par plusieurs infections.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Cytoadhérence ?",
+        "answers": [
+          "Adhésion de globules rouges parasités à la paroi des microvaisseaux."
+        ]
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : VIH ?",
+        "answers": [
+          "Virus de l’immunodéficience humaine, à envisager selon les expositions et la clinique."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_011",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 11,
+    "theme": "Infectiologie et BMR",
+    "difficulty": "easy",
+    "question": "Que désigne une BMR ?",
+    "choices": [
+      "Une bactérie multirésistante.",
+      "Un portage possible sans infection clinique.",
+      "Une infection virale du voyageur.",
+      "Un parasite des hématies.",
+      "Un marqueur de glycémie."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le portage ou l’infection à BMR concerne les bactéries résistantes, pas le paludisme.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Dengue ?",
+        "answers": [
+          "Arbovirose pouvant provoquer une maladie fébrile après exposition au vecteur."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_012",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 12,
+    "theme": "Infectiologie et BMR",
+    "difficulty": "medium",
+    "question": "Devant des soins ou une hospitalisation à l’étranger, quels réflexes conviennent ?",
+    "choices": [
+      "Recueillir le contexte des soins.",
+      "Informer l’équipe de soins.",
+      "Appliquer les mesures prévues par le protocole d’hygiène.",
+      "Isoler automatiquement toute personne ayant quitté la France.",
+      "Considérer que le paludisme se transmet par contact cutané ordinaire."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le risque BMR nécessite une évaluation et des précautions selon les procédures, sans généralisation au seul voyage.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Délai d’incubation ?",
+        "answers": [
+          "Temps entre l’exposition infectante et l’apparition des symptômes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_013",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 13,
+    "theme": "Infectiologie et BMR",
+    "difficulty": "easy",
+    "question": "Pour les hémocultures prescrites, quelles propositions sont correctes ?",
+    "choices": [
+      "Respecter l’asepsie de prélèvement.",
+      "Respecter le volume de remplissage prévu.",
+      "Négliger l’étiquetage.",
+      "Identifier correctement les prélèvements.",
+      "Mettre moins de sang systématiquement pour éviter le risque."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’enseignant insiste sur la qualité de prélèvement, notamment le remplissage.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Érythrocyte ?",
+        "answers": [
+          "Globule rouge, cellule sanguine qui transporte l’oxygène."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_014",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 14,
+    "theme": "Infectiologie et BMR",
+    "difficulty": "hard",
+    "question": "Un paludisme confirmé impose-t-il à lui seul un isolement contact ?",
+    "choices": [
+      "Non, pas pour la transmission palustre habituelle.",
+      "Oui, car les globules rouges se transmettent par poignée de main.",
+      "Des précautions peuvent être motivées par un autre risque associé au voyage.",
+      "Le protocole d’hygiène local reste pertinent.",
+      "Tous les cas nécessitent un isolement aérien."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La transmission habituelle implique un moustique vecteur ; les autres risques se jugent séparément.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Exanthème ?",
+        "answers": [
+          "Éruption cutanée diffuse accompagnant certaines maladies."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_015",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 15,
+    "theme": "Infectiologie et BMR",
+    "difficulty": "medium",
+    "question": "Au retour de voyage, quelles informations préventives rechercher ?",
+    "choices": [
+      "Vaccinations réalisées.",
+      "Chimioprophylaxie antipaludique et observance.",
+      "Protections contre les piqûres.",
+      "Un certificat de vaccin comme garantie absolue de protection.",
+      "La marque du bagage."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les vaccinations et mesures de prévention nuancent le risque sans l’annuler.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Fièvre focale ?",
+        "answers": [
+          "Fièvre associée à un point d’appel clinique localisé."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_016",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 16,
+    "theme": "Agent et cycle",
+    "difficulty": "easy",
+    "question": "Quel agent est responsable du paludisme ?",
+    "choices": [
+      "Un parasite du genre Plasmodium.",
+      "Un protozoaire.",
+      "Une bactérie du genre Streptococcus.",
+      "Un champignon microscopique.",
+      "Un prion."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Plasmodium est un protozoaire parasite.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Fièvre nue ?",
+        "answers": [
+          "Fièvre sans foyer évident identifié à l’examen initial."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_017",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 17,
+    "theme": "Agent et cycle",
+    "difficulty": "easy",
+    "question": "Quel organisme transmet habituellement le paludisme ?",
+    "choices": [
+      "La femelle anophèle infectée.",
+      "Le moustique vecteur.",
+      "Un contact social ordinaire sans vecteur.",
+      "Le rhinovirus.",
+      "La mouche domestique dans tous les cas."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La forme infectante est inoculée par l’anophèle femelle infectée.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Frottis sanguin ?",
+        "answers": [
+          "Sang étalé sur lame et examiné après préparation et coloration."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_018",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 18,
+    "theme": "Agent et cycle",
+    "difficulty": "medium",
+    "question": "Quelles étapes de Plasmodium se déroulent chez l’être humain ?",
+    "choices": [
+      "Passage initial par le foie.",
+      "Invasion des globules rouges.",
+      "Multiplication parasitaire sanguine.",
+      "Reproduction sexuée principale dans le moustique.",
+      "Transmission du parasite par parole."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les phases hépatiques et sanguines se déroulent chez l’humain ; la reproduction sexuée chez le moustique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Gamétocyte ?",
+        "answers": [
+          "Forme sexuée de Plasmodium circulant dans le sang et ingérée par le moustique."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_019",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 19,
+    "theme": "Agent et cycle",
+    "difficulty": "medium",
+    "question": "Au sujet des formes parasitaires, quelles affirmations sont exactes ?",
+    "choices": [
+      "Le sporozoïte est inoculé par le moustique.",
+      "Le mérozoïte envahit les globules rouges.",
+      "Le gamétocyte participe à la transmission vers le moustique.",
+      "Le gamétocyte est un globule blanc.",
+      "Le schizonte n’intervient jamais dans le cycle."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Ces trois formes interviennent à différentes étapes du cycle décrit en séance.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Goutte épaisse ?",
+        "answers": [
+          "Préparation sanguine concentrée pour rechercher des parasites."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_020",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 20,
+    "theme": "Agent et cycle",
+    "difficulty": "hard",
+    "question": "Concernant P. vivax et P. ovale, qu’est-il juste de retenir ?",
+    "choices": [
+      "Des formes hépatiques dormantes peuvent exister.",
+      "Des rechutes tardives sont possibles.",
+      "Chaque nouvel accès résulte forcément d’une nouvelle piqûre.",
+      "Le mécanisme doit être distingué de la simple recrudescence sanguine.",
+      "Ces espèces sont des bactéries."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les hypnozoïtes hépatiques expliquent des rechutes tardives pour ces espèces.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Hépatocyte ?",
+        "answers": [
+          "Cellule du foie susceptible d’être infectée au début du cycle palustre."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_021",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 21,
+    "theme": "Physiopathologie",
+    "difficulty": "easy",
+    "question": "Qu’est-ce que la cytoadhérence dans le paludisme à P. falciparum ?",
+    "choices": [
+      "L’adhésion de globules rouges parasités à des microvaisseaux.",
+      "Un phénomène impliquant des protéines exprimées à la surface des hématies infectées.",
+      "Le passage de bactéries dans les urines.",
+      "Une technique de frottis sanguin.",
+      "Une réaction allergique universelle au médicament."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La cytoadhérence participe à la séquestration microvasculaire.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Hémoculture ?",
+        "answers": [
+          "Prélèvement de sang destiné à rechercher une infection sanguine microbienne."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_022",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 22,
+    "theme": "Physiopathologie",
+    "difficulty": "medium",
+    "question": "Quelles manifestations peuvent résulter de la séquestration parasitaire ?",
+    "choices": [
+      "Altération de la microcirculation.",
+      "Défaillance d’organe.",
+      "Atteinte neurologique grave.",
+      "Disparition garantie de la parasitémie.",
+      "Impossibilité d’une défaillance respiratoire."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le processus contribue aux complications cérébrales et multiviscérales.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Hémolyse ?",
+        "answers": [
+          "Destruction des globules rouges."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_023",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 23,
+    "theme": "Physiopathologie",
+    "difficulty": "hard",
+    "question": "Que décrit le terme rosetting ?",
+    "choices": [
+      "Une hématie parasitée associée à des hématies non parasitées.",
+      "Un phénomène d’agrégation distinct de la seule multiplication.",
+      "Une technique de vaccination.",
+      "Un mécanisme contribuant à l’obstruction microvasculaire.",
+      "La forme infectante injectée par le moustique."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le rosetting est un phénomène d’adhésion cellulaire associé à la physiopathologie grave.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Hypnozoïte ?",
+        "answers": [
+          "Forme hépatique dormante présente chez certaines espèces de Plasmodium."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_024",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 24,
+    "theme": "Physiopathologie",
+    "difficulty": "medium",
+    "question": "Pourquoi l’évaluation doit-elle être rapide ?",
+    "choices": [
+      "L’aggravation peut survenir sans tableau très spécifique initialement.",
+      "La cytoadhérence peut contribuer à des atteintes d’organes.",
+      "Un accès palustre grave est possible.",
+      "On peut toujours prévoir précisément l’heure du coma.",
+      "Une fièvre tierce doit impérativement précéder tout signe grave."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’intervenant insiste sur l’imprévisibilité individuelle de certaines décompensations.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Hypoglycémie ?",
+        "answers": [
+          "Baisse anormale de la glycémie."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_025",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 25,
+    "theme": "Physiopathologie",
+    "difficulty": "hard",
+    "question": "Quelles affirmations sur le cycle sont compatibles avec le cours ?",
+    "choices": [
+      "Le cycle érythrocytaire de P. falciparum est présenté autour de 48 h.",
+      "La rupture des hématies libère de nouveaux mérozoïtes.",
+      "Tous les globules rouges parasités deviennent immédiatement séquestrés.",
+      "La phase hépatique précède la multiplication sanguine.",
+      "Le moustique est l’hôte du cycle asexué humain."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours distingue hépatique/sanguin et explique la maturation avant séquestration.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Ictère ?",
+        "answers": [
+          "Coloration jaune de la peau et des muqueuses liée à une accumulation de bilirubine."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_026",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 26,
+    "theme": "Diagnostic et gravité",
+    "difficulty": "easy",
+    "question": "Quels signes ou résultats doivent alerter sur la gravité ?",
+    "choices": [
+      "Trouble de conscience.",
+      "Détresse respiratoire.",
+      "Hypoglycémie significative.",
+      "Simple absence de fièvre au triage prise isolément.",
+      "Couleur du bagage."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les défaillances d’organes et anomalies métaboliques font partie des signes cités.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Infection cosmopolite ?",
+        "answers": [
+          "Infection pouvant être rencontrée dans de nombreuses régions du monde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_027",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 27,
+    "theme": "Diagnostic et gravité",
+    "difficulty": "easy",
+    "question": "Que permet l’examen du frottis sanguin ?",
+    "choices": [
+      "Voir des parasites dans des globules rouges.",
+      "Contribuer à identifier une espèce parasitaire.",
+      "Estimer une parasitémie selon lecture.",
+      "Remplacer toujours toute autre technique.",
+      "Mettre en évidence toutes les infections tropicales."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le frottis est un examen microscopique parasitologique du sang.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Infection tropicale ?",
+        "answers": [
+          "Infection fortement liée à certains contextes géographiques et écologiques tropicaux."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_028",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 28,
+    "theme": "Diagnostic et gravité",
+    "difficulty": "medium",
+    "question": "À propos des TDR de paludisme, quelles propositions sont prudentes ?",
+    "choices": [
+      "Ils peuvent détecter certains antigènes parasitaires.",
+      "Ils rendent service pour un diagnostic rapide.",
+      "Leur performance dépend du test et du contexte.",
+      "Ils rendent toujours superflue la microscopie.",
+      "Ils sont identiques à une hémoculture."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les TDR complètent l’arsenal ; un protocole encadre le diagnostic.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : LAMP ?",
+        "answers": [
+          "Technique moléculaire d’amplification d’acides nucléiques, distincte de la PCR."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_029",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 29,
+    "theme": "Diagnostic et gravité",
+    "difficulty": "medium",
+    "question": "Concernant PCR et LAMP, quelles affirmations sont justes ?",
+    "choices": [
+      "Ce sont des méthodes moléculaires.",
+      "Elles ne correspondent pas à la même technique.",
+      "Elles peuvent être sensibles selon les systèmes de laboratoire.",
+      "LAMP est une simple coloration du frottis.",
+      "La biologie moléculaire rend inutile tout examen clinique."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "PCR et LAMP recherchent du matériel génétique par des méthodes différentes.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Létalité ?",
+        "answers": [
+          "Proportion de personnes atteintes d’une maladie qui en décèdent."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_030",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 30,
+    "theme": "Diagnostic et gravité",
+    "difficulty": "hard",
+    "question": "Un patient avec parasitémie confirmée présente des convulsions. Quelles affirmations sont compatibles ?",
+    "choices": [
+      "C’est un signe possible d’accès grave.",
+      "L’orientation et la surveillance deviennent urgentes.",
+      "Une prise en charge adaptée des défaillances est nécessaire.",
+      "Le patient est nécessairement en accès simple.",
+      "Le traitement doit attendre trois accès fébriles rythmiques."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les signes neurologiques imposent une réaction immédiate dans ce contexte.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Mérozoïte ?",
+        "answers": [
+          "Forme parasitaire capable d’envahir de nouveaux globules rouges."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_031",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 31,
+    "theme": "Traitements",
+    "difficulty": "easy",
+    "question": "Quelles propositions respectent la distinction accès simple / grave présentée ?",
+    "choices": [
+      "Accès simple : des associations orales peuvent être utilisées.",
+      "Accès grave : artésunate IV dans le cours.",
+      "Accès grave : la voie orale seule est toujours adaptée.",
+      "Le lieu de soins dépend de l’état clinique.",
+      "La classification n’a pas de conséquence thérapeutique."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La gravité oriente voie et niveau de surveillance.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Moustiquaire imprégnée ?",
+        "answers": [
+          "Moustiquaire traitée avec un insecticide adapté pour réduire le risque de piqûres."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_032",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 32,
+    "theme": "Traitements",
+    "difficulty": "medium",
+    "question": "Quels couples sont cités parmi les antipaludiques oraux ?",
+    "choices": [
+      "Artéméther-luméfantrine.",
+      "Arténimol-pipéraquine.",
+      "Amoxicilline-clavulanate.",
+      "Atovaquone-proguanil.",
+      "Ibuprofène-paracétamol."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Trois associations antipaludiques sont évoquées ; le choix est médical.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Paludisme ?",
+        "answers": [
+          "Maladie parasitaire provoquée par des protozoaires du genre Plasmodium."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_033",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 33,
+    "theme": "Traitements",
+    "difficulty": "medium",
+    "question": "Après artésunate IV pour accès grave, que faut-il retenir ?",
+    "choices": [
+      "Le relais oral complet est prévu dès que possible selon protocole.",
+      "La seule amélioration clinique ne signifie pas traitement terminé.",
+      "La surveillance continue selon les prescriptions.",
+      "Le traitement s’arrête obligatoirement après une dose.",
+      "Le patient peut reprendre une activité sans suivi."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le relais oral est une priorité explicitement soulignée à plusieurs reprises.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Parasitémie ?",
+        "answers": [
+          "Présence et, selon la mesure, quantité de parasites dans le sang."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_034",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 34,
+    "theme": "Traitements",
+    "difficulty": "hard",
+    "question": "Sur les conditions de prise des antipaludiques oraux, quelles propositions sont exactes ?",
+    "choices": [
+      "Elles varient d’une association à l’autre.",
+      "Le médicament précis prescrit doit être vérifié.",
+      "La prise avec repas est universelle pour toutes les molécules.",
+      "Arténimol-pipéraquine est cité comme nécessitant une prise à jeun.",
+      "La posologie peut être déduite du seul nom de la maladie."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le cours attire l’attention sur les consignes alimentaires spécifiques ; pas de généralisation.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : PCR ?",
+        "answers": [
+          "Technique d’amplification moléculaire permettant de rechercher du matériel génétique."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_035",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 35,
+    "theme": "Traitements",
+    "difficulty": "hard",
+    "question": "Quelle surveillance après artésunate IV est citée ?",
+    "choices": [
+      "Recrudescence clinique/parasitologique.",
+      "Anémie hémolytique retardée.",
+      "Contrôles dans les semaines suivantes selon protocole.",
+      "Aucune surveillance après sortie.",
+      "Arrêt de tout contrôle si la fièvre disparaît."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le suivi est présenté jusqu’à environ J28, avec vigilance sur l’hémolyse tardive.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Plasmodium ?",
+        "answers": [
+          "Genre de protozoaires parasites responsables du paludisme."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_036",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 36,
+    "theme": "Prévention et rôle IDE",
+    "difficulty": "easy",
+    "question": "Quelles mesures participent à la prévention du paludisme ?",
+    "choices": [
+      "Protection contre les piqûres.",
+      "Moustiquaire imprégnée selon contexte.",
+      "Chimioprophylaxie prescrite selon le risque.",
+      "Prise systématique d’antibiotiques pour tous les voyageurs.",
+      "Isolement contact de toutes les personnes de retour."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le cours insiste sur prévention anti-vectorielle et médicamenteuse individualisée.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Plasmodium falciparum ?",
+        "answers": [
+          "Espèce majeure associée à des formes sévères du paludisme."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_037",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 37,
+    "theme": "Prévention et rôle IDE",
+    "difficulty": "medium",
+    "question": "Comment raisonner sur une chimioprophylaxie ?",
+    "choices": [
+      "Tenir compte de la destination précise.",
+      "Tenir compte du terrain et des contre-indications.",
+      "Vérifier la molécule et les dates des prises.",
+      "Appliquer une durée post-retour identique à toutes les molécules.",
+      "Conclure à un risque nul sous prophylaxie."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "L’indication et la durée dépendent des caractéristiques du séjour et du médicament.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Plasmodium ovale ?",
+        "answers": [
+          "Espèce pouvant persister sous forme hépatique dormante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_038",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 38,
+    "theme": "Prévention et rôle IDE",
+    "difficulty": "medium",
+    "question": "Une personne ayant suivi une prophylaxie consulte pour malaise après un voyage en zone palustre. Que faire ?",
+    "choices": [
+      "Signaler le séjour et la prévention prise.",
+      "Conserver le paludisme parmi les hypothèses.",
+      "Évaluer et signaler les signes de gravité.",
+      "Écarter automatiquement le paludisme.",
+      "Attendre le prochain voyage pour consulter."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La prévention réduit le risque mais n’exclut pas une infection.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Plasmodium vivax ?",
+        "answers": [
+          "Espèce pouvant persister sous forme hépatique dormante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_039",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 39,
+    "theme": "Prévention et rôle IDE",
+    "difficulty": "medium",
+    "question": "Dans la prise en charge IDE, quels objectifs sont pertinents ?",
+    "choices": [
+      "Respecter la qualité du prélèvement sanguin.",
+      "Surveiller conscience et état hémodynamique selon l’état.",
+      "S’assurer de la compréhension du relais oral prescrit.",
+      "Modifier seul le traitement antipaludique si les symptômes changent.",
+      "Déclarer sans contrôle toute température normale comme guérison."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Préparation, surveillance, transmissions et éducation sont centrales, sans substitution à la prescription.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Primo-invasion ?",
+        "answers": [
+          "Première phase clinique après la contamination et la multiplication du parasite."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fievre_palu_20261027_040",
+    "courseId": "fievre_retour_voyage_paludisme",
+    "ue": "S1 B1.3",
+    "course": "Fièvre au retour de voyage et paludisme",
+    "number": 40,
+    "theme": "Prévention et rôle IDE",
+    "difficulty": "hard",
+    "question": "Quelles erreurs de raisonnement faut-il éviter ?",
+    "choices": [
+      "Confondre portage de BMR et infection palustre.",
+      "Traiter toutes les régions tropicales comme un risque identique.",
+      "Faire dépendre le diagnostic uniquement de la présence de fièvre lors de la consultation.",
+      "Signaler les dates et détails du voyage.",
+      "Distinguer prévention anti-vectorielle et médicamenteuse."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les trois premières propositions sont des pièges ; une exposition s’analyse individuellement.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "course_captures",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie : Prophylaxie ?",
+        "answers": [
+          "Ensemble de mesures visant à empêcher une maladie ou à en réduire le risque."
+        ]
+      }
+    ]
+  }
+]
