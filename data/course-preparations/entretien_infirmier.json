@@ -308,7 +308,7 @@
     "question": "Quelles affirmations reflètent une conduite souple des différents types d’entretien ?",
     "choices": [
       "La technique se déduit uniquement du lieu.",
-      "Toute rencontre comporte une finalité soignante.",
+      "Dans un entretien infirmier, l’échange conserve une finalité de soin.",
       "Les catégories d’entretien sont des repères et non des cases toujours exclusives.",
       "La liste des objectifs est présentée comme forcément exhaustive.",
       "Un entretien peut mêler information et recadrage."
@@ -753,9 +753,9 @@
     "question": "Dans l’entretien d’accueil initial, quels éléments sont pertinents ?",
     "choices": [
       "Se limiter à énumérer les horaires du service.",
-      "Il proscrit le recueil de toute donnée sur le patient.",
+      "Écarter systématiquement tout recueil de données sur la personne.",
       "Créer de la confiance.",
-      "Il exige de ne jamais évaluer les besoins.",
+      "Ne jamais évaluer les besoins du patient.",
       "Refuser les questions du patient."
     ],
     "answers": [
@@ -905,7 +905,7 @@
       "Décision systématique à sa place.",
       "Empathie.",
       "Étiquetage de la personne.",
-      "Le non-jugement est explicitement interdit."
+      "Porter systématiquement des jugements de valeur."
     ],
     "answers": [
       2
@@ -1010,12 +1010,12 @@
     "number": 28,
     "theme": "Objectifs des entretiens",
     "difficulty": "hard",
-    "question": "Une personne refuse une toilette. Selon l’explication orale de la négociation, que faire ?",
+    "question": "Une personne refuse sa toilette. Quelle conduite relève d’une négociation respectueuse ?",
     "choices": [
       "Explorer les raisons du refus.",
       "Imposer le soin pour respecter l’horaire.",
       "Présumer que tout refus est un manque de coopération.",
-      "Il évite de rechercher le point de vue de la personne.",
+      "Ne pas chercher à comprendre les raisons du refus.",
       "Chercher une option adaptée si possible."
     ],
     "answers": [
@@ -1050,7 +1050,7 @@
     "question": "Quels éléments peuvent entrer dans un entretien de négociation ?",
     "choices": [
       "Une recherche de compromis.",
-      "Il interdit de distinguer une limite non négociable.",
+      "Refuser d’expliquer ce qui est négociable dans le cadre du soin.",
       "Des éléments permettant une décision éclairée.",
       "La négation du libre arbitre du patient.",
       "Une injonction sans explication."
@@ -1349,7 +1349,7 @@
     "choices": [
       "Le lieu.",
       "L’émotion future exacte du patient.",
-      "Il exige d’interdire toute adaptation du lieu.",
+      "Maintenir le lieu prévu même si son adaptation est nécessaire.",
       "Toutes les réponses qu’il donnera.",
       "Le moment."
     ],
@@ -1420,11 +1420,11 @@
     "number": 39,
     "theme": "Déroulement en cinq étapes",
     "difficulty": "medium",
-    "question": "Dans le corps de l’entretien, quels outils sont cités ?",
+    "question": "Quels outils favorisent l’exploration dans le corps d’un entretien ?",
     "choices": [
       "Interruption automatique de tout silence.",
       "Écoute active.",
-      "Il proscrit toute reformulation.",
+      "Interdire toute reformulation.",
       "Il proscrit l’observation des expressions non verbales.",
       "Jugement de valeur."
     ],
@@ -1497,7 +1497,7 @@
     "question": "Quelles actions appartiennent à la conclusion ?",
     "choices": [
       "Annoncer la fin.",
-      "Il demande d’éviter toute proposition de rencontre ultérieure.",
+      "Exclure systématiquement toute proposition de rencontre ultérieure.",
       "Synthétiser l’échange.",
       "Faire comme si tous les objectifs étaient atteints.",
       "Éviter de remercier le patient par principe."
@@ -1687,7 +1687,7 @@
       "Un lieu calme.",
       "Des interruptions permanentes.",
       "Des objectifs totalement cachés au patient.",
-      "La rencontre ne peut être utile que si le soignant est indisponible.",
+      "Proposer la rencontre uniquement lorsque le soignant est indisponible.",
       "Une posture qui juge systématiquement le patient."
     ],
     "answers": [
@@ -1724,13 +1724,14 @@
       "Une douleur importante.",
       "Une posture bienveillante.",
       "L’intimité du lieu.",
-      "Un lieu rendu volontairement très bruyant."
+      "Un environnement bruyant."
     ],
     "answers": [
-      1
+      1,
+      4
     ],
-    "explanation": "L’état clinique, la langue et l’environnement peuvent gêner l’entretien. Intimité et bienveillance figurent parmi les facteurs favorisants. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
-    "announcedCorrectCount": 1,
+    "explanation": "Une douleur importante et un environnement bruyant sont deux freins identifiés : ils diminuent la disponibilité ou perturbent la qualité des échanges. La bienveillance et l’intimité favorisent au contraire l’entretien. Une barrière linguistique peut aussi constituer un frein : elle n’est pas toujours sans effet.",
+    "announcedCorrectCount": 2,
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1832,7 +1833,7 @@
     "question": "Une rencontre devient difficile à cause de l’état du patient et du contexte. Quelles adaptations restent cohérentes ?",
     "choices": [
       "Conclure que le patient est forcément de mauvaise volonté.",
-      "Le refus de toute aide de l’équipe quelle que soit la situation.",
+      "Refuser toute aide de l’équipe, quelle que soit la difficulté.",
       "Réévaluer la disponibilité du patient.",
       "Poursuivre sans adaptation pour respecter le planning.",
       "Chercher un lieu plus approprié si possible."
