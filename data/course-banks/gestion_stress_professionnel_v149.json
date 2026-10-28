@@ -7,7 +7,7 @@
     "number": 1,
     "theme": "Bases et stresseurs professionnels",
     "difficulty": "easy",
-    "question": "À quoi correspond le stress dans le TD ?",
+    "question": "À quoi correspond la réaction de stress ?",
     "choices": [
       "Une preuve systématique d’incapacité professionnelle.",
       "Une réponse d’adaptation physiologique et psychologique.",
@@ -208,7 +208,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Combien de familles de RPS présente le TD ?",
+        "front": "Combien de familles de risques psychosociaux sont décrites ?",
         "answers": [
           "Six : intensité, émotions, autonomie, rapports sociaux, valeurs, insécurité."
         ],
@@ -260,7 +260,7 @@
     "number": 8,
     "theme": "Bases et stresseurs professionnels",
     "difficulty": "medium",
-    "question": "Quel raisonnement correspond au modèle stresseurs–ressources du TD ?",
+    "question": "Quel raisonnement correspond au modèle stresseurs–ressources ?",
     "choices": [
       "Le ressenti n’a aucun rôle.",
       "Une même contrainte peut être perçue différemment.",
@@ -371,7 +371,7 @@
     "number": 11,
     "theme": "Biologie, évaluation cognitive et coping",
     "difficulty": "easy",
-    "question": "Quelles sont les dimensions de la réaction de stress présentées dans le TD ?",
+    "question": "Quelles dimensions composent la réaction de stress ?",
     "choices": [
       "Uniquement administrative.",
       "Biologique ou physique.",
@@ -384,7 +384,7 @@
       2,
       3
     ],
-    "explanation": "Le TD distingue trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation.",
+    "explanation": "La réaction de stress se décrit selon trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -396,7 +396,7 @@
         "answers": [
           "Biologique, psychologique (cognitif/émotionnel) et comportemental."
         ],
-        "explanation": "Le TD distingue trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation."
+        "explanation": "La réaction de stress se décrit selon trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation."
       }
     ]
   },
@@ -420,7 +420,7 @@
       2,
       3
     ],
-    "explanation": "Le support distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol.",
+    "explanation": "La physiologie distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol.",
     "announcedCorrectCount": 2,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -432,7 +432,7 @@
         "answers": [
           "Adrénaline et noradrénaline, de la famille des catécholamines."
         ],
-        "explanation": "Le support distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol."
+        "explanation": "La physiologie distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol."
       }
     ]
   },
@@ -625,7 +625,7 @@
     "number": 18,
     "theme": "Biologie, évaluation cognitive et coping",
     "difficulty": "medium",
-    "question": "Quelles affirmations définissent le coping dans ce cours ?",
+    "question": "Quelles affirmations définissent le coping ?",
     "choices": [
       "Possibilité de comprendre, agir et s’autoréguler.",
       "Absence obligatoire de toute émotion.",
@@ -637,7 +637,7 @@
       0,
       2
     ],
-    "explanation": "Le coping concerne les façons de faire face. Le TD développe ressources et contrôle perçu, sans classification approfondie de styles à réciter.",
+    "explanation": "Le coping concerne les façons de faire face. La démarche de régulation développe ressources et contrôle perçu, sans classification approfondie de styles à réciter.",
     "announcedCorrectCount": 2,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -649,7 +649,7 @@
         "answers": [
           "Stratégies d’ajustement face à une situation vécue comme difficile."
         ],
-        "explanation": "Le coping concerne les façons de faire face. Le TD développe ressources et contrôle perçu, sans classification approfondie de styles à réciter."
+        "explanation": "Le coping concerne les façons de faire face. La démarche de régulation développe ressources et contrôle perçu, sans classification approfondie de styles à réciter."
       }
     ]
   },
@@ -784,7 +784,7 @@
       2,
       4
     ],
-    "explanation": "Le support aborde inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre.",
+    "explanation": "La réponse au stress peut comprendre inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -796,7 +796,7 @@
         "answers": [
           "Inhibition, explosion/agitation, évitement ou fuite."
         ],
-        "explanation": "Le support aborde inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre."
+        "explanation": "La réponse au stress peut comprendre inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre."
       }
     ]
   },
@@ -990,7 +990,7 @@
     "number": 28,
     "theme": "Émotions, comportement et stress dépassé",
     "difficulty": "medium",
-    "question": "Quelle différence entre stress dépassé et stress chronique est conforme au cours ?",
+    "question": "Quelle différence entre stress dépassé et stress chronique faut-il retenir ?",
     "choices": [
       "Le stress chronique peut se développer avec récupération insuffisante.",
       "Ce sont deux synonymes stricts.",
@@ -1077,7 +1077,7 @@
       2,
       4
     ],
-    "explanation": "Le cours insiste sur la différence entre interprétation et réalité. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude.",
+    "explanation": "Il faut distinguer les faits observables des interprétations. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1089,7 +1089,7 @@
         "answers": [
           "Identifier l’hypothèse, envisager d’autres causes et vérifier les faits."
         ],
-        "explanation": "Le cours insiste sur la différence entre interprétation et réalité. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude."
+        "explanation": "Il faut distinguer les faits observables des interprétations. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude."
       }
     ]
   },
@@ -1114,7 +1114,7 @@
       1,
       2
     ],
-    "explanation": "Le TD cite des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés.",
+    "explanation": "Les manifestations possibles comprennent des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1126,7 +1126,7 @@
         "answers": [
           "Concentration réduite, erreurs/oubli et perte d’élan."
         ],
-        "explanation": "Le TD cite des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés."
+        "explanation": "Les manifestations possibles comprennent des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés."
       }
     ]
   },
@@ -1151,7 +1151,7 @@
       1,
       3
     ],
-    "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent au cours. Les risques associés ne sont ni systématiques ni diagnostiques individuellement.",
+    "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent dans les signes habituels. Les risques associés ne sont ni systématiques ni diagnostiques individuellement.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1163,7 +1163,7 @@
         "answers": [
           "Fatigue, sommeil perturbé, douleurs et tensions musculosquelettiques."
         ],
-        "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent au cours. Les risques associés ne sont ni systématiques ni diagnostiques individuellement."
+        "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent dans les signes habituels. Les risques associés ne sont ni systématiques ni diagnostiques individuellement."
       }
     ]
   },
@@ -1188,7 +1188,7 @@
       1,
       3
     ],
-    "explanation": "Le TD énumère des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out.",
+    "explanation": "Les manifestations possibles comprennent des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1200,7 +1200,7 @@
         "answers": [
           "Irritabilité, retrait/agressivité et changement de consommation."
         ],
-        "explanation": "Le TD énumère des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out."
+        "explanation": "Les manifestations possibles comprennent des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out."
       }
     ]
   },
@@ -1285,7 +1285,7 @@
     "number": 36,
     "theme": "Stress chronique, burn-out et psychotraumatisme",
     "difficulty": "hard",
-    "question": "Une professionnelle multiplie les heures supplémentaires malgré une fatigue importante. Quels facteurs du TD peuvent entretenir le risque ?",
+    "question": "Une professionnelle multiplie les heures supplémentaires malgré sa fatigue. Quels facteurs peuvent entretenir son risque d’épuisement ?",
     "choices": [
       "Manque de récupération.",
       "Surinvestissement et difficulté à dire non.",
@@ -1298,7 +1298,7 @@
       1,
       3
     ],
-    "explanation": "Le support et les exemples oraux relient le sur-engagement, la recherche de reconnaissance et l’absence de repos à un risque accru d’épuisement.",
+    "explanation": "Le sur-engagement, la recherche excessive de reconnaissance et le manque de repos peuvent accroître le risque d’épuisement.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1310,7 +1310,7 @@
         "answers": [
           "Il pousse à continuer malgré fatigue et besoin de récupération."
         ],
-        "explanation": "Le support et les exemples oraux relient le sur-engagement, la recherche de reconnaissance et l’absence de repos à un risque accru d’épuisement."
+        "explanation": "Le sur-engagement, la recherche excessive de reconnaissance et le manque de repos peuvent accroître le risque d’épuisement."
       }
     ]
   },
@@ -1322,7 +1322,7 @@
     "number": 37,
     "theme": "Stress chronique, burn-out et psychotraumatisme",
     "difficulty": "hard",
-    "question": "Quels retentissements du burn-out sur les soins sont envisagés dans le TD ?",
+    "question": "Quels retentissements du burn-out sur les soins peut-on observer ?",
     "choices": [
       "Qualité de soins obligatoirement améliorée.",
       "Erreurs ou accidents plus probables.",
@@ -1335,7 +1335,7 @@
       3,
       4
     ],
-    "explanation": "Le cours aborde l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif.",
+    "explanation": "Les conséquences comprennent l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1347,7 +1347,7 @@
         "answers": [
           "Elle protège aussi la vigilance, la relation et la sécurité des soins."
         ],
-        "explanation": "Le cours aborde l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif."
+        "explanation": "Les conséquences comprennent l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif."
       }
     ]
   },
@@ -1372,7 +1372,7 @@
       2,
       3
     ],
-    "explanation": "Le TD mentionne une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT.",
+    "explanation": "La présentation des signes inclut une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1384,7 +1384,7 @@
         "answers": [
           "Souvenirs intrusifs, évitement et hyperréactivité possibles."
         ],
-        "explanation": "Le TD mentionne une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT."
+        "explanation": "La présentation des signes inclut une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT."
       }
     ]
   },
@@ -1432,7 +1432,7 @@
     "number": 40,
     "theme": "Stress chronique, burn-out et psychotraumatisme",
     "difficulty": "hard",
-    "question": "À propos du volet psychotraumatisme, quelles précautions correspondent au support ?",
+    "question": "Quelles précautions faut-il prendre pour interpréter des réactions après un événement potentiellement traumatisant ?",
     "choices": [
       "Le TD fournit un protocole de diagnostic infirmier complet du TSPT.",
       "Le figement exclut toute réaction traumatique.",
@@ -1453,7 +1453,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quel statut donner au volet psychotraumatisme du TD ?",
+        "front": "Pourquoi le psychotraumatisme nécessite-t-il une évaluation spécifique ?",
         "answers": [
           "Un aperçu non diagnostique, approfondi ultérieurement en psychopathologie."
         ],
@@ -1490,7 +1490,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Que mesure la double note 0–5 du TD ?",
+        "front": "À quoi correspondent les deux notes d’auto-évaluation 0–5 ?",
         "answers": [
           "Un ressenti personnel physique et psychique, sans portée diagnostique."
         ],
@@ -1506,7 +1506,7 @@
     "number": 42,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "medium",
-    "question": "Quels axes de connaissance de soi le TD propose-t-il d’observer ?",
+    "question": "Quels axes peut-on observer pour mieux connaître ses réactions au stress ?",
     "choices": [
       "Activité mentale.",
       "Sensibilité émotionnelle.",
@@ -1543,7 +1543,7 @@
     "number": 43,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "medium",
-    "question": "Dans la réflexion sur les besoins fondamentaux, quels besoins figurent dans le TD ?",
+    "question": "Quels besoins fondamentaux prendre en compte face au stress ?",
     "choices": [
       "Accomplissement.",
       "Appartenance et estime.",
@@ -1556,7 +1556,7 @@
       1,
       2
     ],
-    "explanation": "Le TD reprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites.",
+    "explanation": "L’analyse des besoins comprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1568,7 +1568,7 @@
         "answers": [
           "Physiologiques, sécurité, appartenance, estime, accomplissement."
         ],
-        "explanation": "Le TD reprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites."
+        "explanation": "L’analyse des besoins comprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites."
       }
     ]
   },
@@ -1593,7 +1593,7 @@
       3,
       4
     ],
-    "explanation": "Le support invite à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire.",
+    "explanation": "Une démarche de prévention peut inviter à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1605,7 +1605,7 @@
         "answers": [
           "À réfléchir à son équilibre et aux ajustements nécessaires."
         ],
-        "explanation": "Le support invite à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire."
+        "explanation": "Une démarche de prévention peut inviter à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire."
       }
     ]
   },
@@ -1617,7 +1617,7 @@
     "number": 45,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "medium",
-    "question": "Dans la terminologie propre à ce TD, la gestion primaire signifie…",
+    "question": "Dans une démarche de régulation avant, pendant et après le stress, la gestion primaire signifie…",
     "choices": [
       "Débriefer seulement après l’événement.",
       "Il exclut la prise en compte des ressources.",
@@ -1628,7 +1628,7 @@
     "answers": [
       4
     ],
-    "explanation": "Le cours utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources.",
+    "explanation": "Ce modèle utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources.",
     "announcedCorrectCount": 1,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1636,11 +1636,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Que signifie « primaire » dans les trois temps du TD ?",
+        "front": "Que désigne la gestion primaire du stress ?",
         "answers": [
           "Agir avant : préparation, prévention et ressources."
         ],
-        "explanation": "Le cours utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources."
+        "explanation": "Ce modèle utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources."
       }
     ]
   },
@@ -1665,7 +1665,7 @@
       1,
       2
     ],
-    "explanation": "Le TD recommande de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins.",
+    "explanation": "La régulation implique de de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1677,7 +1677,7 @@
         "answers": [
           "Se recentrer, exprimer sa difficulté et demander une aide adaptée."
         ],
-        "explanation": "Le TD recommande de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins."
+        "explanation": "La régulation implique de de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins."
       }
     ]
   },
@@ -1702,7 +1702,7 @@
       2,
       4
     ],
-    "explanation": "Le support propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles.",
+    "explanation": "Une démarche de régulation propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1714,7 +1714,7 @@
         "answers": [
           "Sas prolongé proposé dans le support ; micro-pause de 1–2 min évoquée à l’oral."
         ],
-        "explanation": "Le support propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles."
+        "explanation": "Une démarche de régulation propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles."
       }
     ]
   },
@@ -1726,7 +1726,7 @@
     "number": 48,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "medium",
-    "question": "Quelles propositions sur la cohérence cardiaque et l’ancrage sont fidèles au TD ?",
+    "question": "Quelles propositions sur la cohérence cardiaque et l’ancrage sont exactes ?",
     "choices": [
       "Ils sont des diagnostics médicaux.",
       "Ils remplacent toujours les actions sur les conditions de travail.",
@@ -1737,7 +1737,7 @@
     "answers": [
       3
     ],
-    "explanation": "Le cours présente respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle.",
+    "explanation": "Les stratégies de régulation comprennent respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle.",
     "announcedCorrectCount": 1,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -1745,11 +1745,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "À quoi sert l’ancrage dans ce TD ?",
+        "front": "À quoi sert l’ancrage pour réguler le stress ?",
         "answers": [
           "À se recentrer sur les appuis corporels et l’instant présent."
         ],
-        "explanation": "Le cours présente respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle."
+        "explanation": "Les stratégies de régulation comprennent respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle."
       }
     ]
   },
