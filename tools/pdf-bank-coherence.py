@@ -101,7 +101,30 @@ def validate_cards_written_recto_verso(text,rows):
     assert len(set(expected))==len(rows),'Doublons recto/verso dans la banque'
     assert sorted(actual)==sorted(expected),'Le PDF des 40 cartes diverge de la banque'
 
+def validate_cards_lexical_multi(text, rows):
+    # Contrat additif : 50 paires exactes contre toutes les flashcards de la banque.
+    cards=[f for q in rows for f in q.get('flashcards',[])]
+    markers=list(re.finditer('^CARTE ([0-9][0-9]) / ([0-9][0-9])'+chr(10),text,re.M))
+    assert [int(m.group(1)) for m in markers]==list(range(1,len(cards)+1)),'Cartes manquantes ou dupliquees'
+    assert all(int(m.group(2))==len(cards) for m in markers),'Comptage divergent'
+    actual=[]
+    for i,mark in enumerate(markers):
+        block=text[mark.end():markers[i+1].start() if i+1<len(markers) else len(text)]
+        question=block.split('QUESTION'+chr(10),1)
+        assert len(question)==2,'Question manquante carte '+str(i+1)
+        answer=question[1].split('RÉPONSE À MÉMORISER'+chr(10),1)
+        assert len(answer)==2,'Réponse manquante carte '+str(i+1)
+        last=answer[1].split('Réviser à l’oral : répondre avant de lire la correction.',1)
+        assert len(last)==2,'Fin de carte manquante '+str(i+1)
+        actual.append((norm(answer[0]),norm(last[0])))
+    expected=[(norm(f['front']),norm(' '.join(f['answers']))) for f in cards]
+    assert len(set(actual))==len(cards),'Doublons PDF'
+    assert len(set(expected))==len(cards),'Doublons banque'
+    assert sorted(actual)==sorted(expected),'PDF différent de la banque canonique'
+
 def validate_cards(text,rows):
+    if 'CARTE 01 / 50' in text:
+        return validate_cards_lexical_multi(text,rows)
     if re.search(r'(?m)^CARTE \d{2} · ',text):
         return validate_cards_theme_cards(text,rows)
     if re.search(r'(?m)^CARTE \d{2}[ \t]*—[ \t]*RECTO',text):
