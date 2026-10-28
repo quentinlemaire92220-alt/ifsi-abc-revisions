@@ -188,3 +188,17 @@ Le contrôle scientifique/pédagogique de toutes les sources, la revue graphique
 **Conclusion :** le GO propriétaire V5 reste valide et acquis, mais aucune démonstration de revue pédagogique exhaustive ni de revue graphique contractuelle complète n'existe encore. **PR draft ; pas de modification de `sheets-3.json` ou de `docs/course-deliveries.json`, pas de copie en Drive partagé, ni fusion de `main`**. Les trois anciennes fiches et 105 QCM / 93 cartes / 7 vocaux restent intacts. Toute nouvelle correction des octets V5 doit créer un candidat versionné, ne pas maquiller son identité ou son autorisation.
 
 Empreintes des deux rapports privés : index `f20091b66cb212833cf2190a943d4464ec84f66eb6fade4e9010e6ffe19a6c1b` ; constats `a3d02b3ac76584ac39ab38e2c8ca989d06cdee2ffca8b37170ca9bfa4ea445ea`. Aucun lien privé inséré dans ce dépôt.
+
+## Revue après dernier « Go » — contrôle par page, défaut confirmé du sommaire
+
+GO déjà obtenu sur la **V5 exacte** (SHA-256 `52caf6e3e56b9dfc07268ce44ec5b4736d18c01364fdda0444ca7d4a09413a2e`). Ne plus redemander cette approbation tant que les octets ne changent pas.
+
+- **82 rendus individuels effectués** : chaque page (41) est disponible en image à zoom 100 % et à 200 %. Analyse géométrique exhaustive : aucun span de texte hors feuille. **Attention : rendu automatique ≠ observation/validation humaine de chacun des 82 rendus** ; `all_pages_compared_at_100_and_200_percent` reste NON CERTIFIÉ.
+- **DÉFAUT DE SOMMAIRE REPRODUIT sur page 1 :** trois numéros **visibles** faux : « Pièges QCM p. 30 », « Synthèse générale p. 31 », « Définitions et mots-clés p. 33 ». Les vraies pages sont **32, 33 et 35** ; les 11 liens internes fonctionnent et ces trois dernières destinations sont bien 32/33/35. La couche de texte contient simultanément les numéros nouveaux invisibles, défaut pour la sélection/lecture vocale. **BLOQUANT STRUCTURE_AND_PAGINATION**. Corriger dans un PDF final, pas par une annotation trompeuse des métadonnées.
+- Petites étiquettes 8–8,8 pt présentes sur la couverture et un sous-titre secondaire des pages 35–41. Les distinguer du corps ≥ 9 pt et statuer selon le contrat sans effacer le fait.
+- **Continuité des transcriptions à vérifier :** PT03 se termine sur la phrase inachevée « Sauf si vous n'êtes plus en poste. C'est-à-dire que » (00:31:37), tandis que PT04 débute un autre sujet (biens). PT01 s'interrompt après 00:46:32 et PT02 reprend une autre situation. Cela ne prouve pas une perte de notions essentielles, mais exclut de certifier sans réserve l'exhaustivité des séquences orales.
+- La matrice préalable identifie 31 thèmes, 251 pages de sources officielles/historiques et 57 fenêtres orales. **Une indexation ne démontre pas le rapprochement sémantique individuel** avec les anciennes fiches. Le statut v1.49 `full_review_recorded` demeure interdit.
+
+**Preuves réservées au Drive privé (sans transcription, noms ni liens privés dans GitHub)** : 82 images 100/200 % archive SHA-256 `e47ae2fed20f53ecacdc2d0151057238188b1afd12300ede9e6c13095addafc4`, rapport circonstancié SHA-256 `be939a4d5c22528ca6d1f08ecda6f1c43f379bb08e1dfb5f156fa1eca2c804fd`.
+
+**Décision :** garder PR #268 **draft**, `main` et les trois fiches étudiantes inchangées, PDF V5 privé. Éviter de produire une V6 de correction fragmentaire : regrouper les corrections après clôture de toute la revue puis faire **une seule nouvelle validation sur les octets finaux**. L'accord V5 demeure enregistré.
