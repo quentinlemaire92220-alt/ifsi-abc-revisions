@@ -12082,7 +12082,7 @@
     "number": 24,
     "theme": "Émotions, comportement et stress dépassé",
     "difficulty": "medium",
-    "question": "Dans le cycle émotionnel décrit en TD, quelles étapes apparaissent ?",
+    "question": "Quelles étapes composent le cycle émotionnel à quatre temps ?",
     "choices": [
       "Phase de charge/excitation.",
       "Obligation de décharger devant tout patient.",
@@ -12672,9 +12672,9 @@
     "difficulty": "hard",
     "question": "Quelles précautions faut-il prendre pour interpréter des réactions après un événement potentiellement traumatisant ?",
     "choices": [
-      "Le TD fournit un protocole de diagnostic infirmier complet du TSPT.",
+      "Un protocole infirmier unique suffit à diagnostiquer le TSPT.",
       "Le figement exclut toute réaction traumatique.",
-      "Le chapitre est seulement survolé dans ce TD.",
+      "Les réactions immédiates ou différées nécessitent une analyse prudente.",
       "Une réaction différée ne définit pas à elle seule un TSPT.",
       "L’hyperréactivité peut faire partie des signes évoqués."
     ],
@@ -12683,7 +12683,7 @@
       3,
       4
     ],
-    "explanation": "L’intervenant annonce traiter ultérieurement la psychopathologie. La fiche et le QCM doivent rester descriptifs sans inventer de critères diagnostics.",
+    "explanation": "Les réactions post-traumatiques peuvent être immédiates ou différées. Elles nécessitent une évaluation appropriée, sans déduire un diagnostic de la seule présence de signes.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -12695,7 +12695,7 @@
         "answers": [
           "Un aperçu non diagnostique, approfondi ultérieurement en psychopathologie."
         ],
-        "explanation": "L’intervenant annonce traiter ultérieurement la psychopathologie. La fiche et le QCM doivent rester descriptifs sans inventer de critères diagnostics."
+        "explanation": "Les réactions post-traumatiques peuvent être immédiates ou différées. Elles nécessitent une évaluation appropriée, sans déduire un diagnostic de la seule présence de signes."
       }
     ]
   },
@@ -12707,7 +12707,7 @@
     "number": 41,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "easy",
-    "question": "À quoi sert l’auto-évaluation physique et psychique de 0 à 5 proposée en TD ?",
+    "question": "À quoi sert une auto-évaluation physique et psychique subjective sur une échelle de 0 à 5 ?",
     "choices": [
       "Distinguer état physique et état psychique.",
       "Repérer son état ressenti à un moment donné.",
@@ -12927,11 +12927,11 @@
     "number": 47,
     "theme": "Auto-évaluation, prévention et posture soignante",
     "difficulty": "hard",
-    "question": "Quelle distinction entre sas de transition et micro-pause respecte les sources ?",
+    "question": "Quelles distinctions sont pertinentes entre micro-pauses et sas de transition ?",
     "choices": [
-      "L’oral cite aussi de courtes pauses de 1 à 2 min entre deux patients.",
+      "Des micro-pauses de 1 à 2 minutes peuvent aider entre deux patients, si la situation le permet.",
       "Les deux indications constituent un protocole clinique fixe et contradictoire.",
-      "Le support écrit évoque un temps de transition d’environ 20 min ou plus.",
+      "Un sas de transition prolongé peut durer environ 20 minutes ou davantage.",
       "Toute pause est interdite dans les soins.",
       "Leurs durées dépendent du contexte de récupération."
     ],
@@ -12940,7 +12940,7 @@
       2,
       4
     ],
-    "explanation": "Une démarche de régulation propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles.",
+    "explanation": "Une micro-pause et un sas de transition prolongé sont deux temps de récupération possibles. Leur durée et leur faisabilité varient selon le contexte, sans protocole universel.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "official_support",
@@ -12952,7 +12952,7 @@
         "answers": [
           "Sas prolongé proposé dans le support ; micro-pause de 1–2 min évoquée à l’oral."
         ],
-        "explanation": "Une démarche de régulation propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles."
+        "explanation": "Une micro-pause et un sas de transition prolongé sont deux temps de récupération possibles. Leur durée et leur faisabilité varient selon le contexte, sans protocole universel."
       }
     ]
   },
@@ -12968,7 +12968,7 @@
     "choices": [
       "Ils sont des diagnostics médicaux.",
       "Ils remplacent toujours les actions sur les conditions de travail.",
-      "Le TD impose une durée chiffrée unique à tous.",
+      "La cohérence cardiaque exige toujours une durée chiffrée unique pour tous.",
       "Des exercices de régulation sont proposés.",
       "L’ancrage repose sur la perte de tout contact corporel."
     ],
