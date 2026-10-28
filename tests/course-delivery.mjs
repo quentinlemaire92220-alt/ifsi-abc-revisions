@@ -8,6 +8,7 @@ import {validateWrittenDelivery,validateWrittenPart} from './written-sheet-contr
 import {validateLeanQuestions,validateLeanFlashcards,isExplicitRecallPrompt} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
+import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
@@ -21,6 +22,11 @@ for(const c of manifest.courses){
  validateRevisionSheetSupplement(c.courseId,c,{sheets});
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
+ if(c.deliveryMode==='sheet_only_first_release'){
+  validateSheetOnlyFirstRelease(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocals,infographics:infos});
+  console.log('✅ '+c.courseId+': fiche écrite seule (autres supports non demandés)');
+  continue;
+ }
  if(c.publicationScope==='infographics_only'){
   // Publication complémentaire : ne PAS réexiger un dossier de cours refait,
   // un export de flashcards ou des illustrations locales pour un PDF externe.
