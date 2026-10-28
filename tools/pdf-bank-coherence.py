@@ -187,6 +187,71 @@ def validate_cards_theme_cards(text,rows):
         actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
         expected=f['front']+' VERSO — '+' '.join(f['answers'])+' POUR COMPRENDRE — '+f['explanation']
         assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
+def _stress_segments(text, pattern):
+    markers=list(re.finditer(pattern,text,re.M))
+    return [(int(m.group(1)),text[m.end():markers[i+1].start() if i+1<len(markers) else len(text)])
+            for i,m in enumerate(markers)]
+
+def _stress_clean(text, rows):
+    themes={q['theme'] for q in rows}
+    cleaned=[]
+    for line in text.splitlines():
+        item=line.strip()
+        if item.startswith('IFSI ABC') or re.fullmatch(r'GESTION DU STRESS\s*[·•]\s*PAGE\s+\d+\s*/\s*\d+',item):continue
+        if item in themes or re.fullmatch(r'\d+\s+(?:questions|corrigés|cartes)',item):continue
+        cleaned.append(line)
+    return '\n'.join(cleaned)
+
+def validate_stress_qcm(text,rows):
+    """Contrôle textuel littéral de 50 questions, 250 choix, clés et 50 corrigés."""
+    assert len(rows)==50,'Gestion du stress : 50 QCM attendus'
+    parts=text.split('Corrigés argumentés\n',1)
+    assert len(parts)==2,'Gestion du stress : séparation corrigés absente'
+    questions=_stress_segments(parts[0],r'^Q(\d{2})\s*$')
+    corrections=_stress_segments(parts[1],r'^Q(\d{2})\s*$')
+    expected=[q['number'] for q in rows]
+    assert [n for n,_ in questions]==expected,'Questions manquantes ou dupliquées'
+    assert [n for n,_ in corrections]==expected,'Corrigés manquants ou dupliqués'
+    levels={'easy':'Facile','medium':'Intermédiaire','hard':'Difficile'}
+    for q,(_,segment),(_,corrected) in zip(rows,questions,corrections):
+        intro=re.match(r'^\s*(Facile|Intermédiaire|Difficile)\s*[·•]\s*(\d+)\s+r[ée]ponses? attendues?\s*\n',segment)
+        assert intro,q['id']+': niveau ou cardinalité absent'
+        assert intro[1]==levels[q['difficulty']],q['id']+': difficulté différente'
+        assert int(intro[2])==len(q['answers'])==q['announcedCorrectCount'],q['id']+': nombre de réponses divergent'
+        area=segment[intro.end():]
+        choices=list(re.finditer(r'(?m)^([A-E])\.\s*$',area))
+        assert [m[1] for m in choices]==list('ABCDE'),q['id']+': cinq choix obligatoires'
+        assert norm(area[:choices[0].start()])==norm(q['question']),q['id']+': énoncé différent'
+        for i,m in enumerate(choices):
+            portion=area[m.end():choices[i+1].start() if i+1<len(choices) else len(area)]
+            assert norm(_stress_clean(portion,rows))==norm(q['choices'][i]),q['id']+': choix '+chr(65+i)+' différent'
+        m=re.search(r'(?m)^Bonnes? r[ée]ponses?\s*:\s*([A-E](?:,\s*[A-E]){0,2})\s*$',corrected)
+        assert m,q['id']+': clé absente'
+        assert norm(corrected[:m.start()])==norm(q['question']),q['id']+': énoncé corrigé différent'
+        assert m[1].replace(' ','').split(',')==[chr(65+i) for i in q['answers']],q['id']+': clé différente'
+        assert 'Propositions à écarter :' in corrected,q['id']+': justification distracteurs absente'
+        explanation,rejected=corrected[m.end():].split('Propositions à écarter :',1)
+        assert norm(explanation)==norm(q['explanation']),q['id']+': argumentation différente'
+        wrongs=[i for i in range(5) if i not in q['answers']]
+        marks=list(re.finditer(r'(?m)^([A-E])\s+[—-]\s+',rejected))
+        assert [mark[1] for mark in marks]==[chr(65+i) for i in wrongs],q['id']+': distracteurs omis'
+        for i,mark in enumerate(marks):
+            part=rejected[mark.end():marks[i+1].start() if i+1<len(marks) else len(rejected)]
+            assert norm(_stress_clean(part,rows))==norm(q['choices'][wrongs[i]]),q['id']+': distracteur modifié'
+
+def validate_stress_cards(text,rows):
+    assert len(rows)==50,'Gestion du stress : 50 cartes attendues'
+    blocks=_stress_segments(text,r'^CARTE (\d{2})\s*$')
+    assert [n for n,_ in blocks]==list(range(1,51)),'Cartes absentes ou dupliquées'
+    pairs=[]
+    for q,(_,block) in zip(rows,blocks):
+        assert len(q['flashcards'])==1,q['id']+': une carte par QCM'
+        card=q['flashcards'][0]
+        assert len(card['answers'])==1,q['id']+': verso unique requis'
+        pair=(norm(card['front']),norm(card['answers'][0]))
+        assert norm(_stress_clean(block,rows))==norm(' '.join(pair)),q['id']+': carte PDF différente'
+        pairs.append(pair)
+    assert len(set(pairs))==50,'Cartes identiques dupliquées'
 def check(course):
     for role,asset in course['publicArtifacts'].items():
         path=Path(asset['path'])
@@ -201,7 +266,7 @@ def check(course):
             text=body(doc)
         if role in ('qcm','flashcards'):
             rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
+            (validate_stress_qcm if role=='qcm' else validate_stress_cards)(text,rows) if course['courseId']=='gestion_stress_professionnel' else (validate_qcm if role=='qcm' else validate_cards)(text,rows)
         print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
 def main():
     p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()

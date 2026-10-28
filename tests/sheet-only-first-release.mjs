@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {validateSheetSource} from './dual-sheet-contract.mjs';
+import {validateStressAddonRuntime} from './stress-qcm-flashcards-addon.mjs';
 
 const hash=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x);
 const BASE='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
@@ -31,16 +32,17 @@ export function validateSheetOnlyFirstRelease(course,delivery,sheets,{questions=
   tag+'priorités orales non séparées');
  assert.equal(delivery.writtenCoverage.explanationsNotOvercompressed,true,
   tag+'explications insuffisantes');
- assert.ok(delivery.blockers?.some(x=>x.resource==='qcm'&&x.reason==='not_requested'),
+ if(delivery.qcmFlashcardsSupplement)validateStressAddonRuntime(course,delivery,sheets,{questions,deck});
+ else assert.ok(delivery.blockers?.some(x=>x.resource==='qcm'&&x.reason==='not_requested'),
   tag+'QCM absent non signalé');
- assert.ok(delivery.blockers?.some(x=>x.resource==='flashcards'&&x.reason==='not_requested'),
+ if(!delivery.qcmFlashcardsSupplement)assert.ok(delivery.blockers?.some(x=>x.resource==='flashcards'&&x.reason==='not_requested'),
   tag+'flashcards absentes non signalées');
  assert.deepEqual(delivery.infographicResourceIds||[],[],tag+'infographies artificielles');
  assert.deepEqual(delivery.vocals||[],[],tag+'vocaux artificiels');
  assert.equal(delivery.generatedImageCount,0,tag+'images interdites pour la fiche écrite');
  assert.equal(delivery.schematics,'none',tag+'schémas interdits pour la fiche écrite');
- assert.equal((questions||[]).filter(x=>x.courseId===id).length,0,tag+'QCM non autorisés');
- assert.equal((deck||[]).filter(x=>x.courseId===id).length,0,tag+'flashcards non autorisées');
+ if(!delivery.qcmFlashcardsSupplement)assert.equal((questions||[]).filter(x=>x.courseId===id).length,0,tag+'QCM non autorisés');
+ if(!delivery.qcmFlashcardsSupplement)assert.equal((deck||[]).filter(x=>x.courseId===id).length,0,tag+'flashcards non autorisées');
  assert.equal((vocals||[]).filter(x=>x.courseId===id).length,0,tag+'audios non autorisés');
  assert.equal((infographics||[]).filter(x=>x.courseId===id).length,0,tag+'infographies non autorisées');
  assert.equal(sheets.filter(x=>x.courseId===id).length,1,tag+'une fiche unique attendue');

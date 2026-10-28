@@ -1,5 +1,5 @@
 {
-  "version": "8.30.148",
+  "version": "8.30.149",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Gestion du stress UE B3.2.1 : fiche seule v1.49 (17 pages, 50 définitions). QCM, flashcards, vocaux non demandés ; les 57 cours historiques sont conservés.",
+  "note": "Gestion du stress UE B3.2.1 : 50 QCM et 50 flashcards, +46 nouvelles notions et 4 versions contextualisées dans le vocabulaire. Aucune entrée ou fiche historique modifiée.",
   "expectedTotals": {
     "courses": 58,
     "sheets": 76,
@@ -17,7 +17,7 @@
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1853
+    "qcmRuntimeMin": 1903
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -254,6 +254,17 @@
       "qcmNew": 0,
       "flashcardsNew": 0,
       "sourceStatus": "official_support"
+    },
+    {
+      "courseId": "gestion_stress_professionnel",
+      "release": "8.30.149",
+      "scope": "qcm_flashcards_vocabulary_only",
+      "qcm": 50,
+      "flashcards": 50,
+      "vocabularyNew": 50,
+      "vocabularyLinked": 0,
+      "sheetUnchanged": true,
+      "vocabularyContextualized": 4
     }
   ],
   "auditLogicVersion": "8.30.10",

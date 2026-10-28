@@ -35,6 +35,8 @@ const approvedCommunication=read('docs/course-deliveries.json').courses.some(c=>
 const allowedNewLexiconCourses=new Set(['responsabilite_exercice_professionnel']);
 if(approvedCommunication)allowedNewLexiconCourses.add('d1_communication_td1');
 const publicationApprovals=read('docs/course-deliveries.json').courses;
+const stressAddon=publicationApprovals.find(c=>c.courseId==='gestion_stress_professionnel')?.qcmFlashcardsSupplement;
+if(stressAddon?.publicationApproval?.status==='approved'&&stressAddon.publicationApproval?.authorization==='explicit_go_publication'&&stressAddon.publicationApproval?.scope==='qcm_flashcards_vocabulary_only')allowedNewLexiconCourses.add('gestion_stress_professionnel');
 for(const delivery of publicationApprovals){
  // Extensions du lexique uniquement pour un lot explicitement approuvé.
  // La vérification du digest et de la revue du cours reste obligatoire dans les TNR de publication.

@@ -26,8 +26,14 @@ assert.ok(sw.includes('src="./${name}?v='+meta.build+'"'),'Modules de secours SW
 for(const d of read('docs/course-deliveries.json').courses.filter(d=>d.publicArtifacts)){
  for(const a of Object.values(d.publicArtifacts))verifyPublicArtifact(d,pagesOrigin+pagesPrefix+a.path);
  if(d.deliveryMode==='sheet_only_first_release'){
-  assert.equal(d.publicationScope,'revision_sheet_only','Fiche seule : GO limité absent');
-  assert.deepEqual(Object.keys(d.publicArtifacts),['sheet'],'Fiche seule : asset QCM inventé');
+  assert.equal(d.publicationScope,'revision_sheet_only','Fiche initiale : GO limité absent');
+  if(d.qcmFlashcardsSupplement){
+   assert.deepEqual(Object.keys(d.publicArtifacts),['sheet','qcm','flashcards'],'Addon : deux PDFs attendus');
+   const rows=read(d.qcmBank);
+   assert.equal(rows.length,50);
+   assert.equal(rows.reduce((n,q)=>n+(q.flashcards||[]).length,0),50);
+   assert.deepEqual(rows,read('questions-5.json').filter(q=>q.courseId===d.courseId),'Miroir nouveau cours divergent');
+  }else assert.deepEqual(Object.keys(d.publicArtifacts),['sheet'],'Fiche seule : asset QCM inventé');
   assert.equal(d.status,'partial','Fiche seule présentée comme cours complet');
   continue;
  }

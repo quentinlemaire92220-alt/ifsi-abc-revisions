@@ -3341,7 +3341,9 @@
         "checked": true
       },
       "artifactSha256s": {
-        "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6"
+        "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+        "gestion_stress_qcm_50_v149": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
+        "gestion_stress_flashcards_50_v149": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3350,6 +3352,18 @@
           "sha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
           "pageCount": 17,
           "artifactId": "gestion_stress_fiche_v149_20261028"
+        },
+        "qcm": {
+          "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_QCM_50_Corriges_v149.pdf",
+          "sha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
+          "pageCount": 24,
+          "artifactId": "gestion_stress_qcm_50_v149"
+        },
+        "flashcards": {
+          "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
+          "sha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
+          "pageCount": 8,
+          "artifactId": "gestion_stress_flashcards_50_v149"
         }
       },
       "publishedVerification": {
@@ -3416,18 +3430,57 @@
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
             "privateEvidenceSha256": "95fdee090aa8528c2d4436b5c9c0b1101bfc6b2372ce34912fd909900cf0fe23"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
+            "pageCount": 24,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T14:28:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e"
           }
         }
       },
       "blockers": [
-        {
-          "resource": "qcm",
-          "reason": "not_requested"
-        },
-        {
-          "resource": "flashcards",
-          "reason": "not_requested"
-        },
         {
           "resource": "vocals",
           "reason": "not_requested"
@@ -3444,6 +3497,65 @@
         "approvedAt": "2026-10-28T13:17:00+01:00",
         "bundleSha256": "0f0c353980594f71e38d93123d4e65445a7ff9a4007617bbf18d1fceb21652aa",
         "scopeLimit": "fiche_ecrite_v149_17p_uniquement"
+      },
+      "qcmBank": "data/course-banks/gestion_stress_professionnel_v149.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 50,
+      "qcmFlashcardsSupplement": {
+        "version": 1,
+        "status": "owner_accepted",
+        "courseId": "gestion_stress_professionnel",
+        "scope": "qcm_flashcards_vocabulary_only",
+        "qcmCount": 50,
+        "flashcardCount": 50,
+        "termsAdded": 50,
+        "termsReused": 0,
+        "bankPath": "data/course-banks/gestion_stress_professionnel_v149.json",
+        "assetIds": [
+          "gestion_stress_qcm_50_v149",
+          "gestion_stress_flashcards_50_v149"
+        ],
+        "sourceBasis": "Support officiel 65 diapositives + PT01/PT02 + fiche v1.49, matrice 59 notions",
+        "ownerReview": {
+          "status": "owner_accepted",
+          "reviewBasis": "GO explicite de validation et publication du lot complémentaire (QCM/flashcards/vocabulaire)",
+          "reviewDate": "2026-10-28",
+          "qcmPdf": {
+            "sha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
+            "pageCount": 24,
+            "renderedAllPages": true
+          },
+          "flashcardsPdf": {
+            "sha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
+            "pageCount": 8,
+            "renderedAllPages": true
+          }
+        },
+        "publishedVerification": {
+          "status": "PENDING_DEPLOYMENT",
+          "source": "github_pages_file_staged",
+          "qcmSha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
+          "flashcardsSha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35"
+        },
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "qcm_flashcards_vocabulary_only",
+          "approvedAt": "2026-10-28T14:28:00+01:00",
+          "bundleSha256": "80ebdba3427472f87f5df3656bbd75640493ae88c9dca03488dfc81d23e220d1"
+        },
+        "qaPrivateReportSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e",
+        "termsContextualized": 4
+      },
+      "flashcardPdfReview": {
+        "status": "owner_accepted",
+        "pdfSha256": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
+        "pageCount": 8,
+        "allPagesRendered": true,
+        "ownerAcceptance": "GO_publication_complement_explicit",
+        "privateEvidenceSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e",
+        "cardCount": 50
       }
     }
   ],
