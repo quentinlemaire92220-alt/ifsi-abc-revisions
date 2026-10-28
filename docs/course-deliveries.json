@@ -3924,13 +3924,13 @@
         }
       ],
       "publicationApproval": {
-        "status": "awaiting_bundle_digest",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-28T19:24:00+01:00",
-        "bundleSha256": null,
+        "bundleSha256": "1768bca8a7c2feabcdd5d3e4ef3709c7e30f487a1c329917335682ae0aee3fb1",
         "provisionalOnly": true,
-        "approvalBasis": "GO explicite du 28/10/2026 : validation graphique et demande de mise à jour de l'application. PDF SHA-256 exacts contrôlés en privé, cours provisoire faute de support officiel.",
+        "approvalBasis": "Validation graphique et GO MAJ explicitement donnés le 28 octobre 2026 ; trois PDF finalisés, octets et empreintes contrôlés. Statut scientifique provisoire conservé.",
         "mergeDeploymentCondition": "TNR verts et vérification des fichiers réellement servis par GitHub Pages"
       }
     }
