@@ -30,6 +30,56 @@ Pour **chaque notion importante**, conserver une ligne comprenant au minimum :
 
 Conserver cette matrice, les transcriptions, les horodatages, les rapports et les approbations **uniquement dans le Drive privé propriétaire** ; ne pas les commiter, y compris en PJ de PR. Un résumé public peut contenir uniquement les règles et le résultat de contrôles non sensibles.
 
+## Interprétation des six statuts de la matrice (charte corrigée)
+
+| Statut | Interprétation / exigence |
+| --- | --- |
+| Conservée | Notion et précision pédagogique conservées, sans perte de sens. |
+| Enrichie | Notion conservée et explication, exemple, raisonnement ou nuance ajoutés. |
+| Corrigée | Écart démontré et justification documentée ; ne pas recopier une erreur. |
+| Fusionnée | Contenu entièrement repris dans une autre section, localisation indiquée. |
+| Manquante / insuffisante | Notion absente ou seulement nommée alors qu’elle demande une explication : blocage. |
+| À vérifier / source tronquée | Contradiction, attribution orale ou source incomplète : réserve explicite, pas de PASS exhaustif. |
+
+**Contrôle automatique de livraison** : le préflight et la CI exécutent
+`node tools/pedagogical-non-regression-v149.mjs --base <SHA_COMPLET>` sur
+les fiches **nouvelles ou modifiées dans GitHub**. La livraison doit contenir un reçu
+`pedagogicalNonRegression` strictement **non sensible** : empreinte du PDF candidat,
+empreinte de l'index de preuves **privé**, revue des sources, comparaison historique,
+profondeur, différences, date avec fuseau et statut de couverture.
+Le contrôle refuse les reçus manquants ou incohérents, les anciennes fiches non
+comparées et un statut « complet » alors que les sources demeurent limitées.
+Il ne réalise **aucune comparaison sémantique** : la matrice et le journal complets,
+ainsi que la décision humaine, doivent être contrôlés dans le Drive privé.
+Les fiches historiques inchangées ne sont pas réévaluées par ce test ; il ne
+peut pas détecter une modification de PDF distant non versionnée sur GitHub.
+
+**Exemple fictif (ne pas reprendre les empreintes)** pour une revue complète :
+
+```json
+{
+  "pedagogicalNonRegression": {
+    "contract": "ifsi_pedagogical_non_regression_v149",
+    "sheetSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "privateEvidenceSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "reviewedAt": "2026-10-28T13:00:00+01:00",
+    "sourceInventory": "reviewed",
+    "sourceCoverage": "complete",
+    "inheritanceReview": "compared",
+    "depthReview": "reviewed",
+    "differencesReview": "reviewed",
+    "decision": "full_review_recorded"
+  }
+}
+```
+
+Pour un **premier cours sans antécédent**, `inheritanceReview` peut valoir
+`not_applicable_new_course`. Pour une **publication provisoire documentée** :
+`sourceCoverage: "limited"`, `decision: "scoped_provisional_review_recorded"`,
+`status: "partial"` et `pedagogicalValidated: false` dans le manifeste.
+Ces valeurs n'autorisent **aucun GO automatique** et ne suffisent jamais à
+certifier une source exhaustive ou une revue médicale indépendante.
+
 ## Deux contrôles pédagogiques distincts
 
 **A. Couverture des sources :** toutes les notions importantes, objectifs, nuances et exemples pertinents des sources réellement accessibles doivent être vérifiables dans la nouvelle fiche ou faire l'objet d'une fusion/correction justifiée.
