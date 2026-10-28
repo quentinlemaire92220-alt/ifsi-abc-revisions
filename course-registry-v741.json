@@ -1,5 +1,5 @@
 {
-  "version": "8.30.151",
+  "version": "8.30.152",
   "courses": [
     {
       "id": "biomolecules",
@@ -1343,6 +1343,48 @@
           "type": "flashcards",
           "label": "50 flashcards VIH — PROVISOIRE (11 pages)",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf"
+        }
+      ]
+    },
+    {
+      "id": "entretien_infirmier",
+      "label": "L’entretien infirmier — oral à confirmer",
+      "aliases": [
+        "L’entretien infirmier",
+        "Entretien infirmier",
+        "UE D1.1 S1 — L’entretien infirmier",
+        "Communication et entretien infirmier"
+      ],
+      "domain": "D",
+      "ue": "D1.1",
+      "teachingUnit": "D1.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": true,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Support officiel de 28 diapositives rapproché de 17 thèmes de la fiche V3 ; transcriptions PT01/PT02 consultées, sans preuve de comparaison exhaustive avec les enregistrements. Exemples oraux et attribution des locuteurs à confirmer. Aucun MP3 publié.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V3.pdf",
+      "qcmPdfQuestionCount": 50,
+      "flashcardTarget": 50,
+      "authoredFlashcards": true,
+      "audioStatus": "awaiting_review",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "type": "revision",
+          "label": "Fiche de révision V3 — 13 pages",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V3.pdf"
+        },
+        {
+          "type": "qcm",
+          "label": "50 QCM corrigés V3 — 17 pages",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V3.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "50 flashcards V4 — 9 pages",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V4.pdf"
         }
       ]
     }

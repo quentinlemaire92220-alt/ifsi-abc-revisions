@@ -1,34 +1,4 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": [
-    {
-      "courseId": "entretien_infirmier",
-      "ue": "D1.1 S1",
-      "title": "L’entretien infirmier",
-      "partId": "p01",
-      "lifecycle": "preparation",
-      "validated": false,
-      "studentPublication": false,
-      "approval": null,
-      "sourceAudit": {
-        "officialSupport": "received_unpublished",
-        "oralParts": 2,
-        "oralStatus": "unverified",
-        "oralCoverageExhaustive": false,
-        "scientificReview": "pending",
-        "graphicOwnerReview": "pending",
-        "audioListeningReview": "pending"
-      },
-      "artifacts": {
-        "questions": 50,
-        "flashcards": 50,
-        "glossaryTerms": 0,
-        "vocalMp3": 0
-      },
-      "privateBankPaths": {
-        "questions": "data/course-preparations/entretien_infirmier.json"
-      },
-      "notes": "Production technique privée réalisée, intégration étudiante bloquée par la revue pédagogique complète et l'acceptation graphique des PDF. Les 5 MP3 produits restent non validés par écoute ; aucune diffusion ou déclaration de publication. GO de mise à jour de l’application reçu le 28/10/2026, sans déclaration de revue graphique."
-    }
-  ]
+  "courses": []
 }
