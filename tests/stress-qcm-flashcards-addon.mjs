@@ -14,7 +14,7 @@ export function validateStressAddonRuntime(course,delivery,sheets,{questions=[],
  assert.equal(a.scope,'qcm_flashcards_vocabulary_only');
  assert.equal(a.status,'owner_accepted');
  assert.equal(a.qcmCount,50);assert.equal(a.flashcardCount,50);
- assert.equal(a.termsAdded,46);assert.equal(a.termsReused,4);
+ assert.equal(a.termsAdded,50);assert.equal(a.termsReused,0);assert.equal(a.termsContextualized,4);
  assert.equal(delivery.qcmCount,50);assert.equal(delivery.flashcardCount,50);
  assert.equal(delivery.vocabularyCount,50);
  assert.equal(delivery.qcmBank,a.bankPath);
@@ -61,7 +61,11 @@ export function validateStressAddonRuntime(course,delivery,sheets,{questions=[],
  }
  equal(balance,{easy:10,medium:25,hard:15},'Repartition des difficultes differente');
  if(questions.length)equal(questions.filter(x=>x.courseId===id),bank,'Miroir questions-5 ou runtime divergent');
- if(deck.length)assert.equal(deck.filter(x=>x.courseId===id).length,50,'Cartes runtime non exposees');
+ if(deck.length){
+  const authored=deck.filter(x=>x.courseId===id&&x.qid?.startsWith('gestion_stress_v149_')&&x.authored===true);
+  assert.equal(authored.length,50,'Les 50 cartes redigees ne sont pas exposees');
+  assert.equal(new Set(authored.map(x=>x.qid)).size,50,'Carte explicite dupliquee');
+ }
  assert.equal(sheets.filter(s=>s.courseId===id).length,1,'Fiche unique historique perdue');
  return {qcm:50,flashcards:50,source:'official_support'};
 }
@@ -85,7 +89,9 @@ export function validateStressAddonChange(prior,delivery,oldData,newData,digest)
  for(const k of ['sheets','infographics','vocals'])equal(oldData[k].filter(x=>x.courseId===id),newData[k].filter(x=>x.courseId===id),'Anciennes ressources modifiees '+k);
  const before=oldData.registry.courses.find(x=>x.id===id),after=newData.registry.courses.find(x=>x.id===id);
  assert.ok(before&&after);
- const stripCourse=c=>{const x={...c};delete x.additionalDocuments;delete x.sourceNote;return x;};
+ const stripCourse=c=>{const x={...c};delete x.additionalDocuments;delete x.sourceNote;delete x.flashcardTarget;delete x.authoredFlashcards;return x;};
+ assert.equal(after.flashcardTarget,50,'Cinquante cartes redigees a exposer');
+ assert.equal(after.authoredFlashcards,true,'Cartes redigees prioritaires');
  equal(stripCourse(before),stripCourse(after),'Cours historique restructure');
  equal(after.additionalDocuments.slice(0,before.additionalDocuments.length),before.additionalDocuments,'Documents historiques retires');
  assert.equal(after.additionalDocuments.length,before.additionalDocuments.length+2,'Deux PDFs uniquement autorises');
@@ -99,7 +105,8 @@ export function validateStressAddonChange(prior,delivery,oldData,newData,digest)
   links++;const now={...term,courseIds:term.courseIds.filter(x=>x!==id)};
   equal(now,old,'Ancienne definition modifiee '+term.id);
  }
- assert.equal(adds,46);assert.equal(links,4);
+ assert.equal(adds,50);assert.equal(links,0);
+ assert.equal(afterTerms.filter(x=>/—/.test(x.term)).length,4,'Quatre notions anciennes contextualisees sans modifier leurs cours');
  assert.equal(a.publicationApproval?.status,'approved');
  assert.equal(a.publicationApproval?.authorization,'explicit_go_publication');
  assert.equal(a.publicationApproval?.scope,'qcm_flashcards_vocabulary_only');
