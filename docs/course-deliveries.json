@@ -3090,7 +3090,7 @@
       "artifactSha256s": {
         "fievre_paludisme_sheet_public_candidate": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
         "fievre_paludisme_qcm_public_candidate": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd",
-        "fievre_paludisme_flashcards_public_candidate": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d"
+        "fievre_paludisme_flashcards_public_candidate": "82e9081cbc574a09dac62c6dc390008d23e18c6f4e36767a248039bebdc869fe"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -3112,7 +3112,7 @@
         },
         "flashcards": {
           "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Flashcards_50_Provisoire.pdf",
-          "sha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+          "sha256": "82e9081cbc574a09dac62c6dc390008d23e18c6f4e36767a248039bebdc869fe",
           "pageCount": 25,
           "artifactId": "fievre_paludisme_flashcards_public_candidate"
         }
@@ -3136,9 +3136,14 @@
           "resource": "scientific_review",
           "reason": "pending",
           "detail": "BMR, prophylaxie et méthodes diagnostiques : réserves documentaires."
+        },
+        {
+          "resource": "support",
+          "reason": "official_support_missing",
+          "detail": "Support écrit officiel indisponible ; 50 captures et une transcription seulement."
         }
       ],
-      "flashcardPublicAssetSha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+      "flashcardPublicAssetSha256": "82e9081cbc574a09dac62c6dc390008d23e18c6f4e36767a248039bebdc869fe",
       "visualOwnerReview": {
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
@@ -3151,7 +3156,7 @@
           "fievre_paludisme_qcm_p01": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd"
         },
         "acceptanceBasis": "GO après présentation des PDF de 14 et 13 pages. Contrôle graphique sur les fichiers finaux ; sans prétention de revue médicale.",
-        "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+        "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a"
       },
       "templateConformance": {
         "contract": "ifsi_pdf_template_v3",
@@ -3191,7 +3196,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+            "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a"
           },
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
@@ -3227,17 +3232,25 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+            "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a"
           }
         }
       },
       "flashcardPdfReview": {
         "status": "operator_checked",
-        "pdfSha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+        "pdfSha256": "82e9081cbc574a09dac62c6dc390008d23e18c6f4e36767a248039bebdc869fe",
         "pageCount": 25,
         "allPagesRendered": true,
         "ownerAcceptance": "not_individually_attested",
-        "basis": "Les 50 réponses sont issues de la banque de vocabulaire du cours, sans nouveaux faits médicaux."
+        "basis": "Les 50 réponses sont issues de la banque de vocabulaire du cours, sans nouveaux faits médicaux.",
+        "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a"
+      },
+      "sourceBasis": {
+        "kind": "oral_transcript",
+        "nativeSupportAvailable": false,
+        "reconciled": false,
+        "transcriptCount": 1,
+        "captureCount": 50
       }
     }
   ],
