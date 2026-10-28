@@ -7195,6 +7195,18 @@
         "d1_relation_soignant_soigne_ecoute_active"
       ],
       "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "fievre_palu_bmr_p01",
+      "term": "BMR",
+      "theme": "Fièvre au retour de voyage et paludisme",
+      "definition": "Bactérie multirésistante à plusieurs familles d’antibiotiques, pouvant être portée sans infection clinique.",
+      "distinction": "Le portage de BMR n’est pas un paludisme et ne signifie pas nécessairement une infection clinique.",
+      "etymologie": "Sigle BMR : B signifie bactérie, M signifie multi et R signifie résistante.",
+      "courseIds": [
+        "fievre_retour_voyage_paludisme"
+      ],
+      "sourceType": "transcription_orale"
     }
   ]
 }
