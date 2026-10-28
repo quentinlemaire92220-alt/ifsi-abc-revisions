@@ -2677,14 +2677,20 @@
       "visualOwnerReview": {
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
-        "method": "all_pages_compared_at_100_and_200_percent",
+        "method": "pdf_all_pages_checked",
         "pagesChecked": 11,
         "reviewedPdfSha256s": {
           "a1_tgs_td_written_p01": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
         },
         "reviewedAt": "2026-10-28T16:16:00+01:00",
         "reviewerDecision": "explicit_graphic_acceptance",
-        "acceptanceBasis": "Utilisateur : « Validé », le 28 octobre 2026, en réponse au lien vers le PDF 11 pages corrigé. Preuves privées des 22 rendus conservées sur Google Drive."
+        "acceptanceBasis": "Utilisateur : « Validé », le 28 octobre 2026, en réponse au lien vers le PDF 11 pages corrigé. Preuves privées des 22 rendus conservées sur Google Drive.",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        }
       },
       "blockers": [
         {
@@ -2700,9 +2706,9 @@
         "approvedAt": "2026-10-28T18:25:00+01:00",
         "mergeDeploymentCondition": "all_tnr_green",
         "provisionalOnly": true,
-        "bundleSha256": "047e2229641df1d1fdc9b50656326321d644002366ee3ff5dd97860158530c78",
+        "bundleSha256": "6e248cf160fd6d037eba0784f7e085230abf5cec66b74b9fd12255d92415ccb5",
         "approvalBasis": "L'utilisateur a explicitement répondu « Go publication » le 28 octobre 2026 après présentation du périmètre exact de la PR #266, V8.30.150 build 8450, fiche de 11 pages et de son statut provisoire. Autorisation de fusion/déploiement conditionnelle aux tests complets verts.",
-        "reviewNote": "L'accord graphique porte sur le PDF de SHA-256 4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d. Les 40 QCM et 40 flashcards historiques sont conservés à l'identique. La source audio d'origine n'a pas été contrôlée et le cours reste partial/provisional."
+        "reviewNote": "L'accord graphique porte sur le PDF de SHA-256 4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d. Les 40 QCM et 40 flashcards historiques sont conservés à l'identique. La source audio d'origine n'a pas été contrôlée et le cours reste partial/provisional. Format de reçu historique de revue visuelle complété sans changer la fiche, avec tous les critères déjà contrôlés. Le digest du package est recalculé après ajout des critères."
       },
       "publicArtifacts": {
         "sheet": {
