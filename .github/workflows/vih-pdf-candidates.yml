@@ -1,0 +1,65 @@
+name: VIH PDF - reconstruction PRIVÉE (pas de publication)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/vih_pdf_rebuild_candidates.py'
+      - 'data/course-banks/vih_b13_20261027.json'
+      - '.github/workflows/vih-pdf-candidates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-private-candidates:
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'work/vih-pdf-v3-candidates-20261028'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer les dépendances de rendu (modèles inchangés)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-lato
+          python -m pip install PyMuPDF==1.26.7 reportlab==4.4.9 Pillow
+      - name: Générer dans un dossier non public uniquement
+        run: python tools/vih_pdf_rebuild_candidates.py --out /tmp/ifsi_vih_pdf_private
+      - name: Contrôle technique objectif des nouveaux PDF
+        run: |
+          set +e
+          python tools/pdf-template-v3.py /tmp/ifsi_vih_pdf_private/VIH_Fiche_V3_CANDIDAT.pdf --role sheet --technical-only --report /tmp/ifsi_vih_pdf_private/FICHE_controle_v3.json
+          sheet=$?
+          python tools/pdf-template-v3.py /tmp/ifsi_vih_pdf_private/VIH_QCM_50_V3_CANDIDAT.pdf --role qcm --technical-only --report /tmp/ifsi_vih_pdf_private/QCM_controle_v3.json
+          qcm=$?
+          python tools/pdf-graphics-v2.py /tmp/ifsi_vih_pdf_private/VIH_Flashcards_50_V2_CANDIDAT.pdf --kind flashcards --report /tmp/ifsi_vih_pdf_private/FLASHCARDS_controle_v2.json
+          cards=$?
+          printf 'fiche_v3=%s\nqcm_v3=%s\nflashcards_v2=%s\n' "$sheet" "$qcm" "$cards" | tee /tmp/ifsi_vih_pdf_private/CODES_CONTROLE.txt
+          exit 0
+      - name: Rendre toutes les pages en privé (100 % et 200 %)
+        if: always()
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          root=Path('/tmp/ifsi_vih_pdf_private')
+          for pdf in root.glob('*CANDIDAT.pdf'):
+              for zoom in (1,2):
+                  folder=root/'rendus'/pdf.stem/('100pc' if zoom==1 else '200pc')
+                  folder.mkdir(parents=True,exist_ok=True)
+                  with fitz.open(pdf) as doc:
+                      for n,page in enumerate(doc,1):
+                          page.get_pixmap(matrix=fitz.Matrix(zoom,zoom),alpha=False).save(folder/f'{n:03d}.png')
+          PY
+      - name: Archiver les brouillons pour revue privée (aucune mutation de Pages)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vih-pdf-candidats-prives-${{ github.sha }}
+          path: /tmp/ifsi_vih_pdf_private
+          retention-days: 7
+          if-no-files-found: warn
