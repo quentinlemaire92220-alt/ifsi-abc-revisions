@@ -187,7 +187,6 @@ def validate_cards_theme_cards(text,rows):
         actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
         expected=f['front']+' VERSO — '+' '.join(f['answers'])+' POUR COMPRENDRE — '+f['explanation']
         assert norm(actual)==norm(expected),q['id']+': recto/verso/explication PDF différents'
-
 def _stress_segments(text, pattern):
     markers=list(re.finditer(pattern,text,re.M))
     return [(int(m.group(1)),text[m.end():markers[i+1].start() if i+1<len(markers) else len(text)])
@@ -198,180 +197,61 @@ def _stress_clean(text, rows):
     cleaned=[]
     for line in text.splitlines():
         item=line.strip()
-        if item.startswith('IFSI ABC') or re.fullmatch(r'GESTION DU STRESS\s*[·•]\s*PAGE\s+\d+\s*/\s*\d+',item):
-            continue
-        if item in themes or re.fullmatch(r'\d+\s+(?:questions|corrigés|cartes)',item):
-            continue
+        if item.startswith('IFSI ABC') or re.fullmatch(r'GESTION DU STRESS\s*[·•]\s*PAGE\s+\d+\s*/\s*\d+',item):continue
+        if item in themes or re.fullmatch(r'\d+\s+(?:questions|corrigés|cartes)',item):continue
         cleaned.append(line)
     return '\n'.join(cleaned)
 
-def validate_stress_qcm(text, rows):
-    """Contrôle littéral des 50 énoncés, 250 propositions, clés, explications et distracteurs."""
-    assert len(rows)==50,'Gestion du stress : banque de 50 QCM attendue'
+def validate_stress_qcm(text,rows):
+    """Contrôle textuel littéral de 50 questions, 250 choix, clés et 50 corrigés."""
+    assert len(rows)==50,'Gestion du stress : 50 QCM attendus'
     parts=text.split('Corrigés argumentés\n',1)
-    assert len(parts)==2,'Gestion du stress : séparation des corrigés absente'
-    questions=_stress_segments(parts[0],r'^Q(\d{2})\s*
-    for role,asset in course['publicArtifacts'].items():
-        path=Path(asset['path'])
-        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
-        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
-        assert not check_document(path),'Marque technique étudiant'
-        with fitz.open(path) as doc:
-            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
-            assert len(doc)==asset['pageCount'],'Pagination différente'
-            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
-            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
-            text=body(doc)
-        if role in ('qcm','flashcards'):
-            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            ((validate_stress_qcm if role=='qcm' else validate_stress_cards) if course['courseId']=='gestion_stress_professionnel' else (validate_qcm if role=='qcm' else validate_cards))(text,rows)
-        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
-def main():
-    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
-    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
-    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
-    assert selected,'Aucun contrat PDF sélectionné'
-    for c in selected:check(c)
-if __name__=='__main__':main()
-)
-    corrections=_stress_segments(parts[1],r'^Q(\d{2})\s*
-    for role,asset in course['publicArtifacts'].items():
-        path=Path(asset['path'])
-        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
-        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
-        assert not check_document(path),'Marque technique étudiant'
-        with fitz.open(path) as doc:
-            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
-            assert len(doc)==asset['pageCount'],'Pagination différente'
-            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
-            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
-            text=body(doc)
-        if role in ('qcm','flashcards'):
-            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
-        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
-def main():
-    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
-    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
-    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
-    assert selected,'Aucun contrat PDF sélectionné'
-    for c in selected:check(c)
-if __name__=='__main__':main()
-)
+    assert len(parts)==2,'Gestion du stress : séparation corrigés absente'
+    questions=_stress_segments(parts[0],r'^Q(\d{2})\s*$')
+    corrections=_stress_segments(parts[1],r'^Q(\d{2})\s*$')
     expected=[q['number'] for q in rows]
-    assert [n for n,_ in questions]==expected,'Questions QCM omises ou dupliquées'
-    assert [n for n,_ in corrections]==expected,'Corrigés QCM omis ou dupliqués'
-    mapping={'easy':'Facile','medium':'Intermédiaire','hard':'Difficile'}
-    for q,(number,segment),(_,corrected) in zip(rows,questions,corrections):
+    assert [n for n,_ in questions]==expected,'Questions manquantes ou dupliquées'
+    assert [n for n,_ in corrections]==expected,'Corrigés manquants ou dupliqués'
+    levels={'easy':'Facile','medium':'Intermédiaire','hard':'Difficile'}
+    for q,(_,segment),(_,corrected) in zip(rows,questions,corrections):
         intro=re.match(r'^\s*(Facile|Intermédiaire|Difficile)\s*[·•]\s*(\d+)\s+r[ée]ponses? attendues?\s*\n',segment)
-        assert intro,q['id']+': niveau et cardinalité manquants'
-        assert intro.group(1)==mapping[q['difficulty']],q['id']+': difficulté PDF différente'
-        assert int(intro.group(2))==len(q['answers'])==q['announcedCorrectCount'],q['id']+': nombre de réponses incohérent'
-        question_area=segment[intro.end():]
-        choices=list(re.finditer(r'(?m)^([A-E])\.\s*
-    for role,asset in course['publicArtifacts'].items():
-        path=Path(asset['path'])
-        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
-        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
-        assert not check_document(path),'Marque technique étudiant'
-        with fitz.open(path) as doc:
-            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
-            assert len(doc)==asset['pageCount'],'Pagination différente'
-            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
-            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
-            text=body(doc)
-        if role in ('qcm','flashcards'):
-            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
-        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
-def main():
-    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
-    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
-    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
-    assert selected,'Aucun contrat PDF sélectionné'
-    for c in selected:check(c)
-if __name__=='__main__':main()
-,question_area))
-        assert [m.group(1) for m in choices]==list('ABCDE'),q['id']+': cinq choix absents'
-        assert norm(question_area[:choices[0].start()])==norm(q['question']),q['id']+': énoncé divergent'
+        assert intro,q['id']+': niveau ou cardinalité absent'
+        assert intro[1]==levels[q['difficulty']],q['id']+': difficulté différente'
+        assert int(intro[2])==len(q['answers'])==q['announcedCorrectCount'],q['id']+': nombre de réponses divergent'
+        area=segment[intro.end():]
+        choices=list(re.finditer(r'(?m)^([A-E])\.\s*$',area))
+        assert [m[1] for m in choices]==list('ABCDE'),q['id']+': cinq choix obligatoires'
+        assert norm(area[:choices[0].start()])==norm(q['question']),q['id']+': énoncé différent'
         for i,m in enumerate(choices):
-            portion=question_area[m.end():choices[i+1].start() if i+1<len(choices) else len(question_area)]
-            assert norm(_stress_clean(portion,rows))==norm(q['choices'][i]),q['id']+': proposition '+chr(65+i)+' divergente'
-        m=re.search(r'(?m)^Bonnes? r[ée]ponses?\s*:\s*([A-E](?:,\s*[A-E]){0,2})\s*
-    for role,asset in course['publicArtifacts'].items():
-        path=Path(asset['path'])
-        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
-        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
-        assert not check_document(path),'Marque technique étudiant'
-        with fitz.open(path) as doc:
-            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
-            assert len(doc)==asset['pageCount'],'Pagination différente'
-            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
-            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
-            text=body(doc)
-        if role in ('qcm','flashcards'):
-            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
-        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
-def main():
-    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
-    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
-    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
-    assert selected,'Aucun contrat PDF sélectionné'
-    for c in selected:check(c)
-if __name__=='__main__':main()
-,corrected)
-        assert m,q['id']+': clé manquante'
-        assert norm(corrected[:m.start()])==norm(q['question']),q['id']+': énoncé corrigé divergent'
-        assert m.group(1).replace(' ','').split(',')==[chr(65+i) for i in q['answers']],q['id']+': clé PDF différente'
-        assert 'Propositions à écarter :' in corrected,q['id']+': distracteurs non explicités'
+            portion=area[m.end():choices[i+1].start() if i+1<len(choices) else len(area)]
+            assert norm(_stress_clean(portion,rows))==norm(q['choices'][i]),q['id']+': choix '+chr(65+i)+' différent'
+        m=re.search(r'(?m)^Bonnes? r[ée]ponses?\s*:\s*([A-E](?:,\s*[A-E]){0,2})\s*$',corrected)
+        assert m,q['id']+': clé absente'
+        assert norm(corrected[:m.start()])==norm(q['question']),q['id']+': énoncé corrigé différent'
+        assert m[1].replace(' ','').split(',')==[chr(65+i) for i in q['answers']],q['id']+': clé différente'
+        assert 'Propositions à écarter :' in corrected,q['id']+': justification distracteurs absente'
         explanation,rejected=corrected[m.end():].split('Propositions à écarter :',1)
-        assert norm(explanation)==norm(q['explanation']),q['id']+': justification PDF différente'
+        assert norm(explanation)==norm(q['explanation']),q['id']+': argumentation différente'
         wrongs=[i for i in range(5) if i not in q['answers']]
-        wrong_marks=list(re.finditer(r'(?m)^([A-E])\s+[—-]\s+',rejected))
-        assert [m.group(1) for m in wrong_marks]==[chr(65+i) for i in wrongs],q['id']+': distracteurs divergents'
-        for i,m in enumerate(wrong_marks):
-            txt=rejected[m.end():wrong_marks[i+1].start() if i+1<len(wrong_marks) else len(rejected)]
-            assert norm(_stress_clean(txt,rows))==norm(q['choices'][wrongs[i]]),q['id']+': détail distracteur modifié'
+        marks=list(re.finditer(r'(?m)^([A-E])\s+[—-]\s+',rejected))
+        assert [mark[1] for mark in marks]==[chr(65+i) for i in wrongs],q['id']+': distracteurs omis'
+        for i,mark in enumerate(marks):
+            part=rejected[mark.end():marks[i+1].start() if i+1<len(marks) else len(rejected)]
+            assert norm(_stress_clean(part,rows))==norm(q['choices'][wrongs[i]]),q['id']+': distracteur modifié'
 
 def validate_stress_cards(text,rows):
     assert len(rows)==50,'Gestion du stress : 50 cartes attendues'
-    markers=_stress_segments(text,r'^CARTE (\d{2})\s*
-    for role,asset in course['publicArtifacts'].items():
-        path=Path(asset['path'])
-        assert path.is_relative_to('assets') and '..' not in path.parts,'Chemin hors assets'
-        assert hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'SHA PDF différent'
-        assert not check_document(path),'Marque technique étudiant'
-        with fitz.open(path) as doc:
-            assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
-            assert len(doc)==asset['pageCount'],'Pagination différente'
-            assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
-            assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
-            text=body(doc)
-        if role in ('qcm','flashcards'):
-            rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
-        print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
-def main():
-    p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
-    courses=json.loads(Path('docs/course-deliveries.json').read_text(encoding='utf8'))['courses']
-    selected=[c for c in courses if c.get('publicArtifacts') and (not a.course or c['courseId']==a.course)]
-    assert selected,'Aucun contrat PDF sélectionné'
-    for c in selected:check(c)
-if __name__=='__main__':main()
-)
-    assert [n for n,_ in markers]==list(range(1,51)),'Cartes imprimées manquantes ou dupliquées'
+    blocks=_stress_segments(text,r'^CARTE (\d{2})\s*$')
+    assert [n for n,_ in blocks]==list(range(1,51)),'Cartes absentes ou dupliquées'
     pairs=[]
-    for q,(_,segment) in zip(rows,markers):
-        assert len(q['flashcards'])==1,q['id']+': carte unique attendue'
+    for q,(_,block) in zip(rows,blocks):
+        assert len(q['flashcards'])==1,q['id']+': une carte par QCM'
         card=q['flashcards'][0]
-        assert len(card['answers'])==1,q['id']+': verso unique attendu'
-        expected=norm(card['front']+' '+card['answers'][0])
-        observed=norm(_stress_clean(segment,rows))
-        assert observed==expected,q['id']+': verso ou recto divergent'
-        pairs.append((norm(card['front']),norm(card['answers'][0])))
+        assert len(card['answers'])==1,q['id']+': verso unique requis'
+        pair=(norm(card['front']),norm(card['answers'][0]))
+        assert norm(_stress_clean(block,rows))==norm(' '.join(pair)),q['id']+': carte PDF différente'
+        pairs.append(pair)
     assert len(set(pairs))==50,'Cartes identiques dupliquées'
-
 def check(course):
     for role,asset in course['publicArtifacts'].items():
         path=Path(asset['path'])
@@ -386,7 +266,7 @@ def check(course):
             text=body(doc)
         if role in ('qcm','flashcards'):
             rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-            (validate_qcm if role=='qcm' else validate_cards)(text,rows)
+            (validate_stress_qcm if role=='qcm' else validate_stress_cards)(text,rows) if course['courseId']=='gestion_stress_professionnel' else (validate_qcm if role=='qcm' else validate_cards)(text,rows)
         print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
 def main():
     p=argparse.ArgumentParser();p.add_argument('--course');a=p.parse_args()
