@@ -95,6 +95,15 @@ export function validatePartChanges(before, after, previousManifest, currentMani
       }
     }
     if(item.kind==='vocal'&&approvedAudio.has(item.id))return false;
+    if(item.kind==='qcm'&&item.courseId==='gestion_stress_professionnel'){
+      const d=currentManifest.courses.find(c=>c.courseId===item.courseId),a=d?.qcmFlashcardsSupplement;
+      if(a?.status==='owner_accepted'&&a.publicationApproval?.status==='approved'&&a.publicationApproval?.authorization==='explicit_go_publication'&&a.publicationApproval?.scope==='qcm_flashcards_vocabulary_only'){
+        const qs=after.questions.filter(q=>q.courseId===item.courseId);
+        assert.equal(qs.length,50,'Complément stress de 50 questions attendu');
+        assert.ok(qs.some(q=>q.id===item.id&&q.sourceKind==='official_support'&&q.announcedCorrectCount===q.answers.length),'Question stress non sourcée');
+        return false;
+      }
+    }
     if (item.kind!=='qcm')return true;
     const sup=supplementsByQuestion.get(item.id);
     if (!sup)return true;

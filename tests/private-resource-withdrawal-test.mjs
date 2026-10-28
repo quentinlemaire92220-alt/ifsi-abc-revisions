@@ -96,8 +96,12 @@ function preserveApprovedFirstManifestAddition(oldCourse,nextCourse,nextDelivery
  assert.deepEqual(nextDelivery.partDeliveries[0].vocalIds,[],'Nouveaux MP3 non validés');
 }
 
-const approvedUpdates=new Set(currentMan.courses.filter(c=>
- !isDeepStrictEqual(c.publicationApproval,oldMan.courses.find(p=>p.courseId===c.courseId)?.publicationApproval)).map(c=>c.courseId));
+const approvedUpdates=new Set(currentMan.courses.filter(c=>{
+ const old=oldMan.courses.find(p=>p.courseId===c.courseId);
+ if(!isDeepStrictEqual(c.publicationApproval,old?.publicationApproval))return true;
+ const a=c.qcmFlashcardsSupplement;
+ return !!(c.courseId==='gestion_stress_professionnel'&&!old?.qcmFlashcardsSupplement&&a?.publicationApproval?.status==='approved'&&a?.publicationApproval?.authorization==='explicit_go_publication'&&a?.publicationApproval?.scope==='qcm_flashcards_vocabulary_only');
+}).map(c=>c.courseId));
 // Des MP3 nouveaux sont acceptés ici seulement si leur ajout est strictement
 // indépendant du dossier pédagogique et signé par un nouveau GO audio.
 const prevVocals=before('vocals.json'),nextVocals=disk('vocals.json');
@@ -174,7 +178,17 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  else {
   const previousDelivery=oldMan.courses.find(c=>c.courseId===course.id);
   const nextDelivery=currentMan.courses.find(c=>c.courseId===course.id);
-  if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
+  if(course.id==='gestion_stress_professionnel'&&nextDelivery?.qcmFlashcardsSupplement){
+   assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.status,'approved');
+   assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.scope,'qcm_flashcards_vocabulary_only');
+   assert.deepEqual(course.additionalDocuments.slice(0,oldCourse.additionalDocuments.length),oldCourse.additionalDocuments,'Fiche historique perdue');
+   assert.equal(course.additionalDocuments.length,oldCourse.additionalDocuments.length+2,'Seulement deux PDFs nouveaux');
+   const clean=x=>{const y={...x};for(const k of ['additionalDocuments','sourceNote','flashcardTarget','authoredFlashcards'])delete y[k];return y;};
+   assert.deepEqual(clean(course),clean(oldCourse),'Cours historique muté hors QCM/cartes');
+   assert.equal(course.flashcardTarget,50);
+   assert.equal(course.authoredFlashcards,true);
+  }
+  else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
  }
  Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));

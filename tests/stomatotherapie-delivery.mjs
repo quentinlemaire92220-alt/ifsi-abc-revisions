@@ -52,7 +52,8 @@ const revisedIds=new Set(revisions.filter(c=>c.deliveryQuestionScope!=='declared
 const newPartIds=new Set(revisions.filter(c=>c.deliveryQuestionScope==='declared_parts').flatMap(c=>c.partDeliveries.flatMap(p=>p.qcmQuestionIds))); 
 const firstReleaseIds=new Set(read('docs/course-deliveries.json').courses.filter(c=>
  c.deliveryMode==='source_limited_first_release'||
- (c.deliveryMode==='first_release'&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')
+ (c.deliveryMode==='first_release'&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')||
+ (c.courseId==='gestion_stress_professionnel'&&c.qcmFlashcardsSupplement?.publicationApproval?.status==='approved'&&c.qcmFlashcardsSupplement.publicationApproval.authorization==='explicit_go_publication'&&c.qcmFlashcardsSupplement.publicationApproval.scope==='qcm_flashcards_vocabulary_only')
  ).map(c=>c.courseId));
 const old=questions.filter(q=>q.courseId!=='stomatotherapie'&&q.courseId!=="droits_patients"&&!revisedIds.has(q.courseId)&&!newPartIds.has(q.id)&&!firstReleaseIds.has(q.courseId));
 const supplements=read('docs/qcm-supplements.json').supplements;
