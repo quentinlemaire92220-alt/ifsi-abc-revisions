@@ -2596,7 +2596,7 @@
       "pedagogicalValidated": false,
       "provisionalReason": "Support officiel du TD reçu ; rapprochement avec la transcription et la fiche ancienne réalisé. Revue pédagogique et comparaison avec l'audio original encore à finaliser.",
       "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+      "publicAssetSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
       "qcmPublicAssetSha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
       "flashcardPublicAssetSha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
       "sheetResourceId": "a1_tgs_td_written_p01",
@@ -2644,7 +2644,7 @@
       },
       "writtenPdfAudit": {
         "status": "TECHNICAL_PASS_FINAL_REVIEW_PENDING",
-        "pdfSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+        "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
         "pageSize": "A4",
         "pageCount": 11,
         "allPagesRendered": true,
@@ -2660,27 +2660,27 @@
       },
       "writtenModelReference": "communication_written_v5.3_2026-10-24",
       "lexicon": {
-        "termCount": 37,
+        "termCount": 30,
         "textSelectable": true,
         "checked": true
       },
       "artifactSha256s": {
-        "tgs_td_sheet_public_candidate": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+        "tgs_td_sheet_public_candidate": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
         "tgs_td_qcm_public_candidate": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
         "tgs_td_flash_public_candidate": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f"
       },
       "publishedVerification": {
         "status": "NOT_DEPLOYED",
         "source": "draft_candidate",
-        "pdfSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63"
+        "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
       },
       "visualOwnerReview": {
-        "status": "layout_accepted_full_page_review_pending",
+        "status": "updated_candidate_requires_new_review",
         "reference": "communication_written_v5.3_2026-10-24",
         "reviewedPdfSha256s": {
-          "a1_tgs_td_written_p01": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63"
+          "a1_tgs_td_written_p01": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
         },
-        "ownerFeedback": "Maquette à six chapitres validée dans la conversation le 28 octobre 2026. La revue exhaustive à 100/200 % n'est pas attestée."
+        "ownerFeedback": "La maquette précédente avait été acceptée ; correction typographique et navigation PDF ajoutées après échec TNR, nouvelle empreinte soumise à relecture."
       },
       "blockers": [
         {
@@ -2707,7 +2707,7 @@
       "publicArtifacts": {
         "sheet": {
           "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
-          "sha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+          "sha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
           "pageCount": 11,
           "artifactId": "tgs_td_sheet_public_candidate"
         },
@@ -2725,7 +2725,7 @@
         }
       },
       "sourceBasis": {
-        "kind": "official_td_support_and_transcript",
+        "kind": "oral_transcript",
         "nativeSupportAvailable": true,
         "reconciled": false,
         "transcriptCount": 1,
@@ -2755,10 +2755,10 @@
           "sheet": {
             "templateId": "communication_written_v5.3_2026-10-24",
             "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
-            "artifactSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+            "artifactSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
             "pageCount": 11,
             "pagesChecked": [],
-            "status": "final_visual_review_pending",
+            "status": "updated_candidate_requires_owner_review",
             "method": "technical_render_100_and_200_percent",
             "checks": {
               "MODEL_COMPARISON": "PENDING",
