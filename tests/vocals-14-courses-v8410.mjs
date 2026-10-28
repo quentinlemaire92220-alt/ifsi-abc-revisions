@@ -9,7 +9,11 @@ const expected={genetique:3,calculs_doses_mathematiques:8,histoire_profession_in
 assert.equal(added.length,35);assert.ok(vocals.length>=166);
 assert.equal(createHash('sha256').update(JSON.stringify(vocals.slice(0,131))).digest('hex'),'08bd5180accfa4ccb1395e948b6ebac5c793648e04a51e1fa414e8c3df874531','Les 131 enregistrements antérieurs ont changé');
 assert.equal(new Set(vocals.map(v=>v.id)).size,vocals.length,'Identifiant audio dupliqué');
-assert.equal(new Set(vocals.map(v=>v.driveId)).size,vocals.length,'Fichier Drive dupliqué');
+const withDrive=vocals.filter(v=>v.driveId);
+assert.equal(new Set(withDrive.map(v=>v.driveId)).size,withDrive.length,'Fichier Drive duplique');
+const hostedOnly=vocals.filter(v=>!v.driveId);
+assert.ok(hostedOnly.every(v=>v.localAudio&&fs.existsSync(v.localAudio)),'MP3 Pages manquant');
+assert.equal(new Set(hostedOnly.map(v=>v.localAudio)).size,hostedOnly.length,'MP3 Pages duplique');
 const approved=validateAudioSupplements(manifest,{registry,vocals});
 for(const[cid,count]of Object.entries(expected)){
  const group=added.filter(v=>v.courseId===cid),course=registry.courses.find(c=>c.id===cid);
