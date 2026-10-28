@@ -1357,8 +1357,7 @@
       "distinction": "L'adrénaline agit notamment lors de la réponse immédiate au stress.",
       "etymologie": "cort- (cortex, couche externe) + -ol (suffixe chimique d'alcool).",
       "courseIds": [
-        "systeme_endocrinien",
-        "gestion_stress_professionnel"
+        "systeme_endocrinien"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2050,8 +2049,7 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere",
-        "gestion_stress_professionnel"
+        "ethique_infirmiere"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -4455,8 +4453,7 @@
       "distinction": "Un évitement isolé ne permet pas de diagnostiquer un trouble anxieux.",
       "theme": "Santé mentale — repérage et prévention",
       "courseIds": [
-        "pssm",
-        "gestion_stress_professionnel"
+        "pssm"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6163,8 +6160,7 @@
       "distinction": "La discordance entre paroles et attitudes peut fragiliser la confiance.",
       "etymologie": "Du latin congruere : correspondre, être en accord.",
       "courseIds": [
-        "d1_communication_td1",
-        "gestion_stress_professionnel"
+        "d1_communication_td1"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -7759,6 +7755,54 @@
       "definition": "Repères d’un continuum de réactions : tension ou mobilisation excessive versus difficulté à se mobiliser.",
       "distinction": "Continuum de réaction, non étiquette diagnostique définitive.",
       "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_18",
+      "term": "Cortisol — réponse au stress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Glucocorticoïde sécrété par le cortex surrénalien dans la réponse au stress.",
+      "distinction": "Hormone de la réponse au stress, différente des catécholamines de l’alerte immédiate.",
+      "etymologie": "Terme lié à la corticosurrénale, zone productrice de cortisol.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_26",
+      "term": "Évitement — réaction au stress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réponse consistant à se soustraire à une situation ou à son rappel.",
+      "distinction": "Réaction de retrait à distinguer d’une protection adaptée et réfléchie.",
+      "etymologie": "Dérivé du verbe « éviter », qui indique l’action de se soustraire.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_45",
+      "term": "Congruence — posture en situation de stress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Cohérence entre son vécu, ce que l’on exprime et sa posture relationnelle.",
+      "distinction": "Cohérence du vécu, de la parole et de l’attitude relationnelle.",
+      "etymologie": "Du latin congruere, signifiant convenir, être en accord.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_46",
+      "term": "Empathie — régulation relationnelle",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Capacité à chercher à comprendre le vécu d’autrui tout en gardant sa place.",
+      "distinction": "Comprendre le vécu de l’autre ne signifie pas absorber sa souffrance ou perdre ses propres limites.",
+      "etymologie": "Du grec em- (dans) et pathos (ressenti ou souffrance).",
       "courseIds": [
         "gestion_stress_professionnel"
       ],

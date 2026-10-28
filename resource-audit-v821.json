@@ -7,7 +7,7 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Complément du cours Gestion du stress UE B3.2.1 : +50 QCM interactifs, +50 flashcards et +46 entrées de vocabulaire, 4 rattachements sans doublons. Fiche de révision v1.49 et anciens cours préservés.",
+  "note": "Gestion du stress UE B3.2.1 : 50 QCM et 50 flashcards, +46 nouvelles notions et 4 versions contextualisées dans le vocabulaire. Aucune entrée ou fiche historique modifiée.",
   "expectedTotals": {
     "courses": 58,
     "sheets": 76,
@@ -261,9 +261,10 @@
       "scope": "qcm_flashcards_vocabulary_only",
       "qcm": 50,
       "flashcards": 50,
-      "vocabularyNew": 46,
-      "vocabularyLinked": 4,
-      "sheetUnchanged": true
+      "vocabularyNew": 50,
+      "vocabularyLinked": 0,
+      "sheetUnchanged": true,
+      "vocabularyContextualized": 4
     }
   ],
   "auditLogicVersion": "8.30.10",

@@ -3342,8 +3342,8 @@
       },
       "artifactSha256s": {
         "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
-        "gestion_stress_qcm_50_v149": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
-        "gestion_stress_flashcards_50_v149": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0"
+        "gestion_stress_qcm_50_v149": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
+        "gestion_stress_flashcards_50_v149": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3355,13 +3355,13 @@
         },
         "qcm": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_QCM_50_Corriges_v149.pdf",
-          "sha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+          "sha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
           "pageCount": 24,
           "artifactId": "gestion_stress_qcm_50_v149"
         },
         "flashcards": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
-          "sha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+          "sha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
           "pageCount": 8,
           "artifactId": "gestion_stress_flashcards_50_v149"
         }
@@ -3434,7 +3434,7 @@
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
             "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-            "artifactSha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+            "artifactSha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
             "pageCount": 24,
             "pagesChecked": [
               1,
@@ -3476,7 +3476,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179"
+            "privateEvidenceSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517"
           }
         }
       },
@@ -3509,8 +3509,8 @@
         "scope": "qcm_flashcards_vocabulary_only",
         "qcmCount": 50,
         "flashcardCount": 50,
-        "termsAdded": 46,
-        "termsReused": 4,
+        "termsAdded": 50,
+        "termsReused": 0,
         "bankPath": "data/course-banks/gestion_stress_professionnel_v149.json",
         "assetIds": [
           "gestion_stress_qcm_50_v149",
@@ -3522,12 +3522,12 @@
           "reviewBasis": "GO explicite de validation et publication du lot complémentaire (QCM/flashcards/vocabulaire)",
           "reviewDate": "2026-10-28",
           "qcmPdf": {
-            "sha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+            "sha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
             "pageCount": 24,
             "renderedAllPages": true
           },
           "flashcardsPdf": {
-            "sha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+            "sha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
             "pageCount": 8,
             "renderedAllPages": true
           }
@@ -3535,8 +3535,8 @@
         "publishedVerification": {
           "status": "PENDING_DEPLOYMENT",
           "source": "github_pages_file_staged",
-          "qcmSha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
-          "flashcardsSha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0"
+          "qcmSha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
+          "flashcardsSha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629"
         },
         "publicationApproval": {
           "status": "approved",
@@ -3545,15 +3545,16 @@
           "approvedAt": "2026-10-28T14:28:00+01:00",
           "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
         },
-        "qaPrivateReportSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179"
+        "qaPrivateReportSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517",
+        "termsContextualized": 4
       },
       "flashcardPdfReview": {
         "status": "owner_accepted",
-        "pdfSha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+        "pdfSha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
         "pageCount": 8,
         "allPagesRendered": true,
         "ownerAcceptance": "GO_publication_complement_explicit",
-        "privateEvidenceSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179",
+        "privateEvidenceSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517",
         "cardCount": 50
       }
     }
