@@ -3015,7 +3015,7 @@
     {
       "courseId": "fievre_retour_voyage_paludisme",
       "part": "01",
-      "validated": false,
+      "validated": true,
       "status": "partial",
       "deliveryMode": "source_limited_first_release",
       "packFormat": "written_v1",
@@ -3089,7 +3089,8 @@
       },
       "artifactSha256s": {
         "fievre_paludisme_sheet_public_candidate": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
-        "fievre_paludisme_qcm_public_candidate": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd"
+        "fievre_paludisme_qcm_public_candidate": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd",
+        "fievre_paludisme_flashcards_public_candidate": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
@@ -3108,14 +3109,22 @@
           "sha256": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd",
           "pageCount": 13,
           "artifactId": "fievre_paludisme_qcm_public_candidate"
+        },
+        "flashcards": {
+          "path": "assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Flashcards_50_Provisoire.pdf",
+          "sha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+          "pageCount": 25,
+          "artifactId": "fievre_paludisme_flashcards_public_candidate"
         }
       },
       "publicationApproval": {
-        "status": "pending_final_bundle_review",
+        "status": "pending_digest",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": null,
-        "bundleSha256": null
+        "approvedAt": "2026-10-28T11:22:00+01:00",
+        "bundleSha256": null,
+        "provisionalOnly": true,
+        "approvalBasis": "GO publication renouvelé et GO graphique pour les deux PDF présentés."
       },
       "blockers": [
         {
@@ -3127,13 +3136,109 @@
           "resource": "scientific_review",
           "reason": "pending",
           "detail": "BMR, prophylaxie et méthodes diagnostiques : réserves documentaires."
-        },
-        {
-          "resource": "graphic_owner_review",
-          "reason": "pending",
-          "detail": "PDF V3 corrigé, en attente du contrôle officiel sur ces nouveaux octets et acceptation graphique du propriétaire."
         }
-      ]
+      ],
+      "flashcardPublicAssetSha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 27,
+        "reviewedAt": "2026-10-28T11:22:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "reviewedPdfSha256s": {
+          "fievre_paludisme_written_p01": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
+          "fievre_paludisme_qcm_p01": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd"
+        },
+        "acceptanceBasis": "GO après présentation des PDF de 14 et 13 pages. Contrôle graphique sur les fichiers finaux ; sans prétention de revue médicale.",
+        "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "73821114e4ce272c0b8fdd81808c6536c13c72b444f216d8db2668b13f2eacb2",
+            "pageCount": 14,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T11:22:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd",
+            "pageCount": 13,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T11:22:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "3889b7ef67ee1f9df798d7a3f316a909c6a091417e650263ccdc154edc1dea44"
+          }
+        }
+      },
+      "flashcardPdfReview": {
+        "status": "operator_checked",
+        "pdfSha256": "c977a7606bee90122855538e3809449448462438e9218ed278b104f87650b97d",
+        "pageCount": 25,
+        "allPagesRendered": true,
+        "ownerAcceptance": "not_individually_attested",
+        "basis": "Les 50 réponses sont issues de la banque de vocabulaire du cours, sans nouveaux faits médicaux."
+      }
     }
   ],
   "supplementalResourceApprovals": [
