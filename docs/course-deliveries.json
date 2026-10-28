@@ -3714,7 +3714,7 @@
       },
       "artifactSha256s": {
         "vih_b13_20261027_sheet_v149": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
-        "vih_b13_20261027_qcm_50": "85d4f5fe1deba92413d347f90a06f13c279817d53575be6adc5b6eda186626af",
+        "vih_b13_20261027_qcm_50": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
         "vih_b13_20261027_flashcards_50": "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7",
         "vih_b13_20261027_vocal_01": "dfb77d0333e67bac1f4d248a147b9cf8e430fef8fd655427ef01c757f6354da7",
         "vih_b13_20261027_vocal_02": "8b7a35b8f906bc96cceca1659cab858d8843e5cb07df4b7b429ebef29761eae4",
@@ -3723,7 +3723,7 @@
         "vih_b13_20261027_vocal_05": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11"
       },
       "publicAssetSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
-      "qcmPublicAssetSha256": "85d4f5fe1deba92413d347f90a06f13c279817d53575be6adc5b6eda186626af",
+      "qcmPublicAssetSha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
       "flashcardPublicAssetSha256": "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7",
       "publicArtifacts": {
         "sheet": {
@@ -3734,7 +3734,7 @@
         },
         "qcm": {
           "path": "assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf",
-          "sha256": "85d4f5fe1deba92413d347f90a06f13c279817d53575be6adc5b6eda186626af",
+          "sha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
           "pageCount": 26,
           "artifactId": "vih_b13_20261027_qcm_50"
         },
@@ -3808,7 +3808,8 @@
           "NO_TECHNICAL_NOTES": "PASS"
         },
         "reviewedPdfSha256s": {
-          "vih_b13_20261027_sheet_v149": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e"
+          "vih_b13_20261027_sheet_v149": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+          "vih_b13_20261027_qcm_50": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc"
         }
       },
       "templateConformance": {
@@ -3857,7 +3858,7 @@
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
             "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-            "artifactSha256": "85d4f5fe1deba92413d347f90a06f13c279817d53575be6adc5b6eda186626af",
+            "artifactSha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
             "pageCount": 26,
             "pagesChecked": [
               1,
@@ -3930,7 +3931,7 @@
         "approvedAt": "2026-10-28T21:03:00+01:00",
         "bundleSha256": "1768bca8a7c2feabcdd5d3e4ef3709c7e30f487a1c329917335682ae0aee3fb1",
         "provisionalOnly": true,
-        "approvalBasis": "GO MAJ initial et nouvelle validation graphique explicite le 28/10 à 21:03 du QCM corrigé SHA256 85d4f5fe1deba92413d347f90a06f13c279817d53575be6adc5b6eda186626af ; fiche et flashcards inchangées. Statut pédagogique provisoire.",
+        "approvalBasis": "GO explicite de publication et acceptation graphique du PDF QCM final SHA256 bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc ; fiche, flashcards et MP3 déjà acceptés et inchangés ; validation renouvelée le 28/10/2026. Statut provisoire conservé.",
         "mergeDeploymentCondition": "TNR verts et vérification des fichiers réellement servis par GitHub Pages"
       }
     }
