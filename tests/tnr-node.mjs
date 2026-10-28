@@ -244,7 +244,12 @@ const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses
 for(const c of json('docs/course-deliveries.json').courses)if(c.validated===true&&c.sourceBasis?.reconciled===true&&c.sourceAudit?.officialChecked===true&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')provisionalOralSources.add(c.courseId);
 const allowedLexiconSource=x=>['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
 assert(vocabulary.entries.every(x=>x.term&&(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.'))&&x.theme&&x.distinction?.length>=10&&allowedLexiconSource(x)),'Glossaire : définition, distinction ou provenance absente');
-assert(new Set(vocabulary.entries.flatMap(x=>x.courseIds)).size===courseIds.size,'Glossaire : chaque cours du registre doit être couvert');
+const scopedWrittenSheets=json('docs/course-deliveries.json').courses.filter(c=>
+ c.deliveryMode==='sheet_only_first_release'&&c.publicationScope==='revision_sheet_only'&&
+ c.publicationApproval?.status==='approved'&&c.publicationApproval?.scope==='revision_sheet_only'&&
+ c.lexicon?.termCount>0&&c.writtenPdfAudit?.status==='PASS').map(c=>c.courseId);
+const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets]);
+assert(lexiconCourseIds.size===courseIds.size,'Glossaire : un cours doit posséder un lexique validé (dans la fiche seule approuvée ou en glossaire)');
 assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&vocabulary.entries.some(x=>x.term==='Méiose')&&vocabulary.entries.some(x=>x.term==='Ostéoporose')&&vocabulary.entries.some(x=>x.term==='Empathie'),'Glossaire multicours incomplet');
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
 const morphEntries=vocabulary.entries.filter(x=>x.id.startsWith('morph_'));
