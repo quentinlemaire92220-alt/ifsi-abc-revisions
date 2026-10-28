@@ -13215,7 +13215,7 @@
     "number": 5,
     "theme": "VIH, CD4 et sida",
     "difficulty": "medium",
-    "question": "Quel sens donner au repère de 200 CD4/mm³ utilisé dans le cours ?",
+    "question": "Quelle est la signification clinique d’une numération des lymphocytes T CD4 inférieure à 200/mm³ ?",
     "choices": [
       "En dessous, le risque d’infections opportunistes augmente.",
       "Il suffit, isolément et sans autre critère, pour diagnostiquer tout sida.",
@@ -13228,7 +13228,7 @@
       2,
       4
     ],
-    "explanation": "Le cours utilise le seuil de 200 CD4/mm³ comme repère de vulnérabilité et de prévention de certaines infections.\nPropositions à écarter : B : le sida ne se résume pas au seul seuil. D : la tuberculose peut survenir malgré des CD4 conservés.",
+    "explanation": "La numération des CD4 utilise le seuil de 200 CD4/mm³ comme repère de vulnérabilité et de prévention de certaines infections.\nPropositions à écarter : B : le sida ne se résume pas au seul seuil. D : la tuberculose peut survenir malgré des CD4 conservés.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "course_captures",
@@ -13324,7 +13324,7 @@
     "number": 8,
     "theme": "VIH, CD4 et sida",
     "difficulty": "medium",
-    "question": "Quel lien entre VIH, immunité et tumeurs est évoqué dans la séance ?",
+    "question": "Comment l’immunodépression liée au VIH peut-elle influencer le risque de certaines tumeurs ?",
     "choices": [
       "Les CD4 participent aussi à des défenses immunitaires contre des tumeurs.",
       "Le risque tumoral dépend uniquement du nombre de partenaires sexuels.",
@@ -13417,7 +13417,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Pourquoi employer le terme « PVVIH » ?",
+        "front": "Que signifie « PVVIH » et quel intérêt cette expression présente-t-elle dans la relation soignante ?",
         "answers": [
           "Il signifie « personne vivant avec le VIH ». Il évite de réduire la personne à son infection et soutient une relation de soin sans stigmatisation."
         ],
@@ -13867,7 +13867,7 @@
     "number": 23,
     "theme": "Infections opportunistes et complications",
     "difficulty": "easy",
-    "question": "Quels signes évoquent une pneumocystose dans la séance ?",
+    "question": "Quels signes cliniques peuvent faire évoquer une pneumocystose chez une personne immunodéprimée ?",
     "choices": [
       "Toux.",
       "Dyspnée.",
@@ -14084,7 +14084,7 @@
     "number": 29,
     "theme": "Infections opportunistes et complications",
     "difficulty": "hard",
-    "question": "Pourquoi le risque cardiovasculaire apparaît-il dans le cours ?",
+    "question": "Pourquoi surveille-t-on le risque cardiovasculaire chez une personne vivant avec le VIH ?",
     "choices": [
       "Une réplication persistante peut entretenir une inflammation.",
       "Cette inflammation est présentée comme l’un des facteurs de complications.",
@@ -14142,7 +14142,7 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quel cancer est associé à HHV-8 dans la séance ?",
+        "front": "Quel cancer est associé au virus HHV-8 ?",
         "answers": [
           "La maladie de Kaposi, illustrée par des nodules cutanés violacés. Sont aussi évoqués les lymphomes et certains cancers liés au papillomavirus."
         ],
@@ -14302,7 +14302,7 @@
     "number": 35,
     "theme": "Dépistage, traitement et maternité",
     "difficulty": "easy",
-    "question": "Que retenir du traitement antirétroviral (ARV) dans ce cours ?",
+    "question": "Quels principes guident le traitement antirétroviral (ARV) d’une infection par le VIH ?",
     "choices": [
       "Il est proposé dès que possible après le diagnostic.",
       "Il doit généralement être poursuivi au long cours, sans arrêt autonome.",
@@ -14374,7 +14374,7 @@
     "number": 37,
     "theme": "Dépistage, traitement et maternité",
     "difficulty": "hard",
-    "question": "Quels noms de traitements combinés sont cités à titre d’exemples pendant la séance ?",
+    "question": "Quels sont les exemples de traitements antirétroviraux combinés à identifier ?",
     "choices": [
       "Biktarvy.",
       "Dovato.",
@@ -14410,7 +14410,7 @@
     "number": 38,
     "theme": "Dépistage, traitement et maternité",
     "difficulty": "medium",
-    "question": "Une PVVIH bien contrôlée souhaite une grossesse. Quels messages sont conformes à la séance ?",
+    "question": "Une personne vivant avec le VIH, ayant un contrôle virologique durable, souhaite une grossesse. Quels messages sont adaptés ?",
     "choices": [
       "Un projet parental peut être envisagé avec un suivi spécialisé.",
       "Une PMA est toujours obligatoire.",
@@ -14555,7 +14555,7 @@
     "number": 42,
     "theme": "PrEP, TPE et rôle infirmier",
     "difficulty": "medium",
-    "question": "Quels messages sur la PrEP sont cohérents avec le cours ?",
+    "question": "Quels messages sont exacts concernant la prophylaxie pré-exposition (PrEP) au VIH ?",
     "choices": [
       "Elle peut être discutée après une IST, selon l’exposition et les besoins.",
       "Elle remplace toutes les mesures de prévention des autres IST.",
@@ -14575,11 +14575,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quelles modalités de PrEP sont présentées ?",
+        "front": "Quelles modalités de prophylaxie pré-exposition (PrEP) au VIH peut-on envisager selon les recommandations et les situations ?",
         "answers": [
-          "La séance évoque des schémas oraux continus ou à la demande, et des traitements injectables. Leur choix dépend de l’indication et du suivi spécialisé."
+          "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté."
         ],
-        "explanation": "La séance évoque des schémas oraux continus ou à la demande, et des traitements injectables. Leur choix dépend de l’indication et du suivi spécialisé."
+        "explanation": "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté."
       }
     ]
   },
@@ -14845,7 +14845,7 @@
     "number": 50,
     "theme": "PrEP, TPE et rôle infirmier",
     "difficulty": "easy",
-    "question": "Quelles composantes de la prise en charge globale sont soulignées par l’enseignante ?",
+    "question": "Quelles composantes font partie de la prise en charge globale d’une personne vivant avec le VIH ?",
     "choices": [
       "Éducation thérapeutique et compréhension du traitement.",
       "Soutien psychosocial et accès aux ressources si précarité.",
