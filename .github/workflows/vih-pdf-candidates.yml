@@ -29,6 +29,10 @@ jobs:
           python -m pip install PyMuPDF==1.26.7 reportlab==4.4.9 Pillow
       - name: Générer dans un dossier non public uniquement
         run: python tools/vih_pdf_rebuild_candidates.py --out /tmp/ifsi_vih_pdf_private
+      - name: Archiver la banque canonique et la source du générateur pour l'audit privé
+        run: |
+          cp data/course-banks/vih_b13_20261027.json /tmp/ifsi_vih_pdf_private/BANQUE_VIH_REFERENCE.json
+          cp tools/vih_pdf_rebuild_candidates.py /tmp/ifsi_vih_pdf_private/GENERATEUR_SOURCE.py
       - name: Contrôle technique objectif des nouveaux PDF
         run: |
           set +e
