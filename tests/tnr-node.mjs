@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import './course-navigation-ui-v2-smoke.mjs';
 import './course-thumbnails-55-design.mjs';
 import './course-thumbnails-ui-review.mjs';
@@ -207,7 +208,19 @@ const expectedInfoCounts={cellules_tissus:9,niveaux_organisation:2,prevention_ia
 for(const [id,min] of Object.entries(expectedInfoCounts)){const n=infographics.filter(x=>x.courseId===id).length;assert(n>=min,`Infographies V8.20 insuffisantes ${id}: ${n}/${min}`)}
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
-for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
+const newAudioPackages=json('docs/course-deliveries.json').courses;
+for(const v of vocals){
+ assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);
+ if(v.driveId?.length>10)continue;
+ const pack=newAudioPackages.find(c=>c.courseId===v.courseId&&c.deliveryMode==='source_limited_first_release');
+ const asset=pack?.publicAudioArtifacts?.find(a=>a.artifactId===v.id);
+ assert(asset,`MP3 sans Drive non approuvé par un premier package : ${v.id}`);
+ assert(/^assets\/audio\/[A-Za-z0-9_/-]+\.mp3$/.test(asset.path),`Chemin MP3 invalide : ${v.id}`);
+ assert(v.localAudio==='./'+asset.path,`Chemin MP3 incohérent : ${v.id}`);
+ assert(fs.existsSync(v.localAudio),`Fichier MP3 manquant : ${v.id}`);
+ assert(createHash('sha256').update(fs.readFileSync(v.localAudio)).digest('hex')===asset.sha256,`Empreinte MP3 incorrecte : ${v.id}`);
+}
+
 
 const releaseMeta=json('build-meta.json');
 assert(/^\d+\.\d+(?:\.\d+)?$/.test(releaseMeta.version),'Version build-meta invalide');
