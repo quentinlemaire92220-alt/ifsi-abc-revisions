@@ -22,7 +22,11 @@ assert.ok(vocals.length>=131,'Au moins 131 vocaux attendus');
 const original=vocals.slice(0,80).filter(v=>!legacy.includes(v.id));
 assert.equal(original.length,75);
 assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),'feab05ae2850878be2c0d3f21c1bf8ec1b0c5f2249579cc75b49ae0f5f66211b','Les 75 vocaux précédents ont changé');
-assert.equal(new Set(vocals.map(v=>v.driveId)).size,vocals.length);
+const withDrive=vocals.filter(v=>v.driveId);
+assert.equal(new Set(withDrive.map(v=>v.driveId)).size,withDrive.length,'Fichier Drive duplique');
+const hostedOnly=vocals.filter(v=>!v.driveId);
+assert.ok(hostedOnly.every(v=>v.localAudio&&fs.existsSync(v.localAudio)),'MP3 Pages manquant');
+assert.equal(new Set(hostedOnly.map(v=>v.localAudio)).size,hostedOnly.length,'MP3 Pages duplique');
 for(const [id,count] of [['appareil_locomoteur',2],['virus',3]]){
  const course=registry.courses.find(c=>c.id===id),prior=vocals.filter(v=>legacy.includes(v.id)&&v.courseId===id);
  assert.equal(prior.length,count,id+': ancien lot altéré');
