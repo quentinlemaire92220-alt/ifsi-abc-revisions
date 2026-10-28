@@ -1,5 +1,5 @@
 {
-  "version": "8.30.151",
+  "version": "8.30.152",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,10 +7,10 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "TD3 Théorie des symptômes : fiche de 11 pages revue, support officiel reçu et audio encore non vérifié ; QCM, flashcards et vocaux historiques inchangés.",
+  "note": "TD3 Théorie des symptômes : fiche de 11 pages revue, support officiel reçu et audio encore non vérifié ; QCM, flashcards et vocaux historiques inchangés. Ajout candidat entretien infirmier : 1 cours et 1 fiche, publication différée jusqu'à accord sur les nouveaux PDF V4/V5.",
   "expectedTotals": {
-    "courses": 59,
-    "sheets": 77,
+    "courses": 60,
+    "sheets": 78,
     "infographics": 184,
     "vocals": 195,
     "v820QcmImported": 1174,

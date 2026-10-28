@@ -1,10 +1,11 @@
-# IFSI ABC — Publication candidate D1.1 S1 — L’entretien infirmier
+# UE D1.1 S1 — L’entretien infirmier — Correctifs techniques de la candidate V8.30.152
 
-- Périmètre accepté : fiche V3 (13 pages), QCM V3 (17 pages, 50 questions) et flashcards V4 (9 pages, 50 cartes), **aucun MP3**.
-- GO reçu dans le chat le 28/10/2026, après validation des présentations. Preuve détaillée conservée dans le Drive privé propriétaire, non reproduite ici.
-- Contenus publiés uniquement depuis des PDF dérivés de révision, pas les supports officiels ni les transcriptions brutes.
-- SHA-256 fiche : `68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708` ; QCM : `35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd` ; flashcards : `8fc516c9e589d18c2f538f76c3c9002f2db51aa45d85b1e4dcc826661a63d250`.
-- Corrigé Q47 : deux bonnes réponses B et E. Banque interactive et PDF cohérents. Carte 35 PDF V4 corrigée pour autonomie.
-- 17 thèmes du support officiel (28 diapositives) rapprochés de la fiche V3. Les transcriptions PT01/PT02 ne valent **pas** une vérification exhaustive de l'audio original. Les attributions de locuteurs incertaines et deux nuances documentaires sont réservées.
-- Statut de diffusion : `partial`, pédagogique `provisional`, audio `awaiting_owner_audio_review`, aucun protocole nouveau inventé.
-- Le manifeste retient `PENDING_DEPLOYMENT` jusqu'à contrôle réel des trois fichiers servis depuis Pages. Ne pas remplacer arbitrairement par `MATCH`.
+**PR EN BROUILLON — NE PAS FUSIONNER — NOUVEAUX PDF NON ACCEPTÉS GRAPHIQUEMENT.**
+
+- Fiche **V4** (13 p.) : ajout d'une table des matières PDF structurée (Pièges QCM, Synthèse, Définitions), texte visible non changé ; SHA a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50.
+- QCM **V5** (21 p.) : recréation selon charte (Lato ≥9, encadrés, cases, difficultés, pagination, cinq choix). **50 questions, 250 propositions, 50 clés de réponse et 50 explications conservées** ; SHA 8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a.
+- Flashcards **V5** (10 p.) : 50 cartes, 50 rectos, versos et explications concordants, métadonnées techniques effacées ; SHA 65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917.
+- Corrections techniques : provenance `official_support_and_transcript`, raison `oral_source_unverified`, snapshot 60 cours / 78 fiches, synchronisation du cache + ordre du changelog.
+- Les 5 MP3 et le support officiel source restent privés. Réserves d'exhaustivité orale maintenues.
+- Le GO antérieur concernait V3/V4 ; **ne couvre pas automatiquement** les PDF corrigés. `validated=false`, `publicationApproval.status=pending_new_pdf_acceptance`, aucune revue humaine attestée pour ces octets.
+- L'audit technique local a comparé banque ↔ QCM ↔ flashcards et a inspecté la géométrie PDF ; ce contrôle n'est **pas** une validation graphique du propriétaire.

@@ -3938,7 +3938,7 @@
     {
       "courseId": "entretien_infirmier",
       "part": "01",
-      "validated": true,
+      "validated": false,
       "status": "partial",
       "provisional": true,
       "pedagogicalValidated": false,
@@ -3947,7 +3947,7 @@
       "publicationHost": "github_pages",
       "packFormat": "written_v1",
       "sourceBasis": {
-        "kind": "official_support_and_transcripts",
+        "kind": "official_support_and_transcript",
         "nativeSupportAvailable": true,
         "supportSlides": 28,
         "transcriptParts": 2,
@@ -3955,9 +3955,9 @@
         "privateSourcePreserved": true,
         "nonRegressionCharter": "v1.49"
       },
-      "sheetResourceId": "entretien_infirmier_sheet_v3",
+      "sheetResourceId": "entretien_infirmier_sheet_v4",
       "sheetResourceIds": [
-        "entretien_infirmier_sheet_v3"
+        "entretien_infirmier_sheet_v4"
       ],
       "schematics": "none",
       "generatedImageCount": 0,
@@ -3965,9 +3965,9 @@
       "qcmBank": "data/course-banks/entretien_infirmier.json",
       "qcmCount": 50,
       "flashcardCount": 50,
-      "publicAssetSha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
-      "qcmPublicAssetSha256": "35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd",
-      "flashcardPublicAssetSha256": "8fc516c9e589d18c2f538f76c3c9002f2db51aa45d85b1e4dcc826661a63d250",
+      "publicAssetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+      "qcmPublicAssetSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+      "flashcardPublicAssetSha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
       "vocals": [],
       "requestedVocals": true,
       "scriptsPreparedCount": 5,
@@ -4000,7 +4000,7 @@
       },
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
         "pageSize": "A4",
         "pageCount": 13,
         "allPagesRendered": true,
@@ -4021,54 +4021,41 @@
         "checked": true
       },
       "artifactSha256s": {
-        "entretien_infirmier_sheet_v3": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
-        "entretien_infirmier_qcm_v3": "35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd",
-        "entretien_infirmier_flashcards_v4": "8fc516c9e589d18c2f538f76c3c9002f2db51aa45d85b1e4dcc826661a63d250"
+        "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+        "entretien_infirmier_flashcards_v5": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917"
       },
       "publicArtifacts": {
         "sheet": {
-          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V3.pdf",
-          "sha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V4.pdf",
+          "sha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
           "pageCount": 13,
-          "artifactId": "entretien_infirmier_sheet_v3"
+          "artifactId": "entretien_infirmier_sheet_v4"
         },
         "qcm": {
-          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V3.pdf",
-          "sha256": "35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd",
-          "pageCount": 17,
-          "artifactId": "entretien_infirmier_qcm_v3"
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V5.pdf",
+          "sha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+          "pageCount": 21,
+          "artifactId": "entretien_infirmier_qcm_v5"
         },
         "flashcards": {
-          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V4.pdf",
-          "sha256": "8fc516c9e589d18c2f538f76c3c9002f2db51aa45d85b1e4dcc826661a63d250",
-          "pageCount": 9,
-          "artifactId": "entretien_infirmier_flashcards_v4"
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf",
+          "sha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
+          "pageCount": 10,
+          "artifactId": "entretien_infirmier_flashcards_v5"
         }
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pages_file_staged",
-        "pdfSha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708"
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50"
       },
       "visualOwnerReview": {
-        "status": "owner_accepted",
+        "status": "pending_new_pdf_review",
         "reference": "communication_written_v5.3_2026-10-24",
-        "method": "pdf_all_pages_checked",
-        "pagesChecked": 13,
-        "reviewedAt": "2026-10-28T21:03:00+01:00",
-        "reviewerDecision": "explicit_graphic_acceptance",
-        "criteria": {
-          "NO_GENERATED_IMAGES": "PASS",
-          "PURPLE_BANDS_EVERY_PAGE": "PASS",
-          "TEXT_SELECTABLE": "PASS",
-          "NO_TECHNICAL_NOTES": "PASS"
-        },
-        "reviewedPdfSha256s": {
-          "entretien_infirmier_sheet_v3": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
-          "entretien_infirmier_qcm_v3": "35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd"
-        },
-        "privateEvidenceSha256": "7ac440e152ed72d26abdd5ff78c70615e03ecde566abcfa2596d4f9fd0d1db76",
-        "acceptanceBasis": "Accord de présentation sur fiche et QCM V3, puis flashcards V4 ; rendu technique des pages contrôlé séparément ; pas de certification de revue scientifique intégrale."
+        "reviewerDecision": "pending",
+        "reviewedPdfSha256s": {},
+        "previousGraphicApprovalsArchivedPrivately": true
       },
       "templateConformance": {
         "contract": "ifsi_pdf_template_v3",
@@ -4076,84 +4063,24 @@
           "sheet": {
             "templateId": "communication_written_v5.3_2026-10-24",
             "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
-            "artifactSha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
+            "artifactSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
             "pageCount": 13,
-            "pagesChecked": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12,
-              13
-            ],
-            "status": "owner_accepted",
-            "method": "all_pages_compared_at_100_and_200_percent",
-            "decision": "explicit_graphic_acceptance",
-            "reviewerRole": "owner",
-            "reviewedAt": "2026-10-28T21:03:00+01:00",
-            "checks": {
-              "MODEL_COMPARISON": "PASS",
-              "BANDS_AND_TYPOGRAPHY": "PASS",
-              "MARGINS_AND_HIERARCHY": "PASS",
-              "COLOR_AND_BOXES": "PASS",
-              "NO_CLIPPING_OR_OVERLAP": "PASS",
-              "READABLE_AT_100_AND_200_PERCENT": "PASS",
-              "STRUCTURE_AND_PAGINATION": "PASS"
-            },
-            "privateEvidenceSha256": "b618849a8b42e384aeae43b04a96d61f22cdbe23e9ee6a7dba018ade28d68195"
+            "status": "pending_new_owner_review",
+            "technicalStatus": "PASS"
           },
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
             "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-            "artifactSha256": "35027660a95605c5ebbd99dbb31bfe10026606764ad12b3d0fe4e5a2ad41abcd",
-            "pageCount": 17,
-            "pagesChecked": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12,
-              13,
-              14,
-              15,
-              16,
-              17
-            ],
-            "status": "owner_accepted",
-            "method": "all_pages_compared_at_100_and_200_percent",
-            "decision": "explicit_graphic_acceptance",
-            "reviewerRole": "owner",
-            "reviewedAt": "2026-10-28T21:03:00+01:00",
-            "checks": {
-              "MODEL_COMPARISON": "PASS",
-              "BANDS_AND_TYPOGRAPHY": "PASS",
-              "MARGINS_AND_HIERARCHY": "PASS",
-              "COLOR_AND_BOXES": "PASS",
-              "NO_CLIPPING_OR_OVERLAP": "PASS",
-              "READABLE_AT_100_AND_200_PERCENT": "PASS",
-              "STRUCTURE_AND_PAGINATION": "PASS"
-            },
-            "privateEvidenceSha256": "b618849a8b42e384aeae43b04a96d61f22cdbe23e9ee6a7dba018ade28d68195"
+            "artifactSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+            "pageCount": 21,
+            "status": "pending_new_owner_review",
+            "technicalStatus": "PASS"
           }
         }
       },
       "pedagogicalNonRegression": {
         "contract": "ifsi_pedagogical_non_regression_v149",
-        "sheetSha256": "68e23a13c194b0eafd82e6cf17de09d88f96df5978f4007c60ca5acb3f504708",
+        "sheetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
         "privateEvidenceSha256": "47ae6e1fff0aac78cd39dcce276db66a68505cc4dafd2a95aca6da0db338a5d9",
         "reviewedAt": "2026-10-28T21:03:00+01:00",
         "sourceInventory": "reviewed",
@@ -4164,17 +4091,15 @@
         "decision": "scoped_provisional_review_recorded"
       },
       "flashcardPdfReview": {
-        "status": "owner_accepted",
-        "pdfSha256": "8fc516c9e589d18c2f538f76c3c9002f2db51aa45d85b1e4dcc826661a63d250",
-        "pageCount": 9,
-        "allPagesRendered": true,
-        "ownerAcceptance": "explicit_go_flashcards_v4",
-        "privateEvidenceSha256": "4340b5dc49dbb6ea2f376f241aaba2151f6096d5b697844bd7bf7ccf4e97e558"
+        "status": "pending_new_owner_review",
+        "pdfSha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
+        "pageCount": 10,
+        "technicalStatus": "PASS"
       },
       "blockers": [
         {
           "resource": "oral_audio_original",
-          "reason": "original_audio_comparison_missing",
+          "reason": "oral_source_unverified",
           "detail": "PT01/PT02 utilisées sans preuve de réécoute complète des enregistrements."
         },
         {
@@ -4186,18 +4111,22 @@
           "resource": "vocals",
           "reason": "awaiting_owner_audio_review",
           "detail": "5 MP3 produits en privé, jamais écoutés et non publiés."
+        },
+        {
+          "resource": "visual_owner_review",
+          "reason": "new_pdf_bytes_pending_owner_acceptance",
+          "detail": "Les PDF fiche V4, QCM V5, cartes V5 ont été corrigés et nécessitent une nouvelle acceptation expresse sur leurs nouveaux SHA."
         }
       ],
       "publicationApproval": {
-        "status": "approved",
-        "authorization": "explicit_go_publication",
+        "status": "pending_new_pdf_acceptance",
+        "authorization": "previous_go_for_superseded_bytes",
         "scope": "course_package",
-        "approvedAt": "2026-10-28T21:03:00+01:00",
-        "bundleSha256": "f408496dd94fd2de98669fd587f83eae12ddd10696486c717afefcb4cc53c9d8",
-        "provisionalOnly": true,
-        "scopeLimit": "fiche_v3_qcm_v3_flashcards_v4_sans_mp3",
-        "approvalBasis": "GO MAJ + validation fiche et QCM V3 puis « Oui go » pour les flashcards V4 et préparation publication sans MP3 ; statut pédagogique provisoire préservé.",
-        "mergeDeploymentCondition": "all_tnr_green_and_live_asset_sha_verification"
+        "approvedAt": null,
+        "bundleSha256": null,
+        "scopeLimit": "fiche_v4_qcm_v5_flashcards_v5_sans_mp3",
+        "approvalBasis": "GO antérieur conservé comme contexte, sans extension automatique aux nouveaux PDF corrigés.",
+        "mergeDeploymentCondition": "new_owner_acceptance_and_all_tnr_green_and_live_sha"
       }
     }
   ],
