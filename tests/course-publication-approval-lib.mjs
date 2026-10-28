@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {isApprovedPrivateReferenceWithdrawal} from './private-resource-withdrawal-lib.mjs';
 import {validateRevisionSheetChange} from './revision-sheet-supplement-contract.mjs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
+import {validateStressAddonChange} from './stress-qcm-flashcards-addon.mjs';
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -36,6 +37,7 @@ export function publicationBundle(courseId,delivery,data){
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
+  ,...(delivery.qcmFlashcardsSupplement?{qcmFlashcardsAddon:{...delivery.qcmFlashcardsSupplement,publicationApproval:undefined}}:{})
   ,...(delivery.revisionSheetSupplement?{revisionSheetSupplement:delivery.revisionSheetSupplement}:{})
   ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
    mode:delivery.revisionSheetMode,questionScope:delivery.deliveryQuestionScope,coverage:delivery.sheetCoverage,completeBoardAudits:delivery.completeBoardAudits,
@@ -125,6 +127,11 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   const digest=bundleDigest(bundle);
   const oldDigest=prior?bundleDigest(publicationBundle(id,prior,oldData)):null;
   if(oldDigest===digest)continue; // Pas d'obligation rétroactive pour un cours inchangé.
+  if(prior && id==='gestion_stress_professionnel' && delivery.qcmFlashcardsSupplement && !prior.qcmFlashcardsSupplement){
+   validateStressAddonChange(prior,delivery,oldData,newData,digest);
+   checked.push({courseId:id,kind:'qcm_flashcards_vocabulary_addon'});
+   continue;
+  }
   if(delivery.revisionSheetSupplement && JSON.stringify(canonical(delivery.revisionSheetSupplement))!==JSON.stringify(canonical(prior?.revisionSheetSupplement))){
    validateRevisionSheetChange(id,prior,delivery,oldData,newData);
    checked.push({courseId:id,kind:'revision_sheet_only'});
