@@ -1,5 +1,5 @@
 {
-  "version": "8.30.147",
+  "version": "8.30.148",
   "courses": [
     {
       "id": "biomolecules",
@@ -1263,6 +1263,32 @@
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Flashcards_50_Provisoire.pdf",
           "type": "flashcards",
           "cardCount": 50
+        }
+      ]
+    },
+    {
+      "id": "gestion_stress_professionnel",
+      "label": "Gestion du stress, souffrance au travail et analyse des émotions",
+      "aliases": [
+        "Gestion du stress",
+        "Stress professionnel",
+        "Souffrance au travail",
+        "UE B3.2.1 S1 — Gestion du stress"
+      ],
+      "domain": "B",
+      "ue": "B3",
+      "teachingUnit": "B3.2.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": true,
+      "sourceStatus": "official_support",
+      "provisional": false,
+      "sourceNote": "Cours du 19/10/2026 ; fiche écrite v1.49 publiée seule sur GO explicite. QCM, flashcards et vocaux non demandés.",
+      "additionalDocuments": [
+        {
+          "type": "revision",
+          "label": "Fiche de révision v1.49 — 17 pages, 50 définitions",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/gestion-stress-20261019/UE_B3_2_1_S1_Gestion_du_stress_Fiche_Revision_v149_17p.pdf"
         }
       ]
     }

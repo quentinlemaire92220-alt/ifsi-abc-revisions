@@ -1,5 +1,5 @@
 {
-  "version": "8.30.147",
+  "version": "8.30.148",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,10 +7,10 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Candidat B1.3 provisoire : 40 QCM, 50 flashcards, 50 définitions et une fiche ; support officiel attendu.",
+  "note": "Gestion du stress UE B3.2.1 : fiche seule v1.49 (17 pages, 50 définitions). QCM, flashcards, vocaux non demandés ; les 57 cours historiques sont conservés.",
   "expectedTotals": {
-    "courses": 57,
-    "sheets": 75,
+    "courses": 58,
+    "sheets": 76,
     "infographics": 184,
     "vocals": 190,
     "v820QcmImported": 1174,
@@ -241,6 +241,19 @@
       "sheetFormat": "written_v1",
       "newCourse": true,
       "sourceStatus": "provisional"
+    },
+    {
+      "courseId": "gestion_stress_professionnel",
+      "course": "Gestion du stress — UE B3.2.1",
+      "release": "8.30.148",
+      "newCourse": true,
+      "scope": "revision_sheet_only",
+      "sheetFormat": "written_v1",
+      "pageCount": 17,
+      "lexiconTermsInPdf": 50,
+      "qcmNew": 0,
+      "flashcardsNew": 0,
+      "sourceStatus": "official_support"
     }
   ],
   "auditLogicVersion": "8.30.10",

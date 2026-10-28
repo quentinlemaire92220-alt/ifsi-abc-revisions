@@ -130,6 +130,9 @@ def batch(base,root=ROOT):
     for delivery in now['courses']:
         if delivery.get('packFormat')!='written_v1':continue
         roles=changed_roles(previous.get(delivery['courseId'],{}),delivery,root)
+        if delivery.get('deliveryMode')=='sheet_only_first_release' and delivery.get('publicationScope')=='revision_sheet_only':
+            # Une fiche seule approuvée ne crée pas de QCM fictif ; vérifier le PDF avec la même trame V3.
+            roles=['sheet']
         if (delivery.get('deliveryMode')=='existing_course_revision' and
             delivery.get('publicationSubset')=='qcm_pdf_50_qcm_59_interactive_flashcards_only' and
             set(delivery.get('publicArtifacts',{}))=={'qcm'} and
