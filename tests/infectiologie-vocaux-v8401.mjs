@@ -6,7 +6,11 @@ const vocals=json('vocals.json'),registry=json('course-registry-v741.json'),deli
 assert.ok(Number(meta.build)>=8401,'Build antérieur à la série infectiologie');
 assert.ok(vocals.length>=131,'Catalogue : au moins 105 anciens + 26 nouveaux');
 assert.equal(new Set(vocals.map(v=>v.id)).size,vocals.length);
-assert.equal(new Set(vocals.map(v=>v.driveId)).size,vocals.length);
+const driveBacked=vocals.filter(v=>v.driveId);
+assert.equal(new Set(driveBacked.map(v=>v.driveId)).size,driveBacked.length,'Doublon Drive historique');
+const hosted=vocals.filter(v=>!v.driveId);
+assert.ok(hosted.every(v=>v.localAudio&&fs.existsSync(v.localAudio)),'Fichier MP3 direct absent');
+assert.equal(new Set(hosted.map(v=>v.localAudio)).size,hosted.length,'Chemin audio direct dupliqué');
 validateAudioSupplements(delivery,{registry,vocals});
 const expected=[
  ['parasites_champignons',4],['physiopathologie_infections',3],['diagnostic_virologie',2],
