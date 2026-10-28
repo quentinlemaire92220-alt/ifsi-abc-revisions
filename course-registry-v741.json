@@ -1,5 +1,5 @@
 {
-  "version": "8.30.146",
+  "version": "8.30.147",
   "courses": [
     {
       "id": "biomolecules",
@@ -1226,6 +1226,37 @@
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
           "type": "flashcards",
           "cardCount": 40
+        }
+      ]
+    },
+    {
+      "id": "fievre_retour_voyage_paludisme",
+      "label": "Fièvre au retour de voyage et paludisme — PROVISOIRE",
+      "aliases": [
+        "Fièvre au retour de voyage et paludisme",
+        "Fièvre du voyageur",
+        "Paludisme — UE B1.3"
+      ],
+      "domain": "B",
+      "ue": "B1.3",
+      "teachingUnit": "B1.3",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": false,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Cours du 27/10/2026 : 50 captures et transcription. Support officiel attendu. Valeurs, traitement et prévention à confronter aux recommandations actualisées.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_QCM_40_Corriges.pdf",
+      "qcmPdfQuestionCount": 40,
+      "flashcardTarget": 50,
+      "authoredFlashcards": true,
+      "audioStatus": "script_only",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "label": "Fiche de révision — PROVISOIRE",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/fievre-paludisme-20261027/UE_B1_3_Fievre_Paludisme_Fiche_Revision.pdf",
+          "type": "revision"
         }
       ]
     }
