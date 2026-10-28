@@ -3430,6 +3430,53 @@
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
             "privateEvidenceSha256": "95fdee090aa8528c2d4436b5c9c0b1101bfc6b2372ce34912fd909900cf0fe23"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+            "pageCount": 24,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T14:28:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179"
           }
         }
       },
@@ -3472,7 +3519,7 @@
         "sourceBasis": "Support officiel 65 diapositives + PT01/PT02 + fiche v1.49, matrice 59 notions",
         "ownerReview": {
           "status": "owner_accepted",
-          "reviewBasis": "GO explicite pour les ressources complémentaires et la mise à jour de l’application",
+          "reviewBasis": "GO explicite de validation et publication du lot complémentaire (QCM/flashcards/vocabulaire)",
           "reviewDate": "2026-10-28",
           "qcmPdf": {
             "sha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
@@ -3497,7 +3544,17 @@
           "scope": "qcm_flashcards_vocabulary_only",
           "approvedAt": "2026-10-28T14:28:00+01:00",
           "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
-        }
+        },
+        "qaPrivateReportSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179"
+      },
+      "flashcardPdfReview": {
+        "status": "owner_accepted",
+        "pdfSha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+        "pageCount": 8,
+        "allPagesRendered": true,
+        "ownerAcceptance": "GO_publication_complement_explicit",
+        "privateEvidenceSha256": "fe537f5d1e646b690ad7a6590ee9bc3c4cdebef71efb8863ced91b36b8484179",
+        "cardCount": 50
       }
     }
   ],

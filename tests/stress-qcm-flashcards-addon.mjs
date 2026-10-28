@@ -70,9 +70,16 @@ export function validateStressAddonChange(prior,delivery,oldData,newData,digest)
  assert.ok(prior&&prior.courseId===id,'Complement sans cours de base');
  assert.equal(prior.deliveryMode,'sheet_only_first_release');
  assert.equal(delivery.deliveryMode,'sheet_only_first_release');
- const strip=d=>{const o={...d};for(const k of ['qcmFlashcardsSupplement','qcmBank','qcmCount','flashcardCount','vocabularyCount','publicArtifacts','artifactSha256s','blockers'])delete o[k];return o;};
+ const strip=d=>{const o={...d};for(const k of ['qcmFlashcardsSupplement','qcmBank','qcmCount','flashcardCount','vocabularyCount','publicArtifacts','artifactSha256s','blockers','templateConformance','flashcardPdfReview'])delete o[k];return o;};
  equal(strip(prior),strip(delivery),'Fiche initiale ou autres metadonnees historiques modifiees');
  equal(delivery.publicArtifacts?.sheet,prior.publicArtifacts?.sheet,'Asset fiche modifie');
+ equal(delivery.templateConformance?.artifacts?.sheet,prior.templateConformance?.artifacts?.sheet,'Attestation fiche initiale modifiee');
+ const receipt=delivery.templateConformance?.artifacts?.qcm;
+ assert.equal(receipt?.status,'owner_accepted','Revue QCM absente');
+ assert.equal(receipt?.artifactSha256,delivery.publicArtifacts?.qcm?.sha256,'Attestation d’un autre QCM');
+ assert.equal(receipt?.pageCount,24);
+ assert.equal(delivery.flashcardPdfReview?.pdfSha256,delivery.publicArtifacts?.flashcards?.sha256);
+ assert.equal(delivery.flashcardPdfReview?.pageCount,8);
  equal(delivery.artifactSha256s?.[prior.sheetResourceId],prior.artifactSha256s?.[prior.sheetResourceId],'Empreinte fiche modifiee');
  equal(delivery.blockers,(prior.blockers||[]).filter(b=>!['qcm','flashcards'].includes(b.resource)),'Blocages non lies supprimes');
  for(const k of ['sheets','infographics','vocals'])equal(oldData[k].filter(x=>x.courseId===id),newData[k].filter(x=>x.courseId===id),'Anciennes ressources modifiees '+k);
