@@ -2,6 +2,7 @@ import {verifyOfficialCourseReconciliation} from './official-course-reconciliati
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
+import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),base=process.env.IFSI_BASE_SHA||'HEAD^';
 const old=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
@@ -16,12 +17,13 @@ const oldVocals=old('vocals.json'),newVocals=read('vocals.json');
 assert.deepEqual(newVocals.slice(0,oldVocals.length),oldVocals,'Aucun MP3 historique modifié');
 const addedVocals=newVocals.slice(oldVocals.length);
 const approvedAudio=read('docs/course-deliveries.json').audioSupplements||[];
+const firstReleaseAudioIds=validateFirstReleaseAudio(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),old('course-registry-v741.json'),read('course-registry-v741.json'),oldVocals,newVocals);
 for(const voice of addedVocals){
- assert.ok(approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
+ assert.ok(firstReleaseAudioIds.has(voice.id)||approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
  'MP3 ajouté sans complément audio explicitement approuvé : '+voice.id);
 }
 const priorAudioIds=new Set(oldVocals.map(v=>v.id));
-const expectedApprovedAudioIds=new Set(approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id)));
+const expectedApprovedAudioIds=new Set([...firstReleaseAudioIds,...approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id))]);
 assert.deepEqual(new Set(addedVocals.map(v=>v.id)),expectedApprovedAudioIds,'Seuls les MP3 complémentaires approuvés peuvent être ajoutés depuis la version de comparaison');
 const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
 const beforeCount=oldVocabulary.entries.length;
