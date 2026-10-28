@@ -53,7 +53,41 @@ assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entr
  'IDs lexicaux uniques');
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
-for(const s of oldSheets){const next=sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url);if(!next&&read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(s.courseId,base);else assert.deepEqual(next,s);}
+// Révision intermédiaire ciblée : le TD reste PROVISOIRE lorsque le support
+// officiel est reçu mais que l'enregistrement oral n'a pas été contrôlé.
+// Seules trois métadonnées de la fiche écrite déjà publiée peuvent changer;
+// les autres fichiers historiques restent protégés par égalité stricte.
+function allowOfficialSupportWithUnverifiedAudio(previous,current){
+ if(previous.courseId!=='theorie_gestion_symptomes_td'||previous.resourceId!=='a1_tgs_td_written_p01')return false;
+ if(!current||previous.url!==current.url)return false;
+ const strip=(s)=>Object.fromEntries(Object.entries(s).filter(([k])=>!['pageCount','officialSupport','sourceBasis'].includes(k)));
+ assert.deepEqual(strip(current),strip(previous),'Transition officielle : fiche historique altérée hors périmètre');
+ const c=read('docs/course-deliveries.json').courses.find(c=>c.courseId===previous.courseId);
+ assert.equal(previous.officialSupport,false);
+ assert.equal(current.officialSupport,true);
+ assert.equal(current.pageCount,c.publicArtifacts.sheet.pageCount);
+ assert.ok(current.sourceBasis.includes('audio original non vérifié'));
+ assert.equal(c.sourceBasis?.kind,'official_support_and_transcript');
+ assert.equal(c.sourceBasis?.nativeSupportAvailable,true);
+ assert.equal(c.sourceAudit?.officialChecked,true);
+ assert.equal(c.sourceAudit?.oralStatus,'unverified');
+ assert.equal(c.status,'partial');assert.equal(c.pedagogicalValidated,false);
+ assert.ok(c.blockers?.some(x=>x.reason==='oral_source_unverified'));
+ assert.equal(c.visualOwnerReview?.status,'owner_accepted');
+ assert.equal(c.templateConformance?.artifacts?.sheet?.artifactSha256,c.publicArtifacts.sheet.sha256);
+ assert.equal(c.pedagogicalNonRegression?.sheetSha256,c.publicArtifacts.sheet.sha256);
+ assert.equal(c.pedagogicalNonRegression?.sourceCoverage,'limited');
+ // Ne pas exiger ici le GO de publication du package : un contrôle dédié
+ // valide strictement la signature et l'empreinte finale du lot.
+ return true;
+}
+for(const s of oldSheets){
+ const next=sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url);
+ if(next && JSON.stringify(next)===JSON.stringify(s))continue;
+ if(allowOfficialSupportWithUnverifiedAudio(s,next))continue;
+ if(!next&&read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(s.courseId,base);
+ else assert.deepEqual(next,s);
+}
 const part=delivery.partDeliveries.find(p=>p.deliveryMode==='existing_course_complement');assert.ok(part);
 assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId).primaryRevision,false);
 const rightsAdded=addedVocals.filter(v=>v.courseId==='droits_patients').map(v=>v.id);
