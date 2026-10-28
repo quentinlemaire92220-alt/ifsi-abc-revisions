@@ -3967,7 +3967,7 @@
       "flashcardCount": 50,
       "publicAssetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
       "qcmPublicAssetSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
-      "flashcardPublicAssetSha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
+      "flashcardPublicAssetSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
       "vocals": [],
       "requestedVocals": true,
       "scriptsPreparedCount": 5,
@@ -4023,7 +4023,7 @@
       "artifactSha256s": {
         "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
         "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
-        "entretien_infirmier_flashcards_v5": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917"
+        "entretien_infirmier_flashcards_v5": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715"
       },
       "publicArtifacts": {
         "sheet": {
@@ -4040,7 +4040,7 @@
         },
         "flashcards": {
           "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf",
-          "sha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
+          "sha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
           "pageCount": 10,
           "artifactId": "entretien_infirmier_flashcards_v5"
         }
@@ -4092,7 +4092,7 @@
       },
       "flashcardPdfReview": {
         "status": "pending_new_owner_review",
-        "pdfSha256": "65517e020ada31cd5b0ff5fc71104a2efdfbe3aa8c2f2fe9386cd0d92e7fe917",
+        "pdfSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
         "pageCount": 10,
         "technicalStatus": "PASS"
       },
