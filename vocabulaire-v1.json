@@ -1357,7 +1357,8 @@
       "distinction": "L'adrénaline agit notamment lors de la réponse immédiate au stress.",
       "etymologie": "cort- (cortex, couche externe) + -ol (suffixe chimique d'alcool).",
       "courseIds": [
-        "systeme_endocrinien"
+        "systeme_endocrinien",
+        "gestion_stress_professionnel"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -2049,7 +2050,8 @@
       "courseIds": [
         "psychologie_sante",
         "competences_psychosociales",
-        "ethique_infirmiere"
+        "ethique_infirmiere",
+        "gestion_stress_professionnel"
       ],
       "sourceType": "reference_pedagogique",
       "qcmQuestionIdsByCourse": {
@@ -4453,7 +4455,8 @@
       "distinction": "Un évitement isolé ne permet pas de diagnostiquer un trouble anxieux.",
       "theme": "Santé mentale — repérage et prévention",
       "courseIds": [
-        "pssm"
+        "pssm",
+        "gestion_stress_professionnel"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -6160,7 +6163,8 @@
       "distinction": "La discordance entre paroles et attitudes peut fragiliser la confiance.",
       "etymologie": "Du latin congruere : correspondre, être en accord.",
       "courseIds": [
-        "d1_communication_td1"
+        "d1_communication_td1",
+        "gestion_stress_professionnel"
       ],
       "sourceType": "reference_pedagogique"
     },
@@ -7207,6 +7211,558 @@
         "fievre_retour_voyage_paludisme"
       ],
       "sourceType": "transcription_orale"
+    },
+    {
+      "id": "gestion_stress_glossaire_01",
+      "term": "Stress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réaction physiologique et psychologique d’adaptation à une contrainte ou une menace.",
+      "distinction": "Ne pas confondre réaction adaptative et maladie diagnostiquée.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_02",
+      "term": "Stresseur",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Agent, événement ou condition pouvant déclencher une réaction de stress.",
+      "distinction": "Le facteur déclenchant se distingue de la réaction de stress.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_03",
+      "term": "Eustress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Stress vécu comme mobilisateur ou stimulant dans le TD.",
+      "distinction": "Un stress stimulant reste une réponse physiologique ; il n’est pas un diagnostic.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_04",
+      "term": "Distress",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Détresse liée à un stress éprouvé comme excessif ou dépassant les ressources.",
+      "distinction": "Stress vécu comme excessif, à distinguer de l’eustress.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_05",
+      "term": "Syndrome général d’adaptation",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Modèle de Selye décrivant alarme, résistance et épuisement.",
+      "distinction": "Ce modèle explicatif ne permet pas un diagnostic individuel.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_06",
+      "term": "Phase d’alarme",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Mobilisation rapide de l’organisme devant un stresseur.",
+      "distinction": "Réponse initiale, différente de la phase de résistance.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_07",
+      "term": "Phase de résistance",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Maintien de l’effort d’adaptation sous contrainte persistante.",
+      "distinction": "Maintien de l’adaptation, pas encore synonyme d’épuisement.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_08",
+      "term": "Phase d’épuisement",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Insuffisance des capacités d’adaptation dans le modèle étudié.",
+      "distinction": "Phase du modèle de Selye, sans diagnostic automatique de burn-out.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_09",
+      "term": "Risques psychosociaux (RPS)",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Facteurs professionnels pouvant atteindre la santé physique et psychique.",
+      "distinction": "Leurs facteurs relèvent aussi de l’organisation, pas seulement de la personne.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_10",
+      "term": "Exigences émotionnelles",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Sollicitations affectives du travail, notamment nécessité de gérer ou masquer ses émotions.",
+      "distinction": "Travail émotionnel distinct de la simple charge matérielle.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_11",
+      "term": "Conflit de valeurs",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Décalage entre les exigences de travail et les convictions professionnelles.",
+      "distinction": "À distinguer d’un conflit interpersonnel ponctuel.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_12",
+      "term": "Qualité empêchée",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Impossibilité ressentie de faire son travail conformément à ses critères de qualité.",
+      "distinction": "Impossibilité de bien faire le travail, pas simple absence de motivation.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_13",
+      "term": "Système nerveux autonome (SNA)",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Système impliqué dans la régulation de fonctions corporelles automatiques.",
+      "distinction": "Inclut les branches sympathique et parasympathique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_14",
+      "term": "Sympathique",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Branche du SNA associée à la mobilisation en situation d’alerte.",
+      "distinction": "Mobilisation d’alerte, à distinguer des fonctions de récupération.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_15",
+      "term": "Parasympathique",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Branche du SNA associée notamment à la récupération et au repos dans le TD.",
+      "distinction": "Fonctions de récupération, à distinguer de la mobilisation sympathique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_16",
+      "term": "Catécholamines",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Famille comprenant adrénaline et noradrénaline, mobilisée dans la réaction de stress.",
+      "distinction": "Ne pas confondre avec la voie hormonale du cortisol.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_17",
+      "term": "ACTH",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Hormone hypophysaire participant à la stimulation du cortex surrénalien.",
+      "distinction": "Hormone hypophysaire, distincte du cortisol surrénalien.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_19",
+      "term": "Évaluation primaire",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Appréciation de la menace ou du stress perçu.",
+      "distinction": "Porte sur la menace perçue, non sur l’inventaire des ressources.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_20",
+      "term": "Évaluation secondaire",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Appréciation des ressources et du contrôle perçus pour faire face.",
+      "distinction": "Porte sur les ressources et marges d’action, non la menace initiale.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_21",
+      "term": "Contrôle perçu",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Sentiment de pouvoir comprendre, agir sur la situation ou se réguler.",
+      "distinction": "Ne suppose pas de pouvoir maîtriser objectivement tous les événements.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_22",
+      "term": "Coping",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Stratégies d’ajustement utilisées pour faire face à une situation stressante.",
+      "distinction": "Ensemble des stratégies d’ajustement, sans typologie détaillée imposée par le TD.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_23",
+      "term": "Effet tunnel",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Restriction de l’attention ou de l’observation sous stress.",
+      "distinction": "Restriction de l’attention, non amélioration de toute la perception.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_24",
+      "term": "Inhibition",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réponse de retrait ou de figement face au stress.",
+      "distinction": "Réaction de figement, à distinguer d’une absence de ressenti.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_25",
+      "term": "Explosion",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réponse comportementale d’agitation ou d’expression brusque.",
+      "distinction": "Réaction brusque, distincte d’une affirmation de soi adaptée.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_27",
+      "term": "Affirmation de soi",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Expression adaptée de sa position et de ses limites sans agressivité.",
+      "distinction": "Se positionner sans agresser ni se soumettre.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_28",
+      "term": "Stress dépassé",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Situation où les capacités habituelles d’adaptation sont momentanément débordées.",
+      "distinction": "Débordement ponctuel, à distinguer du stress chronique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_29",
+      "term": "SAFA",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Sidération, agitation incoordonnée, fuite panique, actions automatiques.",
+      "distinction": "Aide-mémoire descriptif, non échelle diagnostique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_30",
+      "term": "Stress différé",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réaction de stress ou de relâchement survenant après l’événement.",
+      "distinction": "Réaction après coup, non diagnostic automatique de psychotraumatisme.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_31",
+      "term": "Stress chronique",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Réaction liée à des stresseurs répétés ou persistants avec récupération insuffisante.",
+      "distinction": "Exposition durable/répétée, distincte du stress dépassé ponctuel.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_32",
+      "term": "Burn-out",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Épuisement professionnel abordé à travers trois dimensions dans le TD.",
+      "distinction": "Description de dimensions professionnelles, non simple fatigue isolée.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_33",
+      "term": "Épuisement émotionnel",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Fatigue et sentiment de ne plus pouvoir répondre aux exigences affectives du travail.",
+      "distinction": "Une des dimensions du burn-out, pas une étape obligatoire.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_34",
+      "term": "Dépersonnalisation / cynisme",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Détachement négatif ou mise à distance des personnes liées au travail.",
+      "distinction": "Distance négative relationnelle, distincte d’une juste distance soignante.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_35",
+      "term": "Diminution de l’accomplissement personnel",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Sentiment d’inefficacité et de perte de sens au travail.",
+      "distinction": "Sentiment d’inefficacité, une des dimensions, non évolution inévitable.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_36",
+      "term": "Psychotraumatisme",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Conséquences psychiques possibles d’un événement potentiellement traumatisant.",
+      "distinction": "Volet survolé dans le TD ; ne pas inventer de diagnostic.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_37",
+      "term": "Reviviscence",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Impression de revivre un événement par souvenirs intrusifs ou cauchemars.",
+      "distinction": "Souvenirs intrusifs possibles, différents d’un simple rappel volontaire.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_38",
+      "term": "Hyperréactivité",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "État de vigilance ou réactivité excessive, évoqué parmi les signes post-traumatiques.",
+      "distinction": "Vigilance excessive possible, non diagnostic isolé de TSPT.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_39",
+      "term": "Cycle émotionnel",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Schéma pédagogique : charge, expression, repos et retour à l’équilibre.",
+      "distinction": "Outil pédagogique de régulation, sans valeur diagnostique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_40",
+      "term": "Ancrage",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Exercice de centrage sur les sensations corporelles et le moment présent.",
+      "distinction": "Centrage corporel, distinct d’une technique diagnostique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_41",
+      "term": "Cohérence cardiaque",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Exercice respiratoire présenté pour agir sur la régulation du stress.",
+      "distinction": "Exercice de respiration, sans protocole chiffré imposé par ce TD.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_42",
+      "term": "Gestion primaire / secondaire / tertiaire",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Dans ce TD : agir respectivement avant, pendant et après le stress.",
+      "distinction": "Dans ce TD : avant, pendant et après ; ne pas généraliser sans contexte.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_43",
+      "term": "Posture réflexive",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Capacité à analyser ses réactions, ses ressources et ses ajustements professionnels.",
+      "distinction": "Observer puis ajuster, sans culpabilisation automatique.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_44",
+      "term": "Estime de soi",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Évaluation personnelle de sa propre valeur, mobilisée dans l’affirmation et la régulation.",
+      "distinction": "Évaluation de sa valeur, distincte de la reconnaissance externe.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_47",
+      "term": "Communication non violente",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Approche d’expression des ressentis et besoins en limitant reproche et agressivité.",
+      "distinction": "Expression de besoins sans accusation ; n’exclut pas les limites.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_48",
+      "term": "Sas de transition",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Temps volontaire de respiration, de relâchement ou de récupération entre des sollicitations ; court ou plus ample selon le contexte.",
+      "distinction": "Temps variable ; une micro-pause n’équivaut pas toujours au sas prolongé.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_49",
+      "term": "Auto-évaluation physique / psychique",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Notation subjective distincte de ces deux états, sur 0 à 5 dans ce TD ; repère personnel non diagnostique.",
+      "distinction": "Échelle subjective 0–5, sans valeur diagnostique standardisée.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "gestion_stress_glossaire_50",
+      "term": "Hyperréactivité / hyporéactivité",
+      "theme": "Gestion du stress — UE B3.2.1",
+      "definition": "Repères d’un continuum de réactions : tension ou mobilisation excessive versus difficulté à se mobiliser.",
+      "distinction": "Continuum de réaction, non étiquette diagnostique définitive.",
+      "etymologie": "La décomposition étymologique n’est pas développée dans les sources de ce TD.",
+      "courseIds": [
+        "gestion_stress_professionnel"
+      ],
+      "sourceType": "reference_pedagogique"
     }
   ]
 }

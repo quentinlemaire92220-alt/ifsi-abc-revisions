@@ -1283,12 +1283,22 @@
       "officialSupport": true,
       "sourceStatus": "official_support",
       "provisional": false,
-      "sourceNote": "Cours du 19/10/2026 ; fiche écrite v1.49 publiée seule sur GO explicite. QCM, flashcards et vocaux non demandés.",
+      "sourceNote": "Cours officiel du 19/10/2026 ; fiche v1.49, 50 QCM interactifs corrigés, 50 flashcards et 50 termes de vocabulaire. Vocaux non demandés.",
       "additionalDocuments": [
         {
           "type": "revision",
           "label": "Fiche de révision v1.49 — 17 pages, 50 définitions",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/gestion-stress-20261019/UE_B3_2_1_S1_Gestion_du_stress_Fiche_Revision_v149_17p.pdf"
+        },
+        {
+          "type": "qcm",
+          "label": "50 QCM corrigés — Gestion du stress (24 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_QCM_50_Corriges_v149.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "50 flashcards — Gestion du stress (8 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf"
         }
       ]
     }

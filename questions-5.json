@@ -11236,5 +11236,1831 @@
         "explanation": "Repère de vocabulaire : Ensemble de mesures visant à empêcher une maladie ou à en réduire le risque."
       }
     ]
+  },
+  {
+    "id": "gestion_stress_v149_001",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 1,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "easy",
+    "question": "À quoi correspond le stress dans le TD ?",
+    "choices": [
+      "Une preuve systématique d’incapacité professionnelle.",
+      "Une réponse d’adaptation physiologique et psychologique.",
+      "Une maladie présente chez toute personne inquiète.",
+      "Une réaction exclusivement volontaire.",
+      "Une réponse qui peut devenir délétère si elle perdure sans récupération."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Le stress mobilise l’organisme et l’esprit pour s’adapter. Il n’est pas systématiquement pathologique ; sa répétition sans récupération peut nuire à la santé.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment définir le stress ?",
+        "answers": [
+          "Réaction d’adaptation physiologique et psychologique à une contrainte."
+        ],
+        "explanation": "Le stress mobilise l’organisme et l’esprit pour s’adapter. Il n’est pas systématiquement pathologique ; sa répétition sans récupération peut nuire à la santé."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_002",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 2,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "easy",
+    "question": "Parmi ces exemples, lesquels peuvent être des stresseurs en milieu de soins ?",
+    "choices": [
+      "Un environnement toujours calme sans interruptions.",
+      "Une obligation de diagnostiquer un burn-out avant d’aider.",
+      "Une interruption répétée pendant un soin.",
+      "L’absence de toute contrainte, toujours stressante.",
+      "Une absence de matériel nécessaire."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Interruptions, bruit et matériel inadapté sont des contraintes citées. Un diagnostic préalable n’est pas une condition du repérage, et une absence de contrainte n’est pas un stresseur par définition.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Citer trois stresseurs matériels au travail.",
+        "answers": [
+          "Interruptions, bruit et matériel indisponible ou inadapté."
+        ],
+        "explanation": "Interruptions, bruit et matériel inadapté sont des contraintes citées. Un diagnostic préalable n’est pas une condition du repérage, et une absence de contrainte n’est pas un stresseur par définition."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_003",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 3,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur l’eustress sont correctes ?",
+    "choices": [
+      "Il exclut toute mobilisation physiologique.",
+      "Il exclut toute inquiétude quand on débute.",
+      "Il désigne obligatoirement un état de maladie.",
+      "Il est identique pour tous face au même événement.",
+      "Il peut être ressenti comme stimulant."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Un événement vécu favorablement peut mobiliser l’organisme et être stimulant ; son effet dépend de la perception et des ressources de chacun.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que désigne l’eustress ?",
+        "answers": [
+          "Un stress vécu comme mobilisateur ou stimulant."
+        ],
+        "explanation": "Un événement vécu favorablement peut mobiliser l’organisme et être stimulant ; son effet dépend de la perception et des ressources de chacun."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_004",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 4,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "medium",
+    "question": "Une étudiante débute un stage avec de nouvelles responsabilités. Quelles interprétations sont adaptées ?",
+    "choices": [
+      "L’autonomie peut stimuler son développement.",
+      "La demande d’aide signifie nécessairement une incompétence.",
+      "Une peur de se tromper peut aussi apparaître.",
+      "La réaction dépend notamment des ressources disponibles.",
+      "Toute nouvelle responsabilité doit être évitée."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le même contexte peut susciter stimulation et anxiété. Reconnaître ses limites et demander un appui sont des ressources professionnelles, non une preuve d’échec.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi l’autonomie peut-elle générer deux vécus différents ?",
+        "answers": [
+          "Elle peut stimuler, mais aussi inquiéter par peur de mal faire."
+        ],
+        "explanation": "Le même contexte peut susciter stimulation et anxiété. Reconnaître ses limites et demander un appui sont des ressources professionnelles, non une preuve d’échec."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_005",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 5,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "easy",
+    "question": "Quels éléments relèvent des facteurs psychosociaux liés au travail ?",
+    "choices": [
+      "Groupe sanguin du professionnel.",
+      "Rapports sociaux dégradés.",
+      "Exigences émotionnelles.",
+      "Couleur préférée d’un soignant.",
+      "Conflits de valeurs."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Exigences émotionnelles, conflits de valeurs et qualité des relations sont trois familles des RPS du modèle enseigné ; les caractéristiques sans rapport avec l’organisation ne les définissent pas.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Nommer trois familles de RPS.",
+        "answers": [
+          "Exigences émotionnelles, conflits de valeurs et rapports sociaux dégradés."
+        ],
+        "explanation": "Exigences émotionnelles, conflits de valeurs et qualité des relations sont trois familles des RPS du modèle enseigné ; les caractéristiques sans rapport avec l’organisation ne les définissent pas."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_006",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 6,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "medium",
+    "question": "Au sujet des six familles de risques psychosociaux, quelles propositions sont exactes ?",
+    "choices": [
+      "Elles correspondent uniquement à une fragilité individuelle.",
+      "Le manque d’autonomie en fait partie.",
+      "L’insécurité professionnelle est exclue des RPS.",
+      "L’intensité et le temps de travail en font partie.",
+      "Elles excluent toute dimension organisationnelle."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Le modèle inclut intensité/temps de travail, autonomie et insécurité, ainsi que rapports sociaux, exigences émotionnelles et conflits de valeurs : ce sont des risques souvent organisationnels.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Combien de familles de RPS présente le TD ?",
+        "answers": [
+          "Six : intensité, émotions, autonomie, rapports sociaux, valeurs, insécurité."
+        ],
+        "explanation": "Le modèle inclut intensité/temps de travail, autonomie et insécurité, ainsi que rapports sociaux, exigences émotionnelles et conflits de valeurs : ce sont des risques souvent organisationnels."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_007",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 7,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "medium",
+    "question": "Un soignant explique ne plus pouvoir réaliser un travail conforme à ses valeurs. Quelles notions sont pertinentes ?",
+    "choices": [
+      "Preuve systématique d’une maladie psychiatrique.",
+      "Conflit de valeurs.",
+      "Une preuve suffisante d’un diagnostic psychiatrique.",
+      "Qualité empêchée.",
+      "Absence nécessaire de stress."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Une contradiction entre exigence organisationnelle et convictions peut produire un conflit de valeurs et un sentiment de qualité empêchée ; elle ne permet pas de diagnostiquer une maladie.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la qualité empêchée ?",
+        "answers": [
+          "Sentiment de ne pas pouvoir réaliser son travail selon ses critères de qualité."
+        ],
+        "explanation": "Une contradiction entre exigence organisationnelle et convictions peut produire un conflit de valeurs et un sentiment de qualité empêchée ; elle ne permet pas de diagnostiquer une maladie."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_008",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 8,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "medium",
+    "question": "Quel raisonnement correspond au modèle stresseurs–ressources du TD ?",
+    "choices": [
+      "Le ressenti n’a aucun rôle.",
+      "Une même contrainte peut être perçue différemment.",
+      "Seule la gravité objective du stresseur décide de la réponse.",
+      "Le contrôle perçu intervient dans la réaction.",
+      "Les ressources personnelles et humaines comptent."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "La menace perçue et les possibilités d’agir ou de recevoir de l’aide modulent l’expérience du stress ; l’intensité objective ne suffit pas à expliquer la réaction.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "De quoi dépend le stress perçu ?",
+        "answers": [
+          "Du stresseur, de la menace ressentie et des ressources/du contrôle perçus."
+        ],
+        "explanation": "La menace perçue et les possibilités d’agir ou de recevoir de l’aide modulent l’expérience du stress ; l’intensité objective ne suffit pas à expliquer la réaction."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_009",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 9,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "hard",
+    "question": "Lors d’un conflit avec une famille, quels éléments faut-il distinguer pour analyser la situation ?",
+    "choices": [
+      "L’intention cachée de la famille, supposée avec certitude.",
+      "Les ressources disponibles dans le service.",
+      "Le diagnostic de trouble anxieux déduit du seul désaccord.",
+      "L’état émotionnel du professionnel.",
+      "Les faits observables et les interprétations personnelles."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Distinguer faits, réactions et ressources permet de construire une réponse ; supposer des intentions ou poser un diagnostic à partir d’une scène isolée est injustifié.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels trois points examiner après un conflit ?",
+        "answers": [
+          "Faits, émotions ressenties et ressources mobilisables."
+        ],
+        "explanation": "Distinguer faits, réactions et ressources permet de construire une réponse ; supposer des intentions ou poser un diagnostic à partir d’une scène isolée est injustifié."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_010",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 10,
+    "theme": "Bases et stresseurs professionnels",
+    "difficulty": "hard",
+    "question": "Pourquoi une réponse centrée uniquement sur la relaxation peut-elle être insuffisante face aux RPS ?",
+    "choices": [
+      "Elle dispense d’évaluer les relations de travail.",
+      "Le soutien collectif peut rester nécessaire.",
+      "Elle ne résout pas à elle seule un manque de matériel.",
+      "Elle permet toujours d’éviter tout burn-out.",
+      "Elle ne modifie pas une surcharge organisationnelle."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Les exercices individuels peuvent aider ponctuellement, mais les causes de travail (charge, équipements, relations et organisation) demandent aussi des actions collectives.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle limite ont les seules techniques individuelles ?",
+        "answers": [
+          "Elles ne corrigent pas à elles seules les facteurs organisationnels de stress."
+        ],
+        "explanation": "Les exercices individuels peuvent aider ponctuellement, mais les causes de travail (charge, équipements, relations et organisation) demandent aussi des actions collectives."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_011",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 11,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "easy",
+    "question": "Quelles sont les dimensions de la réaction de stress présentées dans le TD ?",
+    "choices": [
+      "Uniquement administrative.",
+      "Biologique ou physique.",
+      "Psychologique, avec aspects cognitifs et émotionnels.",
+      "Comportementale.",
+      "Exclusivement génétique."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le TD distingue trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois plans du stress ?",
+        "answers": [
+          "Biologique, psychologique (cognitif/émotionnel) et comportemental."
+        ],
+        "explanation": "Le TD distingue trois plans complémentaires : biologique, psychologique et comportemental. Ils peuvent être associés dans une même situation."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_012",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 12,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "Quels médiateurs sont associés à la réponse d’alerte sympathique rapide ?",
+    "choices": [
+      "Acide lactique comme unique médiateur.",
+      "Une hormone équivalente à l’ACTH.",
+      "Noradrénaline.",
+      "Adrénaline.",
+      "ACTH comme neurotransmetteur sympathique unique."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le support distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels médiateurs dominent la voie d’alerte rapide ?",
+        "answers": [
+          "Adrénaline et noradrénaline, de la famille des catécholamines."
+        ],
+        "explanation": "Le support distingue la réponse sympathique/médullosurrénale mobilisant les catécholamines et la réponse hormonale impliquant ACTH et cortisol."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_013",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 13,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "Concernant l’axe hormonal du stress, quelles propositions sont justes ?",
+    "choices": [
+      "Un axe qui exclut toute réponse prolongée.",
+      "Il exclut tout effet sur la mobilisation énergétique.",
+      "Le cortex surrénalien sécrète du cortisol.",
+      "L’hypophyse participe via l’ACTH.",
+      "Il se confond entièrement avec le système sympathique immédiat."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "L’axe hypothalamus–hypophyse–corticosurrénale implique ACTH puis cortisol ; il diffère de la voie sympathique plus rapide et soutient la mobilisation.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Citer l’hormone hypophysaire et l’hormone surrénalienne du stress.",
+        "answers": [
+          "ACTH (hypophyse), puis cortisol (cortex surrénalien)."
+        ],
+        "explanation": "L’axe hypothalamus–hypophyse–corticosurrénale implique ACTH puis cortisol ; il diffère de la voie sympathique plus rapide et soutient la mobilisation."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_014",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 14,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "easy",
+    "question": "Dans le modèle de Selye, quelles phases se succèdent ?",
+    "choices": [
+      "Diagnostic de burn-out systématique.",
+      "Résistance.",
+      "Absence de réaction initiale.",
+      "Épuisement.",
+      "Alarme."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les trois phases du syndrome général d’adaptation sont alarme, résistance et épuisement. Ce modèle ne suffit pas à établir un diagnostic individuel.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les phases du modèle de Selye ?",
+        "answers": [
+          "Alarme, résistance et épuisement."
+        ],
+        "explanation": "Les trois phases du syndrome général d’adaptation sont alarme, résistance et épuisement. Ce modèle ne suffit pas à établir un diagnostic individuel."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_015",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 15,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "Quels effets de la réaction biologique d’alarme sont décrits ?",
+    "choices": [
+      "Impossibilité de toute action motrice.",
+      "Vigilance accrue.",
+      "Digestion toujours prioritaire.",
+      "Mise en tension musculaire.",
+      "Mobilisation cardio-respiratoire."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "L’organisme privilégie attention, circulation, ventilation et muscles ; la digestion peut passer au second plan pendant l’alerte.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles fonctions sont mobilisées dans l’alarme ?",
+        "answers": [
+          "Vigilance, fonctions cardio-respiratoires, muscles et énergie disponible."
+        ],
+        "explanation": "L’organisme privilégie attention, circulation, ventilation et muscles ; la digestion peut passer au second plan pendant l’alerte."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_016",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 16,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "Dans le modèle transactionnel de Lazarus et Folkman, l’évaluation primaire porte sur…",
+    "choices": [
+      "Il donne toujours un diagnostic de burn-out.",
+      "La menace ressentie.",
+      "Un diagnostic de burnout.",
+      "La liste exhaustive des soutiens disponibles.",
+      "Il concerne exclusivement les dosages hormonaux."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "L’évaluation primaire questionne la menace ou l’enjeu de la situation. L’inventaire des ressources appartient à l’évaluation secondaire.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que questionne l’évaluation primaire ?",
+        "answers": [
+          "La menace perçue et l’importance de la situation pour soi."
+        ],
+        "explanation": "L’évaluation primaire questionne la menace ou l’enjeu de la situation. L’inventaire des ressources appartient à l’évaluation secondaire."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_017",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 17,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "L’évaluation secondaire de Lazarus et Folkman concerne…",
+    "choices": [
+      "La certitude de maîtriser tous les événements.",
+      "Les ressources personnelles.",
+      "Uniquement la fréquence cardiaque.",
+      "Une capacité de contrôle absolu sur tous les événements.",
+      "La capacité de régulation."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "L’évaluation secondaire porte sur les ressources, la marge d’action et les appuis. Le contrôle perçu n’est pas une maîtrise absolue de la situation.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que questionne l’évaluation secondaire ?",
+        "answers": [
+          "« Que puis-je faire ? » Ressources, soutien et marges d’action perçus."
+        ],
+        "explanation": "L’évaluation secondaire porte sur les ressources, la marge d’action et les appuis. Le contrôle perçu n’est pas une maîtrise absolue de la situation."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_018",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 18,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "medium",
+    "question": "Quelles affirmations définissent le coping dans ce cours ?",
+    "choices": [
+      "Possibilité de comprendre, agir et s’autoréguler.",
+      "Absence obligatoire de toute émotion.",
+      "Ensemble des stratégies d’ajustement face à une difficulté.",
+      "L’interdiction de solliciter d’autres personnes.",
+      "Taxonomie détaillée des styles imposée par le support."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le coping concerne les façons de faire face. Le TD développe ressources et contrôle perçu, sans classification approfondie de styles à réciter.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que le coping ?",
+        "answers": [
+          "Stratégies d’ajustement face à une situation vécue comme difficile."
+        ],
+        "explanation": "Le coping concerne les façons de faire face. Le TD développe ressources et contrôle perçu, sans classification approfondie de styles à réciter."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_019",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 19,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "hard",
+    "question": "Un patient critique brusquement un soin. Quel raisonnement évite une interprétation excessive ?",
+    "choices": [
+      "Examiner le contexte et vérifier les faits.",
+      "Conclure que la colère du patient prouve une erreur.",
+      "Distinguer la critique entendue de « je suis nul ».",
+      "Identifier une réponse ajustée sans exclure la vérification d’une erreur.",
+      "Attribuer automatiquement une intention malveillante au patient."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le ressenti de dévalorisation est réel mais n’est pas une preuve ; il faut replacer l’échange dans son contexte, vérifier les faits et adapter sa réponse.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment limiter le biais d’interprétation après une critique ?",
+        "answers": [
+          "Séparer faits et ressenti, vérifier la situation, puis répondre de façon ajustée."
+        ],
+        "explanation": "Le ressenti de dévalorisation est réel mais n’est pas une preuve ; il faut replacer l’échange dans son contexte, vérifier les faits et adapter sa réponse."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_020",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 20,
+    "theme": "Biologie, évaluation cognitive et coping",
+    "difficulty": "hard",
+    "question": "Quelles limites faut-il respecter lorsqu’on utilise les modèles biologiques et cognitifs ?",
+    "choices": [
+      "L’ACTH et l’adrénaline sont exactement le même médiateur.",
+      "Une phase de Selye n’établit pas à elle seule un diagnostic.",
+      "Tout stress impose une évolution jusqu’au burn-out.",
+      "Une accélération cardiaque isolée suffit à estimer toute la gravité d’une menace.",
+      "Les ressources et l’interprétation varient selon la personne."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les modèles aident à comprendre des mécanismes et des perceptions mais ne remplacent ni l’analyse contextuelle ni une évaluation clinique adaptée.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi ces modèles ne suffisent-ils pas à diagnostiquer ?",
+        "answers": [
+          "Ils expliquent des réponses générales, sans établir le cas individuel."
+        ],
+        "explanation": "Les modèles aident à comprendre des mécanismes et des perceptions mais ne remplacent ni l’analyse contextuelle ni une évaluation clinique adaptée."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_021",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 21,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "easy",
+    "question": "Sous stress intense, que peut désigner l’effet tunnel ?",
+    "choices": [
+      "Une mémoire améliorée de tous les détails.",
+      "Une focalisation sur un élément au détriment d’autres.",
+      "Une réaction possible même chez un professionnel débutant.",
+      "Un rétrécissement de l’attention.",
+      "Une preuve de malveillance."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’effet tunnel correspond à une attention focalisée et potentiellement moins globale. Il ne renseigne ni sur les intentions morales ni sur une performance parfaite.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que l’effet tunnel ?",
+        "answers": [
+          "Une restriction de l’attention sur quelques éléments sous stress."
+        ],
+        "explanation": "L’effet tunnel correspond à une attention focalisée et potentiellement moins globale. Il ne renseigne ni sur les intentions morales ni sur une performance parfaite."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_022",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 22,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "medium",
+    "question": "Quels comportements sont présentés comme réactions spontanées possibles au stress ?",
+    "choices": [
+      "Conduite identique chez tous.",
+      "Évitement ou fuite.",
+      "Inhibition ou figement.",
+      "Affirmation de soi toujours impossible.",
+      "Agitation ou explosion."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le support aborde inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels comportements spontanés peuvent apparaître ?",
+        "answers": [
+          "Inhibition, explosion/agitation, évitement ou fuite."
+        ],
+        "explanation": "Le support aborde inhibition, explosion et évitement/fuite ; une meilleure souplesse permet ensuite de choisir comment répondre."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_023",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 23,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "medium",
+    "question": "Que signifie s’affirmer dans la relation professionnelle ?",
+    "choices": [
+      "Exprimer son besoin et sa position.",
+      "Imposer sa décision par agressivité.",
+      "La nécessité d’une confrontation agressive immédiate.",
+      "Céder toujours à toute demande.",
+      "Respecter l’autre et ses propres limites."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "L’affirmation de soi n’est ni domination ni soumission ; elle permet de poser des limites en restant respectueux et concret.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment distinguer affirmation de soi et agressivité ?",
+        "answers": [
+          "Exprimer ses besoins et limites sans attaquer ni écraser l’autre."
+        ],
+        "explanation": "L’affirmation de soi n’est ni domination ni soumission ; elle permet de poser des limites en restant respectueux et concret."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_024",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 24,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "medium",
+    "question": "Dans le cycle émotionnel décrit en TD, quelles étapes apparaissent ?",
+    "choices": [
+      "Phase de charge/excitation.",
+      "Obligation de décharger devant tout patient.",
+      "Repos/décharge végétative.",
+      "Expression ou décharge expressive.",
+      "Diagnostic définitif au retour au calme."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le cycle présenté décrit charge, expression, repos puis retour à l’équilibre. Il est pédagogique et ne prescrit pas une expression inconditionnelle devant les patients.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Donner la succession du cycle émotionnel enseigné.",
+        "answers": [
+          "Charge, décharge expressive, repos végétatif, retour à l’équilibre."
+        ],
+        "explanation": "Le cycle présenté décrit charge, expression, repos puis retour à l’équilibre. Il est pédagogique et ne prescrit pas une expression inconditionnelle devant les patients."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_025",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 25,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "easy",
+    "question": "Que signifie le « S » de l’aide-mémoire SAFA ?",
+    "choices": [
+      "Somnolence physiologique obligatoire.",
+      "Il exclut systématiquement toute détresse.",
+      "Sidération.",
+      "Sérénité durable.",
+      "Souffrance nécessairement cachée."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "SAFA commence par « sidération » : une personne figée peut être débordée et éprouver une détresse, même sans agitation apparente.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Dans SAFA, que signifie S ?",
+        "answers": [
+          "Sidération : figement possible dans le stress dépassé."
+        ],
+        "explanation": "SAFA commence par « sidération » : une personne figée peut être débordée et éprouver une détresse, même sans agitation apparente."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_026",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 26,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "medium",
+    "question": "Les quatre lettres de SAFA renvoient notamment à…",
+    "choices": [
+      "Satisfaction des besoins, adaptation, formation, autonomie.",
+      "Agitation incoordonnée.",
+      "Sidération.",
+      "Un score chiffré de diagnostic.",
+      "Fuite panique et actions automatiques."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "SAFA résume sidération, agitation incoordonnée, fuite panique et actions automatiques. C’est un moyen mnémotechnique, pas un barème diagnostique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Développer SAFA.",
+        "answers": [
+          "Sidération, Agitation incoordonnée, Fuite panique, Actions automatiques."
+        ],
+        "explanation": "SAFA résume sidération, agitation incoordonnée, fuite panique et actions automatiques. C’est un moyen mnémotechnique, pas un barème diagnostique."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_027",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 27,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "hard",
+    "question": "Une personne reste immobile et silencieuse après un événement brutal. Quelles propositions sont prudentes ?",
+    "choices": [
+      "L’absence de mouvement ne suffit pas à conclure à l’absence de stress.",
+      "Un diagnostic de stress post-traumatique est automatique.",
+      "On doit apprécier le contexte et demander un appui adapté.",
+      "Le silence exclut une détresse.",
+      "Une sidération est possible."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le figement peut être une réaction de stress dépassé. L’observation doit être contextualisée et ne permet pas de diagnostiquer un trouble psychiatrique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Un collègue figé après un choc peut-il être en détresse ?",
+        "answers": [
+          "Oui : la sidération est une réaction possible, à contextualiser."
+        ],
+        "explanation": "Le figement peut être une réaction de stress dépassé. L’observation doit être contextualisée et ne permet pas de diagnostiquer un trouble psychiatrique."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_028",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 28,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "medium",
+    "question": "Quelle différence entre stress dépassé et stress chronique est conforme au cours ?",
+    "choices": [
+      "Le stress chronique peut se développer avec récupération insuffisante.",
+      "Ce sont deux synonymes stricts.",
+      "Chronique : contrainte répétée ou persistante.",
+      "Le stress dépassé suppose toujours plusieurs années.",
+      "Dépassé : capacités momentanément débordées."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le stress dépassé décrit un débordement à un moment donné ; le stress chronique renvoie à la durée/répétition et à la récupération insuffisante.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Différencier stress dépassé et stress chronique.",
+        "answers": [
+          "Débordement immédiat versus exposition persistante ou répétée."
+        ],
+        "explanation": "Le stress dépassé décrit un débordement à un moment donné ; le stress chronique renvoie à la durée/répétition et à la récupération insuffisante."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_029",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 29,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "hard",
+    "question": "À propos du stress différé, quelles affirmations sont justes ?",
+    "choices": [
+      "Il peut être remarqué lors du relâchement.",
+      "Il n’existe qu’au cours même de la menace.",
+      "Son apparition mérite d’être distinguée du contexte initial.",
+      "La réaction peut apparaître après l’événement.",
+      "Il équivaut automatiquement à un trouble de stress post-traumatique."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Une réaction différée apparaît après coup. Elle n’équivaut pas par elle-même à un diagnostic de TSPT ; il faut garder le contexte et le temps de survenue.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que le stress différé ?",
+        "answers": [
+          "Une réaction ressentie après l’événement, parfois au relâchement."
+        ],
+        "explanation": "Une réaction différée apparaît après coup. Elle n’équivaut pas par elle-même à un diagnostic de TSPT ; il faut garder le contexte et le temps de survenue."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_030",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 30,
+    "theme": "Émotions, comportement et stress dépassé",
+    "difficulty": "hard",
+    "question": "Une collègue ne salue pas l’étudiante. Quels raisonnements limitent le stress auto-créé ?",
+    "choices": [
+      "Accuser immédiatement la collègue.",
+      "Chercher d’autres explications possibles.",
+      "Vérifier les faits si la situation le justifie.",
+      "Considérer son ressenti comme une preuve de reproche.",
+      "Reconnaître que « elle m’en veut » est une hypothèse."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le cours insiste sur la différence entre interprétation et réalité. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment éviter une interprétation anxieuse après un silence ?",
+        "answers": [
+          "Identifier l’hypothèse, envisager d’autres causes et vérifier les faits."
+        ],
+        "explanation": "Le cours insiste sur la différence entre interprétation et réalité. Une hypothèse anxieuse peut être questionnée plutôt que transformée en certitude."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_031",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 31,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "easy",
+    "question": "Quels signes professionnels peuvent accompagner un stress chronique ?",
+    "choices": [
+      "Perte d’élan au travail.",
+      "Baisse de concentration.",
+      "Augmentation des oublis ou erreurs.",
+      "Amélioration garantie du sommeil.",
+      "Efficacité systématiquement accrue."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le TD cite des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Citer trois signes professionnels du stress chronique.",
+        "answers": [
+          "Concentration réduite, erreurs/oubli et perte d’élan."
+        ],
+        "explanation": "Le TD cite des pertes de concentration et d’efficacité, erreurs, absentéisme et perte d’élan. Ces signes restent non spécifiques et doivent être contextualisés."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_032",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 32,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "medium",
+    "question": "Quels signes somatiques sont cités lors du stress chronique ?",
+    "choices": [
+      "Tensions posturales et troubles musculosquelettiques.",
+      "Troubles du sommeil.",
+      "Une maladie cardiovasculaire démontrée chez toute personne stressée.",
+      "Fatigue prolongée et douleurs.",
+      "Une absence garantie de tout problème digestif."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent au cours. Les risques associés ne sont ni systématiques ni diagnostiques individuellement.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Citer des manifestations physiques du stress chronique.",
+        "answers": [
+          "Fatigue, sommeil perturbé, douleurs et tensions musculosquelettiques."
+        ],
+        "explanation": "Sommeil, fatigue, douleurs et troubles musculosquelettiques figurent au cours. Les risques associés ne sont ni systématiques ni diagnostiques individuellement."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_033",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 33,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "medium",
+    "question": "Concernant les manifestations psychiques et comportementales, lesquelles sont possibles ?",
+    "choices": [
+      "Changement de consommations ou d’alimentation.",
+      "Irritabilité ou dévalorisation.",
+      "Bonheur constant et obligatoire.",
+      "Retrait ou agressivité.",
+      "Certitude que toute modification prouve un burn-out."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le TD énumère des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Citer trois changements psychiques ou comportementaux.",
+        "answers": [
+          "Irritabilité, retrait/agressivité et changement de consommation."
+        ],
+        "explanation": "Le TD énumère des modifications d’humeur, de relations et de consommation. Aucun signe isolé n’autorise un diagnostic de burn-out."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_034",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 34,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "easy",
+    "question": "Quelles dimensions composent le modèle de burn-out enseigné ?",
+    "choices": [
+      "Évaluation de l’ACTH comme critère unique.",
+      "Dépersonnalisation/cynisme.",
+      "Cycle obligatoire de trois étapes successives.",
+      "Diminution du sentiment d’accomplissement personnel.",
+      "Épuisement émotionnel."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Le burn-out est présenté par trois dimensions descriptives ; elles ne correspondent pas à trois étapes chronologiques imposées.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les trois dimensions du burn-out ?",
+        "answers": [
+          "Épuisement émotionnel, cynisme/dépersonnalisation, moindre accomplissement."
+        ],
+        "explanation": "Le burn-out est présenté par trois dimensions descriptives ; elles ne correspondent pas à trois étapes chronologiques imposées."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_035",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 35,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "medium",
+    "question": "Dans le burn-out, que peut évoquer la dépersonnalisation/cynisme ?",
+    "choices": [
+      "Une obligation de ne jamais ressentir de fatigue.",
+      "Une compétence clinique recherchée en soi.",
+      "Une compétence sans retentissement possible sur les soins.",
+      "Mise à distance négative des patients.",
+      "Froideur ou propos désabusés."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "La mise à distance et le cynisme peuvent apparaître comme réaction défensive, avec retentissement relationnel ; il ne faut ni les normaliser comme compétence ni en déduire un diagnostic isolément.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment se manifeste la dépersonnalisation dans le burn-out ?",
+        "answers": [
+          "Distance négative, froideur ou cynisme envers patients et collègues."
+        ],
+        "explanation": "La mise à distance et le cynisme peuvent apparaître comme réaction défensive, avec retentissement relationnel ; il ne faut ni les normaliser comme compétence ni en déduire un diagnostic isolément."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_036",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 36,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "hard",
+    "question": "Une professionnelle multiplie les heures supplémentaires malgré une fatigue importante. Quels facteurs du TD peuvent entretenir le risque ?",
+    "choices": [
+      "Manque de récupération.",
+      "Surinvestissement et difficulté à dire non.",
+      "Protection garantie contre l’épuisement par la motivation.",
+      "Dépendance à la reconnaissance d’autrui.",
+      "Obligation morale de ne jamais solliciter l’équipe."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le support et les exemples oraux relient le sur-engagement, la recherche de reconnaissance et l’absence de repos à un risque accru d’épuisement.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi le surinvestissement peut-il masquer l’épuisement ?",
+        "answers": [
+          "Il pousse à continuer malgré fatigue et besoin de récupération."
+        ],
+        "explanation": "Le support et les exemples oraux relient le sur-engagement, la recherche de reconnaissance et l’absence de repos à un risque accru d’épuisement."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_037",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 37,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "hard",
+    "question": "Quels retentissements du burn-out sur les soins sont envisagés dans le TD ?",
+    "choices": [
+      "Qualité de soins obligatoirement améliorée.",
+      "Erreurs ou accidents plus probables.",
+      "Absence totale d’effet sur la relation au patient.",
+      "Retrait relationnel ou attitudes maltraitantes possibles.",
+      "Diminution de l’attention."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Le cours aborde l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la prévention de l’épuisement concerne-t-elle le patient ?",
+        "answers": [
+          "Elle protège aussi la vigilance, la relation et la sécurité des soins."
+        ],
+        "explanation": "Le cours aborde l’impact sur vigilance, comportements et relation soignante ; c’est une raison de repérer les alertes et mobiliser le collectif."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_038",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 38,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "hard",
+    "question": "Quels éléments sont décrits à propos d’un événement potentiellement traumatisant ?",
+    "choices": [
+      "Diagnostic automatique de TSPT après tout événement brutal.",
+      "Effroi ou sentiment d’impuissance.",
+      "Confrontation à la mort ou à une violence intense.",
+      "Reviviscences et évitement possibles après coup.",
+      "Absence certaine d’effets différés."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le TD mentionne une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels signes évoqués peuvent suivre un événement traumatisant ?",
+        "answers": [
+          "Souvenirs intrusifs, évitement et hyperréactivité possibles."
+        ],
+        "explanation": "Le TD mentionne une exposition potentiellement traumatisante et des réactions variées. Ce passage est volontairement bref et ne fournit pas de critères diagnostiques de TSPT."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_039",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 39,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "medium",
+    "question": "Pourquoi faut-il être prudent devant un seul signe de fatigue ou d’irritabilité ?",
+    "choices": [
+      "Il donne à lui seul un diagnostic certain.",
+      "Un contexte professionnel sans intérêt pour interpréter le signe.",
+      "Il permet d’écarter toute autre cause.",
+      "Il est non spécifique.",
+      "Il faut regarder la persistance et le retentissement."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Une manifestation isolée peut avoir plusieurs significations. Le suivi de l’évolution, les autres signes et les difficultés concrètes orientent la recherche de soutien et l’évaluation.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Un signe isolé suffit-il à conclure au burn-out ?",
+        "answers": [
+          "Non : examiner association, durée, contexte et retentissement."
+        ],
+        "explanation": "Une manifestation isolée peut avoir plusieurs significations. Le suivi de l’évolution, les autres signes et les difficultés concrètes orientent la recherche de soutien et l’évaluation."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_040",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 40,
+    "theme": "Stress chronique, burn-out et psychotraumatisme",
+    "difficulty": "hard",
+    "question": "À propos du volet psychotraumatisme, quelles précautions correspondent au support ?",
+    "choices": [
+      "Le TD fournit un protocole de diagnostic infirmier complet du TSPT.",
+      "Le figement exclut toute réaction traumatique.",
+      "Le chapitre est seulement survolé dans ce TD.",
+      "Une réaction différée ne définit pas à elle seule un TSPT.",
+      "L’hyperréactivité peut faire partie des signes évoqués."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "L’intervenant annonce traiter ultérieurement la psychopathologie. La fiche et le QCM doivent rester descriptifs sans inventer de critères diagnostics.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel statut donner au volet psychotraumatisme du TD ?",
+        "answers": [
+          "Un aperçu non diagnostique, approfondi ultérieurement en psychopathologie."
+        ],
+        "explanation": "L’intervenant annonce traiter ultérieurement la psychopathologie. La fiche et le QCM doivent rester descriptifs sans inventer de critères diagnostics."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_041",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 41,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "easy",
+    "question": "À quoi sert l’auto-évaluation physique et psychique de 0 à 5 proposée en TD ?",
+    "choices": [
+      "Distinguer état physique et état psychique.",
+      "Repérer son état ressenti à un moment donné.",
+      "Observer éventuellement une évolution personnelle.",
+      "Établir un diagnostic standardisé de burn-out.",
+      "Classer les étudiants selon leur valeur professionnelle."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "La double cotation 0–5 est un outil de prise de conscience en séance, pas une échelle diagnostique ni un classement des personnes.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que mesure la double note 0–5 du TD ?",
+        "answers": [
+          "Un ressenti personnel physique et psychique, sans portée diagnostique."
+        ],
+        "explanation": "La double cotation 0–5 est un outil de prise de conscience en séance, pas une échelle diagnostique ni un classement des personnes."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_042",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 42,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "medium",
+    "question": "Quels axes de connaissance de soi le TD propose-t-il d’observer ?",
+    "choices": [
+      "Activité mentale.",
+      "Sensibilité émotionnelle.",
+      "Un profil définitif sans variabilité.",
+      "Groupe sanguin.",
+      "Tonus/réactivité."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Les trois continuums explorés portent sur réactivité physique, sensibilité et activité mentale. L’enjeu est de repérer ses tendances et leurs variations.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois axes de connaissance de soi ?",
+        "answers": [
+          "Tonus/réactivité, sensibilité et activité mentale."
+        ],
+        "explanation": "Les trois continuums explorés portent sur réactivité physique, sensibilité et activité mentale. L’enjeu est de repérer ses tendances et leurs variations."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_043",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 43,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "medium",
+    "question": "Dans la réflexion sur les besoins fondamentaux, quels besoins figurent dans le TD ?",
+    "choices": [
+      "Accomplissement.",
+      "Appartenance et estime.",
+      "Besoins physiologiques et sécurité.",
+      "Obligation de toujours satisfaire les autres avant soi.",
+      "Performance illimitée sans repos."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le TD reprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels besoins explorer dans la pyramide présentée ?",
+        "answers": [
+          "Physiologiques, sécurité, appartenance, estime, accomplissement."
+        ],
+        "explanation": "Le TD reprend les besoins physiologiques, de sécurité, d’appartenance, d’estime et d’accomplissement pour questionner l’équilibre et les limites."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_044",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 44,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "hard",
+    "question": "Quel usage faire de la réévaluation mensuelle des besoins fondamentaux citée en conclusion ?",
+    "choices": [
+      "Un point d’appui pour envisager des ajustements.",
+      "Un seuil clinique universel pour diagnostiquer.",
+      "Une dispense de demander de l’aide avant un mois.",
+      "Un repère personnel de réflexion.",
+      "Un moment pour identifier besoins insuffisamment respectés."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Le support invite à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert la réévaluation mensuelle des besoins ?",
+        "answers": [
+          "À réfléchir à son équilibre et aux ajustements nécessaires."
+        ],
+        "explanation": "Le support invite à réévaluer les besoins au moins une fois par mois comme exercice de réflexivité ; cela ne constitue ni un calendrier de diagnostic ni un délai d’attente obligatoire."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_045",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 45,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "medium",
+    "question": "Dans la terminologie propre à ce TD, la gestion primaire signifie…",
+    "choices": [
+      "Débriefer seulement après l’événement.",
+      "Il exclut la prise en compte des ressources.",
+      "Il interdit de préparer des pauses et des relais.",
+      "Prescrire un traitement systématique.",
+      "Préparer et prévenir avant une situation difficile."
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "Le cours utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « primaire » dans les trois temps du TD ?",
+        "answers": [
+          "Agir avant : préparation, prévention et ressources."
+        ],
+        "explanation": "Le cours utilise primaire/secondaire/tertiaire comme repères avant/pendant/après. La gestion primaire prépare le contexte et les ressources."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_046",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 46,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "medium",
+    "question": "Pendant une situation éprouvante en stage, quelles actions sont adaptées ?",
+    "choices": [
+      "Demander un relais si la sécurité le nécessite.",
+      "Exprimer un besoin concret à l’encadrant.",
+      "Se recentrer brièvement et respirer confortablement.",
+      "Cacher systématiquement toute difficulté.",
+      "Interrompre toute surveillance sans prévenir."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le TD recommande de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment agir pendant une situation stressante en stage ?",
+        "answers": [
+          "Se recentrer, exprimer sa difficulté et demander une aide adaptée."
+        ],
+        "explanation": "Le TD recommande de moduler son activation, de reconnaître ses limites et de mobiliser l’équipe. L’auto-régulation ne doit pas compromettre la sécurité des soins."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_047",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 47,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "hard",
+    "question": "Quelle distinction entre sas de transition et micro-pause respecte les sources ?",
+    "choices": [
+      "L’oral cite aussi de courtes pauses de 1 à 2 min entre deux patients.",
+      "Les deux indications constituent un protocole clinique fixe et contradictoire.",
+      "Le support écrit évoque un temps de transition d’environ 20 min ou plus.",
+      "Toute pause est interdite dans les soins.",
+      "Leurs durées dépendent du contexte de récupération."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le support propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que distinguer entre sas et micro-pause ?",
+        "answers": [
+          "Sas prolongé proposé dans le support ; micro-pause de 1–2 min évoquée à l’oral."
+        ],
+        "explanation": "Le support propose un sas prolongé ; l’intervenant évoque aussi de brefs moments entre patients. Ce sont des illustrations de récupération, pas des prescriptions universelles."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_048",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 48,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur la cohérence cardiaque et l’ancrage sont fidèles au TD ?",
+    "choices": [
+      "Ils sont des diagnostics médicaux.",
+      "Ils remplacent toujours les actions sur les conditions de travail.",
+      "Le TD impose une durée chiffrée unique à tous.",
+      "Des exercices de régulation sont proposés.",
+      "L’ancrage repose sur la perte de tout contact corporel."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Le cours présente respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert l’ancrage dans ce TD ?",
+        "answers": [
+          "À se recentrer sur les appuis corporels et l’instant présent."
+        ],
+        "explanation": "Le cours présente respiration consciente et ancrage comme outils possibles, sans durée de prescription universelle ni substitution au soutien et à la prévention organisationnelle."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_049",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 49,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "hard",
+    "question": "Après une situation émotionnellement chargée, quels éléments appartiennent à une posture réflexive ?",
+    "choices": [
+      "Identifier réactions et ressources.",
+      "Se rendre personnellement responsable de toute difficulté de service.",
+      "Décrire les faits sans les confondre avec son interprétation.",
+      "Écarter toute discussion avec le tuteur.",
+      "Chercher des ajustements pour la prochaine fois."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La démarche enseignée consiste à examiner faits, réactions, ressources, puis ajustements ; elle n’est pas une culpabilisation et admet le soutien collectif.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle mini-grille utiliser après un soin difficile ?",
+        "answers": [
+          "Faits, réactions, ressources, ajustements."
+        ],
+        "explanation": "La démarche enseignée consiste à examiner faits, réactions, ressources, puis ajustements ; elle n’est pas une culpabilisation et admet le soutien collectif."
+      }
+    ]
+  },
+  {
+    "id": "gestion_stress_v149_050",
+    "courseId": "gestion_stress_professionnel",
+    "ue": "B3.2.1 S1",
+    "course": "Gestion du stress, souffrance au travail et analyse des émotions",
+    "number": 50,
+    "theme": "Auto-évaluation, prévention et posture soignante",
+    "difficulty": "hard",
+    "question": "Quelle formulation traduit une communication adaptée pour solliciter de l’aide ?",
+    "choices": [
+      "« Je n’ai pas le droit de dire non. »",
+      "Refuser systématiquement tout relais professionnel.",
+      "« Je rencontre une difficulté pour réaliser ce soin en sécurité. »",
+      "« Tu fais toujours tout mal, débrouille-toi. »",
+      "Ne pas évoquer les besoins dans l’échange."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La communication proposée décrit une situation, exprime le ressenti ou le besoin et recherche une solution sans accusation. Elle est compatible avec une limite professionnelle explicite.",
+    "announcedCorrectCount": 1,
+    "partId": "p01",
+    "sourceKind": "official_support",
+    "sourceStatus": "active",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Comment demander du soutien sans accusation ?",
+        "answers": [
+          "Décrire la difficulté, nommer le besoin et proposer une solution ou un relais."
+        ],
+        "explanation": "La communication proposée décrit une situation, exprime le ressenti ou le besoin et recherche une solution sans accusation. Elle est compatible avec une limite professionnelle explicite."
+      }
+    ]
   }
 ]

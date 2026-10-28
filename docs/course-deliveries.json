@@ -3341,7 +3341,9 @@
         "checked": true
       },
       "artifactSha256s": {
-        "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6"
+        "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+        "gestion_stress_qcm_50_v149": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+        "gestion_stress_flashcards_50_v149": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3350,6 +3352,18 @@
           "sha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
           "pageCount": 17,
           "artifactId": "gestion_stress_fiche_v149_20261028"
+        },
+        "qcm": {
+          "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_QCM_50_Corriges_v149.pdf",
+          "sha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+          "pageCount": 24,
+          "artifactId": "gestion_stress_qcm_50_v149"
+        },
+        "flashcards": {
+          "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
+          "sha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+          "pageCount": 8,
+          "artifactId": "gestion_stress_flashcards_50_v149"
         }
       },
       "publishedVerification": {
@@ -3421,14 +3435,6 @@
       },
       "blockers": [
         {
-          "resource": "qcm",
-          "reason": "not_requested"
-        },
-        {
-          "resource": "flashcards",
-          "reason": "not_requested"
-        },
-        {
           "resource": "vocals",
           "reason": "not_requested"
         },
@@ -3444,6 +3450,54 @@
         "approvedAt": "2026-10-28T13:17:00+01:00",
         "bundleSha256": "0f0c353980594f71e38d93123d4e65445a7ff9a4007617bbf18d1fceb21652aa",
         "scopeLimit": "fiche_ecrite_v149_17p_uniquement"
+      },
+      "qcmBank": "data/course-banks/gestion_stress_professionnel_v149.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 50,
+      "qcmFlashcardsSupplement": {
+        "version": 1,
+        "status": "owner_accepted",
+        "courseId": "gestion_stress_professionnel",
+        "scope": "qcm_flashcards_vocabulary_only",
+        "qcmCount": 50,
+        "flashcardCount": 50,
+        "termsAdded": 46,
+        "termsReused": 4,
+        "bankPath": "data/course-banks/gestion_stress_professionnel_v149.json",
+        "assetIds": [
+          "gestion_stress_qcm_50_v149",
+          "gestion_stress_flashcards_50_v149"
+        ],
+        "sourceBasis": "Support officiel 65 diapositives + PT01/PT02 + fiche v1.49, matrice 59 notions",
+        "ownerReview": {
+          "status": "owner_accepted",
+          "reviewBasis": "GO explicite pour les ressources complémentaires et la mise à jour de l’application",
+          "reviewDate": "2026-10-28",
+          "qcmPdf": {
+            "sha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+            "pageCount": 24,
+            "renderedAllPages": true
+          },
+          "flashcardsPdf": {
+            "sha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0",
+            "pageCount": 8,
+            "renderedAllPages": true
+          }
+        },
+        "publishedVerification": {
+          "status": "PENDING_DEPLOYMENT",
+          "source": "github_pages_file_staged",
+          "qcmSha256": "5a8874717f6b7cf23bf4cbdda166d50f67e9db533d96060d392bda814e39903d",
+          "flashcardsSha256": "ebd5b373794e492a297deddae968cf76c7cac9aff049538a6b7f100c206573d0"
+        },
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "qcm_flashcards_vocabulary_only",
+          "approvedAt": "2026-10-28T14:28:00+01:00",
+          "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
       }
     }
   ],
