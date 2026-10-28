@@ -2594,9 +2594,9 @@
       "publicationHost": "github_pages",
       "provisional": true,
       "pedagogicalValidated": false,
-      "provisionalReason": "Support écrit propre au TD non reçu ; transcription non comparée à l'audio source ; CM4 distinct préservé.",
+      "provisionalReason": "Support officiel du TD reçu ; rapprochement avec la transcription et la fiche ancienne réalisé. Revue pédagogique et comparaison avec l'audio original encore à finaliser.",
       "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+      "publicAssetSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
       "qcmPublicAssetSha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
       "flashcardPublicAssetSha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
       "sheetResourceId": "a1_tgs_td_written_p01",
@@ -2614,8 +2614,8 @@
       "scriptsPreparedCount": 1,
       "requestedVocals": false,
       "sourceAudit": {
-        "officialChecked": false,
-        "officialSupportMissing": true,
+        "officialChecked": true,
+        "officialSupportMissing": false,
         "oralStatus": "unverified",
         "oralCoverageExhaustive": false,
         "recordingTailTruncated": false,
@@ -2624,9 +2624,7 @@
         "externalSourcesCount": 0,
         "externalAuthorization": "not_requested",
         "missingSources": [
-          "official_td_support",
-          "original_audio_comparison",
-          "written_official_support"
+          "original_audio_comparison"
         ],
         "speakerStudentSeparated": true,
         "teachingNotesPrivateTrace": true,
@@ -2645,10 +2643,10 @@
         "coverageEvidence": "Cinq objectifs de révision de la fiche source (p.1) rapprochés des rubriques de la fiche : vécu individuel, trois dimensions et contexte, cas Émilie, comparaison Henderson/TGS/trifocal, démarche infirmière partagée. Couverture limitée à ces objectifs, sans attestation d'exhaustivité du TD."
       },
       "writtenPdfAudit": {
-        "status": "PASS",
-        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+        "status": "TECHNICAL_PASS_FINAL_REVIEW_PENDING",
+        "pdfSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
         "pageSize": "A4",
-        "pageCount": 12,
+        "pageCount": 11,
         "allPagesRendered": true,
         "topAndBottomPurpleBandsEveryPage": true,
         "noOverlaidHeaders": true,
@@ -2662,21 +2660,78 @@
       },
       "writtenModelReference": "communication_written_v5.3_2026-10-24",
       "lexicon": {
-        "termCount": 30,
+        "termCount": 37,
         "textSelectable": true,
         "checked": true
       },
       "artifactSha256s": {
-        "tgs_td_sheet_public_candidate": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+        "tgs_td_sheet_public_candidate": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
         "tgs_td_qcm_public_candidate": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
         "tgs_td_flash_public_candidate": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f"
       },
       "publishedVerification": {
-        "status": "PENDING_DEPLOYMENT",
-        "source": "github_pages_file_staged",
-        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845"
+        "status": "NOT_DEPLOYED",
+        "source": "draft_candidate",
+        "pdfSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63"
       },
       "visualOwnerReview": {
+        "status": "layout_accepted_full_page_review_pending",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "reviewedPdfSha256s": {
+          "a1_tgs_td_written_p01": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63"
+        },
+        "ownerFeedback": "Maquette à six chapitres validée dans la conversation le 28 octobre 2026. La revue exhaustive à 100/200 % n'est pas attestée."
+      },
+      "blockers": [
+        {
+          "resource": "audio",
+          "reason": "oral_source_unverified",
+          "detail": "Transcription non confrontée à l'enregistrement original."
+        },
+        {
+          "resource": "sheet",
+          "reason": "final_visual_review_pending",
+          "detail": "Acceptation utilisateur de la maquette à 6 chapitres ; revue intégrale du PDF final à 100 % et 200 % et reçu V3 encore à compléter.",
+          "part": "TD"
+        }
+      ],
+      "publicationApproval": {
+        "status": "pending_final_lot_approval",
+        "authorization": "go_to_continue_preflight_2026-10-28",
+        "scope": "revised_sheet_only",
+        "mergeDeploymentCondition": "successful_tnr_and_owner_approval",
+        "provisionalOnly": true,
+        "bundleSha256": null,
+        "approvalBasis": "Feu vert pour poursuivre le contrôle, sans reçu final de publication des nouveaux octets."
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
+          "sha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+          "pageCount": 11,
+          "artifactId": "tgs_td_sheet_public_candidate"
+        },
+        "qcm": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
+          "sha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
+          "pageCount": 12,
+          "artifactId": "tgs_td_qcm_public_candidate"
+        },
+        "flashcards": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
+          "sha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
+          "pageCount": 7,
+          "artifactId": "tgs_td_flash_public_candidate"
+        }
+      },
+      "sourceBasis": {
+        "kind": "official_td_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "reconciled": false,
+        "transcriptCount": 1,
+        "relatedCm4Consulted": true
+      },
+      "previousVisualOwnerReview": {
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
         "method": "pdf_all_pages_checked",
@@ -2694,20 +2749,31 @@
         "reviewedAt": "2026-10-26",
         "acceptanceBasis": "GO explicite du propriétaire après présentation des trois PDF GitHub candidats ; revue visuelle des 31 pages de copies de travail et préflight graphique strict réussi sur les originaux GitHub. Aucune promesse de validation scientifique exhaustive ; réserves TD et audio maintenues."
       },
-      "blockers": [
-        {
-          "resource": "support",
-          "reason": "official_support_missing",
-          "detail": "Support propre au TD non reçu ; relancer E-Campus/Yikiforma selon disponibilité.",
-          "part": "TD"
-        },
-        {
-          "resource": "audio",
-          "reason": "oral_source_unverified",
-          "detail": "Transcription non confrontée à l'enregistrement original."
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "909229198665c9d20aef43821c6f40c24ecf03d5c30849a61cd3041656241e63",
+            "pageCount": 11,
+            "pagesChecked": [],
+            "status": "final_visual_review_pending",
+            "method": "technical_render_100_and_200_percent",
+            "checks": {
+              "MODEL_COMPARISON": "PENDING",
+              "BANDS_AND_TYPOGRAPHY": "PASS_TECHNICAL",
+              "MARGINS_AND_HIERARCHY": "PENDING",
+              "COLOR_AND_BOXES": "PENDING",
+              "NO_CLIPPING_OR_OVERLAP": "PASS_TECHNICAL",
+              "READABLE_AT_100_AND_200_PERCENT": "PENDING",
+              "STRUCTURE_AND_PAGINATION": "PASS_TECHNICAL"
+            },
+            "privateEvidenceSha256": "3572aeb7974e528be0e8706d42bd599f09644156e105e46e00afebeed2eb96ae"
+          }
         }
-      ],
-      "publicationApproval": {
+      },
+      "previousPublicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
@@ -2717,33 +2783,6 @@
         "bundleSha256": "591a1212c66949abbc54457c2e972ebf6f5c20d5b3d5858dd5d61ee1bd16ea43",
         "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante.",
         "reviewNote": "Recalcul SHA-256 sur le lot candidat original GitHub après restauration des trois PDF passant le contrôle strict."
-      },
-      "publicArtifacts": {
-        "sheet": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
-          "sha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
-          "pageCount": 12,
-          "artifactId": "tgs_td_sheet_public_candidate"
-        },
-        "qcm": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
-          "sha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
-          "pageCount": 12,
-          "artifactId": "tgs_td_qcm_public_candidate"
-        },
-        "flashcards": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
-          "sha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
-          "pageCount": 7,
-          "artifactId": "tgs_td_flash_public_candidate"
-        }
-      },
-      "sourceBasis": {
-        "kind": "oral_transcript",
-        "nativeSupportAvailable": false,
-        "reconciled": false,
-        "transcriptCount": 1,
-        "relatedCm4Consulted": true
       }
     },
     {
