@@ -3271,6 +3271,180 @@
       },
       "vocabularyDeferredCount": 49,
       "vocabularyDeliveryNote": "50 définitions dans la fiche et les flashcards ; seule la définition BMR, avec décomposition du sigle et distinction vérifiable, est publiée dans l'onglet Vocabulaire. Les 49 autres attendent des données terminologiques sourcées."
+    },
+    {
+      "courseId": "gestion_stress_professionnel",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "sheet_only_first_release",
+      "publicationScope": "revision_sheet_only",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "sourceBasis": {
+        "kind": "official_support",
+        "supportSlides": 65,
+        "transcriptParts": 2,
+        "privateSourcePreserved": true,
+        "nonRegressionCharter": "v1.49"
+      },
+      "sheetResourceId": "gestion_stress_fiche_v149_20261028",
+      "sheetResourceIds": [
+        "gestion_stress_fiche_v149_20261028"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "vocals": [],
+      "requestedVocals": false,
+      "sourceAudit": {
+        "officialChecked": true,
+        "oralStatus": "complete",
+        "oralCoverageExhaustive": true,
+        "recordingTailTruncated": false,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested",
+        "officialSupportPreservedPrivately": true
+      },
+      "writtenCoverage": {
+        "expectedEssential": 59,
+        "coveredEssential": 59,
+        "prioritySourceReference": "Support officiel 65 diapositives + PT01/PT02 ; matrice de couverture v1.49 privée",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "pedagogicalReservation": "Approches de bien-être citées dans le cours distinguées des traitements scientifiquement validés."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+        "pageSize": "A4",
+        "pageCount": 17,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 50,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6"
+      },
+      "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/gestion-stress-20261019/UE_B3_2_1_S1_Gestion_du_stress_Fiche_Revision_v149_17p.pdf",
+          "sha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+          "pageCount": 17,
+          "artifactId": "gestion_stress_fiche_v149_20261028"
+        }
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 17,
+        "reviewedAt": "2026-10-28T13:17:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6"
+        }
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
+            "pageCount": 17,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T13:17:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "95fdee090aa8528c2d4436b5c9c0b1101bfc6b2372ce34912fd909900cf0fe23"
+          }
+        }
+      },
+      "blockers": [
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "vocals",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "github_pages",
+          "reason": "pending_deployment_verification"
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "revision_sheet_only",
+        "approvedAt": "2026-10-28T13:17:00+01:00",
+        "bundleSha256": "0f0c353980594f71e38d93123d4e65445a7ff9a4007617bbf18d1fceb21652aa",
+        "scopeLimit": "fiche_ecrite_v149_17p_uniquement"
+      }
     }
   ],
   "supplementalResourceApprovals": [
