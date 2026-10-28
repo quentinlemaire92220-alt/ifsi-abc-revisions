@@ -1,0 +1,64 @@
+name: Finaliser PDF VIH approuvés sur branche privée de livraison
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+    paths:
+      - 'tools/finalize-vih-publication.mjs'
+      - '.github/workflows/vih-finalize-approved.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  finalize-exact-approved-pdfs:
+    if: github.head_ref == 'work/vih-validated-release-v830151-20261028' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: work/vih-validated-release-v830151-20261028
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Récupérer UNIQUEMENT les PDF signés par empreintes du lot approuvé
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/vih_approved
+          gh run download 40743009550 --repo "$GITHUB_REPOSITORY" \
+            --name "vih-pdf-candidats-prives-4a6c3d5c90eff25f93c74f161f508f737e4406e8" \
+            --dir /tmp/vih_approved
+          test -f /tmp/vih_approved/VIH_Fiche_V3_CANDIDAT.pdf
+          test -f /tmp/vih_approved/VIH_QCM_50_V3_CANDIDAT.pdf
+          test -f /tmp/vih_approved/VIH_Flashcards_50_V2_CANDIDAT.pdf
+      - name: Comparer les empreintes et installer les PDF approuvés sans toucher aux anciens
+        run: |
+          set -eu
+          echo "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e  /tmp/vih_approved/VIH_Fiche_V3_CANDIDAT.pdf" | sha256sum -c -
+          echo "884f4150c162727bf79bfed567ce0d239bcc6e705d1d63a92a75176e484ea7c9  /tmp/vih_approved/VIH_QCM_50_V3_CANDIDAT.pdf" | sha256sum -c -
+          echo "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7  /tmp/vih_approved/VIH_Flashcards_50_V2_CANDIDAT.pdf" | sha256sum -c -
+          mkdir -p assets/vih-20261027
+          cp /tmp/vih_approved/VIH_Fiche_V3_CANDIDAT.pdf assets/vih-20261027/UE_B1_3_S1_VIH_Fiche_Revision_17p_v149.pdf
+          cp /tmp/vih_approved/VIH_QCM_50_V3_CANDIDAT.pdf assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf
+          cp /tmp/vih_approved/VIH_Flashcards_50_V2_CANDIDAT.pdf assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf
+      - name: Calculer le digest réel du lot et enregistrer le reçu du GO
+        run: |
+          node tools/finalize-vih-publication.mjs
+          IFSI_BASE_SHA=9aa0ac1d033e9369cabd6519a97e53fea4f41c2f node tests/course-publication-approval.mjs
+      - name: Publier le commit sur la branche de livraison (pas sur main)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/course-deliveries.json assets/vih-20261027/*.pdf
+          if git diff --cached --quiet; then
+            echo "PDF et reçu déjà présents."
+          else
+            git commit -m "docs(VIH): octets PDF approuvés, SHA vérifiés et reçu de publication"
+            git push origin HEAD:work/vih-validated-release-v830151-20261028
+          fi
