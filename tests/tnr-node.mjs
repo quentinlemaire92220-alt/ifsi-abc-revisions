@@ -397,7 +397,11 @@ const expectedAudioByCourse={droits_patients:6,stomatotherapie:3,plaies_pansemen
 assert(vocalsRelease8393.length===audit821.expectedTotals.vocals,'Inventaire des vocaux désynchronisé du référentiel');
 assert(vocalsRelease8393.length>=75,'La série audio V8.30.93 doit compter 75 enregistrements');
 assert(new Set(vocalsRelease8393.map(v=>v.id)).size===vocalsRelease8393.length,'Doublon ID dans le catalogue vocal');
-assert(new Set(vocalsRelease8393.map(v=>v.driveId)).size===vocalsRelease8393.length,'Doublon Drive ID dans le catalogue vocal');
+const actualDriveVocals=vocalsRelease8393.filter(v=>v.driveId);
+assert(new Set(actualDriveVocals.map(v=>v.driveId)).size===actualDriveVocals.length,'Doublon Drive ID dans le catalogue vocal');
+const hostedVocals=vocalsRelease8393.filter(v=>!v.driveId);
+assert(hostedVocals.every(v=>v.localAudio&&fs.existsSync(v.localAudio)),'Audio local sans fichier physique');
+assert(new Set(hostedVocals.map(v=>v.localAudio)).size===hostedVocals.length,'Doublon chemin MP3 local');
 const authorizedAudioExtensions=json('docs/course-deliveries.json').audioSupplements||[];
 for(const [courseId,n] of Object.entries(expectedAudioByCourse)){
   const added=vocalsRelease8393.filter(v=>v.courseId===courseId);
