@@ -3036,7 +3036,7 @@
       "qcmBank": "data/course-banks/fievre_retour_voyage_paludisme.json",
       "qcmCount": 40,
       "flashcardCount": 50,
-      "vocabularyCount": 0,
+      "vocabularyCount": 1,
       "vocals": [],
       "scriptsPreparedCount": 3,
       "requestedVocals": true,
@@ -3118,11 +3118,11 @@
         }
       },
       "publicationApproval": {
-        "status": "approved",
+        "status": "pending_recalculated_digest",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-28T11:22:00+01:00",
-        "bundleSha256": "659a79f5f2bc7a88133794634452d2f210a526a768468a88d6a2c4b64d5738f9",
+        "bundleSha256": null,
         "provisionalOnly": true,
         "approvalBasis": "GO publication renouvelé et GO graphique pour les deux PDF présentés.",
         "mergeDeploymentCondition": "all_tnr_green"
@@ -3269,8 +3269,8 @@
         "transcriptCount": 1,
         "captureCount": 50
       },
-      "vocabularyDeferredCount": 50,
-      "vocabularyDeliveryNote": "50 définitions présentes dans la fiche PDF et les 50 flashcards ; intégration au module Vocabulaire différée pour absence de distinctions et d'étymologies sourcées."
+      "vocabularyDeferredCount": 49,
+      "vocabularyDeliveryNote": "50 définitions dans la fiche et les flashcards ; seule la définition BMR, avec décomposition du sigle et distinction vérifiable, est publiée dans l'onglet Vocabulaire. Les 49 autres attendent des données terminologiques sourcées."
     }
   ],
   "supplementalResourceApprovals": [
