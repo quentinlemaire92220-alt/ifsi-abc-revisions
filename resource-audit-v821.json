@@ -1,23 +1,23 @@
 {
-  "version": "8.30.146",
-  "auditedAt": "2026-10-27",
+  "version": "8.30.147",
+  "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "V8.30.145 — complément Psychologie de la santé : 50 QCM, 59 flashcards embarquées ; aucune nouvelle fiche ni nouveau vocal ; inventaire historique préservé.",
+  "note": "Candidat B1.3 provisoire : 40 QCM, 50 flashcards, 50 définitions et une fiche ; support officiel attendu.",
   "expectedTotals": {
-    "courses": 56,
-    "sheets": 74,
+    "courses": 57,
+    "sheets": 75,
     "infographics": 184,
     "vocals": 190,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1813
+    "qcmRuntimeMin": 1853
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
