@@ -183,7 +183,7 @@ def validate_qcm_theme_cards(text,rows):
     numbers=[int(m[1]) for m in blocks]
     if numbers!=expected_numbers:
         print('VIH_PDF_CORRECTIONS_DIAGNOSTIC',json.dumps({'found_count':len(numbers),'numbers':numbers,'expected':expected_numbers,'headers':[line for line in corrections.splitlines() if line.startswith('Q') and 'Réponses :' in line][:60]},ensure_ascii=False))
-    assert numbers==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
+    assert numbers==expected_numbers,('Corrigés manquants/dupliqués ou ordre différent : '+json.dumps({'trouvés':numbers,'attendus':expected_numbers,'entêtes':[line for line in corrections.splitlines() if line.startswith('Q') and 'Réponses :' in line][:55]},ensure_ascii=False))
     for i,(q,m) in enumerate(zip(ordered,blocks)):
         assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
