@@ -119,3 +119,17 @@ La relecture du **PDF Drive exact** rendu à taille lisible révèle des défaut
 **Conséquence :** ne pas promouvoir `MODEL_COMPARISON`, `MARGINS_AND_HIERARCHY` ou `COLOR_AND_BOXES` en PASS ; ne pas déclarer `all_pages_compared_at_100_and_200_percent`. Ces pages illustrent des **défauts de structure**, pas une simple préférence visuelle. L'analyse sémantique globale et quatre PLAUD restent non certifiées.
 
 Un rapport paginé de preuve est conservé **sur Drive privé uniquement**. **Aucune URL Drive personnelle ni transcription** ajoutée au dépôt. Il faut préparer une version corrigée (nouveaux octets, donc nouvelle approbation), contrôler l'ensemble du PDF et ensuite seulement activer l'unique fiche dans les manifestes et fusionner la PR. Les trois PDF historiques, les 105 QCM, 93 flashcards et 7 vocaux restent intacts sur `main`.
+
+## Candidat V4 — correction effective des défauts de structure (privé, à revalider)
+
+**GO de correction du propriétaire reçu** (« ok go »). Une vraie nouvelle révision de la fiche a été effectuée, **sans modifier les octets de la V3 acceptée**.
+
+- PDF **V4, 41 pages**, SHA-256 **`ed42a400c816c78de66a600841b8b359792b17c51f275519c82321476c7d90e5`**, **1 057 156 octets** ; dépôt sur Drive personnel **privé (owner-only)** et empreinte **identique après téléchargement de lecture retour**.
+- Refonte du bloc hospitalier de la V3 **p. 17–29** en **15 pages propres** : **327/327 blocs de texte sources consommés**, **25 tableaux structurés** (statut CRUA/RU/CDU, risques, dossiers, consentement, mineur/protecteur, biens et inventaire, personne à prévenir/confiance, directives anticipées, e-Satis, relations avec les usagers, cas patient AVC). **Aucun raccourci simpliste de suppression des notions.**
+- Séquences rétablies en **1–2–3–4** (inventaire, e-Satis) ; fragments orphelins re-rattachés à leur paragraphe ou en notes prudentes. Comparaison automatique de quatre mots : **97,02 % des séquences originales du bloc** retrouvées, les principales différences étant des libellés et circuits remis en forme. **Ce score ne prouve pas une revue sémantique complète.**
+- Contrôles du **fichier V4 exact lu depuis Drive** : **41/41 pages A4**, bandeaux violets 41/41, aucun span de texte hors page, corps du bloc repris >= 9 pt, **11/11 liens internes** avec nouvelles pages cibles, **25 pages non réécrites au texte de corps strictement identique**, dont **7 pages de définitions**.
+- Référence de modèle Communication V3 SHA-256 **`223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf`** vérifiée. Rapports privés de fabrication, contrôle par page et téléchargement conservés **dans Drive privé exclusivement**.
+
+**IMPORTANT — règles de mise en ligne :** la V3 a été acceptée par le propriétaire, mais la V4 a **des octets différents et n'a pas encore été approuvée par lui** ; le GO de correction ne vaut pas validation graphique/sémantique de cette révision. Le contrôle visuel de toutes les pages à **100 % et 200 %** et la matrice de non-régression pédagogique complète demeurent à certifier. Le contrôle technique et les 97,02 % lexicaux ne suffisent pas à cocher ces cases. Ne pas publier ni fusionner avant levée des contrôles et acceptation de la **V4 exacte**.
+
+Les trois anciennes fiches, leurs archives et les **105 QCM, 93 flashcards et 7 vocaux** sont inchangés sur `main`. Le PDF V4 n'est **pas public** et n'est **pas** référencé dans `sheets-3.json`.
