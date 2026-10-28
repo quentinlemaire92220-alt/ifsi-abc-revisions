@@ -3342,8 +3342,8 @@
       },
       "artifactSha256s": {
         "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
-        "gestion_stress_qcm_50_v149": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
-        "gestion_stress_flashcards_50_v149": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629"
+        "gestion_stress_qcm_50_v149": "b4fa2bc003cebbb41eabad9abd4a8cea129202c4f03fb08354df3ea4d901e9c1",
+        "gestion_stress_flashcards_50_v149": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3355,13 +3355,13 @@
         },
         "qcm": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_QCM_50_Corriges_v149.pdf",
-          "sha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
+          "sha256": "b4fa2bc003cebbb41eabad9abd4a8cea129202c4f03fb08354df3ea4d901e9c1",
           "pageCount": 24,
           "artifactId": "gestion_stress_qcm_50_v149"
         },
         "flashcards": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
-          "sha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
+          "sha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
           "pageCount": 8,
           "artifactId": "gestion_stress_flashcards_50_v149"
         }
@@ -3434,7 +3434,7 @@
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
             "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-            "artifactSha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
+            "artifactSha256": "b4fa2bc003cebbb41eabad9abd4a8cea129202c4f03fb08354df3ea4d901e9c1",
             "pageCount": 24,
             "pagesChecked": [
               1,
@@ -3476,7 +3476,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517"
+            "privateEvidenceSha256": "1988a2e02db7dd305e69e1313ea994c99b600ff1f4d7bdd26c600df50c2c24d6"
           }
         }
       },
@@ -3522,12 +3522,12 @@
           "reviewBasis": "GO explicite de validation et publication du lot complémentaire (QCM/flashcards/vocabulaire)",
           "reviewDate": "2026-10-28",
           "qcmPdf": {
-            "sha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
+            "sha256": "b4fa2bc003cebbb41eabad9abd4a8cea129202c4f03fb08354df3ea4d901e9c1",
             "pageCount": 24,
             "renderedAllPages": true
           },
           "flashcardsPdf": {
-            "sha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
+            "sha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
             "pageCount": 8,
             "renderedAllPages": true
           }
@@ -3535,8 +3535,8 @@
         "publishedVerification": {
           "status": "PENDING_DEPLOYMENT",
           "source": "github_pages_file_staged",
-          "qcmSha256": "73cd8d4d3fbc188dc2fa24be64fa291a9ed06efeef99d8450cc5ca0f8cab351d",
-          "flashcardsSha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629"
+          "qcmSha256": "b4fa2bc003cebbb41eabad9abd4a8cea129202c4f03fb08354df3ea4d901e9c1",
+          "flashcardsSha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b"
         },
         "publicationApproval": {
           "status": "approved",
@@ -3545,16 +3545,16 @@
           "approvedAt": "2026-10-28T14:28:00+01:00",
           "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
         },
-        "qaPrivateReportSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517",
+        "qaPrivateReportSha256": "1988a2e02db7dd305e69e1313ea994c99b600ff1f4d7bdd26c600df50c2c24d6",
         "termsContextualized": 4
       },
       "flashcardPdfReview": {
         "status": "owner_accepted",
-        "pdfSha256": "018649308616e4d62ecdfdc64d996356539d6109918a7a1ad068df3c1a88f629",
+        "pdfSha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
         "pageCount": 8,
         "allPagesRendered": true,
         "ownerAcceptance": "GO_publication_complement_explicit",
-        "privateEvidenceSha256": "eda765fcc8a087003b3c076916da744e64e4a25f4f6609339dfb5bef2ba24517",
+        "privateEvidenceSha256": "1988a2e02db7dd305e69e1313ea994c99b600ff1f4d7bdd26c600df50c2c24d6",
         "cardCount": 50
       }
     }
