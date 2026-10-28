@@ -3343,7 +3343,7 @@
       "artifactSha256s": {
         "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
         "gestion_stress_qcm_50_v149": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
-        "gestion_stress_flashcards_50_v149": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b"
+        "gestion_stress_flashcards_50_v149": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -3361,7 +3361,7 @@
         },
         "flashcards": {
           "path": "assets/gestion-stress-20261019/UE_B3_2_1_Gestion_du_stress_Flashcards_50_v149.pdf",
-          "sha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
+          "sha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
           "pageCount": 8,
           "artifactId": "gestion_stress_flashcards_50_v149"
         }
@@ -3476,7 +3476,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "d39e2dc4cb1bc3aa5816615b1b53552b6d4a0f16276a2f7f4e2e0b3e71bad194"
+            "privateEvidenceSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e"
           }
         }
       },
@@ -3527,7 +3527,7 @@
             "renderedAllPages": true
           },
           "flashcardsPdf": {
-            "sha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
+            "sha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
             "pageCount": 8,
             "renderedAllPages": true
           }
@@ -3536,7 +3536,7 @@
           "status": "PENDING_DEPLOYMENT",
           "source": "github_pages_file_staged",
           "qcmSha256": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
-          "flashcardsSha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b"
+          "flashcardsSha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9"
         },
         "publicationApproval": {
           "status": "approved",
@@ -3545,16 +3545,16 @@
           "approvedAt": "2026-10-28T14:28:00+01:00",
           "bundleSha256": "0000000000000000000000000000000000000000000000000000000000000000"
         },
-        "qaPrivateReportSha256": "d39e2dc4cb1bc3aa5816615b1b53552b6d4a0f16276a2f7f4e2e0b3e71bad194",
+        "qaPrivateReportSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e",
         "termsContextualized": 4
       },
       "flashcardPdfReview": {
         "status": "owner_accepted",
-        "pdfSha256": "30ae3147a14bc0fbb450277207af387cb150c88574a0c90808e7a439955bb00b",
+        "pdfSha256": "74dc57ebb4239f0a743523dcf4f078b69cd9caa694b4b2bf16e38812153a35b9",
         "pageCount": 8,
         "allPagesRendered": true,
         "ownerAcceptance": "GO_publication_complement_explicit",
-        "privateEvidenceSha256": "d39e2dc4cb1bc3aa5816615b1b53552b6d4a0f16276a2f7f4e2e0b3e71bad194",
+        "privateEvidenceSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e",
         "cardCount": 50
       }
     }
