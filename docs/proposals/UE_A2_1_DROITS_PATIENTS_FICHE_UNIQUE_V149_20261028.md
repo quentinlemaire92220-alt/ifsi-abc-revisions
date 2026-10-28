@@ -15,9 +15,9 @@ Les trois fiches et leurs identifiants actuels sont préservés tant que le nouv
 
 ## Candidat source, non public
 
-Une première fiche **écrite unique** a été produite en privé selon la charte v1.49 : **40 pages**, texte sélectionnable, synthèse générale précédant le lexique. Empreinte locale SHA-256 : `c5feb9eb80b928668c9e19c4a784d054cb40e39e1822db81db3ada3e764b6a8b`.
+Une première fiche **écrite unique** a été produite en privé selon la charte v1.49 : **40 pages**, texte sélectionnable, synthèse générale précédant le lexique (ancien candidat, conservé).\n\n**Revue privée V2 — 28/10/2026 :** correction d’une non-régression concrète du lexique. La fiche historique contenait **34 nuances et distinctions** liées à ses **34 entrées**, qui n’étaient pas toutes reprises. Elles sont désormais intégrées sous les termes correspondants, au sein d’un lexique de **57 entrées distinctes**. PDF candidat V2 : **42 pages**, SHA-256 exact vérifié sur le fichier local `3701476645214fbcc3852365c75327fcdf1bf9c44164418e530e1275a1d49589`. Vérifications automatisées sur **42 pages** : format A4, bandeaux violets détectés par pixels, corps ≥ 9 pt et pagination `n / 42`, **0 défaut constaté**. Ces contrôles ne remplacent pas la comparaison humaine des pages à 100 et 200 %, ni la validation pédagogique. L’ancien candidat et les trois publications historiques sont préservés.
 
-**Important :** ce candidat n'est **ni stocké dans GitHub, ni publié dans Drive/app, ni approuvé**. Les trois fiches historiques sont encore la référence opérationnelle. Une fiche de 40 pages n'est pas validée par son seul format : la couverture et les précisions des anciennes fiches et des sources doivent être comparées sémantiquement.
+**Important :** le PDF V2 n'est **ni stocké dans GitHub, ni publié dans Drive/app, ni approuvé**. Les trois fiches historiques sont encore la référence opérationnelle. Une fiche de 40 pages n'est pas validée par son seul format : la couverture et les précisions des anciennes fiches et des sources doivent être comparées sémantiquement.
 
 ## Contrôles bloquants encore ouverts
 
@@ -38,4 +38,4 @@ Une première fiche **écrite unique** a été produite en privé selon la chart
 
 ## État de cette branche
 
-Le périmètre ci-dessus est documenté ; **aucune suppression, aucun remplacement, aucun PDF nouveau et aucune mutation des ressources actives** n'ont été effectués ici. Le cours reste accessible dans sa version précédente sur `main`. La PR doit rester **brouillon / bloquée** tant que les conditions ne sont pas réalisées.
+Le périmètre ci-dessus est documenté, et la correction lexicale V2 existe en privé ; **aucune suppression, aucun remplacement public, aucun PDF nouveau dans le dépôt et aucune mutation des ressources actives** n'ont été effectués ici. Le cours reste accessible dans sa version précédente sur `main`. La PR doit rester **brouillon / bloquée** tant que les conditions ne sont pas réalisées.
