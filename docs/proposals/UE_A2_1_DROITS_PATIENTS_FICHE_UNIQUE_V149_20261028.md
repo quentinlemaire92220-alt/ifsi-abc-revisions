@@ -89,3 +89,15 @@ Le propriétaire a confirmé **« Oui »** en réponse à la question explicite 
 - **Limite :** l'accord sur le PDF ne transforme pas les contrôles non réalisés en PASS. Indexation lexicale ≠ revue sémantique exhaustive. L'hébergement privé ne fournit pas un lien étudiant accessible. La CI sur les seuls documents et tests de cette PR ne vaut pas validation d'une migration de `sheets-3.json`.
 
 **Statut : V3 `owner_accepted` au sens de l'autorisation humaine sur le fichier exact ; migration bloquée jusqu'à revue pédagogique et graphique intégrale et publication étudiant vérifiée.** Préserver les trois versions historiques, les 105 QCM, les 93 flashcards et les 7 vocaux.
+
+## Contrôle technique V3 après validation du propriétaire
+
+Lecture sur les **octets exacts hébergés sur Drive privé** : SHA-256 `7a9d7ccce76ed000394d600a3eac040d2e5e4f1b9aebc44a614c36f4e4120b5f`.
+
+- Toutes les **39 pages** analysées : pagination 39/39, bandeaux violets 39/39, aucun segment de texte hors format A4 détecté, **11 zones de navigation** présentes.
+- Quatre planches de contact réalisées (39 pages). Une revue à 100 % et 200 % de **toutes** les pages n'est **pas** attestée. Libellés secondaires < 9 pt repérés en page de garde et dans l'en-tête du lexique (p. 33 à 39) ; ces libellés font partie de la revue typographique à qualifier, ne pas proclamer un PASS inconditionnel.
+- Rapport de contrôle par page enregistré **uniquement sur Drive privé** propriétaire, sans preuve ni URL privée dans la PR.
+- Deux workflows de la PR sur le commit précédent étaient `success` : `TNR IFSI ABC` et `Audit qualité P2`. Ils ne contrôlaient **pas** le futur changement de manifeste ni le PDF publié.
+- **Prochaines barrières** : non-régression pédagogique sémantique exhaustive ; qualification de la taille des libellés et revue visuelle complète ; publication dans un dossier **partagé aux étudiants** avec lecture retour exacte ; migration JSON, CI/TNR et vérification réelle du PDF depuis l'application.
+
+Aucune activation des fiches uniques dans `main` à ce stade. La validation du propriétaire est acquise et **n'est pas à redemander pour ce même SHA**.
