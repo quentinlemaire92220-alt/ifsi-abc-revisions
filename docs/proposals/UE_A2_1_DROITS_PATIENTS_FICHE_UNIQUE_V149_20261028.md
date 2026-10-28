@@ -101,3 +101,21 @@ Lecture sur les **octets exacts hébergés sur Drive privé** : SHA-256 `7a9d7cc
 - **Prochaines barrières** : non-régression pédagogique sémantique exhaustive ; qualification de la taille des libellés et revue visuelle complète ; publication dans un dossier **partagé aux étudiants** avec lecture retour exacte ; migration JSON, CI/TNR et vérification réelle du PDF depuis l'application.
 
 Aucune activation des fiches uniques dans `main` à ce stade. La validation du propriétaire est acquise et **n'est pas à redemander pour ce même SHA**.
+
+## Contrôle bloquant identifié lors du GO de mise à jour de l'application
+
+**Décision de publication : BLOQUÉE par la charte v1.49 / contrat PDF V3.** La V3 reste **explicitement acceptée par le propriétaire** (mêmes octets, SHA-256 `7a9d7ccce76ed000394d600a3eac040d2e5e4f1b9aebc44a614c36f4e4120b5f`). Cette acceptation ne vaut pas validation de l'instruction de diffusion en présence de défauts de trame démontrés.
+
+La relecture du **PDF Drive exact** rendu à taille lisible révèle des défauts précis que les contrôles A4, bandeaux et débordements n'avaient pas détectés :
+
+| Page | Défaut observé | Remédiation à contrôler |
+| --- | --- | --- |
+| 18 | Comparaison CRUA/RU/CDU aplatie en paragraphes ; référence légale orpheline « (dignité), L1111-2… » | Restaurer un vrai tableau avec correspondance des colonnes et rattacher la citation à sa phrase |
+| 20 | Diagramme consentement/refus transformé en lignes indépendantes ; fragment orphelin « outil de traduction… » | Rétablir le sens des branches et un encadré lisible |
+| 21 | Tableau « Moment du soin / Actions » aplati ; fragment juridique « pas à qualifier automatiquement une complicité pénale » hors contexte | Reconstituer la mise en parallèle et rattacher ou corriger le fragment |
+| 24 | Séquence numérotée hors ordre de lecture **1–2–4–3** ; paragraphe commençant « ; aucune indemnisation… » | Restaurer l'ordre 1–2–3–4, vérifier la liaison et la lisibilité |
+| 25 | Tableau comparatif « Personne à prévenir / Personne de confiance » aplati ; ligne « confiance. CSP L1111-6… » séparée de sa phrase | Restaurer le tableau à deux colonnes et les phrases |
+
+**Conséquence :** ne pas promouvoir `MODEL_COMPARISON`, `MARGINS_AND_HIERARCHY` ou `COLOR_AND_BOXES` en PASS ; ne pas déclarer `all_pages_compared_at_100_and_200_percent`. Ces pages illustrent des **défauts de structure**, pas une simple préférence visuelle. L'analyse sémantique globale et quatre PLAUD restent non certifiées.
+
+Un rapport paginé de preuve est conservé **sur Drive privé uniquement**. **Aucune URL Drive personnelle ni transcription** ajoutée au dépôt. Il faut préparer une version corrigée (nouveaux octets, donc nouvelle approbation), contrôler l'ensemble du PDF et ensuite seulement activer l'unique fiche dans les manifestes et fusionner la PR. Les trois PDF historiques, les 105 QCM, 93 flashcards et 7 vocaux restent intacts sur `main`.
