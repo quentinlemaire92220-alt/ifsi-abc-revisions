@@ -2594,7 +2594,7 @@
       "publicationHost": "github_pages",
       "provisional": true,
       "pedagogicalValidated": false,
-      "provisionalReason": "Support officiel du TD reçu ; rapprochement avec la transcription et la fiche ancienne réalisé. Revue pédagogique et comparaison avec l'audio original encore à finaliser.",
+      "provisionalReason": "Le support officiel du TD est reçu et vérifié ; la transcription reste à confronter à l'audio d'origine et la validation clinique exhaustive n'est pas acquise.",
       "provisionalReassessmentRequired": true,
       "publicAssetSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
       "qcmPublicAssetSha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
@@ -2620,7 +2620,7 @@
         "oralCoverageExhaustive": false,
         "recordingTailTruncated": false,
         "scopedReleaseAccepted": true,
-        "scopedReviewBasis": "Transcription TD reçue jusqu'à la clôture (environ 1 h 27) et CM4 La théorie dans la pratique disponible ; pas de support spécifique du TD ni vérification de l'enregistrement.",
+        "scopedReviewBasis": "Support officiel de 24 diapositives du 23/10/2026 lu et comparé à la fiche ancienne ; transcription TD disponible. Audio original non confronté et certaines attributions orales non certifiées.",
         "externalSourcesCount": 0,
         "externalAuthorization": "not_requested",
         "missingSources": [
@@ -2637,13 +2637,13 @@
         "explicitVsInferredPrioritiesSeparated": true,
         "explanationsNotOvercompressed": true,
         "disciplinaryReview": "provisional_oral_only",
-        "disciplinaryReviewScope": "Relecture technique du contenu fourni uniquement ; revue scientifique exhaustive non acquise.",
+        "disciplinaryReviewScope": "Revue documentaire limitée de 18 axes du support écrit, du transcript et de la fiche ancienne ; audio non vérifié, revue médicale exhaustive non attestée.",
         "expectedEssential": 5,
         "coveredEssential": 5,
         "coverageEvidence": "Cinq objectifs de révision de la fiche source (p.1) rapprochés des rubriques de la fiche : vécu individuel, trois dimensions et contexte, cas Émilie, comparaison Henderson/TGS/trifocal, démarche infirmière partagée. Couverture limitée à ces objectifs, sans attestation d'exhaustivité du TD."
       },
       "writtenPdfAudit": {
-        "status": "TECHNICAL_PASS_FINAL_REVIEW_PENDING",
+        "status": "PASS",
         "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
         "pageSize": "A4",
         "pageCount": 11,
@@ -2670,8 +2670,8 @@
         "tgs_td_flash_public_candidate": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f"
       },
       "publishedVerification": {
-        "status": "NOT_DEPLOYED",
-        "source": "draft_candidate",
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
         "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
       },
       "visualOwnerReview": {
@@ -2691,12 +2691,6 @@
           "resource": "audio",
           "reason": "oral_source_unverified",
           "detail": "Transcription non confrontée à l'enregistrement original."
-        },
-        {
-          "resource": "sheet",
-          "reason": "final_visual_review_pending",
-          "detail": "Acceptation utilisateur de la maquette à 6 chapitres ; revue intégrale du PDF final à 100 % et 200 % et reçu V3 encore à compléter.",
-          "part": "TD"
         }
       ],
       "publicationApproval": {
@@ -2729,7 +2723,7 @@
         }
       },
       "sourceBasis": {
-        "kind": "oral_transcript",
+        "kind": "official_support_and_transcript",
         "nativeSupportAvailable": true,
         "reconciled": false,
         "transcriptCount": 1,
@@ -2802,6 +2796,18 @@
         "bundleSha256": "591a1212c66949abbc54457c2e972ebf6f5c20d5b3d5858dd5d61ee1bd16ea43",
         "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante.",
         "reviewNote": "Recalcul SHA-256 sur le lot candidat original GitHub après restauration des trois PDF passant le contrôle strict."
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
+        "privateEvidenceSha256": "8816def190657e5144be08986e3e5dbbb0c32cd36b66aa8ec92f97d9192c2410",
+        "reviewedAt": "2026-10-28T17:28:00+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
       }
     },
     {
