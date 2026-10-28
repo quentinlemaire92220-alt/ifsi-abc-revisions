@@ -76,3 +76,16 @@ Une version **V3 de travail** vient d'être produite pour lever deux écarts con
 - Contrôles privés sur les 39 pages : pagination, présence pixel de bandeau violet, absence de mots hors page, **57/57 termes**, nuances historiques et **11/11 zones cliquables** ; aucun écart technique automatique dans le fichier Drive relu. Les rapports de contrôle restent privés sur Drive.
 
 **Bloquants encore réels :** revue visuelle humaine détaillée de chaque page à 100 % et 200 % non certifiée ; rapprochement sémantique exhaustif des quatre transcriptions et cinq PDF sources non terminé ; **V3 non approuvée par le propriétaire** (les GO V2 ne valent pas GO sur nouveaux octets) ; lien étudiant public et tests d'intégration non validés. Aucune modification de `main`, des ressources étudiantes ou des archives. **Ne pas marquer `owner_accepted` sur cette V3.**
+
+## Validation explicite de la V3 — 28 octobre 2026
+
+Le propriétaire a confirmé **« Oui »** en réponse à la question explicite :
+« Tu confirmes que tu valides la fiche V3 de 39 pages *Droits des patients* pour remplacer la V2 et poursuivre son intégration dans l'application IFSI ABC ? »
+
+- **Document accepté :** fiche unique écrite V3, 39 pages, 57 entrées lexicales, 11 liens de sommaire, nuance des honoraires réintégrée.
+- **SHA-256 du PDF V3 effectivement relu depuis Google Drive Primary :** `7a9d7ccce76ed000394d600a3eac040d2e5e4f1b9aebc44a614c36f4e4120b5f`.
+- **Document Drive validé (privé, non partagé) :** identifiant `1CDJjyRYEluD0GQ8WU9rcpudVk3A1Q6X5`; 1 355 013 octets, 39 pages. Identité vérifiée par téléchargement authentifié + calcul SHA-256, pas seulement par nom ou taille.
+- **Périmètre :** accord du propriétaire sur la **V3 exacte**, remplaçant la V2 pour le lot futur. Le GO de publication/fusion du cours était déjà exprimé ; aucun nouvel accord sur le même fichier n'est nécessaire.
+- **Limite :** l'accord sur le PDF ne transforme pas les contrôles non réalisés en PASS. Indexation lexicale ≠ revue sémantique exhaustive. L'hébergement privé ne fournit pas un lien étudiant accessible. La CI sur les seuls documents et tests de cette PR ne vaut pas validation d'une migration de `sheets-3.json`.
+
+**Statut : V3 `owner_accepted` au sens de l'autorisation humaine sur le fichier exact ; migration bloquée jusqu'à revue pédagogique et graphique intégrale et publication étudiant vérifiée.** Préserver les trois versions historiques, les 105 QCM, les 93 flashcards et les 7 vocaux.
