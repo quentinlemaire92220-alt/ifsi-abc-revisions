@@ -1,3 +1,7 @@
+> **NOUVELLE PRIORITÉ v1.49 (28/10/2026) — contrôle de non-régression :** lire et appliquer `docs/skills/controle-non-regression-pedagogique-v149.md` et `docs/PEDAGOGICAL_NON_REGRESSION_V149.md` avant toute création/régénération. Comparer toutes les sources et l'ancienne fiche, y compris ses exemples/nuances, via matrice privée avant/après ; une simple citation de terme n'est pas une explication. Toute notion importante perdue, insuffisamment développée ou source essentielle non rapprochée bloque la validation. Aucune génération automatique lors du dépôt de PLAUD ; aucun changement de la trame V5.3 ni publication implicite.
+
+---
+
 # IFSI ABC — Préparation avant publication (contrat v1)
 **Directive ajoutée le 24 octobre 2026.** Ce contrat complète le standard écrit V5.3, sans modifier les ressources déjà publiées.
 
