@@ -54,3 +54,11 @@ Le propriétaire a répondu **« Allez go »** après son acceptation antérieur
 - **Hébergement :** aucune URL Drive vérifiée pour la V2. Ne pas faire pointer `sheets-3.json` ni `docs/course-deliveries.json` vers une URL fabriquée, et ne pas archiver les ressources historiques tant que la nouvelle n'est pas en ligne.
 
 **État exécutable :** PR en brouillon, migration active non appliquée. **GO reçu, blocages QA/PDF/hébergement non levés, fusion `main` différée** ; conserver strictement les ressources historiques et les banques interactives.
+
+
+## Progression privée du 28 octobre 2026 — transfert Drive vérifié
+
+- Le PDF V2 accepté a été **réellement transféré sur le Drive propriétaire Primary dans le dossier privé existant de validation**. Retour de lecture Drive : PDF, **608 750 octets**, propriétaire seul, `shared=false`. **Ce n'est pas le lien de publication étudiant** : ne pas recopier d'URL privée dans un manifeste public.
+- Une **matrice d'indexation privée** a été produite et également déposée dans ce même dossier de validation. Périmètre : **251 pages PDF** réparties entre 2 supports officiels (85 et 55 pages) et 3 fiches historiques (46, 43, 22 pages), **57 segments de 3 minutes** issus de 4 transcriptions PLAUD, **24 vérifications ciblées** de notions dont deux priorités oralement soulignées. Les segments ont été associés à des pages de la nouvelle fiche par recherche lexicale ; **l'indexation ne constitue pas la validation de leur fidélité sémantique**. La matrice reste privée et absente du dépôt.
+- Une nuance précise du support James (p. 6), « honoraires fixés avec tact et mesure », n'apparaît pas littéralement dans le candidat actuel : **à statuer en revue**, sans changement silencieux des octets validés.
+- L'hébergement privé et le GO du propriétaire sont maintenant acquis. Restent bloquants : **validation sémantique intégrale**, **conformité visuelle par rapport au modèle V3**, **lien étudiant public fonctionnel**, **CI/TNR**. Conserver `main` et les trois fiches historiques inchangés.
