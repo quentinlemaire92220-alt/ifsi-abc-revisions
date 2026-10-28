@@ -39,3 +39,18 @@ Une première fiche **écrite unique** a été produite en privé selon la chart
 ## État de cette branche
 
 Le périmètre ci-dessus est documenté, et la correction lexicale V2 existe en privé ; **aucune suppression, aucun remplacement public, aucun PDF nouveau dans le dépôt et aucune mutation des ressources actives** n'ont été effectués ici. Le cours reste accessible dans sa version précédente sur `main`. La PR doit rester **brouillon / bloquée** tant que les conditions ne sont pas réalisées.
+
+
+## GO de publication et fusion — 28 octobre 2026 (consigné sans exécution)
+
+Le propriétaire a répondu **« Allez go »** après son acceptation antérieure **« Je VALIDE »** du PDF V2 (**42 pages**, SHA-256 `3701476645214fbcc3852365c75327fcdf1bf9c44164418e530e1275a1d49589`). Cette réponse constitue une instruction explicite de **poursuivre la publication et la fusion après contrôles**, et ne doit pas être transformée en attestation de contrôles non réalisés. **Ne pas redemander inutilement cette autorisation pour les mêmes octets.**
+
+### Contrôles complémentaires menés
+
+- **Vérification législative, distincte du support de cours :** les lois n° 2026-794 du 18 août 2026 (Légifrance `https://www.legifrance.gouv.fr/jorf/id/JORFARTI000054706884`) et n° 2026-404 du 26 mai 2026 (`https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054131776`) existent. Le socle des cinq conditions de la première correspond au texte légal. Les modalités opérationnelles et les textes d'application n'ont **pas** été déclarés exhaustivement contrôlés. Aucune nouvelle information externe n'a été ajoutée au PDF accepté.
+- **Intégrité PDF :** SHA-256 recomputé sur les octets V2, **42 pages** ; aucun span extrait ne dépasse la géométrie A4, mais cela ne remplace pas une inspection visuelle intégrale.
+- **Différence graphique constatable vis-à-vis du modèle V3 Communication (19p) :** la page d'ouverture V2 laisse une grande zone blanche au lieu du tableau d'objectifs / double lecture et de la synthèse pratique du modèle ; le sommaire V2 prend trois pages au lieu de la synthèse rapide du modèle. Le **contrôle MODEL_COMPARISON n'est pas PASS** et ne doit pas être décrit comme tel. Un reformatage modifierait l'empreinte du PDF déjà accepté, et requerrait une réacceptation des nouveaux octets.
+- **Contrôle de non-régression :** 50/50 intitulés de sections localisés et 34 nuances de lexique réintégrées, mais comparaison sémantique exhaustive de tous les raisonnements et quatre transcriptions toujours en attente. Ne pas en déduire `pedagogicalNonRegression.decision=full_review_recorded`.
+- **Hébergement :** aucune URL Drive vérifiée pour la V2. Ne pas faire pointer `sheets-3.json` ni `docs/course-deliveries.json` vers une URL fabriquée, et ne pas archiver les ressources historiques tant que la nouvelle n'est pas en ligne.
+
+**État exécutable :** PR en brouillon, migration active non appliquée. **GO reçu, blocages QA/PDF/hébergement non levés, fusion `main` différée** ; conserver strictement les ressources historiques et les banques interactives.
