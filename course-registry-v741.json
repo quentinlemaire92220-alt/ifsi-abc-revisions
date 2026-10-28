@@ -1303,6 +1303,48 @@
       ],
       "flashcardTarget": 50,
       "authoredFlashcards": true
+    },
+    {
+      "id": "vih_b13_20261027",
+      "label": "VIH — PROVISOIRE",
+      "aliases": [
+        "VIH",
+        "Virus de l'immunodéficience humaine",
+        "SIDA — VIH",
+        "UE B1.3 S1 — VIH"
+      ],
+      "domain": "B",
+      "ue": "B1.3",
+      "teachingUnit": "B1.3",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": false,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Cours du 27/10/2026 ; 36 captures, 3 captures complémentaires et transcription de 58 min 32 s. Support officiel intégral attendu ; cas final non corrigé à l’oral, divergence épidémiologique et modalités PrEP/TPE à réexaminer.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf",
+      "qcmPdfQuestionCount": 50,
+      "flashcardTarget": 50,
+      "authoredFlashcards": true,
+      "audioStatus": "available",
+      "audioCount": 5,
+      "additionalDocuments": [
+        {
+          "type": "revision",
+          "label": "Fiche de révision VIH — PROVISOIRE (17 pages, 52 définitions)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Fiche_Revision_17p_v149.pdf"
+        },
+        {
+          "type": "qcm",
+          "label": "50 QCM VIH corrigés — PROVISOIRE (26 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "50 flashcards VIH — PROVISOIRE (11 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf"
+        }
+      ]
     }
   ],
   "auditBaseline": {
