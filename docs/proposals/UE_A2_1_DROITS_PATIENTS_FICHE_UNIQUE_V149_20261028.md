@@ -62,3 +62,17 @@ Le propriétaire a répondu **« Allez go »** après son acceptation antérieur
 - Une **matrice d'indexation privée** a été produite et également déposée dans ce même dossier de validation. Périmètre : **251 pages PDF** réparties entre 2 supports officiels (85 et 55 pages) et 3 fiches historiques (46, 43, 22 pages), **57 segments de 3 minutes** issus de 4 transcriptions PLAUD, **24 vérifications ciblées** de notions dont deux priorités oralement soulignées. Les segments ont été associés à des pages de la nouvelle fiche par recherche lexicale ; **l'indexation ne constitue pas la validation de leur fidélité sémantique**. La matrice reste privée et absente du dépôt.
 - Une nuance précise du support James (p. 6), « honoraires fixés avec tact et mesure », n'apparaît pas littéralement dans le candidat actuel : **à statuer en revue**, sans changement silencieux des octets validés.
 - L'hébergement privé et le GO du propriétaire sont maintenant acquis. Restent bloquants : **validation sémantique intégrale**, **conformité visuelle par rapport au modèle V3**, **lien étudiant public fonctionnel**, **CI/TNR**. Conserver `main` et les trois fiches historiques inchangés.
+
+
+## Fiche V3 de reprise graphique — 28/10/2026 (privée, NON validée)
+
+Le GO du propriétaire et son acceptation du **PDF V2 de 42 pages** restent conservés **sans altération des anciens octets**.
+
+Une version **V3 de travail** vient d'être produite pour lever deux écarts concrets :
+- Remplacement de l'ouverture trop vide et des **3 pages de sommaire** par une **page d'ouverture** inspirée du modèle Communication (priorités, lecture à deux niveaux, méthode en 5 étapes, sommaire rapide avec 11 liens internes). Total **39 pages**.
+- Rétablissement sur la **page 2** de la nuance exacte du support officiel de Timothy James, p. 6 : en libéral, honoraires « avec tact et mesure ».
+- Préservation textuelle vérifiée **V2 p. 6–42 = V3 p. 3–39**, hors numéros et pieds de page ; **aucun écart de texte du corps** dans ces 37 pages. Le lexique conserve les 57 termes et les nuances historiques.
+- PDF V3 hébergé et **relu depuis le Drive privé propriétaire** (non partagé). Contrôle du fichier relu : **39 pages**, **1 355 013 octets**, SHA-256 **`7a9d7ccce76ed000394d600a3eac040d2e5e4f1b9aebc44a614c36f4e4120b5f`**. Les octets relus depuis Drive constituent l'identité exacte à soumettre à une éventuelle nouvelle validation, pas ceux du rapport de génération local antérieur.
+- Contrôles privés sur les 39 pages : pagination, présence pixel de bandeau violet, absence de mots hors page, **57/57 termes**, nuances historiques et **11/11 zones cliquables** ; aucun écart technique automatique dans le fichier Drive relu. Les rapports de contrôle restent privés sur Drive.
+
+**Bloquants encore réels :** revue visuelle humaine détaillée de chaque page à 100 % et 200 % non certifiée ; rapprochement sémantique exhaustif des quatre transcriptions et cinq PDF sources non terminé ; **V3 non approuvée par le propriétaire** (les GO V2 ne valent pas GO sur nouveaux octets) ; lien étudiant public et tests d'intégration non validés. Aucune modification de `main`, des ressources étudiantes ou des archives. **Ne pas marquer `owner_accepted` sur cette V3.**
