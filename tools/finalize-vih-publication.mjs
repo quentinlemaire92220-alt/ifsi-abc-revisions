@@ -33,7 +33,8 @@ assert.equal(d.templateConformance.artifacts.qcm.pageCount,26);
 assert.equal(d.templateConformance.artifacts.sheet.status,'owner_accepted');
 assert.equal(d.templateConformance.artifacts.qcm.status,'owner_accepted');
 assert.equal(d.visualOwnerReview.reviewedPdfSha256s[d.publicArtifacts.sheet.artifactId],expected.sheet.sha);
-assert.equal(d.publicationApproval.status,'awaiting_bundle_digest');
+assert(['awaiting_bundle_digest','approved'].includes(d.publicationApproval.status),'Statut approbation inconnu');
+const alreadyApproved=d.publicationApproval.status==='approved';
 const data={
  registry:json('course-registry-v741.json'),
  sheets:[1,2,3].flatMap(i=>json('sheets-'+i+'.json')),
@@ -44,8 +45,11 @@ const data={
  imageHashes:{}
 };
 const digest=bundleDigest(publicationBundle(id,d,data));
-d.publicationApproval.status='approved';
-d.publicationApproval.bundleSha256=digest;
+if(alreadyApproved) assert.equal(d.publicationApproval.bundleSha256,digest,'Le lot a changé après validation');
+else {
+ d.publicationApproval.status='approved';
+ d.publicationApproval.bundleSha256=digest;
+}
 d.publicationApproval.approvalBasis='Validation graphique et GO MAJ explicitement donnés le 28 octobre 2026 ; trois PDF finalisés, octets et empreintes contrôlés. Statut scientifique provisoire conservé.';
 fs.writeFileSync(manifestPath,JSON.stringify(manifest,null,2)+'\n','utf8');
 console.log('GO reçu du propriétaire : 2026-10-28, graphiques acceptés');
