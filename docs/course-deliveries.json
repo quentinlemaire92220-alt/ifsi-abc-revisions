@@ -3490,6 +3490,20 @@
         "approvedAt": "2026-10-18T19:10:00Z",
         "bundleSha256": "e335116210035a6d3189e0a4d90ddd4bf75472a484a5fc0fc43bcd498a09d262"
       }
+    },
+    {
+      "courseId": "gestion_stress_professionnel",
+      "resourcePath": "data/course-banks/gestion_stress_v149.json",
+      "questionCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 50,
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "qcm_flashcards_vocabulary",
+        "approvedAt": "2026-10-28T15:30:00+01:00",
+        "note": "GO utilisateur du 28 octobre ; 50 QCM interactifs, 50 flashcards et 50 définitions de la fiche ; anciens supports inchangés"
+      }
     }
   ],
   "audioSupplements": [
