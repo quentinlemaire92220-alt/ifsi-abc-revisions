@@ -179,7 +179,7 @@ def validate_qcm_theme_cards(text,rows):
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
     corrections=without_theme_titles(corrections,rows)
     corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
-    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\.[ \t]*(?:\n|$)',corrections))
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\.[ \t]*\n?',corrections))
     numbers=[int(m[1]) for m in blocks]
     if numbers!=expected_numbers:
         print('VIH_PDF_CORRECTIONS_DIAGNOSTIC',json.dumps({'found_count':len(numbers),'numbers':numbers,'expected':expected_numbers,'headers':[line for line in corrections.splitlines() if line.startswith('Q') and 'Réponses :' in line][:60]},ensure_ascii=False))
