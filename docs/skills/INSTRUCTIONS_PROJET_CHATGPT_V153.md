@@ -1,3 +1,9 @@
+# AJOUT PRIORITAIRE v1.49 — À SYNCHRONISER DANS LES INSTRUCTIONS DU PROJET CHATGPT (28/10/2026)
+
+**Non-régression pédagogique obligatoire pour toute création et régénération.** Charger la charte propriétaire v1.49 et les référentiels `docs/PEDAGOGICAL_NON_REGRESSION_V149.md` et `docs/skills/controle-non-regression-pedagogique-v149.md`. Rassembler support officiel, captures, toutes les transcriptions PLAUD et anciennes versions de fiches. Établir une matrice privée de couverture **et d'héritage** par notion, avec page source, ancien/nouveau emplacement, priorité explicite/déduite et niveau d'explication. Une notion simplement citée n'est pas couverte si elle exige une explication ou un exemple. Comparer chaque notion importante avant/après ; statut `conservée / enrichie / corrigée / fusionnée / manquante` ; justifier les corrections. Toute perte inexpliquée, transcription essentielle incomplète ou contradiction majeure bloque la validation. Préserver les anciens PDF, ne rien générer par dépôt seul, aucune publication sans GO distinct, aucun rapport QA privé dans GitHub. **Cette modification de fichier GitHub n'édite pas automatiquement les paramètres du projet ChatGPT** : synchroniser manuellement au besoin. Conserver les règles du modèle écrit V5.3, de trame V3, des QCM, flashcards et vocaux.
+
+---
+
 # Instructions à coller dans le projet ChatGPT IFSI ABC — version 24/10/2026
 
 > Ce fichier est une proposition de texte pour les réglages **du projet ChatGPT**, qui ne peuvent pas être changés directement par une PR GitHub. Reprendre exactement ces règles lorsque le projet lit le dépôt.

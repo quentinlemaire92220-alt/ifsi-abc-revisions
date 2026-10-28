@@ -1,3 +1,9 @@
+# PRIORITÉ v1.49 — NON-RÉGRESSION PÉDAGOGIQUE (28/10/2026)
+
+Pour toute **création ou régénération de fiche**, appliquer **avant rédaction** `docs/PEDAGOGICAL_NON_REGRESSION_V149.md` et `docs/skills/controle-non-regression-pedagogique-v149.md`, en complément du modèle écrit V5.3 et du contrat trame V3. Inventorier la dernière fiche, ses versions et lexiques, le support officiel et toutes les transcriptions PLAUD/captures ; établir une **matrice privée de couverture ET d'héritage**. Une notion seulement mentionnée n'est pas considérée comme suffisamment traitée lorsqu'un mécanisme ou une application sont nécessaires. Comparer le fond **avant/après**, documenter `conservée / enrichie / corrigée / fusionnée / manquante`, bloquer toute perte inexpliquée ou source essentielle non rapprochée. Ne rien publier, ne migrer aucune ancienne fiche, et ne jamais stocker ces preuves privées sur GitHub. Le dépôt de sources seul ne déclenche pas une génération. Les règles V3/V5.3/QCM/flashcards/vocaux ne changent pas.
+
+---
+
 # Verrou prioritaire de trame — 26/10/2026
 
 Pour toute fiche de révision ou QCM, ChatGPT et Work doivent lire et appliquer `docs/PDF_TEMPLATE_CONTRACT_V3.md` et `docs/pdf-template-policy-v3.json` AVANT de produire ou réparer. Ouvrir les PDF Communication référencés et vérifier leurs empreintes ; référence inaccessible = arrêt avant toute conformité déclarée. Le contrôle technique V3, la revue intégrale comparée au modèle et le GO sur les octets finaux sont distincts et bloquants. Conserver l’historique ; ne pas migrer les PDF inchangés. Le reçu `templateConformance` de chaque PDF modifié entre dans le digest du lot. Ne jamais fabriquer une revue ou réécrire automatiquement un accord après correction.
