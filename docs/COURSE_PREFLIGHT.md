@@ -1,3 +1,5 @@
+> **Priorité pédagogique v1.49 (28/10/2026) :** pour tout PDF de fiche créé ou régénéré, la revue privée exige désormais une **matrice des notions du support/PLAUD ET des notions de l'ancienne fiche**, un contrôle de profondeur (`cité` ≠ `expliqué` ≠ `appliqué`) et un journal avant/après (`conservée / enrichie / corrigée / fusionnée / manquante`). En cas de perte injustifiée ou de source non rapprochée, statut BLOQUÉ ; **aucun PASS technique ne prouve cette revue sémantique**. Voir `docs/PEDAGOGICAL_NON_REGRESSION_V149.md`. Aucune modification des TNR historiques par cette directive.
+
 > Priorité 26/10/2026 : appliquer aussi [le contrat de trame V3](PDF_TEMPLATE_CONTRACT_V3.md), références figées et revue liée aux octets. Les contrôles historiques ci-dessous restent obligatoires.
 
 # Préflight de préparation et de publication
