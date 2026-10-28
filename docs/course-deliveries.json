@@ -3118,11 +3118,11 @@
         }
       },
       "publicationApproval": {
-        "status": "pending_recalculated_digest",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-28T11:22:00+01:00",
-        "bundleSha256": null,
+        "bundleSha256": "659a79f5f2bc7a88133794634452d2f210a526a768468a88d6a2c4b64d5738f9",
         "provisionalOnly": true,
         "approvalBasis": "GO publication renouvelé et GO graphique pour les deux PDF présentés.",
         "mergeDeploymentCondition": "all_tnr_green"
