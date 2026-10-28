@@ -3122,7 +3122,7 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-28T11:22:00+01:00",
-        "bundleSha256": "0f041f86bbbbfa9b89fb03dd64ef2a68e7a612ee0a4f9b2c4c7e0e0d63a8f6ba",
+        "bundleSha256": "036eeb580e9cd4cd3f90ec0de8668ca25b464cfedb5dbc304276164a1d88d785",
         "provisionalOnly": true,
         "approvalBasis": "GO publication renouvelé et GO graphique pour les deux PDF présentés.",
         "mergeDeploymentCondition": "all_tnr_green"
@@ -3154,7 +3154,7 @@
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
         "method": "pdf_all_pages_checked",
-        "pagesChecked": 27,
+        "pagesChecked": 14,
         "reviewedAt": "2026-10-28T11:22:00+01:00",
         "reviewerDecision": "explicit_graphic_acceptance",
         "reviewedPdfSha256s": {
@@ -3162,7 +3162,13 @@
           "fievre_paludisme_qcm_p01": "bd902b48ca6b92ddf2ebd4b7547fefa59f9099b1928263cce4c800333f2453dd"
         },
         "acceptanceBasis": "GO après présentation des PDF de 14 et 13 pages. Contrôle graphique sur les fichiers finaux ; sans prétention de revue médicale.",
-        "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a"
+        "privateEvidenceSha256": "dafde4e1bdd6db3676f03ab2fd04de34bfcf6b1af7cef526f5c52f74dce4429a",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        }
       },
       "templateConformance": {
         "contract": "ifsi_pdf_template_v3",
