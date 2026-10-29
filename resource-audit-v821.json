@@ -1,5 +1,5 @@
 {
-  "version": "8.30.153",
+  "version": "8.30.154",
   "auditedAt": "2026-10-29",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,10 +7,10 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "État de prépublication technique : ressource PDF Droits des patients déposée sans nouvelle fiche active ; bilan des catalogues inchangé.",
+  "note": "Fiche unique Droits des patients : trois archives conservées physiquement, une fiche active, 105 QCM, 93 cartes, 7 vocaux.",
   "expectedTotals": {
     "courses": 60,
-    "sheets": 78,
+    "sheets": 79,
     "infographics": 184,
     "vocals": 195,
     "v820QcmImported": 1174,

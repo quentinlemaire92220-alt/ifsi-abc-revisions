@@ -78,6 +78,60 @@ function preserveApprovedTD3OfficialSupport(oldCourse,nextCourse,oldDelivery,nex
    oldDelivery.artifactSha256s?.[oldDelivery.publicArtifacts[role].artifactId],
    id+': empreinte historique '+role+' modifiée');
 }
+// Migration exceptionnelle A2.1 : trois PDF conservés comme archives,
+ // une fiche écrite fusionnée active. L'ancien garde-fou « complément additif »
+ // n'est pas applicable, mais toutes les autres ressources restent protégées.
+function preserveApprovedDroitsConsolidation(oldCourse,nextCourse,prior,next){
+ const id='droits_patients';
+ assert.equal(oldCourse.id,id);
+ assert.deepEqual(nextCourse,expectedPublicCourseAfterWithdrawal(oldCourse),
+  'Droits des patients : identité et cours historique altérés');
+ assert.equal(next.publicationApproval?.status,'approved');
+ assert.equal(next.publicationApproval.authorization,'explicit_go_publication');
+ assert.equal(next.publicationApproval.scope,'course_package');
+ assert.notDeepEqual(next.publicationApproval,prior.publicationApproval,
+  'GO historique réutilisé au lieu du GO de migration');
+ const migration=next.historicalSheetMigration;
+ assert.equal(migration?.status,'archived_in_catalog_only',
+  'Migration non identifiée');
+ assert.deepEqual(migration.historicalSupplementReview,prior.partDeliveries?.[0],
+  'Complément historique non conservé exactement');
+ assert.deepEqual(migration.priorPublicationApproval,prior.publicationApproval,
+  'Ancien reçu publication non préservé');
+ const allowed=['sheetResourceId','sheetResourceIds','infographicSheetResourceId',
+  'infographicSheetVisualAudit','infographicSheetPublishedVerification',
+  'dualSheetCoverage','visualAudit','publishedVerification','artifactSha256s',
+  'publicationApproval','partDeliveries','historicalSheetMigration',
+  'publicationHost','publicArtifacts','publicSheetVerification',
+  'pedagogicalNonRegression','templateConformance','metadataOnlyCorrection'];
+ assert.deepEqual(without(next,allowed),without(prior,allowed),
+  'Changement hors fiche de révision consolidée');
+ for(const [key,sha] of Object.entries(prior.artifactSha256s||{}))
+  assert.equal(next.artifactSha256s?.[key],sha,
+   'Empreinte d’une archive ou ressource historique altérée');
+ const previousSheets=before('sheets-3.json').filter(s=>s.courseId===id);
+ const currentSheets=disk('sheets-3.json').filter(s=>s.courseId===id);
+ assert.equal(previousSheets.length,3);
+ assert.equal(currentSheets.length,4);
+ for(const previous of previousSheets){
+  const current=currentSheets.find(s=>s.resourceId===previous.resourceId);
+  assert.deepEqual(current,{...previous,sourceStatus:'archived'},
+   'Ancienne fiche altérée au-delà du statut archive');
+ }
+ const active=currentSheets.filter(s=>s.sourceStatus!=='archived');
+ assert.equal(active.length,1);
+ assert.equal(active[0].resourceId,next.sheetResourceId);
+ assert.equal(next.qcmCount,prior.qcmCount);
+ assert.equal(next.flashcardCount,prior.flashcardCount);
+ assert.deepEqual(next.vocals,prior.vocals,'Sept vocaux historiques modifiés');
+ assert.deepEqual(next.qcmBanks,prior.qcmBanks,'Banques QCM modifiées');
+ assert.equal(next.publicSheetVerification?.status,'MATCH',
+  'PDF public non vérifié');
+ assert.equal(next.publicSheetVerification?.pdfSha256,
+  next.publicArtifacts?.sheet?.sha256,
+  'Octets publics divergents');
+}
+
 function preserveApprovedAddition(oldCourse,nextCourse,oldDelivery,nextDelivery){
  const id=oldCourse.id,approval=nextDelivery.publicationApproval;
  assert.equal(approval?.status,'approved',id+': complément sans approbation');
@@ -316,6 +370,7 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
   else if(course.id==='theorie_gestion_symptomes_td' && previousDelivery)preserveApprovedTD3OfficialSupport(oldCourse,course,previousDelivery,nextDelivery);
   else if(course.id==='theorie_gestion_symptomes_td' && nextDelivery?.pedagogicalNonRegression?.contract==='ifsi_pedagogical_non_regression_v149')
     preserveApprovedProvisionalWrittenRevision(oldCourse,course,previousDelivery,nextDelivery);
+   else if(previousDelivery && course.id==='droits_patients')preserveApprovedDroitsConsolidation(oldCourse,course,previousDelivery,nextDelivery);
    else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
  }

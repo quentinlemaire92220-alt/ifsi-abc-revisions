@@ -577,6 +577,22 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/course-droits_patients-p01.mjs
 
+      - name: Vérifier PDF Pages anonyme — HTTP 200, SHA-256 et taille
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-public-pages-probe.mjs
+
+      - name: Vérifier octets du PDF Droits des patients approuvé
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-approved-pdf-asset.mjs
+
+      - name: Vérifier archivage et migration fiche unique Droits des patients
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-single-sheet-transition.mjs
+
+      - name: Tests d'affichage des fiches archivées
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-archived-ui.mjs
+
       - name: Contrats et intégrité de publication ajoutés au TNR complet
         if: ${{ !cancelled() }}
         run: |

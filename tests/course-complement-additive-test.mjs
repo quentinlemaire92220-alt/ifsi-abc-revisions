@@ -83,15 +83,52 @@ function allowOfficialSupportWithUnverifiedAudio(previous,current){
  // valide strictement la signature et l'empreinte finale du lot.
  return true;
 }
+// Fusion officielle de trois fiches vers une fiche unique : les anciennes lignes
+// restent lisibles dans le catalogue, mais sont exclues de l'affichage étudiant.
+// Interdiction de modifier leur URL, leurs octets, ou toute autre propriété.
+function allowDroitsArchival(previous,current){
+ const ids=new Set([
+  'droits_patients_fiche_p01',
+  'droits_patients_fiche_infographiee_p01',
+  'droits_patients_fiche_complement_p01_20261021'
+ ]);
+ if(previous.courseId!=='droits_patients'||!ids.has(previous.resourceId))return false;
+ const migration=delivery.historicalSheetMigration;
+ if(migration?.status!=='archived_in_catalog_only'||
+   migration.historicalResourceIds?.length!==3 ||
+   !ids.has(migration.historicalSheetResourceId) ||
+   !ids.has(migration.historicalInfographicSheetResourceId))return false;
+ if(!ids.has(previous.resourceId)||!migration.historicalResourceIds.includes(previous.resourceId))return false;
+ assert.equal(previous.sourceStatus,'active','Ancienne fiche non active dans la base');
+ assert.ok(current,'Archive de fiche supprimée : '+previous.resourceId);
+ assert.deepEqual(current,{...previous,sourceStatus:'archived'},
+  'Une fiche historique a été altérée autrement que par archivage');
+ assert.equal(delivery.sheetResourceId,'droits_patients_fiche_unique_20261029',
+  'Migration sans fiche consolidée de référence');
+ assert.equal(sheets.filter(x=>x.courseId==='droits_patients'&&x.sourceStatus!=='archived').length,1,
+  'Plusieurs fiches Droits des patients encore actives');
+ return true;
+}
 for(const s of oldSheets){
  const next=sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url);
  if(next && JSON.stringify(next)===JSON.stringify(s))continue;
  if(allowOfficialSupportWithUnverifiedAudio(s,next))continue;
+ if(allowDroitsArchival(s,next))continue;
  if(!next&&read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(s.courseId,base);
  else assert.deepEqual(next,s);
 }
 const part=delivery.partDeliveries.find(p=>p.deliveryMode==='existing_course_complement');assert.ok(part);
-assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId).primaryRevision,false);
+if(delivery.historicalSheetMigration?.status==='archived_in_catalog_only'){
+ const oldComplement=delivery.historicalSheetMigration.historicalSupplementReview;
+ assert.equal(oldComplement?.sheetResourceId,'droits_patients_fiche_complement_p01_20261021',
+  'Ancien complément non retrouvé dans l’historique');
+ assert.equal(sheets.find(s=>s.resourceId===oldComplement.sheetResourceId)?.sourceStatus,'archived',
+  'Complément historique non archivé');
+ assert.equal(sheets.find(s=>s.resourceId===oldComplement.sheetResourceId)?.primaryRevision,false,
+  'L’ancien complément était secondaire');
+ assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId)?.primaryRevision,true,
+  'La nouvelle fiche consolidée n’est pas la référence principale');
+}else assert.equal(sheets.find(s=>s.resourceId===part.sheetResourceId).primaryRevision,false);
 const rightsAdded=addedVocals.filter(v=>v.courseId==='droits_patients').map(v=>v.id);
 assert.deepEqual(delivery.vocals,[...prior.vocals,...rightsAdded],'Les six anciens MP3 sont préservés');
 if(rightsAdded.length){

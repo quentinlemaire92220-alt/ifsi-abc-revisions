@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.153';
+const VERSION='8.30.154';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : ressources techniques actualisées ; tous les cours conservent leur présentation précédente.`;
+const READY=`Application prête • V${VERSION} : Droits des patients : fiche unique consolidée et banques préservées.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}

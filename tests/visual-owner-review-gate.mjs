@@ -135,6 +135,50 @@ export function validateVisualOwnerReview(courseId,delivery,data){
 }
 
 export function requireVisualReviewIfChanged(courseId,prior,next,oldData,newData){
+ // Migration dédiée A2.1 : l'ancien test « complément ajouté » imposait que
+ // les fiches restent actives. Ici elles sont archivées, jamais effacées.
+ if(courseId==='droits_patients' && next?.historicalSheetMigration?.status==='archived_in_catalog_only'){
+  const before=(oldData.sheets||[]).filter(x=>x.courseId===courseId);
+  const after=(newData.sheets||[]).filter(x=>x.courseId===courseId);
+  const ids=['droits_patients_fiche_p01','droits_patients_fiche_infographiee_p01',
+   'droits_patients_fiche_complement_p01_20261021'];
+  assert.equal(before.length,3,'Le lot source ne comporte pas les trois anciennes fiches');
+  assert.equal(after.length,4,'La migration doit conserver trois archives et ajouter une fiche');
+  for(const id of ids){
+   const old=before.find(x=>x.resourceId===id);
+   const archived=after.find(x=>x.resourceId===id);
+   assert.ok(old&&archived,'Archive historique manquante '+id);
+   assert.deepEqual(archived,{...old,sourceStatus:'archived'},
+    'Archive altérée autrement que par son statut '+id);
+  }
+  const active=after.filter(x=>x.sourceStatus!=='archived');
+  assert.equal(active.length,1,'Plusieurs fiches actives à l'+'issue de la fusion');
+  assert.equal(active[0].resourceId,'droits_patients_fiche_unique_20261029');
+  assert.equal(active[0].primaryRevision,true);
+  const prevGraphics=(oldData.infographics||[]).filter(x=>x.courseId===courseId);
+  const nextGraphics=(newData.infographics||[]).filter(x=>x.courseId===courseId);
+  assert.deepEqual(nextGraphics,prevGraphics,'Infographie historique modifiée');
+  for(const graphic of prevGraphics.filter(x=>x.localImage))
+   assert.equal(newData.imageHashes?.[graphic.localImage],oldData.imageHashes?.[graphic.localImage],
+    'Octets de la planche historique modifiés');
+  const expected=next.publicArtifacts?.sheet?.sha256;
+  assert.match(expected||'',/^[a-f0-9]{64}$/,'Empreinte du PDF consolidé absente');
+  const meta=next.metadataOnlyCorrection;
+  assert.equal(meta?.toSha256,expected,'Correction métadonnées sans correspondance des octets');
+  assert.equal(meta?.fromSha256,
+   '5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361',
+   'Source de la correction métadonnées modifiée');
+  assert.equal(meta?.contentStreamsIdentical,true,'Flux de dessin non conservés');
+  assert.equal(meta?.allPagesTextIdentical,true,'Texte des 42 pages non conservé');
+  assert.equal(meta?.allPageLinksIdentical,true,'Liens internes non conservés');
+  assert.equal(next.visualAudit?.pageCount,42,'Audit graphique de 42 pages absent');
+  assert.equal(next.visualAudit?.pdfSha256,expected,'Audit non rattaché à la V8');
+  assert.equal(next.templateConformance?.artifacts?.sheet?.ownerApproval,'user_message_2026_10_29',
+   'Validation visuelle du contenu précédent non retrouvée');
+  // Cette exception ne vaut PAS revue sémantique exhaustive ou reçu public.
+  // Les portes dédiées v1.49 et publication HTTP restent indépendantes.
+  return true;
+ }
  // Une première déclaration de livraison QCM ne doit pas inventer une nouvelle fiche.
  // L'exemption est strictement limitée à zéro nouvelle association visuelle et aux octets
  // du catalogue historique de fiches/infographies conservés sans mutation.
