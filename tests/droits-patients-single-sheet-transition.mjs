@@ -85,7 +85,7 @@ if(legacy){
  const publicProof=course.publicSheetVerification;
  assert.equal(publicProof?.status,'MATCH','Lecture publique anonyme de la candidate validée non attestée');
  assert.equal(publicProof.source,'anonymous_public_download',
-  'Vérification depuis un compte autorisé ou l'objet Git insuffisante');
+  'Vérification depuis un compte autorisé ou l’objet Git insuffisante');
  assert.equal(publicProof.method,'full_download_sha256',
   'Hash des octets publics complets non vérifié');
  assert.equal(publicProof.httpStatus,200,'Accès HTTP public 200 non prouvé');
