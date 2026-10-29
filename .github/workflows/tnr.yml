@@ -577,6 +577,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/course-droits_patients-p01.mjs
 
+      - name: Vérifier archivage et migration fiche unique Droits des patients
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-single-sheet-transition.mjs
+
       - name: Contrats et intégrité de publication ajoutés au TNR complet
         if: ${{ !cancelled() }}
         run: |
