@@ -71,7 +71,10 @@ for(const c of deck){
   const n=expected(front),listedAnswers=answers.length===1
     ? (/qualités associer aux quatre phases du care/i.test(front)
        ? answers[0].split(/,| et /).slice(0,4)
-       : /\s;\s/.test(answers[0])?answers[0].split(/\s*;\s*/).filter(Boolean):answers)
+       : /\s;\s/.test(answers[0])?answers[0].split(/\s*;\s*/).filter(Boolean)
+       : n===3 && /^[^,;]+,\s*[^,;]+(?:,\s*|\s+et\s+)[^,;]+[.!?]?$/.test(answers[0])
+         ? answers[0].split(/,\s*|\s+et\s+/).filter(Boolean)
+         : answers)
     : answers;
   const countMismatch=!!n&&listedAnswers.length!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
