@@ -302,14 +302,14 @@
         "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5"
       },
       "publicationApproval": {
-        "status": "pending_new_digest_after_metadata_fix",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-29T11:47:00+01:00",
-        "bundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80",
+        "bundleSha256": "c0bf2eb6dfefff5192f849a2fabc538a6ee9a67b8ffc8a80b810c5e43bdfe8d2",
         "artifactSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
-        "evidence": "owner_explicit_go_to_integrate_29_oct_2026",
-        "note": "GO initial pour contenu inchangé. Empreinte finale et reçu de publication distincts à revalider techniquement.",
+        "evidence": "owner_GO_integration_and_final_V8_confirmation_2026_10_29",
+        "note": "Approbation explicite du lot unique et des mêmes pages de contenu, PDF V8 aux métadonnées neutres ; n'atteste pas une revue sémantique exhaustive, traitée dans un reçu séparé.",
         "priorBundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80"
       },
       "partDeliveries": [
