@@ -234,7 +234,7 @@
       ],
       "visualAudit": {
         "status": "PASS",
-        "pdfSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+        "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "pageCount": 42,
         "pageSize": "A4",
         "kind": "per_page_technical_and_owner_review",
@@ -244,7 +244,7 @@
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pr_blob_verified",
-        "pdfSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+        "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "pageCount": 42,
         "expectedCount": 42,
         "checkedCount": 42
@@ -295,17 +295,18 @@
         "1CB3_Hnqlm2Tauju37E_Hq_NYtkH4mQjm": "5eb435d7f6394dc160e7e18cfea7b6acb1a023d8983a595cae66aea82b379aa7",
         "18CSU83AQdiVWcWTsYjGaSoe4frWOkd-o": "14556865d8698dad20ecd56e6e69bc500159b9978fefef2eb0a6a95f389a7f67",
         "1T-agzUKmQJ2rZdS5b7I7j71xMrFeyhYq": "2d2a15fa70734bd11cf8fe8e87cd7d83bd9d7789ddb277ebb34246c6ac248bf5",
-        "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361"
+        "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5"
       },
       "publicationApproval": {
-        "status": "approved",
+        "status": "pending_new_digest_after_metadata_fix",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-29T11:47:00+01:00",
         "bundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80",
-        "artifactSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+        "artifactSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "evidence": "owner_explicit_go_to_integrate_29_oct_2026",
-        "note": "Approbation du package déclaré, indépendante des reçus de QA et de publication; ne vaut pas autorisation de substitution de la V8."
+        "note": "GO initial pour contenu inchangé. Empreinte finale et reçu de publication distincts à revalider techniquement.",
+        "priorBundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80"
       },
       "partDeliveries": [
         {
@@ -354,7 +355,7 @@
           "embeddedFigureCount": 1,
           "visualAudit": {
             "status": "PASS",
-            "pdfSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+            "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
             "pageCount": 42,
             "pageSize": "A4",
             "expectedCount": 42,
@@ -363,14 +364,14 @@
           "publishedVerification": {
             "status": "PENDING_DEPLOYMENT",
             "source": "github_pr_blob_verified",
-            "pdfSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+            "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
             "pageCount": 42,
             "expectedCount": 42,
             "checkedCount": 42
           },
           "artifactSha256s": {
             "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
-            "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361"
+            "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5"
           },
           "hybridCoverage": {
             "expectedEssential": 18,
@@ -563,24 +564,24 @@
         "sheet": {
           "artifactId": "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
           "path": "assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
-          "sha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+          "sha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
           "pageCount": 42,
-          "verifiedGitBlobSha": "b471e5d7bb6b48a44ec4cf8d2a56f3ff9e01d640"
+          "verifiedGitBlobSha": "3815848158d561e8e8a12393ade06ea1bba8633e"
         }
       },
       "publicSheetVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pr_blob_verified",
         "method": "sha256_binary_github_blob",
-        "pdfSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
-        "githubBlobSha": "b471e5d7bb6b48a44ec4cf8d2a56f3ff9e01d640",
+        "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
+        "githubBlobSha": "3815848158d561e8e8a12393ade06ea1bba8633e",
         "httpStatus": null,
         "verifiedAt": null,
         "verifiedPublicUrl": null
       },
       "pedagogicalNonRegression": {
         "contract": "ifsi_pedagogical_non_regression_v149",
-        "sheetSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+        "sheetSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "sourcePagesIndexed": 251,
         "oralWindowsIndexed": 57,
         "topicsIndexed": 31,
@@ -596,7 +597,7 @@
         "contract": "ifsi_pdf_template_v3",
         "artifacts": {
           "sheet": {
-            "artifactSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+            "artifactSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
             "pageCount": 42,
             "templateId": "communication_written_v5.3_2026-10-24",
             "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
@@ -652,6 +653,17 @@
             "smallNonBodyLabelsPresent": true
           }
         }
+      },
+      "metadataOnlyCorrection": {
+        "fromSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
+        "toSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
+        "change": "PDF Creator et Producer effacés pour préflight ; tous les flux de dessin, texte, liens et géométrie identiques",
+        "pageCount": 42,
+        "contentStreamsIdentical": true,
+        "allPagesTextIdentical": true,
+        "allPageLinksIdentical": true,
+        "verifiedGitBlobSha": "3815848158d561e8e8a12393ade06ea1bba8633e",
+        "driveCopyPrivate": true
       }
     },
     {

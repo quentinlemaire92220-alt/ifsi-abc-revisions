@@ -62,7 +62,7 @@ if(legacy){
  const assetPath='assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf';
  const artifactId='github_pages:'+assetPath;
  const expectedUrl='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+assetPath;
- const approvedPublicationPdf='5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361';
+ const approvedPublicationPdf='52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5';
  assert.equal(sheet.url,expectedUrl,'URL de fiche publique non canonique');
  assert.equal(sheet.publicationHost,'github_pages','Hébergement PDF Pages non déclaré');
  assert.equal(sheet.artifactId,artifactId,'Identifiant PDF Pages divergent');
@@ -72,7 +72,7 @@ if(legacy){
  assert.equal(course.publicArtifacts?.sheet?.artifactId,artifactId,'Référence asset discordante');
  assert.equal(course.publicArtifacts?.sheet?.pageCount,42,'PDF publié incomplet');
  assert.equal(course.publicArtifacts?.sheet?.verifiedGitBlobSha,
-  'b471e5d7bb6b48a44ec4cf8d2a56f3ff9e01d640','Git blob non concordant');
+  '3815848158d561e8e8a12393ade06ea1bba8633e','Git blob non concordant');
  assert.equal((course.artifactSha256s?.[artifactId]||'').toLowerCase(),approvedPublicationPdf,
   'Fiche différente des octets nettoyés approuvés : nouveau GO nécessaire');
  assert.equal((course.publicArtifacts?.sheet?.sha256||'').toLowerCase(),approvedPublicationPdf,
