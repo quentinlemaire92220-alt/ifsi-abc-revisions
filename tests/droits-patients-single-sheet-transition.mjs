@@ -57,29 +57,39 @@ if(legacy){
   historic.includes(p.sheetResourceId) ||
   (p.sheetResourceIds||[]).some(x=>historic.includes(x))),
   'Complément historique toujours actif en doublon');
- const idFromUrl=String(sheet.url||'').match(/^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:\?.*)?$/)?.[1];
- assert.ok(idFromUrl,'Lien Drive réel obligatoire pour la fiche unique');
- assert.equal(sheet.driveId,idFromUrl,'ID Drive et URL incohérents');
- assert.ok(!Object.values(legacyDriveIds).includes(idFromUrl),'Fiche unique pointant sur un PDF historique');
-
- // L'accord du 29/10/2026 porte sur les OCTETS EXACTS de la candidate nettoyée validée, pas sur un
- // contenu approximatif ni sur un ancien GO de publication du lot historique.
+ // URL publique finale et objet Git binaire réellement chargé sur la branche.
+ // Un lien Github Pages attendu n'est pas à lui seul la preuve d'un déploiement.
+ const assetPath='assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf';
+ const artifactId='github_pages:'+assetPath;
+ const expectedUrl='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+assetPath;
  const approvedPublicationPdf='5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361';
- assert.equal((course.artifactSha256s?.[sheet.driveId]||'').toLowerCase(),approvedPublicationPdf,
+ assert.equal(sheet.url,expectedUrl,'URL de fiche publique non canonique');
+ assert.equal(sheet.publicationHost,'github_pages','Hébergement PDF Pages non déclaré');
+ assert.equal(sheet.artifactId,artifactId,'Identifiant PDF Pages divergent');
+ assert.ok(!sheet.driveId,'ID du Drive privé exposé comme ressource publique');
+ assert.equal(course.publicationHost,'github_pages','Hôte publié non déclaré');
+ assert.equal(course.publicArtifacts?.sheet?.path,assetPath,'Chemin du PDF actif erroné');
+ assert.equal(course.publicArtifacts?.sheet?.artifactId,artifactId,'Référence asset discordante');
+ assert.equal(course.publicArtifacts?.sheet?.pageCount,42,'PDF publié incomplet');
+ assert.equal(course.publicArtifacts?.sheet?.verifiedGitBlobSha,
+  'b471e5d7bb6b48a44ec4cf8d2a56f3ff9e01d640','Git blob non concordant');
+ assert.equal((course.artifactSha256s?.[artifactId]||'').toLowerCase(),approvedPublicationPdf,
   'Fiche différente des octets nettoyés approuvés : nouveau GO nécessaire');
+ assert.equal((course.publicArtifacts?.sheet?.sha256||'').toLowerCase(),approvedPublicationPdf,
+  'Le SHA du lot ne correspond pas au PDF public');
  assert.equal(sheet.pageCount,42,'La fiche unique validée contient 42 pages');
 
- // Un lien Drive connu/privé n'est PAS une preuve d'accès étudiant. Le reçu
- // provient d'un VRAI téléchargement anonyme et vérifie les octets servis.
+ // Le hash de l'objet Git n'est PAS une preuve d'accès anonyme sur GitHub Pages.
+ // Maintenir un blocage distinct jusqu'au vrai téléchargement HTTP public
+ // de la future URL étudiante avec calcul SHA-256 des octets servis.
  const publicProof=course.publicSheetVerification;
  assert.equal(publicProof?.status,'MATCH','Lecture publique anonyme de la candidate validée non attestée');
  assert.equal(publicProof.source,'anonymous_public_download',
-  'Vérification privée/authentifiée insuffisante');
+  'Vérification depuis un compte autorisé ou l'objet Git insuffisante');
  assert.equal(publicProof.method,'full_download_sha256',
   'Hash des octets publics complets non vérifié');
  assert.equal(publicProof.httpStatus,200,'Accès HTTP public 200 non prouvé');
  assert.equal(publicProof.url,sheet.url,'URL vérifiée différente du lien étudiant');
- assert.equal(publicProof.driveId,sheet.driveId,'Drive ID public non concordant');
  assert.equal((publicProof.pdfSha256||'').toLowerCase(),approvedPublicationPdf,
   'Le PDF servi publiquement diffère de la candidate nettoyée validée');
  assert.ok(typeof publicProof.verifiedAt==='string' &&
