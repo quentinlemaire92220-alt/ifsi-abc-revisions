@@ -121,7 +121,7 @@ const part=delivery.partDeliveries.find(p=>p.deliveryMode==='existing_course_com
 if(delivery.historicalSheetMigration?.status==='archived_in_catalog_only'){
  const oldComplement=delivery.historicalSheetMigration.historicalSupplementReview;
  assert.equal(oldComplement?.sheetResourceId,'droits_patients_fiche_complement_p01_20261021',
-  'Ancien complément non retrouvé dans l'historique');
+  'Ancien complément non retrouvé dans l’historique');
  assert.equal(sheets.find(s=>s.resourceId===oldComplement.sheetResourceId)?.sourceStatus,'archived',
   'Complément historique non archivé');
  assert.equal(sheets.find(s=>s.resourceId===oldComplement.sheetResourceId)?.primaryRevision,false,
