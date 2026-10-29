@@ -37,9 +37,18 @@ for(const d of read('docs/course-deliveries.json').courses.filter(d=>d.publicArt
   assert.equal(d.status,'partial','Fiche seule présentée comme cours complet');
   continue;
  }
- const rows=read(d.qcmBank);
- assert.equal(rows.length,d.qcmCount);
- assert.equal(rows.reduce((n,q)=>n+q.flashcards.length,0),d.flashcardCount);
- assert.deepEqual(rows,read('questions-5.json').filter(q=>q.courseId===d.courseId),'Miroir runtime divergent');
+ // UE à banques complémentaires : compter tous les lots publiés, sans
+ // inventer un miroir questions-5.json pour les anciennes banques qextra.
+ const bankFiles=d.qcmBanks?.length?d.qcmBanks:[d.qcmBank];
+ assert.ok(bankFiles.length>0&&bankFiles.includes(d.qcmBank),'Banque principale absente');
+ assert.equal(new Set(bankFiles).size,bankFiles.length,'Banques dupliquées');
+ const rows=bankFiles.flatMap(file=>read(file).filter(q=>q.courseId===d.courseId));
+ assert.equal(rows.length,d.qcmCount,'Questions réparties entre banques : perte ou doublon');
+ assert.equal(new Set(rows.map(q=>q.id)).size,rows.length,'ID question dupliqué');
+ assert.equal(rows.reduce((n,q)=>n+(q.flashcards||[]).length,0),d.flashcardCount,
+  'Flashcards perdues dans une banque complémentaire');
+ const mirrored=read('questions-5.json').filter(q=>q.courseId===d.courseId);
+ if(bankFiles.length===1)assert.deepEqual(rows,mirrored,'Miroir runtime divergent');
+ else if(mirrored.length)assert.deepEqual(rows,mirrored,'Banques complémentaires divergentes du miroir');
 }
 console.log('PASS release : versions croissantes, index/précache présents, secours SW et banques/PDF');
