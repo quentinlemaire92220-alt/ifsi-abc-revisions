@@ -1,13 +1,13 @@
 {
-  "version": "8.30.152",
-  "auditedAt": "2026-10-28",
+  "version": "8.30.154",
+  "auditedAt": "2026-10-29",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
     "id": "1pjiBdisjbjSsNWZxwOgueBr-uWCu11Ae",
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "TD3 Théorie des symptômes : fiche de 11 pages revue, support officiel reçu et audio encore non vérifié ; QCM, flashcards et vocaux historiques inchangés. Ajout candidat entretien infirmier : 1 cours et 1 fiche, publication différée jusqu'à accord sur les nouveaux PDF V4/V5.",
+  "note": "Fiche unique Droits des patients : trois archives conservées physiquement, une fiche active, 105 QCM, 93 cartes, 7 vocaux.",
   "expectedTotals": {
     "courses": 60,
     "sheets": 79,

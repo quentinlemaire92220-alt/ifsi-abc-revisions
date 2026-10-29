@@ -242,12 +242,16 @@
         "checkedCount": 42
       },
       "publishedVerification": {
-        "status": "PENDING_DEPLOYMENT",
-        "source": "github_pr_blob_verified",
+        "status": "MATCH",
+        "source": "anonymous_public_download",
+        "method": "full_download_sha256",
         "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "pageCount": 42,
         "expectedCount": 42,
-        "checkedCount": 42
+        "checkedCount": 42,
+        "httpStatus": 200,
+        "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
+        "verifiedAt": "2026-10-29T11:26:23.703Z"
       },
       "vocals": [
         "droits_patients_2026_01",
@@ -362,12 +366,16 @@
             "checkedCount": 42
           },
           "publishedVerification": {
-            "status": "PENDING_DEPLOYMENT",
-            "source": "github_pr_blob_verified",
+            "status": "MATCH",
+            "source": "anonymous_public_download",
+            "method": "full_download_sha256",
             "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
             "pageCount": 42,
             "expectedCount": 42,
-            "checkedCount": 42
+            "checkedCount": 42,
+            "httpStatus": 200,
+            "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
+            "verifiedAt": "2026-10-29T11:26:23.703Z"
           },
           "artifactSha256s": {
             "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW": "b583edc49545609d78e18131487a4f1f4fcd4655e9ae7bc44be7070ab810f696",
@@ -570,14 +578,17 @@
         }
       },
       "publicSheetVerification": {
-        "status": "PENDING_DEPLOYMENT",
-        "source": "github_pr_blob_verified",
-        "method": "sha256_binary_github_blob",
+        "status": "MATCH",
+        "source": "anonymous_public_download",
+        "method": "full_download_sha256",
+        "httpStatus": 200,
+        "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
+        "verifiedAt": "2026-10-29T11:26:23.703Z",
         "pdfSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
-        "githubBlobSha": "3815848158d561e8e8a12393ade06ea1bba8633e",
-        "httpStatus": null,
-        "verifiedAt": null,
-        "verifiedPublicUrl": null
+        "bytes": 1060611,
+        "probeRunId": 40865154105,
+        "probeJobId": 123418393871,
+        "gitPagesDeployRunId": 40864879431
       },
       "pedagogicalNonRegression": {
         "contract": "ifsi_pedagogical_non_regression_v149",
