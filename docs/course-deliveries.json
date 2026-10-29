@@ -306,7 +306,7 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-29T11:47:00+01:00",
-        "bundleSha256": "c0bf2eb6dfefff5192f849a2fabc538a6ee9a67b8ffc8a80b810c5e43bdfe8d2",
+        "bundleSha256": "7a93892663a3854d2673f09c6a274a5ac237390920ab5b84917e7fcf67b0e52d",
         "artifactSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "evidence": "owner_GO_integration_and_final_V8_confirmation_2026_10_29",
         "note": "User explicitly accepted both outstanding attestations and GO for V8. Private QA: 251 source pages, 57 windows, 31 themes, exact 42-page 1x/2x rendering. The semantic and graphic comparisons were AI assisted, with documented limitations and owner acceptance; no separate independent auditor claimed.",
@@ -411,6 +411,18 @@
               "change": "publication_footer_only",
               "bodyTextAndPixelsIdentical": true
             }
+          },
+          "pedagogicalNonRegression": {
+            "contract": "ifsi_pedagogical_non_regression_v149",
+            "sheetSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
+            "privateEvidenceSha256": "27a9bd6e7795bd3f4ff72dbb71b590dd6e0620a55eec521e3c81f82b016bba01",
+            "reviewedAt": "2026-10-29T14:54:25+01:00",
+            "sourceInventory": "reviewed",
+            "sourceCoverage": "complete",
+            "inheritanceReview": "compared",
+            "depthReview": "reviewed",
+            "differencesReview": "reviewed",
+            "decision": "full_review_recorded"
           }
         }
       ],
