@@ -306,10 +306,10 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-10-29T11:47:00+01:00",
-        "bundleSha256": "7a93892663a3854d2673f09c6a274a5ac237390920ab5b84917e7fcf67b0e52d",
+        "bundleSha256": "ada12eabb5812658984b6dafd27d963e2c8a676b96e2f3bbc62ab1e869fae686",
         "artifactSha256": "52ab60513762814abbb48b4ec8a05ff687b3c0429d49689e81185701595844f5",
         "evidence": "owner_GO_integration_and_final_V8_confirmation_2026_10_29",
-        "note": "User explicitly accepted both outstanding attestations and GO for V8. Private QA: 251 source pages, 57 windows, 31 themes, exact 42-page 1x/2x rendering. The semantic and graphic comparisons were AI assisted, with documented limitations and owner acceptance; no separate independent auditor claimed.",
+        "note": "User explicitly accepted both outstanding attestations and GO for V8. Private QA: 251 source pages, 57 windows, 31 themes, exact 42-page 1x/2x rendering. The semantic and graphic comparisons were AI assisted, with documented limitations and owner acceptance; no separate independent auditor claimed. Final content digest calculated by TNR from all actual manifest and asset references: ada12eabb5812658984b6dafd27d963e2c8a676b96e2f3bbc62ab1e869fae686.",
         "priorBundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80"
       },
       "partDeliveries": [
