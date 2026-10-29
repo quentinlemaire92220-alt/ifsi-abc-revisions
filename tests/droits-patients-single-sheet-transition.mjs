@@ -62,17 +62,17 @@ if(legacy){
  assert.equal(sheet.driveId,idFromUrl,'ID Drive et URL incohérents');
  assert.ok(!Object.values(legacyDriveIds).includes(idFromUrl),'Fiche unique pointant sur un PDF historique');
 
- // L'accord du 29/10/2026 porte sur les OCTETS EXACTS de la V7, pas sur un
+ // L'accord du 29/10/2026 porte sur les OCTETS EXACTS de la candidate nettoyée validée, pas sur un
  // contenu approximatif ni sur un ancien GO de publication du lot historique.
- const approvedV7='06898f2704d9970a69c6ae54d7e882b65846f0da9c26445739c8060b40a4849e';
- assert.equal((course.artifactSha256s?.[sheet.driveId]||'').toLowerCase(),approvedV7,
-  'Fiche différente des octets V7 approuvés : nouveau GO nécessaire');
- assert.equal(sheet.pageCount,42,'La V7 approuvée contient 42 pages');
+ const approvedPublicationPdf='5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361';
+ assert.equal((course.artifactSha256s?.[sheet.driveId]||'').toLowerCase(),approvedPublicationPdf,
+  'Fiche différente des octets nettoyés approuvés : nouveau GO nécessaire');
+ assert.equal(sheet.pageCount,42,'La fiche unique validée contient 42 pages');
 
  // Un lien Drive connu/privé n'est PAS une preuve d'accès étudiant. Le reçu
  // provient d'un VRAI téléchargement anonyme et vérifie les octets servis.
  const publicProof=course.publicSheetVerification;
- assert.equal(publicProof?.status,'MATCH','Lecture publique anonyme de la V7 non attestée');
+ assert.equal(publicProof?.status,'MATCH','Lecture publique anonyme de la candidate validée non attestée');
  assert.equal(publicProof.source,'anonymous_public_download',
   'Vérification privée/authentifiée insuffisante');
  assert.equal(publicProof.method,'full_download_sha256',
@@ -80,8 +80,8 @@ if(legacy){
  assert.equal(publicProof.httpStatus,200,'Accès HTTP public 200 non prouvé');
  assert.equal(publicProof.url,sheet.url,'URL vérifiée différente du lien étudiant');
  assert.equal(publicProof.driveId,sheet.driveId,'Drive ID public non concordant');
- assert.equal((publicProof.pdfSha256||'').toLowerCase(),approvedV7,
-  'Le PDF servi publiquement diffère de la V7 acceptée');
+ assert.equal((publicProof.pdfSha256||'').toLowerCase(),approvedPublicationPdf,
+  'Le PDF servi publiquement diffère de la candidate nettoyée validée');
  assert.ok(typeof publicProof.verifiedAt==='string' &&
   Number.isFinite(Date.parse(publicProof.verifiedAt)),
   'Horodatage du contrôle public manquant');
@@ -91,7 +91,7 @@ if(legacy){
  const pedagogic=course.pedagogicalNonRegression;
  assert.equal(pedagogic?.contract,'ifsi_pedagogical_non_regression_v149',
   'Reçu non-régression v1.49 absent');
- assert.equal(pedagogic.sheetSha256?.toLowerCase(),approvedV7,
+ assert.equal(pedagogic.sheetSha256?.toLowerCase(),approvedPublicationPdf,
   'Reçu pédagogique lié à un autre PDF');
  assert.match(pedagogic.privateEvidenceSha256||'',/^[a-f0-9]{64}$/i,
   'Preuve pédagogique privée non identifiée par empreinte');
@@ -106,7 +106,7 @@ if(legacy){
  const template=course.templateConformance;
  assert.equal(template?.contract,'ifsi_pdf_template_v3','Conformité trame V3 absente');
  const sheetReview=template.artifacts?.sheet;
- assert.equal(sheetReview?.artifactSha256?.toLowerCase(),approvedV7,
+ assert.equal(sheetReview?.artifactSha256?.toLowerCase(),approvedPublicationPdf,
   'Trame contrôlée pour une autre version');
  assert.equal(sheetReview.pageCount,42,'Nombre de pages de revue graphique inexact');
  assert.equal(sheetReview.templateId,'communication_written_v5.3_2026-10-24',
@@ -137,5 +137,5 @@ if(legacy){
  assert.notEqual(approval.bundleSha256,
   '187af855c1a5553fb7f0ae03cb22e660e0d9990fb073a453c35caa26f78b2e6e',
   'ANCIEN GO de publication réutilisé pour une nouvelle fiche');
- console.log('PASS structure unique + archives + SHA V7 + reçus complets + preuve publique anonyme.');
+ console.log('PASS structure unique + archives + SHA candidate validée + reçus complets + preuve publique anonyme.');
 }
