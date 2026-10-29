@@ -9,14 +9,29 @@ const driveId=sheet=>sheet?.driveId||String(sheet?.url||'').match(/\/file\/d\/([
 
 export function validateSheetSource(courseId,delivery,sheet){
  if(delivery.provisional===true && delivery.deliveryMode==='source_limited_first_release'){
-  assert.equal(delivery.sourceBasis?.kind,'oral_transcript',courseId+': provenance orale explicite absente');
-  assert.equal(delivery.sourceBasis?.nativeSupportAvailable,false,courseId+': support écrit manquant non déclaré');
-  assert.equal(delivery.status,'partial',courseId+': un cours oral provisoire ne doit pas être complet');
-  assert.equal(delivery.pedagogicalValidated,false,courseId+': revue pédagogique complète déclarée à tort');
-  assert.ok(delivery.blockers?.some(x=>x.resource==='support'&&x.reason==='official_support_missing'),
-    courseId+': absence du support officiel non signalée');
-  assert.equal(sheet.officialSupport,false,courseId+': cours oral présenté comme support officiel');
-  assert.equal(sheet.provisional,true,courseId+': marque PROVISOIRE obligatoire sur la fiche');
+  const hasOfficialSupport=delivery.sourceBasis?.nativeSupportAvailable===true;
+  assert.equal(delivery.status,'partial',courseId+': une livraison oralement non vérifiée reste partielle');
+  assert.equal(delivery.pedagogicalValidated,false,courseId+': revue scientifique complète déclarée à tort');
+  assert.equal(sheet.provisional,true,courseId+': mention PROVISOIRE obligatoire sur la fiche');
+  if(hasOfficialSupport){
+    // Le support peut arriver APRÈS une publication provisoire. Cela ne certifie
+    // ni la retranscription orale ni la validation pédagogique du nouveau PDF.
+    assert.equal(delivery.sourceBasis?.kind,'official_support_and_transcript',courseId+': support officiel et transcription non distingués');
+    assert.equal(delivery.sourceAudit?.officialChecked,true,courseId+': support officiel non contrôlé');
+    assert.equal(delivery.sourceAudit?.officialSupportMissing,false,courseId+': support reçu encore déclaré manquant');
+    assert.equal(sheet.officialSupport,true,courseId+': origine officielle du TD non tracée');
+    assert.ok(!delivery.blockers?.some(x=>x.reason==='official_support_missing'),
+      courseId+': réserve de support absent périmée');
+    assert.ok(delivery.blockers?.some(x=>x.reason==='oral_source_unverified'),
+      courseId+': audio original non vérifié non signalé');
+  }else{
+    assert.equal(delivery.sourceBasis?.kind,'oral_transcript',courseId+': provenance orale explicite absente');
+    assert.equal(delivery.sourceAudit?.officialChecked,false,courseId+': une transcription ne prouve pas un support officiel');
+    assert.equal(delivery.sourceAudit?.officialSupportMissing,true,courseId+': absence du support officiel non déclarée');
+    assert.ok(delivery.blockers?.some(x=>x.resource==='support'&&x.reason==='official_support_missing'),
+      courseId+': absence du support officiel non signalée');
+    assert.equal(sheet.officialSupport,false,courseId+': cours oral présenté comme support officiel');
+  }
   return;
  }
 

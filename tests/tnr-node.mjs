@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import './course-navigation-ui-v2-smoke.mjs';
 import './course-thumbnails-55-design.mjs';
 import './course-thumbnails-ui-review.mjs';
@@ -207,7 +208,19 @@ const expectedInfoCounts={cellules_tissus:9,niveaux_organisation:2,prevention_ia
 for(const [id,min] of Object.entries(expectedInfoCounts)){const n=infographics.filter(x=>x.courseId===id).length;assert(n>=min,`Infographies V8.20 insuffisantes ${id}: ${n}/${min}`)}
 const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
-for(const v of vocals){assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);assert(v.driveId?.length>10,`Drive ID vocal invalide ${v.id}`)}
+const newAudioPackages=json('docs/course-deliveries.json').courses;
+for(const v of vocals){
+ assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);
+ if(v.driveId?.length>10)continue;
+ const pack=newAudioPackages.find(c=>c.courseId===v.courseId&&c.deliveryMode==='source_limited_first_release');
+ const asset=pack?.publicAudioArtifacts?.find(a=>a.artifactId===v.id);
+ assert(asset,`MP3 sans Drive non approuvé par un premier package : ${v.id}`);
+ assert(/^assets\/audio\/[A-Za-z0-9_/-]+\.mp3$/.test(asset.path),`Chemin MP3 invalide : ${v.id}`);
+ assert(v.localAudio==='./'+asset.path,`Chemin MP3 incohérent : ${v.id}`);
+ assert(fs.existsSync(v.localAudio),`Fichier MP3 manquant : ${v.id}`);
+ assert(createHash('sha256').update(fs.readFileSync(v.localAudio)).digest('hex')===asset.sha256,`Empreinte MP3 incorrecte : ${v.id}`);
+}
+
 
 const releaseMeta=json('build-meta.json');
 assert(/^\d+\.\d+(?:\.\d+)?$/.test(releaseMeta.version),'Version build-meta invalide');
@@ -239,7 +252,15 @@ assert(vocabulary.entries.every(x=>!(/undefined|null|à compléter/i).test(x.ety
 assert(vocabulary.entries.some(x=>x.id==='hypoxie'&&/hypo/i.test(x.etymologie)),'Décomposition hypoxie absente');
 assert(vocabulary.entries.some(x=>x.id==='pcr'&&/polymérase/i.test(x.etymologie)),'Développement PCR absent');
 assert(new Set(vocabulary.entries.map(x=>x.theme)).size>=23,'Glossaire : couverture thématique insuffisante');
-const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses.filter(c=>c.provisional===true&&c.pedagogicalValidated===false&&c.sourceBasis?.kind==='oral_transcript').map(c=>c.courseId));
+const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses.filter(c=>
+ c.provisional===true && c.pedagogicalValidated===false &&
+ (c.sourceBasis?.kind==='oral_transcript' ||
+   (c.sourceBasis?.kind==='official_support_and_transcript' &&
+    c.sourceBasis.nativeSupportAvailable===true &&
+    c.sourceAudit?.officialChecked===true &&
+    c.sourceAudit?.oralStatus==='unverified' &&
+    c.sourceAudit?.oralCoverageExhaustive===false))
+).map(c=>c.courseId));
 // Conserver la provenance orale historique après un rapprochement officiel validé.
 for(const c of json('docs/course-deliveries.json').courses)if(c.validated===true&&c.sourceBasis?.reconciled===true&&c.sourceAudit?.officialChecked===true&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')provisionalOralSources.add(c.courseId);
 const allowedLexiconSource=x=>['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
@@ -248,7 +269,22 @@ const scopedWrittenSheets=json('docs/course-deliveries.json').courses.filter(c=>
  c.deliveryMode==='sheet_only_first_release'&&c.publicationScope==='revision_sheet_only'&&
  c.publicationApproval?.status==='approved'&&c.publicationApproval?.scope==='revision_sheet_only'&&
  c.lexicon?.termCount>0&&c.writtenPdfAudit?.status==='PASS').map(c=>c.courseId);
-const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets]);
+// Une première publication écrite complète peut porter son lexique vérifié dans
+// la fiche PDF, sans créer un glossaire interactif fictif pour passer le TNR.
+// Contrôler l'approbation du lot ET la concordance des octets de la fiche.
+const scopedProvisionalWrittenLexicons=json('docs/course-deliveries.json').courses.filter(c=>
+  c.deliveryMode==='source_limited_first_release'&&c.packFormat==='written_v1'&&
+  c.provisional===true&&c.status==='partial'&&c.pedagogicalValidated===false&&
+  c.publicationApproval?.status==='approved'&&
+  c.publicationApproval?.authorization==='explicit_go_publication'&&
+  c.publicationApproval?.scope==='course_package'&&
+  c.lexicon?.termCount>0&&c.lexicon.textSelectable===true&&c.lexicon.checked===true&&
+  c.writtenPdfAudit?.status==='PASS'&&c.writtenPdfAudit.lexiconLast===true&&
+  c.writtenPdfAudit.summaryBeforeLexicon===true&&
+  c.writtenPdfAudit.pdfSha256===c.publicAssetSha256&&
+  c.visualOwnerReview?.status==='owner_accepted'
+).map(c=>c.courseId);
+const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets,...scopedProvisionalWrittenLexicons]);
 assert(lexiconCourseIds.size===courseIds.size,'Glossaire : un cours doit posséder un lexique validé (dans la fiche seule approuvée ou en glossaire)');
 assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&vocabulary.entries.some(x=>x.term==='Méiose')&&vocabulary.entries.some(x=>x.term==='Ostéoporose')&&vocabulary.entries.some(x=>x.term==='Empathie'),'Glossaire multicours incomplet');
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
@@ -376,7 +412,11 @@ const expectedAudioByCourse={droits_patients:6,stomatotherapie:3,plaies_pansemen
 assert(vocalsRelease8393.length===audit821.expectedTotals.vocals,'Inventaire des vocaux désynchronisé du référentiel');
 assert(vocalsRelease8393.length>=75,'La série audio V8.30.93 doit compter 75 enregistrements');
 assert(new Set(vocalsRelease8393.map(v=>v.id)).size===vocalsRelease8393.length,'Doublon ID dans le catalogue vocal');
-assert(new Set(vocalsRelease8393.map(v=>v.driveId)).size===vocalsRelease8393.length,'Doublon Drive ID dans le catalogue vocal');
+const actualDriveVocals=vocalsRelease8393.filter(v=>v.driveId);
+assert(new Set(actualDriveVocals.map(v=>v.driveId)).size===actualDriveVocals.length,'Doublon Drive ID dans le catalogue vocal');
+const hostedVocals=vocalsRelease8393.filter(v=>!v.driveId);
+assert(hostedVocals.every(v=>v.localAudio&&fs.existsSync(v.localAudio)),'Audio local sans fichier physique');
+assert(new Set(hostedVocals.map(v=>v.localAudio)).size===hostedVocals.length,'Doublon chemin MP3 local');
 const authorizedAudioExtensions=json('docs/course-deliveries.json').audioSupplements||[];
 for(const [courseId,n] of Object.entries(expectedAudioByCourse)){
   const added=vocalsRelease8393.filter(v=>v.courseId===courseId);

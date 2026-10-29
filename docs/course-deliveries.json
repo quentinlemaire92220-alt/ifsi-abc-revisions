@@ -2823,9 +2823,9 @@
       "publicationHost": "github_pages",
       "provisional": true,
       "pedagogicalValidated": false,
-      "provisionalReason": "Support écrit propre au TD non reçu ; transcription non comparée à l'audio source ; CM4 distinct préservé.",
+      "provisionalReason": "Le support officiel du TD est reçu et vérifié ; la transcription reste à confronter à l'audio d'origine et la validation clinique exhaustive n'est pas acquise.",
       "provisionalReassessmentRequired": true,
-      "publicAssetSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+      "publicAssetSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
       "qcmPublicAssetSha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
       "flashcardPublicAssetSha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
       "sheetResourceId": "a1_tgs_td_written_p01",
@@ -2843,19 +2843,17 @@
       "scriptsPreparedCount": 1,
       "requestedVocals": false,
       "sourceAudit": {
-        "officialChecked": false,
-        "officialSupportMissing": true,
+        "officialChecked": true,
+        "officialSupportMissing": false,
         "oralStatus": "unverified",
         "oralCoverageExhaustive": false,
         "recordingTailTruncated": false,
         "scopedReleaseAccepted": true,
-        "scopedReviewBasis": "Transcription TD reçue jusqu'à la clôture (environ 1 h 27) et CM4 La théorie dans la pratique disponible ; pas de support spécifique du TD ni vérification de l'enregistrement.",
+        "scopedReviewBasis": "Support officiel de 24 diapositives du 23/10/2026 lu et comparé à la fiche ancienne ; transcription TD disponible. Audio original non confronté et certaines attributions orales non certifiées.",
         "externalSourcesCount": 0,
         "externalAuthorization": "not_requested",
         "missingSources": [
-          "official_td_support",
-          "original_audio_comparison",
-          "written_official_support"
+          "original_audio_comparison"
         ],
         "speakerStudentSeparated": true,
         "teachingNotesPrivateTrace": true,
@@ -2868,16 +2866,16 @@
         "explicitVsInferredPrioritiesSeparated": true,
         "explanationsNotOvercompressed": true,
         "disciplinaryReview": "provisional_oral_only",
-        "disciplinaryReviewScope": "Relecture technique du contenu fourni uniquement ; revue scientifique exhaustive non acquise.",
+        "disciplinaryReviewScope": "Revue documentaire limitée de 18 axes du support écrit, du transcript et de la fiche ancienne ; audio non vérifié, revue médicale exhaustive non attestée.",
         "expectedEssential": 5,
         "coveredEssential": 5,
         "coverageEvidence": "Cinq objectifs de révision de la fiche source (p.1) rapprochés des rubriques de la fiche : vécu individuel, trois dimensions et contexte, cas Émilie, comparaison Henderson/TGS/trifocal, démarche infirmière partagée. Couverture limitée à ces objectifs, sans attestation d'exhaustivité du TD."
       },
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+        "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
         "pageSize": "A4",
-        "pageCount": 12,
+        "pageCount": 11,
         "allPagesRendered": true,
         "topAndBottomPurpleBandsEveryPage": true,
         "noOverlaidHeaders": true,
@@ -2896,16 +2894,79 @@
         "checked": true
       },
       "artifactSha256s": {
-        "tgs_td_sheet_public_candidate": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
+        "tgs_td_sheet_public_candidate": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
         "tgs_td_qcm_public_candidate": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
         "tgs_td_flash_public_candidate": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f"
       },
       "publishedVerification": {
         "status": "PENDING_DEPLOYMENT",
         "source": "github_pages_file_staged",
-        "pdfSha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845"
+        "pdfSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
       },
       "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 11,
+        "reviewedPdfSha256s": {
+          "a1_tgs_td_written_p01": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d"
+        },
+        "reviewedAt": "2026-10-28T16:16:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "acceptanceBasis": "Utilisateur : « Validé », le 28 octobre 2026, en réponse au lien vers le PDF 11 pages corrigé. Preuves privées des 22 rendus conservées sur Google Drive.",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        }
+      },
+      "blockers": [
+        {
+          "resource": "audio",
+          "reason": "oral_source_unverified",
+          "detail": "Transcription non confrontée à l'enregistrement original."
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-28T18:25:00+01:00",
+        "mergeDeploymentCondition": "all_tnr_green",
+        "provisionalOnly": true,
+        "bundleSha256": "6e248cf160fd6d037eba0784f7e085230abf5cec66b74b9fd12255d92415ccb5",
+        "approvalBasis": "L'utilisateur a explicitement répondu « Go publication » le 28 octobre 2026 après présentation du périmètre exact de la PR #266, V8.30.150 build 8450, fiche de 11 pages et de son statut provisoire. Autorisation de fusion/déploiement conditionnelle aux tests complets verts.",
+        "reviewNote": "L'accord graphique porte sur le PDF de SHA-256 4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d. Les 40 QCM et 40 flashcards historiques sont conservés à l'identique. La source audio d'origine n'a pas été contrôlée et le cours reste partial/provisional. Format de reçu historique de revue visuelle complété sans changer la fiche, avec tous les critères déjà contrôlés. Le digest du package est recalculé après ajout des critères."
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
+          "sha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
+          "pageCount": 11,
+          "artifactId": "tgs_td_sheet_public_candidate"
+        },
+        "qcm": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
+          "sha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
+          "pageCount": 12,
+          "artifactId": "tgs_td_qcm_public_candidate"
+        },
+        "flashcards": {
+          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
+          "sha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
+          "pageCount": 7,
+          "artifactId": "tgs_td_flash_public_candidate"
+        }
+      },
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "reconciled": false,
+        "transcriptCount": 1,
+        "relatedCm4Consulted": true
+      },
+      "previousVisualOwnerReview": {
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
         "method": "pdf_all_pages_checked",
@@ -2923,20 +2984,46 @@
         "reviewedAt": "2026-10-26",
         "acceptanceBasis": "GO explicite du propriétaire après présentation des trois PDF GitHub candidats ; revue visuelle des 31 pages de copies de travail et préflight graphique strict réussi sur les originaux GitHub. Aucune promesse de validation scientifique exhaustive ; réserves TD et audio maintenues."
       },
-      "blockers": [
-        {
-          "resource": "support",
-          "reason": "official_support_missing",
-          "detail": "Support propre au TD non reçu ; relancer E-Campus/Yikiforma selon disponibilité.",
-          "part": "TD"
-        },
-        {
-          "resource": "audio",
-          "reason": "oral_source_unverified",
-          "detail": "Transcription non confrontée à l'enregistrement original."
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
+            "pageCount": 11,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T16:16:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "80e231b58249c31a2c1a6ad4cb1684bdb71bf30ebd602968d47eda0be5ce8cd6"
+          }
         }
-      ],
-      "publicationApproval": {
+      },
+      "previousPublicationApproval": {
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
@@ -2947,32 +3034,17 @@
         "approvalBasis": " GO initial de publication consigné le 26/10 ; reprise corrective autorisée en conversation. Empreinte calculée sur le lot technique courant. La validation graphique reste distincte et bloquante.",
         "reviewNote": "Recalcul SHA-256 sur le lot candidat original GitHub après restauration des trois PDF passant le contrôle strict."
       },
-      "publicArtifacts": {
-        "sheet": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Fiche_Revision.pdf",
-          "sha256": "cbebecc87965eee0ce5680d1851061631d7961fc654bd486c55859cfc2cfa845",
-          "pageCount": 12,
-          "artifactId": "tgs_td_sheet_public_candidate"
-        },
-        "qcm": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
-          "sha256": "8eb2e2249a66a42c9e9e9074ccdb0858a1f4146c291f8af9453e55d5af9b426c",
-          "pageCount": 12,
-          "artifactId": "tgs_td_qcm_public_candidate"
-        },
-        "flashcards": {
-          "path": "assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_Flashcards_40.pdf",
-          "sha256": "b67c71dd6fda265aed23a63b2c23bdc8f28416c188e6cd9ef1f4683ceea41e7f",
-          "pageCount": 7,
-          "artifactId": "tgs_td_flash_public_candidate"
-        }
-      },
-      "sourceBasis": {
-        "kind": "oral_transcript",
-        "nativeSupportAvailable": false,
-        "reconciled": false,
-        "transcriptCount": 1,
-        "relatedCm4Consulted": true
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "4b2e0807af8d9c1533da90e24bceea3dc66b9fc1cb55da856ff308164c94321d",
+        "privateEvidenceSha256": "8816def190657e5144be08986e3e5dbbb0c32cd36b66aa8ec92f97d9192c2410",
+        "reviewedAt": "2026-10-28T17:28:00+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
       }
     },
     {
@@ -3785,6 +3857,586 @@
         "ownerAcceptance": "GO_publication_complement_explicit",
         "privateEvidenceSha256": "7794fe06daebf11a2826ccfe64c482f10178388eed5e6eaab59da318f3a5602e",
         "cardCount": 50
+      }
+    },
+    {
+      "courseId": "vih_b13_20261027",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "deliveryMode": "source_limited_first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReason": "Support officiel intégral absent ; diffusion limitée aux captures et à la transcription disponibles.",
+      "provisionalReassessmentRequired": true,
+      "sourceBasis": {
+        "kind": "oral_transcript",
+        "nativeSupportAvailable": false,
+        "reconciled": true,
+        "description": "Cours du 27/10/2026 : 39 captures et transcription PLAUD de 58 min 32 s ; support officiel à récupérer."
+      },
+      "sheetResourceId": "vih_b13_20261027_sheet_v149",
+      "sheetResourceIds": [
+        "vih_b13_20261027_sheet_v149"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmBank": "data/course-banks/vih_b13_20261027.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 52,
+      "vocals": [
+        "vih_b13_20261027_vocal_01",
+        "vih_b13_20261027_vocal_02",
+        "vih_b13_20261027_vocal_03",
+        "vih_b13_20261027_vocal_04",
+        "vih_b13_20261027_vocal_05"
+      ],
+      "requestedVocals": 5,
+      "sourceAudit": {
+        "officialChecked": false,
+        "officialSupportMissing": true,
+        "scopedReleaseAccepted": true,
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "missingSources": [
+          "written_official_support"
+        ],
+        "oralStatus": "unverified",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0
+      },
+      "writtenCoverage": {
+        "expectedEssential": 24,
+        "coveredEssential": 24,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Contrôle des 24 notions des sources accessibles ; sans support officiel, revue scientifique définitive non démontrée."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+        "pageSize": "A4",
+        "pageCount": 17,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 52,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "vih_b13_20261027_sheet_v149": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+        "vih_b13_20261027_qcm_50": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
+        "vih_b13_20261027_flashcards_50": "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7",
+        "vih_b13_20261027_vocal_01": "dfb77d0333e67bac1f4d248a147b9cf8e430fef8fd655427ef01c757f6354da7",
+        "vih_b13_20261027_vocal_02": "8b7a35b8f906bc96cceca1659cab858d8843e5cb07df4b7b429ebef29761eae4",
+        "vih_b13_20261027_vocal_03": "22409b000cd50c1316c9e0edd374d63fae2d5d0640196a63d2024c59835d9bec",
+        "vih_b13_20261027_vocal_04": "b17ce21be5df833d7e6c2e3db9fe305242f170b6d7a317b9c63873f6ad6f1b44",
+        "vih_b13_20261027_vocal_05": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11"
+      },
+      "publicAssetSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+      "qcmPublicAssetSha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
+      "flashcardPublicAssetSha256": "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7",
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/vih-20261027/UE_B1_3_S1_VIH_Fiche_Revision_17p_v149.pdf",
+          "sha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+          "pageCount": 17,
+          "artifactId": "vih_b13_20261027_sheet_v149"
+        },
+        "qcm": {
+          "path": "assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf",
+          "sha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
+          "pageCount": 26,
+          "artifactId": "vih_b13_20261027_qcm_50"
+        },
+        "flashcards": {
+          "path": "assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf",
+          "sha256": "a69afdb5b94db1c75368995ef6fd669fbf6596ed37555260fcc94f95a6b653e7",
+          "pageCount": 11,
+          "artifactId": "vih_b13_20261027_flashcards_50"
+        }
+      },
+      "publicAudioArtifacts": [
+        {
+          "path": "assets/audio/vih-20261027/Vocal_01_sur_05_VIH_CD4_SIDA.mp3",
+          "sha256": "dfb77d0333e67bac1f4d248a147b9cf8e430fef8fd655427ef01c757f6354da7",
+          "durationSeconds": 375.798,
+          "artifactId": "vih_b13_20261027_vocal_01"
+        },
+        {
+          "path": "assets/audio/vih-20261027/Vocal_02_sur_05_VIH_Transmission_Evolution.mp3",
+          "sha256": "8b7a35b8f906bc96cceca1659cab858d8843e5cb07df4b7b429ebef29761eae4",
+          "durationSeconds": 379.089,
+          "artifactId": "vih_b13_20261027_vocal_02"
+        },
+        {
+          "path": "assets/audio/vih-20261027/Vocal_03_sur_05_VIH_Infections_Opportunistes.mp3",
+          "sha256": "22409b000cd50c1316c9e0edd374d63fae2d5d0640196a63d2024c59835d9bec",
+          "durationSeconds": 362.919,
+          "artifactId": "vih_b13_20261027_vocal_03"
+        },
+        {
+          "path": "assets/audio/vih-20261027/Vocal_04_sur_05_VIH_Depistage_Traitements_Grossesse.mp3",
+          "sha256": "b17ce21be5df833d7e6c2e3db9fe305242f170b6d7a317b9c63873f6ad6f1b44",
+          "durationSeconds": 379.847,
+          "artifactId": "vih_b13_20261027_vocal_04"
+        },
+        {
+          "path": "assets/audio/vih-20261027/Vocal_05_sur_05_VIH_PrEP_TPE_Role_Infirmier.mp3",
+          "sha256": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11",
+          "durationSeconds": 362.632,
+          "artifactId": "vih_b13_20261027_vocal_05"
+        }
+      ],
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e"
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+        "privateEvidenceSha256": "cd1522a5b25410d294daa68901c830589edc2375648d7de6d6f2ad0c7753be1e",
+        "reviewedAt": "2026-10-28T15:29:00+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 17,
+        "reviewedAt": "2026-10-28T19:24:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "vih_b13_20261027_sheet_v149": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+          "vih_b13_20261027_qcm_50": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc"
+        }
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
+            "pageCount": 17,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T19:24:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "51da5a0a0ee250de32ecd57512caf096ee31bd02a491c82e9ee28c42bd4820f1"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
+            "pageCount": 26,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-28T21:03:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "91bd1dcd32435c2dda609f8bf7ceb8863038f8e51c8957ab0682f0d5643ce245"
+          }
+        }
+      },
+      "blockers": [
+        {
+          "resource": "support",
+          "reason": "official_support_missing"
+        },
+        {
+          "resource": "clinical_case_final",
+          "reason": "oral_correction_unavailable"
+        },
+        {
+          "resource": "clinical_update",
+          "reason": "therapeutic_availability_unverified"
+        },
+        {
+          "resource": "epidemiology",
+          "reason": "oral_slide_discrepancy"
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-28T21:03:00+01:00",
+        "bundleSha256": "435010361cea54b50a03b0b5de5cb69abebd5c2ee3a85d3e54491d01e5ca2b02",
+        "provisionalOnly": true,
+        "approvalBasis": "GO explicite de publication et acceptation graphique du PDF QCM final SHA256 bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc ; fiche, flashcards et MP3 déjà acceptés et inchangés ; validation renouvelée le 28/10/2026. Statut provisoire conservé.",
+        "mergeDeploymentCondition": "TNR verts et vérification des fichiers réellement servis par GitHub Pages"
+      }
+    },
+    {
+      "courseId": "entretien_infirmier",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReassessmentRequired": true,
+      "deliveryMode": "source_limited_first_release",
+      "publicationHost": "github_pages",
+      "packFormat": "written_v1",
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "supportSlides": 28,
+        "transcriptParts": 2,
+        "reconciled": false,
+        "privateSourcePreserved": true,
+        "nonRegressionCharter": "v1.49"
+      },
+      "sheetResourceId": "entretien_infirmier_sheet_v4",
+      "sheetResourceIds": [
+        "entretien_infirmier_sheet_v4"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmBank": "data/course-banks/entretien_infirmier.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "publicAssetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+      "qcmPublicAssetSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+      "flashcardPublicAssetSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+      "vocals": [],
+      "requestedVocals": true,
+      "scriptsPreparedCount": 5,
+      "sourceAudit": {
+        "officialChecked": true,
+        "officialSupportMissing": false,
+        "officialSupportPreservedPrivately": true,
+        "oralStatus": "unverified",
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "missingSources": [
+          "original_audio_comparison"
+        ],
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "17 thèmes du support officiel 28 diapositives rapprochés de la fiche V3 ; PT01 et PT02 consultées sans réécoute exhaustive de l'enregistrement original.",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested"
+      },
+      "writtenCoverage": {
+        "expectedEssential": 17,
+        "coveredEssential": 17,
+        "prioritySourceReference": "Support officiel 28 diapositives, PT01/PT02 ; matrice privée des 17 thèmes",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Contrôle des thèmes officiels et des textes disponibles ; attribution des locuteurs, nuances orales et exhaustivité audio encore réservées."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "pageSize": "A4",
+        "pageCount": 13,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 33,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+        "entretien_infirmier_flashcards_v5": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715"
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V4.pdf",
+          "sha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+          "pageCount": 13,
+          "artifactId": "entretien_infirmier_sheet_v4"
+        },
+        "qcm": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V5.pdf",
+          "sha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+          "pageCount": 21,
+          "artifactId": "entretien_infirmier_qcm_v5"
+        },
+        "flashcards": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf",
+          "sha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+          "pageCount": 10,
+          "artifactId": "entretien_infirmier_flashcards_v5"
+        }
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 13,
+        "reviewedAt": "2026-10-28T22:11:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+          "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+          "entretien_infirmier_flashcards_v5": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715"
+        },
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+        "technicalRasterEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb",
+        "acceptanceBasis": "L'utilisateur a répondu « ok go » à la demande d'accord graphique sur fiche V4, QCM V5 et flashcards V5 ; contrôle technique des 44 pages à 100 % et 200 % réalisé par l'assistant (sans prétendre une lecture manuelle de toutes les pages par l'utilisateur)."
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+            "pageCount": 13,
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "reviewedAt": "2026-10-28T22:11:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+            "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+            "pageCount": 21,
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "reviewedAt": "2026-10-28T22:11:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+            "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "privateEvidenceSha256": "47ae6e1fff0aac78cd39dcce276db66a68505cc4dafd2a95aca6da0db338a5d9",
+        "reviewedAt": "2026-10-28T21:03:00+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
+      },
+      "flashcardPdfReview": {
+        "status": "owner_accepted",
+        "pdfSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+        "pageCount": 10,
+        "ownerAcceptance": "explicit_go_flashcards_v5",
+        "reviewedAt": "2026-10-28T22:11:00+01:00",
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+        "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+      },
+      "blockers": [
+        {
+          "resource": "oral_audio_original",
+          "reason": "oral_source_unverified",
+          "detail": "PT01/PT02 utilisées sans preuve de réécoute complète des enregistrements."
+        },
+        {
+          "resource": "scientific_review",
+          "reason": "pending",
+          "detail": "Pas de validation scientifique indépendante ; deux nuances documentaires sont signalées."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_owner_audio_review",
+          "detail": "5 MP3 produits en privé, jamais écoutés et non publiés."
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-28T22:11:00+01:00",
+        "bundleSha256": "a4b640d6bdc91d7d2f40aa13725cba8b6cc4df1229db13d2ba167418f2cb41fc",
+        "provisionalOnly": true,
+        "scopeLimit": "fiche_v4_qcm_v5_flashcards_v5_sans_mp3",
+        "approvalBasis": "Le GO de publication antérieur et le « ok go » explicite du 28/10/2026 portent sur les 3 nouveaux PDF corrigés ; aucun MP3 autorisé. Les sources orales restent non vérifiées exhaustivement.",
+        "mergeDeploymentCondition": "all_tnr_green_and_live_asset_sha_verification",
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe"
       }
     }
   ],

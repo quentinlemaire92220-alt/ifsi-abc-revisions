@@ -51,12 +51,22 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  if(isPages)assert.equal(delivery.publicAssetSha256?.toLowerCase(),delivery.writtenPdfAudit?.pdfSha256?.toLowerCase(),label+'empreinte du PDF public divergente');
  const source=delivery.sourceAudit;
  if(provisional){
-  assert.equal(source?.officialChecked,false,label+'une transcription n’est pas un support officiel');
-  assert.equal(source?.officialSupportMissing,true,label+'absence du support officiel non déclarée');
+  const supportReceived=delivery.sourceBasis?.nativeSupportAvailable===true;
+  if(supportReceived){
+    assert.equal(source?.officialChecked,true,label+'support officiel reçu mais non vérifié');
+    assert.equal(source?.officialSupportMissing,false,label+'support officiel reçu déclaré absent');
+    assert.ok(!source?.missingSources?.includes('written_official_support'),label+'absence du support obsolète');
+    assert.ok(source?.missingSources?.includes('original_audio_comparison'),label+'comparaison audio manquante non tracée');
+    assert.ok(typeof source?.scopedReviewBasis==='string'&&source.scopedReviewBasis.length>25,
+      label+'portée de la revue du TD non décrite');
+  }else{
+    assert.equal(source?.officialChecked,false,label+'une transcription n’est pas un support officiel');
+    assert.equal(source?.officialSupportMissing,true,label+'absence du support officiel non déclarée');
+    assert.ok(source?.missingSources?.includes('written_official_support'),label+'source manquante non inventoriée');
+  }
   assert.equal(source?.scopedReleaseAccepted,true,label+'provisional non autorisé pour ce périmètre');
   assert.equal(source?.oralCoverageExhaustive,false,label+'exhaustivité orale supposée');
   assert.equal(source?.recordingTailTruncated,false,label+'troncature inventée');
-  assert.ok(source?.missingSources?.includes('written_official_support'),label+'source manquante non inventoriée');
  }else assert.equal(source?.officialChecked,true,label+'support officiel non contrôlé');
  if(provisional){
   assert.equal(source?.oralStatus,'unverified',label+'statut oral provisoire inexact');

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.149",
+  "version": "8.30.152",
   "auditedAt": "2026-10-28",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -7,17 +7,17 @@
     "label": "IFSI - Cours"
   },
   "mode": "validated_snapshot",
-  "note": "Gestion du stress UE B3.2.1 : 50 QCM et 50 flashcards, +46 nouvelles notions et 4 versions contextualisées dans le vocabulaire. Aucune entrée ou fiche historique modifiée.",
+  "note": "TD3 Théorie des symptômes : fiche de 11 pages revue, support officiel reçu et audio encore non vérifié ; QCM, flashcards et vocaux historiques inchangés. Ajout candidat entretien infirmier : 1 cours et 1 fiche, publication différée jusqu'à accord sur les nouveaux PDF V4/V5.",
   "expectedTotals": {
-    "courses": 58,
-    "sheets": 76,
+    "courses": 60,
+    "sheets": 78,
     "infographics": 184,
-    "vocals": 190,
+    "vocals": 195,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
     "hdAtlasBoards": 106,
-    "qcmRuntimeMin": 1903
+    "qcmRuntimeMin": 1953
   },
   "anatomyFolderContracts": {
     "systeme_respiratoire": "1vhDiWmCj_8Yc3HipJnrMxiDBAj29BFpD",
@@ -257,7 +257,7 @@
     },
     {
       "courseId": "gestion_stress_professionnel",
-      "release": "8.30.149",
+      "release": "8.30.150",
       "scope": "qcm_flashcards_vocabulary_only",
       "qcm": 50,
       "flashcards": 50,
@@ -265,6 +265,22 @@
       "vocabularyLinked": 0,
       "sheetUnchanged": true,
       "vocabularyContextualized": 4
+    },
+    {
+      "courseId": "vih_b13_20261027",
+      "course": "VIH — UE B1.3 S1",
+      "release": "8.30.151",
+      "newCourse": true,
+      "scope": "source_limited_course_package",
+      "sheetFormat": "written_v1",
+      "pageCount": 17,
+      "lexiconTermsInPdf": 52,
+      "qcmNew": 50,
+      "flashcardsNew": 50,
+      "vocabularyNew": 52,
+      "vocalsNew": 5,
+      "sourceStatus": "provisional",
+      "supportOfficielAbsent": true
     }
   ],
   "auditLogicVersion": "8.30.10",

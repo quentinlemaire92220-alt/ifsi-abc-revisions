@@ -1,5 +1,5 @@
 {
-  "version": "8.30.149",
+  "version": "8.30.152",
   "courses": [
     {
       "id": "biomolecules",
@@ -1205,10 +1205,10 @@
       "teachingUnit": "A1",
       "semester": "S1",
       "part": "TD",
-      "officialSupport": false,
+      "officialSupport": true,
       "sourceStatus": "provisional",
       "provisional": true,
-      "sourceNote": "Support spécifique du TD absent ; fiche et entraînements issus de la transcription orale, recoupés dans les limites du CM4 déjà disponible. Vérification exhaustive de l'audio et validation scientifique finale non acquises.",
+      "sourceNote": "Support officiel du TD du 23 octobre 2026 reçu (24 diapositives) et rapproché de la transcription. Audio original non contrôlé ; validation scientifique finale non acquise.",
       "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/theorie-symptomes-td/UE_A1_Theorie_Symptomes_QCM_40_Corriges.pdf",
       "qcmPdfQuestionCount": 40,
       "flashcardTarget": 40,
@@ -1303,6 +1303,90 @@
       ],
       "flashcardTarget": 50,
       "authoredFlashcards": true
+    },
+    {
+      "id": "vih_b13_20261027",
+      "label": "VIH — PROVISOIRE",
+      "aliases": [
+        "VIH",
+        "Virus de l'immunodéficience humaine",
+        "SIDA — VIH",
+        "UE B1.3 S1 — VIH"
+      ],
+      "domain": "B",
+      "ue": "B1.3",
+      "teachingUnit": "B1.3",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": false,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Cours du 27/10/2026 ; 36 captures, 3 captures complémentaires et transcription de 58 min 32 s. Support officiel intégral attendu ; cas final non corrigé à l’oral, divergence épidémiologique et modalités PrEP/TPE à réexaminer.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf",
+      "qcmPdfQuestionCount": 50,
+      "flashcardTarget": 50,
+      "authoredFlashcards": true,
+      "audioStatus": "available",
+      "audioCount": 5,
+      "additionalDocuments": [
+        {
+          "type": "revision",
+          "label": "Fiche de révision VIH — PROVISOIRE (17 pages, 52 définitions)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Fiche_Revision_17p_v149.pdf"
+        },
+        {
+          "type": "qcm",
+          "label": "50 QCM VIH corrigés — PROVISOIRE (26 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_QCM_50_Corriges.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "50 flashcards VIH — PROVISOIRE (11 pages)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf"
+        }
+      ]
+    },
+    {
+      "id": "entretien_infirmier",
+      "label": "L’entretien infirmier — oral à confirmer",
+      "aliases": [
+        "L’entretien infirmier",
+        "Entretien infirmier",
+        "UE D1.1 S1 — L’entretien infirmier",
+        "Communication et entretien infirmier"
+      ],
+      "domain": "D",
+      "ue": "D1.1",
+      "teachingUnit": "D1.1",
+      "semester": "S1",
+      "part": "01",
+      "officialSupport": true,
+      "sourceStatus": "provisional",
+      "provisional": true,
+      "sourceNote": "Cours préparé pour publication sans MP3. Support officiel 28 diapositives et 17 thèmes rapprochés ; audio original non réécouté exhaustivement. PDFs V4/V5 nouveaux : accord graphique propriétaire à renouveler avant publication.",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V5.pdf",
+      "qcmPdfQuestionCount": 50,
+      "flashcardTarget": 50,
+      "authoredFlashcards": true,
+      "audioStatus": "awaiting_review",
+      "audioCount": 0,
+      "additionalDocuments": [
+        {
+          "type": "revision",
+          "label": "Fiche V4 — 13 pages · relecture graphique requise",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V4.pdf"
+        },
+        {
+          "type": "qcm",
+          "label": "50 QCM corrigés V5 — 21 pages · relecture graphique requise",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V5.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "50 flashcards V5 — 10 pages · relecture graphique requise",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf"
+        }
+      ]
     }
   ],
   "auditBaseline": {

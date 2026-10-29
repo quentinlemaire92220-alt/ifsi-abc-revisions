@@ -165,12 +165,25 @@ def validate_qcm_theme_cards(text,rows):
     assert [int(m[1]) for m in blocks]==expected_numbers,'Questions manquantes/dupliquées ou ordre thématique différent'
     for i,(q,m) in enumerate(zip(ordered,blocks)):
         actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        # Cardinalité imprimée dans le pied du cadre : exacte ou rejetée,
+        # puis comparaison intégrale de l'énoncé et des cinq choix A-E.
+        count_tokens=list(re.finditer(r'(?m)^([1-3]) réponses? attendues?[ ]*$',actual))
+        if q.get('courseId')=='vih_b13_20261027':
+            assert len(count_tokens)==1,q['id']+': cardinalité imprimée absente/dupliquée'
+        if count_tokens:
+            assert len(count_tokens)==1,q['id']+': cardinalité imprimée dupliquée'
+            printed=count_tokens[0]
+            assert int(printed[1])==len(q['answers'])==q['announcedCorrectCount'],q['id']+': cardinalité imprimée fausse'
+            actual=actual[:printed.start()]+actual[printed.end():]
         expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
     corrections=without_theme_titles(corrections,rows)
     corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
-    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\. ',corrections))
-    assert [int(m[1]) for m in blocks]==expected_numbers,'Corrigés manquants/dupliqués ou ordre différent'
+    blocks=list(re.finditer(r'(?m)^Q(\d{2}) — Réponses : ([A-E](?:, [A-E])*)\.[ \t]*\n?',corrections))
+    numbers=[int(m[1]) for m in blocks]
+    if numbers!=expected_numbers:
+        print('VIH_PDF_CORRECTIONS_DIAGNOSTIC',json.dumps({'found_count':len(numbers),'numbers':numbers,'expected':expected_numbers,'headers':[line for line in corrections.splitlines() if line.startswith('Q') and 'Réponses :' in line][:60]},ensure_ascii=False))
+    assert numbers==expected_numbers,('Corrigés manquants/dupliqués ou ordre différent : '+json.dumps({'trouvés':numbers,'attendus':expected_numbers,'entêtes':[line for line in corrections.splitlines() if line.startswith('Q') and 'Réponses :' in line][:55]},ensure_ascii=False))
     for i,(q,m) in enumerate(zip(ordered,blocks)):
         assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
