@@ -298,12 +298,14 @@
         "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361"
       },
       "publicationApproval": {
-        "status": "pending_new_package_digest_and_evidence",
+        "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "priorBundleSha256": "187af855c1a5553fb7f0ae03cb22e660e0d9990fb073a453c35caa26f78b2e6e",
+        "approvedAt": "2026-10-29T11:47:00+01:00",
+        "bundleSha256": "e005ac5ad368d4e0add3b13484cd35a036ea2fd55ab2ffe5a5e19ebd18eccb80",
         "artifactSha256": "5dafe4f29b9d374e069bc5eabef5bb830656dc8b18f1eb24d387249c73d84361",
-        "ownerIntent": "integrate_droits_patients_unified_42_pages_20261029"
+        "evidence": "owner_explicit_go_to_integrate_29_oct_2026",
+        "note": "Approbation du package déclaré, indépendante des reçus de QA et de publication; ne vaut pas autorisation de substitution de la V8."
       },
       "partDeliveries": [
         {
