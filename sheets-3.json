@@ -447,7 +447,7 @@
     "part": "01",
     "provisional": false,
     "officialSupport": true,
-    "sourceStatus": "active",
+    "sourceStatus": "archived",
     "driveId": "15nG6-XL0JG-nE8IPrVpjmsbkeXRnPagQ",
     "url": "https://drive.google.com/file/d/15nG6-XL0JG-nE8IPrVpjmsbkeXRnPagQ/view",
     "sheetFormat": "classic"
@@ -462,7 +462,7 @@
     "part": "01",
     "provisional": false,
     "officialSupport": true,
-    "sourceStatus": "active",
+    "sourceStatus": "archived",
     "sheetFormat": "complete_infographic",
     "driveId": "1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC",
     "url": "https://drive.google.com/file/d/1wTBIMcI6XXqaUudoYGcCy10UsjVO1oWC/view"
@@ -575,7 +575,7 @@
     "provisional": false,
     "courseId": "droits_patients",
     "displayTitle": "Droits des patients — complément du 21 octobre 2026",
-    "sourceStatus": "active",
+    "sourceStatus": "archived",
     "resourceId": "droits_patients_fiche_complement_p01_20261021",
     "driveId": "1swoAu939ZMfH53M8CYdtBb6DM-fXVaWW",
     "sheetFormat": "hybrid_infographic",
@@ -734,5 +734,23 @@
     "primaryRevision": true,
     "pageCount": 17,
     "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/gestion-stress-20261019/UE_B3_2_1_S1_Gestion_du_stress_Fiche_Revision_v149_17p.pdf"
+  },
+  {
+    "title": "UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
+    "label": "Droits des patients — Fiche unique",
+    "displayTitle": "Droits des patients — Fiche de révision consolidée",
+    "courseId": "droits_patients",
+    "resourceId": "droits_patients_fiche_unique_20261029",
+    "ue": "S1 A2",
+    "part": "01",
+    "provisional": false,
+    "officialSupport": true,
+    "sourceStatus": "active",
+    "sheetFormat": "written_revision",
+    "primaryRevision": true,
+    "pageCount": 42,
+    "publicationHost": "github_pages",
+    "artifactId": "github_pages:assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf",
+    "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/droits-patients/UE_A2_1_S1_Droits_des_patients_Fiche_de_revision.pdf"
   }
 ]
