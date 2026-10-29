@@ -1,5 +1,9 @@
 # UE A2.1 S1 — Droits des patients : passage à une fiche unique (v1.49)
 
+> **État courant — 29 octobre 2026 : V6 approuvée, migration non effectuée.** Les étapes V2–V5 détaillées ci-dessous sont conservées comme historique ; la V6 les remplace comme **seul candidat de fiche**. 41 pages, sommaire corrigé (QCM 32, synthèse 33, lexique 35), SHA-256 `2f2973ccc326cf72502e7e250a93c7ad36155d544a81b4317bad6816a8cd8bfa`. Validation explicite du propriétaire consignée dans la PR ; le fichier exact est hébergé **sur Drive privé non partagé**, et les octets relus sont conformes à cette empreinte. Contrôles : 41/41 pages visuellement inchangées par rapport à la V5 à 100/200 %, 11 liens et 57 termes de lexique. Cela ne certifie pas la comparaison individuelle des 41 pages au **modèle** Communication, ni la fidélité sémantique exhaustive des 251 pages sources et 4 transcriptions. Contrôles juridiques ponctuels seulement. **Ni accès étudiant, ni publication, ni fusion autorisés par ce seul accord.**
+
+> **Garde-fou de transition renforcé :** `tests/droits-patients-single-sheet-transition.mjs` rejette désormais toute migration qui perd les 3 archives, diffère du SHA V6, s'appuie sur un lien privé/authentifié, n'a pas de revue sémantique complète, n'a pas de comparaison graphique intégrale liée aux octets exacts, ou réutilise le GO de l'ancien lot. La preuve d'accessibilité publique doit comprendre un téléchargement **anonyme complet** et un SHA concordant. Ces exigences valent uniquement quand le mode « fiche unifiée » est activé ; l'état étudiant historique reste autorisé tant qu'aucune migration n'a lieu.
+
 **État : PR de préparation — fusion et déploiement bloqués.** Cette note est un plan technique public, **pas** une attestation de conformité ou un accord de publication. Les matrices, transcriptions, horodatages et preuves QA restent strictement privés.
 
 ## État actuel observé sur `main` le 28/10/2026
