@@ -581,6 +581,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/droits-patients-single-sheet-transition.mjs
 
+      - name: Tests d'affichage des fiches archivées
+        if: ${{ !cancelled() }}
+        run: node tests/droits-patients-archived-ui.mjs
+
       - name: Contrats et intégrité de publication ajoutés au TNR complet
         if: ${{ !cancelled() }}
         run: |
