@@ -14873,5 +14873,1864 @@
         "explanation": "Éducation thérapeutique, soutien psychologique, aide sociale, médiation en santé, vaccinations et suivi régulier, avec une attitude non jugeante."
       }
     ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_001",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 1,
+    "theme": "Fondements et cadres",
+    "difficulty": "easy",
+    "question": "Quelles propositions caractérisent un entretien infirmier ?",
+    "choices": [
+      "Il vise à empêcher le patient d’exprimer ses préoccupations.",
+      "Il exclut la fixation de tout objectif soignant.",
+      "C’est un soin relationnel.",
+      "C’est nécessairement une conversation sans objectif.",
+      "Il correspond toujours à un interrogatoire standard."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Il associe finalité de soin, interaction et expression du patient. La conversation sans but et l’interrogatoire systématique ne définissent pas ce soin. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’un entretien infirmier ?",
+        "answers": [
+          "Un soin relationnel orienté vers des objectifs précis, qui favorise l’expression de la personne."
+        ],
+        "explanation": "Un soin relationnel orienté vers des objectifs précis, qui favorise l’expression de la personne.",
+        "theme": "Définition"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_002",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 2,
+    "theme": "Fondements et cadres",
+    "difficulty": "easy",
+    "question": "À quoi reconnaît-on surtout un entretien formel ?",
+    "choices": [
+      "Ses objectifs sont définis et annoncés.",
+      "Il ne peut jamais réunir plusieurs personnes.",
+      "Il est programmé.",
+      "Il est nécessairement non directif.",
+      "Le lieu et la durée doivent rester inconnus jusqu’à la fin."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Le formel est programmé et cadré : objectifs, lieu et durée envisagés. La technique et le nombre de participants sont des axes distincts. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi n’est-ce pas un interrogatoire ?",
+        "answers": [
+          "Parce qu’il implique interaction, adaptation, écoute et finalité soignante."
+        ],
+        "explanation": "Parce qu’il implique interaction, adaptation, écoute et finalité soignante.",
+        "theme": "Définition"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_003",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 3,
+    "theme": "Fondements et cadres",
+    "difficulty": "easy",
+    "question": "Quelles situations peuvent conduire à un entretien informel ?",
+    "choices": [
+      "Une crise d’angoisse interdit de proposer un entretien.",
+      "Toujours un rendez-vous prévu plusieurs semaines avant.",
+      "Uniquement une convocation écrite.",
+      "Une demande inattendue du patient.",
+      "La rencontre ne peut survenir à la demande spontanée du patient."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "L’informel est souvent déclenché sur le moment, par une demande ou un événement. Convocation et planification longue décrivent plutôt le formel. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « formel » ?",
+        "answers": [
+          "Programmé, objectifs définis et annoncés, lieu et durée prévus."
+        ],
+        "explanation": "Programmé, objectifs définis et annoncés, lieu et durée prévus.",
+        "theme": "Typologie"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_004",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 4,
+    "theme": "Fondements et cadres",
+    "difficulty": "medium",
+    "question": "Comment classer un entretien selon les participants ?",
+    "choices": [
+      "Familial.",
+      "Semi-directif.",
+      "Directif.",
+      "Individuel.",
+      "Formel."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Les catégories individuel et familial décrivent les participants. Directif et semi-directif décrivent une technique ; formel décrit l’organisation.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie « informel » ?",
+        "answers": [
+          "Échange souvent non prévu, à la demande ou en réaction à un événement."
+        ],
+        "explanation": "Échange souvent non prévu, à la demande ou en réaction à un événement.",
+        "theme": "Typologie"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_005",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 5,
+    "theme": "Fondements et cadres",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre catégories sont correctes ?",
+    "choices": [
+      "Formel/informel renseigne sur l’organisation.",
+      "Informel signifie nécessairement non directif.",
+      "Directif/semi-directif renseigne sur la technique.",
+      "Familial signifie nécessairement formel.",
+      "Individuel/familial renseigne sur les participants."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Trois axes de classification distincts décrivent l’organisation, les participants et la technique de conduite. On ne peut pas déduire la technique ni l’organisation des autres axes.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Formel/informel désigne quoi ?",
+        "answers": [
+          "L’organisation de l’entretien, pas sa technique."
+        ],
+        "explanation": "L’organisation de l’entretien, pas sa technique.",
+        "theme": "Typologie"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_006",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 6,
+    "theme": "Fondements et cadres",
+    "difficulty": "easy",
+    "question": "Parmi ces éléments, quels sont des objectifs possibles d’un entretien infirmier ?",
+    "choices": [
+      "Obtenir une obéissance inconditionnelle.",
+      "Apporter un soutien.",
+      "Éviter toute interaction avec la personne.",
+      "Recueillir des données.",
+      "Favoriser un changement souhaité."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les objectifs possibles comprennent notamment le recueil de données, le soutien et l’accompagnement du changement. L’échange et le respect de la personne demeurent centraux.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Individuel/familial désigne quoi ?",
+        "answers": [
+          "Le nombre et la qualité des participants à la rencontre."
+        ],
+        "explanation": "Le nombre et la qualité des participants à la rencontre.",
+        "theme": "Typologie"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_007",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 7,
+    "theme": "Fondements et cadres",
+    "difficulty": "medium",
+    "question": "En quoi l’entretien diffère-t-il d’une simple conversation ?",
+    "choices": [
+      "Il peut s’appuyer sur un objectif défini.",
+      "Il exclut l’écoute de la personne.",
+      "Il impose de ne jamais ajuster les questions pendant l’échange.",
+      "Il impose toujours uniquement des questions fermées.",
+      "Il suit une finalité de soin."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "L’intention, l’objectif et l’adaptation sont au centre du soin relationnel. Il ne supprime ni l’écoute ni les questions ouvertes. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois degrés de conduite ?",
+        "answers": [
+          "Directif, semi-directif, non directif ou libre."
+        ],
+        "explanation": "Directif, semi-directif, non directif ou libre.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_008",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 8,
+    "theme": "Fondements et cadres",
+    "difficulty": "medium",
+    "question": "Une rencontre non prévue pour répondre à une question ciblée sur un médicament peut être…",
+    "choices": [
+      "Informelle.",
+      "Sans aucun objectif parce qu’elle n’était pas prévue.",
+      "Un entretien informatif.",
+      "Nécessairement familiale.",
+      "Plutôt directive selon la conduite retenue."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Un échange spontané peut être informel, ciblé et informatif à la fois. La planification ne détermine ni les participants ni l’existence d’une finalité.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Caractéristique du directif ?",
+        "answers": [
+          "Questions ciblées et préparées, souvent fermées ; objectif précis."
+        ],
+        "explanation": "Questions ciblées et préparées, souvent fermées ; objectif précis.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_009",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 9,
+    "theme": "Fondements et cadres",
+    "difficulty": "hard",
+    "question": "Quelles affirmations reflètent une conduite souple des différents types d’entretien ?",
+    "choices": [
+      "La technique se déduit uniquement du lieu.",
+      "Dans un entretien infirmier, l’échange conserve une finalité de soin.",
+      "Les catégories d’entretien sont des repères et non des cases toujours exclusives.",
+      "La liste des objectifs est présentée comme forcément exhaustive.",
+      "Un entretien peut mêler information et recadrage."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Les appellations sont souples ; une rencontre peut associer plusieurs objectifs tout en gardant une finalité soignante. Le lieu ne détermine pas la technique ; la liste n’est pas exhaustive.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels outils possibles en directif ?",
+        "answers": [
+          "Questionnaire, grille ou audit, selon la finalité."
+        ],
+        "explanation": "Questionnaire, grille ou audit, selon la finalité.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_010",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 10,
+    "theme": "Fondements et cadres",
+    "difficulty": "hard",
+    "question": "Quelles précautions sont adaptées lors d’un entretien familial ?",
+    "choices": [
+      "Considérer que tous les propos intimes sont automatiquement communicables.",
+      "Identifier le but de la rencontre.",
+      "Se dispenser d’écouter le patient parce que la famille est présente.",
+      "Vérifier la place de la personne soignée.",
+      "Adapter les échanges au cadre professionnel."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les objectifs et la place du patient restent essentiels, y compris avec la famille. La présence des proches n’autorise pas automatiquement toute divulgation.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Caractéristique du semi-directif ?",
+        "answers": [
+          "Thèmes préparés mais questions ouvertes et expression guidée."
+        ],
+        "explanation": "Thèmes préparés mais questions ouvertes et expression guidée.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_011",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 11,
+    "theme": "Techniques de conduite",
+    "difficulty": "easy",
+    "question": "Quels éléments caractérisent l’entretien directif ?",
+    "choices": [
+      "Une liste de questions préparées.",
+      "L’absence de but précis.",
+      "Il exclut totalement l’usage de questions fermées.",
+      "Un discours du patient constamment libre et ininterrompu.",
+      "La thématique est toujours inconnue du soignant."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Le directif suit un guidage fort et un objectif ciblé. La liberté continue du discours relève davantage du non-directif. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert le guide semi-directif ?",
+        "answers": [
+          "À couvrir les thèmes tout en restant souple et attentif aux réponses."
+        ],
+        "explanation": "À couvrir les thèmes tout en restant souple et attentif aux réponses.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_012",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 12,
+    "theme": "Techniques de conduite",
+    "difficulty": "medium",
+    "question": "Quels outils peut-on employer dans un entretien directif ?",
+    "choices": [
+      "Absence de préparation de toute question.",
+      "Silence prolongé comme unique méthode.",
+      "Il exclut par définition toute utilisation de grilles ou d’audits.",
+      "Questionnaire.",
+      "Grille."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Questionnaires, grilles et audits sont des outils possibles d’une conduite directive. Le directif n’interdit pas l’écoute mais ne se définit pas par l’improvisation. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Caractéristique du non-directif ?",
+        "answers": [
+          "Discours plus continu du patient dans un cadre d’exploration précis."
+        ],
+        "explanation": "Discours plus continu du patient dans un cadre d’exploration précis.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_013",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 13,
+    "theme": "Techniques de conduite",
+    "difficulty": "easy",
+    "question": "Dans un entretien semi-directif, que retrouve-t-on ?",
+    "choices": [
+      "Des questions ouvertes possibles.",
+      "Des thèmes pré-définis.",
+      "Il interdit toute parole spontanée du patient.",
+      "Une obligation de suivre mot pour mot un questionnaire fermé.",
+      "Une interdiction de relancer."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "La technique combine un cadre préparé et une exploration ouverte. Elle ne rigidifie pas toutes les relances ni les questions. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Le non-directif est-il sans objectif ?",
+        "answers": [
+          "Non. Le cadre et la finalité restent présents."
+        ],
+        "explanation": "Non. Le cadre et la finalité restent présents.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_014",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 14,
+    "theme": "Techniques de conduite",
+    "difficulty": "medium",
+    "question": "Quelles propriétés caractérisent le non-directif ?",
+    "choices": [
+      "Un cadre d’exploration posé par le soignant.",
+      "Une expression plus continue du patient.",
+      "La nécessité de maîtriser l’écoute active.",
+      "Uniquement des questions fermées.",
+      "L’absence complète d’objectif."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le patient dispose d’un espace d’expression dans un cadre qui conserve une finalité. Non directif n’équivaut ni à absence de but ni à questions fermées exclusivement.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’une question ouverte ?",
+        "answers": [
+          "Une question laissant la personne développer son vécu ou son point de vue."
+        ],
+        "explanation": "Une question laissant la personne développer son vécu ou son point de vue.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_015",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 15,
+    "theme": "Techniques de conduite",
+    "difficulty": "easy",
+    "question": "Quelle formulation est une question ouverte ?",
+    "choices": [
+      "« Avez-vous dormi ? »",
+      "« Est-ce que vous fumez ? »",
+      "« Comment vivez-vous le traitement ? »",
+      "« Avez-vous pris votre traitement ? »",
+      "« Avez-vous mal ? »"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "« Comment » ouvre à un récit ; les autres formulations appellent plutôt des réponses fermées. Les questions fermées restent utiles au recueil ciblé.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce qu’une question fermée ?",
+        "answers": [
+          "Une question appelant une réponse limitée, utile à un recueil ciblé."
+        ],
+        "explanation": "Une question appelant une réponse limitée, utile à un recueil ciblé.",
+        "theme": "Technique"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_016",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 16,
+    "theme": "Techniques de conduite",
+    "difficulty": "medium",
+    "question": "Quelle formulation convient à un recueil ciblé sur la consommation tabagique ?",
+    "choices": [
+      "« Ne répondez pas si vous le souhaitez, mais je cocherai oui. »",
+      "« Fumez-vous actuellement ? »",
+      "« Racontez toute votre enfance. »",
+      "« On sait que vous mentez sur le sujet. »",
+      "« Vous ne fumez pas, n’est-ce pas ? »"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La question précise et neutre recherche une donnée ciblée. Les réponses suggérées, accusations et cases présumées ne respectent pas le recueil.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Finalité de l’entretien initial ?",
+        "answers": [
+          "Instaurer une confiance et recueillir les données pertinentes pour la prise en soins."
+        ],
+        "explanation": "Instaurer une confiance et recueillir les données pertinentes pour la prise en soins.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_017",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 17,
+    "theme": "Techniques de conduite",
+    "difficulty": "medium",
+    "question": "Pourquoi un guide de thèmes peut-il être utile au semi-directif ?",
+    "choices": [
+      "Il supprime tout objectif de soin dès qu’une question est ouverte.",
+      "Il remplace entièrement l’écoute active.",
+      "Il aide à ne pas oublier des points importants.",
+      "Il interdit toute adaptation à l’échange.",
+      "Il interdit de laisser le patient développer une réponse."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La grille est un appui au questionnement souple et orienté. Elle ne dispense jamais de l’écoute ni de l’adaptation. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que recueille-t-on à l’accueil initial ?",
+        "answers": [
+          "Besoins, état clinique, habitudes, antécédents et questions pertinentes."
+        ],
+        "explanation": "Besoins, état clinique, habitudes, antécédents et questions pertinentes.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_018",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 18,
+    "theme": "Techniques de conduite",
+    "difficulty": "hard",
+    "question": "Dans un entretien plutôt non directif, le soignant doit…",
+    "choices": [
+      "Accueillir un discours qui se développe.",
+      "Savoir recentrer au besoin.",
+      "Éviter systématiquement toute reformulation.",
+      "Garder en tête une finalité.",
+      "Ne jamais observer le non-verbal."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "L’expression libre s’appuie sur la maîtrise de l’entretien. Observation et reformulation restent des outils possibles.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Entretien d’accueil = phase d’accueil ?",
+        "answers": [
+          "Non : l’un est un type d’entretien, l’autre le début de toute rencontre."
+        ],
+        "explanation": "Non : l’un est un type d’entretien, l’autre le début de toute rencontre.",
+        "theme": "Piège"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_019",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 19,
+    "theme": "Techniques de conduite",
+    "difficulty": "medium",
+    "question": "Comment distinguer question ouverte et question fermée ?",
+    "choices": [
+      "Une question fermée est toujours maltraitante.",
+      "Le type de question est choisi sans tenir compte du but.",
+      "Une question ouverte supprime l’objectif de soin.",
+      "Une question ouverte favorise le développement d’un point de vue.",
+      "Une question fermée sert parfois à obtenir une donnée précise."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Les deux types sont utiles suivant le besoin de recueil ou d’expression. Aucun n’est intrinsèquement sans objectif ou systématiquement inadapté. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert l’entretien informatif ?",
+        "answers": [
+          "Expliquer état de santé, soins, traitements et répondre aux questions."
+        ],
+        "explanation": "Expliquer état de santé, soins, traitements et répondre aux questions.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_020",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 20,
+    "theme": "Techniques de conduite",
+    "difficulty": "hard",
+    "question": "Quelles précautions évitent de transformer un non-directif en discussion sans cadre ?",
+    "choices": [
+      "Proscrire les silences.",
+      "Poser un sujet d’exploration.",
+      "Interrompre dès qu’un sujet nouveau apparaît.",
+      "Conserver les objectifs de soin.",
+      "Maintenir l’écoute."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "L’entretien libre n’est pas dépourvu de sujet, de finalité ni d’écoute. Silences et thèmes spontanés peuvent apporter des informations utiles.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "L’information est-elle une récitation ?",
+        "answers": [
+          "Non : elle se construit et s’adapte aux réactions de la personne."
+        ],
+        "explanation": "Non : elle se construit et s’adapte aux réactions de la personne.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_021",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 21,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "easy",
+    "question": "Dans l’entretien d’accueil initial, quels éléments sont pertinents ?",
+    "choices": [
+      "Se limiter à énumérer les horaires du service.",
+      "Écarter systématiquement tout recueil de données sur la personne.",
+      "Créer de la confiance.",
+      "Ne jamais évaluer les besoins du patient.",
+      "Refuser les questions du patient."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "L’entretien initial peut associer instauration de confiance, exploration des besoins, recueil de données et explications utiles. Il ne réduit pas l’entretien à une information administrative unilatérale. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi servent les soins éducatifs ?",
+        "answers": [
+          "Évaluer les connaissances, compléter l’information et accompagner des apprentissages."
+        ],
+        "explanation": "Évaluer les connaissances, compléter l’information et accompagner des apprentissages.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_022",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 22,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "hard",
+    "question": "À propos de l’entretien d’accueil et de la phase d’accueil, quelles affirmations sont exactes ?",
+    "choices": [
+      "L’entretien d’accueil est un type d’entretien.",
+      "La phase d’accueil appartient au début de tout entretien.",
+      "Toute phase d’accueil doit comporter un recueil de données intégral.",
+      "L’ouverture vise notamment la présentation et le cadre.",
+      "Les deux expressions sont parfaitement synonymes."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Un entretien d’accueil est une finalité de soin ; la phase d’accueil est un temps initial commun aux différents entretiens. Le recueil complet n’est pas obligatoire à chaque ouverture.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "But de l’entretien de soutien ?",
+        "answers": [
+          "Favoriser l’expression des émotions, comprendre le vécu et les ressources."
+        ],
+        "explanation": "Favoriser l’expression des émotions, comprendre le vécu et les ressources.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_023",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 23,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "easy",
+    "question": "Que peut comporter un entretien informatif ?",
+    "choices": [
+      "Une annonce sans dialogue possible.",
+      "Il évite systématiquement de parler des traitements.",
+      "Une certitude que la personne a tout compris sans vérifier.",
+      "Une réponse aux questions du patient.",
+      "Des explications sur les soins."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "L’information peut porter sur l’état de santé, les soins et traitements. L’information doit être adaptée au dialogue, aux questions et aux réactions de la personne.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel auteur est mis en avant ?",
+        "answers": [
+          "Carl Rogers, pour l’approche centrée sur la personne."
+        ],
+        "explanation": "Carl Rogers, pour l’approche centrée sur la personne.",
+        "theme": "Relation d’aide"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_024",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 24,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "medium",
+    "question": "Quels éléments caractérisent les soins éducatifs ?",
+    "choices": [
+      "Compléter l’information.",
+      "Supposer que toute explication suffit.",
+      "Évaluer des connaissances préalables.",
+      "Accompagner un apprentissage de geste.",
+      "Exclure les questions du patient."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La démarche éducative évalue les acquis et accompagne des apprentissages. Elle va au-delà d’une explication unique.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Trois attitudes importantes ?",
+        "answers": [
+          "Empathie, congruence et non-jugement, avec authenticité et disponibilité."
+        ],
+        "explanation": "Empathie, congruence et non-jugement, avec authenticité et disponibilité.",
+        "theme": "Relation d’aide"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_025",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 25,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "easy",
+    "question": "Quels principes soutiennent un entretien d’aide ?",
+    "choices": [
+      "Il impose de porter un jugement sur le vécu de la personne.",
+      "Décision systématique à sa place.",
+      "Empathie.",
+      "Étiquetage de la personne.",
+      "Porter systématiquement des jugements de valeur."
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La relation d’aide centrée sur la personne suppose empathie, congruence, non-jugement et respect. Stigmatisation et substitution à sa décision s’y opposent. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que fait la reformulation ?",
+        "answers": [
+          "Vérifier la compréhension et aider la personne à développer ses propos."
+        ],
+        "explanation": "Vérifier la compréhension et aider la personne à développer ses propos.",
+        "theme": "Relation d’aide"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_026",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 26,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "medium",
+    "question": "Parmi ces outils, lesquels sont nommés pour l’entretien d’aide ?",
+    "choices": [
+      "Moquerie.",
+      "Reformulation.",
+      "Menace.",
+      "Il consiste à accuser le patient au lieu de l’écouter.",
+      "Clarification."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Les outils relationnels incluent notamment exploration, clarification, reformulation et écho. Menace et moquerie s’opposent à la posture requise. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la clarification ?",
+        "answers": [
+          "Demander des précisions sur une parole ambiguë ou peu claire."
+        ],
+        "explanation": "Demander des précisions sur une parole ambiguë ou peu claire.",
+        "theme": "Relation d’aide"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_027",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 27,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "medium",
+    "question": "Face à une personne qui exprime une inquiétude profonde, quelles réactions sont compatibles avec la relation d’aide ?",
+    "choices": [
+      "Éviter de juger son émotion.",
+      "Laisser la personne exprimer son vécu.",
+      "Chercher à comprendre sa préoccupation.",
+      "Lui interdire d’évoquer ce qui lui fait peur.",
+      "Répondre automatiquement « ce n’est rien »."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Le soutien vise l’expression et la compréhension du vécu. Banaliser ou bloquer l’expression ne répond pas à cet objectif.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert le renforcement positif ?",
+        "answers": [
+          "Valoriser une ressource ou un effort réel du patient."
+        ],
+        "explanation": "Valoriser une ressource ou un effort réel du patient.",
+        "theme": "Relation d’aide"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_028",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 28,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "hard",
+    "question": "Une personne refuse sa toilette. Quelle conduite relève d’une négociation respectueuse ?",
+    "choices": [
+      "Explorer les raisons du refus.",
+      "Imposer le soin pour respecter l’horaire.",
+      "Présumer que tout refus est un manque de coopération.",
+      "Ne pas chercher à comprendre les raisons du refus.",
+      "Chercher une option adaptée si possible."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Le but n’est pas d’obtenir coûte que coûte la toilette à l’heure prévue. La contrainte organisationnelle ne justifie pas à elle seule l’imposition du soin. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "But de la négociation ?",
+        "answers": [
+          "Rechercher une décision éclairée et un compromis possible sans imposer le soin."
+        ],
+        "explanation": "Rechercher une décision éclairée et un compromis possible sans imposer le soin.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_029",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 29,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "medium",
+    "question": "Quels éléments peuvent entrer dans un entretien de négociation ?",
+    "choices": [
+      "Une recherche de compromis.",
+      "Refuser d’expliquer ce qui est négociable dans le cadre du soin.",
+      "Des éléments permettant une décision éclairée.",
+      "La négation du libre arbitre du patient.",
+      "Une injonction sans explication."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La négociation recherche une décision éclairée et un compromis possible sans ignorer les limites du cadre de soin. La négociation ne s’assimile pas à l’obtention d’une obéissance. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Premier réflexe face à un refus de toilette ?",
+        "answers": [
+          "Explorer les raisons du refus et respecter la possibilité de choix."
+        ],
+        "explanation": "Explorer les raisons du refus et respecter la possibilité de choix.",
+        "theme": "Application"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_030",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 30,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "easy",
+    "question": "Dans quelles situations un entretien de recadrage peut-il être approprié ?",
+    "choices": [
+      "Exclusivement avant une admission.",
+      "Comportement inadapté de l’entourage.",
+      "Management.",
+      "Non-respect d’une règle par le patient.",
+      "Uniquement pour les enfants."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Le recadrage peut concerner équipes, patients ou proches selon le cadre. Aucune restriction exclusive aux enfants ou à l’admission n’est formulée.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Recadrer, est-ce seulement rappeler une règle ?",
+        "answers": [
+          "Non : un entretien de recadrage est structuré ; une remarque ponctuelle peut être différente."
+        ],
+        "explanation": "Non : un entretien de recadrage est structuré ; une remarque ponctuelle peut être différente.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_031",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 31,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "hard",
+    "question": "Quelles propositions distinguent rappel d’une règle et entretien de recadrage ?",
+    "choices": [
+      "Un entretien de recadrage peut comporter une dimension informative.",
+      "Un rappel ponctuel n’est pas automatiquement un entretien structuré.",
+      "Recadrer signifie nécessairement menacer.",
+      "Tout rappel immédiat d’interdiction est un entretien programmé.",
+      "Un entretien peut expliquer le sens et les limites du cadre."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Un rappel immédiat ne constitue pas nécessairement un entretien de recadrage structuré. Le recadrage n’est pas défini par la menace ni par une programmation systématique.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qui peut être concerné par un recadrage ?",
+        "answers": [
+          "Patient, entourage et équipe dans une situation de management."
+        ],
+        "explanation": "Patient, entourage et équipe dans une situation de management.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_032",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 32,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "easy",
+    "question": "Quel est l’objectif principal d’un entretien motivationnel ?",
+    "choices": [
+      "Imposer une décision à la personne.",
+      "Faire émerger la motivation au changement.",
+      "Il demande de ne jamais explorer l’ambivalence.",
+      "Il exclut toute démarche collaborative avec le patient.",
+      "Garantir un changement immédiat."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La démarche est collaborative et centrée sur les ressources propres au patient. Elle ne garantit pas ni n’impose un changement. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "But de l’entretien motivationnel ?",
+        "answers": [
+          "Faire émerger une motivation interne et travailler l’ambivalence."
+        ],
+        "explanation": "Faire émerger une motivation interne et travailler l’ambivalence.",
+        "theme": "Objectif"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_033",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 33,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "medium",
+    "question": "Que signifie l’ambivalence dans l’entretien motivationnel ?",
+    "choices": [
+      "La personne peut percevoir des raisons de changer.",
+      "Elle impose d’emblée une sanction.",
+      "Elle peut aussi percevoir des raisons de ne pas changer.",
+      "Le soignant peut aider à explorer ce décalage.",
+      "Elle prouve que la personne ment."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Des motivations opposées peuvent coexister et être explorées. L’ambivalence n’autorise pas un jugement moral.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que l’ambivalence ?",
+        "answers": [
+          "Avoir à la fois des raisons de changer et des raisons de ne pas changer."
+        ],
+        "explanation": "Avoir à la fois des raisons de changer et des raisons de ne pas changer.",
+        "theme": "Motivation"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_034",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 34,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "hard",
+    "question": "Dans une situation de consommation problématique, une personne minimise les conséquences. Quelles postures sont adaptées ?",
+    "choices": [
+      "Affirmer que le patient ment obligatoirement.",
+      "Permettre au patient de confronter son vécu à ses objectifs.",
+      "Accueillir sans jugement les contradictions apparentes.",
+      "Poser des questions ouvertes sur les conséquences vécues.",
+      "Décider du changement à sa place."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’entretien motivationnel aide notamment à clarifier progressivement l’ambivalence. Accusation et substitution à la décision sont contraires à la démarche.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Soutien = motivationnel ?",
+        "answers": [
+          "Non : soutenir une émotion et explorer un changement n’ont pas la même finalité."
+        ],
+        "explanation": "Non : soutenir une émotion et explorer un changement n’ont pas la même finalité.",
+        "theme": "Motivation"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_035",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 35,
+    "theme": "Objectifs des entretiens",
+    "difficulty": "hard",
+    "question": "Quelles distinctions entre soutien et entretien motivationnel sont correctes ?",
+    "choices": [
+      "Le motivationnel interdit toutes questions ouvertes.",
+      "Le soutien peut accueillir une émotion difficile.",
+      "Le motivationnel vise l’exploration d’un changement de comportement.",
+      "Encourager quelqu’un à garder espoir suffit à définir le motivationnel.",
+      "Il rend l’écoute incompatible avec le changement."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "explanation": "La finalité du changement et l’accueil de l’émotion ne sont pas synonymes. Le soutien émotionnel et l’exploration de la motivation ont des finalités différentes.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Combien d’étapes comporte un entretien infirmier ?",
+        "answers": [
+          "Cinq : préparation, orientation, exploration, conclusion, évaluation/transmissions."
+        ],
+        "explanation": "Cinq : préparation, orientation, exploration, conclusion, évaluation/transmissions.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_036",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 36,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "easy",
+    "question": "Quelle étape précède l’échange avec la personne soignée ?",
+    "choices": [
+      "La conclusion.",
+      "La transmission.",
+      "Le remerciement.",
+      "La préparation.",
+      "Le débriefing."
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "La préparation se déroule sans le patient, avant l’ouverture. Conclusion et transmissions interviennent après le corps de l’entretien.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 1 : quels éléments préparer ?",
+        "answers": [
+          "Objectif, lieu, moment, durée, modalités, questions et outils."
+        ],
+        "explanation": "Objectif, lieu, moment, durée, modalités, questions et outils.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_037",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 37,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "easy",
+    "question": "Que planifier lors de la préparation ?",
+    "choices": [
+      "Le lieu.",
+      "L’émotion future exacte du patient.",
+      "Maintenir le lieu prévu même si son adaptation est nécessaire.",
+      "Toutes les réponses qu’il donnera.",
+      "Le moment."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Les modalités d’organisation sont préparables. Les réactions et réponses futures ne peuvent être décrétées. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 2 : que présenter ?",
+        "answers": [
+          "Identité/fonction, motif, objectifs, durée et cadre."
+        ],
+        "explanation": "Identité/fonction, motif, objectifs, durée et cadre.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_038",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 38,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "medium",
+    "question": "Quels éléments sont attendus à l’ouverture / orientation ?",
+    "choices": [
+      "Présenter sa fonction.",
+      "Passer immédiatement à des questions intimes sans cadre.",
+      "Omettre systématiquement la durée.",
+      "Rechercher la disponibilité et l’accord du patient.",
+      "Annoncer l’objectif."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La phase d’orientation comprend présentation du motif, des objectifs, de la durée indicative et vérification de l’accord. L’ouverture construit le cadre plutôt que de le court-circuiter.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 2 : que vérifier ?",
+        "answers": [
+          "Disponibilité, consentement et état d’esprit du patient."
+        ],
+        "explanation": "Disponibilité, consentement et état d’esprit du patient.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_039",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 39,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "medium",
+    "question": "Quels outils favorisent l’exploration dans le corps d’un entretien ?",
+    "choices": [
+      "Interruption automatique de tout silence.",
+      "Écoute active.",
+      "Interdire toute reformulation.",
+      "Il proscrit l’observation des expressions non verbales.",
+      "Jugement de valeur."
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "L’exploration mobilise notamment écoute, observation, reformulation et renforcement positif. Respect du silence et non-jugement sont au contraire recherchés. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 3 : quels outils ?",
+        "answers": [
+          "Écoute active, observation, reformulation, silence et renforcement positif."
+        ],
+        "explanation": "Écoute active, observation, reformulation, silence et renforcement positif.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_040",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 40,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "hard",
+    "question": "À propos des silences pendant l’exploration, que retenir ?",
+    "choices": [
+      "Ils doivent être comblés immédiatement.",
+      "Ils imposent toujours la fin de l’entretien.",
+      "Ils peuvent laisser du temps pour exprimer un vécu.",
+      "Ils peuvent avoir du sens.",
+      "Le soignant doit éviter de terminer la phrase du patient."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Respecter les silences permet au patient de réfléchir et de s’exprimer à son rythme. Un silence n’impose ni clôture systématique ni remplissage immédiat.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi respecter les silences ?",
+        "answers": [
+          "Ils laissent parfois du temps au patient pour réfléchir et s’exprimer."
+        ],
+        "explanation": "Ils laissent parfois du temps au patient pour réfléchir et s’exprimer.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_041",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 41,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "medium",
+    "question": "Quelles actions appartiennent à la conclusion ?",
+    "choices": [
+      "Annoncer la fin.",
+      "Exclure systématiquement toute proposition de rencontre ultérieure.",
+      "Synthétiser l’échange.",
+      "Faire comme si tous les objectifs étaient atteints.",
+      "Éviter de remercier le patient par principe."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "La conclusion annonce la fin, fait le bilan et prépare la suite. Elle ne suppose pas automatiquement une atteinte totale des objectifs. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi observer le non-verbal ?",
+        "answers": [
+          "Pour tenir compte de la posture et des indices qui complètent le discours."
+        ],
+        "explanation": "Pour tenir compte de la posture et des indices qui complètent le discours.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_042",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 42,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "hard",
+    "question": "L’objectif d’un entretien n’est atteint que partiellement. Quelles conduites sont cohérentes ?",
+    "choices": [
+      "Prétendre qu’il est entièrement atteint.",
+      "Évaluer ce qui reste à travailler.",
+      "Le reconnaître dans la synthèse.",
+      "Envisager une suite avec le patient.",
+      "Nier ce qui a été réalisé."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’atteinte des objectifs peut être totale, partielle ou absente, ce qui oriente les suites. Il ne faut ni masquer les limites ni annuler les acquis.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la proxémie ?",
+        "answers": [
+          "La place de l’espace et de la distance dans la relation."
+        ],
+        "explanation": "La place de l’espace et de la distance dans la relation.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_043",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 43,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "easy",
+    "question": "Après l’entretien, que prévoit l’étape 5 ?",
+    "choices": [
+      "Il exclut toute transmission écrite après la rencontre.",
+      "L’absence de toute trace de soins.",
+      "La copie intégrale de chaque confidence.",
+      "Un débriefing.",
+      "Des transmissions orales pertinentes."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Évaluation professionnelle et transmissions font partie du déroulement. La transmission doit être utile et synthétique, et non reproduire tout l’entretien mot pour mot.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 4 : comment conclure ?",
+        "answers": [
+          "Annoncer la fin, synthétiser, évaluer les objectifs et convenir d’une suite."
+        ],
+        "explanation": "Annoncer la fin, synthétiser, évaluer les objectifs et convenir d’une suite.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_044",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 44,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "medium",
+    "question": "Quelles informations privilégier dans les transmissions ?",
+    "choices": [
+      "Les jugements personnels sur le caractère du patient.",
+      "Les observations utiles à la continuité du soin.",
+      "Les besoins pertinents identifiés.",
+      "L’intégralité des propos intimes sans sélection.",
+      "Les décisions ou suites convenues."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "La transmission sert la continuité de la prise en soins. Les jugements et les détails intimes superflus n’ont pas à figurer dans les transmissions.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Un objectif partiellement atteint ?",
+        "answers": [
+          "Le constater et envisager un complément ou un prochain entretien."
+        ],
+        "explanation": "Le constater et envisager un complément ou un prochain entretien.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_045",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 45,
+    "theme": "Déroulement en cinq étapes",
+    "difficulty": "hard",
+    "question": "Dans le déroulement en cinq phases, quelles associations sont exactes ?",
+    "choices": [
+      "Évaluation/transmissions : recopier l’entretien mot à mot.",
+      "Préparation : objectifs et modalités.",
+      "Conclusion : ne pas évaluer les objectifs.",
+      "Orientation : cadre et consentement.",
+      "Exploration : écoute et reformulation."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les trois premières étapes correspondent à la préparation, à l’orientation et à l’exploration. La conclusion évalue les objectifs ; les transmissions sont sélectives.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Étape 5 : que faire ?",
+        "answers": [
+          "Débriefer et transmettre oralement et par écrit ce qui est utile."
+        ],
+        "explanation": "Débriefer et transmettre oralement et par écrit ce qui est utile.",
+        "theme": "Étapes"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_046",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 46,
+    "theme": "Posture, facilitateurs et freins",
+    "difficulty": "easy",
+    "question": "Quels facteurs peuvent favoriser un entretien ?",
+    "choices": [
+      "Un lieu calme.",
+      "Des interruptions permanentes.",
+      "Des objectifs totalement cachés au patient.",
+      "Proposer la rencontre uniquement lorsque le soignant est indisponible.",
+      "Une posture qui juge systématiquement le patient."
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "Lieu, disponibilité et posture soutiennent l’échange. Opacité et interruptions le fragilisent. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 1,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Faut-il tout retranscrire ?",
+        "answers": [
+          "Non : consigner les éléments pertinents sans détails intimes superflus."
+        ],
+        "explanation": "Non : consigner les éléments pertinents sans détails intimes superflus.",
+        "theme": "Transmissions"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_047",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 47,
+    "theme": "Posture, facilitateurs et freins",
+    "difficulty": "easy",
+    "question": "Quels éléments sont des freins possibles ?",
+    "choices": [
+      "Une barrière linguistique n’entrave jamais un entretien.",
+      "Une douleur importante.",
+      "Une posture bienveillante.",
+      "L’intimité du lieu.",
+      "Un environnement bruyant."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "explanation": "Une douleur importante et un environnement bruyant sont deux freins identifiés : ils diminuent la disponibilité ou perturbent la qualité des échanges. La bienveillance et l’intimité favorisent au contraire l’entretien. Une barrière linguistique peut aussi constituer un frein : elle n’est pas toujours sans effet.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Trois facteurs favorisants ?",
+        "answers": [
+          "Lieu adapté, disponibilité et posture empathique sans jugement."
+        ],
+        "explanation": "Lieu adapté, disponibilité et posture empathique sans jugement.",
+        "theme": "Facteurs"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_048",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 48,
+    "theme": "Posture, facilitateurs et freins",
+    "difficulty": "medium",
+    "question": "Que peut-on envisager face à une barrière de langue ?",
+    "choices": [
+      "Reconnaître qu’il s’agit d’un frein possible.",
+      "Remplacer toute explication par des gestes incompréhensibles.",
+      "Supposer automatiquement que l’échange est compris.",
+      "Explorer la possibilité d’un interprétariat.",
+      "Adapter le cadre et les moyens disponibles."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Une barrière linguistique peut nécessiter un interprétariat adapté pour vérifier la compréhension. La compréhension ne doit pas être présumée.",
+    "announcedCorrectCount": 3,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Trois freins possibles ?",
+        "answers": [
+          "Douleur, bruit et barrière linguistique, entre autres."
+        ],
+        "explanation": "Douleur, bruit et barrière linguistique, entre autres.",
+        "theme": "Facteurs"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_049",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 49,
+    "theme": "Posture, facilitateurs et freins",
+    "difficulty": "medium",
+    "question": "Quelles attitudes du soignant favorisent l’entretien ?",
+    "choices": [
+      "Impatience.",
+      "Une attitude ouvertement irrespectueuse du soignant.",
+      "Congruence.",
+      "Empathie.",
+      "Stigmatisation."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La congruence, l’empathie et le respect favorisent l’alliance relationnelle et l’écoute. Jugement et impatience font obstacle à l’expression. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire en cas de barrière de langue ?",
+        "answers": [
+          "Évaluer la possibilité d’un interprétariat selon les ressources du service."
+        ],
+        "explanation": "Évaluer la possibilité d’un interprétariat selon les ressources du service.",
+        "theme": "Facteurs"
+      }
+    ]
+  },
+  {
+    "id": "D1_ENTRETIEN_INFIRMIER_050",
+    "courseId": "entretien_infirmier",
+    "ue": "D1.1 S1",
+    "course": "L’entretien infirmier",
+    "partId": "p01",
+    "number": 50,
+    "theme": "Posture, facilitateurs et freins",
+    "difficulty": "hard",
+    "question": "Une rencontre devient difficile à cause de l’état du patient et du contexte. Quelles adaptations restent cohérentes ?",
+    "choices": [
+      "Conclure que le patient est forcément de mauvaise volonté.",
+      "Refuser toute aide de l’équipe, quelle que soit la difficulté.",
+      "Réévaluer la disponibilité du patient.",
+      "Poursuivre sans adaptation pour respecter le planning.",
+      "Chercher un lieu plus approprié si possible."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "explanation": "Adapter le cadre à la disponibilité du patient et solliciter l’équipe si nécessaire aide à réduire les freins. Rigidité et jugement écartent cette approche. Les formulations absolues ou imposées ne décrivent pas une conduite adaptée.",
+    "announcedCorrectCount": 2,
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "provisional",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que faire face à un entretien éprouvant ?",
+        "answers": [
+          "Adapter le cadre et solliciter l’équipe si la situation le justifie."
+        ],
+        "explanation": "Adapter le cadre et solliciter l’équipe si la situation le justifie.",
+        "theme": "Facteurs"
+      }
+    ]
   }
 ]

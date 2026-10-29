@@ -3934,6 +3934,281 @@
         "approvalBasis": "GO explicite de publication et acceptation graphique du PDF QCM final SHA256 bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc ; fiche, flashcards et MP3 déjà acceptés et inchangés ; validation renouvelée le 28/10/2026. Statut provisoire conservé.",
         "mergeDeploymentCondition": "TNR verts et vérification des fichiers réellement servis par GitHub Pages"
       }
+    },
+    {
+      "courseId": "entretien_infirmier",
+      "part": "01",
+      "validated": true,
+      "status": "partial",
+      "provisional": true,
+      "pedagogicalValidated": false,
+      "provisionalReassessmentRequired": true,
+      "deliveryMode": "source_limited_first_release",
+      "publicationHost": "github_pages",
+      "packFormat": "written_v1",
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "supportSlides": 28,
+        "transcriptParts": 2,
+        "reconciled": false,
+        "privateSourcePreserved": true,
+        "nonRegressionCharter": "v1.49"
+      },
+      "sheetResourceId": "entretien_infirmier_sheet_v4",
+      "sheetResourceIds": [
+        "entretien_infirmier_sheet_v4"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "qcmBank": "data/course-banks/entretien_infirmier.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "publicAssetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+      "qcmPublicAssetSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+      "flashcardPublicAssetSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+      "vocals": [],
+      "requestedVocals": true,
+      "scriptsPreparedCount": 5,
+      "sourceAudit": {
+        "officialChecked": true,
+        "officialSupportMissing": false,
+        "officialSupportPreservedPrivately": true,
+        "oralStatus": "unverified",
+        "oralCoverageExhaustive": false,
+        "recordingTailTruncated": false,
+        "missingSources": [
+          "original_audio_comparison"
+        ],
+        "scopedReleaseAccepted": true,
+        "scopedReviewBasis": "17 thèmes du support officiel 28 diapositives rapprochés de la fiche V3 ; PT01 et PT02 consultées sans réécoute exhaustive de l'enregistrement original.",
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0,
+        "externalAuthorization": "not_requested"
+      },
+      "writtenCoverage": {
+        "expectedEssential": 17,
+        "coveredEssential": 17,
+        "prioritySourceReference": "Support officiel 28 diapositives, PT01/PT02 ; matrice privée des 17 thèmes",
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "provisional_oral_only",
+        "disciplinaryReviewScope": "Contrôle des thèmes officiels et des textes disponibles ; attribution des locuteurs, nuances orales et exhaustivité audio encore réservées."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "pageSize": "A4",
+        "pageCount": 13,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 33,
+        "textSelectable": true,
+        "checked": true
+      },
+      "artifactSha256s": {
+        "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+        "entretien_infirmier_flashcards_v5": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715"
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Fiche_Revision_V4.pdf",
+          "sha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+          "pageCount": 13,
+          "artifactId": "entretien_infirmier_sheet_v4"
+        },
+        "qcm": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_QCM_50_Corriges_V5.pdf",
+          "sha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+          "pageCount": 21,
+          "artifactId": "entretien_infirmier_qcm_v5"
+        },
+        "flashcards": {
+          "path": "assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf",
+          "sha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+          "pageCount": 10,
+          "artifactId": "entretien_infirmier_flashcards_v5"
+        }
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 13,
+        "reviewedAt": "2026-10-28T22:11:00+01:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "entretien_infirmier_sheet_v4": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+          "entretien_infirmier_qcm_v5": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+          "entretien_infirmier_flashcards_v5": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715"
+        },
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+        "technicalRasterEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb",
+        "acceptanceBasis": "L'utilisateur a répondu « ok go » à la demande d'accord graphique sur fiche V4, QCM V5 et flashcards V5 ; contrôle technique des 44 pages à 100 % et 200 % réalisé par l'assistant (sans prétendre une lecture manuelle de toutes les pages par l'utilisateur)."
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+            "pageCount": 13,
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "reviewedAt": "2026-10-28T22:11:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+            "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "8112dde839d1526debbd0775186fe766a23764a79d69e9c6da5fffc0184e097a",
+            "pageCount": 21,
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "reviewedAt": "2026-10-28T22:11:00+01:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+            "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "a5a31e43457ddc55133585c7e0275952804e06af387914ee00817638571a7b50",
+        "privateEvidenceSha256": "47ae6e1fff0aac78cd39dcce276db66a68505cc4dafd2a95aca6da0db338a5d9",
+        "reviewedAt": "2026-10-28T21:03:00+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
+      },
+      "flashcardPdfReview": {
+        "status": "owner_accepted",
+        "pdfSha256": "b2a4e4395b1ccf9225ed8a218f99c29fc29cc9a10c6cd2eb73de9856d603e715",
+        "pageCount": 10,
+        "ownerAcceptance": "explicit_go_flashcards_v5",
+        "reviewedAt": "2026-10-28T22:11:00+01:00",
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe",
+        "technicalEvidenceSha256": "8510878709f32174735c65d8b46a054863275d632a3df880d053a3e9447fe1eb"
+      },
+      "blockers": [
+        {
+          "resource": "oral_audio_original",
+          "reason": "oral_source_unverified",
+          "detail": "PT01/PT02 utilisées sans preuve de réécoute complète des enregistrements."
+        },
+        {
+          "resource": "scientific_review",
+          "reason": "pending",
+          "detail": "Pas de validation scientifique indépendante ; deux nuances documentaires sont signalées."
+        },
+        {
+          "resource": "vocals",
+          "reason": "awaiting_owner_audio_review",
+          "detail": "5 MP3 produits en privé, jamais écoutés et non publiés."
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-28T22:11:00+01:00",
+        "bundleSha256": "a4b640d6bdc91d7d2f40aa13725cba8b6cc4df1229db13d2ba167418f2cb41fc",
+        "provisionalOnly": true,
+        "scopeLimit": "fiche_v4_qcm_v5_flashcards_v5_sans_mp3",
+        "approvalBasis": "Le GO de publication antérieur et le « ok go » explicite du 28/10/2026 portent sur les 3 nouveaux PDF corrigés ; aucun MP3 autorisé. Les sources orales restent non vérifiées exhaustivement.",
+        "mergeDeploymentCondition": "all_tnr_green_and_live_asset_sha_verification",
+        "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe"
+      }
     }
   ],
   "supplementalResourceApprovals": [

@@ -269,7 +269,22 @@ const scopedWrittenSheets=json('docs/course-deliveries.json').courses.filter(c=>
  c.deliveryMode==='sheet_only_first_release'&&c.publicationScope==='revision_sheet_only'&&
  c.publicationApproval?.status==='approved'&&c.publicationApproval?.scope==='revision_sheet_only'&&
  c.lexicon?.termCount>0&&c.writtenPdfAudit?.status==='PASS').map(c=>c.courseId);
-const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets]);
+// Une première publication écrite complète peut porter son lexique vérifié dans
+// la fiche PDF, sans créer un glossaire interactif fictif pour passer le TNR.
+// Contrôler l'approbation du lot ET la concordance des octets de la fiche.
+const scopedProvisionalWrittenLexicons=json('docs/course-deliveries.json').courses.filter(c=>
+  c.deliveryMode==='source_limited_first_release'&&c.packFormat==='written_v1'&&
+  c.provisional===true&&c.status==='partial'&&c.pedagogicalValidated===false&&
+  c.publicationApproval?.status==='approved'&&
+  c.publicationApproval?.authorization==='explicit_go_publication'&&
+  c.publicationApproval?.scope==='course_package'&&
+  c.lexicon?.termCount>0&&c.lexicon.textSelectable===true&&c.lexicon.checked===true&&
+  c.writtenPdfAudit?.status==='PASS'&&c.writtenPdfAudit.lexiconLast===true&&
+  c.writtenPdfAudit.summaryBeforeLexicon===true&&
+  c.writtenPdfAudit.pdfSha256===c.publicAssetSha256&&
+  c.visualOwnerReview?.status==='owner_accepted'
+).map(c=>c.courseId);
+const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets,...scopedProvisionalWrittenLexicons]);
 assert(lexiconCourseIds.size===courseIds.size,'Glossaire : un cours doit posséder un lexique validé (dans la fiche seule approuvée ou en glossaire)');
 assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&vocabulary.entries.some(x=>x.term==='Méiose')&&vocabulary.entries.some(x=>x.term==='Ostéoporose')&&vocabulary.entries.some(x=>x.term==='Empathie'),'Glossaire multicours incomplet');
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
