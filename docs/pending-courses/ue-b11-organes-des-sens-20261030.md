@@ -60,6 +60,14 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Le rapport de correspondance des questions aux chapitres, les réserves et le JSON de validation technique restent **dans le dossier privé de relecture V4**, pas dans l'application étudiante. Les **V1–V3 du QCM sont obsolètes** pour l'accord de publication ; **V3 des planches** inchangée.
 - Aucun `owner_accepted`, aucun MP3, aucune fusion ou publication du cours ; une **PR de publication distincte** sera nécessaire après toutes les validations sur les fichiers exacts.
 
+## Relecture anatomique ciblée — planches V5
+
+- **Planche 06 (langue)** : schéma de l'enseignante figurant dans le support officiel diapositive **47**, inchangé au rendu par rapport à V4. L'illustration source porte les noms des papilles et du bourgeon gustatif.
+- **Planche 07 (peau)** : remplacement de l'illustration source diapositive **51** par l'image officielle plus détaillée de la diapositive **52**. La bande basse du schéma d'origine portait plusieurs légendes qui se chevauchaient : seule cette bande de légendes est masquée, et les noms « cellules adipeuses », « terminaisons nerveuses », « cellules matricielles » et « tissu conjonctif » sont réinscrits en texte PDF, sans nouvelles flèches ou positionnements anatomiques inventés.
+- **Nouveau candidat privé** `UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V5.pdf` : 7 pages A4 paysage, SHA-256 **`d17cdd23a2e0d1ac52e67a4bb5fd9aa141d27541ac9302e6f63b23566d03dd40`**. Contrôle de rendu : les six premières pages restent **pixel-identiques à V4**, la septième est modifiée ; sept illustrations présentes.
+- Le lot associé conserve le **QCM V4 inchangé** (24 pages, SHA-256 `b3e6ed008bf0b4bec8f76406fa35544901450d1463afe3dfbd344dab40658aea`) et la **banque JSON V4** (SHA-256 `c7232ab3e74e75acd018503fb610c0b7b3582b04fd14bf2c656443de43d7dbd6`). Les octets V4 du QCM ne sont pas modifiés ; leur PASS technique V3 précédent est maintenu, non présenté comme une nouvelle exécution.
+- **Périmètre** : PDF et captures de vérification créés hors GitHub et hors application étudiante. Les contrôles anatomiques et l'accord graphique intégral ne sont pas certifiés ; garder le statut **relecture**, sans `owner_accepted`, sans fusion ni publication.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
