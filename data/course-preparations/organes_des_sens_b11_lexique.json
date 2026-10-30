@@ -1,0 +1,592 @@
+[
+  {
+    "id": "b11-sens-accommodation-01",
+    "term": "Accommodation",
+    "theme": "Les organes des sens",
+    "definition": "Modification de la forme du cristallin permettant la mise au point sur des objets proches ou lointains.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-aire-corticale-02",
+    "term": "Aire corticale",
+    "theme": "Les organes des sens",
+    "definition": "Région du cortex cérébral spécialisée dans le traitement de certaines informations.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-batonnet-03",
+    "term": "Bâtonnet",
+    "theme": "Les organes des sens",
+    "definition": "Photorécepteur rétinien jouant un rôle majeur dans la vision en faible luminosité.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-bourgeon-gustatif-04",
+    "term": "Bourgeon gustatif",
+    "theme": "Les organes des sens",
+    "definition": "Petit ensemble de cellules sensorielles et de soutien participant à la détection des saveurs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-bulbe-olfactif-05",
+    "term": "Bulbe olfactif",
+    "theme": "Les organes des sens",
+    "definition": "Structure nerveuse recevant les signaux en provenance des neurones olfactifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-canal-semi-circulaire-06",
+    "term": "Canal semi-circulaire",
+    "theme": "Les organes des sens",
+    "definition": "Structure de l’oreille interne participant à la détection des mouvements rotatoires de la tête.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cae-07",
+    "term": "CAE",
+    "theme": "Les organes des sens",
+    "definition": "Conduit auditif externe, reliant le pavillon à la membrane du tympan.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cellule-ciliee-08",
+    "term": "Cellule ciliée",
+    "theme": "Les organes des sens",
+    "definition": "Cellule sensorielle de l’oreille interne répondant à une stimulation mécanique.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-chemorecepteur-09",
+    "term": "Chémorécepteur",
+    "theme": "Les organes des sens",
+    "definition": "Récepteur sensible à des molécules chimiques, impliqué dans l’odorat et le goût.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-chiasma-optique-10",
+    "term": "Chiasma optique",
+    "theme": "Les organes des sens",
+    "definition": "Région des voies optiques où se produit un croisement partiel de fibres.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-choane-11",
+    "term": "Choane",
+    "theme": "Les organes des sens",
+    "definition": "Orifice postérieur d’une fosse nasale ouvrant vers le nasopharynx.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-choroide-12",
+    "term": "Choroïde",
+    "theme": "Les organes des sens",
+    "definition": "Tunique moyenne, vascularisée, de la paroi du globe oculaire.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cochlee-13",
+    "term": "Cochlée",
+    "theme": "Les organes des sens",
+    "definition": "Partie spiralée de l’oreille interne, contenant l’organe de Corti.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cone-14",
+    "term": "Cône",
+    "theme": "Les organes des sens",
+    "definition": "Photorécepteur de la rétine impliqué dans la vision des couleurs et la précision visuelle.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-conjonctive-15",
+    "term": "Conjonctive",
+    "theme": "Les organes des sens",
+    "definition": "Muqueuse participant notamment à la protection et à la lubrification de la surface oculaire.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cornee-16",
+    "term": "Cornée",
+    "theme": "Les organes des sens",
+    "definition": "Partie antérieure transparente de l’œil, essentielle à la réfraction des rayons lumineux.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-corps-ciliaire-17",
+    "term": "Corps ciliaire",
+    "theme": "Les organes des sens",
+    "definition": "Ensemble de structures participant à la production de l’humeur aqueuse et à l’accommodation.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-corps-vitre-18",
+    "term": "Corps vitré",
+    "theme": "Les organes des sens",
+    "definition": "Masse gélatineuse transparente occupant la plus grande partie du globe oculaire.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cortex-occipital-19",
+    "term": "Cortex occipital",
+    "theme": "Les organes des sens",
+    "definition": "Région cérébrale intervenant principalement dans la perception visuelle.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cortex-parietal-20",
+    "term": "Cortex pariétal",
+    "theme": "Les organes des sens",
+    "definition": "Région cérébrale impliquée dans le traitement de nombreuses informations sensitives cutanées.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cortex-temporal-21",
+    "term": "Cortex temporal",
+    "theme": "Les organes des sens",
+    "definition": "Région cérébrale impliquée dans le traitement des informations auditives.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-cristallin-22",
+    "term": "Cristallin",
+    "theme": "Les organes des sens",
+    "definition": "Lentille transparente déformable de l’œil, intervenant dans la mise au point.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-epiderme-23",
+    "term": "Épiderme",
+    "theme": "Les organes des sens",
+    "definition": "Couche superficielle de la peau, participant à la protection.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-derme-24",
+    "term": "Derme",
+    "theme": "Les organes des sens",
+    "definition": "Tissu conjonctif sous l’épiderme, contenant vaisseaux, annexes et récepteurs sensoriels.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-hypoderme-25",
+    "term": "Hypoderme",
+    "theme": "Les organes des sens",
+    "definition": "Plan sous-cutané profond, riche en tissu adipeux.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-fovea-26",
+    "term": "Fovéa",
+    "theme": "Les organes des sens",
+    "definition": "Centre de la macula, riche en cônes et associé à la haute précision visuelle.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-humeur-aqueuse-27",
+    "term": "Humeur aqueuse",
+    "theme": "Les organes des sens",
+    "definition": "Liquide transparent produit par le corps ciliaire, présent dans la partie antérieure de l’œil.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-iris-28",
+    "term": "Iris",
+    "theme": "Les organes des sens",
+    "definition": "Partie colorée de l’œil qui module le diamètre de la pupille.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-macula-29",
+    "term": "Macula",
+    "theme": "Les organes des sens",
+    "definition": "Région centrale de la rétine participant à la vision fine.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-mecanorecepteur-30",
+    "term": "Mécanorécepteur",
+    "theme": "Les organes des sens",
+    "definition": "Récepteur réagissant à une stimulation mécanique telle qu’une pression ou une vibration.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-muqueuse-olfactive-31",
+    "term": "Muqueuse olfactive",
+    "theme": "Les organes des sens",
+    "definition": "Zone spécialisée de la muqueuse nasale contenant les récepteurs olfactifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nerf-cochleaire-32",
+    "term": "Nerf cochléaire",
+    "theme": "Les organes des sens",
+    "definition": "Branche du VIII transportant des informations auditives depuis la cochlée.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nerf-optique-33",
+    "term": "Nerf optique",
+    "theme": "Les organes des sens",
+    "definition": "Voie nerveuse qui transmet l’information visuelle de la rétine vers le cerveau.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nerf-olfactif-34",
+    "term": "Nerf olfactif",
+    "theme": "Les organes des sens",
+    "definition": "Ensemble de fibres nerveuses transmettant les informations issues des récepteurs olfactifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nerf-vestibulaire-35",
+    "term": "Nerf vestibulaire",
+    "theme": "Les organes des sens",
+    "definition": "Branche du VIII associée aux informations d’équilibre.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nerf-vestibulocochleaire-viii-36",
+    "term": "Nerf vestibulocochléaire (VIII)",
+    "theme": "Les organes des sens",
+    "definition": "Nerf crânien réunissant les branches vestibulaire et cochléaire.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-nocicepteur-37",
+    "term": "Nocicepteur",
+    "theme": "Les organes des sens",
+    "definition": "Récepteur sensoriel activé par des stimuli potentiellement lésionnels.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-organe-de-corti-38",
+    "term": "Organe de Corti",
+    "theme": "Les organes des sens",
+    "definition": "Structure sensorielle cochléaire contenant les cellules ciliées impliquées dans l’audition.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-papille-caliciforme-39",
+    "term": "Papille caliciforme",
+    "theme": "Les organes des sens",
+    "definition": "Papille linguale volumineuse, située vers l’arrière de la langue et contenant des bourgeons gustatifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-papille-filiforme-40",
+    "term": "Papille filiforme",
+    "theme": "Les organes des sens",
+    "definition": "Papille de la langue principalement tactile, dépourvue de bourgeon gustatif.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-papille-foliee-41",
+    "term": "Papille foliée",
+    "theme": "Les organes des sens",
+    "definition": "Papille linguale située sur les bords latéraux, contenant des bourgeons gustatifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-papille-fongiforme-42",
+    "term": "Papille fongiforme",
+    "theme": "Les organes des sens",
+    "definition": "Papille linguale en forme de petit champignon, pouvant contenir des bourgeons gustatifs.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-papille-optique-43",
+    "term": "Papille optique",
+    "theme": "Les organes des sens",
+    "definition": "Zone d’émergence du nerf optique, associée à la tache aveugle.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-photorecepteur-44",
+    "term": "Photorécepteur",
+    "theme": "Les organes des sens",
+    "definition": "Cellule sensorielle sensible à la lumière ; cône ou bâtonnet dans la rétine.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-pore-gustatif-45",
+    "term": "Pore gustatif",
+    "theme": "Les organes des sens",
+    "definition": "Petite ouverture d’un bourgeon gustatif permettant le contact avec des molécules sapides.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-potentiel-d-action-46",
+    "term": "Potentiel d’action",
+    "theme": "Les organes des sens",
+    "definition": "Signal électrique propagé le long de certaines cellules nerveuses.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-pupille-47",
+    "term": "Pupille",
+    "theme": "Les organes des sens",
+    "definition": "Orifice central de l’iris par lequel entre la lumière.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-recepteur-sensoriel-48",
+    "term": "Récepteur sensoriel",
+    "theme": "Les organes des sens",
+    "definition": "Structure spécialisée détectant une stimulation.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-refraction-49",
+    "term": "Réfraction",
+    "theme": "Les organes des sens",
+    "definition": "Déviation d’un rayon lumineux lors de son passage dans un milieu optique.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-retine-50",
+    "term": "Rétine",
+    "theme": "Les organes des sens",
+    "definition": "Tunique interne, nerveuse, du globe oculaire, contenant notamment cônes et bâtonnets.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-retro-olfaction-51",
+    "term": "Rétro-olfaction",
+    "theme": "Les organes des sens",
+    "definition": "Perception des molécules odorantes remontant de la bouche vers les fosses nasales pendant le repas.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-sclerotique-52",
+    "term": "Sclérotique",
+    "theme": "Les organes des sens",
+    "definition": "Tunique externe, blanche et résistante, de l’œil.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-septum-nasal-53",
+    "term": "Septum nasal",
+    "theme": "Les organes des sens",
+    "definition": "Cloison séparant les deux fosses nasales.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-stimulus-54",
+    "term": "Stimulus",
+    "theme": "Les organes des sens",
+    "definition": "Modification de l’environnement capable d’activer un récepteur.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-thermorecepteur-55",
+    "term": "Thermorécepteur",
+    "theme": "Les organes des sens",
+    "definition": "Récepteur sensoriel impliqué dans la détection des variations de température.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-trompe-d-eustache-56",
+    "term": "Trompe d’Eustache",
+    "theme": "Les organes des sens",
+    "definition": "Canal reliant l’oreille moyenne au nasopharynx et contribuant à égaliser les pressions.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-tympan-57",
+    "term": "Tympan",
+    "theme": "Les organes des sens",
+    "definition": "Membrane vibrant sous l’effet des ondes sonores et séparant l’oreille externe de l’oreille moyenne.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-utricule-saccule-58",
+    "term": "Utricule / saccule",
+    "theme": "Les organes des sens",
+    "definition": "Éléments vestibulaires participant à la détection des accélérations linéaires et de la position de la tête.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  },
+  {
+    "id": "b11-sens-vestibule-59",
+    "term": "Vestibule",
+    "theme": "Les organes des sens",
+    "definition": "Partie de l’oreille interne qui participe à l’équilibre.",
+    "courseIds": [
+      "organes_des_sens_b11"
+    ],
+    "sourceType": "reference_pedagogique_a_verifier"
+  }
+]
