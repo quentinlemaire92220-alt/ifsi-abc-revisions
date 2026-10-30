@@ -50,6 +50,7 @@ for(const prep of pending.courses){
    assert.equal(new Set(q.answers).size,q.answers.length);
    assert.ok(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),q.id+': index de réponse hors limites');
    assert.ok(!/\b(?:cours|QCM|diapo|support|enseignant)\b/i.test(q.question),q.id+': énoncé dépendant du contexte de cours');
+   assert.ok(!/\b(?:cours|QCM|diapo|diapositive|support|enseignant|enseignante|Mme\s+Petit)\b/i.test(q.explanation),q.id+': correction dépendante du contexte de cours');
    assert.equal(q.announcedCorrectCount,q.answers.length);
    assert.ok(['easy','medium','hard'].includes(q.difficulty));
    assert.ok(q.question&&q.explanation?.length>25&&q.flashcards?.length);
