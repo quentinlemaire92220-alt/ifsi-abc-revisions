@@ -63,3 +63,15 @@ Version préparée : `8.30.155`, build `8455`. Métadonnées, index, version aff
 ## Retrait de la reconstruction graphique
 
 La reconstruction de la page 7 introduite au commit `a286cc6` est retirée après le retour sur sa dégradation visuelle. Le PDF V7 issu du support est rétabli à l'identique ; les six premières pages et les PDF fiche/QCM corrigés restent conservés. Aucune nouvelle génération n'est lancée. Le contrôle technique d'anatomie ajouté reste actif : il doit signaler la résolution de 53 dpi de la planche 7 et bloquer sa validation finale. La limite reste ouverte, aucune conformité graphique ou scientifique n'est déclarée.
+
+## Correction page 7 V8 — résolution et légendes accessibles (30/10/2026)
+
+Cette section **remplace la réserve technique de 53,1 dpi** mentionnée plus haut et le précédent essai de reconstruction dégradé. La figure originale issue de la diapositive 52 a été **conservée sans redessin**, affichée à une taille correspondant à **96,8 dpi effectifs**, avec ses **16 légendes disponibles en texte PDF natif**, lisible et sélectionnable à droite. Ce choix ne prétend pas recréer des détails absents du fichier source de 550 × 259 pixels.
+
+- PDF final de relecture V8 : `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf` ; **7 pages A4 paysage**, **3 075 632 octets** ; SHA-256 `772f4b173df5e864f8d16bc1a0d63bbdc99da59d3857095efa46580e0d485d29`.
+- Les six premières pages de V8 ont été comparées au PDF V7 : **rendu pixel identique à 150 %**. Seule la planche 7 a été recomposée (positionnement de l'image et transcription des légendes).
+- Résolution effective minimum des sept pages : **96,82 dpi**, seuil du test CI : **95 dpi**. Présence vérifiée de **16/16 légendes** via extraction textuelle native de la page 7.
+- L'image source est un bitmap de résolution limitée : conformité **technique** ne signifie pas amélioration optique réelle des détails, ni approbation anatomique.
+- Le SHA est modifié ; tout GO ultérieur doit porter **sur ces nouveaux octets**, et non sur la V7. La fiche et le QCM restent inchangés à ce commit.
+- Le garde-fou `tests/organes-sens-anatomy-quality-test.py` doit passer sur GitHub après cette mise à jour. **Publication, fusion, validation pédagogique et acceptation graphique humaine restent bloquées** : les indicateurs `ownerGraphicAcceptance`, `pedagogicalAcceptance`, `publicationApproval`, `mergeAuthorized` et `studentActivation` restent à `false`.
+
