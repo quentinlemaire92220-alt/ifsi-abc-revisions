@@ -13,8 +13,8 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 ## Contrôles et réserves
 
 - Recherche dans `course-registry-v741.json` : aucune entrée correspondant à « Les organes des sens » à la création de cette préparation.
-- Les 50 QCM locaux ont cinq choix et entre une et trois bonnes réponses ; ceci constitue seulement un contrôle **structurel**, pas une validation scientifique.
-- Les 50 flashcards et les 59 définitions sont converties au format canonique de préparation ; leur validation sémantique reste à effectuer.
+- Les 50 QCM locaux ont cinq choix et entre une et trois bonnes réponses ; ceci constitue seulement un contrôle **structurel**, pas une validation scientifique.\n- Contrôle PDF QCM privé : les 50 énoncés, 250 choix et 250 justifications d’origine sont présents dans le PDF de 18 pages. **Après correction des dépendances au « support/cours » dans la banque d’application, son texte ne correspond plus mot pour mot au PDF** : miroir PDF/banque à régénérer, relire et vérifier avant toute diffusion. Les clés et cardinalités sont conservées.
+- Les 50 flashcards et les 59 définitions sont converties au format canonique de préparation ; leur validation sémantique reste à effectuer.\n- Sept items ont eu une reformulation autonome dans la banque de préparation : IDs 005, 018, 019, 036, 043, 044, 050 ; aucun indice de bonne réponse n'a été modifié.
 - Statut de l'oral : `unverified` tant que sa couverture exhaustive n'est pas documentée.
 - Les schémas anatomiques et leurs flèches / légendes doivent être revus individuellement et comparés aux modèles déjà publiés.
 - Contrôle trame PDF V3 / modèle Communication, revue médicale et graphique finale, épreuve des octets, puis décision du propriétaire restent à réaliser.
