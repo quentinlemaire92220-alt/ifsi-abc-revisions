@@ -19,23 +19,24 @@
         "oralRecordingApproxMinutes": 113
       },
       "artifacts": {
-        "questions": 0,
-        "flashcards": 0,
-        "glossaryTerms": 0,
+        "questions": 50,
+        "flashcards": 50,
+        "glossaryTerms": 59,
         "vocalMp3": 0
       },
       "privateInventoryPendingImport": {
         "revisionWrittenPdfPages": 14,
         "anatomicalBoardsPdfPages": 7,
-        "questions": 50,
-        "flashcards": 50,
-        "glossaryTerms": 59,
         "vocalScripts": 3,
         "anatomicalLegends": "corrections_requested",
         "questionAnswerReview": "pending",
-        "templateConformance": "pending"
+        "templateConformance": "pending",
+        "mp3Audio": 0
       },
-      "privateBankPaths": {},
+      "privateBankPaths": {
+        "questions": "data/course-preparations/organes_des_sens_b11.json",
+        "lexicon": "data/course-preparations/organes_des_sens_b11_lexique.json"
+      },
       "publicationBlocks": [
         "review_full_sources_and_question_bank",
         "verify_anatomical_labels_and_rebuild_separate_boards",
