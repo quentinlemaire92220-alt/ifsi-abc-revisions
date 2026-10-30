@@ -269,6 +269,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/course-publication-approval.mjs
 
+      - name: Contrôler la prépublication B1.1 sans vocaux et sans activation étudiant
+        if: ${{ !cancelled() }}
+        run: node tests/organes-sens-publication-candidate.mjs
+
       - name: Refuser un nouveau cours publié absent du manifeste
         if: ${{ !cancelled() }}
         run: node tests/course-delivery-new-course.mjs
