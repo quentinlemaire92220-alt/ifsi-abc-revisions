@@ -277,6 +277,7 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           node tests/organes-sens-publication-assets.mjs --prepublication
+          node tests/organes-sens-publication-assets.mjs --require-assets
           node tests/organes-sens-publication-assets-test.mjs
 
       - name: Refuser un nouveau cours publié absent du manifeste

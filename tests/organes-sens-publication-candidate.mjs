@@ -40,7 +40,12 @@ for (const [role, pages] of Object.entries({sheet:17,qcm:24,boards:7})) {
 }
 assert.ok(p.prerequisiteChecks.length >= 9);
 assert.ok(p.blockers.includes('no_explicit_publication_go'));
-assert.ok(p.blockers.includes('pdf_binaries_not_in_repository'));
+const missingPdf=Object.values(p.candidatePdfEvidence).some(asset=>!asset.gitBinaryUploaded);
+assert.equal(p.blockers.includes('pdf_binaries_not_in_repository'),missingPdf,
+  'Le blocage des binaires doit correspondre au transfert réel');
+assert.equal(p.deliveryPlan.binaryTransferStatus,missingPdf
+  ? 'partial_2_of_3_in_github_not_published'
+  : 'complete_3_of_3_in_github_not_published');
 assert.ok(!['drive.google.com','transcriptDriveId','recording_url'].some(s => JSON.stringify(p).includes(s)),
   'sources privées non permises dans le dépôt');
 

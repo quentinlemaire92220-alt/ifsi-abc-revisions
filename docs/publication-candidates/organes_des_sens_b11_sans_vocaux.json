@@ -31,8 +31,8 @@
       "glossaryTerms": 59,
       "anatomicalBoards": 7
     },
-    "assetTransferPackage": "PR276_REVUE_CORRIGEE_2_PDF.zip",
-    "binaryTransferStatus": "partial_2_of_3_in_github_not_published"
+    "assetTransferPackage": "PR276_REVUE_COMPLETE_3_PDF.zip",
+    "binaryTransferStatus": "complete_3_of_3_in_github_not_published"
   },
   "candidatePdfEvidence": {
     "sheet": {
@@ -59,11 +59,11 @@
       "localReviewName": "UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V7_SANS_MARQUEURS.pdf",
       "pages": 7,
       "sha256": "23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928",
-      "technicalCheck": "anatomical_review_pending",
+      "technicalCheck": "technical_bytes_verified_anatomical_review_pending",
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
       "bytes": 3313939,
-      "gitBinaryUploaded": false
+      "gitBinaryUploaded": true
     }
   },
   "prerequisiteChecks": [
@@ -82,7 +82,6 @@
     "preparation_pr_not_merged",
     "medical_review_pending",
     "graphic_owner_review_pending",
-    "pdf_binaries_not_in_repository",
     "no_explicit_publication_go"
   ],
   "provenance": "Only generated candidate names and hashes. No private support/transcription/Drive identifiers."
