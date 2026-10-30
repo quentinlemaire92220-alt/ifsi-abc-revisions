@@ -25,13 +25,17 @@
         "vocalMp3": 0
       },
       "privateInventoryPendingImport": {
-        "revisionWrittenPdfPages": 14,
+        "revisionWrittenPdfPages": 17,
         "anatomicalBoardsPdfPages": 7,
         "vocalScripts": 3,
         "anatomicalLegends": "corrections_requested",
         "questionAnswerReview": "pending",
         "templateConformance": "pending",
-        "mp3Audio": 0
+        "mp3Audio": 0,
+        "revisionWrittenHistoricalInventoryPages": 14,
+        "revisionWrittenOriginalFileLocated": false,
+        "revisionWrittenStatus": "reconstructed_local_candidate_pending_review",
+        "revisionWrittenTemplateTechnical": "pass_17_pages_no_owner_acceptance"
       },
       "privateBankPaths": {
         "questions": "data/course-preparations/organes_des_sens_b11.json",
