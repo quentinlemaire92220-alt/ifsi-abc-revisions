@@ -50,6 +50,16 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - **Sans statut `owner_accepted` :** le contrôle technique n'est pas la revue humaine des 24 pages à 100 % et 200 %, ni une approbation pédagogique ou anatomique. Fiche écrite, 50 flashcards, 59 définitions et sources orales restent à valider exhaustivement. Aucun MP3 ni activation étudiant ; tous les nouveaux PDF demeurent **hors dépôt et hors application publiée**.
 - Les versions V1 et V2 servent d'historique de relecture mais sont **remplacées par V3 pour toute revue du QCM et de la planche 05**. Ne pas publier les versions anciennes.
 
+## Candidat privé V4 — couverture des notions officielles (30/10/2026)
+
+- Banque QCM source : 50 questions, 250 choix, 50 cartes. **QCM 018, 019, 021, 035, 040 et 047** ont été enrichis en distracteurs/corrigés à partir des diapos 21, 22, 15/20, 38, 44 et 53 (respectivement radiations optiques, astigmatisme, trajet de la lumière, groupes de sinus, phonation, synthèse cutanée de vitamine D). **Réponses et cardinalités inchangées.** Nouveau blob Git `c52d88a15706481c291df9c01e340ba3c3d1ac06`.
+- Fichier de relecture **QCM V4** : `UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V4.pdf`, **24 pages**, SHA-256 **`b3e6ed008bf0b4bec8f76406fa35544901450d1463afe3dfbd344dab40658aea`**. Le titre décrit correctement les **cinq sens et les principes sensoriels** (six rubriques). La banque locale V4 a pour SHA-256 `c7232ab3e74e75acd018503fb610c0b7b3582b04fd14bf2c656443de43d7dbd6` et son Git blob est identique à celui de la branche.
+- **Contrat PDF V3 technique réexécuté sur les octets V4 exacts : PASS, 0 erreur**, `humanReviewRequired: true`. Concordance 50 intitulés + 250 propositions avec le PDF, clés et corrigés distincts, toutes les pages paginées. Un aperçu des 24 pages et des vues agrandies ciblées ont été examinés, mais **aucune attestation de comparaison humaine exhaustive à 100 % et 200 % n'est émise**.
+- **Planches anatomiques** : conserver les 7 pages **V3 inchangées**, SHA-256 `f8a866e36b5c02ace71a0782a8675ffce74b9c64f9277114a2d83058e62ab22d`. La planche 05 reprend le schéma légendé du support officiel (diapo 36) ; les six autres planches doivent encore être validées anatomiquement par un relecteur.
+- **Réserves scientifiques relevées dans le support lui-même :** la diapo 49 annonce « deux paires » de nerfs gustatifs puis cite facial, glossopharyngien et vague ; la synthèse diapo 56 place le bulbe olfactif en « récepteur » ; la diapo 48 ne cite que quatre saveurs. Le QCM évite de transformer ces points contradictoires/incomplets en affirmations exclusives. Une revue médicale experte demeure requise.
+- Le rapport de correspondance des questions aux chapitres, les réserves et le JSON de validation technique restent **dans le dossier privé de relecture V4**, pas dans l'application étudiante. Les **V1–V3 du QCM sont obsolètes** pour l'accord de publication ; **V3 des planches** inchangée.
+- Aucun `owner_accepted`, aucun MP3, aucune fusion ou publication du cours ; une **PR de publication distincte** sera nécessaire après toutes les validations sur les fichiers exacts.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
