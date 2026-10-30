@@ -649,7 +649,7 @@
       2
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Il ne véhicule pas la vision. B : C’est un relais de la voie visuelle. C : Il véhicule l’information rétinienne. D : La vision est principalement occipitale; le toucher est notamment pariétal. E : Elle appartient à l’oreille interne.",
+    "explanation": "A : Il ne véhicule pas la vision. B : Le chiasma optique correspond à la région où certaines fibres optiques se croisent. C : Il véhicule l’information rétinienne. D : La vision est principalement occipitale; le toucher est notamment pariétal. E : Elle appartient à l’oreille interne.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -676,16 +676,16 @@
     "question": "À propos des troubles de la vision, quelles propositions sont exactes ?",
     "choices": [
       "Une cornée opaque améliorerait la focalisation.",
-      "La cataracte correspond à une opacification des osselets.",
-      "La presbytie est due à un manque de cérumen.",
-      "La cataracte est une anomalie des osselets.",
+      "La cataracte concerne les photorécepteurs rétiniens, et non le cristallin.",
+      "La presbytie correspond à une opacification du cristallin.",
+      "La cataracte est uniquement une diminution de l’accommodation, sans opacification du cristallin.",
       "La presbytie limite l’accommodation de près."
     ],
     "answers": [
       4
     ],
     "announcedCorrectCount": 1,
-    "explanation": "A : La transparence des milieux optiques est indispensable. B : La cataracte concerne le cristallin. C : Elle concerne la mise au point optique. D : Les osselets sont auditifs. E : Le cristallin perd de son élasticité.",
+    "explanation": "A : L’opacité cornéenne gêne le passage de la lumière. B : La cataracte est une opacification du cristallin. C : La presbytie correspond à une diminution de l’accommodation, notamment par perte d’élasticité du cristallin. D : La cataracte se caractérise précisément par une opacification du cristallin. E : La presbytie limite la mise au point sur les objets proches.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -711,9 +711,9 @@
     "difficulty": "hard",
     "question": "Concernant l'anatomie de l’œil, quelles distinctions sont correctes ?",
     "choices": [
-      "Les milieux transparents et les tuniques.",
+      "Les milieux transparents ne correspondent pas aux trois tuniques du globe oculaire.",
       "La rétine de la cochlée uniquement par la couleur.",
-      "Les tuniques : sclérotique, choroïde, rétine.",
+      "Les trois tuniques sont la sclérotique, la choroïde et la rétine.",
       "La fovéa et la papille optique sont exactement la même région.",
       "L’iris et le cristallin comme une même structure."
     ],
@@ -722,7 +722,7 @@
       2
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Ils ont des rôles et propriétés différents. B : Ce sont deux organes anatomiquement distincts. C : Leur ordre est central pour la lecture anatomique. D : La fovéa assure une vision fine; la papille est la tache aveugle. E : L’iris régule la pupille; le cristallin accommode.",
+    "explanation": "A : Les milieux transparents sont distincts des enveloppes du globe oculaire. B : La rétine et la cochlée appartiennent à deux organes différents, pas seulement de couleurs différentes. C : Les trois tuniques sont organisées de l’extérieur vers l’intérieur. D : La fovéa sert à la vision fine, contrairement à la papille optique, dépourvue de photorécepteurs. E : L’iris règle l’ouverture pupillaire, tandis que le cristallin participe à l’accommodation.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -801,11 +801,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quelle différence entre presbytie et cataracte ?",
+        "front": "Quels éléments constituent l’oreille externe ?",
         "answers": [
-          "Presbytie : perte d’accommodation ; cataracte : opacification du cristallin."
+          "Le pavillon et le conduit auditif externe ; le tympan marque la limite avec l’oreille moyenne."
         ],
-        "explanation": "Presbytie : perte d’accommodation ; cataracte : opacification du cristallin.",
+        "explanation": "Le pavillon et le conduit auditif externe ; le tympan marque la limite avec l’oreille moyenne.",
         "theme": "Audition et équilibre — oreille"
       }
     ]
@@ -1436,11 +1436,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Cite les fonctions non gustatives de la langue.",
+        "front": "Que désignent les narines et les choanes ?",
         "answers": [
-          "Mastication, déglutition et phonation."
+          "Les narines sont les ouvertures antérieures des fosses nasales ; les choanes s’ouvrent en arrière vers le nasopharynx."
         ],
-        "explanation": "Mastication, déglutition et phonation.",
+        "explanation": "Les narines sont les ouvertures antérieures des fosses nasales ; les choanes s’ouvrent en arrière vers le nasopharynx.",
         "theme": "Odorat — fosses nasales"
       }
     ]
@@ -1472,11 +1472,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quelles papilles sont tactiles sans bourgeons gustatifs ?",
+        "front": "Quelles fonctions de la langue ne relèvent pas directement du goût ?",
         "answers": [
-          "Les papilles filiformes."
+          "La mastication, la déglutition et la phonation."
         ],
-        "explanation": "Les papilles filiformes.",
+        "explanation": "La mastication, la déglutition et la phonation.",
         "theme": "Goût — langue et bourgeons"
       }
     ]
@@ -1662,11 +1662,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Cite les trois couches de la peau, de la surface à la profondeur.",
+        "front": "Quel est le rôle du pore gustatif ?",
         "answers": [
-          "Épiderme, derme, hypoderme."
+          "Il permet le contact des molécules sapides dissoutes avec les cellules sensorielles gustatives."
         ],
-        "explanation": "Épiderme, derme, hypoderme.",
+        "explanation": "Il permet le contact des molécules sapides dissoutes avec les cellules sensorielles gustatives.",
         "theme": "Goût — langue et bourgeons"
       }
     ]
@@ -1700,11 +1700,11 @@
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Que contient notamment le derme ?",
+        "front": "Quelles sont les trois grandes couches de la peau, de la surface à la profondeur ?",
         "answers": [
-          "Vaisseaux, annexes cutanées et nombreux récepteurs sensoriels."
+          "L’épiderme, le derme et l’hypoderme."
         ],
-        "explanation": "Vaisseaux, annexes cutanées et nombreux récepteurs sensoriels.",
+        "explanation": "L’épiderme, le derme et l’hypoderme.",
         "theme": "Toucher — peau et sensibilité"
       }
     ]
