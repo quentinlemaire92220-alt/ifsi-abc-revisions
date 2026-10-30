@@ -55,6 +55,13 @@ for(const prep of pending.courses){
    assert.ok(['easy','medium','hard'].includes(q.difficulty));
    assert.ok(q.question&&q.explanation?.length>25&&q.flashcards?.length);
   }
+  const allCards=bank.flatMap(q=>q.flashcards.map(card=>({q,card})));
+  assert.equal(new Set(allCards.map(x=>x.card.front.trim().toLowerCase())).size,allCards.length,id+': doublon de recto flashcard');
+  for(const {q,card} of allCards){
+   assert.equal(card.theme,q.theme,q.id+': theme de flashcard discordant');
+   assert.ok(card.front?.trim()?.length>10,q.id+': recto flashcard absent');
+   assert.ok(Array.isArray(card.answers)&&card.answers.every(a=>a?.trim()),q.id+': verso flashcard manquant');
+  }
   assert.equal(bank.reduce((a,q)=>a+q.flashcards.length,0),counts.flashcards);
  }else{
   assert.equal(counts.flashcards,0,id+': flashcards sans base validée');
