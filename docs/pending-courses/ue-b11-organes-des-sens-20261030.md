@@ -25,6 +25,13 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Les schémas anatomiques et leurs flèches / légendes doivent être revus individuellement et comparés aux modèles déjà publiés.
 - Contrôle trame PDF V3 / modèle Communication, revue médicale et graphique finale, épreuve des octets, puis décision du propriétaire restent à réaliser.
 
+## Revue ciblée des contenus — 30 octobre 2026 (second passage)
+
+- Rectifications internes de la banque de préparation : QCM 018 (chiasma optique = croisement des fibres, non relais synaptique), 019 (distracteurs auparavant redondants), 020 (propositions autonomes). **Indices et cardinalités des réponses inchangés.**
+- Alignement des flashcards 022 (oreille externe), 039 (narines et choanes), 040 (fonctions non gustatives de la langue), 045 (pore gustatif), 046 (couches de la peau) sur leurs chapitres et sur le support officiel, sans modification du nombre total (50).
+- Test d'intégrité des flashcards renforcé (thème, unicité du recto, réponse présente). Ce contrôle technique n'est pas une certification scientifique.
+- **PDF de relecture antérieur obsolète dès cette modification :** régénérer le PDF QCM à partir du commit de la banque avant tout contrôle de concordance octet/texte. Les sept planches restent candidates : positionnement de chaque repère anatomique à valider visuellement, notamment les repères 06–08 sur la planche 05.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
