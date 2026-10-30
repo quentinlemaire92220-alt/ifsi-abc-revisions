@@ -492,8 +492,8 @@
     "question": "Le cristallin :",
     "choices": [
       "Constitue le nerf optique.",
-      "Fait partie des osselets.",
-      "Fabrique à lui seul les photorécepteurs.",
+      "Est situé dans la choroïde et richement vascularisé.",
+      "Contient les cônes et les bâtonnets responsables de la réception lumineuse.",
       "Est une lentille transparente.",
       "Le cristallin est une lentille rigide qui ne participe pas à la mise au point."
     ],
@@ -501,7 +501,7 @@
       3
     ],
     "announcedCorrectCount": 1,
-    "explanation": "A : Le nerf optique est constitué de fibres nerveuses. B : Les osselets appartiennent à l’oreille. C : Les photorécepteurs sont rétiniens. D : Il fait partie des milieux transparents. E : Le cristallin se déforme lors de l’accommodation.",
+    "explanation": "A : Le nerf optique est constitué de fibres issues des cellules ganglionnaires rétiniennes. B : Le cristallin est une lentille transparente avasculaire, distincte de la choroïde. C : Les cônes et les bâtonnets sont situés dans la rétine. D : Le cristallin est l’un des milieux transparents de l’œil. E : Il change de forme pendant l’accommodation.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -712,17 +712,17 @@
     "question": "Concernant l'anatomie de l’œil, quelles distinctions sont correctes ?",
     "choices": [
       "Les milieux transparents ne correspondent pas aux trois tuniques du globe oculaire.",
-      "La rétine de la cochlée uniquement par la couleur.",
+      "La cochlée et la rétine sont deux structures anatomiques du même organe sensoriel.",
       "Les trois tuniques sont la sclérotique, la choroïde et la rétine.",
       "La fovéa et la papille optique sont exactement la même région.",
-      "L’iris et le cristallin comme une même structure."
+      "L’iris modifie directement la forme du cristallin lors de l’accommodation."
     ],
     "answers": [
       0,
       2
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Les milieux transparents sont distincts des enveloppes du globe oculaire. B : La rétine et la cochlée appartiennent à deux organes différents, pas seulement de couleurs différentes. C : Les trois tuniques sont organisées de l’extérieur vers l’intérieur. D : La fovéa sert à la vision fine, contrairement à la papille optique, dépourvue de photorécepteurs. E : L’iris règle l’ouverture pupillaire, tandis que le cristallin participe à l’accommodation.",
+    "explanation": "A : Les milieux transparents sont distincts des tuniques de la paroi du globe. B : La rétine appartient à l’œil, tandis que la cochlée appartient à l’oreille interne. C : Les trois tuniques se succèdent de l’extérieur vers l’intérieur. D : La fovéa est liée à la vision fine ; la papille optique est le point aveugle. E : Le muscle ciliaire participe à l’accommodation, tandis que l’iris module le diamètre de la pupille.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -786,16 +786,16 @@
     "question": "L’oreille externe comprend :",
     "choices": [
       "Le vestibule.",
-      "Le conduit auditif externe appartient à l’oreille interne.",
+      "La caisse du tympan.",
       "La cochlée.",
-      "Les osselets.",
+      "La trompe d’Eustache.",
       "Le pavillon."
     ],
     "answers": [
       4
     ],
     "announcedCorrectCount": 1,
-    "explanation": "A : Il appartient à l’oreille interne. B : Il appartient à l’oreille externe. C : Elle appartient à l’oreille interne. D : Ils appartiennent à l’oreille moyenne. E : Il capte les sons.",
+    "explanation": "A : Le vestibule appartient à l’oreille interne. B : La caisse du tympan constitue la cavité de l’oreille moyenne. C : La cochlée est située dans l’oreille interne. D : La trompe d’Eustache communique avec l’oreille moyenne. E : Le pavillon appartient à l’oreille externe, avec le conduit auditif externe.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1493,7 +1493,7 @@
     "question": "À propos des papilles linguales :",
     "choices": [
       "Les filiformes sont surtout tactiles.",
-      "Les caliciformes sont des osselets.",
+      "Les papilles caliciformes sont dépourvues de bourgeons gustatifs.",
       "Les foliées peuvent contenir des bourgeons gustatifs.",
       "Les filiformes sont le lieu principal des bourgeons gustatifs.",
       "Les fongiformes peuvent contenir des bourgeons gustatifs."
@@ -1504,7 +1504,7 @@
       4
     ],
     "announcedCorrectCount": 3,
-    "explanation": "A : Les papilles filiformes participent surtout aux sensations mécaniques et ne contiennent pas de bourgeons gustatifs. B : Les caliciformes sont des papilles linguales. C : Les papilles foliées peuvent contenir des bourgeons gustatifs. D : Les filiformes ne portent pas de bourgeons gustatifs. E : Les fongiformes peuvent participer au goût.",
+    "explanation": "A : Les papilles filiformes ont principalement une fonction mécanique. B : Les papilles caliciformes portent des bourgeons gustatifs. C : Les papilles foliées peuvent porter des bourgeons gustatifs. D : Les papilles filiformes n’en contiennent pas. E : Les papilles fongiformes peuvent contenir des bourgeons gustatifs.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
