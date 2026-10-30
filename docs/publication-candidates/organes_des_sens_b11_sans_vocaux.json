@@ -31,7 +31,7 @@
       "glossaryTerms": 59,
       "anatomicalBoards": 7
     },
-    "assetTransferPackage": "PR276_REVUE_COMPLETE_3_PDF.zip",
+    "assetTransferPackage": "PR276_REVUE_COMPLETE_3_PDF_PEAU_HD.zip",
     "binaryTransferStatus": "complete_3_of_3_in_github_not_published"
   },
   "candidatePdfEvidence": {
@@ -56,13 +56,13 @@
       "gitBinaryUploaded": true
     },
     "boards": {
-      "localReviewName": "UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V7_SANS_MARQUEURS.pdf",
+      "localReviewName": "UE_B1_1_Organes_des_sens_Planches_anatomiques_V8_Peau_HD.pdf",
       "pages": 7,
-      "sha256": "23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928",
-      "technicalCheck": "technical_bytes_verified_anatomical_review_pending",
+      "sha256": "c287e07ff7e0f039e2ee6993f62cc297afef70a6dea839980ee64e6fd2b3e952",
+      "technicalCheck": "image_quality_corrected_anatomical_review_pending",
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
-      "bytes": 3313939,
+      "bytes": 6748766,
       "gitBinaryUploaded": true
     }
   },

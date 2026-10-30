@@ -279,6 +279,7 @@ jobs:
           node tests/organes-sens-publication-assets.mjs --prepublication
           node tests/organes-sens-publication-assets.mjs --require-assets
           node tests/organes-sens-publication-assets-test.mjs
+          python tests/organes-sens-anatomy-quality-test.py
 
       - name: Refuser un nouveau cours publié absent du manifeste
         if: ${{ !cancelled() }}

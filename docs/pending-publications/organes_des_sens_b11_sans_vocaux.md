@@ -16,7 +16,7 @@
 | --- | ---: | ---: | --- |
 | Fiche — présentation corrigée | 17 | 110387 | `d1e18e9d272d5cfaa4314c606744f1d4ac9d080083386275db03f0f087329c8d` |
 | QCM — présentation corrigée | 24 | 108383 | `58dfcd2d90c6c9e41a0a544a69a7059c8dc0e8f93c79abb04297c3ddd906042e` |
-| Planches V7 | 7 | 3313939 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
+| Planches V8 — peau nette | 7 | 6748766 | `c287e07ff7e0f039e2ee6993f62cc297afef70a6dea839980ee64e6fd2b3e952` |
 
 Chemins sous `assets/organes-des-sens-20261029/` :
 
@@ -24,11 +24,11 @@ Chemins sous `assets/organes-des-sens-20261029/` :
 - `UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf`
 - `UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf`
 
-Le ZIP d'origine a été récupéré depuis le chat de préparation. **Seules les planches V7 en ont été reprises** : les anciens PDF fiche/QCM du ZIP ne remplacent pas les présentations corrigées dans #276. Le PDF des planches est conservé sans modification, avec son empreinte exacte.
+Le ZIP d'origine a été récupéré depuis le chat de préparation. **Seules les planches V7 en ont été reprises** : les anciens PDF fiche/QCM du ZIP ne remplacent pas les présentations corrigées dans #276. La V7 d'origine est conservée en privé. La V8 courante ne remplace que la page 7 ; les six premières pages sont identiques pixel par pixel.
 
 Les trois PDF passent le contrôle des octets (tailles et SHA-256). Les paginations ont été mesurées ; les sept pages de planches ont été rendues et inspectées. Le texte natif est présent sur chaque page ; le contrôle automatique de propreté des planches réussit.
 
-**Réserve graphique maintenue :** la planche 7 présente une résolution effective d'environ 53 dpi, sous le seuil de 95 dpi. La revue anatomique complète, les droits des figures reprises et l'acceptation graphique du propriétaire restent en attente. L'import en brouillon ne lève aucune de ces réserves.
+**Définition de la planche 7 corrigée :** nouvelle illustration originale de 1536 × 1024 pixels, environ 240 dpi effectifs, avec 16 repères/légendes natifs séparés. Les structures du schéma source ont été reprises pour cette reconstruction ; aucune simple augmentation artificielle de résolution. Les légendes et leurs positions sont conservées dans un dossier privé éditable. La revue anatomique et l'acceptation graphique du propriétaire restent en attente ; la correction technique ne les remplace pas. Les droits des figures reprises dans les autres pages restent à examiner.
 
 ## Contrôles obligatoires
 
@@ -37,13 +37,16 @@ node tests/organes-sens-publication-candidate.mjs
 node tests/organes-sens-publication-assets.mjs --prepublication
 node tests/organes-sens-publication-assets.mjs --require-assets
 node tests/organes-sens-publication-assets-test.mjs
+python tests/organes-sens-anatomy-quality-test.py
 ```
 
 Le mode `--require-assets` est désormais exécuté par le TNR et exige les trois fichiers exacts. Les deux modes du garde-fou imposent les verrous de prépublication à `false` et `ownerAcceptance=pending`. Les 15 défauts injectés sont contrôlés sur copies temporaires, dont un transfert partiel simulé, les approbations inventées et les tailles/SHA divergents.
 
 Le manifeste de candidature porte `complete_3_of_3_in_github_not_published` et ne conserve plus le blocage d'absence des binaires. Les blocages scientifique, graphique, de dépendance #275 et de GO de publication restent présents.
 
-Les contrôles V3 directs sur fiche/QCM, la comparaison exacte avec la banque #275 et les préflights restent distincts de la revue humaine. Le paquet privé `PR276_REVUE_COMPLETE_3_PDF.zip` rassemble les trois candidats courants et les preuves techniques, sans audio ni source brute.
+Les contrôles V3 directs sur fiche/QCM, la comparaison exacte avec la banque #275 et les préflights restent distincts de la revue humaine. Le paquet privé `PR276_REVUE_COMPLETE_3_PDF_PEAU_HD.zip` rassemble les trois candidats courants et les preuves techniques, sans audio ni source brute.
+
+Le contrôle anatomie mesure désormais la résolution effective des images de chaque page et la présence des 16 légendes natives de la page 7. Il ne certifie pas les structures ou les pointes de flèches médicalement.
 
 ## Corrections déjà conservées
 
