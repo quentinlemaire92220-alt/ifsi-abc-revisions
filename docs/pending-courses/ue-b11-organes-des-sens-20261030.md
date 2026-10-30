@@ -32,6 +32,14 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Test d'intégrité des flashcards renforcé (thème, unicité du recto, réponse présente). Ce contrôle technique n'est pas une certification scientifique.
 - **PDF de relecture antérieur obsolète dès cette modification :** régénérer le PDF QCM à partir du commit de la banque avant tout contrôle de concordance octet/texte. Les sept planches restent candidates : positionnement de chaque repère anatomique à valider visuellement, notamment les repères 06–08 sur la planche 05.
 
+## Candidats privés V2 générés après la deuxième revue
+
+- **QCM :** `UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V2.pdf`, 26 pages, SHA-256 `d5a09b3f7bc6fcadefcf1a26ac78773606207de41f6444b8bc19a8ab0a1691db`.
+- **Planches :** `UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V2.pdf`, 7 pages A4 paysage, SHA-256 `2f0e2f5f98b51e0019827747e344b1095af33e652d9710d60a3ffcf331d44830`.
+- **Banque JSON :** 50 QCM, 50 cartes, SHA-256 `8f83de7842996bc0185d0165db8d31d0d647cdfdd3427f3a2e5989b7f139ae14`.
+- Ces fichiers de relecture sont **produits hors dépôt GitHub**, sans transmission aux modules étudiants. Le PDF QCM a été régénéré après les derniers changements de la banque ; ses 250 propositions sont retrouvées à l'extraction, sans prétendre à une approbation pédagogique complète.
+- Les planches 01–04 et 06–07 présentent des repères non numérotés ; seule la planche 05 conserve des pastilles 1–8, assorties d'une légende. **Vérification anatomique finale de chaque repère toujours nécessaire.**
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
