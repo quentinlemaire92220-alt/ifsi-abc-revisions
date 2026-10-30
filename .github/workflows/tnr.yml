@@ -275,7 +275,9 @@ jobs:
 
       - name: Vérifier les empreintes binaires B1.1 sans attribuer de GO
         if: ${{ !cancelled() }}
-        run: node tests/organes-sens-publication-assets.mjs --prepublication
+        run: |
+          node tests/organes-sens-publication-assets.mjs --prepublication
+          node tests/organes-sens-publication-assets-test.mjs
 
       - name: Refuser un nouveau cours publié absent du manifeste
         if: ${{ !cancelled() }}

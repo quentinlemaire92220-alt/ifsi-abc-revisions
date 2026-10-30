@@ -1,5 +1,5 @@
 // Contrôle des octets exacts du lot B1.1 avant activation.
-// --prepublication : les 3 PDF peuvent être absents, mais une copie partielle est refusée.
+// --prepublication : un import partiel est permis uniquement avec les verrous de brouillon.
 // --require-assets : les 3 PDF doivent être présents, SHA-256 identique au manifeste.
 // Ne crée jamais d'acceptation humaine ou de GO de publication.
 import assert from 'node:assert/strict';
@@ -12,6 +12,10 @@ assert.ok(['--prepublication','--require-assets'].includes(mode),'Mode inconnu')
 const manifest=JSON.parse(fs.readFileSync('docs/publication-candidates/organes_des_sens_b11_sans_vocaux.json','utf8'));
 assert.equal(manifest.courseId,'organes_des_sens_b11');
 assert.equal(manifest.phase,'prepublication_draft');
+for(const flag of ['studentActivation','appRegistryChanges','publishedFilesInThisPr',
+ 'mergeAuthorized','ownerGraphicAcceptance','pedagogicalAcceptance','publicationApproval']){
+ assert.equal(manifest.deliveryPlan[flag],false,flag+': verrou de prépublication requis');
+}
 assert.equal(manifest.deliveryPlan.vocalsIncluded,false);
 assert.equal(manifest.deliveryPlan.vocalMp3Count,0);
 const expected={sheet:17,qcm:24,boards:7};
@@ -19,6 +23,7 @@ const statuses=[];
 for(const [role,count] of Object.entries(expected)){
  const asset=manifest.candidatePdfEvidence?.[role];
  assert.ok(asset,role+': manque dans le manifeste');
+ assert.equal(asset.ownerAcceptance,'pending',role+': acceptation humaine non autorisée');
  assert.equal(asset.pages,count,role+': nombre de pages attendu');
  assert.match(asset.sha256||'',/^[a-f0-9]{64}$/,role+': SHA-256 invalide');
  const rel=asset.githubPath;

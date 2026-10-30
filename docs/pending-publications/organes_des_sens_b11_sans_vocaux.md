@@ -9,7 +9,7 @@
 - Cette branche de prépublication **ne copie pas les banques** tant que #275 n'a pas été intégrée/rebasée : règle de source unique.
 - Source officielle et transcription : **conservées hors dépôt**. Ne pas les ajouter au dépôt, dans une issue, ni dans la description des PR.
 
-## Fichiers candidats (hors dépôt GitHub, non servis par l'application)
+## Fichiers candidats (import partiel 2/3, non servis par l'application)
 
 | Ressource | Pages | SHA-256 exact |
 | --- | ---: | --- |
@@ -17,7 +17,7 @@
 | QCM corrigés V5 | 24 | `401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4` |
 | Planches V7 | 7 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
 
-Les contrôles techniques PDF réalisés lors de la préparation ont réussi, **mais ces octets ne sont pas encore présents dans la branche**. La CI de cette PR ne prétend pas vérifier leur rendu ou leur SHA par téléchargement.
+La fiche et le QCM sont présents dans la branche depuis le commit `88c3300444768d4486e2bedcd70ff9e5fd3a295b` ; les planches restent absentes. Les deux PDF présents ont été recontrôlés depuis le checkout : tailles, SHA-256 et paginations conformes ; contrôle technique V3 et absence de marqueurs de génération réussis. Aucun de ces résultats ne constitue une acceptation scientifique ou graphique humaine.
 
 ## Périmètre autorisé à préparer
 
@@ -42,7 +42,7 @@ Le manifeste `docs/publication-candidates/organes_des_sens_b11_sans_vocaux.json`
 
 ## Import binaire prêt pour GitHub / Work — preuve avant activation
 
-Un paquet local `PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip` a été constitué avec **3 PDF**, sans aucun enregistrement ni source brute. Les trois octets PDF ont été hachés en local, les nombres de pages vérifiés et les empreintes recontrôlées depuis le ZIP. Le paquet **n'est pas un fichier du dépôt GitHub**, et son existence ne démontre pas un transfert sur la branche.
+Le chat de préparation référence un paquet `PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip` de **3 PDF**, sans enregistrement ni source brute, avec manifeste et empreintes. Ce ZIP et le PDF V7 des planches ne sont pas disponibles dans l'espace de reprise. Le paquet **n'est pas un fichier du dépôt GitHub**, et sa mention dans l'historique ne fournit ni ses octets ni une preuve de transfert. Aucune ancienne version n'est substituée au candidat exact.
 
 | Rôle | Chemin exact à importer dans la PR #276 | Pages | SHA-256 |
 |---|---|---:|---|
@@ -50,9 +50,19 @@ Un paquet local `PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip` a été c
 | QCM | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf` | 24 | `401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4` |
 | Planches | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf` | 7 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
 
-**État réel du transfert au commit `88c3300` :** la fiche et le QCM sont présents dans le dépôt et leur SHA Git correspond exactement aux octets privés vérifiés. Les planches ne sont **pas encore importées** : la connexion refuse la requête binaire de 3,3 Mo. Le manifeste distingue `gitBinaryUploaded=true` pour fiche/QCM et `false` pour planches. Le relais temporaire Drive utilisé pour ces opérations a été supprimé après transfert. Ne modifier ce dernier indicateur qu'après constat d'un vrai fichier et de son empreinte.
+**État réel du transfert :** la fiche (126530 octets) et le QCM (110565 octets) sont présents avec les SHA-256 ci-dessus. Les planches ne sont **pas encore importées** : 3313939 octets attendus ; l'historique rapporte un échec de transport, mais le candidat V7 manque dans l'espace de reprise. Le manifeste distingue `gitBinaryUploaded=true` pour fiche/QCM et `false` pour planches. Ne modifier ce dernier indicateur qu'après constat du vrai fichier et de son empreinte.
 
 Le contrôle `node tests/organes-sens-publication-assets.mjs --prepublication` accepte un import **partiel uniquement en brouillon**, en vérifiant SHA et statut de chaque fichier présent ; aucune activation étudiant n'est autorisée. Une divergence SHA-256 ou un statut de transfert inventé reste bloquant. Une fois les 3 fichiers importés, exécuter `node tests/organes-sens-publication-assets.mjs --require-assets` : ce mode exige les trois PDF présents et conformes. **Ni l'un ni l'autre ne crée un GO pédagogique ou graphique.**
 
 Le transfert des binaires **n'est pas terminé dans le dépôt** ; ne pas introduire de liens étudiants et ne pas changer `studentActivation=false` avant les autres autorisations. Le passage final en catalogue ne doit se faire que dans un changement contrôlé, en rapprochant la source PR #275 et en conservant les garde-fous de publication.
+
+## Reprise technique — contrôles et limites
+
+Les deux modes du contrôle binaire exigent désormais aussi les verrous `studentActivation`, `appRegistryChanges`, `publishedFilesInThisPr`, `mergeAuthorized`, `ownerGraphicAcceptance`, `pedagogicalAcceptance` et `publicationApproval` à `false`, avec `ownerAcceptance=pending` pour chaque PDF. Aucun PASS de ces commandes ne donne un GO.
+
+Le test `node tests/organes-sens-publication-assets-test.mjs`, inclus dans le TNR, utilise des copies temporaires : import partiel exact accepté ; 15 défauts injectés bloqués, dont activation ou approbation inventée, statut de transfert faux, taille/SHA divergents et en-tête PDF absent. `--require-assets` doit toujours échouer avec les planches absentes.
+
+Le préflight de préparation est réussi sur la reprise. Le préflight publication reste bloqué par `tests/release-assets-current.mjs` : les ajouts sous `assets/` exigent une progression de version/build. Le contrôle reste intact ; les fichiers de release ne sont pas modifiés pour faire passer un lot non accepté. Ce prérequis sera traité avec la future intégration autorisée.
+
+Les PDF candidats ne figurent pas dans les catalogues actifs : un préflight global ne suffit donc pas à certifier leur contenu. Les contrôles V3 directs sur fiche/QCM restent distincts ; la revue complète comparée au modèle à 100 % et 200 %, la revue scientifique et l'acceptation du propriétaire restent en attente. Les rendus et diagnostics détaillés sont conservés en privé.
 
