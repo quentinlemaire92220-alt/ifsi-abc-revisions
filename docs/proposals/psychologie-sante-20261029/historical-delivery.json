@@ -1,0 +1,355 @@
+{
+  "delivery": {
+    "courseId": "psychologie_sante",
+    "part": "01",
+    "validated": true,
+    "status": "partial",
+    "deliveryMode": "existing_course_revision",
+    "publicationSubset": "qcm_pdf_50_qcm_59_interactive_flashcards_only",
+    "publicationHost": "github_pages",
+    "packFormat": "written_v1",
+    "sourceBasis": {
+      "kind": "transcriptions_and_captures_provisional",
+      "nativeSupportAvailable": false,
+      "officialSupportPending": true
+    },
+    "qcmBank": "data/course-banks/psychologie_sante.json",
+    "qcmCount": 50,
+    "flashcardCount": 59,
+    "partDeliveries": [
+      {
+        "partId": "p01",
+        "validated": true,
+        "status": "partial",
+        "qcmQuestionIds": [
+          "psychologie_sante_p01_001",
+          "psychologie_sante_p01_002",
+          "psychologie_sante_p01_003",
+          "psychologie_sante_p01_004",
+          "psychologie_sante_p01_005",
+          "psychologie_sante_p01_006",
+          "psychologie_sante_p01_007",
+          "psychologie_sante_p01_008",
+          "psychologie_sante_p01_009",
+          "psychologie_sante_p01_010",
+          "psychologie_sante_p01_011",
+          "psychologie_sante_p01_012",
+          "psychologie_sante_p01_013",
+          "psychologie_sante_p01_014",
+          "psychologie_sante_p01_015",
+          "psychologie_sante_p01_016",
+          "psychologie_sante_p01_017",
+          "psychologie_sante_p01_018",
+          "psychologie_sante_p01_019",
+          "psychologie_sante_p01_020",
+          "psychologie_sante_p01_021",
+          "psychologie_sante_p01_022",
+          "psychologie_sante_p01_023",
+          "psychologie_sante_p01_024",
+          "psychologie_sante_p01_025",
+          "psychologie_sante_p01_026",
+          "psychologie_sante_p01_027",
+          "psychologie_sante_p01_028",
+          "psychologie_sante_p01_029",
+          "psychologie_sante_p01_030",
+          "psychologie_sante_p01_031",
+          "psychologie_sante_p01_032",
+          "psychologie_sante_p01_033",
+          "psychologie_sante_p01_034",
+          "psychologie_sante_p01_035",
+          "psychologie_sante_p01_036",
+          "psychologie_sante_p01_037",
+          "psychologie_sante_p01_038",
+          "psychologie_sante_p01_039",
+          "psychologie_sante_p01_040",
+          "psychologie_sante_p01_041",
+          "psychologie_sante_p01_042",
+          "psychologie_sante_p01_043",
+          "psychologie_sante_p01_044",
+          "psychologie_sante_p01_045",
+          "psychologie_sante_p01_046",
+          "psychologie_sante_p01_047",
+          "psychologie_sante_p01_048",
+          "psychologie_sante_p01_049",
+          "psychologie_sante_p01_050"
+        ],
+        "sheetResourceIds": [],
+        "infographicResourceIds": [],
+        "vocalIds": []
+      }
+    ],
+    "artifactSha256s": {
+      "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c"
+    },
+    "publicArtifacts": {
+      "qcm": {
+        "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
+        "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+        "pageCount": 19,
+        "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
+      }
+    },
+    "qcmGraphicOwnerReview": {
+      "status": "owner_accepted",
+      "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+      "pageCount": 19,
+      "reviewBasis": "Accord de poursuite de l'utilisateur apres remise du PDF V3 precis; verification graphique systematique sur rendus de toutes pages et controle automatique 100/200%",
+      "reviewDate": "2026-10-27",
+      "textParity": "50_of_50_exact_bank_verified"
+    },
+    "deferredResources": [
+      {
+        "type": "new_revision_sheet",
+        "reason": "owner_graphic_acceptance_not_individually_attested"
+      },
+      {
+        "type": "new_flashcards_pdf",
+        "reason": "owner_graphic_acceptance_not_individually_attested"
+      },
+      {
+        "type": "new_synthetic_audio",
+        "reason": "listening_review_not_approved"
+      }
+    ],
+    "existingResourcesPreserved": {
+      "legacySheet": "psychologie_sante_fiche_p01",
+      "audioCount": 2
+    },
+    "publicationApproval": {
+      "status": "approved",
+      "authorization": "explicit_go_publication",
+      "scope": "course_package",
+      "approvedAt": "2026-10-27T15:45:12.524Z",
+      "bundleSha256": "c193c54731eff1a3a2b63ab05b288103a0dfd9d9de2454bec867c9440871ee1e",
+      "scopeLimit": "qcm_pdf_50_questions_59_interactive_flashcards_only"
+    },
+    "templateConformance": {
+      "contract": "ifsi_pdf_template_v3",
+      "artifacts": {
+        "qcm": {
+          "templateId": "communication_qcm_2026-10-24",
+          "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+          "artifactSha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+          "pageCount": 19,
+          "pagesChecked": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "status": "owner_accepted",
+          "method": "all_pages_compared_at_100_and_200_percent",
+          "decision": "explicit_graphic_acceptance",
+          "reviewerRole": "owner",
+          "reviewedAt": "2026-10-27T15:45:12.520Z",
+          "checks": {
+            "MODEL_COMPARISON": "PASS",
+            "BANDS_AND_TYPOGRAPHY": "PASS",
+            "MARGINS_AND_HIERARCHY": "PASS",
+            "COLOR_AND_BOXES": "PASS",
+            "NO_CLIPPING_OR_OVERLAP": "PASS",
+            "READABLE_AT_100_AND_200_PERCENT": "PASS",
+            "STRUCTURE_AND_PAGINATION": "PASS"
+          },
+          "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
+        }
+      }
+    },
+    "revisionSheetSupplement": {
+      "resourceId": "psychologie_sante_fiche_unique_20261027",
+      "publicAsset": {
+        "path": "assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
+        "sha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "artifactId": "psychologie_sante_fiche_unique_20p_20261027"
+      },
+      "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+      "pageCount": 20,
+      "lexiconTermCount": 59,
+      "provisional": true,
+      "nativeSupportAvailable": false,
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "expectedCount": 20,
+        "checkedCount": 20,
+        "pageCount": 20
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "expectedCount": 20,
+        "checkedCount": 20,
+        "pageCount": 20
+      },
+      "ownerReview": {
+        "status": "owner_accepted",
+        "pdfSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+        "pagesChecked": 20,
+        "visualReference": "communication_written_v5.3_2026-10-24",
+        "scientificReview": "documentary_review_completed",
+        "independentMedicalReview": "not_attested",
+        "method": "all_pages_rendered_and_inspected_120dpi",
+        "approvedBy": "owner",
+        "ownerApproval": "ok validé — GO Publication"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "da73c470b34d89a4bf74e976bf7d38951c1fb375ecddcbc503f22bb70987d512",
+            "pageCount": 20,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-27T17:38:00Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "e242bd1d969b77da22458878477cfcd124b51bd50e33a9b347e741b0b8556387"
+          }
+        }
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "revision_sheet_only",
+        "approvedAt": "2026-10-27T17:38:00Z",
+        "bundleSha256": "07e6434fe13d7a8f8e212163d03af018a21aeb86bcdd21004043231708c077e7"
+      }
+    }
+  },
+  "course": {
+    "id": "psychologie_sante",
+    "label": "Psychologie de la santé",
+    "aliases": [
+      "Psychologie de la santé",
+      "Psychologie de la sante",
+      "Psychologie Santé",
+      "Psychologie Sante"
+    ],
+    "domain": "B",
+    "ue": "B2",
+    "audioStatus": "available",
+    "audioCount": 2,
+    "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf",
+    "flashcardTarget": 59,
+    "additionalDocuments": [
+      {
+        "label": "QCM — Psychologie de la santé (50 questions et corrigés)",
+        "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf"
+      }
+    ]
+  },
+  "sheets": [
+    {
+      "title": "UE_S1_B2_Psychologie_de_la_Sante_Partie01_Fiche_Revision_Psychologie_de_la_Sante.pdf",
+      "label": "Psychologie de la santé — Partie 01",
+      "ue": "S1 B2",
+      "url": "https://drive.google.com/file/d/1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q/view?usp=drivesdk",
+      "driveId": "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q",
+      "resourceId": "psychologie_sante_fiche_p01",
+      "provisional": false,
+      "courseId": "psychologie_sante",
+      "displayTitle": "Psychologie de la santé — Partie 01",
+      "sourceStatus": "active",
+      "officialSupport": false,
+      "sourceBasis": "Transcription du cours",
+      "sourceNote": "Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours."
+    },
+    {
+      "title": "UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
+      "label": "Psychologie de la santé — Fiche unique (20 pages, 59 définitions)",
+      "ue": "S1 B2",
+      "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_S1_Psychologie_Sante_Fiche_Unique_20p_59_Definitions_20261027.pdf",
+      "resourceId": "psychologie_sante_fiche_unique_20261027",
+      "provisional": true,
+      "courseId": "psychologie_sante",
+      "displayTitle": "Psychologie de la santé",
+      "sourceStatus": "active",
+      "officialSupport": false,
+      "sourceBasis": "Transcriptions et captures provisoires",
+      "sourceNote": "Support officiel non disponible. Fiche fusionnée à partir des séances disponibles.",
+      "pageCount": 20,
+      "lexiconTermCount": 59,
+      "sheetFormat": "written_revision",
+      "primaryRevision": true
+    }
+  ],
+  "vocals": [
+    {
+      "id": "psychologie_sante_p01_vocal_01",
+      "courseId": "psychologie_sante",
+      "course": "Psychologie de la santé",
+      "number": 1,
+      "title": "Santé perçue, qualité de vie et maladie",
+      "driveId": "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj",
+      "mime": "audio/mpeg",
+      "durationSeconds": 390.048,
+      "localAudio": "./assets/audio/v8410/psychologie_sante_p01_vocal_01.mp3",
+      "partId": "p01",
+      "partNumber": 1,
+      "release": "8.30.110"
+    },
+    {
+      "id": "psychologie_sante_p01_vocal_02",
+      "courseId": "psychologie_sante",
+      "course": "Psychologie de la santé",
+      "number": 2,
+      "title": "Représentations, chronicité et analyse d’un témoignage",
+      "driveId": "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs",
+      "mime": "audio/mpeg",
+      "durationSeconds": 400.071,
+      "localAudio": "./assets/audio/v8410/psychologie_sante_p01_vocal_02.mp3",
+      "partId": "p01",
+      "partNumber": 2,
+      "release": "8.30.110"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import {validateWrittenDelivery,validateWrittenPart} from './written-sheet-contr
 import {validateLeanQuestions,validateLeanFlashcards,isExplicitRecallPrompt} from './lean-content-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
+import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -76,8 +77,9 @@ for(const c of manifest.courses){
   continue;
  }
 
- const hostedPublic = c.deliveryMode==='source_limited_first_release' &&
-   c.provisional===true && c.publicationHost==='github_pages' && !c.folders;
+ const officialRevision=isPsychologieOfficialRevision(c);
+ if(officialRevision)validatePsychologieOfficialRevision(c,{registry,sheets,questions,deck,vocals});
+ const hostedPublic = (c.deliveryMode==='source_limited_first_release' && c.provisional===true || officialRevision) && c.publicationHost==='github_pages' && !c.folders;
  if(hostedPublic){
   // Public PDF assets are the publication folders. Do not invent Drive IDs.
   assert.equal(c.folders,undefined,c.courseId+': dossier Drive non attesté ne doit pas être inventé');
@@ -100,7 +102,7 @@ for(const c of manifest.courses){
  const sheet=sheets.find(x=>x.resourceId===c.sheetResourceId);
  assert.equal(sheet?.courseId,c.courseId,'Fiche mal rattachée');
  validateSheetSource(c.courseId,c,sheet);
- const hostedProvisional=c.provisional===true&&c.publicationHost==='github_pages'&&
+ const hostedProvisional=(c.provisional===true||officialRevision)&&c.publicationHost==='github_pages'&&
   c.publicArtifacts?.qcm?.sha256===c.qcmPublicAssetSha256&&
   c.publicArtifacts?.flashcards?.sha256===c.flashcardPublicAssetSha256;
  assert.ok((c.qcmDriveId||hostedProvisional)&&(c.supportDriveId||c.deliveryMode==='existing_course_revision'||

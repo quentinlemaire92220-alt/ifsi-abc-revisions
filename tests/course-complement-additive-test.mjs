@@ -1,3 +1,4 @@
+import {isPsychologieSheetArchive} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
@@ -114,6 +115,7 @@ for(const s of oldSheets){
  if(next && JSON.stringify(next)===JSON.stringify(s))continue;
  if(allowOfficialSupportWithUnverifiedAudio(s,next))continue;
  if(allowDroitsArchival(s,next))continue;
+ if(isPsychologieSheetArchive(s,next,read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)))continue;
  if(!next&&read('docs/course-deliveries.json').courses.find(c=>c.courseId===s.courseId)?.reconciliation?.type==='provisional_to_official_v1')verifyOfficialCourseReconciliation(s.courseId,base);
  else assert.deepEqual(next,s);
 }

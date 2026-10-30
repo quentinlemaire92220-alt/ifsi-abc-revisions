@@ -48,7 +48,12 @@ export function validateRevisionSheetSupplement(courseId,delivery,data){
  assert.equal(a?.status,'approved');assert.equal(a.authorization,'explicit_go_publication');
  assert.equal(a.scope,'revision_sheet_only');
  assert.ok(Number.isFinite(Date.parse(a.approvedAt)));
- assert.equal(a.bundleSha256,revisionSheetDigest(r,row),'Fiche changée après accord');
+ // An archived row retains its original approval; only its visibility changes.
+ const officialArchive=delivery.officialRevision?.contract==='psychologie_sante_official_revision_v1' &&
+  delivery.publicationApproval?.status==='approved' && row.sourceStatus==='archived' &&
+  delivery.officialRevision.archivedSheetResourceIds?.includes(row.resourceId);
+ const reviewedRow=officialArchive?{...row,sourceStatus:'active'}:row;
+ assert.equal(a.bundleSha256,revisionSheetDigest(r,reviewedRow),'Fiche changée après accord');
  if(!r.nativeSupportAvailable)assert.equal(r.provisional,true,'Réserve support natif effacée');
  if(data.registry?.courses.find(c=>c.id===courseId)?.nativeSupportAvailable===false)assert.equal(r.nativeSupportAvailable,false);
  if(r.provisional){assert.equal(row.officialSupport,false);assert.equal(r.nativeSupportAvailable,false);}

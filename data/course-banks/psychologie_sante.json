@@ -1909,5 +1909,446 @@
         "explanation": "Définition complète à restituer à l'examen ; vérifier le sens du concept."
       }
     ]
+  },
+  {
+    "id": "psychologie_sante_p01_051",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 51,
+    "theme": "Douleur et expérience clinique",
+    "difficulty": "easy",
+    "question": "À propos de la douleur chronique décrite par Mme Khatir, quelles propositions sont exactes ?",
+    "choices": [
+      "Elle persiste ou réapparaît pendant plus de trois mois.",
+      "Elle possède uniquement une cause psychologique.",
+      "Des dimensions biologiques, psychologiques et sociales peuvent intervenir.",
+      "Elle impose une lésion visible pour être reconnue.",
+      "Sa prise en charge doit tenir compte du vécu de la personne."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le document 1 définit la douleur chronique par une durée supérieure à trois mois et souligne sa nature multifactorielle. Une douleur peut être réelle sans lésion objectivable ; le vécu doit être évalué.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Douleur chronique",
+        "answers": [
+          "Une douleur chronique est une douleur qui persiste ou réapparaît pendant plus de trois mois ; elle est multifactorielle et peut associer des dimensions biologiques, psychologiques et sociales."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_052",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 52,
+    "theme": "Douleur et expérience clinique",
+    "difficulty": "medium",
+    "question": "Quels repères permettent de distinguer les mécanismes de douleur ?",
+    "choices": [
+      "Une fracture douloureuse peut relever d’un mécanisme nociceptif.",
+      "Brûlures et décharges électriques peuvent évoquer un mécanisme neuropathique.",
+      "Une douleur sans cause organique retrouvée est nécessairement simulée.",
+      "Le mécanisme neuropathique désigne exclusivement une douleur liée à une infection cutanée.",
+      "Une cause encore non identifiée autorise à nier la plainte du patient."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Le document 1 associe la nociception aux agressions tissulaires et le mécanisme neuropathique à des sensations telles que brûlures ou décharges. L’absence de cause retrouvée ne signifie pas simulation.",
+    "announcedCorrectCount": 2,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": []
+  },
+  {
+    "id": "psychologie_sante_p01_053",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 53,
+    "theme": "Douleur, souffrance et vécu",
+    "difficulty": "medium",
+    "question": "Comment distinguer souffrance psychique et douleur morale ?",
+    "choices": [
+      "Une souffrance psychique peut exister sans diagnostic psychiatrique caractérisé.",
+      "La douleur morale peut qualifier une détresse très intense dans certaines dépressions graves.",
+      "Souffrance psychique et douleur morale sont systématiquement synonymes.",
+      "Le ressenti peut être influencé par le contexte existentiel de la personne.",
+      "Toute souffrance psychique impose de conclure à une dépression mélancolique."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le support distingue le mal-être psychique, qui ne suffit pas à diagnostiquer une maladie, de la douleur morale de la sémiologie psychiatrique. Une situation difficile n’autorise pas un diagnostic automatique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Souffrance psychique",
+        "answers": [
+          "La souffrance psychique est un état de mal-être qui peut survenir dans une situation éprouvante sans remplir nécessairement les critères d’un trouble psychiatrique caractérisé."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_054",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 54,
+    "theme": "Qualité de vie et évaluation",
+    "difficulty": "easy",
+    "question": "Comment associer maladie chronique et qualité de vie ?",
+    "choices": [
+      "Une maladie chronique peut nécessiter un accompagnement prolongé.",
+      "La maladie chronique exclut nécessairement une bonne qualité de vie perçue.",
+      "La qualité de vie comporte des domaines physiques, psychologiques, sociaux et matériels.",
+      "Le seul résultat d’un examen biologique suffit à établir la qualité de vie d’un patient.",
+      "Le vécu et l’environnement du patient participent à l’évaluation."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "La prise en charge d’une affection chronique s’inscrit souvent dans la durée. La qualité de vie demeure subjective et multidimensionnelle : les résultats biologiques seuls ne la définissent pas.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Maladie chronique",
+        "answers": [
+          "Une maladie chronique est une affection rarement guérissable qui nécessite une prise en charge prolongée, souvent durable, afin d’en limiter les effets, d’en compenser certaines conséquences ou d’en accompagner l’évolution."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_055",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 55,
+    "theme": "Événements de vie et stress",
+    "difficulty": "medium",
+    "question": "Quels éléments correspondent aux distinctions présentées sur les événements de vie ?",
+    "choices": [
+      "Un événement de vie peut rompre rapidement une continuité dans l’existence.",
+      "Une difficulté de vie désigne une situation problématique d’au moins quatre semaines.",
+      "Les tracas sont nécessairement plus graves que tout événement majeur.",
+      "Les événements en série peuvent contribuer à une exposition stressante prolongée.",
+      "Tous les événements provoquent les mêmes réactions chez tous les patients."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le document 2 distingue événements, difficultés durables, incidents mineurs et événements répétés. L’impact dépend aussi de l’interprétation et des ressources de la personne.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Événement de vie",
+        "answers": [
+          "Un événement de vie est un changement extérieur à la personne, relativement rapide et suffisamment important pour créer une discontinuité dans son existence et mobiliser ses capacités d’adaptation."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Difficulté de vie",
+        "answers": [
+          "Une difficulté de vie est une situation problématique persistante durant au moins quatre semaines."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      },
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Tracas quotidiens",
+        "answers": [
+          "Les tracas quotidiens sont des incidents ou difficultés de faible intensité qui, par leur fréquence ou leur accumulation, peuvent participer à la charge de stress ressentie."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_056",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 56,
+    "theme": "Événements de vie et stress",
+    "difficulty": "hard",
+    "question": "À propos de l’échelle de réajustement social de Holmes et Rahe, quelles propositions sont recevables ?",
+    "choices": [
+      "Il s’agit d’un outil historique de pondération d’événements de vie.",
+      "Elle comprend une liste historique de 43 événements.",
+      "Un score supérieur à 300 constitue un diagnostic de maladie certaine.",
+      "Le modèle doit être nuancé par l’évaluation subjective et le contexte.",
+      "L’échelle démontre que les mêmes événements ont toujours les mêmes effets."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La version historique de 1967 pondère 43 événements et évoque un risque accru au-delà de 300 points, mais le cours remet en cause tout lien strictement causal et toute prédiction certaine chez un individu.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Échelle de Holmes et Rahe",
+        "answers": [
+          "L’échelle de Holmes et Rahe est un outil historique qui attribue un poids de réajustement à différents événements de vie pour estimer une charge de changements ; son score ne permet pas de prédire avec certitude l’apparition d’une maladie chez une personne."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_057",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 57,
+    "theme": "Personnalité et vulnérabilité",
+    "difficulty": "medium",
+    "question": "Quels traits correspondent aux descriptions historiques des profils A et B ?",
+    "choices": [
+      "Le type A est notamment décrit par impatience et compétitivité.",
+      "Le type B représente un profil comparativement moins compétitif et agressif.",
+      "Le profil A établit à lui seul qu’une personne subira un infarctus.",
+      "Les associations sanitaires historiques ont été nuancées par des études ultérieures.",
+      "Le type B garantit l’absence de toute pathologie coronarienne."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les types A et B sont des modèles historiques de comportements. Les associations avec la maladie coronarienne ont été nuancées par les études ultérieures. Aucun profil n’autorise une certitude clinique individuelle.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Type de personnalité A",
+        "answers": [
+          "Le type A désigne, dans les modèles historiques présentés, un profil marqué notamment par l’impatience, la compétitivité et parfois l’hostilité ; les associations avec la maladie coronarienne ont été discutées et nuancées."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_058",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 58,
+    "theme": "Personnalité et vulnérabilité",
+    "difficulty": "hard",
+    "question": "Au sujet du profil dit « type C », quelles propositions sont exactes ?",
+    "choices": [
+      "Il a été historiquement décrit par une inhibition des émotions négatives et une attitude conciliante.",
+      "Le profil C provoque nécessairement un cancer.",
+      "Les études sur personnalité et cancer ont donné des résultats contradictoires.",
+      "Le soignant peut accuser le patient d’avoir causé sa maladie par son comportement.",
+      "Une association historique n’autorise pas à affirmer une causalité."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le document 2 décrit le profil C et insiste sur les résultats contradictoires de la recherche : il est interdit de transformer cette hypothèse en cause médicale ni de culpabiliser les personnes.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Type de personnalité C",
+        "answers": [
+          "Le type C renvoie à un profil d’adaptation historiquement décrit par l’inhibition des émotions négatives et la conciliation ; son association supposée au cancer ne constitue pas une causalité médicale démontrée."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_059",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 59,
+    "theme": "Ressources protectrices",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent correctement l’optimisme ?",
+    "choices": [
+      "C’est une tendance générale à anticiper des issues favorables.",
+      "Il correspond obligatoirement à l’absence de difficultés réelles.",
+      "Le questionnaire LOT-R est cité comme outil d’évaluation.",
+      "Il garantit une guérison plus rapide dans toute situation.",
+      "Il est présenté parmi les caractéristiques salutogènes possibles."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le document 2 définit l’optimisme comme un style cognitif global et présente le LOT-R. Il s’agit d’un facteur de protection potentiel, jamais d’une garantie thérapeutique.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Optimisme",
+        "answers": [
+          "L’optimisme est une tendance cognitive relativement générale à anticiper des issues favorables et à percevoir positivement les possibilités futures."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_060",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 60,
+    "theme": "Ressources protectrices",
+    "difficulty": "medium",
+    "question": "Qu’entend-on par lieu de contrôle (locus of control) ?",
+    "choices": [
+      "Le contrôle interne attribue plutôt les résultats à ses actions, capacités ou efforts.",
+      "Le contrôle externe peut faire intervenir hasard, destin ou personnes influentes.",
+      "Il mesure uniquement la réalité objective de ce que le patient maîtrise.",
+      "C’est une croyance généralisée concernant l’origine des événements.",
+      "Un contrôle externe prouve que la personne refuse tous les soins."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le lieu de contrôle (Rotter) porte sur l’attribution subjective des événements à des causes internes ou externes. Il ne prouve ni un contrôle réel ni la qualité de l’adhésion aux soins.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Lieu de contrôle",
+        "answers": [
+          "Le lieu de contrôle correspond à la croyance générale que les événements dépendent principalement de facteurs internes, liés à ses actions, ou de facteurs externes, comme le hasard et l’influence d’autrui."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_061",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 61,
+    "theme": "Auto-efficacité",
+    "difficulty": "medium",
+    "question": "L’auto-efficacité est décrite comme…",
+    "choices": [
+      "la croyance en sa capacité à mobiliser des ressources pour réussir une tâche.",
+      "un sentiment identique à la seule quantité d’aide sociale reçue.",
+      "une ressource susceptible de soutenir l’ajustement à une situation.",
+      "la certitude de ne rencontrer aucun obstacle.",
+      "une notion explorée par une échelle attribuée à Jerusalem et Schwarzer."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le document 2 insiste sur la croyance en la capacité d’action, distincte du réseau social et de la garantie de réussite, et mentionne l’échelle de Jerusalem et Schwarzer (1992).",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Définis complètement : Auto-efficacité",
+        "answers": [
+          "L’auto-efficacité est la croyance qu’une personne peut mobiliser ses ressources et conduire les actions requises pour réussir une tâche ou surmonter une situation."
+        ],
+        "explanation": "Définition du complément officiel : à expliquer puis appliquer dans un témoignage de patient."
+      }
+    ]
+  },
+  {
+    "id": "psychologie_sante_p01_062",
+    "courseId": "psychologie_sante",
+    "ue": "S1 B2",
+    "course": "Psychologie de la santé",
+    "number": 62,
+    "theme": "Application clinique des concepts",
+    "difficulty": "hard",
+    "question": "Un patient dit : « Ma famille m’aide, mais je ne pense pas réussir à réaliser mes soins seul. » Quelles analyses sont justifiées ?",
+    "choices": [
+      "Le soutien social disponible peut être présent alors que l’auto-efficacité est faible.",
+      "Le soignant doit en déduire automatiquement que le patient manque de volonté.",
+      "Il est pertinent d’explorer des objectifs réalisables et les ressources du patient.",
+      "Le soutien reçu et la confiance en ses capacités sont exactement la même notion.",
+      "Une situation doit être analysée sans attribuer d’emblée une étiquette psychologique définitive."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Le soutien social, l’auto-efficacité et le contrôle sont des notions distinctes. L’IDE peut explorer les besoins, adapter l’aide et soutenir une progression réaliste sans jugement.",
+    "announcedCorrectCount": 3,
+    "partId": "p01",
+    "sourceKind": "official_support_doc_1_2",
+    "sourceStatus": "official_support_documentary_review_completed",
+    "flashcards": []
   }
 ]
