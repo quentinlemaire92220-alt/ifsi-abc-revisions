@@ -32,7 +32,7 @@
       "anatomicalBoards": 7
     },
     "assetTransferPackage": "PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip",
-    "binaryTransferStatus": "ready_local_verified_not_in_github"
+    "binaryTransferStatus": "partial_2_of_3_in_github_not_published"
   },
   "candidatePdfEvidence": {
     "sheet": {
@@ -43,7 +43,7 @@
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
       "bytes": 126530,
-      "gitBinaryUploaded": false
+      "gitBinaryUploaded": true
     },
     "qcm": {
       "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V5_SANS_MARQUEURS.pdf",
@@ -53,7 +53,7 @@
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
       "bytes": 110565,
-      "gitBinaryUploaded": false
+      "gitBinaryUploaded": true
     },
     "boards": {
       "localReviewName": "UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V7_SANS_MARQUEURS.pdf",

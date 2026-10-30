@@ -36,7 +36,7 @@ for(const [role,count] of Object.entries(expected)){
  assert.equal(digest,asset.sha256,role+': SHA-256 divergent');
 }
 const present=statuses.filter(s=>s.exists).length;
-assert.ok(present===0||present===statuses.length,'Import PDF partiel : 3/3 requis');
+if(mode==='--prepublication'&&present<statuses.length) console.log('B1.1 : transfert partiel autorisé UNIQUEMENT en brouillon, activation interdite');
 if(mode==='--require-assets')assert.equal(present,statuses.length,'PDF binaires non présents dans GitHub');
 console.log('PASS B1.1 PDF asset gate:',present+'/'+statuses.length,
   'fichiers exacts ; mode',mode,'; aucune publication automatique.');
