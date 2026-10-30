@@ -709,7 +709,7 @@
     "number": 20,
     "theme": "Vision — œil et voies optiques",
     "difficulty": "hard",
-    "question": "Pour interpréter un schéma de l’œil, il faut distinguer :",
+    "question": "Concernant l'anatomie de l’œil, quelles distinctions sont correctes ?",
     "choices": [
       "Les milieux transparents et les tuniques.",
       "La rétine de la cochlée uniquement par la couleur.",
@@ -1416,7 +1416,7 @@
     "number": 39,
     "theme": "Odorat — fosses nasales",
     "difficulty": "hard",
-    "question": "Pour un QCM sur l’olfaction, quelles distinctions faut-il garder ?",
+    "question": "Concernant les fosses nasales et l’olfaction, quelles associations sont correctes ?",
     "choices": [
       "Cavité nasale : organe exclusif de la vision.",
       "Muqueuse olfactive : récepteurs; bulbe : premier relais central.",
@@ -1642,13 +1642,13 @@
     "number": 45,
     "theme": "Goût — langue et bourgeons",
     "difficulty": "hard",
-    "question": "Selon les priorités orales de Mme Petit pour les papilles :",
+    "question": "Concernant l’anatomie et la fonction des papilles linguales :",
     "choices": [
-      "Mémoriser au millimètre la position exacte de chaque papille.",
-      "Savoir distinguer les familles tactiles et gustatives.",
-      "Considérer que toutes les papilles possèdent des bourgeons du goût.",
-      "Retenir que les papilles ne sont pas toutes identiques.",
-      "Connaître le rôle du pore gustatif."
+      "Toutes les papilles linguales se situent exactement au même endroit.",
+      "Certaines papilles ont surtout un rôle mécanique, d’autres portent des bourgeons gustatifs.",
+      "Toutes les papilles linguales possèdent des bourgeons du goût.",
+      "Les papilles linguales présentent des formes et des fonctions différentes.",
+      "Le pore gustatif permet le contact des molécules sapides avec les cellules gustatives."
     ],
     "answers": [
       1,
@@ -1656,7 +1656,7 @@
       4
     ],
     "announcedCorrectCount": 3,
-    "explanation": "A : L’enseignante dit ne pas demander toutes les positions précises. B : La fonction des papilles est centrale. C : Les filiformes n’en ont pas. D : Il existe différentes formes et localisations. E : Il participe au contact avec les molécules sapides.",
+    "explanation": "A : Les papilles sont réparties dans différentes zones de la langue. B : Les papilles filiformes ont surtout un rôle mécanique, tandis que d’autres types portent des bourgeons gustatifs. C : Les papilles filiformes ne possèdent pas de bourgeons gustatifs. D : Les types de papilles diffèrent par leur morphologie et leur fonction. E : Le pore gustatif permet aux molécules sapides dissoutes d’atteindre les cellules gustatives.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1680,7 +1680,7 @@
     "number": 46,
     "theme": "Toucher — peau et sensibilité",
     "difficulty": "easy",
-    "question": "Les trois couches de la peau sont, de la surface à la profondeur :",
+    "question": "Quelles structures constituent les trois grandes couches de la peau ?",
     "choices": [
       "La choroïde.",
       "Le derme.",
@@ -1718,7 +1718,7 @@
     "number": 47,
     "theme": "Toucher — peau et sensibilité",
     "difficulty": "medium",
-    "question": "Les rôles de la peau évoqués au cours incluent :",
+    "question": "Parmi les fonctions de la peau, on retrouve :",
     "choices": [
       "La réfraction de la lumière.",
       "La protection de l’organisme.",
