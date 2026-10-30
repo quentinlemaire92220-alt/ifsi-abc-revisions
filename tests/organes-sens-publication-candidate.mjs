@@ -41,7 +41,7 @@ for (const [role, pages] of Object.entries({sheet:17,qcm:24,boards:7})) {
 assert.ok(p.prerequisiteChecks.length >= 9);
 assert.ok(p.blockers.includes('no_explicit_publication_go'));
 assert.ok(p.blockers.includes('pdf_binaries_not_in_repository'));
-assert.ok(!/https?:\\/\\/drive\\.google\\.com|transcriptDriveId|recording_url/.test(JSON.stringify(p)),
+assert.ok(!['drive.google.com','transcriptDriveId','recording_url'].some(s => JSON.stringify(p).includes(s)),
   'sources privées non permises dans le dépôt');
 
 // Aucune activation des banques et ressources avant accord du lot exact.
