@@ -25,8 +25,8 @@ for(const [role,count] of Object.entries(expected)){
  assert.equal(typeof rel,'string',role+': chemin GitHub manquant');
  assert.ok(rel.startsWith('assets/organes-des-sens-20261029/')&&rel.endsWith('.pdf'),role+': chemin non autorisé');
  assert.equal(path.posix.normalize(rel),rel,role+': chemin non normalisé');
- assert.equal(asset.gitBinaryUploaded,false,'Ne pas inventer le statut import GitHub avant mise à jour et preuve');
  const exists=fs.existsSync(rel);
+ assert.equal(asset.gitBinaryUploaded,exists,role+': statut de transfert non prouvé par les octets du dépôt');
  statuses.push({role,exists});
  if(!exists)continue;
  const bytes=fs.readFileSync(rel);
