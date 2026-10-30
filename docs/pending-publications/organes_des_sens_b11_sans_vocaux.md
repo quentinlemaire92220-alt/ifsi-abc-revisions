@@ -13,8 +13,8 @@
 
 | Ressource | Pages | SHA-256 exact |
 | --- | ---: | --- |
-| Fiche écrite V2 | 17 | `f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d` |
-| QCM corrigés V5 | 24 | `401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4` |
+| Fiche écrite — présentation corrigée | 17 | `d1e18e9d272d5cfaa4314c606744f1d4ac9d080083386275db03f0f087329c8d` |
+| QCM — présentation corrigée | 24 | `58dfcd2d90c6c9e41a0a544a69a7059c8dc0e8f93c79abb04297c3ddd906042e` |
 | Planches V7 | 7 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
 
 La fiche et le QCM sont présents dans la branche depuis le commit `88c3300444768d4486e2bedcd70ff9e5fd3a295b` ; les planches restent absentes. Les deux PDF présents ont été recontrôlés depuis le checkout : tailles, SHA-256 et paginations conformes ; contrôle technique V3 et absence de marqueurs de génération réussis. Aucun de ces résultats ne constitue une acceptation scientifique ou graphique humaine.
@@ -46,11 +46,11 @@ Le chat de préparation référence un paquet `PR276_ORGANES_SENS_ASSETS_A_IMPOR
 
 | Rôle | Chemin exact à importer dans la PR #276 | Pages | SHA-256 |
 |---|---|---:|---|
-| Fiche | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf` | 17 | `f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d` |
-| QCM | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf` | 24 | `401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4` |
+| Fiche | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf` | 17 | `d1e18e9d272d5cfaa4314c606744f1d4ac9d080083386275db03f0f087329c8d` |
+| QCM | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf` | 24 | `58dfcd2d90c6c9e41a0a544a69a7059c8dc0e8f93c79abb04297c3ddd906042e` |
 | Planches | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf` | 7 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
 
-**État réel du transfert :** la fiche (126530 octets) et le QCM (110565 octets) sont présents avec les SHA-256 ci-dessus. Les planches ne sont **pas encore importées** : 3313939 octets attendus ; l'historique rapporte un échec de transport, mais le candidat V7 manque dans l'espace de reprise. Le manifeste distingue `gitBinaryUploaded=true` pour fiche/QCM et `false` pour planches. Ne modifier ce dernier indicateur qu'après constat du vrai fichier et de son empreinte.
+**État réel du transfert :** la fiche (110387 octets) et le QCM (108383 octets) sont présents avec les SHA-256 ci-dessus. Les planches ne sont **pas encore importées** : 3313939 octets attendus ; l'historique rapporte un échec de transport, mais le candidat V7 manque dans l'espace de reprise. Le manifeste distingue `gitBinaryUploaded=true` pour fiche/QCM et `false` pour planches. Ne modifier ce dernier indicateur qu'après constat du vrai fichier et de son empreinte.
 
 Le contrôle `node tests/organes-sens-publication-assets.mjs --prepublication` accepte un import **partiel uniquement en brouillon**, en vérifiant SHA et statut de chaque fichier présent ; aucune activation étudiant n'est autorisée. Une divergence SHA-256 ou un statut de transfert inventé reste bloquant. Une fois les 3 fichiers importés, exécuter `node tests/organes-sens-publication-assets.mjs --require-assets` : ce mode exige les trois PDF présents et conformes. **Ni l'un ni l'autre ne crée un GO pédagogique ou graphique.**
 
@@ -62,7 +62,11 @@ Les deux modes du contrôle binaire exigent désormais aussi les verrous `studen
 
 Le test `node tests/organes-sens-publication-assets-test.mjs`, inclus dans le TNR, utilise des copies temporaires : import partiel exact accepté ; 15 défauts injectés bloqués, dont activation ou approbation inventée, statut de transfert faux, taille/SHA divergents et en-tête PDF absent. `--require-assets` doit toujours échouer avec les planches absentes.
 
-Le préflight de préparation est réussi sur la reprise. Le préflight publication reste bloqué par `tests/release-assets-current.mjs` : les ajouts sous `assets/` exigent une progression de version/build. Le contrôle reste intact ; les fichiers de release ne sont pas modifiés pour faire passer un lot non accepté. Ce prérequis sera traité avec la future intégration autorisée.
+La reprise prépare la version `8.30.155`, build `8455` : métadonnées, version affichée, index, cache/SW et références synchronisés. Le contrôle `tests/release-assets-current.mjs` reste intact et réussit en contrôle ciblé. Cette préparation de version ne déclenche ni activation du cours ni diffusion ; les préflights et le TNR complet sont relancés sur les nouvelles entrées.
 
 Les PDF candidats ne figurent pas dans les catalogues actifs : un préflight global ne suffit donc pas à certifier leur contenu. Les contrôles V3 directs sur fiche/QCM restent distincts ; la revue complète comparée au modèle à 100 % et 200 %, la revue scientifique et l'acceptation du propriétaire restent en attente. Les rendus et diagnostics détaillés sont conservés en privé.
 
+
+## Corrections de présentation autorisées
+
+La mention de fabrication du lexique a été retirée en page 16 de la fiche. Le titre du thème Goût est déplacé de la page 8 vers la page 9 du QCM, avec le premier bloc de questions ; les questions Q40 à Q44 sont décalées sans réduction de police. Seules ces trois pages diffèrent au rendu ; les 38 autres pages sont identiques pixel par pixel. Les textes pédagogiques, réponses et 59 définitions sont conservés. Les nouvelles empreintes ci-dessus remplacent celles des candidats précédents ; `ownerAcceptance=pending` reste applicable aux nouveaux octets. Le paquet privé corrigé `PR276_REVUE_CORRIGEE_2_PDF.zip` contient les deux PDF présents ; les planches restent absentes.

@@ -31,28 +31,28 @@
       "glossaryTerms": 59,
       "anatomicalBoards": 7
     },
-    "assetTransferPackage": "PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip",
+    "assetTransferPackage": "PR276_REVUE_CORRIGEE_2_PDF.zip",
     "binaryTransferStatus": "partial_2_of_3_in_github_not_published"
   },
   "candidatePdfEvidence": {
     "sheet": {
-      "localReviewName": "UE_B1_1_Organes_des_sens_FICHE_ECRITE_RECONSTITUEE_RELECTURE_V2.pdf",
+      "localReviewName": "UE_B1_1_Organes_des_sens_Fiche_Revision_Presentation_corrigee.pdf",
       "pages": 17,
-      "sha256": "f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d",
+      "sha256": "d1e18e9d272d5cfaa4314c606744f1d4ac9d080083386275db03f0f087329c8d",
       "technicalCheck": "pass_local_only",
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
-      "bytes": 126530,
+      "bytes": 110387,
       "gitBinaryUploaded": true
     },
     "qcm": {
-      "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V5_SANS_MARQUEURS.pdf",
+      "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_Corriges_Presentation_corrigee.pdf",
       "pages": 24,
-      "sha256": "401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4",
+      "sha256": "58dfcd2d90c6c9e41a0a544a69a7059c8dc0e8f93c79abb04297c3ddd906042e",
       "technicalCheck": "pass_local_only",
       "ownerAcceptance": "pending",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
-      "bytes": 110565,
+      "bytes": 108383,
       "gitBinaryUploaded": true
     },
     "boards": {
