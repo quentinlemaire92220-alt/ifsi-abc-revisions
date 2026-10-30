@@ -1,4 +1,48 @@
 {
   "schema": "ifsi_course_preparation_v1",
-  "courses": []
+  "courses": [
+    {
+      "courseId": "organes_des_sens_b11",
+      "ue": "B1.1 S1",
+      "title": "Les organes des sens",
+      "teacher": "Vanessa Petit",
+      "lectureDate": "2026-10-29",
+      "lifecycle": "preparation",
+      "validated": false,
+      "studentPublication": false,
+      "approval": null,
+      "sourceAudit": {
+        "officialSupport": "received",
+        "officialSupportSlides": 56,
+        "oralStatus": "unverified",
+        "scientificReview": "pending",
+        "oralRecordingApproxMinutes": 113
+      },
+      "artifacts": {
+        "questions": 0,
+        "flashcards": 0,
+        "glossaryTerms": 0,
+        "vocalMp3": 0
+      },
+      "privateInventoryPendingImport": {
+        "revisionWrittenPdfPages": 14,
+        "anatomicalBoardsPdfPages": 7,
+        "questions": 50,
+        "flashcards": 50,
+        "glossaryTerms": 59,
+        "vocalScripts": 3,
+        "anatomicalLegends": "corrections_requested",
+        "questionAnswerReview": "pending",
+        "templateConformance": "pending"
+      },
+      "privateBankPaths": {},
+      "publicationBlocks": [
+        "review_full_sources_and_question_bank",
+        "verify_anatomical_labels_and_rebuild_separate_boards",
+        "compare_final_pdfs_against_communication_v53",
+        "owner_acceptance_for_final_artifacts",
+        "publication_preflights_and_complete_tnr"
+      ]
+    }
+  ]
 }
