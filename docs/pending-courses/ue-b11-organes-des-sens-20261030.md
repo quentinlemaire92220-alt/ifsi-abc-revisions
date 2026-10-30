@@ -19,6 +19,8 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Les 50 flashcards et les 59 définitions sont converties au format canonique de préparation ; leur validation sémantique reste à effectuer.
 - Sept items ont eu une reformulation autonome dans la banque de préparation : IDs 005, 018, 019, 036, 043, 044, 050 ; aucun indice de bonne réponse n'a été modifié.
 - Reprise PR #275 : reformulations autonomes complémentaires des QCM 020, 039, 045, 046 et 047 (l’item 045 est recentré sur l’anatomie des papilles et non sur les consignes de l'enseignante). Clés et cardinalités conservées. Relecture scientifique toujours requise.
+- Revue complémentaire du lot privé : le QCM 033 ne dépend plus d’un schéma absent ; les corrigés 007, 009, 012, 016, 031, 037, 041 et 049 sont reformulés pour supprimer les références au cours, à la voix de l’enseignante et aux documents. Les réponses correctes et leur nombre ne changent pas.
+- Deux PDF de relecture distincts ont été régénérés hors de la branche de publication (50 QCM corrigés / 7 planches), sans validation graphique ou scientifique finale. Ne pas les considérer comme fichiers étudiants prêts à diffuser.
 - Statut de l'oral : `unverified` tant que sa couverture exhaustive n'est pas documentée.
 - Les schémas anatomiques et leurs flèches / légendes doivent être revus individuellement et comparés aux modèles déjà publiés.
 - Contrôle trame PDF V3 / modèle Communication, revue médicale et graphique finale, épreuve des octets, puis décision du propriétaire restent à réaliser.
