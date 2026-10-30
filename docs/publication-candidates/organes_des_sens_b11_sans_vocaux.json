@@ -30,7 +30,9 @@
       "flashcards": 50,
       "glossaryTerms": 59,
       "anatomicalBoards": 7
-    }
+    },
+    "assetTransferPackage": "PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip",
+    "binaryTransferStatus": "ready_local_verified_not_in_github"
   },
   "candidatePdfEvidence": {
     "sheet": {
@@ -38,21 +40,30 @@
       "pages": 17,
       "sha256": "f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d",
       "technicalCheck": "pass_local_only",
-      "ownerAcceptance": "pending"
+      "ownerAcceptance": "pending",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
+      "bytes": 126530,
+      "gitBinaryUploaded": false
     },
     "qcm": {
       "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V5_SANS_MARQUEURS.pdf",
       "pages": 24,
       "sha256": "401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4",
       "technicalCheck": "pass_local_only",
-      "ownerAcceptance": "pending"
+      "ownerAcceptance": "pending",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
+      "bytes": 110565,
+      "gitBinaryUploaded": false
     },
     "boards": {
       "localReviewName": "UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V7_SANS_MARQUEURS.pdf",
       "pages": 7,
       "sha256": "23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928",
       "technicalCheck": "anatomical_review_pending",
-      "ownerAcceptance": "pending"
+      "ownerAcceptance": "pending",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
+      "bytes": 3313939,
+      "gitBinaryUploaded": false
     }
   },
   "prerequisiteChecks": [
@@ -61,11 +72,11 @@
     "medical_review_all_qcm_flashcards_glossary_and_anatomical_boards",
     "human_graphic_comparison_all_pages_100_and_200_percent_with_exact_sha",
     "explicit_owner_acceptance_for_exact_bundle",
-    "import_verified_pdf_bytes_and_confirm_sha256",
     "convert_single_canonical_bank_without_duplicate_source_of_truth",
     "prepare_public_catalog_and_assets_only_after_approval",
     "full_preflights_tnr_and_app_link_verification_before_merge",
-    "explicit_go_to_merge_and_publish"
+    "explicit_go_to_merge_and_publish",
+    "run_binary_asset_sha_gate_on_exact_github_commit_before_activation"
   ],
   "blockers": [
     "preparation_pr_not_merged",
