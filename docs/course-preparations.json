@@ -16,7 +16,9 @@
         "officialSupportSlides": 56,
         "oralStatus": "unverified",
         "scientificReview": "pending",
-        "oralRecordingApproxMinutes": 113
+        "oralRecordingApproxMinutes": 113,
+        "oralSpeakerTurnsIndexed": 676,
+        "oralReview": "partial_priority_scan_not_full_semantic_validation"
       },
       "artifacts": {
         "questions": 50,
@@ -28,14 +30,31 @@
         "revisionWrittenPdfPages": 17,
         "anatomicalBoardsPdfPages": 7,
         "vocalScripts": 3,
-        "anatomicalLegends": "corrections_requested",
-        "questionAnswerReview": "pending",
-        "templateConformance": "pending",
+        "anatomicalLegends": "v7_candidate_pending_medical_owner_review",
+        "questionAnswerReview": "structure_mirror_pass_scientific_review_pending",
+        "templateConformance": "technical_pass_sheet_qcm_owner_acceptance_pending",
         "mp3Audio": 0,
         "revisionWrittenHistoricalInventoryPages": 14,
         "revisionWrittenOriginalFileLocated": false,
-        "revisionWrittenStatus": "reconstructed_local_candidate_pending_review",
-        "revisionWrittenTemplateTechnical": "pass_17_pages_no_owner_acceptance"
+        "revisionWrittenStatus": "reconstructed_local_candidate_v2_pending_owner_review",
+        "revisionWrittenTemplateTechnical": "pass_17_pages_no_owner_acceptance",
+        "privateCandidateArtifacts": {
+          "sheet": {
+            "pages": 17,
+            "sha256": "f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d",
+            "status": "technical_pass_owner_review_pending"
+          },
+          "qcm": {
+            "pages": 24,
+            "sha256": "401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4",
+            "status": "technical_pass_owner_review_pending"
+          },
+          "boards": {
+            "pages": 7,
+            "sha256": "23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928",
+            "status": "anatomy_review_pending"
+          }
+        }
       },
       "privateBankPaths": {
         "questions": "data/course-preparations/organes_des_sens_b11.json",
