@@ -39,3 +39,20 @@ Le « oui » du 30/10/2026 autorise la **préparation** de ce périmètre sans a
 Le manifeste `docs/publication-candidates/organes_des_sens_b11_sans_vocaux.json` garde `studentActivation=false`, `ownerGraphicAcceptance=false`, `publicationApproval=false` et `mergeAuthorized=false`. Le test `tests/organes-sens-publication-candidate.mjs` vérifie que le cours n'a pas été activé par accident. Il n'est **pas** un certificat de conformité des supports.
 
 **Livraison possible sans MP3, mais pas sans validations et accord de publication.**
+
+## Import binaire prêt pour GitHub / Work — preuve avant activation
+
+Un paquet local `PR276_ORGANES_SENS_ASSETS_A_IMPORTER_SANS_VOCAUX.zip` a été constitué avec **3 PDF**, sans aucun enregistrement ni source brute. Les trois octets PDF ont été hachés en local, les nombres de pages vérifiés et les empreintes recontrôlées depuis le ZIP. Le paquet **n'est pas un fichier du dépôt GitHub**, et son existence ne démontre pas un transfert sur la branche.
+
+| Rôle | Chemin exact à importer dans la PR #276 | Pages | SHA-256 |
+|---|---|---:|---|
+| Fiche | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf` | 17 | `f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d` |
+| QCM | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf` | 24 | `401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4` |
+| Planches | `assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf` | 7 | `23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928` |
+
+**Au moment du transfert**, copier seulement ces trois PDF dans le commit, sans les reconvertir ni modifier leurs octets, puis définir `gitBinaryUploaded=true` pour les trois ressources dans le manifeste, dans le même commit que l'import complet.
+
+Le contrôle `node tests/organes-sens-publication-assets.mjs --prepublication` accepte 0/3 PDF en brouillon mais refuse toute situation 1/3 ou 2/3, toute divergence SHA-256 et tout statut inventé. Une fois les 3 fichiers importés, exécuter `node tests/organes-sens-publication-assets.mjs --require-assets` : ce mode exige les trois PDF présents et conformes. **Ni l'un ni l'autre ne crée un GO pédagogique ou graphique.**
+
+Le transfert des binaires **n'est pas terminé dans le dépôt** ; ne pas introduire de liens étudiants et ne pas changer `studentActivation=false` avant les autres autorisations. Le passage final en catalogue ne doit se faire que dans un changement contrôlé, en rapprochant la source PR #275 et en conservant les garde-fous de publication.
+
