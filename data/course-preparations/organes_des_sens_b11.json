@@ -638,7 +638,7 @@
     "difficulty": "hard",
     "question": "Parmi ces éléments, lesquels participent aux voies optiques ?",
     "choices": [
-      "Le nerf vague comme voie visuelle principale.",
+      "Les radiations optiques précèdent le nerf optique sur le trajet visuel.",
       "Le chiasma optique.",
       "Le nerf optique.",
       "Le cortex occipital est l’aire primaire du toucher.",
@@ -649,7 +649,7 @@
       2
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Il ne véhicule pas la vision. B : Le chiasma optique correspond à la région où certaines fibres optiques se croisent. C : Il véhicule l’information rétinienne. D : La vision est principalement occipitale; le toucher est notamment pariétal. E : Elle appartient à l’oreille interne.",
+    "explanation": "A : Le trajet passe d’abord par le nerf optique, puis le chiasma, le tractus, les corps genouillés latéraux et enfin les radiations optiques. B : Au chiasma, certaines fibres optiques se croisent. C : Le nerf optique transporte les informations rétiniennes. D : La vision est principalement traitée dans le lobe occipital, le toucher notamment dans le lobe pariétal. E : La cochlée appartient à l’oreille interne.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -675,7 +675,7 @@
     "difficulty": "medium",
     "question": "À propos des troubles de la vision, quelles propositions sont exactes ?",
     "choices": [
-      "Une cornée opaque améliorerait la focalisation.",
+      "L’astigmatisme correspond principalement à une anomalie de la forme du nerf optique.",
       "La cataracte concerne les photorécepteurs rétiniens, et non le cristallin.",
       "La presbytie correspond à une opacification du cristallin.",
       "La cataracte est uniquement une diminution de l’accommodation, sans opacification du cristallin.",
@@ -685,7 +685,7 @@
       4
     ],
     "announcedCorrectCount": 1,
-    "explanation": "A : L’opacité cornéenne gêne le passage de la lumière. B : La cataracte est une opacification du cristallin. C : La presbytie correspond à une diminution de l’accommodation, notamment par perte d’élasticité du cristallin. D : La cataracte se caractérise précisément par une opacification du cristallin. E : La presbytie limite la mise au point sur les objets proches.",
+    "explanation": "A : L’astigmatisme est notamment lié à une courbure irrégulière de la cornée et/ou du cristallin. B : La cataracte est une opacification du cristallin, pas des photorécepteurs rétiniens. C : La presbytie correspond à une diminution de l’accommodation, notamment par perte d’élasticité du cristallin. D : La cataracte se caractérise précisément par une opacification du cristallin. E : La presbytie limite la mise au point sur les objets proches.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -752,14 +752,14 @@
       "La cornée.",
       "La trompe d’Eustache.",
       "Les osselets auditifs.",
-      "Le corps vitré est une membrane opaque traversée en dernier par le son."
+      "L’humeur aqueuse est le dernier milieu transparent traversé avant la rétine."
     ],
     "answers": [
       0,
       1
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Il participe à la focalisation. B : Elle est traversée par la lumière. C : Elle appartient à l’oreille. D : Ils transmettent les vibrations sonores. E : C’est un milieu transparent traversé par la lumière.",
+    "explanation": "A : Le cristallin participe à la focalisation de la lumière. B : La cornée est traversée en premier dans la partie antérieure de l’œil. C : La trompe d’Eustache appartient à l’oreille moyenne. D : Les osselets transmettent les vibrations sonores. E : Après le cristallin, la lumière traverse le corps vitré avant d’atteindre la rétine ; l’humeur aqueuse se situe en avant du cristallin.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1269,7 +1269,7 @@
     "difficulty": "medium",
     "question": "Le système naso-sinusien :",
     "choices": [
-      "Les sinus contiennent les cônes et les bâtonnets.",
+      "Les sinus maxillaires sont des cavités de l’oreille moyenne.",
       "Assure principalement l’accommodation du cristallin.",
       "Participe à l’olfaction.",
       "Réceptionne les vibrations auditives au niveau des osselets.",
@@ -1280,7 +1280,7 @@
       4
     ],
     "announcedCorrectCount": 2,
-    "explanation": "A : Ces photorécepteurs se trouvent dans la rétine. B : C’est une fonction oculaire. C : La muqueuse olfactive capte des molécules odorantes. D : C’est une fonction de l’oreille moyenne. E : La muqueuse contribue au conditionnement de l’air.",
+    "explanation": "A : Les sinus maxillaires, frontaux, ethmoïdaux et sphénoïdaux sont des cavités osseuses de la face situées autour des fosses nasales, et non dans l’oreille. B : L’accommodation dépend du cristallin, non du système naso-sinusien. C : La muqueuse olfactive permet la détection des odeurs. D : Les osselets appartiennent à l’oreille moyenne. E : Le système naso-sinusien participe au passage et au conditionnement de l’air respiré.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1459,14 +1459,14 @@
       "Participe à la mastication.",
       "Elle empêche systématiquement la déglutition.",
       "Elle est dépourvue de papilles.",
-      "Contient des photorécepteurs rétiniens.",
+      "La langue ne participe pas à la phonation.",
       "Remplace l’oreille interne dans l’équilibre."
     ],
     "answers": [
       0
     ],
     "announcedCorrectCount": 1,
-    "explanation": "A : Elle aide à déplacer les aliments. B : La langue participe au contraire à la déglutition. C : La langue porte de nombreuses papilles. D : Ils appartiennent à l’œil. E : Le vestibule remplit ce rôle.",
+    "explanation": "A : La langue aide à déplacer et à malaxer les aliments lors de la mastication. B : La langue intervient au contraire dans la déglutition. C : La langue porte des papilles tactiles et gustatives. D : La langue participe à l’articulation de la parole (phonation). E : Le système vestibulaire de l’oreille interne intervient dans l’équilibre.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
@@ -1724,7 +1724,7 @@
       "La protection de l’organisme.",
       "La thermorégulation.",
       "L’information sensitive.",
-      "La production des osselets."
+      "La peau ne participe pas à la synthèse de la vitamine D."
     ],
     "answers": [
       1,
@@ -1732,7 +1732,7 @@
       3
     ],
     "announcedCorrectCount": 3,
-    "explanation": "A : Cette fonction est optique. B : La peau constitue une barrière. C : Elle participe au maintien de la température. D : Elle contient des récepteurs cutanés. E : Les osselets appartiennent au squelette de l’oreille moyenne.",
+    "explanation": "A : La réfraction des rayons lumineux est assurée par les milieux transparents de l’œil. B : La peau constitue une barrière protectrice. C : Elle contribue au maintien de la température corporelle. D : Elle contient des récepteurs de la sensibilité cutanée. E : Le support officiel mentionne aussi la synthèse de vitamine D parmi les fonctions de la peau.",
     "sourceKind": "official_support_and_lecture",
     "sourceStatus": "pending_scientific_review",
     "flashcards": [
