@@ -68,6 +68,17 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Le lot associé conserve le **QCM V4 inchangé** (24 pages, SHA-256 `b3e6ed008bf0b4bec8f76406fa35544901450d1463afe3dfbd344dab40658aea`) et la **banque JSON V4** (SHA-256 `c7232ab3e74e75acd018503fb610c0b7b3582b04fd14bf2c656443de43d7dbd6`). Les octets V4 du QCM ne sont pas modifiés ; leur PASS technique V3 précédent est maintenu, non présenté comme une nouvelle exécution.
 - **Périmètre** : PDF et captures de vérification créés hors GitHub et hors application étudiante. Les contrôles anatomiques et l'accord graphique intégral ne sont pas certifiés ; garder le statut **relecture**, sans `owner_accepted`, sans fusion ni publication.
 
+## Relecture graphique V6 — corrections ciblées (30/10/2026)
+
+- **Anomalies relevées dans V5 :** flèches et repères coupés sur la **planche 02**, première légende « Bulbe olfactif » sans bulbe identifiable sur la **planche 05**, et pieds de page restés au statut « candidat V4 » sur les six premières pages.
+- **Planche 02 corrigée** : suppression du dessin synthétique tronqué et insertion du schéma **officiel de la diapositive 12**, contenant directement les noms des cellules rétiniennes. Provenance indiquée sur la planche.
+- **Planche 05 corrigée** : le bulbe olfactif, qui n'est pas visible dans la figure du support (diapo 36), est remplacé dans la liste des structures repérées par les **neurones olfactifs**, effectivement dessinés et légendés. Le bulbe demeure étudié dans les contenus écrits.
+- **Toutes les planches** portent maintenant le pied de page « CANDIDAT V6 À RELIRE ». Comparaison des corps de page au rendu à 1× : **01, 03, 04, 06 et 07 inchangées**, **02 et 05 modifiées**.
+- **Candidat privé V6** : `UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V6.pdf` — **7 pages A4 paysage**, SHA-256 `5bee011ab3a129b55441d6ee323e965959ecd1a99d1128c89b67dfa1d13bff38`.
+- Le **QCM V4 demeure inchangé**, SHA-256 `b3e6ed008bf0b4bec8f76406fa35544901450d1463afe3dfbd344dab40658aea` ; **contrat PDF V3 technique réexécuté** sur les octets de ce QCM : **PASS, 0 erreur, 24 pages**, sans équivalence avec l'accord graphique humain. Banque QCM V4 inchangée, SHA-256 `c7232ab3e74e75acd018503fb610c0b7b3582b04fd14bf2c656443de43d7dbd6`.
+- La **fiche écrite privée de 14 pages** est inventoriée, mais aucun fichier final correspondant n'a été localisé dans les dossiers Drive inspectés pendant cette passe : la vérification du PDF de fiche reste donc **non exécutée**, et non un PASS.
+- Les candidats V6 restent **hors GitHub public et hors application**. Les schémas synthétiques des autres pages et la revue médicale de toutes les sources nécessitent encore une validation. **Aucun accord `owner_accepted` ou GO de diffusion n'est enregistré.** Les anciennes planches V1–V5 sont remplacées par V6 pour la relecture.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
