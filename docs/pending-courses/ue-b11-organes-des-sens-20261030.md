@@ -79,6 +79,16 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - La **fiche écrite privée de 14 pages** est inventoriée, mais aucun fichier final correspondant n'a été localisé dans les dossiers Drive inspectés pendant cette passe : la vérification du PDF de fiche reste donc **non exécutée**, et non un PASS.
 - Les candidats V6 restent **hors GitHub public et hors application**. Les schémas synthétiques des autres pages et la revue médicale de toutes les sources nécessitent encore une validation. **Aucun accord `owner_accepted` ou GO de diffusion n'est enregistré.** Les anciennes planches V1–V5 sont remplacées par V6 pour la relecture.
 
+## Fiche écrite retrouvée / reconstituée — décision de reprise (30/10/2026)
+
+- Recherche de l'original historique **14 pages** : aucun fichier correspondant retrouvé dans le dossier du cours, dans les recherches Drive ciblées ni dans les fichiers de conversation identifiés. **Ne pas présenter la nouvelle fiche comme le même fichier**.
+- **Nouvelle fiche écrite de relecture V1, 17 pages A4 portrait** : `UE_B1_1_Organes_des_sens_FICHE_ECRITE_RECONSTITUEE_RELECTURE_V1.pdf` ; SHA-256 **`4232cc1de0f9d39319183628a4f316070170913410de90634f0695ed14338a9a`**. Générée hors dépôt à partir des 56 diapositives officielles, de passages sélectionnés de la transcription et du lexique canonique à 59 définitions ; les 17 pages privilégient la lisibilité au maintien artificiel du quota historique.
+- Le modèle **fiche Communication V5.3 de 19 pages** a été téléchargé depuis le Drive privé et ses octets SHA-256 **`223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf`** vérifiés contre la politique `docs/pdf-template-policy-v3.json`.
+- **Contrat V3 technique exécuté sur le PDF fiche exact** : `tools/pdf-template-v3.py --role sheet --technical-only` → **PASS / zéro erreur / 17 pages**. Police Lato, marges et corps requis, bandes violettes, signets du sommaire, ordre Pièges QCM → Synthèse → Définitions ; **59/59 termes** retrouvés, **0 image**. Les 17 pages ont été rendues à 100 % et 200 % pour preuve privée.
+- Les documents de contrôle et la matrice source→parties se trouvent dans le dossier privé de relecture. **Aucune revue exhaustive de l'oral, ni aucune acceptation graphique humaine** n'est revendiquée. La lecture d'extraits n'est pas la vérification des 113 minutes de la transcription.
+- Le registre `docs/course-preparations.json` indique désormais **17 pages candidates**, conserve le décompte historique non localisé (14), et marque explicitement `revisionWrittenStatus=reconstructed_local_candidate_pending_review`. Il ne déclare **aucun statut validé** ni aucun nouveau PDF dans l'application étudiante.
+- **Blocs maintenus** : revue scientifique intégrale, réception et comparaison visuelle du PDF exact par le propriétaire, pack privé final QCM V4 / planches V6, GO de publication distinct. La PR reste préparatoire, non fusionnée.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
