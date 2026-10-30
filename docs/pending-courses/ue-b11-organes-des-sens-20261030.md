@@ -40,6 +40,16 @@ Date du cours : 29 octobre 2026. Enseignante : Mme Vanessa Petit. ID cible : `or
 - Ces fichiers de relecture sont **produits hors dépôt GitHub**, sans transmission aux modules étudiants. Le PDF QCM a été régénéré après les derniers changements de la banque ; ses 250 propositions sont retrouvées à l'extraction, sans prétendre à une approbation pédagogique complète.
 - Les planches 01–04 et 06–07 présentent des repères non numérotés ; seule la planche 05 conserve des pastilles 1–8, assorties d'une légende. **Vérification anatomique finale de chaque repère toujours nécessaire.**
 
+## Candidats privés V3 — relecture avant publication (30/10/2026)
+
+- **QCM V3** : `UE_B1_1_Organes_des_sens_QCM_50_CORRIGES_RELECTURE_V3.pdf`, **24 pages**, SHA-256 `e456458080e81b91733fc2c8032e4e3cb2064246facc1413ea536e9b0bec829f`. Enoncés et propositions sans clé dans la première section ; **50 corrigés argumentés A–E séparés**, mise en page Lato, bandeaux et cases.
+- **Planches V3** : `UE_B1_1_Organes_des_sens_7_planches_RELECTURE_V3.pdf`, 7 pages A4 paysage, SHA-256 `f8a866e36b5c02ace71a0782a8675ffce74b9c64f9277114a2d83058e62ab22d`. La planche 05 utilise **le schéma officiellement légendé de la diapositive 36** ; les numéros imaginés sur l'image précédente sont retirés. Les six autres illustrations restent à vérifier par un relecteur anatomique.
+- **Banque V3** : `UE_B1_1_Organes_des_sens_BANQUE_QCM_50_REVISEE_V3.json`, SHA-256 `65acba4cbafb8667aa18ffa9b91d6a9a16dc11d67b32d21bbd7268624c24a4e2`. Correspond à la banque de la branche au blob Git `251930d2687d9eb03611261dda7ebcfe1d6cf6c5`. QCM 014, 020, 022 et 041 ajustés sans changement des réponses ni de leur nombre.
+- **Modèle QCM identifié et vérifié en octets :** `communication_qcm_2026-10-24`, 23 pages, SHA-256 `199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7`. C'est bien la référence figée de `docs/pdf-template-policy-v3.json`.
+- **Exécution réelle** de `tools/pdf-template-v3.py --role qcm --technical-only` sur le PDF QCM V3 : **PASS, zéro erreur, 24 pages**. Contrôles complémentaires : 50 intitulés, 250 propositions, 50 corrections A-E synchronisés ; aucun corrigé livré avant la section de réponses.
+- **Sans statut `owner_accepted` :** le contrôle technique n'est pas la revue humaine des 24 pages à 100 % et 200 %, ni une approbation pédagogique ou anatomique. Fiche écrite, 50 flashcards, 59 définitions et sources orales restent à valider exhaustivement. Aucun MP3 ni activation étudiant ; tous les nouveaux PDF demeurent **hors dépôt et hors application publiée**.
+- Les versions V1 et V2 servent d'historique de relecture mais sont **remplacées par V3 pour toute revue du QCM et de la planche 05**. Ne pas publier les versions anciennes.
+
 ## Suite avant activation
 
 1. **Import effectué**. Vérifier la concordance sémantique des 50 clés et explications avec le PDF QCM et avec les sources, puis rapprocher les 59 définitions sans fuite dans les banques étudiantes.
