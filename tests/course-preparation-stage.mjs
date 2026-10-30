@@ -48,6 +48,8 @@ for(const prep of pending.courses){
    assert.equal(q.choices?.length,5);
    assert.ok(q.answers?.length>=1&&q.answers.length<=3);
    assert.equal(new Set(q.answers).size,q.answers.length);
+   assert.ok(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),q.id+': index de réponse hors limites');
+   assert.ok(!/\b(?:cours|QCM|diapo|support|enseignant)\b/i.test(q.question),q.id+': énoncé dépendant du contexte de cours');
    assert.equal(q.announcedCorrectCount,q.answers.length);
    assert.ok(['easy','medium','hard'].includes(q.difficulty));
    assert.ok(q.question&&q.explanation?.length>25&&q.flashcards?.length);
@@ -61,6 +63,8 @@ for(const prep of pending.courses){
   const terms=read(paths.lexicon);
   assert.equal(terms.length,counts.glossaryTerms);
   assert.ok(terms.every(t=>t.courseIds?.length===1&&t.courseIds[0]===id));
+  assert.equal(new Set(terms.map(t=>t.id)).size,terms.length,id+': doublon identifiant lexique');
+  assert.ok(terms.every(t=>t.term?.trim()&&t.definition?.trim()),id+': définition ou terme vide');
  }
  const publicMeta=JSON.stringify(prep);
  assert.ok(!/https?:\/\/drive\.google\.com|\b(?:transcriptDriveId|recording_url|file_id)\b/i.test(publicMeta),
