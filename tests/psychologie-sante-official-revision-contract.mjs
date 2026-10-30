@@ -48,7 +48,7 @@ export function validatePsychologieOfficialRevision(d,data={}){
  assert.equal(active[0].officialSupport,true);assert.equal(active[0].provisional,false);
  const expected={sheet:['236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf',39],
   qcm:['c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf',29],
-  flashcards:['ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953',12]};
+  flashcards:['6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716',12]};
  assert.deepEqual(Object.keys(d.publicArtifacts).sort(),Object.keys(expected).sort());
  for(const [role,[hash,pages]] of Object.entries(expected)){
   const a=d.publicArtifacts[role];assert.equal(a.sha256,hash);assert.equal(sha(a.path),hash);

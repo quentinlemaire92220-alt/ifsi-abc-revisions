@@ -3296,7 +3296,7 @@
             "flashcards": {
               "role": "cards",
               "path": "assets/psychologie-sante-20261029/Flashcards_Psychologie_Sante_71_12p.pdf",
-              "sha256": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953",
+              "sha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
               "pageCount": 12,
               "artifactId": "psychologie_sante_flashcards_20261029"
             }
@@ -3305,7 +3305,7 @@
             "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
             "psychologie_sante_sheet_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
             "psychologie_sante_qcm_20261029": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
-            "psychologie_sante_flashcards_20261029": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953",
+            "psychologie_sante_flashcards_20261029": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
             "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q": "29add198346646699e326ae14fc7962652c0354ee3b41bcea10944d6297ec9d0",
             "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
             "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd"
@@ -3378,7 +3378,7 @@
                   "READABLE_AT_100_AND_200_PERCENT": "PASS",
                   "STRUCTURE_AND_PAGINATION": "PASS"
                 },
-                "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+                "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
               },
               "qcm": {
                 "templateId": "communication_qcm_2026-10-24",
@@ -3430,7 +3430,7 @@
                   "READABLE_AT_100_AND_200_PERCENT": "PASS",
                   "STRUCTURE_AND_PAGINATION": "PASS"
                 },
-                "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+                "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
               }
             }
           },
@@ -3450,12 +3450,12 @@
             "reviewedPdfSha256s": {
               "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
             },
-            "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
           },
           "pedagogicalNonRegression": {
             "contract": "ifsi_pedagogical_non_regression_v149",
             "sheetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-            "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645",
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
             "reviewedAt": "2026-10-30T08:29:34Z",
             "sourceInventory": "reviewed",
             "sourceCoverage": "complete",
@@ -3477,7 +3477,7 @@
         "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
         "psychologie_sante_sheet_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
         "psychologie_sante_qcm_20261029": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
-        "psychologie_sante_flashcards_20261029": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953",
+        "psychologie_sante_flashcards_20261029": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
         "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q": "29add198346646699e326ae14fc7962652c0354ee3b41bcea10944d6297ec9d0",
         "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
         "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd",
@@ -3502,7 +3502,7 @@
         "flashcards": {
           "role": "cards",
           "path": "assets/psychologie-sante-20261029/Flashcards_Psychologie_Sante_71_12p.pdf",
-          "sha256": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953",
+          "sha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
           "pageCount": 12,
           "artifactId": "psychologie_sante_flashcards_20261029"
         }
@@ -3537,8 +3537,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-30T08:29:34Z",
-        "bundleSha256": "f4d977c1928632714efd1d36954ab0498fb60a532b29c973b79f40f1cbd16fd2"
+        "approvedAt": "2026-10-30T08:57:10Z",
+        "bundleSha256": "019de9ff6b66a279a3d8d0af2ffbef7235e1eb60108f547838f8e39d7e7e9dc9"
       },
       "templateConformance": {
         "contract": "ifsi_pdf_template_v3",
@@ -3603,7 +3603,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
           },
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
@@ -3655,7 +3655,7 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
           }
         }
       },
@@ -3839,7 +3839,7 @@
       },
       "publicAssetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
       "qcmPublicAssetSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
-      "flashcardPublicAssetSha256": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953",
+      "flashcardPublicAssetSha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
       "lexicon": {
         "termCount": 73,
         "textSelectable": true,
@@ -3861,12 +3861,12 @@
         "reviewedPdfSha256s": {
           "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
         },
-        "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645"
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
       },
       "pedagogicalNonRegression": {
         "contract": "ifsi_pedagogical_non_regression_v149",
         "sheetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-        "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645",
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
         "reviewedAt": "2026-10-30T08:29:34Z",
         "sourceInventory": "reviewed",
         "sourceCoverage": "complete",
@@ -3897,9 +3897,9 @@
         "acceptedPdfSha256s": {
           "sheet": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
           "qcm": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
-          "flashcards": "ef4f7a3afd8180a2ef0223ab4320987f5128bd63601c183d466530d40fbf8953"
+          "flashcards": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716"
         },
-        "privateEvidenceSha256": "5b9e2f2088a90fd9234f80a9a3e816e121327a6554283d757a737fc0489a8645",
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
         "historicalDeliverySha256": "9186b8b664da7b4b38451c3143a6f951bf1e94abd95a7ce89942e34a4686fee2",
         "baseSha": "cb02d24c254f105ad41fdfc9e4d1dd1f10a5d3d9"
       },

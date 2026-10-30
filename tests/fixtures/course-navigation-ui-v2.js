@@ -607,7 +607,7 @@
       if(block.classList.contains('mku-resource'))return;
       var spec=classify(block),row=block.querySelector(':scope > .row'),heading=row?.querySelector('b');if(!heading)return;
       var support=spec.key==='support',waiting=support&&/Support officiel en attente/.test(block.textContent);
-      var hasAccess=!!block.querySelector('a[href],button,.vg-actions');
+      var hasAccess=!!block.querySelector('a[href],button,.vg-actions')||block.dataset.reviewedSource==='true';
       var button=el('button','mku-toggle');button.type='button';button.setAttribute('aria-expanded','false');
       var panel=el('div','mku-panel');panel.id='mku-panel-'+(++sequence);panel.hidden=true;button.setAttribute('aria-controls',panel.id);
       var visual=el('span','mku-icon');visual.style.setProperty('--mku-bg',spec.bg);visual.style.setProperty('--mku-ink',spec.color);visual.innerHTML=icon(spec.key);

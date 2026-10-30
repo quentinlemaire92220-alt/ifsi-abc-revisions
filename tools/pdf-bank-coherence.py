@@ -254,7 +254,7 @@ def validate_stress_qcm(text,rows):
 
 def validate_stress_cards(text,rows):
     assert len(rows)==50,'Gestion du stress : 50 cartes attendues'
-    blocks=_stress_segments(text,r'^CARTE (\d{2})\s*$')
+    blocks=_stress_segments(text,r'^CARTE\s+(\d{2})\s*$')
     assert [n for n,_ in blocks]==list(range(1,51)),'Cartes absentes ou dupliquées'
     pairs=[]
     for q,(_,block) in zip(rows,blocks):
@@ -301,7 +301,7 @@ def validate_boxed_recall(document,rows,role):
             assert compact(q['question']) in at,q['id']+': titre du corrigé divergent'
             assert compact(q['explanation']) in at,q['id']+': argumentation divergente'
     else:
-        cards=groups(r'^CARTE (\d{2})\s*[–—]')
+        cards=groups(r'^CARTE\s+(\d{2})\s*[–—]')
         authored=[f for q in rows for f in q.get('flashcards',[])]
         assert list(cards)==list(range(1,len(authored)+1)),'Cartes absentes ou dupliquées'
         used=set()
