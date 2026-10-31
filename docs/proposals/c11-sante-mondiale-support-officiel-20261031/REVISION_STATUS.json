@@ -1,0 +1,68 @@
+{
+  "schema": "ifsi_abc_existing_course_official_revision_gate_v1",
+  "courseId": "sante_mondiale_sante_france",
+  "date": "2026-10-31",
+  "lifecycle": "official_source_review",
+  "studentReleaseApproved": false,
+  "source": {
+    "officialSupportReceived": true,
+    "officialSupportReviewedPageByPage": false,
+    "teacherPriorityVisualClassification": "pending",
+    "historicalCapturesAndTranscript": "partial_review_existing",
+    "oralCoverageExhaustive": false,
+    "sourceInPublicRepository": false
+  },
+  "existingPublishedBaseline": {
+    "questions": 56,
+    "flashcards": 56,
+    "audioDeclared": 2,
+    "sourceStatus": "provisional_captures",
+    "officialSupportFlag": false,
+    "qcmBankPath": "qextra-59.txt",
+    "qcmAndFlashcardJsonAudited": true,
+    "existingSheetResources": 2
+  },
+  "revision": {
+    "fullPedagogicalReconciliation": "pending",
+    "scientificAccuracyReview": "pending",
+    "newSingleRevisionPdf": "pending",
+    "visualModelComparison": "pending",
+    "pdfAllPagesInspected": false,
+    "historicalResourcesPreserved": true,
+    "explicitAcceptanceOfFinalBytes": false
+  },
+  "gaps": [
+    {
+      "area": "teacher_priorities",
+      "issue": "Red frames and white-on-violet titles must be mapped visually, rather than inferred from text extraction.",
+      "priority": "blocking"
+    },
+    {
+      "area": "cancers",
+      "issue": "Final explicit course synthesis on five frequent and five deadly cancers and screening types is not exhaustively reproduced in provisional sheet.",
+      "priority": "blocking"
+    },
+    {
+      "area": "cardiovascular",
+      "issue": "Course summary names stroke, myocardial infarction and pulmonary embolism; existing provisional sheet requires reconciliation, without asserting an independent mortality ranking.",
+      "priority": "blocking"
+    },
+    {
+      "area": "inequalities_and_care",
+      "issue": "Access and use of care appear in course outline, but substantive chapter is not located in extracted text; inspect source before claiming coverage.",
+      "priority": "blocking"
+    },
+    {
+      "area": "source_numbers",
+      "issue": "Preserve teacher's years, populations and units; review inconsistent or potentially outdated scientific figures rather than silently substituting contemporary numbers.",
+      "priority": "blocking"
+    },
+    {
+      "area": "existing_drive_access",
+      "issue": "Legacy working PDFs are accessible to anyone with link; do not describe those files as private or change permissions without assessing app dependencies.",
+      "priority": "review"
+    }
+  ],
+  "targetCourseSeparate": "organisation_systeme_sante",
+  "notes": "Public file contains no original lecture slides, transcripts, raw source contents, private Drive IDs or false approval. Updating this gate does not publish anything."
+}
