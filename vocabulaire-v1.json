@@ -8431,6 +8431,714 @@
       "sourceType": "reference_pedagogique",
       "etymologie": "Mono- : un ; nucléosique : relatif au noyau, terme issu du syndrome mononucléosique.",
       "distinction": "Un syndrome mononucléosique regroupe des signes ; il ne constitue pas un diagnostic de VIH."
+    },
+    {
+      "id": "b11-sens-accommodation-01",
+      "term": "Accommodation",
+      "theme": "Les organes des sens",
+      "definition": "Modification de la forme du cristallin permettant la mise au point sur des objets proches ou lointains.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Accommoder signifie adapter : ici, adapter la mise au point de l’œil.",
+      "distinction": "À distinguer de l’adaptation à la luminosité et du changement de diamètre pupillaire."
+    },
+    {
+      "id": "b11-sens-aire-corticale-02",
+      "term": "Aire corticale",
+      "theme": "Les organes des sens",
+      "definition": "Région du cortex cérébral spécialisée dans le traitement de certaines informations.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Aire désigne une région ; corticale signifie située dans le cortex cérébral.",
+      "distinction": "Une aire corticale traite l’information ; elle ne constitue pas un récepteur périphérique."
+    },
+    {
+      "id": "b11-sens-batonnet-03",
+      "term": "Bâtonnet",
+      "theme": "Les organes des sens",
+      "definition": "Photorécepteur rétinien jouant un rôle majeur dans la vision en faible luminosité.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Diminutif de bâton : le nom décrit la forme allongée du photorécepteur.",
+      "distinction": "Très sensible en faible lumière ; le cône contribue davantage aux couleurs et aux détails."
+    },
+    {
+      "id": "b11-sens-bourgeon-gustatif-04",
+      "term": "Bourgeon gustatif",
+      "theme": "Les organes des sens",
+      "definition": "Petit ensemble de cellules sensorielles et de soutien participant à la détection des saveurs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Bourgeon décrit un petit ensemble cellulaire ; gustatif renvoie au goût.",
+      "distinction": "Le bourgeon est un ensemble de cellules ; la papille est un relief de la langue."
+    },
+    {
+      "id": "b11-sens-bulbe-olfactif-05",
+      "term": "Bulbe olfactif",
+      "theme": "Les organes des sens",
+      "definition": "Structure nerveuse recevant les signaux en provenance des neurones olfactifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Bulbe décrit une extrémité renflée ; olfactif renvoie à la perception des odeurs.",
+      "distinction": "Structure nerveuse centrale recevant l’information olfactive, distincte de la muqueuse nasale."
+    },
+    {
+      "id": "b11-sens-canal-semi-circulaire-06",
+      "term": "Canal semi-circulaire",
+      "theme": "Les organes des sens",
+      "definition": "Structure de l’oreille interne participant à la détection des mouvements rotatoires de la tête.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Semi- signifie moitié ; circulaire décrit la forme courbe du canal.",
+      "distinction": "Les canaux détectent les rotations ; l’utricule et le saccule renseignent sur les accélérations linéaires."
+    },
+    {
+      "id": "b11-sens-cae-07",
+      "term": "CAE",
+      "theme": "Les organes des sens",
+      "definition": "Conduit auditif externe, reliant le pavillon à la membrane du tympan.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sigle de conduit auditif externe : conduit de la partie externe de l’oreille.",
+      "distinction": "À distinguer de la trompe auditive, qui relie l’oreille moyenne au nasopharynx."
+    },
+    {
+      "id": "b11-sens-cellule-ciliee-08",
+      "term": "Cellule ciliée",
+      "theme": "Les organes des sens",
+      "definition": "Cellule sensorielle de l’oreille interne répondant à une stimulation mécanique.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Ciliée décrit la présence de prolongements à la surface de la cellule sensorielle.",
+      "distinction": "Les cellules ciliées de l’oreille convertissent une stimulation mécanique ; elles ne sont pas des cellules ciliées respiratoires."
+    },
+    {
+      "id": "b11-sens-chemorecepteur-09",
+      "term": "Chémorécepteur",
+      "theme": "Les organes des sens",
+      "definition": "Récepteur sensible à des molécules chimiques, impliqué dans l’odorat et le goût.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Chémo- renvoie aux substances chimiques ; récepteur désigne une structure qui reçoit un stimulus.",
+      "distinction": "Détecte des molécules ; le photorécepteur répond à la lumière."
+    },
+    {
+      "id": "b11-sens-chiasma-optique-10",
+      "term": "Chiasma optique",
+      "theme": "Les organes des sens",
+      "definition": "Région des voies optiques où se produit un croisement partiel de fibres.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Chiasma renvoie à une disposition en croix ; optique concerne la vision.",
+      "distinction": "Le croisement des fibres y est partiel ; toutes les fibres ne changent pas de côté."
+    },
+    {
+      "id": "b11-sens-choane-11",
+      "term": "Choane",
+      "theme": "Les organes des sens",
+      "definition": "Orifice postérieur d’une fosse nasale ouvrant vers le nasopharynx.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Choan- vient du grec désignant un entonnoir ; le terme nomme l’ouverture postérieure nasale.",
+      "distinction": "La choane est postérieure ; la narine est l’orifice antérieur de la fosse nasale."
+    },
+    {
+      "id": "b11-sens-choroide-12",
+      "term": "Choroïde",
+      "theme": "Les organes des sens",
+      "definition": "Tunique moyenne, vascularisée, de la paroi du globe oculaire.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Nom anatomique d’une tunique de l’œil ; le suffixe -oïde signifie qui ressemble à.",
+      "distinction": "Couche vascularisée entre sclérotique et rétine ; ce n’est pas la couche des photorécepteurs."
+    },
+    {
+      "id": "b11-sens-cochlee-13",
+      "term": "Cochlée",
+      "theme": "Les organes des sens",
+      "definition": "Partie spiralée de l’oreille interne, contenant l’organe de Corti.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom évoque une coquille spiralée, en référence à la forme de cette partie de l’oreille.",
+      "distinction": "Participe à l’audition ; le vestibule et les canaux semi-circulaires participent à l’équilibre."
+    },
+    {
+      "id": "b11-sens-cone-14",
+      "term": "Cône",
+      "theme": "Les organes des sens",
+      "definition": "Photorécepteur de la rétine impliqué dans la vision des couleurs et la précision visuelle.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom décrit la forme conique d’un type de photorécepteur rétinien.",
+      "distinction": "Vision des couleurs et précision en lumière suffisante ; à distinguer du bâtonnet."
+    },
+    {
+      "id": "b11-sens-conjonctive-15",
+      "term": "Conjonctive",
+      "theme": "Les organes des sens",
+      "definition": "Muqueuse participant notamment à la protection et à la lubrification de la surface oculaire.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Terme apparenté à joindre : cette muqueuse tapisse les paupières et recouvre l’avant de la sclérotique.",
+      "distinction": "La conjonctive ne recouvre pas la cornée transparente."
+    },
+    {
+      "id": "b11-sens-cornee-16",
+      "term": "Cornée",
+      "theme": "Les organes des sens",
+      "definition": "Partie antérieure transparente de l’œil, essentielle à la réfraction des rayons lumineux.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Terme anatomique apparenté à corne, désignant la tunique antérieure transparente de l’œil.",
+      "distinction": "Transparente et fortement réfringente ; à distinguer de la sclérotique opaque."
+    },
+    {
+      "id": "b11-sens-corps-ciliaire-17",
+      "term": "Corps ciliaire",
+      "theme": "Les organes des sens",
+      "definition": "Ensemble de structures participant à la production de l’humeur aqueuse et à l’accommodation.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Corps désigne une structure anatomique ; ciliaire précise son appartenance à la région ciliaire.",
+      "distinction": "Produit l’humeur aqueuse et intervient dans l’accommodation ; ce n’est pas le cristallin."
+    },
+    {
+      "id": "b11-sens-corps-vitre-18",
+      "term": "Corps vitré",
+      "theme": "Les organes des sens",
+      "definition": "Masse gélatineuse transparente occupant la plus grande partie du globe oculaire.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Vitré signifie semblable au verre par sa transparence ; corps désigne la masse gélatineuse.",
+      "distinction": "Gel situé derrière le cristallin ; l’humeur aqueuse est un liquide situé en avant du cristallin."
+    },
+    {
+      "id": "b11-sens-cortex-occipital-19",
+      "term": "Cortex occipital",
+      "theme": "Les organes des sens",
+      "definition": "Région cérébrale intervenant principalement dans la perception visuelle.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Cortex signifie écorce ; occipital renvoie à l’arrière de la tête.",
+      "distinction": "Le cortex visuel occipital traite l’information visuelle ; la rétine la capte et la transforme."
+    },
+    {
+      "id": "b11-sens-cortex-parietal-20",
+      "term": "Cortex pariétal",
+      "theme": "Les organes des sens",
+      "definition": "Région cérébrale impliquée dans le traitement de nombreuses informations sensitives cutanées.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Cortex signifie écorce ; pariétal désigne la région cérébrale sous l’os pariétal.",
+      "distinction": "Participe notamment au traitement somatosensoriel ; à distinguer du cortex visuel occipital."
+    },
+    {
+      "id": "b11-sens-cortex-temporal-21",
+      "term": "Cortex temporal",
+      "theme": "Les organes des sens",
+      "definition": "Région cérébrale impliquée dans le traitement des informations auditives.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Cortex signifie écorce ; temporal renvoie à la région de la tempe.",
+      "distinction": "Participe notamment au traitement auditif ; le récepteur auditif se trouve dans la cochlée."
+    },
+    {
+      "id": "b11-sens-cristallin-22",
+      "term": "Cristallin",
+      "theme": "Les organes des sens",
+      "definition": "Lentille transparente déformable de l’œil, intervenant dans la mise au point.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom renvoie au cristal et à la transparence de cette lentille de l’œil.",
+      "distinction": "Sa courbure varie pour l’accommodation ; l’iris règle l’ouverture de la pupille."
+    },
+    {
+      "id": "b11-sens-epiderme-23",
+      "term": "Épiderme",
+      "theme": "Les organes des sens",
+      "definition": "Couche superficielle de la peau, participant à la protection.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Épi- signifie sur ; -derme renvoie à la peau : couche située sur le derme.",
+      "distinction": "Couche superficielle épithéliale ; le derme sous-jacent est un tissu conjonctif vascularisé."
+    },
+    {
+      "id": "b11-sens-derme-24",
+      "term": "Derme",
+      "theme": "Les organes des sens",
+      "definition": "Tissu conjonctif sous l’épiderme, contenant vaisseaux, annexes et récepteurs sensoriels.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le radical derm- désigne la peau dans le vocabulaire anatomique.",
+      "distinction": "Sous l’épiderme ; à distinguer de l’hypoderme plus profond, riche en tissu adipeux."
+    },
+    {
+      "id": "b11-sens-hypoderme-25",
+      "term": "Hypoderme",
+      "theme": "Les organes des sens",
+      "definition": "Plan sous-cutané profond, riche en tissu adipeux.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Hypo- signifie sous ; -derme renvoie à la peau : tissu situé sous le derme.",
+      "distinction": "Couche sous-cutanée ; ne pas la confondre avec l’épiderme superficiel."
+    },
+    {
+      "id": "b11-sens-fovea-26",
+      "term": "Fovéa",
+      "theme": "Les organes des sens",
+      "definition": "Centre de la macula, riche en cônes et associé à la haute précision visuelle.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Fovéa désigne une petite dépression anatomique, ici au centre de la macula.",
+      "distinction": "Zone de très grande acuité visuelle ; distincte de la papille optique sans photorécepteurs."
+    },
+    {
+      "id": "b11-sens-humeur-aqueuse-27",
+      "term": "Humeur aqueuse",
+      "theme": "Les organes des sens",
+      "definition": "Liquide transparent produit par le corps ciliaire, présent dans la partie antérieure de l’œil.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Humeur désigne ici un liquide biologique ; aqueuse signifie de nature aqueuse.",
+      "distinction": "Liquide renouvelé en avant du cristallin ; distinct du gel du corps vitré."
+    },
+    {
+      "id": "b11-sens-iris-28",
+      "term": "Iris",
+      "theme": "Les organes des sens",
+      "definition": "Partie colorée de l’œil qui module le diamètre de la pupille.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom iris renvoie à l’arc-en-ciel et à l’aspect coloré de cette structure.",
+      "distinction": "Diaphragme coloré ; la pupille est l’ouverture centrale, non un tissu noir."
+    },
+    {
+      "id": "b11-sens-macula-29",
+      "term": "Macula",
+      "theme": "Les organes des sens",
+      "definition": "Région centrale de la rétine participant à la vision fine.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Du latin macula, tache : région centrale spécialisée de la rétine.",
+      "distinction": "La fovéa est située au centre de la macula ; les deux termes ne sont pas strictement synonymes."
+    },
+    {
+      "id": "b11-sens-mecanorecepteur-30",
+      "term": "Mécanorécepteur",
+      "theme": "Les organes des sens",
+      "definition": "Récepteur réagissant à une stimulation mécanique telle qu’une pression ou une vibration.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Mécano- renvoie à une action mécanique ; récepteur désigne la structure sensible au stimulus.",
+      "distinction": "Sensible à une déformation mécanique ; distinct du chémorécepteur sensible aux molécules."
+    },
+    {
+      "id": "b11-sens-muqueuse-olfactive-31",
+      "term": "Muqueuse olfactive",
+      "theme": "Les organes des sens",
+      "definition": "Zone spécialisée de la muqueuse nasale contenant les récepteurs olfactifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Muqueuse désigne un revêtement interne ; olfactive renvoie à l’odorat.",
+      "distinction": "Zone sensorielle spécialisée ; toutes les régions de la muqueuse nasale ne sont pas olfactives."
+    },
+    {
+      "id": "b11-sens-nerf-cochleaire-32",
+      "term": "Nerf cochléaire",
+      "theme": "Les organes des sens",
+      "definition": "Branche du VIII transportant des informations auditives depuis la cochlée.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Nerf désigne un faisceau de fibres ; cochléaire signifie en relation avec la cochlée.",
+      "distinction": "Branche auditive du VIII ; distincte de sa branche vestibulaire liée à l’équilibre."
+    },
+    {
+      "id": "b11-sens-nerf-optique-33",
+      "term": "Nerf optique",
+      "theme": "Les organes des sens",
+      "definition": "Voie nerveuse qui transmet l’information visuelle de la rétine vers le cerveau.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Optique signifie relatif à la vision ; nerf désigne le faisceau transmettant les signaux.",
+      "distinction": "Deuxième nerf crânien ; distinct des nerfs moteurs qui commandent les mouvements oculaires."
+    },
+    {
+      "id": "b11-sens-nerf-olfactif-34",
+      "term": "Nerf olfactif",
+      "theme": "Les organes des sens",
+      "definition": "Ensemble de fibres nerveuses transmettant les informations issues des récepteurs olfactifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Olfactif signifie relatif à l’odorat ; nerf désigne les fibres véhiculant l’information.",
+      "distinction": "Premier nerf crânien ; distinct du bulbe olfactif auquel ses fibres aboutissent."
+    },
+    {
+      "id": "b11-sens-nerf-vestibulaire-35",
+      "term": "Nerf vestibulaire",
+      "theme": "Les organes des sens",
+      "definition": "Branche du VIII associée aux informations d’équilibre.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Vestibulaire signifie relatif au vestibule de l’oreille interne.",
+      "distinction": "Branche du VIII liée à l’équilibre ; la branche cochléaire véhicule l’information auditive."
+    },
+    {
+      "id": "b11-sens-nerf-vestibulocochleaire-viii-36",
+      "term": "Nerf vestibulocochléaire (VIII)",
+      "theme": "Les organes des sens",
+      "definition": "Nerf crânien réunissant les branches vestibulaire et cochléaire.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Vestibulo- renvoie au vestibule ; cochléaire à la cochlée ; VIII indique le huitième nerf crânien.",
+      "distinction": "Réunit deux contingents sensoriels : vestibulaire pour l’équilibre et cochléaire pour l’audition."
+    },
+    {
+      "id": "b11-sens-nocicepteur-37",
+      "term": "Nocicepteur",
+      "theme": "Les organes des sens",
+      "definition": "Récepteur sensoriel activé par des stimuli potentiellement lésionnels.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Noci- renvoie à une atteinte nuisible ; -cepteur désigne ce qui reçoit un stimulus.",
+      "distinction": "La nociception est la détection des stimuli nocifs ; la douleur est une expérience perceptive plus large."
+    },
+    {
+      "id": "b11-sens-organe-de-corti-38",
+      "term": "Organe de Corti",
+      "theme": "Les organes des sens",
+      "definition": "Structure sensorielle cochléaire contenant les cellules ciliées impliquées dans l’audition.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Corti est un nom propre : il s’agit d’un éponyme anatomique.",
+      "distinction": "Structure sensorielle de la cochlée ; à distinguer du tympan qui transmet les vibrations."
+    },
+    {
+      "id": "b11-sens-papille-caliciforme-39",
+      "term": "Papille caliciforme",
+      "theme": "Les organes des sens",
+      "definition": "Papille linguale volumineuse, située vers l’arrière de la langue et contenant des bourgeons gustatifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Papille désigne un petit relief ; caliciforme signifie en forme de calice.",
+      "distinction": "Papille gustative entourée d’un sillon ; distincte de la papille filiforme à rôle mécanique."
+    },
+    {
+      "id": "b11-sens-papille-filiforme-40",
+      "term": "Papille filiforme",
+      "theme": "Les organes des sens",
+      "definition": "Papille de la langue principalement tactile, dépourvue de bourgeon gustatif.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Fili- renvoie au fil ; -forme indique la forme : papille allongée et fine.",
+      "distinction": "Rôle mécanique et tactile ; elle ne porte pas de bourgeons gustatifs."
+    },
+    {
+      "id": "b11-sens-papille-foliee-41",
+      "term": "Papille foliée",
+      "theme": "Les organes des sens",
+      "definition": "Papille linguale située sur les bords latéraux, contenant des bourgeons gustatifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Foliée signifie en forme de feuillets, décrivant les replis de cette papille linguale.",
+      "distinction": "Située sur les bords postérieurs de la langue et associée à des bourgeons gustatifs."
+    },
+    {
+      "id": "b11-sens-papille-fongiforme-42",
+      "term": "Papille fongiforme",
+      "theme": "Les organes des sens",
+      "definition": "Papille linguale en forme de petit champignon, pouvant contenir des bourgeons gustatifs.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Fongi- renvoie au champignon ; -forme indique une ressemblance de forme.",
+      "distinction": "Papille pouvant porter des bourgeons gustatifs ; distincte de la papille filiforme."
+    },
+    {
+      "id": "b11-sens-papille-optique-43",
+      "term": "Papille optique",
+      "theme": "Les organes des sens",
+      "definition": "Zone d’émergence du nerf optique, associée à la tache aveugle.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Papille désigne ici le disque d’émergence du nerf optique ; optique concerne la vision.",
+      "distinction": "Sans photorécepteurs : correspond au point aveugle, contrairement à la fovéa."
+    },
+    {
+      "id": "b11-sens-photorecepteur-44",
+      "term": "Photorécepteur",
+      "theme": "Les organes des sens",
+      "definition": "Cellule sensorielle sensible à la lumière ; cône ou bâtonnet dans la rétine.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Photo- signifie lumière ; récepteur désigne la structure qui reçoit le stimulus.",
+      "distinction": "Cônes et bâtonnets sont des photorécepteurs ; les cellules ganglionnaires transmettent ensuite le signal."
+    },
+    {
+      "id": "b11-sens-pore-gustatif-45",
+      "term": "Pore gustatif",
+      "theme": "Les organes des sens",
+      "definition": "Petite ouverture d’un bourgeon gustatif permettant le contact avec des molécules sapides.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Pore désigne une petite ouverture ; gustatif signifie relatif au goût.",
+      "distinction": "Ouverture du bourgeon permettant le contact avec les molécules dissoutes ; distincte du bourgeon entier."
+    },
+    {
+      "id": "b11-sens-potentiel-d-action-46",
+      "term": "Potentiel d’action",
+      "theme": "Les organes des sens",
+      "definition": "Signal électrique propagé le long de certaines cellules nerveuses.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Potentiel renvoie à une différence électrique ; action désigne ici un signal électrique transitoire.",
+      "distinction": "Signal propagé dans les fibres excitables ; distinct du potentiel récepteur local et gradué."
+    },
+    {
+      "id": "b11-sens-pupille-47",
+      "term": "Pupille",
+      "theme": "Les organes des sens",
+      "definition": "Orifice central de l’iris par lequel entre la lumière.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Nom anatomique de l’ouverture centrale de l’iris, par laquelle pénètre la lumière.",
+      "distinction": "La pupille est une ouverture ; l’iris est le tissu qui en règle le diamètre."
+    },
+    {
+      "id": "b11-sens-recepteur-sensoriel-48",
+      "term": "Récepteur sensoriel",
+      "theme": "Les organes des sens",
+      "definition": "Structure spécialisée détectant une stimulation.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Récepteur signifie qui reçoit ; sensoriel signifie relatif à une modalité de sensibilité.",
+      "distinction": "Transforme un stimulus en signal ; distinct du centre cérébral qui interprète l’information."
+    },
+    {
+      "id": "b11-sens-refraction-49",
+      "term": "Réfraction",
+      "theme": "Les organes des sens",
+      "definition": "Déviation d’un rayon lumineux lors de son passage dans un milieu optique.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Réfraction désigne la déviation d’un rayon lumineux lors d’un changement de milieu.",
+      "distinction": "À distinguer de la réflexion qui renvoie la lumière et de l’accommodation qui ajuste le cristallin."
+    },
+    {
+      "id": "b11-sens-retine-50",
+      "term": "Rétine",
+      "theme": "Les organes des sens",
+      "definition": "Tunique interne, nerveuse, du globe oculaire, contenant notamment cônes et bâtonnets.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom rétine est apparenté au réseau ; il désigne la tunique nerveuse interne de l’œil.",
+      "distinction": "Contient les photorécepteurs ; la choroïde sous-jacente est principalement vascularisée."
+    },
+    {
+      "id": "b11-sens-retro-olfaction-51",
+      "term": "Rétro-olfaction",
+      "theme": "Les organes des sens",
+      "definition": "Perception des molécules odorantes remontant de la bouche vers les fosses nasales pendant le repas.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Rétro- indique le trajet par l’arrière ; olfaction signifie perception des odeurs.",
+      "distinction": "Les arômes atteignent le nez depuis la bouche ; le goût correspond à la détection des saveurs."
+    },
+    {
+      "id": "b11-sens-sclerotique-52",
+      "term": "Sclérotique",
+      "theme": "Les organes des sens",
+      "definition": "Tunique externe, blanche et résistante, de l’œil.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Sclér- renvoie à la dureté : tunique résistante externe du globe oculaire.",
+      "distinction": "Opaque et protectrice ; la cornée antérieure est transparente."
+    },
+    {
+      "id": "b11-sens-septum-nasal-53",
+      "term": "Septum nasal",
+      "theme": "Les organes des sens",
+      "definition": "Cloison séparant les deux fosses nasales.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Septum signifie cloison ; nasal indique l’appartenance au nez.",
+      "distinction": "Sépare les deux fosses nasales ; les choanes sont leurs ouvertures postérieures."
+    },
+    {
+      "id": "b11-sens-stimulus-54",
+      "term": "Stimulus",
+      "theme": "Les organes des sens",
+      "definition": "Modification de l’environnement capable d’activer un récepteur.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Terme désignant un agent ou une variation capable de provoquer une réponse.",
+      "distinction": "Le stimulus est l’entrée du système ; le message nerveux est une réponse produite après transduction."
+    },
+    {
+      "id": "b11-sens-thermorecepteur-55",
+      "term": "Thermorécepteur",
+      "theme": "Les organes des sens",
+      "definition": "Récepteur sensoriel impliqué dans la détection des variations de température.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Thermo- renvoie à la température ; récepteur désigne la structure sensible au stimulus.",
+      "distinction": "Répond aux variations thermiques ; distinct du mécanorécepteur et du nocicepteur."
+    },
+    {
+      "id": "b11-sens-trompe-d-eustache-56",
+      "term": "Trompe d’Eustache",
+      "theme": "Les organes des sens",
+      "definition": "Canal reliant l’oreille moyenne au nasopharynx et contribuant à égaliser les pressions.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Trompe décrit un canal ; Eustache est le nom propre associé à cet éponyme.",
+      "distinction": "Relie l’oreille moyenne au nasopharynx ; ne constitue pas le conduit auditif externe."
+    },
+    {
+      "id": "b11-sens-tympan-57",
+      "term": "Tympan",
+      "theme": "Les organes des sens",
+      "definition": "Membrane vibrant sous l’effet des ondes sonores et séparant l’oreille externe de l’oreille moyenne.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Le nom évoque un tambour et sa membrane vibrante dans le vocabulaire anatomique.",
+      "distinction": "Sépare l’oreille externe de l’oreille moyenne ; la fenêtre ovale est plus profonde."
+    },
+    {
+      "id": "b11-sens-utricule-saccule-58",
+      "term": "Utricule / saccule",
+      "theme": "Les organes des sens",
+      "definition": "Éléments vestibulaires participant à la détection des accélérations linéaires et de la position de la tête.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Utricule et saccule évoquent de petites poches ; ce sont deux structures vestibulaires.",
+      "distinction": "Détectent les accélérations linéaires et la gravité ; les canaux semi-circulaires détectent les rotations."
+    },
+    {
+      "id": "b11-sens-vestibule-59",
+      "term": "Vestibule",
+      "theme": "Les organes des sens",
+      "definition": "Partie de l’oreille interne qui participe à l’équilibre.",
+      "courseIds": [
+        "organes_des_sens_b11"
+      ],
+      "sourceType": "reference_pedagogique",
+      "etymologie": "Vestibule désigne un espace d’entrée ; le terme nomme une région de l’oreille interne.",
+      "distinction": "Participe à l’équilibre ; la cochlée est spécialisée dans l’audition."
     }
   ]
 }

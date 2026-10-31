@@ -8,8 +8,12 @@ manifest=json.loads((root/'docs/publication-candidates/organes_des_sens_b11_sans
 asset=manifest['candidatePdfEvidence']['boards']
 pdf=root/asset['githubPath']
 assert hashlib.sha256(pdf.read_bytes()).hexdigest()==asset['sha256'],'SHA anatomie divergent'
-assert asset['ownerAcceptance']=='pending','Acceptation humaine non justifiée'
-assert manifest['deliveryPlan']['publicationApproval'] is False
+approved=manifest['phase'] in ['publication_approved','published']
+assert asset['ownerAcceptance']==('owner_accepted' if approved else 'pending'),'Acceptation humaine non justifiée'
+assert manifest['deliveryPlan']['publicationApproval'] is approved
+if approved:
+    assert manifest['publicationApproval']['authorization']=='explicit_go_publication'
+    assert manifest['publicationApproval']['status']=='approved'
 document=fitz.open(pdf);assert len(document)==7
 minimum=float('inf')
 for number,page in enumerate(document,1):
@@ -27,4 +31,4 @@ labels=['Surface de la peau','Pore de transpiration','Tige du poil','Capillaires
         'Cellules matricielles','Tissu conjonctif','Épiderme','Derme','Hypoderme']
 native=re.sub(r'\s+',' ',document[6].get_text())
 for label in labels:assert label in native,f'Légende native manquante : {label}'
-print(f'PASS anatomie B1.1 : 7 pages, images >= 95 dpi (minimum {minimum:.1f}), 16 légendes natives ; acceptation humaine en attente.')
+print(f'PASS anatomie B1.1 : 7 pages, images >= 95 dpi (minimum {minimum:.1f}), 16 légendes natives ; accord propriétaire déclaré séparément, aucune signature clinique indépendante.')

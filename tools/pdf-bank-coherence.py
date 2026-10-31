@@ -310,6 +310,26 @@ def validate_boxed_recall(document,rows,role):
             assert len(hits)==1 and hits[0] not in used,'Recto/verso divergent : '+card['front']
             used.add(hits[0])
 
+def validate_reviewed_qcm(doc,rows):
+    raw='\n'.join(p.get_text() for p in doc)
+    ordered='\n'.join(p.get_text(sort=True) for p in doc)
+    qpart=raw.split('CORRIGÉS ARGUMENTÉS',1)[0]
+    qblocks=re.split(r'Q(\d\d)\s',qpart)
+    assert [int(n) for n in qblocks[1::2]]==[q['number'] for q in rows],'Questions absentes ou dupliquées'
+    for n,block in zip(qblocks[1::2],qblocks[2::2]):
+        q=rows[int(n)-1]
+        assert norm(q['question']) in norm(block),q['id']+': énoncé divergent'
+        for j,choice in enumerate(q['choices']):assert norm(chr(65+j)+'. '+choice) in norm(block),q['id']+': choix divergent'
+    parts=re.split(r'Q(\d\d)\s',ordered.split('CORRIGÉS ARGUMENTÉS',1)[1])
+    assert [int(n) for n in parts[1::2]]==[q['number'] for q in rows],'Corrigés absents ou dupliqués'
+    for n,block in zip(parts[1::2],parts[2::2]):
+        q=rows[int(n)-1]
+        key=re.search(r'Bonnes réponses\s*:\s*([A-E, ]+)\s*\((\d)\)',block)
+        assert key and key[1].replace(' ','')==','.join(chr(65+i) for i in q['answers']),q['id']+': clé divergente'
+        assert int(key[2])==len(q['answers'])
+        args=re.split(r'(?:^|\s)([A-E])\s*:\s*',q['explanation'])[1:]
+        assert len(args)==10 and all(norm(a) in norm(block) for a in args[1::2]),q['id']+': argument divergent'
+
 def check(course):
     for role,asset in course['publicArtifacts'].items():
         path=Path(asset['path'])
@@ -319,7 +339,21 @@ def check(course):
         with fitz.open(path) as doc:
             assert not doc.metadata.get('creator') and not doc.metadata.get('producer'),'Métadonnées du générateur exposées'
             assert len(doc)==asset['pageCount'],'Pagination différente'
+            if course.get('deliveryMode')=='reviewed_written_bundle' and role=='boards':
+                assert all(p.get_text().strip() and p.get_images() for p in doc),'Planche vide ou sans illustration'
+                assert len(doc)==course['reviewedPageCounts']['boards']
+                for p in doc:
+                    assert p.rect.width>p.rect.height,'Planche non paysage'
+                    for image in p.get_image_info():
+                        r=fitz.Rect(image['bbox'])
+                        assert min(image['width']*72/r.width,image['height']*72/r.height)>=95,'Illustration illisible'
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+                continue
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            if course.get('deliveryMode')=='reviewed_written_bundle' and role=='qcm':
+                validate_reviewed_qcm(doc,json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+                continue
             assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
             text=body(doc)
             if course.get('officialRevision',{}).get('contract')=='psychologie_sante_official_revision_v1' and role in ('qcm','flashcards'):

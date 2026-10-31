@@ -11,10 +11,12 @@ const mode=process.argv[2]||'--prepublication';
 assert.ok(['--prepublication','--require-assets'].includes(mode),'Mode inconnu');
 const manifest=JSON.parse(fs.readFileSync('docs/publication-candidates/organes_des_sens_b11_sans_vocaux.json','utf8'));
 assert.equal(manifest.courseId,'organes_des_sens_b11');
-assert.equal(manifest.phase,'prepublication_draft');
+const approved=['publication_approved','published'].includes(manifest.phase);
+assert.ok(approved||manifest.phase==='prepublication_draft');
+if(approved){assert.equal(manifest.publicationApproval?.status,'approved');assert.equal(manifest.publicationApproval?.authorization,'explicit_go_publication');assert.equal(manifest.sourcePreparation.dependencyMerged,true);}
 for(const flag of ['studentActivation','appRegistryChanges','publishedFilesInThisPr',
  'mergeAuthorized','ownerGraphicAcceptance','pedagogicalAcceptance','publicationApproval']){
- assert.equal(manifest.deliveryPlan[flag],false,flag+': verrou de prépublication requis');
+ assert.equal(manifest.deliveryPlan[flag],approved,flag+': verrou de prépublication requis');
 }
 assert.equal(manifest.deliveryPlan.vocalsIncluded,false);
 assert.equal(manifest.deliveryPlan.vocalMp3Count,0);
@@ -23,7 +25,7 @@ const statuses=[];
 for(const [role,count] of Object.entries(expected)){
  const asset=manifest.candidatePdfEvidence?.[role];
  assert.ok(asset,role+': manque dans le manifeste');
- assert.equal(asset.ownerAcceptance,'pending',role+': acceptation humaine non autorisée');
+ assert.equal(asset.ownerAcceptance,approved?'owner_accepted':'pending',role+': acceptation humaine non autorisée');
  assert.equal(asset.pages,count,role+': nombre de pages attendu');
  assert.match(asset.sha256||'',/^[a-f0-9]{64}$/,role+': SHA-256 invalide');
  const rel=asset.githubPath;
@@ -42,6 +44,6 @@ for(const [role,count] of Object.entries(expected)){
 }
 const present=statuses.filter(s=>s.exists).length;
 if(mode==='--prepublication'&&present<statuses.length) console.log('B1.1 : transfert partiel autorisé UNIQUEMENT en brouillon, activation interdite');
-if(mode==='--require-assets')assert.equal(present,statuses.length,'PDF binaires non présents dans GitHub');
+if(mode==='--require-assets'||approved)assert.equal(present,statuses.length,'PDF binaires non présents dans GitHub');
 console.log('PASS B1.1 PDF asset gate:',present+'/'+statuses.length,
   'fichiers exacts ; mode',mode,'; aucune publication automatique.');

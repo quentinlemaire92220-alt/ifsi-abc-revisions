@@ -4,24 +4,24 @@
   "ue": "B1.1 S1",
   "title": "Les organes des sens",
   "lectureDate": "2026-10-29",
-  "phase": "prepublication_draft",
+  "phase": "publication_approved",
   "scope": "written_sheet_qcm_flashcards_glossary_anatomical_boards_without_audio",
   "sourcePreparation": {
     "prNumber": 275,
     "headBranch": "prep/b11-organes-sens-20261030",
-    "headSha": "332f0c0fc7c3c69dfaa0a0be5e3a8945ac553640",
+    "headSha": "c8217219e2c1491035bfa224e1dffc8dc86c6e49",
     "questionsPath": "data/course-preparations/organes_des_sens_b11.json",
     "lexiconPath": "data/course-preparations/organes_des_sens_b11_lexique.json",
-    "dependencyMerged": false
+    "dependencyMerged": true
   },
   "deliveryPlan": {
-    "studentActivation": false,
-    "appRegistryChanges": false,
-    "publishedFilesInThisPr": false,
-    "mergeAuthorized": false,
-    "ownerGraphicAcceptance": false,
-    "pedagogicalAcceptance": false,
-    "publicationApproval": false,
+    "studentActivation": true,
+    "appRegistryChanges": true,
+    "publishedFilesInThisPr": true,
+    "mergeAuthorized": true,
+    "ownerGraphicAcceptance": true,
+    "pedagogicalAcceptance": true,
+    "publicationApproval": true,
     "vocalsIncluded": false,
     "vocalMp3Count": 0,
     "existingScriptsNotPublished": 3,
@@ -38,31 +38,31 @@
     "sheet": {
       "localReviewName": "UE_B1_1_Organes_des_sens_Fiche_Revision_Presentation_corrigee.pdf",
       "pages": 17,
-      "sha256": "d1e18e9d272d5cfaa4314c606744f1d4ac9d080083386275db03f0f087329c8d",
-      "technicalCheck": "pass_local_only",
-      "ownerAcceptance": "pending",
+      "sha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
-      "bytes": 110387,
+      "bytes": 674026,
       "gitBinaryUploaded": true
     },
     "qcm": {
       "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_Corriges_Presentation_corrigee.pdf",
       "pages": 24,
-      "sha256": "58dfcd2d90c6c9e41a0a544a69a7059c8dc0e8f93c79abb04297c3ddd906042e",
-      "technicalCheck": "pass_local_only",
-      "ownerAcceptance": "pending",
+      "sha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
-      "bytes": 108383,
+      "bytes": 144495,
       "gitBinaryUploaded": true
     },
     "boards": {
       "localReviewName": "UE_B1_1_Organes_des_sens_Planches_anatomiques_V8_CORRIGEES.pdf",
       "pages": 7,
-      "sha256": "772f4b173df5e864f8d16bc1a0d63bbdc99da59d3857095efa46580e0d485d29",
-      "technicalCheck": "pass_7_pages_min_96_8_dpi_16_selectable_labels_anatomical_review_pending",
-      "ownerAcceptance": "pending",
+      "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
       "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
-      "bytes": 3075632,
+      "bytes": 2816313,
       "gitBinaryUploaded": true
     }
   },
@@ -78,11 +78,13 @@
     "explicit_go_to_merge_and_publish",
     "run_binary_asset_sha_gate_on_exact_github_commit_before_activation"
   ],
-  "blockers": [
-    "preparation_pr_not_merged",
-    "medical_review_pending",
-    "graphic_owner_review_pending",
-    "no_explicit_publication_go"
-  ],
-  "provenance": "Only generated candidate names and hashes. No private support/transcription/Drive identifiers."
+  "blockers": [],
+  "provenance": "Only generated candidate names and hashes. No private support/transcription/Drive identifiers.",
+  "publicationApproval": {
+    "status": "approved",
+    "authorization": "explicit_go_publication",
+    "scope": "course_package",
+    "approvedAt": "2026-10-31T16:13:54.895379+00:00",
+    "bundleSha256": "e25937b6f5581fed2e2d3f084ef6f5f7c1b34a35fff6b49c89527517f2d58dd5"
+  }
 }

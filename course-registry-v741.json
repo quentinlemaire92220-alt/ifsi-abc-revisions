@@ -1,5 +1,5 @@
 {
-  "version": "8.30.155",
+  "version": "8.30.156",
   "courses": [
     {
       "id": "biomolecules",
@@ -1401,6 +1401,32 @@
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/entretien-infirmier-20261028/UE_D1_1_S1_Entretien_Infirmier_Flashcards_50_V5.pdf"
         }
       ]
+    },
+    {
+      "id": "organes_des_sens_b11",
+      "label": "Les organes des sens",
+      "aliases": [
+        "Organes des sens",
+        "Les organes des sens",
+        "B1.1 Organes des sens"
+      ],
+      "domain": "B",
+      "ue": "B1",
+      "officialSupport": true,
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "audioStatus": "awaiting_mp3",
+      "additionalDocuments": [
+        {
+          "label": "Planches anatomiques — Organes des sens (7 planches)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
+          "category": "anatomy",
+          "atlasId": "organes_des_sens_b11"
+        }
+      ],
+      "flashcardTarget": 50,
+      "authoredFlashcards": true
     }
   ],
   "auditBaseline": {

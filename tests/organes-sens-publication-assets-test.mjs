@@ -9,6 +9,9 @@ import {fileURLToPath} from 'node:url';
 const script=fileURLToPath(new URL('./organes-sens-publication-assets.mjs',import.meta.url));
 const manifestPath='docs/publication-candidates/organes_des_sens_b11_sans_vocaux.json';
 const original=JSON.parse(fs.readFileSync(manifestPath,'utf8'));
+original.phase='prepublication_draft';
+for(const flag of ['studentActivation','appRegistryChanges','publishedFilesInThisPr','mergeAuthorized','ownerGraphicAcceptance','pedagogicalAcceptance','publicationApproval'])original.deliveryPlan[flag]=false;
+for(const a of Object.values(original.candidatePdfEvidence))a.ownerAcceptance='pending';
 // Omettre volontairement les planches dans la fixture, même après leur futur import.
 original.candidatePdfEvidence.boards.gitBinaryUploaded=false;
 const parent=path.resolve(os.tmpdir());
