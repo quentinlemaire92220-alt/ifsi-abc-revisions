@@ -18,7 +18,10 @@
         "scientificReview": "pending",
         "oralRecordingApproxMinutes": 113,
         "oralSpeakerTurnsIndexed": 676,
-        "oralReview": "partial_priority_scan_not_full_semantic_validation"
+        "oralReview": "full_transcript_semantic_review_complete_audio_not_compared",
+        "documentaryReview": "complete_private_candidate",
+        "scientificReviewBasis": "assistant_documentary_review_complete_owner_acceptance_pending",
+        "audioCompared": false
       },
       "artifacts": {
         "questions": 50,
@@ -30,29 +33,29 @@
         "revisionWrittenPdfPages": 17,
         "anatomicalBoardsPdfPages": 7,
         "vocalScripts": 3,
-        "anatomicalLegends": "v7_candidate_pending_medical_owner_review",
-        "questionAnswerReview": "structure_mirror_pass_scientific_review_pending",
-        "templateConformance": "technical_pass_sheet_qcm_owner_acceptance_pending",
+        "anatomicalLegends": "assistant_documentary_review_complete_owner_acceptance_pending",
+        "questionAnswerReview": "all_50_reviewed_250_choices_and_arguments",
+        "templateConformance": "local_graphic_review_pending_owner_acceptance",
         "mp3Audio": 0,
         "revisionWrittenHistoricalInventoryPages": 14,
-        "revisionWrittenOriginalFileLocated": false,
-        "revisionWrittenStatus": "reconstructed_local_candidate_v2_pending_owner_review",
+        "revisionWrittenOriginalFileLocated": true,
+        "revisionWrittenStatus": "consolidated_17_pages_heritage_restored_owner_acceptance_pending",
         "revisionWrittenTemplateTechnical": "pass_17_pages_no_owner_acceptance",
         "privateCandidateArtifacts": {
           "sheet": {
             "pages": 17,
-            "sha256": "f16adf8cbb1a9415446f38eadb849da137e9119ec1504912347b25c0f275563d",
-            "status": "technical_pass_owner_review_pending"
+            "sha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+            "status": "assistant_review_complete_owner_acceptance_pending"
           },
           "qcm": {
             "pages": 24,
-            "sha256": "401e59115979cc98fa30c3b1403da4faae8a02efb6726bc7640688a72efca7a4",
-            "status": "technical_pass_owner_review_pending"
+            "sha256": "520e3dda2392029f4dc1f41075d777a8c87df7e455a7a504185d1296ed88d2a9",
+            "status": "assistant_review_complete_owner_acceptance_pending"
           },
           "boards": {
             "pages": 7,
-            "sha256": "23946b279755a25f468e1e6fc7843888a453985e60940587850daefff9e9a928",
-            "status": "anatomy_review_pending"
+            "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+            "status": "assistant_review_complete_owner_acceptance_pending"
           }
         }
       },
@@ -61,11 +64,10 @@
         "lexicon": "data/course-preparations/organes_des_sens_b11_lexique.json"
       },
       "publicationBlocks": [
-        "review_full_sources_and_question_bank",
-        "verify_anatomical_labels_and_rebuild_separate_boards",
-        "compare_final_pdfs_against_communication_v53",
-        "owner_acceptance_for_final_artifacts",
-        "publication_preflights_and_complete_tnr"
+        "owner_acceptance_for_exact_final_artifacts",
+        "figure_publication_rights_not_attested",
+        "explicit_go_to_merge_and_publish",
+        "remote_exact_byte_verification_after_authorized_transfer"
       ]
     }
   ]
