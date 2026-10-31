@@ -4,6 +4,7 @@ import fs from 'node:fs';import assert from 'node:assert/strict';import {execFil
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
+import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),base=process.env.IFSI_BASE_SHA||'HEAD^';
 const old=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
@@ -54,7 +55,25 @@ assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.lengt
  'Le lexique ne peut être enrichi que pour les cours explicitement approuvés');
 assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
  'IDs lexicaux uniques');
-for(const file of ['sheets-1.json','sheets-2.json','infographics.json'])assert.deepEqual(read(file),old(file));
+const approvedNewSheets=new Set(publicationApprovals.filter(c=>
+ c.deliveryMode==='reviewed_written_bundle'&&c.validated===true&&
+ c.publicationApproval?.status==='approved'&&
+ c.publicationApproval?.authorization==='explicit_go_publication'&&
+ c.publicationApproval?.scope==='course_package'
+).map(c=>c.sheetResourceId));
+for(const file of ['sheets-1.json','sheets-2.json','infographics.json']){
+ const previous=old(file),current=read(file);
+ const additions=current.filter(s=>approvedNewSheets.has(s.resourceId));
+ for(const s of additions){
+  assert.ok(!previous.some(p=>p.resourceId===s.resourceId),'Une fiche historique ne peut être exclue du contrôle');
+  const d=publicationApprovals.find(c=>c.sheetResourceId===s.resourceId);
+  assert.equal(s.courseId,d.courseId);
+  assert.equal(s.pageCount,d.publicArtifacts.sheet.pageCount);
+  verifyPublicArtifact(d,s.url);
+  assert.ok(new URL(s.url).pathname.endsWith('/'+d.publicArtifacts.sheet.path),'Fiche approuvée et URL divergentes');
+ }
+ assert.deepEqual(current.filter(s=>!approvedNewSheets.has(s.resourceId)),previous);
+}
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
 // Révision intermédiaire ciblée : le TD reste PROVISOIRE lorsque le support
 // officiel est reçu mais que l'enregistrement oral n'a pas été contrôlé.

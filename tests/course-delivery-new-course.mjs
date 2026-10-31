@@ -10,6 +10,7 @@ import {validateWrittenDelivery} from './written-sheet-contract.mjs';
 import {validateAnatomyRouting} from './anatomy-routing-contract.mjs';
 import {validateAudioOnlyDelivery} from './audio-only-delivery-contract.mjs';
 import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
+import {validateReviewedWrittenBundle} from './reviewed-written-bundle-contract.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const git = args => execFileSync('git', args, {
@@ -99,6 +100,11 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
+  if(delivery.deliveryMode==='reviewed_written_bundle'){
+    validateReviewedWrittenBundle(course,delivery,current.sheets,{vocabulary:read('vocabulaire-v1.json').entries,vocals:current.vocals,infographics:current.infographics});
+    validateAnatomyRouting(course,fs.readFileSync('v82-nav-anatomy.js','utf8'),current.infographics);
+    continue;
+  }
   if (delivery.deliveryMode==='sheet_only_first_release') {
     validateSheetOnlyFirstRelease(course,delivery,current.sheets,{vocals:current.vocals,infographics:current.infographics});
     continue;

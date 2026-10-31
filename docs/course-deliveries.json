@@ -5030,6 +5030,284 @@
         "mergeDeploymentCondition": "all_tnr_green_and_live_asset_sha_verification",
         "privateEvidenceSha256": "8c75189b10c14de87260a8cbe744ad121575e49e6919845b857128377cb95dfe"
       }
+    },
+    {
+      "courseId": "organes_des_sens_b11",
+      "deliveryMode": "reviewed_written_bundle",
+      "publicationScope": "course_package",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "awaiting_mp3",
+      "requestedVocals": false,
+      "scriptsPreparedCount": 3,
+      "vocals": [],
+      "blockers": [
+        {
+          "resource": "vocals",
+          "reason": "awaiting_user_mp3"
+        }
+      ],
+      "sheetResourceId": "organes_des_sens_b11_sheet",
+      "sheetResourceIds": [
+        "organes_des_sens_b11_sheet"
+      ],
+      "infographicResourceIds": [],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "qcmBank": "data/course-banks/organes_des_sens_b11.json",
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 59,
+      "publicArtifacts": {
+        "sheet": {
+          "artifactId": "organes_des_sens_b11_sheet",
+          "path": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
+          "sha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+          "pageCount": 17
+        },
+        "qcm": {
+          "artifactId": "organes_des_sens_b11_qcm",
+          "path": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
+          "sha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+          "pageCount": 24
+        },
+        "boards": {
+          "artifactId": "organes_des_sens_b11_boards",
+          "path": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
+          "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+          "pageCount": 7
+        }
+      },
+      "publicAssetSha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+      "artifactSha256s": {
+        "organes_des_sens_b11_sheet": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+        "organes_des_sens_b11_qcm": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+        "organes_des_sens_b11_boards": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e"
+      },
+      "ownerAcceptedArtifactSha256s": {
+        "sheet": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+        "qcm": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+        "boards": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e"
+      },
+      "reviewedPageCounts": {
+        "sheet": 17,
+        "qcm": 24,
+        "boards": 7
+      },
+      "sourceAudit": {
+        "officialChecked": true,
+        "officialSupportPreservedPrivately": true,
+        "officialSupportMissing": false,
+        "oralStatus": "complete",
+        "oralReviewBasis": "full_transcript_documentary_review",
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 6,
+        "externalAuthorization": "explicit_prior_approval"
+      },
+      "writtenCoverage": {
+        "expectedEssential": 56,
+        "coveredEssential": 56,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved"
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+        "pageSize": "A4",
+        "pageCount": 17,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "lexicon": {
+        "termCount": 59,
+        "textSelectable": true,
+        "checked": true
+      },
+      "anatomicalReview": {
+        "status": "owner_accepted_documentary_review",
+        "pdfSha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+        "independentClinicalSignoff": false,
+        "minimumEffectiveDpi": 96.82151589242054,
+        "sourceProvenance": "official_course_support",
+        "figureRightsIndependentlyAttested": false
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+            "pageCount": 17,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "reviewedAt": "2026-10-31T16:13:54.895379+00:00",
+            "status": "owner_accepted",
+            "reviewerRole": "owner",
+            "decision": "explicit_graphic_acceptance",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "94ad61a362b56fe96096491b5c13ab5324dbfed878ca41aeddee6f20d01d58ad"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+            "pageCount": 24,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "reviewedAt": "2026-10-31T16:13:54.895379+00:00",
+            "status": "owner_accepted",
+            "reviewerRole": "owner",
+            "decision": "explicit_graphic_acceptance",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "8b4302108633c22e4744e822aceb2980596db804a729c68907d3035838b614ad"
+          }
+        }
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "reviewedAt": "2026-10-31T16:13:54.895379+00:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "pagesChecked": 17,
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "organes_des_sens_b11_sheet": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c"
+        }
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-10-31T16:13:54.895379+00:00",
+        "bundleSha256": "e25937b6f5581fed2e2d3f084ef6f5f7c1b34a35fff6b49c89527517f2d58dd5"
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+        "privateEvidenceSha256": "b2d49e3d3339381f78a33fbfad61e67dd40d6c6c57aece0600a042107aec35f6",
+        "reviewedAt": "2026-10-31T16:13:54+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "technicalNormalization": {
+        "qcm": {
+          "sourceApprovedSha256": "520e3dda2392029f4dc1f41075d777a8c87df7e455a7a504185d1296ed88d2a9",
+          "publishedSha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+          "operation": "remove_generator_metadata",
+          "allRenderedPagesAndNativeTextIdentical": true
+        }
+      },
+      "driveCopies": {
+        "sheet": {
+          "id": "1LQlPcUaQt_elq0TVJhtHKfsllytwQG61",
+          "url": "https://drive.google.com/file/d/1LQlPcUaQt_elq0TVJhtHKfsllytwQG61/view?usp=drivesdk",
+          "sha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+          "authenticatedDownload": "MATCH"
+        },
+        "qcm": {
+          "id": "1yJqQSf7RIjORnBz99DuZN0dY_AGJ0a1M",
+          "url": "https://drive.google.com/file/d/1yJqQSf7RIjORnBz99DuZN0dY_AGJ0a1M/view?usp=drivesdk",
+          "sha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+          "authenticatedDownload": "MATCH"
+        },
+        "boards": {
+          "id": "1TcYpcRDivAIK3vf3BzDBvztQ9HS9MMfA",
+          "url": "https://drive.google.com/file/d/1TcYpcRDivAIK3vf3BzDBvztQ9HS9MMfA/view?usp=drivesdk",
+          "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+          "authenticatedDownload": "MATCH"
+        }
+      }
     }
   ],
   "supplementalResourceApprovals": [

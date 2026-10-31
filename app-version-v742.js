@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.155';
+const VERSION='8.30.156';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : Psychologie de la santé : fiche officielle, 62 QCM et 71 cartes.`;
+const READY=`Application prête • V${VERSION} : Les organes des sens : fiche, 50 QCM et 7 planches anatomiques.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}

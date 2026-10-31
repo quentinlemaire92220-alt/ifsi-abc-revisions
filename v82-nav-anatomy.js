@@ -6,6 +6,7 @@ const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d)
 const ST=()=>{try{return typeof st==='function'?st():{}}catch{return {}}};
 const SH=a=>{a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const FOUNDATION=[
+  {id:'organes_des_sens_b11',icon:'👁️',subtitle:'Vision, audition, équilibre, odorat, goût et toucher'},
   {id:'niveaux_organisation',icon:'🧍',subtitle:'Organisation du corps humain'},
   {id:'cellules_tissus',icon:'🔬',subtitle:'Cellules, tissus et organisation'},
   {id:'homeostasie',icon:'⚖️',subtitle:'Équilibres et régulations'}
@@ -133,6 +134,7 @@ function boardTitle(x){
   return x.displayTitle||String(x.title||'Planche').replace(/\.pdf$/i,'').replace(/^UE_S1_[A-Z0-9]+_/i,'').replace(/_Infographie_\d+_/i,' — ').replace(/_/g,' ').replace(/\s+/g,' ').trim()
 }
 function boardsFor(def){
+  if(def.id==='organes_des_sens_b11')return [{id:'organes_des_sens_b11_pack',title:'Organes des sens — 7 planches anatomiques',url:'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf'}];
   if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
   if(def.id==='systeme_urinaire')return URINARY_BOARDS.map(x=>({...x,interactive:true}));
   // V8.19 : séparation stricte. Une infographie de cours ne devient jamais une planche anatomique.

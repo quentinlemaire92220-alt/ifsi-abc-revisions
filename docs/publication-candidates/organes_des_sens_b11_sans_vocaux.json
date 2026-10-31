@@ -1,0 +1,90 @@
+{
+  "schema": "ifsi_publication_candidate_v1",
+  "courseId": "organes_des_sens_b11",
+  "ue": "B1.1 S1",
+  "title": "Les organes des sens",
+  "lectureDate": "2026-10-29",
+  "phase": "publication_approved",
+  "scope": "written_sheet_qcm_flashcards_glossary_anatomical_boards_without_audio",
+  "sourcePreparation": {
+    "prNumber": 275,
+    "headBranch": "prep/b11-organes-sens-20261030",
+    "headSha": "c8217219e2c1491035bfa224e1dffc8dc86c6e49",
+    "questionsPath": "data/course-preparations/organes_des_sens_b11.json",
+    "lexiconPath": "data/course-preparations/organes_des_sens_b11_lexique.json",
+    "dependencyMerged": true
+  },
+  "deliveryPlan": {
+    "studentActivation": true,
+    "appRegistryChanges": true,
+    "publishedFilesInThisPr": true,
+    "mergeAuthorized": true,
+    "ownerGraphicAcceptance": true,
+    "pedagogicalAcceptance": true,
+    "publicationApproval": true,
+    "vocalsIncluded": false,
+    "vocalMp3Count": 0,
+    "existingScriptsNotPublished": 3,
+    "counts": {
+      "qcm": 50,
+      "flashcards": 50,
+      "glossaryTerms": 59,
+      "anatomicalBoards": 7
+    },
+    "assetTransferPackage": "PR276_REVUE_COMPLETE_3_PDF.zip",
+    "binaryTransferStatus": "complete_3_of_3_in_github_not_published"
+  },
+  "candidatePdfEvidence": {
+    "sheet": {
+      "localReviewName": "UE_B1_1_Organes_des_sens_Fiche_Revision_Presentation_corrigee.pdf",
+      "pages": 17,
+      "sha256": "45a0ecf06da37a9110bf866c7bca42ca5c8f8994d8c797d7110fa54c8be25f4c",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Fiche_Revision.pdf",
+      "bytes": 674026,
+      "gitBinaryUploaded": true
+    },
+    "qcm": {
+      "localReviewName": "UE_B1_1_Organes_des_sens_QCM_50_Corriges_Presentation_corrigee.pdf",
+      "pages": 24,
+      "sha256": "2e577a86e5568a61c03970515043940da33769e79f8389e6b3368bae7f75e194",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_QCM_50_Corriges.pdf",
+      "bytes": 144495,
+      "gitBinaryUploaded": true
+    },
+    "boards": {
+      "localReviewName": "UE_B1_1_Organes_des_sens_Planches_anatomiques_V8_CORRIGEES.pdf",
+      "pages": 7,
+      "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
+      "technicalCheck": "pass_local_and_exact_bytes_reviewed",
+      "ownerAcceptance": "owner_accepted",
+      "githubPath": "assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf",
+      "bytes": 2816313,
+      "gitBinaryUploaded": true
+    }
+  },
+  "prerequisiteChecks": [
+    "preparation_pr_275_merged_or_rebased_into_publication_branch",
+    "full_scientific_review_of_56_slides_and_113_minute_lecture",
+    "medical_review_all_qcm_flashcards_glossary_and_anatomical_boards",
+    "human_graphic_comparison_all_pages_100_and_200_percent_with_exact_sha",
+    "explicit_owner_acceptance_for_exact_bundle",
+    "convert_single_canonical_bank_without_duplicate_source_of_truth",
+    "prepare_public_catalog_and_assets_only_after_approval",
+    "full_preflights_tnr_and_app_link_verification_before_merge",
+    "explicit_go_to_merge_and_publish",
+    "run_binary_asset_sha_gate_on_exact_github_commit_before_activation"
+  ],
+  "blockers": [],
+  "provenance": "Only generated candidate names and hashes. No private support/transcription/Drive identifiers.",
+  "publicationApproval": {
+    "status": "approved",
+    "authorization": "explicit_go_publication",
+    "scope": "course_package",
+    "approvedAt": "2026-10-31T16:13:54.895379+00:00",
+    "bundleSha256": "e25937b6f5581fed2e2d3f084ef6f5f7c1b34a35fff6b49c89527517f2d58dd5"
+  }
+}
