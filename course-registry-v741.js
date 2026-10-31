@@ -66,6 +66,13 @@ function rebuildResourceIndex(){
   for(const v of (window.IFSI_V73?.getVocals?.()||[]))put(v.courseId,'vocals',v);
   for(const x of (Array.isArray(S)?S:[]))put(x.courseId,'sheets',x);
   for(const x of (Array.isArray(I)?I:[]))put(x.courseId,'infographics',x);
+  // La banque officielle du cours reste distincte des exercices de vocabulaire.
+  const psychology=courseMap.get('psychologie_sante'),r=resourceIndex.get('psychologie_sante');
+  if(r&&psychology?.officialSupport===true&&psychology.qcmPdfQuestionCount===62){
+    r.questions=r.questions.filter(q=>String(q.id||'').startsWith('psychologie_sante_p01_'));
+    if(r.sheets.some(s=>s.resourceId==='psychologie_sante_fiche_20261029'&&s.primaryRevision===true))
+      r.sheets=r.sheets.filter(s=>s.sourceStatus!=='archived');
+  }
 }
 function resourcesForCourse(courseId){
   const ids=[courseId,...(registry?.courses||[]).filter(c=>c.parentId===courseId).map(c=>c.id)];

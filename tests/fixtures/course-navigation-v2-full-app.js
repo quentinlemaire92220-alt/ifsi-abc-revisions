@@ -153,7 +153,14 @@
      });
      if(ranks[0]!==0||ranks.some(function(rank,i){return i&&rank<ranks[i-1]}))throw Error('Ordre incorrect pour '+course.id+': '+ranks);
      var support=detail.querySelector('.v74-original-support');
-     if(!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'})){
+     var reviewedPrivateOfficial=course.id==='psychologie_sante'&&course.officialSupport===true&&course.nativeSupportAvailable===true&&course.qcmPdfQuestionCount===62;
+     if(reviewedPrivateOfficial){
+       official++;
+       if(support.dataset.reviewedSource!=='true'||!support.textContent.includes('Supports officiels rapprochés'))throw Error('Rapprochement officiel privé absent pour '+course.id);
+       if(support.textContent.includes('Support officiel en attente'))throw Error('Ancienne attente officielle conservée pour '+course.id);
+       if(support.querySelector('a[href]'))throw Error('Faux accès aux originaux privés pour '+course.id);
+       if(!support.querySelector('.mku-toggle:not(:disabled)'))throw Error('Notice des sources inaccessible pour '+course.id);
+     }else if(!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'})){
        missing++;
        if(!support.textContent.includes('Support officiel en attente'))throw Error('Attente officielle absente pour '+course.id);
        if(support.querySelector('.v74-official-link')?.textContent.includes('Ouvrir le support officiel'))throw Error('Faux support officiel pour '+course.id);

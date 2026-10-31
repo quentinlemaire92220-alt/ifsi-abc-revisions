@@ -243,7 +243,9 @@ jobs:
 
       - name: Contrôler les packs de cours validés et leurs ressources
         if: ${{ !cancelled() }}
-        run: node tests/course-delivery.mjs
+        run: |
+          node tests/course-delivery.mjs
+          node tests/psychologie-sante-official-revision-test.mjs
 
       - name: Tester le refus de publication sans validation du package
         if: ${{ !cancelled() }}
