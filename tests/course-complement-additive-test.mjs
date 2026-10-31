@@ -55,7 +55,9 @@ assert.ok(addedVocabulary.every(e=>Array.isArray(e.courseIds)&&e.courseIds.lengt
  'Le lexique ne peut être enrichi que pour les cours explicitement approuvés');
 assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entries.length,
  'IDs lexicaux uniques');
+const historicalSheetResourceIds=new Set([1,2,3].flatMap(n=>old(`sheets-${n}.json`)).map(s=>s.resourceId));
 const approvedNewSheets=new Set(publicationApprovals.filter(c=>
+ !historicalSheetResourceIds.has(c.sheetResourceId)&&
  c.deliveryMode==='reviewed_written_bundle'&&c.validated===true&&
  c.publicationApproval?.status==='approved'&&
  c.publicationApproval?.authorization==='explicit_go_publication'&&
