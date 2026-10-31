@@ -73,6 +73,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/posture-td2-publication-gate.mjs
 
+      - name: Vérifier le registre et les banques isolées des cours en préparation
+        if: ${{ !cancelled() }}
+        run: node tests/course-preparation-stage.mjs
+
       - name: Vérifier l'isolement, les réponses et la propreté des cours en préparation
         if: ${{ !cancelled() }}
         run: node tests/posture-td2-bank-integrity.mjs

@@ -48,9 +48,19 @@ for(const prep of pending.courses){
    assert.equal(q.choices?.length,5);
    assert.ok(q.answers?.length>=1&&q.answers.length<=3);
    assert.equal(new Set(q.answers).size,q.answers.length);
+   assert.ok(q.answers.every(a=>Number.isInteger(a)&&a>=0&&a<q.choices.length),q.id+': index de réponse hors limites');
+   assert.ok(!/\b(?:cours|QCM|diapo|support|enseignant)\b/i.test(q.question),q.id+': énoncé dépendant du contexte de cours');
+   assert.ok(!/\b(?:cours|QCM|diapo|diapositive|support|enseignant|enseignante|Mme\s+Petit)\b/i.test(q.explanation),q.id+': correction dépendante du contexte de cours');
    assert.equal(q.announcedCorrectCount,q.answers.length);
    assert.ok(['easy','medium','hard'].includes(q.difficulty));
    assert.ok(q.question&&q.explanation?.length>25&&q.flashcards?.length);
+  }
+  const allCards=bank.flatMap(q=>q.flashcards.map(card=>({q,card})));
+  assert.equal(new Set(allCards.map(x=>x.card.front.trim().toLowerCase())).size,allCards.length,id+': doublon de recto flashcard');
+  for(const {q,card} of allCards){
+   assert.equal(card.theme,q.theme,q.id+': theme de flashcard discordant');
+   assert.ok(card.front?.trim()?.length>10,q.id+': recto flashcard absent');
+   assert.ok(Array.isArray(card.answers)&&card.answers.every(a=>a?.trim()),q.id+': verso flashcard manquant');
   }
   assert.equal(bank.reduce((a,q)=>a+q.flashcards.length,0),counts.flashcards);
  }else{
@@ -61,6 +71,8 @@ for(const prep of pending.courses){
   const terms=read(paths.lexicon);
   assert.equal(terms.length,counts.glossaryTerms);
   assert.ok(terms.every(t=>t.courseIds?.length===1&&t.courseIds[0]===id));
+  assert.equal(new Set(terms.map(t=>t.id)).size,terms.length,id+': doublon identifiant lexique');
+  assert.ok(terms.every(t=>t.term?.trim()&&t.definition?.trim()),id+': définition ou terme vide');
  }
  const publicMeta=JSON.stringify(prep);
  assert.ok(!/https?:\/\/drive\.google\.com|\b(?:transcriptDriveId|recording_url|file_id)\b/i.test(publicMeta),
