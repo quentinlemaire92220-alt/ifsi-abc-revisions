@@ -1,3 +1,4 @@
+import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 // Sécurisation P0 : teste la DIFF RÉELLE vs main, non un jeu de données fictif.
 // Aucun nom/ID de source de travail n'est ajouté à ce fichier public.
@@ -370,6 +371,12 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
   else if(course.id==='theorie_gestion_symptomes_td' && previousDelivery)preserveApprovedTD3OfficialSupport(oldCourse,course,previousDelivery,nextDelivery);
   else if(course.id==='theorie_gestion_symptomes_td' && nextDelivery?.pedagogicalNonRegression?.contract==='ifsi_pedagogical_non_regression_v149')
     preserveApprovedProvisionalWrittenRevision(oldCourse,course,previousDelivery,nextDelivery);
+   else if(previousDelivery && isPsychologieOfficialRevision(nextDelivery)){
+    validatePsychologieOfficialRevision(nextDelivery);
+    const historical=disk(nextDelivery.officialRevision.historicalDeliveryPath);
+    assert.deepEqual(historical.delivery,previousDelivery,'Livraison historique de psychologie altérée');
+    assert.deepEqual(historical.course,oldCourse,'Identité historique de psychologie altérée');
+   }
    else if(previousDelivery && course.id==='droits_patients')preserveApprovedDroitsConsolidation(oldCourse,course,previousDelivery,nextDelivery);
    else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);

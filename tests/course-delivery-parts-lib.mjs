@@ -3,6 +3,7 @@
 import assert from 'node:assert/strict';
 import {validateVisualAudit} from './pdf-visual-audit-contract.mjs';
 import {validateDualSheetPart} from './dual-sheet-contract.mjs';
+import {validateWrittenPart} from './written-sheet-contract.mjs';
 import {validateHybridPart} from './hybrid-sheet-contract.mjs';
 import {validateDroitsPatientsConsolidation} from './droits-patients-consolidation-contract.mjs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
@@ -155,7 +156,8 @@ export function validatePartChanges(before, after, previousManifest, currentMani
       }
       if ((part.sheetResourceIds||[]).length) {
         // Nouveau format unique seulement si hybrid_v1 explicitement déclaré ; anciens formats préservés.
-        if(part.packFormat==='hybrid_v1')validateHybridPart(courseId, part, after.sheets);
+        if(part.packFormat==='written_v1')validateWrittenPart(courseId, part, after.sheets);
+        else if(part.packFormat==='hybrid_v1')validateHybridPart(courseId, part, after.sheets);
         else if(part.packFormat==='consolidated_revision_v1')
          validateDroitsPatientsConsolidation(courseId,part,delivery,after.sheets);
         else validateDualSheetPart(courseId, part, after.sheets);

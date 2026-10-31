@@ -6,6 +6,9 @@ on:
       - 'tests/psychologie-sante-candidate.mjs'
       - 'tests/psychologie-sante-live-contract.mjs'
       - '.github/workflows/psychologie-sante-candidate.yml'
+      - 'tests/psychologie-sante-official-revision-*.mjs'
+      - 'data/course-banks/psychologie_sante.json'
+      - 'assets/psychologie-sante-20261029/**'
   workflow_dispatch:
 jobs:
   check-psychologie:
