@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.156';
+const VERSION='8.30.157';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Les organes des sens : fiche, 50 QCM et 7 planches anatomiques.`;

@@ -6,12 +6,12 @@ const R=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d)
 const ST=()=>{try{return typeof st==='function'?st():{}}catch{return {}}};
 const SH=a=>{a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const FOUNDATION=[
-  {id:'organes_des_sens_b11',icon:'👁️',subtitle:'Vision, audition, équilibre, odorat, goût et toucher'},
   {id:'niveaux_organisation',icon:'🧍',subtitle:'Organisation du corps humain'},
   {id:'cellules_tissus',icon:'🔬',subtitle:'Cellules, tissus et organisation'},
   {id:'homeostasie',icon:'⚖️',subtitle:'Équilibres et régulations'}
 ];
 const SYSTEMS=[
+  {id:'organes_des_sens_b11',icon:'👁️',subtitle:'Vision, audition, équilibre, odorat, goût et toucher'},
   {id:'systeme_respiratoire',icon:'🫁',subtitle:'Respiration et échanges gazeux'},
   {id:'systeme_cardiovasculaire',icon:'❤️',subtitle:'Cœur, circulation, vaisseaux et pression artérielle'},
   {id:'systeme_urinaire',icon:'💧',subtitle:'Fonction rénale et appareil urinaire'},
