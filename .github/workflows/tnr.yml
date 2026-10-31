@@ -546,6 +546,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/resource-sync-v821.mjs
 
+      - name: Verrouiller la revision officielle C1.1 sans activer de contenu non valide
+        if: ${{ !cancelled() }}
+        run: node tests/c11-official-revision-gate.mjs
+
       - name: Vérifier les 8 fiches de mathématiques infographiques
         if: ${{ !cancelled() }}
         run: node tests/math-infographics-v8359.mjs
