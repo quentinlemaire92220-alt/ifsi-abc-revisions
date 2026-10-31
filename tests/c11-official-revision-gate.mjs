@@ -17,6 +17,24 @@ assert.ok(!other.some(x => x.id === c.id), 'Fusion des cours C1 détectée');
 assert.ok(gate.gaps.length >= 5);
 assert.ok(gate.gaps.every(x => x.area && x.issue && ['blocking','review'].includes(x.priority)));
 if (!gate.studentReleaseApproved) {
+ const bank = json('qextra-59.txt').filter(x => x.courseId === c.id);
+ assert.equal(bank.length, gate.existingPublishedBaseline.questions,
+ '56 QCM canoniques de Santé mondiale absents');
+ assert.equal(new Set(bank.map(q => q.id)).size, bank.length,
+ 'Doublons dans les QCM historiques');
+ assert.ok(bank.every(q => q.choices?.length === 5 &&
+  q.answers?.length >= 1 && q.answers.length <= 3 &&
+  q.announcedCorrectCount === q.answers.length),
+ 'Une question historique a perdu ses choix ou son nombre de bonnes réponses');
+ assert.equal(bank.reduce((n,q) => n + (q.flashcards?.length || 0), 0),
+  gate.existingPublishedBaseline.flashcards,
+ '56 flashcards réelles de Santé mondiale non préservées');
+ const sheets = [1,2,3].flatMap(n => json('sheets-'+n+'.json'));
+ const existing = sheets.filter(x => x.courseId === c.id);
+ assert.ok(existing.some(x => x.resourceId === 'sante_mondiale_sante_france_fiche_p01'),
+ 'Fiche provisoire historique absente du catalogue');
+ assert.ok(existing.some(x => x.resourceId === 'sante_mondiale_sante_france_fiche_complete_infographiee_p01'),
+ 'Ancien PDF infographié absent du catalogue');
  assert.equal(c.sourceStatus, gate.existingPublishedBaseline.sourceStatus,
  'Ne pas remplacer le statut provisoire sans livraison revue');
  assert.equal(c.officialSupport, gate.existingPublishedBaseline.officialSupportFlag,
