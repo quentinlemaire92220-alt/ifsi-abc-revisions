@@ -30,7 +30,8 @@ if (!gate.studentReleaseApproved) {
  assert.equal(gate.revision.explicitAcceptanceOfFinalBytes, false);
  assert.equal(gate.revision.pdfAllPagesInspected, false);
 }
-const m=JSON.stringify(gate);
-assert.ok(!/https?:\\/\\/drive\\.google\\.com|\\b(?:transcriptDriveId|file_id|recording_url)\\b/i.test(m),
+const m = JSON.stringify(gate);
+assert.ok(!m.includes('drive.google.com') &&
+ !/transcriptDriveId|file_id|recording_url/i.test(m),
  'Le contrôle ne doit pas contenir de liens ou IDs privés');
 console.log('PASS C1.1 révision officielle en préparation — 56 QCM, 56 cartes, 2 vocaux conservés');
