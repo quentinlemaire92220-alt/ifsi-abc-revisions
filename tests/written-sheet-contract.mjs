@@ -31,7 +31,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  validateSheetSource(courseId,delivery,sheet);
  const id=driveId(sheet);
  const isPages=delivery.publicationHost==='github_pages';
- const githubPageArtifactContract=Boolean(isPages&&delivery.deliveryMode==='source_limited_first_release'&&delivery.publicArtifacts?.sheet);
+ const githubPageArtifactContract=Boolean(isPages&&['source_limited_first_release','existing_course_revision'].includes(delivery.deliveryMode)&&delivery.publicArtifacts?.sheet);
  let urlOK=false;
  try {
   const u=new URL(sheet.url||'');

@@ -254,7 +254,7 @@ def validate_stress_qcm(text,rows):
 
 def validate_stress_cards(text,rows):
     assert len(rows)==50,'Gestion du stress : 50 cartes attendues'
-    blocks=_stress_segments(text,r'^CARTE (\d{2})\s*$')
+    blocks=_stress_segments(text,r'^CARTE\s+(\d{2})\s*$')
     assert [n for n,_ in blocks]==list(range(1,51)),'Cartes absentes ou dupliquées'
     pairs=[]
     for q,(_,block) in zip(rows,blocks):
@@ -265,6 +265,51 @@ def validate_stress_cards(text,rows):
         assert norm(_stress_clean(block,rows))==norm(' '.join(pair)),q['id']+': carte PDF différente'
         pairs.append(pair)
     assert len(set(pairs))==50,'Cartes identiques dupliquées'
+def validate_boxed_recall(document,rows,role):
+    """Native boxed glossary/QCM: compare each numbered region to the live bank.
+
+    Whitespace and typographic hyphens only are normalized. No sidecar text or
+    receipt substitutes for extraction from the PDF that will actually be served.
+    """
+    def compact(s):
+        return re.sub(r'\s+','',unicodedata.normalize('NFKC',s).replace('‐','-').replace('‑','-').replace('…','...')).lower()
+    def groups(pattern):
+        found={}
+        for page in document:
+            hits=[]
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines',[]):
+                    for span in line['spans']:
+                        m=re.match(pattern,span['text'])
+                        if m:hits.append((int(m[1]),span['bbox'][1]))
+            hits.sort(key=lambda h:h[1])
+            for i,(number,y) in enumerate(hits):
+                assert number not in found,'Numéro PDF répété : '+str(number)
+                bottom=hits[i+1][1]-4 if i+1<len(hits) else page.rect.height-43
+                found[number]=compact(page.get_text(clip=fitz.Rect(36,y-4,page.rect.width-36,bottom),sort=('—' in pattern)))
+        return found
+    if role=='qcm':
+        questions=groups(r'^Q(\d{2})$');answers=groups(r'^Q(\d{2})\s*[—–]')
+        expected=[q['number'] for q in rows]
+        assert list(questions)==expected and list(answers)==expected,'QCM/corrigés absents ou dupliqués'
+        for q in rows:
+            qt,at=questions[q['number']],answers[q['number']]
+            assert compact(q['question']) in qt,q['id']+': énoncé divergent'
+            for choice in q['choices']:assert compact(choice) in qt,q['id']+': proposition divergente'
+            key=', '.join(chr(65+i) for i in q['answers'])
+            assert compact('Bonnes réponses : '+key) in at,q['id']+': clé divergente'
+            assert compact(q['question']) in at,q['id']+': titre du corrigé divergent'
+            assert compact(q['explanation']) in at,q['id']+': argumentation divergente'
+    else:
+        cards=groups(r'^CARTE\s+(\d{2})\s*[–—]')
+        authored=[f for q in rows for f in q.get('flashcards',[])]
+        assert list(cards)==list(range(1,len(authored)+1)),'Cartes absentes ou dupliquées'
+        used=set()
+        for card in authored:
+            hits=[n for n,t in cards.items() if compact(card['front']) in t and all(compact(a) in t for a in card['answers'])]
+            assert len(hits)==1 and hits[0] not in used,'Recto/verso divergent : '+card['front']
+            used.add(hits[0])
+
 def check(course):
     for role,asset in course['publicArtifacts'].items():
         path=Path(asset['path'])
@@ -277,6 +322,11 @@ def check(course):
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
             assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in doc),'Format A4 absent'
             text=body(doc)
+            if course.get('officialRevision',{}).get('contract')=='psychologie_sante_official_revision_v1' and role in ('qcm','flashcards'):
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                validate_boxed_recall(doc,rows,role)
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
+                continue
         if role in ('qcm','flashcards'):
             rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
             (validate_stress_qcm if role=='qcm' else validate_stress_cards)(text,rows) if course['courseId']=='gestion_stress_professionnel' else (validate_qcm if role=='qcm' else validate_cards)(text,rows)

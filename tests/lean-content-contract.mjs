@@ -10,6 +10,7 @@ export function isExplicitRecallPrompt(value){
  // A targeted recall instruction is equivalent to an active question.
  // Vague listing commands remain forbidden.
  return front.endsWith('?') ||
+  /^Définis complètement\s*:\s*\p{L}[\p{L}\p{N}\s’'(),./—–-]{1,}$/u.test(front) ||
   /^(?:Donne un exemple de|Nomme (?:les|des))\s+\S.{5,}\.$/iu.test(front);
 }
 

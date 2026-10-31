@@ -723,13 +723,27 @@
       "audioStatus": "available",
       "audioCount": 2,
       "audioFolderUrl": "https://drive.google.com/drive/folders/1L3LJys7DPShDROjRtQdc0_mm2OxAtMxf",
-      "flashcardTarget": 59,
+      "flashcardTarget": 71,
       "additionalDocuments": [
         {
           "label": "QCM — Psychologie de la santé (50 questions et corrigés)",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf"
+        },
+        {
+          "label": "QCM — Psychologie de la santé (62 questions et corrigés)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261029/QCM_Psychologie_Sante_62_29p.pdf"
+        },
+        {
+          "label": "Flashcards — Psychologie de la santé (71 cartes)",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261029/Flashcards_Psychologie_Sante_71_12p.pdf"
         }
-      ]
+      ],
+      "officialSupport": true,
+      "nativeSupportAvailable": true,
+      "provisional": false,
+      "sourceStatus": "active",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261029/QCM_Psychologie_Sante_62_29p.pdf",
+      "qcmPdfQuestionCount": 62
     },
     {
       "id": "pharmacologie",

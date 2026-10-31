@@ -3110,24 +3110,33 @@
       "courseId": "psychologie_sante",
       "part": "01",
       "validated": true,
-      "status": "partial",
+      "status": "complete",
       "deliveryMode": "existing_course_revision",
-      "publicationSubset": "qcm_pdf_50_qcm_59_interactive_flashcards_only",
+      "publicationSubset": "official_support_revision_62_71_39p",
       "publicationHost": "github_pages",
       "packFormat": "written_v1",
       "sourceBasis": {
-        "kind": "transcriptions_and_captures_provisional",
-        "nativeSupportAvailable": false,
-        "officialSupportPending": true
+        "kind": "official_support_and_transcriptions",
+        "nativeSupportAvailable": true,
+        "officialSupportPending": false,
+        "reconciled": true
       },
       "qcmBank": "data/course-banks/psychologie_sante.json",
-      "qcmCount": 50,
-      "flashcardCount": 59,
+      "qcmCount": 62,
+      "flashcardCount": 71,
       "partDeliveries": [
         {
           "partId": "p01",
           "validated": true,
-          "status": "partial",
+          "status": "complete",
+          "sheetResourceIds": [
+            "psychologie_sante_fiche_20261029"
+          ],
+          "infographicResourceIds": [],
+          "vocalIds": [
+            "psychologie_sante_p01_vocal_01",
+            "psychologie_sante_p01_vocal_02"
+          ],
           "qcmQuestionIds": [
             "psychologie_sante_p01_001",
             "psychologie_sante_p01_002",
@@ -3178,22 +3187,324 @@
             "psychologie_sante_p01_047",
             "psychologie_sante_p01_048",
             "psychologie_sante_p01_049",
-            "psychologie_sante_p01_050"
+            "psychologie_sante_p01_050",
+            "psychologie_sante_p01_051",
+            "psychologie_sante_p01_052",
+            "psychologie_sante_p01_053",
+            "psychologie_sante_p01_054",
+            "psychologie_sante_p01_055",
+            "psychologie_sante_p01_056",
+            "psychologie_sante_p01_057",
+            "psychologie_sante_p01_058",
+            "psychologie_sante_p01_059",
+            "psychologie_sante_p01_060",
+            "psychologie_sante_p01_061",
+            "psychologie_sante_p01_062"
           ],
-          "sheetResourceIds": [],
-          "infographicResourceIds": [],
-          "vocalIds": []
+          "packFormat": "written_v1",
+          "deliveryMode": "existing_course_revision",
+          "publicationHost": "github_pages",
+          "schematics": "none",
+          "generatedImageCount": 0,
+          "sheetResourceId": "psychologie_sante_fiche_20261029",
+          "sourceAudit": {
+            "officialChecked": true,
+            "officialSupportPreservedPrivately": true,
+            "officialSupportMissing": false,
+            "officialSupportCount": 3,
+            "transcriptionCount": 4,
+            "oralStatus": "complete",
+            "oralReviewBasis": "All four supplied transcripts examined and reconciled; original recordings not listened to",
+            "originalAudioCompared": false,
+            "recordingTailTruncated": false,
+            "oralCoverageExhaustive": true,
+            "speakerStudentSeparated": true,
+            "teachingNotesPrivateTrace": true,
+            "notesWithoutTimestamps": true,
+            "externalSourcesCount": 0
+          },
+          "writtenCoverage": {
+            "expectedEssential": 136,
+            "coveredEssential": 136,
+            "explicitVsInferredPrioritiesSeparated": true,
+            "explanationsNotOvercompressed": true,
+            "disciplinaryReview": "approved",
+            "reviewScope": "Supplied official documents and four full transcripts; no independent medical signature or certification of recording completeness"
+          },
+          "writtenModelReference": "communication_written_v5.3_2026-10-24",
+          "writtenPdfAudit": {
+            "status": "PASS",
+            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageSize": "A4",
+            "pageCount": 39,
+            "expectedCount": 39,
+            "checkedCount": 39,
+            "allPagesRendered": true,
+            "topAndBottomPurpleBandsEveryPage": true,
+            "noOverlaidHeaders": true,
+            "textSelectable": true,
+            "noImages": true,
+            "noClippedText": true,
+            "oneQcmPitfallSection": true,
+            "summaryBeforeLexicon": true,
+            "lexiconLast": true,
+            "navigationChecked": true
+          },
+          "visualAudit": {
+            "status": "PASS",
+            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageSize": "A4",
+            "pageCount": 39,
+            "expectedCount": 39,
+            "checkedCount": 39,
+            "allPagesRendered": true,
+            "topAndBottomPurpleBandsEveryPage": true,
+            "noOverlaidHeaders": true,
+            "textSelectable": true,
+            "noImages": true,
+            "noClippedText": true,
+            "oneQcmPitfallSection": true,
+            "summaryBeforeLexicon": true,
+            "lexiconLast": true,
+            "navigationChecked": true
+          },
+          "publishedVerification": {
+            "status": "MATCH",
+            "source": "authenticated_drive_download",
+            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageCount": 39,
+            "expectedCount": 39,
+            "checkedCount": 39,
+            "copyScope": "owner_private_review_copy"
+          },
+          "publicAssetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+          "publicArtifacts": {
+            "sheet": {
+              "role": "sheet",
+              "path": "assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
+              "sha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+              "pageCount": 39,
+              "artifactId": "psychologie_sante_sheet_20261029"
+            },
+            "qcm": {
+              "role": "qcm",
+              "path": "assets/psychologie-sante-20261029/QCM_Psychologie_Sante_62_29p.pdf",
+              "sha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+              "pageCount": 29,
+              "artifactId": "psychologie_sante_qcm_20261029"
+            },
+            "flashcards": {
+              "role": "cards",
+              "path": "assets/psychologie-sante-20261029/Flashcards_Psychologie_Sante_71_12p.pdf",
+              "sha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
+              "pageCount": 12,
+              "artifactId": "psychologie_sante_flashcards_20261029"
+            }
+          },
+          "artifactSha256s": {
+            "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+            "psychologie_sante_sheet_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "psychologie_sante_qcm_20261029": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+            "psychologie_sante_flashcards_20261029": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
+            "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q": "29add198346646699e326ae14fc7962652c0354ee3b41bcea10944d6297ec9d0",
+            "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
+            "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd"
+          },
+          "lexicon": {
+            "termCount": 73,
+            "textSelectable": true,
+            "checked": true
+          },
+          "templateConformance": {
+            "contract": "ifsi_pdf_template_v3",
+            "artifacts": {
+              "sheet": {
+                "templateId": "communication_written_v5.3_2026-10-24",
+                "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+                "artifactSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+                "pageCount": 39,
+                "pagesChecked": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39
+                ],
+                "status": "owner_accepted",
+                "method": "all_pages_compared_at_100_and_200_percent",
+                "decision": "explicit_graphic_acceptance",
+                "reviewerRole": "owner",
+                "reviewedAt": "2026-10-30T08:29:34Z",
+                "checks": {
+                  "MODEL_COMPARISON": "PASS",
+                  "BANDS_AND_TYPOGRAPHY": "PASS",
+                  "MARGINS_AND_HIERARCHY": "PASS",
+                  "COLOR_AND_BOXES": "PASS",
+                  "NO_CLIPPING_OR_OVERLAP": "PASS",
+                  "READABLE_AT_100_AND_200_PERCENT": "PASS",
+                  "STRUCTURE_AND_PAGINATION": "PASS"
+                },
+                "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+              },
+              "qcm": {
+                "templateId": "communication_qcm_2026-10-24",
+                "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+                "artifactSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+                "pageCount": 29,
+                "pagesChecked": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29
+                ],
+                "status": "owner_accepted",
+                "method": "all_pages_compared_at_100_and_200_percent",
+                "decision": "explicit_graphic_acceptance",
+                "reviewerRole": "owner",
+                "reviewedAt": "2026-10-30T08:29:34Z",
+                "checks": {
+                  "MODEL_COMPARISON": "PASS",
+                  "BANDS_AND_TYPOGRAPHY": "PASS",
+                  "MARGINS_AND_HIERARCHY": "PASS",
+                  "COLOR_AND_BOXES": "PASS",
+                  "NO_CLIPPING_OR_OVERLAP": "PASS",
+                  "READABLE_AT_100_AND_200_PERCENT": "PASS",
+                  "STRUCTURE_AND_PAGINATION": "PASS"
+                },
+                "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+              }
+            }
+          },
+          "visualOwnerReview": {
+            "status": "owner_accepted",
+            "reference": "communication_written_v5.3_2026-10-24",
+            "method": "pdf_all_pages_checked",
+            "reviewedAt": "2026-10-30T08:29:34Z",
+            "reviewerDecision": "explicit_graphic_acceptance",
+            "pagesChecked": 39,
+            "criteria": {
+              "NO_GENERATED_IMAGES": "PASS",
+              "PURPLE_BANDS_EVERY_PAGE": "PASS",
+              "TEXT_SELECTABLE": "PASS",
+              "NO_TECHNICAL_NOTES": "PASS"
+            },
+            "reviewedPdfSha256s": {
+              "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
+            },
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+          },
+          "pedagogicalNonRegression": {
+            "contract": "ifsi_pedagogical_non_regression_v149",
+            "sheetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
+            "reviewedAt": "2026-10-30T08:29:34Z",
+            "sourceInventory": "reviewed",
+            "sourceCoverage": "complete",
+            "inheritanceReview": "compared",
+            "depthReview": "reviewed",
+            "differencesReview": "reviewed",
+            "decision": "full_review_recorded"
+          },
+          "provisional": false,
+          "sourceBasis": {
+            "kind": "official_support_and_transcriptions",
+            "nativeSupportAvailable": true,
+            "officialSupportPending": false,
+            "reconciled": true
+          }
         }
       ],
       "artifactSha256s": {
-        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c"
+        "psychologie_sante_qcm_v3_19p_20261027": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+        "psychologie_sante_sheet_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "psychologie_sante_qcm_20261029": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+        "psychologie_sante_flashcards_20261029": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
+        "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q": "29add198346646699e326ae14fc7962652c0354ee3b41bcea10944d6297ec9d0",
+        "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
+        "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd",
+        "1myUK4l0Rw_n7YYggBhEeMfpH5D0s9e6g": "aacee0c72f0f04ba36369d8efc2cbee1327a92eb98a45e94944825c8583aae83",
+        "1lc-hTm6JvIsNObCsDhxkeznUoDLF_cqF": "4d307e01c22962ed5046bb7402461d05c263ba5a850815eae759b5aa433b6aad"
       },
       "publicArtifacts": {
+        "sheet": {
+          "role": "sheet",
+          "path": "assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
+          "sha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+          "pageCount": 39,
+          "artifactId": "psychologie_sante_sheet_20261029"
+        },
         "qcm": {
-          "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
-          "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
-          "pageCount": 19,
-          "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
+          "role": "qcm",
+          "path": "assets/psychologie-sante-20261029/QCM_Psychologie_Sante_62_29p.pdf",
+          "sha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+          "pageCount": 29,
+          "artifactId": "psychologie_sante_qcm_20261029"
+        },
+        "flashcards": {
+          "role": "cards",
+          "path": "assets/psychologie-sante-20261029/Flashcards_Psychologie_Sante_71_12p.pdf",
+          "sha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
+          "pageCount": 12,
+          "artifactId": "psychologie_sante_flashcards_20261029"
         }
       },
       "qcmGraphicOwnerReview": {
@@ -3226,18 +3537,17 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-10-27T15:45:12.524Z",
-        "bundleSha256": "c193c54731eff1a3a2b63ab05b288103a0dfd9d9de2454bec867c9440871ee1e",
-        "scopeLimit": "qcm_pdf_50_questions_59_interactive_flashcards_only"
+        "approvedAt": "2026-10-30T08:57:10Z",
+        "bundleSha256": "019de9ff6b66a279a3d8d0af2ffbef7235e1eb60108f547838f8e39d7e7e9dc9"
       },
       "templateConformance": {
         "contract": "ifsi_pdf_template_v3",
         "artifacts": {
-          "qcm": {
-            "templateId": "communication_qcm_2026-10-24",
-            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
-            "artifactSha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
-            "pageCount": 19,
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageCount": 39,
             "pagesChecked": [
               1,
               2,
@@ -3257,13 +3567,33 @@
               16,
               17,
               18,
-              19
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
             ],
             "status": "owner_accepted",
             "method": "all_pages_compared_at_100_and_200_percent",
             "decision": "explicit_graphic_acceptance",
             "reviewerRole": "owner",
-            "reviewedAt": "2026-10-27T15:45:12.520Z",
+            "reviewedAt": "2026-10-30T08:29:34Z",
             "checks": {
               "MODEL_COMPARISON": "PASS",
               "BANDS_AND_TYPOGRAPHY": "PASS",
@@ -3273,7 +3603,59 @@
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
             },
-            "privateEvidenceSha256": "d6300cda5e60bbe8bc4a5fbf912eaeeb984a4f30bd1ee6b7ce3a90af665e8c02"
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+            "pageCount": 29,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-30T08:29:34Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
           }
         }
       },
@@ -3370,7 +3752,158 @@
           "approvedAt": "2026-10-27T17:38:00Z",
           "bundleSha256": "07e6434fe13d7a8f8e212163d03af018a21aeb86bcdd21004043231708c077e7"
         }
-      }
+      },
+      "pedagogicalValidated": true,
+      "sheetResourceId": "psychologie_sante_fiche_20261029",
+      "sheetResourceIds": [
+        "psychologie_sante_fiche_20261029"
+      ],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "infographicResourceIds": [],
+      "vocals": [
+        "psychologie_sante_p01_vocal_01",
+        "psychologie_sante_p01_vocal_02"
+      ],
+      "blockers": [],
+      "requestedVocals": false,
+      "sourceAudit": {
+        "officialChecked": true,
+        "officialSupportPreservedPrivately": true,
+        "officialSupportMissing": false,
+        "officialSupportCount": 3,
+        "transcriptionCount": 4,
+        "oralStatus": "complete",
+        "oralReviewBasis": "All four supplied transcripts examined and reconciled; original recordings not listened to",
+        "originalAudioCompared": false,
+        "recordingTailTruncated": false,
+        "oralCoverageExhaustive": true,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0
+      },
+      "writtenCoverage": {
+        "expectedEssential": 136,
+        "coveredEssential": 136,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "reviewScope": "Supplied official documents and four full transcripts; no independent medical signature or certification of recording completeness"
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "pageSize": "A4",
+        "pageCount": 39,
+        "expectedCount": 39,
+        "checkedCount": 39,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "pageSize": "A4",
+        "pageCount": 39,
+        "expectedCount": 39,
+        "checkedCount": 39,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "pageCount": 39,
+        "expectedCount": 39,
+        "checkedCount": 39,
+        "copyScope": "owner_private_review_copy"
+      },
+      "publicAssetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+      "qcmPublicAssetSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+      "flashcardPublicAssetSha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
+      "lexicon": {
+        "termCount": 73,
+        "textSelectable": true,
+        "checked": true
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "reviewedAt": "2026-10-30T08:29:34Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "pagesChecked": 39,
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
+        },
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
+        "reviewedAt": "2026-10-30T08:29:34Z",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "officialRevision": {
+        "contract": "psychologie_sante_official_revision_v1",
+        "historicalDeliveryPath": "docs/proposals/psychologie-sante-20261029/historical-delivery.json",
+        "historicalBankPath": "data/course-bank-history/psychologie_sante_20261027.json",
+        "historicalBankSha256": "791c80bbf527becd1124b653705982ae12f239515ac86c43064a21dee63f443f",
+        "previousPublicationBundleSha256": "c193c54731eff1a3a2b63ab05b288103a0dfd9d9de2454bec867c9440871ee1e",
+        "previousRevisionSheetBundleSha256": "07e6434fe13d7a8f8e212163d03af018a21aeb86bcdd21004043231708c077e7",
+        "previousArtifacts": {
+          "qcm": {
+            "path": "assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf",
+            "sha256": "2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c",
+            "pageCount": 19,
+            "artifactId": "psychologie_sante_qcm_v3_19p_20261027"
+          }
+        },
+        "archivedSheetResourceIds": [
+          "psychologie_sante_fiche_p01",
+          "psychologie_sante_fiche_unique_20261027"
+        ],
+        "acceptedPdfSha256s": {
+          "sheet": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+          "qcm": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
+          "flashcards": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716"
+        },
+        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302",
+        "historicalDeliverySha256": "9186b8b664da7b4b38451c3143a6f951bf1e94abd95a7ce89942e34a4686fee2",
+        "baseSha": "cb02d24c254f105ad41fdfc9e4d1dd1f10a5d3d9"
+      },
+      "provisional": false
     },
     {
       "courseId": "fievre_retour_voyage_paludisme",

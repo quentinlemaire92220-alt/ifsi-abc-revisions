@@ -1,16 +1,22 @@
 // Contrat du complément publié : QCM PDF exact + 50 QCM + 59 cartes, historiques conservés.
 import fs from 'node:fs';
+import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const candidate=read('docs/proposals/psychologie-sante-20261027/qcm-runtime-candidate.json');
 const definitions=read('docs/proposals/psychologie-sante-20261027/flashcards-59-candidate.json');
-const active=read('questions-5.json').filter(q=>q.courseId==='psychologie_sante');
-const reg=read('course-registry-v741.json').courses.filter(c=>c.id==='psychologie_sante');
-const sheets=read('sheets-3.json').filter(s=>s.courseId==='psychologie_sante');
+const fullActive=read('questions-5.json').filter(q=>q.courseId==='psychologie_sante');
+const currentDelivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='psychologie_sante');
+const official=isPsychologieOfficialRevision(currentDelivery);
+if(official)validatePsychologieOfficialRevision(currentDelivery);
+const history=official?read(currentDelivery.officialRevision.historicalDeliveryPath):null;
+const active=official?fullActive.slice(0,50):fullActive;
+const reg=official?[history.course]:read('course-registry-v741.json').courses.filter(c=>c.id==='psychologie_sante');
+const sheets=official?history.sheets:read('sheets-3.json').filter(s=>s.courseId==='psychologie_sante');
 const vocals=read('vocals.json').filter(v=>v.courseId==='psychologie_sante');
-const manifest=read('docs/course-deliveries.json').courses.filter(c=>c.courseId==='psychologie_sante');
+const manifest=official?[history.delivery]:read('docs/course-deliveries.json').courses.filter(c=>c.courseId==='psychologie_sante');
 const expected='2d251cee59f5ceaa7657e88079a21db4718329e727c2b6d16ce7ce208b4f570c';
 const path='assets/psychologie-sante-20261027/UE_B2_Psychologie_Sante_QCM_50_Corriges.pdf';
 assert.ok(fs.existsSync(path));
@@ -53,8 +59,12 @@ const actual=new Map(active.flatMap(q=>(q.flashcards||[]).map(c=>[c.front,c.answ
 assert.equal(actual.size,59);
 for(const d of definitions)assert.equal(actual.get(d.front),d.back,'Flashcard divergente '+d.term);
 const {deck,questions}=await runtimeDeck();
-assert.equal(questions.filter(q=>q.courseId==='psychologie_sante').length,50);
-const authored=deck.filter(c=>c.courseId==='psychologie_sante'&&String(c.qid||'').startsWith('psychologie_sante_p01_'));
+const historicIds=new Set(candidate.map(q=>q.id));
+assert.equal(questions.filter(q=>q.courseId==='psychologie_sante').length,official?62:50);
+assert.equal(questions.filter(q=>q.courseId==='psychologie_sante'&&historicIds.has(q.id)).length,50);
+const allAuthored=deck.filter(c=>c.courseId==='psychologie_sante'&&String(c.qid||'').startsWith('psychologie_sante_p01_'));
+assert.equal(allAuthored.length,official?71:59);
+const authored=official?allAuthored.filter(c=>historicIds.has(c.qid)):allAuthored;
 assert.equal(authored.length,59);
 for(const d of definitions)assert.ok(authored.some(c=>(c.sourceFront||c.front)===d.front&&c.answers.includes(d.back)),
  'Carte absente de l’interface '+d.term);

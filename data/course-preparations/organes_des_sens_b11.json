@@ -1,0 +1,1864 @@
+[
+  {
+    "id": "B11_ORGANES_SENS_001",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 1,
+    "theme": "Principes sensoriels",
+    "difficulty": "easy",
+    "question": "À propos de la fonction sensorielle :",
+    "choices": [
+      "Elle commence par la détection d’un stimulus.",
+      "La stimulation est forcément lumineuse.",
+      "Toutes les informations sont intégrées dans le même lobe cérébral.",
+      "Un sens peut fonctionner sans aucun récepteur sensoriel.",
+      "Le message nerveux ne nécessite aucun transmetteur."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Le récepteur détecte une stimulation. B : Les stimulations peuvent aussi être chimiques ou mécaniques. C : Les régions d’intégration varient selon le sens. D : La réception du stimulus nécessite des récepteurs spécialisés. E : Des voies nerveuses acheminent l’information.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois maillons communs à tous les sens ?",
+        "answers": [
+          "Récepteur sensoriel, voie de transmission nerveuse et centre d’intégration."
+        ],
+        "explanation": "Récepteur sensoriel, voie de transmission nerveuse et centre d’intégration.",
+        "theme": "Principes sensoriels"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_002",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 2,
+    "theme": "Principes sensoriels",
+    "difficulty": "easy",
+    "question": "Concernant les familles de récepteurs sensoriels :",
+    "choices": [
+      "Le toucher exclut les thermorécepteurs.",
+      "Les chémorécepteurs détectent uniquement les vibrations du tympan.",
+      "Les mécanorécepteurs ne concernent que la peau.",
+      "Les photorécepteurs répondent à la lumière.",
+      "Les photorécepteurs assurent l’audition."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : La sensibilité cutanée comprend la température. B : Les chémorécepteurs détectent des molécules chimiques. C : Ils interviennent aussi dans l’audition et l’équilibre. D : Ils sont présents dans la rétine. E : L’audition repose sur des cellules sensibles aux vibrations.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel stimulus active un photorécepteur ?",
+        "answers": [
+          "La lumière."
+        ],
+        "explanation": "La lumière.",
+        "theme": "Principes sensoriels"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_003",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 3,
+    "theme": "Principes sensoriels",
+    "difficulty": "medium",
+    "question": "Le raisonnement « stimulus → récepteur → voie → centre » implique que :",
+    "choices": [
+      "Un son constitue directement un influx nerveux.",
+      "Tous les stimuli activent obligatoirement le même lobe cérébral.",
+      "La transmission de l’information emprunte des voies nerveuses.",
+      "La nature du stimulus peut être chimique.",
+      "Le centre d’intégration est toujours le récepteur lui-même."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Les cellules sensorielles convertissent les vibrations. B : Les aires d’intégration varient selon les modalités sensorielles. C : Les nerfs et relais sont des transmetteurs. D : Les molécules odorantes et sapides sont des stimulations chimiques. E : Le centre d’intégration correspond à des structures nerveuses centrales.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel stimulus active un chémorécepteur ?",
+        "answers": [
+          "Une molécule chimique ; exemples : molécules odorantes et sapides."
+        ],
+        "explanation": "Une molécule chimique ; exemples : molécules odorantes et sapides.",
+        "theme": "Principes sensoriels"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_004",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 4,
+    "theme": "Principes sensoriels",
+    "difficulty": "medium",
+    "question": "Associer organes et fonctions :",
+    "choices": [
+      "La cochlée est un récepteur cutané.",
+      "L’œil est l’organe de la vision.",
+      "La peau est le seul organe assurant l’équilibre.",
+      "La langue participe au goût.",
+      "La cavité nasale ne peut pas recevoir de molécules odorantes."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Elle appartient à l’oreille interne. B : Sa rétine contient les photorécepteurs. C : L’équilibre met en jeu le système vestibulaire de l’oreille interne. D : Ses bourgeons gustatifs détectent les saveurs. E : La muqueuse nasale contient des récepteurs olfactifs.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel stimulus active un mécanorécepteur ?",
+        "answers": [
+          "Une déformation ou un mouvement mécanique, par exemple une pression ou une vibration."
+        ],
+        "explanation": "Une déformation ou un mouvement mécanique, par exemple une pression ou une vibration.",
+        "theme": "Principes sensoriels"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_005",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 5,
+    "theme": "Principes sensoriels",
+    "difficulty": "hard",
+    "question": "Dans les mécanismes des sens :",
+    "choices": [
+      "Toutes les cellules sensorielles sont des cellules musculaires.",
+      "La perception se produit avant la stimulation.",
+      "L’intégration sensorielle s’effectue seulement dans la moelle osseuse.",
+      "La transduction correspond à une transformation du signal détecté.",
+      "Un potentiel d’action est un message électrique des voies nerveuses."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Il s’agit de cellules spécialisées, non toutes musculaires. B : La stimulation précède la réception puis le traitement. C : Les centres nerveux, notamment cérébraux, intègrent les messages. D : Elle permet de passer du stimulus à un message exploitable par le système nerveux. E : Le potentiel d’action est un signal électrique transmis dans les voies nerveuses.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels organes assurent la vision, l’audition, l’odorat, le goût et le toucher ?",
+        "answers": [
+          "Œil, oreille, cavité nasale, langue et peau ; l’oreille participe aussi à l’équilibre."
+        ],
+        "explanation": "Œil, oreille, cavité nasale, langue et peau ; l’oreille participe aussi à l’équilibre.",
+        "theme": "Principes sensoriels"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_006",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 6,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "easy",
+    "question": "Les tuniques du globe oculaire comprennent :",
+    "choices": [
+      "La sclérotique, située en superficie.",
+      "L’humeur aqueuse comme tunique moyenne.",
+      "Le cristallin comme tunique externe.",
+      "La rétine, tunique interne nerveuse.",
+      "La choroïde, située entre sclérotique et rétine."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : C’est l’enveloppe fibreuse externe. B : C’est un liquide transparent. C : C’est une lentille transparente. D : Elle contient les photorécepteurs. E : Elle est vascularisée et intermédiaire.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les trois tuniques du globe oculaire, de dehors en dedans ?",
+        "answers": [
+          "Sclérotique, choroïde, rétine."
+        ],
+        "explanation": "Sclérotique, choroïde, rétine.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_007",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 7,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "Quelles associations sont correctes concernant l’œil ?",
+    "choices": [
+      "La sclérotique est le principal photorécepteur.",
+      "Le corps ciliaire participe à la sécrétion de l’humeur aqueuse.",
+      "L’iris module le diamètre de la pupille.",
+      "La cornée est opaque.",
+      "Le nerf optique transmet les vibrations de la cochlée."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Les photorécepteurs sont dans la rétine. B : Le corps ciliaire produit l’humeur aqueuse. C : Il régule l’ouverture selon la lumière. D : La cornée est normalement transparente. E : La cochlée transmet l’information via les voies auditives.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle principal de la sclérotique ?",
+        "answers": [
+          "Enveloppe externe protectrice, résistante, servant d’ancrage aux muscles oculaires."
+        ],
+        "explanation": "Enveloppe externe protectrice, résistante, servant d’ancrage aux muscles oculaires.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_008",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 8,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "easy",
+    "question": "Parmi les milieux transparents de l’œil figurent :",
+    "choices": [
+      "La rétine.",
+      "Le corps vitré.",
+      "Le cristallin.",
+      "La choroïde.",
+      "La cornée."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : C’est une tunique nerveuse. B : C’est un gel transparent. C : Cette lentille assure la mise au point. D : C’est une tunique vascularisée. E : Elle est transparente et réfracte la lumière.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de la choroïde ?",
+        "answers": [
+          "Tunique moyenne richement vascularisée, participant à la nutrition des tissus oculaires."
+        ],
+        "explanation": "Tunique moyenne richement vascularisée, participant à la nutrition des tissus oculaires.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_009",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 9,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "À propos de la rétine :",
+    "choices": [
+      "Elle est le lieu de production de l’humeur aqueuse.",
+      "Elle tapisse le fond de l’œil.",
+      "Elle est séparée de toute voie nerveuse.",
+      "Elle contient des cellules bipolaires.",
+      "La rétine contient les trois osselets de l’oreille moyenne."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Ce rôle dépend du corps ciliaire. B : La rétine est la tunique nerveuse interne du globe oculaire. C : Les fibres rejoignent le nerf optique. D : Elles relaient les informations des photorécepteurs. E : Les osselets ne font pas partie de l’œil.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de la rétine ?",
+        "answers": [
+          "Tunique nerveuse contenant notamment cônes et bâtonnets, à l’origine de l’information visuelle."
+        ],
+        "explanation": "Tunique nerveuse contenant notamment cônes et bâtonnets, à l’origine de l’information visuelle.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_010",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 10,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "easy",
+    "question": "Les cônes rétiniens :",
+    "choices": [
+      "Sont associés à la haute précision visuelle.",
+      "Interviennent dans la vision des couleurs.",
+      "Se trouvent dans le cristallin.",
+      "Sont principalement destinés à la vision nocturne.",
+      "Constituent la chaîne des osselets."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Ils sont concentrés notamment dans la fovéa. B : Ils participent à la discrimination chromatique. C : Ils se trouvent dans la rétine. D : C’est surtout le rôle des bâtonnets. E : Les osselets appartiennent à l’oreille moyenne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les quatre milieux transparents à identifier ?",
+        "answers": [
+          "Cornée, humeur aqueuse, cristallin et corps vitré."
+        ],
+        "explanation": "Cornée, humeur aqueuse, cristallin et corps vitré.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_011",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 11,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "easy",
+    "question": "Les bâtonnets :",
+    "choices": [
+      "Assurent principalement la vision fine des couleurs.",
+      "Sont situés dans l’iris.",
+      "Constituent le nerf optique à eux seuls.",
+      "Sont des photorécepteurs rétiniens.",
+      "Participent à la vision en faible luminosité."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Cette fonction relève surtout des cônes. B : Ils se trouvent dans la rétine. C : Le nerf est constitué de fibres issues des cellules ganglionnaires. D : Ils captent la lumière. E : Ils sont adaptés à l’obscurité.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel organe sécrète l’humeur aqueuse ?",
+        "answers": [
+          "Le corps ciliaire, et non la sclérotique."
+        ],
+        "explanation": "Le corps ciliaire, et non la sclérotique.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_012",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 12,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "La macula, la fovéa et la papille optique :",
+    "choices": [
+      "La macula appartient à la choroïde.",
+      "La macula appartient à la rétine.",
+      "La papille optique est le principal lieu de la vision des couleurs.",
+      "La papille optique constitue la zone la plus riche en cônes.",
+      "La fovéa correspond à une zone de forte précision visuelle."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : La macula se situe dans la rétine, et non la choroïde. B : C’est une région centrale de la rétine. C : La fovéa est liée à la vision fine. D : La papille est la tache aveugle ; la fovéa est riche en cônes. E : Elle est riche en cônes.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre l’iris et la pupille ?",
+        "answers": [
+          "Iris = partie colorée qui règle l’ouverture ; pupille = orifice central par lequel passe la lumière."
+        ],
+        "explanation": "Iris = partie colorée qui règle l’ouverture ; pupille = orifice central par lequel passe la lumière.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_013",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 13,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "La pupille et l’iris :",
+    "choices": [
+      "Une lumière vive entraîne systématiquement une dilatation pupillaire.",
+      "La pupille sécrète l’humeur aqueuse.",
+      "L’iris contient les bâtonnets.",
+      "La pupille est l’orifice central de l’iris.",
+      "L’iris correspond à la partie colorée de l’œil."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : La lumière vive réduit habituellement le diamètre de la pupille. B : La sécrétion est assurée par le corps ciliaire. C : Ils se trouvent dans la rétine. D : C’est une ouverture, pas une lentille. E : La couleur dépend notamment de la mélanine.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle du cristallin ?",
+        "answers": [
+          "Lentille déformable réalisant la mise au point grâce à l’accommodation."
+        ],
+        "explanation": "Lentille déformable réalisant la mise au point grâce à l’accommodation.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_014",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 14,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "easy",
+    "question": "Le cristallin :",
+    "choices": [
+      "Constitue le nerf optique.",
+      "Est situé dans la choroïde et richement vascularisé.",
+      "Contient les cônes et les bâtonnets responsables de la réception lumineuse.",
+      "Est une lentille transparente.",
+      "Le cristallin est une lentille rigide qui ne participe pas à la mise au point."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Le nerf optique est constitué de fibres issues des cellules ganglionnaires rétiniennes. B : Le cristallin est une lentille transparente avasculaire, distincte de la choroïde. C : Les cônes et les bâtonnets sont situés dans la rétine. D : Le cristallin est l’un des milieux transparents de l’œil. E : Il change de forme pendant l’accommodation.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de la cornée ?",
+        "answers": [
+          "Milieu antérieur transparent important pour la réfraction de la lumière."
+        ],
+        "explanation": "Milieu antérieur transparent important pour la réfraction de la lumière.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_015",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 15,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "Pour que l’image soit nette, la vision fait intervenir :",
+    "choices": [
+      "L’accommodation par le cristallin.",
+      "La stimulation visuelle des photorécepteurs a lieu principalement dans l’iris.",
+      "Le déplacement des osselets.",
+      "La réfraction de la lumière, notamment par la cornée.",
+      "Le rôle de la trompe d’Eustache."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : La mise au point varie avec la distance. B : Les photorécepteurs sont rétiniens. C : Ils servent à l’audition. D : La cornée contribue fortement à la focalisation. E : Elle égalise la pression dans l’oreille moyenne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle du corps vitré ?",
+        "answers": [
+          "Gel transparent occupant la partie postérieure du globe et contribuant à sa forme."
+        ],
+        "explanation": "Gel transparent occupant la partie postérieure du globe et contribuant à sa forme.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_016",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 16,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "À propos de l’humeur aqueuse :",
+    "choices": [
+      "Elle est sécrétée par la sclérotique.",
+      "L’humeur aqueuse entretient la pression de l’oreille moyenne.",
+      "Elle contribue à nourrir la cornée et le cristallin.",
+      "Elle est synonyme de corps vitré.",
+      "Elle est située dans la partie antérieure de l’œil."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : L’humeur aqueuse est sécrétée par les procès ciliaires. B : Elle participe à la pression intraoculaire, pas tympanique. C : Ces structures sont avasculaires. D : Le corps vitré est une masse gélatineuse distincte. E : L’humeur aqueuse circule dans la partie antérieure de l’œil.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi servent les cônes ?",
+        "answers": [
+          "Vision des couleurs et haute précision visuelle, notamment dans la fovéa."
+        ],
+        "explanation": "Vision des couleurs et haute précision visuelle, notamment dans la fovéa.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_017",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 17,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "Les annexes et muscles de l’œil :",
+    "choices": [
+      "Les muscles extrinsèques sont les récepteurs des couleurs.",
+      "L’appareil lacrymal contribue à l’hydratation de la surface oculaire.",
+      "Les muscles intrinsèques font vibrer le tympan.",
+      "La conjonctive est une tunique du fond de l’œil.",
+      "Les paupières participent à la protection du globe."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Ce rôle appartient aux cônes de la rétine. B : Les larmes lubrifient et protègent. C : Le tympan appartient à l’appareil auditif. D : C’est une muqueuse de surface. E : Elles sont des annexes protectrices.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi servent les bâtonnets ?",
+        "answers": [
+          "Vision en faible luminosité, sans discrimination des couleurs."
+        ],
+        "explanation": "Vision en faible luminosité, sans discrimination des couleurs.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_018",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 18,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "hard",
+    "question": "Parmi ces éléments, lesquels participent aux voies optiques ?",
+    "choices": [
+      "Les radiations optiques précèdent le nerf optique sur le trajet visuel.",
+      "Le chiasma optique.",
+      "Le nerf optique.",
+      "Le cortex occipital est l’aire primaire du toucher.",
+      "La cochlée comme relais optique."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Le trajet passe d’abord par le nerf optique, puis le chiasma, le tractus, les corps genouillés latéraux et enfin les radiations optiques. B : Au chiasma, certaines fibres optiques se croisent. C : Le nerf optique transporte les informations rétiniennes. D : La vision est principalement traitée dans le lobe occipital, le toucher notamment dans le lobe pariétal. E : La cochlée appartient à l’oreille interne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la différence entre macula et fovéa ?",
+        "answers": [
+          "La macula est une région centrale de la rétine ; la fovéa est en son centre et permet la vision la plus précise."
+        ],
+        "explanation": "La macula est une région centrale de la rétine ; la fovéa est en son centre et permet la vision la plus précise.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_019",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 19,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "medium",
+    "question": "À propos des troubles de la vision, quelles propositions sont exactes ?",
+    "choices": [
+      "L’astigmatisme correspond principalement à une anomalie de la forme du nerf optique.",
+      "La cataracte concerne les photorécepteurs rétiniens, et non le cristallin.",
+      "La presbytie correspond à une opacification du cristallin.",
+      "La cataracte est uniquement une diminution de l’accommodation, sans opacification du cristallin.",
+      "La presbytie limite l’accommodation de près."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : L’astigmatisme est notamment lié à une courbure irrégulière de la cornée et/ou du cristallin. B : La cataracte est une opacification du cristallin, pas des photorécepteurs rétiniens. C : La presbytie correspond à une diminution de l’accommodation, notamment par perte d’élasticité du cristallin. D : La cataracte se caractérise précisément par une opacification du cristallin. E : La presbytie limite la mise au point sur les objets proches.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Pourquoi la papille optique est-elle appelée tache aveugle ?",
+        "answers": [
+          "C’est le point d’émergence du nerf optique ; cette région ne contient pas de photorécepteurs."
+        ],
+        "explanation": "C’est le point d’émergence du nerf optique ; cette région ne contient pas de photorécepteurs.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_020",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 20,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "hard",
+    "question": "Concernant l'anatomie de l’œil, quelles distinctions sont correctes ?",
+    "choices": [
+      "Les milieux transparents ne correspondent pas aux trois tuniques du globe oculaire.",
+      "La cochlée et la rétine sont deux structures anatomiques du même organe sensoriel.",
+      "Les trois tuniques sont la sclérotique, la choroïde et la rétine.",
+      "La fovéa et la papille optique sont exactement la même région.",
+      "L’iris modifie directement la forme du cristallin lors de l’accommodation."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Les milieux transparents sont distincts des tuniques de la paroi du globe. B : La rétine appartient à l’œil, tandis que la cochlée appartient à l’oreille interne. C : Les trois tuniques se succèdent de l’extérieur vers l’intérieur. D : La fovéa est liée à la vision fine ; la papille optique est le point aveugle. E : Le muscle ciliaire participe à l’accommodation, tandis que l’iris module le diamètre de la pupille.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle région cérébrale traite principalement la vision ?",
+        "answers": [
+          "Le cortex visuel du lobe occipital, après passage par les voies optiques."
+        ],
+        "explanation": "Le cortex visuel du lobe occipital, après passage par les voies optiques.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_021",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 21,
+    "theme": "Vision — œil et voies optiques",
+    "difficulty": "hard",
+    "question": "Le trajet de la lumière jusqu’à la rétine fait intervenir :",
+    "choices": [
+      "Le cristallin.",
+      "La cornée.",
+      "La trompe d’Eustache.",
+      "Les osselets auditifs.",
+      "L’humeur aqueuse est le dernier milieu transparent traversé avant la rétine."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Le cristallin participe à la focalisation de la lumière. B : La cornée est traversée en premier dans la partie antérieure de l’œil. C : La trompe d’Eustache appartient à l’oreille moyenne. D : Les osselets transmettent les vibrations sonores. E : Après le cristallin, la lumière traverse le corps vitré avant d’atteindre la rétine ; l’humeur aqueuse se situe en avant du cristallin.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que signifie accommodation ?",
+        "answers": [
+          "Modification de la forme du cristallin pour assurer la netteté selon la distance."
+        ],
+        "explanation": "Modification de la forme du cristallin pour assurer la netteté selon la distance.",
+        "theme": "Vision — œil et voies optiques"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_022",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 22,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "easy",
+    "question": "L’oreille externe comprend :",
+    "choices": [
+      "Le vestibule.",
+      "La caisse du tympan.",
+      "La cochlée.",
+      "La trompe d’Eustache.",
+      "Le pavillon."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Le vestibule appartient à l’oreille interne. B : La caisse du tympan constitue la cavité de l’oreille moyenne. C : La cochlée est située dans l’oreille interne. D : La trompe d’Eustache communique avec l’oreille moyenne. E : Le pavillon appartient à l’oreille externe, avec le conduit auditif externe.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels éléments constituent l’oreille externe ?",
+        "answers": [
+          "Le pavillon et le conduit auditif externe ; le tympan marque la limite avec l’oreille moyenne."
+        ],
+        "explanation": "Le pavillon et le conduit auditif externe ; le tympan marque la limite avec l’oreille moyenne.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_023",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 23,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "easy",
+    "question": "L’oreille moyenne comprend :",
+    "choices": [
+      "La trompe d’Eustache.",
+      "Le marteau, l’enclume et l’étrier.",
+      "Le tympan comme limite avec le conduit externe.",
+      "Le bulbe olfactif.",
+      "La rétine."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Elle communique avec le nasopharynx. B : Ils forment la chaîne des osselets. C : Il vibre au contact des ondes sonores. D : Il participe à l’odorat. E : La rétine appartient à l’œil.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les trois grandes régions de l’oreille ?",
+        "answers": [
+          "Oreille externe, moyenne et interne."
+        ],
+        "explanation": "Oreille externe, moyenne et interne.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_024",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 24,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "Concernant la chaîne des osselets :",
+    "choices": [
+      "Le pavillon est le quatrième osselet.",
+      "L’étrier est une structure du système olfactif.",
+      "L’enclume est intermédiaire.",
+      "Les osselets transmettent la lumière.",
+      "Le marteau est associé à la membrane tympanique."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : C’est une structure de l’oreille externe. B : L’étrier est un osselet auditif. C : Elle s’articule avec les autres osselets. D : Ils transmettent des vibrations mécaniques. E : Il reçoit les vibrations du tympan.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle du cérumen dans le conduit auditif externe ?",
+        "answers": [
+          "Le cérumen est une substance protectrice issue notamment des sécrétions des glandes de la paroi du conduit."
+        ],
+        "explanation": "Le cérumen participe à la protection du conduit auditif externe ; il ne constitue pas un déchet à retirer systématiquement en totalité.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_025",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 25,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "La trompe d’Eustache :",
+    "choices": [
+      "Fabrique les cellules ciliées rétiniennes.",
+      "Aide à équilibrer les pressions de part et d’autre du tympan.",
+      "Relie l’oreille moyenne au nasopharynx.",
+      "Constitue la partie centrale de la cochlée.",
+      "La trompe d’Eustache reste forcément fermée lorsque l’on bâille."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : La rétine appartient à la vision. B : Cela protège le fonctionnement de l’oreille moyenne. C : C’est sa communication anatomique. D : Elle est distincte de l’oreille interne. E : Elle peut s’ouvrir lors du bâillement et de la déglutition.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels sont les trois osselets, dans l’ordre ?",
+        "answers": [
+          "Marteau, enclume, étrier."
+        ],
+        "explanation": "Marteau, enclume, étrier.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_026",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 26,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "easy",
+    "question": "L’oreille interne contient :",
+    "choices": [
+      "Le conduit auditif externe.",
+      "La cochlée.",
+      "Le pavillon.",
+      "Le vestibule.",
+      "Les canaux semi-circulaires."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Il est dans l’oreille externe. B : Elle participe à l’audition. C : Il est dans l’oreille externe. D : Il participe à l’équilibre. E : Ils détectent les mouvements rotatoires.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle est la fonction de la trompe d’Eustache ?",
+        "answers": [
+          "Relier l’oreille moyenne au nasopharynx et égaliser les pressions de part et d’autre du tympan."
+        ],
+        "explanation": "Relier l’oreille moyenne au nasopharynx et égaliser les pressions de part et d’autre du tympan.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_027",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 27,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "À propos des liquides de l’oreille interne :",
+    "choices": [
+      "Les liquides participent au mécanisme de transmission mécanique.",
+      "La périlymphe se situe dans l’espace du labyrinthe osseux.",
+      "La périlymphe correspond à l’humeur aqueuse.",
+      "L’endolymphe remplit le labyrinthe membraneux.",
+      "L’endolymphe remplit le conduit auditif externe."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le mouvement du liquide permet de stimuler les cellules sensorielles. B : Elle entoure les structures du labyrinthe membraneux. C : L’humeur aqueuse est un liquide de l’œil. D : C’est un liquide distinct. E : Le conduit externe n’appartient pas au labyrinthe.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "À quoi sert la cochlée ?",
+        "answers": [
+          "Structure spiralée de l’oreille interne participant à l’audition."
+        ],
+        "explanation": "Structure spiralée de l’oreille interne participant à l’audition.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_028",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 28,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "Dans l’audition, les étapes suivantes sont correctes :",
+    "choices": [
+      "Le stimulus est initialement une molécule odorante.",
+      "La chaîne des osselets transmet les vibrations à la rétine.",
+      "La rétine amplifie les vibrations sonores.",
+      "Le pavillon capte les ondes sonores.",
+      "Le tympan vibre."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Il s’agit d’une onde sonore. B : La rétine appartient à l’œil, non à l’oreille. C : Elle participe à la vision. D : C’est le rôle de l’oreille externe. E : Il transforme les variations de pression en mouvement.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de l’organe de Corti ?",
+        "answers": [
+          "Il contient les cellules ciliées qui participent à la conversion des vibrations en information nerveuse."
+        ],
+        "explanation": "Il contient les cellules ciliées qui participent à la conversion des vibrations en information nerveuse.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_029",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 29,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "Dans la cochlée :",
+    "choices": [
+      "L’organe de Corti contient des cellules ciliées.",
+      "Les messages auditifs de la cochlée empruntent principalement le nerf optique.",
+      "La pupille réalise l’amplification mécanique.",
+      "Les vibrations mécaniques donnent lieu à des messages nerveux.",
+      "La fovéa est la structure auditive principale."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Elles sont les cellules sensorielles auditives. B : Ils empruntent la branche cochléaire du VIII. C : La pupille est un orifice de l’œil. D : C’est la transduction auditive. E : La fovéa est rétinienne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel liquide remplit le labyrinthe membraneux et quel liquide l’entoure ?",
+        "answers": [
+          "Endolymphe à l’intérieur ; périlymphe autour, dans l’espace du labyrinthe osseux."
+        ],
+        "explanation": "Endolymphe à l’intérieur ; périlymphe autour, dans l’espace du labyrinthe osseux.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_030",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 30,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "easy",
+    "question": "L’équilibre :",
+    "choices": [
+      "Met en jeu le système vestibulaire.",
+      "N’utilise aucune voie nerveuse.",
+      "Repose uniquement sur la rétine.",
+      "Est assuré par le pavillon seul.",
+      "Les canaux semi-circulaires détectent principalement les couleurs."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Il est situé dans l’oreille interne. B : Les informations sont conduites notamment par le nerf vestibulaire. C : La vision aide à l’orientation mais ne remplace pas le vestibule. D : Le pavillon sert surtout à collecter les sons. E : Les canaux semi-circulaires participent à l’équilibre.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le trajet simplifié du son ?",
+        "answers": [
+          "Pavillon → conduit auditif → tympan → osselets → fenêtre ovale → cochlée → nerf cochléaire."
+        ],
+        "explanation": "Pavillon → conduit auditif → tympan → osselets → fenêtre ovale → cochlée → nerf cochléaire.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_031",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 31,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "medium",
+    "question": "Utricule, saccule et canaux semi-circulaires :",
+    "choices": [
+      "Les canaux semi-circulaires participent aux mouvements rotatoires.",
+      "Le saccule est un osselet.",
+      "L’utricule et le saccule participent aux accélérations linéaires.",
+      "La cochlée remplace systématiquement le vestibule pour l’équilibre.",
+      "Ces structures sont dans l’oreille interne."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Leurs crêtes sensorielles sont sensibles aux rotations. B : Il est vestibulaire, non dans la chaîne des osselets. C : Les macules de l’utricule et du saccule détectent les accélérations linéaires. D : La cochlée est principalement auditive. E : Ces structures appartiennent à l’oreille interne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle différence entre vestibule et canaux semi-circulaires ?",
+        "answers": [
+          "Utricule/saccule : accélérations linéaires ; canaux semi-circulaires : mouvements rotatoires."
+        ],
+        "explanation": "Utricule/saccule : accélérations linéaires ; canaux semi-circulaires : mouvements rotatoires.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_032",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 32,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "hard",
+    "question": "Le nerf vestibulocochléaire (VIII) :",
+    "choices": [
+      "Est le nerf optique.",
+      "Est localisé dans le derme.",
+      "Comprend une branche cochléaire.",
+      "Intervient dans l’acheminement de messages sensoriels.",
+      "Comprend une branche vestibulaire."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le nerf optique est le II, distinct. B : Il relève de l’oreille interne. C : Elle transporte les messages auditifs. D : Il rejoint le système nerveux central. E : Elle transporte les messages d’équilibre.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les deux branches du nerf VIII ?",
+        "answers": [
+          "Nerf cochléaire (audition) et nerf vestibulaire (équilibre)."
+        ],
+        "explanation": "Nerf cochléaire (audition) et nerf vestibulaire (équilibre).",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_033",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 33,
+    "theme": "Audition et équilibre — oreille",
+    "difficulty": "hard",
+    "question": "Concernant les structures de l’oreille, quelles associations sont exactes ?",
+    "choices": [
+      "Pavillon : structure interne de la cochlée.",
+      "Conduit auditif externe : région externe.",
+      "Tympan : organe de l’équilibre situé dans le vestibule.",
+      "Cochlée : région interne.",
+      "L’étrier se trouve à l’intérieur de la rétine."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Il appartient à l’oreille externe. B : Il relie le pavillon au tympan. C : Il sépare le conduit auditif externe de l’oreille moyenne. D : C’est la structure spiralée auditive. E : L’étrier se trouve dans l’oreille moyenne.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelle région cérébrale traite les informations auditives ?",
+        "answers": [
+          "Le lobe temporal."
+        ],
+        "explanation": "Le lobe temporal.",
+        "theme": "Audition et équilibre — oreille"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_034",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 34,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "easy",
+    "question": "L’anatomie des fosses nasales comporte :",
+    "choices": [
+      "Une chaîne de trois osselets.",
+      "Deux cavités séparées par un septum.",
+      "Une rétine au toit des fosses.",
+      "Des cornets supérieur, moyen et inférieur de chaque côté.",
+      "Les choanes sont des papilles gustatives."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Elle appartient à l’oreille. B : Le septum nasal forme la cloison médiane. C : La rétine appartient à l’œil. D : Ils appartiennent à la paroi latérale. E : Les choanes sont les ouvertures nasales postérieures.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les grandes parties des fosses nasales ?",
+        "answers": [
+          "Deux cavités séparées par le septum, cornets, narines en avant et choanes en arrière."
+        ],
+        "explanation": "Deux cavités séparées par le septum, cornets, narines en avant et choanes en arrière.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_035",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 35,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "medium",
+    "question": "Le système naso-sinusien :",
+    "choices": [
+      "Les sinus maxillaires sont des cavités de l’oreille moyenne.",
+      "Assure principalement l’accommodation du cristallin.",
+      "Participe à l’olfaction.",
+      "Réceptionne les vibrations auditives au niveau des osselets.",
+      "Participe à la respiration."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Les sinus maxillaires, frontaux, ethmoïdaux et sphénoïdaux sont des cavités osseuses de la face situées autour des fosses nasales, et non dans l’oreille. B : L’accommodation dépend du cristallin, non du système naso-sinusien. C : La muqueuse olfactive permet la détection des odeurs. D : Les osselets appartiennent à l’oreille moyenne. E : Le système naso-sinusien participe au passage et au conditionnement de l’air respiré.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Où se trouve la muqueuse olfactive ?",
+        "answers": [
+          "Dans la région supérieure des fosses nasales."
+        ],
+        "explanation": "Dans la région supérieure des fosses nasales.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_036",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 36,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "medium",
+    "question": "La muqueuse olfactive :",
+    "choices": [
+      "Est totalement dépourvue de connexion nerveuse.",
+      "Constitue une région spécialisée distincte de la muqueuse respiratoire.",
+      "Contient des cellules sensorielles sensibles aux molécules odorantes.",
+      "Est la structure responsable de la cataracte.",
+      "Se trouve dans la région supérieure des fosses nasales."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Les messages rejoignent le bulbe olfactif. B : La muqueuse olfactive abrite des récepteurs odorants, distincts de la muqueuse respiratoire. C : Les molécules provoquent leur activation. D : La cataracte atteint le cristallin. E : C’est le siège des récepteurs olfactifs.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle du bulbe olfactif ?",
+        "answers": [
+          "Recevoir les messages nerveux des neurones olfactifs."
+        ],
+        "explanation": "Recevoir les messages nerveux des neurones olfactifs.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_037",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 37,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "hard",
+    "question": "Dans le parcours de l’information olfactive :",
+    "choices": [
+      "La cochlée détecte les odeurs.",
+      "La mémoire peut être associée à certaines odeurs.",
+      "Le nerf optique porte les informations olfactives.",
+      "Le bulbe olfactif reçoit des signaux des neurones olfactifs.",
+      "Des molécules odorantes entrent dans les fosses nasales."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La cochlée intervient dans l’audition. B : Les voies olfactives sont liées à des circuits impliqués dans les souvenirs. C : Les voies olfactives sont distinctes des voies visuelles. D : Le bulbe est un premier relais du système olfactif. E : Les molécules odorantes peuvent être inspirées ou provenir des aliments.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles fonctions remplit le système naso-sinusien ?",
+        "answers": [
+          "Fonction respiratoire et fonction olfactive."
+        ],
+        "explanation": "Fonction respiratoire et fonction olfactive.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_038",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 38,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "medium",
+    "question": "À propos de l’odorat pendant les repas :",
+    "choices": [
+      "L’odorat ne joue jamais de rôle dans la perception des aliments.",
+      "L’olfaction repose sur les bâtonnets.",
+      "La perte d’odorat détruit obligatoirement toutes les papilles.",
+      "La rétro-olfaction est une vibration du tympan.",
+      "Des molécules odorantes peuvent atteindre le nez depuis la bouche."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : L’odorat contribue à la perception globale des aliments. B : Ce sont des photorécepteurs. C : La gustation peut rester fonctionnelle. D : C’est le trajet des molécules odorantes vers la muqueuse nasale. E : C’est la rétro-olfaction.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Qu’est-ce que la rétro-olfaction ?",
+        "answers": [
+          "La perception d’odeurs provenant de molécules qui remontent de la bouche vers le nez pendant un repas."
+        ],
+        "explanation": "La perception d’odeurs provenant de molécules qui remontent de la bouche vers le nez pendant un repas.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_039",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 39,
+    "theme": "Odorat — fosses nasales",
+    "difficulty": "hard",
+    "question": "À propos des fosses nasales et de l’olfaction :",
+    "choices": [
+      "Cavité nasale : organe exclusif de la vision.",
+      "Muqueuse olfactive : récepteurs; bulbe : premier relais central.",
+      "Narines : entrée antérieure; choanes : ouverture postérieure.",
+      "Sinus : lieux principaux de fabrication des osselets.",
+      "Septum : cloison; cornets : reliefs latéraux."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Elle participe à l’olfaction et à la respiration. B : Ces structures ne sont pas interchangeables. C : L’une ouvre vers l’extérieur, l’autre vers le nasopharynx. D : Les sinus sont des cavités de la face. E : Ils occupent des positions anatomiques distinctes.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que désignent les narines et les choanes ?",
+        "answers": [
+          "Les narines sont les ouvertures antérieures des fosses nasales ; les choanes s’ouvrent en arrière vers le nasopharynx."
+        ],
+        "explanation": "Les narines sont les ouvertures antérieures des fosses nasales ; les choanes s’ouvrent en arrière vers le nasopharynx.",
+        "theme": "Odorat — fosses nasales"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_040",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 40,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "easy",
+    "question": "La langue :",
+    "choices": [
+      "Participe à la mastication.",
+      "Elle empêche systématiquement la déglutition.",
+      "Elle est dépourvue de papilles.",
+      "La langue ne participe pas à la phonation.",
+      "Remplace l’oreille interne dans l’équilibre."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : La langue aide à déplacer et à malaxer les aliments lors de la mastication. B : La langue intervient au contraire dans la déglutition. C : La langue porte des papilles tactiles et gustatives. D : La langue participe à l’articulation de la parole (phonation). E : Le système vestibulaire de l’oreille interne intervient dans l’équilibre.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles fonctions de la langue ne relèvent pas directement du goût ?",
+        "answers": [
+          "La mastication, la déglutition et la phonation."
+        ],
+        "explanation": "La mastication, la déglutition et la phonation.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_041",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 41,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "easy",
+    "question": "À propos des papilles linguales :",
+    "choices": [
+      "Les filiformes sont surtout tactiles.",
+      "Les papilles caliciformes sont dépourvues de bourgeons gustatifs.",
+      "Les foliées peuvent contenir des bourgeons gustatifs.",
+      "Les filiformes sont le lieu principal des bourgeons gustatifs.",
+      "Les fongiformes peuvent contenir des bourgeons gustatifs."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Les papilles filiformes ont principalement une fonction mécanique. B : Les papilles caliciformes portent des bourgeons gustatifs. C : Les papilles foliées peuvent porter des bourgeons gustatifs. D : Les papilles filiformes n’en contiennent pas. E : Les papilles fongiformes peuvent contenir des bourgeons gustatifs.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles papilles sont gustatives ?",
+        "answers": [
+          "Fongiformes, foliées et caliciformes."
+        ],
+        "explanation": "Fongiformes, foliées et caliciformes.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_042",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 42,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "medium",
+    "question": "Le bourgeon gustatif :",
+    "choices": [
+      "Présente un pore gustatif.",
+      "Est une structure de la rétine.",
+      "Participe à la détection de molécules sapides.",
+      "Correspond au bulbe olfactif.",
+      "Comporte des cellules gustatives et de soutien."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Ce pore est une ouverture vers la surface. B : Il se trouve dans les tissus gustatifs. C : Il appartient à la réception gustative. D : Il ne s’agit pas de la même structure. E : Il est constitué de plusieurs types cellulaires.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Que contient un bourgeon gustatif ?",
+        "answers": [
+          "Des cellules gustatives, des cellules de soutien et un pore gustatif."
+        ],
+        "explanation": "Des cellules gustatives, des cellules de soutien et un pore gustatif.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_043",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 43,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "medium",
+    "question": "Parmi les propositions suivantes, lesquelles désignent des saveurs gustatives ?",
+    "choices": [
+      "Le lumineux.",
+      "L’amer.",
+      "Le sucré.",
+      "Le sonore.",
+      "L’acide."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La lumière est un stimulus visuel. B : Il s’agit d’une saveur gustative. C : Il s’agit d’une saveur gustative. D : Le son est un stimulus auditif. E : Il s’agit d’une saveur gustative.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les cinq qualités gustatives classiques ?",
+        "answers": [
+          "Sucré, salé, acide, amer et umami."
+        ],
+        "explanation": "Les cinq qualités gustatives classiques sont le sucré, le salé, l’acide, l’amer et l’umami. Elles ne correspondent pas à des territoires exclusifs de la langue. Les odeurs relèvent de l’olfaction.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_044",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 44,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "hard",
+    "question": "La transmission des sensations gustatives :",
+    "choices": [
+      "Dépend exclusivement du nerf optique.",
+      "Rejoint une aire gustative cérébrale.",
+      "Passe par des structures centrales avant la perception.",
+      "Implique plusieurs nerfs crâniens.",
+      "Est assurée principalement par les osselets."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le nerf optique est visuel. B : La perception gustative fait intervenir une aire cérébrale spécialisée. C : L’information gustative emprunte notamment un relais thalamique. D : Les nerfs facial, glossopharyngien et vague participent à la gustation. E : Ils transmettent les sons.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "La perception gustative dépend-elle d’un seul nerf ?",
+        "answers": [
+          "Non ; plusieurs nerfs crâniens participent à la transmission."
+        ],
+        "explanation": "Non ; plusieurs nerfs crâniens participent à la transmission.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_045",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 45,
+    "theme": "Goût — langue et bourgeons",
+    "difficulty": "hard",
+    "question": "Concernant l’anatomie et la fonction des papilles linguales :",
+    "choices": [
+      "Toutes les papilles linguales se situent exactement au même endroit.",
+      "Certaines papilles ont surtout un rôle mécanique, d’autres portent des bourgeons gustatifs.",
+      "Toutes les papilles linguales possèdent des bourgeons du goût.",
+      "Les papilles linguales présentent des formes et des fonctions différentes.",
+      "Le pore gustatif permet le contact des molécules sapides avec les cellules gustatives."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Les papilles sont réparties dans différentes zones de la langue. B : Les papilles filiformes ont surtout un rôle mécanique, tandis que d’autres types portent des bourgeons gustatifs. C : Les papilles filiformes ne possèdent pas de bourgeons gustatifs. D : Les types de papilles diffèrent par leur morphologie et leur fonction. E : Le pore gustatif permet aux molécules sapides dissoutes d’atteindre les cellules gustatives.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle du pore gustatif ?",
+        "answers": [
+          "Il permet le contact des molécules sapides dissoutes avec les cellules sensorielles gustatives."
+        ],
+        "explanation": "Il permet le contact des molécules sapides dissoutes avec les cellules sensorielles gustatives.",
+        "theme": "Goût — langue et bourgeons"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_046",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 46,
+    "theme": "Toucher — peau et sensibilité",
+    "difficulty": "easy",
+    "question": "Quelles structures constituent les trois grandes couches de la peau ?",
+    "choices": [
+      "La choroïde.",
+      "Le derme.",
+      "L’hypoderme.",
+      "La cochlée.",
+      "L’épiderme."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Elle appartient à l’œil. B : Il se situe sous l’épiderme. C : Il est plus profond et souvent adipeux. D : Elle appartient à l’oreille. E : Il est la couche superficielle.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quelles sont les trois grandes couches de la peau, de la surface à la profondeur ?",
+        "answers": [
+          "L’épiderme, le derme et l’hypoderme."
+        ],
+        "explanation": "L’épiderme, le derme et l’hypoderme.",
+        "theme": "Toucher — peau et sensibilité"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_047",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 47,
+    "theme": "Toucher — peau et sensibilité",
+    "difficulty": "medium",
+    "question": "Parmi les fonctions de la peau, on retrouve :",
+    "choices": [
+      "La réfraction de la lumière.",
+      "La protection de l’organisme.",
+      "La thermorégulation.",
+      "L’information sensitive.",
+      "La peau ne participe pas à la synthèse de la vitamine D."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La réfraction des rayons lumineux est assurée par les milieux transparents de l’œil. B : La peau constitue une barrière protectrice. C : Elle contribue au maintien de la température corporelle. D : Elle contient des récepteurs de la sensibilité cutanée. E : La peau participe également à la synthèse de vitamine D.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel est le rôle de l’hypoderme ?",
+        "answers": [
+          "Plan sous-cutané riche en tissu adipeux, associé aux réserves et à la protection."
+        ],
+        "explanation": "Plan sous-cutané riche en tissu adipeux, associé aux réserves et à la protection.",
+        "theme": "Toucher — peau et sensibilité"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_048",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 48,
+    "theme": "Toucher — peau et sensibilité",
+    "difficulty": "easy",
+    "question": "Les récepteurs cutanés permettent notamment de détecter :",
+    "choices": [
+      "Des stimulations mécaniques.",
+      "Uniquement les ondes sonores.",
+      "Des stimuli potentiellement douloureux.",
+      "Uniquement des molécules odorantes.",
+      "Des variations thermiques."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : C’est le rôle des mécanorécepteurs. B : Elles sont détectées par l’appareil auditif. C : C’est le rôle des nocicepteurs. D : Ce sont les récepteurs olfactifs qui les détectent. E : C’est le rôle des thermorécepteurs.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels récepteurs détectent pression et vibration ?",
+        "answers": [
+          "Les mécanorécepteurs cutanés."
+        ],
+        "explanation": "Les mécanorécepteurs cutanés.",
+        "theme": "Toucher — peau et sensibilité"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_049",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 49,
+    "theme": "Toucher — peau et sensibilité",
+    "difficulty": "medium",
+    "question": "À propos du derme et de l’hypoderme :",
+    "choices": [
+      "Le derme contient des récepteurs sensoriels.",
+      "L’hypoderme est la tunique nerveuse interne du globe oculaire.",
+      "L’hypoderme est riche en tissu adipeux.",
+      "L’épiderme correspond à la cochlée.",
+      "Le derme contient des vaisseaux et des annexes cutanées."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Ils contribuent à la sensibilité cutanée. B : Cette définition correspond à la rétine. C : Il contribue à la réserve énergétique. D : Ce sont des structures d’organes différents. E : Le derme contient des vaisseaux, des follicules pileux et des glandes.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quels récepteurs détectent température et douleur ?",
+        "answers": [
+          "Thermorécepteurs pour la température ; nocicepteurs pour les stimuli potentiellement lésionnels."
+        ],
+        "explanation": "Thermorécepteurs pour la température ; nocicepteurs pour les stimuli potentiellement lésionnels.",
+        "theme": "Toucher — peau et sensibilité"
+      }
+    ]
+  },
+  {
+    "id": "B11_ORGANES_SENS_050",
+    "courseId": "organes_des_sens_b11",
+    "ue": "B1.1 S1",
+    "course": "Les organes des sens",
+    "partId": "p01",
+    "number": 50,
+    "theme": "Toucher — peau et sensibilité",
+    "difficulty": "hard",
+    "question": "La sensation de toucher repose notamment sur :",
+    "choices": [
+      "La transmission nerveuse vers les centres d’intégration.",
+      "La transformation de la peau en une lentille transparente.",
+      "Le passage obligatoire par la cochlée.",
+      "La détection d’un stimulus par un récepteur cutané.",
+      "Le traitement cérébral des informations, notamment pariétal."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le message suit des voies sensitives. B : La peau n’a pas de fonction de lentille optique. C : La cochlée sert à l’audition. D : Le récepteur initie le message sensoriel. E : Le traitement des sensations tactiles implique notamment le lobe pariétal.",
+    "sourceKind": "official_support_and_lecture",
+    "sourceStatus": "pending_scientific_review",
+    "flashcards": [
+      {
+        "kind": "Notion précise",
+        "front": "Quel lobe cérébral participe notamment au traitement des sensations tactiles ?",
+        "answers": [
+          "Le lobe pariétal."
+        ],
+        "explanation": "Le lobe pariétal.",
+        "theme": "Toucher — peau et sensibilité"
+      }
+    ]
+  }
+]

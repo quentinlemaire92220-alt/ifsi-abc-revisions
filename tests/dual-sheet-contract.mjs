@@ -8,6 +8,15 @@ const sha=v=>typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);
 const driveId=sheet=>sheet?.driveId||String(sheet?.url||'').match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1];
 
 export function validateSheetSource(courseId,delivery,sheet){
+ if(delivery.deliveryMode==='existing_course_revision'&&delivery.sourceBasis?.nativeSupportAvailable===true){
+  assert.equal(delivery.sourceBasis.kind,'official_support_and_transcriptions',courseId+': rapprochement officiel absent');
+  assert.equal(delivery.sourceBasis.reconciled,true,courseId+': sources non rapprochées');
+  assert.equal(delivery.sourceAudit?.officialChecked,true,courseId+': officiel non examiné');
+  assert.equal(delivery.sourceAudit?.oralStatus,'complete',courseId+': transcriptions non examinées');
+  assert.equal(sheet.officialSupport,true,courseId+': origine officielle non déclarée');
+  assert.equal(sheet.provisional,false,courseId+': statut officiel incohérent');
+  return;
+ }
  if(delivery.provisional===true && delivery.deliveryMode==='source_limited_first_release'){
   const hasOfficialSupport=delivery.sourceBasis?.nativeSupportAvailable===true;
   assert.equal(delivery.status,'partial',courseId+': une livraison oralement non vérifiée reste partielle');
