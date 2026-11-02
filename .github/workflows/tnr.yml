@@ -246,6 +246,8 @@ jobs:
         run: |
           node tests/course-delivery.mjs
           node tests/psychologie-sante-official-revision-test.mjs
+          node tests/psychologie-sante-sheet-v4-test.mjs
+          node tests/psychologie-sante-final-sheet-test.mjs
 
       - name: Tester le refus de publication sans validation du package
         if: ${{ !cancelled() }}

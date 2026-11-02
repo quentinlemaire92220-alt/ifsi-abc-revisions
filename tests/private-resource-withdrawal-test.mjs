@@ -443,8 +443,26 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
    else if(previousDelivery && isPsychologieOfficialRevision(nextDelivery)){
     validatePsychologieOfficialRevision(nextDelivery);
     const historical=disk(nextDelivery.officialRevision.historicalDeliveryPath);
-    assert.deepEqual(historical.delivery,previousDelivery,'Livraison historique de psychologie altérée');
-    assert.deepEqual(historical.course,oldCourse,'Identité historique de psychologie altérée');
+    if(isPsychologieOfficialRevision(previousDelivery)){
+     // Successor sheet after the official 39-page release: retain that release,
+     // its earlier history, all question/card bytes and both audio resources.
+     assert.equal(nextDelivery.postOfficialSheetRevision?.revisionId,'psychologie_sante_52p_20261102');
+     assert.deepEqual(nextDelivery.officialRevision,previousDelivery.officialRevision,'Historique officiel remplacé');
+     for(const field of ['revisionSheetSupplement','qcmGraphicOwnerReview','qcmBank','qcmCount','flashcardCount','vocals'])
+      assert.deepEqual(nextDelivery[field],previousDelivery[field],'Ressource historique de psychologie altérée : '+field);
+     for(const [id,sha] of Object.entries(previousDelivery.artifactSha256s))
+      assert.equal(nextDelivery.artifactSha256s[id],sha,'Empreinte historique de psychologie altérée');
+     for(const role of ['qcm','flashcards'])assert.deepEqual(nextDelivery.publicArtifacts[role],previousDelivery.publicArtifacts[role]);
+     assert.deepEqual(disk(nextDelivery.qcmBank),before(previousDelivery.qcmBank),'QCM/cartes modifiés hors fiche');
+     assert.deepEqual(disk('vocals.json').filter(v=>v.courseId===course.id),before('vocals.json').filter(v=>v.courseId===course.id));
+     assert.deepEqual(nextDelivery.postOfficialSheetRevision.previousReview.publicArtifact,previousDelivery.publicArtifacts.sheet,'Ancienne fiche non conservée');
+     assert.deepEqual(nextDelivery.postOfficialSheetRevision.previousSheet,before('sheets-3.json').find(s=>s.resourceId===previousDelivery.sheetResourceId));
+     assert.deepEqual(without(course,['officialSupportUrl','officialSupportItems']),without(oldCourse,['officialSupportUrl','officialSupportItems']),'Identité du cours modifiée hors liens officiels');
+     assert.notDeepEqual(nextDelivery.publicationApproval,previousDelivery.publicationApproval,'Nouvelle fiche sans GO propre au lot');
+    }else{
+     assert.deepEqual(historical.delivery,previousDelivery,'Livraison historique de psychologie altérée');
+     assert.deepEqual(historical.course,oldCourse,'Identité historique de psychologie altérée');
+    }
    }
    else if(previousDelivery && course.id==='sante_mondiale_sante_france')preserveApprovedC11OfficialPartial(oldCourse,course,previousDelivery,nextDelivery);
    else if(previousDelivery && course.id==='droits_patients')preserveApprovedDroitsConsolidation(oldCourse,course,previousDelivery,nextDelivery);

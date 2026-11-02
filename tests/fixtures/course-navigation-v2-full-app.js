@@ -153,7 +153,7 @@
      });
      if(ranks[0]!==0||ranks.some(function(rank,i){return i&&rank<ranks[i-1]}))throw Error('Ordre incorrect pour '+course.id+': '+ranks);
      var support=detail.querySelector('.v74-original-support');
-     var reviewedPrivateOfficial=course.id==='psychologie_sante'&&course.officialSupport===true&&course.nativeSupportAvailable===true&&course.qcmPdfQuestionCount===62;
+     var reviewedPrivateOfficial=course.id==='psychologie_sante'&&course.officialSupport===true&&course.nativeSupportAvailable===true&&course.qcmPdfQuestionCount===62&&!course.officialSupportUrl&&!(course.officialSupportItems||[]).length;
      if(reviewedPrivateOfficial){
        official++;
        if(support.dataset.reviewedSource!=='true'||!support.textContent.includes('Supports officiels rapprochés'))throw Error('Rapprochement officiel privé absent pour '+course.id);
@@ -164,7 +164,16 @@
        missing++;
        if(!support.textContent.includes('Support officiel en attente'))throw Error('Attente officielle absente pour '+course.id);
        if(support.querySelector('.v74-official-link')?.textContent.includes('Ouvrir le support officiel'))throw Error('Faux support officiel pour '+course.id);
-     }else official++;
+     }else{
+       official++;
+       if(course.id==='psychologie_sante'){
+         if(course.provisional!==false||course.officialSupportItems.length!==3)throw Error('Publication officielle incomplète pour '+course.id);
+         for(var officialItem of course.officialSupportItems){
+           if(!Array.from(support.querySelectorAll('a[href]')).some(function(a){return a.href===officialItem.url;}))throw Error('Accès à un support officiel perdu pour '+course.id);
+         }
+         if(support.textContent.includes('Support officiel en attente')||detail.querySelector('.v8430-provisional'))throw Error('Ancien statut provisoire conservé pour '+course.id);
+       }
+     }
      if(course.qcmPdfUrl){
        qcm++;
        if(course.id==='responsabilite_exercice_professionnel'&&course.qcmPdfUrl.includes('1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN')){if(Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('Lien QCM 404 encore affiché : '+course.id);}else if(!Array.from(detail.querySelectorAll('.v74-qcm-section a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('PDF QCM mal classé : '+course.id);

@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const d=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8')).courses.find(c=>c.courseId==='psychologie_sante');
+const sheets=JSON.parse(fs.readFileSync('sheets-3.json','utf8')).filter(s=>s.courseId===d.courseId);
+assert.equal(hash('assets/psychologie-sante-20261102/Fiche_Psychologie_Sante_54p_79_Definitions_V4.pdf'),'5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1','Octets du candidat V4 historique altérés');
+assert.equal(sheets.some(s=>s.resourceId==='psychologie_sante_fiche_20261102_v4'),false);
+assert.equal(d.postOfficialSheetRevision.archivedCandidateSheets[0].resourceId,'psychologie_sante_fiche_20261102_v4');
+assert.equal(d.postOfficialSheetRevision.archivedCandidateSheets[0].sourceStatus,'archived');
+assert.equal(sheets.find(s=>s.resourceId==='psychologie_sante_fiche_20261029').sourceStatus,'archived');
+assert.equal(d.qcmCount,62);assert.equal(d.flashcardCount,71);
+assert.deepEqual(d.partDeliveries[0].vocalIds,['psychologie_sante_p01_vocal_01','psychologie_sante_p01_vocal_02']);
+console.log('PASS : candidat V4 et fiche 39p archivés, QCM, cartes et vocaux préservés');

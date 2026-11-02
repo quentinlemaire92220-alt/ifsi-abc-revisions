@@ -1,5 +1,5 @@
 {
-  "version": "8.30.159",
+  "version": "8.30.160",
   "courses": [
     {
       "id": "biomolecules",
@@ -743,7 +743,22 @@
       "provisional": false,
       "sourceStatus": "active",
       "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261029/QCM_Psychologie_Sante_62_29p.pdf",
-      "qcmPdfQuestionCount": 62
+      "qcmPdfQuestionCount": 62,
+      "officialSupportUrl": "https://drive.google.com/drive/folders/11Q1sWdn_k9IWdH-50zvHaWpDClVux0vu",
+      "officialSupportItems": [
+        {
+          "title": "Support officiel 1 — Mme Khatir (65 pages)",
+          "url": "https://drive.google.com/file/d/1-W3SwRme-OUHg6AcTgXPqSc6DeQ-DRaB/view"
+        },
+        {
+          "title": "Support officiel 2 — Mme Khatir (51 pages)",
+          "url": "https://drive.google.com/file/d/1F5JbtGThluVbgIiGvwnZWz28regXpmMa/view"
+        },
+        {
+          "title": "Support officiel 3 — Mme Khatir (43 pages)",
+          "url": "https://drive.google.com/file/d/1jDMytgilRYduAlIjurkHwN3PfmlWLpjL/view"
+        }
+      ]
     },
     {
       "id": "pharmacologie",

@@ -29,7 +29,7 @@ export function validatePsychologieOfficialRevision(d,data={}){
  assert.equal(d.qcmCount,62);assert.equal(d.flashcardCount,71);
  const registry=data.registry||read('course-registry-v741.json');
  const course=registry.courses.find(c=>c.id===d.courseId);
- const mutable=['officialSupport','nativeSupportAvailable','provisional','sourceStatus','qcmPdfUrl','qcmPdfQuestionCount','flashcardTarget','additionalDocuments'];
+ const mutable=['officialSupport','nativeSupportAvailable','provisional','sourceStatus','qcmPdfUrl','qcmPdfQuestionCount','flashcardTarget','additionalDocuments','officialSupportUrl','officialSupportItems'];
  const identity=c=>Object.fromEntries(Object.entries(c).filter(([k])=>!mutable.includes(k)));
  assert.deepEqual(identity(course),identity(history.course),'Identité du cours ou audio modifiés');
  assert.deepEqual(course.additionalDocuments.slice(0,history.course.additionalDocuments.length),history.course.additionalDocuments);
@@ -38,22 +38,39 @@ export function validatePsychologieOfficialRevision(d,data={}){
  assert.deepEqual(voices,history.vocals,'Les deux vocaux historiques ont changé');
  for(const v of voices)assert.equal(sha(v.localAudio),d.artifactSha256s[v.driveId]);
  const sheets=(data.sheets||[1,2,3].flatMap(n=>read('sheets-'+n+'.json'))).filter(s=>s.courseId===d.courseId);
- assert.equal(sheets.length,3);assert.equal(history.sheets.length,2);
+ const upgrade=d.postOfficialSheetRevision;assert.equal(sheets.length,upgrade?4:3);assert.equal(history.sheets.length,2);
  assert.deepEqual(r.archivedSheetResourceIds,history.sheets.map(s=>s.resourceId));
  for(const old of history.sheets)assert.deepEqual(sheets.find(s=>s.resourceId===old.resourceId),
   {...old,sourceStatus:'archived'},'Archive historique altérée ou supprimée');
+ if(upgrade){assert.deepEqual(sheets.find(s=>s.resourceId===upgrade.previousSheet.resourceId),{...upgrade.previousSheet,sourceStatus:'archived'});assert.equal(sha(upgrade.previousReview.publicArtifact.path),upgrade.previousReview.publicArtifact.sha256);assert.equal(upgrade.previousReview.publicArtifact.sha256,r.acceptedPdfSha256s.sheet);assert.equal(upgrade.publicationApproval.status,'approved');}
  const active=sheets.filter(s=>s.sourceStatus!=='archived');assert.equal(active.length,1);
  assert.equal(active[0].resourceId,d.sheetResourceId);assert.equal(active[0].primaryRevision,true);
- assert.equal(active[0].pageCount,39);assert.equal(active[0].lexiconTermCount,73);
+ assert.equal(active[0].pageCount,upgrade?upgrade.pageCount:39);assert.equal(active[0].lexiconTermCount,upgrade?79:73);
  assert.equal(active[0].officialSupport,true);assert.equal(active[0].provisional,false);
- const expected={sheet:['236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf',39],
+ if(upgrade?.revisionId==='psychologie_sante_52p_20261102'){
+  assert.equal(upgrade.pdfSha256,'9c651de40791b83755bf11a883f40d5f2a96729afedc217b27c6d30d49126f4d');
+  assert.equal(upgrade.pageCount,52);
+  assert.equal(upgrade.archivedCandidateSheets.length,1);
+  for(const old of upgrade.archivedCandidateSheets){assert.equal(sheets.some(s=>s.resourceId===old.resourceId),false,'Candidat QA non publié ajouté au catalogue étudiant');assert.equal(old.sourceStatus,'archived');}
+  assert.equal(sha(upgrade.archivedCandidateArtifacts[0].path),'5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1');
+  assert.equal(course.officialSupportUrl,'https://drive.google.com/drive/folders/11Q1sWdn_k9IWdH-50zvHaWpDClVux0vu');
+  assert.deepEqual(course.officialSupportItems.map(x=>x.url),[
+   'https://drive.google.com/file/d/1-W3SwRme-OUHg6AcTgXPqSc6DeQ-DRaB/view',
+   'https://drive.google.com/file/d/1F5JbtGThluVbgIiGvwnZWz28regXpmMa/view',
+   'https://drive.google.com/file/d/1jDMytgilRYduAlIjurkHwN3PfmlWLpjL/view']);
+  assert.equal(course.provisional,false);
+ }else{
+  assert.deepEqual(course.officialSupportUrl,history.course.officialSupportUrl);
+  assert.deepEqual(course.officialSupportItems,history.course.officialSupportItems);
+ }
+ const expected={sheet:upgrade?[upgrade.pdfSha256,upgrade.pageCount]:['236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf',39],
   qcm:['c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf',29],
   flashcards:['6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716',12]};
  assert.deepEqual(Object.keys(d.publicArtifacts).sort(),Object.keys(expected).sort());
  for(const [role,[hash,pages]] of Object.entries(expected)){
   const a=d.publicArtifacts[role];assert.equal(a.sha256,hash);assert.equal(sha(a.path),hash);
   assert.equal(a.pageCount,pages);assert.equal(d.artifactSha256s[a.artifactId],hash);
-  assert.equal(r.acceptedPdfSha256s[role],hash);
+  if(role!=='sheet'||!upgrade)assert.equal(r.acceptedPdfSha256s[role],hash);
  }
  for(const a of Object.values(prior.publicArtifacts))assert.equal(sha(a.path),a.sha256);
  assert.equal(sha(prior.revisionSheetSupplement.publicAsset.path),prior.revisionSheetSupplement.pdfSha256);
@@ -73,7 +90,7 @@ export function validatePsychologieOfficialRevision(d,data={}){
 }
 export function isPsychologieSheetArchive(previous,current,delivery){
  if(!isPsychologieOfficialRevision(delivery)||previous.courseId!==delivery.courseId||
-  !delivery.officialRevision.archivedSheetResourceIds.includes(previous.resourceId))return false;
+  ![...delivery.officialRevision.archivedSheetResourceIds,delivery.postOfficialSheetRevision?.previousSheet?.resourceId].includes(previous.resourceId))return false;
  validatePsychologieOfficialRevision(delivery);
  assert.deepEqual(current,{...previous,sourceStatus:'archived'});
  return true;
