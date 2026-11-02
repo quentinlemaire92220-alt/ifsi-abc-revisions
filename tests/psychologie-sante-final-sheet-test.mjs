@@ -3,7 +3,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const d=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='psychologie_sante');
 const sheets=read('sheets-3.json').filter(s=>s.courseId===d.courseId),active=sheets.filter(s=>s.sourceStatus==='active');
 const p='assets/psychologie-sante-20261102/Fiche_Psychologie_Sante_52p_79_Definitions.pdf';
-assert.equal(sheets.length,5);assert.equal(active.length,1);assert.equal(active[0].resourceId,'psychologie_sante_fiche_20261102_52p');
+assert.equal(sheets.length,4);assert.equal(active.length,1);assert.equal(active[0].resourceId,'psychologie_sante_fiche_20261102_52p');
 assert.equal(d.publicArtifacts.sheet.path,p);assert.equal(d.publicArtifacts.sheet.pageCount,52);
 assert.equal(createHash('sha256').update(fs.readFileSync(p)).digest('hex'),'9c651de40791b83755bf11a883f40d5f2a96729afedc217b27c6d30d49126f4d');
 assert.equal(active[0].pageCount,52);assert.equal(active[0].lexiconTermCount,79);assert.equal(active[0].provisional,false);

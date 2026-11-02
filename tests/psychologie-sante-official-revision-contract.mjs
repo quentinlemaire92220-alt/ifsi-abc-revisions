@@ -38,7 +38,7 @@ export function validatePsychologieOfficialRevision(d,data={}){
  assert.deepEqual(voices,history.vocals,'Les deux vocaux historiques ont changé');
  for(const v of voices)assert.equal(sha(v.localAudio),d.artifactSha256s[v.driveId]);
  const sheets=(data.sheets||[1,2,3].flatMap(n=>read('sheets-'+n+'.json'))).filter(s=>s.courseId===d.courseId);
- const upgrade=d.postOfficialSheetRevision;assert.equal(sheets.length,upgrade?4+(upgrade.archivedCandidateSheets||[]).length:3);assert.equal(history.sheets.length,2);
+ const upgrade=d.postOfficialSheetRevision;assert.equal(sheets.length,upgrade?4:3);assert.equal(history.sheets.length,2);
  assert.deepEqual(r.archivedSheetResourceIds,history.sheets.map(s=>s.resourceId));
  for(const old of history.sheets)assert.deepEqual(sheets.find(s=>s.resourceId===old.resourceId),
   {...old,sourceStatus:'archived'},'Archive historique altérée ou supprimée');
@@ -51,7 +51,8 @@ export function validatePsychologieOfficialRevision(d,data={}){
   assert.equal(upgrade.pdfSha256,'9c651de40791b83755bf11a883f40d5f2a96729afedc217b27c6d30d49126f4d');
   assert.equal(upgrade.pageCount,52);
   assert.equal(upgrade.archivedCandidateSheets.length,1);
-  for(const old of upgrade.archivedCandidateSheets)assert.deepEqual(sheets.find(s=>s.resourceId===old.resourceId),old,'Candidat historique perdu ou altéré');
+  for(const old of upgrade.archivedCandidateSheets){assert.equal(sheets.some(s=>s.resourceId===old.resourceId),false,'Candidat QA non publié ajouté au catalogue étudiant');assert.equal(old.sourceStatus,'archived');}
+  assert.equal(sha(upgrade.archivedCandidateArtifacts[0].path),'5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1');
   assert.equal(course.officialSupportUrl,'https://drive.google.com/drive/folders/11Q1sWdn_k9IWdH-50zvHaWpDClVux0vu');
   assert.deepEqual(course.officialSupportItems.map(x=>x.url),[
    'https://drive.google.com/file/d/1-W3SwRme-OUHg6AcTgXPqSc6DeQ-DRaB/view?usp=drivesdk',
@@ -89,7 +90,7 @@ export function validatePsychologieOfficialRevision(d,data={}){
 }
 export function isPsychologieSheetArchive(previous,current,delivery){
  if(!isPsychologieOfficialRevision(delivery)||previous.courseId!==delivery.courseId||
-  !delivery.officialRevision.archivedSheetResourceIds.includes(previous.resourceId))return false;
+  ![...delivery.officialRevision.archivedSheetResourceIds,delivery.postOfficialSheetRevision?.previousSheet?.resourceId].includes(previous.resourceId))return false;
  validatePsychologieOfficialRevision(delivery);
  assert.deepEqual(current,{...previous,sourceStatus:'archived'});
  return true;

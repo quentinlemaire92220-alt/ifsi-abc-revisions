@@ -39,12 +39,16 @@ function verifiedPageAssetId(item){
   supplement.publicationApproval?.status==='approved'&&
   supplement.publicationApproval?.scope==='revision_sheet_only'&&
   supplement.publicationApproval?.authorization==='explicit_go_publication';
- const a=isPrimary?c.publicArtifacts?.sheet:isRevision?supplement.publicAsset:null;
+ const previous=c?.postOfficialSheetRevision?.previousReview;
+ const isArchive=item.sourceStatus==='archived'&&previous?.sheetResourceId===item.resourceId&&
+  JSON.stringify(item)===JSON.stringify({...c.postOfficialSheetRevision.previousSheet,sourceStatus:'archived'});
+ const a=isPrimary?c.publicArtifacts?.sheet:isRevision?supplement.publicAsset:isArchive?previous.publicArtifact:null;
  if(!a||!a.path||!/^[a-f0-9]{64}$/.test(a.sha256||''))return null;
  if(!a.path.startsWith('assets/')||a.path.includes('..')||!a.path.endsWith('.pdf'))return null;
  if(item.url!==siteBase+a.path||!fs.existsSync(a.path))return null;
  if(isPrimary&&c.artifactSha256s?.[a.artifactId]!==a.sha256)return null;
  if(isRevision&&supplement.pdfSha256!==a.sha256)return null;
+ if(isArchive&&(c.artifactSha256s?.[a.artifactId]!==a.sha256||createHash('sha256').update(fs.readFileSync(a.path)).digest('hex')!==a.sha256))return null;
  if(isRevision&&createHash('sha256').update(fs.readFileSync(a.path)).digest('hex')!==a.sha256)return null;
  return 'pages:'+a.path;
 }
