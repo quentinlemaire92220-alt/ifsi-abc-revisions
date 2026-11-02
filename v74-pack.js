@@ -147,6 +147,12 @@ function renderDashboard74(){
 function courseMeta74(label){
   const c=registryCourse74(label)||{};return {ue:c.ue||'Autres',domain:c.domain||'',id:c.id||''}
 }
+// Clé d'affichage uniquement : conserver le code détaillé dans le registre et la recherche.
+function catalogUe74(value){
+  const code=String(value||'').trim().toUpperCase();
+  const match=code.match(/^([A-E][1-9]\d*)(?:\.\d+)*$/);
+  return match?match[1]:code||'Autres'
+}
 function ueOrder74(ue){const order=['A1','A2','B1','B2','B3','C1','C2','D1','D2','E1','E2','E3','T'];const i=order.indexOf(ue);return i<0?999:i}
 function domainName74(domain){
   return ({A:'Sciences humaines, sociales et droit',B:'Sciences biologiques et médicales',C:'Sciences et techniques infirmières',D:'Communication et relation de soins',E:'Méthodes et outils pour la formation'})[domain]||'Autres enseignements'
@@ -159,7 +165,7 @@ function renderCourses74(){
   });
   const domains=new Map();
   for(const label of courses){
-    const meta=courseMeta74(label),domain=meta.domain||'Autres',ue=meta.ue||'Autres';
+    const meta=courseMeta74(label),domain=meta.domain||'Autres',ue=catalogUe74(meta.ue);
     if(!domains.has(domain))domains.set(domain,new Map());
     const ues=domains.get(domain);if(!ues.has(ue))ues.set(ue,[]);
     ues.get(ue).push({label,meta,data:courseData74(label)})
