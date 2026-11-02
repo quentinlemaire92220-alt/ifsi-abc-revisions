@@ -2549,5 +2549,71 @@
       "toSha256": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70",
       "approvedAt": "2026-11-02T15:25:37Z"
     }
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_01",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 4,
+    "title": "Risque infectieux 1/6 — Agents, infections associées aux soins et prévention coordonnée",
+    "mime": "audio/mpeg",
+    "durationSeconds": 388.656,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_01.mp3",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_02",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 5,
+    "title": "Risque infectieux 2/6 — Organisation des soins et précautions standard",
+    "mime": "audio/mpeg",
+    "durationSeconds": 383.281958,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_02.mp3",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_03",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 6,
+    "title": "Risque infectieux 3/6 — Accidents, circuits, précautions complémentaires et résistances",
+    "mime": "audio/mpeg",
+    "durationSeconds": 410.297333,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_03.mp3",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_04",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 7,
+    "title": "Risque infectieux 4/6 — Antisepsie et principes de traitement des dispositifs",
+    "mime": "audio/mpeg",
+    "durationSeconds": 393.886667,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_04.mp3",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_05",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 8,
+    "title": "Risque infectieux 5/6 — Retraitement du matériel, locaux, air et eau",
+    "mime": "audio/mpeg",
+    "durationSeconds": 396.641333,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_05.mp3",
+    "syntheticSpeech": true
+  },
+  {
+    "id": "prevention_ias_asepsie_global_20261102_vocal_06",
+    "courseId": "prevention_ias_asepsie",
+    "course": "Prévention des IAS et asepsie",
+    "number": 9,
+    "title": "Risque infectieux 6/6 — Cas corrigés, distinctions et synthèse du cours",
+    "mime": "audio/mpeg",
+    "durationSeconds": 401.305958,
+    "localAudio": "./assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_06.mp3",
+    "syntheticSpeech": true
   }
 ]
