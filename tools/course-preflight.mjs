@@ -16,6 +16,8 @@ const commands=[
  ['pedagogical_contract',n,['tests/course-bank-current.mjs',stage]],
  ['preparation_isolation',n,['tests/course-preparation-stage.mjs']],
  ['pedagogical_v149_contract',n,['tools/pedagogical-non-regression-v149.mjs','--self-test']],
+ ['hosted_audio_contract',n,['tests/hosted-audio-supplement-test.mjs']],
+ ['hosted_audio_preparation',n,['tools/check-hosted-audio-supplements.mjs','--stage','preparation','--base',base]],
 ];
 if(stage==='publication')commands.push(
  ['pedagogical_v149_changed_sheets',n,['tools/pedagogical-non-regression-v149.mjs','--base',base]],
