@@ -16,6 +16,7 @@ import {publicationBundle,bundleDigest,validateChangedDeliveries,isStrictAudioSu
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 import {validateAudioSupplements,validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateAudioReplacements,validateAudioReplacementOnly} from './audio-replacement-contract.mjs';
+import {isExistingWrittenUpdate,verifyExistingWrittenHistory} from './existing-course-written-update-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=file=>JSON.parse(readFileSync(file,'utf8'));
@@ -469,7 +470,8 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
    else if(previousDelivery && course.id==='droits_patients')preserveApprovedDroitsConsolidation(oldCourse,course,previousDelivery,nextDelivery);
    else if(previousDelivery && nextVocals.some(v=>v.courseId===course.id&&acceptedAudioReplacementIds.has(v.id)))
     validateAudioReplacementOnly(previousDelivery,nextDelivery,oldCourse,course,prevVocals.filter(v=>v.courseId===course.id),nextVocals.filter(v=>v.courseId===course.id));
-   else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
+  else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
+  else if(isExistingWrittenUpdate(nextDelivery))verifyExistingWrittenHistory(oldCourse,course,nextDelivery,base);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
  }
  Object.keys(course).forEach(k=>delete course[k]);Object.assign(course,expectedPublicCourseAfterWithdrawal(oldCourse));
@@ -508,7 +510,8 @@ for(const id of newDeliveryIds){
   currentMan.courses.some(c=>c.courseId===id &&
    c.deliveryMode==='existing_course_revision' &&
    c.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only'));
- assert.ok(newCourses.some(c=>c.id===id)||existingCourseFirstManifest,
+ const existingWrittenManifest=oldReg.courses.some(c=>c.id===id)&&currentMan.courses.some(c=>c.courseId===id&&isExistingWrittenUpdate(c));
+ assert.ok(newCourses.some(c=>c.id===id)||existingCourseFirstManifest||existingWrittenManifest,
   'Lot nouveau orphelin : '+id);
 }
 actualMan.courses=actualMan.courses.filter(c=>!newDeliveryIds.has(c.courseId));

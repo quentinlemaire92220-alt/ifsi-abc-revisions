@@ -39,7 +39,11 @@ assert.equal(receptors.answers.length,4);
 const calculation=selected.deck.find(c=>c.qid==='pharmaco_042'&&c.answers.includes('10 %'));
 assert.match(calculation.front,/10 mg.*1 mg/,'Données du calcul absentes');
 assert.doesNotMatch(calculation.front,/valeur normale/,'Un résultat de calcul ne constitue pas une norme');
-assert.match(selected.deck.find(c=>c.qid==='v820_ias_018').front,/exemples/,'Liste partielle annoncée comme exhaustive');
+// The legacy IAS card is retained as a source question; its course now selects
+// an explicitly authored bank. Still test the original transformation itself.
+const legacyIas=selected.questions.find(q=>q.id==='v820_ias_018');
+assert.ok(legacyIas,'Question IAS historique perdue');
+assert.match(selected.frontForQuestion(legacyIas),/exemples/,'Liste partielle annoncée comme exhaustive');
 for(const q of selected.questions.filter(q=>['homeostasie_050','cellules_014','v820_a1p3_015'].includes(q.id))){
   const cards=selected.cardsForQuestion(q);
   assert.ok(cards.length,q.id);

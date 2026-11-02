@@ -390,6 +390,13 @@ def check(course):
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
                 continue
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            if role=='qcm' and course.get('qcmPdfLayout')=='theme_badge_cardinality_v1':
+                import importlib.util
+                spec=importlib.util.spec_from_file_location('badge_qcm',Path(__file__).with_name('badge-qcm-coherence.py'))
+                reader=importlib.util.module_from_spec(spec);spec.loader.exec_module(reader)
+                reader.validate_badge_qcm(doc,json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, banque sans plafond fixe')
+                continue
             if role=='qcm' and course.get('qcmPdfLayout')=='theme_inline_cardinality_v1':
                 rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
                 # A repaired introductory pill may follow the last question in

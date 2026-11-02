@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {countAuthoredListItems} from './flashcard-answer-enumeration.mjs';
 
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const files=fs.readdirSync('.').filter(x=>/^questions-\d+\.json$/.test(x)||/^qextra-\d+\.txt$/.test(x)).sort();
@@ -76,7 +77,8 @@ for(const c of deck){
          ? answers[0].split(/,\s*|\s+et\s+/).filter(Boolean)
          : answers)
     : answers;
-  const countMismatch=!!n&&listedAnswers.length!==n;
+  const listedCount=authored&&answers.length===1&&n ? (countAuthoredListItems(answers[0],n)??listedAnswers.length):listedAnswers.length;
+  const countMismatch=!!n&&listedCount!==n;
   const duplicateAnswers=new Set(answers.map(key)).size!==answers.length;
   const finite=/\b(?:est|sont|peut|peuvent|participe|participent|assure|assurent|contient|contiennent|favorise|favorisent|relève|correspond|correspondent|représente|représentent|sécrète|sécrètent|doit|doivent|permet|permettent|agit|agissent|influence|influencent|décrit|décrivent)\b/i;
   const sourceNoise=/\b(?:support|cours|enseignante|oralement|diapo|photographie)\b|Prélèvements, transport et prescription/i;

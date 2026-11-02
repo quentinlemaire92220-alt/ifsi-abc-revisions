@@ -12,6 +12,7 @@ import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contr
 import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
 import {validateReviewedWrittenBundle} from './reviewed-written-bundle-contract.mjs';
+import {isExistingWrittenUpdate,validateExistingWrittenUpdate} from './existing-course-written-update-contract.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
@@ -25,6 +26,10 @@ for(const c of manifest.courses){
  validateRevisionSheetSupplement(c.courseId,c,{sheets});
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
+ if(isExistingWrittenUpdate(c)){
+  validateExistingWrittenUpdate(registry.courses.find(x=>x.id===c.courseId),c,{sheets,questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos});
+  continue;
+ }
  if(c.deliveryMode==='reviewed_written_bundle'){
   validateReviewedWrittenBundle(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos,runtime:true});
   continue;

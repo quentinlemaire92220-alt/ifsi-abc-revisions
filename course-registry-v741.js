@@ -66,6 +66,13 @@ function rebuildResourceIndex(){
   for(const v of (window.IFSI_V73?.getVocals?.()||[]))put(v.courseId,'vocals',v);
   for(const x of (Array.isArray(S)?S:[]))put(x.courseId,'sheets',x);
   for(const x of (Array.isArray(I)?I:[]))put(x.courseId,'infographics',x);
+  // A reviewed revision may select its active bank while preserving the old
+  // question files and their global historical IDs.
+  for(const c of registry?.courses||[]){
+    if(!Array.isArray(c.canonicalQuestionIds))continue;
+    const ids=new Set(c.canonicalQuestionIds),r=resourceIndex.get(c.id);
+    if(r)r.questions=r.questions.filter(q=>ids.has(q.id));
+  }
   // La banque officielle du cours reste distincte des exercices de vocabulaire.
   const psychology=courseMap.get('psychologie_sante'),r=resourceIndex.get('psychologie_sante');
   if(r&&psychology?.officialSupport===true&&psychology.qcmPdfQuestionCount===62){

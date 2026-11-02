@@ -47,7 +47,12 @@ assert.equal(started.length,1);assert.equal(started[0].length,10);
 assert.ok(started[0].every(q=>q.theme==='Vocabulaire'&&bank.some(x=>x.id===q.id)));
 const revisions=read('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='existing_course_revision'&&c.publicationScope!=='infographics_only');
 for(const id of ['infections_neuro_meningees','pharmacologie'])assert.ok(revisions.some(c=>c.courseId===id),'Révision antérieure perdue '+id);
-for(const c of revisions)assert.equal(questions.filter(q=>q.courseId===c.courseId).length,c.qcmCount);
+for(const c of revisions){
+ const declared=new Set((c.partDeliveries||[]).flatMap(p=>p.qcmQuestionIds||[]));
+ const actual=questions.filter(q=>q.courseId===c.courseId&&(c.updateContract!=='existing_course_written_update_v1'||declared.has(q.id)));
+ assert.equal(actual.length,c.qcmCount,c.courseId+': banque livrée incomplète');
+ if(c.updateContract==='existing_course_written_update_v1')assert.equal(declared.size,c.qcmCount,c.courseId+': identifiants déclarés incohérents');
+}
 const revisedIds=new Set(revisions.filter(c=>c.deliveryQuestionScope!=='declared_parts').map(c=>c.courseId));
 const newPartIds=new Set(revisions.filter(c=>c.deliveryQuestionScope==='declared_parts').flatMap(c=>c.partDeliveries.flatMap(p=>p.qcmQuestionIds))); 
 const firstReleaseIds=new Set(read('docs/course-deliveries.json').courses.filter(c=>

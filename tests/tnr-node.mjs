@@ -249,8 +249,13 @@ const vocabulary=json('vocabulaire-v1.json');
 assert(vocabulary.schemaVersion===1,'Schéma vocabulaire incorrect');
 assert(vocabulary.entries.length>=280,'Glossaire enrichi : au moins 280 termes attendus');
 assert(new Set(vocabulary.entries.map(x=>x.id)).size===vocabulary.entries.length,'Doublons de termes dans le glossaire');
-assert(vocabulary.entries.every(x=>typeof x.etymologie==='string'&&x.etymologie.trim().length>=18),'Décomposition ou origine terminologique manquante');
-assert(vocabulary.entries.every(x=>!(/undefined|null|à compléter/i).test(x.etymologie)),'Étymologie laissée en placeholder');
+// This additive, approved glossary reproduces course definitions. Do not invent
+// external etymologies absent from the supplied course. Historical entries keep
+// their original mandatory etymology contract.
+const definitionDeliveries=json('docs/course-deliveries.json').courses.filter(c=>c.updateContract==='existing_course_written_update_v1'&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication');
+const courseDefinitionEntry=x=>definitionDeliveries.some(c=>c.vocabularyEntryIds?.includes(x.id)&&x.sourceType==='course_glossary'&&x.etymologyStatus==='not_provided_in_course'&&!x.etymologie&&x.courseIds.length===1&&x.courseIds[0]===c.courseId&&typeof x.definition==='string'&&x.definition.length>20);
+assert(vocabulary.entries.every(x=>(typeof x.etymologie==='string'&&x.etymologie.trim().length>=18)||courseDefinitionEntry(x)),'Décomposition ou définition de cours approuvée manquante');
+assert(vocabulary.entries.every(x=>courseDefinitionEntry(x)||!(/undefined|null|à compléter/i).test(x.etymologie)),'Étymologie laissée en placeholder');
 assert(vocabulary.entries.some(x=>x.id==='hypoxie'&&/hypo/i.test(x.etymologie)),'Décomposition hypoxie absente');
 assert(vocabulary.entries.some(x=>x.id==='pcr'&&/polymérase/i.test(x.etymologie)),'Développement PCR absent');
 assert(new Set(vocabulary.entries.map(x=>x.theme)).size>=23,'Glossaire : couverture thématique insuffisante');
@@ -265,8 +270,8 @@ const provisionalOralSources=new Set(json('docs/course-deliveries.json').courses
 ).map(c=>c.courseId));
 // Conserver la provenance orale historique après un rapprochement officiel validé.
 for(const c of json('docs/course-deliveries.json').courses)if(c.validated===true&&c.sourceBasis?.reconciled===true&&c.sourceAudit?.officialChecked===true&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')provisionalOralSources.add(c.courseId);
-const allowedLexiconSource=x=>['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
-assert(vocabulary.entries.every(x=>x.term&&(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.'))&&x.theme&&x.distinction?.length>=10&&allowedLexiconSource(x)),'Glossaire : définition, distinction ou provenance absente');
+const allowedLexiconSource=x=>courseDefinitionEntry(x)||['reference_pedagogique','revision_captures'].includes(x.sourceType)||(x.sourceType==='transcription_orale'&&x.courseIds?.length===1&&provisionalOralSources.has(x.courseIds[0]));
+assert(vocabulary.entries.every(x=>x.term&&(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.'))&&x.theme&&(x.distinction?.length>=10||courseDefinitionEntry(x))&&allowedLexiconSource(x)),'Glossaire : définition, distinction ou provenance absente');
 const scopedWrittenSheets=json('docs/course-deliveries.json').courses.filter(c=>
  c.deliveryMode==='sheet_only_first_release'&&c.publicationScope==='revision_sheet_only'&&
  c.publicationApproval?.status==='approved'&&c.publicationApproval?.scope==='revision_sheet_only'&&
@@ -298,7 +303,7 @@ for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseId
 const morphEntries=vocabulary.entries.filter(x=>x.id.startsWith('morph_'));
 assert(morphEntries.length>=30,'Morphèmes génériques insuffisants');
 assert(vocabulary.entries.some(x=>x.courseIds.includes('plaies_pansements')),'Cours Plaies et pansements sans vocabulaire');
-assert(vocabulary.entries.every(x=>(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.')) && x.distinction.length>=10),'Définition ou distinction trop courte');
+assert(vocabulary.entries.every(x=>(x.definition.length>=30||(x.id==='hypoacousie'&&x.definition==='Diminution de l’audition.')) && (x.distinction?.length>=10||courseDefinitionEntry(x))),'Définition ou distinction trop courte');
 const expectedVocabQcm=vocabulary.entries.reduce((n,x)=>n+x.courseIds.length,0);
 assert(expectedVocabQcm>300,'Associations QCM vocabulaire insuffisantes');
 for(const required of ['hypoxie','hypoxemie','anoxie','sepsis','asepsie','antisepsie'])assert(vocabulary.entries.some(x=>x.id===required),'Terme incontournable absent : '+required);
@@ -315,7 +320,7 @@ console.log(`✅ Vocabulaire : ${vocabulary.entries.length} termes / ${new Set(v
 // V8.30.58 — vocabulaire par cours et cartes partagées sans doublon de progression.
 const vocabCourseUi=read('v74-pack.js');
 assert(vocabulary.entries.some(x=>x.courseIds.length>1),'Glossaire multi-cours non représenté');
-assert(vocabJs.includes('const forCourse=id=>data.filter(x=>x.courseIds.includes(id))'),'Filtre par cours absent du glossaire');
+assert(vocabJs.includes('const forCourse=id=>')&&vocabJs.includes('x.courseIds.includes(id)')&&vocabJs.includes('vocabularyEntryIds'),'Filtre par cours et sélection de la révision absents du glossaire');
 assert(vocabJs.includes('function mountCatalog()')&&vocabJs.includes('function mountCourse(courseId)'),'Dictionnaire et ressources par cours absents');
 assert(vocabJs.includes('function startCourseQuiz(courseId)')&&vocabJs.includes("startQuiz();"),'QCM vocabulaire par cours absent');
 assert(vocabJs.includes('makeQuestion(term,forCourse(courseId))'),'Les QCM doivent utiliser les termes du cours');

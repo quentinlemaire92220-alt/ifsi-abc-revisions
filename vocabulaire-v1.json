@@ -9724,6 +9724,942 @@
       "etymologie": "Expression décrivant la participation durable de la personne au traitement et au suivi convenus.",
       "sourceType": "reference_pedagogique",
       "distinction": "L’accompagnement vise la compréhension, la prise du traitement et le suivi ; il ne garantit pas une guérison sans contrôle."
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_001",
+      "term": "Micro-organisme",
+      "definition": "Agent biologique microscopique ; le cours distingue bactéries, virus, champignons et certains parasites.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_002",
+      "term": "Bactérie",
+      "definition": "Micro-organisme cellulaire ; sa forme, sa coloration de Gram et ses propriétés aident à le caractériser.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_003",
+      "term": "Cocci / bacilles",
+      "definition": "Formes bactériennes respectivement arrondies et allongées ; elles ne suffisent pas à déterminer une espèce.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_004",
+      "term": "Coloration de Gram",
+      "definition": "Technique de laboratoire distinguant notamment bactéries à Gram positif et négatif selon leur enveloppe.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_005",
+      "term": "Virus",
+      "definition": "Agent à génome ADN ou ARN dont la multiplication dépend d’une cellule hôte.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_006",
+      "term": "Capside / enveloppe",
+      "definition": "Coque protéique du virus ; certains possèdent en plus une enveloppe lipidique qui influence leur sensibilité aux procédés.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_007",
+      "term": "Spore bactérienne",
+      "definition": "Forme de résistance produite par certaines bactéries, plus difficile à éliminer que leur forme végétative.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_008",
+      "term": "Levure / moisissure",
+      "definition": "Formes de champignons ; Candida est une levure, Aspergillus une moisissure.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_009",
+      "term": "ATNC / prion",
+      "definition": "Agent transmissible non conventionnel de nature protéique, relevant de procédures spécifiques.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_010",
+      "term": "Microbiote",
+      "definition": "Ensemble des micro-organismes présents dans un milieu donné, par exemple l’intestin ou la peau.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_011",
+      "term": "Commensal",
+      "definition": "Micro-organisme vivant habituellement en relation avec un hôte sans être nécessairement responsable d’une maladie.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_012",
+      "term": "Saprophyte",
+      "definition": "Organisme vivant dans l’environnement en utilisant la matière organique ; ce terme n’exclut pas un risque dans certains contextes.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_013",
+      "term": "Opportuniste",
+      "definition": "Agent susceptible de provoquer une infection lorsque terrain, barrière ou localisation lui deviennent favorables.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_014",
+      "term": "Colonisation / portage",
+      "definition": "Présence et multiplication d’un agent sans infection clinique attribuable ; à distinguer d’un prélèvement contaminé.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_015",
+      "term": "Infection",
+      "definition": "Interaction pathogène d’un agent avec l’hôte, susceptible de produire des manifestations locales ou générales.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_016",
+      "term": "IAS",
+      "definition": "Infection associée à une prise en charge, absente et non en incubation à son début.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_017",
+      "term": "Infection nosocomiale",
+      "definition": "IAS acquise dans un établissement de santé.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_018",
+      "term": "Incubation",
+      "definition": "Délai entre acquisition d’un agent et apparition des manifestations de l’infection.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_019",
+      "term": "Incidence",
+      "definition": "Fréquence des nouveaux événements sur une période, rapportée à la population ou au temps d’exposition définis.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_020",
+      "term": "Prévalence",
+      "definition": "Proportion de personnes ou d’événements présents à un moment donné, avec un dénominateur défini.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_021",
+      "term": "Bactériémie",
+      "definition": "Présence de bactéries dans le sang ; peut accompagner une infection locale et exposer à des complications.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_022",
+      "term": "Immunodépression / aplasie",
+      "definition": "Diminution des défenses immunitaires ; l’aplasie médullaire peut notamment réduire les cellules participant à ces défenses.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_023",
+      "term": "Réservoir",
+      "definition": "Lieu ou organisme dans lequel un agent peut persister et à partir duquel une exposition peut survenir.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_024",
+      "term": "Porte d’entrée",
+      "definition": "Site par lequel un agent accède à l’hôte : voie respiratoire, muqueuse, peau lésée ou accès invasif, par exemple.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_025",
+      "term": "Endogène / exogène",
+      "definition": "Origine respectivement propre au patient ou extérieure à lui ; le même agent peut être impliqué selon des mécanismes différents.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_026",
+      "term": "Transmission croisée",
+      "definition": "Passage d’un agent entre personnes, directement ou par un intermédiaire tel que mains, matériel ou environnement.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_027",
+      "term": "Manuportage",
+      "definition": "Transport de micro-organismes par les mains, susceptible de relier plusieurs sites ou patients.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_028",
+      "term": "Aérosol",
+      "definition": "Ensemble de particules en suspension pouvant être inhalées ; composition, taille et persistance dépendent de leur production et du milieu.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_029",
+      "term": "Antibiogramme",
+      "definition": "Étude standardisée de la sensibilité d’une bactérie à des antibiotiques, interprétée par le laboratoire.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_030",
+      "term": "Bactéricide / bactériostatique",
+      "definition": "Action qui tue les bactéries / inhibe leur multiplication dans les conditions considérées.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_031",
+      "term": "BMR",
+      "definition": "Bactérie multirésistante à plusieurs familles d’antibiotiques ; ne signifie pas systématiquement plus virulente.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_032",
+      "term": "SARM",
+      "definition": "Staphylococcus aureus résistant à la méticilline.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_033",
+      "term": "BLSE",
+      "definition": "Bêta-lactamase à spectre étendu, mécanisme enzymatique de résistance à certains antibiotiques.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_034",
+      "term": "BHRe",
+      "definition": "Bactérie hautement résistante émergente, nécessitant une organisation particulière de prévention de la diffusion.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_035",
+      "term": "EPC",
+      "definition": "Entérobactérie productrice de carbapénémase ; le TD donne OXA-48 comme exemple de mécanisme.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_036",
+      "term": "ERG",
+      "definition": "Entérocoque résistant aux glycopeptides.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_037",
+      "term": "ABRI",
+      "definition": "Acinetobacter baumannii résistant à l’imipénème ; exemple d’alerte et d’organisation locale du support.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_038",
+      "term": "Précautions standard (PS)",
+      "definition": "Mesures de base appliquées pour tout patient, tout soin et tout lieu, adaptées à l’exposition du geste.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_039",
+      "term": "Précautions complémentaires (PC)",
+      "definition": "Mesures ajoutées aux PS selon l’agent, la transmission ou la situation ; elles ne remplacent pas le socle.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_040",
+      "term": "Hygiène des mains",
+      "definition": "Mesures réduisant la contamination des mains au bon moment par la technique adaptée.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_041",
+      "term": "FHA",
+      "definition": "Friction hydroalcoolique ; application frictionnée d’un produit adapté sur mains visiblement propres et sèches, jusqu’au séchage.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_042",
+      "term": "EPI",
+      "definition": "Équipement de protection individuelle choisi selon l’exposition : gants, protection de tenue, masque, protection des yeux, appareil respiratoire.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_043",
+      "term": "FFP2",
+      "definition": "Appareil de protection respiratoire filtrant les particules ; son efficacité dépend notamment de l’ajustement au visage.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_044",
+      "term": "Isolement septique",
+      "definition": "Organisation visant à limiter la diffusion depuis une personne infectée ou porteuse.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_045",
+      "term": "Environnement protecteur",
+      "definition": "Organisation limitant l’exposition d’un patient particulièrement vulnérable, notamment par maîtrise de l’air, de l’eau et des contacts.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_046",
+      "term": "AES",
+      "definition": "Accident d’exposition au sang ou à un liquide biologique à risque par piqûre, coupure, muqueuse ou peau lésée.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_047",
+      "term": "OPCT",
+      "definition": "Objet piquant, coupant ou tranchant, à éliminer dans un collecteur adapté immédiatement après usage.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_048",
+      "term": "DASRI",
+      "definition": "Déchet d’activité de soins à risque infectieux ; sa filière se distingue des déchets sans ce risque et des filières chimiques ou médicamenteuses.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_049",
+      "term": "Excreta",
+      "definition": "Produits d’élimination, notamment selles et urines, pouvant véhiculer des micro-organismes.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_050",
+      "term": "UMP",
+      "definition": "Unité mobile de protection rendant accessibles les équipements ; sa présence ne crée pas une indication de tous les porter.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_051",
+      "term": "EOH",
+      "definition": "Équipe opérationnelle d’hygiène, ressource pour la prévention, l’analyse des risques et l’organisation des mesures.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_052",
+      "term": "VVP",
+      "definition": "Voie veineuse périphérique ; accès vasculaire dont indication, site et fonctionnement doivent être réévalués.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_053",
+      "term": "Asepsie",
+      "definition": "Ensemble des mesures empêchant l’introduction de micro-organismes dans un site à protéger.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_054",
+      "term": "Asepsie lors d’un soin",
+      "definition": "Application concrète de ces mesures à toute la séquence : mains, préparation, matériel, parties critiques et absence de recontamination.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_055",
+      "term": "Antisepsie",
+      "definition": "Opération sur des tissus vivants visant les micro-organismes présents, avec résultat momentané et dans les limites du produit.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_056",
+      "term": "Antiseptique",
+      "definition": "Produit destiné à l’antisepsie ; indication, formulation, tolérance et contre-indications déterminent son emploi.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_057",
+      "term": "Détersion / nettoyage",
+      "definition": "Élimination des salissures et matières par une action adaptée, notamment mécanique et détergente ; ne signifie pas stérilisation.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_058",
+      "term": "Détergent",
+      "definition": "Produit facilitant l’élimination des salissures ; son pouvoir nettoyant ne prouve pas une action désinfectante.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_059",
+      "term": "Désinfection",
+      "definition": "Opération sur milieu inerte visant des micro-organismes selon un spectre et des conditions définis ; résultat momentané.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_060",
+      "term": "Désinfectant / DD",
+      "definition": "Produit de désinfection ; un détergent-désinfectant (DD) associe des fonctions dans les conditions prévues par sa notice.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_061",
+      "term": "Temps de contact",
+      "definition": "Durée pendant laquelle le produit doit agir dans les conditions requises ; à distinguer d’une simple application rapide.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_062",
+      "term": "Séchage spontané",
+      "definition": "Attente de l’évaporation sans essuyage ni souffle, exigée pour la préparation antiseptique décrite.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_063",
+      "term": "DM / usage unique",
+      "definition": "Dispositif médical ; la mention usage unique interdit sa remise en circulation par un retraitement ordinaire pour une nouvelle utilisation.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_064",
+      "term": "Non critique / semi-critique / critique",
+      "definition": "Classement selon contact avec peau intacte, muqueuse/peau non intacte, ou site normalement stérile/système vasculaire.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_065",
+      "term": "Prétraitement / pré-désinfection",
+      "definition": "Première étape immédiate adaptée au dispositif souillé pour éviter le séchage et faciliter la suite ; ne rend pas prêt à l’emploi.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_066",
+      "term": "Biofilm",
+      "definition": "Organisation de micro-organismes adhérant à une surface dans une matrice, pouvant compliquer leur élimination.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_067",
+      "term": "Stérilisation",
+      "definition": "Procédé validé visant l’absence de micro-organismes viables sur un matériel propre, avec assurance définie et conditionnement adapté.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_068",
+      "term": "Autoclave",
+      "definition": "Équipement de stérilisation par vapeur selon un cycle validé, compatible avec le matériel concerné.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_069",
+      "term": "Réduction logarithmique",
+      "definition": "Diminution d’une population par facteurs de dix ; cinq log correspondent à une division par 100 000.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_070",
+      "term": "Assurance de stérilité",
+      "definition": "Expression probabiliste du risque de présence d’un micro-organisme viable après un procédé validé ; distincte d’un comptage résiduel.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_071",
+      "term": "Traçabilité",
+      "definition": "Informations permettant de relier dispositif, traitement et, si nécessaire, patient pour retrouver les opérations et leurs contrôles.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_072",
+      "term": "Bionettoyage",
+      "definition": "Opérations organisées visant à réduire la contamination biologique des surfaces selon le risque du secteur.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_073",
+      "term": "Marche en avant",
+      "definition": "Organisation évitant le retour ou le croisement du sale vers le propre ; s’applique aux personnes, matériels et flux.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_074",
+      "term": "Aspergillus",
+      "definition": "Moisissure environnementale dont les spores inhalées peuvent notamment provoquer une infection invasive chez l’immunodéprimé.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_075",
+      "term": "Legionella pneumophila",
+      "definition": "Bactérie aquatique impliquée notamment dans une pneumonie après inhalation d’aérosols contaminés.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_076",
+      "term": "Fièvre de Pontiac",
+      "definition": "Forme non pneumonique décrite comme bénigne dans le cours, à distinguer de la maladie des légionnaires.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_077",
+      "term": "UFC/L",
+      "definition": "Unités formant colonies par litre ; expression d’un résultat microbiologique à interpréter dans son contexte de prélèvement et d’usage.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "prevention_ias_asepsie_lex_078",
+      "term": "Bras mort / stagnation",
+      "definition": "Portion de réseau ou situation à faible renouvellement de l’eau favorisant les dépôts et le développement microbien.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "ue": "B1",
+      "theme": "Prévention du risque infectieux",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
     }
   ]
 }
