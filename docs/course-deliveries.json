@@ -3321,7 +3321,7 @@
           "validated": true,
           "status": "complete",
           "sheetResourceIds": [
-            "psychologie_sante_fiche_20261029"
+            "psychologie_sante_fiche_20261102_v4"
           ],
           "infographicResourceIds": [],
           "vocalIds": [
@@ -3397,7 +3397,7 @@
           "publicationHost": "github_pages",
           "schematics": "none",
           "generatedImageCount": 0,
-          "sheetResourceId": "psychologie_sante_fiche_20261029",
+          "sheetResourceId": "psychologie_sante_fiche_20261102_v4",
           "sourceAudit": {
             "officialChecked": true,
             "officialSupportPreservedPrivately": true,
@@ -3425,11 +3425,11 @@
           "writtenModelReference": "communication_written_v5.3_2026-10-24",
           "writtenPdfAudit": {
             "status": "PASS",
-            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
             "pageSize": "A4",
-            "pageCount": 39,
-            "expectedCount": 39,
-            "checkedCount": 39,
+            "pageCount": 54,
+            "expectedCount": 54,
+            "checkedCount": 54,
             "allPagesRendered": true,
             "topAndBottomPurpleBandsEveryPage": true,
             "noOverlaidHeaders": true,
@@ -3443,11 +3443,11 @@
           },
           "visualAudit": {
             "status": "PASS",
-            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
             "pageSize": "A4",
-            "pageCount": 39,
-            "expectedCount": 39,
-            "checkedCount": 39,
+            "pageCount": 54,
+            "expectedCount": 54,
+            "checkedCount": 54,
             "allPagesRendered": true,
             "topAndBottomPurpleBandsEveryPage": true,
             "noOverlaidHeaders": true,
@@ -3462,20 +3462,20 @@
           "publishedVerification": {
             "status": "MATCH",
             "source": "authenticated_drive_download",
-            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-            "pageCount": 39,
-            "expectedCount": 39,
-            "checkedCount": 39,
-            "copyScope": "owner_private_review_copy"
+            "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+            "pageCount": 54,
+            "expectedCount": 54,
+            "checkedCount": 54,
+            "copyScope": "private_approved_bytes_public_http_pending"
           },
-          "publicAssetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+          "publicAssetSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
           "publicArtifacts": {
             "sheet": {
               "role": "sheet",
-              "path": "assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
-              "sha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-              "pageCount": 39,
-              "artifactId": "psychologie_sante_sheet_20261029"
+              "path": "assets/psychologie-sante-20261102/Fiche_Psychologie_Sante_54p_79_Definitions_V4.pdf",
+              "sha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+              "pageCount": 54,
+              "artifactId": "psychologie_sante_sheet_v4_20261102"
             },
             "qcm": {
               "role": "qcm",
@@ -3499,10 +3499,11 @@
             "psychologie_sante_flashcards_20261029": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
             "1nUmX2llDWKP0jsp8UKxR0a8p1h9xvG6Q": "29add198346646699e326ae14fc7962652c0354ee3b41bcea10944d6297ec9d0",
             "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
-            "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd"
+            "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd",
+            "psychologie_sante_sheet_v4_20261102": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
           },
           "lexicon": {
-            "termCount": 73,
+            "termCount": 79,
             "textSelectable": true,
             "checked": true
           },
@@ -3512,8 +3513,8 @@
               "sheet": {
                 "templateId": "communication_written_v5.3_2026-10-24",
                 "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
-                "artifactSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-                "pageCount": 39,
+                "artifactSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+                "pageCount": 54,
                 "pagesChecked": [
                   1,
                   2,
@@ -3553,13 +3554,28 @@
                   36,
                   37,
                   38,
-                  39
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  50,
+                  51,
+                  52,
+                  53,
+                  54
                 ],
                 "status": "owner_accepted",
-                "method": "all_pages_compared_at_100_and_200_percent",
-                "decision": "explicit_graphic_acceptance",
+                "method": "private_pdf_owner_review",
+                "decision": "owner_approved_V4_20261102",
                 "reviewerRole": "owner",
-                "reviewedAt": "2026-10-30T08:29:34Z",
+                "reviewedAt": "2026-11-02",
                 "checks": {
                   "MODEL_COMPARISON": "PASS",
                   "BANDS_AND_TYPOGRAPHY": "PASS",
@@ -3629,9 +3645,9 @@
             "status": "owner_accepted",
             "reference": "communication_written_v5.3_2026-10-24",
             "method": "pdf_all_pages_checked",
-            "reviewedAt": "2026-10-30T08:29:34Z",
-            "reviewerDecision": "explicit_graphic_acceptance",
-            "pagesChecked": 39,
+            "reviewedAt": "2026-11-02",
+            "reviewerDecision": "owner_approved_V4_20261102",
+            "pagesChecked": 54,
             "criteria": {
               "NO_GENERATED_IMAGES": "PASS",
               "PURPLE_BANDS_EVERY_PAGE": "PASS",
@@ -3639,7 +3655,7 @@
               "NO_TECHNICAL_NOTES": "PASS"
             },
             "reviewedPdfSha256s": {
-              "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
+              "psychologie_sante_fiche_20261102_v4": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
             },
             "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
           },
@@ -3673,15 +3689,16 @@
         "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj": "84de18ba13207d4f61a86210444e270f176011fa697495fb8f1e48df78205bcc",
         "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs": "e8d78d62fc621b0d4abe3be3d0e8e46f73cf65b1c8163d4879603cba290e43bd",
         "1myUK4l0Rw_n7YYggBhEeMfpH5D0s9e6g": "aacee0c72f0f04ba36369d8efc2cbee1327a92eb98a45e94944825c8583aae83",
-        "1lc-hTm6JvIsNObCsDhxkeznUoDLF_cqF": "4d307e01c22962ed5046bb7402461d05c263ba5a850815eae759b5aa433b6aad"
+        "1lc-hTm6JvIsNObCsDhxkeznUoDLF_cqF": "4d307e01c22962ed5046bb7402461d05c263ba5a850815eae759b5aa433b6aad",
+        "psychologie_sante_sheet_v4_20261102": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
       },
       "publicArtifacts": {
         "sheet": {
           "role": "sheet",
-          "path": "assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
-          "sha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-          "pageCount": 39,
-          "artifactId": "psychologie_sante_sheet_20261029"
+          "path": "assets/psychologie-sante-20261102/Fiche_Psychologie_Sante_54p_79_Definitions_V4.pdf",
+          "sha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+          "pageCount": 54,
+          "artifactId": "psychologie_sante_sheet_v4_20261102"
         },
         "qcm": {
           "role": "qcm",
@@ -3737,8 +3754,8 @@
           "sheet": {
             "templateId": "communication_written_v5.3_2026-10-24",
             "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
-            "artifactSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-            "pageCount": 39,
+            "artifactSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+            "pageCount": 54,
             "pagesChecked": [
               1,
               2,
@@ -3778,13 +3795,28 @@
               36,
               37,
               38,
-              39
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54
             ],
             "status": "owner_accepted",
-            "method": "all_pages_compared_at_100_and_200_percent",
-            "decision": "explicit_graphic_acceptance",
+            "method": "private_pdf_owner_review",
+            "decision": "owner_approved_V4_20261102",
             "reviewerRole": "owner",
-            "reviewedAt": "2026-10-30T08:29:34Z",
+            "reviewedAt": "2026-11-02",
             "checks": {
               "MODEL_COMPARISON": "PASS",
               "BANDS_AND_TYPOGRAPHY": "PASS",
@@ -3945,9 +3977,9 @@
         }
       },
       "pedagogicalValidated": true,
-      "sheetResourceId": "psychologie_sante_fiche_20261029",
+      "sheetResourceId": "psychologie_sante_fiche_20261102_v4",
       "sheetResourceIds": [
-        "psychologie_sante_fiche_20261029"
+        "psychologie_sante_fiche_20261102_v4"
       ],
       "schematics": "none",
       "generatedImageCount": 0,
@@ -3985,11 +4017,11 @@
       "writtenModelReference": "communication_written_v5.3_2026-10-24",
       "writtenPdfAudit": {
         "status": "PASS",
-        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
         "pageSize": "A4",
-        "pageCount": 39,
-        "expectedCount": 39,
-        "checkedCount": 39,
+        "pageCount": 54,
+        "expectedCount": 54,
+        "checkedCount": 54,
         "allPagesRendered": true,
         "topAndBottomPurpleBandsEveryPage": true,
         "noOverlaidHeaders": true,
@@ -4003,11 +4035,11 @@
       },
       "visualAudit": {
         "status": "PASS",
-        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+        "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
         "pageSize": "A4",
-        "pageCount": 39,
-        "expectedCount": 39,
-        "checkedCount": 39,
+        "pageCount": 54,
+        "expectedCount": 54,
+        "checkedCount": 54,
         "allPagesRendered": true,
         "topAndBottomPurpleBandsEveryPage": true,
         "noOverlaidHeaders": true,
@@ -4022,17 +4054,17 @@
       "publishedVerification": {
         "status": "MATCH",
         "source": "authenticated_drive_download",
-        "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
-        "pageCount": 39,
-        "expectedCount": 39,
-        "checkedCount": 39,
-        "copyScope": "owner_private_review_copy"
+        "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+        "pageCount": 54,
+        "expectedCount": 54,
+        "checkedCount": 54,
+        "copyScope": "private_approved_bytes_public_http_pending"
       },
-      "publicAssetSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+      "publicAssetSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
       "qcmPublicAssetSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
       "flashcardPublicAssetSha256": "6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716",
       "lexicon": {
-        "termCount": 73,
+        "termCount": 79,
         "textSelectable": true,
         "checked": true
       },
@@ -4040,9 +4072,9 @@
         "status": "owner_accepted",
         "reference": "communication_written_v5.3_2026-10-24",
         "method": "pdf_all_pages_checked",
-        "reviewedAt": "2026-10-30T08:29:34Z",
-        "reviewerDecision": "explicit_graphic_acceptance",
-        "pagesChecked": 39,
+        "reviewedAt": "2026-11-02",
+        "reviewerDecision": "owner_approved_V4_20261102",
+        "pagesChecked": 54,
         "criteria": {
           "NO_GENERATED_IMAGES": "PASS",
           "PURPLE_BANDS_EVERY_PAGE": "PASS",
@@ -4050,7 +4082,7 @@
           "NO_TECHNICAL_NOTES": "PASS"
         },
         "reviewedPdfSha256s": {
-          "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
+          "psychologie_sante_fiche_20261102_v4": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
         },
         "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
       },
@@ -4094,7 +4126,149 @@
         "historicalDeliverySha256": "9186b8b664da7b4b38451c3143a6f951bf1e94abd95a7ce89942e34a4686fee2",
         "baseSha": "cb02d24c254f105ad41fdfc9e4d1dd1f10a5d3d9"
       },
-      "provisional": false
+      "provisional": false,
+      "postOfficialSheetRevision": {
+        "revisionId": "psychologie_sante_v4_20261102",
+        "status": "release_candidate",
+        "previousSheet": {
+          "title": "Fiche_Psychologie_Sante_39p.pdf",
+          "label": "Psychologie de la santé — Fiche de révision (39 pages, 73 définitions)",
+          "ue": "S1 B2",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
+          "resourceId": "psychologie_sante_fiche_20261029",
+          "provisional": false,
+          "courseId": "psychologie_sante",
+          "displayTitle": "Psychologie de la santé",
+          "sourceStatus": "active",
+          "officialSupport": true,
+          "sourceBasis": "Trois supports officiels et quatre transcriptions de séance",
+          "pageCount": 39,
+          "lexiconTermCount": 73,
+          "sheetFormat": "written_revision",
+          "primaryRevision": true
+        },
+        "previousReview": {
+          "sheetResourceId": "psychologie_sante_fiche_20261029",
+          "publicArtifact": {
+            "role": "sheet",
+            "path": "assets/psychologie-sante-20261029/Fiche_Psychologie_Sante_39p.pdf",
+            "sha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageCount": 39,
+            "artifactId": "psychologie_sante_sheet_20261029"
+          },
+          "writtenPdfAudit": {
+            "status": "PASS",
+            "pdfSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageSize": "A4",
+            "pageCount": 39,
+            "expectedCount": 39,
+            "checkedCount": 39,
+            "allPagesRendered": true,
+            "topAndBottomPurpleBandsEveryPage": true,
+            "noOverlaidHeaders": true,
+            "textSelectable": true,
+            "noImages": true,
+            "noClippedText": true,
+            "oneQcmPitfallSection": true,
+            "summaryBeforeLexicon": true,
+            "lexiconLast": true,
+            "navigationChecked": true
+          },
+          "visualOwnerReview": {
+            "status": "owner_accepted",
+            "reference": "communication_written_v5.3_2026-10-24",
+            "method": "pdf_all_pages_checked",
+            "reviewedAt": "2026-10-30T08:29:34Z",
+            "reviewerDecision": "explicit_graphic_acceptance",
+            "pagesChecked": 39,
+            "criteria": {
+              "NO_GENERATED_IMAGES": "PASS",
+              "PURPLE_BANDS_EVERY_PAGE": "PASS",
+              "TEXT_SELECTABLE": "PASS",
+              "NO_TECHNICAL_NOTES": "PASS"
+            },
+            "reviewedPdfSha256s": {
+              "psychologie_sante_fiche_20261029": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf"
+            },
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+          },
+          "templateConformance": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf",
+            "pageCount": 39,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-10-30T08:29:34Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+          }
+        },
+        "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
+        "pageCount": 54,
+        "lexiconTermCount": 79,
+        "previousDefinitionsPreserved": 73,
+        "additionalDefinitions": 6,
+        "style": "purple_bands_boxes_simple_cards_no_drawings",
+        "publicationApproval": {
+          "status": "approved",
+          "authorization": "explicit_go_publication",
+          "scope": "sheet_only_revision",
+          "approvedAt": "2026-11-02",
+          "artifactSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
+        }
+      }
     },
     {
       "courseId": "fievre_retour_voyage_paludisme",

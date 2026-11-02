@@ -38,22 +38,23 @@ export function validatePsychologieOfficialRevision(d,data={}){
  assert.deepEqual(voices,history.vocals,'Les deux vocaux historiques ont changé');
  for(const v of voices)assert.equal(sha(v.localAudio),d.artifactSha256s[v.driveId]);
  const sheets=(data.sheets||[1,2,3].flatMap(n=>read('sheets-'+n+'.json'))).filter(s=>s.courseId===d.courseId);
- assert.equal(sheets.length,3);assert.equal(history.sheets.length,2);
+ const upgrade=d.postOfficialSheetRevision;assert.equal(sheets.length,upgrade?4:3);assert.equal(history.sheets.length,2);
  assert.deepEqual(r.archivedSheetResourceIds,history.sheets.map(s=>s.resourceId));
  for(const old of history.sheets)assert.deepEqual(sheets.find(s=>s.resourceId===old.resourceId),
   {...old,sourceStatus:'archived'},'Archive historique altérée ou supprimée');
+ if(upgrade){assert.deepEqual(sheets.find(s=>s.resourceId===upgrade.previousSheet.resourceId),{...upgrade.previousSheet,sourceStatus:'archived'});assert.equal(sha(upgrade.previousReview.publicArtifact.path),upgrade.previousReview.publicArtifact.sha256);assert.equal(upgrade.previousReview.publicArtifact.sha256,r.acceptedPdfSha256s.sheet);assert.equal(upgrade.publicationApproval.status,'approved');}
  const active=sheets.filter(s=>s.sourceStatus!=='archived');assert.equal(active.length,1);
  assert.equal(active[0].resourceId,d.sheetResourceId);assert.equal(active[0].primaryRevision,true);
- assert.equal(active[0].pageCount,39);assert.equal(active[0].lexiconTermCount,73);
+ assert.equal(active[0].pageCount,upgrade?54:39);assert.equal(active[0].lexiconTermCount,upgrade?79:73);
  assert.equal(active[0].officialSupport,true);assert.equal(active[0].provisional,false);
- const expected={sheet:['236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf',39],
+ const expected={sheet:upgrade?[upgrade.pdfSha256,upgrade.pageCount]:['236c5eed098a93ad3c85502ef0246a0dbd653d528595f8c72e3ee4b69d4595bf',39],
   qcm:['c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf',29],
   flashcards:['6839fcb91093383eb8dc525716b8ddcc64e7f4b00ae56fa997aca129e5f7b716',12]};
  assert.deepEqual(Object.keys(d.publicArtifacts).sort(),Object.keys(expected).sort());
  for(const [role,[hash,pages]] of Object.entries(expected)){
   const a=d.publicArtifacts[role];assert.equal(a.sha256,hash);assert.equal(sha(a.path),hash);
   assert.equal(a.pageCount,pages);assert.equal(d.artifactSha256s[a.artifactId],hash);
-  assert.equal(r.acceptedPdfSha256s[role],hash);
+  if(role!=='sheet'||!upgrade)assert.equal(r.acceptedPdfSha256s[role],hash);
  }
  for(const a of Object.values(prior.publicArtifacts))assert.equal(sha(a.path),a.sha256);
  assert.equal(sha(prior.revisionSheetSupplement.publicAsset.path),prior.revisionSheetSupplement.pdfSha256);
