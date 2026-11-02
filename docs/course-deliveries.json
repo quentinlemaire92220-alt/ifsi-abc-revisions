@@ -1793,7 +1793,9 @@
       "requestedVocals": false,
       "vocals": [
         "sante_mondiale_sante_france_p01_vocal_01",
-        "sante_mondiale_sante_france_p01_vocal_02"
+        "sante_mondiale_sante_france_p01_vocal_02",
+        "tts_20261102_ue_c1_sante_mondiale_indicateurs_et_determinants_vocal_01_sur_02",
+        "tts_20261102_ue_c1_sante_mondiale_inegalites_et_acces_aux_soins_vocal_02_sur_02"
       ],
       "blockers": [
         {
@@ -1834,7 +1836,9 @@
         "1v3cfOTPdwpiSpp77SSp9GTT2t_kV90rU": "e18dffab826a424fda009a55f9a1c9c699bc74c30a70c18b7590d54f9d2b18ab",
         "1xOuVF4d7F81dlZ9JOY3HtyZu8iuPNZOz": "4f181bd4ff2978d1d58337c4a6d9237a31d24b8e28a6e38def5dbf6908602433",
         "sante_mondiale_sante_france_fiche_hybride_v73_public": "a74f9df5707f5fc23db99ff9624abf79f4a0cb8bc5f88f14c7fc5c82226323fc",
-        "sante_mondiale_sante_france_qcm_56_v4_public": "4153a3b554fb7dc676fb745c26f8ab7c302493c51616b743b1af46a2ca6cac8e"
+        "sante_mondiale_sante_france_qcm_56_v4_public": "4153a3b554fb7dc676fb745c26f8ab7c302493c51616b743b1af46a2ca6cac8e",
+        "1khRYfPhKt7R3gy1LDsZb1hDJFsduPTs4": "d029504dd40722cdd95ad04ee361703a3047ba90cff75b5402c3eb2e25ec18ec",
+        "16EQbA2xLtOKKcqA5rhqzwJD7KFEjj3bp": "41814a965b1de441ff8378938bfc94eadc90cfb5ddb52d312a0bff3bb3a42d24"
       },
       "visualAudit": {
         "status": "PASS",
@@ -2307,7 +2311,11 @@
       "vocabularyCount": 36,
       "vocals": [
         "responsabilite_exercice_professionnel_p01_vocal_01",
-        "responsabilite_exercice_professionnel_p01_vocal_02"
+        "responsabilite_exercice_professionnel_p01_vocal_02",
+        "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_cadre_legal_et_competences_vocal_01_sur_02",
+        "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_relation_et_organisation_vocal_02_sur_02",
+        "tts_20261102_ue_a2_1_responsabilite_infirmiere_confidentialite_et_secret_vocal_02_sur_02",
+        "tts_20261102_ue_a2_1_responsabilite_infirmiere_regimes_et_prevention_des_dommages_vocal_01_sur_02"
       ],
       "scriptsPreparedCount": 0,
       "blockers": [
@@ -2327,7 +2335,11 @@
         "1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN": "b589bf950b88069ede12174632abce4c55f7672c1fee45aae6a97d52522f6b8a",
         "15qs3q7SWkvvPhLsm6sF3du4JTlEZga4-": "a46927ae40c99b7f437b6f98f02347686561ad4ca2e7327ca3899640d40fde63",
         "1JNBZY8pglnjRqBHfJ_ARIUznEzrxhGNd": "ed06d9dd494b6c7d2c94c9b2337b8db84970092a6482605d464e647c8cb29b2f",
-        "1K_060J5TORlhxaK6w-IQOUIYamXVhvNl": "9311648babc4b01afa9029691f45ab608e59ae2134da72372ddc23f5df57ddf1"
+        "1K_060J5TORlhxaK6w-IQOUIYamXVhvNl": "9311648babc4b01afa9029691f45ab608e59ae2134da72372ddc23f5df57ddf1",
+        "1z-2-WrjvLGCPAFLm5H-MRcn6s2rijYfc": "918dd5570e3bd209a11f6ee982250173b7d9411368a5ccd83132e1a30448be1c",
+        "1C85FC3bqtk006bkxW3A64sARrRNJsTkB": "e66d9411997262559c51b9314ce16c7ae42cb2c144d9e9389a38a48a0db0930f",
+        "1cZFirIvLRdLAhoFRvmQGbImO_lFphEeN": "e90a0b587a9f2deefdd48444bb83f8a0ed4c6e11cc26dba78932b02891bf7048",
+        "1xBZ4zqsHDd8eLYMc3NhRjlxJfX1wJA4N": "1f9aaaf56b6d7c905b15c1043d2d5321392ee8da65d1de5772736a7a9ca584c3"
       },
       "visualAudit": {
         "status": "PASS",
@@ -2446,7 +2458,8 @@
       "vocabularyCount": 35,
       "vocals": [
         "d1_communication_td1_p01_vocal_01",
-        "d1_communication_td1_p01_vocal_02"
+        "d1_communication_td1_p01_vocal_02",
+        "tts_20261102_ue_d1_communication_message_canaux_et_filtres_vocal_01_sur_02"
       ],
       "scriptsPreparedCount": 2,
       "requestedVocals": true,
@@ -2495,7 +2508,8 @@
         "1h8u34DBJ_RJ-T-QYSMj8K0tId6SX_XSi": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
         "1zLwZ4JeMUr9BwOhZmLcqi6683jrnasgA": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e",
         "1w5o6cqq0J_kmKFzaCOVrWhe_3PQp-CtT": "c342eee7246c399066e4f6445a02bad87ed1dfa612a890d79be42cc330729c0b",
-        "1hPQfgPq_W5Jk7s0VyXJSXYeKwp7EQ6kN": "a2c9d65a8d8e04cd304175794cf37f53f72a9739aa251eb3209ff197a7b68a60"
+        "1hPQfgPq_W5Jk7s0VyXJSXYeKwp7EQ6kN": "a2c9d65a8d8e04cd304175794cf37f53f72a9739aa251eb3209ff197a7b68a60",
+        "1ffnKcsdLp08ayr9xcSxHz0gFSNUuHveK": "9eac5f3cba9a839dbb1e30f9ce243b1ca21878ed0d8d13afb59a24b5a6b90c82"
       },
       "publishedVerification": {
         "status": "MATCH",
@@ -4379,7 +4393,10 @@
       "schematics": "none",
       "generatedImageCount": 0,
       "infographicResourceIds": [],
-      "vocals": [],
+      "vocals": [
+        "tts_20261102_ue_b3_2_1_gestion_du_stress_coping_et_strategies_de_regulation_vocal_02_sur_02",
+        "tts_20261102_ue_b3_2_1_gestion_du_stress_reponses_et_reperage_vocal_01_sur_02"
+      ],
       "requestedVocals": false,
       "sourceAudit": {
         "officialChecked": true,
@@ -4427,7 +4444,9 @@
       "artifactSha256s": {
         "gestion_stress_fiche_v149_20261028": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
         "gestion_stress_qcm_50_v149": "088ed4c4cb31b091ede820433cb1461e167ea0551e1cfe81fd803eb05b1745b7",
-        "gestion_stress_flashcards_50_v149": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35"
+        "gestion_stress_flashcards_50_v149": "cad89a184a4e0f8f93853958637c9e2e1985e9799ca20eafc66b3d42cda83c35",
+        "1Z_mPxQnKEKHezBXne0drPOZ2hQDIFHWb": "e8a95ab6ec5bf7d0066a5c31f77bff1401827a5463cba83c7d7107bb379602d7",
+        "13bhFEkYSQm8NFn-msgl0zn_IgYoewTdv": "c07635cc1112f3285f59b36ed3a44cb593037358aba31bf664a0a9d3ecece8c8"
       },
       "publicAssetSha256": "d2f3eb89fa0ebe6c7ab464ea2423b5a9fbe7004c8b308d5e3ef13b2232c8e4c6",
       "publicArtifacts": {
@@ -4566,10 +4585,6 @@
       },
       "blockers": [
         {
-          "resource": "vocals",
-          "reason": "not_requested"
-        },
-        {
           "resource": "github_pages",
           "reason": "pending_deployment_verification"
         }
@@ -4676,7 +4691,9 @@
         "vih_b13_20261027_vocal_02",
         "vih_b13_20261027_vocal_03",
         "vih_b13_20261027_vocal_04",
-        "vih_b13_20261027_vocal_05"
+        "vih_b13_20261027_vocal_05",
+        "tts_20261102_ue_b1_3_vih_antiretroviraux_prevention_et_accompagnement_vocal_02_sur_02",
+        "tts_20261102_ue_b1_3_vih_virus_immunite_et_depistage_vocal_01_sur_02"
       ],
       "requestedVocals": 5,
       "sourceAudit": {
@@ -4732,7 +4749,9 @@
         "vih_b13_20261027_vocal_02": "8b7a35b8f906bc96cceca1659cab858d8843e5cb07df4b7b429ebef29761eae4",
         "vih_b13_20261027_vocal_03": "22409b000cd50c1316c9e0edd374d63fae2d5d0640196a63d2024c59835d9bec",
         "vih_b13_20261027_vocal_04": "b17ce21be5df833d7e6c2e3db9fe305242f170b6d7a317b9c63873f6ad6f1b44",
-        "vih_b13_20261027_vocal_05": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11"
+        "vih_b13_20261027_vocal_05": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11",
+        "1_idXuvhtw7NN6W4cuSsMUHO8LaX_RkzB": "91669dddd92a71c9ae1acab9bca349b7b13333089c432ef2249d436dee2e8de7",
+        "1HDVk4qyfIONJ3HqL4kaKZU-BVZLmuHHT": "665cda9daafff897da337ba2866625842c89accf54a6dfa291cb8f6e21eb0cd9"
       },
       "publicAssetSha256": "357fcc2dc8c2b20fba5e69cfe091c7249d5c7dffece19cdb44d24725630eff6e",
       "qcmPublicAssetSha256": "bd6cb5a4e3da27cd538cc53f9877254ef8bc16ae6fac2951df6b59caba537efc",
@@ -5498,6 +5517,436 @@
           "sha256": "3a716b33fbda16373ca600ceb44862c0a0c1fc7372b7bebc5936997d8e7b7d1e",
           "authenticatedDownload": "MATCH"
         }
+      }
+    },
+    {
+      "courseId": "diarrhees_infectieuses",
+      "audioOnlyContract": "interactive_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "tts_20261102_ue_b1_3_diarrhees_infectieuses_agents_et_modes_de_transmission_vocal_01_sur_02",
+        "tts_20261102_ue_b1_3_diarrhees_infectieuses_soins_et_prevention_vocal_02_sur_02"
+      ],
+      "artifactSha256s": {
+        "1P2UMz1Hjxfg5kkNp8S6HIMB9O6n2saQI": "59f4bab8e0129f66def77c12ff14939db0a4d06ff7064e23554f2192f06ae938",
+        "1nhAwv0G55q4zrKr1__8UT4f1rTTc2gl8": "ddf71c60b8baf009c727cde9c3640fbf3200d5772d09664ee720eac86781fe9f"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_b1_3_diarrhees_infectieuses_agents_et_modes_de_transmission_vocal_01_sur_02",
+            "audioSha256": "59f4bab8e0129f66def77c12ff14939db0a4d06ff7064e23554f2192f06ae938",
+            "scriptSha256": "4031cce4d6d6538d7444819f7bbd686edae172887dc88e3431e227d5cb6471f2",
+            "durationSeconds": 404.650667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_b1_3_diarrhees_infectieuses_soins_et_prevention_vocal_02_sur_02",
+            "audioSha256": "ddf71c60b8baf009c727cde9c3640fbf3200d5772d09664ee720eac86781fe9f",
+            "scriptSha256": "cb26b637637c0ebc00219578a5bec0fbc47457dccc2a1c8087da21d072703a61",
+            "durationSeconds": 414.662333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "folders": {
+        "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+      },
+      "blockers": [
+        {
+          "resource": "revision_sheets",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "limitationsDeclared": true
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "d8b8f1a4ba21dbe70c77e356f80ed74194eb5c701393d2d9907b7e8ae5dcc997"
+      }
+    },
+    {
+      "courseId": "offre_soins_systeme_sante",
+      "audioOnlyContract": "interactive_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "tts_20261102_ue_c1_1_offre_de_soins_acteurs_et_acces_vocal_01_sur_02",
+        "tts_20261102_ue_c1_1_offre_de_soins_parcours_et_continuite_vocal_02_sur_02"
+      ],
+      "artifactSha256s": {
+        "1Mo7liq7lE3llBIpGcVq7N6PzRGfneXV7": "bcc2a6697c1dd4624d4eb8b8f6a88ff550141d2a2d4cf1ccafdefd2201558394",
+        "1daZGNe_vrLf4sbEpooA7mtx4Y5nomOj5": "f9b44bd355c01e613f6ce3e8f35ecba196693b8db142d3493fbc43672c51f410"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_c1_1_offre_de_soins_acteurs_et_acces_vocal_01_sur_02",
+            "audioSha256": "bcc2a6697c1dd4624d4eb8b8f6a88ff550141d2a2d4cf1ccafdefd2201558394",
+            "scriptSha256": "7aeab2065929f717642cca9b4cbe2e75d5c4e08f6f2281fecd0c7945c0b954d0",
+            "durationSeconds": 389.805667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_c1_1_offre_de_soins_parcours_et_continuite_vocal_02_sur_02",
+            "audioSha256": "f9b44bd355c01e613f6ce3e8f35ecba196693b8db142d3493fbc43672c51f410",
+            "scriptSha256": "698811d39dfb74ccc126b23339f05a9394d1502242409fd0de4001cf108facaf",
+            "durationSeconds": 392.458667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "folders": {
+        "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+      },
+      "blockers": [
+        {
+          "resource": "revision_sheets",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "limitationsDeclared": true
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "26b45965569d3a7894286f34d881736ec6cd4755690964484b2b9db1cc4d9911"
+      }
+    },
+    {
+      "courseId": "organisation_systeme_sante",
+      "audioOnlyContract": "interactive_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "tts_20261102_ue_c1_organisation_du_systeme_de_sante_financement_et_crises_vocal_02_sur_02",
+        "tts_20261102_ue_c1_organisation_du_systeme_de_sante_sante_publique_et_acteurs_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1OuDW9dRpwiK4nDpWdS_47fPFrx0F1wOO": "b93d43fe03393f6b20c9ee2552b89c742ed2af9c5c037820de6f117a0b10025c",
+        "1aGS2xzkuOzsqil4wuf7iC-aKO15lQKRZ": "885d32ef2749ecc79c90e52706ddae27e6c81dc4ad68019f19725da91832ada5"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_c1_organisation_du_systeme_de_sante_financement_et_crises_vocal_02_sur_02",
+            "audioSha256": "b93d43fe03393f6b20c9ee2552b89c742ed2af9c5c037820de6f117a0b10025c",
+            "scriptSha256": "1bba65682ac322dc92f3533a57475e6663a5c3800a0be161b1dc812390b22155",
+            "durationSeconds": 388.297958,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_c1_organisation_du_systeme_de_sante_sante_publique_et_acteurs_vocal_01_sur_02",
+            "audioSha256": "885d32ef2749ecc79c90e52706ddae27e6c81dc4ad68019f19725da91832ada5",
+            "scriptSha256": "7c3e02716abc43bdb9741894ef9d0e6d7c6881410372abf18f88322c40e0403c",
+            "durationSeconds": 388.568333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "folders": {
+        "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+      },
+      "blockers": [
+        {
+          "resource": "revision_sheets",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "official_support",
+        "nativeSupportAvailable": true,
+        "limitationsDeclared": true
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "ff48206c2a7bf9a8c34ab96a2a28f784e52233674bf0a40c821842a9fc16b8e0"
+      }
+    },
+    {
+      "courseId": "psychologie_sociale",
+      "audioOnlyContract": "interactive_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+        "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1uQwQSYikBhoKbKHCeIJUwxH99iswjZnV": "7555d2028adb1726c98389aee417850edfe87e9ac665abd0cbb56ebe9808e476",
+        "1rJjNeXquKDWlzPaMJTWfFdYOb5Ju_PFM": "106f9b6e5688852cd1fcf62f829e7a396b82b478a1f35ace1f92840a6d299b1b"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+            "audioSha256": "7555d2028adb1726c98389aee417850edfe87e9ac665abd0cbb56ebe9808e476",
+            "scriptSha256": "a5f0e591267fa21b4978e8c1737bebb8b4075494c2577d8de4db4243dd366a95",
+            "durationSeconds": 366.330333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02",
+            "audioSha256": "106f9b6e5688852cd1fcf62f829e7a396b82b478a1f35ace1f92840a6d299b1b",
+            "scriptSha256": "a0cc3924c477ad95c100365fd7fd071804225e23a5520aff0c053eb4476ab965",
+            "durationSeconds": 392.693333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "folders": {
+        "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+      },
+      "blockers": [
+        {
+          "resource": "revision_sheets",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "oral_transcript",
+        "nativeSupportAvailable": false,
+        "limitationsDeclared": true
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "420a3b337b6bea0ebaffd831123d7b59ffd73815bb3bc84e098a07ec81eb0e17"
+      }
+    },
+    {
+      "courseId": "roles_missions_ide",
+      "audioOnlyContract": "interactive_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "tts_20261102_ue_a1_roles_et_missions_de_l_infirmier_missions_et_raisonnement_clinique_vocal_01_sur_02",
+        "tts_20261102_ue_a1_roles_et_missions_de_l_infirmier_securite_et_coordination_vocal_02_sur_02"
+      ],
+      "artifactSha256s": {
+        "1DgyzBKqQSEEaTVPY2eM7cBz5gvnwSHDh": "ec5653ac681b0e46f16a067ac5daee62d3ab2dcb89c38ed58366e642f6dbb7a5",
+        "1DdgAaDdt_5NxnsJS8eGr1bfxIVzlJIUJ": "c0c7c8f4a2c3ed5dbbfec90aad296e2eca2073ad1d0b9726375172045974a79f"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_a1_roles_et_missions_de_l_infirmier_missions_et_raisonnement_clinique_vocal_01_sur_02",
+            "audioSha256": "ec5653ac681b0e46f16a067ac5daee62d3ab2dcb89c38ed58366e642f6dbb7a5",
+            "scriptSha256": "3e6da1fa0506aa9b4e309f412ebe05d77b89958d583c84b6a6ce72edddb78011",
+            "durationSeconds": 445.599667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_a1_roles_et_missions_de_l_infirmier_securite_et_coordination_vocal_02_sur_02",
+            "audioSha256": "c0c7c8f4a2c3ed5dbbfec90aad296e2eca2073ad1d0b9726375172045974a79f",
+            "scriptSha256": "f14f2caa1ae6bbf37bc45c48d381f285f370a1138a0ae6b24693f254870b2512",
+            "durationSeconds": 400.952,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "folders": {
+        "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+      },
+      "blockers": [
+        {
+          "resource": "revision_sheets",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_requested"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_requested"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "oral_transcript",
+        "nativeSupportAvailable": false,
+        "limitationsDeclared": true
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "3733ded6934fc1b3cba8e20ecff0a505ac26ff59428a1fee84debf68ebf85c38"
       }
     }
   ],
@@ -6465,6 +6914,377 @@
         "scope": "audio_supplement",
         "approvedAt": "2026-10-26T09:22:00+01:00",
         "bundleSha256": "75d2153400ef7b813af0614addf84201ed9881760f56b3919ed96de5878a1783"
+      }
+    },
+    {
+      "courseId": "competences_psychosociales",
+      "folderId": "1l1Pfnru3REiYz9rr6oIk4O6Iw0575Rkw",
+      "vocalIds": [
+        "tts_20261102_ue_d1_competences_psychosociales_relation_et_cooperation_vocal_02_sur_02",
+        "tts_20261102_ue_d1_competences_psychosociales_reperes_cognitifs_et_emotionnels_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "13kEhQ0fhI5OniaerD-bxrdBc_Og8I8ay": "0446b4e257ddff8b0d1be08008b888b172442ff663b4c5f6cfc4923c039a20de",
+        "1n831dpCnSTLpnty_YAoOLek6LghO3MMM": "03ab6224fa46f5ecfc4cd2261d690eec2eb4486ead5c1b04afb331a8bc060b85"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_d1_competences_psychosociales_relation_et_cooperation_vocal_02_sur_02",
+            "audioSha256": "0446b4e257ddff8b0d1be08008b888b172442ff663b4c5f6cfc4923c039a20de",
+            "scriptSha256": "e9a62699c4cda94129435f7cff7a73dbb29c4cc5ef2daac1312b4075f3b2ad95",
+            "durationSeconds": 383.842333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_d1_competences_psychosociales_reperes_cognitifs_et_emotionnels_vocal_01_sur_02",
+            "audioSha256": "03ab6224fa46f5ecfc4cd2261d690eec2eb4486ead5c1b04afb331a8bc060b85",
+            "scriptSha256": "e600b9cd104fbc12cc7de5890088f8ecb0c16a7769589e631f81aa4dbffe6e0d",
+            "durationSeconds": 386.056667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "27f7da8d85eaf45aec22fc56b325773e021f95913d89e7a1c7a972e9395f52e0"
+      }
+    },
+    {
+      "courseId": "d1_communication_td1",
+      "folderId": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
+      "vocalIds": [
+        "tts_20261102_ue_d1_communication_message_canaux_et_filtres_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1ffnKcsdLp08ayr9xcSxHz0gFSNUuHveK": "9eac5f3cba9a839dbb1e30f9ce243b1ca21878ed0d8d13afb59a24b5a6b90c82"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_d1_communication_message_canaux_et_filtres_vocal_01_sur_02",
+            "audioSha256": "9eac5f3cba9a839dbb1e30f9ce243b1ca21878ed0d8d13afb59a24b5a6b90c82",
+            "scriptSha256": "fd55e490d7c1cb70a1481a46f1d7d96e4a36b741a495380117c77a401fa6e560",
+            "durationSeconds": 371.370667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "dd6d647c3c322902f5d4e38d9404cca626dc8d2afc910fe5c32cfddc0d55cdba"
+      }
+    },
+    {
+      "courseId": "gestion_stress_professionnel",
+      "folderId": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
+      "vocalIds": [
+        "tts_20261102_ue_b3_2_1_gestion_du_stress_coping_et_strategies_de_regulation_vocal_02_sur_02",
+        "tts_20261102_ue_b3_2_1_gestion_du_stress_reponses_et_reperage_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1Z_mPxQnKEKHezBXne0drPOZ2hQDIFHWb": "e8a95ab6ec5bf7d0066a5c31f77bff1401827a5463cba83c7d7107bb379602d7",
+        "13bhFEkYSQm8NFn-msgl0zn_IgYoewTdv": "c07635cc1112f3285f59b36ed3a44cb593037358aba31bf664a0a9d3ecece8c8"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_b3_2_1_gestion_du_stress_coping_et_strategies_de_regulation_vocal_02_sur_02",
+            "audioSha256": "e8a95ab6ec5bf7d0066a5c31f77bff1401827a5463cba83c7d7107bb379602d7",
+            "scriptSha256": "df71cf9cf3a2ce631f76645dcaa0268e5f5304a4948c642cfc202c9369ac90a6",
+            "durationSeconds": 387.781333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_b3_2_1_gestion_du_stress_reponses_et_reperage_vocal_01_sur_02",
+            "audioSha256": "c07635cc1112f3285f59b36ed3a44cb593037358aba31bf664a0a9d3ecece8c8",
+            "scriptSha256": "1343a55a7d5210e2976535596b5462484fefca7b72ca6444265df8b0e0ed53a0",
+            "durationSeconds": 403.964333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "d7b809ad6de02b271b47d1efef6437f5c1a1c1eb7ba7c4277b03764170832343"
+      }
+    },
+    {
+      "courseId": "responsabilite_exercice_professionnel",
+      "folderId": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
+      "vocalIds": [
+        "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_cadre_legal_et_competences_vocal_01_sur_02",
+        "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_relation_et_organisation_vocal_02_sur_02",
+        "tts_20261102_ue_a2_1_responsabilite_infirmiere_confidentialite_et_secret_vocal_02_sur_02",
+        "tts_20261102_ue_a2_1_responsabilite_infirmiere_regimes_et_prevention_des_dommages_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1z-2-WrjvLGCPAFLm5H-MRcn6s2rijYfc": "918dd5570e3bd209a11f6ee982250173b7d9411368a5ccd83132e1a30448be1c",
+        "1C85FC3bqtk006bkxW3A64sARrRNJsTkB": "e66d9411997262559c51b9314ce16c7ae42cb2c144d9e9389a38a48a0db0930f",
+        "1cZFirIvLRdLAhoFRvmQGbImO_lFphEeN": "e90a0b587a9f2deefdd48444bb83f8a0ed4c6e11cc26dba78932b02891bf7048",
+        "1xBZ4zqsHDd8eLYMc3NhRjlxJfX1wJA4N": "1f9aaaf56b6d7c905b15c1043d2d5321392ee8da65d1de5772736a7a9ca584c3"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_cadre_legal_et_competences_vocal_01_sur_02",
+            "audioSha256": "918dd5570e3bd209a11f6ee982250173b7d9411368a5ccd83132e1a30448be1c",
+            "scriptSha256": "12b033e2464c11d3da1eb80b321e910602227b808d68cfce2312f8b7e8ef8b43",
+            "durationSeconds": 399.975333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_a2_1_exercice_professionnel_infirmier_relation_et_organisation_vocal_02_sur_02",
+            "audioSha256": "e66d9411997262559c51b9314ce16c7ae42cb2c144d9e9389a38a48a0db0930f",
+            "scriptSha256": "0210db7e33997e6cfa84192cfbcef61cb0ba9902f0758d7d40c30cc1aa12ad54",
+            "durationSeconds": 389.065958,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_a2_1_responsabilite_infirmiere_confidentialite_et_secret_vocal_02_sur_02",
+            "audioSha256": "e90a0b587a9f2deefdd48444bb83f8a0ed4c6e11cc26dba78932b02891bf7048",
+            "scriptSha256": "df0fac5fd9e1705c763d955c2db24573c137db6169579735d0e12c059749d9b8",
+            "durationSeconds": 410.918667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_a2_1_responsabilite_infirmiere_regimes_et_prevention_des_dommages_vocal_01_sur_02",
+            "audioSha256": "1f9aaaf56b6d7c905b15c1043d2d5321392ee8da65d1de5772736a7a9ca584c3",
+            "scriptSha256": "8bd035db647e917414472b4d34f60b37d870bd6ed8c29a9baf86b9b9487ceb2a",
+            "durationSeconds": 386.488333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "1223809054c81d7f6f2b1ba998b35f0dd65f6d85ecdc46a70b2f3a907b63cba8"
+      }
+    },
+    {
+      "courseId": "sante_mondiale_sante_france",
+      "folderId": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
+      "vocalIds": [
+        "tts_20261102_ue_c1_sante_mondiale_indicateurs_et_determinants_vocal_01_sur_02",
+        "tts_20261102_ue_c1_sante_mondiale_inegalites_et_acces_aux_soins_vocal_02_sur_02"
+      ],
+      "artifactSha256s": {
+        "1khRYfPhKt7R3gy1LDsZb1hDJFsduPTs4": "d029504dd40722cdd95ad04ee361703a3047ba90cff75b5402c3eb2e25ec18ec",
+        "16EQbA2xLtOKKcqA5rhqzwJD7KFEjj3bp": "41814a965b1de441ff8378938bfc94eadc90cfb5ddb52d312a0bff3bb3a42d24"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_c1_sante_mondiale_indicateurs_et_determinants_vocal_01_sur_02",
+            "audioSha256": "d029504dd40722cdd95ad04ee361703a3047ba90cff75b5402c3eb2e25ec18ec",
+            "scriptSha256": "29aa81f23c48c50e6866ef2c4b15e0d10c8dff70d49f6b9de39d9f582ec1b5d4",
+            "durationSeconds": 392.298667,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_c1_sante_mondiale_inegalites_et_acces_aux_soins_vocal_02_sur_02",
+            "audioSha256": "41814a965b1de441ff8378938bfc94eadc90cfb5ddb52d312a0bff3bb3a42d24",
+            "scriptSha256": "3522cad6bca5d4aa68075eba40c592f4dd18d0019a8bdffdf48885c212ff0f14",
+            "durationSeconds": 399.036333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "197c953e1f4ff07ccb68980cae4aeb430c92b4556a8c38221113b6c96f865112"
+      }
+    },
+    {
+      "courseId": "vih_b13_20261027",
+      "folderId": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
+      "vocalIds": [
+        "tts_20261102_ue_b1_3_vih_antiretroviraux_prevention_et_accompagnement_vocal_02_sur_02",
+        "tts_20261102_ue_b1_3_vih_virus_immunite_et_depistage_vocal_01_sur_02"
+      ],
+      "artifactSha256s": {
+        "1_idXuvhtw7NN6W4cuSsMUHO8LaX_RkzB": "91669dddd92a71c9ae1acab9bca349b7b13333089c432ef2249d436dee2e8de7",
+        "1HDVk4qyfIONJ3HqL4kaKZU-BVZLmuHHT": "665cda9daafff897da337ba2866625842c89accf54a6dfa291cb8f6e21eb0cd9"
+      },
+      "interactiveAudioReview": {
+        "contract": "interactive_audio_v1",
+        "status": "reviewed",
+        "documentaryReview": "completed",
+        "listeningReview": "completed",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+        "episodes": [
+          {
+            "vocalId": "tts_20261102_ue_b1_3_vih_antiretroviraux_prevention_et_accompagnement_vocal_02_sur_02",
+            "audioSha256": "91669dddd92a71c9ae1acab9bca349b7b13333089c432ef2249d436dee2e8de7",
+            "scriptSha256": "588ce5e9aea9eb426bfafd94de91a7cee9b6e323250a1b018bee96c24f487d31",
+            "durationSeconds": 413.058333,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          },
+          {
+            "vocalId": "tts_20261102_ue_b1_3_vih_virus_immunite_et_depistage_vocal_01_sur_02",
+            "audioSha256": "665cda9daafff897da337ba2866625842c89accf54a6dfa291cb8f6e21eb0cd9",
+            "scriptSha256": "34746e700668ebf5cabbeebbbd11679c2457b4007056f04ebefe66dcdc9ef64e",
+            "durationSeconds": 400.958,
+            "questionCount": 20,
+            "reflectionPauseCount": 20,
+            "transitionPauseCount": 20,
+            "adaptivePauses": true,
+            "introductionUnitSemesterCourseEpisode": true,
+            "synthesisBeforeLexicon": true,
+            "lexiconLast": true,
+            "definitionCount": 4,
+            "sourceLimitationsVisible": true
+          }
+        ]
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_supplement",
+        "approvedAt": "2026-11-02T10:30:46Z",
+        "bundleSha256": "396e9d5dd176335c3f4a78cbefb473be5a1cacecb8e352a90b0469a94d0942b6"
       }
     }
   ]

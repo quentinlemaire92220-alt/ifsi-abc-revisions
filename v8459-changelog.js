@@ -6,7 +6,7 @@ function patch(){
  const host=box.querySelector('details .small');if(!host)return false;
  const span=document.createElement('span');span.id='v8459Change';span.dataset.date='2026-11-02';
  const b=document.createElement('b');b.textContent='V8.30.159 — Vocaux interactifs';span.appendChild(b);
- span.appendChild(document.createTextNode(' · 23 épisodes de révision pour 11 cours du catalogue, dont 5 nouveaux. Les anciennes pistes sont conservées. Les nouveaux enregistrements sont provisoires : pauses et fond pédagogique à vérifier.'));host.prepend(span);return true;
+ span.appendChild(document.createTextNode(' · 23 épisodes de révision pour 11 cours du catalogue, dont 5 nouveaux. Les anciennes pistes sont conservées. 20 questions corrigées par épisode, pauses de réflexion variables, synthèse et définitions finales. Les limites de provenance restent signalées.'));host.prepend(span);return true;
 }
 window.IFSI_V8459_CHANGELOG={patch};if(!patch()){let tries=0;const t=setInterval(()=>{if(patch()||++tries>100)clearInterval(t)},100)}setTimeout(patch,100);setTimeout(patch,500);
 })();
