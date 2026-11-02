@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {validateHostedAudioChanges} from './hosted-audio-supplement-contract.mjs';
+const args=process.argv.slice(2),arg=name=>args[args.indexOf(name)+1];
+const stage=args.includes('--stage')?arg('--stage'):'publication';
+const base=args.includes('--base')?arg('--base'):process.env.IFSI_BASE_SHA;
+if(!/^[a-f0-9]{40}$/i.test(base||''))throw Error('Base complète requise');
+const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
+const old=file=>JSON.parse(execFileSync('git',['show',base+':'+file],{maxBuffer:32*1024*1024}));
+const data=reader=>({registry:reader('course-registry-v741.json'),vocals:reader('vocals.json')});
+validateHostedAudioChanges(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),data(old),data(read),{stage});
+console.log('PASS complément MP3 hébergé — '+stage+' : octets, périmètre, historique et autorisation correspondant à l’étape.');

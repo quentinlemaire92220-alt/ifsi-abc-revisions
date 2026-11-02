@@ -3,6 +3,7 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {validateChangedDeliveries,publicationBundle,bundleDigest} from './course-publication-approval-lib.mjs';
+import {historicalAudioView} from '../tools/hosted-audio-supplement-contract.mjs';
 
 const git=args=>execFileSync('git',args,{maxBuffer:32*1024*1024});
 const json=(ref,file)=>JSON.parse((ref?git(['show',ref+':'+file]):fs.readFileSync(file)).toString('utf8'));
@@ -39,8 +40,9 @@ function readData(ref,manifest,proposedManifest=manifest){
  return {registry:json(ref,'course-registry-v741.json'),sheets,infographics,vocals,banks,imageHashes,vocabulary:json(ref,'vocabulaire-v1.json').entries};
 }
 const oldData=readData(base,before,after),newData=readData(null,after);
+const historicalData=historicalAudioView(after,newData);
 for(const delivery of after.courses||[]){
- console.log('🔐 Empreinte package '+delivery.courseId+' : '+bundleDigest(publicationBundle(delivery.courseId,delivery,newData)));
+ console.log('🔐 Empreinte package '+delivery.courseId+' : '+bundleDigest(publicationBundle(delivery.courseId,delivery,historicalData)));
 }
 const checked=validateChangedDeliveries(before,after,oldData,newData);
 const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');

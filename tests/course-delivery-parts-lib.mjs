@@ -8,6 +8,7 @@ import {validateHybridPart} from './hybrid-sheet-contract.mjs';
 import {validateDroitsPatientsConsolidation} from './droits-patients-consolidation-contract.mjs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
+import {validateHostedAudioChanges} from '../tools/hosted-audio-supplement-contract.mjs';
 
 const kinds = [
   ['sheet', 'sheets', 'resourceId', 'sheetResourceIds'],
@@ -50,6 +51,9 @@ export function changedResources(before, after) {
 
 export function validatePartChanges(before, after, previousManifest, currentManifest, supplements = {supplements:[]}) {
   assert.ok(Array.isArray(currentManifest.courses), 'Manifest courant invalide');
+  const totalChanges=changedResources(before,after).length;
+  const views=validateHostedAudioChanges(previousManifest,currentManifest,before,after,{stage:'preparation'});
+  before=views.oldView;after=views.newView;
   const updates = changedResources(before, after);
   // QCM de complément : seule une banque explicitement autorisée et vérifiée est dispensée
   // des dossiers complets d'un nouveau cours. Tous les autres ajouts restent bloqués.
@@ -169,5 +173,5 @@ export function validatePartChanges(before, after, previousManifest, currentMani
           courseId + ': ' + partId + ' sans infographie : justifier explicitement schematics=none');
     }
   }
-  return {courses:grouped.size, resources:updates.length};
+  return {courses:grouped.size, resources:totalChanges};
 }

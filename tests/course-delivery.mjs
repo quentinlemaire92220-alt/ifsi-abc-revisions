@@ -1,3 +1,4 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -14,11 +15,12 @@ import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
 import {validateReviewedWrittenBundle} from './reviewed-written-bundle-contract.mjs';
 import {isExistingWrittenUpdate,validateExistingWrittenUpdate} from './existing-course-written-update-contract.mjs';
 
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const read=readHistoricalAudioJson;
 const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
 const infos=read('infographics.json'),vocals=read('vocals.json');
-const {deck,questions,registry}=await runtimeDeck();
+const {deck,questions}=await runtimeDeck();
+const registry=read('course-registry-v741.json');
 const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
 validateAudioSupplements(manifest,{registry,vocals});
 const required=['01','02','03','04','05','06','07'];

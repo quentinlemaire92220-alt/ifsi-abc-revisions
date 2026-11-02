@@ -1,3 +1,4 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
@@ -5,7 +6,7 @@ import {countAuthoredListItems} from './flashcard-answer-enumeration.mjs';
 import {execFileSync} from 'node:child_process';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {isExistingWrittenUpdate,validateExistingWrittenUpdate,verifyExistingWrittenHistory} from './existing-course-written-update-contract.mjs';
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const read=readHistoricalAudioJson;
 const data=await runtimeDeck();
 const enumerationCases=[
  ['Stagnation, dépôts et températures favorables. La maîtrise du réseau doit être organisée et contrôlée.',3],
@@ -18,7 +19,7 @@ for(const answer of ['Un seul facteur. Explication.', 'Patient et site, geste et
 
 const extra={sheets:[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),questions:data.questions,deck:data.deck,vocabulary:read('vocabulaire-v1.json').entries,vocals:read('vocals.json'),infographics:read('infographics.json')};
 for(const d of read('docs/course-deliveries.json').courses.filter(isExistingWrittenUpdate)){
- const course=data.registry.courses.find(c=>c.id===d.courseId);
+ const course=read('course-registry-v741.json').courses.find(c=>c.id===d.courseId);
  validateExistingWrittenUpdate(course,d,extra);
  const old=JSON.parse(execFileSync('git',['show',process.env.IFSI_BASE_SHA+':course-registry-v741.json'],{encoding:'utf8'})).courses.find(c=>c.id===d.courseId);
  verifyExistingWrittenHistory(old,course,d);

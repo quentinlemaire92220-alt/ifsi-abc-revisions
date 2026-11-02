@@ -1,3 +1,4 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -5,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {isDeepStrictEqual} from 'node:util';
 import {validateBank} from '../tools/qcm-bank-contract.mjs';
 import {validateWrittenDelivery} from './written-sheet-contract.mjs';
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const read=readHistoricalAudioJson;
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export const isExistingWrittenUpdate=d=>d?.updateContract==='existing_course_written_update_v1';
 export function validateExistingWrittenUpdate(course,d,{sheets,questions,deck,vocabulary,vocals,infographics}={}){
@@ -65,6 +66,20 @@ export function verifyExistingWrittenHistory(oldCourse,nextCourse,d,base=process
  assert.ok(isExistingWrittenUpdate(d));assert.equal(d.courseId,oldCourse.id);
  assert.match(base||'',/^[a-f0-9]{40}$/);
  const before=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
+ const prior=before('docs/course-deliveries.json').courses.find(c=>c.courseId===d.courseId);
+ if(prior){
+  // A later audio supplement must not re-run the first-release +2 docs/+1 sheet
+  // arithmetic against a base where those resources are already published.
+  assert.deepEqual(d,prior,'Livraison historique modifiée');
+  assert.deepEqual(nextCourse,oldCourse,'Cours historique modifié hors complément isolé');
+  assert.deepEqual(read(d.historicalResourcesPath),before(d.historicalResourcesPath),'Snapshot historique modifié');
+  for(const file of ['sheets-1.json','sheets-2.json','sheets-3.json','vocals.json','infographics.json','questions-5.json']){
+   assert.deepEqual(read(file).filter(x=>x.courseId===d.courseId),before(file).filter(x=>x.courseId===d.courseId),'Ressource historique modifiée : '+file);
+  }
+  assert.deepEqual(read(d.qcmBank),before(d.qcmBank),'Banque historique modifiée');
+  assert.deepEqual(read('vocabulaire-v1.json').entries.filter(x=>x.courseIds?.includes(d.courseId)),before('vocabulaire-v1.json').entries.filter(x=>x.courseIds?.includes(d.courseId)),'Vocabulaire historique modifié');
+  return true;
+ }
  const strip=x=>{const y={...x};for(const k of ['officialSupport','nativeSupportAvailable','provisional','sourceStatus','authoredFlashcards','authoredFlashcardPresentation','flashcardTarget','qcmPdfUrl','qcmPdfQuestionCount','flashcardsPdfUrl','canonicalQuestionIds','vocabularyEntryIds','additionalDocuments','sourceNote'])delete y[k];return y;};
  assert.deepEqual(strip(nextCourse),strip(oldCourse),'Identité, support ou vocaux historiques modifiés');
  const oldDocs=oldCourse.additionalDocuments||[],docs=nextCourse.additionalDocuments;

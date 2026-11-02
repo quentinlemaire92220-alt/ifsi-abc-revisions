@@ -5,6 +5,7 @@ import {isApprovedPrivateReferenceWithdrawal} from './private-resource-withdrawa
 import {validateRevisionSheetChange} from './revision-sheet-supplement-contract.mjs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 import {validateStressAddonChange} from './stress-qcm-flashcards-addon.mjs';
+import {validateHostedAudioChanges} from '../tools/hosted-audio-supplement-contract.mjs';
 
 function canonical(value){
  if(Array.isArray(value))return value.map(canonical);
@@ -122,7 +123,9 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  return true;
 }
 
-export function validateChangedDeliveries(before,after,oldData,newData){
+export function validateChangedDeliveries(before,after,oldData,newData,{stage='publication'}={}){
+ const views=validateHostedAudioChanges(before,after,oldData,newData,{stage});
+ oldData=views.oldView;newData=views.newView;
  const old=new Map((before.courses||[]).map(c=>[c.courseId,c]));const checked=[];
  for(const delivery of after.courses||[]){
   const id=delivery.courseId,prior=old.get(id);
