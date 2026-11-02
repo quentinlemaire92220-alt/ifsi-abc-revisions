@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import fs from 'node:fs';
 import {validateInteractiveAudioReview,validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
+import {validateVocalDuration} from './vocal-duration-contract.mjs';
 const canonical=x=>Array.isArray(x)?x.map(canonical):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonical(x[k])])):x;
 export function audioSupplementDigest(supplement,vocals){
  const rows=supplement.vocalIds.map(id=>vocals.find(v=>v.id===id)).sort((a,b)=>a.id.localeCompare(b.id));
@@ -110,8 +111,7 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
    }else assert.equal(v.driveId,undefined,c.courseId+': Drive fictif pour MP3 local');
    assert.equal(v.localAudio,'./'+a.path,c.courseId+': source audio divergente');
    assert.equal(v.mime,'audio/mpeg',c.courseId+': MIME audio incorrect');
-   assert.ok(Number.isFinite(v.durationSeconds)&&v.durationSeconds>0&&v.durationSeconds<600,
-     c.courseId+': durée MP3 incorrecte');
+   validateVocalDuration(v,a.sha256);
    assert.equal(v.durationSeconds,a.durationSeconds,c.courseId+': durée MP3 non cohérente');
    assert.match(a.sha256||'',/^[a-f0-9]{64}$/,c.courseId+': empreinte MP3 absente');
    assert.ok(fs.existsSync(a.path),c.courseId+': MP3 manquant '+a.path);

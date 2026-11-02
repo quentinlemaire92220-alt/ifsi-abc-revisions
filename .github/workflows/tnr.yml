@@ -414,6 +414,8 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           node tests/audio-supplement-contract-test.mjs
+          node tests/vocal-duration-contract-test.mjs
+          node tests/audio-replacement-contract-test.mjs
           node tests/interactive-audio-review-contract-test.mjs
 
       - name: Vérifier les cinq vocaux retrouvés et la préservation des anciens

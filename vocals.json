@@ -2512,7 +2512,15 @@
     "driveId": "1j1zhvFkvWC3ItQjirLDA6Dwp_6VCrhmd",
     "mime": "audio/mpeg",
     "localAudio": "./assets/audio/hepatites-virales/hepatites_virales_01.mp3",
-    "durationSeconds": 563.881315
+    "durationSeconds": 569.318667,
+    "synthesisOrigin": "owner_tts_export",
+    "replacementReview": {
+      "status": "owner_accepted",
+      "scope": "audio_replacement",
+      "fromSha256": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
+      "toSha256": "3bc01338dfa978f1679b054222710bf43735a1bf3954a0e35399fb55a0f9db53",
+      "approvedAt": "2026-11-02T15:25:37Z"
+    }
   },
   {
     "id": "hepatites_virales_02",
@@ -2523,6 +2531,23 @@
     "driveId": "1vu4AtBnZ_f8j74ulj5yyPbexZHXhTjjL",
     "mime": "audio/mpeg",
     "localAudio": "./assets/audio/hepatites-virales/hepatites_virales_02.mp3",
-    "durationSeconds": 593.69034
+    "durationSeconds": 614.330667,
+    "synthesisOrigin": "owner_tts_export",
+    "durationException": {
+      "status": "owner_accepted",
+      "vocalId": "hepatites_virales_02",
+      "courseId": "hepatites_virales",
+      "durationSeconds": 614.330667,
+      "sha256": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70",
+      "approvedAt": "2026-11-02T15:25:37Z",
+      "reason": "Minor duration overrun explicitly accepted by owner for this TTS export"
+    },
+    "replacementReview": {
+      "status": "owner_accepted",
+      "scope": "audio_replacement",
+      "fromSha256": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5",
+      "toSha256": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70",
+      "approvedAt": "2026-11-02T15:25:37Z"
+    }
   }
 ]
