@@ -106,7 +106,7 @@ for (const course of firstPublished) {
     continue;
   }
   if (delivery.deliveryMode==='sheet_only_first_release') {
-    validateSheetOnlyFirstRelease(course,delivery,current.sheets,{vocals:current.vocals,infographics:current.infographics});
+    validateSheetOnlyFirstRelease(course,delivery,current.sheets,{vocals:current.vocals,infographics:current.infographics,audioSupplements:(deliveries.audioSupplements||[]).filter(s=>s.courseId===course.id)});
     continue;
   }
   if (delivery.deliveryMode==='audio_only') {

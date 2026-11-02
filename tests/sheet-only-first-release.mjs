@@ -2,6 +2,7 @@
 // Contrat additif ; tous les contrôles des packs complets restent inchangés.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 import {createHash} from 'node:crypto';
 import {validateSheetSource} from './dual-sheet-contract.mjs';
 import {validateStressAddonRuntime} from './stress-qcm-flashcards-addon.mjs';
@@ -9,7 +10,7 @@ import {validateStressAddonRuntime} from './stress-qcm-flashcards-addon.mjs';
 const hash=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x);
 const BASE='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 
-export function validateSheetOnlyFirstRelease(course,delivery,sheets,{questions=[],deck=[],vocals=[],infographics=[]}={}){
+export function validateSheetOnlyFirstRelease(course,delivery,sheets,{questions=[],deck=[],vocals=[],infographics=[],audioSupplements=[]}={}){
  const id=delivery?.courseId,tag=id+': ';
  assert.equal(delivery.deliveryMode,'sheet_only_first_release',tag+'mode invalide');
  assert.equal(delivery.publicationScope,'revision_sheet_only',tag+'GO non restreint à la fiche');
@@ -38,12 +39,14 @@ export function validateSheetOnlyFirstRelease(course,delivery,sheets,{questions=
  if(!delivery.qcmFlashcardsSupplement)assert.ok(delivery.blockers?.some(x=>x.resource==='flashcards'&&x.reason==='not_requested'),
   tag+'flashcards absentes non signalées');
  assert.deepEqual(delivery.infographicResourceIds||[],[],tag+'infographies artificielles');
- assert.deepEqual(delivery.vocals||[],[],tag+'vocaux artificiels');
+ const approvedAudio=validateAudioSupplements({audioSupplements},{registry:{courses:[course]},vocals});
+ const approvedForCourse=(vocals||[]).filter(v=>v.courseId===id&&approvedAudio.has(v.id));
+ assert.deepEqual(delivery.vocals||[],approvedForCourse.map(v=>v.id),tag+'vocaux non couverts par un complément signé');
  assert.equal(delivery.generatedImageCount,0,tag+'images interdites pour la fiche écrite');
  assert.equal(delivery.schematics,'none',tag+'schémas interdits pour la fiche écrite');
  if(!delivery.qcmFlashcardsSupplement)assert.equal((questions||[]).filter(x=>x.courseId===id).length,0,tag+'QCM non autorisés');
  if(!delivery.qcmFlashcardsSupplement)assert.equal((deck||[]).filter(x=>x.courseId===id).length,0,tag+'flashcards non autorisées');
- assert.equal((vocals||[]).filter(x=>x.courseId===id).length,0,tag+'audios non autorisés');
+ assert.equal((vocals||[]).filter(x=>x.courseId===id&&!approvedAudio.has(x.id)).length,0,tag+'audios non autorisés');
  assert.equal((infographics||[]).filter(x=>x.courseId===id).length,0,tag+'infographies non autorisées');
  assert.equal(sheets.filter(x=>x.courseId===id).length,1,tag+'une fiche unique attendue');
  const sheet=sheets.find(x=>x.courseId===id&&x.resourceId===delivery.sheetResourceId);

@@ -26,6 +26,7 @@ export function publicationBundle(courseId,delivery,data){
   vocabulary:sortById((data.vocabulary||[]).filter(x=>x.courseIds?.includes(courseId))),
   scripts:delivery.vocalScripts||[],
   packFormat:delivery.packFormat||'legacy',
+  ...(delivery.interactiveAudioReview?{interactiveAudioReview:delivery.interactiveAudioReview,sourceBasis:delivery.sourceBasis,audioOnlyContract:delivery.audioOnlyContract}:{}),
   ...(delivery.packFormat==='hybrid_v1'?{hybridMetadata:{discipline:delivery.discipline,sourceBasis:delivery.sourceBasis,hybridCoverage:delivery.hybridCoverage,hybridVisualReview:delivery.hybridVisualReview,lexicon:delivery.lexicon,schematics:delivery.schematics,embeddedFigureCount:delivery.embeddedFigureCount}}:{}),
   completeInfographicAudit:delivery.packFormat==='lean_v1'?delivery.infographicSheetVisualAudit:null,
   dualSheetCoverage:delivery.packFormat==='lean_v1'?delivery.dualSheetCoverage:null,
@@ -52,7 +53,7 @@ export function validatePublicationApproval(courseId,delivery,digest){
  const a=delivery.publicationApproval;
  assert.equal(a?.status,'approved',courseId+': validation du package absente. Empreinte attendue : '+digest);
  assert.equal(a.authorization,'explicit_go_publication',courseId+': GO publication explicite absent');
- const expectedScope=['infographics_only','revision_sheet_only'].includes(delivery.publicationScope)?delivery.publicationScope:'course_package';
+ const expectedScope=delivery.deliveryMode==='audio_only'&&delivery.audioOnlyContract==='interactive_audio_v1'?'audio_only':['infographics_only','revision_sheet_only'].includes(delivery.publicationScope)?delivery.publicationScope:'course_package';
  if(expectedScope==='revision_sheet_only')assert.equal(delivery.deliveryMode,'sheet_only_first_release',courseId+': GO fiche seule interdit pour un pack normal');
  assert.equal(a.scope,expectedScope,courseId+': portee du package incorrecte : une validation de fichier seul ne valide pas le package');
  assert.ok(typeof a.approvedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(a.approvedAt)&&Number.isFinite(Date.parse(a.approvedAt)),courseId+': date de validation absente ou invalide');
@@ -78,7 +79,7 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  for(const vid of addIds){const v=newVoice.find(v=>v.id===vid);if(!v||!Number.isFinite(v.durationSeconds)||v.durationSeconds<=0||v.durationSeconds>=600)return false;}
  const oldCourse=oldData.registry.courses.find(c=>c.id===id),newCourse=newData.registry.courses.find(c=>c.id===id);
  if(!oldCourse||!newCourse)return false;
- const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];return x;};
+ const stripAudio=c=>{const x={...c};for(const k of ['audioStatus','audioCount','audioFolderUrl'])delete x[k];if(typeof x.sourceNote==='string')x.sourceNote=x.sourceNote.replace(/\s*Vocaux non demandés\.$/,'');return x;};
  if(JSON.stringify(canonical(stripAudio(oldCourse)))!==JSON.stringify(canonical(stripAudio(newCourse))))return false;
  if(newCourse.audioStatus!=='available'||newCourse.audioCount!==newVoice.length
   ||newCourse.audioFolderUrl!=='https://drive.google.com/drive/folders/'+supplement.folderId)return false;
@@ -105,7 +106,7 @@ export function isStrictAudioSupplementOnly(id,prior,delivery,oldData,newData,pr
  }
  const stripDelivery=d=>{const x={...d};for(const k of ['vocals','artifactSha256s','blockers','publicationApproval','status','partDeliveries'])delete x[k];return x;};
  if(JSON.stringify(canonical(stripDelivery(prior)))!==JSON.stringify(canonical(stripDelivery(delivery))))return false;
- const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&['awaiting_user_mp3','awaiting_mp3'].includes(b.reason)));
+ const expectedBlockers=(prior.blockers||[]).filter(b=>!(b.resource==='vocals'&&['awaiting_user_mp3','awaiting_mp3','not_requested'].includes(b.reason)));
  if(JSON.stringify(canonical(expectedBlockers))!==JSON.stringify(canonical(delivery.blockers||[])))return false;
  const expectedVocalIds=[...(prior.vocals||[]),...supplement.vocalIds];
  if(JSON.stringify(delivery.vocals||[])!==JSON.stringify(expectedVocalIds))return false;

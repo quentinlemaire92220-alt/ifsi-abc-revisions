@@ -1,5 +1,5 @@
 {
-  "version": "8.30.158",
+  "version": "8.30.159",
   "courses": [
     {
       "id": "biomolecules",
@@ -610,7 +610,7 @@
         "Introduction CPS"
       ],
       "audioStatus": "available",
-      "audioCount": 1,
+      "audioCount": 3,
       "audioFolderUrl": "https://drive.google.com/drive/folders/1l1Pfnru3REiYz9rr6oIk4O6Iw0575Rkw"
     },
     {
@@ -1006,8 +1006,8 @@
         }
       ],
       "audioStatus": "available",
-      "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/14t1L6Rca-M7F0RtJY16r1HRRFNyAkL9H",
+      "audioCount": 4,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
       "provisional": true,
       "sourceNote": "Support officiel de 101 diapositives du 20/10/2026 intégré. Transcription orale authentifiée absente ; classements complets des cinq cancers non documentés dans les diapositives ; chiffres 2021/2023 contradictoires signalés. Fiche hybride V7.3 et 56 QCM corrigés publiés avec ces réserves."
     },
@@ -1033,8 +1033,8 @@
       "flashcardTarget": 42,
       "authoredFlashcards": true,
       "audioStatus": "available",
-      "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1_gGQ6VEyU3xJ4WohSdW9PAGptjTsypTU",
+      "audioCount": 6,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW",
       "additionalDocuments": [
         {
           "label": "Fiche hybride v1.47 — 27 pages (provisoire)",
@@ -1071,7 +1071,7 @@
       "flashcardTarget": 40,
       "authoredFlashcards": true,
       "audioStatus": "available",
-      "audioCount": 2,
+      "audioCount": 3,
       "additionalDocuments": [
         {
           "label": "Support officiel — TD1 du 20 octobre 2026",
@@ -1090,7 +1090,7 @@
           "cardCount": 40
         }
       ],
-      "audioFolderUrl": "https://drive.google.com/drive/folders/1R59F8OPjRlNvk3tMfxmOrzTWQ7LJOc9h"
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
     },
     {
       "id": "d1_posture_professionnelle_td2",
@@ -1309,7 +1309,7 @@
       "officialSupport": true,
       "sourceStatus": "official_support",
       "provisional": false,
-      "sourceNote": "Cours officiel du 19/10/2026 ; fiche v1.49, 50 QCM interactifs corrigés, 50 flashcards et 50 termes de vocabulaire. Vocaux non demandés.",
+      "sourceNote": "Cours officiel du 19/10/2026 ; fiche v1.49, 50 QCM interactifs corrigés, 50 flashcards et 50 termes de vocabulaire.",
       "additionalDocuments": [
         {
           "type": "revision",
@@ -1328,7 +1328,10 @@
         }
       ],
       "flashcardTarget": 50,
-      "authoredFlashcards": true
+      "authoredFlashcards": true,
+      "audioCount": 2,
+      "audioStatus": "available",
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
     },
     {
       "id": "vih_b13_20261027",
@@ -1353,7 +1356,7 @@
       "flashcardTarget": 50,
       "authoredFlashcards": true,
       "audioStatus": "available",
-      "audioCount": 5,
+      "audioCount": 7,
       "additionalDocuments": [
         {
           "type": "revision",
@@ -1370,7 +1373,8 @@
           "label": "50 flashcards VIH — PROVISOIRE (11 pages)",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/vih-20261027/UE_B1_3_S1_VIH_Flashcards_50.pdf"
         }
-      ]
+      ],
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
     },
     {
       "id": "entretien_infirmier",
@@ -1439,6 +1443,87 @@
       ],
       "flashcardTarget": 50,
       "authoredFlashcards": true
+    },
+    {
+      "id": "roles_missions_ide",
+      "label": "Rôles et missions de l'IDE",
+      "domain": "A",
+      "ue": "A1",
+      "aliases": [
+        "Rôles et missions de l'IDE",
+        "Rôle infirmier",
+        "Raisonnement clinique infirmier"
+      ],
+      "sourceStatus": "transcript",
+      "provisional": true,
+      "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    {
+      "id": "diarrhees_infectieuses",
+      "label": "Diarrhées infectieuses",
+      "domain": "B",
+      "ue": "B1.3",
+      "aliases": [
+        "Diarrhées infectieuses",
+        "UE B1.3 diarrhées"
+      ],
+      "sourceStatus": "transcript",
+      "provisional": true,
+      "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    {
+      "id": "psychologie_sociale",
+      "label": "Psychologie sociale",
+      "domain": "B",
+      "ue": "B2.1.1",
+      "aliases": [
+        "Psychologie sociale",
+        "Psychosociologie"
+      ],
+      "sourceStatus": "transcript",
+      "provisional": true,
+      "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    {
+      "id": "offre_soins_systeme_sante",
+      "label": "Offre de soins et système de santé",
+      "domain": "C",
+      "ue": "C1.1",
+      "aliases": [
+        "Offre de soins",
+        "Offre de soins et système de santé"
+      ],
+      "sourceStatus": "transcript",
+      "provisional": true,
+      "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    {
+      "id": "organisation_systeme_sante",
+      "label": "Organisation du système de santé",
+      "domain": "C",
+      "ue": "C1",
+      "aliases": [
+        "Organisation du système de santé",
+        "Système de santé français"
+      ],
+      "sourceStatus": "transcript",
+      "provisional": true,
+      "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
     }
   ],
   "auditBaseline": {

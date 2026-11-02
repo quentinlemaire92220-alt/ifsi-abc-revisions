@@ -2,10 +2,11 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import fs from 'node:fs';
+import {validateInteractiveAudioReview,validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 const canonical=x=>Array.isArray(x)?x.map(canonical):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonical(x[k])])):x;
 export function audioSupplementDigest(supplement,vocals){
  const rows=supplement.vocalIds.map(id=>vocals.find(v=>v.id===id)).sort((a,b)=>a.id.localeCompare(b.id));
- return createHash('sha256').update(JSON.stringify(canonical({courseId:supplement.courseId,folderId:supplement.folderId,vocals:rows,artifactSha256s:supplement.artifactSha256s}))).digest('hex');
+ return createHash('sha256').update(JSON.stringify(canonical({courseId:supplement.courseId,folderId:supplement.folderId,vocals:rows,artifactSha256s:supplement.artifactSha256s,...(supplement.interactiveAudioReview?{interactiveAudioReview:supplement.interactiveAudioReview}:{})}))).digest('hex');
 }
 export function validateAudioSupplements(manifest,data){
  const byId=new Map(),files=new Set();
@@ -14,6 +15,7 @@ export function validateAudioSupplements(manifest,data){
   assert.match(s.folderId||'',/^[\w-]{15,}$/,'Dossier audio absent');
   assert.ok(Array.isArray(s.vocalIds)&&s.vocalIds.length,'Complément audio vide');
   assert.equal(new Set(s.vocalIds).size,s.vocalIds.length,'ID vocal déclaré deux fois');
+  if(s.interactiveAudioReview)validateInteractiveAudioReview(s,data.vocals);
   const a=s.publicationApproval;
   assert.equal(a?.status,'approved','Complément audio non approuvé');
   assert.equal(a.authorization,'explicit_go_publication','GO audio absent');
@@ -50,6 +52,14 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
  const oldIds=new Set(oldVocals.map(v=>v.id));
  const approved=new Set(),usedPaths=new Set();
  for(const c of after.courses||[]){
+  if(c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1'&&!(before.courses||[]).some(x=>x.courseId===c.courseId)){
+   assert.ok(!(oldRegistry.courses||[]).some(x=>x.id===c.courseId),'Nouveau cours audio déjà connu');
+   const course=registry.courses.find(x=>x.id===c.courseId);
+   assert.ok(course,'Cours audio nouveau absent');
+   validateInteractiveAudioOnly(course,c,newVocals);
+   for(const id of c.vocals){assert.ok(!oldIds.has(id)&&!approved.has(id),'MP3 audio seul historique ou dupliqué');approved.add(id);}
+   continue;
+  }
   if(!Array.isArray(c.publicAudioArtifacts)||c.publicAudioArtifacts.length===0)continue;
   if((before.courses||[]).some(x=>x.courseId===c.courseId))continue;
   assert.ok(!(oldRegistry.courses||[]).some(x=>x.id===c.courseId),

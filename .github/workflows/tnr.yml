@@ -410,7 +410,9 @@ jobs:
 
       - name: Vérifier les compléments audio autorisés
         if: ${{ !cancelled() }}
-        run: node tests/audio-supplement-contract-test.mjs
+        run: |
+          node tests/audio-supplement-contract-test.mjs
+          node tests/interactive-audio-review-contract-test.mjs
 
       - name: Vérifier les cinq vocaux retrouvés et la préservation des anciens
         if: ${{ !cancelled() }}
