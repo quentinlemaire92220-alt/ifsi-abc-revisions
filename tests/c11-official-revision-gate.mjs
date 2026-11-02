@@ -2,6 +2,7 @@
 // its own reviewed package and authentic publication approval.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {validateAudioSupplements} from './audio-supplement-contract.mjs';
 const json = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const gate = json('docs/proposals/c11-sante-mondiale-support-officiel-20261031/REVISION_STATUS.json');
 const registry = json('course-registry-v741.json').courses;
@@ -63,7 +64,14 @@ if (gate.studentReleaseApproved) {
  assert.equal(delivery.publicArtifacts?.sheet?.sha256,'a74f9df5707f5fc23db99ff9624abf79f4a0cb8bc5f88f14c7fc5c82226323fc');
  assert.equal(delivery.publicArtifacts?.qcm?.sha256,'4153a3b554fb7dc676fb745c26f8ab7c302493c51616b743b1af46a2ca6cac8e');
  assert.equal(bank.length,56);assert.equal(bank.flatMap(q=>q.flashcards||[]).length,56);
- assert.equal(c.flashcardTarget,56);assert.equal(c.audioCount,2);
+ assert.equal(c.flashcardTarget,56);
+ const voices=json('vocals.json');
+ const approved=validateAudioSupplements(json('docs/course-deliveries.json'),{registry:{courses:registry},vocals:voices});
+ const historicalIds=new Set(['sante_mondiale_sante_france_p01_vocal_01','sante_mondiale_sante_france_p01_vocal_02']);
+ assert.ok([...historicalIds].every(id=>voices.some(v=>v.id===id&&v.courseId===c.id)),'Vocaux historiques C1.1 perdus');
+ const extra=voices.filter(v=>v.courseId===c.id&&!historicalIds.has(v.id));
+ assert.ok(extra.every(v=>approved.has(v.id)),'Vocal C1.1 ajouté sans complément approuvé');
+ assert.equal(c.audioCount,2+extra.length);
  assert.equal(sheets.filter(x=>x.sourceStatus!=='archived').length,1,'Plusieurs fiches actives');
  assert.equal(sheets.filter(x=>x.sourceStatus==='archived').length,2,'Fiches historiques supprimées');
  assert.equal(json('infographics.json').filter(x=>x.courseId===c.id&&x.sourceStatus==='archived').length,9,'Anciennes planches non archivées');

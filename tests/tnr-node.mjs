@@ -1,3 +1,4 @@
+import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import './course-navigation-ui-v2-smoke.mjs';
@@ -284,7 +285,12 @@ const scopedProvisionalWrittenLexicons=json('docs/course-deliveries.json').cours
   c.writtenPdfAudit.pdfSha256===c.publicAssetSha256&&
   c.visualOwnerReview?.status==='owner_accepted'
 ).map(c=>c.courseId);
-const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets,...scopedProvisionalWrittenLexicons]);
+const audioOnlyLexiconCourses=json('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1').map(c=>{
+ const course=registry.courses.find(x=>x.id===c.courseId);
+ validateInteractiveAudioOnly(course,c,json('vocals.json'));
+ return c.courseId;
+});
+const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets,...scopedProvisionalWrittenLexicons,...audioOnlyLexiconCourses]);
 assert(lexiconCourseIds.size===courseIds.size,'Glossaire : un cours doit posséder un lexique validé (dans la fiche seule approuvée ou en glossaire)');
 assert(vocabulary.entries.some(x=>x.term==='Consentement libre et éclairé')&&vocabulary.entries.some(x=>x.term==='Méiose')&&vocabulary.entries.some(x=>x.term==='Ostéoporose')&&vocabulary.entries.some(x=>x.term==='Empathie'),'Glossaire multicours incomplet');
 for(const x of vocabulary.entries){assert(Array.isArray(x.courseIds)&&x.courseIds.length>=1,'Terme sans cours : '+x.id);for(const id of x.courseIds)assert(courseIds.has(id),'Cours inconnu pour le terme '+x.id+' : '+id)}
