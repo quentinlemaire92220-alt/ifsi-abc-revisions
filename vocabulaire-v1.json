@@ -9139,6 +9139,591 @@
       "sourceType": "reference_pedagogique",
       "etymologie": "Vestibule désigne un espace d’entrée ; le terme nomme une région de l’oreille interne.",
       "distinction": "Participe à l’équilibre ; la cochlée est spécialisée dans l’audition."
+    },
+    {
+      "id": "hepatites_virales_voc_001",
+      "term": "Hépatite",
+      "definition": "Inflammation du foie, aiguë ou chronique, dont la cause peut être virale ou non virale.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Hépato- renvoie au foie ; -ite désigne une inflammation.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le terme décrit l’inflammation du foie ; il ne précise pas à lui seul sa cause."
+    },
+    {
+      "id": "hepatites_virales_voc_002",
+      "term": "Hépatocyte",
+      "definition": "Cellule majoritaire du foie, impliquée dans ses fonctions métaboliques et de synthèse.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "hépat(o)- (foie) + -cyte (cellule).",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Une cellule du foie se distingue des enzymes ou des marqueurs dosés dans le sang."
+    },
+    {
+      "id": "hepatites_virales_voc_003",
+      "term": "Hépato- / -ite",
+      "definition": "Hépato- renvoie au foie ; le suffixe -ite indique une inflammation.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Deux éléments explicités dans le lexique : le foie pour hépato-, l’inflammation pour -ite.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Hépato- précise l’organe ; -ite précise le processus inflammatoire."
+    },
+    {
+      "id": "hepatites_virales_voc_004",
+      "term": "Régénération hépatique",
+      "definition": "Capacité du foie à reconstituer une partie de son volume, à l’origine notamment de la possibilité de don vivant partiel.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression associant la reconstitution d’un tissu ou d’un volume au foie, désigné par « hépatique ».",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La reconstitution du volume se distingue de l’évaluation des fonctions et complications du foie."
+    },
+    {
+      "id": "hepatites_virales_voc_005",
+      "term": "Transaminases",
+      "definition": "Enzymes dont l’augmentation sanguine accompagne une atteinte cellulaire hépatique dans le cours ; les principales citées sont ALAT et ASAT.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Nom collectif des enzymes dont ALAT et ASAT sont les exemples développés dans le lexique.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Une élévation enzymatique ne suffit pas à identifier le virus responsable."
+    },
+    {
+      "id": "hepatites_virales_voc_006",
+      "term": "ALAT / ASAT",
+      "definition": "Alanine aminotransférase et aspartate aminotransférase : enzymes dosées dans le bilan biologique évoqué.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Sigles développés : alanine aminotransférase et aspartate aminotransférase.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Ces enzymes se distinguent des antigènes et anticorps spécifiques recherchés pour B ou C."
+    },
+    {
+      "id": "hepatites_virales_voc_007",
+      "term": "Cholestase",
+      "definition": "Diminution ou perturbation de l’écoulement biliaire, associée dans le cours à une accumulation des constituants de la bile.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Désignation d’une perturbation de l’écoulement de la bile ; sens descriptif conservé sans décomposition ajoutée.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La perturbation biliaire se distingue de la lésion des cellules hépatiques décrite par la cytolyse."
+    },
+    {
+      "id": "hepatites_virales_voc_008",
+      "term": "Ictère",
+      "definition": "Coloration jaune de la peau et des muqueuses, appelée jaunisse ; signe possible, mais non constant, d’une atteinte hépatobiliaire.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Du grec ikteros, « jaunisse » ; terme non segmentable cliniquement.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La coloration jaune est un signe clinique ; elle n’identifie pas à elle seule le virus."
+    },
+    {
+      "id": "hepatites_virales_voc_009",
+      "term": "Asymptomatique",
+      "definition": "Qui ne s’accompagne pas de symptôme perceptible ; ce terme n’exclut ni infection, ni contagiosité, ni évolution.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Le préfixe a- exprime ici l’absence ; symptomatique renvoie aux symptômes perceptibles.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "L’absence de symptôme ne signifie pas absence d’infection ou de transmission."
+    },
+    {
+      "id": "hepatites_virales_voc_010",
+      "term": "Chronicité",
+      "definition": "Persistance dans le temps ; le cours situe l’hépatite chronique au-delà de six mois.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Nom décrivant la persistance dans le temps, à distinguer d’un épisode aigu.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La persistance se distingue d’un épisode aigu ; la durée et l’évolution comptent."
+    },
+    {
+      "id": "hepatites_virales_voc_011",
+      "term": "Insuffisance hépatique",
+      "definition": "Défaillance des fonctions du foie, notamment de sa capacité de synthèse, avec des conséquences potentiellement graves.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression associant une défaillance de fonction à son organe : le foie.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La défaillance fonctionnelle se distingue d’une simple élévation isolée des transaminases."
+    },
+    {
+      "id": "hepatites_virales_voc_012",
+      "term": "Hépatite fulminante",
+      "definition": "Forme aiguë grave associant insuffisance hépatique et encéphalopathie, pouvant s’accompagner de défaillances d’autres organes.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "L’adjectif fulminante qualifie ici la forme aiguë grave de l’inflammation hépatique.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Cette forme aiguë grave se distingue de l’évolution chronique vers la fibrose ou la cirrhose."
+    },
+    {
+      "id": "hepatites_virales_voc_013",
+      "term": "Encéphalopathie hépatique",
+      "definition": "Trouble neurologique lié à la défaillance hépatique, se manifestant notamment par une altération de la conscience.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression qui relie le trouble neurologique décrit à une défaillance du foie.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le trouble neurologique se distingue des marqueurs biologiques et des voies de transmission."
+    },
+    {
+      "id": "hepatites_virales_voc_014",
+      "term": "Fibrose",
+      "definition": "Constitution de tissu cicatriciel dans le foie au cours d’une atteinte persistante.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Nom de la constitution de tissu cicatriciel décrite dans la définition ; aucun découpage artificiel ajouté.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le tissu cicatriciel se distingue du remaniement de l’architecture décrit pour la cirrhose."
+    },
+    {
+      "id": "hepatites_virales_voc_015",
+      "term": "Cirrhose",
+      "definition": "Remaniement chronique de l’architecture hépatique avec fibrose, exposant à des complications fonctionnelles et à un cancer du foie.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Désignation du remaniement chronique de l’architecture du foie décrit dans la définition.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Elle expose à des complications ; elle ne signifie pas que toute personne a déjà un cancer."
+    },
+    {
+      "id": "hepatites_virales_voc_016",
+      "term": "Hypertension portale",
+      "definition": "Augmentation de pression dans le système porte, liée dans le cours à la résistance au passage du sang dans un foie cirrhotique.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Hyper- indique une augmentation ; portale précise le système porte concerné par la pression.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La pression dans le système porte se distingue de l’identification du virus responsable."
+    },
+    {
+      "id": "hepatites_virales_voc_017",
+      "term": "Ascite",
+      "definition": "Accumulation de liquide dans la cavité abdominale, décrite parmi les complications de la cirrhose.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Nom du liquide accumulé dans la cavité abdominale dans les complications décrites.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "L’accumulation abdominale de liquide se distingue de la coloration jaune de l’ictère."
+    },
+    {
+      "id": "hepatites_virales_voc_018",
+      "term": "Circulation collatérale",
+      "definition": "Développement de voies veineuses de dérivation lorsque la circulation habituelle rencontre un obstacle.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "L’adjectif collatérale qualifie des voies de circulation servant de dérivation.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Les voies de dérivation sont une conséquence circulatoire, pas une protection contre les virus."
+    },
+    {
+      "id": "hepatites_virales_voc_019",
+      "term": "MASH",
+      "definition": "Stéatohépatite associée à un dysfonctionnement métabolique, citée parmi les causes non virales d’hépatite chronique.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Sigle conservé avec sa désignation française : stéatohépatite associée à un dysfonctionnement métabolique.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Cette cause métabolique se distingue des causes virales d’hépatite."
+    },
+    {
+      "id": "hepatites_virales_voc_020",
+      "term": "Incubation",
+      "definition": "Intervalle entre la contamination et l’apparition éventuelle des symptômes.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "incub- (couver) + -ation (processus) : période précédant les symptômes.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Un délai entre contamination et symptômes se distingue d’un résultat biologique."
+    },
+    {
+      "id": "hepatites_virales_voc_021",
+      "term": "Capside",
+      "definition": "Structure protéique entourant le génome viral.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "caps- (boîte, enveloppe protectrice) + -ide (forme ou relation).",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La capside se distingue de l’enveloppe lipidique qui est absente chez un virus nu."
+    },
+    {
+      "id": "hepatites_virales_voc_022",
+      "term": "Virus nu / enveloppé",
+      "definition": "Un virus nu possède une capside sans enveloppe lipidique ; un virus enveloppé possède en plus cette enveloppe. Le cours relie cette différence aux conditions de transmission.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Deux qualificatifs descriptifs opposant absence et présence d’une enveloppe autour de la capside.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Nu ne signifie pas dépourvu de capside ; enveloppé signifie présence d’une enveloppe en plus."
+    },
+    {
+      "id": "hepatites_virales_voc_023",
+      "term": "Réservoir",
+      "definition": "Hôte ou milieu dans lequel un agent infectieux se maintient et à partir duquel une contamination peut survenir.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Terme descriptif pour l’hôte ou le milieu où l’agent infectieux se maintient.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le milieu ou l’hôte de maintien se distingue de la voie par laquelle l’agent est transmis."
+    },
+    {
+      "id": "hepatites_virales_voc_024",
+      "term": "Zoonotique",
+      "definition": "Qui concerne une infection dont le réservoir ou la transmission implique des animaux ; le porc et le sanglier sont cités pour E.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Le qualificatif relie le réservoir ou la transmission de l’infection aux animaux.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Une possibilité de transmission impliquant l’animal ne signifie pas contamination de tout produit animal."
+    },
+    {
+      "id": "hepatites_virales_voc_025",
+      "term": "Transmission féco-orale",
+      "definition": "Transmission dans laquelle un agent issu des selles atteint la bouche, directement ou par l’eau, les mains, les objets ou les aliments.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Féco- renvoie aux selles ; orale à la bouche, qui sont les deux extrémités du circuit décrit.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le circuit selles-bouche se distingue des voies sanguines et sexuelles décrites pour B."
+    },
+    {
+      "id": "hepatites_virales_voc_026",
+      "term": "Transmission parentérale",
+      "definition": "Transmission hors du tube digestif dans la comparaison du cours ; la voie exacte, notamment sanguine, doit être précisée.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Qualificatif opposé à la voie digestive dans la comparaison ; la voie précise reste à nommer.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Préciser la voie exacte ; le terme seul ne remplace pas l’analyse d’une exposition sanguine."
+    },
+    {
+      "id": "hepatites_virales_voc_027",
+      "term": "Dépistage",
+      "definition": "Recherche d’une infection ou d’un statut chez une personne, notamment avant les symptômes ou les complications.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "dé- (faire apparaître) + piste (trace recherchée) + -age (action) ; recherche ciblée.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Il peut être réalisé sans symptôme ; une suspicion ou une exposition ne constitue pas un diagnostic."
+    },
+    {
+      "id": "hepatites_virales_voc_028",
+      "term": "Sérologie",
+      "definition": "Recherche de marqueurs immunologiques dans le sang, par exemple des anticorps ou un antigène viral.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "séro- (sérum) + -logie (étude, analyse).",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La recherche d’anticorps se distingue de la recherche directe de matériel génétique viral."
+    },
+    {
+      "id": "hepatites_virales_voc_029",
+      "term": "Antigène",
+      "definition": "Élément reconnu par le système immunitaire ; HBs est l’antigène de surface utilisé dans le bilan et le vaccin B.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "anti- (contre) + -gène (qui engendre) ; historiquement substance induisant une réponse.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Un antigène viral se distingue d’un anticorps produit en réponse à une cible."
+    },
+    {
+      "id": "hepatites_virales_voc_030",
+      "term": "Anticorps",
+      "definition": "Protéine de la réponse immunitaire dirigée contre un antigène ; sa présence ne signifie pas toujours infection active.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "anti- (contre) + corps ; immunoglobuline se liant à un antigène.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La présence d’anticorps ne prouve pas toujours la présence actuelle du virus circulant."
+    },
+    {
+      "id": "hepatites_virales_voc_031",
+      "term": "IgM",
+      "definition": "Classe d’immunoglobulines utilisée dans les recherches d’infection aiguë décrites ; l’interprétation dépend du marqueur recherché et du contexte.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Abréviation d’immunoglobulines de classe M ; le marqueur spécifique recherché doit être précisé.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le marqueur ciblé et le contexte doivent être précisés ; une IgM négative isolée ne résume pas toute l’évolution."
+    },
+    {
+      "id": "hepatites_virales_voc_032",
+      "term": "AgHBs",
+      "definition": "Antigène de surface du virus B ; sa détection fait rechercher une infection en cours.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Ag désigne l’antigène ; HBs est le marqueur de surface du virus B distingué dans le bilan.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "L’antigène de surface se distingue des anticorps anti-HBs ; ces résultats ne sont pas synonymes."
+    },
+    {
+      "id": "hepatites_virales_voc_033",
+      "term": "Anti-HBs",
+      "definition": "Anticorps dirigés contre HBs, produits notamment après vaccination B.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Anti- précise la cible des anticorps : l’antigène de surface HBs.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La réponse dirigée contre la surface se distingue des anticorps anti-HBc dirigés contre la capside."
+    },
+    {
+      "id": "hepatites_virales_voc_034",
+      "term": "Anti-HBc",
+      "definition": "Anticorps dirigés contre la capside du virus B, témoignant d’un contact avec ce virus dans le bilan enseigné.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Anti- précise la cible des anticorps : la capside du virus B, distinguée de la surface HBs.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le vaccin fondé sur HBs ne produit pas à lui seul cette réponse contre la capside."
+    },
+    {
+      "id": "hepatites_virales_voc_035",
+      "term": "Anti-VHC",
+      "definition": "Anticorps dirigés contre le virus C ; ils peuvent persister après la guérison et ne suffisent pas à prouver une infection active.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Anti- indique les anticorps dirigés contre le virus de l’hépatite C, abrégé VHC.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Une trace immunitaire peut persister après guérison ; elle ne suffit pas à conclure à une infection active."
+    },
+    {
+      "id": "hepatites_virales_voc_036",
+      "term": "ARN viral / charge virale",
+      "definition": "Matériel génétique recherché pour le VHC ; sa détection et sa quantification renseignent sur le virus circulant.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression associant le matériel génétique recherché à la quantité virale détectée ou mesurée.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Distinguer recherche du virus circulant et trace immunitaire mesurée par les anticorps."
+    },
+    {
+      "id": "hepatites_virales_voc_037",
+      "term": "PCR",
+      "definition": "Technique de détection du matériel génétique, citée dans le dépistage du génome viral.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "PCR = polymerase chain reaction, réaction en chaîne par polymérase ; sigle technique, non morphème.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La recherche de matériel génétique viral se distingue de la mesure des anticorps."
+    },
+    {
+      "id": "hepatites_virales_voc_038",
+      "term": "DGV",
+      "definition": "Dépistage du génome viral dans un don de sang, complémentaire des contrôles du donneur présentés à l’oral.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Sigle développé : dépistage du génome viral, à distinguer des contrôles portant sur le donneur.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le contrôle du don complète les contrôles du donneur ; ces deux barrières ne sont pas interchangeables."
+    },
+    {
+      "id": "hepatites_virales_voc_039",
+      "term": "AES",
+      "definition": "Accident d’exposition au sang, nécessitant le recours au circuit de prise en charge et l’évaluation des expositions.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Sigle : accident d’exposition au sang ou à un liquide biologique à risque.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Une exposition nécessite une évaluation ; elle ne prouve pas à elle seule une infection."
+    },
+    {
+      "id": "hepatites_virales_voc_040",
+      "term": "Vaccin sous-unitaire",
+      "definition": "Vaccin contenant un constituant ciblé de l’agent infectieux ; pour B, l’antigène HBs.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Sous-unitaire précise que le vaccin contient un constituant ciblé de l’agent, ici HBs pour B.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Le constituant ciblé se distingue du virus entier et des immunoglobulines administrées."
+    },
+    {
+      "id": "hepatites_virales_voc_041",
+      "term": "Immunisation",
+      "definition": "État de protection immunitaire à établir dans le cadre approprié ; avoir reçu des injections ne suffit pas à présumer une réponse chez tous.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Nom de l’état de protection immunitaire, distinct du simple fait d’avoir reçu une injection.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Avoir reçu une vaccination ne suffit pas à présumer une réponse individuelle chez tous."
+    },
+    {
+      "id": "hepatites_virales_voc_042",
+      "term": "Non-répondeur vaccinal",
+      "definition": "Personne ne développant pas la réponse anti-HBs attendue après les schémas complets décrits ; statut établi médicalement.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression descriptive : la réponse vaccinale attendue n’a pas été obtenue dans le cadre évalué.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Ne pas présumer la protection à partir des seules injections reçues ; le statut est évalué médicalement."
+    },
+    {
+      "id": "hepatites_virales_voc_043",
+      "term": "Immunoglobulines spécifiques",
+      "definition": "Anticorps administrés pour apporter une protection passive immédiate dans les situations indiquées.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Le qualificatif spécifiques précise la cible des anticorps administrés pour la protection passive.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "La protection passive par anticorps déjà constitués se distingue de la réponse propre induite par le vaccin."
+    },
+    {
+      "id": "hepatites_virales_voc_044",
+      "term": "Sérovaccination",
+      "definition": "Association d’un vaccin et d’immunoglobulines spécifiques ; le cours la décrit chez le nouveau-né de mère AgHBs positive.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Le terme associe l’apport d’anticorps spécifiques à la vaccination, deux protections complémentaires.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "Elle associe les deux moyens ; elle ne se réduit ni au vaccin seul ni à une simple prise de sang."
+    },
+    {
+      "id": "hepatites_virales_voc_045",
+      "term": "Adhésion au traitement",
+      "definition": "Participation durable de la personne à la prise du traitement et au suivi convenus, soutenue notamment par l’information et l’accompagnement infirmier.",
+      "courseIds": [
+        "hepatites_virales"
+      ],
+      "ue": "B1.3",
+      "theme": "Hépatites virales",
+      "etymologie": "Expression décrivant la participation durable de la personne au traitement et au suivi convenus.",
+      "sourceType": "reference_pedagogique",
+      "distinction": "L’accompagnement vise la compréhension, la prise du traitement et le suivi ; il ne garantit pas une guérison sans contrôle."
     }
   ]
 }

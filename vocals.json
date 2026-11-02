@@ -2502,5 +2502,27 @@
     "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
     "release": "8.30.159",
     "durationSeconds": 386.056667
+  },
+  {
+    "id": "hepatites_virales_01",
+    "courseId": "hepatites_virales",
+    "course": "Hépatites virales",
+    "number": 1,
+    "title": "Définir, comprendre et distinguer A et E",
+    "driveId": "1j1zhvFkvWC3ItQjirLDA6Dwp_6VCrhmd",
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/hepatites-virales/hepatites_virales_01.mp3",
+    "durationSeconds": 563.881315
+  },
+  {
+    "id": "hepatites_virales_02",
+    "courseId": "hepatites_virales",
+    "course": "Hépatites virales",
+    "number": 2,
+    "title": "Dépister, interpréter et prévenir B et C",
+    "driveId": "1vu4AtBnZ_f8j74ulj5yyPbexZHXhTjjL",
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/hepatites-virales/hepatites_virales_02.mp3",
+    "durationSeconds": 593.69034
   }
 ]

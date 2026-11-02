@@ -66,9 +66,27 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
     c.courseId+': audio prétendument nouveau pour un ancien cours');
   const course=(registry.courses||[]).find(x=>x.id===c.courseId);
   assert.ok(course,c.courseId+': nouveau cours absent du registre');
-  assert.equal(c.deliveryMode,'source_limited_first_release',c.courseId+': audio non couvert par une première publication');
-  assert.equal(c.publicationHost,'github_pages',c.courseId+': hôte MP3 non conforme');
-  assert.equal(c.provisional,true,c.courseId+': publication source-limitée non signalée');
+  const officialWritten=c.deliveryMode==='first_release'&&c.packFormat==='written_v1';
+  if(officialWritten){
+   assert.equal(c.provisional,false,c.courseId+': statut de première publication officielle divergent');
+   assert.equal(c.publicationHost,'drive',c.courseId+': copie Drive authentifiée attendue');
+   assert.equal(c.validated,true);assert.equal(c.pedagogicalValidated,true);
+   assert.equal(c.sourceBasis?.nativeSupportAvailable,true,c.courseId+': support officiel absent');
+   assert.equal(c.sourceAudit?.officialChecked,true,c.courseId+': support officiel non relu');
+   assert.equal(c.sourceAudit?.oralStatus,'complete',c.courseId+': transcription non relue');
+   assert.equal(c.publishedVerification?.status,'MATCH',c.courseId+': copie de fiche non vérifiée');
+   assert.equal(c.publishedVerification?.source,'authenticated_drive_download');
+   assert.ok(c.writtenCoverage?.expectedEssential>0);
+   assert.equal(c.writtenCoverage.coveredEssential,c.writtenCoverage.expectedEssential);
+   assert.ok(c.supportDriveId&&c.qcmDriveId&&c.flashcardDriveId,c.courseId+': ressources Drive non identifiées');
+   assert.equal(course.officialSupport,true);
+   assert.equal(course.officialSupportUrl,'https://drive.google.com/file/d/'+c.supportDriveId+'/view');
+   assert.equal(course.audioFolderUrl,'https://drive.google.com/drive/folders/'+c.folders?.['05']);
+  }else{
+   assert.equal(c.deliveryMode,'source_limited_first_release',c.courseId+': audio non couvert par une première publication');
+   assert.equal(c.publicationHost,'github_pages',c.courseId+': hôte MP3 non conforme');
+   assert.equal(c.provisional,true,c.courseId+': publication source-limitée non signalée');
+  }
   assert.equal(c.publicationApproval?.status,'approved',c.courseId+': package non approuvé');
   assert.equal(c.publicationApproval?.authorization,'explicit_go_publication',c.courseId+': GO package absent');
   assert.equal(c.publicationApproval?.scope,'course_package',c.courseId+': portée du GO incorrecte');
@@ -86,7 +104,10 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
    usedPaths.add(a.path);
    const v=newCourseVocals.find(x=>x.id===a.artifactId);
    assert.ok(v,c.courseId+': MP3 déclaré absent '+a.artifactId);
-   assert.equal(v.driveId,undefined,c.courseId+': Drive fictif pour MP3 local');
+   if(officialWritten){
+    assert.match(v.driveId||'',/^[A-Za-z0-9_-]{10,}$/,'Identifiant de copie Drive absent');
+    assert.equal(c.artifactSha256s?.[v.driveId],a.sha256,'MP3 local et copie Drive divergents');
+   }else assert.equal(v.driveId,undefined,c.courseId+': Drive fictif pour MP3 local');
    assert.equal(v.localAudio,'./'+a.path,c.courseId+': source audio divergente');
    assert.equal(v.mime,'audio/mpeg',c.courseId+': MIME audio incorrect');
    assert.ok(Number.isFinite(v.durationSeconds)&&v.durationSeconds>0&&v.durationSeconds<600,
