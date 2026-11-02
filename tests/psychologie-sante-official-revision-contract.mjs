@@ -55,9 +55,9 @@ export function validatePsychologieOfficialRevision(d,data={}){
   assert.equal(sha(upgrade.archivedCandidateArtifacts[0].path),'5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1');
   assert.equal(course.officialSupportUrl,'https://drive.google.com/drive/folders/11Q1sWdn_k9IWdH-50zvHaWpDClVux0vu');
   assert.deepEqual(course.officialSupportItems.map(x=>x.url),[
-   'https://drive.google.com/file/d/1-W3SwRme-OUHg6AcTgXPqSc6DeQ-DRaB/view?usp=drivesdk',
-   'https://drive.google.com/file/d/1F5JbtGThluVbgIiGvwnZWz28regXpmMa/view?usp=drivesdk',
-   'https://drive.google.com/file/d/1jDMytgilRYduAlIjurkHwN3PfmlWLpjL/view?usp=drivesdk']);
+   'https://drive.google.com/file/d/1-W3SwRme-OUHg6AcTgXPqSc6DeQ-DRaB/view',
+   'https://drive.google.com/file/d/1F5JbtGThluVbgIiGvwnZWz28regXpmMa/view',
+   'https://drive.google.com/file/d/1jDMytgilRYduAlIjurkHwN3PfmlWLpjL/view']);
   assert.equal(course.provisional,false);
  }else{
   assert.deepEqual(course.officialSupportUrl,history.course.officialSupportUrl);
