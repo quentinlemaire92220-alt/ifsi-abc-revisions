@@ -3424,7 +3424,7 @@
           },
           "writtenModelReference": "communication_written_v5.3_2026-10-24",
           "writtenPdfAudit": {
-            "status": "PASS",
+            "status": "PENDING_VISUAL_CORRECTIONS",
             "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
             "pageSize": "A4",
             "pageCount": 54,
@@ -3442,7 +3442,7 @@
             "navigationChecked": true
           },
           "visualAudit": {
-            "status": "PASS",
+            "status": "PENDING_VISUAL_CORRECTIONS",
             "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
             "pageSize": "A4",
             "pageCount": 54,
@@ -3460,13 +3460,10 @@
             "navigationChecked": true
           },
           "publishedVerification": {
-            "status": "MATCH",
-            "source": "authenticated_drive_download",
+            "status": "PENDING_DEPLOYMENT",
+            "source": "github_pages_file_staged",
             "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
-            "pageCount": 54,
-            "expectedCount": 54,
-            "checkedCount": 54,
-            "copyScope": "private_approved_bytes_public_http_pending"
+            "pageCount": 54
           },
           "publicAssetSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
           "publicArtifacts": {
@@ -3584,8 +3581,7 @@
                   "NO_CLIPPING_OR_OVERLAP": "PASS",
                   "READABLE_AT_100_AND_200_PERCENT": "PASS",
                   "STRUCTURE_AND_PAGINATION": "PASS"
-                },
-                "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+                }
               },
               "qcm": {
                 "templateId": "communication_qcm_2026-10-24",
@@ -3657,7 +3653,7 @@
             "reviewedPdfSha256s": {
               "psychologie_sante_fiche_20261102_v4": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
             },
-            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+            "reviewBasis": "User approved V4 before CI visual failures; revised bytes require fresh review"
           },
           "pedagogicalNonRegression": {
             "contract": "ifsi_pedagogical_non_regression_v149",
@@ -3825,8 +3821,7 @@
               "NO_CLIPPING_OR_OVERLAP": "PASS",
               "READABLE_AT_100_AND_200_PERCENT": "PASS",
               "STRUCTURE_AND_PAGINATION": "PASS"
-            },
-            "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+            }
           },
           "qcm": {
             "templateId": "communication_qcm_2026-10-24",
@@ -4016,7 +4011,7 @@
       },
       "writtenModelReference": "communication_written_v5.3_2026-10-24",
       "writtenPdfAudit": {
-        "status": "PASS",
+        "status": "PENDING_VISUAL_CORRECTIONS",
         "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
         "pageSize": "A4",
         "pageCount": 54,
@@ -4034,7 +4029,7 @@
         "navigationChecked": true
       },
       "visualAudit": {
-        "status": "PASS",
+        "status": "PENDING_VISUAL_CORRECTIONS",
         "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
         "pageSize": "A4",
         "pageCount": 54,
@@ -4052,13 +4047,10 @@
         "navigationChecked": true
       },
       "publishedVerification": {
-        "status": "MATCH",
-        "source": "authenticated_drive_download",
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
         "pdfSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
-        "pageCount": 54,
-        "expectedCount": 54,
-        "checkedCount": 54,
-        "copyScope": "private_approved_bytes_public_http_pending"
+        "pageCount": 54
       },
       "publicAssetSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1",
       "qcmPublicAssetSha256": "c755a88bd8c7a58bd73ea566d6781160684987abd422e57fda22a8d368dcd2cf",
@@ -4084,7 +4076,7 @@
         "reviewedPdfSha256s": {
           "psychologie_sante_fiche_20261102_v4": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
         },
-        "privateEvidenceSha256": "22845e58aca8d54b4b7ed409c2795ad7e0bd08c1dca8ec72a3f40792ae5fd302"
+        "reviewBasis": "User approved V4 before CI visual failures; revised bytes require fresh review"
       },
       "pedagogicalNonRegression": {
         "contract": "ifsi_pedagogical_non_regression_v149",
@@ -4129,7 +4121,7 @@
       "provisional": false,
       "postOfficialSheetRevision": {
         "revisionId": "psychologie_sante_v4_20261102",
-        "status": "release_candidate",
+        "status": "qa_blocked_unpublished",
         "previousSheet": {
           "title": "Fiche_Psychologie_Sante_39p.pdf",
           "label": "Psychologie de la santé — Fiche de révision (39 pages, 73 définitions)",
@@ -4267,7 +4259,12 @@
           "scope": "sheet_only_revision",
           "approvedAt": "2026-11-02",
           "artifactSha256": "5408fb972722c012d916ec1a857f01943c2b0c11116426216ebc0aa96651b6d1"
-        }
+        },
+        "blockers": [
+          "visual_v2_font_and_first_page_header",
+          "v149_proof_hash_stale",
+          "release_snapshots_and_tnr"
+        ]
       }
     },
     {
