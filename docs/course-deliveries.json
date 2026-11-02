@@ -8398,7 +8398,7 @@
       "contract": "hosted_audio_supplement_v1",
       "id": "prevention_risque_infectieux_global_20261102",
       "courseId": "prevention_ias_asepsie",
-      "status": "prepared",
+      "status": "approved",
       "baseline": {
         "course": {
           "id": "prevention_ias_asepsie",
@@ -8722,9 +8722,33 @@
         }
       ],
       "review": {
-        "status": "pending"
+        "status": "completed",
+        "listenedVocalIds": [
+          "prevention_ias_asepsie_global_20261102_vocal_01",
+          "prevention_ias_asepsie_global_20261102_vocal_02",
+          "prevention_ias_asepsie_global_20261102_vocal_03",
+          "prevention_ias_asepsie_global_20261102_vocal_04",
+          "prevention_ias_asepsie_global_20261102_vocal_05",
+          "prevention_ias_asepsie_global_20261102_vocal_06"
+        ],
+        "artifactSha256s": {
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_01.mp3": "6c19de52cedf5151419f33f2e2983d5d45bb88809b236b7b1fe225e7a4f85272",
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_02.mp3": "b6ea3bf74213868f6e1c71281568a40e54e13b6c04092e37cf6bd423d9f47f7f",
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_03.mp3": "023174be68d7a81ede7c4f4229e965500923c3c2b599b5b3a2c214526549fbe7",
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_04.mp3": "c6c3fb3bcf54d19d6484de25a66bef2fb2f1ee811ec5da5e85e252d7da7ed428",
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_05.mp3": "14d4debbe5f4a2917b3abcb3fd80070c4c3093b427a93454bb1fb2c70afd8810",
+          "assets/audio/prevention-infectieux-20261102/prevention_risque_infectieux_global_vocal_06.mp3": "68d0380cee6787f8bfd7a4eb5ced3b7b654e462e10ce6b1e2e16ce732c68f5f8"
+        },
+        "reviewedAt": "2026-11-02T20:29:16Z",
+        "privateEvidenceSha256": "af0e3c897fc5121606e58d90dedbc86a330458575a8c9b385614f42af53d0252"
       },
-      "publicationApproval": null
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "hosted_audio_supplement",
+        "approvedAt": "2026-11-02T20:29:16Z",
+        "bundleSha256": "7b6ffbeff165aaec135813d5a23446fc475dd340dc221d659e01175a9c79010c"
+      }
     }
   ]
 }
