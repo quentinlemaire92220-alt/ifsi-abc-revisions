@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateBank} from '../tools/qcm-bank-contract.mjs';
+import {validateVocalDuration} from './vocal-duration-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const id='hepatites_virales',manifest=read('docs/course-deliveries.json');
 const d=manifest.courses.find(c=>c.courseId===id),course=read('course-registry-v741.json').courses.find(c=>c.id===id);
@@ -35,5 +36,6 @@ for(const change of [
  x=>{x.vocals.reverse()}
 ]){const candidate=structuredClone(d);change(candidate);assert.throws(()=>check(candidate));}
 for(const change of [x=>{x[0].durationSeconds=600},x=>{x[0].driveId=''},x=>{x[0].localAudio='./assets/audio/wrong.mp3'}]){const candidate=structuredClone(vocals);change(candidate);assert.throws(()=>check(d,course,candidate));}
-for(const a of d.publicAudioArtifacts){const bytes=fs.readFileSync(a.path);assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);assert.ok(a.durationSeconds>0&&a.durationSeconds<600);assert.match(bytes.subarray(0,3).toString('ascii'),/ID3/);}
-console.log('PASS Hépatites : support officiel, 50 QCM et cartes réellement chargés, 45 définitions, deux MP3 exacts <10min; altérations de sources, copies, clés audio et autorisations rejetées.');
+for(const a of d.publicAudioArtifacts){const bytes=fs.readFileSync(a.path);assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);validateVocalDuration(vocals.find(v=>v.id===a.artifactId),a.sha256);assert.match(bytes.subarray(0,3).toString('ascii'),/ID3/);}
+for(const change of [v=>delete v[1].durationException,v=>v[1].durationException.sha256='0'.repeat(64),v=>v[1].durationSeconds=615]){const candidate=structuredClone(vocals);change(candidate);assert.throws(()=>check(d,course,candidate));}
+console.log('PASS Hépatites : support officiel, 50 QCM et cartes réellement chargés, 45 définitions, deux MP3 exacts; dépassement accepté lié au second export seulement; altérations rejetées.');

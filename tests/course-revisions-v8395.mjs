@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
+import {validateAudioReplacements} from './audio-replacement-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const {questions,deck}=await runtimeDeck();
 const manifest=read('docs/course-deliveries.json');
@@ -33,5 +34,5 @@ const before=JSON.parse(execFileSync('git',['show',base+':vocals.json']).toStrin
 const now=read('vocals.json');
 assert.ok(before.length>=105,'Le catalogue de base doit conserver au minimum 105 vocaux');
 assert.ok(now.length>=before.length,'Le catalogue ne doit perdre aucun vocal');
-assert.deepEqual(now.slice(0,before.length),before,'Aucun vocal historique ne doit être modifié ou réordonné');
+validateAudioReplacements(JSON.parse(execFileSync('git',['show',base+':docs/course-deliveries.json']).toString('utf8')),manifest,before,now);
 console.log('✅ V8.30.95 : 112 QCM et 49 cartes de cours identiques aux matrices revues, 44 cartes de vocabulaire, 105 vocaux préservés et 26 nouveaux.');

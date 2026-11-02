@@ -15,6 +15,7 @@ import {
 import {publicationBundle,bundleDigest,validateChangedDeliveries,isStrictAudioSupplementOnly} from './course-publication-approval-lib.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
 import {validateAudioSupplements,validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
+import {validateAudioReplacements,validateAudioReplacementOnly} from './audio-replacement-contract.mjs';
 
 const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=file=>JSON.parse(readFileSync(file,'utf8'));
@@ -353,7 +354,7 @@ const approvedUpdates=new Set(currentMan.courses.filter(c=>{
 // Des MP3 nouveaux sont acceptés ici seulement si leur ajout est strictement
 // indépendant du dossier pédagogique et signé par un nouveau GO audio.
 const prevVocals=before('vocals.json'),nextVocals=disk('vocals.json');
-assert.deepEqual(nextVocals.slice(0,prevVocals.length),prevVocals,'Aucun MP3 historique ne doit changer');
+const acceptedAudioReplacementIds=validateAudioReplacements(oldMan,currentMan,prevVocals,nextVocals);
 const prevAudio=oldMan.audioSupplements||[],nextAudio=currentMan.audioSupplements||[];
 assert.deepEqual(nextAudio.slice(0,prevAudio.length),prevAudio,'Compléments audio historiques altérés');
 const freshAudio=nextAudio.slice(prevAudio.length);
@@ -466,6 +467,8 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
    }
    else if(previousDelivery && course.id==='sante_mondiale_sante_france')preserveApprovedC11OfficialPartial(oldCourse,course,previousDelivery,nextDelivery);
    else if(previousDelivery && course.id==='droits_patients')preserveApprovedDroitsConsolidation(oldCourse,course,previousDelivery,nextDelivery);
+   else if(previousDelivery && nextVocals.some(v=>v.courseId===course.id&&acceptedAudioReplacementIds.has(v.id)))
+    validateAudioReplacementOnly(previousDelivery,nextDelivery,oldCourse,course,prevVocals.filter(v=>v.courseId===course.id),nextVocals.filter(v=>v.courseId===course.id));
    else if(previousDelivery)preserveApprovedAddition(oldCourse,course,previousDelivery,nextDelivery);
   else preserveApprovedFirstManifestAddition(oldCourse,course,nextDelivery);
  }

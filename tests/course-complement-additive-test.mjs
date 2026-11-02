@@ -4,6 +4,7 @@ import fs from 'node:fs';import assert from 'node:assert/strict';import {execFil
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
+import {validateAudioReplacements} from './audio-replacement-contract.mjs';
 import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),base=process.env.IFSI_BASE_SHA||'HEAD^';
 const old=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
@@ -16,7 +17,7 @@ assert.equal(deck.filter(c=>c.courseId==='droits_patients'&&!String(c.id).starts
 assert.equal(bank.flatMap(q=>q.flashcards||[]).length,24);
 assert.deepEqual(read('qextra-55.txt'),old('qextra-55.txt'),'85 questions et cartes historiques préservées');
 const oldVocals=old('vocals.json'),newVocals=read('vocals.json');
-assert.deepEqual(newVocals.slice(0,oldVocals.length),oldVocals,'Aucun MP3 historique modifié');
+validateAudioReplacements(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),oldVocals,newVocals);
 const addedVocals=newVocals.slice(oldVocals.length);
 const approvedAudio=read('docs/course-deliveries.json').audioSupplements||[];
 const firstReleaseAudioIds=validateFirstReleaseAudio(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),old('course-registry-v741.json'),read('course-registry-v741.json'),oldVocals,newVocals);

@@ -6228,23 +6228,23 @@
         "hepatites_virales_flashcards_20261102": "8e5fa4e26beaac7dbadafeaeb80e9ea4edba75ca472138d86a4cf84e6ca27634",
         "1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73": "8e5fa4e26beaac7dbadafeaeb80e9ea4edba75ca472138d86a4cf84e6ca27634",
         "1m4vefDhogYgSdimhAnUH1Rx6h70rDEif": "94039fe57019207d2d61412f5d165f7b7c2b5113c457009d17b62083a6f8b471",
-        "1j1zhvFkvWC3ItQjirLDA6Dwp_6VCrhmd": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
-        "hepatites_virales_01": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
-        "1vu4AtBnZ_f8j74ulj5yyPbexZHXhTjjL": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5",
-        "hepatites_virales_02": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5"
+        "1j1zhvFkvWC3ItQjirLDA6Dwp_6VCrhmd": "3bc01338dfa978f1679b054222710bf43735a1bf3954a0e35399fb55a0f9db53",
+        "hepatites_virales_01": "3bc01338dfa978f1679b054222710bf43735a1bf3954a0e35399fb55a0f9db53",
+        "1vu4AtBnZ_f8j74ulj5yyPbexZHXhTjjL": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70",
+        "hepatites_virales_02": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70"
       },
       "publicAudioArtifacts": [
         {
           "artifactId": "hepatites_virales_01",
           "path": "assets/audio/hepatites-virales/hepatites_virales_01.mp3",
-          "sha256": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
-          "durationSeconds": 563.881315
+          "sha256": "3bc01338dfa978f1679b054222710bf43735a1bf3954a0e35399fb55a0f9db53",
+          "durationSeconds": 569.318667
         },
         {
           "artifactId": "hepatites_virales_02",
           "path": "assets/audio/hepatites-virales/hepatites_virales_02.mp3",
-          "sha256": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5",
-          "durationSeconds": 593.69034
+          "sha256": "bbbe76cfb4ead96bd200561a8d124335c74f3c49c03c56fddc980025240ade70",
+          "durationSeconds": 614.330667
         }
       ],
       "sourceBasis": {
@@ -6449,8 +6449,8 @@
         "status": "approved",
         "authorization": "explicit_go_publication",
         "scope": "course_package",
-        "approvedAt": "2026-11-02T14:10:10.353Z",
-        "bundleSha256": "2133491226565ddc82bea59ea450f375b0303105dc336236385720c4cff9cdff"
+        "approvedAt": "2026-11-02T15:25:37Z",
+        "bundleSha256": "05df3b9ee3c1073d8bff9d8858e4520e21efddefe61869a24fd510f24051ebf6"
       },
       "qcmPdfLayout": "theme_inline_cardinality_v1"
     }
