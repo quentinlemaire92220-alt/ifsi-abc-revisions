@@ -1,5 +1,5 @@
 {
-  "version": "8.30.162",
+  "version": "8.30.163",
   "courses": [
     {
       "id": "biomolecules",
@@ -1560,7 +1560,15 @@
       "flashcardsPdfUrl": "https://drive.google.com/file/d/1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73/view",
       "audioStatus": "available",
       "audioCount": 2,
-      "audioFolderUrl": "https://drive.google.com/drive/folders/14CWN-tQElI-vHTayckXUymSqL6-WSOYw"
+      "audioFolderUrl": "https://drive.google.com/drive/folders/14CWN-tQElI-vHTayckXUymSqL6-WSOYw",
+      "additionalDocuments": [
+        {
+          "type": "flashcards",
+          "label": "Flashcards — Hépatites virales (50 cartes recto-verso)",
+          "url": "https://drive.google.com/file/d/1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73/view",
+          "cardCount": 50
+        }
+      ]
     }
   ],
   "auditBaseline": {

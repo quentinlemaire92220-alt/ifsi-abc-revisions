@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.162';
+const VERSION='8.30.163';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Hépatites virales : cours, QCM, cartes et deux vocaux disponibles.`;
