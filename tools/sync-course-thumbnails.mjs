@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* Manifeste évolutif des vignettes. Pas de génération d'images ni publication.
- * Ajouter un cours au registre => repli UE automatique.
+ * Ajouter un cours au registre => illustration thématique/UE automatique au rendu.
  * Un WebP par ID n'entre au manifeste qu'avec course.thumbnail.status='validated',
  * course.thumbnail.reviewedAt (ISO) et course.thumbnail.approvedBy.
  */
@@ -32,7 +32,7 @@ for (const course of registry) {
     /^\d{4}-\d\d-\d\d$/.test(String(course.thumbnail.reviewedAt || '')) &&
     !!String(course.thumbnail.approvedBy || '').trim();
 
-  if (!existing && !filePresent) continue; // nouveau cours sans visuel : repli par UE
+  if (!existing && !filePresent) continue; // illustration partagée automatique, sans faux reçu de validation
   if (!filePresent) throw Error('WebP manquant : ' + path);
   const data = fs.readFileSync(path);
   if (data.toString('ascii', 0, 4) !== 'RIFF' ||

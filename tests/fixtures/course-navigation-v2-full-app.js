@@ -122,6 +122,7 @@
  }
  async function checkAllCourses(cards){
    var courses=window.IFSI_V741.getRegistry().courses;
+   await checkFutureCatalog(courses);
    var missing=0,official=0,qcm=0,flashcards=0,vocab=0;
    for(var course of courses){
      window.IFSI_V74.openCourse(course.label);
@@ -229,6 +230,49 @@
    if(!document.getElementById('course74').classList.contains('hidden')||document.getElementById('quiz').classList.contains('hidden'))throw Error('Navigation QCM bloquée');
    window.IFSI_COURSE_NAV_UI.stop();
    pass('APP COMPLETE OK : '+courses.length+' cours, '+cards+' cartes ; '+missing+' supports en attente, '+official+' officiels, '+qcm+' PDF QCM, '+flashcards+' accès flashcards, '+vocab+' lexiques ; ordre, thèmes, navigation QCM/lexique et pastille au clic vérifiés');
+ }
+ async function checkFutureCatalog(courses){
+   var api=window.IFSI_V741,originalResources=api.resourcesForCourse,originalId=api.courseIdForLabel;
+   var before=JSON.stringify(courses),originalLength=courses.length;
+   var added=[
+     {id:'fixture_future_b1',label:'Paludisme futur',domain:'B',ue:'B1.9.8'},
+     {id:'fixture_future_b2',label:'Psychologie sociale future',domain:'B',ue:'B2.7.6'},
+     {id:'fixture_future_b3',label:'Soins infirmiers futurs',domain:'B',ue:'B3.4.2'}
+   ];
+   function assertCatalog(extra){
+     var grid=document.getElementById('v74CourseGrid');
+     var b=Array.from(grid.querySelectorAll('.v74-domain-group')).find(function(g){return g.querySelector('.v74-domain-badge').textContent==='DOMAINE B'});
+     var groups=Array.from(b.querySelectorAll('.v74-ue-code')).map(function(e){return e.textContent});
+     if(JSON.stringify(groups)!==JSON.stringify(['UE B1','UE B2','UE B3']))throw Error('Groupes B incorrects : '+groups.join(', '));
+     var n=courses.filter(function(c){return c.domain==='B'&&c.showInCourses!==false}).length;
+     if(b.querySelectorAll('.v74-course-card').length!==n)throw Error('Comptage du domaine B incorrect');
+     grid.querySelectorAll('.v74-course-card').forEach(function(card){
+       if(!card.querySelector('.mku-thumbnail img.ifsi-course-picture'))throw Error('Cours sans illustration : '+card.dataset.course74);
+     });
+     if(extra)added.forEach(function(c){
+       var card=Array.from(grid.querySelectorAll('.v74-course-card')).find(function(el){return el.dataset.course74===c.label});
+       if(!card||card.closest('.v74-ue-group').querySelector('.v74-ue-code').textContent!=='UE '+c.ue.split('.')[0])throw Error('Futur cours mal classé : '+c.id);
+       if(card.querySelector('.mku-thumbnail').dataset.thumbnailStatus!=='thematic')throw Error('Illustration automatique absente : '+c.id);
+     });
+   }
+   try{
+     window.IFSI_V74.showCourses();
+     await new Promise(function(resolve){setTimeout(resolve,80)});
+     assertCatalog(false);
+     courses.push.apply(courses,added);
+     api.resourcesForCourse=function(id){return added.some(function(c){return c.id===id})?
+       {questions:[{id:id+'_q',courseId:id}],sheets:[],infographics:[],vocals:[]}:originalResources(id)};
+     api.courseIdForLabel=function(label){return added.find(function(c){return c.label===label})?.id||originalId(label)};
+     window.IFSI_V74.showCourses();
+     await new Promise(function(resolve){setTimeout(resolve,80)});
+     assertCatalog(true);
+   }finally{
+     courses.splice(originalLength);
+     api.resourcesForCourse=originalResources;api.courseIdForLabel=originalId;
+     window.IFSI_V74.showCourses();
+     await new Promise(function(resolve){setTimeout(resolve,80)});
+   }
+   if(JSON.stringify(courses)!==before)throw Error('Métadonnées modifiées par le classement');
  }
  setTimeout(checkBoot,300);
  setTimeout(function(){if(result.dataset.result==='pending')fail('Délai dépassé au démarrage réel')},24000);

@@ -5,6 +5,10 @@ on:
     paths:
       - 'course-navigation-ui-v2.js'
       - 'v74-pack.js'
+      - 'course-thumbnails-v1.js'
+      - 'course-registry-v741.json'
+      - 'tests/course-ue-grouping.mjs'
+      - 'tests/course-thumbnails-dynamic.mjs'
       - 'index.html'
       - 'build-meta.json'
       - 'tests/fixtures/course-navigation-ui-v2.js'

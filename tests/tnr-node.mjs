@@ -5,6 +5,7 @@ import './course-navigation-ui-v2-smoke.mjs';
 import './course-thumbnails-55-design.mjs';
 import './course-thumbnails-ui-review.mjs';
 import './course-thumbnails-dynamic.mjs';
+import './course-ue-grouping.mjs';
 import './standalone-cache-repair.mjs';
 import zlib from 'node:zlib';
 

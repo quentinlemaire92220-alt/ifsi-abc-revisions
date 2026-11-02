@@ -1,0 +1,14 @@
+# Classement et illustrations automatiques des cours
+
+Le registre `course-registry-v741.json` reste la source des codes UE détaillés et des identifiants stables. Ajouter un cours avec son vrai `domain`, son code `ue` complet, son titre et ses ressources habituelles suffit pour bénéficier des règles suivantes.
+
+- Le catalogue utilise la racine du code UE comme clé de regroupement : `B1.3` et `B1.3.7` rejoignent `B1`, `B2.1.1` rejoint `B2`, `B3.2` rejoint `B3`. La même règle traite les sous-codes des autres domaines. Aucun sous-groupe ni lien supplémentaire n'est créé. Les codes détaillés restent recherchables et conservés dans les métadonnées et ressources.
+- Le domaine B admet les trois groupes `B1`, `B2`, `B3`. Le contrôle `tests/course-ue-grouping.mjs` refuse l'ajout d'un autre groupe B dans le registre. Un code invalide ou une autre UE nécessite une décision explicite, sans assimilation à une UE arbitraire.
+- `course-thumbnails-v1.js` attribue une image à chaque carte. Priorités : image spécifique approuvée dans le manifeste existant ; illustration partagée selon le titre, l'identifiant ou les `topics` facultatifs ; illustration de l'UE principale ; domaine ; illustration générale. Le choix est déterministe et se recalcule lors du chargement du registre ou du rendu de la liste.
+- Les illustrations partagées proviennent des 55 WebP déjà livrés. Aucun appel à un fournisseur d'images et aucune lettre/icône de repli. Si un fichier est cassé, la chaîne passe à l'image suivante. En dernier recours, le module contient les octets de l'illustration générale : elle reste disponible sans réseau ou manifeste. Les images spécifiques historiques restent prioritaires.
+- Un nouveau cours reçoit donc immédiatement une illustration sans génération ni validation fictive d'une nouvelle image spécifique. `pendingCourseIds` indique seulement les cours sans image spécifique ; ils disposent déjà d'une illustration partagée. Une future image propre au cours passe toujours par le contrôle existant `tools/sync-course-thumbnails.mjs` et ses métadonnées de validation.
+- Les cours sans ressources et ceux portant `showInCourses:false` gardent leurs règles de visibilité existantes. Les règles d'illustration ne publient aucun cours et n'autorisent aucune ressource.
+
+Contrôles permanents : `node tests/course-ue-grouping.mjs`, `node tests/course-thumbnails-dynamic.mjs` et `node tests/tnr-node.mjs`. Le test navigateur complet injecte trois futurs cours avec des codes imbriqués et vérifie leur regroupement ainsi que leur illustration automatique, puis restaure les données. La CI navigateur se déclenche aussi pour les changements du registre et du module d'illustration.
+
+Une préparation privée ne constitue pas un GO de publication. Les rapports et captures de revue restent hors du dépôt destiné à GitHub.

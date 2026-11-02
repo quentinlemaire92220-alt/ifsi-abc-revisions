@@ -25,7 +25,7 @@ for(const x of entries){
 }
 assert.match(script,/loadManifest/);
 assert.match(script,/picture.addEventListener/);
-assert.match(script,/showPlaceholder/);
+assert.match(script,/illustrationCandidates/);
 assert.doesNotMatch(script,/localStorage|Q\.push/);
 assert.doesNotThrow(()=>new vm.Script(script));
 const build=JSON.parse(fs.readFileSync('build-meta.json','utf8'));
