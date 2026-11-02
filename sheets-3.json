@@ -815,7 +815,7 @@
     "provisional": false,
     "courseId": "psychologie_sante",
     "displayTitle": "Psychologie de la santé",
-    "sourceStatus": "active",
+    "sourceStatus": "archived",
     "officialSupport": true,
     "sourceBasis": "Trois supports officiels et quatre transcriptions de séance",
     "pageCount": 54,
@@ -842,5 +842,24 @@
     "lexiconTermCount": 56,
     "publicationHost": "github_pages",
     "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/c11-sante-mondiale/UE_C11_Sante_Mondiale_Fiche_Hybride_V7_3.pdf"
+  },
+  {
+    "title": "Fiche_Psychologie_Sante_52p_79_Definitions.pdf",
+    "label": "Psychologie de la santé — Fiche de révision (52 pages, 79 définitions)",
+    "ue": "S1 B2",
+    "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psychologie-sante-20261102/Fiche_Psychologie_Sante_52p_79_Definitions.pdf",
+    "resourceId": "psychologie_sante_fiche_20261102_52p",
+    "provisional": false,
+    "courseId": "psychologie_sante",
+    "displayTitle": "Psychologie de la santé",
+    "sourceStatus": "active",
+    "officialSupport": true,
+    "sourceBasis": "Trois supports officiels et quatre transcriptions de séance",
+    "pageCount": 52,
+    "lexiconTermCount": 79,
+    "sheetFormat": "written_revision",
+    "primaryRevision": true,
+    "publicationHost": "github_pages",
+    "artifactId": "psychologie_sante_sheet_52p_20261102"
   }
 ]

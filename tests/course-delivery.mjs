@@ -30,7 +30,7 @@ for(const c of manifest.courses){
   continue;
  }
  if(c.deliveryMode==='sheet_only_first_release'){
-  validateSheetOnlyFirstRelease(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocals,infographics:infos});
+  validateSheetOnlyFirstRelease(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocals,infographics:infos,audioSupplements:(manifest.audioSupplements||[]).filter(s=>s.courseId===c.courseId)});
   console.log('✅ '+c.courseId+': fiche écrite seule (autres supports non demandés)');
   continue;
  }

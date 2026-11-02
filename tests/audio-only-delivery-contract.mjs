@@ -1,8 +1,10 @@
 // Livraison audio seule : elle n'autorise PAS la publication d'un cours complet.
 // PSSM ne dispose pas encore de ses deux fiches officielles et reste partiel.
 import assert from 'node:assert/strict';
+import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 
 export function validateAudioOnlyDelivery(course,delivery,vocals){
+  if(delivery?.audioOnlyContract==='interactive_audio_v1')return validateInteractiveAudioOnly(course,delivery,vocals);
   const id=course?.id;
   assert.equal(delivery?.deliveryMode,'audio_only',id+': mode audio seul attendu');
   assert.equal(delivery.validated,true,id+': contrôle audio non validé');
