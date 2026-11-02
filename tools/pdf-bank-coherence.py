@@ -143,7 +143,7 @@ def theme_order(rows):
     themes=list(dict.fromkeys(q['theme'] for q in rows))
     return [q for theme in themes for q in rows if q['theme']==theme]
 
-def validate_qcm_theme_cards(text,rows):
+def validate_qcm_theme_cards(text,rows,inline_cardinality=False):
     """Themed cards with a printed difficulty before each Qnn · heading.
 
     Only this concrete layout is admitted. Every clinical character, key,
@@ -175,7 +175,11 @@ def validate_qcm_theme_cards(text,rows):
             printed=count_tokens[0]
             assert int(printed[1])==len(q['answers'])==q['announcedCorrectCount'],q['id']+': cardinalité imprimée fausse'
             actual=actual[:printed.start()]+actual[printed.end():]
-        expected=q['question']+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        heading=q['question']
+        if inline_cardinality:
+            count=len(q['answers'])
+            heading+=f' ({count} bonne'+('s réponses)' if count>1 else ' réponse)')
+        expected=heading+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
         assert norm(actual)==norm(expected),q['id']+': énoncé/choix PDF différents'
     corrections=without_theme_titles(corrections,rows)
     corrections=re.sub(r'(?m)^Corrigés argumentés — suite[ \t]*\n','',corrections)
@@ -386,6 +390,28 @@ def check(course):
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
                 continue
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            if role=='qcm' and course.get('qcmPdfLayout')=='theme_inline_cardinality_v1':
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                # A repaired introductory pill may follow the last question in
+                # stream order. Admit only its exact known text and position.
+                label='Corrigés à la fin'
+                printed_label=doc[0].get_text(clip=fitz.Rect(252,149,402,171)).strip()
+                assert norm(printed_label)==label, 'Label introductif divergent'
+                text=body(doc)
+                label_line=r'(?m)^'+re.escape(printed_label)+r'[ \t]*$'
+                assert len(re.findall(label_line,text))==1, 'Label introductif absent ou repete'
+                text=re.sub(label_line,'',text)
+                validate_qcm_theme_cards(text,rows,inline_cardinality=True)
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cardinalite integree')
+                continue
+            if role=='flashcards' and course.get('flashcardPdfLayout')=='duplex_six_cards_v1':
+                import importlib.util
+                spec=importlib.util.spec_from_file_location('duplex_cards',Path(__file__).with_name('duplex-card-coherence.py'))
+                reader=importlib.util.module_from_spec(spec);spec.loader.exec_module(reader)
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                reader.validate_duplex_cards(doc,rows)
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages recto-verso')
+                continue
             if course.get('deliveryMode')=='reviewed_written_bundle' and role=='qcm':
                 validate_reviewed_qcm(doc,json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')

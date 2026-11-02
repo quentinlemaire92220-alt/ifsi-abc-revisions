@@ -19035,5 +19035,1553 @@
         "theme": "Toucher — peau et sensibilité"
       }
     ]
+  },
+  {
+    "id": "hepatites_virales_q01",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Que désigne une hépatite ?",
+    "choices": [
+      "Une inflammation du rein.",
+      "Un cancer du foie par définition.",
+      "Une absence de fonction hépatique dans tous les cas.",
+      "Une inflammation du foie.",
+      "Une infection exclusivement bactérienne du foie."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Le foie est l’organe concerné. B — Faux. Un cancer est une complication possible de certaines maladies chroniques, pas la définition. C — Faux. Une inflammation n’équivaut pas systématiquement à une défaillance complète. D — Vrai. Hépatite décrit une inflammation de cet organe, sans préciser à elle seule la cause. E — Faux. Les causes peuvent être virales ou non infectieuses.",
+    "flashcards": [
+      {
+        "front": "Comment définir une hépatite ?",
+        "answers": [
+          "Une hépatite est une inflammation aiguë ou chronique du foie ; elle n’est pas nécessairement virale."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Une hépatite est une inflammation aiguë ou chronique du foie ; elle n’est pas nécessairement virale."
+      }
+    ],
+    "number": 1
+  },
+  {
+    "id": "hepatites_virales_q02",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Quelles fonctions sont assurées par le foie ?",
+    "choices": [
+      "Assurer à lui seul toutes les fonctions de l’organisme.",
+      "Participer au contrôle métabolique.",
+      "Synthétiser des facteurs de la coagulation.",
+      "Produire de l’albumine.",
+      "Produire l’urine à la place du rein."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Faux. Les fonctions hépatiques sont essentielles mais ne remplacent pas celles des autres organes. B — Vrai. Le foie intervient notamment dans la gestion des sucres et des graisses. C — Vrai. La défaillance de cette synthèse participe à la gravité d’une insuffisance hépatique. D — Vrai. L’albumine est une protéine synthétisée par le foie. E — Faux. La transformation hépatique de l’ammoniaque en urée n’est pas la production rénale d’urine.",
+    "flashcards": [
+      {
+        "front": "Quelles sont trois fonctions hépatiques utiles à connaître ?",
+        "answers": [
+          "Contrôle métabolique et stockage,",
+          "synthèse d’albumine et de facteurs de la coagulation,",
+          "transformation de l’ammoniaque en urée."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Contrôle métabolique et stockage, synthèse d’albumine et de facteurs de la coagulation, transformation de l’ammoniaque en urée."
+      }
+    ],
+    "number": 2
+  },
+  {
+    "id": "hepatites_virales_q03",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "medium",
+    "question": "Une personne présente une élévation des transaminases. Quelles conclusions sont justifiées ?",
+    "choices": [
+      "La cause nécessite une interprétation et des examens adaptés.",
+      "Le virus B est automatiquement identifié.",
+      "Une vaccination contre B a nécessairement échoué.",
+      "La personne a obligatoirement un cancer.",
+      "Ce résultat peut témoigner d’une atteinte des cellules hépatiques."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. L’augmentation des enzymes ne nomme pas à elle seule l’agent causal. B — Faux. Les marqueurs spécifiques de B sont distincts des transaminases. C — Faux. Ce résultat ne permet pas de conclure sur la protection vaccinale. D — Faux. Une élévation des transaminases ne suffit pas à diagnostiquer un cancer. E — Vrai. Des cellules lésées libèrent ces enzymes dans le sang.",
+    "flashcards": [
+      {
+        "front": "Pourquoi des transaminases élevées ne suffisent-elles pas à identifier un virus ?",
+        "answers": [
+          "Elles renseignent sur une atteinte cellulaire ; des marqueurs spécifiques sont nécessaires pour en rechercher la cause."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Elles renseignent sur une atteinte cellulaire ; des marqueurs spécifiques sont nécessaires pour en rechercher la cause."
+      }
+    ],
+    "number": 3
+  },
+  {
+    "id": "hepatites_virales_q04",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Quelles associations entre terme et signification sont correctes ?",
+    "choices": [
+      "Asymptomatique : sans risque de transmission par définition.",
+      "Cholestase : synonyme obligatoire de guérison.",
+      "Ictère : coloration jaune de la peau et des muqueuses.",
+      "Asymptomatique : sans symptôme perceptible.",
+      "Ictère : preuve spécifique d’une infection B."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. L’absence de signes n’exclut pas une contagiosité. B — Faux. Elle correspond à une perturbation biliaire, pas à une guérison. C — Vrai. L’ictère est aussi appelé jaunisse. D — Vrai. Une infection peut exister malgré cette absence de symptômes. E — Faux. Il ne permet pas d’identifier à lui seul le virus.",
+    "flashcards": [
+      {
+        "front": "L’absence de symptôme exclut-elle une hépatite ou une contagiosité ?",
+        "answers": [
+          "Non. Une infection peut être silencieuse tout en pouvant évoluer ou se transmettre."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Non. Une infection peut être silencieuse tout en pouvant évoluer ou se transmettre."
+      }
+    ],
+    "number": 4
+  },
+  {
+    "id": "hepatites_virales_q05",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "medium",
+    "question": "Quels éléments participent au tableau d’une hépatite fulminante ?",
+    "choices": [
+      "Une insuffisance hépatique aiguë.",
+      "Une encéphalopathie hépatique.",
+      "Des anomalies importantes de coagulation.",
+      "Une absence certaine de risque vital.",
+      "Un simple état vaccinal B positif."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. La défaillance aiguë du foie est un élément central. B — Vrai. Des troubles de conscience peuvent accompagner cette forme grave. C — Vrai. La diminution des facteurs de coagulation traduit une défaillance de synthèse. D — Faux. Cette forme peut mettre en jeu le pronostic vital. E — Faux. Une réponse vaccinale ne définit pas une hépatite fulminante.",
+    "flashcards": [
+      {
+        "front": "Quels signes associer pour comprendre la gravité fulminante ?",
+        "answers": [
+          "Insuffisance hépatique aiguë, anomalies de coagulation et troubles de conscience ; d’autres organes peuvent aussi défaillir."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Insuffisance hépatique aiguë, anomalies de coagulation et troubles de conscience ; d’autres organes peuvent aussi défaillir."
+      }
+    ],
+    "number": 5
+  },
+  {
+    "id": "hepatites_virales_q06",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Comment distinguer fibrose et cirrhose ?",
+    "choices": [
+      "La fibrose est un vaccin.",
+      "La cirrhose prouve une guérison sans suivi nécessaire.",
+      "Toute infection virale devient immédiatement une cirrhose.",
+      "La fibrose correspond à du tissu cicatriciel.",
+      "La cirrhose remanie l’architecture du foie."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Il s’agit d’une modification tissulaire. B — Faux. Une cirrhose expose au contraire à des complications. C — Faux. L’évolution dépend du contexte et n’est pas immédiate ni systématique. D — Vrai. Elle peut se développer lors d’une inflammation persistante. E — Vrai. Elle peut altérer le fonctionnement hépatique et exposer à des complications.",
+    "flashcards": [
+      {
+        "front": "Quelle évolution peut relier inflammation persistante, fibrose et cirrhose ?",
+        "answers": [
+          "Une inflammation chronique peut entraîner un tissu cicatriciel, puis un remaniement cirrhotique du foie."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Une inflammation chronique peut entraîner un tissu cicatriciel, puis un remaniement cirrhotique du foie."
+      }
+    ],
+    "number": 6
+  },
+  {
+    "id": "hepatites_virales_q07",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "medium",
+    "question": "Quelles manifestations peuvent accompagner une hypertension portale dans une cirrhose ?",
+    "choices": [
+      "Une preuve que les transaminases identifient le virus.",
+      "Une ascite.",
+      "Une circulation veineuse collatérale.",
+      "Une disparition nécessaire de toute maladie hépatique.",
+      "Une immunisation vaccinale automatique contre B."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Le diagnostic étiologique repose sur d’autres marqueurs. B — Vrai. Une accumulation de liquide abdominal peut accompagner cette complication. C — Vrai. Des voies de dérivation peuvent se développer. D — Faux. Ces manifestations ne prouvent pas une guérison. E — Faux. Une complication circulatoire n’entraîne pas une protection vaccinale.",
+    "flashcards": [
+      {
+        "front": "Que désignent ascite et circulation collatérale ?",
+        "answers": [
+          "L’ascite est une accumulation de liquide abdominal ; les collatérales sont des voies veineuses de dérivation."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "L’ascite est une accumulation de liquide abdominal ; les collatérales sont des voies veineuses de dérivation."
+      }
+    ],
+    "number": 7
+  },
+  {
+    "id": "hepatites_virales_q08",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Quelles causes non virales d’hépatite sont possibles ?",
+    "choices": [
+      "Une atteinte auto-immune.",
+      "Une cause métabolique.",
+      "La présence d’anticorps vaccinaux B constitue toujours une hépatite.",
+      "Le mot hépatite impose toujours une origine virale.",
+      "Un médicament dans un contexte de toxicité."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. L’auto-immunité fait partie des causes possibles. B — Vrai. La MASH est une cause métabolique citée. C — Faux. Un marqueur de réponse immunitaire n’est pas une inflammation hépatique par définition. D — Faux. Il décrit une inflammation, sans imposer sa cause. E — Vrai. Le surdosage en paracétamol figure parmi les exemples.",
+    "flashcards": [
+      {
+        "front": "Une hépatite est-elle toujours d’origine virale ?",
+        "answers": [
+          "Non. Des causes médicamenteuses, métaboliques, alcooliques ou auto-immunes sont également possibles."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Non. Des causes médicamenteuses, métaboliques, alcooliques ou auto-immunes sont également possibles."
+      }
+    ],
+    "number": 8
+  },
+  {
+    "id": "hepatites_virales_q09",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "easy",
+    "question": "Que désigne l’incubation ?",
+    "choices": [
+      "La quantité d’anticorps anti-HBs.",
+      "Un traitement de la cirrhose.",
+      "Le délai entre contamination et apparition éventuelle des symptômes.",
+      "Le délai entre deux injections vaccinales dans tous les cas.",
+      "Une preuve qu’aucune transmission n’est possible."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Un délai et un résultat biologique sont des notions différentes. B — Faux. L’incubation n’est pas une intervention thérapeutique. C — Vrai. Elle concerne la phase précédant les signes éventuels. D — Faux. Il s’agit d’un calendrier vaccinal, pas de l’incubation. E — Faux. La contagiosité peut précéder les symptômes.",
+    "flashcards": [
+      {
+        "front": "Comment définir la période d’incubation ?",
+        "answers": [
+          "C’est le délai entre la contamination et l’apparition éventuelle de signes de la maladie."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "C’est le délai entre la contamination et l’apparition éventuelle de signes de la maladie."
+      }
+    ],
+    "number": 9
+  },
+  {
+    "id": "hepatites_virales_q10",
+    "courseId": "hepatites_virales",
+    "theme": "Foie, atteinte et gravité",
+    "difficulty": "medium",
+    "question": "Pourquoi dépister une infection chronique même en l’absence de symptômes ?",
+    "choices": [
+      "Pour permettre une prise en charge avant certaines complications.",
+      "Pour contribuer à réduire la transmission.",
+      "Parce qu’une absence de symptôme prouve déjà un cancer.",
+      "Pour remplacer systématiquement toute évaluation médicale.",
+      "Pour affirmer que toute personne dépistée est contagieuse."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. Une évolution silencieuse peut précéder cirrhose ou cancer. B — Vrai. Connaître le statut permet d’organiser la prévention. C — Faux. Cette absence ne permet pas une telle conclusion. D — Faux. Le dépistage s’inscrit dans une prise en charge. E — Faux. Le résultat et le contexte doivent être interprétés.",
+    "flashcards": [
+      {
+        "front": "Quels sont les deux grands objectifs du dépistage des hépatites chroniques ?",
+        "answers": [
+          "Prendre en charge avant les complications et contribuer à prévenir la transmission."
+        ],
+        "theme": "Foie, atteinte et gravité",
+        "explanation": "Prendre en charge avant les complications et contribuer à prévenir la transmission."
+      }
+    ],
+    "number": 10
+  },
+  {
+    "id": "hepatites_virales_q11",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "easy",
+    "question": "Quelles étapes correspondent au circuit féco-oral de l’hépatite A ?",
+    "choices": [
+      "Le virus est toujours transmis par un vaccin.",
+      "La contamination impose une piqûre sanguine.",
+      "Une absence d’ictère rend ce circuit impossible.",
+      "Un agent issu des selles atteint la bouche.",
+      "Une transmission indirecte par un aliment contaminé est possible."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Le vaccin A inactivé ne constitue pas ce circuit. B — Faux. La voie étudiée pour A est digestive. C — Faux. Une personne peut excréter le virus avant des signes. D — Vrai. La contamination peut passer par les mains, l’eau, des objets ou des aliments. E — Vrai. Un contact direct avec une personne symptomatique n’est pas indispensable.",
+    "flashcards": [
+      {
+        "front": "Quel est le principe d’une transmission féco-orale ?",
+        "answers": [
+          "Un agent d’origine fécale atteint la bouche, directement ou via mains, objets, eau ou aliments."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Un agent d’origine fécale atteint la bouche, directement ou via mains, objets, eau ou aliments."
+      }
+    ],
+    "number": 11
+  },
+  {
+    "id": "hepatites_virales_q12",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "easy",
+    "question": "Quel réservoir est associé à l’hépatite A ?",
+    "choices": [
+      "Le réservoir est absent puisque A peut être asymptomatique.",
+      "Le réservoir humain.",
+      "Le porc constitue son unique réservoir.",
+      "Le vaccin B est son réservoir.",
+      "L’albumine est son réservoir infectieux."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Un portage sans symptôme ne supprime pas l’origine humaine. B — Vrai. Les selles d’une personne infectée peuvent être à l’origine de la contamination. C — Faux. Le réservoir animal porcin concerne E dans les situations étudiées. D — Faux. Un vaccin ne constitue pas un réservoir de cette transmission. E — Faux. Il s’agit d’une protéine, pas du réservoir de A.",
+    "flashcards": [
+      {
+        "front": "Quel est le réservoir de l’hépatite A ?",
+        "answers": [
+          "Le réservoir est humain ; les selles des personnes infectées peuvent contaminer l’environnement ou les aliments."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Le réservoir est humain ; les selles des personnes infectées peuvent contaminer l’environnement ou les aliments."
+      }
+    ],
+    "number": 12
+  },
+  {
+    "id": "hepatites_virales_q13",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "medium",
+    "question": "Une personne prépare des aliments alors qu’elle est infectée par A sans symptôme. Que faut-il comprendre ?",
+    "choices": [
+      "L’hygiène des mains reste essentielle.",
+      "L’absence de jaunisse rend toute transmission impossible.",
+      "Un aspect propre des mains garantit leur absence de contamination.",
+      "Les transaminases doivent être connues de chaque consommateur pour prévenir A.",
+      "Elle peut participer à une contamination alimentaire."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. Les contaminations microscopiques peuvent être invisibles. B — Faux. L’absence de signe n’exclut pas une excrétion virale. C — Faux. Les agents infectieux ne sont pas nécessairement visibles. D — Faux. La prévention repose notamment sur l’hygiène et la sécurité des aliments. E — Vrai. La contagiosité peut précéder les symptômes.",
+    "flashcards": [
+      {
+        "front": "Pourquoi une personne sans symptôme peut-elle transmettre A en préparant des aliments ?",
+        "answers": [
+          "Elle peut excréter le virus avant les signes ; une contamination des mains peut ensuite atteindre les aliments."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Elle peut excréter le virus avant les signes ; une contamination des mains peut ensuite atteindre les aliments."
+      }
+    ],
+    "number": 13
+  },
+  {
+    "id": "hepatites_virales_q14",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "medium",
+    "question": "Quelles situations correspondent à des expositions possibles à E dans le contexte alimentaire et animal étudié ?",
+    "choices": [
+      "Tout aliment porcin est nécessairement infecté.",
+      "L’apparence séchée d’un produit prouve sa stérilité.",
+      "Consommer un produit contenant du foie de porc cru.",
+      "Être exposé à des animaux infectés dans certaines activités.",
+      "Avoir uniquement des anticorps vaccinaux B prouve une infection E."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Une exposition possible ne signifie pas contamination systématique. B — Faux. Un produit séché ne peut pas être assimilé à une cuisson ou à une stérilisation. C — Vrai. Un aliment issu d’un animal infecté peut transmettre E. D — Vrai. Le réservoir zoonotique concerne notamment porc et sanglier. E — Faux. Les marqueurs de vaccination B ne diagnostiquent pas E.",
+    "flashcards": [
+      {
+        "front": "Pourquoi distinguer A et E malgré leur porte d’entrée digestive ?",
+        "answers": [
+          "Le réservoir et l’origine de la contamination diffèrent : humain pour A, animal dans les situations E étudiées."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Le réservoir et l’origine de la contamination diffèrent : humain pour A, animal dans les situations E étudiées."
+      }
+    ],
+    "number": 14
+  },
+  {
+    "id": "hepatites_virales_q15",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "easy",
+    "question": "Que signifie zoonotique ?",
+    "choices": [
+      "Qu’un réservoir ou une transmission implique des animaux.",
+      "Que l’infection est causée par une vaccination B.",
+      "Que l’infection ne peut atteindre aucun humain.",
+      "Que toutes les viandes sont toujours infectées.",
+      "Que l’agent n’a aucun réservoir."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Vrai. Le terme permet notamment de comprendre les expositions E décrites. B — Faux. La notion concerne le lien avec un animal. C — Faux. Une origine animale n’exclut pas une contamination humaine. D — Faux. Le terme ne préjuge pas du statut de chaque aliment. E — Faux. Le terme qualifie au contraire un type de réservoir ou de transmission.",
+    "flashcards": [
+      {
+        "front": "Comment définir une infection zoonotique ?",
+        "answers": [
+          "C’est une infection dont le réservoir ou la transmission implique des animaux."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "C’est une infection dont le réservoir ou la transmission implique des animaux."
+      }
+    ],
+    "number": 15
+  },
+  {
+    "id": "hepatites_virales_q16",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "medium",
+    "question": "Pourquoi ne faut-il pas considérer la surgélation comme une preuve de stérilité ?",
+    "choices": [
+      "La surgélation identifie automatiquement un virus B.",
+      "Tous les aliments surgelés sont systématiquement contaminés.",
+      "L’absence de salissure visible prouve l’absence de virus.",
+      "Un aliment contaminé peut rester une source d’infection.",
+      "Un même lot contaminé peut exposer de nombreuses personnes."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Elle ne permet pas d’identifier un agent infectieux. B — Faux. Une possibilité de contamination ne signifie pas que chaque produit l’est. C — Faux. Une contamination microscopique peut être invisible. D — Vrai. Le fait qu’il soit surgelé ne garantit pas l’inactivation des virus. E — Vrai. La distribution de lots alimentaires explique certains épisodes groupés.",
+    "flashcards": [
+      {
+        "front": "Pourquoi la surgélation ne suffit-elle pas à garantir la sécurité d’un aliment contaminé ?",
+        "answers": [
+          "Elle ne doit pas être assimilée à une stérilisation ; un lot contaminé peut rester une source d’exposition."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Elle ne doit pas être assimilée à une stérilisation ; un lot contaminé peut rester une source d’exposition."
+      }
+    ],
+    "number": 16
+  },
+  {
+    "id": "hepatites_virales_q17",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "easy",
+    "question": "Quels examens sont associés au diagnostic des hépatites A et E aiguës dans le bilan présenté ?",
+    "choices": [
+      "L’aspect des aliments remplace les examens biologiques.",
+      "Les IgM spécifiques anti-VHA.",
+      "Les IgM spécifiques anti-VHE.",
+      "Les seuls anticorps vaccinaux anti-HBs identifient A.",
+      "Une seule mesure d’albumine identifie E."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Une exposition et un diagnostic biologique sont deux étapes différentes. B — Vrai. Elles font partie du diagnostic de A aiguë. C — Vrai. Elles font partie du diagnostic de E aiguë. D — Faux. Ils concernent la réponse contre l’antigène de surface de B. E — Faux. Ce dosage ne nomme pas le virus responsable.",
+    "flashcards": [
+      {
+        "front": "Quels anticorps sont recherchés pour A et E aiguës dans le bilan enseigné ?",
+        "answers": [
+          "Des immunoglobulines M spécifiques : anti-VHA et anti-VHE."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Des immunoglobulines M spécifiques : anti-VHA et anti-VHE."
+      }
+    ],
+    "number": 17
+  },
+  {
+    "id": "hepatites_virales_q18",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "easy",
+    "question": "Quelles mesures contribuent à prévenir A ?",
+    "choices": [
+      "Le traitement des eaux usées.",
+      "La vaccination dans les situations où elle est indiquée.",
+      "Le partage du matériel d’injection entre personnes.",
+      "Attendre un ictère avant toute mesure d’hygiène.",
+      "Le lavage des mains."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. Il réduit la contamination collective de l’environnement. B — Vrai. La vaccination A complète les mesures d’hygiène. C — Faux. Ce partage n’est pas une mesure de prévention. D — Faux. Une contagiosité peut précéder les symptômes. E — Vrai. Il interrompt une partie du circuit féco-oral.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les grandes familles de prévention de A ?",
+        "answers": [
+          "Hygiène individuelle, sécurité collective de l’eau et des aliments, et vaccination dans les situations indiquées."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Hygiène individuelle, sécurité collective de l’eau et des aliments, et vaccination dans les situations indiquées."
+      }
+    ],
+    "number": 18
+  },
+  {
+    "id": "hepatites_virales_q19",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "medium",
+    "question": "Quel raisonnement guide la prévention de E lors d’expositions alimentaires et animales ?",
+    "choices": [
+      "Une vaccination B protège automatiquement contre E.",
+      "Toute exposition animale prouve une infection.",
+      "Cuire à cœur les aliments à base de porc.",
+      "Employer une protection adaptée lors de certains contacts animaux.",
+      "Confondre viande séchée et viande cuite est sans conséquence."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Les protections vaccinales ne sont pas interchangeables. B — Faux. Une exposition possible justifie un raisonnement, pas une conclusion automatique. C — Vrai. La prévention vise l’exposition à un produit cru ou insuffisamment cuit. D — Vrai. Des gants ou d’autres équipements peuvent être nécessaires selon l’activité. E — Faux. Les modes de préparation ne sont pas équivalents.",
+    "flashcards": [
+      {
+        "front": "Quels moyens de prévention relier au contexte zoonotique de E ?",
+        "answers": [
+          "Cuisson à cœur des produits concernés et protection adaptée aux contacts avec des animaux potentiellement infectés."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Cuisson à cœur des produits concernés et protection adaptée aux contacts avec des animaux potentiellement infectés."
+      }
+    ],
+    "number": 19
+  },
+  {
+    "id": "hepatites_virales_q20",
+    "courseId": "hepatites_virales",
+    "theme": "Transmission et prévention A / E",
+    "difficulty": "medium",
+    "question": "À quoi servent les mesures de gestion d’un épisode groupé d’hépatites A ?",
+    "choices": [
+      "Identifier les personnes ou expositions concernées.",
+      "Mettre en place des rappels d’hygiène ou d’aliments si nécessaire.",
+      "Conclure que toute infection A est nécessairement chronique.",
+      "Remplacer le raisonnement de prévention par la seule observation de la jaunisse.",
+      "Considérer tous les contacts comme déjà immunisés."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. La recherche des contacts et de l’origine aide à limiter d’autres cas. B — Vrai. La gestion peut agir sur un lieu ou un lot à l’origine d’une exposition. C — Faux. La gestion des cas ne permet pas cette conclusion. D — Faux. La prévention doit aussi tenir compte d’expositions et de contagiosité silencieuse. E — Faux. Le statut de chaque personne ne doit pas être supposé.",
+    "flashcards": [
+      {
+        "front": "Quel est le but d’identifier contacts et aliments impliqués lors de cas groupés A ?",
+        "answers": [
+          "Interrompre la transmission et organiser les mesures adaptées aux personnes, aux lieux ou aux lots concernés."
+        ],
+        "theme": "Transmission et prévention A / E",
+        "explanation": "Interrompre la transmission et organiser les mesures adaptées aux personnes, aux lieux ou aux lots concernés."
+      }
+    ],
+    "number": 20
+  },
+  {
+    "id": "hepatites_virales_q21",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "easy",
+    "question": "Quelles voies de transmission sont importantes pour B ?",
+    "choices": [
+      "La transmission mère-enfant.",
+      "La vaccination B est une voie habituelle d’infection B.",
+      "La voie digestive constitue l’unique voie B.",
+      "La voie sanguine.",
+      "La voie sexuelle."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. La prévention périnatale répond à cette voie. B — Faux. Le vaccin sous-unitaire n’est pas une injection de virus entier. C — Faux. Cette affirmation confond B avec les circuits digestifs étudiés pour A et E. D — Vrai. Une exposition à du sang infecté constitue un risque. E — Vrai. Les contacts sexuels font partie des voies à connaître.",
+    "flashcards": [
+      {
+        "front": "Quelles sont les trois voies de transmission B à connaître ?",
+        "answers": [
+          "Les voies sanguine, sexuelle et mère-enfant."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Les voies sanguine, sexuelle et mère-enfant."
+      }
+    ],
+    "number": 21
+  },
+  {
+    "id": "hepatites_virales_q22",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "easy",
+    "question": "Quelle voie est centrale pour la transmission de C ?",
+    "choices": [
+      "L’absence de symptômes empêche toute transmission.",
+      "L’exposition sanguine.",
+      "La simple lecture d’un résultat d’anticorps.",
+      "La vaccination B.",
+      "L’ascite en tant que geste de soin."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Une infection peut être silencieuse. B — Vrai. Elle est centrale dans les situations de partage de matériel ou de soins non sécurisés. C — Faux. La lecture d’un résultat n’est pas une voie de transmission. D — Faux. Un vaccin contre B ne constitue pas une transmission C. E — Faux. L’ascite est une manifestation clinique, pas un geste de transmission.",
+    "flashcards": [
+      {
+        "front": "Quelle voie de contamination faut-il principalement rechercher pour C ?",
+        "answers": [
+          "Une exposition au sang, notamment par un matériel partagé ou un soin non sécurisé."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Une exposition au sang, notamment par un matériel partagé ou un soin non sécurisé."
+      }
+    ],
+    "number": 22
+  },
+  {
+    "id": "hepatites_virales_q23",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Quel raisonnement est correct à propos du risque sexuel de C ?",
+    "choices": [
+      "La transmission sanguine signifie qu’aucun rapport ne peut jamais présenter un risque.",
+      "Toute relation sexuelle transmet nécessairement C.",
+      "L’orientation sexuelle permet à elle seule de poser le diagnostic.",
+      "Une vaccination B exclut le risque C.",
+      "Certaines situations sexuelles peuvent comporter un risque d’exposition."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Une formulation absolue ferait disparaître des situations d’exposition possibles. B — Faux. Un risque ne signifie pas transmission systématique. C — Faux. Seuls les examens et le contexte permettent de connaître le statut. D — Faux. La protection vaccinale B ne protège pas contre C. E — Vrai. La voie sanguine dominante ne justifie pas une exclusion absolue de toute situation sexuelle.",
+    "flashcards": [
+      {
+        "front": "Pourquoi éviter la phrase « C ne se transmet jamais dans un contexte sexuel » ?",
+        "answers": [
+          "Certaines situations sexuelles peuvent exposer au virus ; une voie sanguine dominante n’exclut pas tout contexte sexuel."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Certaines situations sexuelles peuvent exposer au virus ; une voie sanguine dominante n’exclut pas tout contexte sexuel."
+      }
+    ],
+    "number": 23
+  },
+  {
+    "id": "hepatites_virales_q24",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Quelles affirmations rendent compte du risque de chronicité B ?",
+    "choices": [
+      "L’absence d’ictère prouve que l’infection ne persistera pas.",
+      "Le résultat vaccinal suffit à dater une contamination ancienne.",
+      "L’âge au moment de la contamination influence ce risque.",
+      "La prévention mère-enfant a une importance particulière.",
+      "Une contamination adulte ne peut jamais devenir chronique."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Une évolution chronique peut être asymptomatique. B — Faux. Il faut interpréter l’ensemble du bilan et de l’histoire. C — Vrai. L’infection très précoce expose davantage à la persistance. D — Vrai. Elle évite une contamination dans une période à risque élevé de chronicité. E — Faux. Le risque plus faible n’est pas nul.",
+    "flashcards": [
+      {
+        "front": "Pourquoi la prévention de la contamination B très précoce est-elle essentielle ?",
+        "answers": [
+          "Une contamination très précoce expose davantage à la persistance de l’infection."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Une contamination très précoce expose davantage à la persistance de l’infection."
+      }
+    ],
+    "number": 24
+  },
+  {
+    "id": "hepatites_virales_q25",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "easy",
+    "question": "Quelles situations peuvent conduire à envisager un dépistage B ou C ?",
+    "choices": [
+      "Une exposition au sang.",
+      "Un partage de matériel d’injection.",
+      "Une histoire d’expositions pertinentes, même sans symptôme.",
+      "La seule couleur des yeux suffit à identifier le virus.",
+      "Un statut doit être supposé d’après l’origine de la personne sans examen."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. Elle doit être évaluée dans le circuit approprié. B — Vrai. Cette situation expose à des transmissions sanguines. C — Vrai. Le dépistage n’est pas limité aux personnes présentant une jaunisse. D — Faux. Ce n’est pas un critère de diagnostic étiologique. E — Faux. Une supposition ne remplace pas un dépistage.",
+    "flashcards": [
+      {
+        "front": "Le dépistage B ou C doit-il attendre des symptômes ?",
+        "answers": [
+          "Non. Il peut être indiqué selon les expositions et le contexte, avant les complications."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Non. Il peut être indiqué selon les expositions et le contexte, avant les complications."
+      }
+    ],
+    "number": 25
+  },
+  {
+    "id": "hepatites_virales_q26",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Pourquoi le dépistage maternel B est-il important ?",
+    "choices": [
+      "Il dispense de toute organisation à la naissance.",
+      "Il est identique à une injection de vaccin au nouveau-né.",
+      "Il permet de conclure au statut C sans test spécifique.",
+      "Il permet d’anticiper la protection de l’enfant.",
+      "Il prouve que toute grossesse transmet B."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. La prévention peut au contraire nécessiter une anticipation. B — Faux. Un examen maternel et une intervention néonatale sont distincts. C — Faux. Les virus nécessitent des marqueurs différents. D — Vrai. L’identification d’une infection maternelle permet d’organiser la prévention périnatale. E — Faux. Une situation à évaluer n’est pas une transmission certaine.",
+    "flashcards": [
+      {
+        "front": "Quel est l’objectif majeur du dépistage B pendant la grossesse ?",
+        "answers": [
+          "Identifier une infection maternelle afin d’organiser la prévention de la transmission à l’enfant."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Identifier une infection maternelle afin d’organiser la prévention de la transmission à l’enfant."
+      }
+    ],
+    "number": 26
+  },
+  {
+    "id": "hepatites_virales_q27",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Quelles attitudes sont adaptées face à une personne appartenant à une population davantage exposée ?",
+    "choices": [
+      "Confondre statut VIH et statut B.",
+      "Évaluer les expositions sans supposer le diagnostic.",
+      "Expliquer l’intérêt des examens de manière non stigmatisante.",
+      "Annoncer une infection sans examen parce que le risque est accru.",
+      "Écarter toute prise en charge si elle n’a pas de symptôme."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Ce sont des infections différentes à rechercher séparément. B — Vrai. Une appartenance à un groupe ne prouve pas une infection individuelle. C — Vrai. L’information et l’accès au dépistage doivent rester individualisés. D — Faux. Le risque collectif ne suffit pas à diagnostiquer une personne. E — Faux. Les infections peuvent rester silencieuses.",
+    "flashcards": [
+      {
+        "front": "Pourquoi distinguer facteur de risque et diagnostic ?",
+        "answers": [
+          "Un facteur de risque décrit une possibilité d’exposition ; le diagnostic nécessite des examens et une interprétation individualisée."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Un facteur de risque décrit une possibilité d’exposition ; le diagnostic nécessite des examens et une interprétation individualisée."
+      }
+    ],
+    "number": 27
+  },
+  {
+    "id": "hepatites_virales_q28",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "easy",
+    "question": "Que signifie AES ?",
+    "choices": [
+      "Anticorps exclusifs de surface.",
+      "Arrêt systématique des examens.",
+      "Absence certaine d’exposition virale.",
+      "Une forme de vaccination B.",
+      "Accident d’exposition au sang."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Cette formulation ne définit pas un AES. B — Faux. Une exposition peut au contraire nécessiter une évaluation. C — Faux. Le risque doit être apprécié, pas nié par définition. D — Faux. Un accident d’exposition et une vaccination sont différents. E — Vrai. Cette situation relève d’un circuit de prise en charge et d’évaluation.",
+    "flashcards": [
+      {
+        "front": "Que désigne un AES et quel est le premier raisonnement à avoir ?",
+        "answers": [
+          "Un accident d’exposition au sang ; il faut recourir au circuit prévu et faire évaluer l’exposition."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Un accident d’exposition au sang ; il faut recourir au circuit prévu et faire évaluer l’exposition."
+      }
+    ],
+    "number": 28
+  },
+  {
+    "id": "hepatites_virales_q29",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Quelles mesures réduisent les occasions de transmission sanguine ?",
+    "choices": [
+      "Considérer tout matériel comme sûr parce qu’il paraît propre.",
+      "Remplacer toutes les précautions par une vaccination B seule.",
+      "Ne pas partager le matériel d’injection.",
+      "Utiliser un matériel adapté et respecter les procédures de soin.",
+      "Sécuriser les dons destinés aux receveurs."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Faux. L’aspect visuel ne garantit pas l’absence d’agent infectieux. B — Faux. Cette vaccination ne protège pas contre toutes les infections sanguines. C — Vrai. Le partage peut transmettre un agent présent dans le sang. D — Vrai. La sécurisation des soins participe à la prévention. E — Vrai. Les contrôles des donneurs et des produits réduisent les risques.",
+    "flashcards": [
+      {
+        "front": "Quelles sont trois barrières de prévention des transmissions sanguines ?",
+        "answers": [
+          "Matériel non partagé et adapté, procédures de soin respectées, sécurisation des dons et produits destinés aux receveurs."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Matériel non partagé et adapté, procédures de soin respectées, sécurisation des dons et produits destinés aux receveurs."
+      }
+    ],
+    "number": 29
+  },
+  {
+    "id": "hepatites_virales_q30",
+    "courseId": "hepatites_virales",
+    "theme": "B / C : transmissions et dépistage",
+    "difficulty": "medium",
+    "question": "Une personne vit avec le VIH. Quelles conclusions concernant B sont correctes ?",
+    "choices": [
+      "Il faut connaître son statut B par un bilan adapté.",
+      "Une co-infection éventuelle doit être prise en compte dans le traitement.",
+      "Elle a nécessairement B.",
+      "Elle ne peut jamais avoir B.",
+      "La présence du VIH remplace tous les marqueurs B."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. Les risques communs justifient de rechercher une co-infection. B — Vrai. La prise en charge doit tenir compte des infections réellement présentes. C — Faux. Des voies communes ne rendent pas l’association automatique. D — Faux. Une co-infection est possible. E — Faux. Les marqueurs B restent nécessaires.",
+    "flashcards": [
+      {
+        "front": "Le VIH implique-t-il automatiquement une hépatite B ?",
+        "answers": [
+          "Non. Des risques communs justifient un dépistage, mais le statut B doit être établi séparément."
+        ],
+        "theme": "B / C : transmissions et dépistage",
+        "explanation": "Non. Des risques communs justifient un dépistage, mais le statut B doit être établi séparément."
+      }
+    ],
+    "number": 30
+  },
+  {
+    "id": "hepatites_virales_q31",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "easy",
+    "question": "Quels sont les trois marqueurs du bilan B étudié ?",
+    "choices": [
+      "Les anticorps anti-HBc.",
+      "La seule albumine remplace ces trois marqueurs.",
+      "Les seuls anticorps anti-VHC remplacent ce bilan.",
+      "L’AgHBs.",
+      "Les anticorps anti-HBs."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. Ils sont dirigés contre l’antigène de capside. B — Faux. L’albumine ne définit pas le statut B. C — Faux. Ils concernent le virus C, pas B. D — Vrai. Il s’agit de l’antigène de surface. E — Vrai. Ils sont dirigés contre l’antigène de surface.",
+    "flashcards": [
+      {
+        "front": "Quels trois marqueurs faut-il lire ensemble pour B ?",
+        "answers": [
+          "L’antigène HBs, les anticorps anti-HBs et les anticorps anti-HBc."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "L’antigène HBs, les anticorps anti-HBs et les anticorps anti-HBc."
+      }
+    ],
+    "number": 31
+  },
+  {
+    "id": "hepatites_virales_q32",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "easy",
+    "question": "Que représente l’AgHBs ?",
+    "choices": [
+      "Une preuve que le vaccin a été administré.",
+      "Un antigène de surface du virus B.",
+      "Un anticorps vaccinal par définition.",
+      "Un marqueur du virus C.",
+      "Une quantité de transaminases."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Sa détection ne se lit pas comme un simple carnet vaccinal. B — Vrai. Sa présence doit être distinguée de celle d’un anticorps anti-HBs. C — Faux. L’antigène et l’anticorps dirigé contre lui sont différents. D — Faux. HBs se rapporte au virus B. E — Faux. Un antigène viral et une enzyme cellulaire sont des mesures différentes.",
+    "flashcards": [
+      {
+        "front": "Quelle différence fondamentale existe entre AgHBs et anti-HBs ?",
+        "answers": [
+          "AgHBs est un antigène viral ; anti-HBs désigne des anticorps dirigés contre cet antigène."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "AgHBs est un antigène viral ; anti-HBs désigne des anticorps dirigés contre cet antigène."
+      }
+    ],
+    "number": 32
+  },
+  {
+    "id": "hepatites_virales_q33",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Quel profil est compatible avec une réponse vaccinale B isolée ?",
+    "choices": [
+      "AgHBs positif comme seul argument de vaccination.",
+      "Anti-VHC positifs comme unique preuve.",
+      "Tous les marqueurs négatifs prouvent une réponse vaccinale.",
+      "Un ictère suffit à prouver le profil vaccinal.",
+      "AgHBs négatif, anti-HBs positifs et anti-HBc négatifs."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Un antigène détecté n’est pas un anticorps vaccinal. B — Faux. Ce marqueur concerne C. C — Faux. Un bilan entièrement négatif ne montre pas d’anti-HBs. D — Faux. Le statut nécessite une lecture biologique adaptée. E — Vrai. Le vaccin fondé sur HBs peut produire des anti-HBs sans anti-HBc.",
+    "flashcards": [
+      {
+        "front": "Quel profil sérologique B est présenté comme vaccinal ?",
+        "answers": [
+          "AgHBs négatif, anti-HBs positifs, anti-HBc négatifs."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "AgHBs négatif, anti-HBs positifs, anti-HBc négatifs."
+      }
+    ],
+    "number": 33
+  },
+  {
+    "id": "hepatites_virales_q34",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Pourquoi la vaccination B n’entraîne-t-elle pas, à elle seule, des anti-HBc ?",
+    "choices": [
+      "Parce que tous les virus possèdent les mêmes antigènes.",
+      "Parce que le vaccin contient une infection C active.",
+      "Le vaccin utilise l’antigène HBs, pas l’antigène de capside HBc.",
+      "Parce qu’aucune réponse immunitaire n’est recherchée.",
+      "Parce que les anti-HBc sont des transaminases."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Les marqueurs sont spécifiques. B — Faux. Cette affirmation ne correspond pas au vaccin B sous-unitaire. C — Vrai. La réponse attendue vise l’antigène de surface utilisé. D — Faux. Le vaccin vise précisément une réponse protectrice. E — Faux. Ce sont des anticorps dirigés contre la capside.",
+    "flashcards": [
+      {
+        "front": "Que suggèrent des anticorps anti-HBc dans le bilan enseigné ?",
+        "answers": [
+          "Ils témoignent d’un contact avec le virus B ; ils ne résultent pas du seul vaccin fondé sur HBs."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Ils témoignent d’un contact avec le virus B ; ils ne résultent pas du seul vaccin fondé sur HBs."
+      }
+    ],
+    "number": 34
+  },
+  {
+    "id": "hepatites_virales_q35",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Un bilan montre un AgHBs positif. Que faut-il retenir ?",
+    "choices": [
+      "Une infection en cours doit être évaluée.",
+      "L’histoire et d’autres résultats peuvent être nécessaires à l’interprétation.",
+      "La personne est seulement vaccinée avec certitude.",
+      "L’anti-HBs est forcément le même marqueur.",
+      "Le statut C est automatiquement connu."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. Ce résultat appelle une interprétation et une prise en charge adaptées. B — Vrai. Un marqueur isolé ne résume pas toute l’évolution. C — Faux. Cela confond antigène viral et anticorps vaccinaux. D — Faux. Antigène et anticorps ne sont pas interchangeables. E — Faux. C nécessite des examens spécifiques.",
+    "flashcards": [
+      {
+        "front": "Que doit faire comprendre un AgHBs détecté ?",
+        "answers": [
+          "Il fait rechercher une infection B en cours et appelle une évaluation adaptée, plutôt qu’une lecture isolée du résultat."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Il fait rechercher une infection B en cours et appelle une évaluation adaptée, plutôt qu’une lecture isolée du résultat."
+      }
+    ],
+    "number": 35
+  },
+  {
+    "id": "hepatites_virales_q36",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "easy",
+    "question": "Quelles questions différentes posent sérologie anti-VHC et recherche d’ARN ?",
+    "choices": [
+      "Les deux résultats désignent exactement la même molécule.",
+      "La sérologie C mesure seulement les facteurs de coagulation.",
+      "L’ARN est le nom d’un vaccin B.",
+      "La sérologie recherche une trace immunitaire de contact.",
+      "La recherche d’ARN renseigne sur le virus circulant."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Un anticorps et un ARN viral sont différents. B — Faux. Elle recherche des anticorps dirigés contre C. C — Faux. Il s’agit de matériel génétique. D — Vrai. Elle mesure des anticorps. E — Vrai. Elle recherche directement son matériel génétique.",
+    "flashcards": [
+      {
+        "front": "Quelle différence faut-il expliquer entre anti-VHC et ARN du VHC ?",
+        "answers": [
+          "Les anti-VHC indiquent une trace immunitaire ; l’ARN renseigne sur la présence de virus circulant."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Les anti-VHC indiquent une trace immunitaire ; l’ARN renseigne sur la présence de virus circulant."
+      }
+    ],
+    "number": 36
+  },
+  {
+    "id": "hepatites_virales_q37",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Des anti-VHC sont positifs. Quelles affirmations sont correctes ?",
+    "choices": [
+      "Il interdit toute perspective de traitement efficace.",
+      "Ce résultat seul ne suffit pas à prouver une infection active.",
+      "Une recherche d’ARN permet de préciser la situation.",
+      "Il prouve toujours un échec thérapeutique.",
+      "Il constitue une protection vaccinale B."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Il existe une prise en charge des infections C actives. B — Vrai. Des anticorps peuvent persister après la guérison. C — Vrai. Elle distingue les situations avec ou sans virus circulant détecté. D — Faux. La persistance d’anticorps ne suffit pas à conclure à cet échec. E — Faux. Les marqueurs et les infections sont différents.",
+    "flashcards": [
+      {
+        "front": "Pourquoi compléter une sérologie C positive par une recherche d’ARN ?",
+        "answers": [
+          "Pour savoir si du virus circule, car des anticorps peuvent persister sans infection active détectée."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Pour savoir si du virus circule, car des anticorps peuvent persister sans infection active détectée."
+      }
+    ],
+    "number": 37
+  },
+  {
+    "id": "hepatites_virales_q38",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Pourquoi une sérologie anti-VHC peut-elle rester positive après une guérison ?",
+    "choices": [
+      "Parce qu’un anticorps est une particule virale.",
+      "Parce que toute guérison est impossible.",
+      "Parce que la vaccination B produit toujours des anti-VHC.",
+      "Parce que l’ARN ne peut jamais être recherché.",
+      "La trace immunitaire peut persister."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Un anticorps et un virus sont différents. B — Faux. L’efficacité du traitement C permet une perspective de guérison. C — Faux. Elle vise l’antigène B et ne produit pas ces marqueurs C. D — Faux. La recherche d’ARN fait partie du parcours diagnostique. E — Vrai. La présence d’anticorps ne mesure pas à elle seule une réplication virale actuelle.",
+    "flashcards": [
+      {
+        "front": "Des anti-VHC persistants après traitement signifient-ils nécessairement un virus encore présent ?",
+        "answers": [
+          "Non. Il faut distinguer la trace immunitaire de la recherche de virus circulant."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Non. Il faut distinguer la trace immunitaire de la recherche de virus circulant."
+      }
+    ],
+    "number": 38
+  },
+  {
+    "id": "hepatites_virales_q39",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Que permet de rechercher une PCR dans le contexte du dépistage viral ?",
+    "choices": [
+      "Tous les anticorps par définition.",
+      "L’absence certaine de tout risque futur.",
+      "Du matériel génétique viral.",
+      "Uniquement la couleur de la peau.",
+      "L’histoire vaccinale complète à elle seule."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Le matériel génétique est distinct des anticorps. B — Faux. Un examen a un rôle défini et ne garantit pas l’absence de tout événement ultérieur. C — Vrai. Le dépistage du génome viral complète les autres barrières de sécurité. D — Faux. La technique ne se fonde pas sur l’aspect clinique. E — Faux. Une recherche génétique ne remplace pas toutes les autres informations.",
+    "flashcards": [
+      {
+        "front": "Que signifie DGV et que recherche-t-il ?",
+        "answers": [
+          "Dépistage du génome viral : recherche de matériel génétique viral dans le don de sang, complémentaire des contrôles du donneur."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Dépistage du génome viral : recherche de matériel génétique viral dans le don de sang, complémentaire des contrôles du donneur."
+      }
+    ],
+    "number": 39
+  },
+  {
+    "id": "hepatites_virales_q40",
+    "courseId": "hepatites_virales",
+    "theme": "Comprendre les marqueurs et les résultats",
+    "difficulty": "medium",
+    "question": "Quelle formulation accompagne correctement une annonce de résultat C positif ?",
+    "choices": [
+      "Des examens et une prise en charge vont préciser et traiter la situation si nécessaire.",
+      "Il existe des traitements efficaces, dont le résultat sera contrôlé.",
+      "Votre guérison est garantie sans suivi, quel que soit le résultat.",
+      "Un anticorps positif suffit à annoncer le stade exact du foie.",
+      "Il est inutile de vérifier votre compréhension."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. Il faut expliquer le parcours sans réduire le résultat à une fatalité. B — Vrai. Un message rassurant peut rester précis et sans garantie individuelle abusive. C — Faux. Une promesse absolue ne remplace pas l’évaluation et le contrôle. D — Faux. Ce marqueur ne résume pas l’atteinte hépatique. E — Faux. L’accompagnement doit au contraire vérifier ce qui a été compris.",
+    "flashcards": [
+      {
+        "front": "Comment rassurer sans promettre après un résultat C positif ?",
+        "answers": [
+          "Expliquer qu’une prise en charge efficace existe, préciser les examens et le suivi, puis vérifier la compréhension."
+        ],
+        "theme": "Comprendre les marqueurs et les résultats",
+        "explanation": "Expliquer qu’une prise en charge efficace existe, préciser les examens et le suivi, puis vérifier la compréhension."
+      }
+    ],
+    "number": 40
+  },
+  {
+    "id": "hepatites_virales_q41",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Pourquoi le vaccin B est-il qualifié de sous-unitaire ?",
+    "choices": [
+      "Il ne vise aucune réponse immunitaire.",
+      "Il remplace automatiquement tous les examens biologiques.",
+      "Il correspond à un traitement antiviral C.",
+      "Il contient un constituant ciblé, l’antigène HBs.",
+      "Il contient tous les virus des hépatites."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Faux. Il vise notamment la production d’anti-HBs. B — Faux. Un vaccin ne résume pas l’évaluation d’un statut. C — Faux. La vaccination et le traitement de C sont distincts. D — Vrai. Il ne repose pas sur un virus B entier. E — Faux. Les antigènes vaccinaux sont spécifiques.",
+    "flashcards": [
+      {
+        "front": "Qu’est-ce qu’un vaccin sous-unitaire dans le cas de B ?",
+        "answers": [
+          "Un vaccin utilisant l’antigène de surface HBs afin de déclencher une réponse immunitaire, sans virus B entier."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Un vaccin utilisant l’antigène de surface HBs afin de déclencher une réponse immunitaire, sans virus B entier."
+      }
+    ],
+    "number": 41
+  },
+  {
+    "id": "hepatites_virales_q42",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Pourquoi faut-il distinguer vaccination reçue et immunisation établie ?",
+    "choices": [
+      "Parce que la vaccination B protège forcément contre C.",
+      "Une réponse vaccinale doit être évaluée dans le cadre prévu.",
+      "Une non-réponse est possible.",
+      "Parce qu’aucune vaccination ne peut jamais protéger.",
+      "Parce qu’un AgHBs positif est toujours un certificat vaccinal."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. La protection B n’est pas une protection C. B — Vrai. Le nombre d’injections ne permet pas toujours de présumer la réponse individuelle. C — Vrai. Le statut doit être connu et interprété médicalement. D — Faux. La vaccination vise une protection, même si la réponse n’est pas identique chez tous. E — Faux. Cela confond un antigène détecté et une réponse à la vaccination.",
+    "flashcards": [
+      {
+        "front": "Pourquoi avoir reçu des injections B ne suffit-il pas toujours à prouver l’immunisation ?",
+        "answers": [
+          "La réponse individuelle doit être établie ; une non-réponse peut exister et nécessite une interprétation médicale."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "La réponse individuelle doit être établie ; une non-réponse peut exister et nécessite une interprétation médicale."
+      }
+    ],
+    "number": 42
+  },
+  {
+    "id": "hepatites_virales_q43",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quels éléments peuvent être pertinents dans l’évaluation d’une réponse vaccinale ?",
+    "choices": [
+      "L’histoire des vaccinations effectivement réalisées.",
+      "Le contexte de la personne, notamment une immunodépression.",
+      "Le seul aspect souriant de la personne.",
+      "Une sérologie C remplace nécessairement toute évaluation B.",
+      "Les résultats biologiques interprétés par le médecin."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. Il faut connaître les étapes réellement reçues. B — Vrai. Ce contexte peut intervenir dans la réponse et sa prise en charge. C — Faux. Il ne renseigne pas sur l’immunisation. D — Faux. Les marqueurs ne sont pas interchangeables. E — Vrai. Le statut ne doit pas être supposé à partir d’un seul élément administratif.",
+    "flashcards": [
+      {
+        "front": "Quelles informations sont utiles pour établir un statut vaccinal B ?",
+        "answers": [
+          "L’histoire des injections, les résultats biologiques et le contexte médical, interprétés dans le cadre prévu."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "L’histoire des injections, les résultats biologiques et le contexte médical, interprétés dans le cadre prévu."
+      }
+    ],
+    "number": 43
+  },
+  {
+    "id": "hepatites_virales_q44",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Une personne identifiée non-répondeuse au vaccin B subit un AES. Quels principes sont adaptés ?",
+    "choices": [
+      "Improviser soi-même un protocole de prescription.",
+      "Conclure que le vaccin B protège forcément contre le VIH.",
+      "Ne pas présumer sa protection à partir des seules injections reçues.",
+      "Transmettre ce statut pour une évaluation médicale adaptée.",
+      "Affirmer qu’aucune évaluation n’est nécessaire."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. La conduite à tenir relève du circuit médical prévu. B — Faux. Les protections sont spécifiques. C — Vrai. La non-réponse doit être connue du circuit de prise en charge. D — Vrai. La conduite à tenir dépend notamment de l’exposition et de la source. E — Faux. Une exposition doit être évaluée.",
+    "flashcards": [
+      {
+        "front": "Quel point doit être transmis lors d’un AES chez un non-répondeur B ?",
+        "answers": [
+          "Son absence de réponse vaccinale connue, pour guider l’évaluation et la prise en charge médicales."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Son absence de réponse vaccinale connue, pour guider l’évaluation et la prise en charge médicales."
+      }
+    ],
+    "number": 44
+  },
+  {
+    "id": "hepatites_virales_q45",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Que désigne la sérovaccination ?",
+    "choices": [
+      "L’association d’un vaccin et d’immunoglobulines spécifiques.",
+      "Une simple prise de sang sans autre intervention.",
+      "Un vaccin administré sans aucun autre produit par définition.",
+      "Un diagnostic automatique de C.",
+      "Une mesure qui supprime tout besoin de suivi."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A — Vrai. Elle combine une réponse active et un apport immédiat d’anticorps. B — Faux. Le préfixe séro ne désigne pas ici un seul examen. C — Faux. L’association inclut des immunoglobulines. D — Faux. Il s’agit d’une démarche de prévention dans la situation concernée. E — Faux. La poursuite du programme et des contrôles reste importante.",
+    "flashcards": [
+      {
+        "front": "Quels deux moyens associe la sérovaccination ?",
+        "answers": [
+          "Un vaccin qui déclenche une réponse propre et des immunoglobulines qui apportent immédiatement des anticorps."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Un vaccin qui déclenche une réponse propre et des immunoglobulines qui apportent immédiatement des anticorps."
+      }
+    ],
+    "number": 45
+  },
+  {
+    "id": "hepatites_virales_q46",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quelles différences distinguent vaccin et immunoglobulines ?",
+    "choices": [
+      "Ce sont nécessairement deux noms du même produit.",
+      "Les immunoglobulines identifient à elles seules le virus responsable.",
+      "Le vaccin B est une sérologie C.",
+      "Le vaccin vise à déclencher une réponse immunitaire propre.",
+      "Les immunoglobulines apportent des anticorps déjà constitués."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Leurs mécanismes et rôles sont complémentaires. B — Faux. Un apport d’anticorps n’est pas un bilan étiologique. C — Faux. Une intervention préventive et un examen sont différents. D — Vrai. Il prépare une protection active. E — Vrai. Elles apportent une protection passive immédiate.",
+    "flashcards": [
+      {
+        "front": "Comment expliquer protection active et protection passive ?",
+        "answers": [
+          "Active : le vaccin stimule une réponse propre. Passive : des immunoglobulines apportent des anticorps déjà disponibles."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Active : le vaccin stimule une réponse propre. Passive : des immunoglobulines apportent des anticorps déjà disponibles."
+      }
+    ],
+    "number": 46
+  },
+  {
+    "id": "hepatites_virales_q47",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Pourquoi anticiper la prise en charge d’un nouveau-né lorsque sa mère est AgHBs positive ?",
+    "choices": [
+      "Pour déclarer que l’enfant est infecté sans examen.",
+      "Pour organiser une prévention de la transmission B à l’enfant.",
+      "Pour transmettre correctement le statut et les actes réalisés.",
+      "Parce que des anti-HBs maternels et un AgHBs positif sont toujours synonymes.",
+      "Pour supprimer d’emblée tout suivi après la naissance."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Faux. Un risque et un diagnostic doivent rester distincts. B — Vrai. Le statut maternel permet de préparer les interventions et le suivi. C — Vrai. Une information précise évite de confondre infection maternelle et anticorps vaccinaux. D — Faux. Anticorps et antigène n’ont pas la même signification. E — Faux. La prévention ne se limite pas à un acte isolé.",
+    "flashcards": [
+      {
+        "front": "Que faut-il distinguer dans la prévention mère-enfant de B ?",
+        "answers": [
+          "Le statut maternel AgHBs, les mesures de protection de l’enfant, les actes réalisés et le suivi à poursuivre."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Le statut maternel AgHBs, les mesures de protection de l’enfant, les actes réalisés et le suivi à poursuivre."
+      }
+    ],
+    "number": 47
+  },
+  {
+    "id": "hepatites_virales_q48",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "easy",
+    "question": "Quelles affirmations sur la vaccination B sont correctes ?",
+    "choices": [
+      "Elle ne supprime pas les précautions de soin.",
+      "Elle permet de partager le matériel d’injection.",
+      "Elle identifie automatiquement le statut C.",
+      "Elle garantit qu’aucune mesure d’hygiène n’est plus utile.",
+      "Elle ne protège pas contre toutes les infections sanguines."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A — Vrai. La prévention des AES reste nécessaire. B — Faux. Le partage reste une exposition à éviter. C — Faux. Le diagnostic C nécessite des examens spécifiques. D — Faux. Les mesures de prévention restent complémentaires. E — Vrai. C et VIH nécessitent leur propre prévention.",
+    "flashcards": [
+      {
+        "front": "Pourquoi les précautions de soin restent-elles nécessaires après vaccination B ?",
+        "answers": [
+          "La vaccination B ne protège ni de toutes les infections ni de toutes les conséquences d’un AES."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "La vaccination B ne protège ni de toutes les infections ni de toutes les conséquences d’un AES."
+      }
+    ],
+    "number": 48
+  },
+  {
+    "id": "hepatites_virales_q49",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quelles actions relèvent de l’accompagnement infirmier d’un traitement antiviral ?",
+    "choices": [
+      "Promettre une guérison sans contrôle.",
+      "Modifier seul le traitement sur la seule base d’un anticorps.",
+      "Vérifier ce que la personne a compris.",
+      "Recueillir et transmettre ses difficultés.",
+      "Soutenir la prise du traitement et le suivi convenus."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Faux. Le résultat doit être évalué dans le suivi. B — Faux. Une telle décision ne relève pas d’une lecture isolée du bilan. C — Vrai. La compréhension favorise une participation éclairée. D — Vrai. L’équipe peut adapter l’accompagnement. E — Vrai. L’adhésion fait partie des objectifs de l’accompagnement.",
+    "flashcards": [
+      {
+        "front": "Que signifie soutenir l’adhésion au traitement ?",
+        "answers": [
+          "Aider la personne à comprendre et à suivre le traitement convenu, recueillir les difficultés et favoriser le suivi."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Aider la personne à comprendre et à suivre le traitement convenu, recueillir les difficultés et favoriser le suivi."
+      }
+    ],
+    "number": 49
+  },
+  {
+    "id": "hepatites_virales_q50",
+    "courseId": "hepatites_virales",
+    "theme": "Vaccination, prévention et rôle infirmier",
+    "difficulty": "medium",
+    "question": "Quelles attitudes évitent les conclusions abusives face à un résultat biologique ?",
+    "choices": [
+      "Distinguer antigène, anticorps et génome viral.",
+      "Relier le résultat à l’histoire et aux autres examens.",
+      "Faire préciser les conclusions par l’équipe concernée.",
+      "Conclure que tout anticorps positif prouve un virus actif.",
+      "Assimiler l’absence de symptôme à l’absence d’infection."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A — Vrai. Ces marqueurs répondent à des questions différentes. B — Vrai. Un résultat isolé ne résume pas toute la situation. C — Vrai. Le rôle de la fiche de révision ne remplace pas l’interprétation individuelle. D — Faux. La persistance d’anticorps peut avoir une autre signification. E — Faux. Des formes silencieuses existent.",
+    "flashcards": [
+      {
+        "front": "Quelle règle simple guide la lecture des résultats d’hépatite ?",
+        "answers": [
+          "Identifier ce que mesure le test et l’interpréter avec le contexte ; ne pas confondre anticorps, antigène et virus circulant."
+        ],
+        "theme": "Vaccination, prévention et rôle infirmier",
+        "explanation": "Identifier ce que mesure le test et l’interpréter avec le contexte ; ne pas confondre anticorps, antigène et virus circulant."
+      }
+    ],
+    "number": 50
   }
 ]

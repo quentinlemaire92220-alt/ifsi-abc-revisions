@@ -6151,6 +6151,308 @@
         "approvedAt": "2026-11-02T10:30:46Z",
         "bundleSha256": "3733ded6934fc1b3cba8e20ecff0a505ac26ff59428a1fee84debf68ebf85c38"
       }
+    },
+    {
+      "courseId": "hepatites_virales",
+      "part": "1/1",
+      "deliveryMode": "first_release",
+      "packFormat": "written_v1",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "complete",
+      "driveFolderId": "1I8Rt1GBDmNRlzHdGPhDt0vDXdGNJ-AAw",
+      "folders": {
+        "01": "1zZIIu-nvZI0-mwQweFUav2iBRCVSLyq0",
+        "02": "1co6IGN2qgokF7ZezPFT-4UgNnBakkdGA",
+        "03": "1vKoR63cn-M1v8gai121HtE6FQtTlW7CD",
+        "04": "17SCKMA76RTXy2oeBndqAml4vfNluBjyw",
+        "05": "14CWN-tQElI-vHTayckXUymSqL6-WSOYw",
+        "06": "1D4_0ne9SDSt2LiigdPFhVLvhz2gty_-P",
+        "07": "1ikmqER8uwAE0151YFEiPcqLRtOyabkqz"
+      },
+      "sheetResourceId": "hepatites_virales_fiche_p01",
+      "sheetResourceIds": [
+        "hepatites_virales_fiche_p01"
+      ],
+      "supportDriveId": "1m4vefDhogYgSdimhAnUH1Rx6h70rDEif",
+      "qcmDriveId": "1Z6xRuwLyIda_RYnwnX5sF3EH9eD6XAgK",
+      "flashcardDriveId": "1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73",
+      "qcmBank": "data/course-banks/hepatites_virales_p01.json",
+      "qcmBanks": [
+        "data/course-banks/hepatites_virales_p01.json"
+      ],
+      "qcmCount": 50,
+      "flashcardCount": 50,
+      "vocabularyCount": 45,
+      "infographicResourceIds": [],
+      "schematics": "none",
+      "generatedImageCount": 0,
+      "embeddedFigureCount": 0,
+      "schematicsJustification": "Fiche écrite selon le modèle actuel, tableaux et raisonnements intégrés, sans image générée.",
+      "requestedVocals": true,
+      "vocals": [
+        "hepatites_virales_01",
+        "hepatites_virales_02"
+      ],
+      "blockers": [],
+      "provisional": false,
+      "publicationHost": "drive",
+      "publicArtifacts": {
+        "sheet": {
+          "role": "sheet",
+          "path": "assets/hepatites-virales-20261102/Fiche_Hepatites_virales_18p.pdf",
+          "sha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+          "pageCount": 18,
+          "artifactId": "hepatites_virales_sheet_20261102"
+        },
+        "qcm": {
+          "role": "qcm",
+          "path": "assets/hepatites-virales-20261102/QCM_Hepatites_virales_50_Corriges.pdf",
+          "sha256": "48942fede1fb13569d0a03db242db3cca6444a6bcd8a4e3bb2baf42a6f62ebb4",
+          "pageCount": 21,
+          "artifactId": "hepatites_virales_qcm_20261102"
+        },
+        "flashcards": {
+          "role": "flashcards",
+          "path": "assets/hepatites-virales-20261102/Flashcards_Hepatites_virales_50_Recto_Verso.pdf",
+          "sha256": "8e5fa4e26beaac7dbadafeaeb80e9ea4edba75ca472138d86a4cf84e6ca27634",
+          "pageCount": 18,
+          "artifactId": "hepatites_virales_flashcards_20261102"
+        }
+      },
+      "artifactSha256s": {
+        "hepatites_virales_sheet_20261102": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "1pMQAy8WlSatUsUtwbxNrb7F3O9_QthEI": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "hepatites_virales_qcm_20261102": "48942fede1fb13569d0a03db242db3cca6444a6bcd8a4e3bb2baf42a6f62ebb4",
+        "1Z6xRuwLyIda_RYnwnX5sF3EH9eD6XAgK": "48942fede1fb13569d0a03db242db3cca6444a6bcd8a4e3bb2baf42a6f62ebb4",
+        "hepatites_virales_flashcards_20261102": "8e5fa4e26beaac7dbadafeaeb80e9ea4edba75ca472138d86a4cf84e6ca27634",
+        "1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73": "8e5fa4e26beaac7dbadafeaeb80e9ea4edba75ca472138d86a4cf84e6ca27634",
+        "1m4vefDhogYgSdimhAnUH1Rx6h70rDEif": "94039fe57019207d2d61412f5d165f7b7c2b5113c457009d17b62083a6f8b471",
+        "1j1zhvFkvWC3ItQjirLDA6Dwp_6VCrhmd": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
+        "hepatites_virales_01": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
+        "1vu4AtBnZ_f8j74ulj5yyPbexZHXhTjjL": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5",
+        "hepatites_virales_02": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5"
+      },
+      "publicAudioArtifacts": [
+        {
+          "artifactId": "hepatites_virales_01",
+          "path": "assets/audio/hepatites-virales/hepatites_virales_01.mp3",
+          "sha256": "23122ae3ca49642749eb4775e5b7a34f934b91c952736ae1e92384655d8d05c7",
+          "durationSeconds": 563.881315
+        },
+        {
+          "artifactId": "hepatites_virales_02",
+          "path": "assets/audio/hepatites-virales/hepatites_virales_02.mp3",
+          "sha256": "90d908263e589b9dd39cb5afbab7ff467539f3731bce038608a37dc47eefdba5",
+          "durationSeconds": 593.69034
+        }
+      ],
+      "sourceBasis": {
+        "kind": "official_support_and_transcriptions",
+        "nativeSupportAvailable": true,
+        "reconciled": true
+      },
+      "sourceAudit": {
+        "officialChecked": true,
+        "officialSupportPreservedPrivately": true,
+        "oralStatus": "complete",
+        "oralReviewBasis": "full_transcript_documentary_review",
+        "oralCoverageExhaustive": true,
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 0
+      },
+      "writtenCoverage": {
+        "expectedEssential": 66,
+        "coveredEssential": 66,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "reviewScope": "Documentary review of the complete supplied support and transcript; no independent clinical signoff or external update"
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "pageSize": "A4",
+        "pageCount": 18,
+        "expectedCount": 0,
+        "checkedCount": 0,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "pageSize": "A4",
+        "pageCount": 18,
+        "expectedCount": 0,
+        "checkedCount": 0,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "pageCount": 18,
+        "expectedCount": 0,
+        "checkedCount": 0
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 45,
+        "checked": true,
+        "textSelectable": true
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "reviewedAt": "2026-11-02T14:10:10.353Z",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "pagesChecked": 18,
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "hepatites_virales_fiche_p01": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a"
+        },
+        "privateEvidenceSha256": "dd1331a4327e82039ccebfb5374d2abbcd85fedfc83af3fe2c0fac00114be914",
+        "reviewBasis": "Owner accepted presented exact deliverables for publication following complete agent page inspection; no assertion of personal owner page inspection or independent clinical signoff."
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+            "pageCount": 18,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-11-02T14:10:10.353Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "dd1331a4327e82039ccebfb5374d2abbcd85fedfc83af3fe2c0fac00114be914"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "48942fede1fb13569d0a03db242db3cca6444a6bcd8a4e3bb2baf42a6f62ebb4",
+            "pageCount": 21,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "status": "owner_accepted",
+            "method": "all_pages_compared_at_100_and_200_percent",
+            "decision": "explicit_graphic_acceptance",
+            "reviewerRole": "owner",
+            "reviewedAt": "2026-11-02T14:10:10.353Z",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "READABLE_AT_100_AND_200_PERCENT": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "dd1331a4327e82039ccebfb5374d2abbcd85fedfc83af3fe2c0fac00114be914"
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "285fb2f45ecd673a6232cc5c330eddc6b4c76ccf14f2c1e13f8fd3a2fafaab2a",
+        "privateEvidenceSha256": "dd1331a4327e82039ccebfb5374d2abbcd85fedfc83af3fe2c0fac00114be914",
+        "reviewedAt": "2026-11-02T14:10:10Z",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "flashcardPdfLayout": "duplex_six_cards_v1",
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-11-02T14:10:10.353Z",
+        "bundleSha256": "1e073891ffdf8da63a17e784edec4f133a5140fb87f71296bb25b3cefdad6a97"
+      },
+      "qcmPdfLayout": "theme_inline_cardinality_v1"
     }
   ],
   "supplementalResourceApprovals": [

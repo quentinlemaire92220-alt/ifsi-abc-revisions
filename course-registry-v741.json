@@ -1,5 +1,5 @@
 {
-  "version": "8.30.161",
+  "version": "8.30.162",
   "courses": [
     {
       "id": "biomolecules",
@@ -1539,6 +1539,28 @@
       "audioStatus": "available",
       "audioCount": 2,
       "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    {
+      "id": "hepatites_virales",
+      "label": "Hépatites virales",
+      "aliases": [
+        "Hépatites virales",
+        "Hepatites virales"
+      ],
+      "domain": "B",
+      "ue": "B1.3",
+      "authoredFlashcards": true,
+      "flashcardTarget": 50,
+      "officialSupport": true,
+      "nativeSupportAvailable": true,
+      "provisional": false,
+      "sourceStatus": "active",
+      "officialSupportUrl": "https://drive.google.com/file/d/1m4vefDhogYgSdimhAnUH1Rx6h70rDEif/view",
+      "qcmPdfUrl": "https://drive.google.com/file/d/1Z6xRuwLyIda_RYnwnX5sF3EH9eD6XAgK/view",
+      "flashcardsPdfUrl": "https://drive.google.com/file/d/1qhBukiXlbHsgeRtL8__L3_iZuPTXOV73/view",
+      "audioStatus": "available",
+      "audioCount": 2,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/14CWN-tQElI-vHTayckXUymSqL6-WSOYw"
     }
   ],
   "auditBaseline": {

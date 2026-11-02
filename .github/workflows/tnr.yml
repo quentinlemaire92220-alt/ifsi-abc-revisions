@@ -631,6 +631,9 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           python tests/pdf-bank-coherence-test.py
+          python tests/duplex-card-coherence-test.py
+          python tests/qcm-inline-cardinality-test.py
+          node tests/hepatites-virales-release.mjs
           python tools/pdf-bank-coherence.py
 
   preflight:
