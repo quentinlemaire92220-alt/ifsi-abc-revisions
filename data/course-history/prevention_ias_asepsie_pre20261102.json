@@ -1,0 +1,272 @@
+{
+  "course": {
+    "id": "prevention_ias_asepsie",
+    "label": "Prévention des IAS et asepsie",
+    "aliases": [
+      "Prévention des IAS et asepsie",
+      "Prevention des IAS et asepsie",
+      "IAS Asepsie Hygiene IAS",
+      "Asepsie Hygiene IAS",
+      "Hygiene TD Precautions Standard Complementaires"
+    ],
+    "domain": "B",
+    "ue": "B1",
+    "officialSupportUrl": "https://drive.google.com/file/d/1aRQrl4AAwqFLUcAGpK3e67hCuyShruyJ/view",
+    "audioStatus": "available",
+    "audioCount": 3,
+    "audioFolderUrl": "https://drive.google.com/drive/folders/1t0Se9qk1D1pBtZlA6jtW7eDvBiGNJHm4"
+  },
+  "sheets": [
+    {
+      "title": "UE_S1_B1_IAS_Fiche_Revision_Asepsie_Hygiene_IAS.pdf",
+      "label": "IAS Asepsie Hygiene IAS",
+      "ue": "S1 B1",
+      "url": "https://drive.google.com/file/d/1BAqNP3G52F7xIYAb4c9ci7DZkwsK005A/view?usp=drivesdk",
+      "provisional": false,
+      "courseId": "prevention_ias_asepsie",
+      "displayTitle": "Prévention des IAS et asepsie",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_Hygiene_TD_Precautions_Standard_Complementaires_Fiche_Revision.pdf",
+      "label": "Hygiene TD Precautions Standard Complementaires",
+      "ue": "S1 B1",
+      "url": "https://drive.google.com/file/d/1mlwgSvyVXpjGpHD3R08nfofWnUJ3MCCy/view?usp=drivesdk",
+      "provisional": false,
+      "courseId": "prevention_ias_asepsie",
+      "displayTitle": "Prévention des IAS et asepsie",
+      "sourceStatus": "active"
+    }
+  ],
+  "vocals": [
+    {
+      "id": "ias_01",
+      "courseId": "prevention_ias_asepsie",
+      "course": "Prévention des IAS et asepsie",
+      "number": 1,
+      "title": "Asepsie, hygiène et prévention des IAS",
+      "driveId": "1SstYQRhLo8LAqzas6HNTDtTvmksI9Zpy",
+      "mime": "audio/aac"
+    },
+    {
+      "id": "prevention_ias_asepsie_p01_vocal_02",
+      "courseId": "prevention_ias_asepsie",
+      "course": "Prévention des IAS et asepsie",
+      "number": 2,
+      "title": "Hygiène des mains, EPI et accidents d’exposition au sang",
+      "driveId": "106qJX0odjG9615tKMWH3sbXQtp31Gt_0",
+      "mime": "audio/mpeg",
+      "durationSeconds": 437.52,
+      "partId": "p01",
+      "partNumber": 2,
+      "release": "8.30.137",
+      "syntheticSpeech": true
+    },
+    {
+      "id": "prevention_ias_asepsie_p01_vocal_03",
+      "courseId": "prevention_ias_asepsie",
+      "course": "Prévention des IAS et asepsie",
+      "number": 3,
+      "title": "Excrétas, environnement et précautions complémentaires",
+      "driveId": "1rO20pudK42zObVarH2F1K80XnNl31NiA",
+      "mime": "audio/mpeg",
+      "durationSeconds": 448.2,
+      "partId": "p01",
+      "partNumber": 3,
+      "release": "8.30.137",
+      "syntheticSpeech": true
+    }
+  ],
+  "infographics": [
+    {
+      "title": "UE_S1_B1_IAS_Infographie_08_EAU_AIR_ET_VACCINATION.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 08 — Eau Air Et Vaccination",
+      "url": "https://drive.google.com/file/d/1ZdtQIdIDt0zvogCbztSoVfsSPCtLjRsM/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_07_EXCRETA_DECHETS_ET_BIONETTOYAGE.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 07 — Excreta Dechets Et Bionettoyage",
+      "url": "https://drive.google.com/file/d/1pUI1p9p-QgdncYjcgf_aTeRF2FbMM-x1/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_06_DM_DESINFECTION_ET_STERILISATION.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 06 — DM Desinfection Et Sterilisation",
+      "url": "https://drive.google.com/file/d/1ur3Nuw2QwxihpzYLVdHASoJCqXNPgrPq/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_05_PRECAUTIONS_COMPLEMENTAIRES.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 05 — Precautions Complementaires",
+      "url": "https://drive.google.com/file/d/1GRl5fuZTIrrO7vEK9RSS1eFUEEoNuwiT/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_04_ANTISEPSIE.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 04 — Antisepsie",
+      "url": "https://drive.google.com/file/d/1bc81cgQoEAbv9n54YYb_JtRexDk1U-kN/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_03_HYGIENE_DES_MAINS_EPI_ET_AES.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 03 — Hygiene Des Mains EPI Et AES",
+      "url": "https://drive.google.com/file/d/1PojwPbdcWryS3Xa0cFW5v9QiZExUEJQw/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_02_IAS_ET_PRECAUTIONS_STANDARD.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 02 — IAS Et Precautions Standard",
+      "url": "https://drive.google.com/file/d/1ZjCTx5KUnEoD0f0MPlXArKeIM1VnJGzD/view?usp=drivesdk",
+      "sourceStatus": "active"
+    },
+    {
+      "title": "UE_S1_B1_IAS_Infographie_01_MICRO_ORGANISMES_FLORE_ET_TRANSMISSION.pdf",
+      "courseId": "prevention_ias_asepsie",
+      "ue": "S1 B1",
+      "displayTitle": "Infographie 01 — Micro Organismes Flore Et Transmission",
+      "url": "https://drive.google.com/file/d/1pKHEzM9eh0eRtuBpj76QPIz-X-kaoUie/view?usp=drivesdk",
+      "sourceStatus": "active"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "infection",
+      "term": "Infection",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Pénétration et multiplication d'un agent infectieux dans l'organisme, pouvant provoquer des manifestations cliniques.",
+      "distinction": "Inflammation : réponse de l'organisme, y compris sans infection.",
+      "etymologie": "in- (pénétration) + infect- (contaminer) + -ion (processus).",
+      "courseIds": [
+        "physiopathologie_infections",
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "asepsie",
+      "term": "Asepsie",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Ensemble des mesures visant à empêcher l'introduction de micro-organismes dans un milieu ou lors d'un soin.",
+      "distinction": "Antisepsie : réduction ou destruction des micro-organismes sur les tissus vivants.",
+      "etymologie": "a- : absence ; -sepsie : infection",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antisepsie",
+      "term": "Antisepsie",
+      "theme": "Infection, inflammation et hygiène",
+      "definition": "Utilisation de méthodes ou produits pour réduire ou détruire les micro-organismes sur les tissus vivants.",
+      "distinction": "Désinfection : traitement d'un milieu ou d'une surface inerte.",
+      "etymologie": "anti- : contre ; -sepsie : infection",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "precautions-standard",
+      "term": "Précautions standard",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Mesures de prévention des infections appliquées à toute personne soignée, quel que soit son statut infectieux.",
+      "distinction": "Les précautions complémentaires s'ajoutent selon le mode de transmission suspecté ou confirmé.",
+      "etymologie": "précautions (mesures préventives) + standard (appliquées à tous).",
+      "courseIds": [
+        "prevention_ias_asepsie",
+        "histoire_profession_infirmiere"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "precautions-complementaires",
+      "term": "Précautions complémentaires",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Mesures ajoutées aux précautions standard pour limiter certains risques de transmission par contact, gouttelettes ou voie aérienne.",
+      "distinction": "Les précautions standard s'appliquent systématiquement à tous les soins.",
+      "etymologie": "précautions (mesures préventives) + complémentaires (ajoutées selon le risque).",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "hygiene-des-mains",
+      "term": "Hygiène des mains",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Ensemble des gestes de lavage ou de friction hydroalcoolique visant à réduire la transmission manuportée des micro-organismes.",
+      "distinction": "Le port de gants ne remplace pas l'hygiène des mains.",
+      "etymologie": "hygiène (prévention sanitaire) + mains (voie de transmission) ; expression descriptive.",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "antiseptique",
+      "term": "Antiseptique",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Produit destiné à réduire ou détruire des micro-organismes sur la peau ou les muqueuses selon ses indications.",
+      "distinction": "Un désinfectant est destiné principalement aux surfaces ou dispositifs inertes.",
+      "etymologie": "anti- (contre) + sept- (infection, putréfaction) + -ique (relatif à).",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "sterilisation",
+      "term": "Stérilisation",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Procédé validé visant à rendre un produit exempt de micro-organismes viables.",
+      "distinction": "La désinfection réduit les micro-organismes, sans garantir la stérilité.",
+      "etymologie": "stéril- (rendre exempt d'organismes viables) + -isation (procédé).",
+      "courseIds": [
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "infection-associee-aux-soins",
+      "term": "Infection associée aux soins",
+      "theme": "Soins infirmiers et prévention des infections",
+      "definition": "Infection survenant au cours ou au décours d'une prise en charge et qui n'était ni présente ni en incubation à son début.",
+      "distinction": "Une infection communautaire est contractée en dehors de cette prise en charge.",
+      "etymologie": "infection (processus infectieux) + associée aux soins (lien temporel avec la prise en charge).",
+      "courseIds": [
+        "prevention_ias_asepsie",
+        "physiopathologie_infections"
+      ],
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "enrich_asepsie_geste",
+      "term": "Asepsie lors d'un soin",
+      "theme": "Plaies et cicatrisation",
+      "definition": "Ensemble de pratiques destinées à éviter l'introduction de micro-organismes dans une zone ou un dispositif pendant le soin.",
+      "distinction": "Une technique aseptique ne remplace pas l'hygiène des mains.",
+      "etymologie": "a- (absence) + sept- (infection, putréfaction) + -ie (état) : prévention de la contamination.",
+      "courseIds": [
+        "plaies_pansements",
+        "prevention_ias_asepsie"
+      ],
+      "sourceType": "reference_pedagogique"
+    }
+  ]
+}

@@ -34,8 +34,8 @@ export async function runtimeDeck({allCards=false}={}){
   vm.runInContext(read('qcm-subthemes-v1.js'),context);
   const themeSource=read('v79-themes.js');
   vm.runInContext(themeSource.slice(0,themeSource.indexOf('function difficultyOf'))+'window.IFSI_V79.themeOf=themeOf;})();',context);
-  const engine=read('v8338-flashcards.js').replace('window.IFSI_V8338_FLASHCARDS={','window.flashcardTest={correctAnswers,atomicCards,contextualizeFront};window.IFSI_V8338_FLASHCARDS={');
+  const engine=read('v8338-flashcards.js').replace('window.IFSI_V8338_FLASHCARDS={','window.flashcardTest={correctAnswers,atomicCards,contextualizeFront,revisionFront};window.IFSI_V8338_FLASHCARDS={');
   vm.runInContext(allCards?engine.replace('selectCards(candidates,40)','selectCards(candidates,Number.MAX_SAFE_INTEGER)'):engine,context);
   window.IFSI_V8338_FLASHCARDS.rebuild();
-  return {deck:window.IFSI_V8338_FLASHCARDS.getDeck(),questions,registry,window,cardsForQuestion:q=>window.flashcardTest.atomicCards(q),answersForQuestion:q=>window.flashcardTest.correctAnswers(q)};
+  return {deck:window.IFSI_V8338_FLASHCARDS.getDeck(),questions,registry,window,cardsForQuestion:q=>window.flashcardTest.atomicCards(q),answersForQuestion:q=>window.flashcardTest.correctAnswers(q),frontForQuestion:q=>window.flashcardTest.revisionFront(q.id,window.flashcardTest.contextualizeFront(window.flashcardTest.atomicCards(q)[0].front,q))};
 }

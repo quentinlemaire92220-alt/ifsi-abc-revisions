@@ -1,0 +1,4375 @@
+[
+  {
+    "id": "prevention_ias_asepsie_global_q001",
+    "courseId": "prevention_ias_asepsie",
+    "number": 1,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques distinguent bactéries et virus ?",
+    "choices": [
+      "Une bactérie est un organisme cellulaire.",
+      "Tout micro-organisme est une bactérie.",
+      "Un virus dépend de cellules hôtes pour se multiplier.",
+      "La forme d’une bactérie suffit à identifier son espèce.",
+      "Tout virus possède une enveloppe lipidique."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La structure cellulaire caractérise la bactérie.",
+      "Virus et champignons constituent d’autres familles.",
+      "Il utilise les fonctions de la cellule infectée.",
+      "Cocci et bacilles décrivent seulement des formes.",
+      "Il existe aussi des virus nus, sans enveloppe."
+    ],
+    "explanation": "A - Vrai. La structure cellulaire caractérise la bactérie. B - Faux. Virus et champignons constituent d’autres familles. C - Vrai. Il utilise les fonctions de la cellule infectée. D - Faux. Cocci et bacilles décrivent seulement des formes. E - Faux. Il existe aussi des virus nus, sans enveloppe.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c001",
+        "theme": "Agents, IAS et transmission",
+        "front": "Quelle différence essentielle distingue virus et bactéries ?",
+        "answers": [
+          "Le virus dépend de cellules hôtes. Une bactérie possède une organisation cellulaire propre."
+        ],
+        "explanation": "Une bactérie possède une organisation cellulaire propre."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q002",
+    "courseId": "prevention_ias_asepsie",
+    "number": 2,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "easy",
+    "question": "Quelles associations entre agents et familles sont exactes ?",
+    "choices": [
+      "Escherichia coli est une bactérie.",
+      "Aspergillus est une moisissure.",
+      "Candida est une levure.",
+      "Le virus de la grippe est un champignon.",
+      "Un prion est un virus enveloppé."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle peut notamment appartenir au microbiote intestinal.",
+      "Ses spores peuvent être dispersées dans l’air.",
+      "Il appartient à la famille des champignons.",
+      "La grippe est une infection virale.",
+      "C’est un agent transmissible non conventionnel protéique."
+    ],
+    "explanation": "A - Vrai. Elle peut notamment appartenir au microbiote intestinal. B - Vrai. Ses spores peuvent être dispersées dans l’air. C - Vrai. Il appartient à la famille des champignons. D - Faux. La grippe est une infection virale. E - Faux. C’est un agent transmissible non conventionnel protéique.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c002",
+        "theme": "Agents, IAS et transmission",
+        "front": "À quelle famille appartiennent Candida et Aspergillus ?",
+        "answers": [
+          "Ce sont des champignons. Candida est une levure et Aspergillus une moisissure."
+        ],
+        "explanation": "Candida est une levure et Aspergillus une moisissure."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q003",
+    "courseId": "prevention_ias_asepsie",
+    "number": 3,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Quel raisonnement décrit un agent opportuniste ?",
+    "choices": [
+      "Son pouvoir pathogène dépend notamment du terrain.",
+      "Il est toujours inoffensif chez tout patient.",
+      "Une rupture de barrière peut favoriser son action.",
+      "Il appartient obligatoirement aux virus.",
+      "Il infecte nécessairement toute personne exposée."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une diminution des défenses peut favoriser l’infection.",
+      "Le caractère opportuniste exclut cette garantie.",
+      "L’accès à un site protégé change la situation.",
+      "Des bactéries ou champignons peuvent être opportunistes.",
+      "Exposition et infection ne sont pas équivalentes."
+    ],
+    "explanation": "A - Vrai. Une diminution des défenses peut favoriser l’infection. B - Faux. Le caractère opportuniste exclut cette garantie. C - Vrai. L’accès à un site protégé change la situation. D - Faux. Des bactéries ou champignons peuvent être opportunistes. E - Faux. Exposition et infection ne sont pas équivalentes.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c003",
+        "theme": "Agents, IAS et transmission",
+        "front": "Que signifie le caractère opportuniste d’un agent ?",
+        "answers": [
+          "Il profite de circonstances favorables. Immunodépression ou rupture de barrière peuvent permettre une infection."
+        ],
+        "explanation": "Immunodépression ou rupture de barrière peuvent permettre une infection."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q004",
+    "courseId": "prevention_ias_asepsie",
+    "number": 4,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "easy",
+    "question": "Quelles affirmations décrivent un microbiote ?",
+    "choices": [
+      "Le microbiote intestinal et le sang sont des milieux équivalents.",
+      "Un commensal ne peut jamais participer à une infection.",
+      "Il regroupe les micro-organismes d’un milieu donné.",
+      "Il doit être supprimé entièrement avant chaque soin.",
+      "Il ne contient que des agents responsables d’infections."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’accès au sang constitue un changement majeur de site.",
+      "Un changement de site peut le rendre pathogène.",
+      "Le milieu peut être cutané, intestinal ou oropharyngé.",
+      "L’asepsie ne consiste pas à éradiquer tous les microbiotes.",
+      "La présence habituelle ne signifie pas maladie."
+    ],
+    "explanation": "A - Faux. L’accès au sang constitue un changement majeur de site. B - Faux. Un changement de site peut le rendre pathogène. C - Vrai. Le milieu peut être cutané, intestinal ou oropharyngé. D - Faux. L’asepsie ne consiste pas à éradiquer tous les microbiotes. E - Faux. La présence habituelle ne signifie pas maladie.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c004",
+        "theme": "Agents, IAS et transmission",
+        "front": "Comment définir un microbiote ?",
+        "answers": [
+          "C’est l’ensemble des micro-organismes d’un milieu donné. Leur présence n’équivaut pas à une infection."
+        ],
+        "explanation": "Leur présence n’équivaut pas à une infection."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q005",
+    "courseId": "prevention_ias_asepsie",
+    "number": 5,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "easy",
+    "question": "Quels éléments participent à la définition d’une IAS ?",
+    "choices": [
+      "Un germe nécessairement résistant aux antibiotiques.",
+      "Un lien avec une prise en charge.",
+      "Une acquisition exclusivement à l’hôpital.",
+      "L’absence d’infection présente ou incubée au début.",
+      "Une apparition obligatoirement avant la sortie."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La résistance ne définit pas une IAS.",
+      "L’association aux soins est un élément essentiel.",
+      "D’autres lieux de soins sont concernés.",
+      "Une infection déjà incubée n’est pas attribuée automatiquement aux soins.",
+      "Elle peut être révélée après la prise en charge."
+    ],
+    "explanation": "A - Faux. La résistance ne définit pas une IAS. B - Vrai. L’association aux soins est un élément essentiel. C - Faux. D’autres lieux de soins sont concernés. D - Vrai. Une infection déjà incubée n’est pas attribuée automatiquement aux soins. E - Faux. Elle peut être révélée après la prise en charge.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c005",
+        "theme": "Agents, IAS et transmission",
+        "front": "Quels sont les deux éléments centraux d’une IAS ?",
+        "answers": [
+          "Le lien avec les soins et l’absence au début, y compris d’incubation. Le délai seul ne suffit pas."
+        ],
+        "explanation": "Le délai seul ne suffit pas."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q006",
+    "courseId": "prevention_ias_asepsie",
+    "number": 6,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Une infection apparaît après 48 heures d’hospitalisation. Que peut-on conclure ?",
+    "choices": [
+      "L’incubation et le contexte doivent être examinés.",
+      "Une infection révélée après la sortie exclut une IAS.",
+      "L’infection ne peut plus être communautaire.",
+      "Une IAS est prouvée par ce seul délai.",
+      "Un lien plausible avec les soins reste à rechercher."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le repère temporel ne remplace pas l’analyse clinique.",
+      "Une révélation tardive peut rester liée aux soins.",
+      "Son origine ne se décide pas uniquement à 48 heures.",
+      "Une infection peut avoir incubé avant l’admission.",
+      "La chronologie seule ne prouve pas l’origine."
+    ],
+    "explanation": "A - Vrai. Le repère temporel ne remplace pas l’analyse clinique. B - Faux. Une révélation tardive peut rester liée aux soins. C - Faux. Son origine ne se décide pas uniquement à 48 heures. D - Faux. Une infection peut avoir incubé avant l’admission. E - Vrai. La chronologie seule ne prouve pas l’origine.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c006",
+        "theme": "Agents, IAS et transmission",
+        "front": "Pourquoi le repère de 48 heures ne prouve-t-il pas une IAS ?",
+        "answers": [
+          "L’incubation et le lien aux soins restent déterminants. La chronologie est un repère, pas une preuve isolée."
+        ],
+        "explanation": "La chronologie est un repère, pas une preuve isolée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q007",
+    "courseId": "prevention_ias_asepsie",
+    "number": 7,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "easy",
+    "question": "Quelle proposition définit une infection nosocomiale ?",
+    "choices": [
+      "Toute infection apparue au domicile.",
+      "Toute colonisation par une bactérie résistante.",
+      "Une IAS acquise dans un établissement de santé.",
+      "Toute infection d’un professionnel, même sans lien aux soins.",
+      "Une infection obligatoirement mortelle."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le lieu de révélation ne définit pas son acquisition.",
+      "Colonisation, résistance et infection sont distinctes.",
+      "Nosocomiale précise le cadre d’acquisition.",
+      "Le contexte et le lien doivent être établis.",
+      "La gravité ne fait pas partie de cette définition."
+    ],
+    "explanation": "A - Faux. Le lieu de révélation ne définit pas son acquisition. B - Faux. Colonisation, résistance et infection sont distinctes. C - Vrai. Nosocomiale précise le cadre d’acquisition. D - Faux. Le contexte et le lien doivent être établis. E - Faux. La gravité ne fait pas partie de cette définition.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c007",
+        "theme": "Agents, IAS et transmission",
+        "front": "Quel lien existe entre infection nosocomiale et IAS ?",
+        "answers": [
+          "Une infection nosocomiale est une IAS acquise en établissement de santé. Les IAS ont un périmètre plus large."
+        ],
+        "explanation": "Les IAS ont un périmètre plus large."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q008",
+    "courseId": "prevention_ias_asepsie",
+    "number": 8,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Comment distinguer incidence et prévalence ?",
+    "choices": [
+      "La prévalence décrit une présence à un moment donné.",
+      "Une proportion sans dénominateur permet toute comparaison.",
+      "L’incidence étudie les nouveaux événements sur une période.",
+      "Un rapport de prévalence est la probabilité individuelle d’infection.",
+      "Ces deux mesures sont directement interchangeables."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il faut préciser le dénominateur utilisé.",
+      "Le dénominateur conditionne l’interprétation.",
+      "Elle nécessite une population ou un temps d’exposition défini.",
+      "Une association populationnelle n’est pas une prédiction personnelle.",
+      "Elles ne portent pas sur le même objet temporel."
+    ],
+    "explanation": "A - Vrai. Il faut préciser le dénominateur utilisé. B - Faux. Le dénominateur conditionne l’interprétation. C - Vrai. Elle nécessite une population ou un temps d’exposition défini. D - Faux. Une association populationnelle n’est pas une prédiction personnelle. E - Faux. Elles ne portent pas sur le même objet temporel.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c008",
+        "theme": "Agents, IAS et transmission",
+        "front": "Que comparent incidence et prévalence ?",
+        "answers": [
+          "Nouveaux événements sur une période et événements présents à un moment donné. Dates et dénominateurs sont indispensables."
+        ],
+        "explanation": "Dates et dénominateurs sont indispensables."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q009",
+    "courseId": "prevention_ias_asepsie",
+    "number": 9,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Quel exemple illustre une origine endogène ?",
+    "choices": [
+      "Un dispositif partagé transmet un agent d’un autre patient.",
+      "Une origine endogène exclut toute mesure préventive.",
+      "Le patient inhale un aérosol d’eau contaminée.",
+      "La flore cutanée du patient contamine son accès vasculaire.",
+      "Des poussières de chantier exposent le patient à des spores."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette source est extérieure au patient exposé.",
+      "Asepsie et maîtrise des dispositifs peuvent interrompre cette chaîne.",
+      "La source décrite est le réseau d’eau.",
+      "L’agent provient du propre microbiote du patient.",
+      "Le réservoir est environnemental, donc exogène."
+    ],
+    "explanation": "A - Faux. Cette source est extérieure au patient exposé. B - Faux. Asepsie et maîtrise des dispositifs peuvent interrompre cette chaîne. C - Faux. La source décrite est le réseau d’eau. D - Vrai. L’agent provient du propre microbiote du patient. E - Faux. Le réservoir est environnemental, donc exogène.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c009",
+        "theme": "Agents, IAS et transmission",
+        "front": "Qu’est-ce qu’une infection d’origine endogène ?",
+        "answers": [
+          "L’agent vient du patient lui-même. Son microbiote peut atteindre un site normalement protégé."
+        ],
+        "explanation": "Son microbiote peut atteindre un site normalement protégé."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q010",
+    "courseId": "prevention_ias_asepsie",
+    "number": 10,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Quels maillons relient un réservoir à une infection possible ?",
+    "choices": [
+      "La porte d’entrée est toujours digestive.",
+      "Un hôte dont les défenses et barrières comptent.",
+      "La seule présence d’un micro-organisme garantit une infection.",
+      "Le réservoir est nécessairement un patient symptomatique.",
+      "Une voie de transmission et une porte d’entrée."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des voies respiratoires, cutanées ou invasives existent.",
+      "La réceptivité influence le risque.",
+      "Présence, exposition et infection sont distinctes.",
+      "Environnement et portage asymptomatique peuvent être impliqués.",
+      "L’agent doit pouvoir atteindre un site accessible."
+    ],
+    "explanation": "A - Faux. Des voies respiratoires, cutanées ou invasives existent. B - Vrai. La réceptivité influence le risque. C - Faux. Présence, exposition et infection sont distinctes. D - Faux. Environnement et portage asymptomatique peuvent être impliqués. E - Vrai. L’agent doit pouvoir atteindre un site accessible.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c010",
+        "theme": "Agents, IAS et transmission",
+        "front": "Quels éléments faut-il relier dans une chaîne de transmission ?",
+        "answers": [
+          "Réservoir, sortie, transmission, entrée et hôte réceptif. La prévention peut agir sur plusieurs maillons."
+        ],
+        "explanation": "La prévention peut agir sur plusieurs maillons."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q011",
+    "courseId": "prevention_ias_asepsie",
+    "number": 11,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Un brassard non entretenu est utilisé chez deux patients. Quel risque est décrit ?",
+    "choices": [
+      "Un risque persiste sans contact entre les patients.",
+      "La FHA du soignant désinfecte aussi le brassard.",
+      "Seules les transmissions respiratoires sont possibles à l’hôpital.",
+      "Un lavage du brassard est inutile si le soignant porte des gants.",
+      "Une transmission indirecte par un matériel partagé."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’intermédiaire relie deux personnes séparées.",
+      "Le dispositif nécessite son propre entretien compatible.",
+      "Les contacts indirects font aussi partie des voies.",
+      "Les gants ne traitent pas le matériel.",
+      "Le matériel peut servir d’intermédiaire contaminé."
+    ],
+    "explanation": "A - Vrai. L’intermédiaire relie deux personnes séparées. B - Faux. Le dispositif nécessite son propre entretien compatible. C - Faux. Les contacts indirects font aussi partie des voies. D - Faux. Les gants ne traitent pas le matériel. E - Vrai. Le matériel peut servir d’intermédiaire contaminé.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c011",
+        "theme": "Agents, IAS et transmission",
+        "front": "Pourquoi entretenir le matériel partagé entre patients ?",
+        "answers": [
+          "Il peut assurer une transmission indirecte. L’hygiène des mains ne désinfecte pas le dispositif."
+        ],
+        "explanation": "L’hygiène des mains ne désinfecte pas le dispositif."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q012",
+    "courseId": "prevention_ias_asepsie",
+    "number": 12,
+    "theme": "Agents, IAS et transmission",
+    "difficulty": "medium",
+    "question": "Comment interpréter une bactérie retrouvée dans les urines ?",
+    "choices": [
+      "Comme une preuve d’origine exogène.",
+      "Comme une absence certaine de risque infectieux.",
+      "Avec les signes cliniques et le contexte du prélèvement.",
+      "Comme une indication automatique d’antibiothérapie.",
+      "Comme une preuve de résistance à la FHA."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le résultat ne désigne pas à lui seul le réservoir.",
+      "Une infection est possible selon le contexte.",
+      "Le résultat isolé ne suffit pas à affirmer une infection.",
+      "Le portage ou une contamination doivent être distingués.",
+      "La culture urinaire ne mesure pas cette sensibilité."
+    ],
+    "explanation": "A - Faux. Le résultat ne désigne pas à lui seul le réservoir. B - Faux. Une infection est possible selon le contexte. C - Vrai. Le résultat isolé ne suffit pas à affirmer une infection. D - Faux. Le portage ou une contamination doivent être distingués. E - Faux. La culture urinaire ne mesure pas cette sensibilité.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c012",
+        "theme": "Agents, IAS et transmission",
+        "front": "Une bactérie dans les urines prouve-t-elle une infection à traiter ?",
+        "answers": [
+          "Non. Le résultat s’interprète avec les signes, le site et les conditions du prélèvement."
+        ],
+        "explanation": "Le résultat s’interprète avec les signes, le site et les conditions du prélèvement."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q013",
+    "courseId": "prevention_ias_asepsie",
+    "number": 13,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "easy",
+    "question": "Quelles actions concourent à prévenir les IAS ?",
+    "choices": [
+      "Réévaluer l’utilité des dispositifs invasifs.",
+      "Appliquer les précautions standard.",
+      "Associer vaccination et bon usage des antibiotiques.",
+      "Remplacer toutes les mesures par le port de gants.",
+      "Attendre un germe identifié avant toute prévention."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Éviter une exposition inutile réduit des occasions de contamination.",
+      "Elles constituent le socle commun des soins.",
+      "Ces actions complètent les mesures de transmission.",
+      "Une protection isolée ne couvre pas tous les risques.",
+      "Les PS s’appliquent indépendamment du statut connu."
+    ],
+    "explanation": "A - Vrai. Éviter une exposition inutile réduit des occasions de contamination. B - Vrai. Elles constituent le socle commun des soins. C - Vrai. Ces actions complètent les mesures de transmission. D - Faux. Une protection isolée ne couvre pas tous les risques. E - Faux. Les PS s’appliquent indépendamment du statut connu.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c013",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Pourquoi combiner plusieurs mesures de prévention ?",
+        "answers": [
+          "Elles interrompent des maillons différents. Aucune mesure isolée ne compense toutes les autres défaillances."
+        ],
+        "explanation": "Aucune mesure isolée ne compense toutes les autres défaillances."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q014",
+    "courseId": "prevention_ias_asepsie",
+    "number": 14,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "medium",
+    "question": "Pourquoi réévaluer quotidiennement une VVP inutilisée ?",
+    "choices": [
+      "Sa nécessité et les alternatives se discutent avec l’équipe.",
+      "Une VVP inutilisée ne peut pas se contaminer.",
+      "La garder est toujours préférable à envisager un retrait.",
+      "Elle constitue une exposition invasive sans bénéfice assuré.",
+      "Deux VVP sont systématiquement nécessaires à tout patient."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’indication relève d’un raisonnement collectif adapté.",
+      "La rupture de barrière persiste malgré son inutilisation.",
+      "La balance bénéfice-risque doit être réévaluée.",
+      "Le maintien doit rester justifié par le besoin.",
+      "La multiplication des voies doit avoir une indication."
+    ],
+    "explanation": "A - Vrai. L’indication relève d’un raisonnement collectif adapté. B - Faux. La rupture de barrière persiste malgré son inutilisation. C - Faux. La balance bénéfice-risque doit être réévaluée. D - Vrai. Le maintien doit rester justifié par le besoin. E - Faux. La multiplication des voies doit avoir une indication.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c014",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Que rechercher avant de maintenir une voie veineuse inutilisée ?",
+        "answers": [
+          "Son indication réelle et les alternatives. Un dispositif sans bénéfice prolonge une exposition évitable."
+        ],
+        "explanation": "Un dispositif sans bénéfice prolonge une exposition évitable."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q015",
+    "courseId": "prevention_ias_asepsie",
+    "number": 15,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "medium",
+    "question": "Quels signes sur une VVP doivent être évalués et transmis ?",
+    "choices": [
+      "Une douleur doit être ignorée en l’absence de fièvre.",
+      "L’absence d’alarme de perfusion exclut toute complication.",
+      "Une rougeur ou un gonflement.",
+      "Une douleur nouvellement rapportée.",
+      "Une fuite ou une anomalie de fonctionnement."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une anomalie locale mérite une évaluation précoce.",
+      "L’observation clinique reste nécessaire.",
+      "Ils peuvent témoigner d’une complication locale.",
+      "Le ressenti du patient participe à la surveillance.",
+      "La sécurité de la voie doit être réévaluée."
+    ],
+    "explanation": "A - Faux. Une anomalie locale mérite une évaluation précoce. B - Faux. L’observation clinique reste nécessaire. C - Vrai. Ils peuvent témoigner d’une complication locale. D - Vrai. Le ressenti du patient participe à la surveillance. E - Vrai. La sécurité de la voie doit être réévaluée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c015",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Quels types d’anomalies surveiller sur une VVP ?",
+        "answers": [
+          "Douleur, rougeur, gonflement, fuite et fonctionnement inhabituel. Les signaler permet une évaluation précoce."
+        ],
+        "explanation": "Les signaler permet une évaluation précoce."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q016",
+    "courseId": "prevention_ias_asepsie",
+    "number": 16,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "hard",
+    "question": "Une VVP douloureuse résiste à l’injection. Quelles décisions sont justifiées ?",
+    "choices": [
+      "Augmenter systématiquement la pression d’injection.",
+      "Conclure à une infection certaine sans évaluation.",
+      "Poursuivre pour finir le traitement avant d’alerter.",
+      "Transmettre des observations précises à l’équipe.",
+      "Ne pas forcer et évaluer la voie."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Forcer peut poursuivre un geste non sûr.",
+      "Plusieurs complications peuvent expliquer ces signes.",
+      "La sécurité immédiate doit être réévaluée.",
+      "Une information située aide à décider de la conduite.",
+      "Une résistance associée à une douleur est une anomalie."
+    ],
+    "explanation": "A - Faux. Forcer peut poursuivre un geste non sûr. B - Faux. Plusieurs complications peuvent expliquer ces signes. C - Faux. La sécurité immédiate doit être réévaluée. D - Vrai. Une information située aide à décider de la conduite. E - Vrai. Une résistance associée à une douleur est une anomalie.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c016",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Que faire devant une VVP douloureuse et résistante à l’injection ?",
+        "answers": [
+          "Ne pas forcer, évaluer et alerter. Ces anomalies imposent de rétablir une administration sûre."
+        ],
+        "explanation": "Ces anomalies imposent de rétablir une administration sûre."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q017",
+    "courseId": "prevention_ias_asepsie",
+    "number": 17,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "medium",
+    "question": "Quelle évolution peut compliquer un foyer infectieux sur cathéter ?",
+    "choices": [
+      "Une diffusion bactérienne sanguine.",
+      "Une évolution toujours bénigne en l’absence de douleur.",
+      "Une impossibilité d’aggravation si le cathéter est périphérique.",
+      "Des localisations infectieuses à distance.",
+      "Une protection immunitaire immédiate contre toutes les IAS."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un foyer local peut s’accompagner d’une bactériémie.",
+      "L’absence d’un signe n’exclut pas une complication.",
+      "Le caractère périphérique n’annule pas le risque systémique.",
+      "La diffusion peut entraîner des complications graves.",
+      "Une infection ne confère pas cette protection."
+    ],
+    "explanation": "A - Vrai. Un foyer local peut s’accompagner d’une bactériémie. B - Faux. L’absence d’un signe n’exclut pas une complication. C - Faux. Le caractère périphérique n’annule pas le risque systémique. D - Vrai. La diffusion peut entraîner des complications graves. E - Faux. Une infection ne confère pas cette protection.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c017",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Pourquoi ne pas banaliser une infection locale sur cathéter ?",
+        "answers": [
+          "Une diffusion sanguine et des localisations à distance sont possibles. La surveillance et l’alerte précoces comptent."
+        ],
+        "explanation": "La surveillance et l’alerte précoces comptent."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q018",
+    "courseId": "prevention_ias_asepsie",
+    "number": 18,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "medium",
+    "question": "Quelles actions favorisent une séquence de soin aseptique ?",
+    "choices": [
+      "Anticiper le circuit d’élimination.",
+      "Considérer la première FHA comme valable malgré tous les contacts.",
+      "Ouvrir le matériel stérile très longtemps à l’avance.",
+      "Préparer le matériel nécessaire avant le geste.",
+      "Continuer après une contamination sans réévaluer le matériel."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "On évite de manipuler du sale au milieu du propre.",
+      "De nouvelles indications peuvent survenir pendant le soin.",
+      "L’exposition inutile fragilise la maîtrise du champ.",
+      "Cela limite les interruptions et contacts imprévus.",
+      "Une rupture nécessite de rétablir la sécurité."
+    ],
+    "explanation": "A - Vrai. On évite de manipuler du sale au milieu du propre. B - Faux. De nouvelles indications peuvent survenir pendant le soin. C - Faux. L’exposition inutile fragilise la maîtrise du champ. D - Vrai. Cela limite les interruptions et contacts imprévus. E - Faux. Une rupture nécessite de rétablir la sécurité.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c018",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Pourquoi préparer le soin avant de commencer ?",
+        "answers": [
+          "Pour limiter interruptions et croisements propre-sale. Chaque contact peut créer une nouvelle indication d’hygiène des mains."
+        ],
+        "explanation": "Chaque contact peut créer une nouvelle indication d’hygiène des mains."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q019",
+    "courseId": "prevention_ias_asepsie",
+    "number": 19,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "easy",
+    "question": "Que peut-on attendre de la vaccination dans la prévention ?",
+    "choices": [
+      "Un calendrier identique pour tout produit et toute personne.",
+      "Une protection contre tous les micro-organismes.",
+      "La suppression des précautions standard chez le vacciné.",
+      "La possibilité d’utiliser sans vérification un ancien calendrier.",
+      "Une contribution à la protection des personnes exposées."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le statut et le cadre applicable doivent être vérifiés.",
+      "La protection vaccinale est spécifique.",
+      "La vaccination ne couvre pas tous les risques.",
+      "Les repères datés ne valent pas actualisation générale.",
+      "Elle participe à une stratégie coordonnée."
+    ],
+    "explanation": "A - Faux. Le statut et le cadre applicable doivent être vérifiés. B - Faux. La protection vaccinale est spécifique. C - Faux. La vaccination ne couvre pas tous les risques. D - Faux. Les repères datés ne valent pas actualisation générale. E - Vrai. Elle participe à une stratégie coordonnée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c019",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "La vaccination dispense-t-elle des précautions standard ?",
+        "answers": [
+          "Non. Elle apporte une protection spécifique et complète les autres mesures."
+        ],
+        "explanation": "Elle apporte une protection spécifique et complète les autres mesures."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q020",
+    "courseId": "prevention_ias_asepsie",
+    "number": 20,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "easy",
+    "question": "Quelles associations sont exactes ?",
+    "choices": [
+      "Tout résultat positif impose le même antibiotique.",
+      "Bactéricide : tue des bactéries dans les conditions considérées.",
+      "Un antibiotique traite tous les virus.",
+      "Une antibiothérapie inutile n’influence jamais l’écologie bactérienne.",
+      "Bactériostatique : inhibe leur multiplication."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Agent, contexte et sensibilité doivent être interprétés.",
+      "Cette action dépend du produit et des conditions.",
+      "Les cibles bactériennes ne sont pas celles des virus.",
+      "Elle peut exercer une pression de sélection.",
+      "L’inhibition ne signifie pas nécessairement destruction immédiate."
+    ],
+    "explanation": "A - Faux. Agent, contexte et sensibilité doivent être interprétés. B - Vrai. Cette action dépend du produit et des conditions. C - Faux. Les cibles bactériennes ne sont pas celles des virus. D - Faux. Elle peut exercer une pression de sélection. E - Vrai. L’inhibition ne signifie pas nécessairement destruction immédiate.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c020",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Comment distinguer bactéricide et bactériostatique ?",
+        "answers": [
+          "Le premier tue, le second inhibe la multiplication bactérienne. Ces effets dépendent des conditions considérées."
+        ],
+        "explanation": "Ces effets dépendent des conditions considérées."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q021",
+    "courseId": "prevention_ias_asepsie",
+    "number": 21,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "medium",
+    "question": "Quelle transmission sur une anomalie de cathéter est la plus utile ?",
+    "choices": [
+      "Attendre systématiquement l’équipe suivante.",
+      "Écrire uniquement « à surveiller ».",
+      "Décrire signes, moment et actions déjà réalisées.",
+      "Omettre la douleur parce qu’elle est subjective.",
+      "Remplacer les faits observés par un diagnostic certain inventé."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un retard peut laisser persister un risque.",
+      "La formule ne décrit ni anomalie ni décision.",
+      "Ces éléments rendent le message exploitable.",
+      "Le ressenti du patient est une donnée pertinente.",
+      "Les observations doivent rester distinctes de l’interprétation."
+    ],
+    "explanation": "A - Faux. Un retard peut laisser persister un risque. B - Faux. La formule ne décrit ni anomalie ni décision. C - Vrai. Ces éléments rendent le message exploitable. D - Faux. Le ressenti du patient est une donnée pertinente. E - Faux. Les observations doivent rester distinctes de l’interprétation.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c021",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Quelles informations transmettre sur une VVP anormale ?",
+        "answers": [
+          "Les signes, leur apparition et les actions effectuées. Des faits précis soutiennent l’évaluation de l’équipe."
+        ],
+        "explanation": "Des faits précis soutiennent l’évaluation de l’équipe."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q022",
+    "courseId": "prevention_ias_asepsie",
+    "number": 22,
+    "theme": "Prévention coordonnée et dispositifs invasifs",
+    "difficulty": "hard",
+    "question": "Un délai de renouvellement de VVP est cité sans contexte. Comment l’utiliser ?",
+    "choices": [
+      "Conserver la surveillance clinique entre les échéances.",
+      "Attendre l’échéance malgré douleur et gonflement.",
+      "Le transformer en règle universelle pour toutes les voies.",
+      "Supprimer toute trace du contexte pour mieux mémoriser.",
+      "Vérifier le dispositif, le patient et le protocole applicable."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un calendrier n’exclut pas une complication plus précoce.",
+      "Les anomalies imposent une évaluation immédiate adaptée.",
+      "La destination et les conditions d’emploi diffèrent.",
+      "Retirer les conditions change le sens de la règle.",
+      "Un repère local ne se transpose pas automatiquement."
+    ],
+    "explanation": "A - Vrai. Un calendrier n’exclut pas une complication plus précoce. B - Faux. Les anomalies imposent une évaluation immédiate adaptée. C - Faux. La destination et les conditions d’emploi diffèrent. D - Faux. Retirer les conditions change le sens de la règle. E - Vrai. Un repère local ne se transpose pas automatiquement.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c022",
+        "theme": "Prévention coordonnée et dispositifs invasifs",
+        "front": "Un délai prévu suffit-il à garantir la sécurité d’un cathéter ?",
+        "answers": [
+          "Non. La surveillance et la nécessité du dispositif restent à réévaluer en continu."
+        ],
+        "explanation": "La surveillance et la nécessité du dispositif restent à réévaluer en continu."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q023",
+    "courseId": "prevention_ias_asepsie",
+    "number": 23,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "À qui les précautions standard s’appliquent-elles ?",
+    "choices": [
+      "Uniquement aux personnes porteuses d’une BMR.",
+      "Seulement après un résultat microbiologique positif.",
+      "À tout patient, quel que soit le statut infectieux connu.",
+      "Aux seuls soins invasifs.",
+      "Dans les différents lieux de soins."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La résistance connue n’est pas une condition.",
+      "La prévention doit précéder cette information.",
+      "Le socle ne dépend pas d’un diagnostic préalable.",
+      "D’autres contacts exposent aussi à une transmission.",
+      "Le principe dépasse le seul hôpital."
+    ],
+    "explanation": "A - Faux. La résistance connue n’est pas une condition. B - Faux. La prévention doit précéder cette information. C - Vrai. Le socle ne dépend pas d’un diagnostic préalable. D - Faux. D’autres contacts exposent aussi à une transmission. E - Vrai. Le principe dépasse le seul hôpital.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c023",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelle est la portée des précautions standard ?",
+        "answers": [
+          "Tout patient, tout soin et tout lieu. Elles s’adaptent au risque prévisible du geste."
+        ],
+        "explanation": "Elles s’adaptent au risque prévisible du geste."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q024",
+    "courseId": "prevention_ias_asepsie",
+    "number": 24,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quelles questions guident le choix d’un EPI ?",
+    "choices": [
+      "Quels contacts ou projections sont prévisibles ?",
+      "Quel équipement est le plus nombreux dans le chariot ?",
+      "Quel circuit évite de contaminer le propre ?",
+      "Le patient a-t-il forcément un germe identifié ?",
+      "Quel soin sera réalisé ?"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’équipement doit répondre à ce risque.",
+      "La disponibilité ne constitue pas une indication.",
+      "La protection inclut aussi l’organisation.",
+      "L’absence de diagnostic n’exclut pas l’exposition.",
+      "Le type de geste détermine l’exposition."
+    ],
+    "explanation": "A - Vrai. L’équipement doit répondre à ce risque. B - Faux. La disponibilité ne constitue pas une indication. C - Vrai. La protection inclut aussi l’organisation. D - Faux. L’absence de diagnostic n’exclut pas l’exposition. E - Vrai. Le type de geste détermine l’exposition.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c024",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelles trois questions poser avant de choisir une protection ?",
+        "answers": [
+          "Le soin, l’exposition et le circuit. Ces éléments guident une protection adaptée."
+        ],
+        "explanation": "Ces éléments guident une protection adaptée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q025",
+    "courseId": "prevention_ias_asepsie",
+    "number": 25,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quelles situations sont des indications d’hygiène des mains ?",
+    "choices": [
+      "Avant de toucher le patient.",
+      "Une seule fois pour toute la journée.",
+      "Après un risque d’exposition biologique.",
+      "Avant un geste aseptique.",
+      "Uniquement lorsque les mains paraissent sales."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "On limite l’apport d’une contamination au patient.",
+      "Les indications se répètent selon les contacts.",
+      "La protection du soignant et de l’environnement compte.",
+      "Le site à protéger impose cette indication.",
+      "Des contaminations ne sont pas visibles."
+    ],
+    "explanation": "A - Vrai. On limite l’apport d’une contamination au patient. B - Faux. Les indications se répètent selon les contacts. C - Vrai. La protection du soignant et de l’environnement compte. D - Vrai. Le site à protéger impose cette indication. E - Faux. Des contaminations ne sont pas visibles.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c025",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quels sont les deux moments « avant » et le moment « après exposition biologique » ?",
+        "answers": [
+          "Avant contact patient, avant geste aseptique et après risque biologique. Les moments se répètent selon la séquence."
+        ],
+        "explanation": "Les moments se répètent selon la séquence."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q026",
+    "courseId": "prevention_ias_asepsie",
+    "number": 26,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Après quels contacts faut-il aussi réaliser une hygiène des mains ?",
+    "choices": [
+      "Uniquement si le patient est contagieux selon le dossier.",
+      "Seulement après un contact avec du sang visible.",
+      "Après avoir touché son environnement.",
+      "Jamais après retrait des gants.",
+      "Après avoir touché le patient."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’information connue ne couvre pas toutes les situations.",
+      "D’autres contaminations sont possibles.",
+      "L’environnement peut porter des micro-organismes.",
+      "Le retrait ne garantit pas des mains propres.",
+      "Le contact peut contaminer les mains."
+    ],
+    "explanation": "A - Faux. L’information connue ne couvre pas toutes les situations. B - Faux. D’autres contaminations sont possibles. C - Vrai. L’environnement peut porter des micro-organismes. D - Faux. Le retrait ne garantit pas des mains propres. E - Vrai. Le contact peut contaminer les mains.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c026",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Pourquoi réaliser une hygiène des mains après l’environnement du patient ?",
+        "answers": [
+          "Les surfaces peuvent contaminer les mains. Le patient n’a pas besoin d’avoir été touché directement."
+        ],
+        "explanation": "Le patient n’a pas besoin d’avoir été touché directement."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q027",
+    "courseId": "prevention_ias_asepsie",
+    "number": 27,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quels prérequis favorisent une bonne hygiène des mains ?",
+    "choices": [
+      "Couvrir des mains humides par des gants.",
+      "Absence de bijoux aux mains et poignets.",
+      "Ongles sans vernis ni résine.",
+      "Conserver l’alliance parce qu’elle est lisse.",
+      "Avant-bras dégagés et ongles courts."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les mains doivent être préparées et sèches.",
+      "Les bijoux gênent une technique complète.",
+      "Ces éléments compromettent les prérequis enseignés.",
+      "L’absence de bijoux inclut l’alliance.",
+      "Ils facilitent l’accès aux surfaces à traiter."
+    ],
+    "explanation": "A - Faux. Les mains doivent être préparées et sèches. B - Vrai. Les bijoux gênent une technique complète. C - Vrai. Ces éléments compromettent les prérequis enseignés. D - Faux. L’absence de bijoux inclut l’alliance. E - Vrai. Ils facilitent l’accès aux surfaces à traiter.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c027",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quels prérequis retenir pour les mains avant les soins ?",
+        "answers": [
+          "Avant-bras dégagés, ongles courts sans vernis ni résine et absence de bijoux. La technique doit atteindre toutes les zones."
+        ],
+        "explanation": "La technique doit atteindre toutes les zones."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q028",
+    "courseId": "prevention_ias_asepsie",
+    "number": 28,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quand la FHA est-elle adaptée dans son indication habituelle ?",
+    "choices": [
+      "Sur une souillure visible sans lavage préalable.",
+      "Avec la même efficacité garantie contre tous les agents.",
+      "Avec couverture complète et durée prévue par le produit.",
+      "Sur des mains visiblement propres et sèches.",
+      "En interrompant avant le séchage pour gagner du temps."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une souillure impose un nettoyage adapté.",
+      "Des situations particulières nécessitent des consignes adaptées.",
+      "Quantité, technique et temps conditionnent l’efficacité.",
+      "Les conditions de surface permettent une friction correcte.",
+      "La durée et le séchage font partie de la technique."
+    ],
+    "explanation": "A - Faux. Une souillure impose un nettoyage adapté. B - Faux. Des situations particulières nécessitent des consignes adaptées. C - Vrai. Quantité, technique et temps conditionnent l’efficacité. D - Vrai. Les conditions de surface permettent une friction correcte. E - Faux. La durée et le séchage font partie de la technique.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c028",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelles conditions rendent une FHA correctement réalisable ?",
+        "answers": [
+          "Mains visiblement propres et sèches, surfaces couvertes et durée respectée. Frictionner jusqu’au séchage complet."
+        ],
+        "explanation": "Frictionner jusqu’au séchage complet."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q029",
+    "courseId": "prevention_ias_asepsie",
+    "number": 29,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quelles zones sont facilement oubliées pendant une friction ?",
+    "choices": [
+      "Les espaces entre les doigts.",
+      "Aucune zone si la quantité paraît abondante.",
+      "Les gants rendent inutile la couverture des doigts.",
+      "Les pulpes et le pourtour des ongles.",
+      "Les pouces."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une simple friction paume contre paume ne suffit pas.",
+      "La quantité ne remplace pas les mouvements adaptés.",
+      "Ils ne remplacent pas la préparation des mains.",
+      "Le contact avec le produit doit être complet.",
+      "Ils doivent être frictionnés comme les autres surfaces."
+    ],
+    "explanation": "A - Vrai. Une simple friction paume contre paume ne suffit pas. B - Faux. La quantité ne remplace pas les mouvements adaptés. C - Faux. Ils ne remplacent pas la préparation des mains. D - Vrai. Le contact avec le produit doit être complet. E - Vrai. Ils doivent être frictionnés comme les autres surfaces.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c029",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelles trois zones vérifier pendant la friction des mains ?",
+        "answers": [
+          "Pouces, espaces interdigitaux et pulpes avec ongles. Une couverture complète dépend aussi des mouvements."
+        ],
+        "explanation": "Une couverture complète dépend aussi des mouvements."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q030",
+    "courseId": "prevention_ias_asepsie",
+    "number": 30,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "hard",
+    "question": "Après une FHA, le soignant saisit son téléphone puis prépare un accès vasculaire. Que retenir ?",
+    "choices": [
+      "Une recontamination des mains est possible.",
+      "L’indication avant geste aseptique doit être respectée à nouveau.",
+      "Le téléphone devient stérile au contact des mains frictionnées.",
+      "Mettre des gants suffit à corriger cette séquence.",
+      "La première friction protège pour toute la séquence."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le téléphone constitue un contact intermédiaire.",
+      "La première friction ne couvre pas tous les contacts suivants.",
+      "La FHA des mains ne traite pas l’objet.",
+      "Les gants ne remplacent pas l’hygiène requise.",
+      "Son bénéfice peut être perdu après recontamination."
+    ],
+    "explanation": "A - Vrai. Le téléphone constitue un contact intermédiaire. B - Vrai. La première friction ne couvre pas tous les contacts suivants. C - Faux. La FHA des mains ne traite pas l’objet. D - Faux. Les gants ne remplacent pas l’hygiène requise. E - Faux. Son bénéfice peut être perdu après recontamination.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c030",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Une FHA reste-t-elle suffisante après un contact avec le téléphone ?",
+        "answers": [
+          "Pas pour le geste aseptique suivant. Ce contact peut recontaminer les mains."
+        ],
+        "explanation": "Ce contact peut recontaminer les mains."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q031",
+    "courseId": "prevention_ias_asepsie",
+    "number": 31,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quand des gants non stériles sont-ils indiqués ?",
+    "choices": [
+      "Si les mains du professionnel présentent une lésion.",
+      "En cas de contact prévisible avec le sang.",
+      "Pour toute prise de tension sur peau saine.",
+      "Pour toute entrée dans une chambre sans autre analyse.",
+      "Pour un contact avec une muqueuse ou une peau lésée."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Cette situation nécessite une protection adaptée.",
+      "La protection répond à une exposition biologique.",
+      "Ce geste n’impose pas des gants par principe.",
+      "L’entrée seule ne définit pas l’exposition.",
+      "Ces contacts font partie des indications."
+    ],
+    "explanation": "A - Vrai. Cette situation nécessite une protection adaptée. B - Vrai. La protection répond à une exposition biologique. C - Faux. Ce geste n’impose pas des gants par principe. D - Faux. L’entrée seule ne définit pas l’exposition. E - Vrai. Ces contacts font partie des indications.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c031",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quel principe détermine le port de gants non stériles ?",
+        "answers": [
+          "L’exposition prévisible, notamment biologique ou à une muqueuse. Le diagnostic seul ne constitue pas l’indication."
+        ],
+        "explanation": "Le diagnostic seul ne constitue pas l’indication."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q032",
+    "courseId": "prevention_ias_asepsie",
+    "number": 32,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quelles règles concernent une paire de gants de soin ?",
+    "choices": [
+      "La retirer immédiatement après la tâche exposante.",
+      "La garder pour toucher les réserves propres.",
+      "La changer du temps sale vers le temps propre.",
+      "La désinfecter pour la conserver plusieurs soins.",
+      "La changer entre deux patients."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le maintien favorise les contacts contaminants.",
+      "Les surfaces et stocks pourraient être contaminés.",
+      "La progression doit éviter de recontaminer un site.",
+      "Elle n’est pas retraitée pour être réutilisée.",
+      "Une paire peut transmettre des agents au suivant."
+    ],
+    "explanation": "A - Vrai. Le maintien favorise les contacts contaminants. B - Faux. Les surfaces et stocks pourraient être contaminés. C - Vrai. La progression doit éviter de recontaminer un site. D - Faux. Elle n’est pas retraitée pour être réutilisée. E - Vrai. Une paire peut transmettre des agents au suivant.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c032",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "À quels moments changer ou retirer les gants ?",
+        "answers": [
+          "Après la tâche, entre patients et du sale vers le propre. Leur maintien peut déplacer la contamination."
+        ],
+        "explanation": "Leur maintien peut déplacer la contamination."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q033",
+    "courseId": "prevention_ias_asepsie",
+    "number": 33,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Que signifie le caractère stérile d’une paire de gants ?",
+    "choices": [
+      "Il dispense de l’hygiène des mains.",
+      "Il permet de toucher toute surface sans conséquence.",
+      "Il doit être conservé pendant la technique aseptique.",
+      "Il remplace la préparation du matériel.",
+      "Il reste acquis après contact avec le téléphone."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les indications des mains restent applicables.",
+      "Un gant stérile peut être contaminé.",
+      "Un contact non stérile compromet cette propriété.",
+      "L’asepsie concerne toute la séquence.",
+      "Le téléphone n’est pas un élément stérile."
+    ],
+    "explanation": "A - Faux. Les indications des mains restent applicables. B - Faux. Un gant stérile peut être contaminé. C - Vrai. Un contact non stérile compromet cette propriété. D - Faux. L’asepsie concerne toute la séquence. E - Faux. Le téléphone n’est pas un élément stérile.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c033",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quand un gant stérile perd-il sa stérilité ?",
+        "answers": [
+          "Lors d’un contact non stérile. Il faut rétablir les conditions d’asepsie avant de poursuivre."
+        ],
+        "explanation": "Il faut rétablir les conditions d’asepsie avant de poursuivre."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q034",
+    "courseId": "prevention_ias_asepsie",
+    "number": 34,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quelles protections correspondent au risque de souillure de la tenue ?",
+    "choices": [
+      "Une surblouse adaptée si l’exposition est plus étendue.",
+      "Un gant protège à lui seul toute la tenue.",
+      "Multiplier les couches remplace un retrait maîtrisé.",
+      "Une surblouse souillée peut devenir une tenue permanente.",
+      "Un tablier adapté pour un soin mouillant ou souillant."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Son choix dépend de l’importance du risque.",
+      "La protection des mains ne couvre pas le vêtement.",
+      "Un empilement peut compliquer le retrait.",
+      "Elle doit être retirée après la séquence prévue.",
+      "Il protège la zone antérieure exposée."
+    ],
+    "explanation": "A - Vrai. Son choix dépend de l’importance du risque. B - Faux. La protection des mains ne couvre pas le vêtement. C - Faux. Un empilement peut compliquer le retrait. D - Faux. Elle doit être retirée après la séquence prévue. E - Vrai. Il protège la zone antérieure exposée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c034",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Comment choisir entre tablier et surblouse ?",
+        "answers": [
+          "Selon l’étendue et l’intensité de l’exposition. La protection se retire à la fin de la séquence prévue."
+        ],
+        "explanation": "La protection se retire à la fin de la séquence prévue."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q035",
+    "courseId": "prevention_ias_asepsie",
+    "number": 35,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Un soin expose à une projection biologique au visage. Quelles affirmations sont correctes ?",
+    "choices": [
+      "Un masque peut être manipulé continuellement sans risque.",
+      "Le port de gants suffit pour protéger les yeux.",
+      "Prévoir un masque et une protection oculaire adaptés.",
+      "Une visière seule ne remplace pas tout masque requis.",
+      "Des lunettes de vue constituent toujours une protection de soin suffisante."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les contacts avec sa face exposée doivent être évités.",
+      "Les gants ne couvrent pas cette exposition.",
+      "Le visage et les yeux sont exposés.",
+      "Les fonctions des protections restent distinctes.",
+      "Elles ne remplacent pas une protection oculaire adaptée."
+    ],
+    "explanation": "A - Faux. Les contacts avec sa face exposée doivent être évités. B - Faux. Les gants ne couvrent pas cette exposition. C - Vrai. Le visage et les yeux sont exposés. D - Vrai. Les fonctions des protections restent distinctes. E - Faux. Elles ne remplacent pas une protection oculaire adaptée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c035",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelles protections prévoir contre une projection biologique au visage ?",
+        "answers": [
+          "Un masque et une protection oculaire adaptés. Les lunettes de vue ne remplacent pas une protection de soin."
+        ],
+        "explanation": "Les lunettes de vue ne remplacent pas une protection de soin."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q036",
+    "courseId": "prevention_ias_asepsie",
+    "number": 36,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quels gestes participent à l’hygiène respiratoire ?",
+    "choices": [
+      "Conserver un mouchoir souillé pour tous les soins.",
+      "Utiliser un mouchoir ou le haut du bras pour tousser.",
+      "Attendre la confirmation microbiologique avant toute mesure.",
+      "Proposer un masque adapté à une personne qui tousse.",
+      "Réaliser l’hygiène des mains après les sécrétions."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le mouchoir usagé doit être éliminé.",
+      "Éviter la paume limite le manuportage.",
+      "Les mesures initiales répondent aux symptômes.",
+      "Limiter l’émission fait partie de la prévention.",
+      "Le risque de contact complète le risque respiratoire."
+    ],
+    "explanation": "A - Faux. Le mouchoir usagé doit être éliminé. B - Vrai. Éviter la paume limite le manuportage. C - Faux. Les mesures initiales répondent aux symptômes. D - Vrai. Limiter l’émission fait partie de la prévention. E - Vrai. Le risque de contact complète le risque respiratoire.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c036",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quels trois réflexes associer face à une toux ?",
+        "answers": [
+          "Masque adapté, mouchoir ou haut du bras et hygiène des mains. Ils limitent émissions et transfert par contact."
+        ],
+        "explanation": "Ils limitent émissions et transfert par contact."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q037",
+    "courseId": "prevention_ias_asepsie",
+    "number": 37,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "easy",
+    "question": "Quelles pratiques réduisent le risque d’AES ?",
+    "choices": [
+      "L’utilisation correcte des dispositifs sécurisés.",
+      "Le transport d’aiguilles usagées sur un plateau ouvert.",
+      "Le respect de sa limite de remplissage.",
+      "Le recapuchonnage soigneux de l’aiguille usagée.",
+      "Un collecteur OPCT à proximité du soin."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La sécurité dépend aussi de leur activation prévue.",
+      "La sécurisation et l’élimination ne doivent pas être différées.",
+      "Un collecteur surchargé expose à des accidents.",
+      "Le recapuchonnage ajoute une manipulation exposante.",
+      "L’élimination immédiate devient réalisable."
+    ],
+    "explanation": "A - Vrai. La sécurité dépend aussi de leur activation prévue. B - Faux. La sécurisation et l’élimination ne doivent pas être différées. C - Vrai. Un collecteur surchargé expose à des accidents. D - Faux. Le recapuchonnage ajoute une manipulation exposante. E - Vrai. L’élimination immédiate devient réalisable.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c037",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quels trois moyens matériels ou organisationnels préviennent les AES ?",
+        "answers": [
+          "Collecteur proche, remplissage respecté et dispositifs sécurisés. Éviter les manipulations d’aiguilles usagées."
+        ],
+        "explanation": "Éviter les manipulations d’aiguilles usagées."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q038",
+    "courseId": "prevention_ias_asepsie",
+    "number": 38,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quelles réactions initiales sont adaptées après un AES ?",
+    "choices": [
+      "Attendre la fin du service pour demander un avis.",
+      "Appliquer un antiseptique cutané dans l’œil.",
+      "Faire saigner volontairement une plaie.",
+      "Effectuer les premiers soins selon la voie d’exposition.",
+      "Contacter sans délai le circuit médical d’urgence prévu."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le délai peut compromettre la prise en charge.",
+      "Une projection oculaire impose un rinçage adapté.",
+      "Ce geste n’est pas recommandé dans la conduite enseignée.",
+      "Peau lésée et muqueuse ne se traitent pas identiquement.",
+      "L’évaluation et un éventuel traitement sont urgents."
+    ],
+    "explanation": "A - Faux. Le délai peut compromettre la prise en charge. B - Faux. Une projection oculaire impose un rinçage adapté. C - Faux. Ce geste n’est pas recommandé dans la conduite enseignée. D - Vrai. Peau lésée et muqueuse ne se traitent pas identiquement. E - Vrai. L’évaluation et un éventuel traitement sont urgents.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c038",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelle priorité associer aux premiers soins d’un AES ?",
+        "answers": [
+          "Contacter sans délai le circuit médical prévu. Un éventuel traitement post-exposition est urgent."
+        ],
+        "explanation": "Un éventuel traitement post-exposition est urgent."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q039",
+    "courseId": "prevention_ias_asepsie",
+    "number": 39,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Quelles règles limitent la contamination pendant le transport de linge ou prélèvements ?",
+    "choices": [
+      "Transporter un prélèvement fermé avec extérieur propre.",
+      "Placer les documents au contact d’un échantillon souillé.",
+      "Porter le linge sale contre la tenue.",
+      "Glisser un tube souillé dans une poche.",
+      "Conditionner le linge sale sans le secouer."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le contenant ne doit pas exposer les personnes.",
+      "Ils doivent rester protégés de la contamination.",
+      "Cette manipulation peut contaminer le vêtement.",
+      "La poche n’est pas un conditionnement de transport.",
+      "Cela limite la dispersion et les contacts souillants."
+    ],
+    "explanation": "A - Vrai. Le contenant ne doit pas exposer les personnes. B - Faux. Ils doivent rester protégés de la contamination. C - Faux. Cette manipulation peut contaminer le vêtement. D - Faux. La poche n’est pas un conditionnement de transport. E - Vrai. Cela limite la dispersion et les contacts souillants.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c039",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quels principes sécurisent linge sale et prélèvements ?",
+        "answers": [
+          "Conditionnement adapté et séparation du propre et du sale. L’extérieur des contenants doit rester maîtrisé."
+        ],
+        "explanation": "L’extérieur des contenants doit rester maîtrisé."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q040",
+    "courseId": "prevention_ias_asepsie",
+    "number": 40,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur le tri des déchets sont exactes ?",
+    "choices": [
+      "Tous les déchets médicamenteux suivent systématiquement les DASRI.",
+      "Les perforants nécessitent un collecteur adapté.",
+      "Les déchets chimiques ou médicamenteux peuvent avoir des filières spécifiques.",
+      "Tout déchet issu d’un soin n’est pas automatiquement un DASRI.",
+      "Le port de gants rend inutile le tri."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le type de produit et le circuit doivent être distingués.",
+      "Ils exposent les personnes qui manipulent les déchets.",
+      "Ils ne se résument pas au seul risque infectieux.",
+      "Le risque et la nature déterminent la filière.",
+      "Le tri protège l’ensemble de la chaîne."
+    ],
+    "explanation": "A - Faux. Le type de produit et le circuit doivent être distingués. B - Vrai. Ils exposent les personnes qui manipulent les déchets. C - Vrai. Ils ne se résument pas au seul risque infectieux. D - Vrai. Le risque et la nature déterminent la filière. E - Faux. Le tri protège l’ensemble de la chaîne.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c040",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Pourquoi ne pas classer tous les déchets de soins en DASRI ?",
+        "answers": [
+          "Leur nature et leurs risques diffèrent. Les perforants, médicaments et produits chimiques suivent les filières prévues."
+        ],
+        "explanation": "Les perforants, médicaments et produits chimiques suivent les filières prévues."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q041",
+    "courseId": "prevention_ias_asepsie",
+    "number": 41,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "medium",
+    "question": "Pourquoi éviter de rincer un bassin à la douchette ?",
+    "choices": [
+      "Le jet peut disperser les souillures.",
+      "Un circuit d’excreta adapté est nécessaire.",
+      "Le jet désinfecte automatiquement le bassin.",
+      "Une panne autorise toute méthode manuelle improvisée.",
+      "Les urines et selles ne transmettent qu’en présence d’une BMR connue."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Projections et dispersion contaminent l’environnement.",
+      "Le traitement ne s’improvise pas au lavabo.",
+      "La force du jet n’est pas un procédé validé.",
+      "Elle impose de signaler et d’utiliser l’alternative validée.",
+      "Un statut inconnu n’exclut pas les agents."
+    ],
+    "explanation": "A - Vrai. Projections et dispersion contaminent l’environnement. B - Vrai. Le traitement ne s’improvise pas au lavabo. C - Faux. La force du jet n’est pas un procédé validé. D - Faux. Elle impose de signaler et d’utiliser l’alternative validée. E - Faux. Un statut inconnu n’exclut pas les agents.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c041",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Pourquoi la douchette ne remplace-t-elle pas le traitement des bassins ?",
+        "answers": [
+          "Elle disperse les souillures sans garantir le traitement. Employer le circuit d’excreta prévu."
+        ],
+        "explanation": "Employer le circuit d’excreta prévu."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q042",
+    "courseId": "prevention_ias_asepsie",
+    "number": 42,
+    "theme": "Précautions standard et sécurité des gestes",
+    "difficulty": "hard",
+    "question": "Le laveur-désinfecteur est en panne. Que faut-il organiser ?",
+    "choices": [
+      "Supprimer les protections parce que le soin sera plus rapide.",
+      "Vider et brosser les bassins au lavabo des mains.",
+      "Reporter toute élimination sans sécuriser les excreta.",
+      "Signaler l’indisponibilité du matériel.",
+      "Employer l’alternative validée pour les excreta."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’exposition biologique reste présente.",
+      "Ce lieu et cette méthode créent une contamination.",
+      "La panne ne supprime pas les besoins de gestion.",
+      "Le circuit doit pouvoir être sécurisé et rétabli.",
+      "Un système à usage unique peut être prévu localement."
+    ],
+    "explanation": "A - Faux. L’exposition biologique reste présente. B - Faux. Ce lieu et cette méthode créent une contamination. C - Faux. La panne ne supprime pas les besoins de gestion. D - Vrai. Le circuit doit pouvoir être sécurisé et rétabli. E - Vrai. Un système à usage unique peut être prévu localement.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c042",
+        "theme": "Précautions standard et sécurité des gestes",
+        "front": "Quelle conduite tenir si le matériel de traitement des excreta est indisponible ?",
+        "answers": [
+          "Signaler et utiliser l’alternative validée. Une panne ne justifie pas une procédure contaminante improvisée."
+        ],
+        "explanation": "Une panne ne justifie pas une procédure contaminante improvisée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q043",
+    "courseId": "prevention_ias_asepsie",
+    "number": 43,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "easy",
+    "question": "Comment articuler précautions standard et complémentaires ?",
+    "choices": [
+      "Une mesure contact impose automatiquement un FFP2.",
+      "Les mesures ne doivent jamais être expliquées au patient.",
+      "Le mot isolement indique à lui seul tous les EPI.",
+      "Les mesures complémentaires dispensent des cinq indications des mains.",
+      "Les mesures complémentaires s’ajoutent au socle standard."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La protection respiratoire dépend du risque concerné.",
+      "L’information permet leur compréhension et application.",
+      "Il faut connaître l’objectif et les consignes concrètes.",
+      "Le socle reste applicable.",
+      "Elles répondent à une situation ou transmission particulière."
+    ],
+    "explanation": "A - Faux. La protection respiratoire dépend du risque concerné. B - Faux. L’information permet leur compréhension et application. C - Faux. Il faut connaître l’objectif et les consignes concrètes. D - Faux. Le socle reste applicable. E - Vrai. Elles répondent à une situation ou transmission particulière.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c043",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Quel est le rapport entre PS et précautions complémentaires ?",
+        "answers": [
+          "Les secondes s’ajoutent aux premières. Elles ne remplacent pas le socle de tous les soins."
+        ],
+        "explanation": "Elles ne remplacent pas le socle de tous les soins."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q044",
+    "courseId": "prevention_ias_asepsie",
+    "number": 44,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Quelles dispositions peuvent limiter une transmission contact ?",
+    "choices": [
+      "Une organisation adaptée de la chambre et des sanitaires.",
+      "Des stocks importants exposés dans la chambre.",
+      "Du matériel dédié ou entretenu entre utilisateurs.",
+      "Des gants conservés jusque dans le couloir.",
+      "Une information des équipes lors des transferts."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les contacts environnementaux participent à la chaîne.",
+      "Limiter les stocks facilite leur maîtrise.",
+      "Il faut maîtriser les intermédiaires partagés.",
+      "Ils peuvent diffuser la contamination à l’extérieur.",
+      "Les mesures doivent se poursuivre dans le circuit."
+    ],
+    "explanation": "A - Vrai. Les contacts environnementaux participent à la chaîne. B - Faux. Limiter les stocks facilite leur maîtrise. C - Vrai. Il faut maîtriser les intermédiaires partagés. D - Faux. Ils peuvent diffuser la contamination à l’extérieur. E - Vrai. Les mesures doivent se poursuivre dans le circuit.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c044",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Quels trois éléments organiser en précautions contact ?",
+        "answers": [
+          "Chambre et sanitaires, matériel, information des équipes. Ils complètent les mains et les protections adaptées."
+        ],
+        "explanation": "Ils complètent les mains et les protections adaptées."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q045",
+    "courseId": "prevention_ias_asepsie",
+    "number": 45,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "hard",
+    "question": "Un patient en précautions contact doit se rendre à un examen. Quelles mesures sont cohérentes ?",
+    "choices": [
+      "Interdire tout examen parce que le patient est en contact.",
+      "Organiser mains, tenue et protection des lésions si nécessaire.",
+      "Préparer le déplacement avec l’équipe d’accueil.",
+      "Considérer que le déplacement supprime les précautions standard.",
+      "Ne pas transmettre les mesures pour éviter toute contrainte."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les besoins de soins restent à organiser.",
+      "Les points de contamination potentiels sont maîtrisés.",
+      "La continuité de prévention doit être anticipée.",
+      "Le socle suit le patient dans les différents lieux.",
+      "L’équipe suivante doit connaître les précautions utiles."
+    ],
+    "explanation": "A - Faux. Les besoins de soins restent à organiser. B - Vrai. Les points de contamination potentiels sont maîtrisés. C - Vrai. La continuité de prévention doit être anticipée. D - Faux. Le socle suit le patient dans les différents lieux. E - Faux. L’équipe suivante doit connaître les précautions utiles.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c045",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Un patient en précautions contact peut-il quitter sa chambre pour un soin ?",
+        "answers": [
+          "Oui, avec un déplacement organisé. Mains, tenue, lésions et information de l’accueil doivent être adaptés."
+        ],
+        "explanation": "Mains, tenue, lésions et information de l’accueil doivent être adaptés."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q046",
+    "courseId": "prevention_ias_asepsie",
+    "number": 46,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "easy",
+    "question": "Que signifie une multirésistance bactérienne ?",
+    "choices": [
+      "Une infection systématiquement symptomatique.",
+      "Une virulence obligatoirement supérieure.",
+      "Une résistance prouvée à toute hygiène des mains.",
+      "Une transmission exclusivement aérienne.",
+      "Une résistance à plusieurs familles d’antibiotiques."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un portage peut être asymptomatique.",
+      "Résistance thérapeutique et virulence sont distinctes.",
+      "La définition porte sur les antibiotiques.",
+      "La résistance ne définit pas la voie de transmission.",
+      "Les possibilités de traitement peuvent être réduites."
+    ],
+    "explanation": "A - Faux. Un portage peut être asymptomatique. B - Faux. Résistance thérapeutique et virulence sont distinctes. C - Faux. La définition porte sur les antibiotiques. D - Faux. La résistance ne définit pas la voie de transmission. E - Vrai. Les possibilités de traitement peuvent être réduites.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c046",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Une BMR est-elle nécessairement plus virulente ?",
+        "answers": [
+          "Non. La multirésistance concerne les antibiotiques, pas automatiquement la virulence ou la FHA."
+        ],
+        "explanation": "La multirésistance concerne les antibiotiques, pas automatiquement la virulence ou la FHA."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q047",
+    "courseId": "prevention_ias_asepsie",
+    "number": 47,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Quels raisonnements distinguent portage et infection ?",
+    "choices": [
+      "Un dépistage peut révéler un portage sans infection.",
+      "Le traitement antibiotique ne découle pas du portage seul.",
+      "Un portage ne nécessite jamais d’information lors d’un transfert.",
+      "Un prélèvement diagnostique et un dépistage ont toujours le même objectif.",
+      "Toute infection exige une longue colonisation asymptomatique préalable."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La recherche de colonisation a cet objectif.",
+      "La clinique et l’indication doivent être interprétées.",
+      "La prévention de transmission peut rester nécessaire.",
+      "Ils répondent à des questions différentes.",
+      "Cette succession prolongée n’est pas universelle."
+    ],
+    "explanation": "A - Vrai. La recherche de colonisation a cet objectif. B - Vrai. La clinique et l’indication doivent être interprétées. C - Faux. La prévention de transmission peut rester nécessaire. D - Faux. Ils répondent à des questions différentes. E - Faux. Cette succession prolongée n’est pas universelle.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c047",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Un portage de BMR équivaut-il à une infection ?",
+        "answers": [
+          "Non. La présence sans infection clinique n’impose pas à elle seule une antibiothérapie."
+        ],
+        "explanation": "La présence sans infection clinique n’impose pas à elle seule une antibiothérapie."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q048",
+    "courseId": "prevention_ias_asepsie",
+    "number": 48,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "easy",
+    "question": "Quelles associations de sigles sont exactes ?",
+    "choices": [
+      "SARM : staphylocoque doré résistant à la méticilline.",
+      "EPC : entérobactérie productrice de carbapénémase.",
+      "BLSE : mesure de renouvellement de l’air.",
+      "ERG : entérocoque résistant aux glycopeptides.",
+      "BHRe : synonyme de toute bactérie cutanée."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il s’agit d’un exemple de BMR.",
+      "La carbapénémase est un mécanisme de résistance.",
+      "Le sigle désigne une bêta-lactamase à spectre étendu.",
+      "Le sigle décrit cette résistance particulière.",
+      "La définition concerne des résistances émergentes particulières."
+    ],
+    "explanation": "A - Vrai. Il s’agit d’un exemple de BMR. B - Vrai. La carbapénémase est un mécanisme de résistance. C - Faux. Le sigle désigne une bêta-lactamase à spectre étendu. D - Vrai. Le sigle décrit cette résistance particulière. E - Faux. La définition concerne des résistances émergentes particulières.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c048",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Que signifient EPC et ERG ?",
+        "answers": [
+          "Entérobactérie productrice de carbapénémase et entérocoque résistant aux glycopeptides. Ce sont des exemples centraux de BHRe."
+        ],
+        "explanation": "Ce sont des exemples centraux de BHRe."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q049",
+    "courseId": "prevention_ias_asepsie",
+    "number": 49,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Quel mécanisme explique la pression de sélection antibiotique ?",
+    "choices": [
+      "Les bactéries sensibles sont défavorisées par l’exposition.",
+      "L’antibiotique apprend volontairement à la bactérie à réfléchir.",
+      "Le bon usage des antibiotiques complète la prévention des transmissions.",
+      "La sélection remplace la nécessité de transmission croisée.",
+      "Une prescription inutile est sans conséquence sur cette sélection."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des bactéries résistantes peuvent alors persister.",
+      "La sélection n’est pas un mécanisme intentionnel.",
+      "Il agit sur un autre maillon du problème.",
+      "Sélection et diffusion sont des phénomènes distincts.",
+      "Une exposition injustifiée peut exercer cette pression."
+    ],
+    "explanation": "A - Vrai. Des bactéries résistantes peuvent alors persister. B - Faux. La sélection n’est pas un mécanisme intentionnel. C - Vrai. Il agit sur un autre maillon du problème. D - Faux. Sélection et diffusion sont des phénomènes distincts. E - Faux. Une exposition injustifiée peut exercer cette pression.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c049",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Comment une exposition antibiotique peut-elle sélectionner des résistances ?",
+        "answers": [
+          "Elle défavorise les bactéries sensibles. Des résistantes peuvent persister puis diffuser."
+        ],
+        "explanation": "Des résistantes peuvent persister puis diffuser."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q050",
+    "courseId": "prevention_ias_asepsie",
+    "number": 50,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Que fournit un antibiogramme ?",
+    "choices": [
+      "Une prescription directement lisible à l’œil sur une photographie.",
+      "Une preuve que tous les antibiotiques sont équivalents.",
+      "Le diagnostic certain d’infection indépendamment de la clinique.",
+      "Une mesure de l’efficacité de la FHA.",
+      "Une étude standardisée de sensibilité aux antibiotiques."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’interprétation nécessite des critères et un contexte.",
+      "Le résultat distingue des sensibilités.",
+      "La sensibilité ne remplace pas le diagnostic.",
+      "Les produits et objectifs évalués sont différents.",
+      "Le laboratoire interprète le résultat selon ses critères."
+    ],
+    "explanation": "A - Faux. L’interprétation nécessite des critères et un contexte. B - Faux. Le résultat distingue des sensibilités. C - Faux. La sensibilité ne remplace pas le diagnostic. D - Faux. Les produits et objectifs évalués sont différents. E - Vrai. Le laboratoire interprète le résultat selon ses critères.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c050",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Quel est le rôle d’un antibiogramme ?",
+        "answers": [
+          "Étudier la sensibilité bactérienne aux antibiotiques. Son interprétation ne remplace pas le contexte clinique."
+        ],
+        "explanation": "Son interprétation ne remplace pas le contexte clinique."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q051",
+    "courseId": "prevention_ias_asepsie",
+    "number": 51,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "hard",
+    "question": "Une hospitalisation récente à l’étranger et une alerte ancienne sont signalées. Que faire ?",
+    "choices": [
+      "Supposer qu’une absence d’alerte informatique exclut tout risque.",
+      "Lire germe, site, date et consignes de l’alerte.",
+      "Solliciter le circuit local d’hygiène et de dépistage.",
+      "Ignorer l’information si le patient n’a pas de fièvre.",
+      "Appliquer sans lecture n’importe quelle précaution respiratoire."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le dossier ne remplace pas l’évaluation actuelle.",
+      "Une alerte doit être contextualisée.",
+      "Le risque doit être évalué avec les personnes compétentes.",
+      "Un portage peut être asymptomatique.",
+      "Le mode de transmission doit être identifié."
+    ],
+    "explanation": "A - Faux. Le dossier ne remplace pas l’évaluation actuelle. B - Vrai. Une alerte doit être contextualisée. C - Vrai. Le risque doit être évalué avec les personnes compétentes. D - Faux. Un portage peut être asymptomatique. E - Faux. Le mode de transmission doit être identifié.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c051",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Comment exploiter une alerte de résistance dans le dossier ?",
+        "answers": [
+          "Lire le germe, le site, la date et les consignes. L’équipe d’hygiène aide à interpréter la situation actuelle."
+        ],
+        "explanation": "L’équipe d’hygiène aide à interpréter la situation actuelle."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q052",
+    "courseId": "prevention_ias_asepsie",
+    "number": 52,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Quelles distinctions sont correctes entre protection respiratoire et masque médical ?",
+    "choices": [
+      "Une visière seule est équivalente à un FFP2.",
+      "Un FFP2 mal ajusté garantit la même protection.",
+      "Le type de protection dépend uniquement du nom du germe.",
+      "Le masque médical participe au contrôle des émissions.",
+      "Un FFP2 vise la protection contre l’inhalation de particules."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle ne possède pas sa fonction de filtration ajustée.",
+      "Les fuites compromettent l’efficacité attendue.",
+      "Geste et contexte d’exposition comptent aussi.",
+      "Il a aussi un rôle contre certaines projections.",
+      "Son ajustement au visage est déterminant."
+    ],
+    "explanation": "A - Faux. Elle ne possède pas sa fonction de filtration ajustée. B - Faux. Les fuites compromettent l’efficacité attendue. C - Faux. Geste et contexte d’exposition comptent aussi. D - Vrai. Il a aussi un rôle contre certaines projections. E - Vrai. Son ajustement au visage est déterminant.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c052",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Qu’est-ce qui conditionne la protection attendue d’un FFP2 ?",
+        "answers": [
+          "Son indication et son ajustement correct. Filtrer ne suffit pas si l’air contourne le dispositif."
+        ],
+        "explanation": "Filtrer ne suffit pas si l’air contourne le dispositif."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q053",
+    "courseId": "prevention_ias_asepsie",
+    "number": 53,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "medium",
+    "question": "Quel est l’objectif d’un environnement protecteur ?",
+    "choices": [
+      "Rendre toute paire de gants obligatoire dès l’entrée.",
+      "Limiter l’exposition d’un patient très vulnérable.",
+      "Autoriser du matériel non entretenu si le soignant porte une surblouse.",
+      "Signifier automatiquement que le patient est une source contagieuse.",
+      "Maîtriser mains, matériel, air et eau selon l’unité."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le geste et le protocole déterminent les EPI.",
+      "L’immunodépression peut augmenter la gravité d’une exposition.",
+      "La tenue ne désinfecte pas les dispositifs.",
+      "L’objectif principal est ici de protéger le patient.",
+      "La protection dépend de plusieurs voies."
+    ],
+    "explanation": "A - Faux. Le geste et le protocole déterminent les EPI. B - Vrai. L’immunodépression peut augmenter la gravité d’une exposition. C - Faux. La tenue ne désinfecte pas les dispositifs. D - Faux. L’objectif principal est ici de protéger le patient. E - Vrai. La protection dépend de plusieurs voies.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c053",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Comment distinguer isolement septique et environnement protecteur ?",
+        "answers": [
+          "Limiter la diffusion depuis une personne ou limiter l’exposition d’un patient fragile. Les objectifs peuvent coexister."
+        ],
+        "explanation": "Les objectifs peuvent coexister."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q054",
+    "courseId": "prevention_ias_asepsie",
+    "number": 54,
+    "theme": "Précautions complémentaires et résistances",
+    "difficulty": "hard",
+    "question": "Klebsiella pneumoniae BLSE est identifiée chez un patient. Quelles déductions sont justifiées ?",
+    "choices": [
+      "Le nom prouve une transmission aérienne dans toute situation.",
+      "Les précautions standard deviennent inutiles.",
+      "Le mot pneumoniae ne décide pas d’une précaution air.",
+      "La résistance et le site doivent être lus avec le contexte.",
+      "Le portage impose toujours une antibiothérapie immédiate."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un nom d’espèce ne détermine pas les EPI.",
+      "Elles constituent toujours le socle.",
+      "La transmission évaluée guide les mesures.",
+      "Le nom seul ne résume pas la situation.",
+      "La présence ne suffit pas à affirmer une infection à traiter."
+    ],
+    "explanation": "A - Faux. Un nom d’espèce ne détermine pas les EPI. B - Faux. Elles constituent toujours le socle. C - Vrai. La transmission évaluée guide les mesures. D - Vrai. Le nom seul ne résume pas la situation. E - Faux. La présence ne suffit pas à affirmer une infection à traiter.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c054",
+        "theme": "Précautions complémentaires et résistances",
+        "front": "Le nom Klebsiella pneumoniae impose-t-il des précautions air ?",
+        "answers": [
+          "Non. Le site, le mode de transmission et le contexte guident les mesures."
+        ],
+        "explanation": "Le site, le mode de transmission et le contexte guident les mesures."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q055",
+    "courseId": "prevention_ias_asepsie",
+    "number": 55,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "easy",
+    "question": "Que recouvre l’asepsie lors d’un soin ?",
+    "choices": [
+      "Le nettoyage des locaux sans lien avec le soin.",
+      "Les mesures empêchant l’introduction de micro-organismes dans un site à protéger.",
+      "La stérilisation de tous les tissus du patient.",
+      "Le seul badigeon cutané, quel que soit le reste du geste.",
+      "La préparation des mains, du matériel et des parties critiques."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette définition ne couvre pas l’ensemble de l’asepsie.",
+      "Le raisonnement concerne toute la séquence.",
+      "Le vivant n’est pas traité comme un instrument.",
+      "L’antisepsie est une composante possible de l’asepsie.",
+      "Ces éléments peuvent introduire une contamination."
+    ],
+    "explanation": "A - Faux. Cette définition ne couvre pas l’ensemble de l’asepsie. B - Vrai. Le raisonnement concerne toute la séquence. C - Faux. Le vivant n’est pas traité comme un instrument. D - Faux. L’antisepsie est une composante possible de l’asepsie. E - Vrai. Ces éléments peuvent introduire une contamination.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c055",
+        "theme": "Asepsie et antisepsie",
+        "front": "Que signifie asepsie lors d’un soin ?",
+        "answers": [
+          "Empêcher l’introduction de micro-organismes dans le site protégé. Mains, matériel et technique participent ensemble."
+        ],
+        "explanation": "Mains, matériel et technique participent ensemble."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q056",
+    "courseId": "prevention_ias_asepsie",
+    "number": 56,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "easy",
+    "question": "Comment distinguer antisepsie et désinfection ?",
+    "choices": [
+      "Un désinfectant de surface convient automatiquement à une muqueuse.",
+      "La désinfection concerne un milieu inerte.",
+      "La FHA peut remplacer tout produit d’entretien des DM.",
+      "Ces deux opérations garantissent une stérilité définitive.",
+      "L’antisepsie s’applique à des tissus vivants."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Destination et tolérance sont différentes.",
+      "Objet ou surface suivent des conditions adaptées.",
+      "La solution pour les mains n’est pas universelle.",
+      "Le résultat dépend de conditions et peut être momentané.",
+      "Le produit doit respecter la tolérance du tissu."
+    ],
+    "explanation": "A - Faux. Destination et tolérance sont différentes. B - Vrai. Objet ou surface suivent des conditions adaptées. C - Faux. La solution pour les mains n’est pas universelle. D - Faux. Le résultat dépend de conditions et peut être momentané. E - Vrai. Le produit doit respecter la tolérance du tissu.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c056",
+        "theme": "Asepsie et antisepsie",
+        "front": "Sur quels supports réalise-t-on antisepsie et désinfection ?",
+        "answers": [
+          "Tissus vivants pour l’antisepsie, milieu inerte pour la désinfection. Les produits ne sont pas interchangeables."
+        ],
+        "explanation": "Les produits ne sont pas interchangeables."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q057",
+    "courseId": "prevention_ias_asepsie",
+    "number": 57,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "easy",
+    "question": "Quelles associations de familles sont correctes ?",
+    "choices": [
+      "Dakin : exemple d’antiseptique chloré.",
+      "Chlorhexidine : biguanide.",
+      "Povidone iodée : halogéné iodé.",
+      "Un nom de famille rend toutes les concentrations équivalentes.",
+      "Toutes les solutions chlorées sont adaptées aux tissus."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La présentation et l’indication restent à vérifier.",
+      "La famille ne suffit pas à déterminer le site.",
+      "La formulation doit ensuite être précisée.",
+      "Formulation et concentration influencent l’emploi.",
+      "Un antiseptique n’est pas tout produit chloré."
+    ],
+    "explanation": "A - Vrai. La présentation et l’indication restent à vérifier. B - Vrai. La famille ne suffit pas à déterminer le site. C - Vrai. La formulation doit ensuite être précisée. D - Faux. Formulation et concentration influencent l’emploi. E - Faux. Un antiseptique n’est pas tout produit chloré.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c057",
+        "theme": "Asepsie et antisepsie",
+        "front": "Pourquoi la famille d’un antiseptique ne suffit-elle pas au choix ?",
+        "answers": [
+          "La formulation, la concentration et le site comptent aussi. Une même famille n’autorise pas tous les usages."
+        ],
+        "explanation": "Une même famille n’autorise pas tous les usages."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q058",
+    "courseId": "prevention_ias_asepsie",
+    "number": 58,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "medium",
+    "question": "Un flacon lavant et un flacon alcoolique portent un nom proche. Que faut-il vérifier ?",
+    "choices": [
+      "Les mélanger améliore nécessairement l’activité.",
+      "La nécessité de rinçage ou de maintien selon la notice.",
+      "La présentation exacte et son indication.",
+      "La même marque garantit une interchangeabilité complète.",
+      "Seule la couleur de l’étiquette importe."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le mélange de produits n’est pas une optimisation autorisée.",
+      "Une forme lavante ne s’utilise pas comme tout badigeon.",
+      "Les fonctions et modalités d’application peuvent différer.",
+      "Un nom commun ne remplace pas les conditions d’emploi.",
+      "Le choix doit porter sur le produit réel."
+    ],
+    "explanation": "A - Faux. Le mélange de produits n’est pas une optimisation autorisée. B - Vrai. Une forme lavante ne s’utilise pas comme tout badigeon. C - Vrai. Les fonctions et modalités d’application peuvent différer. D - Faux. Un nom commun ne remplace pas les conditions d’emploi. E - Faux. Le choix doit porter sur le produit réel.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c058",
+        "theme": "Asepsie et antisepsie",
+        "front": "Deux présentations d’une même marque sont-elles interchangeables ?",
+        "answers": [
+          "Pas automatiquement. Forme lavante, aqueuse et alcoolique peuvent avoir des usages différents."
+        ],
+        "explanation": "Forme lavante, aqueuse et alcoolique peuvent avoir des usages différents."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q059",
+    "courseId": "prevention_ias_asepsie",
+    "number": 59,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "hard",
+    "question": "Une antisepsie est nécessaire chez un nouveau-né. Quel raisonnement est adapté ?",
+    "choices": [
+      "Utiliser la procédure spécifique avec l’équipe compétente.",
+      "Vérifier âge, maturité cutanée, site et présentation.",
+      "Appliquer sans vérification le protocole de l’adulte.",
+      "Choisir uniquement l’antiseptique jugé le plus fort.",
+      "Déduire une autorisation générale du seul nom de famille."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La situation ne se transpose pas depuis l’adulte.",
+      "La tolérance dépend de ces conditions.",
+      "Le terrain néonatal impose des conditions particulières.",
+      "L’activité seule ne définit pas un choix toléré.",
+      "La présentation et les restrictions doivent être vérifiées."
+    ],
+    "explanation": "A - Vrai. La situation ne se transpose pas depuis l’adulte. B - Vrai. La tolérance dépend de ces conditions. C - Faux. Le terrain néonatal impose des conditions particulières. D - Faux. L’activité seule ne définit pas un choix toléré. E - Faux. La présentation et les restrictions doivent être vérifiées.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c059",
+        "theme": "Asepsie et antisepsie",
+        "front": "Quels critères vérifier pour un antiseptique chez le nouveau-né ?",
+        "answers": [
+          "Âge, maturité cutanée, site et présentation. Une procédure spécifique évite de transposer celle de l’adulte."
+        ],
+        "explanation": "Une procédure spécifique évite de transposer celle de l’adulte."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q060",
+    "courseId": "prevention_ias_asepsie",
+    "number": 60,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "hard",
+    "question": "Une personne déclare une allergie « à l’iode ». Quelles actions sont adaptées ?",
+    "choices": [
+      "Une réaction à un contraste rend tous les antiseptiques identiques.",
+      "Une allergie aux fruits de mer prouve toute allergie à la povidone iodée.",
+      "Faire évaluer le choix avec l’équipe et le protocole.",
+      "Préciser le produit en cause et la réaction.",
+      "Ignorer toute allergie déclarée parce que le terme est vague."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Produits et mécanismes ne se confondent pas.",
+      "Cette équivalence n’est pas justifiée.",
+      "Une réaction rapportée ne doit pas être ignorée.",
+      "L’évaluation doit partir d’informations concrètes.",
+      "L’imprécision impose de clarifier, pas d’écarter."
+    ],
+    "explanation": "A - Faux. Produits et mécanismes ne se confondent pas. B - Faux. Cette équivalence n’est pas justifiée. C - Vrai. Une réaction rapportée ne doit pas être ignorée. D - Vrai. L’évaluation doit partir d’informations concrètes. E - Faux. L’imprécision impose de clarifier, pas d’écarter.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c060",
+        "theme": "Asepsie et antisepsie",
+        "front": "Comment clarifier une allergie dite « à l’iode » ?",
+        "answers": [
+          "Identifier le produit et la réaction puis faire évaluer. Fruits de mer et contraste ne prouvent pas toute allergie iodée."
+        ],
+        "explanation": "Fruits de mer et contraste ne prouvent pas toute allergie iodée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q061",
+    "courseId": "prevention_ias_asepsie",
+    "number": 61,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "medium",
+    "question": "Sur une peau visiblement propre avant un geste invasif, quelles règles retenir ?",
+    "choices": [
+      "Une antisepsie adaptée peut rester nécessaire.",
+      "Un antiseptique de surface suffit quel que soit le site.",
+      "Le nombre d’applications suit le produit et le geste.",
+      "Une détersion en quatre temps est toujours obligatoire.",
+      "L’absence de souillure signifie une peau stérile."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Propreté visible et préparation antiseptique sont distinctes.",
+      "Le produit doit convenir aux tissus et au geste.",
+      "Il ne faut pas imposer une procédure universelle.",
+      "Le nettoyage systématique n’est pas requis sur une peau visiblement propre.",
+      "La peau possède une flore même lorsqu’elle paraît propre."
+    ],
+    "explanation": "A - Vrai. Propreté visible et préparation antiseptique sont distinctes. B - Faux. Le produit doit convenir aux tissus et au geste. C - Vrai. Il ne faut pas imposer une procédure universelle. D - Faux. Le nettoyage systématique n’est pas requis sur une peau visiblement propre. E - Faux. La peau possède une flore même lorsqu’elle paraît propre.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c061",
+        "theme": "Asepsie et antisepsie",
+        "front": "Une peau propre est-elle déjà préparée pour tout geste invasif ?",
+        "answers": [
+          "Non. La propreté visible ne remplace pas l’antisepsie lorsque le geste la requiert."
+        ],
+        "explanation": "La propreté visible ne remplace pas l’antisepsie lorsque le geste la requiert."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q062",
+    "courseId": "prevention_ias_asepsie",
+    "number": 62,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "medium",
+    "question": "La zone cutanée est visiblement souillée. Quelle séquence est cohérente ?",
+    "choices": [
+      "Conserver la même compresse souillée pour toute l’application.",
+      "Nettoyer avant l’antisepsie adaptée.",
+      "Ajouter davantage d’antiseptique sans retirer la souillure.",
+      "Rincer si nécessaire puis sécher selon la méthode.",
+      "Souffler sur la zone pour la rendre propre."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La technique doit éviter le retour du sale vers le propre.",
+      "La souillure doit être éliminée.",
+      "Une quantité accrue ne remplace pas le nettoyage.",
+      "Les étapes préparent les conditions du produit suivant.",
+      "Le souffle ne nettoie pas et peut contaminer."
+    ],
+    "explanation": "A - Faux. La technique doit éviter le retour du sale vers le propre. B - Vrai. La souillure doit être éliminée. C - Faux. Une quantité accrue ne remplace pas le nettoyage. D - Vrai. Les étapes préparent les conditions du produit suivant. E - Faux. Le souffle ne nettoie pas et peut contaminer.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c062",
+        "theme": "Asepsie et antisepsie",
+        "front": "Que faire avant l’antisepsie d’une peau visiblement souillée ?",
+        "answers": [
+          "Nettoyer, rincer si nécessaire puis sécher. La souillure compromet les conditions de préparation."
+        ],
+        "explanation": "La souillure compromet les conditions de préparation."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q063",
+    "courseId": "prevention_ias_asepsie",
+    "number": 63,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "easy",
+    "question": "Quelles conduites respectent le séchage antiseptique ?",
+    "choices": [
+      "Essuyer pour accélérer systématiquement le soin.",
+      "Souffler sur la zone préparée.",
+      "Attendre le séchage spontané complet.",
+      "Réaliser le geste dès que la peau est couverte.",
+      "Retoucher la zone sans précaution pendant le séchage."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cela peut retirer prématurément le produit.",
+      "Ce geste peut réintroduire une contamination.",
+      "Il participe aux conditions d’efficacité et de sécurité.",
+      "Le contact et le séchage doivent être respectés.",
+      "Une recontamination peut annuler la préparation."
+    ],
+    "explanation": "A - Faux. Cela peut retirer prématurément le produit. B - Faux. Ce geste peut réintroduire une contamination. C - Vrai. Il participe aux conditions d’efficacité et de sécurité. D - Faux. Le contact et le séchage doivent être respectés. E - Faux. Une recontamination peut annuler la préparation.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c063",
+        "theme": "Asepsie et antisepsie",
+        "front": "Pourquoi respecter le séchage spontané d’un antiseptique ?",
+        "answers": [
+          "Il fait partie de la méthode d’application. Essuyer ou souffler compromet les conditions du soin."
+        ],
+        "explanation": "Essuyer ou souffler compromet les conditions du soin."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q064",
+    "courseId": "prevention_ias_asepsie",
+    "number": 64,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "medium",
+    "question": "Quelles règles concernent un flacon d’antiseptique ouvert ?",
+    "choices": [
+      "Toucher l’embout pour vérifier qu’il est propre.",
+      "Le compléter si le produit ajouté vient du même lot.",
+      "Le refermer et le stocker comme prévu.",
+      "Mélanger deux antiseptiques pour élargir sans contrôle le spectre.",
+      "Respecter sa durée d’emploi après ouverture."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le contact peut contaminer l’embout.",
+      "Le remplissage d’un flacon ouvert n’est pas sûr.",
+      "Le conditionnement doit rester protégé.",
+      "L’association improvisée ne garantit ni efficacité ni tolérance.",
+      "Elle dépend de la présentation et de la notice."
+    ],
+    "explanation": "A - Faux. Le contact peut contaminer l’embout. B - Faux. Le remplissage d’un flacon ouvert n’est pas sûr. C - Vrai. Le conditionnement doit rester protégé. D - Faux. L’association improvisée ne garantit ni efficacité ni tolérance. E - Vrai. Elle dépend de la présentation et de la notice.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c064",
+        "theme": "Asepsie et antisepsie",
+        "front": "Peut-on compléter un flacon antiseptique déjà ouvert ?",
+        "answers": [
+          "Non, même avec le même lot. L’ouverture et la durée d’emploi doivent rester maîtrisées."
+        ],
+        "explanation": "L’ouverture et la durée d’emploi doivent rester maîtrisées."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q065",
+    "courseId": "prevention_ias_asepsie",
+    "number": 65,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "medium",
+    "question": "Avant de manipuler la valve d’une perfusion, quelles actions sont pertinentes ?",
+    "choices": [
+      "Réaliser l’hygiène des mains indiquée.",
+      "Manipuler avec une compresse ayant touché le lit.",
+      "Appliquer la même durée à tous les connecteurs sans notice.",
+      "Considérer qu’un connecteur est propre parce qu’il paraît transparent.",
+      "Désinfecter l’accès avec la méthode compatible prévue."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un accès critique doit être protégé de l’apport manuel.",
+      "Ce contact peut contaminer l’élément utilisé.",
+      "Le repère local ne s’universalise pas.",
+      "La contamination peut être invisible.",
+      "Friction, contact et séchage dépendent du connecteur."
+    ],
+    "explanation": "A - Vrai. Un accès critique doit être protégé de l’apport manuel. B - Faux. Ce contact peut contaminer l’élément utilisé. C - Faux. Le repère local ne s’universalise pas. D - Faux. La contamination peut être invisible. E - Vrai. Friction, contact et séchage dépendent du connecteur.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c065",
+        "theme": "Asepsie et antisepsie",
+        "front": "Pourquoi désinfecter une valve avant sa manipulation ?",
+        "answers": [
+          "C’est un point d’accès critique potentiellement contaminé. La méthode doit respecter le dispositif et le séchage."
+        ],
+        "explanation": "La méthode doit respecter le dispositif et le séchage."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q066",
+    "courseId": "prevention_ias_asepsie",
+    "number": 66,
+    "theme": "Asepsie et antisepsie",
+    "difficulty": "hard",
+    "question": "Après préparation cutanée, le site est touché par un élément non préparé. Que retenir ?",
+    "choices": [
+      "Les conditions d’asepsie doivent être rétablies avant de poursuivre.",
+      "L’absence de trace visible garantit l’innocuité du contact.",
+      "Le port ultérieur de gants corrige automatiquement la zone.",
+      "L’antiseptique rend toute recontamination impossible.",
+      "Une recontamination est possible."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La rupture doit être identifiée et corrigée.",
+      "La contamination ne se voit pas nécessairement.",
+      "Les gants ne retraitent pas le site.",
+      "Son résultat n’est pas une protection définitive.",
+      "L’antisepsie ne protège pas de tous les contacts ultérieurs."
+    ],
+    "explanation": "A - Vrai. La rupture doit être identifiée et corrigée. B - Faux. La contamination ne se voit pas nécessairement. C - Faux. Les gants ne retraitent pas le site. D - Faux. Son résultat n’est pas une protection définitive. E - Vrai. L’antisepsie ne protège pas de tous les contacts ultérieurs.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c066",
+        "theme": "Asepsie et antisepsie",
+        "front": "Que faire après une recontamination possible du site préparé ?",
+        "answers": [
+          "Rétablir les conditions d’asepsie avant de poursuivre. L’absence de trace visible ne garantit pas la sécurité."
+        ],
+        "explanation": "L’absence de trace visible ne garantit pas la sécurité."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q067",
+    "courseId": "prevention_ias_asepsie",
+    "number": 67,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "easy",
+    "question": "Que signifie la mention « usage unique » sur un DM ?",
+    "choices": [
+      "Une seule utilisation pour un patient.",
+      "Une réutilisation permise si le dispositif paraît propre.",
+      "Un statut dépendant seulement du nombre de soignants.",
+      "Une réutilisation possible après toute désinfection.",
+      "Un usage toujours non stérile."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le dispositif ne rejoint pas le retraitement ordinaire pour réutilisation.",
+      "La propreté visible n’autorise pas sa remise en circulation.",
+      "C’est l’utilisation du dispositif qui est visée.",
+      "Une désinfection ne change pas son statut.",
+      "Usage unique et stérilité sont deux caractéristiques distinctes."
+    ],
+    "explanation": "A - Vrai. Le dispositif ne rejoint pas le retraitement ordinaire pour réutilisation. B - Faux. La propreté visible n’autorise pas sa remise en circulation. C - Faux. C’est l’utilisation du dispositif qui est visée. D - Faux. Une désinfection ne change pas son statut. E - Faux. Usage unique et stérilité sont deux caractéristiques distinctes.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c067",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Que signifie le symbole « deux barré » d’un dispositif ?",
+        "answers": [
+          "Usage unique pour un patient. Son statut n’est pas modifié par un nettoyage ou une désinfection."
+        ],
+        "explanation": "Son statut n’est pas modifié par un nettoyage ou une désinfection."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q068",
+    "courseId": "prevention_ias_asepsie",
+    "number": 68,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "easy",
+    "question": "Quel contact correspond à un dispositif non critique ?",
+    "choices": [
+      "Un contact non critique n’impose jamais d’entretien.",
+      "Un tissu normalement stérile.",
+      "La peau intacte.",
+      "Une muqueuse dans tous les cas.",
+      "Le système vasculaire."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le niveau de risque ne supprime pas l’entretien adapté.",
+      "Ce contact appartient au niveau critique.",
+      "Ce contact définit la catégorie non critique.",
+      "Le contact muqueux relève du raisonnement semi-critique.",
+      "L’accès vasculaire est critique."
+    ],
+    "explanation": "A - Faux. Le niveau de risque ne supprime pas l’entretien adapté. B - Faux. Ce contact appartient au niveau critique. C - Vrai. Ce contact définit la catégorie non critique. D - Faux. Le contact muqueux relève du raisonnement semi-critique. E - Faux. L’accès vasculaire est critique.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c068",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Quel site définit un DM non critique ?",
+        "answers": [
+          "La peau intacte. Le dispositif reste soumis à un entretien compatible avec son utilisation."
+        ],
+        "explanation": "Le dispositif reste soumis à un entretien compatible avec son utilisation."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q069",
+    "courseId": "prevention_ias_asepsie",
+    "number": 69,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quels éléments caractérisent un dispositif critique ?",
+    "choices": [
+      "Un procédé validé dans le circuit adapté.",
+      "Un contact avec un site normalement stérile ou le système vasculaire.",
+      "L’apparence métallique suffit à déterminer son classement.",
+      "Une désinfection de surface choisie librement suffit toujours.",
+      "Le contact exclusif avec une peau intacte."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les exceptions éventuelles relèvent de procédures spécialisées.",
+      "Le risque impose un niveau de traitement élevé.",
+      "La destination prime sur le matériau seul.",
+      "Le procédé ne se décide pas à convenance au lit.",
+      "Il s’agit alors d’un autre niveau de risque."
+    ],
+    "explanation": "A - Vrai. Les exceptions éventuelles relèvent de procédures spécialisées. B - Vrai. Le risque impose un niveau de traitement élevé. C - Faux. La destination prime sur le matériau seul. D - Faux. Le procédé ne se décide pas à convenance au lit. E - Faux. Il s’agit alors d’un autre niveau de risque.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c069",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Comment reconnaître la destination critique d’un dispositif ?",
+        "answers": [
+          "Il accède à un tissu stérile ou au système vasculaire. Son traitement relève d’un circuit validé adapté."
+        ],
+        "explanation": "Son traitement relève d’un circuit validé adapté."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q070",
+    "courseId": "prevention_ias_asepsie",
+    "number": 70,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "hard",
+    "question": "Comment raisonner devant un dispositif semi-critique thermosensible ?",
+    "choices": [
+      "Appliquer obligatoirement n’importe quel cycle d’autoclave.",
+      "Vérifier aussi le statut de ses accessoires.",
+      "Le ranger sale en attendant de connaître le produit.",
+      "Identifier destination, notice et circuit de traitement validé.",
+      "Choisir librement entre tous les niveaux de désinfection."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La compatibilité thermique doit être respectée.",
+      "Leur destination ou usage unique peut différer.",
+      "Le circuit doit être anticipé et démarrer sans retard évitable.",
+      "La seule thermosensibilité ne détermine pas le procédé.",
+      "Le niveau requis ne dépend pas de la préférence individuelle."
+    ],
+    "explanation": "A - Faux. La compatibilité thermique doit être respectée. B - Vrai. Leur destination ou usage unique peut différer. C - Faux. Le circuit doit être anticipé et démarrer sans retard évitable. D - Vrai. La seule thermosensibilité ne détermine pas le procédé. E - Faux. Le niveau requis ne dépend pas de la préférence individuelle.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c070",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Que vérifier pour le retraitement d’un DM thermosensible ?",
+        "answers": [
+          "Destination, notice et procédé validé, y compris pour les accessoires. La thermosensibilité seule ne suffit pas."
+        ],
+        "explanation": "La thermosensibilité seule ne suffit pas."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q071",
+    "courseId": "prevention_ias_asepsie",
+    "number": 71,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent la résistance aux procédés microbiocides ?",
+    "choices": [
+      "Les prions se traitent sans précaution particulière par tout procédé.",
+      "La résistance aux antibiotiques prouve la résistance à tout désinfectant.",
+      "Tous les virus ont une sensibilité identique.",
+      "Le spectre et les conditions revendiqués du produit comptent.",
+      "Les spores bactériennes sont particulièrement résistantes."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils relèvent de procédures spécifiques.",
+      "Ces résistances ne sont pas équivalentes.",
+      "La présence d’une enveloppe peut modifier leur sensibilité.",
+      "Une famille de produit ne garantit pas toutes les activités.",
+      "Elles ne s’éliminent pas comme toutes les formes végétatives."
+    ],
+    "explanation": "A - Faux. Ils relèvent de procédures spécifiques. B - Faux. Ces résistances ne sont pas équivalentes. C - Faux. La présence d’une enveloppe peut modifier leur sensibilité. D - Vrai. Une famille de produit ne garantit pas toutes les activités. E - Vrai. Elles ne s’éliminent pas comme toutes les formes végétatives.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c071",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Pourquoi vérifier le spectre d’un produit de traitement ?",
+        "answers": [
+          "Les agents n’ont pas la même résistance. Le procédé doit répondre à l’objectif dans ses conditions d’emploi."
+        ],
+        "explanation": "Le procédé doit répondre à l’objectif dans ses conditions d’emploi."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q072",
+    "courseId": "prevention_ias_asepsie",
+    "number": 72,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quels objectifs justifient un prétraitement immédiat ?",
+    "choices": [
+      "Autoriser l’immersion de tout équipement électrique.",
+      "Réduire la charge et protéger les personnes.",
+      "Rendre automatiquement le matériel prêt à l’emploi.",
+      "Éviter le séchage des souillures.",
+      "Faciliter les étapes ultérieures."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La compatibilité doit être vérifiée.",
+      "Le matériel souillé expose les manipulateurs.",
+      "Le traitement final reste nécessaire.",
+      "Des dépôts secs compliquent le nettoyage ultérieur.",
+      "Le prétraitement prépare la suite sans la remplacer."
+    ],
+    "explanation": "A - Faux. La compatibilité doit être vérifiée. B - Vrai. Le matériel souillé expose les manipulateurs. C - Faux. Le traitement final reste nécessaire. D - Vrai. Des dépôts secs compliquent le nettoyage ultérieur. E - Vrai. Le prétraitement prépare la suite sans la remplacer.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c072",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Pourquoi prétraiter un DM souillé immédiatement ?",
+        "answers": [
+          "Pour éviter le séchage, réduire la charge et faciliter le nettoyage. Cela ne le rend pas prêt à l’emploi."
+        ],
+        "explanation": "Cela ne le rend pas prêt à l’emploi."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q073",
+    "courseId": "prevention_ias_asepsie",
+    "number": 73,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Pourquoi nettoyer avant désinfection ou stérilisation ?",
+    "choices": [
+      "Le nettoyage et la stérilisation ont exactement le même résultat.",
+      "Le nettoyage élimine les matières organiques et salissures.",
+      "Un produit plus concentré rend le nettoyage inutile.",
+      "L’autoclave compense tout défaut de préparation du matériel.",
+      "Les dépôts peuvent empêcher un contact efficace."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Leurs objectifs et niveaux de traitement diffèrent.",
+      "L’action mécanique et le produit adapté participent à cette étape.",
+      "La concentration ne remplace pas l’élimination des souillures.",
+      "Un procédé validé dépend de la chaîne préalable.",
+      "Le traitement doit atteindre les surfaces concernées."
+    ],
+    "explanation": "A - Faux. Leurs objectifs et niveaux de traitement diffèrent. B - Vrai. L’action mécanique et le produit adapté participent à cette étape. C - Faux. La concentration ne remplace pas l’élimination des souillures. D - Faux. Un procédé validé dépend de la chaîne préalable. E - Vrai. Le traitement doit atteindre les surfaces concernées.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c073",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Pourquoi le nettoyage précède-t-il le traitement final ?",
+        "answers": [
+          "Les souillures peuvent faire obstacle au procédé. Le traitement doit atteindre toutes les zones requises."
+        ],
+        "explanation": "Le traitement doit atteindre toutes les zones requises."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q074",
+    "courseId": "prevention_ias_asepsie",
+    "number": 74,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "hard",
+    "question": "Un dispositif non immersible doit être entretenu. Quelles conduites sont adaptées ?",
+    "choices": [
+      "Éviter la pulvérisation directe improvisée sur l’électronique.",
+      "Un essuyage humide avec produit compatible, selon sa notice.",
+      "Ne traiter que la zone portant une tache visible.",
+      "L’immerger pour garantir une action plus forte.",
+      "Utiliser une SHA pour les mains comme solution universelle."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le mode d’application dépend de la compatibilité.",
+      "La méthode doit traiter les surfaces sans dégrader le DM.",
+      "Les surfaces de contact peuvent être contaminées sans trace.",
+      "La non-immersion doit être respectée.",
+      "Ce produit n’est pas destiné à tous les matériels."
+    ],
+    "explanation": "A - Vrai. Le mode d’application dépend de la compatibilité. B - Vrai. La méthode doit traiter les surfaces sans dégrader le DM. C - Faux. Les surfaces de contact peuvent être contaminées sans trace. D - Faux. La non-immersion doit être respectée. E - Faux. Ce produit n’est pas destiné à tous les matériels.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c074",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Comment entretenir un appareil non immersible ?",
+        "answers": [
+          "Par la méthode compatible prévue, souvent un essuyage adapté. Ni immersion ni pulvérisation directe ne s’improvisent."
+        ],
+        "explanation": "Ni immersion ni pulvérisation directe ne s’improvisent."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q075",
+    "courseId": "prevention_ias_asepsie",
+    "number": 75,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quelles règles s’appliquent à une solution de traitement préparée ?",
+    "choices": [
+      "Mélanger les restes de deux bains facilite la traçabilité.",
+      "La renouveler selon la notice et si elle est souillée.",
+      "Respecter la dilution, la température et la durée d’emploi prévues.",
+      "Doubler la dose améliore toujours efficacité et tolérance.",
+      "Toutes les solutions se conservent le même nombre d’heures."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette pratique ne garantit pas les caractéristiques attendues.",
+      "L’état du bain conditionne son utilisation.",
+      "L’efficacité dépend de ces paramètres.",
+      "Une surconcentration peut être inadaptée ou dangereuse.",
+      "La stabilité dépend du produit et des conditions."
+    ],
+    "explanation": "A - Faux. Cette pratique ne garantit pas les caractéristiques attendues. B - Vrai. L’état du bain conditionne son utilisation. C - Vrai. L’efficacité dépend de ces paramètres. D - Faux. Une surconcentration peut être inadaptée ou dangereuse. E - Faux. La stabilité dépend du produit et des conditions.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c075",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Quels paramètres vérifier lors de la préparation d’un bain ?",
+        "answers": [
+          "Dilution, température, durée et état de la solution. Les valeurs sont propres au produit et au procédé."
+        ],
+        "explanation": "Les valeurs sont propres au produit et au procédé."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q076",
+    "courseId": "prevention_ias_asepsie",
+    "number": 76,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "hard",
+    "question": "Quelles interprétations sont correctes concernant les procédés ?",
+    "choices": [
+      "Une réduction de cinq log divise la population par cent mille.",
+      "Tout dispositif supporte le même cycle de vapeur.",
+      "Dix puissance moins six signifie ce nombre de germes sur chaque objet.",
+      "Une désinfection maintient nécessairement la stérilité sans emballage.",
+      "L’assurance de stérilité exprime une probabilité après procédé validé."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Chaque log correspond à un facteur dix.",
+      "Cycle et compatibilité doivent être validés.",
+      "Un niveau probabiliste n’est pas un comptage individuel.",
+      "Son résultat peut être suivi d’une recontamination.",
+      "Elle ne correspond pas à une fraction littérale de germe."
+    ],
+    "explanation": "A - Vrai. Chaque log correspond à un facteur dix. B - Faux. Cycle et compatibilité doivent être validés. C - Faux. Un niveau probabiliste n’est pas un comptage individuel. D - Faux. Son résultat peut être suivi d’une recontamination. E - Vrai. Elle ne correspond pas à une fraction littérale de germe.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c076",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Comment distinguer réduction logarithmique et assurance de stérilité ?",
+        "answers": [
+          "L’une décrit une diminution de population, l’autre une probabilité résiduelle. Ce ne sont pas deux comptages équivalents."
+        ],
+        "explanation": "Ce ne sont pas deux comptages équivalents."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q077",
+    "courseId": "prevention_ias_asepsie",
+    "number": 77,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quels contrôles concernent un sachet de matériel stérile ?",
+    "choices": [
+      "Une date dépassée peut être ignorée si l’emballage paraît intact.",
+      "Un sachet ouvert reste utilisable comme stérile indéfiniment.",
+      "Absence de compression ou de microperforation suspectée.",
+      "Un élastique fortement serré améliore toujours la conservation.",
+      "Intégrité, état sec et date limite."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’intégrité n’est pas le seul critère.",
+      "L’ouverture compromet la protection du contenu.",
+      "La barrière doit rester intacte.",
+      "La compression peut endommager le conditionnement.",
+      "Ces critères participent au maintien de l’état obtenu."
+    ],
+    "explanation": "A - Faux. L’intégrité n’est pas le seul critère. B - Faux. L’ouverture compromet la protection du contenu. C - Vrai. La barrière doit rester intacte. D - Faux. La compression peut endommager le conditionnement. E - Vrai. Ces critères participent au maintien de l’état obtenu.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c077",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "Que vérifier avant d’utiliser un matériel conditionné stérile ?",
+        "answers": [
+          "Intégrité, sécheresse, identification et péremption. La conservation dépend du conditionnement et du circuit."
+        ],
+        "explanation": "La conservation dépend du conditionnement et du circuit."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q078",
+    "courseId": "prevention_ias_asepsie",
+    "number": 78,
+    "theme": "Dispositifs médicaux, retraitement et stérilisation",
+    "difficulty": "medium",
+    "question": "Quel est l’intérêt de la traçabilité d’un dispositif traité ?",
+    "choices": [
+      "Autoriser un sachet humide si le numéro de lot est lisible.",
+      "Relier traitement, dispositif et patient lorsque requis.",
+      "Permettre de rechercher un cycle et ses contrôles.",
+      "Conserver uniquement la marque du matériel sans autre donnée.",
+      "Remplacer le traitement lorsqu’une étiquette est présente."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La traçabilité ne supprime pas les critères d’intégrité.",
+      "Les opérations doivent pouvoir être retrouvées.",
+      "Les identifiants rendent le circuit vérifiable.",
+      "Les informations nécessaires dépendent du circuit de suivi.",
+      "Une étiquette ne produit pas de désinfection."
+    ],
+    "explanation": "A - Faux. La traçabilité ne supprime pas les critères d’intégrité. B - Vrai. Les opérations doivent pouvoir être retrouvées. C - Vrai. Les identifiants rendent le circuit vérifiable. D - Faux. Les informations nécessaires dépendent du circuit de suivi. E - Faux. Une étiquette ne produit pas de désinfection.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c078",
+        "theme": "Dispositifs médicaux, retraitement et stérilisation",
+        "front": "À quoi sert la traçabilité après traitement d’un DM ?",
+        "answers": [
+          "Retrouver dispositif, opérations et patient si nécessaire. Elle complète les contrôles sans remplacer le traitement."
+        ],
+        "explanation": "Elle complète les contrôles sans remplacer le traitement."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q079",
+    "courseId": "prevention_ias_asepsie",
+    "number": 79,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "easy",
+    "question": "Quels principes organisent un bionettoyage cohérent ?",
+    "choices": [
+      "Considérer tous les locaux comme équivalents.",
+      "Adapter méthode et fréquence au risque du secteur.",
+      "Utiliser partout la même lavette sans changement.",
+      "Traiter seulement les surfaces visiblement tachées.",
+      "Éviter de revenir du sale vers le propre."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vulnérabilité et activités diffèrent.",
+      "L’activité et les contacts déterminent les besoins.",
+      "Elle peut déplacer une contamination.",
+      "Les points fréquemment touchés peuvent être contaminés sans trace.",
+      "La progression ne doit pas recontaminer les zones traitées."
+    ],
+    "explanation": "A - Faux. Vulnérabilité et activités diffèrent. B - Vrai. L’activité et les contacts déterminent les besoins. C - Faux. Elle peut déplacer une contamination. D - Faux. Les points fréquemment touchés peuvent être contaminés sans trace. E - Vrai. La progression ne doit pas recontaminer les zones traitées.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c079",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Quel est le but de la progression du propre vers le sale ?",
+        "answers": [
+          "Éviter de recontaminer les zones traitées. La méthode doit maîtriser les flux et les outils utilisés."
+        ],
+        "explanation": "La méthode doit maîtriser les flux et les outils utilisés."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q080",
+    "courseId": "prevention_ias_asepsie",
+    "number": 80,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Que signifie la marche en avant ?",
+    "choices": [
+      "Une dispense de traiter le matériel entre patients.",
+      "Le seul ordre des chambres en fin de journée.",
+      "L’autorisation de conserver les mêmes gants partout.",
+      "Une organisation limitant le retour ou croisement du sale vers le propre.",
+      "Une obligation de commencer par le plus contaminé."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La progression ne désinfecte pas le matériel.",
+      "Le principe est plus large qu’un classement des chambres.",
+      "Les contacts doivent rester maîtrisés à chaque étape.",
+      "Elle concerne personnes, matériel et circuits.",
+      "On évite au contraire le retour contaminant vers le propre."
+    ],
+    "explanation": "A - Faux. La progression ne désinfecte pas le matériel. B - Faux. Le principe est plus large qu’un classement des chambres. C - Faux. Les contacts doivent rester maîtrisés à chaque étape. D - Vrai. Elle concerne personnes, matériel et circuits. E - Faux. On évite au contraire le retour contaminant vers le propre.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c080",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "La marche en avant se limite-t-elle à l’ordre des chambres ?",
+        "answers": [
+          "Non. Elle organise les flux pour empêcher le croisement du sale vers le propre."
+        ],
+        "explanation": "Elle organise les flux pour empêcher le croisement du sale vers le propre."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q081",
+    "courseId": "prevention_ias_asepsie",
+    "number": 81,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "hard",
+    "question": "Une méthode d’entretien des sols fonctionne dans un secteur. Comment la transposer ?",
+    "choices": [
+      "Omettre les surfaces de contact proches du patient.",
+      "Choisir systématiquement la solution la plus concentrée.",
+      "Maintenir compatibilité et conditions d’application des produits.",
+      "L’appliquer sans analyse à tout local de soins.",
+      "Vérifier le risque, l’activité et le protocole du nouveau secteur."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles sont des points de transmission importants.",
+      "La surconcentration n’est pas une validation.",
+      "Le support et le produit doivent convenir.",
+      "Le contexte peut modifier les exigences.",
+      "Une méthode locale ne couvre pas tous les usages."
+    ],
+    "explanation": "A - Faux. Elles sont des points de transmission importants. B - Faux. La surconcentration n’est pas une validation. C - Vrai. Le support et le produit doivent convenir. D - Faux. Le contexte peut modifier les exigences. E - Vrai. Une méthode locale ne couvre pas tous les usages.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c081",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Pourquoi adapter le bionettoyage au secteur ?",
+        "answers": [
+          "Activités, surfaces et vulnérabilité diffèrent. Une pratique locale ne devient pas une règle universelle."
+        ],
+        "explanation": "Une pratique locale ne devient pas une règle universelle."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q082",
+    "courseId": "prevention_ias_asepsie",
+    "number": 82,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Quelles interventions peuvent produire un risque d’empoussièrement ?",
+    "choices": [
+      "Une démolition ou un terrassement.",
+      "Seuls les chantiers de plusieurs mois sont concernés.",
+      "L’ouverture d’un faux plafond.",
+      "Une maintenance générant des poussières près des patients.",
+      "La brièveté garantit l’absence de spores."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces travaux remettent des poussières en suspension.",
+      "Une intervention brève peut aussi exposer.",
+      "Une intervention limitée peut exposer le secteur.",
+      "La taille apparente du chantier ne suffit pas.",
+      "Le risque dépend de la production et du terrain."
+    ],
+    "explanation": "A - Vrai. Ces travaux remettent des poussières en suspension. B - Faux. Une intervention brève peut aussi exposer. C - Vrai. Une intervention limitée peut exposer le secteur. D - Vrai. La taille apparente du chantier ne suffit pas. E - Faux. Le risque dépend de la production et du terrain.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c082",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Un petit travail de maintenance peut-il exposer à des spores ?",
+        "answers": [
+          "Oui. Le risque dépend des poussières produites, pas seulement de la taille ou durée du chantier."
+        ],
+        "explanation": "Le risque dépend des poussières produites, pas seulement de la taille ou durée du chantier."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q083",
+    "courseId": "prevention_ias_asepsie",
+    "number": 83,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent le risque lié à Aspergillus ?",
+    "choices": [
+      "Toute exposition provoque la même maladie chez tous.",
+      "Des surchaussures suffisent à filtrer l’air inhalé.",
+      "L’immunodépression peut favoriser une forme invasive grave.",
+      "Les spores environnementales peuvent être inhalées.",
+      "Aspergillus est une bactérie digestive par définition."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Terrain et forme clinique doivent être distingués.",
+      "Elles ne contrôlent pas l’exposition respiratoire.",
+      "Le terrain modifie l’expression de l’exposition.",
+      "La voie respiratoire est une porte d’entrée importante.",
+      "C’est une moisissure environnementale."
+    ],
+    "explanation": "A - Faux. Terrain et forme clinique doivent être distingués. B - Faux. Elles ne contrôlent pas l’exposition respiratoire. C - Vrai. Le terrain modifie l’expression de l’exposition. D - Vrai. La voie respiratoire est une porte d’entrée importante. E - Faux. C’est une moisissure environnementale.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c083",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Pourquoi les travaux sont-ils préoccupants chez un patient immunodéprimé ?",
+        "answers": [
+          "Ils peuvent disperser des spores inhalées. Le terrain favorise notamment des infections fongiques invasives graves."
+        ],
+        "explanation": "Le terrain favorise notamment des infections fongiques invasives graves."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q084",
+    "courseId": "prevention_ias_asepsie",
+    "number": 84,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "hard",
+    "question": "Une barrière de chantier gêne un passage. Quelles conduites sont adaptées ?",
+    "choices": [
+      "Signaler une rupture ou des poussières inhabituelles.",
+      "Compenser l’ouverture par des surchaussures.",
+      "Ouvrir la barrière pour un raccourci rapide.",
+      "Respecter le confinement et le circuit fléché.",
+      "Décider seul de modifier la ventilation du secteur."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les équipes compétentes doivent pouvoir intervenir.",
+      "Elles n’empêchent pas la dispersion aérienne.",
+      "Un passage peut compromettre le confinement.",
+      "Ils limitent l’exposition des secteurs de soins.",
+      "La maîtrise de l’air relève d’une organisation compétente."
+    ],
+    "explanation": "A - Vrai. Les équipes compétentes doivent pouvoir intervenir. B - Faux. Elles n’empêchent pas la dispersion aérienne. C - Faux. Un passage peut compromettre le confinement. D - Vrai. Ils limitent l’exposition des secteurs de soins. E - Faux. La maîtrise de l’air relève d’une organisation compétente.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c084",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Que faire si un confinement de chantier est rompu ?",
+        "answers": [
+          "Éviter le passage exposant et signaler. Les barrières et circuits doivent être rétablis par l’organisation prévue."
+        ],
+        "explanation": "Les barrières et circuits doivent être rétablis par l’organisation prévue."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q085",
+    "courseId": "prevention_ias_asepsie",
+    "number": 85,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "easy",
+    "question": "Quelles associations entre eau et voie d’exposition sont cohérentes ?",
+    "choices": [
+      "Ingestion : certaines infections digestives.",
+      "Aérosol inhalé : légionelles.",
+      "Plaie en contact avec une eau contaminée : risque cutané.",
+      "Toute qualité d’eau convient à toute utilisation.",
+      "Une eau claire est nécessairement conforme."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’eau peut véhiculer des agents entériques.",
+      "La voie décrite est respiratoire.",
+      "La barrière cutanée lésée permet une exposition.",
+      "Boisson, soin et retraitement ont des exigences distinctes.",
+      "La contamination peut être invisible."
+    ],
+    "explanation": "A - Vrai. L’eau peut véhiculer des agents entériques. B - Vrai. La voie décrite est respiratoire. C - Vrai. La barrière cutanée lésée permet une exposition. D - Faux. Boisson, soin et retraitement ont des exigences distinctes. E - Faux. La contamination peut être invisible.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c085",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Quelles trois voies d’exposition à une eau contaminée distinguer ?",
+        "answers": [
+          "Digestive, respiratoire par aérosol et contact cutanéo-muqueux. L’usage et le terrain déterminent la prévention."
+        ],
+        "explanation": "L’usage et le terrain déterminent la prévention."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q086",
+    "courseId": "prevention_ias_asepsie",
+    "number": 86,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Quelle exposition correspond à la transmission environnementale de la légionellose ?",
+    "choices": [
+      "Inhaler un aérosol d’eau contaminée.",
+      "Le seul fait de voir un point d’eau.",
+      "L’absence de transmission interhumaine autorise toute eau contaminée à boire.",
+      "Une transmission interhumaine habituelle définissant toute légionellose.",
+      "Une injection vaccinale contre toutes les pneumonies."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les particules peuvent atteindre les alvéoles.",
+      "Il faut une exposition pertinente.",
+      "Une voie différente ne vaut pas autorisation d’usage.",
+      "La source décrite est principalement environnementale.",
+      "Cela ne décrit pas la transmission."
+    ],
+    "explanation": "A - Vrai. Les particules peuvent atteindre les alvéoles. B - Faux. Il faut une exposition pertinente. C - Faux. Une voie différente ne vaut pas autorisation d’usage. D - Faux. La source décrite est principalement environnementale. E - Faux. Cela ne décrit pas la transmission.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c086",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Quelle exposition respiratoire relie eau et légionellose ?",
+        "answers": [
+          "L’inhalation d’un aérosol contaminé. Cela ne préjuge pas des autres usages autorisés de cette eau."
+        ],
+        "explanation": "Cela ne préjuge pas des autres usages autorisés de cette eau."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q087",
+    "courseId": "prevention_ias_asepsie",
+    "number": 87,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Quels facteurs du réseau favorisent un développement microbien ?",
+    "choices": [
+      "Tartre et portions de réseau peu circulantes.",
+      "Températures favorables au développement de l’agent.",
+      "Stagnation et faible renouvellement de l’eau.",
+      "Un écoulement bref prouve l’absence de contamination.",
+      "Le seul aspect propre du robinet exclut le risque."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Dépôts et bras morts favorisent la persistance.",
+      "La température fait partie de la maîtrise du réseau.",
+      "Les zones peu utilisées peuvent poser problème.",
+      "La qualité demande les contrôles adaptés.",
+      "L’état du réseau ne se résume pas à son apparence."
+    ],
+    "explanation": "A - Vrai. Dépôts et bras morts favorisent la persistance. B - Vrai. La température fait partie de la maîtrise du réseau. C - Vrai. Les zones peu utilisées peuvent poser problème. D - Faux. La qualité demande les contrôles adaptés. E - Faux. L’état du réseau ne se résume pas à son apparence.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c087",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Quels trois facteurs surveiller dans un réseau d’eau ?",
+        "answers": [
+          "Stagnation, dépôts et températures favorables. La maîtrise du réseau doit être organisée et contrôlée."
+        ],
+        "explanation": "La maîtrise du réseau doit être organisée et contrôlée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q088",
+    "courseId": "prevention_ias_asepsie",
+    "number": 88,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "hard",
+    "question": "Une purge de point d’eau est prévue. Quelles règles sont cohérentes ?",
+    "choices": [
+      "Suivre la méthode, la périodicité et la traçabilité prévues.",
+      "Déclarer l’eau conforme après toute purge.",
+      "Choisir une durée unique valable dans tout établissement.",
+      "Éviter d’exposer le visage et le patient au premier jet.",
+      "Utiliser la purge pour lever seul une restriction."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La purge appartient au plan du réseau.",
+      "La purge ne constitue pas à elle seule un contrôle.",
+      "Les modalités dépendent du plan applicable.",
+      "Il faut limiter projections et aérosols exposants.",
+      "La remise en service suit le circuit compétent."
+    ],
+    "explanation": "A - Vrai. La purge appartient au plan du réseau. B - Faux. La purge ne constitue pas à elle seule un contrôle. C - Faux. Les modalités dépendent du plan applicable. D - Vrai. Il faut limiter projections et aérosols exposants. E - Faux. La remise en service suit le circuit compétent.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c088",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Une purge suffit-elle à lever une restriction sur l’eau ?",
+        "answers": [
+          "Non. La remise en service dépend des mesures et contrôles prévus, pas du seul écoulement."
+        ],
+        "explanation": "La remise en service dépend des mesures et contrôles prévus, pas du seul écoulement."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q089",
+    "courseId": "prevention_ias_asepsie",
+    "number": 89,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "medium",
+    "question": "Une eau colorée et une température inhabituelle sont constatées. Quelles actions sont pertinentes ?",
+    "choices": [
+      "Supposer que l’eau est sûre si la couleur disparaît.",
+      "Modifier sans concertation tous les réglages du réseau.",
+      "Respecter les mesures d’usage décidées.",
+      "Signaler des observations précises au circuit technique et d’hygiène.",
+      "Ignorer l’anomalie si aucun patient n’a de symptôme."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’apparence ne prouve pas la conformité.",
+      "Les interventions demandent une maîtrise technique.",
+      "Le soignant ne lève pas seul une restriction.",
+      "L’anomalie doit être évaluée par les équipes compétentes.",
+      "Le signalement permet une prévention avant l’infection."
+    ],
+    "explanation": "A - Faux. L’apparence ne prouve pas la conformité. B - Faux. Les interventions demandent une maîtrise technique. C - Vrai. Le soignant ne lève pas seul une restriction. D - Vrai. L’anomalie doit être évaluée par les équipes compétentes. E - Faux. Le signalement permet une prévention avant l’infection.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c089",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Que transmettre face à une anomalie d’eau ?",
+        "answers": [
+          "Aspect, température, débit et point concerné. Des observations précises permettent une évaluation du réseau."
+        ],
+        "explanation": "Des observations précises permettent une évaluation du réseau."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q090",
+    "courseId": "prevention_ias_asepsie",
+    "number": 90,
+    "theme": "Bionettoyage, air, travaux et eau",
+    "difficulty": "hard",
+    "question": "Un traitement thermique du réseau est organisé. Quels risques faut-il aussi prévenir ?",
+    "choices": [
+      "Le défaut d’information des équipes exposées.",
+      "Une valeur unique garantit la sécurité de tous les patients.",
+      "Les brûlures lors d’un usage intempestif.",
+      "Le traitement peut être improvisé par chaque soignant.",
+      "Une reprise non autorisée avant les contrôles prévus."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’organisation doit empêcher un usage dangereux.",
+      "Terrain et conditions d’exposition doivent être considérés.",
+      "L’eau très chaude peut léser rapidement.",
+      "Il relève d’une procédure technique coordonnée.",
+      "La remise en service doit rester maîtrisée."
+    ],
+    "explanation": "A - Vrai. L’organisation doit empêcher un usage dangereux. B - Faux. Terrain et conditions d’exposition doivent être considérés. C - Vrai. L’eau très chaude peut léser rapidement. D - Faux. Il relève d’une procédure technique coordonnée. E - Vrai. La remise en service doit rester maîtrisée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c090",
+        "theme": "Bionettoyage, air, travaux et eau",
+        "front": "Quel risque immédiat ajoute un traitement thermique du réseau ?",
+        "answers": [
+          "La brûlure par eau chaude. Informer, sécuriser les points et attendre une remise en service autorisée."
+        ],
+        "explanation": "Informer, sécuriser les points et attendre une remise en service autorisée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q091",
+    "courseId": "prevention_ias_asepsie",
+    "number": 91,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Après une toilette exposante, le soignant garde les gants pour ouvrir les tiroirs. Quelles corrections sont adaptées ?",
+    "choices": [
+      "Désinfecter les gants puis les garder pour le patient suivant.",
+      "Ne traiter que les mains en ignorant les surfaces souillées.",
+      "Réaliser l’hygiène des mains avant le matériel propre.",
+      "Retirer les gants à la fin de la tâche.",
+      "Ajouter une deuxième paire sans retirer la première règle tout le problème."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les gants de soin ne sont pas réutilisés ainsi.",
+      "L’environnement contaminé doit aussi être pris en compte.",
+      "Le retrait ne garantit pas à lui seul des mains propres.",
+      "Leur maintien transporte la contamination.",
+      "L’empilement ne corrige pas les surfaces déjà contaminées."
+    ],
+    "explanation": "A - Faux. Les gants de soin ne sont pas réutilisés ainsi. B - Faux. L’environnement contaminé doit aussi être pris en compte. C - Vrai. Le retrait ne garantit pas à lui seul des mains propres. D - Vrai. Leur maintien transporte la contamination. E - Faux. L’empilement ne corrige pas les surfaces déjà contaminées.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c091",
+        "theme": "Cas et décisions intégrées",
+        "front": "Après un soin sale, comment accéder au matériel propre ?",
+        "answers": [
+          "Retirer les gants puis réaliser l’hygiène des mains requise. Traiter aussi les surfaces éventuellement contaminées."
+        ],
+        "explanation": "Traiter aussi les surfaces éventuellement contaminées."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q092",
+    "courseId": "prevention_ias_asepsie",
+    "number": 92,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Avant un médicament sur une VVP déjà posée, quels éléments restent nécessaires ?",
+    "choices": [
+      "La désinfection de l’accès.",
+      "L’hygiène des mains avant le geste aseptique.",
+      "Appliquer un volume de rinçage universel sans contexte.",
+      "L’évaluation de la voie et le rinçage selon le protocole.",
+      "Injecter directement parce que la voie appartient au même patient."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le point de manipulation peut être contaminé.",
+      "La présence préalable de la voie ne dispense pas de préparation.",
+      "Le dispositif et la situation déterminent les modalités.",
+      "L’accès doit permettre une administration sûre.",
+      "Le risque existe aussi entre manipulations."
+    ],
+    "explanation": "A - Vrai. Le point de manipulation peut être contaminé. B - Vrai. La présence préalable de la voie ne dispense pas de préparation. C - Faux. Le dispositif et la situation déterminent les modalités. D - Vrai. L’accès doit permettre une administration sûre. E - Faux. Le risque existe aussi entre manipulations.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c092",
+        "theme": "Cas et décisions intégrées",
+        "front": "Quels temps précèdent l’administration sur une VVP en place ?",
+        "answers": [
+          "Mains, désinfection de l’accès, évaluation et rinçage prévu. Une voie déjà posée reste un accès à protéger."
+        ],
+        "explanation": "Une voie déjà posée reste un accès à protéger."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q093",
+    "courseId": "prevention_ias_asepsie",
+    "number": 93,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "medium",
+    "question": "Une fibroscopie se termine. Quelle première étape concerne l’endoscope réutilisable ?",
+    "choices": [
+      "Un autoclave imposé à tous les modèles sans notice.",
+      "L’absence de traitement si le patient n’a pas d’infection connue.",
+      "Le stockage sale jusqu’au lendemain.",
+      "Le prétraitement immédiat selon la procédure.",
+      "La remise en service après un simple essuyage extérieur."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La thermosensibilité et le procédé validé comptent.",
+      "Le retraitement ne dépend pas seulement du statut connu.",
+      "Le retard compromet la chaîne de traitement.",
+      "Il évite le séchage et facilite le nettoyage.",
+      "Les surfaces et canaux demandent un traitement complet."
+    ],
+    "explanation": "A - Faux. La thermosensibilité et le procédé validé comptent. B - Faux. Le retraitement ne dépend pas seulement du statut connu. C - Faux. Le retard compromet la chaîne de traitement. D - Vrai. Il évite le séchage et facilite le nettoyage. E - Faux. Les surfaces et canaux demandent un traitement complet.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c093",
+        "theme": "Cas et décisions intégrées",
+        "front": "Quelle étape démarre immédiatement après usage d’un endoscope ?",
+        "answers": [
+          "Le prétraitement selon sa procédure. Il prépare le nettoyage sans remplacer les étapes suivantes."
+        ],
+        "explanation": "Il prépare le nettoyage sans remplacer les étapes suivantes."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q094",
+    "courseId": "prevention_ias_asepsie",
+    "number": 94,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Un accessoire d’endoscope traverse une muqueuse pour prélever un tissu. Comment décider de son circuit ?",
+    "choices": [
+      "Examiner sa destination propre et sa notice.",
+      "Le classer automatiquement comme l’appareil auquel il se raccorde.",
+      "Décider que tout accessoire est non critique.",
+      "Vérifier s’il est à usage unique.",
+      "Choisir le bain disponible sans regarder le matériel."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’accessoire peut avoir un niveau de risque différent.",
+      "L’usage de l’accessoire doit être évalué séparément.",
+      "Le contact peut atteindre un site ou tissu critique.",
+      "Le statut interdit un retraitement ordinaire pour réutilisation.",
+      "Compatibilité et niveau requis sont déterminants."
+    ],
+    "explanation": "A - Vrai. L’accessoire peut avoir un niveau de risque différent. B - Faux. L’usage de l’accessoire doit être évalué séparément. C - Faux. Le contact peut atteindre un site ou tissu critique. D - Vrai. Le statut interdit un retraitement ordinaire pour réutilisation. E - Faux. Compatibilité et niveau requis sont déterminants.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c094",
+        "theme": "Cas et décisions intégrées",
+        "front": "Pourquoi classer séparément l’endoscope et ses accessoires ?",
+        "answers": [
+          "Leur destination et leur statut peuvent différer. Un accessoire ne reprend pas automatiquement le circuit de l’appareil."
+        ],
+        "explanation": "Un accessoire ne reprend pas automatiquement le circuit de l’appareil."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q095",
+    "courseId": "prevention_ias_asepsie",
+    "number": 95,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Un patient tousse mais aucune alerte n’apparaît au dossier. Que faire ?",
+    "choices": [
+      "Conclure à une absence de risque respiratoire.",
+      "Choisir définitivement les mesures sans contexte ni réévaluation.",
+      "Ignorer les sécrétions lors de l’hygiène des mains.",
+      "Évaluer la suspicion et les précautions nécessaires avec l’équipe.",
+      "Mettre en œuvre l’hygiène respiratoire initiale adaptée."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une alerte absente ne prouve rien à elle seule.",
+      "Le risque peut évoluer avec les informations cliniques.",
+      "Le manuportage peut compléter la transmission respiratoire.",
+      "Les signes présents guident l’analyse.",
+      "La prévention ne doit pas attendre le logiciel."
+    ],
+    "explanation": "A - Faux. Une alerte absente ne prouve rien à elle seule. B - Faux. Le risque peut évoluer avec les informations cliniques. C - Faux. Le manuportage peut compléter la transmission respiratoire. D - Vrai. Les signes présents guident l’analyse. E - Vrai. La prévention ne doit pas attendre le logiciel.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c095",
+        "theme": "Cas et décisions intégrées",
+        "front": "Que signifie l’absence d’alerte informatique chez une personne qui tousse ?",
+        "answers": [
+          "Elle n’exclut pas un risque. Les signes et le contexte guident les mesures initiales et leur réévaluation."
+        ],
+        "explanation": "Les signes et le contexte guident les mesures initiales et leur réévaluation."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q096",
+    "courseId": "prevention_ias_asepsie",
+    "number": 96,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Un brassard partagé doit entrer chez un patient en aplasie. Quelles actions sont cohérentes ?",
+    "choices": [
+      "Respecter les consignes de l’unité pour l’entrée.",
+      "L’entretenir par une méthode compatible avant utilisation.",
+      "Confondre aplasie et contagiosité obligatoire.",
+      "Compter uniquement sur la surblouse pour traiter le brassard.",
+      "Considérer les gants comme une compensation du matériel contaminé."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les mesures protectrices sont organisées selon le terrain.",
+      "Le patient vulnérable doit être protégé des intermédiaires.",
+      "L’objectif protecteur est distinct de l’isolement septique.",
+      "Une tenue ne désinfecte pas le matériel.",
+      "Les gants n’éliminent pas ce réservoir."
+    ],
+    "explanation": "A - Vrai. Les mesures protectrices sont organisées selon le terrain. B - Vrai. Le patient vulnérable doit être protégé des intermédiaires. C - Faux. L’objectif protecteur est distinct de l’isolement septique. D - Faux. Une tenue ne désinfecte pas le matériel. E - Faux. Les gants n’éliminent pas ce réservoir.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c096",
+        "theme": "Cas et décisions intégrées",
+        "front": "Quel point vérifier avant d’introduire du matériel chez un patient protégé ?",
+        "answers": [
+          "Son entretien compatible et les consignes de l’unité. Les EPI ne désinfectent pas l’objet introduit."
+        ],
+        "explanation": "Les EPI ne désinfectent pas l’objet introduit."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q097",
+    "courseId": "prevention_ias_asepsie",
+    "number": 97,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Le sachet stérile préparé pour un soin tombe au sol. Quelle décision respecte le raisonnement de sécurité ?",
+    "choices": [
+      "Passer une SHA sur le sachet pour restaurer sa stérilité.",
+      "L’écarter du soin et prendre un matériel conforme selon la procédure.",
+      "Utiliser le contenu si le sachet paraît seulement poussiéreux.",
+      "Omettre l’écart puisqu’il n’y a pas encore eu d’infection.",
+      "Raccourcir l’antisepsie pour compenser le temps perdu."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette action ne revalide pas le conditionnement.",
+      "La maîtrise du conditionnement n’est plus assurée.",
+      "L’apparence seule ne garantit pas la conservation de stérilité.",
+      "Le circuit doit être corrigé avant l’exposition.",
+      "Une autre étape ne doit pas être sacrifiée."
+    ],
+    "explanation": "A - Faux. Cette action ne revalide pas le conditionnement. B - Vrai. La maîtrise du conditionnement n’est plus assurée. C - Faux. L’apparence seule ne garantit pas la conservation de stérilité. D - Faux. Le circuit doit être corrigé avant l’exposition. E - Faux. Une autre étape ne doit pas être sacrifiée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c097",
+        "theme": "Cas et décisions intégrées",
+        "front": "Que faire d’un sachet stérile tombé au sol avant le soin ?",
+        "answers": [
+          "L’écarter et suivre la procédure de remplacement. L’apparence ne suffit pas à garantir la stérilité conservée."
+        ],
+        "explanation": "L’apparence ne suffit pas à garantir la stérilité conservée."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q098",
+    "courseId": "prevention_ias_asepsie",
+    "number": 98,
+    "theme": "Cas et décisions intégrées",
+    "difficulty": "hard",
+    "question": "Avant un soin invasif, quels axes doivent être croisés ?",
+    "choices": [
+      "Le patient, son terrain et le site concerné.",
+      "Le dispositif, son statut et son circuit.",
+      "Le geste, le produit et leurs conditions d’emploi.",
+      "Le seul aspect visuellement propre du matériel.",
+      "Le seul nombre de protections portées."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ils conditionnent exposition et tolérance.",
+      "La destination détermine le niveau de traitement.",
+      "Une préparation correcte dépend de ces conditions.",
+      "La propreté visible n’établit pas le niveau requis.",
+      "Accumuler des EPI ne prouve pas la sécurité."
+    ],
+    "explanation": "A - Vrai. Ils conditionnent exposition et tolérance. B - Vrai. La destination détermine le niveau de traitement. C - Vrai. Une préparation correcte dépend de ces conditions. D - Faux. La propreté visible n’établit pas le niveau requis. E - Faux. Accumuler des EPI ne prouve pas la sécurité.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c098",
+        "theme": "Cas et décisions intégrées",
+        "front": "Quels trois axes croiser avant un soin invasif ?",
+        "answers": [
+          "Patient et site, geste et produit, dispositif et circuit. La sécurité dépend de leur cohérence."
+        ],
+        "explanation": "La sécurité dépend de leur cohérence."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q099",
+    "courseId": "prevention_ias_asepsie",
+    "number": 99,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "medium",
+    "question": "Pourquoi distinguer virus nus et enveloppés pour un procédé de traitement ?",
+    "choices": [
+      "Leur structure peut modifier leur sensibilité.",
+      "Tous les produits agissent de façon identique sur tous les virus.",
+      "Le spectre revendiqué doit être vérifié.",
+      "Un virus nu est toujours plus fragile qu’un virus enveloppé.",
+      "L’aspect clair de la solution prouve son activité virucide."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’enveloppe influence la réponse à certains produits.",
+      "Le spectre et les conditions d’emploi diffèrent.",
+      "On ne déduit pas une activité universelle du seul nom du produit.",
+      "La hiérarchie enseignée ne permet pas cette conclusion.",
+      "L’apparence ne mesure pas l’efficacité."
+    ],
+    "explanation": "A - Vrai. L’enveloppe influence la réponse à certains produits. B - Faux. Le spectre et les conditions d’emploi diffèrent. C - Vrai. On ne déduit pas une activité universelle du seul nom du produit. D - Faux. La hiérarchie enseignée ne permet pas cette conclusion. E - Faux. L’apparence ne mesure pas l’efficacité.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c099",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Pourquoi vérifier l’activité sur les virus nus ?",
+        "answers": [
+          "Ils peuvent être plus résistants à certains procédés. Le spectre du produit doit correspondre à l’objectif."
+        ],
+        "explanation": "Le spectre du produit doit correspondre à l’objectif."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q100",
+    "courseId": "prevention_ias_asepsie",
+    "number": 100,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "hard",
+    "question": "Une situation de gale ou d’infection à C. difficile est signalée. Quel raisonnement est adapté ?",
+    "choices": [
+      "Maintenir le socle des précautions standard.",
+      "Vérifier les consignes propres à l’agent pour les mains et l’environnement.",
+      "Considérer la FHA seule comme réponse universelle.",
+      "Supposer que tout protocole contact est identique.",
+      "Choisir la filière des déchets sans tenir compte du protocole."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les consignes spécifiques s’ajoutent au socle.",
+      "Des caractéristiques particulières modifient les mesures utiles.",
+      "Certaines situations nécessitent des mesures adaptées supplémentaires.",
+      "Spore, parasite et bactérie résistante ne sont pas équivalents.",
+      "L’agent et l’organisation peuvent imposer des règles spécifiques."
+    ],
+    "explanation": "A - Vrai. Les consignes spécifiques s’ajoutent au socle. B - Vrai. Des caractéristiques particulières modifient les mesures utiles. C - Faux. Certaines situations nécessitent des mesures adaptées supplémentaires. D - Faux. Spore, parasite et bactérie résistante ne sont pas équivalents. E - Faux. L’agent et l’organisation peuvent imposer des règles spécifiques.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c100",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Pourquoi adapter les précautions contact à l’agent concerné ?",
+        "answers": [
+          "Spores, parasites et bactéries n’ont pas les mêmes caractéristiques. Les mains, produits et circuits suivent les consignes spécifiques."
+        ],
+        "explanation": "Les mains, produits et circuits suivent les consignes spécifiques."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q101",
+    "courseId": "prevention_ias_asepsie",
+    "number": 101,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "medium",
+    "question": "Avant d’entrer dans une chambre en précautions air, quelles actions sont cohérentes ?",
+    "choices": [
+      "Vérifier son ajustement et respecter les consignes de porte.",
+      "Laisser la porte ouverte pour compenser un masque mal ajusté.",
+      "Choisir seul le réglage technique de renouvellement d’air.",
+      "Mettre le FFP2 seulement après avoir commencé le soin.",
+      "Mettre la protection respiratoire requise avant l’entrée."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’équipement et l’environnement agissent ensemble.",
+      "Cela ne corrige ni les fuites ni la maîtrise du secteur.",
+      "Ces paramètres relèvent du circuit technique compétent.",
+      "L’exposition aurait déjà eu lieu.",
+      "La protection doit précéder l’exposition."
+    ],
+    "explanation": "A - Vrai. L’équipement et l’environnement agissent ensemble. B - Faux. Cela ne corrige ni les fuites ni la maîtrise du secteur. C - Faux. Ces paramètres relèvent du circuit technique compétent. D - Faux. L’exposition aurait déjà eu lieu. E - Vrai. La protection doit précéder l’exposition.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c101",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Quand mettre le FFP2 si des précautions air le requièrent ?",
+        "answers": [
+          "Avant l’entrée, avec ajustement correct. La protection doit précéder l’exposition."
+        ],
+        "explanation": "La protection doit précéder l’exposition."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q102",
+    "courseId": "prevention_ias_asepsie",
+    "number": 102,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "medium",
+    "question": "Quel raisonnement correspond au contact d’une muqueuse par un DM ?",
+    "choices": [
+      "Il devient non critique dès qu’il est thermosensible.",
+      "Le traitement exact doit être validé pour ce dispositif.",
+      "Il relève du niveau semi-critique dans cette classification.",
+      "Il peut être remis en service après tout nettoyage superficiel.",
+      "Le caractère semi-critique autorise une décision libre de produit."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La compatibilité thermique ne change pas sa destination.",
+      "La notice et le circuit déterminent les conditions.",
+      "La destination diffère du simple contact avec peau intacte.",
+      "Le niveau de traitement requis doit être respecté.",
+      "Le procédé n’est pas choisi à convenance."
+    ],
+    "explanation": "A - Faux. La compatibilité thermique ne change pas sa destination. B - Vrai. La notice et le circuit déterminent les conditions. C - Vrai. La destination diffère du simple contact avec peau intacte. D - Faux. Le niveau de traitement requis doit être respecté. E - Faux. Le procédé n’est pas choisi à convenance.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c102",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Quel contact caractérise un dispositif semi-critique ?",
+        "answers": [
+          "Une muqueuse ou une peau non intacte. Son traitement dépend ensuite du dispositif et du circuit validé."
+        ],
+        "explanation": "Son traitement dépend ensuite du dispositif et du circuit validé."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q103",
+    "courseId": "prevention_ias_asepsie",
+    "number": 103,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre formes liées aux légionelles sont correctes ?",
+    "choices": [
+      "La fièvre de Pontiac est décrite comme non pneumonique et bénigne.",
+      "L’immunodépression rend toute pneumonie sans gravité.",
+      "La maladie des légionnaires peut comporter une pneumonie fébrile.",
+      "Le seul nom de la forme remplace l’évaluation du patient.",
+      "Ces deux formes impliquent toujours la même gravité."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle se distingue de la maladie des légionnaires.",
+      "Le terrain peut augmenter le risque de forme sévère.",
+      "Des signes digestifs ou neurologiques peuvent l’accompagner.",
+      "La prise en charge dépend de la situation clinique.",
+      "Leur expression clinique est différente."
+    ],
+    "explanation": "A - Vrai. Elle se distingue de la maladie des légionnaires. B - Faux. Le terrain peut augmenter le risque de forme sévère. C - Vrai. Des signes digestifs ou neurologiques peuvent l’accompagner. D - Faux. La prise en charge dépend de la situation clinique. E - Faux. Leur expression clinique est différente.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c103",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Quelle différence retenir entre Pontiac et maladie des légionnaires ?",
+        "answers": [
+          "Forme non pneumonique bénigne et pneumonie potentiellement grave. Le terrain contribue à la gravité."
+        ],
+        "explanation": "Le terrain contribue à la gravité."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q104",
+    "courseId": "prevention_ias_asepsie",
+    "number": 104,
+    "theme": "Distinctions et situations complémentaires",
+    "difficulty": "hard",
+    "question": "Un filtre terminal est installé sur un point d’eau. Quelles règles restent nécessaires ?",
+    "choices": [
+      "Lever toutes les restrictions sans décision du circuit compétent.",
+      "Autoriser par principe toute eau filtrée à tout usage.",
+      "Respecter les usages autorisés et le circuit de surveillance.",
+      "Vérifier adaptation, installation et échéance du filtre.",
+      "Considérer tout filtre comme permanent et sans entretien."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le filtre ne remplace pas cette autorisation.",
+      "Qualité requise et terrain doivent être distingués.",
+      "La filtration s’intègre à une organisation de maîtrise.",
+      "Un dispositif de filtration a ses conditions d’emploi.",
+      "Les conditions et changements prévus restent nécessaires."
+    ],
+    "explanation": "A - Faux. Le filtre ne remplace pas cette autorisation. B - Faux. Qualité requise et terrain doivent être distingués. C - Vrai. La filtration s’intègre à une organisation de maîtrise. D - Vrai. Un dispositif de filtration a ses conditions d’emploi. E - Faux. Les conditions et changements prévus restent nécessaires.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c104",
+        "theme": "Distinctions et situations complémentaires",
+        "front": "Un filtre terminal autorise-t-il tous les usages de l’eau ?",
+        "answers": [
+          "Non. Adaptation, échéance, terrain et usages autorisés restent à vérifier."
+        ],
+        "explanation": "Adaptation, échéance, terrain et usages autorisés restent à vérifier."
+      }
+    ],
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1",
+    "kind": "QCM"
+  }
+]

@@ -39,6 +39,7 @@ export function publicationBundle(courseId,delivery,data){
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
+  ,...(delivery.updateContract==='existing_course_written_update_v1'?{existingWrittenUpdate:{...delivery,publicationApproval:undefined}}:{})
   ,...(delivery.qcmFlashcardsSupplement?{qcmFlashcardsAddon:{...delivery.qcmFlashcardsSupplement,publicationApproval:undefined}}:{})
   ,...(delivery.revisionSheetSupplement?{revisionSheetSupplement:delivery.revisionSheetSupplement}:{})
   ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
@@ -190,16 +191,18 @@ export function validateChangedDeliveries(before,after,oldData,newData){
   // A first QCM-only manifest for a previously published course must not
   // pretend its unchanged historic PDF/audio files were newly downloaded.
   // Only legacy resources present byte-for-byte in the base may omit new SHAs.
+  const writtenUpdateHistoric=delivery.updateContract==='existing_course_written_update_v1'&&!prior&&oldData.registry.courses.some(c=>c.id===id);
   const qcmOnlyHistoric=(id==='psychologie_sante' && !prior &&
     delivery.deliveryMode==='existing_course_revision' &&
     delivery.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only' &&
     Object.keys(delivery.publicArtifacts||{}).join(',')==='qcm');
   const legacyIds=new Set();
-  if(qcmOnlyHistoric){
+  if(qcmOnlyHistoric||writtenUpdateHistoric){
    const oldResources=[...oldData.sheets,...oldData.vocals,...oldData.infographics].filter(x=>x.courseId===id);
    const newResources=[...newData.sheets,...newData.vocals,...newData.infographics].filter(x=>x.courseId===id);
-   assert.equal(JSON.stringify(canonical(oldResources)),JSON.stringify(canonical(newResources)),
+   if(qcmOnlyHistoric)assert.equal(JSON.stringify(canonical(oldResources)),JSON.stringify(canonical(newResources)),
     id+': une ressource historique a été modifiée sans nouveau SHA');
+   else assert.ok(oldResources.every(old=>newResources.some(now=>JSON.stringify(canonical(old))===JSON.stringify(canonical(now)))),id+': ressource historique perdue ou modifiée');
    for(const res of oldResources)for(const [key,val] of Object.entries(res)){
     if(key==='driveId' && typeof val==='string')legacyIds.add(val);
     if(typeof val==='string'){
@@ -207,9 +210,14 @@ export function validateChangedDeliveries(before,after,oldData,newData){
      if(match)legacyIds.add(match[1]);
     }
    }
+   if(writtenUpdateHistoric){
+    const oldCourse=oldData.registry.courses.find(c=>c.id===id),nowCourse=newData.registry.courses.find(c=>c.id===id);
+    assert.equal(nowCourse.officialSupportUrl,oldCourse.officialSupportUrl,id+': support historique remplacé sans preuve');
+    const m=oldCourse.officialSupportUrl?.match(/^https:\/\/drive\.google\.com\/file\/d\/([^/]+)/);if(m)legacyIds.add(m[1]);
+   }
   }
   for(const fileId of fileIds){
-   if(qcmOnlyHistoric && legacyIds.has(fileId) && !delivery.artifactSha256s?.[fileId])continue;
+   if((qcmOnlyHistoric||writtenUpdateHistoric) && legacyIds.has(fileId) && !delivery.artifactSha256s?.[fileId])continue;
    assert.match(delivery.artifactSha256s?.[fileId]||'',/^[a-f0-9]{64}$/,
     id+': empreinte du fichier examiné absente ou invalide : '+fileId);
   }
