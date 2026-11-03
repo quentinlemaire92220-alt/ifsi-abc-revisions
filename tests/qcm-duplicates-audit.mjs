@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import zlib from 'node:zlib';
 import assert from 'node:assert/strict';
+import {hasDistinctGenericContexts} from '../tools/qcm-contextual-duplicates.mjs';
 
 const read=p=>fs.readFileSync(p,'utf8');
 const json=p=>JSON.parse(read(p));
@@ -34,7 +35,10 @@ assert.equal(duplicateIds.length,0,`IDs dupliqués runtime: ${duplicateIds.map((
 
 const exactMap=new Map();
 for(const q of runtime){const k=exactNorm(q.question);if(!k)continue;(exactMap.get(k)||exactMap.set(k,[]).get(k)).push(q)}
-const exact=[...exactMap.values()].filter(g=>new Set(g.map(q=>q.id)).size>1);
+const stemGroups=[...exactMap.values()].filter(g=>new Set(g.map(q=>q.id)).size>1);
+const contextual=stemGroups.filter(hasDistinctGenericContexts);
+const exact=stemGroups.filter(g=>!hasDistinctGenericContexts(g));
+console.log(`Instructions génériques répétées avec thèmes distincts et propositions disjointes : ${contextual.length}.`);
 
 const samePayload=[];
 const payloadMap=new Map();
