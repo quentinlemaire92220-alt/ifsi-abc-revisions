@@ -19,14 +19,15 @@ for(const s of actual.series){
 const catalogue=read('vocals.json'),registry=read('course-registry-v741.json');
 const changed=JSON.parse(JSON.stringify(live.applyVocals(catalogue)));
 const activeRegistry=JSON.parse(JSON.stringify(live.applyRegistry(registry)));
+const activeCourses=new Set(actual.series.filter(s=>s.status==='approved').map(s=>s.courseId));
 for(const s of actual.series.filter(s=>s.status==='approved')){
  assert.deepEqual(changed.filter(v=>v.courseId===s.courseId),s.vocals);
- assert.deepEqual(changed.filter(v=>v.courseId!==s.courseId),catalogue.filter(v=>v.courseId!==s.courseId));
+ assert.deepEqual(changed.filter(v=>!activeCourses.has(v.courseId)),catalogue.filter(v=>!activeCourses.has(v.courseId)));
  assert.equal(activeRegistry.courses.find(c=>c.id===s.courseId).audioCount,s.vocals.length);
- assert.deepEqual(activeRegistry.courses.filter(c=>c.id!==s.courseId),registry.courses.filter(c=>c.id!==s.courseId));
+ assert.deepEqual(activeRegistry.courses.filter(c=>!activeCourses.has(c.id)),registry.courses.filter(c=>!activeCourses.has(c.id)));
 }
 // Fixture de test explicitement synthétique pour les échecs et les courses de chargement.
-const fixture=structuredClone(actual);const s=fixture.series[0];
+const fixture=structuredClone(actual);fixture.series=[fixture.series[0]];const s=fixture.series[0];
 s.status='approved';s.review={status:'owner_listened_and_accepted',privateEvidenceSha256:'a'.repeat(64)};
 s.vocals.forEach((v,i)=>v.driveId='fixture_drive_'+i);
 const sign=()=>{const {publicationApproval,...content}=s;s.publicationApproval={authorization:'explicit_go_publication',scope:'audio_series_replacement',bundleSha256:digest(content)};};sign();

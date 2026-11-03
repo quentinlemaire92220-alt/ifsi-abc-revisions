@@ -214,6 +214,493 @@
         "approvedAt": "2026-11-03T17:25:59.783883+00:00",
         "bundleSha256": "3a1ed221aa5b622b6bcf77d36d04af771de6186126c4f65cf16d6b59021cfaf2"
       }
+    },
+    {
+      "id": "psychologie_sociale_20261103",
+      "courseId": "psychologie_sociale",
+      "status": "approved",
+      "reviewContract": "provided_audio_series_v1",
+      "sourceArchive": {
+        "driveId": "1dhy9-6IrQESg2So7vuu_VfqGYil7neSG",
+        "sha256": "aa174da23bf9550b7ad84dff5ef9360063a8cc7ba365e9ba379c1d02f658bd96",
+        "fileCount": 18
+      },
+      "replaces": [
+        "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+        "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02"
+      ],
+      "vocals": [
+        {
+          "id": "psychologie_sociale_20261103_vocal_01",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 1,
+          "title": "Lien social et socialisation — 1/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 366.325333,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_01.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_02",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 2,
+          "title": "Lien social et socialisation — 2/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 322.916,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_02.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_03",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 3,
+          "title": "Construction de l’identité sociale — 3/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 359.882667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_03.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_04",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 4,
+          "title": "Construction de l’identité sociale — 4/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 344.309333,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_04.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_05",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 5,
+          "title": "Construction de l’identité sociale — 5/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 246.009333,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_05.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_06",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 6,
+          "title": "Dynamique des groupes restreints — 6/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 355.36,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_06.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_07",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 7,
+          "title": "Dynamique des groupes restreints — 7/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 360.224,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_07.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_08",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 8,
+          "title": "Dynamique des groupes restreints — 8/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 88.12,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_08.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_09",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 9,
+          "title": "Influence sociale et résistance — 9/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 353.162667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_09.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_10",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 10,
+          "title": "Influence sociale et résistance — 10/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 312.889958,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_10.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_11",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 11,
+          "title": "Communication : modèles et composantes — 11/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 354.122667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_11.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_12",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 12,
+          "title": "Communication : modèles et composantes — 12/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 343.456,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_12.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_13",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 13,
+          "title": "Communication : modèles et composantes — 13/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 179.381333,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_13.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_14",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 14,
+          "title": "Communication non verbale — 14/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 298.212,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_14.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_15",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 15,
+          "title": "Approche systémique et communication des groupes — 15/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 344.138667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_15.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_16",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 16,
+          "title": "Approche systémique et communication des groupes — 16/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 251.726667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_16.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_17",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 17,
+          "title": "Perception sociale et catégorisation — 17/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 368.608,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_17.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        },
+        {
+          "id": "psychologie_sociale_20261103_vocal_18",
+          "courseId": "psychologie_sociale",
+          "course": "Psychologie sociale",
+          "number": 18,
+          "title": "Perception sociale et catégorisation — 18/18",
+          "mime": "audio/mpeg",
+          "durationSeconds": 212.126667,
+          "localAudio": "./assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_18.mp3",
+          "synthetic": true,
+          "partId": "revision_complete_20261103",
+          "releaseVersion": "8.30.175"
+        }
+      ],
+      "artifacts": [
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_01",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_01.mp3",
+          "sha256": "a3c328587e98f90b6662dd71478960b960f51408c8c619fd17a71034b6cbf36b",
+          "bytes": 4397316,
+          "durationSeconds": 366.325333
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_02",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_02.mp3",
+          "sha256": "1e8754cdda45738e5ee5a74192d6351ab281c0dcb77f139cf4b114e6a8d6468a",
+          "bytes": 3876324,
+          "durationSeconds": 322.916
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_03",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_03.mp3",
+          "sha256": "d7ffc4ffa350b190d27eeed813bfd5be3d0fc7f4779be0a82d195275506631c1",
+          "bytes": 4320132,
+          "durationSeconds": 359.882667
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_04",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_04.mp3",
+          "sha256": "c88cd1cf6feb41c16a54cbb6352f978916f598f11fa042750d2fbd8f8a69990d",
+          "bytes": 4133220,
+          "durationSeconds": 344.309333
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_05",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_05.mp3",
+          "sha256": "6aaeff864b68f9e86776b40ebfc1bc60bae45b91fbc30f79dc5cdf293879af7e",
+          "bytes": 2953572,
+          "durationSeconds": 246.009333
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_06",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_06.mp3",
+          "sha256": "649d68c4d0e0dc8425f45659f45ef22d00f085395e13556a334c95f4f40e2710",
+          "bytes": 4265700,
+          "durationSeconds": 355.36
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_07",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_07.mp3",
+          "sha256": "b946de0c441e1adb3c2e300f863602db2927050c4fe7db5565589545bc02f8c0",
+          "bytes": 4324164,
+          "durationSeconds": 360.224
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_08",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_08.mp3",
+          "sha256": "2b5ba281cf92a15c4c2af4c6f62771a1015e5f63c54592dc09c5454067e87b60",
+          "bytes": 1058820,
+          "durationSeconds": 88.12
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_09",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_09.mp3",
+          "sha256": "2db49cb7349795123fed6e35474c6860120b76029acbe20062a0d93aaf542102",
+          "bytes": 4239492,
+          "durationSeconds": 353.162667
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_10",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_10.mp3",
+          "sha256": "774387f8fae07fc98236ed56aaf0e5bd2606f0129d6f57c381d4413ecc2a96eb",
+          "bytes": 3756228,
+          "durationSeconds": 312.889958
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_11",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_11.mp3",
+          "sha256": "94ccb25fefe0c4a6c8f6d3910ade26acdbf9b2307b1d1bd78fef17a9ea71461d",
+          "bytes": 4251012,
+          "durationSeconds": 354.122667
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_12",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_12.mp3",
+          "sha256": "fa5262fd9f30ec58e172da10066eb5946c9347f55e44f56a336576d60958b4c0",
+          "bytes": 4122852,
+          "durationSeconds": 343.456
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_13",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_13.mp3",
+          "sha256": "82df491fe9b00adb4bf599281221ef2613b10ddb3879d4a1865d2375e72409c0",
+          "bytes": 2154084,
+          "durationSeconds": 179.381333
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_14",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_14.mp3",
+          "sha256": "a8ae72ae1b5f7ad7f4815a0b9ee3c0346d33da11405fec4dd1e31f1196332948",
+          "bytes": 3579972,
+          "durationSeconds": 298.212
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_15",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_15.mp3",
+          "sha256": "9ef53854c65b4324ba18c0c7b9ba20346e0c1fa9c8af4efea35783cb27aabce8",
+          "bytes": 4131204,
+          "durationSeconds": 344.138667
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_16",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_16.mp3",
+          "sha256": "1ed08a6c96058e2c205a340b93a29e1cca680c4cde294b08888a50d9e9e566f9",
+          "bytes": 3022116,
+          "durationSeconds": 251.726667
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_17",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_17.mp3",
+          "sha256": "d9938b17c55d93812de742de7560b228210e965250935998a10b521c3f5f7a39",
+          "bytes": 4424676,
+          "durationSeconds": 368.608
+        },
+        {
+          "vocalId": "psychologie_sociale_20261103_vocal_18",
+          "path": "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_18.mp3",
+          "sha256": "0ed9f8677559ab33421943c6c28f4a187d404218547868af86b2bae62103d4f8",
+          "bytes": 2546916,
+          "durationSeconds": 212.126667
+        }
+      ],
+      "downloads": [
+        {
+          "kind": "study_scripts",
+          "label": "Scripts vocaux — 18 textes",
+          "path": "assets/psychologie-sociale-20261103/Scripts_vocaux_Psychologie_sociale.zip",
+          "bytes": 28171,
+          "sha256": "6a3f6474e069b492e245f8b428a9956dcb58a0e82a60fa317e1b3d4693d7e280"
+        },
+        {
+          "kind": "course_package",
+          "label": "Lot complet — PDF, cartes, scripts et 18 MP3",
+          "path": "assets/psychologie-sociale-20261103/Lot_complet_Psychologie_sociale_avec_scripts_et_18_MP3.zip",
+          "bytes": 53412723,
+          "sha256": "5df20340a1bd0bf810d4046bbddf4b331671265f061d0161d0cbc7d64e9221ab"
+        }
+      ],
+      "review": {
+        "status": "documentary_decode_and_sampled_speech_completed",
+        "decodedVocalIds": [
+          "psychologie_sociale_20261103_vocal_01",
+          "psychologie_sociale_20261103_vocal_02",
+          "psychologie_sociale_20261103_vocal_03",
+          "psychologie_sociale_20261103_vocal_04",
+          "psychologie_sociale_20261103_vocal_05",
+          "psychologie_sociale_20261103_vocal_06",
+          "psychologie_sociale_20261103_vocal_07",
+          "psychologie_sociale_20261103_vocal_08",
+          "psychologie_sociale_20261103_vocal_09",
+          "psychologie_sociale_20261103_vocal_10",
+          "psychologie_sociale_20261103_vocal_11",
+          "psychologie_sociale_20261103_vocal_12",
+          "psychologie_sociale_20261103_vocal_13",
+          "psychologie_sociale_20261103_vocal_14",
+          "psychologie_sociale_20261103_vocal_15",
+          "psychologie_sociale_20261103_vocal_16",
+          "psychologie_sociale_20261103_vocal_17",
+          "psychologie_sociale_20261103_vocal_18"
+        ],
+        "speechSampledVocalIds": [
+          "psychologie_sociale_20261103_vocal_01",
+          "psychologie_sociale_20261103_vocal_02",
+          "psychologie_sociale_20261103_vocal_03",
+          "psychologie_sociale_20261103_vocal_04",
+          "psychologie_sociale_20261103_vocal_05",
+          "psychologie_sociale_20261103_vocal_06",
+          "psychologie_sociale_20261103_vocal_07",
+          "psychologie_sociale_20261103_vocal_08",
+          "psychologie_sociale_20261103_vocal_09",
+          "psychologie_sociale_20261103_vocal_10",
+          "psychologie_sociale_20261103_vocal_11",
+          "psychologie_sociale_20261103_vocal_12",
+          "psychologie_sociale_20261103_vocal_13",
+          "psychologie_sociale_20261103_vocal_14",
+          "psychologie_sociale_20261103_vocal_15",
+          "psychologie_sociale_20261103_vocal_16",
+          "psychologie_sociale_20261103_vocal_17",
+          "psychologie_sociale_20261103_vocal_18"
+        ],
+        "scriptSha256s": {
+          "psychologie_sociale_20261103_vocal_01": "252db79cc0452a5e585687214a654d269fd1edb401867a932904304483469212",
+          "psychologie_sociale_20261103_vocal_02": "0d40d9498e4c0ad12da048c354a7a420281dff5a7737796c2df29ea16ca1e6d3",
+          "psychologie_sociale_20261103_vocal_03": "1196c6024e5913acb0d2d57f152c6070638d06277db74438dfaee9db754d53f4",
+          "psychologie_sociale_20261103_vocal_04": "6f48106f07d7308c0ca2c6fc3253a75dce2db3f0b56f2ac3c99b71e767520db0",
+          "psychologie_sociale_20261103_vocal_05": "62578c76440b8341c3dbdae44cd915972cc8884db743b2cff555711c514e1ba0",
+          "psychologie_sociale_20261103_vocal_06": "7926547d84fceb9ff72ca86937839943e71201c67ede9b1af9088c8afa55ff6c",
+          "psychologie_sociale_20261103_vocal_07": "61aa5c06a5b96cd8cc100f241e75e678ffc66ee8a5dcd6c1984eb37b2b12a923",
+          "psychologie_sociale_20261103_vocal_08": "dc93f5e563753263aa8fe20deeb706b8a9fd7ab6dec1881a0d834121eaf7711e",
+          "psychologie_sociale_20261103_vocal_09": "b4f9adcfae90cb58d4fc07877879cd10d6788036d8fe8b4c73e3e0675b5ed77f",
+          "psychologie_sociale_20261103_vocal_10": "3b3c9e3ae8a48f93ef4cd5443b39ac6bae518b894b62cc4823c7356c386d5aa8",
+          "psychologie_sociale_20261103_vocal_11": "2cc770398802e89fc5452f4056c4fd141e172ccad88eb393fda8d1c9461cfe28",
+          "psychologie_sociale_20261103_vocal_12": "a425d2cbb75f186938eaae5ed00fc3c8570be5ce50dfea5fcf952703f17afcdc",
+          "psychologie_sociale_20261103_vocal_13": "8f7106cfae0611faf826bd2257a16c697e220cd23f5d7dc048ab53cdf58a9e40",
+          "psychologie_sociale_20261103_vocal_14": "6ce959344e0502bbeca82dff61e89ff8d5976a488209cd543e17580a13adf7e3",
+          "psychologie_sociale_20261103_vocal_15": "87d87a190fdf343f91ed56ce4b352afbe56c1705ff8046d486eec19700109ce2",
+          "psychologie_sociale_20261103_vocal_16": "d4a60b69eb32aa8e5705cbcd0ffb6dd4f05772b9f9da7ac88383daf83bd1a818",
+          "psychologie_sociale_20261103_vocal_17": "d0e89701b26379afb9f108eda3da91302e311b19e597bcbce6d7034050f94f77",
+          "psychologie_sociale_20261103_vocal_18": "5919c2ebed7c7ab6455a6477db46d67938db552c22231bcd0ac857185b211aab"
+        },
+        "artifactSha256s": {
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_01.mp3": "a3c328587e98f90b6662dd71478960b960f51408c8c619fd17a71034b6cbf36b",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_02.mp3": "1e8754cdda45738e5ee5a74192d6351ab281c0dcb77f139cf4b114e6a8d6468a",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_03.mp3": "d7ffc4ffa350b190d27eeed813bfd5be3d0fc7f4779be0a82d195275506631c1",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_04.mp3": "c88cd1cf6feb41c16a54cbb6352f978916f598f11fa042750d2fbd8f8a69990d",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_05.mp3": "6aaeff864b68f9e86776b40ebfc1bc60bae45b91fbc30f79dc5cdf293879af7e",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_06.mp3": "649d68c4d0e0dc8425f45659f45ef22d00f085395e13556a334c95f4f40e2710",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_07.mp3": "b946de0c441e1adb3c2e300f863602db2927050c4fe7db5565589545bc02f8c0",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_08.mp3": "2b5ba281cf92a15c4c2af4c6f62771a1015e5f63c54592dc09c5454067e87b60",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_09.mp3": "2db49cb7349795123fed6e35474c6860120b76029acbe20062a0d93aaf542102",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_10.mp3": "774387f8fae07fc98236ed56aaf0e5bd2606f0129d6f57c381d4413ecc2a96eb",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_11.mp3": "94ccb25fefe0c4a6c8f6d3910ade26acdbf9b2307b1d1bd78fef17a9ea71461d",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_12.mp3": "fa5262fd9f30ec58e172da10066eb5946c9347f55e44f56a336576d60958b4c0",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_13.mp3": "82df491fe9b00adb4bf599281221ef2613b10ddb3879d4a1865d2375e72409c0",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_14.mp3": "a8ae72ae1b5f7ad7f4815a0b9ee3c0346d33da11405fec4dd1e31f1196332948",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_15.mp3": "9ef53854c65b4324ba18c0c7b9ba20346e0c1fa9c8af4efea35783cb27aabce8",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_16.mp3": "1ed08a6c96058e2c205a340b93a29e1cca680c4cde294b08888a50d9e9e566f9",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_17.mp3": "d9938b17c55d93812de742de7560b228210e965250935998a10b521c3f5f7a39",
+          "assets/audio/psychologie-sociale-20261103/Psychologie_sociale_Vocal_18.mp3": "0ed9f8677559ab33421943c6c28f4a187d404218547868af86b2bae62103d4f8"
+        },
+        "independentHumanListening": false,
+        "privateEvidenceSha256": "5d8d9f6e9cee67ae59e735d702e86c1012c32d6d8e88a6285e47aca1d1a97628"
+      },
+      "publicationApproval": {
+        "authorization": "explicit_go_publication",
+        "scope": "audio_series_replacement",
+        "approvedAt": "2026-11-03T21:11:00+00:00",
+        "privateEvidenceSha256": "436cbdf9a0674af0205167b30cc8edc585f827ff5e2ea43f396bb2ad423c6ea2",
+        "bundleSha256": "c8402daa9dd094945a24f06200e24eccb17e21934f49637f49931627529b49ce"
+      }
     }
   ]
 }

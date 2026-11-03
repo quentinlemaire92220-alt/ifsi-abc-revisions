@@ -14,6 +14,7 @@ const commands=[
  ['complete_written_revision',n,['tests/complete-written-revision.mjs']],
  ['compact_pdf_profile',py,['tests/pdf-compact-profile-test.py']],
  ['audio_series_replacement',n,['tests/audio-series-replacement.mjs',...(stage==='preparation'?['--preparation']:[])]],
+ ['provided_audio_series',n,['tests/provided-audio-series.mjs']],
  ['graphic_contract',py,['tests/pdf-graphics-v2-test.py']],
  ['template_contract',py,['tests/pdf-template-v3-test.py']],
  ['pedagogical_contract',n,['tests/qcm-autonomy-contract-test.mjs']],

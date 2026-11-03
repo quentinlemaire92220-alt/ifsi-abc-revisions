@@ -315,7 +315,10 @@ function renderCourse74(){
     .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
     .join('');
 
+  const approvedDownloads74=window.IFSI_AUDIO_SERIES?.downloadsFor?.(courseMeta.id)||[];
+  const downloadCards74=approvedDownloads74.map(x=>'<div class="v74-resource"><b>'+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="./'+esc74(x.path)+'" download>Télécharger le ZIP</a></div></div>').join('');
   box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div></div>
+  ${downloadCards74?`<div class="card v74-resource-block v74-approved-downloads"><b>📦 Ressources à télécharger</b><div class="v74-resource-list">${downloadCards74}</div></div>`:''}
   ${d.qs.length||qcmPdfCards?`<div class="card v74-resource-block v74-qcm-section"><div class="row"><b>🧠 QCM</b></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}${qcmPdfCards?`<div class="v74-resource-list">${qcmPdfCards}</div>`:''}</div>`:''}
   ${courseSourceHtml}
   ${childSupportHtml}
