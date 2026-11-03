@@ -1,3 +1,4 @@
+import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
 import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 import {validateHostedAudioSupplements} from '../tools/hosted-audio-supplement-contract.mjs';
 import fs from 'node:fs';
@@ -213,11 +214,12 @@ const vocals=json('vocals.json');
 assert(vocals.length>=29,'Catalogue vocaux trop petit');
 const newAudioPackages=json('docs/course-deliveries.json').courses;
 // Structural preparation is separate from the mandatory publication GO gate.
+const scopedAudio=new Set(approvedScopedAudioIds(json('docs/course-deliveries.json')));
 const hostedAudio=validateHostedAudioSupplements(json('docs/course-deliveries.json'),{registry,vocals});
 for(const v of vocals){
  assert(courseIds.has(v.courseId),`courseId vocal invalide ${v.id}`);
  if(v.driveId?.length>10)continue;
- if(hostedAudio.has(v.id))continue;
+ if(hostedAudio.has(v.id)||scopedAudio.has(v.id))continue;
  const pack=newAudioPackages.find(c=>c.courseId===v.courseId&&c.deliveryMode==='source_limited_first_release');
  const asset=pack?.publicAudioArtifacts?.find(a=>a.artifactId===v.id);
  assert(asset,`MP3 sans Drive non approuvé par un premier package : ${v.id}`);
