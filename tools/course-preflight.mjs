@@ -10,6 +10,8 @@ process.env.IFSI_BASE_SHA=base;
 const n=process.execPath,py=process.env.IFSI_PYTHON||'python';
 const commands=[
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
+ ['complete_written_revision',n,['tests/complete-written-revision.mjs']],
+ ['compact_pdf_profile',py,['tests/pdf-compact-profile-test.py']],
  ['audio_series_replacement',n,['tests/audio-series-replacement.mjs',...(stage==='preparation'?['--preparation']:[])]],
  ['graphic_contract',py,['tests/pdf-graphics-v2-test.py']],
  ['template_contract',py,['tests/pdf-template-v3-test.py']],

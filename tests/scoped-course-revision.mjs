@@ -11,7 +11,7 @@ for(const r of manifest.scopedCourseRevisions||[]){
  const course=runtime.registry.courses.find(c=>c.id===r.courseId),resource=runtime.window.IFSI_V741.resourcesForCourse(r.courseId);
  assert.deepEqual(JSON.parse(JSON.stringify(resource.questions.map(q=>q.id))),r.questionIds,'Active bank differs from approved bank');
  const cards=runtime.deck.filter(c=>c.courseId===r.courseId&&!String(c.id).startsWith('voc:'));
- assert.equal(cards.length,r.questionIds.length,'Active cards lost or duplicated');
+ assert.equal(cards.length,read(r.bankPath).flatMap(q=>q.flashcards).length,'Active cards lost or duplicated');
  assert.ok(cards.every(c=>r.questionIds.includes(c.qid)),'Historical reserved question leaked into active cards');
  assert.equal(runtime.window.IFSI_VOCAB.countForCourse(r.courseId),r.vocabularyEntryIds.length);
  const baseline=read(r.baselinePath);
@@ -27,7 +27,7 @@ for(const r of manifest.scopedCourseRevisions||[]){
  const reconstructed=scopedHistoricalJson(read,'course-registry-v741.json').courses.find(c=>c.id===r.courseId);
  assert.deepEqual(reconstructed,baseline.course);
  assert.notDeepEqual(course,reconstructed,'Student app accidentally uses historical data');
- for(const mutate of [x=>x.sourceReview.independentClinicalSignoff=true,x=>x.audioArtifacts[0].sha256='0'.repeat(64),x=>x.questionIds.pop(),x=>x.ownerAcceptance.status='pending',x=>x.publicationApproval.bundleSha256='0'.repeat(64)]){
+ for(const mutate of [x=>x.sourceReview.independentClinicalSignoff=true,x=>x.publicArtifacts[0].sha256='0'.repeat(64),x=>x.questionIds.pop(),x=>x.ownerAcceptance.status='pending',x=>x.publicationApproval.bundleSha256='0'.repeat(64)]){
   const bad=structuredClone(manifest);mutate(bad.scopedCourseRevisions.find(x=>x.id===r.id));assert.throws(()=>validateScopedRevisions(bad),'Tampered revision accepted');
  }
 }
