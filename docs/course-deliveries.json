@@ -9401,8 +9401,8 @@
       },
       "ownerAcceptance": {
         "status": "explicit_application_update_authorized",
-        "approvedAt": "2026-11-03T17:57:25.150792+00:00",
-        "privateEvidenceSha256": "7941fb5e001b17a7211cde3c88ccb1c58023a896528817d16d50d2d240f192c8"
+        "approvedAt": "2026-11-03T18:21:59.746463+00:00",
+        "privateEvidenceSha256": "359dd8326f68b58efa0c3d488dc825c587914af8192ba077241c6709c2c1df9c"
       },
       "assistantPdfReview": {
         "allPagesChecked": true,
@@ -9424,8 +9424,8 @@
       "publicationApproval": {
         "authorization": "explicit_go_publication",
         "scope": "scoped_course_revision",
-        "approvedAt": "2026-11-03T17:57:25.150792+00:00",
-        "bundleSha256": "b794893006d96649b9aef2166c2f1f6a9aa1738be845b360157208ab71b1367c",
+        "approvedAt": "2026-11-03T18:21:59.746463+00:00",
+        "bundleSha256": "b6cea6a438253c0021b897f0af7c6b4957e9ebc6383f0d03cf64cec093771be9",
         "status": "approved"
       },
       "templateConformance": {
@@ -9448,6 +9448,18 @@
             "ownerAcceptance": "explicit_application_update_authorized"
           }
         }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "a00c99ef8c89bd540d3aeed98dfd800b780127f900eced746825f43c0fdde92c",
+        "privateEvidenceSha256": "e805c80cda95b977716a62b4afadd1cc44f2530ed3bc5b5700fc8776531aea79",
+        "reviewedAt": "2026-11-03T18:26:11+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
       }
     }
   ]
