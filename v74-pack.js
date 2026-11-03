@@ -27,7 +27,7 @@ function sourceState74(course){
   const receipt=receivedSourceUpdates74[course?.id];
   const received=!!course&&(course.officialSupport===true||course.nativeSupportAvailable===true||!!receipt);
   return {received,reviewPending:received&&(!!receipt||course.provisional===true),
-    note:receipt||(received?String(course.sourceNote||''):'')};
+    note:receipt||String(course?.sourceNote||'')};
 }
 const replacedDocumentUrls74=new Set([
   'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf',

@@ -16,6 +16,7 @@ for(const id of ['vih_b13_20261027','responsabilite_exercice_professionnel','psy
 assert.equal(api.state(course('fievre_retour_voyage_paludisme')).received,false,'Ne pas inventer le PDF du paludisme');
 assert.equal(api.state(course('pharmacologie')).received,false,'Ne pas inventer le support de pharmacologie');
 assert.equal(api.state(null).received,false);
+assert.equal(api.state(course('d1_bientraitance')).note,course('d1_bientraitance').sourceNote,'Les sources exactes restent consultables sans support officiel');
 const elements=[];
 const document={createElement(){const attrs={};const el={setAttribute(k,v){attrs[k]=v},addEventListener(){},attrs};elements.push(el);return el}};
 const context={window:{IFSI_V74:{sourceState:api.state}},document};
