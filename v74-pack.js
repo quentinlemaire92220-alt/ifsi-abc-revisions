@@ -147,7 +147,7 @@ function renderSearch74(){
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
+  for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+studentDocumentLabel74(searchDocLabel74(x,'sheet'),registryCourse74(x.courseId)),sub:x.ue||'',url:x.url});
   for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
