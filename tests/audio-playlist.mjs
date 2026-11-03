@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const source=fs.readFileSync('vocals-v73.js','utf8');
+const catalogue=JSON.parse(fs.readFileSync('vocals.json','utf8'));
+const entries=[catalogue[0],catalogue.find(x=>x.course!==catalogue[0].course),catalogue.at(-1)];
+function boot(saved={}){
+  const storage=new Map(Object.entries(saved)),nodes=new Map();
+  const make=id=>({id,value:id==='vocalCourse'?'Toutes les matières':'',textContent:'',innerHTML:'',disabled:false,checked:false,currentTime:0,duration:100,paused:true,src:'',dataset:{},classList:{add(){},remove(){},toggle(){},contains(){return true}},querySelectorAll(){return []},querySelector(){return null},setAttribute(){},removeAttribute(name){delete this[name]},load(){this.currentTime=0},pause(){this.paused=true},play(){this.paused=false;return Promise.resolve()},scrollIntoView(){},focus(){}});
+  const listeners={};const context={console,Set,Map,JSON,Number,String,Array,Date,Promise,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},document:{getElementById:id=>{if(!nodes.has(id))nodes.set(id,make(id));return nodes.get(id)},querySelector:()=>null},window:{addEventListener:(name,fn)=>{(listeners[name]??=[]).push(fn)},matchMedia:()=>({matches:false})},setInterval:()=>0,clearInterval(){}};
+  const instrumented=source.replace('addStyles();injectUI();loadVocals();','').replace('window.IFSI_V73={',`V=${JSON.stringify(entries)};window.test={handleVocalEnded,setAutoplay:value=>playlist.autoplay=value,addPlaylist,editPlaylist,playPlaylist,stepPlaylist,playVocal,clearFinishedPosition,restorePosition,rememberPosition,closePlayer,validState,renderPlaylist,getActive:()=>playlistActive};window.IFSI_V73={`);
+  vm.runInNewContext(instrumented,context);
+  return {api:context.window.IFSI_V73,test:context.window.test,nodes,storage,listeners};
+}
+const b=boot(),{test,api,nodes}=b,ids=entries.map(x=>x.id);
+for(const id of ids)test.addPlaylist(id);test.addPlaylist(ids[0]);
+assert.deepEqual(Array.from(api.getPlaylist().ids),ids,'Mixed topics added once');
+test.editPlaylist(ids[2],'up');assert.deepEqual(Array.from(api.getPlaylist().ids),[ids[0],ids[2],ids[1]]);
+test.editPlaylist(ids[0],'up');assert.equal(api.getPlaylist().ids[0],ids[0]);
+const restored=boot(Object.fromEntries(b.storage));assert.deepEqual(Array.from(restored.api.getPlaylist().ids),[ids[0],ids[2],ids[1]],'Order survives reload');
+test.playPlaylist(ids[0]);assert.equal(api.getCurrentId(),ids[0]);assert.equal(test.getActive(),true);
+test.restorePosition();const audio=nodes.get('vocalAudio');audio.currentTime=35;audio.paused=true;test.rememberPosition();
+test.handleVocalEnded();assert.equal(api.getState().positions[ids[0]],0,'Finished position is reset');assert.equal(api.getCurrentId(),ids[2]);assert.equal(api.getState().positions[ids[0]],0,'Finished position is not overwritten by a source change');
+test.rememberPosition();assert.equal(api.getState().positions[ids[2]],undefined,'No stale pause event overwrites next saved position');
+test.restorePosition();audio.currentTime=35;audio.paused=true;test.rememberPosition();test.stepPlaylist(-1);test.stepPlaylist(1);test.restorePosition();assert.equal(audio.currentTime,35,'Resume previous item');test.stepPlaylist(-1);
+test.stepPlaylist(1);test.stepPlaylist(1);test.stepPlaylist(1,true);assert.equal(api.getCurrentId(),ids[1]);assert.equal(nodes.get('vocalPlaylistMessage').textContent,'Playlist terminée.');
+test.playVocal(ids[0]);test.stepPlaylist(1,true);assert.equal(api.getCurrentId(),ids[0],'Individual listening does not advance the playlist');
+test.playPlaylist(ids[0]);test.editPlaylist(ids[0],'remove');assert.equal(test.getActive(),false);test.stepPlaylist(1,true);assert.equal(api.getCurrentId(),ids[0],'Removing current item never jumps to an unrelated track');
+test.playPlaylist(ids[2]);test.closePlayer();assert.equal(test.getActive(),false);assert.equal(api.getCurrentId(),null);
+test.playPlaylist(ids[2]);test.setAutoplay(false);test.handleVocalEnded();assert.equal(api.getCurrentId(),ids[2],'Automatic advancement can be disabled');
+const bad=boot({ifsiabc_audio_playlist_v1:'{"ids":["gone",null,3,"gone"],"autoplay":false}'});bad.test.validState();assert.equal(bad.api.getPlaylist().ids.length,0);assert.equal(bad.api.getPlaylist().autoplay,false);
+assert.equal(boot({ifsiabc_audio_playlist_v1:'broken'}).api.getPlaylist().ids.length,0);
+console.log('PASS playlist : matières mixtes, dédoublonnage, ordre, suppression, persistance, reprise, navigation, fin de liste, lecture individuelle et stockage invalide.');
