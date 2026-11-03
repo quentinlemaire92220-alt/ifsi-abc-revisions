@@ -8,7 +8,7 @@ import {createHash} from 'node:crypto';
 import {validateChangedQcmBanks} from './qcm-autonomy-contract.mjs';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 
-const git=args=>execFileSync('git',args,{encoding:'utf8'});
+const git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:32*1024*1024});
 const baseHint=String(process.env.IFSI_BASE_SHA||'').trim();
 const bases=/^[a-f0-9]{7,40}$/i.test(baseHint)&&!/^0+$/.test(baseHint)
   ? [baseHint,'HEAD^'] : ['HEAD^'];
