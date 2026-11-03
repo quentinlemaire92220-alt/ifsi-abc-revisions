@@ -1,4 +1,5 @@
 import {approvedRevisionAudioIds} from '../tools/scoped-course-revision-contract.mjs';
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
 import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 import {validateHostedAudioSupplements} from '../tools/hosted-audio-supplement-contract.mjs';
@@ -299,8 +300,10 @@ const scopedProvisionalWrittenLexicons=json('docs/course-deliveries.json').cours
   c.visualOwnerReview?.status==='owner_accepted'
 ).map(c=>c.courseId);
 const audioOnlyLexiconCourses=json('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1').map(c=>{
- const course=registry.courses.find(x=>x.id===c.courseId);
- validateInteractiveAudioOnly(course,c,json('vocals.json'));
+ // Inspect the exact historical audio package; the independently validated
+ // written revision supplies the student-facing current official status.
+ const course=readHistoricalAudioJson('course-registry-v741.json').courses.find(x=>x.id===c.courseId);
+ validateInteractiveAudioOnly(course,c,readHistoricalAudioJson('vocals.json'));
  return c.courseId;
 });
 const lexiconCourseIds=new Set([...vocabulary.entries.flatMap(x=>x.courseIds),...scopedWrittenSheets,...scopedProvisionalWrittenLexicons,...audioOnlyLexiconCourses]);
