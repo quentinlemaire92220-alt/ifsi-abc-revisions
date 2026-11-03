@@ -10660,6 +10660,690 @@
       "theme": "Prévention du risque infectieux",
       "sourceType": "course_glossary",
       "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_001",
+      "term": "Diarrhée",
+      "definition": "Émission de selles plus fréquentes et plus ou moins liquides ; repère quantitatif : au moins trois selles par jour.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_002",
+      "term": "Diarrhée aiguë",
+      "definition": "Épisode de diarrhée de début récent, souvent brutal, à distinguer d’une évolution prolongée ou chronique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_003",
+      "term": "Étiologie",
+      "definition": "Cause d’une maladie ou d’un symptôme.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_004",
+      "term": "Morbidité",
+      "definition": "Importance des maladies et de leurs conséquences dans une population.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_005",
+      "term": "Mortalité",
+      "definition": "Décès observés dans une population.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_006",
+      "term": "Létalité",
+      "definition": "Part des personnes atteintes qui décèdent de la maladie étudiée.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_007",
+      "term": "Communautaire",
+      "definition": "Survenant dans le contexte de vie en dehors d’une acquisition hospitalière identifiée.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_008",
+      "term": "Nosocomial",
+      "definition": "Acquis au cours d’une hospitalisation ; le contexte temporel aide à distinguer une infection déjà présente à l’admission.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_009",
+      "term": "Féco-oral",
+      "definition": "Relatif au passage d’un agent provenant des selles jusqu’à une ingestion, directement ou par un intermédiaire.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_010",
+      "term": "Péril fécal",
+      "definition": "Risque de transmission lié à la contamination de l’eau, des aliments ou de l’environnement par des matières fécales.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_011",
+      "term": "Transmission croisée",
+      "definition": "Passage d’un agent entre personnes, notamment par les mains ou des intermédiaires contaminés.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_012",
+      "term": "Réservoir",
+      "definition": "Milieu ou hôte où un agent est habituellement présent et à partir duquel une contamination peut survenir.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_013",
+      "term": "Inoculum",
+      "definition": "Quantité d’agents infectieux impliquée dans une exposition.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_014",
+      "term": "Incubation",
+      "definition": "Intervalle entre la contamination et l’apparition des manifestations.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_015",
+      "term": "Gastro-entérite",
+      "definition": "Atteinte digestive associant notamment diarrhée et parfois vomissements.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_016",
+      "term": "Déshydratation",
+      "definition": "Déficit en eau consécutif notamment à des pertes digestives importantes.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_017",
+      "term": "Électrolytes",
+      "definition": "Ions participant aux échanges et aux équilibres hydriques ; sodium cité dans la réhydratation.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_018",
+      "term": "SRO",
+      "definition": "Soluté de réhydratation orale, utilisant notamment le couplage de l’absorption du sodium et du glucose.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_019",
+      "term": "Entérocyte",
+      "definition": "Cellule de l’épithélium intestinal impliquée dans les échanges avec la lumière digestive.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_020",
+      "term": "Lumière intestinale",
+      "definition": "Espace intérieur de l’intestin contenant son contenu digestif.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_021",
+      "term": "Flore digestive / microbiote",
+      "definition": "Ensemble des micro-organismes présents dans le milieu digestif.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_022",
+      "term": "Commensal",
+      "definition": "Habituellement présent avec l’hôte sans être, de ce seul fait, responsable de la maladie étudiée.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_023",
+      "term": "Colonisation / portage",
+      "definition": "Présence d’un micro-organisme pouvant être asymptomatique, à distinguer d’une infection attribuable.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_024",
+      "term": "Facteur de virulence",
+      "definition": "Caractéristique contribuant au pouvoir pathogène d’une souche.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_025",
+      "term": "Sérotype",
+      "definition": "Subdivision fondée sur des caractéristiques antigéniques, utilisée notamment pour Salmonella.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_026",
+      "term": "Bactériémie",
+      "definition": "Présence de bactéries dans le sang.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_027",
+      "term": "Hémoculture",
+      "definition": "Examen mettant en culture un prélèvement de sang pour rechercher des micro-organismes.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_028",
+      "term": "Typhoïde",
+      "definition": "Maladie systémique liée à Salmonella Typhi.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_029",
+      "term": "Pouls dissocié",
+      "definition": "Pouls dont l’augmentation n’accompagne pas la fièvre comme attendu dans le tableau décrit de typhoïde.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_030",
+      "term": "TIAC",
+      "definition": "Toxi-infection alimentaire collective : cas groupés reliés à une exposition alimentaire commune suspectée.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_031",
+      "term": "Excrétas",
+      "definition": "Produits éliminés par l’organisme, notamment les selles, dont la gestion intervient dans la prévention.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_032",
+      "term": "Prophylaxie",
+      "definition": "Mesures destinées à prévenir une maladie ou sa transmission.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_033",
+      "term": "Syndrome dysentérique",
+      "definition": "Tableau associant notamment selles glairo-sanglantes ou purulentes, douleurs et signes inflammatoires.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_034",
+      "term": "Épreintes",
+      "definition": "Douleurs abdominales associées au besoin d’aller à la selle dans le syndrome dysentérique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_035",
+      "term": "Ténesme",
+      "definition": "Sensation douloureuse et persistante de besoin d’évacuation dans le tableau dysentérique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_036",
+      "term": "Muco-sanglant",
+      "definition": "Contenant du mucus et du sang.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_037",
+      "term": "PNN",
+      "definition": "Polynucléaires neutrophiles : cellules participant à la réponse inflammatoire au niveau des lésions intestinales.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_038",
+      "term": "Toxine",
+      "definition": "Produit d’un agent susceptible d’altérer le fonctionnement ou la survie des cellules cibles.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_039",
+      "term": "Shiga-toxine",
+      "definition": "Toxine associée à des atteintes cellulaires et au risque de syndrome hémolytique et urémique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_040",
+      "term": "SHU",
+      "definition": "Syndrome hémolytique et urémique : complication comportant notamment une atteinte rénale.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_041",
+      "term": "Insuffisance rénale aiguë",
+      "definition": "Diminution aiguë de la fonction rénale, citée parmi les complications des infections à Shiga-toxines.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_042",
+      "term": "Entéro-invasif",
+      "definition": "Capable d’envahir les cellules ou tissus intestinaux.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_043",
+      "term": "EIEC",
+      "definition": "Escherichia coli entéro-invasif, associé à un tableau dysentérique proche de Shigella.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_044",
+      "term": "EHEC",
+      "definition": "Escherichia coli entérohémorragique, associé aux Shiga-toxines et au risque de syndrome hémolytique et urémique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_045",
+      "term": "Zoonose",
+      "definition": "Infection transmise depuis un réservoir animal, illustrée notamment par Campylobacter.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_046",
+      "term": "Spore",
+      "definition": "Forme de résistance bactérienne contribuant à la persistance environnementale, notamment pour C. difficile.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_047",
+      "term": "Toxinogène",
+      "definition": "Capable de produire une toxine.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_048",
+      "term": "GDH",
+      "definition": "Glutamate déshydrogénase : marqueur recherché dans le diagnostic de Clostridioides difficile. Sa définition seule ne donne pas l’interprétation d’un résultat.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_049",
+      "term": "Récidive",
+      "definition": "Nouvel épisode après une amélioration ; plusieurs épisodes sont possibles avec C. difficile.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_050",
+      "term": "Transplantation fécale",
+      "definition": "Approche visant à restaurer une flore digestive à partir de donneurs contrôlés, évoquée pour des récidives multiples.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_051",
+      "term": "Coproculture",
+      "definition": "Mise en culture d’un prélèvement de selles pour rechercher des bactéries.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_052",
+      "term": "PCR",
+      "definition": "Méthode de biologie moléculaire recherchant une cible génétique.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_053",
+      "term": "Multiplex",
+      "definition": "Recherche de plusieurs cibles dans une même analyse, comme un panel de PCR.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_054",
+      "term": "Milieu sélectif",
+      "definition": "Milieu de culture utilisé pour favoriser l’isolement des agents recherchés au sein d’une flore abondante.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_055",
+      "term": "MALDI-TOF",
+      "definition": "Méthode d’identification de colonies bactériennes.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_056",
+      "term": "Antibiogramme",
+      "definition": "Étude de la sensibilité d’une souche bactérienne à différents antibiotiques.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "diarrhees_infectieuses_voc_057",
+      "term": "Traitement probabiliste",
+      "definition": "Traitement initial choisi avant de disposer de tous les résultats, à réévaluer avec les informations obtenues.",
+      "courseIds": [
+        "diarrhees_infectieuses"
+      ],
+      "ue": "B1.3",
+      "theme": "Diarrhées infectieuses",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
     }
   ]
 }

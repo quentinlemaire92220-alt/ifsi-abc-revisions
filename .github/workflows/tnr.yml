@@ -245,6 +245,7 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           node tests/course-delivery.mjs
+          node tests/official-scoped-bundle-test.mjs
           node tests/existing-course-written-update-test.mjs
           node tests/psychologie-sante-official-revision-test.mjs
           node tests/psychologie-sante-sheet-v4-test.mjs

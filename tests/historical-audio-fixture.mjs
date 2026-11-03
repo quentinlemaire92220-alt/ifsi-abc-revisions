@@ -21,3 +21,5 @@ export function readHistoricalAudioGitJson(file,base){
  const reader=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
  return historical(reader,file);
 }
+
+export function readHistoricalAudioAt(base,file){return readHistoricalAudioGitJson(file,base)}

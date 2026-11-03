@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import * as awaitOfficialScoped from './official-scoped-bundle-contract.mjs';
 // Garde-fou différentiel : ajouts à un cours DÉJÀ publié (partie 2, 3, etc.).
 // Aucune lecture de Google Drive : uniquement JSON et état Git.
 import assert from 'node:assert/strict';
@@ -149,6 +151,11 @@ export function validatePartChanges(before, after, previousManifest, currentMani
     }
     const involved = unique(additions.map(a =>
       delivery.partDeliveries.find(p => (p[a.key]||[]).includes(a.id)).partId));
+    if(delivery.updateContract==='official_reviewed_scoped_bundle_v1'){
+      const {validateOfficialScoped}=awaitOfficialScoped;
+      validateOfficialScoped(after.registry.courses.find(c=>c.id===courseId),delivery,{sheets:after.sheets,vocals:after.vocals,vocabulary:JSON.parse(fs.readFileSync('vocabulaire-v1.json','utf8')).entries});
+      continue;
+    }
     for (const partId of involved) {
       const part = delivery.partDeliveries.find(p => p.partId === partId);
       const declared = ['sheetResourceIds','infographicResourceIds','vocalIds','qcmQuestionIds'];

@@ -1,4 +1,5 @@
-import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
+import {approvedScopedAudioIds,validateOfficialScoped} from './official-scoped-bundle-contract.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioAt} from './historical-audio-fixture.mjs';
 import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 // Sécurisation P0 : teste la DIFF RÉELLE vs main, non un jeu de données fictif.
@@ -23,7 +24,7 @@ const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=readHistoricalAudioJson;
 const base=process.env.IFSI_BASE_SHA||'HEAD~1';
 assert.match(base,/^(?:HEAD~1|[0-9a-f]{7,40})$/i);
-const before=file=>readHistoricalAudioGitJson(file,base);
+const before=file=>readHistoricalAudioAt(base,file);
 const oldReg=before('course-registry-v741.json'),currentReg=disk('course-registry-v741.json');
 const oldMan=before('docs/course-deliveries.json'),currentMan=disk('docs/course-deliveries.json');
 
@@ -361,7 +362,8 @@ const prevAudio=oldMan.audioSupplements||[],nextAudio=currentMan.audioSupplement
 assert.deepEqual(nextAudio.slice(0,prevAudio.length),prevAudio,'Compléments audio historiques altérés');
 const freshAudio=nextAudio.slice(prevAudio.length);
 const firstReleaseAudioIds=validateFirstReleaseAudio(oldMan,currentMan,oldReg,currentReg,prevVocals,nextVocals);
-const expectedAudioIds=[...freshAudio.flatMap(p=>p.vocalIds||[]),...firstReleaseAudioIds];
+const scopedAudio=approvedScopedAudioIds(currentMan).filter(id=>!prevVocals.some(v=>v.id===id));
+const expectedAudioIds=[...scopedAudio,...freshAudio.flatMap(p=>p.vocalIds||[]),...firstReleaseAudioIds];
 assert.deepEqual(nextVocals.slice(prevVocals.length).map(v=>v.id).sort(),expectedAudioIds.slice().sort(),
  'Le catalogue doit contenir exactement les MP3 nouvellement approuvés');
 const baseAudioData={registry:oldReg,vocals:prevVocals,sheets:[1,2,3].flatMap(n=>before('sheets-'+n+'.json')),
@@ -430,7 +432,12 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  else {
   const previousDelivery=oldMan.courses.find(c=>c.courseId===course.id);
   const nextDelivery=currentMan.courses.find(c=>c.courseId===course.id);
-  if(course.id==='gestion_stress_professionnel'&&nextDelivery?.qcmFlashcardsSupplement){
+  if(nextDelivery?.updateContract==='official_reviewed_scoped_bundle_v1'){
+   assert.deepEqual(nextDelivery.historicalDelivery,previousDelivery,'Accord historique modifié');
+   assert.deepEqual(nextVocals.filter(v=>v.courseId===course.id).slice(0,prevVocals.filter(v=>v.courseId===course.id).length),prevVocals.filter(v=>v.courseId===course.id));
+   validateOfficialScoped(course,nextDelivery,{sheets:nowAudioData.sheets,vocals:nextVocals,vocabulary:nowAudioData.vocabulary});
+  }
+  else if(course.id==='gestion_stress_professionnel'&&nextDelivery?.qcmFlashcardsSupplement){
    assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.status,'approved');
    assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.scope,'qcm_flashcards_vocabulary_only');
    assert.deepEqual(course.additionalDocuments.slice(0,oldCourse.additionalDocuments.length),oldCourse.additionalDocuments,'Fiche historique perdue');

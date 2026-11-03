@@ -1,4 +1,5 @@
-import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
+import {historicalAudioView} from '../tools/hosted-audio-supplement-contract.mjs';
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -65,7 +66,10 @@ export function validateExistingWrittenUpdate(course,d,{sheets,questions,deck,vo
 export function verifyExistingWrittenHistory(oldCourse,nextCourse,d,base=process.env.IFSI_BASE_SHA){
  assert.ok(isExistingWrittenUpdate(d));assert.equal(d.courseId,oldCourse.id);
  assert.match(base||'',/^[a-f0-9]{40}$/);
- const before=p=>readHistoricalAudioGitJson(p,base);
+ const rawBefore=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
+ const historic=historicalAudioView(rawBefore('docs/course-deliveries.json'),{registry:rawBefore('course-registry-v741.json'),vocals:rawBefore('vocals.json')});
+ const before=p=>p==='course-registry-v741.json'?historic.registry:p==='vocals.json'?historic.vocals:rawBefore(p);
+ oldCourse=historic.registry.courses.find(c=>c.id===d.courseId);
  const prior=before('docs/course-deliveries.json').courses.find(c=>c.courseId===d.courseId);
  if(prior){
   // A later audio supplement must not re-run the first-release +2 docs/+1 sheet

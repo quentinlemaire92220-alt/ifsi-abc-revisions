@@ -121,7 +121,24 @@ export function validateHostedAudioChanges(before,after,oldData,newData,{stage='
  for(const s of before.hostedAudioSupplements||[])assert.ok(after.hostedAudioSupplements?.some(n=>n.id===s.id),'Complément historique supprimé');
  // Exact preservation of the complete old catalog, including row order, is required.
  if((after.hostedAudioSupplements||[]).length){
-  assert.deepEqual(newView.vocals,oldView.vocals,'Audio hors du complément ou historique modifié');
+  const additions=(after.courses||[]).filter(d=>d.updateContract==='official_reviewed_scoped_bundle_v1' &&
+   !before.courses?.some(old=>old.updateContract===d.updateContract&&old.courseId===d.courseId));
+  const authorized=new Set();
+  for(const d of additions){
+   assert.equal(d.publicationApproval?.status,'approved');
+   assert.equal(d.publicationApproval?.authorization,'explicit_go_publication');
+   assert.equal(d.scopedPublicationAuthorization?.status,'owner_accepted_with_private_reservations');
+   assert.deepEqual(d.publicAudioArtifacts.map(a=>a.vocalId),d.newVocalIds);
+   for(const id of d.newVocalIds){
+    assert.ok(!oldView.vocals.some(v=>v.id===id),'Vocal historique réutilisé comme ajout');
+    const row=newView.vocals.find(v=>v.id===id),artifact=d.publicAudioArtifacts.find(a=>a.vocalId===id);
+    assert.equal(row?.courseId,d.courseId);assert.equal(row.localAudio,'./'+artifact.path);
+    assert.equal(row.durationSeconds,artifact.durationSeconds);assert.ok(row.durationSeconds>0&&row.durationSeconds<600);
+    const bytes=(readBytes||fs.readFileSync)(artifact.path);assert.equal(sha(bytes),artifact.sha256);
+    assert.equal(d.audioOwnerReview?.artifactSha256s[id],artifact.sha256);authorized.add(id);
+   }
+  }
+  assert.deepEqual(newView.vocals.filter(v=>!authorized.has(v.id)),oldView.vocals,'Audio hors du complément ou historique modifié');
  }
  validateHostedAudioSupplements(after,newData,{stage,...(readBytes?{readBytes}:{})});
  return {oldView,newView};

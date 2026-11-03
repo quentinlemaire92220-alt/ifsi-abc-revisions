@@ -24956,5 +24956,2608 @@
     "course": "Prévention des IAS et asepsie",
     "ue": "B1",
     "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q001",
+    "courseId": "diarrhees_infectieuses",
+    "number": 1,
+    "theme": "Définitions et raisonnement",
+    "difficulty": "easy",
+    "question": "Que désigne une étiologie ?",
+    "choices": [
+      "La sensibilité aux antibiotiques.",
+      "Un prélèvement de selles.",
+      "La cause d’une maladie.",
+      "La quantité de bactéries ingérées.",
+      "Le temps avant les symptômes."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle est étudiée par l’antibiogramme.",
+      "Il s’agit d’un échantillon biologique.",
+      "Elle répond à la question de l’origine du trouble.",
+      "Cette quantité correspond à l’inoculum.",
+      "Cet intervalle correspond à l’incubation."
+    ],
+    "explanation": "A — Faux. Elle est étudiée par l’antibiogramme. B — Faux. Il s’agit d’un échantillon biologique. C — Vrai. Elle répond à la question de l’origine du trouble. D — Faux. Cette quantité correspond à l’inoculum. E — Faux. Cet intervalle correspond à l’incubation.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c001",
+        "theme": "Définitions et raisonnement",
+        "front": "Que désigne une étiologie ?",
+        "answers": [
+          "L’étiologie est la cause d’une maladie ou d’un symptôme."
+        ],
+        "explanation": "L’étiologie est la cause d’une maladie ou d’un symptôme."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q002",
+    "courseId": "diarrhees_infectieuses",
+    "number": 2,
+    "theme": "Définitions et raisonnement",
+    "difficulty": "easy",
+    "question": "Que désigne l’incubation d’une infection ?",
+    "choices": [
+      "La durée de la diarrhée uniquement.",
+      "La quantité de germes ingérés.",
+      "L’intervalle contamination–premiers symptômes.",
+      "La durée de conservation des selles.",
+      "La période de culture d’un prélèvement uniquement."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle est postérieure à l’apparition des symptômes.",
+      "Il s’agit de l’inoculum.",
+      "Il précède l’expression clinique.",
+      "C’est un délai préanalytique, pas l’incubation de la maladie.",
+      "Le mot est ici appliqué à l’infection du patient, pas au laboratoire."
+    ],
+    "explanation": "A — Faux. Elle est postérieure à l’apparition des symptômes. B — Faux. Il s’agit de l’inoculum. C — Vrai. Il précède l’expression clinique. D — Faux. C’est un délai préanalytique, pas l’incubation de la maladie. E — Faux. Le mot est ici appliqué à l’infection du patient, pas au laboratoire.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c002",
+        "theme": "Définitions et raisonnement",
+        "front": "Que désigne l’incubation d’une infection ?",
+        "answers": [
+          "L’intervalle entre la contamination et l’apparition des manifestations."
+        ],
+        "explanation": "L’intervalle entre la contamination et l’apparition des manifestations."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q003",
+    "courseId": "diarrhees_infectieuses",
+    "number": 3,
+    "theme": "Définitions et raisonnement",
+    "difficulty": "easy",
+    "question": "Que désigne l’inoculum ?",
+    "choices": [
+      "Une quantité d’agents infectieux.",
+      "Le nombre de récidives.",
+      "Une durée avant les symptômes.",
+      "Le nombre de selles par jour.",
+      "Le type de milieu de culture."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est une notion de dose d’exposition.",
+      "Il décrit les épisodes successifs.",
+      "C’est l’incubation.",
+      "C’est un élément de description clinique.",
+      "Le milieu est un outil du laboratoire."
+    ],
+    "explanation": "A — Vrai. C’est une notion de dose d’exposition. B — Faux. Il décrit les épisodes successifs. C — Faux. C’est l’incubation. D — Faux. C’est un élément de description clinique. E — Faux. Le milieu est un outil du laboratoire.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c003",
+        "theme": "Définitions et raisonnement",
+        "front": "Que désigne l’inoculum ?",
+        "answers": [
+          "La quantité d’agents infectieux impliquée dans une exposition."
+        ],
+        "explanation": "La quantité d’agents infectieux impliquée dans une exposition."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q004",
+    "courseId": "diarrhees_infectieuses",
+    "number": 4,
+    "theme": "Définitions et raisonnement",
+    "difficulty": "medium",
+    "question": "Quelles données décrivent directement une diarrhée ?",
+    "choices": [
+      "La consistance des selles.",
+      "La fréquence des selles.",
+      "Le sérotype isolé décrit directement la consistance des selles.",
+      "La sensibilité antibiotique décrit directement la fréquence des selles.",
+      "L’évolution dans le temps."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle décrit notamment leur caractère liquide.",
+      "Elle décrit le rythme des émissions.",
+      "Le sérotype caractérise la souche, pas la consistance.",
+      "La fréquence nécessite une observation clinique distincte.",
+      "Elle renseigne sur le début et la persistance."
+    ],
+    "explanation": "A — Vrai. Elle décrit notamment leur caractère liquide. B — Vrai. Elle décrit le rythme des émissions. C — Faux. Le sérotype caractérise la souche, pas la consistance. D — Faux. La fréquence nécessite une observation clinique distincte. E — Vrai. Elle renseigne sur le début et la persistance.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c004",
+        "theme": "Définitions et raisonnement",
+        "front": "Quelles données décrivent directement une diarrhée ?",
+        "answers": [
+          "La fréquence, la consistance et l’évolution des selles servent à décrire le trouble."
+        ],
+        "explanation": "La fréquence, la consistance et l’évolution des selles servent à décrire le trouble."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q005",
+    "courseId": "diarrhees_infectieuses",
+    "number": 5,
+    "theme": "Définitions et raisonnement",
+    "difficulty": "easy",
+    "question": "Quelle différence distingue fréquence d’une maladie et gravité ?",
+    "choices": [
+      "Le nombre de cas et le retentissement sont deux dimensions distinctes.",
+      "Un nombre faible de cas exclut une complication individuelle.",
+      "La gravité est définie par le nom du prélèvement.",
+      "Une infection virale ne peut pas entraîner de pertes hydriques importantes.",
+      "Un agent fréquent provoque nécessairement les complications les plus graves."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La fréquence ne mesure pas les complications ou les pertes hydriques.",
+      "La rareté ne préjuge pas du retentissement chez une personne.",
+      "Le prélèvement aide au diagnostic, sans définir à lui seul la gravité.",
+      "La déshydratation peut être importante lors d’une gastro-entérite virale.",
+      "La fréquence ne permet pas cette déduction."
+    ],
+    "explanation": "A — Vrai. La fréquence ne mesure pas les complications ou les pertes hydriques. B — Faux. La rareté ne préjuge pas du retentissement chez une personne. C — Faux. Le prélèvement aide au diagnostic, sans définir à lui seul la gravité. D — Faux. La déshydratation peut être importante lors d’une gastro-entérite virale. E — Faux. La fréquence ne permet pas cette déduction.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c005",
+        "theme": "Définitions et raisonnement",
+        "front": "Quelle différence distingue fréquence d’une maladie et gravité ?",
+        "answers": [
+          "Une maladie fréquente n’est pas nécessairement celle dont le retentissement est le plus grave."
+        ],
+        "explanation": "Une maladie fréquente n’est pas nécessairement celle dont le retentissement est le plus grave."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q006",
+    "courseId": "diarrhees_infectieuses",
+    "number": 6,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Que signifie une transmission féco-orale ?",
+    "choices": [
+      "Une ingestion d’un aliment forcément stérile.",
+      "Une transmission ne pouvant impliquer les mains.",
+      "Une transmission exclusivement par piqûre.",
+      "Un passage depuis les selles jusqu’à une ingestion.",
+      "Un passage obligatoire par le sang."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le risque décrit est lié à sa contamination.",
+      "Les mains constituent au contraire un intermédiaire important.",
+      "Ce n’est pas le trajet féco-oral.",
+      "Le trajet relie l’excrétion à l’entrée digestive.",
+      "La voie décrite est digestive, sans étape sanguine obligatoire."
+    ],
+    "explanation": "A — Faux. Le risque décrit est lié à sa contamination. B — Faux. Les mains constituent au contraire un intermédiaire important. C — Faux. Ce n’est pas le trajet féco-oral. D — Vrai. Le trajet relie l’excrétion à l’entrée digestive. E — Faux. La voie décrite est digestive, sans étape sanguine obligatoire.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c006",
+        "theme": "Virus et transmission",
+        "front": "Que signifie une transmission féco-orale ?",
+        "answers": [
+          "Un agent provenant des selles atteint une autre personne par ingestion, directement ou par un intermédiaire."
+        ],
+        "explanation": "Un agent provenant des selles atteint une autre personne par ingestion, directement ou par un intermédiaire."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q007",
+    "courseId": "diarrhees_infectieuses",
+    "number": 7,
+    "theme": "Virus et transmission",
+    "difficulty": "medium",
+    "question": "Quels intermédiaires peuvent participer à une transmission féco-orale indirecte ?",
+    "choices": [
+      "Une surface contaminée.",
+      "Le sang circulant est un intermédiaire obligatoire de toute transmission féco-orale indirecte.",
+      "Un aliment contaminé.",
+      "Un contact direct entre personnes sans intermédiaire définit la transmission indirecte.",
+      "Une eau contaminée."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle peut contaminer des mains puis une autre personne.",
+      "Les trajets décrits passent par eau, aliments ou surfaces sans étape sanguine obligatoire.",
+      "Son ingestion peut exposer à l’agent.",
+      "Cette proposition confond direct et indirect.",
+      "Elle peut être ingérée ou contaminer un aliment."
+    ],
+    "explanation": "A — Vrai. Elle peut contaminer des mains puis une autre personne. B — Faux. Les trajets décrits passent par eau, aliments ou surfaces sans étape sanguine obligatoire. C — Vrai. Son ingestion peut exposer à l’agent. D — Faux. Cette proposition confond direct et indirect. E — Vrai. Elle peut être ingérée ou contaminer un aliment.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c007",
+        "theme": "Virus et transmission",
+        "front": "Quels intermédiaires peuvent participer à une transmission féco-orale indirecte ?",
+        "answers": [
+          "Eau, aliments et surfaces contaminés peuvent relayer l’agent."
+        ],
+        "explanation": "Eau, aliments et surfaces contaminés peuvent relayer l’agent."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q008",
+    "courseId": "diarrhees_infectieuses",
+    "number": 8,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Dans une transmission croisée, que se passe-t-il ?",
+    "choices": [
+      "Un agent se diffuse uniquement entre deux organes d’une même personne.",
+      "Une bactérie acquiert un nouveau facteur de virulence.",
+      "Le germe passe obligatoirement de l’animal à l’homme.",
+      "La contamination se fait nécessairement par le même aliment.",
+      "L’agent peut passer d’une personne à une autre."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La transmission croisée concerne le passage entre personnes.",
+      "Acquisition de virulence et transmission entre personnes sont deux notions différentes.",
+      "Ce trajet caractérise une zoonose, pas toute transmission croisée.",
+      "Un intermédiaire alimentaire est possible mais n’est pas obligatoire.",
+      "La transmission croisée relie plusieurs personnes."
+    ],
+    "explanation": "A — Faux. La transmission croisée concerne le passage entre personnes. B — Faux. Acquisition de virulence et transmission entre personnes sont deux notions différentes. C — Faux. Ce trajet caractérise une zoonose, pas toute transmission croisée. D — Faux. Un intermédiaire alimentaire est possible mais n’est pas obligatoire. E — Vrai. La transmission croisée relie plusieurs personnes.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c008",
+        "theme": "Virus et transmission",
+        "front": "Dans une transmission croisée, que se passe-t-il ?",
+        "answers": [
+          "Un agent passe entre personnes, notamment par les mains ou un intermédiaire contaminé."
+        ],
+        "explanation": "Un agent passe entre personnes, notamment par les mains ou un intermédiaire contaminé."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q009",
+    "courseId": "diarrhees_infectieuses",
+    "number": 9,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Pourquoi un téléphone manipulé auprès du patient peut-il intervenir dans la transmission ?",
+    "choices": [
+      "Parce que toute transmission par téléphone est obligatoirement sanguine.",
+      "Parce que toucher l’écran remplace le lavage des mains.",
+      "Parce qu’un objet visiblement propre ne peut pas porter d’agent.",
+      "Il peut servir de surface intermédiaire contaminée.",
+      "Parce que seule une ingestion du téléphone permet la contamination."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le téléphone est une surface touchée par les mains.",
+      "La manipulation ne constitue pas une hygiène des mains.",
+      "L’absence de souillure visible ne suffit pas à écarter le transfert décrit.",
+      "Le mécanisme est celui d’un objet touché par les mains.",
+      "Des transferts successifs entre surface et mains suffisent à expliquer son rôle."
+    ],
+    "explanation": "A — Faux. Le téléphone est une surface touchée par les mains. B — Faux. La manipulation ne constitue pas une hygiène des mains. C — Faux. L’absence de souillure visible ne suffit pas à écarter le transfert décrit. D — Vrai. Le mécanisme est celui d’un objet touché par les mains. E — Faux. Des transferts successifs entre surface et mains suffisent à expliquer son rôle.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c009",
+        "theme": "Virus et transmission",
+        "front": "Pourquoi un téléphone manipulé auprès du patient peut-il intervenir dans la transmission ?",
+        "answers": [
+          "Il peut être contaminé puis échanger des agents avec les mains et l’environnement de soin."
+        ],
+        "explanation": "Il peut être contaminé puis échanger des agents avec les mains et l’environnement de soin."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q010",
+    "courseId": "diarrhees_infectieuses",
+    "number": 10,
+    "theme": "Virus et transmission",
+    "difficulty": "medium",
+    "question": "Comment une eau souillée peut-elle participer à une infection digestive ?",
+    "choices": [
+      "Uniquement si elle provoque immédiatement des symptômes.",
+      "Uniquement après avoir été bue par plusieurs personnes.",
+      "Par la contamination d’aliments.",
+      "Uniquement par contact avec une peau intacte, sans ingestion ni aliment.",
+      "Par sa consommation."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le trajet de transmission ne dépend pas d’une apparition immédiate des symptômes.",
+      "Une exposition individuelle reste possible.",
+      "L’eau peut intervenir avant l’ingestion de l’aliment.",
+      "Ce n’est pas le trajet digestif exposé dans cette question.",
+      "L’ingestion peut exposer à un agent présent dans l’eau."
+    ],
+    "explanation": "A — Faux. Le trajet de transmission ne dépend pas d’une apparition immédiate des symptômes. B — Faux. Une exposition individuelle reste possible. C — Vrai. L’eau peut intervenir avant l’ingestion de l’aliment. D — Faux. Ce n’est pas le trajet digestif exposé dans cette question. E — Vrai. L’ingestion peut exposer à un agent présent dans l’eau.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c010",
+        "theme": "Virus et transmission",
+        "front": "Comment une eau souillée peut-elle participer à une infection digestive ?",
+        "answers": [
+          "Elle peut être bue ou contaminer les aliments avant leur ingestion."
+        ],
+        "explanation": "Elle peut être bue ou contaminer les aliments avant leur ingestion."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q011",
+    "courseId": "diarrhees_infectieuses",
+    "number": 11,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Comment un manipulateur infecté peut-il contaminer un aliment ?",
+    "choices": [
+      "Lors de la manipulation de l’aliment.",
+      "Uniquement par un contact avec le sang du consommateur.",
+      "Uniquement après l’ingestion de l’aliment par le consommateur.",
+      "En contaminant une surface, sans possibilité ultérieure de transfert à l’aliment.",
+      "La contamination alimentaire exclut le rôle des mains."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La préparation d’un aliment peut y transférer un agent infectieux.",
+      "Le trajet décrit concerne la préparation et l’ingestion d’un aliment.",
+      "La contamination de préparation précède cette ingestion.",
+      "Les surfaces peuvent intervenir comme intermédiaires.",
+      "Les mains peuvent justement transférer l’agent."
+    ],
+    "explanation": "A — Vrai. La préparation d’un aliment peut y transférer un agent infectieux. B — Faux. Le trajet décrit concerne la préparation et l’ingestion d’un aliment. C — Faux. La contamination de préparation précède cette ingestion. D — Faux. Les surfaces peuvent intervenir comme intermédiaires. E — Faux. Les mains peuvent justement transférer l’agent.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c011",
+        "theme": "Virus et transmission",
+        "front": "Comment un manipulateur infecté peut-il contaminer un aliment ?",
+        "answers": [
+          "La préparation d’un aliment peut y transférer un agent et créer un intermédiaire de transmission."
+        ],
+        "explanation": "La préparation d’un aliment peut y transférer un agent et créer un intermédiaire de transmission."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q012",
+    "courseId": "diarrhees_infectieuses",
+    "number": 12,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Quelle idée résume le péril fécal ?",
+    "choices": [
+      "Le risque associé exclusivement à des bactéries présentes dans le sang.",
+      "Le risque lié à la contamination par des matières fécales.",
+      "Une contamination limitée aux aliments sans rôle possible de l’eau.",
+      "Une transmission seulement entre animaux.",
+      "Une complication rénale propre à toutes les diarrhées."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le péril fécal renvoie aux matières fécales et aux expositions digestives.",
+      "Il relie excrétas et exposition digestive.",
+      "L’eau fait partie des intermédiaires cités.",
+      "La transmission féco-orale concerne aussi les contaminations humaines.",
+      "Une complication à distance ne définit pas le péril fécal."
+    ],
+    "explanation": "A — Faux. Le péril fécal renvoie aux matières fécales et aux expositions digestives. B — Vrai. Il relie excrétas et exposition digestive. C — Faux. L’eau fait partie des intermédiaires cités. D — Faux. La transmission féco-orale concerne aussi les contaminations humaines. E — Faux. Une complication à distance ne définit pas le péril fécal.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c012",
+        "theme": "Virus et transmission",
+        "front": "Quelle idée résume le péril fécal ?",
+        "answers": [
+          "Les matières fécales peuvent contaminer eau, aliments ou environnement et entretenir des transmissions."
+        ],
+        "explanation": "Les matières fécales peuvent contaminer eau, aliments ou environnement et entretenir des transmissions."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q013",
+    "courseId": "diarrhees_infectieuses",
+    "number": 13,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Quel contexte clinique associe-t-on au rotavirus ?",
+    "choices": [
+      "Salmonella Typhi et bactériémie sont les deux noms du rotavirus.",
+      "Le rotavirus désigne le groupe des E. coli urinaires.",
+      "Le poulet mal cuit est le repère principal demandé pour identifier le rotavirus.",
+      "Le rotavirus appartient aux salmonelles mineures.",
+      "Jeune enfant et épidémies de saison froide."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le virus et la salmonelle sont des agents distincts.",
+      "UPEC est le groupe d’E. coli associé aux infections urinaires.",
+      "La volaille est un repère de contamination par Campylobacter.",
+      "Le rotavirus est un virus et non une salmonelle.",
+      "Ce sont les deux repères présentés."
+    ],
+    "explanation": "A — Faux. Le virus et la salmonelle sont des agents distincts. B — Faux. UPEC est le groupe d’E. coli associé aux infections urinaires. C — Faux. La volaille est un repère de contamination par Campylobacter. D — Faux. Le rotavirus est un virus et non une salmonelle. E — Vrai. Ce sont les deux repères présentés.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c013",
+        "theme": "Virus et transmission",
+        "front": "Quel contexte clinique associe-t-on au rotavirus ?",
+        "answers": [
+          "Le rotavirus est un repère de gastro-entérite du jeune enfant, avec des épidémies de saison froide."
+        ],
+        "explanation": "Le rotavirus est un repère de gastro-entérite du jeune enfant, avec des épidémies de saison froide."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q014",
+    "courseId": "diarrhees_infectieuses",
+    "number": 14,
+    "theme": "Virus et transmission",
+    "difficulty": "medium",
+    "question": "Dans quels contextes rencontre-t-on les gastro-entérites à norovirus ?",
+    "choices": [
+      "Le norovirus est défini par un tableau exclusivement urinaire.",
+      "Des épisodes collectifs.",
+      "Le norovirus est une bactérie de la typhoïde.",
+      "Des contaminations alimentaires ou hydriques.",
+      "L’infection à norovirus ne peut concerner qu’une personne isolée."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les contextes discutés sont des gastro-entérites.",
+      "L’agent est décrit dans des situations de transmission groupée.",
+      "La typhoïde est rattachée à Salmonella Typhi, distincte de ce virus.",
+      "Une origine alimentaire ou hydrique peut expliquer une gastro-entérite à norovirus.",
+      "Le norovirus peut être impliqué dans des épisodes collectifs."
+    ],
+    "explanation": "A — Faux. Les contextes discutés sont des gastro-entérites. B — Vrai. L’agent est décrit dans des situations de transmission groupée. C — Faux. La typhoïde est rattachée à Salmonella Typhi, distincte de ce virus. D — Vrai. Une origine alimentaire ou hydrique peut expliquer une gastro-entérite à norovirus. E — Faux. Le norovirus peut être impliqué dans des épisodes collectifs.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c014",
+        "theme": "Virus et transmission",
+        "front": "Dans quels contextes rencontre-t-on les gastro-entérites à norovirus ?",
+        "answers": [
+          "Il est associé aux gastro-entérites chez l’adulte et aux épisodes collectifs, notamment alimentaires ou hydriques."
+        ],
+        "explanation": "Il est associé aux gastro-entérites chez l’adulte et aux épisodes collectifs, notamment alimentaires ou hydriques."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q015",
+    "courseId": "diarrhees_infectieuses",
+    "number": 15,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Comment comparer la saisonnalité des adénovirus entériques à celle du rotavirus ?",
+    "choices": [
+      "Ils ne peuvent survenir que pendant la saison des barbecues.",
+      "Ils sont obligatoirement absents en dehors de l’hiver.",
+      "Leur saisonnalité est identique par définition à celle décrite pour le rotavirus.",
+      "La saison suffit à distinguer avec certitude un adénovirus d’un norovirus.",
+      "Un caractère saisonnier moins marqué."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les gastro-entérites à adénovirus entériques ne sont pas limitées à l’été.",
+      "Le repère présenté est justement un caractère saisonnier moins marqué.",
+      "Les adénovirus entériques ont une saisonnalité moins marquée que le rotavirus.",
+      "Un contexte saisonnier ne fournit pas une identification certaine.",
+      "Ils sont présentés sans la même limitation saisonnière."
+    ],
+    "explanation": "A — Faux. Les gastro-entérites à adénovirus entériques ne sont pas limitées à l’été. B — Faux. Le repère présenté est justement un caractère saisonnier moins marqué. C — Faux. Les adénovirus entériques ont une saisonnalité moins marquée que le rotavirus. D — Faux. Un contexte saisonnier ne fournit pas une identification certaine. E — Vrai. Ils sont présentés sans la même limitation saisonnière.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c015",
+        "theme": "Virus et transmission",
+        "front": "Comment comparer la saisonnalité des adénovirus entériques à celle du rotavirus ?",
+        "answers": [
+          "Un caractère saisonnier moins marqué que celui décrit pour les épidémies hivernales à rotavirus."
+        ],
+        "explanation": "Un caractère saisonnier moins marqué que celui décrit pour les épidémies hivernales à rotavirus."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q016",
+    "courseId": "diarrhees_infectieuses",
+    "number": 16,
+    "theme": "Virus et transmission",
+    "difficulty": "medium",
+    "question": "Quels publics peuvent être concernés par les gastro-entérites à astrovirus ?",
+    "choices": [
+      "Les enfants.",
+      "Seulement les personnes revenant d’un même repas collectif.",
+      "Uniquement les personnes atteintes d’une typhoïde.",
+      "Les personnes immunodéprimées.",
+      "Les personnes âgées."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ils font partie des publics cités.",
+      "Les publics concernés se distinguent par leur âge et leur terrain, sans exposition exclusive de ce type.",
+      "Les astrovirus sont des agents distincts de Salmonella Typhi.",
+      "Les personnes immunodéprimées font partie des publics concernés.",
+      "Elles sont explicitement mentionnées."
+    ],
+    "explanation": "A — Vrai. Ils font partie des publics cités. B — Faux. Les publics concernés se distinguent par leur âge et leur terrain, sans exposition exclusive de ce type. C — Faux. Les astrovirus sont des agents distincts de Salmonella Typhi. D — Vrai. Les personnes immunodéprimées font partie des publics concernés. E — Vrai. Elles sont explicitement mentionnées.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c016",
+        "theme": "Virus et transmission",
+        "front": "Quels publics peuvent être concernés par les gastro-entérites à astrovirus ?",
+        "answers": [
+          "Les enfants, les personnes âgées et les personnes immunodéprimées peuvent être concernés."
+        ],
+        "explanation": "Les enfants, les personnes âgées et les personnes immunodéprimées peuvent être concernés."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q017",
+    "courseId": "diarrhees_infectieuses",
+    "number": 17,
+    "theme": "Virus et transmission",
+    "difficulty": "easy",
+    "question": "Pourquoi les vomissements peuvent-ils intervenir dans une chaîne de transmission digestive ?",
+    "choices": [
+      "Ils prouvent une transmission sanguine.",
+      "Ils empêchent toute contamination de l’environnement.",
+      "Ils identifient à eux seuls le virus responsable.",
+      "Ils excluent des pertes hydriques associées.",
+      "Ils peuvent s’accompagner d’une dispersion contaminante."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La dispersion citée ne constitue pas cette preuve.",
+      "Ils peuvent au contraire participer à une dispersion contaminante.",
+      "Ce signe ne suffit pas à identifier l’agent.",
+      "Ils peuvent s’ajouter aux pertes digestives.",
+      "Les vomissements peuvent disperser l’agent infectieux."
+    ],
+    "explanation": "A — Faux. La dispersion citée ne constitue pas cette preuve. B — Faux. Ils peuvent au contraire participer à une dispersion contaminante. C — Faux. Ce signe ne suffit pas à identifier l’agent. D — Faux. Ils peuvent s’ajouter aux pertes digestives. E — Vrai. Les vomissements peuvent disperser l’agent infectieux.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c017",
+        "theme": "Virus et transmission",
+        "front": "Pourquoi les vomissements peuvent-ils intervenir dans une chaîne de transmission digestive ?",
+        "answers": [
+          "Les vomissements peuvent disperser l’agent dans l’environnement."
+        ],
+        "explanation": "Les vomissements peuvent disperser l’agent dans l’environnement."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q018",
+    "courseId": "diarrhees_infectieuses",
+    "number": 18,
+    "theme": "Pertes hydriques et réhydratation",
+    "difficulty": "easy",
+    "question": "Quel problème la réhydratation vise-t-elle à corriger lors d’une diarrhée ?",
+    "choices": [
+      "La distinction entre salmonelles majeures et mineures.",
+      "Les pertes hydriques et électrolytiques.",
+      "L’identification d’un sérotype.",
+      "La sélection de colonies en culture.",
+      "La sensibilité de la souche aux antibiotiques."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette distinction concerne l’agent, pas le déficit hydrique.",
+      "Elles sont directement liées au retentissement digestif.",
+      "C’est une démarche de caractérisation au laboratoire.",
+      "Elle relève du diagnostic microbiologique.",
+      "Elle relève de l’antibiogramme."
+    ],
+    "explanation": "A — Faux. Cette distinction concerne l’agent, pas le déficit hydrique. B — Vrai. Elles sont directement liées au retentissement digestif. C — Faux. C’est une démarche de caractérisation au laboratoire. D — Faux. Elle relève du diagnostic microbiologique. E — Faux. Elle relève de l’antibiogramme.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c018",
+        "theme": "Pertes hydriques et réhydratation",
+        "front": "Quel problème la réhydratation vise-t-elle à corriger lors d’une diarrhée ?",
+        "answers": [
+          "Les pertes d’eau et d’électrolytes liées aux émissions digestives."
+        ],
+        "explanation": "Les pertes d’eau et d’électrolytes liées aux émissions digestives."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q019",
+    "courseId": "diarrhees_infectieuses",
+    "number": 19,
+    "theme": "Pertes hydriques et réhydratation",
+    "difficulty": "easy",
+    "question": "Quel couplage est utilisé par les solutés de réhydratation orale ?",
+    "choices": [
+      "L’absorption couplée sodium–glucose.",
+      "L’absorption couplée du sang et du mucus.",
+      "La fixation d’une bactérie aux macrophages.",
+      "La recherche simultanée de plusieurs gènes.",
+      "L’invasion de la muqueuse par Shigella."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’absorption du sodium et du glucose est couplée.",
+      "Ce ne sont pas les deux composants du mécanisme présenté.",
+      "Cela concerne la physiopathologie typhoïdique, pas l’absorption sodium–glucose.",
+      "Elle décrit la PCR multiplex.",
+      "Ce mécanisme est lésionnel et distinct de la réhydratation."
+    ],
+    "explanation": "A — Vrai. L’absorption du sodium et du glucose est couplée. B — Faux. Ce ne sont pas les deux composants du mécanisme présenté. C — Faux. Cela concerne la physiopathologie typhoïdique, pas l’absorption sodium–glucose. D — Faux. Elle décrit la PCR multiplex. E — Faux. Ce mécanisme est lésionnel et distinct de la réhydratation.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c019",
+        "theme": "Pertes hydriques et réhydratation",
+        "front": "Quel couplage est utilisé par les solutés de réhydratation orale ?",
+        "answers": [
+          "Le couplage de l’absorption du sodium et du glucose."
+        ],
+        "explanation": "Le couplage de l’absorption du sodium et du glucose."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q020",
+    "courseId": "diarrhees_infectieuses",
+    "number": 20,
+    "theme": "Pertes hydriques et réhydratation",
+    "difficulty": "easy",
+    "question": "Pourquoi ne faut-il pas confondre antidiarrhéique et réhydratation ?",
+    "choices": [
+      "Les deux termes désignent une identification de l’agent.",
+      "La modification de la fréquence des selles prouve que les pertes sont déjà corrigées.",
+      "Une diarrhée virale ne s’accompagne jamais de pertes d’eau.",
+      "Un résultat de coproculture mesure directement toute la réhydratation reçue.",
+      "Agir sur les selles ne signifie pas avoir corrigé les pertes."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Ils concernent la prise en charge et ne sont pas des techniques d’identification.",
+      "Cette déduction confond évolution des selles et correction du déficit.",
+      "La déshydratation est un enjeu important lors d’une gastro-entérite virale.",
+      "L’analyse microbiologique ne mesure pas les apports hydriques.",
+      "Le bilan hydrique reste une question distincte."
+    ],
+    "explanation": "A — Faux. Ils concernent la prise en charge et ne sont pas des techniques d’identification. B — Faux. Cette déduction confond évolution des selles et correction du déficit. C — Faux. La déshydratation est un enjeu important lors d’une gastro-entérite virale. D — Faux. L’analyse microbiologique ne mesure pas les apports hydriques. E — Vrai. Le bilan hydrique reste une question distincte.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c020",
+        "theme": "Pertes hydriques et réhydratation",
+        "front": "Pourquoi ne faut-il pas confondre antidiarrhéique et réhydratation ?",
+        "answers": [
+          "La correction des pertes d’eau et d’électrolytes constitue un objectif distinct de la modification des selles."
+        ],
+        "explanation": "La correction des pertes d’eau et d’électrolytes constitue un objectif distinct de la modification des selles."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q021",
+    "courseId": "diarrhees_infectieuses",
+    "number": 21,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quels groupes faut-il distinguer parmi les salmonelles ?",
+    "choices": [
+      "Les salmonelles mineures ou non typhiques.",
+      "Rotavirus et norovirus sont deux groupes de salmonelles.",
+      "Typhi et Paratyphi parmi les salmonelles majeures.",
+      "EIEC et UPEC sont les deux salmonelles majeures.",
+      "C. difficile est classé parmi les salmonelles mineures."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles sont opposées au groupe typhique.",
+      "Ce sont des virus distincts des salmonelles.",
+      "Typhi et Paratyphi sont associés aux fièvres typhoïdes et paratyphoïdes.",
+      "Ce sont des groupes d’E. coli.",
+      "Il appartient à un autre genre bactérien."
+    ],
+    "explanation": "A — Vrai. Elles sont opposées au groupe typhique. B — Faux. Ce sont des virus distincts des salmonelles. C — Vrai. Typhi et Paratyphi sont associés aux fièvres typhoïdes et paratyphoïdes. D — Faux. Ce sont des groupes d’E. coli. E — Faux. Il appartient à un autre genre bactérien.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c021",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quels groupes faut-il distinguer parmi les salmonelles ?",
+        "answers": [
+          "Les salmonelles majeures, Typhi et Paratyphi, et les salmonelles mineures ou non typhiques."
+        ],
+        "explanation": "Les salmonelles majeures, Typhi et Paratyphi, et les salmonelles mineures ou non typhiques."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q022",
+    "courseId": "diarrhees_infectieuses",
+    "number": 22,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quel est le réservoir des salmonelles typhiques ?",
+    "choices": [
+      "Les volailles exclusivement.",
+      "L’ensemble des animaux, sans réservoir humain.",
+      "Uniquement les eaux naturelles, sans personne porteuse.",
+      "Les animaux de compagnie exclusivement.",
+      "L’être humain."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Ce n’est pas le réservoir décrit pour les salmonelles typhiques.",
+      "Cela contredit le réservoir strictement humain des salmonelles typhiques.",
+      "Le réservoir des salmonelles typhiques est strictement humain.",
+      "Ce repère ne correspond pas aux salmonelles typhiques.",
+      "Ce réservoir diffère de celui des salmonelles non typhiques."
+    ],
+    "explanation": "A — Faux. Ce n’est pas le réservoir décrit pour les salmonelles typhiques. B — Faux. Cela contredit le réservoir strictement humain des salmonelles typhiques. C — Faux. Le réservoir des salmonelles typhiques est strictement humain. D — Faux. Ce repère ne correspond pas aux salmonelles typhiques. E — Vrai. Ce réservoir diffère de celui des salmonelles non typhiques.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c022",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quel est le réservoir des salmonelles typhiques ?",
+        "answers": [
+          "Le réservoir des salmonelles typhiques est strictement humain."
+        ],
+        "explanation": "Le réservoir des salmonelles typhiques est strictement humain."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q023",
+    "courseId": "diarrhees_infectieuses",
+    "number": 23,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Pourquoi la typhoïde peut-elle donner des manifestations générales ?",
+    "choices": [
+      "Parce que l’infection demeure obligatoirement à la surface de l’aliment.",
+      "Une dissémination peut suivre le franchissement intestinal.",
+      "Parce que l’absence de diarrhée exclut toute atteinte systémique.",
+      "Parce que la bactérie ne peut pas franchir la barrière intestinale.",
+      "Parce que tous les symptômes sont dus au seul nombre de selles."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La bactérie franchit la barrière intestinale et se dissémine dans l’hôte.",
+      "Elle explique que le tableau ne reste pas limité aux selles.",
+      "Des signes généraux peuvent dominer avec une constipation.",
+      "Le franchissement fait partie du mécanisme présenté.",
+      "Le tableau comporte des manifestations générales de dissémination."
+    ],
+    "explanation": "A — Faux. La bactérie franchit la barrière intestinale et se dissémine dans l’hôte. B — Vrai. Elle explique que le tableau ne reste pas limité aux selles. C — Faux. Des signes généraux peuvent dominer avec une constipation. D — Faux. Le franchissement fait partie du mécanisme présenté. E — Faux. Le tableau comporte des manifestations générales de dissémination.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c023",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Pourquoi la typhoïde peut-elle donner des manifestations générales ?",
+        "answers": [
+          "La bactérie franchit la barrière intestinale et se dissémine dans l’organisme."
+        ],
+        "explanation": "La bactérie franchit la barrière intestinale et se dissémine dans l’organisme."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q024",
+    "courseId": "diarrhees_infectieuses",
+    "number": 24,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quelle place les macrophages ont-ils dans la physiopathologie de la typhoïde ?",
+    "choices": [
+      "Ils ne sont présents que sur les surfaces alimentaires.",
+      "Ils désignent un groupe de salmonelles mineures.",
+      "Ils remplacent le sérotypage pour identifier Typhi.",
+      "Ils sont le nom d’un prélèvement de selles.",
+      "Ils peuvent héberger la bactérie dans le modèle décrit."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le mécanisme décrit concerne des cellules de l’hôte.",
+      "Un macrophage est une cellule, pas un groupe bactérien.",
+      "Leur rôle physiopathologique n’est pas une technique de sérotypage.",
+      "Le prélèvement et la cellule ne doivent pas être confondus.",
+      "La bactérie peut survivre et se multiplier dans les macrophages."
+    ],
+    "explanation": "A — Faux. Le mécanisme décrit concerne des cellules de l’hôte. B — Faux. Un macrophage est une cellule, pas un groupe bactérien. C — Faux. Leur rôle physiopathologique n’est pas une technique de sérotypage. D — Faux. Le prélèvement et la cellule ne doivent pas être confondus. E — Vrai. La bactérie peut survivre et se multiplier dans les macrophages.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c024",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quelle place les macrophages ont-ils dans la physiopathologie de la typhoïde ?",
+        "answers": [
+          "La bactérie peut survivre et se multiplier dans les macrophages."
+        ],
+        "explanation": "La bactérie peut survivre et se multiplier dans les macrophages."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q025",
+    "courseId": "diarrhees_infectieuses",
+    "number": 25,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Pourquoi une constipation n’écarte-t-elle pas un tableau de typhoïde ?",
+    "choices": [
+      "Elle est citée parmi les présentations possibles.",
+      "Elle identifie à elle seule un norovirus.",
+      "Elle signifie que l’atteinte est nécessairement limitée à un repas contaminé sans infection.",
+      "Elle garantit l’absence de bactériémie.",
+      "Elle permet de distinguer Typhi et Paratyphi sans analyse."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La typhoïde ne se résume pas à une diarrhée persistante.",
+      "Un signe isolé ne démontre pas cet agent.",
+      "La maladie est systémique et peut s’accompagner d’une constipation.",
+      "Cette conclusion n’est pas compatible avec le tableau présenté.",
+      "La constipation ne fournit pas cette caractérisation."
+    ],
+    "explanation": "A — Vrai. La typhoïde ne se résume pas à une diarrhée persistante. B — Faux. Un signe isolé ne démontre pas cet agent. C — Faux. La maladie est systémique et peut s’accompagner d’une constipation. D — Faux. Cette conclusion n’est pas compatible avec le tableau présenté. E — Faux. La constipation ne fournit pas cette caractérisation.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c025",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Pourquoi une constipation n’écarte-t-elle pas un tableau de typhoïde ?",
+        "answers": [
+          "La constipation peut être observée alors que les signes généraux dominent."
+        ],
+        "explanation": "La constipation peut être observée alors que les signes généraux dominent."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q026",
+    "courseId": "diarrhees_infectieuses",
+    "number": 26,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Que signifie un pouls dissocié dans un tableau de typhoïde ?",
+    "choices": [
+      "Un rapport constant entre le nombre de selles et le pouls.",
+      "Un décalage entre la fièvre et la réponse habituelle du pouls.",
+      "Une accélération du pouls proportionnelle à chaque selle.",
+      "Une absence obligatoire de fièvre.",
+      "Une absence de tout signe général."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La dissociation décrite porte sur la relation pouls–fièvre.",
+      "C’est la relation expliquée à l’oral.",
+      "Ce n’est pas le repère expliqué.",
+      "La notion est discutée dans un tableau fébrile.",
+      "La typhoïde décrite comporte au contraire des signes généraux."
+    ],
+    "explanation": "A — Faux. La dissociation décrite porte sur la relation pouls–fièvre. B — Vrai. C’est la relation expliquée à l’oral. C — Faux. Ce n’est pas le repère expliqué. D — Faux. La notion est discutée dans un tableau fébrile. E — Faux. La typhoïde décrite comporte au contraire des signes généraux.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c026",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Que signifie un pouls dissocié dans un tableau de typhoïde ?",
+        "answers": [
+          "L’accélération attendue du pouls avec la fièvre n’est pas retrouvée de la même manière."
+        ],
+        "explanation": "L’accélération attendue du pouls avec la fièvre n’est pas retrouvée de la même manière."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q027",
+    "courseId": "diarrhees_infectieuses",
+    "number": 27,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quel prélèvement recherche une bactériémie dans la typhoïde ?",
+    "choices": [
+      "Une coproculture définit à elle seule le prélèvement sanguin.",
+      "Un prélèvement de sang pour hémocultures.",
+      "Un prélèvement de surfaces de cuisine remplace le sang du patient.",
+      "L’observation du pouls suffit comme prélèvement microbiologique.",
+      "Un questionnaire alimentaire constitue une hémoculture."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Une coproculture étudie des selles, pas du sang.",
+      "Il correspond à la recherche de bactéries dans le compartiment sanguin.",
+      "Il ne recherche pas une bactériémie chez le patient.",
+      "Une mesure clinique n’est pas un échantillon de sang.",
+      "Il renseigne une exposition et ne constitue pas un prélèvement biologique."
+    ],
+    "explanation": "A — Faux. Une coproculture étudie des selles, pas du sang. B — Vrai. Il correspond à la recherche de bactéries dans le compartiment sanguin. C — Faux. Il ne recherche pas une bactériémie chez le patient. D — Faux. Une mesure clinique n’est pas un échantillon de sang. E — Faux. Il renseigne une exposition et ne constitue pas un prélèvement biologique.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c027",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quel prélèvement recherche une bactériémie dans la typhoïde ?",
+        "answers": [
+          "Des hémocultures peuvent être contributives pour rechercher des bactéries dans le sang."
+        ],
+        "explanation": "Des hémocultures peuvent être contributives pour rechercher des bactéries dans le sang."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q028",
+    "courseId": "diarrhees_infectieuses",
+    "number": 28,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quels éléments peuvent caractériser une salmonellose non typhique ?",
+    "choices": [
+      "Un réservoir uniquement humain, identique à celui des salmonelles typhiques.",
+      "Une diarrhée fébrile avec douleurs ou vomissements.",
+      "Une absence obligatoire de signes digestifs.",
+      "Une contamination alimentaire.",
+      "Une infection exclusivement urinaire."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "De nombreux animaux peuvent constituer un réservoir de salmonelles non typhiques.",
+      "Ces manifestations appartiennent au tableau présenté.",
+      "La gastro-entérite est précisément le tableau décrit.",
+      "Des aliments contaminés peuvent transmettre les salmonelles non typhiques.",
+      "Une gastro-entérite peut survenir après une exposition alimentaire."
+    ],
+    "explanation": "A — Faux. De nombreux animaux peuvent constituer un réservoir de salmonelles non typhiques. B — Vrai. Ces manifestations appartiennent au tableau présenté. C — Faux. La gastro-entérite est précisément le tableau décrit. D — Vrai. Des aliments contaminés peuvent transmettre les salmonelles non typhiques. E — Faux. Une gastro-entérite peut survenir après une exposition alimentaire.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c028",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quels éléments peuvent caractériser une salmonellose non typhique ?",
+        "answers": [
+          "Une gastro-entérite fébrile, avec douleurs ou vomissements, peut suivre une exposition alimentaire."
+        ],
+        "explanation": "Une gastro-entérite fébrile, avec douleurs ou vomissements, peut suivre une exposition alimentaire."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q029",
+    "courseId": "diarrhees_infectieuses",
+    "number": 29,
+    "theme": "Salmonelles et typhoïde",
+    "difficulty": "medium",
+    "question": "Quelles complications intestinales peuvent survenir dans la typhoïde ?",
+    "choices": [
+      "Des hémorragies intestinales.",
+      "Des perforations intestinales.",
+      "Une simple identification de sérotype est une lésion intestinale.",
+      "Une augmentation de la fréquence des selles constitue par définition une perforation.",
+      "Une colonisation asymptomatique constitue à elle seule une hémorragie."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles font partie des aggravations décrites.",
+      "Des perforations intestinales peuvent aussi compliquer une typhoïde.",
+      "C’est un résultat de caractérisation, pas une lésion.",
+      "Les deux notions ne se confondent pas.",
+      "Un portage et une complication anatomique sont distincts."
+    ],
+    "explanation": "A — Vrai. Elles font partie des aggravations décrites. B — Vrai. Des perforations intestinales peuvent aussi compliquer une typhoïde. C — Faux. C’est un résultat de caractérisation, pas une lésion. D — Faux. Les deux notions ne se confondent pas. E — Faux. Un portage et une complication anatomique sont distincts.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c029",
+        "theme": "Salmonelles et typhoïde",
+        "front": "Quelles complications intestinales peuvent survenir dans la typhoïde ?",
+        "answers": [
+          "Des hémorragies et des perforations intestinales peuvent survenir."
+        ],
+        "explanation": "Des hémorragies et des perforations intestinales peuvent survenir."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q030",
+    "courseId": "diarrhees_infectieuses",
+    "number": 30,
+    "theme": "TIAC et prévention générale",
+    "difficulty": "easy",
+    "question": "Que signifie le sigle TIAC ?",
+    "choices": [
+      "Toxi-infection alimentaire communautaire.",
+      "Toxi-infection aiguë chronique.",
+      "Toxi-infection alimentaire collective.",
+      "Transmission interhumaine alimentaire croisée.",
+      "Trouble intestinal alimentaire chronique."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le dernier mot du sigle est collective, qui insiste sur le groupement de cas.",
+      "Le développement enseigné mentionne une origine alimentaire et un caractère collectif.",
+      "Le sigle décrit le caractère alimentaire et groupé.",
+      "Ce n’est pas le développement du sigle TIAC.",
+      "Ce développement ne correspond pas à la toxi-infection collective."
+    ],
+    "explanation": "A — Faux. Le dernier mot du sigle est collective, qui insiste sur le groupement de cas. B — Faux. Le développement enseigné mentionne une origine alimentaire et un caractère collectif. C — Vrai. Le sigle décrit le caractère alimentaire et groupé. D — Faux. Ce n’est pas le développement du sigle TIAC. E — Faux. Ce développement ne correspond pas à la toxi-infection collective.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c030",
+        "theme": "TIAC et prévention générale",
+        "front": "Que signifie le sigle TIAC ?",
+        "answers": [
+          "Toxi-infection alimentaire collective."
+        ],
+        "explanation": "Toxi-infection alimentaire collective."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q031",
+    "courseId": "diarrhees_infectieuses",
+    "number": 31,
+    "theme": "TIAC et prévention générale",
+    "difficulty": "easy",
+    "question": "Quel objectif guide l’enquête devant plusieurs malades après un repas commun ?",
+    "choices": [
+      "Conclure à une même espèce uniquement sur le partage du repas.",
+      "Se limiter au seul traitement de chaque cas, sans chercher l’exposition.",
+      "Écarter l’eau parce que l’épisode paraît alimentaire.",
+      "Rechercher seulement le nombre de colonies, sans retracer les repas.",
+      "Identifier le point commun aux personnes atteintes."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’exposition commune suspectée ne suffit pas à identifier l’agent.",
+      "L’enquête vise précisément le point commun.",
+      "L’eau peut intervenir dans la chaîne de contamination.",
+      "La caractérisation biologique ne remplace pas l’enquête d’exposition.",
+      "L’exposition partagée oriente l’enquête."
+    ],
+    "explanation": "A — Faux. L’exposition commune suspectée ne suffit pas à identifier l’agent. B — Faux. L’enquête vise précisément le point commun. C — Faux. L’eau peut intervenir dans la chaîne de contamination. D — Faux. La caractérisation biologique ne remplace pas l’enquête d’exposition. E — Vrai. L’exposition partagée oriente l’enquête.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c031",
+        "theme": "TIAC et prévention générale",
+        "front": "Quel objectif guide l’enquête devant plusieurs malades après un repas commun ?",
+        "answers": [
+          "Rechercher une exposition commune suspectée : aliment, repas ou circuit de préparation."
+        ],
+        "explanation": "Rechercher une exposition commune suspectée : aliment, repas ou circuit de préparation."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q032",
+    "courseId": "diarrhees_infectieuses",
+    "number": 32,
+    "theme": "TIAC et prévention générale",
+    "difficulty": "medium",
+    "question": "Quels éléments participent à la prévention de la contamination alimentaire ?",
+    "choices": [
+      "Remplacer le respect du froid par l’attente d’un résultat PCR.",
+      "L’hygiène des mains.",
+      "Le respect de la chaîne du froid.",
+      "La maîtrise de l’eau utilisée.",
+      "Éliminer les excrétas au même endroit que la préparation des aliments."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une analyse n’assure pas la conservation des aliments.",
+      "Elle limite un transfert vers les aliments.",
+      "Il appartient aux mesures alimentaires citées.",
+      "Une eau contaminée peut exposer directement ou indirectement.",
+      "Cela favorise une contamination au lieu de la prévenir."
+    ],
+    "explanation": "A — Faux. Une analyse n’assure pas la conservation des aliments. B — Vrai. Elle limite un transfert vers les aliments. C — Vrai. Il appartient aux mesures alimentaires citées. D — Vrai. Une eau contaminée peut exposer directement ou indirectement. E — Faux. Cela favorise une contamination au lieu de la prévenir.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c032",
+        "theme": "TIAC et prévention générale",
+        "front": "Quels éléments participent à la prévention de la contamination alimentaire ?",
+        "answers": [
+          "L’hygiène des mains, le contrôle de l’eau et le respect de la chaîne du froid participent à la prévention."
+        ],
+        "explanation": "L’hygiène des mains, le contrôle de l’eau et le respect de la chaîne du froid participent à la prévention."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q033",
+    "courseId": "diarrhees_infectieuses",
+    "number": 33,
+    "theme": "TIAC et prévention générale",
+    "difficulty": "easy",
+    "question": "Pourquoi l’élimination d’excrétas dans un évier pose-t-elle problème ?",
+    "choices": [
+      "Parce que cela équivaut à effectuer une coproculture.",
+      "Parce que cela réalise la désinfection du point d’eau.",
+      "Parce que le risque ne concerne que la personne qui utilise l’évier.",
+      "Elle peut contaminer l’environnement de soin.",
+      "Parce que tout point d’eau remplace le circuit des excrétas."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Éliminer des excrétas n’est pas analyser un échantillon.",
+      "L’introduction de matières fécales peut contaminer le point d’eau.",
+      "Le transfert peut atteindre l’environnement puis d’autres patients.",
+      "L’oral relie ce geste au risque pour les autres patients.",
+      "Les excrétas doivent suivre le circuit prévu pour éviter de contaminer les points d’eau."
+    ],
+    "explanation": "A — Faux. Éliminer des excrétas n’est pas analyser un échantillon. B — Faux. L’introduction de matières fécales peut contaminer le point d’eau. C — Faux. Le transfert peut atteindre l’environnement puis d’autres patients. D — Vrai. L’oral relie ce geste au risque pour les autres patients. E — Faux. Les excrétas doivent suivre le circuit prévu pour éviter de contaminer les points d’eau.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c033",
+        "theme": "TIAC et prévention générale",
+        "front": "Pourquoi l’élimination d’excrétas dans un évier pose-t-elle problème ?",
+        "answers": [
+          "Elle peut contaminer un point d’eau et l’environnement puis favoriser une transmission."
+        ],
+        "explanation": "Elle peut contaminer un point d’eau et l’environnement puis favoriser une transmission."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q034",
+    "courseId": "diarrhees_infectieuses",
+    "number": 34,
+    "theme": "Shigella et syndrome dysentérique",
+    "difficulty": "easy",
+    "question": "Quel mécanisme intestinal est associé à Shigella ?",
+    "choices": [
+      "Une atteinte exclusivement urinaire.",
+      "Une absence obligatoire de toute lésion épithéliale.",
+      "Une contamination alimentaire sans contact avec la muqueuse après ingestion.",
+      "Une invasion de la muqueuse avec inflammation.",
+      "Un simple changement de consistance sans réaction inflammatoire possible."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’invasion décrite concerne l’intestin.",
+      "L’invasion entraîne des lésions de la barrière intestinale.",
+      "Cela ne décrit pas le mécanisme invasif présenté.",
+      "Elle participe au syndrome dysentérique décrit.",
+      "L’inflammation est une composante importante du modèle."
+    ],
+    "explanation": "A — Faux. L’invasion décrite concerne l’intestin. B — Faux. L’invasion entraîne des lésions de la barrière intestinale. C — Faux. Cela ne décrit pas le mécanisme invasif présenté. D — Vrai. Elle participe au syndrome dysentérique décrit. E — Faux. L’inflammation est une composante importante du modèle.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c034",
+        "theme": "Shigella et syndrome dysentérique",
+        "front": "Quel mécanisme intestinal est associé à Shigella ?",
+        "answers": [
+          "Une invasion des cellules intestinales avec inflammation et lésions de la barrière."
+        ],
+        "explanation": "Une invasion des cellules intestinales avec inflammation et lésions de la barrière."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q035",
+    "courseId": "diarrhees_infectieuses",
+    "number": 35,
+    "theme": "Shigella et syndrome dysentérique",
+    "difficulty": "easy",
+    "question": "Que décrit le terme muco-sanglant ?",
+    "choices": [
+      "Des selles uniquement aqueuses, sans mucus ni sang.",
+      "Du mucus et du sang.",
+      "Du mucus sans sang.",
+      "Du sang sans mucus.",
+      "Une présence exclusive de cellules bactériennes en culture."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le terme mentionne précisément les deux composantes.",
+      "Les deux composantes expliquent le terme.",
+      "Cela ne couvre qu’une composante du terme.",
+      "Cela ne couvre qu’une composante du terme.",
+      "C’est un aspect clinique des selles, pas une description de colonies."
+    ],
+    "explanation": "A — Faux. Le terme mentionne précisément les deux composantes. B — Vrai. Les deux composantes expliquent le terme. C — Faux. Cela ne couvre qu’une composante du terme. D — Faux. Cela ne couvre qu’une composante du terme. E — Faux. C’est un aspect clinique des selles, pas une description de colonies.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c035",
+        "theme": "Shigella et syndrome dysentérique",
+        "front": "Que décrit le terme muco-sanglant ?",
+        "answers": [
+          "La présence de mucus et de sang dans les selles."
+        ],
+        "explanation": "La présence de mucus et de sang dans les selles."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q036",
+    "courseId": "diarrhees_infectieuses",
+    "number": 36,
+    "theme": "Shigella et syndrome dysentérique",
+    "difficulty": "medium",
+    "question": "Quels éléments appartiennent au syndrome dysentérique ?",
+    "choices": [
+      "Une absence obligatoire de douleurs abdominales.",
+      "Une absence de lésion muqueuse par définition.",
+      "Des selles glairo-sanglantes ou purulentes.",
+      "Des douleurs et des besoins douloureux d’évacuation.",
+      "Un résultat positif de sérotypage considéré comme un symptôme."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le tableau présenté comporte des douleurs.",
+      "Le syndrome est relié à des mécanismes inflammatoires et lésionnels.",
+      "Elles font partie du tableau décrit.",
+      "Les épreintes et le ténesme sont cités.",
+      "L’examen biologique et les manifestations cliniques sont distincts."
+    ],
+    "explanation": "A — Faux. Le tableau présenté comporte des douleurs. B — Faux. Le syndrome est relié à des mécanismes inflammatoires et lésionnels. C — Vrai. Elles font partie du tableau décrit. D — Vrai. Les épreintes et le ténesme sont cités. E — Faux. L’examen biologique et les manifestations cliniques sont distincts.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c036",
+        "theme": "Shigella et syndrome dysentérique",
+        "front": "Quels éléments appartiennent au syndrome dysentérique ?",
+        "answers": [
+          "Des selles glairo-sanglantes ou purulentes, des douleurs, des épreintes et un ténesme peuvent être associés."
+        ],
+        "explanation": "Des selles glairo-sanglantes ou purulentes, des douleurs, des épreintes et un ténesme peuvent être associés."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q037",
+    "courseId": "diarrhees_infectieuses",
+    "number": 37,
+    "theme": "Shigella et syndrome dysentérique",
+    "difficulty": "easy",
+    "question": "Quel rôle les polynucléaires neutrophiles jouent-ils lors d’une atteinte intestinale inflammatoire ?",
+    "choices": [
+      "Ils correspondent à l’agent viral de la diarrhée.",
+      "Ils sont le réservoir alimentaire de Salmonella.",
+      "Leur présence identifie à elle seule l’espèce bactérienne.",
+      "Une participation à la réponse inflammatoire.",
+      "Ils indiquent directement la sensibilité aux antibiotiques."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Ce sont des cellules de la réponse inflammatoire.",
+      "Le rôle décrit concerne la réaction de l’hôte dans les lésions.",
+      "Elle ne réalise pas un sérotypage ni une identification d’espèce.",
+      "Les polynucléaires neutrophiles sont recrutés vers les tissus atteints.",
+      "L’étude de sensibilité relève de l’antibiogramme."
+    ],
+    "explanation": "A — Faux. Ce sont des cellules de la réponse inflammatoire. B — Faux. Le rôle décrit concerne la réaction de l’hôte dans les lésions. C — Faux. Elle ne réalise pas un sérotypage ni une identification d’espèce. D — Vrai. Les polynucléaires neutrophiles sont recrutés vers les tissus atteints. E — Faux. L’étude de sensibilité relève de l’antibiogramme.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c037",
+        "theme": "Shigella et syndrome dysentérique",
+        "front": "Quel rôle les polynucléaires neutrophiles jouent-ils lors d’une atteinte intestinale inflammatoire ?",
+        "answers": [
+          "Ils participent à la réponse inflammatoire recrutée au niveau des lésions."
+        ],
+        "explanation": "Ils participent à la réponse inflammatoire recrutée au niveau des lésions."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q038",
+    "courseId": "diarrhees_infectieuses",
+    "number": 38,
+    "theme": "Shigella et syndrome dysentérique",
+    "difficulty": "medium",
+    "question": "Quelle voie de contamination peut transmettre Shigella ?",
+    "choices": [
+      "Une contamination exclusivement par prélèvement sanguin.",
+      "L’ingestion d’eau souillée.",
+      "Une transmission sans ingestion possible d’un agent digestif.",
+      "Une acquisition obligatoire après un antibiogramme.",
+      "L’ingestion d’aliments souillés."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La contamination passe par une voie digestive.",
+      "Elle peut véhiculer l’agent digestif.",
+      "La voie présentée repose sur l’ingestion d’eau ou d’aliments souillés.",
+      "Le test n’est pas une condition de la contamination.",
+      "La contamination alimentaire est également citée."
+    ],
+    "explanation": "A — Faux. La contamination passe par une voie digestive. B — Vrai. Elle peut véhiculer l’agent digestif. C — Faux. La voie présentée repose sur l’ingestion d’eau ou d’aliments souillés. D — Faux. Le test n’est pas une condition de la contamination. E — Vrai. La contamination alimentaire est également citée.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c038",
+        "theme": "Shigella et syndrome dysentérique",
+        "front": "Quelle voie de contamination peut transmettre Shigella ?",
+        "answers": [
+          "L’ingestion d’eau ou d’aliments souillés, en lien avec le péril fécal."
+        ],
+        "explanation": "L’ingestion d’eau ou d’aliments souillés, en lien avec le péril fécal."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q039",
+    "courseId": "diarrhees_infectieuses",
+    "number": 39,
+    "theme": "Yersinioses digestives",
+    "difficulty": "medium",
+    "question": "Quelles espèces de Yersinia sont associées aux diarrhées ?",
+    "choices": [
+      "Yersinia pestis comme seul agent des yersinioses digestives.",
+      "Yersinia pseudotuberculosis.",
+      "Yersinia enterocolitica.",
+      "Salmonella Typhi.",
+      "Norovirus."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle est citée dans l’historique, pas comme l’espèce digestive à retenir ici.",
+      "Elle est également abordée.",
+      "Elle appartient aux espèces digestives citées.",
+      "Elle appartient à un autre genre.",
+      "C’est un virus et non une espèce de Yersinia."
+    ],
+    "explanation": "A — Faux. Elle est citée dans l’historique, pas comme l’espèce digestive à retenir ici. B — Vrai. Elle est également abordée. C — Vrai. Elle appartient aux espèces digestives citées. D — Faux. Elle appartient à un autre genre. E — Faux. C’est un virus et non une espèce de Yersinia.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c039",
+        "theme": "Yersinioses digestives",
+        "front": "Quelles espèces de Yersinia sont associées aux diarrhées ?",
+        "answers": [
+          "Yersinia enterocolitica et Yersinia pseudotuberculosis."
+        ],
+        "explanation": "Yersinia enterocolitica et Yersinia pseudotuberculosis."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q040",
+    "courseId": "diarrhees_infectieuses",
+    "number": 40,
+    "theme": "Yersinioses digestives",
+    "difficulty": "easy",
+    "question": "Quelle forme digestive de yersiniose peut survenir chez le petit enfant ?",
+    "choices": [
+      "Une infection urinaire définissant UPEC.",
+      "Une typhoïde systémique à Salmonella Typhi par définition.",
+      "Une forme entéritique.",
+      "Un portage totalement asymptomatique définissant la forme entéritique.",
+      "Une forme sans aucune manifestation intestinale."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est un autre groupe bactérien et un autre tableau.",
+      "La yersiniose ne se confond pas avec cette infection.",
+      "La forme entéritique est un tableau important chez le petit enfant.",
+      "Une entérite est une forme clinique digestive, pas ce portage.",
+      "L’entérite prioritaire est précisément une forme digestive."
+    ],
+    "explanation": "A — Faux. C’est un autre groupe bactérien et un autre tableau. B — Faux. La yersiniose ne se confond pas avec cette infection. C — Vrai. La forme entéritique est un tableau important chez le petit enfant. D — Faux. Une entérite est une forme clinique digestive, pas ce portage. E — Faux. L’entérite prioritaire est précisément une forme digestive.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c040",
+        "theme": "Yersinioses digestives",
+        "front": "Quelle forme digestive de yersiniose peut survenir chez le petit enfant ?",
+        "answers": [
+          "Une forme entéritique, parfois traînante."
+        ],
+        "explanation": "Une forme entéritique, parfois traînante."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q041",
+    "courseId": "diarrhees_infectieuses",
+    "number": 41,
+    "theme": "Yersinioses digestives",
+    "difficulty": "easy",
+    "question": "Quels mécanismes peuvent expliquer une douleur de la fosse iliaque droite dans une yersiniose ?",
+    "choices": [
+      "Une infection exclusivement urinaire, sans atteinte digestive.",
+      "Une diarrhée virale identifiée par la seule localisation de la douleur.",
+      "Une disparition de l’inflammation des ganglions.",
+      "Une adénite et une inflammation de l’iléon terminal.",
+      "Une altération de la sensibilité antibiotique comme unique cause de la douleur."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le mécanisme cité associe ganglions et iléon terminal.",
+      "La localisation ne fournit pas cette identification.",
+      "L’adénite désigne au contraire une atteinte inflammatoire ganglionnaire.",
+      "L’adénite et l’inflammation de l’iléon terminal peuvent expliquer ce tableau.",
+      "Le mécanisme anatomique présenté est une adénite avec iléite."
+    ],
+    "explanation": "A — Faux. Le mécanisme cité associe ganglions et iléon terminal. B — Faux. La localisation ne fournit pas cette identification. C — Faux. L’adénite désigne au contraire une atteinte inflammatoire ganglionnaire. D — Vrai. L’adénite et l’inflammation de l’iléon terminal peuvent expliquer ce tableau. E — Faux. Le mécanisme anatomique présenté est une adénite avec iléite.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c041",
+        "theme": "Yersinioses digestives",
+        "front": "Quels mécanismes peuvent expliquer une douleur de la fosse iliaque droite dans une yersiniose ?",
+        "answers": [
+          "Une adénite et une inflammation de l’iléon terminal peuvent être en cause."
+        ],
+        "explanation": "Une adénite et une inflammation de l’iléon terminal peuvent être en cause."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q042",
+    "courseId": "diarrhees_infectieuses",
+    "number": 42,
+    "theme": "Escherichia coli : flore et invasion",
+    "difficulty": "medium",
+    "question": "Pourquoi le seul nom Escherichia coli ne résume-t-il pas le pouvoir pathogène ?",
+    "choices": [
+      "Toutes les souches ont obligatoirement un tropisme exclusivement urinaire.",
+      "E. coli peut appartenir à la flore digestive habituelle.",
+      "E. coli est un virus digestif.",
+      "La présence digestive d’E. coli signifie toujours le même syndrome.",
+      "Certaines souches ont des facteurs de virulence particuliers."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les Escherichia coli regroupent plusieurs profils pathogènes, dont des groupes digestifs.",
+      "Sa présence ne définit pas à elle seule le même tableau pathologique.",
+      "Il est présenté comme une bactérie.",
+      "Il faut distinguer flore habituelle et facteurs de virulence.",
+      "Ils expliquent des tableaux différents."
+    ],
+    "explanation": "A — Faux. Les Escherichia coli regroupent plusieurs profils pathogènes, dont des groupes digestifs. B — Vrai. Sa présence ne définit pas à elle seule le même tableau pathologique. C — Faux. Il est présenté comme une bactérie. D — Faux. Il faut distinguer flore habituelle et facteurs de virulence. E — Vrai. Ils expliquent des tableaux différents.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c042",
+        "theme": "Escherichia coli : flore et invasion",
+        "front": "Pourquoi le seul nom Escherichia coli ne résume-t-il pas le pouvoir pathogène ?",
+        "answers": [
+          "Des souches appartiennent à la flore habituelle ; d’autres possèdent des facteurs de virulence particuliers."
+        ],
+        "explanation": "Des souches appartiennent à la flore habituelle ; d’autres possèdent des facteurs de virulence particuliers."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q043",
+    "courseId": "diarrhees_infectieuses",
+    "number": 43,
+    "theme": "Escherichia coli : flore et invasion",
+    "difficulty": "easy",
+    "question": "À quel mécanisme le groupe EIEC est-il associé ?",
+    "choices": [
+      "Un mécanisme entéro-invasif.",
+      "Un mécanisme exclusivement urinaire.",
+      "Une absence d’invasion définissant EIEC.",
+      "Le mécanisme systémique propre aux salmonelles typhiques.",
+      "Un groupe de virus digestifs saisonniers."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’invasion explique le rapprochement avec Shigella.",
+      "Ce repère correspond à UPEC, pas EIEC.",
+      "Le groupe est qualifié d’entéro-invasif.",
+      "EIEC et Salmonella Typhi sont distincts.",
+      "EIEC désigne des E. coli bactériens."
+    ],
+    "explanation": "A — Vrai. L’invasion explique le rapprochement avec Shigella. B — Faux. Ce repère correspond à UPEC, pas EIEC. C — Faux. Le groupe est qualifié d’entéro-invasif. D — Faux. EIEC et Salmonella Typhi sont distincts. E — Faux. EIEC désigne des E. coli bactériens.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c043",
+        "theme": "Escherichia coli : flore et invasion",
+        "front": "À quel mécanisme le groupe EIEC est-il associé ?",
+        "answers": [
+          "E. coli entéro-invasif : invasion intestinale avec un tableau proche de Shigella."
+        ],
+        "explanation": "E. coli entéro-invasif : invasion intestinale avec un tableau proche de Shigella."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q044",
+    "courseId": "diarrhees_infectieuses",
+    "number": 44,
+    "theme": "Escherichia coli : flore et invasion",
+    "difficulty": "easy",
+    "question": "Quel tableau digestif peut être associé aux Escherichia coli entéro-invasifs ?",
+    "choices": [
+      "Un tableau dysentérique avec selles muco-sanglantes.",
+      "Une infection exclusivement urinaire définissant EIEC.",
+      "Une absence obligatoire d’atteinte intestinale.",
+      "Une typhoïde due par définition à Salmonella Typhi.",
+      "Un portage asymptomatique constituant à lui seul le syndrome dysentérique."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il est relié à l’invasion intestinale.",
+      "Cette proposition confond EIEC et UPEC.",
+      "Le groupe est entéro-invasif.",
+      "Il s’agit d’un autre agent.",
+      "Une présence sans symptômes ne définit pas ce syndrome."
+    ],
+    "explanation": "A — Vrai. Il est relié à l’invasion intestinale. B — Faux. Cette proposition confond EIEC et UPEC. C — Faux. Le groupe est entéro-invasif. D — Faux. Il s’agit d’un autre agent. E — Faux. Une présence sans symptômes ne définit pas ce syndrome.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c044",
+        "theme": "Escherichia coli : flore et invasion",
+        "front": "Quel tableau digestif peut être associé aux Escherichia coli entéro-invasifs ?",
+        "answers": [
+          "Une diarrhée muco-sanglante avec syndrome dysentérique."
+        ],
+        "explanation": "Une diarrhée muco-sanglante avec syndrome dysentérique."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q045",
+    "courseId": "diarrhees_infectieuses",
+    "number": 45,
+    "theme": "Escherichia coli : flore et invasion",
+    "difficulty": "easy",
+    "question": "Que désigne le groupe des Escherichia coli uropathogènes ?",
+    "choices": [
+      "Des E. coli associés à des infections urinaires.",
+      "Un groupe de salmonelles typhiques.",
+      "Un groupe d’E. coli défini uniquement par une invasion intestinale.",
+      "Un virus à transmission alimentaire.",
+      "Un synonyme de Shigella."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les Escherichia coli uropathogènes sont associés aux infections urinaires.",
+      "UPEC désigne un groupe d’E. coli.",
+      "Ce repère correspond à EIEC.",
+      "Il s’agit d’E. coli bactériens.",
+      "Les termes ne désignent pas le même agent."
+    ],
+    "explanation": "A — Vrai. Les Escherichia coli uropathogènes sont associés aux infections urinaires. B — Faux. UPEC désigne un groupe d’E. coli. C — Faux. Ce repère correspond à EIEC. D — Faux. Il s’agit d’E. coli bactériens. E — Faux. Les termes ne désignent pas le même agent.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c045",
+        "theme": "Escherichia coli : flore et invasion",
+        "front": "Que désigne le groupe des Escherichia coli uropathogènes ?",
+        "answers": [
+          "Ce sont les Escherichia coli associés aux infections urinaires."
+        ],
+        "explanation": "Ce sont les Escherichia coli associés aux infections urinaires."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q046",
+    "courseId": "diarrhees_infectieuses",
+    "number": 46,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "easy",
+    "question": "Quel réservoir est particulièrement associé à Campylobacter ?",
+    "choices": [
+      "Le tube digestif des animaux, notamment des volailles.",
+      "Un réservoir strictement humain, comme pour les salmonelles typhiques.",
+      "Uniquement la flore humaine, sans lien avec les animaux.",
+      "Les virus hivernaux comme réservoir bactérien.",
+      "Uniquement l’eau de boisson, à l’exclusion de tout animal."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La volaille est un repère de contamination alimentaire par Campylobacter.",
+      "Ce n’est pas le réservoir animal associé à Campylobacter dans cette question.",
+      "Le réservoir animal est explicitement développé.",
+      "Les animaux et leur tube digestif constituent un réservoir de Campylobacter.",
+      "L’eau peut transmettre, mais n’efface pas le réservoir animal."
+    ],
+    "explanation": "A — Vrai. La volaille est un repère de contamination alimentaire par Campylobacter. B — Faux. Ce n’est pas le réservoir animal associé à Campylobacter dans cette question. C — Faux. Le réservoir animal est explicitement développé. D — Faux. Les animaux et leur tube digestif constituent un réservoir de Campylobacter. E — Faux. L’eau peut transmettre, mais n’efface pas le réservoir animal.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c046",
+        "theme": "Campylobacter et alimentation",
+        "front": "Quel réservoir est particulièrement associé à Campylobacter ?",
+        "answers": [
+          "Le réservoir animal, avec la volaille comme repère principal."
+        ],
+        "explanation": "Le réservoir animal, avec la volaille comme repère principal."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q047",
+    "courseId": "diarrhees_infectieuses",
+    "number": 47,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "easy",
+    "question": "Comment une carcasse de volaille peut-elle être contaminée par son contenu digestif ?",
+    "choices": [
+      "Par la seule apparition de symptômes chez le consommateur.",
+      "Uniquement si le consommateur a déjà une bactériémie.",
+      "Par une cuisson insuffisante qui constitue à elle seule le réservoir animal.",
+      "Uniquement après identification d’un sérotype chez le consommateur.",
+      "Par un contact avec le contenu digestif de l’animal."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La contamination de la carcasse précède sa consommation.",
+      "Ce n’est pas une condition du mécanisme à l’abattoir.",
+      "La cuisson insuffisante ne crée pas le réservoir ; elle peut laisser persister le risque.",
+      "Le mécanisme de contamination ne dépend pas de cet examen.",
+      "L’oral décrit ce risque lors de l’abattage."
+    ],
+    "explanation": "A — Faux. La contamination de la carcasse précède sa consommation. B — Faux. Ce n’est pas une condition du mécanisme à l’abattoir. C — Faux. La cuisson insuffisante ne crée pas le réservoir ; elle peut laisser persister le risque. D — Faux. Le mécanisme de contamination ne dépend pas de cet examen. E — Vrai. L’oral décrit ce risque lors de l’abattage.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c047",
+        "theme": "Campylobacter et alimentation",
+        "front": "Comment une carcasse de volaille peut-elle être contaminée par son contenu digestif ?",
+        "answers": [
+          "Le contenu du tube digestif peut contaminer la carcasse lors de la transformation."
+        ],
+        "explanation": "Le contenu du tube digestif peut contaminer la carcasse lors de la transformation."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q048",
+    "courseId": "diarrhees_infectieuses",
+    "number": 48,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "medium",
+    "question": "Quelles expositions peuvent transmettre Campylobacter ?",
+    "choices": [
+      "Le seul partage d’un compte rendu d’analyse.",
+      "Une eau souillée.",
+      "Une présence imposée de Salmonella Typhi avant toute ingestion.",
+      "Une volaille insuffisamment cuite.",
+      "Du lait non pasteurisé contaminé."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ce n’est pas une exposition alimentaire ou hydrique citée.",
+      "Elle est une autre voie digestive présentée.",
+      "Cette infection distincte n’est pas une condition de contamination par Campylobacter.",
+      "Elle peut véhiculer l’agent provenant du réservoir animal.",
+      "Du lait non pasteurisé contaminé peut transmettre Campylobacter."
+    ],
+    "explanation": "A — Faux. Ce n’est pas une exposition alimentaire ou hydrique citée. B — Vrai. Elle est une autre voie digestive présentée. C — Faux. Cette infection distincte n’est pas une condition de contamination par Campylobacter. D — Vrai. Elle peut véhiculer l’agent provenant du réservoir animal. E — Vrai. Du lait non pasteurisé contaminé peut transmettre Campylobacter.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c048",
+        "theme": "Campylobacter et alimentation",
+        "front": "Quelles expositions peuvent transmettre Campylobacter ?",
+        "answers": [
+          "La volaille insuffisamment cuite, le lait non pasteurisé et les eaux souillées sont des expositions possibles."
+        ],
+        "explanation": "La volaille insuffisamment cuite, le lait non pasteurisé et les eaux souillées sont des expositions possibles."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q049",
+    "courseId": "diarrhees_infectieuses",
+    "number": 49,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "easy",
+    "question": "Que signifie une zoonose ?",
+    "choices": [
+      "Une quantité de germes.",
+      "Une période entre contamination et symptômes.",
+      "Un synonyme de culture de selles.",
+      "Un test de sensibilité d’un antibiotique.",
+      "Une infection transmise depuis l’animal."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il s’agit de l’inoculum.",
+      "Il s’agit de l’incubation.",
+      "La coproculture est une analyse.",
+      "Cela correspond à l’antibiogramme.",
+      "C’est la définition expliquée à l’oral."
+    ],
+    "explanation": "A — Faux. Il s’agit de l’inoculum. B — Faux. Il s’agit de l’incubation. C — Faux. La coproculture est une analyse. D — Faux. Cela correspond à l’antibiogramme. E — Vrai. C’est la définition expliquée à l’oral.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c049",
+        "theme": "Campylobacter et alimentation",
+        "front": "Que signifie une zoonose ?",
+        "answers": [
+          "Une infection transmise depuis un réservoir animal, illustrée ici par Campylobacter."
+        ],
+        "explanation": "Une infection transmise depuis un réservoir animal, illustrée ici par Campylobacter."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q050",
+    "courseId": "diarrhees_infectieuses",
+    "number": 50,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "easy",
+    "question": "Pourquoi une volaille insuffisamment cuite au barbecue peut-elle exposer à Campylobacter ?",
+    "choices": [
+      "Parce que la saison identifie avec certitude le germe chez chaque personne.",
+      "Parce que toute viande grillée constitue un milieu sélectif de laboratoire.",
+      "Parce qu’un repas estival implique obligatoirement Salmonella Typhi.",
+      "Pour illustrer le risque d’une volaille mal cuite.",
+      "Parce que la cuisson est sans rapport avec le risque présenté."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un contexte saisonnier ne remplace pas l’identification biologique.",
+      "La préparation alimentaire est distincte d’une méthode de culture.",
+      "Cette conclusion n’est pas établie par le contexte.",
+      "Le lien porte sur la cuisson et l’agent d’origine animale.",
+      "La cuisson insuffisante est le lien central de l’exemple."
+    ],
+    "explanation": "A — Faux. Un contexte saisonnier ne remplace pas l’identification biologique. B — Faux. La préparation alimentaire est distincte d’une méthode de culture. C — Faux. Cette conclusion n’est pas établie par le contexte. D — Vrai. Le lien porte sur la cuisson et l’agent d’origine animale. E — Faux. La cuisson insuffisante est le lien central de l’exemple.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c050",
+        "theme": "Campylobacter et alimentation",
+        "front": "Pourquoi une volaille insuffisamment cuite au barbecue peut-elle exposer à Campylobacter ?",
+        "answers": [
+          "Une cuisson insuffisante de la volaille peut permettre une contamination alimentaire."
+        ],
+        "explanation": "Une cuisson insuffisante de la volaille peut permettre une contamination alimentaire."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q051",
+    "courseId": "diarrhees_infectieuses",
+    "number": 51,
+    "theme": "Campylobacter et alimentation",
+    "difficulty": "medium",
+    "question": "Quels signes peuvent accompagner une entérite à Campylobacter ?",
+    "choices": [
+      "Un résultat de sérotypage considéré comme une manifestation clinique.",
+      "Une diarrhée.",
+      "Une fièvre et des vomissements.",
+      "Une absence obligatoire de tout signe digestif.",
+      "Un antibiogramme positif constituant la définition de la fièvre."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est une caractérisation de souche, pas un signe chez le patient.",
+      "Elle appartient à la présentation digestive.",
+      "Ils sont également cités.",
+      "Il s’agit d’une entérite, qui atteint l’intestin.",
+      "La sensibilité de la souche et un signe clinique sont distincts."
+    ],
+    "explanation": "A — Faux. C’est une caractérisation de souche, pas un signe chez le patient. B — Vrai. Elle appartient à la présentation digestive. C — Vrai. Ils sont également cités. D — Faux. Il s’agit d’une entérite, qui atteint l’intestin. E — Faux. La sensibilité de la souche et un signe clinique sont distincts.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c051",
+        "theme": "Campylobacter et alimentation",
+        "front": "Quels signes peuvent accompagner une entérite à Campylobacter ?",
+        "answers": [
+          "Une diarrhée, de la fièvre et des vomissements peuvent être associés."
+        ],
+        "explanation": "Une diarrhée, de la fièvre et des vomissements peuvent être associés."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q052",
+    "courseId": "diarrhees_infectieuses",
+    "number": 52,
+    "theme": "Nomenclature et portage",
+    "difficulty": "easy",
+    "question": "Quelle paire de noms désigne le même agent bactérien ?",
+    "choices": [
+      "Clostridioides difficile et Norovirus.",
+      "Clostridioides difficile et Yersinia pestis.",
+      "Clostridioides difficile et Clostridium difficile.",
+      "Clostridioides difficile et Salmonella Typhi.",
+      "Clostridioides difficile et UPEC."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’un est une bactérie, l’autre un virus.",
+      "Ils appartiennent à des genres distincts.",
+      "Clostridium difficile est l’ancien nom de Clostridioides difficile.",
+      "Ce sont deux agents distincts.",
+      "UPEC désigne un groupe d’E. coli."
+    ],
+    "explanation": "A — Faux. L’un est une bactérie, l’autre un virus. B — Faux. Ils appartiennent à des genres distincts. C — Vrai. Clostridium difficile est l’ancien nom de Clostridioides difficile. D — Faux. Ce sont deux agents distincts. E — Faux. UPEC désigne un groupe d’E. coli.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c052",
+        "theme": "Nomenclature et portage",
+        "front": "Quel ancien nom correspond à Clostridioides difficile ?",
+        "answers": [
+          "Clostridioides difficile est l’appellation actuelle utilisée ; Clostridium difficile est l’ancien nom rencontré."
+        ],
+        "explanation": "Clostridioides difficile est l’appellation actuelle utilisée ; Clostridium difficile est l’ancien nom rencontré."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q053",
+    "courseId": "diarrhees_infectieuses",
+    "number": 53,
+    "theme": "Nomenclature et portage",
+    "difficulty": "easy",
+    "question": "Que signifie un portage asymptomatique ?",
+    "choices": [
+      "Un antibiogramme systématiquement négatif.",
+      "Une diarrhée obligatoire à chaque présence.",
+      "Un synonyme de perforation intestinale.",
+      "Une absence obligatoire de tout micro-organisme.",
+      "Une présence sans symptômes attribuables."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le portage ne définit pas un résultat de sensibilité.",
+      "Cela contredit le caractère asymptomatique.",
+      "Une complication anatomique n’est pas la notion de portage.",
+      "Le portage suppose au contraire une présence.",
+      "La notion est distinguée de l’infection clinique."
+    ],
+    "explanation": "A — Faux. Le portage ne définit pas un résultat de sensibilité. B — Faux. Cela contredit le caractère asymptomatique. C — Faux. Une complication anatomique n’est pas la notion de portage. D — Faux. Le portage suppose au contraire une présence. E — Vrai. La notion est distinguée de l’infection clinique.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c053",
+        "theme": "Nomenclature et portage",
+        "front": "Que signifie un portage asymptomatique ?",
+        "answers": [
+          "La présence d’un micro-organisme sans maladie clinique attribuable à ce portage."
+        ],
+        "explanation": "La présence d’un micro-organisme sans maladie clinique attribuable à ce portage."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q054",
+    "courseId": "diarrhees_infectieuses",
+    "number": 54,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Quel échantillon est au centre de l’exploration microbiologique d’une diarrhée ?",
+    "choices": [
+      "Un échantillon de surface de cuisine remplace toujours les selles du patient.",
+      "Le seul questionnaire alimentaire.",
+      "La mesure du pouls.",
+      "Des selles.",
+      "Un résultat d’antibiogramme ancien."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il ne constitue pas le prélèvement digestif central présenté.",
+      "Il renseigne le contexte sans être l’échantillon microbiologique.",
+      "Elle n’est pas un prélèvement de matière biologique.",
+      "Elles permettent d’explorer les agents du trouble digestif.",
+      "Il ne remplace pas le prélèvement de l’épisode étudié."
+    ],
+    "explanation": "A — Faux. Il ne constitue pas le prélèvement digestif central présenté. B — Faux. Il renseigne le contexte sans être l’échantillon microbiologique. C — Faux. Elle n’est pas un prélèvement de matière biologique. D — Vrai. Elles permettent d’explorer les agents du trouble digestif. E — Faux. Il ne remplace pas le prélèvement de l’épisode étudié.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c054",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Quel échantillon est au centre de l’exploration microbiologique d’une diarrhée ?",
+        "answers": [
+          "Un prélèvement de selles, avec des recherches adaptées à la demande."
+        ],
+        "explanation": "Un prélèvement de selles, avec des recherches adaptées à la demande."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q055",
+    "courseId": "diarrhees_infectieuses",
+    "number": 55,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Que désigne une coproculture ?",
+    "choices": [
+      "Une culture de sang.",
+      "Une mesure de la fréquence des selles.",
+      "Une culture de selles.",
+      "Une caractérisation antigénique de Salmonella.",
+      "Une recherche génétique de plusieurs cibles sans culture."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il s’agit d’une hémoculture.",
+      "C’est une observation clinique, pas une culture.",
+      "Le terme décrit le prélèvement étudié et la méthode.",
+      "Elle correspond au sérotypage.",
+      "Elle décrit plutôt une PCR multiplex."
+    ],
+    "explanation": "A — Faux. Il s’agit d’une hémoculture. B — Faux. C’est une observation clinique, pas une culture. C — Vrai. Le terme décrit le prélèvement étudié et la méthode. D — Faux. Elle correspond au sérotypage. E — Faux. Elle décrit plutôt une PCR multiplex.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c055",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Que désigne une coproculture ?",
+        "answers": [
+          "La mise en culture d’un prélèvement de selles pour rechercher des bactéries."
+        ],
+        "explanation": "La mise en culture d’un prélèvement de selles pour rechercher des bactéries."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q056",
+    "courseId": "diarrhees_infectieuses",
+    "number": 56,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Pourquoi rechercher des agents spécifiques au sein des selles ?",
+    "choices": [
+      "Les selles ne contiennent par définition qu’une seule espèce.",
+      "La description clinique suffit à nommer toutes les colonies.",
+      "La flore digestive est abondante et diversifiée.",
+      "Tous les micro-organismes des selles sont interchangeables.",
+      "La présence d’une flore habituelle empêche toute recherche ciblée."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La flore digestive contient une grande diversité de micro-organismes.",
+      "L’identification nécessite une démarche biologique.",
+      "Le germe recherché doit être distingué parmi de nombreuses bactéries.",
+      "Le laboratoire cherche un agent spécifique.",
+      "Des méthodes sélectives servent précisément à cette recherche."
+    ],
+    "explanation": "A — Faux. La flore digestive contient une grande diversité de micro-organismes. B — Faux. L’identification nécessite une démarche biologique. C — Vrai. Le germe recherché doit être distingué parmi de nombreuses bactéries. D — Faux. Le laboratoire cherche un agent spécifique. E — Faux. Des méthodes sélectives servent précisément à cette recherche.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c056",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Pourquoi rechercher des agents spécifiques au sein des selles ?",
+        "answers": [
+          "La flore digestive contient de nombreux micro-organismes ; le laboratoire doit distinguer l’agent recherché."
+        ],
+        "explanation": "La flore digestive contient de nombreux micro-organismes ; le laboratoire doit distinguer l’agent recherché."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q057",
+    "courseId": "diarrhees_infectieuses",
+    "number": 57,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Que recherche une analyse par PCR ?",
+    "choices": [
+      "Uniquement la fréquence des selles du patient.",
+      "L’aspect macroscopique des selles seulement.",
+      "Le profil de croissance sur chaque milieu sélectif uniquement.",
+      "La sensibilité complète à tous les antibiotiques, par définition.",
+      "Une cible génétique."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette fréquence est une donnée clinique.",
+      "La PCR recherche une cible génétique.",
+      "La culture et la PCR sont des méthodes distinctes.",
+      "Elle ne se confond pas avec l’antibiogramme présenté.",
+      "C’est le principe de la recherche moléculaire décrite."
+    ],
+    "explanation": "A — Faux. Cette fréquence est une donnée clinique. B — Faux. La PCR recherche une cible génétique. C — Faux. La culture et la PCR sont des méthodes distinctes. D — Faux. Elle ne se confond pas avec l’antibiogramme présenté. E — Vrai. C’est le principe de la recherche moléculaire décrite.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c057",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Que recherche une analyse par PCR ?",
+        "answers": [
+          "Une cible génétique spécifique ; un test multiplex peut rechercher plusieurs cibles."
+        ],
+        "explanation": "Une cible génétique spécifique ; un test multiplex peut rechercher plusieurs cibles."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q058",
+    "courseId": "diarrhees_infectieuses",
+    "number": 58,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Que signifie multiplex pour une analyse PCR ?",
+    "choices": [
+      "Une durée d’analyse obligatoirement fixée à plusieurs jours.",
+      "La recherche simultanée de plusieurs cibles.",
+      "La présence obligatoire de plusieurs agents chez chaque patient.",
+      "Une seule culture sélective destinée à une unique cible.",
+      "Une identification fondée uniquement sur l’aspect des selles."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le terme concerne le nombre de cibles, pas un délai imposé.",
+      "Un panel de PCR multiplex recherche plusieurs cibles dans une même analyse.",
+      "Plusieurs cibles recherchées ne signifient pas plusieurs agents présents.",
+      "Ce n’est pas la définition de multiplex.",
+      "Le multiplex décrit ici une recherche moléculaire de cibles."
+    ],
+    "explanation": "A — Faux. Le terme concerne le nombre de cibles, pas un délai imposé. B — Vrai. Un panel de PCR multiplex recherche plusieurs cibles dans une même analyse. C — Faux. Plusieurs cibles recherchées ne signifient pas plusieurs agents présents. D — Faux. Ce n’est pas la définition de multiplex. E — Faux. Le multiplex décrit ici une recherche moléculaire de cibles.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c058",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Que signifie multiplex pour une analyse PCR ?",
+        "answers": [
+          "Plusieurs cibles sont recherchées dans une même analyse."
+        ],
+        "explanation": "Plusieurs cibles sont recherchées dans une même analyse."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q059",
+    "courseId": "diarrhees_infectieuses",
+    "number": 59,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "À quoi sert un milieu sélectif en coproculture ?",
+    "choices": [
+      "À réhydrater le patient.",
+      "À décrire la fréquence des selles.",
+      "À remplacer toute identification après culture.",
+      "À aider à isoler les agents recherchés.",
+      "À mesurer directement les pertes d’eau du patient."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un milieu de culture est utilisé au laboratoire.",
+      "Cette information relève de l’observation clinique.",
+      "L’identification est une étape distincte.",
+      "Le milieu est choisi pour la recherche biologique.",
+      "Le milieu vise la recherche d’agents, pas le bilan des pertes."
+    ],
+    "explanation": "A — Faux. Un milieu de culture est utilisé au laboratoire. B — Faux. Cette information relève de l’observation clinique. C — Faux. L’identification est une étape distincte. D — Vrai. Le milieu est choisi pour la recherche biologique. E — Faux. Le milieu vise la recherche d’agents, pas le bilan des pertes.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c059",
+        "theme": "Prélèvements et laboratoire",
+        "front": "À quoi sert un milieu sélectif en coproculture ?",
+        "answers": [
+          "À favoriser l’isolement des agents recherchés au sein de la flore abondante."
+        ],
+        "explanation": "À favoriser l’isolement des agents recherchés au sein de la flore abondante."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q060",
+    "courseId": "diarrhees_infectieuses",
+    "number": 60,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "À quoi sert le MALDI-TOF pour des colonies bactériennes ?",
+    "choices": [
+      "La réhydratation orale.",
+      "L’enquête sur un repas commun.",
+      "La mesure de la fréquence des selles.",
+      "L’identification de colonies.",
+      "La préparation d’un prélèvement sanguin au lit du patient."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est une prise en charge et non une méthode d’identification.",
+      "Elle recherche l’exposition collective.",
+      "C’est une donnée clinique.",
+      "Il intervient après l’obtention de matériel bactérien en culture.",
+      "La fonction présentée est l’identification de colonies au laboratoire."
+    ],
+    "explanation": "A — Faux. C’est une prise en charge et non une méthode d’identification. B — Faux. Elle recherche l’exposition collective. C — Faux. C’est une donnée clinique. D — Vrai. Il intervient après l’obtention de matériel bactérien en culture. E — Faux. La fonction présentée est l’identification de colonies au laboratoire.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c060",
+        "theme": "Prélèvements et laboratoire",
+        "front": "À quoi sert le MALDI-TOF pour des colonies bactériennes ?",
+        "answers": [
+          "Le MALDI-TOF contribue à l’identification de colonies bactériennes."
+        ],
+        "explanation": "Le MALDI-TOF contribue à l’identification de colonies bactériennes."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q061",
+    "courseId": "diarrhees_infectieuses",
+    "number": 61,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "À quoi sert le sérotypage des salmonelles ?",
+    "choices": [
+      "Pour mesurer le volume d’eau perdu.",
+      "Pour préciser les salmonelles majeures ou mineures.",
+      "Pour modifier le groupe de la souche.",
+      "Pour compter les épisodes de diarrhée.",
+      "Pour étudier directement la sensibilité aux antibiotiques."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La caractérisation antigénique ne mesure pas la déshydratation.",
+      "Cette distinction est importante pour relier agent et tableau clinique.",
+      "Le sérotypage caractérise, il ne transforme pas la souche.",
+      "Le suivi clinique ne se confond pas avec le sérotypage.",
+      "Cette fonction relève de l’antibiogramme."
+    ],
+    "explanation": "A — Faux. La caractérisation antigénique ne mesure pas la déshydratation. B — Vrai. Cette distinction est importante pour relier agent et tableau clinique. C — Faux. Le sérotypage caractérise, il ne transforme pas la souche. D — Faux. Le suivi clinique ne se confond pas avec le sérotypage. E — Faux. Cette fonction relève de l’antibiogramme.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c061",
+        "theme": "Prélèvements et laboratoire",
+        "front": "À quoi sert le sérotypage des salmonelles ?",
+        "answers": [
+          "Il permet de préciser le groupe et notamment de distinguer les salmonelles majeures des mineures."
+        ],
+        "explanation": "Il permet de préciser le groupe et notamment de distinguer les salmonelles majeures des mineures."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q062",
+    "courseId": "diarrhees_infectieuses",
+    "number": 62,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Quelle information apporte un antibiogramme ?",
+    "choices": [
+      "La certitude que toute diarrhée impose un antibiotique.",
+      "Le volume exact de la diarrhée.",
+      "Le nombre de personnes ayant partagé un repas.",
+      "Une étude de sensibilité aux antibiotiques.",
+      "La consistance des selles sans observation."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le test de sensibilité ne pose pas à lui seul une indication thérapeutique.",
+      "Ce n’est pas une mesure des pertes.",
+      "Cette information relève de l’enquête d’exposition.",
+      "Elle concerne la souche isolée et les molécules testées.",
+      "Ce n’est pas ce que mesure cet examen."
+    ],
+    "explanation": "A — Faux. Le test de sensibilité ne pose pas à lui seul une indication thérapeutique. B — Faux. Ce n’est pas une mesure des pertes. C — Faux. Cette information relève de l’enquête d’exposition. D — Vrai. Elle concerne la souche isolée et les molécules testées. E — Faux. Ce n’est pas ce que mesure cet examen.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c062",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Quelle information apporte un antibiogramme ?",
+        "answers": [
+          "La sensibilité d’une souche bactérienne aux antibiotiques testés."
+        ],
+        "explanation": "La sensibilité d’une souche bactérienne aux antibiotiques testés."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
+  },
+  {
+    "id": "diarrhees_infectieuses_q063",
+    "courseId": "diarrhees_infectieuses",
+    "number": 63,
+    "theme": "Prélèvements et laboratoire",
+    "difficulty": "medium",
+    "question": "Pourquoi une première détection ne fournit-elle pas toujours toutes les informations biologiques ?",
+    "choices": [
+      "Toute première détection contient obligatoirement un antibiogramme complet.",
+      "La seule fréquence des selles identifie toutes les bactéries.",
+      "Les étapes n’apportent pas la même information.",
+      "Une identification de sérotype donne automatiquement le volume des pertes.",
+      "Culture et PCR sont des noms strictement équivalents."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La détection et la sensibilité sont des informations distinctes.",
+      "L’observation ne remplace pas les examens microbiologiques.",
+      "Identifier une cible et connaître une sensibilité ne sont pas la même opération.",
+      "Elle caractérise la souche, pas le retentissement hydrique.",
+      "Les deux méthodes reposent sur des démarches différentes."
+    ],
+    "explanation": "A — Faux. La détection et la sensibilité sont des informations distinctes. B — Faux. L’observation ne remplace pas les examens microbiologiques. C — Vrai. Identifier une cible et connaître une sensibilité ne sont pas la même opération. D — Faux. Elle caractérise la souche, pas le retentissement hydrique. E — Faux. Les deux méthodes reposent sur des démarches différentes.",
+    "flashcards": [
+      {
+        "id": "diarrhees_infectieuses_c063",
+        "theme": "Prélèvements et laboratoire",
+        "front": "Pourquoi une première détection ne fournit-elle pas toujours toutes les informations biologiques ?",
+        "answers": [
+          "Détection, culture, identification et étude de sensibilité apportent des informations distinctes."
+        ],
+        "explanation": "Détection, culture, identification et étude de sensibilité apportent des informations distinctes."
+      }
+    ],
+    "course": "Diarrhées infectieuses",
+    "ue": "B1.3",
+    "kind": "QCM"
   }
 ]

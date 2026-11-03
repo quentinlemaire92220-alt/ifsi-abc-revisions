@@ -1,4 +1,5 @@
-import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
+import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioAt} from './historical-audio-fixture.mjs';
 import {isPsychologieSheetArchive} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
@@ -8,7 +9,7 @@ import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateAudioReplacements} from './audio-replacement-contract.mjs';
 import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 const read=readHistoricalAudioJson,base=process.env.IFSI_BASE_SHA||'HEAD^';
-const old=p=>readHistoricalAudioGitJson(p,base);
+const old=p=>readHistoricalAudioAt(base,p);
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
 const prior=old('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
 const {questions,deck}=await runtimeDeck(),bank=read('qextra-60.txt');
@@ -20,14 +21,15 @@ assert.deepEqual(read('qextra-55.txt'),old('qextra-55.txt'),'85 questions et car
 const oldVocals=old('vocals.json'),newVocals=read('vocals.json');
 validateAudioReplacements(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),oldVocals,newVocals);
 const addedVocals=newVocals.slice(oldVocals.length);
+const scopedAudio=new Set(approvedScopedAudioIds(read('docs/course-deliveries.json')));
 const approvedAudio=read('docs/course-deliveries.json').audioSupplements||[];
 const firstReleaseAudioIds=validateFirstReleaseAudio(old('docs/course-deliveries.json'),read('docs/course-deliveries.json'),old('course-registry-v741.json'),read('course-registry-v741.json'),oldVocals,newVocals);
 for(const voice of addedVocals){
- assert.ok(firstReleaseAudioIds.has(voice.id)||approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
+ assert.ok(scopedAudio.has(voice.id)||firstReleaseAudioIds.has(voice.id)||approvedAudio.some(s=>s.vocalIds?.includes(voice.id)&&s.publicationApproval?.authorization==='explicit_go_publication'),
  'MP3 ajouté sans complément audio explicitement approuvé : '+voice.id);
 }
 const priorAudioIds=new Set(oldVocals.map(v=>v.id));
-const expectedApprovedAudioIds=new Set([...firstReleaseAudioIds,...approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id))]);
+const expectedApprovedAudioIds=new Set([...scopedAudio,...firstReleaseAudioIds,...approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id))]);
 assert.deepEqual(new Set(addedVocals.map(v=>v.id)),expectedApprovedAudioIds,'Seuls les MP3 complémentaires approuvés peuvent être ajoutés depuis la version de comparaison');
 const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
 const beforeCount=oldVocabulary.entries.length;
@@ -60,7 +62,7 @@ assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entr
 const historicalSheetResourceIds=new Set([1,2,3].flatMap(n=>old(`sheets-${n}.json`)).map(s=>s.resourceId));
 const approvedNewSheets=new Set(publicationApprovals.filter(c=>
  !historicalSheetResourceIds.has(c.sheetResourceId)&&
- c.deliveryMode==='reviewed_written_bundle'&&c.validated===true&&
+ ['reviewed_written_bundle','official_reviewed_scoped_bundle'].includes(c.deliveryMode)&&c.validated===true&&
  c.publicationApproval?.status==='approved'&&
  c.publicationApproval?.authorization==='explicit_go_publication'&&
  c.publicationApproval?.scope==='course_package'

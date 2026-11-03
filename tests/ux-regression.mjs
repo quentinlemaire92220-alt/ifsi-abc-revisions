@@ -101,7 +101,13 @@ const registered=new Map(registry.courses.map(c=>[c.id,c]));
 const drivePattern=/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?$/;
 assert.equal(registry.version,meta.version,'Registre des supports désynchronisé de la release');
 for(const c of registry.courses){
- if(c.officialSupportUrl)assert.match(c.officialSupportUrl,drivePattern,'Lien Drive incorrect : '+c.label);
+ if(c.officialSupportUrl){
+  const d=JSON.parse(read('docs/course-deliveries.json')).courses.find(d=>d.courseId===c.id);
+  if(d?.updateContract==='official_reviewed_scoped_bundle_v1'){
+   assert.equal(c.officialSupportUrl,'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+d.officialSupportArtifact.path);
+   assert.ok(fs.existsSync(d.officialSupportArtifact.path),'Support officiel local absent');
+  }else assert.match(c.officialSupportUrl,drivePattern,'Lien Drive incorrect : '+c.label);
+ }
  if(c.parentId){
    const parent=registered.get(c.parentId);
    assert.ok(parent,'Sous-cours sans parent : '+c.label);

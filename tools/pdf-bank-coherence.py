@@ -416,7 +416,7 @@ def check(course):
                 spec=importlib.util.spec_from_file_location('duplex_cards',Path(__file__).with_name('duplex-card-coherence.py'))
                 reader=importlib.util.module_from_spec(spec);spec.loader.exec_module(reader)
                 rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-                reader.validate_duplex_cards(doc,rows)
+                reader.validate_compact_duplex_cards(doc,rows) if course.get('updateContract')=='official_reviewed_scoped_bundle_v1' else reader.validate_duplex_cards(doc,rows)
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages recto-verso')
                 continue
             if course.get('deliveryMode')=='reviewed_written_bundle' and role=='qcm':
