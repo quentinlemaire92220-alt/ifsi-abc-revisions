@@ -6030,7 +6030,7 @@
         "contract": "ifsi_pedagogical_non_regression_v149",
         "sheetSha256": "59263ac82052b818938efbac0080c12caaf1a654376af19341026c37e77f1546",
         "privateEvidenceSha256": "fdc6fdef4e32556d2ae914493b8293214b0858a85c2b1624f69b4ab5a00680ff",
-        "reviewedAt": "2026-11-03T10:17:09.224800+00:00",
+        "reviewedAt": "2026-11-03T10:17:09+00:00",
         "sourceInventory": "reviewed",
         "sourceCoverage": "limited",
         "inheritanceReview": "not_applicable_new_course",
@@ -6135,7 +6135,7 @@
             "contract": "ifsi_pedagogical_non_regression_v149",
             "sheetSha256": "59263ac82052b818938efbac0080c12caaf1a654376af19341026c37e77f1546",
             "privateEvidenceSha256": "fdc6fdef4e32556d2ae914493b8293214b0858a85c2b1624f69b4ab5a00680ff",
-            "reviewedAt": "2026-11-03T10:17:09.224800+00:00",
+            "reviewedAt": "2026-11-03T10:17:09+00:00",
             "sourceInventory": "reviewed",
             "sourceCoverage": "limited",
             "inheritanceReview": "not_applicable_new_course",
@@ -6236,7 +6236,7 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-11-03T10:17:09.224800+00:00",
-        "bundleSha256": "4f18917890d011d5cdc06c4229d91a10f83f03def55f619877a250ac529079d0"
+        "bundleSha256": "e5cec8b8ed73aa87c538ceeb0d67d0371cc33d26d34785658e2bd02ab47522e6"
       }
     },
     {

@@ -107,7 +107,10 @@ function load(reader,m){
 const previous=old('docs/course-deliveries.json'),previousData=load(old,previous),currentData=load(read,current);
 const view=historicalAudioView(current,currentData);
 validateHostedAudioChanges(previous,current,previousData,currentData,{stage:'preparation'});
-assert.equal(validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'}).length,0);
+const changed=validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'});
+const independentlyApproved=current.courses.filter(d=>d.updateContract==='official_reviewed_scoped_bundle_v1' &&
+ JSON.stringify(d)!==JSON.stringify(previous.courses.find(old=>old.courseId===d.courseId)));
+assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>x.courseId).sort());
 for(const s of current.hostedAudioSupplements||[]){
  const delivery=current.courses.find(d=>d.courseId===s.courseId);
  assert.deepEqual(delivery,previous.courses.find(d=>d.courseId===s.courseId),'Ancienne livraison et GO doivent rester identiques');

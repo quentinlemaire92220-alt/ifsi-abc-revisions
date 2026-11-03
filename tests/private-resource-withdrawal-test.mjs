@@ -1,4 +1,4 @@
-import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
+import {approvedScopedAudioIds,validateOfficialScoped} from './official-scoped-bundle-contract.mjs';
 import {readHistoricalAudioJson,readHistoricalAudioAt} from './historical-audio-fixture.mjs';
 import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
@@ -432,7 +432,12 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
  else {
   const previousDelivery=oldMan.courses.find(c=>c.courseId===course.id);
   const nextDelivery=currentMan.courses.find(c=>c.courseId===course.id);
-  if(course.id==='gestion_stress_professionnel'&&nextDelivery?.qcmFlashcardsSupplement){
+  if(nextDelivery?.updateContract==='official_reviewed_scoped_bundle_v1'){
+   assert.deepEqual(nextDelivery.historicalDelivery,previousDelivery,'Accord historique modifié');
+   assert.deepEqual(nextVocals.filter(v=>v.courseId===course.id).slice(0,prevVocals.filter(v=>v.courseId===course.id).length),prevVocals.filter(v=>v.courseId===course.id));
+   validateOfficialScoped(course,nextDelivery,{sheets:nowAudioData.sheets,vocals:nextVocals,vocabulary:nowAudioData.vocabulary});
+  }
+  else if(course.id==='gestion_stress_professionnel'&&nextDelivery?.qcmFlashcardsSupplement){
    assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.status,'approved');
    assert.equal(nextDelivery.qcmFlashcardsSupplement?.publicationApproval?.scope,'qcm_flashcards_vocabulary_only');
    assert.deepEqual(course.additionalDocuments.slice(0,oldCourse.additionalDocuments.length),oldCourse.additionalDocuments,'Fiche historique perdue');
