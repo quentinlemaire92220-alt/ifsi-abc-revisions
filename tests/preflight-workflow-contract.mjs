@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
-const current=fs.readFileSync('.github/workflows/tnr.yml','utf8');
+const current=fs.readFileSync('.github/workflows/tnr.yml','utf8').replace(/\r\n/g,'\n');
 const base=process.env.IFSI_BASE_SHA;
 assert.match(base||'',/^[a-f0-9]{40}$/i);
 const prior=execFileSync('git',['show',base+':.github/workflows/tnr.yml'],{encoding:'utf8'});
