@@ -22,6 +22,7 @@ for(const r of manifest.scopedCourseRevisions||[]){
    assert.deepEqual(baseline.course,prior('course-registry-v741.json').courses.find(c=>c.id===r.courseId));
    assert.deepEqual(baseline.delivery,previous.courses.find(d=>d.courseId===r.courseId));
    for(const file of Object.keys(baseline.rows))assert.deepEqual(baseline.rows[file],prior(file).filter(x=>x.courseId===r.courseId));
+   assert.deepEqual(baseline.vocabulary,prior('vocabulaire-v1.json').entries.filter(v=>v.courseIds?.includes(r.courseId)));
   }
  }
  const reconstructed=scopedHistoricalJson(read,'course-registry-v741.json').courses.find(c=>c.id===r.courseId);

@@ -26,7 +26,9 @@ for r in m.get('scopedCourseRevisions',[]):
                 toc=d.get_toc();toc[-1][2]=1;d.set_toc(toc)
             if defect=='hidden_band':d[1].draw_rect(fitz.Rect(0,0,596,46),fill=(1,1,1),color=None)
             out=Path(tmp)/'broken.pdf';d.save(out);d.close()
-            assert G.validate(out)['errors'],defect
+            errors=G.validate(out)['errors']
+            expected={'small_body':'p2:FONT_TOO_SMALL','small_unbound_label':'p2:FONT_TOO_SMALL','wrong_order':'SECTION_ORDER_OR_DUPLICATION','bad_destination':'SECTION_ORDER_OR_DUPLICATION','hidden_band':'p2:MODEL_BAND_RENDER_TOP'}[defect]
+            assert expected in errors,(defect,errors)
     with fitz.open(ROOT/arts['flashcards']['path']) as cards:
         assert len(cards)==arts['flashcards']['pageCount']
         text=' '.join(p.get_text() for p in cards)

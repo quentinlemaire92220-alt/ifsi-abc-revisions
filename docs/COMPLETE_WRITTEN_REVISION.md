@@ -9,3 +9,5 @@ The explicit `compact_thematic_lexicon_v1` PDF profile preserves legacy V3 uncha
 `tests/pdf-compact-profile-test.py` checks the full PDFs, all flashcard fronts and answers, and rejects injected small body text, unbound small labels, wrong final sections, wrong destinations and hidden bands. `tests/complete-written-revision.mjs` rejects altered source scope, invented audio, changed hashes and missing publication authorization. Both are mandatory in CI and preparation/publication preflight.
 
 Sources, transcripts, private review evidence and authorization messages stay outside the public repository. Public records contain only minimal status and evidence hashes.
+
+The duplicate audit distinguishes a substantive repeated stem from reuse of the generic instructions “Quelles associations sont exactes ?” and “Quelles distinctions sont correctes ?”. Generic reuse is accepted only when every displayed theme differs and all five propositions of each question are substantial and disjoint. Identical payloads, same-theme reuse and substantive stem collisions remain blocking. Accepted contextual groups are counted explicitly in the audit output.
