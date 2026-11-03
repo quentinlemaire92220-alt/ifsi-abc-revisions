@@ -154,12 +154,14 @@
      });
      if(ranks[0]!==0||ranks.some(function(rank,i){return i&&rank<ranks[i-1]}))throw Error('Ordre incorrect pour '+course.id+': '+ranks);
      var support=detail.querySelector('.v74-original-support');
-     var reviewedPrivateOfficial=course.id==='psychologie_sante'&&course.officialSupport===true&&course.nativeSupportAvailable===true&&course.qcmPdfQuestionCount===62&&!course.officialSupportUrl&&!(course.officialSupportItems||[]).length;
+     var reviewedPrivateOfficial=(course.officialSupport===true||course.nativeSupportAvailable===true||['vih_b13_20261027','responsabilite_exercice_professionnel'].includes(course.id))&&!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'});
      if(reviewedPrivateOfficial){
        official++;
-       if(support.dataset.reviewedSource!=='true'||!support.textContent.includes('Supports officiels rapprochés'))throw Error('Rapprochement officiel privé absent pour '+course.id);
+       if(support.dataset.reviewedSource!=='true'||!support.textContent.includes('Support officiel reçu'))throw Error('Rapprochement officiel privé absent pour '+course.id);
        if(support.textContent.includes('Support officiel en attente'))throw Error('Ancienne attente officielle conservée pour '+course.id);
        if(support.querySelector('a[href]'))throw Error('Faux accès aux originaux privés pour '+course.id);
+       if((course.provisional===true||['vih_b13_20261027','responsabilite_exercice_professionnel'].includes(course.id))&&!support.querySelector('.v74-source-review-note')?.textContent.trim())throw Error('Réserve de relecture absente pour '+course.id);
+       if(course.provisional===true&&detail.querySelector('.v8430-provisional')?.textContent!=='Relecture en cours')throw Error('Statut de relecture absent pour '+course.id);
        if(!support.querySelector('.mku-toggle:not(:disabled)'))throw Error('Notice des sources inaccessible pour '+course.id);
      }else if(!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'})){
        missing++;
