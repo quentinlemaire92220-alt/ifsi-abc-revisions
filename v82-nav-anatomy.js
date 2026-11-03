@@ -134,7 +134,7 @@ function boardTitle(x){
   return x.displayTitle||String(x.title||'Planche').replace(/\.pdf$/i,'').replace(/^UE_S1_[A-Z0-9]+_/i,'').replace(/_Infographie_\d+_/i,' — ').replace(/_/g,' ').replace(/\s+/g,' ').trim()
 }
 function boardsFor(def){
-  if(def.id==='organes_des_sens_b11')return [{id:'organes_des_sens_b11_pack',title:'Organes des sens — 7 planches anatomiques',url:'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/organes-des-sens-20261029/UE_B1_1_Organes_des_sens_Planches_anatomiques.pdf'}];
+  if(def.id==='organes_des_sens_b11')return (window.IFSI_SENS_ATLAS?.atlas?.()||[]).map(x=>({...x,subtitle:x.sub,interactive:true,testReady:false,generated:true}));
   if(def.id==='systeme_respiratoire')return RESP_BOARDS.map(x=>({...x,interactive:true}));
   if(def.id==='systeme_urinaire')return URINARY_BOARDS.map(x=>({...x,interactive:true}));
   // V8.19 : séparation stricte. Une infographie de cours ne devient jamais une planche anatomique.
@@ -209,7 +209,7 @@ function catalogCard(def,term){
     const dedicated=['systeme_cardiovasculaire','systeme_endocrinien','systeme_nerveux','systeme_immunitaire'].includes(def.id);
     return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">0 planche</span><span class="small">${E(def.subtitle)}</span></div></div></div><span class="badge" style="background:${dedicated?'#eef4ff':'#fff2d9'};color:${dedicated?'#315a9b':'#805900'}">${dedicated?'Chargement…':'À compléter'}</span></div></section>`
   }
-  const interactive=['systeme_respiratoire','systeme_urinaire'].includes(def.id);const content=isOpen?(interactive?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
+  const interactive=['organes_des_sens_b11','systeme_respiratoire','systeme_urinaire'].includes(def.id);const content=isOpen?(interactive?`<div class="v82-resp-list">${shown.map(respBoardRow).join('')}</div>`:`<div class="v82-board-list">${shown.map(b=>boardRow(def,b)).join('')}</div>`):'';
   return `<section class="v82-system" data-v82system="${E(def.id)}"><div class="v82-system-head"><div class="v82-system-main"><span class="v82-system-icon">${def.icon}</span><div><h3>${E(c.label)}</h3><div class="v82-system-meta"><span class="badge">${boards.length} planche${boards.length>1?'s':''}</span><span class="small">${E(def.subtitle)}</span></div></div></div><button class="btn ${isOpen?'primary':'outline'} v82-toggle" data-v82toggle="${E(def.id)}">${isOpen?'Masquer':'Voir les planches'}</button></div>${content}</section>`
 }
 const normCatalog=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
