@@ -34,6 +34,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/audio-series-replacement.mjs
 
+      - name: Vérifier les nouveaux fichiers audio et les téléchargements étudiants
+        if: ${{ !cancelled() }}
+        run: node tests/provided-audio-series.mjs
+
+      - name: Tester la lecture Chromium et l’enchaînement réel
+        if: ${{ !cancelled() }}
+        run: node tests/provided-audio-browser.mjs
+
       - name: Préparer les seules versions Git nécessaires
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}

@@ -590,6 +590,7 @@
   }
   function classify(block){
     var heading=block.querySelector(':scope > .row b');var text=fold(heading?.textContent);
+    if(block.classList.contains('v74-approved-downloads'))return {key:'downloads',n:'+',color:'#6b9aba',bg:'#e0f0f6',sub:'Scripts de révision et lot complet à télécharger.'};
     if(block.classList.contains('v74-original-support'))return {key:'support',n:1,color:'#a17bd6',bg:'#e9dbff',sub:'Le support officiel du cours.'};
     if(block.classList.contains('v74-child-supports'))return {key:'parts',n:1,color:'#a17bd6',bg:'#e9dbff',sub:'Les documents officiels par sous-cours.'};
     if(text.includes('fiches de revision'))return {key:'revision',n:2,color:'#49ac94',bg:'#d9f2ea',sub:'L’essentiel à retenir.'};
