@@ -17,6 +17,27 @@ const qFavs74=()=>new Set(readJSON74(Q_FAV_KEY,[]));
 const docFavs74=()=>new Set(readJSON74(DOC_FAV_KEY,[]));
 const docKey74=(type,url)=>`${type}|${url}`;
 
+// Réception documentaire vérifiée le 03/11/2026. Aucun lien privé ni
+// validation pédagogique implicite : les lots historiques restent intacts.
+const receivedSourceUpdates74=Object.freeze({
+  vih_b13_20261027:'Support officiel reçu. Le rapprochement des révisions reste à vérifier, notamment le cas final et les points signalés sur la prévention.',
+  responsabilite_exercice_professionnel:'Support officiel reçu. Le rapprochement des révisions et la distinction entre le cours et le TD restent à vérifier.'
+});
+function sourceState74(course){
+  const receipt=receivedSourceUpdates74[course?.id];
+  const received=!!course&&(course.officialSupport===true||course.nativeSupportAvailable===true||!!receipt);
+  return {received,reviewPending:received&&(!!receipt||course.provisional===true),
+    note:receipt||(received?String(course.sourceNote||''):'')};
+}
+const replacedDocumentUrls74=new Set([
+  'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Fiche_Revision.pdf',
+  'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/relation-soignant-ecoute/D1_Relation_Soignant_Soigne_Flashcards_40.pdf',
+  'https://drive.google.com/file/d/1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ/view',
+  'https://drive.google.com/file/d/10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm/view'
+]);
+const replacedDocument74=doc=>replacedDocumentUrls74.has(String(doc?.url||'').split(/[?#]/)[0]);
+const studentDocumentLabel74=(label,course)=>sourceState74(course).received?String(label||'').replace(/\bprovisoire\b/gi,'Relecture en cours'):String(label||'');
+
 function addStyles74(){
   if($74('v74css'))return;
   const s=document.createElement('style');s.id='v74css';s.textContent=`
@@ -82,7 +103,7 @@ function allCourses74(){
 function courseData74(course){
   const id=courseId74(course),bundle=id?window.IFSI_V741?.resourcesForCourse?.(id):null;
   const qs=bundle?.questions||(Array.isArray(Q)?Q:[]).filter(q=>id?(q.courseId===id):qCourse(q)===course),vs=bundle?.vocals||vocals74().filter(v=>id?(v.courseId===id):norm74(v.course)===norm74(course));
-  const sheets=(bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'))).filter(x=>!unavailableSheet74(x));
+  const sheets=(bundle?.sheets||(Array.isArray(S)?S:[]).filter(x=>resourceMatchesCourse74(x,course,'sheet'))).filter(x=>!unavailableSheet74(x)&&!replacedDocument74(x));
   const infos=bundle?.infographics||(Array.isArray(I)?I:[]).filter(x=>resourceMatchesCourse74(x,course,'info'));
   const stats=typeof st==='function'?st():{};const qstats=stats.v7QuestionStats||{};const seen=qs.filter(q=>(qstats[q.id]?.answered||0)>0);let ans=0,cor=0;for(const q of qs){ans+=qstats[q.id]?.answered||0;cor+=qstats[q.id]?.correct||0}
   const errors=new Set(stats.errors||[]);const err=qs.filter(q=>errors.has(q.id)).length;const rate=ans?Math.round(cor/ans*100):null;
@@ -126,7 +147,7 @@ function renderSearch74(){
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
+  for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+searchDocLabel74(x,'sheet'),sub:x.ue||'',url:x.url});
   for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
@@ -182,7 +203,7 @@ function renderCourses74(){
       <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE ${esc74(domain)}</span><div><div class="v74-domain-name">${esc74(domainName74(domain))}</div><div class="v74-domain-meta">${all.length} cours • ${qcm} QCM</div></div></div></div>
       <div class="v74-domain-body">${ueEntries.map(([ue,items])=>`<div class="v74-ue-group">
         <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div class="v74-ue-count">${items.length} cours • ${items.reduce((n,x)=>n+x.data.qs.length,0)} QCM</div></div></div>
-        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
+        <div class="v74-ue-cards">${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):sourceState74(registryCourse74(c)).received?'📘 Support officiel reçu':registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
       </div>`).join('')}</div>
     </section>`
   }).join('')||'<div class="card small">Aucun cours trouvé.</div>';
@@ -190,7 +211,7 @@ function renderCourses74(){
     b.onclick=()=>openCourse74(b.dataset.course74);
     const course=registryCourse74(b.dataset.course74);
     const official=course?.officialSupportUrl;
-    const captures=course?.captureSupportUrl;
+    const captures=sourceState74(course).received?'':course?.captureSupportUrl;
     const url=official||captures;
     if(!url||!/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+/.test(url))return;
     const tile=document.createElement('div');tile.className='v74-course-tile';
@@ -206,12 +227,12 @@ function renderCourses74(){
 function showCourses74(){window.show('courses74');renderCourses74()}
 window.showCourses74=showCourses74;
 
-function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.sheetFormat==='hybrid_infographic')return 'Fiche hybride infographiée'+(x.provisional?' · Provisoire':'');if(x.sheetFormat==='complete_infographic')return 'Fiche complète infographiée';if(x.sheetFormat==='classic')return 'Fiche de révision classique';return 'Fiche de révision'}
+function sheetFormatLabel74(x,type){if(type!=='sheet')return 'Infographie';if(x.sheetFormat==='hybrid_infographic')return 'Fiche hybride infographiée'+(x.provisional?(sourceState74(registryCourse74(x.courseId)).received?' · Relecture en cours':' · Provisoire'):'');if(x.sheetFormat==='complete_infographic')return 'Fiche complète infographiée';if(x.sheetFormat==='classic')return 'Fiche de révision classique';return 'Fiche de révision'}
 function resourceCard74(x,type){
-  const label=searchDocLabel74(x,type),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
+  const label=studentDocumentLabel74(searchDocLabel74(x,type),registryCourse74(x.courseId)),key=docKey74(type,x.url),fav=docFavs74().has(key),course=registryCourse74(x.courseId),sourceIcon=type==='sheet'&&x.officialSupport===false&&!sourceState74(course).received?'<span class="badge" style="background:#f3effb;color:#5f43a3;border:1px solid #d8cbf2" title="Support officiel non disponible — fiche réalisée à partir de captures, notes ou transcription du cours." aria-label="Support officiel non disponible">📝 Notes / captures</span>':'';return `<div class="v74-resource"><div class="row"><div><b>${esc74(label)}</b></div>${sourceIcon}</div><div class="small">${esc74(course?.label||x.ue||'')} • ${sheetFormatLabel74(x,type)}</div><div class="actions"><a class="btn primary" href="${esc74(x.url)}" target="_blank" rel="noopener">Ouvrir ↗</a><button class="v74-star ${fav?'on':''}" type="button" data-docfav="${esc74(key)}">${fav?'★':'☆'}</button></div></div>`;
 }
 // Barrière d'affichage pour documents internes ; ne sécurise PAS leurs droits Drive ni le JSON public.
-const unavailableSheet74=doc=>/\/(?:1jmXbi76eucP42lg4pJLU6MpApjIf1M8e|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(String(doc?.url||'')) || (doc?.courseId==='psychologie_sante' && doc?.resourceId==='psychologie_sante_fiche_p01' && Array.isArray(S) && S.some(x=>x.courseId==='psychologie_sante' && x.resourceId==='psychologie_sante_fiche_unique_20261027' && x.primaryRevision===true));
+const unavailableSheet74=doc=>doc?.sourceStatus==='archived'||/\/(?:1jmXbi76eucP42lg4pJLU6MpApjIf1M8e|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(String(doc?.url||'')) || (doc?.courseId==='psychologie_sante' && doc?.resourceId==='psychologie_sante_fiche_p01' && Array.isArray(S) && S.some(x=>x.courseId==='psychologie_sante' && x.resourceId==='psychologie_sante_fiche_unique_20261027' && x.primaryRevision===true));
 const studentVisibleDocument74=doc=>{
   const type=String([doc?.label,doc?.category,doc?.visibility,doc?.status].join(' '))
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -245,18 +266,20 @@ function renderCourse74(){
     });
   };
   const officialUrl=driveUrl(courseMeta.officialSupportUrl);
-  const captureUrl=driveUrl(courseMeta.captureSupportUrl);
+  const receivedOfficial=sourceState74(courseMeta);
+  const captureUrl=receivedOfficial.received?'':driveUrl(courseMeta.captureSupportUrl);
   const officialDocuments=(courseMeta.additionalDocuments||[]).filter(x=>x.type==='official_support'&&studentVisibleDocument74(x)&&driveUrl(x.url));
   const officialParts=uniqueSupportParts74(officialUrl,[...(Array.isArray(courseMeta.officialSupportItems)?courseMeta.officialSupportItems.filter(x=>driveUrl(x.url)):[]),...officialDocuments.map(x=>({url:x.url,title:x.label}))]);
-  const captureParts=uniqueSupportParts74(captureUrl,Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[]);
+  const captureParts=uniqueSupportParts74(captureUrl,!receivedOfficial.received&&Array.isArray(courseMeta.captureSupportItems)?courseMeta.captureSupportItems.filter(x=>driveUrl(x.url)):[]);
   const supportSource=officialUrl||officialParts.length?'official':captureUrl||captureParts.length?'capture':'missing';
-  const reviewedPrivateOfficial=courseMeta.id==='psychologie_sante'&&courseMeta.officialSupport===true&&courseMeta.nativeSupportAvailable===true;
-  const supportStatus=supportSource==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel':'✅ Support officiel du professeur'):supportSource==='capture'?'⏳ Support officiel en attente · 📸 Captures du cours — provisoires':reviewedPrivateOfficial?'✅ Supports officiels rapprochés':courseMeta.sourceBasis==='course_captures'?'⏳ Support officiel en attente · captures intégrées aux révisions':'⏳ Support officiel en attente · Support du cours non disponible';
+  const reviewedPrivateOfficial=receivedOfficial.received;
+  const supportStatus=supportSource==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel':'✅ Support officiel du professeur'):reviewedPrivateOfficial?'📘 Support officiel reçu':supportSource==='capture'?'⏳ Support officiel en attente · 📸 Captures du cours — provisoires':courseMeta.sourceBasis==='course_captures'?'⏳ Support officiel en attente · captures intégrées aux révisions':'⏳ Support officiel en attente · Support du cours non disponible';
   const resourceLinks=(url,parts,kind)=>'<div class="v74-original-docs">'+
     (url?'<a class="btn outline v74-official-link" href="'+esc74(url)+'" target="_blank" rel="noopener noreferrer">'+(kind==='official'?(courseMeta.officialSupportCoverage==='partial'?'📘 Support officiel partiel ↗':'📘 Ouvrir le support officiel ↗'):'📸 Ouvrir les captures provisoires ↗')+'</a>':'')+
     parts.map(x=>'<a class="btn outline v74-official-part" href="'+esc74(x.url)+'" target="_blank" rel="noopener noreferrer">📄 '+esc74(x.title||'Partie du cours')+' ↗</a>').join('')+'</div>';
   const courseSourceHtml='<div data-reviewed-source="'+reviewedPrivateOfficial+'" class="card v74-resource-block v74-original-support"><div class="row"><b>📚 Support du cours (documents sources)</b></div><div class="small v74-source-status">'+supportStatus+'</div>'+
-    (supportSource==='official'?resourceLinks(officialUrl,officialParts,'official'):supportSource==='capture'?resourceLinks(captureUrl,captureParts,'capture'):reviewedPrivateOfficial?'<div class="small">Trois supports officiels rapprochés avec les transcriptions. Les documents originaux ne sont pas diffusés dans l’application.</div>':courseMeta.sourceBasis==='course_captures'?'<div class="small">Les documents de révision ci-dessous intègrent les captures retrouvées. Le PDF natif officiel reste à rapprocher.</div>':'<div class="small">Aucun PDF officiel ni capture de cours n’est encore référencé sur Drive.</div>')+
+    (supportSource==='official'?resourceLinks(officialUrl,officialParts,'official'):reviewedPrivateOfficial?'<div class="small">Le support officiel est disponible. Les documents originaux non partagés ne sont pas diffusés dans l’application.</div>':supportSource==='capture'?resourceLinks(captureUrl,captureParts,'capture'):courseMeta.sourceBasis==='course_captures'?'<div class="small">Les documents de révision ci-dessous intègrent les captures retrouvées. Le PDF natif officiel reste à rapprocher.</div>':'<div class="small">Aucun PDF officiel ni capture de cours n’est encore référencé sur Drive.</div>')+
+    (receivedOfficial.reviewPending&&receivedOfficial.note?'<div class="small v74-source-review-note">'+esc74(receivedOfficial.note)+'</div>':'')+
     (supportSource==='official'&&(captureUrl||captureParts.length)?'<details class="v74-source-archive"><summary>📸 Anciennes captures provisoires</summary>'+resourceLinks(captureUrl,captureParts,'capture')+'</details>':'')+
     '</div>';
   const children=(window.IFSI_V741?.getRegistry?.()?.courses||[]).filter(x=>x.parentId===courseMeta.id);
@@ -270,6 +293,8 @@ function renderCourse74(){
   // Masquage d'affichage seulement : aucune mutation des lots approuvés.
   const p1HiddenDocument74=doc=>{
     const url=String(doc?.url||'');
+    if(courseMeta.id==='sante_mondiale_sante_france')
+      return /\/(?:1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ|10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm)\/view(?:[?#]|$)/.test(url);
     if(courseMeta.id==='responsabilite_exercice_professionnel')
       return /\/(?:1G0EA9vtXbwSbDRI77sSInGlMDxYnKqPN|1we0v8BkXplPY9H0fLfUPukRP1p_U4yMB)\/view(?:[?#]|$)/.test(url);
     if(courseMeta.id==='d1_relation_soignant_soigne_ecoute_active')
@@ -285,7 +310,7 @@ function renderCourse74(){
     .map(x=>'<div class="v74-resource"><b>📝 '+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(x.url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>').join('');
   const extraDocs=(courseMeta.additionalDocuments||[])
     .filter(x=>x.category!=='anatomy'&&studentVisibleDocument74(x)&&!p1HiddenDocument74(x)&&!isQcmDocument74(x)&&!officialDocuments.includes(x))
-    .map(x=>['📄',x.label,driveUrl(x.url)]).filter(x=>x[2])
+    .map(x=>['📄',studentDocumentLabel74(x.label,courseMeta),driveUrl(x.url)]).filter(x=>x[2])
     .map(([icon,label,url])=>'<div class="v74-resource"><b>'+icon+' '+esc74(label)+'</b><div class="actions"><a class="btn primary" href="'+esc74(url)+'" target="_blank" rel="noopener">Ouvrir ↗</a></div></div>')
     .join('');
 
@@ -311,7 +336,7 @@ window.openCourse74=openCourse74;
 function toggleDocFavorite74(key){const f=docFavs74();f.has(key)?f.delete(key):f.add(key);writeJSON74(DOC_FAV_KEY,[...f]);renderDashboard74();renderFavorites74();enhanceResourceCards74()}
 function removeQFavorite74(id){const f=qFavs74();f.delete(id);writeJSON74(Q_FAV_KEY,[...f]);try{fill()}catch{}renderDashboard74();renderFavorites74()}
 function renderFavorites74(){
-  const box=$74('v74FavoritesBody');if(!box)return;const qf=qFavs74(),vf=new Set(vocalState74().favorites||[]),df=docFavs74();const qs=(Array.isArray(Q)?Q:[]).filter(q=>qf.has(q.id)),vs=vocals74().filter(v=>vf.has(v.id)),sheets=(Array.isArray(S)?S:[]).filter(x=>!unavailableSheet74(x)&&df.has(docKey74('sheet',x.url))),infos=(Array.isArray(I)?I:[]).filter(x=>df.has(docKey74('info',x.url)));const total=qs.length+vs.length+sheets.length+infos.length;if($74('v74FavTotal'))$74('v74FavTotal').textContent=total;
+  const box=$74('v74FavoritesBody');if(!box)return;const qf=qFavs74(),vf=new Set(vocalState74().favorites||[]),df=docFavs74();const qs=(Array.isArray(Q)?Q:[]).filter(q=>qf.has(q.id)),vs=vocals74().filter(v=>vf.has(v.id)),sheets=(Array.isArray(S)?S:[]).filter(x=>!unavailableSheet74(x)&&df.has(docKey74('sheet',x.url))&&!replacedDocument74(x)),infos=(Array.isArray(I)?I:[]).filter(x=>df.has(docKey74('info',x.url)));const total=qs.length+vs.length+sheets.length+infos.length;if($74('v74FavTotal'))$74('v74FavTotal').textContent=total;
   const qhtml=qs.map(q=>`<div class="v74-resource"><b>${esc74(q.question)}</b><div class="small">${esc74(qCourse(q))}${q.number?' • Q'+q.number:''}</div><div class="actions"><button class="btn primary" type="button" data-favqopen="${esc74(q.id)}">▶ Réviser</button><button class="v74-star on" type="button" data-favqremove="${esc74(q.id)}">★</button></div></div>`).join('');
   const vhtml=vs.map(v=>`<div class="v74-resource"><b>${esc74(v.title)}</b><div class="small">${esc74(v.course)} • Vocal ${String(v.number).padStart(2,'0')}</div><div class="actions"><button class="btn primary" type="button" data-favvopen="${esc74(v.id)}">▶ Écouter</button><button class="v74-star on" type="button" data-favvremove="${esc74(v.id)}">★</button></div></div>`).join('');
   box.innerHTML=`<div class="card v74-fav-section"><div class="row"><b>QCM</b><span class="badge">${qs.length}</span></div><div class="v74-fav-list" style="margin-top:8px">${qhtml||'<div class="v74-fav-empty">Aucun QCM favori.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>🎧 Vocaux</b><span class="badge">${vs.length}</span></div><div class="v74-fav-list" style="margin-top:8px">${vhtml||'<div class="v74-fav-empty">Aucun vocal favori.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>📄 Fiches</b><span class="badge">${sheets.length}</span></div><div class="v74-resource-list">${sheets.length?sheets.map(x=>resourceCard74(x,'sheet')).join(''):'<div class="v74-fav-empty">Aucune fiche favorite.</div>'}</div></div><div class="card v74-fav-section"><div class="row"><b>◫ Infographies</b><span class="badge">${infos.length}</span></div><div class="v74-resource-list">${infos.length?infos.map(x=>resourceCard74(x,'info')).join(''):'<div class="v74-fav-empty">Aucune infographie favorite.</div>'}</div></div>`;
@@ -339,5 +364,5 @@ function finalize74(){patchResourceRender74();patchFill74();enhanceResourceCards
 addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();injectNews74();
 let tries74=0;const timer74=setInterval(()=>{tries74++;if(dataReady74()||tries74>200){clearInterval(timer74);finalize74()}},250);
 window.addEventListener('storage',()=>{renderDashboard74();renderCourses74();renderFavorites74();if(selectedCourse)renderCourse74();enhanceResourceCards74()});
-window.IFSI_V74={version:VERSION,showCourses:showCourses74,openCourse:openCourse74,showFavorites:showFavorites74,resourceFavorites:()=>[...docFavs74()],courses:allCourses74,refreshCourses:renderCourses74,refreshCourse:renderCourse74};
+window.IFSI_V74={version:VERSION,sourceState:sourceState74,showCourses:showCourses74,openCourse:openCourse74,showFavorites:showFavorites74,resourceFavorites:()=>[...docFavs74()],courses:allCourses74,refreshCourses:renderCourses74,refreshCourse:renderCourse74};
 })();

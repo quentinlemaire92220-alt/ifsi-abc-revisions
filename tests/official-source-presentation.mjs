@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {runInNewContext} from 'node:vm';
+const read=p=>readFileSync(p,'utf8');
+const registry=JSON.parse(read('course-registry-v741.json'));
+const sheets=[1,2,3].flatMap(n=>JSON.parse(read('sheets-'+n+'.json')));
+const source=read('v74-pack.js'),nav=read('course-navigation-ui-v2.js');
+const helpers=source.slice(source.indexOf('const receivedSourceUpdates74='),source.indexOf('function addStyles74()'));
+const api=runInNewContext(helpers+'\n({state:sourceState74,replaced:replacedDocument74,label:studentDocumentLabel74})');
+const course=id=>registry.courses.find(c=>c.id===id);
+for(const id of ['vih_b13_20261027','responsabilite_exercice_professionnel','psychologie_sante','sante_mondiale_sante_france','theorie_gestion_symptomes_td','entretien_infirmier']){
+ const state=api.state(course(id));assert.equal(state.received,true,id+': réception officielle absente');
+ if(id!=='psychologie_sante')assert.equal(state.reviewPending,true,id+': réserve de relecture effacée');
+ assert.doesNotMatch(state.note,/support (?:officiel intégral attendu|natif non disponible)/i,id+': ancien message de manque');
+}
+assert.equal(api.state(course('fievre_retour_voyage_paludisme')).received,false,'Ne pas inventer le PDF du paludisme');
+assert.equal(api.state(course('pharmacologie')).received,false,'Ne pas inventer le support de pharmacologie');
+assert.equal(api.state(null).received,false);
+const elements=[];
+const document={createElement(){const attrs={};const el={setAttribute(k,v){attrs[k]=v},addEventListener(){},attrs};elements.push(el);return el}};
+const context={window:{IFSI_V74:{sourceState:api.state}},document};
+runInNewContext(nav.slice(nav.indexOf('  function sourceState(course)'),nav.indexOf('  // Pictogrammes'))+'\nthis.tag=makeTag;this.why=statusWhy;',context);
+assert.equal(context.tag(course('vih_b13_20261027')).textContent,'Relecture en cours');
+assert.equal(context.tag(course('theorie_gestion_symptomes_td')).textContent,'Relecture en cours');
+assert.equal(context.tag(course('fievre_retour_voyage_paludisme')).textContent,'Provisoire');
+assert.doesNotMatch(context.why(course('vih_b13_20261027')),/non reçu|attendu/i);
+const unavailableCode=source.match(/const unavailableSheet74=doc=>([^;]+);/)[1];
+const unavailable=runInNewContext('(doc)=>('+unavailableCode+')',{S:sheets});
+const psychology=sheets.filter(s=>s.courseId==='psychologie_sante');
+assert.deepEqual(psychology.filter(s=>!unavailable(s)).map(s=>s.resourceId),['psychologie_sante_fiche_20261102_52p']);
+const relation=course('d1_relation_soignant_soigne_ecoute_active').additionalDocuments;
+const old=relation.filter(d=>api.replaced(d));assert.equal(old.length,2);
+assert.ok(relation.some(d=>/21 pages/.test(d.label)&&!api.replaced(d)));
+const world=course('sante_mondiale_sante_france').additionalDocuments;
+assert.equal(world.filter(d=>api.replaced(d)).length,2);
+assert.ok(world.some(d=>/V7.3/.test(d.label)&&!api.replaced(d)));
+assert.equal(api.replaced({url:'https://example.org/other.pdf'}),false);
+assert.equal(api.label('Fiche — PROVISOIRE',course('vih_b13_20261027')),'Fiche — Relecture en cours');
+assert.equal(api.label('Fiche — PROVISOIRE',course('pharmacologie')),'Fiche — PROVISOIRE');
+for(const text of ['!unavailableSheet74(x)&&!replacedDocument74(x)','&&!replacedDocument74(x))','receivedOfficial.received?','v74-source-review-note'])assert.ok(source.includes(text),'Filtre/état non branché: '+text);
+assert.ok(nav.includes("sourceState(course).note || EXPLANATION"),'Explication doit utiliser le statut documentaire actuel');
+console.log('PASS : réception officielle et relecture distinctes ; 4 liens remplacés et 3 fiches archivées masqués ; dernier PDF et cours sans support préservés.');
+

@@ -29,7 +29,7 @@ for(const voice of addedVocals){
  'MP3 ajouté sans complément audio explicitement approuvé : '+voice.id);
 }
 const priorAudioIds=new Set(oldVocals.map(v=>v.id));
-const expectedApprovedAudioIds=new Set([...scopedAudio,...firstReleaseAudioIds,...approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[]).filter(id=>!priorAudioIds.has(id))]);
+const expectedApprovedAudioIds=new Set([...scopedAudio,...firstReleaseAudioIds,...approvedAudio.flatMap(s=>s.publicationApproval?.authorization==='explicit_go_publication'?(s.vocalIds||[]):[])].filter(id=>!priorAudioIds.has(id)));
 assert.deepEqual(new Set(addedVocals.map(v=>v.id)),expectedApprovedAudioIds,'Seuls les MP3 complémentaires approuvés peuvent être ajoutés depuis la version de comparaison');
 const oldVocabulary=old('vocabulaire-v1.json'),newVocabulary=read('vocabulaire-v1.json');
 const beforeCount=oldVocabulary.entries.length;

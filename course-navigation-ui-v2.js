@@ -66,7 +66,12 @@
   function cleanTitle(name) {
     return String(name || '').replace(/\s*[—-]\s*PROVISOIRE\s*$/i, '').trim();
   }
+  function sourceState(course) {
+    return window.IFSI_V74?.sourceState?.(course) || {received: !!course && (course.officialSupport===true || course.nativeSupportAvailable===true), note: course?.sourceNote || ''};
+  }
   function statusWhy(course) {
+    var state = sourceState(course);
+    if (state.received) return state.note || 'Support officiel reçu ; relecture des ressources encore en cours.';
     if (!course) return 'Support officiel complet non confirmé.';
     if (course.officialSupportUrl && course.officialSupportCoverage === 'partial')
       return 'Support officiel partiel : rapprochement et compléments encore nécessaires.';
@@ -80,9 +85,9 @@
     var badge = document.createElement('button');
     badge.type = 'button';
     badge.className = 'v8430-provisional';
-    badge.textContent = 'Provisoire';
+    badge.textContent = sourceState(course).received ? 'Relecture en cours' : 'Provisoire';
     badge.title = statusWhy(course);
-    badge.setAttribute('aria-label', 'Cours provisoire : ' + statusWhy(course));
+    badge.setAttribute('aria-label', (sourceState(course).received ? 'Relecture du cours : ' : 'Cours provisoire : ') + statusWhy(course));
     badge.setAttribute('aria-haspopup', 'dialog');
     badge.addEventListener('click', function (event) {
       event.stopPropagation();
@@ -159,9 +164,10 @@
       }});
       document.body.appendChild(dialog);
     }
+    dialog.querySelector('#v8431ProvisionalTitle').textContent = sourceState(course).received ? 'Quels points restent à vérifier ?' : 'Pourquoi ce cours est provisoire ?';
     dialog.querySelector('.v8431-dialog-course').textContent = cleanTitle(course.label);
     dialog.querySelector('#v8431ProvisionalReason').textContent = statusWhy(course);
-    dialog.querySelector('#v8431ProvisionalSources').textContent = course.sourceNote || EXPLANATION;
+    dialog.querySelector('#v8431ProvisionalSources').textContent = sourceState(course).note || EXPLANATION;
     dialog.onclose = function () { if (trigger.isConnected) trigger.focus(); };
     dialog.showModal();
   }

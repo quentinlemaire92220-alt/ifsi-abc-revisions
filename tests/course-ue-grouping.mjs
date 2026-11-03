@@ -15,7 +15,8 @@ const context={Map,window:{},$74:id=>id==='v74CourseGrid'?grid:{get value(){retu
  courseMeta74:label=>{const c=items.find(c=>c.label===label);return {ue:c.ue,domain:c.domain,id:c.id};},
  courseData74:()=>({qs:[{}],sheets:[],infos:[],vs:[],rate:null,err:0}),
  domainName74:x=>x,ueOrder74:x=>['B1','B2','B3'].indexOf(x),norm74:x=>x.toLowerCase(),esc74:x=>String(x)};
-vm.createContext(context);vm.runInContext(grouping+render,context);
+const presentation=src.slice(src.indexOf('const receivedSourceUpdates74='),src.indexOf('function addStyles74()'));
+vm.createContext(context);vm.runInContext(presentation+grouping+render,context);
 for(const [input,expected] of [['B1.3','B1'],['B2.1.1','B2'],['B3.2.1.7','B3'],
  [' b1.7 ','B1'],['C1.1','C1'],['D1.1.2','D1'],['B10.1','B10'],['B1x3','B1X3'],['','Autres']])
  assert.equal(context.catalogUe74(input),expected,input);
