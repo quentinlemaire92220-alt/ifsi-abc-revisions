@@ -133,6 +133,17 @@
      await new Promise(function(resolve){setTimeout(resolve,40)});
      var linksAfter=Array.from(detail.querySelectorAll('a[href]')).map(function(a){return a.href});
      if(JSON.stringify(linksBefore)!==JSON.stringify(linksAfter))throw Error('Liens modifiés par le décor graphique : '+course.id);
+     for(var activeUrl of course.activeDocumentUrls||[]){
+       if(!linksAfter.includes(activeUrl))throw Error('PDF actif inaccessible : '+course.id);
+     }
+     if(course.primarySheetResourceId){
+       var primary=window.IFSI_V741.resourcesForCourse(course.id).sheets;
+       if(primary.length!==1||primary[0].resourceId!==course.primarySheetResourceId||!linksAfter.includes(primary[0].url))throw Error('Fiche principale inaccessible : '+course.id);
+     }
+     if(Array.isArray(course.activeVocalIds)){
+       var activeButtons=Array.from(detail.querySelectorAll('[data-vocal74]')).map(function(b){return b.dataset.vocal74}).sort();
+       if(JSON.stringify(activeButtons)!==JSON.stringify(course.activeVocalIds.slice().sort()))throw Error('Boutons vocaux actifs incorrects : '+course.id);
+     }
      var blocks=Array.from(detail.querySelectorAll(':scope > .v74-resource-block'));
      // La présentation validée replie les documents, sans retirer leurs accès.
      if(blocks.some(function(block){return !block.querySelector(':scope > .row .mku-toggle')}))throw Error('Rubrique compacte absente pour '+course.id);
