@@ -1,3 +1,9 @@
+# Publication audio standard — 03/11/2026
+
+Pour tout nouveau vocal réellement fourni et destiné à l’application, appliquer [le processus de publication audio](docs/AUDIO_PUBLICATION_STANDARD.md) : copie directe compatible avec la playlist, vérification des fichiers servis et de l’enchaînement, originaux et permissions Drive conservés. Intégrer cette étape à chaque publication audio. Les vocaux restent produits sur demande et le GO propre au lot doit couvrir ses fichiers et leur destination publique ; aucune autorisation future n’est déduite de la migration des 178 vocaux.
+
+---
+
 # PRIORITÉ v1.49 — NON-RÉGRESSION PÉDAGOGIQUE (28/10/2026)
 
 Pour toute **création ou régénération de fiche**, appliquer **avant rédaction** `docs/PEDAGOGICAL_NON_REGRESSION_V149.md` et `docs/skills/controle-non-regression-pedagogique-v149.md`, en complément du modèle écrit V5.3 et du contrat trame V3. Inventorier la dernière fiche, ses versions et lexiques, le support officiel et toutes les transcriptions PLAUD/captures ; établir une **matrice privée de couverture ET d'héritage**. Une notion seulement mentionnée n'est pas considérée comme suffisamment traitée lorsqu'un mécanisme ou une application sont nécessaires. Comparer le fond **avant/après**, documenter `conservée / enrichie / corrigée / fusionnée / manquante`, bloquer toute perte inexpliquée ou source essentielle non rapprochée. Ne rien publier, ne migrer aucune ancienne fiche, et ne jamais stocker ces preuves privées sur GitHub. Le dépôt de sources seul ne déclenche pas une génération. Les règles V3/V5.3/QCM/flashcards/vocaux ne changent pas.

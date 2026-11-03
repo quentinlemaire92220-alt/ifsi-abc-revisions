@@ -22,6 +22,7 @@
 - `docs/HYBRID_REVISION_V146.md` : contrat hybride introduit en v1.46, aligné sur la charte maître v1.47.
 - `docs/LEAN_COURSE_PACK_V1.md` : uniquement pour l'héritage des anciens packs, pas un modèle de nouveaux cours.
 - `docs/PUBLICATION_APPROVAL.md` : preuve du GO publication, portée, empreintes et séparation préparation/diffusion.
+- `docs/AUDIO_PUBLICATION_STANDARD.md` : étape standard des nouveaux vocaux, copie directe compatible avec la playlist, vérification et conservation des originaux Drive.
 - `docs/COURSE_REVISION_ELIGIBILITY.md` : cours réellement éligibles à la production.
 - `docs/REPO_HYGIENE.md` et `CONTRIBUTING.md` : nettoyage prudent, branches, PR, CI.
 - Index Work et chartes **courants** sur Drive : références pédagogiques privées, sans copier leurs liens dans ce dépôt public.
