@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "series": [
+    {
+      "id": "psychologie_sante_20261103",
+      "courseId": "psychologie_sante",
+      "status": "approved",
+      "replaces": [
+        "psychologie_sante_p01_vocal_01",
+        "psychologie_sante_p01_vocal_02"
+      ],
+      "vocals": [
+        {
+          "id": "psychologie_sante_20261103_vocal_01",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 1,
+          "title": "Santé et qualité de vie",
+          "mime": "audio/mpeg",
+          "durationSeconds": 413.374667,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_01.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1IwlaNE2w4UHkji0qqrCuEs-IYf8U8mSj"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_02",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 2,
+          "title": "Maladie et représentations",
+          "mime": "audio/mpeg",
+          "durationSeconds": 471.189333,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_02.mp3",
+          "syntheticSpeech": true,
+          "driveId": "12lXvekVc4t3szGJd6uIcMSfIs3f1kEHs"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_03",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 3,
+          "title": "Douleur, souffrance et plainte",
+          "mime": "audio/mpeg",
+          "durationSeconds": 464.489333,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_03.mp3",
+          "syntheticSpeech": true,
+          "driveId": "12rj4X_zDd_GvXwwSurtBDuyU8QrRd5ve"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_04",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 4,
+          "title": "Événements de vie et soutien social",
+          "mime": "audio/mpeg",
+          "durationSeconds": 437.412,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_04.mp3",
+          "syntheticSpeech": true,
+          "driveId": "137DgnyaaR2GoDOEfXeRNQMbVzhNFP1BE"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_05",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 5,
+          "title": "Vulnérabilité, résilience et ressources",
+          "mime": "audio/mpeg",
+          "durationSeconds": 480.769958,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_05.mp3",
+          "syntheticSpeech": true,
+          "driveId": "16WPzhKDfvLRk84IgbgOkGIXvznSCtBVn"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_06",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 6,
+          "title": "Stress, évaluations et coping",
+          "mime": "audio/mpeg",
+          "durationSeconds": 507.765333,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_06.mp3",
+          "syntheticSpeech": true,
+          "driveId": "15iJpGSRqEddXLm3GA_Zc8T5bABgyb3wR"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_07",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 7,
+          "title": "Angoisse et défenses : premiers mécanismes",
+          "mime": "audio/mpeg",
+          "durationSeconds": 460.501333,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_07.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1-D1amJiHtS6oDHMkcrq6lo1g3mRyMHVB"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_08",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 8,
+          "title": "Mécanismes de défense : distinctions et applications",
+          "mime": "audio/mpeg",
+          "durationSeconds": 454.561958,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_08.mp3",
+          "syntheticSpeech": true,
+          "driveId": "16vocAK2OFYAJxawS7MtwCdJCNHEcibek"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_09",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 9,
+          "title": "Annonce du diagnostic et corps vécu",
+          "mime": "audio/mpeg",
+          "durationSeconds": 450.229333,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_09.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1smVVWKdIfFLEzzE7ja8CKbpipf4GGKN0"
+        },
+        {
+          "id": "psychologie_sante_20261103_vocal_10",
+          "courseId": "psychologie_sante",
+          "course": "Psychologie de la santé",
+          "number": 10,
+          "title": "Analyse d’un témoignage et synthèse",
+          "mime": "audio/mpeg",
+          "durationSeconds": 366.084,
+          "localAudio": "./assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_10.mp3",
+          "syntheticSpeech": true,
+          "driveId": "19Coqz2sxZthX77DRapR8AuwyhGUObIVW"
+        }
+      ],
+      "artifacts": [
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_01",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_01.mp3",
+          "sha256": "7ad9169f24c1c894add46e2b1f6a1aec52932e8629d31937c8d34a1e488a103f",
+          "bytes": 4961818,
+          "durationSeconds": 413.374667
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_02",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_02.mp3",
+          "sha256": "b5379e7504f46d0deab36aee3123b7cdeab34235a9718316859a13939728334a",
+          "bytes": 5655613,
+          "durationSeconds": 471.189333
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_03",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_03.mp3",
+          "sha256": "2a7732121a05df4966156eef4269b57052e2c3f1a8eb4aa48b4afb45d47574df",
+          "bytes": 5575261,
+          "durationSeconds": 464.489333
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_04",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_04.mp3",
+          "sha256": "96e82d22a2c092169fe038fe381e6ddc216a9f9f64ec99dfe527eb235f802d6c",
+          "bytes": 5250392,
+          "durationSeconds": 437.412
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_05",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_05.mp3",
+          "sha256": "021afc0ebf6031645c9cff4ff4b02671098363d35742ed3a0ca61f5229069a2e",
+          "bytes": 5770814,
+          "durationSeconds": 480.769958
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_06",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_06.mp3",
+          "sha256": "a3fdf40c252264c68aa04db5c13ab5fa1773a17121b2348ecba01dc28f793d6e",
+          "bytes": 6094515,
+          "durationSeconds": 507.765333
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_07",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_07.mp3",
+          "sha256": "017c55154c939f44b7269fa3bdb910585f183bf833fe9161e8c35a8175a38316",
+          "bytes": 5527449,
+          "durationSeconds": 460.501333
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_08",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_08.mp3",
+          "sha256": "184b608806dffad3e954fcf4d15286513a7f9216f01b1c059c19d17eca1b7fa4",
+          "bytes": 5456314,
+          "durationSeconds": 454.561958
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_09",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_09.mp3",
+          "sha256": "aa1fc6aa803104431805600807c5acbd1fd2e8125046d794a0669d94993fee5d",
+          "bytes": 5404179,
+          "durationSeconds": 450.229333
+        },
+        {
+          "vocalId": "psychologie_sante_20261103_vocal_10",
+          "path": "assets/audio/psychologie-sante-20261103/psychologie_sante_20261103_vocal_10.mp3",
+          "sha256": "1c8d72e0e48a8f28f46a39e7925d515c5c4d31a32cec715a52ee049c01df6ad0",
+          "bytes": 4394456,
+          "durationSeconds": 366.084
+        }
+      ],
+      "review": {
+        "status": "owner_listened_and_accepted",
+        "reviewedAt": "2026-11-03T17:25:59.783883+00:00",
+        "privateEvidenceSha256": "95f0fd2ddf46bd05a290669c453bfea1f4167592d264e7ebb964b41d6a2b072a"
+      },
+      "publicationApproval": {
+        "authorization": "explicit_go_publication",
+        "scope": "audio_series_replacement",
+        "approvedAt": "2026-11-03T17:25:59.783883+00:00",
+        "bundleSha256": "3a1ed221aa5b622b6bcf77d36d04af771de6186126c4f65cf16d6b59021cfaf2"
+      }
+    }
+  ]
+}

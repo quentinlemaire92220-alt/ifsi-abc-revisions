@@ -9,6 +9,7 @@ if(spawnSync('git',['cat-file','-e',base+'^{commit}']).status!==0)throw Error('B
 process.env.IFSI_BASE_SHA=base;
 const n=process.execPath,py=process.env.IFSI_PYTHON||'python';
 const commands=[
+ ['audio_series_replacement',n,['tests/audio-series-replacement.mjs',...(stage==='preparation'?['--preparation']:[])]],
  ['graphic_contract',py,['tests/pdf-graphics-v2-test.py']],
  ['template_contract',py,['tests/pdf-template-v3-test.py']],
  ['pedagogical_contract',n,['tests/qcm-autonomy-contract-test.mjs']],
