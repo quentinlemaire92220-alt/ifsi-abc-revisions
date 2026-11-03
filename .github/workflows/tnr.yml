@@ -433,6 +433,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/vocals-14-courses-v8410.mjs
 
+      - name: Vérifier la playlist audio et son enchaînement
+        if: ${{ !cancelled() }}
+        run: node tests/audio-playlist.mjs
+
       - name: Vérifier le lecteur vocal natif V8.30.50
         if: ${{ !cancelled() }}
         run: node tests/vocal-player-v8350.mjs
