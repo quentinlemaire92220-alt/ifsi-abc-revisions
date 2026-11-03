@@ -1,4 +1,4 @@
-import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
 import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 // Sécurisation P0 : teste la DIFF RÉELLE vs main, non un jeu de données fictif.
@@ -23,7 +23,7 @@ const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=readHistoricalAudioJson;
 const base=process.env.IFSI_BASE_SHA||'HEAD~1';
 assert.match(base,/^(?:HEAD~1|[0-9a-f]{7,40})$/i);
-const before=file=>JSON.parse(execFileSync('git',['show',base+':'+file],{encoding:'utf8',maxBuffer:16*1024*1024}));
+const before=file=>readHistoricalAudioGitJson(file,base);
 const oldReg=before('course-registry-v741.json'),currentReg=disk('course-registry-v741.json');
 const oldMan=before('docs/course-deliveries.json'),currentMan=disk('docs/course-deliveries.json');
 

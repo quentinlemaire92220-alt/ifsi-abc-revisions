@@ -1,4 +1,4 @@
-import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
 import {isPsychologieSheetArchive} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
@@ -8,7 +8,7 @@ import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateAudioReplacements} from './audio-replacement-contract.mjs';
 import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
 const read=readHistoricalAudioJson,base=process.env.IFSI_BASE_SHA||'HEAD^';
-const old=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
+const old=p=>readHistoricalAudioGitJson(p,base);
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
 const prior=old('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
 const {questions,deck}=await runtimeDeck(),bank=read('qextra-60.txt');
