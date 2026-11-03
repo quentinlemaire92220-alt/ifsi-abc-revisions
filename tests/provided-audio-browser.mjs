@@ -34,6 +34,8 @@ try{
  await until(()=>window.IFSI_V73?.getVocals?.().some(v=>v.courseId==='psychologie_sociale')&&window.IFSI_V741?.getRegistry?.(),'Application boot');
  const api=window.IFSI_V73,all=api.getVocals(),rows=all.filter(v=>v.courseId==='psychologie_sociale');if(rows.length!==18)throw Error('Expected 18 active audios');
  window.IFSI_V74.openCourse('Psychologie sociale');await sleep(200);
+ if(document.querySelectorAll('#v74CourseDetail [data-vocal74]').length!==18)throw Error('Course page does not expose all 18 audio buttons');
+ if(window.IFSI_V741.resourcesForCourse('psychologie_sociale').questions.length!==64)throw Error('Course questions lost');
  const links=[...document.querySelectorAll('.v74-approved-downloads a')].map(a=>a.getAttribute('href'));if(links.length!==2||!links.every(p=>p.endsWith('.zip')))throw Error('Student downloads missing');
  const other=all.find(v=>v.courseId!=='psychologie_sociale'&&v.localAudio&&v.mime==='audio/mpeg');if(!other)throw Error('Other theme media missing');
  for(const v of [rows[0],other,rows[17]]){const b=document.querySelector('[data-playlist-add="'+v.id+'"]');if(!b)throw Error('Playlist button missing');b.click();}
