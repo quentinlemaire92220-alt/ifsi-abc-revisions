@@ -1,0 +1,3355 @@
+[
+  {
+    "id": "ps_q_001",
+    "number": 1,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "medium",
+    "question": "Que vise principalement la psychologie sociale ?",
+    "choices": [
+      "Décrire uniquement des maladies mentales",
+      "Étudier la dimension sociale des comportements",
+      "Établir un profil immuable pour chaque groupe",
+      "Réduire tout comportement à une décision isolée",
+      "Comprendre les interactions entre l’individu et la société"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée.",
+      "Vrai. La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée.",
+      "Faux. La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée.",
+      "Faux. La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée.",
+      "Vrai. La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée."
+    ],
+    "explanation": "La psychologie sociale étudie les relations entre l’individu et la société, dont la dimension sociale des processus mentaux et des comportements. Elle ne se limite ni aux maladies mentales ni à une décision isolée.",
+    "flashcards": [
+      {
+        "id": "ps_c_001",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Psychologie sociale.",
+        "answers": [
+          "Discipline qui étudie les interactions entre l’individu et la société, ainsi que la dimension sociale des processus mentaux et des comportements. Elle analyse comment autrui, les groupes et les institutions influencent nos conduites. Également appelée psychosociologie ; elle ne se limite pas aux relations entre deux personnes."
+        ],
+        "explanation": "Également appelée psychosociologie ; elle ne se limite pas aux relations entre deux personnes."
+      },
+      {
+        "id": "ps_c_004",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Interdépendance.",
+        "answers": [
+          "Situation dans laquelle chacun a besoin de la présence ou de l’action d’autrui pour poursuivre ses propres buts. Elle explique une partie de la coopération et de la formation des liens. Dans une équipe, la réalisation de la tâche de chacun dépend des autres."
+        ],
+        "explanation": "Dans une équipe, la réalisation de la tâche de chacun dépend des autres."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_002",
+    "number": 2,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "medium",
+    "question": "Quelles situations illustrent une affiliation fondée sur un besoin identitaire ?",
+    "choices": [
+      "Se définir comme membre d’une profession que l’on souhaite incarner",
+      "Chercher un partenaire de tâche uniquement pour gagner du temps",
+      "Éviter toute appartenance pour ne recevoir aucun modèle",
+      "Rejoindre un groupe pour adopter des caractéristiques que l’on admire",
+      "Coopérer uniquement parce qu’on ne peut porter seul un objet"
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective.",
+      "Faux. Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective.",
+      "Faux. Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective.",
+      "Vrai. Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective.",
+      "Faux. Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective."
+    ],
+    "explanation": "Le besoin identitaire motive l’appartenance et l’adoption des traits représentatifs d’un groupe. Il se distingue du besoin utilitaire de coopération et de l’attraction affective.",
+    "flashcards": [
+      {
+        "id": "ps_c_003",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Affiliation.",
+        "answers": [
+          "Ensemble des conduites par lesquelles une personne établit des liens avec autrui et cherche à pouvoir compter sur les autres. En psychologie sociale, elle traduit la dimension sociale de l’existence et le besoin d’appartenance. À distinguer de l’emploi du même mot pour désigner un mécanisme de défense."
+        ],
+        "explanation": "À distinguer de l’emploi du même mot pour désigner un mécanisme de défense."
+      },
+      {
+        "id": "ps_c_008",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Modèle de l’identification sociale.",
+        "answers": [
+          "Explication de l’affiliation par un besoin de définir son identité en tant que membre d’un groupe. La personne adopte les caractéristiques qu’elle juge représentatives de ce groupe. Vouloir appartenir à un groupe pour devenir « quelqu’un comme eux » relève du besoin identitaire."
+        ],
+        "explanation": "Vouloir appartenir à un groupe pour devenir « quelqu’un comme eux » relève du besoin identitaire."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_003",
+    "number": 3,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "easy",
+    "question": "Concernant les trois modèles d’affiliation, quelles propositions sont justes ?",
+    "choices": [
+      "L’attraction désigne nécessairement une attirance sexuelle",
+      "Les trois moteurs ne peuvent jamais coexister",
+      "Le modèle utilitaire met l’accent sur la coopération",
+      "La cohésion sociale met l’accent sur l’attraction interpersonnelle",
+      "L’identification sociale répond à un besoin identitaire"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe.",
+      "Faux. Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe.",
+      "Vrai. Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe.",
+      "Vrai. Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe.",
+      "Vrai. Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe."
+    ],
+    "explanation": "Le modèle utilitaire met l’accent sur l’interdépendance pour atteindre des buts ; la cohésion sur l’attraction ; l’identification sociale sur le besoin de se définir par le groupe.",
+    "flashcards": [
+      {
+        "id": "ps_c_007",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Attraction interpersonnelle.",
+        "answers": [
+          "Dimension affective d’une relation qui rend autrui attirant et donne envie de se rapprocher de lui. Elle peut reposer sur la sympathie, l’admiration ou des affinités et ne se réduit pas à l’attirance physique. Trouver un collègue agréable peut faciliter le désir de travailler avec lui."
+        ],
+        "explanation": "Trouver un collègue agréable peut faciliter le désir de travailler avec lui."
+      },
+      {
+        "id": "ps_c_005",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Modèle utilitaire de l’affiliation.",
+        "answers": [
+          "Explication de la formation du lien social par la nécessité de coopérer pour atteindre des objectifs ou répondre à des besoins que l’individu ne satisfait pas seul. Le moteur principal est l’utilité de la coopération, et non l’affection ou l’identité."
+        ],
+        "explanation": "Le moteur principal est l’utilité de la coopération, et non l’affection ou l’identité."
+      },
+      {
+        "id": "ps_c_006",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Modèle de la cohésion sociale.",
+        "answers": [
+          "Explication de l’affiliation par l’attraction interpersonnelle : sympathie, attitudes positives et désir de proximité favorisent le rapprochement et la cohésion. La stabilité du lien peut varier avec l’attraction éprouvée."
+        ],
+        "explanation": "La stabilité du lien peut varier avec l’attraction éprouvée."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_004",
+    "number": 4,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "medium",
+    "question": "Quelle distinction entre attachement et socialisation est correcte ?",
+    "choices": [
+      "L’attachement est uniquement un apprentissage des règlements",
+      "L’attachement souligne le lien affectif, la socialisation les apprentissages sociaux",
+      "La socialisation commence seulement à l’âge adulte",
+      "L’attachement exclut toute transformation ultérieure",
+      "La socialisation désigne exclusivement le nombre d’amis"
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques.",
+      "Vrai. L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques.",
+      "Faux. L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques.",
+      "Faux. L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques.",
+      "Faux. L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques."
+    ],
+    "explanation": "L’attachement est un lien affectif profond ; la socialisation est l’apprentissage des normes, valeurs et rôles. Leurs contributions au lien social se combinent sans être identiques.",
+    "flashcards": [
+      {
+        "id": "ps_c_010",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Attachement.",
+        "answers": [
+          "Lien affectif profond dans lequel les personnes prennent une importance particulière l’une pour l’autre. Les premiers attachements participent à la capacité ultérieure de se lier et de s’affilier. Les expériences précoces influencent les liens sans figer définitivement toutes les relations futures."
+        ],
+        "explanation": "Les expériences précoces influencent les liens sans figer définitivement toutes les relations futures."
+      },
+      {
+        "id": "ps_c_002",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Lien social.",
+        "answers": [
+          "Ensemble des relations et des échanges qui inscrivent une personne dans un tissu social préexistant et orientent sa sociabilité, ses actions et sa place parmi les autres. Les liens avec la famille, les pairs, les institutions et les groupes se combinent."
+        ],
+        "explanation": "Les liens avec la famille, les pairs, les institutions et les groupes se combinent."
+      },
+      {
+        "id": "ps_c_014",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Accordage affectif.",
+        "answers": [
+          "Ajustement réciproque des expressions, rythmes et intensités émotionnelles dans une interaction. Cette notion éclaire le caractère interactif des premiers échanges et de la socialisation. Le bébé participe activement à la cadence et à la nature des échanges."
+        ],
+        "explanation": "Le bébé participe activement à la cadence et à la nature des échanges."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_005",
+    "number": 5,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "medium",
+    "question": "Quelles sources participent à la socialisation primaire ?",
+    "choices": [
+      "La famille et l’école",
+      "Les pairs",
+      "Les médias",
+      "Uniquement les professionnels de santé",
+      "Uniquement les personnes du foyer familial"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer.",
+      "Vrai. Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer.",
+      "Vrai. Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer.",
+      "Faux. Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer.",
+      "Faux. Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer."
+    ],
+    "explanation": "Famille, école, pairs et médias participent à la socialisation primaire. Leurs messages et modes de transmission peuvent différer.",
+    "flashcards": [
+      {
+        "id": "ps_c_012",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Socialisation primaire.",
+        "answers": [
+          "Socialisation qui se déroule principalement pendant l’enfance, sous l’influence de la famille, de l’école, des pairs et des médias. Ces sources transmettent des messages selon des modalités différentes. La famille associe précocité et charge affective ; l’école transmet davantage de règles impersonnelles."
+        ],
+        "explanation": "La famille associe précocité et charge affective ; l’école transmet davantage de règles impersonnelles."
+      },
+      {
+        "id": "ps_c_009",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Prototype du groupe.",
+        "answers": [
+          "Ensemble des caractéristiques perçues comme les plus représentatives d’un groupe et utilisées comme repères pour se définir comme membre de celui-ci. Le membre prototypique n’est pas nécessairement le chef officiel."
+        ],
+        "explanation": "Le membre prototypique n’est pas nécessairement le chef officiel."
+      },
+      {
+        "id": "ps_c_016",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Pairs.",
+        "answers": [
+          "Personnes qui occupent une position comparable dans un contexte, notamment les camarades d’une même classe d’âge. Ils constituent une source de socialisation souvent informelle. Le mot « pairs » ne désigne pas les parents."
+        ],
+        "explanation": "Le mot « pairs » ne désigne pas les parents."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_006",
+    "number": 6,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "easy",
+    "question": "Un étudiant apprend les codes d’une équipe lors d’un stage. Comment analyser cette situation ?",
+    "choices": [
+      "Elle peut modifier sa manière d’incarner un rôle",
+      "Elle prouve que toute socialisation primaire a été effacée",
+      "Elle ne relève d’aucun apprentissage social",
+      "Elle signifie que l’étudiant doit reproduire toute habitude sans réflexion",
+      "Elle illustre la poursuite de la socialisation après l’enfance"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir.",
+      "Faux. L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir.",
+      "Faux. L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir.",
+      "Faux. L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir.",
+      "Vrai. L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir."
+    ],
+    "explanation": "L’entrée en stage implique une socialisation secondaire : apprendre les codes, attentes et rôles d’un nouveau milieu. Les expériences antérieures continuent d’intervenir.",
+    "flashcards": [
+      {
+        "id": "ps_c_011",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Socialisation.",
+        "answers": [
+          "Processus d’apprentissage et d’intégration sociale par lequel une personne reçoit, apprend et s’approprie les normes, valeurs, rôles et modèles de conduite de ses milieux de vie. Elle favorise l’adaptation à la vie collective et la cohésion ; elle continue tout au long de la vie."
+        ],
+        "explanation": "Elle favorise l’adaptation à la vie collective et la cohésion ; elle continue tout au long de la vie."
+      },
+      {
+        "id": "ps_c_013",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Socialisation secondaire.",
+        "answers": [
+          "Apprentissages sociaux qui se poursuivent après l’enfance lors de l’entrée dans de nouveaux rôles et milieux. Ils peuvent compléter ou transformer les habitudes antérieures. Devenir étudiant infirmier, professionnel ou parent demande de nouveaux apprentissages."
+        ],
+        "explanation": "Devenir étudiant infirmier, professionnel ou parent demande de nouveaux apprentissages."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_007",
+    "number": 7,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "hard",
+    "question": "Quels besoins figurent dans les repères de Schutz ?",
+    "choices": [
+      "L’affection",
+      "La perfection",
+      "La domination obligatoire",
+      "L’inclusion",
+      "Le contrôle"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer.",
+      "Faux. Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer.",
+      "Faux. Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer.",
+      "Vrai. Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer.",
+      "Vrai. Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer."
+    ],
+    "explanation": "Schutz distingue inclusion, contrôle et affection ; il s’agit de besoins relationnels, non d’une obligation de dominer.",
+    "flashcards": [
+      {
+        "id": "ps_c_017",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Besoins de sociabilité selon Schutz.",
+        "answers": [
+          "Trois besoins relationnels : inclusion, contrôle et affection. L’inclusion concerne le contact et la participation, le contrôle la sécurité et la place dans les relations, l’affection les liens affectifs. Le contrôle ne signifie pas ici qu’il faille dominer autrui."
+        ],
+        "explanation": "Le contrôle ne signifie pas ici qu’il faille dominer autrui."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_008",
+    "number": 8,
+    "courseId": "psychologie_sociale",
+    "theme": "Lien social et socialisation",
+    "difficulty": "medium",
+    "question": "Que permet de comprendre la décentration ?",
+    "choices": [
+      "La disparition de toute différence entre personnes",
+      "L’arrêt des apprentissages sociaux après l’enfance",
+      "La prise en compte du point de vue d’autrui",
+      "La certitude de savoir ce qu’autrui pense sans lui parler",
+      "Le rôle du développement cognitif dans certaines interactions"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées.",
+      "Faux. La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées.",
+      "Vrai. La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées.",
+      "Faux. La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées.",
+      "Vrai. La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées."
+    ],
+    "explanation": "La décentration permet d’envisager le point de vue d’autrui et la réciprocité, sans simplement lui attribuer ses propres idées.",
+    "flashcards": [
+      {
+        "id": "ps_c_015",
+        "theme": "Lien social et socialisation",
+        "front": "Définir : Décentration.",
+        "answers": [
+          "Capacité à quitter son seul point de vue pour envisager celui d’autrui. Son développement contribue à comprendre la réciprocité et à ajuster ses relations sociales. Comprendre une situation depuis la place d’un autre ne consiste pas simplement à lui prêter ses propres idées."
+        ],
+        "explanation": "Comprendre une situation depuis la place d’un autre ne consiste pas simplement à lui prêter ses propres idées."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_009",
+    "number": 9,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "easy",
+    "question": "Dans la présentation de Mead, qu’est-ce qui participe à la construction du Soi ?",
+    "choices": [
+      "Une identité fixée une fois pour toutes",
+      "L’interaction entre Moi-objet et Moi-sujet",
+      "L’intériorisation de certaines attitudes d’autrui",
+      "Le seul statut administratif",
+      "L’absence de toute interaction sociale"
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi.",
+      "Vrai. Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi.",
+      "Vrai. Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi.",
+      "Faux. Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi.",
+      "Faux. Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi."
+    ],
+    "explanation": "Chez Mead, le Moi-objet intériorise les attitudes d’autrui et le Moi-sujet renvoie à l’expérience singulière de soi ; leur interaction participe à la conscience de soi.",
+    "flashcards": [
+      {
+        "id": "ps_c_020",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Moi-objet.",
+        "answers": [
+          "Dans la présentation de Mead retenue ici, dimension du Soi construite par l’intériorisation des attitudes d’autrui envers soi. Le sujet se considère depuis le regard social. On emploie aussi « Ego » pour cette dimension."
+        ],
+        "explanation": "On emploie aussi « Ego » pour cette dimension."
+      },
+      {
+        "id": "ps_c_018",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité sociale.",
+        "answers": [
+          "Construction de soi liée aux interactions, aux appartenances, aux positions occupées et aux attentes attachées aux rôles. Elle résulte d’un processus actif d’évaluation, d’ajustement et de négociation avec autrui. Elle n’est ni un attribut unique ni une réalité définitivement figée."
+        ],
+        "explanation": "Elle n’est ni un attribut unique ni une réalité définitivement figée."
+      },
+      {
+        "id": "ps_c_021",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Moi-sujet.",
+        "answers": [
+          "Dimension vécue du Soi : manière singulière dont la personne s’éprouve elle-même. le « Je » interagit avec le Moi-objet pour construire la conscience de soi. Le Soi n’est donc pas la simple copie du regard des autres."
+        ],
+        "explanation": "Le Soi n’est donc pas la simple copie du regard des autres."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_010",
+    "number": 10,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "medium",
+    "question": "Un soignant partage le statut de ses collègues mais développe une manière personnelle d’exercer son rôle. Quelle lecture convient ?",
+    "choices": [
+      "Le rôle collectif et sa manière subjective de l’assumer peuvent se distinguer",
+      "Des rôles personnels différents prouvent des statuts obligatoirement différents",
+      "L’identité publique ne comporte aucun versant subjectif",
+      "Il n’existe aucune attente commune attachée au statut",
+      "L’identité de choix est nécessairement identique au titre professionnel"
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Vrai. L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi.",
+      "Faux. L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi.",
+      "Faux. L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi.",
+      "Faux. L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi.",
+      "Faux. L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi."
+    ],
+    "explanation": "L’identité publique comprend le rôle assigné et la manière singulière de l’assumer ; l’identité de choix renvoie à la représentation de soi.",
+    "flashcards": [
+      {
+        "id": "ps_c_026",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité publique.",
+        "answers": [
+          "Dans le modèle de Miller présenté ici, identité liée aux normes du groupe et au rôle social. Elle comporte un versant objectif, le rôle assigné, et un versant subjectif, la manière de l’assumer. Deux professionnels peuvent partager un statut et incarner différemment leur rôle."
+        ],
+        "explanation": "Deux professionnels peuvent partager un statut et incarner différemment leur rôle."
+      },
+      {
+        "id": "ps_c_019",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Soi.",
+        "answers": [
+          "Ensemble des caractéristiques qu’une personne considère comme siennes et auxquelles elle attribue une valeur socioaffective. Il répond à « qui suis-je ? » et comporte un sentiment de continuité. Le Soi et l’estime de soi se distinguent : description de soi et évaluation de soi."
+        ],
+        "explanation": "Le Soi et l’estime de soi se distinguent : description de soi et évaluation de soi."
+      },
+      {
+        "id": "ps_c_030",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Conscience de soi publique.",
+        "answers": [
+          "Attention portée à soi comme objet du regard et de l’évaluation d’autrui. Elle intervient dans la façon de se présenter en interaction. Une même personne peut se présenter différemment selon le groupe."
+        ],
+        "explanation": "Une même personne peut se présenter différemment selon le groupe."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_011",
+    "number": 11,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "medium",
+    "question": "Quels facteurs de cohérence identitaire sont présentés avec Allport ?",
+    "choices": [
+      "Le sentiment de continuité temporelle",
+      "L’orientation générale de l’existence",
+      "L’absence permanente de toute contradiction",
+      "Le nombre obligatoire de groupes d’appartenance",
+      "Le sentiment physique de son corps"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe.",
+      "Vrai. Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe.",
+      "Faux. Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe.",
+      "Faux. Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe.",
+      "Vrai. Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe."
+    ],
+    "explanation": "Allport décrit le sentiment physique du corps, la continuité temporelle, la valeur et l’estime de soi, et l’orientation générale de l’existence. Ces repères n’exigent pas une conformité permanente au groupe.",
+    "flashcards": [
+      {
+        "id": "ps_c_022",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Continuité temporelle de soi.",
+        "answers": [
+          "Sentiment d’être la même personne à travers le temps malgré les changements de situation, de corps ou de rôle. C’est l’un des facteurs de cohérence identitaire présentés avec Allport. Ce sentiment n’interdit ni changement ni évolution."
+        ],
+        "explanation": "Ce sentiment n’interdit ni changement ni évolution."
+      },
+      {
+        "id": "ps_c_029",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Conscience de soi intime.",
+        "answers": [
+          "Sentiment que l’on a de soi-même indépendamment d’une situation sociale particulière. Elle désigne le versant intérieur de l’expérience de soi. À distinguer de l’attention portée à l’image que les autres voient."
+        ],
+        "explanation": "À distinguer de l’attention portée à l’image que les autres voient."
+      },
+      {
+        "id": "ps_c_032",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Appartenance sociale.",
+        "answers": [
+          "Inscription dans des groupes et catégories, de dimensions diverses, dont les normes, valeurs et représentations contribuent à la définition de soi. Les appartenances culturelles, professionnelles ou familiales peuvent se croiser sans déterminer entièrement l’individu."
+        ],
+        "explanation": "Les appartenances culturelles, professionnelles ou familiales peuvent se croiser sans déterminer entièrement l’individu."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_012",
+    "number": 12,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "easy",
+    "question": "Quelle proposition distingue le mieux Soi, estime de soi et présentation de soi ?",
+    "choices": [
+      "Le Soi mesure uniquement la compétence professionnelle",
+      "La présentation de soi reste identique quel que soit le contexte",
+      "L’estime de soi ne dépend jamais des réalisations ou du regard d’autrui",
+      "Ils concernent respectivement ce que je considère comme mien, sa valeur et ce que je donne à voir",
+      "Ils sont trois synonymes stricts"
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction.",
+      "Faux. Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction.",
+      "Faux. Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction.",
+      "Vrai. Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction.",
+      "Faux. Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction."
+    ],
+    "explanation": "Le Soi désigne les caractéristiques reconnues comme siennes ; l’estime de soi en est une évaluation, la présentation de soi une mise en scène dans l’interaction.",
+    "flashcards": [
+      {
+        "id": "ps_c_023",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Estime de soi.",
+        "answers": [
+          "Évaluation de la valeur que l’on s’accorde, notamment en relation avec autrui. Elle dépend des aspirations, des réalisations, de l’approbation sociale et du sentiment de pouvoir agir sur les situations. Elle varie selon le domaine et le contexte ; elle n’est pas synonyme de compétence réelle."
+        ],
+        "explanation": "Elle varie selon le domaine et le contexte ; elle n’est pas synonyme de compétence réelle."
+      },
+      {
+        "id": "ps_c_028",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Présentation de soi.",
+        "answers": [
+          "Manière dont une personne se donne à voir dans l’interaction. Elle peut chercher à se distinguer, à susciter une impression favorable, à jouer un rôle acceptable ou à préserver des marges dans la relation. Elle dépend de la situation et du public présent."
+        ],
+        "explanation": "Elle dépend de la situation et du public présent."
+      },
+      {
+        "id": "ps_c_038",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité diffuse.",
+        "answers": [
+          "Configuration associant faible exploration et faible engagement. Elle traduit l’absence de choix identitaire stabilisé dans les dimensions examinées. Les contraintes matérielles doivent être prises en compte avant d’interpréter une trajectoire."
+        ],
+        "explanation": "Les contraintes matérielles doivent être prises en compte avant d’interpréter une trajectoire."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_013",
+    "number": 13,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "medium",
+    "question": "Une personne se sent moins compétente après s’être comparée à un collègue très préparé. Que peut-on conclure ?",
+    "choices": [
+      "La comparaison sociale n’existe qu’à l’enfance",
+      "L’approbation sociale n’a aucun lien avec l’image de soi",
+      "La comparaison sociale peut modifier son autoévaluation",
+      "Ses compétences ont nécessairement diminué pendant l’échange",
+      "L’estime de soi peut varier selon le contexte"
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte.",
+      "Faux. La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte.",
+      "Vrai. La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte.",
+      "Faux. La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte.",
+      "Vrai. La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte."
+    ],
+    "explanation": "La comparaison sociale peut faire varier l’évaluation de soi sans changement immédiat des capacités ; le choix de la cible compte.",
+    "flashcards": [
+      {
+        "id": "ps_c_024",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Approbation sociale.",
+        "answers": [
+          "Reconnaissance ou jugement favorable perçu de la part d’autrui. Elle contribue à l’image et à l’évaluation de soi, sans être la seule source de l’estime de soi. Les réalisations personnelles et l’opinion d’autrui n’occupent pas exactement la même place."
+        ],
+        "explanation": "Les réalisations personnelles et l’opinion d’autrui n’occupent pas exactement la même place."
+      },
+      {
+        "id": "ps_c_031",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Soi idéal et Soi reflété.",
+        "answers": [
+          "Le Soi idéal correspond à ce que l’on aimerait être ; le Soi reflété renvoie à l’image de soi perçue dans le regard d’autrui. Leur écart peut contribuer à une tension identitaire. Un échec de présentation de soi peut entraîner une compensation, comme en faire excessivement pour réparer son image."
+        ],
+        "explanation": "Un échec de présentation de soi peut entraîner une compensation, comme en faire excessivement pour réparer son image."
+      },
+      {
+        "id": "ps_c_039",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identification.",
+        "answers": [
+          "Processus par lequel autrui ou un modèle social sert de référence à la personne, qui en intériorise certains traits et les incorpore à sa conduite. Le terme peut aussi désigner l’identification d’autrui à travers des catégories. Ne pas confondre la description d’une personne par indices et une succession de stéréotypes."
+        ],
+        "explanation": "Ne pas confondre la description d’une personne par indices et une succession de stéréotypes."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_014",
+    "number": 14,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "hard",
+    "question": "Dans le modèle de Marcia, quelles associations sont exactes ?",
+    "choices": [
+      "Identité moratoire : absence de toute exploration",
+      "Identité achevée : exploration forte et engagement fort",
+      "Identité moratoire : exploration forte et engagement faible",
+      "Identité forclose : exploration faible et engagement fort",
+      "Identité diffuse : exploration forte et engagement fort"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion.",
+      "Vrai. Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion.",
+      "Vrai. Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion.",
+      "Vrai. Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion.",
+      "Faux. Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion."
+    ],
+    "explanation": "Chez Marcia : exploration et engagement forts = identité achevée ; exploration forte et engagement faible = moratoire ; exploration faible et engagement fort = forclusion ; les deux faibles = diffusion.",
+    "flashcards": [
+      {
+        "id": "ps_c_035",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité achevée.",
+        "answers": [
+          "Configuration de Marcia associant une exploration importante et un engagement fort dans des choix élaborés. Elle désigne une position dans ce modèle, et non un diagnostic ou la fin de toute évolution. Exemple pédagogique : examiner plusieurs orientations, puis s’engager dans celle qui convient."
+        ],
+        "explanation": "Exemple pédagogique : examiner plusieurs orientations, puis s’engager dans celle qui convient."
+      },
+      {
+        "id": "ps_c_033",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Exploration identitaire.",
+        "answers": [
+          "Démarche par laquelle une personne examine plusieurs possibilités, valeurs ou choix avant de s’orienter. Avec l’engagement, elle constitue un axe du modèle de Marcia. Explorer n’implique pas encore avoir choisi."
+        ],
+        "explanation": "Explorer n’implique pas encore avoir choisi."
+      },
+      {
+        "id": "ps_c_036",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité moratoire.",
+        "answers": [
+          "Configuration associant exploration importante et engagement encore faible ou suspendu. La personne examine des possibilités sans avoir stabilisé son choix. Le moratoire n’est pas une absence de réflexion."
+        ],
+        "explanation": "Le moratoire n’est pas une absence de réflexion."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_015",
+    "number": 15,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "easy",
+    "question": "Que faut-il considérer avant d’interpréter un choix professionnel à partir de Marcia ?",
+    "choices": [
+      "Le degré d’exploration et d’engagement",
+      "Les contraintes sociales et matérielles",
+      "Le seul intitulé du métier",
+      "La conviction que les quatre configurations sont des diagnostics",
+      "L’idée que toute trajectoire doit suivre le même ordre"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir.",
+      "Vrai. Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir.",
+      "Faux. Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir.",
+      "Faux. Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir.",
+      "Faux. Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir."
+    ],
+    "explanation": "Un modèle descriptif des choix identitaires ne constitue pas un diagnostic. Les contraintes sociales et matérielles limitent aussi les possibilités de choisir.",
+    "flashcards": [
+      {
+        "id": "ps_c_027",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité de choix.",
+        "answers": [
+          "Manière dont une personne se représente elle-même dans le modèle de Miller. Elle se distingue de la seule définition publique du rôle qu’on attend d’elle. Ce que je pense être ne se réduit pas à mon intitulé professionnel."
+        ],
+        "explanation": "Ce que je pense être ne se réduit pas à mon intitulé professionnel."
+      },
+      {
+        "id": "ps_c_034",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Engagement identitaire.",
+        "answers": [
+          "Investissement dans des choix, orientations ou valeurs que la personne assume. Il peut être fort avec ou sans exploration préalable dans le modèle de Marcia. Un engagement professionnel ne suffit pas à déduire comment le choix a été élaboré."
+        ],
+        "explanation": "Un engagement professionnel ne suffit pas à déduire comment le choix a été élaboré."
+      },
+      {
+        "id": "ps_c_040",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Référent identitaire.",
+        "answers": [
+          "Personne, groupe, rôle, norme, valeur ou symbole qui marque l’image de soi et sert de modèle ou de source de reconnaissance. Un groupe de référence peut servir de modèle sans être le groupe auquel on appartient actuellement."
+        ],
+        "explanation": "Un groupe de référence peut servir de modèle sans être le groupe auquel on appartient actuellement."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_016",
+    "number": 16,
+    "courseId": "psychologie_sociale",
+    "theme": "Construction de l’identité sociale",
+    "difficulty": "medium",
+    "question": "Quelle lecture du lieu de contrôle est correcte ?",
+    "choices": [
+      "Un contrôle interne prouve que la personne cause sa maladie",
+      "Une croyance en sa capacité d’agir n’est pas une maîtrise objective garantie",
+      "Un contrôle externe exclut toute possibilité d’évolution",
+      "Un contrôle interne garantit la guérison",
+      "Il porte sur une croyance relative aux déterminants des événements"
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison.",
+      "Vrai. Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison.",
+      "Faux. Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison.",
+      "Faux. Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison.",
+      "Vrai. Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison."
+    ],
+    "explanation": "Le lieu de contrôle décrit une croyance sur la maîtrise des événements, sans prouver une causalité réelle ni garantir une guérison.",
+    "flashcards": [
+      {
+        "id": "ps_c_025",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Lieu de contrôle.",
+        "answers": [
+          "Croyance relative à ce qui détermine les événements : ses propres actions dans le contrôle interne, des facteurs extérieurs dans le contrôle externe. Il concerne une perception du contrôle, pas la preuve d’une maîtrise effective. Un contrôle interne ne signifie ni responsabilité dans toute maladie ni guérison garantie."
+        ],
+        "explanation": "Un contrôle interne ne signifie ni responsabilité dans toute maladie ni guérison garantie."
+      },
+      {
+        "id": "ps_c_037",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Identité forclose.",
+        "answers": [
+          "Configuration associant engagement fort et faible exploration préalable des possibilités. Un choix peut être adopté en reprenant directement des attentes ou modèles de l’entourage. La forclusion identitaire de Marcia ne se confond pas avec un diagnostic psychiatrique."
+        ],
+        "explanation": "La forclusion identitaire de Marcia ne se confond pas avec un diagnostic psychiatrique."
+      },
+      {
+        "id": "ps_c_041",
+        "theme": "Construction de l’identité sociale",
+        "front": "Définir : Comparaison sociale.",
+        "answers": [
+          "Évaluation de soi par référence à autrui, notamment pour situer ses capacités et rechercher de la reconnaissance. Elle peut modifier l’estime de soi selon la cible et le contexte. Se sentir compétent face à une personne peu préparée ne prouve pas que ses capacités ont changé."
+        ],
+        "explanation": "Se sentir compétent face à une personne peu préparée ne prouve pas que ses capacités ont changé."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_017",
+    "number": 17,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "medium",
+    "question": "Quels éléments caractérisent un groupe restreint ?",
+    "choices": [
+      "Une interdépendance et un sentiment d’appartenance",
+      "Le seul fait de partager une étiquette professionnelle",
+      "L’absence de toute interaction entre membres",
+      "Des relations effectives et personnelles",
+      "Des buts ou intérêts communs"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes.",
+      "Faux. Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes.",
+      "Faux. Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes.",
+      "Vrai. Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes.",
+      "Vrai. Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes."
+    ],
+    "explanation": "Un groupe restreint implique des relations effectives, des buts et une interdépendance, au-delà d’une simple juxtaposition de personnes.",
+    "flashcards": [
+      {
+        "id": "ps_c_042",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Groupe restreint.",
+        "answers": [
+          "Petit ensemble de personnes en relations effectives et personnelles, partageant des buts, des interactions et un vécu commun. Il possède une organisation, une identité collective et une interdépendance qui dépassent l’addition des individus. On retient un ordre de grandeur de 3-4 à 15-20 membres ; le nombre seul ne suffit pas."
+        ],
+        "explanation": "On retient un ordre de grandeur de 3-4 à 15-20 membres ; le nombre seul ne suffit pas."
+      },
+      {
+        "id": "ps_c_043",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Groupe primaire et groupe secondaire.",
+        "answers": [
+          "le groupe primaire repose sur des relations directes et une réalité vécue, tandis que le groupe secondaire n’exige pas que tous ses membres se connaissent personnellement. Une petite équipe en interaction se distingue d’un vaste ensemble professionnel."
+        ],
+        "explanation": "Une petite équipe en interaction se distingue d’un vaste ensemble professionnel."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_018",
+    "number": 18,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "easy",
+    "question": "Une équipe élabore ses règles de fonctionnement face à une situation encore floue. De quel processus s’agit-il ?",
+    "choices": [
+      "La disparition de toute norme",
+      "Un simple changement de statut administratif",
+      "La normalisation",
+      "L’obéissance à un ordre extérieur",
+      "Une discrimination par définition"
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité.",
+      "Faux. La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité.",
+      "Vrai. La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité.",
+      "Faux. La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité.",
+      "Faux. La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité."
+    ],
+    "explanation": "La normalisation construit une référence commune face à une situation ambiguë ; elle se distingue de l’alignement sur une norme préexistante et de l’obéissance à une autorité.",
+    "flashcards": [
+      {
+        "id": "ps_c_046",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Normalisation.",
+        "answers": [
+          "Construction progressive de normes communes par influence mutuelle dans une situation initialement floue ou ambiguë. Elle réduit l’incertitude, facilite le consensus et organise le fonctionnement du groupe. Elle crée la référence commune ; le conformisme porte sur une norme déjà établie."
+        ],
+        "explanation": "Elle crée la référence commune ; le conformisme porte sur une norme déjà établie."
+      },
+      {
+        "id": "ps_c_047",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Organisation affective du groupe.",
+        "answers": [
+          "Configuration des attractions, rejets, affinités, conflits et influences entre membres. Elle contribue à déterminer des places telles que membre populaire, marginal ou exclu. Elle peut différer de l’organigramme officiel."
+        ],
+        "explanation": "Elle peut différer de l’organigramme officiel."
+      },
+      {
+        "id": "ps_c_050",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Norme sociale.",
+        "answers": [
+          "Règle explicite ou implicite définissant les conduites attendues dans une collectivité. Son respect et ses écarts peuvent entraîner reconnaissance ou sanctions formelles ou diffuses. Une norme du groupe ne se confond pas nécessairement avec une règle juridique ou une conduite juste."
+        ],
+        "explanation": "Une norme du groupe ne se confond pas nécessairement avec une règle juridique ou une conduite juste."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_019",
+    "number": 19,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "medium",
+    "question": "Quelles distinctions sont correctes ?",
+    "choices": [
+      "Une norme implicite ne peut entraîner aucune sanction",
+      "Une valeur est un idéal abstrait",
+      "Une norme prescrit une conduite concrète",
+      "Le rôle constitue la dimension dynamique d’un statut",
+      "Le statut et le rôle sont nécessairement identiques"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position.",
+      "Vrai. La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position.",
+      "Vrai. La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position.",
+      "Vrai. La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position.",
+      "Faux. La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position."
+    ],
+    "explanation": "La valeur est un idéal, la norme une règle de conduite, le statut une position et le rôle un ensemble d’attentes liées à cette position.",
+    "flashcards": [
+      {
+        "id": "ps_c_044",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Dynamique de groupe.",
+        "answers": [
+          "Ensemble des processus d’interaction qui organisent la vie d’un groupe, ses affects, ses normes, ses rôles, ses décisions et ses changements. Le comportement du collectif ne se déduit pas de la seule personnalité de chacun."
+        ],
+        "explanation": "Le comportement du collectif ne se déduit pas de la seule personnalité de chacun."
+      },
+      {
+        "id": "ps_c_048",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Histoire collective du groupe.",
+        "answers": [
+          "Vécu commun de conflits, alliances, rivalités, exclusions et événements qui continue d’influencer les relations présentes. On l’aborde sous l’expression « inconscient collectif ». S’intéresser à l’histoire d’une équipe aide à comprendre certains fonctionnements actuels."
+        ],
+        "explanation": "S’intéresser à l’histoire d’une équipe aide à comprendre certains fonctionnements actuels."
+      },
+      {
+        "id": "ps_c_049",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Valeur sociale.",
+        "answers": [
+          "Idéal abstrait auquel un groupe accorde de l’importance et qui oriente ses jugements et ses actes. Les valeurs sont liées à un contexte culturel et historique. Le respect est une valeur ; une règle concrète qui le met en pratique est une norme."
+        ],
+        "explanation": "Le respect est une valeur ; une règle concrète qui le met en pratique est une norme."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_020",
+    "number": 20,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "medium",
+    "question": "Quelles interventions soutiennent le maintien de la cohésion ?",
+    "choices": [
+      "Réduire un conflit interpersonnel",
+      "Permettre aux membres de s’exprimer",
+      "Encourager une personne découragée",
+      "Monopoliser la parole pour satisfaire son seul besoin",
+      "Bloquer toute proposition du groupe sans l’examiner"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche.",
+      "Vrai. Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche.",
+      "Vrai. Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche.",
+      "Faux. Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche.",
+      "Faux. Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche."
+    ],
+    "explanation": "Les fonctions d’entretien du groupe soutiennent la cohésion : faciliter la participation, encourager et aider à réguler les tensions. Donner des informations ou coordonner le travail relève surtout de la tâche.",
+    "flashcards": [
+      {
+        "id": "ps_c_054",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Rôle de maintien de la cohésion.",
+        "answers": [
+          "Intervention qui entretient les conditions relationnelles de travail : encourager, rassurer, faciliter l’expression, harmoniser et réduire les tensions. Il complète les rôles centrés sur la tâche."
+        ],
+        "explanation": "Il complète les rôles centrés sur la tâche."
+      },
+      {
+        "id": "ps_c_045",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Cohésion du groupe.",
+        "answers": [
+          "Force des liens et du sentiment d’appartenance qui permettent aux membres de se sentir unis et de maintenir une activité commune. Une forte cohésion ne garantit pas que les objectifs du groupe soient souhaitables."
+        ],
+        "explanation": "Une forte cohésion ne garantit pas que les objectifs du groupe soient souhaitables."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_021",
+    "number": 21,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "hard",
+    "question": "Quelles interventions sont principalement centrées sur la tâche ?",
+    "choices": [
+      "Clarifier et résumer les idées",
+      "Coordonner les efforts vers l’objectif",
+      "Rabaisser les autres pour conserver sa place",
+      "Empêcher une décision pour imposer sa seule préférence",
+      "Chercher une information utile"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe.",
+      "Vrai. Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe.",
+      "Faux. Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe.",
+      "Faux. Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe.",
+      "Vrai. Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe."
+    ],
+    "explanation": "Les fonctions de tâche font progresser le travail ; les fonctions d’entretien soutiennent les relations et la cohésion. Les deux contribuent au fonctionnement du groupe.",
+    "flashcards": [
+      {
+        "id": "ps_c_053",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Rôle centré sur la tâche.",
+        "answers": [
+          "Intervention qui fait progresser le travail du groupe : chercher ou fournir des informations, proposer, coordonner, clarifier ou résumer. Il sert la progression vers le but commun."
+        ],
+        "explanation": "Il sert la progression vers le but commun."
+      },
+      {
+        "id": "ps_c_051",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Statut social.",
+        "answers": [
+          "Position occupée dans une structure sociale, associée à des droits, devoirs et attentes. On distingue les statuts assignés, non choisis, et acquis, liés à une trajectoire et à des actions. Être professionnel diplômé relève d’un statut acquis ; le rôle est sa mise en pratique."
+        ],
+        "explanation": "Être professionnel diplômé relève d’un statut acquis ; le rôle est sa mise en pratique."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_022",
+    "number": 22,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "medium",
+    "question": "Concernant le leadership, quelles propositions sont justes ?",
+    "choices": [
+      "Le leader possède nécessairement une personnalité identique dans tous les groupes",
+      "Le leader est toujours celui qui a le diplôme le plus élevé",
+      "Seule une personne peut exercer des actes de leadership dans un groupe",
+      "Un membre sans titre officiel peut exercer un acte de leadership",
+      "Le leadership peut porter sur la tâche ou la cohésion"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation.",
+      "Faux. Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation.",
+      "Faux. Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation.",
+      "Vrai. Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation.",
+      "Vrai. Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation."
+    ],
+    "explanation": "Un acte de leadership peut être exercé sans titre et par plusieurs membres ; son expression dépend de la tâche et de la situation.",
+    "flashcards": [
+      {
+        "id": "ps_c_056",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Leadership.",
+        "answers": [
+          "Influence exercée pour organiser la tâche ou maintenir la cohésion du groupe. Des actes de leadership peuvent être accomplis par plusieurs membres et ne supposent pas une fonction hiérarchique officielle. Le leader dépend du groupe, de ses attentes, de ses valeurs et de ses objectifs."
+        ],
+        "explanation": "Le leader dépend du groupe, de ses attentes, de ses valeurs et de ses objectifs."
+      },
+      {
+        "id": "ps_c_052",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Rôle social.",
+        "answers": [
+          "Dimension dynamique du statut : ensemble des conduites attendues de celui qui l’occupe et manière singulière de les incarner. Il articule attentes collectives et appropriation personnelle. Partager un statut ne signifie pas se comporter de manière identique."
+        ],
+        "explanation": "Partager un statut ne signifie pas se comporter de manière identique."
+      },
+      {
+        "id": "ps_c_058",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Leadership démocratique.",
+        "answers": [
+          "Mode de conduite favorisant participation, discussion et autonomie des membres. Les expériences l’associent à un meilleur climat et à un meilleur moral du groupe dans les expériences présentées. Démocratique ne signifie pas absence d’organisation."
+        ],
+        "explanation": "Démocratique ne signifie pas absence d’organisation."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_023",
+    "number": 23,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "medium",
+    "question": "Quelles lectures des styles de leadership conviennent aux repères théoriques ?",
+    "choices": [
+      "Le style démocratique signifie absence de règles",
+      "Le laisser-faire est nécessairement une autonomie bien accompagnée",
+      "Le style démocratique favorise la participation",
+      "Le laisser-faire peut laisser manquer coordination et décisions",
+      "Le style autoritaire assure toujours le meilleur climat"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation.",
+      "Faux. Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation.",
+      "Vrai. Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation.",
+      "Vrai. Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation.",
+      "Faux. Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation."
+    ],
+    "explanation": "Le style démocratique organise la participation ; le laisser-faire peut manquer de régulation. Aucun style ne garantit par définition un résultat dans toute situation.",
+    "flashcards": [
+      {
+        "id": "ps_c_059",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Leadership laisser-faire.",
+        "answers": [
+          "Mode de conduite comportant peu de direction et de régulation par celui qui occupe la place de dirigeant. Le collectif peut manquer de décisions et de coordination. Il ne se confond pas avec une autonomie accompagnée."
+        ],
+        "explanation": "Il ne se confond pas avec une autonomie accompagnée."
+      },
+      {
+        "id": "ps_c_055",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Rôle centré sur les besoins individuels.",
+        "answers": [
+          "Dans la classification de Benne et Sheats retenue ici, conduite qui privilégie la satisfaction personnelle au détriment du fonctionnement collectif, par exemple bloquer, dominer ou agresser. Tout besoin personnel n’est pas nuisible ; il s’agit ici des conduites qui freinent le groupe."
+        ],
+        "explanation": "Tout besoin personnel n’est pas nuisible ; il s’agit ici des conduites qui freinent le groupe."
+      },
+      {
+        "id": "ps_c_057",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Leadership autoritaire.",
+        "answers": [
+          "Mode de conduite où le dirigeant décide et contrôle fortement l’activité. Dans les expériences historiques, il peut soutenir la production immédiate tout en favorisant dépendance, apathie ou agressivité. Ce résultat contextualisé n’est pas une règle universelle de management."
+        ],
+        "explanation": "Ce résultat contextualisé n’est pas une règle universelle de management."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_024",
+    "number": 24,
+    "courseId": "psychologie_sociale",
+    "theme": "Dynamique des groupes restreints",
+    "difficulty": "easy",
+    "question": "Que montrent les repères historiques sur l’étude des groupes ?",
+    "choices": [
+      "Les relations d’un groupe reproduisent forcément son organigramme officiel",
+      "Mayo met en lumière le poids des relations sociales au travail",
+      "Moreno développe notamment la sociométrie",
+      "Le T-group est un lieu d’exploration de la dynamique des groupes",
+      "Les conditions matérielles n’ont jamais d’effet sur le travail"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme.",
+      "Vrai. Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme.",
+      "Vrai. Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme.",
+      "Vrai. Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme.",
+      "Faux. Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme."
+    ],
+    "explanation": "Mayo éclaire le rôle des relations au travail, Moreno la sociométrie, Lewin la dynamique des groupes. Les relations spontanées ne reproduisent pas nécessairement l’organigramme.",
+    "flashcards": [
+      {
+        "id": "ps_c_060",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : Sociométrie.",
+        "answers": [
+          "Méthode associée à Moreno visant à représenter et étudier l’organisation affective spontanée des groupes : attractions, rejets et choix relationnels. Elle rend visibles des liens qui ne figurent pas nécessairement dans la hiérarchie."
+        ],
+        "explanation": "Elle rend visibles des liens qui ne figurent pas nécessairement dans la hiérarchie."
+      },
+      {
+        "id": "ps_c_061",
+        "theme": "Dynamique des groupes restreints",
+        "front": "Définir : T-group.",
+        "answers": [
+          "Groupe de formation associé aux travaux de Lewin, utilisé comme lieu d’observation, de réflexion et d’exploration de la dynamique des interactions. L’expérience de groupe devient un matériau de formation."
+        ],
+        "explanation": "L’expérience de groupe devient un matériau de formation."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_025",
+    "number": 25,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre mécanismes d’influence sont exactes ?",
+    "choices": [
+      "La normalisation construit une référence commune",
+      "Le conformisme porte sur une norme déjà soutenue par le groupe",
+      "L’obéissance répond à une autorité perçue comme légitime",
+      "Le conformisme suppose toujours un ordre direct",
+      "La normalisation et l’obéissance sont des synonymes"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité.",
+      "Vrai. La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité.",
+      "Vrai. La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité.",
+      "Faux. La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité.",
+      "Faux. La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité."
+    ],
+    "explanation": "La normalisation construit la référence commune, le conformisme suit une norme collective, l’obéissance répond à une autorité.",
+    "flashcards": [
+      {
+        "id": "ps_c_064",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Conformisme.",
+        "answers": [
+          "Modification d’un jugement ou d’un comportement pour se mettre en accord avec une norme déjà soutenue par le groupe. L’adhésion peut rester superficielle ou atteindre les convictions. Il se distingue de la normalisation et de l’obéissance à un ordre."
+        ],
+        "explanation": "Il se distingue de la normalisation et de l’obéissance à un ordre."
+      },
+      {
+        "id": "ps_c_062",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Influence sociale.",
+        "answers": [
+          "Processus par lequel les pensées, opinions ou conduites d’une personne sont modifiées dans la relation à autrui, à un groupe ou à une autorité. Elle s’exerce notamment par les normes et la communication. Elle peut soutenir la coopération ou conduire à des pratiques contestables."
+        ],
+        "explanation": "Elle peut soutenir la coopération ou conduire à des pratiques contestables."
+      },
+      {
+        "id": "ps_c_074",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Influence minoritaire.",
+        "answers": [
+          "Capacité d’une minorité active à faire évoluer les positions du collectif. On souligne son investissement, son autonomie et sa consistance comme conditions favorables. La minorité n’est pas nécessairement sans influence."
+        ],
+        "explanation": "La minorité n’est pas nécessairement sans influence."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_026",
+    "number": 26,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "medium",
+    "question": "Une personne suit la position du groupe en public pour éviter de se faire remarquer, mais reste en désaccord. Quel mécanisme domine ?",
+    "choices": [
+      "L’intériorisation complète",
+      "La disparition de son opinion",
+      "Une exploration identitaire forte par définition",
+      "Une obéissance à un ordre nécessairement formulé",
+      "La complaisance"
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu.",
+      "Faux. La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu.",
+      "Faux. La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu.",
+      "Faux. La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu.",
+      "Vrai. La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu."
+    ],
+    "explanation": "La complaisance est un accord public de surface ; elle n’implique pas une adhésion personnelle au contenu.",
+    "flashcards": [
+      {
+        "id": "ps_c_065",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Complaisance.",
+        "answers": [
+          "Conformisme de surface visant à éviter les désagréments, à passer inaperçu ou à obtenir une approbation, sans modifier nécessairement ses croyances profondes. Faire comme le groupe devant lui, tout en restant personnellement en désaccord."
+        ],
+        "explanation": "Faire comme le groupe devant lui, tout en restant personnellement en désaccord."
+      },
+      {
+        "id": "ps_c_068",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Obéissance.",
+        "answers": [
+          "Modification de son comportement en réponse à un ordre émis par une autorité perçue comme légitime. La perception de légitimité participe à l’effet d’influence. Obéir à une autorité n’est pas exactement se conformer à une majorité de pairs."
+        ],
+        "explanation": "Obéir à une autorité n’est pas exactement se conformer à une majorité de pairs."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_027",
+    "number": 27,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent identification et intériorisation dans le conformisme ?",
+    "choices": [
+      "L’identification exige l’absence de besoin d’appartenance",
+      "L’intériorisation est seulement un accord de façade",
+      "Les deux mécanismes se définissent par un ordre hiérarchique",
+      "L’identification vise notamment une relation valorisée",
+      "L’intériorisation implique une adhésion personnelle au contenu"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle.",
+      "Faux. L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle.",
+      "Faux. L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle.",
+      "Vrai. L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle.",
+      "Vrai. L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle."
+    ],
+    "explanation": "L’identification privilégie une relation valorisée ; l’intériorisation correspond à une adhésion au contenu comme conviction personnelle.",
+    "flashcards": [
+      {
+        "id": "ps_c_067",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Intériorisation.",
+        "answers": [
+          "Adoption d’un contenu comme une conviction personnelle. La personne y adhère et n’éprouve plus son accord comme une simple soumission extérieure. Elle se distingue d’un accord affiché uniquement pour éviter une sanction."
+        ],
+        "explanation": "Elle se distingue d’un accord affiché uniquement pour éviter une sanction."
+      },
+      {
+        "id": "ps_c_066",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Conformisme par identification.",
+        "answers": [
+          "Adoption de la position d’un groupe ou d’autrui afin de préserver une relation valorisée et d’être accepté. La recherche de reconnaissance soutient cette forme d’influence. L’enjeu central est l’appartenance et l’acceptabilité sociale."
+        ],
+        "explanation": "L’enjeu central est l’appartenance et l’acceptabilité sociale."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_028",
+    "number": 28,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "hard",
+    "question": "Quel enseignement méthodologique retenir d’Asch ?",
+    "choices": [
+      "Le nombre d’essais et le nombre de personnes sont interchangeables",
+      "Une majorité unanime ne peut influencer une tâche simple",
+      "Un accord erroné au moins une fois ne signifie pas accord à tous les essais",
+      "Rompre l’unanimité peut réduire la pression majoritaire",
+      "Tout accord affiché prouve une perception sensorielle réellement modifiée"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée.",
+      "Faux. L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée.",
+      "Vrai. L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée.",
+      "Vrai. L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée.",
+      "Faux. L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée."
+    ],
+    "explanation": "L’unité de mesure compte : un sujet conformiste au moins une fois n’est pas un sujet conformiste à tous les essais. Un accord public ne prouve pas une perception changée.",
+    "flashcards": [
+      {
+        "id": "ps_c_063",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Pression de conformité.",
+        "answers": [
+          "Incitation explicite ou implicite à adopter les conduites et représentations communes pour préserver l’accord et la cohésion du groupe. Elle peut s’appuyer sur l’approbation, le prestige ou la crainte du rejet. Elle n’est pas toujours formulée comme un ordre."
+        ],
+        "explanation": "Elle n’est pas toujours formulée comme un ordre."
+      },
+      {
+        "id": "ps_c_076",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Minorité orthodoxe et hétérodoxe.",
+        "answers": [
+          "La minorité orthodoxe accentue une norme existante ; la minorité hétérodoxe propose une contre-norme. Cette distinction concerne leur rapport à la règle majoritaire. Leur qualification ne garantit pas la valeur morale de leurs objectifs."
+        ],
+        "explanation": "Leur qualification ne garantit pas la valeur morale de leurs objectifs."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_029",
+    "number": 29,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "medium",
+    "question": "Quels éléments sont essentiels dans le dispositif de Milgram ?",
+    "choices": [
+      "Le dispositif ne provoque aucune tension chez les participants",
+      "Le participant croit administrer des chocs",
+      "La victime est un compère",
+      "Une autorité encourage la poursuite de la tâche",
+      "La victime reçoit réellement les chocs annoncés"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité.",
+      "Vrai. Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité.",
+      "Vrai. Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité.",
+      "Vrai. Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité.",
+      "Faux. Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité."
+    ],
+    "explanation": "Dans le dispositif de Milgram, les chocs subis par le compère sont simulés ; le participant les croit réels et reçoit des encouragements de l’autorité.",
+    "flashcards": [
+      {
+        "id": "ps_c_070",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Syntonisation avec l’autorité.",
+        "answers": [
+          "Orientation privilégiée de l’attention et de la conduite vers les consignes de l’autorité, au détriment d’autres informations de la situation, notamment les effets sur autrui. L’attention à la personne qui donne l’ordre peut éclipser l’attention à celle qui subit l’action."
+        ],
+        "explanation": "L’attention à la personne qui donne l’ordre peut éclipser l’attention à celle qui subit l’action."
+      },
+      {
+        "id": "ps_c_078",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Marginalité.",
+        "answers": [
+          "Position durable à la marge d’un groupe, sans être totalement à l’intérieur ni complètement exclu. Le membre n’incarne qu’une partie des normes collectives. Le marginal, le nouveau et l’étranger correspondent à des positions différentes."
+        ],
+        "explanation": "Le marginal, le nouveau et l’étranger correspondent à des positions différentes."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_030",
+    "number": 30,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "easy",
+    "question": "Comment comprendre l’état agentique et l’engagement dans l’action ?",
+    "choices": [
+      "Ils sont des interprétations de la poursuite de l’obéissance",
+      "L’état agentique décrit un vécu d’exécutant de l’autorité",
+      "Ils abolissent effectivement toute responsabilité de la personne",
+      "Ils signifient qu’il est toujours impossible de s’arrêter",
+      "Ils prouvent que l’obéissance ne dépend pas du contexte"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action.",
+      "Vrai. L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action.",
+      "Faux. L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action.",
+      "Faux. L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action.",
+      "Faux. L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action."
+    ],
+    "explanation": "L’état agentique et l’engagement sont des modèles explicatifs. Ils ne suppriment ni la responsabilité réelle ni toute possibilité d’interrompre l’action.",
+    "flashcards": [
+      {
+        "id": "ps_c_069",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : État agentique.",
+        "answers": [
+          "Modèle explicatif de l’obéissance dans lequel une personne se considère surtout comme exécutante de l’autorité et met à distance son autonomie critique et sa responsabilité personnelle. C’est une interprétation psychologique, pas une disparition effective de toute responsabilité."
+        ],
+        "explanation": "C’est une interprétation psychologique, pas une disparition effective de toute responsabilité."
+      },
+      {
+        "id": "ps_c_071",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Engagement dans l’action.",
+        "answers": [
+          "Processus par lequel les actes déjà accomplis rendent plus difficile l’abandon de la conduite et favorisent sa justification. Il constitue une explication discutée de la poursuite de l’obéissance. Avoir commencé ne rend pas la poursuite inévitable."
+        ],
+        "explanation": "Avoir commencé ne rend pas la poursuite inévitable."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_031",
+    "number": 31,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "medium",
+    "question": "Une tentative de persuasion est rejetée parce qu’elle paraît menacer la liberté. Quelle notion convient ?",
+    "choices": [
+      "La normalisation",
+      "La sociométrie",
+      "Le bruit physique",
+      "Le statut acquis",
+      "La réactance"
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion.",
+      "Faux. La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion.",
+      "Faux. La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion.",
+      "Faux. La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion.",
+      "Vrai. La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion."
+    ],
+    "explanation": "La réactance vise à restaurer une liberté perçue comme menacée ; elle peut se manifester par un rejet de la persuasion.",
+    "flashcards": [
+      {
+        "id": "ps_c_072",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Réactance.",
+        "answers": [
+          "Motivation à résister à une influence perçue comme menaçant sa liberté ou son indépendance, afin de restaurer cette liberté. Elle peut apparaître avant même l’examen des arguments. L’annonce d’une tentative de persuasion peut susciter un rejet."
+        ],
+        "explanation": "L’annonce d’une tentative de persuasion peut susciter un rejet."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_032",
+    "number": 32,
+    "courseId": "psychologie_sociale",
+    "theme": "Influence sociale et résistance",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur la non-conformité sont exactes ?",
+    "choices": [
+      "Un nouveau peut devenir bouc émissaire de conflits préexistants",
+      "Toute déviance constitue une maladie",
+      "La marginalité signifie nécessairement une exclusion totale",
+      "Une déviance peut contester une norme nuisible",
+      "Une minorité investie, autonome et consistante peut influencer le groupe"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent.",
+      "Faux. La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent.",
+      "Faux. La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent.",
+      "Vrai. La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent.",
+      "Vrai. La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent."
+    ],
+    "explanation": "La déviance est relative à une norme. Une minorité cohérente peut exercer une influence ; un bouc émissaire peut recevoir des conflits qui le précèdent.",
+    "flashcards": [
+      {
+        "id": "ps_c_077",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Bouc émissaire.",
+        "answers": [
+          "Personne sur laquelle un groupe déplace ou concentre ses conflits et difficultés internes. Un nouveau membre peut occuper cette place et être rejeté pour maintenir un équilibre collectif. Les difficultés projetées sur lui ne prouvent pas qu’il en est la cause."
+        ],
+        "explanation": "Les difficultés projetées sur lui ne prouvent pas qu’il en est la cause."
+      },
+      {
+        "id": "ps_c_073",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Déviance.",
+        "answers": [
+          "Écart aux normes d’un groupe ou d’un système de règles donné. La qualification dépend donc de la référence collective et ne désigne pas à elle seule une pathologie ou une faute morale. Contester une norme injuste peut rendre déviant aux yeux du groupe."
+        ],
+        "explanation": "Contester une norme injuste peut rendre déviant aux yeux du groupe."
+      },
+      {
+        "id": "ps_c_075",
+        "theme": "Influence sociale et résistance",
+        "front": "Définir : Consistance d’une minorité.",
+        "answers": [
+          "Cohérence et continuité de la position soutenue par une minorité dans le temps et entre ses membres. Elle contribue à rendre son message identifiable et crédible. Consistance ne signifie pas rigidité aveugle dans toutes les situations."
+        ],
+        "explanation": "Consistance ne signifie pas rigidité aveugle dans toutes les situations."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_033",
+    "number": 33,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "easy",
+    "question": "Quelles questions appartiennent au modèle de Lasswell ?",
+    "choices": [
+      "Quel diagnostic psychiatrique a chaque interlocuteur ?",
+      "Quel pourcentage fixe de sens appartient à chaque canal ?",
+      "Qui dit quoi ?",
+      "Par quel moyen et à qui ?",
+      "Avec quels effets ?"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle.",
+      "Faux. Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle.",
+      "Vrai. Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle.",
+      "Vrai. Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle.",
+      "Vrai. Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle."
+    ],
+    "explanation": "Lasswell demande qui dit quoi, par quel canal, à qui et avec quels effets ; aucun pourcentage universel de sens n’en découle.",
+    "flashcards": [
+      {
+        "id": "ps_c_080",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Modèle de Lasswell.",
+        "answers": [
+          "Lecture de la communication à travers cinq questions : qui dit quoi, par quel moyen, à qui et avec quels effets ? Elle met en relation source, message, canal, destinataire et impact. Il aide à ne pas réduire la communication aux seuls mots prononcés."
+        ],
+        "explanation": "Il aide à ne pas réduire la communication aux seuls mots prononcés."
+      },
+      {
+        "id": "ps_c_082",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Modèle de Shannon.",
+        "answers": [
+          "Modèle de transmission qui distingue notamment émetteur, message, canal, récepteur et opérations de codage/décodage. Les perturbations ou bruits peuvent altérer la transmission et son interprétation. Weaver développe la question du code partagé et du bruit."
+        ],
+        "explanation": "Weaver développe la question du code partagé et du bruit."
+      },
+      {
+        "id": "ps_c_090",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Canal.",
+        "answers": [
+          "Moyen par lequel circule un message : voix dans l’air, téléphone, écrit, affichage ou autre support. Son choix influence les possibilités et les limites de l’échange. Un contenu important ne produit pas nécessairement le même effet par écrit ou en entretien."
+        ],
+        "explanation": "Un contenu important ne produit pas nécessairement le même effet par écrit ou en entretien."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_034",
+    "number": 34,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "medium",
+    "question": "Une alarme empêche d’entendre un message ; un terme technique reste incompris malgré une bonne audition. Quelle distinction est correcte ?",
+    "choices": [
+      "Une bonne audition garantit toujours le décodage",
+      "La première perturbation est physique, la seconde sémantique",
+      "Les deux perturbations sont uniquement physiques",
+      "Le terme incompris prouve l’absence de désir de communiquer",
+      "Un bruit sémantique est nécessairement une panne d’appareil"
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre.",
+      "Vrai. Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre.",
+      "Faux. Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre.",
+      "Faux. Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre.",
+      "Faux. Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre."
+    ],
+    "explanation": "Le bruit physique perturbe matériellement le signal ; le bruit sémantique perturbe le sens. Entendre ne garantit pas comprendre.",
+    "flashcards": [
+      {
+        "id": "ps_c_084",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Bruit sémantique.",
+        "answers": [
+          "Perturbation du sens liée aux différences de codes, de références ou d’interprétation entre interlocuteurs. Un même mot peut renvoyer à des significations différentes. Un mot technique mal compris peut empêcher la compréhension malgré une bonne audition."
+        ],
+        "explanation": "Un mot technique mal compris peut empêcher la compréhension malgré une bonne audition."
+      },
+      {
+        "id": "ps_c_081",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Codage et décodage.",
+        "answers": [
+          "Le codage transforme une information en signes selon un code ; le décodage permet au destinataire d’interpréter ces signes. Un code commun ou partiellement partagé favorise la compréhension. Entendre des mots n’assure pas qu’on en comprenne le sens."
+        ],
+        "explanation": "Entendre des mots n’assure pas qu’on en comprenne le sens."
+      },
+      {
+        "id": "ps_c_083",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Bruit physique.",
+        "answers": [
+          "Perturbation matérielle gênant la transmission ou la réception du message, comme un bruit ambiant, une mauvaise liaison téléphonique ou une interruption. Il se distingue d’une ambiguïté de vocabulaire."
+        ],
+        "explanation": "Il se distingue d’une ambiguïté de vocabulaire."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_035",
+    "number": 35,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "hard",
+    "question": "Quel est l’apport principal du feedback dans le modèle de Wiener ?",
+    "choices": [
+      "Permettre un retour et des ajustements de la communication",
+      "Garantir automatiquement l’accord du destinataire",
+      "Transformer la représentation linéaire en boucle dynamique",
+      "Supprimer le rôle du récepteur",
+      "Rendre inutile la vérification de compréhension"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord.",
+      "Faux. Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord.",
+      "Vrai. Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord.",
+      "Faux. Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord.",
+      "Faux. Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord."
+    ],
+    "explanation": "Le feedback ajoute une rétroaction : la réponse du destinataire permet des ajustements, sans garantir son accord.",
+    "flashcards": [
+      {
+        "id": "ps_c_087",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Modèle de Wiener.",
+        "answers": [
+          "Approche dynamique de la communication insistant sur le feedback et les ajustements permanents entre interlocuteurs. Le récepteur participe au processus par ses retours. La boucle de rétroaction est son apport central."
+        ],
+        "explanation": "La boucle de rétroaction est son apport central."
+      },
+      {
+        "id": "ps_c_086",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Feedback ou rétroaction.",
+        "answers": [
+          "Information en retour du récepteur vers l’émetteur permettant d’ajuster la communication. Elle peut être verbale ou non verbale et transforme un trajet linéaire en boucle dynamique. Faire reformuler permet de vérifier ce qui a été compris, plutôt que de supposer la compréhension."
+        ],
+        "explanation": "Faire reformuler permet de vérifier ce qui a été compris, plutôt que de supposer la compréhension."
+      },
+      {
+        "id": "ps_c_091",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Contexte de communication.",
+        "answers": [
+          "Conditions matérielles, relationnelles, culturelles, statutaires et hiérarchiques entourant un échange. Elles peuvent faciliter ou gêner l’expression et la réception. La confidentialité du lieu et la présence de tiers modifient l’entretien."
+        ],
+        "explanation": "La confidentialité du lieu et la présence de tiers modifient l’entretien."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_036",
+    "number": 36,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "easy",
+    "question": "Quelles propositions sur le répertoire sont exactes ?",
+    "choices": [
+      "Un recouvrement partiel des répertoires facilite la compréhension",
+      "Il se réduit au volume sonore de la voix",
+      "Deux personnes parlant la même langue ont forcément le même répertoire",
+      "Il concerne uniquement l’émetteur",
+      "Il comprend des références linguistiques et culturelles"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques.",
+      "Faux. Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques.",
+      "Faux. Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques.",
+      "Faux. Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques.",
+      "Vrai. Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques."
+    ],
+    "explanation": "Le répertoire comprend les codes, références et expériences des interlocuteurs ; une langue commune ne rend pas ces répertoires identiques.",
+    "flashcards": [
+      {
+        "id": "ps_c_085",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Répertoire.",
+        "answers": [
+          "Ensemble des références linguistiques, culturelles, idéologiques et sémantiques à partir desquelles une personne construit et interprète les messages. Les répertoires n’ont pas besoin d’être identiques, mais de se recouvrir suffisamment."
+        ],
+        "explanation": "Les répertoires n’ont pas besoin d’être identiques, mais de se recouvrir suffisamment."
+      },
+      {
+        "id": "ps_c_092",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Prosodie.",
+        "answers": [
+          "Caractéristiques de la voix telles que rythme, intonation, intensité, accentuation et pauses. Elles accompagnent les mots et contribuent au sens et à l’effet du message. Un même énoncé change de portée selon le ton employé."
+        ],
+        "explanation": "Un même énoncé change de portée selon le ton employé."
+      },
+      {
+        "id": "ps_c_100",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Polysémie.",
+        "answers": [
+          "Possibilité pour un même mot ou énoncé d’avoir plusieurs sens. Elle peut créer un décalage entre le sens visé et le sens reçu. Une ambiguïté doit être clarifiée lorsque la compréhension compte."
+        ],
+        "explanation": "Une ambiguïté doit être clarifiée lorsque la compréhension compte."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_037",
+    "number": 37,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "medium",
+    "question": "Quelles associations sont exactes ?",
+    "choices": [
+      "Instrumentale : poursuite intentionnelle d’un objectif",
+      "Incidente : stratégie toujours soigneusement préparée",
+      "Instrumentale : absence de tout effet recherché",
+      "Incidente : information qui échappe sans intention de la transmettre",
+      "Consommatoire : expression d’un état émotionnel"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel.",
+      "Faux. L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel.",
+      "Faux. L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel.",
+      "Vrai. L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel.",
+      "Vrai. L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel."
+    ],
+    "explanation": "L’incidente est non intentionnelle, la consommatoire exprime un état, l’instrumentale poursuit un objectif intentionnel.",
+    "flashcards": [
+      {
+        "id": "ps_c_093",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Communication incidente.",
+        "answers": [
+          "Information transmise sans intention consciente de la communiquer, par exemple une parole qui échappe à l’émetteur. Elle se distingue des communications consommatoire et instrumentale. Elle se distingue de la communication instrumentale, dont l’objectif est intentionnel."
+        ],
+        "explanation": "Elle se distingue de la communication instrumentale, dont l’objectif est intentionnel."
+      },
+      {
+        "id": "ps_c_094",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Communication consommatoire.",
+        "answers": [
+          "Communication qui exprime un état émotionnel. Sa fonction principale est l’expression de cet état plutôt que la poursuite d’un objectif informatif délibéré. Exprimer sa joie ou sa détresse relève de ce registre."
+        ],
+        "explanation": "Exprimer sa joie ou sa détresse relève de ce registre."
+      },
+      {
+        "id": "ps_c_095",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Communication instrumentale.",
+        "answers": [
+          "Communication qui poursuit intentionnellement un objectif : informer, expliquer, convaincre ou produire un effet sur autrui. Une explication préparée pour transmettre une information en est un exemple."
+        ],
+        "explanation": "Une explication préparée pour transmettre une information en est un exemple."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_038",
+    "number": 38,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "medium",
+    "question": "Quelle conduite permet le mieux de vérifier la réception d’une information ?",
+    "choices": [
+      "Déduire sa compréhension de son seul niveau scolaire",
+      "Considérer toute question comme un refus du message",
+      "Inviter la personne à reformuler ce qu’elle a compris",
+      "Supposer qu’elle a compris parce qu’elle a entendu les mots",
+      "Répéter plus fort sans rechercher la difficulté"
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension.",
+      "Faux. Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension.",
+      "Vrai. Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension.",
+      "Faux. Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension.",
+      "Faux. Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension."
+    ],
+    "explanation": "Faire reformuler renseigne sur le sens reçu ; le volume sonore, le silence ou le niveau scolaire ne prouvent pas à eux seuls la compréhension.",
+    "flashcards": [
+      {
+        "id": "ps_c_079",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Communication.",
+        "answers": [
+          "Processus d’échange et de production de sens entre des interlocuteurs, par un message, un canal et des codes dans un contexte donné, avec des effets et des retours possibles. Dire qu’elle est un vecteur d’influence renseigne sa fonction mais ne constitue pas une définition suffisante."
+        ],
+        "explanation": "Dire qu’elle est un vecteur d’influence renseigne sa fonction mais ne constitue pas une définition suffisante."
+      },
+      {
+        "id": "ps_c_097",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Attractivité de la source.",
+        "answers": [
+          "Caractère attirant, sympathique ou admirable attribué à l’émetteur, favorisant l’identification du récepteur. Un changement fondé surtout sur l’affect peut être moins stable si le lien se modifie. L’attractivité ne se réduit pas à la beauté physique."
+        ],
+        "explanation": "L’attractivité ne se réduit pas à la beauté physique."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_039",
+    "number": 39,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "easy",
+    "question": "Quels facteurs peuvent modifier l’effet d’un message ?",
+    "choices": [
+      "Uniquement l’intention de l’émetteur",
+      "La crédibilité attribuée à sa source",
+      "L’attention et l’état émotionnel du récepteur",
+      "Le canal et le contexte de l’échange",
+      "Uniquement la justesse grammaticale"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule.",
+      "Vrai. Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule.",
+      "Vrai. Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule.",
+      "Vrai. Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule.",
+      "Faux. Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule."
+    ],
+    "explanation": "Le sens et l’effet dépendent de la source, du destinataire, du message, du canal et du contexte, au-delà de la grammaire ou de l’intention seule.",
+    "flashcards": [
+      {
+        "id": "ps_c_088",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Émetteur.",
+        "answers": [
+          "Personne ou source qui produit et adresse un message. Ses objectifs, attitudes, références, choix de mots, crédibilité et attractivité influencent la communication. Le message dépend aussi de l’idée que l’émetteur se fait du récepteur."
+        ],
+        "explanation": "Le message dépend aussi de l’idée que l’émetteur se fait du récepteur."
+      },
+      {
+        "id": "ps_c_089",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Récepteur.",
+        "answers": [
+          "Destinataire qui reçoit et interprète le message selon son attention, ses capacités, ses attentes, ses affects et son répertoire. Il n’est pas un contenant passif de l’information. Ce qui est entendu, compris, retenu et cru peut différer."
+        ],
+        "explanation": "Ce qui est entendu, compris, retenu et cru peut différer."
+      },
+      {
+        "id": "ps_c_096",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Crédibilité de la source.",
+        "answers": [
+          "Degré de confiance et de compétence attribué à une source par le récepteur. Elle peut augmenter l’efficacité persuasive du message mais ne prouve pas à elle seule sa vérité. Un statut prestigieux doit être distingué d’une preuve."
+        ],
+        "explanation": "Un statut prestigieux doit être distingué d’une preuve."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_040",
+    "number": 40,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication : modèles et composantes",
+    "difficulty": "medium",
+    "question": "Que peut-on retenir de l’argumentation persuasive ?",
+    "choices": [
+      "Un discours bilatéral présente aussi des objections",
+      "L’effet dépend des positions et connaissances du destinataire",
+      "Les résultats expérimentaux autorisent à cacher une information nécessaire au patient",
+      "L’attention garantit à elle seule un changement de conduite",
+      "Toute tentative de persuasion écarte la possibilité de réactance"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire.",
+      "Vrai. L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire.",
+      "Faux. L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire.",
+      "Faux. L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire.",
+      "Faux. L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire."
+    ],
+    "explanation": "L’argumentation bilatérale présente aussi des objections. Ses effets sont contextuels ; persuader ne justifie pas de cacher une information nécessaire.",
+    "flashcards": [
+      {
+        "id": "ps_c_098",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Communication persuasive.",
+        "answers": [
+          "Communication visant à faire évoluer une attitude ou un comportement. Son effet dépend notamment de l’attention, de la compréhension, de l’acceptation, de la mémorisation et du passage à l’action. L’efficacité d’une argumentation ne dispense pas d’informer avec loyauté et de respecter la liberté d’autrui."
+        ],
+        "explanation": "L’efficacité d’une argumentation ne dispense pas d’informer avec loyauté et de respecter la liberté d’autrui."
+      },
+      {
+        "id": "ps_c_099",
+        "theme": "Communication : modèles et composantes",
+        "front": "Définir : Argumentation unilatérale et bilatérale.",
+        "answers": [
+          "Un discours unilatéral présente un seul versant d’une position ; un discours bilatéral expose aussi les objections ou arguments opposés. L’effet dépend du destinataire, de ses positions et de l’ordre de présentation. Les résultats expérimentaux ne justifient pas de cacher au patient les informations nécessaires à ses choix."
+        ],
+        "explanation": "Les résultats expérimentaux ne justifient pas de cacher au patient les informations nécessaires à ses choix."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_041",
+    "number": 41,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "medium",
+    "question": "Quelles dimensions relèvent du non-verbal dans les repères théoriques ?",
+    "choices": [
+      "Le visage et la mimique",
+      "Le ton de la voix",
+      "Uniquement les mots du texte",
+      "Uniquement le canal numérique",
+      "La distance et la posture"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits.",
+      "Vrai. Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits.",
+      "Faux. Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits.",
+      "Faux. Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits.",
+      "Vrai. Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits."
+    ],
+    "explanation": "Distances, gestes, postures, mimiques et prosodie participent au non-verbal ; celui-ci dépasse les mots écrits.",
+    "flashcards": [
+      {
+        "id": "ps_c_103",
+        "theme": "Communication non verbale",
+        "front": "Définir : Posture.",
+        "answers": [
+          "Organisation du corps dans l’interaction, incluant tonus, orientation, position et gestes. Elle prend sens avec d’autres indices et le contexte. Une posture isolée ne permet pas de déduire avec certitude une intention."
+        ],
+        "explanation": "Une posture isolée ne permet pas de déduire avec certitude une intention."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_042",
+    "number": 42,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "hard",
+    "question": "Que désigne la proxémie ?",
+    "choices": [
+      "Le seul nombre de membres d’un groupe",
+      "Le code grammatical d’une langue",
+      "Le degré de centralisation d’un réseau",
+      "L’usage de l’espace et des distances dans les interactions",
+      "La capacité à lire avec certitude les pensées d’autrui"
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles.",
+      "Faux. La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles.",
+      "Faux. La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles.",
+      "Vrai. La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles.",
+      "Faux. La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles."
+    ],
+    "explanation": "La proxémie concerne l’espace et les distances, avec leurs significations relationnelles et culturelles.",
+    "flashcards": [
+      {
+        "id": "ps_c_102",
+        "theme": "Communication non verbale",
+        "front": "Définir : Proxémie.",
+        "answers": [
+          "Étude de l’usage des distances et de l’espace dans les interactions. La distance ressentie comme appropriée varie avec la relation, la situation et les repères culturels. La proximité nécessaire à certains soins ne supprime pas l’intimité de la personne."
+        ],
+        "explanation": "La proximité nécessaire à certains soins ne supprime pas l’intimité de la personne."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_043",
+    "number": 43,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "medium",
+    "question": "Un soignant dit être disponible tout en tournant constamment le regard vers la sortie. Quelles lectures sont prudentes ?",
+    "choices": [
+      "Le verbal annule toujours l’effet de la posture",
+      "La personne soignée donnera forcément une interprétation identique à celle de tout autre patient",
+      "Le verbal et le non-verbal peuvent paraître discordants",
+      "Cette discordance peut gêner l’interprétation du message",
+      "Le regard prouve à lui seul une intention de tromper"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle.",
+      "Faux. Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle.",
+      "Vrai. Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle.",
+      "Vrai. Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle.",
+      "Faux. Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle."
+    ],
+    "explanation": "Une discordance mots-regard peut brouiller le sens ; un indice isolé ne prouve pas une intention et n’impose pas une interprétation universelle.",
+    "flashcards": [
+      {
+        "id": "ps_c_105",
+        "theme": "Communication non verbale",
+        "front": "Définir : Fonction expressive du non-verbal.",
+        "answers": [
+          "Fonction par laquelle le corps et la voix donnent des indications sur l’état émotionnel, l’opinion sur autrui ou l’estime de soi. Une tension visible peut inviter à poser une question, sans constituer une preuve de ce que ressent la personne."
+        ],
+        "explanation": "Une tension visible peut inviter à poser une question, sans constituer une preuve de ce que ressent la personne."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_044",
+    "number": 44,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "medium",
+    "question": "Quelles fonctions sont attribuées au non-verbal ?",
+    "choices": [
+      "Diagnostic automatique d’une personnalité",
+      "Expressive",
+      "Étaiement du langage",
+      "Quasi symbolique",
+      "Mesure certaine de la vérité"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité.",
+      "Vrai. Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité.",
+      "Vrai. Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité.",
+      "Vrai. Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité.",
+      "Faux. Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité."
+    ],
+    "explanation": "Le non-verbal exprime des états, soutient le langage et comprend des signes quasi symboliques ; il ne diagnostique pas automatiquement une personnalité.",
+    "flashcards": [
+      {
+        "id": "ps_c_107",
+        "theme": "Communication non verbale",
+        "front": "Définir : Fonction quasi symbolique.",
+        "answers": [
+          "Fonction de gestes qui tiennent lieu de signes conventionnels, proches de mots, dans un contexte culturel donné. Un hochement ou un signe d’approbation ne possède pas forcément la même valeur partout."
+        ],
+        "explanation": "Un hochement ou un signe d’approbation ne possède pas forcément la même valeur partout."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_045",
+    "number": 45,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "easy",
+    "question": "Quelle affirmation définit la congruence ?",
+    "choices": [
+      "Une cohérence suffisante entre les dimensions du message",
+      "L’obligation de dévoiler toutes ses pensées",
+      "La suppression de toute émotion",
+      "L’identité de tous les codes culturels",
+      "Une posture unique imposée à tous les soignants"
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Vrai. La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions.",
+      "Faux. La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions.",
+      "Faux. La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions.",
+      "Faux. La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions.",
+      "Faux. La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions."
+    ],
+    "explanation": "La congruence est la cohérence des dimensions du message ; elle n’impose ni dévoilement intégral ni absence d’émotions.",
+    "flashcards": [
+      {
+        "id": "ps_c_108",
+        "theme": "Communication non verbale",
+        "front": "Définir : Congruence.",
+        "answers": [
+          "Cohérence entre les différentes dimensions d’un message, notamment entre mots, ton et attitude corporelle. Elle facilite la lisibilité de l’échange. Une discordance répétée peut susciter malaise et difficulté de compréhension."
+        ],
+        "explanation": "Une discordance répétée peut susciter malaise et difficulté de compréhension."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_046",
+    "number": 46,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "medium",
+    "question": "Concernant le regard dans l’interaction, quelles propositions sont justes ?",
+    "choices": [
+      "Ses codes peuvent varier selon les personnes et les cultures",
+      "Un regard détourné prouve toujours une soumission",
+      "Un regard fixe garantit le confort de l’interlocuteur",
+      "La même conduite est nécessairement adaptée à toute situation",
+      "Il doit être interprété avec d’autres indices et le contexte"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort.",
+      "Faux. Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort.",
+      "Faux. Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort.",
+      "Faux. Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort.",
+      "Vrai. Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort."
+    ],
+    "explanation": "Le regard s’interprète avec les autres indices et le contexte ; il ne permet pas seul de conclure à la soumission, au mensonge ou au confort.",
+    "flashcards": [
+      {
+        "id": "ps_c_101",
+        "theme": "Communication non verbale",
+        "front": "Définir : Communication non verbale.",
+        "answers": [
+          "Ensemble des dimensions de l’échange qui ne reposent pas sur le contenu lexical : distance, posture, gestes, présentation corporelle, expressions faciales, regard et caractéristiques de la voix. Elle peut être peu consciente, mais certains gestes ou ajustements sont volontaires ; aucun pourcentage universel ne la résume."
+        ],
+        "explanation": "Elle peut être peu consciente, mais certains gestes ou ajustements sont volontaires ; aucun pourcentage universel ne la résume."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_047",
+    "number": 47,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "medium",
+    "question": "Quels ajustements favorisent la communication dans les soins ?",
+    "choices": [
+      "Ajuster le ton au contexte et à la personne",
+      "Déduire toute préférence d’une catégorie culturelle",
+      "Imposer systématiquement un contact physique",
+      "Se placer à une hauteur qui facilite l’échange",
+      "Tenir compte de la sphère intime"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences.",
+      "Faux. L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences.",
+      "Faux. L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences.",
+      "Vrai. L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences.",
+      "Vrai. L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences."
+    ],
+    "explanation": "L’ajustement tient compte de la personne et de la situation ; une catégorie culturelle ne permet pas de déduire toutes ses préférences.",
+    "flashcards": [
+      {
+        "id": "ps_c_104",
+        "theme": "Communication non verbale",
+        "front": "Définir : Mimique.",
+        "answers": [
+          "Expression du visage participant à la communication des émotions et à la régulation de l’échange. Avec le regard et le sourire, elle fournit un retour à l’interlocuteur. Interpréter une mimique demande de tenir compte de l’ensemble de la situation."
+        ],
+        "explanation": "Interpréter une mimique demande de tenir compte de l’ensemble de la situation."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_048",
+    "number": 48,
+    "courseId": "psychologie_sociale",
+    "theme": "Communication non verbale",
+    "difficulty": "easy",
+    "question": "Quelle lecture des pourcentages attribués au non-verbal est la plus rigoureuse ?",
+    "choices": [
+      "Ils rendent le contexte inutile",
+      "Ils justifient de remplacer l’écoute des mots par l’observation seule",
+      "Ils ne doivent pas être présentés comme une loi valable dans toute conversation",
+      "Ils prouvent qu’un message verbal ne compte jamais",
+      "Ils permettent de mesurer une émotion individuelle à distance"
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires.",
+      "Faux. Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires.",
+      "Vrai. Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires.",
+      "Faux. Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires.",
+      "Faux. Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires."
+    ],
+    "explanation": "Un pourcentage global de non-verbal ne constitue pas une loi pour toute conversation ; les mots et le contexte restent nécessaires.",
+    "flashcards": [
+      {
+        "id": "ps_c_106",
+        "theme": "Communication non verbale",
+        "front": "Définir : Fonction d’étayage du langage.",
+        "answers": [
+          "Fonction du non-verbal qui accompagne, renforce, précise ou contredit un message verbal. Le sens reçu résulte de leur combinaison. Dire « je suis disponible » tout en regardant la porte peut produire une discordance."
+        ],
+        "explanation": "Dire « je suis disponible » tout en regardant la porte peut produire une discordance."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_049",
+    "number": 49,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "hard",
+    "question": "Quels éléments caractérisent un système dans les repères théoriques ?",
+    "choices": [
+      "L’impossibilité de tout changement",
+      "Des éléments en interaction",
+      "Une structure et des fonctions",
+      "Des échanges avec un environnement",
+      "L’indépendance absolue de tous ses membres"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition.",
+      "Vrai. Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition.",
+      "Vrai. Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition.",
+      "Vrai. Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition.",
+      "Faux. Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition."
+    ],
+    "explanation": "Les éléments d’un système interagissent, remplissent des fonctions et échangent avec leur environnement ; leur indépendance absolue contredirait cette définition.",
+    "flashcards": [
+      {
+        "id": "ps_c_110",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Homéostasie d’un système.",
+        "answers": [
+          "Processus par lesquels un système tend à maintenir son équilibre et ses modes habituels de fonctionnement. Il coexiste avec des possibilités de changement et d’évolution. Le maintien d’un équilibre ne signifie pas que cet équilibre est satisfaisant pour tous."
+        ],
+        "explanation": "Le maintien d’un équilibre ne signifie pas que cet équilibre est satisfaisant pour tous."
+      },
+      {
+        "id": "ps_c_109",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Approche systémique.",
+        "answers": [
+          "Approche qui étudie un ensemble d’éléments en interaction, ses règles, ses fonctions et ses relations avec l’environnement. Une modification d’un élément peut réorganiser les échanges du système. Elle permet d’examiner les relations sans attribuer toute difficulté à un seul membre."
+        ],
+        "explanation": "Elle permet d’examiner les relations sans attribuer toute difficulté à un seul membre."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_050",
+    "number": 50,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "medium",
+    "question": "Que permet la notion de patient désigné ?",
+    "choices": [
+      "Élargir l’attention aux interactions autour de la personne",
+      "Prouver que toute maladie est causée par la famille",
+      "Nier toute réalité aux difficultés individuelles",
+      "Conclure qu’un traitement individuel est toujours inutile",
+      "Diagnostiquer un trouble à partir d’une seule contradiction familiale"
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Vrai. Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle.",
+      "Faux. Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle.",
+      "Faux. Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle.",
+      "Faux. Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle.",
+      "Faux. Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle."
+    ],
+    "explanation": "Le patient désigné est une notion relationnelle ; elle ne démontre pas une origine familiale de toute maladie et n’abolit pas la réalité individuelle.",
+    "flashcards": [
+      {
+        "id": "ps_c_111",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Patient désigné.",
+        "answers": [
+          "Dans certaines approches systémiques historiques, membre identifié comme porteur du problème et autour duquel se focalise la demande. Cette notion invite à élargir l’analyse des interactions. Elle ne prouve pas que la famille cause une maladie ni qu’un trouble individuel serait fictif."
+        ],
+        "explanation": "Elle ne prouve pas que la famille cause une maladie ni qu’un trouble individuel serait fictif."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_051",
+    "number": 51,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "easy",
+    "question": "Quelles propositions sur symétrie et complémentarité sont exactes ?",
+    "choices": [
+      "Une relation complémentaire articule des positions différentes",
+      "La symétrie signifie toujours violence",
+      "La complémentarité signifie toujours bienveillance",
+      "Ces formes déterminent à elles seules la valeur morale de la relation",
+      "Une relation symétrique peut être réciproque ou compétitive"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle.",
+      "Faux. Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle.",
+      "Faux. Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle.",
+      "Faux. Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle.",
+      "Vrai. Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle."
+    ],
+    "explanation": "Symétrie et complémentarité décrivent des positions relationnelles, pas leur valeur morale. Chacune peut prendre une forme ajustée ou conflictuelle.",
+    "flashcards": [
+      {
+        "id": "ps_c_112",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Communication symétrique.",
+        "answers": [
+          "Interaction fondée sur une relation de similitude ou d’égalité des positions. Elle peut soutenir la réciprocité ou donner lieu à une escalade compétitive. Symétrique ne veut pas dire nécessairement agressive."
+        ],
+        "explanation": "Symétrique ne veut pas dire nécessairement agressive."
+      },
+      {
+        "id": "ps_c_113",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Communication complémentaire.",
+        "answers": [
+          "Interaction organisée autour de positions différentes qui s’articulent, chacune répondant à l’autre. Elle peut être ajustée ou devenir rigide et problématique. Complémentaire ne signifie pas automatiquement bénéfique ni consensuelle."
+        ],
+        "explanation": "Complémentaire ne signifie pas automatiquement bénéfique ni consensuelle."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_052",
+    "number": 52,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "medium",
+    "question": "Que signifie « digitale » dans le vocabulaire de Palo Alto ?",
+    "choices": [
+      "Une absence de langage verbal",
+      "La seule expression faciale",
+      "Une transmission sans aucun code",
+      "Une communication fondée sur des signes conventionnels codifiés",
+      "Une communication obligatoirement faite par ordinateur"
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique.",
+      "Faux. Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique.",
+      "Faux. Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique.",
+      "Vrai. Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique.",
+      "Faux. Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique."
+    ],
+    "explanation": "Dans ce modèle, le digital désigne des signes codifiés et conventionnels ; le terme ne signifie pas obligatoirement informatique.",
+    "flashcards": [
+      {
+        "id": "ps_c_114",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Communication digitale.",
+        "answers": [
+          "Dans le vocabulaire de Palo Alto, dimension de la communication fondée sur des signes conventionnels codifiés, notamment le langage verbal. « Digitale » ne signifie pas ici communication par ordinateur."
+        ],
+        "explanation": "« Digitale » ne signifie pas ici communication par ordinateur."
+      },
+      {
+        "id": "ps_c_115",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Communication analogique.",
+        "answers": [
+          "Dimension de la communication liée aux ressemblances, aux attitudes, au contexte relationnel et au non-verbal. Elle module le sens et se prête à l’interprétation. Elle ne doit pas être assimilée à une lecture certaine de l’intériorité d’autrui."
+        ],
+        "explanation": "Elle ne doit pas être assimilée à une lecture certaine de l’intériorité d’autrui."
+      },
+      {
+        "id": "ps_c_122",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Flux de communication.",
+        "answers": [
+          "Circulation effective des messages dans un groupe : qui parle, à qui, combien et selon quelles modalités. Leur observation aide à comprendre les rôles et la participation. La grille de Bales fournit une manière de classer ces interactions."
+        ],
+        "explanation": "La grille de Bales fournit une manière de classer ces interactions."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_053",
+    "number": 53,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "medium",
+    "question": "Quelles propositions distinguent paradoxe et double contrainte ?",
+    "choices": [
+      "La métacommunication consiste à multiplier les injonctions incompatibles",
+      "Une contradiction familiale suffit pour diagnostiquer une maladie",
+      "Une injonction peut exiger une spontanéité que l’ordre compromet",
+      "Toute contradiction ponctuelle ne constitue pas une double contrainte",
+      "La double contrainte est une cause démontrée et unique de schizophrénie"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée.",
+      "Faux. L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée.",
+      "Vrai. L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée.",
+      "Vrai. L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée.",
+      "Faux. L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée."
+    ],
+    "explanation": "L’injonction paradoxale exige une conduite que l’ordre compromet ; la double contrainte suppose une impasse relationnelle plus large qu’une contradiction isolée.",
+    "flashcards": [
+      {
+        "id": "ps_c_118",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Double contrainte.",
+        "answers": [
+          "Configuration relationnelle où des exigences incompatibles, dont certaines peuvent être implicites, placent la personne dans une impasse difficile à commenter ou à quitter. Toute contradiction ponctuelle n’est pas une double contrainte ; ce n’est pas une cause démontrée de schizophrénie."
+        ],
+        "explanation": "Toute contradiction ponctuelle n’est pas une double contrainte ; ce n’est pas une cause démontrée de schizophrénie."
+      },
+      {
+        "id": "ps_c_116",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Métacommunication.",
+        "answers": [
+          "Communication portant sur la relation ou sur la manière d’interpréter les messages. Elle peut être implicite ou explicite et aide à réguler l’échange. Dire « je plaisante » précise comment comprendre les mots prononcés."
+        ],
+        "explanation": "Dire « je plaisante » précise comment comprendre les mots prononcés."
+      },
+      {
+        "id": "ps_c_117",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Injonction paradoxale.",
+        "answers": [
+          "Demande dont l’exécution est incompatible avec ce qu’elle exige, ou message réunissant des exigences contradictoires. « Soyez spontané sur ordre » illustre la difficulté logique."
+        ],
+        "explanation": "« Soyez spontané sur ordre » illustre la difficulté logique."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_054",
+    "number": 54,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "easy",
+    "question": "Quelles correspondances sont exactes ?",
+    "choices": [
+      "Structure : uniquement les sentiments éprouvés",
+      "Réseau : canaux possibles",
+      "Structure : organisation des échanges pour une tâche",
+      "Flux : circulation effective des messages",
+      "Flux : intitulé administratif du groupe"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages.",
+      "Vrai. Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages.",
+      "Vrai. Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages.",
+      "Vrai. Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages.",
+      "Faux. Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages."
+    ],
+    "explanation": "Le réseau décrit les canaux possibles, la structure leur organisation dans une tâche, le flux la circulation effective des messages.",
+    "flashcards": [
+      {
+        "id": "ps_c_119",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Structure de communication.",
+        "answers": [
+          "Organisation effective des échanges entre membres d’un groupe pour une tâche donnée. Elle dépend de la situation et peut changer avec la tâche ou les modalités de travail. Elle se distingue des canaux possibles du réseau et des messages qui circulent effectivement."
+        ],
+        "explanation": "Elle se distingue des canaux possibles du réseau et des messages qui circulent effectivement."
+      },
+      {
+        "id": "ps_c_121",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Centralisation du réseau.",
+        "answers": [
+          "Degré auquel les échanges passent par un membre ou un petit nombre de positions centrales. Elle concentre l’information et peut faciliter certaines coordinations tout en limitant la participation des autres. L’efficacité dépend de la tâche ; centralisé ne signifie pas toujours supérieur."
+        ],
+        "explanation": "L’efficacité dépend de la tâche ; centralisé ne signifie pas toujours supérieur."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_055",
+    "number": 55,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "medium",
+    "question": "Quels effets peut avoir une position centrale dans un réseau ?",
+    "choices": [
+      "Un accès privilégié à l’information",
+      "Une possibilité d’influence plus grande",
+      "Une efficacité supérieure pour toute tâche sans exception",
+      "Une satisfaction automatiquement identique de tous les membres",
+      "La suppression de tout relais entre personnes"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Vrai. La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous.",
+      "Vrai. La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous.",
+      "Faux. La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous.",
+      "Faux. La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous.",
+      "Faux. La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous."
+    ],
+    "explanation": "La centralité donne un accès privilégié à l’information ; son intérêt dépend de la tâche et ne garantit pas la satisfaction de tous.",
+    "flashcards": [
+      {
+        "id": "ps_c_120",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Réseau de communication.",
+        "answers": [
+          "Ensemble des canaux disponibles reliant les membres d’un groupe. Les réseaux en chaîne, cercle, Y et étoile distribuent différemment l’accès à l’information. Le réseau représente les possibilités de communication, pas la totalité des interactions réellement observées."
+        ],
+        "explanation": "Le réseau représente les possibilités de communication, pas la totalité des interactions réellement observées."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_056",
+    "number": 56,
+    "courseId": "psychologie_sociale",
+    "theme": "Approche systémique et communication des groupes",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur la grille de Bales sont exactes ?",
+    "choices": [
+      "Elle distingue fonctions socioémotionnelles et travail sur la tâche",
+      "Elle peut éclairer la participation et la coordination",
+      "Elle est un test diagnostique de personnalité",
+      "Elle se réduit à séparer gentils et méchants",
+      "Elle comprend douze catégories d’interactions"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités.",
+      "Vrai. La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités.",
+      "Faux. La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités.",
+      "Faux. La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités.",
+      "Vrai. La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités."
+    ],
+    "explanation": "La grille de Bales observe douze catégories fonctionnelles d’interactions, entre tâche et socioémotionnel ; elle ne classe pas des personnalités.",
+    "flashcards": [
+      {
+        "id": "ps_c_123",
+        "theme": "Approche systémique et communication des groupes",
+        "front": "Définir : Grille de Bales.",
+        "answers": [
+          "Outil distinguant douze catégories d’interactions : trois socioémotionnelles positives, six relatives à la tâche et trois socioémotionnelles négatives. Leurs relations éclairent six types de difficultés du groupe. Communication, évaluation, contrôle, décision, réduction des tensions et réintégration sociale."
+        ],
+        "explanation": "Communication, évaluation, contrôle, décision, réduction des tensions et réintégration sociale."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_057",
+    "number": 57,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "easy",
+    "question": "Quelles distinctions sont correctes ?",
+    "choices": [
+      "La discrimination se repère dans les conduites et le traitement",
+      "Un stéréotype favorable n’est jamais réducteur",
+      "Un préjugé et chaque conduite sont nécessairement superposables",
+      "Le stéréotype attribue des caractéristiques à un groupe",
+      "Le préjugé comporte une dimension évaluative"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre.",
+      "Faux. Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre.",
+      "Faux. Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre.",
+      "Vrai. Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre.",
+      "Vrai. Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre."
+    ],
+    "explanation": "Stéréotype = croyance généralisée ; préjugé = attitude évaluative ; discrimination = traitement ou conduite. Ils peuvent se combiner sans se confondre.",
+    "flashcards": [
+      {
+        "id": "ps_c_126",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Stéréotype.",
+        "answers": [
+          "Croyance ou représentation simplifiée attribuant des caractéristiques à une catégorie de personnes ou à un groupe. Il peut être favorable ou défavorable en apparence tout en restant réducteur. « Tous les membres de cette profession sont patients » reste un stéréotype même si le trait paraît positif."
+        ],
+        "explanation": "« Tous les membres de cette profession sont patients » reste un stéréotype même si le trait paraît positif."
+      },
+      {
+        "id": "ps_c_124",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Perception sociale.",
+        "answers": [
+          "Ensemble des processus par lesquels nous construisons une représentation d’autrui et des groupes. Elle combine informations disponibles, catégories et attentes préalables. Percevoir n’est pas enregistrer passivement une réalité sans filtre."
+        ],
+        "explanation": "Percevoir n’est pas enregistrer passivement une réalité sans filtre."
+      },
+      {
+        "id": "ps_c_127",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Préjugé.",
+        "answers": [
+          "Attitude préconçue, souvent défavorable, à l’égard de personnes en raison de leur appartenance à un groupe. Il comporte une dimension évaluative et s’apprend dans un contexte social. Une description de trait physique n’est pas à elle seule une hiérarchisation de valeur."
+        ],
+        "explanation": "Une description de trait physique n’est pas à elle seule une hiérarchisation de valeur."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_058",
+    "number": 58,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "medium",
+    "question": "Une personne dit « tous les membres de cette profession sont patients ». Quelle lecture convient ?",
+    "choices": [
+      "C’est forcément une observation sans filtre",
+      "Cela prouve que tous les groupes ont des qualités identiques",
+      "C’est une généralisation stéréotypée même si elle paraît favorable",
+      "C’est une description individualisée de chaque professionnel",
+      "C’est une vérité nécessaire déduite du métier"
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles.",
+      "Faux. Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles.",
+      "Vrai. Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles.",
+      "Faux. Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles.",
+      "Faux. Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles."
+    ],
+    "explanation": "Une généralisation favorable reste un stéréotype : elle attribue un trait à toute une catégorie et efface les différences individuelles.",
+    "flashcards": [
+      {
+        "id": "ps_c_131",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Paradigme des groupes minimaux.",
+        "answers": [
+          "Dispositif expérimental où des personnes sont réparties en groupes selon des critères minimes ou arbitraires, afin d’étudier les effets de cette seule catégorisation sur les choix. Il montre notamment que la simple division peut favoriser des préférences pour l’endogroupe."
+        ],
+        "explanation": "Il montre notamment que la simple division peut favoriser des préférences pour l’endogroupe."
+      },
+      {
+        "id": "ps_c_128",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Discrimination.",
+        "answers": [
+          "Traitement défavorable ou différenciation dans les conduites envers une personne sur la base de son appartenance réelle ou supposée à une catégorie. Elle désigne le versant des pratiques, à distinguer des croyances et attitudes. Un préjugé déclaré ne prédit pas mécaniquement chaque conduite ; l’inverse doit aussi être examiné."
+        ],
+        "explanation": "Un préjugé déclaré ne prédit pas mécaniquement chaque conduite ; l’inverse doit aussi être examiné."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_059",
+    "number": 59,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "medium",
+    "question": "Que désignent endogroupe et exogroupe ?",
+    "choices": [
+      "Deux groupes obligatoirement ennemis",
+      "Le groupe perçu comme « nous » et celui perçu comme « eux »",
+      "Deux catégories biologiques immuables",
+      "Des frontières d’appartenance qui peuvent varier selon le contexte",
+      "Un groupe officiel et un groupe nécessairement illégal"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Faux. Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire.",
+      "Vrai. Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire.",
+      "Faux. Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire.",
+      "Vrai. Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire.",
+      "Faux. Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire."
+    ],
+    "explanation": "Endogroupe et exogroupe désignent « nous » et « eux » ; leurs frontières sont contextuelles et ne supposent ni biologie ni hostilité nécessaire.",
+    "flashcards": [
+      {
+        "id": "ps_c_129",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Endogroupe et exogroupe.",
+        "answers": [
+          "L’endogroupe est le groupe auquel on s’identifie, le « nous » ; l’exogroupe est le groupe perçu comme extérieur, le « eux ». Ces frontières dépendent du contexte et de l’appartenance mobilisée. Un même individu peut être membre du « nous » dans une situation et du « eux » dans une autre."
+        ],
+        "explanation": "Un même individu peut être membre du « nous » dans une situation et du « eux » dans une autre."
+      },
+      {
+        "id": "ps_c_132",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Ethnocentrisme.",
+        "answers": [
+          "Tendance à prendre les normes et valeurs de son groupe comme référence privilégiée et à surestimer sa supériorité par rapport à d’autres groupes. Cette valorisation peut servir à justifier des conflits et des exclusions."
+        ],
+        "explanation": "Cette valorisation peut servir à justifier des conflits et des exclusions."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_060",
+    "number": 60,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "easy",
+    "question": "Quel apport retenir des groupes minimaux ?",
+    "choices": [
+      "Une division arbitraire peut suffire à favoriser l’endogroupe",
+      "Un favoritisme exige toujours une longue histoire commune",
+      "Une différence biologique est indispensable à toute catégorisation",
+      "La coopération et la compétition ont nécessairement les mêmes effets",
+      "Toute appartenance entraîne inévitablement une violence"
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Vrai. Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique.",
+      "Faux. Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique.",
+      "Faux. Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique.",
+      "Faux. Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique.",
+      "Faux. Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique."
+    ],
+    "explanation": "Une catégorisation arbitraire peut faire apparaître un favoritisme endogroupe sans longue histoire ni différence biologique.",
+    "flashcards": [
+      {
+        "id": "ps_c_130",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Favoritisme endogroupe.",
+        "answers": [
+          "Tendance à avantager ou valoriser son groupe d’appartenance par rapport à un autre groupe. Elle peut apparaître même après une répartition arbitraire en groupes. Le favoritisme n’exige pas toujours un conflit préalable ou une longue histoire commune."
+        ],
+        "explanation": "Le favoritisme n’exige pas toujours un conflit préalable ou une longue histoire commune."
+      },
+      {
+        "id": "ps_c_136",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Intériorisation des stéréotypes.",
+        "answers": [
+          "Appropriation de représentations sociales qui peut conduire à valoriser les traits d’un groupe dominant et à dévaloriser l’image de son propre groupe. Les expériences de poupées citées avec Clark illustrent un effet de contexte social, et non une caractéristique naturelle des enfants."
+        ],
+        "explanation": "Les expériences de poupées citées avec Clark illustrent un effet de contexte social, et non une caractéristique naturelle des enfants."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_061",
+    "number": 61,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "medium",
+    "question": "Quelles conduites peuvent contribuer à un effet Pygmalion ?",
+    "choices": [
+      "Leur offrir plus d’attention et de patience",
+      "Leur donner des occasions d’apprentissage différentes",
+      "Se contenter de penser positivement sans aucune interaction",
+      "Garantir par une attente seule le résultat de chacun",
+      "Accorder davantage de soutien à ceux dont on attend la réussite"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Vrai. L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance.",
+      "Vrai. L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance.",
+      "Faux. L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance.",
+      "Faux. L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance.",
+      "Vrai. L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance."
+    ],
+    "explanation": "L’effet Pygmalion passe notamment par des interactions et occasions inégales ; une pensée seule ne garantit pas une performance.",
+    "flashcards": [
+      {
+        "id": "ps_c_134",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Effet Pygmalion.",
+        "answers": [
+          "Effet par lequel les attentes d’une personne à l’égard d’autrui peuvent modifier ses propres conduites envers lui et contribuer à faire évoluer ses performances. L’attention, le soutien, la patience et les occasions offertes peuvent médiatiser cet effet ; ce n’est pas une garantie de réussite."
+        ],
+        "explanation": "L’attention, le soutien, la patience et les occasions offertes peuvent médiatiser cet effet ; ce n’est pas une garantie de réussite."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_062",
+    "number": 62,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "medium",
+    "question": "Quelle proposition décrit une prophétie autoréalisatrice ?",
+    "choices": [
+      "Une observation prouve toujours la vérité de l’étiquette initiale",
+      "Toute attente devient vraie indépendamment des conduites",
+      "Un résultat efface nécessairement les effets de contexte",
+      "Une attente modifie les interactions et contribue au résultat qu’elle paraîtra confirmer",
+      "Une prédiction produit magiquement n’importe quel événement"
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie.",
+      "Faux. Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie.",
+      "Faux. Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie.",
+      "Vrai. Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie.",
+      "Faux. Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie."
+    ],
+    "explanation": "Une prophétie autoréalisatrice agit par les conduites et leurs effets ; l’attente initiale ne devient pas vraie par magie.",
+    "flashcards": [
+      {
+        "id": "ps_c_135",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Prophétie autoréalisatrice.",
+        "answers": [
+          "Processus par lequel une attente initiale suscite des comportements et interactions qui contribuent à produire un résultat ressemblant à cette attente, ensuite perçu comme sa confirmation. L’attente agit par des conduites et un contexte, pas par une transformation magique."
+        ],
+        "explanation": "L’attente agit par des conduites et un contexte, pas par une transformation magique."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_063",
+    "number": 63,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "hard",
+    "question": "Une personne remarque surtout les comportements rares lorsqu’ils concernent un groupe minoritaire. Quelle notion aide à comprendre ce biais ?",
+    "choices": [
+      "Le rôle centré sur la tâche",
+      "Le leadership démocratique",
+      "L’illusion de corrélation",
+      "Le feedback correctif",
+      "La socialisation secondaire uniquement"
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Faux. L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare.",
+      "Faux. L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare.",
+      "Vrai. L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare.",
+      "Faux. L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare.",
+      "Faux. L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare."
+    ],
+    "explanation": "L’illusion de corrélation surestime une association, notamment entre deux éléments saillants : groupe minoritaire et événement rare.",
+    "flashcards": [
+      {
+        "id": "ps_c_137",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Illusion de corrélation.",
+        "answers": [
+          "Perception ou surestimation d’une association entre deux événements ou caractéristiques. un trait inhabituel peut être davantage remarqué lorsqu’il est associé à un groupe minoritaire. La saillance d’un cas ne suffit pas à établir une fréquence supérieure dans le groupe."
+        ],
+        "explanation": "La saillance d’un cas ne suffit pas à établir une fréquence supérieure dans le groupe."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "ps_q_064",
+    "number": 64,
+    "courseId": "psychologie_sociale",
+    "theme": "Perception sociale et catégorisation",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur la dissonance et les attitudes sont exactes ?",
+    "choices": [
+      "La catégorisation donne une connaissance exhaustive de chaque personne",
+      "Une incohérence peut conduire à revoir une attitude",
+      "Elle peut aussi conduire à justifier une conduite",
+      "Les attitudes déclarées ne prédisent pas mécaniquement toutes les pratiques",
+      "Toute dissonance mène nécessairement à la vérité"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Faux. La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger.",
+      "Vrai. La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger.",
+      "Vrai. La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger.",
+      "Vrai. La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger.",
+      "Faux. La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger."
+    ],
+    "explanation": "La dissonance peut conduire à changer d’attitude ou à justifier sa conduite ; aucune issue ne garantit la vérité, et déclarations et pratiques peuvent diverger.",
+    "flashcards": [
+      {
+        "id": "ps_c_125",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Catégorisation sociale.",
+        "answers": [
+          "Processus mental qui organise l’environnement humain en catégories partageant certains traits. Il facilite le traitement de la complexité, mais peut rigidifier les frontières et amplifier les ressemblances ou différences perçues. Catégoriser ne suffit pas à connaître une personne dans sa singularité."
+        ],
+        "explanation": "Catégoriser ne suffit pas à connaître une personne dans sa singularité."
+      },
+      {
+        "id": "ps_c_133",
+        "theme": "Perception sociale et catégorisation",
+        "front": "Définir : Dissonance cognitive.",
+        "answers": [
+          "Tension liée à l’incompatibilité entre des cognitions, ou entre croyances et conduites, qui peut motiver des ajustements pour réduire cette incohérence. Elle n’aboutit pas nécessairement à l’adoption de l’opinion la mieux étayée : une justification peut aussi réduire la tension."
+        ],
+        "explanation": "Elle n’aboutit pas nécessairement à l’adoption de l’opinion la mieux étayée : une justification peut aussi réduire la tension."
+      }
+    ],
+    "course": "Psychologie sociale",
+    "ue": "B2.1.1",
+    "kind": "QCM"
+  }
+]

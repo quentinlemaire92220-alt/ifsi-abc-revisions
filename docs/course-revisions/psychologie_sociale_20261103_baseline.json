@@ -1,0 +1,146 @@
+{
+  "courseId": "psychologie_sociale",
+  "course": {
+    "id": "psychologie_sociale",
+    "label": "Psychologie sociale",
+    "domain": "B",
+    "ue": "B2.1.1",
+    "aliases": [
+      "Psychologie sociale",
+      "Psychosociologie"
+    ],
+    "sourceStatus": "transcript",
+    "provisional": true,
+    "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+    "audioStatus": "available",
+    "audioCount": 2,
+    "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+  },
+  "delivery": {
+    "courseId": "psychologie_sociale",
+    "audioOnlyContract": "interactive_audio_v1",
+    "deliveryMode": "audio_only",
+    "validated": true,
+    "pedagogicalValidated": true,
+    "status": "partial",
+    "publicationScope": "audio_only",
+    "vocals": [
+      "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+      "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02"
+    ],
+    "artifactSha256s": {
+      "1uQwQSYikBhoKbKHCeIJUwxH99iswjZnV": "7555d2028adb1726c98389aee417850edfe87e9ac665abd0cbb56ebe9808e476",
+      "1rJjNeXquKDWlzPaMJTWfFdYOb5Ju_PFM": "106f9b6e5688852cd1fcf62f829e7a396b82b478a1f35ace1f92840a6d299b1b"
+    },
+    "interactiveAudioReview": {
+      "contract": "interactive_audio_v1",
+      "status": "reviewed",
+      "documentaryReview": "completed",
+      "listeningReview": "completed",
+      "privateSourcesPreserved": true,
+      "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+      "episodes": [
+        {
+          "vocalId": "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+          "audioSha256": "7555d2028adb1726c98389aee417850edfe87e9ac665abd0cbb56ebe9808e476",
+          "scriptSha256": "a5f0e591267fa21b4978e8c1737bebb8b4075494c2577d8de4db4243dd366a95",
+          "durationSeconds": 366.330333,
+          "questionCount": 20,
+          "reflectionPauseCount": 20,
+          "transitionPauseCount": 20,
+          "adaptivePauses": true,
+          "introductionUnitSemesterCourseEpisode": true,
+          "synthesisBeforeLexicon": true,
+          "lexiconLast": true,
+          "definitionCount": 4,
+          "sourceLimitationsVisible": true
+        },
+        {
+          "vocalId": "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02",
+          "audioSha256": "106f9b6e5688852cd1fcf62f829e7a396b82b478a1f35ace1f92840a6d299b1b",
+          "scriptSha256": "a0cc3924c477ad95c100365fd7fd071804225e23a5520aff0c053eb4476ab965",
+          "durationSeconds": 392.693333,
+          "questionCount": 20,
+          "reflectionPauseCount": 20,
+          "transitionPauseCount": 20,
+          "adaptivePauses": true,
+          "introductionUnitSemesterCourseEpisode": true,
+          "synthesisBeforeLexicon": true,
+          "lexiconLast": true,
+          "definitionCount": 4,
+          "sourceLimitationsVisible": true
+        }
+      ]
+    },
+    "folders": {
+      "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    "blockers": [
+      {
+        "resource": "revision_sheets",
+        "reason": "not_requested"
+      },
+      {
+        "resource": "qcm",
+        "reason": "not_requested"
+      },
+      {
+        "resource": "flashcards",
+        "reason": "not_requested"
+      }
+    ],
+    "sourceBasis": {
+      "kind": "oral_transcript",
+      "nativeSupportAvailable": false,
+      "limitationsDeclared": true
+    },
+    "publicationApproval": {
+      "status": "approved",
+      "authorization": "explicit_go_publication",
+      "scope": "audio_only",
+      "approvedAt": "2026-11-02T10:30:46Z",
+      "bundleSha256": "420a3b337b6bea0ebaffd831123d7b59ffd73815bb3bc84e098a07ec81eb0e17"
+    }
+  },
+  "rows": {
+    "questions-5.json": [],
+    "vocals.json": [
+      {
+        "id": "tts_20261102_ue_b2_1_1_psychologie_sociale_groupes_valeurs_et_normes_vocal_02_sur_02",
+        "courseId": "psychologie_sociale",
+        "course": "Psychologie sociale",
+        "number": 2,
+        "title": "Questions et corrections 2/2 — Psychologie sociale groupes valeurs et normes",
+        "driveId": "1uQwQSYikBhoKbKHCeIJUwxH99iswjZnV",
+        "mime": "audio/mpeg",
+        "partId": "revision_questions_20261102",
+        "partNumber": 2,
+        "syntheticSpeech": true,
+        "provisional": true,
+        "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+        "release": "8.30.159",
+        "durationSeconds": 366.330333
+      },
+      {
+        "id": "tts_20261102_ue_b2_1_1_psychologie_sociale_lien_et_socialisation_vocal_01_sur_02",
+        "courseId": "psychologie_sociale",
+        "course": "Psychologie sociale",
+        "number": 1,
+        "title": "Questions et corrections 1/2 — Psychologie sociale lien et socialisation",
+        "driveId": "1rJjNeXquKDWlzPaMJTWfFdYOb5Ju_PFM",
+        "mime": "audio/mpeg",
+        "partId": "revision_questions_20261102",
+        "partNumber": 1,
+        "syntheticSpeech": true,
+        "provisional": true,
+        "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+        "release": "8.30.159",
+        "durationSeconds": 392.693333
+      }
+    ],
+    "sheets-1.json": [],
+    "sheets-2.json": [],
+    "sheets-3.json": []
+  },
+  "vocabulary": []
+}

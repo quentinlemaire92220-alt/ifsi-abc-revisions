@@ -1,3 +1,4 @@
+import {validateCompleteWrittenRevision} from './complete-written-revision-contract.mjs';
 // An approved revision selects new active resources without rewriting a signed
 // historical delivery. Historical views are test-only; students use real catalogs.
 import fs from 'node:fs';
@@ -18,6 +19,11 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
+  if(r.profile==='official_complete_written_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
+   validateCompleteWrittenRevision(r,manifest,revisionBundle(r));continue;
+  }
+  assert.equal(r.profile,undefined,'Unknown revision profile');
   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
   assert.equal(hash(r.baselinePath),r.baselineSha256,'Historical snapshot bytes changed');
   const old=read(r.baselinePath),actual=revisionBundle(r),course=actual.course;
