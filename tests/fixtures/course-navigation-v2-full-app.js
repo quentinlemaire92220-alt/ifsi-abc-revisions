@@ -183,6 +183,10 @@
        if(Array.from(support.querySelectorAll('a')).some(function(a){return a.href===course.qcmPdfUrl}))throw Error('QCM présenté comme support : '+course.id);
      }
      for(var doc of course.additionalDocuments||[]){
+       if((doc.type==='flashcards'||/flashcards/i.test(doc.label))&&Array.isArray(course.activeDocumentUrls)&&!course.activeDocumentUrls.includes(doc.url)){
+         if(Array.from(detail.querySelectorAll('a[href]')).some(function(a){return a.href===doc.url}))throw Error('Document historique inactif encore affiché : '+course.id);
+         continue;
+       }
        if(doc.type==='flashcards'||/flashcards/i.test(doc.label)){
          flashcards++;
          if(course.id==='d1_relation_soignant_soigne_ecoute_active'&&/PROVISOIRE/i.test(doc.label||'')){if(Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Flashcards provisoires encore visibles : '+course.id);}else if(!Array.from(detail.querySelectorAll('a')).some(function(a){return a.href===doc.url}))throw Error('Accès flashcards perdu : '+course.id);
