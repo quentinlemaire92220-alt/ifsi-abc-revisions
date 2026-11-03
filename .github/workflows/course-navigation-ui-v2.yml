@@ -7,6 +7,19 @@ on:
       - 'v74-pack.js'
       - 'course-thumbnails-v1.js'
       - 'course-registry-v741.json'
+      - 'course-registry-v741.js'
+      - 'sw.js'
+      - 'docs/course-deliveries.json'
+      - 'assets/**'
+      - 'sheets-*.json'
+      - 'vocals.json'
+      - 'questions-*.json'
+      - 'qextra-*.txt'
+      - 'data/course-banks/**'
+      - 'vocabulaire-v1.json'
+      - 'tools/course-resource-access.mjs'
+      - 'tests/course-resource-access.mjs'
+      - 'tests/flashcards-runtime-fixture.mjs'
       - 'tests/course-ue-grouping.mjs'
       - 'tests/course-thumbnails-dynamic.mjs'
       - 'index.html'
@@ -32,6 +45,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Vérifier les accès actifs avant le navigateur
+        run: node tests/course-resource-access.mjs
       - name: Test sans navigateur — mutations et arrêt sur erreur
         run: node tests/course-navigation-ui-v2-smoke.mjs
       - name: Test Chromium réel — ordre, repli, thèmes, handlers, absence de gel

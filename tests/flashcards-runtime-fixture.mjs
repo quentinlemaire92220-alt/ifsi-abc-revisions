@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Execute the production service worker loader, including compressed packs and overrides.
-export async function runtimeDeck({allCards=false,historical=false}={}){
+export async function runtimeDeck({allCards=false,historical=false,loadResources=false}={}){
   const read=p=>historical&&['course-registry-v741.json','questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json'].includes(p)?JSON.stringify(readHistoricalAudioJson(p)):fs.readFileSync(p,'utf8');
   const quiet={log(){},warn(){},error(){}};
   const sw=read('sw.js');
@@ -19,8 +19,8 @@ export async function runtimeDeck({allCards=false,historical=false}={}){
     questions.push(...base);
   }
   const registry=JSON.parse(read('course-registry-v741.json'));
-  const window={addEventListener(){},IFSI_V73:{getVocals:()=>[]},IFSI_V79:{themeOf:q=>q.theme,difficultyOf:q=>q.difficulty}};
-  const context={window,Q:questions,S:[],I:[],registryFixture:registry,console:quiet,
+  const window={addEventListener(){},IFSI_V73:{getVocals:()=>loadResources?JSON.parse(read('vocals.json')):[]},IFSI_V79:{themeOf:q=>q.theme,difficultyOf:q=>q.difficulty}};
+  const context={window,Q:questions,S:loadResources?[1,2,3].flatMap(n=>JSON.parse(read(`sheets-${n}.json`))):[],I:[],registryFixture:registry,console:quiet,
     document:{getElementById:()=>null,querySelector:()=>null,querySelectorAll:()=>[]},
     localStorage:{getItem:()=>null,setItem(){}},setInterval:()=>0,clearInterval(){},setTimeout:()=>0,clearTimeout(){},scrollTo(){},MutationObserver:class{observe(){}}};
   vm.createContext(context);

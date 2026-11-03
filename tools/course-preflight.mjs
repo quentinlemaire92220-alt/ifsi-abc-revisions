@@ -9,6 +9,7 @@ if(spawnSync('git',['cat-file','-e',base+'^{commit}']).status!==0)throw Error('B
 process.env.IFSI_BASE_SHA=base;
 const n=process.execPath,py=process.env.IFSI_PYTHON||'python';
 const commands=[
+ ['resource_access',n,['tests/course-resource-access.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
  ['complete_written_revision',n,['tests/complete-written-revision.mjs']],
  ['compact_pdf_profile',py,['tests/pdf-compact-profile-test.py']],
