@@ -9,7 +9,13 @@ export function prepareHistory({cwd=process.cwd(),env=process.env,manifestPath='
  const started=performance.now(),fetches=[];
  const git=(...args)=>execFileSync('git',args,{cwd,encoding:'utf8',maxBuffer:32*1024*1024,stdio:['ignore','pipe','pipe']}).trim();
  const sha=value=>{assert.match(value||'',/^[a-f0-9]{40}$/i,'SHA Git complet requis');assert.ok(!/^0+$/.test(value),'SHA nul interdit');return value;};
- const exists=ref=>{try{git('cat-file','-e',ref+'^{commit}');return true;}catch{return false;}};
+ const exists=ref=>{
+  try{
+   // A promisor clone otherwise lazily fetches the commit before our bounded fetch.
+   execFileSync('git',['cat-file','-e',ref+'^{commit}'],{cwd,stdio:'ignore',env:{...process.env,GIT_NO_LAZY_FETCH:'1'}});
+   return true;
+  }catch{return false;}
+ };
  const fetch=ref=>{const t=performance.now();git('fetch','--no-tags','--depth=1','--filter=blob:none','origin',ref);fetches.push({ref,seconds:(performance.now()-t)/1000});};
  const ensure=ref=>{sha(ref);if(!exists(ref))fetch(ref);assert.ok(exists(ref),'Commit de comparaison absent après récupération : '+ref);return ref;};
  const branch=env.DEFAULT_BRANCH||'main';

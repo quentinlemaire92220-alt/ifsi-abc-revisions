@@ -17,17 +17,19 @@ for(let i=0;i<6;i++){
  git(source,'add','.');git(source,'commit','-m','fixture '+i);commits.push(git(source,'rev-parse','HEAD'));
 }
 const main=commits.at(-1);git(source,'checkout','-b','candidate');
-fs.writeFileSync(path.join(source,'docs/course-deliveries.json'),JSON.stringify({courses:[{officialRevision:{baseSha:commits[0]},qcmBank:'bank.json'}]}));
+fs.writeFileSync(path.join(source,'docs/course-deliveries.json'),JSON.stringify({courses:[{officialRevision:{baseSha:commits[2]},qcmBank:'bank.json'}]}));
 git(source,'add','.');git(source,'commit','-m','candidate');
 git(source,'commit','--allow-empty','-m','candidate2');
 function clone(name,branch='candidate'){
  const cwd=path.join(root,name);git(root,'clone','--no-local','--depth=2','--single-branch','--branch',branch,pathToFileURL(source).href,cwd);return cwd;
 }
 const environment={DEFAULT_BRANCH:'main',GITHUB_REF:'refs/heads/candidate'};
-let cwd=clone('pr'),out=prepareHistory({cwd,env:{...environment,PR_BASE_SHA:main}});
-assert.equal(out.base,main);assert.deepEqual(out.historical,[commits[0]]);assert.equal(out.shallow,true);
+let cwd=clone('pr');git(cwd,'config','remote.origin.promisor','true');
+let out=prepareHistory({cwd,env:{...environment,PR_BASE_SHA:main}});
+assert.equal(out.base,main);assert.deepEqual(out.historical,[commits[2]]);assert.equal(out.shallow,true);
+assert.ok(out.fetches.some(f=>f.ref===commits[2]),'Révision historique récupérée implicitement au lieu du fetch borné');
 assert.ok(Number(git(cwd,'rev-list','--all','--count'))<=4,'Historique complet téléchargé');
-assert.equal(git(cwd,'show',commits[0]+':bank.json'),'[]');
+assert.equal(git(cwd,'show',commits[2]+':bank.json'),'[]');
 cwd=clone('push','main');out=prepareHistory({cwd,env:{DEFAULT_BRANCH:'main',GITHUB_REF:'refs/heads/main',PUSH_BEFORE_SHA:commits[2]}});
 assert.equal(out.base,commits[2]);assert.equal(out.reason,'default_branch_before');
 cwd=clone('branch');out=prepareHistory({cwd,env:environment});assert.equal(out.base,main);assert.equal(out.reason,'published_tip');
