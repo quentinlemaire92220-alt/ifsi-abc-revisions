@@ -293,6 +293,7 @@ function renderCourse74(){
   // Masquage d'affichage seulement : aucune mutation des lots approuvés.
   const p1HiddenDocument74=doc=>{
     const url=String(doc?.url||'');
+    if(Array.isArray(courseMeta.activeDocumentUrls)&&!courseMeta.activeDocumentUrls.includes(url))return true;
     if(courseMeta.id==='sante_mondiale_sante_france')
       return /\/(?:1dD5itQ7ikaQvz9oUpAZEr7vo8cDFOLKQ|10Gg_4oTzVn7qM6Cm2J9R69albTl-3ZPm)\/view(?:[?#]|$)/.test(url);
     if(courseMeta.id==='responsabilite_exercice_professionnel')

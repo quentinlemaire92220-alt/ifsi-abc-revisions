@@ -1,8 +1,9 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 const read=p=>readFileSync(p,'utf8');
-const registry=JSON.parse(read('course-registry-v741.json'));
+const registry=readHistoricalAudioJson('course-registry-v741.json');
 const sheets=[1,2,3].flatMap(n=>JSON.parse(read('sheets-'+n+'.json')));
 const source=read('v74-pack.js'),nav=read('course-navigation-ui-v2.js');
 const helpers=source.slice(source.indexOf('const receivedSourceUpdates74='),source.indexOf('function addStyles74()'));

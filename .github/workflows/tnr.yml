@@ -53,6 +53,10 @@ jobs:
           git cat-file -e "$base^{commit}"
           printf 'IFSI_BASE_SHA=%s\n' "$base" >> "$GITHUB_ENV"
 
+      - name: Vérifier les révisions de cours avec historique conservé
+        if: ${{ !cancelled() }}
+        run: node tests/scoped-course-revision.mjs
+
       - name: Vérifier la syntaxe JavaScript
         if: ${{ !cancelled() }}
         run: |

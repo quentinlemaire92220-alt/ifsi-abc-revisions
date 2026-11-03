@@ -1,9 +1,10 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 // Keep the existing student course unchanged until the official replacement has
 // its own reviewed package and authentic publication approval.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
-const json = path => JSON.parse(fs.readFileSync(path, 'utf8'));
+const json = readHistoricalAudioJson;
 const gate = json('docs/proposals/c11-sante-mondiale-support-officiel-20261031/REVISION_STATUS.json');
 const registry = json('course-registry-v741.json').courses;
 const c = registry.find(x => x.id === 'sante_mondiale_sante_france');

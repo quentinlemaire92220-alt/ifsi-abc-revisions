@@ -1,0 +1,3043 @@
+[
+  {
+    "id": "smf_20261103_q001",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Santé mondiale et One Health",
+    "difficulty": "easy",
+    "question": "La notion de santé utilisée en santé mondiale : quelles affirmations sont exactes ?",
+    "choices": [
+      "Exclut les facteurs environnementaux",
+      "Inclut des dimensions physiques, mentales et sociales",
+      "Ne concerne que les maladies diagnostiquées",
+      "Dépend aussi du contexte de vie",
+      "Se réduit à une consultation individuelle"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "La santé est multidimensionnelle et dépend de déterminants sociaux et environnementaux ; elle ne se limite pas à la maladie individuelle. A. Faux. La santé ne se comprend pas sans son environnement. B. Vrai. Les trois dimensions sont présentes dans la définition. C. Faux. La santé ne se réduit pas aux maladies diagnostiquées. D. Vrai. Le contexte de vie participe à la compréhension de la santé. E. Faux. La consultation concerne une personne ; la santé a aussi une dimension collective.",
+    "announcedCorrectCount": 2,
+    "number": 1,
+    "rationales": [
+      "La santé ne se comprend pas sans son environnement.",
+      "Les trois dimensions sont présentes dans la définition.",
+      "La santé ne se réduit pas aux maladies diagnostiquées.",
+      "Le contexte de vie participe à la compréhension de la santé.",
+      "La consultation concerne une personne ; la santé a aussi une dimension collective."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q001_card",
+        "theme": "Santé mondiale et One Health",
+        "front": "Quelles dimensions composent la définition OMS de la santé ?",
+        "answers": [
+          "Bien-être physique, mental et social."
+        ],
+        "explanation": "Bien-être physique, mental et social."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q002",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Santé mondiale et One Health",
+    "difficulty": "easy",
+    "question": "À propos de l’OMS, quelles propositions sont justes ?",
+    "choices": [
+      "Elle remplace les ministères nationaux de la Santé",
+      "C’est une institution spécialisée des Nations unies",
+      "Elle contribue à des normes et recommandations internationales",
+      "Elle coordonne des réponses sanitaires internationales",
+      "Elle fournit tous les soins hospitaliers du monde"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "L’OMS oriente, coordonne et produit des références ; les systèmes nationaux assurent les soins et la mise en œuvre. A. Faux. Les systèmes nationaux gardent leurs fonctions. B. Vrai. L’OMS appartient au système des Nations unies. C. Vrai. Les recommandations constituent un de ses moyens d’action. D. Vrai. La coopération internationale relève de son rôle. E. Faux. Les soins ne sont pas tous assurés directement par l’OMS.",
+    "announcedCorrectCount": 3,
+    "number": 2,
+    "rationales": [
+      "Les systèmes nationaux gardent leurs fonctions.",
+      "L’OMS appartient au système des Nations unies.",
+      "Les recommandations constituent un de ses moyens d’action.",
+      "La coopération internationale relève de son rôle.",
+      "Les soins ne sont pas tous assurés directement par l’OMS."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q002_card",
+        "theme": "Santé mondiale et One Health",
+        "front": "Que fait principalement l’OMS ?",
+        "answers": [
+          "Coordonne la santé internationale et émet des recommandations."
+        ],
+        "explanation": "Coordonne la santé internationale et émet des recommandations."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q003",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Santé mondiale et One Health",
+    "difficulty": "easy",
+    "question": "Le concept One Health met explicitement en relation :",
+    "choices": [
+      "La santé humaine",
+      "Uniquement le système hospitalier",
+      "La santé des écosystèmes",
+      "Uniquement la vaccination",
+      "La santé animale"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "One Health relie les trois domaines humain, animal et environnemental, notamment pour les zoonoses et les résistances. A. Vrai. La santé humaine est un des trois domaines. B. Faux. L’hôpital seul ne couvre pas les interfaces étudiées. C. Vrai. Les écosystèmes appartiennent au domaine environnemental. D. Faux. La vaccination n’épuise pas cette approche. E. Vrai. La santé animale est un des trois domaines.",
+    "announcedCorrectCount": 3,
+    "number": 3,
+    "rationales": [
+      "La santé humaine est un des trois domaines.",
+      "L’hôpital seul ne couvre pas les interfaces étudiées.",
+      "Les écosystèmes appartiennent au domaine environnemental.",
+      "La vaccination n’épuise pas cette approche.",
+      "La santé animale est un des trois domaines."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q003_card",
+        "theme": "Santé mondiale et One Health",
+        "front": "Quels sont les trois domaines de One Health ?",
+        "answers": [
+          "Santé humaine, santé animale et environnement."
+        ],
+        "explanation": "Santé humaine, santé animale et environnement."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q004",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Santé mondiale et One Health",
+    "difficulty": "easy",
+    "question": "Quel exemple illustre directement l’intérêt d’une approche One Health ?",
+    "choices": [
+      "Supprimer toutes les surveillances animales",
+      "Traiter une fracture isolée sans facteur environnemental",
+      "Étudier une zoonose avec son réservoir animal et son environnement",
+      "Mesurer seulement la tension d’une personne",
+      "N’étudier que les dépenses de santé"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Une zoonose implique conjointement animal, environnement et être humain ; les autres choix ignorent ces liens. A. Faux. Supprimer la surveillance empêche d’étudier les interfaces. B. Faux. La situation ne mobilise pas ici les trois domaines. C. Vrai. Le réservoir, le milieu et l’être humain sont étudiés ensemble. D. Faux. Cette mesure individuelle n’illustre pas à elle seule les interfaces. E. Faux. Les dépenses seules ne décrivent pas les relations entre les trois santés.",
+    "announcedCorrectCount": 1,
+    "number": 4,
+    "rationales": [
+      "Supprimer la surveillance empêche d’étudier les interfaces.",
+      "La situation ne mobilise pas ici les trois domaines.",
+      "Le réservoir, le milieu et l’être humain sont étudiés ensemble.",
+      "Cette mesure individuelle n’illustre pas à elle seule les interfaces.",
+      "Les dépenses seules ne décrivent pas les relations entre les trois santés."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q004_card",
+        "theme": "Santé mondiale et One Health",
+        "front": "Pourquoi associer les vétérinaires à la santé publique ?",
+        "answers": [
+          "Pour surveiller et prévenir les risques aux interfaces humains–animaux."
+        ],
+        "explanation": "Pour surveiller et prévenir les risques aux interfaces humains–animaux."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q005",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Santé mondiale et One Health",
+    "difficulty": "medium",
+    "question": "Une politique internationale doit devenir une action locale. Quels éléments décrivent cette articulation ?",
+    "choices": [
+      "Une politique écrite suffit à garantir son application.",
+      "Adapter la mise en œuvre aux communautés locales.",
+      "Exclure les acteurs de terrain.",
+      "Limiter l’analyse aux frontières nationales.",
+      "Définir des priorités collectives."
+    ],
+    "rationales": [
+      "Un objectif écrit ne prouve pas sa mise en œuvre.",
+      "Le contexte local intervient dans les pratiques.",
+      "La démarche décrit au contraire une traduction communautaire.",
+      "La santé globale considère aussi les enjeux transfrontaliers.",
+      "Les priorités orientent les interventions."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "La santé globale articule personnes, planète, priorités et politiques/pratiques, en reliant décisions collectives et interventions locales. A. Faux. Un objectif écrit ne prouve pas sa mise en œuvre. B. Vrai. Le contexte local intervient dans les pratiques. C. Faux. La démarche décrit au contraire une traduction communautaire. D. Faux. La santé globale considère aussi les enjeux transfrontaliers. E. Vrai. Les priorités orientent les interventions.",
+    "number": 5,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q005_card",
+        "theme": "Santé mondiale et One Health",
+        "front": "Comment articuler politiques internationales et interventions locales en santé globale ?",
+        "answers": [
+          "Définir les priorités collectives, puis adapter les interventions aux communautés et au contexte local."
+        ],
+        "explanation": "Définir les priorités collectives, puis adapter les interventions aux communautés et au contexte local."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q006",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "easy",
+    "question": "Quelles associations entre programmes et dates sont correctes ?",
+    "choices": [
+      "ODD 3 : bonne santé et bien-être",
+      "OMD : 2000–2015",
+      "OMD : dix-sept objectifs",
+      "ODD : 2015–2030",
+      "ODD : 1990–2000"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les OMD comprennent huit objectifs jusqu’en 2015 ; les ODD sont au nombre de 17 jusqu’en 2030 et l’ODD 3 porte sur la santé. A. Vrai. L’ODD 3 concerne la santé et le bien-être. B. Vrai. Le cadre OMD va de 2000 à 2015. C. Faux. Les OMD sont huit ; dix-sept correspond aux ODD. D. Vrai. Le cadre ODD va de 2015 à 2030. E. Faux. Cette période ne correspond pas au cadre ODD présenté.",
+    "announcedCorrectCount": 3,
+    "number": 6,
+    "rationales": [
+      "L’ODD 3 concerne la santé et le bien-être.",
+      "Le cadre OMD va de 2000 à 2015.",
+      "Les OMD sont huit ; dix-sept correspond aux ODD.",
+      "Le cadre ODD va de 2015 à 2030.",
+      "Cette période ne correspond pas au cadre ODD présenté."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q006_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Quand s’appliquent les OMD ?",
+        "answers": [
+          "De 2000 à 2015 ; ils comportent 8 objectifs."
+        ],
+        "explanation": "De 2000 à 2015 ; ils comportent 8 objectifs."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q007",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "Pour suivre l’extrême pauvreté mondiale, il faut préciser :",
+    "choices": [
+      "L’année et le champ géographique",
+      "Le nombre total de personnes pauvres se compare sans préciser s’il s’agit d’un effectif ou d’un pourcentage",
+      "Seulement le nom du pays le plus pauvre",
+      "Uniquement la couleur du graphique",
+      "Le seuil monétaire retenu"
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "explanation": "Pour comparer la pauvreté, il faut au minimum connaître le seuil monétaire, l’année et le champ étudié. La comparaison entre effectif et pourcentage nécessite aussi de vérifier le dénominateur ; l’énoncé qui prétend l’inverse est faux. A. Vrai. Le temps et le territoire conditionnent la comparaison. B. Faux. Un nombre et une proportion n’ont pas le même dénominateur. C. Faux. Un seul pays ne décrit pas une population mondiale. D. Faux. La couleur ne remplace pas la définition statistique. E. Vrai. Le seuil définit les personnes comptées.",
+    "announcedCorrectCount": 2,
+    "number": 7,
+    "rationales": [
+      "Le temps et le territoire conditionnent la comparaison.",
+      "Un nombre et une proportion n’ont pas le même dénominateur.",
+      "Un seul pays ne décrit pas une population mondiale.",
+      "La couleur ne remplace pas la définition statistique.",
+      "Le seuil définit les personnes comptées."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q007_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Que faut-il préciser pour interpréter un seuil de pauvreté monétaire ?",
+        "answers": [
+          "La devise, le montant par personne et par jour, le millésime, la méthode et le territoire."
+        ],
+        "explanation": "La devise, le montant par personne et par jour, le millésime, la méthode et le territoire."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q008",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "À propos d’une cible ODD 2030, quelles affirmations sont exactes ?",
+    "choices": [
+      "Elle doit être confondue avec une projection",
+      "Elle garantit que la cible est déjà atteinte",
+      "Une cible internationale prouve à elle seule que sa politique est responsable de toute évolution",
+      "Elle est un objectif à atteindre",
+      "Elle peut être suivie par des indicateurs"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Une cible ODD est un objectif à atteindre que l’on peut suivre avec des indicateurs. Elle ne prouve pas que l’objectif est atteint, ne constitue pas une projection certaine et n’établit pas à elle seule la causalité. A. Faux. Une projection est une évolution estimée, une cible est un objectif. B. Faux. L’échéance future ne prouve pas une réalisation. C. Faux. Une cible ne démontre pas de lien causal. D. Vrai. Elle exprime un résultat souhaité. E. Vrai. Les indicateurs servent à suivre les progrès vers la cible.",
+    "announcedCorrectCount": 2,
+    "number": 8,
+    "rationales": [
+      "Une projection est une évolution estimée, une cible est un objectif.",
+      "L’échéance future ne prouve pas une réalisation.",
+      "Une cible ne démontre pas de lien causal.",
+      "Elle exprime un résultat souhaité.",
+      "Les indicateurs servent à suivre les progrès vers la cible."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q008_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Quel est le sujet de l’ODD 3 ?",
+        "answers": [
+          "La bonne santé et le bien-être à tout âge."
+        ],
+        "explanation": "La bonne santé et le bien-être à tout âge."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q009",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "À seuil de pauvreté constant, la proportion de personnes en pauvreté extrême diminue. Que peut-on conclure ?",
+    "choices": [
+      "Le nombre absolu a forcément diminué dans la même proportion",
+      "Toute pauvreté a disparu",
+      "La part relative a diminué selon le même seuil",
+      "Il faut connaître la population totale pour déduire l’effectif",
+      "Le seuil utilisé doit être précisé"
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Une baisse proportionnelle ne renseigne pas directement l’effectif sans taille de population ; il faut aussi fixer le seuil. A. Faux. L’effectif dépend aussi de la population totale. B. Faux. Une baisse relative ne signifie pas disparition de la pauvreté. C. Vrai. À seuil constant, la proportion décrite a baissé. D. Vrai. Il faut multiplier la proportion par la population totale. E. Vrai. Changer de seuil change les personnes comptées.",
+    "announcedCorrectCount": 3,
+    "number": 9,
+    "rationales": [
+      "L’effectif dépend aussi de la population totale.",
+      "Une baisse relative ne signifie pas disparition de la pauvreté.",
+      "À seuil constant, la proportion décrite a baissé.",
+      "Il faut multiplier la proportion par la population totale.",
+      "Changer de seuil change les personnes comptées."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q009_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Pourquoi un taux de pauvreté en baisse peut-il masquer des effectifs élevés ?",
+        "answers": [
+          "L’effectif dépend aussi de la taille totale de la population."
+        ],
+        "explanation": "L’effectif dépend aussi de la taille totale de la population."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q010",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques appartiennent au cadre des ODD présenté pour 2015–2030 ?",
+    "choices": [
+      "Huit objectifs seulement.",
+      "Un objectif consacré à la santé et au bien-être.",
+      "Des résultats déjà acquis dès leur adoption.",
+      "Un champ qui comprend aussi l’environnement.",
+      "Dix-sept objectifs."
+    ],
+    "rationales": [
+      "Huit correspond au cadre OMD.",
+      "Il s’agit de l’ODD 3.",
+      "Les objectifs ne sont pas des résultats obtenus.",
+      "Le développement durable dépasse le seul système de soins.",
+      "Le cadre ODD comprend dix-sept objectifs."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "Les ODD élargissent le cadre antérieur et comprennent un objectif de santé au sein d’un ensemble plus large. A. Faux. Huit correspond au cadre OMD. B. Vrai. Il s’agit de l’ODD 3. C. Faux. Les objectifs ne sont pas des résultats obtenus. D. Vrai. Le développement durable dépasse le seul système de soins. E. Vrai. Le cadre ODD comprend dix-sept objectifs.",
+    "number": 10,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q010_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Combien d’objectifs composent les ODD et pour quelle période ?",
+        "answers": [
+          "Dix-sept objectifs pour la période 2015–2030."
+        ],
+        "explanation": "Dix-sept objectifs pour la période 2015–2030."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q011",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "medium",
+    "question": "Pour la même population, à la même date et selon la même méthode, on relève le seuil de pauvreté de 3 à 5 unités monétaires par jour. Quelles conclusions sont possibles ?",
+    "choices": [
+      "Le nouveau résultat prouve une dégradation des revenus.",
+      "Le nombre sous le seuil doit diminuer.",
+      "Le nombre sous le seuil peut augmenter.",
+      "Les personnes sous le seuil de 3 restent sous le seuil de 5.",
+      "Toutes les personnes ont nécessairement changé de revenu."
+    ],
+    "rationales": [
+      "Un changement de définition ne démontre pas une évolution des revenus.",
+      "Relever le seuil ne retire pas les personnes déjà en dessous.",
+      "Des personnes entre les deux seuils peuvent être ajoutées.",
+      "Le second ensemble inclut le premier.",
+      "Le classement peut changer sans variation de revenu."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "La comparaison doit conserver la définition : un seuil plus élevé peut classer davantage de personnes sans changement de leur revenu. A. Faux. Un changement de définition ne démontre pas une évolution des revenus. B. Faux. Relever le seuil ne retire pas les personnes déjà en dessous. C. Vrai. Des personnes entre les deux seuils peuvent être ajoutées. D. Vrai. Le second ensemble inclut le premier. E. Faux. Le classement peut changer sans variation de revenu.",
+    "number": 11,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q011_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "À population et méthode identiques, que change le relèvement d’un seuil de pauvreté ?",
+        "answers": [
+          "La population située sous le seuil ne peut pas diminuer ; elle peut rester identique ou augmenter."
+        ],
+        "explanation": "La population située sous le seuil ne peut pas diminuer ; elle peut rester identique ou augmenter."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q012",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "OMD, ODD et pauvreté",
+    "difficulty": "hard",
+    "question": "Une population compte 1 million de personnes, dont 10 % sous un seuil fixe. Plus tard, elle compte 2 millions de personnes, dont 8 % sous ce même seuil. Que constate-t-on ?",
+    "choices": [
+      "L’effectif a diminué dans la même proportion.",
+      "Il ne reste plus de personne sous le seuil.",
+      "Le résultat montre une hausse du seuil monétaire.",
+      "L’effectif passe de 100 000 à 160 000 personnes.",
+      "La proportion a diminué."
+    ],
+    "rationales": [
+      "La population totale a doublé.",
+      "Les effectifs calculés restent positifs.",
+      "Le seuil est explicitement constant.",
+      "Le calcul associe proportion et population à chaque date.",
+      "Elle passe de 10%à 8%."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Il faut calculer les effectifs à chaque date : 0,10 × 1 000 000=100 000 et 0,08 × 2 000 000=160 000. A. Faux. La population totale a doublé. B. Faux. Les effectifs calculés restent positifs. C. Faux. Le seuil est explicitement constant. D. Vrai. Le calcul associe proportion et population à chaque date. E. Vrai. Elle passe de 10%à 8%.",
+    "number": 12,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q012_card",
+        "theme": "OMD, ODD et pauvreté",
+        "front": "Une proportion peut-elle baisser alors que l’effectif correspondant augmente ?",
+        "answers": [
+          "Oui. Par exemple, 10 % de 1 million font 100 000 personnes ; 8 % de 2 millions font 160 000 personnes."
+        ],
+        "explanation": "Oui. Par exemple, 10 % de 1 million font 100 000 personnes ; 8 % de 2 millions font 160 000 personnes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q013",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "easy",
+    "question": "Un indicateur de santé peut servir à :",
+    "choices": [
+      "Comparer des évolutions dans le temps",
+      "Décrire un état de santé collectif",
+      "Évaluer une politique publique",
+      "Prouver seul la cause d’une évolution",
+      "Remplacer toutes les enquêtes de terrain"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Les indicateurs décrivent, comparent et permettent un suivi. Un indicateur isolé n’établit pas nécessairement une causalité. A. Vrai. Un indicateur permet une comparaison temporelle. B. Vrai. Il résume un phénomène à l’échelle collective. C. Vrai. Son suivi contribue à l’évaluation. D. Faux. Une association observée ne suffit pas à prouver une cause. E. Faux. La qualité du recueil et des enquêtes reste nécessaire.",
+    "announcedCorrectCount": 3,
+    "number": 13,
+    "rationales": [
+      "Un indicateur permet une comparaison temporelle.",
+      "Il résume un phénomène à l’échelle collective.",
+      "Son suivi contribue à l’évaluation.",
+      "Une association observée ne suffit pas à prouver une cause.",
+      "La qualité du recueil et des enquêtes reste nécessaire."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q013_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "À quoi servent les indicateurs de santé ?",
+        "answers": [
+          "Décrire, surveiller, comparer et évaluer la santé des populations."
+        ],
+        "explanation": "Décrire, surveiller, comparer et évaluer la santé des populations."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q014",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "medium",
+    "question": "Avant de comparer deux taux de mortalité, il faut vérifier :",
+    "choices": [
+      "Seulement le nombre de pages du rapport",
+      "La période de mesure",
+      "Le dénominateur",
+      "La structure par âge ou la standardisation",
+      "Uniquement la couleur de la courbe"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Des dénominateurs, durées et pyramides des âges différentes peuvent rendre les taux bruts trompeurs. A. Faux. La pagination ne définit pas un taux. B. Vrai. Les périodes doivent être comparables. C. Vrai. Le dénominateur précise à quoi les décès sont rapportés. D. Vrai. La structure d’âge influence les taux bruts. E. Faux. La couleur n’établit pas la comparabilité des données.",
+    "announcedCorrectCount": 3,
+    "number": 14,
+    "rationales": [
+      "La pagination ne définit pas un taux.",
+      "Les périodes doivent être comparables.",
+      "Le dénominateur précise à quoi les décès sont rapportés.",
+      "La structure d’âge influence les taux bruts.",
+      "La couleur n’établit pas la comparabilité des données."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q014_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Que vérifier avant de comparer deux taux ?",
+        "answers": [
+          "Numérateur, dénominateur, année, territoire et structure d’âge."
+        ],
+        "explanation": "Numérateur, dénominateur, année, territoire et structure d’âge."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q015",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "easy",
+    "question": "Quel énoncé décrit un indicateur épidémiologique ?",
+    "choices": [
+      "La densité d’incidence d’une infection",
+      "Le cours d’une monnaie uniquement",
+      "Un taux de décès attribués à une affection",
+      "Le nombre de chaises d’une salle",
+      "La prévalence d’une maladie"
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Prévalence, incidence et mortalité par cause sont des indicateurs de fréquence, apparition ou gravité. A. Vrai. Elle mesure l’apparition de nouveaux cas. B. Faux. Un cours monétaire n’est pas un indicateur de maladie. C. Vrai. La mortalité par cause renseigne un phénomène de santé. D. Faux. Le mobilier n’est pas une mesure de fréquence de maladie. E. Vrai. La prévalence décrit les cas présents dans la population.",
+    "announcedCorrectCount": 3,
+    "number": 15,
+    "rationales": [
+      "Elle mesure l’apparition de nouveaux cas.",
+      "Un cours monétaire n’est pas un indicateur de maladie.",
+      "La mortalité par cause renseigne un phénomène de santé.",
+      "Le mobilier n’est pas une mesure de fréquence de maladie.",
+      "La prévalence décrit les cas présents dans la population."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q015_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Quelle différence entre effectif et taux ?",
+        "answers": [
+          "L’effectif est un nombre ; un taux rapporte des événements à une population ou à un temps-personne de référence, selon l’indicateur."
+        ],
+        "explanation": "L’effectif est un nombre ; un taux rapporte des événements à une population ou à un temps-personne de référence, selon l’indicateur."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q016",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "medium",
+    "question": "Une estimation mondiale issue d’un modèle statistique doit être présentée :",
+    "choices": [
+      "Avec l’année de référence",
+      "Comme un résultat observé dans tous les pays",
+      "Comme une mesure nécessairement exacte",
+      "Avec ses limites et son champ",
+      "Avec la source de données utilisée"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Une estimation est fondée sur des données et hypothèses ; elle n’équivaut pas à une mesure exhaustive garantie. A. Vrai. L’année délimite la période décrite. B. Faux. Une estimation ne signifie pas observation exhaustive partout. C. Faux. La précision dépend des données et des hypothèses. D. Vrai. Les limites et le champ précisent ce qui est estimé. E. Vrai. La source permet d’identifier les données utilisées.",
+    "announcedCorrectCount": 3,
+    "number": 16,
+    "rationales": [
+      "L’année délimite la période décrite.",
+      "Une estimation ne signifie pas observation exhaustive partout.",
+      "La précision dépend des données et des hypothèses.",
+      "Les limites et le champ précisent ce qui est estimé.",
+      "La source permet d’identifier les données utilisées."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q016_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Pourquoi une estimation statistique est-elle incertaine ?",
+        "answers": [
+          "Elle dépend des données disponibles et des hypothèses du modèle."
+        ],
+        "explanation": "Elle dépend des données disponibles et des hypothèses du modèle."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q017",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "medium",
+    "question": "Pour interpréter un indicateur de santé publique, quel principe général faut-il privilégier ?",
+    "choices": [
+      "Apprendre chaque nombre annuel par cœur avant tout",
+      "Mémoriser des chiffres sans connaître les unités ni les dénominateurs",
+      "Comprendre les tendances",
+      "Confondre projection et observation",
+      "Interpréter toute corrélation comme une causalité prouvée"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "Pour interpréter des indicateurs sanitaires, les priorités sont les tendances, les mécanismes, les définitions et les dénominateurs. Des chiffres hors contexte ne suffisent pas, et une association statistique ne prouve pas la causalité. A. Faux. Les chiffres isolés ne sont pas la priorité d’interprétation. B. Faux. Les unités et les dénominateurs sont nécessaires. C. Vrai. Les tendances donnent du sens aux données contextualisées. D. Faux. Une projection n’est pas une observation déjà réalisée. E. Faux. Une corrélation n’établit pas seule une cause.",
+    "announcedCorrectCount": 1,
+    "number": 17,
+    "rationales": [
+      "Les chiffres isolés ne sont pas la priorité d’interprétation.",
+      "Les unités et les dénominateurs sont nécessaires.",
+      "Les tendances donnent du sens aux données contextualisées.",
+      "Une projection n’est pas une observation déjà réalisée.",
+      "Une corrélation n’établit pas seule une cause."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q017_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Quel est le premier réflexe devant un chiffre en santé publique ?",
+        "answers": [
+          "Vérifier unité, période, population, territoire et source."
+        ],
+        "explanation": "Vérifier unité, période, population, territoire et source."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q018",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "medium",
+    "question": "Deux territoires emploient le même nom d’indicateur, mais un état civil est incomplet. Quelles précautions sont justifiées ?",
+    "choices": [
+      "Ignorer tous les événements non enregistrés comme s’ils n’existaient pas.",
+      "Corriger le taux par un nombre choisi au hasard.",
+      "Discuter la limite de comparaison.",
+      "Examiner les modalités de recueil.",
+      "Conclure que les deux mesures sont parfaitement comparables."
+    ],
+    "rationales": [
+      "L’absence d’enregistrement n’est pas une absence d’événement.",
+      "Aucun facteur de correction n’est fourni.",
+      "Le même nom ne garantit pas la même qualité de données.",
+      "Elles déterminent ce qui est compté.",
+      "Le recueil diffère."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "La complétude des données administratives et de l’état civil participe à la qualité de l’indicateur. A. Faux. L’absence d’enregistrement n’est pas une absence d’événement. B. Faux. Aucun facteur de correction n’est fourni. C. Vrai. Le même nom ne garantit pas la même qualité de données. D. Vrai. Elles déterminent ce qui est compté. E. Faux. Le recueil diffère.",
+    "number": 18,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q018_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Pourquoi vérifier la qualité du recueil avant de comparer des indicateurs ?",
+        "answers": [
+          "Un recueil incomplet ou différent peut modifier le nombre d’événements comptés et limiter la comparaison."
+        ],
+        "explanation": "Un recueil incomplet ou différent peut modifier le nombre d’événements comptés et limiter la comparaison."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q019",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Indicateurs et comparaisons",
+    "difficulty": "medium",
+    "question": "Un graphique attribue 20 % à une cause de décès, sans autre précision. Quelles informations faut-il rechercher avant de l’interpréter ?",
+    "choices": [
+      "Il s’agit automatiquement d’un taux de létalité.",
+      "Le total auquel le pourcentage est rapporté.",
+      "La définition de la cause comptée.",
+      "Le pourcentage suffit à déduire un nombre absolu.",
+      "La période et le territoire."
+    ],
+    "rationales": [
+      "On ne connaît pas ici le nombre de malades concernés.",
+      "Le dénominateur délimite le sens de la proportion.",
+      "Des catégories différentes peuvent modifier la comparaison.",
+      "Le total de décès n’est pas fourni.",
+      "Ils définissent le contexte décrit."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "Un pourcentage ne se comprend pas sans sa population de référence et sa définition. A. Faux. On ne connaît pas ici le nombre de malades concernés. B. Vrai. Le dénominateur délimite le sens de la proportion. C. Vrai. Des catégories différentes peuvent modifier la comparaison. D. Faux. Le total de décès n’est pas fourni. E. Vrai. Ils définissent le contexte décrit.",
+    "number": 19,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q019_card",
+        "theme": "Indicateurs et comparaisons",
+        "front": "Que préciser devant un pourcentage de décès ?",
+        "answers": [
+          "La population et le total de référence, la période, le territoire et la définition de la cause."
+        ],
+        "explanation": "La population et le total de référence, la période, le territoire et la définition de la cause."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q020",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "medium",
+    "question": "Une population mondiale augmente et son taux de croissance diminue. Quelles affirmations sont possibles ?",
+    "choices": [
+      "Toute projection devient certaine",
+      "La variation absolue et le taux sont distincts",
+      "Les deux phénomènes peuvent coexister",
+      "Le ralentissement du taux signifie une baisse immédiate du nombre d’habitants",
+      "L’effectif augmente encore"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Le taux exprime une vitesse relative ; un taux positif mais décroissant accompagne toujours une hausse de l’effectif. A. Faux. Une tendance ne rend pas une projection certaine. B. Vrai. Un effectif et une variation relative sont deux mesures distinctes. C. Vrai. Le taux peut rester positif tout en diminuant. D. Faux. Un ralentissement n’est pas nécessairement une décroissance. E. Vrai. La population continue d’augmenter dans la situation décrite.",
+    "announcedCorrectCount": 3,
+    "number": 20,
+    "rationales": [
+      "Une tendance ne rend pas une projection certaine.",
+      "Un effectif et une variation relative sont deux mesures distinctes.",
+      "Le taux peut rester positif tout en diminuant.",
+      "Un ralentissement n’est pas nécessairement une décroissance.",
+      "La population continue d’augmenter dans la situation décrite."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q020_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Une population peut-elle croître avec un taux de croissance qui baisse ?",
+        "answers": [
+          "Oui, tant que le taux reste positif."
+        ],
+        "explanation": "Oui, tant que le taux reste positif."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q021",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "easy",
+    "question": "Concernant la variation d’une population nationale, quels facteurs entrent en jeu ?",
+    "choices": [
+      "Décès",
+      "Uniquement l’espérance de vie",
+      "La superficie du pays comme seul facteur",
+      "Naissances",
+      "Migrations"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "La variation totale est la somme du solde naturel (naissances moins décès) et du solde migratoire. A. Vrai. Les décès diminuent le solde naturel. B. Faux. L’espérance de vie ne remplace pas les flux démographiques. C. Faux. La superficie ne détermine pas seule les entrées et sorties de population. D. Vrai. Les naissances augmentent le solde naturel. E. Vrai. Les migrations interviennent dans la variation totale nationale.",
+    "announcedCorrectCount": 3,
+    "number": 21,
+    "rationales": [
+      "Les décès diminuent le solde naturel.",
+      "L’espérance de vie ne remplace pas les flux démographiques.",
+      "La superficie ne détermine pas seule les entrées et sorties de population.",
+      "Les naissances augmentent le solde naturel.",
+      "Les migrations interviennent dans la variation totale nationale."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q021_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Comment calcule-t-on le solde naturel ?",
+        "answers": [
+          "Naissances moins décès."
+        ],
+        "explanation": "Naissances moins décès."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q022",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "easy",
+    "question": "Une pyramide des âges à base étroite et aux tranches adultes élargies évoque :",
+    "choices": [
+      "Une baisse relative des jeunes classes d’âge",
+      "Un vieillissement démographique",
+      "Une forte natalité obligatoirement",
+      "La forme d’une pyramide identifie à elle seule la cause exacte du vieillissement",
+      "Un décès immédiat de tous les nouveau-nés"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "Une base étroite et des générations adultes plus larges sont compatibles avec un vieillissement et une moindre part de jeunes. La seule forme d’une pyramide ne démontre pas les causes exactes : il faut d’autres données. A. Vrai. Une base plus étroite indique une moindre part de jeunes générations. B. Vrai. Cette forme est compatible avec un vieillissement. C. Faux. Une forte natalité n’est pas imposée par cette forme. D. Faux. La forme décrit une structure, sans prouver sa cause exacte. E. Faux. Une structure d’âge ne signifie pas un décès immédiat des nouveau-nés.",
+    "announcedCorrectCount": 2,
+    "number": 22,
+    "rationales": [
+      "Une base plus étroite indique une moindre part de jeunes générations.",
+      "Cette forme est compatible avec un vieillissement.",
+      "Une forte natalité n’est pas imposée par cette forme.",
+      "La forme décrit une structure, sans prouver sa cause exacte.",
+      "Une structure d’âge ne signifie pas un décès immédiat des nouveau-nés."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q022_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Que traduit une pyramide des âges à base étroite ?",
+        "answers": [
+          "Des générations récentes moins nombreuses, souvent associées au vieillissement."
+        ],
+        "explanation": "Des générations récentes moins nombreuses, souvent associées au vieillissement."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q023",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "easy",
+    "question": "Le taux brut de natalité annuel est calculé à partir :",
+    "choices": [
+      "D’un multiplicateur usuel de 1 000",
+      "Des naissances vivantes annuelles",
+      "De la taille des maternités",
+      "Des seuls décès hospitaliers",
+      "De la population de référence de l’année"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Il s’agit du nombre annuel de naissances vivantes rapporté à la population moyenne, exprimé pour 1 000 habitants. A. Vrai. Le multiplicateur usuel exprime le taux pour mille habitants. B. Vrai. Les naissances vivantes de l’année constituent le numérateur. C. Faux. La capacité des maternités n’est pas le dénominateur. D. Faux. Les décès hospitaliers ne servent pas à compter les naissances. E. Vrai. La population de la même période sert de référence.",
+    "announcedCorrectCount": 3,
+    "number": 23,
+    "rationales": [
+      "Le multiplicateur usuel exprime le taux pour mille habitants.",
+      "Les naissances vivantes de l’année constituent le numérateur.",
+      "La capacité des maternités n’est pas le dénominateur.",
+      "Les décès hospitaliers ne servent pas à compter les naissances.",
+      "La population de la même période sert de référence."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q023_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Formule du taux brut de natalité ?",
+        "answers": [
+          "Naissances vivantes / population moyenne × 1 000."
+        ],
+        "explanation": "Naissances vivantes / population moyenne × 1 000."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q024",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "medium",
+    "question": "Pourquoi un taux brut de mortalité français peut-il dépasser le taux mondial ?",
+    "choices": [
+      "Cela prouve que chaque Français reçoit de moins bons soins",
+      "Le taux brut mesure forcément la létalité d’une maladie",
+      "Un taux brut suffit à juger de la qualité de deux systèmes de soins malgré des âges très différents",
+      "La population française est en moyenne plus âgée",
+      "Un taux brut est sensible à la structure par âge"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Un taux brut dépend de la structure d’âge. Une population plus âgée peut présenter un taux brut supérieur sans que la qualité des soins soit nécessairement moindre. Les comparaisons nécessitent des ajustements appropriés. A. Faux. La qualité des soins ne se déduit pas seule du taux brut. B. Faux. La létalité porte sur les malades, pas la population générale. C. Faux. Les différences d’âge doivent être considérées. D. Vrai. Une population plus âgée peut expliquer un taux brut plus élevé. E. Vrai. Le vieillissement peut modifier le taux brut.",
+    "announcedCorrectCount": 2,
+    "number": 24,
+    "rationales": [
+      "La qualité des soins ne se déduit pas seule du taux brut.",
+      "La létalité porte sur les malades, pas la population générale.",
+      "Les différences d’âge doivent être considérées.",
+      "Une population plus âgée peut expliquer un taux brut plus élevé.",
+      "Le vieillissement peut modifier le taux brut."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q024_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Pourquoi standardiser la mortalité par âge ?",
+        "answers": [
+          "Pour comparer des populations ayant des structures d’âge différentes."
+        ],
+        "explanation": "Pour comparer des populations ayant des structures d’âge différentes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q025",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "easy",
+    "question": "L’espérance de vie à la naissance est :",
+    "choices": [
+      "Calculée pour une génération fictive",
+      "Une prédiction détaillée des progrès médicaux futurs",
+      "Une date de décès certaine pour chaque nouveau-né",
+      "Exprimée en années",
+      "Un indicateur fondé sur les mortalités par âge de la période"
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "L’espérance de vie de période applique les conditions de mortalité observées à une cohorte fictive ; elle ne prédit pas l’avenir individuel. A. Vrai. La génération est fictive, soumise aux conditions de la période. B. Faux. Les progrès futurs ne sont pas prédits par ce calcul de période. C. Faux. La valeur est collective et ne fixe pas une date individuelle. D. Vrai. Il s’agit d’une durée exprimée en années. E. Vrai. Les conditions de mortalité de la période fondent le calcul.",
+    "announcedCorrectCount": 3,
+    "number": 25,
+    "rationales": [
+      "La génération est fictive, soumise aux conditions de la période.",
+      "Les progrès futurs ne sont pas prédits par ce calcul de période.",
+      "La valeur est collective et ne fixe pas une date individuelle.",
+      "Il s’agit d’une durée exprimée en années.",
+      "Les conditions de mortalité de la période fondent le calcul."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q025_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Comment est construite l’espérance de vie de période ?",
+        "answers": [
+          "À partir des taux de mortalité par âge observés à une période donnée."
+        ],
+        "explanation": "À partir des taux de mortalité par âge observés à une période donnée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q026",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "hard",
+    "question": "Un territoire fictif compte 120 naissances, 100 décès, 40 entrées et 10 sorties de population sur un an. Quels calculs sont corrects ?",
+    "choices": [
+      "Le solde naturel inclut déjà les migrations.",
+      "Le solde naturel est+20.",
+      "La variation totale est égale au nombre de naissances.",
+      "Le solde migratoire est+30.",
+      "La variation totale est+50."
+    ],
+    "rationales": [
+      "Les deux soldes sont distincts.",
+      "120−100=20.",
+      "Il faut aussi intégrer décès et migrations.",
+      "40−10=30.",
+      "20+30=50."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "Le solde naturel et le solde migratoire sont deux composantes différentes de la variation totale. A. Faux. Les deux soldes sont distincts. B. Vrai. 120−100=20. C. Faux. Il faut aussi intégrer décès et migrations. D. Vrai. 40−10=30. E. Vrai. 20+30=50.",
+    "number": 26,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q026_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Comment passer du solde naturel à la variation totale d’une population nationale ?",
+        "answers": [
+          "Ajouter le solde migratoire au solde naturel."
+        ],
+        "explanation": "Ajouter le solde migratoire au solde naturel."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q027",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "medium",
+    "question": "Une population de référence fictive de 1 million d’habitants compte 10 000 naissances vivantes sur un an. Quel est le taux brut de natalité pour 1 000 habitants ?",
+    "choices": [
+      "1 pour 1 000 habitants.",
+      "100 pour 1 000 habitants.",
+      "10 000 pour 1 000 habitants.",
+      "10 décès pour 1 000 habitants.",
+      "10 pour 1 000 habitants."
+    ],
+    "rationales": [
+      "Cette valeur est dix fois trop petite.",
+      "Cette valeur est dix fois trop grande.",
+      "Le nombre brut ne peut pas être repris comme un taux.",
+      "Le numérateur porte sur les naissances, pas les décès.",
+      "10 000/1 000 000 × 1 000=10."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "Le taux calculé est 10 naissances pour 1 000 habitants sur l’année. Les données sont fictives. A. Faux. Cette valeur est dix fois trop petite. B. Faux. Cette valeur est dix fois trop grande. C. Faux. Le nombre brut ne peut pas être repris comme un taux. D. Faux. Le numérateur porte sur les naissances, pas les décès. E. Vrai. 10 000/1 000 000 × 1 000=10.",
+    "number": 27,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q027_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Comment convertir une proportion annuelle de naissances en taux pour mille ?",
+        "answers": [
+          "Diviser les naissances vivantes par la population de référence, puis multiplier par 1 000."
+        ],
+        "explanation": "Diviser les naissances vivantes par la population de référence, puis multiplier par 1 000."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q028",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Démographie et espérance de vie",
+    "difficulty": "hard",
+    "question": "Une espérance de vie restante à 20 ans vaut 60 ans dans un exemple fictif. Comment lire ce résultat ?",
+    "choices": [
+      "L’âge associé est 80 ans dans cet exemple.",
+      "La valeur démontre les progrès médicaux futurs.",
+      "Chaque personne décédera exactement à 80 ans.",
+      "Les 60 ans sont une durée restante à partir de 20 ans.",
+      "L’âge moyen au décès est nécessairement 60 ans."
+    ],
+    "rationales": [
+      "20+60=80.",
+      "Une espérance de période applique les conditions de mortalité retenues.",
+      "Une moyenne collective n’est pas un pronostic individuel.",
+      "Le seuil de départ est déjà atteint.",
+      "Il faut ajouter l’âge de départ."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "L’âge atteint et le nombre d’années restantes sont deux grandeurs distinctes. A. Vrai. 20+60=80. B. Faux. Une espérance de période applique les conditions de mortalité retenues. C. Faux. Une moyenne collective n’est pas un pronostic individuel. D. Vrai. Le seuil de départ est déjà atteint. E. Faux. Il faut ajouter l’âge de départ.",
+    "number": 28,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q028_card",
+        "theme": "Démographie et espérance de vie",
+        "front": "Quelle différence entre espérance de vie restante et âge moyen au décès associé ?",
+        "answers": [
+          "L’espérance restante est une durée à partir de l’âge atteint ; l’âge associé s’obtient en ajoutant cet âge à la durée."
+        ],
+        "explanation": "L’espérance restante est une durée à partir de l’âge atteint ; l’âge associé s’obtient en ajoutant cet âge à la durée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q029",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "Selon la définition internationale, le décès maternel peut survenir :",
+    "choices": [
+      "À n’importe quel âge du bébé, sans limite temporelle",
+      "Pendant la grossesse",
+      "Seulement pendant les 28 premiers jours de vie du bébé",
+      "D’une cause liée à la grossesse ou à sa prise en charge",
+      "Dans les 42 jours après la fin d’une grossesse"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Un décès maternel survient pendant la grossesse ou dans les 42 jours suivant sa fin, pour une cause liée ou aggravée par la grossesse ou sa prise en charge, hors causes accidentelles ou fortuites. Ce n’est pas la définition de la mortalité néonatale. A. Faux. La fenêtre dépend de la grossesse et de sa fin, pas de tout l’âge de l’enfant. B. Vrai. La période de grossesse appartient à la définition citée. C. Faux. Les 28 premiers jours concernent la mortalité néonatale. D. Vrai. Le lien avec la grossesse ou sa prise en charge est nécessaire. E. Vrai. La définition citée inclut les 42 jours après la fin de grossesse.",
+    "announcedCorrectCount": 3,
+    "number": 29,
+    "rationales": [
+      "La fenêtre dépend de la grossesse et de sa fin, pas de tout l’âge de l’enfant.",
+      "La période de grossesse appartient à la définition citée.",
+      "Les 28 premiers jours concernent la mortalité néonatale.",
+      "Le lien avec la grossesse ou sa prise en charge est nécessaire.",
+      "La définition citée inclut les 42 jours après la fin de grossesse."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q029_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Jusqu’à quand un décès peut-il être qualifié de maternel ?",
+        "answers": [
+          "Pendant la grossesse et jusqu’à 42 jours après sa fin, si la cause est liée."
+        ],
+        "explanation": "Pendant la grossesse et jusqu’à 42 jours après sa fin, si la cause est liée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q030",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "Le rapport de mortalité maternelle (RMM) est exprimé :",
+    "choices": [
+      "Avec la population masculine au dénominateur",
+      "En pourcentage sans unité complémentaire",
+      "Pour 10 naissances vivantes",
+      "En décès maternels au numérateur",
+      "Pour 100 000 naissances vivantes"
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "explanation": "Le RMM rapporte les décès maternels aux naissances vivantes, multiplié par 100 000. A. Faux. La population masculine n’est pas le dénominateur du RMM. B. Faux. Il faut préciser les naissances vivantes et le multiplicateur. C. Faux. Le rapport présenté est exprimé pour 100 000, pas pour 10. D. Vrai. Les décès maternels sont les événements comptés. E. Vrai. Les naissances vivantes constituent le dénominateur de ce rapport.",
+    "announcedCorrectCount": 2,
+    "number": 30,
+    "rationales": [
+      "La population masculine n’est pas le dénominateur du RMM.",
+      "Il faut préciser les naissances vivantes et le multiplicateur.",
+      "Le rapport présenté est exprimé pour 100 000, pas pour 10.",
+      "Les décès maternels sont les événements comptés.",
+      "Les naissances vivantes constituent le dénominateur de ce rapport."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q030_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quel est le dénominateur du RMM ?",
+        "answers": [
+          "Les naissances vivantes ; ratio pour 100 000."
+        ],
+        "explanation": "Les naissances vivantes ; ratio pour 100 000."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q031",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "L’ODD 3.1 fixe comme objectif mondial pour 2030 :",
+    "choices": [
+      "RMM inférieur à 70 pour 100 naissances",
+      "Suppression de toutes les grossesses à risque",
+      "Objectif sans date",
+      "Cible déjà atteinte en 2023",
+      "RMM inférieur à 70 pour 100 000 naissances vivantes"
+    ],
+    "answers": [
+      4
+    ],
+    "explanation": "L’objectif international de 2030 est un RMM mondial inférieur à 70 décès maternels pour 100 000 naissances vivantes. A. Faux. Le multiplicateur proposé ne correspond pas à la cible. B. Faux. La cible ne signifie pas suppression de toutes les grossesses à risque. C. Faux. L’objectif a une échéance explicite :2030. D. Faux. Un objectif ne prouve pas sa réalisation en 2023. E. Vrai. L’unité et l’échéance correspondent à la cible présentée.",
+    "announcedCorrectCount": 1,
+    "number": 31,
+    "rationales": [
+      "Le multiplicateur proposé ne correspond pas à la cible.",
+      "La cible ne signifie pas suppression de toutes les grossesses à risque.",
+      "L’objectif a une échéance explicite :2030.",
+      "Un objectif ne prouve pas sa réalisation en 2023.",
+      "L’unité et l’échéance correspondent à la cible présentée."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q031_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quelle est la cible mondiale ODD 3.1 pour 2030 ?",
+        "answers": [
+          "Moins de 70 décès maternels pour 100 000 naissances vivantes."
+        ],
+        "explanation": "Moins de 70 décès maternels pour 100 000 naissances vivantes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q032",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Une estimation est de 712 décès par jour. Quelles interprétations de cette moyenne sont correctes ?",
+    "choices": [
+      "Cela correspond à environ un décès toutes les deux minutes.",
+      "Cela correspond à deux décès par minute.",
+      "Cela prouve que chaque région a le même nombre de décès.",
+      "Il s’agit d’une moyenne et non d’un espacement régulier des décès.",
+      "La conversion démontre la cause des décès."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "explanation": "Une journée contient 1 440 minutes : 712/1 440 ≈ 0,49 par minute. La répartition temporelle ou géographique ne se déduit pas de cette moyenne. A. Vrai. 712 divisé par 1 440 vaut environ 0,49 décès par minute. B. Faux. Deux par minute donneraient 2880 par jour. C. Faux. Le total journalier ne renseigne pas la répartition géographique. D. Vrai. Le calcul est une moyenne, pas une cadence uniforme. E. Faux. Une conversion de durée ne démontre pas une causalité.",
+    "announcedCorrectCount": 2,
+    "number": 32,
+    "rationales": [
+      "712 divisé par 1 440 vaut environ 0,49 décès par minute.",
+      "Deux par minute donneraient 2880 par jour.",
+      "Le total journalier ne renseigne pas la répartition géographique.",
+      "Le calcul est une moyenne, pas une cadence uniforme.",
+      "Une conversion de durée ne démontre pas une causalité."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q032_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Une moyenne de 712 décès par jour correspond à quel ordre de grandeur par minute ?",
+        "answers": [
+          "Environ 0,49 décès par minute, soit environ un décès toutes les deux minutes."
+        ],
+        "explanation": "Environ 0,49 décès par minute, soit environ un décès toutes les deux minutes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q033",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "La mortalité néonatale concerne les décès :",
+    "choices": [
+      "Jusqu’au premier anniversaire",
+      "Pendant les 28 premiers jours de vie",
+      "Liés uniquement au VIH",
+      "Exclusivement au-delà de 42 jours",
+      "Avant 5 ans sans précision"
+    ],
+    "answers": [
+      1
+    ],
+    "explanation": "La période néonatale correspond aux 28 premiers jours de vie (jours 0 à 27 révolus). A. Faux. Le premier anniversaire délimite la mortalité infantile, pas néonatale. B. Vrai. Les 28 premiers jours correspondent aux jours 0 à 27 révolus. C. Faux. La période néonatale ne se définit pas par une cause infectieuse particulière. D. Faux. Ce seuil ne correspond pas aux premiers jours de vie. E. Faux. Le seuil de cinq ans couvre une autre période.",
+    "announcedCorrectCount": 1,
+    "number": 33,
+    "rationales": [
+      "Le premier anniversaire délimite la mortalité infantile, pas néonatale.",
+      "Les 28 premiers jours correspondent aux jours 0 à 27 révolus.",
+      "La période néonatale ne se définit pas par une cause infectieuse particulière.",
+      "Ce seuil ne correspond pas aux premiers jours de vie.",
+      "Le seuil de cinq ans couvre une autre période."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q033_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quels jours couvre la période néonatale ?",
+        "answers": [
+          "De la naissance au 27 e jour inclus (avant 28 jours)."
+        ],
+        "explanation": "De la naissance au 27 e jour inclus (avant 28 jours)."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q034",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "Quelle définition est exacte ?",
+    "choices": [
+      "Under-five mortality : décès avant 5 ans",
+      "Infant mortality : décès avant 1 an",
+      "Infant mortality : décès avant 10 ans",
+      "Toutes ces mesures ont le même dénominateur et même horizon",
+      "Néonatal : décès dans les 42 jours après grossesse de la mère"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "explanation": "L’anglais distingue infant mortality (< 1 an) et under-five mortality (< 5 ans). A. Vrai. La mortalité avant cinq ans couvre les décès avant cet anniversaire. B. Vrai. La mortalité infantile correspond aux décès avant un an. C. Faux. Dix ans n’est pas la limite de la mortalité infantile. D. Faux. Les horizons sont différents, même si les naissances vivantes peuvent servir de référence. E. Faux. Les 42 jours suivant la grossesse concernent la mère.",
+    "announcedCorrectCount": 2,
+    "number": 34,
+    "rationales": [
+      "La mortalité avant cinq ans couvre les décès avant cet anniversaire.",
+      "La mortalité infantile correspond aux décès avant un an.",
+      "Dix ans n’est pas la limite de la mortalité infantile.",
+      "Les horizons sont différents, même si les naissances vivantes peuvent servir de référence.",
+      "Les 42 jours suivant la grossesse concernent la mère."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q034_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Différence entre mortalité infantile et mortalité des moins de cinq ans ?",
+        "answers": [
+          "Avant 1 an pour l’infantile ; avant 5 ans pour la seconde."
+        ],
+        "explanation": "Avant 1 an pour l’infantile ; avant 5 ans pour la seconde."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q035",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "easy",
+    "question": "Parmi les cibles ODD 3.2 pour 2030, lesquelles sont correctes ?",
+    "choices": [
+      "Mortalité des moins de 5 ans ≤ 25 pour 1 000",
+      "Moins de 5 ans ≤ 12 pour 100 000",
+      "Mortalité néonatale ≤ 12 pour 1 000 naissances vivantes",
+      "Absence de cible pour les enfants",
+      "Néonatale ≤ 70 pour 100 000"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "explanation": "Les pays visent 12 décès néonatals et 25 décès avant cinq ans, respectivement pour 1 000 naissances vivantes. A. Vrai. La cible avant cinq ans est 25 pour 1 000 naissances vivantes. B. Faux. Le seuil et le multiplicateur sont ici incorrects. C. Vrai. La cible néonatale est 12 pour 1 000 naissances vivantes. D. Faux. Des objectifs sont bien présentés pour les enfants. E. Faux. 70 pour 100 000 concerne la cible de mortalité maternelle.",
+    "announcedCorrectCount": 2,
+    "number": 35,
+    "rationales": [
+      "La cible avant cinq ans est 25 pour 1 000 naissances vivantes.",
+      "Le seuil et le multiplicateur sont ici incorrects.",
+      "La cible néonatale est 12 pour 1 000 naissances vivantes.",
+      "Des objectifs sont bien présentés pour les enfants.",
+      "70 pour 100 000 concerne la cible de mortalité maternelle."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q035_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quelles cibles ODD 3.2 pour les enfants ?",
+        "answers": [
+          "Au plus 12 décès néonatals et 25 décès avant 5 ans pour 1 000 naissances vivantes."
+        ],
+        "explanation": "Au plus 12 décès néonatals et 25 décès avant 5 ans pour 1 000 naissances vivantes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q036",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Que montrent les courbes historiques de mortalité des moins de cinq ans ?",
+    "choices": [
+      "Un ralentissement de la baisse sur une période récente",
+      "L’inversion générale de toutes les courbes",
+      "Des différences persistantes entre régions",
+      "Une baisse globale depuis 2000",
+      "L’égalité des indicateurs entre régions dès 2015"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Les deux mortalités diminuent dans l’ensemble, mais les disparités régionales restent fortes et les progrès récents ralentissent. A. Vrai. Les courbes présentées montrent un ralentissement récent de la baisse. B. Faux. Une inversion générale n’est pas le constat présenté. C. Vrai. Les écarts entre régions persistent. D. Vrai. La tendance mondiale présentée est globalement à la baisse. E. Faux. Une baisse ne signifie pas égalité entre régions.",
+    "announcedCorrectCount": 3,
+    "number": 36,
+    "rationales": [
+      "Les courbes présentées montrent un ralentissement récent de la baisse.",
+      "Une inversion générale n’est pas le constat présenté.",
+      "Les écarts entre régions persistent.",
+      "La tendance mondiale présentée est globalement à la baisse.",
+      "Une baisse ne signifie pas égalité entre régions."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q036_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quelle tendance générale suit la mortalité avant cinq ans ?",
+        "answers": [
+          "Une baisse mondiale, mais des écarts régionaux persistants."
+        ],
+        "explanation": "Une baisse mondiale, mais des écarts régionaux persistants."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q037",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Dans un exemple fictif,2 décès maternels sont comptés pour 10 000 naissances vivantes. Quel RMM pour 100 000 naissances vivantes obtient-on ?",
+    "choices": [
+      "20 pour 100 000 naissances vivantes.",
+      "20%des grossesses.",
+      "2 pour 100 000 naissances vivantes.",
+      "200 pour 100 000 naissances vivantes.",
+      "Le taux de mortalité de tous les habitants."
+    ],
+    "rationales": [
+      "2/10 000 × 100 000=20.",
+      "Ce n’est ni le dénominateur ni l’unité du calcul.",
+      "Le changement d’échelle n’a pas été appliqué.",
+      "Le facteur appliqué est dix fois trop grand.",
+      "Le calcul porte sur les décès maternels et les naissances vivantes."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "Le RMM est ici 20 pour 100 000 naissances vivantes ; il ne s’agit pas d’un taux calculé sur toute la population. A. Vrai. 2/10 000 × 100 000=20. B. Faux. Ce n’est ni le dénominateur ni l’unité du calcul. C. Faux. Le changement d’échelle n’a pas été appliqué. D. Faux. Le facteur appliqué est dix fois trop grand. E. Faux. Le calcul porte sur les décès maternels et les naissances vivantes.",
+    "number": 37,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q037_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Comment calculer un RMM pour 100 000 naissances vivantes ?",
+        "answers": [
+          "Décès maternels divisés par naissances vivantes, multipliés par 100 000."
+        ],
+        "explanation": "Décès maternels divisés par naissances vivantes, multipliés par 100 000."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q038",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Pourquoi rapport et taux de mortalité maternelle ne sont-ils pas interchangeables ?",
+    "choices": [
+      "Le taux maternel se rapporte aux seuls hommes.",
+      "Le RMM rapporte les décès aux naissances vivantes.",
+      "Les deux termes impliquent toujours le même dénominateur.",
+      "Le taux maternel utilise une population de femmes et une durée.",
+      "Le RMM compte les décès des nouveau-nés."
+    ],
+    "rationales": [
+      "Cette population n’est pas la référence définie.",
+      "C’est le dénominateur du rapport présenté.",
+      "Le dénominateur change le sens de la mesure.",
+      "La référence diffère de celle du RMM.",
+      "Le numérateur porte sur les décès maternels."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Identifier le dénominateur évite de confondre deux mesures portant sur les décès maternels. A. Faux. Cette population n’est pas la référence définie. B. Vrai. C’est le dénominateur du rapport présenté. C. Faux. Le dénominateur change le sens de la mesure. D. Vrai. La référence diffère de celle du RMM. E. Faux. Le numérateur porte sur les décès maternels.",
+    "number": 38,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q038_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Quel dénominateur distingue le RMM du taux maternel présenté ?",
+        "answers": [
+          "Le RMM utilise les naissances vivantes ; le taux maternel considère les femmes en âge de procréer sur une durée."
+        ],
+        "explanation": "Le RMM utilise les naissances vivantes ; le taux maternel considère les femmes en âge de procréer sur une durée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q039",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Un décès survient à 40 jours de vie. À quelles périodes de mortalité appartient-il ?",
+    "choices": [
+      "Aucune catégorie, car les catégories sont mutuellement exclusives.",
+      "Mortalité néonatale.",
+      "Décès maternel du seul fait de son âge.",
+      "Mortalité avant cinq ans.",
+      "Mortalité avant un an."
+    ],
+    "rationales": [
+      "Les périodes avant un an et avant cinq ans sont emboîtées.",
+      "La période néonatale s’arrête avant 28 jours.",
+      "Le décès concerne ici l’enfant ; la définition maternelle est différente.",
+      "40 jours est inférieur à cinq ans.",
+      "40 jours est inférieur à un an."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Les horizons d’âge peuvent être emboîtés ; néonatal, infantile et avant cinq ans ne sont pas synonymes. A. Faux. Les périodes avant un an et avant cinq ans sont emboîtées. B. Faux. La période néonatale s’arrête avant 28 jours. C. Faux. Le décès concerne ici l’enfant ; la définition maternelle est différente. D. Vrai. 40 jours est inférieur à cinq ans. E. Vrai. 40 jours est inférieur à un an.",
+    "number": 39,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q039_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Un décès à 40 jours de vie est-il néonatal ?",
+        "answers": [
+          "Non : il survient après les 27 jours révolus. Il appartient aux décès avant un an et avant cinq ans."
+        ],
+        "explanation": "Non : il survient après les 27 jours révolus. Il appartient aux décès avant un an et avant cinq ans."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q040",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Mortalités maternelle et des enfants",
+    "difficulty": "medium",
+    "question": "Une mortalité diminue mais reste au-dessus de sa cible, tandis que la baisse ralentit. Quelles conclusions sont justifiées ?",
+    "choices": [
+      "Une amélioration est observée.",
+      "La seule baisse garantit l’atteinte future à la date prévue.",
+      "Une cible future doit être interprétée comme une valeur déjà mesurée.",
+      "Le ralentissement doit être pris en compte.",
+      "La cible n’est pas encore atteinte."
+    ],
+    "rationales": [
+      "La valeur diminue dans la situation décrite.",
+      "La trajectoire future n’est pas garantie.",
+      "Objectif et observation sont distincts.",
+      "La vitesse du progrès influence la lecture de la trajectoire.",
+      "La valeur demeure au-dessus de la cible."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "Le sens de l’évolution, sa vitesse et la distance à la cible répondent à trois questions différentes. A. Vrai. La valeur diminue dans la situation décrite. B. Faux. La trajectoire future n’est pas garantie. C. Faux. Objectif et observation sont distincts. D. Vrai. La vitesse du progrès influence la lecture de la trajectoire. E. Vrai. La valeur demeure au-dessus de la cible.",
+    "number": 40,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q040_card",
+        "theme": "Mortalités maternelle et des enfants",
+        "front": "Une amélioration d’un indicateur prouve-t-elle que la cible est atteinte ?",
+        "answers": [
+          "Non. Il faut comparer la valeur à la cible et considérer le rythme de l’évolution."
+        ],
+        "explanation": "Non. Il faut comparer la valeur à la cible et considérer le rythme de l’évolution."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q041",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "easy",
+    "question": "Huit personnes malades parmi 100 observées à un instant :",
+    "choices": [
+      "La prévalence inclut des cas anciens et récents",
+      "Prévalence ponctuelle de 8 %",
+      "Incidence cumulée de 8 % nécessairement",
+      "Il faut connaître les nouveaux cas pour calculer l’incidence",
+      "Le taux d’incidence est 8 personnes-années"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Huit personnes déjà malades sur 100 à un instant représentent une prévalence de 8 %. On ignore combien de cas sont nouveaux ; il serait incorrect de parler d’incidence cumulée ou de cas par personne-année. A. Vrai. La photographie à un instant inclut les cas présents, anciens ou récents. B. Vrai. 8 divisé par 100 donne 8%. C. Faux. On ignore les nouveaux cas sur une période. D. Vrai. L’incidence nécessite le décompte des nouveaux cas. E. Faux. Les personnes-années sont un dénominateur de temps, pas une valeur de prévalence.",
+    "announcedCorrectCount": 3,
+    "number": 41,
+    "rationales": [
+      "La photographie à un instant inclut les cas présents, anciens ou récents.",
+      "8 divisé par 100 donne 8%.",
+      "On ignore les nouveaux cas sur une période.",
+      "L’incidence nécessite le décompte des nouveaux cas.",
+      "Les personnes-années sont un dénominateur de temps, pas une valeur de prévalence."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q041_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Qu’est-ce que la prévalence ponctuelle ?",
+        "answers": [
+          "La proportion de cas existants dans une population à un instant donné."
+        ],
+        "explanation": "La proportion de cas existants dans une population à un instant donné."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q042",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "medium",
+    "question": "Neuf nouveaux cas parmi 100 personnes initialement indemnes suivies intégralement pendant deux ans :",
+    "choices": [
+      "Un taux de 9 cas/personne-année",
+      "Le risque cumulé porte sur la période entière",
+      "Incidence cumulée de 9 % sur 2 ans",
+      "Prévalence ponctuelle automatiquement 9 %",
+      "Des cas apparus pendant le suivi"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Neuf nouveaux cas parmi 100 personnes initialement indemnes suivies intégralement deux ans donnent une incidence cumulée de 9 % sur deux ans. Cela ne suffit pas à calculer une prévalence ni une densité d’incidence. A. Faux. Le temps-personne n’est pas fourni par le seul effectif initial. B. Vrai. La période de deux ans délimite le risque cumulé. C. Vrai. 9 nouveaux cas divisés par 100 sujets donnent 9%sur deux ans. D. Faux. Les cas encore présents à une date ne sont pas précisés. E. Vrai. Ce sont bien des événements apparus pendant le suivi.",
+    "announcedCorrectCount": 3,
+    "number": 42,
+    "rationales": [
+      "Le temps-personne n’est pas fourni par le seul effectif initial.",
+      "La période de deux ans délimite le risque cumulé.",
+      "9 nouveaux cas divisés par 100 sujets donnent 9%sur deux ans.",
+      "Les cas encore présents à une date ne sont pas précisés.",
+      "Ce sont bien des événements apparus pendant le suivi."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q042_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Neuf nouveaux cas sur 100 sujets suivis deux ans : incidence cumulée ?",
+        "answers": [
+          "9 % sur deux ans, si le suivi est complet."
+        ],
+        "explanation": "9 % sur deux ans, si le suivi est complet."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q043",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "easy",
+    "question": "Le dénominateur d’un taux d’incidence comprend :",
+    "choices": [
+      "Les naissances du territoire quelle que soit la maladie",
+      "Le temps perdu de vue doit être compté comme du temps réellement observé à risque",
+      "Des personnes-années ou personnes-mois",
+      "La somme des personnes-temps à risque",
+      "Uniquement les personnes malades au dernier jour"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le taux d’incidence rapporte les nouveaux cas à la somme des temps-personnes réellement passés à risque (personnes-années ou personnes-mois). Une durée non observée ne s’ajoute pas au dénominateur. A. Faux. Les naissances ne sont pas le dénominateur général du taux d’incidence. B. Faux. Un temps non observé n’est pas ajouté comme un temps réellement suivi. C. Vrai. Ces unités représentent du temps cumulé de suivi. D. Vrai. Il faut additionner les durées à risque observées. E. Faux. Le dénominateur ne se limite pas aux malades à la fin.",
+    "announcedCorrectCount": 2,
+    "number": 43,
+    "rationales": [
+      "Les naissances ne sont pas le dénominateur général du taux d’incidence.",
+      "Un temps non observé n’est pas ajouté comme un temps réellement suivi.",
+      "Ces unités représentent du temps cumulé de suivi.",
+      "Il faut additionner les durées à risque observées.",
+      "Le dénominateur ne se limite pas aux malades à la fin."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q043_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Quel dénominateur utiliser pour un taux d’incidence ?",
+        "answers": [
+          "La somme des temps-personnes réellement observés à risque."
+        ],
+        "explanation": "La somme des temps-personnes réellement observés à risque."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q044",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "medium",
+    "question": "À propos des indicateurs de fréquence, quelles propositions sont exactes ?",
+    "choices": [
+      "La prévalence décrit exclusivement les nouveaux cas",
+      "Le taux d’incidence et la contagiosité sont synonymes",
+      "Le taux d’incidence renseigne la vitesse d’apparition des nouveaux cas",
+      "Une personne perdue de vue n’apporte pas nécessairement le même temps de suivi que les autres",
+      "La prévalence n’a pas de dénominateur"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "La densité d’incidence utilise le temps d’observation ; elle n’est pas une mesure directe de contagiosité. A. Faux. Les cas présents peuvent avoir commencé auparavant. B. Faux. La vitesse d’apparition n’est pas synonyme de contagiosité. C. Vrai. Le taux rapporte les événements au temps de suivi. D. Vrai. Le suivi peut être interrompu avant la fin prévue. E. Faux. Une proportion de cas présents a bien un dénominateur.",
+    "announcedCorrectCount": 2,
+    "number": 44,
+    "rationales": [
+      "Les cas présents peuvent avoir commencé auparavant.",
+      "La vitesse d’apparition n’est pas synonyme de contagiosité.",
+      "Le taux rapporte les événements au temps de suivi.",
+      "Le suivi peut être interrompu avant la fin prévue.",
+      "Une proportion de cas présents a bien un dénominateur."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q044_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Le taux d’incidence est-il une mesure de contagiosité ?",
+        "answers": [
+          "Non. Il mesure la vitesse de survenue de nouveaux cas."
+        ],
+        "explanation": "Non. Il mesure la vitesse de survenue de nouveaux cas."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q045",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "easy",
+    "question": "Cent personnes à risque sont suivies deux ans sans événement ni sortie de suivi. Quelle durée cumulée obtient-on ?",
+    "choices": [
+      "2 personnes-années.",
+      "Une prévalence de 200%.",
+      "200 personnes différentes.",
+      "100 cas nouveaux.",
+      "200 personnes-années."
+    ],
+    "rationales": [
+      "Deux ans ne correspondent qu’au suivi d’une seule personne.",
+      "Il ne s’agit pas d’une proportion de malades.",
+      "L’unité porte sur un cumul de temps, pas sur un effectif.",
+      "Aucun événement n’est décrit.",
+      "100 × 2=200 personnes-années."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "Les personnes-années additionnent les durées individuelles à risque. A. Faux. Deux ans ne correspondent qu’au suivi d’une seule personne. B. Faux. Il ne s’agit pas d’une proportion de malades. C. Faux. L’unité porte sur un cumul de temps, pas sur un effectif. D. Faux. Aucun événement n’est décrit. E. Vrai. 100 × 2=200 personnes-années.",
+    "number": 45,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q045_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "À quoi correspondent 200 personnes-années dans un suivi de 100 personnes ?",
+        "answers": [
+          "À 100 personnes suivies chacune pendant deux ans, si toutes restent à risque et suivies."
+        ],
+        "explanation": "À 100 personnes suivies chacune pendant deux ans, si toutes restent à risque et suivies."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q046",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "hard",
+    "question": "Quatre sujets deviennent malades exactement à un an ;96 autres restent suivis deux ans et cinq d’entre eux deviennent malades exactement en fin de deuxième année. Il n’y a pas d’autre sortie. Quels résultats sont corrects ?",
+    "choices": [
+      "196 personnes sont devenues malades.",
+      "9/196 nouveau cas par personne-année.",
+      "196 personnes-années à risque.",
+      "Un taux annuel exactement égal à 9%.",
+      "9 personnes-années à risque."
+    ],
+    "rationales": [
+      "Le nombre de sujets initial est 100 et les cas sont 9.",
+      "Les 9 événements sont rapportés au temps cumulé.",
+      "4 × 1+96 × 2=196.",
+      "Le taux d’incidence est rapporté au temps-personne, pas au seul effectif initial.",
+      "Neuf est le nombre de cas, pas le temps cumulé."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Le moment exact des événements est explicitement fourni pour permettre le calcul de 196 personnes-années. A. Faux. Le nombre de sujets initial est 100 et les cas sont 9. B. Vrai. Les 9 événements sont rapportés au temps cumulé. C. Vrai. 4 × 1+96 × 2=196. D. Faux. Le taux d’incidence est rapporté au temps-personne, pas au seul effectif initial. E. Faux. Neuf est le nombre de cas, pas le temps cumulé.",
+    "number": 46,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q046_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Avec 9 nouveaux cas et 196 personnes-années à risque, quel taux d’incidence calcule-t-on ?",
+        "answers": [
+          "9/196≈0,046 nouveau cas par personne-année, soit environ 4,6 pour 100 personnes-années."
+        ],
+        "explanation": "9/196≈0,046 nouveau cas par personne-année, soit environ 4,6 pour 100 personnes-années."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q047",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "hard",
+    "question": "Sans aucun cas de maladie,60 personnes quittent un suivi exactement après un an et 40 restent deux ans. Quel temps-personne observé obtient-on ?",
+    "choices": [
+      "40 personnes-années.",
+      "140 personnes-années.",
+      "60 cas nouveaux.",
+      "100 personnes-années parce qu’il y a 100 personnes.",
+      "200 personnes-années, en comptant le suivi prévu pour tous."
+    ],
+    "rationales": [
+      "Les 60 premières personnes ont aussi contribué au suivi.",
+      "60 × 1+40 × 2=140.",
+      "Les 60 sorties ne sont pas des cas de maladie.",
+      "Les durées individuelles ne sont pas toutes d’un an.",
+      "Le temps après la sortie n’est pas observé."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "Le dénominateur utilise les durées effectivement observées à risque. A. Faux. Les 60 premières personnes ont aussi contribué au suivi. B. Vrai. 60 × 1+40 × 2=140. C. Faux. Les 60 sorties ne sont pas des cas de maladie. D. Faux. Les durées individuelles ne sont pas toutes d’un an. E. Faux. Le temps après la sortie n’est pas observé.",
+    "number": 47,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q047_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Comment une sortie de suivi intervient-elle dans le temps-personne ?",
+        "answers": [
+          "Chaque personne contribue uniquement pendant sa durée observée à risque avant sa sortie."
+        ],
+        "explanation": "Chaque personne contribue uniquement pendant sa durée observée à risque avant sa sortie."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q048",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "medium",
+    "question": "Une photographie montre la même proportion de personnes malades dans deux populations. Que sait-on de leurs nouveaux cas pendant l’année précédente ?",
+    "choices": [
+      "Aucun dénominateur n’est utilisé dans une prévalence.",
+      "Il faut des données sur les nouveaux cas pour comparer l’incidence.",
+      "Leur incidence peut être différente.",
+      "L’incidence est forcément identique.",
+      "La prévalence permet de connaître l’heure de chaque nouveau cas."
+    ],
+    "rationales": [
+      "Les cas présents sont rapportés à une population.",
+      "Ce sont les événements nécessaires à la mesure.",
+      "La photographie ne décrit pas les entrées en maladie sur la période.",
+      "Le même stock de cas ne renseigne pas le flux antérieur.",
+      "Elle ne fournit pas cet historique."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Prévalence et incidence décrivent deux dimensions distinctes de la fréquence. A. Faux. Les cas présents sont rapportés à une population. B. Vrai. Ce sont les événements nécessaires à la mesure. C. Vrai. La photographie ne décrit pas les entrées en maladie sur la période. D. Faux. Le même stock de cas ne renseigne pas le flux antérieur. E. Faux. Elle ne fournit pas cet historique.",
+    "number": 48,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q048_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Une prévalence identique implique-t-elle une incidence identique ?",
+        "answers": [
+          "Non. La photographie des cas présents ne suffit pas à reconstituer les nouveaux cas sur une période."
+        ],
+        "explanation": "Non. La photographie des cas présents ne suffit pas à reconstituer les nouveaux cas sur une période."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q049",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Prévalence, incidence et personnes-temps",
+    "difficulty": "hard",
+    "question": "Une maladie touche 100 personnes dans une population de 10 000 habitants ;10 malades en décèdent sur la période étudiée. Quelles lectures sont correctes ?",
+    "choices": [
+      "La mortalité et la létalité sont automatiquement égales.",
+      "La létalité est 10/10 000.",
+      "Le nombre de décès suffit à calculer la vitesse d’apparition des cas.",
+      "La létalité est 10/100=10%.",
+      "Les décès liés à cette maladie représentent 1 pour 1 000 habitants."
+    ],
+    "rationales": [
+      "Leurs dénominateurs diffèrent.",
+      "Ce dénominateur est la population totale.",
+      "Le temps-personne et les nouveaux cas ne sont pas donnés.",
+      "Le dénominateur est le nombre de malades.",
+      "10/10 000 × 1 000=1."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "L’exercice sépare le risque parmi les malades et la place des décès dans toute la population. A. Faux. Leurs dénominateurs diffèrent. B. Faux. Ce dénominateur est la population totale. C. Faux. Le temps-personne et les nouveaux cas ne sont pas donnés. D. Vrai. Le dénominateur est le nombre de malades. E. Vrai. 10/10 000 × 1 000=1.",
+    "number": 49,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q049_card",
+        "theme": "Prévalence, incidence et personnes-temps",
+        "front": "Quelle différence de dénominateur distingue mortalité et létalité ?",
+        "answers": [
+          "La mortalité rapporte les décès à la population ; la létalité les rapporte aux personnes atteintes de la maladie."
+        ],
+        "explanation": "La mortalité rapporte les décès à la population ; la létalité les rapporte aux personnes atteintes de la maladie."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q050",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "easy",
+    "question": "Quelle catégorie domine la mortalité globale selon les tendances présentées ?",
+    "choices": [
+      "Exclusivement tuberculose",
+      "Uniquement accidents",
+      "Maladies non transmissibles",
+      "Aucune grande catégorie",
+      "Uniquement maladies vectorielles"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "À l’échelle mondiale, les maladies non transmissibles sont à l’origine de la majorité des décès. A. Faux. Une seule infection ne représente pas la catégorie dominante présentée. B. Faux. Les accidents ne constituent pas la catégorie dominante présentée. C. Vrai. Les MNT sont majoritaires parmi les décès dans le monde. D. Faux. Des catégories de causes sont bien distinguées. E. Faux. Les maladies vectorielles ne constituent pas à elles seules cette majorité.",
+    "announcedCorrectCount": 1,
+    "number": 50,
+    "rationales": [
+      "Une seule infection ne représente pas la catégorie dominante présentée.",
+      "Les accidents ne constituent pas la catégorie dominante présentée.",
+      "Les MNT sont majoritaires parmi les décès dans le monde.",
+      "Des catégories de causes sont bien distinguées.",
+      "Les maladies vectorielles ne constituent pas à elles seules cette majorité."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q050_card",
+        "theme": "Transition et inégalités",
+        "front": "Quelle famille domine les décès dans le monde ?",
+        "answers": [
+          "Les maladies non transmissibles."
+        ],
+        "explanation": "Les maladies non transmissibles."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q051",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "easy",
+    "question": "Quelles sont les maladies non transmissibles ?",
+    "choices": [
+      "Paludisme",
+      "Diabète",
+      "Tuberculose active",
+      "Maladies cardiovasculaires",
+      "Cancers"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Les MNT comprennent notamment cardiovasculaires, diabète, cancers et maladies respiratoires chroniques. Paludisme et tuberculose sont infectieux. A. Faux. Le paludisme est une maladie infectieuse parasitaire. B. Vrai. Le diabète appartient aux MNT présentées. C. Faux. La tuberculose active est une maladie infectieuse. D. Vrai. Le groupe cardiovasculaire appartient aux MNT. E. Vrai. Les cancers appartiennent aux MNT présentées.",
+    "announcedCorrectCount": 3,
+    "number": 51,
+    "rationales": [
+      "Le paludisme est une maladie infectieuse parasitaire.",
+      "Le diabète appartient aux MNT présentées.",
+      "La tuberculose active est une maladie infectieuse.",
+      "Le groupe cardiovasculaire appartient aux MNT.",
+      "Les cancers appartiennent aux MNT présentées."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q051_card",
+        "theme": "Transition et inégalités",
+        "front": "Quelles sont les quatre grandes catégories de MNT ?",
+        "answers": [
+          "Maladies cardiovasculaires ; Cancers ; Diabète ; Maladies respiratoires chroniques"
+        ],
+        "explanation": "Maladies cardiovasculaires ; Cancers ; Diabète ; Maladies respiratoires chroniques"
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q052",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "medium",
+    "question": "La transition épidémiologique peut comporter :",
+    "choices": [
+      "L’élimination instantanée de tout risque infectieux",
+      "Une égalité parfaite entre pays",
+      "Une réduction relative du poids des infections",
+      "Une baisse obligatoire de l’espérance de vie pendant toute la transition",
+      "La disparition des maladies chroniques dans les pays à revenu élevé"
+    ],
+    "answers": [
+      2
+    ],
+    "explanation": "La transition épidémiologique se manifeste souvent par la diminution relative du poids de certaines infections. Elle s’accompagne généralement d’un poids important des maladies chroniques et d’une amélioration de la survie ; elle n’efface pas toutes les infections. A. Faux. Le recul relatif ne signifie pas disparition de toutes les infections. B. Faux. Les transitions et les ressources diffèrent entre territoires. C. Vrai. Le poids relatif des infections peut diminuer. D. Faux. Une baisse permanente de l’espérance de vie n’est pas le sens du phénomène. E. Faux. Les maladies chroniques restent importantes dans les pays à revenu élevé.",
+    "announcedCorrectCount": 1,
+    "number": 52,
+    "rationales": [
+      "Le recul relatif ne signifie pas disparition de toutes les infections.",
+      "Les transitions et les ressources diffèrent entre territoires.",
+      "Le poids relatif des infections peut diminuer.",
+      "Une baisse permanente de l’espérance de vie n’est pas le sens du phénomène.",
+      "Les maladies chroniques restent importantes dans les pays à revenu élevé."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q052_card",
+        "theme": "Transition et inégalités",
+        "front": "Qu’est-ce que la transition épidémiologique ?",
+        "answers": [
+          "La modification du poids relatif des maladies, souvent vers les pathologies chroniques."
+        ],
+        "explanation": "La modification du poids relatif des maladies, souvent vers les pathologies chroniques."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q053",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "medium",
+    "question": "Comment interpréter un gradient Nord-Sud des indicateurs de santé ?",
+    "choices": [
+      "Comme un raccourci de disparités historiques",
+      "En tenant compte des déterminants sociaux et de l’accès aux soins",
+      "Comme une description parfaite de chaque pays",
+      "Avec des inégalités possibles dans chaque pays",
+      "Comme une différence exclusivement génétique"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Les disparités sanitaires dépendent des déterminants et de l’accès, et existent aussi à l’intérieur des pays. A. Vrai. Le gradient est un raccourci décrivant des disparités. B. Vrai. Les ressources et les conditions d’accès participent à l’interprétation. C. Faux. Chaque pays présente une situation plus complexe que ce raccourci. D. Vrai. Des écarts peuvent exister à l’intérieur d’un même pays. E. Faux. Une explication exclusivement génétique n’est pas celle de ce panorama.",
+    "announcedCorrectCount": 3,
+    "number": 53,
+    "rationales": [
+      "Le gradient est un raccourci décrivant des disparités.",
+      "Les ressources et les conditions d’accès participent à l’interprétation.",
+      "Chaque pays présente une situation plus complexe que ce raccourci.",
+      "Des écarts peuvent exister à l’intérieur d’un même pays.",
+      "Une explication exclusivement génétique n’est pas celle de ce panorama."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q053_card",
+        "theme": "Transition et inégalités",
+        "front": "Pourquoi éviter un contraste Nord–Sud trop simpliste ?",
+        "answers": [
+          "Les inégalités existent également au sein de chaque pays."
+        ],
+        "explanation": "Les inégalités existent également au sein de chaque pays."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q054",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "medium",
+    "question": "Un même territoire connaît une charge importante de tuberculose et de diabète. Quelles conclusions sont exactes ?",
+    "choices": [
+      "Le recul de certaines infections ne fait pas disparaître toutes les maladies infectieuses",
+      "Les déterminants sociaux peuvent jouer sur ces deux groupes de maladies",
+      "La présence du diabète rend la tuberculose non contagieuse",
+      "Il peut cumuler maladies transmissibles et non transmissibles",
+      "Ce cumul prouve qu’aucune transition épidémiologique n’existe"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "La double charge désigne la coexistence d’infections et de maladies non transmissibles. Le vieillissement et les progrès contre certaines infections n’en éliminent pas toutes les formes ; la situation sociale peut influencer les deux catégories. A. Vrai. Le recul de certaines infections ne signifie pas leur disparition totale. B. Vrai. Les conditions sociales peuvent influencer les deux charges. C. Faux. Le diabète ne permet pas de conclure à la contagiosité de la tuberculose. D. Vrai. Une infection et une MNT peuvent coexister dans un territoire. E. Faux. Ce cumul ne réfute pas à lui seul une transition épidémiologique.",
+    "announcedCorrectCount": 3,
+    "number": 54,
+    "rationales": [
+      "Le recul de certaines infections ne signifie pas leur disparition totale.",
+      "Les conditions sociales peuvent influencer les deux charges.",
+      "Le diabète ne permet pas de conclure à la contagiosité de la tuberculose.",
+      "Une infection et une MNT peuvent coexister dans un territoire.",
+      "Ce cumul ne réfute pas à lui seul une transition épidémiologique."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q054_card",
+        "theme": "Transition et inégalités",
+        "front": "Que signifie « double charge » épidémiologique ?",
+        "answers": [
+          "La coexistence d’infections et de maladies chroniques dans une population."
+        ],
+        "explanation": "La coexistence d’infections et de maladies chroniques dans une population."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q055",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Transition et inégalités",
+    "difficulty": "medium",
+    "question": "Une personne connaît l’intérêt d’une moustiquaire mais ne peut pas s’en procurer. Quelles interventions répondent au problème décrit ?",
+    "choices": [
+      "Déduire qu’aucune prévention collective n’est utile.",
+      "Agir sur la disponibilité des moyens de protection.",
+      "Conclure qu’elle ignore nécessairement le risque.",
+      "Identifier les contraintes économiques.",
+      "Répéter l’information comme seule réponse possible."
+    ],
+    "rationales": [
+      "Une action sur l’accès matériel peut être pertinente.",
+      "L’obstacle décrit est matériel.",
+      "La personne connaît déjà le moyen de prévention.",
+      "Elles peuvent empêcher d’obtenir une protection.",
+      "Cela ne lève pas à soi seul le manque matériel."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Les inégalités de prévention ne s’expliquent pas uniquement par le manque d’information. A. Faux. Une action sur l’accès matériel peut être pertinente. B. Vrai. L’obstacle décrit est matériel. C. Faux. La personne connaît déjà le moyen de prévention. D. Vrai. Elles peuvent empêcher d’obtenir une protection. E. Faux. Cela ne lève pas à soi seul le manque matériel.",
+    "number": 55,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q055_card",
+        "theme": "Transition et inégalités",
+        "front": "Pourquoi l’information ne suffit-elle pas toujours à la prévention ?",
+        "answers": [
+          "La connaissance d’un moyen de protection ne garantit pas les ressources matérielles nécessaires pour l’utiliser."
+        ],
+        "explanation": "La connaissance d’un moyen de protection ne garantit pas les ressources matérielles nécessaires pour l’utiliser."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q056",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "easy",
+    "question": "Quelle distinction VIH / sida est exacte ?",
+    "choices": [
+      "Le sida correspond à un virus complètement différent",
+      "Le terme sida signifie simplement la présence de n’importe quel virus.",
+      "Le VIH affecte les défenses immunitaires",
+      "Le sida est le stade avancé de l’infection par le VIH",
+      "Le VIH est une bactérie"
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "explanation": "Le VIH est le virus ; le sida désigne la forme avancée avec immunodéficience sévère et complications. A. Faux. Le sida désigne un stade de l’infection, pas un autre virus. B. Faux. Le sida est un stade avancé de l’infection par le VIH, pas une infection virale quelconque. C. Vrai. Le virus compromet les défenses immunitaires. D. Vrai. Le sida correspond à un stade avancé de l’infection. E. Faux. VIH signifie virus de l’immunodéficience humaine.",
+    "announcedCorrectCount": 2,
+    "number": 56,
+    "rationales": [
+      "Le sida désigne un stade de l’infection, pas un autre virus.",
+      "Le sida est un stade avancé de l’infection par le VIH, pas une infection virale quelconque.",
+      "Le virus compromet les défenses immunitaires.",
+      "Le sida correspond à un stade avancé de l’infection.",
+      "VIH signifie virus de l’immunodéficience humaine."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q056_card",
+        "theme": "Maladies transmissibles",
+        "front": "Le VIH et le sida sont-ils deux virus différents ?",
+        "answers": [
+          "Non. Le sida est un stade avancé de l’infection par le VIH."
+        ],
+        "explanation": "Non. Le sida est un stade avancé de l’infection par le VIH."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q057",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "easy",
+    "question": "À propos du paludisme, quels énoncés sont justes ?",
+    "choices": [
+      "Transmission habituelle par une femelle Anopheles",
+      "P. falciparum associé aux formes graves",
+      "Transmission ordinaire par simple poignée de main",
+      "Agent parasite du genre Plasmodium",
+      "Maladie uniquement présente en France"
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Le paludisme est une maladie parasitaire transmise essentiellement par anophèle femelle ; P. falciparum peut être grave. A. Vrai. La voie vectorielle usuelle implique une femelle Anopheles. B. Vrai. Le cours associe P. falciparum aux formes graves. C. Faux. Une simple poignée de main n’est pas la voie vectorielle usuelle. D. Vrai. Plasmodium est le parasite concerné. E. Faux. Le panorama décrit des zones endémiques hors de France.",
+    "announcedCorrectCount": 3,
+    "number": 57,
+    "rationales": [
+      "La voie vectorielle usuelle implique une femelle Anopheles.",
+      "Le cours associe P. falciparum aux formes graves.",
+      "Une simple poignée de main n’est pas la voie vectorielle usuelle.",
+      "Plasmodium est le parasite concerné.",
+      "Le panorama décrit des zones endémiques hors de France."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q057_card",
+        "theme": "Maladies transmissibles",
+        "front": "Quel parasite et quel vecteur causent le paludisme ?",
+        "answers": [
+          "Plasmodium ; transmission généralement par une femelle Anopheles infectée."
+        ],
+        "explanation": "Plasmodium ; transmission généralement par une femelle Anopheles infectée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q058",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "easy",
+    "question": "Dans le paludisme, les mesures de prévention comportent :",
+    "choices": [
+      "Arrêt de toute prévention dès la première fièvre",
+      "Éducation et prévention territoriale",
+      "Moustiquaires adaptées",
+      "Lutte contre les piqûres et vecteurs",
+      "Uniquement vaccination rougeole"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Les mesures antivectorielles et l’information sont des leviers majeurs ; elles ne remplacent pas le soin rapide des malades. A. Faux. La prévention n’est pas annulée par une fièvre. B. Vrai. La prévention associe aussi information et actions collectives. C. Vrai. Les moustiquaires limitent l’exposition au vecteur. D. Vrai. L’action vise les moustiques et les piqûres. E. Faux. La vaccination contre une autre infection ne résume pas cette prévention.",
+    "announcedCorrectCount": 3,
+    "number": 58,
+    "rationales": [
+      "La prévention n’est pas annulée par une fièvre.",
+      "La prévention associe aussi information et actions collectives.",
+      "Les moustiquaires limitent l’exposition au vecteur.",
+      "L’action vise les moustiques et les piqûres.",
+      "La vaccination contre une autre infection ne résume pas cette prévention."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q058_card",
+        "theme": "Maladies transmissibles",
+        "front": "Quelle prévention réduit les piqûres en zone de paludisme ?",
+        "answers": [
+          "Moustiquaires imprégnées, répulsifs et lutte antivectorielle."
+        ],
+        "explanation": "Moustiquaires imprégnées, répulsifs et lutte antivectorielle."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q059",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "easy",
+    "question": "Concernant la tuberculose latente :",
+    "choices": [
+      "Une infection tuberculeuse latente non active est contagieuse par la toux",
+      "Elle n’est pas contagieuse en elle-même",
+      "Elle se manifeste toujours par hémoptysie",
+      "Elle peut rester asymptomatique",
+      "Elle est due à un parasite"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "Une infection tuberculeuse latente peut rester silencieuse et n’est pas contagieuse par elle-même. Elle peut toutefois évoluer vers une tuberculose active ; la transmission aérienne concerne certaines maladies actives, notamment pulmonaires. A. Faux. La latence ne correspond pas à une maladie pulmonaire contagieuse par la toux. B. Vrai. La latence est décrite comme non contagieuse. C. Faux. Une forme latente n’impose pas de symptômes pulmonaires. D. Vrai. L’infection peut rester silencieuse. E. Faux. La tuberculose est due à une bactérie.",
+    "announcedCorrectCount": 2,
+    "number": 59,
+    "rationales": [
+      "La latence ne correspond pas à une maladie pulmonaire contagieuse par la toux.",
+      "La latence est décrite comme non contagieuse.",
+      "Une forme latente n’impose pas de symptômes pulmonaires.",
+      "L’infection peut rester silencieuse.",
+      "La tuberculose est due à une bactérie."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q059_card",
+        "theme": "Maladies transmissibles",
+        "front": "Une infection tuberculeuse latente est-elle contagieuse ?",
+        "answers": [
+          "Non, à la différence de certaines tuberculoses actives."
+        ],
+        "explanation": "Non, à la différence de certaines tuberculoses actives."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q060",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "medium",
+    "question": "La tuberculose pulmonaire active peut :",
+    "choices": [
+      "Nécessiter plusieurs antibiotiques sur plusieurs mois",
+      "Se transmettre par aérosols",
+      "Être reconnue uniquement par une hémoptysie obligatoire",
+      "Être causée par un moustique anophèle",
+      "Justifier des précautions respiratoires adaptées"
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "La tuberculose pulmonaire active se transmet par l’air ; le traitement est prolongé et la prévention respiratoire est déterminante. A. Vrai. Le principe général est une association prolongée ; aucun schéma précis n’est demandé. B. Vrai. La transmission pulmonaire peut être aérienne. C. Faux. L’hémoptysie n’est pas un symptôme obligatoire dans toutes les formes. D. Faux. Anopheles est le vecteur du paludisme. E. Vrai. La voie aérienne justifie une prévention respiratoire adaptée, sans déduire ici de protocole.",
+    "announcedCorrectCount": 3,
+    "number": 60,
+    "rationales": [
+      "Le principe général est une association prolongée ; aucun schéma précis n’est demandé.",
+      "La transmission pulmonaire peut être aérienne.",
+      "L’hémoptysie n’est pas un symptôme obligatoire dans toutes les formes.",
+      "Anopheles est le vecteur du paludisme.",
+      "La voie aérienne justifie une prévention respiratoire adaptée, sans déduire ici de protocole."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q060_card",
+        "theme": "Maladies transmissibles",
+        "front": "Comment se transmet la tuberculose pulmonaire active ?",
+        "answers": [
+          "Par l’air, via les aérosols infectieux."
+        ],
+        "explanation": "Par l’air, via les aérosols infectieux."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q061",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "easy",
+    "question": "Quel exemple représente un risque infectieux émergent ?",
+    "choices": [
+      "Arthrose",
+      "Dyslipidémie",
+      "L’hypertension artérielle",
+      "Ebola",
+      "La cataracte"
+    ],
+    "answers": [
+      3
+    ],
+    "explanation": "Ebola est un exemple de risque infectieux émergent ou réémergent. L’arthrose et la dyslipidémie ne sont pas des maladies infectieuses. Une maladie émergente ne signifie pas automatiquement pandémie. A. Faux. L’arthrose n’est pas l’exemple infectieux retenu. B. Faux. La dyslipidémie n’est pas une maladie infectieuse. C. Faux. L’HTA n’est pas un agent infectieux émergent. D. Vrai. Ebola est une maladie infectieuse émergente. E. Faux. La cataracte n’est pas l’exemple infectieux retenu.",
+    "announcedCorrectCount": 1,
+    "number": 61,
+    "rationales": [
+      "L’arthrose n’est pas l’exemple infectieux retenu.",
+      "La dyslipidémie n’est pas une maladie infectieuse.",
+      "L’HTA n’est pas un agent infectieux émergent.",
+      "Ebola est une maladie infectieuse émergente.",
+      "La cataracte n’est pas l’exemple infectieux retenu."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q061_card",
+        "theme": "Maladies transmissibles",
+        "front": "Quel exemple de maladie infectieuse illustre une émergence dans le panorama étudié ?",
+        "answers": [
+          "Ebola."
+        ],
+        "explanation": "Ebola."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q062",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies transmissibles",
+    "difficulty": "medium",
+    "question": "Une infection est transmise par un vecteur entre un réservoir et l’être humain. Quelles affirmations sont exactes ?",
+    "choices": [
+      "Toute maladie vectorielle est une maladie non transmissible.",
+      "Il faut distinguer l’agent infectieux et son vecteur.",
+      "Le vecteur et le parasite sont toujours le même organisme.",
+      "Transmissible signifie exclusivement contagieux par poignée de main.",
+      "Elle peut être transmissible sans contact humain direct."
+    ],
+    "rationales": [
+      "La transmission peut utiliser un vecteur.",
+      "Le vecteur transporte l’agent mais n’est pas le même élément.",
+      "Le paludisme distingue Anopheles et Plasmodium.",
+      "Il existe d’autres modes de transmission.",
+      "Le vecteur constitue un intermédiaire."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "Le mécanisme vectoriel illustre la différence entre transmission et contact interhumain direct. A. Faux. La transmission peut utiliser un vecteur. B. Vrai. Le vecteur transporte l’agent mais n’est pas le même élément. C. Faux. Le paludisme distingue Anopheles et Plasmodium. D. Faux. Il existe d’autres modes de transmission. E. Vrai. Le vecteur constitue un intermédiaire.",
+    "number": 62,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q062_card",
+        "theme": "Maladies transmissibles",
+        "front": "Une maladie transmissible exige-t-elle toujours un contact direct entre deux humains ?",
+        "answers": [
+          "Non. Un vecteur peut participer à la transmission."
+        ],
+        "explanation": "Non. Un vecteur peut participer à la transmission."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q063",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies non transmissibles",
+    "difficulty": "easy",
+    "question": "Parmi les facteurs de risque cardiovasculaire, on peut retenir :",
+    "choices": [
+      "Le groupe sanguin comme seule cause",
+      "Tabagisme",
+      "L’absence de toute interaction avec le diabète",
+      "Dyslipidémie",
+      "Hypertension artérielle"
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "HTA, dyslipidémie et tabagisme sont des facteurs majeurs ; le diabète s’ajoute souvent au risque. A. Faux. Un facteur unique ne résume pas le risque cardiovasculaire. B. Vrai. Le tabagisme appartient aux facteurs présentés. C. Faux. Le diabète participe au risque cardiovasculaire. D. Vrai. La dyslipidémie est un facteur de risque. E. Vrai. L’HTA est un facteur de risque cardiovasculaire.",
+    "announcedCorrectCount": 3,
+    "number": 63,
+    "rationales": [
+      "Un facteur unique ne résume pas le risque cardiovasculaire.",
+      "Le tabagisme appartient aux facteurs présentés.",
+      "Le diabète participe au risque cardiovasculaire.",
+      "La dyslipidémie est un facteur de risque.",
+      "L’HTA est un facteur de risque cardiovasculaire."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q063_card",
+        "theme": "Maladies non transmissibles",
+        "front": "Quels facteurs modifiables augmentent le risque cardiovasculaire ?",
+        "answers": [
+          "HTA, tabagisme, dyslipidémie et diabète notamment."
+        ],
+        "explanation": "HTA, tabagisme, dyslipidémie et diabète notamment."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q064",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies non transmissibles",
+    "difficulty": "easy",
+    "question": "Quels énoncés décrivent des événements ou maladies cardiovasculaires ?",
+    "choices": [
+      "AVC",
+      "Une infection à VIH",
+      "Paludisme",
+      "Onchocercose",
+      "Une crise d’asthme"
+    ],
+    "answers": [
+      0
+    ],
+    "explanation": "L’AVC est une atteinte cardiovasculaire. Le VIH et le paludisme sont infectieux ; l’onchocercose est parasitaire. Les maladies cardiovasculaires comprennent également l’infarctus et l’insuffisance cardiaque. A. Vrai. L’AVC appartient au groupe cardiovasculaire. B. Faux. Le VIH est une infection virale. C. Faux. Le paludisme est une infection parasitaire. D. Faux. L’onchocercose est une maladie parasitaire. E. Faux. L’asthme appartient au groupe respiratoire.",
+    "announcedCorrectCount": 1,
+    "number": 64,
+    "rationales": [
+      "L’AVC appartient au groupe cardiovasculaire.",
+      "Le VIH est une infection virale.",
+      "Le paludisme est une infection parasitaire.",
+      "L’onchocercose est une maladie parasitaire.",
+      "L’asthme appartient au groupe respiratoire."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q064_card",
+        "theme": "Maladies non transmissibles",
+        "front": "L’AVC et l’infarctus appartiennent à quel groupe de maladies ?",
+        "answers": [
+          "Aux maladies cardiovasculaires."
+        ],
+        "explanation": "Aux maladies cardiovasculaires."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q065",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies non transmissibles",
+    "difficulty": "medium",
+    "question": "Pourquoi nombre absolu de décès et taux de mortalité standardisé peuvent-ils évoluer différemment ?",
+    "choices": [
+      "Parce que ce sont obligatoirement deux graphiques erronés",
+      "Vieillissement de la population",
+      "Changement de l’effectif total",
+      "Parce que standardisé signifie « inventé »",
+      "Progrès de prévention et de prise en charge"
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Un effectif dépend de la population exposée ; le taux standardisé vise à neutraliser l’effet des différences de structure d’âge. A. Faux. Les deux indicateurs peuvent évoluer différemment sans erreur graphique. B. Vrai. Le vieillissement peut accroître le nombre de décès malgré une baisse des taux ajustés. C. Vrai. Une variation de population peut modifier le nombre total d’événements. D. Faux. La standardisation est une méthode de comparaison selon la structure d’âge. E. Vrai. De meilleurs résultats à structure d’âge comparable peuvent coexister avec des changements démographiques.",
+    "announcedCorrectCount": 3,
+    "number": 65,
+    "rationales": [
+      "Les deux indicateurs peuvent évoluer différemment sans erreur graphique.",
+      "Le vieillissement peut accroître le nombre de décès malgré une baisse des taux ajustés.",
+      "Une variation de population peut modifier le nombre total d’événements.",
+      "La standardisation est une méthode de comparaison selon la structure d’âge.",
+      "De meilleurs résultats à structure d’âge comparable peuvent coexister avec des changements démographiques."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q065_card",
+        "theme": "Maladies non transmissibles",
+        "front": "Pourquoi le nombre de décès peut-il monter quand le taux standardisé baisse ?",
+        "answers": [
+          "La population peut croître et vieillir en parallèle."
+        ],
+        "explanation": "La population peut croître et vieillir en parallèle."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q066",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Maladies non transmissibles",
+    "difficulty": "medium",
+    "question": "Quelles distinctions permettent de classer les éléments cardiovasculaires suivants ?",
+    "choices": [
+      "La dyslipidémie est un facteur de risque.",
+      "L’infarctus et l’AVC sont des entités cardiovasculaires.",
+      "AVC et dyslipidémie sont deux noms du même événement.",
+      "L’HTA peut être abordée comme facteur de risque.",
+      "Une liste de facteurs de risque constitue automatiquement un classement des causes de décès."
+    ],
+    "rationales": [
+      "Elle n’est pas synonyme d’infarctus.",
+      "Ils figurent parmi les affections à distinguer.",
+      "Le facteur et l’événement ne sont pas synonymes.",
+      "C’est son rôle dans la lecture du panorama.",
+      "Les deux classifications répondent à des questions différentes."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "Ne pas confondre facteur de risque, affection et classement de mortalité. A. Vrai. Elle n’est pas synonyme d’infarctus. B. Vrai. Ils figurent parmi les affections à distinguer. C. Faux. Le facteur et l’événement ne sont pas synonymes. D. Vrai. C’est son rôle dans la lecture du panorama. E. Faux. Les deux classifications répondent à des questions différentes.",
+    "number": 66,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q066_card",
+        "theme": "Maladies non transmissibles",
+        "front": "Dans le panorama cardiovasculaire, comment distinguer HTA/dyslipidémie et AVC/infarctus ?",
+        "answers": [
+          "HTA et dyslipidémie sont abordées comme facteurs de risque ; AVC et infarctus sont des affections ou événements cardiovasculaires."
+        ],
+        "explanation": "HTA et dyslipidémie sont abordées comme facteurs de risque ; AVC et infarctus sont des affections ou événements cardiovasculaires."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q067",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "medium",
+    "question": "Concernant l’incidence des cancers sur une période, quelles propositions sont exactes ?",
+    "choices": [
+      "Elle désigne uniquement la survie à cinq ans",
+      "La croissance et le vieillissement de la population peuvent augmenter le nombre absolu de cas",
+      "Le dépistage et la qualité de l’enregistrement ne changent jamais le nombre de cancers diagnostiqués",
+      "Elle décrit les nouveaux diagnostics sur une période",
+      "Elle est identique à la létalité"
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "explanation": "L’incidence concerne les nouveaux diagnostics pendant une période. La croissance démographique et le vieillissement peuvent augmenter leur nombre absolu ; le dépistage et la qualité des registres influencent aussi les cas observés. Ce n’est ni la létalité ni la survie à cinq ans. A. Faux. L’incidence et la survie sont des mesures différentes. B. Vrai. Une population plus nombreuse ou plus âgée peut produire davantage de cas. C. Faux. Le repérage et l’enregistrement peuvent influencer les diagnostics observés. D. Vrai. L’incidence décompte les nouveaux diagnostics sur la période. E. Faux. La létalité porte sur les décès parmi les personnes malades.",
+    "announcedCorrectCount": 2,
+    "number": 67,
+    "rationales": [
+      "L’incidence et la survie sont des mesures différentes.",
+      "Une population plus nombreuse ou plus âgée peut produire davantage de cas.",
+      "Le repérage et l’enregistrement peuvent influencer les diagnostics observés.",
+      "L’incidence décompte les nouveaux diagnostics sur la période.",
+      "La létalité porte sur les décès parmi les personnes malades."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q067_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Que mesure l’incidence d’un cancer ?",
+        "answers": [
+          "Les nouveaux diagnostics pendant une période donnée."
+        ],
+        "explanation": "Les nouveaux diagnostics pendant une période donnée."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q068",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "easy",
+    "question": "Quels cancers constituent des exemples de dépistage organisé ?",
+    "choices": [
+      "Tous les cancers sans distinction",
+      "Col de l’utérus",
+      "Colorectal",
+      "Sein",
+      "Pancréas pour toute la population"
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Les trois exemples étudiés sont le sein, le côlon-rectum et le col de l’utérus. Cette distinction ne donne pas les âges, intervalles ou examens d’un programme. A. Faux. Un programme organisé vise des cancers et des populations définis. B. Vrai. Le col de l’utérus est un des exemples étudiés. C. Vrai. Le cancer colorectal est un des exemples étudiés. D. Vrai. Le cancer du sein est un des exemples étudiés. E. Faux. Un dépistage universel du pancréas n’est pas un des exemples présentés.",
+    "announcedCorrectCount": 3,
+    "number": 68,
+    "rationales": [
+      "Un programme organisé vise des cancers et des populations définis.",
+      "Le col de l’utérus est un des exemples étudiés.",
+      "Le cancer colorectal est un des exemples étudiés.",
+      "Le cancer du sein est un des exemples étudiés.",
+      "Un dépistage universel du pancréas n’est pas un des exemples présentés."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q068_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Quels cancers font l’objet d’un dépistage organisé en France ?",
+        "answers": [
+          "Sein, colorectal et col de l’utérus."
+        ],
+        "explanation": "Sein, colorectal et col de l’utérus."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q069",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "medium",
+    "question": "Le dépistage individuel est généralement :",
+    "choices": [
+      "Évaluable en fonction d’antécédents familiaux",
+      "Obligatoirement identique pour tous les âges",
+      "Adapté au risque propre à une personne",
+      "Différent d’une invitation standard de dépistage organisé",
+      "Toujours une garantie de guérison"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Le dépistage individuel suit une évaluation personnalisée ; il ne doit pas être confondu avec un programme systématique. A. Vrai. Les antécédents familiaux peuvent entrer dans l’évaluation du risque. B. Faux. La démarche est personnalisée, pas identique à tout âge. C. Vrai. Le contexte propre à la personne est pris en compte. D. Vrai. L’évaluation individuelle se distingue d’une invitation populationnelle. E. Faux. Le dépistage ne garantit pas une guérison.",
+    "announcedCorrectCount": 3,
+    "number": 69,
+    "rationales": [
+      "Les antécédents familiaux peuvent entrer dans l’évaluation du risque.",
+      "La démarche est personnalisée, pas identique à tout âge.",
+      "Le contexte propre à la personne est pris en compte.",
+      "L’évaluation individuelle se distingue d’une invitation populationnelle.",
+      "Le dépistage ne garantit pas une guérison."
+    ],
+    "flashcards": [
+      {
+        "id": "smf_20261103_q069_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Sur quoi repose une démarche de dépistage individuel ?",
+        "answers": [
+          "Une évaluation personnalisée du risque, notamment à partir des antécédents."
+        ],
+        "explanation": "Une évaluation personnalisée du risque, notamment à partir des antécédents."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q070",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "medium",
+    "question": "Un graphique indique une variation annuelle moyenne d’un taux standardisé d’incidence. Que peut-on en déduire ?",
+    "choices": [
+      "Il faut identifier la période de calcul.",
+      "Le nombre brut a forcément changé du même pourcentage.",
+      "La variation ne se transpose pas automatiquement au nombre brut.",
+      "Le taux décrit nécessairement la survie.",
+      "Les périodes des différentes séries peuvent être ignorées."
+    ],
+    "rationales": [
+      "Une variation moyenne est calculée sur une période.",
+      "Cette égalité n’est pas fournie par le taux ajusté.",
+      "La standardisation et l’effectif brut n’ont pas la même signification.",
+      "L’indicateur est ici l’incidence.",
+      "Une comparaison nécessite de connaître les périodes."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "La nature de l’indicateur et sa période doivent accompagner le sens d’une variation. A. Vrai. Une variation moyenne est calculée sur une période. B. Faux. Cette égalité n’est pas fournie par le taux ajusté. C. Vrai. La standardisation et l’effectif brut n’ont pas la même signification. D. Faux. L’indicateur est ici l’incidence. E. Faux. Une comparaison nécessite de connaître les périodes.",
+    "number": 70,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q070_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Une variation du taux standardisé d’incidence est-elle la variation du nombre brut de cas ?",
+        "answers": [
+          "Non. Le taux standardisé et l’effectif brut sont deux indicateurs distincts."
+        ],
+        "explanation": "Non. Le taux standardisé et l’effectif brut sont deux indicateurs distincts."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q071",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "easy",
+    "question": "Une personne sans symptôme reçoit une invitation correspondant aux critères d’un programme de dépistage. Quelle démarche est illustrée ?",
+    "choices": [
+      "Un diagnostic déjà confirmé de cancer.",
+      "La garantie de ne jamais développer de cancer.",
+      "Un dépistage organisé.",
+      "La preuve que toute la population doit subir le même examen.",
+      "Une démarche motivée obligatoirement par des symptômes."
+    ],
+    "rationales": [
+      "L’invitation ne constitue pas un diagnostic.",
+      "Un dépistage n’est pas une garantie individuelle absolue.",
+      "L’invitation et les critères populationnels définissent cette démarche.",
+      "Le programme décrit des critères de population cible.",
+      "La personne est explicitement asymptomatique."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "L’organisation populationnelle se distingue d’une évaluation individualisée du risque. A. Faux. L’invitation ne constitue pas un diagnostic. B. Faux. Un dépistage n’est pas une garantie individuelle absolue. C. Vrai. L’invitation et les critères populationnels définissent cette démarche. D. Faux. Le programme décrit des critères de population cible. E. Faux. La personne est explicitement asymptomatique.",
+    "number": 71,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q071_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Quel élément caractérise un dépistage organisé ?",
+        "answers": [
+          "Une population cible est invitée selon les critères d’un programme."
+        ],
+        "explanation": "Une population cible est invitée selon les critères d’un programme."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "smf_20261103_q072",
+    "courseId": "sante_mondiale_sante_france",
+    "theme": "Dépistage et interprétation des cancers",
+    "difficulty": "medium",
+    "question": "Une personne consulte pour un symptôme et un examen est demandé pour en rechercher la cause. Quelle distinction est pertinente ?",
+    "choices": [
+      "Le risque familial exclut toute démarche personnalisée.",
+      "Le symptôme confirme déjà à lui seul un cancer.",
+      "Tout examen est obligatoirement un dépistage organisé.",
+      "Il s’agit d’une démarche diagnostique.",
+      "Le dépistage se définit uniquement par le nom de l’examen."
+    ],
+    "rationales": [
+      "Les antécédents peuvent participer à l’évaluation du risque.",
+      "Rechercher une cause ne signifie pas diagnostic confirmé.",
+      "L’objectif et le contexte de l’examen comptent.",
+      "L’examen cherche la cause d’une manifestation existante.",
+      "La finalité et la population concernée sont aussi nécessaires."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "Le même type d’examen peut avoir une finalité différente selon le contexte ; ne pas confondre dépistage et diagnostic. A. Faux. Les antécédents peuvent participer à l’évaluation du risque. B. Faux. Rechercher une cause ne signifie pas diagnostic confirmé. C. Faux. L’objectif et le contexte de l’examen comptent. D. Vrai. L’examen cherche la cause d’une manifestation existante. E. Faux. La finalité et la population concernée sont aussi nécessaires.",
+    "number": 72,
+    "flashcards": [
+      {
+        "id": "smf_20261103_q072_card",
+        "theme": "Dépistage et interprétation des cancers",
+        "front": "Un examen motivé par des symptômes relève-t-il du même raisonnement qu’un dépistage asymptomatique ?",
+        "answers": [
+          "Non. Il s’agit d’une démarche diagnostique pour expliquer les symptômes."
+        ],
+        "explanation": "Non. Il s’agit d’une démarche diagnostique pour expliquer les symptômes."
+      }
+    ],
+    "course": "Santé mondiale et santé en France",
+    "ue": "C1.1",
+    "kind": "QCM"
+  }
+]

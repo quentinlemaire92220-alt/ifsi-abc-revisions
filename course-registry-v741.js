@@ -85,6 +85,9 @@ function resourcesForCourse(courseId){
   const ids=[courseId,...(registry?.courses||[]).filter(c=>c.parentId===courseId).map(c=>c.id)];
   const out={questions:[],vocals:[],sheets:[],infographics:[]};
   for(const id of ids){const r=resourceIndex.get(id);if(!r)continue;out.questions.push(...r.questions);out.vocals.push(...r.vocals);out.sheets.push(...r.sheets);out.infographics.push(...r.infographics)}
+  const course=courseMap.get(courseId);
+  if(course?.primarySheetResourceId){out.sheets=out.sheets.filter(s=>s.resourceId===course.primarySheetResourceId);out.infographics=out.infographics.filter(s=>s.sourceStatus!=='archived');}
+  if(Array.isArray(course?.activeVocalIds)){const ids=new Set(course.activeVocalIds);out.vocals=out.vocals.filter(v=>ids.has(v.id));}
   return out
 }
 function courseIdForLabel(label){return resolveLabel(label)?.courseId||null}

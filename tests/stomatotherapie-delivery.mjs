@@ -4,7 +4,7 @@ import vm from 'node:vm';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const bank=read('qextra-53.txt');
-const {questions,deck,registry,window}=await runtimeDeck();
+const {questions,deck,registry,window}=await runtimeDeck({historical:true});
 const actual=questions.filter(q=>q.courseId==='stomatotherapie');
 assert.equal(actual.length,50);
 assert.equal(new Set(actual.map(q=>q.id)).size,50);

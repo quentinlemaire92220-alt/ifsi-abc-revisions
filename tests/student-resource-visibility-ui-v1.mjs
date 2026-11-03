@@ -1,3 +1,4 @@
+import {scopedRevisionDeliveryForUrl} from '../tools/scoped-course-revision-contract.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {dirname,resolve} from 'node:path';
@@ -36,7 +37,7 @@ if(additions.length){
  execFileSync(process.execPath,['tests/course-publication-approval.mjs'],{cwd:root,env:{...process.env,IFSI_BASE_SHA:base},stdio:'pipe',maxBuffer:32*1024*1024});
  const manifest=JSON.parse(readFileSync(resolve(root,'docs/course-deliveries.json'),'utf8'));
  for(const doc of additions){
-  const delivery=manifest.courses.find(c=>c.courseId===doc.courseId);
+  const delivery=scopedRevisionDeliveryForUrl(manifest,doc.courseId,doc.url)||manifest.courses.find(c=>c.courseId===doc.courseId);
   // Ne publier une copie GitHub Pages du TD1 que si l'URL et les octets
   // correspondent exactement au document approuvé et inventorié.
   let id=String(doc.url||'').match(/^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:\?|$)/)?.[1];
