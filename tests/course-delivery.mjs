@@ -15,6 +15,7 @@ import {validateSheetOnlyFirstRelease} from './sheet-only-first-release.mjs';
 import {validateReviewedWrittenBundle} from './reviewed-written-bundle-contract.mjs';
 import {isExistingWrittenUpdate,validateExistingWrittenUpdate} from './existing-course-written-update-contract.mjs';
 
+import {isOfficialScoped,validateOfficialScoped} from './official-scoped-bundle-contract.mjs';
 const read=readHistoricalAudioJson;
 const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
@@ -28,6 +29,7 @@ for(const c of manifest.courses){
  validateRevisionSheetSupplement(c.courseId,c,{sheets});
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');
+ if(isOfficialScoped(c)){validateOfficialScoped(registry.courses.find(x=>x.id===c.courseId),c,{sheets,questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals});continue;}
  if(isExistingWrittenUpdate(c)){
   validateExistingWrittenUpdate(registry.courses.find(x=>x.id===c.courseId),c,{sheets,questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos});
   continue;

@@ -35,3 +35,20 @@ def validate_duplex_cards(document, rows):
                 if face=='front':
                     assert compact(' '.join(card['answers'])) not in actual, f'Reponse visible sur recto {number}'
     return len(cards)
+
+def validate_compact_duplex_cards(document, rows):
+    cards=[f for q in rows for f in q.get('flashcards',[])]
+    assert cards and len(document)==math.ceil(len(cards)/6)*2
+    assert len({compact(c['front']).casefold() for c in cards})==len(cards)
+    for sheet in range(math.ceil(len(cards)/6)):
+        for slot in range(6):
+            number=sheet*6+slot+1
+            for face,offset,col in [('front',0,slot%2),('back',1,1-slot%2)]:
+                page=document[2*sheet+offset];x=42+260*col;top=65+236*(slot//2)
+                actual=compact(page.get_text(clip=fitz.Rect(x+2,top+2,x+249,top+223),sort=True))
+                if number>len(cards):
+                    assert not actual, 'Case vide occupée'
+                    continue
+                card=cards[number-1];content=card['front'] if face=='front' else ' '.join(card['answers'])
+                assert actual==compact(f'Carte {number:02d} '+content), f'Carte {number} {face}: texte ou position divergent'
+    return len(cards)

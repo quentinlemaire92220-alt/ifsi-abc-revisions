@@ -41,6 +41,7 @@ export function publicationBundle(courseId,delivery,data){
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),
   parts
   ,...(delivery.updateContract==='existing_course_written_update_v1'?{existingWrittenUpdate:{...delivery,publicationApproval:undefined}}:{})
+  ,...(delivery.updateContract==='official_reviewed_scoped_bundle_v1'?{officialScopedBundle:{...delivery,publicationApproval:undefined}}:{})
   ,...(delivery.qcmFlashcardsSupplement?{qcmFlashcardsAddon:{...delivery.qcmFlashcardsSupplement,publicationApproval:undefined}}:{})
   ,...(delivery.revisionSheetSupplement?{revisionSheetSupplement:delivery.revisionSheetSupplement}:{})
   ,...(delivery.revisionSheetMode==='single_with_complete_boards'?{revisionSheetDelivery:{
@@ -194,7 +195,7 @@ export function validateChangedDeliveries(before,after,oldData,newData,{stage='p
   // A first QCM-only manifest for a previously published course must not
   // pretend its unchanged historic PDF/audio files were newly downloaded.
   // Only legacy resources present byte-for-byte in the base may omit new SHAs.
-  const writtenUpdateHistoric=delivery.updateContract==='existing_course_written_update_v1'&&!prior&&oldData.registry.courses.some(c=>c.id===id);
+  const writtenUpdateHistoric=['existing_course_written_update_v1','official_reviewed_scoped_bundle_v1'].includes(delivery.updateContract)&&!prior&&oldData.registry.courses.some(c=>c.id===id);
   const qcmOnlyHistoric=(id==='psychologie_sante' && !prior &&
     delivery.deliveryMode==='existing_course_revision' &&
     delivery.publicationSubset==='qcm_pdf_50_qcm_59_interactive_flashcards_only' &&
@@ -213,7 +214,7 @@ export function validateChangedDeliveries(before,after,oldData,newData,{stage='p
      if(match)legacyIds.add(match[1]);
     }
    }
-   if(writtenUpdateHistoric){
+   if(writtenUpdateHistoric && delivery.updateContract==='existing_course_written_update_v1'){
     const oldCourse=oldData.registry.courses.find(c=>c.id===id),nowCourse=newData.registry.courses.find(c=>c.id===id);
     assert.equal(nowCourse.officialSupportUrl,oldCourse.officialSupportUrl,id+': support historique remplacé sans preuve');
     const m=oldCourse.officialSupportUrl?.match(/^https:\/\/drive\.google\.com\/file\/d\/([^/]+)/);if(m)legacyIds.add(m[1]);

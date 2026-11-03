@@ -1,4 +1,5 @@
-import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
+import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioAt} from './historical-audio-fixture.mjs';
 import {isPsychologieOfficialRevision,validatePsychologieOfficialRevision} from './psychologie-sante-official-revision-contract.mjs';
 import {verifyOfficialCourseReconciliation} from './official-course-reconciliation-contract.mjs';
 // Sécurisation P0 : teste la DIFF RÉELLE vs main, non un jeu de données fictif.
@@ -23,7 +24,7 @@ const clone=x=>JSON.parse(JSON.stringify(x));
 const disk=readHistoricalAudioJson;
 const base=process.env.IFSI_BASE_SHA||'HEAD~1';
 assert.match(base,/^(?:HEAD~1|[0-9a-f]{7,40})$/i);
-const before=file=>JSON.parse(execFileSync('git',['show',base+':'+file],{encoding:'utf8',maxBuffer:16*1024*1024}));
+const before=file=>readHistoricalAudioAt(base,file);
 const oldReg=before('course-registry-v741.json'),currentReg=disk('course-registry-v741.json');
 const oldMan=before('docs/course-deliveries.json'),currentMan=disk('docs/course-deliveries.json');
 
@@ -361,7 +362,8 @@ const prevAudio=oldMan.audioSupplements||[],nextAudio=currentMan.audioSupplement
 assert.deepEqual(nextAudio.slice(0,prevAudio.length),prevAudio,'Compléments audio historiques altérés');
 const freshAudio=nextAudio.slice(prevAudio.length);
 const firstReleaseAudioIds=validateFirstReleaseAudio(oldMan,currentMan,oldReg,currentReg,prevVocals,nextVocals);
-const expectedAudioIds=[...freshAudio.flatMap(p=>p.vocalIds||[]),...firstReleaseAudioIds];
+const scopedAudio=approvedScopedAudioIds(currentMan).filter(id=>!prevVocals.some(v=>v.id===id));
+const expectedAudioIds=[...scopedAudio,...freshAudio.flatMap(p=>p.vocalIds||[]),...firstReleaseAudioIds];
 assert.deepEqual(nextVocals.slice(prevVocals.length).map(v=>v.id).sort(),expectedAudioIds.slice().sort(),
  'Le catalogue doit contenir exactement les MP3 nouvellement approuvés');
 const baseAudioData={registry:oldReg,vocals:prevVocals,sheets:[1,2,3].flatMap(n=>before('sheets-'+n+'.json')),
