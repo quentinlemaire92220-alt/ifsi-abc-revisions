@@ -9181,5 +9181,286 @@
         "bundleSha256": "7b6ffbeff165aaec135813d5a23446fc475dd340dc221d659e01175a9c79010c"
       }
     }
+  ],
+  "scopedCourseRevisions": [
+    {
+      "contract": "scoped_course_revision_v1",
+      "id": "sante_mondiale_20261103",
+      "courseId": "sante_mondiale_sante_france",
+      "status": "approved",
+      "baselinePath": "docs/course-revisions/sante_mondiale_20261103_baseline.json",
+      "baselineSha256": "82688ada1ee4abdf68ef39ad201f898f14d7ee069e39122d1ff082b97a09ceba",
+      "bankPath": "data/course-banks/sante_mondiale_20261103.json",
+      "bankSha256": "5366105df507ba730b6937bc1104f41be4987d8596f130330ba8d510f38c43b9",
+      "questionIds": [
+        "smf_20261103_q001",
+        "smf_20261103_q002",
+        "smf_20261103_q003",
+        "smf_20261103_q004",
+        "smf_20261103_q005",
+        "smf_20261103_q006",
+        "smf_20261103_q007",
+        "smf_20261103_q008",
+        "smf_20261103_q009",
+        "smf_20261103_q010",
+        "smf_20261103_q011",
+        "smf_20261103_q012",
+        "smf_20261103_q013",
+        "smf_20261103_q014",
+        "smf_20261103_q015",
+        "smf_20261103_q016",
+        "smf_20261103_q017",
+        "smf_20261103_q018",
+        "smf_20261103_q019",
+        "smf_20261103_q020",
+        "smf_20261103_q021",
+        "smf_20261103_q022",
+        "smf_20261103_q023",
+        "smf_20261103_q024",
+        "smf_20261103_q025",
+        "smf_20261103_q026",
+        "smf_20261103_q027",
+        "smf_20261103_q028",
+        "smf_20261103_q029",
+        "smf_20261103_q030",
+        "smf_20261103_q031",
+        "smf_20261103_q032",
+        "smf_20261103_q033",
+        "smf_20261103_q034",
+        "smf_20261103_q035",
+        "smf_20261103_q036",
+        "smf_20261103_q037",
+        "smf_20261103_q038",
+        "smf_20261103_q039",
+        "smf_20261103_q040",
+        "smf_20261103_q041",
+        "smf_20261103_q042",
+        "smf_20261103_q043",
+        "smf_20261103_q044",
+        "smf_20261103_q045",
+        "smf_20261103_q046",
+        "smf_20261103_q047",
+        "smf_20261103_q048",
+        "smf_20261103_q049",
+        "smf_20261103_q050",
+        "smf_20261103_q051",
+        "smf_20261103_q052",
+        "smf_20261103_q053",
+        "smf_20261103_q054",
+        "smf_20261103_q055",
+        "smf_20261103_q056",
+        "smf_20261103_q057",
+        "smf_20261103_q058",
+        "smf_20261103_q059",
+        "smf_20261103_q060",
+        "smf_20261103_q061",
+        "smf_20261103_q062",
+        "smf_20261103_q063",
+        "smf_20261103_q064",
+        "smf_20261103_q065",
+        "smf_20261103_q066",
+        "smf_20261103_q067",
+        "smf_20261103_q068",
+        "smf_20261103_q069",
+        "smf_20261103_q070",
+        "smf_20261103_q071",
+        "smf_20261103_q072"
+      ],
+      "vocabularyEntryIds": [
+        "smf_20261103_v001",
+        "smf_20261103_v002",
+        "smf_20261103_v003",
+        "smf_20261103_v004",
+        "smf_20261103_v005",
+        "smf_20261103_v006",
+        "smf_20261103_v007",
+        "smf_20261103_v008",
+        "smf_20261103_v009",
+        "smf_20261103_v010",
+        "smf_20261103_v011",
+        "smf_20261103_v012",
+        "smf_20261103_v013",
+        "smf_20261103_v014",
+        "smf_20261103_v015",
+        "smf_20261103_v016",
+        "smf_20261103_v017",
+        "smf_20261103_v018",
+        "smf_20261103_v019",
+        "smf_20261103_v020",
+        "smf_20261103_v021",
+        "smf_20261103_v022",
+        "smf_20261103_v023",
+        "smf_20261103_v024",
+        "smf_20261103_v025",
+        "smf_20261103_v026",
+        "smf_20261103_v027",
+        "smf_20261103_v028",
+        "smf_20261103_v029",
+        "smf_20261103_v030",
+        "smf_20261103_v031",
+        "smf_20261103_v032",
+        "smf_20261103_v033",
+        "smf_20261103_v034",
+        "smf_20261103_v035",
+        "smf_20261103_v036",
+        "smf_20261103_v037",
+        "smf_20261103_v038",
+        "smf_20261103_v039",
+        "smf_20261103_v040",
+        "smf_20261103_v041",
+        "smf_20261103_v042",
+        "smf_20261103_v043",
+        "smf_20261103_v044",
+        "smf_20261103_v045",
+        "smf_20261103_v046",
+        "smf_20261103_v047",
+        "smf_20261103_v048",
+        "smf_20261103_v049",
+        "smf_20261103_v050",
+        "smf_20261103_v051",
+        "smf_20261103_v052",
+        "smf_20261103_v053",
+        "smf_20261103_v054"
+      ],
+      "sheetResourceId": "sante_mondiale_fiche_20261103",
+      "publicArtifacts": [
+        {
+          "role": "sheet",
+          "path": "assets/sante-mondiale-20261103/Sante_mondiale_sante_France_Fiche.pdf",
+          "sha256": "a00c99ef8c89bd540d3aeed98dfd800b780127f900eced746825f43c0fdde92c",
+          "bytes": 1137073,
+          "pageCount": 14
+        },
+        {
+          "role": "qcm",
+          "path": "assets/sante-mondiale-20261103/Sante_mondiale_sante_France_QCM_72.pdf",
+          "sha256": "373dc1368f02991d59453fad94125a617ce4a7a8f9f93cfcaad49ca8d44fcef0",
+          "bytes": 857843,
+          "pageCount": 36
+        },
+        {
+          "role": "flashcards",
+          "path": "assets/sante-mondiale-20261103/Sante_mondiale_sante_France_Flashcards_72.pdf",
+          "sha256": "b95508ed52a001f6a7d934fcafe38c1dc0196072b2144fe4524ce23a3d337b28",
+          "bytes": 439928,
+          "pageCount": 24
+        }
+      ],
+      "audioArtifacts": [
+        {
+          "vocalId": "smf_vocal_01",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_01.mp3",
+          "sha256": "2be23be8b7d47b756e420f5df8c180bfc630e1a54754e184308bef0fc4b5373e",
+          "bytes": 4151671,
+          "durationSeconds": 345.845333
+        },
+        {
+          "vocalId": "smf_vocal_02",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_02.mp3",
+          "sha256": "077120be073d7b9593dba6fc81d43b6e482750e394e910b450130b4c01fa35cb",
+          "bytes": 3841783,
+          "durationSeconds": 320.02
+        },
+        {
+          "vocalId": "smf_vocal_03",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_03.mp3",
+          "sha256": "e73f751412b73f11698d07e54159ae6000b60579963f4c0085937c19101e6135",
+          "bytes": 3951799,
+          "durationSeconds": 329.192
+        },
+        {
+          "vocalId": "smf_vocal_04",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_04.mp3",
+          "sha256": "f9ec62389cede9c7c06f6505ea2623e9b35fb1e39ecdb3625a19fe94e3548928",
+          "bytes": 3909751,
+          "durationSeconds": 325.682667
+        },
+        {
+          "vocalId": "smf_vocal_05",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_05.mp3",
+          "sha256": "7c5f0dfefea5099a644ab62e9032eaf0f0be012c9a08506aa092af797195c3aa",
+          "bytes": 3835735,
+          "durationSeconds": 319.516
+        },
+        {
+          "vocalId": "smf_vocal_06",
+          "path": "assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_06.mp3",
+          "sha256": "9a16c3256730ad8fd9c65147d321d7b0a7ab047ffd9bcac75d0e567c6801d9e9",
+          "bytes": 3795703,
+          "durationSeconds": 316.197333
+        }
+      ],
+      "sourceReview": {
+        "officialSupportAvailable": true,
+        "receivedOralPartsReviewed": 2,
+        "oralCoverageCertifiedComplete": false,
+        "documentaryReservationsOpen": true,
+        "independentClinicalSignoff": false,
+        "disputedAssessmentPointsExcluded": true,
+        "externalResearchPerformed": false
+      },
+      "ownerAcceptance": {
+        "status": "explicit_application_update_authorized",
+        "approvedAt": "2026-11-03T18:21:59.746463+00:00",
+        "privateEvidenceSha256": "359dd8326f68b58efa0c3d488dc825c587914af8192ba077241c6709c2c1df9c"
+      },
+      "assistantPdfReview": {
+        "allPagesChecked": true,
+        "pageCounts": {
+          "sheet": 14,
+          "qcm": 36,
+          "flashcards": 24
+        },
+        "privateEvidenceSha256s": [
+          "2b8c2dd052d7a0f8871404a6e367a5c207c036fcdcfce3feb239bdec70826af9",
+          "6e8eb43cbe49c5e9a31addb4362ad9faa0999064adb5248af5095fdbacd51fa3",
+          "b17fce6540464f6b19eebbd11a7757fe14907021a8b27dd95533a515ab3be72e"
+        ]
+      },
+      "audioOwnerReview": {
+        "status": "owner_listening_accepted",
+        "privateEvidenceSha256": "37d15711d99ea3abefbefb498c948b9956a7d26ea7faa481a559e48d705df8d4"
+      },
+      "publicationApproval": {
+        "authorization": "explicit_go_publication",
+        "scope": "scoped_course_revision",
+        "approvedAt": "2026-11-03T18:21:59.746463+00:00",
+        "bundleSha256": "b6cea6a438253c0021b897f0af7c6b4957e9ebc6383f0d03cf64cec093771be9",
+        "status": "approved"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "a00c99ef8c89bd540d3aeed98dfd800b780127f900eced746825f43c0fdde92c",
+            "pageCount": 14,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "373dc1368f02991d59453fad94125a617ce4a7a8f9f93cfcaad49ca8d44fcef0",
+            "pageCount": 36,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized"
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "a00c99ef8c89bd540d3aeed98dfd800b780127f900eced746825f43c0fdde92c",
+        "privateEvidenceSha256": "e805c80cda95b977716a62b4afadd1cc44f2530ed3bc5b5700fc8776531aea79",
+        "reviewedAt": "2026-11-03T18:26:11+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
+      }
+    }
   ]
 }

@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
+import {validateScopedRevisions} from './scoped-course-revision-contract.mjs';
 
 const SHA=/^[a-f0-9]{64}$/i, BASE=/^[a-f0-9]{40}$/i;
 const SHEET_FILES=['sheets-1.json','sheets-2.json','sheets-3.json'];
@@ -66,6 +67,11 @@ function localAsset(s){
  }catch{return null;}
 }
 function selectDelivery(manifest,s){
+ const revision=manifest.scopedCourseRevisions?.find(r=>r.courseId===s.courseId&&r.sheetResourceId===s.resourceId);
+ if(revision){
+  validateScopedRevisions(manifest);
+  return {course:{...revision,status:'partial',pedagogicalValidated:false},part:null,scope:revision};
+ }
  const course=manifest.courses.find(d=>d.courseId===s.courseId);
  assert.ok(course,'v1.49 : fiche nouvelle sans manifeste de livraison : '+s.courseId);
  const part=(course.partDeliveries||[]).find(p=>(p.sheetResourceIds||[]).includes(s.resourceId));

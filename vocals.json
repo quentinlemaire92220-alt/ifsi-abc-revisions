@@ -2675,5 +2675,83 @@
     "provisional": true,
     "provisionalReason": "Réserves pédagogiques maintenues sur le cours",
     "durationSeconds": 362.438667
+  },
+  {
+    "id": "smf_vocal_01",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 5,
+    "title": "Révision — Vocal 1/6",
+    "partId": "revision_20261103",
+    "partNumber": 1,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_01.mp3",
+    "durationSeconds": 345.845333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "smf_vocal_02",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 6,
+    "title": "Révision — Vocal 2/6",
+    "partId": "revision_20261103",
+    "partNumber": 2,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_02.mp3",
+    "durationSeconds": 320.02,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "smf_vocal_03",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 7,
+    "title": "Révision — Vocal 3/6",
+    "partId": "revision_20261103",
+    "partNumber": 3,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_03.mp3",
+    "durationSeconds": 329.192,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "smf_vocal_04",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 8,
+    "title": "Révision — Vocal 4/6",
+    "partId": "revision_20261103",
+    "partNumber": 4,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_04.mp3",
+    "durationSeconds": 325.682667,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "smf_vocal_05",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 9,
+    "title": "Révision — Vocal 5/6",
+    "partId": "revision_20261103",
+    "partNumber": 5,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_05.mp3",
+    "durationSeconds": 319.516,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "smf_vocal_06",
+    "courseId": "sante_mondiale_sante_france",
+    "course": "Santé mondiale et santé en France",
+    "number": 10,
+    "title": "Révision — Vocal 6/6",
+    "partId": "revision_20261103",
+    "partNumber": 6,
+    "mime": "audio/mpeg",
+    "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_06.mp3",
+    "durationSeconds": 316.197333,
+    "syntheticSpeech": true
   }
 ]

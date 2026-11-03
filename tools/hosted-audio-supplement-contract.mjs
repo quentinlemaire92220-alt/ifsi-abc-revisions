@@ -1,5 +1,6 @@
 // Additive MP3 hosted by the application. Historical package signatures stay intact.
 // Preparation validates bytes and scope; publication additionally requires a new GO.
+import {scopedHistoricalData} from './scoped-course-revision-contract.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -94,6 +95,7 @@ export function validateHostedAudioSupplements(manifest,data,{stage='preparation
 // This view contains exactly the resources covered by the historical package GO.
 // It is never used by the student player; the independent supplement gate is mandatory.
 export function historicalAudioView(manifest,data,options={}){
+ data=scopedHistoricalData(manifest,data);
  const accepted=validateHostedAudioSupplements(manifest,data,options);
  if(!accepted.size)return data;
  const byCourse=new Map(manifest.hostedAudioSupplements.map(s=>[s.courseId,s]));

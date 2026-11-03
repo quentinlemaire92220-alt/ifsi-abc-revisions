@@ -1,9 +1,10 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {verifyPublicArtifact,pagesOrigin,pagesPrefix} from '../tools/public-artifact-contract.mjs';
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const read=readHistoricalAudioJson;
 const meta=read('build-meta.json'),base=process.env.IFSI_BASE_SHA;
 assert.match(base||'',/^[a-f0-9]{40}$/i,'Base complète obligatoire');
 const old=JSON.parse(execFileSync('git',['show',base+':build-meta.json'],{encoding:'utf8'}));

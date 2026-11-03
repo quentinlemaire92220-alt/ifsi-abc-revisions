@@ -1,9 +1,10 @@
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Execute the production service worker loader, including compressed packs and overrides.
-export async function runtimeDeck({allCards=false}={}){
-  const read=p=>fs.readFileSync(p,'utf8');
+export async function runtimeDeck({allCards=false,historical=false}={}){
+  const read=p=>historical&&['course-registry-v741.json','questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json'].includes(p)?JSON.stringify(readHistoricalAudioJson(p)):fs.readFileSync(p,'utf8');
   const quiet={log(){},warn(){},error(){}};
   const sw=read('sw.js');
   const loader={Response,Blob,DecompressionStream,TextDecoder,Uint8Array,atob,console:quiet,
@@ -30,7 +31,7 @@ export async function runtimeDeck({allCards=false}={}){
   const vocab=read('v8355-vocabulary.js');
   const before=vocab.slice(0,vocab.indexOf('function ensure(){')).replace(/let data=\[\]/,'let data=vocabFixture');
   context.vocabFixture=JSON.parse(read('vocabulaire-v1.json')).entries;
-  vm.runInContext(before+'window.IFSI_VOCAB={flashcards};})();',context);
+  vm.runInContext(before+'window.IFSI_VOCAB={flashcards,countForCourse,forCourse};})();',context);
   vm.runInContext(read('qcm-subthemes-v1.js'),context);
   const themeSource=read('v79-themes.js');
   vm.runInContext(themeSource.slice(0,themeSource.indexOf('function difficultyOf'))+'window.IFSI_V79.themeOf=themeOf;})();',context);

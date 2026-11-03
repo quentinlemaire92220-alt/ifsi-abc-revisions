@@ -20,7 +20,7 @@ const read=readHistoricalAudioJson;
 const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
 const infos=read('infographics.json'),vocals=read('vocals.json');
-const {deck,questions}=await runtimeDeck();
+const {deck,questions}=await runtimeDeck({historical:true});
 const registry=read('course-registry-v741.json');
 const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
 validateAudioSupplements(manifest,{registry,vocals});

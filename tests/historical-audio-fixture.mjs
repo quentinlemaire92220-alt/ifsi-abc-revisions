@@ -1,10 +1,12 @@
 // Historical tests continue to inspect the exact package covered by its original GO.
 // The new audio contract separately validates every excluded row and its bytes.
+import {scopedHistoricalJson} from '../tools/scoped-course-revision-contract.mjs';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {historicalAudioView} from '../tools/hosted-audio-supplement-contract.mjs';
 const raw=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 function historical(reader,file){
+ const actualReader=reader;reader=p=>scopedHistoricalJson(actualReader,p);
  if(!['vocals.json','course-registry-v741.json','docs/course-deliveries.json'].includes(file))return reader(file);
  const manifest=reader('docs/course-deliveries.json');
  const view=historicalAudioView(manifest,{registry:reader('course-registry-v741.json'),vocals:reader('vocals.json')});
