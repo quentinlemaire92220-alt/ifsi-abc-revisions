@@ -1,6 +1,7 @@
 (()=>{'use strict';
 const V=window.IFSI_APP_VERSION||'8.30.79',$=id=>document.getElementById(id);
 const NEWS_META={
+  v8471Change:{type:'app',badges:['UX/UI','VOCAUX']},
   v8442Change:{type:'resource',badges:['COURS','QCM','FLASHCARDS']},
   v8441Change:{type:'resource',badges:['COURS','QCM','FLASHCARDS']},
   v8469Change:{type:'app',badges:['UX/UI','VOCAUX']},

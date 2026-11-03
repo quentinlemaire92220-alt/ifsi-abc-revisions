@@ -4,11 +4,11 @@ import assert from 'node:assert/strict';
 const source=fs.readFileSync('vocals-v73.js','utf8');
 const catalogue=JSON.parse(fs.readFileSync('vocals.json','utf8'));
 const entries=[catalogue[0],catalogue.find(x=>x.course!==catalogue[0].course),catalogue.at(-1)];
-function boot(saved={}){
+function boot(saved={},mirrors=null){
   const storage=new Map(Object.entries(saved)),nodes=new Map();
-  const make=id=>({id,value:id==='vocalCourse'?'Toutes les matières':'',textContent:'',innerHTML:'',disabled:false,checked:false,currentTime:0,duration:100,paused:true,src:'',dataset:{},classList:{add(){},remove(){},toggle(){},contains(){return true}},querySelectorAll(){return []},querySelector(){return null},setAttribute(){},removeAttribute(name){delete this[name]},load(){this.currentTime=0},pause(){this.paused=true},play(){this.paused=false;return Promise.resolve()},scrollIntoView(){},focus(){}});
-  const listeners={};const context={console,Set,Map,JSON,Number,String,Array,Date,Promise,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},document:{getElementById:id=>{if(!nodes.has(id))nodes.set(id,make(id));return nodes.get(id)},querySelector:()=>null},window:{addEventListener:(name,fn)=>{(listeners[name]??=[]).push(fn)},matchMedia:()=>({matches:false})},setInterval:()=>0,clearInterval(){}};
-  const instrumented=source.replace('addStyles();injectUI();loadVocals();','').replace('window.IFSI_V73={',`V=${JSON.stringify(entries)};window.test={handleVocalEnded,setAutoplay:value=>playlist.autoplay=value,addPlaylist,editPlaylist,playPlaylist,stepPlaylist,playVocal,clearFinishedPosition,restorePosition,rememberPosition,closePlayer,validState,renderPlaylist,getActive:()=>playlistActive};window.IFSI_V73={`);
+  const make=id=>({id,options:[],value:id==='vocalCourse'?'Toutes les matières':'',textContent:'',innerHTML:'',disabled:false,checked:false,currentTime:0,duration:100,paused:true,src:'',dataset:{},classList:{add(){},remove(){},toggle(){},contains(){return true}},querySelectorAll(){return []},querySelector(){return null},setAttribute(){},removeAttribute(name){delete this[name]},load(){this.currentTime=0},pause(){this.paused=true},play(){this.paused=false;return Promise.resolve()},scrollIntoView(){},focus(){}});
+  const listeners={};const context={console,Set,Map,JSON,Number,String,Array,Date,Promise,CustomEvent,fetch:async()=>({ok:true,json:async()=>entries}),localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},document:{getElementById:id=>{if(!nodes.has(id))nodes.set(id,make(id));return nodes.get(id)},querySelector:()=>null},window:{IFSI_AUDIO_MIRRORS:mirrors,dispatchEvent(){},addEventListener:(name,fn)=>{(listeners[name]??=[]).push(fn)},matchMedia:()=>({matches:false})},setInterval:()=>0,clearInterval(){}};
+  const instrumented=source.replace('addStyles();injectUI();loadVocals();','').replace('window.IFSI_V73={',`V=${JSON.stringify(entries)};window.test={loadVocals,clearCatalogue:()=>V=[],handleVocalEnded,setAutoplay:value=>playlist.autoplay=value,addPlaylist,editPlaylist,playPlaylist,stepPlaylist,playVocal,clearFinishedPosition,restorePosition,rememberPosition,closePlayer,validState,renderPlaylist,getActive:()=>playlistActive};window.IFSI_V73={`);
   vm.runInNewContext(instrumented,context);
   return {api:context.window.IFSI_V73,test:context.window.test,nodes,storage,listeners};
 }
@@ -30,4 +30,12 @@ test.playPlaylist(ids[2]);test.closePlayer();assert.equal(test.getActive(),false
 test.playPlaylist(ids[2]);test.setAutoplay(false);test.handleVocalEnded();assert.equal(api.getCurrentId(),ids[2],'Automatic advancement can be disabled');
 const bad=boot({ifsiabc_audio_playlist_v1:'{"ids":["gone",null,3,"gone"],"autoplay":false}'});bad.test.validState();assert.equal(bad.api.getPlaylist().ids.length,0);assert.equal(bad.api.getPlaylist().autoplay,false);
 assert.equal(boot({ifsiabc_audio_playlist_v1:'broken'}).api.getPlaylist().ids.length,0);
+const mediaBase='https://quentinlemaire92220-alt.github.io/ifsi-abc-audio/audio/';
+let copiesAvailable=true;
+const mirrored=boot({}, {sourceFor:v=>copiesAvailable&&ids.slice(0,2).includes(v.id)?mediaBase+v.id+'.m4a':null,durationFor:()=>480.64});
+mirrored.test.addPlaylist(ids[0]);mirrored.test.addPlaylist(ids[1]);mirrored.test.playPlaylist(ids[0]);assert.equal(mirrored.nodes.get('vocalAudio').src,mediaBase+ids[0]+'.m4a');
+mirrored.test.handleVocalEnded();assert.equal(mirrored.api.getCurrentId(),ids[1]);assert.equal(mirrored.nodes.get('vocalAudio').src,mediaBase+ids[1]+'.m4a','Fin réelle : sélectionner la copie du thème suivant');
+copiesAvailable=false;mirrored.test.playVocal(ids[0]);assert.ok(mirrored.nodes.get('vocalAudio').src.includes('drive.usercontent.google.com'),'Secours natif conservé sans copie');copiesAvailable=true;
+mirrored.api.getVocals()[0].localAudio='./assets/audio/retained.mp3';mirrored.test.playVocal(ids[0]);assert.equal(mirrored.nodes.get('vocalAudio').src,'./assets/audio/retained.mp3','Une ressource locale existante reste prioritaire');
+let resolveReady;const delayedReady=new Promise(resolve=>{resolveReady=resolve});const delayed=boot({}, {ready:delayedReady,sourceFor:()=>null,durationFor:()=>null});delayed.test.clearCatalogue();const loading=delayed.test.loadVocals();await Promise.resolve();await Promise.resolve();assert.equal(delayed.api.getVocals().length,0,'Ne pas exposer les vocaux avant la préparation des copies');resolveReady(true);await loading;assert.equal(delayed.api.getVocals().length,entries.length);
 console.log('PASS playlist : matières mixtes, dédoublonnage, ordre, suppression, persistance, reprise, navigation, fin de liste, lecture individuelle et stockage invalide.');

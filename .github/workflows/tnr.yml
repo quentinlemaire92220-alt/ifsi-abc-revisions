@@ -433,6 +433,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/vocals-14-courses-v8410.mjs
 
+      - name: Vérifier les copies audio Drive et leurs références
+        if: ${{ !cancelled() }}
+        run: node tests/audio-mirrors.mjs
+
       - name: Vérifier la playlist audio et son enchaînement
         if: ${{ !cancelled() }}
         run: node tests/audio-playlist.mjs
