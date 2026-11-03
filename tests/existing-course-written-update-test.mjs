@@ -1,4 +1,4 @@
-import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
+import {readHistoricalAudioJson,readHistoricalAudioGitJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
@@ -21,7 +21,7 @@ const extra={sheets:[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),questions:data.
 for(const d of read('docs/course-deliveries.json').courses.filter(isExistingWrittenUpdate)){
  const course=read('course-registry-v741.json').courses.find(c=>c.id===d.courseId);
  validateExistingWrittenUpdate(course,d,extra);
- const old=JSON.parse(execFileSync('git',['show',process.env.IFSI_BASE_SHA+':course-registry-v741.json'],{encoding:'utf8'})).courses.find(c=>c.id===d.courseId);
+ const old=readHistoricalAudioGitJson('course-registry-v741.json',process.env.IFSI_BASE_SHA).courses.find(c=>c.id===d.courseId);
  verifyExistingWrittenHistory(old,course,d);
  assert.deepEqual(JSON.parse(JSON.stringify(data.window.IFSI_V741.resourcesForCourse(course.id).questions.map(q=>q.id))),course.canonicalQuestionIds);
  for(const change of [x=>x.qcmCount--,x=>x.flashcardCount--,x=>x.vocabularyCount--,x=>x.vocabularyEntryIds.pop(),x=>x.blockers=[],x=>x.partDeliveries[0].vocalIds=['fake'],x=>x.publicAudioArtifacts=[],x=>x.publicationApproval.status='pending',x=>x.sourceAudit.oralStatus='unverified',x=>x.publicArtifacts.qcm.sha256='0'.repeat(64)]){

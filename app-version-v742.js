@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.167';
+const VERSION='8.30.168';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Diarrhées infectieuses : fiche, QCM, flashcards, vocabulaire et vocaux disponibles.`;
