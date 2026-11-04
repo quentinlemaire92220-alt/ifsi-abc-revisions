@@ -9,6 +9,10 @@ const tests=s=>[...s.matchAll(/^\s*(?:run:\s*)?((?:node|python)\s+tests\/[^\n]+)
 for(const command of tests(prior))assert.ok(tests(current).includes(command),'Commande TNR retirée : '+command);
 assert.ok(!/continue-on-error:\s*true/.test(current),'TNR doit rester bloquant');
 assert.ok(current.includes('if: ${{ !cancelled() }}'),'Les contrôles restants doivent tourner après échec');
+const historyStep=current.indexOf('name: Préparer les seules versions Git nécessaires');
+const firstAudioTest=current.indexOf('name: Vérifier les remplacements de séries audio');
+assert.ok(historyStep>=0&&historyStep<firstAudioTest,'La référence Git doit être préparée avant le premier test');
+assert.match(current.slice(historyStep,current.indexOf('\n      - name:',historyStep+1)),/if: \$\{\{ !cancelled\(\) \}\}/,'La préparation Git doit survivre aux échecs antérieurs');
 assert.ok(current.includes('--stage preparation')&&current.includes('--stage publication'));
 assert.ok(current.includes('cache-dependency-path: tools/ci-pdf-requirements.txt'));
 assert.match(current,/name: Configurer Python pour les contrôles PDF\n\s+if: \$\{\{ !cancelled\(\) \}\}\n\s+uses: actions\/setup-python@v5/,
