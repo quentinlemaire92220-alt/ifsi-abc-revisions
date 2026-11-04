@@ -1,3 +1,4 @@
+import {validateHybridDelivery} from './hybrid-sheet-contract.mjs';
 import {approvedRevisionAudioIds} from '../tools/scoped-course-revision-contract.mjs';
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
@@ -260,7 +261,8 @@ assert(new Set(vocabulary.entries.map(x=>x.id)).size===vocabulary.entries.length
 // This additive, approved glossary reproduces course definitions. Do not invent
 // external etymologies absent from the supplied course. Historical entries keep
 // their original mandatory etymology contract.
-const definitionDeliveries=[...json('docs/course-deliveries.json').scopedCourseRevisions||[],...json('docs/course-deliveries.json').courses.filter(c=>['existing_course_written_update_v1','official_reviewed_scoped_bundle_v1'].includes(c.updateContract)&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')];
+const approvedHybridDefinitions=json('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='first_release'&&c.packFormat==='hybrid_v1'&&c.validated===true&&c.status==='complete'&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication'&&c.publicationApproval?.scope==='course_package').map(c=>{validateHybridDelivery(c.courseId,c,[1,2,3].flatMap(n=>json('sheets-'+n+'.json')));return c;});
+const definitionDeliveries=[...approvedHybridDefinitions,...json('docs/course-deliveries.json').scopedCourseRevisions||[],...json('docs/course-deliveries.json').courses.filter(c=>['existing_course_written_update_v1','official_reviewed_scoped_bundle_v1'].includes(c.updateContract)&&c.publicationApproval?.status==='approved'&&c.publicationApproval?.authorization==='explicit_go_publication')];
 const courseDefinitionEntry=x=>definitionDeliveries.some(c=>c.vocabularyEntryIds?.includes(x.id)&&x.sourceType==='course_glossary'&&x.etymologyStatus==='not_provided_in_course'&&!x.etymologie&&x.courseIds.length===1&&x.courseIds[0]===c.courseId&&typeof x.definition==='string'&&x.definition.length>20);
 assert(vocabulary.entries.every(x=>(typeof x.etymologie==='string'&&x.etymologie.trim().length>=18)||courseDefinitionEntry(x)),'Décomposition ou définition de cours approuvée manquante');
 assert(vocabulary.entries.every(x=>courseDefinitionEntry(x)||!(/undefined|null|à compléter/i).test(x.etymologie)),'Étymologie laissée en placeholder');
