@@ -8,6 +8,7 @@ import {requireVisualReviewIfChanged} from './visual-owner-review-gate.mjs';
 import {validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateAudioReplacements} from './audio-replacement-contract.mjs';
 import {verifyPublicArtifact} from '../tools/public-artifact-contract.mjs';
+import {validateHybridDelivery} from './hybrid-sheet-contract.mjs';
 const read=readHistoricalAudioJson,base=process.env.IFSI_BASE_SHA||'HEAD^';
 const old=p=>readHistoricalAudioAt(base,p);
 const delivery=read('docs/course-deliveries.json').courses.find(c=>c.courseId==='droits_patients');
@@ -63,7 +64,8 @@ assert.equal(new Set(newVocabulary.entries.map(x=>x.id)).size,newVocabulary.entr
 const historicalSheetResourceIds=new Set([1,2,3].flatMap(n=>old(`sheets-${n}.json`)).map(s=>s.resourceId));
 const approvedNewSheets=new Set(publicationApprovals.filter(c=>
  !historicalSheetResourceIds.has(c.sheetResourceId)&&
- ['reviewed_written_bundle','official_reviewed_scoped_bundle'].includes(c.deliveryMode)&&c.validated===true&&
+ (['reviewed_written_bundle','official_reviewed_scoped_bundle'].includes(c.deliveryMode)||
+  c.deliveryMode==='first_release'&&c.packFormat==='hybrid_v1'&&!old('course-registry-v741.json').courses.some(x=>x.id===c.courseId))&&c.validated===true&&
  c.publicationApproval?.status==='approved'&&
  c.publicationApproval?.authorization==='explicit_go_publication'&&
  c.publicationApproval?.scope==='course_package'
@@ -74,6 +76,7 @@ for(const file of ['sheets-1.json','sheets-2.json','infographics.json']){
  for(const s of additions){
   assert.ok(!previous.some(p=>p.resourceId===s.resourceId),'Une fiche historique ne peut être exclue du contrôle');
   const d=publicationApprovals.find(c=>c.sheetResourceId===s.resourceId);
+  if(d.packFormat==='hybrid_v1')validateHybridDelivery(d.courseId,d,[1,2,3].flatMap(n=>read(`sheets-${n}.json`)));
   assert.equal(s.courseId,d.courseId);
   assert.equal(s.pageCount,d.publicArtifacts.sheet.pageCount);
   verifyPublicArtifact(d,s.url);

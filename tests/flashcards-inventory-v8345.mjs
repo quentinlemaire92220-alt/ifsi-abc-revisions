@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
+import assert from 'node:assert/strict';
 import {countAuthoredListItems} from './flashcard-answer-enumeration.mjs';
 
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -56,7 +57,13 @@ const reMeta=/\b(?:propositions?|affirmations?)\b|\b(?:sont|est) (?:exactes?|jus
 const reVague=/que faut-il retenir|la hiérarchie correcte|quelle valeur .*\bdiapo|correspondent au support|dans l['’]exemple|selon le support|dans ce cours|qcm oral|^concernant\s+.+\?$|^(?:le|la|les|l['’])\s+(?![^?]*\b[a-zà-ÿ]+-(?:t-)?(?:il|elle|ils|elles)\b)[^?]{2,60}\?$/i;
 const reBareAcronym=/«\s*[A-ZÀ-Ý]{2,6}[0-9₂₃]*[+⁺\-−⁻]*\s*»/;
 const reGenericPair=/À quoi correspond\s+«\s*(?:Capteur|Convection|Conduction|Évaporation|Rayonnement)\s*»\s*\?/i;
-const rePair=/\bassociation|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;
+const rePair=/\bassociations?\b(?!\s+statistiques?\b)|associer|\b(?:mécanisme|composant|cible|cellule|structure|organe)\s*[-–—→]\s*(?:exemple|fonction|rôle|effet)|«[^»]+[-–—][^»]+»/i;
+// A statistical association is one concept to explain, not a matching task.
+assert.equal(rePair.test('Pourquoi une association statistique ne permet-elle pas d’étiqueter un adolescent?'),false);
+assert.equal(rePair.test('Comment interpréter les associations statistiques?'),false);
+assert.equal(rePair.test('Quelles associations entre organes et fonctions faut-il retenir?'),true);
+assert.equal(rePair.test('Associer chaque cellule à son rôle'),true);
+assert.equal(rePair.test('Structure → fonction'),true);
 const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
 function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):countWords[m[1]]||null}
 function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}

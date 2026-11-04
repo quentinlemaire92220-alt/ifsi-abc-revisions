@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {
  audioValueDigest,hostedAudioSupplementDigest,validateHostedAudioSupplements,
- historicalAudioView,validateHostedAudioChanges
+ historicalAudioView,validateHostedAudioChanges,firstReleaseAudioIds
 } from '../tools/hosted-audio-supplement-contract.mjs';
 import {publicationBundle,bundleDigest,validateChangedDeliveries} from './course-publication-approval-lib.mjs';
 import {validatePartChanges} from './course-delivery-parts-lib.mjs';
@@ -108,9 +108,35 @@ const previous=old('docs/course-deliveries.json'),previousData=load(old,previous
 const view=historicalAudioView(current,currentData);
 validateHostedAudioChanges(previous,current,previousData,currentData,{stage:'preparation'});
 const changed=validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'});
-const independentlyApproved=current.courses.filter(d=>d.updateContract==='official_reviewed_scoped_bundle_v1' &&
+const independentlyApproved=current.courses.filter(d=>(d.updateContract==='official_reviewed_scoped_bundle_v1'||
+ (d.deliveryMode==='first_release'&&d.packFormat==='hybrid_v1'&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
  JSON.stringify(d)!==JSON.stringify(previous.courses.find(old=>old.courseId===d.courseId)));
 assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>x.courseId).sort());
+
+// A new full package must not be mistaken for a change to legacy supplements.
+// These fixtures are in-memory test data, never saved as owner authorization.
+{
+ const v={id:'first_audio',courseId:'first',course:'Nouveau cours',number:1,title:'Rappel',mime:'audio/mpeg',durationSeconds:120,driveId:'new_drive',localAudio:'./assets/audio/first/one.mp3'};
+ const artifact={vocalId:v.id,artifactId:v.id,path:v.localAudio.slice(2),sha256:hash,bytes:bytes.length,durationSeconds:120};
+ const packageRow={courseId:'first',deliveryMode:'first_release',packFormat:'hybrid_v1',validated:true,status:'complete',vocals:[v.id],publicAudioArtifacts:[artifact],artifactSha256s:{new_drive:hash},audioOwnerReview:{status:'owner_listening_accepted',privateEvidenceSha256:'c'.repeat(64),artifactSha256s:{[v.id]:hash}},publicationApproval:{status:'approved',authorization:'explicit_go_publication',scope:'course_package',approvedAt:'2026-11-04T12:00:00Z',bundleSha256:'d'.repeat(64)}};
+ const next={...approved,courses:[...approved.courses,packageRow]};
+ const nextData={...data,registry:{courses:[...data.registry.courses,{id:'first',label:v.course,audioStatus:'available',audioCount:1}]},vocals:[...data.vocals,v]};
+ assert.deepEqual([...firstReleaseAudioIds(approved,next,data,nextData,{readBytes})],[v.id]);
+ validateHostedAudioChanges(approved,next,data,nextData,{readBytes});
+ for(const fault of [
+  (m,x)=>m.courses.at(-1).publicationApproval.authorization='production_only',
+  (m,x)=>m.courses.at(-1).audioOwnerReview.status='pending',
+  (m,x)=>m.courses.at(-1).publicAudioArtifacts[0].sha256='0'.repeat(64),
+  (m,x)=>m.courses.at(-1).publicAudioArtifacts[0].path='../private.mp3',
+  (m,x)=>x.vocals.at(-1).durationSeconds=601,
+  (m,x)=>x.vocals.at(-1).id='legacy',
+  (m,x)=>x.vocals[0].title='historical changed',
+  (m,x)=>x.vocals.push({...v,id:'undeclared'}),
+ ]){
+  const m=structuredClone(next),x=structuredClone(nextData);fault(m,x);
+  assert.throws(()=>validateHostedAudioChanges(approved,m,data,x,{readBytes}));
+ }
+}
 for(const s of current.hostedAudioSupplements||[]){
  const delivery=current.courses.find(d=>d.courseId===s.courseId);
  assert.deepEqual(delivery,previous.courses.find(d=>d.courseId===s.courseId),'Ancienne livraison et GO doivent rester identiques');

@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import fs from 'node:fs';
 import {validateInteractiveAudioReview,validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 import {validateVocalDuration} from './vocal-duration-contract.mjs';
+import {firstReleaseAudioIds} from '../tools/hosted-audio-supplement-contract.mjs';
 const canonical=x=>Array.isArray(x)?x.map(canonical):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonical(x[k])])):x;
 export function audioSupplementDigest(supplement,vocals){
  const rows=supplement.vocalIds.map(id=>vocals.find(v=>v.id===id)).sort((a,b)=>a.id.localeCompare(b.id));
@@ -52,7 +53,12 @@ export function validateAudioSupplements(manifest,data){
 export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldVocals,newVocals){
  const oldIds=new Set(oldVocals.map(v=>v.id));
  const approved=new Set(),usedPaths=new Set();
+ const hybridIds=firstReleaseAudioIds(before,after,{registry:oldRegistry,vocals:oldVocals},{registry,vocals:newVocals});
  for(const c of after.courses||[]){
+  if(c.deliveryMode==='first_release'&&c.packFormat==='hybrid_v1'&&c.vocals?.length&&c.vocals.every(id=>hybridIds.has(id))){
+   for(const id of c.vocals){assert.ok(!approved.has(id));approved.add(id);}
+   continue;
+  }
   if(c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1'&&!(before.courses||[]).some(x=>x.courseId===c.courseId)){
    assert.ok(!(oldRegistry.courses||[]).some(x=>x.id===c.courseId),'Nouveau cours audio déjà connu');
    const course=registry.courses.find(x=>x.id===c.courseId);

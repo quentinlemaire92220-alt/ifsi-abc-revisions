@@ -17,22 +17,48 @@ const server=http.createServer((req,res)=>{
  res.writeHead(200,{'Content-Type':mime,'Content-Length':size,'Cache-Control':'no-store','Accept-Ranges':'bytes'});fs.createReadStream(p).pipe(res);
 });
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
-const profile=fs.mkdtempSync(path.join(os.tmpdir(),'ifsi-audio-'));
+// Chromium's service-worker database needs a short profile path on Windows.
+// The test runner's nested log directory can exceed the native path limit.
+const profileRoot=process.platform==='win32'&&process.env.LOCALAPPDATA
+ ?path.join(process.env.LOCALAPPDATA,'Temp'):os.tmpdir();
+const profile=fs.mkdtempSync(path.join(profileRoot,'ifsi-audio-'));
 const bins=[process.env.CHROME_BIN,'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'];
 const chrome=bins.find(p=>p&&fs.existsSync(p));assert.ok(chrome,'Chromium required');
-const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-gpu','--no-first-run','--no-default-browser-check','--autoplay-policy=no-user-gesture-required','--mute-audio','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:'ignore',windowsHide:true});
+const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--no-first-run','--no-default-browser-check','--autoplay-policy=no-user-gesture-required','--mute-audio','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
+let chromeStderr='',launchError;
+child.stderr.on('data',chunk=>{chromeStderr=(chromeStderr+chunk.toString()).slice(-16384)});
+child.on('error',error=>{launchError=error});
 const pause=ms=>new Promise(r=>setTimeout(r,ms));let ws;
 try{
- let port;for(let i=0;i<100;i++){const p=path.join(profile,'DevToolsActivePort');if(fs.existsSync(p)){port=Number(fs.readFileSync(p,'utf8').split('\n')[0]);break}await pause(100)}assert.ok(port,'Debug port missing');
+ let port;for(let i=0;i<300;i++){const p=path.join(profile,'DevToolsActivePort');if(fs.existsSync(p)){port=Number(fs.readFileSync(p,'utf8').split('\n')[0]);break}if(launchError||child.exitCode!==null||child.signalCode)throw Error('Chromium startup failed: '+(launchError?.message||child.exitCode||child.signalCode)+'\n'+chromeStderr);await pause(100)}assert.ok(port,'Debug port missing after 30 seconds\n'+chromeStderr);
  const tabs=await (await fetch('http://127.0.0.1:'+port+'/json')).json();const tab=tabs.find(t=>t.type==='page');
  ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});let seq=0;const pending=new Map();
  ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p?.reject(Error(m.error.message)):p?.resolve(m.result)}};
  const cmd=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))});
+ await cmd('Runtime.enable');await cmd('Page.enable');
  await cmd('Page.navigate',{url:'http://127.0.0.1:'+server.address().port+'/'});
+ // First installation claims the page and reloads it. Wait for the controlled
+ // application to settle before running an uninterrupted playback scenario.
+ let stable=0;
+ for(let i=0;i<900&&stable<10;i++){
+  try{
+   const ready=await cmd('Runtime.evaluate',{expression:"document.readyState==='complete'&&!!navigator.serviceWorker.controller&&!!window.IFSI_V73?.getVocals?.().length&&!!window.IFSI_V741?.getRegistry?.()",returnByValue:true});
+   stable=ready.result?.value===true?stable+1:0;
+  }catch(error){
+   if(!/navigated or closed|context.*(?:destroyed|not found)|Cannot find context/i.test(error.message))throw error;
+   stable=0;
+  }
+  await pause(100);
+ }
+ assert.equal(stable,10,'Controlled application did not settle after service worker installation');
  const expr=`(async()=>{
  const sleep=ms=>new Promise(r=>setTimeout(r,ms));const until=async(fn,msg)=>{for(let i=0;i<250;i++){if(fn())return;await sleep(100)}throw Error(msg)};
  await until(()=>window.IFSI_V73?.getVocals?.().some(v=>v.courseId==='psychologie_sociale')&&window.IFSI_V741?.getRegistry?.(),'Application boot');
  const api=window.IFSI_V73,all=api.getVocals(),rows=all.filter(v=>v.courseId==='psychologie_sociale');if(rows.length!==18)throw Error('Expected 18 active audios');
+ // A controlled page may buffer the whole MP3. Probe byte ranges explicitly
+ // through the browser as well as testing real playback and seeking below.
+ const partial=await fetch(rows[0].localAudio,{headers:{Range:'bytes=0-1023'},cache:'no-store'});
+ if(partial.status!==206||(await partial.arrayBuffer()).byteLength!==1024)throw Error('HTTP byte range unavailable through controlled application');
  window.IFSI_V74.openCourse('Psychologie sociale');await sleep(200);
  if(document.querySelectorAll('#v74CourseDetail [data-vocal74]').length!==18)throw Error('Course page does not expose all 18 audio buttons');
  if(window.IFSI_V741.resourcesForCourse('psychologie_sociale').questions.length!==64)throw Error('Course questions lost');
@@ -46,7 +72,7 @@ try{
  document.getElementById('vocalPlaylistNext').click();await until(()=>api.getCurrentId()===rows[17].id&&audio.readyState>=2,'Next failed');
  audio.currentTime=12;await sleep(400);document.getElementById('vocalPlaylistPrev').click();await until(()=>api.getCurrentId()===other.id&&audio.readyState>=2,'Previous failed');
  document.getElementById('vocalPlaylistNext').click();await until(()=>api.getCurrentId()===rows[17].id&&audio.currentTime>=11,'Position not restored');
- audio.pause();return {status:'PASS',activeAudios:rows.length,downloadLinks:links,realPlayback:true,realEndedToOtherTheme:true,nextPreviousResume:true,otherTheme:other.course,phoneLockedTest:false};})()`;
+ audio.pause();return {status:'PASS',activeAudios:rows.length,downloadLinks:links,http206:true,realPlayback:true,realEndedToOtherTheme:true,nextPreviousResume:true,otherTheme:other.course,phoneLockedTest:false};})()`;
  const result=await cmd('Runtime.evaluate',{expression:expr,awaitPromise:true,userGesture:true,returnByValue:true});
  if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||result.exceptionDetails.text);
  assert.equal(result.result.value.status,'PASS');assert.ok(ranges.some(p=>p.includes('Psychologie_sociale_Vocal_01.mp3')),'No HTTP range request');console.log(JSON.stringify({...result.result.value,rangeRequests:ranges.length}));

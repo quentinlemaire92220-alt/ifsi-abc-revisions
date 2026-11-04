@@ -19,6 +19,7 @@ const commands=[
  ['template_contract',py,['tests/pdf-template-v3-test.py']],
  ['pedagogical_contract',n,['tests/qcm-autonomy-contract-test.mjs']],
  ['pedagogical_contract',n,['tests/qcm-bank-contract-test.mjs']],
+ ['pdf_bank_bytes',py,['tests/boxed-qcm-rationales-test.py']],
  ['pedagogical_contract',n,['tests/course-bank-current.mjs',stage]],
  ['preparation_isolation',n,['tests/course-preparation-stage.mjs']],
  ['pedagogical_v149_contract',n,['tools/pedagogical-non-regression-v149.mjs','--self-test']],
