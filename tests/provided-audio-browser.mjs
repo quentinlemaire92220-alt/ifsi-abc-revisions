@@ -24,10 +24,13 @@ const profileRoot=process.platform==='win32'&&process.env.LOCALAPPDATA
 const profile=fs.mkdtempSync(path.join(profileRoot,'ifsi-audio-'));
 const bins=[process.env.CHROME_BIN,'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'];
 const chrome=bins.find(p=>p&&fs.existsSync(p));assert.ok(chrome,'Chromium required');
-const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-gpu','--no-first-run','--no-default-browser-check','--autoplay-policy=no-user-gesture-required','--mute-audio','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:'ignore',windowsHide:true});
+const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--no-first-run','--no-default-browser-check','--autoplay-policy=no-user-gesture-required','--mute-audio','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
+let chromeStderr='',launchError;
+child.stderr.on('data',chunk=>{chromeStderr=(chromeStderr+chunk.toString()).slice(-16384)});
+child.on('error',error=>{launchError=error});
 const pause=ms=>new Promise(r=>setTimeout(r,ms));let ws;
 try{
- let port;for(let i=0;i<100;i++){const p=path.join(profile,'DevToolsActivePort');if(fs.existsSync(p)){port=Number(fs.readFileSync(p,'utf8').split('\n')[0]);break}await pause(100)}assert.ok(port,'Debug port missing');
+ let port;for(let i=0;i<300;i++){const p=path.join(profile,'DevToolsActivePort');if(fs.existsSync(p)){port=Number(fs.readFileSync(p,'utf8').split('\n')[0]);break}if(launchError||child.exitCode!==null||child.signalCode)throw Error('Chromium startup failed: '+(launchError?.message||child.exitCode||child.signalCode)+'\n'+chromeStderr);await pause(100)}assert.ok(port,'Debug port missing after 30 seconds\n'+chromeStderr);
  const tabs=await (await fetch('http://127.0.0.1:'+port+'/json')).json();const tab=tabs.find(t=>t.type==='page');
  ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});let seq=0;const pending=new Map();
  ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p?.reject(Error(m.error.message)):p?.resolve(m.result)}};
