@@ -7749,7 +7749,7 @@
         "contract": "ifsi_pedagogical_non_regression_v149",
         "sheetSha256": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
         "privateEvidenceSha256": "cc6debe40201e68c15bcc9b8ec3cc7c5524a79e76b027cdfabbd7f74c8d81aec",
-        "reviewedAt": "2026-11-04T15:10:39.336427+00:00",
+        "reviewedAt": "2026-11-04T15:10:39+00:00",
         "sourceInventory": "reviewed",
         "sourceCoverage": "complete",
         "inheritanceReview": "not_applicable_new_course",
@@ -7763,7 +7763,9 @@
         "scope": "course_package",
         "approvedAt": "2026-11-04T15:10:39.336427+00:00",
         "bundleSha256": "f58cd356e9a76aac443ba6285ed50ce7c30bbb7057fd68ca43dbf15468eb8086"
-      }
+      },
+      "qcmPdfLayout": "boxed_inline_cardinality_rationales_v1",
+      "flashcardPdfLayout": "compact_duplex_six_cards_v1"
     }
   ],
   "supplementalResourceApprovals": [

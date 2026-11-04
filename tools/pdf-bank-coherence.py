@@ -51,6 +51,31 @@ def validate_qcm_written_dot(text,rows):
         assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
+def validate_boxed_inline_rationales(text,rows):
+    """Exact native text for boxed questions and all five option rationales."""
+    parts=text.split('Corrigés argumentés',1)
+    assert len(parts)==2,'Corrigés absents'
+    questions,corrections=parts
+    questions=without_theme_titles(questions,rows)
+    corrections=without_theme_titles(corrections.replace('Corrigés argumentés',''),rows)
+    blocks=list(re.finditer(r'(?m)^Q(\d{2,3})\s*\n',questions))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Questions manquantes/dupliquées'
+    levels={'easy':'Facile','medium':'Moyen','hard':'Difficile'}
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        actual=questions[m.end():blocks[i+1].start() if i+1<len(blocks) else len(questions)]
+        count=len(q['answers']);assert count==q['announcedCorrectCount']
+        title=q['question']+f' ({count} bonne'+(' réponse)' if count==1 else 's réponses)')
+        expected=levels[q['difficulty']]+' '+title+' '+' '.join(chr(65+j)+'. '+s for j,s in enumerate(q['choices']))
+        assert norm(actual)==norm(expected),q['id']+': question, choix, difficulté ou cardinalité divergents'
+    blocks=list(re.finditer(r'(?m)^Q(\d{2,3}) — Réponses : ([A-E](?:, [A-E])*)\.\s*',corrections))
+    assert [int(m[1]) for m in blocks]==[q['number'] for q in rows],'Corrigés manquants/dupliqués'
+    for i,(q,m) in enumerate(zip(rows,blocks)):
+        assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé divergente'
+        actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
+        assert len(q['rationales'])==5
+        expected=q['explanation']+' '+' '.join(chr(65+j)+' : '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+        assert norm(actual)==norm(expected),q['id']+': argumentation ou justification A–E divergente'
+
 def validate_qcm(text,rows):
     # Do not change the historical public PDF contract.
     questions=re.split(r'Corrigés argumentés',text,maxsplit=1)[0]
@@ -411,12 +436,16 @@ def check(course):
                 validate_qcm_theme_cards(text,rows,inline_cardinality=True)
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cardinalite integree')
                 continue
-            if role=='flashcards' and course.get('flashcardPdfLayout')=='duplex_six_cards_v1':
+            if role=='qcm' and course.get('qcmPdfLayout')=='boxed_inline_cardinality_rationales_v1':
+                validate_boxed_inline_rationales(body(doc),json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cinq justifications par question')
+                continue
+            if role=='flashcards' and course.get('flashcardPdfLayout') in ['duplex_six_cards_v1','compact_duplex_six_cards_v1']:
                 import importlib.util
                 spec=importlib.util.spec_from_file_location('duplex_cards',Path(__file__).with_name('duplex-card-coherence.py'))
                 reader=importlib.util.module_from_spec(spec);spec.loader.exec_module(reader)
                 rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
-                reader.validate_compact_duplex_cards(doc,rows) if course.get('updateContract')=='official_reviewed_scoped_bundle_v1' else reader.validate_duplex_cards(doc,rows)
+                reader.validate_compact_duplex_cards(doc,rows) if course.get('updateContract')=='official_reviewed_scoped_bundle_v1' or course.get('flashcardPdfLayout')=='compact_duplex_six_cards_v1' else reader.validate_duplex_cards(doc,rows)
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages recto-verso')
                 continue
             if course.get('deliveryMode')=='reviewed_written_bundle' and role=='qcm':
