@@ -103,6 +103,47 @@ export function historicalAudioView(manifest,data,options={}){
   vocals:data.vocals.filter(v=>!accepted.has(v.id))};
 }
 
+// A first complete course package may coexist with historical supplements.
+// Its own package signature is checked by validateChangedDeliveries afterwards.
+export function firstReleaseAudioIds(before,after,oldData,newData,{readBytes=localBytes}={}){
+ const accepted=new Set();
+ for(const d of after.courses||[]){
+  if(d.deliveryMode!=='first_release'||d.packFormat!=='hybrid_v1'||before.courses?.some(x=>x.courseId===d.courseId))continue;
+  assert.ok(!oldData.registry.courses.some(c=>c.id===d.courseId),'Première publication audio : cours déjà présent');
+  assert.equal(d.validated,true);assert.equal(d.status,'complete');
+  assert.equal(d.publicationApproval?.status,'approved');
+  assert.equal(d.publicationApproval?.authorization,'explicit_go_publication');
+  assert.equal(d.publicationApproval?.scope,'course_package');
+  assert.ok(iso(d.publicationApproval.approvedAt));
+  assert.match(d.publicationApproval.bundleSha256||'',/^[a-f0-9]{64}$/);
+  assert.equal(d.audioOwnerReview?.status,'owner_listening_accepted');
+  assert.match(d.audioOwnerReview.privateEvidenceSha256||'',/^[a-f0-9]{64}$/);
+  const rows=newData.vocals.filter(v=>v.courseId===d.courseId);
+  assert.ok(rows.length);assert.deepEqual(rows.map(v=>v.id),d.vocals);
+  assert.equal(new Set(d.vocals).size,d.vocals.length);
+  assert.deepEqual(d.publicAudioArtifacts.map(a=>a.vocalId),d.vocals);
+  const course=newData.registry.courses.find(c=>c.id===d.courseId);
+  assert.equal(course?.audioStatus,'available');assert.equal(course.audioCount,rows.length);
+  const paths=new Set();
+  for(const [i,v] of rows.entries()){
+   const a=d.publicAudioArtifacts[i];
+   assert.ok(!oldData.vocals.some(x=>x.id===v.id),'Vocal historique réutilisé comme première publication');
+   assert.equal(newData.vocals.filter(x=>x.id===v.id).length,1);
+   assert.equal(v.course,course.label);assert.equal(v.mime,'audio/mpeg');assert.equal(v.number,i+1);
+   assert.match(a.path||'',/^assets\/audio\/[A-Za-z0-9_-]+(?:\/[A-Za-z0-9_-]+)*\.mp3$/);
+   assert.ok(!paths.has(a.path));paths.add(a.path);
+   assert.equal(v.localAudio,'./'+a.path);assert.equal(v.durationSeconds,a.durationSeconds);
+   assert.match(a.sha256||'',/^[a-f0-9]{64}$/);validateVocalDuration(v,a.sha256);
+   assert.equal(d.audioOwnerReview.artifactSha256s[v.id],a.sha256);
+   assert.equal(d.artifactSha256s?.[v.driveId||a.artifactId],a.sha256);
+   assert.ok(Number.isSafeInteger(a.bytes)&&a.bytes>1024);
+   const bytes=readBytes(a.path);assert.equal(bytes.length,a.bytes);assert.equal(sha(bytes),a.sha256);
+   accepted.add(v.id);
+  }
+ }
+ return accepted;
+}
+
 export function validateHostedAudioChanges(before,after,oldData,newData,{stage='publication',readBytes}={}){
  const options={stage:'preparation',...(readBytes?{readBytes}:{})};
  validateHostedAudioSupplements(after,newData,options);
@@ -125,7 +166,7 @@ export function validateHostedAudioChanges(before,after,oldData,newData,{stage='
  if((after.hostedAudioSupplements||[]).length){
   const additions=(after.courses||[]).filter(d=>d.updateContract==='official_reviewed_scoped_bundle_v1' &&
    !before.courses?.some(old=>old.updateContract===d.updateContract&&old.courseId===d.courseId));
-  const authorized=new Set();
+  const authorized=firstReleaseAudioIds(before,after,oldView,newView,readBytes?{readBytes}:{});
   for(const d of additions){
    assert.equal(d.publicationApproval?.status,'approved');
    assert.equal(d.publicationApproval?.authorization,'explicit_go_publication');

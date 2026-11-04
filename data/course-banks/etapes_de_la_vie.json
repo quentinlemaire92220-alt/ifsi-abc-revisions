@@ -1,0 +1,2864 @@
+[
+  {
+    "id": "etapes_vie_q001",
+    "courseId": "etapes_de_la_vie",
+    "number": 1,
+    "theme": "De la fécondation à la nidation",
+    "difficulty": "easy",
+    "question": "À propos des gamètes et du zygote :",
+    "choices": [
+      "L’ovocyte possède normalement 46 chromosomes au moment de la fécondation.",
+      "Le zygote est le gamète produit par le testicule.",
+      "Le spermatozoïde apporte normalement 23 chromosomes.",
+      "Le zygote possède normalement 46 chromosomes.",
+      "La fécondation divise par deux le nombre de chromosomes du zygote."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le gamète féminin est haploïde, à 23 chromosomes.",
+      "Le zygote résulte de la fusion ; le testicule produit des spermatozoïdes.",
+      "Le gamète masculin est haploïde.",
+      "La fusion réunit les deux jeux chromosomiques.",
+      "Elle réunit les apports chromosomiques des deux gamètes."
+    ],
+    "explanation": "Deux gamètes haploïdes de 23 chromosomes fusionnent en un zygote diploïde de 46 chromosomes.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c001",
+        "theme": "De la fécondation à la nidation",
+        "front": "Quel changement chromosomique accompagne normalement la fécondation humaine ?",
+        "answers": [
+          "Deux gamètes haploïdes de 23 chromosomes fusionnent en un zygote diploïde de 46 chromosomes."
+        ],
+        "explanation": "Deux gamètes haploïdes de 23 chromosomes fusionnent en un zygote diploïde de 46 chromosomes."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q002",
+    "courseId": "etapes_de_la_vie",
+    "number": 2,
+    "theme": "De la fécondation à la nidation",
+    "difficulty": "medium",
+    "question": "Concernant les gonades et les voies génitales féminines :",
+    "choices": [
+      "Les ovaires sont des gonades.",
+      "L’utérus est la gonade féminine.",
+      "Les spermatozoïdes gagnent la trompe avant de traverser le col.",
+      "Les spermatozoïdes passent par le col avant d’atteindre la cavité utérine.",
+      "Le cordon ombilical transporte les spermatozoïdes vers l’ovaire."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils appartiennent aux organes reproducteurs producteurs de gamètes.",
+      "La gonade féminine est l’ovaire.",
+      "La trompe se situe après le col et la cavité utérine sur ce trajet.",
+      "Le trajet suit vagin, col, cavité utérine puis trompe.",
+      "Le cordon relie le fœtus au placenta pendant la grossesse."
+    ],
+    "explanation": "Les gonades sont les testicules et les ovaires. Le trajet féminin est : vagin, col, cavité utérine, puis trompe.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c002",
+        "theme": "De la fécondation à la nidation",
+        "front": "Quelles sont les gonades et quel trajet les spermatozoïdes suivent-ils dans les voies génitales féminines ?",
+        "answers": [
+          "Les gonades sont les testicules et les ovaires. Le trajet féminin est : vagin, col, cavité utérine, puis trompe."
+        ],
+        "explanation": "Les gonades sont les testicules et les ovaires. Le trajet féminin est : vagin, col, cavité utérine, puis trompe."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q003",
+    "courseId": "etapes_de_la_vie",
+    "number": 3,
+    "theme": "De la fécondation à la nidation",
+    "difficulty": "medium",
+    "question": "Quelles propositions distinguent fécondation et nidation ?",
+    "choices": [
+      "La fécondation est l’expulsion du placenta.",
+      "La fécondation forme la cellule-œuf.",
+      "Ces événements sont séparés par des divisions et un déplacement de l’œuf.",
+      "La nidation correspond à une implantation dans l’endomètre.",
+      "La nidation est la libération de l’ovocyte par l’ovaire."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’expulsion placentaire est la délivrance.",
+      "La fusion des gamètes produit le zygote.",
+      "Le développement précoce accompagne le trajet vers l’utérus.",
+      "L’endomètre est la muqueuse interne utérine.",
+      "Cette libération est l’ovulation."
+    ],
+    "explanation": "La fécondation fusionne les gamètes et forme le zygote. La nidation implante le blastocyste dans l’endomètre, muqueuse interne de l’utérus.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c003",
+        "theme": "De la fécondation à la nidation",
+        "front": "Quelle différence existe entre fécondation et nidation ?",
+        "answers": [
+          "La fécondation fusionne les gamètes et forme le zygote. La nidation implante le blastocyste dans l’endomètre, muqueuse interne de l’utérus."
+        ],
+        "explanation": "La fécondation fusionne les gamètes et forme le zygote. La nidation implante le blastocyste dans l’endomètre, muqueuse interne de l’utérus."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q004",
+    "courseId": "etapes_de_la_vie",
+    "number": 4,
+    "theme": "De la fécondation à la nidation",
+    "difficulty": "easy",
+    "question": "Lors du développement précoce :",
+    "choices": [
+      "La différenciation participe à la spécialisation fonctionnelle.",
+      "Mitose et nidation désignent le même événement.",
+      "La différenciation signifie uniquement une augmentation de taille du corps.",
+      "Les divisions n’apparaissent qu’après la naissance.",
+      "La mitose contribue à augmenter le nombre de cellules."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les cellules acquièrent des caractéristiques propres.",
+      "La nidation est une implantation ; la mitose est une division cellulaire.",
+      "La spécialisation ne se confond pas avec la croissance quantitative.",
+      "Elles ont lieu dès les premiers stades du développement.",
+      "Les divisions participent à la multiplication cellulaire."
+    ],
+    "explanation": "Les mitoses augmentent le nombre de cellules. La différenciation leur fait acquérir des caractéristiques et des fonctions spécialisées.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c004",
+        "theme": "De la fécondation à la nidation",
+        "front": "Comment distinguer mitose et différenciation cellulaire ?",
+        "answers": [
+          "Les mitoses augmentent le nombre de cellules. La différenciation leur fait acquérir des caractéristiques et des fonctions spécialisées."
+        ],
+        "explanation": "Les mitoses augmentent le nombre de cellules. La différenciation leur fait acquérir des caractéristiques et des fonctions spécialisées."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q005",
+    "courseId": "etapes_de_la_vie",
+    "number": 5,
+    "theme": "De la fécondation à la nidation",
+    "difficulty": "medium",
+    "question": "À propos du blastocyste :",
+    "choices": [
+      "Il s’implante normalement dans le myomètre comme muqueuse de surface.",
+      "Il correspond à l’ovocyte avant sa rencontre avec un spermatozoïde.",
+      "Il apparaît au moment de la délivrance.",
+      "Il possède déjà une organisation pluricellulaire.",
+      "Son apparition marque l’entrée dans la période fœtale du troisième mois."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’implantation concerne l’endomètre ; le myomètre est musculaire.",
+      "Il se forme après la fécondation.",
+      "La délivrance suit la naissance ; le blastocyste est un stade très précoce.",
+      "Le blastocyste résulte des divisions précoces de l’œuf.",
+      "Le blastocyste se forme dans les premiers jours."
+    ],
+    "explanation": "L’œuf atteint le stade pluricellulaire de blastocyste autour du cinquième jour après fécondation. Il s’implante ensuite dans l’endomètre.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c005",
+        "theme": "De la fécondation à la nidation",
+        "front": "À quel stade précoce l’œuf s’implante-t-il et dans quel tissu ?",
+        "answers": [
+          "L’œuf atteint le stade pluricellulaire de blastocyste autour du cinquième jour après fécondation. Il s’implante ensuite dans l’endomètre."
+        ],
+        "explanation": "L’œuf atteint le stade pluricellulaire de blastocyste autour du cinquième jour après fécondation. Il s’implante ensuite dans l’endomètre."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q006",
+    "courseId": "etapes_de_la_vie",
+    "number": 6,
+    "theme": "Grossesse : datation et développement",
+    "difficulty": "hard",
+    "question": "Dans une datation conventionnelle fondée sur une fécondation deux semaines après le début des dernières règles :",
+    "choices": [
+      "L’écart de deux semaines prouve la date exacte d’ovulation de chaque femme.",
+      "L’écart retenu est d’environ deux semaines.",
+      "Les semaines d’aménorrhée partent du premier jour des dernières règles.",
+      "39 semaines d’aménorrhée correspondent à 41 semaines de grossesse.",
+      "Les semaines de grossesse sont comptées depuis la nidation."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est une convention pédagogique, non une preuve individuelle.",
+      "Il dépend du modèle conventionnel de cycle.",
+      "C’est le point de départ conventionnel des SA.",
+      "Le décompte en SA commence plus tôt : la relation est inversée.",
+      "Elles sont comptées depuis la fécondation."
+    ],
+    "explanation": "Les semaines de grossesse partent de la fécondation ; les semaines d’aménorrhée du premier jour des dernières règles. Dans cette convention, 39 semaines de grossesse correspondent à environ 41 semaines d’aménorrhée.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c006",
+        "theme": "Grossesse : datation et développement",
+        "front": "Comment distinguer semaines de grossesse et semaines d’aménorrhée ?",
+        "answers": [
+          "Les semaines de grossesse partent de la fécondation ; les semaines d’aménorrhée du premier jour des dernières règles. Dans cette convention, 39 semaines de grossesse correspondent à environ 41 semaines d’aménorrhée."
+        ],
+        "explanation": "Les semaines de grossesse partent de la fécondation ; les semaines d’aménorrhée du premier jour des dernières règles. Dans cette convention, 39 semaines de grossesse correspondent à environ 41 semaines d’aménorrhée."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q007",
+    "courseId": "etapes_de_la_vie",
+    "number": 7,
+    "theme": "Grossesse : datation et développement",
+    "difficulty": "medium",
+    "question": "Une femme présente un retard de règles et des nausées. Que retenir ?",
+    "choices": [
+      "Leur association confirme à elle seule la grossesse.",
+      "La fatigue situe précisément le début de la période fœtale.",
+      "Toute grossesse provoque les mêmes modifications mammaires ressenties.",
+      "Ces manifestations peuvent accompagner une grossesse.",
+      "L’absence de nausées exclut une grossesse."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les symptômes ne constituent pas une confirmation isolée.",
+      "Un symptôme ne permet pas cette datation biologique.",
+      "Les signes et leur intensité ne sont pas identiques chez toutes les femmes.",
+      "Elles font partie des signes possibles présentés.",
+      "Les manifestations varient selon les personnes."
+    ],
+    "explanation": "Retard de règles, nausées, fatigue ou tension mammaire sont des signes possibles et variables. Ils ne confirment pas isolément une grossesse.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c007",
+        "theme": "Grossesse : datation et développement",
+        "front": "Pourquoi les symptômes seuls ne suffisent-ils pas à affirmer une grossesse ?",
+        "answers": [
+          "Retard de règles, nausées, fatigue ou tension mammaire sont des signes possibles et variables. Ils ne confirment pas isolément une grossesse."
+        ],
+        "explanation": "Retard de règles, nausées, fatigue ou tension mammaire sont des signes possibles et variables. Ils ne confirment pas isolément une grossesse."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q008",
+    "courseId": "etapes_de_la_vie",
+    "number": 8,
+    "theme": "Grossesse : datation et développement",
+    "difficulty": "medium",
+    "question": "Concernant l’hCG et les tests de grossesse :",
+    "choices": [
+      "Un résultat urinaire négatif trop précoce doit être interprété avec prudence.",
+      "Tous les tests deviennent positifs au même jour après chaque rapport.",
+      "L’hCG peut être recherchée dans les urines.",
+      "Le trophoblaste participe à la production initiale d’hCG.",
+      "L’hCG est uniquement produite par l’antéhypophyse."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il peut précéder une détection suffisante de l’hormone.",
+      "La détection dépend du moment et des conditions du test.",
+      "Cette recherche est utilisée par les tests urinaires.",
+      "Le placenta poursuit ensuite cette production.",
+      "Sa source retenue ici est trophoblastique puis placentaire."
+    ],
+    "explanation": "L’hCG est produite par le trophoblaste puis le placenta. Elle est recherchée dans le sang ou les urines ; un test urinaire trop précoce négatif n’exclut pas à lui seul une grossesse.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c008",
+        "theme": "Grossesse : datation et développement",
+        "front": "D’où vient l’hCG et que signifie un test urinaire négatif trop précoce ?",
+        "answers": [
+          "L’hCG est produite par le trophoblaste puis le placenta. Elle est recherchée dans le sang ou les urines ; un test urinaire trop précoce négatif n’exclut pas à lui seul une grossesse."
+        ],
+        "explanation": "L’hCG est produite par le trophoblaste puis le placenta. Elle est recherchée dans le sang ou les urines ; un test urinaire trop précoce négatif n’exclut pas à lui seul une grossesse."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q009",
+    "courseId": "etapes_de_la_vie",
+    "number": 9,
+    "theme": "Grossesse : datation et développement",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent les périodes embryonnaire et fœtale ?",
+    "choices": [
+      "La période embryonnaire dure les trois trimestres.",
+      "La mise en place des organes domine la période embryonnaire.",
+      "Un organe formé est nécessairement autonome sur le plan fonctionnel.",
+      "La croissance et la maturation se poursuivent pendant la période fœtale.",
+      "La période fœtale débute seulement après le troisième mois complet du développement."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle correspond aux premières semaines du développement.",
+      "Cette période est celle des ébauches et de leur organisation.",
+      "Formation anatomique et maturité fonctionnelle sont distinctes.",
+      "Les organes déjà ébauchés continuent d’évoluer.",
+      "Elle se situe à partir du troisième mois, après environ deux mois."
+    ],
+    "explanation": "La période embryonnaire met en place les organes. La période fœtale, située à partir du troisième mois, associe croissance et maturation.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c009",
+        "theme": "Grossesse : datation et développement",
+        "front": "Quelle transformation domine les périodes embryonnaire puis fœtale ?",
+        "answers": [
+          "La période embryonnaire met en place les organes. La période fœtale, située à partir du troisième mois, associe croissance et maturation."
+        ],
+        "explanation": "La période embryonnaire met en place les organes. La période fœtale, située à partir du troisième mois, associe croissance et maturation."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q010",
+    "courseId": "etapes_de_la_vie",
+    "number": 10,
+    "theme": "Grossesse : datation et développement",
+    "difficulty": "medium",
+    "question": "À propos des trimestres de grossesse :",
+    "choices": [
+      "La maturation fonctionnelle se poursuit au troisième trimestre.",
+      "La fin du premier trimestre signifie que toutes les fonctions sont matures.",
+      "Les trimestres sont un découpage du suivi.",
+      "La présentation tête en bas est obligatoire au troisième trimestre.",
+      "Le deuxième trimestre correspond à l’absence de mouvements fœtaux."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le développement prépare progressivement à la naissance.",
+      "Les fonctions continuent à se développer.",
+      "Ils ne sont pas trois stades embryologiques distincts.",
+      "Elle est fréquente, sans être universelle.",
+      "Les mouvements se développent pendant la grossesse."
+    ],
+    "explanation": "Les trimestres découpent le suivi de grossesse ; embryon et fœtus décrivent des stades biologiques. Croissance et maturation se poursuivent jusqu’à la naissance.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c010",
+        "theme": "Grossesse : datation et développement",
+        "front": "Pourquoi les trimestres et la distinction embryon–fœtus ne se superposent-ils pas exactement ?",
+        "answers": [
+          "Les trimestres découpent le suivi de grossesse ; embryon et fœtus décrivent des stades biologiques. Croissance et maturation se poursuivent jusqu’à la naissance."
+        ],
+        "explanation": "Les trimestres découpent le suivi de grossesse ; embryon et fœtus décrivent des stades biologiques. Croissance et maturation se poursuivent jusqu’à la naissance."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q011",
+    "courseId": "etapes_de_la_vie",
+    "number": 11,
+    "theme": "Placenta, cordon et liquide amniotique",
+    "difficulty": "easy",
+    "question": "Quelles associations anatomiques sont exactes ?",
+    "choices": [
+      "Le cordon relie le fœtus au placenta.",
+      "Le liquide amniotique entoure le fœtus.",
+      "Le placenta est en lien avec la paroi utérine.",
+      "Le cordon relie le fœtus aux ovaires.",
+      "Le liquide amniotique remplace le placenta pour tous les échanges sanguins."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il constitue leur liaison vasculaire.",
+      "Il participe à son environnement et à sa protection.",
+      "Son développement accompagne l’implantation.",
+      "Il le relie au placenta.",
+      "Les échanges materno-fœtaux reposent sur l’interface placentaire."
+    ],
+    "explanation": "Le placenta est l’interface d’échanges à la paroi utérine ; le cordon relie le fœtus au placenta ; le liquide amniotique entoure et protège le fœtus.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c011",
+        "theme": "Placenta, cordon et liquide amniotique",
+        "front": "Comment distinguer placenta, cordon ombilical et liquide amniotique ?",
+        "answers": [
+          "Le placenta est l’interface d’échanges à la paroi utérine ; le cordon relie le fœtus au placenta ; le liquide amniotique entoure et protège le fœtus."
+        ],
+        "explanation": "Le placenta est l’interface d’échanges à la paroi utérine ; le cordon relie le fœtus au placenta ; le liquide amniotique entoure et protège le fœtus."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q012",
+    "courseId": "etapes_de_la_vie",
+    "number": 12,
+    "theme": "Placenta, cordon et liquide amniotique",
+    "difficulty": "medium",
+    "question": "Concernant les échanges placentaires :",
+    "choices": [
+      "La fonction nutritive débute seulement après les premières tétées.",
+      "Des déchets du métabolisme fœtal passent vers la circulation maternelle.",
+      "Le placenta participe à l’apport d’oxygène au fœtus.",
+      "Tout le sang maternel est directement injecté dans le cœur fœtal.",
+      "Le dioxyde de carbone constitue le principal apport respiratoire au fœtus."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le placenta apporte déjà des nutriments avant la naissance.",
+      "Cela correspond à la fonction excrétrice placentaire.",
+      "Les échanges gazeux précèdent la ventilation aérienne.",
+      "Les circulations restent distinctes et échangent à l’interface.",
+      "Le fœtus reçoit de l’oxygène et élimine du dioxyde de carbone."
+    ],
+    "explanation": "L’oxygène et les nutriments sont transférés vers le fœtus. Le dioxyde de carbone et des déchets métaboliques passent vers la circulation maternelle, sans mélange direct global des deux sangs.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c012",
+        "theme": "Placenta, cordon et liquide amniotique",
+        "front": "Dans quels sens se font les principaux échanges placentaires ?",
+        "answers": [
+          "L’oxygène et les nutriments sont transférés vers le fœtus. Le dioxyde de carbone et des déchets métaboliques passent vers la circulation maternelle, sans mélange direct global des deux sangs."
+        ],
+        "explanation": "L’oxygène et les nutriments sont transférés vers le fœtus. Le dioxyde de carbone et des déchets métaboliques passent vers la circulation maternelle, sans mélange direct global des deux sangs."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q013",
+    "courseId": "etapes_de_la_vie",
+    "number": 13,
+    "theme": "Placenta, cordon et liquide amniotique",
+    "difficulty": "medium",
+    "question": "Parmi les fonctions du placenta :",
+    "choices": [
+      "Il participe à la protection immunitaire.",
+      "Il assure la ventilation aérienne des poumons fœtaux.",
+      "Sa fonction endocrine consiste à former les premières selles.",
+      "Sa fonction immunitaire exclut tout passage d’agent infectieux.",
+      "Il possède une fonction endocrine."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette participation ne supprime pas tout risque de transmission infectieuse.",
+      "Les échanges gazeux sont placentaires ; les poumons ne sont pas ventilés par de l’air.",
+      "Les premières selles sont le méconium ; endocrine signifie sécrétion hormonale.",
+      "La barrière placentaire n’est pas absolue.",
+      "Il produit des hormones impliquées dans la grossesse."
+    ],
+    "explanation": "Le placenta assure des fonctions nutritive, respiratoire, excrétrice, endocrine et immunitaire. Sa protection ne constitue pas une barrière absolue contre toute infection.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c013",
+        "theme": "Placenta, cordon et liquide amniotique",
+        "front": "Quelles grandes fonctions le placenta assure-t-il ?",
+        "answers": [
+          "Le placenta assure des fonctions nutritive, respiratoire, excrétrice, endocrine et immunitaire. Sa protection ne constitue pas une barrière absolue contre toute infection."
+        ],
+        "explanation": "Le placenta assure des fonctions nutritive, respiratoire, excrétrice, endocrine et immunitaire. Sa protection ne constitue pas une barrière absolue contre toute infection."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q014",
+    "courseId": "etapes_de_la_vie",
+    "number": 14,
+    "theme": "Placenta, cordon et liquide amniotique",
+    "difficulty": "medium",
+    "question": "Quelle proposition décrit le relais hormonal du début de grossesse ?",
+    "choices": [
+      "L’hCG interrompt immédiatement la sécrétion de progestérone.",
+      "Le corps jaune est une structure du cerveau fœtal.",
+      "Le relais placentaire correspond à l’arrêt de toutes les hormones.",
+      "La progestérone est uniquement fabriquée par les testicules pendant la grossesse.",
+      "L’hCG contribue au maintien du corps jaune."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle soutient le corps jaune et ses sécrétions.",
+      "C’est une structure ovarienne issue du follicule après ovulation.",
+      "Le placenta assure ensuite une production hormonale.",
+      "Le corps jaune puis le placenta sont les sources considérées ici.",
+      "Ce soutien intervient au début de la grossesse."
+    ],
+    "explanation": "L’hCG maintient le corps jaune, qui continue à sécréter notamment œstrogènes et progestérone. Le placenta prend progressivement le relais de cette production.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c014",
+        "theme": "Placenta, cordon et liquide amniotique",
+        "front": "Quel rôle l’hCG joue-t-elle auprès du corps jaune en début de grossesse ?",
+        "answers": [
+          "L’hCG maintient le corps jaune, qui continue à sécréter notamment œstrogènes et progestérone. Le placenta prend progressivement le relais de cette production."
+        ],
+        "explanation": "L’hCG maintient le corps jaune, qui continue à sécréter notamment œstrogènes et progestérone. Le placenta prend progressivement le relais de cette production."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q015",
+    "courseId": "etapes_de_la_vie",
+    "number": 15,
+    "theme": "Placenta, cordon et liquide amniotique",
+    "difficulty": "medium",
+    "question": "À propos de la relaxine, de l’hPL et du liquide amniotique :",
+    "choices": [
+      "Le volume du liquide amniotique reste exactement identique à tous les termes.",
+      "La relaxine est le contenu liquide de la poche amniotique.",
+      "L’hPL constitue le score d’adaptation respiratoire du nouveau-né.",
+      "La relaxine participe à l’assouplissement de tissus préparant l’accouchement.",
+      "L’hPL est une hormone placentaire."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’ordre de grandeur varie avec le terme.",
+      "C’est une hormone, distincte du liquide amniotique.",
+      "Le score d’adaptation évoqué est l’Apgar.",
+      "Elle contribue aux modifications du bassin et du col.",
+      "Son nom est hormone lactogène placentaire."
+    ],
+    "explanation": "La relaxine participe à l’assouplissement des tissus du bassin et du col. L’hormone lactogène placentaire, ou hPL, participe aux adaptations de la grossesse, notamment mammaires.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c015",
+        "theme": "Placenta, cordon et liquide amniotique",
+        "front": "Quels rôles retenir pour la relaxine et l’hormone lactogène placentaire ?",
+        "answers": [
+          "La relaxine participe à l’assouplissement des tissus du bassin et du col. L’hormone lactogène placentaire, ou hPL, participe aux adaptations de la grossesse, notamment mammaires."
+        ],
+        "explanation": "La relaxine participe à l’assouplissement des tissus du bassin et du col. L’hormone lactogène placentaire, ou hPL, participe aux adaptations de la grossesse, notamment mammaires."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q016",
+    "courseId": "etapes_de_la_vie",
+    "number": 16,
+    "theme": "Adaptations de la gestante et accouchement",
+    "difficulty": "medium",
+    "question": "Concernant les adaptations maternelles à la grossesse :",
+    "choices": [
+      "Toute gestante présente des vomissements de même intensité.",
+      "La fréquence des mictions diminue obligatoirement.",
+      "Le débit cardiaque et le volume circulant s’adaptent.",
+      "Les adaptations concernent uniquement l’appareil génital.",
+      "Le volume utérin peut modifier les contraintes sur le diaphragme et la vessie."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les manifestations digestives sont variables.",
+      "Des mictions plus fréquentes sont possibles.",
+      "Les besoins de la grossesse modifient le fonctionnement circulatoire.",
+      "Plusieurs fonctions maternelles sont concernées.",
+      "Cela contribue aux modifications respiratoires et urinaires."
+    ],
+    "explanation": "L’organisme maternel répond aux besoins de la grossesse et à l’augmentation du volume utérin : adaptations circulatoires, ventilatoires, digestives, urinaires et mammaires, variables selon les femmes.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c016",
+        "theme": "Adaptations de la gestante et accouchement",
+        "front": "Pourquoi la grossesse modifie-t-elle plusieurs grandes fonctions maternelles ?",
+        "answers": [
+          "L’organisme maternel répond aux besoins de la grossesse et à l’augmentation du volume utérin : adaptations circulatoires, ventilatoires, digestives, urinaires et mammaires, variables selon les femmes."
+        ],
+        "explanation": "L’organisme maternel répond aux besoins de la grossesse et à l’augmentation du volume utérin : adaptations circulatoires, ventilatoires, digestives, urinaires et mammaires, variables selon les femmes."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q017",
+    "courseId": "etapes_de_la_vie",
+    "number": 17,
+    "theme": "Adaptations de la gestante et accouchement",
+    "difficulty": "medium",
+    "question": "Pendant le travail obstétrical :",
+    "choices": [
+      "Un rétrocontrôle positif amplifie le phénomène engagé.",
+      "Un rétrocontrôle positif signifie une diminution du signal initial.",
+      "Le myomètre est la muqueuse où s’implante le blastocyste.",
+      "Le myomètre assure les contractions utérines.",
+      "L’ocytocine peut renforcer les contractions."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il renforce ici les signaux favorisant les contractions.",
+      "Cette limitation correspond au principe du rétrocontrôle négatif.",
+      "Cette muqueuse est l’endomètre.",
+      "C’est la couche musculaire de la paroi de l’utérus.",
+      "Elle participe à la dynamique du travail."
+    ],
+    "explanation": "Le myomètre est le muscle utérin. L’ocytocine renforce ses contractions ; un rétrocontrôle positif peut amplifier les signaux associés au travail.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c017",
+        "theme": "Adaptations de la gestante et accouchement",
+        "front": "Quel lien existe entre myomètre, ocytocine et rétrocontrôle positif ?",
+        "answers": [
+          "Le myomètre est le muscle utérin. L’ocytocine renforce ses contractions ; un rétrocontrôle positif peut amplifier les signaux associés au travail."
+        ],
+        "explanation": "Le myomètre est le muscle utérin. L’ocytocine renforce ses contractions ; un rétrocontrôle positif peut amplifier les signaux associés au travail."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q018",
+    "courseId": "etapes_de_la_vie",
+    "number": 18,
+    "theme": "Adaptations de la gestante et accouchement",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent la succession de l’accouchement par voie basse ?",
+    "choices": [
+      "La dilatation concerne l’ouverture progressive du col.",
+      "La naissance du bébé achève nécessairement toutes les étapes.",
+      "La délivrance correspond à l’expulsion du placenta.",
+      "La rupture des membranes précède obligatoirement toute contraction.",
+      "L’expulsion du bébé est appelée nidation."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle accompagne le travail utérin.",
+      "La délivrance placentaire doit encore se dérouler.",
+      "Elle suit la naissance de l’enfant.",
+      "Son moment n’est pas systématiquement le premier événement.",
+      "La nidation est l’implantation précoce du blastocyste."
+    ],
+    "explanation": "Dilatation du col, expulsion de l’enfant, puis délivrance du placenta. Le suivi maternel se poursuit après la naissance du bébé.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c018",
+        "theme": "Adaptations de la gestante et accouchement",
+        "front": "Quelles sont les trois grandes étapes de l’accouchement par voie basse ?",
+        "answers": [
+          "Dilatation du col, expulsion de l’enfant, puis délivrance du placenta. Le suivi maternel se poursuit après la naissance du bébé."
+        ],
+        "explanation": "Dilatation du col, expulsion de l’enfant, puis délivrance du placenta. Le suivi maternel se poursuit après la naissance du bébé."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q019",
+    "courseId": "etapes_de_la_vie",
+    "number": 19,
+    "theme": "Adaptations de la gestante et accouchement",
+    "difficulty": "medium",
+    "question": "Concernant l’épisiotomie et la césarienne :",
+    "choices": [
+      "Une césarienne consiste uniquement à inciser le col par voie vaginale.",
+      "Une épisiotomie garantit l’absence de déchirure.",
+      "La césarienne nécessite une ouverture abdominale et utérine.",
+      "L’épisiotomie est systématique à chaque accouchement.",
+      "L’épisiotomie concerne le périnée."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle implique les parois abdominale et utérine.",
+      "Elle ne constitue pas une garantie absolue.",
+      "Elle donne accès au fœtus par voie chirurgicale.",
+      "Elle est réservée à certaines situations obstétricales.",
+      "Cette incision ne porte pas sur la paroi utérine."
+    ],
+    "explanation": "L’épisiotomie est une incision du périnée dans certaines situations. La césarienne permet la naissance par ouverture des parois abdominale et utérine.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c019",
+        "theme": "Adaptations de la gestante et accouchement",
+        "front": "Quelle différence anatomique existe entre épisiotomie et césarienne ?",
+        "answers": [
+          "L’épisiotomie est une incision du périnée dans certaines situations. La césarienne permet la naissance par ouverture des parois abdominale et utérine."
+        ],
+        "explanation": "L’épisiotomie est une incision du périnée dans certaines situations. La césarienne permet la naissance par ouverture des parois abdominale et utérine."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q020",
+    "courseId": "etapes_de_la_vie",
+    "number": 20,
+    "theme": "Adaptations de la gestante et accouchement",
+    "difficulty": "easy",
+    "question": "La péridurale utilisée lors de l’accouchement :",
+    "choices": [
+      "Elle utilise l’espace péridural.",
+      "Son objectif est la fusion des gamètes.",
+      "Elle constitue la dernière phase d’expulsion du placenta.",
+      "Elle est synonyme d’incision du périnée.",
+      "Elle consiste à prélever du liquide cérébrospinal."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le nom désigne l’espace concerné par la technique.",
+      "Il s’agit d’une technique d’analgésie.",
+      "L’expulsion du placenta est la délivrance.",
+      "L’incision du périnée est l’épisiotomie.",
+      "Un prélèvement de ce liquide relève d’un autre geste."
+    ],
+    "explanation": "La péridurale est une analgésie loco-régionale utilisant l’espace péridural. Elle ne correspond pas à un prélèvement de liquide cérébrospinal.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c020",
+        "theme": "Adaptations de la gestante et accouchement",
+        "front": "Quel espace la péridurale utilise-t-elle ?",
+        "answers": [
+          "La péridurale est une analgésie loco-régionale utilisant l’espace péridural. Elle ne correspond pas à un prélèvement de liquide cérébrospinal."
+        ],
+        "explanation": "La péridurale est une analgésie loco-régionale utilisant l’espace péridural. Elle ne correspond pas à un prélèvement de liquide cérébrospinal."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q021",
+    "courseId": "etapes_de_la_vie",
+    "number": 21,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "easy",
+    "question": "À propos des premiers jours après la naissance :",
+    "choices": [
+      "La pédiatrie se limite aux 28 premiers jours.",
+      "Les suites de couches désignent le premier trimestre de grossesse.",
+      "Le terme nouveau-né s’applique à toute l’enfance.",
+      "Le terme nouveau-né se rapporte aux 28 premiers jours.",
+      "Les suites de couches concernent la mère."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle suit l’enfant jusqu’à l’adolescence.",
+      "Elles débutent après l’accouchement.",
+      "Il se limite à la période néonatale.",
+      "Il correspond à la période néonatale.",
+      "Elles suivent l’accouchement."
+    ],
+    "explanation": "La période néonatale couvre les 28 premiers jours de l’enfant. Les suites de couches désignent la période maternelle après l’accouchement.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c021",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "À quoi correspondent la période néonatale et les suites de couches ?",
+        "answers": [
+          "La période néonatale couvre les 28 premiers jours de l’enfant. Les suites de couches désignent la période maternelle après l’accouchement."
+        ],
+        "explanation": "La période néonatale couvre les 28 premiers jours de l’enfant. Les suites de couches désignent la période maternelle après l’accouchement."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q022",
+    "courseId": "etapes_de_la_vie",
+    "number": 22,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "medium",
+    "question": "Comment les échanges gazeux évoluent-ils à la naissance ?",
+    "choices": [
+      "Le liquide pulmonaire se résorbe progressivement lors de la transition.",
+      "Les poumons sont déjà ventilés par l’air maternel dans l’utérus.",
+      "Le premier cri suffit à évaluer toute la fonction respiratoire.",
+      "L’oxygénation fœtale dépend de respirations d’air intra-utérines.",
+      "Le placenta assure les échanges gazeux avant la naissance."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’air occupe progressivement les espaces pulmonaires.",
+      "L’oxygène traverse l’interface placentaire, sans ventilation aérienne fœtale.",
+      "Il illustre la mise en route sans remplacer l’évaluation.",
+      "Les échanges sont placentaires avant la naissance.",
+      "Les poumons fœtaux ne sont pas ventilés par de l’air."
+    ],
+    "explanation": "Avant la naissance, les échanges gazeux ont lieu au placenta. Les premières respirations aèrent les poumons ; le liquide pulmonaire se résorbe et les poumons prennent le relais.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c022",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "Quel relais assure l’oxygénation entre la vie fœtale et la vie aérienne ?",
+        "answers": [
+          "Avant la naissance, les échanges gazeux ont lieu au placenta. Les premières respirations aèrent les poumons ; le liquide pulmonaire se résorbe et les poumons prennent le relais."
+        ],
+        "explanation": "Avant la naissance, les échanges gazeux ont lieu au placenta. Les premières respirations aèrent les poumons ; le liquide pulmonaire se résorbe et les poumons prennent le relais."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q023",
+    "courseId": "etapes_de_la_vie",
+    "number": 23,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "medium",
+    "question": "Quelles communications appartiennent à la circulation fœtale ?",
+    "choices": [
+      "Le foramen ovale relie les deux ventricules.",
+      "Ces communications servent à augmenter la ventilation aérienne intra-utérine.",
+      "Le canal artériel relie l’artère pulmonaire à l’aorte.",
+      "Le canal artériel relie le cordon à l’ovaire.",
+      "Le foramen ovale communique entre les oreillettes."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il concerne les oreillettes, non les ventricules.",
+      "Elles sont adaptées à l’absence de ventilation aérienne fœtale.",
+      "Il dérive une partie du débit de la circulation pulmonaire.",
+      "Il s’agit d’une communication vasculaire thoracique fœtale.",
+      "Il s’agit d’une communication interauriculaire fœtale."
+    ],
+    "explanation": "Le foramen ovale relie les deux oreillettes. Le canal artériel relie l’artère pulmonaire à l’aorte. Ils permettent à une partie du sang de contourner les poumons non ventilés.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c023",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "Quelles structures le foramen ovale et le canal artériel relient-ils ?",
+        "answers": [
+          "Le foramen ovale relie les deux oreillettes. Le canal artériel relie l’artère pulmonaire à l’aorte. Ils permettent à une partie du sang de contourner les poumons non ventilés."
+        ],
+        "explanation": "Le foramen ovale relie les deux oreillettes. Le canal artériel relie l’artère pulmonaire à l’aorte. Ils permettent à une partie du sang de contourner les poumons non ventilés."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q024",
+    "courseId": "etapes_de_la_vie",
+    "number": 24,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "hard",
+    "question": "À propos du canal d’Arantius et de la transition circulatoire :",
+    "choices": [
+      "Le canal d’Arantius permet à une partie du sang de contourner le foie.",
+      "Le canal artériel doit être coupé chirurgicalement chez chaque enfant.",
+      "Couper le cordon revient à sectionner directement le foramen ovale.",
+      "La ventilation modifie les conditions de circulation après la naissance.",
+      "Les échanges placentaires continuent à assurer l’oxygénation après interruption du cordon."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il appartient au trajet veineux fœtal lié au cordon.",
+      "Sa fermeture s’inscrit normalement dans la transition physiologique.",
+      "Le cordon est distinct de cette communication intracardiaque.",
+      "Les communications fœtales perdent progressivement leur rôle de dérivation.",
+      "L’oxygénation doit alors être assurée par les poumons."
+    ],
+    "explanation": "Le canal d’Arantius est un conduit veineux dérivant une partie du trajet hépatique. Après la naissance, ventilation et interruption des échanges ombilicaux modifient pressions et débits.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c024",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "Quel est le rôle du canal d’Arantius et comment débute la transition circulatoire néonatale ?",
+        "answers": [
+          "Le canal d’Arantius est un conduit veineux dérivant une partie du trajet hépatique. Après la naissance, ventilation et interruption des échanges ombilicaux modifient pressions et débits."
+        ],
+        "explanation": "Le canal d’Arantius est un conduit veineux dérivant une partie du trajet hépatique. Après la naissance, ventilation et interruption des échanges ombilicaux modifient pressions et débits."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q025",
+    "courseId": "etapes_de_la_vie",
+    "number": 25,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "medium",
+    "question": "Concernant l’adaptation thermique du nouveau-né :",
+    "choices": [
+      "L’adaptation thermique est assurée par le seul score d’Apgar.",
+      "La chaleur est produite uniquement par des frissons intenses.",
+      "La thermogenèse peut être sans frisson.",
+      "Le nouveau-né perd facilement de la chaleur.",
+      "Le séchage et le peau-à-peau contribuent à sa protection thermique."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Un score décrit l’état ; il ne fournit pas une protection thermique.",
+      "La thermogenèse sans frisson a un rôle important.",
+      "Le frisson ne résume pas la production néonatale de chaleur.",
+      "Il quitte un milieu intra-utérin proche de 37 degrés.",
+      "Ils participent à la prévention du refroidissement."
+    ],
+    "explanation": "Le passage à un milieu plus frais favorise les pertes de chaleur. Séchage, protection thermique et peau-à-peau les limitent ; la production de chaleur mobilise notamment une thermogenèse sans frisson.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c025",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "Pourquoi protège-t-on le nouveau-né du refroidissement et par quels moyens ?",
+        "answers": [
+          "Le passage à un milieu plus frais favorise les pertes de chaleur. Séchage, protection thermique et peau-à-peau les limitent ; la production de chaleur mobilise notamment une thermogenèse sans frisson."
+        ],
+        "explanation": "Le passage à un milieu plus frais favorise les pertes de chaleur. Séchage, protection thermique et peau-à-peau les limitent ; la production de chaleur mobilise notamment une thermogenèse sans frisson."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q026",
+    "courseId": "etapes_de_la_vie",
+    "number": 26,
+    "theme": "Naissance : trois adaptations majeures",
+    "difficulty": "medium",
+    "question": "À propos des fonctions du nouveau-né :",
+    "choices": [
+      "Succion et déglutition sont deux fonctions distinctes à coordonner.",
+      "Le méconium correspond aux premières selles.",
+      "Les repères de fréquence respiratoire suffisent à eux seuls au tri clinique.",
+      "Le méconium est la première sécrétion placentaire d’hCG.",
+      "La fréquence cardiaque néonatale est normalement identique à celle de l’adulte au repos."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Saisir et aspirer le lait ne suffit pas à le faire progresser vers l’estomac.",
+      "Il est éliminé après la naissance.",
+      "Ils ne remplacent pas une évaluation de l’enfant et du contexte.",
+      "Il s’agit de selles, distinctes des hormones.",
+      "La fréquence est plus élevée chez le nouveau-né que chez l’adulte au repos."
+    ],
+    "explanation": "Le méconium constitue les premières selles. L’alimentation nécessite la coordination de la succion, de la déglutition, de la digestion et de l’élimination.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c026",
+        "theme": "Naissance : trois adaptations majeures",
+        "front": "Qu’est-ce que le méconium et quelles fonctions le bébé coordonne-t-il pour se nourrir ?",
+        "answers": [
+          "Le méconium constitue les premières selles. L’alimentation nécessite la coordination de la succion, de la déglutition, de la digestion et de l’élimination."
+        ],
+        "explanation": "Le méconium constitue les premières selles. L’alimentation nécessite la coordination de la succion, de la déglutition, de la digestion et de l’élimination."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q027",
+    "courseId": "etapes_de_la_vie",
+    "number": 27,
+    "theme": "Évaluer le nouveau-né et dépister",
+    "difficulty": "easy",
+    "question": "Comment le score d’Apgar est-il construit ?",
+    "choices": [
+      "Il comporte cinq paramètres.",
+      "Le tonus musculaire fait partie des paramètres.",
+      "Chaque paramètre est coté de zéro à deux.",
+      "La taille constitue un de ses cinq paramètres.",
+      "Il comporte dix paramètres cotés chacun sur dix."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Chacun décrit une dimension de l’adaptation du nouveau-né.",
+      "Il correspond à l’activité.",
+      "La somme peut donc aller de zéro à dix.",
+      "Les mensurations ne font pas partie de l’Apgar.",
+      "Le total est sur dix, avec cinq paramètres sur deux."
+    ],
+    "explanation": "Apparence, pouls, grimace, activité et respiration : cinq paramètres cotés chacun de zéro à deux, pour un total maximal de dix.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c027",
+        "theme": "Évaluer le nouveau-né et dépister",
+        "front": "Quels paramètres composent le score d’Apgar et quel est son total maximal ?",
+        "answers": [
+          "Apparence, pouls, grimace, activité et respiration : cinq paramètres cotés chacun de zéro à deux, pour un total maximal de dix."
+        ],
+        "explanation": "Apparence, pouls, grimace, activité et respiration : cinq paramètres cotés chacun de zéro à deux, pour un total maximal de dix."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q028",
+    "courseId": "etapes_de_la_vie",
+    "number": 28,
+    "theme": "Évaluer le nouveau-né et dépister",
+    "difficulty": "medium",
+    "question": "Concernant l’interprétation de l’Apgar et les réflexes :",
+    "choices": [
+      "Le réflexe des points cardinaux consiste à mesurer le périmètre crânien.",
+      "Un score rassurant identifie la cause précise de toute maladie.",
+      "L’agrippement correspond à la fermeture de la main après stimulation palmaire.",
+      "L’Apgar accompagne l’évaluation clinique.",
+      "La marche automatique prouve une marche volontaire déjà acquise."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il oriente la tête vers une stimulation proche de la bouche.",
+      "Le score n’est pas un diagnostic étiologique.",
+      "C’est un réflexe recherché lors de l’examen neurologique.",
+      "Il apporte une appréciation de l’adaptation.",
+      "Il s’agit d’un réflexe néonatal, distinct de l’acquisition ultérieure."
+    ],
+    "explanation": "L’Apgar apprécie l’état et l’adaptation du nouveau-né ; il ne pose pas un diagnostic étiologique. L’examen neurologique comporte aussi la recherche de réflexes.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c028",
+        "theme": "Évaluer le nouveau-né et dépister",
+        "front": "Que décrit l’Apgar et pourquoi ne suffit-il pas à identifier la cause d’une difficulté ?",
+        "answers": [
+          "L’Apgar apprécie l’état et l’adaptation du nouveau-né ; il ne pose pas un diagnostic étiologique. L’examen neurologique comporte aussi la recherche de réflexes."
+        ],
+        "explanation": "L’Apgar apprécie l’état et l’adaptation du nouveau-né ; il ne pose pas un diagnostic étiologique. L’examen neurologique comporte aussi la recherche de réflexes."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q029",
+    "courseId": "etapes_de_la_vie",
+    "number": 29,
+    "theme": "Évaluer le nouveau-né et dépister",
+    "difficulty": "medium",
+    "question": "Quel est le principe du dépistage néonatal ?",
+    "choices": [
+      "Il vise une identification précoce pour permettre une prise en charge rapide.",
+      "Il est proposé uniquement aux nouveau-nés symptomatiques.",
+      "Le prélèvement sur buvard est généralement réalisé entre 48 et 72 heures de vie.",
+      "Un résultat anormal confirme immédiatement une maladie sans autre examen.",
+      "Un résultat anormal nécessite des investigations complémentaires."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "C’est l’objectif du programme.",
+      "Il est systématiquement proposé à tous les nouveau-nés.",
+      "Il s’inscrit dans une information et un accord des parents.",
+      "Il nécessite une confirmation.",
+      "Dépistage et confirmation doivent être distingués."
+    ],
+    "explanation": "Le dépistage recherche précocement certaines maladies, souvent avant les symptômes. Un résultat anormal conduit à des investigations de confirmation ; il n’est pas à lui seul un diagnostic définitif.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c029",
+        "theme": "Évaluer le nouveau-né et dépister",
+        "front": "Quelle différence existe entre dépistage néonatal et confirmation diagnostique ?",
+        "answers": [
+          "Le dépistage recherche précocement certaines maladies, souvent avant les symptômes. Un résultat anormal conduit à des investigations de confirmation ; il n’est pas à lui seul un diagnostic définitif."
+        ],
+        "explanation": "Le dépistage recherche précocement certaines maladies, souvent avant les symptômes. Un résultat anormal conduit à des investigations de confirmation ; il n’est pas à lui seul un diagnostic définitif."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q030",
+    "courseId": "etapes_de_la_vie",
+    "number": 30,
+    "theme": "Évaluer le nouveau-né et dépister",
+    "difficulty": "medium",
+    "question": "À propos des maladies citées dans le dépistage :",
+    "choices": [
+      "Le dépistage auditif remplace l’ensemble du dépistage sur buvard.",
+      "Une ancienne liste de six maladies reste nécessairement exhaustive pour tout programme néonatal actuel.",
+      "La phénylcétonurie correspond à une baisse générale de tous les acides aminés.",
+      "Le déficit en MCAD concerne le métabolisme énergétique de certains acides gras.",
+      "La phénylcétonurie peut entraîner une accumulation de phénylalanine."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les deux dépistages sont complémentaires.",
+      "Les programmes peuvent être élargis : une ancienne liste ne suffit pas à définir leur périmètre actuel.",
+      "Le problème retenu est l’accumulation de phénylalanine.",
+      "Il ne se confond pas avec la phénylcétonurie.",
+      "Elle est liée à un défaut de dégradation de cet acide aminé."
+    ],
+    "explanation": "La phénylcétonurie entraîne une accumulation de phénylalanine par défaut de dégradation. Le déficit en MCAD concerne l’utilisation énergétique de certains acides gras.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c030",
+        "theme": "Évaluer le nouveau-né et dépister",
+        "front": "Que distinguer entre phénylcétonurie et déficit en MCAD ?",
+        "answers": [
+          "La phénylcétonurie entraîne une accumulation de phénylalanine par défaut de dégradation. Le déficit en MCAD concerne l’utilisation énergétique de certains acides gras."
+        ],
+        "explanation": "La phénylcétonurie entraîne une accumulation de phénylalanine par défaut de dégradation. Le déficit en MCAD concerne l’utilisation énergétique de certains acides gras."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q031",
+    "courseId": "etapes_de_la_vie",
+    "number": 31,
+    "theme": "Évaluer le nouveau-né et dépister",
+    "difficulty": "hard",
+    "question": "Un nouveau-né perd du poids dans les premiers jours et régurgite. Comment interpréter ces observations ?",
+    "choices": [
+      "Une perte proche de dix pour cent est toujours anodine.",
+      "La régurgitation est une élimination de méconium par la bouche.",
+      "Des régurgitations peuvent être liées à l’immaturité œsogastrique.",
+      "Un poids de naissance différent de 3,3 kg prouve une anomalie.",
+      "L’alimentation et l’hydratation doivent être prises en compte dans l’évaluation du poids."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle ne doit pas être banalisée sans évaluation.",
+      "Le méconium est éliminé comme selles ; les phénomènes sont distincts.",
+      "Elles correspondent à une remontée du contenu gastrique.",
+      "Il s’agit d’un ordre de grandeur, non d’une valeur obligatoire.",
+      "La perte pondérale ne s’interprète pas par un chiffre seul."
+    ],
+    "explanation": "L’évolution du poids doit être appréciée avec l’alimentation et l’hydratation. Un pourcentage isolé ne dispense pas d’évaluation ; une régurgitation est une remontée gastrique, distincte de l’élimination des selles.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c031",
+        "theme": "Évaluer le nouveau-né et dépister",
+        "front": "Pourquoi ne faut-il pas banaliser une perte pondérale initiale proche de dix pour cent ?",
+        "answers": [
+          "L’évolution du poids doit être appréciée avec l’alimentation et l’hydratation. Un pourcentage isolé ne dispense pas d’évaluation ; une régurgitation est une remontée gastrique, distincte de l’élimination des selles."
+        ],
+        "explanation": "L’évolution du poids doit être appréciée avec l’alimentation et l’hydratation. Un pourcentage isolé ne dispense pas d’évaluation ; une régurgitation est une remontée gastrique, distincte de l’élimination des selles."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q032",
+    "courseId": "etapes_de_la_vie",
+    "number": 32,
+    "theme": "Enfance : suivre une trajectoire de développement",
+    "difficulty": "medium",
+    "question": "Quelles dimensions relèvent du développement psychomoteur ?",
+    "choices": [
+      "Le développement relationnel se déduit uniquement du poids.",
+      "La préhension concerne la saisie et la manipulation des objets.",
+      "Les observations des parents sont sans utilité.",
+      "Le langage et la relation sont des dimensions du développement.",
+      "La motricité se limite au nombre de mots prononcés."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les interactions doivent être observées pour elles-mêmes.",
+      "Elle évolue vers une précision croissante.",
+      "Elles apportent des informations sur la vie quotidienne.",
+      "Le développement ne se réduit pas aux déplacements.",
+      "Elle concerne le contrôle postural et les déplacements."
+    ],
+    "explanation": "Motricité, préhension, relation et langage. Leurs acquisitions s’apprécient ensemble et dans une trajectoire, avec les observations des parents.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c032",
+        "theme": "Enfance : suivre une trajectoire de développement",
+        "front": "Quels grands domaines sont examinés dans le développement psychomoteur ?",
+        "answers": [
+          "Motricité, préhension, relation et langage. Leurs acquisitions s’apprécient ensemble et dans une trajectoire, avec les observations des parents."
+        ],
+        "explanation": "Motricité, préhension, relation et langage. Leurs acquisitions s’apprécient ensemble et dans une trajectoire, avec les observations des parents."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q033",
+    "courseId": "etapes_de_la_vie",
+    "number": 33,
+    "theme": "Enfance : suivre une trajectoire de développement",
+    "difficulty": "hard",
+    "question": "Comment lire une courbe de croissance ?",
+    "choices": [
+      "Un enfant de petit gabarit peut suivre régulièrement sa courbe.",
+      "Le périmètre crânien mesure directement les capacités de langage.",
+      "Une cassure de trajectoire demande une analyse.",
+      "Une seule mesure remplace l’ensemble du suivi.",
+      "Une mesure située dans la moyenne exclut toute anomalie de trajectoire."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le petit gabarit ne suffit pas à conclure à une anomalie.",
+      "Il suit la croissance de la tête dans le contexte neurologique.",
+      "Une valeur isolée ne résume pas l’évolution.",
+      "Le suivi repose sur des mesures répétées.",
+      "Une rupture peut exister malgré une mesure apparemment moyenne."
+    ],
+    "explanation": "Des mesures répétées permettent de suivre la pente. Un petit gabarit suivant sa courbe diffère d’une cassure de trajectoire, qui demande une analyse même si la mesure semble moyenne.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c033",
+        "theme": "Enfance : suivre une trajectoire de développement",
+        "front": "Pourquoi la trajectoire de croissance compte-t-elle davantage qu’une mesure isolée ?",
+        "answers": [
+          "Des mesures répétées permettent de suivre la pente. Un petit gabarit suivant sa courbe diffère d’une cassure de trajectoire, qui demande une analyse même si la mesure semble moyenne."
+        ],
+        "explanation": "Des mesures répétées permettent de suivre la pente. Un petit gabarit suivant sa courbe diffère d’une cassure de trajectoire, qui demande une analyse même si la mesure semble moyenne."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q034",
+    "courseId": "etapes_de_la_vie",
+    "number": 34,
+    "theme": "Enfance : suivre une trajectoire de développement",
+    "difficulty": "hard",
+    "question": "Pour un enfant pesant 20 kg et mesurant 1,10 m :",
+    "choices": [
+      "Les seuls seuils de corpulence adulte suffisent à classer cet enfant.",
+      "L’IMC est proche de 16,5 kg/m².",
+      "L’âge et le sexe interviennent dans l’interprétation pédiatrique.",
+      "La formule nécessite le poids divisé par l’âge.",
+      "L’IMC se calcule en divisant 20 par 110 au carré."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les courbes pédiatriques sont nécessaires.",
+      "Le calcul est 20 divisé par 1,21.",
+      "Ils permettent de choisir la courbe adaptée.",
+      "Le dénominateur est la taille au carré.",
+      "La taille doit être exprimée en mètres."
+    ],
+    "explanation": "L’IMC vaut 20 divisé par 1,10 au carré, soit environ 16,5 kilogrammes par mètre carré. Il faut ensuite utiliser une courbe adaptée à l’âge et au sexe.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c034",
+        "theme": "Enfance : suivre une trajectoire de développement",
+        "front": "Comment calculer l’IMC d’un enfant de 20 kilogrammes mesurant un mètre dix, puis l’interpréter ?",
+        "answers": [
+          "L’IMC vaut 20 divisé par 1,10 au carré, soit environ 16,5 kilogrammes par mètre carré. Il faut ensuite utiliser une courbe adaptée à l’âge et au sexe."
+        ],
+        "explanation": "L’IMC vaut 20 divisé par 1,10 au carré, soit environ 16,5 kilogrammes par mètre carré. Il faut ensuite utiliser une courbe adaptée à l’âge et au sexe."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q035",
+    "courseId": "etapes_de_la_vie",
+    "number": 35,
+    "theme": "Enfance : suivre une trajectoire de développement",
+    "difficulty": "medium",
+    "question": "À propos des repères d’acquisition et de la propreté :",
+    "choices": [
+      "Quelques mots à un âge donné suffisent à évaluer toutes les dimensions du développement.",
+      "Les acquisitions surviennent exactement au même âge chez tous.",
+      "Les âges d’acquisition doivent être replacés dans le développement global.",
+      "La propreté repose sur un contrôle progressif des sphincters.",
+      "Dix-huit mois impose une propreté complète à tous les enfants."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La motricité, la préhension et la relation doivent aussi être considérées.",
+      "Il existe une variabilité individuelle.",
+      "Ils sont des repères et non une grille isolée.",
+      "Les acquisitions urétrale et anale se construisent progressivement.",
+      "Cet âge est un repère indicatif."
+    ],
+    "explanation": "Ils orientent une lecture globale et progressive. Un âge moyen ne constitue pas à lui seul une limite diagnostique ni une exigence d’acquisition complète pour tous.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c035",
+        "theme": "Enfance : suivre une trajectoire de développement",
+        "front": "Comment utiliser les âges indicatifs du développement et de la propreté ?",
+        "answers": [
+          "Ils orientent une lecture globale et progressive. Un âge moyen ne constitue pas à lui seul une limite diagnostique ni une exigence d’acquisition complète pour tous."
+        ],
+        "explanation": "Ils orientent une lecture globale et progressive. Un âge moyen ne constitue pas à lui seul une limite diagnostique ni une exigence d’acquisition complète pour tous."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q036",
+    "courseId": "etapes_de_la_vie",
+    "number": 36,
+    "theme": "Enfance : suivre une trajectoire de développement",
+    "difficulty": "medium",
+    "question": "Concernant dentition et maturation osseuse :",
+    "choices": [
+      "La maturation osseuse s’arrête à la naissance.",
+      "La dentition de lait constitue une classification en cinq stades de Tanner.",
+      "Le calendrier d’apparition des dents est identique chez tous.",
+      "La masse osseuse ne croît pas linéairement toute la vie.",
+      "La dentition de lait comporte vingt dents."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle se poursuit dans l’enfance et à la puberté.",
+      "Tanner concerne la maturation sexuelle.",
+      "Le calendrier varie selon les enfants.",
+      "La courbe présente une augmentation, un maximum puis une diminution.",
+      "La dentition temporaire complète comprend vingt dents."
+    ],
+    "explanation": "La dentition de lait comporte vingt dents, avec un calendrier variable. La masse osseuse augmente pendant le développement, atteint un maximum puis peut diminuer.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c036",
+        "theme": "Enfance : suivre une trajectoire de développement",
+        "front": "Quels repères retenir pour les dents de lait et l’évolution de la masse osseuse ?",
+        "answers": [
+          "La dentition de lait comporte vingt dents, avec un calendrier variable. La masse osseuse augmente pendant le développement, atteint un maximum puis peut diminuer."
+        ],
+        "explanation": "La dentition de lait comporte vingt dents, avec un calendrier variable. La masse osseuse augmente pendant le développement, atteint un maximum puis peut diminuer."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q037",
+    "courseId": "etapes_de_la_vie",
+    "number": 37,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Quels facteurs de croissance sont extrinsèques ?",
+    "choices": [
+      "La nutrition et les hormones fonctionnent sans interaction.",
+      "Le lieu de résidence suffit à prédire la qualité de croissance d’un enfant.",
+      "Le cadre psychoaffectif fait partie de l’environnement.",
+      "La sécrétion de GH est un facteur exclusivement extrinsèque.",
+      "Les apports énergétiques et protéiques sont des facteurs extrinsèques."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La croissance dépend de leurs interactions avec l’environnement.",
+      "Les exemples ville-campagne ne permettent pas ce déterminisme.",
+      "Il interagit avec les conditions du développement.",
+      "Elle relève d’une régulation hormonale intrinsèque.",
+      "Ils relèvent de l’alimentation."
+    ],
+    "explanation": "Les facteurs extrinsèques relèvent de l’environnement, notamment nutrition et contexte psychoaffectif ou socio-économique. Les facteurs intrinsèques comprennent les régulations biologiques et hormonales.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c037",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Quelle différence existe entre facteurs extrinsèques et intrinsèques de croissance ?",
+        "answers": [
+          "Les facteurs extrinsèques relèvent de l’environnement, notamment nutrition et contexte psychoaffectif ou socio-économique. Les facteurs intrinsèques comprennent les régulations biologiques et hormonales."
+        ],
+        "explanation": "Les facteurs extrinsèques relèvent de l’environnement, notamment nutrition et contexte psychoaffectif ou socio-économique. Les facteurs intrinsèques comprennent les régulations biologiques et hormonales."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q038",
+    "courseId": "etapes_de_la_vie",
+    "number": 38,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "easy",
+    "question": "Concernant l’hormone de croissance :",
+    "choices": [
+      "La GH est sécrétée uniquement par le placenta adulte.",
+      "La GH désigne une communication entre oreillettes.",
+      "La GH est produite par l’antéhypophyse.",
+      "La GH est le nom du liquide amniotique.",
+      "Le rôle de la GH est limité à l’expulsion du placenta."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La source de cet axe est l’antéhypophyse.",
+      "Cette communication est le foramen ovale.",
+      "Celle-ci est le lobe antérieur de l’hypophyse.",
+      "C’est une hormone, non un liquide de protection.",
+      "Elle participe à la croissance ; la délivrance relève d’autres mécanismes."
+    ],
+    "explanation": "La GH, hormone de croissance, est produite par l’antéhypophyse sous régulation hypothalamique et participe à la croissance.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c038",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Quel organe sécrète la GH dans l’axe de croissance présenté ?",
+        "answers": [
+          "La GH, hormone de croissance, est produite par l’antéhypophyse sous régulation hypothalamique et participe à la croissance."
+        ],
+        "explanation": "La GH, hormone de croissance, est produite par l’antéhypophyse sous régulation hypothalamique et participe à la croissance."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q039",
+    "courseId": "etapes_de_la_vie",
+    "number": 39,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Quel enchaînement décrit l’axe thyroïdien ?",
+    "choices": [
+      "La thyroïde produit la GnRH pour commander l’antéhypophyse.",
+      "La TSH stimule la thyroïde.",
+      "La TSH correspond à la première menstruation.",
+      "T3 et T4 sont des hormones thyroïdiennes.",
+      "La TRH est le signal hypothalamique de cet axe."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La GnRH est hypothalamique et appartient à l’axe gonadique.",
+      "Elle est produite par l’antéhypophyse.",
+      "La première menstruation est la ménarche.",
+      "Elles participent aux maturations et à l’activité métabolique.",
+      "Elle intervient en amont de la stimulation hypophysaire."
+    ],
+    "explanation": "Hypothalamus : TRH ; antéhypophyse : TSH ; thyroïde : T3 et T4. Les hormones thyroïdiennes participent au métabolisme et aux maturations osseuse et cérébrale.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c039",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Quelle est la succession des hormones dans l’axe thyroïdien ?",
+        "answers": [
+          "Hypothalamus : TRH ; antéhypophyse : TSH ; thyroïde : T3 et T4. Les hormones thyroïdiennes participent au métabolisme et aux maturations osseuse et cérébrale."
+        ],
+        "explanation": "Hypothalamus : TRH ; antéhypophyse : TSH ; thyroïde : T3 et T4. Les hormones thyroïdiennes participent au métabolisme et aux maturations osseuse et cérébrale."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q040",
+    "courseId": "etapes_de_la_vie",
+    "number": 40,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Que signifie un rétrocontrôle négatif hormonal ?",
+    "choices": [
+      "Il amplifie nécessairement le signal initial.",
+      "Il est synonyme d’augmentation du nombre de cellules.",
+      "Il signifie que toutes les concentrations hormonales sont nulles.",
+      "Il désigne une maladie de la thyroïde dans tous les cas.",
+      "Il contribue à limiter l’activation de l’axe."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette amplification caractérise un rétrocontrôle positif.",
+      "La multiplication cellulaire relève des divisions.",
+      "Il s’agit d’un mécanisme de régulation, non d’une absence d’hormones.",
+      "C’est aussi un mécanisme physiologique.",
+      "Le signal agit en retour sur sa régulation."
+    ],
+    "explanation": "Le rétrocontrôle négatif limite l’activation de l’axe en retour. Le rétrocontrôle positif renforce le phénomène, comme l’amplification des contractions pendant le travail.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c040",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Quelle différence existe entre rétrocontrôle négatif et positif ?",
+        "answers": [
+          "Le rétrocontrôle négatif limite l’activation de l’axe en retour. Le rétrocontrôle positif renforce le phénomène, comme l’amplification des contractions pendant le travail."
+        ],
+        "explanation": "Le rétrocontrôle négatif limite l’activation de l’axe en retour. Le rétrocontrôle positif renforce le phénomène, comme l’amplification des contractions pendant le travail."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q041",
+    "courseId": "etapes_de_la_vie",
+    "number": 41,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Les organes et les proportions corporelles :",
+    "choices": [
+      "Une taille cérébrale déjà importante peut coexister avec une maturation fonctionnelle en cours.",
+      "Tous les organes suivent une courbe de croissance identique.",
+      "La tête conserve la même proportion du corps de la vie fœtale à l’âge adulte.",
+      "Le développement des connexions nerveuses se déduit uniquement du périmètre crânien.",
+      "L’appareil génital se transforme fortement à la puberté."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le chiffre de taille ne mesure pas l’achèvement des fonctions.",
+      "Leurs rythmes de développement diffèrent.",
+      "Les proportions corporelles changent avec la croissance.",
+      "Cette mesure ne résume pas la maturation fonctionnelle.",
+      "Sa trajectoire diffère de celle du cerveau."
+    ],
+    "explanation": "La taille et les fonctions ne mûrissent pas au même rythme. Les organes ont des trajectoires différentes ; les proportions de la tête, du tronc et des membres évoluent aussi.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c041",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Pourquoi une grande taille cérébrale précoce ne signifie-t-elle pas une maturation achevée ?",
+        "answers": [
+          "La taille et les fonctions ne mûrissent pas au même rythme. Les organes ont des trajectoires différentes ; les proportions de la tête, du tronc et des membres évoluent aussi."
+        ],
+        "explanation": "La taille et les fonctions ne mûrissent pas au même rythme. Les organes ont des trajectoires différentes ; les proportions de la tête, du tronc et des membres évoluent aussi."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q042",
+    "courseId": "etapes_de_la_vie",
+    "number": 42,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Quelles définitions visuelles sont exactes ?",
+    "choices": [
+      "L’acuité correspond au volume du cerveau.",
+      "La convergence signifie l’augmentation du nombre de dents.",
+      "L’acuité décrit la finesse de perception.",
+      "La convergence coordonne les deux yeux pour une cible proche.",
+      "L’accommodation ajuste la mise au point."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "C’est une capacité de perception visuelle.",
+      "Elle relève de la fonction visuelle.",
+      "Elle ne se confond pas avec l’orientation oculaire.",
+      "Elle concerne leur orientation.",
+      "Elle implique le cristallin."
+    ],
+    "explanation": "L’acuité est la finesse de perception ; l’accommodation ajuste la mise au point par le cristallin ; la convergence coordonne l’orientation des deux yeux vers une cible proche.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c042",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Comment distinguer acuité, accommodation et convergence ?",
+        "answers": [
+          "L’acuité est la finesse de perception ; l’accommodation ajuste la mise au point par le cristallin ; la convergence coordonne l’orientation des deux yeux vers une cible proche."
+        ],
+        "explanation": "L’acuité est la finesse de perception ; l’accommodation ajuste la mise au point par le cristallin ; la convergence coordonne l’orientation des deux yeux vers une cible proche."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q043",
+    "courseId": "etapes_de_la_vie",
+    "number": 43,
+    "theme": "Facteurs de croissance et maturation sensorielle",
+    "difficulty": "medium",
+    "question": "Concernant l’examen sensoriel de l’enfant :",
+    "choices": [
+      "Toutes les capacités visuelles sont matures dès la naissance.",
+      "Des images peuvent être utilisées pour évaluer un enfant qui ne lit pas.",
+      "La chaîne des osselets est déjà très développée à la naissance.",
+      "Toute évaluation visuelle exige la lecture d’un texte.",
+      "Le développement des osselets prouve que le pavillon ne change plus."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Acuité et coordination se développent progressivement.",
+      "L’examen visuel peut être adapté à l’âge.",
+      "Cela ne signifie pas que toute l’oreille reste inchangée ensuite.",
+      "D’autres supports existent.",
+      "Il faut distinguer chaîne ossiculaire et oreille entière."
+    ],
+    "explanation": "Non. Des évaluations adaptées à l’âge peuvent utiliser des images. La vision mûrit progressivement ; une structure anatomique déjà développée ne signifie pas que toutes les fonctions sont achevées.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c043",
+        "theme": "Facteurs de croissance et maturation sensorielle",
+        "front": "Faut-il savoir lire pour que la vision puisse être évaluée ?",
+        "answers": [
+          "Non. Des évaluations adaptées à l’âge peuvent utiliser des images. La vision mûrit progressivement ; une structure anatomique déjà développée ne signifie pas que toutes les fonctions sont achevées."
+        ],
+        "explanation": "Non. Des évaluations adaptées à l’âge peuvent utiliser des images. La vision mûrit progressivement ; une structure anatomique déjà développée ne signifie pas que toutes les fonctions sont achevées."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q044",
+    "courseId": "etapes_de_la_vie",
+    "number": 44,
+    "theme": "Adolescence et activation de la puberté",
+    "difficulty": "easy",
+    "question": "Quelle différence existe entre adolescence et puberté ?",
+    "choices": [
+      "La puberté concerne la maturation de la fonction reproductive.",
+      "Les âges moyens imposent le même début de puberté à tous.",
+      "L’adolescence inclut des transformations relationnelles.",
+      "Les deux termes désignent exclusivement un âge civil.",
+      "La puberté exclut toute maturation cérébrale concomitante."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle comprend des changements hormonaux et corporels.",
+      "Les intervalles sont indicatifs.",
+      "Elle dépasse la seule maturation reproductive.",
+      "Ils décrivent des processus de transition et de maturation.",
+      "Plusieurs transformations se déroulent en parallèle."
+    ],
+    "explanation": "La puberté est la maturation physique donnant accès à la fonction reproductive. L’adolescence est une transition plus large, également intellectuelle, affective et sociale.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c044",
+        "theme": "Adolescence et activation de la puberté",
+        "front": "Comment distinguer adolescence et puberté ?",
+        "answers": [
+          "La puberté est la maturation physique donnant accès à la fonction reproductive. L’adolescence est une transition plus large, également intellectuelle, affective et sociale."
+        ],
+        "explanation": "La puberté est la maturation physique donnant accès à la fonction reproductive. L’adolescence est une transition plus large, également intellectuelle, affective et sociale."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q045",
+    "courseId": "etapes_de_la_vie",
+    "number": 45,
+    "theme": "Adolescence et activation de la puberté",
+    "difficulty": "medium",
+    "question": "Comment s’organise l’axe hormonal pubertaire ?",
+    "choices": [
+      "Les gonades produisent la TSH pour déclencher la puberté.",
+      "Les gonades répondent à la stimulation hormonale.",
+      "La GnRH est uniquement une hormone du cordon ombilical.",
+      "FSH et LH sont produites par l’antéhypophyse.",
+      "La GnRH est produite par l’hypothalamus."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La TSH relève de l’axe thyroïdien et est hypophysaire.",
+      "Leur réponse participe aux changements pubertaires.",
+      "Elle est hypothalamique.",
+      "Elles sont des gonadotrophines.",
+      "Elle constitue le signal en amont de cet axe."
+    ],
+    "explanation": "La GnRH hypothalamique stimule l’antéhypophyse, qui sécrète FSH et LH ; ces hormones stimulent les gonades et la production d’hormones sexuelles.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c045",
+        "theme": "Adolescence et activation de la puberté",
+        "front": "Quelle chaîne relie hypothalamus, hypophyse et gonades à la puberté ?",
+        "answers": [
+          "La GnRH hypothalamique stimule l’antéhypophyse, qui sécrète FSH et LH ; ces hormones stimulent les gonades et la production d’hormones sexuelles."
+        ],
+        "explanation": "La GnRH hypothalamique stimule l’antéhypophyse, qui sécrète FSH et LH ; ces hormones stimulent les gonades et la production d’hormones sexuelles."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q046",
+    "courseId": "etapes_de_la_vie",
+    "number": 46,
+    "theme": "Adolescence et activation de la puberté",
+    "difficulty": "medium",
+    "question": "Concernant les changements corporels pubertaires :",
+    "choices": [
+      "L’augmentation testiculaire participe à la maturation génitale masculine.",
+      "Le développement mammaire est un caractère sexuel secondaire.",
+      "La mue de la voix ne peut jamais concerner les filles.",
+      "Les caractères sexuels secondaires sont les premières selles.",
+      "La poussée de croissance survient nécessairement le même jour chez tous."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle est un repère de développement pubertaire.",
+      "Il apparaît au cours de la maturation pubertaire.",
+      "La voix peut aussi se modifier chez elles, souvent moins nettement.",
+      "Les premières selles sont le méconium.",
+      "Les âges et rythmes sont variables."
+    ],
+    "explanation": "Maturation des organes génitaux, caractères sexuels secondaires et poussée de croissance. Leur rythme varie ; la poussée est généralement plus précoce chez la fille que chez le garçon.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c046",
+        "theme": "Adolescence et activation de la puberté",
+        "front": "Quels changements corporels accompagnent la puberté ?",
+        "answers": [
+          "Maturation des organes génitaux, caractères sexuels secondaires et poussée de croissance. Leur rythme varie ; la poussée est généralement plus précoce chez la fille que chez le garçon."
+        ],
+        "explanation": "Maturation des organes génitaux, caractères sexuels secondaires et poussée de croissance. Leur rythme varie ; la poussée est généralement plus précoce chez la fille que chez le garçon."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q047",
+    "courseId": "etapes_de_la_vie",
+    "number": 47,
+    "theme": "Adolescence et activation de la puberté",
+    "difficulty": "medium",
+    "question": "À propos de la maturation cérébrale adolescente :",
+    "choices": [
+      "L’élagage synaptique réorganise les connexions.",
+      "L’élagage synaptique signifie la disparition de tous les neurones.",
+      "Tous les comportements adolescents s’expliquent par une hormone unique.",
+      "La maturation cérébrale est nécessairement terminée avant la puberté.",
+      "La myélinisation contribue à accélérer la transmission nerveuse."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il ne correspond pas à l’arrêt de toute activité cérébrale.",
+      "Il concerne la sélection de connexions.",
+      "Les changements biologiques, les expériences et les relations interagissent.",
+      "Elle se poursuit pendant cette période.",
+      "La myéline participe à l’efficacité de conduction."
+    ],
+    "explanation": "La myélinisation facilite la transmission rapide des messages nerveux. L’élagage synaptique sélectionne et réorganise des connexions. Ces changements interagissent avec les expériences et le contexte.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c047",
+        "theme": "Adolescence et activation de la puberté",
+        "front": "Quels rôles ont la myélinisation et l’élagage synaptique ?",
+        "answers": [
+          "La myélinisation facilite la transmission rapide des messages nerveux. L’élagage synaptique sélectionne et réorganise des connexions. Ces changements interagissent avec les expériences et le contexte."
+        ],
+        "explanation": "La myélinisation facilite la transmission rapide des messages nerveux. L’élagage synaptique sélectionne et réorganise des connexions. Ces changements interagissent avec les expériences et le contexte."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q048",
+    "courseId": "etapes_de_la_vie",
+    "number": 48,
+    "theme": "Tanner, ménarche et maturation reproductive",
+    "difficulty": "easy",
+    "question": "Comment utiliser la classification de Tanner ?",
+    "choices": [
+      "Le stade I correspond à un aspect prépubère.",
+      "Le stade V signifie que tous les aspects psychologiques sont adultes.",
+      "L’âge seul permet d’attribuer le stade.",
+      "Tanner est un score respiratoire néonatal.",
+      "Le stade V correspond à une morphologie adulte."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est l’extrémité initiale de la classification.",
+      "La classification décrit la maturation sexuelle morphologique.",
+      "Les caractères morphologiques doivent être observés.",
+      "Le score néonatal évoqué est l’Apgar.",
+      "Il constitue l’extrémité finale."
+    ],
+    "explanation": "Tanner décrit la maturation sexuelle observée : stade I prépubère, stade V de morphologie adulte. Le classement repose sur les caractères physiques, pas sur l’âge seul.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c048",
+        "theme": "Tanner, ménarche et maturation reproductive",
+        "front": "Que décrivent les stades I et V de Tanner ?",
+        "answers": [
+          "Tanner décrit la maturation sexuelle observée : stade I prépubère, stade V de morphologie adulte. Le classement repose sur les caractères physiques, pas sur l’âge seul."
+        ],
+        "explanation": "Tanner décrit la maturation sexuelle observée : stade I prépubère, stade V de morphologie adulte. Le classement repose sur les caractères physiques, pas sur l’âge seul."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q049",
+    "courseId": "etapes_de_la_vie",
+    "number": 49,
+    "theme": "Tanner, ménarche et maturation reproductive",
+    "difficulty": "medium",
+    "question": "Quelles observations relèvent de Tanner ?",
+    "choices": [
+      "Le développement testiculaire et pénien est observé chez le garçon.",
+      "Le nombre de dents de lait détermine le stade.",
+      "Le stade est calculé par le poids divisé par la taille au carré.",
+      "Le développement mammaire est observé chez la fille.",
+      "Deux adolescents du même âge peuvent présenter des stades différents."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces caractères décrivent la maturation génitale.",
+      "La dentition n’est pas le critère de cette classification.",
+      "Cette formule calcule l’IMC.",
+      "Il fait partie des caractères de maturation sexuelle.",
+      "L’âge ne résume pas la progression morphologique."
+    ],
+    "explanation": "Chez la fille : développement mammaire et pilosité pubienne. Chez le garçon : développement génital et pilosité pubienne. Deux adolescents du même âge peuvent avoir des stades différents.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c049",
+        "theme": "Tanner, ménarche et maturation reproductive",
+        "front": "Quels caractères sont observés dans la classification de Tanner ?",
+        "answers": [
+          "Chez la fille : développement mammaire et pilosité pubienne. Chez le garçon : développement génital et pilosité pubienne. Deux adolescents du même âge peuvent avoir des stades différents."
+        ],
+        "explanation": "Chez la fille : développement mammaire et pilosité pubienne. Chez le garçon : développement génital et pilosité pubienne. Deux adolescents du même âge peuvent avoir des stades différents."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q050",
+    "courseId": "etapes_de_la_vie",
+    "number": 50,
+    "theme": "Tanner, ménarche et maturation reproductive",
+    "difficulty": "hard",
+    "question": "Concernant ménarche et premiers cycles :",
+    "choices": [
+      "Tous les premiers cycles comportent nécessairement une ovulation.",
+      "Une absence de possibilité de grossesse est garantie pendant neuf mois après la ménarche.",
+      "Un saignement menstruel ne prouve pas à lui seul une ovulation préalable.",
+      "La ménarche est le stade I de Tanner par définition.",
+      "La ménarche est la première menstruation."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Leur fonctionnement peut être encore irrégulier.",
+      "Le délai cité ne constitue pas une garantie individuelle.",
+      "Les premiers cycles peuvent être anovulatoires.",
+      "Tanner I est prépubère ; les notions ne se confondent pas.",
+      "Elle ne désigne pas la fin de l’activité ovarienne."
+    ],
+    "explanation": "La ménarche est la première menstruation. Les premiers cycles peuvent être anovulatoires, mais aucune période obligatoire sans ovulation ne peut être garantie.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c050",
+        "theme": "Tanner, ménarche et maturation reproductive",
+        "front": "La première menstruation prouve-t-elle qu’une ovulation a eu lieu ?",
+        "answers": [
+          "La ménarche est la première menstruation. Les premiers cycles peuvent être anovulatoires, mais aucune période obligatoire sans ovulation ne peut être garantie."
+        ],
+        "explanation": "La ménarche est la première menstruation. Les premiers cycles peuvent être anovulatoires, mais aucune période obligatoire sans ovulation ne peut être garantie."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q051",
+    "courseId": "etapes_de_la_vie",
+    "number": 51,
+    "theme": "Tanner, ménarche et maturation reproductive",
+    "difficulty": "medium",
+    "question": "À propos de la maturation reproductive :",
+    "choices": [
+      "La production de gamètes et la production hormonale sont strictement le même processus.",
+      "La FSH participe au développement des tubules séminifères.",
+      "Le corps jaune produit de la progestérone après ovulation.",
+      "Une hausse de progestérone ne peut jamais renseigner sur une ovulation.",
+      "La progestérone est uniquement produite avant toute ovulation par le canal artériel."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces fonctions gonadiques sont liées mais distinctes.",
+      "Ces structures sont liées à la production de spermatozoïdes.",
+      "Cette sécrétion appartient à la phase suivant l’ovulation.",
+      "Au moment approprié, elle peut en témoigner.",
+      "Le corps jaune ovarien est la structure concernée ici."
+    ],
+    "explanation": "Après l’ovulation, le follicule donne le corps jaune, qui sécrète notamment de la progestérone. Chez le garçon, la FSH participe au développement des tubules séminifères.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c051",
+        "theme": "Tanner, ménarche et maturation reproductive",
+        "front": "Quel lien existe entre ovulation, corps jaune et progestérone ?",
+        "answers": [
+          "Après l’ovulation, le follicule donne le corps jaune, qui sécrète notamment de la progestérone. Chez le garçon, la FSH participe au développement des tubules séminifères."
+        ],
+        "explanation": "Après l’ovulation, le follicule donne le corps jaune, qui sécrète notamment de la progestérone. Chez le garçon, la FSH participe au développement des tubules séminifères."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q052",
+    "courseId": "etapes_de_la_vie",
+    "number": 52,
+    "theme": "Adolescence : relations et vulnérabilités",
+    "difficulty": "medium",
+    "question": "À propos de l’autonomie adolescente :",
+    "choices": [
+      "Des conflits ponctuels peuvent coexister avec un attachement familial.",
+      "Des enquêtes historiques décrivent exactement tous les adolescents actuels.",
+      "Tout désaccord prouve un conflit permanent.",
+      "Les pairs prennent une place croissante dans la vie sociale.",
+      "Les parents cessent nécessairement d’être des interlocuteurs de santé."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’autonomie ne signifie pas une rupture systématique.",
+      "Leur période et leur population ne permettent pas cette généralisation.",
+      "Les difficultés peuvent être momentanées.",
+      "Les relations se diversifient pendant l’adolescence.",
+      "Ils peuvent conserver une place importante."
+    ],
+    "explanation": "Non. Les pairs prennent une place croissante, tandis que les parents peuvent rester des interlocuteurs importants. Attachement et désaccords ponctuels peuvent coexister.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c052",
+        "theme": "Adolescence : relations et vulnérabilités",
+        "front": "La recherche d’autonomie supprime-t-elle nécessairement l’attachement aux parents ?",
+        "answers": [
+          "Non. Les pairs prennent une place croissante, tandis que les parents peuvent rester des interlocuteurs importants. Attachement et désaccords ponctuels peuvent coexister."
+        ],
+        "explanation": "Non. Les pairs prennent une place croissante, tandis que les parents peuvent rester des interlocuteurs importants. Attachement et désaccords ponctuels peuvent coexister."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q053",
+    "courseId": "etapes_de_la_vie",
+    "number": 53,
+    "theme": "Adolescence : relations et vulnérabilités",
+    "difficulty": "hard",
+    "question": "Concernant les facteurs de vulnérabilité suicidaire présentés :",
+    "choices": [
+      "Un antécédent de tentative constitue un élément à prendre au sérieux.",
+      "Un facteur isolé ne permet pas de prédire à lui seul un passage à l’acte.",
+      "L’absence d’un facteur cité permet d’exclure toute difficulté.",
+      "Le harcèlement et l’isolement peuvent contribuer à la vulnérabilité.",
+      "Une tentative est toujours un décès par suicide."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il fait partie des facteurs de vulnérabilité cités.",
+      "Les situations sont multifactorielles.",
+      "Une liste de facteurs ne remplace pas l’appréciation de la situation.",
+      "L’environnement relationnel compte dans l’évaluation.",
+      "Tentative et décès sont deux événements distincts."
+    ],
+    "explanation": "Antécédent de tentative, troubles psychiques, substances, harcèlement, isolement ou contexte familial peuvent s’associer au risque. Ils appellent une attention professionnelle sans prédire individuellement un passage à l’acte.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c053",
+        "theme": "Adolescence : relations et vulnérabilités",
+        "front": "Comment interpréter les facteurs de vulnérabilité suicidaire à l’adolescence ?",
+        "answers": [
+          "Antécédent de tentative, troubles psychiques, substances, harcèlement, isolement ou contexte familial peuvent s’associer au risque. Ils appellent une attention professionnelle sans prédire individuellement un passage à l’acte."
+        ],
+        "explanation": "Antécédent de tentative, troubles psychiques, substances, harcèlement, isolement ou contexte familial peuvent s’associer au risque. Ils appellent une attention professionnelle sans prédire individuellement un passage à l’acte."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q054",
+    "courseId": "etapes_de_la_vie",
+    "number": 54,
+    "theme": "Adolescence : relations et vulnérabilités",
+    "difficulty": "medium",
+    "question": "Comment interpréter les données sur la violence adolescente ?",
+    "choices": [
+      "Relations familiales, exposition à la violence et environnement social peuvent interagir.",
+      "Une enquête ancienne peut être généralisée sans période ni population.",
+      "Les différences statistiques rendent la violence normale et obligatoire.",
+      "Un facteur social unique explique tous les comportements violents.",
+      "Une fréquence observée dans un groupe prédit chaque comportement individuel."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les facteurs familiaux et sociaux sont multiples.",
+      "Ces éléments sont nécessaires pour interpréter les résultats.",
+      "Une fréquence ne justifie ni ne rend inévitable une conduite.",
+      "Les situations sont multifactorielles.",
+      "Une tendance collective n’est pas une prédiction individuelle."
+    ],
+    "explanation": "Une association décrit des tendances dans une population. Les facteurs sont multiples ; elle ne prouve pas qu’une personne donnée sera violente ni que la violence serait inévitable.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c054",
+        "theme": "Adolescence : relations et vulnérabilités",
+        "front": "Pourquoi une association statistique ne permet-elle pas d’étiqueter un adolescent ?",
+        "answers": [
+          "Une association décrit des tendances dans une population. Les facteurs sont multiples ; elle ne prouve pas qu’une personne donnée sera violente ni que la violence serait inévitable."
+        ],
+        "explanation": "Une association décrit des tendances dans une population. Les facteurs sont multiples ; elle ne prouve pas qu’une personne donnée sera violente ni que la violence serait inévitable."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q055",
+    "courseId": "etapes_de_la_vie",
+    "number": 55,
+    "theme": "Âge adulte, ménopause et andropause",
+    "difficulty": "medium",
+    "question": "Comment décrire l’entrée dans l’âge adulte ?",
+    "choices": [
+      "L’autonomie n’est pas atteinte de manière identique au même moment chez tous.",
+      "L’âge adulte peut comporter des transitions affectives et sociales.",
+      "L’entrée dans l’emploi impose un mariage concomitant.",
+      "La parentalité est une condition nécessaire pour devenir adulte.",
+      "L’âge adulte exclut toute modification intellectuelle ou affective."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces repères ne constituent pas un scénario individuel obligatoire.",
+      "Les changements se poursuivent au cours de cette période.",
+      "Les transitions sociales et familiales ne sont pas obligatoirement liées.",
+      "Aucun événement familial particulier n’est obligatoire.",
+      "La maturité ne signifie pas l’absence de changement."
+    ],
+    "explanation": "Non. Maturité et autonomie sont des repères ; couple, parentalité, emploi, séparation ou retraite sont des transitions possibles, avec des trajectoires variées.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c055",
+        "theme": "Âge adulte, ménopause et andropause",
+        "front": "Les transitions familiales et sociales suivent-elles un parcours obligatoire à l’âge adulte ?",
+        "answers": [
+          "Non. Maturité et autonomie sont des repères ; couple, parentalité, emploi, séparation ou retraite sont des transitions possibles, avec des trajectoires variées."
+        ],
+        "explanation": "Non. Maturité et autonomie sont des repères ; couple, parentalité, emploi, séparation ou retraite sont des transitions possibles, avec des trajectoires variées."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q056",
+    "courseId": "etapes_de_la_vie",
+    "number": 56,
+    "theme": "Âge adulte, ménopause et andropause",
+    "difficulty": "medium",
+    "question": "Concernant la ménopause :",
+    "choices": [
+      "Elle signifie l’absence de toute hormone sexuelle dans l’organisme.",
+      "Elle comporte l’arrêt de l’activité ovarienne cyclique.",
+      "Les manifestations de la transition sont variables.",
+      "Elle survient exactement à cinquante ans chez toutes les femmes.",
+      "Elle correspond à la première menstruation."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’arrêt cyclique ne signifie pas une disparition totale des hormones.",
+      "C’est le changement reproductif central décrit.",
+      "Sommeil, ressenti thermique ou anxiété ne suivent pas un tableau identique chez toutes.",
+      "Cinquante ans est un ordre de grandeur moyen, non une date obligatoire.",
+      "La première menstruation est la ménarche."
+    ],
+    "explanation": "Elle correspond à l’arrêt de l’activité ovarienne cyclique, de l’ovulation et des menstruations, avec une forte diminution des sécrétions ovariennes. Cela ne signifie pas la disparition de toutes les hormones sexuelles du corps.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c056",
+        "theme": "Âge adulte, ménopause et andropause",
+        "front": "Que signifie la ménopause sur le plan reproductif et hormonal ?",
+        "answers": [
+          "Elle correspond à l’arrêt de l’activité ovarienne cyclique, de l’ovulation et des menstruations, avec une forte diminution des sécrétions ovariennes. Cela ne signifie pas la disparition de toutes les hormones sexuelles du corps."
+        ],
+        "explanation": "Elle correspond à l’arrêt de l’activité ovarienne cyclique, de l’ovulation et des menstruations, avec une forte diminution des sécrétions ovariennes. Cela ne signifie pas la disparition de toutes les hormones sexuelles du corps."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q057",
+    "courseId": "etapes_de_la_vie",
+    "number": 57,
+    "theme": "Âge adulte, ménopause et andropause",
+    "difficulty": "medium",
+    "question": "Que désigne le terme andropause ?",
+    "choices": [
+      "La production de spermatozoïdes peut persister.",
+      "Tous les hommes présentent obligatoirement les mêmes troubles érectiles.",
+      "Elle impose un arrêt brutal de fertilité au même âge chez tous.",
+      "Elle désigne la fin de la période néonatale.",
+      "La diminution de testostérone peut être progressive et variable."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’arrêt reproductif n’est pas systématique.",
+      "Les manifestations sont variables.",
+      "La baisse est progressive et variable, à distinguer de l’arrêt ovarien cyclique.",
+      "Il s’agit d’un changement hormonal possible avec l’âge.",
+      "Le changement ne se produit pas de la même façon chez tous."
+    ],
+    "explanation": "L’andropause décrit une baisse progressive et variable de testostérone chez certains hommes. Elle n’impose pas un arrêt brutal de la fertilité ; la production de spermatozoïdes peut persister.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c057",
+        "theme": "Âge adulte, ménopause et andropause",
+        "front": "Pourquoi andropause et ménopause ne sont-elles pas des équivalents exacts ?",
+        "answers": [
+          "L’andropause décrit une baisse progressive et variable de testostérone chez certains hommes. Elle n’impose pas un arrêt brutal de la fertilité ; la production de spermatozoïdes peut persister."
+        ],
+        "explanation": "L’andropause décrit une baisse progressive et variable de testostérone chez certains hommes. Elle n’impose pas un arrêt brutal de la fertilité ; la production de spermatozoïdes peut persister."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q058",
+    "courseId": "etapes_de_la_vie",
+    "number": 58,
+    "theme": "Âge adulte, ménopause et andropause",
+    "difficulty": "medium",
+    "question": "À propos de la maladie à l’âge adulte :",
+    "choices": [
+      "Chronique signifie automatiquement handicap.",
+      "Les maladies surviennent uniquement à l’âge adulte.",
+      "Toute maladie aiguë devient nécessairement chronique.",
+      "Une maladie peut retentir sur la vie sociale et psychique.",
+      "Une maladie chronique peut nécessiter des adaptations durables."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le handicap est une conséquence possible, non systématique.",
+      "Elles peuvent survenir à d’autres étapes de vie.",
+      "Une évolution vers la guérison est possible.",
+      "Son effet ne se limite pas au fonctionnement d’un organe.",
+      "Sa persistance peut modifier le quotidien."
+    ],
+    "explanation": "Non. Elle peut demander des adaptations durables et parfois entraîner un handicap, sans que celui-ci soit automatique. Ses effets peuvent être physiques, psychiques et sociaux.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c058",
+        "theme": "Âge adulte, ménopause et andropause",
+        "front": "Une maladie chronique entraîne-t-elle nécessairement un handicap ?",
+        "answers": [
+          "Non. Elle peut demander des adaptations durables et parfois entraîner un handicap, sans que celui-ci soit automatique. Ses effets peuvent être physiques, psychiques et sociaux."
+        ],
+        "explanation": "Non. Elle peut demander des adaptations durables et parfois entraîner un handicap, sans que celui-ci soit automatique. Ses effets peuvent être physiques, psychiques et sociaux."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q059",
+    "courseId": "etapes_de_la_vie",
+    "number": 59,
+    "theme": "Vieillissement : définitions et contexte",
+    "difficulty": "easy",
+    "question": "Quelles définitions du vieillissement sont exactes ?",
+    "choices": [
+      "La sénescence concerne le vieillissement naturel des cellules et tissus.",
+      "La gérontologie inclut des dimensions sociales et psychologiques.",
+      "La gérontologie désigne seulement une opération chirurgicale cardiaque.",
+      "La gériatrie est une discipline médicale.",
+      "La vieillesse est en elle-même une maladie."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle ne désigne pas à elle seule une maladie particulière.",
+      "Son objet est plus large que les seules pathologies.",
+      "C’est l’étude multidimensionnelle du vieillissement.",
+      "Elle est consacrée aux personnes âgées.",
+      "Vieillissement et maladie sont distincts."
+    ],
+    "explanation": "La sénescence est le vieillissement naturel des cellules et tissus. La gériatrie est la médecine des personnes âgées ; la gérontologie étudie le vieillissement dans plusieurs dimensions.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c059",
+        "theme": "Vieillissement : définitions et contexte",
+        "front": "Comment distinguer sénescence, gériatrie et gérontologie ?",
+        "answers": [
+          "La sénescence est le vieillissement naturel des cellules et tissus. La gériatrie est la médecine des personnes âgées ; la gérontologie étudie le vieillissement dans plusieurs dimensions."
+        ],
+        "explanation": "La sénescence est le vieillissement naturel des cellules et tissus. La gériatrie est la médecine des personnes âgées ; la gérontologie étudie le vieillissement dans plusieurs dimensions."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q060",
+    "courseId": "etapes_de_la_vie",
+    "number": 60,
+    "theme": "Vieillissement : définitions et contexte",
+    "difficulty": "medium",
+    "question": "Comment évoluent les réserves fonctionnelles avec l’âge ?",
+    "choices": [
+      "Chaque tendance liée à l’âge prouve une maladie.",
+      "Une baisse de réserve peut coexister avec un fonctionnement suffisant au repos.",
+      "Tous les organes ne vieillissent pas au même rythme.",
+      "Une baisse de réserve entraîne toujours une incapacité totale immédiate.",
+      "Deux personnes du même âge ont nécessairement les mêmes capacités."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Tendance physiologique et pathologie doivent être distinguées.",
+      "La réserve concerne notamment la capacité à répondre à une sollicitation.",
+      "Le processus est hétérogène.",
+      "Elle peut d’abord limiter l’adaptation à l’effort ou au stress.",
+      "Les trajectoires individuelles diffèrent."
+    ],
+    "explanation": "La capacité d’adaptation peut diminuer sans défaillance immédiate au repos. Le vieillissement est hétérogène selon les organes, les personnes, les maladies et l’environnement.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c060",
+        "theme": "Vieillissement : définitions et contexte",
+        "front": "Que signifie une diminution des réserves fonctionnelles ?",
+        "answers": [
+          "La capacité d’adaptation peut diminuer sans défaillance immédiate au repos. Le vieillissement est hétérogène selon les organes, les personnes, les maladies et l’environnement."
+        ],
+        "explanation": "La capacité d’adaptation peut diminuer sans défaillance immédiate au repos. Le vieillissement est hétérogène selon les organes, les personnes, les maladies et l’environnement."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q061",
+    "courseId": "etapes_de_la_vie",
+    "number": 61,
+    "theme": "Vieillissement : définitions et contexte",
+    "difficulty": "medium",
+    "question": "Concernant l’espérance de vie :",
+    "choices": [
+      "Elle dépend des conditions de mortalité utilisées dans son calcul.",
+      "Elle indique l’âge exact de décès de chaque nouveau-né.",
+      "Des valeurs historiques deviennent automatiquement des chiffres actuels.",
+      "Elle augmente obligatoirement chaque année.",
+      "Elle peut connaître des reculs ponctuels."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est un indicateur de population.",
+      "Elle ne prédit pas une trajectoire individuelle.",
+      "Leur date et leur contexte doivent être conservés.",
+      "Une tendance de long terme n’exclut pas les baisses.",
+      "Des événements tels que canicules et épidémies peuvent faire reculer l’indicateur."
+    ],
+    "explanation": "C’est un indicateur statistique fondé sur les conditions de mortalité d’une période. Une tendance de long terme peut comporter des reculs ponctuels ; elle ne fixe pas la durée de vie d’une personne.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c061",
+        "theme": "Vieillissement : définitions et contexte",
+        "front": "Pourquoi l’espérance de vie n’est-elle pas une prédiction individuelle de décès ?",
+        "answers": [
+          "C’est un indicateur statistique fondé sur les conditions de mortalité d’une période. Une tendance de long terme peut comporter des reculs ponctuels ; elle ne fixe pas la durée de vie d’une personne."
+        ],
+        "explanation": "C’est un indicateur statistique fondé sur les conditions de mortalité d’une période. Une tendance de long terme peut comporter des reculs ponctuels ; elle ne fixe pas la durée de vie d’une personne."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q062",
+    "courseId": "etapes_de_la_vie",
+    "number": 62,
+    "theme": "Vieillissement : comprendre les grandes fonctions",
+    "difficulty": "medium",
+    "question": "Concernant peau, os et muscles avec l’avancée en âge :",
+    "choices": [
+      "La masse osseuse croît sans maximum jusqu’à la mort.",
+      "L’élasticité cutanée augmente obligatoirement toute la vie.",
+      "Une fragilité osseuse signifie qu’une fracture est déjà présente.",
+      "Une perte musculaire peut retentir sur la force et la fonction.",
+      "Une moindre activité sébacée peut participer à la sécheresse cutanée."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La trajectoire comporte un maximum puis une diminution possible.",
+      "L’élasticité cutanée peut diminuer.",
+      "Elle constitue une vulnérabilité, distincte d’une fracture constituée.",
+      "La masse ne résume pas à elle seule la performance.",
+      "Les modifications de la peau et des annexes contribuent à ce changement."
+    ],
+    "explanation": "Renouvellement cutané et élasticité peuvent diminuer, avec sécheresse ; masse et résistance osseuses peuvent baisser ; masse, force et fonction musculaires peuvent se réduire.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c062",
+        "theme": "Vieillissement : comprendre les grandes fonctions",
+        "front": "Quelles modifications peuvent toucher la peau, les os et les muscles ?",
+        "answers": [
+          "Renouvellement cutané et élasticité peuvent diminuer, avec sécheresse ; masse et résistance osseuses peuvent baisser ; masse, force et fonction musculaires peuvent se réduire."
+        ],
+        "explanation": "Renouvellement cutané et élasticité peuvent diminuer, avec sécheresse ; masse et résistance osseuses peuvent baisser ; masse, force et fonction musculaires peuvent se réduire."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q063",
+    "courseId": "etapes_de_la_vie",
+    "number": 63,
+    "theme": "Vieillissement : comprendre les grandes fonctions",
+    "difficulty": "hard",
+    "question": "À propos du vieillissement cardiovasculaire et respiratoire :",
+    "choices": [
+      "Une augmentation de masse myocardique ne prouve pas une amélioration de fonction.",
+      "Tous les cœurs vieillissants grossissent nécessairement pour devenir plus puissants.",
+      "Le vieillissement respiratoire améliore obligatoirement la réserve à l’effort.",
+      "L’hématose oxygène le sang et permet l’élimination du dioxyde de carbone.",
+      "L’hématose est la production d’hormones par le corps jaune."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Taille et performance sont deux dimensions différentes.",
+      "Ce mécanisme universel ne peut pas être retenu.",
+      "Les capacités d’adaptation peuvent diminuer.",
+      "Elle correspond aux échanges gazeux pulmonaires.",
+      "Elle relève des échanges gazeux, non de l’endocrinologie ovarienne."
+    ],
+    "explanation": "Une augmentation de masse myocardique n’implique pas un gain de performance et n’est pas obligatoire avec l’âge. Les modifications cardiovasculaires et respiratoires peuvent diminuer les capacités d’adaptation.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c063",
+        "theme": "Vieillissement : comprendre les grandes fonctions",
+        "front": "Pourquoi masse cardiaque et efficacité ne sont-elles pas synonymes ?",
+        "answers": [
+          "Une augmentation de masse myocardique n’implique pas un gain de performance et n’est pas obligatoire avec l’âge. Les modifications cardiovasculaires et respiratoires peuvent diminuer les capacités d’adaptation."
+        ],
+        "explanation": "Une augmentation de masse myocardique n’implique pas un gain de performance et n’est pas obligatoire avec l’âge. Les modifications cardiovasculaires et respiratoires peuvent diminuer les capacités d’adaptation."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q064",
+    "courseId": "etapes_de_la_vie",
+    "number": 64,
+    "theme": "Vieillissement : comprendre les grandes fonctions",
+    "difficulty": "medium",
+    "question": "Quelles évolutions urinaires sont possibles avec l’âge ?",
+    "choices": [
+      "Le contrôle sphinctérien et la sensation de besoin peuvent se modifier.",
+      "La filtration rénale peut diminuer.",
+      "L’incontinence est obligatoire chez toute personne âgée.",
+      "Filtration rénale et continence désignent exactement la même fonction.",
+      "Une modification de prostate ne peut jamais retentir sur le passage urinaire."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces fonctions sont distinctes de la filtration.",
+      "Elle relève du fonctionnement du rein.",
+      "Elle est possible, sans être universelle ni à banaliser.",
+      "Produire l’urine et contrôler son émission sont distincts.",
+      "Son volume peut avoir un retentissement urinaire."
+    ],
+    "explanation": "La filtration rénale peut diminuer ; sensation de besoin, vessie et contrôle sphinctérien peuvent changer. Une incontinence n’est pas une conséquence inévitable à banaliser.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c064",
+        "theme": "Vieillissement : comprendre les grandes fonctions",
+        "front": "Comment distinguer filtration rénale et contrôle vésical dans le vieillissement ?",
+        "answers": [
+          "La filtration rénale peut diminuer ; sensation de besoin, vessie et contrôle sphinctérien peuvent changer. Une incontinence n’est pas une conséquence inévitable à banaliser."
+        ],
+        "explanation": "La filtration rénale peut diminuer ; sensation de besoin, vessie et contrôle sphinctérien peuvent changer. Une incontinence n’est pas une conséquence inévitable à banaliser."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q065",
+    "courseId": "etapes_de_la_vie",
+    "number": 65,
+    "theme": "Vieillissement : comprendre les grandes fonctions",
+    "difficulty": "medium",
+    "question": "Concernant digestion et défenses immunitaires :",
+    "choices": [
+      "Une diminution du goût n’a aucun lien possible avec l’envie de manger.",
+      "Des difficultés de mastication peuvent retentir sur l’alimentation.",
+      "Un ralentissement du transit peut favoriser la constipation.",
+      "Une moindre efficacité immunitaire peut accroître la vulnérabilité infectieuse.",
+      "La constipation prouve à elle seule une baisse des lymphocytes."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle peut influencer l’appétit.",
+      "Les fonctions digestives et sensorielles interagissent.",
+      "C’est une évolution possible, non une obligation individuelle.",
+      "Les réponses des lymphocytes T et B peuvent être modifiées.",
+      "Transit et immunité sont des fonctions distinctes."
+    ],
+    "explanation": "Des difficultés dentaires ou une baisse du goût peuvent gêner l’alimentation. Un ralentissement du transit peut favoriser la constipation ; les défenses immunitaires peuvent aussi devenir moins efficaces.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c065",
+        "theme": "Vieillissement : comprendre les grandes fonctions",
+        "front": "Quels liens faire entre mastication, goût, transit et vieillissement ?",
+        "answers": [
+          "Des difficultés dentaires ou une baisse du goût peuvent gêner l’alimentation. Un ralentissement du transit peut favoriser la constipation ; les défenses immunitaires peuvent aussi devenir moins efficaces."
+        ],
+        "explanation": "Des difficultés dentaires ou une baisse du goût peuvent gêner l’alimentation. Un ralentissement du transit peut favoriser la constipation ; les défenses immunitaires peuvent aussi devenir moins efficaces."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q066",
+    "courseId": "etapes_de_la_vie",
+    "number": 66,
+    "theme": "Vieillissement : comprendre les grandes fonctions",
+    "difficulty": "medium",
+    "question": "À propos des sens et du sommeil avec l’âge :",
+    "choices": [
+      "La presbytie est une perte du réflexe d’agrippement du nouveau-né.",
+      "La presbytie concerne surtout la vision de près.",
+      "Une baisse auditive peut gêner les échanges relationnels.",
+      "Toute baisse sensorielle affecte obligatoirement tous les sens de façon identique.",
+      "Le sommeil et les rythmes circadiens restent identiques toute la vie."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle concerne la vision, non ce réflexe.",
+      "Elle est liée aux modifications de l’accommodation.",
+      "Certaines informations orales peuvent être moins bien perçues.",
+      "Les évolutions sont variables et hétérogènes.",
+      "Ils peuvent se modifier avec l’âge."
+    ],
+    "explanation": "La presbytie gêne surtout la mise au point de près par modification de l’accommodation. Audition, goût, toucher et rythmes du sommeil peuvent aussi évoluer, avec des effets sur le quotidien.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c066",
+        "theme": "Vieillissement : comprendre les grandes fonctions",
+        "front": "Quelle difficulté caractérise la presbytie et quels autres changements sensoriels sont possibles ?",
+        "answers": [
+          "La presbytie gêne surtout la mise au point de près par modification de l’accommodation. Audition, goût, toucher et rythmes du sommeil peuvent aussi évoluer, avec des effets sur le quotidien."
+        ],
+        "explanation": "La presbytie gêne surtout la mise au point de près par modification de l’accommodation. Audition, goût, toucher et rythmes du sommeil peuvent aussi évoluer, avec des effets sur le quotidien."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q067",
+    "courseId": "etapes_de_la_vie",
+    "number": 67,
+    "theme": "La mort et la fin du parcours physiologique",
+    "difficulty": "medium",
+    "question": "Quelle proposition respecte la définition biologique de la mort ?",
+    "choices": [
+      "Tout arrêt momentané d’une fonction est nécessairement irréversible.",
+      "Elle est synonyme de sénescence cellulaire normale.",
+      "Un score d’Apgar suffit à définir juridiquement le décès à tout âge.",
+      "Elle est une cessation complète et définitive de la vie.",
+      "Elle correspond uniquement à une diminution de réserve à l’effort."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Arrêt fonctionnel et irréversibilité ne se confondent pas dans toute situation.",
+      "Sénescence et mort de l’organisme sont des notions distinctes.",
+      "L’Apgar apprécie l’adaptation néonatale et ne définit pas juridiquement le décès.",
+      "Les caractères complet et définitif sont essentiels.",
+      "Une baisse de réserve n’est pas une cessation définitive de la vie."
+    ],
+    "explanation": "La mort est la cessation complète et définitive de la vie. Le caractère irréversible est essentiel ; l’arrêt isolé d’une fonction ne prouve pas dans toute situation son irréversibilité.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c067",
+        "theme": "La mort et la fin du parcours physiologique",
+        "front": "Quels mots sont essentiels dans la définition biologique de la mort ?",
+        "answers": [
+          "La mort est la cessation complète et définitive de la vie. Le caractère irréversible est essentiel ; l’arrêt isolé d’une fonction ne prouve pas dans toute situation son irréversibilité."
+        ],
+        "explanation": "La mort est la cessation complète et définitive de la vie. Le caractère irréversible est essentiel ; l’arrêt isolé d’une fonction ne prouve pas dans toute situation son irréversibilité."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  },
+  {
+    "id": "etapes_vie_q068",
+    "courseId": "etapes_de_la_vie",
+    "number": 68,
+    "theme": "La mort et la fin du parcours physiologique",
+    "difficulty": "medium",
+    "question": "À propos des grandes fonctions vitales :",
+    "choices": [
+      "Chaque organe vital fonctionne indépendamment de toute circulation.",
+      "Une défaillance d’organe vital peut compromettre les autres fonctions.",
+      "Une diminution de force musculaire suffit à établir la cessation définitive de la vie.",
+      "Une seule observation isolée remplace toutes les procédures de constat du décès.",
+      "Les grandes fonctions vitales sont interdépendantes."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La perfusion et les échanges soutiennent les organes.",
+      "Ces fonctions sont interdépendantes.",
+      "Ce changement possible du vieillissement ne constitue pas cette définition.",
+      "Les procédures de constat du décès ne peuvent pas se déduire de cette simplification.",
+      "Le maintien d’une fonction dépend notamment des autres."
+    ],
+    "explanation": "Les fonctions nerveuses, respiratoires et circulatoires sont interdépendantes. Une défaillance peut retentir sur les autres ; leur appréciation clinique ne se réduit pas à un signe isolé.",
+    "flashcards": [
+      {
+        "id": "etapes_vie_c068",
+        "theme": "La mort et la fin du parcours physiologique",
+        "front": "Pourquoi la défaillance d’un organe vital peut-elle compromettre d’autres fonctions ?",
+        "answers": [
+          "Les fonctions nerveuses, respiratoires et circulatoires sont interdépendantes. Une défaillance peut retentir sur les autres ; leur appréciation clinique ne se réduit pas à un signe isolé."
+        ],
+        "explanation": "Les fonctions nerveuses, respiratoires et circulatoires sont interdépendantes. Une défaillance peut retentir sur les autres ; leur appréciation clinique ne se réduit pas à un signe isolé."
+      }
+    ],
+    "course": "Les étapes de la vie",
+    "ue": "B1",
+    "kind": "QCM"
+  }
+]

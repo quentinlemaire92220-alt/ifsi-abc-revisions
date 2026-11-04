@@ -2753,5 +2753,79 @@
     "localAudio": "./assets/audio/sante-mondiale-20261103/UE_C1_1_S1_Sante_mondiale_sante_France_Vocal_06.mp3",
     "durationSeconds": 316.197333,
     "syntheticSpeech": true
+  },
+  {
+    "id": "etapes_vie_vocal_01",
+    "courseId": "etapes_de_la_vie",
+    "course": "Les étapes de la vie",
+    "ue": "S1 B1",
+    "number": 1,
+    "title": "1/4 — Grossesse et préparation de la naissance",
+    "mime": "audio/mpeg",
+    "driveId": "1lgX4070HRWvYAqTCywdGI6QxS6HtfJwx",
+    "url": "https://drive.google.com/file/d/1lgX4070HRWvYAqTCywdGI6QxS6HtfJwx/view?usp=drivesdk",
+    "localAudio": "./assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_01_Grossesse_preparation_naissance.mp3",
+    "durationSeconds": 616.222667,
+    "syntheticSpeech": true,
+    "durationException": {
+      "status": "owner_accepted",
+      "approvedAt": "2026-11-04T15:10:39.336427+00:00",
+      "reason": "Objectif autour de dix minutes ; durée réelle annoncée puis écoute et publication explicitement validées.",
+      "vocalId": "etapes_vie_vocal_01",
+      "courseId": "etapes_de_la_vie",
+      "durationSeconds": 616.222667,
+      "sha256": "f4d04818e878067278d020b3696311351a3bcbe38938100f6221f645b110edb7"
+    }
+  },
+  {
+    "id": "etapes_vie_vocal_02",
+    "courseId": "etapes_de_la_vie",
+    "course": "Les étapes de la vie",
+    "ue": "S1 B1",
+    "number": 2,
+    "title": "2/4 — Naissance, nouveau-né et enfant",
+    "mime": "audio/mpeg",
+    "driveId": "1M4fszuVEEiN9eU8wpeiUsgGajRTVHKtH",
+    "url": "https://drive.google.com/file/d/1M4fszuVEEiN9eU8wpeiUsgGajRTVHKtH/view?usp=drivesdk",
+    "localAudio": "./assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_02_Naissance_nouveau_ne_enfant.mp3",
+    "durationSeconds": 566.073333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "etapes_vie_vocal_03",
+    "courseId": "etapes_de_la_vie",
+    "course": "Les étapes de la vie",
+    "ue": "S1 B1",
+    "number": 3,
+    "title": "3/4 — Croissance et puberté",
+    "mime": "audio/mpeg",
+    "driveId": "1GjjnUxU7zLf_ujJ4TfzmAGKwue3fFDEc",
+    "url": "https://drive.google.com/file/d/1GjjnUxU7zLf_ujJ4TfzmAGKwue3fFDEc/view?usp=drivesdk",
+    "localAudio": "./assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_03_Croissance_puberte.mp3",
+    "durationSeconds": 609.377333,
+    "syntheticSpeech": true,
+    "durationException": {
+      "status": "owner_accepted",
+      "approvedAt": "2026-11-04T15:10:39.336427+00:00",
+      "reason": "Objectif autour de dix minutes ; durée réelle annoncée puis écoute et publication explicitement validées.",
+      "vocalId": "etapes_vie_vocal_03",
+      "courseId": "etapes_de_la_vie",
+      "durationSeconds": 609.377333,
+      "sha256": "6465e767eee08292bc3c253e8f4c3a3a599180cdf455df7b70195074bb78addc"
+    }
+  },
+  {
+    "id": "etapes_vie_vocal_04",
+    "courseId": "etapes_de_la_vie",
+    "course": "Les étapes de la vie",
+    "ue": "S1 B1",
+    "number": 4,
+    "title": "4/4 — Adolescence, âge adulte et vieillissement",
+    "mime": "audio/mpeg",
+    "driveId": "1KTJCYFKX6aoHGFuUZ8dEEjuzup_LK5NP",
+    "url": "https://drive.google.com/file/d/1KTJCYFKX6aoHGFuUZ8dEEjuzup_LK5NP/view?usp=drivesdk",
+    "localAudio": "./assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_04_Adolescence_adulte_vieillissement.mp3",
+    "durationSeconds": 508.497333,
+    "syntheticSpeech": true
   }
 ]

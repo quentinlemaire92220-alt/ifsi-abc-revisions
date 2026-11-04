@@ -7484,6 +7484,286 @@
         }
       ],
       "deliveryQuestionScope": "declared_parts"
+    },
+    {
+      "courseId": "etapes_de_la_vie",
+      "deliveryMode": "first_release",
+      "packFormat": "hybrid_v1",
+      "publicationHost": "github_pages",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "complete",
+      "provisional": false,
+      "driveFolderId": "18EP0LLBvYFO_KnHTmXkSrpLlWHOA428W",
+      "folders": {
+        "01": "1fa9A3sAXp078RXRgGW_2Wk_WrwJO1CMk",
+        "02": "14ND2Gsr0sB8idOCyg9LSC5iIiTPOBytu",
+        "03": "1o0mrdPmPoblQPkwCs12pvD2zH5bLZVGq",
+        "04": "18DK-7QKXzvnTYDLS6zB_yf12U50gBZr4",
+        "05": "1KIA2kGVClD32dzzH68qvpQkh9eb0YOV1",
+        "06": "1PuLcBUMS9A0KDkt0m5hPnpdnuIljjGiF",
+        "07": "1W_532thf6-UifnzaJh13T3CSfraYjT7b"
+      },
+      "sheetResourceId": "etapes_vie_fiche_hybride_20261104",
+      "sheetResourceIds": [
+        "etapes_vie_fiche_hybride_20261104"
+      ],
+      "qcmDriveId": "1iwLGf33ObTv8DnOJNUh0cW2iQEbEVlpU",
+      "flashcardDriveId": "1eKbmYwq7EBOvbML0SgDpjbYSzzJMU2hs",
+      "qcmBank": "data/course-banks/etapes_de_la_vie.json",
+      "qcmCount": 68,
+      "flashcardCount": 68,
+      "vocabularyCount": 66,
+      "vocabularyEntryIds": [
+        "etapes_vie_v001",
+        "etapes_vie_v002",
+        "etapes_vie_v003",
+        "etapes_vie_v004",
+        "etapes_vie_v005",
+        "etapes_vie_v006",
+        "etapes_vie_v007",
+        "etapes_vie_v008",
+        "etapes_vie_v009",
+        "etapes_vie_v010",
+        "etapes_vie_v011",
+        "etapes_vie_v012",
+        "etapes_vie_v013",
+        "etapes_vie_v014",
+        "etapes_vie_v015",
+        "etapes_vie_v016",
+        "etapes_vie_v017",
+        "etapes_vie_v018",
+        "etapes_vie_v019",
+        "etapes_vie_v020",
+        "etapes_vie_v021",
+        "etapes_vie_v022",
+        "etapes_vie_v023",
+        "etapes_vie_v024",
+        "etapes_vie_v025",
+        "etapes_vie_v026",
+        "etapes_vie_v027",
+        "etapes_vie_v028",
+        "etapes_vie_v029",
+        "etapes_vie_v030",
+        "etapes_vie_v031",
+        "etapes_vie_v032",
+        "etapes_vie_v033",
+        "etapes_vie_v034",
+        "etapes_vie_v035",
+        "etapes_vie_v036",
+        "etapes_vie_v037",
+        "etapes_vie_v038",
+        "etapes_vie_v039",
+        "etapes_vie_v040",
+        "etapes_vie_v041",
+        "etapes_vie_v042",
+        "etapes_vie_v043",
+        "etapes_vie_v044",
+        "etapes_vie_v045",
+        "etapes_vie_v046",
+        "etapes_vie_v047",
+        "etapes_vie_v048",
+        "etapes_vie_v049",
+        "etapes_vie_v050",
+        "etapes_vie_v051",
+        "etapes_vie_v052",
+        "etapes_vie_v053",
+        "etapes_vie_v054",
+        "etapes_vie_v055",
+        "etapes_vie_v056",
+        "etapes_vie_v057",
+        "etapes_vie_v058",
+        "etapes_vie_v059",
+        "etapes_vie_v060",
+        "etapes_vie_v061",
+        "etapes_vie_v062",
+        "etapes_vie_v063",
+        "etapes_vie_v064",
+        "etapes_vie_v065",
+        "etapes_vie_v066"
+      ],
+      "infographicResourceIds": [],
+      "vocals": [
+        "etapes_vie_vocal_01",
+        "etapes_vie_vocal_02",
+        "etapes_vie_vocal_03",
+        "etapes_vie_vocal_04"
+      ],
+      "requestedVocals": true,
+      "scriptsPreparedCount": 4,
+      "blockers": [],
+      "artifactSha256s": {
+        "1-F1dZHy4EjntP-C3D3nPze54Pe418-fx": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+        "1iwLGf33ObTv8DnOJNUh0cW2iQEbEVlpU": "4c03d8a3d38d90323492b000a1719959a52a05f9381f88a96a7e2ec68fbd3edc",
+        "1eKbmYwq7EBOvbML0SgDpjbYSzzJMU2hs": "d79503ccde2c8944329689c991a2eddb5ec395cadd2a45faafd8c72085fa0ea7",
+        "1lgX4070HRWvYAqTCywdGI6QxS6HtfJwx": "f4d04818e878067278d020b3696311351a3bcbe38938100f6221f645b110edb7",
+        "1M4fszuVEEiN9eU8wpeiUsgGajRTVHKtH": "801d9b86dca7191ea32c5e0783ae06ec96c8e9c64af1f71dbed25a5572252226",
+        "1GjjnUxU7zLf_ujJ4TfzmAGKwue3fFDEc": "6465e767eee08292bc3c253e8f4c3a3a599180cdf455df7b70195074bb78addc",
+        "1KTJCYFKX6aoHGFuUZ8dEEjuzup_LK5NP": "8048d0101d5acf2b8ec1248404b5767b17b4cad5394c0ccdccdf44a1a4c584e0",
+        "etapes_vie_sheet_20261104": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+        "etapes_vie_qcm_20261104": "4c03d8a3d38d90323492b000a1719959a52a05f9381f88a96a7e2ec68fbd3edc",
+        "etapes_vie_flashcards_20261104": "d79503ccde2c8944329689c991a2eddb5ec395cadd2a45faafd8c72085fa0ea7"
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "artifactId": "etapes_vie_sheet_20261104",
+          "path": "assets/etapes-vie-20261104/Etapes_vie_Fiche.pdf",
+          "sha256": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+          "bytes": 11256629,
+          "pageCount": 22
+        },
+        "qcm": {
+          "artifactId": "etapes_vie_qcm_20261104",
+          "path": "assets/etapes-vie-20261104/Etapes_vie_QCM_68.pdf",
+          "sha256": "4c03d8a3d38d90323492b000a1719959a52a05f9381f88a96a7e2ec68fbd3edc",
+          "bytes": 491211,
+          "pageCount": 29
+        },
+        "flashcards": {
+          "artifactId": "etapes_vie_flashcards_20261104",
+          "path": "assets/etapes-vie-20261104/Etapes_vie_Flashcards_68.pdf",
+          "sha256": "d79503ccde2c8944329689c991a2eddb5ec395cadd2a45faafd8c72085fa0ea7",
+          "bytes": 444460,
+          "pageCount": 24
+        }
+      },
+      "publicAudioArtifacts": [
+        {
+          "vocalId": "etapes_vie_vocal_01",
+          "artifactId": "etapes_vie_vocal_01",
+          "path": "assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_01_Grossesse_preparation_naissance.mp3",
+          "sha256": "f4d04818e878067278d020b3696311351a3bcbe38938100f6221f645b110edb7",
+          "bytes": 7395998,
+          "durationSeconds": 616.222667
+        },
+        {
+          "vocalId": "etapes_vie_vocal_02",
+          "artifactId": "etapes_vie_vocal_02",
+          "path": "assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_02_Naissance_nouveau_ne_enfant.mp3",
+          "sha256": "801d9b86dca7191ea32c5e0783ae06ec96c8e9c64af1f71dbed25a5572252226",
+          "bytes": 6794362,
+          "durationSeconds": 566.073333
+        },
+        {
+          "vocalId": "etapes_vie_vocal_03",
+          "artifactId": "etapes_vie_vocal_03",
+          "path": "assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_03_Croissance_puberte.mp3",
+          "sha256": "6465e767eee08292bc3c253e8f4c3a3a599180cdf455df7b70195074bb78addc",
+          "bytes": 7313905,
+          "durationSeconds": 609.377333
+        },
+        {
+          "vocalId": "etapes_vie_vocal_04",
+          "artifactId": "etapes_vie_vocal_04",
+          "path": "assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_04_Adolescence_adulte_vieillissement.mp3",
+          "sha256": "8048d0101d5acf2b8ec1248404b5767b17b4cad5394c0ccdccdf44a1a4c584e0",
+          "bytes": 6103456,
+          "durationSeconds": 508.497333
+        }
+      ],
+      "schematics": "embedded_only",
+      "schematicsJustification": "Quatre infographies anatomiques sont intégrées près des explications dans l’unique fiche.",
+      "embeddedFigureCount": 4,
+      "visualAudit": {
+        "status": "PASS",
+        "pdfSha256": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+        "expectedCount": 4,
+        "checkedCount": 4,
+        "pageCount": 22,
+        "pageSize": "A4"
+      },
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+        "expectedCount": 4,
+        "checkedCount": 4,
+        "pageCount": 22
+      },
+      "hybridCoverage": {
+        "expectedEssential": 151,
+        "coveredEssential": 151,
+        "prioritySourceReference": "Support officiel et précisions de la transcription complète ; matrice documentaire comparée et conservée en privé.",
+        "medicalReview": "approved",
+        "medicalReviewScope": "Documentary review accepted for publication; no independent clinical signoff.",
+        "readabilityReview": "approved"
+      },
+      "hybridVisualReview": {
+        "status": "approved",
+        "reference": "pharmacologie_v1.47_24_pages",
+        "pagesChecked": 22
+      },
+      "lexicon": {
+        "termCount": 66,
+        "textSelectable": true,
+        "checked": true,
+        "sourceSha256": "68c5333d558175e235afa56953685afcd0b9c1056756315e4f2a378c04b12056"
+      },
+      "sourceBasis": {
+        "kind": "official_support_and_transcriptions",
+        "nativeSupportAvailable": true,
+        "reconciled": true
+      },
+      "sourceAudit": {
+        "officialChecked": true,
+        "oralStatus": "complete",
+        "oralReviewBasis": "full_transcript_documentary_review",
+        "officialSupportPreservedPrivately": true,
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "externalResearchPerformed": true,
+        "disputedAssessmentPointsExcluded": true
+      },
+      "audioOwnerReview": {
+        "status": "owner_listening_accepted",
+        "privateEvidenceSha256": "a49f29c7486c62f41ce55d6fc96c79d9883de3bc683a571d52d5b64dadd5df0c",
+        "artifactSha256s": {
+          "etapes_vie_vocal_01": "f4d04818e878067278d020b3696311351a3bcbe38938100f6221f645b110edb7",
+          "etapes_vie_vocal_02": "801d9b86dca7191ea32c5e0783ae06ec96c8e9c64af1f71dbed25a5572252226",
+          "etapes_vie_vocal_03": "6465e767eee08292bc3c253e8f4c3a3a599180cdf455df7b70195074bb78addc",
+          "etapes_vie_vocal_04": "8048d0101d5acf2b8ec1248404b5767b17b4cad5394c0ccdccdf44a1a4c584e0"
+        }
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "pharmacologie_v1.47_24_pages",
+        "method": "manual_full_pdf_comparison_100_200_percent",
+        "reviewedAt": "2026-11-04T15:10:39.336427+00:00",
+        "reviewerDecision": "explicit_graphic_acceptance",
+        "pagesChecked": 22,
+        "criteria": {
+          "REVISION_TEXT_FIRST": "PASS",
+          "MEDICAL_ILLUSTRATION_REAL": "PASS",
+          "INTEGRATED_IN_CONTEXT": "PASS",
+          "ORIGINAL_LEGENDS_VERIFIED": "PASS",
+          "NO_DECORATIVE_BOX_SUBSTITUTION": "PASS",
+          "ALL_PAGES_CHECKED": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "etapes_vie_fiche_hybride_20261104": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0"
+        },
+        "reviewedImageSha256s": {},
+        "reviewedBoardSha256s": {}
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "4310d86b69457cd9ebbf339b91732469ee54cd574db6ab802cf661b6990832a0",
+        "privateEvidenceSha256": "cc6debe40201e68c15bcc9b8ec3cc7c5524a79e76b027cdfabbd7f74c8d81aec",
+        "reviewedAt": "2026-11-04T15:10:39.336427+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-11-04T15:10:39.336427+00:00",
+        "bundleSha256": "f58cd356e9a76aac443ba6285ed50ce7c30bbb7057fd68ca43dbf15468eb8086"
+      }
     }
   ],
   "supplementalResourceApprovals": [
