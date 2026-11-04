@@ -52,6 +52,10 @@ try{
  const sleep=ms=>new Promise(r=>setTimeout(r,ms));const until=async(fn,msg)=>{for(let i=0;i<250;i++){if(fn())return;await sleep(100)}throw Error(msg)};
  await until(()=>window.IFSI_V73?.getVocals?.().some(v=>v.courseId==='psychologie_sociale')&&window.IFSI_V741?.getRegistry?.(),'Application boot');
  const api=window.IFSI_V73,all=api.getVocals(),rows=all.filter(v=>v.courseId==='psychologie_sociale');if(rows.length!==18)throw Error('Expected 18 active audios');
+ // A controlled page may buffer the whole MP3. Probe byte ranges explicitly
+ // through the browser as well as testing real playback and seeking below.
+ const partial=await fetch(rows[0].localAudio,{headers:{Range:'bytes=0-1023'},cache:'no-store'});
+ if(partial.status!==206||(await partial.arrayBuffer()).byteLength!==1024)throw Error('HTTP byte range unavailable through controlled application');
  window.IFSI_V74.openCourse('Psychologie sociale');await sleep(200);
  if(document.querySelectorAll('#v74CourseDetail [data-vocal74]').length!==18)throw Error('Course page does not expose all 18 audio buttons');
  if(window.IFSI_V741.resourcesForCourse('psychologie_sociale').questions.length!==64)throw Error('Course questions lost');
@@ -65,7 +69,7 @@ try{
  document.getElementById('vocalPlaylistNext').click();await until(()=>api.getCurrentId()===rows[17].id&&audio.readyState>=2,'Next failed');
  audio.currentTime=12;await sleep(400);document.getElementById('vocalPlaylistPrev').click();await until(()=>api.getCurrentId()===other.id&&audio.readyState>=2,'Previous failed');
  document.getElementById('vocalPlaylistNext').click();await until(()=>api.getCurrentId()===rows[17].id&&audio.currentTime>=11,'Position not restored');
- audio.pause();return {status:'PASS',activeAudios:rows.length,downloadLinks:links,realPlayback:true,realEndedToOtherTheme:true,nextPreviousResume:true,otherTheme:other.course,phoneLockedTest:false};})()`;
+ audio.pause();return {status:'PASS',activeAudios:rows.length,downloadLinks:links,http206:true,realPlayback:true,realEndedToOtherTheme:true,nextPreviousResume:true,otherTheme:other.course,phoneLockedTest:false};})()`;
  const result=await cmd('Runtime.evaluate',{expression:expr,awaitPromise:true,userGesture:true,returnByValue:true});
  if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||result.exceptionDetails.text);
  assert.equal(result.result.value.status,'PASS');assert.ok(ranges.some(p=>p.includes('Psychologie_sociale_Vocal_01.mp3')),'No HTTP range request');console.log(JSON.stringify({...result.result.value,rangeRequests:ranges.length}));
