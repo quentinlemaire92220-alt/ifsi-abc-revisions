@@ -5,17 +5,20 @@ const NAV_ID='vPlanningNav';
 const K_PROMO='ifsiabc_planning_promo_v1';
 const K_WEEK='ifsiabc_planning_week_v1';
 const K_SUBGROUP='ifsiabc_planning_subgroup_v1';
+const K_TIER='ifsiabc_planning_tier_v1';
 const K_DAY='ifsiabc_planning_day_v1';
 const K_SNAPSHOT='ifsiabc_planning_snapshot_v1';
 const K_PENDING='ifsiabc_planning_changes_pending_v1';
-const UPDATED_AT='2026-10-23';
+const UPDATED_AT='2026-11-04';
 const SOURCE='CFDC - IFSI Antoine Béclère • Promotion 2026/2029 • Planning prévisionnel';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let promo=localStorage.getItem(K_PROMO)==='A'?'A':'B';
 let subgroup=localStorage.getItem(K_SUBGROUP)||'all';
+let tier=['1','2','3'].includes(localStorage.getItem(K_TIER))?localStorage.getItem(K_TIER):'all';
 function subgroupOptions(){return promo==='A'?['all','A1','A2']:['all','B1','B2']}
 function subgroupLabel(x){return x==='all'?'Tous':x}
 function validSubgroup(){if(!subgroupOptions().includes(subgroup)){subgroup='all';localStorage.setItem(K_SUBGROUP,subgroup)}}
+function validTier(){if(!['all','1','2','3'].includes(tier)){tier='all';localStorage.setItem(K_TIER,tier)}}
 
 const WEEKS=[
  {id:'S5',label:'S5',start:'2026-09-28',end:'2026-10-02',range:'28 sept. - 2 oct.',events:[
@@ -136,31 +139,467 @@ const WEEKS=[
   {date:'2026-10-30',start:'13:30',end:'16:30',promo:'A',groups:['A2'],groupLabel:'Groupe A2',ue:'UE D1.1 S1',type:'TD',title:'Analyse d’une situation relationnelle',room:'S3',teacher:'POULAIN Muriel',site:'IFSI ABC'},
   {date:'2026-10-30',start:'13:30',end:'16:30',promo:'B',groupLabel:'Promo B',ue:'UE A2.1 S1',type:'TD',title:'Les piliers éthiques',room:'S11',teacher:'',site:'IFSI ABC'}
  ]}
- ,{id:'S10',label:'S10',start:'2026-11-02',end:'2026-11-07',range:'2 - 6 nov.',events:[
-  {"date":"2026-11-02","start":"08:30","end":"12:30","promo":"all","groupLabel":"Promo entière","ue":"UE B1.3 S1","type":"CM","title":"Diarrhées infectieuses, hygiène, précautions standards et complémentaires","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"","site":"FAC KB"},
-  {"date":"2026-11-02","start":"13:30","end":"17:30","promo":"all","groupLabel":"Promo entière","ue":"UE B2.1.1 S1","type":"CM","title":"Psychologie du développement","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"KHATIR Nathalie","site":"FAC KB"},
-  {"date":"2026-11-03","start":"09:00","end":"12:00","promo":"all","groupLabel":"Promo entière","ue":"UE B1.1 S1","type":"CM","title":"Les étapes de la vie","room":"KB Faculté de médecine du Kremlin-Bicêtre","teacher":"PETIT Vanessa","site":"FAC KB"},
-  {"date":"2026-11-03","start":"13:30","end":"17:30","promo":"all","groupLabel":"Promo entière","ue":"UE C1.1 S1","type":"CM","title":"Déterminants de santé","room":"","teacher":"NOVELLI Sophie","site":"Lieu à confirmer","detail":"La salle n'est pas renseignée pour ce créneau sur la photo."},
-  {"date":"2026-11-04","start":"09:00","end":"09:45","promo":"A","groupLabel":"Promo A","ue":"UE B2.1.1 S1","type":"TD","title":"Présentation de la validation B2.1.1 S1","room":"S10","teacher":"SOARES Sonia","site":"IFSI ABC"},
-  {"date":"2026-11-04","start":"09:00","end":"09:45","promo":"B","groupLabel":"Promo B","ue":"UE B2.1.1 S1","type":"TD","title":"Présentation de la validation B2.1.1 S1","room":"S11","teacher":"POULAIN Muriel","site":"IFSI ABC"},
-  {"date":"2026-11-04","start":"09:45","end":"12:30","promo":"all","groupLabel":"Selon affectation de groupe","ue":"UE B2.1.1 S1","type":"TD","title":"TD1 : Préparation du temps 1 / mécanismes de défenses et stratégies de coping (temps 1/2)","room":"Salle selon groupe (à confirmer)","teacher":"","site":"IFSI ABC","detail":"Salles indiquées sur la photo : informatique, S10, S11, S12, S13, S2, S3, TP1, TP4 et TP5. Correspondance groupes/salles non précisée."},
-  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 1/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S10","teacher":"DIETRICH Anne","site":"IFSI ABC"},
-  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 2/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S11","teacher":"LEBRE Stéphanie","site":"IFSI ABC"},
-  {"date":"2026-11-04","start":"13:30","end":"17:00","promo":"all","groupLabel":"Groupe 3/3","ue":"UE E3.1 S1","type":"TD","title":"Recueil de données, présentation synthétique, méthodologie des objectifs","room":"S3","teacher":"POULAIN Muriel","site":"IFSI ABC"},
-  {"date":"2026-11-05","start":"09:00","end":"12:00","promo":"A","groupLabel":"Promo A","ue":"UE B3.1 S1","type":"TP","title":"Psychogestuelle","room":"S13 / S2 / S3 / TP4 / TP5 (selon groupe)","teacher":"DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia","site":"IFSI ABC","detail":"Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."},
-  {"date":"2026-11-05","start":"09:00","end":"10:00","promo":"B","groupLabel":"Promo B","ue":"UE 5.08 S1","type":"Asynchrone","title":"Réalisation des objectifs de stage","room":"Distanciel","teacher":"","site":"Distanciel"},
-  {"date":"2026-11-05","start":"10:00","end":"11:30","promo":"B","groupLabel":"Promo B","ue":"UE E3.1 S1","type":"TD","title":"Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)","room":"Site de Picpus (salle non indiquée)","teacher":"","site":"Lieu à confirmer"},
-  {"date":"2026-11-05","start":"13:00","end":"15:00","promo":"all","groupLabel":"Promo entière","ue":"UE B1.3 S1","type":"Asynchrone","title":"Mécanisme d’action des anti-infectieux (capsule sur E-campus)","room":"Distanciel","teacher":"","site":"Distanciel"},
-  {"date":"2026-11-05","start":"15:00","end":"17:00","promo":"all","groupLabel":"Promo entière","ue":"UE D4 S1","type":"Asynchrone","title":"Socle numérique en santé","room":"Distanciel","teacher":"","site":"Distanciel"},
-  {"date":"2026-11-06","start":"09:00","end":"10:00","promo":"A","groupLabel":"Promo A","ue":"UE 5.08 S1","type":"Asynchrone","title":"Réalisation des objectifs de stage","room":"Distanciel","teacher":"","site":"Distanciel"},
-  {"date":"2026-11-06","start":"09:00","end":"12:00","promo":"B","groupLabel":"Promo B","ue":"UE B3.1 S1","type":"TP","title":"Psychogestuelle","room":"S13 / S2 / S3 / TP4 / TP5 (selon groupe)","teacher":"DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia","site":"IFSI ABC","detail":"Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."},
-  {"date":"2026-11-06","start":"10:00","end":"11:30","promo":"A","groupLabel":"Promo A","ue":"UE E3.1 S1","type":"TD","title":"Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)","room":"Site de Picpus (salle non indiquée)","teacher":"","site":"Lieu à confirmer"},
-  {"date":"2026-11-06","start":"14:00","end":"16:00","promo":"A","groupLabel":"Promo A","ue":"UE B3.3 S1","type":"TD","title":"Douleurs chroniques chez les personnes âgées","room":"S10","teacher":"LEBRE Stéphanie","site":"IFSI ABC"},
-  {"date":"2026-11-06","start":"14:00","end":"16:00","promo":"B","groupLabel":"Promo B","ue":"UE B3.3 S1","type":"TD","title":"Douleurs chroniques chez les personnes âgées","room":"S11","teacher":"SOARES Sonia","site":"IFSI ABC"},
-  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 1/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S10","teacher":"DELABARRE Isabelle","site":"IFSI ABC"},
-  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 2/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S11","teacher":"DIETRICH Anne","site":"IFSI ABC"},
-  {"date":"2026-11-06","start":"16:00","end":"17:00","promo":"all","groupLabel":"Groupe 3/3","ue":"UE E3.1 S1","type":"TD","title":"Utilisation des cartes mécanographiques","room":"S3","teacher":"POULAIN Muriel","site":"IFSI ABC"}
- ]}
+ ,{
+ "id": "S10",
+ "label": "S10",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "range": "2 - 6 nov.",
+ "events": [
+  {
+   "date": "2026-11-02",
+   "start": "08:30",
+   "end": "12:30",
+   "promo": "all",
+   "groupLabel": "Promo entière",
+   "ue": "UE B1.3 S1",
+   "type": "CM",
+   "title": "Diarrhées infectieuses, hygiène, précautions standards et complémentaires",
+   "room": "KB Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-02",
+   "start": "13:30",
+   "end": "17:30",
+   "promo": "all",
+   "groupLabel": "Promo entière",
+   "ue": "UE B2.1.1 S1",
+   "type": "CM",
+   "title": "Psychologie du développement",
+   "room": "KB Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "KHATIR Nathalie",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-03",
+   "start": "09:00",
+   "end": "12:00",
+   "promo": "all",
+   "groupLabel": "Promo entière",
+   "ue": "UE B1.1 S1",
+   "type": "CM",
+   "title": "Les étapes de la vie",
+   "room": "KB Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "PETIT Vanessa",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-03",
+   "start": "13:30",
+   "end": "17:30",
+   "promo": "all",
+   "groupLabel": "Promo entière",
+   "ue": "UE C1.1 S1",
+   "type": "CM",
+   "title": "Déterminants de santé",
+   "room": "",
+   "teacher": "NOVELLI Sophie",
+   "site": "Lieu à confirmer",
+   "detail": "La salle n'est pas renseignée pour ce créneau sur la photo."
+  },
+  {
+   "date": "2026-11-04",
+   "start": "09:00",
+   "end": "09:45",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Présentation de la validation B2.1.1 S1",
+   "room": "S10",
+   "teacher": "SOARES Sonia",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-04",
+   "start": "09:00",
+   "end": "09:45",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Présentation de la validation B2.1.1 S1",
+   "room": "S11",
+   "teacher": "POULAIN Muriel",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-04",
+   "start": "09:45",
+   "end": "12:30",
+   "promo": "all",
+   "groupLabel": "Selon affectation de groupe",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "TD1 : Préparation du temps 1 / mécanismes de défenses et stratégies de coping (temps 1/2)",
+   "room": "Salle selon groupe (à confirmer)",
+   "teacher": "",
+   "site": "IFSI ABC",
+   "detail": "Salles indiquées sur la photo : informatique, S10, S11, S12, S13, S2, S3, TP1, TP4 et TP5. Correspondance groupes/salles non précisée."
+  },
+  {
+   "date": "2026-11-04",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "all",
+   "groupLabel": "Groupe 1/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Recueil de données, présentation synthétique, méthodologie des objectifs",
+   "room": "S10",
+   "teacher": "DIETRICH Anne",
+   "site": "IFSI ABC",
+   "tier": "1"
+  },
+  {
+   "date": "2026-11-04",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "all",
+   "groupLabel": "Groupe 2/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Recueil de données, présentation synthétique, méthodologie des objectifs",
+   "room": "S11",
+   "teacher": "LEBRE Stéphanie",
+   "site": "IFSI ABC",
+   "tier": "2"
+  },
+  {
+   "date": "2026-11-04",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "all",
+   "groupLabel": "Groupe 3/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Recueil de données, présentation synthétique, méthodologie des objectifs",
+   "room": "S3",
+   "teacher": "POULAIN Muriel",
+   "site": "IFSI ABC",
+   "tier": "3"
+  },
+  {
+   "date": "2026-11-05",
+   "start": "09:00",
+   "end": "12:00",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE B3.1 S1",
+   "type": "TP",
+   "title": "Psychogestuelle",
+   "room": "S13 / S2 / S3 / TP4 / TP5 (selon groupe)",
+   "teacher": "DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia",
+   "site": "IFSI ABC",
+   "detail": "Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."
+  },
+  {
+   "date": "2026-11-05",
+   "start": "09:00",
+   "end": "10:00",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE 5.08 S1",
+   "type": "Asynchrone",
+   "title": "Réalisation des objectifs de stage",
+   "room": "Distanciel",
+   "teacher": "",
+   "site": "Distanciel",
+   "detail": "À déposer sur Yikiforma dans le groupe de suivi pédagogique avant le 07/11 à 09:00."
+  },
+  {
+   "date": "2026-11-05",
+   "start": "10:00",
+   "end": "11:30",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)",
+   "room": "S6 Informatique",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-05",
+   "start": "13:30",
+   "end": "17:00",
+   "promo": "all",
+   "groupLabel": "Selon affectation de groupe",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Préparation des saynètes en groupe — temps 2/2",
+   "room": "Informatique • S12 • S13 • S2 • S3 • TP1 • TP4 • TP5 (selon groupe)",
+   "teacher": "",
+   "site": "IFSI ABC",
+   "detail": "Répartition individuelle des salles à consulter sur place."
+  },
+  {
+   "date": "2026-11-06",
+   "start": "09:00",
+   "end": "10:00",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE 5.08 S1",
+   "type": "Asynchrone",
+   "title": "Réalisation des objectifs de stage",
+   "room": "Distanciel",
+   "teacher": "",
+   "site": "Distanciel",
+   "detail": "À déposer sur Yikiforma dans le groupe de suivi pédagogique avant le 07/11 à 09:00."
+  },
+  {
+   "date": "2026-11-06",
+   "start": "09:00",
+   "end": "12:00",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE B3.1 S1",
+   "type": "TP",
+   "title": "Psychogestuelle",
+   "room": "S13 / S2 / S3 / TP4 / TP5 (selon groupe)",
+   "teacher": "DELABARRE Isabelle • DIETRICH Anne • LEBRE Stéphanie • POULAIN Muriel • SOARES Sonia",
+   "site": "IFSI ABC",
+   "detail": "Répartition entre les cinq salles et formatrices selon l'affectation locale ; non détaillée par sous-groupe dans la photo."
+  },
+  {
+   "date": "2026-11-06",
+   "start": "10:00",
+   "end": "11:30",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Recherche documentaire, typologie des documents, données probantes (sur le site de Picpus)",
+   "room": "S10",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-06",
+   "start": "14:00",
+   "end": "16:00",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE B3.3 S1",
+   "type": "TD",
+   "title": "Douleurs chroniques chez les personnes âgées",
+   "room": "S10",
+   "teacher": "LEBRE Stéphanie",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-06",
+   "start": "14:00",
+   "end": "16:00",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE B3.3 S1",
+   "type": "TD",
+   "title": "Douleurs chroniques chez les personnes âgées",
+   "room": "S11",
+   "teacher": "SOARES Sonia",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-06",
+   "start": "16:00",
+   "end": "17:00",
+   "promo": "all",
+   "groupLabel": "Groupe 1/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Utilisation des cartes mécanographiques",
+   "room": "S10",
+   "teacher": "DELABARRE Isabelle",
+   "site": "IFSI ABC",
+   "tier": "1"
+  },
+  {
+   "date": "2026-11-06",
+   "start": "16:00",
+   "end": "17:00",
+   "promo": "all",
+   "groupLabel": "Groupe 2/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Utilisation des cartes mécanographiques",
+   "room": "S11",
+   "teacher": "DIETRICH Anne",
+   "site": "IFSI ABC",
+   "tier": "2"
+  },
+  {
+   "date": "2026-11-06",
+   "start": "16:00",
+   "end": "17:00",
+   "promo": "all",
+   "groupLabel": "Groupe 3/3",
+   "ue": "UE E3.1 S1",
+   "type": "TD",
+   "title": "Utilisation des cartes mécanographiques",
+   "room": "S3",
+   "teacher": "POULAIN Muriel",
+   "site": "IFSI ABC",
+   "tier": "3"
+  }
+ ]
+}
+ ,{
+ "id": "S11",
+ "label": "S11",
+ "start": "2026-11-09",
+ "end": "2026-11-14",
+ "range": "9 - 13 nov.",
+ "events": [
+  {
+   "date": "2026-11-09",
+   "start": "08:30",
+   "end": "12:30",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "UE C1.1 S1",
+   "type": "CM",
+   "title": "Prévention et promotion de la santé",
+   "room": "Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-09",
+   "start": "13:30",
+   "end": "17:30",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "UE B1.3 S1",
+   "type": "CM",
+   "title": "IAS, AES, vaccins, prévention de l’antibiorésistance",
+   "room": "Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-10",
+   "start": "09:30",
+   "end": "12:30",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "UE B2.1.1 S1",
+   "type": "CM",
+   "title": "Psychologie du développement",
+   "room": "Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-10",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "UE B2.1.1 S1",
+   "type": "CM",
+   "title": "Psychologie du développement",
+   "room": "Faculté de médecine du Kremlin-Bicêtre",
+   "teacher": "",
+   "site": "FAC KB"
+  },
+  {
+   "date": "2026-11-11",
+   "start": "00:00",
+   "end": "23:59",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "",
+   "type": "Férié",
+   "title": "Armistice 1918 — jour férié",
+   "room": "",
+   "teacher": "",
+   "site": "Férié"
+  },
+  {
+   "date": "2026-11-12",
+   "start": "09:30",
+   "end": "12:30",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Mécanismes de défense et stratégies de coping",
+   "room": "S10",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-12",
+   "start": "09:30",
+   "end": "12:30",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE Stage S1",
+   "type": "TD",
+   "title": "Simulation J4 — Accueil en stage",
+   "room": "S3 • TP4 (selon groupe)",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-12",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "A",
+   "groupLabel": "Promo A",
+   "ue": "UE Stage S1",
+   "type": "TD",
+   "title": "Simulation J4 — Accueil en stage",
+   "room": "S13 • S3 • TP4 (selon groupe)",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-12",
+   "start": "13:30",
+   "end": "16:30",
+   "promo": "B",
+   "groupLabel": "Promo B",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Mécanismes de défense et stratégies de coping",
+   "room": "S10",
+   "teacher": "",
+   "site": "IFSI ABC"
+  },
+  {
+   "date": "2026-11-13",
+   "start": "09:00",
+   "end": "12:00",
+   "promo": "all",
+   "groupLabel": "Promotion entière",
+   "ue": "UE B2.1.1 S1",
+   "type": "TD",
+   "title": "Préparation à la validation",
+   "room": "Amphi ABC / amphithéâtre Faculté (libellé à confirmer)",
+   "teacher": "DELABARRE Isabelle • SOARES Sonia",
+   "site": "Lieu à confirmer"
+  },
+  {
+   "date": "2026-11-13",
+   "start": "13:30",
+   "end": "17:00",
+   "promo": "all",
+   "groupLabel": "Groupes de suivi AD / ID / LBN / MP / SL / SSO",
+   "ue": "UE Stage S1",
+   "type": "TD",
+   "title": "Préparation de stage : objectifs personnels, bilan de compétences, planning, portfolio, AES, CAT si maladie et réseaux sociaux",
+   "room": "Selon groupe de suivi pédagogique",
+   "teacher": "DELABARRE Isabelle • BOURRIGAN Lucille • POULAIN Muriel • SOARES Sonia • autres référents selon groupe",
+   "site": "IFSI ABC",
+   "detail": "Salles manuscrites : AD → S2 ; ID → S3 ; LBN → S11 ; MP → S10 ; SL → S13 ; SSO → S4. Affectation individuelle à confirmer."
+  }
+ ]
+}
 ]; 
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
@@ -210,10 +649,10 @@ function css(){
  `;document.head.appendChild(s)
 }
 function frDate(iso,opts={weekday:'long',day:'numeric',month:'long'}){const [y,m,d]=iso.split('-').map(Number);return new Intl.DateTimeFormat('fr-FR',opts).format(new Date(y,m-1,d,12))}
-function kind(type){const t=String(type||'').toUpperCase();if(t.startsWith('TD'))return'TD';if(t.startsWith('TP'))return'TP';if(t.includes('ASYN'))return'ASYNC';if(t==='INFO')return'INFO';return'CM'}
+function kind(type){const t=String(type||'').toUpperCase();if(t==='FÉRIÉ')return'FERIE';if(t.startsWith('TD'))return'TD';if(t.startsWith('TP'))return'TP';if(t.includes('ASYN'))return'ASYNC';if(t==='INFO')return'INFO';return'CM'}
 function typeClass(type){const k=kind(type);return k==='TD'?'td':k==='TP'?'tp':k==='ASYNC'?'async':k==='INFO'?'info':''}
-function eventVisible(e){if(!(e.promo==='all'||e.promo===promo))return false;if(subgroup==='all')return true;return !Array.isArray(e.groups)||!e.groups.length||e.groups.includes(subgroup)}
-function eventsFor(w,date){validSubgroup();return w.events.filter(e=>e.date===date&&eventVisible(e)).sort((a,b)=>a.start.localeCompare(b.start))}
+function eventVisible(e){if(!(e.promo==='all'||e.promo===promo))return false;if(subgroup!=='all'&&Array.isArray(e.groups)&&e.groups.length&&!e.groups.includes(subgroup))return false;if(tier!=='all'&&e.tier&&e.tier!==tier)return false;return true}
+function eventsFor(w,date){validSubgroup();validTier();return w.events.filter(e=>e.date===date&&eventVisible(e)).sort((a,b)=>a.start.localeCompare(b.start))}
 function eventSite(e){
  if(e.site)return e.site;
  const r=String(e.room||'').toLowerCase();
@@ -228,7 +667,7 @@ function siteForEvents(es){
 function daySite(w,date){return siteForEvents(eventsFor(w,date))}
 function sitePill(site){
  if(!site)return '';
- const cls=site==='FAC KB'?'fac':site==='IFSI ABC'?'ifsi':site==='Distanciel'?'dist':'mix';
+ const cls=site==='FAC KB'?'fac':site==='IFSI ABC'?'ifsi':site==='Distanciel'||site==='Férié'?'dist':'mix';
  return `<span class="vp-site-pill ${cls}">${esc(site)}</span>`
 }
 function registryCourse(id){return (window.IFSI_V741?.getRegistry?.()?.courses||[]).find(c=>c.id===id)||null}
@@ -260,15 +699,15 @@ function todaySummary(){
  const rows=[...current.map(e=>agendaRow(e,'live')),...next.map(e=>agendaRow(e,'next'))];
  const label=frDate(today,{weekday:'short',day:'numeric',month:'short',year:'numeric'}),empty=dayEvents.length?'Les cours d’aujourd’hui sont terminés.':'Aucun cours aujourd’hui.',site=siteForEvents(dayEvents);
  const currentWeek=weekForDate(today),weekLabel=currentWeek?` · ${currentWeek.label}`:'';
- const audience=`Promo ${promo}${subgroup==='all'?' · Tous groupes':` · Groupe ${subgroup}`}`;
+ const audience=`Promo ${promo}${subgroup==='all'?' · Tous groupes':` · Groupe ${subgroup}`}${tier==='all'?'':' · Tiers '+tier}`;
  return `<div class="vp-card"><div class="vp-today-title">📅 Aujourd’hui — ${esc(label)}${esc(weekLabel)} ${sitePill(site)}</div><div class="vp-date">${esc(audience)} · Indépendant de la semaine consultée</div><div class="vp-agenda">${rows.length?rows.join(''):`<div class="vp-empty">${empty}</div>`}</div></div>`
 }
 function snapshot(){
  const out={};
- for(const e of WEEKS.flatMap(w=>w.events)){const k=[e.date,e.start,e.promo,(e.groups||[]).join(','),e.ue||'',e.title].join('|');out[k]={start:e.start,end:e.end,room:e.room||'',type:e.type||''}}
+ for(const e of WEEKS.flatMap(w=>w.events)){const k=[e.date,e.start,e.promo,(e.groups||[]).join(','),e.tier||'',e.groupLabel||'',e.ue||'',e.title].join('|');out[k]={start:e.start,end:e.end,room:e.room||'',type:e.type||''}}
  return out
 }
-function changeLabel(key,obj){const [date,start,,,ue,title]=key.split('|');return `${frDate(date,{weekday:'short',day:'numeric',month:'short'})} • ${ue?ue+' • ':''}${title}${start?' • '+start:''}`}
+function changeLabel(key,obj){const [date,start,,,,,ue,title]=key.split('|');return `${frDate(date,{weekday:'short',day:'numeric',month:'short'})} • ${ue?ue+' • ':''}${title}${start?' • '+start:''}`}
 function reconcilePlanningChanges(){
  const cur=snapshot(),raw=localStorage.getItem(K_SNAPSHOT);
  if(raw){try{const old=JSON.parse(raw),added=[],removed=[],modified=[];for(const [k,v] of Object.entries(cur)){if(!old[k])added.push(changeLabel(k,v));else if(JSON.stringify(old[k])!==JSON.stringify(v))modified.push(changeLabel(k,v))}for(const [k,v] of Object.entries(old))if(!cur[k])removed.push(changeLabel(k,v));if(added.length||removed.length||modified.length)localStorage.setItem(K_PENDING,JSON.stringify({added,removed,modified,at:UPDATED_AT}))}catch{}}
@@ -282,7 +721,8 @@ function changesCard(){
 }
 function weekDates(w){const [y,m,d]=w.start.split('-').map(Number),base=new Date(y,m-1,d,12);return Array.from({length:5},(_,i)=>{const x=new Date(base);x.setDate(base.getDate()+i);const p=n=>String(n).padStart(2,'0');return x.getFullYear()+'-'+p(x.getMonth()+1)+'-'+p(x.getDate())})}
 function weekSource(w){
- if(w.id==='S10')return {chip:'S10 · photo du planning IFSI · saisie 23/10/2026',detail:'S10 saisie depuis la photo du planning affiché à l’IFSI, semaine civile 45. Affectations de salles à confirmer pour le TD coping, la psychogestuelle et certains cours sans salle précisée. Planning prévisionnel.',ics:'S10 photo du planning IFSI, transcrite le 23/10/2026'};
+ if(w.id==='S11')return {chip:'S11 · photo IFSI semaine civile 46 · MAJ 04/11/2026',detail:'S11 transcrite de la photo affichée à l’IFSI (éditée le 28/10), avec corrections manuscrites. Séance barrée du 12/11 non reprise. Salles de certains groupes à confirmer.',ics:'S11 photo planning IFSI semaine civile 46, contrôlée le 04/11/2026'};
+ if(w.id==='S10')return {chip:'S10 · photo IFSI semaine civile 45 · MAJ 04/11/2026',detail:'S10 rectifiée avec la photo affichée à l’IFSI. Préparation des saynètes le jeudi après-midi, tiers 1/2/3 le mercredi et vendredi. Vérifier les salles non détaillées.',ics:'S10 photo planning IFSI semaine civile 45, rectifiée le 04/11/2026'};
  if(w.id==='S9')return {chip:'S9 · photo du planning IFSI · MAJ 20/10/2026',detail:'S9 saisie à partir de la photo du planning affiché à l’IFSI (datée du 19/10). Horaires, groupes et salles recopiés ; salle des organes des sens non précisée sur la source. Planning prévisionnel.',ics:'S9 photo du planning IFSI, transcrite le 20/10/2026'};
  if(w.id==='S8')return {chip:'S8 · site promo officiel + contrôle FAC · MAJ 11/10/2026',detail:'S8 recroisée avec le site officiel de la promo et le planning CM FAC. Divergence le 22/10 matin : site promo = Laura CHEVREAU, PDF FAC = Timothy JAMES ; l’app suit le site promo.',ics:'S8 site officiel promo, contrôlée avec planning CM FAC'};
  if(w.id==='S7')return {chip:'Prévisionnel · S7 saisie depuis photo · MAJ 07/10/2026',detail:'S7 saisie à partir de la photo du planning. Une modification communiquée par l’IFSI reste prioritaire.',ics:'S7 saisie depuis photo du planning prévisionnel'};
@@ -292,7 +732,7 @@ function defaultOpenDay(w){const dates=weekDates(w),today=todayISO();return date
 function openDayFor(w){const saved=localStorage.getItem(K_DAY);if(saved===`none:${w.id}`)return '';return weekDates(w).includes(saved)?saved:defaultOpenDay(w)}
 function weekCard(w){
  const t=todayISO(),openDay=openDayFor(w),source=weekSource(w);
- return `<div class="vp-card"><div class="vp-week-head"><div><div class="vp-week-title">📅 ${esc(w.label)} · ${esc(w.range)} · Promo ${promo}</div>${subgroup!=='all'?`<div class="vp-date">Sous-groupe ${esc(subgroup)}</div>`:''}</div><span class="vp-sourcechip">ⓘ ${esc(source.chip)}</span></div>
+ return `<div class="vp-card"><div class="vp-week-head"><div><div class="vp-week-title">📅 ${esc(w.label)} · ${esc(w.range)} · Promo ${promo}</div>${(subgroup!=='all'||tier!=='all')?`<div class="vp-date">${subgroup!=='all'?'Sous-groupe '+esc(subgroup):''}${subgroup!=='all'&&tier!=='all'?' · ':''}${tier!=='all'?'Tiers '+esc(tier):''}</div>`:''}</div><span class="vp-sourcechip">ⓘ ${esc(source.chip)}</span></div>
  <div class="vp-days">${weekDates(w).map(date=>{const es=eventsFor(w,date),open=date===openDay,today=date===t;return `<section class="vp-day ${open?'open':''}" data-vday-wrap="${date}"><button type="button" class="vp-day-toggle" data-vday="${date}" aria-expanded="${open}"><span class="vp-chevron">›</span><span class="vp-day-name">${esc(frDate(date,{weekday:'short',day:'numeric',month:'long'}))}</span>${sitePill(daySite(w,date))}${today?'<span class="vp-today-dot">AUJ.</span>':'<span></span>'}<span class="vp-day-count">${es.length} cours</span></button><div class="vp-day-body">${es.length?es.map(eventCard).join(''):'<div class="vp-empty">Aucun cours pour ce filtre.</div>'}</div></section>`}).join('')}</div>
  <div class="vp-week-foot"><div class="vp-source">${esc(source.detail)}</div><button id="vpExportIcs" class="btn outline vp-export">📅 Exporter ${esc(w.label)} (.ics)</button></div></div>`
 }
@@ -300,15 +740,15 @@ function icsEscape(s){return String(s??'').replace(/\\/g,'\\\\').replace(/\n/g,'
 function icsStamp(date,time){return date.replaceAll('-','')+'T'+time.replace(':','')+'00'}
 function exportIcs(){
  const w=WEEKS.find(x=>x.id===selectedWeek);if(!w)return;
- validSubgroup();const es=w.events.filter(e=>eventVisible(e)&&e.type!=='Annulé'),source=weekSource(w);
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//IFSI ABC Révisions//Planning Promo//FR','CALSCALE:GREGORIAN','X-WR-CALNAME:IFSI Promo '+promo+' '+w.id,'X-WR-TIMEZONE:Europe/Paris'];
- es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+source.ics].filter(Boolean).join('\n')),'END:VEVENT')});
+ validSubgroup();validTier();const es=w.events.filter(e=>eventVisible(e)&&e.type!=='Annulé'&&e.type!=='Férié'),source=weekSource(w);
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//IFSI ABC Révisions//Planning Promo//FR','CALSCALE:GREGORIAN','X-WR-CALNAME:IFSI Promo '+promo+' '+w.id+(tier==='all'?'':' Tiers '+tier),'X-WR-TIMEZONE:Europe/Paris'];
+ es.forEach((e,i)=>{lines.push('BEGIN:VEVENT','UID:ifsi-'+w.id+'-'+promo+'-'+e.date+'-'+e.start.replace(':','')+'-'+i+'@ifsi-abc','DTSTART;TZID=Europe/Paris:'+icsStamp(e.date,e.start),'DTEND;TZID=Europe/Paris:'+icsStamp(e.date,e.end),'SUMMARY:'+icsEscape((e.ue?e.ue+' - ':'')+e.type+' : '+e.title),'LOCATION:'+icsEscape(e.room||''),'DESCRIPTION:'+icsEscape([e.groupLabel&&'Groupe : '+e.groupLabel,e.detail,e.teacher&&'Intervenant : '+e.teacher,'Source : '+source.ics].filter(Boolean).join('\n')),'END:VEVENT')});
  lines.push('END:VCALENDAR');
- const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='IFSI_'+w.id+'_Promo_'+promo+(subgroup!=='all'?'_'+subgroup:'')+'.ics';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)
+ const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='IFSI_'+w.id+'_Promo_'+promo+(subgroup!=='all'?'_'+subgroup:'')+(tier!=='all'?'_tiers_'+tier:'')+'.ics';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)
 }
 function toolbar(){
  validSubgroup();
- return `<div class="vp-toolbar"><div class="vp-control-row"><span class="vp-control-icon">👥</span><div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div><div class="vp-control-row"><span class="vp-control-icon">📅</span><div class="vp-segment vp-week-segment" role="group" aria-label="Choisir la semaine">${WEEKS.map(x=>`<button type="button" class="${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label}</button>`).join('')}</div></div><div class="vp-subgroups"><span class="vp-subgroup-label">Sous-groupe</span>${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div></div>`
+ validTier();return `<div class="vp-toolbar"><div class="vp-control-row"><span class="vp-control-icon">👥</span><div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div><div class="vp-control-row"><span class="vp-control-icon">📅</span><div class="vp-segment vp-week-segment" role="group" aria-label="Choisir la semaine">${WEEKS.map(x=>`<button type="button" class="${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label}</button>`).join('')}</div></div><div class="vp-subgroups"><span class="vp-subgroup-label">Sous-groupe</span>${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div><div class="vp-subgroups"><span class="vp-subgroup-label">Tiers de promotion</span>${['all','1','2','3'].map(x=>`<button type="button" class="vp-subgroup ${tier===x?'on':''}" data-vtier="${x}">${x==='all'?'Tous':'Tiers '+x}</button>`).join('')}</div></div>`
 }
 function render(){
  const sec=$(SECTION);if(!sec)return;
@@ -316,6 +756,7 @@ function render(){
  sec.innerHTML=toolbar()+changesCard()+todaySummary()+weekCard(w);
  sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;subgroup='all';localStorage.setItem(K_PROMO,promo);localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vsubgroup]').forEach(b=>b.onclick=()=>{subgroup=b.dataset.vsubgroup;localStorage.setItem(K_SUBGROUP,subgroup);render()});
+ sec.querySelectorAll('[data-vtier]').forEach(b=>b.onclick=()=>{tier=b.dataset.vtier;localStorage.setItem(K_TIER,tier);render()});
  sec.querySelectorAll('[data-vweek]').forEach(b=>b.onclick=()=>{selectedWeek=b.dataset.vweek;localStorage.setItem(K_WEEK,selectedWeek);localStorage.setItem(K_DAY,defaultOpenDay(WEEKS.find(x=>x.id===selectedWeek)));render()});
  sec.querySelectorAll('[data-vday]').forEach(b=>b.onclick=()=>{const d=b.dataset.vday,wrap=sec.querySelector('[data-vday-wrap="'+d+'"]'),isOpen=wrap?.classList.contains('open');localStorage.setItem(K_DAY,isOpen?`none:${selectedWeek}`:d);render()});
  $('vpExportIcs')?.addEventListener('click',exportIcs);
@@ -328,5 +769,5 @@ function showPlanning(){if(!addSection())return;document.querySelectorAll('.app>
 function addNav(){const nav=$('v87Nav');if(!nav)return false;nav.classList.add('vplanning-nav');nav.style.gridTemplateColumns='repeat('+(window.IFSI_APP_FEATURES?.pathologies===true?7:6)+',minmax(0,1fr))';let b=$(NAV_ID);if(!b){b=document.createElement('button');b.id=NAV_ID;b.innerHTML='<span>🗓️</span>Planning';const home=$('v87Home');home?.insertAdjacentElement('afterend',b);b.onclick=showPlanning}if(!nav.dataset.planningBound){nav.dataset.planningBound='1';nav.addEventListener('click',e=>{const hit=e.target.closest('button');if(hit&&hit.id!==NAV_ID)hidePlanning()},true)}return true}
 function init(){css();reconcilePlanningChanges();const a=addSection(),b=addNav();return a&&b}
 let tries=0;const t=setInterval(()=>{tries++;if(init()||tries>240)clearInterval(t)},100);
-window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.5',updatedAt:UPDATED_AT};
+window.IFSI_PLANNING={show:showPlanning,render,weeks:WEEKS,version:'1.6',updatedAt:UPDATED_AT};
 })();
