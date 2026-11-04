@@ -29,6 +29,20 @@ try{
  ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p?.reject(Error(m.error.message)):p?.resolve(m.result)}};
  const cmd=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))});
  await cmd('Page.navigate',{url:'http://127.0.0.1:'+server.address().port+'/'});
+ // First installation claims the page and reloads it. Wait for the controlled
+ // application to settle before running an uninterrupted playback scenario.
+ let stable=0;
+ for(let i=0;i<900&&stable<10;i++){
+  try{
+   const ready=await cmd('Runtime.evaluate',{expression:"document.readyState==='complete'&&!!navigator.serviceWorker.controller&&!!window.IFSI_V73?.getVocals?.().length&&!!window.IFSI_V741?.getRegistry?.()",returnByValue:true});
+   stable=ready.result?.value===true?stable+1:0;
+  }catch(error){
+   if(!/navigated or closed|context.*(?:destroyed|not found)|Cannot find context/i.test(error.message))throw error;
+   stable=0;
+  }
+  await pause(100);
+ }
+ assert.equal(stable,10,'Controlled application did not settle after service worker installation');
  const expr=`(async()=>{
  const sleep=ms=>new Promise(r=>setTimeout(r,ms));const until=async(fn,msg)=>{for(let i=0;i<250;i++){if(fn())return;await sleep(100)}throw Error(msg)};
  await until(()=>window.IFSI_V73?.getVocals?.().some(v=>v.courseId==='psychologie_sociale')&&window.IFSI_V741?.getRegistry?.(),'Application boot');
