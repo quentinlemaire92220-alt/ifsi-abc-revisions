@@ -13,7 +13,7 @@ assert.equal(oldS9.events.length,18,'Ne pas modifier S9');
 assert.ok(week,'S10 doit être présente');
 assert.equal(week.start,'2026-11-02');
 assert.equal(week.end,'2026-11-07');
-assert.equal(week.events.length,23);
+assert.equal(week.events.length,22);
 assert.ok(week.events.every(e=>e.date>='2026-11-02'&&e.date<='2026-11-06'),'Pas de séance inventée le week-end');
 const pick=(date,promo,title)=>week.events.filter(e=>e.date===date&&e.promo===promo&&e.title.includes(title));
 for(const [promo,room,teacher] of [['A','S10','SOARES Sonia'],['B','S11','POULAIN Muriel']]){
@@ -27,6 +27,7 @@ for(const [d,title,rooms] of [['2026-11-04','Recueil de données',['S10','S11','
  const e=pick(d,'all',title);assert.equal(e.length,3);
  assert.deepEqual(Array.from(e,x=>x.room),rooms);
  assert.deepEqual(Array.from(e,x=>x.groupLabel),['Groupe 1/3','Groupe 2/3','Groupe 3/3']);
+ assert.deepEqual(Array.from(e,x=>x.tier),['1','2','3']);
 }
 for(const [day,promo] of [['2026-11-05','A'],['2026-11-06','B']]){
  assert.equal(pick(day,promo,'Psychogestuelle').length,1);
@@ -35,7 +36,10 @@ for(const [day,promo] of [['2026-11-05','B'],['2026-11-06','A']]){
  const e=pick(day,promo,'objectifs de stage');assert.equal(e.length,1);assert.equal(e[0].type,'Asynchrone');
 }
 const asym=week.events.filter(e=>e.type==='Asynchrone');
-assert.equal(asym.length,4,'Stage A/B, anti-infectieux, socle numérique');
+assert.equal(asym.length,2,'Seuls les objectifs de stage A/B restent asynchrones dans la source corrigée');
+const saynettes=pick('2026-11-05','all','saynètes');
+assert.equal(saynettes.length,1);assert.equal(saynettes[0].start,'13:30');assert.equal(saynettes[0].end,'17:00');
+assert.ok(!week.events.some(e=>e.date==='2026-11-05'&&/anti-infectieux|socle numérique/i.test(e.title)));
 for(const p of ['A','B'])assert.equal(pick('2026-11-06',p,'Douleurs chroniques').length,1);
 assert.ok(source.includes("if(w.id==='S10')return"),'Provenance S10 attendue');
-console.log('✅ Planning S10 : 23 créneaux, salles séparées, sous-groupes 1/3, asynchrones et provenance OK');
+console.log('✅ Planning S10 corrigé : 22 créneaux, salles séparées, tiers 1/2/3, saynètes et provenance OK');

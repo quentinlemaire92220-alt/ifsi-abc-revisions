@@ -331,6 +331,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: node tests/planning-week-10.mjs
 
+      - name: TNR planning S45/S46 et filtre tiers de promotion
+        if: ${{ !cancelled() }}
+        run: node tests/planning-s45-s46-tiers.mjs
+
       - name: Régression UX et cohérence release
         if: ${{ !cancelled() }}
         run: node tests/ux-regression.mjs
