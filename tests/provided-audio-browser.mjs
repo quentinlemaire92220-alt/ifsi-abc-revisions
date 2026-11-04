@@ -17,7 +17,11 @@ const server=http.createServer((req,res)=>{
  res.writeHead(200,{'Content-Type':mime,'Content-Length':size,'Cache-Control':'no-store','Accept-Ranges':'bytes'});fs.createReadStream(p).pipe(res);
 });
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
-const profile=fs.mkdtempSync(path.join(os.tmpdir(),'ifsi-audio-'));
+// Chromium's service-worker database needs a short profile path on Windows.
+// The test runner's nested log directory can exceed the native path limit.
+const profileRoot=process.platform==='win32'&&process.env.LOCALAPPDATA
+ ?path.join(process.env.LOCALAPPDATA,'Temp'):os.tmpdir();
+const profile=fs.mkdtempSync(path.join(profileRoot,'ifsi-audio-'));
 const bins=[process.env.CHROME_BIN,'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'];
 const chrome=bins.find(p=>p&&fs.existsSync(p));assert.ok(chrome,'Chromium required');
 const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-gpu','--no-first-run','--no-default-browser-check','--autoplay-policy=no-user-gesture-required','--mute-audio','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:'ignore',windowsHide:true});
