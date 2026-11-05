@@ -51,6 +51,13 @@ mutate_pdf(QCM,'qcm',lambda d:d[0].insert_text((45,780),'Réponses : A.',fontsiz
 ref=spec['references']['sheet'];pages=21
 review={'templateId':ref['id'],'templateSha256':ref['sha256'],'artifactSha256':gate.sha(SHEET),'pageCount':pages,'status':'owner_accepted','method':'all_pages_compared_at_100_and_200_percent','decision':'explicit_graphic_acceptance','reviewerRole':'owner','pagesChecked':list(range(1,pages+1)),'reviewedAt':'2026-10-26T16:00:00+01:00','checks':{k:'PASS' for k in spec['reviewChecks']},'privateEvidenceSha256':'a'*64}
 assert gate.validate_review(review,'sheet',gate.sha(SHEET),pages,spec)==[]
+separated=copy.deepcopy(review)
+separated.update(method='agent_all_pages_inspected_owner_publication_accepted',decision='explicit_publication_acceptance',reviewerRole='agent',acceptanceBy='owner',authorization='explicit_go_publication',ownerApprovalEvidenceSha256='b'*64)
+separated['checks'].pop('READABLE_AT_100_AND_200_PERCENT')
+separated['checks']['ALL_PAGES_RENDERED_AND_INSPECTED']='PASS'
+assert gate.validate_review(separated,'sheet',gate.sha(SHEET),pages,spec)==[]
+for key,value in [('authorization','go_production'),('acceptanceBy','agent'),('ownerApprovalEvidenceSha256','absent'),('pagesChecked',[1]),('artifactSha256','c'*64),('checks',{})]:
+    broken=copy.deepcopy(separated);broken[key]=value;assert gate.validate_review(broken,'sheet',gate.sha(SHEET),pages,spec),(key,value)
 for key,value in [('artifactSha256','b'*64),('templateSha256','c'*64),('templateId','autre'),('pageCount',20),('status','pending'),('method','automatic'),('decision','go_production'),('reviewerRole','script'),('pagesChecked',[1,21]),('pagesChecked',[True]+list(range(2,pages+1))),('reviewedAt','hier'),('reviewedAt',42),('checks',{}),('checks',[]),('privateEvidenceSha256','absent')]:
     broken=copy.deepcopy(review);broken[key]=value;assert gate.validate_review(broken,'sheet',gate.sha(SHEET),pages,spec),(key,value)
 bad=copy.deepcopy(spec);bad['references']['sheet']['sha256']='d'*64;assert 'REFERENCE_SHA:sheet' in gate.reference_errors(bad)

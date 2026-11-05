@@ -67,3 +67,17 @@ assert.throws(()=>validateVisualOwnerReview('douleur',{
  ...hybrid,visualOwnerReview:{...hybrid.visualOwnerReview,reviewerDecision:'assistant_self_approved'}
 },data),/GO production/,'Le controle hybride exige toujours un accord du proprietaire');
 console.log('✅ cas historiques et nouveau modele hybride pharmacologie avec garde-fous intacts.');
+// Agent inspection and owner publication acceptance are separate assertions.
+const written={courseId:'demo',packFormat:'written_v1',sheetResourceId:'demo',
+ artifactSha256s:{DEMO:h},writtenPdfAudit:{pageCount:2},visualOwnerReview:{
+ status:'owner_accepted',reference:'communication_written_v5.3_2026-10-24',method:'pdf_all_pages_checked',
+ reviewerDecision:'explicit_publication_acceptance',inspectionBy:'agent',acceptanceBy:'owner',
+ authorization:'explicit_go_publication',privateEvidenceSha256:h,ownerApprovalEvidenceSha256:j,pagesChecked:2,
+ criteria:{NO_GENERATED_IMAGES:'PASS',PURPLE_BANDS_EVERY_PAGE:'PASS',TEXT_SELECTABLE:'PASS',NO_TECHNICAL_NOTES:'PASS'},
+ reviewedPdfSha256s:{demo:h}}};
+const writtenData={sheets:[{courseId:'demo',resourceId:'demo',driveId:'DEMO'}]};
+assert.doesNotThrow(()=>validateVisualOwnerReview('demo',written,writtenData));
+for(const mutation of [r=>r.inspectionBy='automatic',r=>r.acceptanceBy='agent',r=>r.authorization='go_production',r=>r.ownerApprovalEvidenceSha256=null,r=>r.pagesChecked=1,r=>r.reviewedPdfSha256s.demo=j]){
+ const altered=clone(written);mutation(altered.visualOwnerReview);
+ assert.throws(()=>validateVisualOwnerReview('demo',altered,writtenData));
+}

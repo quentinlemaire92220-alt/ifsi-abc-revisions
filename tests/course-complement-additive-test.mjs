@@ -65,7 +65,7 @@ const historicalSheetResourceIds=new Set([1,2,3].flatMap(n=>old(`sheets-${n}.jso
 const approvedNewSheets=new Set(publicationApprovals.filter(c=>
  !historicalSheetResourceIds.has(c.sheetResourceId)&&
  (['reviewed_written_bundle','official_reviewed_scoped_bundle'].includes(c.deliveryMode)||
-  c.deliveryMode==='first_release'&&c.packFormat==='hybrid_v1'&&!old('course-registry-v741.json').courses.some(x=>x.id===c.courseId))&&c.validated===true&&
+  c.deliveryMode==='first_release'&&['hybrid_v1','written_v1'].includes(c.packFormat)&&!old('course-registry-v741.json').courses.some(x=>x.id===c.courseId))&&c.validated===true&&
  c.publicationApproval?.status==='approved'&&
  c.publicationApproval?.authorization==='explicit_go_publication'&&
  c.publicationApproval?.scope==='course_package'

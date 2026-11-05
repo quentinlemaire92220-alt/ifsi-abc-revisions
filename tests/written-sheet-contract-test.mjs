@@ -22,6 +22,19 @@ const good={packFormat:'written_v1',sheetResourceId:sheet.resourceId,
  publishedVerification:{status:'MATCH',source:'authenticated_drive_download',pdfSha256:H}};
 const run=d=>validateWrittenDelivery('demo',d,[sheet]);
 assert.equal(run(good).written.resourceId,sheet.resourceId);
+const withBlocks={...good,schematics:'native_blocks',embeddedFigureCount:2,
+ nativeDiagramException:{contract:'owner_requested_native_blocks_v1',authorization:'explicit_user_request',
+ privateEvidenceSha256:B,pdfSha256:H,count:2,reviewedCount:2,kind:'native_vector_blocks',rasterImageCount:0}};
+assert.equal(run(withBlocks).written.resourceId,sheet.resourceId);
+for(const patch of [{authorization:'inferred'},{pdfSha256:B},{count:3},{reviewedCount:1},{rasterImageCount:1},{kind:'generated_image'},{privateEvidenceSha256:null}]){
+ assert.throws(()=>run({...withBlocks,nativeDiagramException:{...withBlocks.nativeDiagramException,...patch}}));
+}
+assert.throws(()=>run({...withBlocks,nativeDiagramException:undefined}),/exception schéma/);
+const hosted={...withBlocks,deliveryMode:'first_release',publicationHost:'github_pages',publicAssetSha256:H,
+ publicArtifacts:{sheet:{artifactId:'sheet',path:'assets/demo/sheet.pdf',sha256:H}},artifactSha256s:{sheet:H}};
+const hostedSheet={...sheet,url:'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/demo/sheet.pdf'};
+assert.equal(validateWrittenDelivery('demo',hosted,[hostedSheet]).written.resourceId,sheet.resourceId);
+assert.throws(()=>validateWrittenDelivery('demo',{...hosted,publicArtifacts:{sheet:{...hosted.publicArtifacts.sheet,path:'assets/demo/other.pdf'}}},[hostedSheet]),/lien Pages/);
 assert.equal(validateWrittenPart('demo',{...good,partId:'p01'},[sheet]).written.resourceId,sheet.resourceId);
 const rejects=(change,reason)=>assert.throws(()=>run(change(good)),reason);
 rejects(x=>({...x,packFormat:'hybrid_v1'}),/packFormat/);

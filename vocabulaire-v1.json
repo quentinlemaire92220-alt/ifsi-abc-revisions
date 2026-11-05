@@ -14428,6 +14428,858 @@
       "theme": "Les étapes de la vie",
       "sourceType": "course_glossary",
       "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_determinant",
+      "term": "Déterminant de santé",
+      "definition": "Facteur personnel, social, économique ou environnemental qui influence l’état de santé d’une personne ou d’une population.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_risque",
+      "term": "Facteur de risque",
+      "definition": "Facteur associé à une probabilité accrue de survenue d’un problème de santé dans une population donnée.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_protecteur",
+      "term": "Facteur protecteur",
+      "definition": "Ressource ou condition qui contribue à préserver la santé ou à diminuer la probabilité d’un problème.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_incidence",
+      "term": "Incidence",
+      "definition": "Survenue de nouveaux cas d’un problème de santé dans une population au cours d’une période donnée.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_prevalence",
+      "term": "Prévalence",
+      "definition": "Proportion de personnes présentant un état ou un problème de santé dans une population et à une période définies.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_mortalite",
+      "term": "Mortalité",
+      "definition": "Décès observés dans une population au cours d’une période ; à distinguer de la survenue des nouveaux cas et de la fréquence des personnes atteintes.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_morbidite",
+      "term": "Morbidité",
+      "definition": "Importance des problèmes de santé et de leurs conséquences dans une population, indépendamment du seul décès.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_mortalite_evitable",
+      "term": "Mortalité évitable",
+      "definition": "Décès sur lesquels des actions de prévention ou de prise en charge peuvent contribuer à agir ; le cours l’illustre notamment par le tabac et l’alcool.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_dahlgren",
+      "term": "Modèle de Dahlgren et Whitehead",
+      "definition": "Modèle de 1991 organisant les déterminants en cinq couches imbriquées, des caractéristiques individuelles aux conditions générales de vie.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_lalonde",
+      "term": "Champs du rapport de Lalonde",
+      "definition": "Cadre présenté dans le cours autour de la biologie humaine, de l’environnement, des habitudes de vie et de l’organisation des soins.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_mode_vie",
+      "term": "Mode de vie",
+      "definition": "Ensemble d’habitudes et de comportements quotidiens liés notamment à l’alimentation, au sommeil, à l’activité et aux consommations.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_sedentarite",
+      "term": "Sédentarité",
+      "definition": "Temps et comportements peu dépensiers, notamment en position assise ou allongée hors sommeil ; ne se résume pas à l’absence d’une séance de sport.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_nutrition",
+      "term": "Nutrition",
+      "definition": "Processus par lesquels l’organisme utilise les aliments ; le cours relie apports, fonctionnement basal et dépenses liées à l’activité.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_capital_social",
+      "term": "Capital social",
+      "definition": "Ressources relationnelles disponibles à travers la famille, les amis, les voisins, les groupes et les réseaux d’entraide.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_reseaux",
+      "term": "Réseaux sociaux et communautaires",
+      "definition": "Liens et groupes de proximité pouvant apporter un soutien, transmettre des normes et influencer les possibilités d’action.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_soutien",
+      "term": "Soutien social",
+      "definition": "Aide et ressources apportées par l’entourage, pouvant intervenir dans la compréhension, l’organisation ou la poursuite d’une démarche.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_autonomie",
+      "term": "Autonomie",
+      "definition": "Possibilité de prendre part aux décisions et d’être acteur de sa situation ; l’exemple de l’autodétermination l’associe au sentiment de compétence et d’appartenance.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_competence",
+      "term": "Sentiment de compétence",
+      "definition": "Sentiment d’être capable de comprendre ou de réaliser une action, évoqué comme une ressource pour agir.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_appartenance",
+      "term": "Appartenance sociale",
+      "definition": "Sentiment d’être inclus dans un groupe et de disposer de liens avec d’autres personnes.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_conditions_vie",
+      "term": "Conditions de vie",
+      "definition": "Conditions matérielles et sociales du quotidien : logement, alimentation, éducation, services et environnement accessible.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_conditions_travail",
+      "term": "Conditions de travail",
+      "definition": "Caractéristiques de l’activité professionnelle : horaires, pénibilité, charge, expositions et organisation.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_atmp",
+      "term": "AT / MP",
+      "definition": "Accident du travail / maladie professionnelle : catégories citées parmi les conséquences possibles des conditions de travail.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_structuraux",
+      "term": "Déterminants structuraux",
+      "definition": "Conditions générales et règles collectives qui influencent la répartition des ressources, les conditions de vie et les expositions.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_commerciaux",
+      "term": "Déterminants commerciaux",
+      "definition": "Effets sur la santé des activités commerciales, notamment par la production, la promotion, les prix, la recherche et l’influence sur les décisions.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_lobbying",
+      "term": "Lobbying",
+      "definition": "Action visant à influencer les décisions et les règles dans l’intérêt d’acteurs ou de secteurs ; le cours en analyse les conséquences possibles pour la santé publique.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_discrimination",
+      "term": "Discrimination",
+      "definition": "Traitement défavorable reposant sur une caractéristique ou une appartenance attribuée, susceptible de produire des obstacles et des inégalités.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_stigmatisation",
+      "term": "Stigmatisation",
+      "definition": "Dévalorisation d’une personne ou d’un groupe à partir d’une caractéristique, pouvant affecter la confiance et le recours aux services.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_sexe",
+      "term": "Sexe biologique",
+      "definition": "Caractéristique biologique située au centre du modèle des déterminants ; à distinguer des rapports sociaux de genre.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_genre",
+      "term": "Genre",
+      "definition": "Dimension sociale des rôles, normes et rapports entre personnes, pouvant influencer expositions, ressources et réponses de soins.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_inegalites",
+      "term": "Inégalités sociales de santé",
+      "definition": "Écarts d’état de santé entre groupes sociaux résultant de logiques sociales et institutionnelles.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_gradient",
+      "term": "Gradient social de santé",
+      "definition": "Variation de l’état de santé selon les positions sociales, au-delà d’une simple opposition entre les plus pauvres et les plus riches.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_niveau_social",
+      "term": "Position socio-économique",
+      "definition": "Situation d’une personne ou d’un groupe appréciée à travers des dimensions telles que diplôme, emploi ou ressources économiques.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_egalite",
+      "term": "Égalité",
+      "definition": "Principe d’un traitement ou d’une offre identique ; une offre identique ne garantit pas que chacun puisse en bénéficier autant.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_equite",
+      "term": "Équité",
+      "definition": "Prise en compte des différences de besoins et d’obstacles pour permettre des possibilités de santé et de soins plus justes.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_esperance_naissance",
+      "term": "Espérance de vie à la naissance",
+      "definition": "Nombre moyen d’années de vie correspondant aux conditions de mortalité considérées pour une population ; ce n’est pas une prédiction individuelle.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_esperance35",
+      "term": "Espérance de vie à 35 ans",
+      "definition": "Nombre moyen d’années restant à vivre à partir de 35 ans dans les conditions de mortalité considérées.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_pib",
+      "term": "PIB",
+      "definition": "Produit intérieur brut, indicateur de l’activité économique ; le cours compare le PIB par habitant et l’espérance de vie à l’échelle des pays.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_besoin_percu",
+      "term": "Besoin de santé perçu",
+      "definition": "Problème ou nécessité de santé reconnu par la personne ; sa perception dépend notamment de l’information et de la confiance.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_acces",
+      "term": "Accès aux soins",
+      "definition": "Possibilités d’obtenir une réponse de soins adaptée, compte tenu des caractéristiques de la personne et de l’offre.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_recours",
+      "term": "Recours aux soins",
+      "definition": "Démarche effective vers une offre de soins ; à distinguer de sa seule disponibilité théorique.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_adhesion",
+      "term": "Adhésion / adhérence aux soins",
+      "definition": "Participation et possibilité de poursuivre le projet de soins dans la durée, influencées par la compréhension et les conditions de vie.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_adequation",
+      "term": "Adéquation des soins",
+      "definition": "Correspondance entre les besoins réels et la réponse proposée, avec des compétences et une organisation adaptées.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_litteratie",
+      "term": "Littératie en santé",
+      "definition": "Connaissances et compétences permettant d’accéder à l’information, de la comprendre, de l’évaluer et de l’utiliser pour la santé.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_litteratie_numerique",
+      "term": "Dimension numérique de la littératie",
+      "definition": "Possibilité d’utiliser les outils et informations numériques nécessaires à une démarche de santé, comme la recherche d’un rendez-vous.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_non_recours",
+      "term": "Non-recours",
+      "definition": "Situation dans laquelle une personne ne bénéficie pas d’une offre, d’un droit ou d’un service auquel elle pourrait prétendre.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_non_connaissance",
+      "term": "Non-connaissance",
+      "definition": "Forme de non-recours liée à l’ignorance de l’existence d’une offre ou d’un droit.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_non_demande",
+      "term": "Non-demande",
+      "definition": "Forme de non-recours dans laquelle une offre connue ne fait pas l’objet d’une demande effective ou complète.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_non_reception",
+      "term": "Non-réception",
+      "definition": "Forme de non-recours dans laquelle une démarche engagée ne conduit pas au bénéfice effectif du droit ou du service.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_precarite",
+      "term": "Précarité",
+      "definition": "Instabilité ou insuffisance de ressources et de conditions de vie pouvant limiter les possibilités d’action et rendre d’autres besoins immédiatement prioritaires.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_precarite_alimentaire",
+      "term": "Précarité alimentaire",
+      "definition": "Difficulté à accéder à une alimentation suffisante et adaptée, notamment en raison de contraintes économiques ou matérielles.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_ame",
+      "term": "AME",
+      "definition": "Aide médicale de l’État : dispositif mobilisé dans le cours comme exemple de non-recours à un droit. Les mécanismes de non-recours sont distincts des règles d’attribution.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_intervention",
+      "term": "Intervention de santé publique",
+      "definition": "Effort ou politique visant à améliorer la santé mentale et/ou physique d’une population, à différents niveaux d’action.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_communautaire",
+      "term": "Niveau communautaire",
+      "definition": "Échelle d’un groupe ou d’un territoire à laquelle des ressources et des actions collectives peuvent être mobilisées.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_systemique",
+      "term": "Niveau systémique",
+      "definition": "Échelle des organisations, des règles et des politiques qui influencent les conditions générales de santé.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_universalisme",
+      "term": "Universalisme proportionné",
+      "definition": "Principe d’une intervention destinée à tous, avec une intensité adaptée aux besoins et aux obstacles rencontrés.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_aller_vers",
+      "term": "Aller-vers / outreach",
+      "definition": "Démarche par laquelle les professionnels se rendent auprès des personnes ou communautés, plutôt que d’attendre leur venue dans les services.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_surveillance",
+      "term": "Surveillance en santé publique",
+      "definition": "Suivi d’informations et d’indicateurs pour décrire une situation de santé et son évolution, afin d’orienter l’action.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_depistage",
+      "term": "Dépistage",
+      "definition": "Démarche de recherche d’un problème de santé dans un public, distincte de la seule réponse à une plainte exprimée.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_orientation",
+      "term": "Orientation et suivi",
+      "definition": "Mise en relation avec des ressources ou professionnels adaptés et attention portée à la suite effective de la démarche.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_gestion_cas",
+      "term": "Gestion de cas",
+      "definition": "Organisation et coordination d’un accompagnement tenant compte des besoins d’une personne et des différents intervenants.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_education",
+      "term": "Éducation en santé",
+      "definition": "Action favorisant la compréhension et les possibilités d’agir pour la santé.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_consultation",
+      "term": "Consultation, dans la roue des interventions",
+      "definition": "Apport ou sollicitation d’une expertise ; le terme ne désigne pas ici uniquement un rendez-vous de soins.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_collaboration",
+      "term": "Collaboration",
+      "definition": "Travail conjoint entre acteurs pour répondre à un besoin de santé et coordonner leurs ressources.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_coalition",
+      "term": "Coalition",
+      "definition": "Regroupement d’acteurs autour d’un objectif commun, notamment pour mobiliser des moyens ou soutenir une action collective.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_plaidoyer",
+      "term": "Plaidoyer / advocacy",
+      "definition": "Action visant à faire prendre en compte un enjeu de santé dans les décisions et les politiques.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_marketing_social",
+      "term": "Marketing social",
+      "definition": "Adaptation d’une communication à un public et à un objectif de santé ; à distinguer de la promotion commerciale.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_hpv",
+      "term": "HPV",
+      "definition": "Papillomavirus humains : exemple utilisé dans le cours pour articuler surveillance, information, aller-vers, orientation et plaidoyer autour de la vaccination.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_couverture_vaccinale",
+      "term": "Couverture vaccinale",
+      "definition": "Part d’une population ayant reçu la vaccination considérée, dans un périmètre et selon un critère définis.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_sns",
+      "term": "SNS",
+      "definition": "Stratégie nationale de santé : cadre général auquel le cours rattache différents domaines de politiques de santé.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_snac",
+      "term": "SNANC",
+      "definition": "Stratégie nationale pour l’alimentation, la nutrition et le climat : exemple du cours reliant alimentation, conditions sociales et environnement.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "ds_territorial",
+      "term": "Projet alimentaire territorial",
+      "definition": "Démarche locale citée pour rapprocher les acteurs et les ressources alimentaires et faciliter des évolutions adaptées à un territoire.",
+      "courseIds": [
+        "determinants_sante"
+      ],
+      "ue": "C1",
+      "theme": "Déterminants de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
     }
   ]
 }

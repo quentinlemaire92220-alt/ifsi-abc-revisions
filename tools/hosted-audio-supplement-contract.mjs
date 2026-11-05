@@ -108,7 +108,7 @@ export function historicalAudioView(manifest,data,options={}){
 export function firstReleaseAudioIds(before,after,oldData,newData,{readBytes=localBytes}={}){
  const accepted=new Set();
  for(const d of after.courses||[]){
-  if(d.deliveryMode!=='first_release'||d.packFormat!=='hybrid_v1'||before.courses?.some(x=>x.courseId===d.courseId))continue;
+  if(d.deliveryMode!=='first_release'||d.publicationHost!=='github_pages'||!['hybrid_v1','written_v1'].includes(d.packFormat)||before.courses?.some(x=>x.courseId===d.courseId))continue;
   assert.ok(!oldData.registry.courses.some(c=>c.id===d.courseId),'Première publication audio : cours déjà présent');
   assert.equal(d.validated,true);assert.equal(d.status,'complete');
   assert.equal(d.publicationApproval?.status,'approved');
