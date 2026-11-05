@@ -2827,5 +2827,61 @@
     "localAudio": "./assets/audio/etapes-vie-20261104/UE_B1_S1_Etapes_vie_04_Adolescence_adulte_vieillissement.mp3",
     "durationSeconds": 508.497333,
     "syntheticSpeech": true
+  },
+  {
+    "id": "determinants_sante_vocal_01",
+    "courseId": "determinants_sante",
+    "course": "Déterminants de santé",
+    "ue": "S1 C1",
+    "number": 1,
+    "title": "1/4 — Fondements, risques et modèle",
+    "mime": "audio/mpeg",
+    "driveId": "1U3dUWT8vFn69TquYi2sqlAnx7Iat7Zm1",
+    "url": "https://drive.google.com/file/d/1U3dUWT8vFn69TquYi2sqlAnx7Iat7Zm1/view?usp=drivesdk",
+    "localAudio": "./assets/audio/determinants-sante-20261105/UE_C1_S1_Determinants_sante_01_Fondements_risques_modele.mp3",
+    "durationSeconds": 504.902667,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "determinants_sante_vocal_02",
+    "courseId": "determinants_sante",
+    "course": "Déterminants de santé",
+    "ue": "S1 C1",
+    "number": 2,
+    "title": "2/4 — Contexte, inégalités et discriminations",
+    "mime": "audio/mpeg",
+    "driveId": "1PDVKjzSBboIGyVlPmLgxXtce9Cl8F6sp",
+    "url": "https://drive.google.com/file/d/1PDVKjzSBboIGyVlPmLgxXtce9Cl8F6sp/view?usp=drivesdk",
+    "localAudio": "./assets/audio/determinants-sante-20261105/UE_C1_S1_Determinants_sante_02_Contexte_inegalites_discriminations.mp3",
+    "durationSeconds": 518.909333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "determinants_sante_vocal_03",
+    "courseId": "determinants_sante",
+    "course": "Déterminants de santé",
+    "ue": "S1 C1",
+    "number": 3,
+    "title": "3/4 — Accès, littératie et non-recours",
+    "mime": "audio/mpeg",
+    "driveId": "1D7Q9zbMVl62d3V0AWX8-TGz_GYwuiawD",
+    "url": "https://drive.google.com/file/d/1D7Q9zbMVl62d3V0AWX8-TGz_GYwuiawD/view?usp=drivesdk",
+    "localAudio": "./assets/audio/determinants-sante-20261105/UE_C1_S1_Determinants_sante_03_Acces_litteratie_non_recours.mp3",
+    "durationSeconds": 481.445333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "determinants_sante_vocal_04",
+    "courseId": "determinants_sante",
+    "course": "Déterminants de santé",
+    "ue": "S1 C1",
+    "number": 4,
+    "title": "4/4 — Interventions et raisonnement infirmier",
+    "mime": "audio/mpeg",
+    "driveId": "1Pr9k4jpm7ncp4dop2Vz0g0S1TTwRYWfj",
+    "url": "https://drive.google.com/file/d/1Pr9k4jpm7ncp4dop2Vz0g0S1TTwRYWfj/view?usp=drivesdk",
+    "localAudio": "./assets/audio/determinants-sante-20261105/UE_C1_S1_Determinants_sante_04_Interventions_raisonnement_infirmier.mp3",
+    "durationSeconds": 522.357333,
+    "syntheticSpeech": true
   }
 ]

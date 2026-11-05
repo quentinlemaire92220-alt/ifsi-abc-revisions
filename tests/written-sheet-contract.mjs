@@ -21,7 +21,21 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  assert.deepEqual(delivery.sheetResourceIds || [delivery.sheetResourceId],[delivery.sheetResourceId],label+'une seule fiche');
  assert.ok(!delivery.infographicSheetResourceId,label+'second PDF interdit');
  assert.deepEqual(delivery.infographicResourceIds||[],[],label+'planches interdites');
- assert.equal(delivery.schematics,'none',label+'aucun schéma généré');
+ if(delivery.schematics==='native_blocks'){
+  const exception=delivery.nativeDiagramException;
+  assert.equal(exception?.contract,'owner_requested_native_blocks_v1',label+'exception schéma absente');
+  assert.equal(exception.authorization,'explicit_user_request',label+'autorisation schéma absente');
+  assert.ok(hash(exception.privateEvidenceSha256),label+'preuve privée schéma absente');
+  assert.equal(exception.pdfSha256,delivery.writtenPdfAudit?.pdfSha256,label+'empreinte schéma divergente');
+  assert.ok(Number.isInteger(exception.count)&&exception.count>0,label+'nombre de schémas invalide');
+  assert.equal(exception.count,delivery.embeddedFigureCount,label+'comptage schéma divergent');
+  assert.equal(exception.kind,'native_vector_blocks',label+'seuls les blocs vectoriels sont autorisés');
+  assert.equal(exception.reviewedCount,exception.count,label+'schémas non tous vérifiés');
+  assert.equal(exception.rasterImageCount,0,label+'image raster interdite');
+ }else{
+  assert.equal(delivery.schematics,'none',label+'aucun schéma généré');
+  assert.ok(!delivery.nativeDiagramException,label+'exception schéma inutilisée');
+ }
  assert.equal(delivery.generatedImageCount,0,label+'aucune image générée');
  assert.ok(!delivery.dualSheetCoverage,label+'couverture dual-sheet historique interdite');
  const matches = sheets.filter(x=>x.courseId===courseId&&x.resourceId===delivery.sheetResourceId);
@@ -31,7 +45,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  validateSheetSource(courseId,delivery,sheet);
  const id=driveId(sheet);
  const isPages=delivery.publicationHost==='github_pages';
- const githubPageArtifactContract=Boolean(isPages&&['source_limited_first_release','existing_course_revision','reviewed_written_bundle'].includes(delivery.deliveryMode)&&delivery.publicArtifacts?.sheet);
+ const githubPageArtifactContract=Boolean(isPages&&['source_limited_first_release','existing_course_revision','reviewed_written_bundle','first_release'].includes(delivery.deliveryMode)&&delivery.publicArtifacts?.sheet);
  let urlOK=false;
  try {
   const u=new URL(sheet.url||'');

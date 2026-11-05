@@ -109,7 +109,7 @@ const view=historicalAudioView(current,currentData);
 validateHostedAudioChanges(previous,current,previousData,currentData,{stage:'preparation'});
 const changed=validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'});
 const independentlyApproved=current.courses.filter(d=>(d.updateContract==='official_reviewed_scoped_bundle_v1'||
- (d.deliveryMode==='first_release'&&d.packFormat==='hybrid_v1'&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
+ (d.deliveryMode==='first_release'&&['hybrid_v1','written_v1'].includes(d.packFormat)&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
  JSON.stringify(d)!==JSON.stringify(previous.courses.find(old=>old.courseId===d.courseId)));
 assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>x.courseId).sort());
 
@@ -119,9 +119,14 @@ assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>
  const v={id:'first_audio',courseId:'first',course:'Nouveau cours',number:1,title:'Rappel',mime:'audio/mpeg',durationSeconds:120,driveId:'new_drive',localAudio:'./assets/audio/first/one.mp3'};
  const artifact={vocalId:v.id,artifactId:v.id,path:v.localAudio.slice(2),sha256:hash,bytes:bytes.length,durationSeconds:120};
  const packageRow={courseId:'first',deliveryMode:'first_release',packFormat:'hybrid_v1',validated:true,status:'complete',vocals:[v.id],publicAudioArtifacts:[artifact],artifactSha256s:{new_drive:hash},audioOwnerReview:{status:'owner_listening_accepted',privateEvidenceSha256:'c'.repeat(64),artifactSha256s:{[v.id]:hash}},publicationApproval:{status:'approved',authorization:'explicit_go_publication',scope:'course_package',approvedAt:'2026-11-04T12:00:00Z',bundleSha256:'d'.repeat(64)}};
+ packageRow.publicationHost='github_pages';
  const next={...approved,courses:[...approved.courses,packageRow]};
  const nextData={...data,registry:{courses:[...data.registry.courses,{id:'first',label:v.course,audioStatus:'available',audioCount:1}]},vocals:[...data.vocals,v]};
  assert.deepEqual([...firstReleaseAudioIds(approved,next,data,nextData,{readBytes})],[v.id]);
+ const written=structuredClone(next);written.courses.at(-1).packFormat='written_v1';
+ assert.deepEqual([...firstReleaseAudioIds(approved,written,data,nextData,{readBytes})],[v.id]);
+ const noListening=structuredClone(written);noListening.courses.at(-1).audioOwnerReview.status='pending';
+ assert.throws(()=>firstReleaseAudioIds(approved,noListening,data,nextData,{readBytes}));
  validateHostedAudioChanges(approved,next,data,nextData,{readBytes});
  for(const fault of [
   (m,x)=>m.courses.at(-1).publicationApproval.authorization='production_only',

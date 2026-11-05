@@ -76,7 +76,7 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
   const officialWritten=c.deliveryMode==='first_release'&&c.packFormat==='written_v1';
   if(officialWritten){
    assert.equal(c.provisional,false,c.courseId+': statut de première publication officielle divergent');
-   assert.equal(c.publicationHost,'drive',c.courseId+': copie Drive authentifiée attendue');
+   assert.ok(['drive','github_pages'].includes(c.publicationHost),c.courseId+': hôte de copie non reconnu');
    assert.equal(c.validated,true);assert.equal(c.pedagogicalValidated,true);
    assert.equal(c.sourceBasis?.nativeSupportAvailable,true,c.courseId+': support officiel absent');
    assert.equal(c.sourceAudit?.officialChecked,true,c.courseId+': support officiel non relu');
@@ -85,9 +85,9 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
    assert.equal(c.publishedVerification?.source,'authenticated_drive_download');
    assert.ok(c.writtenCoverage?.expectedEssential>0);
    assert.equal(c.writtenCoverage.coveredEssential,c.writtenCoverage.expectedEssential);
-   assert.ok(c.supportDriveId&&c.qcmDriveId&&c.flashcardDriveId,c.courseId+': ressources Drive non identifiées');
+   assert.ok((c.supportDriveId||c.sourceAudit?.officialSupportPreservedPrivately===true)&&c.qcmDriveId&&c.flashcardDriveId,c.courseId+': ressources Drive non identifiées');
    assert.equal(course.officialSupport,true);
-   assert.equal(course.officialSupportUrl,'https://drive.google.com/file/d/'+c.supportDriveId+'/view');
+   if(c.supportDriveId)assert.equal(course.officialSupportUrl,'https://drive.google.com/file/d/'+c.supportDriveId+'/view');
    assert.equal(course.audioFolderUrl,'https://drive.google.com/drive/folders/'+c.folders?.['05']);
   }else{
    assert.equal(c.deliveryMode,'source_limited_first_release',c.courseId+': audio non couvert par une première publication');

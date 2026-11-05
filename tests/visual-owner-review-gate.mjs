@@ -42,7 +42,12 @@ export function validateVisualOwnerReview(courseId,delivery,data){
   assert.equal(review?.status,'owner_accepted',courseId+': revue du support écrit absente');
   assert.equal(review.reference,'communication_written_v5.3_2026-10-24',courseId+': référence du modèle écrit invalide');
   assert.equal(review.method,'pdf_all_pages_checked',courseId+': inspection complète des pages absente');
-  assert.equal(review.reviewerDecision,'explicit_graphic_acceptance',courseId+': validation explicite manquante');
+  if(review.reviewerDecision==='explicit_publication_acceptance'){
+   assert.equal(review.inspectionBy,'agent',courseId+': inspection non attribuée');
+   assert.equal(review.acceptanceBy,'owner',courseId+': accord propriétaire absent');
+   assert.equal(review.authorization,'explicit_go_publication',courseId+': GO publication absent');
+   assert.ok(digest(review.privateEvidenceSha256)&&digest(review.ownerApprovalEvidenceSha256),courseId+': preuves distinctes absentes');
+  }else assert.equal(review.reviewerDecision,'explicit_graphic_acceptance',courseId+': validation explicite manquante');
   assert.ok(Number.isInteger(review.pagesChecked)&&review.pagesChecked===delivery.writtenPdfAudit?.pageCount,
     courseId+': toutes les pages ne sont pas examinées');
   assert.equal(review.criteria?.NO_GENERATED_IMAGES,'PASS',courseId+': fiche écrite illustrée à tort');

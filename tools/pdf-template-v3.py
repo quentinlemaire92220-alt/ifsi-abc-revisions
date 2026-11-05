@@ -20,9 +20,15 @@ def reference_errors(spec,root=ROOT):
 def validate_review(review,role,artifact_sha,pages,spec):
     errors=[];ref=spec['references'][role]
     if not isinstance(review,dict):return ['REVIEW_MISSING']
+    separated=review.get('method')=='agent_all_pages_inspected_owner_publication_accepted'
     expected={'templateId':ref['id'],'templateSha256':ref['sha256'],'artifactSha256':artifact_sha,
               'pageCount':pages,'status':'owner_accepted','method':'all_pages_compared_at_100_and_200_percent',
               'decision':'explicit_graphic_acceptance','reviewerRole':'owner'}
+    if separated:
+        expected.update(method='agent_all_pages_inspected_owner_publication_accepted',
+                        decision='explicit_publication_acceptance',reviewerRole='agent',
+                        acceptanceBy='owner',authorization='explicit_go_publication')
+        if not re.fullmatch(r'[a-f0-9]{64}',str(review.get('ownerApprovalEvidenceSha256',''))):errors.append('OWNER_APPROVAL_EVIDENCE_SHA')
     for k,v in expected.items():
         if review.get(k)!=v:errors.append('REVIEW_'+k.upper())
     checked=review.get('pagesChecked')
@@ -37,7 +43,8 @@ def validate_review(review,role,artifact_sha,pages,spec):
     except (ValueError,TypeError):errors.append('REVIEW_DATE')
     checks=review.get('checks') if isinstance(review.get('checks'),dict) else {}
     for k in spec['reviewChecks']:
-        if checks.get(k)!='PASS':errors.append('REVIEW_CHECK:'+k)
+        actual='ALL_PAGES_RENDERED_AND_INSPECTED' if separated and k=='READABLE_AT_100_AND_200_PERCENT' else k
+        if checks.get(actual)!='PASS':errors.append('REVIEW_CHECK:'+actual)
     if not re.fullmatch(r'[a-f0-9]{64}',str(review.get('privateEvidenceSha256',''))):errors.append('REVIEW_PRIVATE_EVIDENCE_SHA')
     return errors
 

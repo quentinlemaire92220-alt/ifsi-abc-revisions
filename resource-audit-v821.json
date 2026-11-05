@@ -1,5 +1,5 @@
 {
-  "version": "8.30.177",
+  "version": "8.30.178",
   "auditedAt": "2026-11-02",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,10 +9,10 @@
   "mode": "candidate_pending_pedagogical_review",
   "note": "Catalogue candidat : 24 MP3 TTS ajoutés avec statut provisoire ; revue des pauses et exactitude scientifique non terminée, validation non déclarée.",
   "expectedTotals": {
-    "courses": 68,
-    "sheets": 89,
+    "courses": 69,
+    "sheets": 90,
     "infographics": 184,
-    "vocals": 240,
+    "vocals": 244,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -281,6 +281,13 @@
       "vocalsNew": 5,
       "sourceStatus": "provisional",
       "supportOfficielAbsent": true
+    },
+    {
+      "courseId": "determinants_sante",
+      "course": "Déterminants de santé",
+      "qcm": 60,
+      "flashcards": 60,
+      "vocals": 4
     }
   ],
   "auditLogicVersion": "8.30.10",

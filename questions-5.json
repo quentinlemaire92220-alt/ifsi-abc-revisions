@@ -36815,5 +36815,2527 @@
     "course": "Les étapes de la vie",
     "ue": "B1",
     "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q001",
+    "courseId": "determinants_sante",
+    "number": 1,
+    "theme": "Comprendre les déterminants de santé",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent un déterminant de santé ?",
+    "choices": [
+      "Il peut agir à l’échelle d’une population.",
+      "Il peut constituer une ressource favorable à la santé.",
+      "Il désigne une conséquence déjà observée d’une maladie.",
+      "Il correspond à un diagnostic posé par un médecin.",
+      "Il désigne uniquement les habitudes choisies par la personne."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les déterminants concernent aussi la répartition collective de la santé.",
+      "Un déterminant n’est pas nécessairement un risque.",
+      "Il s’agit d’un facteur d’influence, à distinguer de la conséquence.",
+      "Le diagnostic décrit un problème ; le déterminant aide à expliquer son contexte.",
+      "Les conditions économiques et environnementales en font également partie."
+    ],
+    "explanation": "Un facteur personnel, social, économique ou environnemental qui influence la santé d’une personne ou d’une population. Son influence peut être favorable ou défavorable.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c001",
+        "theme": "Comprendre les déterminants de santé",
+        "front": "Que désigne un déterminant de santé ?",
+        "answers": [
+          "Un facteur personnel, social, économique ou environnemental qui influence la santé d’une personne ou d’une population."
+        ],
+        "explanation": "Son influence peut être favorable ou défavorable."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q002",
+    "courseId": "determinants_sante",
+    "number": 2,
+    "theme": "Comprendre les déterminants de santé",
+    "difficulty": "medium",
+    "question": "À propos des facteurs de risque et des déterminants :",
+    "choices": [
+      "Un facteur de risque rend la maladie certaine chez chaque personne exposée.",
+      "Le contexte professionnel peut aider à expliquer une exposition.",
+      "Le tabagisme peut être étudié comme facteur de risque.",
+      "Déterminant et facteur de risque s’excluent toujours.",
+      "Le revenu est une mesure de gravité d’une maladie."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une probabilité accrue n’est pas une certitude individuelle.",
+      "Les conditions de travail peuvent façonner les habitudes et les ressources.",
+      "Il renvoie à une exposition associée à des problèmes de santé.",
+      "Une exposition peut être étudiée à ces deux niveaux.",
+      "Il constitue une ressource socio-économique, non un score de gravité."
+    ],
+    "explanation": "Un facteur de risque est associé à une probabilité accrue de problème ; l’analyse des déterminants examine aussi les conditions de cette exposition. Ces deux lectures se complètent.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c002",
+        "theme": "Comprendre les déterminants de santé",
+        "front": "Comment distinguer facteur de risque et analyse des déterminants ?",
+        "answers": [
+          "Un facteur de risque est associé à une probabilité accrue de problème ; l’analyse des déterminants examine aussi les conditions de cette exposition."
+        ],
+        "explanation": "Ces deux lectures se complètent."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q003",
+    "courseId": "determinants_sante",
+    "number": 3,
+    "theme": "Comprendre les déterminants de santé",
+    "difficulty": "hard",
+    "question": "Une personne suit difficilement son traitement. Quels raisonnements sont pertinents ?",
+    "choices": [
+      "S’intéresser à l’organisation quotidienne.",
+      "Explorer les obstacles financiers.",
+      "Déduire un refus à partir de la seule irrégularité des prises.",
+      "Répéter la même consigne avant de rechercher les obstacles.",
+      "Vérifier la compréhension du traitement."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les horaires et la charge familiale peuvent limiter la mise en pratique.",
+      "Le coût peut empêcher la réalisation du projet de soins.",
+      "Le comportement observé ne suffit pas à identifier sa cause.",
+      "Un conseil inchangé peut rester impraticable si la contrainte persiste.",
+      "Comprendre les consignes participe à leur utilisation."
+    ],
+    "explanation": "Le coût, la compréhension, les horaires, le logement et les ressources de soutien disponibles. Ces contraintes peuvent limiter la possibilité de suivre le traitement.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c003",
+        "theme": "Comprendre les déterminants de santé",
+        "front": "Que rechercher avant d’attribuer une difficulté de traitement à un manque de volonté ?",
+        "answers": [
+          "Le coût, la compréhension, les horaires, le logement et les ressources de soutien disponibles."
+        ],
+        "explanation": "Ces contraintes peuvent limiter la possibilité de suivre le traitement."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q004",
+    "courseId": "determinants_sante",
+    "number": 4,
+    "theme": "Comprendre les déterminants de santé",
+    "difficulty": "easy",
+    "question": "Quels champs appartiennent au cadre proposé par le rapport de Lalonde ?",
+    "choices": [
+      "Les habitudes de vie et l’organisation des soins.",
+      "Les trois phases d’une maladie aiguë.",
+      "Les cinq formes de non-recours.",
+      "L’environnement.",
+      "La biologie humaine."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces deux domaines complètent les champs biologique et environnemental.",
+      "Il s’agit de champs d’influence sur la santé, non d’une chronologie clinique.",
+      "Le non-recours ne définit pas les quatre champs de ce cadre.",
+      "Ce champ dépasse les caractéristiques biologiques individuelles.",
+      "C’est l’un des quatre champs du cadre de Lalonde."
+    ],
+    "explanation": "Biologie humaine, environnement, habitudes de vie et organisation des soins. Ce cadre élargit l’explication de la santé au-delà des soins.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c004",
+        "theme": "Comprendre les déterminants de santé",
+        "front": "Quels sont les quatre champs du rapport de Lalonde ?",
+        "answers": [
+          "Biologie humaine, environnement, habitudes de vie et organisation des soins."
+        ],
+        "explanation": "Ce cadre élargit l’explication de la santé au-delà des soins."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q005",
+    "courseId": "determinants_sante",
+    "number": 5,
+    "theme": "Les grands risques : comprendre leurs interactions",
+    "difficulty": "easy",
+    "question": "Concernant les conséquences du tabagisme :",
+    "choices": [
+      "Le tabac ne joue un rôle que si une autre exposition est présente.",
+      "Les atteintes peuvent être cardiovasculaires.",
+      "Les atteintes peuvent être respiratoires.",
+      "Étudier le tabac dispense d’étudier sa répartition sociale.",
+      "La présence d’une exposition établit à elle seule un diagnostic."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Son rôle ne dépend pas obligatoirement d’une association avec un autre produit.",
+      "Les effets du tabac ne sont pas limités aux cancers.",
+      "Le système respiratoire fait partie des systèmes concernés.",
+      "Comprendre qui est exposé fait partie de l’analyse des déterminants.",
+      "Une exposition ne remplace pas l’évaluation clinique."
+    ],
+    "explanation": "Le tabac contribue aussi à des maladies cardiovasculaires et à des atteintes respiratoires. Une même exposition peut avoir plusieurs conséquences.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c005",
+        "theme": "Les grands risques : comprendre leurs interactions",
+        "front": "Pourquoi le tabac ne se réduit-il pas à un risque de cancer ?",
+        "answers": [
+          "Le tabac contribue aussi à des maladies cardiovasculaires et à des atteintes respiratoires."
+        ],
+        "explanation": "Une même exposition peut avoir plusieurs conséquences."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q006",
+    "courseId": "determinants_sante",
+    "number": 6,
+    "theme": "Les grands risques : comprendre leurs interactions",
+    "difficulty": "medium",
+    "question": "À propos de l’alcool et des repères de réduction des risques :",
+    "choices": [
+      "Le repère permet de prédire le devenir de chaque personne.",
+      "Les conséquences de l’alcool se limitent aux accidents.",
+      "Un repère de consommation est un critère diagnostique suffisant.",
+      "Réduire la consommation ne signifie pas supprimer tout risque.",
+      "Une consommation située sous un repère devient protectrice contre les cancers."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Une référence populationnelle ne donne pas un pronostic individuel certain.",
+      "Des atteintes chroniques et d’autres systèmes sont également concernés.",
+      "Le diagnostic ne se déduit pas de ce seul repère.",
+      "Réduction du risque et risque nul sont distincts.",
+      "Un repère de réduction n’établit pas un effet protecteur."
+    ],
+    "explanation": "Limiter une exposition peut réduire certains risques sans les supprimer. Un repère ne garantit donc pas une protection contre les cancers.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c006",
+        "theme": "Les grands risques : comprendre leurs interactions",
+        "front": "Pourquoi un repère de réduction des risques n’est-il pas un seuil d’absence de risque ?",
+        "answers": [
+          "Limiter une exposition peut réduire certains risques sans les supprimer."
+        ],
+        "explanation": "Un repère ne garantit donc pas une protection contre les cancers."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q007",
+    "courseId": "determinants_sante",
+    "number": 7,
+    "theme": "Les grands risques : comprendre leurs interactions",
+    "difficulty": "easy",
+    "question": "Quelles conséquences peuvent participer aux risques liés à l’alcool ?",
+    "choices": [
+      "Des atteintes du foie et du système nerveux.",
+      "Des cancers.",
+      "Uniquement une modification du poids.",
+      "Des accidents et des chutes.",
+      "Une protection générale du système cardiovasculaire."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les conséquences concernent plusieurs organes et fonctions.",
+      "La cancérogénicité ne doit pas être effacée par les seuls risques d’accident.",
+      "Les effets dépassent très largement cette seule dimension.",
+      "Les risques incluent des événements aigus.",
+      "Cette formulation transforme à tort l’exposition en protection universelle."
+    ],
+    "explanation": "Des atteintes de plusieurs organes, des cancers, ainsi que des accidents et des chutes. La prévention doit considérer les effets aigus et chroniques.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c007",
+        "theme": "Les grands risques : comprendre leurs interactions",
+        "front": "Quels types de conséquences de l’alcool faut-il garder en tête ?",
+        "answers": [
+          "Des atteintes de plusieurs organes, des cancers, ainsi que des accidents et des chutes."
+        ],
+        "explanation": "La prévention doit considérer les effets aigus et chroniques."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q008",
+    "courseId": "determinants_sante",
+    "number": 8,
+    "theme": "Les grands risques : comprendre leurs interactions",
+    "difficulty": "hard",
+    "question": "Comment interpréter l’association de plusieurs expositions ?",
+    "choices": [
+      "Plusieurs expositions peuvent renforcer leurs effets.",
+      "L’exposition la plus visible rend les autres sans importance.",
+      "Deux risques relatifs se somment nécessairement.",
+      "La combinaison permet un diagnostic individuel certain.",
+      "Une association statistique supprime le besoin de préciser la population."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Une interaction entre expositions doit être envisagée.",
+      "Des expositions concomitantes peuvent contribuer au problème.",
+      "Aucune règle universelle d’addition ne découle de leur association.",
+      "Un risque ne suffit pas à établir la maladie d’une personne.",
+      "Le contexte de mesure reste nécessaire."
+    ],
+    "explanation": "Les expositions peuvent interagir ; une règle d’addition ne peut pas être supposée. Il faut distinguer combinaison d’expositions et calcul d’un effet.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c008",
+        "theme": "Les grands risques : comprendre leurs interactions",
+        "front": "Pourquoi ne peut-on pas additionner automatiquement les coefficients de risque du tabac et de l’alcool ?",
+        "answers": [
+          "Les expositions peuvent interagir ; une règle d’addition ne peut pas être supposée."
+        ],
+        "explanation": "Il faut distinguer combinaison d’expositions et calcul d’un effet."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q009",
+    "courseId": "determinants_sante",
+    "number": 9,
+    "theme": "Alimentation, activité et gradient des expositions",
+    "difficulty": "medium",
+    "question": "À propos de la sédentarité :",
+    "choices": [
+      "Le temps assis hors sommeil est pertinent.",
+      "Une séance de sport ne décrit pas toute la journée.",
+      "Sédentarité et absence de sport sont strictement synonymes.",
+      "La sédentarité est une protection cardiovasculaire.",
+      "Le sommeil constitue la définition de la sédentarité."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La sédentarité concerne les comportements peu dépensiers au quotidien.",
+      "Le reste du temps peut rester très sédentaire.",
+      "Ces deux descriptions ne recouvrent pas exactement les mêmes comportements.",
+      "Elle est abordée parmi les expositions défavorables.",
+      "Le temps de sommeil est distingué dans cette notion."
+    ],
+    "explanation": "La sédentarité concerne aussi le temps passé assis ou allongé hors sommeil dans des activités peu dépensières. Il faut donc examiner l’ensemble de la journée.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c009",
+        "theme": "Alimentation, activité et gradient des expositions",
+        "front": "Pourquoi une séance de sport ne décrit-elle pas à elle seule la sédentarité ?",
+        "answers": [
+          "La sédentarité concerne aussi le temps passé assis ou allongé hors sommeil dans des activités peu dépensières."
+        ],
+        "explanation": "Il faut donc examiner l’ensemble de la journée."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q010",
+    "courseId": "determinants_sante",
+    "number": 10,
+    "theme": "Alimentation, activité et gradient des expositions",
+    "difficulty": "hard",
+    "question": "Une enquête de 2020 rapporte 47,3 % d’adultes en excès de poids, dont 17 % en situation d’obésité. Comment lire ces valeurs ?",
+    "choices": [
+      "Le chiffre de 17 % décrit nécessairement toutes les populations actuelles.",
+      "Le total des personnes concernées est de 64,3 %.",
+      "Les deux proportions décrivent deux groupes forcément disjoints.",
+      "L’obésité est incluse dans l’excès de poids annoncé.",
+      "L’année et la population de l’enquête doivent être conservées."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une enquête datée ne permet pas cette généralisation.",
+      "Cette addition compte deux fois le sous-groupe en situation d’obésité.",
+      "Le sous-groupe obésité appartient à l’ensemble excès de poids.",
+      "Le mot « dont » indique une inclusion dans le groupe total.",
+      "Ce sont des données situées, non une mesure intemporelle."
+    ],
+    "explanation": "Les personnes en situation d’obésité sont incluses dans les 47,3 pour cent en excès de poids. Additionner les deux compterait une partie des personnes deux fois.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c010",
+        "theme": "Alimentation, activité et gradient des expositions",
+        "front": "Dans les repères Obépi 2020, faut-il additionner 47,3 % et 17 % ?",
+        "answers": [
+          "Les personnes en situation d’obésité sont incluses dans les 47,3 pour cent en excès de poids."
+        ],
+        "explanation": "Additionner les deux compterait une partie des personnes deux fois."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q011",
+    "courseId": "determinants_sante",
+    "number": 11,
+    "theme": "Alimentation, activité et gradient des expositions",
+    "difficulty": "medium",
+    "question": "Concernant le gradient social des expositions :",
+    "choices": [
+      "Les groupes les moins favorisés sont les plus exposés à tout risque mesurable.",
+      "Une catégorie sociale permet de prédire la consommation de chaque membre.",
+      "La répartition doit être examinée pour chaque exposition.",
+      "Le choix de l’indicateur compte.",
+      "Une association avec le chômage prouve un comportement volontaire identique chez tous."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette généralisation ne respecte pas la diversité des expositions.",
+      "Une tendance de groupe n’est pas une prédiction individuelle.",
+      "Le gradient n’est pas identique pour tous les comportements.",
+      "Des indicateurs différents peuvent décrire des aspects différents d’une consommation.",
+      "L’association ne fournit ni cette causalité ni cette uniformité."
+    ],
+    "explanation": "Non. Le sens et l’ampleur du gradient dépendent de l’exposition et de l’indicateur étudiés. Certains indicateurs d’alcool suivent une répartition différente de celle du tabac.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c011",
+        "theme": "Alimentation, activité et gradient des expositions",
+        "front": "Peut-on transposer le gradient social du tabac à toutes les consommations ?",
+        "answers": [
+          "Non. Le sens et l’ampleur du gradient dépendent de l’exposition et de l’indicateur étudiés."
+        ],
+        "explanation": "Certains indicateurs d’alcool suivent une répartition différente de celle du tabac."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q012",
+    "courseId": "determinants_sante",
+    "number": 12,
+    "theme": "Alimentation, activité et gradient des expositions",
+    "difficulty": "medium",
+    "question": "Une personne reçoit des conseils alimentaires mais ne dispose pas d’équipement pour cuisiner. Quelles démarches sont pertinentes ?",
+    "choices": [
+      "Écarter le logement du raisonnement nutritionnel.",
+      "Conclure que l’absence de changement prouve un désintérêt.",
+      "Limiter l’échange à une nouvelle liste d’aliments recommandés.",
+      "Rechercher les possibilités concrètes de préparation ou d’accès aux repas.",
+      "Explorer le budget et les ressources locales avec la personne."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le logement peut conditionner la préparation et la conservation des repas.",
+      "Le comportement peut être empêché par les conditions de vie.",
+      "Cette liste ne résout pas l’impossibilité matérielle identifiée.",
+      "La solution doit tenir compte de la contrainte matérielle.",
+      "Ces ressources conditionnent les possibilités d’action."
+    ],
+    "explanation": "Une réponse à la contrainte matérielle et la recherche de solutions réellement accessibles. L’information ne crée pas à elle seule l’équipement nécessaire.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c012",
+        "theme": "Alimentation, activité et gradient des expositions",
+        "front": "Que manque-t-il à un conseil alimentaire quand la personne ne peut pas cuisiner ?",
+        "answers": [
+          "Une réponse à la contrainte matérielle et la recherche de solutions réellement accessibles."
+        ],
+        "explanation": "L’information ne crée pas à elle seule l’équipement nécessaire."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q013",
+    "courseId": "determinants_sante",
+    "number": 13,
+    "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+    "difficulty": "easy",
+    "question": "Quels éléments se situent au centre du modèle de Dahlgren et Whitehead ?",
+    "choices": [
+      "L’organisation du marché du travail.",
+      "Les réseaux de voisinage.",
+      "La constitution et l’hérédité.",
+      "L’âge et le sexe biologique.",
+      "La publicité alimentaire."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle relève du contexte collectif et des conditions de vie.",
+      "Ils appartiennent aux réseaux sociaux et communautaires.",
+      "Elles appartiennent également au centre biologique du modèle.",
+      "Ce sont des caractéristiques individuelles centrales du modèle.",
+      "Elle renvoie notamment aux déterminants commerciaux."
+    ],
+    "explanation": "L’âge, le sexe biologique, la constitution et l’hérédité. Ils se distinguent des habitudes et des conditions collectives.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c013",
+        "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+        "front": "Que trouve-t-on au centre du modèle de Dahlgren et Whitehead ?",
+        "answers": [
+          "L’âge, le sexe biologique, la constitution et l’hérédité."
+        ],
+        "explanation": "Ils se distinguent des habitudes et des conditions collectives."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q014",
+    "courseId": "determinants_sante",
+    "number": 14,
+    "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+    "difficulty": "easy",
+    "question": "Quelle classification respecte le modèle de Dahlgren et Whitehead ?",
+    "choices": [
+      "L’accès aux services est une caractéristique biologique innée.",
+      "Le soutien des proches relève des réseaux sociaux et communautaires.",
+      "Le tabagisme définit à lui seul les politiques économiques générales.",
+      "Le logement relève exclusivement du patrimoine génétique.",
+      "L’hérédité relève des conditions de travail."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il dépend des conditions de vie et de l’organisation collective.",
+      "Il représente une ressource relationnelle.",
+      "Il est classé parmi les modes de vie, influencés par d’autres niveaux.",
+      "Il fait partie des conditions matérielles de vie.",
+      "Elle se situe au centre biologique du modèle."
+    ],
+    "explanation": "Aux réseaux sociaux et communautaires. Cette couche décrit des liens et des ressources relationnelles.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c014",
+        "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+        "front": "À quelle couche appartiennent la famille, le voisinage et les réseaux d’entraide ?",
+        "answers": [
+          "Aux réseaux sociaux et communautaires."
+        ],
+        "explanation": "Cette couche décrit des liens et des ressources relationnelles."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q015",
+    "courseId": "determinants_sante",
+    "number": 15,
+    "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+    "difficulty": "medium",
+    "question": "Comment comprendre les cinq couches du modèle ?",
+    "choices": [
+      "Des horaires de travail peuvent influencer le sommeil.",
+      "L’état de santé s’obtient en additionnant cinq coefficients fixes.",
+      "Un facteur ne peut jamais avoir de lien avec plusieurs couches.",
+      "Les couches extérieures n’ont pas d’effet sur les comportements.",
+      "Une politique peut modifier les possibilités d’accès à des services."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les conditions de travail peuvent agir sur le mode de vie.",
+      "Le modèle n’est pas cette formule de calcul.",
+      "Une même situation peut articuler plusieurs niveaux.",
+      "Le modèle souligne au contraire leur influence.",
+      "Une couche collective peut agir sur les conditions quotidiennes."
+    ],
+    "explanation": "Les niveaux sont imbriqués et s’influencent : les conditions collectives façonnent les ressources et les habitudes. Le classement sert à expliquer des liens, pas à additionner des causes isolées.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c015",
+        "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+        "front": "Pourquoi les cinq couches ne sont-elles pas cinq causes indépendantes ?",
+        "answers": [
+          "Les niveaux sont imbriqués et s’influencent : les conditions collectives façonnent les ressources et les habitudes."
+        ],
+        "explanation": "Le classement sert à expliquer des liens, pas à additionner des causes isolées."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q016",
+    "courseId": "determinants_sante",
+    "number": 16,
+    "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+    "difficulty": "medium",
+    "question": "Que signifie le caractère modifiable d’une habitude de vie ?",
+    "choices": [
+      "Des contraintes sociales peuvent limiter le changement.",
+      "Le changement dépend uniquement d’une décision instantanée.",
+      "Une habitude contrainte doit être reclassée comme héréditaire.",
+      "Un conseil identique suffit dans toutes les situations.",
+      "Une aide peut agir sur l’environnement de la personne."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Modifiable n’implique pas l’absence d’obstacles.",
+      "Les conditions de mise en pratique doivent être considérées.",
+      "Une contrainte sociale ne transforme pas un comportement en caractère génétique.",
+      "Les besoins et les obstacles peuvent différer.",
+      "Faciliter les conditions peut rendre le changement possible."
+    ],
+    "explanation": "Une habitude peut être modifiée tout en restant contrainte par le budget, le travail, le logement ou l’entourage. La possibilité de changement dépend aussi du contexte.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c016",
+        "theme": "Dahlgren–Whitehead : cinq couches imbriquées",
+        "front": "Pourquoi « modifiable » ne signifie-t-il pas « facile à changer » ?",
+        "answers": [
+          "Une habitude peut être modifiée tout en restant contrainte par le budget, le travail, le logement ou l’entourage."
+        ],
+        "explanation": "La possibilité de changement dépend aussi du contexte."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q017",
+    "courseId": "determinants_sante",
+    "number": 17,
+    "theme": "Du contexte quotidien aux déterminants structuraux",
+    "difficulty": "easy",
+    "question": "À propos du capital social :",
+    "choices": [
+      "Il désigne le montant du revenu disponible.",
+      "Il peut faciliter l’organisation d’un déplacement vers les soins.",
+      "Il correspond à l’ensemble des équipements hospitaliers.",
+      "La présence d’un entourage garantit toujours un effet protecteur.",
+      "Il peut faciliter la compréhension d’une information."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le revenu est une ressource économique, distincte du capital relationnel.",
+      "Un réseau peut apporter une aide pratique.",
+      "Ces équipements relèvent de l’offre de soins.",
+      "Les effets des liens dépendent de leur nature et du contexte.",
+      "L’entourage peut constituer une ressource informationnelle."
+    ],
+    "explanation": "Les ressources relationnelles accessibles à travers les proches, les groupes et les réseaux d’entraide. Ces liens peuvent soutenir la compréhension, l’organisation ou une démarche.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c017",
+        "theme": "Du contexte quotidien aux déterminants structuraux",
+        "front": "Que représente le capital social dans l’analyse de la santé ?",
+        "answers": [
+          "Les ressources relationnelles accessibles à travers les proches, les groupes et les réseaux d’entraide."
+        ],
+        "explanation": "Ces liens peuvent soutenir la compréhension, l’organisation ou une démarche."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q018",
+    "courseId": "determinants_sante",
+    "number": 18,
+    "theme": "Du contexte quotidien aux déterminants structuraux",
+    "difficulty": "medium",
+    "question": "Quels liens peuvent unir travail et santé ?",
+    "choices": [
+      "L’emploi influence les ressources matérielles.",
+      "Les horaires peuvent rendre certains rendez-vous difficiles.",
+      "L’emploi ne concerne que le mode de vie biologique inné.",
+      "La pénibilité et les expositions peuvent affecter la santé.",
+      "Un emploi protège nécessairement de tout problème de santé."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les ressources conditionnent certaines possibilités d’action.",
+      "L’organisation du travail peut constituer un obstacle temporel.",
+      "Il relève de conditions sociales et matérielles.",
+      "Les conditions de travail peuvent créer des risques.",
+      "Le type et les conditions du travail comptent."
+    ],
+    "explanation": "Par les expositions, la pénibilité, les horaires, le stress, la fatigue et les ressources matérielles. Le travail peut aussi modifier les possibilités de prévention et de soins.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c018",
+        "theme": "Du contexte quotidien aux déterminants structuraux",
+        "front": "Par quels mécanismes les conditions de travail peuvent-elles influencer la santé ?",
+        "answers": [
+          "Par les expositions, la pénibilité, les horaires, le stress, la fatigue et les ressources matérielles."
+        ],
+        "explanation": "Le travail peut aussi modifier les possibilités de prévention et de soins."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q019",
+    "courseId": "determinants_sante",
+    "number": 19,
+    "theme": "Du contexte quotidien aux déterminants structuraux",
+    "difficulty": "medium",
+    "question": "Une personne privilégie une urgence de logement avant un rendez-vous. Comment analyser cette situation ?",
+    "choices": [
+      "Assimiler cette priorité à une incapacité définitive de décider.",
+      "Explorer la stabilité et les contraintes du logement.",
+      "Discuter des priorités avec la personne.",
+      "Renouveler uniquement l’horaire sans explorer l’obstacle.",
+      "Considérer le logement comme extérieur à la santé."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une contrainte n’abolit pas la capacité de participation de la personne.",
+      "Elles peuvent limiter les possibilités d’organisation des soins.",
+      "Une aide réaliste doit tenir compte de sa situation.",
+      "Le même obstacle matériel risque de persister.",
+      "Le logement est un déterminant des conditions de vie."
+    ],
+    "explanation": "Des besoins matériels immédiats peuvent rendre la démarche difficile à organiser ou moins prioritaire pour la personne. Cela ne prouve pas une absence d’intérêt pour sa santé.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c019",
+        "theme": "Du contexte quotidien aux déterminants structuraux",
+        "front": "Pourquoi une urgence de logement peut-elle passer avant une démarche de soins ?",
+        "answers": [
+          "Des besoins matériels immédiats peuvent rendre la démarche difficile à organiser ou moins prioritaire pour la personne."
+        ],
+        "explanation": "Cela ne prouve pas une absence d’intérêt pour sa santé."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q020",
+    "courseId": "determinants_sante",
+    "number": 20,
+    "theme": "Du contexte quotidien aux déterminants structuraux",
+    "difficulty": "medium",
+    "question": "Quels exemples relèvent de déterminants structuraux ?",
+    "choices": [
+      "La seule fréquence cardiaque d’une personne au repos.",
+      "Les politiques sociales et économiques.",
+      "Les discriminations et la stigmatisation.",
+      "La constitution héréditaire comme unique explication du contexte social.",
+      "La protection sociale et la fiscalité."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "C’est une mesure individuelle, non une règle structurale.",
+      "Elles façonnent la répartition des ressources et des possibilités.",
+      "Elles peuvent organiser des différences d’accès aux ressources et aux soins.",
+      "Le centre biologique ne définit pas les conditions collectives.",
+      "Ce sont des dispositifs et règles collectifs."
+    ],
+    "explanation": "Les politiques, les règles collectives et le contexte économique qui répartissent les ressources et les conditions de vie. Ils agissent en amont de nombreuses situations individuelles.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c020",
+        "theme": "Du contexte quotidien aux déterminants structuraux",
+        "front": "Que recouvre le niveau des déterminants structuraux ?",
+        "answers": [
+          "Les politiques, les règles collectives et le contexte économique qui répartissent les ressources et les conditions de vie."
+        ],
+        "explanation": "Ils agissent en amont de nombreuses situations individuelles."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q021",
+    "courseId": "determinants_sante",
+    "number": 21,
+    "theme": "Les déterminants commerciaux",
+    "difficulty": "easy",
+    "question": "Quels mécanismes participent aux déterminants commerciaux de santé ?",
+    "choices": [
+      "L’influence sur les décisions publiques.",
+      "La promotion de produits.",
+      "Uniquement le choix final de l’acheteur.",
+      "Les conditions de production et leurs effets environnementaux.",
+      "Toute variation biologique liée à l’âge."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le lobbying peut peser sur les règles collectives.",
+      "Elle peut modifier leur visibilité et leur attractivité.",
+      "Les déterminants commerciaux dépassent l’acte d’achat.",
+      "L’exposition peut exister même sans consommation volontaire du produit.",
+      "Le vieillissement biologique n’est pas en lui-même une activité commerciale."
+    ],
+    "explanation": "Les effets directs ou indirects sur la santé d’activités poursuivant un objectif commercial. Ils passent notamment par la production, les prix, la promotion et l’influence.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c021",
+        "theme": "Les déterminants commerciaux",
+        "front": "Que sont les déterminants commerciaux de santé ?",
+        "answers": [
+          "Les effets directs ou indirects sur la santé d’activités poursuivant un objectif commercial."
+        ],
+        "explanation": "Ils passent notamment par la production, les prix, la promotion et l’influence."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q022",
+    "courseId": "determinants_sante",
+    "number": 22,
+    "theme": "Les déterminants commerciaux",
+    "difficulty": "medium",
+    "question": "À quoi correspond le lobbying dans l’analyse des déterminants commerciaux ?",
+    "choices": [
+      "Désigner une caractéristique héréditaire.",
+      "Peser sur des décisions relatives aux prix.",
+      "Peser sur des règles de publicité ou d’information.",
+      "Mesurer directement le nombre de nouveaux cas d’une maladie.",
+      "Remplacer nécessairement toute forme de décision publique."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il s’agit d’une activité d’influence sociale et politique.",
+      "Les règles économiques peuvent influencer l’offre et l’accès.",
+      "Ce sont des décisions pouvant affecter la commercialisation.",
+      "Cette mesure renvoie à l’incidence et à la surveillance.",
+      "Une influence ne signifie pas un remplacement complet des institutions."
+    ],
+    "explanation": "Influencer des décisions et des règles dans l’intérêt d’acteurs ou de secteurs. Cette influence peut modifier les conditions collectives de prévention.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c022",
+        "theme": "Les déterminants commerciaux",
+        "front": "Que cherche à faire le lobbying ?",
+        "answers": [
+          "Influencer des décisions et des règles dans l’intérêt d’acteurs ou de secteurs."
+        ],
+        "explanation": "Cette influence peut modifier les conditions collectives de prévention."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q023",
+    "courseId": "determinants_sante",
+    "number": 23,
+    "theme": "Les déterminants commerciaux",
+    "difficulty": "medium",
+    "question": "Comment utiliser un indicateur d’aide au choix alimentaire tel que le Nutri-Score ?",
+    "choices": [
+      "En déduire que tous les ménages ont les mêmes possibilités de choix.",
+      "Distinguer aide à la comparaison et description exhaustive.",
+      "Le traiter comme une information couvrant toutes les dimensions d’un aliment.",
+      "Supprimer l’analyse de l’environnement commercial.",
+      "Tenir compte des contraintes financières."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les ressources et l’offre restent inégalement réparties.",
+      "Un indicateur résume certains aspects de l’aliment.",
+      "Il ne constitue pas une description exhaustive.",
+      "L’indicateur ne remplace pas l’analyse de l’offre, des prix et de la promotion.",
+      "L’accès ne dépend pas seulement de la compréhension de l’indicateur."
+    ],
+    "explanation": "Un indicateur alimentaire aide à comparer mais ne décrit pas tout l’aliment et ne supprime ni le coût ni les contraintes matérielles. Une information utile n’équivaut pas à une possibilité d’achat ou de préparation.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c023",
+        "theme": "Les déterminants commerciaux",
+        "front": "Pourquoi un indicateur alimentaire ne résout-il pas toutes les contraintes de choix ?",
+        "answers": [
+          "Un indicateur alimentaire aide à comparer mais ne décrit pas tout l’aliment et ne supprime ni le coût ni les contraintes matérielles."
+        ],
+        "explanation": "Une information utile n’équivaut pas à une possibilité d’achat ou de préparation."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q024",
+    "courseId": "determinants_sante",
+    "number": 24,
+    "theme": "Les déterminants commerciaux",
+    "difficulty": "hard",
+    "question": "Présenter la santé comme le seul résultat de décisions personnelles peut avoir quels effets ?",
+    "choices": [
+      "Rendre inutile toute aide à la personne.",
+      "Démontrer que les conditions économiques n’interviennent pas.",
+      "Masquer certains obstacles matériels.",
+      "Établir que les personnes n’ont aucune capacité d’action.",
+      "Faire oublier l’influence de la promotion commerciale."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une aide individuelle reste utile, articulée aux autres niveaux.",
+      "Cette présentation ne constitue pas une preuve d’absence d’effet.",
+      "Une responsabilité exclusivement individuelle peut rendre les contraintes invisibles.",
+      "Critiquer une responsabilité exclusive ne nie pas toute autonomie.",
+      "L’environnement peut rendre certains choix plus probables."
+    ],
+    "explanation": "Oublier les effets de l’offre, des prix, de la publicité et des conditions de vie. La capacité d’action existe mais s’exerce dans un contexte.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c024",
+        "theme": "Les déterminants commerciaux",
+        "front": "Quel est le risque d’attribuer toute la santé aux choix individuels ?",
+        "answers": [
+          "Oublier les effets de l’offre, des prix, de la publicité et des conditions de vie."
+        ],
+        "explanation": "La capacité d’action existe mais s’exerce dans un contexte."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q025",
+    "courseId": "determinants_sante",
+    "number": 25,
+    "theme": "Inégalités de santé et gradient social",
+    "difficulty": "medium",
+    "question": "À propos des inégalités sociales de santé :",
+    "choices": [
+      "Elles disparaissent dès qu’une moyenne nationale s’améliore.",
+      "Elles peuvent concerner la répartition des expositions.",
+      "Elles correspondent uniquement à des variations génétiques.",
+      "Elles peuvent concerner l’accès aux ressources et aux soins.",
+      "Toute différence entre deux personnes est nécessairement une inégalité sociale."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une moyenne peut progresser alors que des écarts persistent.",
+      "Les risques ne sont pas nécessairement répartis de façon égale.",
+      "Les logiques sociales et institutionnelles sont centrales dans cette notion.",
+      "Les possibilités d’action participent aux écarts de santé.",
+      "Il faut identifier les mécanismes et les groupes sociaux concernés."
+    ],
+    "explanation": "Des écarts de santé entre groupes sociaux, liés à des mécanismes sociaux et institutionnels. L’analyse cherche comment se répartissent les expositions et les ressources.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c025",
+        "theme": "Inégalités de santé et gradient social",
+        "front": "Que désignent les inégalités sociales de santé ?",
+        "answers": [
+          "Des écarts de santé entre groupes sociaux, liés à des mécanismes sociaux et institutionnels."
+        ],
+        "explanation": "L’analyse cherche comment se répartissent les expositions et les ressources."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q026",
+    "courseId": "determinants_sante",
+    "number": 26,
+    "theme": "Inégalités de santé et gradient social",
+    "difficulty": "easy",
+    "question": "Que décrit le gradient social de santé ?",
+    "choices": [
+      "Une différence présente uniquement entre les deux catégories extrêmes.",
+      "La preuve que le revenu est la seule explication possible.",
+      "Une évolution de la santé selon la position sociale.",
+      "Un diagnostic identique chez tous les membres d’un groupe.",
+      "Une échelle de gravité propre à une seule maladie."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le gradient peut concerner toute la distribution sociale.",
+      "D’autres ressources, expositions et mécanismes interviennent.",
+      "C’est le principe d’un gradient.",
+      "Une tendance collective n’efface pas les différences individuelles.",
+      "Le gradient décrit une relation sociale, pas une classification clinique unique."
+    ],
+    "explanation": "Des écarts peuvent apparaître tout au long des positions sociales. Le gradient ne se limite pas aux deux extrêmes.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c026",
+        "theme": "Inégalités de santé et gradient social",
+        "front": "Pourquoi le gradient social dépasse-t-il l’opposition entre pauvres et riches ?",
+        "answers": [
+          "Des écarts peuvent apparaître tout au long des positions sociales."
+        ],
+        "explanation": "Le gradient ne se limite pas aux deux extrêmes."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q027",
+    "courseId": "determinants_sante",
+    "number": 27,
+    "theme": "Inégalités de santé et gradient social",
+    "difficulty": "hard",
+    "question": "En 2020–2022, un graphique compare chez des hommes de 35 ans 40,5 et 48,5 années restantes selon le diplôme. Quelles lectures sont correctes ?",
+    "choices": [
+      "Les valeurs expriment des années restant à vivre à 35 ans.",
+      "Chaque homme du groupe vivra exactement cette durée.",
+      "L’axe du diplôme peut être renommé catégorie professionnelle sans précaution.",
+      "Le groupe à 40,5 années meurt en moyenne à 40,5 ans.",
+      "L’écart entre les deux valeurs est de 8 ans."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’âge de départ doit être distingué de la durée restante.",
+      "L’espérance de vie est un indicateur moyen.",
+      "Le diplôme et la profession sont des variables distinctes.",
+      "La valeur représente une durée restante à partir de 35 ans.",
+      "La différence arithmétique est de 48,5 moins 40,5."
+    ],
+    "explanation": "Il s’agit de huit années restantes d’écart en moyenne entre les groupes comparés, dans la période étudiée. Ce n’est ni un âge au décès ni une prédiction individuelle.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c027",
+        "theme": "Inégalités de santé et gradient social",
+        "front": "Comment lire un écart de 40,5 à 48,5 années d’espérance de vie à 35 ans ?",
+        "answers": [
+          "Il s’agit de huit années restantes d’écart en moyenne entre les groupes comparés, dans la période étudiée."
+        ],
+        "explanation": "Ce n’est ni un âge au décès ni une prédiction individuelle."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q028",
+    "courseId": "determinants_sante",
+    "number": 28,
+    "theme": "Inégalités de santé et gradient social",
+    "difficulty": "hard",
+    "question": "Un graphique rapproche PIB par habitant et espérance de vie à la naissance. Que permet-il d’affirmer ?",
+    "choices": [
+      "Les deux indicateurs peuvent être associés à l’échelle des pays.",
+      "Aucune autre condition collective ne peut contribuer aux écarts.",
+      "Doubler le PIB double nécessairement l’espérance de vie.",
+      "L’association identifie à elle seule le mécanisme causal.",
+      "Le graphique donne la durée de vie certaine d’un habitant."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est le niveau de comparaison présenté par ce type de graphique.",
+      "L’organisation des soins et d’autres déterminants peuvent intervenir.",
+      "Une proportionnalité arithmétique ne découle pas de l’association.",
+      "Une association ne suffit pas à démontrer toute la causalité.",
+      "Un indicateur agrégé ne prédit pas le devenir individuel."
+    ],
+    "explanation": "Le graphique décrit une association à l’échelle des pays, sans établir une règle de hausse automatiquement proportionnelle. La richesse ne résume pas tous les déterminants.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c028",
+        "theme": "Inégalités de santé et gradient social",
+        "front": "Une association entre PIB et espérance de vie prouve-t-elle une hausse automatiquement proportionnelle ?",
+        "answers": [
+          "Le graphique décrit une association à l’échelle des pays, sans établir une règle de hausse automatiquement proportionnelle."
+        ],
+        "explanation": "La richesse ne résume pas tous les déterminants."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q029",
+    "courseId": "determinants_sante",
+    "number": 29,
+    "theme": "Genre, discriminations et adéquation des soins",
+    "difficulty": "easy",
+    "question": "Comment distinguer sexe biologique et genre dans l’analyse de la santé ?",
+    "choices": [
+      "Le genre ne peut agir que par la génétique.",
+      "Genre et sexe biologique sont deux termes strictement interchangeables.",
+      "Le sexe biologique figure au centre du modèle de Dahlgren et Whitehead.",
+      "Le genre peut influencer les rôles et les charges attendus.",
+      "Toute plainte peut être interprétée à partir du sexe seul."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les normes et rapports sociaux ont leurs propres mécanismes.",
+      "Ils désignent des dimensions distinctes.",
+      "Le modèle le classe parmi les caractéristiques individuelles centrales.",
+      "Il décrit une dimension sociale.",
+      "Une évaluation de la situation et du besoin réel reste nécessaire."
+    ],
+    "explanation": "Le sexe renvoie aux caractéristiques biologiques ; le genre aux rôles, normes et rapports sociaux. Les deux dimensions peuvent participer à des situations de santé différentes.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c029",
+        "theme": "Genre, discriminations et adéquation des soins",
+        "front": "Quelle différence faire entre sexe biologique et rapports sociaux de genre ?",
+        "answers": [
+          "Le sexe renvoie aux caractéristiques biologiques ; le genre aux rôles, normes et rapports sociaux."
+        ],
+        "explanation": "Les deux dimensions peuvent participer à des situations de santé différentes."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q030",
+    "courseId": "determinants_sante",
+    "number": 30,
+    "theme": "Genre, discriminations et adéquation des soins",
+    "difficulty": "hard",
+    "question": "Une plainte thoracique est rapidement attribuée à l’angoisse sur la base d’un stéréotype de genre. Que met cette situation en évidence ?",
+    "choices": [
+      "La situation permet d’exclure la plainte sans examen.",
+      "Une consultation réalisée ne garantit pas l’adéquation de la réponse.",
+      "Les représentations peuvent influencer l’interprétation d’une plainte.",
+      "Le stéréotype constitue un critère diagnostique suffisant.",
+      "Le biais se situe uniquement avant le premier contact avec les soins."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle illustre justement le risque d’une interprétation prématurée.",
+      "L’existence du contact ne suffit pas à établir la qualité de l’évaluation.",
+      "Elles peuvent orienter l’écoute et la reconnaissance des besoins.",
+      "Une représentation de groupe ne remplace pas l’évaluation clinique.",
+      "Il peut apparaître au sein même du système de soins."
+    ],
+    "explanation": "Un biais de reconnaissance du besoin et un risque de réponse inadaptée. La représentation sociale ne doit pas remplacer l’évaluation de la situation.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c030",
+        "theme": "Genre, discriminations et adéquation des soins",
+        "front": "Quel problème révèle une plainte banalisée à cause d’un stéréotype ?",
+        "answers": [
+          "Un biais de reconnaissance du besoin et un risque de réponse inadaptée."
+        ],
+        "explanation": "La représentation sociale ne doit pas remplacer l’évaluation de la situation."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q031",
+    "courseId": "determinants_sante",
+    "number": 31,
+    "theme": "Genre, discriminations et adéquation des soins",
+    "difficulty": "medium",
+    "question": "Quels mécanismes peuvent relier discrimination et recours aux soins ?",
+    "choices": [
+      "La crainte d’un jugement peut décourager une demande.",
+      "Une expérience de stigmatisation peut réduire la confiance.",
+      "Une offre connue est toujours utilisée sans hésitation.",
+      "Un rendez-vous disponible efface nécessairement une discrimination.",
+      "Le refus apparent prouve systématiquement un désintérêt pour la santé."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle peut agir avant l’utilisation effective des soins.",
+      "La relation aux services dépend aussi d’expériences et de représentations.",
+      "La connaissance ne supprime pas les craintes et les obstacles.",
+      "La disponibilité ne garantit pas une expérience adaptée.",
+      "Des mécanismes de méfiance ou de protection peuvent être présents."
+    ],
+    "explanation": "Elle peut altérer la confiance et décourager ou retarder la démarche. L’obstacle ne se réduit donc pas à une mauvaise connaissance de l’offre.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c031",
+        "theme": "Genre, discriminations et adéquation des soins",
+        "front": "Comment la crainte d’être jugé peut-elle influencer le recours aux soins ?",
+        "answers": [
+          "Elle peut altérer la confiance et décourager ou retarder la démarche."
+        ],
+        "explanation": "L’obstacle ne se réduit donc pas à une mauvaise connaissance de l’offre."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q032",
+    "courseId": "determinants_sante",
+    "number": 32,
+    "theme": "Genre, discriminations et adéquation des soins",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent l’adéquation des soins ?",
+    "choices": [
+      "La réponse doit correspondre au besoin réel.",
+      "Elle se mesure uniquement par le nombre de bâtiments de soins.",
+      "L’organisation des services peut être en jeu.",
+      "Les compétences professionnelles peuvent être en jeu.",
+      "Elle suppose d’appliquer le même raisonnement à toutes les personnes sans évaluation."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’adéquation va au-delà de la présence d’une offre.",
+      "La disponibilité ne suffit pas à décrire la pertinence de la réponse.",
+      "L’organisation influence la possibilité de répondre aux besoins.",
+      "Une formation insuffisante peut rendre la réponse moins adaptée.",
+      "Les besoins doivent être appréciés dans leur situation."
+    ],
+    "explanation": "La correspondance entre les besoins réels et la réponse proposée, avec des compétences et une organisation adaptées. Recevoir une personne ne garantit pas à soi seul cette correspondance.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c032",
+        "theme": "Genre, discriminations et adéquation des soins",
+        "front": "Que signifie l’adéquation des soins ?",
+        "answers": [
+          "La correspondance entre les besoins réels et la réponse proposée, avec des compétences et une organisation adaptées."
+        ],
+        "explanation": "Recevoir une personne ne garantit pas à soi seul cette correspondance."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q033",
+    "courseId": "determinants_sante",
+    "number": 33,
+    "theme": "Besoin, accès, recours et poursuite des soins",
+    "difficulty": "easy",
+    "question": "Quel enchaînement décrit trois grandes étapes du parcours de soins ?",
+    "choices": [
+      "Recours, disparition obligatoire du besoin, guérison certaine.",
+      "Publication d’une offre, consultation, absence définitive d’obstacles.",
+      "Connaissance d’un service et utilisation sont la même étape.",
+      "Diagnostic, hérédité, fiscalité.",
+      "Besoin perçu, recours, utilisation et poursuite."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le recours ne garantit ni disparition du besoin ni guérison.",
+      "Les obstacles peuvent persister après la consultation.",
+      "Connaître une possibilité ne signifie pas l’utiliser.",
+      "Ces notions ne forment pas cette succession d’étapes.",
+      "Cet enchaînement distingue la perception, la démarche et l’utilisation."
+    ],
+    "explanation": "Percevoir le besoin, recourir aux soins, puis utiliser et poursuivre les soins. Un obstacle peut survenir à chacune de ces étapes.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c033",
+        "theme": "Besoin, accès, recours et poursuite des soins",
+        "front": "Quelles sont les trois étapes du parcours d’accès étudié ?",
+        "answers": [
+          "Percevoir le besoin, recourir aux soins, puis utiliser et poursuivre les soins."
+        ],
+        "explanation": "Un obstacle peut survenir à chacune de ces étapes."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q034",
+    "courseId": "determinants_sante",
+    "number": 34,
+    "theme": "Besoin, accès, recours et poursuite des soins",
+    "difficulty": "medium",
+    "question": "À propos de l’accès et du recours aux soins :",
+    "choices": [
+      "Un service présent signifie que chaque personne le consulte.",
+      "Un contact réalisé ne garantit pas la poursuite des soins.",
+      "Une possibilité d’accès ne garantit pas le recours.",
+      "Le recours résume la durée du traitement.",
+      "Accès et recours sont deux noms d’une même mesure obligatoire."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La présence d’une offre ne prouve pas son utilisation.",
+      "L’utilisation durable dépend aussi du coût et des contraintes quotidiennes.",
+      "La personne peut rencontrer d’autres obstacles à la démarche.",
+      "Il concerne la démarche effective, à distinguer de sa poursuite.",
+      "Ils décrivent des dimensions différentes."
+    ],
+    "explanation": "L’accès concerne les possibilités d’obtenir des services ; le recours est la démarche effective vers l’offre. Une possibilité théorique peut rester inutilisée.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c034",
+        "theme": "Besoin, accès, recours et poursuite des soins",
+        "front": "Quelle différence faire entre accès et recours ?",
+        "answers": [
+          "L’accès concerne les possibilités d’obtenir des services ; le recours est la démarche effective vers l’offre."
+        ],
+        "explanation": "Une possibilité théorique peut rester inutilisée."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q035",
+    "courseId": "determinants_sante",
+    "number": 35,
+    "theme": "Besoin, accès, recours et poursuite des soins",
+    "difficulty": "medium",
+    "question": "Une personne comprend son besoin mais ne peut pas se déplacer vers le service. Quels éléments analyser ?",
+    "choices": [
+      "La proximité et la répartition de l’offre.",
+      "Les possibilités de déplacement de la personne.",
+      "La poursuite du traitement comme unique étape concernée.",
+      "Une preuve que la personne refuse les soins.",
+      "Uniquement sa capacité à reconnaître un symptôme."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les propriétés de l’offre peuvent aggraver ou réduire la difficulté.",
+      "La mobilité conditionne la réalisation de la démarche.",
+      "Le premier obstacle décrit se situe avant l’utilisation du service.",
+      "L’obstacle matériel suffit à empêcher la démarche sans refus.",
+      "Le besoin est déjà reconnu dans la situation décrite."
+    ],
+    "explanation": "Un obstacle matériel au recours aux soins. Identifier le besoin ne garantit pas la possibilité d’atteindre l’offre.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c035",
+        "theme": "Besoin, accès, recours et poursuite des soins",
+        "front": "Quel obstacle rencontre une personne qui reconnaît un besoin mais manque de transport ?",
+        "answers": [
+          "Un obstacle matériel au recours aux soins."
+        ],
+        "explanation": "Identifier le besoin ne garantit pas la possibilité d’atteindre l’offre."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q036",
+    "courseId": "determinants_sante",
+    "number": 36,
+    "theme": "Besoin, accès, recours et poursuite des soins",
+    "difficulty": "hard",
+    "question": "Après une consultation, une personne ne peut pas poursuivre les soins en raison du coût et de ses horaires. Quelles interprétations sont pertinentes ?",
+    "choices": [
+      "Attribuer d’emblée la difficulté à une opposition volontaire.",
+      "Examiner l’adaptation de l’organisation et du projet.",
+      "Considérer que tous les obstacles sont résolus puisque la consultation a eu lieu.",
+      "Rechercher les contraintes de l’utilisation durable.",
+      "Classer systématiquement la situation comme non-connaissance de l’offre."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le coût et les horaires constituent des contraintes identifiées.",
+      "Une réponse adaptée doit pouvoir être mise en pratique.",
+      "Des difficultés peuvent persister ou apparaître ensuite.",
+      "L’obstacle apparaît après la rencontre avec le service.",
+      "L’offre a déjà été utilisée ; la difficulté décrite est différente."
+    ],
+    "explanation": "Le coût, le temps, les contraintes quotidiennes et l’adaptation de la réponse peuvent encore faire obstacle. Le parcours doit être étudié au-delà du premier contact.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c036",
+        "theme": "Besoin, accès, recours et poursuite des soins",
+        "front": "Pourquoi une consultation ne garantit-elle pas la poursuite des soins ?",
+        "answers": [
+          "Le coût, le temps, les contraintes quotidiennes et l’adaptation de la réponse peuvent encore faire obstacle."
+        ],
+        "explanation": "Le parcours doit être étudié au-delà du premier contact."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q037",
+    "courseId": "determinants_sante",
+    "number": 37,
+    "theme": "La littératie en santé",
+    "difficulty": "easy",
+    "question": "Quelles opérations appartiennent à la littératie en santé ?",
+    "choices": [
+      "Comprendre et évaluer l’information.",
+      "Utiliser l’information pour agir.",
+      "Mémoriser toute information sans la discuter.",
+      "Accéder à une information utile.",
+      "Posséder un diplôme suffit nécessairement."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Donner du sens et apprécier l’intérêt sont deux opérations complémentaires.",
+      "La mise en pratique fait partie de la littératie.",
+      "L’évaluation critique ne se réduit pas à la mémorisation.",
+      "Repérer une information ou une ressource constitue une première opération.",
+      "Le diplôme ne garantit pas l’utilisation des informations dans chaque situation."
+    ],
+    "explanation": "Accéder à l’information, la comprendre, l’évaluer et l’utiliser. Savoir lire ne suffit pas à garantir ces quatre possibilités.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c037",
+        "theme": "La littératie en santé",
+        "front": "Quelles sont les quatre opérations de la littératie en santé ?",
+        "answers": [
+          "Accéder à l’information, la comprendre, l’évaluer et l’utiliser."
+        ],
+        "explanation": "Savoir lire ne suffit pas à garantir ces quatre possibilités."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q038",
+    "courseId": "determinants_sante",
+    "number": 38,
+    "theme": "La littératie en santé",
+    "difficulty": "medium",
+    "question": "Comment s’articulent les approches clinique et de santé publique de la littératie ?",
+    "choices": [
+      "La littératie relève uniquement de compétences individuelles immuables.",
+      "L’approche clinique peut concerner la compréhension d’un traitement.",
+      "Choisir l’une interdit d’utiliser l’autre.",
+      "L’approche de santé publique élargit la réflexion à la prévention et à la vie quotidienne.",
+      "L’approche de santé publique exclut toute compréhension de l’information."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’environnement et l’organisation peuvent faciliter ou compliquer les démarches.",
+      "Elle s’intéresse notamment aux échanges et aux soins.",
+      "Les approches sont complémentaires.",
+      "Elle dépasse la seule relation de soin.",
+      "Les quatre opérations restent pertinentes."
+    ],
+    "explanation": "Non. Elles se complètent : compréhension des soins et possibilités d’agir pour la santé dans la vie quotidienne. L’environnement informationnel et les politiques comptent aussi.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c038",
+        "theme": "La littératie en santé",
+        "front": "Les deux approches de la littératie sont-elles concurrentes ?",
+        "answers": [
+          "Non. Elles se complètent : compréhension des soins et possibilités d’agir pour la santé dans la vie quotidienne."
+        ],
+        "explanation": "L’environnement informationnel et les politiques comptent aussi."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q039",
+    "courseId": "determinants_sante",
+    "number": 39,
+    "theme": "La littératie en santé",
+    "difficulty": "medium",
+    "question": "Une prise de rendez-vous exclusivement numérique met une personne en difficulté. Que rechercher ?",
+    "choices": [
+      "La compréhension du parcours proposé.",
+      "La maîtrise de l’outil numérique.",
+      "Un désintérêt certain pour la santé.",
+      "La disponibilité de l’équipement.",
+      "L’absence de tout obstacle lié à l’organisation de l’offre."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Des étapes opaques peuvent limiter l’utilisation effective.",
+      "Les compétences numériques participent à l’accès.",
+      "Une difficulté technique ne prouve pas un désintérêt.",
+      "Sans outil accessible, la démarche peut être empêchée.",
+      "Une procédure exclusivement numérique peut elle-même constituer un obstacle."
+    ],
+    "explanation": "Un manque d’équipement, une difficulté à utiliser l’outil ou à comprendre les étapes. La difficulté ne traduit pas nécessairement un manque d’intérêt.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c039",
+        "theme": "La littératie en santé",
+        "front": "Quels obstacles peut créer une prise de rendez-vous numérique ?",
+        "answers": [
+          "Un manque d’équipement, une difficulté à utiliser l’outil ou à comprendre les étapes."
+        ],
+        "explanation": "La difficulté ne traduit pas nécessairement un manque d’intérêt."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q040",
+    "courseId": "determinants_sante",
+    "number": 40,
+    "theme": "La littératie en santé",
+    "difficulty": "medium",
+    "question": "Pour vérifier la compréhension d’une démarche de santé, quelles pratiques sont cohérentes ?",
+    "choices": [
+      "Assimiler une bonne répétition des mots à une mise en pratique certaine.",
+      "Déduire la compréhension du seul niveau de diplôme.",
+      "Adapter les mots utilisés.",
+      "Multiplier les termes techniques sans explication.",
+      "Vérifier ce que la personne a compris."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La compréhension ne garantit pas les moyens d’agir.",
+      "Le diplôme ne suffit pas à apprécier la situation réelle.",
+      "Un langage accessible peut faciliter la compréhension.",
+      "Cela risque d’augmenter l’obstacle informationnel.",
+      "Cela permet de repérer l’opération qui pose problème."
+    ],
+    "explanation": "Employer des mots accessibles, expliciter les étapes et vérifier ce que la personne a compris. Comprendre une information et pouvoir l’appliquer restent deux questions distinctes.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c040",
+        "theme": "La littératie en santé",
+        "front": "Comment rendre une démarche plus accessible pendant un échange ?",
+        "answers": [
+          "Employer des mots accessibles, expliciter les étapes et vérifier ce que la personne a compris."
+        ],
+        "explanation": "Comprendre une information et pouvoir l’appliquer restent deux questions distinctes."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q041",
+    "courseId": "determinants_sante",
+    "number": 41,
+    "theme": "Le non-recours : trois formes à distinguer",
+    "difficulty": "easy",
+    "question": "Que désigne le non-recours à une offre ou à un droit ?",
+    "choices": [
+      "Uniquement le refus explicite d’un soin proposé.",
+      "La preuve que le dispositif n’existe pas.",
+      "Une absence de bénéfice effectif malgré une possibilité d’y prétendre.",
+      "Un diagnostic de manque de motivation.",
+      "Toute absence de maladie dans une population."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "D’autres mécanismes, comme l’ignorance de l’offre, sont possibles.",
+      "Une offre peut exister sans être effectivement utilisée.",
+      "C’est le décalage central de la notion.",
+      "Le constat ne suffit pas à expliquer les causes.",
+      "Cela ne décrit pas le rapport à une offre ou à un droit."
+    ],
+    "explanation": "La situation d’une personne qui ne bénéficie pas d’une offre, d’un droit ou d’un service auquel elle pourrait prétendre. Il n’est pas synonyme de refus volontaire.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c041",
+        "theme": "Le non-recours : trois formes à distinguer",
+        "front": "Comment définir le non-recours ?",
+        "answers": [
+          "La situation d’une personne qui ne bénéficie pas d’une offre, d’un droit ou d’un service auquel elle pourrait prétendre."
+        ],
+        "explanation": "Il n’est pas synonyme de refus volontaire."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q042",
+    "courseId": "determinants_sante",
+    "number": 42,
+    "theme": "Le non-recours : trois formes à distinguer",
+    "difficulty": "easy",
+    "question": "Une personne ignore qu’un service pourrait la concerner. Quelle forme de non-recours est décrite ?",
+    "choices": [
+      "La non-réception après une demande complète.",
+      "La non-connaissance.",
+      "Une adhésion durable au projet.",
+      "Une impossibilité biologique d’accéder à toute information.",
+      "La poursuite effective des soins."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Aucune demande connue et engagée n’est décrite ici.",
+      "L’offre est inconnue de la personne.",
+      "La situation porte sur la connaissance préalable de l’offre.",
+      "Une ignorance située n’établit pas cette impossibilité générale.",
+      "Le bénéfice du service n’a pas commencé."
+    ],
+    "explanation": "L’ignorance de l’existence d’une offre ou d’un droit. L’obstacle apparaît avant la possibilité de formuler une demande informée.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c042",
+        "theme": "Le non-recours : trois formes à distinguer",
+        "front": "Qu’est-ce que la non-connaissance ?",
+        "answers": [
+          "L’ignorance de l’existence d’une offre ou d’un droit."
+        ],
+        "explanation": "L’obstacle apparaît avant la possibilité de formuler une demande informée."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q043",
+    "courseId": "determinants_sante",
+    "number": 43,
+    "theme": "Le non-recours : trois formes à distinguer",
+    "difficulty": "medium",
+    "question": "Une personne connaît une aide mais renonce à déposer sa demande par crainte d’être jugée. Quelle analyse retenir ?",
+    "choices": [
+      "La prestation a nécessairement été reçue.",
+      "Il s’agit nécessairement de non-connaissance.",
+      "L’offre connue est toujours demandée.",
+      "Une non-demande est possible.",
+      "La crainte du jugement peut participer au mécanisme."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’absence de demande ne permet pas cette conclusion.",
+      "La connaissance de l’offre est précisée.",
+      "Connaissance et demande sont deux étapes distinctes.",
+      "La personne connaît l’offre mais n’engage pas la démarche.",
+      "Un obstacle relationnel ou social peut décourager la demande."
+    ],
+    "explanation": "Une offre est connue mais aucune demande effective ou complète n’est faite. Les craintes ou la complexité peuvent décourager la démarche.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c043",
+        "theme": "Le non-recours : trois formes à distinguer",
+        "front": "Qu’est-ce que la non-demande ?",
+        "answers": [
+          "Une offre est connue mais aucune demande effective ou complète n’est faite."
+        ],
+        "explanation": "Les craintes ou la complexité peuvent décourager la démarche."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q044",
+    "courseId": "determinants_sante",
+    "number": 44,
+    "theme": "Le non-recours : trois formes à distinguer",
+    "difficulty": "medium",
+    "question": "Une demande est engagée mais la prestation n’arrive pas en raison d’un obstacle administratif. Quelle forme de non-recours est illustrée ?",
+    "choices": [
+      "La non-réception.",
+      "La preuve que le droit est identique dans tous les dispositifs.",
+      "L’utilisation durable du service.",
+      "La preuve que la personne n’a jamais voulu demander.",
+      "La seule non-connaissance de l’offre."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La demande ne conduit pas au bénéfice effectif décrit.",
+      "La situation n’établit aucune règle juridique universelle.",
+      "La réception effective fait précisément défaut.",
+      "La demande engagée contredit cette conclusion.",
+      "La démarche a déjà été engagée."
+    ],
+    "explanation": "Une demande a été engagée mais la personne ne reçoit pas effectivement la prestation ou le service. Un délai ou un défaut de coordination peut rompre le parcours.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c044",
+        "theme": "Le non-recours : trois formes à distinguer",
+        "front": "Qu’est-ce que la non-réception ?",
+        "answers": [
+          "Une demande a été engagée mais la personne ne reçoit pas effectivement la prestation ou le service."
+        ],
+        "explanation": "Un délai ou un défaut de coordination peut rompre le parcours."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q045",
+    "courseId": "determinants_sante",
+    "number": 45,
+    "theme": "Intervenir : universel ne signifie pas uniforme",
+    "difficulty": "easy",
+    "question": "Quels niveaux peut viser une intervention de santé publique ?",
+    "choices": [
+      "Le niveau systémique.",
+      "Exclusivement le niveau biologique inné.",
+      "Le niveau individuel ou familial.",
+      "Le niveau communautaire.",
+      "Exclusivement une consultation médicale."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les règles et les organisations peuvent être modifiées.",
+      "Les interventions ne se limitent pas à cette dimension.",
+      "Un accompagnement adapté peut viser une personne et ses proches.",
+      "Un groupe ou un territoire peut mobiliser des ressources collectives.",
+      "Les moyens d’action dépassent les contacts individuels de soins."
+    ],
+    "explanation": "Individuel et familial, communautaire, et systémique. L’action peut soutenir une personne, mobiliser un groupe ou modifier l’organisation.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c045",
+        "theme": "Intervenir : universel ne signifie pas uniforme",
+        "front": "Quels sont les trois niveaux d’intervention de santé publique ?",
+        "answers": [
+          "Individuel et familial, communautaire, et systémique."
+        ],
+        "explanation": "L’action peut soutenir une personne, mobiliser un groupe ou modifier l’organisation."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q046",
+    "courseId": "determinants_sante",
+    "number": 46,
+    "theme": "Intervenir : universel ne signifie pas uniforme",
+    "difficulty": "medium",
+    "question": "Que caractérise l’universalisme proportionné ?",
+    "choices": [
+      "Une portée universelle.",
+      "Un soutien plus important lorsque les besoins sont plus importants.",
+      "La seule amélioration d’une moyenne sans examiner les écarts.",
+      "Une action réservée uniquement à un groupe excluant les autres.",
+      "Des moyens strictement identiques pour tous, quelles que soient les difficultés."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’action s’adresse à l’ensemble de la population concernée.",
+      "Les moyens sont proportionnés aux obstacles rencontrés.",
+      "La réduction du gradient fait partie de l’objectif.",
+      "Une action seulement ciblée ne constitue pas à elle seule ce principe universel.",
+      "Cette uniformité n’est pas le principe de proportionnalité."
+    ],
+    "explanation": "Une action destinée à tous, avec une intensité adaptée aux besoins et aux obstacles. L’objectif est aussi de réduire le gradient social.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c046",
+        "theme": "Intervenir : universel ne signifie pas uniforme",
+        "front": "Comment définir l’universalisme proportionné ?",
+        "answers": [
+          "Une action destinée à tous, avec une intensité adaptée aux besoins et aux obstacles."
+        ],
+        "explanation": "L’objectif est aussi de réduire le gradient social."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q047",
+    "courseId": "determinants_sante",
+    "number": 47,
+    "theme": "Intervenir : universel ne signifie pas uniforme",
+    "difficulty": "hard",
+    "question": "Une campagne identique pour tous bénéficie surtout aux personnes disposant déjà de nombreuses ressources. Que peut-il se passer ?",
+    "choices": [
+      "Les inégalités mesurées prouvent que toute prévention est inutile.",
+      "Il suffit de supprimer toute offre universelle.",
+      "La moyenne peut s’améliorer alors que les écarts persistent.",
+      "Un accompagnement adapté peut être nécessaire.",
+      "Une offre identique garantit nécessairement des bénéfices identiques."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles conduisent à examiner l’adaptation de l’intervention.",
+      "Une portée universelle peut être conservée avec un soutien proportionné.",
+      "La moyenne et la distribution des bénéfices sont distinctes.",
+      "Certains obstacles demandent davantage de moyens.",
+      "Les capacités d’utilisation peuvent différer."
+    ],
+    "explanation": "Les personnes disposent de ressources différentes pour en bénéficier ; sans adaptation, les écarts peuvent persister ou s’accroître. L’égalité formelle de l’offre ne garantit pas l’équité.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c047",
+        "theme": "Intervenir : universel ne signifie pas uniforme",
+        "front": "Pourquoi une offre identique pour tous peut-elle laisser persister des inégalités ?",
+        "answers": [
+          "Les personnes disposent de ressources différentes pour en bénéficier ; sans adaptation, les écarts peuvent persister ou s’accroître."
+        ],
+        "explanation": "L’égalité formelle de l’offre ne garantit pas l’équité."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q048",
+    "courseId": "determinants_sante",
+    "number": 48,
+    "theme": "Intervenir : universel ne signifie pas uniforme",
+    "difficulty": "medium",
+    "question": "Quelle situation illustre un universalisme proportionné ?",
+    "choices": [
+      "La suppression de l’aide dès que la moyenne progresse.",
+      "Une aide graduée attribuée sans évaluer les difficultés.",
+      "Une information réservée aux personnes déjà équipées numériquement.",
+      "Une information pour tous, avec une aide supplémentaire selon les obstacles.",
+      "Le même accompagnement obligatoire, indépendamment des besoins."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Il faut aussi considérer les écarts et les besoins persistants.",
+      "Une catégorie ne suffit pas à déduire les besoins de chaque personne.",
+      "L’exclusion de publics ne constitue pas une portée universelle.",
+      "Les deux composantes du principe sont présentes.",
+      "La proportionnalité aux besoins est absente."
+    ],
+    "explanation": "Proposer l’information à tous et ajouter un accompagnement selon les difficultés de langue, de mobilité ou de numérique. L’intensité varie tout en conservant une portée universelle.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c048",
+        "theme": "Intervenir : universel ne signifie pas uniforme",
+        "front": "Comment appliquer l’universalisme proportionné à une information de santé ?",
+        "answers": [
+          "Proposer l’information à tous et ajouter un accompagnement selon les difficultés de langue, de mobilité ou de numérique."
+        ],
+        "explanation": "L’intensité varie tout en conservant une portée universelle."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q049",
+    "courseId": "determinants_sante",
+    "number": 49,
+    "theme": "La roue des interventions et l’exemple HPV",
+    "difficulty": "medium",
+    "question": "Comment comprendre la roue des interventions de santé publique ?",
+    "choices": [
+      "Elle correspond aux cinq couches de Dahlgren et Whitehead sans autre distinction.",
+      "Elle comprend cinq niveaux biologiques de gravité.",
+      "Elle décrit une diversité de moyens d’action.",
+      "Chaque action doit utiliser exactement les dix-sept fonctions.",
+      "Plusieurs fonctions peuvent participer à une même intervention."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les deux modèles organisent des objets différents : déterminants et interventions.",
+      "Les cinq familles regroupent des fonctions d’intervention.",
+      "Elle dépasse la seule diffusion d’information.",
+      "La roue n’impose pas cette combinaison systématique.",
+      "Les fonctions ne sont pas obligatoirement exclusives."
+    ],
+    "explanation": "Dix-sept fonctions réparties en cinq familles, articulées aux trois niveaux d’intervention. Les fonctions peuvent se combiner dans une même action.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c049",
+        "theme": "La roue des interventions et l’exemple HPV",
+        "front": "Que représente la roue des interventions de santé publique ?",
+        "answers": [
+          "Dix-sept fonctions réparties en cinq familles, articulées aux trois niveaux d’intervention."
+        ],
+        "explanation": "Les fonctions peuvent se combiner dans une même action."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q050",
+    "courseId": "determinants_sante",
+    "number": 50,
+    "theme": "La roue des interventions et l’exemple HPV",
+    "difficulty": "medium",
+    "question": "Quelles associations fonction–action sont cohérentes ?",
+    "choices": [
+      "Coordonner plusieurs intervenants se réduit à une publicité commerciale.",
+      "Mesurer un indicateur constitue à lui seul une gestion de cas.",
+      "Mettre une personne en relation avec un service relève de l’orientation.",
+      "Solliciter une expertise signifie exclusivement prendre un rendez-vous de soins.",
+      "Suivre une couverture vaccinale relève de la surveillance."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La coordination relève notamment de la gestion de cas et de la collaboration.",
+      "La gestion de cas implique l’organisation d’un accompagnement.",
+      "L’action facilite l’accès à une ressource.",
+      "La consultation de la roue peut désigner un apport d’expertise.",
+      "L’action suit l’évolution d’un indicateur."
+    ],
+    "explanation": "La surveillance suit des indicateurs ; l’orientation met en relation avec des ressources adaptées et veille à la suite. Observer une situation et faciliter une démarche sont des fonctions différentes.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c050",
+        "theme": "La roue des interventions et l’exemple HPV",
+        "front": "Quelle différence faire entre surveillance et orientation ?",
+        "answers": [
+          "La surveillance suit des indicateurs ; l’orientation met en relation avec des ressources adaptées et veille à la suite."
+        ],
+        "explanation": "Observer une situation et faciliter une démarche sont des fonctions différentes."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q051",
+    "courseId": "determinants_sante",
+    "number": 51,
+    "theme": "La roue des interventions et l’exemple HPV",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent l’aller-vers ?",
+    "choices": [
+      "Une équipe intervient dans un établissement scolaire ou une communauté.",
+      "L’aller-vers supprime tout besoin de coopération locale.",
+      "La démarche inverse une logique d’attente dans les services.",
+      "Le public doit obligatoirement se déplacer à l’hôpital.",
+      "L’aller-vers garantit à lui seul l’absence de tout obstacle ultérieur."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle rejoint le public dans son environnement.",
+      "La mobilisation de partenaires peut faciliter la démarche.",
+      "C’est le principe de l’aller-vers.",
+      "La démarche vise justement à rejoindre les personnes.",
+      "La poursuite des soins peut encore poser problème."
+    ],
+    "explanation": "Les professionnels se rendent auprès des personnes ou des communautés, au lieu d’attendre leur venue. Cela peut réduire certains obstacles au premier contact.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c051",
+        "theme": "La roue des interventions et l’exemple HPV",
+        "front": "Que signifie l’aller-vers ?",
+        "answers": [
+          "Les professionnels se rendent auprès des personnes ou des communautés, au lieu d’attendre leur venue."
+        ],
+        "explanation": "Cela peut réduire certains obstacles au premier contact."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q052",
+    "courseId": "determinants_sante",
+    "number": 52,
+    "theme": "La roue des interventions et l’exemple HPV",
+    "difficulty": "medium",
+    "question": "À propos du plaidoyer et du marketing social :",
+    "choices": [
+      "Le marketing social peut adapter une communication à un public.",
+      "Le marketing social vise nécessairement à vendre un produit.",
+      "Le plaidoyer peut faire prendre en compte un enjeu dans une politique.",
+      "Le plaidoyer désigne uniquement un test de dépistage.",
+      "Une campagne HPV ne peut mobiliser qu’une seule fonction."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il poursuit ici un objectif de santé.",
+      "Le terme est utilisé ici pour une finalité de santé publique.",
+      "Il cherche à peser sur les décisions.",
+      "Le test et l’influence sur les décisions sont des fonctions distinctes.",
+      "Surveillance, éducation, aller-vers et collaboration peuvent se combiner."
+    ],
+    "explanation": "Le plaidoyer cherche à influencer les décisions pour la santé ; le marketing social adapte une communication à un public et à cet objectif. Le marketing social n’est pas une publicité commerciale.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c052",
+        "theme": "La roue des interventions et l’exemple HPV",
+        "front": "Comment distinguer plaidoyer et marketing social ?",
+        "answers": [
+          "Le plaidoyer cherche à influencer les décisions pour la santé ; le marketing social adapte une communication à un public et à cet objectif."
+        ],
+        "explanation": "Le marketing social n’est pas une publicité commerciale."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q053",
+    "courseId": "determinants_sante",
+    "number": 53,
+    "theme": "Des stratégies publiques aux différentes couches",
+    "difficulty": "medium",
+    "question": "À quoi sert l’étude de stratégies publiques dans une analyse des déterminants ?",
+    "choices": [
+      "Confondre domaine de stratégie et calendrier clinique individuel.",
+      "Repérer les différents niveaux mobilisés.",
+      "Classer toute politique dans le patrimoine génétique.",
+      "Relier une orientation à des conditions de vie et à des ressources.",
+      "Déduire qu’un titre de stratégie garantit tous ses résultats."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces objets doivent être distingués.",
+      "L’action peut être individuelle, communautaire ou systémique.",
+      "Une politique relève de règles et d’organisations collectives.",
+      "Les politiques peuvent agir sur les déterminants.",
+      "Une intention politique ne prouve pas son effet réalisé."
+    ],
+    "explanation": "Pour identifier les déterminants visés et les niveaux par lesquels l’intervention peut agir. Une orientation générale peut se décliner en plusieurs moyens complémentaires.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c053",
+        "theme": "Des stratégies publiques aux différentes couches",
+        "front": "Pourquoi relier une stratégie publique à une action concrète ?",
+        "answers": [
+          "Pour identifier les déterminants visés et les niveaux par lesquels l’intervention peut agir."
+        ],
+        "explanation": "Une orientation générale peut se décliner en plusieurs moyens complémentaires."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q054",
+    "courseId": "determinants_sante",
+    "number": 54,
+    "theme": "Des stratégies publiques aux différentes couches",
+    "difficulty": "medium",
+    "question": "Quels liens illustrent les politiques d’alimentation, de nutrition et de climat ?",
+    "choices": [
+      "L’alimentation dépend uniquement de caractéristiques innées.",
+      "Le prix et l’accessibilité de l’offre influencent les possibilités de choix.",
+      "Une stratégie alimentaire supprime toute contrainte de budget dès sa publication.",
+      "Des projets territoriaux peuvent mobiliser des ressources locales.",
+      "Les pratiques alimentaires peuvent être liées à l’environnement."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Des conditions sociales et matérielles interviennent.",
+      "Les conditions matérielles contribuent aux pratiques.",
+      "L’annonce d’une stratégie ne suffit pas à prouver une transformation effective.",
+      "Ils peuvent relier acteurs, offre et communautés.",
+      "Les dimensions de santé et de durabilité peuvent se rejoindre."
+    ],
+    "explanation": "L’alimentation dépend des pratiques, des réseaux, de l’offre accessible, des conditions économiques et des politiques. Une seule couche ne décrit pas toute la situation alimentaire.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c054",
+        "theme": "Des stratégies publiques aux différentes couches",
+        "front": "Pourquoi l’alimentation mobilise-t-elle plusieurs couches de déterminants ?",
+        "answers": [
+          "L’alimentation dépend des pratiques, des réseaux, de l’offre accessible, des conditions économiques et des politiques."
+        ],
+        "explanation": "Une seule couche ne décrit pas toute la situation alimentaire."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q055",
+    "courseId": "determinants_sante",
+    "number": 55,
+    "theme": "Des stratégies publiques aux différentes couches",
+    "difficulty": "hard",
+    "question": "Quelles classifications évitent une lecture trop rigide des déterminants ?",
+    "choices": [
+      "Une politique ciblée selon l’âge devient elle-même une caractéristique innée.",
+      "Une action peut mobiliser plusieurs couches du modèle.",
+      "Les couches du modèle interdisent tout chevauchement d’action.",
+      "Toute particularité territoriale relève forcément de la génétique.",
+      "Un territoire peut être étudié par ses conditions culturelles et environnementales."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le critère d’âge et l’organisation de la politique sont deux niveaux distincts.",
+      "Le classement n’impose pas une cause unique.",
+      "Les liens entre niveaux font partie du raisonnement.",
+      "Cette assimilation confond contexte et caractéristiques biologiques.",
+      "La géographie recouvre des conditions collectives de vie."
+    ],
+    "explanation": "Les spécificités territoriales renvoient notamment à des contextes culturels, sociaux et environnementaux. Le lieu de vie ne doit pas être confondu avec l’hérédité.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c055",
+        "theme": "Des stratégies publiques aux différentes couches",
+        "front": "Pourquoi les spécificités d’un territoire ne sont-elles pas un caractère biologique inné ?",
+        "answers": [
+          "Les spécificités territoriales renvoient notamment à des contextes culturels, sociaux et environnementaux."
+        ],
+        "explanation": "Le lieu de vie ne doit pas être confondu avec l’hérédité."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q056",
+    "courseId": "determinants_sante",
+    "number": 56,
+    "theme": "Des stratégies publiques aux différentes couches",
+    "difficulty": "medium",
+    "question": "Que peut mobiliser un projet alimentaire territorial ?",
+    "choices": [
+      "Une coopération entre acteurs locaux.",
+      "Une réflexion sur l’accessibilité de l’alimentation.",
+      "Une modification directe de l’hérédité des habitants.",
+      "Une intervention sans lien avec les conditions de vie.",
+      "Une garantie de résultat identique chez chaque personne."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La démarche territoriale peut mobiliser plusieurs partenaires.",
+      "L’offre et les ressources peuvent être examinées ensemble.",
+      "La démarche agit sur des conditions sociales et matérielles.",
+      "Ces conditions sont au contraire pertinentes.",
+      "Un projet collectif ne permet pas cette prédiction individuelle."
+    ],
+    "explanation": "Rapprocher des acteurs et des ressources alimentaires pour faciliter des évolutions adaptées à un territoire. Il relie des ressources locales et des conditions collectives.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c056",
+        "theme": "Des stratégies publiques aux différentes couches",
+        "front": "Que permet un projet alimentaire territorial ?",
+        "answers": [
+          "Rapprocher des acteurs et des ressources alimentaires pour faciliter des évolutions adaptées à un territoire."
+        ],
+        "explanation": "Il relie des ressources locales et des conditions collectives."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q057",
+    "courseId": "determinants_sante",
+    "number": 57,
+    "theme": "Mobiliser le raisonnement infirmier",
+    "difficulty": "hard",
+    "question": "Une personne diabétique a des horaires contraints, un logement instable et peu de soutien. Quelles démarches complètent le raisonnement clinique ?",
+    "choices": [
+      "Déduire l’absence d’effort à partir de l’irrégularité du suivi.",
+      "Vérifier la compréhension du projet.",
+      "Remplacer toute évaluation clinique par une étiquette sociale.",
+      "Explorer les possibilités concrètes de suivre le projet.",
+      "Identifier les ressources disponibles avec la personne."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les contraintes décrites peuvent empêcher la réalisation.",
+      "Un obstacle informationnel peut se cumuler aux contraintes matérielles.",
+      "L’analyse des déterminants complète l’évaluation clinique.",
+      "L’aide doit être réalisable dans le quotidien.",
+      "L’entourage et les services peuvent soutenir la démarche."
+    ],
+    "explanation": "Explorer les contraintes, la compréhension, les ressources et les possibilités d’accompagnement avec la personne. Le problème clinique reste évalué, tout en étant relié aux conditions de vie.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c057",
+        "theme": "Mobiliser le raisonnement infirmier",
+        "front": "Comment élargir l’analyse d’un traitement difficile à suivre ?",
+        "answers": [
+          "Explorer les contraintes, la compréhension, les ressources et les possibilités d’accompagnement avec la personne."
+        ],
+        "explanation": "Le problème clinique reste évalué, tout en étant relié aux conditions de vie."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q058",
+    "courseId": "determinants_sante",
+    "number": 58,
+    "theme": "Mobiliser le raisonnement infirmier",
+    "difficulty": "medium",
+    "question": "Que signifie « décrire sans juger » dans une démarche infirmière ?",
+    "choices": [
+      "Remplacer les observations par une catégorie sociale.",
+      "Distinguer le comportement observé d’une intention supposée.",
+      "Écouter la demande et les priorités de la personne.",
+      "Considérer toute difficulté comme un défaut personnel.",
+      "Renoncer à rechercher les besoins réels."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une catégorie ne décrit pas toute la situation individuelle.",
+      "Un constat ne suffit pas à prouver une motivation.",
+      "Elles éclairent la situation et les possibilités d’aide.",
+      "Des obstacles matériels, sociaux ou organisationnels peuvent intervenir.",
+      "Décrire sans juger permet justement de mieux les identifier."
+    ],
+    "explanation": "Pour comprendre la difficulté réelle avant d’en déduire une cause ou une intention. Une description factuelle oriente des questions utiles et une aide adaptée.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c058",
+        "theme": "Mobiliser le raisonnement infirmier",
+        "front": "Pourquoi commencer par décrire le besoin et la demande sans jugement ?",
+        "answers": [
+          "Pour comprendre la difficulté réelle avant d’en déduire une cause ou une intention."
+        ],
+        "explanation": "Une description factuelle oriente des questions utiles et une aide adaptée."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q059",
+    "courseId": "determinants_sante",
+    "number": 59,
+    "theme": "Mobiliser le raisonnement infirmier",
+    "difficulty": "medium",
+    "question": "Après la mise en place d’une aide, que faut-il réévaluer ?",
+    "choices": [
+      "La possibilité concrète d’utiliser l’aide.",
+      "Uniquement l’existence d’une brochure remise.",
+      "Le seul nombre de conseils formulés.",
+      "L’absence de besoin d’échange ultérieur.",
+      "La présence d’autres obstacles après le premier contact."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une proposition peut rester inaccessible ou impraticable.",
+      "La remise d’information ne prouve pas sa compréhension ni son utilisation.",
+      "Une quantité de conseils ne mesure pas leur utilité réelle.",
+      "Une réévaluation permet de vérifier les effets de la réponse.",
+      "Les difficultés peuvent se déplacer ou se cumuler."
+    ],
+    "explanation": "Vérifier la compréhension, la possibilité de faire la démarche et la persistance éventuelle d’autres obstacles. Une mesure proposée n’est pas encore un bénéfice effectif.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c059",
+        "theme": "Mobiliser le raisonnement infirmier",
+        "front": "Comment vérifier qu’une aide devient réellement utile ?",
+        "answers": [
+          "Vérifier la compréhension, la possibilité de faire la démarche et la persistance éventuelle d’autres obstacles."
+        ],
+        "explanation": "Une mesure proposée n’est pas encore un bénéfice effectif."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
+  },
+  {
+    "id": "determinants_sante_q060",
+    "courseId": "determinants_sante",
+    "number": 60,
+    "theme": "Mobiliser le raisonnement infirmier",
+    "difficulty": "medium",
+    "question": "Quelle posture respecte une analyse individualisée des déterminants ?",
+    "choices": [
+      "Utiliser les déterminants pour orienter des questions.",
+      "Déduire à l’avance tous les besoins d’un groupe.",
+      "Opposer systématiquement clinique et contexte social.",
+      "Attribuer la même difficulté à toutes les personnes précaires.",
+      "Vérifier la situation propre à la personne."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils aident à explorer des mécanismes possibles.",
+      "Les situations individuelles peuvent différer.",
+      "Les deux lectures peuvent se compléter.",
+      "La précarité ne rend pas les expériences identiques.",
+      "Les appartenances collectives ne suffisent pas à la connaître."
+    ],
+    "explanation": "Une tendance collective ne décrit pas toute la situation, les ressources ou les choix d’une personne. L’écoute et l’évaluation individuelle restent indispensables.",
+    "flashcards": [
+      {
+        "id": "determinants_sante_c060",
+        "theme": "Mobiliser le raisonnement infirmier",
+        "front": "Pourquoi ne faut-il pas déduire tout le comportement d’une catégorie sociale ?",
+        "answers": [
+          "Une tendance collective ne décrit pas toute la situation, les ressources ou les choix d’une personne."
+        ],
+        "explanation": "L’écoute et l’évaluation individuelle restent indispensables."
+      }
+    ],
+    "course": "Déterminants de santé",
+    "ue": "C1",
+    "kind": "QCM"
   }
 ]
