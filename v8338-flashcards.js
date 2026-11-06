@@ -627,7 +627,7 @@ function presentAuthoredCard(p){
  const repeated=String(p.explanation||'').trim();
  const answers=p.answers.map(a=>{
   const text=String(a).trim(),suffix=' '+repeated;
-  return repeated&&text.endsWith(suffix)&&/[.!?]$/.test(text.slice(0,-suffix.length))
+  return text.includes(' ; ')&&repeated&&text.endsWith(suffix)&&/[.!?]$/.test(text.slice(0,-suffix.length))
    ? text.slice(0,-suffix.length) : a;
  }).flatMap(a=>a.includes(' ; ')?a.split(/\s*;\s*/):[a]);
  return {...p,sourceFront:p.front,front:stripSourceMeta(p.front),answers,explanation};
