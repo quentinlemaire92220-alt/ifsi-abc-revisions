@@ -1,0 +1,156 @@
+{
+  "courseId": "offre_soins_systeme_sante",
+  "course": {
+    "id": "offre_soins_systeme_sante",
+    "label": "Offre de soins et système de santé",
+    "domain": "C",
+    "ue": "C1.1",
+    "aliases": [
+      "Offre de soins",
+      "Offre de soins et système de santé"
+    ],
+    "sourceStatus": "transcript",
+    "provisional": true,
+    "sourceNote": "Sources disponibles à rapprocher avant validation pédagogique définitive",
+    "audioStatus": "available",
+    "audioCount": 2,
+    "audioFolderUrl": "https://drive.google.com/drive/folders/1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+  },
+  "fileHashes": {
+    "course-registry-v741.json": "98359d08fb067c6271c3c9f6c269ea1628515f916eb193c7b574633f912b1876",
+    "vocals.json": "c1f223e19bc132498d75f60156c4e9757faa3e8a72aa995597152bc9e677a033",
+    "questions-5.json": "1bf236d349d3c033f9c9a73c37ca29bdf6933b71b0299cfbdb1c5d3276e0ee0a",
+    "vocabulaire-v1.json": "fbaac10e7ed319e4aec65be08804acaade8ae8c054efe87fae6485ec31b1f716",
+    "sheets-1.json": "35be034d2348a90bee8cefb49eeea872e714d0d344f68f50003d43524b7e1bb4",
+    "sheets-2.json": "0b9cc20315744595cdcaac44cea314521d95e2987a64fb3429b3fe4d14a2f5f8",
+    "sheets-3.json": "edbacb43da076f8a713e43a1240a80a1759de8a09456e78a60d3aecd6ba2797d",
+    "docs/course-deliveries.json": "0e9e38a77ef1d410ce1564f151822b386924d53541d9809f6afb19ab1c296a5e"
+  },
+  "rows": {
+    "vocals.json": [
+      {
+        "id": "tts_20261102_ue_c1_1_offre_de_soins_acteurs_et_acces_vocal_01_sur_02",
+        "courseId": "offre_soins_systeme_sante",
+        "course": "Offre de soins et système de santé",
+        "number": 1,
+        "title": "Questions et corrections 1/2 — Offre de soins acteurs et acces",
+        "driveId": "1Mo7liq7lE3llBIpGcVq7N6PzRGfneXV7",
+        "mime": "audio/mpeg",
+        "partId": "revision_questions_20261102",
+        "partNumber": 1,
+        "syntheticSpeech": true,
+        "provisional": true,
+        "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+        "release": "8.30.159",
+        "durationSeconds": 389.805667
+      },
+      {
+        "id": "tts_20261102_ue_c1_1_offre_de_soins_parcours_et_continuite_vocal_02_sur_02",
+        "courseId": "offre_soins_systeme_sante",
+        "course": "Offre de soins et système de santé",
+        "number": 2,
+        "title": "Questions et corrections 2/2 — Offre de soins parcours et continuite",
+        "driveId": "1daZGNe_vrLf4sbEpooA7mtx4Y5nomOj5",
+        "mime": "audio/mpeg",
+        "partId": "revision_questions_20261102",
+        "partNumber": 2,
+        "syntheticSpeech": true,
+        "provisional": true,
+        "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+        "release": "8.30.159",
+        "durationSeconds": 392.458667
+      }
+    ],
+    "questions-5.json": [],
+    "sheets-1.json": [],
+    "sheets-2.json": [],
+    "sheets-3.json": []
+  },
+  "vocabulary": [],
+  "delivery": {
+    "courseId": "offre_soins_systeme_sante",
+    "audioOnlyContract": "interactive_audio_v1",
+    "deliveryMode": "audio_only",
+    "validated": true,
+    "pedagogicalValidated": true,
+    "status": "partial",
+    "publicationScope": "audio_only",
+    "vocals": [
+      "tts_20261102_ue_c1_1_offre_de_soins_acteurs_et_acces_vocal_01_sur_02",
+      "tts_20261102_ue_c1_1_offre_de_soins_parcours_et_continuite_vocal_02_sur_02"
+    ],
+    "artifactSha256s": {
+      "1Mo7liq7lE3llBIpGcVq7N6PzRGfneXV7": "bcc2a6697c1dd4624d4eb8b8f6a88ff550141d2a2d4cf1ccafdefd2201558394",
+      "1daZGNe_vrLf4sbEpooA7mtx4Y5nomOj5": "f9b44bd355c01e613f6ce3e8f35ecba196693b8db142d3493fbc43672c51f410"
+    },
+    "interactiveAudioReview": {
+      "contract": "interactive_audio_v1",
+      "status": "reviewed",
+      "documentaryReview": "completed",
+      "listeningReview": "completed",
+      "privateSourcesPreserved": true,
+      "privateEvidenceSha256": "df38314c4cea96ae5cb380db4ab1d1d0eb0745f5183a97e287dae3bf6cb0a4f2",
+      "episodes": [
+        {
+          "vocalId": "tts_20261102_ue_c1_1_offre_de_soins_acteurs_et_acces_vocal_01_sur_02",
+          "audioSha256": "bcc2a6697c1dd4624d4eb8b8f6a88ff550141d2a2d4cf1ccafdefd2201558394",
+          "scriptSha256": "7aeab2065929f717642cca9b4cbe2e75d5c4e08f6f2281fecd0c7945c0b954d0",
+          "durationSeconds": 389.805667,
+          "questionCount": 20,
+          "reflectionPauseCount": 20,
+          "transitionPauseCount": 20,
+          "adaptivePauses": true,
+          "introductionUnitSemesterCourseEpisode": true,
+          "synthesisBeforeLexicon": true,
+          "lexiconLast": true,
+          "definitionCount": 4,
+          "sourceLimitationsVisible": true
+        },
+        {
+          "vocalId": "tts_20261102_ue_c1_1_offre_de_soins_parcours_et_continuite_vocal_02_sur_02",
+          "audioSha256": "f9b44bd355c01e613f6ce3e8f35ecba196693b8db142d3493fbc43672c51f410",
+          "scriptSha256": "698811d39dfb74ccc126b23339f05a9394d1502242409fd0de4001cf108facaf",
+          "durationSeconds": 392.458667,
+          "questionCount": 20,
+          "reflectionPauseCount": 20,
+          "transitionPauseCount": 20,
+          "adaptivePauses": true,
+          "introductionUnitSemesterCourseEpisode": true,
+          "synthesisBeforeLexicon": true,
+          "lexiconLast": true,
+          "definitionCount": 4,
+          "sourceLimitationsVisible": true
+        }
+      ]
+    },
+    "folders": {
+      "05": "1ikUlyltP4NJivdawtRPyVdjydDJOOerW"
+    },
+    "blockers": [
+      {
+        "resource": "revision_sheets",
+        "reason": "not_requested"
+      },
+      {
+        "resource": "qcm",
+        "reason": "not_requested"
+      },
+      {
+        "resource": "flashcards",
+        "reason": "not_requested"
+      }
+    ],
+    "sourceBasis": {
+      "kind": "official_support_and_transcript",
+      "nativeSupportAvailable": true,
+      "limitationsDeclared": true
+    },
+    "publicationApproval": {
+      "status": "approved",
+      "authorization": "explicit_go_publication",
+      "scope": "audio_only",
+      "approvedAt": "2026-11-02T10:30:46Z",
+      "bundleSha256": "26b45965569d3a7894286f34d881736ec6cd4755690964484b2b9db1cc4d9911"
+    }
+  }
+}

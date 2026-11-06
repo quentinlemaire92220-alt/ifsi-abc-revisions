@@ -64,6 +64,7 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           node tests/complete-written-revision.mjs
+          node tests/reviewed-written-audio-revision.mjs
 
       - name: Vérifier la syntaxe JavaScript
         if: ${{ !cancelled() }}
@@ -236,6 +237,9 @@ jobs:
       - name: Trame V3 — références, PDF réels et preuves de revue (défauts injectés)
         if: ${{ !cancelled() }}
         run: python tests/pdf-template-v3-test.py
+      - name: Vérifier les PDF de la révision écrite et audio
+        if: ${{ !cancelled() }}
+        run: python tests/reviewed-written-audio-pdf.py
 
       - name: Trame V3 — bloquer les nouveaux PDF sans conformité et GO graphique
         if: ${{ !cancelled() }}
