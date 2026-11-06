@@ -1,0 +1,2529 @@
+[
+  {
+    "id": "offre_soins_20261106_q001",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 1,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent système de santé et système de soins ?",
+    "choices": [
+      "Le système de santé dépasse les seules interventions de soins.",
+      "La prévention se déroule exclusivement lors d’une consultation.",
+      "La surveillance participe au système de santé.",
+      "Le financement est extérieur au système de santé.",
+      "Les deux expressions désignent exactement le même périmètre."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il comprend aussi des fonctions collectives d’organisation et de prévention.",
+      "Des politiques et actions collectives contribuent aussi à prévenir.",
+      "Elle produit des informations utiles à la protection de la population.",
+      "La mobilisation des ressources en fait partie.",
+      "Le système de soins constitue une partie d’un ensemble plus large."
+    ],
+    "explanation": "Le système de soins est une partie du système de santé, qui inclut aussi pilotage, financement, prévention, information et recherche. La santé mobilise des actions au-delà des consultations et des traitements.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c001",
+        "theme": "Système, professionnels et accès",
+        "front": "Comment situer le système de soins dans le système de santé ?",
+        "answers": [
+          "Le système de soins est une partie du système de santé, qui inclut aussi pilotage, financement, prévention, information et recherche. La santé mobilise des actions au-delà des consultations et des traitements."
+        ],
+        "explanation": "La santé mobilise des actions au-delà des consultations et des traitements."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q002",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 2,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "easy",
+    "question": "Quels objectifs peuvent être associés au système de santé ?",
+    "choices": [
+      "Préserver la santé de la population.",
+      "Assurer des réponses adaptées aux besoins sans discrimination.",
+      "Limiter l’action à la maladie déjà déclarée.",
+      "Répondre aux attentes en matière de continuité.",
+      "Garantir une offre strictement identique quels que soient les besoins."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La prévention et la réduction des conséquences des maladies y contribuent.",
+      "Cela participe à l’équité.",
+      "Prévention et promotion dépassent cette seule situation.",
+      "Des actes isolés ne garantissent pas un suivi cohérent.",
+      "Une égalité apparente de moyens ne garantit pas une réponse équitable."
+    ],
+    "explanation": "Améliorer la santé, répondre aux attentes de la population et assurer l’équité. Accès, qualité, sécurité et continuité contribuent à ces objectifs.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c002",
+        "theme": "Système, professionnels et accès",
+        "front": "Quels grands objectifs retenir pour le système de santé ?",
+        "answers": [
+          "Améliorer la santé, répondre aux attentes de la population et assurer l’équité. Accès, qualité, sécurité et continuité contribuent à ces objectifs."
+        ],
+        "explanation": "Accès, qualité, sécurité et continuité contribuent à ces objectifs."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q003",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 3,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "hard",
+    "question": "Deux communes proposent le même nombre de consultations, mais les habitants de l’une ne peuvent pas se déplacer. Quels constats sont justes ?",
+    "choices": [
+      "L’absence de déplacement prouve un refus de soins.",
+      "L’identité des nombres prouve l’équité obtenue.",
+      "Les besoins et les conditions d’accès doivent être examinés.",
+      "Le nombre proposé ne suffit pas à décrire l’accès effectif.",
+      "La continuité des soins dépend uniquement du nombre de créneaux."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une contrainte matérielle ne permet pas de conclure à une intention.",
+      "Elle ne montre pas que les habitants peuvent réellement consulter.",
+      "L’équité suppose de tenir compte des situations.",
+      "L’obstacle de déplacement peut empêcher l’utilisation de l’offre.",
+      "Elle dépend aussi de l’organisation et des échanges utiles."
+    ],
+    "explanation": "Les possibilités de déplacement, les délais et les besoins peuvent différer malgré une offre apparemment identique. L’accès doit être apprécié à partir des possibilités concrètes des personnes.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c003",
+        "theme": "Système, professionnels et accès",
+        "front": "Pourquoi une offre identique ne garantit-elle pas un accès équitable ?",
+        "answers": [
+          "Les possibilités de déplacement, les délais et les besoins peuvent différer malgré une offre apparemment identique. L’accès doit être apprécié à partir des possibilités concrètes des personnes."
+        ],
+        "explanation": "L’accès doit être apprécié à partir des possibilités concrètes des personnes."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q004",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 4,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "easy",
+    "question": "Quelles associations profession–ensemble sont cohérentes ?",
+    "choices": [
+      "Les infirmiers appartiennent à l’ensemble des auxiliaires médicaux.",
+      "Le terme paramédical signifie absence de compétences propres.",
+      "Le seul classement permet de connaître toute compétence de prescription.",
+      "Les sages-femmes appartiennent aux professions médicales.",
+      "Les chirurgiens-dentistes sont classés parmi les auxiliaires médicaux."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette catégorie n’efface pas leurs compétences propres.",
+      "Cette déduction est incorrecte.",
+      "Les actes autorisés ne se déduisent pas de cette opposition simplifiée.",
+      "La maïeutique renvoie à cette profession.",
+      "Ils figurent dans les professions médicales."
+    ],
+    "explanation": "Médecins, chirurgiens-dentistes et sages-femmes. La classification des professions ne suffit pas à déterminer tous les actes autorisés.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c004",
+        "theme": "Système, professionnels et accès",
+        "front": "Quelles professions constituent le groupe des professions médicales ?",
+        "answers": [
+          "Médecins, chirurgiens-dentistes et sages-femmes. La classification des professions ne suffit pas à déterminer tous les actes autorisés."
+        ],
+        "explanation": "La classification des professions ne suffit pas à déterminer tous les actes autorisés."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q005",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 5,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "medium",
+    "question": "Quels rôles correspondent aux ordres professionnels ?",
+    "choices": [
+      "Verser systématiquement le salaire de tous les professionnels.",
+      "Veiller à la déontologie de la profession.",
+      "Regrouper toutes les professions de santé dans un ordre unique.",
+      "Suivre le tableau de la profession.",
+      "Rembourser les soins des assurés."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un ordre n’est pas leur employeur.",
+      "C’est une fonction de régulation professionnelle.",
+      "Plusieurs ordres distincts sont présentés.",
+      "L’inscription et le suivi de l’exercice relèvent de ses fonctions présentées.",
+      "Cette fonction ne correspond pas à celle d’un ordre."
+    ],
+    "explanation": "Il contribue à la régulation de l’exercice, à la tenue du tableau, à la déontologie et à la discipline de sa profession. Il se distingue d’un employeur et d’un organisme de remboursement.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c005",
+        "theme": "Système, professionnels et accès",
+        "front": "À quoi sert un ordre professionnel ?",
+        "answers": [
+          "Il contribue à la régulation de l’exercice, à la tenue du tableau, à la déontologie et à la discipline de sa profession. Il se distingue d’un employeur et d’un organisme de remboursement."
+        ],
+        "explanation": "Il se distingue d’un employeur et d’un organisme de remboursement."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q006",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 6,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "medium",
+    "question": "Une infirmière combine un emploi salarié et une activité libérale. Comment décrire cette situation ?",
+    "choices": [
+      "Son salaire décrit le financement de toute la structure.",
+      "Le statut peut être déterminé par la seule adresse du soin.",
+      "L’exercice est mixte.",
+      "Il est nécessairement exclusivement salarié.",
+      "Le mot mixte désigne une absence de cadre professionnel."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Rémunération individuelle et financement de la structure sont distincts.",
+      "Un lieu ne suffit pas à connaître le cadre d’exercice.",
+      "Les deux modes d’exercice sont associés chez la même personne.",
+      "L’activité libérale décrite doit aussi être prise en compte.",
+      "Il décrit une combinaison de modes d’exercice."
+    ],
+    "explanation": "Une même personne combine une activité salariée et une activité libérale. Le lieu de travail ne suffit pas à identifier le statut professionnel.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c006",
+        "theme": "Système, professionnels et accès",
+        "front": "Que signifie un exercice professionnel mixte ?",
+        "answers": [
+          "Une même personne combine une activité salariée et une activité libérale. Le lieu de travail ne suffit pas à identifier le statut professionnel."
+        ],
+        "explanation": "Le lieu de travail ne suffit pas à identifier le statut professionnel."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q007",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 7,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "easy",
+    "question": "Concernant effectif et densité de professionnels :",
+    "choices": [
+      "Une densité suffit à prouver la disponibilité d’un rendez-vous.",
+      "La densité nécessite un dénominateur de population.",
+      "Les deux mesures sont toujours numériquement égales.",
+      "L’effectif est un nombre dans un périmètre défini.",
+      "Comparer des unités différentes ne change pas l’interprétation."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les délais et les conditions concrètes restent à étudier.",
+      "Elle rapporte un nombre de professionnels à la population.",
+      "Elles ne décrivent pas la même mesure.",
+      "La taille du territoire ou de sa population peut influencer ce nombre.",
+      "Les unités doivent être harmonisées."
+    ],
+    "explanation": "L’effectif est un nombre de professionnels ; la densité rapporte ce nombre à une population, selon une unité précisée. Une comparaison exige un même champ, une même profession et une unité cohérente.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c007",
+        "theme": "Système, professionnels et accès",
+        "front": "Quelle différence entre effectif et densité ?",
+        "answers": [
+          "L’effectif est un nombre de professionnels ; la densité rapporte ce nombre à une population, selon une unité précisée. Une comparaison exige un même champ, une même profession et une unité cohérente."
+        ],
+        "explanation": "Une comparaison exige un même champ, une même profession et une unité cohérente."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q008",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 8,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "medium",
+    "question": "Un graphique présente un scénario d’effectif médical pour 2050. Comment le lire ?",
+    "choices": [
+      "La date peut être retirée sans perte d’information.",
+      "L’effectif annoncé pour 2050 est déjà observé.",
+      "Le résultat dépend d’hypothèses.",
+      "Le scénario garantit un résultat individuel pour chaque patient.",
+      "Il faut identifier la profession concernée."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle est indispensable pour distinguer observations et projections.",
+      "La projection porte sur une période future.",
+      "Il s’agit d’un scénario et non d’une mesure future déjà réalisée.",
+      "Il ne prédit pas l’accès de chaque personne.",
+      "Une évolution de généralistes ne décrit pas automatiquement tous les médecins."
+    ],
+    "explanation": "Une projection décrit un avenir possible fondé sur des hypothèses ; une observation porte sur des données recueillies. La date, le territoire, la profession et le type de mesure doivent accompagner la lecture.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c008",
+        "theme": "Système, professionnels et accès",
+        "front": "Pourquoi une projection n’est-elle pas une observation ?",
+        "answers": [
+          "Une projection décrit un avenir possible fondé sur des hypothèses ; une observation porte sur des données recueillies. La date, le territoire, la profession et le type de mesure doivent accompagner la lecture."
+        ],
+        "explanation": "La date, le territoire, la profession et le type de mesure doivent accompagner la lecture."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q009",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 9,
+    "theme": "Système, professionnels et accès",
+    "difficulty": "hard",
+    "question": "Un territoire possède plusieurs cabinets mais les délais sont longs et les déplacements difficiles. Quelles analyses sont pertinentes ?",
+    "choices": [
+      "Distinguer offre disponible et recours réalisable.",
+      "Assimiler tout délai à une disparition des professionnels.",
+      "Déduire un accès satisfaisant du seul nombre de cabinets.",
+      "Ignorer la coordination dès que des professionnels sont présents.",
+      "Étudier les obstacles concrets au rendez-vous."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les deux ne sont pas automatiquement équivalents.",
+      "Le délai ne constitue pas une mesure d’effectif.",
+      "Le nombre ne résout pas les obstacles décrits.",
+      "La coordination peut conditionner la continuité et l’orientation.",
+      "Ils contribuent à l’accès effectif."
+    ],
+    "explanation": "Examiner les délais, la disponibilité, les déplacements, la coordination et la compréhension des démarches. Une ressource présente sur une carte peut rester difficile à mobiliser.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c009",
+        "theme": "Système, professionnels et accès",
+        "front": "Comment passer de la présence de professionnels à l’analyse de l’accès ?",
+        "answers": [
+          "Examiner les délais, la disponibilité, les déplacements, la coordination et la compréhension des démarches. Une ressource présente sur une carte peut rester difficile à mobiliser."
+        ],
+        "explanation": "Une ressource présente sur une carte peut rester difficile à mobiliser."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q010",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 10,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "easy",
+    "question": "Quelles distinctions entre lieux de soins sont justes ?",
+    "choices": [
+      "Les soins de ville comprennent des interventions à domicile.",
+      "Le médico-social associe soins, autonomie et projet de vie.",
+      "Les trois ensembles sont trois degrés de gravité.",
+      "Un EHPAD est automatiquement un hôpital.",
+      "Une personne ne peut relever que d’un seul ensemble dans son parcours."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils ne se limitent pas aux cabinets.",
+      "Il dépasse la seule succession d’actes médicaux.",
+      "Ils décrivent des lieux et organisations.",
+      "La présence de soins ne change pas sa finalité médico-sociale.",
+      "Plusieurs lieux peuvent être articulés dans le temps ou simultanément."
+    ],
+    "explanation": "Établissements de santé, structures médico-sociales et soins de ville. Ces catégories décrivent des organisations et non des niveaux de gravité.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c010",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Quels sont les trois grands ensembles de lieux de soins ?",
+        "answers": [
+          "Établissements de santé, structures médico-sociales et soins de ville. Ces catégories décrivent des organisations et non des niveaux de gravité."
+        ],
+        "explanation": "Ces catégories décrivent des organisations et non des niveaux de gravité."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q011",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 11,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Que permet d’affirmer le statut public ou privé d’un établissement ?",
+    "choices": [
+      "Le privé comprend des établissements non lucratifs et lucratifs.",
+      "Le seul mot clinique permet de connaître toutes les autorisations.",
+      "La spécialisation se déduit uniquement du caractère public.",
+      "Tous les établissements privés ont exactement les mêmes missions.",
+      "Les ESPIC appartiennent au secteur privé non lucratif présenté."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces catégories ne sont pas synonymes.",
+      "Les autorisations doivent être identifiées spécifiquement.",
+      "Des organisations de statuts différents peuvent être spécialisées.",
+      "Le statut privé recouvre des organisations différentes.",
+      "Leur statut ne se confond pas avec celui d’une clinique lucrative."
+    ],
+    "explanation": "Il renseigne une catégorie d’organisation, mais ne suffit pas à connaître toutes les activités, autorisations ou missions. Il faut distinguer public, privé non lucratif et privé lucratif sans déduire une activité du seul statut.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c011",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Pourquoi le statut juridique ne décrit-il pas toute l’activité d’un établissement ?",
+        "answers": [
+          "Il renseigne une catégorie d’organisation, mais ne suffit pas à connaître toutes les activités, autorisations ou missions. Il faut distinguer public, privé non lucratif et privé lucratif sans déduire une activité du seul statut."
+        ],
+        "explanation": "Il faut distinguer public, privé non lucratif et privé lucratif sans déduire une activité du seul statut."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q012",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 12,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Quelles associations activité–finalité sont cohérentes ?",
+    "choices": [
+      "La réadaptation vise une récupération et une adaptation après une maladie ou une intervention.",
+      "Une USLD désigne uniquement une consultation ponctuelle.",
+      "MCO signifie médecine, chirurgie, obstétrique.",
+      "SSR est le nom d’un mode de rémunération individuelle.",
+      "La cancérologie est obligatoirement réservée à un seul statut juridique."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est la finalité décrite pour ce secteur.",
+      "Elle concerne une surveillance importante et durable.",
+      "Le sigle regroupe ces activités.",
+      "C’est l’appellation employée par le support pour le secteur de réadaptation.",
+      "La spécialisation ne se déduit pas du seul statut."
+    ],
+    "explanation": "MCO : médecine, chirurgie, obstétrique ; réadaptation : récupération et adaptation ; USLD : surveillance médicale importante et durable. Ces finalités se distinguent du statut public ou privé de la structure.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c012",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Comment distinguer MCO, réadaptation et USLD ?",
+        "answers": [
+          "MCO : médecine, chirurgie, obstétrique ; réadaptation : récupération et adaptation ; USLD : surveillance médicale importante et durable. Ces finalités se distinguent du statut public ou privé de la structure."
+        ],
+        "explanation": "Ces finalités se distinguent du statut public ou privé de la structure."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q013",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 13,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent lieu et modalité de prise en charge ?",
+    "choices": [
+      "Une consultation hospitalière peut avoir lieu sans hébergement.",
+      "L’ambulatoire se déroule exclusivement en ville.",
+      "Un hôpital de jour n’implique pas de nuitée.",
+      "Le mot hospitalier suffit à déterminer le nombre de nuits.",
+      "Tout examen hospitalier nécessite un séjour conventionnel."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le lieu et la modalité sont deux dimensions distinctes.",
+      "Des prises en charge ambulatoires sont hospitalières.",
+      "La prise en charge se déroule sur quelques heures ou la journée.",
+      "Il faut préciser le mode de prise en charge.",
+      "Des examens peuvent être réalisés sans hébergement."
+    ],
+    "explanation": "Non. Consultation, examen ou hôpital de jour peuvent se dérouler à l’hôpital sans nuitée. Le lieu hospitalier ne suffit pas à caractériser une hospitalisation conventionnelle.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c013",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Un soin à l’hôpital implique-t-il une nuitée ?",
+        "answers": [
+          "Non. Consultation, examen ou hôpital de jour peuvent se dérouler à l’hôpital sans nuitée. Le lieu hospitalier ne suffit pas à caractériser une hospitalisation conventionnelle."
+        ],
+        "explanation": "Le lieu hospitalier ne suffit pas à caractériser une hospitalisation conventionnelle."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q014",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 14,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Un infirmier réalise un pansement au domicile. Quelles conclusions sont justifiées ?",
+    "choices": [
+      "L’HAD exclut toute dimension hospitalière.",
+      "Il faut connaître l’organisation de la prise en charge pour parler d’HAD.",
+      "L’acte décrit prouve une HAD.",
+      "Une organisation hospitalière ne peut jamais intervenir au domicile.",
+      "Tout soin à domicile est nécessairement une hospitalisation conventionnelle."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le H signifie hospitalisation.",
+      "Le lieu seul ne permet pas cette qualification.",
+      "Un soin de ville peut aussi être réalisé au domicile.",
+      "L’HAD illustre cette possibilité.",
+      "Celle-ci comporte des nuitées dans un établissement."
+    ],
+    "explanation": "Non. L’HAD est une organisation hospitalière au domicile ; une intervention de ville à domicile n’en est pas automatiquement une. L’adresse du soin ne suffit pas à identifier son organisation.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c014",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Tout soin infirmier au domicile est-il une HAD ?",
+        "answers": [
+          "Non. L’HAD est une organisation hospitalière au domicile ; une intervention de ville à domicile n’en est pas automatiquement une. L’adresse du soin ne suffit pas à identifier son organisation."
+        ],
+        "explanation": "L’adresse du soin ne suffit pas à identifier son organisation."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q015",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 15,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "hard",
+    "question": "Avant une sortie en ambulatoire, quels éléments soutiennent la continuité ?",
+    "choices": [
+      "Transmettre les informations utiles.",
+      "Considérer que la sortie administrative termine tout besoin de coordination.",
+      "Identifier les professionnels relais.",
+      "Présumer que tous les domiciles offrent les mêmes conditions.",
+      "Examiner les possibilités de suivi au domicile."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elles soutiennent la continuité entre équipes.",
+      "Le parcours se poursuit au-delà de l’établissement.",
+      "La suite du parcours doit être organisée.",
+      "L’entourage et les ressources peuvent différer.",
+      "Les conditions de vie influencent la faisabilité du retour."
+    ],
+    "explanation": "Les soins prévus, les relais professionnels, les informations utiles et les conditions de vie au domicile. Le développement de l’ambulatoire suppose une organisation adaptée, et non la seule décision de sortie.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c015",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Que faut-il préparer avant un retour à domicile ?",
+        "answers": [
+          "Les soins prévus, les relais professionnels, les informations utiles et les conditions de vie au domicile. Le développement de l’ambulatoire suppose une organisation adaptée, et non la seule décision de sortie."
+        ],
+        "explanation": "Le développement de l’ambulatoire suppose une organisation adaptée, et non la seule décision de sortie."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q016",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 16,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "easy",
+    "question": "À propos des soins non programmés :",
+    "choices": [
+      "Le caractère imprévu ne suffit pas à conclure à une urgence vitale.",
+      "Toute urgence vitale doit attendre un rendez-vous ordinaire.",
+      "Programmé signifie dépourvu de tout besoin médical.",
+      "Non programmé signifie obligatoirement réanimation.",
+      "Le besoin ne peut pas attendre la programmation habituelle."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La gravité doit être appréciée.",
+      "Elle nécessite une réponse immédiate adaptée.",
+      "Une prise en charge nécessaire peut être anticipée.",
+      "Cette équivalence est incorrecte.",
+      "C’est l’idée d’une réponse rapide adaptée."
+    ],
+    "explanation": "Non. Le besoin appelle une réponse rapide, mais son caractère imprévu ne définit pas à lui seul sa gravité. Programmation et degré d’urgence décrivent deux dimensions différentes.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c016",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Un soin non programmé est-il toujours une urgence vitale ?",
+        "answers": [
+          "Non. Le besoin appelle une réponse rapide, mais son caractère imprévu ne définit pas à lui seul sa gravité. Programmation et degré d’urgence décrivent deux dimensions différentes."
+        ],
+        "explanation": "Programmation et degré d’urgence décrivent deux dimensions différentes."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q017",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 17,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Quel rôle correspond au service d’accès aux soins ?",
+    "choices": [
+      "Attribuer automatiquement le même rendez-vous à toute demande.",
+      "Être le nom d’un établissement d’hébergement.",
+      "Participer à éviter des passages aux urgences pris en charge autrement.",
+      "Mettre en relation la demande avec une réponse adaptée.",
+      "Remplacer toute appréciation de la demande par un délai garanti."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La régulation ne fonctionne pas comme une attribution uniforme.",
+      "Le SAS est ici un dispositif d’accès et d’orientation.",
+      "L’orientation dépend du besoin évalué.",
+      "La régulation organise l’orientation.",
+      "La situation doit être évaluée."
+    ],
+    "explanation": "Le service d’accès aux soins participe à la régulation et à l’orientation vers une réponse adaptée aux ressources du territoire. Il ne garantit pas automatiquement un rendez-vous dans un délai identique pour tous.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c017",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "À quoi sert le SAS dans le parcours présenté ?",
+        "answers": [
+          "Le service d’accès aux soins participe à la régulation et à l’orientation vers une réponse adaptée aux ressources du territoire. Il ne garantit pas automatiquement un rendez-vous dans un délai identique pour tous."
+        ],
+        "explanation": "Il ne garantit pas automatiquement un rendez-vous dans un délai identique pour tous."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q018",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 18,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "hard",
+    "question": "Une demande imprévue arrive alors que le médecin traitant est indisponible. Quels raisonnements sont appropriés ?",
+    "choices": [
+      "Apprécier le besoin avant de choisir la réponse.",
+      "Déduire une urgence vitale de la seule fermeture du cabinet.",
+      "Reporter toute demande jusqu’au prochain suivi programmé.",
+      "Ne pas assimiler automatiquement imprévu et urgence vitale.",
+      "Garantir un délai fixe à partir d’un exemple général."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’orientation doit être adaptée.",
+      "La disponibilité du cabinet ne définit pas l’état clinique.",
+      "Certains besoins nécessitent une réponse plus rapide.",
+      "Les deux caractéristiques ne se confondent pas.",
+      "L’exemple ne constitue pas une garantie universelle."
+    ],
+    "explanation": "Distinguer besoin non programmé et urgence vitale, puis rechercher une orientation adaptée. L’indisponibilité du médecin ne suffit pas à définir la gravité de la situation.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c018",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Quelle distinction faire avant d’orienter une demande imprévue ?",
+        "answers": [
+          "Distinguer besoin non programmé et urgence vitale, puis rechercher une orientation adaptée. L’indisponibilité du médecin ne suffit pas à définir la gravité de la situation."
+        ],
+        "explanation": "L’indisponibilité du médecin ne suffit pas à définir la gravité de la situation."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q019",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 19,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "easy",
+    "question": "Quelles propositions décrivent le premier recours ?",
+    "choices": [
+      "Il participe à la prévention et au suivi.",
+      "Il est défini par une moindre valeur du soin.",
+      "Il mobilise notamment généralistes, infirmiers et pharmaciens.",
+      "Il désigne uniquement les actes expérimentaux.",
+      "Il impose toujours une hospitalisation."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Son rôle dépasse une consultation isolée.",
+      "Le niveau répond à des besoins et ressources différents.",
+      "Le premier recours ne se limite pas à une profession.",
+      "Ceux-ci relèvent d’une autre catégorie dans le cadre présenté.",
+      "Il peut intervenir au plus près de la population en ville."
+    ],
+    "explanation": "Assurer un premier contact, répondre aux besoins courants, prévenir et suivre au plus près de la population. Il mobilise plusieurs professions et ne constitue pas un soin de moindre valeur.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c019",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Quel est le rôle du premier recours ?",
+        "answers": [
+          "Assurer un premier contact, répondre aux besoins courants, prévenir et suivre au plus près de la population. Il mobilise plusieurs professions et ne constitue pas un soin de moindre valeur."
+        ],
+        "explanation": "Il mobilise plusieurs professions et ne constitue pas un soin de moindre valeur."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q020",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 20,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Un cardiologue consulte en cabinet de ville. Quelles propositions sont exactes ?",
+    "choices": [
+      "Toute consultation en ville est obligatoirement primaire.",
+      "Le niveau de recours est distinct du statut juridique.",
+      "Toute activité en CHU est quaternaire.",
+      "Un cabinet ne peut jamais proposer une expertise spécialisée.",
+      "Une expertise spécialisée peut relever du deuxième recours en ville."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une expertise spécialisée peut être proposée en ville.",
+      "Il décrit la complexité et les ressources nécessaires.",
+      "Un CHU réalise des activités de niveaux variés.",
+      "Le cas décrit l’illustre.",
+      "Le lieu ne fixe pas à lui seul le niveau."
+    ],
+    "explanation": "Oui. Le niveau de recours dépend de l’expertise et des ressources nécessaires, pas seulement du bâtiment. Un CHU peut aussi réaliser des soins qui ne sont pas de haute spécialisation.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c020",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Une consultation spécialisée en ville peut-elle être de deuxième recours ?",
+        "answers": [
+          "Oui. Le niveau de recours dépend de l’expertise et des ressources nécessaires, pas seulement du bâtiment. Un CHU peut aussi réaliser des soins qui ne sont pas de haute spécialisation."
+        ],
+        "explanation": "Un CHU peut aussi réaliser des soins qui ne sont pas de haute spécialisation."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q021",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 21,
+    "theme": "Lieux, modalités et niveaux de recours",
+    "difficulty": "medium",
+    "question": "Concernant les recours tertiaire et quaternaire :",
+    "choices": [
+      "Un recours spécialisé rend toute coordination ultérieure inutile.",
+      "Le quaternaire n’est pas une étape obligatoire de tout parcours.",
+      "Tout patient doit atteindre le quaternaire pour terminer son suivi.",
+      "Le niveau de recours est un classement de prestige des bâtiments.",
+      "Le tertiaire mobilise des moyens spécialisés pour des prises en charge complexes."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le retour d’information et la continuité restent nécessaires.",
+      "Les besoins ne sont pas identiques pour tous.",
+      "Aucun passage systématique n’est requis.",
+      "Il décrit une fonction de prise en charge.",
+      "Complexité et ressources sont les critères utiles."
+    ],
+    "explanation": "Non. L’orientation dépend du besoin de moyens ou d’expertise ; chaque personne ne passe pas par tous les niveaux. Les prises en charge complexes ou particulièrement spécialisées répondent à des situations spécifiques.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c021",
+        "theme": "Lieux, modalités et niveaux de recours",
+        "front": "Les niveaux spécialisés sont-ils des étapes obligatoires pour tous ?",
+        "answers": [
+          "Non. L’orientation dépend du besoin de moyens ou d’expertise ; chaque personne ne passe pas par tous les niveaux. Les prises en charge complexes ou particulièrement spécialisées répondent à des situations spécifiques."
+        ],
+        "explanation": "Les prises en charge complexes ou particulièrement spécialisées répondent à des situations spécifiques."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q022",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 22,
+    "theme": "Parcours et coordination",
+    "difficulty": "easy",
+    "question": "Quelles fonctions sont associées au médecin traitant ?",
+    "choices": [
+      "Se limiter à signer une lettre sans assurer de suivi.",
+      "Participer à la prévention personnalisée.",
+      "Être obligatoirement un médecin généraliste en cabinet libéral.",
+      "Remplacer tous les autres professionnels.",
+      "Articuler les interventions au cours du suivi."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Sa fonction comprend aussi prévention et coordination.",
+      "Elle fait partie de son rôle.",
+      "Les caractéristiques possibles sont plus larges.",
+      "La coordination articule leurs interventions.",
+      "La coordination dépasse l’adressage."
+    ],
+    "explanation": "Soins, prévention personnalisée, orientation, coordination et suivi. Cette fonction peut être exercée par un généraliste ou un spécialiste, en ville ou à l’hôpital.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c022",
+        "theme": "Parcours et coordination",
+        "front": "Quel rôle central joue le médecin traitant ?",
+        "answers": [
+          "Soins, prévention personnalisée, orientation, coordination et suivi. Cette fonction peut être exercée par un généraliste ou un spécialiste, en ville ou à l’hôpital."
+        ],
+        "explanation": "Cette fonction peut être exercée par un généraliste ou un spécialiste, en ville ou à l’hôpital."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q023",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 23,
+    "theme": "Parcours et coordination",
+    "difficulty": "medium",
+    "question": "Après un avis spécialisé, quelles actions soutiennent un parcours coordonné ?",
+    "choices": [
+      "Déduire un remboursement exact de la seule présence d’un compte rendu.",
+      "Relier les décisions spécialisées aux autres interventions.",
+      "Transmettre les informations utiles à la poursuite du suivi.",
+      "Considérer l’orientation initiale comme une coordination suffisante à elle seule.",
+      "Écarter le médecin traitant dès qu’un spécialiste intervient."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les règles financières ne sont pas établies par ce seul document.",
+      "C’est un objectif du parcours coordonné.",
+      "Le retour d’information soutient la continuité.",
+      "Le suivi nécessite aussi des échanges en retour.",
+      "Son rôle de coordination peut se poursuivre."
+    ],
+    "explanation": "Il permet de comprendre la décision, d’ajuster le suivi et d’articuler les interventions. L’aller vers un spécialiste sans retour d’information peut laisser les soins juxtaposés.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c023",
+        "theme": "Parcours et coordination",
+        "front": "Pourquoi le compte rendu doit-il revenir vers le médecin traitant ?",
+        "answers": [
+          "Il permet de comprendre la décision, d’ajuster le suivi et d’articuler les interventions. L’aller vers un spécialiste sans retour d’information peut laisser les soins juxtaposés."
+        ],
+        "explanation": "L’aller vers un spécialiste sans retour d’information peut laisser les soins juxtaposés."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q024",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 24,
+    "theme": "Parcours et coordination",
+    "difficulty": "hard",
+    "question": "Quelle lecture distingue organisation du parcours et remboursement ?",
+    "choices": [
+      "Le principe de coordination et le calcul financier doivent être distingués.",
+      "Une exception d’accès direct supprime tout besoin d’information entre professionnels.",
+      "La coordination n’a aucun lien avec la prise en charge financière.",
+      "Une seule proportion décrit tous les parcours possibles.",
+      "Une situation particulière demande de vérifier les règles applicables."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils ne répondent pas à la même question.",
+      "La continuité reste utile.",
+      "Le parcours a aussi cette dimension.",
+      "La situation et le cadre peuvent différer.",
+      "Un exemple général n’est pas un calcul individuel."
+    ],
+    "explanation": "Il organise la cohérence des soins ; les règles précises de prise en charge dépendent de la situation et du cadre applicable. Des accès directs et des situations particulières existent sans annuler l’objectif de continuité.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c024",
+        "theme": "Parcours et coordination",
+        "front": "Pourquoi ne pas résumer le parcours coordonné à un taux unique ?",
+        "answers": [
+          "Il organise la cohérence des soins ; les règles précises de prise en charge dépendent de la situation et du cadre applicable. Des accès directs et des situations particulières existent sans annuler l’objectif de continuité."
+        ],
+        "explanation": "Des accès directs et des situations particulières existent sans annuler l’objectif de continuité."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q025",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 25,
+    "theme": "Parcours et coordination",
+    "difficulty": "easy",
+    "question": "Quelles dimensions élargissent le parcours de soins au parcours de santé ?",
+    "choices": [
+      "Les besoins d’aide à la vie quotidienne.",
+      "Le parcours de santé exclut les soins.",
+      "L’accès aux droits et les ressources.",
+      "Uniquement le nombre d’examens prescrits.",
+      "Exclusivement les actes réalisés à l’hôpital."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils concernent notamment l’autonomie et l’accompagnement.",
+      "Il les englobe.",
+      "Ces dimensions sociales influencent le parcours.",
+      "Le périmètre du parcours de santé est plus large.",
+      "Le parcours traverse plusieurs lieux et domaines."
+    ],
+    "explanation": "Les dimensions médico-sociales et sociales, dont autonomie, ressources, déplacements et accès aux droits. Le raisonnement porte sur la personne dans son milieu de vie.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c025",
+        "theme": "Parcours et coordination",
+        "front": "Que comprend le parcours de santé en plus du parcours de soins ?",
+        "answers": [
+          "Les dimensions médico-sociales et sociales, dont autonomie, ressources, déplacements et accès aux droits. Le raisonnement porte sur la personne dans son milieu de vie."
+        ],
+        "explanation": "Le raisonnement porte sur la personne dans son milieu de vie."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q026",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 26,
+    "theme": "Parcours et coordination",
+    "difficulty": "hard",
+    "question": "Une personne âgée rentre chez elle avec un pansement et une difficulté à préparer ses repas. Quelles démarches relèvent d’une approche globale ?",
+    "choices": [
+      "Considérer que le pansement résout tous les besoins de retour.",
+      "Explorer les possibilités de repas et d’aide.",
+      "Prévoir le relais pour le pansement.",
+      "Séparer les intervenants en supprimant tout échange utile.",
+      "Associer la personne à l’organisation."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La difficulté quotidienne décrite reste présente.",
+      "Elles relèvent des dimensions sociales et médico-sociales.",
+      "Il fait partie du parcours de soins inclus dans le parcours global.",
+      "La continuité appelle une articulation des réponses.",
+      "Sa participation contribue à une réponse adaptée."
+    ],
+    "explanation": "Organiser le soin prévu et explorer les besoins d’aide, les ressources et les déplacements avec la personne. Les dimensions de soins, d’autonomie et de vie quotidienne doivent être reliées.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c026",
+        "theme": "Parcours et coordination",
+        "front": "Comment élargir un retour à domicile au-delà du soin technique ?",
+        "answers": [
+          "Organiser le soin prévu et explorer les besoins d’aide, les ressources et les déplacements avec la personne. Les dimensions de soins, d’autonomie et de vie quotidienne doivent être reliées."
+        ],
+        "explanation": "Les dimensions de soins, d’autonomie et de vie quotidienne doivent être reliées."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q027",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 27,
+    "theme": "Parcours et coordination",
+    "difficulty": "medium",
+    "question": "En période de chaleur, plusieurs personnes fragiles rencontrent des difficultés au domicile. Que montre une réponse coordonnée ?",
+    "choices": [
+      "Des besoins sanitaires et sociaux peuvent être reliés.",
+      "La surveillance suffit même sans organisation d’une réponse.",
+      "Les ressources locales peuvent participer à la réponse.",
+      "Un protocole identique convient nécessairement à tous.",
+      "Seul l’hôpital peut intervenir dans cette coordination."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le milieu de vie fait partie de l’analyse.",
+      "L’information doit pouvoir éclairer des actions adaptées.",
+      "L’action dépasse un acte isolé.",
+      "Les besoins doivent être appréciés individuellement.",
+      "Des acteurs de ville et du médico-social peuvent participer."
+    ],
+    "explanation": "Relier les besoins des habitants, la surveillance et les ressources locales pour adapter les réponses. Cet exemple illustre une articulation ; il ne constitue pas un protocole unique pour toutes les situations.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c027",
+        "theme": "Parcours et coordination",
+        "front": "Quel intérêt a une coordination territoriale face à la chaleur ?",
+        "answers": [
+          "Relier les besoins des habitants, la surveillance et les ressources locales pour adapter les réponses. Cet exemple illustre une articulation ; il ne constitue pas un protocole unique pour toutes les situations."
+        ],
+        "explanation": "Cet exemple illustre une articulation ; il ne constitue pas un protocole unique pour toutes les situations."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q028",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 28,
+    "theme": "Parcours et coordination",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent l’exercice coordonné en ville ?",
+    "choices": [
+      "Seule une structure hospitalière peut coordonner.",
+      "La coordination consiste à supprimer les rôles propres.",
+      "Partager une adresse garantit tous les échanges nécessaires.",
+      "Les professionnels d’une ESP peuvent rester dans des cabinets distincts.",
+      "Un projet partagé contribue à la coordination."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La ville comporte aussi des organisations coordonnées.",
+      "Elle les articule.",
+      "L’organisation effective des liens reste indispensable.",
+      "La coordination ne nécessite pas forcément un bâtiment unique.",
+      "Il donne un cadre aux coopérations."
+    ],
+    "explanation": "La coordination exige des objectifs communs, des liens et des modalités de coopération. Des professionnels voisins peuvent continuer à intervenir sans articuler leurs décisions.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c028",
+        "theme": "Parcours et coordination",
+        "front": "Pourquoi la proximité géographique ne suffit-elle pas à coordonner ?",
+        "answers": [
+          "La coordination exige des objectifs communs, des liens et des modalités de coopération. Des professionnels voisins peuvent continuer à intervenir sans articuler leurs décisions."
+        ],
+        "explanation": "Des professionnels voisins peuvent continuer à intervenir sans articuler leurs décisions."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q029",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 29,
+    "theme": "Parcours et coordination",
+    "difficulty": "easy",
+    "question": "Comment distinguer une MSP d’une CPTS ?",
+    "choices": [
+      "Les deux sigles désignent obligatoirement le même bâtiment.",
+      "La CPTS est une caisse de remboursement locale.",
+      "La CPTS agit à une échelle territoriale.",
+      "La MSP repose sur un projet pluriprofessionnel.",
+      "Le centre de santé est présenté comme une structure sans professionnels."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Leurs périmètres d’organisation diffèrent.",
+      "Ce rôle correspond à un autre type d’acteur.",
+      "Sa portée dépasse le lieu d’une consultation.",
+      "Les exemples présentent généralement des professionnels libéraux.",
+      "Il réunit des activités et des professionnels, généralement salariés dans le cours."
+    ],
+    "explanation": "La MSP est une organisation de soins pluriprofessionnelle ; la CPTS coordonne des acteurs à l’échelle d’un territoire. Une CPTS dépasse une seule structure et peut relier ville, établissements et médico-social.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c029",
+        "theme": "Parcours et coordination",
+        "front": "Quelle différence entre MSP et CPTS ?",
+        "answers": [
+          "La MSP est une organisation de soins pluriprofessionnelle ; la CPTS coordonne des acteurs à l’échelle d’un territoire. Une CPTS dépasse une seule structure et peut relier ville, établissements et médico-social."
+        ],
+        "explanation": "Une CPTS dépasse une seule structure et peut relier ville, établissements et médico-social."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q030",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 30,
+    "theme": "Parcours et coordination",
+    "difficulty": "medium",
+    "question": "Quelles actions peuvent relever des missions d’une CPTS ?",
+    "choices": [
+      "Faciliter l’accès à un médecin traitant.",
+      "Renforcer les liens ville-hôpital-médico-social.",
+      "Se substituer à tous les professionnels pour chaque acte clinique.",
+      "Organiser des actions de prévention adaptées au territoire.",
+      "Voter la loi de financement de la Sécurité sociale."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Cela participe à l’accès aux soins.",
+      "Cela soutient les parcours complexes.",
+      "La CPTS coordonne leurs réponses.",
+      "La prévention est une mission présentée.",
+      "C’est une fonction parlementaire."
+    ],
+    "explanation": "Accès aux soins, parcours complexes, prévention, crises sanitaires, accompagnement des professionnels et qualité des soins. Ces missions visent les besoins du territoire et le décloisonnement des acteurs.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c030",
+        "theme": "Parcours et coordination",
+        "front": "Quels besoins une CPTS peut-elle aider à organiser ?",
+        "answers": [
+          "Accès aux soins, parcours complexes, prévention, crises sanitaires, accompagnement des professionnels et qualité des soins. Ces missions visent les besoins du territoire et le décloisonnement des acteurs."
+        ],
+        "explanation": "Ces missions visent les besoins du territoire et le décloisonnement des acteurs."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q031",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 31,
+    "theme": "Parcours et coordination",
+    "difficulty": "easy",
+    "question": "À quoi peuvent contribuer le DMP et Mon espace santé ?",
+    "choices": [
+      "Remplacer toute appréciation professionnelle de la situation.",
+      "Limiter les ruptures d’information entre intervenants.",
+      "Transformer automatiquement chaque dossier en prescription.",
+      "Aider à retrouver des informations nécessaires au parcours.",
+      "Garantir que tout document doit être transmis à tous."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le raisonnement reste nécessaire.",
+      "La disponibilité des éléments utiles soutient le suivi.",
+      "Disponibilité d’information et décision de soin sont distinctes.",
+      "Il s’agit d’un objectif de ces outils.",
+      "L’utilité, le destinataire et la confidentialité restent à examiner."
+    ],
+    "explanation": "Faciliter la disponibilité et la circulation des informations utiles au suivi. Un outil numérique soutient la continuité, sans remplacer le dialogue ni le raisonnement professionnel.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c031",
+        "theme": "Parcours et coordination",
+        "front": "Quel objectif relie DMP et Mon espace santé à la coordination ?",
+        "answers": [
+          "Faciliter la disponibilité et la circulation des informations utiles au suivi. Un outil numérique soutient la continuité, sans remplacer le dialogue ni le raisonnement professionnel."
+        ],
+        "explanation": "Un outil numérique soutient la continuité, sans remplacer le dialogue ni le raisonnement professionnel."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q032",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 32,
+    "theme": "Parcours et coordination",
+    "difficulty": "hard",
+    "question": "Avant d’envoyer un compte rendu par messagerie sécurisée, que faut-il examiner ?",
+    "choices": [
+      "L’idée que tout destinataire équipé peut recevoir tous les dossiers.",
+      "L’utilité des informations transmises.",
+      "Le cadre de confidentialité.",
+      "Le rôle du destinataire dans la prise en charge.",
+      "Uniquement la possibilité technique d’ajouter une pièce jointe."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’équipement ne suffit pas à légitimer le partage.",
+      "La disponibilité technique ne suffit pas.",
+      "La sécurité du canal ne le remplace pas.",
+      "Le destinataire doit être approprié.",
+      "Cela ne vérifie ni la pertinence ni le destinataire."
+    ],
+    "explanation": "Non. Il faut vérifier le destinataire, l’utilité pour la prise en charge et le cadre de confidentialité. La protection du canal ne justifie pas un partage sans limite.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c032",
+        "theme": "Parcours et coordination",
+        "front": "Une messagerie sécurisée autorise-t-elle toute transmission ?",
+        "answers": [
+          "Non. Il faut vérifier le destinataire, l’utilité pour la prise en charge et le cadre de confidentialité. La protection du canal ne justifie pas un partage sans limite."
+        ],
+        "explanation": "La protection du canal ne justifie pas un partage sans limite."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q033",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 33,
+    "theme": "Parcours et coordination",
+    "difficulty": "medium",
+    "question": "Un document est accessible dans un outil de suivi. Quelles conclusions sont justes ?",
+    "choices": [
+      "Toute copie multiple améliore nécessairement le soin.",
+      "L’accès technique efface toute exigence de confidentialité.",
+      "L’utilité pour le suivi doit rester examinée.",
+      "L’échange avec la personne reste important.",
+      "La présence d’un dossier garantit une coordination effective."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un partage excessif peut être inapproprié.",
+      "Ce sont deux dimensions distinctes.",
+      "Une présence dans l’outil ne garantit pas cette utilité.",
+      "Le numérique ne remplace pas le dialogue.",
+      "Des liens et décisions doivent aussi être organisés."
+    ],
+    "explanation": "Un document accessible n’est pas automatiquement utile à tout destinataire ni à diffuser sans limite. La coordination exige un choix d’informations pertinentes et un échange adapté.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c033",
+        "theme": "Parcours et coordination",
+        "front": "Pourquoi distinguer accès technique et partage approprié ?",
+        "answers": [
+          "Un document accessible n’est pas automatiquement utile à tout destinataire ni à diffuser sans limite. La coordination exige un choix d’informations pertinentes et un échange adapté."
+        ],
+        "explanation": "La coordination exige un choix d’informations pertinentes et un échange adapté."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q034",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 34,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "easy",
+    "question": "Quelles associations acteur–fonction sont cohérentes ?",
+    "choices": [
+      "Les acteurs du territoire n’ont aucun rôle dans la réponse aux besoins.",
+      "L’ARS intervient à l’échelon régional.",
+      "Le Parlement vote notamment la LFSS.",
+      "Le ministère est une caisse locale de remboursement.",
+      "L’ARS vote seule les lois nationales."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils organisent les interventions concrètes.",
+      "Elle articule orientations et besoins du territoire.",
+      "Il exerce une fonction législative.",
+      "Sa fonction est celle du pilotage national.",
+      "Cette fonction appartient au Parlement."
+    ],
+    "explanation": "Le Parlement vote les lois ; le ministère conduit les politiques nationales ; l’ARS les met en œuvre et les adapte au niveau régional. Les réponses concrètes mobilisent aussi les acteurs du territoire.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c034",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Comment distinguer Parlement, ministère et ARS ?",
+        "answers": [
+          "Le Parlement vote les lois ; le ministère conduit les politiques nationales ; l’ARS les met en œuvre et les adapte au niveau régional. Les réponses concrètes mobilisent aussi les acteurs du territoire."
+        ],
+        "explanation": "Les réponses concrètes mobilisent aussi les acteurs du territoire."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q035",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 35,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "medium",
+    "question": "Quelles idées permettent de distinguer déconcentration et décentralisation ?",
+    "choices": [
+      "Déconcentration signifie suppression de tout cadre national.",
+      "Répartition des compétences et déploiement territorial sont à distinguer.",
+      "Un pilotage national peut être décliné territorialement.",
+      "La distinction suffit à décrire exhaustivement chaque règle de santé.",
+      "Les deux mots sont interchangeables dans toute organisation."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le pilotage national est au contraire conservé.",
+      "Les deux termes ne sont pas synonymes.",
+      "C’est la logique de déconcentration utilisée dans le cours.",
+      "Le cours fournit ici un repère conceptuel.",
+      "Ils décrivent des logiques différentes."
+    ],
+    "explanation": "La déconcentration décrit un déploiement territorial du pilotage national ; la décentralisation renvoie à une autre répartition des compétences. Cette distinction ne réduit pas toute l’organisation sanitaire à une chaîne unique.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c035",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quelle distinction retenir entre déconcentration et décentralisation ?",
+        "answers": [
+          "La déconcentration décrit un déploiement territorial du pilotage national ; la décentralisation renvoie à une autre répartition des compétences. Cette distinction ne réduit pas toute l’organisation sanitaire à une chaîne unique."
+        ],
+        "explanation": "Cette distinction ne réduit pas toute l’organisation sanitaire à une chaîne unique."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q036",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 36,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "hard",
+    "question": "Deux régions présentent des besoins différents d’accès aux soins. Quelles propositions décrivent une adaptation territoriale ?",
+    "choices": [
+      "Analyser les besoins régionaux.",
+      "Déduire que toute politique nationale devient inutile.",
+      "Reproduire nécessairement les mêmes moyens malgré des besoins différents.",
+      "Confondre adaptation régionale et consultation individuelle.",
+      "Articuler les ressources du territoire avec les orientations nationales."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils orientent l’organisation de la réponse.",
+      "Elle conserve une fonction de cadre.",
+      "L’adaptation serait alors ignorée.",
+      "Ce sont des échelles d’action distinctes.",
+      "Ces deux échelles se complètent."
+    ],
+    "explanation": "Les besoins et les ressources régionaux diffèrent ; la mise en œuvre doit en tenir compte. Un cadre commun n’impose pas une copie uniforme de chaque réponse locale.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c036",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Pourquoi adapter une politique nationale au territoire ?",
+        "answers": [
+          "Les besoins et les ressources régionaux diffèrent ; la mise en œuvre doit en tenir compte. Un cadre commun n’impose pas une copie uniforme de chaque réponse locale."
+        ],
+        "explanation": "Un cadre commun n’impose pas une copie uniforme de chaque réponse locale."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q037",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 37,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "easy",
+    "question": "Quelles associations historiques sont correctes ?",
+    "choices": [
+      "1958 désigne la création d’une caisse locale pour chaque laboratoire.",
+      "1958 relie CHU, soin, enseignement et recherche.",
+      "1945 est la date de création de Mon espace santé.",
+      "La construction historique suffit à décrire toutes les règles actuelles.",
+      "1945 est un repère de protection sociale collective."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La réforme hospitalo-universitaire a un autre objet.",
+      "Ces trois missions sont articulées.",
+      "Ce repère ne correspond pas à cet outil.",
+      "Un repère ne remplace pas l’étude du cadre applicable.",
+      "Il renvoie à la construction de la Sécurité sociale."
+    ],
+    "explanation": "1945 : construction de la Sécurité sociale ; 1958 : réforme hospitalo-universitaire et création des CHU. Les repères historiques servent à comprendre les évolutions et leurs fonctions.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c037",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quels grands apports relier à 1945 et 1958 ?",
+        "answers": [
+          "1945 : construction de la Sécurité sociale ; 1958 : réforme hospitalo-universitaire et création des CHU. Les repères historiques servent à comprendre les évolutions et leurs fonctions."
+        ],
+        "explanation": "Les repères historiques servent à comprendre les évolutions et leurs fonctions."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q038",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 38,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "medium",
+    "question": "Quelles associations entre réforme et apport sont cohérentes ?",
+    "choices": [
+      "Une chronologie permet de prédire avec certitude les questions d’un examen.",
+      "2009 : création des CHU pour la première fois.",
+      "2002 : renforcement des droits des personnes soignées.",
+      "2002 : suppression de la participation des patients.",
+      "2009 : organisation territoriale avec les ARS."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Aucune telle garantie ne peut être déduite.",
+      "Le repère hospitalo-universitaire est 1958.",
+      "C’est l’apport historique présenté.",
+      "L’apport présenté va vers le renforcement de leurs droits.",
+      "La loi HPST constitue ce repère."
+    ],
+    "explanation": "2002 renforce la place et les droits des patients ; 2009 est un repère d’organisation territoriale, notamment autour des ARS et des ESPIC. Il faut comprendre les apports sans transformer une chronologie en garantie de contenu d’examen.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c038",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quels apports relier à 2002 et à la loi HPST de 2009 ?",
+        "answers": [
+          "2002 renforce la place et les droits des patients ; 2009 est un repère d’organisation territoriale, notamment autour des ARS et des ESPIC. Il faut comprendre les apports sans transformer une chronologie en garantie de contenu d’examen."
+        ],
+        "explanation": "Il faut comprendre les apports sans transformer une chronologie en garantie de contenu d’examen."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q039",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 39,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "hard",
+    "question": "Concernant lois de santé et LFSS :",
+    "choices": [
+      "Toute réforme de santé est obligatoirement une LFSS.",
+      "La LFSS a une périodicité annuelle.",
+      "Une loi générale de santé est garantie exactement tous les cinq ans.",
+      "Les lois de santé et la LFSS n’ont pas le même objet.",
+      "Une réforme élargissant certaines compétences autorise tous les actes sans condition."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Leurs objets ne se confondent pas.",
+      "Elle porte notamment sur des objectifs financiers de protection sociale.",
+      "Cette automaticité n’est pas établie.",
+      "Elles doivent être distinguées.",
+      "L’élargissement ne permet pas cette généralisation."
+    ],
+    "explanation": "Non. Il faut distinguer les évolutions législatives de santé et la LFSS annuelle, qui fixe notamment un cadre et des objectifs financiers. Une périodicité évoquée dans un support ne devient pas une règle automatique.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c039",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Une loi générale de santé est-elle automatiquement votée tous les cinq ans ?",
+        "answers": [
+          "Non. Il faut distinguer les évolutions législatives de santé et la LFSS annuelle, qui fixe notamment un cadre et des objectifs financiers. Une périodicité évoquée dans un support ne devient pas une règle automatique."
+        ],
+        "explanation": "Une périodicité évoquée dans un support ne devient pas une règle automatique."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q040",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 40,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "easy",
+    "question": "Quelles associations direction–champ sont exactes ?",
+    "choices": [
+      "DGOS et DSS sont deux noms de la même direction.",
+      "DGS : objectifs et politiques de santé publique.",
+      "DGOS : pilotage stratégique de l’offre de soins.",
+      "DSS : cadre de la protection sociale et équilibre financier.",
+      "DGS : remboursement local de chaque assuré."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Leurs champs doivent être distingués.",
+      "Elle intervient notamment face aux menaces sanitaires.",
+      "Elle s’intéresse à son adéquation aux besoins.",
+      "Son champ ne se réduit pas à une consultation clinique.",
+      "Cette fonction relève d’un autre type d’organisme."
+    ],
+    "explanation": "DGS : santé publique ; DGOS : offre de soins ; DSS : protection sociale et cadre financier. Les sigles proches renvoient à des fonctions distinctes.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c040",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Comment distinguer DGS, DGOS et DSS ?",
+        "answers": [
+          "DGS : santé publique ; DGOS : offre de soins ; DSS : protection sociale et cadre financier. Les sigles proches renvoient à des fonctions distinctes."
+        ],
+        "explanation": "Les sigles proches renvoient à des fonctions distinctes."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q041",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 41,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "medium",
+    "question": "Quelles associations institution–mission sont cohérentes ?",
+    "choices": [
+      "DGCS : synonyme de caisse nationale de l’Assurance maladie.",
+      "DREES : produire des analyses sanitaires et sociales.",
+      "IGAS : organisme de remboursement de tous les médicaments.",
+      "DREES : service de consultation médicale de première ligne.",
+      "DGCS : autonomie et lutte contre l’exclusion."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Direction ministérielle et caisse nationale sont distinctes.",
+      "Études, évaluation et statistiques composent son champ.",
+      "Il s’agit d’un corps d’inspection.",
+      "Son rôle présenté est la production de connaissances.",
+      "Ces thèmes relèvent de la cohésion sociale."
+    ],
+    "explanation": "DREES : études et statistiques ; DGCS : cohésion sociale ; IGAS : inspection des affaires sociales. Partir de la fonction permet d’éviter la confusion entre organismes aux sigles proches.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c041",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quels rôles associer à DREES, DGCS et IGAS ?",
+        "answers": [
+          "DREES : études et statistiques ; DGCS : cohésion sociale ; IGAS : inspection des affaires sociales. Partir de la fonction permet d’éviter la confusion entre organismes aux sigles proches."
+        ],
+        "explanation": "Partir de la fonction permet d’éviter la confusion entre organismes aux sigles proches."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q042",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 42,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "medium",
+    "question": "Quels domaines font partie de l’action des ARS ?",
+    "choices": [
+      "Veille et sécurité sanitaire.",
+      "Organisation des soins et du médico-social.",
+      "Production de chaque acte infirmier à la place des équipes.",
+      "Vote exclusif de la loi nationale annuelle.",
+      "Prévention et promotion de la santé."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les ARS participent à la surveillance et aux réponses aux crises.",
+      "Ces deux domaines appartiennent à leurs missions.",
+      "L’organisation régionale ne se confond pas avec l’acte clinique.",
+      "Cette fonction n’est pas celle de l’ARS.",
+      "L’action régionale ne se limite pas aux établissements."
+    ],
+    "explanation": "Offre de soins, accompagnement médico-social, prévention et promotion, veille et sécurité sanitaire. Ces domaines permettent d’articuler organisation et protection de la santé dans la région.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c042",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quels quatre domaines retenir pour les ARS ?",
+        "answers": [
+          "Offre de soins, accompagnement médico-social, prévention et promotion, veille et sécurité sanitaire. Ces domaines permettent d’articuler organisation et protection de la santé dans la région."
+        ],
+        "explanation": "Ces domaines permettent d’articuler organisation et protection de la santé dans la région."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q043",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 43,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "easy",
+    "question": "Quelles associations acteur–échelle sont correctes ?",
+    "choices": [
+      "L’ECDC intervient à l’échelle européenne.",
+      "Tous ces acteurs ont une fonction identique de remboursement.",
+      "Une ARS est une agence mondiale.",
+      "L’UNICEF est une caisse locale de l’Assurance maladie.",
+      "L’OMS intervient à l’échelle mondiale."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il participe notamment à la surveillance des maladies.",
+      "Leurs missions sont différentes.",
+      "Son échelle est régionale.",
+      "C’est un acteur international associé notamment à l’enfance.",
+      "Son nom est Organisation mondiale de la santé."
+    ],
+    "explanation": "OMS : mondiale ; ECDC : européenne ; ARS : régionale. L’échelle d’intervention et la fonction doivent être identifiées ensemble.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c043",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Comment situer OMS, ECDC et ARS ?",
+        "answers": [
+          "OMS : mondiale ; ECDC : européenne ; ARS : régionale. L’échelle d’intervention et la fonction doivent être identifiées ensemble."
+        ],
+        "explanation": "L’échelle d’intervention et la fonction doivent être identifiées ensemble."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q044",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 44,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "medium",
+    "question": "Quels exemples illustrent une influence européenne en santé ?",
+    "choices": [
+      "Le salaire personnel d’un professionnel pris isolément.",
+      "L’adresse d’une CPAM comme institution mondiale.",
+      "Les avertissements sanitaires sur les produits du tabac.",
+      "La protection des données personnelles de santé.",
+      "Le seul planning individuel d’un cabinet."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il ne constitue pas l’exemple d’influence européenne présenté.",
+      "Une caisse locale n’est pas une institution mondiale.",
+      "Ils figurent parmi les exemples d’influence européenne.",
+      "Le cadre européen est pertinent pour ces données.",
+      "Cet exemple ne décrit pas en lui-même une règle européenne."
+    ],
+    "explanation": "Les avertissements sanitaires sur le tabac et la protection des données personnelles, dont les données de santé. Ces exemples montrent que certaines règles dépassent l’échelon national.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c044",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Quels exemples relient la santé au niveau européen ?",
+        "answers": [
+          "Les avertissements sanitaires sur le tabac et la protection des données personnelles, dont les données de santé. Ces exemples montrent que certaines règles dépassent l’échelon national."
+        ],
+        "explanation": "Ces exemples montrent que certaines règles dépassent l’échelon national."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q045",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 45,
+    "theme": "Pilotage, histoire et institutions",
+    "difficulty": "hard",
+    "question": "Concernant directive et règlement européens :",
+    "choices": [
+      "Une procédure unique ne peut pas être déduite pour tous les textes.",
+      "Reconnaître l’échelle d’un acteur rend sa fonction inutile à connaître.",
+      "Les deux instruments doivent être distingués.",
+      "Chaque exemple permet de reconstruire tout le droit européen.",
+      "Les deux termes sont toujours strictement synonymes."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un exemple ne décrit pas tous les mécanismes juridiques.",
+      "Échelle et fonction se complètent.",
+      "Leur dénomination ne doit pas être rendue interchangeable.",
+      "Le périmètre du cours est plus limité.",
+      "Cette assimilation est erronée."
+    ],
+    "explanation": "Non. Il faut les distinguer et ne pas leur appliquer automatiquement une procédure unique. La distinction entre ces instruments ne décrit pas à elle seule toute la hiérarchie des normes.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c045",
+        "theme": "Pilotage, histoire et institutions",
+        "front": "Directive et règlement sont-ils deux noms d’un même instrument ?",
+        "answers": [
+          "Non. Il faut les distinguer et ne pas leur appliquer automatiquement une procédure unique. La distinction entre ces instruments ne décrit pas à elle seule toute la hiérarchie des normes."
+        ],
+        "explanation": "La distinction entre ces instruments ne décrit pas à elle seule toute la hiérarchie des normes."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q046",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 46,
+    "theme": "Qualité et expertise",
+    "difficulty": "easy",
+    "question": "Quelles missions correspondent à la HAS ?",
+    "choices": [
+      "Imposer mécaniquement le même acte à toute personne.",
+      "Rembourser directement chaque consultation de chaque assuré.",
+      "Être le nom du ministère chargé de la santé.",
+      "Élaborer des recommandations de bonne pratique.",
+      "Participer à la certification des établissements."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La situation individuelle reste à analyser.",
+      "Ce n’est pas une caisse d’Assurance maladie.",
+      "Il s’agit d’un organisme d’expertise distinct.",
+      "Elles éclairent les décisions de soins.",
+      "C’est une mission d’évaluation présentée."
+    ],
+    "explanation": "Expertise scientifique, évaluation, recommandations de bonne pratique, certification et amélioration de la qualité et de la sécurité. La Haute Autorité de santé se distingue du ministère et d’une caisse de remboursement.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c046",
+        "theme": "Qualité et expertise",
+        "front": "Quelles missions retenir pour la HAS ?",
+        "answers": [
+          "Expertise scientifique, évaluation, recommandations de bonne pratique, certification et amélioration de la qualité et de la sécurité. La Haute Autorité de santé se distingue du ministère et d’une caisse de remboursement."
+        ],
+        "explanation": "La Haute Autorité de santé se distingue du ministère et d’une caisse de remboursement."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q047",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 47,
+    "theme": "Qualité et expertise",
+    "difficulty": "hard",
+    "question": "Une prise de sang est techniquement réussie mais inutile dans la situation. Quelles analyses sont justes ?",
+    "choices": [
+      "La pertinence de son indication peut être insuffisante.",
+      "Qualité et pertinence sont deux mots interchangeables.",
+      "Un acte inutile devient pertinent s’il est répété.",
+      "La qualité technique peut être bonne.",
+      "La réussite technique prouve à elle seule l’utilité."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’absence d’utilité concerne l’adaptation au besoin.",
+      "Ils répondent à des questions différentes.",
+      "La répétition ne crée pas de bénéfice attendu.",
+      "L’acte est décrit comme correctement réalisé.",
+      "Deux jugements distincts sont nécessaires."
+    ],
+    "explanation": "La qualité concerne la réalisation du soin ; la pertinence concerne son utilité et son adaptation au besoin. Un acte bien réalisé peut rester inapproprié dans une situation donnée.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c047",
+        "theme": "Qualité et expertise",
+        "front": "Comment distinguer qualité de réalisation et pertinence ?",
+        "answers": [
+          "La qualité concerne la réalisation du soin ; la pertinence concerne son utilité et son adaptation au besoin. Un acte bien réalisé peut rester inapproprié dans une situation donnée."
+        ],
+        "explanation": "Un acte bien réalisé peut rester inapproprié dans une situation donnée."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q048",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 48,
+    "theme": "Qualité et expertise",
+    "difficulty": "medium",
+    "question": "Quelle lecture correspond à l’efficience ?",
+    "choices": [
+      "Examiner les résultats et les ressources ensemble.",
+      "Ignorer la pertinence des actes.",
+      "Assimiler toute baisse de dépense à un bénéfice clinique.",
+      "Choisir toujours le moins cher quels que soient les effets.",
+      "Compter uniquement les actes réalisés."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Leur relation constitue le raisonnement d’efficience.",
+      "Des actes sans bénéfice mobilisent aussi des ressources.",
+      "Une dépense moindre ne prouve pas un meilleur soin.",
+      "Le résultat ne peut pas être ignoré.",
+      "La quantité seule ne décrit pas l’efficience."
+    ],
+    "explanation": "Elle met en relation les résultats obtenus avec les ressources mobilisées. Réduire une dépense sans considérer les résultats ne suffit pas à démontrer une amélioration.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c048",
+        "theme": "Qualité et expertise",
+        "front": "Pourquoi l’efficience ne se réduit-elle pas au prix le plus bas ?",
+        "answers": [
+          "Elle met en relation les résultats obtenus avec les ressources mobilisées. Réduire une dépense sans considérer les résultats ne suffit pas à démontrer une amélioration."
+        ],
+        "explanation": "Réduire une dépense sans considérer les résultats ne suffit pas à démontrer une amélioration."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q049",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 49,
+    "theme": "Financement et prise en charge",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent Sécurité sociale et Assurance maladie ?",
+    "choices": [
+      "La Sécurité sociale protège contre plusieurs risques.",
+      "L’Assurance maladie désigne uniquement une mutuelle.",
+      "La Sécurité sociale est le nom d’un service hospitalier.",
+      "L’Assurance maladie est une composante de la Sécurité sociale.",
+      "Les deux expressions sont toujours interchangeables."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle dépasse la seule prise en charge des soins.",
+      "Couverture obligatoire et complémentaire doivent être distinguées.",
+      "Elle constitue un système de protection sociale.",
+      "Leurs périmètres ne sont pas identiques.",
+      "Cela effacerait la différence de périmètre."
+    ],
+    "explanation": "Non. Elle est une composante d’une protection sociale couvrant plusieurs risques de la vie. La partie ne doit pas être confondue avec l’ensemble.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c049",
+        "theme": "Financement et prise en charge",
+        "front": "L’Assurance maladie est-elle synonyme de toute la Sécurité sociale ?",
+        "answers": [
+          "Non. Elle est une composante d’une protection sociale couvrant plusieurs risques de la vie. La partie ne doit pas être confondue avec l’ensemble."
+        ],
+        "explanation": "La partie ne doit pas être confondue avec l’ensemble."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q050",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 50,
+    "theme": "Financement et prise en charge",
+    "difficulty": "medium",
+    "question": "Quelles fonctions correspondent à la LFSS et à l’ONDAM ?",
+    "choices": [
+      "La LFSS est une loi votée par le Parlement.",
+      "Ces deux sigles sont les noms de deux complémentaires santé.",
+      "La LFSS est un centre local de consultation.",
+      "L’ONDAM est un objectif de dépenses.",
+      "L’ONDAM est le salaire individuel de tous les soignants."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Son objet concerne le financement de la protection sociale.",
+      "Leur fonction relève du cadre financier.",
+      "Le sigle désigne une loi.",
+      "Il ne désigne pas une caisse.",
+      "Il s’agit d’un objectif national."
+    ],
+    "explanation": "La LFSS est la loi de financement de la Sécurité sociale ; l’ONDAM est l’objectif national de dépenses d’Assurance maladie. Ce sont des éléments du cadre financier, pas des organismes de remboursement.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c050",
+        "theme": "Financement et prise en charge",
+        "front": "Que désignent LFSS et ONDAM ?",
+        "answers": [
+          "La LFSS est la loi de financement de la Sécurité sociale ; l’ONDAM est l’objectif national de dépenses d’Assurance maladie. Ce sont des éléments du cadre financier, pas des organismes de remboursement."
+        ],
+        "explanation": "Ce sont des éléments du cadre financier, pas des organismes de remboursement."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q051",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 51,
+    "theme": "Financement et prise en charge",
+    "difficulty": "medium",
+    "question": "Quelles associations CNAM–CPAM sont exactes ?",
+    "choices": [
+      "Les CPAM interviennent dans la gestion locale des droits des assurés.",
+      "La CNAM participe aux orientations nationales du réseau.",
+      "La maîtrise médicalisée consiste à réduire tout soin sans égard à son utilité.",
+      "CNAM est un autre nom de la DGS.",
+      "Les CPAM votent la LFSS nationale."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles accompagnent la mise en œuvre des prestations.",
+      "Son échelle est nationale.",
+      "Elle recherche l’efficience en préservant pertinence, qualité et sécurité.",
+      "Caisse et direction ministérielle sont distinctes.",
+      "Le vote relève du Parlement."
+    ],
+    "explanation": "La CNAM pilote au niveau national ; les CPAM accompagnent les assurés et mettent en œuvre localement la gestion des droits et prestations. Une direction ministérielle, une caisse nationale et une caisse locale sont trois acteurs distincts.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c051",
+        "theme": "Financement et prise en charge",
+        "front": "Comment distinguer CNAM et CPAM ?",
+        "answers": [
+          "La CNAM pilote au niveau national ; les CPAM accompagnent les assurés et mettent en œuvre localement la gestion des droits et prestations. Une direction ministérielle, une caisse nationale et une caisse locale sont trois acteurs distincts."
+        ],
+        "explanation": "Une direction ministérielle, une caisse nationale et une caisse locale sont trois acteurs distincts."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q052",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 52,
+    "theme": "Financement et prise en charge",
+    "difficulty": "medium",
+    "question": "Comment interpréter le reste à charge ?",
+    "choices": [
+      "Le montant après l’Assurance maladie est toujours le paiement final.",
+      "Une complémentaire peut modifier la somme finalement supportée.",
+      "Un exemple général garantit le remboursement individuel.",
+      "Il faut préciser après quelle prise en charge on raisonne.",
+      "Toute dépense de santé est forcément intégralement couverte."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une complémentaire peut intervenir.",
+      "Elle peut couvrir une partie de dépenses non prises en charge auparavant.",
+      "Les conditions applicables doivent être vérifiées.",
+      "La notion dépend de cette référence.",
+      "Une prise en charge totale ne peut pas être supposée."
+    ],
+    "explanation": "La somme restant après l’Assurance maladie peut différer de celle restant après une complémentaire. Le calcul dépend du niveau considéré et de la couverture applicable.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c052",
+        "theme": "Financement et prise en charge",
+        "front": "Pourquoi préciser le niveau de prise en charge avant de parler de reste à charge ?",
+        "answers": [
+          "La somme restant après l’Assurance maladie peut différer de celle restant après une complémentaire. Le calcul dépend du niveau considéré et de la couverture applicable."
+        ],
+        "explanation": "Le calcul dépend du niveau considéré et de la couverture applicable."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q053",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 53,
+    "theme": "Financement et prise en charge",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent complémentaire santé et mutuelle ?",
+    "choices": [
+      "Une complémentaire remplace automatiquement tout rôle de l’Assurance maladie.",
+      "La complémentaire peut prendre en charge tout ou partie de certaines dépenses restantes.",
+      "Toutes les complémentaires sont obligatoirement des mutuelles.",
+      "Une mutuelle est le nom de la loi annuelle de financement.",
+      "Une mutuelle peut proposer une complémentaire santé."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les niveaux de prise en charge doivent être distingués.",
+      "Cela dépend des conditions de la couverture.",
+      "Plusieurs types d’organismes peuvent intervenir.",
+      "Ce sont deux objets différents.",
+      "L’organisme et la couverture sont liés sans être identiques."
+    ],
+    "explanation": "La complémentaire désigne une couverture ; la mutuelle est un type d’organisme pouvant la proposer. Toutes les complémentaires ne sont pas des mutuelles.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c053",
+        "theme": "Financement et prise en charge",
+        "front": "Complémentaire santé et mutuelle sont-elles synonymes ?",
+        "answers": [
+          "La complémentaire désigne une couverture ; la mutuelle est un type d’organisme pouvant la proposer. Toutes les complémentaires ne sont pas des mutuelles."
+        ],
+        "explanation": "Toutes les complémentaires ne sont pas des mutuelles."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q054",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 54,
+    "theme": "Financement et prise en charge",
+    "difficulty": "hard",
+    "question": "Une personne n’avance pas certains frais. Quelles conclusions peut-on tirer ?",
+    "choices": [
+      "Les conditions de couverture doivent être vérifiées.",
+      "Toute dépense présente ou future devient nécessairement gratuite.",
+      "L’absence d’avance prouve qu’aucune complémentaire n’intervient.",
+      "Il faut distinguer avance et prise en charge finale.",
+      "La situation autorise à promettre un taux identique pour tous."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles déterminent les droits et montants applicables.",
+      "Cette généralisation n’est pas justifiée.",
+      "Elle ne permet pas de connaître les niveaux de prise en charge.",
+      "L’absence d’avance ne décrit pas toutes les dépenses couvertes.",
+      "Les règles précises ne se déduisent pas de ce seul constat."
+    ],
+    "explanation": "Non. Modalité de paiement et niveau de remboursement doivent être distingués. Un obstacle financier appelle une orientation adaptée, sans promesse de gratuité fondée sur un exemple général.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c054",
+        "theme": "Financement et prise en charge",
+        "front": "L’absence d’avance des frais prouve-t-elle une couverture intégrale ?",
+        "answers": [
+          "Non. Modalité de paiement et niveau de remboursement doivent être distingués. Un obstacle financier appelle une orientation adaptée, sans promesse de gratuité fondée sur un exemple général."
+        ],
+        "explanation": "Un obstacle financier appelle une orientation adaptée, sans promesse de gratuité fondée sur un exemple général."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q055",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 55,
+    "theme": "Surveillance et vigilances",
+    "difficulty": "medium",
+    "question": "Quelles associations acteur–mission de surveillance sont cohérentes ?",
+    "choices": [
+      "L’ANSES produit une expertise sur l’alimentation, l’environnement et le travail.",
+      "Une ARS intervient uniquement à l’échelle mondiale.",
+      "Un nombre d’événements suffit sans aucune analyse.",
+      "La surveillance remplace toute organisation de réponse.",
+      "Santé publique France participe à la surveillance et à la prévention."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ces champs participent à la sécurité sanitaire.",
+      "Elle participe à la surveillance régionale.",
+      "L’analyse permet d’interpréter les informations.",
+      "Elle éclaire l’action sans s’y substituer.",
+      "Son action concerne la santé publique nationale."
+    ],
+    "explanation": "Recueillir et analyser des informations pour suivre l’état de santé et les risques, repérer des signaux et éclairer la réponse. Surveiller ne se limite pas à compter ; l’information doit soutenir prévention et action.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c055",
+        "theme": "Surveillance et vigilances",
+        "front": "Quel est l’objectif de la surveillance sanitaire ?",
+        "answers": [
+          "Recueillir et analyser des informations pour suivre l’état de santé et les risques, repérer des signaux et éclairer la réponse. Surveiller ne se limite pas à compter ; l’information doit soutenir prévention et action."
+        ],
+        "explanation": "Surveiller ne se limite pas à compter ; l’information doit soutenir prévention et action."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q056",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 56,
+    "theme": "Surveillance et vigilances",
+    "difficulty": "easy",
+    "question": "Quelles associations vigilance–objet sont correctes ?",
+    "choices": [
+      "L’hémovigilance est un synonyme du financement hospitalier.",
+      "Les risques des dispositifs médicaux relèvent de la matériovigilance.",
+      "La chaîne transfusionnelle relève de l’hémovigilance.",
+      "Les effets et risques des médicaments relèvent de la pharmacovigilance.",
+      "La biovigilance désigne uniquement les salaires des chercheurs."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Son objet est la sécurité transfusionnelle.",
+      "L’objet est distinct de celui d’un médicament.",
+      "Elle concerne le sang et les produits concernés.",
+      "Le préfixe renvoie ici au médicament.",
+      "Elle concerne des activités et produits biologiques, notamment les greffes."
+    ],
+    "explanation": "Pharmacovigilance : médicaments ; matériovigilance : dispositifs médicaux ; hémovigilance : chaîne transfusionnelle et produits sanguins concernés. Le type de produit ou d’activité oriente la vigilance pertinente.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c056",
+        "theme": "Surveillance et vigilances",
+        "front": "Comment distinguer pharmacovigilance, matériovigilance et hémovigilance ?",
+        "answers": [
+          "Pharmacovigilance : médicaments ; matériovigilance : dispositifs médicaux ; hémovigilance : chaîne transfusionnelle et produits sanguins concernés. Le type de produit ou d’activité oriente la vigilance pertinente."
+        ],
+        "explanation": "Le type de produit ou d’activité oriente la vigilance pertinente."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q057",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 57,
+    "theme": "Surveillance et vigilances",
+    "difficulty": "hard",
+    "question": "Un effet rare est repéré après la mise à disposition d’un médicament. Quelles propositions sont justes ?",
+    "choices": [
+      "Le signalement et l’analyse restent utiles après la mise à disposition.",
+      "L’EFS a pour unique mission de voter les lois.",
+      "L’EMA et l’ANSM sont deux caisses locales de remboursement.",
+      "L’ancienneté d’utilisation garantit un risque nul.",
+      "L’évaluation initiale et la surveillance se complètent."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils contribuent à repérer les risques.",
+      "Il intervient notamment dans la collecte et la distribution des produits sanguins labiles.",
+      "Ce sont des acteurs de la sécurité des médicaments à des échelles distinctes.",
+      "Des risques peuvent être repérés après une utilisation plus large.",
+      "L’une ne rend pas l’autre inutile."
+    ],
+    "explanation": "Des effets rares peuvent être repérés plus tard ; la surveillance complète l’évaluation initiale. Une utilisation ancienne ne démontre pas l’absence de tout risque.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c057",
+        "theme": "Surveillance et vigilances",
+        "front": "Pourquoi surveiller un médicament après sa mise à disposition ?",
+        "answers": [
+          "Des effets rares peuvent être repérés plus tard ; la surveillance complète l’évaluation initiale. Une utilisation ancienne ne démontre pas l’absence de tout risque."
+        ],
+        "explanation": "Une utilisation ancienne ne démontre pas l’absence de tout risque."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q058",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 58,
+    "theme": "Recherche et situations de synthèse",
+    "difficulty": "easy",
+    "question": "Quels acteurs peuvent participer à la recherche en santé ?",
+    "choices": [
+      "Les laboratoires pharmaceutiques.",
+      "Les organismes ou instituts de recherche.",
+      "Les CHU et les universités.",
+      "Exclusivement les caisses locales de remboursement.",
+      "Uniquement les services réalisant des consultations sans autre mission."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ils participent à la recherche et à l’innovation.",
+      "Ils contribuent à la production de connaissances.",
+      "La recherche fait partie de leurs missions présentées.",
+      "Le champ décrit est plus large et ne se réduit pas à ces caisses.",
+      "La recherche mobilise des organisations spécifiques et variées."
+    ],
+    "explanation": "CHU et universités, organismes ou instituts de recherche et laboratoires pharmaceutiques. Leurs activités de recherche s’articulent avec d’autres fonctions sans s’y confondre.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c058",
+        "theme": "Recherche et situations de synthèse",
+        "front": "Quelles grandes familles d’acteurs mobilise la recherche en santé ?",
+        "answers": [
+          "CHU et universités, organismes ou instituts de recherche et laboratoires pharmaceutiques. Leurs activités de recherche s’articulent avec d’autres fonctions sans s’y confondre."
+        ],
+        "explanation": "Leurs activités de recherche s’articulent avec d’autres fonctions sans s’y confondre."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q059",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 59,
+    "theme": "Recherche et situations de synthèse",
+    "difficulty": "medium",
+    "question": "Quelles propositions distinguent les missions d’un CHU ?",
+    "choices": [
+      "L’enseignement rend le soin inutile.",
+      "La recherche se confond avec le remboursement individuel.",
+      "Le soin et la recherche restent des activités distinctes.",
+      "Tout soin de CHU est automatiquement une procédure expérimentale.",
+      "La formation fait partie de ses missions."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les missions se complètent.",
+      "Ce sont des fonctions différentes.",
+      "Leur articulation ne les rend pas identiques.",
+      "Le lieu ne suffit pas à qualifier l’acte.",
+      "Elle correspond à l’enseignement."
+    ],
+    "explanation": "Soin, enseignement et recherche. Ces missions sont reliées mais ne sont pas trois noms pour le même acte.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c059",
+        "theme": "Recherche et situations de synthèse",
+        "front": "Quelles trois missions sont articulées dans un CHU ?",
+        "answers": [
+          "Soin, enseignement et recherche. Ces missions sont reliées mais ne sont pas trois noms pour le même acte."
+        ],
+        "explanation": "Ces missions sont reliées mais ne sont pas trois noms pour le même acte."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  },
+  {
+    "id": "offre_soins_20261106_q060",
+    "courseId": "offre_soins_systeme_sante",
+    "number": 60,
+    "theme": "Recherche et situations de synthèse",
+    "difficulty": "hard",
+    "question": "Plusieurs habitants rencontrent des délais, une mauvaise transmission de comptes rendus et des difficultés de paiement. Quels liens sont pertinents ?",
+    "choices": [
+      "Relier les comptes rendus à la continuité du parcours.",
+      "Déduire une solution identique pour tous du seul nom du territoire.",
+      "Orienter la question financière vers les interlocuteurs de prise en charge.",
+      "Relier les délais à l’offre et à l’organisation territoriale.",
+      "Confier toutes ces fonctions au seul organisme d’expertise scientifique."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le retour d’information soutient la coordination.",
+      "Les besoins concrets doivent être examinés.",
+      "Elle ne se résout pas par la seule expertise clinique.",
+      "Ces dimensions peuvent contribuer à l’accès effectif.",
+      "Les fonctions et interlocuteurs diffèrent."
+    ],
+    "explanation": "À quelle échelle intervient-il, quelle fonction remplit-il et avec quels acteurs s’articule-t-il ? Cette méthode relie la situation aux ressources adaptées sans confondre coordination, financement et expertise.",
+    "flashcards": [
+      {
+        "id": "offre_soins_20261106_c060",
+        "theme": "Recherche et situations de synthèse",
+        "front": "Quelles trois questions aident à situer un acteur du système de santé ?",
+        "answers": [
+          "À quelle échelle intervient-il, quelle fonction remplit-il et avec quels acteurs s’articule-t-il ? Cette méthode relie la situation aux ressources adaptées sans confondre coordination, financement et expertise."
+        ],
+        "explanation": "Cette méthode relie la situation aux ressources adaptées sans confondre coordination, financement et expertise."
+      }
+    ],
+    "course": "Offre de soins et système de santé",
+    "ue": "C1.1",
+    "kind": "QCM"
+  }
+]

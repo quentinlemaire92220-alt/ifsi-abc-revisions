@@ -1,4 +1,5 @@
 import {validateCompleteWrittenRevision} from './complete-written-revision-contract.mjs';
+import {validateReviewedWrittenAudioRevision} from './reviewed-written-audio-revision-contract.mjs';
 // An approved revision selects new active resources without rewriting a signed
 // historical delivery. Historical views are test-only; students use real catalogs.
 import fs from 'node:fs';
@@ -19,6 +20,10 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
+  if(r.profile==='reviewed_written_audio_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
+   validateReviewedWrittenAudioRevision(r,manifest,revisionBundle(r));continue;
+  }
   if(r.profile==='official_complete_written_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
    validateCompleteWrittenRevision(r,manifest,revisionBundle(r));continue;
@@ -91,10 +96,11 @@ export function approvedRevisionAudioIds(manifest){
 }
 // Adapter for shared PDF/visibility gates; never edits the historical delivery.
 export function scopedRevisionDeliveryForUrl(manifest,courseId,url){
- const r=manifest.scopedCourseRevisions?.find(r=>r.courseId===courseId&&r.publicArtifacts.some(a=>origin+a.path===url));
+ const assets=r=>[...r.publicArtifacts,...(r.officialSupportArtifact?[r.officialSupportArtifact]:[])];
+ const r=manifest.scopedCourseRevisions?.find(r=>r.courseId===courseId&&assets(r).some(a=>origin+a.path===url));
  if(!r)return null;
  validateScopedRevisions(manifest);
- const artifacts=r.publicArtifacts.map(a=>({...a,artifactId:r.id+'_'+a.role}));
+ const artifacts=assets(r).map(a=>({...a,artifactId:r.id+'_'+a.role}));
  return {courseId,publicationHost:'github_pages',publicationApproval:r.publicationApproval,
   publicArtifacts:Object.fromEntries(artifacts.map(a=>[a.role,a])),artifactSha256s:Object.fromEntries(artifacts.map(a=>[a.artifactId,a.sha256]))};
 }

@@ -15280,6 +15280,1218 @@
       "theme": "Déterminants de santé",
       "sourceType": "course_glossary",
       "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_001",
+      "term": "Santé publique",
+      "definition": "Approche de la santé à l’échelle des populations, associant connaissance de l’état de santé et actions collectives pour le préserver ou l’améliorer.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_002",
+      "term": "Système de santé",
+      "definition": "Ensemble organisé des acteurs, ressources, institutions et activités qui concourent à la santé ; il dépasse le seul système de soins.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_003",
+      "term": "Système de soins",
+      "definition": "Ensemble des services et interventions de prévention, de traitement, de réadaptation ou de soins palliatifs répondant aux besoins de santé.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_004",
+      "term": "Offre de soins",
+      "definition": "Professionnels, structures, équipements et services disponibles ou mobilisables pour répondre aux besoins de soins.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_005",
+      "term": "Accès aux soins",
+      "definition": "Possibilité effective d’obtenir des soins adaptés ; elle ne se déduit pas de la seule présence de professionnels sur une carte.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_006",
+      "term": "Équité",
+      "definition": "Recherche d’une réponse adaptée aux besoins, sans discrimination ; elle ne se réduit pas à une offre identique en apparence.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_007",
+      "term": "Continuité des soins",
+      "definition": "Cohérence du suivi dans le temps et entre intervenants, notamment lors des passages entre hôpital et ville.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_008",
+      "term": "Prévention",
+      "definition": "Interventions visant à éviter ou limiter des problèmes de santé et leurs conséquences, à l’échelle individuelle ou collective.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_009",
+      "term": "Réadaptation",
+      "definition": "Interventions visant la récupération ou l’adaptation après une maladie, un accident ou une intervention.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_010",
+      "term": "Soins palliatifs",
+      "definition": "Interventions orientées vers le soulagement et l’accompagnement de la personne ; une fonction distincte des seules interventions curatives.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_011",
+      "term": "Profession médicale",
+      "definition": "Catégorie regroupant, dans le cours, médecins, chirurgiens-dentistes et sages-femmes.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_012",
+      "term": "Maïeutique",
+      "definition": "Terme associé à la profession de sage-femme.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_013",
+      "term": "Auxiliaire médical",
+      "definition": "Professionnel appartenant à l’ensemble des auxiliaires médicaux, dont les infirmiers ; cette catégorie ne décrit pas à elle seule les actes autorisés.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_014",
+      "term": "IDE",
+      "definition": "Infirmier diplômé d’État : professionnel participant aux soins, à la surveillance, à la prévention et à la continuité des prises en charge.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_015",
+      "term": "IPA",
+      "definition": "Infirmier en pratique avancée : forme d’exercice infirmier avec des compétences élargies dans un cadre défini ; ne signifie pas autorisation de tout acte.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_016",
+      "term": "Ordre professionnel",
+      "definition": "Organisme de régulation d’une profession, intervenant notamment sur le tableau, la déontologie et la discipline.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_017",
+      "term": "Tableau de l’Ordre",
+      "definition": "Registre des professionnels inscrits à l’ordre de la profession concernée.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_018",
+      "term": "Exercice salarié",
+      "definition": "Mode d’exercice dans le cadre d’un emploi, donnant lieu à un salaire.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_019",
+      "term": "Exercice libéral",
+      "definition": "Mode d’exercice indépendant, présenté notamment à travers la rémunération à l’acte dans le cours.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_020",
+      "term": "Exercice mixte",
+      "definition": "Association d’une activité salariée et d’une activité libérale pour un même professionnel.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_021",
+      "term": "DPC",
+      "definition": "Développement professionnel continu : démarche liée à l’actualisation des pratiques et à la formation professionnelle.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_022",
+      "term": "Effectif",
+      "definition": "Nombre de professionnels dans un périmètre donné, à distinguer d’une densité rapportée à la population.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_023",
+      "term": "Densité professionnelle",
+      "definition": "Nombre de professionnels rapporté à une population, selon l’unité et le champ de mesure retenus.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_024",
+      "term": "Projection",
+      "definition": "Scénario concernant une évolution future, construit à partir d’hypothèses ; ce n’est pas une observation déjà réalisée.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_025",
+      "term": "Établissement de santé",
+      "definition": "Organisation assurant notamment diagnostic, surveillance et traitement, avec des modalités de soins avec ou sans hébergement.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_026",
+      "term": "CH",
+      "definition": "Centre hospitalier : établissement hospitalier public cité parmi les types d’établissements de santé.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_027",
+      "term": "CHR",
+      "definition": "Centre hospitalier régional : catégorie d’établissement public figurant dans l’organisation hospitalière présentée.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_028",
+      "term": "CHU",
+      "definition": "Centre hospitalier universitaire : articulation des missions de soin, d’enseignement et de recherche.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_029",
+      "term": "ESPIC",
+      "definition": "Établissement de santé privé d’intérêt collectif : établissement privé à but non lucratif dans la présentation du cours.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_030",
+      "term": "MCO",
+      "definition": "Médecine, chirurgie, obstétrique : ensemble d’activités hospitalières à distinguer d’un statut juridique d’établissement.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_031",
+      "term": "SSR",
+      "definition": "Soins de suite et de réadaptation : appellation employée dans le support pour le secteur de récupération et de réadaptation.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_032",
+      "term": "USLD",
+      "definition": "Unité de soins de longue durée : prise en charge de personnes nécessitant une surveillance médicale importante et durable.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_033",
+      "term": "CLCC",
+      "definition": "Centre de lutte contre le cancer : exemple d’établissement spécialisé en cancérologie.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_034",
+      "term": "Médico-social",
+      "definition": "Domaine articulant soins, autonomie, accompagnement et besoins sociaux ou de vie quotidienne.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_035",
+      "term": "EHPAD",
+      "definition": "Établissement d’hébergement pour personnes âgées dépendantes : structure médico-sociale associant hébergement, accompagnement et soins.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_036",
+      "term": "Soins de ville",
+      "definition": "Soins réalisés hors établissements de santé et structures médico-sociales, notamment au cabinet ou au domicile.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_037",
+      "term": "Hospitalisation conventionnelle",
+      "definition": "Prise en charge hospitalière comportant un hébergement et des nuitées dans l’établissement.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_038",
+      "term": "HDS",
+      "definition": "Hôpital de semaine : modalité d’organisation hospitalière sur la semaine.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_039",
+      "term": "HDJ",
+      "definition": "Hôpital de jour : venue pour examens ou traitements sans nuitée dans l’établissement.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_040",
+      "term": "Ambulatoire",
+      "definition": "Mode de prise en charge sans nuitée dans la structure, possible en ville comme à l’hôpital.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_041",
+      "term": "HAD",
+      "definition": "Hospitalisation à domicile : organisation hospitalière au domicile, distincte des seuls soins de ville à domicile.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_042",
+      "term": "Virage ambulatoire",
+      "definition": "Développement des prises en charge sans nuitée lorsque la situation s’y prête, avec organisation des relais et du suivi.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_043",
+      "term": "Soins programmés",
+      "definition": "Soins anticipés et planifiés, par exemple une consultation de suivi ou une intervention prévue.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_044",
+      "term": "Soins non programmés",
+      "definition": "Réponse à un besoin imprévu nécessitant une prise en charge rapide, distincte d’une urgence vitale.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_045",
+      "term": "SAS",
+      "definition": "Service d’accès aux soins : dispositif participant à la régulation et à l’orientation des demandes vers une réponse adaptée.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_046",
+      "term": "Régulation",
+      "definition": "Évaluation d’une demande et orientation vers une ressource adaptée au besoin et à son degré de priorité.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_047",
+      "term": "Premier recours",
+      "definition": "Soins de premier contact répondant aux besoins courants, à la prévention et au suivi de proximité.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_048",
+      "term": "Deuxième recours",
+      "definition": "Prise en charge spécialisée au-delà des ressources habituelles du premier recours, en ville ou à l’hôpital.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_049",
+      "term": "Soins tertiaires",
+      "definition": "Prises en charge complexes nécessitant une organisation, des équipes et des équipements spécialisés.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_050",
+      "term": "Soins quaternaires",
+      "definition": "Prises en charge particulièrement spécialisées ou inhabituelles, dont certaines procédures expérimentales dans le modèle présenté.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_051",
+      "term": "Parcours de soins coordonné",
+      "definition": "Organisation cohérente des consultations, examens, traitements et suivis autour du patient.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_052",
+      "term": "Médecin traitant",
+      "definition": "Médecin jouant un rôle central de suivi, de prévention, d’orientation et de coordination ; il peut être généraliste ou spécialiste.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_053",
+      "term": "ALD",
+      "definition": "Affection de longue durée : notion associée dans le cours au protocole de soins et au suivi coordonné.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_054",
+      "term": "Parcours de santé",
+      "definition": "Périmètre englobant le parcours de soins et les dimensions médico-sociales et sociales de la situation.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_055",
+      "term": "ESP",
+      "definition": "Équipe de soins primaires : professionnels du premier recours qui coordonnent leurs pratiques autour d’une population ou d’un projet.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_056",
+      "term": "CDS",
+      "definition": "Centre de santé : structure de soins regroupant des professionnels, généralement salariés dans les exemples du cours.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_057",
+      "term": "MSP",
+      "definition": "Maison de santé pluriprofessionnelle : organisation de soins reposant sur un projet pluriprofessionnel, généralement avec des libéraux dans le cours.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_058",
+      "term": "CPTS",
+      "definition": "Communauté professionnelle territoriale de santé : organisation de coordination des acteurs de santé d’un territoire.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_059",
+      "term": "DMP",
+      "definition": "Dossier médical partagé : outil numérique de partage d’informations utiles au suivi de la personne.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_060",
+      "term": "Mon espace santé",
+      "definition": "Espace numérique de santé du patient, présenté comme support de continuité et de circulation des informations utiles.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_061",
+      "term": "Déconcentration",
+      "definition": "Déploiement territorial d’un pilotage national ; repère à distinguer de la répartition décentralisée des compétences.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_062",
+      "term": "Décentralisation",
+      "definition": "Logique de répartition de compétences entre niveaux ou acteurs territoriaux, distincte du seul déploiement d’un pilotage national.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_063",
+      "term": "LFSS",
+      "definition": "Loi de financement de la Sécurité sociale : loi annuelle déterminant notamment le cadre et des objectifs financiers de la protection sociale.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_064",
+      "term": "ONDAM",
+      "definition": "Objectif national de dépenses d’Assurance maladie : objectif financier, à distinguer d’un organisme ou d’un remboursement individuel.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_065",
+      "term": "HPST",
+      "definition": "Loi Hôpital, patients, santé et territoires : repère de 2009 dans l’évolution de l’organisation sanitaire.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_066",
+      "term": "DGS",
+      "definition": "Direction générale de la santé : direction centrée sur les politiques et objectifs de santé publique.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_067",
+      "term": "DGOS",
+      "definition": "Direction générale de l’offre de soins : direction chargée du pilotage stratégique de l’offre de soins.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_068",
+      "term": "DSS",
+      "definition": "Direction de la Sécurité sociale : direction intervenant sur le cadre, les mesures et les objectifs financiers de la protection sociale.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_069",
+      "term": "DGCS",
+      "definition": "Direction générale de la cohésion sociale : direction intervenant notamment sur l’exclusion, les familles et l’autonomie.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_070",
+      "term": "DREES",
+      "definition": "Direction de la recherche, des études, de l’évaluation et des statistiques : production et analyse d’informations sanitaires et sociales.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_071",
+      "term": "IGAS",
+      "definition": "Inspection générale des affaires sociales : corps d’inspection figurant dans l’organisation ministérielle présentée.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_072",
+      "term": "ARS",
+      "definition": "Agence régionale de santé : acteur régional d’organisation de l’offre, du médico-social, de prévention et de sécurité sanitaire.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_073",
+      "term": "OMS",
+      "definition": "Organisation mondiale de la santé : organisation intervenant à l’échelle mondiale dans le domaine de la santé.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_074",
+      "term": "UNICEF",
+      "definition": "Fonds des Nations unies pour l’enfance : acteur international associé notamment à la santé et aux besoins de l’enfance.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_075",
+      "term": "RGPD",
+      "definition": "Règlement général sur la protection des données : cadre européen de protection des données personnelles, dont les données de santé.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_076",
+      "term": "HAS",
+      "definition": "Haute Autorité de santé : organisme d’expertise scientifique indépendant contribuant notamment à l’évaluation, aux bonnes pratiques et à la qualité.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_077",
+      "term": "Certification",
+      "definition": "Démarche d’évaluation des établissements de santé portant notamment sur la qualité et la sécurité des soins.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_078",
+      "term": "Qualité",
+      "definition": "Caractère correct de la réalisation et des conditions d’un soin ; à distinguer de son utilité dans une situation.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_079",
+      "term": "Pertinence",
+      "definition": "Adéquation et utilité d’un soin au regard des besoins de la personne et de la situation.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_080",
+      "term": "Efficience",
+      "definition": "Mise en relation des résultats obtenus avec les ressources mobilisées, sans se limiter au prix le plus bas.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_081",
+      "term": "Sécurité sociale",
+      "definition": "Système de protection sociale couvrant différents risques de la vie ; l’Assurance maladie en est une composante.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_082",
+      "term": "Assurance maladie",
+      "definition": "Composante de la protection sociale intervenant notamment dans la prise en charge des dépenses de santé et l’accompagnement des assurés.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_083",
+      "term": "CNAM",
+      "definition": "Caisse nationale de l’Assurance maladie : échelon national d’orientation et de pilotage du réseau.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_084",
+      "term": "CPAM",
+      "definition": "Caisse primaire d’Assurance maladie : organisme de mise en œuvre locale, de gestion des droits et des prestations prises en charge.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_085",
+      "term": "Maîtrise médicalisée",
+      "definition": "Recherche de gains d’efficience dans les dépenses de santé en conservant une logique médicale.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_086",
+      "term": "Reste à charge",
+      "definition": "Part d’une dépense restant après la prise en charge considérée ; préciser le niveau de prise en charge auquel on se réfère.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_087",
+      "term": "Complémentaire santé",
+      "definition": "Couverture pouvant prendre en charge tout ou partie de dépenses non couvertes par l’Assurance maladie, selon les conditions applicables.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_088",
+      "term": "Mutuelle",
+      "definition": "Type d’organisme à but non lucratif pouvant proposer une complémentaire santé ; toutes les complémentaires ne sont pas des mutuelles.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_089",
+      "term": "Surveillance sanitaire",
+      "definition": "Recueil et analyse d’informations permettant de suivre les maladies, l’état de santé et les risques sanitaires.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_090",
+      "term": "ECDC",
+      "definition": "Centre européen de prévention et de contrôle des maladies : agence européenne participant à la surveillance des maladies et épidémies.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_091",
+      "term": "Santé publique France",
+      "definition": "Agence nationale de santé publique intervenant dans la surveillance, la prévention, la promotion de la santé et la réponse aux menaces.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_092",
+      "term": "ANSES",
+      "definition": "Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail : acteur d’expertise en sécurité sanitaire.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_093",
+      "term": "ANSM",
+      "definition": "Agence nationale de sécurité du médicament et des produits de santé : acteur national de la sécurité des produits de santé.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_094",
+      "term": "EMA",
+      "definition": "Agence européenne des médicaments : acteur européen d’évaluation et de surveillance des médicaments.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_095",
+      "term": "EFS",
+      "definition": "Établissement français du sang : acteur de collecte, préparation, qualification et distribution des produits sanguins labiles.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_096",
+      "term": "Agence de la biomédecine",
+      "definition": "Organisme de référence dans les domaines biologiques et médicaux présentés, notamment les greffes.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_097",
+      "term": "Pharmacovigilance",
+      "definition": "Surveillance des effets et des risques liés aux médicaments.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_098",
+      "term": "Matériovigilance",
+      "definition": "Surveillance des risques liés aux dispositifs médicaux.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_099",
+      "term": "Hémovigilance",
+      "definition": "Surveillance liée à la chaîne transfusionnelle et aux produits sanguins concernés.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_100",
+      "term": "Biovigilance",
+      "definition": "Surveillance des activités et produits biologiques concernés, notamment dans le domaine des greffes.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "os_101",
+      "term": "INCa",
+      "definition": "Institut national du cancer : acteur d’expertise et d’action dans le domaine de la cancérologie cité parmi les organismes sanitaires.",
+      "courseIds": [
+        "offre_soins_systeme_sante"
+      ],
+      "ue": "C1.1",
+      "theme": "Offre de soins et système de santé",
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
     }
   ]
 }

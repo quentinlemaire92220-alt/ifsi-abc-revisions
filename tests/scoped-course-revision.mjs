@@ -14,6 +14,12 @@ for(const r of manifest.scopedCourseRevisions||[]){
  assert.equal(cards.length,read(r.bankPath).flatMap(q=>q.flashcards).length,'Active cards lost or duplicated');
  assert.ok(cards.every(c=>r.questionIds.includes(c.qid)),'Historical reserved question leaked into active cards');
  assert.equal(runtime.window.IFSI_VOCAB.countForCourse(r.courseId),r.vocabularyEntryIds.length);
+ if(r.id==='offre_soins_20261106'){
+  const card=cards.find(c=>c.qid==='offre_soins_20261106_q041');
+  assert.deepEqual(Array.from(card.answers),['DREES : études et statistiques','DGCS : cohésion sociale','IGAS : inspection des affaires sociales.']);
+  assert.equal(card.explanation,'Partir de la fonction permet d’éviter la confusion entre organismes aux sigles proches.');
+  assert.equal(read(r.bankPath)[40].flashcards[0].answers[0],card.answers.join(' ; ')+' '+card.explanation,'Display must preserve every authored word');
+ }
  const baseline=read(r.baselinePath);
  if(process.env.IFSI_BASE_SHA){
   const prior=p=>JSON.parse(execFileSync('git',['show',process.env.IFSI_BASE_SHA+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));

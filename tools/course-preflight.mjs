@@ -12,6 +12,8 @@ const commands=[
  ['resource_access',n,['tests/course-resource-access.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
  ['complete_written_revision',n,['tests/complete-written-revision.mjs']],
+ ['reviewed_written_audio_revision',n,['tests/reviewed-written-audio-revision.mjs']],
+ ['reviewed_written_audio_pdf',py,['tests/reviewed-written-audio-pdf.py']],
  ['compact_pdf_profile',py,['tests/pdf-compact-profile-test.py']],
  ['audio_series_replacement',n,['tests/audio-series-replacement.mjs',...(stage==='preparation'?['--preparation']:[])]],
  ['provided_audio_series',n,['tests/provided-audio-series.mjs']],
