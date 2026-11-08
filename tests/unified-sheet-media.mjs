@@ -5,6 +5,8 @@ import {webcrypto} from 'node:crypto';
 import {validateHostedAudioSupplements} from '../tools/hosted-audio-supplement-contract.mjs';
 import {validateScopedRevisions,revisionDigest} from '../tools/scoped-course-revision-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const precache=JSON.parse(fs.readFileSync('sw.js','utf8').match(/const BASE_ASSETS=(\[[^;]+\]);/)[1].replaceAll("'",'"'));
+assert.equal(new Set(precache).size,precache.length,'Duplicate precache URLs prevent service-worker installation');
 const manifest=read('docs/course-deliveries.json');validateScopedRevisions(manifest);
 const series=read('audio-series-v1.json'),raw=read('vocals.json');
 async function boot(data){const c={window:{},crypto:webcrypto,TextEncoder,Uint8Array,console:{error(){}},fetch:async()=>({ok:true,json:async()=>structuredClone(data)})};vm.runInNewContext(fs.readFileSync('audio-series-v1.js','utf8'),c);await c.window.IFSI_AUDIO_SERIES.ready;return c.window.IFSI_AUDIO_SERIES;}
