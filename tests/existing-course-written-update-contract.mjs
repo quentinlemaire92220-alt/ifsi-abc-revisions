@@ -1,3 +1,4 @@
+import {scopedHistoricalJson} from '../tools/scoped-course-revision-contract.mjs';
 import {historicalAudioView} from '../tools/hosted-audio-supplement-contract.mjs';
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import assert from 'node:assert/strict';
@@ -66,7 +67,8 @@ export function validateExistingWrittenUpdate(course,d,{sheets,questions,deck,vo
 export function verifyExistingWrittenHistory(oldCourse,nextCourse,d,base=process.env.IFSI_BASE_SHA){
  assert.ok(isExistingWrittenUpdate(d));assert.equal(d.courseId,oldCourse.id);
  assert.match(base||'',/^[a-f0-9]{40}$/);
- const rawBefore=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
+ const rawGit=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
+ const rawBefore=p=>scopedHistoricalJson(rawGit,p);
  const historic=historicalAudioView(rawBefore('docs/course-deliveries.json'),{registry:rawBefore('course-registry-v741.json'),vocals:rawBefore('vocals.json')});
  const before=p=>p==='course-registry-v741.json'?historic.registry:p==='vocals.json'?historic.vocals:rawBefore(p);
  oldCourse=historic.registry.courses.find(c=>c.id===d.courseId);

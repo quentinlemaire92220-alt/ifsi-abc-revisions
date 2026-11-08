@@ -2268,7 +2268,7 @@
           "authorization": "explicit_go_publication",
           "scope": "revision_sheet_only",
           "approvedAt": "2026-11-08T15:03:01Z",
-          "bundleSha256": "f7e45bf5a6d46af56db4c439eb1f75a607e41ca610fa4c4486787edaca021737"
+          "bundleSha256": "68b02d757ef1949741365954189554a1f94082787cb5271b622993cafb59a28e"
         },
         "previousVersion": {
           "driveId": "1m95sbpSNkaVMf8378Xy6RG60vMSv1B2M",
@@ -2277,6 +2277,20 @@
           "pageCount": 32,
           "lexiconTermCount": 55,
           "archivedAt": "2026-11-08"
+        },
+        "status": "partial",
+        "pedagogicalValidated": false,
+        "pedagogicalNonRegression": {
+          "contract": "ifsi_pedagogical_non_regression_v149",
+          "sheetSha256": "00a6cafe173f09d4f2b1b53f56c852383bf7726be0ae5445a3e33b57e9126e1d",
+          "privateEvidenceSha256": "2528ad6df5f7e612f814e4e640009bb26b279c64983d2b1011fefd90095300d4",
+          "reviewedAt": "2026-11-08T15:29:30Z",
+          "sourceInventory": "reviewed",
+          "sourceCoverage": "limited",
+          "inheritanceReview": "compared",
+          "depthReview": "reviewed",
+          "differencesReview": "reviewed",
+          "decision": "scoped_provisional_review_recorded"
         }
       }
     },
