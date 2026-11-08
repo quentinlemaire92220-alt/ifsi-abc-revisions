@@ -1,0 +1,2498 @@
+{
+  "courseId": "douleur",
+  "archivedAt": "2026-11-08T17:54:37.325971+00:00",
+  "questions": [
+    {
+      "id": "v820_douleur_001",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 1,
+      "question": "Concernant la douleur selon le cours",
+      "choices": [
+        "Elle est identique d'un patient à l'autre.",
+        "Elle est toujours visible à l'imagerie.",
+        "Elle comporte une dimension sensorielle.",
+        "Elle comporte une dimension émotionnelle."
+      ],
+      "answers": [
+        2,
+        3
+      ],
+      "explanation": "La douleur est sensorielle et émotionnelle et reste subjective ; elle n'est pas objectivée simplement par l'imagerie.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_002",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 2,
+      "question": "Quels éléments peuvent influencer la perception douloureuse ?",
+      "choices": [
+        "L'histoire personnelle.",
+        "Les émotions.",
+        "Uniquement la lésion tissulaire.",
+        "Le contexte socio-économique."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Le cours insiste sur une expérience personnelle influencée par l'histoire, le contexte et les émotions.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_003",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 3,
+      "question": "La prise en charge de la douleur est présentée comme",
+      "choices": [
+        "Une démarche nécessitant une réévaluation.",
+        "Une obligation légale.",
+        "Une obligation professionnelle et éthique.",
+        "Une démarche facultative si le patient ne réclame rien."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Le cours insiste sur l'obligation de prise en charge et sur la réévaluation.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_004",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 4,
+      "question": "Une douleur nociceptive peut être rencontrée lors",
+      "choices": [
+        "Uniquement d'une lésion nerveuse.",
+        "D'une fracture.",
+        "D'une brûlure.",
+        "D'une entorse."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Fracture, brûlure et entorse sont des exemples de stimulation nociceptive ; une lésion nerveuse oriente vers un mécanisme neuropathique.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_005",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 5,
+      "question": "Quels mots orientent vers une douleur neuropathique ?",
+      "choices": [
+        "Fourmillements.",
+        "Douleur uniquement soulagée par le repos.",
+        "Brûlures.",
+        "Décharges électriques."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Le transcript cite brûlures, décharges et fourmillements parmi les descriptions neuropathiques.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_006",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 6,
+      "question": "L'allodynie correspond à",
+      "choices": [
+        "Une douleur provoquée par un stimulus normalement non douloureux.",
+        "Un signe associé dans le cours à la douleur neuropathique.",
+        "Une mesure de l'intensité douloureuse.",
+        "Une absence totale de sensibilité."
+      ],
+      "answers": [
+        0,
+        1
+      ],
+      "explanation": "L'allodynie est une douleur à un stimulus normalement indolore et est rattachée à la douleur neuropathique dans le cours.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_007",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 7,
+      "question": "Parmi les quatre composantes de la douleur, lesquelles sont citées ?",
+      "choices": [
+        "Cognitive.",
+        "Affective et émotionnelle.",
+        "Sensori-discriminative.",
+        "Radiologique."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Les composantes sensori-discriminative, affective-émotionnelle, cognitive et comportementale sont citées ; « radiologique » ne l'est pas.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_008",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 8,
+      "question": "La composante sensori-discriminative recherche notamment",
+      "choices": [
+        "L'intensité.",
+        "Le niveau d'études du patient.",
+        "La localisation.",
+        "Depuis quand la douleur existe."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Elle précise où, comment, depuis quand et avec quelle intensité.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_009",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 9,
+      "question": "La composante cognitive peut inclure",
+      "choices": [
+        "La kinésiophobie.",
+        "Les pensées négatives.",
+        "La fréquence cardiaque.",
+        "Les croyances du patient."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Le cours rattache croyances, interprétations, pensées négatives et kinésiophobie à la composante cognitive.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_010",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 10,
+      "question": "La composante comportementale peut se manifester par",
+      "choices": [
+        "Un résultat biologique.",
+        "Une posture de protection.",
+        "Une immobilité.",
+        "Une agitation."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Posture, protection, immobilité et agitation sont des manifestations comportementales.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_011",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 11,
+      "question": "La douleur aiguë est présentée comme",
+      "choices": [
+        "Souvent liée à une cause identifiable.",
+        "Toujours une maladie autonome.",
+        "Un signal d'alarme.",
+        "Pouvant s'améliorer avec le traitement de la cause."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "La douleur aiguë a une fonction d'alerte et peut régresser avec la cause ; la maladie en elle-même renvoie plutôt à la chronicité.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_012",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 12,
+      "question": "Concernant la douleur chronique dans le transcript",
+      "choices": [
+        "Elle est décrite comme une maladie en elle-même.",
+        "Le transcript évoque un seuil de trois à six mois.",
+        "Elle peut associer plusieurs mécanismes.",
+        "Elle est le thème principal du cours."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Le transcript évoque ces trois points mais précise que le cours est surtout centré sur l'aigu ; le seuil reste à vérifier sur le support.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_013",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 13,
+      "question": "Pourquoi évaluer la douleur ?",
+      "choices": [
+        "Mesurer son intensité.",
+        "Évaluer l'efficacité du traitement.",
+        "Éviter toute transmission à l'équipe.",
+        "Identifier son mécanisme."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "L'évaluation sert au mécanisme, à l'intensité, au suivi thérapeutique et à la transmission.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_014",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 14,
+      "question": "Quand faut-il évaluer la douleur selon le cours ?",
+      "choices": [
+        "Uniquement à la sortie.",
+        "À l'admission.",
+        "Avant et après un antalgique.",
+        "Lors d'un soin ou d'une mobilisation."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le cours prévoit des évaluations répétées à plusieurs moments de la prise en charge.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_015",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 15,
+      "question": "L'échelle numérique, EN",
+      "choices": [
+        "Va de 0 à 10.",
+        "Doit être notée EN lorsqu'elle est utilisée.",
+        "Est une auto-évaluation.",
+        "Utilise obligatoirement une réglette de 10 cm."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "L'EN est verbale/numérique de 0 à 10 ; la réglette de 10 cm correspond à l'EVA.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_016",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 16,
+      "question": "L'EVS utilise",
+      "choices": [
+        "Des qualificatifs d'intensité.",
+        "Un curseur obligatoire.",
+        "Une mesure biologique.",
+        "Des termes comme faible, moyenne, forte, très forte."
+      ],
+      "answers": [
+        0,
+        3
+      ],
+      "explanation": "L'EVS repose sur des mots décrivant l'intensité.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_017",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 17,
+      "question": "Concernant l'EVA",
+      "choices": [
+        "Elle est identique à l'EN.",
+        "Elle utilise une réglette de 10 cm.",
+        "Le patient déplace un curseur.",
+        "Le soignant peut lire une graduation au verso."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "L'EVA est la réglette visuelle ; elle ne doit pas être confondue avec l'EN.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_018",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 18,
+      "question": "Algoplus est utilisé dans le cours pour",
+      "choices": [
+        "La douleur aiguë.",
+        "Une auto-évaluation numérique.",
+        "Un adulte dyscommunicant.",
+        "Une hétéro-évaluation comportementale."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Algoplus est une échelle comportementale d'hétéro-évaluation de la douleur aiguë chez un patient dyscommunicant.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_019",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 19,
+      "question": "Quel seuil Algoplus est cité oralement ?",
+      "choices": [
+        "Au moins 5 sur 10.",
+        "Au moins 2 sur 5.",
+        "Il conduit à considérer la présence d'une douleur.",
+        "Il dispense de toute réévaluation."
+      ],
+      "answers": [
+        1,
+        2
+      ],
+      "explanation": "Le seuil cité est ≥2/5 et conduit à prendre en charge puis réévaluer.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_020",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 20,
+      "question": "Après administration d'un antalgique, il faut",
+      "choices": [
+        "Réévaluer la douleur.",
+        "Surveiller les effets indésirables.",
+        "Considérer le score initial comme définitif.",
+        "Vérifier l'efficacité."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "La réévaluation est un point central du cours.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_021",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 21,
+      "question": "Une douleur postopératoire mal contrôlée peut favoriser",
+      "choices": [
+        "Une amélioration du péristaltisme.",
+        "Une constipation.",
+        "Une tachycardie.",
+        "Une diminution de la mobilisation."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le cours cite tachycardie, moindre mobilisation et diminution du péristaltisme/constipation.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_022",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 22,
+      "question": "Une douleur postopératoire importante malgré les antalgiques doit",
+      "choices": [
+        "Faire rechercher une complication.",
+        "Être systématiquement banalisée.",
+        "Faire évoquer notamment un syndrome des loges.",
+        "Faire évoquer notamment une infection."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "La persistance d'une douleur importante doit alerter sur une complication.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_023",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 23,
+      "question": "Le palier 1 présenté dans le cours comprend notamment",
+      "choices": [
+        "Paracétamol.",
+        "AINS.",
+        "Morphine.",
+        "Néfopam/Acupan."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Le transcript classe paracétamol, AINS et néfopam au palier 1 ; la morphine est citée parmi les opioïdes forts.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_024",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 24,
+      "question": "Le palier 2 comprend notamment",
+      "choices": [
+        "Tramadol.",
+        "Oxycodone.",
+        "Poudre d'opium.",
+        "Paracétamol seul."
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Tramadol et poudre d'opium sont cités au palier 2.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_025",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 25,
+      "question": "Le palier 3 comprend notamment",
+      "choices": [
+        "AINS.",
+        "Oxycodone.",
+        "Tramadol.",
+        "Morphine."
+      ],
+      "answers": [
+        1,
+        3
+      ],
+      "explanation": "Morphine et oxycodone sont citées parmi les opioïdes forts du palier 3.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_026",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 26,
+      "question": "Parmi les mesures non médicamenteuses citées",
+      "choices": [
+        "Installation du patient.",
+        "Froid pour certaines situations inflammatoires ou hématomes.",
+        "Chaleur pour certaines contractures.",
+        "Immobilisation systématique de tout patient douloureux."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Installation, chaud et froid sont cités selon la situation ; l'immobilisation systématique ne l'est pas.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_027",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 27,
+      "question": "Une douleur mécanique",
+      "choices": [
+        "Peut être repérée par l'interrogatoire.",
+        "Augmente avec le mouvement ou la mise en charge.",
+        "Est nécessairement neuropathique.",
+        "Diminue au repos."
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Le cours décrit une douleur mécanique augmentée par le mouvement et diminuée au repos.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_028",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 28,
+      "question": "Chez un patient communicant évaluant sa douleur à 6/10",
+      "choices": [
+        "Il faut ignorer le chiffre s'il paraît calme.",
+        "Une réévaluation est ensuite nécessaire.",
+        "Son auto-évaluation doit être prise en compte.",
+        "Un protocole antalgique adapté peut être appliqué."
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le cours insiste sur la confiance dans l'auto-évaluation, l'adaptation du traitement et la réévaluation.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_029",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 29,
+      "question": "Le rôle infirmier comprend",
+      "choices": [
+        "Mettre en œuvre des mesures de confort adaptées.",
+        "Comparer le score du patient à celui des autres patients.",
+        "Dépister et évaluer la douleur.",
+        "Administrer les traitements prescrits."
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Le rôle infirmier comprend évaluation, traitement prescrit, confort et réévaluation ; la douleur ne se compare pas entre patients.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "v820_douleur_030",
+      "ue": "S1 B3",
+      "course": "Douleur aiguë et chronique",
+      "courseId": "douleur",
+      "theme": "Douleur",
+      "number": 30,
+      "question": "Le message central du cours peut être résumé par",
+      "choices": [
+        "Réévaluer.",
+        "Identifier le mécanisme et traiter de façon adaptée.",
+        "Évaluer.",
+        "S'arrêter à la première mesure."
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Le fil conducteur répété est évaluer, traiter selon intensité/mécanisme, puis réévaluer.",
+      "sourceId": "1ad8ZUs6PrPq_7v9IUrii7fW6pEbOcjtu"
+    },
+    {
+      "id": "douleur_machado_001",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 1,
+      "question": "Quel texte reconnaît le droit au soulagement de la douleur ?",
+      "choices": [
+        "La loi du 4 mars 2002",
+        "Une note de service sans valeur légale",
+        "La loi de 1905",
+        "Le règlement des études uniquement",
+        "Le Code civil de 1804"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Les propositions correctes sont : La loi du 4 mars 2002. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cadre IDE",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_002",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 2,
+      "question": "Quels articles du CSP sont cités pour la prise en charge ?",
+      "choices": [
+        "L.4312-99",
+        "L.0000-1",
+        "L.1112-4",
+        "L.2222-2",
+        "L.1110-5-3"
+      ],
+      "answers": [
+        2,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : L.1112-4; L.1110-5-3. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cadre IDE",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_003",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 3,
+      "question": "Relèvent de la démarche infirmière devant une douleur :",
+      "choices": [
+        "Évaluer la douleur",
+        "Tracer et transmettre",
+        "Ignorer les plaintes sans lésion",
+        "Réévaluer après intervention",
+        "Modifier librement tous les opioïdes"
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Évaluer la douleur; Tracer et transmettre; Réévaluer après intervention. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cadre IDE",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_004",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 4,
+      "question": "Le cadre 2025-2026 présenté évoque :",
+      "choices": [
+        "La loi du 27 juin 2025",
+        "Une obligation de traiter sans évaluer",
+        "Le décret du 24 décembre 2025",
+        "L’interdiction de la consultation infirmière",
+        "Une suppression de toute prescription"
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : La loi du 27 juin 2025; Le décret du 24 décembre 2025. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cadre IDE",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_005",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 5,
+      "question": "Selon la définition IASP, la douleur :",
+      "choices": [
+        "Est une expérience sensorielle",
+        "Est toujours quantifiable par imagerie",
+        "Comporte une dimension émotionnelle",
+        "Exige une lésion visible",
+        "Est identique chez tous les patients"
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Est une expérience sensorielle; Comporte une dimension émotionnelle. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_006",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 6,
+      "question": "Concernant la douleur aiguë dans le cours :",
+      "choices": [
+        "Elle dure obligatoirement plus de trois mois",
+        "Elle impose toujours un opioïde fort",
+        "Elle ne peut avoir de cause tissulaire",
+        "Elle joue souvent un rôle d’alarme",
+        "Elle dure moins de six semaines"
+      ],
+      "answers": [
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Elle joue souvent un rôle d’alarme; Elle dure moins de six semaines. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_007",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 7,
+      "question": "Le cours qualifie de chronique une douleur qui :",
+      "choices": [
+        "S’accompagne toujours de fièvre",
+        "N’a jamais de retentissement fonctionnel",
+        "Dure moins de 24 heures",
+        "Persiste ou se répète plus de trois mois",
+        "Dure uniquement six jours"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Persiste ou se répète plus de trois mois. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_008",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 8,
+      "question": "Quels éléments relèvent de la dimension cognitive ?",
+      "choices": [
+        "Les anticipations",
+        "La saturation en oxygène",
+        "Les croyances",
+        "Le diamètre pupillaire",
+        "La fréquence respiratoire"
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Les anticipations; Les croyances. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_009",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 9,
+      "question": "Quelles manifestations relèvent de la composante comportementale ?",
+      "choices": [
+        "La seule glycémie",
+        "La concentration de potassium plasmatique",
+        "L’évitement",
+        "La posture de protection",
+        "Les mimiques"
+      ],
+      "answers": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : L’évitement; La posture de protection; Les mimiques. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_010",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 10,
+      "question": "La douleur induite par les soins est décrite comme :",
+      "choices": [
+        "Toujours impossible à prévenir",
+        "Souvent prévisible",
+        "Nécessairement chronique",
+        "Liée à un soin",
+        "Toujours indépendante du geste"
+      ],
+      "answers": [
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Souvent prévisible; Liée à un soin. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_011",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 11,
+      "question": "La nociception correspond :",
+      "choices": [
+        "À une mesure de la glycémie",
+        "À une analyse uniquement sociale",
+        "À un système détectant des stimulations potentiellement dangereuses",
+        "À la disparition des récepteurs sensoriels",
+        "À la mesure de la température ambiante"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Les propositions correctes sont : À un système détectant des stimulations potentiellement dangereuses. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_012",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 12,
+      "question": "Quels médiateurs apparaissent dans la « soupe inflammatoire » ?",
+      "choices": [
+        "Insuline uniquement",
+        "Hémoglobine uniquement",
+        "Prostaglandines",
+        "Histamine",
+        "Bradykinine"
+      ],
+      "answers": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Prostaglandines; Histamine; Bradykinine. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_013",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 13,
+      "question": "La transduction est :",
+      "choices": [
+        "La conversion d’un stimulus en message électrique",
+        "La libération de globules rouges",
+        "Le passage direct par l’aorte",
+        "La transmission d’une prescription",
+        "L’élimination rénale des opioïdes"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Les propositions correctes sont : La conversion d’un stimulus en message électrique. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_014",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 14,
+      "question": "À propos des fibres de transmission nociceptive :",
+      "choices": [
+        "Les Aδ sont des vaisseaux sanguins",
+        "Elles remplacent le cerveau",
+        "Les fibres C sont des cellules musculaires",
+        "Les fibres C transmettent plus lentement",
+        "Les Aδ sont relativement rapides"
+      ],
+      "answers": [
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Les fibres C transmettent plus lentement; Les Aδ sont relativement rapides. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_015",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 15,
+      "question": "La modulation de la douleur peut :",
+      "choices": [
+        "Transformer le neurone en plaquette",
+        "Freiner le message",
+        "Supprimer nécessairement toute lésion",
+        "Exclure l’influence des émotions",
+        "Amplifier le message"
+      ],
+      "answers": [
+        1,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Freiner le message; Amplifier le message. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_016",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 16,
+      "question": "Le réflexe de retrait :",
+      "choices": [
+        "Peut précéder l’analyse consciente complète",
+        "Est nécessairement une décision volontaire",
+        "Empêche toute perception ultérieure",
+        "Implique une intégration dans la moelle",
+        "Dépend exclusivement du foie"
+      ],
+      "answers": [
+        0,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Peut précéder l’analyse consciente complète; Implique une intégration dans la moelle. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_017",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 17,
+      "question": "Le gate control fait intervenir notamment :",
+      "choices": [
+        "L’arrêt définitif des voies ascendantes",
+        "La production d’insuline",
+        "Les fibres tactiles Aβ",
+        "Des interneurones inhibiteurs médullaires",
+        "La destruction de la zone lésée"
+      ],
+      "answers": [
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Les fibres tactiles Aβ; Des interneurones inhibiteurs médullaires. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_018",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 18,
+      "question": "Une douleur neuropathique est liée :",
+      "choices": [
+        "Uniquement à une fracture sans atteinte nerveuse",
+        "À une lésion ou maladie du système somatosensoriel",
+        "Toujours à une atteinte musculaire isolée",
+        "À une pression artérielle normale",
+        "Toujours à un soin volontaire"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Les propositions correctes sont : À une lésion ou maladie du système somatosensoriel. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_019",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 19,
+      "question": "Les descriptions évocatrices de neuropathie comprennent :",
+      "choices": [
+        "Brûlure",
+        "Fourmillements",
+        "Une température normale",
+        "Décharges électriques",
+        "Une diurèse inchangée"
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Brûlure; Fourmillements; Décharges électriques. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_020",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 20,
+      "question": "L’allodynie est :",
+      "choices": [
+        "Une réponse à un stimulus obligatoirement déjà douloureux",
+        "Une douleur provoquée par un stimulus normalement indolore",
+        "Une échelle numérique",
+        "Un trouble de la coagulation",
+        "Une absence complète de sensation"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Les propositions correctes sont : Une douleur provoquée par un stimulus normalement indolore. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_021",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 21,
+      "question": "TILT signifie notamment :",
+      "choices": [
+        "Localisation",
+        "Temps",
+        "Taille du pansement",
+        "Intensité",
+        "Température de la salle"
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Localisation; Temps; Intensité. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_022",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 22,
+      "question": "Dans TILT, le second T correspond au :",
+      "choices": [
+        "Tonus artériel",
+        "Test de laboratoire",
+        "Traitement systématique",
+        "Type de douleur",
+        "Temps de perfusion"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Type de douleur. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_023",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 23,
+      "question": "Les outils d’auto-évaluation cités sont :",
+      "choices": [
+        "DOLOPLUS-2 uniquement",
+        "EN",
+        "EVA",
+        "EVS",
+        "ALGOPLUS uniquement"
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : EN; EVA; EVS. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_024",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 24,
+      "question": "L’échelle numérique utilise :",
+      "choices": [
+        "Une observation exclusive des mimiques",
+        "Un questionnaire de dix signes neuropathiques",
+        "Un score obligatoire sur 30",
+        "Une cotation de 0 à 10",
+        "Une graduation allant de 0 à 1000"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Une cotation de 0 à 10. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_025",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 25,
+      "question": "L’EVA se caractérise par :",
+      "choices": [
+        "Une analyse de gaz du sang",
+        "Un score obligatoire en cinq domaines comportementaux",
+        "Une mesure de la glycémie",
+        "Un curseur positionné par le patient",
+        "Une réglette ou ligne visuelle"
+      ],
+      "answers": [
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Un curseur positionné par le patient; Une réglette ou ligne visuelle. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_026",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 26,
+      "question": "Quand l’auto-évaluation est impossible :",
+      "choices": [
+        "Utiliser une échelle d’hétéro-évaluation adaptée",
+        "Deviner l’intensité sans méthode",
+        "Observer et tracer les signes",
+        "Ne pas rechercher la cause",
+        "Réévaluer après intervention"
+      ],
+      "answers": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Utiliser une échelle d’hétéro-évaluation adaptée; Observer et tracer les signes; Réévaluer après intervention. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_027",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 27,
+      "question": "ALGOPLUS comporte :",
+      "choices": [
+        "Un questionnaire de dix items neuropathiques",
+        "Cinq domaines observés",
+        "Une utilisation réservée à l’enfant de deux ans",
+        "Un seuil à partir de 2 sur 5",
+        "Une échelle de 0 à 100"
+      ],
+      "answers": [
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Cinq domaines observés; Un seuil à partir de 2 sur 5. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_028",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 28,
+      "question": "Dans le cours, DOLOPLUS-2 :",
+      "choices": [
+        "Aide pour la douleur prolongée chez la personne âgée",
+        "Est exclusivement un instrument de température",
+        "Remplace obligatoirement toute auto-évaluation",
+        "Présente un seuil de 5/30",
+        "Se limite à 2 points"
+      ],
+      "answers": [
+        0,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Aide pour la douleur prolongée chez la personne âgée; Présente un seuil de 5/30. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_029",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 29,
+      "question": "Le DN4 complet :",
+      "choices": [
+        "Diagnostique seul de façon certaine",
+        "Est une échelle de sédation",
+        "Ne questionne pas les sensations",
+        "Comporte dix items",
+        "A un seuil d’orientation à 4/10"
+      ],
+      "answers": [
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Comporte dix items; A un seuil d’orientation à 4/10. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_030",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 30,
+      "question": "Pour suivre un traitement, il faut :",
+      "choices": [
+        "Tracer l’efficacité et la tolérance",
+        "Comparer avant et après",
+        "Réutiliser la même échelle si possible",
+        "Effacer le premier score",
+        "Cesser les observations après administration"
+      ],
+      "answers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Tracer l’efficacité et la tolérance; Comparer avant et après; Réutiliser la même échelle si possible. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Evaluation",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_031",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 31,
+      "question": "Le choix de voie d’administration dépend :",
+      "choices": [
+        "Du médicament",
+        "De la prescription",
+        "Du seul score de douleur",
+        "De la situation clinique",
+        "Uniquement du service de soins"
+      ],
+      "answers": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Du médicament; De la prescription; De la situation clinique. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_032",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 32,
+      "question": "La biodisponibilité IV est :",
+      "choices": [
+        "Non définissable",
+        "Plus faible que toute voie orale sans exception",
+        "De 100 %",
+        "Toujours de 5 %",
+        "Toujours nulle"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Les propositions correctes sont : De 100 %. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_033",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 33,
+      "question": "La règle des 5 B implique :",
+      "choices": [
+        "Bon patient",
+        "Bonne dose",
+        "Bonne marque commerciale",
+        "Bonne météo",
+        "Bonne voie"
+      ],
+      "answers": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Bon patient; Bonne dose; Bonne voie. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_034",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 34,
+      "question": "Parmi les antalgiques non opioïdes cités :",
+      "choices": [
+        "Paracétamol",
+        "Fentanyl",
+        "Ibuprofène",
+        "Morphine",
+        "Oxycodone"
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Paracétamol; Ibuprofène. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_035",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 35,
+      "question": "Parmi les opioïdes faibles figurent :",
+      "choices": [
+        "Tramadol",
+        "Paracétamol seul",
+        "Codéine",
+        "Kétoprofène",
+        "Néfopam"
+      ],
+      "answers": [
+        0,
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Tramadol; Codéine. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_036",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 36,
+      "question": "Parmi les opioïdes forts du cours figurent :",
+      "choices": [
+        "Fentanyl",
+        "Ibuprofène",
+        "Morphine",
+        "Paracétamol",
+        "Oxycodone"
+      ],
+      "answers": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Fentanyl; Morphine; Oxycodone. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_037",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 37,
+      "question": "Le cours rappelle qu’on peut associer selon indication :",
+      "choices": [
+        "Systématiquement tous les paliers",
+        "Directement II et III",
+        "Palier I et II",
+        "Palier I et III",
+        "Tous les opioïdes entre eux"
+      ],
+      "answers": [
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Palier I et II; Palier I et III. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Medicaments",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_038",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 38,
+      "question": "Quel est le principal risque d’un surdosage de paracétamol ?",
+      "choices": [
+        "Une hyperglycémie obligatoire",
+        "Une production accrue de globules rouges",
+        "L’hépatotoxicité sévère",
+        "Une protection rénale",
+        "Une anesthésie générale systématique"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Les propositions correctes sont : L’hépatotoxicité sévère. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_039",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 39,
+      "question": "Quel antidote du paracétamol est cité ?",
+      "choices": [
+        "N-acétylcystéine",
+        "Vitamine K seule",
+        "Naloxone comme antidote de référence du paracétamol",
+        "Adrénaline systématique",
+        "Insuline"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Les propositions correctes sont : N-acétylcystéine. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_040",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 40,
+      "question": "Les AINS exposent notamment à :",
+      "choices": [
+        "Un risque hémorragique",
+        "Une toxicité rénale",
+        "Une absence complète d’effets indésirables",
+        "Une immunisation obligatoire",
+        "Un ulcère digestif"
+      ],
+      "answers": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Un risque hémorragique; Une toxicité rénale; Un ulcère digestif. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_041",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 41,
+      "question": "Le néfopam :",
+      "choices": [
+        "Ne présente aucune contre-indication",
+        "Est identique à la morphine",
+        "Est un antalgique non opioïde",
+        "A une puissance rapprochée du palier II",
+        "Est un anti-inflammatoire non stéroïdien"
+      ],
+      "answers": [
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Est un antalgique non opioïde; A une puissance rapprochée du palier II. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_042",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 42,
+      "question": "Parmi les précautions du néfopam, le cours cite :",
+      "choices": [
+        "Absence de toute surveillance",
+        "Troubles urinaires",
+        "Protection systématique contre les convulsions",
+        "Épilepsie",
+        "Glaucome"
+      ],
+      "answers": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Troubles urinaires; Épilepsie; Glaucome. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc",
+      "flashcards": [
+        {
+          "front": "Quels troubles ou antécédents nécessitent des précautions avec le néfopam ?",
+          "answers": [
+            "Troubles urinaires",
+            "Épilepsie",
+            "Glaucome"
+          ],
+          "explanation": "Les propositions correctes sont : Troubles urinaires; Épilepsie; Glaucome. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel."
+        }
+      ]
+    },
+    {
+      "id": "douleur_machado_043",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 43,
+      "question": "À propos du tramadol :",
+      "choices": [
+        "Il implique aussi une composante monoaminergique",
+        "Il a une action opioïde",
+        "C’est un AINS",
+        "Il ne présente jamais d’interactions",
+        "Il est sans risque convulsif"
+      ],
+      "answers": [
+        0,
+        1
+      ],
+      "explanation": "Les propositions correctes sont : Il implique aussi une composante monoaminergique; Il a une action opioïde. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_044",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 44,
+      "question": "La codéine :",
+      "choices": [
+        "Est un opioïde fort de palier III",
+        "Correspond au paracétamol",
+        "Doit être transformée en morphine pour une partie de son effet",
+        "A une efficacité identique chez tous",
+        "N’a aucun métabolisme"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Les propositions correctes sont : Doit être transformée en morphine pour une partie de son effet. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_045",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 45,
+      "question": "Pour la morphine, une surveillance centrale concerne :",
+      "choices": [
+        "La couleur des cheveux",
+        "La vigilance",
+        "La respiration",
+        "Le transit intestinal",
+        "La hauteur du patient"
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : La vigilance; La respiration; Le transit intestinal. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_046",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 46,
+      "question": "Les formes LI et LP de morphine :",
+      "choices": [
+        "Sont toujours identiques dans leur délai d’effet",
+        "Suppriment la nécessité de surveillance",
+        "Diffèrent par leur cinétique",
+        "Correspondent à deux antibiotiques",
+        "Ne sont pas automatiquement interchangeables sans prescription"
+      ],
+      "answers": [
+        2,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Diffèrent par leur cinétique; Ne sont pas automatiquement interchangeables sans prescription. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_047",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 47,
+      "question": "Pour les stupéfiants, le cours demande :",
+      "choices": [
+        "Administration hors prescription",
+        "Conservation sans règles",
+        "Absence de comptage",
+        "Sécurisation du circuit",
+        "Traçabilité"
+      ],
+      "answers": [
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Sécurisation du circuit; Traçabilité. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Pharmacologie",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_048",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 48,
+      "question": "Pour prévenir la douleur d’un soin, on peut :",
+      "choices": [
+        "Informer",
+        "Ignorer les inquiétudes",
+        "Préparer l’installation",
+        "Adapter le rythme",
+        "Multiplier inutilement les gestes"
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Informer; Préparer l’installation; Adapter le rythme. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Prevention",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_049",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 49,
+      "question": "Le MEOPA correspond à :",
+      "choices": [
+        "Un mélange oxygène–protoxyde d’azote",
+        "Une échelle de douleur neuropathique",
+        "Un opioïde fort oral",
+        "Un antiagrégant plaquettaire",
+        "Un antibiotique"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Les propositions correctes sont : Un mélange oxygène–protoxyde d’azote. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Prevention",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_050",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 50,
+      "question": "Le mémo des trois temps prévoit :",
+      "choices": [
+        "Accompagner pendant",
+        "Interrompre toute communication",
+        "Prévenir avant",
+        "Vérifier après",
+        "Attendre la douleur sans préparation"
+      ],
+      "answers": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Accompagner pendant; Prévenir avant; Vérifier après. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Prevention",
+      "difficulty": "easy",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_051",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 51,
+      "question": "Dans une douleur postopératoire persistante :",
+      "choices": [
+        "Banaliser systématiquement",
+        "Rechercher une cause ou complication",
+        "Réévaluer avec une échelle",
+        "Tracer et alerter selon la situation",
+        "Exclure toute complication si un antalgique a été donné"
+      ],
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Les propositions correctes sont : Rechercher une cause ou complication; Réévaluer avec une échelle; Tracer et alerter selon la situation. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cas cliniques",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    },
+    {
+      "id": "douleur_machado_052",
+      "courseId": "douleur",
+      "course": "Douleur aiguë et chronique",
+      "ue": "S1 B3",
+      "number": 52,
+      "question": "Devant un profil neuropathique :",
+      "choices": [
+        "Conclure automatiquement à une douleur imaginaire",
+        "Recueillir les descriptions sensitives",
+        "Se fonder exclusivement sur l’imagerie",
+        "Utiliser le DN4 si adapté",
+        "Transmettre pour une stratégie ciblée"
+      ],
+      "answers": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "Les propositions correctes sont : Recueillir les descriptions sensitives; Utiliser le DN4 si adapté; Transmettre pour une stratégie ciblée. Les autres propositions sont contraires aux distinctions et aux recommandations présentées dans le support officiel.",
+      "theme": "Cas cliniques",
+      "difficulty": "medium",
+      "sourceId": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc"
+    }
+  ],
+  "runtimeQuestionIds": [
+    "douleur_machado_001",
+    "douleur_machado_002",
+    "douleur_machado_003",
+    "douleur_machado_004",
+    "douleur_machado_005",
+    "douleur_machado_006",
+    "douleur_machado_007",
+    "douleur_machado_008",
+    "douleur_machado_009",
+    "douleur_machado_010",
+    "douleur_machado_011",
+    "douleur_machado_012",
+    "douleur_machado_013",
+    "douleur_machado_014",
+    "douleur_machado_015",
+    "douleur_machado_016",
+    "douleur_machado_017",
+    "douleur_machado_018",
+    "douleur_machado_019",
+    "douleur_machado_020",
+    "douleur_machado_021",
+    "douleur_machado_022",
+    "douleur_machado_023",
+    "douleur_machado_024",
+    "douleur_machado_025",
+    "douleur_machado_026",
+    "douleur_machado_027",
+    "douleur_machado_028",
+    "douleur_machado_029",
+    "douleur_machado_030",
+    "douleur_machado_031",
+    "douleur_machado_032",
+    "douleur_machado_033",
+    "douleur_machado_034",
+    "douleur_machado_035",
+    "douleur_machado_036",
+    "douleur_machado_037",
+    "douleur_machado_038",
+    "douleur_machado_039",
+    "douleur_machado_040",
+    "douleur_machado_041",
+    "douleur_machado_042",
+    "douleur_machado_043",
+    "douleur_machado_044",
+    "douleur_machado_045",
+    "douleur_machado_046",
+    "douleur_machado_047",
+    "douleur_machado_048",
+    "douleur_machado_049",
+    "douleur_machado_050",
+    "douleur_machado_051",
+    "douleur_machado_052"
+  ],
+  "flashcards": [
+    {
+      "id": "fc:douleur_machado_002",
+      "qid": "douleur_machado_002",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Cadre IDE",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quels articles du CSP sont pour la prise en charge?",
+      "answers": [
+        "L.1112-4",
+        "L.1110-5-3"
+      ],
+      "explanation": "Les propositions correctes sont: L.1112-4; L.1110-5-3.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_010",
+      "qid": "douleur_machado_010",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Comment se caractérise la douleur induite par les soins?",
+      "answers": [
+        "Souvent prévisible",
+        "Liée à un soin"
+      ],
+      "explanation": "Les propositions correctes sont: Souvent prévisible; Liée à un soin.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_025",
+      "qid": "douleur_machado_025",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Comment se caractérise l’EVA?",
+      "answers": [
+        "Un curseur positionné par le patient",
+        "Une réglette ou ligne visuelle"
+      ],
+      "explanation": "Les propositions correctes sont: Un curseur positionné par le patient; Une réglette ou ligne visuelle.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_020",
+      "qid": "douleur_machado_020",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "kind": "Définition",
+      "front": "Qu’est-ce que l’allodynie?",
+      "answers": [
+        "Une douleur provoquée par un stimulus normalement indolore"
+      ],
+      "explanation": "Les propositions correctes sont: Une douleur provoquée par un stimulus normalement indolore.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_036",
+      "qid": "douleur_machado_036",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "Quels sont les opioïdes forts?",
+      "answers": [
+        "Fentanyl",
+        "Morphine",
+        "Oxycodone"
+      ],
+      "explanation": "Les propositions correctes sont: Fentanyl; Morphine; Oxycodone.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_038",
+      "qid": "douleur_machado_038",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Pharmacologie",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "Quel est le principal risque d’un surdosage de paracétamol?",
+      "answers": [
+        "L’hépatotoxicité sévère"
+      ],
+      "explanation": "Les propositions correctes sont: L’hépatotoxicité sévère.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_049",
+      "qid": "douleur_machado_049",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Prevention",
+      "difficulty": "medium",
+      "kind": "Définition",
+      "front": "Qu’est-ce que le MEOPA?",
+      "answers": [
+        "Un mélange oxygène–protoxyde d’azote"
+      ],
+      "explanation": "Les propositions correctes sont: Un mélange oxygène–protoxyde d’azote.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_001",
+      "qid": "douleur_machado_001",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Cadre IDE",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "Quel texte reconnaît le droit au soulagement de la douleur?",
+      "answers": [
+        "La loi du 4 mars 2002"
+      ],
+      "explanation": "Les propositions correctes sont: La loi du 4 mars 2002.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_009",
+      "qid": "douleur_machado_009",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quelles manifestations relèvent de la composante comportementale?",
+      "answers": [
+        "L’évitement",
+        "La posture de protection",
+        "Les mimiques"
+      ],
+      "explanation": "Les propositions correctes sont: L’évitement; La posture de protection; Les mimiques.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_026",
+      "qid": "douleur_machado_026",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Evaluation",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quand l’auto-évaluation est impossible?",
+      "answers": [
+        "Utiliser une échelle d’hétéro-évaluation adaptée",
+        "Observer et tracer les signes",
+        "Réévaluer après intervention"
+      ],
+      "explanation": "Les propositions correctes sont: Utiliser une échelle d’hétéro-évaluation adaptée; Observer et tracer les signes; Réévaluer après intervention.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_011",
+      "qid": "douleur_machado_011",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Mécanismes",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "À quoi correspond la nociception?",
+      "answers": [
+        "À un système détectant des stimulations potentiellement dangereuses"
+      ],
+      "explanation": "Les propositions correctes sont: À un système détectant des stimulations potentiellement dangereuses.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_034",
+      "qid": "douleur_machado_034",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "Quels sont les antalgiques non opioïdes?",
+      "answers": [
+        "Paracétamol",
+        "Ibuprofène"
+      ],
+      "explanation": "Les propositions correctes sont: Paracétamol; Ibuprofène.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_039",
+      "qid": "douleur_machado_039",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Pharmacologie",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quel antidote du paracétamol est cité?",
+      "answers": [
+        "N-acétylcystéine"
+      ],
+      "explanation": "Les propositions correctes sont: N-acétylcystéine.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_008",
+      "qid": "douleur_machado_008",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Concepts",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quels éléments relèvent de la dimension cognitive?",
+      "answers": [
+        "Les anticipations",
+        "Les croyances"
+      ],
+      "explanation": "Les propositions correctes sont: Les anticipations; Les croyances.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_012",
+      "qid": "douleur_machado_012",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "kind": "Question / réponse",
+      "front": "Quels médiateurs apparaissent dans la « soupe inflammatoire »?",
+      "answers": [
+        "Prostaglandines",
+        "Histamine",
+        "Bradykinine"
+      ],
+      "explanation": "Les propositions correctes sont: Prostaglandines; Histamine; Bradykinine.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_035",
+      "qid": "douleur_machado_035",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Medicaments",
+      "difficulty": "easy",
+      "kind": "Question / réponse",
+      "front": "Quels sont les opioïdes faibles?",
+      "answers": [
+        "Tramadol",
+        "Codéine"
+      ],
+      "explanation": "Les propositions correctes sont: Tramadol; Codéine.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_042",
+      "qid": "douleur_machado_042",
+      "courseId": "douleur",
+      "authored": true,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Pharmacologie",
+      "difficulty": "hard",
+      "front": "Quels troubles ou antécédents nécessitent des précautions avec le néfopam ?",
+      "answers": [
+        "Troubles urinaires",
+        "Épilepsie",
+        "Glaucome"
+      ],
+      "explanation": "Les propositions correctes sont: Troubles urinaires; Épilepsie; Glaucome.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_013",
+      "qid": "douleur_machado_013",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Mécanismes",
+      "difficulty": "medium",
+      "kind": "Définition",
+      "front": "Qu’est-ce que la transduction?",
+      "answers": [
+        "La conversion d’un stimulus en message électrique"
+      ],
+      "explanation": "Les propositions correctes sont: La conversion d’un stimulus en message électrique.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "fc:douleur_machado_032",
+      "qid": "douleur_machado_032",
+      "courseId": "douleur",
+      "authored": false,
+      "course": "Douleur aiguë et chronique",
+      "theme": "Medicaments",
+      "difficulty": "hard",
+      "kind": "Définition",
+      "front": "Qu’est-ce que la biodisponibilité IV?",
+      "answers": [
+        "De 100 %"
+      ],
+      "explanation": "Les propositions correctes sont: De 100 %.",
+      "sourceKind": null,
+      "sourceCaption": null,
+      "officialSupport": true,
+      "courseIds": [
+        "douleur"
+      ]
+    },
+    {
+      "id": "voc:nociception",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Nociception » ?",
+      "answers": [
+        "Processus nerveux de détection et de transmission d'un stimulus potentiellement dommageable."
+      ],
+      "explanation": "La douleur est une expérience sensorielle et émotionnelle personnelle.",
+      "distinction": "La douleur est une expérience sensorielle et émotionnelle personnelle.",
+      "etymologie": "noci- (nuisible) + -ception (perception, réception).",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:allodynie",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur",
+        "systeme_nerveux"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Allodynie » ?",
+      "answers": [
+        "Douleur provoquée par un stimulus normalement non douloureux, comme un effleurement."
+      ],
+      "explanation": "L'hyperalgésie est une douleur exagérée à un stimulus déjà douloureux.",
+      "distinction": "L'hyperalgésie est une douleur exagérée à un stimulus déjà douloureux.",
+      "etymologie": "allo- : autre ; -odynie : douleur",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:hyperalgesie",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Hyperalgésie » ?",
+      "answers": [
+        "Réponse douloureuse excessive à une stimulation normalement douloureuse."
+      ],
+      "explanation": "L'allodynie est une douleur déclenchée par un stimulus normalement indolore.",
+      "distinction": "L'allodynie est une douleur déclenchée par un stimulus normalement indolore.",
+      "etymologie": "hyper- : excès ; -algésie : sensibilité douloureuse",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:douleur-neuropathique",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur",
+        "systeme_nerveux"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Douleur neuropathique » ?",
+      "answers": [
+        "Douleur causée par une lésion ou une maladie du système somatosensoriel."
+      ],
+      "explanation": "La douleur nociceptive résulte de l'activation des nocicepteurs par une atteinte tissulaire.",
+      "distinction": "La douleur nociceptive résulte de l'activation des nocicepteurs par une atteinte tissulaire.",
+      "etymologie": "neur(o)- (nerf) + -pathique (relatif à une affection) ; douleur d'origine neurologique.",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:douleur-nociceptive",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Douleur nociceptive » ?",
+      "answers": [
+        "Douleur liée à l'activation des nocicepteurs par une lésion ou une menace de lésion de tissus non nerveux."
+      ],
+      "explanation": "La douleur neuropathique résulte d'une lésion ou maladie du système somatosensoriel.",
+      "distinction": "La douleur neuropathique résulte d'une lésion ou maladie du système somatosensoriel.",
+      "etymologie": "noci- (nocif) + -cept- (recevoir) + -ive (relatif à).",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:echelle-numerique-de-douleur",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur",
+        "parametres_vitaux"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Douleur et surveillance clinique",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « Échelle numérique de douleur » ?",
+      "answers": [
+        "Outil d'autoévaluation où la personne cote généralement l'intensité de sa douleur de 0 à 10."
+      ],
+      "explanation": "Une échelle comportementale sert surtout lorsque l'autoévaluation est impossible.",
+      "distinction": "Une échelle comportementale sert surtout lorsque l'autoévaluation est impossible.",
+      "etymologie": "échelle (graduation) + numérique (par chiffres) + douleur ; expression descriptive.",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    },
+    {
+      "id": "voc:morph_algie",
+      "qid": null,
+      "courseId": "douleur",
+      "courseIds": [
+        "douleur",
+        "appareil_locomoteur",
+        "rhumatismes_inflammatoires"
+      ],
+      "course": "Douleur aiguë et chronique",
+      "theme": "Construction des mots médicaux",
+      "difficulty": "easy",
+      "kind": "Vocabulaire",
+      "front": "Que signifie « -algie » ?",
+      "answers": [
+        "Élément de terminologie médicale indiquant douleur. Exemple : Myalgie : douleur musculaire."
+      ],
+      "explanation": "À distinguer de -ite ; interpréter le terme complet dans son contexte.",
+      "distinction": "À distinguer de -ite ; interpréter le terme complet dans son contexte.",
+      "etymologie": "Élément suffixal : douleur.",
+      "officialSupport": false,
+      "sourceType": "reference_pedagogique"
+    }
+  ],
+  "previousQcmPdf": {
+    "driveId": "1voGsLBrCwzYB3o8bvp_4reGXf9r0hG2u",
+    "sha256": "d7389f9c828635bc685e2a8d6a581792e1083b17dc07ec384b095a87137710da"
+  }
+}

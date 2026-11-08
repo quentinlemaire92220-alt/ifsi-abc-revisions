@@ -1,0 +1,3001 @@
+[
+  {
+    "id": "douleur_global_20261108_001",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 1,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quelles affirmations décrivent la douleur ? (2 réponses exactes)",
+    "choices": [
+      "Elle se mesure uniquement par les constantes vitales.",
+      "Elle est toujours proportionnelle à la taille de la lésion.",
+      "Elle est identique chez deux personnes ayant la même maladie.",
+      "Elle comporte une dimension sensorielle et émotionnelle.",
+      "Elle peut exister sans lésion visible."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le récit et une évaluation adaptée sont nécessaires. B - Faux : Le contexte et plusieurs mécanismes influencent son intensité. C - Faux : L'expérience douloureuse est personnelle. D - Vrai : Ces dimensions font partie de sa définition. E - Vrai : L'absence de lésion objectivée ne réfute pas l'expérience vécue.",
+    "flashcards": [
+      {
+        "front": "Une lésion visible est-elle indispensable pour reconnaître une douleur ?",
+        "answers": [
+          "Non. La douleur est une expérience personnelle sensorielle et émotionnelle qui peut exister sans lésion visible."
+        ],
+        "explanation": "Écouter le récit et rechercher les éléments cliniques sans invalider la plainte.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_002",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 2,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quelle proposition distingue la nociception de la douleur ? (1 réponse exacte)",
+    "choices": [
+      "La nociception désigne le traitement nerveux des stimulations nocives.",
+      "Une douleur exige toujours un nocicepteur périphérique activé par une plaie.",
+      "Nociception et douleur sont deux synonymes stricts.",
+      "La nociception désigne seulement la peur de souffrir.",
+      "Toute activité nociceptive mesure directement une intensité consciente."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Vrai : Elle ne résume pas toute l'expérience personnelle. B - Faux : D'autres mécanismes peuvent intervenir sans plaie. C - Faux : Les deux notions sont distinctes. D - Faux : La peur appartient au vécu émotionnel et cognitif. E - Faux : Un processus nerveux n'est pas une mesure de l'expérience.",
+    "flashcards": [
+      {
+        "front": "Quelle différence existe entre nociception et douleur ?",
+        "answers": [
+          "La nociception est un processus nerveux ; la douleur est une expérience personnelle sensorielle et émotionnelle."
+        ],
+        "explanation": "Cette distinction évite de réduire le vécu à une lésion ou à une réponse réflexe.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_003",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 3,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quels éléments explorent la composante sensorielle de la douleur ? (3 réponses exactes)",
+    "choices": [
+      "Le souvenir d'un soin pénible.",
+      "La localisation.",
+      "L'intensité.",
+      "Le type, par exemple brûlure ou décharge.",
+      "La peur de devenir dépendant."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il appartient surtout à la composante cognitive. B - Vrai : Elle précise le territoire douloureux. C - Vrai : Elle décrit l'importance ressentie dans un contexte donné. D - Vrai : Les qualificatifs décrivent la qualité de la douleur. E - Faux : Elle explore surtout le vécu émotionnel et les représentations.",
+    "flashcards": [
+      {
+        "front": "Quels repères décrivent la composante sensorielle de la douleur ?",
+        "answers": [
+          "Localisation, intensité, durée et qualité de la douleur."
+        ],
+        "explanation": "Les émotions et les représentations complètent cette description sans s'y réduire.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_004",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 4,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "À propos des composantes émotionnelle et cognitive, quelles affirmations sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Un souvenir douloureux prouve que la douleur actuelle est imaginaire.",
+      "L'anxiété peut participer au vécu émotionnel.",
+      "La composante cognitive se limite au score numérique.",
+      "Une émotion intense démontre une lésion grave.",
+      "Les attentes et les souvenirs participent à la dimension cognitive."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Les expériences antérieures peuvent moduler une douleur réelle. B - Vrai : Elle doit être accueillie sans minimiser la douleur. C - Faux : Le score décrit principalement l'intensité. D - Faux : L'émotion ne détermine pas à elle seule la gravité somatique. E - Vrai : Ils influencent l'interprétation de la situation.",
+    "flashcards": [
+      {
+        "front": "Que recherche-t-on dans la composante cognitive de la douleur ?",
+        "answers": [
+          "Les attentes, souvenirs, croyances et interprétations de la personne."
+        ],
+        "explanation": "Les explorer aide à comprendre le vécu, sans en déduire une douleur imaginaire.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_005",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 5,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Un patient sourit malgré une EN à 8/10. Quelles attitudes sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Remplacer son score par une estimation fondée sur son visage.",
+      "Comparer sa réaction à celle du voisin de chambre.",
+      "Conclure à une simulation.",
+      "Prendre en compte son score et préciser le contexte.",
+      "Explorer les autres composantes et les signes cliniques."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le soignant ne corrige pas arbitrairement l'auto-évaluation. B - Faux : La douleur est personnelle et les comparaisons sont trompeuses. C - Faux : L'expression comportementale varie entre personnes et situations. D - Vrai : Une expression souriante ne réfute pas l'intensité rapportée. E - Vrai : Le score s'intègre à une évaluation globale.",
+    "flashcards": [
+      {
+        "front": "Un sourire exclut-il une douleur intense ?",
+        "answers": [
+          "Non. Le comportement ne permet pas d'invalider à lui seul une douleur rapportée."
+        ],
+        "explanation": "Vérifier la compréhension de l'outil et poursuivre l'évaluation clinique.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_006",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 6,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quel repère permet de parler de douleur chronique ? (1 réponse exacte)",
+    "choices": [
+      "Un mécanisme obligatoirement neuropathique.",
+      "Un début datant obligatoirement de plus de six mois.",
+      "Un score toujours supérieur à 7/10.",
+      "L'absence obligatoire de toute maladie organique.",
+      "Une douleur persistante ou récidivante au-delà de trois mois."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : La chronicité peut concerner plusieurs mécanismes. B - Faux : Il n'est pas nécessaire d'attendre six mois. C - Faux : La durée et le retentissement ne se réduisent pas à un seuil d'intensité. D - Faux : Une maladie active peut entretenir une douleur chronique. E - Vrai : C'est le repère courant de chronicité retenu dans la fiche.",
+    "flashcards": [
+      {
+        "front": "Quel est le repère de durée d'une douleur chronique ?",
+        "answers": [
+          "Une persistance ou des récidives au-delà de trois mois."
+        ],
+        "explanation": "La chronicité ne précise ni le mécanisme ni l'absence d'une cause organique.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_007",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 7,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur les responsabilités infirmières face à la douleur sont exactes ? (3 réponses exactes)",
+    "choices": [
+      "L'attente d'une décision médicale supprime tout rôle propre.",
+      "Le droit au soulagement autorise toute augmentation de dose de sa propre initiative.",
+      "Évaluer, installer, prévenir, surveiller et transmettre participent au rôle propre.",
+      "Le soulagement de la douleur est un droit du patient.",
+      "L'application d'un protocole antalgique exige d'en vérifier le cadre écrit, daté, signé et intégré au dossier."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : L'installation, l'écoute, l'évaluation et la surveillance restent possibles. B - Faux : Les conditions du cadre autorisé doivent être respectées. C - Vrai : L'IDE reste actif dans l'accompagnement et l'évaluation. D - Vrai : Sa prise en compte concerne l'ensemble du parcours de soins. E - Vrai : Le protocole ne se remplace pas par une adaptation improvisée.",
+    "flashcards": [
+      {
+        "front": "Quel rôle propre l'IDE conserve-t-il face à une douleur ?",
+        "answers": [
+          "Évaluer, installer, prévenir, surveiller, réévaluer, tracer et transmettre, avec un accompagnement adapté."
+        ],
+        "explanation": "L'attente d'une décision thérapeutique ne supprime pas ces responsabilités.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_008",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 8,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent les mécanismes nociceptif et neuropathique ? (2 réponses exactes)",
+    "choices": [
+      "Une atteinte tissulaire non nerveuse activant les nocicepteurs peut produire une douleur nociceptive.",
+      "L'intensité seule permet d'identifier le mécanisme.",
+      "Toute douleur persistante depuis plus de trois mois est neuropathique.",
+      "L'influence de l'anxiété démontre une douleur imaginaire.",
+      "Une douleur neuropathique est causée par une lésion ou une maladie du système somatosensoriel."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Une plaie ou une inflammation en sont des exemples. B - Faux : Une même intensité peut correspondre à différents mécanismes. C - Faux : La durée ne définit pas le mécanisme. D - Faux : Les facteurs psychologiques peuvent moduler tous les mécanismes. E - Vrai : Elle peut avoir une origine centrale ou périphérique.",
+    "flashcards": [
+      {
+        "front": "Quelle est la définition d'une douleur neuropathique ?",
+        "answers": [
+          "Une douleur causée par une lésion ou une maladie du système somatosensoriel."
+        ],
+        "explanation": "Brûlures et décharges orientent l'évaluation mais ne suffisent pas seules au diagnostic.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_009",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 9,
+    "theme": "Comprendre la douleur",
+    "difficulty": "hard",
+    "question": "À propos de douleur nociplastique et de mécanismes mixtes, quelles affirmations sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Une douleur mixte interdit toute approche non médicamenteuse.",
+      "Nociplastique signifie douleur inventée.",
+      "L'influence de l'anxiété démontre un mécanisme exclusivement psychologique.",
+      "Une nociception altérée peut participer à une douleur nociplastique.",
+      "Plusieurs mécanismes peuvent coexister chez une même personne."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le projet peut être multimodal. B - Faux : La douleur demeure réelle. C - Faux : Les facteurs psychologiques influencent tous les mécanismes. D - Vrai : Une lésion tissulaire ou somatosensorielle suffisante n'est pas objectivée pour l'expliquer. E - Vrai : L'évaluation recherche leurs contributions possibles.",
+    "flashcards": [
+      {
+        "front": "Que signifie une douleur de mécanisme mixte ?",
+        "answers": [
+          "Plusieurs mécanismes douloureux coexistent chez la même personne."
+        ],
+        "explanation": "Durée, intensité et mécanisme sont des axes distincts de description.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_010",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 10,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Une toilette déclenche une douleur prévisible. Quelles propositions sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Elle impose le même médicament à tous les patients.",
+      "Elle constitue un mécanisme nerveux distinct de nociceptif et neuropathique.",
+      "Elle peut être qualifiée de douleur induite par le soin.",
+      "Son caractère prévisible justifie de ne pas l'évaluer.",
+      "Elle demande une stratégie de prévention."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le choix dépend du patient, du geste et du cadre prescrit. B - Faux : Le terme décrit le contexte et non un mécanisme spécifique. C - Vrai : Le contexte est celui d'un soin douloureux. D - Faux : La prévisibilité renforce l'intérêt de l'évaluation. E - Vrai : L'anticipation associe plusieurs moyens adaptés.",
+    "flashcards": [
+      {
+        "front": "Qu'appelle-t-on douleur induite par un soin ?",
+        "answers": [
+          "Une douleur liée au soin ou au traitement, souvent prévisible et à prévenir."
+        ],
+        "explanation": "L'anticipation ne se limite pas à un médicament systématique.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_011",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 11,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "À quelle étape correspond la transformation d'un stimulus nocif en signal électrique ? (1 réponse exacte)",
+    "choices": [
+      "La traçabilité.",
+      "Le verrouillage.",
+      "La transduction.",
+      "La perception.",
+      "La biodisponibilité."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Elle relève du dossier de soins. B - Faux : Il concerne la programmation d'une PCA. C - Vrai : Elle se produit au niveau de la terminaison sensorielle. D - Faux : Elle correspond à l'intégration consciente du vécu. E - Faux : Elle décrit la fraction de médicament atteignant la circulation.",
+    "flashcards": [
+      {
+        "front": "Que désigne la transduction nociceptive ?",
+        "answers": [
+          "La transformation d'un stimulus nocif en signal électrique."
+        ],
+        "explanation": "Elle se distingue de la transmission du signal et de sa perception.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_012",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 12,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent le traitement du message nociceptif ? (3 réponses exactes)",
+    "choices": [
+      "La modulation peut freiner ou faciliter la transmission.",
+      "Les afférences gagnent la corne dorsale médullaire.",
+      "Des réseaux cérébraux intègrent les dimensions de l'expérience.",
+      "Le message contourne toujours la moelle épinière.",
+      "La modulation intervient uniquement après la perception consciente."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Elle agit à plusieurs niveaux. B - Vrai : Des relais participent ensuite aux voies ascendantes. C - Vrai : La perception n'est pas le rôle d'une seule terminaison périphérique. D - Faux : Le trajet spinal est un relais important pour les territoires concernés. E - Faux : Des mécanismes périphériques et médullaires existent.",
+    "flashcards": [
+      {
+        "front": "À quels niveaux la modulation nociceptive peut-elle agir ?",
+        "answers": [
+          "Aux niveaux périphérique, médullaire et descendant."
+        ],
+        "explanation": "La modulation peut inhiber ou faciliter le traitement du message.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_013",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 13,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques des fibres Aδ et C sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Les fibres Aδ sont myélinisées et plus rapides que les fibres C.",
+      "Les fibres C transmettent uniquement le tact fin.",
+      "Les fibres Aδ sont les grosses fibres tactiles Aβ.",
+      "Les fibres C sont non myélinisées et plus lentes.",
+      "Toute douleur tardive démontre à elle seule une neuropathie."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Leur conduction contribue à une douleur initiale plus vive. B - Faux : Elles participent notamment à la nociception. C - Faux : Ces catégories ne sont pas identiques. D - Vrai : Elles peuvent participer à une douleur tardive et diffuse. E - Faux : La temporalité de conduction ne pose pas ce diagnostic.",
+    "flashcards": [
+      {
+        "front": "Quelle différence de conduction distingue Aδ et C ?",
+        "answers": [
+          "Les fibres Aδ myélinisées conduisent plus vite que les fibres C non myélinisées."
+        ],
+        "explanation": "La douleur peut ainsi comporter une sensation initiale puis une sensation plus diffuse.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_014",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 14,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Quelles affirmations correspondent au modèle simplifié du gate control ? (2 réponses exactes)",
+    "choices": [
+      "Les afférences tactiles Aβ peuvent recruter des circuits inhibiteurs médullaires.",
+      "Le modèle dispense d'alerter devant une douleur thoracique nouvelle.",
+      "Frotter supprime nécessairement la cause de la douleur.",
+      "Un frottement doux peut parfois réduire une douleur après un petit choc.",
+      "Les fibres Aβ sont normalement les petites fibres nociceptives lentes."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Cela peut diminuer la transmission nociceptive. B - Faux : Une urgence doit être recherchée. C - Faux : Une modulation du message ne traite pas forcément la lésion. D - Vrai : L'effet reste dépendant du contexte. E - Faux : Elles sont de grosses fibres myélinisées du tact.",
+    "flashcards": [
+      {
+        "front": "Quel est le principe du gate control ?",
+        "answers": [
+          "Une activité tactile peut activer des circuits médullaires inhibiteurs et réduire la transmission nociceptive."
+        ],
+        "explanation": "L'effet n'est ni constant ni une preuve de disparition de la cause.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_015",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 15,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur la sensibilisation sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Des modifications centrales peuvent entretenir une hypersensibilité.",
+      "Les prostaglandines sont sans lien avec la nociception.",
+      "Des médiateurs inflammatoires peuvent abaisser le seuil des nocicepteurs.",
+      "Une sensibilisation signifie toujours une lésion nerveuse.",
+      "L'hypersensibilité prouve une exagération volontaire."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : La sensibilisation n'est pas seulement périphérique. B - Faux : Elles font partie des médiateurs de sensibilisation. C - Vrai : La réponse devient plus importante pour une stimulation donnée. D - Faux : Elle peut exister dans des contextes tissulaires inflammatoires. E - Faux : Elle peut avoir des mécanismes physiologiques.",
+    "flashcards": [
+      {
+        "front": "Que produit une sensibilisation nociceptive ?",
+        "answers": [
+          "Une réponse accrue et/ou un seuil d'activation diminué."
+        ],
+        "explanation": "Elle peut impliquer des mécanismes périphériques et centraux.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_016",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 16,
+    "theme": "Comprendre la douleur",
+    "difficulty": "easy",
+    "question": "Quelles propositions distinguent allodynie et hyperalgésie ? (2 réponses exactes)",
+    "choices": [
+      "Les deux termes décrivent uniquement une durée de douleur.",
+      "L'allodynie correspond à une absence totale de sensibilité.",
+      "L'hyperalgésie est un synonyme d'absence de douleur.",
+      "La douleur au contact d'un drap peut être une allodynie.",
+      "L'hyperalgésie est une réponse accrue à un stimulus normalement douloureux."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Ils décrivent un mode de réponse à une stimulation. B - Faux : Il s'agit au contraire d'une douleur provoquée. C - Faux : La réponse douloureuse est augmentée. D - Vrai : Le stimulus est normalement indolore. E - Vrai : Le stimulus est déjà nocif ou douloureux habituellement.",
+    "flashcards": [
+      {
+        "front": "Comment différencier allodynie et hyperalgésie ?",
+        "answers": [
+          "Allodynie : stimulus normalement indolore devenu douloureux. Hyperalgésie : réponse accrue à un stimulus normalement douloureux."
+        ],
+        "explanation": "Décrire le stimulus aide à utiliser le bon terme.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_017",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 17,
+    "theme": "Comprendre la douleur",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur le réflexe de retrait sont exactes ? (3 réponses exactes)",
+    "choices": [
+      "Le ganglion spinal est la synapse motrice du réflexe.",
+      "L'absence de retrait exclut une douleur.",
+      "La racine dorsale apporte l'information sensitive.",
+      "Le retrait ne mesure pas à lui seul l'intensité consciente.",
+      "Il peut précéder une décision volontaire."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il contient les corps cellulaires sensitifs. B - Faux : L'état moteur ou neurologique peut modifier cette réponse. C - Vrai : La sortie motrice passe par la racine ventrale. D - Vrai : Réponse motrice et expérience personnelle restent distinctes. E - Vrai : Le circuit spinal organise une réponse protectrice.",
+    "flashcards": [
+      {
+        "front": "Un réflexe de retrait mesure-t-il la douleur consciente ?",
+        "answers": [
+          "Non. Il démontre une réponse nerveuse protectrice, pas l'intensité vécue."
+        ],
+        "explanation": "L'absence de mouvement n'exclut pas non plus une douleur.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_018",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 18,
+    "theme": "Comprendre la douleur",
+    "difficulty": "hard",
+    "question": "Une douleur d'origine viscérale peut être ressentie dans une zone cutanée distante. Quelles propositions l'expliquent ? (2 réponses exactes)",
+    "choices": [
+      "La zone ressentie n'est pas nécessairement le siège d'une lésion locale.",
+      "La localisation permet à elle seule de diagnostiquer l'organe en cause.",
+      "Des afférences viscérales et somatiques peuvent converger sur un neurone médullaire.",
+      "Cette convergence est identique au verrouillage d'une PCA.",
+      "Toute douleur du bras est une douleur cardiaque."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Il faut rechercher la source et le contexte clinique. B - Faux : Un signe isolé ne suffit pas au diagnostic. C - Vrai : Cette convergence contribue à une localisation ressentie à distance. D - Faux : Ces mécanismes n'ont pas le même objet. E - Faux : Les causes sont multiples et doivent être évaluées.",
+    "flashcards": [
+      {
+        "front": "Qu'est-ce qu'une douleur projetée ?",
+        "answers": [
+          "Une douleur ressentie à distance de sa source, notamment du fait d'une convergence d'afférences."
+        ],
+        "explanation": "Une localisation seule ne permet pas d'identifier avec certitude la cause.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_019",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 19,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "easy",
+    "question": "Quelles associations correspondent au mémo TILT ? (3 réponses exactes)",
+    "choices": [
+      "I : identité du prescripteur.",
+      "Dernier T : traitement uniquement.",
+      "L : localisation.",
+      "Dernier T : type.",
+      "Premier T : temps."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Dans TILT, I signifie intensité. B - Faux : Le traitement est à rechercher mais ne remplace pas le type. C - Vrai : Rechercher siège, irradiation et plusieurs sites. D - Vrai : Recueillir les qualificatifs du patient. E - Vrai : Préciser début, durée, rythme et évolution.",
+    "flashcards": [
+      {
+        "front": "Que signifie TILT dans l'entretien sur la douleur ?",
+        "answers": [
+          "Temps, Intensité, Localisation, Type."
+        ],
+        "explanation": "Compléter par facteurs déclenchants, soulageants, retentissement et traitements déjà pris.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_020",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 20,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Que faut-il ajouter à TILT pour une évaluation globale ? (3 réponses exactes)",
+    "choices": [
+      "Les inquiétudes, attentes et expériences antérieures.",
+      "Une comparaison systématique avec la tolérance des autres patients.",
+      "Les prises déjà effectuées et leur effet.",
+      "Le retentissement sur le sommeil et les activités.",
+      "Un diagnostic définitif fondé uniquement sur le mot brûlure."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Elles renseignent les dimensions émotionnelle et cognitive. B - Faux : Le vécu individuel prime. C - Vrai : Elles aident à comprendre efficacité et risques. D - Vrai : TILT ne résume pas les conséquences quotidiennes. E - Faux : Un qualificatif oriente sans prouver une cause.",
+    "flashcards": [
+      {
+        "front": "Pourquoi TILT ne suffit-il pas à l'évaluation globale ?",
+        "answers": [
+          "Il décrit surtout la composante sensorielle et doit être complété par vécu, retentissement, traitements et contexte."
+        ],
+        "explanation": "Demander ce que la douleur empêche de faire et ce qui inquiète la personne.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_021",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 21,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "easy",
+    "question": "Quelles affirmations décrivent l'échelle numérique ? (2 réponses exactes)",
+    "choices": [
+      "L'EN décrit à elle seule les quatre composantes.",
+      "Le contexte de mesure doit être précisé.",
+      "Le soignant choisit le chiffre selon les grimaces.",
+      "Un chiffre suffit à choisir automatiquement un opioïde.",
+      "Le patient choisit habituellement un nombre de 0 à 10."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Elle mesure principalement l'intensité. B - Vrai : Repos et mouvement peuvent donner des résultats différents. C - Faux : Cela ne correspond pas à une EN rapportée par le patient. D - Faux : Le mécanisme, le terrain et le cadre thérapeutique restent nécessaires. E - Vrai : C'est une auto-évaluation d'intensité.",
+    "flashcards": [
+      {
+        "front": "Que faut-il tracer avec un score d'EN ?",
+        "answers": [
+          "La valeur sur 10, l'heure et la situation de mesure : repos, mouvement ou soin."
+        ],
+        "explanation": "Le contexte rend la comparaison avant/après interprétable.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_022",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 22,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur l'EVA sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Toute EVA exprimée sur 10 est nécessairement fausse.",
+      "L'EVA est toujours une liste de qualificatifs verbaux.",
+      "Une valeur EVA se convertit sans précaution en tout autre score.",
+      "Le patient positionne un repère sur une ligne entre deux extrêmes.",
+      "L'unité et la présentation doivent être précisées."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Certaines présentations utilisent cette expression. B - Faux : Cette description correspond à une EVS. C - Faux : Les outils et leurs conditions doivent être respectés. D - Vrai : Le soignant mesure ensuite la position. E - Vrai : Une mesure sur 100 mm n'est pas une simple EN renommée.",
+    "flashcards": [
+      {
+        "front": "Quelle différence distingue EN et EVA ?",
+        "answers": [
+          "L'EN utilise un nombre choisi ; l'EVA utilise un repère sur une ligne mesurée."
+        ],
+        "explanation": "Nommer l'outil réellement utilisé et préciser son unité.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_023",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 23,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur les outils d'auto-évaluation sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Une échelle de visages mesure la douleur selon sa consigne validée.",
+      "La tristesse du visage doit remplacer la consigne d'une échelle de douleur.",
+      "L'EVS propose des qualificatifs d'intensité.",
+      "Tous les patients comprennent spontanément tous les outils.",
+      "Changer de version d'EVS ne nécessite aucune trace."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Elle ne demande pas simplement de choisir une humeur. B - Faux : Humeur et intensité ne sont pas identiques. C - Vrai : Il faut garder la même version pour le suivi. D - Faux : La compréhension doit être vérifiée. E - Faux : Les changements peuvent modifier l'interprétation.",
+    "flashcards": [
+      {
+        "front": "Comment utiliser correctement une EVS ?",
+        "answers": [
+          "Expliquer les qualificatifs proposés et conserver la même version au suivi."
+        ],
+        "explanation": "Vérifier que la personne comprend la consigne plutôt que présumer sa capacité.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_024",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 24,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Une personne âgée présente un trouble neurocognitif modéré. Quelles attitudes sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Choisir l'échelle uniquement selon l'âge civil.",
+      "Vérifier audition, vision et compréhension.",
+      "Demander uniquement au proche de fixer l'intensité.",
+      "Essayer une auto-évaluation simple et expliquée.",
+      "Écarter toute parole du patient dès le diagnostic cognitif connu."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le contexte et les capacités comptent aussi. B - Vrai : Les aides sensorielles peuvent améliorer la fiabilité de la réponse. C - Faux : Son avis complète l'évaluation sans remplacer la parole accessible. D - Vrai : Un trouble cognitif n'annule pas automatiquement toute capacité. E - Faux : Les capacités restantes doivent être recherchées.",
+    "flashcards": [
+      {
+        "front": "Les troubles cognitifs interdisent-ils toujours l'auto-évaluation ?",
+        "answers": [
+          "Non. Elle reste à essayer si une réponse fiable est possible avec une consigne adaptée."
+        ],
+        "explanation": "Sinon, retenir une hétéro-évaluation validée correspondant à la situation.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_025",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 25,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "easy",
+    "question": "Quels domaines appartiennent à ALGOPLUS ? (3 réponses exactes)",
+    "choices": [
+      "La dose antalgique et la durée de prescription.",
+      "La créatinine et le poids.",
+      "Les plaintes.",
+      "Le visage et le regard.",
+      "Le corps et le comportement."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Ils ne composent pas cette grille comportementale. B - Faux : Ces paramètres ne sont pas des items d'ALGOPLUS. C - Vrai : Elles comprennent les vocalisations pertinentes selon la grille. D - Vrai : Ils constituent deux domaines observés. E - Vrai : Ils complètent les cinq domaines.",
+    "flashcards": [
+      {
+        "front": "Quels sont les cinq domaines d'ALGOPLUS ?",
+        "answers": [
+          "Visage, regard, plaintes, corps et comportement."
+        ],
+        "explanation": "Utiliser les critères de la grille validée pour coter, sans inventer un score.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_026",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 26,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Chez une personne âgée non communicante verbalement, quelles affirmations sur ALGOPLUS sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Un score d'au moins 2/5 est en faveur d'une douleur à prendre en charge.",
+      "Le score se convertit directement en EN sur 10.",
+      "Le total va de 0 à 5.",
+      "Un score de 0 exclut définitivement toute douleur.",
+      "ALGOPLUS établit à lui seul la cause de la douleur."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Le score doit être intégré à la situation clinique. B - Faux : Les échelles ne sont pas interchangeables. C - Vrai : Chaque item positif compte un point. D - Faux : Une douleur peut être méconnue et l'évaluation doit être poursuivie si elle est suspectée. E - Faux : Il évalue des signes comportementaux.",
+    "flashcards": [
+      {
+        "front": "Quel repère d'ALGOPLUS appelle une prise en charge de la douleur ?",
+        "answers": [
+          "Un score supérieur ou égal à 2 sur 5."
+        ],
+        "explanation": "Un résultat inférieur ne suffit pas à exclure une douleur suspectée cliniquement.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_027",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 27,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "easy",
+    "question": "Quelles affirmations décrivent DOLOPLUS-2 ? (3 réponses exactes)",
+    "choices": [
+      "Il comporte dix items.",
+      "Il est destiné uniquement au nouveau-né.",
+      "Le repère de douleur est au moins 5/30.",
+      "Le total est compris entre 0 et 30.",
+      "Il sert à convertir directement une EVA."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Ils couvrent plusieurs aspects du comportement. B - Faux : Il concerne la personne âgée ayant des troubles de communication. C - Vrai : Le résultat reste à interpréter avec le contexte. D - Vrai : Les items sont cotés selon la grille. E - Faux : Il s'agit d'un autre type d'évaluation.",
+    "flashcards": [
+      {
+        "front": "À quoi sert DOLOPLUS-2 et quel est son repère ?",
+        "answers": [
+          "À évaluer une douleur prolongée chez la personne âgée avec troubles de communication ; repère : au moins 5/30."
+        ],
+        "explanation": "La grille comporte dix items et doit être renseignée selon ses consignes.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_028",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 28,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "À propos d'ECPA, quelle proposition est exacte ? (1 réponse exacte)",
+    "choices": [
+      "Son score est une EN donnée par le proche.",
+      "L'observation compare notamment avant et pendant le soin.",
+      "ECPA permet de supprimer toute observation au repos.",
+      "La grille exige seulement une pression artérielle.",
+      "Un souvenir vague de la grille suffit à coter."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Il s'agit d'une hétéro-évaluation structurée. B - Vrai : L'outil explore des comportements dans le contexte du soin. C - Faux : Le contexte avant le soin apporte une référence. D - Faux : Ce n'est pas une échelle fondée sur cette seule constante. E - Faux : Le formulaire et les consignes validés doivent être utilisés.",
+    "flashcards": [
+      {
+        "front": "Pourquoi observer avant et pendant un soin avec ECPA ?",
+        "answers": [
+          "Pour repérer les changements de comportement associés au soin."
+        ],
+        "explanation": "Utiliser la grille validée et comparer dans le contexte de la personne.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_029",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 29,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quelles associations entre outils et situations sont cohérentes ? (3 réponses exactes)",
+    "choices": [
+      "DN4 : intensité de douleur du nouveau-né.",
+      "EVENDOL et FLACC : outils comportementaux de l'enfant selon le contexte.",
+      "EDIN : douleur prolongée chez le nouveau-né.",
+      "DOLOPLUS-2 : auto-évaluation du nourrisson.",
+      "DAN : douleur aiguë chez le nouveau-né."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il dépiste une composante neuropathique et n'a pas cet usage. B - Vrai : EVENDOL concerne notamment le jeune enfant ; FLACC s'utilise selon les situations de soin ou postopératoires. C - Vrai : La durée et la situation orientent le choix. D - Faux : C'est une hétéro-évaluation destinée à la personne âgée. E - Vrai : Le choix dépend aussi du contexte de validation.",
+    "flashcards": [
+      {
+        "front": "Comment distinguer les usages de DAN et EDIN ?",
+        "answers": [
+          "DAN : douleur aiguë du nouveau-né. EDIN : douleur prolongée du nouveau-né."
+        ],
+        "explanation": "Vérifier la population et les conditions d'emploi de chaque grille.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_030",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 30,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "En réanimation, un adulte ne peut pas s'auto-évaluer. Quelles propositions sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Observer avec une grille validée et réévaluer après intervention.",
+      "Utiliser BPS ou CPOT si la situation correspond à leurs conditions d'emploi.",
+      "Attribuer une EN fictive à partir de la fréquence cardiaque.",
+      "Conclure à l'absence de douleur du seul fait de la sédation.",
+      "Utiliser un outil sans tenir compte de la population validée."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Une observation structurée est nécessaire. B - Vrai : Ventilation, sédation et protocole orientent le choix. C - Faux : Une constante ne remplace pas une auto-évaluation. D - Faux : La sédation ne garantit pas l'analgésie. E - Faux : L'adaptation à la situation est indispensable.",
+    "flashcards": [
+      {
+        "front": "Quels outils peuvent aider à évaluer un adulte non communicant en réanimation ?",
+        "answers": [
+          "BPS ou CPOT, selon l'état du patient et le protocole."
+        ],
+        "explanation": "La sédation ne suffit pas à prouver l'absence de douleur.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_031",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 31,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "easy",
+    "question": "Quels éléments appartiennent au DN4 complet ? (3 réponses exactes)",
+    "choices": [
+      "Une recherche d'hypoesthésie au tact ou à la piqûre.",
+      "Une note de satisfaction sur le repas.",
+      "Une mesure obligatoire de la pression artérielle.",
+      "Des qualificatifs comme brûlure et décharges électriques.",
+      "La douleur provoquée ou majorée par le frottement."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le questionnaire complet comporte aussi un examen. B - Faux : Elle n'appartient pas au questionnaire. C - Faux : Elle ne constitue pas un item du DN4. D - Vrai : Ils font partie de l'interrogatoire. E - Vrai : C'est l'un des items d'examen.",
+    "flashcards": [
+      {
+        "front": "Le DN4 complet repose-t-il uniquement sur l'entretien ?",
+        "answers": [
+          "Non. Il associe sept items d'interrogatoire et trois items d'examen."
+        ],
+        "explanation": "Une version partielle ne doit pas être cotée comme le questionnaire complet sur dix.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_032",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 32,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quelles interprétations d'un DN4 complet sont correctes ? (2 réponses exactes)",
+    "choices": [
+      "Un DN4 à 6/10 signifie une intensité douloureuse de 6/10.",
+      "Le résultat doit être intégré à l'évaluation clinique.",
+      "Trois items recueillis suffisent à annoncer un DN4 complet.",
+      "Un total d'au moins 4/10 rend probable une composante neuropathique.",
+      "Un résultat positif autorise l'IDE à prescrire seul une nouvelle molécule."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le DN4 ne mesure pas l'intensité. B - Vrai : Il ne remplace pas le diagnostic. C - Faux : Les dix items sont nécessaires à cette cotation. D - Vrai : C'est un résultat de dépistage. E - Faux : Le traitement reste dans le cadre autorisé.",
+    "flashcards": [
+      {
+        "front": "Comment interpréter un DN4 complet supérieur ou égal à 4/10 ?",
+        "answers": [
+          "Le dépistage est positif : une composante neuropathique est probable."
+        ],
+        "explanation": "Le DN4 n'est ni une échelle d'intensité ni un diagnostic isolé.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_033",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 33,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quelles conditions rendent une réévaluation interprétable ? (3 réponses exactes)",
+    "choices": [
+      "Attendre la relève malgré une dégradation clinique aiguë.",
+      "Utiliser si possible le même outil.",
+      "Comparer uniquement un score initial au lever à un score final au repos.",
+      "Comparer des situations semblables, par exemple le même mouvement.",
+      "Évaluer aussi fonction et tolérance."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Une aggravation impose une évaluation immédiate. B - Vrai : Cela limite les différences liées à l'instrument. C - Faux : Cette comparaison ne prouve pas un effet sur le lever. D - Vrai : Repos et mobilisation ne sont pas interchangeables. E - Vrai : Une baisse du score ne résume pas le bénéfice clinique.",
+    "flashcards": [
+      {
+        "front": "Quels trois axes suivre après une intervention antalgique ?",
+        "answers": [
+          "Intensité de la douleur, capacité fonctionnelle et tolérance."
+        ],
+        "explanation": "Conserver un outil et des conditions comparables quand c'est possible.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_034",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 34,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "hard",
+    "question": "Quelle distinction entre délai d'action et intervalle entre prises est correcte ? (2 réponses exactes)",
+    "choices": [
+      "Le délai d'action aide à programmer la réévaluation.",
+      "Le même délai convient à tous les antalgiques et à toutes les voies.",
+      "Le délai d'action autorise automatiquement une nouvelle dose.",
+      "L'intervalle entre prises évite des administrations trop rapprochées.",
+      "Une aggravation doit attendre le délai théorique avant toute observation."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Il dépend notamment du produit et de la voie. B - Faux : Les cinétiques diffèrent. C - Faux : Il ne remplace pas l'intervalle prescrit. D - Vrai : Il reste lié à la prescription et à la spécialité. E - Faux : La sécurité impose de réévaluer immédiatement.",
+    "flashcards": [
+      {
+        "front": "Le délai d'action d'un antalgique est-il son intervalle entre prises ?",
+        "answers": [
+          "Non. Le premier guide la réévaluation ; le second encadre l'espacement des administrations."
+        ],
+        "explanation": "Ne pas redonner une dose au seul motif que l'effet attendu n'est pas encore constaté.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_035",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 35,
+    "theme": "Traçabilité et relais",
+    "difficulty": "medium",
+    "question": "Quels éléments rendent une transmission douleur exploitable ? (3 réponses exactes)",
+    "choices": [
+      "L'action et l'heure réellement effectuées.",
+      "L'outil, le score et les conditions de mesure.",
+      "Une cause supposée présentée comme un fait certain.",
+      "Le résultat, la tolérance et la suite prévue.",
+      "La mention isolée « antalgique donné » sans dose ni voie."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Une heure prévue n'atteste pas une prise. B - Vrai : Ils décrivent l'évaluation réalisée. C - Faux : Les hypothèses doivent rester identifiées. D - Vrai : L'équipe doit savoir quoi surveiller et quand réévaluer. E - Faux : Cette trace est insuffisante pour un médicament.",
+    "flashcards": [
+      {
+        "front": "Que tracer après une action contre la douleur ?",
+        "answers": [
+          "Évaluation, action et heure réelle, résultat, tolérance, alerte éventuelle et prochaine étape."
+        ],
+        "explanation": "Pour un médicament, préciser aussi produit, dose et voie selon le dossier de soins.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_036",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 36,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "easy",
+    "question": "Quelles propositions sur les voies et dispositifs sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Un patch peut avoir un effet systémique.",
+      "La voie orale suppose notamment une déglutition et une conscience compatibles.",
+      "La voie IV supprime le besoin de surveillance.",
+      "Toute ampoule peut être administrée par toute voie.",
+      "PCA désigne une voie anatomique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Le caractère cutané ne signifie pas absence d'effet général. B - Vrai : Elle doit être adaptée à l'état du patient. C - Faux : La rapidité d'effet impose aussi des contrôles. D - Faux : Le RCP de la présentation précise les voies autorisées. E - Faux : C'est un mode d'administration par pompe.",
+    "flashcards": [
+      {
+        "front": "PCA et voie IV désignent-elles la même chose ?",
+        "answers": [
+          "Non. PCA est un mode d'administration ; IV est une voie anatomique."
+        ],
+        "explanation": "Le mode, le produit, la concentration et la voie sont à vérifier séparément.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_037",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 37,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "easy",
+    "question": "Quelle affirmation sur la biodisponibilité absolue est exacte ? (1 réponse exacte)",
+    "choices": [
+      "Elle permet de transposer toutes les doses d'une voie à l'autre.",
+      "Elle est de 100 % par voie IV.",
+      "Elle désigne uniquement le temps avant soulagement.",
+      "Elle est toujours de 100 % par voie orale.",
+      "Elle ne concerne que les antalgiques opioïdes."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Les équivalences dépendent du médicament et du contexte. B - Vrai : Le médicament est directement administré dans la circulation systémique. C - Faux : Ce n'est pas la définition de la biodisponibilité. D - Faux : Absorption et premier passage peuvent la réduire. E - Faux : La notion est pharmacocinétique et plus générale.",
+    "flashcards": [
+      {
+        "front": "Quelle est la biodisponibilité absolue par voie IV ?",
+        "answers": [
+          "100 %."
+        ],
+        "explanation": "Ce repère ne permet pas d'improviser une conversion de dose entre voies.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_038",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 38,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles vérifications complètent les cinq B avant un antalgique ? (3 réponses exactes)",
+    "choices": [
+      "Dernières prises et cumul de plusieurs spécialités.",
+      "Allergies, terrain rénal ou hépatique et interactions.",
+      "La couleur de la boîte comme seul contrôle d'identité.",
+      "Surveillance prévue et traçabilité.",
+      "L'habitude du service malgré une prescription illisible."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Les doublons peuvent entraîner un surdosage. B - Vrai : Le bon produit doit aussi convenir au patient. C - Faux : Elle ne remplace pas les vérifications du produit. D - Vrai : La sécurité se poursuit après l'administration. E - Faux : Une information incertaine demande clarification.",
+    "flashcards": [
+      {
+        "front": "Quels sont les cinq B de l'administration médicamenteuse ?",
+        "answers": [
+          "Bon patient, bon médicament, bonne dose, bonne voie et bon moment."
+        ],
+        "explanation": "Ajouter allergies, interactions, terrain, dernières prises, surveillance et traçabilité.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_039",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 39,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur les formes LI et LP sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Une forme LP peut servir au traitement de fond selon prescription.",
+      "Une forme LP est nécessairement adaptée à une titration rapide.",
+      "L'écrasement doit être vérifié spécialité par spécialité.",
+      "Toute gélule LP peut être ouverte puis broyée.",
+      "LI et LP sont interchangeables sans vérification."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Sa libération est prolongée. B - Faux : La titration dépend d'une stratégie prescrite et de la cinétique. C - Vrai : Écraser une forme LP peut modifier sa libération. D - Faux : Ouverture et broyage ont des règles distinctes propres au produit. E - Faux : Leurs cinétiques et usages diffèrent.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas écraser une forme LP sans vérification ?",
+        "answers": [
+          "Parce que cela peut altérer la libération du médicament et sa sécurité."
+        ],
+        "explanation": "Consulter les règles de la spécialité, y compris pour ouverture de gélule ou administration par sonde.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_040",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 40,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "easy",
+    "question": "Quelles associations entre famille et exemple sont correctes ? (3 réponses exactes)",
+    "choices": [
+      "Palier II : codéine ou tramadol.",
+      "Néfopam : antagoniste opioïde.",
+      "Palier III : morphine ou fentanyl.",
+      "Un palier indique à lui seul le mécanisme de la douleur.",
+      "Palier I : paracétamol."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Ce sont des opioïdes dits faibles. B - Faux : C'est un antalgique central non opioïde. C - Vrai : Ce sont des opioïdes forts. D - Faux : Le palier classe des médicaments, pas l'expérience douloureuse. E - Vrai : C'est un antalgique non opioïde.",
+    "flashcards": [
+      {
+        "front": "Le palier d'un antalgique suffit-il à choisir le traitement ?",
+        "answers": [
+          "Non. Il faut aussi considérer mécanisme, terrain, fonction et indication."
+        ],
+        "explanation": "L'échelle historique OMS ne constitue pas un algorithme universel fondé sur un score.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_041",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 41,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur les associations antalgiques sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Un non-opioïde peut être associé à un opioïde selon indication et prescription.",
+      "Associer automatiquement les paliers II et III garantit une meilleure sécurité.",
+      "Toute douleur neuropathique impose seulement d'augmenter le palier.",
+      "Un opioïde faible n'expose pas à une dépression respiratoire.",
+      "Les doublons et le cumul de sédation doivent être recherchés."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Une approche multimodale peut être pertinente. B - Faux : Cette association demande une analyse et n'est pas un automatisme. C - Faux : Des traitements spécifiques peuvent être nécessaires. D - Faux : Le qualificatif faible n'annule pas les risques. E - Vrai : Plusieurs spécialités peuvent partager une substance ou un effet.",
+    "flashcards": [
+      {
+        "front": "Que vérifier lors d'une association d'antalgiques ?",
+        "answers": [
+          "L'indication, les substances communes, les interactions et le cumul des effets indésirables."
+        ],
+        "explanation": "Une association ne se justifie pas par le seul numéro de palier.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_042",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 42,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Une personne a reçu 1 g de paracétamol trois fois, puis une association contenant 500 mg de paracétamol. Quelles affirmations sont justes ? (2 réponses exactes)",
+    "choices": [
+      "L'association doit être incluse dans le total.",
+      "Le total reste à 3 g car l'association porte un autre nom.",
+      "Ce calcul autorise automatiquement une nouvelle dose.",
+      "Le risque principal d'un excès est uniquement la constipation.",
+      "Le cumul de paracétamol est de 3,5 g."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Le nom commercial ne modifie pas la substance cumulée. B - Faux : Toutes les sources de paracétamol s'additionnent. C - Faux : La prescription, le terrain et les horaires doivent être vérifiés. D - Faux : Le surdosage de paracétamol expose à une atteinte hépatique grave. E - Vrai : Trois grammes plus un demi-gramme donnent 3,5 g.",
+    "flashcards": [
+      {
+        "front": "Comment calculer le cumul quotidien de paracétamol ?",
+        "answers": [
+          "Additionner le paracétamol de toutes les spécialités et de toutes les prises concernées."
+        ],
+        "explanation": "Inclure les associations avec opioïdes ; vérifier aussi les horaires et le terrain.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_043",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 43,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Une personne fragile pèse 44 kg et mange peu. Quelles attitudes sont adaptées avant du paracétamol ? (2 réponses exactes)",
+    "choices": [
+      "Déduire la dose du seul âge.",
+      "Appliquer systématiquement 4 g par jour.",
+      "Ignorer les associations médicamenteuses si le patient est hospitalisé.",
+      "Rapprocher la prescription du RCP de la spécialité et demander clarification si besoin.",
+      "Vérifier poids, nutrition, fonctions rénale et hépatique."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Le poids et les autres risques doivent être pris en compte. B - Faux : Ce n'est pas une dose universelle. C - Faux : Des doublons et prises antérieures restent possibles. D - Vrai : Un plafond général ne suffit pas pour ce terrain. E - Vrai : Ces facteurs peuvent modifier les conditions d'utilisation.",
+    "flashcards": [
+      {
+        "front": "Pourquoi 4 g/j de paracétamol n'est-il pas un automatisme ?",
+        "answers": [
+          "Le plafond dépend du produit, du cadre prescrit, du poids et des facteurs de risque."
+        ],
+        "explanation": "Petit poids, dénutrition, déshydratation et atteintes rénale ou hépatique imposent des vérifications.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_044",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 44,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Un surdosage de paracétamol est suspecté. Quelles propositions sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "La naloxone est l'antidote du paracétamol.",
+      "Un délai déjà long dispense de demander un avis.",
+      "Une alerte médicale et un avis toxicologique adaptés sont urgents.",
+      "La N-acétylcystéine est un antidote utilisé selon protocole.",
+      "L'absence immédiate de symptômes élimine le risque."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Elle est un antagoniste opioïde. B - Faux : L'avis reste nécessaire quelle que soit la découverte tardive. C - Vrai : Il ne faut pas attendre les signes hépatiques. D - Vrai : Sa mise en œuvre relève du cadre de prise en charge. E - Faux : Les manifestations peuvent être retardées.",
+    "flashcards": [
+      {
+        "front": "Quel est l'antidote du paracétamol et quelle est la priorité en cas de surdosage suspecté ?",
+        "answers": [
+          "N-acétylcystéine ; alerte médicale urgente et avis toxicologique selon l'organisation."
+        ],
+        "explanation": "Ne pas attendre l'apparition de symptômes hépatiques.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_045",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 45,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quels risques doivent être recherchés avant un AINS ? (3 réponses exactes)",
+    "choices": [
+      "L'inutilité de connaître la molécule exacte.",
+      "La prise d'un autre AINS ou de médicaments augmentant le saignement.",
+      "Le risque digestif et hémorragique.",
+      "L'absence de risque si le médicament est de palier I.",
+      "Le risque rénal, notamment en cas de déshydratation."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Les règles et contre-indications sont propres au produit. B - Vrai : Les interactions et doublons modifient le bénéfice-risque. C - Vrai : Ulcère, saignement et associations à risque sont à rechercher. D - Faux : Un non-opioïde peut provoquer des effets graves. E - Vrai : Les prostaglandines participent à l'équilibre rénal.",
+    "flashcards": [
+      {
+        "front": "Quels grands risques surveiller avec les AINS ?",
+        "answers": [
+          "Risques rénal, digestif et hémorragique, selon le terrain et les associations."
+        ],
+        "explanation": "Vérifier le produit, l'hydratation, les antécédents et les autres traitements.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_046",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 46,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Une personne prend de l'aspirine à faible dose avant une intervention programmée. Quelles affirmations sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "L'IDE doit l'arrêter systématiquement de sa propre initiative.",
+      "L'effet sur les plaquettes est sans conséquence pour le saignement.",
+      "La conduite périopératoire demande une décision médicale coordonnée.",
+      "L'indication peut être antiagrégante cardiovasculaire.",
+      "Le traitement peut être ignoré parce qu'il est ancien."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Un arrêt ne s'improvise pas. B - Faux : L'effet antiagrégant participe au risque hémorragique. C - Vrai : Il faut mettre en balance risques hémorragique et thrombotique. D - Vrai : Une faible dose ne correspond pas uniquement à une recherche d'antalgie. E - Faux : Il reste pertinent pour la sécurité.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas interrompre seul une aspirine antiagrégante ?",
+        "answers": [
+          "Parce que la décision dépend des risques de saignement et de thrombose et doit être coordonnée médicalement."
+        ],
+        "explanation": "Vérifier indication, intervention prévue et consignes avant toute modification.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_047",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 47,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur les présentations de néfopam sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Une dose orale et une dose injectable sont toujours équivalentes.",
+      "L'existence d'un comprimé autorise à avaler toute ampoule injectable.",
+      "Le néfopam prévient le sevrage d'un opioïde.",
+      "Le néfopam est un antalgique central non opioïde.",
+      "Les formes orale et injectable ont leurs propres RCP."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Aucune conversion ne s'improvise. B - Faux : Une forme orale dédiée ne modifie pas l'AMM de l'injectable. C - Faux : Il ne remplace pas un opioïde pour cet objectif. D - Vrai : Il ne se classe pas comme un opioïde faible. E - Vrai : Voies et plafonds ne se transposent pas automatiquement.",
+    "flashcards": [
+      {
+        "front": "Pourquoi distinguer néfopam injectable et néfopam oral ?",
+        "answers": [
+          "Ce sont des présentations avec des voies et règles d'utilisation propres."
+        ],
+        "explanation": "Ne pas avaler une ampoule ni convertir les doses par analogie avec un comprimé.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_048",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 48,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles données imposent une vérification particulière avant le néfopam ? (3 réponses exactes)",
+    "choices": [
+      "Des antécédents de convulsions.",
+      "Un risque de rétention urinaire ou de glaucome par fermeture de l'angle.",
+      "L'âge avancé et les fonctions rénale ou hépatique.",
+      "Son caractère non opioïde, qui garantit une absence de confusion.",
+      "L'absence de nécessité de surveiller fréquence cardiaque et tolérance."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le risque convulsif figure dans les contre-indications concernées. B - Vrai : Les effets anticholinergiques comptent dans le choix. C - Vrai : Le terrain et les recommandations du RCP doivent être vérifiés. D - Faux : Un antalgique non opioïde peut provoquer des effets centraux. E - Faux : Tachycardie et autres effets nécessitent une vigilance adaptée.",
+    "flashcards": [
+      {
+        "front": "Quels effets du néfopam sont particulièrement utiles à repérer chez la personne âgée ?",
+        "answers": [
+          "Confusion, vertiges, tachycardie et rétention urinaire, notamment."
+        ],
+        "explanation": "Son caractère non opioïde ne le rend pas automatiquement adapté au sujet âgé.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_049",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 49,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur le tramadol sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Il a une action opioïde et monoaminergique.",
+      "Il ne peut pas entraîner de dépression respiratoire.",
+      "Toutes ses formulations ont un plafond identique sans adaptation.",
+      "Un traitement prolongé se stoppe toujours brutalement sans avis.",
+      "Des convulsions et un syndrome sérotoninergique sont possibles."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Il agit aussi sur les recaptures de sérotonine et noradrénaline. B - Faux : C'est un opioïde qui expose à des risques respiratoires. C - Faux : Présentation, âge et terrain modifient les règles. D - Faux : Une stratégie médicale peut être nécessaire pour l'arrêt. E - Vrai : Les interactions doivent être vérifiées.",
+    "flashcards": [
+      {
+        "front": "Pourquoi vérifier les associations avec le tramadol ?",
+        "answers": [
+          "Pour rechercher notamment les interactions sérotoninergiques et le cumul de dépression du système nerveux central."
+        ],
+        "explanation": "Surveiller aussi vigilance, respiration, efficacité et tolérance.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_050",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 50,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles affirmations concernant la codéine sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Elle est utilisable sans restriction pendant l'allaitement.",
+      "Elle peut se trouver dans une association contenant du paracétamol.",
+      "La même dose produit le même effet chez tout le monde.",
+      "L'absence de soulagement autorise à doubler soi-même la dose.",
+      "Elle est partiellement transformée en morphine par CYP2D6."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : La codéine y est contre-indiquée. B - Vrai : Le cumul de cette substance doit être calculé. C - Faux : Le métabolisme et le terrain varient. D - Faux : Une adaptation ne se fait pas sans cadre. E - Vrai : La variabilité enzymatique peut modifier la réponse.",
+    "flashcards": [
+      {
+        "front": "Pourquoi la réponse à la codéine peut-elle varier ?",
+        "answers": [
+          "Sa transformation partielle en morphine dépend notamment de l'activité de CYP2D6."
+        ],
+        "explanation": "Une inefficacité ou une toxicité inhabituelle impose une évaluation et une transmission.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_051",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 51,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "easy",
+    "question": "Quelles associations pharmacologiques sont correctes ? (3 réponses exactes)",
+    "choices": [
+      "Naloxone : antagoniste opioïde.",
+      "Morphine : agoniste opioïde.",
+      "Morphine : antagoniste des récepteurs μ.",
+      "Naloxone : antidote du paracétamol.",
+      "Narcan : nom de spécialité de naloxone."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Elle peut être utilisée pour certains surdosages selon le cadre. B - Vrai : Elle active principalement les récepteurs μ. C - Faux : Elle les active au lieu de les bloquer. D - Faux : Cet antidote est la N-acétylcystéine. E - Vrai : Ce n'est pas une troisième famille pharmacologique.",
+    "flashcards": [
+      {
+        "front": "Comment distinguer morphine, naloxone et Narcan ?",
+        "answers": [
+          "Morphine : agoniste opioïde. Naloxone : antagoniste opioïde. Narcan : spécialité de naloxone."
+        ],
+        "explanation": "Cette distinction corrige la confusion entre activation et blocage des récepteurs.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_052",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 52,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles surveillances sont importantes sous morphine ? (3 réponses exactes)",
+    "choices": [
+      "Transit, nausées et rétention urinaire.",
+      "Respiration et réveillabilité.",
+      "La seule saturation en oxygène suffit à toute la surveillance.",
+      "Une douleur soulagée prouve l'absence d'effet indésirable.",
+      "Fonction rénale et autres dépresseurs centraux."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Les effets indésirables ne sont pas seulement respiratoires. B - Vrai : Fréquence, amplitude et vigilance aident à repérer une toxicité. C - Faux : Elle ne décrit pas toute la ventilation ni la sédation. D - Faux : Efficacité et tolérance doivent être évaluées séparément. E - Vrai : Accumulation et interactions peuvent augmenter les risques.",
+    "flashcards": [
+      {
+        "front": "Pourquoi la SpO₂ seule ne suffit-elle pas sous opioïde ?",
+        "answers": [
+          "Elle ne renseigne pas à elle seule toute la ventilation ni la profondeur de sédation."
+        ],
+        "explanation": "Observer aussi respiration, vigilance, réveillabilité et contexte clinique.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_053",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 53,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Une personne sous opioïde est très somnolente et respire lentement. Quelles actions sont prioritaires ? (3 réponses exactes)",
+    "choices": [
+      "Redonner un bolus pour prévenir le retour de la douleur.",
+      "Poursuivre la surveillance après une éventuelle naloxone.",
+      "Alerter immédiatement et sécuriser la respiration selon le cadre d'urgence.",
+      "Appliquer le protocole adapté et surveiller de façon rapprochée.",
+      "La laisser dormir jusqu'à la prochaine relève."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : La sécurité respiratoire est prioritaire. B - Vrai : Son action peut être plus courte que celle de l'opioïde. C - Vrai : Bradypnée et baisse de conscience sont des signes de gravité. D - Vrai : La conduite peut inclure la suspension de l'administration en cause. E - Faux : Cela peut retarder la prise en charge d'une dépression respiratoire.",
+    "flashcards": [
+      {
+        "front": "Que faire devant somnolence excessive et bradypnée sous opioïde ?",
+        "answers": [
+          "Alerte immédiate, sécurisation respiratoire et conduite du protocole de surdosage."
+        ],
+        "explanation": "La surveillance reste nécessaire après naloxone en raison d'une possible réapparition des effets opioïdes.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_054",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 54,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles conditions correspondent à une PCA standard ? (2 réponses exactes)",
+    "choices": [
+      "Le patient comprend l'utilisation et appuie lui-même.",
+      "L'IDE modifie librement les réglages pour diminuer les demandes.",
+      "Produit, concentration, bolus et verrouillage correspondent à la prescription.",
+      "La famille appuie quand le patient dort.",
+      "Un débit continu est obligatoire dans toute PCA."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : La PCA repose sur son contrôle du bolus. B - Faux : Les adaptations restent dans le cadre prescrit ou autorisé. C - Vrai : Le programme et le circuit sont vérifiés. D - Faux : Elle ne doit pas se substituer à lui en PCA standard. E - Faux : Il peut exister dans certains contextes mais n'est pas systématique.",
+    "flashcards": [
+      {
+        "front": "Qui doit appuyer sur le bouton d'une PCA standard ?",
+        "answers": [
+          "Le patient lui-même, après information et vérification de sa compréhension."
+        ],
+        "explanation": "Si une analgésie contrôlée par soignant est nécessaire, elle relève d'un autre cadre.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_055",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 55,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Quelles propositions décrivent la période de verrouillage d'une PCA ? (2 réponses exactes)",
+    "choices": [
+      "Le verrouillage rend tout surdosage impossible.",
+      "Il supprime la nécessité de surveiller vigilance et respiration.",
+      "Les demandes et doses délivrées doivent être analysées avec le soulagement.",
+      "Un appui pendant le verrouillage ne délivre pas de nouveau bolus.",
+      "Il a une durée universelle identique pour tous les patients."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Programmation erronée, accumulation et interactions restent possibles. B - Faux : La surveillance demeure indispensable. C - Vrai : Un grand nombre de demandes appelle une analyse clinique et technique. D - Vrai : La pompe applique l'intervalle programmé. E - Faux : Le réglage dépend de la prescription et du contexte.",
+    "flashcards": [
+      {
+        "front": "Le verrouillage d'une PCA élimine-t-il le risque respiratoire ?",
+        "answers": [
+          "Non. Il limite les bolus trop rapprochés mais ne supprime pas tous les risques."
+        ],
+        "explanation": "Surveiller le patient, la programmation, le circuit et les doses réellement délivrées.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_056",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 56,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur les co-antalgiques sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Certains antiépileptiques peuvent traiter une douleur neuropathique.",
+      "Ils remplacent toute évaluation fonctionnelle.",
+      "Leur prescription prouve une douleur imaginaire.",
+      "Certains antidépresseurs peuvent être prescrits à visée antalgique.",
+      "Leur effet est nécessairement immédiat et identique pour tous."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Leur emploi ne signifie pas forcément épilepsie. B - Faux : Douleur, sommeil, fonction et tolérance doivent être suivis. C - Faux : Ils peuvent agir sur un mécanisme douloureux réel. D - Vrai : Leur emploi ne signifie pas forcément dépression. E - Faux : Il peut être progressif et variable.",
+    "flashcards": [
+      {
+        "front": "La prescription d'un antidépresseur pour la douleur prouve-t-elle une dépression ?",
+        "answers": [
+          "Non. Certains antidépresseurs ont une indication antalgique, notamment neuropathique."
+        ],
+        "explanation": "Expliquer l'objectif réel du traitement aide à éviter les malentendus et favorise l'adhésion.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_057",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 57,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "medium",
+    "question": "Quelles vigilances concernent gabapentine ou prégabaline ? (2 réponses exactes)",
+    "choices": [
+      "Le score de douleur suffit à vérifier leur tolérance.",
+      "Somnolence et vertiges.",
+      "L'arrêt systématique brutal dès que la douleur baisse.",
+      "Fonction rénale et interactions selon le produit.",
+      "L'absence de risque puisqu'il ne s'agit pas de morphine."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Fonction, vigilance et autres effets doivent être suivis. B - Vrai : Ces effets peuvent favoriser les chutes. C - Faux : Toute modification doit être encadrée. D - Vrai : Des adaptations et précautions peuvent être nécessaires. E - Faux : Une autre famille n'est pas dénuée d'effets graves.",
+    "flashcards": [
+      {
+        "front": "Quels effets des gabapentinoïdes peuvent favoriser une chute ?",
+        "answers": [
+          "Somnolence et vertiges, notamment."
+        ],
+        "explanation": "La fonction rénale et les associations doivent aussi être vérifiées.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_058",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 58,
+    "theme": "Sécurité des antalgiques",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur les traitements locaux et les co-antalgiques sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Un corticoïde est systématique dans toute neuropathie.",
+      "Un traitement local dispense de suivre efficacité et tolérance.",
+      "Le choix dépend du territoire, du terrain et du bénéfice-risque.",
+      "Une recommandation neuropathique s'applique à toute douleur chronique primaire.",
+      "Lidocaïne ou capsaïcine peuvent être indiquées dans certaines douleurs neuropathiques périphériques localisées."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Son usage dépend d'indications précises. B - Faux : Il doit être réévalué comme toute intervention. C - Vrai : Le traitement est adapté à la situation. D - Faux : Les mécanismes et indications doivent être distingués. E - Vrai : Leurs indications ne sont pas universelles.",
+    "flashcards": [
+      {
+        "front": "Les traitements locaux neuropathiques conviennent-ils à toute douleur chronique ?",
+        "answers": [
+          "Non. Ils répondent à des indications précises, notamment certaines douleurs périphériques localisées."
+        ],
+        "explanation": "Le caractère chronique ne suffit pas à choisir un médicament neuropathique.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_059",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 59,
+    "theme": "Prévenir les douleurs des soins",
+    "difficulty": "easy",
+    "question": "Que préparer avant un soin potentiellement douloureux ? (3 réponses exactes)",
+    "choices": [
+      "Promettre une absence certaine de douleur.",
+      "Le matériel et l'installation pour limiter les gestes inutiles.",
+      "Attendre la fin du geste pour rechercher toute douleur.",
+      "Une explication compréhensible et l'accord de la personne.",
+      "Une évaluation et une stratégie antalgique adaptée."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Une promesse irréaliste peut altérer la confiance. B - Vrai : Une organisation préparée réduit les contraintes. C - Faux : L'évaluation commence avant le soin. D - Vrai : L'information et la participation font partie du soin. E - Vrai : L'anticipation peut associer plusieurs moyens.",
+    "flashcards": [
+      {
+        "front": "Que signifie anticiper une douleur de soin ?",
+        "answers": [
+          "Évaluer avant le geste et préparer avec le patient une stratégie de soulagement et d'accompagnement."
+        ],
+        "explanation": "Prévoir aussi installation, matériel, délai d'action si un traitement est indiqué et possibilité de pause.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_060",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 60,
+    "theme": "Prévenir les douleurs des soins",
+    "difficulty": "medium",
+    "question": "Pendant un soin, quelles attitudes sont adaptées ? (3 réponses exactes)",
+    "choices": [
+      "Poursuivre systématiquement malgré une altération de conscience.",
+      "Surveiller les signes d'intolérance et réévaluer.",
+      "Finir au plus vite malgré un refus sans réévaluer la situation.",
+      "Adapter rythme et installation.",
+      "Respecter un signal de pause convenu."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il faut sécuriser et alerter selon la gravité. B - Vrai : Une aggravation ne doit pas être banalisée. C - Faux : Le refus et l'inconfort appellent une adaptation. D - Vrai : La douleur et les préférences guident les ajustements. E - Vrai : Cela préserve une possibilité de contrôle pour la personne.",
+    "flashcards": [
+      {
+        "front": "Quel est l'intérêt d'un signal de pause pendant un soin ?",
+        "answers": [
+          "Permettre au patient de garder du contrôle et d'ajuster le rythme du soin."
+        ],
+        "explanation": "Le signal doit être expliqué puis respecté.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_061",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 61,
+    "theme": "Prévenir les douleurs des soins",
+    "difficulty": "easy",
+    "question": "Quelles propositions sur le MEOPA sont exactes ? (3 réponses exactes)",
+    "choices": [
+      "Il correspond à une anesthésie générale obligatoire.",
+      "Il peut être utilisé pour certains actes douloureux courts selon indication et protocole.",
+      "Le contact verbal, la respiration et la conscience sont surveillés.",
+      "C'est un mélange équimolaire d'oxygène et de protoxyde d'azote.",
+      "Sa composition dispense de vérifier les contre-indications."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il s'utilise chez un patient conscient en ventilation spontanée dans les situations indiquées. B - Vrai : Le patient doit être adapté aux conditions d'emploi. C - Vrai : L'efficacité et la tolérance sont réévaluées. D - Vrai : Il contient 50 % de chaque gaz. E - Faux : Le RCP et les conditions d'utilisation restent essentiels.",
+    "flashcards": [
+      {
+        "front": "Que signifie MEOPA ?",
+        "answers": [
+          "Mélange équimolaire oxygène-protoxyde d'azote : 50 % de chaque gaz."
+        ],
+        "explanation": "Son utilisation exige indication, protocole, matériel adapté et surveillance du patient.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_062",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 62,
+    "theme": "Prévenir les douleurs des soins",
+    "difficulty": "medium",
+    "question": "Avant un topique lidocaïne-prilocaïne, quelles vérifications sont nécessaires ? (3 réponses exactes)",
+    "choices": [
+      "Contre-indications et risque de méthémoglobinémie selon le contexte.",
+      "Âge, dose, surface et durée d'application.",
+      "État cutané, site et délai nécessaire avant le geste.",
+      "Appliquer un délai identique pour tous les produits et tous les actes.",
+      "Supprimer l'accompagnement puisque la peau est anesthésiée."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le caractère local ne supprime pas les risques. B - Vrai : Ces paramètres conditionnent la sécurité. C - Vrai : Le produit et l'acte déterminent les modalités. D - Faux : Le délai dépend de la spécialité et de l'indication. E - Faux : Installation, information et observation restent nécessaires.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas appliquer un topique anesthésiant sans vérifier surface et durée ?",
+        "answers": [
+          "Parce que dose absorbée et sécurité dépendent notamment de ces paramètres."
+        ],
+        "explanation": "Consulter les règles du produit, du site, de l'âge et de l'acte prévu.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_063",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 63,
+    "theme": "Approches non médicamenteuses",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent des moyens non médicamenteux adaptés ? (3 réponses exactes)",
+    "choices": [
+      "Leur effet doit être réévalué.",
+      "Respiration, musique ou distraction peuvent être proposées avec l'accord du patient.",
+      "Toute technique convient à tous les patients.",
+      "Leur utilisation autorise à retarder une alerte devant un signe de gravité.",
+      "Une installation antalgique et une mobilisation fractionnée peuvent être utiles."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Une technique non médicamenteuse est aussi une intervention de soin. B - Vrai : La préférence et l'accessibilité comptent. C - Faux : Indications, compétences et préférences doivent être prises en compte. D - Faux : Elles ne doivent pas masquer une urgence. E - Vrai : Le choix dépend du terrain et du besoin.",
+    "flashcards": [
+      {
+        "front": "Comment choisir un moyen non médicamenteux contre la douleur ?",
+        "answers": [
+          "Retenir un moyen indiqué, compris, accepté et réalisable pour cette personne."
+        ],
+        "explanation": "Évaluer son effet et sa tolérance, sans retarder les autres soins nécessaires.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_064",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 64,
+    "theme": "Approches non médicamenteuses",
+    "difficulty": "hard",
+    "question": "Quelles affirmations sur placebo, nocebo et relation de soin sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Un effet placebo prouve qu'aucun médicament n'agit pharmacologiquement.",
+      "Une information honnête aide à préserver la confiance.",
+      "Les attentes et le contexte peuvent modifier le vécu douloureux.",
+      "Tromper le patient est nécessaire pour le rassurer.",
+      "Un effet contextuel prouve que la douleur était imaginaire."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Les effets contextuels et pharmacologiques peuvent coexister. B - Vrai : Elle évite les promesses irréalistes. C - Vrai : Ils peuvent favoriser ou défavoriser le soulagement ressenti. D - Faux : L'accompagnement repose sur une information adaptée et honnête. E - Faux : Une modulation du vécu ne réfute pas la douleur.",
+    "flashcards": [
+      {
+        "front": "Qu'appelle-t-on effet nocebo dans le contexte de la douleur ?",
+        "answers": [
+          "Une influence défavorable des attentes et du contexte sur le vécu ou les effets ressentis."
+        ],
+        "explanation": "Informer de façon compréhensible sans dramatisation ni fausse promesse.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_065",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 65,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Quel objectif permet de suivre un bénéfice fonctionnel après chirurgie ? (1 réponse exacte)",
+    "choices": [
+      "Ne plus poser de question sur la douleur.",
+      "Pouvoir tousser et se redresser plus facilement avec une tolérance satisfaisante.",
+      "Obtenir seulement une baisse du score au repos.",
+      "Dormir sans possibilité d'être réveillé.",
+      "Atteindre obligatoirement zéro douleur avant toute décision."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Une absence d'évaluation ne mesure aucun bénéfice. B - Vrai : L'objectif relie soulagement et activité observable. C - Faux : Cela ne démontre pas une amélioration à la mobilisation. D - Faux : Une sédation profonde peut être un signe de gravité. E - Faux : L'objectif se construit selon la personne et la situation.",
+    "flashcards": [
+      {
+        "front": "Qu'est-ce qu'un objectif fonctionnel dans la prise en charge de la douleur ?",
+        "answers": [
+          "Une activité concrète à améliorer avec la personne : marcher, tousser, dormir ou se mobiliser, par exemple."
+        ],
+        "explanation": "Le bénéfice doit être observé avec sa tolérance, pas seulement avec un score.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_066",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 66,
+    "theme": "Situations cliniques",
+    "difficulty": "medium",
+    "question": "M. Martin est à J0 d'une chirurgie digestive. Il dit « ça va, j'ai surtout mal quand je bouge » et serre les dents au changement de position. Quelles interprétations sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Le « ça va » permet d'exclure toute douleur.",
+      "Il existe un signe verbalisé de douleur au mouvement.",
+      "Son comportement prouve une simulation.",
+      "On peut déduire directement une EN à 8/10.",
+      "Le serrement des dents est un signe observable."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Il faut explorer ce qu'il décrit et observe. B - Vrai : Le « ça va » n'annule pas la suite de son propos. C - Faux : Une discordance apparente demande une exploration respectueuse. D - Faux : Aucune intensité chiffrée n'est fournie dans ces données. E - Vrai : Il complète l'entretien sans donner un score chiffré.",
+    "flashcards": [
+      {
+        "front": "Comment distinguer signe verbalisé et signe observable de douleur ?",
+        "answers": [
+          "Verbalisé : ce que la personne exprime. Observable : ce que le soignant constate dans son comportement ou son état."
+        ],
+        "explanation": "Les deux sources se complètent sans autoriser un score inventé.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_067",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 67,
+    "theme": "Situations cliniques",
+    "difficulty": "hard",
+    "question": "M. Martin dit que la douleur est « moins forte allongé » mais reste présente. Quelles propositions sont justes ? (2 réponses exactes)",
+    "choices": [
+      "Une douleur dite diffuse renseigne uniquement sa durée.",
+      "Le mot « tire » fournit directement un score d'intensité.",
+      "Il faut préciser les moments, mouvements et facteurs calmants.",
+      "Une variation d'intensité prouve que la douleur est intermittente.",
+      "Une douleur peut être continue tout en variant d'intensité."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Elle décrit d'abord sa répartition ou localisation. B - Faux : Il décrit la qualité de la douleur. C - Vrai : Ces informations complètent TILT. D - Faux : Il faut savoir si la douleur disparaît réellement entre les épisodes. E - Vrai : Continue ne signifie pas constante en intensité.",
+    "flashcards": [
+      {
+        "front": "Une douleur continue a-t-elle toujours une intensité constante ?",
+        "answers": [
+          "Non. Elle peut rester présente tout en augmentant ou diminuant selon les moments et les mouvements."
+        ],
+        "explanation": "Préciser présence de fond, fluctuations, déclencheurs et périodes éventuelles sans douleur.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_068",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 68,
+    "theme": "Situations cliniques",
+    "difficulty": "hard",
+    "question": "M. Martin souhaite aller aux toilettes et craint la douleur. Quelles actions sont adaptées ? (3 réponses exactes)",
+    "choices": [
+      "Si le besoin est urgent, rechercher avec lui une solution de proximité adaptée.",
+      "Le faire marcher immédiatement sans aide pour tester sa volonté.",
+      "Si le besoin permet d'attendre, anticiper une antalgie prescrite et son délai d'action.",
+      "Vérifier les conditions du lever et la tolérance clinique.",
+      "Attendre obligatoirement le même délai pour tout médicament et toute situation."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Il faut limiter déplacement et contraintes sans l'abandonner. B - Faux : La sécurité et l'état postopératoire doivent être évalués. C - Vrai : La préparation doit rester compatible avec l'urgence du besoin. D - Vrai : Autorisation, vigilance, vertiges et risque de chute comptent. E - Faux : Les produits, voies et besoins diffèrent.",
+    "flashcards": [
+      {
+        "front": "Comment concilier besoin urgent d'aller aux toilettes et douleur postopératoire ?",
+        "answers": [
+          "Évaluer la sécurité du lever et rechercher avec la personne une solution adaptée, éventuellement de proximité."
+        ],
+        "explanation": "L'antalgie prescrite, l'accompagnement et l'installation sont coordonnés selon le délai disponible.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_069",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 69,
+    "theme": "Situations cliniques",
+    "difficulty": "hard",
+    "question": "Après traitement, M. Martin rapporte 2/10 au repos et 6/10 au lever, contre 7/10 au mouvement auparavant. Quelles conclusions sont adaptées ? (3 réponses exactes)",
+    "choices": [
+      "La douleur au mouvement persiste malgré une amélioration modeste de 7 à 6/10.",
+      "Il faut vérifier délai, prises et stratégie de mobilisation puis transmettre si l'objectif reste insuffisant.",
+      "Le résultat au repos ne suffit pas à démontrer une bonne antalgie au lever.",
+      "On peut chiffrer l'amélioration au repos sans score initial de repos.",
+      "Le passage de 7 à 2 prouve cinq points gagnés au même mouvement."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le contexte comparable est celui du mouvement. B - Vrai : La réévaluation guide la suite. C - Vrai : Il faut suivre la fonction et la tolérance. D - Faux : Cette valeur initiale n'est pas fournie. E - Faux : Il compare à tort mouvement et repos.",
+    "flashcards": [
+      {
+        "front": "Que conclure d'une EN basse au repos mais encore élevée au mouvement après traitement ?",
+        "answers": [
+          "Le soulagement reste incomplet pour la mobilisation."
+        ],
+        "explanation": "Comparer le même mouvement, vérifier traitement et délai, rechercher une cause nouvelle et transmettre pour adaptation.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_070",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 70,
+    "theme": "Situations cliniques",
+    "difficulty": "hard",
+    "question": "Après chirurgie, une douleur devient brutale et croissante avec difficulté respiratoire. Quelles actions sont prioritaires ? (2 réponses exactes)",
+    "choices": [
+      "Attribuer forcément la douleur à l'incision habituelle.",
+      "Se limiter à une technique de distraction.",
+      "Rechercher les signes de gravité et alerter immédiatement.",
+      "Sécuriser la personne et surveiller selon son état.",
+      "Attendre systématiquement la prochaine prise prescrite."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Une cause nouvelle doit être recherchée. B - Faux : Elle ne remplace pas la prise en charge d'une urgence. C - Vrai : Une complication ne doit pas être banalisée. D - Vrai : Le contexte guide les mesures urgentes. E - Faux : La dégradation exige une évaluation sans délai.",
+    "flashcards": [
+      {
+        "front": "Quels changements postopératoires imposent une alerte rapide ?",
+        "answers": [
+          "Douleur brutale, croissante ou discordante, difficulté respiratoire, altération de conscience, instabilité ou saignement, notamment."
+        ],
+        "explanation": "Une douleur postopératoire connue n'explique pas automatiquement une aggravation nouvelle.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_071",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 71,
+    "theme": "Situations cliniques",
+    "difficulty": "hard",
+    "question": "M. L. décrit des brûlures et décharges aux pieds, avec sommeil perturbé et marche diminuée. Quelles propositions sont adaptées ? (3 réponses exactes)",
+    "choices": [
+      "Examiner et transmettre l'état cutané, le territoire et les éventuels déficits selon ses compétences.",
+      "Attribuer automatiquement tout symptôme au diabète connu.",
+      "Suivre sommeil, marche et tolérance en plus du score.",
+      "Conclure que le score remplace l'examen des pieds.",
+      "Rechercher une composante neuropathique par une évaluation appropriée."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Une plaie ou un déficit récent peut modifier la priorité. B - Faux : Une cause nouvelle ou associée reste possible. C - Vrai : Le retentissement contribue au projet de soin. D - Faux : Le bilan clinique apporte d'autres informations. E - Vrai : Les qualificatifs orientent sans prouver seuls le diagnostic.",
+    "flashcards": [
+      {
+        "front": "Que transmettre devant une suspicion de douleur neuropathique des pieds ?",
+        "answers": [
+          "Qualificatifs, territoire, ancienneté, score et contexte, retentissement, état cutané et signes sensitifs ou moteurs."
+        ],
+        "explanation": "Présenter l'hypothèse comme une hypothèse et signaler rapidement toute aggravation nouvelle.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_072",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 72,
+    "theme": "Évaluer et réévaluer",
+    "difficulty": "medium",
+    "question": "Mme R., 86 ans, dit avoir mal depuis des mois. Son fils estime qu'elle « se plaint toujours ». Quelles attitudes sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Déduire qu'elle souffre forcément plus qu'une personne qui parle peu.",
+      "Recueillir les observations du proche sur les changements habituels.",
+      "Conclure que la douleur est normale à son âge.",
+      "Écarter sa parole au profit de celle de son fils.",
+      "Accueillir sa plainte et caractériser la douleur."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : La fréquence des plaintes ne compare pas les intensités. B - Vrai : L'entourage peut apporter un complément utile. C - Faux : Le vieillissement ne justifie pas la banalisation. D - Faux : Le proche ne remplace pas une parole accessible. E - Vrai : Le récit de la personne reste central.",
+    "flashcards": [
+      {
+        "front": "Comment utiliser les propos d'un proche qui banalise une douleur âgée ?",
+        "answers": [
+          "Les recueillir comme des informations complémentaires sans invalider la plainte de la personne."
+        ],
+        "explanation": "Rechercher douleur, capacités, contexte et retentissement plutôt que juger la fréquence des plaintes.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_073",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 73,
+    "theme": "TD3 - douleur aiguë et chronique",
+    "difficulty": "medium",
+    "question": "Mme Jeanne B., 82 ans, a une gonarthrose douloureuse depuis huit mois, habituellement cotée 4/10. Après une chute ce matin, le genou droit est coté 8/10. Quelles analyses sont justes ? (3 réponses exactes)",
+    "choices": [
+      "Un épisode aigu peut se superposer à la douleur chronique.",
+      "Le score à 8 prouve à lui seul une fracture.",
+      "L'outil et les conditions doivent être précisés avant de comparer les valeurs.",
+      "La chute impose de rechercher une nouvelle cause traumatique.",
+      "La chronicité autorise à ignorer la chute."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Les deux temporalités coexistent. B - Faux : L'intensité ne détermine pas seule le diagnostic. C - Vrai : Le contexte de mesure reste nécessaire. D - Vrai : La gonarthrose connue ne suffit pas à expliquer l'aggravation. E - Faux : Un événement récent modifie l'évaluation.",
+    "flashcards": [
+      {
+        "front": "Pourquoi réévaluer une gonarthrose devenue plus douloureuse après une chute ?",
+        "answers": [
+          "Parce qu'une lésion aiguë peut se surajouter à la douleur chronique."
+        ],
+        "explanation": "Ne pas attribuer automatiquement l'aggravation à l'arthrose déjà connue.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_074",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 74,
+    "theme": "TD3 - douleur aiguë et chronique",
+    "difficulty": "hard",
+    "question": "Après la chute de Mme Jeanne B., quelles données sont utiles au recueil ? (3 réponses exactes)",
+    "choices": [
+      "Uniquement l'ancien diagnostic de gonarthrose.",
+      "Uniquement la préférence de la famille pour un antalgique.",
+      "Traitements pris, notamment ceux augmentant le risque de saignement.",
+      "Circonstances de chute, malaise et éventuel choc crânien.",
+      "Gonflement, déformation, appui et état du membre selon les compétences."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il ne décrit pas les conséquences de la chute. B - Faux : L'état clinique et le cadre thérapeutique restent nécessaires. C - Vrai : Ils modifient les risques après traumatisme. D - Vrai : L'évaluation ne se limite pas au genou. E - Vrai : Ces signes peuvent orienter l'urgence de l'avis.",
+    "flashcards": [
+      {
+        "front": "Quels éléments rechercher après une chute chez une personne douloureuse chronique ?",
+        "answers": [
+          "Circonstances, autres zones atteintes, état général, signes locaux et traitements à risque."
+        ],
+        "explanation": "Comparer avec l'état habituel tout en recherchant une complication aiguë.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_075",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 75,
+    "theme": "TD3 - douleur aiguë et chronique",
+    "difficulty": "hard",
+    "question": "Mme Jeanne B. ne peut pas prendre appui après sa chute et présente une forte douleur du genou. Quelle conduite est adaptée ? (1 réponse exacte)",
+    "choices": [
+      "Attendre plusieurs jours puisque l'arthrose est ancienne.",
+      "Imposer une marche rapide pour vérifier qu'il ne s'agit que de peur.",
+      "Déduire de l'absence de plainte au repos que l'appui est sans risque.",
+      "Massager vigoureusement le genou avant toute évaluation.",
+      "Éviter les mobilisations forcées, sécuriser et organiser l'évaluation médicale."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Le changement aigu ne doit pas être banalisé. B - Faux : Cela peut aggraver une lésion. C - Faux : Le contexte au mouvement est différent. D - Faux : Le traumatisme non évalué impose de la prudence. E - Vrai : Une lésion traumatique doit être recherchée.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas tester la marche à tout prix après une chute douloureuse ?",
+        "answers": [
+          "Un traumatisme non évalué peut rendre la mobilisation forcée dangereuse."
+        ],
+        "explanation": "Incapacité d'appui, déformation ou douleur importante demandent protection et avis adapté.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_076",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 76,
+    "theme": "TD3 - retentissement",
+    "difficulty": "medium",
+    "question": "M. André L., 79 ans, a une lombalgie chronique à 6/10, dort mal, mange moins et a cessé la pétanque. Quelles dimensions faut-il explorer ? (3 réponses exactes)",
+    "choices": [
+      "Seulement le score, puisqu'il résume la qualité de vie.",
+      "Le retentissement physique et nutritionnel.",
+      "Le retentissement psychologique et social.",
+      "Le retentissement fonctionnel et les ressources disponibles.",
+      "Une dépression certaine sans autre évaluation."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Il ne décrit pas toutes les conséquences. B - Vrai : Sommeil, fatigue, alimentation et évolution sont à préciser. C - Vrai : Découragement, peurs, relations et sorties comptent. D - Vrai : Activités quotidiennes et aides orientent le projet. E - Faux : La perte d'intérêt impose une évaluation, pas un diagnostic automatique.",
+    "flashcards": [
+      {
+        "front": "Que recouvre le retentissement d'une douleur chronique ?",
+        "answers": [
+          "Ses conséquences physiques, psychologiques, sociales et fonctionnelles."
+        ],
+        "explanation": "Le score d'intensité ne décrit ni toutes les pertes d'activité ni les ressources disponibles.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_077",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 77,
+    "theme": "TD3 - retentissement",
+    "difficulty": "hard",
+    "question": "Quelles propositions distinguent les composantes de la douleur de ses conséquences ? (2 réponses exactes)",
+    "choices": [
+      "Un bilan de retentissement remplace toute description de douleur.",
+      "Les quatre composantes sont les quatre paliers OMS.",
+      "Sensorielle, émotionnelle, cognitive et comportementale décrivent l'expérience douloureuse.",
+      "Sommeil, relations et autonomie peuvent décrire son retentissement.",
+      "Un score d'intensité décrit entièrement la composante sociale."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Les deux bilans sont complémentaires. B - Faux : Les paliers classent des médicaments et ne sont pas ces dimensions. C - Vrai : Ces composantes se complètent. D - Vrai : Il faut explorer les conséquences dans la vie quotidienne. E - Faux : Il n'évalue pas à lui seul les relations ou l'isolement.",
+    "flashcards": [
+      {
+        "front": "Quelle différence entre composantes et retentissement de la douleur ?",
+        "answers": [
+          "Les composantes décrivent l'expérience ; le retentissement décrit ses conséquences sur la vie."
+        ],
+        "explanation": "Une évaluation globale relie ces deux angles plutôt que les confondre.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_078",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 78,
+    "theme": "TD3 - retentissement",
+    "difficulty": "medium",
+    "question": "Quel projet est le plus adapté à M. André L., qui souhaite retrouver des activités malgré sa lombalgie ? (1 réponse exacte)",
+    "choices": [
+      "Choisir l'objectif sans recueillir ses préférences.",
+      "Attendre uniquement un score nul avant tout projet d'activité.",
+      "Imposer immédiatement la reprise intégrale de ses activités antérieures.",
+      "Choisir avec lui une activité importante, un point de départ et un moment de bilan.",
+      "Promettre la disparition certaine de toute douleur en une journée."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A - Faux : Sa participation donne du sens au soin. B - Faux : Une activité adaptée peut faire partie du projet global. C - Faux : Il faut tenir compte des capacités et limites. D - Vrai : L'objectif doit être observable et réaliste. E - Faux : Le résultat n'est pas garanti.",
+    "flashcards": [
+      {
+        "front": "Comment construire un objectif de soin en douleur chronique ?",
+        "answers": [
+          "Avec la personne : activité importante, cible observable, aides nécessaires et date de réévaluation."
+        ],
+        "explanation": "Par exemple une courte sortie accompagnée, adaptée au point de départ et à la tolérance.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_079",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 79,
+    "theme": "TD3 - troubles cognitifs",
+    "difficulty": "hard",
+    "question": "Mme Madeleine P., 88 ans, habituellement calme, devient en quelques heures agitée, grimaçante aux mobilisations et moins communicante. Quelles interprétations sont adaptées ? (3 réponses exactes)",
+    "choices": [
+      "Il faut rechercher aussi d'autres causes de dégradation aiguë.",
+      "Ces seuls signes prouvent la localisation et l'étiologie exactes.",
+      "L'apparition récente doit être rapidement transmise pour évaluation.",
+      "Tout s'explique forcément par son trouble neurocognitif ancien.",
+      "Une douleur est possible même sans plainte explicite."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Infection, inconfort ou traitements peuvent se mêler. B - Faux : L'observation doit être complétée. C - Vrai : Le changement aigu peut être un signal clinique important. D - Faux : Une cause récente doit être recherchée. E - Vrai : Le lien avec les mouvements et le changement habituel sont utiles.",
+    "flashcards": [
+      {
+        "front": "Que signifie un changement aigu de comportement chez une personne âgée peu communicante ?",
+        "answers": [
+          "C'est un signal clinique à évaluer : douleur et autres causes peuvent être associées."
+        ],
+        "explanation": "Comparer à l'état habituel et transmettre rapidement les faits observés.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_080",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 80,
+    "theme": "TD3 - troubles cognitifs",
+    "difficulty": "medium",
+    "question": "Mme Madeleine P. répond « non, laissez-moi » à la toilette. Quelles démarches sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Multiplier les gestes douloureux pour obtenir une réaction.",
+      "Renoncer définitivement à toute évaluation.",
+      "Si l'auto-évaluation n'est pas fiable, utiliser une grille comportementale adaptée.",
+      "Approcher calmement avec une question courte et un outil simple si compris.",
+      "Interpréter le refus comme une preuve d'absence de douleur."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Les observations doivent éviter des stimulations inutiles. B - Faux : D'autres modalités peuvent être utilisées. C - Vrai : La cotation s'appuie sur les observations et les consignes. D - Vrai : Les capacités restantes doivent être recherchées. E - Faux : Un refus peut exprimer douleur, peur ou inconfort.",
+    "flashcards": [
+      {
+        "front": "Comment évaluer une douleur quand la personne refuse un soin et communique peu ?",
+        "answers": [
+          "Essayer une approche simple et calme, puis une grille validée si l'auto-évaluation n'est pas fiable."
+        ],
+        "explanation": "Respecter le refus, rechercher ses causes et adapter les observations et le soin.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_081",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 81,
+    "theme": "TD3 - troubles cognitifs",
+    "difficulty": "hard",
+    "question": "Une vignette décrit agitation et grimaces de Mme Madeleine sans cotation complète d'ALGOPLUS. Quelles propositions sont justes ? (2 réponses exactes)",
+    "choices": [
+      "L'équipe et les proches peuvent préciser le comportement habituel.",
+      "La grille remplace la recherche d'une cause.",
+      "On ne peut pas annoncer un score exact à partir de ces seuls éléments.",
+      "Le proche peut transformer directement une inquiétude en EN.",
+      "Deux mots évocateurs autorisent automatiquement un score de 5/5."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Cela complète l'observation actuelle. B - Faux : Cause, urgence et contexte restent à évaluer. C - Vrai : Il faut observer et coter les items de la grille. D - Faux : Une hétéro-évaluation suit ses propres consignes. E - Faux : Les domaines ne se déduisent pas arbitrairement d'un résumé.",
+    "flashcards": [
+      {
+        "front": "Pourquoi ne pas inventer un score à partir d'une vignette clinique ?",
+        "answers": [
+          "Parce que la cotation exige les observations prévues par les items de la grille."
+        ],
+        "explanation": "Les données narratives orientent l'évaluation sans fournir forcément tous les critères.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_082",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 82,
+    "theme": "TD3 - troubles cognitifs",
+    "difficulty": "medium",
+    "question": "Quelles interventions relationnelles et environnementales peuvent aider Mme Madeleine ? (3 réponses exactes)",
+    "choices": [
+      "Préserver repères et aides sensorielles en limitant le bruit.",
+      "Ignorer les refus pour terminer toute la toilette sans interruption.",
+      "Expliquer un geste à la fois et respecter son rythme.",
+      "Lui permettre de participer selon ses capacités et proposer des pauses.",
+      "Écarter toute préférence parce qu'elle a un trouble cognitif."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : L'environnement peut réduire l'inconfort. B - Faux : Il faut rechercher la cause et adapter la conduite. C - Vrai : Une consigne simple peut réduire l'incompréhension. D - Vrai : Cela préserve un contrôle et une coopération possibles. E - Faux : Ses capacités et choix accessibles restent à respecter.",
+    "flashcards": [
+      {
+        "front": "Comment préserver la participation d'une personne ayant un trouble cognitif pendant un soin ?",
+        "answers": [
+          "Expliquer simplement, procéder par étapes, respecter rythme et préférences et proposer des pauses."
+        ],
+        "explanation": "Un environnement calme et les aides sensorielles peuvent faciliter la compréhension.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_083",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 83,
+    "theme": "TD3 - médicaments et fragilité",
+    "difficulty": "hard",
+    "question": "Mme B., 84 ans, reçoit un « antalgique de palier I » dont le nom n'est pas donné. Elle a une insuffisance rénale et une somnolence. Quelles propositions sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Identifier la molécule, la présentation et la prescription avant de conclure.",
+      "Déduire qu'elle reçoit forcément du paracétamol à 1 g.",
+      "Attribuer avec certitude la somnolence à l'antalgique.",
+      "Considérer tout palier I comme sans danger rénal.",
+      "Vérifier les autres traitements et les prises réelles."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Vrai : Le palier ne donne pas la DCI ni les modalités. B - Faux : Cette information n'est pas fournie. C - Faux : La causalité doit être évaluée. D - Faux : Les molécules ont des profils de risque différents. E - Vrai : Interactions, doublons ou autre cause de somnolence sont possibles.",
+    "flashcards": [
+      {
+        "front": "Pourquoi connaître la DCI avant d'évaluer le risque d'un palier I ?",
+        "answers": [
+          "Parce que le palier ne précise ni la molécule ni ses contre-indications et effets indésirables."
+        ],
+        "explanation": "Paracétamol, AINS et néfopam n'ont pas les mêmes risques.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_084",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 84,
+    "theme": "TD3 - médicaments et fragilité",
+    "difficulty": "hard",
+    "question": "Chez Mme B., 84 ans, insuffisante rénale, peu alimentée et polymédiquée, quelles vérifications sont pertinentes ? (3 réponses exactes)",
+    "choices": [
+      "Absence de contrôle si la prescription date de plusieurs semaines.",
+      "Application automatique du plafond adulte standard.",
+      "Vigilance et sécurité de la déglutition.",
+      "Poids, nutrition, hydratation et fonctions d'élimination.",
+      "Cumul des substances, interactions et automédication."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : L'état clinique et les traitements peuvent avoir évolué. B - Faux : Un terrain fragile nécessite un raisonnement individualisé. C - Vrai : L'état actuel peut rendre une administration incertaine. D - Vrai : Ils peuvent modifier le bénéfice-risque et les adaptations. E - Vrai : Les prises hors dossier doivent aussi être recherchées.",
+    "flashcards": [
+      {
+        "front": "Quels éléments de fragilité vérifier avant un antalgique chez la personne âgée ?",
+        "answers": [
+          "Poids, nutrition, hydratation, fonctions rénale et hépatique, traitements associés et état de vigilance."
+        ],
+        "explanation": "La prescription doit être rapprochée du terrain actuel, pas seulement de l'âge.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_085",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 85,
+    "theme": "TD3 - médicaments et fragilité",
+    "difficulty": "hard",
+    "question": "Mme B. présente une somnolence inhabituelle avant l'administration prévue. Quelles actions sont adaptées ? (2 réponses exactes)",
+    "choices": [
+      "Déduire que l'absence de plainte signifie une guérison.",
+      "Administrer sans contrôle parce que le médicament est de palier I.",
+      "Évaluer l'éveil, la respiration et l'évolution récente.",
+      "Attendre uniquement le prochain horaire de soin en cas de difficulté respiratoire.",
+      "Sécuriser le risque de chute et clarifier une administration dont la sécurité est incertaine."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : Une communication diminuée peut masquer la douleur. B - Faux : Le palier ne garantit pas la sécurité actuelle. C - Vrai : Une dégradation aiguë peut demander une alerte immédiate. D - Faux : Une difficulté respiratoire exige une prise en charge urgente. E - Vrai : La prise ne doit pas être automatique.",
+    "flashcards": [
+      {
+        "front": "Que faire devant une somnolence inhabituelle avant un antalgique ?",
+        "answers": [
+          "Évaluer éveil et respiration, sécuriser la personne et clarifier la situation avant une prise incertaine."
+        ],
+        "explanation": "Une baisse de conscience ou une difficulté respiratoire impose une alerte immédiate.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_086",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 86,
+    "theme": "TD3 - médicaments et fragilité",
+    "difficulty": "medium",
+    "question": "Quelles associations entre produit et vigilance sont pertinentes chez la personne âgée ? (3 réponses exactes)",
+    "choices": [
+      "AINS : sécurité garantie par le palier I.",
+      "Paracétamol : cumul quotidien, poids et nutrition.",
+      "Néfopam : confusion, tachycardie et rétention urinaire.",
+      "AINS : rein, hydratation, tube digestif et saignement.",
+      "Paracétamol : absence de risque en cas de doublon."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : La classification ne supprime pas les effets indésirables. B - Vrai : Le risque hépatique et les adaptations doivent être vérifiés. C - Vrai : Son usage demande une vérification du RCP et du terrain. D - Vrai : Les associations peuvent accroître ces risques. E - Faux : Le cumul peut provoquer un surdosage.",
+    "flashcards": [
+      {
+        "front": "Pourquoi adapter la surveillance à la molécule et pas seulement au palier ?",
+        "answers": [
+          "Les effets indésirables et précautions diffèrent entre médicaments d'un même palier."
+        ],
+        "explanation": "Identifier le produit, puis cibler la surveillance sans oublier l'état général.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_087",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 87,
+    "theme": "Projet global et coordination",
+    "difficulty": "medium",
+    "question": "Quelles actions composent un projet global de soin en douleur chronique ? (3 réponses exactes)",
+    "choices": [
+      "Associer traitement prescrit et moyens non médicamenteux adaptés.",
+      "Définir les rôles et coordonner les intervenants selon les besoins.",
+      "Oublier le relais domicile ou institution dès que le score baisse.",
+      "Réduire le plan à une succession de doses croissantes.",
+      "Associer la personne et, avec son accord quand possible, ses proches."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le projet peut être multimodal. B - Vrai : Les actions doivent être cohérentes et suivies. C - Faux : La continuité du suivi reste nécessaire. D - Faux : La fonction et le contexte demandent d'autres leviers. E - Vrai : Participation et ressources guident le projet.",
+    "flashcards": [
+      {
+        "front": "Que signifie une approche multimodale de la douleur ?",
+        "answers": [
+          "Associer de façon raisonnée plusieurs moyens pharmacologiques et non pharmacologiques adaptés à la personne."
+        ],
+        "explanation": "Coordonner les intervenants et réévaluer le bénéfice, la fonction et la tolérance.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_088",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 88,
+    "theme": "Comprendre la douleur",
+    "difficulty": "hard",
+    "question": "Quelles affirmations décrivent le cercle d'entretien d'une douleur chronique ? (3 réponses exactes)",
+    "choices": [
+      "Le cercle dispense de rechercher une nouvelle cause organique.",
+      "Douleur, fatigue et mauvais sommeil peuvent se renforcer.",
+      "Peur du mouvement et évitement peuvent favoriser l'inactivité.",
+      "Toutes les personnes passent obligatoirement par les mêmes étapes.",
+      "L'activité adaptée et fractionnée peut aider à agir sur plusieurs maillons."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Faux : Une aggravation demande toujours un raisonnement clinique. B - Vrai : Le projet doit explorer ces interactions. C - Vrai : Ces facteurs peuvent réduire les capacités et la confiance. D - Faux : Le modèle décrit des influences possibles. E - Vrai : Elle s'intègre à une stratégie personnalisée.",
+    "flashcards": [
+      {
+        "front": "Qu'appelle-t-on déconditionnement dans le contexte d'une douleur chronique ?",
+        "answers": [
+          "Une diminution des capacités physiques liée notamment à une inactivité prolongée."
+        ],
+        "explanation": "L'activité adaptée et graduée se construit selon le terrain, les objectifs et la tolérance.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_089",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 89,
+    "theme": "Traçabilité et relais",
+    "difficulty": "medium",
+    "question": "Que vérifier lors du relais ou de la sortie d'une personne traitée pour douleur ? (3 réponses exactes)",
+    "choices": [
+      "Les signes d'alerte et la conduite à tenir.",
+      "Sa compréhension des prises, des associations et des horaires.",
+      "Le suivi prévu et les objectifs fonctionnels.",
+      "La simple remise d'une ordonnance suffit toujours.",
+      "Une amélioration aujourd'hui rend tout suivi inutile."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A - Vrai : Le patient doit savoir quand et comment demander un avis. B - Vrai : Les erreurs de cumul doivent être prévenues. C - Vrai : La réévaluation doit se poursuivre après la sortie. D - Faux : La compréhension et l'organisation du relais doivent être vérifiées. E - Faux : Le bénéfice et la tolérance peuvent évoluer.",
+    "flashcards": [
+      {
+        "front": "Quatre points essentiels à vérifier avant un relais de traitement antalgique ?",
+        "answers": [
+          "Compréhension des prises, tolérance, signes d'alerte et suivi prévu."
+        ],
+        "explanation": "Faire reformuler les informations utiles et préciser qui contacter selon l'évolution.",
+        "kind": "authored"
+      }
+    ]
+  },
+  {
+    "id": "douleur_global_20261108_090",
+    "courseId": "douleur",
+    "course": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "number": 90,
+    "theme": "Traçabilité et relais",
+    "difficulty": "medium",
+    "question": "Un effet indésirable médicamenteux est suspecté. Quelles propositions sont exactes ? (2 réponses exactes)",
+    "choices": [
+      "Une déclaration dispense de surveiller ensuite le patient.",
+      "Un doute interdit toute transmission.",
+      "La déclaration de pharmacovigilance ne remplace pas l'alerte ni la traçabilité.",
+      "L'amélioration de la douleur suffit à éliminer un effet indésirable.",
+      "Il faut prendre en charge la situation clinique et transmettre sans attendre une certitude de causalité."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A - Faux : La surveillance et les soins restent nécessaires. B - Faux : La suspicion est une information utile à signaler. C - Vrai : Ce sont des démarches complémentaires. D - Faux : Efficacité et toxicité peuvent coexister. E - Vrai : La sécurité immédiate prime.",
+    "flashcards": [
+      {
+        "front": "Une suspicion d'effet indésirable doit-elle attendre une preuve certaine avant transmission ?",
+        "answers": [
+          "Non. Prendre en charge, transmettre et suivre la démarche de pharmacovigilance applicable."
+        ],
+        "explanation": "La déclaration complète l'alerte clinique et le dossier ; elle ne les remplace pas.",
+        "kind": "authored"
+      }
+    ]
+  }
+]

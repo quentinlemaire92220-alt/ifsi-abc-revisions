@@ -26,7 +26,9 @@ function resolveLabel(label){
 
 const {questions:qs}=await runtimeDeck();
 assert(qs.filter(q=>q.courseId==='plaies_pansements').length===50,'Banque Plaies absente de l’audit de production');
-assert(qs.filter(q=>q.courseId==='douleur').length===52,'Banque Douleur officielle absente de l’audit');
+const douleurRevisionManifest=json('docs/course-deliveries.json');validateScopedRevisions(douleurRevisionManifest);
+const douleurRevision=douleurRevisionManifest.scopedCourseRevisions?.find(r=>r.courseId==='douleur'&&r.profile==='qcm_flashcards_only_v1');
+assert(qs.filter(q=>q.courseId==='douleur').length===52+(douleurRevision?.questionIds.length||0),'Banques Douleur historique et révision approuvée absentes de l’audit');
 const vocals=json('vocals.json');
 const sheets=[...json('sheets-1.json'),...json('sheets-2.json'),...json('sheets-3.json')];
 const infos=json('infographics.json');

@@ -11,6 +11,8 @@ const n=process.execPath,py=process.env.IFSI_PYTHON||'python';
 const commands=[
  ['resource_access',n,['tests/course-resource-access.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
+ ['qcm_flashcards_revision',n,['tests/qcm-flashcards-revision.mjs']],
+ ['qcm_flashcards_pdf',py,['tests/qcm-flashcards-revision-pdf.py']],
  ['unified_sheet_media',n,['tests/unified-sheet-media.mjs']],
  ['complete_written_revision',n,['tests/complete-written-revision.mjs']],
  ['reviewed_written_audio_revision',n,['tests/reviewed-written-audio-revision.mjs']],

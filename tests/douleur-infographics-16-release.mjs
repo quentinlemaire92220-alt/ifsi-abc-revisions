@@ -1,10 +1,12 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {scopedHistoricalJson,validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const packId='1BBl2PdTj8msoUsMBj6JtN6aS8DA66m9u';
 const hash='94663e3ef0ab6f9a2a5e3f882e4971235cd8b974df109b288e6cf82721888dce';
 const id='douleur_infographies_pack_16_20261022';
-const course=json('course-registry-v741.json'),infographics=json('infographics.json'),
+validateScopedRevisions(json('docs/course-deliveries.json'));
+const course=scopedHistoricalJson(json,'course-registry-v741.json'),infographics=json('infographics.json'),
  delivery=json('docs/course-deliveries.json').courses.find(x=>x.courseId==='douleur'),
  meta=json('build-meta.json'),qcm=json('qextra-51.txt');
 assert.equal(course.version,meta.version,'Registre et release doivent être synchronisés');
