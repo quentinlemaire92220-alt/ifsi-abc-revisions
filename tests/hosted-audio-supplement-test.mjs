@@ -108,7 +108,7 @@ const previous=old('docs/course-deliveries.json'),previousData=load(old,previous
 const view=historicalAudioView(current,currentData);
 validateHostedAudioChanges(previous,current,previousData,currentData,{stage:'preparation'});
 const changed=validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'});
-const independentlyApproved=current.courses.filter(d=>(d.updateContract==='official_reviewed_scoped_bundle_v1'||
+const independentlyApproved=current.courses.filter(d=>((d.revisionSheetSupplement&&JSON.stringify(d.revisionSheetSupplement)!==JSON.stringify(previous.courses.find(p=>p.courseId===d.courseId)?.revisionSheetSupplement))||d.updateContract==='official_reviewed_scoped_bundle_v1'||
  (d.deliveryMode==='first_release'&&['hybrid_v1','written_v1'].includes(d.packFormat)&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
  JSON.stringify(d)!==JSON.stringify(previous.courses.find(old=>old.courseId===d.courseId)));
 assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>x.courseId).sort());

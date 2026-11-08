@@ -1,3 +1,4 @@
+import {validateRevisionSheetChange} from './revision-sheet-supplement-contract.mjs';
 import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
 import {readHistoricalAudioJson,readHistoricalAudioAt} from './historical-audio-fixture.mjs';
 import {isPsychologieSheetArchive} from './psychologie-sante-official-revision-contract.mjs';
@@ -70,6 +71,13 @@ const approvedNewSheets=new Set(publicationApprovals.filter(c=>
  c.publicationApproval?.authorization==='explicit_go_publication'&&
  c.publicationApproval?.scope==='course_package'
 ).map(c=>c.sheetResourceId));
+const revisionSheets=new Set();
+for(const next of publicationApprovals){
+ const prior=old('docs/course-deliveries.json').courses.find(c=>c.courseId===next.courseId);
+ if(!next.revisionSheetSupplement||JSON.stringify(next.revisionSheetSupplement)===JSON.stringify(prior?.revisionSheetSupplement))continue;
+ const load=reader=>({registry:reader('course-registry-v741.json'),sheets:[1,2,3].flatMap(n=>reader('sheets-'+n+'.json')),vocals:reader('vocals.json'),infographics:reader('infographics.json'),vocabulary:reader('vocabulaire-v1.json').entries,banks:Object.fromEntries([...new Set([prior.qcmBank,next.qcmBank].filter(Boolean))].map(p=>[p,reader(p)])),imageHashes:Object.fromEntries(reader('infographics.json').filter(i=>i.localImage).map(i=>[i.localImage,createHash('sha256').update(fs.readFileSync(i.localImage)).digest('hex')]))});
+ revisionSheets.add(validateRevisionSheetChange(next.courseId,prior,next,load(old),load(read)).resourceId);
+}
 for(const file of ['sheets-1.json','sheets-2.json','infographics.json']){
  const previous=old(file),current=read(file);
  const additions=current.filter(s=>approvedNewSheets.has(s.resourceId));
@@ -100,7 +108,7 @@ for(const file of ['sheets-1.json','sheets-2.json','infographics.json']){
    continue;
   }
  }
- assert.deepEqual(current.filter(s=>!approvedNewSheets.has(s.resourceId)),previous);
+ assert.deepEqual(current.filter(s=>!approvedNewSheets.has(s.resourceId)&&!revisionSheets.has(s.resourceId)),previous.filter(s=>!revisionSheets.has(s.resourceId))); 
 }
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),oldSheets=[1,2,3].flatMap(n=>old(`sheets-${n}.json`));
 // Révision intermédiaire ciblée : le TD reste PROVISOIRE lorsque le support
@@ -160,6 +168,7 @@ function allowDroitsArchival(previous,current){
 for(const s of oldSheets){
  const next=sheets.find(x=>x.resourceId===s.resourceId&&x.url===s.url);
  if(next && JSON.stringify(next)===JSON.stringify(s))continue;
+ if(revisionSheets.has(s.resourceId))continue;
  if(allowOfficialSupportWithUnverifiedAudio(s,next))continue;
  if(s.courseId==='sante_mondiale_sante_france' && ['sante_mondiale_sante_france_fiche_p01','sante_mondiale_sante_france_fiche_complete_infographiee_p01'].includes(s.resourceId)){
   const release=publicationApprovals.find(d=>d.courseId===s.courseId);
