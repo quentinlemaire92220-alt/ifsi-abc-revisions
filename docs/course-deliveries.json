@@ -11269,6 +11269,200 @@
         "differencesReview": "reviewed",
         "decision": "full_review_recorded"
       }
+    },
+    {
+      "contract": "scoped_course_revision_v1",
+      "id": "douleur_qcm_flashcards_20261108",
+      "courseId": "douleur",
+      "profile": "qcm_flashcards_only_v1",
+      "status": "approved",
+      "baselinePath": "docs/course-revisions/douleur_qcm_flashcards_20261108_baseline.json",
+      "baselineSha256": "1f095389ed72021936024aff989835ec5ba0e1ab7548e54793a95286d397e299",
+      "bankPath": "data/course-banks/douleur_global_20261108.json",
+      "bankSha256": "59edb3b522b497dc5465e5fbdf6539283991ba32c9d8dab0f1af2bf3e21d42ac",
+      "questionIds": [
+        "douleur_global_20261108_001",
+        "douleur_global_20261108_002",
+        "douleur_global_20261108_003",
+        "douleur_global_20261108_004",
+        "douleur_global_20261108_005",
+        "douleur_global_20261108_006",
+        "douleur_global_20261108_007",
+        "douleur_global_20261108_008",
+        "douleur_global_20261108_009",
+        "douleur_global_20261108_010",
+        "douleur_global_20261108_011",
+        "douleur_global_20261108_012",
+        "douleur_global_20261108_013",
+        "douleur_global_20261108_014",
+        "douleur_global_20261108_015",
+        "douleur_global_20261108_016",
+        "douleur_global_20261108_017",
+        "douleur_global_20261108_018",
+        "douleur_global_20261108_019",
+        "douleur_global_20261108_020",
+        "douleur_global_20261108_021",
+        "douleur_global_20261108_022",
+        "douleur_global_20261108_023",
+        "douleur_global_20261108_024",
+        "douleur_global_20261108_025",
+        "douleur_global_20261108_026",
+        "douleur_global_20261108_027",
+        "douleur_global_20261108_028",
+        "douleur_global_20261108_029",
+        "douleur_global_20261108_030",
+        "douleur_global_20261108_031",
+        "douleur_global_20261108_032",
+        "douleur_global_20261108_033",
+        "douleur_global_20261108_034",
+        "douleur_global_20261108_035",
+        "douleur_global_20261108_036",
+        "douleur_global_20261108_037",
+        "douleur_global_20261108_038",
+        "douleur_global_20261108_039",
+        "douleur_global_20261108_040",
+        "douleur_global_20261108_041",
+        "douleur_global_20261108_042",
+        "douleur_global_20261108_043",
+        "douleur_global_20261108_044",
+        "douleur_global_20261108_045",
+        "douleur_global_20261108_046",
+        "douleur_global_20261108_047",
+        "douleur_global_20261108_048",
+        "douleur_global_20261108_049",
+        "douleur_global_20261108_050",
+        "douleur_global_20261108_051",
+        "douleur_global_20261108_052",
+        "douleur_global_20261108_053",
+        "douleur_global_20261108_054",
+        "douleur_global_20261108_055",
+        "douleur_global_20261108_056",
+        "douleur_global_20261108_057",
+        "douleur_global_20261108_058",
+        "douleur_global_20261108_059",
+        "douleur_global_20261108_060",
+        "douleur_global_20261108_061",
+        "douleur_global_20261108_062",
+        "douleur_global_20261108_063",
+        "douleur_global_20261108_064",
+        "douleur_global_20261108_065",
+        "douleur_global_20261108_066",
+        "douleur_global_20261108_067",
+        "douleur_global_20261108_068",
+        "douleur_global_20261108_069",
+        "douleur_global_20261108_070",
+        "douleur_global_20261108_071",
+        "douleur_global_20261108_072",
+        "douleur_global_20261108_073",
+        "douleur_global_20261108_074",
+        "douleur_global_20261108_075",
+        "douleur_global_20261108_076",
+        "douleur_global_20261108_077",
+        "douleur_global_20261108_078",
+        "douleur_global_20261108_079",
+        "douleur_global_20261108_080",
+        "douleur_global_20261108_081",
+        "douleur_global_20261108_082",
+        "douleur_global_20261108_083",
+        "douleur_global_20261108_084",
+        "douleur_global_20261108_085",
+        "douleur_global_20261108_086",
+        "douleur_global_20261108_087",
+        "douleur_global_20261108_088",
+        "douleur_global_20261108_089",
+        "douleur_global_20261108_090"
+      ],
+      "vocabularyEntryIds": [
+        "nociception",
+        "allodynie",
+        "hyperalgesie",
+        "douleur-neuropathique",
+        "douleur-nociceptive",
+        "echelle-numerique-de-douleur",
+        "morph_algie",
+        "enrich_arthralgie"
+      ],
+      "sourceSheetSha256": "00a6cafe173f09d4f2b1b53f56c852383bf7726be0ae5445a3e33b57e9126e1d",
+      "sourceReview": {
+        "sourceSheetSha256": "00a6cafe173f09d4f2b1b53f56c852383bf7726be0ae5445a3e33b57e9126e1d",
+        "availableTeacherSpeechReviewed": true,
+        "oralCoverageCertifiedComplete": false,
+        "ownerAcceptedAvailableOralScope": true,
+        "independentClinicalSignoff": false,
+        "privateEvidenceSha256": "b802a7708a22619ba77e51dbf8abb3e2ed98d5449892123fac81474020b008d8"
+      },
+      "publicArtifacts": [
+        {
+          "role": "qcm",
+          "path": "assets/douleur-qcm-flashcards-20261108/UE_B3_Douleur_QCM_90_Corriges.pdf",
+          "sha256": "9617ad2ed7929b171e8e8475e6197af97420952e2da57d60e41ee12121eaa3bf",
+          "bytes": 172173,
+          "pageCount": 47
+        },
+        {
+          "role": "flashcards",
+          "path": "assets/douleur-qcm-flashcards-20261108/UE_B3_Douleur_Flashcards_90_Recto_Verso.pdf",
+          "sha256": "47ce2e3cac156e37857ff4b3b6b6b0cb088b10adbf67ec40b8bea861b8b0e2e4",
+          "bytes": 105271,
+          "pageCount": 30
+        }
+      ],
+      "audioArtifacts": [],
+      "audioOwnerReview": {
+        "status": "not_applicable_no_new_audio"
+      },
+      "assistantPdfReview": {
+        "allPagesChecked": true,
+        "pageCounts": {
+          "qcm": 47,
+          "flashcards": 30
+        },
+        "privateEvidenceSha256": "b802a7708a22619ba77e51dbf8abb3e2ed98d5449892123fac81474020b008d8"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "9617ad2ed7929b171e8e8475e6197af97420952e2da57d60e41ee12121eaa3bf",
+            "pageCount": 47,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized"
+          }
+        }
+      },
+      "ownerAcceptance": {
+        "status": "explicit_application_update_authorized",
+        "privateEvidenceSha256": "92c945ef0736671728c548fe742e7ad5b3edb3be676fde153b1a5c0590bd8c03",
+        "approvedAt": "2026-11-08T17:54:37.325971+00:00"
+      },
+      "driveVerification": {
+        "status": "MATCH",
+        "qcm": {
+          "id": "1YD10XQc4S8oFFPIfJQVTObv3JIuBUPxc",
+          "sha256": "9617ad2ed7929b171e8e8475e6197af97420952e2da57d60e41ee12121eaa3bf"
+        },
+        "flashcards": {
+          "id": "1HAoGieNkQadphO3OyvdyjPky0F2EZGKF",
+          "sha256": "47ce2e3cac156e37857ff4b3b6b6b0cb088b10adbf67ec40b8bea861b8b0e2e4"
+        },
+        "archive": {
+          "id": "1voGsLBrCwzYB3o8bvp_4reGXf9r0hG2u",
+          "sha256": "d7389f9c828635bc685e2a8d6a581792e1083b17dc07ec384b095a87137710da"
+        },
+        "archiveBank": {
+          "id": "1X_3JMl21FBerCJ_rQ2WIyzk2uvUfYF8M",
+          "sha256": "eb7981b6df0112b590b718f4e8bcdda6d5d081060f8b4986082baf76e82c9ffe"
+        }
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "qcm_flashcards_only",
+        "approvedAt": "2026-11-08T17:54:37.325971+00:00",
+        "bundleSha256": "1e3a45854e6adabc9123f22f5d2b87261175eddf41677655abcd1d59e0e25b5a"
+      }
     }
   ]
 }

@@ -58,7 +58,9 @@ jobs:
 
       - name: Vérifier les révisions de cours avec historique conservé
         if: ${{ !cancelled() }}
-        run: node tests/scoped-course-revision.mjs
+        run: |
+          node tests/scoped-course-revision.mjs
+          node tests/qcm-flashcards-revision.mjs
 
       - name: Vérifier les ajouts écrits complets et leur profil PDF
         if: ${{ !cancelled() }}
@@ -240,7 +242,9 @@ jobs:
         run: python tests/pdf-template-v3-test.py
       - name: Vérifier les PDF de la révision écrite et audio
         if: ${{ !cancelled() }}
-        run: python tests/reviewed-written-audio-pdf.py
+        run: |
+          python tests/reviewed-written-audio-pdf.py
+          python tests/qcm-flashcards-revision-pdf.py
 
       - name: Trame V3 — bloquer les nouveaux PDF sans conformité et GO graphique
         if: ${{ !cancelled() }}
