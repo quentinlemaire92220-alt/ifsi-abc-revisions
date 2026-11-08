@@ -1,5 +1,5 @@
 import {validateHybridDelivery} from './hybrid-sheet-contract.mjs';
-import {approvedRevisionAudioIds} from '../tools/scoped-course-revision-contract.mjs';
+import {approvedRevisionAudioIds,validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
 import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
@@ -191,7 +191,9 @@ const revisionSheets=[...json('sheets-1.json'),...json('sheets-2.json'),...json(
 const noteBasedSheetTitles=["UE_S1_B1_Arthrose_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Traumatologie_Fiche_Revision_Appareil_Locomoteur_et_Traumatismes.pdf","UE_S1_B3_Parametres_Vitaux_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B1_Chirurgie_Orthopedique_Fiche_Revision_PROVISOIRE.pdf","UE_S1_B2_Psychologie_de_la_Sante_Partie01_Fiche_Revision_Psychologie_de_la_Sante.pdf"];
 for(const title of noteBasedSheetTitles){const sheet=revisionSheets.find(x=>x.title===title);assert(sheet,'Fiche de provenance absente: '+title);assert(sheet.officialSupport===false,'Fiche sans support officiel non marquée: '+title);assert(typeof sheet.sourceBasis==='string'&&sheet.sourceBasis.trim().length>3,'Provenance de fiche absente: '+title);}
 for(const id of ['douleur','systeme_respiratoire']){const sheet=revisionSheets.find(x=>x.courseId===id);assert(sheet?.officialSupport===true&&!sheet.provisional&&sheet.officialSupportUrl,'Provenance officielle perdue: '+id);}
-assert(runtime.filter(q=>q.courseId==='douleur').length===52,'Douleur doit utiliser les 52 questions officielles');
+const douleurRevisionManifest=json('docs/course-deliveries.json');validateScopedRevisions(douleurRevisionManifest);
+const douleurRevision=douleurRevisionManifest.scopedCourseRevisions?.find(r=>r.courseId==='douleur'&&r.profile==='qcm_flashcards_only_v1');
+assert(runtime.filter(q=>q.courseId==='douleur').length===52+(douleurRevision?.questionIds.length||0),'Douleur doit conserver les 52 questions historiques et les questions de la révision approuvée');
 const officialGrandBrules=revisionSheets.find(x=>x.courseId==='grands_brules');assert(officialGrandBrules?.officialSupport!==false,'La fiche Grands brûlés actuelle est issue du support officiel et ne doit pas être marquée');
 const sourceLegendIndexHtml=read('index.html');assert(sourceLegendIndexHtml.includes('sheetSourceLegend')&&sourceLegendIndexHtml.includes('officialSupport===false')&&sourceLegendIndexHtml.includes('📝 Notes / captures'),'Indicateur visible de provenance absent de la liste des fiches');
 const sourceLegendV74=read('v74-pack.js');assert(sourceLegendV74.includes("type==='sheet'&&x.officialSupport===false")&&sourceLegendV74.includes('📝 Notes / captures')&&sourceLegendV74.includes("d.sheets.some(x=>x.officialSupport===false)"),'Indicateur visible de provenance absent des cartes de cours/favoris');
