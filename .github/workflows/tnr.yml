@@ -65,6 +65,7 @@ jobs:
         run: |
           node tests/complete-written-revision.mjs
           node tests/reviewed-written-audio-revision.mjs
+          node tests/unified-sheet-media.mjs
 
       - name: Vérifier la syntaxe JavaScript
         if: ${{ !cancelled() }}
