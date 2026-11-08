@@ -1,5 +1,5 @@
 {
-  "version": "8.30.179",
+  "version": "8.30.180",
   "courses": [
     {
       "id": "biomolecules",
@@ -239,9 +239,9 @@
       "authoredFlashcards": true,
       "authoredFlashcardPresentation": "standalone_v1",
       "flashcardTarget": 104,
-      "qcmPdfUrl": "https://drive.google.com/file/d/1Ms1n5ktbdtnDu1SVHKyN5aISFNChscgl/view?usp=drivesdk",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_QCM_104.pdf",
       "qcmPdfQuestionCount": 104,
-      "flashcardsPdfUrl": "https://drive.google.com/file/d/10GbrpcT445ldGnJG3EUBoTXDqRtzqbQ5/view?usp=drivesdk",
+      "flashcardsPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf",
       "canonicalQuestionIds": [
         "prevention_ias_asepsie_global_q001",
         "prevention_ias_asepsie_global_q002",
@@ -440,9 +440,34 @@
           "type": "flashcards",
           "url": "https://drive.google.com/file/d/10GbrpcT445ldGnJG3EUBoTXDqRtzqbQ5/view?usp=drivesdk",
           "cardCount": 104
+        },
+        {
+          "label": "104 QCM corrigés — cours unifié",
+          "type": "qcm",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_QCM_104.pdf",
+          "questionCount": 104
+        },
+        {
+          "label": "104 flashcards — cours unifié",
+          "type": "flashcards",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf",
+          "cardCount": 104
         }
       ],
-      "sourceNote": "Fiche globale et exercices issus des supports officiels et du cours oral. Nouvelle série de six vocaux en préparation ; les trois vocaux précédents restent disponibles."
+      "sourceNote": "Fiche unifiée : supports officiels et applications IAS/TD, quatre schémas, 104 QCM, 104 cartes, 78 définitions et six vocaux validés à l’écoute.",
+      "primarySheetResourceId": "prevention_ias_asepsie_fiche_unifiee_20261107",
+      "activeVocalIds": [
+        "prevention_ias_asepsie_global_20261102_vocal_01",
+        "prevention_ias_asepsie_global_20261102_vocal_02",
+        "prevention_ias_asepsie_global_20261102_vocal_03",
+        "prevention_ias_asepsie_global_20261102_vocal_04",
+        "prevention_ias_asepsie_global_20261102_vocal_05",
+        "prevention_ias_asepsie_global_20261102_vocal_06"
+      ],
+      "activeDocumentUrls": [
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_QCM_104.pdf",
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf"
+      ]
     },
     {
       "id": "systeme_nerveux",

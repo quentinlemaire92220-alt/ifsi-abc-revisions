@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.179';
+const VERSION='8.30.180';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Déterminants de santé : fiche illustrée, 60 QCM, 60 cartes, 71 définitions et quatre vocaux.`;
