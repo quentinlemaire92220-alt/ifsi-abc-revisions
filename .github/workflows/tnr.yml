@@ -61,6 +61,7 @@ jobs:
         run: |
           node tests/scoped-course-revision.mjs
           node tests/qcm-flashcards-revision.mjs
+          node tests/douleur-audio-series-20261108.mjs
 
       - name: Vérifier les ajouts écrits complets et leur profil PDF
         if: ${{ !cancelled() }}
