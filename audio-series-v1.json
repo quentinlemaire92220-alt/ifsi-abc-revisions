@@ -1001,6 +1001,230 @@
         "approvedAt": "2026-11-07T11:11:12.752450+00:00",
         "bundleSha256": "2a9156357ce10f427e868f466ef4e46cd46ef8cc2f6d76cffe4c93a9e229783e"
       }
+    },
+    {
+      "id": "douleur_global_20261108_audio",
+      "courseId": "douleur",
+      "status": "approved",
+      "reviewContract": "provided_audio_series_v1",
+      "replaces": [
+        "douleur_p01_vocal_01",
+        "douleur_p01_vocal_02",
+        "douleur_p01_vocal_03"
+      ],
+      "vocals": [
+        {
+          "id": "douleur_global_20261108_vocal_01",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 1,
+          "title": "Douleur 1/7 — Comprendre la douleur et ses mécanismes",
+          "mime": "audio/mpeg",
+          "durationSeconds": 433.253333,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_01_Comprendre_la_douleur.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1n5zyGXInC1wXMNiOlEy4qUfJQ6dDjAcJ",
+          "url": "https://drive.google.com/file/d/1n5zyGXInC1wXMNiOlEy4qUfJQ6dDjAcJ/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_02",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 2,
+          "title": "Douleur 2/7 — Évaluer, choisir les outils et réévaluer",
+          "mime": "audio/mpeg",
+          "durationSeconds": 426.669333,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_02_Evaluer_et_reevaluer.mp3",
+          "syntheticSpeech": true,
+          "driveId": "11cK-v1Y0QmnDiU1XW_p5XhJ8084nXzxe",
+          "url": "https://drive.google.com/file/d/11cK-v1Y0QmnDiU1XW_p5XhJ8084nXzxe/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_03",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 3,
+          "title": "Douleur 3/7 — Sécuriser l'administration et les antalgiques non opioïdes",
+          "mime": "audio/mpeg",
+          "durationSeconds": 449.002667,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_03_Non_opioides_et_securite.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1aSgB_zok0nlroZulZ5MRId5cbnX9MQlc",
+          "url": "https://drive.google.com/file/d/1aSgB_zok0nlroZulZ5MRId5cbnX9MQlc/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_04",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 4,
+          "title": "Douleur 4/7 — Opioïdes, PCA et douleurs neuropathiques",
+          "mime": "audio/mpeg",
+          "durationSeconds": 443.24,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_04_Opioides_PCA_et_neuropathie.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1HXT9A4VJOBgt30J_mc2ABRUh3kCjvnV1",
+          "url": "https://drive.google.com/file/d/1HXT9A4VJOBgt30J_mc2ABRUh3kCjvnV1/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_05",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 5,
+          "title": "Douleur 5/7 — Douleur aiguë, soins et situation postopératoire",
+          "mime": "audio/mpeg",
+          "durationSeconds": 442.497333,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_05_Soins_et_douleur_aigue.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1Plw6LdfCzxltud3Yc1Vaosn2XB8YRac_",
+          "url": "https://drive.google.com/file/d/1Plw6LdfCzxltud3Yc1Vaosn2XB8YRac_/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_06",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 6,
+          "title": "Douleur 6/7 — Douleur chronique, retentissement et personne âgée",
+          "mime": "audio/mpeg",
+          "durationSeconds": 448.32,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_06_Chronique_et_retentissement_TD3.mp3",
+          "syntheticSpeech": true,
+          "driveId": "1eApXqOqe1yfezm07eFABCS1j2exs8I-A",
+          "url": "https://drive.google.com/file/d/1eApXqOqe1yfezm07eFABCS1j2exs8I-A/view?usp=drivesdk"
+        },
+        {
+          "id": "douleur_global_20261108_vocal_07",
+          "courseId": "douleur",
+          "course": "Douleur aiguë et chronique",
+          "number": 7,
+          "title": "Douleur 7/7 — Troubles cognitifs, sécurité médicamenteuse et coordination",
+          "mime": "audio/mpeg",
+          "durationSeconds": 473.929958,
+          "localAudio": "./assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_07_Cognition_securite_et_coordination_TD3.mp3",
+          "syntheticSpeech": true,
+          "driveId": "16kAngdm1He17edCDQlfch7k_8kni0K7m",
+          "url": "https://drive.google.com/file/d/16kAngdm1He17edCDQlfch7k_8kni0K7m/view?usp=drivesdk"
+        }
+      ],
+      "artifacts": [
+        {
+          "vocalId": "douleur_global_20261108_vocal_01",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_01_Comprendre_la_douleur.mp3",
+          "sha256": "3bdb02db7dff2833aa1d8104ba08fa14c173e61bbe2885f0a4a94260da49890d",
+          "bytes": 5200567,
+          "durationSeconds": 433.253333
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_02",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_02_Evaluer_et_reevaluer.mp3",
+          "sha256": "b3d86ff6226cbbbb80ffa725cabaa6ebd012b92fa13f437010b086eef54635ae",
+          "bytes": 5121366,
+          "durationSeconds": 426.669333
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_03",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_03_Non_opioides_et_securite.mp3",
+          "sha256": "64106558e6ca6aaa413145d7998e7eb86eb1d20b0463748b4a33f4abf339e4a5",
+          "bytes": 5389498,
+          "durationSeconds": 449.002667
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_04",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_04_Opioides_PCA_et_neuropathie.mp3",
+          "sha256": "a17e289f517812963f133b98b2c869e7b20a7f924abe83c43fa25949aea12f16",
+          "bytes": 5320381,
+          "durationSeconds": 443.24
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_05",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_05_Soins_et_douleur_aigue.mp3",
+          "sha256": "04e412b566ede75d621eaf28174d458097104494fd1b041ede64c22ce2e5e3f8",
+          "bytes": 5311448,
+          "durationSeconds": 442.497333
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_06",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_06_Chronique_et_retentissement_TD3.mp3",
+          "sha256": "3cfd28773d5a11a02472ea3406511a950cdf281a3138e8904b5e3e5a7ef85dd2",
+          "bytes": 5381153,
+          "durationSeconds": 448.32
+        },
+        {
+          "vocalId": "douleur_global_20261108_vocal_07",
+          "path": "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_07_Cognition_securite_et_coordination_TD3.mp3",
+          "sha256": "9b9c3d5585b5635ef7a6247db7ae37bba72b3a4bd5edce8dfcaa5f0de8b0a097",
+          "bytes": 5688740,
+          "durationSeconds": 473.929958
+        }
+      ],
+      "sourceArchive": {
+        "driveId": "1NLLa4iXfyu1ZIKeKzlKQCrgIplLnr3Jl",
+        "sha256": "2e3a8e3a8cefbb08676d35fd24e5ca146ce36eef798103890a6d9a72ea87c267",
+        "fileCount": 7
+      },
+      "downloads": [
+        {
+          "kind": "study_scripts",
+          "label": "Les 7 scripts vocaux (TXT)",
+          "path": "assets/douleur-vocaux-20261108/UE_B3_Douleur_7_Scripts_Vocaux.zip",
+          "sha256": "29f117eb74c72142ce0ce6bfd9196a8e0210c9254192befcacca959f0eac5896",
+          "bytes": 18723
+        },
+        {
+          "kind": "course_package",
+          "label": "Les 7 vocaux MP3 et leurs scripts",
+          "path": "assets/douleur-vocaux-20261108/UE_B3_Douleur_7_Vocaux_et_Scripts.zip",
+          "sha256": "493b1a2d5bd7bb5e24ebdfc4659073225993b704d35bad7a02ca53a6301e44a9",
+          "bytes": 28551681
+        }
+      ],
+      "review": {
+        "status": "documentary_decode_and_sampled_speech_completed",
+        "independentHumanListening": false,
+        "privateEvidenceSha256": "5c146ee11ec0db3f3d6ce208142da569694b889aa17b898b0b26ef360bb7abbb",
+        "decodedVocalIds": [
+          "douleur_global_20261108_vocal_01",
+          "douleur_global_20261108_vocal_02",
+          "douleur_global_20261108_vocal_03",
+          "douleur_global_20261108_vocal_04",
+          "douleur_global_20261108_vocal_05",
+          "douleur_global_20261108_vocal_06",
+          "douleur_global_20261108_vocal_07"
+        ],
+        "speechSampledVocalIds": [
+          "douleur_global_20261108_vocal_01",
+          "douleur_global_20261108_vocal_02",
+          "douleur_global_20261108_vocal_03",
+          "douleur_global_20261108_vocal_04",
+          "douleur_global_20261108_vocal_05",
+          "douleur_global_20261108_vocal_06",
+          "douleur_global_20261108_vocal_07"
+        ],
+        "scriptSha256s": {
+          "douleur_global_20261108_vocal_01": "d3d3d105acdbdbf25eae021dabbcb3cfa92ecf8815dd3ad2ba4edb09bed1b80a",
+          "douleur_global_20261108_vocal_02": "47a9c583cc2e630211b2d4695beef94758033cd7a3631a971198e7429d9749d0",
+          "douleur_global_20261108_vocal_03": "1cb00b722226ca67c68a93c6c680cef151ad7c96789eef87e1d761e8c82f6aec",
+          "douleur_global_20261108_vocal_04": "1039ede5c730685b4760e7e52a342d7e5dfdb4d3794be998d4b28b9e749c55cd",
+          "douleur_global_20261108_vocal_05": "adcad9b2c4060821fffec4caaaffb6792a83619566644ac09268e8851b03b013",
+          "douleur_global_20261108_vocal_06": "a13db97b510e7b21bec7e214ce124ad6fc1972e770324915a8740ad768110484",
+          "douleur_global_20261108_vocal_07": "e2deaa8be60c8fb75ea0e913db4765d35eb366e0ba1b65ef238b81a797607b12"
+        },
+        "artifactSha256s": {
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_01_Comprendre_la_douleur.mp3": "3bdb02db7dff2833aa1d8104ba08fa14c173e61bbe2885f0a4a94260da49890d",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_02_Evaluer_et_reevaluer.mp3": "b3d86ff6226cbbbb80ffa725cabaa6ebd012b92fa13f437010b086eef54635ae",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_03_Non_opioides_et_securite.mp3": "64106558e6ca6aaa413145d7998e7eb86eb1d20b0463748b4a33f4abf339e4a5",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_04_Opioides_PCA_et_neuropathie.mp3": "a17e289f517812963f133b98b2c869e7b20a7f924abe83c43fa25949aea12f16",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_05_Soins_et_douleur_aigue.mp3": "04e412b566ede75d621eaf28174d458097104494fd1b041ede64c22ce2e5e3f8",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_06_Chronique_et_retentissement_TD3.mp3": "3cfd28773d5a11a02472ea3406511a950cdf281a3138e8904b5e3e5a7ef85dd2",
+          "assets/audio/douleur-global-20261108/UE_B3_S1_Douleur_Vocal_07_Cognition_securite_et_coordination_TD3.mp3": "9b9c3d5585b5635ef7a6247db7ae37bba72b3a4bd5edce8dfcaa5f0de8b0a097"
+        }
+      },
+      "publicationApproval": {
+        "authorization": "explicit_go_publication",
+        "scope": "audio_series_replacement",
+        "approvedAt": "2026-11-08T19:41:25.576693+00:00",
+        "privateEvidenceSha256": "894451c13c3137b33a37ec215c7c43c6fb38b97337e685f3b7692acbd3752b47",
+        "bundleSha256": "9932ef957c6760d0941396713fadb07a2fc42794181442dbe4dcc4124c3f9d6a"
+      }
     }
   ]
 }

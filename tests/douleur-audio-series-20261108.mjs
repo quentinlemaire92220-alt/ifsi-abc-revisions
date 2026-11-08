@@ -1,0 +1,12 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import {createHash,webcrypto} from 'node:crypto';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),b=read('docs/archives/douleur-vocaux-avant-20261108.json'),m=read('audio-series-v1.json'),s=m.series.find(x=>x.id==='douleur_global_20261108_audio');
+assert.ok(s);assert.equal(s.status,'approved');assert.equal(s.reviewContract,'provided_audio_series_v1');assert.equal(s.vocals.length,7);assert.equal(s.review.independentHumanListening,false);assert.equal(s.publicationApproval.scope,'audio_series_replacement');
+assert.deepEqual(s.replaces,b.oldVocals.map(v=>v.id));assert.deepEqual(m.series.filter(x=>x.id!==s.id),b.priorAudioSeries,'Another course audio series changed');
+for(const [p,h] of Object.entries({...b.protectedFiles,...b.oldAudioHashes}))assert.equal(hash(p),h,'Protected historical resource changed: '+p);
+assert.deepEqual(read('course-registry-v741.json').courses.find(c=>c.id==='douleur'),b.course,'Raw historical course identity/resources changed');
+for(const [i,a] of s.artifacts.entries()){assert.equal(hash(a.path),a.sha256);assert.equal(fs.statSync(a.path).size,a.bytes);assert.equal(s.vocals[i].number,i+1);assert.ok(a.durationSeconds>0&&a.durationSeconds<600);assert.match(s.vocals[i].driveId,/^[A-Za-z0-9_-]{15,}$/);}
+const ctx={window:{},crypto:webcrypto,TextEncoder,Uint8Array,console,fetch:async()=>({ok:true,json:async()=>m})};vm.runInNewContext(fs.readFileSync('audio-series-v1.js','utf8'),ctx);await ctx.window.IFSI_AUDIO_SERIES.ready;
+const active=JSON.parse(JSON.stringify(ctx.window.IFSI_AUDIO_SERIES.applyVocals(read('vocals.json'))));assert.deepEqual(active.filter(v=>v.courseId==='douleur'),s.vocals);assert.ok(!active.some(v=>s.replaces.includes(v.id)));
+const course=ctx.window.IFSI_AUDIO_SERIES.applyRegistry(read('course-registry-v741.json')).courses.find(c=>c.id==='douleur');assert.equal(course.audioCount,7);assert.equal(course.audioStatus,'available');assert.equal(course.canonicalQuestionIds.length,90);assert.equal(course.flashcardTarget,90);
+const sw=fs.readFileSync('sw.js','utf8').split('const BASE_ASSETS=[')[1].split('];')[0];assert.ok(s.artifacts.every(a=>!sw.includes(a.path)),'Full audio library must not enter app precache');
+console.log('PASS douleur audio: 7 active ordered MP3, 3 old archived records/bytes, 90 QCM/cards and all other course resources preserved.');
