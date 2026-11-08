@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
+import {validateRevisionSheetSupplement} from '../tests/revision-sheet-supplement-contract.mjs';
 import {validateScopedRevisions} from './scoped-course-revision-contract.mjs';
 
 const SHA=/^[a-f0-9]{64}$/i, BASE=/^[a-f0-9]{40}$/i;
@@ -74,6 +75,11 @@ function selectDelivery(manifest,s){
  }
  const course=manifest.courses.find(d=>d.courseId===s.courseId);
  assert.ok(course,'v1.49 : fiche nouvelle sans manifeste de livraison : '+s.courseId);
+ if(course.revisionSheetSupplement?.resourceId===s.resourceId){
+  validateRevisionSheetSupplement(s.courseId,course,{sheets:getSheets(SHEET_FILES)});
+  const supplement=course.revisionSheetSupplement;
+  return {course:{...course,...supplement},part:supplement,scope:supplement};
+ }
  const part=(course.partDeliveries||[]).find(p=>(p.sheetResourceIds||[]).includes(s.resourceId));
  return {course,part,scope:part||course};
 }
@@ -81,7 +87,8 @@ function expectedHash(course,part,s){
  const asset=localAsset(s);
  if(asset && fs.existsSync(asset))
   return crypto.createHash('sha256').update(fs.readFileSync(asset)).digest('hex');
- return part?.publicArtifacts?.sheet?.sha256
+ return part?.pdfSha256
+  ||part?.publicArtifacts?.sheet?.sha256
   ||course.publicArtifacts?.sheet?.sha256
   ||part?.writtenPdfAudit?.pdfSha256
   ||course.writtenPdfAudit?.pdfSha256

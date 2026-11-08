@@ -1,0 +1,67 @@
+{
+  "courseId": "douleur",
+  "revisionSheetSupplement": {
+    "resourceId": "douleur_hybride_revision_20261023",
+    "driveId": "1Ohu7X5maGXooZ206T3aNHxjWNQPwBbvY",
+    "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+    "pageCount": 32,
+    "lexiconTermCount": 55,
+    "provisional": false,
+    "nativeSupportAvailable": true,
+    "visualAudit": {
+      "status": "PASS",
+      "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+      "expectedCount": 19,
+      "checkedCount": 19,
+      "pageCount": 32
+    },
+    "publishedVerification": {
+      "status": "MATCH",
+      "source": "authenticated_drive_download",
+      "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+      "expectedCount": 19,
+      "checkedCount": 19,
+      "pageCount": 32
+    },
+    "ownerReview": {
+      "status": "owner_accepted",
+      "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+      "pagesChecked": 32,
+      "visualReference": "pharmacologie_v1.47_24_pages",
+      "scientificReview": "documentary_review_completed",
+      "independentMedicalReview": "not_attested",
+      "method": "all_pages_rendered_and_inspected_120dpi"
+    },
+    "publicationApproval": {
+      "status": "approved",
+      "authorization": "explicit_go_publication",
+      "scope": "revision_sheet_only",
+      "approvedAt": "2026-10-23T07:56:35.231509+00:00",
+      "bundleSha256": "5488b2ad812ba573de4a138e903b46a1c8785e80a232d6a2af4146fa1fcb8725"
+    }
+  },
+  "sheetRow": {
+    "title": "UE_S1_B3_Douleur_Fiche_Revision_Hybride_Infographiee.pdf",
+    "label": "Douleur aiguë et chronique",
+    "ue": "S1 B3",
+    "url": "https://drive.google.com/file/d/1Ohu7X5maGXooZ206T3aNHxjWNQPwBbvY/view?usp=drivesdk",
+    "driveId": "1Ohu7X5maGXooZ206T3aNHxjWNQPwBbvY",
+    "resourceId": "douleur_hybride_revision_20261023",
+    "provisional": false,
+    "courseId": "douleur",
+    "displayTitle": "Douleur — fiche hybride (32 pages)",
+    "sourceStatus": "active",
+    "sheetFormat": "hybrid_infographic",
+    "officialSupport": true,
+    "sourceBasis": "Support officiel Catherine Machado 2026",
+    "primaryRevision": true,
+    "pageCount": 32,
+    "officialSupportUrl": "https://drive.google.com/file/d/1Vw20rxtwTvm_mQbxd1eCn_CDJ6z4Hj4S/view"
+  },
+  "archiveDriveId": "1m95sbpSNkaVMf8378Xy6RG60vMSv1B2M",
+  "archiveUrl": "https://drive.google.com/file/d/1m95sbpSNkaVMf8378Xy6RG60vMSv1B2M/view?usp=drivesdk",
+  "archiveName": "UE_B3_Douleur_Fiche_Hybride_32p_20261023_ARCHIVE_20261108.pdf",
+  "archivedAt": "2026-11-08",
+  "pdfSha256": "4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c",
+  "pageCount": 32
+}

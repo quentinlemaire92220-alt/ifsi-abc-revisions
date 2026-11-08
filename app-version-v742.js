@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.180';
+const VERSION='8.30.181';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : Déterminants de santé : fiche illustrée, 60 QCM, 60 cartes, 71 définitions et quatre vocaux.`;
+const READY=`Application prête • V${VERSION} : Douleur aiguë et chronique : fiche globale de 34 pages, TD3 et 67 définitions.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}

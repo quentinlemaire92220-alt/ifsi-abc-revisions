@@ -30,7 +30,7 @@ for(const mutate of [
  assert.throws(()=>validateRevisionSheetChange('demo',old,n,data,d));
 }
 const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8')),sheets=[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync('sheets-'+n+'.json','utf8')));
-for(const [id,pages,terms,sha] of [['douleur',32,55,'4272bc3de97824e9eb74a30d4d79b22c6bb981c27447d77ef2d6bc14c517b27c'],['pharmacologie',24,34,'08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd']]){
+for(const [id,pages,terms,sha] of [['douleur',34,67,'00a6cafe173f09d4f2b1b53f56c852383bf7726be0ae5445a3e33b57e9126e1d'],['pharmacologie',24,34,'08e7f7a4323475aff737591e3f5a7bde1b08458087451b4d95bdbc6c1c21d3dd']]){
  const d=manifest.courses.find(x=>x.courseId===id),r=d.revisionSheetSupplement;
  validateRevisionSheetSupplement(id,d,{sheets});assert.equal(r.pageCount,pages);assert.equal(r.lexiconTermCount,terms);assert.equal(r.pdfSha256,sha);
 }
