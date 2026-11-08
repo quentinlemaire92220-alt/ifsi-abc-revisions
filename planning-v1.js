@@ -604,8 +604,11 @@ const WEEKS=[
 
 function todayISO(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
 function weekForDate(date){return WEEKS.find(w=>date>=w.start&&date<=w.end)||null}
+// Keep historical data for course tracking and change detection.
+const VISIBLE_WEEKS=WEEKS.filter(w=>w.id==='S11');
 let selectedWeek=localStorage.getItem(K_WEEK);
-if(!WEEKS.some(w=>w.id===selectedWeek))selectedWeek=(weekForDate(todayISO())||WEEKS[WEEKS.length-1]).id;
+if(!VISIBLE_WEEKS.some(w=>w.id===selectedWeek))selectedWeek=VISIBLE_WEEKS[0].id;
+localStorage.setItem(K_WEEK,selectedWeek);
 
 function css(){
  if($('planningPromoCss'))return;
@@ -618,7 +621,7 @@ function css(){
  .vp-segment{display:flex;gap:5px;flex:1;min-width:0;padding:4px;background:#eeeaf3;border-radius:14px}
  .vp-segment button{flex:1;border:0;border-radius:11px;padding:9px 11px;background:transparent;color:#625c6e;font-weight:850;cursor:pointer;white-space:nowrap}
  .vp-segment button.on{background:#7046d9;color:#fff;box-shadow:0 5px 14px rgba(95,57,190,.2)}
- .vp-week-segment button{min-width:58px}.vp-subgroups{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-left:36px}
+ .vp-week-segment{flex-wrap:wrap;max-width:100%;box-sizing:border-box}.vp-week-segment button{min-width:58px;flex:1 1 58px}.vp-stage-note{margin:0 0 10px;color:var(--muted);font-size:12px;line-height:1.5;overflow-wrap:anywhere}.vp-subgroups{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-left:36px}
  .vp-subgroup-label{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-right:2px}
  .vp-subgroup{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:6px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
  .vp-subgroup.on{border-color:#8c68df;background:#f0eaff;color:#6237c5}
@@ -748,12 +751,12 @@ function exportIcs(){
 }
 function toolbar(){
  validSubgroup();
- validTier();return `<div class="vp-toolbar"><div class="vp-control-row"><span class="vp-control-icon">👥</span><div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div><div class="vp-control-row"><span class="vp-control-icon">📅</span><div class="vp-segment vp-week-segment" role="group" aria-label="Choisir la semaine">${WEEKS.map(x=>`<button type="button" class="${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label}</button>`).join('')}</div></div><div class="vp-subgroups"><span class="vp-subgroup-label">Sous-groupe</span>${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div><div class="vp-subgroups"><span class="vp-subgroup-label">Tiers de promotion</span>${['all','1','2','3'].map(x=>`<button type="button" class="vp-subgroup ${tier===x?'on':''}" data-vtier="${x}">${x==='all'?'Tous':'Tiers '+x}</button>`).join('')}</div></div>`
+ validTier();return `<div class="vp-toolbar"><div class="vp-control-row"><span class="vp-control-icon">👥</span><div class="vp-segment" role="group" aria-label="Choisir la promotion"><button type="button" data-vpromo="A" class="${promo==='A'?'on':''}" aria-pressed="${promo==='A'}">Promo A</button><button type="button" data-vpromo="B" class="${promo==='B'?'on':''}" aria-pressed="${promo==='B'}">Promo B</button></div></div><div class="vp-control-row"><span class="vp-control-icon">📅</span><div class="vp-segment vp-week-segment" role="group" aria-label="Choisir la semaine">${VISIBLE_WEEKS.map(x=>`<button type="button" class="${x.id===selectedWeek?'on':''}" data-vweek="${x.id}">${x.label}</button>`).join('')}</div></div><div class="vp-subgroups"><span class="vp-subgroup-label">Sous-groupe</span>${subgroupOptions().map(x=>`<button type="button" class="vp-subgroup ${subgroup===x?'on':''}" data-vsubgroup="${x}">${subgroupLabel(x)}</button>`).join('')}</div><div class="vp-subgroups"><span class="vp-subgroup-label">Tiers de promotion</span>${['all','1','2','3'].map(x=>`<button type="button" class="vp-subgroup ${tier===x?'on':''}" data-vtier="${x}">${x==='all'?'Tous':'Tiers '+x}</button>`).join('')}</div></div>`
 }
 function render(){
  const sec=$(SECTION);if(!sec)return;
  const w=WEEKS.find(x=>x.id===selectedWeek)||WEEKS[WEEKS.length-1];
- sec.innerHTML=toolbar()+changesCard()+todaySummary()+weekCard(w);
+ sec.innerHTML=toolbar()+'<p class="vp-stage-note">Stage de 5 semaines après la S11. Reprise des mises à jour du planning en 2027.</p>'+changesCard()+todaySummary()+weekCard(w);
  sec.querySelectorAll('[data-vpromo]').forEach(b=>b.onclick=()=>{promo=b.dataset.vpromo;subgroup='all';localStorage.setItem(K_PROMO,promo);localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vsubgroup]').forEach(b=>b.onclick=()=>{subgroup=b.dataset.vsubgroup;localStorage.setItem(K_SUBGROUP,subgroup);render()});
  sec.querySelectorAll('[data-vtier]').forEach(b=>b.onclick=()=>{tier=b.dataset.vtier;localStorage.setItem(K_TIER,tier);render()});
