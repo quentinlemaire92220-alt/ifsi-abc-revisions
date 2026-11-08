@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.180';
+const VERSION='8.30.181';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Douleur aiguë et chronique : fiche globale de 34 pages, TD3 et 67 définitions.`;

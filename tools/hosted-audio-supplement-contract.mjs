@@ -1,6 +1,6 @@
 // Additive MP3 hosted by the application. Historical package signatures stay intact.
 // Preparation validates bytes and scope; publication additionally requires a new GO.
-import {scopedHistoricalData} from './scoped-course-revision-contract.mjs';
+import {scopedHistoricalData,validateScopedRevisions} from './scoped-course-revision-contract.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -26,6 +26,18 @@ export function hostedAudioSupplementDigest(s,data){
 
 export function validateHostedAudioSupplements(manifest,data,{stage='preparation',readBytes=localBytes}={}){
  assert.ok(['preparation','publication'].includes(stage),'Étape audio inconnue');
+ // Validate the new selection independently before inspecting the unchanged
+ // signed hosted-audio package through its historical view.
+ if(manifest.scopedCourseRevisions?.some(r=>r.profile==='unified_sheet_media_v1')){
+  validateScopedRevisions(manifest);
+  const current=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8'));
+  for(const r of manifest.scopedCourseRevisions.filter(r=>r.profile==='unified_sheet_media_v1')){
+   const supplied=data.registry.courses.find(c=>c.id===r.courseId),baseline=JSON.parse(fs.readFileSync(r.baselinePath,'utf8')).course,actual=current.courses.find(c=>c.id===r.courseId);
+   assert.ok(audioValueDigest(supplied)===audioValueDigest(actual)||audioValueDigest(supplied)===audioValueDigest(baseline),'Unreviewed course supplied to historical hosted-audio gate');
+  }
+  data=scopedHistoricalData(manifest,data);
+ }
+
  const supplements=manifest.hostedAudioSupplements||[];
  assert.ok(Array.isArray(supplements),'Liste des compléments MP3 invalide');
  const accepted=new Map(),courses=new Set(),paths=new Set(),ids=new Set();

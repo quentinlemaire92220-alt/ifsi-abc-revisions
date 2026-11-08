@@ -12,12 +12,16 @@ function validate(data){
     if(!Array.isArray(s.artifacts)||s.artifacts.length!==s.vocals.length)throw Error('Octets audio non documentés');
     for(let i=0;i<s.vocals.length;i++){
       const v=s.vocals[i],a=s.artifacts[i];
-      if(ids.has(v.id)||s.replaces.includes(v.id)||v.courseId!==s.courseId||v.number!==i+1||v.mime!=='audio/mpeg'||!v.title?.trim()||!v.course?.trim())throw Error('Ordre ou identité audio invalide');
+      if(ids.has(v.id)||(!s.preserveVocalIds&&s.replaces.includes(v.id))||v.courseId!==s.courseId||v.number!==i+1||v.mime!=='audio/mpeg'||!v.title?.trim()||!v.course?.trim())throw Error('Ordre ou identité audio invalide');
       if(!Number.isFinite(v.durationSeconds)||v.durationSeconds<=0||v.durationSeconds>=600)throw Error('Durée audio invalide');
       if(!/^\.\/assets\/audio\/[\w/-]+\.mp3$/.test(v.localAudio)||paths.has(v.localAudio))throw Error('Chemin audio invalide');
       if(a.vocalId!==v.id||a.path!==v.localAudio.slice(2)||a.durationSeconds!==v.durationSeconds||!Number.isSafeInteger(a.bytes)||a.bytes<1024||!/^[a-f0-9]{64}$/.test(a.sha256))throw Error('Empreinte audio invalide');
       if(s.status==='approved'&&s.reviewContract!=='provided_audio_series_v1'&&!/^[A-Za-z0-9_-]+$/.test(v.driveId||''))throw Error('Copie Drive absente');
       ids.add(v.id);paths.add(v.localAudio);
+    }
+    if(s.preserveVocalIds!==undefined){
+      if(s.preserveVocalIds!==true||s.reviewContract!==undefined||!Array.isArray(s.previousVocals)||JSON.stringify(s.previousVocals.map(v=>v.id))!==JSON.stringify(s.replaces)||!s.vocals.every(v=>s.replaces.includes(v.id)))throw Error('Identités du remplacement non rapprochées');
+      if(!Array.isArray(s.previousArtifacts)||s.previousArtifacts.length!==s.vocals.length||!s.previousArtifacts.every((a,i)=>a.vocalId===s.vocals[i].id&&a.path===s.previousVocals.find(v=>v.id===a.vocalId)?.localAudio?.slice(2)&&/^[a-f0-9]{64}$/.test(a.sha256)))throw Error('Octets historiques non documentés');
     }
     if(s.status==='approved'){
       if(s.reviewContract==='provided_audio_series_v1'){
@@ -55,7 +59,8 @@ function applyVocals(catalogue){
   for(const s of series){
     const old=result.filter(v=>v.courseId===s.courseId);
     if(JSON.stringify(old.map(v=>v.id))!==JSON.stringify(s.replaces))throw Error('Historique audio différent de la série remplacée');
-    if(s.vocals.some(v=>result.some(old=>old.id===v.id)))throw Error('Identifiant audio déjà utilisé');
+    if(s.preserveVocalIds&&JSON.stringify(canonical(old))!==JSON.stringify(canonical(s.previousVocals)))throw Error('Historique du remplacement modifié');
+    if(s.vocals.some(v=>result.some(old=>old.id===v.id&&(!s.preserveVocalIds||old.courseId!==s.courseId))))throw Error('Identifiant audio déjà utilisé');
     const first=result.findIndex(v=>v.courseId===s.courseId);
     result=result.filter(v=>v.courseId!==s.courseId);result.splice(first,0,...s.vocals.map(v=>({...v})));
   }
