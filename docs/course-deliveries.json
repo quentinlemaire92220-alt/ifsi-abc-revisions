@@ -11751,7 +11751,7 @@
         "contract": "ifsi_pedagogical_non_regression_v149",
         "sheetSha256": "849c43ea916d9d1368b07eecd6ffc4f79d715bbbf4de7f20d9b0cb8c7d33d449",
         "privateEvidenceSha256": "b167e5428f5b3801fdab2568a24bdb3ecdf8fc4eadc4ce983d950466c6dd58ef",
-        "reviewedAt": "2026-11-09T11:44:20.551526+01:00",
+        "reviewedAt": "2026-11-09T11:44:20+01:00",
         "sourceInventory": "reviewed",
         "sourceCoverage": "complete",
         "inheritanceReview": "compared",
@@ -11764,7 +11764,7 @@
         "authorization": "explicit_go_publication",
         "scope": "scoped_course_revision",
         "approvedAt": "2026-11-09T11:44:20.551526+01:00",
-        "bundleSha256": "0bc226136aaab2dba738a1938ff27c094d50e62dc5cd4cec3628a5039fc46be4"
+        "bundleSha256": "c52da70494113e52f27ea5c2c72396f3944b88ae0db92f9f1b71e049fafc4816"
       },
       "sourceAttributionReview": {
         "status": "documentary_reviewed",

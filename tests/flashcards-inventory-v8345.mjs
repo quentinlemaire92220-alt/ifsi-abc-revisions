@@ -1,3 +1,5 @@
+import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
+import {reviewedFieldDigest} from './qcm-autonomy-contract.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
@@ -67,13 +69,16 @@ assert.equal(rePair.test('Structure → fonction'),true);
 const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
 function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):countWords[m[1]]||null}
 function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}
+const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
+const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='reconciled_written_correction_v1').flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
   const answers=(c.answers||[]).filter(Boolean);
   const authored=c.authored===true;
   const auditText=text=>{let t=text.replace(/\bau cours de\b/gi,'pendant');if(authored)t=t.replace(/\ble cours distingue-t-il\b/gi,'peut-on distinguer');if(authored)t=t.replace(/\bexemple\b/gi,'cas').replace(/\bsupport(?!\s+(?:de cours|officiel|pédagogique)\b)/gi,'dispositif').replace(/\b(?:cité(?:e|es|s)?|indiqué(?:e|es|s)?)\b/gi,'');return t};
-  const explanation=String(c.explanation||''),sourceMeta=/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
+  const reviewedComparison=reviewedComparisons.some(x=>x.questionId===(c.qid||c.id)&&x.sha256===reviewedFieldDigest('flashcards',[{front:c.front,answers:c.answers,explanation:c.explanation}]));
+  const explanation=String(c.explanation||''),sourceMeta=!reviewedComparison&&/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=!reviewedComparison&&reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   // A single authored answer may display several enumerated elements separated
   // by semicolons; preserve the actual answer string while counting its items.
   const n=expected(front),listedAnswers=answers.length===1

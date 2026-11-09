@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
-export function verifyCourseAccess({course,sheets,vocals,vocabulary,runtime,exists=fs.existsSync}){
+export function verifyCourseAccess({course,sheets,vocals,vocabulary,runtime,audioMirrors,exists=fs.existsSync}){
  const unique=(rows,label)=>assert.equal(new Set(rows).size,rows.length,label+' dupliqués');
  const local=url=>{
   assert.equal(typeof url,'string','URL absente');
@@ -34,7 +34,15 @@ export function verifyCourseAccess({course,sheets,vocals,vocabulary,runtime,exis
   unique(course.activeVocalIds,'Vocaux actifs');
   for(const id of course.activeVocalIds){
    const rows=vocals.filter(v=>v.id===id);assert.equal(rows.length,1,'Vocal actif absent ou dupliqué');assert.equal(rows[0].courseId,course.id,'Vocal lié à un autre cours');
-   assert.match(rows[0].localAudio||'',/^\.\/assets\//,'Copie directe audio absente');resources.push(local(rows[0].localAudio));
+   const v=rows[0];
+   if(v.localAudio){assert.match(v.localAudio,/^\.\/assets\//,'Copie directe audio invalide');resources.push(local(v.localAudio));}
+   else{
+    assert.equal(audioMirrors?.schemaVersion,1,'Manifeste de copie audio absent');
+    assert.equal(audioMirrors.mediaBaseUrl,'https://quentinlemaire92220-alt.github.io/ifsi-abc-audio/');
+    const matches=audioMirrors.entries.filter(e=>e.id===v.id&&e.driveId===v.driveId);assert.equal(matches.length,1,'Copie audio absente ou ambiguë');const e=matches[0];
+    assert.equal(e.file,'audio/'+e.id+(e.mime==='audio/mpeg'?'.mp3':'.m4a'));assert.match(e.sha256||'',/^[a-f0-9]{64}$/);assert.ok(e.bytes>1024&&e.durationSeconds>0);
+    resources.push(local(audioMirrors.mediaBaseUrl+e.file));
+   }
   }
   if(runtime)assert.deepEqual(Array.from(runtime.vocals,v=>v.id).sort(),[...course.activeVocalIds].sort(),'Vocaux actifs non chargés');
  }

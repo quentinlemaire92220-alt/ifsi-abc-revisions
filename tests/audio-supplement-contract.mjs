@@ -1,3 +1,4 @@
+import {validateScopedRevisions,scopedHistoricalData} from '../tools/scoped-course-revision-contract.mjs';
 // Compléments audio de cours historiques : autorisation limitée aux fichiers désignés.
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -11,6 +12,7 @@ export function audioSupplementDigest(supplement,vocals){
  return createHash('sha256').update(JSON.stringify(canonical({courseId:supplement.courseId,folderId:supplement.folderId,vocals:rows,artifactSha256s:supplement.artifactSha256s,...(supplement.interactiveAudioReview?{interactiveAudioReview:supplement.interactiveAudioReview}:{})}))).digest('hex');
 }
 export function validateAudioSupplements(manifest,data){
+ if(manifest.scopedCourseRevisions?.some(r=>r.profile==='reconciled_written_correction_v1')){validateScopedRevisions(manifest);data=scopedHistoricalData({...manifest,scopedCourseRevisions:manifest.scopedCourseRevisions.filter(r=>r.profile==='reconciled_written_correction_v1')},data);}
  const byId=new Map(),files=new Set();
  for(const s of manifest.audioSupplements||[]){
   assert.ok(data.registry.courses.some(c=>c.id===s.courseId),s.courseId+': cours du complément absent');

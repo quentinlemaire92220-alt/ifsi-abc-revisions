@@ -13,12 +13,15 @@ const proof=s=>assert.match(s||'',/^[a-f0-9]{64}$/);
 const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 export function preservedBeforeCorrections(path,manifest,expected){
  const direct=hash(path);if(direct===expected)return direct;
- if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json'].includes(path))return direct;
+ if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json','docs/course-deliveries.json'].includes(path))return direct;
  let value=read(path);
- for(const r of manifest.scopedCourseRevisions||[]){
+ const current=read('docs/course-deliveries.json');
+ const revisions=[...(manifest.scopedCourseRevisions||[]),...(current.scopedCourseRevisions||[]).filter(r=>!(manifest.scopedCourseRevisions||[]).some(x=>x.id===r.id))];
+ for(const r of revisions){
   if(r.profile!=='reconciled_written_correction_v1')continue;
   const old=read(r.baselinePath);assert.equal(hash(r.baselinePath),r.baselineSha256);
-  if(path==='questions-5.json')value=value.map(q=>old.bank.find(x=>x.id===q.id)||q);
+  if(path==='docs/course-deliveries.json')value={...value,scopedCourseRevisions:value.scopedCourseRevisions.filter(x=>x.id!==r.id)};
+  else if(path==='questions-5.json')value=value.map(q=>old.bank.find(x=>x.id===q.id)||q);
   else if(path==='vocabulaire-v1.json')value={...value,entries:value.entries.map(v=>old.vocabulary.find(x=>x.id===v.id)||v)};
   else if(path==='vocals.json')value=value.map(v=>old.rows[path].find(x=>x.id===v.id)||v);
   else value=value.filter(s=>s.resourceId!==r.sheetResourceId);
