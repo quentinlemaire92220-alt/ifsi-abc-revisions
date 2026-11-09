@@ -1,3 +1,4 @@
+import {validateScopedRevisions,scopedHistoricalJson} from '../tools/scoped-course-revision-contract.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
@@ -31,7 +32,8 @@ for(const [id,path,count,cards,vocab,captures] of [
 }
 const base=process.env.IFSI_BASE_SHA||'HEAD^';
 const before=JSON.parse(execFileSync('git',['show',base+':vocals.json']).toString('utf8'));
-const now=read('vocals.json');
+validateScopedRevisions(manifest);
+const now=read('vocals.json').map(v=>{for(const r of manifest.scopedCourseRevisions||[]){if(r.profile!=='reconciled_written_correction_v1')continue;const was=read(r.baselinePath).rows['vocals.json'].find(x=>x.id===v.id);if(was)return was;}return v;});
 assert.ok(before.length>=105,'Le catalogue de base doit conserver au minimum 105 vocaux');
 assert.ok(now.length>=before.length,'Le catalogue ne doit perdre aucun vocal');
 validateAudioReplacements(JSON.parse(execFileSync('git',['show',base+':docs/course-deliveries.json']).toString('utf8')),manifest,before,now);

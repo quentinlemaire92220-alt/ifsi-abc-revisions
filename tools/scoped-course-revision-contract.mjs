@@ -2,6 +2,7 @@ import {validateQcmFlashcardsRevision} from './qcm-flashcards-revision-contract.
 import {validateUnifiedSheetMedia} from './unified-sheet-media-contract.mjs';
 import {validateCompleteWrittenRevision} from './complete-written-revision-contract.mjs';
 import {validateReviewedWrittenAudioRevision} from './reviewed-written-audio-revision-contract.mjs';
+import {validateReconciledCorrection} from './reconciled-correction-contract.mjs';
 // An approved revision selects new active resources without rewriting a signed
 // historical delivery. Historical views are test-only; students use real catalogs.
 import fs from 'node:fs';
@@ -22,6 +23,9 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
+  if(r.profile==='reconciled_written_correction_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);validateReconciledCorrection(r,manifest,revisionBundle(r));continue;
+  }
   if(r.profile==='qcm_flashcards_only_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);validateQcmFlashcardsRevision(r,manifest,revisionBundle(r));continue;
   }
@@ -117,6 +121,14 @@ export function scopedHistoricalJson(reader,file){
  const manifest=reader('docs/course-deliveries.json');let value=reader(file);
  for(const r of manifest.scopedCourseRevisions||[]){
   const old=reader(r.baselinePath);
+  if(r.profile==='reconciled_written_correction_v1'){
+   if(file==='course-registry-v741.json')value={...value,courses:value.courses.map(c=>c.id===r.courseId?old.course:c)};
+   else if(file==='questions-5.json')value=value.map(q=>old.bank.find(x=>x.id===q.id)||q);
+   else if(file==='vocabulaire-v1.json')value={...value,entries:value.entries.map(v=>old.vocabulary.find(x=>x.id===v.id)||v)};
+   else if(file==='vocals.json')value=value.map(v=>old.rows['vocals.json'].find(x=>x.id===v.id)||v);
+   else if(/^sheets-[123]\.json$/.test(file))value=value.filter(s=>s.resourceId!==r.sheetResourceId);
+   continue;
+  }
   if(file==='course-registry-v741.json')value={...value,courses:value.courses.map(c=>c.id===r.courseId?old.course:c)};
   else if(!['unified_sheet_media_v1','qcm_flashcards_only_v1'].includes(r.profile)&&file==='vocabulaire-v1.json')value={...value,entries:value.entries.filter(v=>!r.vocabularyEntryIds.includes(v.id))};
   else if(r.profile!=='unified_sheet_media_v1'&&file==='questions-5.json')value=value.filter(q=>!r.questionIds.includes(q.id));
@@ -130,6 +142,14 @@ export function scopedHistoricalData(manifest,data){
  let out={...data};
  for(const r of manifest.scopedCourseRevisions||[]){
   const old=read(r.baselinePath),ids=new Set(r.audioArtifacts.map(a=>a.vocalId));
+  if(r.profile==='reconciled_written_correction_v1'){
+   if(out.registry)out.registry={...out.registry,courses:out.registry.courses.map(c=>c.id===r.courseId?old.course:c)};
+   if(out.vocals)out.vocals=out.vocals.map(v=>old.rows['vocals.json'].find(x=>x.id===v.id)||v);
+   if(out.sheets)out.sheets=out.sheets.filter(s=>s.resourceId!==r.sheetResourceId);
+   if(out.questions)out.questions=out.questions.map(q=>old.bank.find(x=>x.id===q.id)||q);
+   if(out.vocabulary)out.vocabulary=out.vocabulary.map(v=>old.vocabulary.find(x=>x.id===v.id)||v);
+   continue;
+  }
   if(out.registry)out.registry={...out.registry,courses:out.registry.courses.map(c=>c.id===r.courseId?old.course:c)};
   if(out.vocals)out.vocals=out.vocals.filter(v=>!ids.has(v.id));
   if(out.sheets&&r.sheetResourceId)out.sheets=out.sheets.filter(s=>s.resourceId!==r.sheetResourceId);

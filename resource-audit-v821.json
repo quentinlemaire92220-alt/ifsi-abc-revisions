@@ -1,5 +1,5 @@
 {
-  "version": "8.30.184",
+  "version": "8.30.185",
   "auditedAt": "2026-11-02",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -10,7 +10,7 @@
   "note": "Catalogue candidat : 24 MP3 TTS ajoutés avec statut provisoire ; revue des pauses et exactitude scientifique non terminée, validation non déclarée.",
   "expectedTotals": {
     "courses": 69,
-    "sheets": 92,
+    "sheets": 93,
     "infographics": 184,
     "vocals": 248,
     "v820QcmImported": 1174,

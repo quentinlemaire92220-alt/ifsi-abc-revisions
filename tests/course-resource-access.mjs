@@ -8,7 +8,7 @@ const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`)),vocals=read('vocals.js
 const rows=[];
 for(const course of runtime.registry.courses.filter(c=>c.canonicalQuestionIds||c.primarySheetResourceId||c.activeVocalIds||c.vocabularyEntryIds)){
  const resources=runtime.window.IFSI_V741.resourcesForCourse(course.id);
- rows.push(verifyCourseAccess({course,sheets,vocals,vocabulary,runtime:resources}));
+ rows.push(verifyCourseAccess({course,sheets,vocals,vocabulary,audioMirrors:read('audio-drive-mirrors-v1.json'),runtime:resources}));
  if(course.vocabularyEntryIds)assert.equal(runtime.window.IFSI_VOCAB.countForCourse(course.id),course.vocabularyEntryIds.length,'Définitions actives non chargées');
 }
 // Synthetic faults exercise the generic contract, independent of a particular course.

@@ -14138,7 +14138,7 @@
       0,
       2
     ],
-    "explanation": "La présentation cite des repères datés et comporte une divergence pour un chiffre français : le raisonnement attendu porte sur dates, dépistage et prudence.\nPropositions à écarter : B : ne pas actualiser sans données. E : aucune identité/pratique ne permet de conclure individuellement. D : Une contradiction source doit être explicitement réservée.",
+    "explanation": "La présentation cite des repères datés et comporte une divergence pour un chiffre français : le raisonnement attendu porte sur dates, dépistage et prudence.\nPropositions à écarter : B : ne pas actualiser sans données. E : aucune identité/pratique ne permet de conclure individuellement. D : Une contradiction source doit être explicitement réservée. Repère épidémiologique : l’ONUSIDA estime 1,3 million de nouvelles infections dans le monde en 2024, contre 1,5 million affiché sur le support ; les découvertes françaises ne sont pas l’incidence.",
     "announcedCorrectCount": 2,
     "partId": "p01",
     "sourceKind": "course_captures",
@@ -14937,7 +14937,7 @@
       2,
       3
     ],
-    "explanation": "La séance évoque une prophylaxie néonatale et un suivi spécialisé, en complément du contrôle maternel.\nPropositions à écarter : B : le suivi maternel est essentiel. E : la prophylaxie vise à prévenir, pas à affirmer une infection.",
+    "explanation": "La séance évoque une prophylaxie néonatale et un suivi spécialisé, en complément du contrôle maternel.\nPropositions à écarter : B : le suivi maternel est essentiel. E : la prophylaxie vise à prévenir, pas à affirmer une infection. Le risque de transmission par l’allaitement est très faible sous contrôle optimal, mais non nul ; I = I ne s’étend pas à cette voie.",
     "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "course_captures",
@@ -14947,9 +14947,9 @@
         "kind": "Notion précise",
         "front": "Allaitement et VIH : quel raisonnement retenir ?",
         "answers": [
-          "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée."
+          "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée. Le risque de transmission par l’allaitement est très faible sous contrôle optimal, mais non nul ; I = I ne s’étend pas à cette voie."
         ],
-        "explanation": "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée."
+        "explanation": "L’allaitement peut être discuté dans des situations sélectionnées et suivies de près ; il n’est pas automatiquement interdit. Le risque résiduel et les modalités relèvent de l’équipe spécialisée. Le risque de transmission par l’allaitement est très faible sous contrôle optimal, mais non nul ; I = I ne s’étend pas à cette voie."
       }
     ]
   },
@@ -15008,7 +15008,7 @@
       0,
       2
     ],
-    "explanation": "La PrEP s’adresse aux personnes non infectées par le VIH exposées à un risque, notamment après certaines IST. Il existe des modalités orales et, selon l’indication et la disponibilité, injectables.\nPropositions à écarter : B : prévention des autres IST maintenue. E : traitement du VIH ≠ PrEP seule. D : les modalités et leur disponibilité dépendent des autorisations et des recommandations locales.",
+    "explanation": "La PrEP s’adresse aux personnes non infectées par le VIH exposées à un risque, notamment après certaines IST. Il existe des modalités orales et, selon l’indication et la disponibilité, injectables.\nPropositions à écarter : B : prévention des autres IST maintenue. E : traitement du VIH ≠ PrEP seule. D : les modalités et leur disponibilité dépendent des autorisations et des recommandations locales. Le cabotégravir s’administre par voie intramusculaire ; le lénacapavir par voie sous-cutanée. Ne pas confondre leurs schémas ni présumer de l’accès français au lénacapavir.",
     "announcedCorrectCount": 2,
     "partId": "p01",
     "sourceKind": "course_captures",
@@ -15018,9 +15018,9 @@
         "kind": "Notion précise",
         "front": "Quelles modalités de prophylaxie pré-exposition (PrEP) au VIH peut-on envisager selon les recommandations et les situations ?",
         "answers": [
-          "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté."
+          "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté. Le cabotégravir s’administre par voie intramusculaire ; le lénacapavir par voie sous-cutanée. Ne pas confondre leurs schémas ni présumer de l’accès français au lénacapavir."
         ],
-        "explanation": "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté."
+        "explanation": "Il existe notamment des schémas oraux quotidiens ou, selon l’indication, à la demande ; des modalités injectables peuvent exister selon la disponibilité et les recommandations locales. Le choix requiert un suivi adapté. Le cabotégravir s’administre par voie intramusculaire ; le lénacapavir par voie sous-cutanée. Ne pas confondre leurs schémas ni présumer de l’accès français au lénacapavir."
       }
     ]
   },
@@ -15105,32 +15105,31 @@
     "number": 45,
     "theme": "PrEP, TPE et rôle infirmier",
     "difficulty": "medium",
-    "question": "Quels repères de TPE sont explicitement donnés pendant le cours ?",
+    "question": "Selon la recommandation française HAS de juillet 2024 consultée, quels repères retenir pour le traitement post-exposition au VIH ?",
     "choices": [
-      "Une prise en charge dans les 72 h suivant l’exposition, idéalement très précoce.",
-      "Un traitement antirétroviral de 28 jours est évoqué.",
-      "Un avis médical urgent est nécessaire.",
-      "Il faut toujours attendre la survenue d’une fièvre avant d’agir.",
-      "Le TPE est une immunisation vaccinale à dose unique."
+      "Lorsqu’il est indiqué, le TPE doit commencer au plus tôt, idéalement dans les 4 heures, au plus tard dans les 48 heures.",
+      "Le délai de 72 heures de la diapositive constitue la règle française de référence retenue par la HAS.",
+      "La durée recommandée est de 30 jours, kit de démarrage inclus.",
+      "Les résultats du bilan initial doivent toujours être obtenus avant toute première prise, même si cela retarde un TPE indiqué.",
+      "Le TPE est un vaccin à dose unique."
     ],
     "answers": [
       0,
-      1,
       2
     ],
-    "explanation": "La séance évoque un TPE urgent, idéalement dans les premières heures, dans les 72 h et pendant 28 jours, à adapter au protocole appliqué.\nPropositions à écarter : D : ne pas différer l’évaluation. E : il s’agit d’antirétroviraux, pas d’un vaccin.",
-    "announcedCorrectCount": 3,
+    "explanation": "A et C sont exactes selon la recommandation française HAS de juillet 2024. B reprend un délai du support de cours en contradiction avec cette recommandation ; D est faux car le bilan ne doit pas retarder un TPE indiqué ; E est faux : il s’agit d’antirétroviraux. L’évaluation médicale reste urgente et individualisée.",
+    "announcedCorrectCount": 2,
     "partId": "p01",
     "sourceKind": "course_captures",
     "sourceStatus": "provisional",
     "flashcards": [
       {
         "kind": "Notion précise",
-        "front": "Quels délais de TPE sont donnés à l'oral ?",
+        "front": "TPE : comment distinguer les repères français de référence de ceux de la diapositive ?",
         "answers": [
-          "Le plus tôt possible après l’exposition : idéalement dans les 4 heures et au plus tard dans les 72 heures. La séance indique une durée de 28 jours."
+          "Selon la HAS (juillet 2024) : début au plus tôt, idéalement dans les 4 heures et au plus tard dans les 48 heures ; durée de 30 jours. Le cours indique 72 heures et 28 jours : cette divergence doit être signalée, pas utilisée comme règle clinique française."
         ],
-        "explanation": "Le plus tôt possible après l’exposition : idéalement dans les 4 heures et au plus tard dans les 72 heures. La séance indique une durée de 28 jours."
+        "explanation": "Selon la HAS (juillet 2024) : début au plus tôt, idéalement dans les 4 heures et au plus tard dans les 48 heures ; durée de 30 jours. Le cours indique 72 heures et 28 jours : cette divergence doit être signalée, pas utilisée comme règle clinique française."
       }
     ]
   },
@@ -15163,9 +15162,9 @@
         "kind": "Notion précise",
         "front": "Quelles analyses accompagnent un TPE ?",
         "answers": [
-          "Un bilan initial, notamment VIH et hépatites selon la situation, puis des contrôles ultérieurs. La séance cite un contrôle à 6 semaines ; le calendrier exact suit le protocole."
+          "Bilan initial puis contrôles adaptés à l’exposition, au TPE, au risque d’hépatites et à une éventuelle transition vers la PrEP. Un contrôle à six semaines n’est pas un calendrier universel après TPE ; suivre le protocole médical applicable."
         ],
-        "explanation": "Un bilan initial, notamment VIH et hépatites selon la situation, puis des contrôles ultérieurs. La séance cite un contrôle à 6 semaines ; le calendrier exact suit le protocole."
+        "explanation": "Bilan initial puis contrôles adaptés à l’exposition, au TPE, au risque d’hépatites et à une éventuelle transition vers la PrEP. Un contrôle à six semaines n’est pas un calendrier universel après TPE ; suivre le protocole médical applicable."
       }
     ]
   },
@@ -15213,20 +15212,21 @@
     "number": 48,
     "theme": "PrEP, TPE et rôle infirmier",
     "difficulty": "hard",
-    "question": "Un étudiant propose de résoudre les huit situations du cas final en cochant « TPE oui/non ». Que répondre à partir des sources fournies ?",
+    "question": "Après une exposition potentielle au VIH, quels raisonnements sont adaptés ?",
     "choices": [
-      "La correction de ce dernier exercice n’a pas été donnée oralement.",
-      "Il faut fabriquer des réponses pour compléter la banque.",
-      "L’analyse doit distinguer type d’exposition, délai et contexte.",
-      "Les huit situations ont toutes reçu une correction orale officielle.",
-      "Tout cas cité dans une diapositive justifie automatiquement un TPE."
+      "Un contact de sang sur une peau réellement intacte n’est pas assimilé à une piqûre.",
+      "Une aiguille abandonnée dans une poubelle impose automatiquement un TPE VIH.",
+      "La suppression virale durablement documentée de la personne source compte dans l’évaluation d’une exposition sexuelle.",
+      "Le type d’exposition, son délai et les informations sur la personne source doivent être précisés.",
+      "La seule présence du mot VIH suffit à décider du TPE dans toutes les situations."
     ],
     "answers": [
       0,
-      2
+      2,
+      3
     ],
-    "explanation": "Le cas final sur les expositions est présent dans les captures mais non corrigé dans l’enregistrement. Il doit rester en exercice de raisonnement sans clés inventées.\nPropositions à écarter : B et E : une correction non sourcée ou une règle automatique seraient dangereuses. D : La transcription se termine sans correction de ces huit situations.",
-    "announcedCorrectCount": 2,
+    "explanation": "A, C et D sont cohérentes avec le corrigé pédagogique retrouvé dans les diapositives 27 à 34. B et E érigent à tort une situation ou un statut en indication automatique. L’item orange de la dernière diapositive reste conditionnel ; le corrigé ne remplace pas l’évaluation médicale de l’exposition.",
+    "announcedCorrectCount": 3,
     "partId": "p01",
     "sourceKind": "course_captures",
     "sourceStatus": "provisional",

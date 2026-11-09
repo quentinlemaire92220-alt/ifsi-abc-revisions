@@ -11463,6 +11463,380 @@
         "approvedAt": "2026-11-08T17:54:37.325971+00:00",
         "bundleSha256": "1e3a45854e6adabc9123f22f5d2b87261175eddf41677655abcd1d59e0e25b5a"
       }
+    },
+    {
+      "id": "vih_correction_20261109",
+      "courseId": "vih_b13_20261027",
+      "contract": "scoped_course_revision_v1",
+      "profile": "reconciled_written_correction_v1",
+      "status": "approved",
+      "baselinePath": "docs/course-revisions/vih_correction_20261109_baseline.json",
+      "baselineSha256": "1fefb96e9d7fdd8128fe233e7bc5d3baeef1a9d22ecc0db403ccb3127824d75e",
+      "sheetResourceId": "vih_correction_20261109_sheet",
+      "bankPath": "data/course-banks/vih_correction_20261109.json",
+      "bankSha256": "c3f73309b596db974ac0733ad5e5a0d0cda4888a01e86adf51f14253be09a756",
+      "questionIds": [
+        "vih_b13_20261027_001",
+        "vih_b13_20261027_002",
+        "vih_b13_20261027_003",
+        "vih_b13_20261027_004",
+        "vih_b13_20261027_005",
+        "vih_b13_20261027_006",
+        "vih_b13_20261027_007",
+        "vih_b13_20261027_008",
+        "vih_b13_20261027_009",
+        "vih_b13_20261027_010",
+        "vih_b13_20261027_011",
+        "vih_b13_20261027_012",
+        "vih_b13_20261027_013",
+        "vih_b13_20261027_014",
+        "vih_b13_20261027_015",
+        "vih_b13_20261027_016",
+        "vih_b13_20261027_017",
+        "vih_b13_20261027_018",
+        "vih_b13_20261027_019",
+        "vih_b13_20261027_020",
+        "vih_b13_20261027_021",
+        "vih_b13_20261027_022",
+        "vih_b13_20261027_023",
+        "vih_b13_20261027_024",
+        "vih_b13_20261027_025",
+        "vih_b13_20261027_026",
+        "vih_b13_20261027_027",
+        "vih_b13_20261027_028",
+        "vih_b13_20261027_029",
+        "vih_b13_20261027_030",
+        "vih_b13_20261027_031",
+        "vih_b13_20261027_032",
+        "vih_b13_20261027_033",
+        "vih_b13_20261027_034",
+        "vih_b13_20261027_035",
+        "vih_b13_20261027_036",
+        "vih_b13_20261027_037",
+        "vih_b13_20261027_038",
+        "vih_b13_20261027_039",
+        "vih_b13_20261027_040",
+        "vih_b13_20261027_041",
+        "vih_b13_20261027_042",
+        "vih_b13_20261027_043",
+        "vih_b13_20261027_044",
+        "vih_b13_20261027_045",
+        "vih_b13_20261027_046",
+        "vih_b13_20261027_047",
+        "vih_b13_20261027_048",
+        "vih_b13_20261027_049",
+        "vih_b13_20261027_050"
+      ],
+      "vocabularyEntryIds": [
+        "vih_b13_20261027_glossaire_01",
+        "vih_b13_20261027_glossaire_02",
+        "vih_b13_20261027_glossaire_03",
+        "vih_b13_20261027_glossaire_04",
+        "vih_b13_20261027_glossaire_05",
+        "vih_b13_20261027_glossaire_06",
+        "vih_b13_20261027_glossaire_07",
+        "vih_b13_20261027_glossaire_08",
+        "vih_b13_20261027_glossaire_09",
+        "vih_b13_20261027_glossaire_10",
+        "vih_b13_20261027_glossaire_11",
+        "vih_b13_20261027_glossaire_12",
+        "vih_b13_20261027_glossaire_13",
+        "vih_b13_20261027_glossaire_14",
+        "vih_b13_20261027_glossaire_15",
+        "vih_b13_20261027_glossaire_16",
+        "vih_b13_20261027_glossaire_17",
+        "vih_b13_20261027_glossaire_18",
+        "vih_b13_20261027_glossaire_19",
+        "vih_b13_20261027_glossaire_20",
+        "vih_b13_20261027_glossaire_21",
+        "vih_b13_20261027_glossaire_22",
+        "vih_b13_20261027_glossaire_23",
+        "vih_b13_20261027_glossaire_24",
+        "vih_b13_20261027_glossaire_25",
+        "vih_b13_20261027_glossaire_26",
+        "vih_b13_20261027_glossaire_27",
+        "vih_b13_20261027_glossaire_28",
+        "vih_b13_20261027_glossaire_29",
+        "vih_b13_20261027_glossaire_30",
+        "vih_b13_20261027_glossaire_31",
+        "vih_b13_20261027_glossaire_32",
+        "vih_b13_20261027_glossaire_33",
+        "vih_b13_20261027_glossaire_34",
+        "vih_b13_20261027_glossaire_35",
+        "vih_b13_20261027_glossaire_36",
+        "vih_b13_20261027_glossaire_37",
+        "vih_b13_20261027_glossaire_38",
+        "vih_b13_20261027_glossaire_39",
+        "vih_b13_20261027_glossaire_40",
+        "vih_b13_20261027_glossaire_41",
+        "vih_b13_20261027_glossaire_42",
+        "vih_b13_20261027_glossaire_43",
+        "vih_b13_20261027_glossaire_44",
+        "vih_b13_20261027_glossaire_45",
+        "vih_b13_20261027_glossaire_46",
+        "vih_b13_20261027_glossaire_47",
+        "vih_b13_20261027_glossaire_48",
+        "vih_b13_20261027_glossaire_49",
+        "vih_b13_20261027_glossaire_50",
+        "vih_b13_20261027_glossaire_51",
+        "vih_b13_20261027_glossaire_52"
+      ],
+      "publicArtifacts": [
+        {
+          "role": "sheet",
+          "path": "assets/vih-correction-20261109/VIH_Fiche.pdf",
+          "sha256": "849c43ea916d9d1368b07eecd6ffc4f79d715bbbf4de7f20d9b0cb8c7d33d449",
+          "bytes": 453011,
+          "pageCount": 17
+        },
+        {
+          "role": "qcm",
+          "path": "assets/vih-correction-20261109/VIH_QCM_50_corriges.pdf",
+          "sha256": "2fc5a145f002905b19a5df61cba1a309b1b0ba814a5ea891bab2080a2c1eba00",
+          "bytes": 459859,
+          "pageCount": 20
+        },
+        {
+          "role": "flashcards",
+          "path": "assets/vih-correction-20261109/VIH_Cartes_50.pdf",
+          "sha256": "eccd495ba27ae13c4b96070193844b02a58e0465c566fe426ac0cc0f5eb568f2",
+          "bytes": 58196,
+          "pageCount": 11
+        }
+      ],
+      "audioArtifacts": [
+        {
+          "vocalId": "vih_b13_20261027_vocal_05",
+          "path": "assets/audio/vih-correction-20261109/Vocal_05_VIH_PrEP_TPE_Role_Infirmier.mp3",
+          "sha256": "f6472c8574b79fb30e709eaf9e8c1b7654b6b28751667aec8c99e44e2a090f13",
+          "bytes": 2317392,
+          "durationSeconds": 339.021333,
+          "fromSha256": "56c15a0fbad63085383b1aa40301e29a35a51bb28a06864a0c1c332a42cb8e11"
+        }
+      ],
+      "sourceReview": {
+        "officialSupportAvailable": true,
+        "receivedOralPartsReviewed": 1,
+        "oralCoverageCertifiedComplete": true,
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "externalResearchPerformed": true,
+        "verifiedCorrectionsDisclosed": true,
+        "privateEvidenceSha256": "85e9d4e30d2c1db05bb140cf8db895eed3b7e057c46a542d5ff3d8f84671809f"
+      },
+      "assistantPdfReview": {
+        "allPagesChecked": true,
+        "method": "all_pages_contact_review_and_targeted_enlarged_review",
+        "pageCounts": {
+          "sheet": 17,
+          "qcm": 20,
+          "flashcards": 11
+        },
+        "privateEvidenceSha256": "dc0d9b446170762b795921627abe65fec3832b79d64d56ff254edffb9a08d029"
+      },
+      "templateConformance": {
+        "profile": "compact_integrated_lexicon_v1",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "849c43ea916d9d1368b07eecd6ffc4f79d715bbbf4de7f20d9b0cb8c7d33d449",
+            "pageCount": 17,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "status": "assistant_reviewed",
+            "method": "all_pages_contact_review_and_targeted_enlarged_review",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "privateEvidenceSha256": "dc0d9b446170762b795921627abe65fec3832b79d64d56ff254edffb9a08d029"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "2fc5a145f002905b19a5df61cba1a309b1b0ba814a5ea891bab2080a2c1eba00",
+            "pageCount": 20,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "status": "assistant_reviewed",
+            "method": "all_pages_contact_review_and_targeted_enlarged_review",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "privateEvidenceSha256": "dc0d9b446170762b795921627abe65fec3832b79d64d56ff254edffb9a08d029"
+          }
+        }
+      },
+      "nativeDiagramReview": {
+        "count": 3,
+        "rasterImages": 0,
+        "kind": "native_vector_blocks",
+        "authorization": "explicit_user_request",
+        "minimumAnnotationFontPt": 8.9,
+        "regions": [
+          {
+            "page": 2,
+            "rect": [
+              42,
+              72,
+              553,
+              372
+            ]
+          },
+          {
+            "page": 3,
+            "rect": [
+              42,
+              72,
+              553,
+              382
+            ]
+          },
+          {
+            "page": 5,
+            "rect": [
+              42,
+              250,
+              553,
+              560
+            ]
+          }
+        ],
+        "privateEvidenceSha256": "dc0d9b446170762b795921627abe65fec3832b79d64d56ff254edffb9a08d029"
+      },
+      "audioOwnerReview": {
+        "status": "publication_authorized_listening_reservations_disclosed",
+        "humanListeningAttested": false,
+        "privateEvidenceSha256": "88577c9154b27270d35c9a9c7e1d7a45e8786ba8c1bbe4039639844e95b94ef5"
+      },
+      "ownerAcceptance": {
+        "status": "explicit_application_update_authorized",
+        "approvedAt": "2026-11-09T11:44:20.551526+01:00",
+        "privateEvidenceSha256": "b34f00abad6d17e58d1da2799b6b0e76c1a7fdb4968f041d5aeaa81b5174c571"
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "849c43ea916d9d1368b07eecd6ffc4f79d715bbbf4de7f20d9b0cb8c7d33d449",
+        "privateEvidenceSha256": "b167e5428f5b3801fdab2568a24bdb3ecdf8fc4eadc4ce983d950466c6dd58ef",
+        "reviewedAt": "2026-11-09T11:44:20+01:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "scoped_course_revision",
+        "approvedAt": "2026-11-09T11:44:20.551526+01:00",
+        "bundleSha256": "c52da70494113e52f27ea5c2c72396f3944b88ae0db92f9f1b71e049fafc4816"
+      },
+      "sourceAttributionReview": {
+        "status": "documentary_reviewed",
+        "privateEvidenceSha256": "85e9d4e30d2c1db05bb140cf8db895eed3b7e057c46a542d5ff3d8f84671809f",
+        "fields": [
+          {
+            "questionId": "vih_b13_20261027_018",
+            "field": "explanation",
+            "sha256": "2214d413134f7e435782ea653fd0e0e895749625f4fe17a377f7e21940c0acf7"
+          },
+          {
+            "questionId": "vih_b13_20261027_040",
+            "field": "explanation",
+            "sha256": "c0263f305be8c59ea9dce6331ab4340bb4c6a58fdace989921dd0ef51b9da021"
+          },
+          {
+            "questionId": "vih_b13_20261027_040",
+            "field": "flashcards",
+            "sha256": "c90f5ff92d8f3d5c2b78437f4756ffaa3a282a69137487422ab82306856f7f76"
+          },
+          {
+            "questionId": "vih_b13_20261027_042",
+            "field": "explanation",
+            "sha256": "2970c3c7153c9b22fa8090c054aceabfc0339cf7e40d14952df5a2bd3d3bef3a"
+          },
+          {
+            "questionId": "vih_b13_20261027_042",
+            "field": "flashcards",
+            "sha256": "4a8fccafeb427b5b2da514cfd579383e84bf985a56f219a4c500baeae9d43c6d"
+          },
+          {
+            "questionId": "vih_b13_20261027_045",
+            "field": "question",
+            "sha256": "091e45dc712baa6f4a889e58607621ee4e644a19b83d4ee04c848ce999689918"
+          },
+          {
+            "questionId": "vih_b13_20261027_045",
+            "field": "choices",
+            "sha256": "ab1f5b0720181f64a68ec556d327959a1937c2086fe35266f6924d8f41ef371e"
+          },
+          {
+            "questionId": "vih_b13_20261027_045",
+            "field": "explanation",
+            "sha256": "34c00c9590c5760f853ef10060afb26aea49b7eedce9637eb5f916bd341806a6"
+          },
+          {
+            "questionId": "vih_b13_20261027_045",
+            "field": "flashcards",
+            "sha256": "c5c94a1b0e5f4d2997342ab041a6154caa4030ab9e5021ad39b8ee30bad57b98"
+          },
+          {
+            "questionId": "vih_b13_20261027_046",
+            "field": "flashcards",
+            "sha256": "2482b304a0dfb8762d32ec00656d2dbeae002af25c5819df62ca74563e390aa8"
+          },
+          {
+            "questionId": "vih_b13_20261027_048",
+            "field": "question",
+            "sha256": "1d1201b20fc73d52a58c5e244c9388713cca7087d052fd652b7c240268279039"
+          },
+          {
+            "questionId": "vih_b13_20261027_048",
+            "field": "choices",
+            "sha256": "efd9aaf466c63793b7dd46d6f0c0f6b7795583945e5d5559124dcf68c85eb648"
+          },
+          {
+            "questionId": "vih_b13_20261027_048",
+            "field": "explanation",
+            "sha256": "684d43f9af4e498ae894bca505945686dc537f74eb0d8cda00c30169975b6576"
+          }
+        ]
+      }
     }
   ]
 }

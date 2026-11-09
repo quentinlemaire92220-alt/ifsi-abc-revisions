@@ -46,5 +46,5 @@ for(const delivery of after.courses||[]){
 }
 const checked=validateChangedDeliveries(before,after,oldData,newData);
 const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs');
-validateAudioSupplements(after,newData);
+validateAudioSupplements(after,historicalData);
 console.log(`✅ Validation avant publication : ${checked.length} lot(s) nouveau(x) ou modifié(s) approuvé(s) ; cours inchangés préservés.`);

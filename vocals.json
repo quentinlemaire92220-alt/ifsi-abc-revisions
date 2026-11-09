@@ -2067,8 +2067,7 @@
     "partNumber": 1,
     "release": "8.30.150",
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Support officiel intégral attendu",
+    "provisional": false,
     "localAudio": "./assets/audio/vih-20261027/Vocal_01_sur_05_VIH_CD4_SIDA.mp3"
   },
   {
@@ -2083,8 +2082,7 @@
     "partNumber": 2,
     "release": "8.30.150",
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Support officiel intégral attendu",
+    "provisional": false,
     "localAudio": "./assets/audio/vih-20261027/Vocal_02_sur_05_VIH_Transmission_Evolution.mp3"
   },
   {
@@ -2099,8 +2097,7 @@
     "partNumber": 3,
     "release": "8.30.150",
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Support officiel intégral attendu",
+    "provisional": false,
     "localAudio": "./assets/audio/vih-20261027/Vocal_03_sur_05_VIH_Infections_Opportunistes.mp3"
   },
   {
@@ -2115,8 +2112,7 @@
     "partNumber": 4,
     "release": "8.30.150",
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Support officiel intégral attendu",
+    "provisional": false,
     "localAudio": "./assets/audio/vih-20261027/Vocal_04_sur_05_VIH_Depistage_Traitements_Grossesse.mp3"
   },
   {
@@ -2126,14 +2122,13 @@
     "number": 5,
     "title": "PrEP, TPE et rôle infirmier",
     "mime": "audio/mpeg",
-    "durationSeconds": 362.632,
+    "durationSeconds": 339.021333,
     "partId": "p01",
     "partNumber": 5,
     "release": "8.30.150",
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Support officiel intégral attendu",
-    "localAudio": "./assets/audio/vih-20261027/Vocal_05_sur_05_VIH_PrEP_TPE_Role_Infirmier.mp3"
+    "provisional": false,
+    "localAudio": "./assets/audio/vih-correction-20261109/Vocal_05_VIH_PrEP_TPE_Role_Infirmier.mp3"
   },
   {
     "id": "tts_20261102_ue_a1_roles_et_missions_de_l_infirmier_missions_et_raisonnement_clinique_vocal_01_sur_02",
@@ -2274,8 +2269,7 @@
     "partId": "revision_questions_20261102",
     "partNumber": 2,
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+    "provisional": false,
     "release": "8.30.159",
     "durationSeconds": 413.058333
   },
@@ -2290,8 +2284,7 @@
     "partId": "revision_questions_20261102",
     "partNumber": 1,
     "syntheticSpeech": true,
-    "provisional": true,
-    "provisionalReason": "Révision audio complémentaire ; limites de provenance conservées pour les supports concernés",
+    "provisional": false,
     "release": "8.30.159",
     "durationSeconds": 400.958
   },
