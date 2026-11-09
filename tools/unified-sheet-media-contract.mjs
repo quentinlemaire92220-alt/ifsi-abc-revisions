@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+import {preservedBeforeCorrections} from './reconciled-correction-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 export const unifiedDigest=v=>createHash('sha256').update(JSON.stringify(canonical(v))).digest('hex');
@@ -21,7 +22,7 @@ export function validateUnifiedSheetMedia(r,manifest,actual){
  assert.equal(r.bankPath,old.delivery.qcmBank);assert.equal(hash(r.bankPath),r.bankSha256);assert.equal(r.bankSha256,old.bankSha256);
  assert.deepEqual(actual.bank,old.bank);assert.deepEqual(r.questionIds,actual.bank.map(q=>q.id));assert.deepEqual(course.canonicalQuestionIds,r.questionIds);
  assert.deepEqual(actual.vocabulary,old.vocabulary);assert.deepEqual(r.vocabularyEntryIds,old.course.vocabularyEntryIds);
- for(const x of old.preservedFiles)assert.equal(hash(x.path),x.sha256,'Existing exercise/vocabulary file changed');
+ for(const x of old.preservedFiles)assert.equal(preservedBeforeCorrections(x.path,manifest,x.sha256),x.sha256,'Existing exercise/vocabulary file changed outside an independently approved correction');
  assert.deepEqual(actual.vocals,old.rows['vocals.json'],'Raw historical audio must stay intact');
  const sheet=actual.sheets.find(s=>s.resourceId===r.sheetResourceId);
  assert.ok(sheet);assert.equal(sheet.primaryRevision,true);assert.equal(sheet.officialSupport,true);assert.equal(sheet.provisional,false);assert.equal(sheet.pageCount,r.publicArtifacts[0].pageCount);

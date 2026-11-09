@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {autonomyViolations} from '../tests/qcm-autonomy-contract.mjs';
+import {autonomyViolations,reviewedFieldDigest} from '../tests/qcm-autonomy-contract.mjs';
 export function validateBank(rows,label='bank',options={}){
  const glossaryCount=options.glossaryCount;
  if(glossaryCount!==undefined){
@@ -25,7 +25,12 @@ export function validateBank(rows,label='bank',options={}){
   for(const f of q.flashcards){
    assert.ok(f.front?.trim()&&f.answers?.length&&f.answers.every(a=>typeof a==='string'&&a.trim())&&f.explanation?.trim(),q.id+': carte incomplète');
   }
-  assert.deepEqual(autonomyViolations(q),[],q.id+': dépendance à une source absente');
+  const prior=options.previousRows?.find(x=>x.id===q.id);
+  const issues=autonomyViolations(q).filter(x=>{
+   if(prior&&JSON.stringify(prior[x.field])===JSON.stringify(q[x.field]))return false;
+   return !options.reviewedSourceComparisonFields?.some(r=>r.questionId===q.id&&r.field===x.field&&r.sha256===reviewedFieldDigest(x.field,q[x.field]));
+  });
+  assert.deepEqual(issues,[],q.id+': dépendance à une source absente');
  }
  return rows.length;
 }

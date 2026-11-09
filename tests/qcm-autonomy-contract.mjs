@@ -3,6 +3,11 @@
 // La vérification de la formulation ne remplace pas la revue médicale.
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+export function reviewedFieldDigest(field,value){
+ const text=s=>String(s).normalize('NFKC').replace(/\s+/g,' ').replace(/\s+([?!:;])/g,'$1').trim();
+ const v=field==='flashcards'?value.map(c=>({front:text(c.front),answers:text(c.answers.join('; ')),explanation:text(c.explanation)})):value;
+ return createHash('sha256').update(JSON.stringify(v)).digest('hex');
+}
 
 const patterns = [
   /\b(?:le|ce)\s+TD\s+(?:définit|souligne|insiste|valorise)\b/iu,
@@ -66,6 +71,11 @@ export function validateChangedQcmBanks(beforeRows,afterRows,fileName='banque',o
     // On bloque toute NOUVELLE dépendance au support (pas les dettes inchangées).
     const previousErrors=old?autonomyViolations(old):[];
     const errors=autonomyViolations(item).filter(issue=>{
+      // A source reconciliation may intentionally contrast two fully written
+      // recommendations. The caller supplies only fields independently checked
+      // by the signed scoped-revision gate; any byte change restores this check.
+      const reviewed=options.reviewedSourceComparisonFields?.find(x=>x.questionId===item.id&&x.field===issue.field);
+      if(reviewed&&reviewedFieldDigest(issue.field,item[issue.field])===reviewed.sha256)return false;
       // Exception bornée à un snapshot pédagogique V4.2 identifié par son SHA Git.
       // L'exonération s'applique seulement aux attributions explicites du corrigé,
       // avec contrôle du hash exact en amont ; les choix/énoncés restent contrôlés.

@@ -1,6 +1,7 @@
 // A reviewed question/card replacement cannot authorize a sheet, audio or vocabulary change.
 import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
 import {validateBank} from './qcm-bank-contract.mjs';
+import {preservedBeforeCorrections} from './reconciled-correction-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const canon=v=>Array.isArray(v)?v.map(canon):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().filter(k=>v[k]!==undefined).map(k=>[k,canon(v[k])])):v;
 const digest=v=>createHash('sha256').update(JSON.stringify(canon(v))).digest('hex');
@@ -14,7 +15,7 @@ export function validateQcmFlashcardsRevision(r,manifest,actual){
  const allowed=['canonicalQuestionIds','qcmPdfUrl','qcmPdfQuestionCount','flashcardsPdfUrl','flashcardTarget','authoredFlashcards','authoredFlashcardPresentation','vocabularyEntryIds','activeDocumentUrls','additionalDocuments'];
  const strip=c=>Object.fromEntries(Object.entries(c).filter(([k])=>!allowed.includes(k)));
  assert.deepEqual(strip(course),strip(old.course),'Identity/support/audio/sheet selection changed');
- for(const [file,sha256] of Object.entries(old.protectedFiles))assert.equal(hash(file),sha256,'Protected file changed: '+file);
+ for(const [file,sha256] of Object.entries(old.protectedFiles))assert.equal(preservedBeforeCorrections(file,manifest,sha256),sha256,'Protected file changed outside an independently approved correction: '+file);
  assert.deepEqual(actual.sheets,[1,2,3].flatMap(n=>old.rows['sheets-'+n+'.json']),'Sheet changed');
  assert.deepEqual(actual.vocals,old.rows['vocals.json'],'Audio changed');assert.deepEqual(actual.vocabulary,old.vocabulary,'Vocabulary changed');
  assert.deepEqual(read('infographics.json').filter(c=>c.courseId===r.courseId),old.rows['infographics.json'],'Infographics changed');

@@ -7,6 +7,7 @@ import zlib from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {validateChangedQcmBanks} from './qcm-autonomy-contract.mjs';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
+import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 
 const git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:32*1024*1024});
 const baseHint=String(process.env.IFSI_BASE_SHA||'').trim();
@@ -46,6 +47,9 @@ const oldExtras=await vm.runInContext('loadExtras()',oldLoader);
 const oldQuestions=[1,2,3,4,5].flatMap(n=>decode(git(['show',base+':questions-'+n+'.json']),'base'));
 const previousById=new Map([...oldQuestions,...oldExtras].map(q=>[q.id,JSON.parse(JSON.stringify(q))]));
 const live=await runtimeDeck();
+const actualManifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));
+validateScopedRevisions(actualManifest);
+const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>r.profile==='reconciled_written_correction_v1').flatMap(r=>r.sourceAttributionReview.fields);
 const presented=new Set(live.registry.courses.filter(c=>c.authoredFlashcardPresentation==='standalone_v1').map(c=>c.id));
 for(const name of filenames){
   if(!fs.existsSync(name))continue; // Une banque supprimée n'ajoute pas de QCM.
@@ -75,6 +79,6 @@ for(const name of filenames){
    return {...q,flashcards:cards.map(c=>({front:c.front,answers:[...c.answers],explanation:c.explanation}))};
   });
   const exactReviewedSourceQuestionIds=new Set(exactReviewed?['plaies_p1_020']:[]);
-  count+=validateChangedQcmBanks([...previousById.values(),...previous],displayed,name,{exactReviewedSourceAttributionIds,exactReviewedSourceQuestionIds});
+  count+=validateChangedQcmBanks([...previousById.values(),...previous],displayed,name,{exactReviewedSourceAttributionIds,exactReviewedSourceQuestionIds,reviewedSourceComparisonFields});
 }
 console.log('✅ Autonomie TD/support : '+count+' item(s) QCM nouveau(x)/modifié(s) contrôlé(s) dans '+filenames.length+' banque(s). Les questions historiques inchangées restent hors de ce contrôle différentiel.');
