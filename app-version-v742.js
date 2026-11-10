@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.186';
+const VERSION='8.30.187';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Prévention du risque infectieux : IAS, AES et vaccination, 128 QCM et huit vocaux.`;
