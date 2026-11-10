@@ -1,5 +1,6 @@
 // A new unified sheet and an accepted replacement playlist share the existing
 // question bank, vocabulary and signed historical delivery without editing them.
+import {historicalSeries} from './consolidated-course-contract.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -42,7 +43,7 @@ export function validateUnifiedSheetMedia(r,manifest,actual){
  assert.equal(r.assistantPdfReview.allPagesChecked,true);proof(r.assistantPdfReview.privateEvidenceSha256);
  assert.equal(r.sourceReview.receivedOralPartsReviewed,2);assert.equal(r.sourceReview.oralCoverageCertifiedComplete,true);assert.equal(r.sourceReview.officialSupportAvailable,true);assert.equal(r.sourceReview.independentClinicalSignoff,false);assert.equal(r.sourceReview.externalResearchPerformed,false);proof(r.sourceReview.privateEvidenceSha256);
  assert.equal(r.fusionReview.originalBodyPagesPreserved,36);assert.equal(r.fusionReview.nativeDiagramCount,4);assert.equal(r.fusionReview.sourceDocuments,4);proof(r.fusionReview.privateEvidenceSha256);
- const series=read('audio-series-v1.json').series.find(s=>s.id===r.audioSeriesId);
+ const series=historicalSeries(manifest,r.audioSeriesId);
  assert.ok(series);assert.equal(unifiedDigest(series),r.audioSeriesSha256);assert.equal(series.courseId,r.courseId);assert.equal(series.preserveVocalIds,true);assert.deepEqual(series.previousVocals,old.rows['vocals.json']);assert.deepEqual(series.replaces,old.rows['vocals.json'].map(v=>v.id));assert.equal(series.vocals.length,6);
  assert.deepEqual(course.activeVocalIds,series.vocals.map(v=>v.id));assert.ok(series.vocals.every(v=>series.replaces.includes(v.id)));
  for(const a of [...series.artifacts,...series.previousArtifacts]){assert.equal(hash(a.path),a.sha256);assert.equal(fs.statSync(a.path).size,a.bytes);}

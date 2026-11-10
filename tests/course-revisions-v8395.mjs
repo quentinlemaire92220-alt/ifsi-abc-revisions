@@ -31,7 +31,9 @@ for(const [id,path,count,cards,vocab,captures] of [
  assert.equal(d.infographicSheetVisualAudit.pdfSha256,d.infographicSheetPublishedVerification.pdfSha256);
 }
 const base=process.env.IFSI_BASE_SHA||'HEAD^';
-const before=JSON.parse(execFileSync('git',['show',base+':vocals.json']).toString('utf8'));
+const priorReader=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{maxBuffer:32*1024*1024}).toString('utf8'));
+const priorManifest=priorReader('docs/course-deliveries.json');
+const before=priorReader('vocals.json').map(v=>{for(const r of priorManifest.scopedCourseRevisions||[]){if(r.profile!=='reconciled_written_correction_v1')continue;const was=priorReader(r.baselinePath).rows['vocals.json'].find(x=>x.id===v.id);if(was)return was;}return v;});
 validateScopedRevisions(manifest);
 const now=read('vocals.json').map(v=>{for(const r of manifest.scopedCourseRevisions||[]){if(r.profile!=='reconciled_written_correction_v1')continue;const was=read(r.baselinePath).rows['vocals.json'].find(x=>x.id===v.id);if(was)return was;}return v;});
 assert.ok(before.length>=105,'Le catalogue de base doit conserver au minimum 105 vocaux');

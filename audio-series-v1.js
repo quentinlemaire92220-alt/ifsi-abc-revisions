@@ -20,8 +20,12 @@ function validate(data){
       ids.add(v.id);paths.add(v.localAudio);
     }
     if(s.preserveVocalIds!==undefined){
-      if(s.preserveVocalIds!==true||s.reviewContract!==undefined||!Array.isArray(s.previousVocals)||JSON.stringify(s.previousVocals.map(v=>v.id))!==JSON.stringify(s.replaces)||!s.vocals.every(v=>s.replaces.includes(v.id)))throw Error('Identités du remplacement non rapprochées');
-      if(!Array.isArray(s.previousArtifacts)||s.previousArtifacts.length!==s.vocals.length||!s.previousArtifacts.every((a,i)=>a.vocalId===s.vocals[i].id&&a.path===s.previousVocals.find(v=>v.id===a.vocalId)?.localAudio?.slice(2)&&/^[a-f0-9]{64}$/.test(a.sha256)))throw Error('Octets historiques non documentés');
+      if(s.preserveVocalIds!==true||s.reviewContract!==undefined||!Array.isArray(s.previousVocals)||JSON.stringify(s.previousVocals.map(v=>v.id))!==JSON.stringify(s.replaces)||!s.vocals.every(v=>s.replaces.includes(v.id)||(s.appendedVocalIds||[]).includes(v.id)))throw Error('Identités du remplacement non rapprochées');
+      if(!Array.isArray(s.previousArtifacts)||s.previousArtifacts.length!==(s.appendedVocalIds?s.vocals.length-s.appendedVocalIds.length:s.vocals.length)||!s.previousArtifacts.every((a,i)=>a.vocalId===s.vocals[i].id&&a.path===s.previousVocals.find(v=>v.id===a.vocalId)?.localAudio?.slice(2)&&/^[a-f0-9]{64}$/.test(a.sha256)))throw Error('Octets historiques non documentés');
+    }
+    if(s.appendedVocalIds!==undefined){
+      const added=s.vocals.filter(v=>!s.replaces.includes(v.id)).map(v=>v.id);
+      if(s.preserveVocalIds!==true||!Array.isArray(s.appendedVocalIds)||!s.appendedVocalIds.length||new Set(s.appendedVocalIds).size!==s.appendedVocalIds.length||JSON.stringify(added)!==JSON.stringify(s.appendedVocalIds)||s.appendedVocalIds.some(id=>s.replaces.includes(id))||s.vocals.slice(-added.length).some((v,i)=>v.id!==added[i]))throw Error('Nouveaux épisodes non rapprochés');
     }
     if(s.status==='approved'){
       if(s.reviewContract==='provided_audio_series_v1'){

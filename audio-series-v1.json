@@ -703,10 +703,14 @@
       }
     },
     {
-      "id": "prevention_fusion_20261107",
+      "id": "prevention_consolide_20261109",
       "courseId": "prevention_ias_asepsie",
       "status": "approved",
       "preserveVocalIds": true,
+      "appendedVocalIds": [
+        "prevention_ias_asepsie_global_20261102_vocal_07",
+        "prevention_ias_asepsie_global_20261102_vocal_08"
+      ],
       "replaces": [
         "ias_01",
         "prevention_ias_asepsie_p01_vocal_02",
@@ -873,12 +877,12 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 1,
-          "title": "Prévention 1/6 — Agents, IAS et prévention coordonnée",
+          "title": "Risque infectieux 1/8 — Agents, infections associées aux soins et prévention coordonnée",
           "mime": "audio/mpeg",
-          "durationSeconds": 568.333333,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_01.mp3",
-          "driveId": "1MTzDAB65Eut6Mi5gpAphMgqcqGEuvdnf",
-          "url": "https://drive.google.com/file/d/1MTzDAB65Eut6Mi5gpAphMgqcqGEuvdnf/view?usp=drivesdk",
+          "durationSeconds": 383.370667,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_01.mp3",
+          "driveId": "1YoMWDt_AISuV4RaTlSLhfL_CP2GWkEYu",
+          "url": "https://drive.google.com/file/d/1YoMWDt_AISuV4RaTlSLhfL_CP2GWkEYu/view?usp=drivesdk",
           "syntheticSpeech": true
         },
         {
@@ -886,12 +890,12 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 2,
-          "title": "Prévention 2/6 — Organisation des soins et précautions standard",
+          "title": "Risque infectieux 2/8 — Précautions standard, mains et équipements de protection",
           "mime": "audio/mpeg",
-          "durationSeconds": 545.273333,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_02.mp3",
-          "driveId": "1uS1YinwdgWtbuiumx7tt2a4zky8DSMF0",
-          "url": "https://drive.google.com/file/d/1uS1YinwdgWtbuiumx7tt2a4zky8DSMF0/view?usp=drivesdk",
+          "durationSeconds": 378.773333,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_02.mp3",
+          "driveId": "1F0FIR9ZbqS96KyHGV2c67NNoXfHCwm7r",
+          "url": "https://drive.google.com/file/d/1F0FIR9ZbqS96KyHGV2c67NNoXfHCwm7r/view?usp=drivesdk",
           "syntheticSpeech": true
         },
         {
@@ -899,12 +903,12 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 3,
-          "title": "Prévention 3/6 — Précautions complémentaires et résistances",
+          "title": "Risque infectieux 3/8 — Accidents d’exposition au sang, circuits et précautions complémentaires",
           "mime": "audio/mpeg",
-          "durationSeconds": 560.956,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_03.mp3",
-          "driveId": "1yKddCQbea59E3BZ0Y_B5GvE-eu9OiCSB",
-          "url": "https://drive.google.com/file/d/1yKddCQbea59E3BZ0Y_B5GvE-eu9OiCSB/view?usp=drivesdk",
+          "durationSeconds": 407.009333,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_03.mp3",
+          "driveId": "1kMwuN_yEdX5rKxqjmyn6MkCxQHH_jlUo",
+          "url": "https://drive.google.com/file/d/1kMwuN_yEdX5rKxqjmyn6MkCxQHH_jlUo/view?usp=drivesdk",
           "syntheticSpeech": true
         },
         {
@@ -912,12 +916,12 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 4,
-          "title": "Prévention 4/6 — Asepsie et antiseptiques",
+          "title": "Risque infectieux 4/8 — Asepsie, antisepsie et classification des dispositifs",
           "mime": "audio/mpeg",
-          "durationSeconds": 558.422667,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_04.mp3",
-          "driveId": "1CEmWFflvssPtmFMtHqNj-edGyGdT2LJl",
-          "url": "https://drive.google.com/file/d/1CEmWFflvssPtmFMtHqNj-edGyGdT2LJl/view?usp=drivesdk",
+          "durationSeconds": 388.874667,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_04.mp3",
+          "driveId": "14rBHQ3LsocnxH1dR-bWxBAgM24fKnFdW",
+          "url": "https://drive.google.com/file/d/14rBHQ3LsocnxH1dR-bWxBAgM24fKnFdW/view?usp=drivesdk",
           "syntheticSpeech": true
         },
         {
@@ -925,12 +929,12 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 5,
-          "title": "Prévention 5/6 — Dispositifs, retraitement et stérilité",
+          "title": "Risque infectieux 5/8 — Retraitement, stérilité, air et eau",
           "mime": "audio/mpeg",
-          "durationSeconds": 541.625333,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_05.mp3",
-          "driveId": "1GfxWpiJZRjxCDyxRcdSI206hqnSo-eo9",
-          "url": "https://drive.google.com/file/d/1GfxWpiJZRjxCDyxRcdSI206hqnSo-eo9/view?usp=drivesdk",
+          "durationSeconds": 392.268,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_05.mp3",
+          "driveId": "1Hrmm2Kvh50sK5zg_jetRCDT50GNLudtN",
+          "url": "https://drive.google.com/file/d/1Hrmm2Kvh50sK5zg_jetRCDT50GNLudtN/view?usp=drivesdk",
           "syntheticSpeech": true
         },
         {
@@ -938,68 +942,108 @@
           "courseId": "prevention_ias_asepsie",
           "course": "Prévention des IAS et asepsie",
           "number": 6,
-          "title": "Prévention 6/6 — Environnement, air, eau et cas pratiques",
+          "title": "Risque infectieux 6/8 — Cas de soins et raisonnement de prévention",
           "mime": "audio/mpeg",
-          "durationSeconds": 557.958667,
-          "localAudio": "./assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_06.mp3",
-          "driveId": "1Nv37uJ7ArEnQKzpaVbUruNZpNCHQ1s4-",
-          "url": "https://drive.google.com/file/d/1Nv37uJ7ArEnQKzpaVbUruNZpNCHQ1s4-/view?usp=drivesdk",
+          "durationSeconds": 397.457333,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_06.mp3",
+          "driveId": "11hP6_dr5srjJSpLs1BdVeFtAtGAvdD0x",
+          "url": "https://drive.google.com/file/d/11hP6_dr5srjJSpLs1BdVeFtAtGAvdD0x/view?usp=drivesdk",
+          "syntheticSpeech": true
+        },
+        {
+          "id": "prevention_ias_asepsie_global_20261102_vocal_07",
+          "courseId": "prevention_ias_asepsie",
+          "course": "Prévention des IAS et asepsie",
+          "number": 7,
+          "title": "Risque infectieux 7/8 — Infections urinaires, pneumopathies, site opératoire, cathéters et urgence après exposition",
+          "mime": "audio/mpeg",
+          "durationSeconds": 432.22,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_07.mp3",
+          "driveId": "1P51bH6AAfsJtZ_sAiwTLLD6jTPEsFAu-",
+          "url": "https://drive.google.com/file/d/1P51bH6AAfsJtZ_sAiwTLLD6jTPEsFAu-/view?usp=drivesdk",
+          "syntheticSpeech": true
+        },
+        {
+          "id": "prevention_ias_asepsie_global_20261102_vocal_08",
+          "courseId": "prevention_ias_asepsie",
+          "course": "Prévention des IAS et asepsie",
+          "number": 8,
+          "title": "Risque infectieux 8/8 — Vaccination, mémoire immunitaire, stratégies et rôle infirmier",
+          "mime": "audio/mpeg",
+          "durationSeconds": 471.372,
+          "localAudio": "./assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_08.mp3",
+          "driveId": "1p3KkEeGw2is3m2EOAMgbGSVcikqaCoai",
+          "url": "https://drive.google.com/file/d/1p3KkEeGw2is3m2EOAMgbGSVcikqaCoai/view?usp=drivesdk",
           "syntheticSpeech": true
         }
       ],
       "artifacts": [
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_01",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_01.mp3",
-          "sha256": "1328ea54daa0140e05b9fb2a035af5ab6920aef0d7c5450372bec93b78accd5e",
-          "bytes": 6821430,
-          "durationSeconds": 568.333333
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_01.mp3",
+          "sha256": "3a704aefba28a81617017a1b45d5c3acdfce3cabf6a1acdf8424992424ffe4d5",
+          "bytes": 4601813,
+          "durationSeconds": 383.370667
         },
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_02",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_02.mp3",
-          "sha256": "6f705cdbdbfbb4f7a7780f71753aec05247c95dd12e1ff272d0290c1686b3dbb",
-          "bytes": 6544662,
-          "durationSeconds": 545.273333
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_02.mp3",
+          "sha256": "ad30d3c79da404c7698b5c9f9995e277a508ca33b2a323454879455ed20a3d66",
+          "bytes": 4546805,
+          "durationSeconds": 378.773333
         },
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_03",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_03.mp3",
-          "sha256": "2e4d719690496499bc8f6d85109886d9fbfd20445584eba4f69d35a3b89e1c8e",
-          "bytes": 6733014,
-          "durationSeconds": 560.956
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_03.mp3",
+          "sha256": "e545d2578b9937c3c866e8d2607a45995a815658afdeec6e2710f5268db5b1e9",
+          "bytes": 4885493,
+          "durationSeconds": 407.009333
         },
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_04",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_04.mp3",
-          "sha256": "2ffc79554284ff8f21a8b92e17fdd82060d10ef5321207188dcf28058eb44982",
-          "bytes": 6702486,
-          "durationSeconds": 558.422667
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_04.mp3",
+          "sha256": "75991f782d58c2d4cec86ee369e49f733fd909c9587b7937880466ac14b59807",
+          "bytes": 4668053,
+          "durationSeconds": 388.874667
         },
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_05",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_05.mp3",
-          "sha256": "8852ca0e3076c5ba47a06df25a72a91f48a085ac061c3fab6ffeaeebee04d53c",
-          "bytes": 6500886,
-          "durationSeconds": 541.625333
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_05.mp3",
+          "sha256": "6aa3debcb015b6eb38abdc18abd1c7571acf2058b70cdddb73641bf9a0fbba65",
+          "bytes": 4708661,
+          "durationSeconds": 392.268
         },
         {
           "vocalId": "prevention_ias_asepsie_global_20261102_vocal_06",
-          "path": "assets/audio/prevention-fusion-20261107/UE_B1_S1_Prevention_risque_infectieux_Vocal_06.mp3",
-          "sha256": "67074319c382608c4b627aae2361678f15a0e1da1afab6a960e89a0a041f437f",
-          "bytes": 6697014,
-          "durationSeconds": 557.958667
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_06.mp3",
+          "sha256": "92ee6b7a5db3c280ad26858e7612ede201981a6f9e64b453092463a294a377bb",
+          "bytes": 4770869,
+          "durationSeconds": 397.457333
+        },
+        {
+          "vocalId": "prevention_ias_asepsie_global_20261102_vocal_07",
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_07.mp3",
+          "sha256": "079045b93a9f8946069fbed5fb9d4231a48a993666241035c74caa7d6847fed3",
+          "bytes": 5188181,
+          "durationSeconds": 432.22
+        },
+        {
+          "vocalId": "prevention_ias_asepsie_global_20261102_vocal_08",
+          "path": "assets/audio/prevention-consolide-20261109/UE_B1_S1_Risque_infectieux_Consolide_Vocal_08.mp3",
+          "sha256": "4730266d05e79cb72f23e979e3cee66ff2b38520699dc5877a29d53b0085418b",
+          "bytes": 5657909,
+          "durationSeconds": 471.372
         }
       ],
       "review": {
         "status": "owner_listened_and_accepted",
-        "privateEvidenceSha256": "915decce54b32611f52073c1052745a2d7cee7fad28494744d9d66dd41ffd7a8"
+        "privateEvidenceSha256": "8b0ff9cace4e04363c6aa7a78c47814c954f614b41b43d3ec62bc8e4f7b3f7b1"
       },
       "publicationApproval": {
         "authorization": "explicit_go_publication",
         "scope": "audio_series_replacement",
-        "approvedAt": "2026-11-07T11:11:12.752450+00:00",
-        "bundleSha256": "2a9156357ce10f427e868f466ef4e46cd46ef8cc2f6d76cffe4c93a9e229783e"
+        "approvedAt": "2026-11-09T17:35:33.013571+00:00",
+        "bundleSha256": "ce3f752110da2d98838dd844082bcf4d51db94d51d7f923c374726ec0b57d5f9"
       }
     },
     {

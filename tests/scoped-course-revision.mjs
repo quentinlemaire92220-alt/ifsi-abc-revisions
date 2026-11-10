@@ -7,7 +7,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const manifest=read('docs/course-deliveries.json');
 validateScopedRevisions(manifest);
 const runtime=await runtimeDeck();
-for(const r of manifest.scopedCourseRevisions||[]){
+for(const r of (manifest.scopedCourseRevisions||[]).filter(r=>!manifest.consolidatedCourseRevisions?.some(x=>x.priorRevisionId===r.id))){
  const course=runtime.registry.courses.find(c=>c.id===r.courseId),resource=runtime.window.IFSI_V741.resourcesForCourse(r.courseId);
  assert.deepEqual(JSON.parse(JSON.stringify(resource.questions.map(q=>q.id))),r.questionIds,'Active bank differs from approved bank');
  const cards=runtime.deck.filter(c=>c.courseId===r.courseId&&!String(c.id).startsWith('voc:'));

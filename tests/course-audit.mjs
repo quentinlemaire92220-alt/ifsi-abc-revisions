@@ -35,7 +35,7 @@ const infos=json('infographics.json');
 const publishedManifest=json('docs/course-deliveries.json');
 const siteBase='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 function verifiedPageAssetId(item){
- const revision=publishedManifest.scopedCourseRevisions?.find(r=>r.courseId===item.courseId&&r.sheetResourceId===item.resourceId);
+ const revision=[...(publishedManifest.scopedCourseRevisions||[]),...(publishedManifest.consolidatedCourseRevisions||[])].find(r=>r.courseId===item.courseId&&r.sheetResourceId===item.resourceId);
  if(revision){validateScopedRevisions(publishedManifest);const a=revision.publicArtifacts.find(a=>a.role==='sheet');return item.url===siteBase+a.path?'pages:'+a.path:null;}
 
  const c=publishedManifest.courses?.find(d=>d.courseId===item.courseId);

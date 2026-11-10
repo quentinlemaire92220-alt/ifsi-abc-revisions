@@ -7,7 +7,7 @@ import {execFileSync} from 'node:child_process';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {isExistingWrittenUpdate,validateExistingWrittenUpdate,verifyExistingWrittenHistory} from './existing-course-written-update-contract.mjs';
 const read=readHistoricalAudioJson;
-const data=await runtimeDeck();
+const data=await runtimeDeck({historical:true});
 const enumerationCases=[
  ['Stagnation, dépôts et températures favorables. La maîtrise du réseau doit être organisée et contrôlée.',3],
  ['Le lien avec les soins et l’absence au début, y compris d’incubation. Le délai seul ne suffit pas.',2],
