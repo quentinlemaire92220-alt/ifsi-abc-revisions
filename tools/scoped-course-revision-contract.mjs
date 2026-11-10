@@ -1,3 +1,4 @@
+import {validateVerifiedDocumentsAddition} from './verified-documents-addition-contract.mjs';
 import {validateConsolidations,consolidationBeforeBundle,consolidationBeforeJson} from './consolidated-course-contract.mjs';
 import {validateQcmFlashcardsRevision} from './qcm-flashcards-revision-contract.mjs';
 import {validateUnifiedSheetMedia} from './unified-sheet-media-contract.mjs';
@@ -37,6 +38,10 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
   if(r.profile==='reviewed_written_audio_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
    validateReviewedWrittenAudioRevision(r,manifest,revisionBundle(r));continue;
+  }
+  if(r.profile==='verified_documents_addition_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
+   validateVerifiedDocumentsAddition(r,manifest,revisionBundle(r));continue;
   }
   if(r.profile==='official_complete_written_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);

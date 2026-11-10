@@ -70,6 +70,7 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           node tests/complete-written-revision.mjs
+          node tests/psychopathologie-documents.mjs
           node tests/reviewed-written-audio-revision.mjs
           node tests/unified-sheet-media.mjs
 
@@ -136,6 +137,7 @@ jobs:
         run: |
           node tests/reconciled-correction.mjs
           python tests/reconciled-correction-pdf.py
+          python tests/psychopathologie-documents-pdf.py
           python tests/consolidated-course-pdf.py
 
       - name: Vérifier le profil PDF compact et les défauts injectés

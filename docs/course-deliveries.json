@@ -12365,6 +12365,892 @@
           }
         ]
       }
+    },
+    {
+      "id": "psychopathologie_documents_20261110",
+      "courseId": "psychopathologie",
+      "contract": "scoped_course_revision_v1",
+      "profile": "verified_documents_addition_v1",
+      "status": "approved",
+      "baselinePath": "docs/course-revisions/psychopathologie_documents_20261110_baseline.json",
+      "baselineSha256": "1b1be76fae0875020788da21915f8e5c0487418baa9a38899438c54c8e2746e2",
+      "bankPath": "data/course-banks/psychopathologie_20261110.json",
+      "bankSha256": "800bc578be548aa9df00a7d1f3e7f3e3c737cbc0a6be2c1f11aa8f353abdaa4c",
+      "questionIds": [
+        "psychopathologie_q001",
+        "psychopathologie_q002",
+        "psychopathologie_q003",
+        "psychopathologie_q004",
+        "psychopathologie_q005",
+        "psychopathologie_q006",
+        "psychopathologie_q007",
+        "psychopathologie_q008",
+        "psychopathologie_q009",
+        "psychopathologie_q010",
+        "psychopathologie_q011",
+        "psychopathologie_q012",
+        "psychopathologie_q013",
+        "psychopathologie_q014",
+        "psychopathologie_q015",
+        "psychopathologie_q016",
+        "psychopathologie_q017",
+        "psychopathologie_q018",
+        "psychopathologie_q019",
+        "psychopathologie_q020",
+        "psychopathologie_q021",
+        "psychopathologie_q022",
+        "psychopathologie_q023",
+        "psychopathologie_q024",
+        "psychopathologie_q025",
+        "psychopathologie_q026",
+        "psychopathologie_q027",
+        "psychopathologie_q028",
+        "psychopathologie_q029",
+        "psychopathologie_q030",
+        "psychopathologie_q031",
+        "psychopathologie_q032",
+        "psychopathologie_q033",
+        "psychopathologie_q034",
+        "psychopathologie_q035",
+        "psychopathologie_q036",
+        "psychopathologie_q037",
+        "psychopathologie_q038",
+        "psychopathologie_q039",
+        "psychopathologie_q040",
+        "psychopathologie_q041",
+        "psychopathologie_q042",
+        "psychopathologie_q043",
+        "psychopathologie_q044",
+        "psychopathologie_q045",
+        "psychopathologie_q046",
+        "psychopathologie_q047",
+        "psychopathologie_q048",
+        "psychopathologie_q049",
+        "psychopathologie_q050",
+        "psychopathologie_q051",
+        "psychopathologie_q052",
+        "psychopathologie_q053",
+        "psychopathologie_q054",
+        "psychopathologie_q055",
+        "psychopathologie_q056",
+        "psychopathologie_q057",
+        "psychopathologie_q058",
+        "psychopathologie_q059",
+        "psychopathologie_q060",
+        "psychopathologie_q061",
+        "psychopathologie_q062",
+        "psychopathologie_q063",
+        "psychopathologie_q064",
+        "psychopathologie_q065",
+        "psychopathologie_q066",
+        "psychopathologie_q067",
+        "psychopathologie_q068",
+        "psychopathologie_q069",
+        "psychopathologie_q070",
+        "psychopathologie_q071",
+        "psychopathologie_q072",
+        "psychopathologie_q073",
+        "psychopathologie_q074",
+        "psychopathologie_q075",
+        "psychopathologie_q076",
+        "psychopathologie_q077",
+        "psychopathologie_q078",
+        "psychopathologie_q079",
+        "psychopathologie_q080",
+        "psychopathologie_q081",
+        "psychopathologie_q082",
+        "psychopathologie_q083",
+        "psychopathologie_q084",
+        "psychopathologie_q085",
+        "psychopathologie_q086",
+        "psychopathologie_q087",
+        "psychopathologie_q088",
+        "psychopathologie_q089",
+        "psychopathologie_q090",
+        "psychopathologie_q091",
+        "psychopathologie_q092",
+        "psychopathologie_q093",
+        "psychopathologie_q094",
+        "psychopathologie_q095",
+        "psychopathologie_q096",
+        "psychopathologie_q097",
+        "psychopathologie_q098",
+        "psychopathologie_q099",
+        "psychopathologie_q100",
+        "psychopathologie_q101",
+        "psychopathologie_q102",
+        "psychopathologie_q103",
+        "psychopathologie_q104",
+        "psychopathologie_q105",
+        "psychopathologie_q106",
+        "psychopathologie_q107",
+        "psychopathologie_q108",
+        "psychopathologie_q109",
+        "psychopathologie_q110",
+        "psychopathologie_q111",
+        "psychopathologie_q112",
+        "psychopathologie_q113"
+      ],
+      "vocabularyEntryIds": [
+        "psychopathologie_d001",
+        "psychopathologie_d002",
+        "psychopathologie_d003",
+        "psychopathologie_d004",
+        "psychopathologie_d005",
+        "psychopathologie_d006",
+        "psychopathologie_d007",
+        "psychopathologie_d008",
+        "psychopathologie_d009",
+        "psychopathologie_d010",
+        "psychopathologie_d011",
+        "psychopathologie_d012",
+        "psychopathologie_d013",
+        "psychopathologie_d014",
+        "psychopathologie_d015",
+        "psychopathologie_d016",
+        "psychopathologie_d017",
+        "psychopathologie_d018",
+        "psychopathologie_d019",
+        "psychopathologie_d020",
+        "psychopathologie_d021",
+        "psychopathologie_d022",
+        "psychopathologie_d023",
+        "psychopathologie_d024",
+        "psychopathologie_d025",
+        "psychopathologie_d026",
+        "psychopathologie_d027",
+        "psychopathologie_d028",
+        "psychopathologie_d029",
+        "psychopathologie_d030",
+        "psychopathologie_d031",
+        "psychopathologie_d032",
+        "psychopathologie_d033",
+        "psychopathologie_d034",
+        "psychopathologie_d035",
+        "psychopathologie_d036",
+        "psychopathologie_d037",
+        "psychopathologie_d038",
+        "psychopathologie_d039",
+        "psychopathologie_d040",
+        "psychopathologie_d041",
+        "psychopathologie_d042",
+        "psychopathologie_d043",
+        "psychopathologie_d044",
+        "psychopathologie_d045",
+        "psychopathologie_d046",
+        "psychopathologie_d047",
+        "psychopathologie_d048",
+        "psychopathologie_d049",
+        "psychopathologie_d050",
+        "psychopathologie_d051",
+        "psychopathologie_d052",
+        "psychopathologie_d053",
+        "psychopathologie_d054",
+        "psychopathologie_d055",
+        "psychopathologie_d056",
+        "psychopathologie_d057",
+        "psychopathologie_d058",
+        "psychopathologie_d059",
+        "psychopathologie_d060",
+        "psychopathologie_d061",
+        "psychopathologie_d062",
+        "psychopathologie_d063",
+        "psychopathologie_d064",
+        "psychopathologie_d065",
+        "psychopathologie_d066",
+        "psychopathologie_d067",
+        "psychopathologie_d068",
+        "psychopathologie_d069",
+        "psychopathologie_d070",
+        "psychopathologie_d071",
+        "psychopathologie_d072",
+        "psychopathologie_d073",
+        "psychopathologie_d074",
+        "psychopathologie_d075",
+        "psychopathologie_d076",
+        "psychopathologie_d077",
+        "psychopathologie_d078",
+        "psychopathologie_d079",
+        "psychopathologie_d080",
+        "psychopathologie_d081",
+        "psychopathologie_d082",
+        "psychopathologie_d083",
+        "psychopathologie_d084",
+        "psychopathologie_d085",
+        "psychopathologie_d086",
+        "psychopathologie_d087",
+        "psychopathologie_d088",
+        "psychopathologie_d089",
+        "psychopathologie_d090",
+        "psychopathologie_d091",
+        "psychopathologie_d092",
+        "psychopathologie_d093",
+        "psychopathologie_d094",
+        "psychopathologie_d095",
+        "psychopathologie_d096",
+        "psychopathologie_d097",
+        "psychopathologie_d098",
+        "psychopathologie_d099",
+        "psychopathologie_d100",
+        "psychopathologie_d101",
+        "psychopathologie_d102",
+        "psychopathologie_d103",
+        "psychopathologie_d104",
+        "psychopathologie_d105",
+        "psychopathologie_d106",
+        "psychopathologie_d107",
+        "psychopathologie_d108",
+        "psychopathologie_d109",
+        "psychopathologie_d110",
+        "psychopathologie_d111",
+        "psychopathologie_d112",
+        "psychopathologie_d113",
+        "psychopathologie_d114",
+        "psychopathologie_d115",
+        "psychopathologie_d116",
+        "psychopathologie_d117",
+        "psychopathologie_d118",
+        "psychopathologie_d119",
+        "psychopathologie_d120",
+        "psychopathologie_d121",
+        "psychopathologie_d122",
+        "psychopathologie_d123",
+        "psychopathologie_d124",
+        "psychopathologie_d125",
+        "psychopathologie_d126",
+        "psychopathologie_d127",
+        "psychopathologie_d128",
+        "psychopathologie_d129",
+        "psychopathologie_d130",
+        "psychopathologie_d131",
+        "psychopathologie_d132",
+        "psychopathologie_d133",
+        "psychopathologie_d134",
+        "psychopathologie_d135",
+        "psychopathologie_d136",
+        "psychopathologie_d137",
+        "psychopathologie_d138",
+        "psychopathologie_d139",
+        "psychopathologie_d140",
+        "psychopathologie_d141",
+        "psychopathologie_d142",
+        "psychopathologie_d143",
+        "psychopathologie_d144",
+        "psychopathologie_d145",
+        "psychopathologie_d146",
+        "psychopathologie_d147",
+        "psychopathologie_d148",
+        "psychopathologie_d149",
+        "psychopathologie_d150",
+        "psychopathologie_d151",
+        "psychopathologie_d152",
+        "psychopathologie_d153",
+        "psychopathologie_d154",
+        "psychopathologie_d155",
+        "psychopathologie_d156",
+        "psychopathologie_d157",
+        "psychopathologie_d158",
+        "psychopathologie_d159",
+        "psychopathologie_d160",
+        "psychopathologie_d161",
+        "psychopathologie_d162",
+        "psychopathologie_d163",
+        "psychopathologie_d164",
+        "psychopathologie_d165",
+        "psychopathologie_d166",
+        "psychopathologie_d167",
+        "psychopathologie_d168",
+        "psychopathologie_d169",
+        "psychopathologie_d170",
+        "psychopathologie_d171",
+        "psychopathologie_d172",
+        "psychopathologie_d173",
+        "psychopathologie_d174",
+        "psychopathologie_d175",
+        "psychopathologie_d176",
+        "psychopathologie_d177",
+        "psychopathologie_d178",
+        "psychopathologie_d179",
+        "psychopathologie_d180",
+        "psychopathologie_d181",
+        "psychopathologie_d182",
+        "psychopathologie_d183",
+        "psychopathologie_d184",
+        "psychopathologie_d185",
+        "psychopathologie_d186",
+        "psychopathologie_d187",
+        "psychopathologie_d188",
+        "psychopathologie_d189",
+        "psychopathologie_d190",
+        "psychopathologie_d191",
+        "psychopathologie_d192",
+        "psychopathologie_d193",
+        "psychopathologie_d194",
+        "psychopathologie_d195",
+        "psychopathologie_d196",
+        "psychopathologie_d197",
+        "psychopathologie_d198",
+        "psychopathologie_d199",
+        "psychopathologie_d200",
+        "psychopathologie_d201",
+        "psychopathologie_d202",
+        "psychopathologie_d203",
+        "psychopathologie_d204",
+        "psychopathologie_d205",
+        "psychopathologie_d206",
+        "psychopathologie_d207",
+        "psychopathologie_d208",
+        "psychopathologie_d209",
+        "psychopathologie_d210",
+        "psychopathologie_d211",
+        "psychopathologie_d212",
+        "psychopathologie_d213",
+        "psychopathologie_d214",
+        "psychopathologie_d215",
+        "psychopathologie_d216",
+        "psychopathologie_d217",
+        "psychopathologie_d218",
+        "psychopathologie_d219",
+        "psychopathologie_d220",
+        "psychopathologie_d221",
+        "psychopathologie_d222",
+        "psychopathologie_d223",
+        "psychopathologie_d224",
+        "psychopathologie_d225",
+        "psychopathologie_d226",
+        "psychopathologie_d227",
+        "psychopathologie_d228",
+        "psychopathologie_d229",
+        "psychopathologie_d230",
+        "psychopathologie_d231",
+        "psychopathologie_d232",
+        "psychopathologie_d233",
+        "psychopathologie_d234",
+        "psychopathologie_d235",
+        "psychopathologie_d236",
+        "psychopathologie_d237",
+        "psychopathologie_d238",
+        "psychopathologie_d239",
+        "psychopathologie_d240",
+        "psychopathologie_d241",
+        "psychopathologie_d242",
+        "psychopathologie_d243",
+        "psychopathologie_d244",
+        "psychopathologie_d245",
+        "psychopathologie_d246",
+        "psychopathologie_d247",
+        "psychopathologie_d248",
+        "psychopathologie_d249",
+        "psychopathologie_d250",
+        "psychopathologie_d251",
+        "psychopathologie_d252",
+        "psychopathologie_d253",
+        "psychopathologie_d254",
+        "psychopathologie_d255",
+        "psychopathologie_d256",
+        "psychopathologie_d257",
+        "psychopathologie_d258",
+        "psychopathologie_d259",
+        "psychopathologie_d260",
+        "psychopathologie_d261",
+        "psychopathologie_d262",
+        "psychopathologie_d263",
+        "psychopathologie_d264",
+        "psychopathologie_d265",
+        "psychopathologie_d266",
+        "psychopathologie_d267",
+        "psychopathologie_d268",
+        "psychopathologie_d269",
+        "psychopathologie_d270",
+        "psychopathologie_d271",
+        "psychopathologie_d272",
+        "psychopathologie_d273",
+        "psychopathologie_d274",
+        "psychopathologie_d275",
+        "psychopathologie_d276",
+        "psychopathologie_d277",
+        "psychopathologie_d278",
+        "psychopathologie_d279",
+        "psychopathologie_d280",
+        "psychopathologie_d281",
+        "psychopathologie_d282",
+        "psychopathologie_d283",
+        "psychopathologie_d284",
+        "psychopathologie_d285",
+        "psychopathologie_d286",
+        "psychopathologie_d287",
+        "psychopathologie_d288",
+        "psychopathologie_d289",
+        "psychopathologie_d290",
+        "psychopathologie_d291",
+        "psychopathologie_d292",
+        "psychopathologie_d293",
+        "psychopathologie_d294",
+        "psychopathologie_d295",
+        "psychopathologie_d296",
+        "psychopathologie_d297",
+        "psychopathologie_d298",
+        "psychopathologie_d299",
+        "psychopathologie_d300",
+        "psychopathologie_d301"
+      ],
+      "sheetResourceId": "psychopathologie_fiche_verifiee_20261110",
+      "publicArtifacts": [
+        {
+          "role": "sheet",
+          "path": "assets/psychopathologie-documents-20261110/Psychopathologie_Fiche_revue_41p.pdf",
+          "sha256": "33537a6bab5f7909b54b89951745bae190a3d48b46c9b33857d2fb7dd8d452e4",
+          "bytes": 587407,
+          "pageCount": 41,
+          "driveId": "1ovLefKOtlgxPYRLVcvd02duRTotxXLjI",
+          "driveUrl": "https://drive.google.com/file/d/1ovLefKOtlgxPYRLVcvd02duRTotxXLjI/view?usp=drivesdk"
+        },
+        {
+          "role": "qcm",
+          "path": "assets/psychopathologie-documents-20261110/Psychopathologie_QCM_113_Corriges.pdf",
+          "sha256": "ffbdc5195cc112f1dd845807b850746f6369164f8885bf7fb9acfc21e7c64079",
+          "bytes": 549055,
+          "pageCount": 46,
+          "driveId": "1LDjwLuq5m8FsZLtx5O9NZG2eIAJyVe2Q",
+          "driveUrl": "https://drive.google.com/file/d/1LDjwLuq5m8FsZLtx5O9NZG2eIAJyVe2Q/view?usp=drivesdk"
+        },
+        {
+          "role": "flashcards",
+          "path": "assets/psychopathologie-documents-20261110/Psychopathologie_Flashcards_350.pdf",
+          "sha256": "a34c5c538f8473cf07f879b4ad24ca92c4c0c8f7c4acd3f6b7417d6713b6bce6",
+          "bytes": 605544,
+          "pageCount": 60,
+          "driveId": "15paj5lbIj1MJgxeWKTop1E1l2ZbWtxFg",
+          "driveUrl": "https://drive.google.com/file/d/15paj5lbIj1MJgxeWKTop1E1l2ZbWtxFg/view?usp=drivesdk"
+        }
+      ],
+      "audioArtifacts": [],
+      "audioOwnerReview": {
+        "status": "not_applicable_no_new_audio"
+      },
+      "sourceReview": {
+        "officialSupportAvailable": true,
+        "receivedOralPartsReviewed": 3,
+        "oralCoverageCertifiedComplete": true,
+        "independentClinicalSignoff": false,
+        "externalResearchPerformed": false,
+        "verifiedCorrectionsDisclosed": true,
+        "disputedAssessmentPointsExcluded": true,
+        "privateEvidenceSha256": "4bdcd254bc9cf343b3237e7aadbbed8a12e909e1b7816570dbfd728ffd128520",
+        "documentaryCorpusOnly": true,
+        "duplicateTranscriptionVariants": true,
+        "originalOralAudioCompared": false
+      },
+      "assistantPdfReview": {
+        "allPagesChecked": true,
+        "pageCounts": {
+          "sheet": 41,
+          "qcm": 46,
+          "flashcards": 60
+        },
+        "privateEvidenceSha256": "592f5abec9b25f3d5c214f7779dc2ded78b33c1ad4779a22e83dfaccf4c296c1"
+      },
+      "ownerAcceptance": {
+        "status": "explicit_application_update_authorized",
+        "privateEvidenceSha256": "aefe3791723e31421c46ee824e7f6ab7135746fe619144a4ab4fa10b567f5409",
+        "approvedAt": "2026-11-10T10:49:47.365860+00:00"
+      },
+      "templateConformance": {
+        "profile": "original_reviewed_documents_v1",
+        "artifacts": {
+          "sheet": {
+            "referenceSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "33537a6bab5f7909b54b89951745bae190a3d48b46c9b33857d2fb7dd8d452e4",
+            "pageCount": 41,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "privateEvidenceSha256": "4bdcd254bc9cf343b3237e7aadbbed8a12e909e1b7816570dbfd728ffd128520"
+          },
+          "qcm": {
+            "referenceSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "ffbdc5195cc112f1dd845807b850746f6369164f8885bf7fb9acfc21e7c64079",
+            "pageCount": 46,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "privateEvidenceSha256": "e86b58ff3373d25c0d7ab2961678a3eb3c6491556d7380d0aa4e6b89713750ba"
+          },
+          "flashcards": {
+            "referenceSha256": "99d2bbfa54f5f79e3d50c34b354a674c1fddac3c25d9f42eceb6d78fab4efd8e",
+            "artifactSha256": "a34c5c538f8473cf07f879b4ad24ca92c4c0c8f7c4acd3f6b7417d6713b6bce6",
+            "pageCount": 60,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "privateEvidenceSha256": "07061d6675861aa0e9174245404ac37c289945a11473ee8d61ed40c0d034d592"
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "33537a6bab5f7909b54b89951745bae190a3d48b46c9b33857d2fb7dd8d452e4",
+        "privateEvidenceSha256": "4bdcd254bc9cf343b3237e7aadbbed8a12e909e1b7816570dbfd728ffd128520",
+        "reviewedAt": "2026-11-10T10:49:47+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "driveVerification": {
+        "status": "MATCH",
+        "privateEvidenceSha256": "5fa8d0e4868b0debd9a627c3b4c738d3a969d2dcfcccddd5b9cb5ec9a966bccb"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "scoped_course_revision",
+        "approvedAt": "2026-11-10T10:49:47.365860+00:00",
+        "privateEvidenceSha256": "aefe3791723e31421c46ee824e7f6ab7135746fe619144a4ab4fa10b567f5409",
+        "bundleSha256": "109f4373522d1142b9441daf6027d6a524f3a70dc528f2149053c1a34e2e25d7"
+      },
+      "sourceAttributionReview": {
+        "status": "exact_fields_reviewed_self_contained",
+        "privateEvidenceSha256": "63085bdb77e6e247c3e4739f9a45fdecf32a7cda444597fbe55fe81afe1db4ce",
+        "fields": [
+          {
+            "questionId": "psychopathologie_q002",
+            "field": "question",
+            "sha256": "42d213f72832d017c8363746fc6a9af9e436f14cd46f80fa979478c4c40d7ec9"
+          },
+          {
+            "questionId": "psychopathologie_q004",
+            "field": "flashcards",
+            "sha256": "617e7490f471b9c2e09c4d8a4d7c85d5a998c9843d20fd85d15feed8ddc658e9"
+          },
+          {
+            "questionId": "psychopathologie_q005",
+            "field": "question",
+            "sha256": "8ca0d7bfa3961186982f69162f735f2a43e94038c83a4156296d089d8415829f"
+          },
+          {
+            "questionId": "psychopathologie_q006",
+            "field": "explanation",
+            "sha256": "31ee5364baf0544641a0833fcd386007e59ea9aaae38b01f5ed230b808a09256"
+          },
+          {
+            "questionId": "psychopathologie_q006",
+            "field": "flashcards",
+            "sha256": "8a9a5e3ad352754938d4d451258f2a3cb5131b9b4cdefc222695270709a2e5d8"
+          },
+          {
+            "questionId": "psychopathologie_q007",
+            "field": "flashcards",
+            "sha256": "2b77575d8fa79385ac3136313c0a60230436bf95d942b3de21bf4cd1e66637b6"
+          },
+          {
+            "questionId": "psychopathologie_q008",
+            "field": "flashcards",
+            "sha256": "8d04efdb72b54672a126cde98786552a39809b5d7a0043001dab6c7613205314"
+          },
+          {
+            "questionId": "psychopathologie_q009",
+            "field": "flashcards",
+            "sha256": "777e4fb7ed1227c4ac561536f9a191546885417f37710c97ebfbab7a1717ce07"
+          },
+          {
+            "questionId": "psychopathologie_q010",
+            "field": "question",
+            "sha256": "562f86550dbfff9f19a68b80ba1041b81bf01d2dfc0dab4416f8440bd8850dad"
+          },
+          {
+            "questionId": "psychopathologie_q010",
+            "field": "explanation",
+            "sha256": "4d5c37e69a7ce4c7592044efea766c39b5fe7383eea5d4bbb03ea874b33c5c46"
+          },
+          {
+            "questionId": "psychopathologie_q010",
+            "field": "flashcards",
+            "sha256": "c79add23388f56e309c4cc36130fbf98a41fbfd288533dc00ee72e1c2e4f203c"
+          },
+          {
+            "questionId": "psychopathologie_q013",
+            "field": "question",
+            "sha256": "42e9663ea046438a0aa31c0d3d12d2a1eeab2ca57072d90f2ab1fd7b967d56c9"
+          },
+          {
+            "questionId": "psychopathologie_q018",
+            "field": "flashcards",
+            "sha256": "04acfece6f12d1e45d1e60e86c7ff8f54889ddd380bd7f859666e75510f15cae"
+          },
+          {
+            "questionId": "psychopathologie_q021",
+            "field": "flashcards",
+            "sha256": "f2c93843409444615207c34ce432d122c06af786a116df31fad07f10411cbcae"
+          },
+          {
+            "questionId": "psychopathologie_q022",
+            "field": "question",
+            "sha256": "05af9b26f833a454e540d29786cde5e3d8799db25a15bcdad439b3d15821936f"
+          },
+          {
+            "questionId": "psychopathologie_q022",
+            "field": "explanation",
+            "sha256": "d403892499308557f895dceef33d00c61612da2bf3af808183e9a5b45e7aba54"
+          },
+          {
+            "questionId": "psychopathologie_q024",
+            "field": "question",
+            "sha256": "2a3ac428f053b89b48d254469639411d95ee2e4b8f8e8c59aad24ad69b82322b"
+          },
+          {
+            "questionId": "psychopathologie_q024",
+            "field": "flashcards",
+            "sha256": "ef7599d182ab81940e12f1eaec9b926b2366189ab8b0795fa9a0d3a7392a20cc"
+          },
+          {
+            "questionId": "psychopathologie_q025",
+            "field": "question",
+            "sha256": "ced6ee34a14cc246341cebf2495e44f9a04718968ef0b56d605c8b06685695b8"
+          },
+          {
+            "questionId": "psychopathologie_q029",
+            "field": "explanation",
+            "sha256": "077931a938a71d155a7581d226167b2a5c94f92d97b823926ba1df50225d0936"
+          },
+          {
+            "questionId": "psychopathologie_q030",
+            "field": "flashcards",
+            "sha256": "a1c81dc8008f81576b5efa20951a42ae8505bc43ee1ae984b787f11687a1629f"
+          },
+          {
+            "questionId": "psychopathologie_q032",
+            "field": "flashcards",
+            "sha256": "b028c0c33737065c245d459a68c9189f317302b0d15b4a5f3d1aaa67cbf87ec9"
+          },
+          {
+            "questionId": "psychopathologie_q033",
+            "field": "question",
+            "sha256": "1ab7dd4f14a9924b2b324b87a2fef10a37c70255fb4771c460156c7cc01b2fb5"
+          },
+          {
+            "questionId": "psychopathologie_q033",
+            "field": "flashcards",
+            "sha256": "d4af60200d8f2de3d695fdaa3c657c11f5a42de5f24e2dc3d430a1fabea4674f"
+          },
+          {
+            "questionId": "psychopathologie_q034",
+            "field": "flashcards",
+            "sha256": "245642afc11bd25f1279b622d8c9cbbf586c838575b2ee608036275e837e0197"
+          },
+          {
+            "questionId": "psychopathologie_q036",
+            "field": "flashcards",
+            "sha256": "d9291d6ce0481ac680528317039ce0759982fa8f1e94a9c5d92f9644aa10a348"
+          },
+          {
+            "questionId": "psychopathologie_q038",
+            "field": "flashcards",
+            "sha256": "243a31a37ff1144e470ee0d26dd2a7cc6b98749eade255ec146e2ef185887da9"
+          },
+          {
+            "questionId": "psychopathologie_q045",
+            "field": "flashcards",
+            "sha256": "9f058667c2fa50ce21ec594fc854b9b987f7d1a9941ed21b9d08d598ca7912ef"
+          },
+          {
+            "questionId": "psychopathologie_q049",
+            "field": "flashcards",
+            "sha256": "ae58633371bf1368876653cb1a238a0aff9593cd2877913a1022f71f7a8b2d26"
+          },
+          {
+            "questionId": "psychopathologie_q052",
+            "field": "flashcards",
+            "sha256": "63fd7053b8c837ebeb429a6e4d8dab47895050fb01b77e0254fae0bcde235a4a"
+          },
+          {
+            "questionId": "psychopathologie_q054",
+            "field": "flashcards",
+            "sha256": "ecfcb0be66774cac9b57f161cdf4e89574c2de31ebcaf58360078eafc13d94cf"
+          },
+          {
+            "questionId": "psychopathologie_q056",
+            "field": "flashcards",
+            "sha256": "3324c7c290dabcd11c581e217335aa9fe031d2c03cbfe8ef7d35379cb0dc9162"
+          },
+          {
+            "questionId": "psychopathologie_q057",
+            "field": "question",
+            "sha256": "1e1b481385e84689d0066b6e5a64e83930327401061b0a7d6a64c20d5320e6cd"
+          },
+          {
+            "questionId": "psychopathologie_q057",
+            "field": "flashcards",
+            "sha256": "faeac4894d731e94b80a3ed3b4bb172b86ea1f32b3ed7f930f4cbb0063d84f26"
+          },
+          {
+            "questionId": "psychopathologie_q060",
+            "field": "flashcards",
+            "sha256": "48312381ab4b8b28f61fc628807a5bcc66287ebc4158d8cdd5508a02c0e505c8"
+          },
+          {
+            "questionId": "psychopathologie_q061",
+            "field": "flashcards",
+            "sha256": "2a29bf3d835e316cca42e1bbfdd13537f580d8092e88b4d1afdd120a12a395d0"
+          },
+          {
+            "questionId": "psychopathologie_q062",
+            "field": "explanation",
+            "sha256": "1f4b21f666e2455738d0ece41dbcd7282e2425b152d05fac7757261a0c9f53c1"
+          },
+          {
+            "questionId": "psychopathologie_q062",
+            "field": "flashcards",
+            "sha256": "02f2a63867d86958ca688e5e732039f83ec79d606bd8c54b2252a5cef7ec1918"
+          },
+          {
+            "questionId": "psychopathologie_q065",
+            "field": "flashcards",
+            "sha256": "28be64d605d8da28046efd1b059b750057f9174bed815e88014df4c34c51c71b"
+          },
+          {
+            "questionId": "psychopathologie_q067",
+            "field": "flashcards",
+            "sha256": "aa140d1a86f20d2a8684e451e5a44aa1909bcf9b01cdb8f6908b8d742631f240"
+          },
+          {
+            "questionId": "psychopathologie_q070",
+            "field": "question",
+            "sha256": "dc7923764edaa0cf3b90f5dfa0d4c3939734b9a4e60f662116bca7650b2ec526"
+          },
+          {
+            "questionId": "psychopathologie_q071",
+            "field": "flashcards",
+            "sha256": "356d91a559dbb8ecb17af64e9d50d9cf4840d1a81745444498acae02c4782b76"
+          },
+          {
+            "questionId": "psychopathologie_q075",
+            "field": "flashcards",
+            "sha256": "528808162e18b01a7abf0b00778b2ec77551f93335d2afc603735b17507c7d55"
+          },
+          {
+            "questionId": "psychopathologie_q080",
+            "field": "flashcards",
+            "sha256": "4fa0bee0be5307feb7e4f4d48d7da859bc9d5651f7d9981e54dad701cf6aebff"
+          },
+          {
+            "questionId": "psychopathologie_q085",
+            "field": "flashcards",
+            "sha256": "9b1e0bd6c2e067aabb9459a04b13b2ab37f64f69c096eebb02de3afbffb2f011"
+          },
+          {
+            "questionId": "psychopathologie_q087",
+            "field": "flashcards",
+            "sha256": "95a16f646dcf19214878486813fc601217f4b4af68402496dec7a3f53fb15a05"
+          },
+          {
+            "questionId": "psychopathologie_q090",
+            "field": "flashcards",
+            "sha256": "afab8d9faa1a3240f6cf53bba7e7247a84d66058ffd2627f6d193a275477cdeb"
+          },
+          {
+            "questionId": "psychopathologie_q091",
+            "field": "question",
+            "sha256": "5f2160c3af5aa4dcf64fd81174e8310a8fb03a8e93c5b5c69a243f0f03c9226c"
+          },
+          {
+            "questionId": "psychopathologie_q091",
+            "field": "flashcards",
+            "sha256": "082f7e3d3fded82fb6aa514447101f867ecaeea0e342e714ae7dd014b136e4df"
+          },
+          {
+            "questionId": "psychopathologie_q092",
+            "field": "flashcards",
+            "sha256": "a0a4634ee103fa825a4d2f0414933c55b510012052c7e8cdde5582e1b6a73309"
+          },
+          {
+            "questionId": "psychopathologie_q094",
+            "field": "flashcards",
+            "sha256": "f2fa11650fc809b0cc18400d2fd256370fa9b6302aaed4af89c78df2ad7e7a8d"
+          },
+          {
+            "questionId": "psychopathologie_q096",
+            "field": "flashcards",
+            "sha256": "0b9242f4329794b790b200f095b816c90f48e420134e10be24d6b93b5cadc7af"
+          },
+          {
+            "questionId": "psychopathologie_q097",
+            "field": "flashcards",
+            "sha256": "2b3ea8fcb31cebf280ea217e533a0aa025687e438ff942140b0681bb88d2c424"
+          },
+          {
+            "questionId": "psychopathologie_q098",
+            "field": "flashcards",
+            "sha256": "45b75f48567f1d7e119d40d8e85e034428e1ae1ce8621bd2937f4505196ae2b7"
+          },
+          {
+            "questionId": "psychopathologie_q099",
+            "field": "flashcards",
+            "sha256": "37bd5e54609dfa18472a3d7fdb46c97ee9d7dea11290d6d9bede63d7a694609a"
+          },
+          {
+            "questionId": "psychopathologie_q100",
+            "field": "flashcards",
+            "sha256": "e27efa9cf1dc4c38994d631a1a7a88d8822811530f205184bf03bb12de2b717c"
+          },
+          {
+            "questionId": "psychopathologie_q109",
+            "field": "flashcards",
+            "sha256": "9dc8be9d4c1901a8f40b0ca6dc4d8803618b0776fd1213181552c808e02f683b"
+          },
+          {
+            "questionId": "psychopathologie_q112",
+            "field": "choices",
+            "sha256": "fc1d118cbaed88a4ffddd801703cc15c9ab94ca3cf5b1e335d1528baf25e2221"
+          },
+          {
+            "questionId": "psychopathologie_q112",
+            "field": "flashcards",
+            "sha256": "668459f585e51cff36952261bc8fcaeaebe96bc1d79ae3c2099460cf694ce71d"
+          }
+        ]
+      },
+      "flashcardStandaloneReview": {
+        "status": "exact_self_contained_cards_reviewed",
+        "privateEvidenceSha256": "bc47d2711b6689841e43f74bf554d3a2d390bfca756fb47f0d83b9192b420c63",
+        "cards": [
+          {
+            "questionId": "psychopathologie_q017",
+            "cardId": "psychopathologie_fc060",
+            "sha256": "cd75bfc681851eb6dcc3a8a65b297af98d1dba7e994fe0a2e54f443e9a1f85b7",
+            "reason": "complete_enumeration"
+          },
+          {
+            "questionId": "psychopathologie_q014",
+            "cardId": "psychopathologie_fc053",
+            "sha256": "cae71416a50a105609c0915b21ef963eee0a5616cca5ee5031120ad0877502ea",
+            "reason": "named_psychological_concept"
+          },
+          {
+            "questionId": "psychopathologie_q047",
+            "cardId": "psychopathologie_fc152",
+            "sha256": "2d8ade026c8ed0dd2d07dc19e366092c3a82f308725e5f1e5e65aad24fbcb15a",
+            "reason": "complete_enumeration"
+          },
+          {
+            "questionId": "psychopathologie_q091",
+            "cardId": "psychopathologie_fc283",
+            "sha256": "2001c3fa66cf5cb9e9677012b139c942b0a6c3c7cb3504d2a09ab263abc39abc",
+            "reason": "targeted_acronym_definition"
+          },
+          {
+            "questionId": "psychopathologie_q091",
+            "cardId": "psychopathologie_fc284",
+            "sha256": "293cd55f007525f167ab9ce796706d41f0846c80cd77c19810bd19a24c76a5e2",
+            "reason": "targeted_acronym_definition"
+          },
+          {
+            "questionId": "psychopathologie_q092",
+            "cardId": "psychopathologie_fc285",
+            "sha256": "c2e4df0e09af037df353d7b19c375afb01651d7eb8bc8add68c1738af36a7f5f",
+            "reason": "targeted_acronym_definition"
+          }
+        ]
+      }
     }
   ],
   "consolidatedCourseRevisions": [

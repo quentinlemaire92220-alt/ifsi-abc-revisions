@@ -49,7 +49,7 @@ const previousById=new Map([...oldQuestions,...oldExtras].map(q=>[q.id,JSON.pars
 const live=await runtimeDeck();
 const actualManifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));
 validateScopedRevisions(actualManifest);
-const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>r.profile==='reconciled_written_correction_v1').flatMap(r=>r.sourceAttributionReview.fields);
+const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','verified_documents_addition_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields);
 const presented=new Set(live.registry.courses.filter(c=>c.authoredFlashcardPresentation==='standalone_v1').map(c=>c.id));
 for(const name of filenames){
   if(!fs.existsSync(name))continue; // Une banque supprimée n'ajoute pas de QCM.
@@ -76,7 +76,9 @@ for(const name of filenames){
    if(!presented.has(q.courseId))return q;
    const cards=live.deck.filter(c=>c.qid===q.id);
    assert.equal(cards.length,q.flashcards.length,q.id+': une carte explicite échappe au contrôle');
-   return {...q,flashcards:cards.map(c=>({front:c.front,answers:[...c.answers],explanation:c.explanation}))};
+   const ordered=q.flashcards.every(f=>f.preserveReviewedText===true)?q.flashcards.map(f=>cards.find(c=>c.sourceFront===f.front)):cards;
+   assert.ok(ordered.every(Boolean),q.id+': carte source absente du rendu');
+   return {...q,flashcards:ordered.map(c=>({front:c.front,answers:[...c.answers],explanation:c.explanation}))};
   });
   const exactReviewedSourceQuestionIds=new Set(exactReviewed?['plaies_p1_020']:[]);
   count+=validateChangedQcmBanks([...previousById.values(),...previous],displayed,name,{exactReviewedSourceAttributionIds,exactReviewedSourceQuestionIds,reviewedSourceComparisonFields});

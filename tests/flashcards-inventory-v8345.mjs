@@ -71,6 +71,7 @@ function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux
 function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}
 const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
 const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='reconciled_written_correction_v1').flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
+const reviewedStandalone=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='verified_documents_addition_v1').flatMap(r=>r.flashcardStandaloneReview.cards);
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
@@ -81,7 +82,8 @@ for(const c of deck){
   // A real absent figure remains rejected even in that clinical theme.
   if(authored&&/vaccination/i.test(c.theme||'')){assert.ok(reContext.test(auditText('Selon le schéma ci-dessus, que faire ?')));assert.ok(!reContext.test(auditText('Que faire devant un schéma incomplet ?')));}
   const reviewedComparison=reviewedComparisons.some(x=>x.questionId===(c.qid||c.id)&&x.sha256===reviewedFieldDigest('flashcards',[{front:c.front,answers:c.answers,explanation:c.explanation}]));
-  const explanation=String(c.explanation||''),sourceMeta=!reviewedComparison&&/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=!reviewedComparison&&reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
+  const exactStandalone=reviewedStandalone.some(x=>x.questionId===c.qid&&x.sha256===reviewedFieldDigest('flashcards',[c]));
+  const explanation=String(c.explanation||''),sourceMeta=!reviewedComparison&&/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=!exactStandalone&&!reviewedComparison&&reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=!exactStandalone&&(reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front)),pair=rePair.test(front);
   // A single authored answer may display several enumerated elements separated
   // by semicolons; preserve the actual answer string while counting its items.
   const n=expected(front),listedAnswers=answers.length===1
