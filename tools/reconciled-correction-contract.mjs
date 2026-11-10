@@ -1,6 +1,7 @@
 // Stable-ID corrections of an existing signed course. Historical fixtures are
 // restored only for historical tests; this gate checks every actual changed row.
 import {consolidationBeforeJson} from './consolidated-course-contract.mjs';
+import {receivedAudioBeforeJson} from './received-audio-only-contract.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -15,7 +16,7 @@ const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 export function preservedBeforeCorrections(path,manifest,expected){
  const direct=hash(path);if(direct===expected)return direct;
  if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json','docs/course-deliveries.json','audio-series-v1.json'].includes(path))return direct;
- let value=consolidationBeforeJson(read('docs/course-deliveries.json'),path,read(path));
+ let value=consolidationBeforeJson(read('docs/course-deliveries.json'),path,receivedAudioBeforeJson(path,read(path)));
  const current=read('docs/course-deliveries.json');
  const revisions=[...(manifest.scopedCourseRevisions||[]),...(current.scopedCourseRevisions||[]).filter(r=>!(manifest.scopedCourseRevisions||[]).some(x=>x.id===r.id))];
  for(const r of revisions){

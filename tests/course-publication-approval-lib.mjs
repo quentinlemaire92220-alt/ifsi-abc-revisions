@@ -28,6 +28,7 @@ export function publicationBundle(courseId,delivery,data){
   scripts:delivery.vocalScripts||[],
   packFormat:delivery.packFormat||'legacy',
   ...(delivery.nativeDiagramException?{nativeDiagramWrittenMetadata:{nativeDiagramException:delivery.nativeDiagramException,writtenPdfAudit:delivery.writtenPdfAudit,writtenCoverage:delivery.writtenCoverage,sourceAudit:delivery.sourceAudit,lexicon:delivery.lexicon}}:{}),
+  ...(delivery.audioOnlyContract==='received_audio_v1'?{receivedAudioReview:delivery.receivedAudioReview,sourceBasis:delivery.sourceBasis,audioOnlyContract:delivery.audioOnlyContract,publicAudioArtifacts:delivery.publicAudioArtifacts}:{}),
   ...(delivery.interactiveAudioReview?{interactiveAudioReview:delivery.interactiveAudioReview,sourceBasis:delivery.sourceBasis,audioOnlyContract:delivery.audioOnlyContract}:{}),
   ...(delivery.packFormat==='hybrid_v1'?{hybridMetadata:{discipline:delivery.discipline,sourceBasis:delivery.sourceBasis,hybridCoverage:delivery.hybridCoverage,hybridVisualReview:delivery.hybridVisualReview,lexicon:delivery.lexicon,schematics:delivery.schematics,embeddedFigureCount:delivery.embeddedFigureCount}}:{}),
   completeInfographicAudit:delivery.packFormat==='lean_v1'?delivery.infographicSheetVisualAudit:null,
@@ -57,7 +58,7 @@ export function validatePublicationApproval(courseId,delivery,digest){
  const a=delivery.publicationApproval;
  assert.equal(a?.status,'approved',courseId+': validation du package absente. Empreinte attendue : '+digest);
  assert.equal(a.authorization,'explicit_go_publication',courseId+': GO publication explicite absent');
- const expectedScope=delivery.deliveryMode==='audio_only'&&delivery.audioOnlyContract==='interactive_audio_v1'?'audio_only':['infographics_only','revision_sheet_only'].includes(delivery.publicationScope)?delivery.publicationScope:'course_package';
+ const expectedScope=delivery.deliveryMode==='audio_only'&&['interactive_audio_v1','received_audio_v1'].includes(delivery.audioOnlyContract)?'audio_only':['infographics_only','revision_sheet_only'].includes(delivery.publicationScope)?delivery.publicationScope:'course_package';
  if(expectedScope==='revision_sheet_only')assert.equal(delivery.deliveryMode,'sheet_only_first_release',courseId+': GO fiche seule interdit pour un pack normal');
  assert.equal(a.scope,expectedScope,courseId+': portee du package incorrecte : une validation de fichier seul ne valide pas le package');
  assert.ok(typeof a.approvedAt==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(a.approvedAt)&&Number.isFinite(Date.parse(a.approvedAt)),courseId+': date de validation absente ou invalide');

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.187",
+  "version": "8.30.188",
   "courses": [
     {
       "id": "biomolecules",
@@ -3239,6 +3239,23 @@
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/determinants-sante-20261105/Determinants_sante_Flashcards_60.pdf"
         }
       ]
+    },
+    {
+      "id": "psychopathologie",
+      "label": "Psychopathologie",
+      "aliases": [
+        "Psychopathologie",
+        "Psychopatologie",
+        "B2 Psychopathologie"
+      ],
+      "domain": "B",
+      "ue": "B2",
+      "semester": "S1",
+      "audioStatus": "available",
+      "audioCount": 26,
+      "audioFolderUrl": "https://drive.google.com/drive/folders/1-oNfiV8BqlhOyRvaVwcsCOVHHa1ArDfD",
+      "sourceStatus": "official_support_private_pending_publication",
+      "canonicalQuestionIds": []
     }
   ],
   "auditBaseline": {

@@ -1,6 +1,7 @@
 // Additive MP3 hosted by the application. Historical package signatures stay intact.
 // Preparation validates bytes and scope; publication additionally requires a new GO.
 import {scopedHistoricalData,validateScopedRevisions} from './scoped-course-revision-contract.mjs';
+import {validateReceivedAudioOnly} from './received-audio-only-contract.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -120,6 +121,15 @@ export function historicalAudioView(manifest,data,options={}){
 export function firstReleaseAudioIds(before,after,oldData,newData,{readBytes=localBytes}={}){
  const accepted=new Set();
  for(const d of after.courses||[]){
+  if(d.deliveryMode==='audio_only'&&d.audioOnlyContract==='received_audio_v1'&&!before.courses?.some(x=>x.courseId===d.courseId)){
+   assert.ok(!oldData.registry.courses.some(c=>c.id===d.courseId),'Nouveau cours audio déjà présent');
+   validateReceivedAudioOnly(newData.registry.courses.find(c=>c.id===d.courseId),d,newData.vocals);
+   for(const a of d.publicAudioArtifacts){
+    assert.ok(!oldData.vocals.some(v=>v.id===a.vocalId),'Identité audio historique réutilisée');
+    const bytes=readBytes(a.path);assert.equal(bytes.length,a.bytes);assert.equal(sha(bytes),a.sha256);accepted.add(a.vocalId);
+   }
+   continue;
+  }
   if(d.deliveryMode!=='first_release'||d.publicationHost!=='github_pages'||!['hybrid_v1','written_v1'].includes(d.packFormat)||before.courses?.some(x=>x.courseId===d.courseId))continue;
   assert.ok(!oldData.registry.courses.some(c=>c.id===d.courseId),'Première publication audio : cours déjà présent');
   assert.equal(d.validated,true);assert.equal(d.status,'complete');

@@ -1,6 +1,7 @@
 // Livraison audio seule : elle n'autorise PAS la publication d'un cours complet.
 // PSSM ne dispose pas encore de ses deux fiches officielles et reste partiel.
 import assert from 'node:assert/strict';
+import {validateReceivedAudioOnly} from '../tools/received-audio-only-contract.mjs';
 import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
 
 export function validateAudioOnlyDelivery(course,delivery,vocals){
@@ -38,5 +39,6 @@ export function validateAudioOnlyDelivery(course,delivery,vocals){
       id+': empreinte MP3 manquante : '+item.driveId);
   }
   assert.ok(!delivery.infographicResourceIds?.length,id+': infographies privées fictives');
+  if(delivery.audioOnlyContract==='received_audio_v1')validateReceivedAudioOnly(course,delivery,vocals);
   return true;
 }
