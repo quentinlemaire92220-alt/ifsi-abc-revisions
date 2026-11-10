@@ -3,6 +3,7 @@ import {approvedRevisionAudioIds,validateScopedRevisions} from '../tools/scoped-
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import {approvedScopedAudioIds} from './official-scoped-bundle-contract.mjs';
 import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
+import {validateReceivedAudioOnly} from '../tools/received-audio-only-contract.mjs';
 import {validateHostedAudioSupplements} from '../tools/hosted-audio-supplement-contract.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -304,7 +305,11 @@ const scopedProvisionalWrittenLexicons=json('docs/course-deliveries.json').cours
   c.writtenPdfAudit.pdfSha256===c.publicAssetSha256&&
   c.visualOwnerReview?.status==='owner_accepted'
 ).map(c=>c.courseId);
-const audioOnlyLexiconCourses=json('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1').map(c=>{
+const audioOnlyLexiconCourses=json('docs/course-deliveries.json').courses.filter(c=>c.deliveryMode==='audio_only'&&['interactive_audio_v1','received_audio_v1'].includes(c.audioOnlyContract)).map(c=>{
+ if(c.audioOnlyContract==='received_audio_v1'){
+  validateReceivedAudioOnly(json('course-registry-v741.json').courses.find(x=>x.id===c.courseId),c,json('vocals.json'));
+  return c.courseId;
+ }
  // Inspect the exact historical audio package; the independently validated
  // written revision supplies the student-facing current official status.
  const course=readHistoricalAudioJson('course-registry-v741.json').courses.find(x=>x.id===c.courseId);

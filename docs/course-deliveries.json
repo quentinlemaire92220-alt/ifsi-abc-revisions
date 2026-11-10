@@ -8207,6 +8207,534 @@
       },
       "qcmPdfLayout": "boxed_inline_cardinality_rationales_v1",
       "flashcardPdfLayout": "compact_duplex_six_cards_v1"
+    },
+    {
+      "courseId": "psychopathologie",
+      "audioOnlyContract": "received_audio_v1",
+      "deliveryMode": "audio_only",
+      "validated": true,
+      "status": "partial",
+      "publicationScope": "audio_only",
+      "vocals": [
+        "psychopathologie_20261110_vocal_01",
+        "psychopathologie_20261110_vocal_02",
+        "psychopathologie_20261110_vocal_03",
+        "psychopathologie_20261110_vocal_04",
+        "psychopathologie_20261110_vocal_05",
+        "psychopathologie_20261110_vocal_06",
+        "psychopathologie_20261110_vocal_07",
+        "psychopathologie_20261110_vocal_08",
+        "psychopathologie_20261110_vocal_09",
+        "psychopathologie_20261110_vocal_10",
+        "psychopathologie_20261110_vocal_11",
+        "psychopathologie_20261110_vocal_12",
+        "psychopathologie_20261110_vocal_13",
+        "psychopathologie_20261110_vocal_14",
+        "psychopathologie_20261110_vocal_15",
+        "psychopathologie_20261110_vocal_16",
+        "psychopathologie_20261110_vocal_17",
+        "psychopathologie_20261110_vocal_18",
+        "psychopathologie_20261110_vocal_19",
+        "psychopathologie_20261110_vocal_20",
+        "psychopathologie_20261110_vocal_21",
+        "psychopathologie_20261110_vocal_22",
+        "psychopathologie_20261110_vocal_23",
+        "psychopathologie_20261110_vocal_24",
+        "psychopathologie_20261110_vocal_25",
+        "psychopathologie_20261110_vocal_26"
+      ],
+      "folders": {
+        "05": "1-oNfiV8BqlhOyRvaVwcsCOVHHa1ArDfD"
+      },
+      "artifactSha256s": {
+        "1_fp0_BPUrHfQXyMIi0FmwP_dn4Z8vBK8": "b4a49fa1580e1dfe1fe5689b6aec6f1b3d228f8e066eb0be03f96ec2cae80d66",
+        "1L0adsZl9sgy4PnHI-da2RJNu1mPgNgrE": "97fa1859af262fcce08b0fb7cb1893ac885b67e8090cdb5ce1af57cafe897fc9",
+        "15pJqSSGJ93bZkTRpZNhsyLQp7INO3Vqu": "eba09a1f391631ff858e36d57c067837d966ef284014a120d2ad62546228c3c6",
+        "1JMYQ5JzzwErVKYjblHNcUOfdSsNKwM4s": "1ed46b2c8d5ed7a51a15edeec9f6b726aa02ebd49d19db32e1ae84f2c2353235",
+        "175A_wbh7_12uCEm1ZHdqVw-lBw63ZvGm": "dffb8229de784903f6b0d7d09479b2ea764b61fb2af186157bb5c40d191cd461",
+        "1RReTZE-nT5MBkJH4Y98CCKq4n-iTqwh3": "e003bee0f0b8315bab79dc263d2ed80af89a6ed5884d931e3243422878d6e5cb",
+        "1Sdl29XNmWhHkb7rgclQDpsAuQQdQA14W": "26b52b0c205dc95e2f3bf9c8e4433343c5359a83a7044b4e2d36a6514b1c2773",
+        "1Q_K6HcQVVo9-Mintt_5oEDUkZz3m8qUb": "a8e341de7e2ea241a4102917f3313eecf4516ca4977d78007cb68188175c25bd",
+        "1HTv67J2SNvwYzR0bTJ5SuKeS-RrHhqO3": "63fd54bdfec2a0713db2cb81474a00c1a34055a615e0410caf90eca5a4f910d4",
+        "18-r2KIJJXfv-AEVVCGYVJftfP0OL6W0B": "8919566af3d332bc9f2e730a8771d6c9bf90a75db8bea03ab12976e76867ef28",
+        "1oEsOTqMVOwXuip3-1m8kpTfV-WcAaNlt": "13b462793623b5a0d97be56d3d1620321a7800adf37ff0cf5d982da1ca47d984",
+        "1Ddi7GRZijpQHK9F7QshOkMV_ltOp8ogb": "152010ca19523e9e6b262ac379e4688a651f63e3d4a120111d0165b3db01482b",
+        "1v9MrEVbeazb6ize0CSxlr-h0VSB8Bsv3": "4dd86ff16e51ec37eb0b4e886c6bec60486584a8e7765b1b1aa8e478a9027c9a",
+        "1vi3nstkyzmZw886m78jpPZth6mmBRqhx": "517870160d6e2331d9c652a881c961ff300cc599a57c301ce2b59b6b45a65dcc",
+        "1nyUSqf_jBG9J3NjgXAusrk-SJanNXTyu": "2cf238a27a4449926932b7e64ea3d8228ca625ef8ff83bc967eceea10d51ee51",
+        "1vrY76JTVtVQ6QOd-I3yesWubzhqxHeTm": "f20c5550a470d5ec9929512e2893671ff1fadc66aca8b96e5164dcc5e0a74318",
+        "1gUz7IW5q9IZ6rp0PI6RaR5dMIizqMVdd": "e59790eb4045872707770903b8089ef2d3ce65190638617dd54dc76eeacf5e26",
+        "1dzK2MgRsdXzfV8OhOeFIqswfSyJNVGW0": "e8f55af85be3d0748fb9f2270a35f1161d6226bd4d25eb27ac7c8349145dccf1",
+        "1cnfdviv3MpVFCzfKlZHqYBXyHIiUkEXd": "e2da4848c706e3d862e53795cdf9ca548553163c849cbee879f5d71cdac52014",
+        "1oAIuh4RVqEWQIKMOXWluZRIecrjNlw0L": "3b12657a5dfa573185e6320593a66fc39133800a725d8cc3692a5c3168f2ffe3",
+        "10LFcSvlBkN0LvOP0bXsyr1naBhBmGYmc": "31e83d7a4cfafca54a7101d8f82e3e9eb2cd515b86eb1aee5565a09d0994a2e1",
+        "1z6pE_bjQc0qzIYEqt8ERD7OGx6sZESzS": "be784a5d440c40d9a23fd0c4ef836d8adbb5e37a0162112b2263fe6cc9837515",
+        "1mSnPJPXjQha32Bb-GXF1pziSqt7CfQvN": "5662eaa9aa1c4944fbfb9a766c4804467c1df95f4d9bebba991ee5cbb4616f35",
+        "1UajwVFPoFtkIpwcKWIZCDcnUPTf9jatI": "b99dcdca23e57e99d617022d8d8724d4777aaf6bec905d39725967930a6de41d",
+        "1Wfx63KbWQkvQew5v8rKAvbszyI0379Ed": "17b8f84bc04c7431576634e38167abfb495561ef9f86215c04064d703f012d5e",
+        "1Xq7CQe8I5KqPqYjP1vm4djy75DQ9mWB4": "b84b0046c6646c113c023b4c8914ffe2452592b200a2e355b4c8dcef7139c8d9"
+      },
+      "publicAudioArtifacts": [
+        {
+          "vocalId": "psychopathologie_20261110_vocal_01",
+          "driveId": "1_fp0_BPUrHfQXyMIi0FmwP_dn4Z8vBK8",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_01_Fondements_normalite_causalite.mp3",
+          "sha256": "b4a49fa1580e1dfe1fe5689b6aec6f1b3d228f8e066eb0be03f96ec2cae80d66",
+          "bytes": 4605284,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_02",
+          "driveId": "1L0adsZl9sgy4PnHI-da2RJNu1mPgNgrE",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_02_Fondements_normalite_causalite.mp3",
+          "sha256": "97fa1859af262fcce08b0fb7cb1893ac885b67e8090cdb5ce1af57cafe897fc9",
+          "bytes": 4662884,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_03",
+          "driveId": "15pJqSSGJ93bZkTRpZNhsyLQp7INO3Vqu",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_03_Approches_apprentissages.mp3",
+          "sha256": "eba09a1f391631ff858e36d57c067837d966ef284014a120d2ad62546228c3c6",
+          "bytes": 4122595,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_04",
+          "driveId": "1JMYQ5JzzwErVKYjblHNcUOfdSsNKwM4s",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_04_Approches_apprentissages.mp3",
+          "sha256": "1ed46b2c8d5ed7a51a15edeec9f6b726aa02ebd49d19db32e1ae84f2c2353235",
+          "bytes": 4596067,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_05",
+          "driveId": "175A_wbh7_12uCEm1ZHdqVw-lBw63ZvGm",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_05_Histoire_inconscient.mp3",
+          "sha256": "dffb8229de784903f6b0d7d09479b2ea764b61fb2af186157bb5c40d191cd461",
+          "bytes": 4485759,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_06",
+          "driveId": "1RReTZE-nT5MBkJH4Y98CCKq4n-iTqwh3",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_06_Histoire_inconscient.mp3",
+          "sha256": "e003bee0f0b8315bab79dc263d2ed80af89a6ed5884d931e3243422878d6e5cb",
+          "bytes": 4908255,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_07",
+          "driveId": "1Sdl29XNmWhHkb7rgclQDpsAuQQdQA14W",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_07_Metapsychologie_pulsions.mp3",
+          "sha256": "26b52b0c205dc95e2f3bf9c8e4433343c5359a83a7044b4e2d36a6514b1c2773",
+          "bytes": 4055491,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_08",
+          "driveId": "1Q_K6HcQVVo9-Mintt_5oEDUkZz3m8qUb",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_08_Metapsychologie_pulsions.mp3",
+          "sha256": "a8e341de7e2ea241a4102917f3313eecf4516ca4977d78007cb68188175c25bd",
+          "bytes": 4035043,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_09",
+          "driveId": "1HTv67J2SNvwYzR0bTJ5SuKeS-RrHhqO3",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_09_Metapsychologie_pulsions.mp3",
+          "sha256": "63fd54bdfec2a0713db2cb81474a00c1a34055a615e0410caf90eca5a4f910d4",
+          "bytes": 4102147,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_10",
+          "driveId": "18-r2KIJJXfv-AEVVCGYVJftfP0OL6W0B",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_10_Metapsychologie_pulsions.mp3",
+          "sha256": "8919566af3d332bc9f2e730a8771d6c9bf90a75db8bea03ab12976e76867ef28",
+          "bytes": 3661795,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_11",
+          "driveId": "1oEsOTqMVOwXuip3-1m8kpTfV-WcAaNlt",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_11_Metapsychologie_pulsions.mp3",
+          "sha256": "13b462793623b5a0d97be56d3d1620321a7800adf37ff0cf5d982da1ca47d984",
+          "bytes": 4459267,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_12",
+          "driveId": "1Ddi7GRZijpQHK9F7QshOkMV_ltOp8ogb",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_12_Developpement_angoisses.mp3",
+          "sha256": "152010ca19523e9e6b262ac379e4688a651f63e3d4a120111d0165b3db01482b",
+          "bytes": 4553154,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_13",
+          "driveId": "1v9MrEVbeazb6ize0CSxlr-h0VSB8Bsv3",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_13_Developpement_angoisses.mp3",
+          "sha256": "4dd86ff16e51ec37eb0b4e886c6bec60486584a8e7765b1b1aa8e478a9027c9a",
+          "bytes": 4555458,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_14",
+          "driveId": "1vi3nstkyzmZw886m78jpPZth6mmBRqhx",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_14_Developpement_angoisses.mp3",
+          "sha256": "517870160d6e2331d9c652a881c961ff300cc599a57c301ce2b59b6b45a65dcc",
+          "bytes": 4873698,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_15",
+          "driveId": "1nyUSqf_jBG9J3NjgXAusrk-SJanNXTyu",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_15_Developpement_angoisses.mp3",
+          "sha256": "2cf238a27a4449926932b7e64ea3d8228ca625ef8ff83bc967eceea10d51ee51",
+          "bytes": 4736322,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_16",
+          "driveId": "1vrY76JTVtVQ6QOd-I3yesWubzhqxHeTm",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_16_Defenses_relation_soin.mp3",
+          "sha256": "f20c5550a470d5ec9929512e2893671ff1fadc66aca8b96e5164dcc5e0a74318",
+          "bytes": 3970529,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_17",
+          "driveId": "1gUz7IW5q9IZ6rp0PI6RaR5dMIizqMVdd",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_17_Defenses_relation_soin.mp3",
+          "sha256": "e59790eb4045872707770903b8089ef2d3ce65190638617dd54dc76eeacf5e26",
+          "bytes": 4506497,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_18",
+          "driveId": "1dzK2MgRsdXzfV8OhOeFIqswfSyJNVGW0",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_18_Defenses_relation_soin.mp3",
+          "sha256": "e8f55af85be3d0748fb9f2270a35f1161d6226bd4d25eb27ac7c8349145dccf1",
+          "bytes": 4672097,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_19",
+          "driveId": "1cnfdviv3MpVFCzfKlZHqYBXyHIiUkEXd",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_19_Semiologie_classifications.mp3",
+          "sha256": "e2da4848c706e3d862e53795cdf9ca548553163c849cbee879f5d71cdac52014",
+          "bytes": 4558052,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_20",
+          "driveId": "1oAIuh4RVqEWQIKMOXWluZRIecrjNlw0L",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_20_Semiologie_classifications.mp3",
+          "sha256": "3b12657a5dfa573185e6320593a66fc39133800a725d8cc3692a5c3168f2ffe3",
+          "bytes": 4329092,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_21",
+          "driveId": "10LFcSvlBkN0LvOP0bXsyr1naBhBmGYmc",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_21_Semiologie_classifications.mp3",
+          "sha256": "31e83d7a4cfafca54a7101d8f82e3e9eb2cd515b86eb1aee5565a09d0994a2e1",
+          "bytes": 4689380,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_22",
+          "driveId": "1z6pE_bjQc0qzIYEqt8ERD7OGx6sZESzS",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_22_Semiologie_classifications.mp3",
+          "sha256": "be784a5d440c40d9a23fd0c4ef836d8adbb5e37a0162112b2263fe6cc9837515",
+          "bytes": 5225924,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_23",
+          "driveId": "1mSnPJPXjQha32Bb-GXF1pziSqt7CfQvN",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_23_Semiologie_classifications.mp3",
+          "sha256": "5662eaa9aa1c4944fbfb9a766c4804467c1df95f4d9bebba991ee5cbb4616f35",
+          "bytes": 4814084,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_24",
+          "driveId": "1UajwVFPoFtkIpwcKWIZCDcnUPTf9jatI",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_24_Semiologie_classifications.mp3",
+          "sha256": "b99dcdca23e57e99d617022d8d8724d4777aaf6bec905d39725967930a6de41d",
+          "bytes": 4670660,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_25",
+          "driveId": "1Wfx63KbWQkvQew5v8rKAvbszyI0379Ed",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_25_Reperes_cliniques.mp3",
+          "sha256": "17b8f84bc04c7431576634e38167abfb495561ef9f86215c04064d703f012d5e",
+          "bytes": 2982396,
+          "mime": "audio/mpeg"
+        },
+        {
+          "vocalId": "psychopathologie_20261110_vocal_26",
+          "driveId": "1Xq7CQe8I5KqPqYjP1vm4djy75DQ9mWB4",
+          "path": "assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_26_Reperes_cliniques.mp3",
+          "sha256": "b84b0046c6646c113c023b4c8914ffe2452592b200a2e355b4c8dcef7139c8d9",
+          "bytes": 3126396,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "limitationsDeclared": true
+      },
+      "receivedAudioReview": {
+        "documentaryReview": "completed",
+        "decodeReview": "completed",
+        "speechAndPronunciationReview": "not_performed_user_declined",
+        "independentListeningAttested": false,
+        "ownerPublicationConsent": "explicit",
+        "privateSourcesPreserved": true,
+        "privateEvidenceSha256": "a782e056afc2789f8d032cdc1c19ef50ad8c67a1174b7357a4e41f6a24e9c11d",
+        "sourceArchiveSha256": "bf5902e200c366f97f3aa8fbafd7bfd6ce4277683c6c4ff4af2a39a40937db3c",
+        "episodes": [
+          {
+            "vocalId": "psychopathologie_20261110_vocal_01",
+            "audioSha256": "b4a49fa1580e1dfe1fe5689b6aec6f1b3d228f8e066eb0be03f96ec2cae80d66",
+            "scriptSha256": "57f3b2c1bb0af0aa36a64165e3801d08b00871a67b4fda8958a568700cba3b23",
+            "scriptQuestionCount": 16,
+            "durationSeconds": 383.656,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_02",
+            "audioSha256": "97fa1859af262fcce08b0fb7cb1893ac885b67e8090cdb5ce1af57cafe897fc9",
+            "scriptSha256": "879c1f56868c7b95b13f7b1af74de73adf12c93e7bd2d9b8fe159a1d68ce5633",
+            "scriptQuestionCount": 17,
+            "durationSeconds": 388.452,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_03",
+            "audioSha256": "eba09a1f391631ff858e36d57c067837d966ef284014a120d2ad62546228c3c6",
+            "scriptSha256": "398d2e24af975d9ba7c32e92243f33c080a7604cbbfcc82df9b0b9c9a29d9e20",
+            "scriptQuestionCount": 14,
+            "durationSeconds": 343.42,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_04",
+            "audioSha256": "1ed46b2c8d5ed7a51a15edeec9f6b726aa02ebd49d19db32e1ae84f2c2353235",
+            "scriptSha256": "5a62ab3c4be8147418c1cfeb328d7a56035611c292ae92c0d34d99a33e9f0b1e",
+            "scriptQuestionCount": 15,
+            "durationSeconds": 382.88,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_05",
+            "audioSha256": "dffb8229de784903f6b0d7d09479b2ea764b61fb2af186157bb5c40d191cd461",
+            "scriptSha256": "ead8054234bfa1e0679de9cd513e32903d07f8ae35038c00bc33909a646cbd5c",
+            "scriptQuestionCount": 17,
+            "durationSeconds": 373.704,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_06",
+            "audioSha256": "e003bee0f0b8315bab79dc263d2ed80af89a6ed5884d931e3243422878d6e5cb",
+            "scriptSha256": "1cf56723d243809bbf96b15d0d0db11f2d823f82452fa17e0f238b020e056fb4",
+            "scriptQuestionCount": 17,
+            "durationSeconds": 408.897333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_07",
+            "audioSha256": "26b52b0c205dc95e2f3bf9c8e4433343c5359a83a7044b4e2d36a6514b1c2773",
+            "scriptSha256": "09dcf52b5d2a7a89dc0065e28ec3202c24c6f3ff089a74a5e79644f46bad8e9a",
+            "scriptQuestionCount": 11,
+            "durationSeconds": 337.842667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_08",
+            "audioSha256": "a8e341de7e2ea241a4102917f3313eecf4516ca4977d78007cb68188175c25bd",
+            "scriptSha256": "f3cf05d8082c4561c6e47bbb1642ee717fe05c70f077ce9b45dc4b9425302f76",
+            "scriptQuestionCount": 11,
+            "durationSeconds": 336.14,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_09",
+            "audioSha256": "63fd54bdfec2a0713db2cb81474a00c1a34055a615e0410caf90eca5a4f910d4",
+            "scriptSha256": "a6577d6deddd79af890e3e137c47e8f16e031b895cd09f132bb5f939ebfda9c4",
+            "scriptQuestionCount": 11,
+            "durationSeconds": 341.721333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_10",
+            "audioSha256": "8919566af3d332bc9f2e730a8771d6c9bf90a75db8bea03ab12976e76867ef28",
+            "scriptSha256": "f654db2dce70a0b0eb5c93153d5781541f9a9380d831becd112cf2c13beebf1e",
+            "scriptQuestionCount": 12,
+            "durationSeconds": 305.024,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_11",
+            "audioSha256": "13b462793623b5a0d97be56d3d1620321a7800adf37ff0cf5d982da1ca47d984",
+            "scriptSha256": "15feb8e5ae21425e470de7c4f739d7bf17a738defcd062fa8501157a25b98e97",
+            "scriptQuestionCount": 12,
+            "durationSeconds": 371.490667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_12",
+            "audioSha256": "152010ca19523e9e6b262ac379e4688a651f63e3d4a120111d0165b3db01482b",
+            "scriptSha256": "93cf7608f2d9d5a592f5652cf41f228fa4d780095248fcf90c847d5a5ef2bfc2",
+            "scriptQuestionCount": 14,
+            "durationSeconds": 379.305333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_13",
+            "audioSha256": "4dd86ff16e51ec37eb0b4e886c6bec60486584a8e7765b1b1aa8e478a9027c9a",
+            "scriptSha256": "7a12514534e9cedf04a11fcc61d2906a1660a3747059846136c7f0465dd514b2",
+            "scriptQuestionCount": 12,
+            "durationSeconds": 379.498667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_14",
+            "audioSha256": "517870160d6e2331d9c652a881c961ff300cc599a57c301ce2b59b6b45a65dcc",
+            "scriptSha256": "e3811a024dfb160cd78efb5c388bcc687edd63256dd42560dcc19600f4723199",
+            "scriptQuestionCount": 15,
+            "durationSeconds": 406.012,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_15",
+            "audioSha256": "2cf238a27a4449926932b7e64ea3d8228ca625ef8ff83bc967eceea10d51ee51",
+            "scriptSha256": "2d8f64923642f2cf18dbb0a60cf12b8fb5d20f9cfdc405a10dda9f5441e87297",
+            "scriptQuestionCount": 11,
+            "durationSeconds": 394.577333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_16",
+            "audioSha256": "f20c5550a470d5ec9929512e2893671ff1fadc66aca8b96e5164dcc5e0a74318",
+            "scriptSha256": "03c65632900ec01b84b149849603e9555c7cf614fbfa17d323469d6a43c2255c",
+            "scriptQuestionCount": 12,
+            "durationSeconds": 330.756,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_17",
+            "audioSha256": "e59790eb4045872707770903b8089ef2d3ce65190638617dd54dc76eeacf5e26",
+            "scriptSha256": "4c59f3c84fad6978693a37a79738fbe2bc6172eea13ad9bd5ba652729a4e0157",
+            "scriptQuestionCount": 13,
+            "durationSeconds": 375.414667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_18",
+            "audioSha256": "e8f55af85be3d0748fb9f2270a35f1161d6226bd4d25eb27ac7c8349145dccf1",
+            "scriptSha256": "2636d71ab9a916ed99959952f174e3931dfea59da44be148263ee0753a75510e",
+            "scriptQuestionCount": 13,
+            "durationSeconds": 389.221333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_19",
+            "audioSha256": "e2da4848c706e3d862e53795cdf9ca548553163c849cbee879f5d71cdac52014",
+            "scriptSha256": "40205bb965227e41db3031b7f0f481616ca7f2efbf13e73f34f51e8c08d3d9c4",
+            "scriptQuestionCount": 16,
+            "durationSeconds": 379.714667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_20",
+            "audioSha256": "3b12657a5dfa573185e6320593a66fc39133800a725d8cc3692a5c3168f2ffe3",
+            "scriptSha256": "dc2d1bffbb3d109af904b586626fc3d0835ba8db1b9d7750b93c5586eff7436a",
+            "scriptQuestionCount": 16,
+            "durationSeconds": 360.637333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_21",
+            "audioSha256": "31e83d7a4cfafca54a7101d8f82e3e9eb2cd515b86eb1aee5565a09d0994a2e1",
+            "scriptSha256": "ec643c41d2cedab92287a7716583bc7a093c86b58a90b75c2f3f5491b89ba56d",
+            "scriptQuestionCount": 16,
+            "durationSeconds": 390.672,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_22",
+            "audioSha256": "be784a5d440c40d9a23fd0c4ef836d8adbb5e37a0162112b2263fe6cc9837515",
+            "scriptSha256": "1d4e3164e9858d272451f2cc6863a67323a0cd4bc7b754eddf3c41653c7b9fa1",
+            "scriptQuestionCount": 17,
+            "durationSeconds": 435.365333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_23",
+            "audioSha256": "5662eaa9aa1c4944fbfb9a766c4804467c1df95f4d9bebba991ee5cbb4616f35",
+            "scriptSha256": "6f432641d06e9dab54ff66ecb483da60a8a0ba6c5e244e5f240d022eb5bcfd6a",
+            "scriptQuestionCount": 12,
+            "durationSeconds": 401.053333,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_24",
+            "audioSha256": "b99dcdca23e57e99d617022d8d8724d4777aaf6bec905d39725967930a6de41d",
+            "scriptSha256": "c7f56803fc2bda9daf99a8d935a69cccd4142f0ed68802aa5803ac42f92e7e3f",
+            "scriptQuestionCount": 11,
+            "durationSeconds": 389.094667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_25",
+            "audioSha256": "17b8f84bc04c7431576634e38167abfb495561ef9f86215c04064d703f012d5e",
+            "scriptSha256": "a4c38f9e87821a14abc91bc905092a273bc5f212770889fb090a2a08eab3f82e",
+            "scriptQuestionCount": 9,
+            "durationSeconds": 248.418667,
+            "fullStreamDecoded": true
+          },
+          {
+            "vocalId": "psychopathologie_20261110_vocal_26",
+            "audioSha256": "b84b0046c6646c113c023b4c8914ffe2452592b200a2e355b4c8dcef7139c8d9",
+            "scriptSha256": "df087fd50b70d245d50cf729fe1f372db47d63292513781b0719182b02f93d32",
+            "scriptQuestionCount": 10,
+            "durationSeconds": 260.406667,
+            "fullStreamDecoded": true
+          }
+        ]
+      },
+      "blockers": [
+        {
+          "resource": "official_support",
+          "reason": "private_pending"
+        },
+        {
+          "resource": "revision_sheets",
+          "reason": "not_in_publication_scope"
+        },
+        {
+          "resource": "qcm",
+          "reason": "not_in_publication_scope"
+        },
+        {
+          "resource": "flashcards",
+          "reason": "not_in_publication_scope"
+        }
+      ],
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "audio_only",
+        "approvedAt": "2026-11-10T09:41:05.734159+00:00",
+        "privateEvidenceSha256": "4d8757a8af0343720883933c06fef4d1acd997649913a117c542270fde8f3033",
+        "bundleSha256": "95d093161b60a240f9029037d9e98dabcfd39319f19d7e5f4ccf42229a937445"
+      }
     }
   ],
   "supplementalResourceApprovals": [

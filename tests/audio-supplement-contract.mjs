@@ -1,6 +1,7 @@
 import {validateScopedRevisions,scopedHistoricalData} from '../tools/scoped-course-revision-contract.mjs';
 // Compléments audio de cours historiques : autorisation limitée aux fichiers désignés.
 import assert from 'node:assert/strict';
+import {validateReceivedAudioOnly} from '../tools/received-audio-only-contract.mjs';
 import {createHash} from 'node:crypto';
 import fs from 'node:fs';
 import {validateInteractiveAudioReview,validateInteractiveAudioOnly} from './interactive-audio-review-contract.mjs';
@@ -61,11 +62,11 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
    for(const id of c.vocals){assert.ok(!approved.has(id));approved.add(id);}
    continue;
   }
-  if(c.deliveryMode==='audio_only'&&c.audioOnlyContract==='interactive_audio_v1'&&!(before.courses||[]).some(x=>x.courseId===c.courseId)){
+  if(c.deliveryMode==='audio_only'&&['interactive_audio_v1','received_audio_v1'].includes(c.audioOnlyContract)&&!(before.courses||[]).some(x=>x.courseId===c.courseId)){
    assert.ok(!(oldRegistry.courses||[]).some(x=>x.id===c.courseId),'Nouveau cours audio déjà connu');
    const course=registry.courses.find(x=>x.id===c.courseId);
    assert.ok(course,'Cours audio nouveau absent');
-   validateInteractiveAudioOnly(course,c,newVocals);
+   if(c.audioOnlyContract==='received_audio_v1')validateReceivedAudioOnly(course,c,newVocals);else validateInteractiveAudioOnly(course,c,newVocals);
    for(const id of c.vocals){assert.ok(!oldIds.has(id)&&!approved.has(id),'MP3 audio seul historique ou dupliqué');approved.add(id);}
    continue;
   }
