@@ -1,6 +1,7 @@
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {webcrypto} from 'node:crypto';
 
 // Execute the production service worker loader, including compressed packs and overrides.
 export async function runtimeDeck({allCards=false,historical=false,loadResources=false}={}){
@@ -19,7 +20,12 @@ export async function runtimeDeck({allCards=false,historical=false,loadResources
     questions.push(...base);
   }
   const registry=JSON.parse(read('course-registry-v741.json'));
-  const window={addEventListener(){},IFSI_V73:{getVocals:()=>loadResources?JSON.parse(read('vocals.json')):[]},IFSI_V79:{themeOf:q=>q.theme,difficultyOf:q=>q.difficulty}};
+  let vocals=loadResources?JSON.parse(read('vocals.json')):[];
+  if(loadResources&&!historical){
+    const audio={window:{},crypto:webcrypto,TextEncoder,Uint8Array,console:quiet,fetch:async()=>({ok:true,json:async()=>JSON.parse(read('audio-series-v1.json'))})};
+    vm.runInNewContext(read('audio-series-v1.js'),audio);await audio.window.IFSI_AUDIO_SERIES.ready;vocals=audio.window.IFSI_AUDIO_SERIES.applyVocals(vocals);
+  }
+  const window={addEventListener(){},IFSI_V73:{getVocals:()=>vocals},IFSI_V79:{themeOf:q=>q.theme,difficultyOf:q=>q.difficulty}};
   const context={window,Q:questions,S:loadResources?[1,2,3].flatMap(n=>JSON.parse(read(`sheets-${n}.json`))):[],I:[],registryFixture:registry,console:quiet,
     document:{getElementById:()=>null,querySelector:()=>null,querySelectorAll:()=>[]},
     localStorage:{getItem:()=>null,setItem(){}},setInterval:()=>0,clearInterval(){},setTimeout:()=>0,clearTimeout(){},scrollTo(){},MutationObserver:class{observe(){}}};

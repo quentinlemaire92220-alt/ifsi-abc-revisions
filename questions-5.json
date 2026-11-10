@@ -44863,5 +44863,1024 @@
         "kind": "authored"
       }
     ]
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q105",
+    "courseId": "prevention_ias_asepsie",
+    "number": 105,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Un prélèvement nasal retrouve un SARM sans signe infectieux. Que retenir ?",
+    "choices": [
+      "Il peut s’agir d’une colonisation.",
+      "La personne ne peut transmettre aucune bactérie.",
+      "Les précautions standard restent nécessaires.",
+      "Le prélèvement suffit à prouver une infection générale.",
+      "Une antibiothérapie est toujours obligatoire."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le portage sans maladie attribuable correspond à une colonisation.",
+      "Une personne colonisée peut transmettre le germe.",
+      "La prévention s’applique aussi sans symptôme.",
+      "Un résultat nasal ne prouve pas une infection systémique.",
+      "Le traitement dépend de l’évaluation et n’est pas automatique."
+    ],
+    "explanation": "A - Vrai. Le portage sans maladie attribuable correspond à une colonisation. B - Faux. Une personne colonisée peut transmettre le germe. C - Vrai. La prévention s’applique aussi sans symptôme. D - Faux. Un résultat nasal ne prouve pas une infection systémique. E - Faux. Le traitement dépend de l’évaluation et n’est pas automatique.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c105",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Colonisation et infection : quelle différence ?",
+        "answers": [
+          "La colonisation n’entraîne pas de maladie attribuable ; l’infection implique une interaction pathogène. Un patient colonisé peut transmettre des germes."
+        ],
+        "explanation": "La colonisation n’entraîne pas de maladie attribuable ; l’infection implique une interaction pathogène. Un patient colonisé peut transmettre des germes."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q106",
+    "courseId": "prevention_ias_asepsie",
+    "number": 106,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Une infection est liée à un sondage urinaire effectué à domicile. Comment la classer ?",
+    "choices": [
+      "Elle est communautaire par le seul fait du domicile.",
+      "Elle peut être associée aux soins.",
+      "Elle est forcément nosocomiale.",
+      "Le lien avec le sondage doit être évalué.",
+      "Le lieu suffit à exclure tout rôle des soins."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des soins à domicile peuvent causer une IAS.",
+      "Le lien avec la prise en charge est déterminant.",
+      "Nosocomiale renvoie à l’acquisition en établissement de santé.",
+      "Le diagnostic nécessite un lien plausible.",
+      "La géographie ne remplace pas le raisonnement causal."
+    ],
+    "explanation": "A - Faux. Des soins à domicile peuvent causer une IAS. B - Vrai. Le lien avec la prise en charge est déterminant. C - Faux. Nosocomiale renvoie à l’acquisition en établissement de santé. D - Vrai. Le diagnostic nécessite un lien plausible. E - Faux. La géographie ne remplace pas le raisonnement causal.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c106",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Une IAS est-elle toujours nosocomiale ?",
+        "answers": [
+          "Non. Une IAS peut survenir après des soins à domicile ou en structure médico-sociale ; une infection nosocomiale est acquise en établissement de santé."
+        ],
+        "explanation": "Non. Une IAS peut survenir après des soins à domicile ou en structure médico-sociale ; une infection nosocomiale est acquise en établissement de santé."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q107",
+    "courseId": "prevention_ias_asepsie",
+    "number": 107,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Chez un patient sondé, quelles conclusions sont justes ?",
+    "choices": [
+      "Une bactériurie prouve toujours une infection symptomatique.",
+      "La durée de sondage ne modifie pas le risque.",
+      "Le système clos élimine tout risque infectieux.",
+      "Une indication doit être réévaluée chaque jour.",
+      "La clinique compte pour interpréter l’ECBU."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une colonisation urinaire est possible.",
+      "Le risque augmente avec la durée.",
+      "La voie extraluminale persiste notamment.",
+      "Un dispositif inutile expose sans bénéfice.",
+      "Le résultat microbiologique se confronte aux symptômes."
+    ],
+    "explanation": "A - Faux. Une colonisation urinaire est possible. B - Faux. Le risque augmente avec la durée. C - Faux. La voie extraluminale persiste notamment. D - Vrai. Un dispositif inutile expose sans bénéfice. E - Vrai. Le résultat microbiologique se confronte aux symptômes.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c107",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Pourquoi retirer une sonde dès que possible ?",
+        "answers": [
+          "Le risque augmente avec la durée. Réévaluer quotidiennement l’indication permet de limiter l’exposition inutile."
+        ],
+        "explanation": "Le risque augmente avec la durée. Réévaluer quotidiennement l’indication permet de limiter l’exposition inutile."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q108",
+    "courseId": "prevention_ias_asepsie",
+    "number": 108,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quels mécanismes peuvent contaminer une sonde urinaire ?",
+    "choices": [
+      "Migration le long de sa surface externe.",
+      "Remontée dans sa lumière en cas de circuit contaminé.",
+      "Contamination hématogène, plus rarement.",
+      "La valve antireflux stérilise définitivement le méat.",
+      "Le ballonnet détruit les bactéries."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "C’est la voie extraluminale ou périurétrale.",
+      "C’est un mécanisme endoluminal.",
+      "Une voie sanguine est possible mais rare.",
+      "La valve limite le reflux, sans stériliser.",
+      "Le ballonnet stabilise la sonde."
+    ],
+    "explanation": "A - Vrai. C’est la voie extraluminale ou périurétrale. B - Vrai. C’est un mécanisme endoluminal. C - Vrai. Une voie sanguine est possible mais rare. D - Faux. La valve limite le reflux, sans stériliser. E - Faux. Le ballonnet stabilise la sonde.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c108",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Sonde urinaire : extraluminal ou endoluminal ?",
+        "answers": [
+          "Extraluminal : migration externe depuis le méat. Endoluminal : contamination de la lumière, notamment après rupture du circuit."
+        ],
+        "explanation": "Extraluminal : migration externe depuis le méat. Endoluminal : contamination de la lumière, notamment après rupture du circuit."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q109",
+    "courseId": "prevention_ias_asepsie",
+    "number": 109,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quelles mesures protègent le drainage urinaire ?",
+    "choices": [
+      "Remonter systématiquement le collecteur au-dessus de la vessie.",
+      "Maintenir la poche en position déclive.",
+      "Ouvrir le circuit à chaque contrôle.",
+      "Éviter les coudes et les tractions.",
+      "Prélever uniquement dans la poche pour tout ECBU."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cela favorise le reflux.",
+      "Le collecteur reste sous le niveau de la vessie.",
+      "Les déconnexions inutiles favorisent la contamination.",
+      "Le drainage doit rester fonctionnel.",
+      "Utiliser le site de prélèvement dédié et la technique adaptée."
+    ],
+    "explanation": "A - Faux. Cela favorise le reflux. B - Vrai. Le collecteur reste sous le niveau de la vessie. C - Faux. Les déconnexions inutiles favorisent la contamination. D - Vrai. Le drainage doit rester fonctionnel. E - Faux. Utiliser le site de prélèvement dédié et la technique adaptée.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c109",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Où placer le collecteur urinaire ?",
+        "answers": [
+          "Sous la vessie, sans contact avec le sol, avec un drainage libre de coudure et sans traction."
+        ],
+        "explanation": "Sous la vessie, sans contact avec le sol, avec un drainage libre de coudure et sans traction."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q110",
+    "courseId": "prevention_ias_asepsie",
+    "number": 110,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quels facteurs favorisent les micro-inhalations ?",
+    "choices": [
+      "Troubles de déglutition.",
+      "Altération de la conscience.",
+      "Sédation profonde.",
+      "Une protection garantie par le simple port de gants.",
+      "Un risque nul dès qu’une sonde d’intubation est présente."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ils perturbent la protection des voies aériennes.",
+      "Les réflexes peuvent être diminués.",
+      "Elle peut altérer les mécanismes protecteurs.",
+      "Les gants n’empêchent pas les inhalations.",
+      "Des sécrétions peuvent passer autour du ballonnet."
+    ],
+    "explanation": "A - Vrai. Ils perturbent la protection des voies aériennes. B - Vrai. Les réflexes peuvent être diminués. C - Vrai. Elle peut altérer les mécanismes protecteurs. D - Faux. Les gants n’empêchent pas les inhalations. E - Faux. Des sécrétions peuvent passer autour du ballonnet.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c110",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Quel mécanisme explique de nombreuses pneumonies du patient ventilé ?",
+        "answers": [
+          "La micro-inhalation de sécrétions colonisées, favorisée par l’altération des protections et les dispositifs."
+        ],
+        "explanation": "La micro-inhalation de sécrétions colonisées, favorisée par l’altération des protections et les dispositifs."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q111",
+    "courseId": "prevention_ias_asepsie",
+    "number": 111,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Concernant la prévention des pneumopathies du patient ventilé :",
+    "choices": [
+      "Les soins de bouche participent à la prévention.",
+      "Toute texture convient à toute personne dysphagique.",
+      "Une demi-assise à 30–45° peut être utile en l’absence de contre-indication.",
+      "20–30 mmHg est strictement identique à 20–30 cmH2O.",
+      "L’hygiène des mains devient inutile sur matériel initialement stérile."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ils réduisent notamment la charge microbienne buccale.",
+      "Les textures se décident après évaluation.",
+      "Cette position aide à limiter les inhalations.",
+      "Les unités ne sont pas interchangeables ; le repère usuel est en cmH2O.",
+      "La stérilité initiale ne dispense pas d’asepsie."
+    ],
+    "explanation": "A - Vrai. Ils réduisent notamment la charge microbienne buccale. B - Faux. Les textures se décident après évaluation. C - Vrai. Cette position aide à limiter les inhalations. D - Faux. Les unités ne sont pas interchangeables ; le repère usuel est en cmH2O. E - Faux. La stérilité initiale ne dispense pas d’asepsie.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c111",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Ballonnet d’intubation : quelle unité retenir ?",
+        "answers": [
+          "Le repère habituel de 20–30 s’exprime en cmH2O, avec contrôle selon dispositif et protocole ; ne pas le remplacer par mmHg."
+        ],
+        "explanation": "Le repère habituel de 20–30 s’exprime en cmH2O, avec contrôle selon dispositif et protocole ; ne pas le remplacer par mmHg."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q112",
+    "courseId": "prevention_ias_asepsie",
+    "number": 112,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quelles catégories décrivent la profondeur d’une ISO ?",
+    "choices": [
+      "Infection communautaire et infection vaccinale.",
+      "Infection superficielle de l’incision.",
+      "Infection profonde de l’incision.",
+      "Infection d’organe ou d’espace.",
+      "Infection obligatoirement limitée à la peau."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces mots ne classent pas la profondeur d’une ISO.",
+      "Elle touche peau et tissu sous-cutané.",
+      "Elle atteint les tissus profonds de l’incision.",
+      "Elle touche un site au-delà de l’incision.",
+      "Les atteintes profondes et d’organe existent."
+    ],
+    "explanation": "A - Faux. Ces mots ne classent pas la profondeur d’une ISO. B - Vrai. Elle touche peau et tissu sous-cutané. C - Vrai. Elle atteint les tissus profonds de l’incision. D - Vrai. Elle touche un site au-delà de l’incision. E - Faux. Les atteintes profondes et d’organe existent.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c112",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Quelles sont les trois profondeurs d’ISO ?",
+        "answers": [
+          "Superficielle, profonde et organe/espace. Elles ne correspondent pas au seul aspect de la peau."
+        ],
+        "explanation": "Superficielle, profonde et organe/espace. Elles ne correspondent pas au seul aspect de la peau."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q113",
+    "courseId": "prevention_ias_asepsie",
+    "number": 113,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quelle lecture des délais d’ISO est correcte ?",
+    "choices": [
+      "Une fenêtre de surveillance exclut toute infection clinique ultérieure.",
+      "Le lien avec l’intervention reste à rechercher après la sortie.",
+      "Le délai d’un an avec implant est une règle universelle de tout programme actuel.",
+      "Les programmes actuels peuvent utiliser 30 ou 90 jours selon l’intervention.",
+      "Une douleur et de la fièvre tardives doivent toujours être ignorées."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un critère de surveillance ne supprime pas la possibilité clinique.",
+      "La sortie ne coupe pas le lien possible avec l’acte.",
+      "Ce repère ancien ne s’applique pas uniformément.",
+      "Le programme et les actes concernés précisent la fenêtre.",
+      "Une évaluation est nécessaire."
+    ],
+    "explanation": "A - Faux. Un critère de surveillance ne supprime pas la possibilité clinique. B - Vrai. La sortie ne coupe pas le lien possible avec l’acte. C - Faux. Ce repère ancien ne s’applique pas uniformément. D - Vrai. Le programme et les actes concernés précisent la fenêtre. E - Faux. Une évaluation est nécessaire.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c113",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Fenêtre de surveillance et infection tardive : quelle distinction ?",
+        "answers": [
+          "Les fenêtres standardisent le recueil ; elles n’interdisent pas le diagnostic d’une infection survenant plus tard."
+        ],
+        "explanation": "Les fenêtres standardisent le recueil ; elles n’interdisent pas le diagnostic d’une infection survenant plus tard."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q114",
+    "courseId": "prevention_ias_asepsie",
+    "number": 114,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Comment prévenir une infection du site opératoire ?",
+    "choices": [
+      "Respecter la préparation cutanée.",
+      "Raser à la lame tout patient sans indication.",
+      "Surveiller la plaie après la sortie.",
+      "Transformer toute rougeur en diagnostic certain.",
+      "Rechercher aussi un foyer infectieux à distance."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle réduit une source de contamination.",
+      "Éviter la dépilation inutile ; si indiquée, préférer la tonte.",
+      "Des ISO se révèlent au domicile.",
+      "Une rougeur est un signe à interpréter.",
+      "Une diffusion sanguine peut atteindre un implant."
+    ],
+    "explanation": "A - Vrai. Elle réduit une source de contamination. B - Faux. Éviter la dépilation inutile ; si indiquée, préférer la tonte. C - Vrai. Des ISO se révèlent au domicile. D - Faux. Une rougeur est un signe à interpréter. E - Vrai. Une diffusion sanguine peut atteindre un implant.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c114",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Pourquoi surveiller aussi après la sortie ?",
+        "answers": [
+          "Une ISO peut se révéler au domicile ; le patient doit connaître les signes d’alerte et savoir qui contacter."
+        ],
+        "explanation": "Une ISO peut se révéler au domicile ; le patient doit connaître les signes d’alerte et savoir qui contacter."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q115",
+    "courseId": "prevention_ias_asepsie",
+    "number": 115,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Quels énoncés décrivent le PICC et la CCI ?",
+    "choices": [
+      "Un PICC possède une extrémité centrale.",
+      "Un PICC est forcément un CVP court.",
+      "Une CCI est une chambre sous-cutanée reliée à un cathéter central.",
+      "Une CCI se ponctionne avec n’importe quelle aiguille.",
+      "La position périphérique de la ponction prouve une extrémité périphérique."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "PICC signifie central inséré par voie périphérique.",
+      "Il se distingue du CVP par son extrémité centrale.",
+      "Le dispositif permet un accès prolongé.",
+      "Une aiguille adaptée est nécessaire.",
+      "Le trajet du PICC atteint une veine centrale."
+    ],
+    "explanation": "A - Vrai. PICC signifie central inséré par voie périphérique. B - Faux. Il se distingue du CVP par son extrémité centrale. C - Vrai. Le dispositif permet un accès prolongé. D - Faux. Une aiguille adaptée est nécessaire. E - Faux. Le trajet du PICC atteint une veine centrale.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c115",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "Pourquoi le PICC est-il central ?",
+        "answers": [
+          "Son extrémité se trouve dans une veine centrale, même si son insertion se fait dans une veine périphérique du bras."
+        ],
+        "explanation": "Son extrémité se trouve dans une veine centrale, même si son insertion se fait dans une veine périphérique du bras."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q116",
+    "courseId": "prevention_ias_asepsie",
+    "number": 116,
+    "theme": "IAS : clinique et dispositifs",
+    "difficulty": "medium",
+    "question": "Concernant une suspicion d’infection de cathéter :",
+    "choices": [
+      "La fièvre prouve toujours que le cathéter est responsable.",
+      "Les hémocultures appariées se prélèvent dans des conditions comparables.",
+      "Une positivité centrale au moins deux heures avant la périphérie est un argument.",
+      "Un écart inférieur exclut formellement le cathéter.",
+      "La décision de retrait relève du contexte et de l’évaluation médicale."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "D’autres foyers sont possibles.",
+      "Temps, sites et volumes doivent être correctement documentés.",
+      "Pour le même germe, cet écart soutient l’imputabilité.",
+      "Ce seul critère ne suffit pas à l’exclure.",
+      "Gravité, germe et dispositif influencent la décision."
+    ],
+    "explanation": "A - Faux. D’autres foyers sont possibles. B - Vrai. Temps, sites et volumes doivent être correctement documentés. C - Vrai. Pour le même germe, cet écart soutient l’imputabilité. D - Faux. Ce seul critère ne suffit pas à l’exclure. E - Vrai. Gravité, germe et dispositif influencent la décision.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c116",
+        "theme": "IAS : clinique et dispositifs",
+        "front": "À quoi servent les hémocultures appariées ?",
+        "answers": [
+          "À comparer les résultats de la voie centrale et d’une veine périphérique ; une avance centrale d’au moins deux heures soutient le rôle du cathéter, sous conditions."
+        ],
+        "explanation": "À comparer les résultats de la voie centrale et d’une veine périphérique ; une avance centrale d’au moins deux heures soutient le rôle du cathéter, sous conditions."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q117",
+    "courseId": "prevention_ias_asepsie",
+    "number": 117,
+    "theme": "Vaccination : mécanismes",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent la mémoire vaccinale ?",
+    "choices": [
+      "Elle rend la protection immédiate après toute injection.",
+      "Elle prépare une réponse ultérieure plus rapide.",
+      "Elle supprime tout besoin de rappel, quel que soit le vaccin.",
+      "Elle implique des lymphocytes spécifiques mémoire.",
+      "Elle confère une protection identique contre tous les microbes."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une mise en place de la réponse est nécessaire.",
+      "La réponse secondaire est facilitée par la mémoire.",
+      "Les schémas varient selon vaccin et terrain.",
+      "Des cellules mémoire persistent après stimulation.",
+      "La réponse est spécifique des antigènes."
+    ],
+    "explanation": "A - Faux. Une mise en place de la réponse est nécessaire. B - Vrai. La réponse secondaire est facilitée par la mémoire. C - Faux. Les schémas varient selon vaccin et terrain. D - Vrai. Des cellules mémoire persistent après stimulation. E - Faux. La réponse est spécifique des antigènes.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c117",
+        "theme": "Vaccination : mécanismes",
+        "front": "Comment la vaccination prépare-t-elle une réponse secondaire ?",
+        "answers": [
+          "Elle induit une première réponse et des lymphocytes mémoire, mobilisables plus rapidement lors d’une rencontre ultérieure."
+        ],
+        "explanation": "Elle induit une première réponse et des lymphocytes mémoire, mobilisables plus rapidement lors d’une rencontre ultérieure."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q118",
+    "courseId": "prevention_ias_asepsie",
+    "number": 118,
+    "theme": "Vaccination : mécanismes",
+    "difficulty": "medium",
+    "question": "Quelles associations sont exactes ?",
+    "choices": [
+      "Lymphocyte B différencié en plasmocyte : anticorps.",
+      "Tous les lymphocytes T sécrètent des anticorps.",
+      "Réponse humorale : anticorps.",
+      "Cellule mémoire : bactérie atténuée persistante.",
+      "Immunogénicité : capacité à produire une réponse immune."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le plasmocyte est une cellule productrice d’anticorps.",
+      "Cette production relève de la lignée B.",
+      "Les anticorps caractérisent cette composante.",
+      "Il s’agit d’un lymphocyte.",
+      "Elle décrit cette propriété, distincte de la seule sécurité."
+    ],
+    "explanation": "A - Vrai. Le plasmocyte est une cellule productrice d’anticorps. B - Faux. Cette production relève de la lignée B. C - Vrai. Les anticorps caractérisent cette composante. D - Faux. Il s’agit d’un lymphocyte. E - Vrai. Elle décrit cette propriété, distincte de la seule sécurité.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c118",
+        "theme": "Vaccination : mécanismes",
+        "front": "Qu’est-ce que l’immunogénicité ?",
+        "answers": [
+          "La capacité d’un antigène ou vaccin à provoquer une réponse immunitaire."
+        ],
+        "explanation": "La capacité d’un antigène ou vaccin à provoquer une réponse immunitaire."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q119",
+    "courseId": "prevention_ias_asepsie",
+    "number": 119,
+    "theme": "Vaccination : mécanismes",
+    "difficulty": "medium",
+    "question": "Quelles caractéristiques distinguent vaccins inertes et vivants ?",
+    "choices": [
+      "Un vaccin inactivé se multiplie pour provoquer l’infection ciblée.",
+      "Le ROR est un vaccin vivant atténué.",
+      "Tous les vaccins inactivés possèdent obligatoirement un adjuvant.",
+      "Les vivants demandent des précautions en cas d’immunodépression.",
+      "La grossesse autorise indistinctement tous les vaccins vivants."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’agent inactivé ne se réplique pas.",
+      "Il contient des virus vivants atténués.",
+      "La composition dépend du produit.",
+      "La réplication expose à un risque particulier.",
+      "Ils sont généralement contre-indiqués pendant la grossesse."
+    ],
+    "explanation": "A - Faux. L’agent inactivé ne se réplique pas. B - Vrai. Il contient des virus vivants atténués. C - Faux. La composition dépend du produit. D - Vrai. La réplication expose à un risque particulier. E - Faux. Ils sont généralement contre-indiqués pendant la grossesse.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c119",
+        "theme": "Vaccination : mécanismes",
+        "front": "Pourquoi les vivants posent-ils problème chez certains immunodéprimés ?",
+        "answers": [
+          "Leur réplication peut être insuffisamment contrôlée ; respecter les contre-indications et avis spécialisés."
+        ],
+        "explanation": "Leur réplication peut être insuffisamment contrôlée ; respecter les contre-indications et avis spécialisés."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q120",
+    "courseId": "prevention_ias_asepsie",
+    "number": 120,
+    "theme": "Vaccination : mécanismes",
+    "difficulty": "medium",
+    "question": "À propos de l’ARNm vaccinal :",
+    "choices": [
+      "Il fournit une instruction temporaire de production d’antigène.",
+      "Il est traduit dans le cytoplasme.",
+      "Il modifie obligatoirement les chromosomes du patient.",
+      "Il constitue nécessairement un virus vivant complet.",
+      "Sa dégradation est impossible."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il fait produire l’antigène par les cellules.",
+      "La traduction a lieu dans ce compartiment.",
+      "Il n’a pas cette fonction d’intégration au génome.",
+      "Une instruction d’antigène n’est pas un virus entier vivant.",
+      "L’ARNm est ensuite dégradé."
+    ],
+    "explanation": "A - Vrai. Il fait produire l’antigène par les cellules. B - Vrai. La traduction a lieu dans ce compartiment. C - Faux. Il n’a pas cette fonction d’intégration au génome. D - Faux. Une instruction d’antigène n’est pas un virus entier vivant. E - Faux. L’ARNm est ensuite dégradé.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c120",
+        "theme": "Vaccination : mécanismes",
+        "front": "L’ARNm vaccinal devient-il une modification du génome ?",
+        "answers": [
+          "Il est une instruction temporaire traduite dans le cytoplasme puis dégradée ; il n’a pas pour fonction de modifier l’ADN."
+        ],
+        "explanation": "Il est une instruction temporaire traduite dans le cytoplasme puis dégradée ; il n’a pas pour fonction de modifier l’ADN."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q121",
+    "courseId": "prevention_ias_asepsie",
+    "number": 121,
+    "theme": "Vaccination : mécanismes",
+    "difficulty": "medium",
+    "question": "Quel rôle ont les composants d’un vaccin ?",
+    "choices": [
+      "Le diluant et l’antigène sont toujours la même chose.",
+      "Un adjuvant renforce la réponse à l’antigène.",
+      "Un stabilisant protège la formulation.",
+      "Tous les composants ont pour rôle de provoquer une allergie.",
+      "La composition doit être vérifiée pour un antécédent de réaction sévère."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le diluant sert à la formulation ; l’antigène est la cible immunitaire.",
+      "C’est sa fonction recherchée.",
+      "Il participe à la stabilité du produit.",
+      "Leur rôle est technologique ou immunologique ; une allergie est un risque distinct.",
+      "Il faut identifier le composant en cause et le produit exact."
+    ],
+    "explanation": "A - Faux. Le diluant sert à la formulation ; l’antigène est la cible immunitaire. B - Vrai. C’est sa fonction recherchée. C - Vrai. Il participe à la stabilité du produit. D - Faux. Leur rôle est technologique ou immunologique ; une allergie est un risque distinct. E - Vrai. Il faut identifier le composant en cause et le produit exact.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c121",
+        "theme": "Vaccination : mécanismes",
+        "front": "À quoi sert un adjuvant vaccinal ?",
+        "answers": [
+          "À renforcer la réponse immunitaire à l’antigène ; il n’est pas présent dans tous les vaccins."
+        ],
+        "explanation": "À renforcer la réponse immunitaire à l’antigène ; il n’est pas présent dans tous les vaccins."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q122",
+    "courseId": "prevention_ias_asepsie",
+    "number": 122,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Protection directe et indirecte : que retenir ?",
+    "choices": [
+      "Le vaccin antitétanique repose surtout sur l’immunité collective.",
+      "La protection directe concerne la personne vaccinée.",
+      "Une protection indirecte peut réduire la transmission vers des personnes fragiles.",
+      "Tout vaccin supprime toute transmission.",
+      "Le réservoir environnemental du tétanos persiste."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La protection contre le tétanos est individuelle.",
+      "C’est sa définition.",
+      "Elle dépend de l’effet sur la circulation de l’agent.",
+      "Les effets diffèrent selon les vaccins.",
+      "Il n’est pas supprimé par la vaccination humaine."
+    ],
+    "explanation": "A - Faux. La protection contre le tétanos est individuelle. B - Vrai. C’est sa définition. C - Vrai. Elle dépend de l’effet sur la circulation de l’agent. D - Faux. Les effets diffèrent selon les vaccins. E - Vrai. Il n’est pas supprimé par la vaccination humaine.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c122",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Pourquoi ne pas compter sur les autres vaccinés contre le tétanos ?",
+        "answers": [
+          "Le réservoir est environnemental ; la protection dépend de l’immunisation de la personne exposée."
+        ],
+        "explanation": "Le réservoir est environnemental ; la protection dépend de l’immunisation de la personne exposée."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q123",
+    "courseId": "prevention_ias_asepsie",
+    "number": 123,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Dans le modèle simple du seuil 1 − 1/R0 :",
+    "choices": [
+      "R0 décrit les cas secondaires en population entièrement susceptible.",
+      "Un R0 plus élevé demande un seuil théorique plus élevé.",
+      "Le seuil garantit l’absence de toute épidémie réelle.",
+      "Couverture vaccinale et immunisation réelle sont toujours identiques.",
+      "Les hypothèses du modèle doivent être précisées."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "C’est la définition du nombre de reproduction de base.",
+      "La formule augmente avec R0.",
+      "Le modèle simplifie contacts, efficacité et hétérogénéité.",
+      "Efficacité et schéma peuvent les faire différer.",
+      "Elles conditionnent l’interprétation."
+    ],
+    "explanation": "A - Vrai. C’est la définition du nombre de reproduction de base. B - Vrai. La formule augmente avec R0. C - Faux. Le modèle simplifie contacts, efficacité et hétérogénéité. D - Faux. Efficacité et schéma peuvent les faire différer. E - Vrai. Elles conditionnent l’interprétation.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c123",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Que calcule 1 − 1/R0 ?",
+        "answers": [
+          "Un seuil théorique d’immunisation dans un modèle simple ; ce n’est pas une garantie de couverture suffisante dans toute population réelle."
+        ],
+        "explanation": "Un seuil théorique d’immunisation dans un modèle simple ; ce n’est pas une garantie de couverture suffisante dans toute population réelle."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q124",
+    "courseId": "prevention_ias_asepsie",
+    "number": 124,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Quelle lecture du calendrier vaccinal est juste ?",
+    "choices": [
+      "Une dose manquée impose toujours de tout recommencer.",
+      "Il faut consulter sa version actualisée.",
+      "Les vaccins du nourrisson ne concernent pas le tétanos.",
+      "Le rattrapage tient compte des doses déjà reçues.",
+      "Un projet d’obligation orale est un texte déjà applicable."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un rattrapage permet souvent de poursuivre.",
+      "Les recommandations évoluent.",
+      "La vaccination antitétanique commence dans l’enfance.",
+      "Les doses antérieures valides restent pertinentes.",
+      "Un projet ne constitue pas à lui seul une obligation."
+    ],
+    "explanation": "A - Faux. Un rattrapage permet souvent de poursuivre. B - Vrai. Les recommandations évoluent. C - Faux. La vaccination antitétanique commence dans l’enfance. D - Vrai. Les doses antérieures valides restent pertinentes. E - Faux. Un projet ne constitue pas à lui seul une obligation.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c124",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Que faire devant un schéma incomplet ?",
+        "answers": [
+          "Vérifier l’historique et le calendrier courant, puis planifier le rattrapage ; il n’est généralement pas nécessaire de tout reprendre."
+        ],
+        "explanation": "Vérifier l’historique et le calendrier courant, puis planifier le rattrapage ; il n’est généralement pas nécessaire de tout reprendre."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q125",
+    "courseId": "prevention_ias_asepsie",
+    "number": 125,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Pour les compétences vaccinales infirmières élargies :",
+    "choices": [
+      "Prescription et administration désignent exactement le même acte.",
+      "Le cadre concerne notamment les personnes de 11 ans et plus.",
+      "Les conditions de formation et de déclaration doivent être respectées.",
+      "Tout IDE peut prescrire sans restriction un vivant à un immunodéprimé.",
+      "Il faut vérifier l’indication et les contre-indications avant l’acte."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces compétences sont distinctes et encadrées.",
+      "C’est le seuil du cadre élargi décrit.",
+      "Elles font partie du cadre professionnel.",
+      "Cette prescription est exclue du cadre autonome cité.",
+      "L’habilitation ne dispense pas du raisonnement clinique."
+    ],
+    "explanation": "A - Faux. Ces compétences sont distinctes et encadrées. B - Vrai. C’est le seuil du cadre élargi décrit. C - Vrai. Elles font partie du cadre professionnel. D - Faux. Cette prescription est exclue du cadre autonome cité. E - Vrai. L’habilitation ne dispense pas du raisonnement clinique.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c125",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Être habilité à vacciner dispense-t-il de vérifier le patient ?",
+        "answers": [
+          "Non : indication, schéma, consentement, terrain, contre-indications, produit, dose et voie restent à contrôler."
+        ],
+        "explanation": "Non : indication, schéma, consentement, terrain, contre-indications, produit, dose et voie restent à contrôler."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q126",
+    "courseId": "prevention_ias_asepsie",
+    "number": 126,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Quelles situations sont des contre-indications à distinguer ?",
+    "choices": [
+      "Un rhume des foins interdit tout vaccin.",
+      "Une maladie bénigne impose toujours un report.",
+      "Une réaction sévère à un composant justifie une évaluation ciblée.",
+      "Un vaccin vivant peut être contre-indiqué chez un immunodéprimé.",
+      "Toute personne immunodéprimée ne peut recevoir aucun vaccin inerte."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ce n’est pas une interdiction globale.",
+      "La gravité de l’épisode intervient.",
+      "Il faut identifier composant et vaccin.",
+      "Le risque dépend notamment de la réplication.",
+      "Les vaccins inertes ont souvent des indications spécifiques."
+    ],
+    "explanation": "A - Faux. Ce n’est pas une interdiction globale. B - Faux. La gravité de l’épisode intervient. C - Vrai. Il faut identifier composant et vaccin. D - Vrai. Le risque dépend notamment de la réplication. E - Faux. Les vaccins inertes ont souvent des indications spécifiques.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c126",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Quelles fausses contre-indications éviter ?",
+        "answers": [
+          "Petit rhume et rhinite allergique ne sont pas automatiquement des contre-indications ; distinguer maladie aiguë importante et allergie sévère ciblée."
+        ],
+        "explanation": "Petit rhume et rhinite allergique ne sont pas automatiquement des contre-indications ; distinguer maladie aiguë importante et allergie sévère ciblée."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q127",
+    "courseId": "prevention_ias_asepsie",
+    "number": 127,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Après une injection vaccinale :",
+    "choices": [
+      "Une douleur locale peut être une réaction mineure.",
+      "L’absence de fièvre prouve l’échec vaccinal.",
+      "Une réaction respiratoire et circulatoire peut évoquer une anaphylaxie.",
+      "Une rougeur locale isolée est toujours une anaphylaxie.",
+      "L’anaphylaxie exige une prise en charge urgente."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Sa fréquence varie selon le produit.",
+      "L’efficacité ne se mesure pas à la fièvre.",
+      "Il s’agit de signes systémiques préoccupants.",
+      "Le diagnostic est distinct d’une simple réaction locale.",
+      "Elle peut menacer le pronostic vital."
+    ],
+    "explanation": "A - Vrai. Sa fréquence varie selon le produit. B - Faux. L’efficacité ne se mesure pas à la fièvre. C - Vrai. Il s’agit de signes systémiques préoccupants. D - Faux. Le diagnostic est distinct d’une simple réaction locale. E - Vrai. Elle peut menacer le pronostic vital.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c127",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Réaction locale et anaphylaxie : quelle différence ?",
+        "answers": [
+          "La réaction locale reste limitée ; l’anaphylaxie est systémique, potentiellement respiratoire ou circulatoire et relève de l’urgence."
+        ],
+        "explanation": "La réaction locale reste limitée ; l’anaphylaxie est systémique, potentiellement respiratoire ou circulatoire et relève de l’urgence."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
+  },
+  {
+    "id": "prevention_ias_asepsie_global_q128",
+    "courseId": "prevention_ias_asepsie",
+    "number": 128,
+    "theme": "Vaccination : stratégies et pratique",
+    "difficulty": "medium",
+    "question": "Quels principes gouvernent la pharmacovigilance vaccinale ?",
+    "choices": [
+      "Elle s’arrête lors de l’autorisation de commercialisation.",
+      "Un signal suffit toujours à prouver la causalité.",
+      "Elle recherche notamment des événements rares après commercialisation.",
+      "Les autorités peuvent réévaluer les recommandations.",
+      "La fréquence d’un effet ne demande aucun dénominateur."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La surveillance continue après mise à disposition.",
+      "Un signal doit être analysé.",
+      "Les essais n’identifient pas tous les événements très rares.",
+      "De nouvelles données peuvent modifier les mesures.",
+      "Dose, population et période rendent le risque interprétable."
+    ],
+    "explanation": "A - Faux. La surveillance continue après mise à disposition. B - Faux. Un signal doit être analysé. C - Vrai. Les essais n’identifient pas tous les événements très rares. D - Vrai. De nouvelles données peuvent modifier les mesures. E - Faux. Dose, population et période rendent le risque interprétable.",
+    "flashcards": [
+      {
+        "id": "prevention_ias_asepsie_global_c128",
+        "theme": "Vaccination : stratégies et pratique",
+        "front": "Pourquoi surveiller un vaccin après son autorisation ?",
+        "answers": [
+          "Pour détecter et analyser notamment les effets rares ou nouveaux en usage réel ; un signal n’est pas automatiquement une preuve causale."
+        ],
+        "explanation": "Pour détecter et analyser notamment les effets rares ou nouveaux en usage réel ; un signal n’est pas automatiquement une preuve causale."
+      }
+    ],
+    "kind": "QCM",
+    "course": "Prévention des IAS et asepsie",
+    "ue": "B1"
   }
 ]

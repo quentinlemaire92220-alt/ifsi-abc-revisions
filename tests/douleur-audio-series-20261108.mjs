@@ -1,10 +1,11 @@
 import {preservedBeforeCorrections} from '../tools/reconciled-correction-contract.mjs';
+import {consolidationBeforeJson} from '../tools/consolidated-course-contract.mjs';
 import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import {createHash,webcrypto} from 'node:crypto';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),b=read('docs/archives/douleur-vocaux-avant-20261108.json'),m=read('audio-series-v1.json'),s=m.series.find(x=>x.id==='douleur_global_20261108_audio');
 const deliveries=read('docs/course-deliveries.json');validateScopedRevisions(deliveries);
 assert.ok(s);assert.equal(s.status,'approved');assert.equal(s.reviewContract,'provided_audio_series_v1');assert.equal(s.vocals.length,7);assert.equal(s.review.independentHumanListening,false);assert.equal(s.publicationApproval.scope,'audio_series_replacement');
-assert.deepEqual(s.replaces,b.oldVocals.map(v=>v.id));assert.deepEqual(m.series.filter(x=>x.id!==s.id),b.priorAudioSeries,'Another course audio series changed');
+assert.deepEqual(s.replaces,b.oldVocals.map(v=>v.id));assert.deepEqual(consolidationBeforeJson(deliveries,'audio-series-v1.json',m).series.filter(x=>x.id!==s.id),b.priorAudioSeries,'Another course audio series changed outside independently approved consolidation');
 for(const [p,h] of Object.entries({...b.protectedFiles,...b.oldAudioHashes}))assert.equal(preservedBeforeCorrections(p,deliveries,h),h,'Protected historical resource changed: '+p);
 assert.deepEqual(read('course-registry-v741.json').courses.find(c=>c.id==='douleur'),b.course,'Raw historical course identity/resources changed');
 for(const [i,a] of s.artifacts.entries()){assert.equal(hash(a.path),a.sha256);assert.equal(fs.statSync(a.path).size,a.bytes);assert.equal(s.vocals[i].number,i+1);assert.ok(a.durationSeconds>0&&a.durationSeconds<600);assert.match(s.vocals[i].driveId,/^[A-Za-z0-9_-]{15,}$/);}

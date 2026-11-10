@@ -1,5 +1,6 @@
 // Stable-ID corrections of an existing signed course. Historical fixtures are
 // restored only for historical tests; this gate checks every actual changed row.
+import {consolidationBeforeJson} from './consolidated-course-contract.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -13,8 +14,8 @@ const proof=s=>assert.match(s||'',/^[a-f0-9]{64}$/);
 const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 export function preservedBeforeCorrections(path,manifest,expected){
  const direct=hash(path);if(direct===expected)return direct;
- if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json','docs/course-deliveries.json'].includes(path))return direct;
- let value=read(path);
+ if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json','docs/course-deliveries.json','audio-series-v1.json'].includes(path))return direct;
+ let value=consolidationBeforeJson(read('docs/course-deliveries.json'),path,read(path));
  const current=read('docs/course-deliveries.json');
  const revisions=[...(manifest.scopedCourseRevisions||[]),...(current.scopedCourseRevisions||[]).filter(r=>!(manifest.scopedCourseRevisions||[]).some(x=>x.id===r.id))];
  for(const r of revisions){
@@ -24,7 +25,7 @@ export function preservedBeforeCorrections(path,manifest,expected){
   else if(path==='questions-5.json')value=value.map(q=>old.bank.find(x=>x.id===q.id)||q);
   else if(path==='vocabulaire-v1.json')value={...value,entries:value.entries.map(v=>old.vocabulary.find(x=>x.id===v.id)||v)};
   else if(path==='vocals.json')value=value.map(v=>old.rows[path].find(x=>x.id===v.id)||v);
-  else value=value.filter(s=>s.resourceId!==r.sheetResourceId);
+  else if(path!=='audio-series-v1.json')value=value.filter(s=>s.resourceId!==r.sheetResourceId);
  }
  // Verify the exact old serialized bytes, not merely the current course slice.
  for(const suffix of ['\n','']){const reconstructed=createHash('sha256').update(JSON.stringify(value,null,2)+suffix).digest('hex');if(reconstructed===expected)return reconstructed;}

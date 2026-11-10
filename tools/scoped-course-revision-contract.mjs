@@ -1,3 +1,4 @@
+import {validateConsolidations,consolidationBeforeBundle,consolidationBeforeJson} from './consolidated-course-contract.mjs';
 import {validateQcmFlashcardsRevision} from './qcm-flashcards-revision-contract.mjs';
 import {validateUnifiedSheetMedia} from './unified-sheet-media-contract.mjs';
 import {validateCompleteWrittenRevision} from './complete-written-revision-contract.mjs';
@@ -17,9 +18,10 @@ const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 export function revisionBundle(revision){
  const {publicationApproval,...r}=revision;
  const course=read('course-registry-v741.json').courses.find(c=>c.id===r.courseId);
- return {revision:r,course,sheets:[1,2,3].flatMap(n=>read(`sheets-${n}.json`)).filter(s=>s.courseId===r.courseId),vocals:read('vocals.json').filter(v=>v.courseId===r.courseId),vocabulary:read('vocabulaire-v1.json').entries.filter(v=>v.courseIds?.includes(r.courseId)),bank:read(r.bankPath)};
+ return consolidationBeforeBundle(read('docs/course-deliveries.json'),revision,{revision:r,course,sheets:[1,2,3].flatMap(n=>read(`sheets-${n}.json`)).filter(s=>s.courseId===r.courseId),vocals:read('vocals.json').filter(v=>v.courseId===r.courseId),vocabulary:read('vocabulaire-v1.json').entries.filter(v=>v.courseIds?.includes(r.courseId)),bank:read(r.bankPath)});
 }
 export function validateScopedRevisions(manifest=read('docs/course-deliveries.json')){
+ validateConsolidations(manifest);
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
@@ -109,7 +111,7 @@ export function approvedRevisionAudioIds(manifest){
 // Adapter for shared PDF/visibility gates; never edits the historical delivery.
 export function scopedRevisionDeliveryForUrl(manifest,courseId,url){
  const assets=r=>[...r.publicArtifacts,...(r.officialSupportArtifact?[r.officialSupportArtifact]:[])];
- const r=manifest.scopedCourseRevisions?.find(r=>r.courseId===courseId&&assets(r).some(a=>origin+a.path===url));
+ const r=[...(manifest.scopedCourseRevisions||[]),...(manifest.consolidatedCourseRevisions||[])].find(r=>r.courseId===courseId&&assets(r).some(a=>origin+a.path===url));
  if(!r)return null;
  validateScopedRevisions(manifest);
  const artifacts=assets(r).map(a=>({...a,artifactId:r.id+'_'+a.role}));
@@ -118,7 +120,7 @@ export function scopedRevisionDeliveryForUrl(manifest,courseId,url){
 }
 // Reconstruct only the exact resources in a prior package. Never used by the app.
 export function scopedHistoricalJson(reader,file){
- const manifest=reader('docs/course-deliveries.json');let value=reader(file);
+ const manifest=reader('docs/course-deliveries.json');let value=consolidationBeforeJson(manifest,file,reader(file));
  for(const r of manifest.scopedCourseRevisions||[]){
   const old=reader(r.baselinePath);
   if(r.profile==='reconciled_written_correction_v1'){
@@ -140,6 +142,10 @@ export function scopedHistoricalJson(reader,file){
 }
 export function scopedHistoricalData(manifest,data){
  let out={...data};
+ if(out.registry)out.registry=consolidationBeforeJson(manifest,'course-registry-v741.json',out.registry);
+ if(out.questions)out.questions=consolidationBeforeJson(manifest,'questions-5.json',out.questions);
+ if(out.vocabulary)out.vocabulary=consolidationBeforeJson(manifest,'vocabulaire-v1.json',{entries:out.vocabulary}).entries;
+ if(out.sheets)out.sheets=consolidationBeforeJson(manifest,'sheets-3.json',out.sheets);
  for(const r of manifest.scopedCourseRevisions||[]){
   const old=read(r.baselinePath),ids=new Set(r.audioArtifacts.map(a=>a.vocalId));
   if(r.profile==='reconciled_written_correction_v1'){

@@ -1,5 +1,5 @@
 {
-  "version": "8.30.185",
+  "version": "8.30.186",
   "courses": [
     {
       "id": "biomolecules",
@@ -230,7 +230,7 @@
       "ue": "B1",
       "officialSupportUrl": "https://drive.google.com/file/d/1aRQrl4AAwqFLUcAGpK3e67hCuyShruyJ/view",
       "audioStatus": "available",
-      "audioCount": 9,
+      "audioCount": 8,
       "audioFolderUrl": "https://drive.google.com/drive/folders/1t0Se9qk1D1pBtZlA6jtW7eDvBiGNJHm4",
       "officialSupport": true,
       "nativeSupportAvailable": true,
@@ -238,10 +238,10 @@
       "sourceStatus": "active",
       "authoredFlashcards": true,
       "authoredFlashcardPresentation": "standalone_v1",
-      "flashcardTarget": 104,
-      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_QCM_104.pdf",
-      "qcmPdfQuestionCount": 104,
-      "flashcardsPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf",
+      "flashcardTarget": 128,
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_QCM_128_Corriges.pdf",
+      "qcmPdfQuestionCount": 128,
+      "flashcardsPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_Flashcards_128_Recto_Verso.pdf",
       "canonicalQuestionIds": [
         "prevention_ias_asepsie_global_q001",
         "prevention_ias_asepsie_global_q002",
@@ -346,7 +346,31 @@
         "prevention_ias_asepsie_global_q101",
         "prevention_ias_asepsie_global_q102",
         "prevention_ias_asepsie_global_q103",
-        "prevention_ias_asepsie_global_q104"
+        "prevention_ias_asepsie_global_q104",
+        "prevention_ias_asepsie_global_q105",
+        "prevention_ias_asepsie_global_q106",
+        "prevention_ias_asepsie_global_q107",
+        "prevention_ias_asepsie_global_q108",
+        "prevention_ias_asepsie_global_q109",
+        "prevention_ias_asepsie_global_q110",
+        "prevention_ias_asepsie_global_q111",
+        "prevention_ias_asepsie_global_q112",
+        "prevention_ias_asepsie_global_q113",
+        "prevention_ias_asepsie_global_q114",
+        "prevention_ias_asepsie_global_q115",
+        "prevention_ias_asepsie_global_q116",
+        "prevention_ias_asepsie_global_q117",
+        "prevention_ias_asepsie_global_q118",
+        "prevention_ias_asepsie_global_q119",
+        "prevention_ias_asepsie_global_q120",
+        "prevention_ias_asepsie_global_q121",
+        "prevention_ias_asepsie_global_q122",
+        "prevention_ias_asepsie_global_q123",
+        "prevention_ias_asepsie_global_q124",
+        "prevention_ias_asepsie_global_q125",
+        "prevention_ias_asepsie_global_q126",
+        "prevention_ias_asepsie_global_q127",
+        "prevention_ias_asepsie_global_q128"
       ],
       "vocabularyEntryIds": [
         "prevention_ias_asepsie_lex_001",
@@ -426,7 +450,36 @@
         "prevention_ias_asepsie_lex_075",
         "prevention_ias_asepsie_lex_076",
         "prevention_ias_asepsie_lex_077",
-        "prevention_ias_asepsie_lex_078"
+        "prevention_ias_asepsie_lex_078",
+        "prevention_ias_asepsie_lex_079",
+        "prevention_ias_asepsie_lex_080",
+        "prevention_ias_asepsie_lex_081",
+        "prevention_ias_asepsie_lex_082",
+        "prevention_ias_asepsie_lex_083",
+        "prevention_ias_asepsie_lex_084",
+        "prevention_ias_asepsie_lex_085",
+        "prevention_ias_asepsie_lex_086",
+        "prevention_ias_asepsie_lex_087",
+        "prevention_ias_asepsie_lex_088",
+        "prevention_ias_asepsie_lex_089",
+        "prevention_ias_asepsie_lex_090",
+        "prevention_ias_asepsie_lex_091",
+        "prevention_ias_asepsie_lex_092",
+        "prevention_ias_asepsie_lex_093",
+        "prevention_ias_asepsie_lex_094",
+        "prevention_ias_asepsie_lex_095",
+        "prevention_ias_asepsie_lex_096",
+        "prevention_ias_asepsie_lex_097",
+        "prevention_ias_asepsie_lex_098",
+        "prevention_ias_asepsie_lex_099",
+        "prevention_ias_asepsie_lex_100",
+        "prevention_ias_asepsie_lex_101",
+        "prevention_ias_asepsie_lex_102",
+        "prevention_ias_asepsie_lex_103",
+        "prevention_ias_asepsie_lex_104",
+        "prevention_ias_asepsie_lex_105",
+        "prevention_ias_asepsie_lex_106",
+        "prevention_ias_asepsie_lex_107"
       ],
       "additionalDocuments": [
         {
@@ -452,21 +505,35 @@
           "type": "flashcards",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf",
           "cardCount": 104
+        },
+        {
+          "label": "128 QCM corrigés — cours consolidé",
+          "type": "qcm",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_QCM_128_Corriges.pdf",
+          "questionCount": 128
+        },
+        {
+          "label": "128 flashcards — cours consolidé",
+          "type": "flashcards",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_Flashcards_128_Recto_Verso.pdf",
+          "cardCount": 128
         }
       ],
-      "sourceNote": "Fiche unifiée : supports officiels et applications IAS/TD, quatre schémas, 104 QCM, 104 cartes, 78 définitions et six vocaux validés à l’écoute.",
-      "primarySheetResourceId": "prevention_ias_asepsie_fiche_unifiee_20261107",
+      "sourceNote": "Cours consolidé : IAS, AES, asepsie et vaccination ; 128 QCM, 128 cartes, 107 définitions et huit vocaux validés à l’écoute.",
+      "primarySheetResourceId": "prevention_ias_asepsie_consolide_20261109",
       "activeVocalIds": [
         "prevention_ias_asepsie_global_20261102_vocal_01",
         "prevention_ias_asepsie_global_20261102_vocal_02",
         "prevention_ias_asepsie_global_20261102_vocal_03",
         "prevention_ias_asepsie_global_20261102_vocal_04",
         "prevention_ias_asepsie_global_20261102_vocal_05",
-        "prevention_ias_asepsie_global_20261102_vocal_06"
+        "prevention_ias_asepsie_global_20261102_vocal_06",
+        "prevention_ias_asepsie_global_20261102_vocal_07",
+        "prevention_ias_asepsie_global_20261102_vocal_08"
       ],
       "activeDocumentUrls": [
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_QCM_104.pdf",
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-fusion-20261107/Prevention_Flashcards_104.pdf"
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_QCM_128_Corriges.pdf",
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-consolide-20261109/Prevention_risque_infectieux_Flashcards_128_Recto_Verso.pdf"
       ]
     },
     {

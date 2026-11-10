@@ -59,6 +59,7 @@ jobs:
       - name: Vérifier les révisions de cours avec historique conservé
         if: ${{ !cancelled() }}
         run: |
+          node tests/consolidated-course.mjs
           node tests/scoped-course-revision.mjs
           node tests/qcm-flashcards-revision.mjs
           node tests/douleur-audio-series-20261108.mjs
@@ -133,6 +134,7 @@ jobs:
         run: |
           node tests/reconciled-correction.mjs
           python tests/reconciled-correction-pdf.py
+          python tests/consolidated-course-pdf.py
 
       - name: Vérifier le profil PDF compact et les défauts injectés
         if: ${{ !cancelled() }}

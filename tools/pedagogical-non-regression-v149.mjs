@@ -68,7 +68,7 @@ function localAsset(s){
  }catch{return null;}
 }
 function selectDelivery(manifest,s){
- const revision=manifest.scopedCourseRevisions?.find(r=>r.courseId===s.courseId&&r.sheetResourceId===s.resourceId);
+ const revision=[...(manifest.scopedCourseRevisions||[]),...(manifest.consolidatedCourseRevisions||[])].find(r=>r.courseId===s.courseId&&r.sheetResourceId===s.resourceId);
  if(revision){
   validateScopedRevisions(manifest);
   return {course:{...revision,status:'partial',pedagogicalValidated:false},part:null,scope:revision};

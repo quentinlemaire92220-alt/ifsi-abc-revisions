@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.185';
+const VERSION='8.30.186';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : VIH - fiche, QCM, cartes et vocal 5 corrigés.`;

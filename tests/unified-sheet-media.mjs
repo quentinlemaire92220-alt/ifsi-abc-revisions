@@ -1,3 +1,4 @@
+import {consolidationBeforeJson} from '../tools/consolidated-course-contract.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
@@ -8,7 +9,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const precache=JSON.parse(fs.readFileSync('sw.js','utf8').match(/const BASE_ASSETS=(\[[^;]+\]);/)[1].replaceAll("'",'"'));
 assert.equal(new Set(precache).size,precache.length,'Duplicate precache URLs prevent service-worker installation');
 const manifest=read('docs/course-deliveries.json');validateScopedRevisions(manifest);
-const series=read('audio-series-v1.json'),raw=read('vocals.json');
+const series=consolidationBeforeJson(manifest,'audio-series-v1.json',read('audio-series-v1.json')),raw=read('vocals.json');
 async function boot(data){const c={window:{},crypto:webcrypto,TextEncoder,Uint8Array,console:{error(){}},fetch:async()=>({ok:true,json:async()=>structuredClone(data)})};vm.runInNewContext(fs.readFileSync('audio-series-v1.js','utf8'),c);await c.window.IFSI_AUDIO_SERIES.ready;return c.window.IFSI_AUDIO_SERIES;}
 const api=await boot(series);let count=0;
 for(const r of manifest.scopedCourseRevisions.filter(r=>r.profile==='unified_sheet_media_v1')){

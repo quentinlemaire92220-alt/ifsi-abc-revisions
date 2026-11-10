@@ -76,7 +76,10 @@ for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
   const answers=(c.answers||[]).filter(Boolean);
   const authored=c.authored===true;
-  const auditText=text=>{let t=text.replace(/\bau cours de\b/gi,'pendant');if(authored)t=t.replace(/\ble cours distingue-t-il\b/gi,'peut-on distinguer');if(authored)t=t.replace(/\bexemple\b/gi,'cas').replace(/\bsupport(?!\s+(?:de cours|officiel|pédagogique)\b)/gi,'dispositif').replace(/\b(?:cité(?:e|es|s)?|indiqué(?:e|es|s)?)\b/gi,'');return t};
+  const auditText=text=>{let t=text.replace(/\bau cours de\b/gi,'pendant');if(authored)t=t.replace(/\ble cours distingue-t-il\b/gi,'peut-on distinguer');if(authored)t=t.replace(/\bexemple\b/gi,'cas').replace(/\bsupport(?!\s+(?:de cours|officiel|pédagogique)\b)/gi,'dispositif').replace(/\b(?:cité(?:e|es|s)?|indiqué(?:e|es|s)?)\b/gi,'');if(authored&&/vaccination/i.test(c.theme||''))t=t.replace(/\bschéma incomplet\b/gi,'calendrier incomplet');return t};
+  // A vaccination schedule is a clinical concept, not a reference to a figure.
+  // A real absent figure remains rejected even in that clinical theme.
+  if(authored&&/vaccination/i.test(c.theme||'')){assert.ok(reContext.test(auditText('Selon le schéma ci-dessus, que faire ?')));assert.ok(!reContext.test(auditText('Que faire devant un schéma incomplet ?')));}
   const reviewedComparison=reviewedComparisons.some(x=>x.questionId===(c.qid||c.id)&&x.sha256===reviewedFieldDigest('flashcards',[{front:c.front,answers:c.answers,explanation:c.explanation}]));
   const explanation=String(c.explanation||''),sourceMeta=!reviewedComparison&&/\b(?:support(?: de cours)?|dans ce cours|selon le cours|QCM\s+oral|diapo(?:sitive)?\s*\d*)\b/i.test(auditText(front+' '+explanation)),contextDep=!reviewedComparison&&reContext.test(auditText(front))&&!/^Définis complètement : Schéma corporel$/i.test(front),meta=reMeta.test(front),vague=reVague.test(front)||reBareAcronym.test(front)||reGenericPair.test(front),pair=rePair.test(front);
   // A single authored answer may display several enumerated elements separated
