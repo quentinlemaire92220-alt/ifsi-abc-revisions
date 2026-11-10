@@ -1,9 +1,9 @@
 (()=>{
 'use strict';
-const VERSION='8.30.188';
+const VERSION='8.30.189';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
-const READY=`Application prête • V${VERSION} : Psychopathologie : 26 vocaux de révision disponibles dans le cours et la playlist.`;
+const READY=`Application prête • V${VERSION} : Psychopathologie : fiche vérifiée, 113 QCM corrigés et 350 flashcards ; 26 vocaux conservés.`;
 const $=id=>document.getElementById(id);
 let checking=false;
 function buildStableVersionUI(){const legacy=$('update');if(!legacy)return false;const legacyBox=legacy.parentElement;const card=legacyBox?.parentElement;if(!legacyBox||!card)return false;legacyBox.id='legacyVersionSink';legacyBox.setAttribute('aria-hidden','true');legacyBox.style.display='none';let stable=$('appVersion742');if(!stable){stable=document.createElement('div');stable.id='appVersion742';stable.innerHTML=`<b id="appVersionTitle742">${TITLE}</b><div class="small" id="appVersionStatus742">${READY}</div>`;card.insertBefore(stable,card.firstChild)}return true}

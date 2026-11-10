@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
+import fs from 'node:fs';
+import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 
 // Unlike the legacy text-only inventory, include compressed banks, production
 // override precedence, the course resolver, subthemes and the vocabulary deck.
@@ -7,7 +9,12 @@ const selected=await runtimeDeck();
 const full=await runtimeDeck({allCards:true});
 assert.ok(selected.questions.length>2200,'Banques de production absentes');
 const vocabulary=JSON.parse((await import('node:fs')).readFileSync(new URL('../vocabulaire-v1.json',import.meta.url),'utf8'));
-assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,vocabulary.entries.length);
+const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
+const coveredCourses=new Set((manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='verified_documents_addition_v1').map(r=>r.courseId));
+for(const c of selected.registry.courses.filter(c=>c.vocabularyCoveredByAuthoredCards))assert.ok(coveredCourses.has(c.id),'Duplicate suppression without validated authored coverage');
+const automatic=vocabulary.entries.filter(e=>!e.courseIds.every(id=>coveredCourses.has(id)&&selected.registry.courses.find(c=>c.id===id)?.vocabularyCoveredByAuthoredCards));
+assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,automatic.length);
+for(const e of automatic)assert.ok(selected.deck.some(c=>c.id==='voc:'+e.id),'Automatic vocabulary card missing: '+e.id);
 for(const {deck} of [selected,full]){
   assert.equal(new Set(deck.map(c=>c.id)).size,deck.length,'Identifiants dupliqués');
   for(const c of deck){

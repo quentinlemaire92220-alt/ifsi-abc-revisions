@@ -23,7 +23,7 @@ export function validateBank(rows,label='bank',options={}){
   assert.ok(Array.isArray(q.flashcards),q.id+': champ flashcards absent');
   if(glossaryCount===undefined)assert.ok(q.flashcards.length,q.id+': cartes absentes');
   for(const f of q.flashcards){
-   assert.ok(f.front?.trim()&&f.answers?.length&&f.answers.every(a=>typeof a==='string'&&a.trim())&&f.explanation?.trim(),q.id+': carte incomplète');
+   assert.ok(f.front?.trim()&&f.answers?.length&&f.answers.every(a=>typeof a==='string'&&a.trim())&&(f.explanation?.trim()||f.completeAnswer===true&&f.answers.join(' ').length>=30),q.id+': carte incomplète');
   }
   const prior=options.previousRows?.find(x=>x.id===q.id);
   const issues=autonomyViolations(q).filter(x=>{
