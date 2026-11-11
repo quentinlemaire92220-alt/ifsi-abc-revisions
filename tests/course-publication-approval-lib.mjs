@@ -37,6 +37,7 @@ export function publicationBundle(courseId,delivery,data){
   publishedVerification:delivery.publishedVerification,
   artifactSha256s:delivery.artifactSha256s||{},
   ...(delivery.publicArtifacts?{publicArtifacts:delivery.publicArtifacts}:{}),
+  ...(delivery.captureSupport?{captureSupport:delivery.captureSupport,supportingArtifacts:delivery.supportingArtifacts,downloadArtifacts:delivery.downloadArtifacts,publicAudioArtifacts:delivery.publicAudioArtifacts,practiceCaseArtifact:delivery.practiceCaseArtifact,firstReleaseBaseline:delivery.firstReleaseBaseline,sourceAttributionReview:delivery.sourceAttributionReview}:{}),
   ...(delivery.templateConformance?{templateConformance:delivery.templateConformance}:{}),
   ...(delivery.officialRevision?{officialRevision:delivery.officialRevision}:{}),
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),

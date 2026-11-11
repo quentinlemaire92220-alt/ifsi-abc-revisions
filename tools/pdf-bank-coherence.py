@@ -415,6 +415,23 @@ def check(course):
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
                 continue
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            if role=='qcm' and course.get('qcmPdfLayout')=='boxed_rationales_with_practice_cases_v1':
+                from importlib.machinery import SourceFileLoader
+                reader=SourceFileLoader('qcm_cases_coherence',str(Path(__file__).with_name('qcm-cases-coherence.py'))).load_module()
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                case_asset=course['practiceCaseArtifact']
+                assert hashlib.sha256(Path(case_asset['path']).read_bytes()).hexdigest()==case_asset['sha256']
+                reader.validate(doc,rows,json.loads(Path(case_asset['path']).read_text(encoding='utf8')))
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, exact QCM, keys, five rationales and practice cases')
+                continue
+            if role=='flashcards' and course.get('flashcardPdfLayout')=='compact_duplex_source_order_v1':
+                from importlib.machinery import SourceFileLoader
+                reader=SourceFileLoader('duplex_cards',str(Path(__file__).with_name('duplex-card-coherence.py'))).load_module()
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                cards=sorted([f for q in rows for f in q['flashcards']],key=lambda f:f['id'])
+                reader.validate_compact_duplex_cards(doc,[{'flashcards':cards}])
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, source-order cards and mirrored backs')
+                continue
             if role=='qcm' and course.get('qcmPdfLayout')=='theme_badge_cardinality_v1':
                 import importlib.util
                 spec=importlib.util.spec_from_file_location('badge_qcm',Path(__file__).with_name('badge-qcm-coherence.py'))

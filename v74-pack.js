@@ -249,8 +249,8 @@ function renderCourse74(){
   const sheets=[...d.sheets].filter(x=>!unavailableSheet74(x)).sort((a,b)=>Number(!!b.primaryRevision)-Number(!!a.primaryRevision)||labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
-  // Liens déjà référencés : Drive ou PDF du site officiel de l'application.
-  const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.pdf$/.test(u)&&!u.split('/').includes('..')))?u:'';
+  // Documents et archives déjà référencés sur Drive ou sur le site de l'application.
+  const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.(?:pdf|zip)$/.test(u)&&!u.split('/').includes('..')))?u:'';
   // Dédupliquer seulement la présentation : les supports et leur registre approuvé restent intacts.
   const uniqueSupportParts74=(primaryUrl,parts)=>{
     const driveIdentity=u=>{

@@ -50,6 +50,13 @@ const live=await runtimeDeck();
 const actualManifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));
 validateScopedRevisions(actualManifest);
 const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','verified_documents_addition_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields);
+for(const d of actualManifest.courses.filter(d=>d.captureSupport?.contract==='course_capture_facsimile_v1')){
+ const {validateCaptureSupport}=await import('../tools/capture-support-contract.mjs');
+ validateCaptureSupport(live.registry.courses.find(c=>c.id===d.courseId),d);
+ assert.equal(d.sourceAttributionReview?.status,'documentary_reviewed');
+ assert.match(d.sourceAttributionReview.privateEvidenceSha256,/^[a-f0-9]{64}$/);
+ reviewedSourceComparisonFields.push(...d.sourceAttributionReview.fields);
+}
 const presented=new Set(live.registry.courses.filter(c=>c.authoredFlashcardPresentation==='standalone_v1').map(c=>c.id));
 for(const name of filenames){
   if(!fs.existsSync(name))continue; // Une banque supprimée n'ajoute pas de QCM.

@@ -3257,5 +3257,77 @@
     "durationSeconds": 260.406667,
     "localAudio": "./assets/audio/psychopathologie-20261110/UE_B2_S1_Psychopathologie_Vocal_26_Reperes_cliniques.mp3",
     "syntheticSpeech": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_01",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 1,
+    "title": "Psychologie du développement 1/6 — Fondements et bébé",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_01.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 171.528,
+    "syntheticSpeech": true,
+    "provisional": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_02",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 2,
+    "title": "Psychologie du développement 2/6 — Piaget et cognition",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_02.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 156.978667,
+    "syntheticSpeech": true,
+    "provisional": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_03",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 3,
+    "title": "Psychologie du développement 3/6 — Langage et interactions",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_03.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 167.773333,
+    "syntheticSpeech": true,
+    "provisional": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_04",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 4,
+    "title": "Psychologie du développement 4/6 — Attachement et soins",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_04.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 174.536,
+    "syntheticSpeech": true,
+    "provisional": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_05",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 5,
+    "title": "Psychologie du développement 5/6 — Psychologie de l’enfant",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_05.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 175.090667,
+    "syntheticSpeech": true,
+    "provisional": true
+  },
+  {
+    "id": "psychologie_developpement_vocal_06",
+    "courseId": "psychologie_developpement",
+    "course": "Psychologie du développement",
+    "number": 6,
+    "title": "Psychologie du développement 6/6 — Adolescence et vieillissement",
+    "localAudio": "./assets/audio/psycho-dev-20261111/Psychologie_developpement_Vocal_06.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 187.122667,
+    "syntheticSpeech": true,
+    "provisional": true
   }
 ]

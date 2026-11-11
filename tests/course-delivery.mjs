@@ -16,6 +16,7 @@ import {validateReviewedWrittenBundle} from './reviewed-written-bundle-contract.
 import {isExistingWrittenUpdate,validateExistingWrittenUpdate} from './existing-course-written-update-contract.mjs';
 
 import {isOfficialScoped,validateOfficialScoped} from './official-scoped-bundle-contract.mjs';
+import {validateCaptureSupport} from '../tools/capture-support-contract.mjs';
 const read=readHistoricalAudioJson;
 const manifest=read('docs/course-deliveries.json');
 const sheets=[1,2,3].flatMap(n=>read(`sheets-${n}.json`));
@@ -26,6 +27,7 @@ const {validateAudioSupplements}=await import('./audio-supplement-contract.mjs')
 validateAudioSupplements(manifest,{registry,vocals});
 const required=['01','02','03','04','05','06','07'];
 for(const c of manifest.courses){
+ validateCaptureSupport(registry.courses.find(x=>x.id===c.courseId),c);
  validateRevisionSheetSupplement(c.courseId,c,{sheets});
  assert.equal(c.validated,true,c.courseId+': validation manquante');
  assert.ok(registry.courses.some(x=>x.id===c.courseId),c.courseId+': cours absent');

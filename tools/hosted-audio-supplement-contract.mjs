@@ -130,15 +130,23 @@ export function firstReleaseAudioIds(before,after,oldData,newData,{readBytes=loc
    }
    continue;
   }
-  if(d.deliveryMode!=='first_release'||d.publicationHost!=='github_pages'||!['hybrid_v1','written_v1'].includes(d.packFormat)||before.courses?.some(x=>x.courseId===d.courseId))continue;
+  const limited=d.deliveryMode==='source_limited_first_release'&&d.captureSupport?.contract==='course_capture_facsimile_v1'&&d.firstReleaseBaseline?.contract==='additive_course_rows_v1';
+  if((d.deliveryMode!=='first_release'&&!limited)||d.publicationHost!=='github_pages'||!['hybrid_v1','written_v1'].includes(d.packFormat)||before.courses?.some(x=>x.courseId===d.courseId))continue;
   assert.ok(!oldData.registry.courses.some(c=>c.id===d.courseId),'Première publication audio : cours déjà présent');
-  assert.equal(d.validated,true);assert.equal(d.status,'complete');
+  assert.equal(d.validated,true);assert.equal(d.status,limited?'partial':'complete');
+  if(limited){
+   assert.equal(d.provisional,true);assert.equal(d.pedagogicalValidated,false);
+   assert.equal(d.sourceAudit.transcriptReviewStatus,'three_complete_transcripts_documentarily_reviewed');
+   assert.equal(d.audioOwnerReview?.humanListeningAttested,false);
+   assert.equal(d.audioOwnerReview?.fullTechnicalDecode,true);
+   assert.ok(d.blockers.some(b=>b.resource==='vocals'&&b.reason==='listening_review_not_attested'));
+  }
   assert.equal(d.publicationApproval?.status,'approved');
   assert.equal(d.publicationApproval?.authorization,'explicit_go_publication');
   assert.equal(d.publicationApproval?.scope,'course_package');
   assert.ok(iso(d.publicationApproval.approvedAt));
   assert.match(d.publicationApproval.bundleSha256||'',/^[a-f0-9]{64}$/);
-  assert.equal(d.audioOwnerReview?.status,'owner_listening_accepted');
+  assert.equal(d.audioOwnerReview?.status,limited?'publication_authorized_listening_reservations_disclosed':'owner_listening_accepted');
   assert.match(d.audioOwnerReview.privateEvidenceSha256||'',/^[a-f0-9]{64}$/);
   const rows=newData.vocals.filter(v=>v.courseId===d.courseId);
   assert.ok(rows.length);assert.deepEqual(rows.map(v=>v.id),d.vocals);

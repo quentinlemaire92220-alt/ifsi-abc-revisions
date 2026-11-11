@@ -12,6 +12,8 @@ const commands=[
  ['consolidated_course',n,['tests/consolidated-course.mjs']],
  ['consolidated_course_pdf',py,['tests/consolidated-course-pdf.py']],
  ['resource_access',n,['tests/course-resource-access.mjs']],
+ ['capture_support',n,['tests/capture-support.mjs']],
+ ['new_course_runtime',n,['tests/psychologie-developpement.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
  ['reconciled_correction',n,['tests/reconciled-correction.mjs']],
  ['reconciled_correction_pdf',py,['tests/reconciled-correction-pdf.py']],

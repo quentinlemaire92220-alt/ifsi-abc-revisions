@@ -1,5 +1,5 @@
 {
-  "version": "8.30.189",
+  "version": "8.30.190",
   "auditedAt": "2026-11-02",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,10 +9,10 @@
   "mode": "candidate_pending_pedagogical_review",
   "note": "Catalogue candidat : 24 MP3 TTS ajoutés avec statut provisoire ; revue des pauses et exactitude scientifique non terminée, validation non déclarée.",
   "expectedTotals": {
-    "courses": 70,
-    "sheets": 95,
+    "courses": 71,
+    "sheets": 96,
     "infographics": 184,
-    "vocals": 274,
+    "vocals": 280,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -288,6 +288,17 @@
       "qcm": 60,
       "flashcards": 60,
       "vocals": 4
+    },
+    {
+      "courseId": "psychologie_developpement",
+      "course": "Psychologie du développement",
+      "qcm": 62,
+      "flashcards": 90,
+      "vocabulary": 194,
+      "vocals": 6,
+      "sourceStatus": "reconstructed",
+      "provisional": true,
+      "scope": "Received captures and reviewed transcripts; no complete official slide deck."
     }
   ],
   "auditLogicVersion": "8.30.10",
