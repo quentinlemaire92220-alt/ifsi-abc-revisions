@@ -20,12 +20,21 @@ export function verifyPublicArtifact(delivery,url){
  assert.ok(parsed.pathname.startsWith(pagesPrefix),'Projet Pages inattendu');
  assert.ok(!parsed.search&&!parsed.hash,'URL PDF non canonique');
  const relative=decodeURIComponent(parsed.pathname.slice(pagesPrefix.length));
- const matches=Object.values(delivery.publicArtifacts||{}).filter(a=>a.path===relative);
+ const supporting=delivery.captureSupport?.contract==='course_capture_facsimile_v1'?Object.values(delivery.supportingArtifacts||{}):[];
+ const downloads=delivery.captureSupport?.contract==='course_capture_facsimile_v1'?(delivery.downloadArtifacts||[]):[];
+ const matches=[...Object.values(delivery.publicArtifacts||{}),...supporting,...downloads].filter(a=>a.path===relative);
  assert.equal(matches.length,1,'PDF hors inventaire approuvé : '+relative);
  const record=matches[0];
- const hash=createHash('sha256').update(fs.readFileSync(localAssetPath(relative))).digest('hex');
+ let target;
+ if(relative.endsWith('.zip')){
+  assert.ok(downloads.includes(record),'Archive hors inventaire de téléchargements');
+  assert.match(relative,/^assets\/[\w-]+\/[\w.-]+\.zip$/);assert.ok(!relative.split('/').includes('..'));
+  target=path.resolve(relative);assert.equal(fs.realpathSync(target),target);assert.ok(fs.statSync(target).isFile());
+ }else target=localAssetPath(relative);
+ const hash=createHash('sha256').update(fs.readFileSync(target)).digest('hex');
  assert.equal(hash,record.sha256,'Octets publics divergents');
  assert.equal(hash,delivery.artifactSha256s?.[record.artifactId],'Asset hors empreinte du package');
- assert.ok(Number.isInteger(record.pageCount)&&record.pageCount>0,'Pagination absente');
+ if(relative.endsWith('.zip'))assert.equal(fs.statSync(target).size,record.bytes,'Taille archive divergente');
+ else assert.ok(Number.isInteger(record.pageCount)&&record.pageCount>0,'Pagination absente');
  return record.artifactId;
 }

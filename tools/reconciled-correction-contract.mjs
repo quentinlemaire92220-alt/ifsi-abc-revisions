@@ -8,6 +8,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {validateBank} from './qcm-bank-contract.mjs';
 import {reviewedFieldDigest} from '../tests/qcm-autonomy-contract.mjs';
+import {beforeAdditiveCourses} from './additive-course-history.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().filter(k=>v[k]!==undefined).map(k=>[k,canonical(v[k])])):v;
@@ -17,7 +18,8 @@ const origin='https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/';
 export function preservedBeforeCorrections(path,manifest,expected){
  const direct=hash(path);if(direct===expected)return direct;
  if(!['questions-5.json','vocabulaire-v1.json','vocals.json','sheets-1.json','sheets-2.json','sheets-3.json','docs/course-deliveries.json','audio-series-v1.json'].includes(path))return direct;
- let value=consolidationBeforeJson(read('docs/course-deliveries.json'),path,verifiedDocumentsBeforeJson(path,receivedAudioBeforeJson(path,read(path))));
+ const active=read('docs/course-deliveries.json');
+ let value=consolidationBeforeJson(active,path,verifiedDocumentsBeforeJson(path,receivedAudioBeforeJson(path,beforeAdditiveCourses(path,read(path),active))));
  const current=read('docs/course-deliveries.json');
  const revisions=[...(manifest.scopedCourseRevisions||[]),...(current.scopedCourseRevisions||[]).filter(r=>!(manifest.scopedCourseRevisions||[]).some(x=>x.id===r.id))];
  for(const r of revisions){

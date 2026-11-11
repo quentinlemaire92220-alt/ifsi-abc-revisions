@@ -109,7 +109,7 @@ const view=historicalAudioView(current,currentData);
 validateHostedAudioChanges(previous,current,previousData,currentData,{stage:'preparation'});
 const changed=validateChangedDeliveries(previous,current,previousData,currentData,{stage:'preparation'});
 const independentlyApproved=current.courses.filter(d=>((d.revisionSheetSupplement&&JSON.stringify(d.revisionSheetSupplement)!==JSON.stringify(previous.courses.find(p=>p.courseId===d.courseId)?.revisionSheetSupplement))||d.updateContract==='official_reviewed_scoped_bundle_v1'||
- ((d.deliveryMode==='first_release'&&['hybrid_v1','written_v1'].includes(d.packFormat)||d.deliveryMode==='audio_only'&&d.audioOnlyContract==='received_audio_v1')&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
+ ((d.deliveryMode==='first_release'&&['hybrid_v1','written_v1'].includes(d.packFormat)||d.deliveryMode==='source_limited_first_release'&&d.captureSupport?.contract==='course_capture_facsimile_v1'&&d.firstReleaseBaseline?.contract==='additive_course_rows_v1'||d.deliveryMode==='audio_only'&&d.audioOnlyContract==='received_audio_v1')&&!previous.courses.some(old=>old.courseId===d.courseId))) &&
  JSON.stringify(d)!==JSON.stringify(previous.courses.find(old=>old.courseId===d.courseId)));
 assert.deepEqual(changed.map(x=>x.courseId).sort(),independentlyApproved.map(x=>x.courseId).sort());
 

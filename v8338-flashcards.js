@@ -622,7 +622,7 @@ function revisionFront(qid,front){
  return ADDITIONAL_FRONTS[qid]||FLASHCARD_REWRITES[qid]||raw;
 }
 function presentAuthoredCard(p){
- if(p.preserveReviewedText===true)return {...p,sourceFront:p.front};
+ if(p.preserveReviewedText===true)return {...p,sourceFront:p.front,front:p.displayFront||p.front};
  const explanation=capFirst(stripSourceMeta(String(p.explanation||'').replace(/Le support donne le repère /g,'À retenir : ').replace(/Le cours montre que /g,'').replace(/\s*Combinaison correcte\s*:[A-E+ .]+(?=\s*$)/i,'').replace(/Le support présente /g,'On distingue ').replace(/Le support associe /g,'On associe ').replace(/Le message oral majeur est de retenir /g,'À retenir : ')));
  // Keep a repeated explanation in its dedicated field, once, outside list items.
  const repeated=String(p.explanation||'').trim();

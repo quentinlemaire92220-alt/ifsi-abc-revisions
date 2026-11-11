@@ -1,0 +1,86 @@
+[
+  {
+    "id": "cas01",
+    "title": "Préparer un soin chez un enfant de 4 ans",
+    "sectionIds": [
+      "semiotique",
+      "clinique"
+    ],
+    "situation": "Un enfant de 4 ans doit recevoir un soin qu’il appréhende. Il regarde le matériel, s’éloigne et demande si sa mère restera. Une poupée et du matériel de jeu sûr sont disponibles.",
+    "questions": [
+      "Quels appuis relationnels proposer ?",
+      "Comment utiliser le jeu symbolique sans promettre que le soin sera indolore ?"
+    ],
+    "answer": "Proposer la présence d’un proche selon les conditions du soin, donner des explications concrètes et rechercher aussi douleur ou inconfort. Le faire-semblant avec la poupée aide à représenter le soin et à reprendre un rôle actif. Respecter les réactions de l’enfant et distinguer jeu, information et prise en charge de la douleur."
+  },
+  {
+    "id": "cas02",
+    "title": "Comprendre une conservation numérique",
+    "sectionIds": [
+      "operatoire"
+    ],
+    "situation": "Deux rangées comprennent cinq jetons chacune. Après espacement d’une rangée sans ajout, un enfant dit qu’elle contient plus de jetons parce qu’elle est plus longue.",
+    "questions": [
+      "Quelle propriété est en jeu ?",
+      "Quel accompagnement concret proposer et quelle conclusion éviter ?"
+    ],
+    "answer": "La tâche porte sur la conservation numérique : le nombre reste identique malgré l’espacement. Proposer une correspondance terme à terme ou un comptage, puis discuter la transformation. La longueur perceptive a dominé la réponse. Cette réponse isolée ne permet pas de diagnostiquer une déficience intellectuelle."
+  },
+  {
+    "id": "cas03",
+    "title": "Raisonner sur une fausse croyance",
+    "sectionIds": [
+      "esprit"
+    ],
+    "situation": "Léa range un jouet dans une boîte et quitte la pièce. Tom le déplace dans un sac. Un enfant observateur a vu tout le déplacement. Léa revient sans savoir ce que Tom a fait.",
+    "questions": [
+      "Où Léa devrait-elle d’abord chercher le jouet ? Pourquoi ?",
+      "Que travaille cette situation ?"
+    ],
+    "answer": "Léa devrait d’abord chercher dans la boîte : c’est l’emplacement qu’elle connaît. L’observateur sait que le jouet est dans le sac, mais doit raisonner à partir des informations de Léa. La situation travaille la distinction entre réalité, savoir propre et croyance d’autrui, dans le cadre de la théorie de l’esprit."
+  },
+  {
+    "id": "cas04",
+    "title": "Observer une séparation sans étiqueter",
+    "sectionIds": [
+      "attachement",
+      "strange",
+      "clinique"
+    ],
+    "situation": "À son arrivée dans un lieu d’accueil nouveau, un enfant de 16 mois reste silencieux et manipule un jouet. Un professionnel affirme immédiatement : « Il ne pleure pas, son attachement est forcément sécure. »",
+    "questions": [
+      "Pourquoi cette conclusion est-elle trop rapide ?",
+      "Quelles observations complémentaires seraient utiles ?"
+    ],
+    "answer": "L’absence de pleurs ne suffit pas à conclure à la sécurité du lien. Observer le contexte, les expériences antérieures de séparation, la recherche de proximité, l’usage du proche pour être réconforté et les retrouvailles. Une observation ordinaire isolée ne remplace pas une procédure standardisée ; tenir aussi compte du tempérament et de l’environnement."
+  },
+  {
+    "id": "cas05",
+    "title": "Autonomie et souffrance à l’adolescence",
+    "sectionIds": [
+      "ados-relations",
+      "ados-difficultes"
+    ],
+    "situation": "Une adolescente réclame davantage d’intimité. Depuis plusieurs semaines, elle s’isole aussi de ses amis, abandonne une activité appréciée et exprime une souffrance importante.",
+    "questions": [
+      "Comment distinguer besoin d’intimité et signes à explorer ?",
+      "Quels principes orientent la réponse soignante ?"
+    ],
+    "answer": "L’intimité et l’autonomie croissantes sont compatibles avec un soutien adulte. Le retrait durable, le changement de fonctionnement et la souffrance appellent une exploration du contexte et du retentissement. Écouter, évaluer les besoins de protection et transmettre aux professionnels concernés, sans tout attribuer à une crise ordinaire."
+  },
+  {
+    "id": "cas06",
+    "title": "Mémoire et dignité chez une personne âgée",
+    "sectionIds": [
+      "memoire",
+      "age-cognitif",
+      "age-affect"
+    ],
+    "situation": "Une personne âgée cherche parfois ses mots et se plaint de sa mémoire. Avec un indice, elle retrouve certains souvenirs. Un proche conclut qu’elle a forcément une maladie d’Alzheimer et parle désormais à sa place.",
+    "questions": [
+      "Quelles limites apporter à cette conclusion ?",
+      "Comment adapter l’échange ?"
+    ],
+    "answer": "Une plainte mnésique ne suffit pas au diagnostic ; la récupération peut être facilitée par un indice et plusieurs facteurs peuvent intervenir. Un déclin significatif compromettant l’autonomie demande une évaluation. S’adresser à la personne comme à un adulte, laisser du temps, vérifier compréhension et audition, respecter ses choix et soutenir les proches sans l’effacer de la relation."
+  }
+]

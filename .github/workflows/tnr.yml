@@ -57,6 +57,8 @@ jobs:
         run: |
           node tests/ci-history-recovery.mjs
           node tests/course-resource-access.mjs
+          node tests/capture-support.mjs
+          node tests/psychologie-developpement.mjs
 
       - name: Vérifier les révisions de cours avec historique conservé
         if: ${{ !cancelled() }}
