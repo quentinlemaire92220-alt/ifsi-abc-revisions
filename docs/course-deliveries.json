@@ -14418,6 +14418,11 @@
             "questionId": "psydev_q074",
             "field": "question",
             "sha256": "0949ed04c24b15cfc25d2a0a395964f1f31f69c8d21708c1ce6bb6028114ebdb"
+          },
+          {
+            "questionId": "psydev_q068",
+            "field": "flashcards",
+            "sha256": "ae10c81d25c58d50018b62f44973368e9ef96dd1e25d719a1039568c187a2d53"
           }
         ]
       },
@@ -14587,7 +14592,7 @@
         "authorization": "explicit_go_publication",
         "scope": "scoped_course_revision",
         "approvedAt": "2026-11-12T14:28:31.811428+00:00",
-        "bundleSha256": "30590f796b4679f2a4b83e9ee4fbfcb98aa408d600bc0e874f3c17d82bc01773"
+        "bundleSha256": "79521cfd36f7ae6db31effe6f3840d27847c2ab1d4db35a64f7078e0aba4c930"
       },
       "addedQuestionIds": [
         "psydev_q063",

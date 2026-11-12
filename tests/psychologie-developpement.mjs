@@ -42,7 +42,4 @@ assert.deepEqual(active.slice(0,62),bank);assert.equal(actual.registry.courses.f
 for(const mutate of [x=>x.audioArtifacts.push({vocalId:'invented'}),x=>x.addedQuestionIds.pop(),x=>x.addedVocabularyEntryIds.pop(),x=>x.sourceReview.officialPagesReviewed--,x=>x.templateConformance.artifacts.sheet.pagesChecked.pop()]){
  const bad=structuredClone(rev);mutate(bad);assert.throws(()=>validateDevelopmentOfficialRevision(bad,current,revisionBundle(rev)),'Unreviewed development change accepted');
 }
-const python=process.env.IFSI_PYTHON||'python';
-const {execFileSync}=await import('node:child_process');
-for(const a of rev.publicArtifacts.filter(a=>['sheet','qcm'].includes(a.role)))execFileSync(python,['tools/pdf-template-v3.py',a.path,'--role',a.role,'--technical-only'],{maxBuffer:4*1024*1024});
 console.log('PASS official development revision:74QCM,102cards,222definitions,42page sheet,exact old resources and six audio files preserved; tampering rejected.');

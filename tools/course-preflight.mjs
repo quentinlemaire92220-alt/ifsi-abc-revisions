@@ -14,6 +14,7 @@ const commands=[
  ['resource_access',n,['tests/course-resource-access.mjs']],
  ['capture_support',n,['tests/capture-support.mjs']],
  ['new_course_runtime',n,['tests/psychologie-developpement.mjs']],
+ ['development_pdf',n,['tests/psychologie-developpement-pdf.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
  ['reconciled_correction',n,['tests/reconciled-correction.mjs']],
  ['reconciled_correction_pdf',py,['tests/reconciled-correction-pdf.py']],

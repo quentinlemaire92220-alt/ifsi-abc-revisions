@@ -70,7 +70,7 @@ const countWords={deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:
 function expected(front){const f=front.toLowerCase(),m=f.match(/\b([2-9]|10|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(?:(?:grands?|grandes?|principaux?|principales?)\s+)?(?:classes?|types?|étapes?|phases?|familles?|éléments?|signes?|aspects?|axes?|parties?|catégories?|mécanismes?|fonctions?|propriétés?|caractéristiques?|facteurs?|critères?)\b/);if(!m)return null;return /^\d+$/.test(m[1])?Number(m[1]):countWords[m[1]]||null}
 function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\barnm\b/g,'arn messager').replace(/[^a-z0-9%]+/g,' ').trim()}
 const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
-const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='reconciled_written_correction_v1').flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
+const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','development_official_update_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
 const reviewedStandalone=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='verified_documents_addition_v1').flatMap(r=>r.flashcardStandaloneReview.cards);
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
