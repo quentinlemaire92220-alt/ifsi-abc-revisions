@@ -1,5 +1,5 @@
 {
-  "version": "8.30.190",
+  "version": "8.30.191",
   "courses": [
     {
       "id": "biomolecules",
@@ -4039,5 +4039,47 @@
     "requireExplicitCourseId": true,
     "requireDisplayTitle": true,
     "deduplicateByDriveId": true
-  }
+  },
+  "ueResources": [
+    {
+      "id": "b2_concepts_definitions_td",
+      "ue": "B2",
+      "domain": "B",
+      "title": "Recueil de concepts et définitions - TD et validation",
+      "description": "Psychopathologie, développement, santé et psychologie sociale : définitions, plan attendu et index cliquable.",
+      "url": "./assets/ue-b2-concepts-20261112/UE_B2_Concepts_Definitions_TD_Validation.pdf",
+      "pageCount": 81,
+      "officialSupport": false,
+      "provisional": true,
+      "sourceType": "personal_cross_course_reference",
+      "courseIds": [
+        "psychopathologie",
+        "psychologie_developpement",
+        "psychologie_sante",
+        "psychologie_sociale"
+      ],
+      "sourceLimitations": "Fiche personnelle non officielle ; psychologie du développement reconstituée à partir des captures et de l’oral.",
+      "artifact": {
+        "path": "assets/ue-b2-concepts-20261112/UE_B2_Concepts_Definitions_TD_Validation.pdf",
+        "sha256": "03975ab3ec4f5be6a706b90f01cce8bf4cc1818573178ed75df5ae82dd258cf9",
+        "bytes": 625305,
+        "pageCount": 81
+      },
+      "review": {
+        "status": "documentary_and_visual_review_completed",
+        "reviewedPageCount": 81,
+        "listRowsCovered": 57,
+        "originalLexiconEntriesPreserved": 711,
+        "addedClarifications": 13,
+        "sourcePassages": 82,
+        "independentMedicalReview": "not_attested"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "scope": "ue_reference_pdf_only",
+        "artifactSha256": "03975ab3ec4f5be6a706b90f01cce8bf4cc1818573178ed75df5ae82dd258cf9",
+        "userGoObserved": true
+      }
+    }
+  ]
 }

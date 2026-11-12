@@ -16,6 +16,7 @@ import {
 } from './private-resource-withdrawal-lib.mjs';
 import {publicationBundle,bundleDigest,validateChangedDeliveries,isStrictAudioSupplementOnly} from './course-publication-approval-lib.mjs';
 import {validateRevisionSheetSupplement} from './revision-sheet-supplement-contract.mjs';
+import {validateUeReferenceResources} from '../tools/ue-reference-resource-contract.mjs';
 import {validateAudioSupplements,validateFirstReleaseAudio} from './audio-supplement-contract.mjs';
 import {validateAudioReplacements,validateAudioReplacementOnly} from './audio-replacement-contract.mjs';
 import {isExistingWrittenUpdate,verifyExistingWrittenHistory} from './existing-course-written-update-contract.mjs';
@@ -486,7 +487,7 @@ for(const course of registryForWithdrawal)if(approvedUpdates.has(course.id)){
 }
 assert.deepEqual(registryForWithdrawal,oldReg.courses.map(expectedPublicCourseAfterWithdrawal),
  'Registre : changement hors retrait pur ou complément approuvé');
-assert.deepEqual(Object.keys(currentReg),Object.keys(oldReg),'Structure du registre modifiée');
+validateUeReferenceResources(oldReg,currentReg);
 assert.equal(currentReg.version,disk('build-meta.json').version,'Version du registre alignée sur la release courante');
 assert.ok([0,10].includes(removed),'Retrait initial ou état déjà expurgé attendu');
 const preservedDocumentCount=oldReg.courses.reduce((n,c)=>n+publicDocuments(c).length,0);
