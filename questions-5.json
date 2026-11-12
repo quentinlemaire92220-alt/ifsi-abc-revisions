@@ -56735,5 +56735,509 @@
     "course": "Psychologie du développement",
     "ue": "B2",
     "kind": "QCM"
+  },
+  {
+    "id": "psydev_q063",
+    "courseId": "psychologie_developpement",
+    "number": 63,
+    "theme": "Normal et pathologique",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre les repères de normalité et de maladie sont correctes ?",
+    "choices": [
+      "La prévalence concerne les cas existants dans une population.",
+      "L’incidence concerne les nouveaux cas au cours d’une période.",
+      "Une conduite rare prouve une maladie.",
+      "La norme sociale est identique dans toutes les cultures.",
+      "La normalité idéale est toujours la moyenne statistique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La prévalence décrit les cas présents à un moment ou sur une période définie.",
+      "L’incidence décrit la survenue de nouveaux cas, à distinguer des cas déjà présents.",
+      "La rareté ne suffit pas : contexte, souffrance et retentissement sont à prendre en compte.",
+      "Une norme sociale dépend du groupe, de l’époque et de la culture.",
+      "L’idéal est ce qui est souhaité ou valorisé ; la moyenne concerne la distribution statistique."
+    ],
+    "explanation": "A : vrai. La prévalence décrit les cas présents à un moment ou sur une période définie. B : vrai. L’incidence décrit la survenue de nouveaux cas, à distinguer des cas déjà présents. C : faux. La rareté ne suffit pas : contexte, souffrance et retentissement sont à prendre en compte. D : faux. Une norme sociale dépend du groupe, de l’époque et de la culture. E : faux. L’idéal est ce qui est souhaité ou valorisé ; la moyenne concerne la distribution statistique.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc091",
+        "theme": "Normal et pathologique",
+        "front": "Comment distinguer prévalence et incidence ?",
+        "answers": [
+          "Prévalence : cas existants dans une population à un moment ou sur une période. Incidence : nouveaux cas apparus pendant une période définie."
+        ],
+        "explanation": "Prévalence : cas existants dans une population à un moment ou sur une période. Incidence : nouveaux cas apparus pendant une période définie."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q064",
+    "courseId": "psychologie_developpement",
+    "number": 64,
+    "theme": "Langage du bébé",
+    "difficulty": "medium",
+    "question": "À propos des acquisitions du langage, quelles propositions sont correctes ?",
+    "choices": [
+      "Les premiers mots apparaissent à un âge obligatoire identique.",
+      "La compréhension peut précéder la production maîtrisée.",
+      "Le pointage absent suffit à établir un autisme.",
+      "Le babillage est une phrase syntaxiquement complète.",
+      "Les mots compris et les mots produits mesurent la même acquisition."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les âges et les volumes de vocabulaire sont des repères variables du cours.",
+      "Le bébé perçoit et comprend des éléments de langage avant de les produire de façon maîtrisée.",
+      "Un signe isolé ne suffit pas à poser un diagnostic.",
+      "Le babillage est une production sonore prélinguistique, notamment consonne-voyelle répétée.",
+      "Compréhension et production doivent être distinguées : la première précède généralement la seconde."
+    ],
+    "explanation": "A : faux. Les âges et les volumes de vocabulaire sont des repères variables du cours. B : vrai. Le bébé perçoit et comprend des éléments de langage avant de les produire de façon maîtrisée. C : faux. Un signe isolé ne suffit pas à poser un diagnostic. D : faux. Le babillage est une production sonore prélinguistique, notamment consonne-voyelle répétée. E : faux. Compréhension et production doivent être distinguées : la première précède généralement la seconde.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc092",
+        "theme": "Langage du bébé",
+        "front": "Pourquoi distinguer langage compris et langage produit chez le bébé ?",
+        "answers": [
+          "La perception et la compréhension précèdent la production maîtrisée. Un mot reconnu en contexte n’est pas nécessairement compris hors contexte ; les nombres de mots compris et produits ne sont pas interchangeables."
+        ],
+        "explanation": "La perception et la compréhension précèdent la production maîtrisée. Un mot reconnu en contexte n’est pas nécessairement compris hors contexte ; les nombres de mots compris et produits ne sont pas interchangeables."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q065",
+    "courseId": "psychologie_developpement",
+    "number": 65,
+    "theme": "Interactions précoces",
+    "difficulty": "medium",
+    "question": "Quels gestes d’un adulte relèvent de l’étayage décrit par Bruner ?",
+    "choices": [
+      "Signaler les caractéristiques pertinentes d’un objet.",
+      "Faire systématiquement toute l’activité à la place de l’enfant.",
+      "Supprimer tous les temps de réponse du bébé.",
+      "Mobiliser l’enfant vers un but.",
+      "Réduire une difficulté pour rendre l’activité accessible."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Attirer l’attention sur les éléments utiles soutient l’exploration et l’apprentissage.",
+      "L’aide vise l’engagement et l’autonomie progressive ; elle ne se réduit pas à remplacer toute action.",
+      "L’alternance et l’ajustement aux signaux du bébé font partie des échanges précoces.",
+      "L’étayage aide l’enfant à s’engager dans une activité orientée vers un but.",
+      "L’adulte ajuste la difficulté et son aide aux possibilités de l’enfant."
+    ],
+    "explanation": "A : vrai. Attirer l’attention sur les éléments utiles soutient l’exploration et l’apprentissage. B : faux. L’aide vise l’engagement et l’autonomie progressive ; elle ne se réduit pas à remplacer toute action. C : faux. L’alternance et l’ajustement aux signaux du bébé font partie des échanges précoces. D : vrai. L’étayage aide l’enfant à s’engager dans une activité orientée vers un but. E : vrai. L’adulte ajuste la difficulté et son aide aux possibilités de l’enfant.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc093",
+        "theme": "Interactions précoces",
+        "front": "Quelles sont les fonctions de l’étayage dans une activité partagée avec le jeune enfant ?",
+        "answers": [
+          "Mobiliser vers le but, réduire la difficulté, signaler les caractéristiques pertinentes et évaluer les productions. L’aide s’ajuste et soutient progressivement l’activité propre de l’enfant."
+        ],
+        "explanation": "Mobiliser vers le but, réduire la difficulté, signaler les caractéristiques pertinentes et évaluer les productions. L’aide s’ajuste et soutient progressivement l’activité propre de l’enfant."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q066",
+    "courseId": "psychologie_developpement",
+    "number": 66,
+    "theme": "Carences et séparations",
+    "difficulty": "medium",
+    "question": "Quelles propositions respectent les descriptions historiques de Spitz ?",
+    "choices": [
+      "Un substitut relationnel stable de qualité peut soutenir une amélioration.",
+      "Le détachement apparent garantit le bien-être.",
+      "L’hospitalisme est provoqué par toute hospitalisation.",
+      "La dépression anaclitique est décrite après une séparation d’une figure auparavant investie.",
+      "La carence affective constitue l’explication générale de l’autisme."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La restauration d’une relation privilégiée peut améliorer le tableau décrit.",
+      "Un retour apparent d’activité peut coexister avec une répression de la recherche de proximité.",
+      "Il décrit des privations relationnelles durables dans des conditions institutionnelles défaillantes.",
+      "La relation privilégiée préalable puis la séparation sont centrales dans cette description.",
+      "Les descriptions historiques de retrait et de stéréotypies ne permettent pas cette assimilation."
+    ],
+    "explanation": "A : vrai. La restauration d’une relation privilégiée peut améliorer le tableau décrit. B : faux. Un retour apparent d’activité peut coexister avec une répression de la recherche de proximité. C : faux. Il décrit des privations relationnelles durables dans des conditions institutionnelles défaillantes. D : vrai. La relation privilégiée préalable puis la séparation sont centrales dans cette description. E : faux. Les descriptions historiques de retrait et de stéréotypies ne permettent pas cette assimilation.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc094",
+        "theme": "Carences et séparations",
+        "front": "Comment distinguer dépression anaclitique et hospitalisme dans les observations de Spitz ?",
+        "answers": [
+          "La dépression anaclitique suit une séparation d’une figure auparavant investie ; une relation stable restaurée peut améliorer le tableau. L’hospitalisme décrit une privation relationnelle prolongée sans substitut de qualité dans une institution défaillante. Ces modèles historiques ne diagnostiquent pas l’autisme."
+        ],
+        "explanation": "La dépression anaclitique suit une séparation d’une figure auparavant investie ; une relation stable restaurée peut améliorer le tableau. L’hospitalisme décrit une privation relationnelle prolongée sans substitut de qualité dans une institution défaillante. Ces modèles historiques ne diagnostiquent pas l’autisme."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q067",
+    "courseId": "psychologie_developpement",
+    "number": 67,
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Quelles propositions définissent correctement le caregiving ?",
+    "choices": [
+      "Sa présence permet de juger un parent à partir d’une émotion isolée.",
+      "Il désigne uniquement le fait de nourrir.",
+      "Il ne peut être assuré que par la mère biologique.",
+      "Il constitue le système complémentaire de protection et de réconfort.",
+      "Il vise à empêcher définitivement toute exploration."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les émotions du caregiver ne constituent pas à elles seules une évaluation de ses capacités parentales.",
+      "Il répond aux besoins de protection et de réconfort, au-delà de la seule alimentation.",
+      "Le caregiver peut être un parent ou un autre adulte assurant des soins ajustés.",
+      "Le caregiving répond aux besoins d’attachement et vise la sécurité physique et psychique.",
+      "La sécurité soutient l’exploration ; elle n’exige pas une proximité physique permanente."
+    ],
+    "explanation": "A : faux. Les émotions du caregiver ne constituent pas à elles seules une évaluation de ses capacités parentales. B : faux. Il répond aux besoins de protection et de réconfort, au-delà de la seule alimentation. C : faux. Le caregiver peut être un parent ou un autre adulte assurant des soins ajustés. D : vrai. Le caregiving répond aux besoins d’attachement et vise la sécurité physique et psychique. E : faux. La sécurité soutient l’exploration ; elle n’exige pas une proximité physique permanente.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc095",
+        "theme": "Attachement et soins",
+        "front": "Que désigne le caregiving et quelles émotions peuvent l’accompagner ?",
+        "answers": [
+          "Le caregiving est le système de protection et de réconfort complémentaire de l’attachement. Le caregiver peut éprouver plaisir, satisfaction ou soulagement lorsqu’il protège, et colère, tristesse ou anxiété lorsqu’il ne le peut pas."
+        ],
+        "explanation": "Le caregiving est le système de protection et de réconfort complémentaire de l’attachement. Le caregiver peut éprouver plaisir, satisfaction ou soulagement lorsqu’il protège, et colère, tristesse ou anxiété lorsqu’il ne le peut pas."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q068",
+    "courseId": "psychologie_developpement",
+    "number": 68,
+    "theme": "Langage de l’enfant",
+    "difficulty": "medium",
+    "question": "Quelles propositions concernent les mots de classe fermée ?",
+    "choices": [
+      "Ils comprennent notamment des déterminants et des prépositions.",
+      "Le cours évoque leur augmentation autour d’un lexique de 400 mots.",
+      "Ils correspondent uniquement aux noms d’objets.",
+      "Le repère de 400 mots impose le même âge à tous les enfants.",
+      "Un enfant en dessous de ce repère présente nécessairement une pathologie."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ce sont des mots grammaticaux qui contribuent à organiser les relations entre les mots.",
+      "Le support donne un repère de vocabulaire, sans en faire un seuil diagnostique.",
+      "Les noms relèvent des classes ouvertes, contrairement aux déterminants et prépositions.",
+      "Le support ne fixe pas un âge clinique obligatoire à partir de ce volume de vocabulaire.",
+      "Une valeur de vocabulaire isolée ne constitue pas un diagnostic."
+    ],
+    "explanation": "A : vrai. Ce sont des mots grammaticaux qui contribuent à organiser les relations entre les mots. B : vrai. Le support donne un repère de vocabulaire, sans en faire un seuil diagnostique. C : faux. Les noms relèvent des classes ouvertes, contrairement aux déterminants et prépositions. D : faux. Le support ne fixe pas un âge clinique obligatoire à partir de ce volume de vocabulaire. E : faux. Une valeur de vocabulaire isolée ne constitue pas un diagnostic.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc096",
+        "theme": "Langage de l’enfant",
+        "front": "Que sont les mots de classe fermée et quel repère le cours leur associe-t-il ?",
+        "answers": [
+          "Ce sont notamment les mots grammaticaux, comme les déterminants et les prépositions. Le support évoque une augmentation de leur usage autour de 400 mots de lexique ; ce repère ne constitue ni un âge obligatoire ni un seuil de diagnostic."
+        ],
+        "explanation": "Ce sont notamment les mots grammaticaux, comme les déterminants et les prépositions. Le support évoque une augmentation de leur usage autour de 400 mots de lexique ; ce repère ne constitue ni un âge obligatoire ni un seuil de diagnostic."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q069",
+    "courseId": "psychologie_developpement",
+    "number": 69,
+    "theme": "Opérations concrètes",
+    "difficulty": "medium",
+    "question": "Comment comprendre la construction opératoire du nombre chez Piaget ?",
+    "choices": [
+      "Elle suppose que rien ne peut être compté avant 8 ans.",
+      "Elle articule inclusion des classes et relation d’ordre.",
+      "Elle interdit toute manipulation d’objets.",
+      "Les repères du modèle s’interprètent selon les tâches proposées.",
+      "Elle se limite à réciter la suite des nombres."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Compter et comparer des quantités peuvent être possibles avant les tâches opératoires décrites.",
+      "C’est l’articulation des relations de classe et d’ordre décrite dans le modèle.",
+      "La manipulation peut soutenir la compréhension des opérations.",
+      "Les âges sont des repères théoriques liés aux tâches, sans valeur diagnostique isolée.",
+      "Le raisonnement opératoire dépasse la récitation d’une suite apprise."
+    ],
+    "explanation": "A : faux. Compter et comparer des quantités peuvent être possibles avant les tâches opératoires décrites. B : vrai. C’est l’articulation des relations de classe et d’ordre décrite dans le modèle. C : faux. La manipulation peut soutenir la compréhension des opérations. D : vrai. Les âges sont des repères théoriques liés aux tâches, sans valeur diagnostique isolée. E : faux. Le raisonnement opératoire dépasse la récitation d’une suite apprise.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc097",
+        "theme": "Opérations concrètes",
+        "front": "Que signifie la construction opératoire du nombre dans le modèle piagétien ?",
+        "answers": [
+          "Elle articule inclusion des classes et relation d’ordre. Elle dépasse la récitation de la suite des nombres ; les repères autour de 8-8½ ans concernent les tâches du modèle et ne signifient pas qu’aucun comptage n’est possible auparavant."
+        ],
+        "explanation": "Elle articule inclusion des classes et relation d’ordre. Elle dépasse la récitation de la suite des nombres ; les repères autour de 8-8½ ans concernent les tâches du modèle et ne signifient pas qu’aucun comptage n’est possible auparavant."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q070",
+    "courseId": "psychologie_developpement",
+    "number": 70,
+    "theme": "Socialisation familiale",
+    "difficulty": "medium",
+    "question": "Quelles descriptions des styles éducatifs correspondent au cours ?",
+    "choices": [
+      "Maternaliste : protection et chaleur avec marge de décision plus réduite.",
+      "Ces styles sont des diagnostics psychiatriques de familles.",
+      "Un style permet de prévoir à lui seul tout le devenir de l’enfant.",
+      "Contractualiste : règles expliquées et place à la discussion.",
+      "Statutaire : autorité appuyée sur la position de l’adulte."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La cohésion et la protection sont valorisées, avec moins d’individualisation des décisions.",
+      "Ce sont des descriptions de configurations éducatives et non des diagnostics.",
+      "Le développement dépend d’une histoire et de multiples conditions ; un style ne détermine pas à lui seul une trajectoire.",
+      "Le cours le rapproche d’un style démocratique où les règles peuvent être comprises et discutées.",
+      "Ce style est présenté comme plus autoritaire et fondé sur le statut parental."
+    ],
+    "explanation": "A : vrai. La cohésion et la protection sont valorisées, avec moins d’individualisation des décisions. B : faux. Ce sont des descriptions de configurations éducatives et non des diagnostics. C : faux. Le développement dépend d’une histoire et de multiples conditions ; un style ne détermine pas à lui seul une trajectoire. D : vrai. Le cours le rapproche d’un style démocratique où les règles peuvent être comprises et discutées. E : vrai. Ce style est présenté comme plus autoritaire et fondé sur le statut parental.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc098",
+        "theme": "Socialisation familiale",
+        "front": "Comment distinguer les styles éducatifs contractualiste, statutaire et maternaliste ?",
+        "answers": [
+          "Contractualiste : règles expliquées et discussion. Statutaire : autorité liée au statut de l’adulte. Maternaliste : cohésion, chaleur et protection avec marge de décision plus réduite. Ce sont des repères descriptifs, pas des diagnostics familiaux."
+        ],
+        "explanation": "Contractualiste : règles expliquées et discussion. Statutaire : autorité liée au statut de l’adulte. Maternaliste : cohésion, chaleur et protection avec marge de décision plus réduite. Ce sont des repères descriptifs, pas des diagnostics familiaux."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q071",
+    "courseId": "psychologie_developpement",
+    "number": 71,
+    "theme": "Adolescence et valeurs",
+    "difficulty": "medium",
+    "question": "Dans le chapitre de l’adolescence, que désigne l’idéologie ?",
+    "choices": [
+      "Une opinion ponctuelle sans possibilité de généralisation.",
+      "Une conséquence indépendante de tout contexte historique.",
+      "Une mesure directe de tous les comportements moraux.",
+      "Le sixième stade obligatoire de tout adolescent.",
+      "Le recours à des principes généraux pour penser des questions politiques, éducatives ou religieuses."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le chapitre insiste précisément sur la référence à des principes généraux.",
+      "L’évolution historique et politique des idées est prise en compte.",
+      "Le raisonnement idéologique et les conduites effectives ne se superposent pas.",
+      "L’idéologie ne désigne pas un stade universel du modèle de Kohlberg.",
+      "Le support relie l’idéologie à un raisonnement abstrait et à l’évolution des idées."
+    ],
+    "explanation": "A : faux. Le chapitre insiste précisément sur la référence à des principes généraux. B : faux. L’évolution historique et politique des idées est prise en compte. C : faux. Le raisonnement idéologique et les conduites effectives ne se superposent pas. D : faux. L’idéologie ne désigne pas un stade universel du modèle de Kohlberg. E : vrai. Le support relie l’idéologie à un raisonnement abstrait et à l’évolution des idées.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc099",
+        "theme": "Adolescence et valeurs",
+        "front": "Que désigne l’idéologie dans le cours sur l’adolescence ?",
+        "answers": [
+          "L’accès à un raisonnement abstrait sur des questions politiques, éducatives ou religieuses, intégrant l’évolution des idées et se référant à des principes généraux. Elle se distingue du stade de jugement moral et des conduites effectives."
+        ],
+        "explanation": "L’accès à un raisonnement abstrait sur des questions politiques, éducatives ou religieuses, intégrant l’évolution des idées et se référant à des principes généraux. Elle se distingue du stade de jugement moral et des conduites effectives."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q072",
+    "courseId": "psychologie_developpement",
+    "number": 72,
+    "theme": "Attachement adulte",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent l’attachement adulte dans le support ?",
+    "choices": [
+      "Une phrase isolée suffit à classer définitivement un style adulte.",
+      "La réciprocité permet de donner et de recevoir de la sécurité.",
+      "Une base de sécurité intériorisée peut s’appuyer sur les échanges verbaux.",
+      "Le partenaire est toujours vécu comme interchangeable.",
+      "L’attachement disparaît obligatoirement après l’enfance."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un style ne se déduit pas d’une observation ou d’une phrase isolée.",
+      "Chaque partenaire peut soutenir l’autre et bénéficier de son soutien.",
+      "Le contact physique n’est plus la seule modalité de proximité et de réconfort.",
+      "La relation d’attachement est définie par un partenaire investi comme unique et non interchangeable.",
+      "La théorie présentée décrit sa persistance au cours de la vie."
+    ],
+    "explanation": "A : faux. Un style ne se déduit pas d’une observation ou d’une phrase isolée. B : vrai. Chaque partenaire peut soutenir l’autre et bénéficier de son soutien. C : vrai. Le contact physique n’est plus la seule modalité de proximité et de réconfort. D : faux. La relation d’attachement est définie par un partenaire investi comme unique et non interchangeable. E : faux. La théorie présentée décrit sa persistance au cours de la vie.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc100",
+        "theme": "Attachement adulte",
+        "front": "Que change la réciprocité dans l’attachement adulte ?",
+        "answers": [
+          "Chaque partenaire peut fournir et recevoir soutien, attention et sécurité. La relation concerne une personne investie comme singulière ; la proximité s’appuie aussi sur les échanges verbaux et une sécurité intériorisée."
+        ],
+        "explanation": "Chaque partenaire peut fournir et recevoir soutien, attention et sécurité. La relation concerne une personne investie comme singulière ; la proximité s’appuie aussi sur les échanges verbaux et une sécurité intériorisée."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q073",
+    "courseId": "psychologie_developpement",
+    "number": 73,
+    "theme": "Attachement et vieillissement",
+    "difficulty": "medium",
+    "question": "Une personne âgée trouve du réconfort en évoquant son conjoint décédé devant une photographie. Quelles lectures sont pertinentes ?",
+    "choices": [
+      "Le souvenir peut soutenir un attachement symbolique.",
+      "La photographie impose à elle seule un diagnostic.",
+      "Le lien symbolique peut être soutenu par des objets ou lieux familiers.",
+      "Tout besoin de relation disparaît en cas de trouble neurocognitif.",
+      "Le réconfort prouve l’absence de tout travail de deuil."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’évocation d’une figure absente ou disparue peut apporter soutien et réconfort.",
+      "Un objet familier et le réconfort qu’il procure ne constituent pas un diagnostic.",
+      "Ces repères peuvent faciliter l’évocation des figures et des relations importantes.",
+      "Les besoins d’attachement et de sécurité peuvent persister malgré la détérioration cognitive.",
+      "L’évocation d’un proche et la recherche de réconfort peuvent faire partie d’un remaniement du lien après la perte."
+    ],
+    "explanation": "A : vrai. L’évocation d’une figure absente ou disparue peut apporter soutien et réconfort. B : faux. Un objet familier et le réconfort qu’il procure ne constituent pas un diagnostic. C : vrai. Ces repères peuvent faciliter l’évocation des figures et des relations importantes. D : faux. Les besoins d’attachement et de sécurité peuvent persister malgré la détérioration cognitive. E : faux. L’évocation d’un proche et la recherche de réconfort peuvent faire partie d’un remaniement du lien après la perte.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc101",
+        "theme": "Attachement et vieillissement",
+        "front": "Que désigne l’attachement symbolique chez une personne âgée ?",
+        "answers": [
+          "Le soutien et le réconfort obtenus par l’évocation ou les souvenirs d’une figure absente ou disparue. Objets et lieux familiers peuvent faciliter ce lien ; les besoins relationnels peuvent aussi persister malgré des troubles cognitifs."
+        ],
+        "explanation": "Le soutien et le réconfort obtenus par l’évocation ou les souvenirs d’une figure absente ou disparue. Objets et lieux familiers peuvent faciliter ce lien ; les besoins relationnels peuvent aussi persister malgré des troubles cognitifs."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q074",
+    "courseId": "psychologie_developpement",
+    "number": 74,
+    "theme": "Construction identitaire",
+    "difficulty": "medium",
+    "question": "Quelles composantes de l’identité sont distinguées dans le cours ?",
+    "choices": [
+      "La cohésion : un sentiment d’unité suffisamment cohérent.",
+      "La singularité : se vivre comme distinct des autres.",
+      "Une identité exige l’absence définitive de toute évolution.",
+      "Un moratoire correspond nécessairement à l’absence d’identité.",
+      "La continuité temporelle : se sentir soi au fil des changements."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La cohésion s’oppose ici à un vécu de morcellement de soi.",
+      "La singularité concerne le caractère propre du sujet au sein de ses relations et appartenances.",
+      "La construction identitaire articule continuité et transformations.",
+      "Il décrit une exploration active avec des engagements encore peu stabilisés.",
+      "Cette continuité relie l’histoire de la personne à ses transformations."
+    ],
+    "explanation": "A : vrai. La cohésion s’oppose ici à un vécu de morcellement de soi. B : vrai. La singularité concerne le caractère propre du sujet au sein de ses relations et appartenances. C : faux. La construction identitaire articule continuité et transformations. D : faux. Il décrit une exploration active avec des engagements encore peu stabilisés. E : vrai. Cette continuité relie l’histoire de la personne à ses transformations.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc102",
+        "theme": "Construction identitaire",
+        "front": "Que signifient continuité temporelle, cohésion et singularité identitaires ?",
+        "answers": [
+          "Continuité : demeurer soi au fil du temps. Cohésion : se sentir suffisamment unifié et cohérent. Singularité : se vivre comme distinct des autres. Ces dimensions peuvent être remaniées à l’adolescence sans signifier une absence d’identité."
+        ],
+        "explanation": "Continuité : demeurer soi au fil du temps. Cohésion : se sentir suffisamment unifié et cohérent. Singularité : se vivre comme distinct des autres. Ces dimensions peuvent être remaniées à l’adolescence sans signifier une absence d’identité."
+      }
+    ]
   }
 ]

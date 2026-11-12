@@ -21,7 +21,7 @@ for(const name of files){
  const glossaryOnly=delivery?.deliveryMode==='existing_course_revision' &&
   (['qcm_pdf_50_qcm_59_interactive_flashcards_only','qcm_50_flashcards_59_fiche_unique_20p'].includes(delivery?.publicationSubset) && delivery?.qcmCount===50 && delivery?.flashcardCount===59 ||
    delivery?.publicationSubset==='official_support_revision_62_71_39p' && delivery?.qcmCount===62 && delivery?.flashcardCount===71);
- const revision=manifest.scopedCourseRevisions?.find(r=>['reconciled_written_correction_v1','verified_documents_addition_v1'].includes(r.profile)&&r.bankPath===folder+'/'+name);
+ const revision=manifest.scopedCourseRevisions?.find(r=>['reconciled_written_correction_v1','verified_documents_addition_v1','development_official_update_v1'].includes(r.profile)&&r.bankPath===folder+'/'+name);
  const options=revision?{previousRows:JSON.parse(fs.readFileSync(revision.baselinePath,'utf8')).bank||[],reviewedSourceComparisonFields:revision.sourceAttributionReview.fields}:glossaryOnly?{glossaryCount:delivery.flashcardCount}:delivery?.captureSupport?.contract==='course_capture_facsimile_v1'?{reviewedSourceComparisonFields:delivery.sourceAttributionReview.fields}:{};
  n+=validateBank(rows,name,options);
 }

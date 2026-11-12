@@ -49,7 +49,7 @@ const previousById=new Map([...oldQuestions,...oldExtras].map(q=>[q.id,JSON.pars
 const live=await runtimeDeck();
 const actualManifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));
 validateScopedRevisions(actualManifest);
-const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','verified_documents_addition_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields);
+const reviewedSourceComparisonFields=(actualManifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','verified_documents_addition_v1','development_official_update_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields);
 for(const d of actualManifest.courses.filter(d=>d.captureSupport?.contract==='course_capture_facsimile_v1')){
  const {validateCaptureSupport}=await import('../tools/capture-support-contract.mjs');
  validateCaptureSupport(live.registry.courses.find(c=>c.id===d.courseId),d);

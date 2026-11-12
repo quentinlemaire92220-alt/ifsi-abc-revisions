@@ -1,13 +1,13 @@
 (function(){
  'use strict';
- var report={attempts:0,jsErrors:[],openedCourses:false};
+ var report={attempts:0,jsErrors:[],openedCourses:false,phase:'boot'};
  var result=document.createElement('output');
  result.id='ifsiRealAppTest';result.dataset.result='pending';result.textContent='Initialisation';
  document.body.appendChild(result);
  window.addEventListener('error',function(e){if(report.jsErrors.length<10)report.jsErrors.push(e.message)},true);
  function fail(msg){
    result.dataset.result='fail';
-   result.textContent=String(msg)+' | '+JSON.stringify({attempts:report.attempts,errors:report.jsErrors});
+   result.textContent=String(msg)+' | '+JSON.stringify({attempts:report.attempts,errors:report.jsErrors,phase:report.phase});
  }
  function pass(msg){result.dataset.result='pass';result.textContent=msg}
  function next(callback){setTimeout(callback,240)}
@@ -28,6 +28,7 @@
        if(report.attempts<90)return next(checkBoot);
        throw Error('Menus pédagogiques absents après 90 contrôles : '+JSON.stringify(ui.status()));
      }
+     report.phase='navigation';
      if(document.querySelector('#courses74 .v8430-note'))throw Error('Avertissement permanent inattendu');
      // Contrôler une vraie UE après rendu V74 (mode sombre/clair compatible).
      var ueHead=grid.querySelector('.v8430-ue-switch');
@@ -121,6 +122,7 @@
    }catch(e){fail(e.stack||String(e))}
  }
  async function checkAllCourses(cards){
+   report.phase='all_courses';
    var courses=window.IFSI_V741.getRegistry().courses;
    await checkFutureCatalog(courses);
    var missing=0,official=0,qcm=0,flashcards=0,vocab=0;
@@ -292,5 +294,8 @@
    if(JSON.stringify(courses)!==before)throw Error('Métadonnées modifiées par le classement');
  }
  setTimeout(checkBoot,300);
- setTimeout(function(){if(result.dataset.result==='pending')fail('Délai dépassé au démarrage réel')},24000);
+ // Preserve the startup bound; the subsequent full-catalog exercises have their
+ // own deadline and must not be confused with an incomplete application boot.
+ setTimeout(function(){if(result.dataset.result==='pending'&&report.phase==='boot')fail('Délai dépassé au démarrage réel')},24000);
+ setTimeout(function(){if(result.dataset.result==='pending')fail('Délai dépassé lors du contrôle de navigation complet')},75000);
 })();

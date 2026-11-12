@@ -1,12 +1,16 @@
 import fs from 'node:fs';
+import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
+import {validateScopedRevisions,revisionBundle} from '../tools/scoped-course-revision-contract.mjs';
+import {validateDevelopmentOfficialRevision} from '../tools/development-official-revision-contract.mjs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {runtimeDeck} from './flashcards-runtime-fixture.mjs';
 import {beforeAdditiveCourses} from '../tools/additive-course-history.mjs';
 import {firstReleaseAudioIds} from '../tools/hosted-audio-supplement-contract.mjs';
 import {validateBank} from '../tools/qcm-bank-contract.mjs';
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const id='psychologie_developpement',manifest=read('docs/course-deliveries.json'),d=manifest.courses.find(x=>x.courseId===id),r=await runtimeDeck({loadResources:true});
+const raw=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const read=readHistoricalAudioJson;
+const id='psychologie_developpement',manifest=read('docs/course-deliveries.json'),d=manifest.courses.find(x=>x.courseId===id),r=await runtimeDeck({loadResources:true,historical:true});
 const course=r.registry.courses.find(x=>x.id===id),bank=read(d.qcmBank),questions=r.questions.filter(q=>q.courseId===id),cards=r.deck.filter(c=>c.courseId===id&&!c.id.startsWith('voc:'));
 assert.deepEqual(questions,bank);assert.equal(questions.length,62);assert.equal(cards.length,90);
 assert.equal(validateBank(bank,id,{reviewedSourceComparisonFields:d.sourceAttributionReview.fields}),62);
@@ -29,3 +33,13 @@ for(const mutation of [x=>x.provisional=false,x=>x.pedagogicalValidated=true,x=>
 }
 assert.equal(course.provisional,true);assert.equal(course.officialSupport,false);assert.equal(d.status,'partial');
 console.log('PASS Psychologie du développement:62QCM,90unchanged unique cards,194definitions,6exact MP3, historical rows preserved, missing-figure and dishonest-review faults rejected.');
+
+const current=raw('docs/course-deliveries.json'),rev=current.scopedCourseRevisions.find(r=>r.profile==='development_official_update_v1');
+validateScopedRevisions(current);
+const actual=await runtimeDeck({loadResources:true}),active=actual.questions.filter(q=>q.courseId===id),activeCards=actual.deck.filter(c=>c.courseId===id&&!c.id.startsWith('voc:'));
+assert.deepEqual(active,raw(rev.bankPath));assert.equal(active.length,74);assert.equal(activeCards.length,102);assert.equal(actual.window.IFSI_VOCAB.countForCourse(id),222);
+assert.deepEqual(active.slice(0,62),bank);assert.equal(actual.registry.courses.find(c=>c.id===id).primarySheetResourceId,rev.sheetResourceId);
+for(const mutate of [x=>x.audioArtifacts.push({vocalId:'invented'}),x=>x.addedQuestionIds.pop(),x=>x.addedVocabularyEntryIds.pop(),x=>x.sourceReview.officialPagesReviewed--,x=>x.templateConformance.artifacts.sheet.pagesChecked.pop()]){
+ const bad=structuredClone(rev);mutate(bad);assert.throws(()=>validateDevelopmentOfficialRevision(bad,current,revisionBundle(rev)),'Unreviewed development change accepted');
+}
+console.log('PASS official development revision:74QCM,102cards,222definitions,42page sheet,exact old resources and six audio files preserved; tampering rejected.');

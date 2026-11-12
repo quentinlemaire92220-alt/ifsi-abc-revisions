@@ -14,6 +14,12 @@ try{
  for(const bad of [url.replace('github.io','example.org'),url+'?v=1',url.replace('fixture.pdf','unknown.pdf')])assert.throws(()=>verifyPublicArtifact(d,bad));
  assert.throws(()=>localAssetPath('assets/../private.pdf'));
  assert.throws(()=>verifyPublicArtifact({...d,artifactSha256s:{}},url));
+ fs.mkdirSync('assets/revision');fs.writeFileSync('assets/revision/fixture.zip','zip bytes');
+ const zipSha=createHash('sha256').update('zip bytes').digest('hex'),z={downloadContract:'scoped_reviewed_download_v1',publicationApproval:{scope:'scoped_course_revision',status:'approved',authorization:'explicit_go_publication'},publicArtifacts:{},downloadArtifacts:[{path:'assets/revision/fixture.zip',sha256:zipSha,artifactId:'zip',bytes:9}],artifactSha256s:{zip:zipSha}};
+ const zipUrl=url.replace('fixture.pdf','revision/fixture.zip');assert.equal(verifyPublicArtifact(z,zipUrl),'zip');
+ assert.throws(()=>verifyPublicArtifact({...z,publicationApproval:{...z.publicationApproval,scope:'other'}},zipUrl));
+ assert.throws(()=>verifyPublicArtifact({...z,downloadContract:undefined},zipUrl));
+ fs.writeFileSync('assets/revision/fixture.zip','tampered bytes');assert.throws(()=>verifyPublicArtifact(z,zipUrl));
  fs.writeFileSync('assets/fixture.pdf','changed bytes');assert.throws(()=>verifyPublicArtifact(d,url));
 }finally{process.chdir(cwd);fs.rmSync(tmp,{recursive:true,force:true});}
 console.log('PASS assets publics : hôte, chemin, présence et SHA approuvé');
