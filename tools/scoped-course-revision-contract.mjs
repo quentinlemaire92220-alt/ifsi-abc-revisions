@@ -120,13 +120,15 @@ export function approvedRevisionAudioIds(manifest){
 }
 // Adapter for shared PDF/visibility gates; never edits the historical delivery.
 export function scopedRevisionDeliveryForUrl(manifest,courseId,url){
- const assets=r=>[...r.publicArtifacts,...(r.officialSupportArtifact?[r.officialSupportArtifact]:[])];
+ const assets=r=>[...r.publicArtifacts,...(r.officialSupportArtifact?[r.officialSupportArtifact]:[]),...(r.profile==='development_official_update_v1'?[{...r.downloadArtifact,role:'download'}]:[])];
  const r=[...(manifest.scopedCourseRevisions||[]),...(manifest.consolidatedCourseRevisions||[])].find(r=>r.courseId===courseId&&assets(r).some(a=>origin+a.path===url));
  if(!r)return null;
  validateScopedRevisions(manifest);
  const artifacts=assets(r).map(a=>({...a,artifactId:r.id+'_'+a.role}));
  return {courseId,publicationHost:'github_pages',publicationApproval:r.publicationApproval,
-  publicArtifacts:Object.fromEntries(artifacts.map(a=>[a.role,a])),artifactSha256s:Object.fromEntries(artifacts.map(a=>[a.artifactId,a.sha256]))};
+  publicArtifacts:Object.fromEntries(artifacts.filter(a=>a.role!=='download').map(a=>[a.role,a])),
+  ...(r.profile==='development_official_update_v1'?{downloadContract:'scoped_reviewed_download_v1',downloadArtifacts:artifacts.filter(a=>a.role==='download')}:{}),
+  artifactSha256s:Object.fromEntries(artifacts.map(a=>[a.artifactId,a.sha256]))};
 }
 // Reconstruct only the exact resources in a prior package. Never used by the app.
 export function scopedHistoricalJson(reader,file){

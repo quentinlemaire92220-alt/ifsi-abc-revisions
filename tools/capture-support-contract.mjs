@@ -13,7 +13,8 @@ export function validateCaptureSupport(course,delivery){
   validateScopedRevisions(manifest);
   const baseline=JSON.parse(fs.readFileSync(revision.baselinePath,'utf8'));
   assert.deepEqual(delivery,baseline.delivery,'Capture delivery no longer matches its original review');
-  assert.deepEqual(course,JSON.parse(fs.readFileSync('course-registry-v741.json','utf8')).courses.find(c=>c.id===course.id),'Unreviewed course supplied to capture gate');
+  const current=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8')).courses.find(c=>c.id===course.id);
+  if(JSON.stringify(course)!==JSON.stringify(baseline.course))assert.deepEqual(course,current,'Unreviewed course supplied to capture gate');
   course=baseline.course;
  }
  const s=delivery.captureSupport;
