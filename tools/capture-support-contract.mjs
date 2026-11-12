@@ -4,8 +4,18 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {pagesOrigin,pagesPrefix} from './public-artifact-contract.mjs';
+import {validateScopedRevisions} from './scoped-course-revision-contract.mjs';
 export function validateCaptureSupport(course,delivery){
  if(!delivery.captureSupport)return false;
+ const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));
+ const revision=manifest.scopedCourseRevisions?.find(r=>r.courseId===course.id&&r.profile==='development_official_update_v1');
+ if(revision){
+  validateScopedRevisions(manifest);
+  const baseline=JSON.parse(fs.readFileSync(revision.baselinePath,'utf8'));
+  assert.deepEqual(delivery,baseline.delivery,'Capture delivery no longer matches its original review');
+  assert.deepEqual(course,JSON.parse(fs.readFileSync('course-registry-v741.json','utf8')).courses.find(c=>c.id===course.id),'Unreviewed course supplied to capture gate');
+  course=baseline.course;
+ }
  const s=delivery.captureSupport;
  assert.equal(s.contract,'course_capture_facsimile_v1');
  assert.equal(course.provisional,true);assert.equal(course.officialSupport,false);

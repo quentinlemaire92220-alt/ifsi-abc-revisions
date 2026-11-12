@@ -1,5 +1,5 @@
 {
-  "version": "8.30.191",
+  "version": "8.30.192",
   "courses": [
     {
       "id": "biomolecules",
@@ -3714,12 +3714,12 @@
       "domain": "B",
       "ue": "B2",
       "semester": "S1",
-      "sourceStatus": "reconstructed",
-      "officialSupport": false,
-      "nativeSupportAvailable": false,
-      "provisional": true,
-      "sourceNote": "Cours non officiel reconstitué à partir de 110 captures et de trois transcriptions entièrement examinées. Captures manquantes pour le langage du bébé et les premières interactions ; deux diapositives d’attachement tronquées. Les âges sont des repères. Le contenu parlé des vocaux reste à vérifier à l’écoute.",
-      "primarySheetResourceId": "psychologie_developpement_fiche_reconstituee_20261111",
+      "sourceStatus": "official",
+      "officialSupport": true,
+      "nativeSupportAvailable": true,
+      "provisional": false,
+      "sourceNote": "Fiche, QCM, cartes et définitions confrontés aux 35 pages du support officiel de N. Khatir (2026) et aux trois transcriptions examinées. Synthèses personnelles ; âges donnés comme repères. Six MP3 antérieurs conservés ; complément oral disponible en texte, MP3 attendu. Le contenu parlé des anciens MP3 reste non validé par écoute.",
+      "primarySheetResourceId": "psychologie_developpement_fiche_officielle_20261112",
       "canonicalQuestionIds": [
         "psydev_q001",
         "psydev_q002",
@@ -3782,11 +3782,23 @@
         "psydev_q059",
         "psydev_q060",
         "psydev_q061",
-        "psydev_q062"
+        "psydev_q062",
+        "psydev_q063",
+        "psydev_q064",
+        "psydev_q065",
+        "psydev_q066",
+        "psydev_q067",
+        "psydev_q068",
+        "psydev_q069",
+        "psydev_q070",
+        "psydev_q071",
+        "psydev_q072",
+        "psydev_q073",
+        "psydev_q074"
       ],
       "authoredFlashcards": true,
       "authoredFlashcardPresentation": "standalone_v1",
-      "flashcardTarget": 90,
+      "flashcardTarget": 102,
       "vocabularyEntryIds": [
         "psydev_v001",
         "psydev_v002",
@@ -3981,11 +3993,39 @@
         "psydev_v191",
         "psydev_v192",
         "psydev_v193",
-        "psydev_v194"
+        "psydev_v194",
+        "psydev_v195",
+        "psydev_v196",
+        "psydev_v197",
+        "psydev_v198",
+        "psydev_v199",
+        "psydev_v200",
+        "psydev_v201",
+        "psydev_v202",
+        "psydev_v203",
+        "psydev_v204",
+        "psydev_v205",
+        "psydev_v206",
+        "psydev_v207",
+        "psydev_v208",
+        "psydev_v209",
+        "psydev_v210",
+        "psydev_v211",
+        "psydev_v212",
+        "psydev_v213",
+        "psydev_v214",
+        "psydev_v215",
+        "psydev_v216",
+        "psydev_v217",
+        "psydev_v218",
+        "psydev_v219",
+        "psydev_v220",
+        "psydev_v221",
+        "psydev_v222"
       ],
-      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_QCM_et_cas.pdf",
-      "qcmPdfQuestionCount": 62,
-      "flashcardsPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_Flashcards_90.pdf",
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_QCM_74_et_cas.pdf",
+      "qcmPdfQuestionCount": 74,
+      "flashcardsPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_Flashcards_102.pdf",
       "audioStatus": "available",
       "audioCount": 6,
       "activeVocalIds": [
@@ -4016,13 +4056,27 @@
           "type": "archive",
           "label": "Tout télécharger : PDF, cartes, captures et vocaux",
           "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_Pack_complet.zip"
+        },
+        {
+          "type": "qcm",
+          "label": "74 QCM corrigés et 6 cas pratiques",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_QCM_74_et_cas.pdf"
+        },
+        {
+          "type": "flashcards",
+          "label": "102 cartes de synthèse à imprimer",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_Flashcards_102.pdf"
+        },
+        {
+          "type": "archive",
+          "label": "Pack actualisé : fiche, exercices, cartes, scripts et 6 vocaux",
+          "url": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_Pack_actualise.zip"
         }
       ],
       "activeDocumentUrls": [
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_QCM_et_cas.pdf",
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_Flashcards_90.pdf",
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_Support_non_officiel_Captures.pdf",
-        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-20261111/Psychologie_developpement_Pack_complet.zip"
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_QCM_74_et_cas.pdf",
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_Flashcards_102.pdf",
+        "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/psycho-dev-officiel-20261112/Psychologie_developpement_Pack_actualise.zip"
       ]
     }
   ],
@@ -4047,8 +4101,8 @@
       "domain": "B",
       "title": "Recueil de concepts et définitions - TD et validation",
       "description": "Psychopathologie, développement, santé et psychologie sociale : définitions, plan attendu et index cliquable.",
-      "url": "./assets/ue-b2-concepts-20261112/UE_B2_Concepts_Definitions_TD_Validation.pdf",
-      "pageCount": 81,
+      "url": "./assets/psycho-dev-officiel-20261112/UE_B2_Concepts_Definitions_TD_Validation_complete.pdf",
+      "pageCount": 83,
       "officialSupport": false,
       "provisional": true,
       "sourceType": "personal_cross_course_reference",
@@ -4058,27 +4112,39 @@
         "psychologie_sante",
         "psychologie_sociale"
       ],
-      "sourceLimitations": "Fiche personnelle non officielle ; psychologie du développement reconstituée à partir des captures et de l’oral.",
+      "sourceLimitations": "Fiche personnelle non officielle ; partie développement reconstituée puis complétée et confrontée au support officiel 2026.",
       "artifact": {
-        "path": "assets/ue-b2-concepts-20261112/UE_B2_Concepts_Definitions_TD_Validation.pdf",
-        "sha256": "03975ab3ec4f5be6a706b90f01cce8bf4cc1818573178ed75df5ae82dd258cf9",
-        "bytes": 625305,
-        "pageCount": 81
+        "path": "assets/psycho-dev-officiel-20261112/UE_B2_Concepts_Definitions_TD_Validation_complete.pdf",
+        "sha256": "831a3346d42a3338657417f469dc319c0febe779c893cf57017c2fd6c1e648ff",
+        "bytes": 638524,
+        "pageCount": 83
       },
       "review": {
         "status": "documentary_and_visual_review_completed",
-        "reviewedPageCount": 81,
+        "reviewedPageCount": 83,
         "listRowsCovered": 57,
         "originalLexiconEntriesPreserved": 711,
         "addedClarifications": 13,
         "sourcePassages": 82,
-        "independentMedicalReview": "not_attested"
+        "independentMedicalReview": "not_attested",
+        "addedDefinitionsFromOfficialSupport": 20,
+        "officialDevelopmentPagesReviewed": 35
       },
       "publicationApproval": {
         "status": "approved",
         "scope": "ue_reference_pdf_only",
-        "artifactSha256": "03975ab3ec4f5be6a706b90f01cce8bf4cc1818573178ed75df5ae82dd258cf9",
+        "artifactSha256": "831a3346d42a3338657417f469dc319c0febe779c893cf57017c2fd6c1e648ff",
         "userGoObserved": true
+      },
+      "revision": {
+        "type": "official_support_reconciliation_v1",
+        "previousArtifact": {
+          "path": "assets/ue-b2-concepts-20261112/UE_B2_Concepts_Definitions_TD_Validation.pdf",
+          "sha256": "03975ab3ec4f5be6a706b90f01cce8bf4cc1818573178ed75df5ae82dd258cf9",
+          "bytes": 625305,
+          "pageCount": 81
+        },
+        "officialSourcePages": 35
       }
     }
   ]

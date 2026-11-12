@@ -5,6 +5,7 @@ import {validateUnifiedSheetMedia} from './unified-sheet-media-contract.mjs';
 import {validateCompleteWrittenRevision} from './complete-written-revision-contract.mjs';
 import {validateReviewedWrittenAudioRevision} from './reviewed-written-audio-revision-contract.mjs';
 import {validateReconciledCorrection} from './reconciled-correction-contract.mjs';
+import {validateDevelopmentOfficialRevision} from './development-official-revision-contract.mjs';
 // An approved revision selects new active resources without rewriting a signed
 // historical delivery. Historical views are test-only; students use real catalogs.
 import fs from 'node:fs';
@@ -26,6 +27,10 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
+  if(r.profile==='development_official_update_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
+   validateDevelopmentOfficialRevision(r,manifest,revisionBundle(r));continue;
+  }
   if(r.profile==='reconciled_written_correction_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);validateReconciledCorrection(r,manifest,revisionBundle(r));continue;
   }
@@ -137,8 +142,8 @@ export function scopedHistoricalJson(reader,file){
    continue;
   }
   if(file==='course-registry-v741.json')value={...value,courses:value.courses.map(c=>c.id===r.courseId?old.course:c)};
-  else if(!['unified_sheet_media_v1','qcm_flashcards_only_v1'].includes(r.profile)&&file==='vocabulaire-v1.json')value={...value,entries:value.entries.filter(v=>!r.vocabularyEntryIds.includes(v.id))};
-  else if(r.profile!=='unified_sheet_media_v1'&&file==='questions-5.json')value=value.filter(q=>!r.questionIds.includes(q.id));
+  else if(!['unified_sheet_media_v1','qcm_flashcards_only_v1'].includes(r.profile)&&file==='vocabulaire-v1.json')value={...value,entries:value.entries.filter(v=>!(r.addedVocabularyEntryIds||r.vocabularyEntryIds).includes(v.id))};
+  else if(r.profile!=='unified_sheet_media_v1'&&file==='questions-5.json')value=value.filter(q=>!(r.addedQuestionIds||r.questionIds).includes(q.id));
   else if(file==='vocals.json'){const ids=new Set(r.audioArtifacts.map(a=>a.vocalId));value=value.filter(v=>!ids.has(v.id));}
   else if(r.sheetResourceId&&/^sheets-[123]\.json$/.test(file))value=value.filter(s=>s.resourceId!==r.sheetResourceId);
  }
@@ -164,8 +169,8 @@ export function scopedHistoricalData(manifest,data){
   if(out.registry)out.registry={...out.registry,courses:out.registry.courses.map(c=>c.id===r.courseId?old.course:c)};
   if(out.vocals)out.vocals=out.vocals.filter(v=>!ids.has(v.id));
   if(out.sheets&&r.sheetResourceId)out.sheets=out.sheets.filter(s=>s.resourceId!==r.sheetResourceId);
-  if(r.profile!=='unified_sheet_media_v1'&&out.questions)out.questions=out.questions.filter(q=>!r.questionIds.includes(q.id));
-  if(!['unified_sheet_media_v1','qcm_flashcards_only_v1'].includes(r.profile)&&out.vocabulary)out.vocabulary=out.vocabulary.filter(v=>!r.vocabularyEntryIds.includes(v.id));
+  if(r.profile!=='unified_sheet_media_v1'&&out.questions)out.questions=out.questions.filter(q=>!(r.addedQuestionIds||r.questionIds).includes(q.id));
+  if(!['unified_sheet_media_v1','qcm_flashcards_only_v1'].includes(r.profile)&&out.vocabulary)out.vocabulary=out.vocabulary.filter(v=>!(r.addedVocabularyEntryIds||r.vocabularyEntryIds).includes(v.id));
  }
  return out;
 }

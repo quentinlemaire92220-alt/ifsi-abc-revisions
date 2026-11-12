@@ -5,6 +5,15 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 export function beforeAdditiveCourses(file,value,manifest){
+ // Reconstruct the exact first-release rows before the separately checked,
+ // additive official-support revision. Never change its original signature.
+ for(const r of (manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='development_official_update_v1')){
+  assert.equal(createHash('sha256').update(fs.readFileSync(r.baselinePath)).digest('hex'),r.baselineSha256);
+  const old=read(r.baselinePath);assert.equal(old.courseId,r.courseId);
+  if(file==='vocabulaire-v1.json')value={...value,entries:value.entries.filter(v=>!r.addedVocabularyEntryIds.includes(v.id))};
+  else if(file==='questions-5.json')value=value.filter(q=>!r.addedQuestionIds.includes(q.id));
+  else if(/^sheets-[123]\.json$/.test(file))value=value.filter(s=>s.resourceId!==r.sheetResourceId);
+ }
  for(const d of (manifest.courses||[]).filter(d=>d.firstReleaseBaseline)){
   const b=d.firstReleaseBaseline;
   assert.equal(b.contract,'additive_course_rows_v1');

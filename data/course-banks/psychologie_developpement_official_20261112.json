@@ -1,0 +1,3455 @@
+[
+  {
+    "id": "psydev_q001",
+    "number": 1,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "easy",
+    "question": "Que décrit la psychologie du développement ?",
+    "choices": [
+      "Une évolution identique chez toutes les personnes.",
+      "Uniquement les maladies mentales de l'enfant.",
+      "Un fonctionnement indépendant de l'environnement.",
+      "Uniquement les performances scolaires.",
+      "Les transformations psychologiques au cours de toute la vie."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les trajectoires présentent une variabilité individuelle.",
+      "Son champ comprend aussi les acquisitions et variations ordinaires.",
+      "Les expériences et les conditions de vie participent au développement.",
+      "Elle étudie aussi motricité, émotions, cognition et relations.",
+      "Le développement inclut enfance, adolescence, âge adulte et vieillissement."
+    ],
+    "explanation": "A - Faux : Les trajectoires présentent une variabilité individuelle. B - Faux : Son champ comprend aussi les acquisitions et variations ordinaires. C - Faux : Les expériences et les conditions de vie participent au développement. D - Faux : Elle étudie aussi motricité, émotions, cognition et relations. E - Vrai : Le développement inclut enfance, adolescence, âge adulte et vieillissement.",
+    "flashcards": [
+      {
+        "id": "psydev_c001",
+        "theme": "Fondements et période anténatale",
+        "front": "Quel est le champ de la psychologie du développement ?",
+        "answers": [
+          "Elle étudie la genèse et les transformations des conduites et des systèmes psychologiques au cours de toute la vie, ainsi que leurs mécanismes et leur variabilité."
+        ],
+        "explanation": "Elle étudie la genèse et les transformations des conduites et des systèmes psychologiques au cours de toute la vie, ainsi que leurs mécanismes et leur variabilité.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q002",
+    "number": 2,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "easy",
+    "question": "Quelles propositions rendent compte des interactions entre inné et acquis ?",
+    "choices": [
+      "Le patrimoine génétique détermine seul toutes les conduites.",
+      "L'expérience et les interactions orientent les acquisitions.",
+      "La maturation biologique rend certaines acquisitions possibles.",
+      "Toute difficulté révèle une stimulation insuffisante.",
+      "La plasticité signifie que toute acquisition reste possible sans limite d'âge."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette explication efface le rôle des expériences et des interactions.",
+      "L'environnement contribue à l'expression des possibilités et aux apprentissages.",
+      "Le développement dépend notamment des possibilités biologiques.",
+      "Une difficulté ne permet pas d'en déduire une cause unique.",
+      "La plasticité possède des limites et ne supprime pas les contraintes développementales."
+    ],
+    "explanation": "A - Faux : Cette explication efface le rôle des expériences et des interactions. B - Vrai : L'environnement contribue à l'expression des possibilités et aux apprentissages. C - Vrai : Le développement dépend notamment des possibilités biologiques. D - Faux : Une difficulté ne permet pas d'en déduire une cause unique. E - Faux : La plasticité possède des limites et ne supprime pas les contraintes développementales.",
+    "flashcards": [
+      {
+        "id": "psydev_c003",
+        "theme": "Fondements et période anténatale",
+        "front": "Que signifie l'épigenèse dans ce cours ?",
+        "answers": [
+          "La construction progressive de l'organisation et du fonctionnement par interaction entre dispositions et expériences. Elle ne désigne pas ici uniquement un mécanisme moléculaire."
+        ],
+        "explanation": "La construction progressive de l'organisation et du fonctionnement par interaction entre dispositions et expériences. Elle ne désigne pas ici uniquement un mécanisme moléculaire.",
+        "preserveReviewedText": true,
+        "displayFront": "Que signifie l'épigenèse en psychologie du développement ?"
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q003",
+    "number": 3,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "medium",
+    "question": "Dans l'observation du développement d'un enfant, quels éléments sont pertinents ?",
+    "choices": [
+      "La trajectoire des acquisitions dans le temps.",
+      "L'écart à un âge moyen suffit pour poser un diagnostic.",
+      "Une caractéristique rare est nécessairement une maladie.",
+      "Le contexte et les compétences dans plusieurs domaines.",
+      "Le retentissement des difficultés dans la vie quotidienne."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L'évolution donne plus d'informations qu'une mesure isolée.",
+      "Un repère moyen n'est pas un seuil diagnostique individuel.",
+      "Rareté statistique et pathologie ne sont pas équivalentes.",
+      "L'analyse doit croiser plusieurs dimensions du développement.",
+      "Le fonctionnement réel contribue à l'évaluation."
+    ],
+    "explanation": "A - Vrai : L'évolution donne plus d'informations qu'une mesure isolée. B - Faux : Un repère moyen n'est pas un seuil diagnostique individuel. C - Faux : Rareté statistique et pathologie ne sont pas équivalentes. D - Vrai : L'analyse doit croiser plusieurs dimensions du développement. E - Vrai : Le fonctionnement réel contribue à l'évaluation.",
+    "flashcards": [
+      {
+        "id": "psydev_c005",
+        "theme": "Fondements et période anténatale",
+        "front": "Pourquoi une caractéristique rare n'est-elle pas nécessairement pathologique ?",
+        "answers": [
+          "La fréquence statistique n'est qu'un sens du mot normal. Le contexte, la trajectoire, la souffrance et le retentissement contribuent aussi à l'appréciation clinique."
+        ],
+        "explanation": "La fréquence statistique n'est qu'un sens du mot normal. Le contexte, la trajectoire, la souffrance et le retentissement contribuent aussi à l'appréciation clinique.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q004",
+    "number": 4,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "easy",
+    "question": "Vocabulaire : quelle association est exacte ?",
+    "choices": [
+      "Épigenèse : disparition de l'influence du milieu.",
+      "Phénotype : patrimoine génétique indépendant de son expression.",
+      "Plasticité : absence de toute contrainte biologique.",
+      "Génotype : caractéristiques génétiques d'un individu.",
+      "Acquis : uniquement ce qui était présent à la naissance."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Dans ce cours, elle renvoie à une construction progressive par interactions.",
+      "Le phénotype correspond aux caractéristiques observables dans un environnement.",
+      "La plasticité est une capacité de modification, pas une absence de limites.",
+      "Il se distingue des caractéristiques observables du phénotype.",
+      "L'acquis se construit dans l'expérience et les apprentissages."
+    ],
+    "explanation": "A - Faux : Dans ce cours, elle renvoie à une construction progressive par interactions. B - Faux : Le phénotype correspond aux caractéristiques observables dans un environnement. C - Faux : La plasticité est une capacité de modification, pas une absence de limites. D - Vrai : Il se distingue des caractéristiques observables du phénotype. E - Faux : L'acquis se construit dans l'expérience et les apprentissages.",
+    "flashcards": [
+      {
+        "id": "psydev_c002",
+        "theme": "Fondements et période anténatale",
+        "front": "Comment distinguer génotype et phénotype ?",
+        "answers": [
+          "Le génotype correspond aux caractéristiques génétiques. Le phénotype correspond aux caractéristiques observables issues de leur expression dans un environnement."
+        ],
+        "explanation": "Le génotype correspond aux caractéristiques génétiques. Le phénotype correspond aux caractéristiques observables issues de leur expression dans un environnement.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c004",
+        "theme": "Fondements et période anténatale",
+        "front": "Que permet la plasticité cérébrale, et quelle limite faut-il retenir ?",
+        "answers": [
+          "Elle permet aux réseaux nerveux de se modifier avec le développement et l'expérience. Elle ne signifie pas que tout est possible à tout âge ni qu'une difficulté vient nécessairement d'un défaut de stimulation."
+        ],
+        "explanation": "Elle permet aux réseaux nerveux de se modifier avec le développement et l'expérience. Elle ne signifie pas que tout est possible à tout âge ni qu'une difficulté vient nécessairement d'un défaut de stimulation.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q005",
+    "number": 5,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "medium",
+    "question": "Dans la lecture psychodynamique de la parentalité, quelles distinctions sont utiles ?",
+    "choices": [
+      "Le projet d'enfant possède une dimension consciente d'organisation.",
+      "Désir de grossesse et désir d'accueillir un enfant ne se confondent pas.",
+      "Un projet très préparé garantit l'absence de difficultés parentales.",
+      "Une grossesse imprévue empêche un accueil satisfaisant de l'enfant.",
+      "Le deuil de l'enfant imaginaire signifie cesser d'aimer son enfant."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il s'inscrit notamment dans un projet de vie et des attentes.",
+      "Rechercher l'état de grossesse ne garantit pas la disponibilité à l'enfant réel.",
+      "La rencontre réelle comporte une part d'imprévisibilité.",
+      "L'imprévu ne permet pas de prédire la qualité future de l'accueil.",
+      "Il désigne le remaniement des attentes pour accueillir l'enfant réel."
+    ],
+    "explanation": "A - Vrai : Il s'inscrit notamment dans un projet de vie et des attentes. B - Vrai : Rechercher l'état de grossesse ne garantit pas la disponibilité à l'enfant réel. C - Faux : La rencontre réelle comporte une part d'imprévisibilité. D - Faux : L'imprévu ne permet pas de prédire la qualité future de l'accueil. E - Faux : Il désigne le remaniement des attentes pour accueillir l'enfant réel.",
+    "flashcards": [
+      {
+        "id": "psydev_c007",
+        "theme": "Fondements et période anténatale",
+        "front": "Comment distinguer désir de grossesse, projet d'enfant et désir d'enfant ?",
+        "answers": [
+          "Le désir de grossesse concerne l'état de grossesse ; le projet est une démarche consciente d'organisation ; le désir d'enfant comporte des dimensions conscientes et inconscientes liées à l'histoire personnelle."
+        ],
+        "explanation": "Le désir de grossesse concerne l'état de grossesse ; le projet est une démarche consciente d'organisation ; le désir d'enfant comporte des dimensions conscientes et inconscientes liées à l'histoire personnelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q006",
+    "number": 6,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "hard",
+    "question": "Quelles précautions respectent les modèles psychiques de la grossesse présentés dans le cours ?",
+    "choices": [
+      "Seule la mère biologique peut exercer une fonction de soin ajustée.",
+      "Une complication obstétricale prouve l'existence d'un conflit psychique.",
+      "La préoccupation maternelle primaire décrit une sensibilité particulière aux besoins du bébé.",
+      "Les symptômes de couvade prouvent à eux seuls une maladie psychiatrique.",
+      "Les remaniements décrits ne sont pas des étapes obligatoires pour chaque personne."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "D'autres adultes peuvent prendre soin et répondre aux besoins de l'enfant.",
+      "Cette causalité ne peut pas être déduite d'un événement somatique.",
+      "Il s'agit d'un concept de Winnicott situé autour de la naissance.",
+      "Cette notion ne constitue ni un diagnostic automatique ni une explication à tout symptôme.",
+      "Le modèle aide à comprendre une expérience sans imposer un calendrier universel."
+    ],
+    "explanation": "A - Faux : D'autres adultes peuvent prendre soin et répondre aux besoins de l'enfant. B - Faux : Cette causalité ne peut pas être déduite d'un événement somatique. C - Vrai : Il s'agit d'un concept de Winnicott situé autour de la naissance. D - Faux : Cette notion ne constitue ni un diagnostic automatique ni une explication à tout symptôme. E - Vrai : Le modèle aide à comprendre une expérience sans imposer un calendrier universel.",
+    "flashcards": [
+      {
+        "id": "psydev_c009",
+        "theme": "Fondements et période anténatale",
+        "front": "Que désigne la préoccupation maternelle primaire de Winnicott ?",
+        "answers": [
+          "Une sensibilité particulière aux besoins et aux signaux du bébé autour de la naissance. Ce modèle ne réserve pas la capacité de soin à la seule mère biologique."
+        ],
+        "explanation": "Une sensibilité particulière aux besoins et aux signaux du bébé autour de la naissance. Ce modèle ne réserve pas la capacité de soin à la seule mère biologique.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c010",
+        "theme": "Fondements et période anténatale",
+        "front": "Qu'est-ce que la couvade psychosomatique ?",
+        "answers": [
+          "Des manifestations corporelles rapportées chez certains futurs pères pendant la grossesse de leur partenaire. Ce n'est ni une étape obligatoire ni une explication à tout symptôme."
+        ],
+        "explanation": "Des manifestations corporelles rapportées chez certains futurs pères pendant la grossesse de leur partenaire. Ce n'est ni une étape obligatoire ni une explication à tout symptôme.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q007",
+    "number": 7,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "easy",
+    "question": "Quelle proposition décrit les compétences fœtales ?",
+    "choices": [
+      "Tous les sens fonctionnent d'emblée comme ceux d'un adulte.",
+      "La période fœtale correspond uniquement à la mise en place initiale des structures.",
+      "Des expériences sensorielles prénatales peuvent soutenir des reconnaissances après la naissance.",
+      "La vision est le système le plus sollicité dans l'utérus.",
+      "Une reconnaissance de la voix maternelle prouve un attachement sélectif complet."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La maturation sensorielle est progressive et se poursuit.",
+      "La croissance et la maturation y occupent une place majeure.",
+      "Le cours évoque notamment les voix, rythmes et odeurs familières.",
+      "La vision y est beaucoup moins sollicitée que plusieurs autres modalités.",
+      "Reconnaissance sensorielle et organisation du lien d'attachement sont distinctes."
+    ],
+    "explanation": "A - Faux : La maturation sensorielle est progressive et se poursuit. B - Faux : La croissance et la maturation y occupent une place majeure. C - Vrai : Le cours évoque notamment les voix, rythmes et odeurs familières. D - Faux : La vision y est beaucoup moins sollicitée que plusieurs autres modalités. E - Faux : Reconnaissance sensorielle et organisation du lien d'attachement sont distinctes.",
+    "flashcards": [
+      {
+        "id": "psydev_c011",
+        "theme": "Fondements et période anténatale",
+        "front": "Que peut montrer une reconnaissance sensorielle à la naissance ?",
+        "answers": [
+          "Elle peut témoigner d'apprentissages prénataux, par exemple une familiarité avec une voix ou un rythme. Elle ne prouve pas un attachement sélectif déjà entièrement organisé."
+        ],
+        "explanation": "Elle peut témoigner d'apprentissages prénataux, par exemple une familiarité avec une voix ou un rythme. Elle ne prouve pas un attachement sélectif déjà entièrement organisé.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c012",
+        "theme": "Fondements et période anténatale",
+        "front": "Comment distinguer période embryonnaire et période fœtale ?",
+        "answers": [
+          "La période embryonnaire concerne principalement la mise en place des structures ; la période fœtale, leur croissance et leur maturation. Les acquisitions ne se réduisent pas à une date unique."
+        ],
+        "explanation": "La période embryonnaire concerne principalement la mise en place des structures ; la période fœtale, leur croissance et leur maturation. Les acquisitions ne se réduisent pas à une date unique.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q008",
+    "number": 8,
+    "courseId": "psychologie_developpement",
+    "theme": "Fondements et période anténatale",
+    "difficulty": "medium",
+    "question": "Un enfant réalisait une activité qu'il ne parvient plus à faire depuis plusieurs semaines. Quelles attitudes sont adaptées ?",
+    "choices": [
+      "Conclure immédiatement à une maladie précise.",
+      "Solliciter un avis professionnel plutôt que banaliser cette évolution.",
+      "Attribuer d'emblée le changement à un manque d'effort.",
+      "Décrire précisément la perte d'acquis et les situations concernées.",
+      "Attendre systématiquement la rentrée scolaire suivante."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L'observation initiale ne suffit pas à poser un diagnostic.",
+      "Une perte d'acquis mérite une attention particulière.",
+      "Une telle interprétation empêche d'explorer les difficultés.",
+      "Une transmission factuelle permet de préparer l'évaluation.",
+      "Ce délai automatique ne tient pas compte d'une régression persistante."
+    ],
+    "explanation": "A - Faux : L'observation initiale ne suffit pas à poser un diagnostic. B - Vrai : Une perte d'acquis mérite une attention particulière. C - Faux : Une telle interprétation empêche d'explorer les difficultés. D - Vrai : Une transmission factuelle permet de préparer l'évaluation. E - Faux : Ce délai automatique ne tient pas compte d'une régression persistante.",
+    "flashcards": [
+      {
+        "id": "psydev_c006",
+        "theme": "Fondements et période anténatale",
+        "front": "Que transmettre devant une perte d'acquis chez l'enfant ?",
+        "answers": [
+          "Les capacités antérieures et actuelles, la durée du changement, les situations, les aides nécessaires et le retentissement. Une régression persistante mérite un avis professionnel, sans diagnostic hâtif."
+        ],
+        "explanation": "Les capacités antérieures et actuelles, la durée du changement, les situations, les aides nécessaires et le retentissement. Une régression persistante mérite un avis professionnel, sans diagnostic hâtif.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q009",
+    "number": 9,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "easy",
+    "question": "Quelle direction correspond au développement céphalo-caudal ?",
+    "choices": [
+      "De la tête vers les parties inférieures du corps.",
+      "Des pieds vers la tête.",
+      "Des doigts vers l'épaule.",
+      "Une acquisition simultanée du contrôle de tous les segments.",
+      "De l'extérieur du corps vers son axe uniquement."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le contrôle se construit globalement de la tête vers le bas.",
+      "C'est l'inverse de la direction décrite.",
+      "Cette direction ne définit pas la progression céphalo-caudale.",
+      "Les contrôles posturaux se différencient progressivement.",
+      "Cette description ne correspond pas à la direction céphalo-caudale."
+    ],
+    "explanation": "A - Vrai : Le contrôle se construit globalement de la tête vers le bas. B - Faux : C'est l'inverse de la direction décrite. C - Faux : Cette direction ne définit pas la progression céphalo-caudale. D - Faux : Les contrôles posturaux se différencient progressivement. E - Faux : Cette description ne correspond pas à la direction céphalo-caudale.",
+    "flashcards": [
+      {
+        "id": "psydev_c013",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Que signifie la progression céphalo-caudale ?",
+        "answers": [
+          "Le contrôle moteur se développe globalement de la tête vers les parties inférieures du corps."
+        ],
+        "explanation": "Le contrôle moteur se développe globalement de la tête vers les parties inférieures du corps.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c016",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quel repère de préhension le cours situe-t-il vers 9 mois ?",
+        "answers": [
+          "La pince pouce-index, après des prises plus globales. C'est un repère approximatif : précision, progression et contexte restent à observer."
+        ],
+        "explanation": "La pince pouce-index, après des prises plus globales. C'est un repère approximatif : précision, progression et contexte restent à observer.",
+        "preserveReviewedText": true,
+        "displayFront": "Quel repère de préhension apparaît autour de 9 mois ?"
+      },
+      {
+        "id": "psydev_c019",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Comment distinguer discrimination et catégorisation ?",
+        "answers": [
+          "Discriminer consiste à différencier des stimuli. Catégoriser consiste à regrouper des éléments partageant des caractéristiques."
+        ],
+        "explanation": "Discriminer consiste à différencier des stimuli. Catégoriser consiste à regrouper des éléments partageant des caractéristiques.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q010",
+    "number": 10,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "easy",
+    "question": "Quelles propositions concernant les acquisitions motrices sont exactes ?",
+    "choices": [
+      "La progression proximo-distale va de l'axe du corps vers les extrémités.",
+      "La maîtrise d'un geste suffit à résumer tout le développement.",
+      "L'absence isolée de quatre-pattes ne permet pas de conclure à un trouble intellectuel.",
+      "La qualité des mouvements est sans intérêt si l'âge moyen est respecté.",
+      "La marche survient à un anniversaire identique chez tous les enfants."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle accompagne notamment l'affinement des actions manuelles.",
+      "Les domaines du développement doivent être considérés ensemble.",
+      "Ce mode de déplacement n'est pas universel.",
+      "Qualité, progression et retentissement doivent aussi être observés.",
+      "Les âges d'acquisition présentent une variabilité."
+    ],
+    "explanation": "A - Vrai : Elle accompagne notamment l'affinement des actions manuelles. B - Faux : Les domaines du développement doivent être considérés ensemble. C - Vrai : Ce mode de déplacement n'est pas universel. D - Faux : Qualité, progression et retentissement doivent aussi être observés. E - Faux : Les âges d'acquisition présentent une variabilité.",
+    "flashcards": [
+      {
+        "id": "psydev_c014",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Que signifie la progression proximo-distale ?",
+        "answers": [
+          "Le contrôle se développe globalement de l'axe du corps vers les extrémités, avec un affinement progressif des actions manuelles."
+        ],
+        "explanation": "Le contrôle se développe globalement de l'axe du corps vers les extrémités, avec un affinement progressif des actions manuelles.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c017",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Pourquoi ne pas diagnostiquer un trouble sur la seule absence de quatre-pattes ?",
+        "answers": [
+          "Ce mode de déplacement n'est pas universel. Il faut examiner l'ensemble de la trajectoire motrice, la qualité des mouvements et les autres compétences."
+        ],
+        "explanation": "Ce mode de déplacement n'est pas universel. Il faut examiner l'ensemble de la trajectoire motrice, la qualité des mouvements et les autres compétences.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q011",
+    "number": 11,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "medium",
+    "question": "Concernant l'acquisition de la continence, quelles propositions sont exactes ?",
+    "choices": [
+      "Les repères nocturnes et diurnes sont toujours identiques.",
+      "Le seuil usuel de l'énurésie nocturne est de 4 ans.",
+      "L'encoprésie se définit par les mêmes manifestations que l'énurésie.",
+      "La maturation, les sensations et les possibilités de communication interviennent.",
+      "Savoir marcher ne prouve pas à lui seul la maturité sphinctérienne."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Leur acquisition peut suivre des rythmes différents.",
+      "Le repère rectifié dans le cours est de 5 ans.",
+      "L'encoprésie concerne les selles, l'énurésie les urines.",
+      "La continence dépend de plusieurs facteurs développementaux et contextuels.",
+      "Motricité globale et continence ne sont pas interchangeables."
+    ],
+    "explanation": "A - Faux : Leur acquisition peut suivre des rythmes différents. B - Faux : Le repère rectifié dans le cours est de 5 ans. C - Faux : L'encoprésie concerne les selles, l'énurésie les urines. D - Vrai : La continence dépend de plusieurs facteurs développementaux et contextuels. E - Vrai : Motricité globale et continence ne sont pas interchangeables.",
+    "flashcards": [
+      {
+        "id": "psydev_c018",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quels seuils distingue le cours corrigé pour énurésie nocturne et encoprésie ?",
+        "answers": [
+          "Le repère usuel est de 5 ans pour l'énurésie nocturne et de 4 ans pour l'encoprésie. Les manifestations, le contexte et les causes demandent une appréciation clinique."
+        ],
+        "explanation": "Le repère usuel est de 5 ans pour l'énurésie nocturne et de 4 ans pour l'encoprésie. Les manifestations, le contexte et les causes demandent une appréciation clinique.",
+        "preserveReviewedText": true,
+        "displayFront": "Quels âges de référence distinguer pour l'énurésie nocturne et l'encoprésie ?"
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q012",
+    "number": 12,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "easy",
+    "question": "Vocabulaire : qu'est-ce qu'un schème chez Piaget ?",
+    "choices": [
+      "Une photographie conservée uniquement dans la mémoire visuelle.",
+      "Une organisation d'action ou de pensée réutilisable dans des situations comparables.",
+      "Une émotion toujours déclenchée par une séparation.",
+      "Un réflexe qui ne peut jamais se transformer.",
+      "Un classement médical définitif des enfants selon leur âge."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un schème n'est pas une simple image.",
+      "Saisir ou classer sont des exemples d'organisations transférables.",
+      "Cette définition concerne une autre dimension du développement.",
+      "Les schèmes se modifient et se coordonnent au cours du développement.",
+      "Les schèmes ne sont pas des catégories diagnostiques."
+    ],
+    "explanation": "A - Faux : Un schème n'est pas une simple image. B - Vrai : Saisir ou classer sont des exemples d'organisations transférables. C - Faux : Cette définition concerne une autre dimension du développement. D - Faux : Les schèmes se modifient et se coordonnent au cours du développement. E - Faux : Les schèmes ne sont pas des catégories diagnostiques.",
+    "flashcards": [
+      {
+        "id": "psydev_c023",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Qu'est-ce qu'un schème chez Piaget ?",
+        "answers": [
+          "Une organisation d'action ou de pensée réutilisable dans des situations comparables : saisir, regarder, classer ou comparer."
+        ],
+        "explanation": "Une organisation d'action ou de pensée réutilisable dans des situations comparables : saisir, regarder, classer ou comparer.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q013",
+    "number": 13,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "medium",
+    "question": "Un enfant utilise une prise connue pour saisir un nouveau hochet, puis modifie sa prise pour un objet plus large. Quelles interprétations sont justes ?",
+    "choices": [
+      "Modifier la prise illustre l'accommodation.",
+      "Les deux conduites prouvent un passage à la pensée formelle.",
+      "Assimilation et accommodation sont incompatibles.",
+      "L'accommodation consiste à maintenir le schème inchangé.",
+      "Utiliser la prise connue illustre l'assimilation."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le schème est transformé pour s'ajuster à la situation.",
+      "Ces conduites s'observent dans l'adaptation sensori-motrice.",
+      "Elles participent ensemble à l'adaptation.",
+      "Elle implique au contraire une modification du schème.",
+      "L'expérience nouvelle est intégrée à un schème déjà disponible."
+    ],
+    "explanation": "A - Vrai : Le schème est transformé pour s'ajuster à la situation. B - Faux : Ces conduites s'observent dans l'adaptation sensori-motrice. C - Faux : Elles participent ensemble à l'adaptation. D - Faux : Elle implique au contraire une modification du schème. E - Vrai : L'expérience nouvelle est intégrée à un schème déjà disponible.",
+    "flashcards": [
+      {
+        "id": "psydev_c024",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Comment reconnaître une assimilation ?",
+        "answers": [
+          "Une expérience nouvelle est intégrée à un schème déjà disponible, par exemple saisir un nouveau hochet avec une prise connue."
+        ],
+        "explanation": "Une expérience nouvelle est intégrée à un schème déjà disponible, par exemple saisir un nouveau hochet avec une prise connue.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c015",
+        "theme": "Motricité et cognition du bébé",
+        "front": "À quoi renvoie la néoténie dans ce cours ?",
+        "answers": [
+          "À l'immaturité et à la dépendance prolongées du nouveau-né humain. Elle souligne le besoin d'un environnement de soins et de relations."
+        ],
+        "explanation": "À l'immaturité et à la dépendance prolongées du nouveau-né humain. Elle souligne le besoin d'un environnement de soins et de relations.",
+        "preserveReviewedText": true,
+        "displayFront": "Que signifie la néoténie du nouveau-né humain ?"
+      },
+      {
+        "id": "psydev_c025",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Comment reconnaître une accommodation ?",
+        "answers": [
+          "Le schème est modifié pour s'ajuster à une situation nouvelle, par exemple changer sa prise pour réussir à saisir un objet plus large."
+        ],
+        "explanation": "Le schème est modifié pour s'ajuster à une situation nouvelle, par exemple changer sa prise pour réussir à saisir un objet plus large.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c026",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quel rôle joue l'équilibration ?",
+        "answers": [
+          "Elle désigne les réorganisations qui restaurent une cohérence entre les connaissances et les situations rencontrées. Assimilation et accommodation participent à cette adaptation."
+        ],
+        "explanation": "Elle désigne les réorganisations qui restaurent une cohérence entre les connaissances et les situations rencontrées. Assimilation et accommodation participent à cette adaptation.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q014",
+    "number": 14,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "easy",
+    "question": "Quelle association décrit une réaction circulaire tertiaire ?",
+    "choices": [
+      "Agiter de façon identique un hochet pour reproduire un bruit découvert.",
+      "Varier volontairement la façon de laisser tomber un objet pour en explorer les effets.",
+      "Résoudre exclusivement un problème par raisonnement sur des propositions abstraites.",
+      "Déduire la croyance d'une autre personne sans agir.",
+      "Répéter seulement une sensation centrée sur son propre corps."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cela illustre plutôt la répétition secondaire d'un effet intéressant.",
+      "La variation des moyens caractérise l'exploration tertiaire.",
+      "Cela relève de la pensée formelle, pas d'une réaction circulaire tertiaire.",
+      "Il s'agit d'une autre compétence cognitive.",
+      "Cela correspond plutôt à une réaction circulaire primaire."
+    ],
+    "explanation": "A - Faux : Cela illustre plutôt la répétition secondaire d'un effet intéressant. B - Vrai : La variation des moyens caractérise l'exploration tertiaire. C - Faux : Cela relève de la pensée formelle, pas d'une réaction circulaire tertiaire. D - Faux : Il s'agit d'une autre compétence cognitive. E - Faux : Cela correspond plutôt à une réaction circulaire primaire.",
+    "flashcards": [
+      {
+        "id": "psydev_c027",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Comment distinguer les trois réactions circulaires ?",
+        "answers": [
+          "Primaire : effet centré sur le corps propre. Secondaire : effet intéressant sur un objet. Tertiaire : variation des actions pour explorer de nouveaux effets."
+        ],
+        "explanation": "Primaire : effet centré sur le corps propre. Secondaire : effet intéressant sur un objet. Tertiaire : variation des actions pour explorer de nouveaux effets.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q015",
+    "number": 15,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre réactions circulaires sont correctes ?",
+    "choices": [
+      "Les secondaires sont définies par un raisonnement moral.",
+      "Les primaires sont principalement centrées sur le corps propre.",
+      "Les tertiaires font varier l'action pour explorer des effets nouveaux.",
+      "Les secondaires reproduisent un effet intéressant sur un objet.",
+      "Toutes supposent la maîtrise du langage écrit."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elles concernent l'action et ses effets, non le jugement moral.",
+      "L'enfant répète une action dont l'effet corporel l'intéresse.",
+      "Elles introduisent une expérimentation par variation.",
+      "Le résultat externe de l'action devient central.",
+      "Elles appartiennent au développement sensori-moteur précoce."
+    ],
+    "explanation": "A - Faux : Elles concernent l'action et ses effets, non le jugement moral. B - Vrai : L'enfant répète une action dont l'effet corporel l'intéresse. C - Vrai : Elles introduisent une expérimentation par variation. D - Vrai : Le résultat externe de l'action devient central. E - Faux : Elles appartiennent au développement sensori-moteur précoce.",
+    "flashcards": [
+      {
+        "id": "psydev_c029",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quel est l'ordre des six sous-stades sensori-moteurs ?",
+        "answers": [
+          "Exercice des réflexes ; réactions circulaires primaires ; secondaires ; coordination de schèmes secondaires ; tertiaires ; combinaisons mentales. Les frontières d'âge sont des repères du modèle."
+        ],
+        "explanation": "Exercice des réflexes ; réactions circulaires primaires ; secondaires ; coordination de schèmes secondaires ; tertiaires ; combinaisons mentales. Les frontières d'âge sont des repères du modèle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q016",
+    "number": 16,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "hard",
+    "question": "À propos de la permanence de l'objet et de l'erreur A-non-B, quelles propositions sont justes ?",
+    "choices": [
+      "La permanence de l'objet concerne son existence hors de la perception immédiate.",
+      "Une anticipation visuelle prouve la maîtrise de toutes les recherches actives.",
+      "Rechercher en A un objet vu caché en B correspond à l'erreur A-non-B.",
+      "Une tâche de recherche mobilise aussi mémoire et contrôle de l'action.",
+      "Une séparation difficile prouve une absence de permanence de l'objet."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L'objet n'est plus réduit à ce qui est directement perçu.",
+      "Des tâches différentes mobilisent des exigences différentes.",
+      "La recherche reste orientée par les découvertes antérieures en A.",
+      "La réussite ne dépend pas uniquement d'une représentation de l'objet.",
+      "Sécurité affective et permanence cognitive sont distinctes."
+    ],
+    "explanation": "A - Vrai : L'objet n'est plus réduit à ce qui est directement perçu. B - Faux : Des tâches différentes mobilisent des exigences différentes. C - Vrai : La recherche reste orientée par les découvertes antérieures en A. D - Vrai : La réussite ne dépend pas uniquement d'une représentation de l'objet. E - Faux : Sécurité affective et permanence cognitive sont distinctes.",
+    "flashcards": [
+      {
+        "id": "psydev_c021",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Qu'est-ce que la permanence de l'objet ?",
+        "answers": [
+          "La compréhension qu'un objet continue à exister hors de la perception immédiate. Elle se construit progressivement et sa mesure dépend de la tâche."
+        ],
+        "explanation": "La compréhension qu'un objet continue à exister hors de la perception immédiate. Elle se construit progressivement et sa mesure dépend de la tâche.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c022",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Que montre l'erreur A-non-B ?",
+        "answers": [
+          "L'enfant recherche en A un objet qu'il a vu cacher en B après l'avoir retrouvé plusieurs fois en A. La conduite mobilise représentation, mémoire et contrôle de l'action."
+        ],
+        "explanation": "L'enfant recherche en A un objet qu'il a vu cacher en B après l'avoir retrouvé plusieurs fois en A. La conduite mobilise représentation, mémoire et contrôle de l'action.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q017",
+    "number": 17,
+    "courseId": "psychologie_developpement",
+    "theme": "Motricité et cognition du bébé",
+    "difficulty": "hard",
+    "question": "Dans les six sous-stades sensori-moteurs de Piaget, quelles propositions sont exactes ?",
+    "choices": [
+      "La pensée sensori-motrice est définie par la lecture des phrases.",
+      "La coordination de schèmes permet de distinguer moyens et buts.",
+      "Les sous-stades sont des seuils de diagnostic médical universels.",
+      "La réaction circulaire tertiaire précède nécessairement l'exercice des réflexes.",
+      "Les combinaisons mentales prennent une place importante vers 18-24 mois dans le modèle."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle se construit principalement par perception et action.",
+      "Déplacer un obstacle pour atteindre un objet illustre cette coordination.",
+      "Les âges sont des repères du modèle théorique.",
+      "L'exercice des réflexes se situe au début de la séquence.",
+      "Des solutions peuvent être conçues avant leur réalisation."
+    ],
+    "explanation": "A - Faux : Elle se construit principalement par perception et action. B - Vrai : Déplacer un obstacle pour atteindre un objet illustre cette coordination. C - Faux : Les âges sont des repères du modèle théorique. D - Faux : L'exercice des réflexes se situe au début de la séquence. E - Vrai : Des solutions peuvent être conçues avant leur réalisation.",
+    "flashcards": [
+      {
+        "id": "psydev_c028",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quel exemple illustre une distinction entre moyen et but ?",
+        "answers": [
+          "Déplacer un obstacle pour atteindre un jouet. Le déplacement est le moyen ; obtenir le jouet est le but. Cette coordination marque une organisation intentionnelle de l'action."
+        ],
+        "explanation": "Déplacer un obstacle pour atteindre un jouet. Le déplacement est le moyen ; obtenir le jouet est le but. Cette coordination marque une organisation intentionnelle de l'action.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c020",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Qu'est-ce que la coordination intersensorielle ?",
+        "answers": [
+          "L'articulation de plusieurs modalités sensorielles, par exemple associer ce qui est vu à ce qui est touché, pour reconnaître et anticiper."
+        ],
+        "explanation": "L'articulation de plusieurs modalités sensorielles, par exemple associer ce qui est vu à ce qui est touché, pour reconnaître et anticiper.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c030",
+        "theme": "Motricité et cognition du bébé",
+        "front": "Quelle évolution caractérise la fin du stade sensori-moteur ?",
+        "answers": [
+          "Les combinaisons mentales et les représentations prennent une place croissante : des moyens peuvent être conçus avant l'action. Le cours situe ce mouvement vers 18-24 mois dans le modèle."
+        ],
+        "explanation": "Les combinaisons mentales et les représentations prennent une place croissante : des moyens peuvent être conçus avant l'action. Le cours situe ce mouvement vers 18-24 mois dans le modèle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q018",
+    "number": 18,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "easy",
+    "question": "Quelle proposition distingue compréhension et production du langage ?",
+    "choices": [
+      "L'absence de phrase chez un bébé empêche toute communication.",
+      "La production maîtrisée de phrases précède toute perception des sons.",
+      "Le nourrisson peut comprendre certains mots avant de savoir les produire.",
+      "Un mot compris en contexte est toujours compris hors contexte.",
+      "Le vocabulaire compris et le vocabulaire produit sont toujours de même taille."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Regards, gestes, vocalisations et expressions participent déjà aux échanges.",
+      "La perception et la discrimination précèdent cette production.",
+      "Compréhension et expression n'évoluent pas exactement au même rythme.",
+      "Le contexte peut fournir une partie essentielle du sens.",
+      "Ils doivent être évalués et distingués."
+    ],
+    "explanation": "A - Faux : Regards, gestes, vocalisations et expressions participent déjà aux échanges. B - Faux : La perception et la discrimination précèdent cette production. C - Vrai : Compréhension et expression n'évoluent pas exactement au même rythme. D - Faux : Le contexte peut fournir une partie essentielle du sens. E - Faux : Ils doivent être évalués et distingués.",
+    "flashcards": [
+      {
+        "id": "psydev_c031",
+        "theme": "Langage et premières interactions",
+        "front": "Pourquoi distinguer compréhension et production du langage ?",
+        "answers": [
+          "Le bébé peut comprendre avant de produire les mots correspondants. Il faut distinguer mots compris et mots exprimés, ainsi que compréhension en contexte et hors contexte."
+        ],
+        "explanation": "Le bébé peut comprendre avant de produire les mots correspondants. Il faut distinguer mots compris et mots exprimés, ainsi que compréhension en contexte et hors contexte.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q019",
+    "number": 19,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "medium",
+    "question": "Quels éléments relèvent de la prosodie et du babillage ?",
+    "choices": [
+      "Les lallations peuvent prendre la forme de suites répétées consonne-voyelle.",
+      "Une lallation constitue toujours une phrase grammaticalement complète.",
+      "Le babillage est indépendant des langues entendues.",
+      "La prosodie comprend les variations d'intonation et le rythme de la parole.",
+      "La prosodie désigne uniquement l'orthographe des mots."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des productions comme « ba-ba » en sont un exemple.",
+      "Il s'agit d'une production prélinguistique, pas nécessairement d'un énoncé constitué.",
+      "Il se modèle progressivement sur l'environnement linguistique.",
+      "Elle contribue au sens et à l'ajustement des échanges.",
+      "Elle concerne les propriétés sonores de la parole."
+    ],
+    "explanation": "A - Vrai : Des productions comme « ba-ba » en sont un exemple. B - Faux : Il s'agit d'une production prélinguistique, pas nécessairement d'un énoncé constitué. C - Faux : Il se modèle progressivement sur l'environnement linguistique. D - Vrai : Elle contribue au sens et à l'ajustement des échanges. E - Faux : Elle concerne les propriétés sonores de la parole.",
+    "flashcards": [
+      {
+        "id": "psydev_c032",
+        "theme": "Langage et premières interactions",
+        "front": "Que désigne la prosodie ?",
+        "answers": [
+          "Le rythme, l'accentuation et les variations d'intonation de la parole. Elle contribue au sens et à l'ajustement des interactions."
+        ],
+        "explanation": "Le rythme, l'accentuation et les variations d'intonation de la parole. Elle contribue au sens et à l'ajustement des interactions.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c033",
+        "theme": "Langage et premières interactions",
+        "front": "Qu'est-ce qu'une lallation ?",
+        "answers": [
+          "Une suite répétée consonne-voyelle, par exemple « ba-ba », dans les productions prélinguistiques. Elle ne constitue pas nécessairement une phrase."
+        ],
+        "explanation": "Une suite répétée consonne-voyelle, par exemple « ba-ba », dans les productions prélinguistiques. Elle ne constitue pas nécessairement une phrase.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q020",
+    "number": 20,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "easy",
+    "question": "Vocabulaire : un enfant dit « eau » pour demander à boire. Quelle notion est illustrée ?",
+    "choices": [
+      "La conservation du volume.",
+      "Le raisonnement hypothético-déductif.",
+      "La voie lexicale de lecture.",
+      "La sériation.",
+      "Le mot-phrase ou holophrase."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle porte sur une propriété physique malgré une transformation.",
+      "Il consiste à poser des hypothèses et à en déduire des conséquences.",
+      "Elle concerne l'identification des mots écrits connus.",
+      "Elle correspond à une mise en ordre selon une relation.",
+      "Un seul mot prend la valeur d'un énoncé plus large grâce au contexte."
+    ],
+    "explanation": "A - Faux : Elle porte sur une propriété physique malgré une transformation. B - Faux : Il consiste à poser des hypothèses et à en déduire des conséquences. C - Faux : Elle concerne l'identification des mots écrits connus. D - Faux : Elle correspond à une mise en ordre selon une relation. E - Vrai : Un seul mot prend la valeur d'un énoncé plus large grâce au contexte.",
+    "flashcards": [
+      {
+        "id": "psydev_c036",
+        "theme": "Langage et premières interactions",
+        "front": "Qu'est-ce qu'un mot-phrase ou holophrase ?",
+        "answers": [
+          "Un seul mot vaut un énoncé entier, interprété grâce au contexte : « eau » peut signifier « je veux boire »."
+        ],
+        "explanation": "Un seul mot vaut un énoncé entier, interprété grâce au contexte : « eau » peut signifier « je veux boire ».",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q021",
+    "number": 21,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent les premières combinaisons verbales ?",
+    "choices": [
+      "Toute première combinaison doit comporter un vocabulaire de 300 mots exactement.",
+      "« Pierre tape Paul » et « Paul tape Pierre » ont nécessairement le même sens.",
+      "Le style télégraphique peut omettre certains mots grammaticaux.",
+      "Un mot pivot peut revenir dans plusieurs énoncés, comme « encore eau » et « encore gâteau ».",
+      "L'ordre des mots n'apporte jamais d'information."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les valeurs du cours sont des ordres de grandeur variables.",
+      "L'agent et la personne concernée sont inversés.",
+      "Les premiers énoncés conservent surtout les éléments porteurs de sens.",
+      "Le même élément est combiné avec différents mots.",
+      "Il peut modifier les rôles et le sens de la phrase."
+    ],
+    "explanation": "A - Faux : Les valeurs du cours sont des ordres de grandeur variables. B - Faux : L'agent et la personne concernée sont inversés. C - Vrai : Les premiers énoncés conservent surtout les éléments porteurs de sens. D - Vrai : Le même élément est combiné avec différents mots. E - Faux : Il peut modifier les rôles et le sens de la phrase.",
+    "flashcards": [
+      {
+        "id": "psydev_c037",
+        "theme": "Langage et premières interactions",
+        "front": "Qu'est-ce qu'un mot pivot ?",
+        "answers": [
+          "Un élément récurrent dans les premiers énoncés, combiné à différents mots, par exemple « encore » dans « encore eau » et « encore gâteau »."
+        ],
+        "explanation": "Un élément récurrent dans les premiers énoncés, combiné à différents mots, par exemple « encore » dans « encore eau » et « encore gâteau ».",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c039",
+        "theme": "Langage et premières interactions",
+        "front": "Que montre la différence entre « Pierre tape Paul » et « Paul tape Pierre » ?",
+        "answers": [
+          "L'ordre des mots peut modifier les rôles et le sens. Les indices grammaticaux pertinents varient selon les langues ; le contexte ne suffit pas toujours."
+        ],
+        "explanation": "L'ordre des mots peut modifier les rôles et le sens. Les indices grammaticaux pertinents varient selon les langues ; le contexte ne suffit pas toujours.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q022",
+    "number": 22,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "hard",
+    "question": "Quelles conclusions sont défendables à propos des styles d'acquisition du langage ?",
+    "choices": [
+      "Le style référentiel garantit de meilleures performances finales.",
+      "Le style expressif utilise davantage des expressions ou fragments de phrases.",
+      "Un style observé chez le tout-petit fixe définitivement ses capacités.",
+      "Le style expressif prouve à lui seul un haut potentiel.",
+      "Le style référentiel privilégie notamment les noms."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le cours ne hiérarchise pas ces voies d'acquisition.",
+      "Il s'appuie notamment sur des éléments d'énoncés rencontrés dans l'interaction.",
+      "Les acquisitions et les usages évoluent avec l'expérience.",
+      "Aucun de ces profils n'est un test d'intelligence.",
+      "Il met volontiers l'accent sur la désignation d'objets."
+    ],
+    "explanation": "A - Faux : Le cours ne hiérarchise pas ces voies d'acquisition. B - Vrai : Il s'appuie notamment sur des éléments d'énoncés rencontrés dans l'interaction. C - Faux : Les acquisitions et les usages évoluent avec l'expérience. D - Faux : Aucun de ces profils n'est un test d'intelligence. E - Vrai : Il met volontiers l'accent sur la désignation d'objets.",
+    "flashcards": [
+      {
+        "id": "psydev_c035",
+        "theme": "Langage et premières interactions",
+        "front": "Comment distinguer styles référentiel et expressif ?",
+        "answers": [
+          "Le référentiel privilégie notamment les noms ; l'expressif utilise davantage des expressions ou fragments de phrases. Aucun des deux ne constitue une preuve de supériorité intellectuelle."
+        ],
+        "explanation": "Le référentiel privilégie notamment les noms ; l'expressif utilise davantage des expressions ou fragments de phrases. Aucun des deux ne constitue une preuve de supériorité intellectuelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q023",
+    "number": 23,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "medium",
+    "question": "Concernant le pointage, quelles propositions sont exactes ?",
+    "choices": [
+      "Il peut servir à partager un intérêt avec quelqu'un.",
+      "Il n'a aucune relation avec le développement de la communication.",
+      "Il peut servir à demander un objet.",
+      "Son absence isolée suffit pour diagnostiquer un autisme.",
+      "Il peut s'accompagner d'un regard ou d'une vocalisation."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le geste peut aussi viser le partage d'attention.",
+      "Il contribue aux échanges et annonce des usages symboliques.",
+      "Le geste peut avoir une fonction de demande.",
+      "Le repérage nécessite un ensemble de signes et une évaluation.",
+      "Plusieurs modalités de communication sont souvent coordonnées."
+    ],
+    "explanation": "A - Vrai : Le geste peut aussi viser le partage d'attention. B - Faux : Il contribue aux échanges et annonce des usages symboliques. C - Vrai : Le geste peut avoir une fonction de demande. D - Faux : Le repérage nécessite un ensemble de signes et une évaluation. E - Vrai : Plusieurs modalités de communication sont souvent coordonnées.",
+    "flashcards": [
+      {
+        "id": "psydev_c038",
+        "theme": "Langage et premières interactions",
+        "front": "Quelles sont les deux grandes fonctions du pointage ?",
+        "answers": [
+          "Demander un objet ou partager un intérêt. Le geste peut s'accompagner d'un regard ou d'une vocalisation. Son absence isolée ne permet pas de diagnostiquer un autisme."
+        ],
+        "explanation": "Demander un objet ou partager un intérêt. Le geste peut s'accompagner d'un regard ou d'une vocalisation. Son absence isolée ne permet pas de diagnostiquer un autisme.",
+        "preserveReviewedText": true,
+        "displayFront": "À quoi sert le pointage chez le bébé ?"
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q024",
+    "number": 24,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "easy",
+    "question": "Comment définir l'attention conjointe ?",
+    "choices": [
+      "La simple proximité physique de deux personnes.",
+      "L'obligation de regarder constamment l'adulte.",
+      "La mémorisation solitaire d'une liste de mots.",
+      "Le partage d'attention entre personnes à propos d'un objet ou d'un événement.",
+      "Le fait d'empêcher toute exploration autonome."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La proximité ne garantit pas un partage d'attention.",
+      "Les échanges respectent aussi les rythmes et détournements du regard.",
+      "Cette tâche ne définit pas une attention partagée.",
+      "Il existe une dimension de partage de l'intérêt avec l'autre.",
+      "L'attention partagée peut soutenir l'exploration."
+    ],
+    "explanation": "A - Faux : La proximité ne garantit pas un partage d'attention. B - Faux : Les échanges respectent aussi les rythmes et détournements du regard. C - Faux : Cette tâche ne définit pas une attention partagée. D - Vrai : Il existe une dimension de partage de l'intérêt avec l'autre. E - Faux : L'attention partagée peut soutenir l'exploration.",
+    "flashcards": [
+      {
+        "id": "psydev_c041",
+        "theme": "Langage et premières interactions",
+        "front": "Qu'est-ce qui distingue attention conjointe et simple regard vers un objet ?",
+        "answers": [
+          "L'attention conjointe comporte un partage d'intérêt avec une autre personne à propos de cet objet. Regarder le même objet ne prouve pas toujours cette coordination intentionnelle."
+        ],
+        "explanation": "L'attention conjointe comporte un partage d'intérêt avec une autre personne à propos de cet objet. Regarder le même objet ne prouve pas toujours cette coordination intentionnelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q025",
+    "number": 25,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques appartiennent à la langue adaptée à l'enfant ?",
+    "choices": [
+      "Des énoncés courts, concrets et syntaxiquement corrects.",
+      "Une intonation accentuée et des répétitions utiles.",
+      "L'usage systématique de phrases volontairement incorrectes.",
+      "La suppression de toute description pendant les soins.",
+      "L'absence de temps pour une réponse du bébé."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Adapter la parole ne signifie pas enseigner une syntaxe incorrecte.",
+      "Ces ajustements soutiennent l'échange et la compréhension.",
+      "La langue adaptée conserve une construction correcte.",
+      "Nommer et décrire les actions peut soutenir le langage.",
+      "L'alternance et l'ajustement font partie de l'interaction."
+    ],
+    "explanation": "A - Vrai : Adapter la parole ne signifie pas enseigner une syntaxe incorrecte. B - Vrai : Ces ajustements soutiennent l'échange et la compréhension. C - Faux : La langue adaptée conserve une construction correcte. D - Faux : Nommer et décrire les actions peut soutenir le langage. E - Faux : L'alternance et l'ajustement font partie de l'interaction.",
+    "flashcards": [
+      {
+        "id": "psydev_c043",
+        "theme": "Langage et premières interactions",
+        "front": "Quelles caractéristiques retenir pour la langue adaptée à l'enfant ?",
+        "answers": [
+          "Parole plus lente, intonation accentuée, vocabulaire concret, énoncés courts, syntaxe correcte et répétitions. Nommer et décrire les soins soutient les échanges."
+        ],
+        "explanation": "Parole plus lente, intonation accentuée, vocabulaire concret, énoncés courts, syntaxe correcte et répétitions. Nommer et décrire les soins soutient les échanges.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q026",
+    "number": 26,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "medium",
+    "question": "Quelles conduites favorisent les premiers échanges ?",
+    "choices": [
+      "Soutenir l'exploration en ajustant l'aide.",
+      "Observer les signaux de disponibilité et de retrait du bébé.",
+      "Poursuivre sans pause malgré tous les signes de fatigue.",
+      "Laisser une place à sa réponse après une parole ou une vocalisation.",
+      "Multiplier les sollicitations jusqu'à empêcher toute activité autonome."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L'étayage tient compte des possibilités de l'enfant.",
+      "Le bébé peut ouvrir, prolonger ou interrompre une interaction.",
+      "L'interaction doit respecter les rythmes et la disponibilité.",
+      "Le tour de rôle se construit avec l'ajustement de l'adulte.",
+      "L'étayage ne consiste pas à saturer l'environnement."
+    ],
+    "explanation": "A - Vrai : L'étayage tient compte des possibilités de l'enfant. B - Vrai : Le bébé peut ouvrir, prolonger ou interrompre une interaction. C - Faux : L'interaction doit respecter les rythmes et la disponibilité. D - Vrai : Le tour de rôle se construit avec l'ajustement de l'adulte. E - Faux : L'étayage ne consiste pas à saturer l'environnement.",
+    "flashcards": [
+      {
+        "id": "psydev_c040",
+        "theme": "Langage et premières interactions",
+        "front": "Comment se construit un tour de rôle avec un nourrisson ?",
+        "answers": [
+          "Le bébé vocalise ou regarde, l'adulte répond puis laisse une place à sa réponse. L'adulte ajuste l'alternance et respecte les signes de disponibilité ou de retrait."
+        ],
+        "explanation": "Le bébé vocalise ou regarde, l'adulte répond puis laisse une place à sa réponse. L'adulte ajuste l'alternance et respecte les signes de disponibilité ou de retrait.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q027",
+    "number": 27,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "medium",
+    "question": "Un enfant de 2 ans présente des répétitions de syllabes et semble gêné pour parler. Quelle conduite est la plus adaptée ?",
+    "choices": [
+      "En parler et demander un avis, sans promettre une disparition spontanée.",
+      "Attendre obligatoirement plusieurs années avant d'en parler.",
+      "Déduire un trouble intellectuel des seules répétitions.",
+      "Affirmer qu'à cet âge tout bégaiement est sans importance.",
+      "Exiger qu'il répète parfaitement chaque phrase."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Une gêne ou une inquiétude mérite d'être prise en compte.",
+      "Un délai systématique ne tient pas compte de la gêne actuelle.",
+      "Ces manifestations ne permettent pas cette conclusion.",
+      "Le caractère transitoire ne peut pas être garanti pour chaque enfant.",
+      "Une exigence de performance ne remplace pas une évaluation adaptée."
+    ],
+    "explanation": "A - Vrai : Une gêne ou une inquiétude mérite d'être prise en compte. B - Faux : Un délai systématique ne tient pas compte de la gêne actuelle. C - Faux : Ces manifestations ne permettent pas cette conclusion. D - Faux : Le caractère transitoire ne peut pas être garanti pour chaque enfant. E - Faux : Une exigence de performance ne remplace pas une évaluation adaptée.",
+    "flashcards": [
+      {
+        "id": "psydev_c044",
+        "theme": "Langage et premières interactions",
+        "front": "Pourquoi ne pas promettre qu'un bégaiement à 2-3 ans disparaîtra seul ?",
+        "answers": [
+          "Des hésitations peuvent être transitoires, mais l'évolution n'est pas certaine pour chaque enfant. Blocages, gêne ou inquiétude justifient d'en parler et de demander un avis."
+        ],
+        "explanation": "Des hésitations peuvent être transitoires, mais l'évolution n'est pas certaine pour chaque enfant. Blocages, gêne ou inquiétude justifient d'en parler et de demander un avis.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q028",
+    "number": 28,
+    "courseId": "psychologie_developpement",
+    "theme": "Langage et premières interactions",
+    "difficulty": "hard",
+    "question": "Un tout-petit prend le jouet d'un autre enfant. Quelles interprétations et réponses sont adaptées ?",
+    "choices": [
+      "Déduire une organisation d'attachement à partir de ce seul geste.",
+      "Interdire toute relation avec les autres enfants.",
+      "Verbaliser et poser une limite adaptée.",
+      "Conclure à une intention de vol identique à celle d'un adulte.",
+      "Explorer son intérêt pour l'objet et pour l'activité de l'autre."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un comportement isolé ne permet pas de classer l'attachement.",
+      "Les échanges peuvent devenir des occasions d'apprentissage accompagné.",
+      "Comprendre la conduite n'empêche pas d'accompagner les règles de partage.",
+      "Une telle attribution dépasse ce que l'observation permet d'affirmer.",
+      "La conduite peut traduire curiosité, imitation ou recherche de relation."
+    ],
+    "explanation": "A - Faux : Un comportement isolé ne permet pas de classer l'attachement. B - Faux : Les échanges peuvent devenir des occasions d'apprentissage accompagné. C - Vrai : Comprendre la conduite n'empêche pas d'accompagner les règles de partage. D - Faux : Une telle attribution dépasse ce que l'observation permet d'affirmer. E - Vrai : La conduite peut traduire curiosité, imitation ou recherche de relation.",
+    "flashcards": [
+      {
+        "id": "psydev_c042",
+        "theme": "Langage et premières interactions",
+        "front": "Que signifie étayer l'exploration d'un bébé ?",
+        "answers": [
+          "Ajuster l'aide : rendre l'objet accessible, attirer l'attention sur une caractéristique, soutenir un but et reconnaître la réussite, sans saturer l'enfant de sollicitations."
+        ],
+        "explanation": "Ajuster l'aide : rendre l'objet accessible, attirer l'attention sur une caractéristique, soutenir un but et reconnaître la réussite, sans saturer l'enfant de sollicitations.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q029",
+    "number": 29,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "easy",
+    "question": "Quel besoin la théorie de l'attachement de Bowlby met-elle au premier plan ?",
+    "choices": [
+      "L'absence définitive de toute séparation.",
+      "La recherche de proximité et de sécurité auprès de figures privilégiées.",
+      "La disparition du besoin de relation après l'enfance.",
+      "L'attachement exclusif et obligatoire à une personne de sexe féminin.",
+      "Uniquement la satisfaction alimentaire."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La sécurité peut permettre de s'éloigner et d'explorer.",
+      "Le lien sert notamment à obtenir protection et réconfort.",
+      "L'attachement reste mobilisable au cours de la vie.",
+      "Plusieurs adultes peuvent devenir des figures privilégiées.",
+      "Le besoin de relation ne se réduit pas à l'alimentation."
+    ],
+    "explanation": "A - Faux : La sécurité peut permettre de s'éloigner et d'explorer. B - Vrai : Le lien sert notamment à obtenir protection et réconfort. C - Faux : L'attachement reste mobilisable au cours de la vie. D - Faux : Plusieurs adultes peuvent devenir des figures privilégiées. E - Faux : Le besoin de relation ne se réduit pas à l'alimentation.",
+    "flashcards": [
+      {
+        "id": "psydev_c045",
+        "theme": "Attachement et soins",
+        "front": "Quel besoin primaire Bowlby décrit-il avec l'attachement ?",
+        "answers": [
+          "Un besoin de proximité, de protection et de réconfort auprès de figures privilégiées. Il ne découle pas seulement de la satisfaction alimentaire."
+        ],
+        "explanation": "Un besoin de proximité, de protection et de réconfort auprès de figures privilégiées. Il ne découle pas seulement de la satisfaction alimentaire.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c064",
+        "theme": "Attachement et soins",
+        "front": "Pourquoi une sociabilité indiscriminée n'est-elle pas une sécurité d'attachement avec tout le monde ?",
+        "answers": [
+          "Elle correspond à une approche peu différenciée et parfois excessivement familière des adultes, avec peu de vérification auprès d'une figure repère. Le sens dépend de l'histoire et du contexte."
+        ],
+        "explanation": "Elle correspond à une approche peu différenciée et parfois excessivement familière des adultes, avec peu de vérification auprès d'une figure repère. Le sens dépend de l'histoire et du contexte.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q030",
+    "number": 30,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "À propos de Spitz et des Robertson, quelles propositions sont exactes ?",
+    "choices": [
+      "L'hospitalisme signifie que toute hospitalisation est pathogène.",
+      "Un détachement apparent prouve que l'enfant ne souffre plus.",
+      "La dépression anaclitique est décrite après la séparation d'une figure auparavant investie.",
+      "Les Robertson décrivent protestation, désespoir et détachement apparent.",
+      "La carence affective est un synonyme d'autisme."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il désigne les effets de conditions de privation relationnelle prolongée.",
+      "Une reprise apparente d'activité ne suffit pas à conclure au bien-être.",
+      "Il s'agit d'une description historique de détresse et de retrait du nourrisson.",
+      "Ces phases éclairent certaines séparations prolongées sans constituer une séquence obligatoire.",
+      "Ces notions ne doivent pas être assimilées."
+    ],
+    "explanation": "A - Faux : Il désigne les effets de conditions de privation relationnelle prolongée. B - Faux : Une reprise apparente d'activité ne suffit pas à conclure au bien-être. C - Vrai : Il s'agit d'une description historique de détresse et de retrait du nourrisson. D - Vrai : Ces phases éclairent certaines séparations prolongées sans constituer une séquence obligatoire. E - Faux : Ces notions ne doivent pas être assimilées.",
+    "flashcards": [
+      {
+        "id": "psydev_c052",
+        "theme": "Attachement et soins",
+        "front": "Comment distinguer dépression anaclitique et hospitalisme chez Spitz ?",
+        "answers": [
+          "La dépression anaclitique est décrite après la séparation d'une figure investie. L'hospitalisme désigne les effets graves d'une privation relationnelle prolongée dans des conditions institutionnelles défaillantes."
+        ],
+        "explanation": "La dépression anaclitique est décrite après la séparation d'une figure investie. L'hospitalisme désigne les effets graves d'une privation relationnelle prolongée dans des conditions institutionnelles défaillantes.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c053",
+        "theme": "Attachement et soins",
+        "front": "Quelles phases les Robertson décrivent-ils lors de certaines séparations prolongées ?",
+        "answers": [
+          "Protestation, désespoir puis détachement apparent. Ce n'est pas une séquence obligatoire ; le détachement apparent ne prouve pas l'absence de souffrance."
+        ],
+        "explanation": "Protestation, désespoir puis détachement apparent. Ce n'est pas une séquence obligatoire ; le détachement apparent ne prouve pas l'absence de souffrance.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q031",
+    "number": 31,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "easy",
+    "question": "Que soulignent les expériences de Harlow présentées dans le cours ?",
+    "choices": [
+      "L'absence de lien entre réconfort et exploration.",
+      "Une démonstration directe de tous les besoins des bébés humains.",
+      "L'obligation d'un attachement humain à une personne unique.",
+      "L'inutilité de toute présence relationnelle si l'animal est nourri.",
+      "L'importance du contact et du réconfort au-delà de l'alimentation."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La sécurité peut au contraire favoriser l'exploration.",
+      "Les résultats animaux ne sont pas transposables sans limites.",
+      "Cette conclusion ne découle pas de ces expériences.",
+      "Les observations montrent justement l'importance d'autres besoins.",
+      "Les macaques peuvent préférer un substitut doux au dispositif seulement nourricier."
+    ],
+    "explanation": "A - Faux : La sécurité peut au contraire favoriser l'exploration. B - Faux : Les résultats animaux ne sont pas transposables sans limites. C - Faux : Cette conclusion ne découle pas de ces expériences. D - Faux : Les observations montrent justement l'importance d'autres besoins. E - Vrai : Les macaques peuvent préférer un substitut doux au dispositif seulement nourricier.",
+    "flashcards": [
+      {
+        "id": "psydev_c055",
+        "theme": "Attachement et soins",
+        "front": "Quelle idée centrale retenir de Harlow ?",
+        "answers": [
+          "Le contact et le réconfort comptent au-delà de l'alimentation ; la sécurité peut favoriser l'exploration. Les expériences sur les macaques ne définissent pas seules tous les besoins humains."
+        ],
+        "explanation": "Le contact et le réconfort comptent au-delà de l'alimentation ; la sécurité peut favoriser l'exploration. Les expériences sur les macaques ne définissent pas seules tous les besoins humains.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q032",
+    "number": 32,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Quelles associations sont correctes dans le modèle de Winnicott ?",
+    "choices": [
+      "Handling : apprentissage du raisonnement moral.",
+      "Object-presenting : présentation progressive du monde extérieur.",
+      "Holding : portage et contenance physiques et psychiques.",
+      "Holding : uniquement la force musculaire nécessaire pour porter.",
+      "Handling : manière de manipuler et de soigner le bébé."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Cette notion concerne les soins et la manipulation corporelle.",
+      "L'adulte introduit des objets et de la nouveauté dans la relation.",
+      "Il inclut le soutien du corps et un environnement suffisamment fiable.",
+      "La dimension psychique fait aussi partie de la notion.",
+      "Les soins corporels sont ajustés à ses rythmes et à ses réactions."
+    ],
+    "explanation": "A - Faux : Cette notion concerne les soins et la manipulation corporelle. B - Vrai : L'adulte introduit des objets et de la nouveauté dans la relation. C - Vrai : Il inclut le soutien du corps et un environnement suffisamment fiable. D - Faux : La dimension psychique fait aussi partie de la notion. E - Vrai : Les soins corporels sont ajustés à ses rythmes et à ses réactions.",
+    "flashcards": [
+      {
+        "id": "psydev_c056",
+        "theme": "Attachement et soins",
+        "front": "Que recouvre le holding de Winnicott ?",
+        "answers": [
+          "Le portage et la contenance physiques et psychiques : soutenir le corps, protéger d'excitations excessives et offrir un environnement suffisamment fiable."
+        ],
+        "explanation": "Le portage et la contenance physiques et psychiques : soutenir le corps, protéger d'excitations excessives et offrir un environnement suffisamment fiable.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c057",
+        "theme": "Attachement et soins",
+        "front": "Que recouvre le handling de Winnicott ?",
+        "answers": [
+          "La manière de manipuler et de soigner le bébé en respectant ses rythmes et ses réactions. Les soins corporels participent à l'appropriation du corps."
+        ],
+        "explanation": "La manière de manipuler et de soigner le bébé en respectant ses rythmes et ses réactions. Les soins corporels participent à l'appropriation du corps.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c058",
+        "theme": "Attachement et soins",
+        "front": "Que recouvre l'object-presenting ?",
+        "answers": [
+          "La présentation progressive d'objets et du monde extérieur dans la relation. L'adulte ajuste la nouveauté et soutient une ouverture au-delà de la relation duelle."
+        ],
+        "explanation": "La présentation progressive d'objets et du monde extérieur dans la relation. L'adulte ajuste la nouveauté et soutient une ouverture au-delà de la relation duelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q033",
+    "number": 33,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Concernant les phénomènes transitionnels, quelles propositions sont exactes ?",
+    "choices": [
+      "Un rituel ou une mélodie peut remplir une fonction transitionnelle.",
+      "Son emploi suffit à diagnostiquer un trouble de l'attachement.",
+      "L'objet transitionnel remplace toute relation humaine.",
+      "Un objet investi peut aider l'enfant à supporter l'absence.",
+      "Toute peluche achetée est automatiquement un objet transitionnel."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les phénomènes transitionnels dépassent les seuls objets matériels.",
+      "Il ne constitue pas un test diagnostique.",
+      "Il soutient une continuité, sans supprimer le besoin de relation.",
+      "Sa fonction dépend de l'usage et de l'investissement de l'enfant.",
+      "La fonction ne vient pas de l'achat ni de la désignation par l'adulte."
+    ],
+    "explanation": "A - Vrai : Les phénomènes transitionnels dépassent les seuls objets matériels. B - Faux : Il ne constitue pas un test diagnostique. C - Faux : Il soutient une continuité, sans supprimer le besoin de relation. D - Vrai : Sa fonction dépend de l'usage et de l'investissement de l'enfant. E - Faux : La fonction ne vient pas de l'achat ni de la désignation par l'adulte.",
+    "flashcards": [
+      {
+        "id": "psydev_c059",
+        "theme": "Attachement et soins",
+        "front": "Pourquoi une peluche n'est-elle pas automatiquement un objet transitionnel ?",
+        "answers": [
+          "La fonction dépend de l'investissement de l'enfant, pas de l'achat. Un objet, une mélodie ou un rituel peut soutenir une continuité pendant l'absence."
+        ],
+        "explanation": "La fonction dépend de l'investissement de l'enfant, pas de l'achat. Un objet, une mélodie ou un rituel peut soutenir une continuité pendant l'absence.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q034",
+    "number": 34,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "hard",
+    "question": "Un enfant explore, revient chercher du réconfort après une frayeur, puis reprend le jeu. Quelles notions éclairent cette conduite ?",
+    "choices": [
+      "Cet épisode suffit pour poser un diagnostic définitif d'attachement.",
+      "La figure peut servir de base de sécurité.",
+      "Explorer implique que le lien d'attachement a disparu.",
+      "L'alarme peut activer des comportements d'attachement.",
+      "Le besoin de proximité prouve une incapacité d'autonomie."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une seule séquence ordinaire ne remplace pas une procédure d'observation.",
+      "La disponibilité de l'adulte soutient exploration et retour vers lui.",
+      "Exploration et attachement se coordonnent sans s'exclure.",
+      "La recherche de protection augmente en cas de détresse.",
+      "La sécurité relationnelle peut au contraire soutenir l'exploration."
+    ],
+    "explanation": "A - Faux : Une seule séquence ordinaire ne remplace pas une procédure d'observation. B - Vrai : La disponibilité de l'adulte soutient exploration et retour vers lui. C - Faux : Exploration et attachement se coordonnent sans s'exclure. D - Vrai : La recherche de protection augmente en cas de détresse. E - Faux : La sécurité relationnelle peut au contraire soutenir l'exploration.",
+    "flashcards": [
+      {
+        "id": "psydev_c048",
+        "theme": "Attachement et soins",
+        "front": "Comment fonctionne la base de sécurité ?",
+        "answers": [
+          "La confiance dans la disponibilité d'une figure favorise l'exploration. En cas d'alarme, la personne recherche du réconfort puis peut reprendre son activité."
+        ],
+        "explanation": "La confiance dans la disponibilité d'une figure favorise l'exploration. En cas d'alarme, la personne recherche du réconfort puis peut reprendre son activité.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c046",
+        "theme": "Attachement et soins",
+        "front": "Qui peut devenir une figure d'attachement ?",
+        "answers": [
+          "Un adulte familier engagé de façon régulière dans des interactions vivantes et répondant aux signaux de l'enfant. Ce peut être un parent ou un autre adulte qui prend soin de lui."
+        ],
+        "explanation": "Un adulte familier engagé de façon régulière dans des interactions vivantes et répondant aux signaux de l'enfant. Ce peut être un parent ou un autre adulte qui prend soin de lui.",
+        "preserveReviewedText": true,
+        "displayFront": "Qui peut assurer une fonction d'attachement auprès de l'enfant ?"
+      },
+      {
+        "id": "psydev_c051",
+        "theme": "Attachement et soins",
+        "front": "Qu'est-ce que le partenariat corrigé quant au but dans l'attachement ?",
+        "answers": [
+          "L'enfant prend davantage en compte les intentions de l'autre. On peut expliquer, négocier et organiser les modalités d'une séparation et du retour, avec le développement du langage et des représentations."
+        ],
+        "explanation": "L'enfant prend davantage en compte les intentions de l'autre. On peut expliquer, négocier et organiser les modalités d'une séparation et du retour, avec le développement du langage et des représentations.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c054",
+        "theme": "Attachement et soins",
+        "front": "Qu'est-ce que l'empreinte décrite par Lorenz ?",
+        "answers": [
+          "Chez certaines espèces, un apprentissage précoce oriente une conduite vers un objet rencontré dans une période sensible. Ce modèle animal ne se superpose pas directement à l'attachement humain."
+        ],
+        "explanation": "Chez certaines espèces, un apprentissage précoce oriente une conduite vers un objet rencontré dans une période sensible. Ce modèle animal ne se superpose pas directement à l'attachement humain.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q035",
+    "number": 35,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "easy",
+    "question": "Vocabulaire : que désignent les modèles internes opérants ?",
+    "choices": [
+      "Des catégories anatomiques du cerveau.",
+      "Les seules règles conscientes apprises à l'école.",
+      "Des représentations de soi, d'autrui et des interactions permettant d'anticiper les relations.",
+      "Un système permettant de supprimer toute émotion.",
+      "Des souvenirs qui déterminent irréversiblement toute la vie."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Ce sont des concepts de représentation relationnelle.",
+      "Ils commencent à se construire avant les apprentissages scolaires.",
+      "Ils se construisent à partir des expériences relationnelles.",
+      "Ils orientent les attentes et les conduites, sans abolir les émotions.",
+      "Ils peuvent se modifier avec les expériences et les conditions de vie."
+    ],
+    "explanation": "A - Faux : Ce sont des concepts de représentation relationnelle. B - Faux : Ils commencent à se construire avant les apprentissages scolaires. C - Vrai : Ils se construisent à partir des expériences relationnelles. D - Faux : Ils orientent les attentes et les conduites, sans abolir les émotions. E - Faux : Ils peuvent se modifier avec les expériences et les conditions de vie.",
+    "flashcards": [
+      {
+        "id": "psydev_c050",
+        "theme": "Attachement et soins",
+        "front": "Que sont les modèles internes opérants ?",
+        "answers": [
+          "Des représentations de soi, d'autrui et des interactions construites à partir des expériences. Ils permettent d'anticiper les relations et peuvent évoluer avec de nouvelles expériences."
+        ],
+        "explanation": "Des représentations de soi, d'autrui et des interactions construites à partir des expériences. Ils permettent d'anticiper les relations et peuvent évoluer avec de nouvelles expériences.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q036",
+    "number": 36,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Dans la situation étrange d'Ainsworth, quels éléments sont importants ?",
+    "choices": [
+      "Les catégories décrivent une organisation relationnelle dans des conditions précises.",
+      "Les séparations et les retrouvailles font partie de la procédure.",
+      "La procédure consiste uniquement à interroger les parents sur leurs intentions.",
+      "Un profil appartient nécessairement à l'enfant indépendamment de toute relation.",
+      "L'absence de pleurs ne suffit pas à conclure à un attachement sécure."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elles ne sont pas des diagnostics psychiatriques définitifs.",
+      "L'observation porte notamment sur l'usage de la figure au retour.",
+      "Elle comporte des épisodes d'observation standardisés.",
+      "La relation spécifique et le contexte comptent.",
+      "Les stratégies et le réconfort doivent aussi être considérés."
+    ],
+    "explanation": "A - Vrai : Elles ne sont pas des diagnostics psychiatriques définitifs. B - Vrai : L'observation porte notamment sur l'usage de la figure au retour. C - Faux : Elle comporte des épisodes d'observation standardisés. D - Faux : La relation spécifique et le contexte comptent. E - Vrai : Les stratégies et le réconfort doivent aussi être considérés.",
+    "flashcards": [
+      {
+        "id": "psydev_c060",
+        "theme": "Attachement et soins",
+        "front": "Que recherche-t-on notamment dans la situation étrange d'Ainsworth ?",
+        "answers": [
+          "La façon dont l'enfant utilise la figure comme source de réconfort, particulièrement aux retrouvailles. La procédure comporte des épisodes standardisés de présence, séparation et retour."
+        ],
+        "explanation": "La façon dont l'enfant utilise la figure comme source de réconfort, particulièrement aux retrouvailles. La procédure comporte des épisodes standardisés de présence, séparation et retour.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q037",
+    "number": 37,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Quelles descriptions distinguent les organisations d'attachement ?",
+    "choices": [
+      "Le désorganisé prouve à lui seul une maltraitance.",
+      "L'évitant ne ressent nécessairement aucune détresse.",
+      "L'ambivalent ne cherche jamais de proximité.",
+      "Le désorganisé peut comporter des conduites contradictoires ou interrompues.",
+      "L'ambivalent-résistant associe recherche de contact et difficulté de réconfort."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cette observation ne suffit pas à établir une cause particulière.",
+      "Une faible manifestation visible ne prouve pas une absence d'émotion.",
+      "La recherche de contact coexiste justement avec la résistance.",
+      "Une stratégie cohérente peut manquer à certains moments.",
+      "La détresse peut persister avec résistance ou colère aux retrouvailles."
+    ],
+    "explanation": "A - Faux : Cette observation ne suffit pas à établir une cause particulière. B - Faux : Une faible manifestation visible ne prouve pas une absence d'émotion. C - Faux : La recherche de contact coexiste justement avec la résistance. D - Vrai : Une stratégie cohérente peut manquer à certains moments. E - Vrai : La détresse peut persister avec résistance ou colère aux retrouvailles.",
+    "flashcards": [
+      {
+        "id": "psydev_c061",
+        "theme": "Attachement et soins",
+        "front": "Comment distinguer les quatre organisations d'attachement étudiées ?",
+        "answers": [
+          "Sécure : réconfort puis exploration. Évitant : contact peu recherché ou évité. Ambivalent-résistant : contact recherché avec résistance et réconfort difficile. Désorganisé : conduites contradictoires ou interrompues, sans stratégie cohérente à certains moments."
+        ],
+        "explanation": "Sécure : réconfort puis exploration. Évitant : contact peu recherché ou évité. Ambivalent-résistant : contact recherché avec résistance et réconfort difficile. Désorganisé : conduites contradictoires ou interrompues, sans stratégie cohérente à certains moments.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c049",
+        "theme": "Attachement et soins",
+        "front": "Quelles six émotions de base le cours reprend-il selon Ekman ?",
+        "answers": [
+          "Joie, colère, tristesse, peur, dégoût et surprise. Cette liste appartient à un modèle ; une émotion désagréable peut avoir une fonction adaptative."
+        ],
+        "explanation": "Joie, colère, tristesse, peur, dégoût et surprise. Cette liste appartient à un modèle ; une émotion désagréable peut avoir une fonction adaptative.",
+        "preserveReviewedText": true,
+        "displayFront": "Quelles sont les six émotions de base du modèle d'Ekman ?"
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q038",
+    "number": 38,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "hard",
+    "question": "En pédiatrie, quelles mesures peuvent soutenir la sécurité relationnelle ?",
+    "choices": [
+      "Favoriser des repères familiers et la présence des proches lorsque les soins le permettent.",
+      "Prévenir, expliquer et rechercher aussi douleur ou inconfort.",
+      "Aider les proches à reconnaître les signaux propres à leur enfant.",
+      "Assimiler systématiquement les pleurs à un caprice.",
+      "Changer constamment d'interlocuteur pour empêcher tout lien."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La continuité peut aider l'enfant face à un environnement inconnu.",
+      "La lecture relationnelle ne remplace pas l'évaluation des besoins somatiques.",
+      "Des signaux discrets peuvent demander un ajustement de la réponse.",
+      "La détresse peut avoir plusieurs origines qui doivent être explorées.",
+      "La prévisibilité et la continuité sont plutôt recherchées."
+    ],
+    "explanation": "A - Vrai : La continuité peut aider l'enfant face à un environnement inconnu. B - Vrai : La lecture relationnelle ne remplace pas l'évaluation des besoins somatiques. C - Vrai : Des signaux discrets peuvent demander un ajustement de la réponse. D - Faux : La détresse peut avoir plusieurs origines qui doivent être explorées. E - Faux : La prévisibilité et la continuité sont plutôt recherchées.",
+    "flashcards": [
+      {
+        "id": "psydev_c062",
+        "theme": "Attachement et soins",
+        "front": "Quels appuis relationnels proposer à un enfant hospitalisé ?",
+        "answers": [
+          "Présence des proches selon les possibilités, repères familiers, continuité des soignants, explications adaptées et doudou habituel si possible. Rechercher aussi douleur et inconfort."
+        ],
+        "explanation": "Présence des proches selon les possibilités, repères familiers, continuité des soignants, explications adaptées et doudou habituel si possible. Rechercher aussi douleur et inconfort.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q039",
+    "number": 39,
+    "courseId": "psychologie_developpement",
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Quelles attitudes sont adaptées face au deuil, à l'adoption ou au placement d'un enfant ?",
+    "choices": [
+      "Expliquer la mort avec des mots concrets et adaptés, en dégageant l'enfant de la responsabilité.",
+      "Une famille accueillante répare immédiatement toutes les expériences antérieures.",
+      "Soutenir les nouveaux liens sans disqualifier l'histoire et les origines.",
+      "Un enfant placé doit toujours manifester immédiatement de la gratitude.",
+      "Une sociabilité très familière avec tous les adultes prouve une sécurité d'attachement généralisée."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des formulations ambiguës peuvent entretenir des incompréhensions.",
+      "Stabilité, accompagnement et soins peuvent rester nécessaires.",
+      "La continuité identitaire et relationnelle mérite d'être préservée.",
+      "Ses réactions dépendent de son histoire et de ses attentes relationnelles.",
+      "La sociabilité indiscriminée peut au contraire demander une analyse attentive."
+    ],
+    "explanation": "A - Vrai : Des formulations ambiguës peuvent entretenir des incompréhensions. B - Faux : Stabilité, accompagnement et soins peuvent rester nécessaires. C - Vrai : La continuité identitaire et relationnelle mérite d'être préservée. D - Faux : Ses réactions dépendent de son histoire et de ses attentes relationnelles. E - Faux : La sociabilité indiscriminée peut au contraire demander une analyse attentive.",
+    "flashcards": [
+      {
+        "id": "psydev_c063",
+        "theme": "Attachement et soins",
+        "front": "Comment parler de la mort à un enfant ?",
+        "answers": [
+          "Employer des mots concrets adaptés à l'âge, dire que la personne est morte et ne reviendra pas, accueillir les questions et préciser que l'enfant n'en est pas responsable."
+        ],
+        "explanation": "Employer des mots concrets adaptés à l'âge, dire que la personne est morte et ne reviendra pas, accueillir les questions et préciser que l'enfant n'en est pas responsable.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q040",
+    "number": 40,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "easy",
+    "question": "Quelle conduite illustre le jeu symbolique ?",
+    "choices": [
+      "Contracter un muscle par réflexe.",
+      "Faire tomber un objet uniquement pour écouter le bruit produit.",
+      "Reconnaître uniquement la différence de volume entre deux sons.",
+      "Faire semblant de soigner une poupée avec un objet utilisé comme stéthoscope.",
+      "Garder quelques chiffres en tête pour les répéter."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un réflexe ne constitue pas en lui-même une représentation symbolique.",
+      "Cette exploration n'est pas nécessairement un faire-semblant.",
+      "Il s'agit de discrimination sensorielle.",
+      "L'objet et l'action représentent autre chose que leur réalité immédiate.",
+      "Cette tâche relève du maintien mnésique."
+    ],
+    "explanation": "A - Faux : Un réflexe ne constitue pas en lui-même une représentation symbolique. B - Faux : Cette exploration n'est pas nécessairement un faire-semblant. C - Faux : Il s'agit de discrimination sensorielle. D - Vrai : L'objet et l'action représentent autre chose que leur réalité immédiate. E - Faux : Cette tâche relève du maintien mnésique.",
+    "flashcards": [
+      {
+        "id": "psydev_c065",
+        "theme": "Psychologie de l’enfant",
+        "front": "Que permet la fonction sémiotique ?",
+        "answers": [
+          "Évoquer un objet, une personne ou un événement au moyen de signes ou de symboles, notamment en leur absence : langage, jeu symbolique, imitation différée, dessin et images mentales."
+        ],
+        "explanation": "Évoquer un objet, une personne ou un événement au moyen de signes ou de symboles, notamment en leur absence : langage, jeu symbolique, imitation différée, dessin et images mentales.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q041",
+    "number": 41,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "Quelles associations de vocabulaire sont exactes ?",
+    "choices": [
+      "Sur-extension : appeler « chat » tous les animaux à quatre pattes.",
+      "Lexique : organisation exclusive de l'ordre des mots.",
+      "Sous-extension : utiliser un mot pour tous les objets du monde.",
+      "Sur-extension : ne parler qu'à voix très forte.",
+      "Sous-extension : appeler « chien » le seul caniche familial."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le mot est étendu au-delà de sa catégorie conventionnelle.",
+      "L'organisation grammaticale relève de la syntaxe.",
+      "Cela décrit une extension excessive, non trop restreinte.",
+      "Le terme concerne la catégorie désignée, pas l'intensité vocale.",
+      "Le mot est utilisé pour une partie trop étroite de sa catégorie."
+    ],
+    "explanation": "A - Vrai : Le mot est étendu au-delà de sa catégorie conventionnelle. B - Faux : L'organisation grammaticale relève de la syntaxe. C - Faux : Cela décrit une extension excessive, non trop restreinte. D - Faux : Le terme concerne la catégorie désignée, pas l'intensité vocale. E - Vrai : Le mot est utilisé pour une partie trop étroite de sa catégorie.",
+    "flashcards": [
+      {
+        "id": "psydev_c066",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer sous-extension et sur-extension d'un mot ?",
+        "answers": [
+          "Sous-extension : catégorie trop étroite, « chien » pour le seul caniche familial. Sur-extension : catégorie trop large, « chat » pour tous les animaux à quatre pattes."
+        ],
+        "explanation": "Sous-extension : catégorie trop étroite, « chien » pour le seul caniche familial. Sur-extension : catégorie trop large, « chat » pour tous les animaux à quatre pattes.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q042",
+    "number": 42,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "Concernant le langage de l'enfant, quelles propositions sont justes ?",
+    "choices": [
+      "La compréhension littérale garantit la maîtrise de toute ironie.",
+      "La pragmatique concerne l'usage du langage selon la situation et l'interlocuteur.",
+      "La capacité métasyntaxique permet de réfléchir à la construction des phrases.",
+      "La pragmatique débute seulement à l'adolescence.",
+      "La syntaxe désigne uniquement le nombre de mots connus."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les sens non littéraux exigent des compétences supplémentaires.",
+      "Demander, clarifier et adapter sa parole en relèvent.",
+      "Elle dépasse le seul usage spontané d'une phrase.",
+      "Des usages de demande et de clarification se développent bien avant.",
+      "Elle concerne l'organisation grammaticale et les relations entre mots."
+    ],
+    "explanation": "A - Faux : Les sens non littéraux exigent des compétences supplémentaires. B - Vrai : Demander, clarifier et adapter sa parole en relèvent. C - Vrai : Elle dépasse le seul usage spontané d'une phrase. D - Faux : Des usages de demande et de clarification se développent bien avant. E - Faux : Elle concerne l'organisation grammaticale et les relations entre mots.",
+    "flashcards": [
+      {
+        "id": "psydev_c067",
+        "theme": "Psychologie de l’enfant",
+        "front": "Que signifie une capacité métasyntaxique ?",
+        "answers": [
+          "Pouvoir réfléchir sur l'organisation grammaticale des phrases, au-delà de leur usage spontané. Ces capacités se renforcent notamment avec les apprentissages scolaires."
+        ],
+        "explanation": "Pouvoir réfléchir sur l'organisation grammaticale des phrases, au-delà de leur usage spontané. Ces capacités se renforcent notamment avec les apprentissages scolaires.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c068",
+        "theme": "Psychologie de l’enfant",
+        "front": "Que recouvre la pragmatique du langage ?",
+        "answers": [
+          "L'usage du langage selon le but, l'interlocuteur et la situation : demander, clarifier, préciser ou adapter la forme d'une demande. Elle commence à se développer avant l'école."
+        ],
+        "explanation": "L'usage du langage selon le but, l'interlocuteur et la situation : demander, clarifier, préciser ou adapter la forme d'une demande. Elle commence à se développer avant l'école.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q043",
+    "number": 43,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "hard",
+    "question": "Quelles propositions concernant l'apprentissage de la lecture sont exactes ?",
+    "choices": [
+      "Déchiffrer correctement garantit la compréhension d'un texte.",
+      "Écrire correctement un pseudo-mot exclut toute dyslexie.",
+      "Ces voies sont deux diagnostics de troubles du calcul.",
+      "La voie phonologique d'assemblage relie unités écrites et unités sonores.",
+      "La voie lexicale permet de reconnaître des mots écrits déjà connus."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La compréhension mobilise aussi vocabulaire, liens et contexte.",
+      "Un test isolé ne suffit pas à exclure un trouble.",
+      "Elles décrivent des traitements du langage écrit.",
+      "Elle mobilise les correspondances entre graphèmes et phonèmes.",
+      "Elle s'appuie sur des représentations orthographiques mémorisées."
+    ],
+    "explanation": "A - Faux : La compréhension mobilise aussi vocabulaire, liens et contexte. B - Faux : Un test isolé ne suffit pas à exclure un trouble. C - Faux : Elles décrivent des traitements du langage écrit. D - Vrai : Elle mobilise les correspondances entre graphèmes et phonèmes. E - Vrai : Elle s'appuie sur des représentations orthographiques mémorisées.",
+    "flashcards": [
+      {
+        "id": "psydev_c069",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer les deux voies de lecture présentées ?",
+        "answers": [
+          "La voie phonologique d'assemblage mobilise les correspondances entre unités écrites et sons. La voie lexicale identifie des mots connus grâce aux représentations orthographiques mémorisées. Déchiffrer ne garantit pas comprendre."
+        ],
+        "explanation": "La voie phonologique d'assemblage mobilise les correspondances entre unités écrites et sons. La voie lexicale identifie des mots connus grâce aux représentations orthographiques mémorisées. Déchiffrer ne garantit pas comprendre.",
+        "preserveReviewedText": true,
+        "displayFront": "Comment distinguer la voie phonologique et la voie lexicale de lecture ?"
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q044",
+    "number": 44,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "easy",
+    "question": "Quelle proposition décrit le réalisme fortuit dans le dessin de l'enfant ?",
+    "choices": [
+      "Attribuer après coup une signification à une trace d'abord produite sans cette intention.",
+      "Maîtriser d'emblée les proportions et la perspective.",
+      "Ne jamais pouvoir nommer ce qui a été dessiné.",
+      "Produire un dessin qui permet à lui seul un diagnostic psychologique.",
+      "Dessiner exclusivement ce qui est visible en perspective adulte."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L'enfant reconnaît ou invente ensuite ce que son tracé représente.",
+      "Ces propriétés se précisent progressivement.",
+      "Une signification peut justement être donnée après coup.",
+      "Une particularité isolée ne constitue pas un diagnostic.",
+      "Cela ne définit pas le réalisme fortuit."
+    ],
+    "explanation": "A - Vrai : L'enfant reconnaît ou invente ensuite ce que son tracé représente. B - Faux : Ces propriétés se précisent progressivement. C - Faux : Une signification peut justement être donnée après coup. D - Faux : Une particularité isolée ne constitue pas un diagnostic. E - Faux : Cela ne définit pas le réalisme fortuit.",
+    "flashcards": [
+      {
+        "id": "psydev_c070",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer réalisme fortuit et réalisme intellectuel dans le dessin ?",
+        "answers": [
+          "Fortuit : donner après coup une signification au tracé. Intellectuel : dessiner ce que l'on sait plutôt que seulement ce que l'on voit, par exemple une représentation en transparence."
+        ],
+        "explanation": "Fortuit : donner après coup une signification au tracé. Intellectuel : dessiner ce que l'on sait plutôt que seulement ce que l'on voit, par exemple une représentation en transparence.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q045",
+    "number": 45,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "Dans le modèle de Piaget, quelles caractéristiques appartiennent à la pensée préopératoire ?",
+    "choices": [
+      "L'absence de toute représentation mentale.",
+      "La maîtrise universelle de toutes les opérations abstraites.",
+      "Une réversibilité logique encore incomplète.",
+      "Une difficulté à se décentrer de son propre point de vue.",
+      "L'usage de représentations symboliques parfois très personnelles."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le développement des représentations est au contraire central à cette période.",
+      "La pensée formelle est située plus tard dans le modèle.",
+      "Le raisonnement reste souvent centré sur certaines apparences.",
+      "L'égocentrisme cognitif n'est pas un jugement moral d'égoïsme.",
+      "Un objet peut représenter autre chose dans un jeu."
+    ],
+    "explanation": "A - Faux : Le développement des représentations est au contraire central à cette période. B - Faux : La pensée formelle est située plus tard dans le modèle. C - Vrai : Le raisonnement reste souvent centré sur certaines apparences. D - Vrai : L'égocentrisme cognitif n'est pas un jugement moral d'égoïsme. E - Vrai : Un objet peut représenter autre chose dans un jeu.",
+    "flashcards": [
+      {
+        "id": "psydev_c071",
+        "theme": "Psychologie de l’enfant",
+        "front": "Qu'est-ce que l'égocentrisme cognitif chez Piaget ?",
+        "answers": [
+          "Une difficulté à se décentrer de son propre point de vue. Il ne désigne pas une volonté d'égoïsme ni une intention de nuire."
+        ],
+        "explanation": "Une difficulté à se décentrer de son propre point de vue. Il ne désigne pas une volonté d'égoïsme ni une intention de nuire.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q046",
+    "number": 46,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "Quelles définitions sont correctes dans le modèle piagétien ?",
+    "choices": [
+      "Égocentrisme cognitif : vouloir délibérément nuire aux autres.",
+      "Réalisme enfantin : traiter des phénomènes mentaux comme des choses concrètes.",
+      "Décentration : ignorer toutes les informations d'autrui.",
+      "Artificialisme : comprendre exactement l'origine scientifique de tous les phénomènes.",
+      "Animisme : attribuer vie ou intentions à des choses."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il concerne une difficulté de prise de perspective.",
+      "Un rêve peut être vécu comme possédant une réalité extérieure.",
+      "Elle permet au contraire de considérer d'autres dimensions ou points de vue.",
+      "Il renvoie plutôt à l'idée que les phénomènes sont fabriqués par l'homme.",
+      "L'enfant peut traiter certains objets comme des êtres vivants."
+    ],
+    "explanation": "A - Faux : Il concerne une difficulté de prise de perspective. B - Vrai : Un rêve peut être vécu comme possédant une réalité extérieure. C - Faux : Elle permet au contraire de considérer d'autres dimensions ou points de vue. D - Faux : Il renvoie plutôt à l'idée que les phénomènes sont fabriqués par l'homme. E - Vrai : L'enfant peut traiter certains objets comme des êtres vivants.",
+    "flashcards": [
+      {
+        "id": "psydev_c072",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer animisme, artificialisme et réalisme enfantin ?",
+        "answers": [
+          "Animisme : attribuer vie ou intentions aux choses. Artificialisme : les penser fabriquées par l'homme. Réalisme : traiter des phénomènes mentaux comme des réalités concrètes extérieures."
+        ],
+        "explanation": "Animisme : attribuer vie ou intentions aux choses. Artificialisme : les penser fabriquées par l'homme. Réalisme : traiter des phénomènes mentaux comme des réalités concrètes extérieures.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q047",
+    "number": 47,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "Deux rangées contiennent chacune cinq jetons. On écarte les jetons de l'une sans en ajouter. Quelles propositions sont justes ?",
+    "choices": [
+      "Une réponse incorrecte suffit à diagnostiquer un trouble intellectuel.",
+      "La rangée la plus longue contient nécessairement plus de jetons.",
+      "Se fonder seulement sur la longueur peut conduire à répondre qu'il y en a davantage.",
+      "La conservation numérique permet de comprendre que le nombre reste identique.",
+      "Cette transformation démontre une conservation du poids."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La tâche, l'âge, la compréhension et le contexte doivent être considérés.",
+      "Longueur apparente et nombre ne se confondent pas.",
+      "L'apparence perceptive peut dominer le raisonnement.",
+      "L'espacement n'a pas modifié le nombre de jetons.",
+      "La tâche porte sur le nombre, pas sur une pesée."
+    ],
+    "explanation": "A - Faux : La tâche, l'âge, la compréhension et le contexte doivent être considérés. B - Faux : Longueur apparente et nombre ne se confondent pas. C - Vrai : L'apparence perceptive peut dominer le raisonnement. D - Vrai : L'espacement n'a pas modifié le nombre de jetons. E - Faux : La tâche porte sur le nombre, pas sur une pesée.",
+    "flashcards": [
+      {
+        "id": "psydev_c074",
+        "theme": "Psychologie de l’enfant",
+        "front": "Que signifie conserver une quantité malgré une transformation ?",
+        "answers": [
+          "Comprendre qu'une propriété reste identique si la transformation ne la modifie pas : écarter des jetons sans en ajouter ne change pas le nombre ; aplatir une boule sans retirer de pâte ne change pas la quantité de matière."
+        ],
+        "explanation": "Comprendre qu'une propriété reste identique si la transformation ne la modifie pas : écarter des jetons sans en ajouter ne change pas le nombre ; aplatir une boule sans retirer de pâte ne change pas la quantité de matière.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q048",
+    "number": 48,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "hard",
+    "question": "Quelles propositions décrivent les opérations concrètes ?",
+    "choices": [
+      "L'inclusion permet de comprendre que les roses font partie de la classe des fleurs.",
+      "La transitivité permet de déduire A > C si A > B et B > C.",
+      "La sériation consiste à attribuer des intentions à une pierre.",
+      "La réversibilité signifie oublier l'action effectuée.",
+      "La manipulation concrète empêche la compréhension mathématique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une sous-classe est incluse dans une classe plus vaste.",
+      "La relation est déduite de deux relations compatibles.",
+      "La sériation ordonne des éléments selon une relation.",
+      "Elle permet d'en représenter l'annulation ou la compensation.",
+      "Elle peut au contraire aider à construire le sens des opérations."
+    ],
+    "explanation": "A - Vrai : Une sous-classe est incluse dans une classe plus vaste. B - Vrai : La relation est déduite de deux relations compatibles. C - Faux : La sériation ordonne des éléments selon une relation. D - Faux : Elle permet d'en représenter l'annulation ou la compensation. E - Faux : Elle peut au contraire aider à construire le sens des opérations.",
+    "flashcards": [
+      {
+        "id": "psydev_c073",
+        "theme": "Psychologie de l’enfant",
+        "front": "Qu'apportent décentration et réversibilité dans les opérations concrètes ?",
+        "answers": [
+          "L'enfant prend en compte plusieurs dimensions ou points de vue et se représente l'annulation ou la compensation d'une transformation. Le raisonnement reste soutenu par des situations concrètes."
+        ],
+        "explanation": "L'enfant prend en compte plusieurs dimensions ou points de vue et se représente l'annulation ou la compensation d'une transformation. Le raisonnement reste soutenu par des situations concrètes.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c075",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer inclusion, sériation et transitivité ?",
+        "answers": [
+          "Inclusion : une sous-classe appartient à une classe. Sériation : ordonner selon une relation. Transitivité : déduire A > C si A > B et B > C."
+        ],
+        "explanation": "Inclusion : une sous-classe appartient à une classe. Sériation : ordonner selon une relation. Transitivité : déduire A > C si A > B et B > C.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c081",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer hétéronomie et autonomie ?",
+        "answers": [
+          "Dans l'hétéronomie, la règle est reçue d'autrui. L'autonomie permet de se l'approprier et de se déterminer progressivement. Elle n'exclut ni limites ni soutien."
+        ],
+        "explanation": "Dans l'hétéronomie, la règle est reçue d'autrui. L'autonomie permet de se l'approprier et de se déterminer progressivement. Elle n'exclut ni limites ni soutien.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q049",
+    "number": 49,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "hard",
+    "question": "Quelles propositions décrivent la théorie de l'esprit ?",
+    "choices": [
+      "Elle signifie connaître avec certitude toutes les pensées d'autrui.",
+      "Elle permet d'attribuer à autrui des états mentaux.",
+      "Elle se réduit à ressentir la même émotion que quelqu'un.",
+      "Une croyance du second ordre porte sur ce qu'une personne pense de la pensée d'une autre.",
+      "Comprendre une fausse croyance exige de distinguer son savoir de celui d'autrui."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il s'agit d'inférences, qui peuvent être erronées.",
+      "Désirs, connaissances, intentions et croyances en font partie.",
+      "Contagion émotionnelle et attribution d'états mentaux sont distinctes.",
+      "Il s'agit par exemple de comprendre « il croit qu'elle pense que… ».",
+      "L'autre agit selon les informations qu'il possède."
+    ],
+    "explanation": "A - Faux : Il s'agit d'inférences, qui peuvent être erronées. B - Vrai : Désirs, connaissances, intentions et croyances en font partie. C - Faux : Contagion émotionnelle et attribution d'états mentaux sont distinctes. D - Vrai : Il s'agit par exemple de comprendre « il croit qu'elle pense que… ». E - Vrai : L'autre agit selon les informations qu'il possède.",
+    "flashcards": [
+      {
+        "id": "psydev_c076",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment distinguer théorie de l'esprit et empathie ?",
+        "answers": [
+          "La théorie de l'esprit attribue des états mentaux. L'empathie concerne la compréhension ou le partage d'aspects de l'expérience affective d'autrui en conservant une distinction entre soi et l'autre."
+        ],
+        "explanation": "La théorie de l'esprit attribue des états mentaux. L'empathie concerne la compréhension ou le partage d'aspects de l'expérience affective d'autrui en conservant une distinction entre soi et l'autre.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c077",
+        "theme": "Psychologie de l’enfant",
+        "front": "Comment raisonner dans une tâche de fausse croyance ?",
+        "answers": [
+          "Prédire la conduite à partir des informations possédées par le personnage, et non du savoir de l'observateur. Une personne peut chercher un objet là où elle croit encore qu'il se trouve."
+        ],
+        "explanation": "Prédire la conduite à partir des informations possédées par le personnage, et non du savoir de l'observateur. Une personne peut chercher un objet là où elle croit encore qu'il se trouve.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c078",
+        "theme": "Psychologie de l’enfant",
+        "front": "Qu'est-ce qu'une croyance du second ordre ?",
+        "answers": [
+          "Une représentation de ce qu'une personne croit concernant la pensée d'une autre : « il croit qu'elle pense que… ». Les exigences et les âges de réussite varient selon les tâches."
+        ],
+        "explanation": "Une représentation de ce qu'une personne croit concernant la pensée d'une autre : « il croit qu'elle pense que… ». Les exigences et les âges de réussite varient selon les tâches.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "psydev_c079",
+        "theme": "Psychologie de l’enfant",
+        "front": "Pourquoi la contagion émotionnelle ne suffit-elle pas à prouver une empathie élaborée ?",
+        "answers": [
+          "Une émotion peut déclencher une résonance affective avant que le sujet puisse comprendre pleinement le point de vue d'autrui et distinguer les expériences."
+        ],
+        "explanation": "Une émotion peut déclencher une résonance affective avant que le sujet puisse comprendre pleinement le point de vue d'autrui et distinguer les expériences.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q050",
+    "number": 50,
+    "courseId": "psychologie_developpement",
+    "theme": "Psychologie de l’enfant",
+    "difficulty": "medium",
+    "question": "À propos de la socialisation de l'enfant, quelles propositions sont exactes ?",
+    "choices": [
+      "L'autonomie se construit progressivement avec un cadre et du soutien.",
+      "L'hétéronomie signifie se donner à soi-même toute règle.",
+      "Famille, pairs, école et médias peuvent y participer.",
+      "Une préférence de jeu suffit pour diagnostiquer l'identité d'un enfant.",
+      "Une association entre ressources culturelles et réussite détermine le devenir de chaque enfant."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle ne signifie pas abandonner l'enfant à lui-même.",
+      "Elle signifie recevoir la règle d'une autorité extérieure.",
+      "Les expériences sociales sont multiples.",
+      "Les préférences isolées ne constituent pas un diagnostic.",
+      "Une relation statistique ne prédit pas individuellement une trajectoire."
+    ],
+    "explanation": "A - Vrai : Elle ne signifie pas abandonner l'enfant à lui-même. B - Faux : Elle signifie recevoir la règle d'une autorité extérieure. C - Vrai : Les expériences sociales sont multiples. D - Faux : Les préférences isolées ne constituent pas un diagnostic. E - Faux : Une relation statistique ne prédit pas individuellement une trajectoire.",
+    "flashcards": [
+      {
+        "id": "psydev_c080",
+        "theme": "Psychologie de l’enfant",
+        "front": "Quels styles éducatifs le cours distingue-t-il ?",
+        "answers": [
+          "Contractualiste : règles discutées et expliquées. Statutaire : autorité fondée sur le statut de l'adulte. Maternaliste : cohésion et protection avec une marge de décision parfois réduite. Ce sont des descriptions, pas des diagnostics."
+        ],
+        "explanation": "Contractualiste : règles discutées et expliquées. Statutaire : autorité fondée sur le statut de l'adulte. Maternaliste : cohésion et protection avec une marge de décision parfois réduite. Ce sont des descriptions, pas des diagnostics.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q051",
+    "number": 51,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Quelles propositions caractérisent l'adolescence ?",
+    "choices": [
+      "Le passage à l'âge adulte possède un critère unique universel.",
+      "Puberté, maturité affective et majorité légale sont des repères distincts.",
+      "Une inquiétude corporelle suffit pour diagnostiquer une dysmorphophobie.",
+      "Les transformations pubertaires s'accompagnent de remaniements affectifs et sociaux.",
+      "Tout adolescent traverse obligatoirement une guerre familiale."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Plusieurs dimensions biologiques, sociales et psychiques interviennent.",
+      "Ils ne coïncident pas nécessairement.",
+      "Intensité, durée et retentissement doivent être appréciés.",
+      "Le corps, les relations et l'identité se réorganisent.",
+      "L'expression des remaniements varie selon les personnes et les contextes."
+    ],
+    "explanation": "A - Faux : Plusieurs dimensions biologiques, sociales et psychiques interviennent. B - Vrai : Ils ne coïncident pas nécessairement. C - Faux : Intensité, durée et retentissement doivent être appréciés. D - Vrai : Le corps, les relations et l'identité se réorganisent. E - Faux : L'expression des remaniements varie selon les personnes et les contextes.",
+    "flashcards": [
+      {
+        "id": "psydev_c082",
+        "theme": "Adolescence",
+        "front": "Quels remaniements caractérisent l'adolescence et le moratoire identitaire ?",
+        "answers": [
+          "L'adolescence remanie corps, identité et relations. Le moratoire identitaire associe exploration active et engagements encore peu stabilisés ; il ne signifie pas absence ou échec définitif d'identité."
+        ],
+        "explanation": "L'adolescence remanie corps, identité et relations. Le moratoire identitaire associe exploration active et engagements encore peu stabilisés ; il ne signifie pas absence ou échec définitif d'identité.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q052",
+    "number": 52,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Quelle proposition définit la pensée hypothético-déductive ?",
+    "choices": [
+      "Poser une hypothèse, en tirer des conséquences et les confronter aux faits.",
+      "Se limiter à une seule dimension perceptive sans pouvoir la modifier.",
+      "Réussir toute tâche abstraite dès son douzième anniversaire.",
+      "Confondre la réalité et toute croyance personnelle.",
+      "Répéter une règle sans pouvoir en discuter le sens."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle permet de raisonner sur le possible au-delà de l'action immédiate.",
+      "Cette centration ne définit pas la pensée formelle.",
+      "L'usage dépend des apprentissages, tâches et contextes.",
+      "La confrontation des hypothèses aux faits vise justement leur distinction.",
+      "La répétition ne suffit pas à définir ce raisonnement."
+    ],
+    "explanation": "A - Vrai : Elle permet de raisonner sur le possible au-delà de l'action immédiate. B - Faux : Cette centration ne définit pas la pensée formelle. C - Faux : L'usage dépend des apprentissages, tâches et contextes. D - Faux : La confrontation des hypothèses aux faits vise justement leur distinction. E - Faux : La répétition ne suffit pas à définir ce raisonnement.",
+    "flashcards": [
+      {
+        "id": "psydev_c083",
+        "theme": "Adolescence",
+        "front": "Que permet la pensée formelle dans le modèle de Piaget ?",
+        "answers": [
+          "Raisonner sur des hypothèses et leurs conséquences, coordonner des propositions et explorer des possibles. Son usage dépend des apprentissages et des tâches, pas d'un âge automatique de maîtrise universelle."
+        ],
+        "explanation": "Raisonner sur des hypothèses et leurs conséquences, coordonner des propositions et explorer des possibles. Son usage dépend des apprentissages et des tâches, pas d'un âge automatique de maîtrise universelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q053",
+    "number": 53,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Dans l'illustration du groupe INRC par un mobile sur un support, quelles propositions sont exactes ?",
+    "choices": [
+      "Deux déplacements égaux dans le même sens donnent toujours un déplacement nul.",
+      "Ce modèle constitue une mesure universelle de toute forme d'intelligence.",
+      "Le raisonnement coordonne déplacement propre et déplacement du support.",
+      "INRC signifie inhibition, nombre, rappel et calcul.",
+      "Un déplacement opposé du support peut compenser celui du mobile."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Dans ce cas, les déplacements s'ajoutent au lieu de se compenser.",
+      "Il s'agit d'un modèle et d'une illustration de relations logiques.",
+      "La position finale dépend de leurs relations.",
+      "Le modèle articule Identité, Négation, Réciproque et Corrélative.",
+      "La compensation exige des amplitudes égales en sens opposés."
+    ],
+    "explanation": "A - Faux : Dans ce cas, les déplacements s'ajoutent au lieu de se compenser. B - Faux : Il s'agit d'un modèle et d'une illustration de relations logiques. C - Vrai : La position finale dépend de leurs relations. D - Faux : Le modèle articule Identité, Négation, Réciproque et Corrélative. E - Vrai : La compensation exige des amplitudes égales en sens opposés.",
+    "flashcards": [
+      {
+        "id": "psydev_c084",
+        "theme": "Adolescence",
+        "front": "Quels sont les trois niveaux de Kohlberg, et quelle distinction retenir ?",
+        "answers": [
+          "Préconventionnel : conséquences pour soi. Conventionnel : attentes sociales et ordre collectif. Postconventionnel : droits et principes. La justification du jugement ne garantit pas la conduite réelle."
+        ],
+        "explanation": "Préconventionnel : conséquences pour soi. Conventionnel : attentes sociales et ordre collectif. Postconventionnel : droits et principes. La justification du jugement ne garantit pas la conduite réelle.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q054",
+    "number": 54,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "hard",
+    "question": "À propos du raisonnement moral selon Kohlberg, quelles propositions sont justes ?",
+    "choices": [
+      "Le niveau conventionnel valorise les attentes sociales et l'ordre collectif.",
+      "Chaque adulte atteint obligatoirement le dernier stade.",
+      "Un jugement élaboré ne garantit pas une conduite conforme.",
+      "Le niveau préconventionnel est défini par les principes éthiques universels.",
+      "Le dilemme de Heinz porte surtout sur la justification du jugement."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les stades 3 et 4 portent notamment sur relations et règles sociales.",
+      "Le modèle ne décrit pas une progression mécanique universelle.",
+      "Raisonnement moral et comportement ne sont pas interchangeables.",
+      "Il est plutôt centré sur conséquences pour soi, punition et intérêt individuel.",
+      "Deux réponses identiques peuvent être soutenues par des raisonnements différents."
+    ],
+    "explanation": "A - Vrai : Les stades 3 et 4 portent notamment sur relations et règles sociales. B - Faux : Le modèle ne décrit pas une progression mécanique universelle. C - Vrai : Raisonnement moral et comportement ne sont pas interchangeables. D - Faux : Il est plutôt centré sur conséquences pour soi, punition et intérêt individuel. E - Vrai : Deux réponses identiques peuvent être soutenues par des raisonnements différents.",
+    "flashcards": [
+      {
+        "id": "psydev_c086",
+        "theme": "Adolescence",
+        "front": "Quels signes invitent à explorer une souffrance adolescente plutôt qu'à banaliser une crise ?",
+        "answers": [
+          "Retrait durable, changement marqué du fonctionnement, souffrance persistante ou propos suicidaires. Explorer le contexte et le retentissement, évaluer la protection et transmettre aux professionnels concernés."
+        ],
+        "explanation": "Retrait durable, changement marqué du fonctionnement, souffrance persistante ou propos suicidaires. Explorer le contexte et le retentissement, évaluer la protection et transmettre aux professionnels concernés.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q055",
+    "number": 55,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Quelles propositions concernant les liens à l'adolescence sont exactes ?",
+    "choices": [
+      "Les parents peuvent rester une base de sécurité malgré l'autonomie croissante.",
+      "Le modèle des cliques et bandes impose une norme de vie amoureuse à tous.",
+      "L'autonomie comportementale supprime toute responsabilité de l'adulte.",
+      "Les pairs peuvent soutenir identification, appartenance et expérimentation de rôles.",
+      "Le respect de la vie privée interdit tout soutien parental."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La transformation du lien ne signifie pas sa disparition.",
+      "Il décrit des observations historiques, pas une obligation individuelle.",
+      "Elle se construit progressivement dans un cadre protecteur.",
+      "Ils contribuent aux remaniements relationnels.",
+      "Intimité et disponibilité relationnelle peuvent coexister."
+    ],
+    "explanation": "A - Vrai : La transformation du lien ne signifie pas sa disparition. B - Faux : Il décrit des observations historiques, pas une obligation individuelle. C - Faux : Elle se construit progressivement dans un cadre protecteur. D - Vrai : Ils contribuent aux remaniements relationnels. E - Faux : Intimité et disponibilité relationnelle peuvent coexister.",
+    "flashcards": [
+      {
+        "id": "psydev_c085",
+        "theme": "Adolescence",
+        "front": "Comment articuler pairs, autonomie et liens parentaux à l'adolescence ?",
+        "answers": [
+          "Les pairs soutiennent appartenance et expérimentation. L'autonomie comportementale se négocie progressivement. Les parents peuvent rester une base de sécurité tout en respectant l'intimité."
+        ],
+        "explanation": "Les pairs soutiennent appartenance et expérimentation. L'autonomie comportementale se négocie progressivement. Les parents peuvent rester une base de sécurité tout en respectant l'intimité.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q056",
+    "number": 56,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Vocabulaire : que signifie le moratoire identitaire dans les travaux de Marcia ?",
+    "choices": [
+      "L'absence irréversible de toute identité.",
+      "Une exploration active avec des engagements encore peu stabilisés.",
+      "L'interdiction de changer de projet.",
+      "La stabilisation définitive de tous les choix dès la puberté.",
+      "Un diagnostic de trouble intellectuel."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le moratoire ne signifie pas un échec définitif.",
+      "L'identité est en travail, sans être absente.",
+      "L'exploration implique au contraire d'examiner des possibilités.",
+      "Ce n'est pas le sens du moratoire.",
+      "Il s'agit d'une description de la construction identitaire."
+    ],
+    "explanation": "A - Faux : Le moratoire ne signifie pas un échec définitif. B - Vrai : L'identité est en travail, sans être absente. C - Faux : L'exploration implique au contraire d'examiner des possibilités. D - Faux : Ce n'est pas le sens du moratoire. E - Faux : Il s'agit d'une description de la construction identitaire.",
+    "flashcards": [
+      {
+        "id": "psydev_c008",
+        "theme": "Fondements et période anténatale",
+        "front": "Que signifie faire le deuil de l'enfant imaginaire ?",
+        "answers": [
+          "Remanier les attentes et projections parentales pour reconnaître l'enfant réel dans sa singularité. Ce travail ne signifie pas cesser d'aimer l'enfant."
+        ],
+        "explanation": "Remanier les attentes et projections parentales pour reconnaître l'enfant réel dans sa singularité. Ce travail ne signifie pas cesser d'aimer l'enfant.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q057",
+    "number": 57,
+    "courseId": "psychologie_developpement",
+    "theme": "Adolescence",
+    "difficulty": "medium",
+    "question": "Un adolescent s'isole, ne fréquente plus ses amis et exprime une souffrance persistante. Quelles attitudes sont adaptées ?",
+    "choices": [
+      "Réduire les difficultés scolaires à un manque de volonté.",
+      "Explorer les changements, leur durée et leur retentissement.",
+      "Évaluer les besoins de protection et transmettre aux professionnels concernés.",
+      "Déduire la cause exacte du retrait à partir du seul âge.",
+      "Attribuer automatiquement les signes à une crise normale."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Des obstacles d'apprentissage, de l'anxiété ou des violences peuvent intervenir.",
+      "Le fonctionnement antérieur et actuel aide à comprendre la situation.",
+      "Une réponse coordonnée doit tenir compte de la souffrance exprimée.",
+      "L'âge ne remplace pas une exploration individuelle du contexte.",
+      "Cette banalisation peut retarder une évaluation nécessaire."
+    ],
+    "explanation": "A - Faux : Des obstacles d'apprentissage, de l'anxiété ou des violences peuvent intervenir. B - Vrai : Le fonctionnement antérieur et actuel aide à comprendre la situation. C - Vrai : Une réponse coordonnée doit tenir compte de la souffrance exprimée. D - Faux : L'âge ne remplace pas une exploration individuelle du contexte. E - Faux : Cette banalisation peut retarder une évaluation nécessaire.",
+    "flashcards": [
+      {
+        "id": "psydev_c034",
+        "theme": "Langage et premières interactions",
+        "front": "Comment expliquer la compréhension en contexte ?",
+        "answers": [
+          "L'enfant comprend un mot ou une demande grâce à la situation familière, aux objets présents et aux gestes. Il peut ne pas comprendre le même mot hors de cette situation."
+        ],
+        "explanation": "L'enfant comprend un mot ou une demande grâce à la situation familière, aux objets présents et aux gestes. Il peut ne pas comprendre le même mot hors de cette situation.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q058",
+    "number": 58,
+    "courseId": "psychologie_developpement",
+    "theme": "Vieillissement et mémoire",
+    "difficulty": "easy",
+    "question": "Quelle association entre mémoire et exemple est correcte ?",
+    "choices": [
+      "Mémoire sémantique : maintenir un numéro quelques secondes pour le composer.",
+      "Mémoire procédurale : énoncer la définition d'un concept.",
+      "Mémoire de travail : conserver sans jamais manipuler une information.",
+      "Mémoire épisodique : se rappeler une rencontre vécue avec son contexte.",
+      "Mémoire sensorielle : conserver durablement l'histoire de sa vie."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cet exemple relève du maintien à court terme.",
+      "La connaissance explicite d'une définition relève surtout de la mémoire sémantique.",
+      "Elle participe aussi au traitement et à l'organisation de l'information.",
+      "Elle concerne des événements situés dans l'histoire personnelle.",
+      "Son maintien est au contraire très bref et dépend de la modalité."
+    ],
+    "explanation": "A - Faux : Cet exemple relève du maintien à court terme. B - Faux : La connaissance explicite d'une définition relève surtout de la mémoire sémantique. C - Faux : Elle participe aussi au traitement et à l'organisation de l'information. D - Vrai : Elle concerne des événements situés dans l'histoire personnelle. E - Faux : Son maintien est au contraire très bref et dépend de la modalité.",
+    "flashcards": [
+      {
+        "id": "psydev_c087",
+        "theme": "Vieillissement et mémoire",
+        "front": "Comment distinguer mémoire épisodique, sémantique, procédurale et mémoire de travail ?",
+        "answers": [
+          "Épisodique : événements vécus. Sémantique : connaissances générales. Procédurale : savoir-faire automatisés. Travail : maintien et manipulation d'informations pour une tâche."
+        ],
+        "explanation": "Épisodique : événements vécus. Sémantique : connaissances générales. Procédurale : savoir-faire automatisés. Travail : maintien et manipulation d'informations pour une tâche.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q059",
+    "number": 59,
+    "courseId": "psychologie_developpement",
+    "theme": "Vieillissement et mémoire",
+    "difficulty": "medium",
+    "question": "Quels processus participent à la mémoire ?",
+    "choices": [
+      "La récupération rend une information à nouveau disponible.",
+      "L'encodage traite l'information pour la mémoriser.",
+      "La mémoire procédurale est nécessairement déclarative.",
+      "La mémoire à long terme contient exclusivement des savoir-faire.",
+      "Le stockage maintient les informations."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle permet l'accès à ce qui a été conservé.",
+      "L'attention influence ce qui peut être encodé.",
+      "Elle relève surtout de la mémoire non déclarative.",
+      "Elle comprend aussi des souvenirs épisodiques et des connaissances sémantiques.",
+      "Il se distingue de leur récupération ultérieure."
+    ],
+    "explanation": "A - Vrai : Elle permet l'accès à ce qui a été conservé. B - Vrai : L'attention influence ce qui peut être encodé. C - Faux : Elle relève surtout de la mémoire non déclarative. D - Faux : Elle comprend aussi des souvenirs épisodiques et des connaissances sémantiques. E - Vrai : Il se distingue de leur récupération ultérieure.",
+    "flashcards": [
+      {
+        "id": "psydev_c088",
+        "theme": "Vieillissement et mémoire",
+        "front": "Comment distinguer intelligence fluide et intelligence cristallisée ?",
+        "answers": [
+          "La fluide concerne le raisonnement face à des situations nouvelles ; la cristallisée s'appuie sur connaissances et expérience. Le vieillissement affecte les capacités de manière hétérogène."
+        ],
+        "explanation": "La fluide concerne le raisonnement face à des situations nouvelles ; la cristallisée s'appuie sur connaissances et expérience. Le vieillissement affecte les capacités de manière hétérogène.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q060",
+    "number": 60,
+    "courseId": "psychologie_developpement",
+    "theme": "Vieillissement et mémoire",
+    "difficulty": "medium",
+    "question": "À propos du vieillissement affectif, quelles propositions sont justes ?",
+    "choices": [
+      "Les pertes peuvent demander des remaniements sans empêcher de nouveaux investissements.",
+      "Le contact physique est toujours apaisant, même s'il est refusé.",
+      "La vieillesse implique nécessairement une dépression.",
+      "Tout désaccord du patient révèle un mécanisme de défense.",
+      "Les besoins d'attachement peuvent se réactiver avec la vulnérabilité."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Activités et relations nouvelles restent possibles.",
+      "Le toucher doit respecter l'accord et le confort de la personne.",
+      "Dépression et vieillissement ne sont pas équivalents.",
+      "Son point de vue doit aussi être considéré pour lui-même.",
+      "Le besoin de réconfort persiste au cours de la vie."
+    ],
+    "explanation": "A - Vrai : Activités et relations nouvelles restent possibles. B - Faux : Le toucher doit respecter l'accord et le confort de la personne. C - Faux : Dépression et vieillissement ne sont pas équivalents. D - Faux : Son point de vue doit aussi être considéré pour lui-même. E - Vrai : Le besoin de réconfort persiste au cours de la vie.",
+    "flashcards": [
+      {
+        "id": "psydev_c089",
+        "theme": "Vieillissement et mémoire",
+        "front": "Quels besoins préserver lors du vieillissement affectif ?",
+        "answers": [
+          "Dignité, liens, possibilités d'investissement, choix et soutien. Les pertes n'interdisent pas de nouvelles relations ; le contact physique doit respecter l'accord de la personne."
+        ],
+        "explanation": "Dignité, liens, possibilités d'investissement, choix et soutien. Les pertes n'interdisent pas de nouvelles relations ; le contact physique doit respecter l'accord de la personne.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q061",
+    "number": 61,
+    "courseId": "psychologie_developpement",
+    "theme": "Vieillissement et mémoire",
+    "difficulty": "medium",
+    "question": "Concernant le vieillissement cognitif, quelles propositions sont exactes ?",
+    "choices": [
+      "L'absence de plainte exclut toujours un trouble.",
+      "Tous les domaines cognitifs vieillissent au même rythme chez chacun.",
+      "La reconnaissance avec un indice peut être plus facile qu'un rappel sans aide.",
+      "L'intelligence cristallisée s'appuie sur connaissances et expérience.",
+      "Toute plainte mnésique prouve une maladie d'Alzheimer."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L'anosognosie peut limiter la conscience des difficultés.",
+      "Les trajectoires sont hétérogènes.",
+      "Les exigences de récupération diffèrent selon la tâche.",
+      "Elle peut rester longtemps préservée.",
+      "Fatigue, anxiété, dépression ou difficultés sensorielles peuvent aussi intervenir."
+    ],
+    "explanation": "A - Faux : L'anosognosie peut limiter la conscience des difficultés. B - Faux : Les trajectoires sont hétérogènes. C - Vrai : Les exigences de récupération diffèrent selon la tâche. D - Vrai : Elle peut rester longtemps préservée. E - Faux : Fatigue, anxiété, dépression ou difficultés sensorielles peuvent aussi intervenir.",
+    "flashcards": [
+      {
+        "id": "psydev_c090",
+        "theme": "Vieillissement et mémoire",
+        "front": "Comment distinguer vieillissement ordinaire et trouble neurocognitif majeur ?",
+        "answers": [
+          "Le trouble implique un déclin acquis significatif compromettant l'autonomie, dans un ou plusieurs domaines. La mémoire n'est pas obligatoirement atteinte dans toutes les formes. Une plainte isolée ne prouve pas la maladie ; son absence ne l'exclut pas."
+        ],
+        "explanation": "Le trouble implique un déclin acquis significatif compromettant l'autonomie, dans un ou plusieurs domaines. La mémoire n'est pas obligatoirement atteinte dans toutes les formes. Une plainte isolée ne prouve pas la maladie ; son absence ne l'exclut pas.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q062",
+    "number": 62,
+    "courseId": "psychologie_developpement",
+    "theme": "Vieillissement et mémoire",
+    "difficulty": "hard",
+    "question": "Quelles propositions permettent de distinguer trouble neurocognitif et vieillissement ordinaire ?",
+    "choices": [
+      "La perte de capacités supprime la dignité et les préférences.",
+      "Un trouble neurocognitif majeur compromet l'autonomie par un déclin acquis significatif.",
+      "Une atteinte de la mémoire n'est pas obligatoire dans toutes les formes.",
+      "Dépression et trouble neurocognitif peuvent coexister.",
+      "La démence est une conséquence normale et inévitable de l'âge."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le soin doit préserver la personne et éviter l'infantilisation.",
+      "Un ou plusieurs domaines cognitifs peuvent être concernés.",
+      "Le profil dépend notamment de la cause et des domaines atteints.",
+      "Des manifestations proches ne dispensent pas d'une évaluation contextualisée.",
+      "Elle correspond à un trouble, non à une étape universelle du vieillissement."
+    ],
+    "explanation": "A - Faux : Le soin doit préserver la personne et éviter l'infantilisation. B - Vrai : Un ou plusieurs domaines cognitifs peuvent être concernés. C - Vrai : Le profil dépend notamment de la cause et des domaines atteints. D - Vrai : Des manifestations proches ne dispensent pas d'une évaluation contextualisée. E - Faux : Elle correspond à un trouble, non à une étape universelle du vieillissement.",
+    "flashcards": [
+      {
+        "id": "psydev_c047",
+        "theme": "Attachement et soins",
+        "front": "Comment distinguer caregiver et caregiving ?",
+        "answers": [
+          "Le caregiver est la personne qui prend soin. Le caregiving est le système de protection et de réconfort complémentaire de la recherche d'attachement."
+        ],
+        "explanation": "Le caregiver est la personne qui prend soin. Le caregiving est le système de protection et de réconfort complémentaire de la recherche d'attachement.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "kind": "QCM"
+  },
+  {
+    "id": "psydev_q063",
+    "courseId": "psychologie_developpement",
+    "number": 63,
+    "theme": "Normal et pathologique",
+    "difficulty": "medium",
+    "question": "Quelles distinctions entre les repères de normalité et de maladie sont correctes ?",
+    "choices": [
+      "La prévalence concerne les cas existants dans une population.",
+      "L’incidence concerne les nouveaux cas au cours d’une période.",
+      "Une conduite rare prouve une maladie.",
+      "La norme sociale est identique dans toutes les cultures.",
+      "La normalité idéale est toujours la moyenne statistique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La prévalence décrit les cas présents à un moment ou sur une période définie.",
+      "L’incidence décrit la survenue de nouveaux cas, à distinguer des cas déjà présents.",
+      "La rareté ne suffit pas : contexte, souffrance et retentissement sont à prendre en compte.",
+      "Une norme sociale dépend du groupe, de l’époque et de la culture.",
+      "L’idéal est ce qui est souhaité ou valorisé ; la moyenne concerne la distribution statistique."
+    ],
+    "explanation": "A : vrai. La prévalence décrit les cas présents à un moment ou sur une période définie. B : vrai. L’incidence décrit la survenue de nouveaux cas, à distinguer des cas déjà présents. C : faux. La rareté ne suffit pas : contexte, souffrance et retentissement sont à prendre en compte. D : faux. Une norme sociale dépend du groupe, de l’époque et de la culture. E : faux. L’idéal est ce qui est souhaité ou valorisé ; la moyenne concerne la distribution statistique.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc091",
+        "theme": "Normal et pathologique",
+        "front": "Comment distinguer prévalence et incidence ?",
+        "answers": [
+          "Prévalence : cas existants dans une population à un moment ou sur une période. Incidence : nouveaux cas apparus pendant une période définie."
+        ],
+        "explanation": "Prévalence : cas existants dans une population à un moment ou sur une période. Incidence : nouveaux cas apparus pendant une période définie."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q064",
+    "courseId": "psychologie_developpement",
+    "number": 64,
+    "theme": "Langage du bébé",
+    "difficulty": "medium",
+    "question": "À propos des acquisitions du langage, quelles propositions sont correctes ?",
+    "choices": [
+      "Les premiers mots apparaissent à un âge obligatoire identique.",
+      "La compréhension peut précéder la production maîtrisée.",
+      "Le pointage absent suffit à établir un autisme.",
+      "Le babillage est une phrase syntaxiquement complète.",
+      "Les mots compris et les mots produits mesurent la même acquisition."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les âges et les volumes de vocabulaire sont des repères variables du cours.",
+      "Le bébé perçoit et comprend des éléments de langage avant de les produire de façon maîtrisée.",
+      "Un signe isolé ne suffit pas à poser un diagnostic.",
+      "Le babillage est une production sonore prélinguistique, notamment consonne-voyelle répétée.",
+      "Compréhension et production doivent être distinguées : la première précède généralement la seconde."
+    ],
+    "explanation": "A : faux. Les âges et les volumes de vocabulaire sont des repères variables du cours. B : vrai. Le bébé perçoit et comprend des éléments de langage avant de les produire de façon maîtrisée. C : faux. Un signe isolé ne suffit pas à poser un diagnostic. D : faux. Le babillage est une production sonore prélinguistique, notamment consonne-voyelle répétée. E : faux. Compréhension et production doivent être distinguées : la première précède généralement la seconde.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc092",
+        "theme": "Langage du bébé",
+        "front": "Pourquoi distinguer langage compris et langage produit chez le bébé ?",
+        "answers": [
+          "La perception et la compréhension précèdent la production maîtrisée. Un mot reconnu en contexte n’est pas nécessairement compris hors contexte ; les nombres de mots compris et produits ne sont pas interchangeables."
+        ],
+        "explanation": "La perception et la compréhension précèdent la production maîtrisée. Un mot reconnu en contexte n’est pas nécessairement compris hors contexte ; les nombres de mots compris et produits ne sont pas interchangeables."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q065",
+    "courseId": "psychologie_developpement",
+    "number": 65,
+    "theme": "Interactions précoces",
+    "difficulty": "medium",
+    "question": "Quels gestes d’un adulte relèvent de l’étayage décrit par Bruner ?",
+    "choices": [
+      "Signaler les caractéristiques pertinentes d’un objet.",
+      "Faire systématiquement toute l’activité à la place de l’enfant.",
+      "Supprimer tous les temps de réponse du bébé.",
+      "Mobiliser l’enfant vers un but.",
+      "Réduire une difficulté pour rendre l’activité accessible."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Attirer l’attention sur les éléments utiles soutient l’exploration et l’apprentissage.",
+      "L’aide vise l’engagement et l’autonomie progressive ; elle ne se réduit pas à remplacer toute action.",
+      "L’alternance et l’ajustement aux signaux du bébé font partie des échanges précoces.",
+      "L’étayage aide l’enfant à s’engager dans une activité orientée vers un but.",
+      "L’adulte ajuste la difficulté et son aide aux possibilités de l’enfant."
+    ],
+    "explanation": "A : vrai. Attirer l’attention sur les éléments utiles soutient l’exploration et l’apprentissage. B : faux. L’aide vise l’engagement et l’autonomie progressive ; elle ne se réduit pas à remplacer toute action. C : faux. L’alternance et l’ajustement aux signaux du bébé font partie des échanges précoces. D : vrai. L’étayage aide l’enfant à s’engager dans une activité orientée vers un but. E : vrai. L’adulte ajuste la difficulté et son aide aux possibilités de l’enfant.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc093",
+        "theme": "Interactions précoces",
+        "front": "Quelles sont les fonctions de l’étayage dans une activité partagée avec le jeune enfant ?",
+        "answers": [
+          "Mobiliser vers le but, réduire la difficulté, signaler les caractéristiques pertinentes et évaluer les productions. L’aide s’ajuste et soutient progressivement l’activité propre de l’enfant."
+        ],
+        "explanation": "Mobiliser vers le but, réduire la difficulté, signaler les caractéristiques pertinentes et évaluer les productions. L’aide s’ajuste et soutient progressivement l’activité propre de l’enfant."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q066",
+    "courseId": "psychologie_developpement",
+    "number": 66,
+    "theme": "Carences et séparations",
+    "difficulty": "medium",
+    "question": "Quelles propositions respectent les descriptions historiques de Spitz ?",
+    "choices": [
+      "Un substitut relationnel stable de qualité peut soutenir une amélioration.",
+      "Le détachement apparent garantit le bien-être.",
+      "L’hospitalisme est provoqué par toute hospitalisation.",
+      "La dépression anaclitique est décrite après une séparation d’une figure auparavant investie.",
+      "La carence affective constitue l’explication générale de l’autisme."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La restauration d’une relation privilégiée peut améliorer le tableau décrit.",
+      "Un retour apparent d’activité peut coexister avec une répression de la recherche de proximité.",
+      "Il décrit des privations relationnelles durables dans des conditions institutionnelles défaillantes.",
+      "La relation privilégiée préalable puis la séparation sont centrales dans cette description.",
+      "Les descriptions historiques de retrait et de stéréotypies ne permettent pas cette assimilation."
+    ],
+    "explanation": "A : vrai. La restauration d’une relation privilégiée peut améliorer le tableau décrit. B : faux. Un retour apparent d’activité peut coexister avec une répression de la recherche de proximité. C : faux. Il décrit des privations relationnelles durables dans des conditions institutionnelles défaillantes. D : vrai. La relation privilégiée préalable puis la séparation sont centrales dans cette description. E : faux. Les descriptions historiques de retrait et de stéréotypies ne permettent pas cette assimilation.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc094",
+        "theme": "Carences et séparations",
+        "front": "Comment distinguer dépression anaclitique et hospitalisme dans les observations de Spitz ?",
+        "answers": [
+          "La dépression anaclitique suit une séparation d’une figure auparavant investie ; une relation stable restaurée peut améliorer le tableau. L’hospitalisme décrit une privation relationnelle prolongée sans substitut de qualité dans une institution défaillante. Ces modèles historiques ne diagnostiquent pas l’autisme."
+        ],
+        "explanation": "La dépression anaclitique suit une séparation d’une figure auparavant investie ; une relation stable restaurée peut améliorer le tableau. L’hospitalisme décrit une privation relationnelle prolongée sans substitut de qualité dans une institution défaillante. Ces modèles historiques ne diagnostiquent pas l’autisme."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q067",
+    "courseId": "psychologie_developpement",
+    "number": 67,
+    "theme": "Attachement et soins",
+    "difficulty": "medium",
+    "question": "Quelles propositions définissent correctement le caregiving ?",
+    "choices": [
+      "Sa présence permet de juger un parent à partir d’une émotion isolée.",
+      "Il désigne uniquement le fait de nourrir.",
+      "Il ne peut être assuré que par la mère biologique.",
+      "Il constitue le système complémentaire de protection et de réconfort.",
+      "Il vise à empêcher définitivement toute exploration."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les émotions du caregiver ne constituent pas à elles seules une évaluation de ses capacités parentales.",
+      "Il répond aux besoins de protection et de réconfort, au-delà de la seule alimentation.",
+      "Le caregiver peut être un parent ou un autre adulte assurant des soins ajustés.",
+      "Le caregiving répond aux besoins d’attachement et vise la sécurité physique et psychique.",
+      "La sécurité soutient l’exploration ; elle n’exige pas une proximité physique permanente."
+    ],
+    "explanation": "A : faux. Les émotions du caregiver ne constituent pas à elles seules une évaluation de ses capacités parentales. B : faux. Il répond aux besoins de protection et de réconfort, au-delà de la seule alimentation. C : faux. Le caregiver peut être un parent ou un autre adulte assurant des soins ajustés. D : vrai. Le caregiving répond aux besoins d’attachement et vise la sécurité physique et psychique. E : faux. La sécurité soutient l’exploration ; elle n’exige pas une proximité physique permanente.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc095",
+        "theme": "Attachement et soins",
+        "front": "Que désigne le caregiving et quelles émotions peuvent l’accompagner ?",
+        "answers": [
+          "Le caregiving est le système de protection et de réconfort complémentaire de l’attachement. Le caregiver peut éprouver plaisir, satisfaction ou soulagement lorsqu’il protège, et colère, tristesse ou anxiété lorsqu’il ne le peut pas."
+        ],
+        "explanation": "Le caregiving est le système de protection et de réconfort complémentaire de l’attachement. Le caregiver peut éprouver plaisir, satisfaction ou soulagement lorsqu’il protège, et colère, tristesse ou anxiété lorsqu’il ne le peut pas."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q068",
+    "courseId": "psychologie_developpement",
+    "number": 68,
+    "theme": "Langage de l’enfant",
+    "difficulty": "medium",
+    "question": "Quelles propositions concernent les mots de classe fermée ?",
+    "choices": [
+      "Ils comprennent notamment des déterminants et des prépositions.",
+      "Le cours évoque leur augmentation autour d’un lexique de 400 mots.",
+      "Ils correspondent uniquement aux noms d’objets.",
+      "Le repère de 400 mots impose le même âge à tous les enfants.",
+      "Un enfant en dessous de ce repère présente nécessairement une pathologie."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ce sont des mots grammaticaux qui contribuent à organiser les relations entre les mots.",
+      "Le support donne un repère de vocabulaire, sans en faire un seuil diagnostique.",
+      "Les noms relèvent des classes ouvertes, contrairement aux déterminants et prépositions.",
+      "Le support ne fixe pas un âge clinique obligatoire à partir de ce volume de vocabulaire.",
+      "Une valeur de vocabulaire isolée ne constitue pas un diagnostic."
+    ],
+    "explanation": "A : vrai. Ce sont des mots grammaticaux qui contribuent à organiser les relations entre les mots. B : vrai. Le support donne un repère de vocabulaire, sans en faire un seuil diagnostique. C : faux. Les noms relèvent des classes ouvertes, contrairement aux déterminants et prépositions. D : faux. Le support ne fixe pas un âge clinique obligatoire à partir de ce volume de vocabulaire. E : faux. Une valeur de vocabulaire isolée ne constitue pas un diagnostic.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc096",
+        "theme": "Langage de l’enfant",
+        "front": "Que sont les mots de classe fermée et quel repère le cours leur associe-t-il ?",
+        "answers": [
+          "Ce sont notamment les mots grammaticaux, comme les déterminants et les prépositions. Le support évoque une augmentation de leur usage autour de 400 mots de lexique ; ce repère ne constitue ni un âge obligatoire ni un seuil de diagnostic."
+        ],
+        "explanation": "Ce sont notamment les mots grammaticaux, comme les déterminants et les prépositions. Le support évoque une augmentation de leur usage autour de 400 mots de lexique ; ce repère ne constitue ni un âge obligatoire ni un seuil de diagnostic."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q069",
+    "courseId": "psychologie_developpement",
+    "number": 69,
+    "theme": "Opérations concrètes",
+    "difficulty": "medium",
+    "question": "Comment comprendre la construction opératoire du nombre chez Piaget ?",
+    "choices": [
+      "Elle suppose que rien ne peut être compté avant 8 ans.",
+      "Elle articule inclusion des classes et relation d’ordre.",
+      "Elle interdit toute manipulation d’objets.",
+      "Les repères du modèle s’interprètent selon les tâches proposées.",
+      "Elle se limite à réciter la suite des nombres."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Compter et comparer des quantités peuvent être possibles avant les tâches opératoires décrites.",
+      "C’est l’articulation des relations de classe et d’ordre décrite dans le modèle.",
+      "La manipulation peut soutenir la compréhension des opérations.",
+      "Les âges sont des repères théoriques liés aux tâches, sans valeur diagnostique isolée.",
+      "Le raisonnement opératoire dépasse la récitation d’une suite apprise."
+    ],
+    "explanation": "A : faux. Compter et comparer des quantités peuvent être possibles avant les tâches opératoires décrites. B : vrai. C’est l’articulation des relations de classe et d’ordre décrite dans le modèle. C : faux. La manipulation peut soutenir la compréhension des opérations. D : vrai. Les âges sont des repères théoriques liés aux tâches, sans valeur diagnostique isolée. E : faux. Le raisonnement opératoire dépasse la récitation d’une suite apprise.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc097",
+        "theme": "Opérations concrètes",
+        "front": "Que signifie la construction opératoire du nombre dans le modèle piagétien ?",
+        "answers": [
+          "Elle articule inclusion des classes et relation d’ordre. Elle dépasse la récitation de la suite des nombres ; les repères autour de 8-8½ ans concernent les tâches du modèle et ne signifient pas qu’aucun comptage n’est possible auparavant."
+        ],
+        "explanation": "Elle articule inclusion des classes et relation d’ordre. Elle dépasse la récitation de la suite des nombres ; les repères autour de 8-8½ ans concernent les tâches du modèle et ne signifient pas qu’aucun comptage n’est possible auparavant."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q070",
+    "courseId": "psychologie_developpement",
+    "number": 70,
+    "theme": "Socialisation familiale",
+    "difficulty": "medium",
+    "question": "Quelles descriptions des styles éducatifs correspondent au cours ?",
+    "choices": [
+      "Maternaliste : protection et chaleur avec marge de décision plus réduite.",
+      "Ces styles sont des diagnostics psychiatriques de familles.",
+      "Un style permet de prévoir à lui seul tout le devenir de l’enfant.",
+      "Contractualiste : règles expliquées et place à la discussion.",
+      "Statutaire : autorité appuyée sur la position de l’adulte."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La cohésion et la protection sont valorisées, avec moins d’individualisation des décisions.",
+      "Ce sont des descriptions de configurations éducatives et non des diagnostics.",
+      "Le développement dépend d’une histoire et de multiples conditions ; un style ne détermine pas à lui seul une trajectoire.",
+      "Le cours le rapproche d’un style démocratique où les règles peuvent être comprises et discutées.",
+      "Ce style est présenté comme plus autoritaire et fondé sur le statut parental."
+    ],
+    "explanation": "A : vrai. La cohésion et la protection sont valorisées, avec moins d’individualisation des décisions. B : faux. Ce sont des descriptions de configurations éducatives et non des diagnostics. C : faux. Le développement dépend d’une histoire et de multiples conditions ; un style ne détermine pas à lui seul une trajectoire. D : vrai. Le cours le rapproche d’un style démocratique où les règles peuvent être comprises et discutées. E : vrai. Ce style est présenté comme plus autoritaire et fondé sur le statut parental.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc098",
+        "theme": "Socialisation familiale",
+        "front": "Comment distinguer les styles éducatifs contractualiste, statutaire et maternaliste ?",
+        "answers": [
+          "Contractualiste : règles expliquées et discussion. Statutaire : autorité liée au statut de l’adulte. Maternaliste : cohésion, chaleur et protection avec marge de décision plus réduite. Ce sont des repères descriptifs, pas des diagnostics familiaux."
+        ],
+        "explanation": "Contractualiste : règles expliquées et discussion. Statutaire : autorité liée au statut de l’adulte. Maternaliste : cohésion, chaleur et protection avec marge de décision plus réduite. Ce sont des repères descriptifs, pas des diagnostics familiaux."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q071",
+    "courseId": "psychologie_developpement",
+    "number": 71,
+    "theme": "Adolescence et valeurs",
+    "difficulty": "medium",
+    "question": "Dans le chapitre de l’adolescence, que désigne l’idéologie ?",
+    "choices": [
+      "Une opinion ponctuelle sans possibilité de généralisation.",
+      "Une conséquence indépendante de tout contexte historique.",
+      "Une mesure directe de tous les comportements moraux.",
+      "Le sixième stade obligatoire de tout adolescent.",
+      "Le recours à des principes généraux pour penser des questions politiques, éducatives ou religieuses."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le chapitre insiste précisément sur la référence à des principes généraux.",
+      "L’évolution historique et politique des idées est prise en compte.",
+      "Le raisonnement idéologique et les conduites effectives ne se superposent pas.",
+      "L’idéologie ne désigne pas un stade universel du modèle de Kohlberg.",
+      "Le support relie l’idéologie à un raisonnement abstrait et à l’évolution des idées."
+    ],
+    "explanation": "A : faux. Le chapitre insiste précisément sur la référence à des principes généraux. B : faux. L’évolution historique et politique des idées est prise en compte. C : faux. Le raisonnement idéologique et les conduites effectives ne se superposent pas. D : faux. L’idéologie ne désigne pas un stade universel du modèle de Kohlberg. E : vrai. Le support relie l’idéologie à un raisonnement abstrait et à l’évolution des idées.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc099",
+        "theme": "Adolescence et valeurs",
+        "front": "Que désigne l’idéologie dans le cours sur l’adolescence ?",
+        "answers": [
+          "L’accès à un raisonnement abstrait sur des questions politiques, éducatives ou religieuses, intégrant l’évolution des idées et se référant à des principes généraux. Elle se distingue du stade de jugement moral et des conduites effectives."
+        ],
+        "explanation": "L’accès à un raisonnement abstrait sur des questions politiques, éducatives ou religieuses, intégrant l’évolution des idées et se référant à des principes généraux. Elle se distingue du stade de jugement moral et des conduites effectives."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q072",
+    "courseId": "psychologie_developpement",
+    "number": 72,
+    "theme": "Attachement adulte",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent l’attachement adulte dans le support ?",
+    "choices": [
+      "Une phrase isolée suffit à classer définitivement un style adulte.",
+      "La réciprocité permet de donner et de recevoir de la sécurité.",
+      "Une base de sécurité intériorisée peut s’appuyer sur les échanges verbaux.",
+      "Le partenaire est toujours vécu comme interchangeable.",
+      "L’attachement disparaît obligatoirement après l’enfance."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Un style ne se déduit pas d’une observation ou d’une phrase isolée.",
+      "Chaque partenaire peut soutenir l’autre et bénéficier de son soutien.",
+      "Le contact physique n’est plus la seule modalité de proximité et de réconfort.",
+      "La relation d’attachement est définie par un partenaire investi comme unique et non interchangeable.",
+      "La théorie présentée décrit sa persistance au cours de la vie."
+    ],
+    "explanation": "A : faux. Un style ne se déduit pas d’une observation ou d’une phrase isolée. B : vrai. Chaque partenaire peut soutenir l’autre et bénéficier de son soutien. C : vrai. Le contact physique n’est plus la seule modalité de proximité et de réconfort. D : faux. La relation d’attachement est définie par un partenaire investi comme unique et non interchangeable. E : faux. La théorie présentée décrit sa persistance au cours de la vie.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc100",
+        "theme": "Attachement adulte",
+        "front": "Que change la réciprocité dans l’attachement adulte ?",
+        "answers": [
+          "Chaque partenaire peut fournir et recevoir soutien, attention et sécurité. La relation concerne une personne investie comme singulière ; la proximité s’appuie aussi sur les échanges verbaux et une sécurité intériorisée."
+        ],
+        "explanation": "Chaque partenaire peut fournir et recevoir soutien, attention et sécurité. La relation concerne une personne investie comme singulière ; la proximité s’appuie aussi sur les échanges verbaux et une sécurité intériorisée."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q073",
+    "courseId": "psychologie_developpement",
+    "number": 73,
+    "theme": "Attachement et vieillissement",
+    "difficulty": "medium",
+    "question": "Une personne âgée trouve du réconfort en évoquant son conjoint décédé devant une photographie. Quelles lectures sont pertinentes ?",
+    "choices": [
+      "Le souvenir peut soutenir un attachement symbolique.",
+      "La photographie impose à elle seule un diagnostic.",
+      "Le lien symbolique peut être soutenu par des objets ou lieux familiers.",
+      "Tout besoin de relation disparaît en cas de trouble neurocognitif.",
+      "Le réconfort prouve l’absence de tout travail de deuil."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’évocation d’une figure absente ou disparue peut apporter soutien et réconfort.",
+      "Un objet familier et le réconfort qu’il procure ne constituent pas un diagnostic.",
+      "Ces repères peuvent faciliter l’évocation des figures et des relations importantes.",
+      "Les besoins d’attachement et de sécurité peuvent persister malgré la détérioration cognitive.",
+      "L’évocation d’un proche et la recherche de réconfort peuvent faire partie d’un remaniement du lien après la perte."
+    ],
+    "explanation": "A : vrai. L’évocation d’une figure absente ou disparue peut apporter soutien et réconfort. B : faux. Un objet familier et le réconfort qu’il procure ne constituent pas un diagnostic. C : vrai. Ces repères peuvent faciliter l’évocation des figures et des relations importantes. D : faux. Les besoins d’attachement et de sécurité peuvent persister malgré la détérioration cognitive. E : faux. L’évocation d’un proche et la recherche de réconfort peuvent faire partie d’un remaniement du lien après la perte.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc101",
+        "theme": "Attachement et vieillissement",
+        "front": "Que désigne l’attachement symbolique chez une personne âgée ?",
+        "answers": [
+          "Le soutien et le réconfort obtenus par l’évocation ou les souvenirs d’une figure absente ou disparue. Objets et lieux familiers peuvent faciliter ce lien ; les besoins relationnels peuvent aussi persister malgré des troubles cognitifs."
+        ],
+        "explanation": "Le soutien et le réconfort obtenus par l’évocation ou les souvenirs d’une figure absente ou disparue. Objets et lieux familiers peuvent faciliter ce lien ; les besoins relationnels peuvent aussi persister malgré des troubles cognitifs."
+      }
+    ]
+  },
+  {
+    "id": "psydev_q074",
+    "courseId": "psychologie_developpement",
+    "number": 74,
+    "theme": "Construction identitaire",
+    "difficulty": "medium",
+    "question": "Quelles composantes de l’identité sont distinguées dans le cours ?",
+    "choices": [
+      "La cohésion : un sentiment d’unité suffisamment cohérent.",
+      "La singularité : se vivre comme distinct des autres.",
+      "Une identité exige l’absence définitive de toute évolution.",
+      "Un moratoire correspond nécessairement à l’absence d’identité.",
+      "La continuité temporelle : se sentir soi au fil des changements."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La cohésion s’oppose ici à un vécu de morcellement de soi.",
+      "La singularité concerne le caractère propre du sujet au sein de ses relations et appartenances.",
+      "La construction identitaire articule continuité et transformations.",
+      "Il décrit une exploration active avec des engagements encore peu stabilisés.",
+      "Cette continuité relie l’histoire de la personne à ses transformations."
+    ],
+    "explanation": "A : vrai. La cohésion s’oppose ici à un vécu de morcellement de soi. B : vrai. La singularité concerne le caractère propre du sujet au sein de ses relations et appartenances. C : faux. La construction identitaire articule continuité et transformations. D : faux. Il décrit une exploration active avec des engagements encore peu stabilisés. E : vrai. Cette continuité relie l’histoire de la personne à ses transformations.",
+    "kind": "QCM",
+    "course": "Psychologie du développement",
+    "ue": "B2",
+    "flashcards": [
+      {
+        "id": "psydev_fc102",
+        "theme": "Construction identitaire",
+        "front": "Que signifient continuité temporelle, cohésion et singularité identitaires ?",
+        "answers": [
+          "Continuité : demeurer soi au fil du temps. Cohésion : se sentir suffisamment unifié et cohérent. Singularité : se vivre comme distinct des autres. Ces dimensions peuvent être remaniées à l’adolescence sans signifier une absence d’identité."
+        ],
+        "explanation": "Continuité : demeurer soi au fil du temps. Cohésion : se sentir suffisamment unifié et cohérent. Singularité : se vivre comme distinct des autres. Ces dimensions peuvent être remaniées à l’adolescence sans signifier une absence d’identité."
+      }
+    ]
+  }
+]
