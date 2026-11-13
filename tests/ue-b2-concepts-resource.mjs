@@ -37,20 +37,10 @@ for(const mutate of [r=>r.unreviewed={},r=>r.ueResources[0].publicationApproval.
 }
 validateScopedRevisions();
 const priorRead=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:64*1024*1024}));
-const manifest=read('docs/course-deliveries.json'),oldIds=new Set(before.courses.map(c=>c.id));
-const additions=manifest.courses.filter(d=>!oldIds.has(d.courseId));
-for(const d of additions){assert.equal(d.firstReleaseBaseline?.contract,'additive_course_rows_v1');assert.deepEqual(d.firstReleaseBaseline.previousCourseIds,before.courses.map(c=>c.id));assert.equal(d.publicationApproval.status,'approved');assert.equal(d.publicationApproval.authorization,'explicit_go_publication');assert.equal(d.publicationApproval.scope,'course_package');}
-const newIds=new Set(additions.map(d=>d.courseId));
-// Keep the entire old course/resource comparison; remove only independently
-// approved first-release rows, whose exact boundaries are verified below.
-assert.deepEqual(scopedHistoricalJson(read,'course-registry-v741.json').courses.filter(c=>!newIds.has(c.id)),scopedHistoricalJson(priorRead,'course-registry-v741.json').courses,'Un cours historique a changé hors révision contrôlée');
+const preserved=(reader,file)=>beforeAdditiveCourses(file,scopedHistoricalJson(reader,file),reader('docs/course-deliveries.json'));
+assert.deepEqual(preserved(read,'course-registry-v741.json').courses,preserved(priorRead,'course-registry-v741.json').courses,'Un cours historique a changé hors révision contrôlée');
 for(const file of ['docs/course-deliveries.json','sheets-1.json','sheets-2.json','sheets-3.json','questions-5.json','vocabulaire-v1.json','vocals.json','audio-series-v1.json']){
- beforeAdditiveCourses(file,read(file),manifest);
- let actual=scopedHistoricalJson(read,file);
- if(file==='docs/course-deliveries.json')actual={...actual,courses:actual.courses.filter(c=>!newIds.has(c.courseId))};
- else if(file==='vocabulaire-v1.json')actual={...actual,entries:actual.entries.filter(v=>!v.courseIds?.some(id=>newIds.has(id)))};
- else if(Array.isArray(actual))actual=actual.filter(x=>!newIds.has(x.courseId));
- assert.deepEqual(actual,scopedHistoricalJson(priorRead,file),'Ressource historique modifiée : '+file);
+ assert.deepEqual(preserved(read,file),preserved(priorRead,file),'Ressource historique modifiée : '+file);
 }
 const python=process.env.IFSI_PYTHON||process.env.PYTHON||'python';
 const result=JSON.parse(execFileSync(python,['-c','import fitz,json,sys; d=fitz.open(sys.argv[1]); print(json.dumps({"pages":len(d),"first":d[0].get_text(),"all": " ".join(p.get_text() for p in d)}))',approved.path],{encoding:'utf8',maxBuffer:10*1024*1024}));

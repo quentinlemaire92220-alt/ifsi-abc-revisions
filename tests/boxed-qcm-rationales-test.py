@@ -21,7 +21,7 @@ root=Path(__file__).resolve().parents[1]
 rows=json.loads((root/'data/course-banks/prevention_promotion_sante.json').read_text(encoding='utf8'))
 with fitz.open(root/'assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_QCM_60_Corriges.pdf') as doc:
     native=m.body(doc)
-m.validate_boxed_inline_rationales(native,rows,repeat_rationales=False)
+m.validate_boxed_inline_rationales(native,rows,embedded_rationales=True)
 for mutate in [
     lambda q:q.update(question=q['question']+' altérée'),
     lambda q:q['choices'].__setitem__(0,'Choix altéré'),
@@ -32,7 +32,7 @@ for mutate in [
     lambda q:q['rationales'].__setitem__(0,'Justification altérée.'),
 ]:
     changed=copy.deepcopy(rows);mutate(changed[0])
-    try:m.validate_boxed_inline_rationales(native,changed,repeat_rationales=False)
+    try:m.validate_boxed_inline_rationales(native,changed,embedded_rationales=True)
     except AssertionError:pass
     else:raise AssertionError('Altération acceptée dans le profil à correction unique')
 try:m.validate_boxed_inline_rationales(native,rows)

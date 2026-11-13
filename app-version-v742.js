@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.193';
+const VERSION='8.30.194';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Prévention et promotion de la santé : fiche écrite,60 QCM corrigés,80 flashcards,54 définitions et4 vocaux avec playlist.`;

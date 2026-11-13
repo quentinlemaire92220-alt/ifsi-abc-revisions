@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "psychometrie_v001",
+    "number": 1,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Psychométrie » ?",
+    "back": "Théorie et méthodologie de construction et d’utilisation des instruments de mesure des caractéristiques mentales.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v002",
+    "number": 2,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Caractéristique mentale » ?",
+    "back": "Dimension psychologique étudiée, par exemple connaissance, trait de personnalité, mémoire ou langage.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v003",
+    "number": 3,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Cognition » ?",
+    "back": "Ensemble des processus impliqués notamment dans l’attention, le langage, la mémoire et le raisonnement.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v004",
+    "number": 4,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Instrument psychométrique » ?",
+    "back": "Outil construit pour recueillir et interpréter des indicateurs psychologiques selon une méthode définie.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v005",
+    "number": 5,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Test mental » ?",
+    "back": "Situation standardisée donnant lieu à une observation et à une comparaison des réponses avec celles d’autres individus.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v006",
+    "number": 6,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Standardisation » ?",
+    "back": "Définition de conditions communes de passation, de consignes, de matériel et de cotation.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v007",
+    "number": 7,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Étalonnage » ?",
+    "back": "Construction de références permettant de situer un résultat individuel dans un groupe pertinent.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v008",
+    "number": 8,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Population de référence » ?",
+    "back": "Population par rapport à laquelle les performances d’une personne sont interprétées.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v009",
+    "number": 9,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Échantillon représentatif » ?",
+    "back": "Groupe choisi pour refléter les caractéristiques pertinentes de la population étudiée.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v010",
+    "number": 10,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Moyenne » ?",
+    "back": "Valeur centrale obtenue en divisant la somme des résultats par leur nombre.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v011",
+    "number": 11,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Écart-type » ?",
+    "back": "Indicateur de la dispersion des valeurs autour de leur moyenne.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v012",
+    "number": 12,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Fréquence relative » ?",
+    "back": "Part des observations appartenant à une catégorie ou à une classe de résultats.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v013",
+    "number": 13,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Classement quantitatif » ?",
+    "back": "Positionnement selon une valeur ou un niveau chiffré.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v014",
+    "number": 14,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "vocabulary",
+    "front": "Comment définir « Classement typologique » ?",
+    "back": "Regroupement selon un type ou une forme de fonctionnement.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c004",
+    "number": 15,
+    "courseId": "psychometrie",
+    "theme": "Fondements et mesure",
+    "kind": "comparison_or_application",
+    "front": "Quel repère marque la diffusion des tests d’intelligence et quels enjeux leur usage éducatif soulève-t-il ?",
+    "back": "L’échelle de Binet de 1905 a favorisé leur développement. Une utilisation éducative peut soulever des enjeux sociaux.",
+    "explanation": "Un résultat sert à éclairer une décision ; il ne résume pas la personne ni son devenir."
+  },
+  {
+    "id": "psychometrie_v015",
+    "number": 16,
+    "courseId": "psychometrie",
+    "theme": "Qualités psychométriques",
+    "kind": "vocabulary",
+    "front": "Comment définir « Fidélité » ?",
+    "back": "Qualité de stabilité et de reproductibilité de la mesure dans des conditions comparables.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v016",
+    "number": 17,
+    "courseId": "psychometrie",
+    "theme": "Qualités psychométriques",
+    "kind": "vocabulary",
+    "front": "Comment définir « Validité » ?",
+    "back": "Adéquation entre ce que l’instrument mesure et le phénomène qu’il prétend évaluer.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v017",
+    "number": 18,
+    "courseId": "psychometrie",
+    "theme": "Qualités psychométriques",
+    "kind": "vocabulary",
+    "front": "Comment définir « Sensibilité aux variations » ?",
+    "back": "Capacité d’un instrument à distinguer les variations pertinentes du phénomène étudié.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c006",
+    "number": 19,
+    "courseId": "psychometrie",
+    "theme": "Qualités psychométriques",
+    "kind": "comparison_or_application",
+    "front": "Une échelle annoncée comme une mesure de dépression évalue surtout l’anxiété. Quelle qualité est mise en question ?",
+    "back": "La validité est mise en question : il faut vérifier si l’échelle mesure bien le phénomène ciblé.",
+    "explanation": "La fidélité concerne la reproductibilité. Une mesure peut être stable tout en visant la mauvaise dimension."
+  },
+  {
+    "id": "psychometrie_c007",
+    "number": 20,
+    "courseId": "psychometrie",
+    "theme": "Qualités psychométriques",
+    "kind": "comparison_or_application",
+    "front": "Pourquoi fidélité ne signifie-t-elle ni score immuable ni validité garantie ?",
+    "back": "La fidélité concerne la reproductibilité dans des conditions comparables. Elle n’exige pas un score identique toute la vie et ne garantit pas la validité.",
+    "explanation": "Comparer des résultats exige de considérer l’évolution réelle, l’état de la personne et les conditions de passation."
+  },
+  {
+    "id": "psychometrie_v018",
+    "number": 21,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Examen psychologique » ?",
+    "back": "Évaluation clinique approfondie du fonctionnement global, menée par un psychologue avec plusieurs méthodes.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v019",
+    "number": 22,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Batterie » ?",
+    "back": "Ensemble organisé d’épreuves complémentaires.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v020",
+    "number": 23,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Subtest » ?",
+    "back": "Épreuve particulière à l’intérieur d’une batterie composite.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v021",
+    "number": 24,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Accord éclairé » ?",
+    "back": "Accord recherché après une information compréhensible sur la démarche, ses objectifs et son contenu.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v022",
+    "number": 25,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Adhésion » ?",
+    "back": "Participation et engagement de la personne dans la démarche proposée.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v023",
+    "number": 26,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Question clinique » ?",
+    "back": "Problème auquel l’évaluation cherche à apporter des éléments de réponse.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v024",
+    "number": 27,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Indication thérapeutique » ?",
+    "back": "Orientation du soin fondée sur les besoins et caractéristiques de la personne.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v025",
+    "number": 28,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "vocabulary",
+    "front": "Comment définir « Pronostic » ?",
+    "back": "Appréciation argumentée et incertaine de l’évolution possible d’une situation.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c009",
+    "number": 29,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "comparison_or_application",
+    "front": "Quels objectifs un bilan psychologique peut-il poursuivre pour aider à la prise en charge ?",
+    "back": "Évaluer cognition, symptômes et intensité ; comprendre les ressources et vulnérabilités ; soutenir l’orientation et les objectifs thérapeutiques ; apprécier les effets de la prise en charge et l’évolution possible.",
+    "explanation": "Il peut aussi explorer la cognition, soutenir l’orientation et aider au pronostic, qui reste incertain."
+  },
+  {
+    "id": "psychometrie_c011",
+    "number": 30,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "comparison_or_application",
+    "front": "L’école demande un bilan pour un enfant. Comment associer l’enfant à la démarche ?",
+    "back": "Rechercher son adhésion autant que possible. Expliquer la démarche dans un langage accessible.",
+    "explanation": "La demande d’un tiers ne remplace pas la recherche de l’adhésion du sujet. L’organisation des rendez-vous dépend de ses besoins."
+  },
+  {
+    "id": "psychometrie_c012",
+    "number": 31,
+    "courseId": "psychometrie",
+    "theme": "Bilan psychologique",
+    "kind": "comparison_or_application",
+    "front": "La souffrance persiste mais une personne souhaite poursuivre les entretiens. Comment apprécier les effets de l’accompagnement ?",
+    "back": "L’évolution doit être appréciée sur plusieurs dimensions, en tenant compte du vécu de la personne et des effets du soutien.",
+    "explanation": "Le soutien, les ressources et l’intensité des difficultés peuvent évoluer différemment. L’absence de disparition immédiate des symptômes ne prouve pas une absence d’effet."
+  },
+  {
+    "id": "psychometrie_v026",
+    "number": 32,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "vocabulary",
+    "front": "Comment définir « Entretien directif » ?",
+    "back": "Entretien avec questions et réponses encadrées selon une organisation définie.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v027",
+    "number": 33,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "vocabulary",
+    "front": "Comment définir « Entretien semi-directif » ?",
+    "back": "Entretien guidé laissant une souplesse dans le développement des réponses.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v028",
+    "number": 34,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "vocabulary",
+    "front": "Comment définir « Entretien non directif » ?",
+    "back": "Entretien ouvert soutenu par des relances sans orientation imposée du contenu.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c013",
+    "number": 35,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "comparison_or_application",
+    "front": "Une aisance relationnelle permet-elle d’écarter des difficultés cognitives ?",
+    "back": "Non. L’aisance dans la relation peut coexister avec des difficultés cognitives ; les attentes et les explications doivent être adaptées.",
+    "explanation": "Les compétences d’échange et les performances dans d’autres domaines ne se confondent pas. Aucun contraste isolé ne démontre une cause précise."
+  },
+  {
+    "id": "psychometrie_c014",
+    "number": 36,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "comparison_or_application",
+    "front": "Quels facteurs peuvent limiter l’interprétation d’un bilan psychologique ?",
+    "back": "Une formation insuffisante à la passation et à l’analyse. Une fatigue importante. Une compréhension insuffisante des consignes.",
+    "explanation": "Les résultats sont remis en lien avec la situation, le langage, l’entretien et les observations."
+  },
+  {
+    "id": "psychometrie_c016",
+    "number": 37,
+    "courseId": "psychometrie",
+    "theme": "Contexte et entretiens",
+    "kind": "comparison_or_application",
+    "front": "Comment distinguer les entretiens directif, semi-directif et non directif ?",
+    "back": "Directif : questions et réponses davantage encadrées. Semi-directif : guide et réponses développées. Non directif : parole ouverte, soutenue par des relances sans contenu imposé.",
+    "explanation": "L’entretien semi-directif associe un guide préparé à une souplesse dans le développement des réponses. Le choix dépend des capacités et de la demande."
+  },
+  {
+    "id": "psychometrie_v029",
+    "number": 38,
+    "courseId": "psychometrie",
+    "theme": "Développement du tout-petit",
+    "kind": "vocabulary",
+    "front": "Comment définir « Développement psychomoteur » ?",
+    "back": "Évolution des acquisitions motrices, de coordination, langagières et relationnelles du jeune enfant.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v030",
+    "number": 39,
+    "courseId": "psychometrie",
+    "theme": "Développement du tout-petit",
+    "kind": "vocabulary",
+    "front": "Comment définir « Brunet-Lézine révisée » ?",
+    "back": "Échelle de développement du jeune enfant illustrant posture, coordination, langage et sociabilité.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c018",
+    "number": 40,
+    "courseId": "psychometrie",
+    "theme": "Développement du tout-petit",
+    "kind": "comparison_or_application",
+    "front": "Pourquoi évaluer le développement psychomoteur d’un tout-petit avec des tâches adaptées ?",
+    "back": "Une observation de compétences adaptées à son développement. Un repérage des difficultés permettant une intervention précoce.",
+    "explanation": "Les repères aident à situer le développement ; ils ne constituent pas un calendrier universel d’acquisition."
+  },
+  {
+    "id": "psychometrie_c019",
+    "number": 41,
+    "courseId": "psychometrie",
+    "theme": "Développement du tout-petit",
+    "kind": "comparison_or_application",
+    "front": "Quelles précautions entourent l’utilisation des repères de développement du jeune enfant ?",
+    "back": "Relier les acquisitions aux conditions d’observation. Compléter certaines observations par des questions aux parents.",
+    "explanation": "Un item non réussi n’établit pas un diagnostic. La connaissance des repères ne remplace pas la formation à l’outil."
+  },
+  {
+    "id": "psychometrie_v031",
+    "number": 42,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Aptitude » ?",
+    "back": "Capacité mise en jeu dans un domaine ou une catégorie de tâches.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v032",
+    "number": 43,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « QI : quotient intellectuel » ?",
+    "back": "Indicateur de positionnement des performances intellectuelles par rapport à une référence.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v033",
+    "number": 44,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « QIT : QI total » ?",
+    "back": "Score global d’une batterie d’intelligence, à interpréter avec les indices et le profil.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v034",
+    "number": 45,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Indice factoriel » ?",
+    "back": "Score regroupant des performances pour renseigner un domaine cognitif.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v035",
+    "number": 46,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Profil cognitif » ?",
+    "back": "Organisation des performances, ressources, points forts et difficultés dans plusieurs domaines.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v036",
+    "number": 47,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Homogénéité / hétérogénéité » ?",
+    "back": "Proximité relative ou dispersion des performances ; ne suffit pas à expliquer leur origine.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v037",
+    "number": 48,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « WPPSI » ?",
+    "back": "Wechsler Preschool and Primary Scale of Intelligence : échelle pour l’âge préscolaire.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v038",
+    "number": 49,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « WISC » ?",
+    "back": "Wechsler Intelligence Scale for Children : échelle pour l’enfant et l’adolescent.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v039",
+    "number": 50,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « WAIS » ?",
+    "back": "Wechsler Adult Intelligence Scale : échelle pour l’adulte.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v040",
+    "number": 51,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « K-ABC » ?",
+    "back": "Kaufman Assessment Battery for Children : batterie cognitive destinée à l’enfant.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v041",
+    "number": 52,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « ICV » ?",
+    "back": "Indice de compréhension verbale : compréhension et mobilisation des connaissances verbales.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v042",
+    "number": 53,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « IMT » ?",
+    "back": "Indice de mémoire de travail : maintien et utilisation temporaire des informations.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v043",
+    "number": 54,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « IVT » ?",
+    "back": "Indice de vitesse de traitement : rapidité et efficience dans certaines tâches.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v044",
+    "number": 55,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « IVS » ?",
+    "back": "Indice visuo-spatial : analyse et organisation des relations spatiales.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v045",
+    "number": 56,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « IRF » ?",
+    "back": "Indice de raisonnement fluide : recherche de relations et résolution de problèmes nouveaux.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v046",
+    "number": 57,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Intelligence cristallisée » ?",
+    "back": "Mobilisation de connaissances et compétences acquises au cours de l’expérience.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v047",
+    "number": 58,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Facteur G » ?",
+    "back": "Facteur général utilisé pour décrire ce qui est commun à différentes performances intellectuelles.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v048",
+    "number": 59,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Allophone » ?",
+    "back": "Personne dont la langue première est différente de celle utilisée dans la situation considérée.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v049",
+    "number": 60,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "vocabulary",
+    "front": "Comment définir « Trouble mnésique » ?",
+    "back": "Difficulté touchant la mémoire.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c020",
+    "number": 61,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "comparison_or_application",
+    "front": "À quels publics correspondent la WPPSI, le WISC et la WAIS ?",
+    "back": "La WPPSI correspond à l’âge préscolaire, le WISC à l’enfant et à l’adolescent, et la WAIS à l’adulte.",
+    "explanation": "Les tranches exactes et l’organisation des épreuves dépendent de l’édition utilisée."
+  },
+  {
+    "id": "psychometrie_c021",
+    "number": 62,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "comparison_or_application",
+    "front": "Que distinguent mémoire de travail, vitesse de traitement, visuo-spatial et raisonnement fluide ?",
+    "back": "Mémoire de travail : maintien et utilisation temporaire des informations. Vitesse de traitement : rapidité dans certaines tâches. Visuo-spatial : organisation des relations spatiales. Raisonnement fluide : recherche de règles pour résoudre des problèmes nouveaux.",
+    "explanation": "La vitesse de traitement décrit la rapidité dans certaines tâches, et non la durée totale de la consultation. La compréhension verbale explore des capacités langagières et des connaissances."
+  },
+  {
+    "id": "psychometrie_c022",
+    "number": 63,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "comparison_or_application",
+    "front": "Comment interpréter un profil cognitif dont les performances sont très différentes selon les domaines ?",
+    "back": "Il faut apprécier le résultat global avec les indices, les ressources et les difficultés, et expliquer les écarts entre domaines.",
+    "explanation": "Calculer une valeur et apprécier son sens sont deux questions distinctes. La dispersion seule n’établit pas une origine organique ou psychique."
+  },
+  {
+    "id": "psychometrie_c023",
+    "number": 64,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "comparison_or_application",
+    "front": "Quelles précautions prendre pour évaluer les capacités cognitives d’un enfant allophone ?",
+    "back": "Vérifier la pertinence de la population de référence. Envisager un outil moins dépendant du langage si la demande le justifie.",
+    "explanation": "Un test moins verbal n’est pas nécessairement indépendant de toute culture. La maîtrise du français ne permet pas, à elle seule, de conclure sur le niveau intellectuel."
+  },
+  {
+    "id": "psychometrie_c024",
+    "number": 65,
+    "courseId": "psychometrie",
+    "theme": "Fonctionnement intellectuel",
+    "kind": "comparison_or_application",
+    "front": "Que faut-il retenir du profil cognitif et de l’organisation d’une passation ?",
+    "back": "Le profil décrit des ressources et des difficultés. L’organisation doit respecter les règles de l’instrument.",
+    "explanation": "Attention, fatigue et compréhension doivent être considérées. Une durée moyenne n’est pas une durée maximale obligatoire."
+  },
+  {
+    "id": "psychometrie_v050",
+    "number": 66,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Personnalité » ?",
+    "back": "Ensemble des tendances relativement stables à penser, agir et réagir.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v051",
+    "number": 67,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Trait de personnalité » ?",
+    "back": "Dimension habituelle de fonctionnement, qui n’est pas en soi un trouble.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v052",
+    "number": 68,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Égosyntonie » ?",
+    "back": "Caractère d’un vécu ou fonctionnement ressenti comme accordé à soi.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v053",
+    "number": 69,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Insight » ?",
+    "back": "Capacité à reconnaître et comprendre certains aspects de son état et de ses difficultés.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v054",
+    "number": 70,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Auto-évaluation » ?",
+    "back": "Recueil des réponses de la personne sur son propre fonctionnement.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v055",
+    "number": 71,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Hétéro-évaluation » ?",
+    "back": "Évaluation par une autre personne, selon un outil et un cadre définis.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v056",
+    "number": 72,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « NEO PI-R » ?",
+    "back": "Revised NEO Personality Inventory : inventaire des cinq dimensions de personnalité et de leurs facettes.",
+    "explanation": "Le NEO PI-R explore cinq dimensions, chacune précisée par six facettes. Il décrit des dimensions plutôt qu’un type unique."
+  },
+  {
+    "id": "psychometrie_v057",
+    "number": 73,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Facette » ?",
+    "back": "Sous-dimension précisant un domaine plus général de personnalité.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v058",
+    "number": 74,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « MMPI » ?",
+    "back": "Minnesota Multiphasic Personality Inventory : inventaire de personnalité explorant notamment des dimensions psychopathologiques.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v059",
+    "number": 75,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « EPI » ?",
+    "back": "Eysenck Personality Inventory : inventaire de personnalité.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v060",
+    "number": 76,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « BFI » ?",
+    "back": "Big Five Inventory : questionnaire associé au modèle des cinq grands traits.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v093",
+    "number": 77,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Névrosisme » ?",
+    "back": "Dimension de personnalité portant notamment sur la tendance à éprouver des émotions négatives.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v094",
+    "number": 78,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Agréabilité » ?",
+    "back": "Dimension de personnalité concernant la coopération et la manière d’entrer en relation avec autrui.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v095",
+    "number": 79,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Conscience, dimension de personnalité » ?",
+    "back": "Dimension portant sur l’organisation et l’engagement dans les activités ; à distinguer de la conscience de ses troubles.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v096",
+    "number": 80,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Extraversion » ?",
+    "back": "Dimension de personnalité concernant l’orientation vers les interactions et l’activité sociale.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v097",
+    "number": 81,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "vocabulary",
+    "front": "Comment définir « Ouverture » ?",
+    "back": "Dimension de personnalité concernant la curiosité et l’exploration d’idées ou d’expériences.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c027",
+    "number": 82,
+    "courseId": "psychometrie",
+    "theme": "Personnalité et auto-évaluation",
+    "kind": "comparison_or_application",
+    "front": "Comment comprendre les limites de l’auto-évaluation lorsque l’insight est réduit ou qu’un trait est égosyntonique ?",
+    "back": "L’auto-évaluation dépend notamment de la compréhension des questions. Un trait égosyntonique peut entraîner des difficultés relationnelles.",
+    "explanation": "Un fonctionnement vécu comme accordé à soi peut entraîner une souffrance ou un retentissement. Un insight limité ne rend pas systématiquement la parole mensongère."
+  },
+  {
+    "id": "psychometrie_v061",
+    "number": 83,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "vocabulary",
+    "front": "Comment définir « Méthode projective » ?",
+    "back": "Situation utilisant un matériel ambigu pour explorer l’élaboration de réponses dans un cadre clinique spécifique.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v062",
+    "number": 84,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "vocabulary",
+    "front": "Comment définir « Rorschach » ?",
+    "back": "Méthode utilisant des taches d’encre avec un cadre de passation et d’analyse.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v063",
+    "number": 85,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "vocabulary",
+    "front": "Comment définir « TAT » ?",
+    "back": "Thematic Apperception Test : élaboration d’histoires à partir de scènes ambiguës.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v064",
+    "number": 86,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "vocabulary",
+    "front": "Comment définir « CAT » ?",
+    "back": "Children’s Apperception Test : méthode thématique destinée à l’enfant.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v065",
+    "number": 87,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "vocabulary",
+    "front": "Comment définir « Patte-Noire » ?",
+    "back": "Méthode projective pour l’enfant fondée sur des planches et des récits.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c030",
+    "number": 88,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "comparison_or_application",
+    "front": "Quels matériels distinguent le Rorschach, le TAT, le CAT et Patte-Noire ?",
+    "back": "Rorschach : taches d’encre. TAT : scènes ambiguës et histoires. CAT : méthode thématique pour l’enfant, notamment avec scènes animalières. Patte-Noire : planches et récits chez l’enfant.",
+    "explanation": "Le Rorschach utilise des taches d’encre. Le TAT sollicite des histoires à partir de scènes ambiguës. Ces méthodes nécessitent une formation et un cadre d’analyse."
+  },
+  {
+    "id": "psychometrie_c031",
+    "number": 89,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "comparison_or_application",
+    "front": "Pourquoi tenir compte des dessins scolaires répétés lorsqu’un enfant de cinq ans est évalué par dessin ?",
+    "back": "Considérer l’influence des exercices scolaires répétés. Relier le dessin à l’âge, au contexte et aux échanges associés.",
+    "explanation": "Une production graphique doit être reliée à l’âge, au contexte et aux échanges associés. Aucun détail isolé n’est une preuve diagnostique."
+  },
+  {
+    "id": "psychometrie_c032",
+    "number": 90,
+    "courseId": "psychometrie",
+    "theme": "Méthodes projectives et dessin",
+    "kind": "comparison_or_application",
+    "front": "Quels éléments et échanges peuvent enrichir l’évaluation clinique par dessin ?",
+    "back": "Le dessin de famille peut être complété par des questions. Le thème et l’organisation de la feuille peuvent être observés.",
+    "explanation": "Les consignes, l’âge et l’histoire du sujet sont nécessaires. Le dessin de l’arbre de Koch n’est pas une copie de figure géométrique."
+  },
+  {
+    "id": "psychometrie_v066",
+    "number": 91,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Psychopathologie » ?",
+    "back": "Étude des troubles psychiques et des processus qui y participent.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v067",
+    "number": 92,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « SCL-90-R » ?",
+    "back": "Symptom Checklist-90-Revised : inventaire de symptômes psychologiques.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v068",
+    "number": 93,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « MINI » ?",
+    "back": "Mini International Neuropsychiatric Interview : entretien diagnostique structuré.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v069",
+    "number": 94,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « BDI-13 » ?",
+    "back": "Inventaire abrégé de dépression de Beck à 13 items cotés de 0 à 3, total de 0 à 39.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v070",
+    "number": 95,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Item » ?",
+    "back": "Unité d’un instrument : question, proposition ou tâche à laquelle une réponse est recueillie.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v071",
+    "number": 96,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Cotation » ?",
+    "back": "Attribution des valeurs prévues par les règles d’un instrument.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v072",
+    "number": 97,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Échelle de Hamilton » ?",
+    "back": "Instrument d’hétéro-évaluation de la dépression.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v076",
+    "number": 98,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « GDS » ?",
+    "back": "Geriatric Depression Scale : échelle de dépression destinée aux personnes âgées.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v098",
+    "number": 99,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Régulation émotionnelle » ?",
+    "back": "Processus permettant de reconnaître et de moduler les émotions et leurs expressions.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v099",
+    "number": 100,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Schéma cognitif » ?",
+    "back": "Organisation des croyances et attentes orientant l’interprétation des situations.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v100",
+    "number": 101,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Mécanisme défensif » ?",
+    "back": "Mode de fonctionnement psychique participant à la manière de faire face aux tensions.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v101",
+    "number": 102,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Lieu ou locus de contrôle » ?",
+    "back": "Manière d’attribuer les événements à ses actions ou à des facteurs extérieurs ; le locus externe privilégie ces derniers.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v102",
+    "number": 103,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Résignation acquise » ?",
+    "back": "Sentiment appris que ses actions ne peuvent plus modifier l’issue d’une situation.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v103",
+    "number": 104,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Salutogène / pathogène » ?",
+    "back": "Qui soutient la santé / qui participe à l’apparition ou au maintien des difficultés.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v104",
+    "number": 105,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Perfectionnisme » ?",
+    "back": "Recherche d’exigences élevées et de maîtrise pouvant participer à des difficultés selon son intensité et son fonctionnement.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v105",
+    "number": 106,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "vocabulary",
+    "front": "Comment définir « Impulsivité » ?",
+    "back": "Tendance à agir rapidement avec une anticipation ou un contrôle limités de la réponse.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c033",
+    "number": 107,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "comparison_or_application",
+    "front": "Comment distinguer Beck, Hamilton et GDS dans l’évaluation de la dépression ?",
+    "back": "Beck : auto-évaluation. Hamilton : hétéro-évaluation clinique. GDS : échelle de dépression destinée à la personne âgée.",
+    "explanation": "Hamilton est présenté comme une hétéro-évaluation clinique. Un score de dépression ne constitue pas à lui seul tout le bilan."
+  },
+  {
+    "id": "psychometrie_c034",
+    "number": 108,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "comparison_or_application",
+    "front": "Quel score total est possible avec treize items cotés chacun de zéro à trois ?",
+    "back": "Le score peut aller de zéro à trente-neuf.",
+    "explanation": "Le minimum est zéro et le maximum est treize multiplié par trois. Ne pas transposer les règles d’une version à une autre."
+  },
+  {
+    "id": "psychometrie_c035",
+    "number": 109,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "comparison_or_application",
+    "front": "Dans un inventaire à treize items, cinq réponses valent deux, trois valent un et cinq valent zéro. Quel total obtient-on et quelle limite retenir ?",
+    "back": "Le total est de treize points. Il doit être interprété avec les règles de la version utilisée.",
+    "explanation": "Le calcul est cinq fois deux, plus trois fois un, soit treize. Le total ne remplace pas l’entretien ; une réponse préoccupante garde son importance."
+  },
+  {
+    "id": "psychometrie_c036",
+    "number": 110,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "comparison_or_application",
+    "front": "Au-delà d’une catégorie diagnostique, que peut explorer un questionnaire psychologique ?",
+    "back": "Les croyances et processus de régulation émotionnelle. L’intensité des manifestations dépressives. La qualité de vie ou le désir de changement.",
+    "explanation": "Il peut aussi concerner la personnalité, l’estime de soi, les relations ou les conséquences des difficultés. Il ne décrit pas à lui seul tout le fonctionnement."
+  },
+  {
+    "id": "psychometrie_c037",
+    "number": 111,
+    "courseId": "psychometrie",
+    "theme": "Questionnaires et dépression",
+    "kind": "comparison_or_application",
+    "front": "Comment distinguer résignation acquise, locus de contrôle externe et facteurs salutogènes ?",
+    "back": "La résignation acquise renvoie au sentiment appris que ses actions ne changent plus l’issue. Le locus externe concerne l’attribution à des facteurs extérieurs. Un facteur salutogène soutient la santé.",
+    "explanation": "Le locus externe privilégie l’attribution des événements à des facteurs extérieurs. Il n’est pas synonyme de résignation et ne constitue pas un diagnostic."
+  },
+  {
+    "id": "psychometrie_v073",
+    "number": 112,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "vocabulary",
+    "front": "Comment définir « Conners » ?",
+    "back": "Famille de questionnaires sur les comportements et difficultés, avec versions adaptées aux informateurs.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v074",
+    "number": 113,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "vocabulary",
+    "front": "Comment définir « Troubles internalisés » ?",
+    "back": "Difficultés exprimées notamment dans l’expérience interne, comme anxiété ou dépression.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v075",
+    "number": 114,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "vocabulary",
+    "front": "Comment définir « Troubles externalisés » ?",
+    "back": "Difficultés se manifestant davantage dans les conduites et interactions observables.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c038",
+    "number": 115,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "comparison_or_application",
+    "front": "Quelle différence entre auto-évaluation et hétéro-évaluation, et quelle limite partagent-elles ?",
+    "back": "En auto-évaluation, le sujet répond sur son fonctionnement. En hétéro-évaluation, un tiers répond selon l’outil. Les deux modalités peuvent être influencées par des biais.",
+    "explanation": "Chaque point de vue possède des limites. Compréhension et présentation de soi comptent pour le sujet ; contexte et attentes comptent aussi pour le tiers."
+  },
+  {
+    "id": "psychometrie_c039",
+    "number": 116,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "comparison_or_application",
+    "front": "Un enfant est agité pendant les devoirs du soir mais plus attentif en classe le matin. Comment confronter les observations ?",
+    "back": "Examiner les contextes et les exigences des tâches. Croiser les informations de plusieurs informateurs. Rechercher l’effet possible de la fatigue.",
+    "explanation": "Les réponses peuvent refléter des situations différentes. Le désaccord entre observateurs ne suffit pas à poser un diagnostic."
+  },
+  {
+    "id": "psychometrie_c040",
+    "number": 117,
+    "courseId": "psychometrie",
+    "theme": "Conners et informateurs",
+    "kind": "comparison_or_application",
+    "front": "Comment utiliser les questionnaires de Conners et distinguer difficultés internalisées et externalisées ?",
+    "back": "Les versions de Conners peuvent recueillir plusieurs points de vue. L’anxiété et la dépression illustrent les difficultés internalisées ; les conduites et interactions observables éclairent les difficultés externalisées.",
+    "explanation": "Les difficultés externalisées se manifestent davantage dans les conduites et interactions. Un résultat de questionnaire n’est pas un diagnostic automatique."
+  },
+  {
+    "id": "psychometrie_v077",
+    "number": 118,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "vocabulary",
+    "front": "Comment définir « Psychoéducation » ?",
+    "back": "Information et soutien aidant la personne à comprendre ses difficultés et à participer à leur prise en charge.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v078",
+    "number": 119,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "vocabulary",
+    "front": "Comment définir « Registre d’observation » ?",
+    "back": "Relevé organisé dans le temps de faits, situations, comportements ou expériences.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v079",
+    "number": 120,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "vocabulary",
+    "front": "Comment définir « Énurésie » ?",
+    "back": "Émissions d’urine involontaires dans une situation où le contrôle est attendu ; leur suivi peut être décrit par un registre.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v080",
+    "number": 121,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "vocabulary",
+    "front": "Comment définir « Cognition au sens de pensée » ?",
+    "back": "Pensée ou interprétation relevée dans une situation, notamment dans un registre d’auto-observation.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c041",
+    "number": 122,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "comparison_or_application",
+    "front": "Comment décrire un comportement de manière factuelle plutôt que par un jugement ?",
+    "back": "L’enfant s’est levé quatre fois pendant dix minutes d’exercice. La personne est restée engagée dans l’activité pendant six minutes.",
+    "explanation": "Préciser le comportement, le contexte et la période d’observation. Une intention supposée, comme vouloir contrarier l’équipe, n’est pas un fait directement observé."
+  },
+  {
+    "id": "psychometrie_c042",
+    "number": 123,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "comparison_or_application",
+    "front": "À quoi sert un registre d’auto-observation et peut-il modifier les comportements ?",
+    "back": "Repérer les liens entre situations, pensées et émotions. Soutenir la participation dans une démarche de psychoéducation. Aider la personne à prendre conscience de certaines répétitions.",
+    "explanation": "Le fait d’observer et de noter peut lui-même participer au changement. Le registre ne remplace pas les échanges cliniques."
+  },
+  {
+    "id": "psychometrie_c043",
+    "number": 124,
+    "courseId": "psychometrie",
+    "theme": "Observation et registres",
+    "kind": "comparison_or_application",
+    "front": "Que peuvent apporter les proches lorsque la personne décrit difficilement son fonctionnement quotidien ?",
+    "back": "Des observations dans d’autres contextes. Des informations complémentaires sur son fonctionnement habituel.",
+    "explanation": "Leurs observations complètent l’évaluation sans remplacer l’expression du sujet ni l’analyse professionnelle."
+  },
+  {
+    "id": "psychometrie_v081",
+    "number": 125,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Neuropsychologie » ?",
+    "back": "Étude des relations entre fonctionnement cérébral, cognition et comportement, notamment lors de troubles neurologiques.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v082",
+    "number": 126,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Fonctions exécutives » ?",
+    "back": "Processus d’organisation, de contrôle et d’adaptation de l’activité à un objectif.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v083",
+    "number": 127,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « MMSE / MMS » ?",
+    "back": "Mini Mental State Examination : outil de repérage cognitif dont le total est coté sur 30.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v084",
+    "number": 128,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Orientation temporo-spatiale » ?",
+    "back": "Capacité à se repérer dans le temps et dans l’espace.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v085",
+    "number": 129,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Apprentissage / rappel » ?",
+    "back": "Enregistrement d’informations puis restitution après un délai ; deux temps à distinguer.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v086",
+    "number": 130,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Praxies constructives » ?",
+    "back": "Organisation d’une réalisation visuo-motrice, par exemple une copie de figure.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v087",
+    "number": 131,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "vocabulary",
+    "front": "Comment définir « Dépistage » ?",
+    "back": "Repérage d’une possible difficulté nécessitant une appréciation plus complète.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c045",
+    "number": 132,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "comparison_or_application",
+    "front": "Quels domaines composent la version consensuelle du MMSE et combien de points leur sont attribués ?",
+    "back": "Orientation : dix points. Apprentissage : trois. Attention et calcul : cinq. Rappel : trois. Langage : huit. Praxies constructives : un. Total : trente.",
+    "explanation": "Le langage est coté sur huit points, le rappel sur trois et les praxies constructives sur un ; le total est sur trente."
+  },
+  {
+    "id": "psychometrie_c046",
+    "number": 133,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "comparison_or_application",
+    "front": "Quelles conditions préparer pour une passation de repérage cognitif ?",
+    "back": "Noter l’anxiété, la fatigue et les difficultés de compréhension. Prévoir un lieu calme et un temps suffisant. Informer la personne et rester bienveillant.",
+    "explanation": "La bienveillance soutient la participation sans souffler les réponses. Les consignes et la cotation doivent rester respectées."
+  },
+  {
+    "id": "psychometrie_c047",
+    "number": 134,
+    "courseId": "psychometrie",
+    "theme": "Neuropsychologie et MMSE",
+    "kind": "comparison_or_application",
+    "front": "Une personne âgée obtient un score faible au MMSE et paraît très anxieuse. Que transmettre et que ne pas conclure ?",
+    "back": "Transmettre le score, les réponses et les conditions de passation, dont l’anxiété, pour une interprétation globale par l’équipe.",
+    "explanation": "Ne pas annoncer une maladie particulière sur le seul total, modifier la cotation intuitivement ou considérer la difficulté comme normale du seul fait de l’âge."
+  },
+  {
+    "id": "psychometrie_v088",
+    "number": 135,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "vocabulary",
+    "front": "Comment définir « Approche catégorielle » ?",
+    "back": "Démarche recherchant les signes et critères permettant de reconnaître une catégorie de trouble.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v089",
+    "number": 136,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "vocabulary",
+    "front": "Comment définir « Approche dimensionnelle » ?",
+    "back": "Démarche décrivant une dimension selon son intensité plutôt que par sa seule présence ou absence.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v090",
+    "number": 137,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "vocabulary",
+    "front": "Comment définir « DSM » ?",
+    "back": "Diagnostic and Statistical Manual of Mental Disorders : classification diagnostique des troubles mentaux.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v091",
+    "number": 138,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "vocabulary",
+    "front": "Comment définir « CIM » ?",
+    "back": "Classification internationale des maladies.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_v092",
+    "number": 139,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "vocabulary",
+    "front": "Comment définir « Travail multidisciplinaire » ?",
+    "back": "Mise en commun des observations et compétences de plusieurs professions pour comprendre et accompagner une situation.",
+    "explanation": ""
+  },
+  {
+    "id": "psychometrie_c048",
+    "number": 140,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "comparison_or_application",
+    "front": "Comment l’approche catégorielle et l’approche dimensionnelle se complètent-elles ?",
+    "back": "L’approche catégorielle recherche un trouble à partir de signes et de critères. L’approche dimensionnelle décrit l’intensité d’une dimension ; elles peuvent se compléter.",
+    "explanation": "Reconnaître une catégorie ne dispense pas de considérer le contexte. Décrire l’intensité peut aussi permettre de suivre l’évolution."
+  },
+  {
+    "id": "psychometrie_c049",
+    "number": 141,
+    "courseId": "psychometrie",
+    "theme": "Approches et collaboration",
+    "kind": "comparison_or_application",
+    "front": "Quelle contribution infirmière apporte une évaluation psychologique ou cognitive ?",
+    "back": "Partager les observations avec les autres professionnels. Distinguer les faits observés des interprétations. Contribuer au suivi du fonctionnement quotidien.",
+    "explanation": "Utiliser un instrument suppose une formation et un cadre approprié. Le score ne permet pas de poser seul un diagnostic."
+  }
+]

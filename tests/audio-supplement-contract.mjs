@@ -58,7 +58,7 @@ export function validateFirstReleaseAudio(before,after,oldRegistry,registry,oldV
  const approved=new Set(),usedPaths=new Set();
  const hybridIds=firstReleaseAudioIds(before,after,{registry:oldRegistry,vocals:oldVocals},{registry,vocals:newVocals});
  for(const c of after.courses||[]){
-  if(c.deliveryMode==='first_release'&&c.packFormat==='hybrid_v1'&&c.vocals?.length&&c.vocals.every(id=>hybridIds.has(id))){
+  if(c.deliveryMode==='first_release'&&(c.packFormat==='hybrid_v1'||c.firstReleaseContract==='reviewed_complete_bundle_v1')&&c.vocals?.length&&c.vocals.every(id=>hybridIds.has(id))){
    for(const id of c.vocals){assert.ok(!approved.has(id));approved.add(id);}
    continue;
   }

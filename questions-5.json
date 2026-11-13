@@ -57241,6 +57241,2748 @@
     ]
   },
   {
+    "id": "PSYM-Q001",
+    "courseId": "psychometrie",
+    "number": 1,
+    "theme": "Fondements et mesure",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques relèvent du champ de la psychométrie ?",
+    "choices": [
+      "Les traits de personnalité.",
+      "La seule recherche de maladies neurologiques.",
+      "Les connaissances et le langage.",
+      "La valeur morale globale d’une personne.",
+      "Les composantes de la mémoire."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les tendances de pensée et de réaction font partie du champ étudié.",
+      "La psychométrie ne se limite pas aux maladies neurologiques.",
+      "Connaissances et langage sont des caractéristiques évaluables.",
+      "Une performance psychologique ne mesure pas une valeur morale.",
+      "La mémoire est une composante cognitive pouvant être évaluée."
+    ],
+    "explanation": "A — Vrai. Les tendances de pensée et de réaction font partie du champ étudié. B — Faux. La psychométrie ne se limite pas aux maladies neurologiques. C — Vrai. Connaissances et langage sont des caractéristiques évaluables. D — Faux. Une performance psychologique ne mesure pas une valeur morale. E — Vrai. La mémoire est une composante cognitive pouvant être évaluée.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v001",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Psychométrie » ?",
+        "answers": [
+          "Théorie et méthodologie de construction et d’utilisation des instruments de mesure des caractéristiques mentales."
+        ],
+        "explanation": "Théorie et méthodologie de construction et d’utilisation des instruments de mesure des caractéristiques mentales."
+      },
+      {
+        "id": "psychometrie_v002",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Caractéristique mentale » ?",
+        "answers": [
+          "Dimension psychologique étudiée, par exemple connaissance, trait de personnalité, mémoire ou langage."
+        ],
+        "explanation": "Dimension psychologique étudiée, par exemple connaissance, trait de personnalité, mémoire ou langage."
+      },
+      {
+        "id": "psychometrie_v003",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Cognition » ?",
+        "answers": [
+          "Ensemble des processus impliqués notamment dans l’attention, le langage, la mémoire et le raisonnement."
+        ],
+        "explanation": "Ensemble des processus impliqués notamment dans l’attention, le langage, la mémoire et le raisonnement."
+      },
+      {
+        "id": "psychometrie_v010",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Moyenne » ?",
+        "answers": [
+          "Valeur centrale obtenue en divisant la somme des résultats par leur nombre."
+        ],
+        "explanation": "Valeur centrale obtenue en divisant la somme des résultats par leur nombre."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q002",
+    "courseId": "psychometrie",
+    "number": 2,
+    "theme": "Fondements et mesure",
+    "difficulty": "easy",
+    "question": "Que permet la standardisation d’un test ?",
+    "choices": [
+      "Définir des consignes communes.",
+      "Encadrer le matériel et la cotation.",
+      "Déterminer la moyenne d’une population de référence.",
+      "Garantir la même performance à chaque participant.",
+      "Supprimer la nécessité d’une interprétation clinique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les consignes communes rendent les situations comparables.",
+      "Matériel et cotation participent aux conditions standardisées.",
+      "Les références de population relèvent de l’étalonnage.",
+      "Des conditions communes n’effacent pas les différences individuelles.",
+      "Les résultats gardent besoin d’être interprétés."
+    ],
+    "explanation": "A — Vrai. Les consignes communes rendent les situations comparables. B — Vrai. Matériel et cotation participent aux conditions standardisées. C — Faux. Les références de population relèvent de l’étalonnage. D — Faux. Des conditions communes n’effacent pas les différences individuelles. E — Faux. Les résultats gardent besoin d’être interprétés.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v006",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Standardisation » ?",
+        "answers": [
+          "Définition de conditions communes de passation, de consignes, de matériel et de cotation."
+        ],
+        "explanation": "Définition de conditions communes de passation, de consignes, de matériel et de cotation."
+      },
+      {
+        "id": "psychometrie_v005",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Test mental » ?",
+        "answers": [
+          "Situation standardisée donnant lieu à une observation et à une comparaison des réponses avec celles d’autres individus."
+        ],
+        "explanation": "Situation standardisée donnant lieu à une observation et à une comparaison des réponses avec celles d’autres individus."
+      },
+      {
+        "id": "psychometrie_v008",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Population de référence » ?",
+        "answers": [
+          "Population par rapport à laquelle les performances d’une personne sont interprétées."
+        ],
+        "explanation": "Population par rapport à laquelle les performances d’une personne sont interprétées."
+      },
+      {
+        "id": "psychometrie_v012",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Fréquence relative » ?",
+        "answers": [
+          "Part des observations appartenant à une catégorie ou à une classe de résultats."
+        ],
+        "explanation": "Part des observations appartenant à une catégorie ou à une classe de résultats."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q003",
+    "courseId": "psychometrie",
+    "number": 3,
+    "theme": "Fondements et mesure",
+    "difficulty": "easy",
+    "question": "Un enfant réalise un test cognitif étalonné pour son âge. À quoi sert l’étalonnage ?",
+    "choices": [
+      "Situer ses résultats par rapport à un groupe pertinent.",
+      "Attribuer une cause médicale à chaque difficulté.",
+      "Rendre inutile l’analyse de son profil.",
+      "Remplacer les consignes de passation.",
+      "Décrire toutes ses capacités futures."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les références permettent un positionnement individuel.",
+      "Le positionnement statistique n’identifie pas une cause médicale.",
+      "Les différences entre domaines restent importantes.",
+      "Étalonnage et consignes correspondent à deux fonctions différentes.",
+      "Un résultat ne prédit pas l’ensemble du devenir individuel."
+    ],
+    "explanation": "A — Vrai. Les références permettent un positionnement individuel. B — Faux. Le positionnement statistique n’identifie pas une cause médicale. C — Faux. Les différences entre domaines restent importantes. D — Faux. Étalonnage et consignes correspondent à deux fonctions différentes. E — Faux. Un résultat ne prédit pas l’ensemble du devenir individuel.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v007",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Étalonnage » ?",
+        "answers": [
+          "Construction de références permettant de situer un résultat individuel dans un groupe pertinent."
+        ],
+        "explanation": "Construction de références permettant de situer un résultat individuel dans un groupe pertinent."
+      },
+      {
+        "id": "psychometrie_v004",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Instrument psychométrique » ?",
+        "answers": [
+          "Outil construit pour recueillir et interpréter des indicateurs psychologiques selon une méthode définie."
+        ],
+        "explanation": "Outil construit pour recueillir et interpréter des indicateurs psychologiques selon une méthode définie."
+      },
+      {
+        "id": "psychometrie_v009",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Échantillon représentatif » ?",
+        "answers": [
+          "Groupe choisi pour refléter les caractéristiques pertinentes de la population étudiée."
+        ],
+        "explanation": "Groupe choisi pour refléter les caractéristiques pertinentes de la population étudiée."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q004",
+    "courseId": "psychometrie",
+    "number": 4,
+    "theme": "Fondements et mesure",
+    "difficulty": "medium",
+    "question": "Quelles affirmations décrivent correctement les tests et leurs limites ?",
+    "choices": [
+      "L’échelle de Binet de 1905 a favorisé leur développement.",
+      "Le classement typologique repose obligatoirement sur un rang numérique.",
+      "Un résultat chiffré est une mesure exhaustive de la personne.",
+      "Une utilisation éducative peut soulever des enjeux sociaux.",
+      "Un test et un examen clinique sont deux démarches équivalentes."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elle constitue un repère majeur dans la diffusion des tests.",
+      "Il regroupe selon un type plutôt que selon un rang chiffré.",
+      "Une mesure ne décrit qu’une partie du fonctionnement.",
+      "Les décisions d’orientation ont des conséquences individuelles et collectives.",
+      "Le bilan clinique peut intégrer des tests mais les dépasse."
+    ],
+    "explanation": "A — Vrai. Elle constitue un repère majeur dans la diffusion des tests. B — Faux. Il regroupe selon un type plutôt que selon un rang chiffré. C — Faux. Une mesure ne décrit qu’une partie du fonctionnement. D — Vrai. Les décisions d’orientation ont des conséquences individuelles et collectives. E — Faux. Le bilan clinique peut intégrer des tests mais les dépasse.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c004",
+        "theme": "Fondements et mesure",
+        "front": "Quel repère marque la diffusion des tests d’intelligence et quels enjeux leur usage éducatif soulève-t-il ?",
+        "answers": [
+          "L’échelle de Binet de 1905 a favorisé leur développement. Une utilisation éducative peut soulever des enjeux sociaux."
+        ],
+        "explanation": "Un résultat sert à éclairer une décision ; il ne résume pas la personne ni son devenir."
+      },
+      {
+        "id": "psychometrie_v011",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Écart-type » ?",
+        "answers": [
+          "Indicateur de la dispersion des valeurs autour de leur moyenne."
+        ],
+        "explanation": "Indicateur de la dispersion des valeurs autour de leur moyenne."
+      },
+      {
+        "id": "psychometrie_v013",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Classement quantitatif » ?",
+        "answers": [
+          "Positionnement selon une valeur ou un niveau chiffré."
+        ],
+        "explanation": "Positionnement selon une valeur ou un niveau chiffré."
+      },
+      {
+        "id": "psychometrie_v014",
+        "theme": "Fondements et mesure",
+        "front": "Comment définir « Classement typologique » ?",
+        "answers": [
+          "Regroupement selon un type ou une forme de fonctionnement."
+        ],
+        "explanation": "Regroupement selon un type ou une forme de fonctionnement."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q005",
+    "courseId": "psychometrie",
+    "number": 5,
+    "theme": "Qualités psychométriques",
+    "difficulty": "easy",
+    "question": "À quelle qualité correspond la reproductibilité d’une mesure dans des conditions comparables ?",
+    "choices": [
+      "La sensibilité aux variations.",
+      "L’étalonnage par âge.",
+      "La validité du construit annoncé.",
+      "La fidélité.",
+      "L’intensité du symptôme."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette sensibilité concerne la finesse de discrimination.",
+      "L’étalonnage fournit des références de comparaison.",
+      "La validité concerne l’adéquation de la mesure au phénomène visé.",
+      "La fidélité concerne la stabilité et la reproductibilité conditionnelles.",
+      "L’intensité décrit le phénomène, non la reproductibilité de sa mesure."
+    ],
+    "explanation": "A — Faux. Cette sensibilité concerne la finesse de discrimination. B — Faux. L’étalonnage fournit des références de comparaison. C — Faux. La validité concerne l’adéquation de la mesure au phénomène visé. D — Vrai. La fidélité concerne la stabilité et la reproductibilité conditionnelles. E — Faux. L’intensité décrit le phénomène, non la reproductibilité de sa mesure.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v015",
+        "theme": "Qualités psychométriques",
+        "front": "Comment définir « Fidélité » ?",
+        "answers": [
+          "Qualité de stabilité et de reproductibilité de la mesure dans des conditions comparables."
+        ],
+        "explanation": "Qualité de stabilité et de reproductibilité de la mesure dans des conditions comparables."
+      },
+      {
+        "id": "psychometrie_v016",
+        "theme": "Qualités psychométriques",
+        "front": "Comment définir « Validité » ?",
+        "answers": [
+          "Adéquation entre ce que l’instrument mesure et le phénomène qu’il prétend évaluer."
+        ],
+        "explanation": "Adéquation entre ce que l’instrument mesure et le phénomène qu’il prétend évaluer."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q006",
+    "courseId": "psychometrie",
+    "number": 6,
+    "theme": "Qualités psychométriques",
+    "difficulty": "medium",
+    "question": "Une échelle annoncée comme une mesure de dépression évalue surtout l’anxiété. Quel problème cela pose-t-il ?",
+    "choices": [
+      "Il est démontré que sa fidélité est nulle.",
+      "Une bonne reproductibilité suffirait à résoudre ce problème.",
+      "Cela montre uniquement une mauvaise représentativité de l’échantillon.",
+      "Son adéquation au phénomène ciblé est mise en question.",
+      "Le calcul d’un score rend le résultat valide."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La fidélité ne peut pas être déduite de ce seul constat.",
+      "Une erreur de cible peut être très reproductible.",
+      "Le problème décrit porte directement sur ce qui est mesuré.",
+      "C’est une question de validité de la mesure.",
+      "Un score chiffré ne garantit pas la validité."
+    ],
+    "explanation": "A — Faux. La fidélité ne peut pas être déduite de ce seul constat. B — Faux. Une erreur de cible peut être très reproductible. C — Faux. Le problème décrit porte directement sur ce qui est mesuré. D — Vrai. C’est une question de validité de la mesure. E — Faux. Un score chiffré ne garantit pas la validité.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c006",
+        "theme": "Qualités psychométriques",
+        "front": "Une échelle annoncée comme une mesure de dépression évalue surtout l’anxiété. Quelle qualité est mise en question ?",
+        "answers": [
+          "La validité est mise en question : il faut vérifier si l’échelle mesure bien le phénomène ciblé."
+        ],
+        "explanation": "La fidélité concerne la reproductibilité. Une mesure peut être stable tout en visant la mauvaise dimension."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q007",
+    "courseId": "psychometrie",
+    "number": 7,
+    "theme": "Qualités psychométriques",
+    "difficulty": "medium",
+    "question": "Quelles propositions concernant la fidélité sont exactes ?",
+    "choices": [
+      "Elle empêche l’évaluation d’un changement thérapeutique.",
+      "Elle s’apprécie lorsque les conditions et le phénomène restent comparables.",
+      "L’état du sujet doit être considéré lors des comparaisons.",
+      "Elle exige un score identique pendant toute la vie.",
+      "Elle ne garantit pas à elle seule la validité."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Un outil fidèle peut aider à apprécier un changement réel.",
+      "Une variation réelle ne doit pas être confondue avec une erreur de mesure.",
+      "Fatigue ou anxiété peuvent rendre deux situations différentes.",
+      "Développement et évolution clinique peuvent modifier les performances.",
+      "Une mesure stable peut viser la mauvaise dimension."
+    ],
+    "explanation": "A — Faux. Un outil fidèle peut aider à apprécier un changement réel. B — Vrai. Une variation réelle ne doit pas être confondue avec une erreur de mesure. C — Vrai. Fatigue ou anxiété peuvent rendre deux situations différentes. D — Faux. Développement et évolution clinique peuvent modifier les performances. E — Vrai. Une mesure stable peut viser la mauvaise dimension.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c007",
+        "theme": "Qualités psychométriques",
+        "front": "Pourquoi fidélité ne signifie-t-elle ni score immuable ni validité garantie ?",
+        "answers": [
+          "La fidélité concerne la reproductibilité dans des conditions comparables. Elle n’exige pas un score identique toute la vie et ne garantit pas la validité."
+        ],
+        "explanation": "Comparer des résultats exige de considérer l’évolution réelle, l’état de la personne et les conditions de passation."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q008",
+    "courseId": "psychometrie",
+    "number": 8,
+    "theme": "Qualités psychométriques",
+    "difficulty": "medium",
+    "question": "Une échelle donne presque toujours le même score malgré des niveaux très différents du phénomène étudié. Que faut-il examiner en priorité ?",
+    "choices": [
+      "Sa capacité à discriminer les variations pertinentes.",
+      "Une impossibilité de construire des références statistiques.",
+      "La certitude que tous les sujets ont le même trouble.",
+      "Le seul nombre de pages du questionnaire.",
+      "La nécessité d’obtenir un consentement moins détaillé."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est la sensibilité aux variations visée ici.",
+      "Un étalonnage reste possible même pour un outil peu discriminant.",
+      "L’uniformité des scores ne prouve pas une uniformité clinique.",
+      "La longueur ne renseigne pas directement sur la discrimination.",
+      "Le défaut de discrimination ne modifie pas l’information due à la personne."
+    ],
+    "explanation": "A — Vrai. C’est la sensibilité aux variations visée ici. B — Faux. Un étalonnage reste possible même pour un outil peu discriminant. C — Faux. L’uniformité des scores ne prouve pas une uniformité clinique. D — Faux. La longueur ne renseigne pas directement sur la discrimination. E — Faux. Le défaut de discrimination ne modifie pas l’information due à la personne.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v017",
+        "theme": "Qualités psychométriques",
+        "front": "Comment définir « Sensibilité aux variations » ?",
+        "answers": [
+          "Capacité d’un instrument à distinguer les variations pertinentes du phénomène étudié."
+        ],
+        "explanation": "Capacité d’un instrument à distinguer les variations pertinentes du phénomène étudié."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q009",
+    "courseId": "psychometrie",
+    "number": 9,
+    "theme": "Bilan psychologique",
+    "difficulty": "easy",
+    "question": "Quels sont des objectifs d’un bilan psychologique ?",
+    "choices": [
+      "Remplacer toutes les observations de l’équipe.",
+      "Évaluer les effets d’une prise en charge.",
+      "Aider à définir les objectifs thérapeutiques.",
+      "Préciser les ressources et vulnérabilités.",
+      "Garantir une prédiction certaine de l’évolution."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les observations restent complémentaires.",
+      "Les dimensions évaluées peuvent être suivies dans le temps.",
+      "Les résultats peuvent orienter l’accompagnement.",
+      "Le bilan cherche à comprendre le fonctionnement global.",
+      "Le pronostic reste une appréciation incertaine."
+    ],
+    "explanation": "A — Faux. Les observations restent complémentaires. B — Vrai. Les dimensions évaluées peuvent être suivies dans le temps. C — Vrai. Les résultats peuvent orienter l’accompagnement. D — Vrai. Le bilan cherche à comprendre le fonctionnement global. E — Faux. Le pronostic reste une appréciation incertaine.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c009",
+        "theme": "Bilan psychologique",
+        "front": "Quels objectifs un bilan psychologique peut-il poursuivre pour aider à la prise en charge ?",
+        "answers": [
+          "Évaluer cognition, symptômes et intensité ; comprendre les ressources et vulnérabilités ; soutenir l’orientation et les objectifs thérapeutiques ; apprécier les effets de la prise en charge et l’évolution possible."
+        ],
+        "explanation": "Il peut aussi explorer la cognition, soutenir l’orientation et aider au pronostic, qui reste incertain."
+      },
+      {
+        "id": "psychometrie_v018",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Examen psychologique » ?",
+        "answers": [
+          "Évaluation clinique approfondie du fonctionnement global, menée par un psychologue avec plusieurs méthodes."
+        ],
+        "explanation": "Évaluation clinique approfondie du fonctionnement global, menée par un psychologue avec plusieurs méthodes."
+      },
+      {
+        "id": "psychometrie_v023",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Question clinique » ?",
+        "answers": [
+          "Problème auquel l’évaluation cherche à apporter des éléments de réponse."
+        ],
+        "explanation": "Problème auquel l’évaluation cherche à apporter des éléments de réponse."
+      },
+      {
+        "id": "psychometrie_v025",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Pronostic » ?",
+        "answers": [
+          "Appréciation argumentée et incertaine de l’évolution possible d’une situation."
+        ],
+        "explanation": "Appréciation argumentée et incertaine de l’évolution possible d’une situation."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q010",
+    "courseId": "psychometrie",
+    "number": 10,
+    "theme": "Bilan psychologique",
+    "difficulty": "easy",
+    "question": "Que désigne une batterie d’outils psychologiques ?",
+    "choices": [
+      "Un ensemble organisé d’épreuves complémentaires.",
+      "Une méthode réservée à l’évaluation de la personnalité.",
+      "Une série de questions choisies sans objectif clinique.",
+      "Un score unique sans sous-épreuves.",
+      "Un entretien obligatoirement non directif."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Plusieurs dimensions peuvent ainsi être explorées.",
+      "Elle peut notamment explorer les capacités cognitives.",
+      "Le choix doit répondre à une demande et à une méthode.",
+      "Une batterie associe plusieurs épreuves ou instruments.",
+      "La batterie ne se réduit pas à un type d’entretien."
+    ],
+    "explanation": "A — Vrai. Plusieurs dimensions peuvent ainsi être explorées. B — Faux. Elle peut notamment explorer les capacités cognitives. C — Faux. Le choix doit répondre à une demande et à une méthode. D — Faux. Une batterie associe plusieurs épreuves ou instruments. E — Faux. La batterie ne se réduit pas à un type d’entretien.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v019",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Batterie » ?",
+        "answers": [
+          "Ensemble organisé d’épreuves complémentaires."
+        ],
+        "explanation": "Ensemble organisé d’épreuves complémentaires."
+      },
+      {
+        "id": "psychometrie_v020",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Subtest » ?",
+        "answers": [
+          "Épreuve particulière à l’intérieur d’une batterie composite."
+        ],
+        "explanation": "Épreuve particulière à l’intérieur d’une batterie composite."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q011",
+    "courseId": "psychometrie",
+    "number": 11,
+    "theme": "Bilan psychologique",
+    "difficulty": "medium",
+    "question": "L’école demande un bilan pour un enfant. Quelles attitudes sont pertinentes ?",
+    "choices": [
+      "Faire dépendre l’interprétation du seul avis scolaire.",
+      "Réaliser exactement trois séances quel que soit son état.",
+      "Rechercher son adhésion autant que possible.",
+      "Expliquer la démarche dans un langage accessible.",
+      "Considérer que la demande extérieure suffit à obtenir sa coopération."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’avis scolaire s’intègre à plusieurs sources d’information.",
+      "Le nombre de rendez-vous n’est pas une règle fixe.",
+      "Le sujet doit rester associé à l’évaluation.",
+      "Une information adaptée facilite la compréhension et l’adhésion.",
+      "La coopération ne découle pas automatiquement de la demande."
+    ],
+    "explanation": "A — Faux. L’avis scolaire s’intègre à plusieurs sources d’information. B — Faux. Le nombre de rendez-vous n’est pas une règle fixe. C — Vrai. Le sujet doit rester associé à l’évaluation. D — Vrai. Une information adaptée facilite la compréhension et l’adhésion. E — Faux. La coopération ne découle pas automatiquement de la demande.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c011",
+        "theme": "Bilan psychologique",
+        "front": "L’école demande un bilan pour un enfant. Comment associer l’enfant à la démarche ?",
+        "answers": [
+          "Rechercher son adhésion autant que possible. Expliquer la démarche dans un langage accessible."
+        ],
+        "explanation": "La demande d’un tiers ne remplace pas la recherche de l’adhésion du sujet. L’organisation des rendez-vous dépend de ses besoins."
+      },
+      {
+        "id": "psychometrie_v022",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Adhésion » ?",
+        "answers": [
+          "Participation et engagement de la personne dans la démarche proposée."
+        ],
+        "explanation": "Participation et engagement de la personne dans la démarche proposée."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q012",
+    "courseId": "psychometrie",
+    "number": 12,
+    "theme": "Bilan psychologique",
+    "difficulty": "hard",
+    "question": "Une personne dit qu’elle souffre encore après plusieurs entretiens mais qu’elle éprouve le besoin de poursuivre. Que peut-on en déduire ?",
+    "choices": [
+      "La prise en charge est forcément dépourvue d’effet.",
+      "La parole du patient doit être remplacée par une échelle.",
+      "L’évolution doit être appréciée sur plusieurs dimensions.",
+      "Toute mesure de symptômes devient inutile.",
+      "Le pronostic peut être établi avec certitude."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La persistance de la souffrance ne résume pas l’ensemble des effets.",
+      "La parole reste une information clinique essentielle.",
+      "Soutien, ressources et intensité des difficultés peuvent évoluer différemment.",
+      "La mesure peut compléter l’appréciation clinique.",
+      "Cette déclaration ne permet aucune prédiction certaine."
+    ],
+    "explanation": "A — Faux. La persistance de la souffrance ne résume pas l’ensemble des effets. B — Faux. La parole reste une information clinique essentielle. C — Vrai. Soutien, ressources et intensité des difficultés peuvent évoluer différemment. D — Faux. La mesure peut compléter l’appréciation clinique. E — Faux. Cette déclaration ne permet aucune prédiction certaine.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c012",
+        "theme": "Bilan psychologique",
+        "front": "La souffrance persiste mais une personne souhaite poursuivre les entretiens. Comment apprécier les effets de l’accompagnement ?",
+        "answers": [
+          "L’évolution doit être appréciée sur plusieurs dimensions, en tenant compte du vécu de la personne et des effets du soutien."
+        ],
+        "explanation": "Le soutien, les ressources et l’intensité des difficultés peuvent évoluer différemment. L’absence de disparition immédiate des symptômes ne prouve pas une absence d’effet."
+      },
+      {
+        "id": "psychometrie_v021",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Accord éclairé » ?",
+        "answers": [
+          "Accord recherché après une information compréhensible sur la démarche, ses objectifs et son contenu."
+        ],
+        "explanation": "Accord recherché après une information compréhensible sur la démarche, ses objectifs et son contenu."
+      },
+      {
+        "id": "psychometrie_v024",
+        "theme": "Bilan psychologique",
+        "front": "Comment définir « Indication thérapeutique » ?",
+        "answers": [
+          "Orientation du soin fondée sur les besoins et caractéristiques de la personne."
+        ],
+        "explanation": "Orientation du soin fondée sur les besoins et caractéristiques de la personne."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q013",
+    "courseId": "psychometrie",
+    "number": 13,
+    "theme": "Contexte et entretiens",
+    "difficulty": "medium",
+    "question": "Une personne échange avec aisance mais présente des difficultés à lire et à organiser certaines tâches. Quelles conclusions sont pertinentes ?",
+    "choices": [
+      "La qualité de la relation rend l’évaluation cognitive inutile.",
+      "L’aisance relationnelle n’exclut pas des difficultés cognitives.",
+      "Les difficultés sont nécessairement simulées.",
+      "Les attentes et les explications peuvent nécessiter une adaptation.",
+      "Une origine précise est démontrée par ce seul contraste."
+    ],
+    "answers": [
+      1,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La relation ne remplace pas l’exploration des difficultés.",
+      "Les différents domaines ne se confondent pas.",
+      "L’aisance dans un domaine ne prouve pas une simulation dans un autre.",
+      "L’accompagnement doit tenir compte des capacités réellement évaluées.",
+      "Le contraste ne suffit pas à établir une cause."
+    ],
+    "explanation": "A — Faux. La relation ne remplace pas l’exploration des difficultés. B — Vrai. Les différents domaines ne se confondent pas. C — Faux. L’aisance dans un domaine ne prouve pas une simulation dans un autre. D — Vrai. L’accompagnement doit tenir compte des capacités réellement évaluées. E — Faux. Le contraste ne suffit pas à établir une cause.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c013",
+        "theme": "Contexte et entretiens",
+        "front": "Une aisance relationnelle permet-elle d’écarter des difficultés cognitives ?",
+        "answers": [
+          "Non. L’aisance dans la relation peut coexister avec des difficultés cognitives ; les attentes et les explications doivent être adaptées."
+        ],
+        "explanation": "Les compétences d’échange et les performances dans d’autres domaines ne se confondent pas. Aucun contraste isolé ne démontre une cause précise."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q014",
+    "courseId": "psychometrie",
+    "number": 14,
+    "theme": "Contexte et entretiens",
+    "difficulty": "medium",
+    "question": "Quels éléments peuvent limiter la portée des résultats d’un bilan ?",
+    "choices": [
+      "La seule présence de plusieurs instruments.",
+      "Une formation insuffisante à la passation et à l’analyse.",
+      "Une fatigue importante.",
+      "Une compréhension insuffisante des consignes.",
+      "Le recueil du point de vue du patient."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Des instruments complémentaires peuvent au contraire enrichir le bilan.",
+      "La compétence du professionnel conditionne l’utilisation de l’outil.",
+      "La fatigue peut modifier la disponibilité et la performance.",
+      "Les réponses peuvent alors ne pas refléter la capacité visée.",
+      "Ce point de vue est une composante utile de l’évaluation."
+    ],
+    "explanation": "A — Faux. Des instruments complémentaires peuvent au contraire enrichir le bilan. B — Vrai. La compétence du professionnel conditionne l’utilisation de l’outil. C — Vrai. La fatigue peut modifier la disponibilité et la performance. D — Vrai. Les réponses peuvent alors ne pas refléter la capacité visée. E — Faux. Ce point de vue est une composante utile de l’évaluation.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c014",
+        "theme": "Contexte et entretiens",
+        "front": "Quels facteurs peuvent limiter l’interprétation d’un bilan psychologique ?",
+        "answers": [
+          "Une formation insuffisante à la passation et à l’analyse. Une fatigue importante. Une compréhension insuffisante des consignes."
+        ],
+        "explanation": "Les résultats sont remis en lien avec la situation, le langage, l’entretien et les observations."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q015",
+    "courseId": "psychometrie",
+    "number": 15,
+    "theme": "Contexte et entretiens",
+    "difficulty": "easy",
+    "question": "Qu’est-ce qui caractérise l’entretien semi-directif ?",
+    "choices": [
+      "La suggestion systématique des réponses attendues.",
+      "Un guide préparé et une souplesse dans les réponses.",
+      "L’absence de toute organisation préalable.",
+      "Une indication indépendante du langage et des capacités du sujet.",
+      "Des réponses exclusivement limitées à oui ou non."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Guider le thème ne signifie pas induire les réponses.",
+      "Il associe repères d’entretien et liberté d’élaboration.",
+      "L’entretien semi-directif s’appuie sur une structure.",
+      "Ces capacités doivent orienter le choix de la méthode.",
+      "Cette restriction correspond davantage à certaines questions directives."
+    ],
+    "explanation": "A — Faux. Guider le thème ne signifie pas induire les réponses. B — Vrai. Il associe repères d’entretien et liberté d’élaboration. C — Faux. L’entretien semi-directif s’appuie sur une structure. D — Faux. Ces capacités doivent orienter le choix de la méthode. E — Faux. Cette restriction correspond davantage à certaines questions directives.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v027",
+        "theme": "Contexte et entretiens",
+        "front": "Comment définir « Entretien semi-directif » ?",
+        "answers": [
+          "Entretien guidé laissant une souplesse dans le développement des réponses."
+        ],
+        "explanation": "Entretien guidé laissant une souplesse dans le développement des réponses."
+      },
+      {
+        "id": "psychometrie_v026",
+        "theme": "Contexte et entretiens",
+        "front": "Comment définir « Entretien directif » ?",
+        "answers": [
+          "Entretien avec questions et réponses encadrées selon une organisation définie."
+        ],
+        "explanation": "Entretien avec questions et réponses encadrées selon une organisation définie."
+      },
+      {
+        "id": "psychometrie_v028",
+        "theme": "Contexte et entretiens",
+        "front": "Comment définir « Entretien non directif » ?",
+        "answers": [
+          "Entretien ouvert soutenu par des relances sans orientation imposée du contenu."
+        ],
+        "explanation": "Entretien ouvert soutenu par des relances sans orientation imposée du contenu."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q016",
+    "courseId": "psychometrie",
+    "number": 16,
+    "theme": "Contexte et entretiens",
+    "difficulty": "medium",
+    "question": "Quelles associations entre type d’entretien et principe sont exactes ?",
+    "choices": [
+      "Directif : obligation de corriger les réponses du patient.",
+      "Semi-directif : aucune place pour une réponse développée.",
+      "Non directif : relances sans imposer le contenu du discours.",
+      "Directif : questions et réponses davantage encadrées.",
+      "Non directif : choix automatique pour tout jeune enfant."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’entretien recueille les réponses ; il ne vise pas à les remplacer.",
+      "Le développement est possible dans un cadre guidé.",
+      "La parole se développe à partir d’un thème initial.",
+      "Le cadre vise des informations précises.",
+      "Le choix dépend des capacités d’élaboration et de la demande."
+    ],
+    "explanation": "A — Faux. L’entretien recueille les réponses ; il ne vise pas à les remplacer. B — Faux. Le développement est possible dans un cadre guidé. C — Vrai. La parole se développe à partir d’un thème initial. D — Vrai. Le cadre vise des informations précises. E — Faux. Le choix dépend des capacités d’élaboration et de la demande.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c016",
+        "theme": "Contexte et entretiens",
+        "front": "Comment distinguer les entretiens directif, semi-directif et non directif ?",
+        "answers": [
+          "Directif : questions et réponses davantage encadrées. Semi-directif : guide et réponses développées. Non directif : parole ouverte, soutenue par des relances sans contenu imposé."
+        ],
+        "explanation": "L’entretien semi-directif associe un guide préparé à une souplesse dans le développement des réponses. Le choix dépend des capacités et de la demande."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q017",
+    "courseId": "psychometrie",
+    "number": 17,
+    "theme": "Développement du tout-petit",
+    "difficulty": "easy",
+    "question": "Quels domaines sont illustrés par l’échelle de Brunet-Lézine révisée ?",
+    "choices": [
+      "La seule réussite scolaire.",
+      "Les catégories de personnalité adulte.",
+      "La coordination.",
+      "Le langage et la sociabilité.",
+      "La posture."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’échelle concerne le développement du jeune enfant.",
+      "Ce n’est pas l’objectif de cette échelle.",
+      "Les actions et manipulations d’objets en font partie.",
+      "Ces deux domaines complètent la posture et la coordination.",
+      "Elle explore notamment les positions et le contrôle du corps."
+    ],
+    "explanation": "A — Faux. L’échelle concerne le développement du jeune enfant. B — Faux. Ce n’est pas l’objectif de cette échelle. C — Vrai. Les actions et manipulations d’objets en font partie. D — Vrai. Ces deux domaines complètent la posture et la coordination. E — Vrai. Elle explore notamment les positions et le contrôle du corps.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v030",
+        "theme": "Développement du tout-petit",
+        "front": "Comment définir « Brunet-Lézine révisée » ?",
+        "answers": [
+          "Échelle de développement du jeune enfant illustrant posture, coordination, langage et sociabilité."
+        ],
+        "explanation": "Échelle de développement du jeune enfant illustrant posture, coordination, langage et sociabilité."
+      },
+      {
+        "id": "psychometrie_v029",
+        "theme": "Développement du tout-petit",
+        "front": "Comment définir « Développement psychomoteur » ?",
+        "answers": [
+          "Évolution des acquisitions motrices, de coordination, langagières et relationnelles du jeune enfant."
+        ],
+        "explanation": "Évolution des acquisitions motrices, de coordination, langagières et relationnelles du jeune enfant."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q018",
+    "courseId": "psychometrie",
+    "number": 18,
+    "theme": "Développement du tout-petit",
+    "difficulty": "medium",
+    "question": "Que recherche l’évaluation psychomotrice d’un tout-petit ?",
+    "choices": [
+      "Un diagnostic fondé sur une acquisition isolée.",
+      "Un calendrier imposant des acquisitions identiques à tous.",
+      "Le remplacement de l’observation par le seul âge chronologique.",
+      "Une observation de compétences adaptées à son développement.",
+      "Un repérage des difficultés permettant une intervention précoce."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une acquisition se comprend dans l’ensemble du développement.",
+      "Les repères ne sont pas des obligations universelles.",
+      "L’âge donne un repère, mais les acquisitions doivent être observées.",
+      "Les tâches doivent être pertinentes pour l’enfant évalué.",
+      "Le repérage aide à adapter l’accompagnement."
+    ],
+    "explanation": "A — Faux. Une acquisition se comprend dans l’ensemble du développement. B — Faux. Les repères ne sont pas des obligations universelles. C — Faux. L’âge donne un repère, mais les acquisitions doivent être observées. D — Vrai. Les tâches doivent être pertinentes pour l’enfant évalué. E — Vrai. Le repérage aide à adapter l’accompagnement.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c018",
+        "theme": "Développement du tout-petit",
+        "front": "Pourquoi évaluer le développement psychomoteur d’un tout-petit avec des tâches adaptées ?",
+        "answers": [
+          "Une observation de compétences adaptées à son développement. Un repérage des difficultés permettant une intervention précoce."
+        ],
+        "explanation": "Les repères aident à situer le développement ; ils ne constituent pas un calendrier universel d’acquisition."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q019",
+    "courseId": "psychometrie",
+    "number": 19,
+    "theme": "Développement du tout-petit",
+    "difficulty": "medium",
+    "question": "Quelle utilisation des repères de développement est pertinente ?",
+    "choices": [
+      "Relier les acquisitions aux conditions d’observation.",
+      "Compléter certaines observations par des questions aux parents.",
+      "S’affranchir de la formation si l’on connaît le tableau des âges.",
+      "Déclarer une pathologie dès qu’un item n’est pas réussi.",
+      "Appliquer le même matériel à tous les âges sans adaptation."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le contexte participe au sens des réponses.",
+      "Les modalités peuvent apporter des informations complémentaires.",
+      "Connaître des repères ne remplace pas la formation à l’outil.",
+      "Un item isolé ne suffit pas à un diagnostic.",
+      "Le matériel doit suivre les règles de l’outil et le public concerné."
+    ],
+    "explanation": "A — Vrai. Le contexte participe au sens des réponses. B — Vrai. Les modalités peuvent apporter des informations complémentaires. C — Faux. Connaître des repères ne remplace pas la formation à l’outil. D — Faux. Un item isolé ne suffit pas à un diagnostic. E — Faux. Le matériel doit suivre les règles de l’outil et le public concerné.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c019",
+        "theme": "Développement du tout-petit",
+        "front": "Quelles précautions entourent l’utilisation des repères de développement du jeune enfant ?",
+        "answers": [
+          "Relier les acquisitions aux conditions d’observation. Compléter certaines observations par des questions aux parents."
+        ],
+        "explanation": "Un item non réussi n’établit pas un diagnostic. La connaissance des repères ne remplace pas la formation à l’outil."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q020",
+    "courseId": "psychometrie",
+    "number": 20,
+    "theme": "Fonctionnement intellectuel",
+    "difficulty": "easy",
+    "question": "Quelles associations entre échelles de Wechsler et publics sont correctes ?",
+    "choices": [
+      "WAIS : adultes.",
+      "WISC : enfants et adolescents.",
+      "WPPSI : âge préscolaire.",
+      "WPPSI, WISC et WAIS : sous-tests identiques.",
+      "WAIS : nourrissons."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les tranches précises dépendent de l’édition utilisée.",
+      "Le WISC est une échelle destinée à cette population.",
+      "Cette échelle vise les jeunes enfants selon l’édition.",
+      "Le contenu et l’organisation varient selon les batteries et éditions.",
+      "La WAIS est destinée à l’adulte."
+    ],
+    "explanation": "A — Vrai. Les tranches précises dépendent de l’édition utilisée. B — Vrai. Le WISC est une échelle destinée à cette population. C — Vrai. Cette échelle vise les jeunes enfants selon l’édition. D — Faux. Le contenu et l’organisation varient selon les batteries et éditions. E — Faux. La WAIS est destinée à l’adulte.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c020",
+        "theme": "Fonctionnement intellectuel",
+        "front": "À quels publics correspondent la WPPSI, le WISC et la WAIS ?",
+        "answers": [
+          "La WPPSI correspond à l’âge préscolaire, le WISC à l’enfant et à l’adolescent, et la WAIS à l’adulte."
+        ],
+        "explanation": "Les tranches exactes et l’organisation des épreuves dépendent de l’édition utilisée."
+      },
+      {
+        "id": "psychometrie_v037",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « WPPSI » ?",
+        "answers": [
+          "Wechsler Preschool and Primary Scale of Intelligence : échelle pour l’âge préscolaire."
+        ],
+        "explanation": "Wechsler Preschool and Primary Scale of Intelligence : échelle pour l’âge préscolaire."
+      },
+      {
+        "id": "psychometrie_v038",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « WISC » ?",
+        "answers": [
+          "Wechsler Intelligence Scale for Children : échelle pour l’enfant et l’adolescent."
+        ],
+        "explanation": "Wechsler Intelligence Scale for Children : échelle pour l’enfant et l’adolescent."
+      },
+      {
+        "id": "psychometrie_v039",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « WAIS » ?",
+        "answers": [
+          "Wechsler Adult Intelligence Scale : échelle pour l’adulte."
+        ],
+        "explanation": "Wechsler Adult Intelligence Scale : échelle pour l’adulte."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q021",
+    "courseId": "psychometrie",
+    "number": 21,
+    "theme": "Fonctionnement intellectuel",
+    "difficulty": "medium",
+    "question": "Quelles propositions distinguent correctement les domaines cognitifs ?",
+    "choices": [
+      "La vitesse de traitement correspond à la durée totale de la consultation.",
+      "Le raisonnement fluide concerne notamment des problèmes nouveaux.",
+      "La mémoire de travail permet de maintenir et d’utiliser temporairement des informations.",
+      "Le domaine visuo-spatial concerne l’organisation des relations spatiales.",
+      "La compréhension verbale se mesure uniquement par une copie de figure."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle décrit une performance sur certaines tâches standardisées.",
+      "Il mobilise la recherche de relations et de règles.",
+      "Elle ne se limite pas au stockage de souvenirs anciens.",
+      "L’analyse et l’organisation des formes en font partie.",
+      "Une copie de figure ne constitue pas une mesure verbale."
+    ],
+    "explanation": "A — Faux. Elle décrit une performance sur certaines tâches standardisées. B — Vrai. Il mobilise la recherche de relations et de règles. C — Vrai. Elle ne se limite pas au stockage de souvenirs anciens. D — Vrai. L’analyse et l’organisation des formes en font partie. E — Faux. Une copie de figure ne constitue pas une mesure verbale.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c021",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Que distinguent mémoire de travail, vitesse de traitement, visuo-spatial et raisonnement fluide ?",
+        "answers": [
+          "Mémoire de travail : maintien et utilisation temporaire des informations. Vitesse de traitement : rapidité dans certaines tâches. Visuo-spatial : organisation des relations spatiales. Raisonnement fluide : recherche de règles pour résoudre des problèmes nouveaux."
+        ],
+        "explanation": "La vitesse de traitement décrit la rapidité dans certaines tâches, et non la durée totale de la consultation. La compréhension verbale explore des capacités langagières et des connaissances."
+      },
+      {
+        "id": "psychometrie_v031",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Aptitude » ?",
+        "answers": [
+          "Capacité mise en jeu dans un domaine ou une catégorie de tâches."
+        ],
+        "explanation": "Capacité mise en jeu dans un domaine ou une catégorie de tâches."
+      },
+      {
+        "id": "psychometrie_v041",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « ICV » ?",
+        "answers": [
+          "Indice de compréhension verbale : compréhension et mobilisation des connaissances verbales."
+        ],
+        "explanation": "Indice de compréhension verbale : compréhension et mobilisation des connaissances verbales."
+      },
+      {
+        "id": "psychometrie_v043",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « IVT » ?",
+        "answers": [
+          "Indice de vitesse de traitement : rapidité et efficience dans certaines tâches."
+        ],
+        "explanation": "Indice de vitesse de traitement : rapidité et efficience dans certaines tâches."
+      },
+      {
+        "id": "psychometrie_v044",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « IVS » ?",
+        "answers": [
+          "Indice visuo-spatial : analyse et organisation des relations spatiales."
+        ],
+        "explanation": "Indice visuo-spatial : analyse et organisation des relations spatiales."
+      },
+      {
+        "id": "psychometrie_v045",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « IRF » ?",
+        "answers": [
+          "Indice de raisonnement fluide : recherche de relations et résolution de problèmes nouveaux."
+        ],
+        "explanation": "Indice de raisonnement fluide : recherche de relations et résolution de problèmes nouveaux."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q022",
+    "courseId": "psychometrie",
+    "number": 22,
+    "theme": "Fonctionnement intellectuel",
+    "difficulty": "hard",
+    "question": "Un bilan montre des performances très différentes selon les domaines. Quelle interprétation est la plus pertinente ?",
+    "choices": [
+      "Le score global doit remplacer toutes les observations.",
+      "Le calcul d’un résultat dispense d’en préciser les limites.",
+      "Le profil démontre une origine psychique des difficultés.",
+      "Les points forts doivent être exclus de l’analyse.",
+      "Le sens du résultat global doit être apprécié avec les indices."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Les observations restent nécessaires pour comprendre le profil.",
+      "Calcul et interprétation sont deux opérations différentes.",
+      "La dispersion ne permet pas de déterminer cette cause.",
+      "Ressources et difficultés font partie du profil.",
+      "Une seule valeur peut mal rendre compte des écarts."
+    ],
+    "explanation": "A — Faux. Les observations restent nécessaires pour comprendre le profil. B — Faux. Calcul et interprétation sont deux opérations différentes. C — Faux. La dispersion ne permet pas de déterminer cette cause. D — Faux. Ressources et difficultés font partie du profil. E — Vrai. Une seule valeur peut mal rendre compte des écarts.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c022",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment interpréter un profil cognitif dont les performances sont très différentes selon les domaines ?",
+        "answers": [
+          "Il faut apprécier le résultat global avec les indices, les ressources et les difficultés, et expliquer les écarts entre domaines."
+        ],
+        "explanation": "Calculer une valeur et apprécier son sens sont deux questions distinctes. La dispersion seule n’établit pas une origine organique ou psychique."
+      },
+      {
+        "id": "psychometrie_v032",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « QI : quotient intellectuel » ?",
+        "answers": [
+          "Indicateur de positionnement des performances intellectuelles par rapport à une référence."
+        ],
+        "explanation": "Indicateur de positionnement des performances intellectuelles par rapport à une référence."
+      },
+      {
+        "id": "psychometrie_v034",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Indice factoriel » ?",
+        "answers": [
+          "Score regroupant des performances pour renseigner un domaine cognitif."
+        ],
+        "explanation": "Score regroupant des performances pour renseigner un domaine cognitif."
+      },
+      {
+        "id": "psychometrie_v035",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Profil cognitif » ?",
+        "answers": [
+          "Organisation des performances, ressources, points forts et difficultés dans plusieurs domaines."
+        ],
+        "explanation": "Organisation des performances, ressources, points forts et difficultés dans plusieurs domaines."
+      },
+      {
+        "id": "psychometrie_v036",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Homogénéité / hétérogénéité » ?",
+        "answers": [
+          "Proximité relative ou dispersion des performances ; ne suffit pas à expliquer leur origine."
+        ],
+        "explanation": "Proximité relative ou dispersion des performances ; ne suffit pas à expliquer leur origine."
+      },
+      {
+        "id": "psychometrie_v047",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Facteur G » ?",
+        "answers": [
+          "Facteur général utilisé pour décrire ce qui est commun à différentes performances intellectuelles."
+        ],
+        "explanation": "Facteur général utilisé pour décrire ce qui est commun à différentes performances intellectuelles."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q023",
+    "courseId": "psychometrie",
+    "number": 23,
+    "theme": "Fonctionnement intellectuel",
+    "difficulty": "medium",
+    "question": "Un enfant allophone doit bénéficier d’une évaluation cognitive. Quelles propositions sont pertinentes ?",
+    "choices": [
+      "Déduire un niveau intellectuel faible de la seule maîtrise du français.",
+      "Vérifier la pertinence de la population de référence.",
+      "Envisager un outil moins dépendant du langage si la demande le justifie.",
+      "Considérer qu’un matériel non verbal est sans influence culturelle possible.",
+      "Utiliser un test verbal sans examiner la compréhension."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Compétence linguistique et niveau cognitif ne se confondent pas.",
+      "L’interprétation exige un cadre adapté.",
+      "Cela peut limiter certaines difficultés liées à la langue de passation.",
+      "La familiarité et les apprentissages restent à considérer.",
+      "Les réponses seraient difficiles à interpréter."
+    ],
+    "explanation": "A — Faux. Compétence linguistique et niveau cognitif ne se confondent pas. B — Vrai. L’interprétation exige un cadre adapté. C — Vrai. Cela peut limiter certaines difficultés liées à la langue de passation. D — Faux. La familiarité et les apprentissages restent à considérer. E — Faux. Les réponses seraient difficiles à interpréter.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c023",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Quelles précautions prendre pour évaluer les capacités cognitives d’un enfant allophone ?",
+        "answers": [
+          "Vérifier la pertinence de la population de référence. Envisager un outil moins dépendant du langage si la demande le justifie."
+        ],
+        "explanation": "Un test moins verbal n’est pas nécessairement indépendant de toute culture. La maîtrise du français ne permet pas, à elle seule, de conclure sur le niveau intellectuel."
+      },
+      {
+        "id": "psychometrie_v040",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « K-ABC » ?",
+        "answers": [
+          "Kaufman Assessment Battery for Children : batterie cognitive destinée à l’enfant."
+        ],
+        "explanation": "Kaufman Assessment Battery for Children : batterie cognitive destinée à l’enfant."
+      },
+      {
+        "id": "psychometrie_v046",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Intelligence cristallisée » ?",
+        "answers": [
+          "Mobilisation de connaissances et compétences acquises au cours de l’expérience."
+        ],
+        "explanation": "Mobilisation de connaissances et compétences acquises au cours de l’expérience."
+      },
+      {
+        "id": "psychometrie_v048",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Allophone » ?",
+        "answers": [
+          "Personne dont la langue première est différente de celle utilisée dans la situation considérée."
+        ],
+        "explanation": "Personne dont la langue première est différente de celle utilisée dans la situation considérée."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q024",
+    "courseId": "psychometrie",
+    "number": 24,
+    "theme": "Fonctionnement intellectuel",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur le profil cognitif et la passation sont exactes ?",
+    "choices": [
+      "Un écart de performance suffit à établir une cause génétique.",
+      "Le profil décrit des ressources et des difficultés.",
+      "L’attention du sujet est sans effet sur les tâches.",
+      "Une durée moyenne d’une heure trente interdit toute organisation différente.",
+      "L’organisation doit respecter les règles de l’instrument."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une conclusion étiologique exige d’autres informations.",
+      "Il dépasse le seul résultat global.",
+      "La disponibilité attentionnelle intervient dans la performance.",
+      "Une moyenne n’est pas une durée maximale universelle.",
+      "Les adaptations ne doivent pas dénaturer la passation."
+    ],
+    "explanation": "A — Faux. Une conclusion étiologique exige d’autres informations. B — Vrai. Il dépasse le seul résultat global. C — Faux. La disponibilité attentionnelle intervient dans la performance. D — Faux. Une moyenne n’est pas une durée maximale universelle. E — Vrai. Les adaptations ne doivent pas dénaturer la passation.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c024",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Que faut-il retenir du profil cognitif et de l’organisation d’une passation ?",
+        "answers": [
+          "Le profil décrit des ressources et des difficultés. L’organisation doit respecter les règles de l’instrument."
+        ],
+        "explanation": "Attention, fatigue et compréhension doivent être considérées. Une durée moyenne n’est pas une durée maximale obligatoire."
+      },
+      {
+        "id": "psychometrie_v033",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « QIT : QI total » ?",
+        "answers": [
+          "Score global d’une batterie d’intelligence, à interpréter avec les indices et le profil."
+        ],
+        "explanation": "Score global d’une batterie d’intelligence, à interpréter avec les indices et le profil."
+      },
+      {
+        "id": "psychometrie_v042",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « IMT » ?",
+        "answers": [
+          "Indice de mémoire de travail : maintien et utilisation temporaire des informations."
+        ],
+        "explanation": "Indice de mémoire de travail : maintien et utilisation temporaire des informations."
+      },
+      {
+        "id": "psychometrie_v049",
+        "theme": "Fonctionnement intellectuel",
+        "front": "Comment définir « Trouble mnésique » ?",
+        "answers": [
+          "Difficulté touchant la mémoire."
+        ],
+        "explanation": "Difficulté touchant la mémoire."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q025",
+    "courseId": "psychometrie",
+    "number": 25,
+    "theme": "Personnalité et auto-évaluation",
+    "difficulty": "easy",
+    "question": "Qu’est-ce qu’un trait de personnalité ?",
+    "choices": [
+      "Un symptôme aigu obligatoirement pathologique.",
+      "Un diagnostic obtenu automatiquement par un questionnaire.",
+      "Une caractéristique toujours reconnue comme gênante.",
+      "Une tendance relativement stable à penser, agir ou réagir.",
+      "Une performance limitée à une tâche de mémoire."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Un trait peut appartenir au fonctionnement habituel non pathologique.",
+      "Le diagnostic ne découle pas d’un trait isolé.",
+      "Certains fonctionnements sont vécus comme accordés à soi.",
+      "La stabilité est relative, et ne signifie pas immobilité absolue.",
+      "Le trait renvoie à un mode habituel de fonctionnement."
+    ],
+    "explanation": "A — Faux. Un trait peut appartenir au fonctionnement habituel non pathologique. B — Faux. Le diagnostic ne découle pas d’un trait isolé. C — Faux. Certains fonctionnements sont vécus comme accordés à soi. D — Vrai. La stabilité est relative, et ne signifie pas immobilité absolue. E — Faux. Le trait renvoie à un mode habituel de fonctionnement.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v051",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Trait de personnalité » ?",
+        "answers": [
+          "Dimension habituelle de fonctionnement, qui n’est pas en soi un trouble."
+        ],
+        "explanation": "Dimension habituelle de fonctionnement, qui n’est pas en soi un trouble."
+      },
+      {
+        "id": "psychometrie_v050",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Personnalité » ?",
+        "answers": [
+          "Ensemble des tendances relativement stables à penser, agir et réagir."
+        ],
+        "explanation": "Ensemble des tendances relativement stables à penser, agir et réagir."
+      },
+      {
+        "id": "psychometrie_v052",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Égosyntonie » ?",
+        "answers": [
+          "Caractère d’un vécu ou fonctionnement ressenti comme accordé à soi."
+        ],
+        "explanation": "Caractère d’un vécu ou fonctionnement ressenti comme accordé à soi."
+      },
+      {
+        "id": "psychometrie_v093",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Névrosisme » ?",
+        "answers": [
+          "Dimension de personnalité portant notamment sur la tendance à éprouver des émotions négatives."
+        ],
+        "explanation": "Dimension de personnalité portant notamment sur la tendance à éprouver des émotions négatives."
+      },
+      {
+        "id": "psychometrie_v096",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Extraversion » ?",
+        "answers": [
+          "Dimension de personnalité concernant l’orientation vers les interactions et l’activité sociale."
+        ],
+        "explanation": "Dimension de personnalité concernant l’orientation vers les interactions et l’activité sociale."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q026",
+    "courseId": "psychometrie",
+    "number": 26,
+    "theme": "Personnalité et auto-évaluation",
+    "difficulty": "medium",
+    "question": "Quelles caractéristiques concernent le NEO PI-R ?",
+    "choices": [
+      "Il réduit toute la personnalité à un type unique.",
+      "L’ouverture et l’extraversion font partie des dimensions.",
+      "Il comporte six facettes par dimension.",
+      "Il explore cinq grandes dimensions.",
+      "Il constitue une échelle de dépistage cognitif sur 30 points."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Il décrit plusieurs dimensions et sous-dimensions.",
+      "Elles figurent parmi les cinq domaines.",
+      "Les facettes précisent les grands domaines.",
+      "Il s’appuie sur un modèle dimensionnel de personnalité.",
+      "Cette présentation correspond au MMSE, pas au NEO PI-R."
+    ],
+    "explanation": "A — Faux. Il décrit plusieurs dimensions et sous-dimensions. B — Vrai. Elles figurent parmi les cinq domaines. C — Vrai. Les facettes précisent les grands domaines. D — Vrai. Il s’appuie sur un modèle dimensionnel de personnalité. E — Faux. Cette présentation correspond au MMSE, pas au NEO PI-R.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v056",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « NEO PI-R » ?",
+        "answers": [
+          "Revised NEO Personality Inventory : inventaire des cinq dimensions de personnalité et de leurs facettes."
+        ],
+        "explanation": "Le NEO PI-R explore cinq dimensions, chacune précisée par six facettes. Il décrit des dimensions plutôt qu’un type unique."
+      },
+      {
+        "id": "psychometrie_v057",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Facette » ?",
+        "answers": [
+          "Sous-dimension précisant un domaine plus général de personnalité."
+        ],
+        "explanation": "Sous-dimension précisant un domaine plus général de personnalité."
+      },
+      {
+        "id": "psychometrie_v059",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « EPI » ?",
+        "answers": [
+          "Eysenck Personality Inventory : inventaire de personnalité."
+        ],
+        "explanation": "Eysenck Personality Inventory : inventaire de personnalité."
+      },
+      {
+        "id": "psychometrie_v060",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « BFI » ?",
+        "answers": [
+          "Big Five Inventory : questionnaire associé au modèle des cinq grands traits."
+        ],
+        "explanation": "Big Five Inventory : questionnaire associé au modèle des cinq grands traits."
+      },
+      {
+        "id": "psychometrie_v097",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Ouverture » ?",
+        "answers": [
+          "Dimension de personnalité concernant la curiosité et l’exploration d’idées ou d’expériences."
+        ],
+        "explanation": "Dimension de personnalité concernant la curiosité et l’exploration d’idées ou d’expériences."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q027",
+    "courseId": "psychometrie",
+    "number": 27,
+    "theme": "Personnalité et auto-évaluation",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur l’auto-évaluation et l’insight sont exactes ?",
+    "choices": [
+      "L’auto-évaluation dépend notamment de la compréhension des questions.",
+      "Un insight limité rend nécessairement toute parole mensongère.",
+      "Égosyntonie signifie absence de toute souffrance.",
+      "L’auto-évaluation est indépendante de la présentation de soi.",
+      "Un trait égosyntonique peut entraîner des difficultés relationnelles."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une question incomprise peut modifier la réponse.",
+      "La difficulté à se reconnaître dans un trouble n’est pas un mensonge.",
+      "Une souffrance peut exister chez le sujet ou son entourage.",
+      "La manière de se présenter peut influencer les réponses.",
+      "Le vécu d’accord avec soi n’exclut pas le retentissement."
+    ],
+    "explanation": "A — Vrai. Une question incomprise peut modifier la réponse. B — Faux. La difficulté à se reconnaître dans un trouble n’est pas un mensonge. C — Faux. Une souffrance peut exister chez le sujet ou son entourage. D — Faux. La manière de se présenter peut influencer les réponses. E — Vrai. Le vécu d’accord avec soi n’exclut pas le retentissement.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c027",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment comprendre les limites de l’auto-évaluation lorsque l’insight est réduit ou qu’un trait est égosyntonique ?",
+        "answers": [
+          "L’auto-évaluation dépend notamment de la compréhension des questions. Un trait égosyntonique peut entraîner des difficultés relationnelles."
+        ],
+        "explanation": "Un fonctionnement vécu comme accordé à soi peut entraîner une souffrance ou un retentissement. Un insight limité ne rend pas systématiquement la parole mensongère."
+      },
+      {
+        "id": "psychometrie_v053",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Insight » ?",
+        "answers": [
+          "Capacité à reconnaître et comprendre certains aspects de son état et de ses difficultés."
+        ],
+        "explanation": "Capacité à reconnaître et comprendre certains aspects de son état et de ses difficultés."
+      },
+      {
+        "id": "psychometrie_v054",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Auto-évaluation » ?",
+        "answers": [
+          "Recueil des réponses de la personne sur son propre fonctionnement."
+        ],
+        "explanation": "Recueil des réponses de la personne sur son propre fonctionnement."
+      },
+      {
+        "id": "psychometrie_v094",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Agréabilité » ?",
+        "answers": [
+          "Dimension de personnalité concernant la coopération et la manière d’entrer en relation avec autrui."
+        ],
+        "explanation": "Dimension de personnalité concernant la coopération et la manière d’entrer en relation avec autrui."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q028",
+    "courseId": "psychometrie",
+    "number": 28,
+    "theme": "Personnalité et auto-évaluation",
+    "difficulty": "easy",
+    "question": "Que désigne le MMPI ?",
+    "choices": [
+      "Une batterie de développement psychomoteur du nourrisson.",
+      "Un instrument évaluant exclusivement la mémoire.",
+      "Le score global des échelles de Wechsler.",
+      "Un inventaire de personnalité explorant notamment des dimensions psychopathologiques.",
+      "Un outil dispensant de l’entretien clinique."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Cette fonction ne correspond pas au MMPI.",
+      "Il ne s’agit pas d’une échelle de mémoire.",
+      "Le QIT est un autre indicateur.",
+      "L’interprétation dépend de la version et du public.",
+      "Le questionnaire s’intègre dans une évaluation plus large."
+    ],
+    "explanation": "A — Faux. Cette fonction ne correspond pas au MMPI. B — Faux. Il ne s’agit pas d’une échelle de mémoire. C — Faux. Le QIT est un autre indicateur. D — Vrai. L’interprétation dépend de la version et du public. E — Faux. Le questionnaire s’intègre dans une évaluation plus large.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v058",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « MMPI » ?",
+        "answers": [
+          "Minnesota Multiphasic Personality Inventory : inventaire de personnalité explorant notamment des dimensions psychopathologiques."
+        ],
+        "explanation": "Minnesota Multiphasic Personality Inventory : inventaire de personnalité explorant notamment des dimensions psychopathologiques."
+      },
+      {
+        "id": "psychometrie_v055",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Hétéro-évaluation » ?",
+        "answers": [
+          "Évaluation par une autre personne, selon un outil et un cadre définis."
+        ],
+        "explanation": "Évaluation par une autre personne, selon un outil et un cadre définis."
+      },
+      {
+        "id": "psychometrie_v095",
+        "theme": "Personnalité et auto-évaluation",
+        "front": "Comment définir « Conscience, dimension de personnalité » ?",
+        "answers": [
+          "Dimension portant sur l’organisation et l’engagement dans les activités ; à distinguer de la conscience de ses troubles."
+        ],
+        "explanation": "Dimension portant sur l’organisation et l’engagement dans les activités ; à distinguer de la conscience de ses troubles."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q029",
+    "courseId": "psychometrie",
+    "number": 29,
+    "theme": "Méthodes projectives et dessin",
+    "difficulty": "easy",
+    "question": "Quel principe caractérise les méthodes projectives ?",
+    "choices": [
+      "La présentation d’un matériel ambigu appelant une élaboration.",
+      "Un recueil limité à des réponses de fréquence en auto-description.",
+      "L’absence de formation spécifique.",
+      "L’interprétation libre de toute règle de passation.",
+      "Un diagnostic certain à partir d’une réponse inhabituelle."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La réponse prend forme dans une situation clinique spécifique.",
+      "Ce principe décrit plutôt certains questionnaires.",
+      "Ces méthodes nécessitent une formation.",
+      "Une méthode de passation et d’analyse est nécessaire.",
+      "Une réponse isolée ne suffit pas à établir un diagnostic."
+    ],
+    "explanation": "A — Vrai. La réponse prend forme dans une situation clinique spécifique. B — Faux. Ce principe décrit plutôt certains questionnaires. C — Faux. Ces méthodes nécessitent une formation. D — Faux. Une méthode de passation et d’analyse est nécessaire. E — Faux. Une réponse isolée ne suffit pas à établir un diagnostic.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v061",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Comment définir « Méthode projective » ?",
+        "answers": [
+          "Situation utilisant un matériel ambigu pour explorer l’élaboration de réponses dans un cadre clinique spécifique."
+        ],
+        "explanation": "Situation utilisant un matériel ambigu pour explorer l’élaboration de réponses dans un cadre clinique spécifique."
+      },
+      {
+        "id": "psychometrie_v062",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Comment définir « Rorschach » ?",
+        "answers": [
+          "Méthode utilisant des taches d’encre avec un cadre de passation et d’analyse."
+        ],
+        "explanation": "Méthode utilisant des taches d’encre avec un cadre de passation et d’analyse."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q030",
+    "courseId": "psychometrie",
+    "number": 30,
+    "theme": "Méthodes projectives et dessin",
+    "difficulty": "medium",
+    "question": "Quelles associations sont exactes ?",
+    "choices": [
+      "CAT : matériel thématique destiné à l’enfant.",
+      "Rorschach : questionnaire parental sur l’hyperactivité.",
+      "TAT : calcul mental uniquement.",
+      "Patte-Noire : planches et histoires chez l’enfant.",
+      "Rorschach : taches d’encre."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La version décrite utilise notamment des scènes animalières.",
+      "Ce type de recueil correspond à une autre famille d’outils.",
+      "Le TAT utilise des images et des récits.",
+      "Le choix des planches et les récits participent à la méthode.",
+      "Le matériel sollicite une élaboration à partir de taches."
+    ],
+    "explanation": "A — Vrai. La version décrite utilise notamment des scènes animalières. B — Faux. Ce type de recueil correspond à une autre famille d’outils. C — Faux. Le TAT utilise des images et des récits. D — Vrai. Le choix des planches et les récits participent à la méthode. E — Vrai. Le matériel sollicite une élaboration à partir de taches.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c030",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Quels matériels distinguent le Rorschach, le TAT, le CAT et Patte-Noire ?",
+        "answers": [
+          "Rorschach : taches d’encre. TAT : scènes ambiguës et histoires. CAT : méthode thématique pour l’enfant, notamment avec scènes animalières. Patte-Noire : planches et récits chez l’enfant."
+        ],
+        "explanation": "Le Rorschach utilise des taches d’encre. Le TAT sollicite des histoires à partir de scènes ambiguës. Ces méthodes nécessitent une formation et un cadre d’analyse."
+      },
+      {
+        "id": "psychometrie_v063",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Comment définir « TAT » ?",
+        "answers": [
+          "Thematic Apperception Test : élaboration d’histoires à partir de scènes ambiguës."
+        ],
+        "explanation": "Thematic Apperception Test : élaboration d’histoires à partir de scènes ambiguës."
+      },
+      {
+        "id": "psychometrie_v065",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Comment définir « Patte-Noire » ?",
+        "answers": [
+          "Méthode projective pour l’enfant fondée sur des planches et des récits."
+        ],
+        "explanation": "Méthode projective pour l’enfant fondée sur des planches et des récits."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q031",
+    "courseId": "psychometrie",
+    "number": 31,
+    "theme": "Méthodes projectives et dessin",
+    "difficulty": "medium",
+    "question": "Un enfant de cinq ans réalise souvent des dessins de personnages à l’école. Quelles précautions sont pertinentes pour une évaluation par dessin ?",
+    "choices": [
+      "Considérer l’influence des exercices scolaires répétés.",
+      "Négliger les consignes parce que le dessin est libre.",
+      "Relier le dessin à l’âge, au contexte et aux échanges associés.",
+      "Conclure directement à un trouble à partir de la taille du personnage.",
+      "Assimiler une belle réalisation à l’absence de toute difficulté."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La pratique peut modifier la production graphique.",
+      "Les consignes définissent la situation d’évaluation.",
+      "Le dessin fait partie d’un ensemble clinique.",
+      "Un signe graphique isolé n’est pas diagnostique.",
+      "Une qualité graphique ne résume pas le fonctionnement psychique."
+    ],
+    "explanation": "A — Vrai. La pratique peut modifier la production graphique. B — Faux. Les consignes définissent la situation d’évaluation. C — Vrai. Le dessin fait partie d’un ensemble clinique. D — Faux. Un signe graphique isolé n’est pas diagnostique. E — Faux. Une qualité graphique ne résume pas le fonctionnement psychique.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c031",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Pourquoi tenir compte des dessins scolaires répétés lorsqu’un enfant de cinq ans est évalué par dessin ?",
+        "answers": [
+          "Considérer l’influence des exercices scolaires répétés. Relier le dessin à l’âge, au contexte et aux échanges associés."
+        ],
+        "explanation": "Une production graphique doit être reliée à l’âge, au contexte et aux échanges associés. Aucun détail isolé n’est une preuve diagnostique."
+      },
+      {
+        "id": "psychometrie_v064",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Comment définir « CAT » ?",
+        "answers": [
+          "Children’s Apperception Test : méthode thématique destinée à l’enfant."
+        ],
+        "explanation": "Children’s Apperception Test : méthode thématique destinée à l’enfant."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q032",
+    "courseId": "psychometrie",
+    "number": 32,
+    "theme": "Méthodes projectives et dessin",
+    "difficulty": "medium",
+    "question": "Quelles affirmations sur l’utilisation clinique du dessin sont exactes ?",
+    "choices": [
+      "Les questions après le dessin sont toujours sans intérêt.",
+      "Le dessin de famille peut être complété par des questions.",
+      "La maîtrise du dessin dispense de connaître l’histoire du sujet.",
+      "La consigne de l’arbre de Koch consiste à recopier une figure géométrique.",
+      "Le thème et l’organisation de la feuille peuvent être observés."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’entretien associé peut préciser le sens de la production.",
+      "Ces échanges enrichissent l’appréciation clinique.",
+      "L’histoire et le contexte restent nécessaires.",
+      "Il s’agit d’une production d’arbres selon des consignes.",
+      "Ils font partie des éléments descriptifs examinés."
+    ],
+    "explanation": "A — Faux. L’entretien associé peut préciser le sens de la production. B — Vrai. Ces échanges enrichissent l’appréciation clinique. C — Faux. L’histoire et le contexte restent nécessaires. D — Faux. Il s’agit d’une production d’arbres selon des consignes. E — Vrai. Ils font partie des éléments descriptifs examinés.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c032",
+        "theme": "Méthodes projectives et dessin",
+        "front": "Quels éléments et échanges peuvent enrichir l’évaluation clinique par dessin ?",
+        "answers": [
+          "Le dessin de famille peut être complété par des questions. Le thème et l’organisation de la feuille peuvent être observés."
+        ],
+        "explanation": "Les consignes, l’âge et l’histoire du sujet sont nécessaires. Le dessin de l’arbre de Koch n’est pas une copie de figure géométrique."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q033",
+    "courseId": "psychometrie",
+    "number": 33,
+    "theme": "Questionnaires et dépression",
+    "difficulty": "medium",
+    "question": "Quelles modalités d’évaluation de la dépression sont correctement associées ?",
+    "choices": [
+      "Beck : auto-évaluation.",
+      "GDS : outil destiné à la personne âgée.",
+      "Hamilton : uniquement évaluation par les parents.",
+      "BDI-13 : inventaire de personnalité en cinq dimensions.",
+      "Un score de dépression constitue à lui seul tout le bilan."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La personne répond sur son expérience.",
+      "Le sigle désigne la Geriatric Depression Scale.",
+      "L’échelle citée est une hétéro-évaluation clinique.",
+      "Il s’agit d’un inventaire de symptômes dépressifs.",
+      "L’évaluation globale comporte d’autres informations."
+    ],
+    "explanation": "A — Vrai. La personne répond sur son expérience. B — Vrai. Le sigle désigne la Geriatric Depression Scale. C — Faux. L’échelle citée est une hétéro-évaluation clinique. D — Faux. Il s’agit d’un inventaire de symptômes dépressifs. E — Faux. L’évaluation globale comporte d’autres informations.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c033",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment distinguer Beck, Hamilton et GDS dans l’évaluation de la dépression ?",
+        "answers": [
+          "Beck : auto-évaluation. Hamilton : hétéro-évaluation clinique. GDS : échelle de dépression destinée à la personne âgée."
+        ],
+        "explanation": "Hamilton est présenté comme une hétéro-évaluation clinique. Un score de dépression ne constitue pas à lui seul tout le bilan."
+      },
+      {
+        "id": "psychometrie_v067",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « SCL-90-R » ?",
+        "answers": [
+          "Symptom Checklist-90-Revised : inventaire de symptômes psychologiques."
+        ],
+        "explanation": "Symptom Checklist-90-Revised : inventaire de symptômes psychologiques."
+      },
+      {
+        "id": "psychometrie_v072",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Échelle de Hamilton » ?",
+        "answers": [
+          "Instrument d’hétéro-évaluation de la dépression."
+        ],
+        "explanation": "Instrument d’hétéro-évaluation de la dépression."
+      },
+      {
+        "id": "psychometrie_v076",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « GDS » ?",
+        "answers": [
+          "Geriatric Depression Scale : échelle de dépression destinée aux personnes âgées."
+        ],
+        "explanation": "Geriatric Depression Scale : échelle de dépression destinée aux personnes âgées."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q034",
+    "courseId": "psychometrie",
+    "number": 34,
+    "theme": "Questionnaires et dépression",
+    "difficulty": "easy",
+    "question": "Un inventaire comporte 13 items cotés chacun de 0 à 3. Quelle est l’étendue possible du score total ?",
+    "choices": [
+      "De 0 à 39.",
+      "De 3 à 42.",
+      "De 0 à 30.",
+      "De 1 à 39.",
+      "De 0 à 13."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le maximum est 13 multiplié par 3.",
+      "Ces bornes ne résultent pas de la cotation annoncée.",
+      "Cette borne ne correspond pas à la somme décrite.",
+      "Un total nul est possible si tous les items valent zéro.",
+      "Cette limite supposerait des items cotés au maximum 1."
+    ],
+    "explanation": "A — Vrai. Le maximum est 13 multiplié par 3. B — Faux. Ces bornes ne résultent pas de la cotation annoncée. C — Faux. Cette borne ne correspond pas à la somme décrite. D — Faux. Un total nul est possible si tous les items valent zéro. E — Faux. Cette limite supposerait des items cotés au maximum 1.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c034",
+        "theme": "Questionnaires et dépression",
+        "front": "Quel score total est possible avec treize items cotés chacun de zéro à trois ?",
+        "answers": [
+          "Le score peut aller de zéro à trente-neuf."
+        ],
+        "explanation": "Le minimum est zéro et le maximum est treize multiplié par trois. Ne pas transposer les règles d’une version à une autre."
+      },
+      {
+        "id": "psychometrie_v069",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « BDI-13 » ?",
+        "answers": [
+          "Inventaire abrégé de dépression de Beck à 13 items cotés de 0 à 3, total de 0 à 39."
+        ],
+        "explanation": "Inventaire abrégé de dépression de Beck à 13 items cotés de 0 à 3, total de 0 à 39."
+      },
+      {
+        "id": "psychometrie_v099",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Schéma cognitif » ?",
+        "answers": [
+          "Organisation des croyances et attentes orientant l’interprétation des situations."
+        ],
+        "explanation": "Organisation des croyances et attentes orientant l’interprétation des situations."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q035",
+    "courseId": "psychometrie",
+    "number": 35,
+    "theme": "Questionnaires et dépression",
+    "difficulty": "medium",
+    "question": "Dans un inventaire à 13 items cotés de 0 à 3, une personne obtient cinq réponses à 2, trois à 1 et cinq à 0. Quelles affirmations sont exactes ?",
+    "choices": [
+      "Le total doit être interprété avec la version de l’instrument.",
+      "Le total est de 13 points.",
+      "Le total est de 16 points.",
+      "Une réponse préoccupante peut être ignorée si le total paraît modéré.",
+      "Le total suffit à établir un diagnostic complet."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les règles ne se transposent pas automatiquement d’une version à l’autre.",
+      "Le calcul est 5 × 2 + 3 × 1 + 5 × 0.",
+      "Ce résultat ne correspond pas à la somme des réponses.",
+      "L’attention à une réponse préoccupante ne dépend pas uniquement du total.",
+      "Les informations cliniques et l’entretien restent nécessaires."
+    ],
+    "explanation": "A — Vrai. Les règles ne se transposent pas automatiquement d’une version à l’autre. B — Vrai. Le calcul est 5 × 2 + 3 × 1 + 5 × 0. C — Faux. Ce résultat ne correspond pas à la somme des réponses. D — Faux. L’attention à une réponse préoccupante ne dépend pas uniquement du total. E — Faux. Les informations cliniques et l’entretien restent nécessaires.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c035",
+        "theme": "Questionnaires et dépression",
+        "front": "Dans un inventaire à treize items, cinq réponses valent deux, trois valent un et cinq valent zéro. Quel total obtient-on et quelle limite retenir ?",
+        "answers": [
+          "Le total est de treize points. Il doit être interprété avec les règles de la version utilisée."
+        ],
+        "explanation": "Le calcul est cinq fois deux, plus trois fois un, soit treize. Le total ne remplace pas l’entretien ; une réponse préoccupante garde son importance."
+      },
+      {
+        "id": "psychometrie_v068",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « MINI » ?",
+        "answers": [
+          "Mini International Neuropsychiatric Interview : entretien diagnostique structuré."
+        ],
+        "explanation": "Mini International Neuropsychiatric Interview : entretien diagnostique structuré."
+      },
+      {
+        "id": "psychometrie_v070",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Item » ?",
+        "answers": [
+          "Unité d’un instrument : question, proposition ou tâche à laquelle une réponse est recueillie."
+        ],
+        "explanation": "Unité d’un instrument : question, proposition ou tâche à laquelle une réponse est recueillie."
+      },
+      {
+        "id": "psychometrie_v105",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Impulsivité » ?",
+        "answers": [
+          "Tendance à agir rapidement avec une anticipation ou un contrôle limités de la réponse."
+        ],
+        "explanation": "Tendance à agir rapidement avec une anticipation ou un contrôle limités de la réponse."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q036",
+    "courseId": "psychometrie",
+    "number": 36,
+    "theme": "Questionnaires et dépression",
+    "difficulty": "medium",
+    "question": "Quelles dimensions un questionnaire psychologique peut-il explorer ?",
+    "choices": [
+      "L’intégralité du fonctionnement sans autre méthode.",
+      "Les croyances et processus de régulation émotionnelle.",
+      "La cause certaine d’un trouble à partir du seul total.",
+      "L’intensité des manifestations dépressives.",
+      "La qualité de vie ou le désir de changement."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une méthode unique n’épuise pas le bilan global.",
+      "Des questionnaires peuvent cibler ces processus.",
+      "Le score ne démontre pas une cause certaine.",
+      "L’intensité peut être décrite par une mesure graduée.",
+      "Les questionnaires ne se limitent pas à une liste de troubles."
+    ],
+    "explanation": "A — Faux. Une méthode unique n’épuise pas le bilan global. B — Vrai. Des questionnaires peuvent cibler ces processus. C — Faux. Le score ne démontre pas une cause certaine. D — Vrai. L’intensité peut être décrite par une mesure graduée. E — Vrai. Les questionnaires ne se limitent pas à une liste de troubles.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c036",
+        "theme": "Questionnaires et dépression",
+        "front": "Au-delà d’une catégorie diagnostique, que peut explorer un questionnaire psychologique ?",
+        "answers": [
+          "Les croyances et processus de régulation émotionnelle. L’intensité des manifestations dépressives. La qualité de vie ou le désir de changement."
+        ],
+        "explanation": "Il peut aussi concerner la personnalité, l’estime de soi, les relations ou les conséquences des difficultés. Il ne décrit pas à lui seul tout le fonctionnement."
+      },
+      {
+        "id": "psychometrie_v066",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Psychopathologie » ?",
+        "answers": [
+          "Étude des troubles psychiques et des processus qui y participent."
+        ],
+        "explanation": "Étude des troubles psychiques et des processus qui y participent."
+      },
+      {
+        "id": "psychometrie_v098",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Régulation émotionnelle » ?",
+        "answers": [
+          "Processus permettant de reconnaître et de moduler les émotions et leurs expressions."
+        ],
+        "explanation": "Processus permettant de reconnaître et de moduler les émotions et leurs expressions."
+      },
+      {
+        "id": "psychometrie_v104",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Perfectionnisme » ?",
+        "answers": [
+          "Recherche d’exigences élevées et de maîtrise pouvant participer à des difficultés selon son intensité et son fonctionnement."
+        ],
+        "explanation": "Recherche d’exigences élevées et de maîtrise pouvant participer à des difficultés selon son intensité et son fonctionnement."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q037",
+    "courseId": "psychometrie",
+    "number": 37,
+    "theme": "Questionnaires et dépression",
+    "difficulty": "hard",
+    "question": "Quelles propositions sur les processus psychologiques sont exactes ?",
+    "choices": [
+      "Un locus externe suffit à identifier un diagnostic psychiatrique.",
+      "Le perfectionnisme est une mesure exclusive de l’intelligence.",
+      "Un facteur salutogène soutient la santé.",
+      "Le locus de contrôle externe et la résignation sont des synonymes exacts.",
+      "La résignation acquise renvoie au sentiment que ses actions ne changent plus l’issue."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une attribution de contrôle n’est pas à elle seule un diagnostic.",
+      "Il peut être exploré comme processus impliqué dans différentes difficultés.",
+      "Il est distingué d’un facteur participant aux difficultés.",
+      "Ils sont liés mais ne décrivent pas le même processus.",
+      "Elle concerne un sentiment d’impuissance appris."
+    ],
+    "explanation": "A — Faux. Une attribution de contrôle n’est pas à elle seule un diagnostic. B — Faux. Il peut être exploré comme processus impliqué dans différentes difficultés. C — Vrai. Il est distingué d’un facteur participant aux difficultés. D — Faux. Ils sont liés mais ne décrivent pas le même processus. E — Vrai. Elle concerne un sentiment d’impuissance appris.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c037",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment distinguer résignation acquise, locus de contrôle externe et facteurs salutogènes ?",
+        "answers": [
+          "La résignation acquise renvoie au sentiment appris que ses actions ne changent plus l’issue. Le locus externe concerne l’attribution à des facteurs extérieurs. Un facteur salutogène soutient la santé."
+        ],
+        "explanation": "Le locus externe privilégie l’attribution des événements à des facteurs extérieurs. Il n’est pas synonyme de résignation et ne constitue pas un diagnostic."
+      },
+      {
+        "id": "psychometrie_v071",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Cotation » ?",
+        "answers": [
+          "Attribution des valeurs prévues par les règles d’un instrument."
+        ],
+        "explanation": "Attribution des valeurs prévues par les règles d’un instrument."
+      },
+      {
+        "id": "psychometrie_v100",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Mécanisme défensif » ?",
+        "answers": [
+          "Mode de fonctionnement psychique participant à la manière de faire face aux tensions."
+        ],
+        "explanation": "Mode de fonctionnement psychique participant à la manière de faire face aux tensions."
+      },
+      {
+        "id": "psychometrie_v101",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Lieu ou locus de contrôle » ?",
+        "answers": [
+          "Manière d’attribuer les événements à ses actions ou à des facteurs extérieurs ; le locus externe privilégie ces derniers."
+        ],
+        "explanation": "Manière d’attribuer les événements à ses actions ou à des facteurs extérieurs ; le locus externe privilégie ces derniers."
+      },
+      {
+        "id": "psychometrie_v102",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Résignation acquise » ?",
+        "answers": [
+          "Sentiment appris que ses actions ne peuvent plus modifier l’issue d’une situation."
+        ],
+        "explanation": "Sentiment appris que ses actions ne peuvent plus modifier l’issue d’une situation."
+      },
+      {
+        "id": "psychometrie_v103",
+        "theme": "Questionnaires et dépression",
+        "front": "Comment définir « Salutogène / pathogène » ?",
+        "answers": [
+          "Qui soutient la santé / qui participe à l’apparition ou au maintien des difficultés."
+        ],
+        "explanation": "Qui soutient la santé / qui participe à l’apparition ou au maintien des difficultés."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q038",
+    "courseId": "psychometrie",
+    "number": 38,
+    "theme": "Conners et informateurs",
+    "difficulty": "easy",
+    "question": "Que distingue correctement l’auto-évaluation de l’hétéro-évaluation ?",
+    "choices": [
+      "Une hétéro-évaluation est toujours remplie par un médecin.",
+      "En auto-évaluation, la personne répond sur son fonctionnement.",
+      "L’hétéro-évaluation supprime tous les biais d’observation.",
+      "L’auto-évaluation nécessite une absence totale de symptômes.",
+      "En hétéro-évaluation, le point de vue d’un tiers est recueilli."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le répondant peut aussi être parent, professeur ou autre informateur prévu.",
+      "Le répondant est le sujet lui-même.",
+      "Les attentes et le contexte influencent aussi le tiers.",
+      "Elle peut concerner une personne présentant des difficultés.",
+      "Il décrit ce qu’il peut observer dans un contexte donné."
+    ],
+    "explanation": "A — Faux. Le répondant peut aussi être parent, professeur ou autre informateur prévu. B — Vrai. Le répondant est le sujet lui-même. C — Faux. Les attentes et le contexte influencent aussi le tiers. D — Faux. Elle peut concerner une personne présentant des difficultés. E — Vrai. Il décrit ce qu’il peut observer dans un contexte donné.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c038",
+        "theme": "Conners et informateurs",
+        "front": "Quelle différence entre auto-évaluation et hétéro-évaluation, et quelle limite partagent-elles ?",
+        "answers": [
+          "En auto-évaluation, le sujet répond sur son fonctionnement. En hétéro-évaluation, un tiers répond selon l’outil. Les deux modalités peuvent être influencées par des biais."
+        ],
+        "explanation": "Chaque point de vue possède des limites. Compréhension et présentation de soi comptent pour le sujet ; contexte et attentes comptent aussi pour le tiers."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q039",
+    "courseId": "psychometrie",
+    "number": 39,
+    "theme": "Conners et informateurs",
+    "difficulty": "medium",
+    "question": "Un parent décrit une agitation pendant les devoirs le soir ; le professeur observe une meilleure attention le matin. Quelles démarches sont pertinentes ?",
+    "choices": [
+      "Examiner les contextes et les exigences des tâches.",
+      "Écarter l’avis du parent sans autre analyse.",
+      "Croiser les informations de plusieurs informateurs.",
+      "Poser automatiquement un diagnostic à partir de ce désaccord.",
+      "Rechercher l’effet possible de la fatigue."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Des conditions différentes peuvent éclairer des réponses différentes.",
+      "Son observation peut décrire une situation réelle différente.",
+      "La comparaison enrichit la compréhension du fonctionnement.",
+      "Le désaccord ne suffit pas à un diagnostic.",
+      "L’heure et la fatigue peuvent modifier les comportements."
+    ],
+    "explanation": "A — Vrai. Des conditions différentes peuvent éclairer des réponses différentes. B — Faux. Son observation peut décrire une situation réelle différente. C — Vrai. La comparaison enrichit la compréhension du fonctionnement. D — Faux. Le désaccord ne suffit pas à un diagnostic. E — Vrai. L’heure et la fatigue peuvent modifier les comportements.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c039",
+        "theme": "Conners et informateurs",
+        "front": "Un enfant est agité pendant les devoirs du soir mais plus attentif en classe le matin. Comment confronter les observations ?",
+        "answers": [
+          "Examiner les contextes et les exigences des tâches. Croiser les informations de plusieurs informateurs. Rechercher l’effet possible de la fatigue."
+        ],
+        "explanation": "Les réponses peuvent refléter des situations différentes. Le désaccord entre observateurs ne suffit pas à poser un diagnostic."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q040",
+    "courseId": "psychometrie",
+    "number": 40,
+    "theme": "Conners et informateurs",
+    "difficulty": "medium",
+    "question": "Quelles propositions sur les questionnaires comportementaux et les difficultés psychiques sont exactes ?",
+    "choices": [
+      "Un résultat de Conners équivaut à un diagnostic automatique de TDAH.",
+      "Les difficultés externalisées ne sont jamais observables.",
+      "L’anxiété et la dépression illustrent des difficultés internalisées.",
+      "Les versions de Conners peuvent recueillir des points de vue différents.",
+      "La fréquence d’un comportement suffit sans tenir compte de son contexte."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le résultat est un élément de la démarche clinique.",
+      "Elles se manifestent davantage dans les conduites et interactions.",
+      "Elles concernent notamment l’expérience psychique interne.",
+      "Parent, professeur et jeune peuvent être sollicités selon la version.",
+      "Le contexte et le retentissement participent à l’évaluation."
+    ],
+    "explanation": "A — Faux. Le résultat est un élément de la démarche clinique. B — Faux. Elles se manifestent davantage dans les conduites et interactions. C — Vrai. Elles concernent notamment l’expérience psychique interne. D — Vrai. Parent, professeur et jeune peuvent être sollicités selon la version. E — Faux. Le contexte et le retentissement participent à l’évaluation.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c040",
+        "theme": "Conners et informateurs",
+        "front": "Comment utiliser les questionnaires de Conners et distinguer difficultés internalisées et externalisées ?",
+        "answers": [
+          "Les versions de Conners peuvent recueillir plusieurs points de vue. L’anxiété et la dépression illustrent les difficultés internalisées ; les conduites et interactions observables éclairent les difficultés externalisées."
+        ],
+        "explanation": "Les difficultés externalisées se manifestent davantage dans les conduites et interactions. Un résultat de questionnaire n’est pas un diagnostic automatique."
+      },
+      {
+        "id": "psychometrie_v073",
+        "theme": "Conners et informateurs",
+        "front": "Comment définir « Conners » ?",
+        "answers": [
+          "Famille de questionnaires sur les comportements et difficultés, avec versions adaptées aux informateurs."
+        ],
+        "explanation": "Famille de questionnaires sur les comportements et difficultés, avec versions adaptées aux informateurs."
+      },
+      {
+        "id": "psychometrie_v074",
+        "theme": "Conners et informateurs",
+        "front": "Comment définir « Troubles internalisés » ?",
+        "answers": [
+          "Difficultés exprimées notamment dans l’expérience interne, comme anxiété ou dépression."
+        ],
+        "explanation": "Difficultés exprimées notamment dans l’expérience interne, comme anxiété ou dépression."
+      },
+      {
+        "id": "psychometrie_v075",
+        "theme": "Conners et informateurs",
+        "front": "Comment définir « Troubles externalisés » ?",
+        "answers": [
+          "Difficultés se manifestant davantage dans les conduites et interactions observables."
+        ],
+        "explanation": "Difficultés se manifestant davantage dans les conduites et interactions observables."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q041",
+    "courseId": "psychometrie",
+    "number": 41,
+    "theme": "Observation et registres",
+    "difficulty": "easy",
+    "question": "Quelles observations sont décrites de manière factuelle ?",
+    "choices": [
+      "Un seul comportement permet de décrire tout le fonctionnement.",
+      "La personne cherche forcément à contrarier l’équipe.",
+      "L’enfant s’est levé quatre fois pendant dix minutes d’exercice.",
+      "L’enfant est insupportable.",
+      "La personne est restée engagée dans l’activité pendant six minutes."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’évaluation demande plusieurs informations.",
+      "Cette intention supposée n’est pas un fait observé.",
+      "Le comportement, la fréquence et la période sont identifiés.",
+      "Il s’agit d’un jugement global, non d’un relevé précis.",
+      "La durée est une mesure descriptive possible."
+    ],
+    "explanation": "A — Faux. L’évaluation demande plusieurs informations. B — Faux. Cette intention supposée n’est pas un fait observé. C — Vrai. Le comportement, la fréquence et la période sont identifiés. D — Faux. Il s’agit d’un jugement global, non d’un relevé précis. E — Vrai. La durée est une mesure descriptive possible.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c041",
+        "theme": "Observation et registres",
+        "front": "Comment décrire un comportement de manière factuelle plutôt que par un jugement ?",
+        "answers": [
+          "L’enfant s’est levé quatre fois pendant dix minutes d’exercice. La personne est restée engagée dans l’activité pendant six minutes."
+        ],
+        "explanation": "Préciser le comportement, le contexte et la période d’observation. Une intention supposée, comme vouloir contrarier l’équipe, n’est pas un fait directement observé."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q042",
+    "courseId": "psychometrie",
+    "number": 42,
+    "theme": "Observation et registres",
+    "difficulty": "medium",
+    "question": "Quel peut être l’intérêt d’un registre d’auto-observation ?",
+    "choices": [
+      "Garantir que l’observation n’influence jamais le comportement.",
+      "Supprimer les échanges avec le clinicien.",
+      "Repérer les liens entre situations, pensées et émotions.",
+      "Soutenir la participation dans une démarche de psychoéducation.",
+      "Aider la personne à prendre conscience de certaines répétitions."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le fait de s’observer peut lui-même modifier le fonctionnement.",
+      "Le registre enrichit les échanges plutôt qu’il ne les remplace.",
+      "Le relevé organise les informations dans le temps.",
+      "Comprendre et observer peut rendre la personne davantage actrice.",
+      "L’observation peut participer au travail thérapeutique."
+    ],
+    "explanation": "A — Faux. Le fait de s’observer peut lui-même modifier le fonctionnement. B — Faux. Le registre enrichit les échanges plutôt qu’il ne les remplace. C — Vrai. Le relevé organise les informations dans le temps. D — Vrai. Comprendre et observer peut rendre la personne davantage actrice. E — Vrai. L’observation peut participer au travail thérapeutique.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c042",
+        "theme": "Observation et registres",
+        "front": "À quoi sert un registre d’auto-observation et peut-il modifier les comportements ?",
+        "answers": [
+          "Repérer les liens entre situations, pensées et émotions. Soutenir la participation dans une démarche de psychoéducation. Aider la personne à prendre conscience de certaines répétitions."
+        ],
+        "explanation": "Le fait d’observer et de noter peut lui-même participer au changement. Le registre ne remplace pas les échanges cliniques."
+      },
+      {
+        "id": "psychometrie_v077",
+        "theme": "Observation et registres",
+        "front": "Comment définir « Psychoéducation » ?",
+        "answers": [
+          "Information et soutien aidant la personne à comprendre ses difficultés et à participer à leur prise en charge."
+        ],
+        "explanation": "Information et soutien aidant la personne à comprendre ses difficultés et à participer à leur prise en charge."
+      },
+      {
+        "id": "psychometrie_v078",
+        "theme": "Observation et registres",
+        "front": "Comment définir « Registre d’observation » ?",
+        "answers": [
+          "Relevé organisé dans le temps de faits, situations, comportements ou expériences."
+        ],
+        "explanation": "Relevé organisé dans le temps de faits, situations, comportements ou expériences."
+      },
+      {
+        "id": "psychometrie_v079",
+        "theme": "Observation et registres",
+        "front": "Comment définir « Énurésie » ?",
+        "answers": [
+          "Émissions d’urine involontaires dans une situation où le contrôle est attendu ; leur suivi peut être décrit par un registre."
+        ],
+        "explanation": "Émissions d’urine involontaires dans une situation où le contrôle est attendu ; leur suivi peut être décrit par un registre."
+      },
+      {
+        "id": "psychometrie_v080",
+        "theme": "Observation et registres",
+        "front": "Comment définir « Cognition au sens de pensée » ?",
+        "answers": [
+          "Pensée ou interprétation relevée dans une situation, notamment dans un registre d’auto-observation."
+        ],
+        "explanation": "Pensée ou interprétation relevée dans une situation, notamment dans un registre d’auto-observation."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q043",
+    "courseId": "psychometrie",
+    "number": 43,
+    "theme": "Observation et registres",
+    "difficulty": "medium",
+    "question": "Une personne présente des difficultés à rendre compte de son fonctionnement quotidien. Que peut apporter l’avis de ses proches ?",
+    "choices": [
+      "Des observations dans d’autres contextes.",
+      "Des informations complémentaires sur son fonctionnement habituel.",
+      "Un remplacement automatique du travail professionnel.",
+      "Une interprétation nécessairement dépourvue de biais.",
+      "Une raison d’exclure toute expression du sujet."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les proches peuvent connaître des situations non observées au bilan.",
+      "Elles peuvent éclairer les variations constatées.",
+      "L’avis s’intègre à l’analyse multidisciplinaire.",
+      "Le point de vue d’un proche possède aussi des limites.",
+      "Sa parole et ses réactions doivent rester considérées."
+    ],
+    "explanation": "A — Vrai. Les proches peuvent connaître des situations non observées au bilan. B — Vrai. Elles peuvent éclairer les variations constatées. C — Faux. L’avis s’intègre à l’analyse multidisciplinaire. D — Faux. Le point de vue d’un proche possède aussi des limites. E — Faux. Sa parole et ses réactions doivent rester considérées.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c043",
+        "theme": "Observation et registres",
+        "front": "Que peuvent apporter les proches lorsque la personne décrit difficilement son fonctionnement quotidien ?",
+        "answers": [
+          "Des observations dans d’autres contextes. Des informations complémentaires sur son fonctionnement habituel."
+        ],
+        "explanation": "Leurs observations complètent l’évaluation sans remplacer l’expression du sujet ni l’analyse professionnelle."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q044",
+    "courseId": "psychometrie",
+    "number": 44,
+    "theme": "Neuropsychologie et MMSE",
+    "difficulty": "easy",
+    "question": "Quelles affirmations décrivent correctement le MMSE ?",
+    "choices": [
+      "Son total peut atteindre 30 points.",
+      "Il comporte une exploration de l’orientation.",
+      "Il s’applique sans consignes précises de cotation.",
+      "Il détermine à lui seul la cause d’une difficulté cognitive.",
+      "Il contribue au repérage d’une possible détérioration cognitive."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ce total résulte de plusieurs domaines.",
+      "L’orientation temporelle et spatiale fait partie des domaines.",
+      "Le protocole prévoit des règles de passation et de cotation.",
+      "La cause nécessite une évaluation plus complète.",
+      "Il s’agit d’un outil de dépistage."
+    ],
+    "explanation": "A — Vrai. Ce total résulte de plusieurs domaines. B — Vrai. L’orientation temporelle et spatiale fait partie des domaines. C — Faux. Le protocole prévoit des règles de passation et de cotation. D — Faux. La cause nécessite une évaluation plus complète. E — Vrai. Il s’agit d’un outil de dépistage.",
+    "flashcards": [
+      {
+        "id": "psychometrie_v083",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « MMSE / MMS » ?",
+        "answers": [
+          "Mini Mental State Examination : outil de repérage cognitif dont le total est coté sur 30."
+        ],
+        "explanation": "Mini Mental State Examination : outil de repérage cognitif dont le total est coté sur 30."
+      },
+      {
+        "id": "psychometrie_v082",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Fonctions exécutives » ?",
+        "answers": [
+          "Processus d’organisation, de contrôle et d’adaptation de l’activité à un objectif."
+        ],
+        "explanation": "Processus d’organisation, de contrôle et d’adaptation de l’activité à un objectif."
+      },
+      {
+        "id": "psychometrie_v084",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Orientation temporo-spatiale » ?",
+        "answers": [
+          "Capacité à se repérer dans le temps et dans l’espace."
+        ],
+        "explanation": "Capacité à se repérer dans le temps et dans l’espace."
+      },
+      {
+        "id": "psychometrie_v087",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Dépistage » ?",
+        "answers": [
+          "Repérage d’une possible difficulté nécessitant une appréciation plus complète."
+        ],
+        "explanation": "Repérage d’une possible difficulté nécessitant une appréciation plus complète."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q045",
+    "courseId": "psychometrie",
+    "number": 45,
+    "theme": "Neuropsychologie et MMSE",
+    "difficulty": "medium",
+    "question": "Quelles associations entre domaines du MMSE et maximum de points sont exactes ?",
+    "choices": [
+      "Apprentissage : 3 points.",
+      "Attention et calcul : 5 points.",
+      "Orientation : 10 points.",
+      "Langage : 3 points.",
+      "Praxies constructives : 5 points."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’enregistrement initial de trois éléments est coté sur 3.",
+      "Cette partie contribue pour 5 points au total.",
+      "Elle comprend les repères temporels et spatiaux.",
+      "Le langage est coté sur 8 dans la version présentée.",
+      "La copie de figure est cotée sur 1."
+    ],
+    "explanation": "A — Vrai. L’enregistrement initial de trois éléments est coté sur 3. B — Vrai. Cette partie contribue pour 5 points au total. C — Vrai. Elle comprend les repères temporels et spatiaux. D — Faux. Le langage est coté sur 8 dans la version présentée. E — Faux. La copie de figure est cotée sur 1.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c045",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Quels domaines composent la version consensuelle du MMSE et combien de points leur sont attribués ?",
+        "answers": [
+          "Orientation : dix points. Apprentissage : trois. Attention et calcul : cinq. Rappel : trois. Langage : huit. Praxies constructives : un. Total : trente."
+        ],
+        "explanation": "Le langage est coté sur huit points, le rappel sur trois et les praxies constructives sur un ; le total est sur trente."
+      },
+      {
+        "id": "psychometrie_v081",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Neuropsychologie » ?",
+        "answers": [
+          "Étude des relations entre fonctionnement cérébral, cognition et comportement, notamment lors de troubles neurologiques."
+        ],
+        "explanation": "Étude des relations entre fonctionnement cérébral, cognition et comportement, notamment lors de troubles neurologiques."
+      },
+      {
+        "id": "psychometrie_v085",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Apprentissage / rappel » ?",
+        "answers": [
+          "Enregistrement d’informations puis restitution après un délai ; deux temps à distinguer."
+        ],
+        "explanation": "Enregistrement d’informations puis restitution après un délai ; deux temps à distinguer."
+      },
+      {
+        "id": "psychometrie_v086",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Comment définir « Praxies constructives » ?",
+        "answers": [
+          "Organisation d’une réalisation visuo-motrice, par exemple une copie de figure."
+        ],
+        "explanation": "Organisation d’une réalisation visuo-motrice, par exemple une copie de figure."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q046",
+    "courseId": "psychometrie",
+    "number": 46,
+    "theme": "Neuropsychologie et MMSE",
+    "difficulty": "medium",
+    "question": "Quelles conditions de passation sont pertinentes pour un repérage cognitif ?",
+    "choices": [
+      "Noter l’anxiété, la fatigue et les difficultés de compréhension.",
+      "Interpréter toute hésitation comme une maladie cognitive.",
+      "Prévoir un lieu calme et un temps suffisant.",
+      "Souffler les réponses pour limiter l’anxiété.",
+      "Informer la personne et rester bienveillant."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces éléments éclairent l’interprétation.",
+      "Une hésitation peut avoir plusieurs explications.",
+      "Cela aide à obtenir des réponses dans de bonnes conditions.",
+      "L’aide aux réponses modifierait la tâche évaluée.",
+      "La relation soutient la participation sans remplacer la standardisation."
+    ],
+    "explanation": "A — Vrai. Ces éléments éclairent l’interprétation. B — Faux. Une hésitation peut avoir plusieurs explications. C — Vrai. Cela aide à obtenir des réponses dans de bonnes conditions. D — Faux. L’aide aux réponses modifierait la tâche évaluée. E — Vrai. La relation soutient la participation sans remplacer la standardisation.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c046",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Quelles conditions préparer pour une passation de repérage cognitif ?",
+        "answers": [
+          "Noter l’anxiété, la fatigue et les difficultés de compréhension. Prévoir un lieu calme et un temps suffisant. Informer la personne et rester bienveillant."
+        ],
+        "explanation": "La bienveillance soutient la participation sans souffler les réponses. Les consignes et la cotation doivent rester respectées."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q047",
+    "courseId": "psychometrie",
+    "number": 47,
+    "theme": "Neuropsychologie et MMSE",
+    "difficulty": "hard",
+    "question": "Une personne âgée obtient un résultat faible au MMSE et paraît très anxieuse. Quelle conduite est pertinente ?",
+    "choices": [
+      "Transmettre le résultat et les conditions de passation à l’équipe.",
+      "Annoncer immédiatement une maladie d’Alzheimer.",
+      "Considérer le résultat faible comme normal du seul fait de l’âge.",
+      "Écarter toute exploration ultérieure puisque l’anxiété est présente.",
+      "Modifier la cotation pour tenir compte intuitivement de l’anxiété."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le score doit être remis dans son contexte clinique.",
+      "Un score isolé ne suffit pas à ce diagnostic.",
+      "L’âge ne permet pas cette conclusion automatique.",
+      "L’anxiété n’exclut pas une autre difficulté.",
+      "Les règles ne doivent pas être changées arbitrairement."
+    ],
+    "explanation": "A — Vrai. Le score doit être remis dans son contexte clinique. B — Faux. Un score isolé ne suffit pas à ce diagnostic. C — Faux. L’âge ne permet pas cette conclusion automatique. D — Faux. L’anxiété n’exclut pas une autre difficulté. E — Faux. Les règles ne doivent pas être changées arbitrairement.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c047",
+        "theme": "Neuropsychologie et MMSE",
+        "front": "Une personne âgée obtient un score faible au MMSE et paraît très anxieuse. Que transmettre et que ne pas conclure ?",
+        "answers": [
+          "Transmettre le score, les réponses et les conditions de passation, dont l’anxiété, pour une interprétation globale par l’équipe."
+        ],
+        "explanation": "Ne pas annoncer une maladie particulière sur le seul total, modifier la cotation intuitivement ou considérer la difficulté comme normale du seul fait de l’âge."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q048",
+    "courseId": "psychometrie",
+    "number": 48,
+    "theme": "Approches et collaboration",
+    "difficulty": "easy",
+    "question": "Quelles associations entre approches d’évaluation et questions sont exactes ?",
+    "choices": [
+      "Catégorielle et dimensionnelle : démarches incompatibles.",
+      "Dimensionnelle : interdire tout suivi de l’évolution.",
+      "Catégorielle : exclure l’histoire et le contexte.",
+      "Dimensionnelle : apprécier l’intensité d’une dimension.",
+      "Catégorielle : reconnaître un trouble à partir de signes et de critères."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Elles peuvent être complémentaires.",
+      "Les mesures graduées peuvent au contraire servir au suivi.",
+      "Ces informations restent indispensables au raisonnement.",
+      "Elle permet une description graduée.",
+      "Elle organise la réflexion en catégories diagnostiques."
+    ],
+    "explanation": "A — Faux. Elles peuvent être complémentaires. B — Faux. Les mesures graduées peuvent au contraire servir au suivi. C — Faux. Ces informations restent indispensables au raisonnement. D — Vrai. Elle permet une description graduée. E — Vrai. Elle organise la réflexion en catégories diagnostiques.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c048",
+        "theme": "Approches et collaboration",
+        "front": "Comment l’approche catégorielle et l’approche dimensionnelle se complètent-elles ?",
+        "answers": [
+          "L’approche catégorielle recherche un trouble à partir de signes et de critères. L’approche dimensionnelle décrit l’intensité d’une dimension ; elles peuvent se compléter."
+        ],
+        "explanation": "Reconnaître une catégorie ne dispense pas de considérer le contexte. Décrire l’intensité peut aussi permettre de suivre l’évolution."
+      },
+      {
+        "id": "psychometrie_v088",
+        "theme": "Approches et collaboration",
+        "front": "Comment définir « Approche catégorielle » ?",
+        "answers": [
+          "Démarche recherchant les signes et critères permettant de reconnaître une catégorie de trouble."
+        ],
+        "explanation": "Démarche recherchant les signes et critères permettant de reconnaître une catégorie de trouble."
+      },
+      {
+        "id": "psychometrie_v090",
+        "theme": "Approches et collaboration",
+        "front": "Comment définir « DSM » ?",
+        "answers": [
+          "Diagnostic and Statistical Manual of Mental Disorders : classification diagnostique des troubles mentaux."
+        ],
+        "explanation": "Diagnostic and Statistical Manual of Mental Disorders : classification diagnostique des troubles mentaux."
+      }
+    ]
+  },
+  {
+    "id": "PSYM-Q049",
+    "courseId": "psychometrie",
+    "number": 49,
+    "theme": "Approches et collaboration",
+    "difficulty": "medium",
+    "question": "Quelles contributions infirmières sont pertinentes dans une évaluation psychologique ou cognitive ?",
+    "choices": [
+      "Utiliser tout outil dès qu’un formulaire est disponible.",
+      "Partager les observations avec les autres professionnels.",
+      "Distinguer les faits observés des interprétations.",
+      "Poser seul un diagnostic sur la base du total obtenu.",
+      "Contribuer au suivi du fonctionnement quotidien."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La disponibilité ne remplace pas la formation et le cadre d’utilisation.",
+      "Les compétences et les contextes observés sont complémentaires.",
+      "Cette distinction rend les transmissions plus précises.",
+      "Le score s’intègre à une analyse clinique plus large.",
+      "Les observations dans le temps enrichissent le bilan et le projet de soin."
+    ],
+    "explanation": "A — Faux. La disponibilité ne remplace pas la formation et le cadre d’utilisation. B — Vrai. Les compétences et les contextes observés sont complémentaires. C — Vrai. Cette distinction rend les transmissions plus précises. D — Faux. Le score s’intègre à une analyse clinique plus large. E — Vrai. Les observations dans le temps enrichissent le bilan et le projet de soin.",
+    "flashcards": [
+      {
+        "id": "psychometrie_c049",
+        "theme": "Approches et collaboration",
+        "front": "Quelle contribution infirmière apporte une évaluation psychologique ou cognitive ?",
+        "answers": [
+          "Partager les observations avec les autres professionnels. Distinguer les faits observés des interprétations. Contribuer au suivi du fonctionnement quotidien."
+        ],
+        "explanation": "Utiliser un instrument suppose une formation et un cadre approprié. Le score ne permet pas de poser seul un diagnostic."
+      },
+      {
+        "id": "psychometrie_v089",
+        "theme": "Approches et collaboration",
+        "front": "Comment définir « Approche dimensionnelle » ?",
+        "answers": [
+          "Démarche décrivant une dimension selon son intensité plutôt que par sa seule présence ou absence."
+        ],
+        "explanation": "Démarche décrivant une dimension selon son intensité plutôt que par sa seule présence ou absence."
+      },
+      {
+        "id": "psychometrie_v091",
+        "theme": "Approches et collaboration",
+        "front": "Comment définir « CIM » ?",
+        "answers": [
+          "Classification internationale des maladies."
+        ],
+        "explanation": "Classification internationale des maladies."
+      },
+      {
+        "id": "psychometrie_v092",
+        "theme": "Approches et collaboration",
+        "front": "Comment définir « Travail multidisciplinaire » ?",
+        "answers": [
+          "Mise en commun des observations et compétences de plusieurs professions pour comprendre et accompagner une situation."
+        ],
+        "explanation": "Mise en commun des observations et compétences de plusieurs professions pour comprendre et accompagner une situation."
+      }
+    ]
+  },
+  {
     "id": "pps_q001",
     "courseId": "prevention_promotion_sante",
     "number": 1,

@@ -10,7 +10,7 @@ export function beforeAdditiveCourses(file,value,manifest){
  for(const r of (manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='development_official_update_v1')){
   assert.equal(createHash('sha256').update(fs.readFileSync(r.baselinePath)).digest('hex'),r.baselineSha256);
   const old=read(r.baselinePath);assert.equal(old.courseId,r.courseId);
-  if(file==='docs/course-deliveries.json')value={...value,scopedCourseRevisions:value.scopedCourseRevisions.filter(x=>x.id!==r.id)};
+  if(file==='docs/course-deliveries.json'&&value.scopedCourseRevisions)value={...value,scopedCourseRevisions:value.scopedCourseRevisions.filter(x=>x.id!==r.id)};
   else if(file==='vocabulaire-v1.json')value={...value,entries:value.entries.filter(v=>!r.addedVocabularyEntryIds.includes(v.id))};
   else if(file==='questions-5.json')value=value.filter(q=>!r.addedQuestionIds.includes(q.id));
   else if(/^sheets-[123]\.json$/.test(file))value=value.filter(s=>s.resourceId!==r.sheetResourceId);
@@ -24,7 +24,9 @@ export function beforeAdditiveCourses(file,value,manifest){
   assert.match(d.publicationApproval.bundleSha256,/^[a-f0-9]{64}$/);
   const bank=read(d.qcmBank);
   assert.equal(bank.length,d.qcmCount);assert.ok(bank.every(q=>q.courseId===d.courseId));
-  if(file==='docs/course-deliveries.json'){
+  if(file==='course-registry-v741.json'){
+   value={...value,courses:value.courses.filter(c=>c.id!==d.courseId)};
+  }else if(file==='docs/course-deliveries.json'){
    value={...value,courses:value.courses.filter(c=>c.courseId!==d.courseId)};
   }else if(file==='questions-5.json'){
    assert.deepEqual(value.filter(q=>q.courseId===d.courseId),bank,'New course mirror differs');

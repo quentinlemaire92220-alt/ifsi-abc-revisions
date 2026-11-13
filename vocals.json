@@ -3331,6 +3331,127 @@
     "provisional": true
   },
   {
+    "id": "psychometrie_vocal_01",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 1,
+    "title": "Psychométrie 1/11 — Fondements et mesure, puis Qualités psychométriques",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_01.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 295.136,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_02",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 2,
+    "title": "Psychométrie 2/11 — Qualités psychométriques, puis Bilan psychologique",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_02.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 286.737333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_03",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 3,
+    "title": "Psychométrie 3/11 — Contexte et entretiens, puis Développement du tout-petit",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_03.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 255.84,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_04",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 4,
+    "title": "Psychométrie 4/11 — Fonctionnement intellectuel",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_04.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 264.526667,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_05",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 5,
+    "title": "Psychométrie 5/11 — Fonctionnement intellectuel",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_05.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 242.972,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_06",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 6,
+    "title": "Psychométrie 6/11 — Personnalité et auto-évaluation",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_06.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 305.064,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_07",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 7,
+    "title": "Psychométrie 7/11 — Méthodes projectives et dessin, puis Questionnaires et dépression",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_07.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 254.208,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_08",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 8,
+    "title": "Psychométrie 8/11 — Questionnaires et dépression",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_08.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 273.54,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_09",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 9,
+    "title": "Psychométrie 9/11 — Questionnaires et dépression, puis Conners et informateurs",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_09.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 288.188,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_10",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 10,
+    "title": "Psychométrie 10/11 — Observation et registres, puis Neuropsychologie et MMSE",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_10.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 278.961333,
+    "syntheticSpeech": true
+  },
+  {
+    "id": "psychometrie_vocal_11",
+    "courseId": "psychometrie",
+    "course": "Psychométrie",
+    "number": 11,
+    "title": "Psychométrie 11/11 — Neuropsychologie et MMSE, puis Approches et collaboration",
+    "localAudio": "./assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_11.mp3",
+    "mime": "audio/mpeg",
+    "durationSeconds": 289.146667,
+    "syntheticSpeech": true
+  },
+  {
     "id": "pps_vocal_01",
     "courseId": "prevention_promotion_sante",
     "course": "Prévention et promotion de la santé",
