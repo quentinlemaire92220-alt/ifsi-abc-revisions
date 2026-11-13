@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {validateWrittenDelivery} from './written-sheet-contract.mjs';
 import {verifyPublicArtifact,pagesOrigin,pagesPrefix} from '../tools/public-artifact-contract.mjs';
 import {validateBank} from '../tools/qcm-bank-contract.mjs';
+import {reviewedFieldDigest} from './qcm-autonomy-contract.mjs';
 export const isReviewedCompleteBundle=d=>d?.firstReleaseContract==='reviewed_complete_bundle_v1';
 export function validateReviewedCompleteBundle(course,d,sheets,{questions=[],deck=[],vocabulary=[],vocals=[],infographics=[],runtime=false}={}){
  const tag=d.courseId+': ';
@@ -35,6 +36,14 @@ export function validateReviewedCompleteBundle(course,d,sheets,{questions=[],dec
  assert.deepEqual(JSON.parse(fs.readFileSync('questions-5.json','utf8')).filter(q=>q.courseId===d.courseId),bank);
  assert.equal(bank.flatMap(q=>q.flashcards).length,d.flashcardCount);
  assert.equal(new Set(bank.flatMap(q=>q.flashcards.map(f=>f.id))).size,d.flashcardCount);
+ const recallReview=d.flashcardStandaloneReview;
+ assert.equal(recallReview.status,'exact_self_contained_cards_reviewed');
+ assert.match(recallReview.privateEvidenceSha256,/^[a-f0-9]{64}$/);
+ assert.ok(recallReview.cards.length>0);assert.equal(new Set(recallReview.cards.map(c=>c.cardId)).size,recallReview.cards.length);
+ for(const item of recallReview.cards){
+  const f=bank.find(q=>q.id===item.questionId)?.flashcards.find(f=>f.id===item.cardId);assert.ok(f);
+  assert.equal(item.sha256,reviewedFieldDigest('flashcards',[f]),tag+'reviewed recall changed');
+ }
  assert.equal(course.authoredFlashcards,true);assert.equal(course.flashcardTarget,d.flashcardCount);
  const terms=vocabulary.filter(v=>v.courseIds?.includes(d.courseId));
  assert.equal(terms.length,d.vocabularyCount);assert.equal(d.vocabularyCount,d.lexicon.termCount);

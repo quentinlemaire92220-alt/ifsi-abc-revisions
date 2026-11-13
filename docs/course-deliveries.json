@@ -10025,7 +10025,7 @@
         "authorization": "explicit_go_publication",
         "scope": "course_package",
         "approvedAt": "2026-11-13T12:43:32.979947+00:00",
-        "bundleSha256": "507b9664973eb8f5098b43a139e8bcf46ff7853bfa5dd2eec5ebbae3f15ff0ec"
+        "bundleSha256": "237a9b99ce22ecb90db2bd3268e3f6701c273c177f2c9ab6b04e221a495fa803"
       },
       "ownerApprovalEvidenceSha256": "dd4c56a741af21723e6bbaf463df63f433519ff511fe14bf42150971726597cd",
       "firstReleaseBaseline": {
@@ -10111,7 +10111,108 @@
           "sheets-3.json": "1ecdce8b9403aef39344637c8d524f42e08682ce90fa8a4a8719459f7645fd2f"
         }
       },
-      "flashcardDeckPath": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.json"
+      "flashcardDeckPath": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.json",
+      "flashcardStandaloneReview": {
+        "status": "exact_self_contained_cards_reviewed",
+        "privateEvidenceSha256": "c3a7b5437efc5a610ebf626d8e67ce14351522d8f146990db2d8b6feed4664a0",
+        "cards": [
+          {
+            "questionId": "PSYM-Q049",
+            "cardId": "psychometrie_v091",
+            "sha256": "65fd1dcd67aa58a56094a22f76b2321499b11ce02310a728e5a14f7d3b206bc3"
+          },
+          {
+            "questionId": "PSYM-Q031",
+            "cardId": "psychometrie_v064",
+            "sha256": "abca9a6ee6e0d7a21f226d0108c484a1ef944fb92abdf78dd2583137cf6303d8"
+          },
+          {
+            "questionId": "PSYM-Q026",
+            "cardId": "psychometrie_v060",
+            "sha256": "017dc47e9e15174ab89b22799fe99f14e6dd258f74f6835f38431d8cbbcebec6"
+          },
+          {
+            "questionId": "PSYM-Q026",
+            "cardId": "psychometrie_v059",
+            "sha256": "8f3e0738f669d4916ef1733631724158a75b1e3308bdd2a17d8bdc8292e02522"
+          },
+          {
+            "questionId": "PSYM-Q048",
+            "cardId": "psychometrie_v090",
+            "sha256": "91913161d143cc0f57267f0dc7159a6978f7701bf7565df0deb6587a771eeecf"
+          },
+          {
+            "questionId": "PSYM-Q030",
+            "cardId": "psychometrie_v063",
+            "sha256": "3162865a554b8a0af8d4804f40caa242d536c9aad0fee217e516795594f77a59"
+          },
+          {
+            "questionId": "PSYM-Q024",
+            "cardId": "psychometrie_c024",
+            "sha256": "13f722f57c34a27fbb6a6925df916b2d5f0c94aa4d49cabf3dd958043ae33512"
+          },
+          {
+            "questionId": "PSYM-Q024",
+            "cardId": "psychometrie_v042",
+            "sha256": "864d9273203e620590562e7e1fefa4c804e435964b4702484e5bb53638a4ef21"
+          },
+          {
+            "questionId": "PSYM-Q028",
+            "cardId": "psychometrie_v058",
+            "sha256": "75063a7c76aed7ef89cba3abdab7d9d5bb5fce4393fa6aa6b29e3d3676d0cb7f"
+          },
+          {
+            "questionId": "PSYM-Q035",
+            "cardId": "psychometrie_v068",
+            "sha256": "5bb52eb7b54c66ffa487cd475f439962c7ea41150be4a64fce2bb7fe604e3d10"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v038",
+            "sha256": "2c4b5bb79b14ed64b30e423d7b955bc160ac4125c7557658a35a4302a7f6e835"
+          },
+          {
+            "questionId": "PSYM-Q034",
+            "cardId": "psychometrie_v099",
+            "sha256": "6a60647b15ba5e795964b21f2aefe4b05d60be9a9a5b63af664e7a30ce53f400"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v037",
+            "sha256": "bacbf277c128803d020b988cec490fc29874a15c46d1dd60d1ec43b01e59949d"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v039",
+            "sha256": "ce13e66f961706552f99bf739bd0d7a4896c3b59c02ff1cfe6516124f77c46d7"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v043",
+            "sha256": "81f2f813557e44ccdf2a3070de0924bd4c71af9862bbb67b92f82426249efcc6"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v044",
+            "sha256": "27f9b435de808dd76e57b24582bf9b5b3dca605bd995a93707157be744aff5df"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v045",
+            "sha256": "991760eee195a80dbbed551395cdb2b8f986aaee303bf791dd325b945633e194"
+          },
+          {
+            "questionId": "PSYM-Q033",
+            "cardId": "psychometrie_v076",
+            "sha256": "1bee04e033dbe3638071a463a0ef4a9ec9c38efec09b1a8acb5d5f270765b0c5"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v041",
+            "sha256": "72d472c6fb91e7f2dfaa01a57a60f6064f61973fd16f85d9fd9207bc5b1789a5"
+          }
+        ]
+      }
     }
   ],
   "supplementalResourceApprovals": [

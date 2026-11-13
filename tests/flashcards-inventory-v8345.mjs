@@ -1,4 +1,5 @@
 import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
+import {isReviewedCompleteBundle,validateReviewedCompleteBundle} from './reviewed-complete-bundle-contract.mjs';
 import {reviewedFieldDigest} from './qcm-autonomy-contract.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -72,6 +73,10 @@ function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g
 const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
 const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','development_official_update_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
 const reviewedStandalone=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='verified_documents_addition_v1').flatMap(r=>r.flashcardStandaloneReview.cards);
+for(const d of manifest.courses.filter(isReviewedCompleteBundle)){
+  validateReviewedCompleteBundle(courses.find(c=>c.id===d.courseId),d,[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync('sheets-'+n+'.json','utf8'))),{vocabulary:JSON.parse(fs.readFileSync('vocabulaire-v1.json','utf8')).entries,vocals:JSON.parse(fs.readFileSync('vocals.json','utf8')),infographics:JSON.parse(fs.readFileSync('infographics.json','utf8'))});
+  reviewedStandalone.push(...d.flashcardStandaloneReview.cards);
+}
 const audit={green:[],rewrite:[],split:[],reject:[]};
 for(const c of deck){
   const front=String(c.front||'').replace(/\s+/g,' ').trim();
