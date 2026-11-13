@@ -24,7 +24,8 @@ const sw=fs.readFileSync('sw.js','utf8'),ctx={console,Response,Blob,Decompressio
 ctx.q=bank.find(q=>q.id==='psydev_q053');assert.equal(vm.runInContext('keepQuestion(q)',ctx),true);
 ctx.q={...ctx.q,question:'Sur la figure absente, que désigne le repère A ?'};assert.equal(vm.runInContext('keepQuestion(q)',ctx),false);
 const all=read('questions-5.json'),before=beforeAdditiveCourses('questions-5.json',all,manifest);
-assert.ok(!before.some(q=>q.courseId===id));assert.deepEqual(before,all.filter(q=>q.courseId!==id));
+const firstCourseIds=new Set(manifest.courses.filter(d=>d.firstReleaseBaseline).map(d=>d.courseId));
+assert.ok(!before.some(q=>firstCourseIds.has(q.courseId)));assert.deepEqual(before,all.filter(q=>!firstCourseIds.has(q.courseId)));
 const mutated=structuredClone(all);mutated.find(q=>q.courseId!==id).question+=' unauthorized';assert.notDeepEqual(beforeAdditiveCourses('questions-5.json',mutated,manifest),before,'Historical corruption must remain visible to old checksum guards');
 const oldData={registry:{courses:r.registry.courses.filter(c=>c.id!==id)},vocals:read('vocals.json').filter(v=>v.courseId!==id)},newData={registry:r.registry,vocals:read('vocals.json')},prior={courses:manifest.courses.filter(c=>c.courseId!==id)};
 assert.equal(firstReleaseAudioIds(prior,manifest,oldData,newData).size,6);

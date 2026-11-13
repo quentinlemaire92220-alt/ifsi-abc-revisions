@@ -1,3 +1,4 @@
+import {isReviewedCompleteBundle,validateReviewedCompleteBundle} from './reviewed-complete-bundle-contract.mjs';
 import {readHistoricalAudioJson} from './historical-audio-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
@@ -36,6 +37,7 @@ for(const c of manifest.courses){
   validateExistingWrittenUpdate(registry.courses.find(x=>x.id===c.courseId),c,{sheets,questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos});
   continue;
  }
+ if(isReviewedCompleteBundle(c)){validateReviewedCompleteBundle(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos,runtime:true});continue;}
  if(c.deliveryMode==='reviewed_written_bundle'){
   validateReviewedWrittenBundle(registry.courses.find(x=>x.id===c.courseId),c,sheets,{questions,deck,vocabulary:read('vocabulaire-v1.json').entries,vocals,infographics:infos,runtime:true});
   continue;

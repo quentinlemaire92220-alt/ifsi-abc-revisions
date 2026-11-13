@@ -101,8 +101,15 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  assert.equal(source?.teachingNotesPrivateTrace,true,label+'traçabilité orale privée absente');
  assert.equal(source?.notesWithoutTimestamps,true,label+'horodatages / traces audio visibles dans la fiche');
  assert.ok(Number.isInteger(source?.externalSourcesCount)&&source.externalSourcesCount>=0,label+'sources externes non inventoriées');
- if(source.externalSourcesCount>0)
-  assert.equal(source.externalAuthorization,'explicit_prior_approval',label+'autorisation préalable externe absente');
+ if(source.externalSourcesCount>0){
+  if(delivery.firstReleaseContract==='reviewed_complete_bundle_v1'){
+   assert.equal(source.externalAuthorization,'publication_accepted_after_documentary_review');
+   assert.ok(source.externalReviewScope?.includes('Prior explicit permission is not attested'));
+   assert.match(source.privateEvidenceSha256||'',/^[a-f0-9]{64}$/);
+   assert.match(delivery.ownerApprovalEvidenceSha256||'',/^[a-f0-9]{64}$/);
+   assert.equal(delivery.publicationApproval?.authorization,'explicit_go_publication');
+  }else assert.equal(source.externalAuthorization,'explicit_prior_approval',label+'autorisation préalable externe absente');
+ }
  const cov=delivery.writtenCoverage;
  assert.ok(Number.isInteger(cov?.expectedEssential)&&cov.expectedEssential>0,label+'matrice des notions essentielles absente');
  assert.equal(cov.coveredEssential,cov.expectedEssential,label+'notions essentielles manquantes');
@@ -141,7 +148,7 @@ export function validateWrittenDelivery(courseId, delivery, sheets, {requirePubl
  ok(lex.checked,label+'lexique non vérifié');
  if(requirePublishedVerification){
   const proof=delivery.publishedVerification;
-  if(provisional){
+  if(provisional||delivery.firstReleaseContract==='reviewed_complete_bundle_v1'){
    assert.equal(proof?.status,'PENDING_DEPLOYMENT',label+'preuve de déploiement à confirmer : ne pas annoncer MATCH');
    assert.equal(proof.source,'github_pages_file_staged',label+'une copie locale ne prouve pas un fichier distant');
    assert.equal(delivery.publicArtifacts?.sheet?.sha256,pdf.pdfSha256,label+'SHA PDF Pages absent');

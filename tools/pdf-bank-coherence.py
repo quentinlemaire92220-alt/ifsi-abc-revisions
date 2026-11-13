@@ -51,8 +51,9 @@ def validate_qcm_written_dot(text,rows):
         assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
-def validate_boxed_inline_rationales(text,rows):
+def validate_boxed_inline_rationales(text,rows,embedded_rationales=False):
     """Exact native text for boxed questions and all five option rationales."""
+    if embedded_rationales:text=text.replace('Corrigés argumentés — suite','')
     parts=text.split('Corrigés argumentés',1)
     assert len(parts)==2,'Corrigés absents'
     questions,corrections=parts
@@ -74,7 +75,26 @@ def validate_boxed_inline_rationales(text,rows):
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert len(q['rationales'])==5
         expected=q['explanation']+' '+' '.join(chr(65+j)+' : '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+        if embedded_rationales:
+            rationale_text=' '.join(chr(65+j)+' — '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+            assert norm(q['explanation'])==norm(rationale_text),q['id']+': explication et cinq justifications divergentes'
+            expected=q['explanation']
         assert norm(actual)==norm(expected),q['id']+': argumentation ou justification A–E divergente'
+
+def validate_inline_thematic_recall(document,rows,cards):
+    """Compare each independently ordered card with its unique runtime card."""
+    authored={f['id']:f for q in rows for f in q['flashcards']}
+    assert len(cards)==len(authored) and {c['id'] for c in cards}==set(authored)
+    text=without_theme_titles(body(document),rows)
+    blocks=list(re.finditer(r'(?m)^CARTE (\d{3})\s*\n',text))
+    assert [int(m[1]) for m in blocks]==list(range(1,len(cards)+1))
+    for i,(c,m) in enumerate(zip(cards,blocks)):
+        f=authored[c['id']]
+        assert c['front']==f['front'] and [c['back']]==f['answers'] and (c['explanation'] or c['back'])==f['explanation']
+        expected=c['front']+' Réponse. '+c['back']
+        if c['explanation'] and c['explanation']!=c['back']:expected+=' À comprendre. '+c['explanation']
+        actual=text[m.end():blocks[i+1].start() if i+1<len(blocks) else len(text)]
+        assert norm(actual)==norm(expected),c['id']+': carte imprimée divergente'
 
 def validate_qcm(text,rows):
     # Do not change the historical public PDF contract.
@@ -415,6 +435,13 @@ def check(course):
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages')
                 continue
             assert all(p.get_text().strip() and not p.get_images() for p in doc),'PDF image/vide'
+            if role=='flashcards' and course.get('flashcardPdfLayout')=='inline_thematic_recall_v1':
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                deck=next(a for a in course['downloadArtifacts'] if a['path']==course['flashcardDeckPath'])
+                assert hashlib.sha256(Path(deck['path']).read_bytes()).hexdigest()==deck['sha256']
+                validate_inline_thematic_recall(doc,rows,json.loads(Path(deck['path']).read_text(encoding='utf8')))
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, all ordered recall cards')
+                continue
             if role=='qcm' and course.get('qcmPdfLayout')=='boxed_rationales_with_practice_cases_v1':
                 from importlib.machinery import SourceFileLoader
                 reader=SourceFileLoader('qcm_cases_coherence',str(Path(__file__).with_name('qcm-cases-coherence.py'))).load_module()
@@ -452,6 +479,10 @@ def check(course):
                 text=re.sub(label_line,'',text)
                 validate_qcm_theme_cards(text,rows,inline_cardinality=True)
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cardinalite integree')
+                continue
+            if role=='qcm' and course.get('qcmPdfLayout')=='boxed_inline_embedded_rationales_v1':
+                validate_boxed_inline_rationales(body(doc),json.loads(Path(course['qcmBank']).read_text(encoding='utf8')),embedded_rationales=True)
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, exact five embedded rationales')
                 continue
             if role=='qcm' and course.get('qcmPdfLayout')=='boxed_inline_cardinality_rationales_v1':
                 validate_boxed_inline_rationales(body(doc),json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))

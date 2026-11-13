@@ -75,6 +75,7 @@ jobs:
           node tests/psychopathologie-documents.mjs
           node tests/reviewed-written-audio-revision.mjs
           node tests/unified-sheet-media.mjs
+          node tests/reviewed-complete-bundle-test.mjs
 
       - name: Vérifier la syntaxe JavaScript
         if: ${{ !cancelled() }}

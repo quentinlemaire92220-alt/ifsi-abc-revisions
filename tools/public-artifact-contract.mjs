@@ -23,7 +23,7 @@ export function verifyPublicArtifact(delivery,url){
  const supporting=delivery.captureSupport?.contract==='course_capture_facsimile_v1'?Object.values(delivery.supportingArtifacts||{}):[];
  const scopedDownload=delivery.downloadContract==='scoped_reviewed_download_v1';
  if(scopedDownload){assert.equal(delivery.publicationApproval?.scope,'scoped_course_revision');assert.equal(delivery.publicationApproval?.status,'approved');assert.equal(delivery.publicationApproval?.authorization,'explicit_go_publication');}
- const downloads=delivery.captureSupport?.contract==='course_capture_facsimile_v1'||scopedDownload?(delivery.downloadArtifacts||[]):[];
+ const downloads=delivery.captureSupport?.contract==='course_capture_facsimile_v1'||delivery.firstReleaseContract==='reviewed_complete_bundle_v1'||scopedDownload?(delivery.downloadArtifacts||[]):[];
  const matches=[...Object.values(delivery.publicArtifacts||{}),...supporting,...downloads].filter(a=>a.path===relative);
  assert.equal(matches.length,1,'PDF hors inventaire approuvé : '+relative);
  const record=matches[0];
