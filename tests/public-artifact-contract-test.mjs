@@ -20,6 +20,12 @@ try{
  assert.throws(()=>verifyPublicArtifact({...z,publicationApproval:{...z.publicationApproval,scope:'other'}},zipUrl));
  assert.throws(()=>verifyPublicArtifact({...z,downloadContract:undefined},zipUrl));
  fs.writeFileSync('assets/revision/fixture.zip','tampered bytes');assert.throws(()=>verifyPublicArtifact(z,zipUrl));
+ fs.writeFileSync('assets/revision/cards.html','<html>Cards</html>');
+ const html=fs.readFileSync('assets/revision/cards.html'),htmlSha=createHash('sha256').update(html).digest('hex');
+ const h={deliveryMode:'first_release',packFormat:'written_v1',downloadContract:'reviewed_course_downloads_v1',publicationApproval:{scope:'course_package',status:'approved',authorization:'explicit_go_publication',bundleSha256:'a'.repeat(64)},downloadArtifacts:[{path:'assets/revision/cards.html',artifactId:'cards',sha256:htmlSha,bytes:html.length,mimeType:'text/html'}],artifactSha256s:{cards:htmlSha}};
+ const htmlUrl=url.replace('fixture.pdf','revision/cards.html');assert.equal(verifyPublicArtifact(h,htmlUrl),'cards');
+ for(const mutate of [x=>x.downloadContract=undefined,x=>x.publicationApproval.status='pending',x=>x.publicationApproval.scope='other',x=>x.downloadArtifacts[0].mimeType='text/plain',x=>x.downloadArtifacts[0].bytes++,x=>x.artifactSha256s.cards='b'.repeat(64)]){const bad=structuredClone(h);mutate(bad);assert.throws(()=>verifyPublicArtifact(bad,htmlUrl));}
+ fs.writeFileSync('assets/revision/cards.html','changed html');assert.throws(()=>verifyPublicArtifact(h,htmlUrl));
  fs.writeFileSync('assets/fixture.pdf','changed bytes');assert.throws(()=>verifyPublicArtifact(d,url));
 }finally{process.chdir(cwd);fs.rmSync(tmp,{recursive:true,force:true});}
 console.log('PASS assets publics : hôte, chemin, présence et SHA approuvé');

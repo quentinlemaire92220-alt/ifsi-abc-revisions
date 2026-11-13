@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {countAuthoredListItems} from './flashcard-answer-enumeration.mjs';
+import {validateFirstReleaseAuthoredCards} from '../tools/first-release-authored-cards.mjs';
 
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const files=fs.readdirSync('.').filter(x=>/^questions-\d+\.json$/.test(x)||/^qextra-\d+\.txt$/.test(x)).sort();
@@ -73,6 +74,7 @@ function key(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g
 const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'));validateScopedRevisions(manifest);
 const reviewedComparisons=(manifest.scopedCourseRevisions||[]).filter(r=>['reconciled_written_correction_v1','development_official_update_v1'].includes(r.profile)).flatMap(r=>r.sourceAttributionReview.fields).filter(x=>x.field==='flashcards');
 const reviewedStandalone=(manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='verified_documents_addition_v1').flatMap(r=>r.flashcardStandaloneReview.cards);
+for(const d of manifest.courses.filter(d=>d.authoredCardReview))reviewedStandalone.push(...validateFirstReleaseAuthoredCards(d,courses.find(c=>c.id===d.courseId),JSON.parse(fs.readFileSync(d.qcmBank,'utf8')),JSON.parse(fs.readFileSync('vocabulaire-v1.json','utf8')).entries));
 for(const d of manifest.courses.filter(isReviewedCompleteBundle)){
   validateReviewedCompleteBundle(courses.find(c=>c.id===d.courseId),d,[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync('sheets-'+n+'.json','utf8'))),{vocabulary:JSON.parse(fs.readFileSync('vocabulaire-v1.json','utf8')).entries,vocals:JSON.parse(fs.readFileSync('vocals.json','utf8')),infographics:JSON.parse(fs.readFileSync('infographics.json','utf8'))});
   reviewedStandalone.push(...d.flashcardStandaloneReview.cards);

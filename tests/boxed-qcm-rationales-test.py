@@ -12,3 +12,30 @@ for old,new in [('Q01','Q02'),('Moyen','Facile'),('(2 bonnes réponses)','(3 bon
     except AssertionError:pass
     else:raise AssertionError('Altération acceptée : '+old)
 print('PASS QCM encadrés : texte exact, cardinalité, clé et cinq justifications ; neuf altérations refusées.')
+
+# The once-printed profile keeps the same native-text checks. Exercise the real
+# accepted 60-question PDF, then reject changes in each pedagogical component.
+import json,copy
+import fitz
+root=Path(__file__).resolve().parents[1]
+rows=json.loads((root/'data/course-banks/prevention_promotion_sante.json').read_text(encoding='utf8'))
+with fitz.open(root/'assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_QCM_60_Corriges.pdf') as doc:
+    native=m.body(doc)
+m.validate_boxed_inline_rationales(native,rows,embedded_rationales=True)
+for mutate in [
+    lambda q:q.update(question=q['question']+' altérée'),
+    lambda q:q['choices'].__setitem__(0,'Choix altéré'),
+    lambda q:q.update(answers=[1]),
+    lambda q:q.update(announcedCorrectCount=1),
+    lambda q:q.update(difficulty='hard'),
+    lambda q:q.update(explanation=q['explanation']+' Phrase ajoutée.'),
+    lambda q:q['rationales'].__setitem__(0,'Justification altérée.'),
+]:
+    changed=copy.deepcopy(rows);mutate(changed[0])
+    try:m.validate_boxed_inline_rationales(native,changed,embedded_rationales=True)
+    except AssertionError:pass
+    else:raise AssertionError('Altération acceptée dans le profil à correction unique')
+try:m.validate_boxed_inline_rationales(native,rows)
+except AssertionError:pass
+else:raise AssertionError('Le profil historique accepte une liste répétée manquante')
+print('PASS correction unique : 60 QCM réels, sept altérations refusées ; profil historique préservé.')
