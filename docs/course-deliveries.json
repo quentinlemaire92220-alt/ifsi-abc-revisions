@@ -9490,6 +9490,895 @@
         "psydev_v193",
         "psydev_v194"
       ]
+    },
+    {
+      "courseId": "prevention_promotion_sante",
+      "deliveryMode": "first_release",
+      "packFormat": "written_v1",
+      "publicationHost": "github_pages",
+      "validated": true,
+      "pedagogicalValidated": true,
+      "status": "complete",
+      "provisional": false,
+      "driveFolderId": "16NEaUFxZjJQE0WAs5WN5QgdkqGUHiYF1",
+      "folders": {
+        "01": "1XJnaWCzuipVgd_bL0EQxkwnkvemzh07o",
+        "02": "1onPKE5OsWXySBM3BTE-U1Xy3QzcJQguy",
+        "03": "1jq9t0WHAkWxZcCbIRQpSTjy0YSUWmiP0",
+        "04": "10YI6jeJpuXeXyxlG-J0AqEAN8NX8f1m5",
+        "05": "1CrA9Ie-9ZIW2yOXOKUd4fLiP-Lmh1h48",
+        "06": "1VjL4Iz5z1ieENPayVfU4ygRppShDaFAz",
+        "07": "17weU_NcZ6am7YOfWmi88TvwKqKH6tcKW"
+      },
+      "sheetResourceId": "pps_fiche_20261113",
+      "sheetResourceIds": [
+        "pps_fiche_20261113"
+      ],
+      "qcmDriveId": "19ruW6cT5t0hQLzBdV1OgYTTZBtG3u9mn",
+      "flashcardDriveId": "1XPUYE5U041953DXMrDzCrU0cue6Mot_E",
+      "qcmBank": "data/course-banks/prevention_promotion_sante.json",
+      "qcmCount": 60,
+      "flashcardCount": 80,
+      "vocabularyCount": 54,
+      "vocabularyEntryIds": [
+        "pps_vocab_01",
+        "pps_vocab_02",
+        "pps_vocab_03",
+        "pps_vocab_04",
+        "pps_vocab_05",
+        "pps_vocab_06",
+        "pps_vocab_07",
+        "pps_vocab_08",
+        "pps_vocab_09",
+        "pps_vocab_10",
+        "pps_vocab_11",
+        "pps_vocab_12",
+        "pps_vocab_13",
+        "pps_vocab_14",
+        "pps_vocab_15",
+        "pps_vocab_16",
+        "pps_vocab_17",
+        "pps_vocab_18",
+        "pps_vocab_19",
+        "pps_vocab_20",
+        "pps_vocab_21",
+        "pps_vocab_22",
+        "pps_vocab_23",
+        "pps_vocab_24",
+        "pps_vocab_25",
+        "pps_vocab_26",
+        "pps_vocab_27",
+        "pps_vocab_28",
+        "pps_vocab_29",
+        "pps_vocab_30",
+        "pps_vocab_31",
+        "pps_vocab_32",
+        "pps_vocab_33",
+        "pps_vocab_34",
+        "pps_vocab_35",
+        "pps_vocab_36",
+        "pps_vocab_37",
+        "pps_vocab_38",
+        "pps_vocab_39",
+        "pps_vocab_40",
+        "pps_vocab_41",
+        "pps_vocab_42",
+        "pps_vocab_43",
+        "pps_vocab_44",
+        "pps_vocab_45",
+        "pps_vocab_46",
+        "pps_vocab_47",
+        "pps_vocab_48",
+        "pps_vocab_49",
+        "pps_vocab_50",
+        "pps_vocab_51",
+        "pps_vocab_52",
+        "pps_vocab_53",
+        "pps_vocab_54"
+      ],
+      "infographicResourceIds": [],
+      "vocals": [
+        "pps_vocal_01",
+        "pps_vocal_02",
+        "pps_vocal_03",
+        "pps_vocal_04"
+      ],
+      "requestedVocals": true,
+      "scriptsPreparedCount": 4,
+      "blockers": [],
+      "artifactSha256s": {
+        "1nxmSnGGf4kwKdzAgXbXSixwRhKR62zeQ": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+        "19ruW6cT5t0hQLzBdV1OgYTTZBtG3u9mn": "853187ed5740467f10665e6779dfc336270dfded75d1f08069c293df9b36468d",
+        "1XPUYE5U041953DXMrDzCrU0cue6Mot_E": "daeb0b69392f2841819bc9aeedc013e517d053ca680ff53ef1a0873bf31a18a8",
+        "1sm03Na8kewZlzDluDov9B2J4q2VmddZE": "7637b6bb1160871400a59364c559e8c7564bc63df94ca4617a18198c18b07d18",
+        "1V60RoryYIhuOo9tZXYkG6Tyzp5S4DnQG": "833963aa133e994b63d148c4b11627170c3d650f4f961659cf8861708c56234b",
+        "1aXjz_5ZvbJHhZKICxGdDUMYgDdlci6dn": "2411daeb8babeadea2b5a6694540dd54b4a9b814674e6c98e554df9923125fda",
+        "1Ab_Eo4C-FcpXx7PhlTKt5nbFzZRCtUs8": "b3a56d187d7adbbfbd0fce7a33020891eefd5d238b44a7c4e7e0b49f94d1c232",
+        "1xVvanKV46zyxwR3d5yHZo60uUPwMyxL7": "69cb5e72ddbf03da9ad81bc17cb0473e4ada4467a4c5eab5e06b50007c885205",
+        "1OqnM6hW9roxn8hO81JDUAV1xa2-GZakm": "0ca7a543c4706064fc0ee00bd448455a0702bf1570b5e38bcb9777632408ce8f",
+        "1TkR7UTair_-z7ppKUbMh00eYaqqTmVwS": "0eb4a7bb83335344f19b79f3940c7deb0832c9a7d3ea8858446ad1d0bb458ebe",
+        "1RylzgWxFzfRNirk4sClXm1A9CeoqFPAS": "235cb92c1ca57c2345e63d63fdfc996055928444da3784b6d6df1371ca48171a",
+        "pps_sheet_20261113": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+        "pps_qcm_20261113": "853187ed5740467f10665e6779dfc336270dfded75d1f08069c293df9b36468d",
+        "pps_cards_20261113": "daeb0b69392f2841819bc9aeedc013e517d053ca680ff53ef1a0873bf31a18a8",
+        "pps_pack_20261113": "2411daeb8babeadea2b5a6694540dd54b4a9b814674e6c98e554df9923125fda"
+      },
+      "publicArtifacts": {
+        "sheet": {
+          "artifactId": "pps_sheet_20261113",
+          "path": "assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_Sante_Fiche_Revision.pdf",
+          "sha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+          "bytes": 899640,
+          "pageCount": 23
+        },
+        "qcm": {
+          "artifactId": "pps_qcm_20261113",
+          "path": "assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_QCM_60_Corriges.pdf",
+          "sha256": "853187ed5740467f10665e6779dfc336270dfded75d1f08069c293df9b36468d",
+          "bytes": 467841,
+          "pageCount": 24
+        }
+      },
+      "publicAudioArtifacts": [
+        {
+          "artifactId": "pps_vocal_01",
+          "vocalId": "pps_vocal_01",
+          "path": "assets/audio/prevention-promotion-20261113/pps_vocal_01.mp3",
+          "sha256": "69cb5e72ddbf03da9ad81bc17cb0473e4ada4467a4c5eab5e06b50007c885205",
+          "bytes": 5654468,
+          "durationSeconds": 471.096
+        },
+        {
+          "artifactId": "pps_vocal_02",
+          "vocalId": "pps_vocal_02",
+          "path": "assets/audio/prevention-promotion-20261113/pps_vocal_02.mp3",
+          "sha256": "0ca7a543c4706064fc0ee00bd448455a0702bf1570b5e38bcb9777632408ce8f",
+          "bytes": 5719556,
+          "durationSeconds": 476.506667
+        },
+        {
+          "artifactId": "pps_vocal_03",
+          "vocalId": "pps_vocal_03",
+          "path": "assets/audio/prevention-promotion-20261113/pps_vocal_03.mp3",
+          "sha256": "0eb4a7bb83335344f19b79f3940c7deb0832c9a7d3ea8858446ad1d0bb458ebe",
+          "bytes": 5850308,
+          "durationSeconds": 487.397333
+        },
+        {
+          "artifactId": "pps_vocal_04",
+          "vocalId": "pps_vocal_04",
+          "path": "assets/audio/prevention-promotion-20261113/pps_vocal_04.mp3",
+          "sha256": "235cb92c1ca57c2345e63d63fdfc996055928444da3784b6d6df1371ca48171a",
+          "bytes": 5784068,
+          "durationSeconds": 481.892
+        }
+      ],
+      "schematics": "none",
+      "embeddedFigureCount": 0,
+      "generatedImageCount": 0,
+      "publishedVerification": {
+        "status": "MATCH",
+        "source": "authenticated_drive_download",
+        "pdfSha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb"
+      },
+      "lexicon": {
+        "termCount": 54,
+        "textSelectable": true,
+        "checked": true,
+        "sourceSha256": "aa852e5b65c8e2e2e8870f98929acfcdd351d91ce3a55b95958e760832fb881a"
+      },
+      "sourceBasis": {
+        "kind": "official_support_and_transcriptions",
+        "nativeSupportAvailable": true,
+        "reconciled": true
+      },
+      "sourceAudit": {
+        "officialChecked": true,
+        "oralStatus": "complete",
+        "oralReviewBasis": "full_transcript_documentary_review",
+        "officialSupportPreservedPrivately": true,
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "externalResearchPerformed": false,
+        "privateReservationsOpen": true,
+        "disputedAssessmentPointsExcluded": true,
+        "externalSourcesCount": 0,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "documentaryReservationsRetained": true
+      },
+      "audioOwnerReview": {
+        "status": "owner_listening_accepted",
+        "humanListeningAttested": true,
+        "privateEvidenceSha256": "eabb6e165906d276a23ed31153263b4b5cd04f0d05699c14fbe44d1c1b521cfb",
+        "artifactSha256s": {
+          "pps_vocal_01": "69cb5e72ddbf03da9ad81bc17cb0473e4ada4467a4c5eab5e06b50007c885205",
+          "pps_vocal_02": "0ca7a543c4706064fc0ee00bd448455a0702bf1570b5e38bcb9777632408ce8f",
+          "pps_vocal_03": "0eb4a7bb83335344f19b79f3940c7deb0832c9a7d3ea8858446ad1d0bb458ebe",
+          "pps_vocal_04": "235cb92c1ca57c2345e63d63fdfc996055928444da3784b6d6df1371ca48171a"
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+        "privateEvidenceSha256": "58be0564dec5659bc4a0931558a69f46fdddb4b9eb5a852be82a451ab117e458",
+        "reviewedAt": "2026-11-13T12:52:54+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "publicAssetSha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+      "writtenCoverage": {
+        "expectedEssential": 12,
+        "coveredEssential": 12,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "disciplinaryReviewScope": "Supplied official support and full relevant transcripts reviewed documentarily; source reservations retained, disputed assessment items excluded. Owner accepted publication; no independent clinical signoff."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+        "pageSize": "A4",
+        "pageCount": 23,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "reviewerDecision": "explicit_publication_acceptance",
+        "inspectionBy": "agent",
+        "acceptanceBy": "owner",
+        "authorization": "explicit_go_publication",
+        "privateEvidenceSha256": "d17c3839be9be57738a68d46af92b5bcd16be4979ff2d717297caca6b7cec609",
+        "ownerApprovalEvidenceSha256": "eabb6e165906d276a23ed31153263b4b5cd04f0d05699c14fbe44d1c1b521cfb",
+        "pagesChecked": 23,
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "pps_fiche_20261113": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb"
+        }
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "82d94d7696fd25995fe5e899f1f4cbef52412714340ac703caf2f3a8e3a641bb",
+            "pageCount": 23,
+            "status": "owner_accepted",
+            "method": "agent_all_pages_inspected_owner_publication_accepted",
+            "decision": "explicit_publication_acceptance",
+            "reviewerRole": "agent",
+            "acceptanceBy": "owner",
+            "authorization": "explicit_go_publication",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "reviewedAt": "2026-11-13T12:52:54.677065+00:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "ALL_PAGES_RENDERED_AND_INSPECTED": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "d17c3839be9be57738a68d46af92b5bcd16be4979ff2d717297caca6b7cec609",
+            "ownerApprovalEvidenceSha256": "eabb6e165906d276a23ed31153263b4b5cd04f0d05699c14fbe44d1c1b521cfb"
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "853187ed5740467f10665e6779dfc336270dfded75d1f08069c293df9b36468d",
+            "pageCount": 24,
+            "status": "owner_accepted",
+            "method": "agent_all_pages_inspected_owner_publication_accepted",
+            "decision": "explicit_publication_acceptance",
+            "reviewerRole": "agent",
+            "acceptanceBy": "owner",
+            "authorization": "explicit_go_publication",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "reviewedAt": "2026-11-13T12:52:54.677065+00:00",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "ALL_PAGES_RENDERED_AND_INSPECTED": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            },
+            "privateEvidenceSha256": "3441d26260fb428f1eb1df1d7eea0fd8d69c9a6941216b24b2d5c6ae2267b22d",
+            "ownerApprovalEvidenceSha256": "eabb6e165906d276a23ed31153263b4b5cd04f0d05699c14fbe44d1c1b521cfb"
+          }
+        }
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-11-13T12:52:54.677065+00:00",
+        "bundleSha256": "ce983fe7a4484b7cc2edba65b62d4f7f4948cc1836f861036993fa7fac422aed"
+      },
+      "qcmPdfUrl": "https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_QCM_60_Corriges.pdf",
+      "qcmPdfLayout": "boxed_inline_cardinality_explanation_v1",
+      "firstReleaseBaseline": {
+        "contract": "additive_course_rows_v1",
+        "previousCourseIds": [
+          "biomolecules",
+          "cellules_tissus",
+          "homeostasie",
+          "parasites_champignons",
+          "genetique",
+          "niveaux_organisation",
+          "physiopathologie_infections",
+          "diagnostic_virologie",
+          "virus",
+          "systeme_urinaire",
+          "systeme_endocrinien",
+          "systeme_immunitaire",
+          "systeme_respiratoire",
+          "systeme_cardiovasculaire",
+          "prevention_ias_asepsie",
+          "systeme_nerveux",
+          "infections_neuro_meningees",
+          "calculs_doses_mathematiques",
+          "systeme_digestif",
+          "appareil_locomoteur",
+          "traumatologie",
+          "histoire_profession_infirmiere",
+          "epistemologie_savoirs",
+          "ethique_infirmiere",
+          "douleur",
+          "parametres_vitaux",
+          "grands_brules",
+          "infections_cutanees",
+          "diagnostic_bacteriologie",
+          "infections_urinaires",
+          "arthrose",
+          "chirurgie_orthopedique",
+          "rhumatismes_inflammatoires",
+          "pathologies_microcristallines_osteoporose",
+          "competences_psychosociales",
+          "methodes_travail_reussite",
+          "vaccination_prs",
+          "infections_pulmonaires_bacteriennes",
+          "infections_respiratoires_virales",
+          "ist_hors_vih",
+          "introduction_droit",
+          "psychologie_sante",
+          "pharmacologie",
+          "administration_medicamenteuse",
+          "systeme_reproducteur",
+          "plaies_pansements",
+          "stomatotherapie",
+          "droits_patients",
+          "pssm",
+          "sante_mondiale_sante_france",
+          "responsabilite_exercice_professionnel",
+          "d1_communication_td1",
+          "d1_posture_professionnelle_td2",
+          "d1_bientraitance",
+          "d1_relation_soignant_soigne_ecoute_active",
+          "theorie_gestion_symptomes_td",
+          "fievre_retour_voyage_paludisme",
+          "gestion_stress_professionnel",
+          "vih_b13_20261027",
+          "entretien_infirmier",
+          "organes_des_sens_b11",
+          "roles_missions_ide",
+          "diarrhees_infectieuses",
+          "psychologie_sociale",
+          "offre_soins_systeme_sante",
+          "organisation_systeme_sante",
+          "hepatites_virales",
+          "etapes_de_la_vie",
+          "determinants_sante",
+          "psychopathologie",
+          "psychologie_developpement"
+        ],
+        "rowSha256s": {
+          "vocals.json": "b48419af92b87ece43061972dd28a5ddc77ec75d255092d53eab58933fc215fd",
+          "sheets-1.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sheets-2.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sheets-3.json": "cc29ceacfd034def6ac3ca76696f550f7faa8f2bb0014e7206018c89fdf73fe1"
+        },
+        "vocabularyRowsSha256": "505009e9021eb670862525e67fcbb04167e9eac726ad8add931d390dfe75e032"
+      },
+      "authoredCardReview": {
+        "contract": "first_release_authored_cards_v1",
+        "status": "owner_accepted_agent_documentary_review",
+        "privateEvidenceSha256": "fb702d7aa3bcc80b9c4bb5a716d5f3841b6af84ad54615414fbc3a695e07010c",
+        "ownerApprovalEvidenceSha256": "eabb6e165906d276a23ed31153263b4b5cd04f0d05699c14fbe44d1c1b521cfb",
+        "cards": [
+          {
+            "questionId": "pps_q001",
+            "cardId": "pps_term_01",
+            "sha256": "c38ab843e86981ce70f445dc85c54722863f95610b554e2c0024778377724746"
+          },
+          {
+            "questionId": "pps_q002",
+            "cardId": "pps_term_02",
+            "sha256": "b8b3a0155dafae5dd5d7e20f9f8b0125aa2c68521a687493fe2a224b38521d4f"
+          },
+          {
+            "questionId": "pps_q003",
+            "cardId": "pps_term_03",
+            "sha256": "90e7aa4501c7bfd29a8967209fca6de2e20230a41b938b8785565d9ac035ec49"
+          },
+          {
+            "questionId": "pps_q004",
+            "cardId": "pps_term_04",
+            "sha256": "6d89660c2e753564dbfdad9e368663089899f32b181c2e4d7e6095db54ce016f"
+          },
+          {
+            "questionId": "pps_q005",
+            "cardId": "pps_term_05",
+            "sha256": "f8eaacb5f03b34c68d9e9ab35416d466367d6e5a710c37a90b970ca1d8ee08a9"
+          },
+          {
+            "questionId": "pps_q005",
+            "cardId": "pps_term_07",
+            "sha256": "790ce590483ff8b2d570a40b72ede853866b2fd377eba4ea0161fab8428b1332"
+          },
+          {
+            "questionId": "pps_q005",
+            "cardId": "pps_app_01",
+            "sha256": "e01bb7907b5da29a40dcf980c81736ed6536b7519eb9e6540fa70c4dbc449b50"
+          },
+          {
+            "questionId": "pps_q006",
+            "cardId": "pps_term_06",
+            "sha256": "331345427d051bdd67bf0a6ef64d503954c2f6822d301a79d2e87107b1e783a7"
+          },
+          {
+            "questionId": "pps_q007",
+            "cardId": "pps_term_08",
+            "sha256": "adfde51699e0011b7dbe7459f98408cb276e97c9f4d7df20aa189bf96fc16747"
+          },
+          {
+            "questionId": "pps_q008",
+            "cardId": "pps_term_09",
+            "sha256": "6c867846b7ca39c1084e95653484e0803c6b2a047fc4e667e6ed21f297a46545"
+          },
+          {
+            "questionId": "pps_q008",
+            "cardId": "pps_term_20",
+            "sha256": "a6e3f51899d9201595982cc58bae9308825cf27e21ad79ce72813154543ee79a"
+          },
+          {
+            "questionId": "pps_q008",
+            "cardId": "pps_app_02",
+            "sha256": "a003c5baf8b670f8d4e4633c22d0e10b2ef4ea4f7ee688679821227a06f0dd08"
+          },
+          {
+            "questionId": "pps_q008",
+            "cardId": "pps_app_03",
+            "sha256": "a9e3d4129069bc295c4c969c1bdec86c0a997176c7383011d47062926732862f"
+          },
+          {
+            "questionId": "pps_q008",
+            "cardId": "pps_app_05",
+            "sha256": "7850e06d4fef64524df0897f032927625fbd725b8183887ac57f0d0c4702ecce"
+          },
+          {
+            "questionId": "pps_q009",
+            "cardId": "pps_term_10",
+            "sha256": "2f2ca071c573ca0180d00597d0f887d3d1af2e820b59fd3c3ab92570c9a6e9f9"
+          },
+          {
+            "questionId": "pps_q010",
+            "cardId": "pps_term_11",
+            "sha256": "e5dc7becc50df28ff1da2790b5a3184c8c072355275bfcbe9f022b9f87d88aae"
+          },
+          {
+            "questionId": "pps_q011",
+            "cardId": "pps_term_12",
+            "sha256": "769b28e29e1a442643783bf48e01dd8e4fe69a4f413d91c966e5defb1768e97a"
+          },
+          {
+            "questionId": "pps_q012",
+            "cardId": "pps_term_13",
+            "sha256": "45ed26d057c38c8a97d2554a225fc1aaf4feda301e88ae051d352e1e44fc37a0"
+          },
+          {
+            "questionId": "pps_q012",
+            "cardId": "pps_app_04",
+            "sha256": "d3330510b3c35a8932fee2e5456874213553a39c6deec6735477b3aae20f7263"
+          },
+          {
+            "questionId": "pps_q013",
+            "cardId": "pps_term_14",
+            "sha256": "837802b7534e71f1ba303c95985a84d8249d34aee439ac64d667951d61a0f35a"
+          },
+          {
+            "questionId": "pps_q014",
+            "cardId": "pps_term_15",
+            "sha256": "e096d59b48cae1343231ce90165ebab682048d8dabf5a7a8046614a0e131a455"
+          },
+          {
+            "questionId": "pps_q015",
+            "cardId": "pps_term_16",
+            "sha256": "447333e7b73bc78b4b2a7d268cafded2f7b1cb840f83ea20ba7e500ce8c27902"
+          },
+          {
+            "questionId": "pps_q016",
+            "cardId": "pps_term_17",
+            "sha256": "878bb70e95f7f00428fb188b24138815bb7a0c2501912cf6807762f489cb342e"
+          },
+          {
+            "questionId": "pps_q017",
+            "cardId": "pps_term_18",
+            "sha256": "d73f44e965556a2c05f2f909dc5b6e36a33ad36f79ab9e47e1c189b00090dd32"
+          },
+          {
+            "questionId": "pps_q018",
+            "cardId": "pps_term_19",
+            "sha256": "14f26e0b8a777f77ab91e69acddaeca3e685ee6dd863a16e27917e1b7f5fd029"
+          },
+          {
+            "questionId": "pps_q019",
+            "cardId": "pps_term_21",
+            "sha256": "8c04ae9a2171c4bb204060f5b8fd0538918b431096d4143116d92bc06fee980e"
+          },
+          {
+            "questionId": "pps_q020",
+            "cardId": "pps_term_22",
+            "sha256": "1e563f27758830bc61bc23180804a3b60475ed88a82e2fbb1918efb4d0497e7a"
+          },
+          {
+            "questionId": "pps_q021",
+            "cardId": "pps_term_23",
+            "sha256": "3212679e2fa5ac1e169e3b2830614903dbd8d2979a77cae08a9f8ef952dc9399"
+          },
+          {
+            "questionId": "pps_q022",
+            "cardId": "pps_term_24",
+            "sha256": "18608db58938528d9a44c34f962c317c7da7c0bb2dde6fc0f07af42c6f9fd934"
+          },
+          {
+            "questionId": "pps_q023",
+            "cardId": "pps_term_25",
+            "sha256": "7c1eb48ae0022f034354e73308bf02ab2f260eef114ec410ec9fdf1f4e51747c"
+          },
+          {
+            "questionId": "pps_q024",
+            "cardId": "pps_term_26",
+            "sha256": "6c37e6da97397e0e7ca07f84e114e462df7043efba166c9aaf2d0028fdc032fd"
+          },
+          {
+            "questionId": "pps_q025",
+            "cardId": "pps_app_06",
+            "sha256": "01390374c269bf95358af02ed7d49a8e280c439a4c0274013f720f6bb15e0dd3"
+          },
+          {
+            "questionId": "pps_q026",
+            "cardId": "pps_app_07",
+            "sha256": "6e349c35834c2bbcb7aa0d238394e5c8f778a63a403e0c3bf8acb0900aab95f2"
+          },
+          {
+            "questionId": "pps_q026",
+            "cardId": "pps_app_08",
+            "sha256": "bcd3b0086c7675a4c326f8f46ae500ecfecd720412b5875b20cf52faa30175af"
+          },
+          {
+            "questionId": "pps_q027",
+            "cardId": "pps_term_27",
+            "sha256": "2e001149a03d9ea09e1c69b3434476914a6959066ea87f71c8eb9275a7fdd60d"
+          },
+          {
+            "questionId": "pps_q027",
+            "cardId": "pps_app_12",
+            "sha256": "01aa77841ed2dec07a37abb05a7f53aa1250d64805059e1a107eb430f68f8ad7"
+          },
+          {
+            "questionId": "pps_q028",
+            "cardId": "pps_term_28",
+            "sha256": "d288d0498688c3c9edc7dd4cefe7b8ce213d104d0da6c869fbe54431ffe6bdf4"
+          },
+          {
+            "questionId": "pps_q028",
+            "cardId": "pps_app_10",
+            "sha256": "5d1f31a271dfadf8e5cc38442bf98a89b7b68623b0b3dd5448e8e9dd562b3127"
+          },
+          {
+            "questionId": "pps_q029",
+            "cardId": "pps_term_29",
+            "sha256": "36685cf374c5d37f8fd353862b53c9ca3388cc004ca2f64831b43e05ee61207e"
+          },
+          {
+            "questionId": "pps_q030",
+            "cardId": "pps_term_30",
+            "sha256": "a00d638a6af8f18413cf4c5ed0a92098154e49ab98ea070aba6bf39d5ee5a975"
+          },
+          {
+            "questionId": "pps_q031",
+            "cardId": "pps_term_31",
+            "sha256": "254c7835328f823a7af24cb7f441cf878493a4cfed9752fbe4adedb2a07c2844"
+          },
+          {
+            "questionId": "pps_q032",
+            "cardId": "pps_term_32",
+            "sha256": "f322dd981662841d88d89710433fac035f4b14328d801f128beff8a3b4587191"
+          },
+          {
+            "questionId": "pps_q033",
+            "cardId": "pps_term_33",
+            "sha256": "e4e667072a2e08b57a5c4b7d4a7542672bace05430aa3bbd9c21c1bfd1de5c2c"
+          },
+          {
+            "questionId": "pps_q034",
+            "cardId": "pps_app_09",
+            "sha256": "b61c3c7d3f459695bc88e45e0c68722867cec673f023f20996d5b8c876227192"
+          },
+          {
+            "questionId": "pps_q034",
+            "cardId": "pps_app_11",
+            "sha256": "964cb7a5948756511de97d1561d3aeabf31740f322305c91f1b2746554221c19"
+          },
+          {
+            "questionId": "pps_q035",
+            "cardId": "pps_term_34",
+            "sha256": "667c95981a33058a0830cd95d22818c08024345218ace8c5e0f778bda62e2636"
+          },
+          {
+            "questionId": "pps_q036",
+            "cardId": "pps_term_35",
+            "sha256": "4811ca9a88f6297718ababeccb55801c633e2ec7f25c0c532b51bda7966f87a6"
+          },
+          {
+            "questionId": "pps_q037",
+            "cardId": "pps_term_36",
+            "sha256": "88b583f7d083f66aa1a849df56579982e05e53ae20e423ece71a052463b5cde1"
+          },
+          {
+            "questionId": "pps_q038",
+            "cardId": "pps_term_37",
+            "sha256": "f1fc5534d57c3a7cf408e7409f361313a2a889367f542af0fc29286202408ab9"
+          },
+          {
+            "questionId": "pps_q039",
+            "cardId": "pps_term_38",
+            "sha256": "61403b63a3281ae268bc55b2849419e582ef3ced8157254ac68fe8a723fa9f02"
+          },
+          {
+            "questionId": "pps_q040",
+            "cardId": "pps_app_13",
+            "sha256": "45dc1ec39181df135673e887f09754208290658894cb525ff9bc8b717d2b505c"
+          },
+          {
+            "questionId": "pps_q041",
+            "cardId": "pps_app_14",
+            "sha256": "712dff5cec9d71a00d7c072d3749d0662ed853f8e0bf5d26527991538ab3fcb2"
+          },
+          {
+            "questionId": "pps_q042",
+            "cardId": "pps_app_15",
+            "sha256": "f6abde3e6c14c7d739bada20659bc1bff46cafa9d04ba5ba26c9e7140fe8ec58"
+          },
+          {
+            "questionId": "pps_q043",
+            "cardId": "pps_term_39",
+            "sha256": "91c7222b348d9521f653db834f84db6c81f83c4020b62a2569118386b481261f"
+          },
+          {
+            "questionId": "pps_q044",
+            "cardId": "pps_term_40",
+            "sha256": "57b358886aa5df7f46a476536cfbd95466da18f09ff8a4d4dff65a458df5c345"
+          },
+          {
+            "questionId": "pps_q045",
+            "cardId": "pps_term_41",
+            "sha256": "8b6aa373b90e883365e54e0171f0a8e4ca17ddca365bc99b0c972ec83571c52f"
+          },
+          {
+            "questionId": "pps_q045",
+            "cardId": "pps_app_16",
+            "sha256": "da8d18bf67178451868e9080fc851aa74b44de638445034a998f345f4406be57"
+          },
+          {
+            "questionId": "pps_q046",
+            "cardId": "pps_term_42",
+            "sha256": "15a4456c36ecb2f8e2468bb8b945ddb00924ff968af383adae1a921b1a8b9553"
+          },
+          {
+            "questionId": "pps_q046",
+            "cardId": "pps_app_17",
+            "sha256": "9ca5a264f2a9b27571c10081605c8f234a7b47e58685f6d1dfc1ae323d4b34e5"
+          },
+          {
+            "questionId": "pps_q047",
+            "cardId": "pps_term_43",
+            "sha256": "1bf29825302d9ae93e1f52dc4bc5420dcaf8fda3f7ee19da771cfae2c7a9edc8"
+          },
+          {
+            "questionId": "pps_q048",
+            "cardId": "pps_term_44",
+            "sha256": "ed2a176cf744921a2959a88341bc68aed63568cfb04105c71f1cfeef57283b87"
+          },
+          {
+            "questionId": "pps_q049",
+            "cardId": "pps_term_45",
+            "sha256": "49907997a067e09d41f03e21fafbb2ba9ce3a99971d7a2fe765ee1a7c5446ab0"
+          },
+          {
+            "questionId": "pps_q049",
+            "cardId": "pps_term_46",
+            "sha256": "2c184f3278d44ca49e833f59450abdf9c9bfff25cbee6847718b02e49465fbb3"
+          },
+          {
+            "questionId": "pps_q049",
+            "cardId": "pps_app_18",
+            "sha256": "0db45ed64d080928931c0f3109e1fb2a3265650af667b0998f3ea5c58e4ad5e4"
+          },
+          {
+            "questionId": "pps_q050",
+            "cardId": "pps_term_47",
+            "sha256": "b78da09cef0146ece599c6fa3098b47b2c9508f122fcb58d8c2d1abe3e24f2b3"
+          },
+          {
+            "questionId": "pps_q050",
+            "cardId": "pps_app_26",
+            "sha256": "0ae475f007fd1cbea1274254d0bd326c30d5c73753190defb32885847cc3579c"
+          },
+          {
+            "questionId": "pps_q051",
+            "cardId": "pps_term_48",
+            "sha256": "e431fd9a3dced19f6f1b5f027e45e7571f32a819e4bed5c6b918d2300430d573"
+          },
+          {
+            "questionId": "pps_q051",
+            "cardId": "pps_app_23",
+            "sha256": "30a48f11cb4652d41e15270089f70433c096677da1cd4b58ba19fd74e84aa83b"
+          },
+          {
+            "questionId": "pps_q052",
+            "cardId": "pps_term_49",
+            "sha256": "ddadbe491b4c1efc8eed636df8b9423939fac82263483e71704ff295fb4848dd"
+          },
+          {
+            "questionId": "pps_q053",
+            "cardId": "pps_term_50",
+            "sha256": "8e0adc3ca2c057f9e4e9036d948650e775e8c5fd80427c66bfccd394e79d4961"
+          },
+          {
+            "questionId": "pps_q053",
+            "cardId": "pps_app_24",
+            "sha256": "3271557ee7259dd66cb17b99133cb5509f00f0e19aa9f6d4da8102adbebecd60"
+          },
+          {
+            "questionId": "pps_q054",
+            "cardId": "pps_term_51",
+            "sha256": "c179eca34cbc62cfb0668592f0c45565fbe50f67f4b12ad96c45986c8cbad095"
+          },
+          {
+            "questionId": "pps_q054",
+            "cardId": "pps_app_21",
+            "sha256": "476b9252e7d5810e56544ab6fc84646aee1d315e5de16e6eccf5564436a239d7"
+          },
+          {
+            "questionId": "pps_q055",
+            "cardId": "pps_term_52",
+            "sha256": "3272df12fb3a38da5396684f8641022a8fff3e01a472e1805c4ba1acb9b8280c"
+          },
+          {
+            "questionId": "pps_q056",
+            "cardId": "pps_term_53",
+            "sha256": "f0cabf3eaffaf22a880a545c717ef7d3e22ba5380d5bfee65ea677b0450628c3"
+          },
+          {
+            "questionId": "pps_q057",
+            "cardId": "pps_term_54",
+            "sha256": "ec99d24080b8765cd23bf3f2afd00249db71be4a515ac6f1e98353b5b5462cbf"
+          },
+          {
+            "questionId": "pps_q057",
+            "cardId": "pps_app_22",
+            "sha256": "f5bc0f46b6541ddd62841e17ed971e86f9d3d22273462c8ecb497872aef868e9"
+          },
+          {
+            "questionId": "pps_q058",
+            "cardId": "pps_app_19",
+            "sha256": "841620409e2b8ad9f5a63443e0e4e35a1f0b0612fbf6be42650050a1d556e32c"
+          },
+          {
+            "questionId": "pps_q059",
+            "cardId": "pps_app_20",
+            "sha256": "03717b295454ec8b96705674fa8848435ac34799724eb9b8fe6ed986be088942"
+          },
+          {
+            "questionId": "pps_q060",
+            "cardId": "pps_app_25",
+            "sha256": "6891f4d8c2eefd812c783a472806086e324ba29480640595567ccc4cf355e7bb"
+          }
+        ]
+      },
+      "downloadContract": "reviewed_course_downloads_v1",
+      "downloadArtifacts": [
+        {
+          "artifactId": "pps_cards_20261113",
+          "path": "assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_Flashcards.html",
+          "sha256": "daeb0b69392f2841819bc9aeedc013e517d053ca680ff53ef1a0873bf31a18a8",
+          "bytes": 31166,
+          "mimeType": "text/html"
+        },
+        {
+          "artifactId": "pps_pack_20261113",
+          "path": "assets/prevention-promotion-20261113/UE_C1_S1_Prevention_Promotion_Pack_Complet_avec_Vocaux.zip",
+          "sha256": "2411daeb8babeadea2b5a6694540dd54b4a9b814674e6c98e554df9923125fda",
+          "bytes": 19124329,
+          "mimeType": "application/zip"
+        }
+      ]
     }
   ],
   "supplementalResourceApprovals": [

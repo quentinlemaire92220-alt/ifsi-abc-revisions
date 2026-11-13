@@ -1,0 +1,642 @@
+[
+  {
+    "id": "pps_term_01",
+    "number": 1,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Santé publique.",
+    "back": "Action collective et concertée visant à préserver et améliorer la santé des populations, au-delà du seul soin individuel.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_02",
+    "number": 2,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Santé.",
+    "back": "La santé comprend les dimensions physique, mentale et sociale ; elle ne se résume pas à l’absence de maladie.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_03",
+    "number": 3,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Déterminant de santé.",
+    "back": "Facteur personnel, social, économique ou environnemental qui influence favorablement ou défavorablement l’état de santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_04",
+    "number": 4,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Facteur de risque.",
+    "back": "Caractéristique, exposition ou comportement associé au risque d’apparition d’un problème de santé ; c’est un point d’action possible en prévention.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_05",
+    "number": 5,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Veille sanitaire.",
+    "back": "Surveillance de l’état de santé et de ses évolutions afin de repérer des signaux inhabituels ou des menaces.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_06",
+    "number": 6,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Maladie chronique.",
+    "back": "Maladie qui s’inscrit dans la durée et peut nécessiter un accompagnement et une prévention de ses complications.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_07",
+    "number": 7,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Espérance de vie à la naissance.",
+    "back": "Indicateur de durée moyenne de vie ; sa valeur historique est notamment influencée par la mortalité infantile.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_08",
+    "number": 8,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Prévention.",
+    "back": "Ensemble de mesures visant à éviter ou réduire le nombre ou la gravité des maladies, accidents et handicaps.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_09",
+    "number": 9,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Histoire naturelle de la maladie.",
+    "back": "Succession des étapes allant du début du processus biologique à la détection et à l’évolution de la maladie.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_10",
+    "number": 10,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Asymptomatique.",
+    "back": "Qui ne présente pas de symptômes perceptibles ; une maladie peut néanmoins être présente.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_11",
+    "number": 11,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Prévention primaire.",
+    "back": "Intervenir avant l’apparition de la maladie visée pour empêcher sa survenue, notamment en réduisant les facteurs de risque.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_12",
+    "number": 12,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Prévention secondaire.",
+    "back": "Détecter précocement une maladie possible et faciliter sa prise en charge pour en limiter la gravité.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_13",
+    "number": 13,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Dépistage.",
+    "back": "Recherche d’une maladie potentiellement présente mais non encore reconnue, notamment en l’absence de symptômes.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_14",
+    "number": 14,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Prévention tertiaire.",
+    "back": "Limiter les complications, rechutes, séquelles et incapacités d’une maladie déjà connue.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_15",
+    "number": 15,
+    "theme": "Applications et politiques",
+    "front": "Définir : Séquelles.",
+    "back": "Conséquences qui persistent après une maladie ou un événement de santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_16",
+    "number": 16,
+    "theme": "Applications et politiques",
+    "front": "Définir : Rechute.",
+    "back": "Réapparition ou reprise d’une maladie après une amélioration.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_17",
+    "number": 17,
+    "theme": "Applications et politiques",
+    "front": "Définir : Complication.",
+    "back": "Problème supplémentaire pouvant survenir au cours ou à la suite d’une maladie.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_18",
+    "number": 18,
+    "theme": "Applications et politiques",
+    "front": "Définir : Prévention quaternaire.",
+    "back": "Recherche du juste soin pour éviter la surmédicalisation et des interventions inutiles ou défavorables.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_19",
+    "number": 19,
+    "theme": "Santé publique et prévention",
+    "front": "Définir : Balance bénéfice-risque.",
+    "back": "Mise en regard des bénéfices attendus et des risques d’une action pour décider de sa pertinence dans une situation.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_20",
+    "number": 20,
+    "theme": "Applications et politiques",
+    "front": "Définir : Surmédicalisation.",
+    "back": "Recours excessif ou inapproprié à des interventions médicales, que la prévention quaternaire cherche à éviter.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_21",
+    "number": 21,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Pluridisciplinaire.",
+    "back": "Qui mobilise plusieurs disciplines ou professionnels dans une réflexion ou une prise en charge.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_22",
+    "number": 22,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Prévention individuelle.",
+    "back": "Mesure mise en œuvre pour une personne, adaptée à sa situation et à ses risques.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_23",
+    "number": 23,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Prévention collective.",
+    "back": "Mesure organisée à l’échelle d’une population, par exemple une campagne de vaccination ou un dépistage organisé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_24",
+    "number": 24,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Prévention universelle.",
+    "back": "Dans Gordon, action destinée à l’ensemble d’une population sans distinction du niveau de risque individuel.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_25",
+    "number": 25,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Prévention orientée / sélective.",
+    "back": "Dans Gordon, action destinée à un groupe dont le risque est statistiquement plus élevé que la moyenne.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_26",
+    "number": 26,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Prévention ciblée / indiquée.",
+    "back": "Action individualisée pour des personnes identifiées selon leurs facteurs de risque.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_27",
+    "number": 27,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Promotion de la santé.",
+    "back": "Processus permettant aux populations de mieux contrôler et améliorer leur santé en renforçant leurs capacités et leurs conditions de vie.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_28",
+    "number": 28,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Charte d’Ottawa.",
+    "back": "Référence de 1986 organisant la promotion de la santé autour de cinq axes complémentaires.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_29",
+    "number": 29,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Action communautaire.",
+    "back": "Participation active d’une communauté aux décisions et aux projets qui concernent sa santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_30",
+    "number": 30,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Environnement favorable.",
+    "back": "Milieu dont les caractéristiques facilitent la santé et les comportements favorables.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_31",
+    "number": 31,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Aptitudes individuelles.",
+    "back": "Capacités et compétences permettant à une personne de faire des choix et d’agir sur sa santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_32",
+    "number": 32,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Éducation pour la santé.",
+    "back": "Possibilités d’apprendre et communication visant des connaissances et compétences utiles à des décisions favorables à la santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_33",
+    "number": 33,
+    "theme": "Population, promotion et éducation",
+    "front": "Définir : Littératie en santé.",
+    "back": "Capacités à comprendre et utiliser l’information sur la santé pour agir et décider.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_34",
+    "number": 34,
+    "theme": "Comportements et approches",
+    "front": "Définir : Comportement de santé.",
+    "back": "Action, habitude ou conduite qui influence la santé, de façon favorable ou défavorable.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_35",
+    "number": 35,
+    "theme": "Comportements et approches",
+    "front": "Définir : Frein / levier.",
+    "back": "Élément qui rend un changement de comportement plus difficile / plus facile.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_36",
+    "number": 36,
+    "theme": "Comportements et approches",
+    "front": "Définir : Nudge.",
+    "back": "Incitation modeste par l’organisation de l’environnement, sans sanction ni suppression de la liberté de choix.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_37",
+    "number": 37,
+    "theme": "Comportements et approches",
+    "front": "Définir : Représentations sociales.",
+    "back": "Croyances, connaissances et opinions produites et partagées dans un groupe à propos d’un objet social.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_38",
+    "number": 38,
+    "theme": "Comportements et approches",
+    "front": "Définir : Stigmatisation.",
+    "back": "Regard négatif porté sur une personne ou un groupe, pouvant notamment freiner la demande d’aide ou l’accès aux soins.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_39",
+    "number": 39,
+    "theme": "Comportements et approches",
+    "front": "Définir : Approche socio-écologique.",
+    "back": "Lecture de la santé articulant niveaux individuel, interpersonnel, organisationnel, communautaire et politiques publiques.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_40",
+    "number": 40,
+    "theme": "Comportements et approches",
+    "front": "Définir : Approche par milieux de vie.",
+    "back": "Intervention dans les lieux du quotidien pour les rendre favorables à la santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_41",
+    "number": 41,
+    "theme": "Comportements et approches",
+    "front": "Définir : Vision dichotomique.",
+    "back": "Opposition entre deux catégories exclusives : malade ou en bonne santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_42",
+    "number": 42,
+    "theme": "Comportements et approches",
+    "front": "Définir : Continuum de santé.",
+    "back": "Vision dynamique et graduée de la santé, qui ne se réduit pas à deux états opposés.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_43",
+    "number": 43,
+    "theme": "Comportements et approches",
+    "front": "Définir : Pathogenèse / approche pathogénique.",
+    "back": "Processus conduisant à la maladie / approche étudiant ce qui rend malade pour prévenir et soigner.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_44",
+    "number": 44,
+    "theme": "Comportements et approches",
+    "front": "Définir : Salutogenèse / approche salutogénique.",
+    "back": "Processus conduisant vers la santé / approche étudiant les ressources qui permettent de la maintenir ou de l’améliorer.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_45",
+    "number": 45,
+    "theme": "Comportements et approches",
+    "front": "Définir : Ressources de résistance.",
+    "back": "Facteurs personnels, sociaux ou matériels aidant une personne à rester en meilleure santé malgré les difficultés ou la maladie.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_46",
+    "number": 46,
+    "theme": "Comportements et approches",
+    "front": "Définir : Approche intersectorielle.",
+    "back": "Collaboration de plusieurs secteurs de la société pour agir sur les déterminants et les inégalités de santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_47",
+    "number": 47,
+    "theme": "Comportements et approches",
+    "front": "Définir : Équité et accessibilité.",
+    "back": "Questions portant sur la justice des interventions et sur la possibilité réelle, pour les personnes, d’accéder aux messages, moyens et soins.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_48",
+    "number": 48,
+    "theme": "Applications et politiques",
+    "front": "Définir : PNNS.",
+    "back": "Programme national nutrition santé : alimentation et activité physique comme leviers de santé.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_49",
+    "number": 49,
+    "theme": "Applications et politiques",
+    "front": "Définir : HPV.",
+    "back": "Papillomavirus humains ; leur vaccination constitue un exemple de prévention primaire.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_50",
+    "number": 50,
+    "theme": "Applications et politiques",
+    "front": "Définir : IST / VIH.",
+    "back": "Infections sexuellement transmissibles / virus de l’immunodéficience humaine ; notions citées dans la stratégie de santé sexuelle.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_51",
+    "number": 51,
+    "theme": "Applications et politiques",
+    "front": "Définir : IVG.",
+    "back": "Interruption volontaire de grossesse ; l’amélioration de son accès constitue un exemple d’action sur l’accès aux soins.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_52",
+    "number": 52,
+    "theme": "Applications et politiques",
+    "front": "Définir : EVAR / EVARS.",
+    "back": "Éducation à la vie affective et relationnelle / éducation à la vie affective, relationnelle et sexuelle.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_53",
+    "number": 53,
+    "theme": "Applications et politiques",
+    "front": "Définir : Post-partum.",
+    "back": "Période après l’accouchement, abordée à propos de la santé des parents et du repérage de la dépression.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_term_54",
+    "number": 54,
+    "theme": "Applications et politiques",
+    "front": "Définir : AVC.",
+    "back": "Accident vasculaire cérébral ; exemple utilisé pour la rééducation et la prévention des complications ou récidives.",
+    "explanation": "Cette définition aide à distinguer la notion des catégories voisines."
+  },
+  {
+    "id": "pps_app_01",
+    "number": 55,
+    "theme": "Santé publique et prévention",
+    "front": "Une moyenne historique de durée de vie très basse signifie-t-elle que personne ne vivait vieux ?",
+    "back": "Non. Une forte mortalité infantile peut abaisser l’espérance de vie à la naissance.",
+    "explanation": "Une moyenne n’est pas un âge maximal."
+  },
+  {
+    "id": "pps_app_02",
+    "number": 56,
+    "theme": "Santé publique et prévention",
+    "front": "Vacciner avant la maladie visée : quel niveau de prévention ?",
+    "back": "Prévention primaire.",
+    "explanation": "On cherche à empêcher cette maladie."
+  },
+  {
+    "id": "pps_app_03",
+    "number": 57,
+    "theme": "Santé publique et prévention",
+    "front": "Dépister une maladie silencieuse possible : quel niveau de prévention ?",
+    "back": "Prévention secondaire.",
+    "explanation": "La maladie peut déjà être présente sans être reconnue."
+  },
+  {
+    "id": "pps_app_04",
+    "number": 58,
+    "theme": "Santé publique et prévention",
+    "front": "Surveiller les pieds d’un patient diabétique connu pour éviter des lésions : quel niveau ?",
+    "back": "Prévention tertiaire.",
+    "explanation": "L’objectif est de limiter une complication du diabète."
+  },
+  {
+    "id": "pps_app_05",
+    "number": 59,
+    "theme": "Santé publique et prévention",
+    "front": "Discuter un soin dont les risques semblent dépasser les bénéfices : quel niveau ?",
+    "back": "Prévention quaternaire.",
+    "explanation": "Le raisonnement vise le juste soin."
+  },
+  {
+    "id": "pps_app_06",
+    "number": 60,
+    "theme": "Population, promotion et éducation",
+    "front": "Une campagne collective peut-elle être orientée ?",
+    "back": "Oui, si elle s’adresse à un groupe présentant un risque accru.",
+    "explanation": "Collectif décrit l’échelle ; orienté décrit la population."
+  },
+  {
+    "id": "pps_app_07",
+    "number": 61,
+    "theme": "Population, promotion et éducation",
+    "front": "Vaccination organisée des nourrissons : trois classements compatibles ?",
+    "back": "Primaire, collective et orientée.",
+    "explanation": "On prévient une maladie par une campagne destinée à un groupe d’âge."
+  },
+  {
+    "id": "pps_app_08",
+    "number": 62,
+    "theme": "Population, promotion et éducation",
+    "front": "Une affiche visible par tous rend-elle l’action proposée automatiquement universelle ?",
+    "back": "Non. Il faut identifier les bénéficiaires réels.",
+    "explanation": "Le public du message et celui de l’action peuvent différer."
+  },
+  {
+    "id": "pps_app_09",
+    "number": 63,
+    "theme": "Population, promotion et éducation",
+    "front": "Quels sont les cinq axes de la charte d’Ottawa ?",
+    "back": "Politiques pour la santé, environnements favorables, action communautaire, aptitudes individuelles et réorientation des services.",
+    "explanation": "Ces axes associent capacités et conditions de vie."
+  },
+  {
+    "id": "pps_app_10",
+    "number": 64,
+    "theme": "Population, promotion et éducation",
+    "front": "Informer suffit-il toujours à réaliser une éducation pour la santé ?",
+    "back": "Non. Il faut aussi développer des compétences et des moyens concrets d’agir.",
+    "explanation": "Connaître un message ne garantit pas sa mise en pratique."
+  },
+  {
+    "id": "pps_app_11",
+    "number": 65,
+    "theme": "Population, promotion et éducation",
+    "front": "Prévention et promotion peuvent-elles coexister dans une action ?",
+    "back": "Oui, leurs démarches sont complémentaires.",
+    "explanation": "Une intervention peut réduire un risque et renforcer les capacités."
+  },
+  {
+    "id": "pps_app_12",
+    "number": 66,
+    "theme": "Population, promotion et éducation",
+    "front": "Des habitants décident ensemble d’un projet local de santé : quel axe d’Ottawa ?",
+    "back": "Le renforcement de l’action communautaire.",
+    "explanation": "La communauté participe activement au projet."
+  },
+  {
+    "id": "pps_app_13",
+    "number": 67,
+    "theme": "Comportements et approches",
+    "front": "Une personne connaît un message nutritionnel mais manque de ressources : quel frein examiner ?",
+    "back": "Un frein socioéconomique.",
+    "explanation": "Le savoir ne suffit pas à rendre un choix accessible."
+  },
+  {
+    "id": "pps_app_14",
+    "number": 68,
+    "theme": "Comportements et approches",
+    "front": "Placer les fruits au premier plan sans interdire les desserts illustre quoi ?",
+    "back": "Un nudge.",
+    "explanation": "L’environnement oriente le choix sans supprimer les alternatives."
+  },
+  {
+    "id": "pps_app_15",
+    "number": 69,
+    "theme": "Comportements et approches",
+    "front": "Pourquoi explorer ce que la cigarette représente pour une personne ?",
+    "back": "Parce qu’elle peut y associer convivialité, style ou risque de maladie.",
+    "explanation": "Les représentations peuvent différer de celles du soignant."
+  },
+  {
+    "id": "pps_app_16",
+    "number": 70,
+    "theme": "Comportements et approches",
+    "front": "Une cantine de travail améliorée mobilise quel niveau et quelle approche ?",
+    "back": "Le niveau organisationnel et l’approche par milieux de vie.",
+    "explanation": "L’action modifie une structure du quotidien."
+  },
+  {
+    "id": "pps_app_17",
+    "number": 71,
+    "theme": "Comportements et approches",
+    "front": "Une personne malade peut-elle préserver des dimensions de bonne santé ?",
+    "back": "Oui, grâce notamment à des ressources personnelles, sociales et matérielles.",
+    "explanation": "Le diagnostic ne résume pas toute la santé."
+  },
+  {
+    "id": "pps_app_18",
+    "number": 72,
+    "theme": "Comportements et approches",
+    "front": "Transports, santé et urbanisme construisent un projet commun : quelle approche ?",
+    "back": "Une approche intersectorielle.",
+    "explanation": "Plusieurs secteurs agissent sur les déterminants."
+  },
+  {
+    "id": "pps_app_19",
+    "number": 73,
+    "theme": "Applications et politiques",
+    "front": "Comment exploiter un exemple de politique de santé pour raisonner sur la prévention ?",
+    "back": "Repérer son objectif, son public et ses leviers pour comprendre et justifier ses classements.",
+    "explanation": "Le support distingue les notions à connaître et les exemples."
+  },
+  {
+    "id": "pps_app_20",
+    "number": 74,
+    "theme": "Applications et politiques",
+    "front": "Des messages nutritionnels généraux visent à prévenir les maladies : deux classements ?",
+    "back": "Prévention primaire et universelle.",
+    "explanation": "L’action vise la population générale avant les maladies considérées."
+  },
+  {
+    "id": "pps_app_21",
+    "number": 75,
+    "theme": "Applications et politiques",
+    "front": "Le Mois sans tabac destiné aux fumeurs : quelle logique temporelle et quelle population ?",
+    "back": "Primaire pour les maladies visées et orientée vers les fumeurs.",
+    "explanation": "Le facteur de risque ne se confond pas avec ces maladies."
+  },
+  {
+    "id": "pps_app_22",
+    "number": 76,
+    "theme": "Applications et politiques",
+    "front": "L’entretien postnatal peut-il être à la fois éducatif et secondaire ?",
+    "back": "Oui. Il peut donner des conseils et repérer une dépression présente.",
+    "explanation": "Les composantes n’ont pas toutes le même objectif."
+  },
+  {
+    "id": "pps_app_23",
+    "number": 77,
+    "theme": "Applications et politiques",
+    "front": "Vaccination HPV et dépistage d’IST : même niveau temporel ?",
+    "back": "Non : primaire pour la vaccination, secondaire pour le dépistage.",
+    "explanation": "L’une prévient ; l’autre recherche une infection possible."
+  },
+  {
+    "id": "pps_app_24",
+    "number": 78,
+    "theme": "Applications et politiques",
+    "front": "Que vise le changement des représentations en santé mentale ?",
+    "back": "Réduire la stigmatisation et faciliter la demande d’aide.",
+    "explanation": "Un regard négatif peut freiner l’accès aux soins."
+  },
+  {
+    "id": "pps_app_25",
+    "number": 79,
+    "theme": "Applications et politiques",
+    "front": "Quels sont les trois critères de classement de la prévention à distinguer ?",
+    "back": "Le moment de l’intervention, son échelle et sa population.",
+    "explanation": "Ils se complètent sans se remplacer."
+  },
+  {
+    "id": "pps_app_26",
+    "number": 80,
+    "theme": "Applications et politiques",
+    "front": "Avant de cibler un groupe, quelles questions éthiques garder en tête ?",
+    "back": "Libertés, équité, accessibilité et risque de stigmatisation.",
+    "explanation": "L’objectif bénéfique n’efface pas les conséquences possibles."
+  }
+]

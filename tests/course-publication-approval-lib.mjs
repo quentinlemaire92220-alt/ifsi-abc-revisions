@@ -39,6 +39,8 @@ export function publicationBundle(courseId,delivery,data){
   ...(delivery.publicArtifacts?{publicArtifacts:delivery.publicArtifacts}:{}),
   ...(delivery.captureSupport?{captureSupport:delivery.captureSupport,supportingArtifacts:delivery.supportingArtifacts,downloadArtifacts:delivery.downloadArtifacts,publicAudioArtifacts:delivery.publicAudioArtifacts,practiceCaseArtifact:delivery.practiceCaseArtifact,firstReleaseBaseline:delivery.firstReleaseBaseline,sourceAttributionReview:delivery.sourceAttributionReview}:{}),
   ...(delivery.templateConformance?{templateConformance:delivery.templateConformance}:{}),
+  ...(delivery.authoredCardReview?{authoredCardReview:delivery.authoredCardReview}:{}),
+  ...(delivery.downloadContract==='reviewed_course_downloads_v1'?{reviewedDownloads:{contract:delivery.downloadContract,artifacts:delivery.downloadArtifacts}}:{}),
   ...(delivery.officialRevision?{officialRevision:delivery.officialRevision}:{}),
   ...(delivery.visualOwnerReview?{visualOwnerReview:delivery.visualOwnerReview}:{}),
   documentIds:[delivery.supportDriveId,delivery.qcmDriveId,delivery.flashcardDriveId,delivery.vocabularyDriveId,delivery.infographicPackDriveId].filter(Boolean),

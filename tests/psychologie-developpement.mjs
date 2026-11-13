@@ -23,9 +23,11 @@ for(const q of bank)for(const f of q.flashcards){
 const sw=fs.readFileSync('sw.js','utf8'),ctx={console,Response,Blob,DecompressionStream,TextDecoder,Uint8Array,atob};vm.createContext(ctx);vm.runInContext(sw.slice(0,sw.indexOf("self.addEventListener('install'")),ctx);
 ctx.q=bank.find(q=>q.id==='psydev_q053');assert.equal(vm.runInContext('keepQuestion(q)',ctx),true);
 ctx.q={...ctx.q,question:'Sur la figure absente, que désigne le repère A ?'};assert.equal(vm.runInContext('keepQuestion(q)',ctx),false);
-const all=read('questions-5.json'),before=beforeAdditiveCourses('questions-5.json',all,manifest);
+// This assertion concerns the development-course addition. Other independently
+// approved first releases must remain visible in its unchanged surrounding rows.
+const all=read('questions-5.json'),developmentOnly={...manifest,courses:manifest.courses.filter(d=>d.courseId===id||!d.firstReleaseBaseline)},before=beforeAdditiveCourses('questions-5.json',all,developmentOnly);
 assert.ok(!before.some(q=>q.courseId===id));assert.deepEqual(before,all.filter(q=>q.courseId!==id));
-const mutated=structuredClone(all);mutated.find(q=>q.courseId!==id).question+=' unauthorized';assert.notDeepEqual(beforeAdditiveCourses('questions-5.json',mutated,manifest),before,'Historical corruption must remain visible to old checksum guards');
+const mutated=structuredClone(all);mutated.find(q=>q.courseId!==id).question+=' unauthorized';assert.notDeepEqual(beforeAdditiveCourses('questions-5.json',mutated,developmentOnly),before,'Historical corruption must remain visible to old checksum guards');
 const oldData={registry:{courses:r.registry.courses.filter(c=>c.id!==id)},vocals:read('vocals.json').filter(v=>v.courseId!==id)},newData={registry:r.registry,vocals:read('vocals.json')},prior={courses:manifest.courses.filter(c=>c.courseId!==id)};
 assert.equal(firstReleaseAudioIds(prior,manifest,oldData,newData).size,6);
 for(const mutation of [x=>x.provisional=false,x=>x.pedagogicalValidated=true,x=>x.audioOwnerReview.fullTechnicalDecode=false,x=>x.audioOwnerReview.humanListeningAttested=true,x=>x.publicAudioArtifacts[0].sha256='0'.repeat(64),x=>x.audioOwnerReview.status='pending']){

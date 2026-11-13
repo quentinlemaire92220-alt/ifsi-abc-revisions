@@ -1,5 +1,5 @@
 {
-  "version": "8.30.192",
+  "version": "8.30.193",
   "auditedAt": "2026-11-02",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -9,10 +9,10 @@
   "mode": "candidate_pending_pedagogical_review",
   "note": "Catalogue candidat : 24 MP3 TTS ajoutés avec statut provisoire ; revue des pauses et exactitude scientifique non terminée, validation non déclarée.",
   "expectedTotals": {
-    "courses": 71,
-    "sheets": 97,
+    "courses": 72,
+    "sheets": 98,
     "infographics": 184,
-    "vocals": 280,
+    "vocals": 284,
     "v820QcmImported": 1174,
     "v820PackFirst": 12,
     "v820PackLast": 38,
@@ -299,6 +299,17 @@
       "sourceStatus": "reconstructed",
       "provisional": true,
       "scope": "Received captures and reviewed transcripts; no complete official slide deck."
+    },
+    {
+      "courseId": "prevention_promotion_sante",
+      "course": "Prévention et promotion de la santé",
+      "qcm": 60,
+      "flashcards": 80,
+      "vocabulary": 54,
+      "vocals": 4,
+      "sourceStatus": "official",
+      "provisional": false,
+      "scope": "Supplied official support and transcripts; documentary reservations retained privately."
     }
   ],
   "auditLogicVersion": "8.30.10",

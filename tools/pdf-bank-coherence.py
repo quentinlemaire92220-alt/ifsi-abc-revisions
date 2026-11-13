@@ -51,7 +51,7 @@ def validate_qcm_written_dot(text,rows):
         assert re.findall(r'[A-E]',m[2])==[chr(65+j) for j in q['answers']],q['id']+': clé PDF différente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert norm(actual)==norm(q['explanation']),q['id']+': argumentation PDF différente'
-def validate_boxed_inline_rationales(text,rows):
+def validate_boxed_inline_rationales(text,rows,repeat_rationales=True):
     """Exact native text for boxed questions and all five option rationales."""
     parts=text.split('Corrigés argumentés',1)
     assert len(parts)==2,'Corrigés absents'
@@ -73,7 +73,12 @@ def validate_boxed_inline_rationales(text,rows):
         assert m[2]==', '.join(chr(65+j) for j in q['answers']),q['id']+': clé divergente'
         actual=corrections[m.end():blocks[i+1].start() if i+1<len(blocks) else len(corrections)]
         assert len(q['rationales'])==5
-        expected=q['explanation']+' '+' '.join(chr(65+j)+' : '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+        expected=q['explanation']
+        if repeat_rationales:
+            expected+=' '+' '.join(chr(65+j)+' : '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+        else:
+            single=' '.join(chr(65+j)+' — '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+            assert q['explanation']==single,q['id']+': justification A–E absente du corrigé'
         assert norm(actual)==norm(expected),q['id']+': argumentation ou justification A–E divergente'
 
 def validate_qcm(text,rows):
@@ -456,6 +461,16 @@ def check(course):
             if role=='qcm' and course.get('qcmPdfLayout')=='boxed_inline_cardinality_rationales_v1':
                 validate_boxed_inline_rationales(body(doc),json.loads(Path(course['qcmBank']).read_text(encoding='utf8')))
                 print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cinq justifications par question')
+                continue
+            if role=='qcm' and course.get('qcmPdfLayout')=='boxed_inline_cardinality_explanation_v1':
+                # Same exact question/choice/key checks; all five rationales are
+                # printed once in the explanation, without a duplicate list.
+                rows=json.loads(Path(course['qcmBank']).read_text(encoding='utf8'))
+                for q in rows:
+                    expected=' '.join(chr(65+j)+' — '+('Vrai. ' if j in q['answers'] else 'Faux. ')+s for j,s in enumerate(q['rationales']))
+                    assert q['explanation']==expected,q['id']+': justification A–E absente du corrigé'
+                validate_boxed_inline_rationales(body(doc),rows,repeat_rationales=False)
+                print('PASS PDF',course['courseId'],role,asset['pageCount'],'pages, cinq justifications uniques par question')
                 continue
             if role=='flashcards' and course.get('flashcardPdfLayout') in ['duplex_six_cards_v1','compact_duplex_six_cards_v1']:
                 import importlib.util

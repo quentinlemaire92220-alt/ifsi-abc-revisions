@@ -22817,6 +22817,600 @@
       "theme": "Psychologie du développement",
       "sourceType": "course_glossary",
       "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_01",
+      "term": "Santé publique",
+      "definition": "Action collective et concertée visant à préserver et améliorer la santé des populations, au-delà du seul soin individuel.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_02",
+      "term": "Santé",
+      "definition": "La santé comprend les dimensions physique, mentale et sociale ; elle ne se résume pas à l’absence de maladie.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_03",
+      "term": "Déterminant de santé",
+      "definition": "Facteur personnel, social, économique ou environnemental qui influence favorablement ou défavorablement l’état de santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_04",
+      "term": "Facteur de risque",
+      "definition": "Caractéristique, exposition ou comportement associé au risque d’apparition d’un problème de santé ; c’est un point d’action possible en prévention.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_05",
+      "term": "Veille sanitaire",
+      "definition": "Surveillance de l’état de santé et de ses évolutions afin de repérer des signaux inhabituels ou des menaces.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_06",
+      "term": "Maladie chronique",
+      "definition": "Maladie qui s’inscrit dans la durée et peut nécessiter un accompagnement et une prévention de ses complications.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_07",
+      "term": "Espérance de vie à la naissance",
+      "definition": "Indicateur de durée moyenne de vie ; sa valeur historique est notamment influencée par la mortalité infantile.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_08",
+      "term": "Prévention",
+      "definition": "Ensemble de mesures visant à éviter ou réduire le nombre ou la gravité des maladies, accidents et handicaps.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_09",
+      "term": "Histoire naturelle de la maladie",
+      "definition": "Succession des étapes allant du début du processus biologique à la détection et à l’évolution de la maladie.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_10",
+      "term": "Asymptomatique",
+      "definition": "Qui ne présente pas de symptômes perceptibles ; une maladie peut néanmoins être présente.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_11",
+      "term": "Prévention primaire",
+      "definition": "Intervenir avant l’apparition de la maladie visée pour empêcher sa survenue, notamment en réduisant les facteurs de risque.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_12",
+      "term": "Prévention secondaire",
+      "definition": "Détecter précocement une maladie possible et faciliter sa prise en charge pour en limiter la gravité.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_13",
+      "term": "Dépistage",
+      "definition": "Recherche d’une maladie potentiellement présente mais non encore reconnue, notamment en l’absence de symptômes.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_14",
+      "term": "Prévention tertiaire",
+      "definition": "Limiter les complications, rechutes, séquelles et incapacités d’une maladie déjà connue.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_15",
+      "term": "Séquelles",
+      "definition": "Conséquences qui persistent après une maladie ou un événement de santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_16",
+      "term": "Rechute",
+      "definition": "Réapparition ou reprise d’une maladie après une amélioration.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_17",
+      "term": "Complication",
+      "definition": "Problème supplémentaire pouvant survenir au cours ou à la suite d’une maladie.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_18",
+      "term": "Prévention quaternaire",
+      "definition": "Recherche du juste soin pour éviter la surmédicalisation et des interventions inutiles ou défavorables.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_19",
+      "term": "Balance bénéfice-risque",
+      "definition": "Mise en regard des bénéfices attendus et des risques d’une action pour décider de sa pertinence dans une situation.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_20",
+      "term": "Surmédicalisation",
+      "definition": "Recours excessif ou inapproprié à des interventions médicales, que la prévention quaternaire cherche à éviter.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_21",
+      "term": "Pluridisciplinaire",
+      "definition": "Qui mobilise plusieurs disciplines ou professionnels dans une réflexion ou une prise en charge.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_22",
+      "term": "Prévention individuelle",
+      "definition": "Mesure mise en œuvre pour une personne, adaptée à sa situation et à ses risques.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_23",
+      "term": "Prévention collective",
+      "definition": "Mesure organisée à l’échelle d’une population, par exemple une campagne de vaccination ou un dépistage organisé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_24",
+      "term": "Prévention universelle",
+      "definition": "Dans Gordon, action destinée à l’ensemble d’une population sans distinction du niveau de risque individuel.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_25",
+      "term": "Prévention orientée / sélective",
+      "definition": "Dans Gordon, action destinée à un groupe dont le risque est statistiquement plus élevé que la moyenne.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_26",
+      "term": "Prévention ciblée / indiquée",
+      "definition": "Action individualisée pour des personnes identifiées selon leurs facteurs de risque.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_27",
+      "term": "Promotion de la santé",
+      "definition": "Processus permettant aux populations de mieux contrôler et améliorer leur santé en renforçant leurs capacités et leurs conditions de vie.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_28",
+      "term": "Charte d’Ottawa",
+      "definition": "Référence de 1986 organisant la promotion de la santé autour de cinq axes complémentaires.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_29",
+      "term": "Action communautaire",
+      "definition": "Participation active d’une communauté aux décisions et aux projets qui concernent sa santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_30",
+      "term": "Environnement favorable",
+      "definition": "Milieu dont les caractéristiques facilitent la santé et les comportements favorables.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_31",
+      "term": "Aptitudes individuelles",
+      "definition": "Capacités et compétences permettant à une personne de faire des choix et d’agir sur sa santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_32",
+      "term": "Éducation pour la santé",
+      "definition": "Possibilités d’apprendre et communication visant des connaissances et compétences utiles à des décisions favorables à la santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_33",
+      "term": "Littératie en santé",
+      "definition": "Capacités à comprendre et utiliser l’information sur la santé pour agir et décider.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_34",
+      "term": "Comportement de santé",
+      "definition": "Action, habitude ou conduite qui influence la santé, de façon favorable ou défavorable.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_35",
+      "term": "Frein / levier",
+      "definition": "Élément qui rend un changement de comportement plus difficile / plus facile.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_36",
+      "term": "Nudge",
+      "definition": "Incitation modeste par l’organisation de l’environnement, sans sanction ni suppression de la liberté de choix.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_37",
+      "term": "Représentations sociales",
+      "definition": "Croyances, connaissances et opinions produites et partagées dans un groupe à propos d’un objet social.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_38",
+      "term": "Stigmatisation",
+      "definition": "Regard négatif porté sur une personne ou un groupe, pouvant notamment freiner la demande d’aide ou l’accès aux soins.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_39",
+      "term": "Approche socio-écologique",
+      "definition": "Lecture de la santé articulant niveaux individuel, interpersonnel, organisationnel, communautaire et politiques publiques.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_40",
+      "term": "Approche par milieux de vie",
+      "definition": "Intervention dans les lieux du quotidien pour les rendre favorables à la santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_41",
+      "term": "Vision dichotomique",
+      "definition": "Opposition entre deux catégories exclusives : malade ou en bonne santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_42",
+      "term": "Continuum de santé",
+      "definition": "Vision dynamique et graduée de la santé, qui ne se réduit pas à deux états opposés.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_43",
+      "term": "Pathogenèse / approche pathogénique",
+      "definition": "Processus conduisant à la maladie / approche étudiant ce qui rend malade pour prévenir et soigner.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_44",
+      "term": "Salutogenèse / approche salutogénique",
+      "definition": "Processus conduisant vers la santé / approche étudiant les ressources qui permettent de la maintenir ou de l’améliorer.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_45",
+      "term": "Ressources de résistance",
+      "definition": "Facteurs personnels, sociaux ou matériels aidant une personne à rester en meilleure santé malgré les difficultés ou la maladie.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_46",
+      "term": "Approche intersectorielle",
+      "definition": "Collaboration de plusieurs secteurs de la société pour agir sur les déterminants et les inégalités de santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_47",
+      "term": "Équité et accessibilité",
+      "definition": "Questions portant sur la justice des interventions et sur la possibilité réelle, pour les personnes, d’accéder aux messages, moyens et soins.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_48",
+      "term": "PNNS",
+      "definition": "Programme national nutrition santé : alimentation et activité physique comme leviers de santé.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_49",
+      "term": "HPV",
+      "definition": "Papillomavirus humains ; leur vaccination constitue un exemple de prévention primaire.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_50",
+      "term": "IST / VIH",
+      "definition": "Infections sexuellement transmissibles / virus de l’immunodéficience humaine ; notions citées dans la stratégie de santé sexuelle.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_51",
+      "term": "IVG",
+      "definition": "Interruption volontaire de grossesse ; l’amélioration de son accès constitue un exemple d’action sur l’accès aux soins.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_52",
+      "term": "EVAR / EVARS",
+      "definition": "Éducation à la vie affective et relationnelle / éducation à la vie affective, relationnelle et sexuelle.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_53",
+      "term": "Post-partum",
+      "definition": "Période après l’accouchement, abordée à propos de la santé des parents et du repérage de la dépression.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
+    },
+    {
+      "id": "pps_vocab_54",
+      "term": "AVC",
+      "definition": "Accident vasculaire cérébral ; exemple utilisé pour la rééducation et la prévention des complications ou récidives.",
+      "theme": "Prévention et promotion de la santé",
+      "courseIds": [
+        "prevention_promotion_sante"
+      ],
+      "sourceType": "course_glossary",
+      "etymologyStatus": "not_provided_in_course"
     }
   ]
 }

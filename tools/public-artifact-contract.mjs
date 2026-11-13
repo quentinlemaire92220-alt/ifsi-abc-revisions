@@ -22,21 +22,24 @@ export function verifyPublicArtifact(delivery,url){
  const relative=decodeURIComponent(parsed.pathname.slice(pagesPrefix.length));
  const supporting=delivery.captureSupport?.contract==='course_capture_facsimile_v1'?Object.values(delivery.supportingArtifacts||{}):[];
  const scopedDownload=delivery.downloadContract==='scoped_reviewed_download_v1';
+ const courseDownload=delivery.downloadContract==='reviewed_course_downloads_v1';
+ if(courseDownload){assert.equal(delivery.deliveryMode,'first_release');assert.equal(delivery.packFormat,'written_v1');assert.equal(delivery.publicationApproval?.scope,'course_package');assert.equal(delivery.publicationApproval.status,'approved');assert.equal(delivery.publicationApproval.authorization,'explicit_go_publication');assert.match(delivery.publicationApproval.bundleSha256,/^[a-f0-9]{64}$/);}
  if(scopedDownload){assert.equal(delivery.publicationApproval?.scope,'scoped_course_revision');assert.equal(delivery.publicationApproval?.status,'approved');assert.equal(delivery.publicationApproval?.authorization,'explicit_go_publication');}
- const downloads=delivery.captureSupport?.contract==='course_capture_facsimile_v1'||scopedDownload?(delivery.downloadArtifacts||[]):[];
+ const downloads=delivery.captureSupport?.contract==='course_capture_facsimile_v1'||scopedDownload||courseDownload?(delivery.downloadArtifacts||[]):[];
  const matches=[...Object.values(delivery.publicArtifacts||{}),...supporting,...downloads].filter(a=>a.path===relative);
  assert.equal(matches.length,1,'PDF hors inventaire approuvé : '+relative);
  const record=matches[0];
  let target;
- if(relative.endsWith('.zip')){
+ if(relative.endsWith('.zip')||relative.endsWith('.html')&&courseDownload){
   assert.ok(downloads.includes(record),'Archive hors inventaire de téléchargements');
-  assert.match(relative,/^assets\/[\w-]+\/[\w.-]+\.zip$/);assert.ok(!relative.split('/').includes('..'));
+  assert.match(relative,/^assets\/[\w-]+\/[\w.-]+\.(?:zip|html)$/);assert.ok(!relative.split('/').includes('..'));
+  if(relative.endsWith('.html'))assert.equal(record.mimeType,'text/html');
   target=path.resolve(relative);assert.equal(fs.realpathSync(target),target);assert.ok(fs.statSync(target).isFile());
  }else target=localAssetPath(relative);
  const hash=createHash('sha256').update(fs.readFileSync(target)).digest('hex');
  assert.equal(hash,record.sha256,'Octets publics divergents');
  assert.equal(hash,delivery.artifactSha256s?.[record.artifactId],'Asset hors empreinte du package');
- if(relative.endsWith('.zip'))assert.equal(fs.statSync(target).size,record.bytes,'Taille archive divergente');
+ if(relative.endsWith('.zip')||relative.endsWith('.html'))assert.equal(fs.statSync(target).size,record.bytes,'Taille téléchargement divergente');
  else assert.ok(Number.isInteger(record.pageCount)&&record.pageCount>0,'Pagination absente');
  return record.artifactId;
 }

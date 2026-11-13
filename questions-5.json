@@ -57239,5 +57239,2670 @@
         "explanation": "Continuité : demeurer soi au fil du temps. Cohésion : se sentir suffisamment unifié et cohérent. Singularité : se vivre comme distinct des autres. Ces dimensions peuvent être remaniées à l’adolescence sans signifier une absence d’identité."
       }
     ]
+  },
+  {
+    "id": "pps_q001",
+    "courseId": "prevention_promotion_sante",
+    "number": 1,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "easy",
+    "question": "Quels éléments caractérisent la santé publique ?",
+    "choices": [
+      "La santé physique, mentale et sociale.",
+      "L’exclusion des conditions de vie.",
+      "Le seul traitement individuel des infections.",
+      "Une action collective et concertée.",
+      "La seule organisation hospitalière."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La santé comprend les dimensions physique, mentale et sociale.",
+      "Les conditions sociales et environnementales influencent la santé.",
+      "Elle dépasse le traitement individuel et les seules infections.",
+      "La santé publique agit à l’échelle des populations.",
+      "L’organisation des soins est une fonction parmi cinq."
+    ],
+    "explanation": "A — Vrai. La santé comprend les dimensions physique, mentale et sociale. B — Faux. Les conditions sociales et environnementales influencent la santé. C — Faux. Elle dépasse le traitement individuel et les seules infections. D — Vrai. La santé publique agit à l’échelle des populations. E — Faux. L’organisation des soins est une fonction parmi cinq.",
+    "flashcards": [
+      {
+        "id": "pps_term_01",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Santé publique.",
+        "answers": [
+          "Action collective et concertée visant à préserver et améliorer la santé des populations, au-delà du seul soin individuel."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q002",
+    "courseId": "prevention_promotion_sante",
+    "number": 2,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "easy",
+    "question": "Quels exemples sont des déterminants de santé ?",
+    "choices": [
+      "Uniquement un médicament prescrit.",
+      "Le soutien de l’entourage.",
+      "Uniquement une maladie diagnostiquée.",
+      "Les revenus.",
+      "Les conditions de logement."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La notion dépasse les traitements.",
+      "Les relations sociales sont un déterminant.",
+      "Un déterminant n’est pas défini comme une maladie.",
+      "Les ressources économiques influencent les possibilités d’action.",
+      "Le cadre de vie peut influencer la santé."
+    ],
+    "explanation": "A — Faux. La notion dépasse les traitements. B — Vrai. Les relations sociales sont un déterminant. C — Faux. Un déterminant n’est pas défini comme une maladie. D — Vrai. Les ressources économiques influencent les possibilités d’action. E — Vrai. Le cadre de vie peut influencer la santé.",
+    "flashcards": [
+      {
+        "id": "pps_term_02",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Santé.",
+        "answers": [
+          "La santé comprend les dimensions physique, mentale et sociale ; elle ne se résume pas à l’absence de maladie."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q003",
+    "courseId": "prevention_promotion_sante",
+    "number": 3,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "medium",
+    "question": "Quelles propositions décrivent les fonctions de santé publique ?",
+    "choices": [
+      "La surveillance de l’état de santé.",
+      "La seule réalisation des actes techniques.",
+      "La protection en cas de menace.",
+      "La suppression du rôle préventif.",
+      "La promotion de la santé."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle correspond notamment à la veille sanitaire.",
+      "Le périmètre est plus large que les actes individuels.",
+      "La gestion des crises fait partie des fonctions.",
+      "La prévention est au contraire une fonction essentielle.",
+      "Elle complète prévention, surveillance, protection et organisation."
+    ],
+    "explanation": "A — Vrai. Elle correspond notamment à la veille sanitaire. B — Faux. Le périmètre est plus large que les actes individuels. C — Vrai. La gestion des crises fait partie des fonctions. D — Faux. La prévention est au contraire une fonction essentielle. E — Vrai. Elle complète prévention, surveillance, protection et organisation.",
+    "flashcards": [
+      {
+        "id": "pps_term_03",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Déterminant de santé.",
+        "answers": [
+          "Facteur personnel, social, économique ou environnemental qui influence favorablement ou défavorablement l’état de santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q004",
+    "courseId": "prevention_promotion_sante",
+    "number": 4,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "medium",
+    "question": "Une canicule menace la santé d’une population. Quelle fonction décrit le mieux la réponse de protection face à cette menace ?",
+    "choices": [
+      "La seule rééducation individuelle.",
+      "Une action extérieure à la santé publique.",
+      "La protection des populations en cas de menace.",
+      "La seule prévention quaternaire.",
+      "La seule mesure d’une glycémie."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La situation concerne une menace collective.",
+      "Une canicule constitue une menace pour la santé de la population.",
+      "Les menaces ne sont pas uniquement infectieuses.",
+      "Le critère décrit ici une fonction de santé publique.",
+      "Cet acte ne résume pas la réponse à une canicule."
+    ],
+    "explanation": "A — Faux. La situation concerne une menace collective. B — Faux. Une canicule constitue une menace pour la santé de la population. C — Vrai. Les menaces ne sont pas uniquement infectieuses. D — Faux. Le critère décrit ici une fonction de santé publique. E — Faux. Cet acte ne résume pas la réponse à une canicule.",
+    "flashcards": [
+      {
+        "id": "pps_term_04",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Facteur de risque.",
+        "answers": [
+          "Caractéristique, exposition ou comportement associé au risque d’apparition d’un problème de santé ; c’est un point d’action possible en prévention."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q005",
+    "courseId": "prevention_promotion_sante",
+    "number": 5,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "medium",
+    "question": "Comment interpréter une faible espérance de vie à la naissance dans une population historique ?",
+    "choices": [
+      "Elle prouve que tous les adultes mouraient au même âge.",
+      "Elle est indépendante des décès d’enfants.",
+      "Elle ne signifie pas que personne n’atteignait un âge avancé.",
+      "Elle correspond à l’âge maximal atteint.",
+      "Une forte mortalité infantile peut abaisser cette moyenne."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une moyenne ne décrit pas chaque trajectoire individuelle.",
+      "Ces décès influencent fortement la valeur.",
+      "Une moyenne n’est pas une durée maximale de vie.",
+      "Il s’agit d’un indicateur moyen.",
+      "Les décès précoces peuvent fortement abaisser cette moyenne."
+    ],
+    "explanation": "A — Faux. Une moyenne ne décrit pas chaque trajectoire individuelle. B — Faux. Ces décès influencent fortement la valeur. C — Vrai. Une moyenne n’est pas une durée maximale de vie. D — Faux. Il s’agit d’un indicateur moyen. E — Vrai. Les décès précoces peuvent fortement abaisser cette moyenne.",
+    "flashcards": [
+      {
+        "id": "pps_term_05",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Veille sanitaire.",
+        "answers": [
+          "Surveillance de l’état de santé et de ses évolutions afin de repérer des signaux inhabituels ou des menaces."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_term_07",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Espérance de vie à la naissance.",
+        "answers": [
+          "Indicateur de durée moyenne de vie ; sa valeur historique est notamment influencée par la mortalité infantile."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_01",
+        "theme": "Santé publique et prévention",
+        "front": "Une moyenne historique de durée de vie très basse signifie-t-elle que personne ne vivait vieux ?",
+        "answers": [
+          "Non. Une forte mortalité infantile peut abaisser l’espérance de vie à la naissance."
+        ],
+        "explanation": "Une moyenne n’est pas un âge maximal.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q006",
+    "courseId": "prevention_promotion_sante",
+    "number": 6,
+    "theme": "Santé publique et déterminants",
+    "difficulty": "medium",
+    "question": "Pourquoi la prévention et la promotion de la santé occupent-elles une place croissante dans la réponse aux besoins de santé ?",
+    "choices": [
+      "Elles peuvent limiter la demande future de soins curatifs.",
+      "Seuls les médecins sont concernés.",
+      "Les maladies chroniques prennent une place importante.",
+      "Les soins curatifs deviennent toujours inutiles.",
+      "Les conditions de vie n’ont plus d’influence."
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Prévenir participe à la réponse aux besoins de santé.",
+      "Les infirmiers participent aussi à ces actions.",
+      "Le vieillissement contribue à modifier les besoins.",
+      "Prévention et soins restent complémentaires.",
+      "Leur rôle participe à la réponse aux besoins de santé."
+    ],
+    "explanation": "A — Vrai. Prévenir participe à la réponse aux besoins de santé. B — Faux. Les infirmiers participent aussi à ces actions. C — Vrai. Le vieillissement contribue à modifier les besoins. D — Faux. Prévention et soins restent complémentaires. E — Faux. Leur rôle participe à la réponse aux besoins de santé.",
+    "flashcards": [
+      {
+        "id": "pps_term_06",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Maladie chronique.",
+        "answers": [
+          "Maladie qui s’inscrit dans la durée et peut nécessiter un accompagnement et une prévention de ses complications."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q007",
+    "courseId": "prevention_promotion_sante",
+    "number": 7,
+    "theme": "Niveaux de prévention",
+    "difficulty": "easy",
+    "question": "La prévention porte sur quels événements ?",
+    "choices": [
+      "Uniquement les infections.",
+      "Les maladies.",
+      "Les accidents.",
+      "Les handicaps.",
+      "Uniquement les complications hospitalières."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Son champ est plus large.",
+      "Elle vise leur nombre ou leur gravité.",
+      "Les accidents font partie de la définition.",
+      "Elle vise aussi à éviter ou réduire les handicaps.",
+      "Elle intervient à différents moments et dans différents milieux."
+    ],
+    "explanation": "A — Faux. Son champ est plus large. B — Vrai. Elle vise leur nombre ou leur gravité. C — Vrai. Les accidents font partie de la définition. D — Vrai. Elle vise aussi à éviter ou réduire les handicaps. E — Faux. Elle intervient à différents moments et dans différents milieux.",
+    "flashcards": [
+      {
+        "id": "pps_term_08",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Prévention.",
+        "answers": [
+          "Ensemble de mesures visant à éviter ou réduire le nombre ou la gravité des maladies, accidents et handicaps."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q008",
+    "courseId": "prevention_promotion_sante",
+    "number": 8,
+    "theme": "Niveaux de prévention",
+    "difficulty": "easy",
+    "question": "Une intervention cherche à empêcher l’apparition d’une maladie chez une personne qui ne l’a pas. Quel est son niveau ?",
+    "choices": [
+      "Aucun niveau de prévention.",
+      "Tertiaire.",
+      "Secondaire.",
+      "Primaire.",
+      "Quaternaire."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est le principe de la prévention primaire.",
+      "La tertiaire limite les conséquences d’une maladie connue.",
+      "La secondaire recherche une maladie déjà possible.",
+      "Elle agit avant l’apparition de la maladie visée.",
+      "La quaternaire concerne le juste soin."
+    ],
+    "explanation": "A — Faux. C’est le principe de la prévention primaire. B — Faux. La tertiaire limite les conséquences d’une maladie connue. C — Faux. La secondaire recherche une maladie déjà possible. D — Vrai. Elle agit avant l’apparition de la maladie visée. E — Faux. La quaternaire concerne le juste soin.",
+    "flashcards": [
+      {
+        "id": "pps_term_09",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Histoire naturelle de la maladie.",
+        "answers": [
+          "Succession des étapes allant du début du processus biologique à la détection et à l’évolution de la maladie."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_term_20",
+        "theme": "Applications et politiques",
+        "front": "Définir : Surmédicalisation.",
+        "answers": [
+          "Recours excessif ou inapproprié à des interventions médicales, que la prévention quaternaire cherche à éviter."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_02",
+        "theme": "Santé publique et prévention",
+        "front": "Vacciner avant la maladie visée : quel niveau de prévention ?",
+        "answers": [
+          "Prévention primaire."
+        ],
+        "explanation": "On cherche à empêcher cette maladie.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_03",
+        "theme": "Santé publique et prévention",
+        "front": "Dépister une maladie silencieuse possible : quel niveau de prévention ?",
+        "answers": [
+          "Prévention secondaire."
+        ],
+        "explanation": "La maladie peut déjà être présente sans être reconnue.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_05",
+        "theme": "Santé publique et prévention",
+        "front": "Discuter un soin dont les risques semblent dépasser les bénéfices : quel niveau ?",
+        "answers": [
+          "Prévention quaternaire."
+        ],
+        "explanation": "Le raisonnement vise le juste soin.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q009",
+    "courseId": "prevention_promotion_sante",
+    "number": 9,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Quels exemples illustrent une prévention primaire de la maladie visée ?",
+    "choices": [
+      "Accompagner l’arrêt du tabac pour prévenir un cancer.",
+      "Réduire une exposition avant l’apparition de la maladie.",
+      "Rééduquer les séquelles d’un AVC connu.",
+      "Rechercher un cancer déjà possible par dépistage.",
+      "Vacciner pour prévenir l’infection concernée."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le tabac est ici un facteur de risque de la maladie visée.",
+      "On agit sur le risque en amont.",
+      "L’objectif décrit est tertiaire.",
+      "L’objectif décrit est secondaire.",
+      "L’action cherche à empêcher la maladie."
+    ],
+    "explanation": "A — Vrai. Le tabac est ici un facteur de risque de la maladie visée. B — Vrai. On agit sur le risque en amont. C — Faux. L’objectif décrit est tertiaire. D — Faux. L’objectif décrit est secondaire. E — Vrai. L’action cherche à empêcher la maladie.",
+    "flashcards": [
+      {
+        "id": "pps_term_10",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Asymptomatique.",
+        "answers": [
+          "Qui ne présente pas de symptômes perceptibles ; une maladie peut néanmoins être présente."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q010",
+    "courseId": "prevention_promotion_sante",
+    "number": 10,
+    "theme": "Niveaux de prévention",
+    "difficulty": "easy",
+    "question": "Un dépistage recherche une maladie qui peut être présente sans que la personne le sache. Quelle logique domine ?",
+    "choices": [
+      "Tertiaire parce que tout dépistage suit un diagnostic.",
+      "Aucune, car la personne se sent bien.",
+      "Primaire parce que la personne n’a pas de symptômes.",
+      "Quaternaire parce que le test est précoce.",
+      "Secondaire."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le diagnostic de la maladie recherchée n’est pas encore établi.",
+      "Une maladie peut être silencieuse.",
+      "L’absence de symptômes ne prouve pas l’absence de maladie.",
+      "La précocité ne définit pas la quaternaire.",
+      "On cherche à détecter tôt pour prendre en charge."
+    ],
+    "explanation": "A — Faux. Le diagnostic de la maladie recherchée n’est pas encore établi. B — Faux. Une maladie peut être silencieuse. C — Faux. L’absence de symptômes ne prouve pas l’absence de maladie. D — Faux. La précocité ne définit pas la quaternaire. E — Vrai. On cherche à détecter tôt pour prendre en charge.",
+    "flashcards": [
+      {
+        "id": "pps_term_11",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Prévention primaire.",
+        "answers": [
+          "Intervenir avant l’apparition de la maladie visée pour empêcher sa survenue, notamment en réduisant les facteurs de risque."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q011",
+    "courseId": "prevention_promotion_sante",
+    "number": 11,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Quels sont les objectifs de la prévention secondaire ?",
+    "choices": [
+      "Prouver qu’une maladie ne peut jamais être silencieuse.",
+      "Permettre une prise en charge plus précoce.",
+      "Limiter la gravité de la maladie repérée.",
+      "Détecter précocement une maladie possible.",
+      "Remplacer toute prévention primaire."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La logique repose justement sur cette possibilité.",
+      "Le but est d’améliorer les possibilités de traitement.",
+      "Une intervention précoce peut réduire ses conséquences.",
+      "La détection peut précéder les symptômes.",
+      "Les niveaux sont complémentaires."
+    ],
+    "explanation": "A — Faux. La logique repose justement sur cette possibilité. B — Vrai. Le but est d’améliorer les possibilités de traitement. C — Vrai. Une intervention précoce peut réduire ses conséquences. D — Vrai. La détection peut précéder les symptômes. E — Faux. Les niveaux sont complémentaires.",
+    "flashcards": [
+      {
+        "id": "pps_term_12",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Prévention secondaire.",
+        "answers": [
+          "Détecter précocement une maladie possible et faciliter sa prise en charge pour en limiter la gravité."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q012",
+    "courseId": "prevention_promotion_sante",
+    "number": 12,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Chez une personne dont le diabète est connu, une surveillance des pieds vise à éviter des lésions et leurs complications. Quel niveau décrit cet objectif ?",
+    "choices": [
+      "Universelle comme niveau temporel.",
+      "Primaire du diabète.",
+      "Tertiaire.",
+      "Secondaire du diabète uniquement parce qu’on recherche une lésion.",
+      "Quaternaire uniquement parce qu’une surveillance est réalisée."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Universelle appartient au classement de population.",
+      "Le diabète est déjà diagnostiqué.",
+      "L’action limite les conséquences d’une maladie déjà connue.",
+      "L’objectif décrit concerne ses complications.",
+      "Aucun soin inutile n’est mis en balance dans l’énoncé."
+    ],
+    "explanation": "A — Faux. Universelle appartient au classement de population. B — Faux. Le diabète est déjà diagnostiqué. C — Vrai. L’action limite les conséquences d’une maladie déjà connue. D — Faux. L’objectif décrit concerne ses complications. E — Faux. Aucun soin inutile n’est mis en balance dans l’énoncé.",
+    "flashcards": [
+      {
+        "id": "pps_term_13",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Dépistage.",
+        "answers": [
+          "Recherche d’une maladie potentiellement présente mais non encore reconnue, notamment en l’absence de symptômes."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_04",
+        "theme": "Santé publique et prévention",
+        "front": "Surveiller les pieds d’un patient diabétique connu pour éviter des lésions : quel niveau ?",
+        "answers": [
+          "Prévention tertiaire."
+        ],
+        "explanation": "L’objectif est de limiter une complication du diabète.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q013",
+    "courseId": "prevention_promotion_sante",
+    "number": 13,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Quelles actions relèvent d’une logique tertiaire dans les situations décrites ?",
+    "choices": [
+      "Rééducation pour limiter les séquelles d’un AVC.",
+      "Prévention des escarres chez une personne alitée.",
+      "Soutien pour limiter les conséquences d’une maladie connue.",
+      "Dépistage d’un cancer encore non reconnu.",
+      "Vaccination avant la maladie visée."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Elle cherche à limiter les incapacités après une maladie connue.",
+      "Elle vise à prévenir des complications d’une maladie déjà connue.",
+      "La logique est de réduire ses répercussions.",
+      "L’objectif présenté est secondaire.",
+      "L’objectif présenté est primaire."
+    ],
+    "explanation": "A — Vrai. Elle cherche à limiter les incapacités après une maladie connue. B — Vrai. Elle vise à prévenir des complications d’une maladie déjà connue. C — Vrai. La logique est de réduire ses répercussions. D — Faux. L’objectif présenté est secondaire. E — Faux. L’objectif présenté est primaire.",
+    "flashcards": [
+      {
+        "id": "pps_term_14",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Prévention tertiaire.",
+        "answers": [
+          "Limiter les complications, rechutes, séquelles et incapacités d’une maladie déjà connue."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q014",
+    "courseId": "prevention_promotion_sante",
+    "number": 14,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Pourquoi une neuropathie peut-elle compliquer la surveillance des pieds d’une personne diabétique ?",
+    "choices": [
+      "Elle transforme automatiquement l’action en prévention universelle.",
+      "Elle garantit l’absence de toute plaie.",
+      "Elle signifie que le diabète est forcément inconnu.",
+      "Elle rend toute surveillance inutile.",
+      "Une lésion peut être moins bien perçue."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le choix de population est une autre classification.",
+      "Une sensibilité diminuée ne protège pas des lésions.",
+      "Le raisonnement porte ici sur un diabète déjà connu.",
+      "La surveillance aide à repérer les lésions malgré la baisse de sensibilité.",
+      "La diminution de sensibilité peut laisser passer une blessure."
+    ],
+    "explanation": "A — Faux. Le choix de population est une autre classification. B — Faux. Une sensibilité diminuée ne protège pas des lésions. C — Faux. Le raisonnement porte ici sur un diabète déjà connu. D — Faux. La surveillance aide à repérer les lésions malgré la baisse de sensibilité. E — Vrai. La diminution de sensibilité peut laisser passer une blessure.",
+    "flashcards": [
+      {
+        "id": "pps_term_15",
+        "theme": "Applications et politiques",
+        "front": "Définir : Séquelles.",
+        "answers": [
+          "Conséquences qui persistent après une maladie ou un événement de santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q015",
+    "courseId": "prevention_promotion_sante",
+    "number": 15,
+    "theme": "Niveaux de prévention",
+    "difficulty": "easy",
+    "question": "Quel objectif définit le mieux la prévention quaternaire ?",
+    "choices": [
+      "Éviter des soins inutiles ou disproportionnés.",
+      "Augmenter systématiquement le nombre d’examens.",
+      "Empêcher uniquement une première infection.",
+      "Refuser tout soin à une personne âgée.",
+      "Remplacer toute réflexion collective."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elle recherche le juste soin.",
+      "L’accumulation d’actes n’est pas son objectif.",
+      "Cet objectif correspond à la primaire.",
+      "Le raisonnement est individualisé, pas fondé sur l’âge seul.",
+      "Une réflexion pluridisciplinaire peut aider à rechercher le juste soin."
+    ],
+    "explanation": "A — Vrai. Elle recherche le juste soin. B — Faux. L’accumulation d’actes n’est pas son objectif. C — Faux. Cet objectif correspond à la primaire. D — Faux. Le raisonnement est individualisé, pas fondé sur l’âge seul. E — Faux. Une réflexion pluridisciplinaire peut aider à rechercher le juste soin.",
+    "flashcards": [
+      {
+        "id": "pps_term_16",
+        "theme": "Applications et politiques",
+        "front": "Définir : Rechute.",
+        "answers": [
+          "Réapparition ou reprise d’une maladie après une amélioration."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q016",
+    "courseId": "prevention_promotion_sante",
+    "number": 16,
+    "theme": "Niveaux de prévention",
+    "difficulty": "medium",
+    "question": "Dans l’exemple d’une rhinite virale, pourquoi l’absence de prescription d’antibiotique illustre-t-elle le juste soin ?",
+    "choices": [
+      "Elle correspond à un abandon de toute prise en charge.",
+      "Elle prouve que les antibiotiques ne sont jamais utiles.",
+      "Elle garantit l’absence de toute gêne.",
+      "Le cours n’attend pas de bénéfice de l’antibiotique dans cet exemple.",
+      "Elle évite une exposition inutile aux effets indésirables."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Éviter un acte inutile n’est pas abandonner le soin.",
+      "L’énoncé concerne une situation virale particulière.",
+      "L’exemple ne promet pas une disparition immédiate des symptômes.",
+      "La prescription serait inutile pour l’infection virale décrite.",
+      "Le risque compte dans la balance bénéfice-risque."
+    ],
+    "explanation": "A — Faux. Éviter un acte inutile n’est pas abandonner le soin. B — Faux. L’énoncé concerne une situation virale particulière. C — Faux. L’exemple ne promet pas une disparition immédiate des symptômes. D — Vrai. La prescription serait inutile pour l’infection virale décrite. E — Vrai. Le risque compte dans la balance bénéfice-risque.",
+    "flashcards": [
+      {
+        "id": "pps_term_17",
+        "theme": "Applications et politiques",
+        "front": "Définir : Complication.",
+        "answers": [
+          "Problème supplémentaire pouvant survenir au cours ou à la suite d’une maladie."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q017",
+    "courseId": "prevention_promotion_sante",
+    "number": 17,
+    "theme": "Niveaux de prévention",
+    "difficulty": "hard",
+    "question": "Une équipe discute si une intervention lourde apporte un bénéfice suffisant à une personne très fragile. Quelles propositions sont justes ?",
+    "choices": [
+      "Les bénéfices et risques attendus sont mis en regard.",
+      "L’âge seul impose automatiquement la décision.",
+      "La quaternaire oblige à cesser tout soin.",
+      "La réflexion relève du juste soin.",
+      "Une discussion pluridisciplinaire est exclue."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "C’est le cœur du raisonnement présenté.",
+      "L’exemple ne constitue pas une règle automatique.",
+      "Elle recherche les soins utiles et proportionnés.",
+      "La pertinence de l’intervention est évaluée au cas par cas.",
+      "Elle est au contraire présentée comme un moyen de réflexion."
+    ],
+    "explanation": "A — Vrai. C’est le cœur du raisonnement présenté. B — Faux. L’exemple ne constitue pas une règle automatique. C — Faux. Elle recherche les soins utiles et proportionnés. D — Vrai. La pertinence de l’intervention est évaluée au cas par cas. E — Faux. Elle est au contraire présentée comme un moyen de réflexion.",
+    "flashcards": [
+      {
+        "id": "pps_term_18",
+        "theme": "Applications et politiques",
+        "front": "Définir : Prévention quaternaire.",
+        "answers": [
+          "Recherche du juste soin pour éviter la surmédicalisation et des interventions inutiles ou défavorables."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q018",
+    "courseId": "prevention_promotion_sante",
+    "number": 18,
+    "theme": "Niveaux de prévention",
+    "difficulty": "hard",
+    "question": "Quelles associations sont exactes ?",
+    "choices": [
+      "Maladie connue et rechutes à limiter : tertiaire.",
+      "Soin inutile à éviter : secondaire uniquement.",
+      "Complications d’une maladie connue à limiter : primaire de cette même maladie.",
+      "Maladie visée absente et risque à réduire : primaire.",
+      "Maladie possible non reconnue à repérer tôt : secondaire."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "On limite ses conséquences et son retour.",
+      "La logique décrite est quaternaire.",
+      "La maladie étant connue, la logique présentée est tertiaire.",
+      "On agit avant son apparition.",
+      "On vise sa détection précoce."
+    ],
+    "explanation": "A — Vrai. On limite ses conséquences et son retour. B — Faux. La logique décrite est quaternaire. C — Faux. La maladie étant connue, la logique présentée est tertiaire. D — Vrai. On agit avant son apparition. E — Vrai. On vise sa détection précoce.",
+    "flashcards": [
+      {
+        "id": "pps_term_19",
+        "theme": "Santé publique et prévention",
+        "front": "Définir : Balance bénéfice-risque.",
+        "answers": [
+          "Mise en regard des bénéfices attendus et des risques d’une action pour décider de sa pertinence dans une situation."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q019",
+    "courseId": "prevention_promotion_sante",
+    "number": 19,
+    "theme": "Échelle et population",
+    "difficulty": "easy",
+    "question": "Une protection solaire est adaptée au phototype et à la situation d’une personne. À quelle échelle cette mesure est-elle décrite ?",
+    "choices": [
+      "Quaternaire comme échelle.",
+      "Universelle comme seule échelle.",
+      "Intersectorielle par définition.",
+      "Collective uniquement parce que plusieurs personnes peuvent le faire.",
+      "Individuelle."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Quaternaire décrit un objectif de juste soin.",
+      "Universelle classe la population, pas l’échelle.",
+      "Aucune collaboration de secteurs n’est décrite.",
+      "La possibilité de répétition ne change pas l’échelle décrite.",
+      "La mesure est adaptée à cette personne."
+    ],
+    "explanation": "A — Faux. Quaternaire décrit un objectif de juste soin. B — Faux. Universelle classe la population, pas l’échelle. C — Faux. Aucune collaboration de secteurs n’est décrite. D — Faux. La possibilité de répétition ne change pas l’échelle décrite. E — Vrai. La mesure est adaptée à cette personne.",
+    "flashcards": [
+      {
+        "id": "pps_term_21",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Pluridisciplinaire.",
+        "answers": [
+          "Qui mobilise plusieurs disciplines ou professionnels dans une réflexion ou une prise en charge."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q020",
+    "courseId": "prevention_promotion_sante",
+    "number": 20,
+    "theme": "Échelle et population",
+    "difficulty": "medium",
+    "question": "Quelles mesures sont collectives dans les exemples suivants ?",
+    "choices": [
+      "Un conseil personnalisé à un seul patient.",
+      "Un bilan adapté au seul risque personnel d’un patient.",
+      "Une campagne de vaccination organisée pour une population.",
+      "Un programme de dépistage organisé.",
+      "Une protection choisie par une seule personne pour elle-même."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’action décrite est individuelle.",
+      "L’échelle décrite est individuelle.",
+      "Le dispositif est organisé à l’échelle d’un groupe.",
+      "Le programme concerne une population définie.",
+      "Il s’agit d’une mesure individuelle."
+    ],
+    "explanation": "A — Faux. L’action décrite est individuelle. B — Faux. L’échelle décrite est individuelle. C — Vrai. Le dispositif est organisé à l’échelle d’un groupe. D — Vrai. Le programme concerne une population définie. E — Faux. Il s’agit d’une mesure individuelle.",
+    "flashcards": [
+      {
+        "id": "pps_term_22",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Prévention individuelle.",
+        "answers": [
+          "Mesure mise en œuvre pour une personne, adaptée à sa situation et à ses risques."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q021",
+    "courseId": "prevention_promotion_sante",
+    "number": 21,
+    "theme": "Échelle et population",
+    "difficulty": "easy",
+    "question": "Dans le classement de Gordon, à qui s’adresse la prévention universelle ?",
+    "choices": [
+      "À l’ensemble d’une population sans distinction du risque individuel.",
+      "À un seul individu choisi selon son risque.",
+      "Seulement aux personnes déjà diagnostiquées.",
+      "Uniquement aux nourrissons.",
+      "Uniquement aux professionnels de santé."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "C’est le critère de la catégorie universelle.",
+      "C’est une logique de ciblage selon les risques.",
+      "L’universel n’est pas défini par un diagnostic.",
+      "Cet exemple relève d’un groupe particulier.",
+      "Ce serait une population restreinte, pas la définition générale."
+    ],
+    "explanation": "A — Vrai. C’est le critère de la catégorie universelle. B — Faux. C’est une logique de ciblage selon les risques. C — Faux. L’universel n’est pas défini par un diagnostic. D — Faux. Cet exemple relève d’un groupe particulier. E — Faux. Ce serait une population restreinte, pas la définition générale.",
+    "flashcards": [
+      {
+        "id": "pps_term_23",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Prévention collective.",
+        "answers": [
+          "Mesure organisée à l’échelle d’une population, par exemple une campagne de vaccination ou un dépistage organisé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q022",
+    "courseId": "prevention_promotion_sante",
+    "number": 22,
+    "theme": "Échelle et population",
+    "difficulty": "medium",
+    "question": "Quelles propositions définissent la prévention orientée ou sélective ?",
+    "choices": [
+      "Elle s’adresse toujours à toute la population sans distinction.",
+      "Elle interdit tout autre classement de la même action.",
+      "Elle est synonyme de tout conseil individuel.",
+      "Elle s’adresse à un groupe plus exposé que la moyenne.",
+      "Elle peut prendre la forme d’une campagne collective."
+    ],
+    "answers": [
+      3,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Ce serait la définition de l’universel.",
+      "Les classifications se complètent.",
+      "Le conseil individuel ne suffit pas à définir une catégorie de groupe.",
+      "Le critère est un risque accru dans une population définie.",
+      "Collectif et orienté sont compatibles."
+    ],
+    "explanation": "A — Faux. Ce serait la définition de l’universel. B — Faux. Les classifications se complètent. C — Faux. Le conseil individuel ne suffit pas à définir une catégorie de groupe. D — Vrai. Le critère est un risque accru dans une population définie. E — Vrai. Collectif et orienté sont compatibles.",
+    "flashcards": [
+      {
+        "id": "pps_term_24",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Prévention universelle.",
+        "answers": [
+          "Dans Gordon, action destinée à l’ensemble d’une population sans distinction du niveau de risque individuel."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q023",
+    "courseId": "prevention_promotion_sante",
+    "number": 23,
+    "theme": "Échelle et population",
+    "difficulty": "easy",
+    "question": "La surveillance est individualisée pour un patient présentant des facteurs de risque identifiés. Quel terme de Gordon correspond à cette description ?",
+    "choices": [
+      "Primaire comme catégorie de Gordon.",
+      "Salutogénique comme catégorie de Gordon.",
+      "Collective comme catégorie de Gordon.",
+      "Ciblée ou indiquée.",
+      "Universelle."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Primaire appartient au classement temporel.",
+      "Il s’agit d’une approche de promotion de la santé.",
+      "Collective décrit l’échelle.",
+      "Le choix est individualisé selon les risques personnels.",
+      "L’action ne concerne pas toute la population sans distinction."
+    ],
+    "explanation": "A — Faux. Primaire appartient au classement temporel. B — Faux. Il s’agit d’une approche de promotion de la santé. C — Faux. Collective décrit l’échelle. D — Vrai. Le choix est individualisé selon les risques personnels. E — Faux. L’action ne concerne pas toute la population sans distinction.",
+    "flashcards": [
+      {
+        "id": "pps_term_25",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Prévention orientée / sélective.",
+        "answers": [
+          "Dans Gordon, action destinée à un groupe dont le risque est statistiquement plus élevé que la moyenne."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q024",
+    "courseId": "prevention_promotion_sante",
+    "number": 24,
+    "theme": "Échelle et population",
+    "difficulty": "hard",
+    "question": "Une campagne organise une vaccination des nourrissons pour prévenir une infection. Quelles qualifications sont compatibles ?",
+    "choices": [
+      "Orientée.",
+      "Primaire.",
+      "Secondaire de l’infection visée.",
+      "Ciblée uniquement parce que la campagne a un public.",
+      "Collective."
+    ],
+    "answers": [
+      0,
+      1,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le groupe d’âge est spécifiquement concerné.",
+      "On cherche à empêcher l’infection visée.",
+      "L’énoncé ne recherche pas une infection déjà présente.",
+      "Le mot cible au sens courant ne suffit pas pour la catégorie indiquée.",
+      "La campagne est organisée pour une population."
+    ],
+    "explanation": "A — Vrai. Le groupe d’âge est spécifiquement concerné. B — Vrai. On cherche à empêcher l’infection visée. C — Faux. L’énoncé ne recherche pas une infection déjà présente. D — Faux. Le mot cible au sens courant ne suffit pas pour la catégorie indiquée. E — Vrai. La campagne est organisée pour une population.",
+    "flashcards": [
+      {
+        "id": "pps_term_26",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Prévention ciblée / indiquée.",
+        "answers": [
+          "Action individualisée pour des personnes identifiées selon leurs facteurs de risque."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q025",
+    "courseId": "prevention_promotion_sante",
+    "number": 25,
+    "theme": "Échelle et population",
+    "difficulty": "hard",
+    "question": "Un dépistage organisé recherche un cancer possible dans un groupe défini par le programme. Quelles qualifications sont justifiées ?",
+    "choices": [
+      "Primaire du cancer recherché.",
+      "Orienté.",
+      "Individuel uniquement parce que chaque test est réalisé sur une personne.",
+      "Collectif.",
+      "Secondaire."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le dépistage vise une maladie potentiellement présente.",
+      "Le programme définit un groupe particulier.",
+      "L’énoncé demande l’échelle du programme organisé.",
+      "L’organisation porte sur une population.",
+      "Le dispositif recherche une maladie déjà possible."
+    ],
+    "explanation": "A — Faux. Le dépistage vise une maladie potentiellement présente. B — Vrai. Le programme définit un groupe particulier. C — Faux. L’énoncé demande l’échelle du programme organisé. D — Vrai. L’organisation porte sur une population. E — Vrai. Le dispositif recherche une maladie déjà possible.",
+    "flashcards": [
+      {
+        "id": "pps_app_06",
+        "theme": "Population, promotion et éducation",
+        "front": "Une campagne collective peut-elle être orientée ?",
+        "answers": [
+          "Oui, si elle s’adresse à un groupe présentant un risque accru."
+        ],
+        "explanation": "Collectif décrit l’échelle ; orienté décrit la population.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q026",
+    "courseId": "prevention_promotion_sante",
+    "number": 26,
+    "theme": "Échelle et population",
+    "difficulty": "medium",
+    "question": "Une affiche est visible par tous mais présente une action réservée à un groupe précis. Quelle précaution de raisonnement faut-il prendre ?",
+    "choices": [
+      "Conclure toujours à une action indiquée.",
+      "Conclure toujours à une action universelle.",
+      "Ignorer l’objectif de l’intervention.",
+      "Distinguer le public qui voit le message et celui qui bénéficie de l’action.",
+      "Abandonner les trois classifications."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Une catégorie individualisée n’est pas prouvée.",
+      "La visibilité ne définit pas à elle seule les bénéficiaires.",
+      "L’objectif est nécessaire pour classer.",
+      "La diffusion et la population d’intervention peuvent différer.",
+      "Il faut les appliquer en précisant le critère."
+    ],
+    "explanation": "A — Faux. Une catégorie individualisée n’est pas prouvée. B — Faux. La visibilité ne définit pas à elle seule les bénéficiaires. C — Faux. L’objectif est nécessaire pour classer. D — Vrai. La diffusion et la population d’intervention peuvent différer. E — Faux. Il faut les appliquer en précisant le critère.",
+    "flashcards": [
+      {
+        "id": "pps_app_07",
+        "theme": "Population, promotion et éducation",
+        "front": "Vaccination organisée des nourrissons : trois classements compatibles ?",
+        "answers": [
+          "Primaire, collective et orientée."
+        ],
+        "explanation": "On prévient une maladie par une campagne destinée à un groupe d’âge.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_08",
+        "theme": "Population, promotion et éducation",
+        "front": "Une affiche visible par tous rend-elle l’action proposée automatiquement universelle ?",
+        "answers": [
+          "Non. Il faut identifier les bénéficiaires réels."
+        ],
+        "explanation": "Le public du message et celui de l’action peuvent différer.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q027",
+    "courseId": "prevention_promotion_sante",
+    "number": 27,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "easy",
+    "question": "Quel est l’objectif central de la promotion de la santé ?",
+    "choices": [
+      "Imposer uniquement un comportement par une affiche.",
+      "Développer leurs moyens d’agir.",
+      "Donner aux populations plus de contrôle sur leur santé.",
+      "Remplacer toute participation de la population.",
+      "Limiter la santé au traitement d’une maladie."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’action dépasse une injonction ou une information isolée.",
+      "Le renforcement des capacités fait partie de la démarche.",
+      "La charte d’Ottawa relie contrôle et amélioration de la santé.",
+      "La participation est essentielle.",
+      "La promotion agit aussi sur les ressources et les conditions de vie."
+    ],
+    "explanation": "A — Faux. L’action dépasse une injonction ou une information isolée. B — Vrai. Le renforcement des capacités fait partie de la démarche. C — Vrai. La charte d’Ottawa relie contrôle et amélioration de la santé. D — Faux. La participation est essentielle. E — Faux. La promotion agit aussi sur les ressources et les conditions de vie.",
+    "flashcards": [
+      {
+        "id": "pps_term_27",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Promotion de la santé.",
+        "answers": [
+          "Processus permettant aux populations de mieux contrôler et améliorer leur santé en renforçant leurs capacités et leurs conditions de vie."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_12",
+        "theme": "Population, promotion et éducation",
+        "front": "Des habitants décident ensemble d’un projet local de santé : quel axe d’Ottawa ?",
+        "answers": [
+          "Le renforcement de l’action communautaire."
+        ],
+        "explanation": "La communauté participe activement au projet.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q028",
+    "courseId": "prevention_promotion_sante",
+    "number": 28,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "medium",
+    "question": "Quelles dimensions la promotion de la santé associe-t-elle ?",
+    "choices": [
+      "La seule responsabilité personnelle.",
+      "La seule prescription médicamenteuse.",
+      "L’amélioration des conditions sociales et environnementales.",
+      "L’exclusion des personnes malades.",
+      "Le renforcement des capacités individuelles et collectives."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les déterminants collectifs participent aussi à la santé.",
+      "Ce n’est pas la définition de cette démarche.",
+      "Le contexte de vie participe aux moyens de santé.",
+      "Malades et non-malades peuvent participer.",
+      "Il permet aux personnes de mieux agir."
+    ],
+    "explanation": "A — Faux. Les déterminants collectifs participent aussi à la santé. B — Faux. Ce n’est pas la définition de cette démarche. C — Vrai. Le contexte de vie participe aux moyens de santé. D — Faux. Malades et non-malades peuvent participer. E — Vrai. Il permet aux personnes de mieux agir.",
+    "flashcards": [
+      {
+        "id": "pps_term_28",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Charte d’Ottawa.",
+        "answers": [
+          "Référence de 1986 organisant la promotion de la santé autour de cinq axes complémentaires."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_10",
+        "theme": "Population, promotion et éducation",
+        "front": "Informer suffit-il toujours à réaliser une éducation pour la santé ?",
+        "answers": [
+          "Non. Il faut aussi développer des compétences et des moyens concrets d’agir."
+        ],
+        "explanation": "Connaître un message ne garantit pas sa mise en pratique.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q029",
+    "courseId": "prevention_promotion_sante",
+    "number": 29,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "medium",
+    "question": "Quels éléments sont des axes de la charte d’Ottawa ?",
+    "choices": [
+      "Renforcer l’action communautaire.",
+      "Limiter les services aux seuls soins curatifs.",
+      "Écarter les aptitudes individuelles.",
+      "Élaborer des politiques pour la santé.",
+      "Créer des environnements favorables."
+    ],
+    "answers": [
+      0,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Les citoyens participent aux projets de santé.",
+      "La charte propose leur réorientation vers davantage de prévention.",
+      "Leur développement est un autre axe.",
+      "Les décisions publiques doivent prendre la santé en compte.",
+      "Le milieu doit faciliter les comportements favorables."
+    ],
+    "explanation": "A — Vrai. Les citoyens participent aux projets de santé. B — Faux. La charte propose leur réorientation vers davantage de prévention. C — Faux. Leur développement est un autre axe. D — Vrai. Les décisions publiques doivent prendre la santé en compte. E — Vrai. Le milieu doit faciliter les comportements favorables.",
+    "flashcards": [
+      {
+        "id": "pps_term_29",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Action communautaire.",
+        "answers": [
+          "Participation active d’une communauté aux décisions et aux projets qui concernent sa santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q030",
+    "courseId": "prevention_promotion_sante",
+    "number": 30,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "medium",
+    "question": "Une équipe hospitalière développe prévention et promotion en complément des soins curatifs. Quel axe d’Ottawa cela illustre-t-il le plus directement ?",
+    "choices": [
+      "Classer toute action en prévention tertiaire.",
+      "Supprimer tout soin.",
+      "Renoncer à l’organisation du système.",
+      "Remplacer les professionnels par des affiches.",
+      "Réorienter les services de santé."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’axe ne fixe pas un seul niveau temporel.",
+      "La réorientation complète les soins curatifs.",
+      "Les services restent organisés pour les besoins.",
+      "L’énoncé décrit une évolution de l’activité de l’équipe.",
+      "Les services donnent plus de place à ces dimensions."
+    ],
+    "explanation": "A — Faux. L’axe ne fixe pas un seul niveau temporel. B — Faux. La réorientation complète les soins curatifs. C — Faux. Les services restent organisés pour les besoins. D — Faux. L’énoncé décrit une évolution de l’activité de l’équipe. E — Vrai. Les services donnent plus de place à ces dimensions.",
+    "flashcards": [
+      {
+        "id": "pps_term_30",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Environnement favorable.",
+        "answers": [
+          "Milieu dont les caractéristiques facilitent la santé et les comportements favorables."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q031",
+    "courseId": "prevention_promotion_sante",
+    "number": 31,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "medium",
+    "question": "Des habitants construisent ensemble un projet local concernant leur santé. Quelles propositions sont justes ?",
+    "choices": [
+      "L’exemple illustre l’action communautaire.",
+      "L’action ne peut jamais être locale.",
+      "Le simple fait de recevoir une publicité aurait exactement le même sens.",
+      "Il existe une participation active de la communauté.",
+      "Les habitants doivent être malades pour participer."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les habitants participent activement à un projet concernant leur santé.",
+      "La situation décrit précisément un projet local.",
+      "Recevoir un message ne prouve pas une participation active.",
+      "Les habitants contribuent aux choix et au projet.",
+      "La participation n’est pas limitée aux personnes malades."
+    ],
+    "explanation": "A — Vrai. Les habitants participent activement à un projet concernant leur santé. B — Faux. La situation décrit précisément un projet local. C — Faux. Recevoir un message ne prouve pas une participation active. D — Vrai. Les habitants contribuent aux choix et au projet. E — Faux. La participation n’est pas limitée aux personnes malades.",
+    "flashcards": [
+      {
+        "id": "pps_term_31",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Aptitudes individuelles.",
+        "answers": [
+          "Capacités et compétences permettant à une personne de faire des choix et d’agir sur sa santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q032",
+    "courseId": "prevention_promotion_sante",
+    "number": 32,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "easy",
+    "question": "Que vise l’éducation pour la santé ?",
+    "choices": [
+      "Favoriser des décisions éclairées.",
+      "Garantir qu’une information entraîne immédiatement un changement.",
+      "Développer les connaissances.",
+      "Développer des compétences utiles pour agir.",
+      "Remplacer l’échange par une injonction identique pour tous."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "L’autonomie est un objectif.",
+      "D’autres freins peuvent empêcher l’action.",
+      "Informer constitue une première dimension.",
+      "La démarche dépasse le simple savoir.",
+      "L’accompagnement tient compte des personnes et de leur contexte."
+    ],
+    "explanation": "A — Vrai. L’autonomie est un objectif. B — Faux. D’autres freins peuvent empêcher l’action. C — Vrai. Informer constitue une première dimension. D — Vrai. La démarche dépasse le simple savoir. E — Faux. L’accompagnement tient compte des personnes et de leur contexte.",
+    "flashcards": [
+      {
+        "id": "pps_term_32",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Éducation pour la santé.",
+        "answers": [
+          "Possibilités d’apprendre et communication visant des connaissances et compétences utiles à des décisions favorables à la santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q033",
+    "courseId": "prevention_promotion_sante",
+    "number": 33,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "medium",
+    "question": "Quelle situation illustre le mieux le passage de l’information à une démarche éducative ?",
+    "choices": [
+      "Répéter un slogan sans écouter les contraintes.",
+      "Discuter avec une personne de moyens réalistes d’intégrer la marche à son trajet.",
+      "Écarter le quotidien de la personne.",
+      "Décider que les connaissances ne servent à rien.",
+      "Conclure qu’un message compris suffit toujours."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’information seule ne développe pas les moyens d’agir.",
+      "L’échange transforme le message en possibilité concrète.",
+      "C’est au contraire un point d’appui de la démarche.",
+      "Elles restent une composante de l’éducation.",
+      "Comprendre et pouvoir agir sont différents."
+    ],
+    "explanation": "A — Faux. L’information seule ne développe pas les moyens d’agir. B — Vrai. L’échange transforme le message en possibilité concrète. C — Faux. C’est au contraire un point d’appui de la démarche. D — Faux. Elles restent une composante de l’éducation. E — Faux. Comprendre et pouvoir agir sont différents.",
+    "flashcards": [
+      {
+        "id": "pps_term_33",
+        "theme": "Population, promotion et éducation",
+        "front": "Définir : Littératie en santé.",
+        "answers": [
+          "Capacités à comprendre et utiliser l’information sur la santé pour agir et décider."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q034",
+    "courseId": "prevention_promotion_sante",
+    "number": 34,
+    "theme": "Promotion, Ottawa et éducation",
+    "difficulty": "hard",
+    "question": "Quelles relations entre prévention et promotion de la santé sont exactes ?",
+    "choices": [
+      "Elles peuvent être présentes dans une même intervention.",
+      "La promotion peut associer capacités et conditions de vie.",
+      "La promotion exclut toute action collective.",
+      "Elles sont nécessairement opposées.",
+      "Toute promotion est exclusivement un dépistage."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les démarches sont complémentaires.",
+      "Elle agit sur les moyens de maîtriser les déterminants.",
+      "Les capacités collectives et la participation en font partie.",
+      "Prévention et promotion peuvent contribuer à une même action.",
+      "Le dépistage ne résume pas cette démarche."
+    ],
+    "explanation": "A — Vrai. Les démarches sont complémentaires. B — Vrai. Elle agit sur les moyens de maîtriser les déterminants. C — Faux. Les capacités collectives et la participation en font partie. D — Faux. Prévention et promotion peuvent contribuer à une même action. E — Faux. Le dépistage ne résume pas cette démarche.",
+    "flashcards": [
+      {
+        "id": "pps_app_09",
+        "theme": "Population, promotion et éducation",
+        "front": "Quels sont les cinq axes de la charte d’Ottawa ?",
+        "answers": [
+          "Politiques pour la santé, environnements favorables, action communautaire, aptitudes individuelles et réorientation des services."
+        ],
+        "explanation": "Ces axes associent capacités et conditions de vie.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_11",
+        "theme": "Population, promotion et éducation",
+        "front": "Prévention et promotion peuvent-elles coexister dans une action ?",
+        "answers": [
+          "Oui, leurs démarches sont complémentaires."
+        ],
+        "explanation": "Une intervention peut réduire un risque et renforcer les capacités.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q035",
+    "courseId": "prevention_promotion_sante",
+    "number": 35,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "easy",
+    "question": "Qu’est-ce qu’un comportement de santé ?",
+    "choices": [
+      "Uniquement une mauvaise habitude.",
+      "Un synonyme exclusif de maladie.",
+      "Une donnée génétique uniquement.",
+      "Uniquement une action médicalement prescrite.",
+      "Une conduite qui influence la santé favorablement ou défavorablement."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le comportement peut être favorable.",
+      "Une conduite et un diagnostic ne sont pas la même notion.",
+      "Il s’agit d’actions, habitudes ou conduites.",
+      "Les habitudes du quotidien sont aussi concernées.",
+      "La notion ne désigne pas seulement les conduites favorables."
+    ],
+    "explanation": "A — Faux. Le comportement peut être favorable. B — Faux. Une conduite et un diagnostic ne sont pas la même notion. C — Faux. Il s’agit d’actions, habitudes ou conduites. D — Faux. Les habitudes du quotidien sont aussi concernées. E — Vrai. La notion ne désigne pas seulement les conduites favorables.",
+    "flashcards": [
+      {
+        "id": "pps_term_34",
+        "theme": "Comportements et approches",
+        "front": "Définir : Comportement de santé.",
+        "answers": [
+          "Action, habitude ou conduite qui influence la santé, de façon favorable ou défavorable."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q036",
+    "courseId": "prevention_promotion_sante",
+    "number": 36,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "medium",
+    "question": "Quels freins peuvent empêcher un changement malgré la connaissance d’un message de santé ?",
+    "choices": [
+      "Aucun : savoir suffit toujours.",
+      "Seulement une absence de volonté, dans tous les cas.",
+      "Des ressources économiques limitées.",
+      "Un manque de soutien social.",
+      "Un environnement peu accessible."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le changement dépend de plusieurs déterminants, au-delà de la connaissance.",
+      "Cette explication efface les contraintes du contexte.",
+      "Le coût peut limiter les possibilités.",
+      "L’entourage peut freiner ou faciliter l’action.",
+      "La proximité d’équipements ou de services compte."
+    ],
+    "explanation": "A — Faux. Le changement dépend de plusieurs déterminants, au-delà de la connaissance. B — Faux. Cette explication efface les contraintes du contexte. C — Vrai. Le coût peut limiter les possibilités. D — Vrai. L’entourage peut freiner ou faciliter l’action. E — Vrai. La proximité d’équipements ou de services compte.",
+    "flashcards": [
+      {
+        "id": "pps_term_35",
+        "theme": "Comportements et approches",
+        "front": "Définir : Frein / levier.",
+        "answers": [
+          "Élément qui rend un changement de comportement plus difficile / plus facile."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q037",
+    "courseId": "prevention_promotion_sante",
+    "number": 37,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "medium",
+    "question": "Une personne souhaite un dépistage mais ne parvient pas à accéder à un professionnel. Quel type de frein est directement illustré ?",
+    "choices": [
+      "Organisationnel, lié à l’accès aux soins.",
+      "Une absence certaine de connaissances.",
+      "Une impossibilité de toute prévention.",
+      "Une preuve d’absence de motivation.",
+      "Un facteur exclusivement génétique."
+    ],
+    "answers": [
+      0
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "La possibilité d’obtenir le service est en cause.",
+      "L’énoncé n’établit pas ce manque.",
+      "Il faut analyser et traiter le frein identifié.",
+      "Le souhait de dépistage est explicite.",
+      "Il s’agit de l’organisation et de l’accès."
+    ],
+    "explanation": "A — Vrai. La possibilité d’obtenir le service est en cause. B — Faux. L’énoncé n’établit pas ce manque. C — Faux. Il faut analyser et traiter le frein identifié. D — Faux. Le souhait de dépistage est explicite. E — Faux. Il s’agit de l’organisation et de l’accès.",
+    "flashcards": [
+      {
+        "id": "pps_term_36",
+        "theme": "Comportements et approches",
+        "front": "Définir : Nudge.",
+        "answers": [
+          "Incitation modeste par l’organisation de l’environnement, sans sanction ni suppression de la liberté de choix."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q038",
+    "courseId": "prevention_promotion_sante",
+    "number": 38,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "easy",
+    "question": "Quelles caractéristiques définissent un nudge ?",
+    "choices": [
+      "Le maintien de la liberté de choix.",
+      "Une incitation par l’environnement.",
+      "Une sanction obligatoire.",
+      "Une interdiction générale.",
+      "Un traitement médicamenteux systématique."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Le nudge ne supprime pas les alternatives.",
+      "L’organisation du choix influence la conduite.",
+      "La définition exclut la sanction.",
+      "L’incitation se distingue de l’interdiction.",
+      "Ce n’est pas la définition de l’outil."
+    ],
+    "explanation": "A — Vrai. Le nudge ne supprime pas les alternatives. B — Vrai. L’organisation du choix influence la conduite. C — Faux. La définition exclut la sanction. D — Faux. L’incitation se distingue de l’interdiction. E — Faux. Ce n’est pas la définition de l’outil.",
+    "flashcards": [
+      {
+        "id": "pps_term_37",
+        "theme": "Comportements et approches",
+        "front": "Définir : Représentations sociales.",
+        "answers": [
+          "Croyances, connaissances et opinions produites et partagées dans un groupe à propos d’un objet social."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q039",
+    "courseId": "prevention_promotion_sante",
+    "number": 39,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "medium",
+    "question": "Un magasin place les fruits au premier plan et les desserts sucrés derrière, sans supprimer les options. Quel raisonnement est juste ?",
+    "choices": [
+      "L’exemple prouve une efficacité chiffrée universelle.",
+      "La situation peut illustrer un nudge.",
+      "La visibilité peut influencer le choix.",
+      "L’environnement ne joue aucun rôle.",
+      "Il s’agit forcément d’une interdiction des desserts."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "La situation ne permet pas d’affirmer un taux universel d’efficacité.",
+      "L’environnement oriente sans supprimer le choix.",
+      "C’est le mécanisme illustré par l’expérience.",
+      "C’est précisément l’élément modifié.",
+      "Les desserts restent disponibles."
+    ],
+    "explanation": "A — Faux. La situation ne permet pas d’affirmer un taux universel d’efficacité. B — Vrai. L’environnement oriente sans supprimer le choix. C — Vrai. C’est le mécanisme illustré par l’expérience. D — Faux. C’est précisément l’élément modifié. E — Faux. Les desserts restent disponibles.",
+    "flashcards": [
+      {
+        "id": "pps_term_38",
+        "theme": "Comportements et approches",
+        "front": "Définir : Stigmatisation.",
+        "answers": [
+          "Regard négatif porté sur une personne ou un groupe, pouvant notamment freiner la demande d’aide ou l’accès aux soins."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q040",
+    "courseId": "prevention_promotion_sante",
+    "number": 40,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "easy",
+    "question": "Que sont les représentations sociales ?",
+    "choices": [
+      "Une notion sans influence sur les comportements.",
+      "Uniquement une lésion anatomique.",
+      "Une perception identique pour chaque personne de toute société.",
+      "Des croyances, connaissances et opinions partagées dans un groupe.",
+      "Une donnée indépendante de l’histoire et du contexte."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Elles peuvent orienter les conduites et le recours aux soins.",
+      "Il s’agit d’une construction de sens.",
+      "Plusieurs représentations peuvent coexister.",
+      "Elles concernent un objet social et son interprétation.",
+      "Le contexte et les expériences participent à leur construction."
+    ],
+    "explanation": "A — Faux. Elles peuvent orienter les conduites et le recours aux soins. B — Faux. Il s’agit d’une construction de sens. C — Faux. Plusieurs représentations peuvent coexister. D — Vrai. Elles concernent un objet social et son interprétation. E — Faux. Le contexte et les expériences participent à leur construction.",
+    "flashcards": [
+      {
+        "id": "pps_app_13",
+        "theme": "Comportements et approches",
+        "front": "Une personne connaît un message nutritionnel mais manque de ressources : quel frein examiner ?",
+        "answers": [
+          "Un frein socioéconomique."
+        ],
+        "explanation": "Le savoir ne suffit pas à rendre un choix accessible.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q041",
+    "courseId": "prevention_promotion_sante",
+    "number": 41,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "medium",
+    "question": "Quelles représentations du tabac peuvent coexister ?",
+    "choices": [
+      "Un moment de convivialité.",
+      "Un risque de maladie.",
+      "Une signification unique partagée par tous.",
+      "Un marqueur de style ou de maturité.",
+      "Une preuve que les messages sanitaires suffisent toujours."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La pause cigarette peut être associée à la sociabilité.",
+      "Les atteintes sanitaires constituent une autre représentation.",
+      "Les représentations du tabac peuvent différer selon les personnes et les contextes.",
+      "Certaines images culturelles le valorisent ainsi.",
+      "Les représentations peuvent compliquer l’accompagnement."
+    ],
+    "explanation": "A — Vrai. La pause cigarette peut être associée à la sociabilité. B — Vrai. Les atteintes sanitaires constituent une autre représentation. C — Faux. Les représentations du tabac peuvent différer selon les personnes et les contextes. D — Vrai. Certaines images culturelles le valorisent ainsi. E — Faux. Les représentations peuvent compliquer l’accompagnement.",
+    "flashcards": [
+      {
+        "id": "pps_app_14",
+        "theme": "Comportements et approches",
+        "front": "Placer les fruits au premier plan sans interdire les desserts illustre quoi ?",
+        "answers": [
+          "Un nudge."
+        ],
+        "explanation": "L’environnement oriente le choix sans supprimer les alternatives.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q042",
+    "courseId": "prevention_promotion_sante",
+    "number": 42,
+    "theme": "Comportements, freins et représentations",
+    "difficulty": "hard",
+    "question": "Une personne associe le sport à la douleur et à la peur d’être jugée. Quelle démarche permet un accompagnement adapté ?",
+    "choices": [
+      "Conclure immédiatement à une mauvaise volonté.",
+      "Supposer qu’elle voit le sport comme le soignant.",
+      "Tenir compte des obstacles vécus.",
+      "Explorer ce que l’activité représente pour elle.",
+      "Imposer une activité identique à tout le monde."
+    ],
+    "answers": [
+      2,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Cela ignore les significations et les contraintes.",
+      "Les représentations peuvent différer.",
+      "Les freins ne se limitent pas au savoir.",
+      "Comprendre ses représentations aide à adapter l’échange.",
+      "L’accompagnement doit considérer la situation."
+    ],
+    "explanation": "A — Faux. Cela ignore les significations et les contraintes. B — Faux. Les représentations peuvent différer. C — Vrai. Les freins ne se limitent pas au savoir. D — Vrai. Comprendre ses représentations aide à adapter l’échange. E — Faux. L’accompagnement doit considérer la situation.",
+    "flashcards": [
+      {
+        "id": "pps_app_15",
+        "theme": "Comportements et approches",
+        "front": "Pourquoi explorer ce que la cigarette représente pour une personne ?",
+        "answers": [
+          "Parce qu’elle peut y associer convivialité, style ou risque de maladie."
+        ],
+        "explanation": "Les représentations peuvent différer de celles du soignant.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q043",
+    "courseId": "prevention_promotion_sante",
+    "number": 43,
+    "theme": "Approches et éthique",
+    "difficulty": "easy",
+    "question": "Quels niveaux appartiennent à l’approche socio-écologique ?",
+    "choices": [
+      "Primaire comme niveau socio-écologique.",
+      "Politiques publiques.",
+      "Interpersonnel.",
+      "Individuel.",
+      "Quaternaire comme niveau socio-écologique."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Primaire est un niveau temporel de prévention.",
+      "Les décisions collectives influencent aussi la santé.",
+      "Il concerne l’entourage et les relations.",
+      "Il concerne les caractéristiques de la personne.",
+      "Il décrit la recherche du juste soin."
+    ],
+    "explanation": "A — Faux. Primaire est un niveau temporel de prévention. B — Vrai. Les décisions collectives influencent aussi la santé. C — Vrai. Il concerne l’entourage et les relations. D — Vrai. Il concerne les caractéristiques de la personne. E — Faux. Il décrit la recherche du juste soin.",
+    "flashcards": [
+      {
+        "id": "pps_term_39",
+        "theme": "Comportements et approches",
+        "front": "Définir : Approche socio-écologique.",
+        "answers": [
+          "Lecture de la santé articulant niveaux individuel, interpersonnel, organisationnel, communautaire et politiques publiques."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q044",
+    "courseId": "prevention_promotion_sante",
+    "number": 44,
+    "theme": "Approches et éthique",
+    "difficulty": "medium",
+    "question": "Une cantine d’entreprise propose des repas équilibrés. Quels repères sont pertinents ?",
+    "choices": [
+      "L’approche par milieux de vie.",
+      "Uniquement la génétique individuelle.",
+      "La nécessité d’une maladie diagnostiquée chez tous les usagers.",
+      "L’exclusion de toute dimension environnementale.",
+      "Le niveau organisationnel."
+    ],
+    "answers": [
+      0,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’action intervient dans le lieu de travail.",
+      "L’intervention modifie un contexte concret.",
+      "Une transformation du milieu n’exige pas ce diagnostic.",
+      "L’offre alimentaire fait partie de l’environnement.",
+      "Le fonctionnement d’une structure est concerné."
+    ],
+    "explanation": "A — Vrai. L’action intervient dans le lieu de travail. B — Faux. L’intervention modifie un contexte concret. C — Faux. Une transformation du milieu n’exige pas ce diagnostic. D — Faux. L’offre alimentaire fait partie de l’environnement. E — Vrai. Le fonctionnement d’une structure est concerné.",
+    "flashcards": [
+      {
+        "id": "pps_term_40",
+        "theme": "Comportements et approches",
+        "front": "Définir : Approche par milieux de vie.",
+        "answers": [
+          "Intervention dans les lieux du quotidien pour les rendre favorables à la santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q045",
+    "courseId": "prevention_promotion_sante",
+    "number": 45,
+    "theme": "Approches et éthique",
+    "difficulty": "medium",
+    "question": "Quel est le point d’entrée de l’approche par milieux de vie ?",
+    "choices": [
+      "L’exclusion des écoles.",
+      "Le classement des médicaments.",
+      "Uniquement la chambre hospitalière.",
+      "Uniquement les traitements individuels.",
+      "Les lieux où les personnes vivent, apprennent ou travaillent."
+    ],
+    "answers": [
+      4
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "L’école est un exemple central.",
+      "Ce n’est pas l’objet de cette approche.",
+      "Écoles, villes et travail sont aussi des milieux de vie.",
+      "Le point d’entrée est le milieu.",
+      "L’action rend ces lieux plus favorables à la santé."
+    ],
+    "explanation": "A — Faux. L’école est un exemple central. B — Faux. Ce n’est pas l’objet de cette approche. C — Faux. Écoles, villes et travail sont aussi des milieux de vie. D — Faux. Le point d’entrée est le milieu. E — Vrai. L’action rend ces lieux plus favorables à la santé.",
+    "flashcards": [
+      {
+        "id": "pps_term_41",
+        "theme": "Comportements et approches",
+        "front": "Définir : Vision dichotomique.",
+        "answers": [
+          "Opposition entre deux catégories exclusives : malade ou en bonne santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_16",
+        "theme": "Comportements et approches",
+        "front": "Une cantine de travail améliorée mobilise quel niveau et quelle approche ?",
+        "answers": [
+          "Le niveau organisationnel et l’approche par milieux de vie."
+        ],
+        "explanation": "L’action modifie une structure du quotidien.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q046",
+    "courseId": "prevention_promotion_sante",
+    "number": 46,
+    "theme": "Approches et éthique",
+    "difficulty": "medium",
+    "question": "Quelles propositions correspondent au continuum de santé ?",
+    "choices": [
+      "Un diagnostic interdit toute participation sociale.",
+      "Une maladie ne résume pas toutes les dimensions de la santé.",
+      "Il n’existe que deux états exclusifs et immuables.",
+      "La santé est toujours acquise une fois pour toutes.",
+      "La santé peut évoluer de manière dynamique."
+    ],
+    "answers": [
+      1,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Les ressources et adaptations peuvent soutenir cette participation.",
+      "Des ressources et du bien-être peuvent persister.",
+      "C’est une vision dichotomique, différente de celle du continuum.",
+      "Elle peut varier et être soutenue par des actions.",
+      "Le continuum s’oppose à une lecture figée en deux cases."
+    ],
+    "explanation": "A — Faux. Les ressources et adaptations peuvent soutenir cette participation. B — Vrai. Des ressources et du bien-être peuvent persister. C — Faux. C’est une vision dichotomique, différente de celle du continuum. D — Faux. Elle peut varier et être soutenue par des actions. E — Vrai. Le continuum s’oppose à une lecture figée en deux cases.",
+    "flashcards": [
+      {
+        "id": "pps_term_42",
+        "theme": "Comportements et approches",
+        "front": "Définir : Continuum de santé.",
+        "answers": [
+          "Vision dynamique et graduée de la santé, qui ne se réduit pas à deux états opposés."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_17",
+        "theme": "Comportements et approches",
+        "front": "Une personne malade peut-elle préserver des dimensions de bonne santé ?",
+        "answers": [
+          "Oui, grâce notamment à des ressources personnelles, sociales et matérielles."
+        ],
+        "explanation": "Le diagnostic ne résume pas toute la santé.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q047",
+    "courseId": "prevention_promotion_sante",
+    "number": 47,
+    "theme": "Approches et éthique",
+    "difficulty": "medium",
+    "question": "Quelles associations entre approches pathogénique et salutogénique sont exactes ?",
+    "choices": [
+      "Salutogenèse : absence obligatoire de toute maladie.",
+      "Prévention : exclusion de tout raisonnement pathogénique.",
+      "Approches pathogénique et salutogénique : complémentaires.",
+      "Salutogenèse : processus conduisant vers la santé.",
+      "Pathogenèse : processus conduisant à la maladie."
+    ],
+    "answers": [
+      2,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La démarche intègre les ressources malgré une maladie.",
+      "Elle recherche ce qui produit ou favorise la santé.",
+      "Réduire les risques et renforcer les ressources peuvent s’associer.",
+      "L’approche salutogénique cherche les ressources favorables.",
+      "L’approche pathogénique cherche ce qui rend malade."
+    ],
+    "explanation": "A — Faux. La démarche intègre les ressources malgré une maladie. B — Faux. Elle recherche ce qui produit ou favorise la santé. C — Vrai. Réduire les risques et renforcer les ressources peuvent s’associer. D — Vrai. L’approche salutogénique cherche les ressources favorables. E — Vrai. L’approche pathogénique cherche ce qui rend malade.",
+    "flashcards": [
+      {
+        "id": "pps_term_43",
+        "theme": "Comportements et approches",
+        "front": "Définir : Pathogenèse / approche pathogénique.",
+        "answers": [
+          "Processus conduisant à la maladie / approche étudiant ce qui rend malade pour prévenir et soigner."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q048",
+    "courseId": "prevention_promotion_sante",
+    "number": 48,
+    "theme": "Approches et éthique",
+    "difficulty": "medium",
+    "question": "Quelles situations illustrent des ressources de résistance ?",
+    "choices": [
+      "Une raison de supprimer toute prise en charge.",
+      "Un entourage soutenant malgré une maladie chronique.",
+      "Une garantie de disparition du diagnostic.",
+      "Un travail adapté aux capacités de la personne.",
+      "Des ressources psychologiques permettant de faire face."
+    ],
+    "answers": [
+      1,
+      3,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ressources et soins peuvent se compléter.",
+      "Le soutien social peut aider à préserver la santé.",
+      "Les ressources ne signifient pas une guérison certaine.",
+      "Le contexte professionnel peut soutenir la vie quotidienne.",
+      "Cette ressource personnelle peut aider à faire face aux difficultés."
+    ],
+    "explanation": "A — Faux. Ressources et soins peuvent se compléter. B — Vrai. Le soutien social peut aider à préserver la santé. C — Faux. Les ressources ne signifient pas une guérison certaine. D — Vrai. Le contexte professionnel peut soutenir la vie quotidienne. E — Vrai. Cette ressource personnelle peut aider à faire face aux difficultés.",
+    "flashcards": [
+      {
+        "id": "pps_term_44",
+        "theme": "Comportements et approches",
+        "front": "Définir : Salutogenèse / approche salutogénique.",
+        "answers": [
+          "Processus conduisant vers la santé / approche étudiant les ressources qui permettent de la maintenir ou de l’améliorer."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q049",
+    "courseId": "prevention_promotion_sante",
+    "number": 49,
+    "theme": "Approches et éthique",
+    "difficulty": "easy",
+    "question": "Que décrit une approche intersectorielle de la santé ?",
+    "choices": [
+      "L’exclusion des inégalités de santé.",
+      "Le refus de considérer l’urbanisme.",
+      "L’intervention exclusive des médecins.",
+      "La collaboration de secteurs comme santé, transports, travail et éducation.",
+      "Une synonymie avec la seule relation infirmier-patient."
+    ],
+    "answers": [
+      3
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Réduire les inégalités fait partie des objectifs cités.",
+      "L’urbanisme peut favoriser ou freiner des comportements.",
+      "La démarche associe plusieurs secteurs.",
+      "Les déterminants dépassent le seul secteur des soins.",
+      "L’échelle de collaboration dépasse cette relation."
+    ],
+    "explanation": "A — Faux. Réduire les inégalités fait partie des objectifs cités. B — Faux. L’urbanisme peut favoriser ou freiner des comportements. C — Faux. La démarche associe plusieurs secteurs. D — Vrai. Les déterminants dépassent le seul secteur des soins. E — Faux. L’échelle de collaboration dépasse cette relation.",
+    "flashcards": [
+      {
+        "id": "pps_term_45",
+        "theme": "Comportements et approches",
+        "front": "Définir : Ressources de résistance.",
+        "answers": [
+          "Facteurs personnels, sociaux ou matériels aidant une personne à rester en meilleure santé malgré les difficultés ou la maladie."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_term_46",
+        "theme": "Comportements et approches",
+        "front": "Définir : Approche intersectorielle.",
+        "answers": [
+          "Collaboration de plusieurs secteurs de la société pour agir sur les déterminants et les inégalités de santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_18",
+        "theme": "Comportements et approches",
+        "front": "Transports, santé et urbanisme construisent un projet commun : quelle approche ?",
+        "answers": [
+          "Une approche intersectorielle."
+        ],
+        "explanation": "Plusieurs secteurs agissent sur les déterminants.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q050",
+    "courseId": "prevention_promotion_sante",
+    "number": 50,
+    "theme": "Approches et éthique",
+    "difficulty": "hard",
+    "question": "Quelles questions éthiques faut-il examiner avant une action de santé ?",
+    "choices": [
+      "Le risque de stigmatisation du groupe concerné.",
+      "L’accessibilité des messages et moyens proposés.",
+      "Uniquement la bonne intention de l’équipe.",
+      "La place des choix individuels.",
+      "La nécessité d’une réponse identique pour toute situation."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une norme ou un ciblage peut avoir des effets négatifs.",
+      "L’équité fait partie de la réflexion.",
+      "Les conséquences et les conditions réelles comptent aussi.",
+      "Les libertés et l’autonomie doivent être prises en compte.",
+      "La discussion collective aide à examiner les situations et leurs conséquences."
+    ],
+    "explanation": "A — Vrai. Une norme ou un ciblage peut avoir des effets négatifs. B — Vrai. L’équité fait partie de la réflexion. C — Faux. Les conséquences et les conditions réelles comptent aussi. D — Vrai. Les libertés et l’autonomie doivent être prises en compte. E — Faux. La discussion collective aide à examiner les situations et leurs conséquences.",
+    "flashcards": [
+      {
+        "id": "pps_term_47",
+        "theme": "Comportements et approches",
+        "front": "Définir : Équité et accessibilité.",
+        "answers": [
+          "Questions portant sur la justice des interventions et sur la possibilité réelle, pour les personnes, d’accéder aux messages, moyens et soins."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_26",
+        "theme": "Applications et politiques",
+        "front": "Avant de cibler un groupe, quelles questions éthiques garder en tête ?",
+        "answers": [
+          "Libertés, équité, accessibilité et risque de stigmatisation."
+        ],
+        "explanation": "L’objectif bénéfique n’efface pas les conséquences possibles.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q051",
+    "courseId": "prevention_promotion_sante",
+    "number": 51,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Une campagne nutritionnelle générale aide la population à mieux manger pour prévenir des maladies. Quelles qualifications sont compatibles ?",
+    "choices": [
+      "Éducation pour la santé.",
+      "Prévention primaire.",
+      "Prévention tertiaire uniquement.",
+      "Prévention universelle.",
+      "Absence de lien avec la promotion de la santé."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "La campagne apporte des connaissances utiles.",
+      "L’objectif est d’éviter l’apparition de maladies.",
+      "Aucune maladie connue avec complications n’est précisée.",
+      "Le message s’adresse à la population générale.",
+      "L’information peut contribuer aux moyens d’agir."
+    ],
+    "explanation": "A — Vrai. La campagne apporte des connaissances utiles. B — Vrai. L’objectif est d’éviter l’apparition de maladies. C — Faux. Aucune maladie connue avec complications n’est précisée. D — Vrai. Le message s’adresse à la population générale. E — Faux. L’information peut contribuer aux moyens d’agir.",
+    "flashcards": [
+      {
+        "id": "pps_term_48",
+        "theme": "Applications et politiques",
+        "front": "Définir : PNNS.",
+        "answers": [
+          "Programme national nutrition santé : alimentation et activité physique comme leviers de santé."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_23",
+        "theme": "Applications et politiques",
+        "front": "Vaccination HPV et dépistage d’IST : même niveau temporel ?",
+        "answers": [
+          "Non : primaire pour la vaccination, secondaire pour le dépistage."
+        ],
+        "explanation": "L’une prévient ; l’autre recherche une infection possible.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q052",
+    "courseId": "prevention_promotion_sante",
+    "number": 52,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Que cherche à faciliter le Nutri-Score lors des achats alimentaires ?",
+    "choices": [
+      "La suppression obligatoire de tous les autres produits.",
+      "Un repérage pouvant influencer le comportement.",
+      "Le choix alimentaire par une information visible.",
+      "Le diagnostic d’un cancer chez l’acheteur.",
+      "La garantie qu’un même prix convient à tous."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "L’outil d’information ne supprime pas les choix.",
+      "L’information nutritionnelle vise à orienter les choix sans supprimer les alternatives.",
+      "Il soutient la décision lors des achats.",
+      "Il ne s’agit pas d’un dépistage.",
+      "Les contraintes économiques restent distinctes."
+    ],
+    "explanation": "A — Faux. L’outil d’information ne supprime pas les choix. B — Vrai. L’information nutritionnelle vise à orienter les choix sans supprimer les alternatives. C — Vrai. Il soutient la décision lors des achats. D — Faux. Il ne s’agit pas d’un dépistage. E — Faux. Les contraintes économiques restent distinctes.",
+    "flashcards": [
+      {
+        "id": "pps_term_49",
+        "theme": "Applications et politiques",
+        "front": "Définir : HPV.",
+        "answers": [
+          "Papillomavirus humains ; leur vaccination constitue un exemple de prévention primaire."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q053",
+    "courseId": "prevention_promotion_sante",
+    "number": 53,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Une campagne cherche à réduire la stigmatisation des troubles psychiques. Quels mécanismes peuvent y contribuer ?",
+    "choices": [
+      "Faciliter la demande d’aide.",
+      "Exclure le travail et la vie sociale.",
+      "Réduire la santé mentale au seul médicament.",
+      "Changer les représentations de la santé mentale.",
+      "Prouver que toute affiche est une action communautaire active."
+    ],
+    "answers": [
+      0,
+      3
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Une représentation moins stigmatisante peut favoriser le recours aux soins.",
+      "Ces dimensions participent à la santé.",
+      "L’inclusion et les dimensions sociales comptent aussi.",
+      "La campagne cherche à lever des tabous.",
+      "La participation active doit être établie."
+    ],
+    "explanation": "A — Vrai. Une représentation moins stigmatisante peut favoriser le recours aux soins. B — Faux. Ces dimensions participent à la santé. C — Faux. L’inclusion et les dimensions sociales comptent aussi. D — Vrai. La campagne cherche à lever des tabous. E — Faux. La participation active doit être établie.",
+    "flashcards": [
+      {
+        "id": "pps_term_50",
+        "theme": "Applications et politiques",
+        "front": "Définir : IST / VIH.",
+        "answers": [
+          "Infections sexuellement transmissibles / virus de l’immunodéficience humaine ; notions citées dans la stratégie de santé sexuelle."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_24",
+        "theme": "Applications et politiques",
+        "front": "Que vise le changement des représentations en santé mentale ?",
+        "answers": [
+          "Réduire la stigmatisation et faciliter la demande d’aide."
+        ],
+        "explanation": "Un regard négatif peut freiner l’accès aux soins.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q054",
+    "courseId": "prevention_promotion_sante",
+    "number": 54,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Le Mois sans tabac encourage des fumeurs à arrêter pour prévenir des maladies liées au tabac. Quelles propositions sont justes ?",
+    "choices": [
+      "Le tabac est ici le cancer déjà diagnostiqué.",
+      "L’action est orientée vers les fumeurs.",
+      "Le soutien collectif peut être mobilisé.",
+      "L’objectif décrit relève de la prévention primaire.",
+      "Toute dimension de motivation est exclue."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le facteur de risque ne se confond pas avec la maladie visée.",
+      "Le public concerné est défini par l’exposition.",
+      "Le défi partagé peut soutenir la motivation à arrêter.",
+      "Les maladies visées sont à prévenir par la réduction du risque.",
+      "La motivation est un levier explicitement discuté."
+    ],
+    "explanation": "A — Faux. Le facteur de risque ne se confond pas avec la maladie visée. B — Vrai. Le public concerné est défini par l’exposition. C — Vrai. Le défi partagé peut soutenir la motivation à arrêter. D — Vrai. Les maladies visées sont à prévenir par la réduction du risque. E — Faux. La motivation est un levier explicitement discuté.",
+    "flashcards": [
+      {
+        "id": "pps_term_51",
+        "theme": "Applications et politiques",
+        "front": "Définir : IVG.",
+        "answers": [
+          "Interruption volontaire de grossesse ; l’amélioration de son accès constitue un exemple d’action sur l’accès aux soins."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_21",
+        "theme": "Applications et politiques",
+        "front": "Le Mois sans tabac destiné aux fumeurs : quelle logique temporelle et quelle population ?",
+        "answers": [
+          "Primaire pour les maladies visées et orientée vers les fumeurs."
+        ],
+        "explanation": "Le facteur de risque ne se confond pas avec ces maladies.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q055",
+    "courseId": "prevention_promotion_sante",
+    "number": 55,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Quels leviers sont utilisés dans les politiques antitabac présentées ?",
+    "choices": [
+      "Créer des environnements sans tabac.",
+      "Réduire l’attractivité des paquets.",
+      "Agir sur le prix pour dissuader l’achat.",
+      "Garantir le même effet pour chaque personne.",
+      "Se limiter à une information sans action sur le contexte."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Le cadre de vie peut réduire l’exposition et faciliter la santé.",
+      "Le paquet neutre agit notamment sur le marketing.",
+      "Ce levier modifie les conditions d’achat du tabac.",
+      "Les réactions peuvent différer.",
+      "Plusieurs mesures modifient l’environnement ou les conditions d’achat."
+    ],
+    "explanation": "A — Vrai. Le cadre de vie peut réduire l’exposition et faciliter la santé. B — Vrai. Le paquet neutre agit notamment sur le marketing. C — Vrai. Ce levier modifie les conditions d’achat du tabac. D — Faux. Les réactions peuvent différer. E — Faux. Plusieurs mesures modifient l’environnement ou les conditions d’achat.",
+    "flashcards": [
+      {
+        "id": "pps_term_52",
+        "theme": "Applications et politiques",
+        "front": "Définir : EVAR / EVARS.",
+        "answers": [
+          "Éducation à la vie affective et relationnelle / éducation à la vie affective, relationnelle et sexuelle."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q056",
+    "courseId": "prevention_promotion_sante",
+    "number": 56,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "easy",
+    "question": "Quelle période couvre la politique des 1 000 premiers jours ?",
+    "choices": [
+      "De six ans à l’adolescence uniquement.",
+      "Toute la vie adulte sans lien avec la parentalité.",
+      "Du début de la grossesse jusqu’aux deux ans de l’enfant.",
+      "Seulement les deux ans précédant la grossesse.",
+      "Uniquement la naissance."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "rationales": [
+      "Le programme concerne une période plus précoce.",
+      "L’accompagnement des parents et du développement est central.",
+      "Cette politique concerne une période allant de la grossesse aux deux ans de l’enfant.",
+      "Cette période ne correspond pas aux 1 000 premiers jours.",
+      "La période commence avant et se prolonge après."
+    ],
+    "explanation": "A — Faux. Le programme concerne une période plus précoce. B — Faux. L’accompagnement des parents et du développement est central. C — Vrai. Cette politique concerne une période allant de la grossesse aux deux ans de l’enfant. D — Faux. Cette période ne correspond pas aux 1 000 premiers jours. E — Faux. La période commence avant et se prolonge après.",
+    "flashcards": [
+      {
+        "id": "pps_term_53",
+        "theme": "Applications et politiques",
+        "front": "Définir : Post-partum.",
+        "answers": [
+          "Période après l’accouchement, abordée à propos de la santé des parents et du repérage de la dépression."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q057",
+    "courseId": "prevention_promotion_sante",
+    "number": 57,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "hard",
+    "question": "Un entretien postnatal comporte repérage d’une dépression et conseils de parentalité. Quelles analyses sont justifiées ?",
+    "choices": [
+      "Les conseils peuvent relever de l’éducation pour la santé.",
+      "Le repérage d’un trouble présent relève d’une logique secondaire.",
+      "L’entretien peut associer plusieurs logiques.",
+      "Toute la consultation est forcément quaternaire.",
+      "Les conseils annulent l’intérêt du repérage."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ils développent les capacités des parents.",
+      "L’objectif est de reconnaître et orienter précocement.",
+      "Le dispositif ne se réduit pas nécessairement à un seul objectif.",
+      "Aucun soin inutile à éviter n’est décrit.",
+      "Les deux composantes peuvent se compléter."
+    ],
+    "explanation": "A — Vrai. Ils développent les capacités des parents. B — Vrai. L’objectif est de reconnaître et orienter précocement. C — Vrai. Le dispositif ne se réduit pas nécessairement à un seul objectif. D — Faux. Aucun soin inutile à éviter n’est décrit. E — Faux. Les deux composantes peuvent se compléter.",
+    "flashcards": [
+      {
+        "id": "pps_term_54",
+        "theme": "Applications et politiques",
+        "front": "Définir : AVC.",
+        "answers": [
+          "Accident vasculaire cérébral ; exemple utilisé pour la rééducation et la prévention des complications ou récidives."
+        ],
+        "explanation": "Cette définition aide à distinguer la notion des catégories voisines.",
+        "preserveReviewedText": true
+      },
+      {
+        "id": "pps_app_22",
+        "theme": "Applications et politiques",
+        "front": "L’entretien postnatal peut-il être à la fois éducatif et secondaire ?",
+        "answers": [
+          "Oui. Il peut donner des conseils et repérer une dépression présente."
+        ],
+        "explanation": "Les composantes n’ont pas toutes le même objectif.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q058",
+    "courseId": "prevention_promotion_sante",
+    "number": 58,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Dans les actions de santé sexuelle présentées, quelles distinctions sont justes ?",
+    "choices": [
+      "Tous les moyens de contraception ont nécessairement la même fonction contre les infections.",
+      "Être sexuellement actif constitue en soi un diagnostic de maladie.",
+      "La vaccination vise une prévention primaire de la maladie concernée.",
+      "Informer sur les soins n’a aucun rôle éducatif.",
+      "Le dépistage d’une IST vise une logique secondaire."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "rationales": [
+      "Il faut distinguer les moyens et les objectifs, sans généralisation.",
+      "La contraception et la prévention des IST répondent à des objectifs distincts.",
+      "Elle agit avant cette maladie.",
+      "L’information accessible peut contribuer à l’éducation.",
+      "On recherche une infection déjà possible."
+    ],
+    "explanation": "A — Faux. Il faut distinguer les moyens et les objectifs, sans généralisation. B — Faux. La contraception et la prévention des IST répondent à des objectifs distincts. C — Vrai. Elle agit avant cette maladie. D — Faux. L’information accessible peut contribuer à l’éducation. E — Vrai. On recherche une infection déjà possible.",
+    "flashcards": [
+      {
+        "id": "pps_app_19",
+        "theme": "Applications et politiques",
+        "front": "Comment exploiter un exemple de politique de santé pour raisonner sur la prévention ?",
+        "answers": [
+          "Repérer son objectif, son public et ses leviers pour comprendre et justifier ses classements."
+        ],
+        "explanation": "Le support distingue les notions à connaître et les exemples.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q059",
+    "courseId": "prevention_promotion_sante",
+    "number": 59,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "medium",
+    "question": "Quels objectifs sont associés à l’EVAR et à l’EVARS ?",
+    "choices": [
+      "Le respect de soi et des autres.",
+      "La protection contre les violences.",
+      "L’égalité entre filles et garçons.",
+      "Le diagnostic systématique d’IST chez tous les élèves.",
+      "L’exclusion de la notion de consentement."
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Ces valeurs sont explicitement citées.",
+      "Le programme vise aussi cette protection.",
+      "Elle fait partie des objectifs annoncés.",
+      "L’exemple concerne une démarche éducative.",
+      "L’éducation au consentement participe à la prévention des violences et au respect d’autrui."
+    ],
+    "explanation": "A — Vrai. Ces valeurs sont explicitement citées. B — Vrai. Le programme vise aussi cette protection. C — Vrai. Elle fait partie des objectifs annoncés. D — Faux. L’exemple concerne une démarche éducative. E — Faux. L’éducation au consentement participe à la prévention des violences et au respect d’autrui.",
+    "flashcards": [
+      {
+        "id": "pps_app_20",
+        "theme": "Applications et politiques",
+        "front": "Des messages nutritionnels généraux visent à prévenir les maladies : deux classements ?",
+        "answers": [
+          "Prévention primaire et universelle."
+        ],
+        "explanation": "L’action vise la population générale avant les maladies considérées.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "pps_q060",
+    "courseId": "prevention_promotion_sante",
+    "number": 60,
+    "theme": "Politiques et mises en situation",
+    "difficulty": "hard",
+    "question": "Une action de santé comporte plusieurs composantes. Quelle méthode permet de la classer avec rigueur ?",
+    "choices": [
+      "Repérer les leviers et niveaux réellement mobilisés.",
+      "Imposer une seule catégorie même si les objectifs diffèrent.",
+      "Distinguer moment, échelle et population.",
+      "Choisir uniquement à partir du mot « affiche ».",
+      "Préciser son objectif avant de nommer le niveau."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "rationales": [
+      "Une action peut combiner information, milieu et accès aux soins.",
+      "Distinguer les composantes permet de préciser les objectifs et les publics.",
+      "Ces trois critères répondent à des questions différentes.",
+      "Le support de communication ne définit pas tout le dispositif.",
+      "Le but permet de comprendre la logique de prévention."
+    ],
+    "explanation": "A — Vrai. Une action peut combiner information, milieu et accès aux soins. B — Faux. Distinguer les composantes permet de préciser les objectifs et les publics. C — Vrai. Ces trois critères répondent à des questions différentes. D — Faux. Le support de communication ne définit pas tout le dispositif. E — Vrai. Le but permet de comprendre la logique de prévention.",
+    "flashcards": [
+      {
+        "id": "pps_app_25",
+        "theme": "Applications et politiques",
+        "front": "Quels sont les trois critères de classement de la prévention à distinguer ?",
+        "answers": [
+          "Le moment de l’intervention, son échelle et sa population."
+        ],
+        "explanation": "Ils se complètent sans se remplacer.",
+        "preserveReviewedText": true
+      }
+    ],
+    "course": "Prévention et promotion de la santé"
   }
 ]

@@ -3329,5 +3329,53 @@
     "durationSeconds": 187.122667,
     "syntheticSpeech": true,
     "provisional": true
+  },
+  {
+    "id": "pps_vocal_01",
+    "courseId": "prevention_promotion_sante",
+    "course": "Prévention et promotion de la santé",
+    "number": 1,
+    "title": "Santé publique et niveaux de prévention",
+    "mime": "audio/mpeg",
+    "durationSeconds": 471.096,
+    "localAudio": "./assets/audio/prevention-promotion-20261113/pps_vocal_01.mp3",
+    "syntheticSpeech": true,
+    "driveId": "1xVvanKV46zyxwR3d5yHZo60uUPwMyxL7"
+  },
+  {
+    "id": "pps_vocal_02",
+    "courseId": "prevention_promotion_sante",
+    "course": "Prévention et promotion de la santé",
+    "number": 2,
+    "title": "Populations, promotion et éducation pour la santé",
+    "mime": "audio/mpeg",
+    "durationSeconds": 476.506667,
+    "localAudio": "./assets/audio/prevention-promotion-20261113/pps_vocal_02.mp3",
+    "syntheticSpeech": true,
+    "driveId": "1OqnM6hW9roxn8hO81JDUAV1xa2-GZakm"
+  },
+  {
+    "id": "pps_vocal_03",
+    "courseId": "prevention_promotion_sante",
+    "course": "Prévention et promotion de la santé",
+    "number": 3,
+    "title": "Comportements et approches de la santé",
+    "mime": "audio/mpeg",
+    "durationSeconds": 487.397333,
+    "localAudio": "./assets/audio/prevention-promotion-20261113/pps_vocal_03.mp3",
+    "syntheticSpeech": true,
+    "driveId": "1TkR7UTair_-z7ppKUbMh00eYaqqTmVwS"
+  },
+  {
+    "id": "pps_vocal_04",
+    "courseId": "prevention_promotion_sante",
+    "course": "Prévention et promotion de la santé",
+    "number": 4,
+    "title": "Politiques de santé et raisonnement",
+    "mime": "audio/mpeg",
+    "durationSeconds": 481.892,
+    "localAudio": "./assets/audio/prevention-promotion-20261113/pps_vocal_04.mp3",
+    "syntheticSpeech": true,
+    "driveId": "1RylzgWxFzfRNirk4sClXm1A9CeoqFPAS"
   }
 ]

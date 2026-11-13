@@ -262,7 +262,7 @@ function renderCourse74(){
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
   // Documents et archives déjà référencés sur Drive ou sur le site de l'application.
-  const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.(?:pdf|zip)$/.test(u)&&!u.split('/').includes('..')))?u:'';
+  const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.(?:pdf|zip|html)$/.test(u)&&!u.split('/').includes('..')))?u:'';
   // Dédupliquer seulement la présentation : les supports et leur registre approuvé restent intacts.
   const uniqueSupportParts74=(primaryUrl,parts)=>{
     const driveIdentity=u=>{
