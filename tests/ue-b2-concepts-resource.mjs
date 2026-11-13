@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {validateUeReferenceResources} from '../tools/ue-reference-resource-contract.mjs';
+import {beforeAdditiveCourses} from '../tools/additive-course-history.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const registry=read('course-registry-v741.json');
 const approved={id:'b2_concepts_definitions_td',sha256:'831a3346d42a3338657417f469dc319c0febe779c893cf57017c2fd6c1e648ff',path:'assets/psycho-dev-officiel-20261112/UE_B2_Concepts_Definitions_TD_Validation_complete.pdf'};
@@ -36,9 +37,10 @@ for(const mutate of [r=>r.unreviewed={},r=>r.ueResources[0].publicationApproval.
 }
 validateScopedRevisions();
 const priorRead=p=>JSON.parse(execFileSync('git',['show',base+':'+p],{encoding:'utf8',maxBuffer:64*1024*1024}));
-assert.deepEqual(scopedHistoricalJson(read,'course-registry-v741.json').courses,scopedHistoricalJson(priorRead,'course-registry-v741.json').courses,'Un cours historique a changé hors révision contrôlée');
+const preserved=(reader,file)=>beforeAdditiveCourses(file,scopedHistoricalJson(reader,file),reader('docs/course-deliveries.json'));
+assert.deepEqual(preserved(read,'course-registry-v741.json').courses,preserved(priorRead,'course-registry-v741.json').courses,'Un cours historique a changé hors révision contrôlée');
 for(const file of ['docs/course-deliveries.json','sheets-1.json','sheets-2.json','sheets-3.json','questions-5.json','vocabulaire-v1.json','vocals.json','audio-series-v1.json']){
- assert.deepEqual(scopedHistoricalJson(read,file),scopedHistoricalJson(priorRead,file),'Ressource historique modifiée : '+file);
+ assert.deepEqual(preserved(read,file),preserved(priorRead,file),'Ressource historique modifiée : '+file);
 }
 const python=process.env.IFSI_PYTHON||process.env.PYTHON||'python';
 const result=JSON.parse(execFileSync(python,['-c','import fitz,json,sys; d=fitz.open(sys.argv[1]); print(json.dumps({"pages":len(d),"first":d[0].get_text(),"all": " ".join(p.get_text() for p in d)}))',approved.path],{encoding:'utf8',maxBuffer:10*1024*1024}));

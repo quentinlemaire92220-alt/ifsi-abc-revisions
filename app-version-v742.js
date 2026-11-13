@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.192';
+const VERSION='8.30.193';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : UE B2 : recueil commun de concepts et définitions,81 pages pour le TD et la validation.`;

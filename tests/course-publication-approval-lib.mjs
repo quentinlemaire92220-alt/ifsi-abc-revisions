@@ -27,6 +27,7 @@ export function publicationBundle(courseId,delivery,data){
   vocabulary:sortById((data.vocabulary||[]).filter(x=>x.courseIds?.includes(courseId))),
   scripts:delivery.vocalScripts||[],
   packFormat:delivery.packFormat||'legacy',
+  ...(delivery.firstReleaseContract==='reviewed_complete_bundle_v1'?{reviewedCompleteBundle:{...delivery,publicationApproval:undefined}}:{}),
   ...(delivery.nativeDiagramException?{nativeDiagramWrittenMetadata:{nativeDiagramException:delivery.nativeDiagramException,writtenPdfAudit:delivery.writtenPdfAudit,writtenCoverage:delivery.writtenCoverage,sourceAudit:delivery.sourceAudit,lexicon:delivery.lexicon}}:{}),
   ...(delivery.audioOnlyContract==='received_audio_v1'?{receivedAudioReview:delivery.receivedAudioReview,sourceBasis:delivery.sourceBasis,audioOnlyContract:delivery.audioOnlyContract,publicAudioArtifacts:delivery.publicAudioArtifacts}:{}),
   ...(delivery.interactiveAudioReview?{interactiveAudioReview:delivery.interactiveAudioReview,sourceBasis:delivery.sourceBasis,audioOnlyContract:delivery.audioOnlyContract}:{}),

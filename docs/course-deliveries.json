@@ -9490,6 +9490,729 @@
         "psydev_v193",
         "psydev_v194"
       ]
+    },
+    {
+      "courseId": "psychometrie",
+      "validated": true,
+      "pedagogicalValidated": false,
+      "status": "partial",
+      "packFormat": "written_v1",
+      "deliveryMode": "first_release",
+      "firstReleaseContract": "reviewed_complete_bundle_v1",
+      "publicationHost": "github_pages",
+      "provisional": false,
+      "sourceBasis": {
+        "kind": "official_support_and_transcript",
+        "nativeSupportAvailable": true,
+        "reconciled": true
+      },
+      "sourceAudit": {
+        "officialChecked": true,
+        "oralStatus": "complete",
+        "oralReviewBasis": "full_transcript_documentary_review",
+        "originalAudioCompared": false,
+        "independentClinicalSignoff": false,
+        "officialSupportPreservedPrivately": true,
+        "speakerStudentSeparated": true,
+        "teachingNotesPrivateTrace": true,
+        "notesWithoutTimestamps": true,
+        "externalSourcesCount": 4,
+        "externalAuthorization": "publication_accepted_after_documentary_review",
+        "externalReviewScope": "Limited primary-source prudence checks (Pearson, AAIDD, HAS, Ameli); no added clinical chapter or invented scoring thresholds. Prior explicit permission is not attested.",
+        "privateEvidenceSha256": "6456180288303d9e889e9c209d8a3adba2a98163bc948fbe2c391616474350fe"
+      },
+      "blockers": [
+        {
+          "resource": "vocals",
+          "reason": "listening_review_not_attested",
+          "detail": "11 MP3 entièrement décodés. Contenu parlé et conformité aux scripts non vérifiés à l’écoute ; réserve présentée avant le GO publication."
+        }
+      ],
+      "sheetResourceId": "psychometrie_fiche_20261112",
+      "sheetResourceIds": [
+        "psychometrie_fiche_20261112"
+      ],
+      "schematics": "none",
+      "embeddedFigureCount": 0,
+      "generatedImageCount": 0,
+      "writtenCoverage": {
+        "expectedEssential": 17,
+        "coveredEssential": 17,
+        "explicitVsInferredPrioritiesSeparated": true,
+        "explanationsNotOvercompressed": true,
+        "disciplinaryReview": "approved",
+        "disciplinaryReviewScope": "Complete documentary review of the 12-page official support and full received transcript; independent clinical signoff not attested."
+      },
+      "writtenPdfAudit": {
+        "status": "PASS",
+        "pdfSha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+        "pageSize": "A4",
+        "pageCount": 21,
+        "allPagesRendered": true,
+        "topAndBottomPurpleBandsEveryPage": true,
+        "noOverlaidHeaders": true,
+        "textSelectable": true,
+        "noImages": true,
+        "noClippedText": true,
+        "oneQcmPitfallSection": true,
+        "summaryBeforeLexicon": true,
+        "lexiconLast": true,
+        "navigationChecked": true
+      },
+      "writtenModelReference": "communication_written_v5.3_2026-10-24",
+      "lexicon": {
+        "termCount": 105,
+        "textSelectable": true,
+        "checked": true,
+        "sourceSha256": "7dc43fe176e670194d63c779ffb0cdc1dab854749d628d15a5db626ea87bf4e4"
+      },
+      "qcmBank": "data/course-banks/psychometrie_20261112.json",
+      "qcmCount": 49,
+      "flashcardCount": 141,
+      "vocabularyCount": 105,
+      "vocabularyEntryIds": [
+        "psychometrie_001",
+        "psychometrie_002",
+        "psychometrie_003",
+        "psychometrie_004",
+        "psychometrie_005",
+        "psychometrie_006",
+        "psychometrie_007",
+        "psychometrie_008",
+        "psychometrie_009",
+        "psychometrie_010",
+        "psychometrie_011",
+        "psychometrie_012",
+        "psychometrie_013",
+        "psychometrie_014",
+        "psychometrie_015",
+        "psychometrie_016",
+        "psychometrie_017",
+        "psychometrie_018",
+        "psychometrie_019",
+        "psychometrie_020",
+        "psychometrie_021",
+        "psychometrie_022",
+        "psychometrie_023",
+        "psychometrie_024",
+        "psychometrie_025",
+        "psychometrie_026",
+        "psychometrie_027",
+        "psychometrie_028",
+        "psychometrie_029",
+        "psychometrie_030",
+        "psychometrie_031",
+        "psychometrie_032",
+        "psychometrie_033",
+        "psychometrie_034",
+        "psychometrie_035",
+        "psychometrie_036",
+        "psychometrie_037",
+        "psychometrie_038",
+        "psychometrie_039",
+        "psychometrie_040",
+        "psychometrie_041",
+        "psychometrie_042",
+        "psychometrie_043",
+        "psychometrie_044",
+        "psychometrie_045",
+        "psychometrie_046",
+        "psychometrie_047",
+        "psychometrie_048",
+        "psychometrie_049",
+        "psychometrie_050",
+        "psychometrie_051",
+        "psychometrie_052",
+        "psychometrie_053",
+        "psychometrie_054",
+        "psychometrie_055",
+        "psychometrie_056",
+        "psychometrie_057",
+        "psychometrie_058",
+        "psychometrie_059",
+        "psychometrie_060",
+        "psychometrie_061",
+        "psychometrie_062",
+        "psychometrie_063",
+        "psychometrie_064",
+        "psychometrie_065",
+        "psychometrie_066",
+        "psychometrie_067",
+        "psychometrie_068",
+        "psychometrie_069",
+        "psychometrie_070",
+        "psychometrie_071",
+        "psychometrie_072",
+        "psychometrie_073",
+        "psychometrie_074",
+        "psychometrie_075",
+        "psychometrie_076",
+        "psychometrie_077",
+        "psychometrie_078",
+        "psychometrie_079",
+        "psychometrie_080",
+        "psychometrie_081",
+        "psychometrie_082",
+        "psychometrie_083",
+        "psychometrie_084",
+        "psychometrie_085",
+        "psychometrie_086",
+        "psychometrie_087",
+        "psychometrie_088",
+        "psychometrie_089",
+        "psychometrie_090",
+        "psychometrie_091",
+        "psychometrie_092",
+        "psychometrie_093",
+        "psychometrie_094",
+        "psychometrie_095",
+        "psychometrie_096",
+        "psychometrie_097",
+        "psychometrie_098",
+        "psychometrie_099",
+        "psychometrie_100",
+        "psychometrie_101",
+        "psychometrie_102",
+        "psychometrie_103",
+        "psychometrie_104",
+        "psychometrie_105"
+      ],
+      "qcmPdfLayout": "boxed_inline_embedded_rationales_v1",
+      "flashcardPdfLayout": "inline_thematic_recall_v1",
+      "infographicResourceIds": [],
+      "requestedVocals": true,
+      "vocals": [
+        "psychometrie_vocal_01",
+        "psychometrie_vocal_02",
+        "psychometrie_vocal_03",
+        "psychometrie_vocal_04",
+        "psychometrie_vocal_05",
+        "psychometrie_vocal_06",
+        "psychometrie_vocal_07",
+        "psychometrie_vocal_08",
+        "psychometrie_vocal_09",
+        "psychometrie_vocal_10",
+        "psychometrie_vocal_11"
+      ],
+      "publicAudioArtifacts": [
+        {
+          "artifactId": "psychometrie_vocal_01",
+          "vocalId": "psychometrie_vocal_01",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_01.mp3",
+          "sha256": "bf9d26d5b5f0500f231296dd3c6ed6797c8087c0354c37862772476a205a5363",
+          "bytes": 3543110,
+          "durationSeconds": 295.136
+        },
+        {
+          "artifactId": "psychometrie_vocal_02",
+          "vocalId": "psychometrie_vocal_02",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_02.mp3",
+          "sha256": "a4e44ceba2eb46868d7f2941c6470c787dcb772d26dbbed79af79e517cd5199a",
+          "bytes": 3442310,
+          "durationSeconds": 286.737333
+        },
+        {
+          "artifactId": "psychometrie_vocal_03",
+          "vocalId": "psychometrie_vocal_03",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_03.mp3",
+          "sha256": "11d5a9074b25e7f46c2530b17c6f715a52823d4af8d4c53ee78f7437bfe5b791",
+          "bytes": 3071366,
+          "durationSeconds": 255.84
+        },
+        {
+          "artifactId": "psychometrie_vocal_04",
+          "vocalId": "psychometrie_vocal_04",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_04.mp3",
+          "sha256": "c6fef4c85c4e427dd541ec4bc8b225f44676980cdfe7fb0c95eb944846d95209",
+          "bytes": 3175622,
+          "durationSeconds": 264.526667
+        },
+        {
+          "artifactId": "psychometrie_vocal_05",
+          "vocalId": "psychometrie_vocal_05",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_05.mp3",
+          "sha256": "56fd6abb125abb0cf8a4aa15094faad7ff4a97ae9dd0e8bb796f7b7657fa577c",
+          "bytes": 2916998,
+          "durationSeconds": 242.972
+        },
+        {
+          "artifactId": "psychometrie_vocal_06",
+          "vocalId": "psychometrie_vocal_06",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_06.mp3",
+          "sha256": "aa0b1655140212affc6289ec23c40d9b1356f24d6201ab3a1a9c0de46b67de1f",
+          "bytes": 3662054,
+          "durationSeconds": 305.064
+        },
+        {
+          "artifactId": "psychometrie_vocal_07",
+          "vocalId": "psychometrie_vocal_07",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_07.mp3",
+          "sha256": "3e1ebe7120c399e034b6227c54b3e112f76abc1a16e77cbe3f2dd9207c8b7502",
+          "bytes": 3051782,
+          "durationSeconds": 254.208
+        },
+        {
+          "artifactId": "psychometrie_vocal_08",
+          "vocalId": "psychometrie_vocal_08",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_08.mp3",
+          "sha256": "bd14eb4de7c76463ee15a6263c296116d50c3574c7940e6cbab4441b800b635f",
+          "bytes": 3283910,
+          "durationSeconds": 273.54
+        },
+        {
+          "artifactId": "psychometrie_vocal_09",
+          "vocalId": "psychometrie_vocal_09",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_09.mp3",
+          "sha256": "a03526060df8326a657e180ea3ef03cb0077180bc1d9185e8233f634987133c8",
+          "bytes": 3459590,
+          "durationSeconds": 288.188
+        },
+        {
+          "artifactId": "psychometrie_vocal_10",
+          "vocalId": "psychometrie_vocal_10",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_10.mp3",
+          "sha256": "ee7aa1cc4fd8947b4896ee81ba936b18afce1fca110f22af0debacdc44bf3e03",
+          "bytes": 3348998,
+          "durationSeconds": 278.961333
+        },
+        {
+          "artifactId": "psychometrie_vocal_11",
+          "vocalId": "psychometrie_vocal_11",
+          "path": "assets/audio/psychometrie-20261113/UE_B2_S1_Psychometrie_Vocal_11.mp3",
+          "sha256": "3b25445534987e6ff3fb5b7487ded12e212f24281e313d6b483dcea3e5fc7776",
+          "bytes": 3471110,
+          "durationSeconds": 289.146667
+        }
+      ],
+      "publicArtifacts": {
+        "sheet": {
+          "artifactId": "psychometrie_sheet_20261112",
+          "path": "assets/psychometrie-20261112/Psychometrie_Cours_complet.pdf",
+          "sha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+          "bytes": 463398,
+          "pageCount": 21
+        },
+        "qcm": {
+          "artifactId": "psychometrie_qcm_20261112",
+          "path": "assets/psychometrie-20261112/Psychometrie_QCM_49_corriges.pdf",
+          "sha256": "337bf7b6f5f83a89f8110088256e24476dc2338b625fdbd509170734611dc5e8",
+          "bytes": 465218,
+          "pageCount": 21
+        },
+        "flashcards": {
+          "artifactId": "psychometrie_flashcards_20261112",
+          "path": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.pdf",
+          "sha256": "e2b303ceb646efd51e72d0dd346af500394e0a929ac0d2111cee6bb31ff4fd66",
+          "bytes": 472138,
+          "pageCount": 22
+        }
+      },
+      "downloadArtifacts": [
+        {
+          "artifactId": "psychometrie_Psychometrie_Pack_complet_avec_MP3.zip",
+          "path": "assets/psychometrie-20261112/Psychometrie_Pack_complet_avec_MP3.zip",
+          "sha256": "b430ef0712ea73d15fcdd7326ce4c5a47d9def334f46963e2b355341340ffe99",
+          "bytes": 30049386
+        },
+        {
+          "artifactId": "psychometrie_Psychometrie_Flashcards_141.csv",
+          "path": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.csv",
+          "sha256": "bdc9305ee144bb2a160db363fc7ef69724d112e59d841f67f67b329e97e1ff8a",
+          "bytes": 32083
+        },
+        {
+          "artifactId": "psychometrie_Psychometrie_Flashcards_141.tsv",
+          "path": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.tsv",
+          "sha256": "87cab83245c846e415e9732ed4b792e06bdb8a2b8c90b7f7f2c3b122b40d4bc0",
+          "bytes": 32052
+        },
+        {
+          "artifactId": "psychometrie_Psychometrie_Flashcards_141.json",
+          "path": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.json",
+          "sha256": "25684a9cffcde52b73972cca5db7e570a3f63f09bca0a65c212942b3fe7e555a",
+          "bytes": 59588
+        },
+        {
+          "artifactId": "psychometrie_Psychometrie_Scripts_vocaux_11_TXT.zip",
+          "path": "assets/psychometrie-20261112/Psychometrie_Scripts_vocaux_11_TXT.zip",
+          "sha256": "664185e33904fcdbc2ceda8ca644795a5f8789c6553389f0dc089260872c4d7c",
+          "bytes": 17606
+        }
+      ],
+      "publicAssetSha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+      "qcmPublicAssetSha256": "337bf7b6f5f83a89f8110088256e24476dc2338b625fdbd509170734611dc5e8",
+      "flashcardPublicAssetSha256": "e2b303ceb646efd51e72d0dd346af500394e0a929ac0d2111cee6bb31ff4fd66",
+      "artifactSha256s": {
+        "psychometrie_sheet_20261112": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+        "psychometrie_qcm_20261112": "337bf7b6f5f83a89f8110088256e24476dc2338b625fdbd509170734611dc5e8",
+        "psychometrie_flashcards_20261112": "e2b303ceb646efd51e72d0dd346af500394e0a929ac0d2111cee6bb31ff4fd66",
+        "psychometrie_vocal_01": "bf9d26d5b5f0500f231296dd3c6ed6797c8087c0354c37862772476a205a5363",
+        "psychometrie_vocal_02": "a4e44ceba2eb46868d7f2941c6470c787dcb772d26dbbed79af79e517cd5199a",
+        "psychometrie_vocal_03": "11d5a9074b25e7f46c2530b17c6f715a52823d4af8d4c53ee78f7437bfe5b791",
+        "psychometrie_vocal_04": "c6fef4c85c4e427dd541ec4bc8b225f44676980cdfe7fb0c95eb944846d95209",
+        "psychometrie_vocal_05": "56fd6abb125abb0cf8a4aa15094faad7ff4a97ae9dd0e8bb796f7b7657fa577c",
+        "psychometrie_vocal_06": "aa0b1655140212affc6289ec23c40d9b1356f24d6201ab3a1a9c0de46b67de1f",
+        "psychometrie_vocal_07": "3e1ebe7120c399e034b6227c54b3e112f76abc1a16e77cbe3f2dd9207c8b7502",
+        "psychometrie_vocal_08": "bd14eb4de7c76463ee15a6263c296116d50c3574c7940e6cbab4441b800b635f",
+        "psychometrie_vocal_09": "a03526060df8326a657e180ea3ef03cb0077180bc1d9185e8233f634987133c8",
+        "psychometrie_vocal_10": "ee7aa1cc4fd8947b4896ee81ba936b18afce1fca110f22af0debacdc44bf3e03",
+        "psychometrie_vocal_11": "3b25445534987e6ff3fb5b7487ded12e212f24281e313d6b483dcea3e5fc7776",
+        "psychometrie_Psychometrie_Pack_complet_avec_MP3.zip": "b430ef0712ea73d15fcdd7326ce4c5a47d9def334f46963e2b355341340ffe99",
+        "psychometrie_Psychometrie_Flashcards_141.csv": "bdc9305ee144bb2a160db363fc7ef69724d112e59d841f67f67b329e97e1ff8a",
+        "psychometrie_Psychometrie_Flashcards_141.tsv": "87cab83245c846e415e9732ed4b792e06bdb8a2b8c90b7f7f2c3b122b40d4bc0",
+        "psychometrie_Psychometrie_Flashcards_141.json": "25684a9cffcde52b73972cca5db7e570a3f63f09bca0a65c212942b3fe7e555a",
+        "psychometrie_Psychometrie_Scripts_vocaux_11_TXT.zip": "664185e33904fcdbc2ceda8ca644795a5f8789c6553389f0dc089260872c4d7c"
+      },
+      "publishedVerification": {
+        "status": "PENDING_DEPLOYMENT",
+        "source": "github_pages_file_staged",
+        "pdfSha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728"
+      },
+      "visualOwnerReview": {
+        "status": "owner_accepted",
+        "reference": "communication_written_v5.3_2026-10-24",
+        "method": "pdf_all_pages_checked",
+        "pagesChecked": 21,
+        "reviewerDecision": "explicit_publication_acceptance",
+        "inspectionBy": "agent",
+        "acceptanceBy": "owner",
+        "authorization": "explicit_go_publication",
+        "privateEvidenceSha256": "105307120f3d99274139048d3838672eb2c1193192b8d30aa033355ffdd36aa4",
+        "ownerApprovalEvidenceSha256": "dd4c56a741af21723e6bbaf463df63f433519ff511fe14bf42150971726597cd",
+        "criteria": {
+          "NO_GENERATED_IMAGES": "PASS",
+          "PURPLE_BANDS_EVERY_PAGE": "PASS",
+          "TEXT_SELECTABLE": "PASS",
+          "NO_TECHNICAL_NOTES": "PASS"
+        },
+        "reviewedPdfSha256s": {
+          "psychometrie_fiche_20261112": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728"
+        }
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+            "pageCount": 21,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "status": "owner_accepted",
+            "method": "agent_all_pages_inspected_owner_publication_accepted",
+            "decision": "explicit_publication_acceptance",
+            "reviewerRole": "agent",
+            "acceptanceBy": "owner",
+            "authorization": "explicit_go_publication",
+            "ownerApprovalEvidenceSha256": "dd4c56a741af21723e6bbaf463df63f433519ff511fe14bf42150971726597cd",
+            "reviewedAt": "2026-11-13T12:43:32.979947+00:00",
+            "privateEvidenceSha256": "105307120f3d99274139048d3838672eb2c1193192b8d30aa033355ffdd36aa4",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "ALL_PAGES_RENDERED_AND_INSPECTED": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            }
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "337bf7b6f5f83a89f8110088256e24476dc2338b625fdbd509170734611dc5e8",
+            "pageCount": 21,
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "status": "owner_accepted",
+            "method": "agent_all_pages_inspected_owner_publication_accepted",
+            "decision": "explicit_publication_acceptance",
+            "reviewerRole": "agent",
+            "acceptanceBy": "owner",
+            "authorization": "explicit_go_publication",
+            "ownerApprovalEvidenceSha256": "dd4c56a741af21723e6bbaf463df63f433519ff511fe14bf42150971726597cd",
+            "reviewedAt": "2026-11-13T12:43:32.979947+00:00",
+            "privateEvidenceSha256": "08afc689bfb996258a2bf4a7636c12d5352cf26006381aebf1d76e18f180aa03",
+            "checks": {
+              "MODEL_COMPARISON": "PASS",
+              "BANDS_AND_TYPOGRAPHY": "PASS",
+              "MARGINS_AND_HIERARCHY": "PASS",
+              "COLOR_AND_BOXES": "PASS",
+              "NO_CLIPPING_OR_OVERLAP": "PASS",
+              "ALL_PAGES_RENDERED_AND_INSPECTED": "PASS",
+              "STRUCTURE_AND_PAGINATION": "PASS"
+            }
+          }
+        }
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "ea3630fd3237f749d9d246b67400458f00c467bbdd22ab762d4581983be35728",
+        "privateEvidenceSha256": "6456180288303d9e889e9c209d8a3adba2a98163bc948fbe2c391616474350fe",
+        "reviewedAt": "2026-11-13T12:43:32+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "complete",
+        "inheritanceReview": "not_applicable_new_course",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "full_review_recorded"
+      },
+      "audioOwnerReview": {
+        "status": "publication_authorized_listening_reservations_disclosed",
+        "humanListeningAttested": false,
+        "spokenScriptMatchVerified": false,
+        "fullTechnicalDecode": true,
+        "privateEvidenceSha256": "9c6a8c016bfc75a445ca39e81e5f208c22f688b44d6cfdcdd7cc1482c9fb7a7f",
+        "artifactSha256s": {
+          "psychometrie_vocal_01": "bf9d26d5b5f0500f231296dd3c6ed6797c8087c0354c37862772476a205a5363",
+          "psychometrie_vocal_02": "a4e44ceba2eb46868d7f2941c6470c787dcb772d26dbbed79af79e517cd5199a",
+          "psychometrie_vocal_03": "11d5a9074b25e7f46c2530b17c6f715a52823d4af8d4c53ee78f7437bfe5b791",
+          "psychometrie_vocal_04": "c6fef4c85c4e427dd541ec4bc8b225f44676980cdfe7fb0c95eb944846d95209",
+          "psychometrie_vocal_05": "56fd6abb125abb0cf8a4aa15094faad7ff4a97ae9dd0e8bb796f7b7657fa577c",
+          "psychometrie_vocal_06": "aa0b1655140212affc6289ec23c40d9b1356f24d6201ab3a1a9c0de46b67de1f",
+          "psychometrie_vocal_07": "3e1ebe7120c399e034b6227c54b3e112f76abc1a16e77cbe3f2dd9207c8b7502",
+          "psychometrie_vocal_08": "bd14eb4de7c76463ee15a6263c296116d50c3574c7940e6cbab4441b800b635f",
+          "psychometrie_vocal_09": "a03526060df8326a657e180ea3ef03cb0077180bc1d9185e8233f634987133c8",
+          "psychometrie_vocal_10": "ee7aa1cc4fd8947b4896ee81ba936b18afce1fca110f22af0debacdc44bf3e03",
+          "psychometrie_vocal_11": "3b25445534987e6ff3fb5b7487ded12e212f24281e313d6b483dcea3e5fc7776"
+        }
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "course_package",
+        "approvedAt": "2026-11-13T12:43:32.979947+00:00",
+        "bundleSha256": "237a9b99ce22ecb90db2bd3268e3f6701c273c177f2c9ab6b04e221a495fa803"
+      },
+      "ownerApprovalEvidenceSha256": "dd4c56a741af21723e6bbaf463df63f433519ff511fe14bf42150971726597cd",
+      "firstReleaseBaseline": {
+        "contract": "additive_course_rows_v1",
+        "previousCourseIds": [
+          "biomolecules",
+          "cellules_tissus",
+          "homeostasie",
+          "parasites_champignons",
+          "genetique",
+          "niveaux_organisation",
+          "physiopathologie_infections",
+          "diagnostic_virologie",
+          "virus",
+          "systeme_urinaire",
+          "systeme_endocrinien",
+          "systeme_immunitaire",
+          "systeme_respiratoire",
+          "systeme_cardiovasculaire",
+          "prevention_ias_asepsie",
+          "systeme_nerveux",
+          "infections_neuro_meningees",
+          "calculs_doses_mathematiques",
+          "systeme_digestif",
+          "appareil_locomoteur",
+          "traumatologie",
+          "histoire_profession_infirmiere",
+          "epistemologie_savoirs",
+          "ethique_infirmiere",
+          "douleur",
+          "parametres_vitaux",
+          "grands_brules",
+          "infections_cutanees",
+          "diagnostic_bacteriologie",
+          "infections_urinaires",
+          "arthrose",
+          "chirurgie_orthopedique",
+          "rhumatismes_inflammatoires",
+          "pathologies_microcristallines_osteoporose",
+          "competences_psychosociales",
+          "methodes_travail_reussite",
+          "vaccination_prs",
+          "infections_pulmonaires_bacteriennes",
+          "infections_respiratoires_virales",
+          "ist_hors_vih",
+          "introduction_droit",
+          "psychologie_sante",
+          "pharmacologie",
+          "administration_medicamenteuse",
+          "systeme_reproducteur",
+          "plaies_pansements",
+          "stomatotherapie",
+          "droits_patients",
+          "pssm",
+          "sante_mondiale_sante_france",
+          "responsabilite_exercice_professionnel",
+          "d1_communication_td1",
+          "d1_posture_professionnelle_td2",
+          "d1_bientraitance",
+          "d1_relation_soignant_soigne_ecoute_active",
+          "theorie_gestion_symptomes_td",
+          "fievre_retour_voyage_paludisme",
+          "gestion_stress_professionnel",
+          "vih_b13_20261027",
+          "entretien_infirmier",
+          "organes_des_sens_b11",
+          "roles_missions_ide",
+          "diarrhees_infectieuses",
+          "psychologie_sociale",
+          "offre_soins_systeme_sante",
+          "organisation_systeme_sante",
+          "hepatites_virales",
+          "etapes_de_la_vie",
+          "determinants_sante",
+          "psychopathologie",
+          "psychologie_developpement"
+        ],
+        "vocabularyRowsSha256": "267e9ca39717372c770995f9b753dd29157223b30e5ada91e2e791f8720a59fd",
+        "rowSha256s": {
+          "vocals.json": "786ffc18f4c151db855a874c82d1bfe1c3617773cc6fa9b82892c81d3cb3dacd",
+          "sheets-1.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sheets-2.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sheets-3.json": "1ecdce8b9403aef39344637c8d524f42e08682ce90fa8a4a8719459f7645fd2f"
+        }
+      },
+      "flashcardDeckPath": "assets/psychometrie-20261112/Psychometrie_Flashcards_141.json",
+      "flashcardStandaloneReview": {
+        "status": "exact_self_contained_cards_reviewed",
+        "privateEvidenceSha256": "c3a7b5437efc5a610ebf626d8e67ce14351522d8f146990db2d8b6feed4664a0",
+        "cards": [
+          {
+            "questionId": "PSYM-Q049",
+            "cardId": "psychometrie_v091",
+            "sha256": "65fd1dcd67aa58a56094a22f76b2321499b11ce02310a728e5a14f7d3b206bc3"
+          },
+          {
+            "questionId": "PSYM-Q031",
+            "cardId": "psychometrie_v064",
+            "sha256": "abca9a6ee6e0d7a21f226d0108c484a1ef944fb92abdf78dd2583137cf6303d8"
+          },
+          {
+            "questionId": "PSYM-Q026",
+            "cardId": "psychometrie_v060",
+            "sha256": "017dc47e9e15174ab89b22799fe99f14e6dd258f74f6835f38431d8cbbcebec6"
+          },
+          {
+            "questionId": "PSYM-Q026",
+            "cardId": "psychometrie_v059",
+            "sha256": "8f3e0738f669d4916ef1733631724158a75b1e3308bdd2a17d8bdc8292e02522"
+          },
+          {
+            "questionId": "PSYM-Q048",
+            "cardId": "psychometrie_v090",
+            "sha256": "91913161d143cc0f57267f0dc7159a6978f7701bf7565df0deb6587a771eeecf"
+          },
+          {
+            "questionId": "PSYM-Q030",
+            "cardId": "psychometrie_v063",
+            "sha256": "3162865a554b8a0af8d4804f40caa242d536c9aad0fee217e516795594f77a59"
+          },
+          {
+            "questionId": "PSYM-Q024",
+            "cardId": "psychometrie_c024",
+            "sha256": "13f722f57c34a27fbb6a6925df916b2d5f0c94aa4d49cabf3dd958043ae33512"
+          },
+          {
+            "questionId": "PSYM-Q024",
+            "cardId": "psychometrie_v042",
+            "sha256": "864d9273203e620590562e7e1fefa4c804e435964b4702484e5bb53638a4ef21"
+          },
+          {
+            "questionId": "PSYM-Q028",
+            "cardId": "psychometrie_v058",
+            "sha256": "75063a7c76aed7ef89cba3abdab7d9d5bb5fce4393fa6aa6b29e3d3676d0cb7f"
+          },
+          {
+            "questionId": "PSYM-Q035",
+            "cardId": "psychometrie_v068",
+            "sha256": "5bb52eb7b54c66ffa487cd475f439962c7ea41150be4a64fce2bb7fe604e3d10"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v038",
+            "sha256": "2c4b5bb79b14ed64b30e423d7b955bc160ac4125c7557658a35a4302a7f6e835"
+          },
+          {
+            "questionId": "PSYM-Q034",
+            "cardId": "psychometrie_v099",
+            "sha256": "6a60647b15ba5e795964b21f2aefe4b05d60be9a9a5b63af664e7a30ce53f400"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v037",
+            "sha256": "bacbf277c128803d020b988cec490fc29874a15c46d1dd60d1ec43b01e59949d"
+          },
+          {
+            "questionId": "PSYM-Q020",
+            "cardId": "psychometrie_v039",
+            "sha256": "ce13e66f961706552f99bf739bd0d7a4896c3b59c02ff1cfe6516124f77c46d7"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v043",
+            "sha256": "81f2f813557e44ccdf2a3070de0924bd4c71af9862bbb67b92f82426249efcc6"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v044",
+            "sha256": "27f9b435de808dd76e57b24582bf9b5b3dca605bd995a93707157be744aff5df"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v045",
+            "sha256": "991760eee195a80dbbed551395cdb2b8f986aaee303bf791dd325b945633e194"
+          },
+          {
+            "questionId": "PSYM-Q033",
+            "cardId": "psychometrie_v076",
+            "sha256": "1bee04e033dbe3638071a463a0ef4a9ec9c38efec09b1a8acb5d5f270765b0c5"
+          },
+          {
+            "questionId": "PSYM-Q021",
+            "cardId": "psychometrie_v041",
+            "sha256": "72d472c6fb91e7f2dfaa01a57a60f6064f61973fd16f85d9fd9207bc5b1789a5"
+          }
+        ]
+      }
     }
   ],
   "supplementalResourceApprovals": [

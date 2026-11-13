@@ -1,3 +1,4 @@
+import {isReviewedCompleteBundle,validateReviewedCompleteBundle} from './reviewed-complete-bundle-contract.mjs';
 // Contrôle des premières publications pédagogiques (cours nouveaux ou pré-inscrits).
 // Aucun accès au Drive ni à des documents privés : seules les données Git sont lues.
 import fs from 'node:fs';
@@ -100,6 +101,7 @@ for (const course of firstPublished) {
   assert.equal(delivery?.validated, true, course.id + ' : validation de livraison absente');
   assert.ok(['complete', 'awaiting_mp3', 'partial'].includes(delivery.status),
     course.id + ' : statut de livraison invalide');
+  if(isReviewedCompleteBundle(delivery)){validateReviewedCompleteBundle(course,delivery,current.sheets,{vocabulary:read('vocabulaire-v1.json').entries,vocals:current.vocals,infographics:current.infographics});continue;}
   if(delivery.deliveryMode==='reviewed_written_bundle'){
     validateReviewedWrittenBundle(course,delivery,current.sheets,{vocabulary:read('vocabulaire-v1.json').entries,vocals:current.vocals,infographics:current.infographics});
     validateAnatomyRouting(course,fs.readFileSync('v82-nav-anatomy.js','utf8'),current.infographics);
