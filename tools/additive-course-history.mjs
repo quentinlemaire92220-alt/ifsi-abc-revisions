@@ -3,8 +3,16 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+import {validateAdditiveWrittenQcm} from './additive-written-qcm-contract.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 export function beforeAdditiveCourses(file,value,manifest){
+ for(const r of (manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='additive_written_qcm_v1')){
+  const {publicationApproval,...revision}=r;
+  validateAdditiveWrittenQcm(r,manifest,{revision,course:read('course-registry-v741.json').courses.find(c=>c.id===r.courseId),sheets:[1,2,3].flatMap(n=>read(`sheets-${n}.json`)).filter(s=>s.courseId===r.courseId),vocals:read('vocals.json').filter(v=>v.courseId===r.courseId),vocabulary:read('vocabulaire-v1.json').entries.filter(v=>v.courseIds?.includes(r.courseId)),bank:read(r.bankPath)});
+  if(file==='docs/course-deliveries.json'&&value.scopedCourseRevisions)value={...value,scopedCourseRevisions:value.scopedCourseRevisions.filter(x=>x.id!==r.id)};
+  else if(file==='questions-5.json')value=value.filter(q=>!r.addedQuestionIds.includes(q.id));
+  else if(/^sheets-[123]\.json$/.test(file))value=value.filter(s=>s.resourceId!==r.sheetResourceId);
+ }
  // Reconstruct the exact first-release rows before the separately checked,
  // additive official-support revision. Never change its original signature.
  for(const r of (manifest.scopedCourseRevisions||[]).filter(r=>r.profile==='development_official_update_v1')){

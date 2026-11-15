@@ -16251,6 +16251,288 @@
         "psydev_v221",
         "psydev_v222"
       ]
+    },
+    {
+      "contract": "scoped_course_revision_v1",
+      "profile": "additive_written_qcm_v1",
+      "id": "bientraitance_written_qcm_20261115",
+      "courseId": "d1_bientraitance",
+      "status": "approved",
+      "baselinePath": "docs/course-revisions/bientraitance_20261115_baseline.json",
+      "baselineSha256": "4f073ab8dec20dbe449e5504c7ed249cac080da99fa643acf6afd364ccd11c2d",
+      "bankPath": "data/course-banks/bientraitance_20261115.json",
+      "bankSha256": "891ee579c4440e2070c4e3bda242f60f118f551d4c36a632c67b7c9baac99281",
+      "questionIds": [
+        "D1_BIENTRAITANCE_P01_001",
+        "D1_BIENTRAITANCE_P01_002",
+        "D1_BIENTRAITANCE_P01_003",
+        "D1_BIENTRAITANCE_P01_004",
+        "D1_BIENTRAITANCE_P01_005",
+        "D1_BIENTRAITANCE_P01_006",
+        "D1_BIENTRAITANCE_P01_007",
+        "D1_BIENTRAITANCE_P01_008",
+        "D1_BIENTRAITANCE_P01_009",
+        "D1_BIENTRAITANCE_P01_010",
+        "D1_BIENTRAITANCE_P01_011",
+        "D1_BIENTRAITANCE_P01_012",
+        "D1_BIENTRAITANCE_P01_013",
+        "D1_BIENTRAITANCE_P01_014",
+        "D1_BIENTRAITANCE_P01_015",
+        "D1_BIENTRAITANCE_P01_016",
+        "D1_BIENTRAITANCE_P01_017",
+        "D1_BIENTRAITANCE_P01_018",
+        "D1_BIENTRAITANCE_P01_019",
+        "D1_BIENTRAITANCE_P01_020",
+        "D1_BIENTRAITANCE_P01_021",
+        "D1_BIENTRAITANCE_P01_022",
+        "D1_BIENTRAITANCE_P01_023",
+        "D1_BIENTRAITANCE_P01_024",
+        "D1_BIENTRAITANCE_P01_025",
+        "D1_BIENTRAITANCE_P01_026",
+        "D1_BIENTRAITANCE_P01_027",
+        "D1_BIENTRAITANCE_P01_028",
+        "D1_BIENTRAITANCE_P01_029",
+        "D1_BIENTRAITANCE_P01_030",
+        "D1_BIENTRAITANCE_P01_031",
+        "D1_BIENTRAITANCE_P01_032",
+        "D1_BIENTRAITANCE_P01_033",
+        "D1_BIENTRAITANCE_P01_034",
+        "D1_BIENTRAITANCE_P01_035",
+        "D1_BIENTRAITANCE_P01_036",
+        "D1_BIENTRAITANCE_P01_037",
+        "D1_BIENTRAITANCE_P01_038",
+        "D1_BIENTRAITANCE_P01_039",
+        "D1_BIENTRAITANCE_P01_040",
+        "D1_ADD_20261113_d1_bientraitance_001",
+        "D1_ADD_20261113_d1_bientraitance_002",
+        "D1_ADD_20261113_d1_bientraitance_003",
+        "D1_ADD_20261113_d1_bientraitance_004",
+        "D1_ADD_20261113_d1_bientraitance_005",
+        "D1_ADD_20261113_d1_bientraitance_006",
+        "D1_VERIF_20261113_d1_bientraitance_007",
+        "D1_VERIF_20261113_d1_bientraitance_008",
+        "D1_VERIF_20261113_d1_bientraitance_009",
+        "D1_VERIF_20261113_d1_bientraitance_010",
+        "D1_VERIF_20261113_d1_bientraitance_011",
+        "D1_VERIF_20261113_d1_bientraitance_012",
+        "D1_BIEN_OFFICIEL_20261115_001",
+        "D1_BIEN_OFFICIEL_20261115_002",
+        "D1_BIEN_OFFICIEL_20261115_003",
+        "D1_BIEN_OFFICIEL_20261115_004",
+        "D1_BIEN_OFFICIEL_20261115_005",
+        "D1_BIEN_OFFICIEL_20261115_006",
+        "D1_BIEN_OFFICIEL_20261115_007",
+        "D1_BIEN_OFFICIEL_20261115_008",
+        "D1_BIEN_RELECTURE_20261115_001",
+        "D1_BIEN_RELECTURE_20261115_002",
+        "D1_BIEN_RELECTURE_20261115_003"
+      ],
+      "addedQuestionIds": [
+        "D1_ADD_20261113_d1_bientraitance_001",
+        "D1_ADD_20261113_d1_bientraitance_002",
+        "D1_ADD_20261113_d1_bientraitance_003",
+        "D1_ADD_20261113_d1_bientraitance_004",
+        "D1_ADD_20261113_d1_bientraitance_005",
+        "D1_ADD_20261113_d1_bientraitance_006",
+        "D1_VERIF_20261113_d1_bientraitance_007",
+        "D1_VERIF_20261113_d1_bientraitance_008",
+        "D1_VERIF_20261113_d1_bientraitance_009",
+        "D1_VERIF_20261113_d1_bientraitance_010",
+        "D1_VERIF_20261113_d1_bientraitance_011",
+        "D1_VERIF_20261113_d1_bientraitance_012",
+        "D1_BIEN_OFFICIEL_20261115_001",
+        "D1_BIEN_OFFICIEL_20261115_002",
+        "D1_BIEN_OFFICIEL_20261115_003",
+        "D1_BIEN_OFFICIEL_20261115_004",
+        "D1_BIEN_OFFICIEL_20261115_005",
+        "D1_BIEN_OFFICIEL_20261115_006",
+        "D1_BIEN_OFFICIEL_20261115_007",
+        "D1_BIEN_OFFICIEL_20261115_008",
+        "D1_BIEN_RELECTURE_20261115_001",
+        "D1_BIEN_RELECTURE_20261115_002",
+        "D1_BIEN_RELECTURE_20261115_003"
+      ],
+      "vocabularyEntryIds": [
+        "bientraitance-bientraitance-p01",
+        "bientraitance-maltraitance-p01",
+        "bientraitance-vulnerabilite-p01",
+        "bientraitance-dignite-p01",
+        "bientraitance-intimite-p01",
+        "bientraitance-autonomie-p01",
+        "bientraitance-consentement-p01",
+        "bientraitance-securite-morale-p01"
+      ],
+      "addedVocabularyEntryIds": [],
+      "sheetResourceId": "d1_bientraitance_written_20261115",
+      "publicArtifacts": [
+        {
+          "role": "sheet",
+          "path": "assets/bientraitance-20261115/D1_Bientraitance_Fiche_Complete.pdf",
+          "sha256": "0e00ea0364cae68db2b776a548bb0287b8557cb6e4059f87f4ad49945860f4ab",
+          "bytes": 1577362,
+          "pageCount": 22
+        },
+        {
+          "role": "qcm",
+          "path": "assets/bientraitance-20261115/D1_Bientraitance_QCM_63_Corriges.pdf",
+          "sha256": "ee3a989cd7d2a0b24a13a714f06e50c9a1bbaefaffaf41b401af5194eaff44b0",
+          "bytes": 459952,
+          "pageCount": 24
+        }
+      ],
+      "audioArtifacts": [],
+      "audioOwnerReview": {
+        "status": "not_applicable_no_new_audio"
+      },
+      "templateConformance": {
+        "contract": "ifsi_pdf_template_v3",
+        "artifacts": {
+          "sheet": {
+            "templateId": "communication_written_v5.3_2026-10-24",
+            "templateSha256": "223b163f243373c03d87b8e7b8ec8ffd60a06ab883c40dabfa7a7dbbfe4b30cf",
+            "artifactSha256": "0e00ea0364cae68db2b776a548bb0287b8557cb6e4059f87f4ad49945860f4ab",
+            "pageCount": 22,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "reviewedAt": "2026-11-15T17:20:18.441454+00:00",
+            "privateEvidenceSha256": "49a39e17d6b6cf2e04cfdfaceb5746f09623fd30f56f936d1c4607e3e48f120d",
+            "ownerApprovalEvidenceSha256": "ffb0d0e7d6d7b57411b3e3a023f0930825d4b6d2f595ffccd0d54cf9cd45f09f",
+            "scope": "All pages inspected at 100 and 200 percent. Historical first-page composition retained and disclosed before explicit publication authorization; no claim of strict model identity."
+          },
+          "qcm": {
+            "templateId": "communication_qcm_2026-10-24",
+            "templateSha256": "199f8d4fe7dcefcd76a8be90f097d652c0d1854407c91ce370a9099844e10ec7",
+            "artifactSha256": "ee3a989cd7d2a0b24a13a714f06e50c9a1bbaefaffaf41b401af5194eaff44b0",
+            "pageCount": 24,
+            "status": "assistant_reviewed",
+            "ownerAcceptance": "explicit_application_update_authorized",
+            "pagesChecked": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "reviewedAt": "2026-11-15T17:20:18.441454+00:00",
+            "privateEvidenceSha256": "49a39e17d6b6cf2e04cfdfaceb5746f09623fd30f56f936d1c4607e3e48f120d",
+            "ownerApprovalEvidenceSha256": "ffb0d0e7d6d7b57411b3e3a023f0930825d4b6d2f595ffccd0d54cf9cd45f09f",
+            "scope": "All pages inspected at 100 and 200 percent. Historical first-page composition retained and disclosed before explicit publication authorization; no claim of strict model identity."
+          }
+        }
+      },
+      "assistantPdfReview": {
+        "allPagesChecked": true,
+        "pageCounts": {
+          "sheet": 22,
+          "qcm": 24
+        },
+        "privateEvidenceSha256": "49a39e17d6b6cf2e04cfdfaceb5746f09623fd30f56f936d1c4607e3e48f120d"
+      },
+      "ownerAcceptance": {
+        "status": "explicit_application_update_authorized",
+        "approvedAt": "2026-11-15T17:20:18.441454+00:00",
+        "privateEvidenceSha256": "ffb0d0e7d6d7b57411b3e3a023f0930825d4b6d2f595ffccd0d54cf9cd45f09f"
+      },
+      "sourceReview": {
+        "officialSupportAvailable": true,
+        "officialSlidesReviewed": 41,
+        "receivedOralPartsReviewed": 1,
+        "fullProvidedTranscriptReviewed": true,
+        "oralCoverageCertifiedComplete": false,
+        "embeddedVideoAudioCertifiedComplete": false,
+        "documentaryReservationsOpen": true,
+        "independentClinicalSignoff": false,
+        "externalResearchPerformed": false,
+        "privateEvidenceSha256": "a5c123afacef5187c74213bf7ded33d91e35ddc6412863f1ba26f29563e0ce7b"
+      },
+      "sourceAttributionReview": {
+        "status": "exact_fields_reviewed_self_contained",
+        "privateEvidenceSha256": "2e13c2183ab9d07806a2b146a7ad5365b1445e4ad928bcc8e7853eb1a3aa5557",
+        "fields": [
+          {
+            "questionId": "D1_BIEN_OFFICIEL_20261115_002",
+            "field": "question",
+            "sha256": "fed406a8dbdf6326d146ed1154e7f9bb426d66f6e3f4753244f536575f1a48a2"
+          },
+          {
+            "questionId": "D1_BIEN_OFFICIEL_20261115_003",
+            "field": "question",
+            "sha256": "f84fa9df85ad2d9ebf3fdfa9a30beb68c32f0f5f5f1ec2d3e8f13b0b33b91bc4"
+          },
+          {
+            "questionId": "D1_BIEN_RELECTURE_20261115_001",
+            "field": "question",
+            "sha256": "19ceda9c4fde7b631353b821fdd5962595cc5c05dd79bf3e5e8b9349581cb503"
+          },
+          {
+            "questionId": "D1_BIEN_RELECTURE_20261115_001",
+            "field": "explanation",
+            "sha256": "8072d206e899638e9676d23bbed3010b70f574057627529ce158344c2da535c5"
+          }
+        ]
+      },
+      "pedagogicalNonRegression": {
+        "contract": "ifsi_pedagogical_non_regression_v149",
+        "sheetSha256": "0e00ea0364cae68db2b776a548bb0287b8557cb6e4059f87f4ad49945860f4ab",
+        "privateEvidenceSha256": "a5c123afacef5187c74213bf7ded33d91e35ddc6412863f1ba26f29563e0ce7b",
+        "reviewedAt": "2026-11-15T17:20:18+00:00",
+        "sourceInventory": "reviewed",
+        "sourceCoverage": "limited",
+        "inheritanceReview": "compared",
+        "depthReview": "reviewed",
+        "differencesReview": "reviewed",
+        "decision": "scoped_provisional_review_recorded"
+      },
+      "publicationApproval": {
+        "status": "approved",
+        "authorization": "explicit_go_publication",
+        "scope": "scoped_course_revision",
+        "approvedAt": "2026-11-15T17:20:18.441454+00:00",
+        "bundleSha256": "bc95d926a8c5e2c0eb30cb8106531fdf9626a10c41333e3681de9adc52babb7a"
+      }
     }
   ],
   "consolidatedCourseRevisions": [

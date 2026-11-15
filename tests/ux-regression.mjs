@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {validateScopedRevisions} from '../tools/scoped-course-revision-contract.mjs';
 
 const read=p=>fs.readFileSync(new URL('../'+p, import.meta.url),'utf8');
 const meta=JSON.parse(read('build-meta.json'));
@@ -148,8 +149,19 @@ for(const token of ['v74-original-support','Support du cours (documents sources)
 }
 // Les PDF de QCM restent classés avec les entraînements, jamais avec les supports sources.
 const bientraitance=registered.get('d1_bientraitance');
-assert.equal(bientraitance?.qcmPdfQuestionCount,40,'La bientraitance doit conserver ses 40 questions PDF');
-assert.match(bientraitance?.qcmPdfUrl||'',/D1_Bientraitance_QCM_40_Corriges\.pdf$/,'Le PDF QCM de bientraitance doit rester lié');
+const publications=JSON.parse(read('docs/course-deliveries.json'));
+const bientraitanceRevision=publications.scopedCourseRevisions?.find(r=>r.courseId==='d1_bientraitance'&&r.profile==='additive_written_qcm_v1');
+if(bientraitanceRevision){
+ validateScopedRevisions(publications);
+ assert.equal(bientraitance.qcmPdfQuestionCount,bientraitanceRevision.questionIds.length);
+ assert.equal(bientraitance.qcmPdfUrl,'https://quentinlemaire92220-alt.github.io/ifsi-abc-revisions/'+bientraitanceRevision.publicArtifacts.find(a=>a.role==='qcm').path);
+ const original=JSON.parse(read(bientraitanceRevision.baselinePath)).course;
+ assert.equal(original.qcmPdfQuestionCount,40);
+ assert.match(original.qcmPdfUrl,/D1_Bientraitance_QCM_40_Corriges\.pdf$/);
+}else{
+ assert.equal(bientraitance?.qcmPdfQuestionCount,40,'La bientraitance doit conserver ses 40 questions PDF');
+ assert.match(bientraitance?.qcmPdfUrl||'',/D1_Bientraitance_QCM_40_Corriges\.pdf$/,'Le PDF QCM de bientraitance doit rester lié');
+}
 for(const token of ['v74-qcm-section','🧠 QCM','const qcmDocuments=','const qcmPdfCards=','isQcmDocument74(x)','!isQcmDocument74(x)'])
  assert.ok(course.includes(token),'Le bloc dédié QCM est incomplet : '+token);
 const qcmDisplay=course.indexOf('v74-qcm-section');

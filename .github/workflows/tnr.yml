@@ -74,6 +74,7 @@ jobs:
           node tests/complete-written-revision.mjs
           node tests/psychopathologie-documents.mjs
           node tests/reviewed-written-audio-revision.mjs
+          node tests/additive-written-qcm.mjs
           node tests/unified-sheet-media.mjs
           node tests/reviewed-complete-bundle-test.mjs
 
@@ -264,6 +265,7 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           python tests/reviewed-written-audio-pdf.py
+          python tests/additive-written-qcm-pdf.py
           python tests/qcm-flashcards-revision-pdf.py
 
       - name: Trame V3 — bloquer les nouveaux PDF sans conformité et GO graphique
