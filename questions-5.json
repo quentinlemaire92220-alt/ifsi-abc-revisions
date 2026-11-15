@@ -62646,5 +62646,726 @@
       }
     ],
     "course": "Prévention et promotion de la santé"
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_001",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Bienveillance et bientraitance",
+    "number": 41,
+    "difficulty": "easy",
+    "question": "Quelle distinction entre bienveillance et bientraitance est pertinente ?",
+    "choices": [
+      "La bienveillance renvoie à une intention attentive envers autrui.",
+      "La bientraitance ne concerne que la gentillesse individuelle.",
+      "La bientraitance engage des pratiques et une réflexion collective.",
+      "Une bonne intention suffit à garantir un effet adapté.",
+      "Les effets sur la personne doivent être réévalués."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Cette intention doit être confrontée au vécu de la personne. B : Les dimensions professionnelles et collectives comptent aussi. C : Elle engage l’organisation de l’accompagnement. D : L’effet peut différer de l’intention. E : La réévaluation permet l’ajustement.",
+    "rationales": [
+      "Cette intention doit être confrontée au vécu de la personne.",
+      "Les dimensions professionnelles et collectives comptent aussi.",
+      "Elle engage l’organisation de l’accompagnement.",
+      "L’effet peut différer de l’intention.",
+      "La réévaluation permet l’ajustement."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_002",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Bienveillance et bientraitance",
+    "number": 42,
+    "difficulty": "medium",
+    "question": "Une aide totale non demandée peut-elle poser question malgré une intention bienveillante ?",
+    "choices": [
+      "Oui, si elle réduit inutilement les capacités mobilisées par la personne.",
+      "Non, une bonne intention exclut toute difficulté.",
+      "Oui, si les souhaits de la personne n’ont pas été recherchés.",
+      "Non, gagner du temps est toujours prioritaire.",
+      "Oui, l’effet réel et le besoin d’aide restent à évaluer."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : L’aide peut se substituer à une participation possible. B : Intention et effet ne sont pas identiques. C : Le choix de la personne compte dans la démarche. D : Le rythme du service n’efface pas les besoins de la personne. E : Une aide doit être ajustée à la situation.",
+    "rationales": [
+      "L’aide peut se substituer à une participation possible.",
+      "Intention et effet ne sont pas identiques.",
+      "Le choix de la personne compte dans la démarche.",
+      "Le rythme du service n’efface pas les besoins de la personne.",
+      "Une aide doit être ajustée à la situation."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_003",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Bienveillance et bientraitance",
+    "number": 43,
+    "difficulty": "easy",
+    "question": "Accompagner une personne signifie principalement…",
+    "choices": [
+      "Choisir à sa place dès que l’on pense savoir ce qui lui convient.",
+      "La laisser seule pour respecter son autonomie.",
+      "Soutenir ses ressources et son cheminement.",
+      "Lui imposer un itinéraire identique à celui du professionnel.",
+      "Rechercher avec elle une aide adaptée."
+    ],
+    "answers": [
+      2,
+      4
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : La substitution systématique écarte la participation. B : L’autonomie n’exclut pas une aide souhaitée. C : Le soutien s’appuie sur les capacités et priorités de la personne. D : Le projet doit être ajusté à la personne. E : La recherche partagée respecte ses choix.",
+    "rationales": [
+      "La substitution systématique écarte la participation.",
+      "L’autonomie n’exclut pas une aide souhaitée.",
+      "Le soutien s’appuie sur les capacités et priorités de la personne.",
+      "Le projet doit être ajusté à la personne.",
+      "La recherche partagée respecte ses choix."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_004",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Bienveillance et bientraitance",
+    "number": 44,
+    "difficulty": "medium",
+    "question": "La considération positive inconditionnelle implique…",
+    "choices": [
+      "De respecter la personne même lorsqu’elle n’adhère pas à la proposition du soignant.",
+      "De reconnaître ses ressources.",
+      "D’approuver tout comportement.",
+      "D’effacer les limites professionnelles.",
+      "De supprimer toute possibilité de dialogue."
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Le respect n’est pas conditionné à l’accord. B : Les capacités de la personne participent à la relation d’aide. C : Respecter la personne ne signifie pas tout approuver. D : Le cadre professionnel demeure. E : La posture vise au contraire l’expression et le dialogue.",
+    "rationales": [
+      "Le respect n’est pas conditionné à l’accord.",
+      "Les capacités de la personne participent à la relation d’aide.",
+      "Respecter la personne ne signifie pas tout approuver.",
+      "Le cadre professionnel demeure.",
+      "La posture vise au contraire l’expression et le dialogue."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_005",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Application écrite - aider sans se substituer",
+    "number": 45,
+    "difficulty": "hard",
+    "question": "Une soignante nourrit une personne capable de manger seule sans lui demander son avis. Quelle analyse est prudente ?",
+    "choices": [
+      "La personne a forcément ressenti une humiliation.",
+      "Le fait observable est une aide totale sans recherche du souhait.",
+      "L’autonomie et la participation peuvent être réduites.",
+      "Le ressenti doit être exploré plutôt qu’affirmé.",
+      "L’intention annoncée prouve que la pratique est adaptée."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le ressenti n’a pas été recueilli. B : C’est ce que décrit la situation. C : Ces effets sont possibles et doivent être examinés. D : L’exploration évite d’attribuer une émotion certaine. E : Une intention ne suffit pas à apprécier l’effet.",
+    "rationales": [
+      "Le ressenti n’a pas été recueilli.",
+      "C’est ce que décrit la situation.",
+      "Ces effets sont possibles et doivent être examinés.",
+      "L’exploration évite d’attribuer une émotion certaine.",
+      "Une intention ne suffit pas à apprécier l’effet."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_ADD_20261113_d1_bientraitance_006",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Application écrite - aider sans se substituer",
+    "number": 46,
+    "difficulty": "medium",
+    "question": "Quels ajustements relèvent d’une démarche de bientraitance au repas ?",
+    "choices": [
+      "Imposer la même aide à tous pour être équitable.",
+      "Demander ce que la personne souhaite faire seule.",
+      "Proposer une aide partielle si elle convient.",
+      "Réfléchir en équipe à l’organisation du temps nécessaire.",
+      "Supprimer toute aide pour éviter la dépendance."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : L’adaptation ne se confond pas avec une réponse identique pour tous. B : Le souhait et les capacités sont à rechercher. C : Une aide proportionnée soutient la participation. D : Les conditions collectives peuvent faciliter l’ajustement. E : Le besoin d’aide réel doit rester pris en compte.",
+    "rationales": [
+      "L’adaptation ne se confond pas avec une réponse identique pour tous.",
+      "Le souhait et les capacités sont à rechercher.",
+      "Une aide proportionnée soutient la participation.",
+      "Les conditions collectives peuvent faciliter l’ajustement.",
+      "Le besoin d’aide réel doit rester pris en compte."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_007",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Adapter la relation à l’enfant et à ses proches",
+    "number": 47,
+    "difficulty": "medium",
+    "question": "Dans les commentaires de la scène pédiatrique, quels moyens relationnels sont discutés ?",
+    "choices": [
+      "S’appuyer sur une figure d’attachement sécurisante.",
+      "Ignorer l’enfant parce qu’il parle peu.",
+      "Utiliser un jeu ou un doudou adapté.",
+      "Rechercher le regard et expliquer avec une voix douce.",
+      "Déduire que la douleur a disparu dès que le parent arrive."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Une relation connue peut participer à la sécurisation. B : L’enfant reste un interlocuteur. C : Le choix dépend de cet enfant et de ses réactions. D : La communication ne se réduit pas aux mots compris. E : La douleur et l’inconfort demandent une évaluation.",
+    "rationales": [
+      "Une relation connue peut participer à la sécurisation.",
+      "L’enfant reste un interlocuteur.",
+      "Le choix dépend de cet enfant et de ses réactions.",
+      "La communication ne se réduit pas aux mots compris.",
+      "La douleur et l’inconfort demandent une évaluation."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_008",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Adapter la relation à l’enfant et à ses proches",
+    "number": 48,
+    "difficulty": "easy",
+    "question": "Que retenir de la présence d’un parent pendant un soin à l’enfant ?",
+    "choices": [
+      "Elle dispense d’observer l’enfant.",
+      "Elle peut être une ressource à apprécier selon les réactions de l’enfant.",
+      "Elle prouve que l’enfant consent à tous les gestes.",
+      "Elle remplace toute évaluation de la douleur.",
+      "Elle interdit de parler directement à l’enfant."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : L’observation reste nécessaire. B : Le contexte et l’effet réel comptent. C : La présence ne prouve pas un accord global. D : L’approche relationnelle complète les soins. E : L’enfant doit aussi être considéré.",
+    "rationales": [
+      "L’observation reste nécessaire.",
+      "Le contexte et l’effet réel comptent.",
+      "La présence ne prouve pas un accord global.",
+      "L’approche relationnelle complète les soins.",
+      "L’enfant doit aussi être considéré."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_009",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Besoins d’élimination, omissions et organisation",
+    "number": 49,
+    "difficulty": "medium",
+    "question": "Une personne portant une protection demande les toilettes. Quelles réponses respectent ses capacités ?",
+    "choices": [
+      "Écarter systématiquement la demande puisqu’elle est protégée.",
+      "Rechercher le besoin et l’aide nécessaire.",
+      "Solliciter un collègue si l’accompagnement ne peut être assuré seul.",
+      "Examiner l’organisation si les demandes sont régulièrement empêchées.",
+      "Considérer que le repas rend toute demande illégitime."
+    ],
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La protection ne supprime pas le besoin. B : L’accompagnement part de la situation réelle. C : Le soutien de l’équipe permet une réponse adaptée. D : Une difficulté répétée appelle une analyse collective. E : Le rythme du service ne supprime pas les besoins.",
+    "rationales": [
+      "La protection ne supprime pas le besoin.",
+      "L’accompagnement part de la situation réelle.",
+      "Le soutien de l’équipe permet une réponse adaptée.",
+      "Une difficulté répétée appelle une analyse collective.",
+      "Le rythme du service ne supprime pas les besoins."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_010",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Besoins d’élimination, omissions et organisation",
+    "number": 50,
+    "difficulty": "medium",
+    "question": "Quelle conclusion est prudente sur la vignette des toilettes ?",
+    "choices": [
+      "Un seul refus provoque nécessairement une incontinence définitive.",
+      "La protection suffit à préserver toute autonomie.",
+      "Une organisation qui écarte régulièrement la demande peut favoriser la dépendance.",
+      "La personne ne doit jamais exprimer un besoin au moment du repas.",
+      "La dignité ne concerne que les gestes techniques."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : La séance ne démontre pas cette causalité automatique. B : Les capacités et les choix doivent être recherchés. C : Le risque justifie un réajustement des pratiques. D : Le besoin doit être entendu. E : Elle concerne aussi les réponses aux besoins quotidiens.",
+    "rationales": [
+      "La séance ne démontre pas cette causalité automatique.",
+      "Les capacités et les choix doivent être recherchés.",
+      "Le risque justifie un réajustement des pratiques.",
+      "Le besoin doit être entendu.",
+      "Elle concerne aussi les réponses aux besoins quotidiens."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_011",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Besoins d’élimination, omissions et organisation",
+    "number": 51,
+    "difficulty": "medium",
+    "question": "Quels exemples relèvent d’un risque de négligence ou de mise à l’écart ?",
+    "choices": [
+      "Laisser sans aide un plateau inaccessible à une personne dépendante.",
+      "Vérifier avec la personne ce qu’elle peut faire.",
+      "Ignorer des demandes répétées d’accès aux toilettes.",
+      "Laisser un téléphone utile hors de portée sans chercher de solution.",
+      "Rechercher une solution avec l’équipe."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : L’accès réel à l’alimentation n’est pas assuré. B : Cette démarche recherche l’autonomie. C : Un besoin est écarté de façon répétée. D : Un moyen de relation devient inaccessible. E : La coopération aide à réajuster le soin.",
+    "rationales": [
+      "L’accès réel à l’alimentation n’est pas assuré.",
+      "Cette démarche recherche l’autonomie.",
+      "Un besoin est écarté de façon répétée.",
+      "Un moyen de relation devient inaccessible.",
+      "La coopération aide à réajuster le soin."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_VERIF_20261113_d1_bientraitance_012",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Besoins d’élimination, omissions et organisation",
+    "number": 52,
+    "difficulty": "medium",
+    "question": "Un défaut récurrent de vêtements adaptés expose les patients. Que faire ?",
+    "choices": [
+      "Considérer que seul le patient doit s’adapter.",
+      "Protéger immédiatement la pudeur avec les moyens adaptés disponibles.",
+      "Faire remonter le défaut d’équipement.",
+      "Déduire que l’institution ne joue aucun rôle.",
+      "Ignorer le ressenti parce que la tenue est habituelle."
+    ],
+    "answers": [
+      1,
+      2
+    ],
+    "announcedCorrectCount": 2,
+    "explanation": "A : Le besoin de protection reste réel. B : La situation présente demande une réponse. C : L’équipement relève aussi de l’organisation collective. D : La responsabilité ne se réduit pas au seul geste individuel. E : L’usage habituel ne rend pas la tenue adaptée.",
+    "rationales": [
+      "Le besoin de protection reste réel.",
+      "La situation présente demande une réponse.",
+      "L’équipement relève aussi de l’organisation collective.",
+      "La responsabilité ne se réduit pas au seul geste individuel.",
+      "L’usage habituel ne rend pas la tenue adaptée."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_001",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Observer une scène et interroger sa posture",
+    "number": 53,
+    "difficulty": "medium",
+    "question": "Dans le guide de questionnement, que faut-il distinguer ?",
+    "choices": [
+      "Les faits visibles dans la scène.",
+      "Les pensées supposées de la personne comme si elles étaient certaines.",
+      "Son ressenti personnel et sa réflexion comme étudiant infirmier.",
+      "Les particularités de la personne soignée.",
+      "La qualité du soin d’après la seule rapidité du geste."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La description précède l’interprétation. B : Une hypothèse ne devient pas un fait certain. C : Le guide interroge les deux positions. D : Les capacités et besoins orientent l’analyse. E : La rapidité ne suffit pas à apprécier la relation.",
+    "rationales": [
+      "La description précède l’interprétation.",
+      "Une hypothèse ne devient pas un fait certain.",
+      "Le guide interroge les deux positions.",
+      "Les capacités et besoins orientent l’analyse.",
+      "La rapidité ne suffit pas à apprécier la relation."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_002",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Sens du soin et collégialité",
+    "number": 54,
+    "difficulty": "medium",
+    "question": "Comment comprendre la collégialité présentée dans le cours ?",
+    "choices": [
+      "Mettre en commun les besoins et les souhaits de la personne.",
+      "Décider entre professionnels en excluant systématiquement la personne.",
+      "Organiser des temps de coordination et de concertation.",
+      "Associer la personne aux décisions importantes.",
+      "Considérer que l’équipe dispense l’institution de fournir des moyens."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Ces informations permettent un accompagnement cohérent. B : La participation de la personne demeure essentielle. C : La collégialité suppose du temps de travail partagé. D : La décision se construit avec elle. E : Les moyens institutionnels restent nécessaires.",
+    "rationales": [
+      "Ces informations permettent un accompagnement cohérent.",
+      "La participation de la personne demeure essentielle.",
+      "La collégialité suppose du temps de travail partagé.",
+      "La décision se construit avec elle.",
+      "Les moyens institutionnels restent nécessaires."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_003",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Sens du soin et collégialité",
+    "number": 55,
+    "difficulty": "medium",
+    "question": "Quelle affirmation correspond au sens du soin développé dans le support ?",
+    "choices": [
+      "Seuls les actes techniques complexes ont une valeur de soin.",
+      "L’aide au repas est dégradante pour un professionnel qualifié.",
+      "La valeur du soin tient aussi au sens de l’action et au respect des valeurs professionnelles.",
+      "Une toilette est toujours un acte secondaire sans dimension relationnelle.",
+      "La satisfaction du professionnel suffit à prouver le bien-être de la personne."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Le cours refuse la hiérarchie petits et grands soins. B : L’aide au repas possède une valeur de soin. C : Le sens du soin et les valeurs professionnelles sont explicités. D : Le soin quotidien engage aussi la relation. E : Le vécu de la personne doit être recherché.",
+    "rationales": [
+      "Le cours refuse la hiérarchie petits et grands soins.",
+      "L’aide au repas possède une valeur de soin.",
+      "Le sens du soin et les valeurs professionnelles sont explicités.",
+      "Le soin quotidien engage aussi la relation.",
+      "Le vécu de la personne doit être recherché."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_004",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Vignettes : confort, expression et réajustements",
+    "number": 56,
+    "difficulty": "medium",
+    "question": "Une personne conduite en fauteuil exprime que le déplacement lui donne le tournis. Quel ajustement est pertinent ?",
+    "choices": [
+      "Poursuivre à la même vitesse parce que le jardin lui fera plaisir.",
+      "Adapter l’allure et vérifier son confort.",
+      "Déduire qu’une destination agréable supprime tout inconfort.",
+      "Ignorer ce qu’elle exprime puisqu’elle est assise.",
+      "Accélérer pour réduire la durée du trajet sans lui parler."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : Le but du déplacement ne supprime pas le besoin exprimé. B : L’ajustement tient compte de l’expérience de la personne. C : Le confort doit être vérifié dans le trajet. D : Être assis ne dispense pas d’écouter. E : L’allure doit être adaptée à sa situation.",
+    "rationales": [
+      "Le but du déplacement ne supprime pas le besoin exprimé.",
+      "L’ajustement tient compte de l’expérience de la personne.",
+      "Le confort doit être vérifié dans le trajet.",
+      "Être assis ne dispense pas d’écouter.",
+      "L’allure doit être adaptée à sa situation."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_005",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Vignettes : confort, expression et réajustements",
+    "number": 57,
+    "difficulty": "medium",
+    "question": "Une personne est décrite comme « jamais contente » parce qu’elle se plaint souvent. Quelle réponse est adaptée ?",
+    "choices": [
+      "Utiliser cette étiquette pour éviter toute nouvelle écoute.",
+      "Rechercher les faits et le besoin derrière ce qu’elle exprime.",
+      "Considérer que la répétition prouve l’absence de problème.",
+      "Lui demander de ne plus déranger l’équipe.",
+      "Répondre à sa place pour gagner du temps."
+    ],
+    "answers": [
+      1
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : L’étiquette ferme l’écoute. B : La plainte demande une exploration et une réévaluation. C : La répétition ne permet pas cette conclusion. D : Cette réponse écarte son besoin. E : Sa propre expression doit être préservée.",
+    "rationales": [
+      "L’étiquette ferme l’écoute.",
+      "La plainte demande une exploration et une réévaluation.",
+      "La répétition ne permet pas cette conclusion.",
+      "Cette réponse écarte son besoin.",
+      "Sa propre expression doit être préservée."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_006",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Les dix engagements de la charte présentée",
+    "number": 58,
+    "difficulty": "medium",
+    "question": "Quels engagements figurent dans la charte illustrée présentée au cours ?",
+    "choices": [
+      "Respecter la confidentialité des informations.",
+      "Respecter la culture et les croyances de la personne.",
+      "Réserver la bientraitance aux personnes capables de parler.",
+      "Agir face aux douleurs physiques et morales.",
+      "Partager les informations avec toute personne présente dans le couloir."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La confidentialité constitue le deuxième engagement. B : Le respect de la culture et des croyances est explicite. C : La difficulté d’expression ne supprime pas le respect dû. D : La charte prend en compte ces deux dimensions. E : Le lieu informel ne supprime pas la confidentialité.",
+    "rationales": [
+      "La confidentialité constitue le deuxième engagement.",
+      "Le respect de la culture et des croyances est explicite.",
+      "La difficulté d’expression ne supprime pas le respect dû.",
+      "La charte prend en compte ces deux dimensions.",
+      "Le lieu informel ne supprime pas la confidentialité."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_007",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Les dix engagements de la charte présentée",
+    "number": 59,
+    "difficulty": "medium",
+    "question": "Que demande la charte devant des propos ou négligences portant atteinte à l’intégrité d’une personne ?",
+    "choices": [
+      "Les taire si le professionnel n’avait pas de mauvaise intention.",
+      "Attendre qu’un acte physique violent soit constaté.",
+      "Les signaler plutôt que les banaliser.",
+      "Les considérer sans importance si le service est occupé.",
+      "Supposer que la présence d’une charte affichée empêche toute atteinte."
+    ],
+    "answers": [
+      2
+    ],
+    "announcedCorrectCount": 1,
+    "explanation": "A : La bonne intention ne suffit pas à effacer les effets. B : La charte inclut attitudes, propos et négligences. C : Le dixième engagement porte sur ces atteintes. D : La charge de travail ne les rend pas acceptables. E : L’affichage ne garantit pas les pratiques.",
+    "rationales": [
+      "La bonne intention ne suffit pas à effacer les effets.",
+      "La charte inclut attitudes, propos et négligences.",
+      "Le dixième engagement porte sur ces atteintes.",
+      "La charge de travail ne les rend pas acceptables.",
+      "L’affichage ne garantit pas les pratiques."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_OFFICIEL_20261115_008",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Les dix engagements de la charte présentée",
+    "number": 60,
+    "difficulty": "medium",
+    "question": "Concernant l’information et la réévaluation, quelles propositions suivent la charte présentée ?",
+    "choices": [
+      "Donner une information accessible et individualisée.",
+      "Fournir la même explication technique à tous sans vérifier sa compréhension.",
+      "Réévaluer régulièrement les soins d’hygiène, de sécurité et de confort.",
+      "Informer les personnes choisies par l’usager dans le respect de la confidentialité.",
+      "Ne réévaluer qu’après une plainte écrite."
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : L’information doit être adaptée à la personne. B : L’individualisation reste nécessaire. C : Le septième engagement vise la réévaluation. D : Le choix de la personne et la confidentialité sont à respecter. E : La réévaluation fait partie de l’accompagnement courant.",
+    "rationales": [
+      "L’information doit être adaptée à la personne.",
+      "L’individualisation reste nécessaire.",
+      "Le septième engagement vise la réévaluation.",
+      "Le choix de la personne et la confidentialité sont à respecter.",
+      "La réévaluation fait partie de l’accompagnement courant."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_RELECTURE_20261115_001",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Attention, accompagnement et respect du quotidien",
+    "number": 61,
+    "difficulty": "medium",
+    "question": "En entrant dans la chambre pour proposer une aide à la toilette, quels comportements suivent les repères du support ?",
+    "choices": [
+      "Frapper et se présenter.",
+      "S’excuser lorsque l’on dérange.",
+      "Considérer que le planning tient lieu d’accord.",
+      "Expliquer l’aide et rechercher l’accord de la personne.",
+      "Annoncer que la chambre appartient uniquement au service."
+    ],
+    "answers": [
+      0,
+      1,
+      3
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Ces gestes reconnaissent la personne et son espace. B : Ce repère figure explicitement dans le support. C : L’organisation ne remplace pas la recherche de l’accord. D : La personne conserve une place active dans le soin. E : La chambre constitue aussi un espace d’intimité.",
+    "rationales": [
+      "Ces gestes reconnaissent la personne et son espace.",
+      "Ce repère figure explicitement dans le support.",
+      "L’organisation ne remplace pas la recherche de l’accord.",
+      "La personne conserve une place active dans le soin.",
+      "La chambre constitue aussi un espace d’intimité."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_RELECTURE_20261115_002",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Attention, accompagnement et respect du quotidien",
+    "number": 62,
+    "difficulty": "medium",
+    "question": "D’après la charte étudiée, comment rechercher la sécurité dans les soins ?",
+    "choices": [
+      "Appliquer les bonnes pratiques et les recommandations.",
+      "Déduire la sécurité d’une pratique de sa seule ancienneté dans le service.",
+      "Réévaluer les soins de sécurité et de confort.",
+      "Considérer que la sécurité physique autorise toute humiliation.",
+      "Tenir compte des douleurs physiques et morales."
+    ],
+    "answers": [
+      0,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : Le neuvième engagement mentionne ces repères. B : Une routine doit aussi être interrogée. C : La réévaluation figure dans les engagements de la charte. D : La dignité et la sécurité morale restent à préserver. E : La douleur est également prise en compte par la charte.",
+    "rationales": [
+      "Le neuvième engagement mentionne ces repères.",
+      "Une routine doit aussi être interrogée.",
+      "La réévaluation figure dans les engagements de la charte.",
+      "La dignité et la sécurité morale restent à préserver.",
+      "La douleur est également prise en compte par la charte."
+    ],
+    "flashcards": []
+  },
+  {
+    "id": "D1_BIEN_RELECTURE_20261115_003",
+    "courseId": "d1_bientraitance",
+    "ue": "S1 D1",
+    "course": "La bientraitance",
+    "theme": "Attention, accompagnement et respect du quotidien",
+    "number": 63,
+    "difficulty": "medium",
+    "question": "Dans l’exemple oral rapprochant le repas et la prise des traitements, quels repères d’accompagnement sont pertinents ?",
+    "choices": [
+      "Le dépôt du plateau suffit à prouver que la personne a pu manger.",
+      "Rechercher l’aide nécessaire lorsque les capacités sont limitées.",
+      "Vérifier ce que la personne a réellement pu prendre dans la situation discutée.",
+      "Confondre cet exemple avec un protocole complet d’administration médicamenteuse.",
+      "Vérifier que les objets utiles sont accessibles et utilisables."
+    ],
+    "answers": [
+      1,
+      2,
+      4
+    ],
+    "announcedCorrectCount": 3,
+    "explanation": "A : La possibilité effective de manger doit être vérifiée. B : L’aide s’ajuste aux besoins et aux capacités. C : L’accompagnement ne se réduit pas à la distribution. D : Un exemple relationnel ne définit pas un protocole médicamenteux. E : La présence de l’objet dans la pièce ne garantit pas son accès.",
+    "rationales": [
+      "La possibilité effective de manger doit être vérifiée.",
+      "L’aide s’ajuste aux besoins et aux capacités.",
+      "L’accompagnement ne se réduit pas à la distribution.",
+      "Un exemple relationnel ne définit pas un protocole médicamenteux.",
+      "La présence de l’objet dans la pièce ne garantit pas son accès."
+    ],
+    "flashcards": []
   }
 ]

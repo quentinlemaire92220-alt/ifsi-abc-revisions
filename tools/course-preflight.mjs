@@ -16,6 +16,8 @@ const commands=[
  ['new_course_runtime',n,['tests/psychologie-developpement.mjs']],
  ['development_pdf',n,['tests/psychologie-developpement-pdf.mjs']],
  ['scoped_course_revision',n,['tests/scoped-course-revision.mjs']],
+ ['additive_written_qcm',n,['tests/additive-written-qcm.mjs']],
+ ['additive_written_qcm_pdf',py,['tests/additive-written-qcm-pdf.py']],
  ['reconciled_correction',n,['tests/reconciled-correction.mjs']],
  ['reconciled_correction_pdf',py,['tests/reconciled-correction-pdf.py']],
  ['qcm_flashcards_revision',n,['tests/qcm-flashcards-revision.mjs']],

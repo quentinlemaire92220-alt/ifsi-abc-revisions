@@ -1,4 +1,5 @@
 import {validateVerifiedDocumentsAddition} from './verified-documents-addition-contract.mjs';
+import {validateAdditiveWrittenQcm} from './additive-written-qcm-contract.mjs';
 import {validateConsolidations,consolidationBeforeBundle,consolidationBeforeJson} from './consolidated-course-contract.mjs';
 import {validateQcmFlashcardsRevision} from './qcm-flashcards-revision-contract.mjs';
 import {validateUnifiedSheetMedia} from './unified-sheet-media-contract.mjs';
@@ -27,6 +28,10 @@ export function validateScopedRevisions(manifest=read('docs/course-deliveries.js
  const ids=new Set(),courses=new Set();
  for(const r of manifest.scopedCourseRevisions||[]){
   assert.equal(r.contract,'scoped_course_revision_v1');assert.equal(r.status,'approved');
+  if(r.profile==='additive_written_qcm_v1'){
+   assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
+   validateAdditiveWrittenQcm(r,manifest,revisionBundle(r));continue;
+  }
   if(r.profile==='development_official_update_v1'){
    assert.ok(!ids.has(r.id)&&!courses.has(r.courseId));ids.add(r.id);courses.add(r.courseId);
    validateDevelopmentOfficialRevision(r,manifest,revisionBundle(r));continue;
