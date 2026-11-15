@@ -223,13 +223,20 @@
    if(window.IFSI_V74.resourceFavorites().includes(key)===favoritesBefore.includes(key))throw Error('Action favori perdue');
    favoriteAfter.click();
    if(JSON.stringify(window.IFSI_V74.resourceFavorites().slice().sort())!==JSON.stringify(favoritesBefore))throw Error('Favori non restauré');
-   // Le rapprochement officiel retire le badge de Relation ; Bientraitance reste provisoire.
+   // Les rapprochements officiels retirent le badge des cours relus.
    var reconciled=courses.find(function(c){return c.id==='d1_relation_soignant_soigne_ecoute_active'});
    if(!reconciled||reconciled.provisional!==false||reconciled.officialSupport!==true)throw Error('Rapprochement officiel non déclaré');
    window.IFSI_V74.openCourse(reconciled.label);
    await new Promise(function(resolve){setTimeout(resolve,80)});
    if(document.querySelector('#v74CourseDetail .v8430-provisional'))throw Error('Pastille provisoire conservée après rapprochement officiel');
-   var provisionalCourse=courses.find(function(c){return c.id==='d1_bientraitance'});
+   var bientraitance=courses.find(function(c){return c.id==='d1_bientraitance'});
+   if(!bientraitance||bientraitance.provisional!==false||bientraitance.officialSupport!==true||bientraitance.qcmPdfQuestionCount!==63)throw Error('Publication officielle de bientraitance absente');
+   window.IFSI_V74.openCourse(bientraitance.label);
+   await new Promise(function(resolve){setTimeout(resolve,80)});
+   if(document.querySelector('#v74CourseDetail .v8430-provisional'))throw Error('Ancien statut provisoire conservé pour la fiche relue');
+   if(!document.querySelector('#v74CourseDetail a[href*="D1_Bientraitance_QCM_63_Corriges.pdf"]')||!document.querySelector('#v74CourseDetail a[href*="D1_Bientraitance_Fiche_Complete.pdf"]'))throw Error('PDF relus de bientraitance non accessibles');
+   // Un cours dont le support officiel est toujours attendu garde son badge.
+   var provisionalCourse=courses.find(function(c){return c.id==='fievre_retour_voyage_paludisme'});
    if(!provisionalCourse||provisionalCourse.provisional!==true)throw Error('Cours témoin provisoire altéré');
    window.IFSI_V74.openCourse(provisionalCourse.label);
    await new Promise(function(resolve){setTimeout(resolve,80)});
