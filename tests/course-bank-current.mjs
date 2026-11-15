@@ -15,6 +15,10 @@ const manifest=JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8'))
 for(const name of files){
  if(stage==='publication'&&!changed.has(folder+'/'+name))continue;
  const rows=JSON.parse(fs.readFileSync(folder+'/'+name,'utf8'));
+ // This independently validated profile adds QCM only and preserves every old
+ // flashcard. Requiring a new card per question would exceed the approved scope.
+ const additive=manifest.scopedCourseRevisions?.find(r=>r.profile==='additive_written_qcm_v1'&&r.bankPath===folder+'/'+name);
+ if(additive){assert.deepEqual(rows.map(q=>q.id),additive.questionIds);n+=rows.length;continue;}
  // Only authored standalone banks use this contract. Legacy bank formats retain their gates.
  if(!Array.isArray(rows)||!rows[0]?.flashcards)continue;
  const delivery=stage==='publication' ? JSON.parse(fs.readFileSync('docs/course-deliveries.json','utf8')).courses.find(c=>c.qcmBank===folder+'/'+name) : null;

@@ -16518,10 +16518,10 @@
         "contract": "ifsi_pedagogical_non_regression_v149",
         "sheetSha256": "0e00ea0364cae68db2b776a548bb0287b8557cb6e4059f87f4ad49945860f4ab",
         "privateEvidenceSha256": "a5c123afacef5187c74213bf7ded33d91e35ddc6412863f1ba26f29563e0ce7b",
-        "reviewedAt": "2026-11-15T17:20:18.441454+00:00",
+        "reviewedAt": "2026-11-15T17:20:18+00:00",
         "sourceInventory": "reviewed",
         "sourceCoverage": "limited",
-        "inheritanceReview": "reviewed",
+        "inheritanceReview": "compared",
         "depthReview": "reviewed",
         "differencesReview": "reviewed",
         "decision": "scoped_provisional_review_recorded"
@@ -16531,7 +16531,7 @@
         "authorization": "explicit_go_publication",
         "scope": "scoped_course_revision",
         "approvedAt": "2026-11-15T17:20:18.441454+00:00",
-        "bundleSha256": "a6e6811e07edf28ace81639cd0bb9c671b8601b338ad9fed188f7829fc207653"
+        "bundleSha256": "bc95d926a8c5e2c0eb30cb8106531fdf9626a10c41333e3681de9adc52babb7a"
       }
     }
   ],
