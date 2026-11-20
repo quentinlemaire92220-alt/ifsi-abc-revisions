@@ -37,8 +37,27 @@ function renderTerms(){const host=$('vgTerms');if(!host)return;const list=filter
 function showFiche(){view='fiche';$('vgApp').innerHTML='<div class="vg-shell"><div class="vg-header"><button type="button" class="btn outline vg-back" data-vg="back" aria-label="Retour aux cours">←</button><div><h2>📘 '+(originCourse?'Vocabulaire — '+E(courseName(originCourse)):'Dictionnaire médical')+'</h2><div class="small">Glossaire IFSI • fiche et QCM par thème</div></div></div><div class="card"><div class="vg-summary"><div><b>'+filtered().length+' termes • '+new Set(filtered().map(x=>x.theme)).size+' thèmes</b><div class="small">Questions disponibles dans le thème Vocabulaire des QCM</div></div><span class="badge">Cours</span></div><div class="vg-actions"><button id="vgStart" type="button" class="btn primary" data-vg="start">▶ QCM vocabulaire</button><button type="button" class="btn outline" data-vg="print">▤ Imprimer la fiche / PDF</button></div></div><div class="card"><div class="vg-filters"><label>Rechercher un mot<input type="text" id="vgSearch" placeholder="Ex. hypoxie, dyspnée…" value="'+E(search)+'"></label><label>Thème<select id="vgTheme">'+['<option value="all">Tous les thèmes</option>',...[...new Set(data.map(x=>x.theme))].map(x=>'<option value="'+E(x)+'"'+(selectedTheme===x?' selected':'')+'>'+E(x)+'</option>')].join('')+'</select></label><label>Cours<select id="vgCourse">'+['<option value="all">Tous les cours</option>',...[...new Set(data.flatMap(x=>x.courseIds))].sort((a,b)=>courseName(a).localeCompare(courseName(b),'fr')).map(id=>'<option value="'+E(id)+'"'+(selectedCourse===id?' selected':'')+'>'+E(courseName(id))+'</option>')].join('')+'</select></label></div><div class="vg-summary"><b id="vgCount"></b><span class="small">Définition · distinction · étymologie</span></div><div class="vg-warning muted">Contenu pédagogique transversal. Les termes ne sont pas présentés comme des extraits des supports officiels.</div></div><div id="vgTerms"></div></div>';
 $('vgSearch').addEventListener('input',e=>{search=e.target.value;renderTerms()});$('vgTheme').addEventListener('change',e=>{selectedTheme=e.target.value;renderTerms()});$('vgCourse').addEventListener('change',e=>{selectedCourse=e.target.value;renderTerms()});renderTerms()}
 function hash(s){let h=0;for(const c of String(s)){h=(h*31+c.charCodeAt(0))>>>0}return h}
-function mix(list,seed){return [...list].sort((a,b)=>hash(seed+':'+a.id)-hash(seed+':'+b.id))}
-function makeQuestion(term,pool){const candidates=pool.filter(x=>x.id!==term.id),same=candidates.filter(x=>x.theme===term.theme),other=candidates.filter(x=>x.theme!==term.theme);const used=new Set([term.term.trim().toLocaleLowerCase('fr')]),distractors=[];for(const x of [...mix(same,term.id+':same'),...mix(other,term.id+':other'),...mix(data.filter(x=>x.id!==term.id),term.id+':fallback')]){const key=x.term.trim().toLocaleLowerCase('fr');if(used.has(key))continue;used.add(key);distractors.push(x);if(distractors.length===3)break}const options=mix([term,...distractors],term.id+':answers');return{term,options,answer:options.findIndex(x=>x.id===term.id)}}
+function mix(list,seed){
+ return list.map(term=>({term,rank:hash(seed+':'+term.id)}))
+  .sort((a,b)=>a.rank-b.rank).map(item=>item.term);
+}
+function makeQuestion(term,pool){
+ const used=new Set([term.term.trim().toLocaleLowerCase('fr')]),distractors=[];
+ function addOptions(candidates,tier){
+  for(const option of mix(candidates,term.id+':'+tier)){
+   const key=option.term.trim().toLocaleLowerCase('fr');
+   if(used.has(key))continue;
+   used.add(key);
+   distractors.push(option);
+   if(distractors.length===3)break;
+  }
+ }
+ addOptions(pool.filter(x=>x.id!==term.id&&x.theme===term.theme),'same');
+ if(distractors.length<3)addOptions(pool.filter(x=>x.id!==term.id&&x.theme!==term.theme),'other');
+ if(distractors.length<3)addOptions(data.filter(x=>x.id!==term.id),'fallback');
+ const options=mix([term,...distractors],term.id+':answers');
+ return {term,options,answer:options.findIndex(x=>x.id===term.id)};
+}
 function questions(){
  const currentRegistry=window.IFSI_V741?.getRegistry?.();
  if(questionCache&&questionRegistry===currentRegistry&&questionData===data)return questionCache;
