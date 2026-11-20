@@ -46,11 +46,11 @@ function hydrateQcm(){
  fill();
  announceQcmLoad('loading');
 }
-async function loadQcmData(){
+async function loadQcmData({progressive=true}={}){
  if(qcmLoadPromise)return qcmLoadPromise;
  announceQcmLoad('loading');
  qcmLoadPromise=(async()=>{
-   const failed=[];let extraFailed=[];
+   const failed=[],received=new Map();let extraFailed=[];
   await Promise.all([1,2,3,4,5].map(async n=>{
    try{
     const response=await fetch(`./questions-${n}.json`,{cache:'no-store'});
@@ -58,13 +58,19 @@ async function loadQcmData(){
      if(n===5&&response.headers?.get?.('X-IFSI-QCM-Status')==='partial')extraFailed=(response.headers.get('X-IFSI-QCM-Failed-Packs')||'').split(',').filter(Boolean);
     const items=await response.json();
     if(!Array.isArray(items))throw Error('Le pack n’est pas un tableau');
-    qcmPackData.set(n,items);
-    hydrateQcm();
+    if(progressive){
+     qcmPackData.set(n,items);
+     hydrateQcm();
+    }else received.set(n,items);
    }catch(e){
     failed.push(n);
     console.warn('Chargement QCM échoué : questions-'+n+'.json',e);
    }
   }));
+   if(received.size){
+    for(const [n,items] of received)qcmPackData.set(n,items);
+    hydrateQcm();
+   }
    const missing=[...failed,...extraFailed];
    announceQcmLoad(Q.length?(missing.length?'partial':'ready'):'error',missing);
   if($('update'))$('update').textContent=Q.length?'QCM chargés : '+Q.length+' question(s).':'Chargement QCM impossible. Réessayer dans Révision.';
@@ -126,7 +132,7 @@ if('serviceWorker'in navigator){
   // Recharger les banques enrichies une fois, sans interrompre la navigation en cours.
   await firstBoot;
   if(qcmLoadPromise)await qcmLoadPromise;
-  await boot();
+  await Promise.allSettled([loadQcmData({progressive:false}),loadRevisionResources()]);
   window.IFSI_V741?.rebuildResourceIndex?.();
  });
  window.addEventListener('load',()=>workers.register('./sw.js?v=8497',{updateViaCache:'none'}).catch(e=>console.warn('SW update',e)));
