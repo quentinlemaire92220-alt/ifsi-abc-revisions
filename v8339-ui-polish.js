@@ -72,6 +72,9 @@ function css(){
   }`;
   document.head.appendChild(s);
 }
+function setText(element,value){
+  if(element&&element.textContent!==value)element.textContent=value;
+}
 function patchRevision(){
   const dash=$('v8312MyRevision');if(!dash)return false;
   const grid=dash.querySelector('.v8312-revision-grid');if(!grid)return false;
@@ -86,18 +89,18 @@ function patchRevision(){
     card.onclick=()=>window.showVocals?.();
   }
   const n=window.IFSI_V73?.getVocals?.()?.length||0;
-  if($('v8339VocalsN'))$('v8339VocalsN').textContent=n;
+  setText($('v8339VocalsN'),String(n));
   const head=dash.querySelector('.v8312-revision-head .small');
-  if(head)head.textContent='Tes objectifs de révision et tes priorités du moment.';
+  setText(head,'Tes objectifs de révision et tes priorités du moment.');
   return true;
 }
 function patchFlashcards(){
   const entry=document.querySelector('#v81Body .fc-revision-entry');
   if(!entry)return false;
   const title=entry.querySelector('h3');
-  if(title)title.textContent='Révise autrement qu’avec les QCM';
+  setText(title,'Révise autrement qu’avec les QCM');
   const btn=$('fcOpen');
-  if(btn)btn.textContent='▰  Ouvrir les flashcards →';
+  setText(btn,'▰  Ouvrir les flashcards →');
   return true;
 }
 function apply(){css();patchRevision();patchFlashcards()}

@@ -42,10 +42,10 @@ function resolveVocal(v){
 }
 function attachIds(){
   if(!registry)return;
-  for(const q of (Array.isArray(Q)?Q:[])){const r=resolveQuestion(q);if(r.courseId&&!q.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
-  for(const v of (window.IFSI_V73?.getVocals?.()||[])){const r=resolveVocal(v);if(r.courseId&&!v.courseId){v.courseId=r.courseId;v._courseLink='registry'}}
-  for(const x of (Array.isArray(S)?S:[])){const r=resolveResource(x,'sheet');if(r.courseId&&!x.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
-  for(const x of (Array.isArray(I)?I:[])){const r=resolveResource(x,'info');if(r.courseId&&!x.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
+  for(const q of (Array.isArray(Q)?Q:[])){if(q.courseId)continue;const r=resolveQuestion(q);if(r.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
+  for(const v of (window.IFSI_V73?.getVocals?.()||[])){if(v.courseId)continue;const r=resolveVocal(v);if(r.courseId){v.courseId=r.courseId;v._courseLink='registry'}}
+  for(const x of (Array.isArray(S)?S:[])){if(x.courseId)continue;const r=resolveResource(x,'sheet');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
+  for(const x of (Array.isArray(I)?I:[])){if(x.courseId)continue;const r=resolveResource(x,'info');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
 }
 function audit(){
   if(!registry)return null;const qs=Array.isArray(Q)?Q:[],vs=window.IFSI_V73?.getVocals?.()||[],sheets=Array.isArray(S)?S:[],infos=Array.isArray(I)?I:[];
@@ -101,10 +101,15 @@ function diagnosticUI(){
   const issues=[...r.sheets.ambiguous.map(x=>`Fiche ambiguë : ${x.label}`),...r.infographics.ambiguous.map(x=>`Infographie ambiguë : ${x.label}`),...r.questions.unmatched.map(x=>`QCM sans cours : ${x.label}`),...r.vocals.unmatched.map(x=>`Vocal sans cours : ${x.label}`),...r.sheets.invalid.map(x=>`Fiche courseId invalide : ${x.label}`),...r.infographics.invalid.map(x=>`Infographie courseId invalide : ${x.label}`)];
   box.innerHTML=`<div class="row"><div><b>🧪 Diagnostic V${VERSION}</b><div class="small">${status} • ${r.registryCourses} IDs de cours stables</div></div><span class="badge">${r.errors} erreur${r.errors>1?'s':''}</span></div><div class="small" style="margin-top:8px">Non rattachées (hors registre actuel) : ${r.sheets.unmatched.length} fiches • ${r.infographics.unmatched.length} infographies. Elles sont surveillées par les TNR pour détecter tout nouvel ajout non classé.</div>${issues.length?`<div class="warn" style="margin-top:10px">${issues.slice(0,12).map(esc).join('<br>')}</div>`:''}<details style="margin-top:10px"><summary><b>Voir le détail par cours</b></summary>${courseRows}</details>`;
 }
+function refreshCourseResources(){
+  attachIds();
+  rebuildResourceIndex();
+  window.IFSI_V8338_FLASHCARDS?.invalidate?.();
+}
 async function boot(){
-  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();await window.IFSI_AUDIO_SERIES?.ready;if(window.IFSI_AUDIO_SERIES)registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);buildCourseIndexes();attachIds();rebuildResourceIndex();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
+  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();await window.IFSI_AUDIO_SERIES?.ready;if(window.IFSI_AUDIO_SERIES)registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);buildCourseIndexes();refreshCourseResources();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
   catch(e){console.error('V7.4.1 registre cours',e)}
 }
-window.IFSI_V741={version:VERSION,getRegistry:()=>registry,audit,resolveLabel,resolveResource,courseIdForLabel,resourcesForCourse,rebuildResourceIndex,getLastAudit:()=>lastAudit};
+window.IFSI_V741={version:VERSION,getRegistry:()=>registry,audit,resolveLabel,resolveResource,courseIdForLabel,resourcesForCourse,rebuildResourceIndex:refreshCourseResources,getLastAudit:()=>lastAudit};
 let tries=0;const timer=setInterval(()=>{tries++;if(Array.isArray(Q)&&Q.length&&Array.isArray(S)&&S.length&&Array.isArray(I)&&I.length&&window.IFSI_V73?.getVocals?.()?.length){clearInterval(timer);boot()}else if(tries>240){clearInterval(timer);boot()}},125);
 })();
