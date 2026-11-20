@@ -81,7 +81,7 @@ function courseAliases74(course){
   for(const [r,a] of rules)if(r.test(n))out.push(...a);
   return [...new Set(out.map(norm74).filter(Boolean))];
 }
-function resourceText74(x,type){return norm74(type==='sheet'?`${x.label||''} ${x.title||''} ${x.ue||''}`:`${x.title||''}`)}
+function resourceText74(x,type){return norm74(type==='sheet'?`${x.label||''} ${x.title||''} ${window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||''}`:`${x.title||''}`)}
 function registryCourse74(course){
   const list=window.IFSI_V741?.getRegistry?.()?.courses||[];
   return list.find(c=>c.id===course)||list.find(c=>norm74(c.label)===norm74(course))||null;
@@ -148,7 +148,7 @@ function renderSearch74(){
   const results=[];
   for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
-  for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+studentDocumentLabel74(searchDocLabel74(x,'sheet'),registryCourse74(x.courseId)),sub:x.ue||'',url:x.url});
+  for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+studentDocumentLabel74(searchDocLabel74(x,'sheet'),registryCourse74(x.courseId)),sub:window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||'',url:x.url});
   for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
   for(const x of vocals74())if(norm74(`${x.title} ${x.course}`).includes(term))results.push({kind:'Vocal',title:x.title,sub:`${x.course} • Vocal ${String(x.number).padStart(2,'0')}`,vid:x.id});
   const priority={Cours:0,QCM:1,Vocal:2,Fiche:3,Infographie:4};results.sort((a,b)=>priority[a.kind]-priority[b.kind]);const all=results.slice(0,30);if(!all.length){box.innerHTML='<div class="small">Aucun résultat.</div>';return}
@@ -167,7 +167,9 @@ function renderDashboard74(){
 }
 
 function courseMeta74(label){
-  const c=registryCourse74(label)||{};return {ue:c.ue||'Autres',domain:c.domain||'',id:c.id||''}
+  const c=registryCourse74(label)||{};
+  const ue=window.IFSI_COURSE_CLASSIFICATION?.courseCode(c)||c.ue||'Autres';
+  return {ue,domain:/^[A-E]\d/.test(ue)?ue[0]:c.domain||'',id:c.id||''}
 }
 // Clé d'affichage uniquement : conserver le code détaillé dans le registre et la recherche.
 function catalogUe74(value){
@@ -194,7 +196,7 @@ function renderCourses74(){
   const grid=$74('v74CourseGrid');if(!grid)return;
   const term=norm74($74('v74CourseSearch')?.value||'');
   const courses=allCourses74().filter(label=>{
-    const m=courseMeta74(label);return !term||norm74(`${label} ${m.domain} ${m.ue}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
+    const m=courseMeta74(label);return !term||norm74(`${label} ${m.domain} ${window.IFSI_COURSE_CLASSIFICATION?.label(m.ue)||m.ue}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
   });
   const domains=new Map();
   for(const label of courses){
@@ -213,10 +215,16 @@ function renderCourses74(){
     const all=ueEntries.flatMap(x=>x[1]),qcm=all.reduce((n,x)=>n+x.data.qs.length,0);
     return `<section class="v74-domain-group">
       <div class="v74-domain-head"><div class="v74-domain-title"><span class="v74-domain-badge">DOMAINE ${esc74(domain)}</span><div><div class="v74-domain-name">${esc74(domainName74(domain))}</div><div class="v74-domain-meta">${all.length} cours • ${qcm} QCM</div></div></div></div>
-      <div class="v74-domain-body">${ueEntries.map(([ue,items])=>`<div class="v74-ue-group">
+      <div class="v74-domain-body">${ueEntries.map(([ue,items])=>{
+        const hasSubgroups=items.some(item=>item.meta.ue!==ue);
+        return `<div class="v74-ue-group">
         <div class="v74-ue-head"><div class="v74-ue-title"><span class="v74-ue-code">UE ${esc74(ue)}</span><div class="v74-ue-count">${items.length} cours • ${items.reduce((n,x)=>n+x.data.qs.length,0)} QCM</div></div></div>
-        <div class="v74-ue-cards">${ueResourcesHtml74(ue)}${items.map(({label:c,data:d})=>{const pct=d.rate??0;return `<button class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):sourceState74(registryCourse74(c)).received?'📘 Support officiel reçu':registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
-      </div>`).join('')}</div>
+        <div class="v74-ue-cards">${ueResourcesHtml74(ue)}${items.sort((a,b)=>a.meta.ue.localeCompare(b.meta.ue,'fr',{numeric:true})).map(({label:c,meta,data:d},i,ordered)=>{
+          const pct=d.rate??0;
+          const showHeading=hasSubgroups&&(!i||meta.ue!==ordered[i-1].meta.ue);
+          const heading=showHeading?`<h4 class="v74-subgroup" style="grid-column:1/-1;margin:8px 0 0">${esc74(window.IFSI_COURSE_CLASSIFICATION?.label(meta.ue)||meta.ue)}</h4>`:'';
+          return `${heading}<button data-course-ue="${esc74(meta.ue)}" class="v74-course-card" type="button" data-course74="${esc74(c)}"><div class="row"><span class="badge">${d.qs.length} QCM</span><span class="v74-count">${d.rate===null?'Pas encore testé':d.rate+'%'}</span></div><h3>${esc74(c)}</h3><div class="v74-course-meta"><span class="v74-pill">📄 ${d.sheets.length} fiche${d.sheets.length>1?'s':''}</span><span class="v74-pill ${registryCourse74(c)?.officialSupportUrl?'ok':''}">${registryCourse74(c)?.officialSupportUrl?(registryCourse74(c)?.officialSupportCoverage==='partial'?'📘 Support partiel':'📘 Support officiel'):sourceState74(registryCourse74(c)).received?'📘 Support officiel reçu':registryCourse74(c)?.captureSupportUrl?'📸 Captures provisoires':'📝 Source du cours absente'}</span>${d.sheets.some(x=>x.officialSupport===false)?'<span class="v74-pill" style="background:#f3effb;color:#5f43a3;border-color:#d8cbf2">📝 Notes / captures</span>':''}<span class="v74-pill">◫ ${d.infos.length} info</span>${window.IFSI_VOCAB?.countForCourse?.(courseMeta74(c).id)?`<span class="v74-pill">📘 ${window.IFSI_VOCAB.countForCourse(courseMeta74(c).id)} mots</span>`:''}<span class="v74-pill">🎧 ${d.vs.length} ${d.vs.length>1?'vocaux':'vocal'}</span>${d.err?`<span class="v74-pill">↻ ${d.err} erreur${d.err>1?'s':''}</span>`:''}${d.listenedCount?`<span class="v74-pill ok">✓ ${d.listenedCount}/${d.vs.length} vocaux</span>`:''}</div><div class="v74-master"><span style="width:${pct}%"></span></div></button>`}).join('')}</div>
+      </div>`}).join('')}</div>
     </section>`
   }).join('')||'<div class="card small">Aucun cours trouvé.</div>';
   grid.querySelectorAll('[data-course74]').forEach(b=>{

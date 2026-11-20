@@ -391,9 +391,12 @@
       if (back) back.insertAdjacentElement('afterend', crumb);
       else head.insertAdjacentElement('afterbegin', crumb);
     }
-    var domain = String(course.domain || ''), ue = simpleCode(course.ue);
+    var classification = window.IFSI_COURSE_CLASSIFICATION;
+    var detailCode = classification?.courseCode(course) || course.ue;
+    var ue = simpleCode(detailCode), domain = /^[A-E]\d/.test(ue) ? ue[0] : String(course.domain || '');
     var fullPath = domain + ' — ' + (DOMAIN[domain] || 'Autre domaine') + ' › ' +
       ue + ' — ' + (UE[ue] || 'Unité d’enseignement');
+    if (detailCode && detailCode !== ue) fullPath += ' › ' + (classification?.label(detailCode) || detailCode);
     if (crumb.textContent !== fullPath) crumb.textContent = fullPath;
     var row = head.querySelector('.v8430-course-status');
     if (isProvisional(course)) {
@@ -639,7 +642,7 @@
       var card=tile.querySelector('.v74-course-card'),actions=tile.querySelector('.v8433-card-actions');if(!card||!actions||card.querySelector('.mku-thumbnail'))return;
       var title=fold(card.querySelector('h3')?.textContent),emoji=/relation|communication|bientraitance/.test(title)?'🤝':/droit|legislation|responsabilite|ethique|judiciaire/.test(title)?'⚖️':/pharmac|medicament/.test(title)?'💊':/cardio|sang|hemato/.test(title)?'🫀':/respir|infect/.test(title)?'🫁':/sante publique|environnement/.test(title)?'🌍':/psych|neuro/.test(title)?'🧠':'🩺';
       var thumb=el('span','mku-thumbnail',emoji);thumb.setAttribute('aria-hidden','true');card.prepend(thumb);card.appendChild(el('span','mku-card-chevron','›'));
-      var code=tile.closest('.v74-ue-group')?.querySelector('.v74-ue-code')?.textContent;if(code)card.querySelector('.row')?.prepend(el('span','mku-code',code.replace(/^UE\s*/,'')));
+      var code=card.dataset.courseUe||tile.closest('.v74-ue-group')?.querySelector('.v74-ue-code')?.textContent;if(code)card.querySelector('.row')?.prepend(el('span','mku-code',code.replace(/^UE\s*/,'')));
       var open=actions.querySelector('.v8433-course-open');if(open)Array.from(open.childNodes).filter(n=>n.nodeType===3).forEach(n=>n.nodeValue=' Ouvrir');
       var meta=card.querySelector('.v74-course-meta');if(meta){var info=el('details','mku-card-info'),more=el('summary','','Ressources et progression');more.title='Ressources et progression';more.setAttribute('aria-label','Ressources et progression du cours');info.appendChild(more);var score=card.querySelector('.v74-count');if(score)info.appendChild(score);info.appendChild(meta);actions.appendChild(info);}
     });

@@ -19,14 +19,16 @@ const original=[
  mk('droits_patients_fiche_complement_p01_20261021','archived','COMPLEMENT ARCHIVE'),
  mk('droits_patients_fiche_unique_20261029','official','V8 UNIQUE ACTIVE')
 ];
-function render(rows,search=''){
+function render(rows,search='',selected='Toutes les UE'){
  const dom={
-  ue:{options:[{}],value:'Toutes les UE'},
+  ue:{options:[{}],value:selected},
   search:{value:search},
   sheetCount:{textContent:null},
   sheetList:{innerHTML:''}
  };
- const ctx={S:rows,$:key=>dom[key],uniq:arr=>[...new Set(arr)]};
+ const registry=JSON.parse(fs.readFileSync('course-registry-v741.json','utf8'));
+ const ctx={window:{IFSI_V741:{getRegistry:()=>registry}},S:rows,$:key=>dom[key],uniq:arr=>[...new Set(arr)]};
+ vm.runInNewContext(fs.readFileSync('course-classification.js','utf8'),ctx);
  vm.runInNewContext(implementation+'\nrenderSheets();',ctx,{timeout:1000});
  return dom;
 }
@@ -61,3 +63,14 @@ for(const a of fromCatalog.filter(x=>x.sourceStatus==='archived'))
  assert.ok(!realDom.sheetList.innerHTML.includes(a.url),
   'Une URL de fiche historique reste affichée dans l’interface');
 console.log('PASS UI: archives historiques invisibles, V8 active réelle, recherche sûre et autres cours conservés.');
+
+const sheets=[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync('sheets-'+n+'.json','utf8')));
+const infectious=render(sheets,'','B1.3');
+assert.match(infectious.sheetList.innerHTML,/Infections cutanées/);
+assert.match(infectious.sheetList.innerHTML,/Hépatites virales/);
+assert.doesNotMatch(infectious.sheetList.innerHTML,/Stomathérapie/);
+const psych=render(sheets,'','B2.1.1');
+assert.match(psych.sheetList.innerHTML,/Psychométrie/);
+assert.match(psych.sheetList.innerHTML,/Psychopathologie/);
+assert.doesNotMatch(psych.ue.innerHTML,/undefined|UE non précisée/);
+assert.equal((psych.ue.innerHTML.match(/value="C1"/g)||[]).length,1);
