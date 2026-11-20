@@ -270,7 +270,11 @@
      var b=Array.from(grid.querySelectorAll('.v74-domain-group')).find(function(g){return g.querySelector('.v74-domain-badge').textContent==='DOMAINE B'});
      var groups=Array.from(b.querySelectorAll('.v74-ue-code')).map(function(e){return e.textContent});
      if(JSON.stringify(groups)!==JSON.stringify(['UE B1','UE B2','UE B3']))throw Error('Groupes B incorrects : '+groups.join(', '));
-     var n=courses.filter(function(c){return c.domain==='B'&&c.showInCourses!==false}).length;
+     var n=courses.filter(function(c){return (c.domain==='B'||c.id==='calculs_doses_mathematiques')&&c.showInCourses!==false}).length;
+     if(document.getElementById('vPlanningNav')||document.getElementById('planningPromo'))throw Error('Planning visible pendant sa mise en pause');
+     if(!window.IFSI_PLANNING?.weeks.length)throw Error('Historique du planning indisponible');
+     var infection=b.querySelector('[data-course74="Infections cutanées"]');
+     if(infection?.dataset.courseUe!=='B1.3')throw Error('Classement 3i absent du catalogue');
      if(b.querySelectorAll('.v74-course-card').length!==n)throw Error('Comptage du domaine B incorrect');
      grid.querySelectorAll('.v74-course-card').forEach(function(card){
        if(!card.querySelector('.mku-thumbnail img.ifsi-course-picture'))throw Error('Cours sans illustration : '+card.dataset.course74);

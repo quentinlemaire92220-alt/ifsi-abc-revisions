@@ -41,3 +41,10 @@ assert.equal(nav.style.gridTemplateColumns,'repeat('+(enabled?7:6)+',minmax(0,1f
 assert.ok(classes.has('vplanning-nav'),'Planning layout must be active');
 }
 console.log('✅ Navigation réellement visible v87 : Accueil, Planning, Cours, Anatomie, Révision, Paramètres ; Pathologies conditionnel');
+
+const production={window:{},document:{},localStorage:{getItem:()=>null},setInterval(){throw Error('Initialisation inattendue du planning masqué')}};
+vm.runInNewContext(read('app-features-v1.js'),production);
+vm.runInNewContext(planSrc,production);
+assert.equal(production.window.IFSI_APP_FEATURES.planning,false);
+assert.ok(production.window.IFSI_PLANNING.weeks.length);
+production.window.IFSI_PLANNING.show();
