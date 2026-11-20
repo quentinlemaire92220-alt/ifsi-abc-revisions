@@ -47,7 +47,7 @@ function dialog(){
 function openSettings(){const d=dialog();$('v86Dark').checked=localStorage.getItem(DARK)==='1';$('v86Timer').checked=localStorage.getItem(TIMER)==='1';d.showModal()}
 function state(){const home=$('home');const on=!!home&&!home.classList.contains('hidden');document.body.classList.toggle('v86-home',on);if(on)tools()}
 function apply(){css();$('v76More')?.remove();state()}
-let tries=0;const t=setInterval(()=>{tries++;apply();if(($('v82Primary')&&document.querySelector('.v76-today'))||tries>200)clearInterval(t)},100);
+let tries=0;const t=setInterval(()=>{tries++;apply();if(($('v82Primary')&&$('v86Tools'))||tries>200)clearInterval(t)},100);
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.IFSI_V86={version:V,apply,openSettings};
 })();

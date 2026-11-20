@@ -78,7 +78,7 @@ function mountCourse(courseId){
  $('vgCourseSheet').onclick=()=>openCourse(courseId);
  $('vgCourseQuiz').onclick=()=>startCourseQuiz(courseId);
 }
-async function load(){try{const response=await fetch('./vocabulaire-v1.json',{cache:'no-cache'});if(!response.ok)throw Error('HTTP '+response.status);const doc=await response.json();data=validate(doc.entries||[]);if(!data.length)throw Error('Glossaire vide');window.IFSI_QCM_HYDRATE?.();window.dispatchEvent(new Event('ifsi:vocabulary-ready'));window.IFSI_V8338_FLASHCARDS?.rebuild?.();window.IFSI_V74?.refreshCourses?.();window.IFSI_V74?.refreshCourse?.();mountCatalog();if(!$(ID).classList.contains('hidden')&&view==='fiche')showFiche()}catch(err){loadError=String(err);console.warn('Vocabulaire indisponible',err)}}
+async function load(){try{const response=await fetch('./vocabulaire-v1.json',{cache:'no-cache'});if(!response.ok)throw Error('HTTP '+response.status);const doc=await response.json();data=validate(doc.entries||[]);if(!data.length)throw Error('Glossaire vide');window.IFSI_QCM_HYDRATE?.();window.dispatchEvent(new Event('ifsi:vocabulary-ready'));window.IFSI_V8338_FLASHCARDS?.invalidate?.();window.IFSI_V74?.refreshCourses?.();window.IFSI_V74?.refreshCourse?.();mountCatalog();if(!$(ID).classList.contains('hidden')&&view==='fiche')showFiche()}catch(err){loadError=String(err);console.warn('Vocabulaire indisponible',err)}}
 ensure();css();$(ID)?.addEventListener('click',handleClick);
 window.IFSI_VOCAB={version:V,open,openCourse,startCourseQuiz,countForCourse,forCourse,entries:()=>data.slice(),questions,flashcards,mountCatalog,mountCourse,refresh:load};
 load();

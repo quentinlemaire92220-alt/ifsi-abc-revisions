@@ -14,9 +14,17 @@ const rafShim='<script>window.requestAnimationFrame=function(callback){return se
 const testPage=html.replace('</head>',rafShim+'\n</head>').replace('</body>',injected+'\n</body>');
 assert.notEqual(testPage,html,'Impossible de préparer le test de l’application complète');
 const types={'.html':'text/html','.js':'text/javascript','.mjs':'text/javascript','.json':'application/json','.txt':'text/plain','.css':'text/css','.svg':'image/svg+xml','.webmanifest':'application/manifest+json','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.b64':'text/plain'};
+let offline=false;
+const blockedStartupRequests=[];
+const appScripts=new Set([...html.matchAll(/<script src="\.\/([^"?]+)/g)].map(m=>'/'+m[1]));
 const server=http.createServer((req,res)=>{
  let name;
  try{name=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{return res.writeHead(400).end()}
+ if(offline){
+   if(name==='/index.html'||appScripts.has(name)||/^\/(questions-|qextra-)/.test(name))blockedStartupRequests.push(name);
+   req.socket.destroy();
+   return;
+ }
  if(name==='/'||name==='/index.html'){
    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store'}).end(testPage);return;
  }
@@ -36,7 +44,7 @@ assert.ok(chrome,'Le navigateur Chromium est obligatoire pour les tests de déma
 await new Promise((resolve,reject)=>server.listen(0,'127.0.0.1',e=>e?reject(e):resolve()));
 const port=server.address().port;
 async function testViewport(width,height){
- const url='http://127.0.0.1:'+port+'/?test=ui-v2-anti-freeze';
+ const url='http://127.0.0.1:'+port+'/index.html?test=ui-v2-anti-freeze';
  // Observe the real asynchronous startup clock. A virtual-time dump can run
  // its deadline while service-worker/network tasks are still pending.
  const profileRoot=process.platform==='win32'&&process.env.LOCALAPPDATA?path.join(process.env.LOCALAPPDATA,'Temp'):os.tmpdir();
@@ -67,7 +75,34 @@ async function testViewport(width,height){
   }
   assert.ok(observed,'Aucun résultat de lancement complet à '+width+' px');
   clean=observed.text;assert.equal(observed.result,'pass','Echec du lancement complet '+width+' px : '+clean);
+  async function waitForBank(navigationType){
+   const deadline=Date.now()+90000;
+   while(Date.now()<deadline){
+    const state=await cmd('Runtime.evaluate',{expression:`({
+     navigation:performance.getEntriesByType('navigation')[0]?.type,
+     controlled:!!navigator.serviceWorker.controller,
+     ready:window.IFSI_QCM_LOAD?.status==='ready'&&typeof Q!=='undefined'&&Q.some(q=>q.id==='v820_digest1_024'),
+     home:!!document.getElementById('v82Primary')
+    })`,returnByValue:true});
+    const value=state.result?.value;
+    if(value?.controlled&&value.ready&&value.home&&(navigationType!=='reload'||value.navigation==='reload')){
+     assert.equal(value.navigation,navigationType,'Navigation inattendue au démarrage');
+     return;
+    }
+    await pause(150);
+   }
+   assert.fail('Banque QCM et navigation indisponibles après '+navigationType);
+  }
+  await waitForBank('navigate');
+  if(width===390){
+   offline=true;
+   await cmd('Page.reload');
+   await waitForBank('reload');
+   assert.deepEqual(blockedStartupRequests,[],'Le redémarrage a attendu le réseau pour une ressource installée');
+   clean+=' • premier lancement sans rechargement, redémarrage hors ligne avec QCM complets';
+  }
  }finally{
+  offline=false;
   if(ws)ws.close();child.kill();
   // Close only this test profile, including on a failed startup.
   await new Promise(resolve=>{if(child.exitCode!==null||child.signalCode)return resolve();child.once('close',resolve);setTimeout(resolve,3000)});

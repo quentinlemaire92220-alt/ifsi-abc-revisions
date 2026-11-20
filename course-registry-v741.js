@@ -42,10 +42,10 @@ function resolveVocal(v){
 }
 function attachIds(){
   if(!registry)return;
-  for(const q of (Array.isArray(Q)?Q:[])){const r=resolveQuestion(q);if(r.courseId&&!q.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
-  for(const v of (window.IFSI_V73?.getVocals?.()||[])){const r=resolveVocal(v);if(r.courseId&&!v.courseId){v.courseId=r.courseId;v._courseLink='registry'}}
-  for(const x of (Array.isArray(S)?S:[])){const r=resolveResource(x,'sheet');if(r.courseId&&!x.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
-  for(const x of (Array.isArray(I)?I:[])){const r=resolveResource(x,'info');if(r.courseId&&!x.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
+  for(const q of (Array.isArray(Q)?Q:[])){if(q.courseId)continue;const r=resolveQuestion(q);if(r.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
+  for(const v of (window.IFSI_V73?.getVocals?.()||[])){if(v.courseId)continue;const r=resolveVocal(v);if(r.courseId){v.courseId=r.courseId;v._courseLink='registry'}}
+  for(const x of (Array.isArray(S)?S:[])){if(x.courseId)continue;const r=resolveResource(x,'sheet');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
+  for(const x of (Array.isArray(I)?I:[])){if(x.courseId)continue;const r=resolveResource(x,'info');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
 }
 function audit(){
   if(!registry)return null;const qs=Array.isArray(Q)?Q:[],vs=window.IFSI_V73?.getVocals?.()||[],sheets=Array.isArray(S)?S:[],infos=Array.isArray(I)?I:[];
@@ -60,6 +60,7 @@ function audit(){
   report.warnings=report.sheets.unmatched.length+report.infographics.unmatched.length;lastAudit=report;return report;
 }
 function rebuildResourceIndex(){
+  attachIds();
   resourceIndex=new Map((registry?.courses||[]).map(c=>[c.id,{questions:[],vocals:[],sheets:[],infographics:[]}]));
   const put=(id,key,item)=>{if(id&&resourceIndex.has(id))resourceIndex.get(id)[key].push(item)};
   for(const q of (Array.isArray(Q)?Q:[]))put(q.courseId,'questions',q);
@@ -80,6 +81,7 @@ function rebuildResourceIndex(){
     if(r.sheets.some(s=>s.resourceId==='psychologie_sante_fiche_20261029'&&s.primaryRevision===true))
       r.sheets=r.sheets.filter(s=>s.sourceStatus!=='archived');
   }
+  window.IFSI_V8338_FLASHCARDS?.invalidate?.();
 }
 function resourcesForCourse(courseId){
   const ids=[courseId,...(registry?.courses||[]).filter(c=>c.parentId===courseId).map(c=>c.id)];
@@ -102,7 +104,7 @@ function diagnosticUI(){
   box.innerHTML=`<div class="row"><div><b>🧪 Diagnostic V${VERSION}</b><div class="small">${status} • ${r.registryCourses} IDs de cours stables</div></div><span class="badge">${r.errors} erreur${r.errors>1?'s':''}</span></div><div class="small" style="margin-top:8px">Non rattachées (hors registre actuel) : ${r.sheets.unmatched.length} fiches • ${r.infographics.unmatched.length} infographies. Elles sont surveillées par les TNR pour détecter tout nouvel ajout non classé.</div>${issues.length?`<div class="warn" style="margin-top:10px">${issues.slice(0,12).map(esc).join('<br>')}</div>`:''}<details style="margin-top:10px"><summary><b>Voir le détail par cours</b></summary>${courseRows}</details>`;
 }
 async function boot(){
-  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();await window.IFSI_AUDIO_SERIES?.ready;if(window.IFSI_AUDIO_SERIES)registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);buildCourseIndexes();attachIds();rebuildResourceIndex();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
+  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();await window.IFSI_AUDIO_SERIES?.ready;if(window.IFSI_AUDIO_SERIES)registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);buildCourseIndexes();rebuildResourceIndex();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
   catch(e){console.error('V7.4.1 registre cours',e)}
 }
 window.IFSI_V741={version:VERSION,getRegistry:()=>registry,audit,resolveLabel,resolveResource,courseIdForLabel,resourcesForCourse,rebuildResourceIndex,getLastAudit:()=>lastAudit};
