@@ -35,13 +35,6 @@ function css(){
  `;document.head.appendChild(s)
 }
 function registry(){return window.IFSI_V741?.getRegistry?.()?.courses||[]}
-function info(c){
- const r=window.IFSI_V741?.resourcesForCourse?.(c.id)||{questions:[],sheets:[],infographics:[],vocals:[]};
- return {c,r,total:(r.questions?.length||0)+(r.sheets?.length||0)+(r.infographics?.length||0)+(r.vocals?.length||0)}
-}
-function available(){
- return registry().filter(c=>c.showInCourses!==false).map(info).filter(x=>x.total>0)
-}
 function openCourse(id){
  const c=registry().find(x=>x.id===id);if(!c)return;
  if(typeof window.openCourse74==='function')window.openCourse74(c.label);else window.showCourses74?.()
@@ -50,20 +43,30 @@ function openBoards(id){
  if(window.IFSI_V82?.showSystemBoards)return window.IFSI_V82.showSystemBoards(id);
  window.IFSI_V82?.showAnatomy?.()
 }
-function resultButton(x){
- const r=x.r||{};return `<button class="v813-course" type="button" data-v813course="${E(x.c.id)}"><b>${E(x.c.label)}</b><small>${r.questions?.length||0} QCM • ${r.sheets?.length||0} fiche${(r.sheets?.length||0)>1?'s':''} • ${r.infographics?.length||0} info • ${r.vocals?.length||0} ${(r.vocals?.length||0)>1?'vocaux':'vocal'}</small></button>`
+function resultButton(c){
+ const {questions=[],sheets=[],infographics=[],vocals=[]}=window.IFSI_V741.resourcesForCourse(c.id)||{};
+ const counts=[
+   questions.length&&questions.length+' QCM',
+   sheets.length&&sheets.length+(sheets.length>1?' fiches':' fiche'),
+   infographics.length&&infographics.length+(infographics.length>1?' infographies':' infographie'),
+   vocals.length&&vocals.length+(vocals.length>1?' vocaux':' vocal')
+ ].filter(Boolean).join(' • ');
+ return `<button class="v813-course" type="button" data-v813course="${E(c.id)}"><b>${E(c.label)}</b><small>${counts||'Ouvrir le cours'}</small></button>`
 }
 function renderResults(){
  const input=$('v813Search'),box=$('v813Results'),quick=$('v813Quick');if(!box||!input)return;
+ const focused=document.activeElement?.dataset.v813course;
  const term=N(input.value);
+ const courses=registry().filter(c=>c.showInCourses!==false);
  if(!term){
-   box.innerHTML='';if(quick)quick.innerHTML=QUICK.map(id=>{const x=available().find(y=>y.c.id===id);return x?`<button class="v813-chip" type="button" data-v813course="${E(id)}">${E(x.c.label)}</button>`:''}).join('');
+   box.innerHTML='';if(quick)quick.innerHTML=QUICK.map(id=>{const c=courses.find(c=>c.id===id);return c?`<button class="v813-chip" type="button" data-v813course="${E(id)}">${E(c.label)}</button>`:''}).join('');
  }else{
    if(quick)quick.innerHTML='';
-   const rows=available().filter(x=>N([x.c.label,...(x.c.aliases||[]),x.c.ue||'',x.c.domain||''].join(' ')).includes(term)).slice(0,8);
-   box.innerHTML=rows.length?rows.map(resultButton).join(''):`<div class="v813-empty">Aucun cours trouvé pour « ${E(input.value.trim())} ».</div>`;
+   const rows=courses.filter(c=>N([c.label,...(c.aliases||[]),c.ue||'',c.domain||''].join(' ')).includes(term)).slice(0,8);
+   box.innerHTML=rows.length?rows.map(resultButton).join(''):!window.IFSI_V741?.getRegistry?.()?'<div class="v813-empty">Chargement des cours…</div>':`<div class="v813-empty">Aucun cours trouvé pour « ${E(input.value.trim())} ».</div>`;
  }
- bindCourseButtons()
+ bindCourseButtons();
+ if(focused)document.querySelector(`[data-v813course="${CSS.escape(focused)}"]`)?.focus({preventScroll:true})
 }
 function bindCourseButtons(){document.querySelectorAll('[data-v813course]').forEach(b=>b.onclick=()=>openCourse(b.dataset.v813course))}
 function mount(){
@@ -78,6 +81,7 @@ function mount(){
 function apply(){css();mount();renderResults();$('v86Settings')?.remove()}
 let tries=0;const t=setInterval(()=>{tries++;apply();if($('v86Tools')?.dataset.v813==='1'||tries>240)clearInterval(t)},100);
 window.addEventListener('ifsi:v741-ready',()=>requestAnimationFrame(apply));
+window.addEventListener('ifsi:course-resources',()=>{if(!$('home')?.classList.contains('hidden'))renderResults()});
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.IFSI_V813={version:V,apply,openCourse,openBoards,recent:()=>RECENT.map(x=>({...x}))};
 })();

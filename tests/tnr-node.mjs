@@ -8,6 +8,7 @@ import {validateInteractiveAudioOnly} from './interactive-audio-review-contract.
 import {validateReceivedAudioOnly} from '../tools/received-audio-only-contract.mjs';
 import {validateHostedAudioSupplements} from '../tools/hosted-audio-supplement-contract.mjs';
 import fs from 'node:fs';
+import {runInNewContext} from 'node:vm';
 import {createHash} from 'node:crypto';
 import './course-navigation-ui-v2-smoke.mjs';
 import './course-thumbnails-55-design.mjs';
@@ -350,7 +351,13 @@ assert(vocabJs.includes('makeQuestion(term,forCourse(courseId))'),'Les QCM doive
 assert(!vocabJs.includes('vgCourseFlash')&&!vocabJs.includes('data-vg="flashcards"'),'Le vocabulaire doit proposer fiche et QCM seulement');
 assert(!vocabJs.includes('function inject(){')&&!vocabJs.includes('fc-revision-entry'),'Le dictionnaire ne doit pas réapparaître dans Révision');
 assert(vocabCourseUi.includes("window.IFSI_VOCAB?.mountCatalog?.()")&&vocabCourseUi.includes("window.IFSI_VOCAB?.mountCourse?.(courseMeta.id)"),'Vocabulaire non inséré dans les écrans Cours');
-assert(vocabCourseUi.includes('countForCourse?.(c.id)'),'Cours avec vocabulaire masqués dans la liste des cours');
+const visibleCourseLabels=vocabCourseUi.slice(vocabCourseUi.indexOf('function allCourses74()'),vocabCourseUi.indexOf('function courseData74('));
+const catalogueFixture=[{id:'lexique',label:'Lexique seul'},{id:'fiches',label:'Fiches en chargement'},{id:'archive',label:'Archive',showInCourses:false}];
+const labels=runInNewContext(visibleCourseLabels+';allCourses74()',{
+ window:{IFSI_V741:{getRegistry:()=>({courses:catalogueFixture})},IFSI_VOCAB:{countForCourse:id=>id==='lexique'?7:0}},
+ courseData74:()=>({qs:[],vs:[],sheets:[],infos:[]})
+});
+assert(JSON.stringify(labels)===JSON.stringify(['Fiches en chargement','Lexique seul']),'Catalogue initial : cours de vocabulaire et fiches attendues, archives masquées');
 assert(flashcardJs.includes('courseIds?.includes(id)'),'Flashcards vocabulaire non associées à tous leurs cours');
 assert(flashcardJs.includes("kind==='Vocabulaire'")&&flashcardJs.includes('function openVocabulary(courseId'),'Mode flashcards vocabulaire par cours absent');
 assert(flashcardJs.includes('À ne pas confondre')&&flashcardJs.includes('Comprendre le mot'),'Verso flashcard vocabulaire pédagogique incomplet');

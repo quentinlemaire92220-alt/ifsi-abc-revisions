@@ -101,15 +101,47 @@ function diagnosticUI(){
   const issues=[...r.sheets.ambiguous.map(x=>`Fiche ambiguë : ${x.label}`),...r.infographics.ambiguous.map(x=>`Infographie ambiguë : ${x.label}`),...r.questions.unmatched.map(x=>`QCM sans cours : ${x.label}`),...r.vocals.unmatched.map(x=>`Vocal sans cours : ${x.label}`),...r.sheets.invalid.map(x=>`Fiche courseId invalide : ${x.label}`),...r.infographics.invalid.map(x=>`Infographie courseId invalide : ${x.label}`)];
   box.innerHTML=`<div class="row"><div><b>🧪 Diagnostic V${VERSION}</b><div class="small">${status} • ${r.registryCourses} IDs de cours stables</div></div><span class="badge">${r.errors} erreur${r.errors>1?'s':''}</span></div><div class="small" style="margin-top:8px">Non rattachées (hors registre actuel) : ${r.sheets.unmatched.length} fiches • ${r.infographics.unmatched.length} infographies. Elles sont surveillées par les TNR pour détecter tout nouvel ajout non classé.</div>${issues.length?`<div class="warn" style="margin-top:10px">${issues.slice(0,12).map(esc).join('<br>')}</div>`:''}<details style="margin-top:10px"><summary><b>Voir le détail par cours</b></summary>${courseRows}</details>`;
 }
+let updatePending=false;
+function notifyResources(){
+  if(updatePending)return;
+  updatePending=true;
+  requestAnimationFrame(()=>{
+    updatePending=false;
+    diagnosticUI();
+    window.dispatchEvent(new Event('ifsi:course-resources'));
+  });
+}
 function refreshCourseResources(){
+  if(!registry)return;
   attachIds();
   rebuildResourceIndex();
   window.IFSI_V8338_FLASHCARDS?.invalidate?.();
+  notifyResources();
+}
+async function applyAudioMetadata(){
+  if(!window.IFSI_AUDIO_SERIES)return;
+  try{
+    await window.IFSI_AUDIO_SERIES?.ready;
+    registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);
+    buildCourseIndexes();
+    notifyResources();
+  }catch(error){console.warn('Métadonnées audio indisponibles',error)}
 }
 async function boot(){
-  try{const res=await fetch('./course-registry-v741.json',{cache:'no-store'});if(!res.ok)throw new Error('registre indisponible');registry=await res.json();await window.IFSI_AUDIO_SERIES?.ready;if(window.IFSI_AUDIO_SERIES)registry=window.IFSI_AUDIO_SERIES.applyRegistry(registry);buildCourseIndexes();refreshCourseResources();diagnosticUI();annotateCourseCards();setVersion();const obs=new MutationObserver(()=>annotateCourseCards());const grid=document.getElementById('v74CourseGrid');if(grid)obs.observe(grid,{childList:true,subtree:true});window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));}
-  catch(e){console.error('V7.4.1 registre cours',e)}
+  try{
+    const response=await fetch('./course-registry-v741.json',{cache:'no-store'});
+    if(!response.ok)throw Error('registre indisponible');
+    registry=await response.json();
+    buildCourseIndexes();
+    refreshCourseResources();
+    annotateCourseCards();
+    const grid=document.getElementById('v74CourseGrid');
+    if(grid)new MutationObserver(annotateCourseCards).observe(grid,{childList:true,subtree:true});
+    window.dispatchEvent(new CustomEvent('ifsi:v741-ready'));
+    applyAudioMetadata();
+  }catch(error){console.error('V7.4.1 registre cours',error)}
 }
 window.IFSI_V741={version:VERSION,getRegistry:()=>registry,audit,resolveLabel,resolveResource,courseIdForLabel,resourcesForCourse,rebuildResourceIndex:refreshCourseResources,getLastAudit:()=>lastAudit};
-let tries=0;const timer=setInterval(()=>{tries++;if(Array.isArray(Q)&&Q.length&&Array.isArray(S)&&S.length&&Array.isArray(I)&&I.length&&window.IFSI_V73?.getVocals?.()?.length){clearInterval(timer);boot()}else if(tries>240){clearInterval(timer);boot()}},125);
+window.addEventListener('ifsi:v73-ready',refreshCourseResources);
+boot();
 })();
