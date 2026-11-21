@@ -26,7 +26,9 @@ function qcmResume(){const r=readJSON('ifsiabc_resume_v1',null);return r&&Array.
 function vocalResume(){const state=window.IFSI_V73?.getState?.()||readJSON('ifsiabc_vocals_v1',{lastId:null});return state?.lastId||null}
 function resumeLabel(){const r=qcmResume();if(r)return `Question ${Math.min((r.index||0)+1,r.ids.length)} / ${r.ids.length}`;const id=vocalResume();if(id){const v=(window.IFSI_V73?.getVocals?.()||[]).find(x=>x.id===id);return v?.title||'Dernier vocal consulté'}return 'Aucune activité interrompue'}
 function resumeAction(){const r=qcmResume();if(r&&typeof window.resumeSession==='function')return window.resumeSession();const id=vocalResume();if(id){window.showVocals?.();setTimeout(()=>window.IFSI_V73?.play?.(id),100);return}alert('Aucune activité à reprendre pour le moment.')}
-function startNow(){const p=window.IFSI_V75?.buildTodaySession?.();if(p?.questions?.length&&typeof window.startTodayV75==='function')return window.startTodayV75();if(typeof window.startSmart==='function')return window.startSmart();window.startQuick?.()}
+function startNow(){
+ if(window.IFSI_QCM_LOAD?.status==='loading'&&!window.IFSI_QCM_LOAD.count)return window.IFSI_QCM_WHEN_READY(startNow);
+ const p=window.IFSI_V75?.buildTodaySession?.();if(p?.questions?.length&&typeof window.startTodayV75==='function')return window.startTodayV75();if(typeof window.startSmart==='function')return window.startSmart();window.startQuick?.()}
 function openResources(){if(typeof window.showCourses74==='function')return window.showCourses74();window.showSheets?.()}
 
 function buildHome(){

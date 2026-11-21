@@ -42,7 +42,7 @@ const index=fs.readFileSync('index.html','utf8');
 const boot=index.slice(index.indexOf('window.IFSI_QCM_LOAD={'),index.indexOf('\nfunction fill(){'));
 let extrasPartial=true;
 const page={
- Q:[],S:[],I:[],console:{warn(){}},
+ Q:[],S:[],I:[],setTimeout,clearTimeout,console:{warn(){}},
  CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail}},
  window:{dispatchEvent(e){this.last=e.detail}},$(){return null},fill(){},renderSheets(){},renderInfographics(){},
  fetch:async path=>{
@@ -55,6 +55,7 @@ const page={
 };
 vm.createContext(page);vm.runInContext(boot,page);
 await vm.runInContext('boot()',page);
+await page.window.IFSI_QCM_ENSURE();
 assert.equal(page.window.IFSI_QCM_LOAD.status,'partial');
 assert.deepEqual(Array.from(page.window.IFSI_QCM_LOAD.failed),['qextra-17.txt']);
 extrasPartial=false;

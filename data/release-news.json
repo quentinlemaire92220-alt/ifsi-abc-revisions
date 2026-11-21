@@ -1,5 +1,15 @@
 [
   {
+    "id": "v8501Change",
+    "date": "2026-11-21",
+    "title": "V8.30.201 — Priorité aux fiches au démarrage",
+    "copy": "Recherche et fiches prioritaires au démarrage. Les questions se chargent dès l’ouverture de Révision ou des Flashcards.",
+    "type": "app",
+    "badges": [
+      "UX/UI"
+    ]
+  },
+  {
     "id": "v8500Change",
     "date": "2026-11-21",
     "title": "V8.30.200 — Accès plus rapide aux cours et aux fiches",

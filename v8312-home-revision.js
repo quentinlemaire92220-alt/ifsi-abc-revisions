@@ -123,6 +123,10 @@ function apply(){css();home();renderNews();revision();observeRevision()}
 function startupStable(){return !!$('v8303HomeExtras')&&!!$('v8312NewsUi')&&!!$('v8312MyRevision')&&!!$('v87Log')}
 let tries=0;const timer=setInterval(()=>{tries++;apply();if(startupStable()||tries>30)clearInterval(timer)},100);
 window.addEventListener('pageshow',renderNews);
+window.addEventListener('ifsi:qcm-load',()=>{
+ const hub=$('v81Hub');
+ if(hub&&!hub.classList.contains('hidden'))requestAnimationFrame(revision);
+});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)renderNews()});
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.addEventListener('ifsi:v73-ready',()=>requestAnimationFrame(apply));

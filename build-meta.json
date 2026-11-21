@@ -1,6 +1,6 @@
 {
-  "version": "8.30.200",
-  "build": "8500",
+  "version": "8.30.201",
+  "build": "8501",
   "releasedAt": "2026-11-21",
-  "summary": "Recherche de cours dès l’ouverture du catalogue et lecture hors ligne des fiches en cache."
+  "summary": "Recherche et fiches prioritaires au démarrage. Les questions se chargent dès l’ouverture de Révision ou des Flashcards."
 }
