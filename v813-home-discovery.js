@@ -76,7 +76,9 @@ function mount(){
 `;
  $('v813AllCourses').onclick=()=>window.showCourses74?.();
  $('v813Search').oninput=renderResults;
- renderResults();return true
+ renderResults();
+ window.dispatchEvent?.(new Event('ifsi:search-mounted'));
+ return true
 }
 function apply(){css();mount();renderResults();$('v86Settings')?.remove()}
 let tries=0;const t=setInterval(()=>{tries++;apply();if($('v86Tools')?.dataset.v813==='1'||tries>240)clearInterval(t)},100);

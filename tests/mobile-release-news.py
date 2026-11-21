@@ -252,6 +252,62 @@ def check_progressive_offline(browser, directory):
         context.close()
 
 
+def check_early_revision(browser, directory):
+    # Keep sheets pending so the background timer cannot win the race with the student.
+    with site(directory) as (_, url):
+        context = browser.new_context(viewport={'width': 390, 'height': 844}, is_mobile=True,
+                                      has_touch=True, service_workers='block')
+        context.add_init_script(r"""(() => {
+            localStorage.setItem('ifsiabc_analytics_optout_v1', '1');
+            window.bankRequests = [];
+            const bank = new Promise(resolve => {window.releaseBank = resolve});
+            const fetchData = window.fetch.bind(window);
+            window.fetch = async (input, ...args) => {
+                const path = new URL(input.url || input, location.href).pathname;
+                if (/\/(sheets-\d+|vocabulaire-v1)\.json$/.test(path)) return new Promise(()=>{});
+                if (/\/questions-\d+\.json$/.test(path)) {
+                    window.bankRequests.push(path);
+                    await bank;
+                }
+                return fetchData(input, ...args);
+            };
+        })()""")
+        page = context.new_page()
+        page.goto(url, wait_until='commit')
+        center = page.locator('#v87Center')
+        center.wait_for()
+        assert page.evaluate('bankRequests.length') == 0
+        center.click()
+        page.wait_for_function('bankRequests.length === 5')
+        page.locator('#fcOpen').click()
+        status = page.locator('#fcApp [role="status"]')
+        assert 'Chargement des flashcards' in status.inner_text()
+        page.evaluate('releaseBank()')
+        page.locator('#fcContinue').click()
+        page.locator('#fcQuit').wait_for()
+        assert page.evaluate('new Set(bankRequests).size === 5 && bankRequests.length === 5')
+        page.close()
+
+        for leave in [False, True]:
+            page = context.new_page()
+            page.goto(url, wait_until='commit')
+            page.locator('#v87Center').click()
+            page.locator('#v8312Start').click()
+            assert page.locator('#v8312Start').is_disabled()
+            if leave:
+                page.locator('#v87Home').click()
+            page.evaluate('releaseBank()')
+            page.wait_for_function("window.IFSI_QCM_LOAD.status === 'ready'")
+            if leave:
+                assert page.locator('#quiz').is_hidden() and page.locator('#home').is_visible()
+            else:
+                page.locator('#quiz').wait_for()
+                assert page.locator('#qtext').inner_text().strip()
+            page.close()
+        context.close()
+        print('Mobile: early revision fetched each pack once, started a quiz or flashcards, and respected a return home', flush=True)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('baseline', type=Path)
@@ -263,4 +319,5 @@ if __name__ == '__main__':
         run(browser, args.baseline.resolve(), candidate, upgrade=True)
         run(browser, candidate, candidate, upgrade=False)
         check_progressive_offline(browser, candidate)
+        check_early_revision(browser, candidate)
         browser.close()

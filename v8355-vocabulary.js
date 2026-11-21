@@ -73,6 +73,7 @@ function startQuiz(){
  const pool=(typeof Q!=='undefined'?Q:[]).filter(q=>(selectedCourse==='all'||q.courseId===selectedCourse)&&((q.kind==='Vocabulaire'&&ids.has(q.vocabularyTermId))||q.vocabularyTermIds?.some(id=>ids.has(id))));
  // Shared terms have one question per associated course; a global vocabulary session uses each term once.
  const unique=new Map();for(const q of pool){const id=q.vocabularyTermId||q.id;if(!unique.has(id))unique.set(id,q)}
+ if(!unique.size&&window.IFSI_QCM_LOAD?.status==='loading'&&window.IFSI_QCM_WHEN_READY)return window.IFSI_QCM_WHEN_READY(startQuiz);
  if(!unique.size||typeof begin!=='function')return;
  localStorage.setItem('ifsiabc_v7_mode','train');
  begin(shuffle([...unique.values()]).slice(0,10));
