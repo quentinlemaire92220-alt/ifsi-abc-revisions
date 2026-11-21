@@ -2,6 +2,8 @@
 import argparse
 import base64
 from contextlib import contextmanager
+from functools import lru_cache
+import hashlib
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
@@ -19,11 +21,34 @@ PROFILE = dict(latency=80, downloadThroughput=2_000_000, uploadThroughput=1_000_
 
 @contextmanager
 def site(directory, local_pdf_links=False):
+    @lru_cache(maxsize=1024)
+    def etag_for(source):
+        return '"' + hashlib.sha256(source.read_bytes()).hexdigest() + '"'
+
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, request, client_address, server):
             super().__init__(request, client_address, server, directory=str(server.root))
 
+        def end_headers(self):
+            if getattr(self, 'etag', None):
+                self.send_header('ETag', self.etag)
+                self.send_header('Cache-Control', 'no-cache')
+            super().end_headers()
+
         def do_GET(self):
+            # CI checks out the old build last. An earlier mtime can otherwise make
+            # SimpleHTTPRequestHandler return 304 for a changed service worker.
+            source = Path(self.translate_path(self.path))
+            if source.is_dir():
+                source = source / 'index.html'
+            self.etag = None
+            if source.suffix in {'.js', '.html', '.json'} and source.is_file():
+                self.etag = etag_for(source)
+                if self.headers.get('If-None-Match') == self.etag:
+                    self.send_response(304)
+                    self.end_headers()
+                    return
+                del self.headers['If-Modified-Since']
             # On Pages the absolute catalogue links and the worker share an origin.
             if local_pdf_links and self.path == '/sheets-3.json':
                 data = (server.root / 'sheets-3.json').read_bytes().replace(
