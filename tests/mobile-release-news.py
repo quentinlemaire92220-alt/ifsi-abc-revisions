@@ -42,10 +42,12 @@ def open_sheet(page, started):
     search.fill('Psychométrie')
     page.locator('#v813Results [data-v813course="psychometrie"]').click()
     detail = page.locator('#v74CourseDetail')
-    link = detail.locator(f'a[href$="{PDF}"]').first
-    link.wait_for(state='attached')
-    if not link.is_visible():
-        detail.get_by_role('button', name='Fiches de révision', exact=False).first.click()
+    # Decoration moves the initially visible link into a collapsed panel.
+    # Wait for the finished control before interacting, on both versions.
+    toggle = page.get_by_role('button', name='Fiches de révision', exact=False)
+    section = detail.locator('.mku-resource').filter(has=toggle)
+    section.get_by_role('button', name='Fiches de révision', expanded=False).click()
+    link = section.locator(f'.mku-panel:not([hidden]) a[href$="{PDF}"]').first
     # The clock stops when the actual document link is activated. PDF rendering is separate.
     page.evaluate("""() => document.addEventListener('click', event => {
         const link = event.target.closest('a[href]');
