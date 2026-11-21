@@ -1,5 +1,6 @@
 """Compare access to the same revision sheet on two static builds, using Chromium."""
 import argparse
+import base64
 from contextlib import contextmanager
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -9,7 +10,7 @@ import shutil
 import threading
 import time
 
-from playwright.sync_api import Error as PlaywrightError, TimeoutError as PlaywrightTimeout, sync_playwright
+from playwright.sync_api import TimeoutError as PlaywrightTimeout, sync_playwright
 
 PDF = 'assets/psychometrie-20261112/Psychometrie_Cours_complet.pdf'
 PROFILE = dict(latency=80, downloadThroughput=2_000_000, uploadThroughput=1_000_000,
@@ -207,33 +208,38 @@ def check_progressive_offline(browser, directory):
         link = sheet_link(page)
         # The trusted click stays on the real PDF URL. Capture its navigation response.
         pdf_url = link.evaluate('a => a.href')
-        downloads = []
-        page.on('download', lambda file: downloads.append(file))
-        context.on('page', lambda tab: tab.on('download', lambda file: downloads.append(file)))
+        # Chrome can expose its PDF viewer's own document in response.body().
+        # Observe the worker's reply to this exact navigation before the viewer takes over.
+        worker_url = page.evaluate('navigator.serviceWorker.controller.scriptURL')
+        worker = next(w for w in context.service_workers if w.url == worker_url)
+        worker.evaluate("""url => {
+            const respond = FetchEvent.prototype.respondWith;
+            FetchEvent.prototype.respondWith = function(response) {
+                if (this.request.mode === 'navigate' && this.request.url === url) {
+                    FetchEvent.prototype.respondWith = respond;
+                    self.offlinePdfBytes = Promise.resolve(response).then(r => r.clone().arrayBuffer());
+                    this.waitUntil(self.offlinePdfBytes);
+                }
+                return respond.call(this, response);
+            };
+        }""", pdf_url)
         with context.expect_event('response', predicate=lambda r: r.url == pdf_url and
                                   r.request.is_navigation_request()) as opened:
             link.click()
         response = opened.value
         assert response.from_service_worker and response.status == 200
         assert response.headers['content-type'].startswith('application/pdf')
-        # Chromium headless can delegate PDF display to a download. Check the same URL
-        # and its actual first-page pixels with a PDF reader in both browser modes.
         elapsed_click = time.monotonic() - started
-        try:
-            data = response.body()
-        except PlaywrightError as error:
-            # A browser delegating PDF display may expose the bytes only as a download.
-            deadline = time.monotonic() + 5
-            while not downloads and time.monotonic() < deadline:
-                page.wait_for_timeout(50)
-            if not downloads:
-                raise error
-            assert downloads[0].url == pdf_url
-            data = downloads[0].path().read_bytes()
+        encoded = worker.evaluate("""async () => {
+            if (!self.offlinePdfBytes) throw Error('Navigation PDF absente du service worker');
+            const bytes = new Uint8Array(await self.offlinePdfBytes);
+            return btoa(Array.from(bytes, b => String.fromCharCode(b)).join(''));
+        }""")
+        data = base64.b64decode(encoded, validate=True)
+        assert data == (directory / PDF).read_bytes(), 'Le PDF servi hors ligne diffère du fichier publié'
         with pymupdf.open(stream=data, filetype='pdf') as document:
             pixels = document[0].get_pixmap().digest
         elapsed_render = time.monotonic() - started
-        assert data == (directory / PDF).read_bytes()
         with pymupdf.open(directory / PDF) as reference:
             assert pixels == reference[0].get_pixmap().digest
         ranged = page.evaluate("""async url => {
