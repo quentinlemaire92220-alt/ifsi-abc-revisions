@@ -4,7 +4,7 @@ const VERSION='8.11';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
-let selectedCourse='';
+let selectedCourse='',displayedCourseData=null,displayedCourseMeta=null;
 const $74=id=>document.getElementById(id);
 const esc74=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm74=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -96,7 +96,7 @@ function resourceMatchesCourse74(x,course,type){
 function allCourses74(){
   const reg=window.IFSI_V741?.getRegistry?.()?.courses||[];
   if(reg.length){
-    return reg.filter(c=>c.showInCourses!==false).filter(c=>{const d=courseData74(c.label);return d.qs.length||d.vs.length||d.sheets.length||d.infos.length||window.IFSI_VOCAB?.countForCourse?.(c.id)}).map(c=>c.label).sort((a,b)=>a.localeCompare(b,'fr'));
+    return reg.filter(c=>c.showInCourses!==false).map(c=>c.label).sort((a,b)=>a.localeCompare(b,'fr'));
   }
   const q=[...new Set((Array.isArray(Q)?Q:[]).map(qCourse).filter(Boolean))],v=vocals74().map(x=>x.course).filter(Boolean);
   return [...new Set([...q,...v])].sort((a,b)=>a.localeCompare(b,'fr'));
@@ -269,6 +269,8 @@ function renderCourse74(){
   const sheets=[...d.sheets].filter(x=>!unavailableSheet74(x)).sort((a,b)=>Number(!!b.primaryRevision)-Number(!!a.primaryRevision)||labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
+  displayedCourseData=d;
+  displayedCourseMeta=courseMeta;
   // Documents et archives déjà référencés sur Drive ou sur le site de l'application.
   const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.(?:pdf|zip|html)$/.test(u)&&!u.split('/').includes('..')))?u:'';
   // Dédupliquer seulement la présentation : les supports et leur registre approuvé restent intacts.
@@ -354,7 +356,13 @@ function renderCourse74(){
   box.querySelectorAll('[data-vocalfav74]').forEach(b=>b.onclick=()=>{window.IFSI_V73?.toggleFavorite?.(b.dataset.vocalfav74);setTimeout(()=>{renderCourse74();renderDashboard74()},30)});
   window.IFSI_VOCAB?.mountCourse?.(courseMeta.id);
 }
-function openCourse74(course){selectedCourse=course;window.show('course74');renderCourse74()}
+function openCourse74(course){
+  selectedCourse=course;
+  window.show('course74');
+  const detail=$74('v74CourseDetail');
+  if(detail)detail.dataset.visit=String(Number(detail.dataset.visit||0)+1);
+  renderCourse74();
+}
 window.openCourse74=openCourse74;
 
 function toggleDocFavorite74(key){const f=docFavs74();f.has(key)?f.delete(key):f.add(key);writeJSON74(DOC_FAV_KEY,[...f]);renderDashboard74();renderFavorites74();enhanceResourceCards74()}
@@ -378,15 +386,21 @@ function patchResourceRender74(){
 }
 
 function injectNews74(){const home=$74('home');if(!home||$74('v74News'))return;const c=document.createElement('div');c.id='v74News';c.className='card';c.innerHTML='<b>🧭 Nouveau V7.4 : parcours par cours</b><div class="small" style="margin-top:5px">Chaque cours regroupe QCM, fiches, infographies et vocaux. L’accueil propose maintenant la prochaine action utile et tous les favoris sont réunis.</div>';const app=[...home.querySelectorAll('.section')].find(x=>x.textContent.trim()==='Application');if(app)app.insertAdjacentElement('beforebegin',c);else home.appendChild(c)}
-function setVersion74(){const u=$74('update');if(u)u.textContent='Application prête • V7.4 locale : parcours par cours, accueil personnalisé, recherche globale et favoris unifiés.';const b=u?.parentElement?.querySelector('b');if(b)b.textContent='V7.4 local'}
-function lockVersion74(){let n=0;const t=setInterval(()=>{setVersion74();if(++n>=50)clearInterval(t)},250)}
-
 let fillPatched74=false;
-function patchFill74(){if(fillPatched74)return;try{const prev=window.fill;window.fill=function(){prev();setTimeout(()=>{renderDashboard74();renderCourses74();enhanceResourceCards74()},0)};fillPatched74=true}catch{}}
-function dataReady74(){return Array.isArray(Q)&&Q.length&&Array.isArray(S)&&S.length&&Array.isArray(I)&&I.length&&vocals74().length}
-function finalize74(){patchResourceRender74();patchFill74();enhanceResourceCards74();renderDashboard74();renderCourses74();setVersion74();lockVersion74()}
+function patchFill74(){if(fillPatched74)return;try{const prev=window.fill;window.fill=function(){prev();setTimeout(()=>{if(!$74('home')?.classList.contains('hidden'))renderDashboard74()},0)};fillPatched74=true}catch{}}
+function refreshVisibleCourses74(){
+  if(!$74('courses74')?.classList.contains('hidden'))renderCourses74();
+  if(!selectedCourse||$74('course74')?.classList.contains('hidden'))return;
+  const data=courseData74(selectedCourse);
+  const sameResources=displayedCourseData&&['qs','sheets','infos','vs'].every(key=>{
+    const before=displayedCourseData[key],after=data[key];
+    return before.length===after.length&&before.every((item,n)=>item===after[n]);
+  });
+  if(!sameResources||registryCourse74(selectedCourse)!==displayedCourseMeta)renderCourse74();
+}
 addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();injectNews74();
-let tries74=0;const timer74=setInterval(()=>{tries74++;if(dataReady74()||tries74>200){clearInterval(timer74);finalize74()}},250);
+patchResourceRender74();patchFill74();
+window.addEventListener('ifsi:course-resources',refreshVisibleCourses74);
 window.addEventListener('storage',()=>{renderDashboard74();renderCourses74();renderFavorites74();if(selectedCourse)renderCourse74();enhanceResourceCards74()});
 window.IFSI_V74={version:VERSION,sourceState:sourceState74,showCourses:showCourses74,openCourse:openCourse74,showFavorites:showFavorites74,resourceFavorites:()=>[...docFavs74()],courses:allCourses74,refreshCourses:renderCourses74,refreshCourse:renderCourse74};
 })();

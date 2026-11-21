@@ -23,7 +23,7 @@
 <section id="result" class="hidden"><div class="card" style="text-align:center"><div class="small">RÉSULTAT</div><div id="score" style="font-size:56px;font-weight:900"></div><h2 id="detail"></h2><button class="btn primary full" onclick="show('home')">Accueil</button></div></section>
 <section id="progress" class="hidden"><div class="card"><h2>Progression</h2><div id="progressList"></div><button class="btn outline full" onclick="exportStats()">Exporter mes résultats</button></div></section>
 <nav><button id="nh" class="on" onclick="show('home')">⌂<br>Accueil</button><button id="ns" onclick="showSheets()">▤<br>Fiches</button><button id="ni" onclick="showInfographics()">◫<br>Infographies</button><button onclick="startErrors()">↻<br>Erreurs</button><button id="np" onclick="showProgress()">▥<br>Progression</button></nav>
-</div><script src="./course-classification.js?v=8499"></script><script>
+</div><script src="./course-classification.js?v=8500"></script><script>
 let Q=[],S=[],I=[],session=[],res=[],i=0,n=10,done=false,deferred=null;
 const $=id=>document.getElementById(id), uniq=a=>[...new Set(a)], shuffle=a=>[...a].sort(()=>Math.random()-.5), same=(a,b)=>a.length===b.length&&[...a].sort().every((v,j)=>v==[...b].sort()[j]);
 function st(){try{return JSON.parse(localStorage.getItem('ifsiabc_stats')||'{"answered":0,"correct":0,"errors":[],"themes":{}}')}catch{return{answered:0,correct:0,errors:[],themes:{}}}}function save(x){localStorage.setItem('ifsiabc_stats',JSON.stringify(x))}
@@ -79,15 +79,34 @@ async function loadQcmData({progressive=true}={}){
 }
 window.IFSI_QCM_RELOAD=loadQcmData;
 window.IFSI_QCM_HYDRATE=()=>{const {status,failed}=window.IFSI_QCM_LOAD;hydrateQcm();announceQcmLoad(status,failed)};
-window.addEventListener?.('ifsi:v741-ready',()=>{window.IFSI_QCM_HYDRATE();renderSheets()});
+window.addEventListener?.('ifsi:v741-ready',()=>{
+ if(window.IFSI_VOCAB)window.IFSI_QCM_HYDRATE();
+ renderSheets();
+});
+const sheetPacks=new Map();
 async function loadRevisionResources(){
- const datasets=[
-  {kind:'sheets',task:Promise.all([1,2,3].map(async n=>{const r=await fetch(`./sheets-${n}.json`);if(!r.ok)throw Error('Fiches '+n+' : '+r.status);return r.json()}))},
-  {kind:'infographics',task:fetch('./infographics.json').then(r=>{if(!r.ok)throw Error('Infographies : '+r.status);return r.json()})}
- ];
- const results=await Promise.allSettled(datasets.map(x=>x.task));
- if(results[0].status==='fulfilled'){S=results[0].value.flat();renderSheets()}else console.warn('Fiches momentanément indisponibles',results[0].reason);
- if(results[1].status==='fulfilled'){I=results[1].value;renderInfographics()}else console.warn('Infographies momentanément indisponibles',results[1].reason);
+ async function load(path){
+  const response=await fetch(path);
+  if(!response.ok)throw Error(path+' : '+response.status);
+  const items=await response.json();
+  if(!Array.isArray(items))throw Error(path+' : liste attendue');
+  return items;
+ }
+ const sheets=[1,2,3].map(async number=>{
+  const items=await load(`./sheets-${number}.json`);
+  sheetPacks.set(number,items);
+  S=[1,2,3].flatMap(n=>sheetPacks.get(n)||[]);
+  window.IFSI_V741?.rebuildResourceIndex?.();
+  renderSheets();
+ });
+ const infographics=load('./infographics.json').then(items=>{
+  I=items;
+  window.IFSI_V741?.rebuildResourceIndex?.();
+  renderInfographics();
+ });
+ for(const result of await Promise.allSettled([...sheets,infographics])){
+  if(result.status==='rejected')console.warn('Ressource de révision indisponible',result.reason);
+ }
 }
 async function boot(){await Promise.allSettled([loadQcmData(),loadRevisionResources()]);}
 function fill(){let x=st();for(const [id,value] of Object.entries({nq:Q.length,na:x.answered,ne:x.errors.length,rate:x.answered?Math.round(x.correct/x.answered*100)+'%':'—'})){const el=$(id);if(el)el.textContent=value}const course=$('course');if(course){let cs=uniq(Q.map(q=>q.course||q.theme)).sort();course.innerHTML=cs.map(v=>`<option>${v}</option>`).join('');themes()}}
@@ -143,31 +162,30 @@ if('serviceWorker'in navigator){
  workers.addEventListener('message',async event=>{
   if(event.source!==workers.controller||!event.source||event.data?.type!=='IFSI_ACTIVE_BUILD'||event.source===handled)return;
   handled=event.source;
-  if(event.data.build!=='8499'){location.reload();return}
+  if(event.data.build!=='8500'){location.reload();return}
   // Les premières réponses peuvent provenir du serveur avant la prise de contrôle.
   // Recharger les banques enrichies une fois, sans interrompre la navigation en cours.
   await firstBoot;
   if(qcmLoadPromise)await qcmLoadPromise;
   await Promise.allSettled([loadQcmData({progressive:false}),loadRevisionResources()]);
-  window.IFSI_V741?.rebuildResourceIndex?.();
  });
- window.addEventListener('load',()=>workers.register('./sw.js?v=8499',{updateViaCache:'none'}).catch(e=>console.warn('SW update',e)));
+ window.addEventListener('load',()=>workers.register('./sw.js?v=8500',{updateViaCache:'none'}).catch(e=>console.warn('SW update',e)));
 }
-</script><script src="./app-features-v1.js?v=8499"></script>
-<script src="./app-version-v742.js?v=8499"></script><script src="./qcm-subthemes-v1.js?v=8499"></script><script src="./features-v9.js?v=8499"></script><script src="./schema-v10.js?v=8499"></script><script src="./choice-toggle-v13.js?v=8499"></script><script src="./v7-local.js?v=8499"></script><script src="./v71-local.js?v=8499"></script><script src="./v72-pack.js?v=8499"></script><script src="./progressive-v72.js?v=8499"></script><script src="./audio-mirrors-v1.js?v=8499"></script><script src="./audio-series-v1.js?v=8499"></script><script src="./vocals-v73.js?v=8499"></script><script src="./v74-pack.js?v=8499"></script><script src="./course-registry-v741.js?v=8499"></script><script src="./v8499-changelog.js?v=8499"></script><script src="./changelog-v742.js?v=8499"></script><script src="./v75-smart.js?v=8499"></script><script src="./v76-home.js?v=8499"></script><script src="./analytics-v77.js?v=8499"></script><script src="./v79-themes.js?v=8499"></script><script src="./calculs-parcours-v1.js?v=8499"></script><script src="./v81-suite.js?v=8499"></script><script src="./v8467-sens-atlas.js?v=8499"></script>
-<script src="./v82-nav-anatomy.js?v=8499"></script><script src="./v8399-reproductive-private-review.js?v=8499"></script><script src="./v83-anatomy-interactive.js?v=8499"></script><script src="./v84-respiratory-polish.js?v=8499"></script><script src="./v85-home-lite.js?v=8499"></script><script src="./v86-home-clean.js?v=8499"></script><script src="./v87-settings.js?v=8499"></script><script src="./planning-v1.js?v=8499"></script><script src="./course-followup-v1.js?v=8499"></script><script src="./v813-home-discovery.js?v=8499"></script><script src="./v814-respiratory-atlas.js?v=8499"></script><script src="./v815-urinary-atlas.js?v=8499"></script><script src="./v816-endocrine-atlas.js?v=8499"></script><script src="./v817-immune-atlas.js?v=8499"></script><script src="./v822-nervous-atlas.js?v=8499"></script><script src="./v823-cardiovascular-atlas.js?v=8499"></script><script src="./v824-digestive-atlas.js?v=8499"></script><script src="./v829-locomotor-atlas.js?v=8499"></script><script src="./v8318-microscopic-atlas.js?v=8499"></script><script src="./v821-resource-audit.js?v=8499"></script><script src="./v828-revision-clean.js?v=8499"></script><script src="./v8309-revision-redesign.js?v=8499"></script><script src="./v8338-flashcards.js?v=8499"></script><script src="./p3-vocabulary-flashcards.js?v=8499"></script><script src="./v8355-vocabulary.js?v=8499"></script><script src="./v8339-ui-polish.js?v=8499"></script>
+</script><script src="./app-features-v1.js?v=8500"></script>
+<script src="./app-version-v742.js?v=8500"></script><script src="./qcm-subthemes-v1.js?v=8500"></script><script src="./features-v9.js?v=8500"></script><script src="./schema-v10.js?v=8500"></script><script src="./choice-toggle-v13.js?v=8500"></script><script src="./v7-local.js?v=8500"></script><script src="./v71-local.js?v=8500"></script><script src="./v72-pack.js?v=8500"></script><script src="./progressive-v72.js?v=8500"></script><script src="./audio-mirrors-v1.js?v=8500"></script><script src="./audio-series-v1.js?v=8500"></script><script src="./vocals-v73.js?v=8500"></script><script src="./v74-pack.js?v=8500"></script><script src="./course-registry-v741.js?v=8500"></script><script src="./v8500-changelog.js?v=8500"></script><script src="./changelog-v742.js?v=8500"></script><script src="./v75-smart.js?v=8500"></script><script src="./v76-home.js?v=8500"></script><script src="./analytics-v77.js?v=8500"></script><script src="./v79-themes.js?v=8500"></script><script src="./calculs-parcours-v1.js?v=8500"></script><script src="./v81-suite.js?v=8500"></script><script src="./v8467-sens-atlas.js?v=8500"></script>
+<script src="./v82-nav-anatomy.js?v=8500"></script><script src="./v8399-reproductive-private-review.js?v=8500"></script><script src="./v83-anatomy-interactive.js?v=8500"></script><script src="./v84-respiratory-polish.js?v=8500"></script><script src="./v85-home-lite.js?v=8500"></script><script src="./v86-home-clean.js?v=8500"></script><script src="./v87-settings.js?v=8500"></script><script src="./planning-v1.js?v=8500"></script><script src="./course-followup-v1.js?v=8500"></script><script src="./v813-home-discovery.js?v=8500"></script><script src="./v814-respiratory-atlas.js?v=8500"></script><script src="./v815-urinary-atlas.js?v=8500"></script><script src="./v816-endocrine-atlas.js?v=8500"></script><script src="./v817-immune-atlas.js?v=8500"></script><script src="./v822-nervous-atlas.js?v=8500"></script><script src="./v823-cardiovascular-atlas.js?v=8500"></script><script src="./v824-digestive-atlas.js?v=8500"></script><script src="./v829-locomotor-atlas.js?v=8500"></script><script src="./v8318-microscopic-atlas.js?v=8500"></script><script src="./v821-resource-audit.js?v=8500"></script><script src="./v828-revision-clean.js?v=8500"></script><script src="./v8309-revision-redesign.js?v=8500"></script><script src="./v8338-flashcards.js?v=8500"></script><script src="./p3-vocabulary-flashcards.js?v=8500"></script><script src="./v8355-vocabulary.js?v=8500"></script><script src="./v8339-ui-polish.js?v=8500"></script>
 
-<script src="./v8303-home-startup.js?v=8499"></script><script src="./v8312-home-revision.js?v=8499"></script><script src="./v8357-qcm-access.js?v=8499"></script><script src="./v8378-qcm-feedback.js?v=8499"></script><script src="./v8378-interactive-exercises.js?v=8499"></script><script src="./tnr-v72.js?v=8499"></script>
+<script src="./v8303-home-startup.js?v=8500"></script><script src="./v8312-home-revision.js?v=8500"></script><script src="./v8357-qcm-access.js?v=8500"></script><script src="./v8378-qcm-feedback.js?v=8500"></script><script src="./v8378-interactive-exercises.js?v=8500"></script><script src="./tnr-v72.js?v=8500"></script>
 
-<script src="./math-case-engine-v1.js?v=8499"></script>
+<script src="./math-case-engine-v1.js?v=8500"></script>
 <!-- Navigation pédagogique V2 : module anti-boucle avec repli natif -->
-<script src="./course-navigation-ui-v2.js?v=8499"></script>
-<script src="./course-thumbnails-v1.js?v=8499"></script>
+<script src="./course-navigation-ui-v2.js?v=8500"></script>
+<script src="./course-thumbnails-v1.js?v=8500"></script>
 <!-- Module Pathologies conservé ; visibilité contrôlée par app-features-v1.js -->
-<script src="./pathologies-module-v1.js?v=8499"></script>
-<script src="./pathologies-boot-v1.js?v=8499"></script>
-<script src="./pathologies-private-review-v1.js?v=8499"></script>
-<script src="./pathologies-cloud-private-v1.js?v=8499"></script>
-<script src="./v8419-home-brand.js?v=8499"></script>
+<script src="./pathologies-module-v1.js?v=8500"></script>
+<script src="./pathologies-boot-v1.js?v=8500"></script>
+<script src="./pathologies-private-review-v1.js?v=8500"></script>
+<script src="./pathologies-cloud-private-v1.js?v=8500"></script>
+<script src="./v8419-home-brand.js?v=8500"></script>
 
 </body></html>

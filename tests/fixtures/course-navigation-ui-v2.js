@@ -603,8 +603,11 @@
     if(block.id==='vgCourseEntry')return {key:'vocab',n:'+',color:'#6b9aba',bg:'#e0f0f6',sub:'Définitions, fiche et QCM vocabulaire.'};
     return {key:'docs',n:'+',color:'#ac84b6',bg:'#f1e4f5',sub:/flashcards/i.test(block.textContent)?'Flashcards et documents complémentaires.':'Autres documents du cours.'};
   }
+  var panelCourse,expandedPanels=new Set();
   function detail(){
     var root=document.getElementById('v74CourseDetail'),head=root?.querySelector('.v74-course-head');if(!head)return;
+    var course=root.dataset.visit||head.querySelector('h2')?.textContent;
+    if(course!==panelCourse){panelCourse=course;expandedPanels.clear();}
     if(!head.querySelector('.mku-path')){
       var crumb=head.querySelector('.v8430-path');if(crumb){var path=el('details','mku-path');var code=crumb.textContent.match(/›\s*([A-Z]\d)/)?.[1]||'UE';path.appendChild(el('summary','',code));crumb.before(path);path.appendChild(crumb);}
       var meta=head.querySelector('.v74-course-meta');if(meta){var progress=el('details','mku-progress');var count=head.querySelector(':scope > .row > .badge');progress.appendChild(el('summary','',count?.textContent+' · Progression'));meta.before(progress);progress.appendChild(meta);var bar=head.querySelector('.v74-master');if(bar)progress.appendChild(bar);if(count)progress.appendChild(count);}
@@ -634,7 +637,12 @@
       row.replaceChildren(button);block.appendChild(panel);block.classList.add('mku-resource');
       if(support)block.classList.add('mku-primary');if(spec.n==='+')block.classList.add('mku-extra');
       if(!hasAccess)button.disabled=true;
-      button.addEventListener('click',function(){panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden));});
+      if(hasAccess&&expandedPanels.has(spec.key)){panel.hidden=false;button.setAttribute('aria-expanded','true');}
+      button.addEventListener('click',function(){
+        panel.hidden=!panel.hidden;
+        button.setAttribute('aria-expanded',String(!panel.hidden));
+        if(panel.hidden)expandedPanels.delete(spec.key);else expandedPanels.add(spec.key);
+      });
     });
   }
   function catalog(){

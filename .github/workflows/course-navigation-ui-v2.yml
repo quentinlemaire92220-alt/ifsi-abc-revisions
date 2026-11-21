@@ -63,6 +63,6 @@ jobs:
           NEWS_BASE: ${{ github.event.pull_request.base.sha }}
         run: |
           if git diff --quiet "$NEWS_BASE" HEAD -- data/release-news.json changelog-v742.js v8312-home-revision.js tests/mobile-release-news.py; then exit 0; fi
-          python -m pip install --quiet 'playwright==1.56.0'
+          python -m pip install --quiet 'playwright==1.56.0' 'PyMuPDF==1.26.7'
           git worktree add --detach "$RUNNER_TEMP/ancienne-version" "$NEWS_BASE"
           python tests/mobile-release-news.py "$RUNNER_TEMP/ancienne-version"

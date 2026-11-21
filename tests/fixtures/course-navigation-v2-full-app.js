@@ -123,6 +123,14 @@
  }
  async function checkAllCourses(cards){
    report.phase='all_courses';
+   // The inventory below checks the entire installed bank, including worker additions.
+   // Early access with deliberately pending datasets is covered by the mobile sheet test.
+   var limit=Date.now()+30000;
+   while(!(navigator.serviceWorker.controller&&window.IFSI_QCM_LOAD?.status==='ready'&&
+           Q.some(q=>q.id==='v820_digest1_024')&&window.IFSI_V73?.getVocals?.().length&&S.length&&I.length)){
+     if(Date.now()>limit)throw Error('Banques installées incomplètes avant le contrôle de tous les cours');
+     await new Promise(resolve=>setTimeout(resolve,80));
+   }
    var courses=window.IFSI_V741.getRegistry().courses;
    await checkFutureCatalog(courses);
    var missing=0,official=0,qcm=0,flashcards=0,vocab=0;
@@ -148,7 +156,8 @@
      }
      var blocks=Array.from(detail.querySelectorAll(':scope > .v74-resource-block'));
      // La présentation validée replie les documents, sans retirer leurs accès.
-     if(blocks.some(function(block){return !block.querySelector(':scope > .row .mku-toggle')}))throw Error('Rubrique compacte absente pour '+course.id);
+     var missingPanels=blocks.filter(function(block){return !block.querySelector(':scope > .row .mku-toggle')});
+     if(missingPanels.length)throw Error('Rubrique compacte absente pour '+course.id+' : '+missingPanels.map(b=>b.id||b.querySelector('.row')?.textContent));
      detail.querySelectorAll('.mku-toggle').forEach(function(button){
        var panel=document.getElementById(button.getAttribute('aria-controls'));
        if(!panel||!button.querySelector('.mku-icon svg'))throw Error('Rubrique sans panneau ou icône colorée pour '+course.id);

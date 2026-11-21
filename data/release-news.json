@@ -1,5 +1,15 @@
 [
   {
+    "id": "v8500Change",
+    "date": "2026-11-21",
+    "title": "V8.30.200 — Accès plus rapide aux cours et aux fiches",
+    "copy": "La recherche s’ouvre dès que la liste des cours est prête. Les fiches PDF de l’application déjà en cache s’ouvrent aussi hors ligne.",
+    "type": "app",
+    "badges": [
+      "UX/UI"
+    ]
+  },
+  {
     "id": "v8499Change",
     "date": "2026-11-21",
     "title": "V8.30.199 — Les mises à jour des sept derniers jours sur l’accueil",
