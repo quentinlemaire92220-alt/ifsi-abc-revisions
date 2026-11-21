@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
@@ -31,6 +32,5 @@ for(const f of fronts)assert.ok(!/support|diapo(?:sitive)?|sont justes|valeurs o
 const mod=read('v8338-flashcards.js');
 for(const token of ['atomicCards','atomicFromAnswers','answerPairAtom','answerSentenceAtom','selectCards'])assert.ok(mod.includes(token),`Moteur atomique incomplet: ${token}`);
 const index=read('index.html'),sw=read('sw.js');
-assert.ok(index.includes(`./v8345-changelog.js?v=${meta.build}`),'Changelog V8.30.45 absent de index.html');
-assert.ok(sw.includes("'./v8345-changelog.js'"),'Changelog V8.30.45 absent du cache PWA');
+assertArchivedRelease('v8345Change');
 console.log(`✅ V8.30.45 : ${deck.length} flashcards atomiques de test contrôlées`);

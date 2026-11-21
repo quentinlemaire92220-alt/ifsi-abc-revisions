@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import zlib from 'node:zlib';
@@ -44,7 +45,7 @@ const sw=read('sw.js'),index=read('index.html'),meta=JSON.parse(read('build-meta
 assert.ok(sw.includes("'./qextra-54.txt'"),'Nouveau pack absent du chargement ou précache');
 assert.equal(sw.split("'./qextra-54.txt'").length-1,2,'Pack doit apparaître une fois dans le cache et une fois dans le chargeur');
 assert.ok(Number(meta.build)>=8387,'Numéro de version antérieur à la publication des annales');
-assert.ok(index.includes(`v8387-changelog.js?v=${meta.build}`),'Changelog des annales absent de la version courante');
+assertArchivedRelease('v8387Change');
 const base=[];for(let i=1;i<=5;i++)base.push(...JSON.parse(read('questions-'+i+'.json')));
 const extraNames=[...Array.from({length:7},(_,i)=>i+1),...Array.from({length:45},(_,i)=>i+9)].filter(n=>n<=53);
 function decode(p){const t=read(p).trim();if(t[0]==='['||t[0]==='{')return JSON.parse(t);const b=Buffer.from(t,'base64');let txt;try{txt=zlib.gunzipSync(b).toString('utf8')}catch{try{txt=zlib.inflateRawSync(b.subarray(10,-8)).toString('utf8')}catch{return []}}try{return JSON.parse(txt)}catch{return []}}

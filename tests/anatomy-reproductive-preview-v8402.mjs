@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
@@ -9,7 +10,6 @@ const audit=JSON.parse(read('resource-audit-v821.json'));
 const nav=read('v82-nav-anatomy.js');
 const sw=read('sw.js');
 const index=read('index.html');
-const home=read('v8303-home-startup.js');
 
 assert.ok(/^8\.30\.(\d+)$/.test(meta.version)&&Number(meta.version.split('.')[2])>=102,'Version antérieure au pilote anatomique R02-R07');
 assert.ok(Number(meta.build)>=8402,'Build antérieur au pilote anatomique R02-R07');
@@ -34,10 +34,7 @@ assert.ok(nav.includes('ATLAS PROVISOIRE'));
 assert.ok(nav.includes('NON VALIDÉE'));
 assert.ok(nav.includes('data-v82repro-preview'));
 assert.ok(nav.includes('v82ReproModal'));
-assert.ok(index.includes('./v8402-changelog.js?v='+meta.build));
-assert.ok(sw.includes("'./v8402-changelog.js'"));
-assert.ok(sw.includes('"v8402-changelog.js"'));
-assert.ok(home.includes('IFSI_V8402_CHANGELOG'));
+assertArchivedRelease('v8402Change');
 assert.ok(!nav.includes('DAHYd62tg4w'), 'Private Canva design leaked');
 
 const hashes=new Set(),paths=new Set();

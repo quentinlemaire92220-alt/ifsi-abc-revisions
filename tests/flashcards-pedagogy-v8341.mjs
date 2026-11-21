@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -11,6 +12,5 @@ assert.ok(mod.includes('Qu’est-ce que'),'Formulation définition absente');
 assert.ok(mod.includes('Quelle valeur faut-il retenir'),'Formulation valeurs absente');
 assert.ok(mod.includes("card.kind||'Question / réponse'"),'Type pédagogique non affiché dans la carte');
 const index=read('index.html'),sw=read('sw.js');
-assert.ok(index.includes(`./v8341-changelog.js?v=${meta.build}`),'Changelog V8.30.41 absent de index.html');
-assert.ok(sw.includes("'./v8341-changelog.js'"),'Changelog V8.30.41 absent du cache PWA');
+assertArchivedRelease('v8341Change');
 console.log(`✅ Flashcards pédagogiques V8.30.41 conservées sous release V${meta.version} build ${meta.build}`);

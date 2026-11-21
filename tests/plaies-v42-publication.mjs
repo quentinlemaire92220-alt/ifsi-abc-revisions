@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -22,7 +23,7 @@ assert.equal(registry.courses.length,json('resource-audit-v821.json').expectedTo
 assert.ok(registry.courses.some(c=>c.id==='pssm'));
 assert.ok(registry.courses.some(c=>c.id==='sante_mondiale_sante_france'));
 assert.ok(sw.includes('ifsi-abc-v'+meta.version.replaceAll('.','-')+'-local-'),'PWA cache de version non synchronisé');
-assert.ok(index.includes('v8413-changelog.js?v='+meta.build),'Changelog V4.2 historique non maintenu');
+assertArchivedRelease('v8413Change');
 assert.ok(index.includes('qextra-50.txt')||sw.includes('./qextra-50.txt'),'Banque non référencée par les assets PWA');
 
 const current=registry.courses.find(c=>c.id==='plaies_pansements');

@@ -59,11 +59,10 @@ const redesign=read('v8309-revision-redesign.js');
 for(const token of ['v8309WeakBtn','Plus de filtres','v8309-quick','v8309-exam','v8309-goal'])assert.ok(redesign.includes(token),`Révision allégée incomplète: ${token}`);
 
 const homeResources=read('v8312-home-revision.js');
-for(const token of ["h.querySelector('.v76-today')?.remove()","📚 Ressources ajoutées","resourceEntries()","appEntries()","Voir toutes les ressources →","v8312MyRevision","dash=document.createElement('div')","grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))"])assert.ok(homeResources.includes(token),`Accueil/Révision V8.30.17 incomplet: ${token}`);
+for(const token of ["h.querySelector('.v76-today')?.remove()","IFSI_CHANGELOG.week()","v8312NewsList","Aucune mise à jour ces sept derniers jours.","v8312MyRevision","dash=document.createElement('div')","grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))"])assert.ok(homeResources.includes(token),`Accueil/Révision V8.30.17 incomplet: ${token}`);
 assert.ok(!homeResources.includes('data-newsfilter="app"'),'Les évolutions techniques ne doivent plus être affichées dans les filtres de l’accueil');
 assert.ok(!homeResources.includes("if(!dash)return false"),'Ma révision ne doit plus dépendre de la présence de l’ancien dashboard');
-for(const token of ['VERSION_DATES','v8316Change:{type:\'resource\'','v8317Change:{type:\'app\'','v8320Change:{type:\'app\'','v8321Change:{type:\'resource\'','function pedagogicalCopy(copy)','v8312-news-date','decorateSettingsDates','dateForTitle','06/10/2026'])assert.ok(homeResources.includes(token),`Dates/nature des nouveautés incomplètes: ${token}`);
-const releaseLog=read(releaseChangelog);assert.match(releaseLog,/dataset\.date='20\d{2}-\d{2}-\d{2}'/,'Le changelog courant doit embarquer sa date ISO');
+assert.equal(JSON.parse(read('data/release-news.json'))[0].date,meta.releasedAt);
 
 // V8.30.96 : garde-fou sur l'annonce effectivement visible, les MP3 et la PWA.
 if(meta.build==='8396'){
@@ -86,7 +85,7 @@ if(meta.build==='8396'){
 }
 
 const baseChangelog=read('changelog-v742.js');
-for(const token of ["function seedUnified(card)","if(!$('v742Changelog'))injectUnified()","new MutationObserver(()=>{removeLegacy();if(!$('v742Changelog'))injectUnified()})"])assert.ok(baseChangelog.includes(token),`Garde-fou changelog historique absent: ${token}`);
+assert.ok(baseChangelog.includes("if (document.getElementById('v742Changelog')) return"));
 assert.ok(!baseChangelog.includes('alreadyCurrent'),'Le journal historique ne doit plus réinitialiser une version moderne');
 
 const startup=read('v8303-home-startup.js');
@@ -94,7 +93,7 @@ for(const token of ["if(!$('v742Changelog'))window.IFSI_CHANGELOG?.refresh?.()",
 assert.ok(!startup.includes('ticks>=80'),'La boucle de synchronisation accueil ne doit plus durer 8 secondes');
 
 const settings=read('v87-settings.js');
-for(const token of ['Journal des évolutions','Historique UX/UI, technique et correctifs','window.IFSI_V8312?.appEntries?.()','id="v87Whatsapp"','function latestResourceAnnouncement()','https://wa.me/?text='])assert.ok(settings.includes(token),`Paramètres/journal/partage WhatsApp incomplet: ${token}`);
+for(const token of ['Journal des évolutions','toutes les mises à jour','window.IFSI_CHANGELOG.loadHistory()','id="v87Whatsapp"','function latestResourceAnnouncement()','https://wa.me/?text='])assert.ok(settings.includes(token),`Paramètres/journal/partage WhatsApp incomplet: ${token}`);
 
 // TNR supports officiels : tout lien doit rester atteignable via une carte visible ou son parent.
 const registry=JSON.parse(read('course-registry-v741.json'));

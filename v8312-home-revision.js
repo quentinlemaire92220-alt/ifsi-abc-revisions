@@ -1,129 +1,7 @@
 (()=>{'use strict';
 const V=window.IFSI_APP_VERSION||'8.30.79',$=id=>document.getElementById(id);
-const NEWS_META={
-  v8476Change:{type:'app',badges:['PLANNING','GROUPES']},
-  v8471Change:{type:'app',badges:['UX/UI','VOCAUX']},
-  v8442Change:{type:'resource',badges:['COURS','QCM','FLASHCARDS']},
-  v8441Change:{type:'resource',badges:['COURS','QCM','FLASHCARDS']},
-  v8469Change:{type:'app',badges:['UX/UI','VOCAUX']},
-  v8440Change:{type:'app',badges:['UX/UI','COURS','CORRECTIF']},
-  v8439Change:{type:'app',badges:['UX/UI','COURS','CORRECTIF']},
-  v8438Change:{type:'app',badges:['UX/UI','COURS']},
-  v8437Change:{type:'resource',badges:['VOCAUX']},
-  v8436Change:{type:'resource',badges:['VOCAUX']},
-  v8435Change:{type:'resource',badges:['VOCAUX']},
-  v8434Change:{type:'app',badges:['UX/UI','COURS']},
-  v8433Change:{type:'app',badges:['UX/UI','COURS']},
-  v8432Change:{type:'app',badges:['UX/UI','COURS']},
-  v8431Change:{type:'app',badges:['UX/UI','COURS']},
-  v8430Change:{type:'app',badges:['UX/UI','COURS']},
-  v8429Change:{type:'app',badges:['UX/UI','COURS']},
-  v8428Change:{type:'app',badges:['CORRECTIF','UX/UI']},
-  v8427Change:{type:'app',badges:['UX/UI','COURS']},
-  v8426Change:{type:'resource',badges:['VOCAUX']},
-  v8421Change:{type:'app',badges:['CORRECTIF']},
-  v8419Change:{type:'app',badges:['UX/UI']},
-  v8418Change:{type:'resource',badges:['COURS','QCM','FLASHCARDS']},
-  v8416Change:{type:'app',badges:['CORRECTIF']},
-  v8401Change:{type:'resource',badges:['RESSOURCE','VOCAUX']},
-  v8399Change:{type:'app',badges:['UX/UI','TECHNIQUE']},
-  v8396Change:{type:'resource',badges:['RESSOURCE']},
-  v8382Change:{type:'resource',badges:['COURS','SUPPORTS OFFICIELS','TNR']},
-  v8381Change:{type:'resource',badges:['COURS','ACCÈS SUPPORTS']},
-  v8380Change:{type:'resource',badges:['COURS','SUPPORTS OFFICIELS']},
-  v8378Change:{type:'app',badges:['QCM','UX/UI','RESSOURCE']},
-  v8377Change:{type:'app',badges:['QCM','UX/UI','CORRECTIF']},
-  v8376Change:{type:'app',badges:['QCM','CORRECTIF']},
-  v8375Change:{type:'app',badges:['QCM','UX/UI','CORRECTIF']},
-  v8373Change:{type:'resource',badges:['FICHE','QCM','CORRECTIF']},
-  v8372Change:{type:'resource',badges:['NOUVEAU COURS','FLASHCARDS','INFOGRAPHIES']},
-  v8371Change:{type:'app',badges:['UX/UI','RESSOURCE']},
-  v8370Change:{type:'app',badges:['CORRECTIF']},
-  v8340Change:{type:'app',badges:['CORRECTIF']},
-  v8341Change:{type:'app',badges:['CORRECTIF']},
-  v8342Change:{type:'app',badges:['CORRECTIF']},
-  v8343Change:{type:'app',badges:['CORRECTIF']},
-  v8344Change:{type:'app',badges:['CORRECTIF']},
-  v8345Change:{type:'app',badges:['CORRECTIF']},
-  v8346Change:{type:'app',badges:['CORRECTIF']},
-  v8348Change:{type:'app',badges:['CORRECTIF']},
-  v8349Change:{type:'app',badges:['CORRECTIF']},
-  v8350Change:{type:'app',badges:['CORRECTIF']},
-  v8351Change:{type:'app',badges:['CORRECTIF']},
-  v8352Change:{type:'app',badges:['CORRECTIF']},
-  v8369Change:{type:'app',badges:['CORRECTIF']},
-  v8368Change:{type:'app',badges:['CORRECTIF']},
-  v8367Change:{type:'app',badges:['CORRECTIF']},
-  v8366Change:{type:'app',badges:['CORRECTIF']},
-  v8365Change:{type:'app',badges:['CORRECTIF']},
-  v8338Change:{type:'app',badges:['UX/UI']},
-  v8339Change:{type:'app',badges:['UX/UI']},
-  v8364Change:{type:'app',badges:['CORRECTIF']},
-  v8363Change:{type:'app',badges:['CORRECTIF']},
-  v8362Change:{type:'app',badges:['CORRECTIF']},
-  v8361Change:{type:'app',badges:['CORRECTIF']},
-  v8360Change:{type:'app',badges:['CORRECTIF']},
-  v8359Change:{type:'resource',badges:['RESSOURCE']},
-  v8358Change:{type:'app',badges:['UX/UI','RESSOURCE']},
-  v8357Change:{type:'app',badges:['UX/UI','CORRECTIF']},
-  v8356Change:{type:'app',badges:['UX/UI','RESSOURCE']},
-  v8355Change:{type:'app',badges:['UX/UI','RESSOURCE']},
-  v8354Change:{type:'resource',badges:['RESSOURCE']},
-  v8353Change:{type:'resource',badges:['RESSOURCE']},
-  v8337Change:{type:'resource',badges:['RESSOURCE']},
-  v8334Change:{type:'app',badges:['UX/UI']},
-  v8331Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
-  v8330Change:{type:'app',badges:['UX/UI']},
-  v8329Change:{type:'app',badges:['UX/UI','CORRECTIF']},
-  v8326Change:{type:'resource',badges:['RESSOURCE']},
-  v8325Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
-  v8324Change:{type:'app',badges:['UX/UI']},
-  v8322Change:{type:'app',badges:['UX/UI']},
-  v8321Change:{type:'resource',badges:['RESSOURCE']},
-  v8320Change:{type:'app',badges:['CORRECTIF']},
-  v8319Change:{type:'app',badges:['CORRECTIF']},
-  v8318Change:{type:'resource',badges:['RESSOURCE']},
-  v8317Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
-  v8316Change:{type:'resource',badges:['RESSOURCE']},
-  v8315Change:{type:'app',badges:['TECHNIQUE','CORRECTIF']},
-  v8314Change:{type:'app',badges:['UX/UI','CORRECTIF']},
-  v8313Change:{type:'app',badges:['UX/UI']},
-  v8312Change:{type:'app',badges:['UX/UI','TECHNIQUE']},
-  v8311Change:{type:'resource',badges:['RESSOURCE']},
-  v8310Change:{type:'app',badges:['TECHNIQUE']},
-  v8309Change:{type:'app',badges:['UX/UI']},
-  v8308Change:{type:'resource',badges:['RESSOURCE']},
-  v8307Change:{type:'app',badges:['UX/UI','CORRECTIF']},
-  v8306Change:{type:'resource',badges:['RESSOURCE']},
-  v8305Change:{type:'resource',badges:['RESSOURCE']},
-  v8304Change:{type:'app',badges:['CORRECTIF']}
-};
-const VERSION_DATES={
-  '8.30.116':'22/10/2026',
-  '8.30.82':'12/10/2026','8.30.81':'12/10/2026','8.30.80':'12/10/2026','8.30.79':'12/10/2026','8.30.77':'11/10/2026','8.30.76':'11/10/2026','8.30.75':'11/10/2026','8.30.73':'11/10/2026','8.30.70':'10/10/2026',
-  '8.30.69':'09/10/2026',
-  '8.30.67':'10/10/2026',
-  '8.30.68':'10/10/2026',
-  '8.30.64':'10/10/2026',
-  '8.30.65':'10/10/2026',
-  '8.30.66':'09/10/2026',
-  '8.30.67':'10/10/2026',
-  '8.30.68':'10/10/2026',
-  '8.30.63':'09/10/2026','8.30.62':'09/10/2026','8.30.61':'09/10/2026','8.30.60':'09/10/2026','8.30.59':'09/10/2026',
-  '8.30.58':'09/10/2026',
-  '8.30.57':'09/10/2026',
-  '8.30.56':'09/10/2026',
-  '8.30.55':'09/10/2026','8.30.54':'08/10/2026',
-  '8.30.53':'08/10/2026',
-  '8.30.37':'07/10/2026',
-  '8.30.34':'07/10/2026','8.30.33':'07/10/2026','8.30.32':'07/10/2026',
-  '8.30.31':'07/10/2026','8.30.30':'07/10/2026','8.30.29':'07/10/2026','8.30.28':'06/10/2026','8.30.27':'06/10/2026',  '8.30.26':'06/10/2026',
-  '8.30.25':'06/10/2026','8.30.24':'06/10/2026','8.30.23':'06/10/2026','8.30.22':'06/10/2026','8.30.21':'06/10/2026','8.30.20':'06/10/2026','8.30.19':'06/10/2026','8.30.18':'06/10/2026','8.30.17':'06/10/2026','8.30.16':'06/10/2026','8.30.15':'06/10/2026','8.30.14':'06/10/2026','8.30.13':'06/10/2026','8.30.12':'06/10/2026','8.30.11':'06/10/2026','8.30.10':'06/10/2026','8.30.9':'06/10/2026','8.30.8':'06/10/2026','8.30.7':'06/10/2026','8.30.6':'06/10/2026','8.30.5':'06/10/2026','8.30.4':'06/10/2026','8.30.3':'06/10/2026','8.30.2':'06/10/2026','8.30.1':'06/10/2026','8.30':'06/10/2026',
-  '8.29':'05/10/2026','8.28':'05/10/2026','8.27':'05/10/2026','8.26':'05/10/2026','8.25.1':'05/10/2026','8.25':'05/10/2026','8.24':'05/10/2026','8.23.1':'05/10/2026','8.23':'05/10/2026','8.22':'05/10/2026','8.21':'05/10/2026','8.20':'05/10/2026','8.19.1':'05/10/2026','8.19':'05/10/2026','8.18':'05/10/2026','8.17':'05/10/2026','8.16':'05/10/2026','8.15.1':'05/10/2026','8.15':'05/10/2026',
-  '8.14.1':'04/10/2026','8.14':'04/10/2026','8.13':'04/10/2026','8.12':'04/10/2026','8.11.4':'04/10/2026','8.11.3':'04/10/2026','8.11.2':'04/10/2026','8.11.1':'04/10/2026','8.11':'04/10/2026','8.10':'04/10/2026','8.9.1':'04/10/2026','8.9':'04/10/2026','8.8.4':'04/10/2026','8.8.3':'04/10/2026','8.8.2':'04/10/2026','8.8.1':'04/10/2026','8.8':'04/10/2026','8.7':'04/10/2026','8.6':'04/10/2026','8.5':'04/10/2026','8.4':'04/10/2026',
-  '8.3':'03/10/2026','8.2':'03/10/2026','8.1':'03/10/2026','8.0':'03/10/2026','7.9':'03/10/2026','7.8':'03/10/2026','7.7':'03/10/2026','7.6':'03/10/2026','7.5':'03/10/2026'
-};
-let newsExpanded=false,revisionObserver=null,settingsDateObserver=null;
+let revisionObserver = null;
+let midnightTimer;
 function css(){
   if($('v8312css'))return;
   const s=document.createElement('style');s.id='v8312css';s.textContent=`
@@ -133,24 +11,12 @@ function css(){
   body.v86-home #v76Home>#v8303HomeExtras{order:3}
   #v8303HomeExtras{gap:12px!important}
   #v742Changelog.v8312-news{padding:16px!important}
-  #v742Changelog.v8312-news>details{display:none!important}
-  .v8312-news-sub{margin-top:4px;line-height:1.35}
-  .v8312-news-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .v8312-news-tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 11px;font-weight:800;font-size:12px;cursor:pointer}
-  .v8312-news-tab.on{background:#6941c6;color:#fff;border-color:#6941c6}
   .v8312-news-list{display:grid;gap:0;margin-top:12px;border-top:1px solid var(--line)}
   .v8312-news-item{padding:13px 2px;border-bottom:1px solid var(--line)}
   .v8312-news-item-head{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
   .v8312-news-item-title{font-weight:850;line-height:1.3}
-  .v8312-news-copy{margin-top:6px;line-height:1.45;color:var(--muted);font-size:13px}
-  .v8312-news-badge{font-size:10px;font-weight:900;border-radius:999px;padding:4px 7px;border:1px solid transparent}
-  .v8312-news-badge.resource{background:#e8f8ef;color:#137443;border-color:#bce8cd}
-  .v8312-news-badge.ux{background:#efe8ff;color:#6840c8;border-color:#cfbdf7}
-  .v8312-news-badge.tech{background:#e9f2ff;color:#2663a8;border-color:#bed6f5}
-  .v8312-news-badge.fix{background:#fff1dd;color:#9a5a00;border-color:#f0cf98}
   .v8312-news-date{font-size:11px;font-weight:750;color:var(--muted);white-space:nowrap}
   #v87Log .v8312-log-date{float:right;margin-left:10px;font-size:11px;font-weight:750;color:var(--muted);white-space:nowrap}
-  .v8312-news-more{margin-top:11px;width:100%}
   .v8312-home-feedback{order:2}
   #v742Changelog{order:1}
   #v81Body .v8309-dashboard.v8312-myrevision{padding:16px!important}
@@ -168,10 +34,8 @@ function css(){
   #v81Body .v8309-quick,#v81Body .v8309-exam,#v81Body .v8309-goal{min-width:0!important}
   #v81Body .v8309-exam .v81-actions{grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,.55fr))!important}
   #v81Body .v8309-exam .v81-actions>*{min-width:0!important}
-  body.v72-dark .v8312-news-tab{background:#211e2a}
   body.v72-dark #v81Body .v8312-revision-kpi{background:#282332;border-color:#4a405c}
   @media(max-width:620px){
-    .v8312-news-tabs{display:grid;grid-template-columns:1fr 1fr}.v8312-news-tab:first-child{grid-column:1/-1}
     #v81Body .v8312-revision-grid{grid-template-columns:1fr}
     #v81Body .v8312-revision-kpi{min-height:0}
   }`;
@@ -192,56 +56,20 @@ function home(){
   if(feedback){feedback.classList.add('v8312-home-feedback');if(extras&&feedback.parentElement===extras)extras.appendChild(feedback)}
   replaceGroupName();return true;
 }
-function linesFromSpan(span){
-  const lines=[''];
-  span.childNodes.forEach(n=>{if(n.nodeName==='BR')lines.push('');else lines[lines.length-1]+=(n.textContent||'')});
-  return lines.map(x=>x.trim()).filter(Boolean);
-}
-function inferMeta(id,text){
-  if(NEWS_META[id])return NEWS_META[id];
-  if(/\b(ajout|ajouté|ajoutée|nouveau|nouvelle|série|vocaux?|atlas|planches? anatomiques?|infographies?|fiches? de révision)\b/i.test(text))return {type:'resource',badges:['RESSOURCE']};
-  if(/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|fil d’ariane|technique|synchronis|cache|paramètres|fiabilis|refonte|simplifi|réorganis/i.test(text))return {type:'app',badges:[/correct/i.test(text)?'CORRECTIF':'TECHNIQUE']};
-  return {type:'app',badges:['TECHNIQUE']};
-}
-function versionFromTitle(title){return title.match(/^V(\d+\.\d+(?:\.\d+)?)/)?.[1]||''}
-function formatIsoDate(raw){const m=String(raw||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);return m?`${m[3]}/${m[2]}/${m[1]}`:String(raw||'')}
-function dateForTitle(title,span){return formatIsoDate(span?.dataset?.date)||VERSION_DATES[versionFromTitle(title)]||'Date non renseignée'}
-function badgeHtml(label){
-  const cls=label==='RESSOURCE'?'resource':label==='UX/UI'?'ux':label==='CORRECTIF'?'fix':'tech';
-  return `<span class="v8312-news-badge ${cls}">${label}</span>`;
-}
-function pedagogicalCopy(copy){
-  const technical=/\b(?:Drive|registre|cache|PWA|TNR|audit|MutationObserver|timer|courseId|arborescence|synchronis\w*|catalogue|chargement|runtime)\b/i;
-  return String(copy||'').split(/(?<=[.!?])\s+/).map(x=>x.trim()).filter(x=>x&&!technical.test(x)).join(' ');
-}
-function newsEntries(){
-  const box=$('v742Changelog');if(!box)return [];
-  return [...box.querySelectorAll('details .small > span[id$="Change"]')].map(span=>{
-    const lines=linesFromSpan(span),title=span.querySelector('b')?.textContent?.trim()||lines[0]||'',copy=lines.join(' ').replace(title,'').trim(),meta=inferMeta(span.id,title+' '+copy),displayCopy=meta.type==='resource'?pedagogicalCopy(copy):copy;
-    return {id:span.id,title,copy:displayCopy,date:dateForTitle(title,span),type:meta.type,badges:meta.badges||[]};
-  }).filter(x=>x.title);
-}
 function renderNews(){
-  const box=$('v742Changelog');if(!box)return false;
-  box.classList.add('v8312-news');
-  const top=box.querySelector(':scope > .row');if(top){
-    const title=top.querySelector('b');if(title)title.textContent='📚 Ressources ajoutées';
-    const badge=top.querySelector('.badge');if(badge)badge.textContent='V'+V;
-  }
-  if(!$('v8312NewsUi')){
-    const ui=document.createElement('div');ui.id='v8312NewsUi';ui.innerHTML=`<div class="small v8312-news-sub">Les dernières ressources pédagogiques ajoutées à l’application.</div><div id="v8312NewsList" class="v8312-news-list"></div><button id="v8312NewsMore" type="button" class="btn secondary v8312-news-more">Voir toutes les ressources →</button>`;
-    const details=box.querySelector(':scope > details');details?.insertAdjacentElement('beforebegin',ui);
-    $('v8312NewsMore').onclick=()=>{newsExpanded=!newsExpanded;drawNews()};
-  }
-  drawNews();return true;
-}
-function resourceEntries(){return newsEntries().filter(x=>x.type==='resource').sort((a,b)=>versionFromTitle(b.title).localeCompare(versionFromTitle(a.title),'en',{numeric:true}))}
-function appEntries(){return newsEntries().filter(x=>x.type==='app').sort((a,b)=>versionFromTitle(b.title).localeCompare(versionFromTitle(a.title),'en',{numeric:true}))}
-function drawNews(){
-  const list=$('v8312NewsList'),more=$('v8312NewsMore');if(!list)return;
-  const filtered=resourceEntries(),shown=newsExpanded?filtered:filtered.slice(0,4);
-  list.innerHTML=shown.map(x=>`<article class="v8312-news-item"><div class="v8312-news-item-head"><span class="v8312-news-item-title">${escapeHtml(x.title)}</span><span class="v8312-news-date">📅 ${escapeHtml(x.date)}</span>${x.badges.map(badgeHtml).join('')}</div>${x.copy?`<div class="v8312-news-copy">${escapeHtml(x.copy)}</div>`:''}</article>`).join('')||'<div class="small" style="padding:12px 0">Aucune nouvelle ressource pour le moment.</div>';
-  if(more){more.hidden=filtered.length<=4;more.textContent=newsExpanded?'Réduire les ressources ↑':'Voir toutes les ressources →'}
+  const list = $('v8312NewsList');
+  if (!list) return false;
+  const {today, entries, nextMidnight} = window.IFSI_CHANGELOG.week();
+  if (list.dataset.day === today) return true;
+  list.dataset.day = today;
+  list.innerHTML = entries.map(note => {
+    const title = note.title.replace(/^V[\d.]+\s*[—-]\s*/, '');
+    const date = note.date.split('-').reverse().join('/');
+    return `<article class="v8312-news-item"><div class="v8312-news-item-head"><span class="v8312-news-item-title">${escapeHtml(title)}</span><time class="v8312-news-date" datetime="${note.date}">${date}</time></div></article>`;
+  }).join('') || '<p class="small">Aucune mise à jour ces sept derniers jours.</p>';
+  clearTimeout(midnightTimer);
+  midnightTimer = setTimeout(renderNews, Math.max(1, nextMidnight - Date.now() + 20));
+  return true;
 }
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function counts(){
@@ -286,30 +114,18 @@ function revision(){
   if($('v8312Questions'))$('v8312Questions').disabled=!c.questions;
   return true;
 }
-function decorateSettingsDates(){
-  const box=$('v87Log');if(!box)return false;
-  box.querySelectorAll('details summary').forEach(summary=>{
-    if(summary.querySelector('.v8312-log-date'))return;
-    const title=summary.textContent.trim(),entry=appEntries().find(x=>x.title===title);const date=entry?.date||dateForTitle(title);
-    const tag=document.createElement('span');tag.className='v8312-log-date';tag.textContent='📅 '+date;summary.appendChild(tag);
-  });
-  return true;
-}
-function observeSettingsDates(){
-  const box=$('v87Log');if(!box||settingsDateObserver)return;
-  settingsDateObserver=new MutationObserver(()=>requestAnimationFrame(decorateSettingsDates));
-  settingsDateObserver.observe(box,{childList:true,subtree:true});decorateSettingsDates();
-}
 function observeRevision(){
   const body=$('v81Body');if(!body||revisionObserver)return;
   revisionObserver=new MutationObserver(()=>requestAnimationFrame(revision));
   revisionObserver.observe(body,{childList:true,subtree:false});
 }
-function apply(){css();home();renderNews();revision();observeRevision();observeSettingsDates();decorateSettingsDates()}
+function apply(){css();home();renderNews();revision();observeRevision()}
 function startupStable(){return !!$('v8303HomeExtras')&&!!$('v8312NewsUi')&&!!$('v8312MyRevision')&&!!$('v87Log')}
 let tries=0;const timer=setInterval(()=>{tries++;apply();if(startupStable()||tries>30)clearInterval(timer)},100);
+window.addEventListener('pageshow',renderNews);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)renderNews()});
 window.addEventListener('storage',()=>requestAnimationFrame(apply));
 window.addEventListener('ifsi:v73-ready',()=>requestAnimationFrame(apply));
 window.addEventListener('load',()=>setTimeout(apply,0));
-window.IFSI_V8312={version:V,apply,renderNews,revision,resourceEntries,appEntries,dateForTitle};
+window.IFSI_V8312={version:V,apply,renderNews,revision};
 })();

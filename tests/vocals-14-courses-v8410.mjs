@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -32,7 +33,7 @@ const care=manifest.courses.find(c=>c.courseId==='ethique_infirmiere'),p02=care.
 assert.equal(p02.vocalIds.length,4);assert.equal(care.vocals.length,5);
 assert.ok(!p02.blockers.some(b=>b.resource==='vocals'));assert.ok(p02.blockers.some(b=>b.reason==='native_support_unavailable'));
 assert.ok(manifest.audioSupplements.some(c=>c.courseId==='diagnostic_bacteriologie'),'Complément de bactériologie absent');
-for(const file of ['index.html','sw.js'])assert.ok(fs.readFileSync(file,'utf8').includes('v8410-changelog.js'),'Annonce absente '+file);
+assertArchivedRelease('v8410Change');
 const player=fs.readFileSync('vocals-v73.js','utf8');
 assert.ok(player.includes('localAudioSource(x)||driveStream(x.driveId)'),'Le lecteur doit privilégier le MP3 direct et garder Drive en secours');
 console.log('✅ V8.30.110 : 35 MP3, 14 cours, durée <10 min, ordre/GO/empreintes cohérents ; 131 audios antérieurs inchangés.');
