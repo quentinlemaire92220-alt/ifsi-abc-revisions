@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -11,9 +12,7 @@ const snapshot=JSON.parse(read('resource-audit-v821.json'));
 
 assert.ok(Number(meta.version.split('.').at(-1))>=97,'Reproducteur introduit en V8.30.97');
 assert.ok(Number(meta.build)>=8397,'Build inférieur à V8.30.97');
-assert.ok(index.includes('./v8397-changelog.js?v='+meta.build),'Changelog historique V8.30.97 absent du bundle courant');
-assert.ok(sw.includes("'./v8397-changelog.js'"));
-assert.ok(sw.includes('"v8397-changelog.js"'));
+assertArchivedRelease('v8397Change');
 assert.ok(nav.includes("id:'systeme_reproducteur'"),'Rubrique reproducteur absente');
 assert.ok(!nav.includes("['🧬','Reproduction']"),'Ancien badge Reproduction fantôme toujours présent');
 assert.ok(nav.includes("if(def.id==='systeme_reproducteur')return reproductiveReviewCard(def,term)"));

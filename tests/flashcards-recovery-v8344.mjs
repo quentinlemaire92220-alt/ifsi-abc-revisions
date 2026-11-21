@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -9,6 +10,5 @@ for(const token of ['recoverContextCard','recovered:true','cité','mentionné','
 assert.ok(mod.includes('card=recoverContextCard(q,t)'),'La récupération doit intervenir avant le rejet final');
 assert.ok(!mod.includes('Quels sont les éléments essentiels à connaître sur'),'Les cartes récupérées ne doivent pas utiliser un fallback vague');
 const index=read('index.html'),sw=read('sw.js');
-assert.ok(index.includes(`./v8344-changelog.js?v=${meta.build}`),'Changelog V8.30.44 absent de index.html');
-assert.ok(sw.includes("'./v8344-changelog.js'"),'Changelog V8.30.44 absent du cache PWA');
+assertArchivedRelease('v8344Change');
 console.log(`✅ Récupération V8.30.44 conservée sous release V${meta.version} build ${meta.build}`);

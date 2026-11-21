@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -51,7 +52,8 @@ const worker=fs.readFileSync('sw.js','utf8');
 const vocabEngine=fs.readFileSync('v8355-vocabulary.js','utf8');
 assert.ok(vocabEngine.includes('window.IFSI_P3_VOCAB_FLASHCARDS?.[x.id]'),'Moteur de flashcards non raccordé');
 assert.ok(page.indexOf('p3-vocabulary-flashcards.js')<page.indexOf('v8355-vocabulary.js'),'Le supplément doit être chargé avant le vocabulaire');
-for(const file of ['p3-vocabulary-flashcards.js','v8403-changelog.js'])assert.ok(worker.includes("'./"+file+"'"),'Cache hors-ligne absent: '+file);
+assert.ok(worker.includes("'./p3-vocabulary-flashcards.js'"),'Module hors ligne absent');
+assertArchivedRelease('v8403Change');
 const currentVersion=JSON.parse(fs.readFileSync('build-meta.json','utf8')).version;
 assert.ok(currentVersion.startsWith('8.30.') && Number.isInteger(Number(currentVersion.split('.')[2])) && Number(currentVersion.split('.')[2])>=103,'Le lot P3 doit rester accessible après V8.30.103');
 assert.ok(worker.includes('ifsi-abc-v8-30-'+currentVersion.split('.')[2]+'-local-'),'Cache PWA non synchronisé avec le build courant');

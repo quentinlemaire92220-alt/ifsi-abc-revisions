@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -17,6 +18,5 @@ for(const s of bad)assert.ok(!mod.includes(s),`Formulation interdite présente: 
 const expected=['Quels sont','À quoi correspond','À quoi peut faire appel'];
 for(const s of expected)assert.ok(mod.includes(s),`Reformulation attendue absente: ${s}`);
 const index=read('index.html'),sw=read('sw.js');
-assert.ok(index.includes(`./v8342-changelog.js?v=${meta.build}`),'Changelog V8.30.42 absent de index.html');
-assert.ok(sw.includes("'./v8342-changelog.js'"),'Changelog V8.30.42 absent du cache PWA');
+assertArchivedRelease('v8342Change');
 console.log(`✅ Formulations V8.30.42 conservées sous release V${meta.version} build ${meta.build}`);

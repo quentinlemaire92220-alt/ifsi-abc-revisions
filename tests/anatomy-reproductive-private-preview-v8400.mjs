@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -14,9 +15,8 @@ assert.equal(Object.values(snapshot.atlasBoardContracts).reduce((a,b)=>a+b,0),10
 assert.equal(snapshot.atlasBoardContracts.systeme_reproducteur,undefined);
 assert.ok(nav.includes('0 planche validée')&&nav.includes('6 maquettes en revue'));
 assert.ok(index.includes('./v8399-reproductive-private-review.js?v='+metadata.build));
-assert.ok(index.includes('./v8400-changelog.js?v='+metadata.build));
+assertArchivedRelease('v8400Change');
 assert.ok(worker.includes("'./v8399-reproductive-private-review.js'")&&worker.includes('"v8399-reproductive-private-review.js"'));
-assert.ok(worker.includes("'./v8400-changelog.js'")&&worker.includes('"v8400-changelog.js"'));
 assert.ok(js.includes("indexedDB.open(DB_NAME,1)"),'Le fichier n’est pas stocké dans IndexedDB');
 assert.ok(js.includes("file.slice(0,5)")&&js.includes("'%PDF-'"),'Contrôle de signature PDF absent');
 assert.ok(js.includes('URL.createObjectURL(activeBlob)'),'Le PDF local n’est pas consultable');

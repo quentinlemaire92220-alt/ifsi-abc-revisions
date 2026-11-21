@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
@@ -8,7 +9,6 @@ const inventory=JSON.parse(read('resource-audit-v821.json'));
 const sw=read('sw.js');
 const nav=read('v82-nav-anatomy.js');
 const idx=read('index.html');
-const startup=read('v8303-home-startup.js');
 const expected={
  R03:{sha:'c53f39594fba856f5a38d65957aacd7dc71b8a24ded5e7d5e4024332167a95e8',page:1},
  R05:{sha:'4bde13b6c977f3b8f9ca48cd539fe54c0ef8a72d1a3a264d41e7f5c4a5b087f8',page:2}
@@ -47,10 +47,7 @@ assert.equal(manifest.boards.length,6);
 assert.equal(inventory.expectedTotals.hdAtlasBoards,106);
 assert.equal(Object.values(inventory.atlasBoardContracts).reduce((sum,n)=>sum+n,0),106);
 assert.equal(inventory.atlasBoardContracts.systeme_reproducteur,undefined);
-assert.ok(idx.includes(`./v8404-changelog.js?v=${meta.build}`),'Historical R03/R05 changelog must stay available in the current build');
-assert.ok(sw.includes("'./v8404-changelog.js'"));
-assert.ok(sw.includes('"v8404-changelog.js"'));
-assert.ok(startup.includes('IFSI_V8404_CHANGELOG'));
+assertArchivedRelease('v8404Change');
 assert.ok(nav.includes('0 planche validée'));
 assert.ok(nav.includes('6 maquettes en revue'));
 for(const [id,expectedRecord] of Object.entries(expected)){

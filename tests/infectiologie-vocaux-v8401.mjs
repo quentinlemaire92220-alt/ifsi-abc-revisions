@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {validateAudioSupplements} from './audio-supplement-contract.mjs';
@@ -36,12 +37,7 @@ for(const [courseId,count] of expected){
 assert.equal(n,26);
 const release=read('v8401-changelog.js');
 assert.ok(release.includes('v8401Change')&&release.includes('26 nouveaux vocaux')&&release.includes('131 vocaux'),'Changelog étudiant manquant');
-const home=read('v8312-home-revision.js');
-assert.ok(home.includes("v8401Change:{type:'resource'"),'Actualité non classée ressource');
-const startup=read('v8303-home-startup.js');
-assert.ok(startup.includes("'IFSI_V"+meta.build+"_CHANGELOG'"),'Le changelog courant doit être relancé au démarrage');
+assert.equal(assertArchivedRelease('v8401Change').type,'resource');
 const index=read('index.html'),sw=read('sw.js'),app=read('app-version-v742.js');
-assert.ok(index.includes('v8401-changelog.js?v='+meta.build));
-assert.ok(sw.includes("'./v8401-changelog.js'")&&sw.includes('"v8401-changelog.js"'));
 assert.ok(app.includes("const VERSION='"+meta.version+"'"));
 console.log('✅ V8.30.101 : 26 MP3 sur huit cours, 131 vocaux au total, liens et durées validés, PWA et actualités cohérentes');

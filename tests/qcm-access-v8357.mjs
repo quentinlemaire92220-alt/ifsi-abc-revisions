@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
@@ -12,6 +13,5 @@ assert.match(app,/if\(state\.open\)populate\(\)/,'Filtres non restaurés après 
 const index=read('index.html'),sw=read('sw.js');
 assert.ok(index.includes('./v8357-qcm-access.js?v='+meta.build),'Carte QCM absente du chargement');
 assert.ok(sw.includes("'./v8357-qcm-access.js'"),'Carte QCM absente du pré-cache PWA');
-assert.ok(index.includes('./v8357-changelog.js?v='+meta.build),'Changelog QCM absent du chargement');
-assert.ok(sw.includes("'./v8357-changelog.js'"),'Changelog QCM absent du pré-cache PWA');
+assertArchivedRelease('v8357Change');
 console.log('✅ Accès QCM par cours, filtres, moteur et mise à jour PWA contrôlés');

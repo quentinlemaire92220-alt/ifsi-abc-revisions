@@ -37,19 +37,17 @@ const deck=window.IFSI_V8338_FLASHCARDS.rebuild();assert.ok(deck.length,'Fixture
 assert.equal(new Set(deck.map(c=>c.id)).size,deck.length,'Identifiants flashcards dupliqués');
 for(const card of deck){assert.equal(card.id,'fc:shared','Clé historique de progression modifiée');assert.deepEqual(Array.from(card.courseIds).sort(),['child','parent'])}
 // Changelog classification and dates must use the current release metadata.
-const news=read('v8312-home-revision.js');
-const newsctx={window:{IFSI_APP_VERSION:'8.30.64'},document:{getElementById:()=>null}};vm.createContext(newsctx);
-vm.runInContext(news.slice(0,news.indexOf('let newsExpanded')).replace("(()=>{'use strict';",''),newsctx);
-vm.runInContext(between(news,'function inferMeta(','function badgeHtml('),newsctx);
-assert.equal(vm.runInContext("inferMeta('v8362Change','Flashcards et notions atomiques').type",newsctx),'app');
-assert.equal(vm.runInContext("inferMeta('v8359Change','8 fiches de maths').type",newsctx),'resource');
-assert.equal(vm.runInContext("dateForTitle('V8.30.63 — Fiabilité des QCM')",newsctx),'09/10/2026');
+const releases=JSON.parse(read('data/release-news.json'));
+const entry=id=>releases.find(x=>x.id===id);
+assert.equal(entry('v8362Change').type,'app');
+assert.equal(entry('v8359Change').type,'resource');
+assert.equal(entry('v8363Change').date,'2026-10-09');
 console.log('✅ Parcours : validation sans champs legacy, navigation exclusive, flashcards multi-cours uniques, dates et classement des nouveautés');
 
 // Modern search has replaced both legacy buttons; the old timer must leave it alone.
 const searchContext={document:{getElementById:id=>id==='v76Home'?{}:id==='v86Tools'?{dataset:{v813:'1'}}:null}};
 vm.createContext(searchContext);vm.runInContext("const $=id=>document.getElementById(id);"+between(read('v86-home-clean.js'),'function tools(){','function dialog(){'),searchContext);vm.runInContext('tools()',searchContext);
-assert.equal(vm.runInContext("inferMeta('v8339Change','Flashcards et objectifs mieux intégrés. Vocaux disponibles').type",newsctx),'app');
+assert.equal(entry('v8339Change').type,'app');
 console.log('✅ Recherche moderne conservée, ancien panneau vocaux classé dans les évolutions');
 
 // A query entered before registry readiness must refresh without another keystroke.

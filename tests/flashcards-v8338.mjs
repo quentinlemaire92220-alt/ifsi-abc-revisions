@@ -1,3 +1,4 @@
+import {assertArchivedRelease} from './release-news-fixture.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8');
@@ -8,8 +9,7 @@ const mod=read('v8338-flashcards.js');
 for(const token of ["const V='8.30.38'","ifsiabc_flashcards_v1","selectCards","À revoir","En cours","Acquise","resourcesForCourse","officialSupport","IFSI_V8338_FLASHCARDS"])assert.ok(mod.includes(token),`Flashcards incomplètes: ${token}`);
 const index=read('index.html'),sw=read('sw.js');
 assert.ok(index.includes(`./v8338-flashcards.js?v=${meta.build}`),'Module flashcards absent de index.html');
-assert.ok(index.includes(`./v8338-changelog.js?v=${meta.build}`),'Changelog V8.30.38 absent de index.html');
+assertArchivedRelease('v8338Change');
 assert.ok(sw.includes("'./v8338-flashcards.js'"),'Module flashcards absent du cache PWA');
-assert.ok(sw.includes("'./v8338-changelog.js'"),'Changelog V8.30.38 absent du cache PWA');
 assert.ok(sw.includes(`ifsi-abc-v${meta.version.replaceAll('.','-')}-local-`),'Cache PWA désynchronisé de la release courante');
 console.log(`✅ Flashcards V8.30.38 conservées sous release V${meta.version} build ${meta.build}`);

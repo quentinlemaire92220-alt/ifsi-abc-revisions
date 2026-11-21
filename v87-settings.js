@@ -86,7 +86,7 @@ function addSection(){if($('settings87'))return;const app=document.querySelector
  <div class="v87-actions"><button id="v87ExportResults" class="btn outline" type="button">Exporter mes résultats</button><button id="v87ExportBackup" class="btn outline" type="button">Sauvegarde complète</button></div>
 </details>
 <details id="v87LogDisclosure" class="v87-card v87-expand"><summary>🧾 Journal des évolutions</summary>
- <p>Historique UX/UI, technique et correctifs de l’application.</p><div id="v87Log" class="v87-log"></div>
+ <p>Retrouve toutes les mises à jour de l’application et des ressources.</p><div id="v87Log" class="v87-log"></div>
 </details>`;
 app.insertBefore(sec,oldNav()||null)}
 function addNav(){if($('v87Nav'))return;const app=document.querySelector('.app');if(!app)return;const n=document.createElement('nav');n.id='v87Nav';n.innerHTML=`
@@ -115,26 +115,43 @@ function switchState(id,on){$(id)?.classList.toggle('on',!!on);$(id)?.setAttribu
 function download(name,obj){const a=document.createElement('a'),b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function backup(){const data={version:V,exportedAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('ifsiabc_'))data.localStorage[k]=localStorage.getItem(k)}download(`IFSI_ABC_sauvegarde_V${V}.json`,data)}
 function esc87(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function versionLog(){
- const box=$('v87Log');if(!box)return;
- const appEntries=window.IFSI_V8312?.appEntries?.()||[];
- if(appEntries.length){box.innerHTML=appEntries.map((x,i)=>`<details class="v87-history-entry" ${i===0?'open':''} ${i>=5?'hidden':''}><summary>${esc87(String(x.title||'').replace(/Date non renseignée/gi,'').trim())}</summary><div class="small">${esc87(x.copy||'Évolution de l’application.')}</div></details>`).join('')+(appEntries.length>5?'<button type="button" id="v87HistoryMore" class="btn outline" style="width:100%;margin-top:10px">Voir tout l’historique ('+appEntries.length+')</button>':'');const more=$('v87HistoryMore');if(more)more.onclick=()=>{const hidden=box.querySelectorAll('.v87-history-entry[hidden]');const expand=hidden.length>0;box.querySelectorAll('.v87-history-entry').forEach((el,i)=>{if(i>=5)el.hidden=!expand});more.textContent=expand?'Réduire l’historique':'Voir tout l’historique ('+appEntries.length+')'};return}
- const src=$('v742Changelog')?.querySelector('details .small');
- if(src){
-   const spans=[...src.querySelectorAll(':scope > span[id$="Change"]')].filter(x=>/audit|correct|navigation|interface|mise à jour|service worker|ergonomie|révision|écran|technique|synchronis|cache|paramètres|fiabilis|refonte|simplifi|réorganis/i.test(x.textContent));
-   if(spans.length){box.innerHTML=spans.map((x,i)=>{const title=x.querySelector('b')?.textContent?.trim()||'Évolution';const copy=x.textContent.replace(title,'').trim();return `<details ${i===0?'open':''}><summary>${esc87(title)}</summary><div class="small">${esc87(copy)}</div></details>`}).join('');return}
+async function versionLog() {
+ const box=$('v87Log');
+ if (!box || box.dataset.loaded) return;
+ try {
+   const entries=await window.IFSI_CHANGELOG.loadHistory();
+   if (box.dataset.loaded) return;
+   const visibleCount=5;
+   function draw(expanded) {
+     const visible=expanded ? entries : entries.slice(0,visibleCount);
+     box.innerHTML=visible.map((note,index)=>{
+       const date=note.date ? `<time class="v8312-log-date" datetime="${esc87(note.date)}">${esc87(note.date.split('-').reverse().join('/'))}</time>` : '';
+       return `<details class="v87-history-entry" ${index===0?'open':''}><summary>${esc87(note.title)}${date}</summary>${note.copy?`<div class="small">${esc87(note.copy)}</div>`:''}</details>`;
+     }).join('');
+     if (entries.length<=visibleCount) return;
+     const more=document.createElement('button');
+     more.type='button'; more.id='v87HistoryMore'; more.className='btn outline full';
+     more.textContent=expanded?'Réduire l’historique':`Voir tout l’historique (${entries.length})`;
+     more.setAttribute('aria-expanded',String(expanded));
+     more.onclick=()=>{draw(!expanded);$('v87HistoryMore')?.focus()};
+     box.appendChild(more);
+   }
+   draw(false);
+   box.dataset.loaded='1';
+ } catch {
+   box.innerHTML='<p class="small">Le journal est indisponible.</p><button type="button" class="btn outline">Réessayer</button>';
+   box.querySelector('button').onclick=versionLog;
  }
- box.innerHTML='<div class="small">Aucune évolution technique enregistrée.</div>'
 }
 async function remoteMeta(){const r=await fetch('./build-meta.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('version');return r.json()}
 async function refreshVersionState(){try{const m=await remoteMeta();if($('v87Server'))$('v87Server').textContent='V'+(m.version||'?');if($('v87Build'))$('v87Build').textContent=m.build||'?';if($('v87Installed'))$('v87Installed').textContent='V'+(window.IFSI_APP_VERSION||V);if($('v87UpdateStatus'))$('v87UpdateStatus').textContent=(m.version===(window.IFSI_APP_VERSION||V))?'Application synchronisée avec le serveur.':'Une version plus récente est disponible.';return m}catch{if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Impossible de lire la version serveur.';return null}}
 async function updateWorker(){const reg=await navigator.serviceWorker?.getRegistration?.();if(reg)await reg.update();return reg}
 async function forceUpdate(){const b=$('v87ForceUpdate');if(b){b.disabled=true;b.textContent='Nettoyage…'}try{await updateWorker();if(window.caches){const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('ifsi-abc-')).map(k=>caches.delete(k)))}const reg=await navigator.serviceWorker?.getRegistration?.();if(reg?.waiting)reg.waiting.postMessage?.({type:'SKIP_WAITING'});if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Cache applicatif nettoyé • rechargement…';setTimeout(()=>location.replace(location.pathname+'?refresh='+Date.now()),350)}catch{if(b){b.disabled=false;b.textContent='⚡ Forcer la mise à jour'}if($('v87UpdateStatus'))$('v87UpdateStatus').textContent='Mise à jour forcée impossible.'}}
 function latestResourceAnnouncement(){
- const entries=window.IFSI_V8312?.resourceEntries?.()||[],x=entries[0];if(!x)return '';
+ const x=window.IFSI_CHANGELOG?.latestResource;if(!x)return '';
  const label=String(x.title||'Nouvelle ressource').replace(/^V\d+\.\d+(?:\.\d+)?\s*[—-]\s*/,'').trim();
  const lines=['📚 *Nouvelle ressource IFSI ABC Révisions*','',`*${label}*`];
- if(x.copy)lines.push(x.copy);if(x.date)lines.push('📅 '+x.date);
+ if(x.copy)lines.push(x.copy);if(x.date)lines.push('📅 '+x.date.split('-').reverse().join('/'));
  const appUrl=/^https?:$/.test(location.protocol)?location.origin+location.pathname:'';
  lines.push('',appUrl?'À retrouver dans l’application : '+appUrl:'À retrouver dans l’application.');
  return lines.join('\n');

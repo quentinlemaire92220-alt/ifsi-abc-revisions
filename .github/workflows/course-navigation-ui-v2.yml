@@ -22,6 +22,8 @@ on:
       - 'tests/flashcards-runtime-fixture.mjs'
       - 'tests/course-ue-grouping.mjs'
       - 'tests/course-thumbnails-dynamic.mjs'
+      - 'tests/mobile-release-news.py'
+      - 'data/release-news.json'
       - 'index.html'
       - 'build-meta.json'
       - 'tests/fixtures/course-navigation-ui-v2.js'
@@ -42,6 +44,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -51,5 +55,14 @@ jobs:
         run: node tests/course-navigation-ui-v2-smoke.mjs
       - name: Test Chromium réel — ordre, repli, thèmes, handlers, absence de gel
         run: node tests/course-navigation-ui-v2-browser.mjs
-      - name: Lancement de toute l'application (190 modules) en test local Chromium PC/mobile
+      - name: Lancement de toute l'application en test local Chromium PC/mobile
         run: node tests/course-navigation-ui-v2-full-app.mjs
+      - name: Comparer l’accès à une fiche sur mobile (4G simulée)
+        if: github.event_name == 'pull_request'
+        env:
+          NEWS_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if git diff --quiet "$NEWS_BASE" HEAD -- data/release-news.json changelog-v742.js v8312-home-revision.js tests/mobile-release-news.py; then exit 0; fi
+          python -m pip install --quiet 'playwright==1.56.0'
+          git worktree add --detach "$RUNNER_TEMP/ancienne-version" "$NEWS_BASE"
+          python tests/mobile-release-news.py "$RUNNER_TEMP/ancienne-version"
