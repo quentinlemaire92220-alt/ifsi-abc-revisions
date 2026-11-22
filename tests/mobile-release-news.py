@@ -334,6 +334,8 @@ def check_early_revision(browser, directory):
 
 
 if __name__ == '__main__':
+    from offline_media import check_media_updates
+
     parser = argparse.ArgumentParser()
     parser.add_argument('baseline', type=Path)
     args = parser.parse_args()
@@ -345,4 +347,7 @@ if __name__ == '__main__':
         run(browser, candidate, candidate, upgrade=False)
         check_progressive_offline(browser, candidate)
         check_early_revision(browser, candidate)
+        check_media_updates(browser, args.baseline.resolve(), candidate, site)
+        if 'const MEDIA_DIGESTS' not in (args.baseline / 'sw.js').read_text():
+            check_media_updates(browser, args.baseline.resolve(), candidate, site, damaged=True)
         browser.close()
