@@ -1,5 +1,5 @@
 {
-  "version": "8.30.202",
+  "version": "8.30.203",
   "auditedAt": "2026-11-02",
   "scope": "Drive IFSI - Cours ↔ catalogues actifs de l’application",
   "driveSourceOfTruth": {
@@ -8,6 +8,7 @@
   },
   "mode": "candidate_pending_pedagogical_review",
   "note": "Catalogue candidat : 24 MP3 TTS ajoutés avec statut provisoire ; revue des pauses et exactitude scientifique non terminée, validation non déclarée.",
+  "studentCatalogueExclusions": ["pssm"],
   "expectedTotals": {
     "courses": 73,
     "sheets": 100,

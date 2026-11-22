@@ -20,8 +20,12 @@ for(const d of manifest.courses.filter(d=>d.authoredCardReview)){
 }
 for(const c of selected.registry.courses.filter(c=>c.vocabularyCoveredByAuthoredCards))assert.ok(coveredCourses.has(c.id),'Duplicate suppression without validated authored coverage');
 const automatic=vocabulary.entries.filter(e=>!e.courseIds.every(id=>coveredCourses.has(id)&&selected.registry.courses.find(c=>c.id===id)?.vocabularyCoveredByAuthoredCards));
-assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,automatic.length);
-for(const e of automatic)assert.ok(selected.deck.some(c=>c.id==='voc:'+e.id),'Automatic vocabulary card missing: '+e.id);
+const mergedIds=new Set(['voc:prevention_ias_asepsie_lex_040','voc:prevention_ias_asepsie_lex_053',
+ 'voc:prevention_ias_asepsie_lex_055','voc:prevention_ias_asepsie_lex_056','voc:prevention_ias_asepsie_lex_067','voc:posture-professionnelle-td2']);
+assert.deepEqual(new Set(selected.deck.map(c=>c.mergedVocabularyId).filter(Boolean)),mergedIds);
+const represented=new Set(selected.deck.flatMap(c=>[c.id,c.mergedVocabularyId]));
+assert.equal(selected.deck.filter(c=>c.id.startsWith('voc:')).length,automatic.length-mergedIds.size);
+for(const e of automatic)assert.ok(represented.has('voc:'+e.id),'Automatic vocabulary term missing: '+e.id);
 for(const {deck} of [selected,full]){
   assert.equal(new Set(deck.map(c=>c.id)).size,deck.length,'Identifiants dupliqués');
   for(const c of deck){

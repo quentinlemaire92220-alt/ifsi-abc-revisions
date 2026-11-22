@@ -6,7 +6,7 @@ const fold=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLo
 let questionCache=null,questionRegistry=null,questionData=null;
 let data=[],loadError='',search='',selectedTheme='all',selectedCourse='all',originCourse=null,view='fiche';
 const registry=()=>window.IFSI_V741?.getRegistry?.()?.courses||[];
-const courseName=id=>registry().find(c=>c.id===id)?.label||id;
+const courseName=id=>window.IFSI_COURSE_CLASSIFICATION?.courseTitle?.(id)||registry().find(c=>c.id===id)?.label||id;
 function validate(entries){const seen=new Set();return entries.filter(x=>{if(!x||!x.id||!x.term||!x.definition||!x.theme||!Array.isArray(x.courseIds)||!x.courseIds.length||seen.has(x.id))return false;seen.add(x.id);return true})}
 const flashcards=()=>data.filter(x=>!x.courseIds.every(id=>registry().find(c=>c.id===id)?.vocabularyCoveredByAuthoredCards===true)).map(x=>{const supplement=x.sourceType==='reference_pedagogique'?window.IFSI_P3_VOCAB_FLASHCARDS?.[x.id]:null;return{id:'voc:'+x.id,qid:null,courseId:x.courseIds[0],courseIds:[...x.courseIds],course:courseName(x.courseIds[0]),theme:x.theme,difficulty:'easy',kind:'Vocabulaire',front:supplement?.[0]||'Que signifie « '+x.term+' » ?',answers:[supplement?.[1]||x.definition],explanation:x.distinction||'',distinction:x.distinction||'',etymologie:x.etymologie||'',officialSupport:false,sourceType:x.sourceType}});
 const forCourse=id=>{const ids=registry().find(c=>c.id===id)?.vocabularyEntryIds;return data.filter(x=>x.courseIds.includes(id)&&(!Array.isArray(ids)||ids.includes(x.id)))};
@@ -58,16 +58,51 @@ function makeQuestion(term,pool){
  const options=mix([term,...distractors],term.id+':answers');
  return {term,options,answer:options.findIndex(x=>x.id===term.id)};
 }
+// Rotate the existing answer options: the original ordering remains the storage format for exams.
+function balanceAnswerPositions(questions){
+ const groups=new Map();
+ for(const question of questions){
+  const key=question.courseId+'|'+question.choices.length;
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(question);
+ }
+ let nextSlot=0;
+ for(const [key,group] of groups){
+  let seed=hash(key);
+  for(let i=group.length-1;i>0;i--){
+   seed=(Math.imul(seed,1664525)+1013904223)>>>0;
+   const j=Math.floor(seed/4294967296*(i+1));
+   [group[i],group[j]]=[group[j],group[i]];
+  }
+  for(const q of group){
+   const n=q.choices.length,slot=nextSlot++%n,shift=(slot-q.answers[0]+n)%n;
+   q.vocabularyChoiceShift=shift;
+   q.choices=q.choices.slice(n-shift).concat(q.choices.slice(0,n-shift));
+   q.answers=[slot];
+  }
+ }
+ return questions;
+}
+function examAnswerIndices(answers,questions,toStorage){
+ const result={...answers};
+ for(const q of questions){
+  const picks=answers?.[q.id],shift=q.vocabularyChoiceShift;
+  if(!shift||!Array.isArray(picks))continue;
+  const n=q.choices.length;
+  result[q.id]=picks.map(i=>(i+(toStorage?n-shift:shift))%n);
+ }
+ return result;
+}
 function questions(){
  const currentRegistry=window.IFSI_V741?.getRegistry?.();
  if(questionCache&&questionRegistry===currentRegistry&&questionData===data)return questionCache;
  questionRegistry=currentRegistry;questionData=data;
- return questionCache=data.filter(term=>!term.qcmQuestionId).flatMap(term=>term.courseIds.filter(courseId=>!term.qcmQuestionIdsByCourse?.[courseId]).map(courseId=>{
+ return questionCache=balanceAnswerPositions(data.filter(term=>!term.qcmQuestionId).flatMap(term=>term.courseIds.filter(courseId=>!term.qcmQuestionIdsByCourse?.[courseId]).map(courseId=>{
  const q=makeQuestion(term,forCourse(courseId));
  return {id:'vocab_'+courseId+'_'+term.id,courseId,course:courseName(courseId),theme:'Vocabulaire',difficulty:'easy',kind:'Vocabulaire',vocabularyTermId:term.id,
  question:'Vocabulaire — '+courseName(courseId)+' : quel terme correspond à cette définition ? '+term.definition,
  choices:q.options.map(x=>x.term),answers:[q.answer],explanation:term.term+' : '+term.definition+(term.distinction?' À distinguer : '+term.distinction:''),officialSupport:false,sourceType:term.sourceType};
-}))}
+})));}
 function startQuiz(){
  const ids=new Set(filtered().map(x=>x.id));
  const pool=(typeof Q!=='undefined'?Q:[]).filter(q=>(selectedCourse==='all'||q.courseId===selectedCourse)&&((q.kind==='Vocabulaire'&&ids.has(q.vocabularyTermId))||q.vocabularyTermIds?.some(id=>ids.has(id))));
@@ -98,8 +133,11 @@ function mountCourse(courseId){
  $('vgCourseSheet').onclick=()=>openCourse(courseId);
  $('vgCourseQuiz').onclick=()=>startCourseQuiz(courseId);
 }
-async function load(){try{const response=await fetch('./vocabulaire-v1.json',{cache:'no-cache'});if(!response.ok)throw Error('HTTP '+response.status);const doc=await response.json();data=validate(doc.entries||[]);if(!data.length)throw Error('Glossaire vide');window.IFSI_QCM_HYDRATE?.();window.dispatchEvent(new Event('ifsi:vocabulary-ready'));window.IFSI_V8338_FLASHCARDS?.invalidate?.();window.IFSI_V74?.refreshCourses?.();window.IFSI_V74?.refreshCourse?.();mountCatalog();if(!$(ID).classList.contains('hidden')&&view==='fiche')showFiche()}catch(err){loadError=String(err);console.warn('Vocabulaire indisponible',err)}}
+async function load(){try{const response=await fetch('./vocabulaire-v1.json',{cache:'no-cache'});if(!response.ok)throw Error('HTTP '+response.status);const doc=await response.json();data=validate(doc.entries||[]).flatMap(entry=>{
+ const courseIds=entry.courseIds.filter(id=>window.IFSI_COURSE_CLASSIFICATION?.isActive?.(id)!==false);
+ return courseIds.length?[{...entry,courseIds}]:[];
+});if(!data.length)throw Error('Glossaire vide');window.IFSI_QCM_HYDRATE?.();window.dispatchEvent(new Event('ifsi:vocabulary-ready'));window.IFSI_V8338_FLASHCARDS?.invalidate?.();window.IFSI_V74?.refreshCourses?.();window.IFSI_V74?.refreshCourse?.();mountCatalog();if(!$(ID).classList.contains('hidden')&&view==='fiche')showFiche()}catch(err){loadError=String(err);console.warn('Vocabulaire indisponible',err)}}
 ensure();css();$(ID)?.addEventListener('click',handleClick);
-window.IFSI_VOCAB={version:V,open,openCourse,startCourseQuiz,countForCourse,forCourse,entries:()=>data.slice(),questions,flashcards,mountCatalog,mountCourse,refresh:load};
+window.IFSI_VOCAB={version:V,open,openCourse,startCourseQuiz,countForCourse,forCourse,entries:()=>data.slice(),questions,examAnswerIndices,flashcards,mountCatalog,mountCourse,refresh:load};
 load();
 })();

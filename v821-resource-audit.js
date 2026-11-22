@@ -25,12 +25,14 @@ function idsForResources(){
  return out
 }
 function duplicates(items){const m=new Map();for(const x of items){if(!m.has(x.id))m.set(x.id,[]);m.get(x.id).push(x)}return [...m.entries()].filter(([,v])=>v.length>1).map(([id,v])=>({id,items:v}))}
-function answerBalanceAudit(qs){
+function answerBalanceAudit(qs,courseLabels){
  const groups=new Map(),letters='ABCDE';
  for(const q of qs){
-  const id=q.courseId||q.course||'sans_course',n=Array.isArray(q.choices)?q.choices.length:0,a=Array.isArray(q.answers)?q.answers.slice().sort((x,y)=>x-y):[];
+  const id=q.courseId||q.course||'sans_course',n=Array.isArray(q.choices)?q.choices.length:0;
+  const order=window.IFSI_QCM_FEEDBACK?.choiceOrder?.(q,qs);
+  const a=Array.isArray(q.answers)?q.answers.map(i=>order?order.indexOf(i):i).sort((x,y)=>x-y):[];
   if(n<2||n>5||!a.length||a.length>4||a.some(x=>x<0||x>=n))continue;
-  if(!groups.has(id))groups.set(id,{id,label:q.course||id,n:0,formats:{}});
+  if(!groups.has(id))groups.set(id,{id,label:courseLabels.get(id)||q.course||id,n:0,formats:{}});
   const g=groups.get(id);g.n++;
   if(!g.formats[n])g.formats[n]={nq:0,pos:Array(n).fill(0),byCount:{1:[],2:[],3:[],4:[]}};
   const f=g.formats[n];f.nq++;for(const x of a)f.pos[x]++;f.byCount[a.length].push(a.map(x=>letters[x]).join(''));
@@ -66,12 +68,16 @@ function current(){
  const overlap=[...infoIds].filter(x=>anatomyIds.has(x));
  const qcmNoCourse=qs.filter(x=>!x.courseId).length,atlasByCourse={};
  for(const x of a){const cid=atlasCourseId(x);if(cid)atlasByCourse[cid]=(atlasByCourse[cid]||0)+1}
- const balance=answerBalanceAudit(qs);return {courses:reg.length,qcm:qs.length,sheets:s.length,infographics:i.length,vocals:v.length,atlas:a.length,atlasByCourse,audit,invalid,duplicates:dup,anatomyInfoOverlap:overlap,qcmNoCourse,balance,registry:reg};
+ const balance=answerBalanceAudit(qs,new Map(reg.map(c=>[c.id,c.label])));return {courses:reg.length,qcm:qs.length,sheets:s.length,infographics:i.length,vocals:v.length,atlas:a.length,atlasByCourse,audit,invalid,duplicates:dup,anatomyInfoOverlap:overlap,qcmNoCourse,balance,registry:reg};
 }
 function evaluate(c){
  const errors=[],warnings=[],infos=[],exp=snapshot?.expectedTotals||{},atlasContracts=snapshot?.atlasBoardContracts||{};
  const floor=(key,val,label)=>{if(Number.isFinite(exp[key])&&val<exp[key])errors.push(`${label} : ${val} / ${exp[key]} minimum de référence`)};
- floor('courses',c.courses,'Cours');floor('sheets',c.sheets,'Fiches');floor('infographics',c.infographics,'Infographies');floor('vocals',c.vocals,'Vocaux');
+ // The Drive snapshot includes historical courses withdrawn from the student catalogue.
+ const archived=snapshot?.studentCatalogueExclusions||[];
+ const expectedActive=exp.courses-archived.filter(id=>window.IFSI_COURSE_CLASSIFICATION?.isActive?.(id)===false).length;
+ if(Number.isFinite(expectedActive)&&c.courses<expectedActive)errors.push(`Cours : ${c.courses} / ${expectedActive} minimum de référence`);
+ floor('sheets',c.sheets,'Fiches');floor('infographics',c.infographics,'Infographies');floor('vocals',c.vocals,'Vocaux');
  let atlasExpected=0,atlasOk=true;for(const [courseId,expected] of Object.entries(atlasContracts)){const actual=c.atlasByCourse[courseId]||0;atlasExpected+=expected;if(actual!==expected){atlasOk=false;const label=c.registry.find(x=>x.id===courseId)?.label||courseId;errors.push(`Atlas ${label} : ${actual} / ${expected} planches attendues`)}}
  const extraAtlas=Object.entries(c.atlasByCourse).filter(([id])=>!Object.hasOwn(atlasContracts,id));if(extraAtlas.length)warnings.push(`${extraAtlas.length} atlas hors contrat de référence : ${extraAtlas.map(([id,n])=>id+' ('+n+')').join(', ')}`);
  if(Object.keys(atlasContracts).length){if(c.atlas!==atlasExpected){atlasOk=false;errors.push(`Total planches HD : ${c.atlas} / ${atlasExpected} selon les contrats atlas`)}if(Number.isFinite(exp.hdAtlasBoards)&&atlasExpected!==exp.hdAtlasBoards)errors.push(`Snapshot incohérent : contrats atlas = ${atlasExpected}, total déclaré = ${exp.hdAtlasBoards}`);if(atlasOk)infos.push(`${Object.keys(atlasContracts).length} atlas complets • ${c.atlas}/${atlasExpected} planches HD`)}
@@ -89,7 +95,7 @@ function byCourseRows(c){
  const rows=Object.entries(c.audit?.byCourse||{}).filter(([,x])=>x.qcm+x.sheets+x.infographics+x.vocals).sort((a,b)=>a[1].label.localeCompare(b[1].label,'fr'));
  return rows.map(([id,x])=>{const atlas=c.atlasByCourse[id]||0;return `<div class="v821-row"><div><b>${E(x.label)}</b><small>${E(id)}</small></div><span>${x.qcm} QCM • ${x.sheets} fiche${x.sheets>1?'s':''} • ${x.infographics} info • ${x.vocals} ${x.vocals>1?'vocaux':'vocal'}${atlas?' • '+atlas+' planche'+(atlas>1?'s':''):''}</span></div>`}).join('');
 }
-function renderBalance(c){const box=$('v821Balance');if(!box)return;const f=c.balance?.flagged||[];if(!f.length){box.innerHTML='<div class="small">✅ Aucun biais fort détecté avec les seuils statistiques actuels.</div>';return}box.innerHTML=f.map(x=>`<div class="v821-row"><div><b>${E(x.label)}</b><small>${x.n} questions analysées</small></div><span>${x.reasons.map(E).join('<br>')}</span></div>`).join('')}
+function renderBalance(c){const box=$('v821Balance');if(!box)return;const f=c.balance?.flagged||[];if(!f.length){box.innerHTML='<div class="small">✅ Aucun biais fort détecté dans l’ordre affiché en révision.</div>';return}box.innerHTML=f.map(x=>`<div class="v821-row"><div><b>${E(x.label)}</b><small>${x.n} questions analysées</small></div><span>${x.reasons.map(E).join('<br>')}</span></div>`).join('')}
 function flashcardAudit(){
  const api=window.IFSI_V8338_FLASHCARDS,cards=api?.rebuild?.()||api?.getDeck?.()||[],bad=[],ids=new Set(),texts=new Set();
  for(const card of cards){

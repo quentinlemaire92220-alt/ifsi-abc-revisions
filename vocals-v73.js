@@ -228,8 +228,15 @@ function closePlayer(){playlistMessage('');rememberPosition();positionReady=fals
 function showVocals(){window.show?.('vocals')}
 window.showVocals=showVocals;
 
+function studentVocals(rows){
+  const catalogue=window.IFSI_COURSE_CLASSIFICATION;
+  return rows.filter(v=>catalogue?.isActive?.(v.courseId)!==false).map(v=>{
+    const course=catalogue?.courseTitle?.(v.courseId);
+    return course?{...v,course}:v;
+  });
+}
 async function loadVocals(){
-  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');const catalogue=await r.json();await window.IFSI_AUDIO_MIRRORS?.ready;await window.IFSI_AUDIO_SERIES?.ready;V=window.IFSI_AUDIO_SERIES?window.IFSI_AUDIO_SERIES.applyVocals(catalogue):catalogue;V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);validState();populateCourses();renderVocals();renderResume();setVersion();lockVersion();window.dispatchEvent(new CustomEvent('ifsi:v73-ready',{detail:{count:V.length}}));return true}
+  try{const r=await fetch('./vocals.json',{cache:'no-store'});if(!r.ok)throw new Error('catalogue indisponible');const catalogue=await r.json();await window.IFSI_AUDIO_MIRRORS?.ready;await window.IFSI_AUDIO_SERIES?.ready;V=studentVocals(window.IFSI_AUDIO_SERIES?window.IFSI_AUDIO_SERIES.applyVocals(catalogue):catalogue);V.sort((a,b)=>a.course.localeCompare(b.course,'fr')||a.number-b.number);validState();populateCourses();renderVocals();renderResume();setVersion();lockVersion();window.dispatchEvent(new CustomEvent('ifsi:v73-ready',{detail:{count:V.length}}));return true}
   catch(e){console.error('Vocaux',e);const list=$v('vocalList');if(list)list.innerHTML='<div class="card v73-empty">Impossible de charger le catalogue des vocaux.</div>';return false}
 }
 function setVersion(){const u=$v('update');if(u&&V.length)u.textContent=`Application prête • V${VERSION} locale : ${V.length} vocaux Drive, favoris, écoutés et reprise locale.`;const b=u?.parentElement?.querySelector('b');if(b)b.textContent=`V${VERSION} local`}

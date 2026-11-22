@@ -26,6 +26,20 @@ for(const [input,expected] of [['B1.3','B1'],['B2.1.1','B2'],['B3.2.1.7','B3'],
 for(const c of registry.filter(c=>c.domain==='B'))
  assert.ok(['B1','B2','B3'].includes(context.catalogUe74(c.ue)),
   'Un nouveau cours B doit rejoindre B1, B2 ou B3 : '+c.id+' / '+c.ue);
+const publicCatalogue=context.window.IFSI_COURSE_CLASSIFICATION.studentRegistry(documentRegistry);
+const courseById=new Map(publicCatalogue.courses.map(c=>[c.id,c]));
+assert.ok(!courseById.has('pssm'));
+assert.ok(!publicCatalogue.courses.some(c=>/\bTD\s*\d*\b|provisoire|oral à confirmer/i.test(c.label)));
+for(const [id,label] of [
+ ['theorie_gestion_symptomes_td','Théorie de gestion des symptômes'],
+ ['d1_communication_td1','Communication'],
+ ['d1_posture_professionnelle_td2','Posture professionnelle et contexte de soin']
+]){
+ const c=courseById.get(id);
+ assert.equal(c.label,label);
+ assert.ok(c.aliases.includes(registry.find(item=>item.id===id).label));
+}
+assert.equal(context.window.IFSI_COURSE_CLASSIFICATION.courseCode(courseById.get('calculs_doses_mathematiques')),'B3.1');
 context.renderCourses74();
 function domainB(){return grid.innerHTML.match(/<section class="v74-domain-group">[\s\S]*?DOMAINE B<\/span>([\s\S]*?)<\/section>/)?.[1];}
 assert.deepEqual([...domainB().matchAll(/class="v74-ue-code">UE ([^<]+)/g)].map(x=>x[1]),['B1','B2','B3']);
