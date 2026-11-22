@@ -27,6 +27,43 @@
     'B1.3': 'Système immunitaire, pathologies inflammatoires et infectieuses (3i)',
     'B2.1.1': 'Psychologie'
   };
+  // Public catalogue names. Signed deliveries keep the spelling used at publication.
+  const names = new Map(Object.entries({
+    d1_communication_td1: ['Communication', 'TD communication', 'TD 1 communication', 'Communication (TD 1)'],
+    d1_posture_professionnelle_td2: ['Posture professionnelle et contexte de soin', 'TD posture', 'TD2 posture', 'TD 2 posture', 'Posture professionnelle et contexte de soin (TD 2)'],
+    theorie_gestion_symptomes_td: ['Théorie de gestion des symptômes', 'A1 TD d’application', 'TD application', 'TD3 théorie de gestion des symptômes'],
+    vaccination_prs: ['Vaccination', 'TD vaccination'],
+    entretien_infirmier: ['Entretien infirmier'],
+    fievre_retour_voyage_paludisme: ['Fièvre au retour de voyage et paludisme'],
+    niveaux_organisation: ['Niveaux d’organisation du corps humain'],
+    calculs_doses_mathematiques: ['Calculs de doses et mathématiques'],
+    roles_missions_ide: ['Rôles et missions de l’infirmier', 'Rôles et missions de l’IDE'],
+    vih_b13_20261027: ['Infection par le VIH']
+  }));
+  const isActive = id => id !== 'pssm';
+  const courseTitle = id => names.get(id)?.[0];
+  function studentRegistry(registry) {
+    const courses = registry.courses.filter(c => isActive(c.id)).map(c => {
+      const namesForCourse = names.get(c.id);
+      if (!namesForCourse) return c;
+      const [label, ...extra] = namesForCourse;
+      return {...c, label, aliases: [...new Set([...(c.aliases || []), c.label, ...extra])]};
+    });
+    const ueResources=registry.ueResources?.map(r=>r.id==='b2_concepts_definitions_td'
+      ? {...r,title:'Recueil de concepts et définitions'} : r);
+    return {...registry, courses, ueResources};
+  }
+  function studentSheet(sheet) {
+    const title=courseTitle(sheet.courseId);
+    if(!title)return sheet;
+    if(sheet.courseId==='vaccination_prs'&&sheet.displayTitle==='Vaccination — travail PRS'
+      ||sheet.courseId==='niveaux_organisation'&&sheet.displayTitle==='Niveaux d’organisation'
+      ||['d1_communication_td1_written_p01','d1_posture_td2_written_p02','a1_tgs_td_written_p01',
+         'entretien_infirmier_sheet_v4','fievre_paludisme_written_p01'].includes(sheet.resourceId)){
+      return {...sheet,label:title,displayTitle:title+' — fiche de révision'};
+    }
+    return sheet;
+  }
   function normalize(value) {
     const code = String(value || '').trim().toUpperCase().replace(/^(?:(?:UE|S1)\s+)+/, '')
       .trim().replace(/^([A-E])\.(?=\d)/, '$1');
@@ -45,5 +82,5 @@
   function label(code) {
     return titles[code] ? code + ' — ' + titles[code] : code;
   }
-  window.IFSI_COURSE_CLASSIFICATION = {courseCode, sheetCode, label};
+  window.IFSI_COURSE_CLASSIFICATION = {courseCode, sheetCode, label, isActive, courseTitle, studentRegistry, studentSheet};
 })();

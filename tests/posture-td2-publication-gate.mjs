@@ -52,7 +52,10 @@ const live=await runtimeDeck();
 const linked=live.deck.filter(c=>c.courseId===id);
 const deck=linked.filter(c=>c.authored===true);
 assert.equal(deck.length,40,'Cartes réellement décodées différentes du PDF');
-assert.equal(linked.filter(c=>c.kind==='Vocabulaire').length,6,'Les 6 termes du lexique restent disponibles séparément');
+const vocabularyCards=linked.filter(c=>c.kind==='Vocabulaire'||c.vocabularyComplement);
+assert.equal(vocabularyCards.length,6,'Les six notions restent révisables en mode vocabulaire');
+assert.equal(linked.length,45,'40 cartes du TD et 5 cartes supplémentaires');
+assert.ok(vocabularyCards.find(c=>c.qid==='D1_POSTURE_TD2_001')?.vocabularyComplement.includes('tenue'));
 for(const q of bank){
  const card=deck.find(c=>c.qid===q.id);
  assert.ok(card,q.id+': carte runtime absente');

@@ -84,7 +84,7 @@ function courseAliases74(course){
 function resourceText74(x,type){return norm74(type==='sheet'?`${x.label||''} ${x.title||''} ${window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||''}`:`${x.title||''}`)}
 function registryCourse74(course){
   const list=window.IFSI_V741?.getRegistry?.()?.courses||[];
-  return list.find(c=>c.id===course)||list.find(c=>norm74(c.label)===norm74(course))||null;
+  return list.find(c=>c.id===course)||list.find(c=>norm74(c.label)===norm74(course))||list.find(c=>c.aliases?.some(a=>norm74(a)===norm74(course)))||null;
 }
 function courseId74(course){return registryCourse74(course)?.id||window.IFSI_V741?.courseIdForLabel?.(course)||null}
 function resourceMatchesCourse74(x,course,type){
@@ -146,7 +146,7 @@ function searchDocLabel74(x,type){return x.displayTitle||(type==='sheet'?(x.labe
 function renderSearch74(){
   const input=$74('v74Search'),box=$74('v74SearchResults');if(!input||!box)return;const raw=input.value.trim(),term=norm74(raw);if(term.length<2){box.innerHTML=raw?'<div class="small">Tape au moins 2 caractères.</div>:'.replace('>:','>'):'';return}
   const results=[];
-  for(const c of allCourses74())if(norm74(c).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
+  for(const c of allCourses74())if(norm74([c,...(registryCourse74(c)?.aliases||[])].join(' ')).includes(term))results.push({kind:'Cours',title:c,sub:'Toutes les ressources',course:c});
   for(const q of (Array.isArray(Q)?Q:[]))if(norm74(`${q.question} ${q.explanation||''} ${qCourse(q)} ${q.theme||''}`).includes(term))results.push({kind:'QCM',title:q.question,sub:`${qCourse(q)}${q.number?' • Q'+q.number:''}`,qid:q.id});
   for(const x of (Array.isArray(S)?S:[]))if(!unavailableSheet74(x)&&!replacedDocument74(x)&&norm74(`${x.displayTitle||''} ${x.label||''} ${x.title||''} ${window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||''}`).includes(term))results.push({kind:'Fiche',title:(x.officialSupport===false?'📝 ':'')+studentDocumentLabel74(searchDocLabel74(x,'sheet'),registryCourse74(x.courseId)),sub:window.IFSI_COURSE_CLASSIFICATION?.sheetCode(x)||x.ue||'',url:x.url});
   for(const x of (Array.isArray(I)?I:[]))if(norm74(`${x.displayTitle||''} ${x.title||''}`).includes(term))results.push({kind:'Infographie',title:searchDocLabel74(x,'info'),sub:'Visuel Drive',url:x.url});
@@ -196,7 +196,7 @@ function renderCourses74(){
   const grid=$74('v74CourseGrid');if(!grid)return;
   const term=norm74($74('v74CourseSearch')?.value||'');
   const courses=allCourses74().filter(label=>{
-    const m=courseMeta74(label);return !term||norm74(`${label} ${m.domain} ${window.IFSI_COURSE_CLASSIFICATION?.label(m.ue)||m.ue}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
+    const m=courseMeta74(label);return !term||norm74(`${label} ${(registryCourse74(label)?.aliases||[]).join(' ')} ${m.domain} ${window.IFSI_COURSE_CLASSIFICATION?.label(m.ue)||m.ue}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
   });
   const domains=new Map();
   for(const label of courses){
@@ -357,7 +357,7 @@ function renderCourse74(){
   window.IFSI_VOCAB?.mountCourse?.(courseMeta.id);
 }
 function openCourse74(course){
-  selectedCourse=course;
+  selectedCourse=registryCourse74(course)?.label||course;
   window.show('course74');
   const detail=$74('v74CourseDetail');
   if(detail)detail.dataset.visit=String(Number(detail.dataset.visit||0)+1);

@@ -75,7 +75,9 @@ function syncModeUI(){
 
 function courseStats(course,x){
   let answered=0,correct=0;
-  for(const [k,v] of Object.entries(x.themes||{}))if(k.startsWith(course+' — ')){answered+=Number(v.answered||0);correct+=Number(v.correct||0)}
+  const entry=window.IFSI_V741?.resolveLabel?.(course)?.course;
+  const labels=entry&&window.IFSI_COURSE_CLASSIFICATION?.courseTitle?.(entry.id)?[course,...entry.aliases]:[course];
+  for(const [k,v] of Object.entries(x.themes||{}))if(labels.some(label=>k.startsWith(label+' — '))){answered+=Number(v.answered||0);correct+=Number(v.correct||0)}
   return {answered,correct,rate:answered?correct/answered:null};
 }
 
@@ -119,7 +121,7 @@ function recordExamResult(q,ok){
 
 function saveExamResume(){
   if(activeMode!=='exam'||!session?.length)return;
-  writeResume({ids:session.map(q=>q.id),index:i,results:[],savedAt:Date.now(),mode:'exam',examAnswers,examStartedAt});
+  writeResume({ids:session.map(q=>q.id),index:i,results:[],savedAt:Date.now(),mode:'exam',examAnswers:window.IFSI_VOCAB?.examAnswerIndices?.(examAnswers,session,true)??examAnswers,examStartedAt});
 }
 
 function finishExam(){
@@ -133,7 +135,7 @@ function letters(arr){return arr.map(j=>'ABCDE'[j]).join(', ')||'Aucune'}
 function renderExamReview(){
   const box=document.getElementById('v7ExamReview');if(!box)return;box.classList.remove('hidden');
   box.innerHTML='<h3 style="margin:12px 0 6px">Corrigé détaillé</h3><div class="small">Tes réponses ne sont corrigées qu’ici, une fois l’examen terminé.</div>'+
-    session.map((q,j)=>{const user=examAnswers[q.id]||[],ok=same(user,q.answers);return `<details><summary class="${ok?'ok':'bad'}">${ok?'✅':'❌'} Q${q.number||j+1} — ${esc(q.course||q.theme||'')}</summary><div class="v7-answer"><b>Ta réponse :</b> ${esc(letters(user))}<br><b>Bonne réponse :</b> ${esc(letters(q.answers))}</div><div class="v7-expl">${esc(q.explanation||'')}${window.IFSI_QCM_FEEDBACK?.html(q,user)||''}</div></details>`}).join('');
+    session.map((q,j)=>{const user=examAnswers[q.id]||[],ok=same(user,q.answers);return `<details><summary class="${ok?'ok':'bad'}">${ok?'✅':'❌'} Q${q.number||j+1} — ${esc(q.course||q.theme||'')}</summary><div class="v7-answer"><b>Ta réponse :</b> ${esc(window.IFSI_QCM_FEEDBACK?.reviewChoices?.(q,user,Q)??letters(user))}<br><b>Bonne réponse :</b> ${esc(window.IFSI_QCM_FEEDBACK?.reviewChoices?.(q,q.answers,Q)??letters(q.answers))}</div><div class="v7-expl">${esc(q.explanation||'')}${window.IFSI_QCM_FEEDBACK?.html(q,user)||''}</div></details>`}).join('');
 }
 
 function restoreExamSelection(){
@@ -188,10 +190,10 @@ function resumeV7(){
   const r=resume();
   if(!r||r.mode!=='exam'){if(typeof prevResume==='function')return prevResume();return}
   const byId=new Map(Q.map(q=>[q.id,q])),rebuilt=(r.ids||[]).map(id=>byId.get(id)).filter(Boolean);if(!rebuilt.length){writeResume(null);return alert('Cette série n’est plus disponible.')}
-  activeMode='exam';setMode('exam');session=rebuilt;i=Math.min(r.index||0,session.length-1);res=[];done=false;examAnswers=r.examAnswers||{};examStartedAt=r.examStartedAt||Date.now();show('quiz');draw();saveExamResume();
+  activeMode='exam';setMode('exam');session=rebuilt;i=Math.min(r.index||0,session.length-1);res=[];done=false;examAnswers=window.IFSI_VOCAB?.examAnswerIndices?.(r.examAnswers,session,false)??r.examAnswers??{};examStartedAt=r.examStartedAt||Date.now();show('quiz');draw();saveExamResume();
 }
 window.resumeSession=resumeV7;
-function hookResumeButton(){const b=document.getElementById('resumeBtn');if(b)b.onclick=resumeV7}
+function hookResumeButton(){const b=document.getElementById('resumeBtn');if(b)b.onclick=()=>window.resumeSession()}
 
 function ready(){injectUI();hookResumeButton();const u=document.getElementById('update');if(u&&Q.length)u.textContent='Application prête • V7 locale : examen, progression détaillée et révision ciblée.';return Q.length>0}
 addStyles();injectUI();let tries=0;const t=setInterval(()=>{tries++;if(ready()||tries>100)clearInterval(t)},125);window.addEventListener('storage',()=>{syncModeUI();hookResumeButton()});

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import vm from 'node:vm';
 import {findQcmBias,findFlashcardIssues,toMarkdown} from '../tools/p3-pedagogical-review.mjs';
 const questions=[];
 for(let i=0;i<24;i++)questions.push({
@@ -14,6 +15,29 @@ assert.ok(flagged[0].patterns.some(x=>x.category==='imbalanced_position'));
 const balanced=Array.from({length:25},(_,i)=>({...questions[0],id:'balanced_'+i,answers:[i%5]}));
 assert.equal(findQcmBias(balanced).length,0,'Une répartition équilibrée ne doit pas être signalée');
 assert.equal(findQcmBias(questions.slice(0,5)).length,0,'Échantillon trop petit pour une alerte');
+// Même si toutes les clés PDF sont A ou AB, les choix affichés doivent être équilibrés.
+const context={window:{}};
+vm.runInNewContext(fs.readFileSync(new URL('../v8378-qcm-feedback.js',import.meta.url),'utf8'),context);
+const {choiceOrder,reviewChoices}=context.window.IFSI_QCM_FEEDBACK;
+const bank=Array.from({length:80},(_,i)=>({...questions[0],courseId:'psychometrie',id:'choice_'+i,
+ choices:['Premier texte','Deuxième texte','Troisième texte','Quatrième texte','Cinquième texte'],
+ answers:i%2?[0]:[0,1]}));
+bank.push({...bank[0],id:'anchored',choices:['La proposition A est vraie',...bank[0].choices.slice(1)]},
+ {...bank[1],id:'vocab',vocabularyTermId:'terme'});
+const initial=JSON.stringify(bank), reversed=bank.slice().reverse();
+const displayed=bank.map(q=>{
+ const order=choiceOrder(q,bank);
+ if(!order)return q;
+ assert.deepEqual([...order].sort(),[0,1,2,3,4]);
+ assert.deepEqual([...order],[...choiceOrder(q,reversed)]);
+ assert.equal(reviewChoices(q,[0],bank),'A. Premier texte');
+ return {...q,answers:q.answers.map(i=>order.indexOf(i))};
+});
+assert.ok(findQcmBias(bank).length);
+assert.equal(findQcmBias(displayed).length,0);
+assert.equal(choiceOrder(bank.at(-2),bank),null);
+assert.equal(choiceOrder(bank.at(-1),bank),null);
+assert.equal(JSON.stringify(bank),initial);
 const cards=[
  {id:'ok',qid:'q1',courseId:'c',theme:'General',front:'À quoi sert le rein ?',answers:['Filtrer le sang']},
  {id:'wrong',qid:'q2',courseId:'c',theme:'General',front:'Question de révision',answers:['Voir le corrigé associé']},

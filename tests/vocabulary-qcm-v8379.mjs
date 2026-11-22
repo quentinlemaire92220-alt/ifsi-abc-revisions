@@ -22,6 +22,16 @@ for(const q of qs){
  assert.equal(q.answers.length,1);assert.ok(q.explanation.includes(q.choices[q.answers[0]]));
  assert.equal(q.course,registry.courses.find(c=>c.id===q.courseId).label);
 }
+const distributions=new Map(),totals=[0,0,0,0];
+for(const q of qs){
+ const slot=q.answers[0];totals[slot]++;
+ if(!distributions.has(q.courseId))distributions.set(q.courseId,[0,0,0,0]);
+ distributions.get(q.courseId)[slot]++;
+ const selected={[q.id]:[0,2]};
+ const stored=window.IFSI_VOCAB.examAnswerIndices(selected,[q],true);
+ assert.deepEqual(Array.from(window.IFSI_VOCAB.examAnswerIndices(stored,[q],false)[q.id]),selected[q.id]);
+}
+for(const counts of [totals,...distributions.values()])assert.ok(Math.max(...counts)-Math.min(...counts)<=1);
 // Both async arrival orders and retries must keep vocabulary and classic questions once.
 const source=read('index.html');
 vm.runInContext(source.slice(source.indexOf('function announceQcmLoad'),source.indexOf('async function loadQcmData')),context);

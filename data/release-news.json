@@ -1,5 +1,17 @@
 [
   {
+    "id": "v8503Change",
+    "date": "2026-11-22",
+    "title": "V8.30.203 — Titres des cours et révisions",
+    "copy": "Les cours affichent le nom du sujet. Le cours PSSM est retiré du catalogue étudiant. Les bonnes réponses sont mieux réparties dans les QCM de vocabulaire et les 12 cours signalés. Six doublons de flashcards sont regroupés.",
+    "type": "app",
+    "badges": [
+      "Cours",
+      "QCM",
+      "Flashcards"
+    ]
+  },
+  {
     "id": "v8502Change",
     "date": "2026-11-22",
     "title": "V8.30.202 — Des mises à jour plus légères",
@@ -464,7 +476,7 @@
   },
   {
     "id": "v8450Change",
-    "title": "V8.30.150 — TD3 Théorie de gestion des symptômes",
+    "title": "V8.30.150 — Théorie de gestion des symptômes",
     "copy": "Fiche de révision améliorée : 11 pages, six chapitres, titres hiérarchisés, signets et charte v1.49.1. Les 40 QCM et 40 flashcards déjà publiés restent inchangés. Le TD conserve un statut pédagogique provisoire.",
     "date": "2026-10-28",
     "type": "resource",
@@ -546,7 +558,7 @@
   },
   {
     "id": "v8441Change",
-    "title": "V8.30.141 — Théorie des symptômes (UE A1, TD)",
+    "title": "V8.30.141 — Théorie de gestion des symptômes (UE A1)",
     "copy": "Nouveau cours provisoire : fiche écrite, 40 QCM corrigés avec difficultés, 40 flashcards et 30 définitions. Le CM4 reste disponible. Support spécifique au TD absent et vérification scientifique exhaustive non acquise.",
     "date": "2026-10-26",
     "type": "resource",
@@ -712,7 +724,7 @@
   {
     "id": "v8426Change",
     "title": "V8.30.126 — Trois nouveaux vocaux",
-    "copy": "MP3 disponibles : Posture professionnelle TD2 (1 vocal), Pharmacologie (complément de consolidation) et Infections neuro-méningées (complément de consolidation). Les 21 vocaux déjà référencés restent inchangés.",
+    "copy": "MP3 disponibles : Posture professionnelle et contexte de soin (1 vocal), Pharmacologie (complément de consolidation) et Infections neuro-méningées (complément de consolidation). Les 21 vocaux déjà référencés restent inchangés.",
     "date": "2026-10-25",
     "type": "resource",
     "badges": [
@@ -751,7 +763,7 @@
   },
   {
     "id": "v8422Change",
-    "title": "V8.30.122 — TD2 Posture professionnelle",
+    "title": "V8.30.122 — Posture professionnelle et contexte de soin",
     "copy": "Fiche écrite (17 pages), QCM (40 questions) et flashcards (40 cartes) intégrés. Correction du QCM 3 ; vocaux en cours de préparation.",
     "date": "2026-10-24",
     "type": "resource",
@@ -771,8 +783,8 @@
   },
   {
     "id": "v8420Change",
-    "title": "V8.30.120 — TD1 Communication : support, fiche, QCM et flashcards",
-    "copy": "Ajout du TD1 La communication : support officiel, fiche écrite, 50 QCM corrigés et 40 flashcards. Deux scripts vocaux restent en attente de MP3.",
+    "title": "V8.30.120 — Communication : support, fiche, QCM et flashcards",
+    "copy": "Ajout du cours Communication : support officiel, fiche écrite, 50 QCM corrigés et 40 flashcards. Deux scripts vocaux restent en attente de MP3.",
     "date": "2026-10-24",
     "type": "resource",
     "badges": [

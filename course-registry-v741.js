@@ -42,7 +42,11 @@ function resolveVocal(v){
 }
 function attachIds(){
   if(!registry)return;
-  for(const q of (Array.isArray(Q)?Q:[])){if(q.courseId)continue;const r=resolveQuestion(q);if(r.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
+  for(const q of (Array.isArray(Q)?Q:[])){
+    if(!q.courseId){const r=resolveQuestion(q);if(r.courseId){q.courseId=r.courseId;q._courseLink='registry'}}
+    const label=window.IFSI_COURSE_CLASSIFICATION?.courseTitle?.(q.courseId);
+    if(label)q.course=label;
+  }
   for(const v of (window.IFSI_V73?.getVocals?.()||[])){if(v.courseId)continue;const r=resolveVocal(v);if(r.courseId){v.courseId=r.courseId;v._courseLink='registry'}}
   for(const x of (Array.isArray(S)?S:[])){if(x.courseId)continue;const r=resolveResource(x,'sheet');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
   for(const x of (Array.isArray(I)?I:[])){if(x.courseId)continue;const r=resolveResource(x,'info');if(r.courseId){x.courseId=r.courseId;x._courseLink='registry'}}
@@ -131,7 +135,8 @@ async function boot(){
   try{
     const response=await fetch('./course-registry-v741.json',{cache:'no-store'});
     if(!response.ok)throw Error('registre indisponible');
-    registry=await response.json();
+    const raw=await response.json();
+    registry=window.IFSI_COURSE_CLASSIFICATION?.studentRegistry?.(raw)||raw;
     buildCourseIndexes();
     refreshCourseResources();
     annotateCourseCards();
