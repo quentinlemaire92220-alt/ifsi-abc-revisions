@@ -4,6 +4,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {verifyPublicArtifact,pagesOrigin,pagesPrefix} from '../tools/public-artifact-contract.mjs';
+execFileSync(process.execPath,['tools/build-offline-media.mjs','--check'],{stdio:'inherit'});
 const read=readHistoricalAudioJson;
 const meta=read('build-meta.json'),base=process.env.IFSI_BASE_SHA;
 assert.match(base||'',/^[a-f0-9]{40}$/i,'Base complète obligatoire');

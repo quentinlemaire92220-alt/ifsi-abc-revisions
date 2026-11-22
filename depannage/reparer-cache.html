@@ -72,7 +72,7 @@
       for(var i=0;i<ours.length;i++){if(await ours[i].unregister())removedReg++}
       var keys=('caches' in window)?await caches.keys():[];
       // Limiter la suppression aux caches de l'application, jamais aux données locales.
-      var cacheNames=keys.filter(function(name){return name.startsWith('ifsi-abc-v')});
+      var cacheNames=keys.filter(function(name){return name.startsWith('ifsi-abc-v')||name==='ifsi-abc-offline-media-v1:'+root.href});
       var removedCaches=0;
       for(var j=0;j<cacheNames.length;j++){if(await caches.delete(cacheNames[j]))removedCaches++}
       message('Réparation terminée.\nService Workers IFSI ABC désactivés : '+removedReg+
