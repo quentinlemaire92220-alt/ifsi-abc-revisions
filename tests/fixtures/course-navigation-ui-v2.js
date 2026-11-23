@@ -85,9 +85,9 @@
     var badge = document.createElement('button');
     badge.type = 'button';
     badge.className = 'v8430-provisional';
-    badge.textContent = sourceState(course).received ? 'Relecture en cours' : 'Provisoire';
+    badge.textContent = sourceState(course).received ? 'Ressources de révision en relecture' : 'Provisoire';
     badge.title = statusWhy(course);
-    badge.setAttribute('aria-label', (sourceState(course).received ? 'Relecture du cours : ' : 'Cours provisoire : ') + statusWhy(course));
+    badge.setAttribute('aria-label', (sourceState(course).received ? 'Relecture des ressources de révision : ' : 'Cours provisoire : ') + statusWhy(course));
     badge.setAttribute('aria-haspopup', 'dialog');
     badge.addEventListener('click', function (event) {
       event.stopPropagation();
@@ -164,10 +164,12 @@
       }});
       document.body.appendChild(dialog);
     }
-    dialog.querySelector('#v8431ProvisionalTitle').textContent = sourceState(course).received ? 'Quels points restent à vérifier ?' : 'Pourquoi ce cours est provisoire ?';
+    dialog.querySelector('#v8431ProvisionalTitle').textContent = sourceState(course).received ? 'Pourquoi ces ressources sont-elles en relecture ?' : 'Pourquoi ce cours est provisoire ?';
     dialog.querySelector('.v8431-dialog-course').textContent = cleanTitle(course.label);
     dialog.querySelector('#v8431ProvisionalReason').textContent = statusWhy(course);
-    dialog.querySelector('#v8431ProvisionalSources').textContent = sourceState(course).note || EXPLANATION;
+    var sources = dialog.querySelector('#v8431ProvisionalSources');
+    sources.textContent = sourceState(course).note || EXPLANATION;
+    sources.hidden = sources.textContent === statusWhy(course);
     dialog.onclose = function () { if (trigger.isConnected) trigger.focus(); };
     dialog.showModal();
   }
@@ -624,7 +626,11 @@
       var button=el('button','mku-toggle');button.type='button';button.setAttribute('aria-expanded','false');
       var panel=el('div','mku-panel');panel.id='mku-panel-'+(++sequence);panel.hidden=true;button.setAttribute('aria-controls',panel.id);
       var visual=el('span','mku-icon');visual.style.setProperty('--mku-bg',spec.bg);visual.style.setProperty('--mku-ink',spec.color);visual.innerHTML=icon(spec.key);
-      var copy=el('span','mku-copy'),subtitle=el('span','mku-subtitle',waiting?'Support officiel en attente.':spec.sub);
+      var subtitleText = spec.sub;
+      if (support && waiting) subtitleText = 'Support officiel en attente.';
+      else if (support && block.dataset.reviewedSource === 'true' && !block.querySelector('a[href]'))
+        subtitleText = 'Support officiel reçu. Aucun lien étudiant disponible.';
+      var copy=el('span','mku-copy'),subtitle=el('span','mku-subtitle',subtitleText);
       // Préserver le titre complet et les métadonnées originaux pour l'accessibilité.
       heading.title=heading.textContent;copy.appendChild(heading);
       if(support)heading.textContent='Support du cours';

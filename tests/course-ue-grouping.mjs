@@ -39,16 +39,16 @@ for(const [id,label] of [
  assert.equal(c.label,label);
  assert.ok(c.aliases.includes(registry.find(item=>item.id===id).label));
 }
-assert.equal(context.window.IFSI_COURSE_CLASSIFICATION.courseCode(courseById.get('calculs_doses_mathematiques')),'B3.1');
+assert.equal(context.window.IFSI_COURSE_CLASSIFICATION.courseCode(courseById.get('calculs_doses_mathematiques')),'B3');
 context.renderCourses74();
 function domainB(){return grid.innerHTML.match(/<section class="v74-domain-group">[\s\S]*?DOMAINE B<\/span>([\s\S]*?)<\/section>/)?.[1];}
 assert.deepEqual([...domainB().matchAll(/class="v74-ue-code">UE ([^<]+)/g)].map(x=>x[1]),['B1','B2','B3']);
 assert.equal((grid.innerHTML.match(/data-course74=/g)||[]).length,registry.length,'Chaque cours une fois');
 const bCount=registry.filter(c=>context.courseMeta74(c.label).domain==='B').length;
-assert.match(domainB(),/data-course-ue="B3.1"[^>]*data-course74="Calculs de doses/);
-assert.match(domainB(),/<h4[^>]*>B1.3 — Système immunitaire, pathologies inflammatoires et infectieuses \(3i\)<\/h4>/);
+assert.match(domainB(),/data-course-ue="B3"[^>]*data-course74="Calculs de doses/);
+assert.doesNotMatch(domainB(),/v74-subgroup|data-course-ue="B[123]\./);
 term='infectieuses';context.renderCourses74();
-assert.match(domainB(),/data-course-ue="B1.3"[^>]*data-course74="Infections cutanées"/);
+assert.match(domainB(),/data-course-ue="B3"[^>]*data-course74="Infections cutanées"/);
 assert.doesNotMatch(domainB(),/data-course74="Stomathérapie"/);
 term='';context.renderCourses74();
 assert.match(domainB(),new RegExp(bCount+' cours • '+bCount+' QCM'));

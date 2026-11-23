@@ -69,18 +69,33 @@
       .trim().replace(/^([A-E])\.(?=\d)/, '$1');
     return /^[A-E][1-9]\d*(?:\.\d+)*$/.test(code) ? code : '';
   }
-  function courseCode(course) {
+  // Classement du catalogue étudiant. Les codes des supports restent disponibles à la recherche.
+  const infectiousPathologies = new Set([
+    'physiopathologie_infections', 'infections_urinaires', 'infections_neuro_meningees',
+    'infections_cutanees', 'infections_pulmonaires_bacteriennes', 'infections_respiratoires_virales',
+    'ist_hors_vih', 'vih_b13_20261027', 'fievre_retour_voyage_paludisme',
+    'diarrhees_infectieuses', 'hepatites_virales'
+  ]);
+  function catalogueCode(code, courseId) {
+    if (infectiousPathologies.has(courseId)) return 'B3';
+    return /^B[123](?:\.|$)/.test(code) ? code.split('.')[0] : code;
+  }
+  function sourceCourseCode(course) {
     return byCourse.get(course?.id) || normalize(course?.ue);
+  }
+  function courseCode(course) {
+    return catalogueCode(sourceCourseCode(course), course?.id);
   }
   function sheetCode(sheet) {
     const registry = window.IFSI_V741?.getRegistry?.();
     const registered = registry?.courses?.find(c => c.id === sheet.courseId);
-    const code = byCourse.get(sheet.courseId) || courseCode(registered);
+    const code = byCourse.get(sheet.courseId) || sourceCourseCode(registered);
     const source = normalize(sheet.ue);
-    return source && code && source.startsWith(code + '.') ? source : code || source;
+    const detail = source && code && source.startsWith(code + '.') ? source : code || source;
+    return catalogueCode(detail, sheet.courseId);
   }
   function label(code) {
     return titles[code] ? code + ' — ' + titles[code] : code;
   }
-  window.IFSI_COURSE_CLASSIFICATION = {courseCode, sheetCode, label, isActive, courseTitle, studentRegistry, studentSheet};
+  window.IFSI_COURSE_CLASSIFICATION = {courseCode, sourceCourseCode, sheetCode, label, isActive, courseTitle, studentRegistry, studentSheet};
 })();

@@ -183,7 +183,7 @@
        if(support.textContent.includes('Support officiel en attente'))throw Error('Ancienne attente officielle conservée pour '+course.id);
        if(support.querySelector('a[href]'))throw Error('Faux accès aux originaux privés pour '+course.id);
        if((course.provisional===true||['vih_b13_20261027','responsabilite_exercice_professionnel'].includes(course.id))&&!support.querySelector('.v74-source-review-note')?.textContent.trim())throw Error('Réserve de relecture absente pour '+course.id);
-       if(course.provisional===true&&detail.querySelector('.v8430-provisional')?.textContent!=='Relecture en cours')throw Error('Statut de relecture absent pour '+course.id);
+       if(course.provisional===true&&detail.querySelector('.v8430-provisional')?.textContent!=='Ressources de révision en relecture')throw Error('Statut de relecture absent pour '+course.id);
        if(!support.querySelector('.mku-toggle:not(:disabled)'))throw Error('Notice des sources inaccessible pour '+course.id);
      }else if(!course.officialSupportUrl&&!(course.officialSupportItems||[]).length&&!(course.additionalDocuments||[]).some(function(doc){return doc.type==='official_support'})){
        missing++;
@@ -283,7 +283,7 @@
      if(document.getElementById('vPlanningNav')||document.getElementById('planningPromo'))throw Error('Planning visible pendant sa mise en pause');
      if(!window.IFSI_PLANNING?.weeks.length)throw Error('Historique du planning indisponible');
      var infection=b.querySelector('[data-course74="Infections cutanées"]');
-     if(infection?.dataset.courseUe!=='B1.3')throw Error('Classement 3i absent du catalogue');
+     if(infection?.dataset.courseUe!=='B3'||b.querySelector('.v74-subgroup'))throw Error('Le domaine B doit présenter B1, B2, B3 et les infections sous B3');
      if(b.querySelectorAll('.v74-course-card').length!==n)throw Error('Comptage du domaine B incorrect');
      grid.querySelectorAll('.v74-course-card').forEach(function(card){
        if(!card.querySelector('.mku-thumbnail img.ifsi-course-picture'))throw Error('Cours sans illustration : '+card.dataset.course74);
