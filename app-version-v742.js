@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const VERSION='8.30.203';
+const VERSION='8.30.204';
 const BUILD_URL='./build-meta.json';
 const TITLE=`V${VERSION}`;
 const READY=`Application prête • V${VERSION} : Les cours affichent le nom du sujet. Le cours PSSM est retiré du catalogue étudiant. Les QCM de vocabulaire sont équilibrés et six doublons de flashcards sont regroupés.`;

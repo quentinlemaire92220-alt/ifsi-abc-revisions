@@ -65,11 +65,12 @@ for(const a of fromCatalog.filter(x=>x.sourceStatus==='archived'))
 console.log('PASS UI: archives historiques invisibles, V8 active réelle, recherche sûre et autres cours conservés.');
 
 const sheets=[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync('sheets-'+n+'.json','utf8')));
-const infectious=render(sheets,'','B1.3');
+const infectious=render(sheets,'','B3');
 assert.match(infectious.sheetList.innerHTML,/Infections cutanées/);
 assert.match(infectious.sheetList.innerHTML,/Hépatites virales/);
-assert.doesNotMatch(infectious.sheetList.innerHTML,/Stomathérapie/);
-const psych=render(sheets,'','B2.1.1');
+assert.doesNotMatch(infectious.sheetList.innerHTML,/Biomolécules/);
+assert.doesNotMatch(infectious.ue.innerHTML,/value="B[123]\./);
+const psych=render(sheets,'','B2');
 assert.match(psych.sheetList.innerHTML,/Psychométrie/);
 assert.match(psych.sheetList.innerHTML,/Psychopathologie/);
 assert.doesNotMatch(psych.ue.innerHTML,/undefined|UE non précisée/);

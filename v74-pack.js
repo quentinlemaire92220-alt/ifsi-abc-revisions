@@ -4,7 +4,7 @@ const VERSION='8.11';
 const DOC_FAV_KEY='ifsiabc_v74_resource_favorites_v1';
 const Q_FAV_KEY='ifsiabc_favorites_v1';
 const VOCAL_KEY='ifsiabc_vocals_v1';
-let selectedCourse='',displayedCourseData=null,displayedCourseMeta=null;
+let selectedCourse='',displayedCourseData=null,displayedCourseMeta=null,displayedQuestionCount='';
 const $74=id=>document.getElementById(id);
 const esc74=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm74=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -21,7 +21,7 @@ const docKey74=(type,url)=>`${type}|${url}`;
 // validation pédagogique implicite : les lots historiques restent intacts.
 const receivedSourceUpdates74=Object.freeze({
   vih_b13_20261027:'Support officiel reçu. Le rapprochement des révisions reste à vérifier, notamment le cas final et les points signalés sur la prévention.',
-  responsabilite_exercice_professionnel:'Support officiel reçu. Le rapprochement des révisions et la distinction entre le cours et le TD restent à vérifier.'
+  responsabilite_exercice_professionnel:'Le support officiel a été reçu. La relecture porte sur les ressources de révision et sur la distinction entre le cours et le TD.'
 });
 function sourceState74(course){
   const receipt=receivedSourceUpdates74[course?.id];
@@ -168,8 +168,10 @@ function renderDashboard74(){
 
 function courseMeta74(label){
   const c=registryCourse74(label)||{};
-  const ue=window.IFSI_COURSE_CLASSIFICATION?.courseCode(c)||c.ue||'Autres';
-  return {ue,domain:/^[A-E]\d/.test(ue)?ue[0]:c.domain||'',id:c.id||''}
+  const classification=window.IFSI_COURSE_CLASSIFICATION;
+  const ue=classification?.courseCode(c)||c.ue||'Autres';
+  const sourceCode=classification?.sourceCourseCode(c)||c.ue||'';
+  return {ue,sourceCode,domain:/^[A-E]\d/.test(ue)?ue[0]:c.domain||'',id:c.id||''}
 }
 // Clé d'affichage uniquement : conserver le code détaillé dans le registre et la recherche.
 function catalogUe74(value){
@@ -196,7 +198,7 @@ function renderCourses74(){
   const grid=$74('v74CourseGrid');if(!grid)return;
   const term=norm74($74('v74CourseSearch')?.value||'');
   const courses=allCourses74().filter(label=>{
-    const m=courseMeta74(label);return !term||norm74(`${label} ${(registryCourse74(label)?.aliases||[]).join(' ')} ${m.domain} ${window.IFSI_COURSE_CLASSIFICATION?.label(m.ue)||m.ue}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
+    const m=courseMeta74(label);return !term||norm74(`${label} ${(registryCourse74(label)?.aliases||[]).join(' ')} ${m.domain} ${m.ue} ${window.IFSI_COURSE_CLASSIFICATION?.label(m.sourceCode)||m.sourceCode}`).includes(term)||ueResources74(catalogUe74(m.ue)).some(r=>norm74(`${r.title} ${r.ue}`).includes(term))
   });
   const domains=new Map();
   for(const label of courses){
@@ -262,6 +264,12 @@ const studentVisibleDocument74=doc=>{
 // Un QCM (PDF officiel ou entraînement) appartient aux ressources QCM, jamais aux supports sources.
 const isQcmDocument74=doc=>/^(?:qcm|quiz)(?: |$)/.test(norm74([doc?.category,doc?.type].filter(Boolean).join(' ')))||/^(?:qcm|quiz)\b/i.test(String(doc?.label||'').trim());
 
+function courseQuestionCount74(count){
+  const status=window.IFSI_QCM_LOAD?.status;
+  if(!count && status==='loading')return 'Chargement des QCM…';
+  if(!count && (status==='error'||status==='partial'))return 'QCM indisponibles';
+  return count+' question'+(count>1?'s':'');
+}
 function renderCourse74(){
   const box=$74('v74CourseDetail');if(!box||!selectedCourse)return;
   const d=courseData74(selectedCourse),vf=new Set(vocalState74().favorites||[]),mastery=d.rate??0;
@@ -270,6 +278,7 @@ function renderCourse74(){
   const infos=[...d.infos].sort((a,b)=>labelOf(a).localeCompare(labelOf(b),'fr',{numeric:true,sensitivity:'base'}));
   const courseMeta=registryCourse74(selectedCourse)||{};
   displayedCourseData=d;
+  displayedQuestionCount=courseQuestionCount74(d.qs.length);
   displayedCourseMeta=courseMeta;
   // Documents et archives déjà référencés sur Drive ou sur le site de l'application.
   const driveUrl=u=>typeof u==='string'&&(/^https:\/\/drive\.google\.com\/(?:file\/d\/|drive\/folders\/)[A-Za-z0-9_-]+(?:\/view)?(?:\?.*)?$/.test(u)||(/^https:\/\/quentinlemaire92220-alt\.github\.io\/ifsi-abc-revisions\/assets\/[A-Za-z0-9_./-]+\.(?:pdf|zip|html)$/.test(u)&&!u.split('/').includes('..')))?u:'';
@@ -339,7 +348,7 @@ function renderCourse74(){
 
   const approvedDownloads74=window.IFSI_AUDIO_SERIES?.downloadsFor?.(courseMeta.id)||[];
   const downloadCards74=approvedDownloads74.map(x=>'<div class="v74-resource"><b>'+esc74(x.label)+'</b><div class="actions"><a class="btn primary" href="./'+esc74(x.path)+'" download>Télécharger le ZIP</a></div></div>').join('');
-  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${d.qs.length} question${d.qs.length>1?'s':''}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div></div>
+  box.innerHTML=`<div class="card v74-course-head"><button class="btn outline v74-back" id="v74BackCourses">← Mes cours</button><div class="row"><div><div class="small">COURS</div><h2>${esc74(d.course)}</h2></div><span class="badge">${displayedQuestionCount}</span></div><div class="v74-course-meta"><span class="v74-pill">${d.seen}/${d.qs.length} questions vues</span><span class="v74-pill">${d.rate===null?'Pas encore de score':d.rate+'% réussite'}</span><span class="v74-pill">${d.err} erreur${d.err>1?'s':''}</span>${d.vs.length?`<span class="v74-pill ok">🎧 ${d.listenedCount}/${d.vs.length} écoutés</span>`:''}</div><div class="v74-master"><span style="width:${mastery}%"></span></div></div>
   ${downloadCards74?`<div class="card v74-resource-block v74-approved-downloads"><div class="row"><b>📦 Ressources à télécharger</b></div><div class="v74-resource-list">${downloadCards74}</div></div>`:''}
   ${d.qs.length||qcmPdfCards?`<div class="card v74-resource-block v74-qcm-section"><div class="row"><b>🧠 QCM</b></div>${d.qs.length?`<div class="v74-course-actions"><button class="btn primary" id="v74Course10"><b>▶ Réviser ce cours</b><small>10 questions aléatoires parmi ${d.qs.length}</small></button><button class="btn secondary" id="v74CourseAll"><b>📚 Tous les QCM du cours</b><small>${d.qs.length} questions</small></button></div>`:''}${qcmPdfCards?`<div class="v74-resource-list">${qcmPdfCards}</div>`:''}</div>`:''}
   ${courseSourceHtml}
@@ -401,6 +410,10 @@ function refreshVisibleCourses74(){
 addStyles74();injectSections74();patchShow74();injectSearch74();injectDashboard74();injectNews74();
 patchResourceRender74();patchFill74();
 window.addEventListener('ifsi:course-resources',refreshVisibleCourses74);
+window.addEventListener('ifsi:qcm-load',()=>{
+  if(!selectedCourse||$74('course74')?.classList.contains('hidden')||displayedCourseData?.qs.length!==0)return;
+  if(displayedQuestionCount!==courseQuestionCount74(0))renderCourse74();
+});
 window.addEventListener('storage',()=>{renderDashboard74();renderCourses74();renderFavorites74();if(selectedCourse)renderCourse74();enhanceResourceCards74()});
 window.IFSI_V74={version:VERSION,sourceState:sourceState74,showCourses:showCourses74,openCourse:openCourse74,showFavorites:showFavorites74,resourceFavorites:()=>[...docFavs74()],courses:allCourses74,refreshCourses:renderCourses74,refreshCourse:renderCourse74};
 })();
